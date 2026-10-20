@@ -2,6 +2,8 @@
 
 Référence : [plan complet](WEWA_Developpement_Web/docs/PLAN_DE_PRODUCTION.md). Le lien public est une version de travail ; sa disponibilité ne ferme aucune phase.
 
+Après le nouveau refus du rendu de la version 3, suivre aussi l’[audit et la fabrication artistique](creative/ART_PRODUCTION.md). La collecte de sources est séparée de leur adaptation dans Blender et de leur réception dans le moteur. Aucun nouveau déploiement artistique dans cette passe : la version 3 reste la préalpha publique.
+
 | Phase du plan | Production présente | Critères encore ouverts |
 |---|---|---|
 | P1 — socle | Babylon.js 9.31.0 / WebGL2, build gelé, géographie importée, instrumentation | Safari physique iPhone 15/16, audit local des routes, benchmark matériel |

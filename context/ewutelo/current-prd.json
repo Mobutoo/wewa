@@ -1,6 +1,6 @@
 {
   "idea_id": "27f8ffb12df14ff79c6e0f13cbd1cf91",
-  "revision": 11,
+  "revision": 12,
   "prd": {
     "acceptance_criteria": [
       "Petite moto utilitaire Wewa ; clavier ZQSD/WASD et tactile.",
@@ -11,6 +11,48 @@
       "V0 : nitro fonctionnel et deux vues commutables, réglages de confort, collisions testées à vitesse nitro maximale ; W35-W37 terminées avant W09.",
       "R9 : Rush termine exactement à 30 s avec score déterministe, rejouable gratuitement ; récit de prototype entièrement fictif ; pas de paiement réel ni profilage sensible en V0."
     ],
+    "art_production_recovery": {
+      "acceptance": "Real engine captures and movement evaluated against target. Tests, asset counts and cover renders do not establish visual acceptance. iPhone hardware qualification remains separate.",
+      "acquisition_limits": "Seven additional photo files returned HTTP 429 and are not counted. Irrelevant Boma/café/historical publication images excluded; old construction photos explicitly qualified.",
+      "art_accepted": false,
+      "audit": "creative/ART_PRODUCTION.md",
+      "date": "2026-10-20",
+      "full_game_shipped": false,
+      "model_identity_answer": "Codex, based on GPT-6; public game is Site version 3, still prealpha.",
+      "next_lot": "Foreground motorcycle and rider, then source-referenced 150–250m street; no new generic city expansion.",
+      "production_inventory": "112 planned families, not 112 delivered assets; creative/library/production-inventory.json",
+      "public_site_version_unchanged": 3,
+      "public_source_commit_unchanged": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
+      "required_loop": [
+        "identified references and local use",
+        "Blender modeling or source adaptation",
+        "UV and PBR, rig and animation, LOD",
+        "actual engine integration",
+        "comparable stills and continuous motion",
+        "correct defects before replication or geographic expansion"
+      ],
+      "source_library": {
+        "bytes": 582162029,
+        "documentary_photos_retained": 29,
+        "files": 196,
+        "integrated_this_pass": 0,
+        "models": 17,
+        "pbr_material_sets": 22,
+        "provider_license": "CC0-1.0 for Poly Haven; Commons photos retain individual licenses and authors"
+      },
+      "source_manifest": "creative/library/manifest.json",
+      "source_verification": {
+        "blender_4_3_2_imports": 5,
+        "gltf_errors": 0,
+        "gltf_models_checked": 16,
+        "gltf_warnings": 40,
+        "hash_verified_files": 196,
+        "heavy_tree_validation_deferred": true,
+        "missing_images": 0
+      },
+      "storage": "Raw 582MB source library stays outside web bundle at /workspace/wewa-asset-library; tracked manifest and restore tool pin URLs, rights and hashes. No binary upload to Directus claimed.",
+      "trigger": "User again rejects version 3 graphics and workflow against the photographic target."
+    },
     "creative_direction": {
       "approved": {
         "budget_eur": 0,
@@ -208,10 +250,11 @@
       "Monétiser ensuite cosmétiques, contenu et publicité intégrée à petits prix."
     ],
     "implementation_report": {
+      "art_recovery_document": "creative/ART_PRODUCTION.md",
       "deployment": {
-        "version": 3,
+        "source_commit": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
         "status": "succeeded",
-        "source_commit": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1"
+        "version": 3
       },
       "features": [
         "Moto originale aux proportions documentées",
@@ -221,6 +264,7 @@
         "Rush 30 s, six colis, poursuite et indice, balade",
         "Record local, réglages et maquette sonore originale"
       ],
+      "latest_art_status": "Version 3 rejected; source acquisition and work-loop correction, no runtime graphic improvement claimed.",
       "limits": [
         "Exact street reference and real facade survey",
         "Human mobile and local road-priority validation",
@@ -262,6 +306,55 @@
       }
     ],
     "problem": "Créer WEWA, jeu solo de petite moto à Kinshasa : Rush de 30 secondes, livraisons et enquête sur la disparition d'une amie accompagnant une personnalité fictive. Secteur pilote Gombe. Spécifications prêtes pour développement ; aucun jeu jouable existant.",
+    "production_recovery": {
+      "blender_production": {
+        "collectibles": 2,
+        "editable_sources": "assets-src/ in GitHub repository",
+        "facade_lod1_variants": 12,
+        "facades": 12,
+        "library_bytes": 1529528,
+        "new_asset_types": 34,
+        "street_props": 20,
+        "validation_errors": 0,
+        "validation_warnings": 0
+      },
+      "date": "2026-10-20",
+      "engine_systems": [
+        "source-directed roads and safe lane graph",
+        "fixed-step seeded traffic and pedestrian crossings",
+        "spatial swept collisions, crash recovery and wheel-contact surface sampling",
+        "interpolated rendering",
+        "mission director: 6 parcels, 1300m pursuit and recoverable clue",
+        "versioned checkpoints with geometry fingerprint",
+        "local records per rules/seed/world, reputation and coins",
+        "single-thumb joystick and remappable keyboard",
+        "optional peripheral radial postprocess",
+        "thin instances, facade LOD and static prop batching"
+      ],
+      "evidence": {
+        "browser": "Chromium desktop and touch portrait/landscape, reload checkpoint, key remapping, optional postprocess and lifecycle passed",
+        "collisions": 0,
+        "delivered": 6,
+        "driven_story_seconds": 300.43333333333334,
+        "logic_tests": 33,
+        "physical_iphone": "not tested",
+        "restored_during_pursuit": true,
+        "static_prop_colliders": 15,
+        "traffic_vehicles": 8
+      },
+      "full_game_shipped": false,
+      "phase_gates_open": [
+        "Exact street reference and real facade survey",
+        "Human mobile and local road-priority validation",
+        "Finished photoreal art, character animation and lighting",
+        "Sustained hardware performance qualification",
+        "Full V1 fifteen-minute assembly and later phases"
+      ],
+      "site_version": 3,
+      "source_commit": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
+      "street_choice": "Current 220m corridor provisional; exact 150–250m stretch requested from user",
+      "user_request": "Respecter les phases et produire le vrai moteur du jeu, puis des éléments 3D modifiables dans Blender ; ne pas présenter le prototype comme jeu abouti."
+    },
     "requirements": [
       {
         "dependencies": [],
@@ -755,55 +848,6 @@
         "Continuous clothed rider replaces segmented mannequin"
       ],
       "status": "not_accepted"
-    },
-    "production_recovery": {
-      "date": "2026-10-20",
-      "user_request": "Respecter les phases et produire le vrai moteur du jeu, puis des éléments 3D modifiables dans Blender ; ne pas présenter le prototype comme jeu abouti.",
-      "full_game_shipped": false,
-      "engine_systems": [
-        "source-directed roads and safe lane graph",
-        "fixed-step seeded traffic and pedestrian crossings",
-        "spatial swept collisions, crash recovery and wheel-contact surface sampling",
-        "interpolated rendering",
-        "mission director: 6 parcels, 1300m pursuit and recoverable clue",
-        "versioned checkpoints with geometry fingerprint",
-        "local records per rules/seed/world, reputation and coins",
-        "single-thumb joystick and remappable keyboard",
-        "optional peripheral radial postprocess",
-        "thin instances, facade LOD and static prop batching"
-      ],
-      "blender_production": {
-        "new_asset_types": 34,
-        "facades": 12,
-        "street_props": 20,
-        "collectibles": 2,
-        "facade_lod1_variants": 12,
-        "editable_sources": "assets-src/ in GitHub repository",
-        "library_bytes": 1529528,
-        "validation_errors": 0,
-        "validation_warnings": 0
-      },
-      "evidence": {
-        "logic_tests": 33,
-        "driven_story_seconds": 300.43333333333334,
-        "delivered": 6,
-        "collisions": 0,
-        "restored_during_pursuit": true,
-        "traffic_vehicles": 8,
-        "static_prop_colliders": 15,
-        "browser": "Chromium desktop and touch portrait/landscape, reload checkpoint, key remapping, optional postprocess and lifecycle passed",
-        "physical_iphone": "not tested"
-      },
-      "phase_gates_open": [
-        "Exact street reference and real facade survey",
-        "Human mobile and local road-priority validation",
-        "Finished photoreal art, character animation and lighting",
-        "Sustained hardware performance qualification",
-        "Full V1 fifteen-minute assembly and later phases"
-      ],
-      "street_choice": "Current 220m corridor provisional; exact 150–250m stretch requested from user",
-      "source_commit": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
-      "site_version": 3
     }
   }
 }
