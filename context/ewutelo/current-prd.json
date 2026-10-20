@@ -1,6 +1,6 @@
 {
   "idea_id": "27f8ffb12df14ff79c6e0f13cbd1cf91",
-  "revision": 10,
+  "revision": 11,
   "prd": {
     "acceptance_criteria": [
       "Petite moto utilitaire Wewa ; clavier ZQSD/WASD et tactile.",
@@ -208,6 +208,11 @@
       "Monétiser ensuite cosmétiques, contenu et publicité intégrée à petits prix."
     ],
     "implementation_report": {
+      "deployment": {
+        "version": 3,
+        "status": "succeeded",
+        "source_commit": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1"
+      },
       "features": [
         "Moto originale aux proportions documentées",
         "GLB Gombe et chargement par cellules",
@@ -217,21 +222,26 @@
         "Record local, réglages et maquette sonore originale"
       ],
       "limits": [
-        "Photographic reference still not achieved: architectural variety/detail, pedestrian models/animation and authentic urban density remain unfinished.",
-        "Physical Safari iPhone 15/16 qualification and hardware FPS not measured.",
-        "Source geometry remains approximate and local street review pending."
+        "Exact street reference and real facade survey",
+        "Human mobile and local road-priority validation",
+        "Finished photoreal art, character animation and lighting",
+        "Sustained hardware performance qualification",
+        "Full V1 fifteen-minute assembly and later phases"
       ],
-      "milestone": "Mobile control correction and first runtime photographic material upgrade",
+      "milestone": "Game engine systems and editable Blender production library; whole-game acceptance open",
       "preview_url": "https://viva-wewa.chummyrose33.chatgpt.site",
       "repository": "https://github.com/Mobutoo/wewa",
       "review_url": "https://viva-wewa.chummyrose33.chatgpt.site/relecture.html",
-      "source_commit": "95a1acf87079f7c623ff6c37fbdca96ee459ce86",
-      "tests": "15 passing logic tests. Chromium desktop and touch portrait/landscape: single-thumb diagonal input, independent nitro, brake/reverse, cancellation, held-thumb blur, screen-right steering, camera, pause and run lifecycle passed. No JS/HTTP errors.",
-      "deployment": {
-        "version": 2,
-        "status": "succeeded",
-        "source_commit": "95a1acf87079f7c623ff6c37fbdca96ee459ce86"
-      }
+      "source_commit": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
+      "tests": "33 passing logic/integration tests, actual browser QA desktop/touch, full driven story with six parcels and 1300m pursuit in about300s, checkpoint restored, no collisions in automated scenario."
+    },
+    "mobile_controls_revision": {
+      "date": "2026-10-20",
+      "handedness": "Fixed reversed steering in RH scene; actual camera projection verifies right input turns screen right.",
+      "reason": "Utilisateur refuse les commandes séparées qui mobilisent deux mains pour conduire.",
+      "release": "Retour au neutre, perte de focus ou pause efface les contacts et axes.",
+      "scheme": "Un seul joystick analogique au pouce gauche : haut accélérer, bas freiner puis reculer, gauche/droite diriger simultanément. Nitro et klaxon indépendants à droite.",
+      "verification_scope": "Unit tests and real Chromium touch events; physical Safari approval pending."
     },
     "non_goals": [
       "Pas de paiement réel, multijoueur ou combat complexe dans V0.",
@@ -732,18 +742,10 @@
     "status": "prototype_in_development",
     "title": "Viva Wewa — Kinshasa à moto, navigateur web",
     "version": "R9 / production 1.2",
-    "mobile_controls_revision": {
-      "date": "2026-10-20",
-      "reason": "Utilisateur refuse les commandes séparées qui mobilisent deux mains pour conduire.",
-      "scheme": "Un seul joystick analogique au pouce gauche : haut accélérer, bas freiner puis reculer, gauche/droite diriger simultanément. Nitro et klaxon indépendants à droite.",
-      "release": "Retour au neutre, perte de focus ou pause efface les contacts et axes.",
-      "verification_scope": "Unit tests and real Chromium touch events; physical Safari approval pending.",
-      "handedness": "Fixed reversed steering in RH scene; actual camera projection verifies right input turns screen right."
-    },
     "visual_feedback_revision": {
-      "status": "not_accepted",
-      "reason": "Utilisateur refuse le rendu géométrique trop éloigné de la photographie.",
+      "acceptance": "Comparer des captures réelles du moteur à la référence, puis vérifier sur iPhone 15/16 ; ne pas annoncer le photoréalisme sans ce résultat.",
       "priority": "Polir le parcours visible avant extension des quartiers ou missions.",
+      "reason": "Utilisateur refuse le rendu géométrique trop éloigné de la photographie.",
       "runtime_changes": [
         "Textures photographiques CC0 asphalt/pavement/concrete/ground",
         "Sky-only HDR and reflections",
@@ -752,7 +754,56 @@
         "Street furnishings and revised camera",
         "Continuous clothed rider replaces segmented mannequin"
       ],
-      "acceptance": "Comparer des captures réelles du moteur à la référence, puis vérifier sur iPhone 15/16 ; ne pas annoncer le photoréalisme sans ce résultat."
+      "status": "not_accepted"
+    },
+    "production_recovery": {
+      "date": "2026-10-20",
+      "user_request": "Respecter les phases et produire le vrai moteur du jeu, puis des éléments 3D modifiables dans Blender ; ne pas présenter le prototype comme jeu abouti.",
+      "full_game_shipped": false,
+      "engine_systems": [
+        "source-directed roads and safe lane graph",
+        "fixed-step seeded traffic and pedestrian crossings",
+        "spatial swept collisions, crash recovery and wheel-contact surface sampling",
+        "interpolated rendering",
+        "mission director: 6 parcels, 1300m pursuit and recoverable clue",
+        "versioned checkpoints with geometry fingerprint",
+        "local records per rules/seed/world, reputation and coins",
+        "single-thumb joystick and remappable keyboard",
+        "optional peripheral radial postprocess",
+        "thin instances, facade LOD and static prop batching"
+      ],
+      "blender_production": {
+        "new_asset_types": 34,
+        "facades": 12,
+        "street_props": 20,
+        "collectibles": 2,
+        "facade_lod1_variants": 12,
+        "editable_sources": "assets-src/ in GitHub repository",
+        "library_bytes": 1529528,
+        "validation_errors": 0,
+        "validation_warnings": 0
+      },
+      "evidence": {
+        "logic_tests": 33,
+        "driven_story_seconds": 300.43333333333334,
+        "delivered": 6,
+        "collisions": 0,
+        "restored_during_pursuit": true,
+        "traffic_vehicles": 8,
+        "static_prop_colliders": 15,
+        "browser": "Chromium desktop and touch portrait/landscape, reload checkpoint, key remapping, optional postprocess and lifecycle passed",
+        "physical_iphone": "not tested"
+      },
+      "phase_gates_open": [
+        "Exact street reference and real facade survey",
+        "Human mobile and local road-priority validation",
+        "Finished photoreal art, character animation and lighting",
+        "Sustained hardware performance qualification",
+        "Full V1 fifteen-minute assembly and later phases"
+      ],
+      "street_choice": "Current 220m corridor provisional; exact 150–250m stretch requested from user",
+      "source_commit": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
+      "site_version": 3
     }
   }
 }
