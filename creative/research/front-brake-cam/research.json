@@ -1,0 +1,252 @@
+{
+  "schema": 1,
+  "component": "front brake camshaft, not front wheel axle",
+  "date": "2026-10-20",
+  "research_status": "variant_conflict_identified_no_dimensions_certified",
+  "sources": [
+    {
+      "id": "CAM-R01",
+      "title": "Bajaj BM125 UG provisional spare-parts catalogue rev00",
+      "url": "https://motobro.ua/files/Boxer_BM_125_UG_Provisional_SPC_%282%29.pdf",
+      "type": "manufacturer_authored_related_variant_third_party_mirror",
+      "locators": [
+        "PDF sheet44, printed65–66, front hub items8,18,22,23"
+      ],
+      "archive": {
+        "private_path": "/workspace/wewa-assets/references/documentary-workflow/boxer-bm125-ug-spares.pdf",
+        "bytes": 7054568,
+        "sha256": "5228ed1fb3f5ab9ec1503864bf6cccf66bd429ece78adb30516f9904a099372e",
+        "public_redistribution_permission_established": false
+      },
+      "inspected": "Text and existing drawing inspected; standard and UG5gear rows explicitly separated",
+      "limits": [
+        "Not certified for current RDC125HD",
+        "Mixed standard/UG table and schematic do not certify a unique current assembly",
+        "Panel quantity4 is an unresolved source anomaly, not four physical panels"
+      ]
+    },
+    {
+      "id": "CAM-R02",
+      "title": "Bajaj BOXER150 Spare Parts Catalogue, document71111461, rev00 March2012",
+      "url": "https://reypiston.com/wp-content/uploads/2024/04/Boxer-BM150-SPC.pdf",
+      "type": "manufacturer_authored_related_variant_third_party_mirror",
+      "locators": [
+        "PDF sheet1 revision notice",
+        "PDF sheet41 printed61–62 plate30 Front Hub (for Spoke Wheel)",
+        "PDF sheet42 printed63–64 plate30 Front Hub (for Alloy Wheel)",
+        "PDF sheet46–47 printed71–74 plate33 Handle Bar",
+        "PDF sheet53 printed85–86 plate38 Meter Assembly"
+      ],
+      "archive": {
+        "private_path": "/workspace/wewa-assets/references/front-brake-cam/bm150-spares.pdf",
+        "bytes": 5077975,
+        "sha256": "2ccf8194176b00e31d4b210d5ba10cd97182b06aa376e5a0dd79f3a19dfc2f0e",
+        "public_redistribution_permission_established": false
+      },
+      "inspected": "PDF text and front hub diagrams separately inspected for spoke/alloy; cockpit tables extracted and supplied to relevant agents",
+      "limits": [
+        "Older BM150, not current RDC125HD",
+        "Catalogued part differences do not prove incompatibility across every later market/year",
+        "Catalogue warns specifications and part numbers may change"
+      ]
+    },
+    {
+      "id": "CAM-R03",
+      "title": "Sparesgen generic Bajaj Boxer Front Brake Cam Kit Standard",
+      "url": "https://sparesgen.com/product/bajaj-boxer-front-brake-cam-kit-standard/",
+      "type": "retailer_unnumbered_kit",
+      "archive": {
+        "private_path": "/workspace/wewa-assets/references/front-brake-cam/sparesgen.html",
+        "bytes": 134662,
+        "sha256": "8151b3faf6796b5d2ed4c02bf47f388294ae2487d99766bf98c6e884e507bc73",
+        "public_redistribution_permission_established": false
+      },
+      "photo": {
+        "url": "https://sparesgen.com/wp-content/uploads/2025/06/Cam-Kit.webp",
+        "archive": {
+          "private_path": "/workspace/wewa-assets/references/front-brake-cam/generic-front-cam-kit.webp",
+          "bytes": 13236,
+          "sha256": "8c2a4d375bb9a9c7e615464c70289c0b4c1f348fe0cea7e82e30ff67328db4c8",
+          "public_redistribution_permission_established": false
+        },
+        "size_px": [
+          500,
+          500
+        ]
+      },
+      "inspected": "HTML and single oblique kit photograph inspected",
+      "limits": [
+        "No31151011/30151004/DS151089 identity shown",
+        "No dimensions",
+        "Same image bytes as prior IndianBikesSpares reference, not independent confirmation",
+        "Product weight0.5kg is not a shaft dimension or verified component mass",
+        "Retailer hardened-steel claim is not independently adopted as exact metallurgy"
+      ]
+    }
+  ],
+  "variant_matrix": [
+    {
+      "scope": "BM125UG catalogue standard row",
+      "source": "CAM-R01",
+      "locator": "PDFsheet44 items8/18/22/23",
+      "panel": "DZ151027",
+      "lever": "DD151008",
+      "cam": "31151011",
+      "wheel_axle": "DZ151012",
+      "status": "documented_related_variant",
+      "current_RDC_adopted": false
+    },
+    {
+      "scope": "BM125UG catalogue UG5gear rows",
+      "source": "CAM-R01",
+      "locator": "PDFsheet44 alternate rows items8/18/22/23",
+      "panel": "JA131605",
+      "lever": "JA131607",
+      "cam": "30151004",
+      "wheel_axle": "DJ151041",
+      "status": "documented_related_variant",
+      "current_RDC_adopted": false
+    },
+    {
+      "scope": "BM150 rev00 March2012 spoke wheel",
+      "source": "CAM-R02",
+      "locator": "PDFsheet41 printed62 plate30 items8/10/14/15",
+      "panel": "JA131605",
+      "lever": "JA131607",
+      "cam": "30151011",
+      "wheel_axle": "DJ151081, DJ151041 listed alternate",
+      "status": "documented_related_variant",
+      "current_RDC_adopted": false,
+      "additional_table_facts": [
+        "Bearing39268820 labelled12x37x12",
+        "UNut59150003 labelledM12",
+        "Lever bolt39077504 labelledM6x30"
+      ]
+    },
+    {
+      "scope": "BM150 rev00 March2012 alloy wheel",
+      "source": "CAM-R02",
+      "locator": "PDFsheet42 printed64 plate30 items1A/11/12/16",
+      "panel": "DS151087",
+      "lever": "DS151092",
+      "cam": "DS151089",
+      "wheel_axle": "JB131017",
+      "status": "documented_related_variant",
+      "current_RDC_adopted": false
+    }
+  ],
+  "claims": [
+    {
+      "id": "CAM-PART-PAIRING-CONTRADICTION",
+      "property": "Related catalogue pairing varies by model, wheel type and revision",
+      "status": "documented_related_variant",
+      "sources": [
+        "CAM-R01",
+        "CAM-R02"
+      ],
+      "value": "JA131605/JA131607 pair appears with cam30151004 in BM125UG but30151011 in BM150spoke; BM150alloy lists DS151087/DS151092/DS151089.",
+      "scope": "Signals unresolved compatibility, does not prove exact RDC identification or universal mutual incompatibility.",
+      "adopted_as_RDC_constraint": false
+    },
+    {
+      "id": "CAM-FUNCTION",
+      "property": "Functional role",
+      "status": "documented_related_variant",
+      "source": "CAM-R03",
+      "locator": "Product description plus CAM-R01/CAM-R02 exploded front hub layout",
+      "value": "Lever-driven shaft rotation moves cam against brake-shoe ends; shoes expand toward drum. Camshaft, wheel axle, lever and shoes remain distinct components.",
+      "scope": "General drum-brake role; force, travel and profile not quantified"
+    },
+    {
+      "id": "CAM-UNNUMBERED-VISUAL",
+      "property": "Visual morphology in generic unnumbered kit image",
+      "status": "photo_inferred",
+      "source": "CAM-R03",
+      "value": [
+        "Stepped cylindrical shaft",
+        "Longitudinally ridged/cannelated upper section",
+        "Circumferential diameter changes/shoulders",
+        "Broad lower cam feature, partly hidden by angle and light"
+      ],
+      "method": "Manual examination of512x512 single oblique kit image",
+      "uncertainty": {
+        "dimensioned_scale": false,
+        "opposite_view": false,
+        "exact_part_identity": false,
+        "tooth_count": "unknown"
+      },
+      "scope": "Cannot substitute as an exact30151004/31151011/DS151089 model blueprint"
+    }
+  ],
+  "source_images_used_as_game_textures": false,
+  "documented_exact_current_RDC_dimensions": [],
+  "open_dimensions": [
+    "Overall shaft length",
+    "Bearing/journal diameter and length",
+    "Spline major/minor diameter, tooth count and flank profile",
+    "Cam foot width/thickness and end radii",
+    "Shoulder positions, grooves and sealing details",
+    "Installed angular datum and brake-shoe clearance"
+  ],
+  "negative_results": [
+    {
+      "url": "https://wheelingcyclesupply.com/product/bajaj-boxer-front-brake-cam-kit-2/",
+      "result": "HTTP403; not counted as read"
+    },
+    {
+      "url": "https://www.tradeindia.com/products/front-brake-cam-w-lever-c6289849.html",
+      "result": "HTTP403; not counted as read"
+    },
+    {
+      "result": "Exact31151011/30151004 searches did not yield an inspected dimensional drawing; snippets alone not adopted"
+    }
+  ],
+  "compatibility_implications": {
+    "panel_candidate": "JA131605 remains a related-part study; no validated pairing to current cast wheel",
+    "lever_candidate": "JA131607 is a related candidate; no measured spline match to any chosen cam",
+    "cam_candidate": "No cam geometry fabricated in this research",
+    "wheel_axle_candidate": "DJ151041 cannot be assumed for current alloy assembly from BM150spoke list",
+    "existing_estimated_bores": "The related12mm bearing bore is not permission to silently replace earlier estimated13mm candidate wheel bore; first identify actual assembly"
+  },
+  "workflow": [
+    {
+      "stage": "G0",
+      "action": "Identify exact current RDC hub/brake part set with wheel type and revision. Keep wheel axle and brake camshaft separate."
+    },
+    {
+      "stage": "G1",
+      "action": "Get same-part side profiles and both axial ends, plus cam-foot end view; record spline profile and measured/dimensioned sections."
+    },
+    {
+      "stage": "G2",
+      "action": "Create axial diameter/length stack from verified dimensions; label each still-estimated segment, never scale exploded illustration as drawing."
+    },
+    {
+      "stage": "G3",
+      "action": "Lathe shaft steps and shoulders, make spline from verified pitch/count, construct cam foot from documented section; keep cam isolated and editable."
+    },
+    {
+      "stage": "G4",
+      "action": "Compare clean machined shaft and treated cam appearance under neutral/raking lights; original textures only or licensed data."
+    },
+    {
+      "stage": "G5",
+      "action": "Verify journals/seals, spline engagement with actual lever, two shoe contacts and neutral/operating angle. Do not call a free-rotation animation a functional brake test."
+    },
+    {
+      "stage": "G6",
+      "action": "Check evaluated export sections, scale, pivot, normals, and actual geometry in Babylon.js."
+    },
+    {
+      "stage": "G7",
+      "action": "Produce measured game LOD after shape correctness; compare end views and spline silhouette."
+    },
+    {
+      "stage": "G8",
+      "action": "Present isolated source-bound real renders and limits for user reception."
+    }
+  ],
+  "next_action": "Resolve the exact RDC assembly before detailed cam geometry; keep existing wheel-brake candidates unreconciled and unaccepted. Cockpit work can progress independently.",
+  "art_accepted": false,
+  "geometry_created": false
+}

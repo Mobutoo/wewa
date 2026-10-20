@@ -1,0 +1,528 @@
+{
+  "schema": 1,
+  "id": "FRONT-AXLE-DOCUMENTARY-PASS-02",
+  "date": "2026-10-20",
+  "component": "Front wheel axle; not front brake camshaft",
+  "parent_source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "requested_work": "Parallel documentary research to strengthen faithful component fabrication",
+  "status": "research_executed_no_verified_shaft_dimensions",
+  "sources": [
+    {
+      "id": "AX2-CAT-D04",
+      "existing_source_id": "D04",
+      "url": "https://motobro.ua/files/Boxer_BM_125_UG_Provisional_SPC_%282%29.pdf",
+      "type": "manufacturer_authored_related_parts_catalogue_third_party_mirror",
+      "locator": "PDFsheet44 front hub item8; standard and UG5gear rows; collar/bearing rows1–7",
+      "scope": "Related BM125UG rev00, not certified current RDC125HD"
+    },
+    {
+      "id": "AX2-CROSLAND-DZ",
+      "url": "https://www.croslandrepuestos.pe/axle-dz151012/p",
+      "type": "distributor_part_listing",
+      "quote": "AXLE - DZ151012 - BM 125, BOXER 100",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/front-axle-v2/crosland-DZ151012.html",
+        "sha256": "a1589ce065fcd42c4785ff8bd250bcf7e6a5d4a22378cc3c85eef1afbddd9c2e",
+        "bytes": 667701,
+        "publicly_redistributed": false
+      },
+      "scope": "Related model fitment, no current RDC or dimensional statement"
+    },
+    {
+      "id": "AX2-CROSLAND-DJ",
+      "url": "https://www.croslandrepuestos.pe/eje-delantero-dj151041/p",
+      "type": "distributor_part_listing",
+      "quote": "EJE DELANTERO - DJ151041 - BM 150 X UG, PULSAR 150 UG4, PULSAR 180 UG3, PULSAR LS 125, PULSAR N 125",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/front-axle-v2/crosland-DJ151041-reused.html",
+        "sha256": "33b67c8ee8d4667a0a2a3beccc04648e53fae7acfa59691a706d7454da24c82a",
+        "bytes": 670096,
+        "publicly_redistributed": false
+      },
+      "archive_reused_from_previous_pass": true,
+      "scope": "Related model fitment, not RDC125HD confirmation"
+    },
+    {
+      "id": "AX2-HAYPO-P",
+      "url": "https://haypo-motorcycle.en.made-in-china.com/product/kwyAgteClMWD/China-Motorcycle-Parts-Accessories-Front-Wheel-Axle-Nut-for-Bajaj-Pulsar-150-DJ151041.html",
+      "type": "aftermarket_replacement_supplier_listing",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/front-axle-v2/haypo-pulsar.html",
+        "sha256": "df8d541bf074aab3518ae94750bed4acf845990db9191533a8a96b1f051b4724",
+        "bytes": 237814,
+        "publicly_redistributed": false
+      },
+      "scope": "DJ151041 listing, no verified shaft dimensions",
+      "inspection_note": "Specification says According to product size; no numerical shaft drawing"
+    },
+    {
+      "id": "AX2-HAYPO-D",
+      "url": "https://haypo-motorcycle.en.made-in-china.com/product/AZxfcwiHCqWI/China-Motorcycle-Parts-Accessories-Front-Wheel-Axle-Nut-for-Bajaj-Discover-135-DJ151041.html",
+      "type": "aftermarket_replacement_supplier_listing",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/front-axle-v2/haypo-discover.html",
+        "sha256": "90324ce62fc09b8d451630e58ce735635e9c5b0be343636d28a5763b3b5c53c7",
+        "bytes": 264115,
+        "publicly_redistributed": false
+      },
+      "scope": "DJ151041 listing, no verified shaft dimensions",
+      "inspection_note": "Specification says According to product size; no numerical shaft drawing"
+    },
+    {
+      "id": "AX2-IBS",
+      "url": "https://indianbikesspares.com/product/axle-pulsar-180-p-no-dj151041-pulsar-150-bs-3-2008-2016/",
+      "type": "retailer_listing",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/front-axle-v2/indianbike.html",
+        "sha256": "06673c067d7da698554b04a7486ec679a2c4c746d6f4f89c643f4200e4e53a1e",
+        "bytes": 339494,
+        "publicly_redistributed": false
+      },
+      "scope": "DJ151041 listing, no verified shaft dimensions",
+      "inspection_note": "ProductOverview lists Weight1000GM; not an axle dimension or reliable metrology"
+    },
+    {
+      "id": "AX2-OEMSHIP",
+      "url": "https://oemship.com/product/axle-pulsar-180-bajaj-dj151041/",
+      "type": "retailer_listing",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/front-axle-v2/oemship.html",
+        "sha256": "c8dcf4957f646e389305155596b0d951a8978fad413fefc81850c44f944dd461",
+        "bytes": 223858,
+        "publicly_redistributed": false
+      },
+      "scope": "DJ151041 listing, no verified shaft dimensions",
+      "inspection_note": "SKU/title only; no useful dimensional geometry"
+    }
+  ],
+  "claims": [
+    {
+      "id": "AX2-IDENTITY-STD",
+      "property": "related_standard_front_axle_part",
+      "value": "DZ151012",
+      "status": "documented_related_variant",
+      "source": "AX2-CAT-D04",
+      "adopted_as_current_RDC": false
+    },
+    {
+      "id": "AX2-IDENTITY-UG",
+      "property": "related_UG5gear_front_axle_part",
+      "value": "DJ151041",
+      "status": "documented_related_variant",
+      "source": "AX2-CAT-D04",
+      "adopted_as_current_RDC": false
+    },
+    {
+      "id": "AX2-DZ-BM125",
+      "property": "distributor_fitment_list",
+      "value": [
+        "BM125",
+        "BOXER100"
+      ],
+      "status": "documented_related_variant",
+      "source": "AX2-CROSLAND-DZ",
+      "adopted_as_current_RDC": false
+    },
+    {
+      "id": "AX2-HEAD-SHAPE",
+      "property": "isolated_replacement_photo_features",
+      "value": [
+        "long cylindrical shaft",
+        "head with circular flange/collar-looking underside",
+        "external thread at other end",
+        "flanged nut shown separately in HAYPO photos"
+      ],
+      "status": "photo_inferred",
+      "source": [
+        "AX2-HAYPO-P",
+        "AX2-HAYPO-D",
+        "AX2-CROSLAND-DJ"
+      ],
+      "method": "Visual inspection of isolated product photographs; photographs contain no scale and do not establish OEM exactness",
+      "uncertainty": "Dimensions, hidden head faces, exact finish and identity unconfirmed; replacement photos differ in colour and presentation",
+      "scope": "Shape vocabulary only, no numerical fabrication constraint",
+      "adopted_as_current_RDC": false
+    }
+  ],
+  "new_information": [
+    "Crosland DZ151012 entry explicitly lists BM125/Boxer100, independently of the DJ151041 BM150XUG/Pulsar entry",
+    "Two useful replacement axle photos (silver and gold appearance) inspected, plus distributor DZ and DJ photos; no scale visible",
+    "HAYPO Pulsar/Discover listings reuse four exact image files, mostly marketing, so they are not independent confirmations",
+    "The short DZ151012 marketplace dimension statement contains an incoherent unit and cannot be adopted",
+    "Catalogue collars/bushings mean a bearing designation alone does not determine shaft diameter"
+  ],
+  "rejected_or_unverified_claims": [
+    {
+      "claim": "10mm * 193cm",
+      "part": "DZ151012",
+      "source": "Search excerpt of Shopee item274679217.21682690371",
+      "full_page_url": "https://shopee.ph/Axle-Front-CT100-Bajaj-Genuine-Parts-DZ151012-(140)-i.274679217.21682690371",
+      "status": "rejected_as_dimensional_constraint",
+      "reason": "Length unit cm implies1.93m and full page access returned403. Do not silently change cm to mm or certify10mm diameter from an unverified snippet.",
+      "full_page_inspected": false
+    },
+    {
+      "claim": "(140) in listing title means140mm length",
+      "status": "rejected",
+      "reason": "No unit or defined field; no geometric inference permitted"
+    },
+    {
+      "claim": "Retailer Weight1000GM determines dimensions or precise component mass",
+      "source": "AX2-IBS",
+      "status": "rejected",
+      "reason": "Retailer product metadata, no measurement conditions or drawing"
+    },
+    {
+      "claim": "KPBB6202 bearing designation directly establishes axle shaft diameter",
+      "source": "AX2-CAT-D04",
+      "status": "rejected",
+      "reason": "Catalogue includes collars/bushings; bearing bore and shaft diameter need not be equal. Current RDC identity also unconfirmed."
+    },
+    {
+      "claim": "HAYPO replacement DJ151041 geometry and finish equal OEM RDC part",
+      "status": "rejected",
+      "reason": "Aftermarket supplier photograph is not proof of exact RDC part"
+    }
+  ],
+  "images": [
+    {
+      "file": "haypo-pulsar-0.webp",
+      "url": "https://image.made-in-china.com/2f0j00JnsWKRdMUvbA/Motorcycle-Parts-Accessories-Front-Wheel-Axle-Nut-for-Bajaj-Pulsar-150-DJ151041.webp",
+      "bytes": 35236,
+      "sha256": "11e44d9a828fcb96c9d7cc24c075e794bebb8f1d71008100f93d1d94b5179a44",
+      "private_archive": "/workspace/wewa-assets/references/front-axle-v2/haypo-pulsar-0.webp",
+      "actual_format": "WEBP",
+      "resolution_px": [
+        1200,
+        1200
+      ],
+      "camera_exif_present": false,
+      "inspection": "isolated_silver_replacement_axle_with_flanged_nut_no_scale",
+      "counted_as_geometry_reference": true
+    },
+    {
+      "file": "haypo-pulsar-1.webp",
+      "url": "https://image.made-in-china.com/2f0j00bmCWyUMtlkqo/Motorcycle-Parts-Accessories-Front-Wheel-Axle-Nut-for-Bajaj-Pulsar-150-DJ151041.webp",
+      "bytes": 136638,
+      "sha256": "56dfd70819b4c294ee37c75e1b5331b816149656f9b80c19cd274116f2d036a7",
+      "private_archive": "/workspace/wewa-assets/references/front-axle-v2/haypo-pulsar-1.webp",
+      "actual_format": "WEBP",
+      "resolution_px": [
+        1500,
+        1125
+      ],
+      "camera_exif_present": false,
+      "inspection": "generic_marketing_not_component_geometry_reference",
+      "counted_as_geometry_reference": false
+    },
+    {
+      "file": "haypo-pulsar-2.webp",
+      "url": "https://image.made-in-china.com/2f0j00dOWcIHeRAgqP/Motorcycle-Parts-Accessories-Front-Wheel-Axle-Nut-for-Bajaj-Pulsar-150-DJ151041.webp",
+      "bytes": 570418,
+      "sha256": "99b6cf2ae8a41d922def7b0af7f862a6b9745bafd603c83f28f32d14c1e493c8",
+      "private_archive": "/workspace/wewa-assets/references/front-axle-v2/haypo-pulsar-2.webp",
+      "actual_format": "WEBP",
+      "resolution_px": [
+        1000,
+        990
+      ],
+      "camera_exif_present": false,
+      "inspection": "generic_marketing_not_component_geometry_reference",
+      "counted_as_geometry_reference": false
+    },
+    {
+      "file": "haypo-pulsar-3.webp",
+      "url": "https://image.made-in-china.com/2f0j00dyWcHUvlEubL/Motorcycle-Parts-Accessories-Front-Wheel-Axle-Nut-for-Bajaj-Pulsar-150-DJ151041.webp",
+      "bytes": 202302,
+      "sha256": "ea0cead36eef3bf49eabd4764d05c2b78bd3bc587ce5bb2989126ab4faf53d40",
+      "private_archive": "/workspace/wewa-assets/references/front-axle-v2/haypo-pulsar-3.webp",
+      "actual_format": "WEBP",
+      "resolution_px": [
+        2173,
+        1965
+      ],
+      "camera_exif_present": false,
+      "inspection": "generic_marketing_not_component_geometry_reference",
+      "counted_as_geometry_reference": false
+    },
+    {
+      "file": "haypo-pulsar-4.webp",
+      "url": "https://image.made-in-china.com/2f0j00ynVkDKvafpcH/Motorcycle-Parts-Accessories-Front-Wheel-Axle-Nut-for-Bajaj-Pulsar-150-DJ151041.webp",
+      "bytes": 191244,
+      "sha256": "461993d749090483b1d06f760c7636a3c892de60f7faf7cd85cc87a224e98f3d",
+      "private_archive": "/workspace/wewa-assets/references/front-axle-v2/haypo-pulsar-4.webp",
+      "actual_format": "WEBP",
+      "resolution_px": [
+        1524,
+        1379
+      ],
+      "camera_exif_present": false,
+      "inspection": "generic_marketing_not_component_geometry_reference",
+      "counted_as_geometry_reference": false
+    },
+    {
+      "file": "haypo-discover-0.webp",
+      "url": "https://image.made-in-china.com/2f0j00VODctWIGvgoR/Motorcycle-Parts-Accessories-Front-Wheel-Axle-Nut-for-Bajaj-Discover-135-DJ151041.webp",
+      "bytes": 202302,
+      "sha256": "ea0cead36eef3bf49eabd4764d05c2b78bd3bc587ce5bb2989126ab4faf53d40",
+      "private_archive": "/workspace/wewa-assets/references/front-axle-v2/haypo-discover-0.webp",
+      "actual_format": "WEBP",
+      "resolution_px": [
+        2173,
+        1965
+      ],
+      "camera_exif_present": false,
+      "inspection": "generic_marketing_not_component_geometry_reference",
+      "counted_as_geometry_reference": false
+    },
+    {
+      "file": "haypo-discover-1.webp",
+      "url": "https://image.made-in-china.com/2f0j00amqlpvRhgocU/Motorcycle-Parts-Accessories-Front-Wheel-Axle-Nut-for-Bajaj-Discover-135-DJ151041.webp",
+      "bytes": 136638,
+      "sha256": "56dfd70819b4c294ee37c75e1b5331b816149656f9b80c19cd274116f2d036a7",
+      "private_archive": "/workspace/wewa-assets/references/front-axle-v2/haypo-discover-1.webp",
+      "actual_format": "WEBP",
+      "resolution_px": [
+        1500,
+        1125
+      ],
+      "camera_exif_present": false,
+      "inspection": "generic_marketing_not_component_geometry_reference",
+      "counted_as_geometry_reference": false
+    },
+    {
+      "file": "haypo-discover-2.webp",
+      "url": "https://image.made-in-china.com/2f0j00hFPqQeDnbuof/Motorcycle-Parts-Accessories-Front-Wheel-Axle-Nut-for-Bajaj-Discover-135-DJ151041.webp",
+      "bytes": 570418,
+      "sha256": "99b6cf2ae8a41d922def7b0af7f862a6b9745bafd603c83f28f32d14c1e493c8",
+      "private_archive": "/workspace/wewa-assets/references/front-axle-v2/haypo-discover-2.webp",
+      "actual_format": "WEBP",
+      "resolution_px": [
+        1000,
+        990
+      ],
+      "camera_exif_present": false,
+      "inspection": "generic_marketing_not_component_geometry_reference",
+      "counted_as_geometry_reference": false
+    },
+    {
+      "file": "haypo-discover-3.webp",
+      "url": "https://image.made-in-china.com/2f0j00kFuiZWbzbfcp/Motorcycle-Parts-Accessories-Front-Wheel-Axle-Nut-for-Bajaj-Discover-135-DJ151041.webp",
+      "bytes": 44748,
+      "sha256": "83d349d16d02b14f634802c448a97b24b6e8084a97c73d510618183b2b6ea3fb",
+      "private_archive": "/workspace/wewa-assets/references/front-axle-v2/haypo-discover-3.webp",
+      "actual_format": "WEBP",
+      "resolution_px": [
+        1200,
+        1200
+      ],
+      "camera_exif_present": false,
+      "inspection": "isolated_gold_coloured_replacement_axle_with_flanged_nut_no_scale",
+      "counted_as_geometry_reference": true
+    },
+    {
+      "file": "haypo-discover-4.webp",
+      "url": "https://image.made-in-china.com/2f0j00lNIcTzHWsrkU/Motorcycle-Parts-Accessories-Front-Wheel-Axle-Nut-for-Bajaj-Discover-135-DJ151041.webp",
+      "bytes": 191244,
+      "sha256": "461993d749090483b1d06f760c7636a3c892de60f7faf7cd85cc87a224e98f3d",
+      "private_archive": "/workspace/wewa-assets/references/front-axle-v2/haypo-discover-4.webp",
+      "actual_format": "WEBP",
+      "resolution_px": [
+        1524,
+        1379
+      ],
+      "camera_exif_present": false,
+      "inspection": "generic_marketing_not_component_geometry_reference",
+      "counted_as_geometry_reference": false
+    },
+    {
+      "file": "indian-DJ151041.webp",
+      "url": "https://indianbikesspares.com/wp-content/uploads/2025/09/DJ151041-1748848816063-193557268.webp",
+      "bytes": 920,
+      "sha256": "27717837bfe910e9eb4a25efd70c91f6ed7fcfb4532bd1da2fe8556ee586557a",
+      "private_archive": "/workspace/wewa-assets/references/front-axle-v2/indian-DJ151041.webp",
+      "actual_format": "WEBP",
+      "resolution_px": [
+        103,
+        99
+      ],
+      "camera_exif_present": false,
+      "inspection": "tiny_isolated_axle_thumbnail_no_scale",
+      "counted_as_geometry_reference": true
+    },
+    {
+      "file": "crosland-DZ151012.jpg",
+      "url": "https://croslandpe.vtexassets.com/arquivos/ids/177112/DZ151012_1.jpg",
+      "private_archive": "/workspace/wewa-assets/references/front-axle-v2/crosland-DZ151012.jpg",
+      "bytes": 40629,
+      "sha256": "e0106176412b321546c2fce37b439041432be5c37da0a31e69f47f72ef0deccb",
+      "actual_format": "JPEG",
+      "resolution_px": [
+        700,
+        525
+      ],
+      "camera_exif_present": false,
+      "inspection": "DZ151012_in_packaging_no_ruler_oblique_edge",
+      "counted_as_geometry_reference": true
+    },
+    {
+      "file": "crosland-DJ151041-0.jpg",
+      "url": "https://croslandpe.vtexassets.com/arquivos/ids/178756/DJ151041_2.jpg",
+      "private_archive": "/workspace/wewa-assets/references/front-axle-v2/crosland-DJ151041-0.jpg",
+      "bytes": 177329,
+      "sha256": "c1d7f898eb0a706b64aa94910bd08bf35df69b7b84f879cf3f1358ff071f1e7c",
+      "actual_format": "JPEG",
+      "resolution_px": [
+        2952,
+        2808
+      ],
+      "camera_exif_present": false,
+      "inspection": "DJ151041_oblique_near_thread_end_far_head_no_scale",
+      "counted_as_geometry_reference": true
+    }
+  ],
+  "searches": [
+    {
+      "query": "\"DJ151041\" \"mm\"",
+      "url": "https://html.duckduckgo.com/html/?q=%22DJ151041%22%20%22mm%22",
+      "archive": "/workspace/wewa-assets/references/front-axle-v2/search-1bdfb67d442f.html",
+      "sha256": "5d5e1174a3e21b578277466e7634d4cbcc971dd36691b4779fa9fded7e7e666d",
+      "response_status": "no_results",
+      "results_are_component_dimensions": false
+    },
+    {
+      "query": "\"DJ151041\" diameter length",
+      "url": "https://html.duckduckgo.com/html/?q=%22DJ151041%22%20diameter%20length",
+      "archive": "/workspace/wewa-assets/references/front-axle-v2/search-7b9ce45040d7.html",
+      "sha256": "24868c77a2cb460064e2770af4349d8f9d52aeb883ea69c076525a19865fac34",
+      "response_status": "results",
+      "results_are_component_dimensions": false
+    },
+    {
+      "query": "\"DZ151012\" \"mm\"",
+      "url": "https://html.duckduckgo.com/html/?q=%22DZ151012%22%20%22mm%22",
+      "archive": "/workspace/wewa-assets/references/front-axle-v2/search-97de444c3fd3.html",
+      "sha256": "fc5da4145dbc53a4de1bb0b30a3581c0b2e33a5a0ebae76e01ffbb61a5498429",
+      "response_status": "no_results",
+      "results_are_component_dimensions": false
+    },
+    {
+      "query": "\"DZ151012\" dimensions length",
+      "url": "https://html.duckduckgo.com/html/?q=%22DZ151012%22%20dimensions%20length",
+      "archive": "/workspace/wewa-assets/references/front-axle-v2/search-ce197ad2de20.html",
+      "sha256": "7a59dbb565a74879b12e7f437eb450f2d200501309d67a8dc9609703e4706830",
+      "response_status": "results",
+      "results_are_component_dimensions": false
+    },
+    {
+      "query": "\"Pulsar\" \"front axle\" \"15mm\"",
+      "url": "https://html.duckduckgo.com/html/?q=%22Pulsar%22%20%22front%20axle%22%20%2215mm%22",
+      "archive": "/workspace/wewa-assets/references/front-axle-v2/search-5aca69d90a52.html",
+      "sha256": "9f16bac30981923d0c60d82572f588f096bf5066e98204e5ef840d6613e8dc6c",
+      "response_status": "no_results",
+      "results_are_component_dimensions": false
+    },
+    {
+      "query": "\"Bajaj\" \"front axle\" \"12mm\"",
+      "url": "https://html.duckduckgo.com/html/?q=%22Bajaj%22%20%22front%20axle%22%20%2212mm%22",
+      "archive": "/workspace/wewa-assets/references/front-axle-v2/search-4b13e3f16f49.html",
+      "sha256": "516ce7d85c023d370c991b413824556d554cc102fe4060da37a599cc3c9ec889",
+      "response_status": "results",
+      "results_are_component_dimensions": false
+    },
+    {
+      "query": "\"DJ151041\" medidas",
+      "url": "https://html.duckduckgo.com/html/?q=%22DJ151041%22%20medidas",
+      "archive": "/workspace/wewa-assets/references/front-axle-v2/search-39f43b01fb36.html",
+      "sha256": "e305fa8829d20c206bc1e47b40639204d3e4a9eb731fd6cf0b489c21ec01e9ce",
+      "response_status": "results",
+      "results_are_component_dimensions": false
+    },
+    {
+      "query": "\"DZ151012\" \"193\"",
+      "url": "https://html.duckduckgo.com/html/?q=%22DZ151012%22%20%22193%22",
+      "archive": "/workspace/wewa-assets/references/front-axle-v2/search-7d4d6a435f18.html",
+      "sha256": "6fb1968fd523e7dc42745a26ae607339af94a2bfeb14cdbacab1eda54b9fba18",
+      "response_status": "no_results",
+      "results_are_component_dimensions": false
+    },
+    {
+      "query": "\"DJ151041\" \"12\"",
+      "url": "https://html.duckduckgo.com/html/?q=%22DJ151041%22%20%2212%22",
+      "archive": "/workspace/wewa-assets/references/front-axle-v2/search-d1c23c901f51.html",
+      "sha256": "4dba040dbe3dbb7e7776a11e0b1094d6ff2f0157dee03ed6185d92ec57a5cb50",
+      "response_status": "no_results",
+      "results_are_component_dimensions": false
+    },
+    {
+      "query": "\"DJ151041\" \"15\"",
+      "url": "https://html.duckduckgo.com/html/?q=%22DJ151041%22%20%2215%22",
+      "archive": "/workspace/wewa-assets/references/front-axle-v2/search-be5c79fafd87.html",
+      "sha256": "fd7993c4fd7b84fb9916d7d693b19369622c48f5ba65a503369fbcbb3038d336",
+      "response_status": "no_results",
+      "results_are_component_dimensions": false
+    },
+    {
+      "query": "\"eje delantero\" \"pulsar 150\" medidas",
+      "url": "https://html.duckduckgo.com/html/?q=%22eje%20delantero%22%20%22pulsar%20150%22%20medidas",
+      "archive": "/workspace/wewa-assets/references/front-axle-v2/search-31cae78d887e.html",
+      "sha256": "4803d27795362b59992c61d7d04678d1856b62e4396777a8ec1a69386dac5e87",
+      "response_status": "results",
+      "results_are_component_dimensions": false
+    },
+    {
+      "query": "\"eje delantero\" \"boxer 125\" medida",
+      "url": "https://html.duckduckgo.com/html/?q=%22eje%20delantero%22%20%22boxer%20125%22%20medida",
+      "archive": "/workspace/wewa-assets/references/front-axle-v2/search-0f2eefbc7711.html",
+      "sha256": "b1bc282e9878fdc2f8d77b6ec2b0c38e11a6b59954f48bea501ab1c0656ce1fc",
+      "response_status": "bot_challenge",
+      "results_are_component_dimensions": false
+    }
+  ],
+  "access_failures": [
+    {
+      "url": "https://shopee.ph/Axle-Front-CT100-Bajaj-Genuine-Parts-DZ151012-(140)-i.274679217.21682690371",
+      "error": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+      "counted_as_read": false
+    },
+    {
+      "url": "https://mintwellautotech.com/en/catalogue/bajaj/boxer-bm125/parts/DJ151041/",
+      "error": "HTTP Error 404: Not Found",
+      "counted_as_read": false
+    }
+  ],
+  "geometry_readiness": {
+    "dimensioned_faithful_reproduction_cleared": false,
+    "exact_current_RDC_identity_confirmed": false,
+    "manufacturer_shaft_dimensions_verified": false,
+    "geometry_created": false,
+    "permitted_independent_preparation": [
+      "Unscaled outline/part decomposition study labelled as such",
+      "Prepare measurement and reference capture protocol",
+      "Continue independent components already authorized by user"
+    ],
+    "still_unknown": [
+      "Overall length and under-head useful length separately",
+      "Shaft diameter at each bearing/collar station",
+      "Head type, across-flats width and height",
+      "Flange/collar diameter and thickness",
+      "Thread major diameter, pitch, handedness and threaded length",
+      "Shoulder/groove geometry and lead-in chamfers",
+      "Confirmed fork/collar/bearing/panel stack and clamping faces",
+      "Exact RDC125HD part revision"
+    ],
+    "next_high_value_evidence": [
+      "Match current RDC VIN/parts revision to standard versus UG axle",
+      "Obtain dimensioned same-part drawing or measure a labelled physical part",
+      "Capture two full profiles, head end and threaded end, with ruler/caliper and controlled colour reference",
+      "Measure thread with pitch gauge; distinguish total length from under-head length",
+      "Confirm collar inner/outer dimensions and fork spacing before inferring an installed shaft"
+    ]
+  },
+  "rights": "All downloaded commercial photographs are private documentary references only. No public redistribution permission established; no photo pixels used as textures.",
+  "art_accepted": false,
+  "physical_part_measured": false
+}

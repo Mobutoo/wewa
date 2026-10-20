@@ -1,0 +1,225 @@
+{
+  "schema": 1,
+  "id": "MOTO-HANDLEBAR-GRIPS-001",
+  "label": "Poignées gauche et droite — enveloppes caoutchouc",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC placement with related-part references, exact part identity not certified",
+    "variant_confirmed": false,
+    "usage": "Separate candidate for first-person cockpit review",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01",
+    "D04",
+    "D13",
+    "D17",
+    "D18"
+  ],
+  "claims": [
+    {
+      "id": "MOTO-HANDLEBAR-GRIPS-001-WORKING-SIZE",
+      "property": "rubber_length",
+      "value": 0.12,
+      "unit": "m",
+      "source": "D13",
+      "status": "estimated",
+      "adopted": true,
+      "method": "Provisional original model proportions against uncalibrated photos; no ruler or manufacturer section",
+      "uncertainty": {
+        "range_m": [
+          0.11,
+          0.13
+        ]
+      },
+      "scope": "Working candidate only, all physical dimensions estimated"
+    }
+  ],
+  "views": [
+    {
+      "name": "left-quarter",
+      "camera_location_m": [
+        -0.32655513286590576,
+        -0.2044878751039505,
+        0.26499998569488525
+      ],
+      "camera_target_m": [
+        -0.28683164715766907,
+        0.061824046075344086,
+        0.10499999672174454
+      ],
+      "lens_mm": 65,
+      "other_grip_hidden_for_isolated_review": true
+    },
+    {
+      "name": "right-quarter",
+      "camera_location_m": [
+        0.11877071857452393,
+        0.2721939980983734,
+        0.26499998569488525
+      ],
+      "camera_target_m": [
+        0.28683164715766907,
+        0.061824046075344086,
+        0.10499999672174454
+      ],
+      "lens_mm": 65,
+      "other_grip_hidden_for_isolated_review": true
+    }
+  ],
+  "criteria": [
+    "Compare isolated contour/sections and surface reflections with documented photo",
+    "Check real exported hollow tube or grip cavity and provisional contact",
+    "Compare first-person framing before adding other hardware"
+  ],
+  "gaps": [
+    {
+      "id": "MOTO-HANDLEBAR-GRIPS-001-DIM",
+      "description": "Exact RDC part identity, measured sections and interfaces unavailable",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G3",
+        "G5"
+      ],
+      "next_research": "Same-part measured views or dimensioned manufacturer service data"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "pending",
+      "revision": "handlebar-grips-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "handlebar-grips-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Physical part dimensions and calibrated documentary comparison remain missing",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "handlebar-grips-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Physical part dimensions and calibrated documentary comparison remain missing",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "handlebar-grips-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/handlebar-grips/handlebar-grips-v1.blend",
+          "kind": "editable_source",
+          "revision": "handlebar-grips-v1",
+          "sha256": "d0070617414c809b1a6e71423029720a5d3dbb71130c8ca666316f5ffa4ed9a1"
+        },
+        {
+          "path": "../../reviews/handlebar-grips-v1/left-quarter.png",
+          "kind": "isolated_comparison",
+          "revision": "handlebar-grips-v1",
+          "sha256": "df7d138e23b10de2e0a754ddb25e703812813b96898e635332cf010883355876"
+        }
+      ],
+      "reason": "Concrete candidate proof recorded; exact dimensions, artistic comparison and installed function still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "handlebar-grips-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-grips-v1/right-quarter.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "handlebar-grips-v1",
+          "sha256": "36eb2c4744bb6f10b181154824bc54e8270eb7c2fdd2dbf79dc50672c48d7e1b"
+        }
+      ],
+      "reason": "Concrete candidate proof recorded; exact dimensions, artistic comparison and installed function still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "handlebar-grips-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-grips-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "handlebar-grips-v1",
+          "sha256": "c57270de8bf6ae40a42c1d8a52f97727f97e4fac016708c6b9cfc6c200dede9e"
+        }
+      ],
+      "reason": "Concrete candidate proof recorded; exact dimensions, artistic comparison and installed function still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "handlebar-grips-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-grips-v1/export-check.json",
+          "kind": "technical_export_check",
+          "revision": "handlebar-grips-v1",
+          "sha256": "c4b944dc4de0968d517d33ce35ab2b7fd91b3cf8d7f20c991ac23824aabd9c55"
+        },
+        {
+          "path": "../../reviews/cockpit-v1/engine-pose-42.png",
+          "kind": "real_runtime_comparison",
+          "revision": "handlebar-grips-v1",
+          "sha256": "d8d5a6928e75a5cab482391941c0a18783b2095e64b1b91707dd228550ee7d81"
+        }
+      ],
+      "reason": "Concrete candidate proof recorded; exact dimensions, artistic comparison and installed function still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "handlebar-grips-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection export, not a qualified mobile LOD; no physical hardware cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "handlebar-grips-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "handlebar-grips-v1",
+  "export_revision": "handlebar-grips-v1-inspection",
+  "next_action": "Review isolated shape/material and first-person legibility; obtain measured dimensions and exact RDC interfaces before acceptance.",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/handlebar-grips/README.md",
+  "candidate_review": "../../reviews/handlebar-grips-v1/README.md",
+  "graphic_style": "../../GRAPHIC_STYLE.md"
+}

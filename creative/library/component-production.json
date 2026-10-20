@@ -8,7 +8,7 @@
     "art_accepted": false
   },
   "scope_note": "Initial decomposition of the first motorcycle component, not a completed component inventory of all92 source families.",
-  "active_component": "MOTO-BRAKE-LEVER-FRONT-001",
+  "active_component": "MOTO-INSTRUMENTS-001",
   "components": [
     {
       "id": "MOTO-TYRE-FRONT-001",
@@ -136,15 +136,79 @@
         "optimized_variant_rechecked": false,
         "user_art_accepted": false
       }
+    },
+    {
+      "id": "MOTO-HANDLEBAR-001",
+      "parent_source_ids": [
+        "AS-049",
+        "CON-001"
+      ],
+      "name": "Guidon — tube nu et zones de serrage",
+      "state": "isolated_candidate_rework_not_accepted",
+      "candidate_source": "../../assets-src/moto-components/handlebar/README.md",
+      "candidate_review": "../reviews/handlebar-v1/README.md",
+      "component_workflow": "../workflow/records/moto-handlebar-001.json",
+      "all_physical_dimensions_estimated": true,
+      "gates": {
+        "references_sufficient": false,
+        "shape_comparison_passed": false,
+        "material_comparison_passed": false,
+        "engine_comparison_passed": false,
+        "optimized_variant_rechecked": false,
+        "user_art_accepted": false
+      }
+    },
+    {
+      "id": "MOTO-HANDLEBAR-GRIPS-001",
+      "parent_source_ids": [
+        "AS-049",
+        "CON-001"
+      ],
+      "name": "Poignées gauche et droite — enveloppes caoutchouc",
+      "state": "isolated_candidate_rework_not_accepted",
+      "candidate_source": "../../assets-src/moto-components/handlebar-grips/README.md",
+      "candidate_review": "../reviews/handlebar-grips-v1/README.md",
+      "component_workflow": "../workflow/records/moto-handlebar-grips-001.json",
+      "all_physical_dimensions_estimated": true,
+      "gates": {
+        "references_sufficient": false,
+        "shape_comparison_passed": false,
+        "material_comparison_passed": false,
+        "engine_comparison_passed": false,
+        "optimized_variant_rechecked": false,
+        "user_art_accepted": false
+      }
+    },
+    {
+      "id": "MOTO-INSTRUMENTS-001",
+      "parent_source_ids": [
+        "AS-049",
+        "CON-001"
+      ],
+      "name": "Deux cadrans, aiguilles et boîtier du poste de conduite",
+      "state": "isolated_candidate_rework_not_accepted",
+      "candidate_source": "../../assets-src/moto-components/instruments/README.md",
+      "candidate_review": "../reviews/instruments-v1/README.md",
+      "component_workflow": "../workflow/records/moto-instruments-001.json",
+      "all_physical_dimensions_estimated": true,
+      "gates": {
+        "references_sufficient": false,
+        "shape_comparison_passed": false,
+        "material_comparison_passed": false,
+        "engine_comparison_passed": false,
+        "optimized_variant_rechecked": false,
+        "user_art_accepted": false
+      }
     }
   ],
   "coding_or_modeling_started_after_feedback": true,
   "rider_gate": "Deferred until motorcycle artistic reception",
   "research": "../MOTORCYCLE_RECONSTRUCTION_RESEARCH.md",
-  "planning_status": "four_isolated_candidates_no_art_reception",
-  "next_preparatory_step": "Compare lever corrected surfaces and measured sections; research camshaft and wheel axle separately. Rider deferred.",
+  "planning_status": "seven_component_candidates_cockpit_review_no_art_acceptance",
+  "next_preparatory_step": "Review cockpit and exact RDC interfaces, then make controls, levers, mirrors, mounts and visor as separate components. Brake variant compatibility blocked.",
   "general_workflow": "../workflow/README.md",
   "documentary_supplement": "../workflow/RESEARCH.md",
-  "detailed_component_record": "../workflow/records/moto-brake-lever-front-001.json",
-  "assembly_decomposition": "../workflow/motorcycle-assembly.json"
+  "detailed_component_record": "../workflow/records/moto-instruments-001.json",
+  "assembly_decomposition": "../workflow/motorcycle-assembly.json",
+  "parallel_execution": "User authorized separate handlebar, grips and instruments; independent research on axle/cam, no shared automatic acceptance"
 }

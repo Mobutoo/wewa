@@ -1,0 +1,240 @@
+{
+  "schema": 1,
+  "id": "MOTO-HANDLEBAR-001",
+  "label": "Guidon — tube nu et zones de serrage",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC placement with related-part references, exact part identity not certified",
+    "variant_confirmed": false,
+    "usage": "Separate candidate for first-person cockpit review",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01",
+    "D04",
+    "D13",
+    "D15",
+    "D16"
+  ],
+  "claims": [
+    {
+      "id": "MOTO-HANDLEBAR-001-WORKING-SIZE",
+      "property": "end_axis_span",
+      "value": 0.68,
+      "unit": "m",
+      "source": "D13",
+      "status": "estimated",
+      "adopted": true,
+      "method": "Provisional original model proportions against uncalibrated photos; no ruler or manufacturer section",
+      "uncertainty": {
+        "range_m": [
+          0.62,
+          0.72
+        ]
+      },
+      "scope": "Working candidate only, all physical dimensions estimated"
+    }
+  ],
+  "views": [
+    {
+      "name": "quarter",
+      "camera_location_m": [
+        0.82,
+        0.92,
+        0.68
+      ],
+      "camera_target_m": [
+        0,
+        0.02,
+        0.05
+      ],
+      "lens_mm": 60,
+      "documentary_camera_calibrated": false
+    },
+    {
+      "name": "cockpit",
+      "camera_location_m": [
+        0,
+        0.54,
+        0.45
+      ],
+      "camera_target_m": [
+        0,
+        0.02,
+        0.04
+      ],
+      "lens_mm": 32,
+      "documentary_camera_calibrated": false
+    },
+    {
+      "name": "clamp-detail",
+      "camera_location_m": [
+        0.16,
+        0.22,
+        0.24
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0
+      ],
+      "lens_mm": 80,
+      "documentary_camera_calibrated": false
+    }
+  ],
+  "criteria": [
+    "Compare isolated contour/sections and surface reflections with documented photo",
+    "Check real exported hollow tube or grip cavity and provisional contact",
+    "Compare first-person framing before adding other hardware"
+  ],
+  "gaps": [
+    {
+      "id": "MOTO-HANDLEBAR-001-DIM",
+      "description": "Exact RDC part identity, measured sections and interfaces unavailable",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G3",
+        "G5"
+      ],
+      "next_research": "Same-part measured views or dimensioned manufacturer service data"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "pending",
+      "revision": "handlebar-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "handlebar-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Physical part dimensions and calibrated documentary comparison remain missing",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "handlebar-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Physical part dimensions and calibrated documentary comparison remain missing",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "handlebar-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/handlebar/handlebar-v1.blend",
+          "kind": "editable_source",
+          "revision": "handlebar-v1",
+          "sha256": "1385ccc667f30681e334ce96aff71d2214794238c5b31e0a1fd4b75b8ad6652a"
+        },
+        {
+          "path": "../../reviews/handlebar-v1/quarter.png",
+          "kind": "isolated_comparison",
+          "revision": "handlebar-v1",
+          "sha256": "3e1d8de77bb47d314051462cf48b1a149da87265b0ae04e0ec3c063917f3924d"
+        }
+      ],
+      "reason": "Concrete candidate proof recorded; exact dimensions, artistic comparison and installed function still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "handlebar-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-v1/clamp-detail.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "handlebar-v1",
+          "sha256": "270b4d801b1c0e9d6c96791bda341770be92463c52b2719e150445080a2fd18d"
+        }
+      ],
+      "reason": "Concrete candidate proof recorded; exact dimensions, artistic comparison and installed function still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "handlebar-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "handlebar-v1",
+          "sha256": "7f8fdc6550f82724c8495a2e19547dceb1916a5cde2b17b349c49505fb52b663"
+        }
+      ],
+      "reason": "Concrete candidate proof recorded; exact dimensions, artistic comparison and installed function still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "handlebar-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-v1/geometry-check.json",
+          "kind": "technical_export_check",
+          "revision": "handlebar-v1",
+          "sha256": "1b1892a12a93375e707b465d94130ee6d5c9c47fd08a4fb4d67ecdf372914847"
+        },
+        {
+          "path": "../../reviews/cockpit-v1/engine-pose-42.png",
+          "kind": "real_runtime_comparison",
+          "revision": "handlebar-v1",
+          "sha256": "d8d5a6928e75a5cab482391941c0a18783b2095e64b1b91707dd228550ee7d81"
+        }
+      ],
+      "reason": "Concrete candidate proof recorded; exact dimensions, artistic comparison and installed function still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "handlebar-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection export, not a qualified mobile LOD; no physical hardware cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "handlebar-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "handlebar-v1",
+  "export_revision": "handlebar-v1-inspection",
+  "next_action": "Review isolated shape/material and first-person legibility; obtain measured dimensions and exact RDC interfaces before acceptance.",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/handlebar/README.md",
+  "candidate_review": "../../reviews/handlebar-v1/README.md",
+  "graphic_style": "../../GRAPHIC_STYLE.md"
+}

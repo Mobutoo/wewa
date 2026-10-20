@@ -1,0 +1,311 @@
+{
+  "schema": 1,
+  "id": "MOTO-INSTRUMENTS-001",
+  "label": "Deux cadrans, aiguilles et boîtier du poste de conduite",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material",
+    "interface"
+  ],
+  "identity": {
+    "variant": "Current RDC placement with related-part references, exact part identity not certified",
+    "variant_confirmed": false,
+    "usage": "Separate candidate for first-person cockpit review",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01",
+    "D04",
+    "D13",
+    "D14"
+  ],
+  "claims": [
+    {
+      "id": "METER-FUNCTIONS",
+      "property": "advertised_features",
+      "value": [
+        "USB charger",
+        "Gear indicator"
+      ],
+      "source": "D14",
+      "locator": "Current English RDC product page feature description",
+      "status": "documented_exact_variant",
+      "adopted": true,
+      "scope": "Published market feature only; no part number or dimensions certified"
+    },
+    {
+      "id": "METER-WORKING-SEPARATION",
+      "property": "dial_centre_separation",
+      "value": 0.128,
+      "unit": "m",
+      "source": "D13",
+      "locator": "Photo proportions, uncalibrated view",
+      "status": "estimated",
+      "adopted": true,
+      "method": "Working diameter100mm and visible pod centre ratio; no measured scale",
+      "uncertainty": {
+        "range_m": [
+          0.115,
+          0.145
+        ]
+      },
+      "scope": "Candidate proportions only, not a Bajaj dimensional drawing"
+    }
+  ],
+  "views": [
+    {
+      "name": "front",
+      "camera_location_m": [
+        0.0,
+        0.4312312602996826,
+        0.41944754123687744
+      ],
+      "camera_target_m": [
+        0.0,
+        -0.11999999731779099,
+        0.07500000298023224
+      ],
+      "lens_mm": 70,
+      "speed_kmh": 0,
+      "fuel_fraction": 0.65,
+      "pose_changes_saved_to_source": false,
+      "raw_linear_hdr": {
+        "private_path": "/workspace/wewa-assets/render-raw/instruments-v1/front-raw-0001.exr",
+        "sha256": "718faba11bd8370624b5a30c0a1fbd7972b97e898fe619a4cb7f592166b359a7",
+        "bytes": 5134453,
+        "in_public_repo": false
+      }
+    },
+    {
+      "name": "quarter",
+      "camera_location_m": [
+        0.25,
+        0.30000001192092896,
+        0.3700000047683716
+      ],
+      "camera_target_m": [
+        0.0,
+        -0.11999999731779099,
+        0.07500000298023224
+      ],
+      "lens_mm": 70,
+      "speed_kmh": 0,
+      "fuel_fraction": 0.65,
+      "pose_changes_saved_to_source": false,
+      "raw_linear_hdr": {
+        "private_path": "/workspace/wewa-assets/render-raw/instruments-v1/quarter-raw-0001.exr",
+        "sha256": "decbf990ea260c09a73abaf963647d431111ee4007e3e30e41c67f4336879477",
+        "bytes": 5079623,
+        "in_public_repo": false
+      }
+    },
+    {
+      "name": "driver-42",
+      "camera_location_m": [
+        0.0,
+        0.36000001430511475,
+        0.36000001430511475
+      ],
+      "camera_target_m": [
+        0.0,
+        -0.11999999731779099,
+        0.08500000089406967
+      ],
+      "lens_mm": 60,
+      "speed_kmh": 42,
+      "fuel_fraction": 0.65,
+      "pose_changes_saved_to_source": false,
+      "raw_linear_hdr": {
+        "private_path": "/workspace/wewa-assets/render-raw/instruments-v1/driver-42-raw-0001.exr",
+        "sha256": "ea7ecd128958e931764e23feea489dbe4db00fb4602287bf4a4d11c592ded26c",
+        "bytes": 4980692,
+        "in_public_repo": false
+      }
+    },
+    {
+      "name": "rear",
+      "camera_location_m": [
+        0.0,
+        -0.6499999761581421,
+        0.10000000149011612
+      ],
+      "camera_target_m": [
+        0.0,
+        -0.11999999731779099,
+        0.07500000298023224
+      ],
+      "lens_mm": 70,
+      "speed_kmh": 0,
+      "fuel_fraction": 0.65,
+      "pose_changes_saved_to_source": false,
+      "raw_linear_hdr": {
+        "private_path": "/workspace/wewa-assets/render-raw/instruments-v1/rear-raw-0001.exr",
+        "sha256": "c0ff30d6698d258eae2fcb436613a1bf2b7e4e4e5527ae459671ca3bc1549a89",
+        "bytes": 3460560,
+        "in_public_repo": false
+      }
+    }
+  ],
+  "criteria": [
+    "Compare speed/fuel/gear layout, centre cover and USB cap with official RDC photograph",
+    "Check dial readability at driver viewing distance in source and actual export",
+    "Verify exported needle ranges and distinct gear states; no odometer functionality claimed"
+  ],
+  "gaps": [
+    {
+      "id": "METER-DIM",
+      "description": "No measured shell/lens/dial sections or mounting interface",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G3",
+        "G5"
+      ],
+      "next_research": "Same-part measured views or dimensioned service drawing"
+    },
+    {
+      "id": "METER-PART",
+      "description": "Feature file namedBM150 onBoxer125HD page; exact supplied assembly number unknown",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1"
+      ],
+      "next_research": "Identify actual current RDC meter assembly and reverse-side mounting"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "pending",
+      "revision": "instruments-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "instruments-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Physical part dimensions and calibrated documentary comparison remain missing",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "instruments-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Physical part dimensions and calibrated documentary comparison remain missing",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "instruments-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/instruments/instruments-v1.blend",
+          "kind": "editable_source",
+          "revision": "instruments-v1",
+          "sha256": "e3321cee34967f7749dbfa8650fe01c404137c55cfb5c42881363f098cb91ec0"
+        },
+        {
+          "path": "../../reviews/instruments-v1/front.png",
+          "kind": "isolated_comparison",
+          "revision": "instruments-v1",
+          "sha256": "d6930869d327a968658ef79b3ebdbbce7f9182d211066fc876b44bda4d806a7c"
+        }
+      ],
+      "reason": "Concrete candidate proof recorded; exact dimensions, artistic comparison and installed function still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "instruments-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/instruments-v1/driver-42.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "instruments-v1",
+          "sha256": "dd410053b6f169ca26ab94cb44c11225a5d753d63b64d2623507f11af08b2183"
+        }
+      ],
+      "reason": "Concrete candidate proof recorded; exact dimensions, artistic comparison and installed function still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "instruments-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/instruments-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "instruments-v1",
+          "sha256": "cea0e4b3365cbf4ad7ff5c27914be212ca999f0087e959c5c222e53860458a92"
+        }
+      ],
+      "reason": "Concrete candidate proof recorded; exact dimensions, artistic comparison and installed function still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "instruments-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/instruments-v1/geometry-check.json",
+          "kind": "technical_export_check",
+          "revision": "instruments-v1",
+          "sha256": "73edf518035a5c419d9eb6fafa9e41aeb1563e5ff0f1c37fca69b626efd70dcf"
+        },
+        {
+          "path": "../../reviews/cockpit-v1/engine-pose-42.png",
+          "kind": "real_runtime_comparison",
+          "revision": "instruments-v1",
+          "sha256": "d8d5a6928e75a5cab482391941c0a18783b2095e64b1b91707dd228550ee7d81"
+        }
+      ],
+      "reason": "Concrete candidate proof recorded; exact dimensions, artistic comparison and installed function still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "instruments-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection export, not a qualified mobile LOD; no physical hardware cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "instruments-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": true,
+  "source_revision": "instruments-v1",
+  "export_revision": "instruments-v1-inspection",
+  "next_action": "Review isolated shape/material and first-person legibility; obtain measured dimensions and exact RDC interfaces before acceptance.",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/instruments/README.md",
+  "candidate_review": "../../reviews/instruments-v1/README.md",
+  "graphic_style": "../../GRAPHIC_STYLE.md"
+}

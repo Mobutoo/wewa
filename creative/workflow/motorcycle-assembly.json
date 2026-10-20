@@ -7,7 +7,7 @@
   ],
   "scope": "initial decomposition; visible hardware may need separate child records, not25 completed assets",
   "reference": "../library/motorcycle-reference-views.json",
-  "active_component": "MOTO-BRAKE-LEVER-FRONT-001",
+  "active_component": "MOTO-INSTRUMENTS-001",
   "driver": "deferred_until_motorcycle_user_reception",
   "whole_bike_art_accepted": false,
   "components": [
@@ -347,8 +347,12 @@
         "control dimensions",
         "motion clearance"
       ],
-      "state": "research_not_fabricated",
-      "record": null
+      "state": "tube_and_grip_candidates_controls_levers_mirrors_absent",
+      "record": "records/moto-handlebar-001.json",
+      "child_records": [
+        "records/moto-handlebar-001.json",
+        "records/moto-handlebar-grips-001.json"
+      ]
     },
     {
       "order": 22,
@@ -362,8 +366,8 @@
         "current USB/gear-indicator variant",
         "legible face/top"
       ],
-      "state": "research_not_fabricated",
-      "record": null
+      "state": "instrument_candidate_under_review_key_wiring_mounts_unverified",
+      "record": "records/moto-instruments-001.json"
     },
     {
       "order": 23,
@@ -412,5 +416,7 @@
       "record": null
     }
   ],
-  "game_branding": "WEWA on fuel tank; manufacturer labels retained in documentary sources only"
+  "game_branding": "WEWA on fuel tank; manufacturer labels retained in documentary sources only",
+  "cockpit_review": "../reviews/cockpit-v1/README.md",
+  "brake_variant_warning": "Related BM150 spoke/alloy groups differ. Current JA panel/lever are not certified against current RDC cast wheel; see creative/research/front-brake-cam/research.json"
 }

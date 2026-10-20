@@ -53,3 +53,6 @@ Les vérifications exécutées et captures réelles sont dans `WEWA_Developpemen
 # Reprise — flasque v2 et levier avant séparé
 
 La fabrication progresse sur deux incréments distincts : [matière du flasque v2](creative/reviews/front-brake-plate-v2/README.md) et [levier de came avant v1](creative/reviews/front-brake-lever-v1/README.md). Le levier est la pièce détaillée active ; le flasque conserve ses versions et ses preuves. Les dimensions et identités RDC restent à documenter. Les quatre composants candidats (pneu, jante, flasque, levier) ne constituent pas une moto finie et ne sont pas reçus artistiquement. La prévisualisation publique du jeu reste à sa version3.
+# Reprise parallèle — poste de conduite
+
+À la demande explicite de l’utilisateur, guidon, poignées et compteurs sont fabriqués comme trois candidats indépendants. La [revue du poste de conduite](creative/reviews/cockpit-v1/README.md) réunit leurs sources liées et leurs vrais exports. Les aiguilles sont manipulables dans Babylon.js ; les nouveaux rendus Blender emploient un débruitage documenté. Les dimensions restent estimées, les fixations et commandes complètes sont absentes, aucune réception artistique ou qualification iPhone n’est acquise. La recherche sur la came révèle des variantes de frein avant à ne pas mélanger avec la jante moulée sans confirmation RDC. Jeu public version3 inchangé.
