@@ -56,3 +56,5 @@ Prototype jouable : tracé d’environ 1,50 km contrôlé contre les emprises b�
 Le backlog conserve ses dépendances de validation : essais Safari iPhone 15/16, relecture kinoise, finition artistique, performances matérielles et panel utilisateurs. Aucun paiement réel, compte obligatoire, télémétrie distante ou classement public.
 
 Géographie : © contributeurs OpenStreetMap, source ODbL ; voir les crédits du kit et `app/public/world/CREDITS*.txt`. Les références historiques Ewutelo sont dans `context/ewutelo/` ; les décisions actuelles Viva Wewa et la correction photographique figurent dans le PRD actuel et le carnet.
+
+Le suivi par phases et la chaîne de sources Blender figurent dans [PRODUCTION.md](PRODUCTION.md). Le moteur de jeu est séparé dans `app/src/engine/`; les phases complètes gardent leurs critères matériels, artistiques et locaux.

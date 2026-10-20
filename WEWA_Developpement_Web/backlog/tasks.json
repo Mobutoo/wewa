@@ -123,10 +123,15 @@
       ],
       "status": "blocked",
       "acceptance": "Pas de traversée à vitesse maximale ; pente et reprise après chute vérifiées. Inclure la vitesse maximale avec nitro.",
-      "evidence": [],
-      "implementation_status": "prototype_available_in_public_preview",
-      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
-      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done."
+      "evidence": [
+        "validation/engine-foundation.json",
+        "validation/engine-scenario.json",
+        "validation/browser/results.json",
+        "validation/unit-tests.json"
+      ],
+      "implementation_status": "Swept and indexed collision, source holes, authored surface/suspension and automatic crash recovery tested.",
+      "blocker": "Source road terrain is flat; physical and authored slope/terrain acceptance pending.",
+      "next_action": "Close the stated physical/local acceptance gate on the built version; do not confuse software evidence with whole-phase completion."
     },
     {
       "id": "W08",
@@ -177,10 +182,15 @@
       ],
       "status": "blocked",
       "acceptance": "Sens, priorités, files et arrêts ; aucun spawn inévitable.",
-      "evidence": [],
-      "implementation_status": "prototype_available_in_public_preview",
-      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
-      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done.",
+      "evidence": [
+        "validation/engine-foundation.json",
+        "validation/engine-scenario.json",
+        "validation/browser/results.json",
+        "validation/unit-tests.json"
+      ],
+      "implementation_status": "Source-directed lane graph, clearance rejection, seeded fixed-step traffic, following and conservative junction yields implemented/tested.",
+      "blocker": "Actual signs/priorities and long-session deadlock/load review pending.",
+      "next_action": "Close the stated physical/local acceptance gate on the built version; do not confuse software evidence with whole-phase completion.",
       "implementation_notes": "Prototype graph and scripted traffic/crossing wait exist; complete lane directions, priorities and deadlock handling remain."
     },
     {
@@ -193,10 +203,15 @@
       ],
       "status": "blocked",
       "acceptance": "Prise, dépôt, récompense et reprise après interruption.",
-      "evidence": [],
-      "implementation_status": "prototype_available_in_public_preview",
-      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
-      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done."
+      "evidence": [
+        "validation/engine-foundation.json",
+        "validation/engine-scenario.json",
+        "validation/browser/results.json",
+        "validation/unit-tests.json"
+      ],
+      "implementation_status": "Full six-parcel route, checkpoint contract and real browser reload preserving cargo passed.",
+      "blocker": "Human mobile session and prerequisite local traffic acceptance pending.",
+      "next_action": "Close the stated physical/local acceptance gate on the built version; do not confuse software evidence with whole-phase completion."
     },
     {
       "id": "W12",
@@ -209,10 +224,15 @@
       ],
       "status": "blocked",
       "acceptance": "Perte de vue récupérable, cible persistante et mission gagnable.",
-      "evidence": [],
-      "implementation_status": "prototype_available_in_public_preview",
-      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
-      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done."
+      "evidence": [
+        "validation/engine-foundation.json",
+        "validation/engine-scenario.json",
+        "validation/browser/results.json",
+        "validation/unit-tests.json"
+      ],
+      "implementation_status": "Complete pursuit, recoverable last-known position and persistence during pursuit passed in driven integration.",
+      "blocker": "Human target-search and local corridor acceptance pending.",
+      "next_action": "Close the stated physical/local acceptance gate on the built version; do not confuse software evidence with whole-phase completion."
     },
     {
       "id": "W13",
@@ -225,10 +245,15 @@
       ],
       "status": "blocked",
       "acceptance": "Deux itinéraires utiles et bonus sans boucle de farming.",
-      "evidence": [],
-      "implementation_status": "prototype_available_in_public_preview",
-      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
-      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done.",
+      "evidence": [
+        "validation/engine-foundation.json",
+        "validation/engine-scenario.json",
+        "validation/browser/results.json",
+        "validation/unit-tests.json"
+      ],
+      "implementation_status": "Two directed source-road alternatives plus visible Blender nitro cartridges; once-per-run refill tested.",
+      "blocker": "Human usefulness and local road access review pending.",
+      "next_action": "Close the stated physical/local acceptance gate on the built version; do not confuse software evidence with whole-phase completion.",
       "implementation_notes": "Street network supports alternative roads; two qualified shortcuts and dedicated nitro refill tokens are not yet delivered."
     },
     {
@@ -259,7 +284,11 @@
       ],
       "status": "pending",
       "acceptance": "Références datées et autorisées pour la rue, la moto et le minibus.",
-      "evidence": []
+      "evidence": [
+        "../creative/architecture-references.json",
+        "../creative/motorcycle-reference.json"
+      ],
+      "implementation_status": "Dated Commons architectural reference metadata and existing official motorcycle references recorded; no full current field survey."
     },
     {
       "id": "W16",
@@ -272,7 +301,11 @@
       ],
       "status": "pending",
       "acceptance": "150-250 m finis ; dimensions et texture density cohérentes.",
-      "evidence": []
+      "evidence": [
+        "validation/street-dressing.json",
+        "validation/street-kit-runtime.json"
+      ],
+      "implementation_status": "Preparatory Blender library and LOD exports available; no art-phase completion claimed."
     },
     {
       "id": "W17",
@@ -284,7 +317,11 @@
       ],
       "status": "pending",
       "acceptance": "Silhouettes locales, LOD, collisions et animations contrôlés. Guidon, compteur et mains utilisables en première personne sans obstruction.",
-      "evidence": []
+      "evidence": [
+        "validation/street-dressing.json",
+        "validation/street-kit-runtime.json"
+      ],
+      "implementation_status": "Preparatory Blender library and LOD exports available; no art-phase completion claimed."
     },
     {
       "id": "W18",
@@ -297,7 +334,11 @@
       ],
       "status": "pending",
       "acceptance": "Exports validés, compression inspectée et coût de chargement mesuré.",
-      "evidence": []
+      "evidence": [
+        "validation/street-dressing.json",
+        "validation/street-kit-runtime.json"
+      ],
+      "implementation_status": "Preparatory Blender library and LOD exports available; no art-phase completion claimed."
     },
     {
       "id": "W19",
@@ -374,10 +415,15 @@
       ],
       "status": "blocked",
       "acceptance": "Réinstallation/version et données locales gérées sans corruption.",
-      "evidence": [],
-      "implementation_status": "prototype_available_in_public_preview",
-      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
-      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done.",
+      "evidence": [
+        "validation/engine-foundation.json",
+        "validation/engine-scenario.json",
+        "validation/browser/results.json",
+        "validation/unit-tests.json"
+      ],
+      "implementation_status": "Versioned profile and snapshots, geometry fingerprint, rule/seed-separated records, atomic restore, corrupt/denied storage and browser reload tested.",
+      "blocker": "Long real-device storage/reinstallation qualification pending.",
+      "next_action": "Close the stated physical/local acceptance gate on the built version; do not confuse software evidence with whole-phase completion.",
       "implementation_notes": "Record, settings and completed story flag persist locally; version migration and intermediate story restore still need dedicated validation."
     },
     {
@@ -554,10 +600,15 @@
       ],
       "status": "blocked",
       "acceptance": "Flou périphérique réglable, mode Confort, profil mobile léger ; obstacles lisibles et tests à vitesse nitro maximale.",
-      "evidence": [],
-      "implementation_status": "prototype_available_in_public_preview",
-      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
-      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done.",
+      "evidence": [
+        "validation/engine-foundation.json",
+        "validation/engine-scenario.json",
+        "validation/browser/results.json",
+        "validation/unit-tests.json"
+      ],
+      "implementation_status": "Real peripheral radial postprocess, optional and comfort-disabled, actual browser activation/deactivation passed.",
+      "blocker": "Physical Safari obstacle readability and GPU/frame qualification pending.",
+      "next_action": "Close the stated physical/local acceptance gate on the built version; do not confuse software evidence with whole-phase completion.",
       "implementation_notes": "FOV change, vignette, shake and comfort settings exist; true peripheral radial blur and full-speed physical qualification remain."
     },
     {
@@ -570,10 +621,15 @@
       ],
       "status": "blocked",
       "acceptance": "Timer actif, collecte et dépôt, capacité 3, fin unique à 30 s et reprise gratuite réinitialisée.",
-      "evidence": [],
-      "implementation_status": "prototype_available_in_public_preview",
-      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
-      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done."
+      "evidence": [
+        "validation/engine-foundation.json",
+        "validation/engine-scenario.json",
+        "validation/browser/results.json",
+        "validation/unit-tests.json"
+      ],
+      "implementation_status": "Exact Rush duration/end/reset checks and keyboard/touch browser lifecycle passed.",
+      "blocker": "Human physical-device session and W14 exit acceptance pending.",
+      "next_action": "Close the stated physical/local acceptance gate on the built version; do not confuse software evidence with whole-phase completion."
     },
     {
       "id": "W39",
@@ -585,10 +641,15 @@
       ],
       "status": "blocked",
       "acceptance": "Score et multiplicateur déterministes, identifiants anti-doublons, record local, réputation et monnaie séparées.",
-      "evidence": [],
-      "implementation_status": "prototype_available_in_public_preview",
-      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
-      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done."
+      "evidence": [
+        "validation/engine-foundation.json",
+        "validation/engine-scenario.json",
+        "validation/browser/results.json",
+        "validation/unit-tests.json"
+      ],
+      "implementation_status": "Versioned per-rules/seed/world records, idempotent finished-run awards, reputation and coins separated, migration tested.",
+      "blocker": "Physical persistence/session qualification and prerequisite whole-V0 review pending.",
+      "next_action": "Close the stated physical/local acceptance gate on the built version; do not confuse software evidence with whole-phase completion."
     },
     {
       "id": "W40",
@@ -600,10 +661,15 @@
       ],
       "status": "blocked",
       "acceptance": "Personnalité fictive et amie du héros ; message, poursuite et indice ; checkpoint gratuit et récit fictionnel.",
-      "evidence": [],
-      "implementation_status": "prototype_available_in_public_preview",
-      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
-      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done."
+      "evidence": [
+        "validation/engine-foundation.json",
+        "validation/engine-scenario.json",
+        "validation/browser/results.json",
+        "validation/unit-tests.json"
+      ],
+      "implementation_status": "Six delivery parcels, interrupted message, 1300m taxi pursuit, free reload and clue; full automated route ~300s passed.",
+      "blocker": "Human narrative/cultural/local review and whole-V0 exit acceptance pending.",
+      "next_action": "Close the stated physical/local acceptance gate on the built version; do not confuse software evidence with whole-phase completion."
     },
     {
       "id": "W41",

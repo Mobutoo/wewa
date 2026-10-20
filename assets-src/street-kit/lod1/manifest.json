@@ -1,0 +1,594 @@
+{
+  "library": "Viva Wewa architecture LOD1",
+  "version": 1,
+  "source_lod0_manifest": "../manifest.json",
+  "intended_distance_m": [
+    45,
+    180
+  ],
+  "coordinate_system": "glTF +Y up, +Z street-facing, +X right. Metres.",
+  "construction": "Original manual Blender retopology with intact frame/glass and simplified rails/louvers; not automatic silhouette collapse.",
+  "bounds_contract": "All12LOD1 preserve the corresponding LOD0 bounds, dimensions, origin, facing and metre units.",
+  "materials": "Exact material datablocks loaded from original editable .blend; concrete world UV scale remains2m.",
+  "triangle_budget_each": 180,
+  "geometry_license": "Original procedural geometry authored for the Viva Wewa user project, no external mesh copied.",
+  "textures": [
+    {
+      "source": "https://polyhaven.com/a/concrete_wall_003",
+      "license": "CC0-1.0",
+      "license_url": "https://polyhaven.com/license",
+      "files": [
+        "textures/concrete_wall_003_diff.jpg",
+        "textures/concrete_wall_003_nor_gl.jpg"
+      ],
+      "usage": "Concrete surface only; no photographic facade/window billboard",
+      "hashes": {
+        "textures/concrete_wall_003_diff.jpg": "7d1d4b9f5ed1aa3e6385ef3232e26e123a3dac5f364e44f9f34784e39bf8d6bb",
+        "textures/concrete_wall_003_nor_gl.jpg": "9ab358a9d51aa2a361103cf6587ee0b598fa57ad8f38b40cccc8015b867938ac"
+      }
+    }
+  ],
+  "acceptance_limit": "Distant geometry optimization only. No new survey or photographic acceptance.",
+  "assets": [
+    {
+      "id": "facade_aged_office_ground",
+      "file": "facade_aged_office_ground.glb",
+      "lod": 1,
+      "node_prefix": "lod1_facade_aged_office_ground__",
+      "triangles": 108,
+      "triangles_lod0": 476,
+      "bounds_m": {
+        "min": [
+          -1.7,
+          0.0,
+          -0.048
+        ],
+        "max": [
+          1.7,
+          3.0,
+          0.37
+        ]
+      },
+      "dimensions_m": [
+        3.4,
+        3.0,
+        0.418
+      ],
+      "front": [
+        0,
+        0,
+        1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "origin": "ground/storey bottom centre",
+      "materials": [
+        "VVK_concrete_CC0",
+        "VVK_painted_steel",
+        "VVK_dark_glass"
+      ],
+      "sha256": "550b56cade3f3b81c7721682dd370ccb5185bb1d5f4fb7ca0810649cd360ed0d",
+      "bytes": 509512,
+      "family": "aged_office",
+      "level": "ground"
+    },
+    {
+      "id": "facade_tropical_apartment_ground",
+      "file": "facade_tropical_apartment_ground.glb",
+      "lod": 1,
+      "node_prefix": "lod1_facade_tropical_apartment_ground__",
+      "triangles": 100,
+      "triangles_lod0": 784,
+      "bounds_m": {
+        "min": [
+          -1.7,
+          0.0,
+          -0.048
+        ],
+        "max": [
+          1.7,
+          3.0,
+          0.4
+        ]
+      },
+      "dimensions_m": [
+        3.4,
+        3.0,
+        0.448
+      ],
+      "front": [
+        0,
+        0,
+        1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "origin": "ground/storey bottom centre",
+      "materials": [
+        "VVK_concrete_CC0",
+        "VVK_weathered_wood",
+        "VVK_painted_steel",
+        "VVK_dark_glass",
+        "VVK_masonry"
+      ],
+      "sha256": "d30e8c7c8957023446791cbb41f984b0d5434c6e1a7edaf8cb967f0013c2bd47",
+      "bytes": 511240,
+      "family": "tropical_apartment",
+      "level": "ground"
+    },
+    {
+      "id": "facade_retail_shutter_ground",
+      "file": "facade_retail_shutter_ground.glb",
+      "lod": 1,
+      "node_prefix": "lod1_facade_retail_shutter_ground__",
+      "triangles": 88,
+      "triangles_lod0": 448,
+      "bounds_m": {
+        "min": [
+          -1.7,
+          0.0,
+          -0.048
+        ],
+        "max": [
+          1.7,
+          3.0,
+          0.255
+        ]
+      },
+      "dimensions_m": [
+        3.4,
+        3.0,
+        0.303
+      ],
+      "front": [
+        0,
+        0,
+        1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "origin": "ground/storey bottom centre",
+      "materials": [
+        "VVK_concrete_CC0",
+        "VVK_painted_steel"
+      ],
+      "sha256": "a85c39bbc50d9eda41d296a9d8a7e07df86287797547c73c1c0d6d5703e32020",
+      "bytes": 506480,
+      "family": "retail_shutter",
+      "level": "ground"
+    },
+    {
+      "id": "facade_workshop_ground",
+      "file": "facade_workshop_ground.glb",
+      "lod": 1,
+      "node_prefix": "lod1_facade_workshop_ground__",
+      "triangles": 98,
+      "triangles_lod0": 512,
+      "bounds_m": {
+        "min": [
+          -1.7,
+          0.0,
+          -0.048
+        ],
+        "max": [
+          1.7,
+          3.0,
+          0.345
+        ]
+      },
+      "dimensions_m": [
+        3.4,
+        3.0,
+        0.393
+      ],
+      "front": [
+        0,
+        0,
+        1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "origin": "ground/storey bottom centre",
+      "materials": [
+        "VVK_concrete_CC0",
+        "VVK_painted_steel",
+        "VVK_dark_glass",
+        "VVK_weathered_wood"
+      ],
+      "sha256": "71ff6b96ab618f7b560cec38c787fe7e18b09364c6804eb0bae8d5f74086de16",
+      "bytes": 510156,
+      "family": "workshop",
+      "level": "ground"
+    },
+    {
+      "id": "facade_compound_gate_ground",
+      "file": "facade_compound_gate_ground.glb",
+      "lod": 1,
+      "node_prefix": "lod1_facade_compound_gate_ground__",
+      "triangles": 108,
+      "triangles_lod0": 556,
+      "bounds_m": {
+        "min": [
+          -1.7,
+          0.0,
+          -0.048
+        ],
+        "max": [
+          1.7,
+          3.0,
+          0.14
+        ]
+      },
+      "dimensions_m": [
+        3.4,
+        3.0,
+        0.188
+      ],
+      "front": [
+        0,
+        0,
+        1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "origin": "ground/storey bottom centre",
+      "materials": [
+        "VVK_concrete_CC0",
+        "VVK_masonry",
+        "VVK_painted_steel"
+      ],
+      "sha256": "d24aafc7d86d53a76eb69fbde7f48ff5ab8a366391cc0ff7db47b6ae145a50ca",
+      "bytes": 510164,
+      "family": "compound_gate",
+      "level": "ground"
+    },
+    {
+      "id": "facade_louvered_office_ground",
+      "file": "facade_louvered_office_ground.glb",
+      "lod": 1,
+      "node_prefix": "lod1_facade_louvered_office_ground__",
+      "triangles": 130,
+      "triangles_lod0": 732,
+      "bounds_m": {
+        "min": [
+          -1.7,
+          0.0,
+          -0.048
+        ],
+        "max": [
+          1.7,
+          3.0,
+          0.3825
+        ]
+      },
+      "dimensions_m": [
+        3.4,
+        3.0,
+        0.4305
+      ],
+      "front": [
+        0,
+        0,
+        1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "origin": "ground/storey bottom centre",
+      "materials": [
+        "VVK_concrete_CC0",
+        "VVK_painted_steel",
+        "VVK_dark_glass"
+      ],
+      "sha256": "5f86c2e0204df0a1ccb277685363cc8763486d28caf312e663ae50178fbd3f52",
+      "bytes": 512564,
+      "family": "louvered_office",
+      "level": "ground"
+    },
+    {
+      "id": "facade_aged_office_upper",
+      "file": "facade_aged_office_upper.glb",
+      "lod": 1,
+      "node_prefix": "lod1_facade_aged_office_upper__",
+      "triangles": 122,
+      "triangles_lod0": 580,
+      "bounds_m": {
+        "min": [
+          -1.7,
+          0.0,
+          -0.048
+        ],
+        "max": [
+          1.7,
+          3.0,
+          0.37
+        ]
+      },
+      "dimensions_m": [
+        3.4,
+        3.0,
+        0.418
+      ],
+      "front": [
+        0,
+        0,
+        1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "origin": "ground/storey bottom centre",
+      "materials": [
+        "VVK_concrete_CC0",
+        "VVK_painted_steel",
+        "VVK_dark_glass"
+      ],
+      "sha256": "8edb2b5fa08a9efb25a593a4227ffbec2d872c48e62b7a807dccc2f7c17cdd7d",
+      "bytes": 511600,
+      "family": "aged_office",
+      "level": "upper"
+    },
+    {
+      "id": "facade_tropical_apartment_upper",
+      "file": "facade_tropical_apartment_upper.glb",
+      "lod": 1,
+      "node_prefix": "lod1_facade_tropical_apartment_upper__",
+      "triangles": 106,
+      "triangles_lod0": 528,
+      "bounds_m": {
+        "min": [
+          -1.7,
+          0.0,
+          -0.048
+        ],
+        "max": [
+          1.7,
+          3.0,
+          0.6
+        ]
+      },
+      "dimensions_m": [
+        3.4,
+        3.0,
+        0.648
+      ],
+      "front": [
+        0,
+        0,
+        1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "origin": "ground/storey bottom centre",
+      "materials": [
+        "VVK_concrete_CC0",
+        "VVK_painted_steel",
+        "VVK_dark_glass"
+      ],
+      "sha256": "34eb715de5f2d67759ff03076e34ab49093109d654e72e2324052d2ab4007dc8",
+      "bytes": 509132,
+      "family": "tropical_apartment",
+      "level": "upper"
+    },
+    {
+      "id": "facade_retail_shutter_upper",
+      "file": "facade_retail_shutter_upper.glb",
+      "lod": 1,
+      "node_prefix": "lod1_facade_retail_shutter_upper__",
+      "triangles": 106,
+      "triangles_lod0": 540,
+      "bounds_m": {
+        "min": [
+          -1.7,
+          0.0,
+          -0.048
+        ],
+        "max": [
+          1.7,
+          3.0,
+          0.43099
+        ]
+      },
+      "dimensions_m": [
+        3.4,
+        3.0,
+        0.47899
+      ],
+      "front": [
+        0,
+        0,
+        1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "origin": "ground/storey bottom centre",
+      "materials": [
+        "VVK_concrete_CC0",
+        "VVK_painted_steel",
+        "VVK_dark_glass",
+        "VVK_masonry"
+      ],
+      "sha256": "a8524fad13a192467fe6b366ab30062b22ad72eb0cabf5d8b3b66d6997e8d64d",
+      "bytes": 510884,
+      "family": "retail_shutter",
+      "level": "upper"
+    },
+    {
+      "id": "facade_workshop_upper",
+      "file": "facade_workshop_upper.glb",
+      "lod": 1,
+      "node_prefix": "lod1_facade_workshop_upper__",
+      "triangles": 94,
+      "triangles_lod0": 468,
+      "bounds_m": {
+        "min": [
+          -1.7,
+          0.0,
+          -0.048
+        ],
+        "max": [
+          1.7,
+          3.0,
+          0.303
+        ]
+      },
+      "dimensions_m": [
+        3.4,
+        3.0,
+        0.351
+      ],
+      "front": [
+        0,
+        0,
+        1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "origin": "ground/storey bottom centre",
+      "materials": [
+        "VVK_concrete_CC0",
+        "VVK_painted_steel",
+        "VVK_dark_glass",
+        "VVK_masonry"
+      ],
+      "sha256": "a4dd011565b65797162ad81b0989f5d10089de587a7c41a0a2a8504fc38ca910",
+      "bytes": 509456,
+      "family": "workshop",
+      "level": "upper"
+    },
+    {
+      "id": "facade_compound_gate_upper",
+      "file": "facade_compound_gate_upper.glb",
+      "lod": 1,
+      "node_prefix": "lod1_facade_compound_gate_upper__",
+      "triangles": 114,
+      "triangles_lod0": 712,
+      "bounds_m": {
+        "min": [
+          -1.7,
+          0.0,
+          -0.048
+        ],
+        "max": [
+          1.7,
+          3.0,
+          0.15
+        ]
+      },
+      "dimensions_m": [
+        3.4,
+        3.0,
+        0.198
+      ],
+      "front": [
+        0,
+        0,
+        1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "origin": "ground/storey bottom centre",
+      "materials": [
+        "VVK_concrete_CC0",
+        "VVK_masonry"
+      ],
+      "sha256": "a8d1a59bdfc7fbe6d45f4d7302aaf6aa0e82cb366c58f2d76048e6e0e9288f17",
+      "bytes": 509520,
+      "family": "compound_gate",
+      "level": "upper"
+    },
+    {
+      "id": "facade_louvered_office_upper",
+      "file": "facade_louvered_office_upper.glb",
+      "lod": 1,
+      "node_prefix": "lod1_facade_louvered_office_upper__",
+      "triangles": 118,
+      "triangles_lod0": 632,
+      "bounds_m": {
+        "min": [
+          -1.7,
+          0.0,
+          -0.048
+        ],
+        "max": [
+          1.7,
+          3.0,
+          0.35624
+        ]
+      },
+      "dimensions_m": [
+        3.4,
+        3.0,
+        0.40424
+      ],
+      "front": [
+        0,
+        0,
+        1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "origin": "ground/storey bottom centre",
+      "materials": [
+        "VVK_concrete_CC0",
+        "VVK_painted_steel",
+        "VVK_dark_glass"
+      ],
+      "sha256": "e8271e1716865ea37609a67c77ec82dd8c76187bca35710399125baf84b133a4",
+      "bytes": 510872,
+      "family": "louvered_office",
+      "level": "upper"
+    }
+  ],
+  "verification": {
+    "Khronos_assets": 12,
+    "errors": 0,
+    "warnings": 0,
+    "max_triangles": 130,
+    "all_lod0_bounds_dimensions_origins_match": true,
+    "material_sets_identical": true,
+    "lod0_files_unchanged_sha256": true,
+    "Blender_render_executed_and_inspected": "lod1-preview.png",
+    "runtime_frame_rate_measured": false
+  },
+  "texture_root": ".. (source CC0 maps packed into .blend/GLBs; inherits original kit texture provenance)",
+  "budget_example": {
+    "upper_equal_mix_mean_triangles": 110,
+    "708_upper_equal_mix_triangles": 77880,
+    "note": "Arithmetic estimate assuming equal mix of six upper families; actual runtime count depends on selected family distribution and LOD distances, not an FPS measurement."
+  }
+}

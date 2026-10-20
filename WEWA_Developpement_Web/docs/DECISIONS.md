@@ -16,3 +16,9 @@
 - D013 : premier parcours prototype sur le Boulevard du 30 Juin et rues adjacentes, environ 1,50 km ; centreline contrôlée avec une marge bâtiment de 55 cm. Tracé et règles de circulation à relire localement.
 - D014 : sources géographiques immuables, dérivés jeu dans app/public/world ; emplacements de missions fictifs.
 - D015 : notes culturelles et créations consignées dans creative/review-register.json et PRD Ewutelo. Pas de lingala inventé présenté comme authentique.
+
+- D016 : suite au refus utilisateur du prototype comme livraison, suivre les sorties de phase du plan. Socle logiciel avant extension artistique ; aucun statut de livraison complète déduit d’un lien public.
+- D017 : conserver Babylon.js 9.31.0 ; compléter le moteur de jeu propre avec graphe de voies, trafic fixe, missions, surfaces/suspension, index spatial, profils et snapshots versionnés. Pas de réécriture du moteur de rendu.
+- D018 : circulation à droite dans le repère X est/Z sud. Priorités de jeu conservatrices aux intersections, distinctes de panneaux de Kinshasa non relevés. Voies véhicules rejetées si elles croisent les emprises avec une marge de 92 cm.
+- D019 : un kit Blender réutilisable sur les emprises source pour l’étalon de rue ; les façades inventées restent identifiées comme habillage, aucune hauteur provisoire de 6 m transformée en mesure réelle.
+- D020 : sauvegarde locale versionnée de la partie, reprise gratuite ; records séparés par règles/graine, réputation et pièces séparées du score. Aucun paiement ni télémétrie distante.

@@ -29,6 +29,7 @@ try:
             page.wait_for_selector('#hud:not(.hidden)',timeout=60000)
             page.wait_for_function('window.__WEWA__?.snapshot()?.loadedCells > 0',timeout=45000)
             page.wait_for_timeout(800)
+            telemetry=page.evaluate('window.__WEWA__.world().benchmark()');(OUTPUT/f'{label}-render-stats.json').write_text(json.dumps(telemetry,indent=2)+'\n')
             if page.locator('#pause-panel').is_visible():page.locator('#resume').click()
             # Countdown is advanced through the local-only QA fixture to keep CI quick.
             page.evaluate('''() => {const s=window.__WEWA__.sim();s.paused=false;for(let i=0;i<180;i++)s.step({gas:false,brake:false,left:false,right:false,nitro:false,horn:false});}''')
@@ -93,12 +94,27 @@ try:
             page.locator('#resume').click()
             page.evaluate('window.dispatchEvent(new Event("blur"))');assert page.evaluate('window.__WEWA__.snapshot().paused')
             page.locator('#resume').click()
+            if not mobile:
+                page.locator('#pause').click();page.locator('#comfort').uncheck();page.locator('#blur').check();page.locator('#resume').click()
+                page.evaluate('window.__WEWA__.sim().vehicle.speed=8')
+                page.keyboard.down('w');page.keyboard.down('Shift');page.wait_for_function('window.__WEWA__.world().speedEffects.attached')
+                page.screenshot(path=str(OUTPUT/'desktop-nitro-effects.png'))
+                page.keyboard.up('Shift');page.keyboard.up('w');page.wait_for_function('!window.__WEWA__.world().speedEffects.attached')
             page.evaluate('''() => {const s=window.__WEWA__.sim();s.ticks=1799;s.step({gas:false,brake:false,left:false,right:false,nitro:false,horn:false});}''')
             page.wait_for_selector('#results:not(.hidden)',timeout=5000)
             final=page.evaluate('window.__WEWA__.snapshot()');assert final['elapsed']==30 and final['finishCount']==1,final
             page.locator('#replay').click();page.wait_for_timeout(200);replayed=page.evaluate('window.__WEWA__.snapshot()');assert replayed['score']==0 and replayed['vehicle']['nitro']==100 and replayed['cargo']==[],replayed
+            assert page.evaluate('window.__WEWA__.world().kitStats.instances')>0
+            if not mobile:
+                # Save through the real pause UI, then reload into a new engine instance.
+                page.evaluate('''()=>{const s=window.__WEWA__.sim();s.reset('delivery','browser-checkpoint');s.phase='running';const p=s.world.parcels[0].point;s.vehicle.x=p[0];s.vehicle.z=p[1];s.vehicle.speed=0;s.ticks=900;s.scoreZones();}''')
+                page.locator('#pause').click();saved=page.evaluate('JSON.parse(localStorage.getItem("viva-wewa.run.v1"))');assert saved['cargo']==['parcel-0'],saved
+                page.reload(wait_until='networkidle');page.wait_for_selector('#resume-run:not(.hidden)');page.locator('#resume-run').click();page.wait_for_selector('#hud:not(.hidden)',timeout=60000)
+                restored=page.evaluate('window.__WEWA__.snapshot()');assert restored['mode']=='delivery' and restored['cargo']==['parcel-0'] and restored['elapsed']>=15,restored
+                assert page.evaluate('window.__WEWA__.sim().runId')=='browser-checkpoint'
+                page.locator('#pause').click();page.locator('[data-bind="gas"]').click();page.keyboard.press('u');page.locator('#resume').click();page.keyboard.down('u');page.wait_for_function('window.__WEWA__.snapshot().controls.gas');page.keyboard.up('u');page.wait_for_function('!window.__WEWA__.snapshot().controls.gas')
             if errors or failed:raise AssertionError({'errors':errors,'failed_requests':failed})
-            results.append({'profile':label,'rendered':True,'screen_right_steering':True,'single_thumb_diagonal':mobile,'independent_nitro':mobile,'brake_and_touch_cancel':mobile,'portrait_and_held_thumb_blur':mobile,'camera_switch':True,'pause_and_blur':True,'rush_finish_once':True,'restart_clean':True,'javascript_errors':errors,'http_errors':failed,'note':'Chromium software GPU, not physical iPhone Safari'})
+            results.append({'profile':label,'rendered':True,'screen_right_steering':True,'blender_kit_loaded':True,'optional_radial_effect':not mobile,'reload_checkpoint_and_remap':not mobile,'single_thumb_diagonal':mobile,'independent_nitro':mobile,'brake_and_touch_cancel':mobile,'portrait_and_held_thumb_blur':mobile,'camera_switch':True,'pause_and_blur':True,'rush_finish_once':True,'restart_clean':True,'javascript_errors':errors,'http_errors':failed,'note':'Chromium software GPU, not physical iPhone Safari'})
             context.close()
         browser.close()
 finally:

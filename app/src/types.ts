@@ -5,6 +5,10 @@ export interface WorldData {
   nodes: Point[];
   segments: {a:number;b:number;name:string;width:number;source_id:string;oneway:string|null}[];
   buildings: {id:string;rings:Point[][];height:number;estimate:string}[];
+  dressing?:import('./engine/dressing').StreetDressing;
+  traffic?:{count:number;seed:number};surfacePatches?:import('./engine/surface').SurfacePatch[];
+  shortcuts?:{id:string;name:string;points:Point[];saving_m:number;source_ids:string[]}[];
+  nitroTokens?:{id:string;point:Point}[];
   route: Point[]; route_length:number; spawn:Point;
   parcels: {id:string;point:Point}[];
   depots: {id:string;point:Point;label:string}[];

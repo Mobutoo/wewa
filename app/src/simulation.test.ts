@@ -32,9 +32,9 @@ describe('Delivery and narrative checkpoints',()=>{
     expect(sim.delivered).toBe(6);expect(sim.phase).toBe('finished');expect(sim.score).toBe(675);expect(sim.finishCount).toBe(1);
   });
   it('the story moves from a free delivery checkpoint to a recoverable taxi and a clue',()=>{
-    const w=fixture();w.depots=[{id:'mado',point:[0,0],label:'Mado'}];const sim=new Simulation(w);sim.reset('story');sim.phase='running';sim.cargo=['intro'];sim.scoreZones();expect(sim.storyStage).toBe(1);expect(sim.checkpoint).toEqual([0,0]);
+    const w=fixture();w.depots=[{id:'mado',point:[0,0],label:'Mado'}];const sim=new Simulation(w);sim.reset('story');sim.phase='running';sim.cargo=['intro'];sim.delivered=5;sim.scoreZones();expect(sim.storyStage).toBe(1);expect(sim.checkpoint).toEqual([0,0]);
     sim.vehicle.x=300;sim.vehicle.z=300;sim.ticks=100;sim.messageTimer=0;sim.step(emptyControls());expect(sim.phase).toBe('running');expect(sim.storyStage).toBe(1);
-    sim.ticks=4000;const taxi=sim.taxi();expect(taxi.stopped).toBe(true);sim.vehicle.x=taxi.x;sim.vehicle.z=taxi.z;sim.vehicle.speed=0;sim.step(emptyControls());expect(sim.storyStage).toBe(2);expect(sim.phase).toBe('finished');expect(sim.finishCount).toBe(1);
+    sim.ticks=15000;const taxi=sim.taxi();expect(taxi.stopped).toBe(true);sim.vehicle.x=taxi.x;sim.vehicle.z=taxi.z;sim.vehicle.speed=0;sim.step(emptyControls());expect(sim.storyStage).toBe(2);expect(sim.phase).toBe('finished');expect(sim.finishCount).toBe(1);
   });
 });
 describe('Vehicle safety and nitro',()=>{

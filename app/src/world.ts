@@ -20,16 +20,23 @@ import { VertexBuffer } from '@babylonjs/core/Buffers/buffer';
 import { SceneLoader } from '@babylonjs/core/Loading/sceneLoader';
 import '@babylonjs/loaders/glTF';
 import type {Obstacle,Point,WorldData} from './types';
+import {SpeedEffects} from './engine/speed-effects';
+import {SceneInstrumentation} from '@babylonjs/core/Instrumentation/sceneInstrumentation';
+import cameraTuning from '../../WEWA_Developpement_Web/config/nitro_camera.json';
+import {loadStreetDressing,type StreetKitInstances} from './engine/dressing';
 import type {Simulation} from './simulation';
 import {distance,sampleRoute,pointSegment,insideRing,circlePolygon} from './math';
 
 export class GameWorld {
+  speedEffects:SpeedEffects;instrumentation:SceneInstrumentation;blur=false;
   engine:Engine;scene:Scene;camera:FreeCamera;bike:TransformNode;rider:TransformNode;sun:DirectionalLight;shadows:ShadowGenerator;
+  kitStats={instances:0,parts:0,triangles:0,lod0:0,lod1:0};kit:StreetKitInstances|null=null;
+  async loadKit(){this.kit=await loadStreetDressing(this.scene,this.shadows,this.world.dressing,this.world.spawn);this.kitStats=this.kit.stats;}
   firstPerson=false;comfort=true;fovEffect=true;shake=false;loadedCells=new Map<string,Mesh[]>();loadingCells=new Set<string>();streamTime=0;
   materials:Record<string,StandardMaterial>={};frontWheel:TransformNode|null=null;rearWheel:TransformNode|null=null;
-  vehicles:{root:TransformNode;kind:string}[]=[];pedestrians:{root:TransformNode;phase:number;crossing:boolean}[]=[];
-  parcelMeshes=new Map<string,TransformNode>();depotMeshes:TransformNode[]=[];taxi:TransformNode;
-  cameraPosition=new Vector3();cameraTarget=new Vector3();ready=false;frameTimes:number[]=[];lastTime=0;
+  vehicles:{root:TransformNode;kind:string;wheels?:TransformNode[]}[]=[];pedestrians:{root:TransformNode;phase:number;crossing:boolean}[]=[];
+  tokenMeshes=new Map<string,TransformNode>();parcelModels=new Map<string,TransformNode>();parcelMeshes=new Map<string,TransformNode>();depotMeshes:TransformNode[]=[];taxi:TransformNode;
+  taxiWheels:TransformNode[]=[];cameraPosition=new Vector3();cameraTarget=new Vector3();ready=false;frameTimes:number[]=[];lastTime=0;
   cameraShapes:{minx:number;maxx:number;minz:number;maxz:number;height:number;rings:Point[][]}[];
   constructor(public canvas:HTMLCanvasElement,public world:WorldData){
     this.cameraShapes=world.buildings.map(b=>({minx:Math.min(...b.rings[0].map(p=>p[0])),maxx:Math.max(...b.rings[0].map(p=>p[0])),minz:Math.min(...b.rings[0].map(p=>p[1])),maxz:Math.max(...b.rings[0].map(p=>p[1])),height:b.height,rings:b.rings}));
@@ -43,7 +50,7 @@ export class GameWorld {
     this.sun.autoUpdateExtends=false;this.sun.orthoLeft=-45;this.sun.orthoRight=45;this.sun.orthoTop=45;this.sun.orthoBottom=-45;this.sun.shadowMinZ=1;this.sun.shadowMaxZ=140;
     this.shadows=new ShadowGenerator(1024,this.sun);this.shadows.usePercentageCloserFiltering=true;this.shadows.filteringQuality=ShadowGenerator.QUALITY_LOW;this.shadows.bias=.001;this.shadows.darkness=.3;
     this.camera=new FreeCamera('camera',new Vector3(0,5,-8),this.scene);this.camera.minZ=.08;this.camera.maxZ=2000;this.camera.fov=Math.PI/3;
-    this.camera.inputs.clear();this.scene.activeCamera=this.camera;
+    this.camera.inputs.clear();this.scene.activeCamera=this.camera;this.speedEffects=new SpeedEffects(this.camera,this.engine);this.instrumentation=new SceneInstrumentation(this.scene);
     this.material('asphalt','#575655');this.material('sidewalk','#a69e8c');this.material('sand','#97846c');this.material('mark','#c7c7bd');
     this.material('yellow','#ecc13b');this.material('blue','#286b85');this.material('glass','#334953');this.material('black','#232a2c');this.material('chrome','#9aa9ad');this.material('skin','#573522');this.material('shirt','#e57526');this.material('white','#e0d9c8');this.material('leaf','#455d38');this.material('wood','#6e5140');this.material('green','#92e2ac');this.material('cyan','#5ee7eb');
     this.materials.chrome.specularColor=new Color3(.9,.9,.85);this.materials.chrome.specularPower=80;
@@ -53,7 +60,7 @@ export class GameWorld {
     this.taxi=this.car('taxi');this.taxi.setEnabled(false);
     for(let i=0;i<8;i++)this.vehicles.push({root:this.car(i%3===0?'minibus':'taxi'),kind:i%3===0?'minibus':'taxi'});
     for(let i=0;i<12;i++){const root=this.person(undefined,false,i);this.pedestrians.push({root,phase:i*.23,crossing:i<4});}
-    this.markers();this.streetLife();this.urbanDetails();this.skyEnvironment();
+    this.markers();this.streetLife();this.skyEnvironment();
     this.cameraPosition.copyFromFloats(world.spawn[0]-6,4,world.spawn[1]-8);
     this.cameraTarget.copyFromFloats(...[world.spawn[0],1,world.spawn[1]] as [number,number,number]);
     this.roadTexture();this.resize();window.addEventListener('resize',()=>this.resize());
@@ -83,41 +90,13 @@ export class GameWorld {
 
   facadeMaterials(){
     const texture=new Texture('/materials/office-facade.webp',this.scene);texture.anisotropicFilteringLevel=8;
-    ['#ded3be','#b5b3a6','#cdc7b9','#b8b6aa'].forEach((color,i)=>{const m=this.material(`facade${i}`,color);m.diffuseTexture=texture;m.specularColor=new Color3(.12,.13,.14);m.specularPower=28;});
+    ['#ded3be','#b5b3a6','#cdc7b9','#b8b6aa'].forEach((color,i)=>{const m=this.material(`facade${i}`,color);m.diffuseTexture=texture;const base=this.material(`wall${i}`,color);base.diffuseTexture=new Texture('/materials/plastered_wall_02_diff.jpg',this.scene);base.specularColor=Color3.Black();m.specularColor=new Color3(.12,.13,.14);m.specularPower=28;});
   }
   skyEnvironment(){
     const environment=new HDRCubeTexture('/materials/kloppenheim_06_puresky_1k.hdr',this.scene,128,false,true,false,true);this.scene.environmentTexture=environment;this.scene.environmentIntensity=.85;
     const sky=MeshBuilder.CreateBox('sky-dome',{size:1400},this.scene),m=new StandardMaterial('sky',this.scene);m.backFaceCulling=false;m.disableLighting=true;m.fogEnabled=false;m.reflectionTexture=environment.clone();m.reflectionTexture.coordinatesMode=Texture.SKYBOX_MODE;m.diffuseColor=Color3.Black();m.specularColor=Color3.Black();sky.material=m;sky.infiniteDistance=true;sky.isPickable=false;
   }
 
-  urbanDetails(){
-    // Fictional street furnishings on source road edges; no claim of surveyed shop fronts.
-    const parts:Mesh[]=[];this.material('concrete-edge','#c3beb0');const concrete=new Texture('/materials/concrete_wall_003_diff.jpg',this.scene);this.materials['concrete-edge'].diffuseTexture=concrete;this.material('fence','#4c514c');this.material('roof-sheet','#7e8887');this.material('dust','#a1947d');
-    const inBuilding=(x:number,z:number)=>this.world.buildings.some(b=>circlePolygon([x,z],.25,b.rings));
-    for(let s=0;s<this.world.route_length;s+=12){
-      const center=sampleRoute(this.world.route,s);let width=6,best=Infinity;for(const seg of this.world.segments){const d=pointSegment([center.x,center.z],this.world.nodes[seg.a],this.world.nodes[seg.b]).distance;if(d<best){best=d;width=seg.width;}}
-      for(const sign of [-1,1]){
-        const edge=sampleRoute(this.world.route,s,sign*(width/2+.25));
-        const curb=this.box('raised-curb',new Vector3(.22,.18,10.8),new Vector3(edge.x,.09,edge.z),'concrete-edge');curb.rotation.y=edge.yaw;parts.push(curb);
-        if(s%36===0){const p=sampleRoute(this.world.route,s,sign*(width/2+1.25));if(inBuilding(p.x,p.z))continue;
-          parts.push(this.cylinder('streetlight-pole',.13,7.4,new Vector3(p.x,3.7,p.z),'fence'));
-          const lamp=this.box('streetlight-head',new Vector3(.36,.12,.86),new Vector3(p.x,7.4,p.z),'chrome');lamp.rotation.y=p.yaw;parts.push(lamp);
-          const arm=this.box('streetlight-arm',new Vector3(.09,.09,1.3),new Vector3(p.x,7.32,p.z),'fence');arm.rotation.y=p.yaw;parts.push(arm);
-        }
-        if(s%48===0){const p=sampleRoute(this.world.route,s+6,sign*(width/2+2.3));if(inBuilding(p.x,p.z))continue;
-          for(let k=-4;k<=4;k++){const x=p.x+Math.cos(p.yaw)*k*.4,z=p.z-Math.sin(p.yaw)*k*.4;parts.push(this.cylinder('boundary-railing',.035,1.7,new Vector3(x,.85,z),'fence'));}
-          const base=this.box('boundary-base',new Vector3(3.8,.42,.24),new Vector3(p.x,.21,p.z),'concrete-edge');base.rotation.y=p.yaw;parts.push(base);
-        }
-      }
-    }
-    const near=this.world.buildings.filter(b=>this.world.route.slice(0,14).some(p=>distance(p,b.rings[0][0])<70));
-    for(const [bi,b]of near.entries()){const ring=b.rings[0];for(let j=0;j<ring.length-1;j++){const a=ring[j],z=ring[j+1],length=distance(a,z);if(length<5||length>65)continue;const dx=(z[0]-a[0])/length,dz=(z[1]-a[1])/length,yaw=Math.atan2(-dz,dx);let nx=dz,nz=-dx;if(insideRing([a[0]+nx*.2,a[1]+nz*.2],ring)){nx=-nx;nz=-nz;}
-      const trim=this.box('floor-slab',new Vector3(length,.18,.25),new Vector3((a[0]+z[0])/2+nx*.1,3.05,(a[1]+z[1])/2+nz*.1),'concrete-edge');trim.rotation.y=yaw;parts.push(trim);
-      if(bi%3===0){const awning=this.box('shop-awning',new Vector3(Math.min(length-1,7),.12,1.1),new Vector3((a[0]+z[0])/2+nx*.6,2.6,(a[1]+z[1])/2+nz*.6),bi%2?'blue':'roof-sheet');awning.rotation.y=yaw;awning.rotation.x=.06;parts.push(awning);}
-      if(bi%2===0){const ac=this.box('air-conditioning-unit',new Vector3(.75,.5,.4),new Vector3(a[0]+dx*2+nx*.3,4.3,a[1]+dz*2+nz*.3),'white');ac.rotation.y=yaw;parts.push(ac);}
-    }}
-    const merged=Mesh.MergeMeshes(parts,true,true,undefined,false,true);if(merged){merged.freezeWorldMatrix();merged.receiveShadows=true;this.shadows.addShadowCaster(merged);}
-  }
   async loadBike(){
     try{
       const result=await SceneLoader.ImportMeshAsync('','/models/','motorcycle.glb',this.scene);
@@ -134,13 +113,20 @@ export class GameWorld {
       this.rider.parent=this.bike;result.meshes.filter(m=>!m.parent).forEach(m=>m.parent=this.rider);result.meshes.filter(m=>m instanceof Mesh).forEach(m=>this.shadows.addShadowCaster(m as Mesh));
     }catch{/* Original temporary rider remains until its asset is delivered. */}
     const taxis=await SceneLoader.LoadAssetContainerAsync('/models/','taxi.glb',this.scene);
-    [...this.vehicles.filter(v=>v.kind==='taxi').map(v=>v.root),this.taxi].forEach((root,i)=>{root.getChildMeshes().forEach(m=>m.dispose());const model=taxis.instantiateModelsToScene(n=>`taxi-${i}-${n}`,false,{doNotInstantiate:true});model.rootNodes.forEach(n=>{n.parent=root;n.getChildMeshes().forEach(m=>this.shadows.addShadowCaster(m as Mesh));});});
+    [...this.vehicles.filter(v=>v.kind==='taxi').map(v=>v.root),this.taxi].forEach((root,i)=>{root.getChildMeshes().forEach(m=>m.dispose());const model=taxis.instantiateModelsToScene(n=>`taxi-${i}-${n}`,false,{doNotInstantiate:false});model.rootNodes.forEach(n=>{n.parent=root;n.getChildMeshes().forEach(m=>this.shadows.addShadowCaster(m as Mesh));});});
     const container=await SceneLoader.LoadAssetContainerAsync('/models/','minibus.glb',this.scene);
     this.vehicles.filter(v=>v.kind==='minibus').forEach((v,i)=>{
       v.root.getChildMeshes().forEach(m=>m.dispose());
-      const instance=container.instantiateModelsToScene(name=>`bus-${i}-${name}`,false,{doNotInstantiate:true});
+      const instance=container.instantiateModelsToScene(name=>`bus-${i}-${name}`,false,{doNotInstantiate:false});
       instance.rootNodes.forEach(n=>{n.parent=v.root;n.getChildMeshes().forEach(m=>this.shadows.addShadowCaster(m as Mesh));});
     });
+    this.vehicles.forEach(v=>v.wheels=this.vehicleWheels(v.root));this.taxiWheels=this.vehicleWheels(this.taxi);
+  }
+  vehicleWheels(root:TransformNode){const wheels=root.getDescendants().filter(n=>n instanceof TransformNode&&/_wheel$/.test(n.name)) as TransformNode[];for(const n of wheels)if(n.rotationQuaternion){n.rotation.copyFrom(n.rotationQuaternion.toEulerAngles());n.rotationQuaternion=null;}return wheels;}
+  async loadCollectibles(){
+    const parcels=await SceneLoader.LoadAssetContainerAsync('/models/','pickup_parcel.glb',this.scene),tokens=await SceneLoader.LoadAssetContainerAsync('/models/','nitro_token.glb',this.scene);
+    for(const [id,root]of this.parcelMeshes){root.getChildMeshes().filter(m=>m.name==='parcel'||m.name==='tape').forEach(m=>m.dispose());const model=new TransformNode('parcel-model',this.scene);model.parent=root;model.position.y=.75;parcels.instantiateModelsToScene(n=>`${id}-${n}`,false,{doNotInstantiate:false}).rootNodes.forEach(n=>n.parent=model);this.parcelModels.set(id,model);}
+    for(const [id,root]of this.tokenMeshes){const model=new TransformNode('token-model',this.scene);model.parent=root;model.position.y=.45;tokens.instantiateModelsToScene(n=>`${id}-${n}`,false,{doNotInstantiate:false}).rootNodes.forEach(n=>n.parent=model);}
   }
   placeholderBike(){
     const parts:Mesh[]=[];
@@ -179,6 +165,7 @@ export class GameWorld {
     return root;
   }
   markers(){
+    for(const token of this.world.nitroTokens||[]){const root=new TransformNode(token.id,this.scene);root.position.copyFromFloats(token.point[0],0,token.point[1]);const ring=MeshBuilder.CreateTorus('nitro-token-ring',{diameter:1.25,thickness:.055,tessellation:20},this.scene);ring.material=this.materials.yellow;ring.parent=root;ring.position.y=.08;this.tokenMeshes.set(token.id,root);}
     for(const p of this.world.parcels){
       const root=new TransformNode(p.id,this.scene);root.position=new Vector3(p.point[0],0,p.point[1]);
       const ring=MeshBuilder.CreateTorus('pickup',{diameter:3,thickness:.1,tessellation:20},this.scene);ring.position.y=.12;ring.material=this.materials.yellow;ring.parent=root;
@@ -210,32 +197,10 @@ export class GameWorld {
           if(j<10){const idx=base+j*2;leafIndices.push(idx,idx+2,idx+1,idx+1,idx+2,idx+3);}
         }
       }
-      if(i%3===0){const p2=sampleRoute(this.world.route,35+i*51,-4.8);
-        const curb=sampleRoute(this.world.route,35+i*51,-widthAt(35+i*51)/2-2.2);p2.x=curb.x;p2.z=curb.z;
-        const stand=this.box('stall',new Vector3(2.3,1,1.3),new Vector3(p2.x,.5,p2.z),'wood');stand.rotation.y=p2.yaw;props.push(stand);
-        const canopy=this.box('canopy',new Vector3(3,.12,2.1),new Vector3(p2.x,2.3,p2.z),i%2?'yellow':'blue');canopy.rotation.y=p2.yaw;props.push(canopy);
-        for(const x of [-1,1]){const pole=this.cylinder('stall-post',.05,2.3,new Vector3(p2.x+x,1.15,p2.z),'wood');props.push(pole);}
-      }
+
     }
     const merged=Mesh.MergeMeshes(props,true,true,undefined,false,true);if(merged){merged.freezeWorldMatrix();merged.receiveShadows=true;this.shadows.addShadowCaster(merged);}
     const palmLeaves=new Mesh('palm-fronds',this.scene),vertex=new VertexData();vertex.positions=leaves;vertex.indices=leafIndices;const normals:number[]=[];VertexData.ComputeNormals(leaves,leafIndices,normals);vertex.normals=normals;vertex.uvs=leafUV;vertex.applyToMesh(palmLeaves);palmLeaves.material=frond;palmLeaves.material.backFaceCulling=false;palmLeaves.freezeWorldMatrix();this.shadows.addShadowCaster(palmLeaves);
-  }
-  traffic(time:number):Obstacle[]{
-    const obstacles:Obstacle[]=[];
-    const cycle=time%36;
-    const trafficTime=time-Math.floor(time/36)*6-Math.min(3,Math.max(0,cycle-5))-Math.min(3,Math.max(0,cycle-21));
-    this.vehicles.forEach((v,i)=>{
-      const p=sampleRoute(this.world.route,75+i*175+trafficTime*6.4,1.35);
-      v.root.position.copyFromFloats(p.x,0,p.z);v.root.rotation.y=p.yaw;
-      obstacles.push({x:p.x,z:p.z,yaw:p.yaw,radius:v.kind==='minibus'?.9:.8,halfLength:v.kind==='minibus'?1.55:1.15,kind:'vehicle'});
-    });
-    this.pedestrians.forEach((v,i)=>{
-      const crossingPhase=(time-v.phase*.5+36)%36;
-      const across=!v.crossing?8.2:crossingPhase<5?-8.5:crossingPhase<8?-8.5+(crossingPhase-5)/3*17:crossingPhase<21?8.5:crossingPhase<24?8.5-(crossingPhase-21)/3*17:-8.5;
-      const p=sampleRoute(this.world.route,(v.crossing?290+(i%4)*.7:70)+Math.floor(i/4)*200,across);
-      v.root.position.copyFromFloats(p.x,Math.abs(Math.sin(time*10+v.phase))*.025,p.z);v.root.rotation.y=p.yaw+Math.PI/2;
-      if(v.crossing)obstacles.push({x:p.x,z:p.z,radius:.42,kind:'person'});
-    });return obstacles;
   }
   async stream(x:number,z:number){
     const wanted=this.world.cells.map(c=>({c,d:Math.hypot(c.grid_east_north[0]*128+64-x,-c.grid_east_north[1]*128-64-z)})).filter(v=>v.d<330).sort((a,b)=>a.d-b.d).slice(0,24);
@@ -251,25 +216,30 @@ export class GameWorld {
         const meshes=result.meshes as Mesh[];
         for(const mesh of meshes){
           const positions=mesh.getVerticesData(VertexBuffer.PositionKind),normals=mesh.getVerticesData(VertexBuffer.NormalKind);
-          if(positions&&normals){const uvs:number[]=[];for(let i=0;i<positions.length;i+=3){const roof=Math.abs(normals[i+1])>.5;uvs.push(roof?.01:(Math.abs(normals[i])>.5?positions[i+2]:positions[i])/6.8,roof?.01:positions[i+1]/3.2);}mesh.setVerticesData(VertexBuffer.UVKind,uvs);const hash=Math.abs(c.grid_east_north[0]*7+c.grid_east_north[1]*3)%4;mesh.material=this.materials[`facade${hash}`];mesh.freezeWorldMatrix();}
+          if(positions&&normals){const uvs:number[]=[];for(let i=0;i<positions.length;i+=3){const roof=Math.abs(normals[i+1])>.5;uvs.push(roof?.01:(Math.abs(normals[i])>.5?positions[i+2]:positions[i])/6.8,roof?.01:positions[i+1]/3.2);}mesh.setVerticesData(VertexBuffer.UVKind,uvs);const hash=Math.abs(c.grid_east_north[0]*7+c.grid_east_north[1]*3)%4;const center=[c.grid_east_north[0]*128+64,-c.grid_east_north[1]*128-64];const near=this.world.dressing?.facades.some(p=>Math.hypot(p.x-center[0],p.z-center[1])<105);mesh.material=this.materials[`${near?'wall':'facade'}${hash}`];mesh.freezeWorldMatrix();}
         }
-        meshes.forEach(m=>{if(m.getTotalVertices()>0){m.receiveShadows=true;this.shadows.addShadowCaster(m);}});this.loadedCells.set(c.id,meshes);
+        meshes.forEach(m=>{if(m.getTotalVertices()>0){m.receiveShadows=true;}});this.loadedCells.set(c.id,meshes);
       }catch(error){console.warn('Cell loading error',c.id,error);}finally{this.loadingCells.delete(c.id);}
     }
+    for(const [id,meshes]of this.loadedCells){const c=this.world.cells.find(c=>c.id===id);if(!c)continue;const near=Math.hypot(c.grid_east_north[0]*128+64-x,-c.grid_east_north[1]*128-64-z)<170;for(const mesh of meshes){if(!mesh.getTotalVertices())continue;if(near&&!mesh.metadata?.cityShadowNear)this.shadows.addShadowCaster(mesh);else if(!near&&mesh.metadata?.cityShadowNear)this.shadows.removeShadowCaster(mesh);mesh.metadata={...mesh.metadata,cityShadowNear:near};}}
     this.ready=true;
   }
   update(sim:Simulation,delta:number){
-    const v=sim.vehicle,dir=new Vector3(Math.sin(v.yaw),0,Math.cos(v.yaw));
+    const v=sim.renderVehicle(),dir=new Vector3(Math.sin(v.yaw),0,Math.cos(v.yaw));
+    this.kit?.update(v.x,v.z);
     this.sun.position.copyFromFloats(v.x+30,50,v.z-15);
-    this.bike.position.copyFromFloats(v.x,0,v.z);this.bike.rotation.y=v.yaw;this.bike.rotation.z=v.steer*Math.min(v.speed/80,.2);
+    this.bike.position.copyFromFloats(v.x,v.y,v.z);this.bike.rotation.x=v.pitch;this.bike.rotation.y=v.yaw;this.bike.rotation.z=sim.crashTicks?Math.sin((72-sim.crashTicks)/72*Math.PI)*.7:v.steer*Math.min(v.speed/80,.2);
     this.rider.setEnabled(!this.firstPerson);
     if(this.frontWheel)this.frontWheel.rotation.x+=v.speed*delta/.32;if(this.rearWheel)this.rearWheel.rotation.x+=v.speed*delta/.32;
     for(const [id,root]of this.parcelMeshes){root.setEnabled(!sim.collected.has(id)&&sim.mode!=='free'&&!(sim.mode==='story'&&sim.storyStage>0));root.getChildMeshes().filter(m=>m.name==='parcel'||m.name==='tape').forEach(m=>{m.position.y=1.1+Math.sin(sim.elapsed*3)*.12;});}
+    for(const [id,root]of this.tokenMeshes){root.setEnabled(!sim.tokens.has(id));for(const child of root.getChildren())if(child.name==='token-model'){(child as TransformNode).rotation.y=sim.elapsed*1.5;(child as TransformNode).position.y=.45+Math.sin(sim.elapsed*2)*.08;}}
+    for(const model of this.parcelModels.values())model.position.y=.75+Math.sin(sim.elapsed*2.5)*.07;
     this.depotMeshes.forEach(root=>root.setEnabled(sim.mode!=='free'&&!(sim.mode==='story'&&sim.storyStage>0)));
-    const taxi=sim.taxi();this.taxi.setEnabled(sim.mode==='story'&&sim.storyStage===1);this.taxi.position.copyFromFloats(taxi.x,0,taxi.z);this.taxi.rotation.y=taxi.yaw;
-    this.traffic(sim.elapsed);
-    const desired=this.firstPerson?new Vector3(v.x+dir.x*.18,1.62,v.z+dir.z*.18):new Vector3(v.x-dir.x*(4.6+v.speed*.018)-dir.z*.55,2.05+v.speed*.008,v.z-dir.z*(4.6+v.speed*.018)+dir.x*.55);
-    const target=new Vector3(v.x+dir.x*(this.firstPerson?14:5),this.firstPerson?1.57:1.1,v.z+dir.z*(this.firstPerson?14:5));
+    const taxi=sim.taxi();this.taxi.setEnabled(sim.mode==='story'&&sim.storyStage===1);this.taxi.position.copyFromFloats(taxi.x,0,taxi.z);this.taxi.rotation.y=taxi.yaw;if(!taxi.stopped)for(const wheel of this.taxiWheels)wheel.rotation.x+=5.8*delta/.286;
+    this.vehicles.forEach((model,i)=>{const v=sim.traffic.vehicles.find(v=>v.id===i);model.root.setEnabled(!!v&&Math.hypot(v.x-sim.vehicle.x,v.z-sim.vehicle.z)<180);if(v){model.root.position.copyFromFloats(v.x,0,v.z);model.root.rotation.y=v.yaw;for(const wheel of model.wheels||[])wheel.rotation.x+=v.speed*delta/.30;}});
+    this.pedestrians.forEach((model,i)=>{const w=sim.traffic.walkers[i];model.root.setEnabled(!!w&&Math.hypot(w.x-sim.vehicle.x,w.z-sim.vehicle.z)<100);if(w){model.root.position.copyFromFloats(w.x,w.moving?Math.abs(Math.sin(w.phase))*.035:0,w.z);model.root.rotation.y=w.yaw;}});
+    const desired=this.firstPerson?new Vector3(v.x+dir.x*.18,v.y+1.62,v.z+dir.z*.18):new Vector3(v.x-dir.x*(4.6+v.speed*.018)-dir.z*.55,v.y+2.05+v.speed*.008,v.z-dir.z*(4.6+v.speed*.018)+dir.x*.55);
+    const target=new Vector3(v.x+dir.x*(this.firstPerson?14:5),v.y+(this.firstPerson?1.57:1.1),v.z+dir.z*(this.firstPerson?14:5));
     // Keep chase camera out of buildings by shortening its boom.
     if(!this.firstPerson){
       const near=this.cameraShapes.filter(b=>v.x>b.minx-9&&v.x<b.maxx+9&&v.z>b.minz-9&&v.z<b.maxz+9);
@@ -279,13 +249,14 @@ export class GameWorld {
     }
     const alpha=1-Math.exp(-delta*(this.firstPerson?22:7));Vector3.LerpToRef(this.cameraPosition,desired,alpha,this.cameraPosition);Vector3.LerpToRef(this.cameraTarget,target,alpha,this.cameraTarget);
     this.camera.position.copyFrom(this.cameraPosition);this.camera.setTarget(this.cameraTarget);
-    const base=this.firstPerson?65:55,extra=v.boosting&&this.fovEffect&&!this.comfort?(this.firstPerson?6:8):0;this.camera.fov+=( (base+extra)*Math.PI/180-this.camera.fov)*Math.min(1,delta*6);
+    const base=this.firstPerson?cameraTuning.camera.vertical_fov_degrees.first_person:cameraTuning.camera.vertical_fov_degrees.third_person,extra=v.boosting&&this.fovEffect&&!this.comfort?(this.firstPerson?6:8):0;this.camera.fov+=( (base+extra)*Math.PI/180-this.camera.fov)*Math.min(1,delta*6);
     if(this.shake&&!this.comfort&&v.boosting)this.camera.position.y+=Math.sin(sim.elapsed*70)*.015;
     this.streamTime+=delta;if(this.streamTime>.4){this.streamTime=0;void this.stream(v.x,v.z);}
+    this.speedEffects.update(this.blur&&!this.comfort,v.boosting,delta);
     this.scene.render();
-    this.frameTimes.push(delta*1000);if(this.frameTimes.length>10800)this.frameTimes.shift();
+    const now=performance.now();if(this.lastTime)this.frameTimes.push(now-this.lastTime);this.lastTime=now;if(this.frameTimes.length>10800)this.frameTimes.shift();
   }
-  resize(){const scale=Math.min(window.devicePixelRatio||1,1.5),width=Math.min(window.innerWidth*scale,1600),height=width/window.innerWidth*window.innerHeight;this.engine.setSize(width,height);}
+  resize(){const mobile=matchMedia('(pointer:coarse)').matches,landscape=innerWidth>=innerHeight,maxLong=mobile?1280:1920,maxShort=mobile?720:1080,scale=Math.min(devicePixelRatio||1,1.5,(landscape?maxLong:maxShort)/innerWidth,(landscape?maxShort:maxLong)/innerHeight);this.engine.setSize(Math.round(innerWidth*scale),Math.round(innerHeight*scale));}
   setCamera(first:boolean){this.firstPerson=first;this.cameraPosition.copyFrom(this.bike.position.add(new Vector3(0,2,-3)));}
-  benchmark(){const ext=this.engine.getCaps();return {metadata:{build:'0.1.0',renderer:this.engine.getGlInfo(),webgl:this.engine.webGLVersion,width:this.engine.getRenderWidth(),height:this.engine.getRenderHeight(),userAgent:navigator.userAgent,software_gpu:/SwiftShader|llvmpipe/i.test(this.engine.getGlInfo().renderer),note:'Diagnostic de cette session uniquement ; pas une qualification matérielle'},frames:this.frameTimes.map(frame_ms=>({frame_ms})),active_meshes:this.scene.getActiveMeshes().length,limits:{maxTextures:ext.maxTexturesImageUnits}};}
+  benchmark(){const ext=this.engine.getCaps();return {metadata:{build:'0.1.0',renderer:this.engine.getGlInfo(),webgl:this.engine.webGLVersion,width:this.engine.getRenderWidth(),height:this.engine.getRenderHeight(),userAgent:navigator.userAgent,software_gpu:/SwiftShader|llvmpipe/i.test(this.engine.getGlInfo().renderer),note:'Diagnostic de cette session uniquement ; pas une qualification matérielle'},frames:this.frameTimes.map(frame_ms=>({frame_ms})),active_meshes:this.scene.getActiveMeshes().length,draw_calls_all_passes:this.instrumentation.drawCallsCounter.current,street_kit:this.kitStats,limits:{maxTextures:ext.maxTexturesImageUnits}};}
 }

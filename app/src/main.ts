@@ -5,6 +5,9 @@ import {StreetAudio} from './audio';
 import {emptyControls,type Controls,type Mode,type WorldData} from './types';
 import {distance} from './math';
 import {joystickAxes} from './input';
+import {InputBindings,type Action} from './engine/bindings';
+import {ProfileStore} from './engine/profile';
+import {validRun,worldKeyFor} from './engine/checkpoint';
 
 const icon=(name:string)=>`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${({play:'<path d="m9 5 10 7-10 7z" fill="currentColor" stroke="none"/>',pause:'<path d="M8 5v14M16 5v14" stroke-width="4"/>',camera:'<path d="M4 6h4l2-2h4l2 2h4v14H4z"/><circle cx="12" cy="13" r="4"/>',sound:'<path d="M11 4 5 9H2v6h3l6 5zM15 8a6 6 0 0 1 0 8M18 4a11 11 0 0 1 0 16"/>',arrow:'<path d="M5 12h14m-6-6 6 6-6 6"/>',left:'<path d="m15 5-7 7 7 7"/>',right:'<path d="m9 5 7 7-7 7"/>',up:'<path d="m5 15 7-7 7 7"/>',down:'<path d="m5 9 7 7 7-7"/>',bolt:'<path d="m14 2-9 12h7l-2 8 9-13h-7z"/>',close:'<path d="m6 6 12 12M6 18 18 6"/>',reset:'<path d="M4 10a8 8 0 1 1 2 8M4 4v6h6"/>',pin:'<path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2"/>',horn:'<path d="m4 10 13-5v14L4 14zM4 10H2v4h2m4 1 2 6h4l-2-5M20 8l3-2m-3 10 3 2m-3-6h3"/>'} as Record<string,string>)[name]||''}</svg>`;
 const modes:{id:Mode;num:string;title:string;description:string;tag:string}[]=[
@@ -13,10 +16,13 @@ const modes:{id:Mode;num:string;title:string;description:string;tag:string}[]=[
   {id:'story',num:'03',title:'Le dernier appel',description:'Un taxi jaune. Un message de Mado. Une piste.',tag:'HISTOIRE'},
   {id:'free',num:'04',title:'Kin à ton rythme',description:'Rouler, écouter, trouver les raccourcis.',tag:'BALADE'}
 ];
-interface Save {record:number;runs:number;camera:boolean;comfort:boolean;fov:boolean;shake:boolean;music:boolean;sound:boolean;voices:boolean;storyComplete:boolean}
-const defaultSave:Save={record:0,runs:0,camera:false,comfort:true,fov:true,shake:false,music:true,sound:true,voices:false,storyComplete:false};
+interface Save {record:number;runs:number;camera:boolean;comfort:boolean;fov:boolean;blur:boolean;shake:boolean;music:boolean;sound:boolean;voices:boolean;storyComplete:boolean}
+const defaultSave:Save={record:0,runs:0,camera:false,comfort:true,fov:true,blur:false,shake:false,music:true,sound:true,voices:false,storyComplete:false};
 let save:Save={...defaultSave};
 try{save={...defaultSave,...JSON.parse(localStorage.getItem('viva-wewa.v1')||'{}')};}catch{/* Private browsing may deny persistence. */}
+let storage:Storage|null=null;try{storage=localStorage;}catch{/* Runtime remains playable without storage. */}
+const bindings=new InputBindings(storage);let editingBinding:Action|null=null;const bindingNames:Record<Action,string>={gas:'Accélérer',brake:'Freiner / reculer',left:'Gauche',right:'Droite',nitro:'Nitro',horn:'Klaxon'};
+const profiles=new ProfileStore(storage);save.record=profiles.record();
 const persist=()=>{try{localStorage.setItem('viva-wewa.v1',JSON.stringify(save));}catch{/* Playing remains possible without storage. */}};
 const app=document.querySelector<HTMLDivElement>('#app')!;
 app.innerHTML=`
@@ -26,7 +32,7 @@ app.innerHTML=`
     <div class="home-shade"></div>
     <header class="home-header"><a class="mini-logo" href="/" aria-label="Viva Wewa, accueil">VW<span>®</span></a><span class="location-label">${icon('pin')}KINSHASA, RDC <i></i> GOMBE</span><span class="edition">LE PASSAGE EST À TOI.</span></header>
     <div class="home-copy"><span class="eyebrow"><span class="tiny-line"></span> UNE VILLE. MILLE PASSAGES.</span><h1><span>VIVA</span><strong>WEWA<span class="logo-dot">.</span></strong></h1><p>La ville est vivante.<br>À toi de trouver le passage.</p><div class="home-flavour"><span>DU BRUIT.</span><span>DU RYTHME.</span><span>DU CULOT.</span></div></div>
-    <div class="mode-dock"><div class="dock-title"><span>CHOISIS TON DÉPART</span><span class="dock-rule"></span><span id="home-record">RECORD RUSH · ${save.record}</span></div><div class="mode-grid">${modes.map((m,i)=>`<button class="mode-card ${i===0?'selected':''}" data-mode="${m.id}" aria-pressed="${i===0}"><span class="mode-num">${m.num}</span><div><small>${m.tag}</small><h2>${m.title}</h2><p>${m.description}</p></div><span class="mode-indicator">${icon('arrow')}</span></button>`).join('')}</div><div class="dock-bottom"><span class="control-hint"><kbd>ZQSD</kbd> / <kbd>WASD</kbd> ou joystick au pouce <span>·</span> <kbd>MAJ</kbd> nitro <span>·</span> <kbd>C</kbd> caméra</span><button id="play" class="primary">ENTRER DANS KIN ${icon('arrow')}</button></div></div>
+    <div class="mode-dock"><div class="dock-title"><span>CHOISIS TON DÉPART</span><span class="dock-rule"></span><span id="home-record">RECORD RUSH · ${save.record}</span></div><div class="mode-grid">${modes.map((m,i)=>`<button class="mode-card ${i===0?'selected':''}" data-mode="${m.id}" aria-pressed="${i===0}"><span class="mode-num">${m.num}</span><div><small>${m.tag}</small><h2>${m.title}</h2><p>${m.description}</p></div><span class="mode-indicator">${icon('arrow')}</span></button>`).join('')}</div><div class="dock-bottom"><span class="control-hint"><kbd>ZQSD</kbd> / <kbd>WASD</kbd> ou joystick au pouce <span>·</span> <kbd>MAJ</kbd> nitro <span>·</span> <kbd>C</kbd> caméra</span><button id="resume-run" class="secondary hidden">REPRENDRE LA PARTIE</button><button id="play" class="primary">ENTRER DANS KIN ${icon('arrow')}</button></div></div>
     <footer class="home-footer"><span>VIVA WEWA <span class="small-cross">✳</span> KINSHASA À MOTO</span><span>PRÉVERSION JOUABLE <i></i> CHAPITRE GOMBE</span></footer>
   </section>
   <section id="hud" class="hidden" aria-label="Tableau de bord">
@@ -38,40 +44,42 @@ app.innerHTML=`
     <div id="touch-controls"><div id="drive-stick" role="group" aria-label="Joystick : haut accélérer, bas freiner puis reculer, gauche et droite diriger"><span class="stick-up">ACCÉLÉRER</span><span class="stick-down">FREIN / RECUL</span><span class="stick-cross"></span><i id="stick-knob"></i></div><div class="touch-secondary"><button data-input="nitro" class="touch-nitro" aria-label="Activer le nitro">${icon('bolt')}<span>NITRO</span></button><button data-input="horn" class="touch-horn" aria-label="Klaxonner">${icon('horn')}</button></div></div>
     <div id="nitro-vignette"></div><div id="loading" class="hidden">Le quartier se réveille…</div>
   </section>
-  <section id="pause-panel" class="screen modal hidden"><div class="modal-card"><span class="eyebrow">ON SOUFFLE UN PEU.</span><h2>La rue peut<br>attendre.</h2><div class="settings"><label><input type="checkbox" id="comfort"> Mode Confort <small>Horizon calme, effets réduits</small></label><label><input type="checkbox" id="fov"> Effet de vitesse <small>Variation du champ de vision</small></label><label><input type="checkbox" id="shake"> Vibrations de caméra</label><label><input type="checkbox" id="music"> Musique originale</label><label><input type="checkbox" id="voices"> Appels parlés <small>Voix française du téléphone, si disponible</small></label></div><div class="pause-controls">ZQSD / WASD · conduire &nbsp; MAJ · nitro<br>C · caméra &nbsp; H · klaxon &nbsp; R · reprise<br>P / ÉCHAP · pause</div><button id="resume" class="primary">REPRENDRE ${icon('play')}</button><div class="button-row"><button id="restart" class="secondary">${icon('reset')} RECOMMENCER</button><button id="menu" class="secondary">ACCUEIL</button></div><button id="credits-toggle" class="text-button">Crédits et progression</button><div id="credits" class="hidden"><p>Géographie : © contributeurs OpenStreetMap, ODbL. Modèles de Gombe issus du kit fourni. Modèles, textures de façades et palmes et sons créés pour Viva Wewa. Matières photographiques et ciel HDR : Poly Haven, CC0. Personnages et missions fictifs.</p><button id="reset-save" class="text-button">Effacer la progression locale</button><button id="export-diagnostic" class="text-button">Exporter le diagnostic de session</button></div></div></section>
-  <section id="results" class="screen modal hidden"><div class="modal-card result-card"><span class="eyebrow" id="result-kicker">LE PASSAGE ÉTAIT À TOI.</span><h2 id="result-title">Bien joué,<br>Wewa !</h2><div class="result-score" id="result-score">0</div><div class="result-stats"><span><b id="result-deliveries">0</b> COLIS LIVRÉS</span><span><b id="result-collisions">0</b> ACCROCS</span><span><b id="result-best">0</b> RECORD</span></div><p id="result-description"></p><button id="replay" class="primary">ON REPART ${icon('reset')}</button><button id="result-menu" class="secondary">CHOISIR UN AUTRE DÉPART</button><small>Chaque nouvelle tentative est gratuite.</small></div></section>
+  <section id="pause-panel" class="screen modal hidden"><div class="modal-card"><span class="eyebrow">ON SOUFFLE UN PEU.</span><h2>La rue peut<br>attendre.</h2><div class="settings"><label><input type="checkbox" id="comfort"> Mode Confort <small>Horizon calme, effets réduits</small></label><label><input type="checkbox" id="fov"> Effet de vitesse <small>Variation du champ de vision</small></label><label><input type="checkbox" id="blur"> Flou périphérique <small>Facultatif, désactivé par défaut sur téléphone</small></label><label><input type="checkbox" id="shake"> Vibrations de caméra</label><label><input type="checkbox" id="music"> Musique originale</label><label><input type="checkbox" id="voices"> Appels parlés <small>Voix française du téléphone, si disponible</small></label></div><div class="binding-settings">${(Object.keys(bindingNames) as Action[]).map(action=>`<button class="binding-button" data-bind="${action}">${bindingNames[action]} · ${bindings.values[action].toUpperCase()}</button>`).join('')}</div><div class="pause-controls">ZQSD / WASD · conduire &nbsp; MAJ · nitro<br>C · caméra &nbsp; H · klaxon &nbsp; R · reprise<br>P / ÉCHAP · pause</div><button id="resume" class="primary">REPRENDRE ${icon('play')}</button><div class="button-row"><button id="restart" class="secondary">${icon('reset')} RECOMMENCER</button><button id="menu" class="secondary">ACCUEIL</button></div><button id="credits-toggle" class="text-button">Crédits et progression</button><div id="credits" class="hidden"><p>Géographie : © contributeurs OpenStreetMap, ODbL. Modèles de Gombe issus du kit fourni. Modèles, textures de façades et palmes et sons créés pour Viva Wewa. Matières photographiques et ciel HDR : Poly Haven, CC0. Personnages et missions fictifs.</p><button id="reset-save" class="text-button">Effacer la progression locale</button><button id="export-diagnostic" class="text-button">Exporter le diagnostic de session</button></div></div></section>
+  <section id="results" class="screen modal hidden"><div class="modal-card result-card"><span class="eyebrow" id="result-kicker">LE PASSAGE ÉTAIT À TOI.</span><h2 id="result-title">Bien joué,<br>Wewa !</h2><div class="result-score" id="result-score">0</div><div id="result-progression" class="profile-progress"></div><div class="result-stats"><span><b id="result-deliveries">0</b> COLIS LIVRÉS</span><span><b id="result-collisions">0</b> ACCROCS</span><span><b id="result-best">0</b> RECORD</span></div><p id="result-description"></p><button id="replay" class="primary">ON REPART ${icon('reset')}</button><button id="result-menu" class="secondary">CHOISIR UN AUTRE DÉPART</button><small>Chaque nouvelle tentative est gratuite.</small></div></section>
 `;
 const $=<T extends HTMLElement=HTMLElement>(selector:string)=>document.querySelector<T>(selector)!;
 let selected:Mode='rush',sim:Simulation|null=null,world:GameWorld|null=null,data:WorldData|null=null;
-let controls=emptyControls(),playing=false,starting=false,lastFrame=0,hudTime=0,finishedSaved=false;
+let controls=emptyControls(),playing=false,starting=false,lastFrame=0,hudTime=0,finishedSaved=false,lastCheckpointTick=0;
 const audio=new StreetAudio();
 const inputPointers=new Map<number,'nitro'|'horn'>(),keys=new Set<string>();
 let stickPointer:number|null=null,stickX=0,stickY=0;
 function resetStick(){stickPointer=null;stickX=stickY=0;$('#stick-knob').style.transform='translate(-50%,-50%)';$('#drive-stick').classList.remove('pressed');}
 const labels:Record<Mode,string>={rush:'WEWA RUSH',delivery:'LA TOURNÉE',story:'LE DERNIER APPEL',free:'KIN À TON RYTHME'};
 function clearInput(){resetStick();keys.clear();inputPointers.clear();controls=emptyControls();document.querySelectorAll('[data-input]').forEach(b=>b.classList.remove('pressed'));if(sim)sim.vehicle.boosting=false;}
-function rebuildInput(){controls=emptyControls();const mapping:Record<string,'gas'|'brake'|'left'|'right'|'nitro'|'horn'>={w:'gas',z:'gas',arrowup:'gas',s:'brake',arrowdown:'brake',' ':'brake',a:'left',q:'left',arrowleft:'left',d:'right',arrowright:'right',shift:'nitro',h:'horn'};for(const key of keys){if(mapping[key])controls[mapping[key]]=true;}for(const input of inputPointers.values())controls[input]=true;
+function rebuildInput(){controls=emptyControls();for(const key of keys)for(const action of bindings.resolve(key))controls[action]=true;for(const input of inputPointers.values())controls[input]=true;
   if(stickPointer!==null){const axes=joystickAxes(stickX,stickY);controls.throttle=axes.throttle;controls.steering=axes.steering;controls.gas=axes.throttle>0;controls.brake=axes.throttle<0;controls.left=axes.steering<0;controls.right=axes.steering>0;}
 }
-function pause(){if(!sim||!playing||sim.phase==='finished')return;clearInput();sim.pause(true);audio.pause();$('#pause-panel').classList.remove('hidden');}
-function resume(){if(!sim)return;clearInput();sim.pause(false);lastFrame=performance.now();$('#pause-panel').classList.add('hidden');void audio.start();}
-function home(){clearInput();sim?.pause(true);audio.pause();playing=false;$('#hud').classList.add('hidden');$('#home').classList.remove('hidden');$('#pause-panel').classList.add('hidden');$('#results').classList.add('hidden');$('#world').classList.remove('active');$('#home-record').textContent=`RECORD RUSH · ${save.record}`;}
-function applySettings(){if(world){world.comfort=save.comfort;world.fovEffect=save.fov;world.shake=save.shake;world.setCamera(save.camera);}audio.enabled=save.sound;audio.music=save.music;audio.voices=save.voices;for(const setting of ['comfort','fov','shake','music','voices'] as const)$<HTMLInputElement>('#'+setting).checked=save[setting];$('#sound').classList.toggle('muted',!save.sound);}
-const dataPromise=fetch('/world/gombe.json').then(r=>{if(!r.ok)throw new Error('Le quartier ne peut pas être chargé. Vérifie ta connexion.');return r.json() as Promise<WorldData>;});
-async function start(){
+function saveCheckpoint(){if(sim&&playing&&sim.phase!=='finished'){profiles.saveRun(sim.snapshot());lastCheckpointTick=sim.ticks;}}
+function refreshResume(){if(!data)return;const raw=profiles.readRun(),key=worldKeyFor(data);$('#resume-run').classList.toggle('hidden',!validRun(raw,key));}
+function pause(){if(!sim||!playing||sim.phase==='finished')return;clearInput();saveCheckpoint();sim.pause(true);if(world)world.lastTime=0;audio.pause();$('#pause-panel').classList.remove('hidden');}
+function resume(){if(!sim)return;clearInput();sim.pause(false);if(world)world.lastTime=0;lastFrame=performance.now();$('#pause-panel').classList.add('hidden');void audio.start();}
+function home(){saveCheckpoint();clearInput();sim?.pause(true);audio.pause();playing=false;$('#hud').classList.add('hidden');$('#home').classList.remove('hidden');$('#pause-panel').classList.add('hidden');$('#results').classList.add('hidden');$('#world').classList.remove('active');$('#home-record').textContent=`RECORD RUSH · ${save.record}`;refreshResume();}
+function applySettings(){if(world){world.comfort=save.comfort;world.fovEffect=save.fov;world.blur=save.blur;world.shake=save.shake;world.setCamera(save.camera);}audio.enabled=save.sound;audio.music=save.music;audio.voices=save.voices;for(const setting of ['comfort','fov','blur','shake','music','voices'] as const)$<HTMLInputElement>('#'+setting).checked=save[setting];$('#sound').classList.toggle('muted',!save.sound);}
+const dataPromise=Promise.all(['/world/gombe.json','/world/dressing.json'].map(async url=>{const r=await fetch(url);if(!r.ok)throw new Error('Le quartier ne peut pas être chargé. Vérifie ta connexion.');return r.json();})).then(([world,dressing])=>({...world,dressing} as WorldData));
+async function start(resuming=false){
   if(starting)return;starting=true;const button=$<HTMLButtonElement>('#play');button.disabled=true;button.innerHTML='LE QUARTIER SE RÉVEILLE…';
   try{
     await audio.start();data=await dataPromise;
-    if(!world){world=new GameWorld($<HTMLCanvasElement>('#world'),data);sim=new Simulation(data);sim.obstacleProvider=t=>{const obstacles=world!.traffic(t);if(sim?.mode==='story'&&sim.storyStage===1){const taxi=sim.taxi();obstacles.push({...taxi,radius:.8,halfLength:1.15,kind:'vehicle'});}return obstacles;};await Promise.all([world.stream(data.spawn[0],data.spawn[1]),world.loadBike()]);}
-    sim!.reset(selected);finishedSaved=false;clearInput();playing=true;world.bike.position.copyFromFloats(sim!.vehicle.x,0,sim!.vehicle.z);world.bike.rotation.y=sim!.vehicle.yaw;applySettings();
-    $('#home').classList.add('hidden');$('#pause-panel').classList.add('hidden');$('#results').classList.add('hidden');$('#hud').classList.remove('hidden');$('#world').classList.add('active');$('#mode-label').textContent=labels[selected];world.resize();lastFrame=performance.now();
+    if(!world){world=new GameWorld($<HTMLCanvasElement>('#world'),data);sim=new Simulation(data);await Promise.all([world.stream(data.spawn[0],data.spawn[1]),world.loadBike(),world.loadKit(),world.loadCollectibles()]);}
+    if(resuming){if(!sim!.restore(profiles.readRun()))throw new Error('Cette sauvegarde n’est plus compatible avec le parcours. Choisis un nouveau départ.');selected=sim!.mode;}else sim!.reset(selected,crypto.randomUUID());finishedSaved=false;lastCheckpointTick=sim!.ticks;clearInput();playing=true;world.bike.position.copyFromFloats(sim!.vehicle.x,0,sim!.vehicle.z);world.bike.rotation.y=sim!.vehicle.yaw;applySettings();
+    $('#home').classList.add('hidden');$('#pause-panel').classList.add('hidden');$('#results').classList.add('hidden');$('#hud').classList.remove('hidden');$('#world').classList.add('active');$('#mode-label').textContent=labels[selected];world.resize();lastFrame=performance.now();saveCheckpoint();
     if(audio.voices)audio.speak('Gombe ! Gombe ! Encore deux places !');
   }catch(error){button.innerHTML='RÉESSAYER';const message=document.createElement('p');message.className='load-error';message.textContent=error instanceof Error?error.message:'Impossible de démarrer. Réessaie.';$('.dock-bottom').prepend(message);console.error(error);}
   finally{starting=false;button.disabled=false;if(playing)button.innerHTML=`ENTRER DANS KIN ${icon('arrow')}`;}
 }
 function results(){
   if(!sim||finishedSaved)return;finishedSaved=true;clearInput();audio.pause();save.runs++;
-  if(sim.mode==='rush')save.record=Math.max(save.record,sim.score);if(sim.mode==='story')save.storyComplete=true;persist();
+  profiles.complete(sim);profiles.clearRun();save.record=profiles.record('rush',sim.rules,sim.seed,sim.worldKey);if(sim.mode==='story')save.storyComplete=true;persist();$('#result-progression').textContent=`RÉPUTATION ${profiles.profile.reputation} · ${profiles.profile.coins} PIÈCES`;
   $('#result-title').innerHTML=sim.mode==='story'?'Mado a laissé<br>une piste.':'Bien joué,<br>Wewa !';
   $('#result-kicker').textContent=sim.mode==='rush'?'30 SECONDES. UN PASSAGE DE PLUS.':sim.mode==='story'?'CHAPITRE 01 · LA PISTE JAUNE':'LA TOURNÉE EST BOUCLÉE.';
   $('#result-score').textContent=String(sim.score);$('#result-deliveries').textContent=String(sim.delivered);$('#result-collisions').textContent=String(sim.collisions);$('#result-best').textContent=String(save.record);
@@ -84,8 +92,10 @@ function drawMap(){
   const xy=(p:number[])=>[120+(p[0]-v.x)*scale,120+(p[1]-v.z)*scale];
   ctx.lineCap='round';ctx.lineWidth=2;ctx.strokeStyle='#51605a';ctx.beginPath();
   for(const segment of data.segments){const a=xy(data.nodes[segment.a]),b=xy(data.nodes[segment.b]);if(Math.abs(a[0]-120)>260&&Math.abs(b[0]-120)>260)continue;ctx.moveTo(a[0],a[1]);ctx.lineTo(b[0],b[1]);}ctx.stroke();
+  ctx.strokeStyle='#70b6ba80';ctx.lineWidth=1.3;for(const shortcut of data.shortcuts||[]){ctx.beginPath();shortcut.points.forEach((p,i)=>{const [x,y]=xy(p);if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);});ctx.stroke();}
   ctx.strokeStyle='#b6a66b';ctx.lineWidth=2;ctx.beginPath();data.route.forEach((p,i)=>{const [x,y]=xy(p);if(i===0)ctx.moveTo(x,y);else ctx.lineTo(x,y);});ctx.stroke();
   const dot=(p:number[],color:string,size:number)=>{const [x,y]=xy(p);ctx.fillStyle=color;ctx.beginPath();ctx.arc(x,y,size,0,Math.PI*2);ctx.fill();};
+  for(const token of data.nitroTokens||[])if(!sim.tokens.has(token.id))dot(token.point,'#f5f5db',3);
   if(sim.mode!=='free'&&!(sim.mode==='story'&&sim.storyStage>0)){
     data.parcels.filter(p=>!sim!.collected.has(p.id)).forEach(p=>dot(p.point,'#f6c645',3.4));data.depots.forEach(p=>dot(p.point,'#72e2dd',5));
   }
@@ -101,26 +111,26 @@ function updateHUD(){
   $('#street-name').textContent=sim.nearestRoad([v.x,v.z]).name;
   $('#countdown').textContent=sim.phase==='countdown'?String(3-Math.floor(sim.countdownTicks/60)):'';
   $('#callout').classList.toggle('visible',sim.messageTimer>0);$('#callout p').textContent=sim.message;
-  $('#objective-text').textContent=sim.mode==='free'?'La ville est à toi. Prends le prochain passage.':sim.mode==='story'&&sim.storyStage===1?(sim.taxi().stopped?'Rejoins le taxi et ralentis pour chercher l’indice.':'Suis le taxi jaune. S’il disparaît, rejoins sa dernière position.'):sim.cargo.length?(sim.mode==='delivery'?`${sim.delivered}/6 livrés · Ralentis à moins de 15 km/h dans le relais bleu.`:'Ralentis à moins de 15 km/h dans le relais bleu.'):'Passe sur les colis jaunes. Jusqu’à trois à la fois.';
+  $('#objective-text').textContent=sim.missions.objective(sim.mode,sim.cargo.length,sim.delivered,sim.elapsed);
   $('#nitro-vignette').classList.toggle('boosting',v.boosting&&!save.comfort);drawMap();
 }
 function frame(now:number){
   const delta=Math.min((now-lastFrame)/1000||0,.25);lastFrame=now;
   if(playing&&sim&&world){
-    if(!sim.paused){sim.advance(delta,controls);if(controls.horn)audio.horn();}
+    if(!sim.paused){sim.advance(delta,controls);if(controls.horn)audio.horn();if(sim.ticks-lastCheckpointTick>=480)saveCheckpoint();}
     if(!sim.paused&&!finishedSaved)world.update(sim,delta);audio.update(sim);hudTime+=delta;
     if(hudTime>.08){updateHUD();hudTime=0;}if(sim.phase==='finished')results();
   }
   requestAnimationFrame(frame);
 }
 document.querySelectorAll<HTMLButtonElement>('[data-mode]').forEach(button=>button.addEventListener('click',()=>{selected=button.dataset.mode as Mode;document.querySelectorAll('[data-mode]').forEach(b=>{b.classList.toggle('selected',b===button);b.setAttribute('aria-pressed',String(b===button));});}));
-$('#play').addEventListener('click',()=>void start());$('#pause').addEventListener('click',pause);$('#resume').addEventListener('click',resume);$('#menu').addEventListener('click',home);$('#result-menu').addEventListener('click',home);
+$('#play').addEventListener('click',()=>void start());$('#resume-run').addEventListener('click',()=>void start(true));void dataPromise.then(value=>{data=value;save.record=profiles.record('rush',undefined,undefined,worldKeyFor(value));$('#home-record').textContent=`RECORD RUSH · ${save.record}`;refreshResume();}).catch(()=>{});$('#pause').addEventListener('click',pause);$('#resume').addEventListener('click',resume);$('#menu').addEventListener('click',home);$('#result-menu').addEventListener('click',home);
 for(const selector of ['#restart','#replay'])$(selector).addEventListener('click',()=>{if(sim)selected=sim.mode;void start();});
 $('#camera').addEventListener('click',()=>{save.camera=!save.camera;persist();world?.setCamera(save.camera);});
 $('#sound').addEventListener('click',()=>{save.sound=!save.sound;audio.enabled=save.sound;persist();$('#sound').classList.toggle('muted',!save.sound);});
-for(const setting of ['comfort','fov','shake','music','voices'] as const)$<HTMLInputElement>('#'+setting).addEventListener('change',e=>{save[setting]=(e.target as HTMLInputElement).checked;persist();applySettings();});
+for(const setting of ['comfort','fov','blur','shake','music','voices'] as const)$<HTMLInputElement>('#'+setting).addEventListener('change',e=>{save[setting]=(e.target as HTMLInputElement).checked;persist();applySettings();});
 $('#credits-toggle').addEventListener('click',()=>$('#credits').classList.toggle('hidden'));
-$('#reset-save').addEventListener('click',()=>{if(window.confirm('Effacer le record et la progression enregistrés sur cet appareil ?')){save={...defaultSave};persist();applySettings();$('#home-record').textContent='RECORD RUSH · 0';}});
+$('#reset-save').addEventListener('click',()=>{if(window.confirm('Effacer le record et la progression enregistrés sur cet appareil ?')){profiles.reset();save={...defaultSave};persist();applySettings();refreshResume();$('#home-record').textContent='RECORD RUSH · 0';}});
 $('#export-diagnostic').addEventListener('click',()=>{if(!world)return;const url=URL.createObjectURL(new Blob([JSON.stringify(world.benchmark(),null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download='viva-wewa-diagnostic.json';a.click();URL.revokeObjectURL(url);});
 const stick=$('#drive-stick');
 function moveStick(e:PointerEvent){if(e.pointerId!==stickPointer)return;e.preventDefault();const rect=stick.getBoundingClientRect(),radius=rect.width*.34;const dx=(e.clientX-rect.x-rect.width/2)/radius,dy=(e.clientY-rect.y-rect.height/2)/radius;const length=Math.max(1,Math.hypot(dx,dy));stickX=dx/length;stickY=dy/length;$('#stick-knob').style.transform=`translate(calc(-50% + ${stickX*radius}px),calc(-50% + ${stickY*radius}px))`;rebuildInput();}
@@ -132,7 +142,9 @@ document.querySelectorAll<HTMLButtonElement>('[data-input]').forEach(button=>{
   const release=(e:PointerEvent)=>{inputPointers.delete(e.pointerId);if(![...inputPointers.values()].includes(button.dataset.input as 'nitro'|'horn'))button.classList.remove('pressed');rebuildInput();};
   button.addEventListener('pointerup',release);button.addEventListener('pointercancel',release);button.addEventListener('lostpointercapture',release);
 });
+document.querySelectorAll<HTMLButtonElement>('[data-bind]').forEach(button=>button.addEventListener('click',()=>{editingBinding=button.dataset.bind as Action;button.textContent='Appuie sur une touche…';}));
 window.addEventListener('keydown',e=>{
+  if(editingBinding){e.preventDefault();const action=editingBinding,key=e.key.toLowerCase(),button=$(`[data-bind="${action}"]`);if(key==='escape'){button.textContent=`${bindingNames[action]} · ${bindings.values[action].toUpperCase()}`;editingBinding=null;return;}if(bindings.bind(action,key)){button.textContent=`${bindingNames[action]} · ${key.toUpperCase()}`;editingBinding=null;}else button.textContent='Touche déjà utilisée ou réservée';return;}
   if(!playing||!sim)return;if((e.target as HTMLElement).matches('input,select,textarea'))return;const key=e.key.toLowerCase();
   if([' ','arrowup','arrowdown','arrowleft','arrowright','shift'].includes(key))e.preventDefault();
   if(!e.repeat){if(key==='escape'||key==='p'){sim.paused?resume():pause();return;}if(key==='c')$('#camera').click();if(key==='r'&&!sim.paused)sim.respawn();}

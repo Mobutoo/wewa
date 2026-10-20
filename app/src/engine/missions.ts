@@ -1,0 +1,12 @@
+import {sampleRoute,pointSegment,distance} from '../math';
+import narrative from '../../../WEWA_Developpement_Web/config/narrative.json';
+import type {Mode,Point,WorldData} from '../types';
+export class MissionDirector {
+  stage=0;taxiStart=0;taxiOrigin=235;lastKnown:Point;private lostNotice=false;
+  constructor(private world:WorldData){this.lastKnown=[...world.spawn];}
+  reset(){this.stage=0;this.taxiStart=0;this.taxiOrigin=235;this.lastKnown=[...this.world.spawn];this.lostNotice=false;}
+  deposit(mode:Mode,time:number,delivered:number,point:Point){if(mode!=='story'||this.stage!==0||delivered<narrative.v0_delivery_parcels)return '';this.stage=1;this.taxiStart=time;let length=0,best=Infinity,origin=0;for(let i=0;i<this.world.route.length-1;i++){const a=this.world.route[i],b=this.world.route[i+1],p=pointSegment(point,a,b),d=distance(a,b);if(p.distance<best){best=p.distance;origin=length+p.t*d;}length+=d;}this.taxiOrigin=origin+50;return 'Mado : « Kito ? On a changé de taxi… Jaune, bande noire. Je te laisse une piste… »';}
+  taxi(time:number){const travel=Math.min(narrative.taxi_chase_distance_m,Math.max(0,time-this.taxiStart)*narrative.taxi_speed_mps);return {...sampleRoute(this.world.route,this.taxiOrigin+travel,-.8),stopped:travel>=narrative.taxi_chase_distance_m,progress:travel/narrative.taxi_chase_distance_m};}
+  update(player:{x:number;z:number;speed:number},time:number){if(this.stage!==1)return {finished:false,message:''};const taxi=this.taxi(time),separation=Math.hypot(player.x-taxi.x,player.z-taxi.z);if(separation<100){this.lastKnown=[taxi.x,taxi.z];this.lostNotice=false;}if(separation>160&&!this.lostNotice){this.lostNotice=true;return {finished:false,message:'Taxi perdu de vue. Rejoins la dernière position indiquée.'};}if(taxi.stopped&&separation<10&&Math.abs(player.speed)<4){this.stage=2;return {finished:true,message:'Mado a laissé un bracelet. « On va bien. Suis la piste vers le port. »'};}return {finished:false,message:''};}
+  objective(mode:Mode,cargo:number,delivered:number,time:number){if(mode==='free')return 'La ville est à toi. Prends le prochain passage.';if(mode==='story'&&this.stage===1)return this.taxi(time).stopped?'Rejoins le taxi et ralentis pour chercher l’indice.':'Suis le taxi jaune. S’il disparaît, rejoins sa dernière position.';return cargo?((mode==='delivery'||mode==='story')?`${delivered}/6 livrés · Ralentis à moins de 15 km/h dans le relais bleu.`:'Ralentis à moins de 15 km/h dans le relais bleu.'):'Passe sur les colis jaunes. Jusqu’à trois à la fois.';}
+}

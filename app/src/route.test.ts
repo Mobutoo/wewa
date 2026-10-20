@@ -1,9 +1,10 @@
+import dressing from '../public/world/dressing.json';
 import {it,expect} from 'vitest';
 import {Simulation} from './simulation';
 import {distance,pointSegment,sampleRoute,clamp} from './math';
 import {emptyControls,type WorldData} from './types';
 import gombe from '../public/world/gombe.json';
-const world=gombe as unknown as WorldData;
+const world=({...gombe,dressing}) as unknown as WorldData;
 it('the actual Gombe route can be driven to a completed delivery with building collisions active',()=>{
   const sim=new Simulation(world);sim.reset('delivery');sim.phase='running';
   let lastProgress=0;
