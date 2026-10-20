@@ -1,5 +1,7 @@
 # Moto seule — plan de conception avant fabrication
 
+**Complément de recherche :** appliquer la [méthode documentée de reconstruction](MOTORCYCLE_RECONSTRUCTION_RESEARCH.md). La prochaine étape est l’annotation des repères et le rapprochement des caméras aux photos, avant le premier pneu détaillé. Les guides de calibration ne constituent pas une nouvelle moto globale simplifiée. Aucune reconstruction photographique automatique ni précision millimétrique n’est acquise.
+
 ## Mandat actuel
 
 Le lot 01 est refusé dans toutes ses vues. L’utilisateur demande la moto seule, chaque composant avant tout conducteur, les vraies dimensions et une explication du processus avant de coder. Cette étape livre un plan et un dossier de références ; aucune nouvelle géométrie ni modification du jeu. La fabrication sera conduite par pièce, avec relecture de la moto complète avant travail du conducteur.
@@ -58,4 +60,4 @@ Une petite pièce utile au rendu peut être cuite dans une texture plutôt que r
 
 ## État au terme de la planification
 
-Dimensions globales revérifiées, huit angles et six détails téléchargés et examinés, manques identifiés, méthode définie. Aucun nouveau modèle réaliste déclaré livré. Le lot 01 reste rejeté ; ses matériaux, pièces et rendu ne sont pas un étalon accepté. Prochaine étape : compléter le dossier du pneu avant et de son interface avec la jante, puis construire uniquement cette pièce selon les conditions ci-dessus.
+Dimensions globales revérifiées, huit angles et six détails téléchargés et examinés, manques identifiés, méthode définie. Aucun nouveau modèle réaliste déclaré livré. Le lot 01 reste rejeté ; ses matériaux, pièces et rendu ne sont pas un étalon accepté. Prochaine étape : annoter les repères et vérifier le calage des caméras sur les guides dimensionnés, puis compléter le dossier du pneu avant et de son interface avec la jante avant de construire cette seule pièce.
