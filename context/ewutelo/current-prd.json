@@ -1,6 +1,6 @@
 {
   "idea_id": "27f8ffb12df14ff79c6e0f13cbd1cf91",
-  "revision": 9,
+  "revision": 10,
   "prd": {
     "acceptance_criteria": [
       "Petite moto utilitaire Wewa ; clavier ZQSD/WASD et tactile.",
@@ -217,27 +217,20 @@
         "Record local, réglages et maquette sonore originale"
       ],
       "limits": [
-        "Décors et animations encore provisoires, cible photographique non déclarée atteinte",
-        "Trafic et traversées simplifiés ; priorités et données locales à relire",
-        "Rumba et appels sont des maquettes originales / voix françaises facultatives, pas de lingala authentifié",
-        "Autres quartiers et trajet complet au port restent des étapes ultérieures",
-        "Pas de paiement réel ni de télémétrie distante"
+        "Photographic reference still not achieved: architectural variety/detail, pedestrian models/animation and authentic urban density remain unfinished.",
+        "Physical Safari iPhone 15/16 qualification and hardware FPS not measured.",
+        "Source geometry remains approximate and local street review pending."
       ],
-      "milestone": "Premier prototype public Viva Wewa",
+      "milestone": "Mobile control correction and first runtime photographic material upgrade",
       "preview_url": "https://viva-wewa.chummyrose33.chatgpt.site",
       "repository": "https://github.com/Mobutoo/wewa",
       "review_url": "https://viva-wewa.chummyrose33.chatgpt.site/relecture.html",
-      "source_commit": "eee314048dee7cb300a9a1513d72e9b21bf67d95",
-      "tests": {
-        "browser_profiles": [
-          "Chromium desktop",
-          "Chromium touch emulation"
-        ],
-        "hardware_fps": "not measured",
-        "javascript_errors": 0,
-        "missing_files": 0,
-        "physical_iphone_validation": "pending user feedback",
-        "unit": 12
+      "source_commit": "95a1acf87079f7c623ff6c37fbdca96ee459ce86",
+      "tests": "15 passing logic tests. Chromium desktop and touch portrait/landscape: single-thumb diagonal input, independent nitro, brake/reverse, cancellation, held-thumb blur, screen-right steering, camera, pause and run lifecycle passed. No JS/HTTP errors.",
+      "deployment": {
+        "version": 2,
+        "status": "succeeded",
+        "source_commit": "95a1acf87079f7c623ff6c37fbdca96ee459ce86"
       }
     },
     "non_goals": [
@@ -744,7 +737,8 @@
       "reason": "Utilisateur refuse les commandes séparées qui mobilisent deux mains pour conduire.",
       "scheme": "Un seul joystick analogique au pouce gauche : haut accélérer, bas freiner puis reculer, gauche/droite diriger simultanément. Nitro et klaxon indépendants à droite.",
       "release": "Retour au neutre, perte de focus ou pause efface les contacts et axes.",
-      "verification_scope": "Unit tests and real Chromium touch events; physical Safari approval pending."
+      "verification_scope": "Unit tests and real Chromium touch events; physical Safari approval pending.",
+      "handedness": "Fixed reversed steering in RH scene; actual camera projection verifies right input turns screen right."
     },
     "visual_feedback_revision": {
       "status": "not_accepted",
@@ -755,7 +749,8 @@
         "Sky-only HDR and reflections",
         "Original curved compact taxi",
         "Original facade and palm cutout textures",
-        "Street furnishings and revised camera"
+        "Street furnishings and revised camera",
+        "Continuous clothed rider replaces segmented mannequin"
       ],
       "acceptance": "Comparer des captures réelles du moteur à la référence, puis vérifier sur iPhone 15/16 ; ne pas annoncer le photoréalisme sans ce résultat."
     }
