@@ -1,0 +1,69 @@
+{
+  "asset": "viva-wewa-motorcycle",
+  "status": "original-prototype-needs-art-review",
+  "reference_manifest": "/workspace/wewa-assets/references/motorcycle-reference.json",
+  "source": "Original procedural mesh and materials authored in Blender; manufacturer photographs used only as visual references, no photos, logos or external textures embedded.",
+  "license": "Original generated work for user project; no third-party texture or mesh license dependency.",
+  "coordinates": "GLB X right, Y up, +Z forward. Blender forward -Y and Z up.",
+  "wheelbase_m": 1.285,
+  "triangle_count": 14348,
+  "mesh_count": 13,
+  "materials": 10,
+  "blender_bounds": {
+    "x": [
+      -0.37,
+      0.37
+    ],
+    "y": [
+      -0.9464,
+      1.0696
+    ],
+    "z": [
+      0,
+      1.253
+    ]
+  },
+  "actual_dimensions_m": {
+    "width": 0.74,
+    "length": 2.016,
+    "height_including_mirrors": 1.253
+  },
+  "manufacturer_reference_dimensions_m": {
+    "width": 0.74,
+    "length": 2.016,
+    "height": 1.134
+  },
+  "limits": [
+    "Prototype detail, not manufacturer CAD. Visual review needed.",
+    "Reference height convention and mirror inclusion unspecified; prototype mirrors may exceed stated overall height.",
+    "No rider integrated. No physics collider included.",
+    "Wheels rotate about local X; named front_wheel and rear_wheel.",
+    "Rear wheel and front wheel primitives include multiple materials; static body fused by material."
+  ],
+  "files": [
+    "generate_motorcycle.py",
+    "viva-wewa-motorcycle.blend",
+    "viva-wewa-motorcycle.glb",
+    "preview.png"
+  ],
+  "gltf_bounds_m": {
+    "min": [
+      -0.37004,
+      0.0,
+      -1.0696
+    ],
+    "max": [
+      0.37004,
+      1.253,
+      0.94639
+    ]
+  },
+  "validation": {
+    "khronos_gltf_validator_errors": 0,
+    "warnings": 0,
+    "infos": 19,
+    "infos_reason": "Unused UV coordinates with procedural solid materials; no texture dependency."
+  },
+  "glb_bytes": 605700,
+  "glb_sha256": "3c0fe7586a5408301137815c14958c937c1303c13b1dc4c360a3a1666f1d62f8"
+}

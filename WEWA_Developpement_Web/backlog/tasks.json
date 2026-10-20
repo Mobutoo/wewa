@@ -1,0 +1,576 @@
+{
+  "version": 3,
+  "selection_rule": "first pending with all depends_on done; W01 may be blocked on physical devices while W02 proceeds",
+  "tasks": [
+    {
+      "id": "W00",
+      "phase": "P0",
+      "title": "Audit et blockout",
+      "owner_role": "SIG",
+      "depends_on": [],
+      "status": "done",
+      "acceptance": "Plan, manifest et contrôle structurel disponibles ; limites explicites.",
+      "evidence": [
+        "validation/glb_structural.json",
+        "data/pilot/world_manifest.json"
+      ]
+    },
+    {
+      "id": "W01",
+      "phase": "P1",
+      "title": "Appareils et trajet pilote",
+      "owner_role": "Production",
+      "depends_on": [
+        "W00"
+      ],
+      "status": "blocked",
+      "acceptance": "Deux appareils physiques identifiés ; parcours et état des lieux validés.",
+      "evidence": [],
+      "blocker": "iPhone 15/16 identifiés par utilisateur ; appareil physique et trajet encore à tester sur la prévisualisation.",
+      "next_action": "Faire tester la prévisualisation sur Safari iPhone 15/16 et faire relire le parcours Gombe."
+    },
+    {
+      "id": "W02",
+      "phase": "P1",
+      "title": "Projet TypeScript et moteur",
+      "owner_role": "Technique",
+      "depends_on": [
+        "W00"
+      ],
+      "status": "in_progress",
+      "acceptance": "Build reproductible, versions gelées, HTTPS et page sans erreur.",
+      "evidence": []
+    },
+    {
+      "id": "W03",
+      "phase": "P1",
+      "title": "Import GLB et instrumentation",
+      "owner_role": "Technique",
+      "depends_on": [
+        "W02"
+      ],
+      "status": "pending",
+      "acceptance": "Une cellule visible ; origine et axes corrects ; capture de temps de trame.",
+      "evidence": []
+    },
+    {
+      "id": "W04",
+      "phase": "P1",
+      "title": "Audit routier et emprises",
+      "owner_role": "SIG",
+      "depends_on": [
+        "W01"
+      ],
+      "status": "pending",
+      "acceptance": "Recouvrements examinés ; ponts/niveaux séparés ; corridor sans conflit bloquant.",
+      "evidence": []
+    },
+    {
+      "id": "W05",
+      "phase": "P1",
+      "title": "Scène de charge et choix moteur",
+      "owner_role": "Performance",
+      "depends_on": [
+        "W03",
+        "W01"
+      ],
+      "status": "pending",
+      "acceptance": "Mesures réelle WebGL 2 sur appareils ; WebGPU testé si disponible ; décision enregistrée.",
+      "evidence": []
+    },
+    {
+      "id": "W06",
+      "phase": "P2",
+      "title": "Contrôleur moto et caméra",
+      "owner_role": "Gameplay",
+      "depends_on": [
+        "W03"
+      ],
+      "status": "pending",
+      "acceptance": "Accélérer, freiner, braquer, incliner visuellement ; caméra sans traversée du décor.",
+      "evidence": []
+    },
+    {
+      "id": "W07",
+      "phase": "P2",
+      "title": "Sol et collisions balayées",
+      "owner_role": "Gameplay",
+      "depends_on": [
+        "W04",
+        "W06"
+      ],
+      "status": "pending",
+      "acceptance": "Pas de traversée à vitesse maximale ; pente et reprise après chute vérifiées. Inclure la vitesse maximale avec nitro.",
+      "evidence": []
+    },
+    {
+      "id": "W08",
+      "phase": "P2",
+      "title": "Commandes et pause",
+      "owner_role": "UI",
+      "depends_on": [
+        "W06"
+      ],
+      "status": "pending",
+      "acceptance": "ZQSD/WASD et tactile ; perte de focus sans accélération persistante.",
+      "evidence": []
+    },
+    {
+      "id": "W09",
+      "phase": "P2",
+      "title": "Tour jouable et test conduite",
+      "owner_role": "QA",
+      "depends_on": [
+        "W05",
+        "W07",
+        "W08",
+        "W37"
+      ],
+      "status": "pending",
+      "acceptance": "Tour complet sur mobile et PC ; observations archivées, blocages corrigés.",
+      "evidence": []
+    },
+    {
+      "id": "W10",
+      "phase": "P3",
+      "title": "Graphe de voies et trafic",
+      "owner_role": "Gameplay",
+      "depends_on": [
+        "W04",
+        "W09"
+      ],
+      "status": "pending",
+      "acceptance": "Sens, priorités, files et arrêts ; aucun spawn inévitable.",
+      "evidence": []
+    },
+    {
+      "id": "W11",
+      "phase": "P3",
+      "title": "Livraison et points de reprise",
+      "owner_role": "Gameplay",
+      "depends_on": [
+        "W09"
+      ],
+      "status": "pending",
+      "acceptance": "Prise, dépôt, récompense et reprise après interruption.",
+      "evidence": []
+    },
+    {
+      "id": "W12",
+      "phase": "P3",
+      "title": "Poursuite et recherche",
+      "owner_role": "Gameplay",
+      "depends_on": [
+        "W10",
+        "W11"
+      ],
+      "status": "pending",
+      "acceptance": "Perte de vue récupérable, cible persistante et mission gagnable.",
+      "evidence": []
+    },
+    {
+      "id": "W13",
+      "phase": "P3",
+      "title": "Deux raccourcis et jetons",
+      "owner_role": "Level design",
+      "depends_on": [
+        "W04",
+        "W12"
+      ],
+      "status": "pending",
+      "acceptance": "Deux itinéraires utiles et bonus sans boucle de farming.",
+      "evidence": []
+    },
+    {
+      "id": "W14",
+      "phase": "P3",
+      "title": "Livraison V0 web",
+      "owner_role": "QA",
+      "depends_on": [
+        "W13",
+        "W08",
+        "W39",
+        "W40"
+      ],
+      "status": "pending",
+      "acceptance": "5-8 minutes jouables, clavier/tactile testés, URL privée et limites annoncées. Rush 30 s et récit R9 inclus ; aucun achat réel.",
+      "evidence": []
+    },
+    {
+      "id": "W15",
+      "phase": "P4",
+      "title": "Collecte terrain et droits",
+      "owner_role": "Art",
+      "depends_on": [
+        "W01"
+      ],
+      "status": "pending",
+      "acceptance": "Références datées et autorisées pour la rue, la moto et le minibus.",
+      "evidence": []
+    },
+    {
+      "id": "W16",
+      "phase": "P4",
+      "title": "Étalon rue et matériaux",
+      "owner_role": "Technical art",
+      "depends_on": [
+        "W15",
+        "W09"
+      ],
+      "status": "pending",
+      "acceptance": "150-250 m finis ; dimensions et texture density cohérentes.",
+      "evidence": []
+    },
+    {
+      "id": "W17",
+      "phase": "P4",
+      "title": "Moto, pilote et véhicules",
+      "owner_role": "Art",
+      "depends_on": [
+        "W15"
+      ],
+      "status": "pending",
+      "acceptance": "Silhouettes locales, LOD, collisions et animations contrôlés. Guidon, compteur et mains utilisables en première personne sans obstruction.",
+      "evidence": []
+    },
+    {
+      "id": "W18",
+      "phase": "P4",
+      "title": "GLB, KTX2 et budget assets",
+      "owner_role": "Technical art",
+      "depends_on": [
+        "W16",
+        "W17"
+      ],
+      "status": "pending",
+      "acceptance": "Exports validés, compression inspectée et coût de chargement mesuré.",
+      "evidence": []
+    },
+    {
+      "id": "W19",
+      "phase": "P4",
+      "title": "Lumière et audio spatialisé",
+      "owner_role": "Art/son",
+      "depends_on": [
+        "W18"
+      ],
+      "status": "pending",
+      "acceptance": "Heure fixe cohérente ; audio activable et danger audible.",
+      "evidence": []
+    },
+    {
+      "id": "W20",
+      "phase": "P4",
+      "title": "Revue locale et rendu",
+      "owner_role": "QA",
+      "depends_on": [
+        "W19",
+        "W14"
+      ],
+      "status": "pending",
+      "acceptance": "Captures du moteur, retours kinois et mesures du parcours étalon.",
+      "evidence": []
+    },
+    {
+      "id": "W21",
+      "phase": "P5",
+      "title": "Streaming cellules et cache",
+      "owner_role": "Technique",
+      "depends_on": [
+        "W05",
+        "W04"
+      ],
+      "status": "pending",
+      "acceptance": "Chargement anticipé, mémoire bornée et collisions prêtes avant entrée.",
+      "evidence": []
+    },
+    {
+      "id": "W22",
+      "phase": "P5",
+      "title": "Roulage, convoi et contact",
+      "owner_role": "Gameplay",
+      "depends_on": [
+        "W12",
+        "W20"
+      ],
+      "status": "pending",
+      "acceptance": "Événements annoncés et détours gagnables ; contact utile.",
+      "evidence": []
+    },
+    {
+      "id": "W23",
+      "phase": "P5",
+      "title": "Concert et halte fluviale",
+      "owner_role": "Art",
+      "depends_on": [
+        "W20"
+      ],
+      "status": "pending",
+      "acceptance": "Lieux localisés, contexte et horizon validés, droits audio connus.",
+      "evidence": []
+    },
+    {
+      "id": "W24",
+      "phase": "P5",
+      "title": "Sauvegarde et reprise",
+      "owner_role": "Technique",
+      "depends_on": [
+        "W14"
+      ],
+      "status": "pending",
+      "acceptance": "Réinstallation/version et données locales gérées sans corruption.",
+      "evidence": []
+    },
+    {
+      "id": "W25",
+      "phase": "P5",
+      "title": "Assemblage V1 quinze minutes",
+      "owner_role": "Production",
+      "depends_on": [
+        "W21",
+        "W22",
+        "W23",
+        "W24"
+      ],
+      "status": "pending",
+      "acceptance": "Parcours intégral jouable sans blocage et sans téléchargement de toute la ville.",
+      "evidence": []
+    },
+    {
+      "id": "W26",
+      "phase": "P6",
+      "title": "Réseau lent et stabilité",
+      "owner_role": "QA",
+      "depends_on": [
+        "W25"
+      ],
+      "status": "pending",
+      "acceptance": "Froid, chaud, déconnexion, perte de contexte et session 20 minutes documentés.",
+      "evidence": []
+    },
+    {
+      "id": "W27",
+      "phase": "P6",
+      "title": "Profilage et optimisation",
+      "owner_role": "Performance",
+      "depends_on": [
+        "W26"
+      ],
+      "status": "pending",
+      "acceptance": "Trois captures de 180 s par profil ; p95/p99 et qualité documentés.",
+      "evidence": []
+    },
+    {
+      "id": "W28",
+      "phase": "P6",
+      "title": "Panel comparatif déclaré",
+      "owner_role": "Production",
+      "depends_on": [
+        "W20"
+      ],
+      "status": "pending",
+      "acceptance": "Au moins 10 références comparables datées ; grille et limites publiées.",
+      "evidence": []
+    },
+    {
+      "id": "W29",
+      "phase": "P6",
+      "title": "Bêta web privée",
+      "owner_role": "QA",
+      "depends_on": [
+        "W27",
+        "W28",
+        "W43"
+      ],
+      "status": "pending",
+      "acceptance": "Retour utilisateurs, aucun bug bloquant, rollback possible.",
+      "evidence": []
+    },
+    {
+      "id": "W30",
+      "phase": "P7",
+      "title": "Pipeline de nouvelles zones",
+      "owner_role": "SIG",
+      "depends_on": [
+        "W29"
+      ],
+      "status": "pending",
+      "acceptance": "Une zone ajoutée avec les mêmes gates, sans régression de budget.",
+      "evidence": []
+    },
+    {
+      "id": "W31",
+      "phase": "P7",
+      "title": "Catalogue cosmétique",
+      "owner_role": "Produit",
+      "depends_on": [
+        "W29"
+      ],
+      "status": "pending",
+      "acceptance": "Contenu et prix exacts, aperçu, pas de vente de puissance.",
+      "evidence": []
+    },
+    {
+      "id": "W32",
+      "phase": "P7",
+      "title": "Prestataire et backend paiement",
+      "owner_role": "Services",
+      "depends_on": [
+        "W31"
+      ],
+      "status": "pending",
+      "acceptance": "Contrat, pays, frais et reversements vérifiés ; transactions de test.",
+      "evidence": []
+    },
+    {
+      "id": "W33",
+      "phase": "P7",
+      "title": "Droits et transactions fiables",
+      "owner_role": "Services",
+      "depends_on": [
+        "W32"
+      ],
+      "status": "pending",
+      "acceptance": "Webhook authentifié, idempotence, restauration et remboursement testés.",
+      "evidence": []
+    },
+    {
+      "id": "W34",
+      "phase": "P7",
+      "title": "Pilote commercial limité",
+      "owner_role": "Production",
+      "depends_on": [
+        "W33",
+        "W29"
+      ],
+      "status": "pending",
+      "acceptance": "Support et rapprochement opérationnels ; dépenses claires et campagne autorisée.",
+      "evidence": []
+    },
+    {
+      "id": "W35",
+      "phase": "P2",
+      "title": "Contrôleur nitro et jauge",
+      "owner_role": "Gameplay",
+      "depends_on": [
+        "W06",
+        "W08"
+      ],
+      "status": "pending",
+      "acceptance": "Activation maintenue, consommation, recharge, interruption et vitesse maximale indépendantes du framerate.",
+      "evidence": []
+    },
+    {
+      "id": "W36",
+      "phase": "P2",
+      "title": "Vue au guidon et bascule",
+      "owner_role": "Gameplay",
+      "depends_on": [
+        "W06",
+        "W08"
+      ],
+      "status": "pending",
+      "acceptance": "Deux vues commutables clavier/tactile, horizon stable, choix mémorisé et physique inchangée.",
+      "evidence": []
+    },
+    {
+      "id": "W37",
+      "phase": "P2",
+      "title": "Effets nitro et confort",
+      "owner_role": "Technical art / QA",
+      "depends_on": [
+        "W35",
+        "W36",
+        "W07"
+      ],
+      "status": "pending",
+      "acceptance": "Flou périphérique réglable, mode Confort, profil mobile léger ; obstacles lisibles et tests à vitesse nitro maximale.",
+      "evidence": []
+    },
+    {
+      "id": "W38",
+      "phase": "P3",
+      "title": "Wewa Rush 30 secondes",
+      "owner_role": "Gameplay",
+      "depends_on": [
+        "W09"
+      ],
+      "status": "pending",
+      "acceptance": "Timer actif, collecte et dépôt, capacité 3, fin unique à 30 s et reprise gratuite réinitialisée.",
+      "evidence": []
+    },
+    {
+      "id": "W39",
+      "phase": "P3",
+      "title": "Score, records et progression locale",
+      "owner_role": "Gameplay / QA",
+      "depends_on": [
+        "W38"
+      ],
+      "status": "pending",
+      "acceptance": "Score et multiplicateur déterministes, identifiants anti-doublons, record local, réputation et monnaie séparées.",
+      "evidence": []
+    },
+    {
+      "id": "W40",
+      "phase": "P3",
+      "title": "Introduction et indice de la disparition",
+      "owner_role": "Narration",
+      "depends_on": [
+        "W12"
+      ],
+      "status": "pending",
+      "acceptance": "Personnalité fictive et amie du héros ; message, poursuite et indice ; checkpoint gratuit et récit fictionnel.",
+      "evidence": []
+    },
+    {
+      "id": "W41",
+      "phase": "P5",
+      "title": "Préférences et recommandations locales",
+      "owner_role": "Produit",
+      "depends_on": [
+        "W25"
+      ],
+      "status": "pending",
+      "acceptance": "Choix explicite, règles compréhensibles, réinitialisation, pas de profil sensible ni de prix lié aux échecs.",
+      "evidence": []
+    },
+    {
+      "id": "W42",
+      "phase": "P7",
+      "title": "Fantômes et défis comparables",
+      "owner_role": "Gameplay",
+      "depends_on": [
+        "W29"
+      ],
+      "status": "pending",
+      "acceptance": "Fantôme personnel d’abord, graine et règles versionnées ; validation de scores avant classement public.",
+      "evidence": []
+    },
+    {
+      "id": "W43",
+      "phase": "P4",
+      "title": "Panel conduite et relance volontaire",
+      "owner_role": "QA",
+      "depends_on": [
+        "W14"
+      ],
+      "status": "pending",
+      "acceptance": "20-30 essais qualitatifs proposés ; protocole, observations et limites, aucune rétention inventée.",
+      "evidence": []
+    },
+    {
+      "id": "W44",
+      "phase": "P7",
+      "title": "Packs de défis et catalogue adapté",
+      "owner_role": "Produit",
+      "depends_on": [
+        "W31",
+        "W41"
+      ],
+      "status": "pending",
+      "acceptance": "Contenus exacts, prix explicites, préférences désactivables, aucune offre pendant la course ; paiement via W32-W34 seulement.",
+      "evidence": []
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "status": "initial_targets_not_measured",
+  "warmup_s": 30,
+  "capture_s": 180,
+  "repetitions": 3,
+  "soak_minutes": 20,
+  "cold_network": {
+    "mbps": 10,
+    "rtt_ms": 100
+  },
+  "first_playable_transfer_mb_max": 6,
+  "first_playable_seconds_max": 10,
+  "v0_transfer_mb_max": 25,
+  "v1_transfer_mb_max": 80,
+  "profiles": {
+    "mobile": {
+      "target_fps": 30,
+      "frame_p95_ms_max": 35,
+      "frame_p99_ms_max": 50,
+      "internal_resolution_max": [
+        1280,
+        720
+      ],
+      "visible_triangles_soft_cap": 250000,
+      "draw_calls_all_passes_soft_cap": 180,
+      "gpu_resource_estimate_mb_max": 180,
+      "js_heap_mb_max_when_measurable": 200,
+      "near_vehicles": 12,
+      "detailed_pedestrians": 16
+    },
+    "desktop": {
+      "target_fps": 60,
+      "frame_p95_ms_max": 18,
+      "frame_p99_ms_max": 25,
+      "internal_resolution_max": [
+        1920,
+        1080
+      ],
+      "visible_triangles_soft_cap": 1000000,
+      "draw_calls_all_passes_soft_cap": 450,
+      "gpu_resource_estimate_mb_max": 700,
+      "js_heap_mb_max_when_measurable": 400,
+      "near_vehicles": 32,
+      "detailed_pedestrians": 40
+    }
+  }
+}

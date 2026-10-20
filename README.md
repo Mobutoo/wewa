@@ -1,36 +1,58 @@
-# Wewa
+# Viva Wewa
 
-Jeu solo de moto à Kinshasa, jouable dans un navigateur sur PC et mobile.
+Jeu solo de moto à Kinshasa pour navigateur PC et mobile. Le premier secteur réutilise les routes et modèles de Gombe fournis dans le dossier de reprise.
 
-## Concept récupéré
+## Jouer et relire
 
-- Secteur pilote : Gombe.
-- Wewa Rush : manches de 30 secondes, collecte et livraison de colis, score et relance gratuite.
-- Livraisons et courte poursuite narrative autour de la disparition d’une amie du héros et d’une personnalité fictive.
-- Nitro, vue arrière et vue au guidon, commandes clavier et tactiles.
-- V0 sans paiement réel ; progression locale et reprises gratuites.
-- Socle technique envisagé : TypeScript, Babylon.js et WebGL 2, à confirmer pendant le développement.
+L’identité de la prévisualisation publique est conservée dans `.openai/hosting.json`. Son URL confirmée et les preuves sont dans `WEWA_Developpement_Web/validation/STATUS.json`.
 
-Le cadrage **R9 / plan de production 1.2** prévaut sur les descriptions historiques. Les objectifs de performance restent à mesurer.
+Le carnet public `/relecture.html` et `creative/review-register.json` rassemblent les personnages, dialogues, missions et scènes inventés. La direction vise le réalisme photographique. La couverture générée est une image artistique distincte des captures moteur ; décors et animations restent à affiner.
 
-## État du dépôt
+Modes du prototype : Rush de 30 secondes, tournée de six colis, introduction narrative avec poursuite d’un taxi et indice, balade libre.
 
-Dépôt initialisé pour recevoir le prompt et les fichiers du projet. Aucun code de jeu ni asset 3D n’a encore été importé ici.
+## Développer
 
-Ewutelo décrit un pilote Gombe avec des données, scripts et modèles, mais aucun jeu jouable à ce stade. Ces fichiers doivent être fournis séparément ; l’export de l’idée ne les contient pas.
+Node.js 24, versions gelées dans le lockfile :
 
-## Contexte conservé
+```sh
+npm ci
+npm test
+npm run build
+npm run dev
+```
 
-Source : idée Ewutelo `27f8ffb12df14ff79c6e0f13cbd1cf91`, révision 5.
+Source dans `app/`, sortie statique dans `dist/`. Tests navigateur : Python 3.12, Playwright et Chromium.
 
-- [Export intégral de l’idée](context/ewutelo/idea.json), incluant les 45 tâches et leurs dépendances.
-- [Cadrage R9 extrait](context/ewutelo/CADRAGE_R9.md).
-- [Prompt de reprise enregistré dans Ewutelo](context/ewutelo/PROMPT_REPRISE_EWUTELO.txt), conservé comme référence en attendant le prompt fourni pour ce dépôt.
+```sh
+python -m pip install playwright
+python -m playwright install --with-deps chromium
+npm run test:browser
+```
 
-## Prochaine étape
+Les captures et rapports sont dans `WEWA_Developpement_Web/validation/browser/`. L’émulation tactile Chromium ne constitue pas une validation Safari sur iPhone. Les iPhone 15 et 16 sont prioritaires ; aucune cadence matérielle n’est encore déclarée atteinte.
 
-Déposer le prompt de démarrage et les fichiers, notamment `WEWA_Reprise_Codex.zip` ou son contenu. Préserver l’arborescence d’origine, les modèles Gombe, les sources et les licences.
+Le workflow `.github/workflows/ci.yml` exécute tests, build et vérification navigateur.
 
-À réception : lire les fichiers `AGENTS.md`, `00_LIRE_AVANT_DE_CODER.md` et le prompt fourni ; vérifier le cadrage, les configurations et le backlog, puis commencer les jalons W02 et W03 selon leurs dépendances.
+## Commandes
 
-Le dossier `context/ewutelo/` est une copie de référence de l’idée ; les fichiers de développement attendus n’ont pas été recréés artificiellement.
+ZQSD / WASD ou flèches : conduire. Espace : frein ; Maj : nitro ; C : caméra ; H : klaxon ; R : reprise ; P / Échap : pause. Sur téléphone : boutons tactiles simultanés ; paysage recommandé.
+
+Pause ou perte de focus libère les commandes. Réglages : confort, champ de vision, vibrations, musique originale et appels parlés facultatifs via la voix française du navigateur. Record et réglages locaux ; jouer sans stockage persistant reste possible.
+
+## Sources
+
+- `WEWA_Developpement_Web/` : cadrage R9 / plan 1.2, backlog, configurations et données de référence préservés.
+- `tools/prepare_world.py` : dérivé métrique du graphe et emplacements de jeu, avec copie des GLB existants. Dépendances Python : celles du kit.
+- `app/public/world/` : dérivé navigateur et cellules chargées progressivement.
+- `assets-src/` : scripts Blender originaux de la moto, du pilote et du minibus. Sortie dans `generated/`, ou `VIVA_WEWA_ASSET_OUTPUT` si défini.
+- `creative/` : références, provenance et relecture.
+
+Les géodonnées complètes et archives volumineuses restent dans le dossier d’importation et sur le partage fourni, hors du bundle et de Git ordinaire. Récupération : https://drop.ewutelo.cloud/StoryEngine-UI-2026-09-08/Wewa%20/ (espace final dans le nom du dossier).
+
+## État et limites
+
+Prototype jouable : tracé d’environ 1,50 km contrôlé contre les emprises bâties ; hauteurs, voirie, priorités et fidélité locale à qualifier. Façades, palmiers et commerces ajoutés constituent une couche artistique fictive. Trafic et traversées simplifiés.
+
+Le backlog conserve ses dépendances de validation : essais Safari iPhone 15/16, relecture kinoise, finition artistique, performances matérielles et panel utilisateurs. Aucun paiement réel, compte obligatoire, télémétrie distante ou classement public.
+
+Géographie : © contributeurs OpenStreetMap, source ODbL ; voir les crédits du kit et `app/public/world/CREDITS*.txt`. Les références historiques Ewutelo sont dans `context/ewutelo/` ; les décisions actuelles Viva Wewa et la correction photographique figurent dans le PRD actuel et le carnet.

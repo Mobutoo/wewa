@@ -1,0 +1,86 @@
+{
+  "project": "Viva Wewa",
+  "prepared_utc": "2026-10-19",
+  "scope": "Recherche documentaire et repères de modélisation. Aucun asset visuel n'est automatiquement autorisé à la publication.",
+  "instructions_read": ["/workspace/wewa-import/extracted/WEWA_Reprise_Codex2/WEWA_Reprise_Codex/AGENTS.md", "/workspace/wewa-import/extracted/WEWA_Reprise_Codex2/WEWA_Reprise_Codex/WEWA_Developpement_Web/AGENTS.md", "/workspace/wewa-import/extracted/WEWA_Reprise_Codex2/WEWA_Reprise_Codex/PROMPT_REPRISE_CODEX.txt"],
+  "primary_motorcycle": {
+    "reference": "Bajaj Boxer 125 HD, catalogue constructeur RDC",
+    "source_url": "https://www.bajajauto.com/fr-cd/bikes/boxer-125hd",
+    "source_retrieval": "HTTP 200, contenu constructeur relu dans cette session",
+    "source_text_path": "/workspace/wewa-assets/references/bajaj-official-page.txt",
+    "manufacturer_dimensions_m": {"length": 2.016, "width": 0.740, "height": 1.134, "wheelbase": 1.285},
+    "manufacturer_mass_kg": 120,
+    "manufacturer_engine": "124.45 cm3, monocylindre quatre temps refroidi par air; 10 PS à 7500 tr/min et 10.49 Nm à 5500 tr/min",
+    "manufacturer_tyres": {"front": "2.75-17", "rear": "3.00-17", "rim_diameter_m": 0.4318},
+    "proportion_landmarks": [
+      {"id": "overall-envelope", "value": "2.016 × 0.740 × 1.134 m", "status": "manufacturer", "application": "Conserver gabarit de petite utilitaire; largeur publiée dont inclusion des rétroviseurs non précisée."},
+      {"id": "wheel-centres", "value": "1.285 m entre axes, soit 63.7 % de la longueur totale", "status": "manufacturer-and-calculated", "application": "Placer les axes avant de construire réservoir/selle; pas de géométrie de sportive."},
+      {"id": "narrow-wheels", "value": "Jantes 17 pouces, pneus avant 2.75 pouces et arrière 3.00 pouces", "status": "manufacturer", "application": "Diamètre de jante 0.4318 m. Diamètre extérieur à relever; ne pas confondre 17 pouces avec le diamètre complet pneu compris."},
+      {"id": "utility-silhouette", "value": "Selle longue presque horizontale; petit réservoir devant; moteur exposé dessous; porte-bagages derrière", "status": "observed-on-official-photo", "application": "Deux places/repose-pieds passager, cadre fin, deux amortisseurs arrière; échappement bas à droite, phare compact et petits clignotants."},
+      {"id": "side-view-estimates", "value": "Selle visuellement environ 0.70–0.80 m de long; ensemble roue extérieur environ 0.58–0.60 m", "status": "visual-estimate-not-measured", "application": "Repères provisoires seulement, à vérifier contre photo orthographique ou cote constructeur avant validation artistique; ne pas présenter comme dimensions officielles."}
+    ],
+    "reference_image": "/workspace/wewa-assets/references/pdf-page-16-image-3.png",
+    "image_rights": "© Bajaj Auto. Référence de forme et proportions; pas de licence de redistribution relevée.",
+    "game_asset_status": "to-model-originally; no finished motorcycle GLB found in supplied files"
+  },
+  "secondary_motorcycle": {
+    "reference": "TVS HLX 125, catalogue TVS RDC",
+    "source_url": "https://tvsrdcongo.com/listing",
+    "source_retrieval": "HTTP 200; HLX 125 et implantation Kinshasa présents dans le catalogue relu",
+    "source_text_path": "/workspace/wewa-assets/references/tvs-official-listing.txt",
+    "dimensions_m": null,
+    "reference_image": "/workspace/wewa-assets/references/pdf-page-16-image-1.png",
+    "visual_traits": "Selle longue noire, réservoir compact noir/bleu, phare rond, moteur nu, porte-bagages, roues fines en alliage, échappement noir bas à droite.",
+    "image_rights": "© TVS RDC / TVS Motor; référence documentaire, redistribution non autorisée par défaut."
+  },
+  "local_posture_reference": {
+    "source_url": "https://commons.wikimedia.org/wiki/File:Wewa_et_son_passager.jpg",
+    "reference_image": "/workspace/wewa-assets/references/pdf-page-16-image-2.png",
+    "author": "Landry Mussaka / Fondation EnClasse",
+    "date": "2021-04-20",
+    "license_as_documented_in_supplied_concept": "CC BY-SA 4.0",
+    "observations": "Photo arrière en rue kinoise; petit véhicule à deux personnes, passager sur selle arrière et pieds de part et d'autre. Moto précise non identifiée.",
+    "status": "License copied from supplied concept; Commons page and original file metadata not independently revalidated this session."
+  },
+  "other_vehicles": [
+    {
+      "reference": "Minibus famille Mercedes T1/TN, appelés localement 207",
+      "sources": ["https://www.lecourrierdekinshasa.com/node/7343", "https://afrique.le360.ma/economie/rdc-esprit-de-mort-ces-bus-qui-menent-la-vie-dure-aux-kinois_24MXUK3JCJCE7E5AIRBCTPNPT4/", "https://media.mercedes-benz.fr/rencontre-avec-le-designer-du-t-1/"],
+      "photos": ["/workspace/wewa-assets/references/pdf-page-22-image-2.png", "/workspace/wewa-assets/references/pdf-page-22-image-3.png"],
+      "photo_credits": ["Radio Okapi / John Bompengo; archive reprise ADIAC, janvier 2014; date photo non établie", "© Le360 Afrique / Christian Nyamabu Kabeya, reportage du 11 décembre 2023"],
+      "dimensions_m": null,
+      "identification_limit": "T1/TN lancé en 1977; une version 207 diesel existe. Les photos locales n'établissent pas une variante, un empattement ou une motorisation précis. Un véhicule est marqué 208.",
+      "visual_traits": "Fourgon haut à capot court, longs flancs plats, petites roues relativement à la caisse, multiples vitrages, porte latérale, livrées bleu/jaune, bleu/blanc ou jaune; réparations et panneaux contrastés variables.",
+      "surface_variants": ["Entretenu: poussière légère, peinture cohérente, vitrages complets", "Usé: teinte délavée, bosses localisées, bas de caisse poussiéreux, corrosion ponctuelle", "Retapé: panneau d'une teinte voisine, réparation visible, pare-chocs remplacé et inscriptions fictives à relire"],
+      "redistribution_status": "Photos de presse: non cleared; original models and materials required"
+    },
+    {
+      "reference": "Toyota ist, taxi jaune compact à hayon",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Taxi_at_Kinshasa,_DRC.jpg",
+      "author": "Rahul Tilak",
+      "date": "2020-03-19",
+      "license_as_documented_in_supplied_concept": "CC BY-SA 4.0",
+      "photos": ["/workspace/wewa-assets/references/concept-page-17.png", "/workspace/wewa-import/extracted/Kit_Kinshasa_3D/Kit_Kinshasa_3D/references_visuelles/boulevard_2018.jpg"],
+      "dimensions_m": null,
+      "visual_traits": "Petite cinq portes haute et courte, hayon presque vertical; peinture jaune, vitres sombres, plaque et identification latérale. Usure variable; ne pas déduire tous les taxis d'un seul exemplaire."
+    },
+    {"reference": "Toyota Hilux double cabine 2012", "source_url": "https://commons.wikimedia.org/wiki/File:2012_Toyota_HiLux_(KUN26R_MY12)_SR5_4-door_utility_(2012-10-26)_01.jpg", "author": "OSX", "license_as_documented_in_supplied_concept": "Domaine public", "location_limit": "Photo australienne, référence de forme seulement"},
+    {"reference": "Toyota Land Cruiser Prado J150 2010", "source_url": "https://commons.wikimedia.org/wiki/File:TLC_Prado_150.jpg", "author": "Yuri AMbox", "license_as_documented_in_supplied_concept": "CC BY-SA 3.0", "location_limit": "Photo russe, référence de forme seulement"}
+  ],
+  "road_and_environment_observations": {
+    "inspected_images": ["/workspace/wewa-import/extracted/Kit_Kinshasa_3D/Kit_Kinshasa_3D/references_visuelles/boulevard_2018.jpg", "/workspace/wewa-import/extracted/Kit_Kinshasa_3D/Kit_Kinshasa_3D/references_visuelles/commerce_limete_2020.jpg", "/workspace/wewa-assets/references/concept-page-22.png"],
+    "observed": ["Boulevard: chaussée sombre large et sèche, flot serré de taxis jaunes mêlés de pick-up et SUV, lampadaires courbes, façades d'immeubles, panneaux publicitaires.", "Devanture Limete: surface grise poussiéreuse et accès irréguliers, tôles et bardages, portails métalliques, câbles aériens, petits camions et livraisons.", "Photo reportage minibus 2023: rive de chaussée terreuse et dégradée, caniveau ouvert profond visible, bord irrégulier; cette photo ne suffit pas pour une localisation/cote de rue."],
+    "user_testimony_to_implement": ["Voix de receveurs annonçant arrêts et trajets, klaxons et moteurs en couches", "Taquineries entre taxis, receveurs et minibus, sans hostilité systématique", "Groupes de piétons qui s'élancent ensemble, comportements anticipables et freinage du trafic", "Rues non goudronnées étroites, nids de poule, eau en saison des pluies et caniveaux"],
+    "limits": "Ne pas appliquer ces états à toutes les rues de Gombe. Aucun relevé satellite haute résolution ni profondeur de nid de poule mesurée. Géographie détaillée et époque à valider par le propriétaire qui connaît Kinshasa.",
+    "existing_credits_index": "/workspace/wewa-import/extracted/Kit_Kinshasa_3D/Kit_Kinshasa_3D/references_visuelles/index.json",
+    "existing_sources_registry": "/workspace/wewa-import/extracted/Kit_Kinshasa_3D/Kit_Kinshasa_3D/sources.json"
+  },
+  "imagined_scene_register_for_user_review": [
+    {"id": "SCENE-01", "title": "Le receveur et le bon arrêt", "proposal": "Minibus arrêté hors de la trajectoire immédiate; receveur appelle une destination validée, un taxi répond par une plaisanterie française provisoire. Un geste du receveur annonce le départ.", "review_needed": ["Arrêts et lignes plausibles", "Texte et prononciation", "Placement du receveur"], "lingala_status": "No invented Lingala; user terms babele la / bazo belela retained as oral references requiring spelling/context validation."},
+    {"id": "SCENE-02", "title": "La traversée en groupe", "proposal": "Trois à cinq piétons se regroupent au bord, regardent le trafic puis partent ensemble; un premier geste et un ralentissement des voitures annoncent l'événement. Une issue libre et un arrêt sûr restent possibles.", "review_needed": ["Gestes, vêtements et rythme locaux", "Fréquence et emplacement"]},
+    {"id": "SCENE-03", "title": "Le passage après la pluie", "proposal": "Raccourci latéral étroit avec sol terreux humide, un creux rempli d'eau visible et caniveau sur un côté. La moto ralentit, la suspension et un bruit de projection réagissent; une route principale reste disponible.", "review_needed": ["Rue candidate exacte", "Saison et niveau d'eau", "État réel et largeur du caniveau"]},
+    {"id": "SCENE-04", "title": "Le garage et la rumba lointaine", "proposal": "Garage fictif avec pneus exposés, pompe, outils et tabouret; conversation taquine, moteur coupé, guitare originale évoquant la rumba provenant d'un commerce hors champ.", "review_needed": ["Nom du garage et commerçant", "Voix et tournures", "Instrumentation et niveau sonore"]}
+  ],
+  "reuse_policy": "Tous les chemins ci-dessus sont des références de travail hors repo. Les visuels constructeur/presse ne sont pas à publier dans le jeu ni la prévisualisation. Créer des modèles et textures originaux; garder les crédits et qualifier les licences avant toute redistribution de photos CC. Aucun audio commercial réutilisé.",
+  "open_questions_nonblocking": ["Dimensions et variante exacte du minibus T1", "Hauteur de selle et diamètre pneu réel de la moto", "Validation locale des stations/itinéraires et orthographe lingala", "Provenance et droits à revalider avant publication de toute photo"]
+}

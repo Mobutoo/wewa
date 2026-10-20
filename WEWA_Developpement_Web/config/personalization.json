@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "v0": "explicit_mode_choice_only",
+  "remote_telemetry_v0": false,
+  "local_events": [
+    "run_start",
+    "run_end",
+    "mode",
+    "active_duration",
+    "deliveries",
+    "score",
+    "collisions",
+    "camera",
+    "assist_choice"
+  ],
+  "later_rules": {
+    "min_valid_sessions": 5,
+    "offer_training_after_consecutive_failures": 3,
+    "price_based_on_failures": false,
+    "hidden_ranked_difficulty_changes": false
+  },
+  "resettable": true
+}

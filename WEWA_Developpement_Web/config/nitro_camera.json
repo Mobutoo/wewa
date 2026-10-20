@@ -1,0 +1,53 @@
+{
+  "version": "1.0",
+  "status": "design_not_implemented",
+  "boost": {
+    "name": "NITRO",
+    "hold_to_activate": true,
+    "keyboard": "Shift",
+    "touch": "nitro",
+    "acceleration_multiplier": 1.5,
+    "top_speed_multiplier": 1.25,
+    "capacity": 100,
+    "drain_per_second": 33.333333,
+    "recharge_per_second": 5,
+    "recharge_delay_seconds": 2,
+    "reactivation_delay_seconds": 1,
+    "token_refill": 20,
+    "cancel_on": [
+      "brake",
+      "pause",
+      "blur",
+      "crash",
+      "dismount"
+    ],
+    "real_money_refill": false
+  },
+  "camera": {
+    "default": "third_person",
+    "available": [
+      "third_person",
+      "first_person"
+    ],
+    "toggle_key": "C",
+    "persist_choice": true,
+    "automatic_switch": false,
+    "vertical_fov_degrees": {
+      "third_person": 60,
+      "third_person_boost": 68,
+      "first_person": 65,
+      "first_person_boost": 71
+    }
+  },
+  "effects": {
+    "blur": "peripheral_radial",
+    "blur_optional": true,
+    "low_mobile_blur_default": false,
+    "fov_optional": true,
+    "shake_optional": true,
+    "comfort_preset": true,
+    "ramp_in_seconds": 0.2,
+    "ramp_out_seconds": 0.35
+  },
+  "tuning": "initial_hypotheses_to_playtest"
+}
