@@ -8,7 +8,7 @@
     "art_accepted": false
   },
   "scope_note": "Initial decomposition of the first motorcycle component, not a completed component inventory of all92 source families.",
-  "active_component": "MOTO-TYRE-FRONT-001",
+  "active_component": "MOTO-RIM-FRONT-001",
   "components": [
     {
       "id": "MOTO-TYRE-FRONT-001",
@@ -46,18 +46,49 @@
         "optimized_variant_rechecked": false,
         "user_art_accepted": false
       },
-      "next_action": "Find legible front/side/tread references for a documented tyre variant before reconstructing its profile and grooves; log any remaining estimates.",
+      "next_action": "Refine candidate tread/profile and calibrate documentary views; remains unaccepted while rim candidate is inspected.",
       "candidate_source": "../../assets-src/moto-components/front-tyre/README.md",
       "candidate_review": "../reviews/front-tyre-v1/README.md"
+    },
+    {
+      "id": "MOTO-RIM-FRONT-001",
+      "parent_source_ids": [
+        "AS-049",
+        "CON-001"
+      ],
+      "name": "Jante avant Wewa à cinq branches moulées",
+      "state": "editable_casting_candidate_rework_not_accepted",
+      "candidate_source": "../../assets-src/moto-components/front-rim/README.md",
+      "candidate_review": "../reviews/front-rim-v1/README.md",
+      "component_workflow": "../workflow/records/moto-rim-front-001.json",
+      "published_reference": {
+        "nominal_bead_seat_diameter_m": 0.4318,
+        "observed_cast_spokes": 5
+      },
+      "unknown": [
+        "Exact RDC wheel part revision",
+        "Cross-section and tyre bead fit",
+        "Spoke root radii",
+        "Axle/bearing dimensions",
+        "Valve geometry"
+      ],
+      "gates": {
+        "references_sufficient": false,
+        "shape_comparison_passed": false,
+        "material_comparison_passed": false,
+        "engine_comparison_passed": false,
+        "optimized_variant_rechecked": false,
+        "user_art_accepted": false
+      }
     }
   ],
   "coding_or_modeling_started_after_feedback": true,
   "rider_gate": "Deferred until motorcycle artistic reception",
   "research": "../MOTORCYCLE_RECONSTRUCTION_RESEARCH.md",
-  "planning_status": "style2_selected_initial_isolated_tyre_candidate_built_not_accepted",
-  "next_preparatory_step": "Landmark annotation and per-image camera fitting before detailed component reconstruction.",
+  "planning_status": "style2_wewa_branding_isolated_tyre_and_rim_candidates_not_accepted",
+  "next_preparatory_step": "Review cast junctions and estimated tyre interface; documentary camera calibration and detail dimensions remain open.",
   "general_workflow": "../workflow/README.md",
   "documentary_supplement": "../workflow/RESEARCH.md",
-  "detailed_component_record": "../workflow/records/moto-tyre-front-001.json",
+  "detailed_component_record": "../workflow/records/moto-rim-front-001.json",
   "assembly_decomposition": "../workflow/motorcycle-assembly.json"
 }

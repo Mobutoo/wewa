@@ -22,3 +22,7 @@ Conserver caméra, transformée de couleur et paramètres de lumière dans la so
 G0 référence cette direction ; G3 examine la forme grise ; G4 compare les matières sous les deux éclairages ; G6 compare l’export dans le moteur ; G8 conserve la décision sur la pièce et sa révision exacte. La réception du style ne ferme aucun de ces passages de fabrication. La moto reste seule avant conducteur.
 
 La référence générée choisie est conservée dans `direction/style-02-cinematographique.png` avec son empreinte et son statut dans `direction/provenance.json`. Elle représente une intention de lumière et de matière, pas un relevé de Gombe ni une capture du moteur.
+
+## Identité sur la moto
+
+Sur instruction utilisateur, le réservoir porte désormais **WEWA** à la place de Boxer. Les sources documentaires conservent leur nom constructeur ; le marquage du véhicule du jeu et les futures textures de réservoir utilisent Wewa. Le visuel courant est `direction/motorcycle-wewa-style-02-generated-reference.png`. Le marquage latéral125HD et la direction cinématographique sont conservés.

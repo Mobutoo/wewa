@@ -60,8 +60,10 @@ Pour une pièce mécanique, contrôler les cotes publiées et les raccords ; mes
 
 Une modification de variante, de caméra, de forme ou de texture invalide les preuves qui en dépendent. Noter les passages à refaire et conserver l’historique. Ne pas réutiliser une réception d’une ancienne révision pour un export différent. Contrôle automatique, revue artistique et qualification Safari physique sont trois résultats séparés.
 
+Faire un export évalué et un contrôle technique sans rendu avant les vues coûteuses : présence des pièces, sections, orientation, connexions et affectation effective des matériaux. Vérifier les buffers exportés, pas seulement les objets de construction ou les noms de matériaux dans la source. Un remeshing ou un export sans modificateurs peut supprimer des informations sans erreur de format. La [jante avant](../../assets-src/moto-components/front-rim/README.md) fournit un passage `--views none`, puis des contrôles indépendants source/GLB ; les captures moteur et la revue artistique viennent ensuite.
+
 ## Outils et limites actuels
 
 Blender, outils de métadonnées/PDF, Python et glTF servent à préparer et fabriquer les sources ; Babylon.js sert au contrôle réel du jeu. fSpy/COLMAP restent des aides conditionnelles à la qualité des prises de vue. Le pipeline ne dépend pas d’un logiciel payant cité dans un article, ni d’un générateur automatique censé inventer les parties manquantes. Aucun nouveau logiciel payant ou matériel n’est acheté.
 
-Le plan est applicable aux familles du dossier, mais leur recherche spécifique et leur décomposition restent à exécuter. Aujourd’hui : documentation et workflow produits ; aucune nouvelle calibration, géométrie ou matière reçue. Prochain livrable moto : repères annotés, guides et caméras comparés, puis pneu avant lorsque ses inconnues critiques seront cadrées.
+Le plan est applicable aux familles du dossier, mais leur recherche spécifique et leur décomposition restent à exécuter. Aujourd’hui : documentation, workflow, [pneu candidat](records/moto-tyre-front-001.json) et [jante candidate](records/moto-rim-front-001.json) ; aucune calibration complète ou réception artistique acquise. Prochain travail : comparaison des raccords, caméras documentaires et sections incertaines, puis flasque et axe. La moto seule précède toujours le conducteur.

@@ -6,7 +6,7 @@ Date : 20 octobre 2026. Direction choisie : [réalisme cinématographique](../..
 
 Une pièce isolée avec section creuse, épaules/flancs/talons, rainures géométriques, UV, caoutchouc procédural et guides d’axes. Un export d’inspection distinct permet le contrôle dans Babylon.js. Aucun conducteur, aucune nouvelle moto globale assemblée et aucun remplacement du modèle public.
 
-Les images `neutral-quarter.png`, `neutral-side.png`, `tread-close.png` et `cinematic-quarter.png` sont des rendus **réels Blender** de cette géométrie. Elles ne proviennent pas du générateur d’images. La [moto seule en style2](../../direction/motorcycle-style-02-generated-reference.png) est, elle, une référence artistique générée ; elle ne démontre pas qu’une moto3D complète existe.
+Les images `neutral-quarter.png`, `neutral-side.png`, `tread-close.png` et `cinematic-quarter.png` sont des rendus **réels Blender** de cette géométrie. Elles ne proviennent pas du générateur d’images. La [moto seule en style2](../../direction/motorcycle-wewa-style-02-generated-reference.png) est, elle, une référence artistique générée ; elle ne démontre pas qu’une moto3D complète existe.
 
 ## Comparaison et défauts
 
@@ -25,4 +25,4 @@ Les comparaisons aux sources sont limitées par les masques de détourage, l’o
 
 ## Suite
 
-Recevoir la direction de rendu de la pièce, résoudre ou borner les inconnues visibles, puis reprendre le calage et la sculpture avant la jante et le moyeu. La moto entière et son conducteur ne sont pas déclarés fabriqués par cette livraison intermédiaire.
+Le pneu reste à reprendre : résoudre ou borner les inconnues visibles puis reprendre le calage et la sculpture. La [jante candidate](../front-rim-v1/README.md) permet maintenant un contrôle provisoire du raccord sans réception du pneu. La moto entière et son conducteur ne sont pas déclarés fabriqués par cette livraison intermédiaire.

@@ -10,12 +10,20 @@ const key=new DirectionalLight('key',new Vector3(-1,-1,.5),scene);key.intensity=
 const floor=MeshBuilder.CreateGround('inspection floor',{width:6,height:6},scene);floor.position.y=-.002;const mat=new StandardMaterial('floor',scene);mat.diffuseColor=new Color3(.22,.24,.26);mat.specularColor=new Color3(.02,.02,.02);floor.material=mat;
 scene.environmentTexture=new HDRCubeTexture('/app/public/materials/kloppenheim_06_puresky_1k.hdr',scene,128,false,true,false,true);
 scene.environmentIntensity=.45;
-const imported=await SceneLoader.ImportMeshAsync('','/assets-src/moto-components/front-tyre/','front-tyre-inspection.glb',scene);
+const asset=new URLSearchParams(location.search).get('asset')||'tyre';
+const assets={tyre:['front-tyre','front-tyre-inspection.glb','pneu avant seul','Sculpture et dimensions gonflées estimées ; fournisseur inconnu. Le micrograin procédural Blender n’est pas encore cuit pour cet export.'],rim:['front-rim','front-rim-inspection.glb','jante avant seule','Cinq branches moulées. Diamètre nominal 17 pouces ; section, moyeu et valve estimés. Export réduit pour inspection, sans réception artistique.'],wheel:['front-rim','front-wheel-fit-inspection.glb','raccord pneu et jante avant','Contrôle visuel du raccord entre deux pièces candidates. Le flasque de frein et l’axe restent à fabriquer ; étanchéité et montage mécanique non validés.']};
+if(!assets[asset])throw new Error('Unknown inspection asset');
+const [folder,file,label,details]=assets[asset];
+document.querySelector('h1').textContent='Viva Wewa · '+label;
+canvas.setAttribute('aria-label','Vue 3D : '+label);
+document.querySelector('#details').textContent='Glisser pour tourner · molette ou pincement pour zoomer. '+details;
+document.querySelector('[data-view="tread"]').textContent=asset==='tyre'?'Bande de roulement':'Vue de tranche';
+const imported=await SceneLoader.ImportMeshAsync('','/assets-src/moto-components/'+folder+'/',file,scene);
 const meshes=imported.meshes.filter(m=>m.getTotalVertices()>0);let cinematic=false;
 const views={quarter:[-1.1,1.14,1.25],side:[0,Math.PI/2,1.2],tread:[-Math.PI/2,1.5,.9]};
 function view(name){[camera.alpha,camera.beta,camera.radius]=views[name];camera.setTarget(new Vector3(0,.29,0));}
 document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>view(b.dataset.view));
 document.querySelector('#light').onclick=()=>{cinematic=!cinematic;key.diffuse=cinematic?new Color3(1,.72,.45):new Color3(1,1,1);fill.diffuse=cinematic?new Color3(.7,.8,1):new Color3(1,1,1);document.querySelector('#light').textContent=cinematic?'Lumière neutre':'Lumière cinématographique';};
 status.textContent='Pièce chargée · inspection locale, hors jeu public';
-window.__ASSET_LAB__={scene,engine,camera,view,report:()=>({meshes:meshes.length,vertices:meshes.reduce((s,m)=>s+m.getTotalVertices(),0),indices:meshes.reduce((s,m)=>s+m.getTotalIndices(),0),textures_ready:scene.getWaitingItemsCount()===0,renderer:engine.getGlInfo(),art_accepted:false,physical_iphone_tested:false,procedural_micrograin_baked:false})};
+window.__ASSET_LAB__={scene,engine,camera,view,report:()=>({asset,file,meshes:meshes.length,vertices:meshes.reduce((s,m)=>s+m.getTotalVertices(),0),indices:meshes.reduce((s,m)=>s+m.getTotalIndices(),0),textures_ready:scene.getWaitingItemsCount()===0,renderer:engine.getGlInfo(),art_accepted:false,physical_iphone_tested:false,procedural_micrograin_baked:false})};
 engine.runRenderLoop(()=>scene.render());window.addEventListener('resize',()=>engine.resize());

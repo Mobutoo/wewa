@@ -7,7 +7,7 @@
   ],
   "scope": "initial decomposition; visible hardware may need separate child records, not25 completed assets",
   "reference": "../library/motorcycle-reference-views.json",
-  "active_component": "MOTO-TYRE-FRONT-001",
+  "active_component": "MOTO-RIM-FRONT-001",
   "driver": "deferred_until_motorcycle_user_reception",
   "whole_bike_art_accepted": false,
   "components": [
@@ -27,7 +27,7 @@
         "tread/sidewall",
         "inflated section"
       ],
-      "state": "research_not_fabricated",
+      "state": "isolated_candidate_rework_not_accepted",
       "record": "records/moto-tyre-front-001.json"
     },
     {
@@ -43,8 +43,8 @@
         "rim cross-section",
         "spoke junctions"
       ],
-      "state": "research_not_fabricated",
-      "record": null
+      "state": "editable_casting_candidate_under_inspection",
+      "record": "records/moto-rim-front-001.json"
     },
     {
       "order": 3,
@@ -58,8 +58,9 @@
         "outside hub dimensions",
         "brake panel geometry"
       ],
-      "state": "research_not_fabricated",
-      "record": null
+      "state": "integral_cast_housing_candidate_only_brake_plate_bearings_axle_not_fabricated",
+      "record": null,
+      "related_candidate_record": "records/moto-rim-front-001.json"
     },
     {
       "order": 4,
@@ -405,5 +406,6 @@
       "state": "research_not_fabricated",
       "record": null
     }
-  ]
+  ],
+  "game_branding": "WEWA on fuel tank; manufacturer labels retained in documentary sources only"
 }

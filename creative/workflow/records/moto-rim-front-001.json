@@ -1,0 +1,341 @@
+{
+  "schema": 1,
+  "id": "MOTO-RIM-FRONT-001",
+  "label": "Jante avant Wewa — référence mécanique RDC",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Five-spoke front wheel observed on RDC reference; exact cast-wheel part revision unknown",
+    "variant_confirmed": false,
+    "usage": "Front wheel component; isolated geometry and tyre interface inspection",
+    "review_distances_m": [
+      0.35,
+      0.8,
+      2
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01",
+    "D04",
+    "D02"
+  ],
+  "claims": [
+    {
+      "id": "RIM-BEAD-SEAT",
+      "property": "nominal_bead_seat_diameter",
+      "value": 0.4318,
+      "unit": "m",
+      "source": "D01",
+      "locator": "17in rim specification converted to metres",
+      "status": "documented_exact_variant",
+      "adopted": true,
+      "scope": "Nominal tyre bead-seat diameter, not rim outside diameter"
+    },
+    {
+      "id": "RIM-SPOKES",
+      "property": "cast_spoke_count",
+      "value": 5,
+      "unit": null,
+      "source": "D01",
+      "locator": "alloy-wheels.webp and rotation00/03 inspected",
+      "status": "documented_exact_variant",
+      "adopted": true,
+      "scope": "Visible front-wheel branch count"
+    },
+    {
+      "id": "RIM-WIDTH-RELATED",
+      "property": "related_UG_front_rim_width",
+      "value": 0.03556,
+      "unit": "m",
+      "source": "D04",
+      "locator": "PDF sheet43, UG5gear1.40x17 front wheel",
+      "status": "documented_related_variant",
+      "adopted": false,
+      "scope": "Not certified for current RDC wheel"
+    },
+    {
+      "id": "RIM-WORKING-WIDTH",
+      "property": "candidate_bead_seat_width",
+      "value": 0.044,
+      "unit": "m",
+      "source": "D04",
+      "locator": "Existing candidate tyre bead separation44mm; related catalogue value retained separately, not adopted",
+      "status": "estimated",
+      "adopted": true,
+      "method": "Working fit to22mm half-separation of the existing estimated tyre bead; related1.40in catalogue dimension not adopted. Does not establish true RDC section or seal.",
+      "uncertainty": {
+        "range_m": [
+          0.035,
+          0.047
+        ]
+      },
+      "scope": "Working source geometry only, not confirmed manufacturer dimension"
+    },
+    {
+      "id": "RIM-DRUM-CAVITY",
+      "property": "candidate_drum_cavity_radius",
+      "value": 0.065,
+      "unit": "m",
+      "source": "D02",
+      "locator": "Related BM125 global brake size130mm",
+      "status": "estimated",
+      "adopted": true,
+      "method": "Conditional related-model brake size, not outer hub diameter",
+      "uncertainty": "Exact RDC part and brake drum measurement remain unknown",
+      "scope": "Casting cavity hypothesis, not a modelled operational brake"
+    }
+  ],
+  "views": [
+    {
+      "name": "isolated-side",
+      "camera_location_m": [
+        1.52,
+        0,
+        0.35
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.29
+      ],
+      "lens_mm": 70,
+      "includes_linked_tyre": false,
+      "kind": "studio_inspection_not_calibrated_documentary_camera"
+    },
+    {
+      "name": "isolated-quarter",
+      "camera_location_m": [
+        0.82,
+        -1.1,
+        0.74
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.29
+      ],
+      "lens_mm": 70,
+      "includes_linked_tyre": false,
+      "kind": "studio_inspection_not_calibrated_documentary_camera"
+    },
+    {
+      "name": "joint-close",
+      "camera_location_m": [
+        0.34,
+        -0.45,
+        0.55
+      ],
+      "camera_target_m": [
+        0,
+        -0.075,
+        0.43
+      ],
+      "lens_mm": 85,
+      "includes_linked_tyre": false,
+      "kind": "studio_inspection_not_calibrated_documentary_camera"
+    },
+    {
+      "name": "tyre-fit-neutral",
+      "camera_location_m": [
+        0.95,
+        -1.38,
+        0.84
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.29
+      ],
+      "lens_mm": 70,
+      "includes_linked_tyre": true,
+      "kind": "studio_inspection_not_calibrated_documentary_camera"
+    },
+    {
+      "name": "tyre-fit-cinematic",
+      "camera_location_m": [
+        0.95,
+        -1.38,
+        0.84
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.29
+      ],
+      "lens_mm": 70,
+      "includes_linked_tyre": true,
+      "kind": "studio_inspection_not_calibrated_documentary_camera"
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "RIM-VARIANT",
+      "description": "Exact wheel part revision and tube/tubeless interface unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1"
+      ],
+      "next_research": "Confirm part against RDC views or same-variant catalogue"
+    },
+    {
+      "id": "RIM-PROFILE",
+      "description": "Detailed cross-section and spoke root radii estimated",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G3"
+      ],
+      "next_research": "Document dimensions, inspect isolated section and real closeups"
+    },
+    {
+      "id": "RIM-CAMERA",
+      "description": "Documentary photo cameras unresolved",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G2"
+      ],
+      "next_research": "Fit independent axle/rim landmarks across views"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Initial part decomposition and review distances exist; exact part identity and agreed visual tolerances remain unresolved.",
+      "reviewed_at": null
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact part revision and cross-section remain unconfirmed; estimates explicitly bounded.",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Studio inspection cameras exist; documentary photo cameras not calibrated.",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "editable_source",
+          "path": "../../../assets-src/moto-components/front-rim/front-rim-v1.blend",
+          "sha256": "77f351d89b29f39dc435b434278bb556cff41a8c509edccd979dc9c8c1173c3a",
+          "revision": "front-rim-v1"
+        },
+        {
+          "kind": "isolated_comparison",
+          "path": "../../../creative/reviews/front-rim-v1/isolated-quarter.png",
+          "sha256": "40e064a7c7b70426540f67f332deaf71c7ef2ad5970ba1163ea0d9ce021f13d7",
+          "revision": "front-rim-v1"
+        }
+      ],
+      "reason": "Closed connected casting and exported five spokes checked; photographed silhouette and root radii remain unresolved.",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "surface_or_sound_comparison",
+          "path": "../../../creative/reviews/front-rim-v1/joint-close.png",
+          "sha256": "2416c95e437787f1d47a7f5821e81182c398420cc18982fe8734b658b04f9f05",
+          "revision": "front-rim-v1"
+        }
+      ],
+      "reason": "Machined-face assignment restored after remeshing and present in real source/export; finish comparison and artistic reception open.",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "motion_or_interface_check",
+          "path": "../../../creative/reviews/front-rim-v1/tyre-fit-neutral.png",
+          "sha256": "534bfec331d6f710b8690ed0a00ac82b141da2b764a1902829c2146b8d037c85",
+          "revision": "front-rim-v1"
+        }
+      ],
+      "reason": "Nominal bead gap corrected in estimated candidate sections; exact RDC interface, interference and seal not validated.",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "real_runtime_comparison",
+          "path": "../../../creative/reviews/front-rim-v1/engine-wheel-quarter.png",
+          "sha256": "5ce962fed9206dc3b4b29a995c3c64eb4f40873eb7b8dbf1ba5e410af349dce1",
+          "revision": "front-rim-v1"
+        },
+        {
+          "kind": "technical_export_check",
+          "path": "../../../creative/reviews/front-rim-v1/geometry-check.json",
+          "sha256": "1581d5ed89a7ed7c64c32be8d80a534161534d6b038049618e33b0fe6f06c230",
+          "revision": "front-rim-v1"
+        }
+      ],
+      "reason": "Actual Babylon.js loads and captures verified; runtime artistic comparison and physical Safari qualification remain open.",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "before_after_comparison",
+          "path": "../../../creative/reviews/front-rim-v1/source-geometry-check.json",
+          "sha256": "385c9739e0f193c7ee1cf21e0b8473736e2ecf238a09df74efe819f1dae23a17",
+          "revision": "front-rim-v1"
+        }
+      ],
+      "reason": "Reduced inspection surface checked with sparse directional distances; representative mobile cost and finished LOD not measured.",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": true,
+  "source_revision": "front-rim-v1",
+  "export_revision": "front-rim-inspection-v1",
+  "next_action": "Inspect cast-spoke/rim junctions and tyre clearance; brake plate, bearings, axle and fork remain separate future work.",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/front-rim/README.md",
+  "candidate_review": "../../reviews/front-rim-v1/README.md",
+  "graphic_style": "../../GRAPHIC_STYLE.md"
+}

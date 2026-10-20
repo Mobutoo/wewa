@@ -1,6 +1,6 @@
 {
   "idea_id": "27f8ffb12df14ff79c6e0f13cbd1cf91",
-  "revision": 18,
+  "revision": 19,
   "prd": {
     "acceptance_criteria": [
       "Petite moto utilitaire Wewa ; clavier ZQSD/WASD et tactile.",
@@ -151,7 +151,7 @@
         "source_types": "Official documentation, first-person artist accounts, forum exchange and public course outline; no paid lessons or tools purchased.",
         "state": "researched_plan_not_executed"
       },
-      "next_lot": "Landmark and camera verification pack using dimensioned guides, then a single detailed tyre when reference readiness allows; no rider until motorcycle reception.",
+      "next_lot": "Compare cast junctions and estimated tyre interface against documentary sources; brake plate and axle next, rider after motorcycle reception. Tyre remains unaccepted.",
       "production_inventory": "92 source catalogue entries AS-001–AS-092 plus 67 overlapping concept traceability rows; previous 112 preparatory families were incomplete. creative/DOSSIER_ASSET_LIST.md and creative/library/fabrication-register.json.",
       "public_site_version_unchanged": 3,
       "public_source_commit_unchanged": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
@@ -194,17 +194,17 @@
         "distinct_model_count": null,
         "note": "Overlapping source rows routed to recipes; not159 distinct or fabricated models. Family-specific research/decomposition remains pending outside current motorcycle preparation."
       },
-      "current_component": "creative/workflow/records/moto-tyre-front-001.json",
+      "current_component": "creative/workflow/records/moto-rim-front-001.json",
       "date": "2026-10-20",
       "documentary_research": "creative/workflow/RESEARCH.md",
       "family_recipes": "creative/workflow/RECIPES.md",
       "motorcycle_decomposition": "creative/workflow/motorcycle-assembly.json",
-      "next_action": "Review and refine the isolated tyre against documentary views; resolve camera/tread uncertainty before receiving it, then continue wheel components; rider after motorcycle reception.",
+      "next_action": "Compare cast junctions and estimated tyre interface against documentary sources; brake plate and axle next, rider after motorcycle reception. Tyre remains unaccepted.",
       "production": {
-        "active_component": "MOTO-TYRE-FRONT-001",
+        "active_component": "MOTO-RIM-FRONT-001",
         "art_accepted": false,
         "camera_calibration_executed": false,
-        "current_candidate_status": "First isolated tyre candidate rendered and under rework; no component art acceptance.",
+        "current_candidate_status": "Isolated tyre and cast-rim candidates under rework, no component art acceptance.",
         "motorcycle_groups": 25,
         "new_geometry": true,
         "previous_lot": "hero-lot01 remains rejected in all views",
@@ -291,6 +291,13 @@
       },
       "game_title": "Viva Wewa",
       "implementation_status": "Démarrage autorisé ; aucune fonctionnalité nouvelle déclarée terminée",
+      "motorcycle_branding": {
+        "documentary_names_unchanged": true,
+        "future_3d_tank": "Use WEWA; tank not yet fabricated in current wheel component lot",
+        "generated_target": "creative/direction/motorcycle-wewa-style-02-generated-reference.png",
+        "tank_wordmark": "WEWA",
+        "user_instruction": "Remplacer Boxer par Wewa sur la moto"
+      },
       "review_register": {
         "audio": "Synthèse originale pour moteur, klaxons et maquette rythmique ; aucun morceau connu réutilisé",
         "dialogue_status": "Brouillons français inventés, pas de traduction lingala prétendument authentique",
@@ -443,7 +450,8 @@
       "# WEWA - Cadrage R9\n\n## WEWA / LE CADRAGE ACTUEL\n\nRévision 9 - 20 octobre 2026 - Document de départ pour Codex\n\n### La promesse\n\nDans Kinshasa, ta meilleure arme, c’est de connaître le passage. Petite moto Wewa, trafic lisible, choix d’itinéraire et conduite précise constituent le cœur du jeu. La ville, les personnages et la musique donnent du sens à cette maîtrise.\n\n### Ce qui est décidé\n\nAjouter Wewa Rush de 30 secondes ; conserver les livraisons et l’enquête narrative ; intégrer nitro, vue arrière et vue au guidon ; distinguer score, réputation et monnaie gagnée. Reprises narratives gratuites. Personnalisation fondée sur les préférences de jeu. Aucun paiement réel dans la V0.\n\n### Autorité des documents\n\nCes huit premières pages constituent le cadrage R9 et prévalent sur les formulations antérieures concernant modes, récit, caméras et reprises. Les 31 pages R8 qui suivent conservent les références de Kinshasa, véhicules, lieux, personnages, sources et économie générale. Elles sont identifiées comme annexe antérieure. Le détail nitro du précédent addendum reste valable sauf contradiction explicite.\n\n### État réel\n\nLe pilote Gombe comporte des volumes de bâtiments et de voirie, des données et des scripts. Aucune application jouable, conduite, mission, boutique ou mesure de FPS n’est encore livrée. Les nouveaux réglages sont des hypothèses de conception à éprouver. Le rendu photoréaliste et le classement parmi les meilleurs jeux restent des ambitions.\n\n## WEWA RUSH / 30 SECONDES\n\nUne boucle courte : choisir, transporter, livrer, recommencer\n\n### Règles de la première version\n\nAprès un compte à rebours 3-2-1, le joueur part déjà en mouvement et dispose de 30 secondes de simulation active. Ramasser un colis par passage dans une zone balisée ; capacité initiale de trois colis. Livrer dans une zone dédiée en roulant sous le seuil configurable de 15 km/h. Un dépôt consomme seulement les colis présents. Aucun arrêt obligatoire à un menu.\n\n### Score de départ à équilibrer\n\nChaque colis livré vaut 100 points × multiplicateur. Le multiplicateur démarre à 1, augmente de 0,25 après un dépôt propre et plafonne à 3. Un dépôt groupé utilise le même multiplicateur pour tous ses colis, puis augmente le multiplicateur une seule fois. Un passage technique validé rapporte 10 points, au maximum une fois par balise et par course. Le score est entier, arrondi à la fin de chaque événement.\n\n### Risque et fin de manche\n\nUne collision remet le multiplicateur à 1 et ralentit physiquement la moto ; un contact continu compte comme un seul incident. Les colis restent à bord en V0. À 30 secondes, aucun colis non livré ne marque de point ; aucun nouvel événement de score n’est accepté. Afficher score, colis livrés, record personnel et Rejouer. Pas de bonus pour heurter des personnes. Aucun prolongement payant en V0.\n\n### Équité et variété\n\nUne seule route et un trafic à graine fixe pour le premier Rush ; deux branches pour choisir entre trajet sûr et collecte supplémentaire. Les identifiants de colis et dépôts empêchent les doubles récompenses. Réinitialiser tout l’état au redémarrage. Une pause fige le temps en solo non classé. Plus tard, les défis classés partagent graine, règles et assistance ; aucune reprise ni adaptation cachée ne modifie un score classé.\n\n## NITRO / DEUX CAMÉRAS\n\nSensation de vitesse forte, obstacles toujours lisibles\n\n### Nitro arcade\n\nMaintenir Maj ou le bouton tactile NITRO. Jauge de 100 unités ; consommation 33,3 unités/s, soit environ trois secondes pleines. Accélération × 1,5 et vitesse maximale × 1,25 comme valeurs de départ. Recharge passive 5 unités/s après deux secondes sans activation ; jeton dédié +20 dans la limite de 100. Pas de nitro à l’arrêt ou en marche arrière. Freinage, pause, perte de focus et chute l’interrompent.\n\n### Effets de vitesse\n\nFlou radial surtout périphérique, vent, régime moteur renforcé et légère ouverture du champ de vision. Garder le centre et le HUD lisibles. Champ vertical proposé : 60° à 68° en vue arrière, 65° à 71° au guidon. Transitions de 0,2 s à l’entrée et 0,35 s au retour. Les effets n’augmentent pas la vitesse physique au-delà des paramètres du contrôleur.\n\n### Vue au guidon\n\nTouche C ou bouton caméra : bascule à tout moment entre poursuite et première personne, y compris sous nitro. Mains, guidon, compteur et réservoir visibles, horizon stabilisé. Même physique, mêmes récompenses et mêmes collisions dans les deux vues. Choix mémorisé ; aucune bascule forcée pendant une manœuvre. Modèles provisoires acceptés pour la V0.\n\n### Confort et performance\n\nFlou, secousses et variation du champ de vision réglables séparément. Mode Confort sans flou ni secousse. Flou désactivé par défaut sur le profil mobile modeste. Aucune exigence de miroirs temps réel. Collisions balayées et chargement anticipé testés à la vitesse nitro maximale. Les paramètres détaillés restent dans config/nitro_camera.json.\n\n## LE RÉCIT / UNE DISPARITION\n\nLe lien personnel motive le héros ; la célébrité amplifie l’enjeu\n\n### Déclencheur fictif\n\nUne personnalité attendue à Kinshasa doit participer à un événement. Une amie proche du héros travaille dans son équipe. Après un changement de véhicule, les deux femmes disparaissent. Le héros reçoit de son amie un message vocal interrompu ; un détail du taxi et sa connaissance des rues lui donnent une première piste. Il peut admirer la célébrité, mais cherche avant tout son amie.\n\n### Personnages et participation\n\nPour le prototype, utiliser une personnalité entièrement fictive, sans visage, voix ou biographie identifiables de Didi Stone. Didi Stone est conservée dans les notes comme proposition de collaboration à lui présenter, sans accord ni participation annoncés. Tout usage futur de son identité demanderait un cadrage de collaboration et un récit explicitement fictionnel. Aucun enlèvement réel n’est allégué.\n\n### Progression en chapitres\n\n1. Une livraison présente l’amie avant la disparition. 2. Le message déclenche une courte poursuite. 3. Le taxi disparaît ; un témoin ouvre l’enquête. 4. Une course utile permet d’obtenir un contact ou un accès. 5. Un indice mène vers un relais puis le port. 6. Le sauvetage résout le premier arc, avec une suite possible. Les lieux et distances restent soumis à validation du parcours.\n\n### Rythme et initiative des victimes\n\nL’amie laisse des indices et contribue à l’évasion ; la personnalité a aussi des décisions et une voix. Alterner tension, recherche, rencontre et respiration. Les livraisons annexes se placent pendant une attente ou servent directement l’enquête. Pas de cinquante courses sans rapport pendant une urgence immédiate. La V0 ne développe que l’introduction, une poursuite et un indice ; pas toute la campagne.\n\n## REJOUER / PROGRESSER / ACHETER\n\nUne économie compréhensible et une histoire accessible\n\n### Trois compteurs distincts\n\nScore de manche : performance et record, jamais dépensé. Réputation : contacts et missions, jamais vendue. Monnaie gagnée : personnalisation et équipements équilibrés. Les petits bonus récurrents doivent correspondre à une action ou un objectif clair ; éviter une multiplication de monnaies et des récompenses sans utilité.\n\n### Règles de reprise retenues\n\nCampagne : checkpoints gratuits, reprise proche de l’erreur. Rush V0 : tentatives gratuites illimitées, redémarrage immédiat, aucune seconde chance au-delà des 30 secondes. Après la V0, des événements peuvent utiliser des tickets gagnés en jeu et une reprise par jeton hors classement. Les reprises payantes obligatoires et les prix qui augmentent après un échec ne sont pas retenus.\n\n### Revenus envisagés\n\nCosmétiques, collections, épisodes annexes, packs de nouveaux défis et sponsoring naturel du décor. Les effets visuels de nitro peuvent être personnalisables, sans avantage mécanique. Les prix indicatifs de l’annexe R8 sont en USD, restent des hypothèses et doivent être validés avant vente. Pas de contrat de marque présumé. Toute boutique V0 est une démonstration sans encaissement.\n\n### Offres et options non engagées\n\nPrésenter contenu exact, aperçu et prix explicite ; proposer des articles correspondant aux goûts du joueur. Pas d’offre pendant la conduite ni après chaque échec. Les tentatives payantes facultatives restent une piste à réexaminer, pas une tâche de développement autorisée pour la V0. Pas de récompense aléatoire payante. Le revenu doit être suivi avec la satisfaction, les retours et les remboursements.\n\n## PERSONNALISATION / PRÉFÉRENCES\n\nAdapter les propositions sans modifier l’équité\n\n### Profils de jeu modifiables\n\nChronomètre : records et parcours techniques. Exploration : repères et raccourcis. Histoire : chapitres et dialogues. Personnalisation : livrées et accessoires. Temps disponible court : Rush. Ces catégories décrivent une préférence récente, pas la psychologie, la richesse ou la vulnérabilité de la personne. Le joueur peut choisir son mode sans recommandation.\n\n### Premières règles simples\n\nV0 : choix explicite entre Rush, livraison et histoire ; progression locale seulement. Plus tard : après au moins cinq sessions valides, proposer en priorité le mode le plus souvent choisi. Après trois échecs consécutifs, proposer entraînement ou assistance, sans achat associé. La proposition reste refusable et ne modifie pas silencieusement la difficulté d’une course classée.\n\n### Données et contrôle\n\nPrévoir des événements locaux minimaux : début et fin de course, mode, durée active, colis livrés, score, collisions, caméra et activation d’une aide. Ne pas enregistrer les touches brutes, les contacts ou les données privées du téléphone. Préférences réinitialisables. Un suivi distant éventuel fera l’objet d’un chantier séparé avec information et choix utilisateur ; aucune connexion analytique cachée en V0.\n\n### Essais et limites des références\n\nComparer des variantes clairement définies sur des groupes distincts lorsque l’audience le permet. Le support Tetris Mobile décrit des essais sur récompenses et prix ; cela ne prouve pas un profilage psychologique individuel. La recherche sur l’ajustement de difficulté ne garantit aucun gain pour WEWA. Nos premières règles sont des hypothèses produit à mesurer, pas un algorithme de monétisation déjà validé.\n\n## RYTHME / REJOUABILITÉ / PREUVES\n\nValider la qualité d’une course avant d’étendre les neuf zones\n\n### Trois durées complémentaires\n\nRush : 30 s pour la maîtrise et la revanche immédiate. Livraison express : cible de 2 à 4 min pour un trajet complet. Chapitre narratif : cible de 8 à 15 min plus tard, avec sauvegarde intermédiaire. La première V0 reste un petit ensemble de courses et une poursuite de 5 à 8 min, complété du Rush.\n\n### La rue devient un terrain de maîtrise\n\nDeux ou trois itinéraires ont des risques et avantages compréhensibles. Un carrefour doit donner une décision, pas une collision inévitable. Alterner densité, ouverture et climax. Trafic annoncé par gestes, roues, feux et sons. Garder l’humour, la musique et l’entraide ; Kinshasa ne se résume pas aux crimes. Prioriser moto, premier plan, signalétique et ambiance sonore.\n\n### Extension après validation\n\nFantôme personnel d’abord, puis fantômes d’amis avec conditions comparables, uniquement après le socle. Défis de quartier, variations de parcours et collections peuvent renouveler l’intérêt. Ne pas démarrer par un multijoueur temps réel, une ville complète ou une boutique complexe. Les classements publics exigent une validation des scores et des mesures contre la triche, absentes du prototype local.\n\n### Ce que l’on mesurera\n\nPetit panel qualitatif de 20 à 30 personnes, incluant des joueurs kinois : compréhension, incidents injustes, choix de trajet et relance spontanée. Puis, sur une audience suffisante : retour J1/J7, taux de fin de course, nombre de relances, stabilité et satisfaction. Définir les cohortes et distinguer retour volontaire et relance suggérée. Les essais ne démontrent pas à eux seuls un futur best-seller.\n\n## DÉMARRER DANS CODEX\n\nPriorité : une course agréable, reproductible et réellement jouable\n\n### Ordre opérationnel\n\nLire 00_LIRE_AVANT_DE_CODER.md puis PROMPT_REPRISE_CODEX.txt. Initialiser app/ et importer une cellule de Gombe ; réaliser le contrôleur et les collisions ; ajouter nitro et deux caméras ; réaliser Rush et le score ; ajouter livraison et courte poursuite. Mesurer la performance. Affiner ensuite art, personnages, musique et recommandations. Aucun paiement réel avant les tâches dédiées post-bêta.\n\n### Contrats vérifiables\n\nÀ 30 s, le Rush termine exactement une fois et ne compte plus de dépôt. Un colis ne rapporte qu’une fois. Rejouer réinitialise timer, jauge, trafic, inventaire et multiplicateur. La simulation produit les mêmes règles à 30 et 60 images/s. Pause et perte de focus ne laissent pas l’accélérateur bloqué. Les deux caméras partagent le même état du véhicule. Les dépendances du backlog doivent rester sans cycle.\n\n### Fichiers faisant autorité\n\nWEWA_Developpement_Web/docs/CADRAGE_R9.md ; config/rush.json ; config/nitro_camera.json ; config/personalization.json ; config/narrative.json ; backlog/tasks.json. Les fichiers context/ conservent les textes et exports ; la version R9 prévaut sur les descriptions historiques. Le plan de production est actualisé en version 1.2. Les fonctionnalités indiquées pending ne sont pas réalisées.\n\n### Références et annexes\n\nLa suite conserve le dossier R8 complet, avec ses crédits et ses références locales. Sources complémentaires relues le 20 octobre 2026 : support Tetris Mobile, « My rewards are different from someone else » ; Ascarza, Netzer et Runge, « Personalized game design for improved user retention and monetization in freemium games », DOI 10.1016/j.ijresmar.2025.01.006. Ces sources éclairent les tests ; elles ne prouvent pas la performance de WEWA.\n",
       "Reprends WEWA, jeu solo de petite moto à Kinshasa, dans ce dossier.\nLis AGENTS.md puis 00_LIRE_AVANT_DE_CODER.md. Dans WEWA_Developpement_Web, lis AGENTS.md, docs/CADRAGE_R9.md, docs/PLAN_DE_PRODUCTION.md (mise à jour 1.2), config/product.json, config/rush.json, config/nitro_camera.json, config/personalization.json, config/narrative.json et backlog/tasks.json.\nLe cadrage R9 prévaut sur les annexes et exports historiques. Si Ewutelo est disponible, lis l’idée 27f8ffb12df14ff79c6e0f13cbd1cf91 ; le contexte local suffit sinon.\nCrée app/ et commence W02 puis W03. Réutilise les modèles Gombe et les sources ; ne refais pas tout le dossier. Implémente ensuite contrôleur, collisions, nitro, vue arrière et au guidon ; puis Wewa Rush 30 secondes avec score, dépôt et relance gratuits. Conserve livraison et courte poursuite narrative pour fermer la V0. Respecte les dépendances ; W01 peut attendre des appareils physiques sans bloquer le socle web.\nLe récit utilise une amie du héros et une personnalité fictive. Didi Stone est uniquement une piste de collaboration, sans participation acquise ni visage utilisé dans le prototype. Reprises narratives gratuites. Aucun achat réel, paiement pour difficulté, profilage sensible, télémétrie distante cachée ou classement public dans la V0.\nTravaille par jalons jouables, tests exécutés et preuves. Ne déclare aucun FPS, photoréalisme ou succès commercial sans mesure. Si une vérification est impossible, note la limite et poursuis le travail faisable. Les 45 tâches actuelles font autorité ; les fonctionnalités nouvelles restent à programmer.\n",
       "SOCLE À PRÉSERVER : Géographie en neuf zones de jeu, routes et POI sourcés ; Gombe pilote. Petites motos Wewa, vieux Mercedes T1/207 jaunes et bleus, taxis jaunes, Hilux/Prado ; Hyundai Palisade comme référence visuelle, dotations gouvernementales non confirmées. Roulages ordinaires, alliés ou corrompus fictifs, robots documentés historiquement, convois et détours. Vendeurs, quados, marchés, nganda ntaba, concerts et rumba, sapeurs, écoles, maraîchers, fleuve et Brazzaville. Kuluna et réseaux criminels fictifs ; vie quotidienne positive et habitants variés. Monuments, Martyrs, Limete, Lumumba, Liberté, Zando, Tourisme et aéroport restent des références à valider spatialement. Publicités et produits avec marques fictives tant qu'aucun contrat n'existe. Petite moto et matériaux de premier plan prioritaires. V0 TypeScript/Babylon.js candidat, WebGL2, GLB par cellules de 128 m ; données et code séparés. Objectifs non mesurés : 30 FPS mobile, 60 PC, chargement progressif. 1 747 objets bâtis, 191 cellules, 351 GLB, hauteurs souvent estimées et recouvrements à contrôler. Aucun moteur, conduite, mission, paiement ou benchmark implémenté. Les documents intégraux, références, licences et géodonnées sont dans WEWA_Reprise_Codex.zip. Le concept R9 contient huit pages actuelles et 31 pages R8 de référence ; le plan 1.2 contient deux pages actuelles et 15 pages de référence. L'archive contient aussi nitro_camera.json, rush.json, personalization.json, narrative.json et 45 tâches. Les descriptions historiques cèdent devant R9.",
-      "Décisions utilisateur de lancement Viva Wewa : prévisualisation publique, iPhone 15/16, budget 0 €, motos réalistes selon références officielles, identité illustrée punchy/colorée, liberté créative sous relecture, ambiance sonore et vie de rue de Kinshasa. Le détail fait autorité dans creative_direction."
+      "Décisions utilisateur de lancement Viva Wewa : prévisualisation publique, iPhone 15/16, budget 0 €, motos réalistes selon références officielles, identité illustrée punchy/colorée, liberté créative sous relecture, ambiance sonore et vie de rue de Kinshasa. Le détail fait autorité dans creative_direction.",
+      "2026-10-20 — User requests WEWA tank lettering, regenerated solo target, and continued3D production. Generated branding target separate from actual editable cast-rim and tyre-fit candidates. Related1.40in rim width not certified RDC;44mm working width remains estimated. No art acceptance or public update."
     ],
     "goals": [
       "Livrer une V0 de 5 à 8 minutes avec conduite, livraison et poursuite de taxi.",
@@ -490,11 +498,84 @@
       "verification_scope": "Unit tests and real Chromium touch events; physical Safari approval pending."
     },
     "motorcycle_component_fabrication": {
+      "active_component": {
+        "art_accepted": false,
+        "construction": "Editable closed rim, five swept I-section cast spokes, hollow integral drum housing and separate estimated valve; linked existing tyre for fit inspection.",
+        "corrections": [
+          "Rounded casting junction surface instead of Boolean normal patches",
+          "44mm working rim width explicitly chosen to match the estimated tyre bead separation, not adopted as a manufacturer width",
+          "Evaluated export copy retains five actual cast spokes",
+          "Machined cavity/bearing material restored after voxel remeshing and checked on actual faces/buffers"
+        ],
+        "dimensions": {
+          "estimated_working_width_m": 0.044,
+          "nominal_bead_seat_diameter_m": 0.4318,
+          "observed_spokes": 5,
+          "related_catalogue_width_adopted": false,
+          "related_catalogue_width_m": 0.03556
+        },
+        "exports": [
+          "assets-src/moto-components/front-rim/front-rim-inspection.glb",
+          "assets-src/moto-components/front-rim/front-wheel-fit-inspection.glb"
+        ],
+        "generator": "assets-src/moto-components/front-rim/build.py",
+        "id": "MOTO-RIM-FRONT-001",
+        "limits": [
+          "Exact RDC wheel part and section unconfirmed",
+          "Working width matches estimated tyre bead separation, not a manufacturer section or certified seal",
+          "Spoke roots, drum cavity, bearing and valve dimensions estimated",
+          "Photo cameras not calibrated",
+          "No mobile LOD or physical iPhone qualification",
+          "Brake plate, axle and complete motorcycle not fabricated"
+        ],
+        "no_render_preflight": "tools/check_rim_preflight.py",
+        "parameters": "assets-src/moto-components/front-rim/parameters.json",
+        "review": "creative/reviews/front-rim-v1/README.md",
+        "review_url": "https://github.com/Mobutoo/wewa/blob/main/creative/reviews/front-rim-v1/README.md",
+        "source": "assets-src/moto-components/front-rim/front-rim-v1.blend",
+        "status": "isolated_casting_candidate_rework_not_accepted",
+        "technical_verification": {
+          "art_accepted": false,
+          "browser_assets": [
+            "rim",
+            "wheel"
+          ],
+          "connected_casting_shells": 1,
+          "exports": [
+            {
+              "file": "assets-src/moto-components/front-rim/front-rim-inspection.glb",
+              "glTF_errors": 0,
+              "glTF_warnings": 0,
+              "triangles": 164148
+            },
+            {
+              "file": "assets-src/moto-components/front-rim/front-wheel-fit-inspection.glb",
+              "glTF_errors": 0,
+              "glTF_warnings": 0,
+              "triangles": 462348
+            }
+          ],
+          "material_faces": {
+            "Machined drum and bearing seat": 74141,
+            "Silver coating on cast alloy - working reference": 1280001
+          },
+          "non_manifold_edges": 0,
+          "photo_cameras_calibrated": false,
+          "physical_iphone_tested": false,
+          "preflight_passed": true,
+          "source_sha256": "77f351d89b29f39dc435b434278bb556cff41a8c509edccd979dc9c8c1173c3a"
+        }
+      },
       "date": "2026-10-20",
       "evidence": {
         "actual_blender_renders": "creative/reviews/front-tyre-v1/",
         "engine_review": "tools/asset-lab/",
+        "front_rim_geometry_check": "creative/reviews/front-rim-v1/geometry-check.json",
+        "front_rim_review": "creative/reviews/front-rim-v1/",
+        "front_rim_source_check": "creative/reviews/front-rim-v1/source-geometry-check.json",
+        "front_rim_validation": "WEWA_Developpement_Web/validation/front-rim-v1.json",
         "geometry_check": "creative/reviews/front-tyre-v1/geometry-check.json",
+        "preflight": "creative/reviews/front-rim-v1/preflight-check.json",
         "public_game_unchanged": true,
         "reference_observations": "assets-src/moto-components/front-tyre/reference-observations.json",
         "rider_created": false,
@@ -519,13 +600,14 @@
         "source": "assets-src/moto-components/front-tyre/front-tyre-v1.blend",
         "status": "candidate_rework_not_accepted"
       },
-      "next_action": "Review and refine the isolated tyre against documentary views; resolve camera/tread uncertainty before receiving it, then continue wheel components; rider after motorcycle reception.",
-      "scope": "Motorcycle alone, first isolated tyre candidate, not a completed motorcycle",
+      "next_action": "Compare cast junctions and estimated tyre interface against documentary sources; brake plate and axle next, rider after motorcycle reception. Tyre remains unaccepted.",
+      "scope": "Motorcycle alone: isolated tyre and front cast-rim candidates, not a completed motorcycle",
       "solo_visual_target": {
         "art_accepted": false,
-        "kind": "image_gen reference-guided generated image; not Blender or gameplay output",
-        "mechanical_sources": "RDC manufacturer rotation00,01,04",
-        "path": "creative/direction/motorcycle-style-02-generated-reference.png"
+        "kind": "image_gen edited artistic target; not Blender or gameplay output",
+        "manufacturer_names_retained_in_documentation": true,
+        "path": "creative/direction/motorcycle-wewa-style-02-generated-reference.png",
+        "tank_wordmark": "WEWA"
       }
     },
     "non_goals": [
