@@ -11,17 +11,20 @@ const floor=MeshBuilder.CreateGround('inspection floor',{width:6,height:6},scene
 scene.environmentTexture=new HDRCubeTexture('/app/public/materials/kloppenheim_06_puresky_1k.hdr',scene,128,false,true,false,true);
 scene.environmentIntensity=.45;
 const asset=new URLSearchParams(location.search).get('asset')||'tyre';
-const assets={tyre:['front-tyre','front-tyre-inspection.glb','pneu avant seul','Sculpture et dimensions gonflées estimées ; fournisseur inconnu. Le micrograin procédural Blender n’est pas encore cuit pour cet export.'],rim:['front-rim','front-rim-inspection.glb','jante avant seule','Cinq branches moulées. Diamètre nominal 17 pouces ; section, moyeu et valve estimés. Export réduit pour inspection, sans réception artistique.'],wheel:['front-rim','front-wheel-fit-inspection.glb','raccord pneu et jante avant','Contrôle visuel du raccord entre deux pièces candidates. Le flasque de frein et l’axe restent à fabriquer ; étanchéité et montage mécanique non validés.']};
+const assets={tyre:['front-tyre','front-tyre-inspection.glb','pneu avant seul','Sculpture et dimensions gonflées estimées ; fournisseur inconnu. Le micrograin procédural Blender n’est pas encore cuit pour cet export.'],rim:['front-rim','front-rim-inspection.glb','jante avant seule','Cinq branches moulées. Diamètre nominal 17 pouces ; section, moyeu et valve estimés. Export réduit pour inspection, sans réception artistique.'],wheel:['front-rim','front-wheel-fit-inspection.glb','raccord pneu et jante avant','Contrôle visuel du raccord entre deux pièces candidates. Le flasque de frein et l’axe ne sont pas inclus dans cette révision ; étanchéité et montage mécanique non validés.'],plate:['front-brake-plate','front-brake-plate-inspection.glb','flasque avant seul','Corps moulé candidat d’après vues recto/verso JA131605. Variante RDC, dimensions et orientation de montage non confirmées. Aucun axe, levier ou frein fonctionnel.'],wheelpanel:['front-brake-plate','front-wheel-panel-fit-inspection.glb','raccord provisoire du flasque au moyeu','Pièces candidates, cotes estimées. Contrôle de dégagement uniquement ; orientation sur la fourche, étanchéité et fonctionnement non validés.']};
 if(!assets[asset])throw new Error('Unknown inspection asset');
 const [folder,file,label,details]=assets[asset];
 document.querySelector('h1').textContent='Viva Wewa · '+label;
 canvas.setAttribute('aria-label','Vue 3D : '+label);
 document.querySelector('#details').textContent='Glisser pour tourner · molette ou pincement pour zoomer. '+details;
-document.querySelector('[data-view="tread"]').textContent=asset==='tyre'?'Bande de roulement':'Vue de tranche';
+document.querySelector('[data-view="tread"]').textContent=asset==='plate'?'Verso':asset==='tyre'?'Bande de roulement':'Vue de tranche';
+if(asset==='plate')document.querySelector('[data-view="side"]').textContent='Recto';
 const imported=await SceneLoader.ImportMeshAsync('','/assets-src/moto-components/'+folder+'/',file,scene);
 const meshes=imported.meshes.filter(m=>m.getTotalVertices()>0);let cinematic=false;
-const views={quarter:[-1.1,1.14,1.25],side:[0,Math.PI/2,1.2],tread:[-Math.PI/2,1.5,.9]};
-function view(name){[camera.alpha,camera.beta,camera.radius]=views[name];camera.setTarget(new Vector3(0,.29,0));}
+const views=asset==='plate'?{quarter:[-1.1,1.14,.35],side:[0,Math.PI/2,.36],tread:[Math.PI,Math.PI/2,.36]}:{quarter:[-1.1,1.14,1.25],side:[0,Math.PI/2,1.2],tread:[-Math.PI/2,1.5,.9]};
+if(asset==='plate')camera.lowerRadiusLimit=.12;
+function view(name){[camera.alpha,camera.beta,camera.radius]=views[name];camera.setTarget(new Vector3(asset==='plate'?.035:0,.29,0));}
+view('quarter');
 document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>view(b.dataset.view));
 document.querySelector('#light').onclick=()=>{cinematic=!cinematic;key.diffuse=cinematic?new Color3(1,.72,.45):new Color3(1,1,1);fill.diffuse=cinematic?new Color3(.7,.8,1):new Color3(1,1,1);document.querySelector('#light').textContent=cinematic?'Lumière neutre':'Lumière cinématographique';};
 status.textContent='Pièce chargée · inspection locale, hors jeu public';

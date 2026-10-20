@@ -61,3 +61,7 @@ Téléchargements avec taille/empreinte : catalogue Bajaj, brochure HD et catalo
 Pages SpeedTree refusées/inaccessibles, page Godot recherchée absente, page détaillée Khronos Geometry v2 réduite à un renvoi et page Poly Haven de spécification sans corps exploitable : non comptées comme chapitres lus. Les notices propriétaires de la version RDC n’ont pas été obtenues. Les autres BM125X/X125, les résumés payants Scribd et les miniatures non attribuées ne sont pas des sources de cotes adoptées.
 
 Cette recherche n’a exécuté ni acquisition terrain, ni annotation/calibration, ni reconstruction, ni mesure matérielle, ni test de rendu iPhone. Elle précise ce qui peut être fabriqué fidèlement et ce qui demande encore une preuve.
+
+## Complément flasque avant — 20 octobre 2026
+
+L’éclaté moyeu avant de la feuille PDF44 a été inspecté visuellement : flasque22, levier18, came23, axe8. JA131605 est donné pour UG5vitesses, DZ151027 pour une autre variante. Les sources D07–D09 affichent JA131605 mais visent BM150/Discover125 ; ce ne sont pas des confirmations de la version RDC. Les photos nettes recto/verso montrent les anneaux et huit jonctions de nervures arrière, la butée creuse, les bossages et les perçages. Cinq fichiers téléchargés reprennent essentiellement deux angles ; aucun nouveau plan coté. La quantité4 imprimée à la ligne du flasque est inexpliquée et non adoptée pour le montage. Les photographies restent documentaires hors dépôt. Observations et empreintes dans `assets-src/moto-components/front-brake-plate/reference-observations.json`.

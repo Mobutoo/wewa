@@ -1,0 +1,355 @@
+{
+  "schema": 1,
+  "id": "MOTO-BRAKE-PLATE-FRONT-001",
+  "label": "Flasque de frein avant Wewa — corps moulé seul",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "JA131605 related-part photo candidate; exact RDC brake panel not confirmed",
+    "variant_confirmed": false,
+    "usage": "Single cast brake-panel body; no operational brake assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.8
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01",
+    "D02",
+    "D04",
+    "D07",
+    "D08",
+    "D09"
+  ],
+  "claims": [
+    {
+      "id": "PANEL-IDENTITY-RELATED",
+      "property": "related_UG5gear_panel_part",
+      "value": "JA131605",
+      "unit": null,
+      "source": "D04",
+      "locator": "PDFsheet44 item22 UG5gear row",
+      "status": "documented_related_variant",
+      "adopted": false,
+      "scope": "No exact RDC part identity certified"
+    },
+    {
+      "id": "PANEL-WORKING-RADIUS",
+      "property": "candidate_outer_radius",
+      "value": 0.072,
+      "unit": "m",
+      "source": "D07",
+      "locator": "Related-part silhouette interpreted against existing estimated hub",
+      "status": "estimated",
+      "adopted": true,
+      "method": "Working section around existing72mm-radius candidate drum; observed flange and dish proportions only",
+      "uncertainty": {
+        "range_m": [
+          0.069,
+          0.076
+        ]
+      },
+      "scope": "Candidate geometry, not manufacturer measurement"
+    },
+    {
+      "id": "PANEL-WORKING-BORE",
+      "property": "candidate_axle_bore_radius",
+      "value": 0.0067,
+      "unit": "m",
+      "source": "D07",
+      "locator": "Visible axle passage, scaled only to provisional hub interface",
+      "status": "estimated",
+      "adopted": true,
+      "method": "Provisional0.2mm radial clearance relative to existing6.5mm estimated hub bore",
+      "uncertainty": {
+        "range_m": [
+          0.0065,
+          0.0085
+        ]
+      },
+      "scope": "Not a verified axle size or bearing fit"
+    }
+  ],
+  "views": [
+    {
+      "name": "front",
+      "camera_location_m": [
+        0.5,
+        0,
+        0.3
+      ],
+      "camera_target_m": [
+        0.037,
+        0,
+        0.29
+      ],
+      "lens_mm": 80,
+      "wheel_fit_inspection": false,
+      "kind": "studio_inspection_not_calibrated_documentary_camera"
+    },
+    {
+      "name": "rear",
+      "camera_location_m": [
+        -0.42,
+        0,
+        0.3
+      ],
+      "camera_target_m": [
+        0.031,
+        0,
+        0.29
+      ],
+      "lens_mm": 80,
+      "wheel_fit_inspection": false,
+      "kind": "studio_inspection_not_calibrated_documentary_camera"
+    },
+    {
+      "name": "quarter",
+      "camera_location_m": [
+        0.45,
+        -0.25,
+        0.49
+      ],
+      "camera_target_m": [
+        0.032,
+        0,
+        0.29
+      ],
+      "lens_mm": 80,
+      "wheel_fit_inspection": false,
+      "kind": "studio_inspection_not_calibrated_documentary_camera"
+    },
+    {
+      "name": "fit-neutral",
+      "camera_location_m": [
+        0.95,
+        -1.38,
+        0.84
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.29
+      ],
+      "lens_mm": 70,
+      "wheel_fit_inspection": true,
+      "kind": "studio_inspection_not_calibrated_documentary_camera"
+    },
+    {
+      "name": "cinematic-quarter",
+      "camera_location_m": [
+        0.45,
+        -0.25,
+        0.49
+      ],
+      "camera_target_m": [
+        0.032,
+        0,
+        0.29
+      ],
+      "lens_mm": 80,
+      "wheel_fit_inspection": false,
+      "kind": "studio_inspection_not_calibrated_documentary_camera"
+    }
+  ],
+  "criteria": [
+    {
+      "id": "CLOSED-CASTING",
+      "scope": "technical",
+      "description": "Integral connected casting with positive volume and closed drilled surfaces"
+    },
+    {
+      "id": "NO-FIT-CROSSING",
+      "scope": "technical_candidate_interface",
+      "description": "Inspect actual candidate hub/panel surface intersections and intended radial/axial clearances; no mechanical certification"
+    },
+    {
+      "id": "FRONT-BACK",
+      "scope": "artistic_pending",
+      "description": "Compare dish, fork-stop socket, offset bore and rear ribs to identified related-part views; exact RDC part and camera calibration still open"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "PANEL-RDC",
+      "description": "Exact current RDC part revision not identified",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1"
+      ],
+      "next_research": "Match related part silhouette and fittings to exact RDC service data or detailed photos"
+    },
+    {
+      "id": "PANEL-CAMERA",
+      "description": "Camera intrinsics, orientation and relief depth unknown",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G2"
+      ],
+      "next_research": "Annotate independent landmarks and constrain photo pose; no pixel-to-mm conversion claimed"
+    },
+    {
+      "id": "PANEL-SECTION",
+      "description": "True bores, wall thickness, stop and rib dimensions not measured",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G3",
+        "G5"
+      ],
+      "next_research": "Same-part dimensions or measurements; retain estimate bounds"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Single casting body identified provisionally; visual tolerances and exact variant unresolved.",
+      "reviewed_at": null
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Related-part photos and catalogue found, no exact RDC confirmation.",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Photo cameras not calibrated.",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "editable_source",
+          "path": "../../../assets-src/moto-components/front-brake-plate/front-brake-plate-v1.blend",
+          "sha256": "16e99efb3781adb8cbfc8ef64750ff3bd230026a205b284158238ea888f7a69a",
+          "revision": "front-brake-plate-v1"
+        },
+        {
+          "kind": "isolated_comparison",
+          "path": "../../../creative/reviews/front-brake-plate-v1/front.png",
+          "sha256": "c55655d245d1f39702f56a807ef65a964f0a848807acbb7ad9e90b6e193eb352",
+          "revision": "front-brake-plate-v1"
+        },
+        {
+          "kind": "isolated_comparison",
+          "path": "../../../creative/reviews/front-brake-plate-v1/rear.png",
+          "sha256": "cc547a4452bbbb9e0429fb816e41e28202dc23696e4517dcb78a4c5a0eb2fad4",
+          "revision": "front-brake-plate-v1"
+        }
+      ],
+      "reason": "Single closed casting, lofted reliefs and photographed front/back features built; exact RDC geometry and calibrated silhouette comparison remain open.",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "surface_or_sound_comparison",
+          "path": "../../../creative/reviews/front-brake-plate-v1/cinematic-quarter.png",
+          "sha256": "8aefa7512907d9272b9de3d9e79f2b266d877146546d12573ace6e985f51f79d",
+          "revision": "front-brake-plate-v1"
+        }
+      ],
+      "reason": "Candidate silver coating and machined bore materials rendered; micrograin, measured reflectance and art reception unresolved.",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "motion_or_interface_check",
+          "path": "../../../creative/reviews/front-brake-plate-v1/source-geometry-check.json",
+          "sha256": "90211b8c3587736dd5a7db9d58ede14c25b4cf1d983b72bca32ab508b755776b",
+          "revision": "front-brake-plate-v1"
+        },
+        {
+          "kind": "motion_or_interface_check",
+          "path": "../../../creative/reviews/front-brake-plate-v1/fit-neutral.png",
+          "sha256": "9b624f67dfd438c7d3e7ac7777c4a4bf3cb87c6265815dd924f8d52198f88a8a",
+          "revision": "front-brake-plate-v1"
+        }
+      ],
+      "reason": "Actual openings and no candidate hub surface crossing checked; working dimensions and fork clocking not verified.",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "real_runtime_comparison",
+          "path": "../../../creative/reviews/front-brake-plate-v1/engine-wheelpanel-quarter.png",
+          "sha256": "a618e39a36fbf8197c1e7fe475e0dfd228d5d6dc1d66181da14e0bd1fb7bd3bb",
+          "revision": "front-brake-plate-v1"
+        },
+        {
+          "kind": "technical_export_check",
+          "path": "../../../creative/reviews/front-brake-plate-v1/geometry-check.json",
+          "sha256": "f074e1e4f7c60b7246e739513a171ffd33993daedbf1b3a65b6d5590a5306d82",
+          "revision": "front-brake-plate-v1"
+        }
+      ],
+      "reason": "Both actual exports loaded/captured in Babylon.js; artistic runtime comparison and physical Safari qualification open.",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "before_after_comparison",
+          "path": "../../../creative/reviews/front-brake-plate-v1/source-geometry-check.json",
+          "sha256": "90211b8c3587736dd5a7db9d58ede14c25b4cf1d983b72bca32ab508b755776b",
+          "revision": "front-brake-plate-v1"
+        }
+      ],
+      "reason": "Sparse source-to-inspection geometry distances recorded; not a finished mobile LOD or representative hardware cost measurement.",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": true,
+  "source_revision": "front-brake-plate-v1",
+  "export_revision": "front-brake-plate-inspection-v1",
+  "next_action": "Fabricate isolated front/back casting; verify bore openness and fit to existing candidate hub before detailed renders; lever/axle remain separate.",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/front-brake-plate/README.md",
+  "candidate_review": "../../reviews/front-brake-plate-v1/README.md",
+  "graphic_style": "../../GRAPHIC_STYLE.md"
+}
