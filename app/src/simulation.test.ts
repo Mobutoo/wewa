@@ -51,3 +51,12 @@ describe('Vehicle safety and nitro',()=>{
     const rings:[number,number][][]=[[[0,0],[10,0],[10,10],[0,10],[0,0]],[[3,3],[7,3],[7,7],[3,7],[3,3]]];expect(circlePolygon([5,5],.4,rings)).toBe(false);expect(circlePolygon([1,1],.4,rings)).toBe(true);const movement=sweptMove([5,5],[12,5],p=>circlePolygon(p,.4,rings));expect(movement.hit).toBe(true);expect(movement.point[0]).toBeLessThan(7);
   });
 });
+
+describe('One-thumb analog driving',()=>{
+  it('accelerates and turns simultaneously with analog axes',()=>{
+    const sim=new Simulation(fixture());sim.reset('free');sim.phase='running';run(sim,1,60,{...emptyControls(),throttle:.7,steering:.6});expect(sim.vehicle.speed).toBeGreaterThan(3);expect(sim.vehicle.yaw).toBeLessThan(-.2);
+  });
+  it('pulling down brakes before reversing, release coasts and nitro requires forward throttle',()=>{
+    const sim=new Simulation(fixture());sim.reset('free');sim.phase='running';sim.vehicle.speed=6;const down={...emptyControls(),throttle:-1,steering:0,nitro:true};run(sim,.25,60,down);expect(sim.vehicle.speed).toBeGreaterThan(0);expect(sim.vehicle.speed).toBeLessThan(6);expect(sim.vehicle.boosting).toBe(false);run(sim,1,60,down);expect(sim.vehicle.speed).toBeLessThan(0);expect(sim.vehicle.speed).toBeGreaterThanOrEqual(-3.5);const reverse=sim.vehicle.speed;run(sim,.25,60);expect(sim.vehicle.speed).toBeGreaterThan(reverse);
+  });
+});

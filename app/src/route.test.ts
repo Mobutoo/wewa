@@ -21,7 +21,7 @@ it('the actual Gombe route can be driven to a completed delivery with building c
     const future=sampleRoute(world.route,progress+17);let upcoming=future.yaw-v.yaw;upcoming=Math.atan2(Math.sin(upcoming),Math.cos(upcoming));
     if(Math.abs(upcoming)>.35)desired=Math.min(desired,4);
     if(sim.cargo.length&&world.depots.some(d=>distance(p,d.point)<18))desired=Math.min(desired,2);
-    sim.step({...emptyControls(),gas:v.speed<desired,brake:v.speed>desired+1,left:angle<-.035,right:angle>.035});
+    sim.step({...emptyControls(),gas:v.speed<desired,brake:v.speed>desired+1,left:angle>.035,right:angle<-.035});
   }
   expect(sim.delivered,{progress:lastProgress,vehicle:sim.vehicle,collisions:sim.collisions,collected:[...sim.collected]} as unknown as string).toBeGreaterThanOrEqual(6);
   expect(sim.phase).toBe('finished');expect(sim.finishCount).toBe(1);

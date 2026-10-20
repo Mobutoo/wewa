@@ -6,7 +6,7 @@ Jeu solo de moto à Kinshasa pour navigateur PC et mobile. Le premier secteur r�
 
 L’identité de la prévisualisation publique est conservée dans `.openai/hosting.json`. Son URL confirmée et les preuves sont dans `WEWA_Developpement_Web/validation/STATUS.json`.
 
-Le carnet public `/relecture.html` et `creative/review-register.json` rassemblent les personnages, dialogues, missions et scènes inventés. La direction vise le réalisme photographique. La couverture générée est une image artistique distincte des captures moteur ; décors et animations restent à affiner.
+Le carnet public `/relecture.html` et `creative/review-register.json` rassemblent les personnages, dialogues, missions et scènes inventés. La direction vise le réalisme photographique. La couverture générée est une image artistique distincte des captures moteur ; le moteur utilise désormais des matières photographiques CC0, un ciel HDR, des textures originales de façades/palmes et des véhicules originaux. Le rendu est toujours en deçà de la référence : variété architecturale, piétons et animations restent à produire et valider.
 
 Modes du prototype : Rush de 30 secondes, tournée de six colis, introduction narrative avec poursuite d’un taxi et indice, balade libre.
 
@@ -35,7 +35,7 @@ Le workflow `.github/workflows/ci.yml` exécute tests, build et vérification na
 
 ## Commandes
 
-ZQSD / WASD ou flèches : conduire. Espace : frein ; Maj : nitro ; C : caméra ; H : klaxon ; R : reprise ; P / Échap : pause. Sur téléphone : boutons tactiles simultanés ; paysage recommandé.
+ZQSD / WASD ou flèches : conduire. Espace : frein ; Maj : nitro ; C : caméra ; H : klaxon ; R : reprise ; P / Échap : pause. Sur téléphone : joystick unique au pouce gauche. Haut : accélérer ; bas : freiner puis reculer ; gauche/droite : diriger simultanément. Nitro et klaxon à droite, indépendants. Portrait et paysage pris en charge.
 
 Pause ou perte de focus libère les commandes. Réglages : confort, champ de vision, vibrations, musique originale et appels parlés facultatifs via la voix française du navigateur. Record et réglages locaux ; jouer sans stockage persistant reste possible.
 

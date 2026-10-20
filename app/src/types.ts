@@ -10,6 +10,6 @@ export interface WorldData {
   depots: {id:string;point:Point;label:string}[];
   cells: {id:string;grid_east_north:Point;files:{path:string;sha256:string}[]}[];
 }
-export interface Controls {gas:boolean;brake:boolean;left:boolean;right:boolean;nitro:boolean;horn:boolean}
+export interface Controls {gas:boolean;brake:boolean;left:boolean;right:boolean;nitro:boolean;horn:boolean;throttle?:number;steering?:number}
 export interface Obstacle {x:number;z:number;radius:number;kind:'vehicle'|'person';yaw?:number;halfLength?:number}
 export const emptyControls = ():Controls => ({gas:false,brake:false,left:false,right:false,nitro:false,horn:false});

@@ -33,26 +33,63 @@ try:
             # Countdown is advanced through the local-only QA fixture to keep CI quick.
             page.evaluate('''() => {const s=window.__WEWA__.sim();s.paused=false;for(let i=0;i<180;i++)s.step({gas:false,brake:false,left:false,right:false,nitro:false,horn:false});}''')
             page.wait_for_timeout(200)
+            # Prove right input moves the forward heading to SCREEN right in the RH renderer.
+            screen_turn=page.evaluate('''()=>{const s=window.__WEWA__.sim(),w=window.__WEWA__.world(),v=s.vehicle,V=w.bike.position.constructor,old={...v};const project=(yaw)=>V.TransformCoordinates(new V(old.x+Math.sin(yaw)*4,1,old.z+Math.cos(yaw)*4),w.scene.getTransformMatrix()).x;const before=project(v.yaw);for(let i=0;i<18;i++)s.step({gas:true,brake:false,left:false,right:true,nitro:false,horn:false});const after=project(v.yaw);Object.assign(v,old);return after-before;}''')
+            assert screen_turn>0,screen_turn
             before=page.evaluate('window.__WEWA__.snapshot()')
             assert before['phase']=='running',before
             if mobile:
-                gas=page.locator('[data-input="gas"]').bounding_box();left=page.locator('[data-input="left"]').bounding_box()
+                stick=page.locator('#drive-stick').bounding_box();nitro=page.locator('[data-input="nitro"]').bounding_box()
                 session=context.new_cdp_session(page)
-                points=[{'id':i+1,'x':r['x']+r['width']/2,'y':r['y']+r['height']/2} for i,r in enumerate([gas,left])]
-                session.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':points})
-                pressed=page.evaluate('window.__WEWA__.snapshot().controls');assert pressed['gas'] and pressed['left'],pressed
+                cx=stick['x']+stick['width']/2;cy=stick['y']+stick['height']/2;r=stick['width']*.34
+                point={'id':1,'x':cx,'y':cy}
+                session.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':[point]})
+                # ONE thumb held diagonally must accelerate AND turn.
+                point.update(x=cx-r*.6,y=cy-r*.75)
+                session.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':[point]})
+                pressed=page.evaluate('window.__WEWA__.snapshot().controls');assert pressed['gas'] and pressed['left'] and pressed['throttle']>0 and pressed['steering']<0,pressed
                 page.wait_for_timeout(120)
+                second={'id':2,'x':nitro['x']+nitro['width']/2,'y':nitro['y']+nitro['height']/2}
+                session.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':[point,second]})
+                pressed=page.evaluate('window.__WEWA__.snapshot().controls');assert pressed['nitro'] and pressed['gas'] and pressed['left'],pressed
+                session.send('Input.dispatchTouchEvent',{'type':'touchEnd','touchPoints':[second]})
+                page.wait_for_function('!window.__WEWA__.snapshot().controls.nitro')
+                # Same thumb pulled down brakes, then reversing is handled by physics.
+                point.update(x=cx,y=cy+r)
+                session.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':[point]})
+                page.wait_for_function('window.__WEWA__.snapshot().controls.brake');pressed=page.evaluate('window.__WEWA__.snapshot().controls');assert pressed['brake'] and pressed['throttle']<-.9 and not pressed['gas'],pressed
+                session.send('Input.dispatchTouchEvent',{'type':'touchCancel','touchPoints':[]})
+                page.wait_for_function('Object.values(window.__WEWA__.snapshot().controls).every(v=>!v)');assert not any(page.evaluate('window.__WEWA__.snapshot().controls').values())
+                # Lifting only the steering thumb must not release the independent nitro finger.
+                session.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':[{'id':1,'x':cx,'y':cy-r},second]})
+                session.send('Input.dispatchTouchEvent',{'type':'touchEnd','touchPoints':[{'id':1,'x':cx,'y':cy-r}]})
+                page.wait_for_function('window.__WEWA__.snapshot().controls.nitro && !window.__WEWA__.snapshot().controls.gas');pressed=page.evaluate('window.__WEWA__.snapshot().controls');assert pressed['nitro'] and not pressed['gas'],pressed
                 session.send('Input.dispatchTouchEvent',{'type':'touchEnd','touchPoints':[]})
-                assert not any(page.evaluate('window.__WEWA__.snapshot().controls').values())
+                page.wait_for_function('Object.values(window.__WEWA__.snapshot().controls).every(v=>!v)');assert not any(page.evaluate('window.__WEWA__.snapshot().controls').values())
             else:
-                page.keyboard.down('w');page.wait_for_timeout(800);page.keyboard.up('w')
+                page.keyboard.down('w');page.wait_for_function('window.__WEWA__.snapshot().controls.gas')
+                page.wait_for_function('(speed)=>window.__WEWA__.snapshot().vehicle.speed>speed+.2',arg=before['vehicle']['speed'])
                 after=page.evaluate('window.__WEWA__.snapshot()');assert after['vehicle']['speed']>before['vehicle']['speed'],after
+                page.keyboard.up('w');page.wait_for_function('!window.__WEWA__.snapshot().controls.gas')
+            if mobile:
+                page.set_viewport_size({'width':393,'height':852});page.wait_for_timeout(150)
+                r=page.locator('#drive-stick').bounding_box();assert r['x']>=0 and r['y']+r['height']<=852,r
+                thumb={'id':3,'x':r['x']+r['width']/2,'y':r['y']+r['height']*.2}
+                session.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':[thumb]})
+                page.wait_for_function('window.__WEWA__.snapshot().controls.gas')
+                # App interruption while the thumb is still held clears everything.
+                page.evaluate('window.dispatchEvent(new Event("blur"))')
+                assert page.evaluate('window.__WEWA__.snapshot().paused')
+                assert not any(page.evaluate('window.__WEWA__.snapshot().controls').values())
+                session.send('Input.dispatchTouchEvent',{'type':'touchEnd','touchPoints':[]})
+                page.locator('#resume').click();page.screenshot(path=str(OUTPUT/f'{label}-portrait-game.png'))
+                page.set_viewport_size(viewport);page.wait_for_timeout(150)
             page.locator('#camera').click();assert page.evaluate('window.__WEWA__.world().firstPerson')
             page.wait_for_timeout(300);page.screenshot(path=str(OUTPUT/f'{label}-first-person.png'))
             page.locator('#camera').click();page.wait_for_timeout(300);page.screenshot(path=str(OUTPUT/f'{label}-game.png'))
             page.locator('#pause').click();assert page.evaluate('window.__WEWA__.snapshot().paused')
             frozen=page.evaluate('window.__WEWA__.snapshot().elapsed');page.wait_for_timeout(200);assert page.evaluate('window.__WEWA__.snapshot().elapsed')==frozen
-            assert not any(page.evaluate('window.__WEWA__.snapshot().controls').values())
+            page.wait_for_function('Object.values(window.__WEWA__.snapshot().controls).every(v=>!v)');assert not any(page.evaluate('window.__WEWA__.snapshot().controls').values())
             page.locator('#resume').click()
             page.evaluate('window.dispatchEvent(new Event("blur"))');assert page.evaluate('window.__WEWA__.snapshot().paused')
             page.locator('#resume').click()
@@ -61,7 +98,7 @@ try:
             final=page.evaluate('window.__WEWA__.snapshot()');assert final['elapsed']==30 and final['finishCount']==1,final
             page.locator('#replay').click();page.wait_for_timeout(200);replayed=page.evaluate('window.__WEWA__.snapshot()');assert replayed['score']==0 and replayed['vehicle']['nitro']==100 and replayed['cargo']==[],replayed
             if errors or failed:raise AssertionError({'errors':errors,'failed_requests':failed})
-            results.append({'profile':label,'rendered':True,'camera_switch':True,'pause_and_blur':True,'rush_finish_once':True,'restart_clean':True,'javascript_errors':errors,'http_errors':failed,'note':'Chromium software GPU, not physical iPhone Safari'})
+            results.append({'profile':label,'rendered':True,'screen_right_steering':True,'single_thumb_diagonal':mobile,'independent_nitro':mobile,'brake_and_touch_cancel':mobile,'portrait_and_held_thumb_blur':mobile,'camera_switch':True,'pause_and_blur':True,'rush_finish_once':True,'restart_clean':True,'javascript_errors':errors,'http_errors':failed,'note':'Chromium software GPU, not physical iPhone Safari'})
             context.close()
         browser.close()
 finally:

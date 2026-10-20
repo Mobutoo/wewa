@@ -50,18 +50,20 @@ export class Simulation {
     if(this.mode==='rush'&&this.ticks>=rush.duration_active_seconds*60){this.finish();return;}
     const v=this.vehicle;
     this.messageTimer=Math.max(0,this.messageTimer-DT);this.contactTime+=DT;this.nitroCooldown=Math.max(0,this.nitroCooldown-DT);
-    const boost=input.nitro&&input.gas&&!input.brake&&v.speed>1&&v.nitro>0&&this.nitroCooldown===0;
+    const throttle=clamp(input.throttle??(input.brake?-1:input.gas?1:0),-1,1);
+    const boost=input.nitro&&throttle>0&&v.speed>1&&v.nitro>0&&this.nitroCooldown===0;
     v.boosting=boost;
     if(boost){v.nitro=Math.max(0,v.nitro-tuning.boost.drain_per_second*DT);this.nitroRest=0;if(v.nitro===0)this.nitroCooldown=tuning.boost.reactivation_delay_seconds;}
     else{this.nitroRest+=DT;if(this.nitroRest>=tuning.boost.recharge_delay_seconds)v.nitro=Math.min(100,v.nitro+tuning.boost.recharge_per_second*DT);}
     const roadDistance=this.nearestRoad([v.x,v.z]).distance;
     const maxSpeed=(roadDistance<5?19.5:10.5)*(boost?tuning.boost.top_speed_multiplier:1);
-    if(input.brake){v.speed=Math.max(-3.5,v.speed-12*DT);v.boosting=false;}
-    else if(input.gas){v.speed=Math.min(maxSpeed,v.speed+6.2*(boost?tuning.boost.acceleration_multiplier:1)*DT);}
+    if(throttle<0){v.speed=Math.max(-3.5,v.speed+12*throttle*DT);v.boosting=false;}
+    else if(throttle>0){v.speed=Math.min(maxSpeed,v.speed+6.2*throttle*(boost?tuning.boost.acceleration_multiplier:1)*DT);}
     else v.speed=Math.abs(v.speed)<.08?0:v.speed-Math.sign(v.speed)*(1.4+Math.abs(v.speed)*.025)*DT;
     if(v.speed>maxSpeed)v.speed=Math.max(maxSpeed,v.speed-4*DT);
-    const target=(input.right?1:0)-(input.left?1:0);v.steer+=(target-v.steer)*.14;
-    v.yaw+=v.steer*1.65*clamp(Math.abs(v.speed)/4,0,1)*clamp(1-Math.abs(v.speed)/70,.45,1)*DT*Math.sign(v.speed||1);
+    const target=clamp(input.steering??((input.right?1:0)-(input.left?1:0)),-1,1);v.steer+=(target-v.steer)*.14;
+    // Right-handed X-east/Z-south world: a rider turning right decreases heading yaw.
+    v.yaw-=v.steer*1.65*clamp(Math.abs(v.speed)/4,0,1)*clamp(1-Math.abs(v.speed)/70,.45,1)*DT*Math.sign(v.speed||1);
     const obstacles=this.obstacleProvider(this.elapsed);
     const nearby=this.bounds.filter(b=>v.x>b.minx-3&&v.x<b.maxx+3&&v.z>b.minz-3&&v.z<b.maxz+3);
     const blocked=(p:Point)=>Math.abs(p[0])>890||p[1]<-880||p[1]>770||nearby.some(b=>circlePolygon(p,.42,b.rings))||obstacles.some(o=>{const dx=Math.sin(o.yaw||0)*(o.halfLength||0),dz=Math.cos(o.yaw||0)*(o.halfLength||0);return pointSegment(p,[o.x-dx,o.z-dz],[o.x+dx,o.z+dz]).distance<o.radius+.42;});

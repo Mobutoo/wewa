@@ -14,7 +14,7 @@
       "motorcycle": "Respecter références officielles présentes dans les fichiers",
       "preview_audience": "public",
       "temporary_domain_candidate": "Wewa.io.cloud (non configuré)",
-      "visual_identity": "Illustrations originales punchy, colorées, affiche cinématique peinte et encrée ; motos et monde réalistes"
+      "visual_identity": "Réalisme photographique pour le jeu et ses images ; priorité aux captures moteur comparées à la référence utilisateur, pas aux illustrations dessinées"
     },
     "cultural_notes": {
       "ambient_sound": [
@@ -188,11 +188,42 @@
     "realism": "rendu cible photographique ; décors moteur encore provisoires",
     "hardware_fps": "non mesuré",
     "public_preview": "https://viva-wewa.chummyrose33.chatgpt.site",
-    "logic_tests": "12 passing",
-    "browser": "Chromium desktop + touch emulation, no JavaScript or HTTP errors"
+    "logic_tests": "15 passing",
+    "browser": "Chromium desktop + touch emulation: one-thumb diagonal, independent nitro, brake/cancel, portrait, held-thumb blur and screen-right steering passed; no JS/HTTP errors"
   },
   "source_files": {
     "readiness": "/workspace/wewa-audit/readiness.json",
     "idea_id": "27f8ffb12df14ff79c6e0f13cbd1cf91"
+  },
+  "mobile_driving": {
+    "decision": "single_thumb_analog_joystick",
+    "up": "accelerate",
+    "down": "brake_then_reverse",
+    "horizontal": "simultaneous_steering",
+    "secondary_hand": [
+      "nitro",
+      "horn"
+    ],
+    "release": "neutral_and_coast",
+    "feedback": "Previous separate gas/brake/steering buttons rejected by user",
+    "steering_handedness": "Corrected and screen projection verified: right input turns screen right in the right-handed scene"
+  },
+  "visual_quality_gate": {
+    "status": "not_accepted",
+    "priority": "Polish one visible playable street before expanding content",
+    "changes": [
+      "photographic CC0 road, pavement, concrete materials",
+      "sky-only HDR lighting/reflections",
+      "original office facade and palm textures",
+      "original curved compact taxi",
+      "street furnishings",
+      "Original continuous clothed rider replaces segmented mannequin"
+    ],
+    "remaining": [
+      "architectural variety and faithful Gombe elevations",
+      "pedestrian models and animation",
+      "dense authentic street dressing",
+      "physical Safari performance and visual review"
+    ]
   }
 }

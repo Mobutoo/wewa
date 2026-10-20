@@ -109,7 +109,8 @@
         "validation/unit-tests.json",
         "validation/STATUS.json"
       ],
-      "qualification_scope": "Chromium desktop and touch emulation; physical Safari qualification remains W01/W05/W09."
+      "qualification_scope": "Chromium desktop and touch emulation; physical Safari qualification remains W01/W05/W09.",
+      "revision_note": "Braquage inversé dans le repère droit corrigé ; projection dans la caméra testée pour droite écran."
     },
     {
       "id": "W07",
@@ -135,14 +136,18 @@
       "depends_on": [
         "W06"
       ],
-      "status": "done",
-      "acceptance": "ZQSD/WASD et tactile ; perte de focus sans accélération persistante.",
+      "status": "blocked",
+      "acceptance": "Un seul joystick au pouce : accélérer, freiner puis reculer et diriger simultanément ; nitro/klaxon indépendants ; ZQSD/WASD et perte de focus sans commande persistante.",
       "evidence": [
         "validation/browser/results.json",
         "validation/unit-tests.json",
         "validation/STATUS.json"
       ],
-      "qualification_scope": "Chromium desktop and touch emulation; physical Safari qualification remains W01/W05/W09."
+      "qualification_scope": "Chromium desktop and touch emulation; physical Safari qualification remains W01/W05/W09.",
+      "user_feedback": "Commandes séparées refusées : deux mains nécessaires pour conduire sur téléphone. Refonte imposée par utilisateur.",
+      "implementation_status": "single_thumb_analog_joystick_verified_in_chromium",
+      "blocker": "Essais tactiles portrait/paysage passés, revue Safari sur iPhone 15/16 physique encore requise après rejet utilisateur du schéma précédent.",
+      "next_action": "Faire essayer le nouveau joystick à un seul pouce sur les appareils physiques."
     },
     {
       "id": "W09",
@@ -315,9 +320,11 @@
         "W19",
         "W14"
       ],
-      "status": "pending",
+      "status": "blocked",
       "acceptance": "Captures du moteur, retours kinois et mesures du parcours étalon.",
-      "evidence": []
+      "evidence": [],
+      "blocker": "Utilisateur refuse le rendu du premier prototype, trop éloigné de sa référence photographique. Captures moteur obligatoires et amélioration du corridor avant extension.",
+      "next_action": "Comparer les captures de la reprise visuelle à la référence ; ne pas déclarer le photoréalisme acquis."
     },
     {
       "id": "W21",

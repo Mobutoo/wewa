@@ -1,0 +1,34 @@
+{
+  "date": "2026-10-20",
+  "trigger": "User rejects separate mobile driving buttons and graphics unlike photographic reference",
+  "mobile_input": {
+    "implementation": "One thumb analog joystick combines throttle, brake/reverse, left/right steering. Secondary hand only for nitro/horn.",
+    "safety": "Pointer capture, single joystick owner, neutral on release/cancel/pause/blur",
+    "handedness": "Positive right input decreases heading yaw in the right-handed X-east/Z-south scene; verified using projection to screen."
+  },
+  "graphics": {
+    "implemented": [
+      "CC0 photographic asphalt, pavement, concrete, dry-ground textures",
+      "CC0 sky-only HDR lighting and reflections",
+      "Original generated facade and alpha palm textures",
+      "Original compact yellow taxi and continuous clothed rider geometry",
+      "Curbs, railings, streetlights, awnings, air conditioning decorative layer",
+      "Closer offset chase camera"
+    ],
+    "status": "not_yet_matching_user_photographic_reference",
+    "remaining": [
+      "Architecture variety, close geometry and faithful facades",
+      "Pedestrian models and animation",
+      "Urban density and reference-based local detail",
+      "iPhone 15/16 Safari hardware performance and user visual review"
+    ]
+  },
+  "evidence": [
+    "validation/unit-tests.json",
+    "validation/browser/results.json",
+    "validation/browser/desktop-game.png",
+    "validation/browser/iphone-landscape-emulation-game.png",
+    "validation/browser/iphone-landscape-emulation-portrait-game.png"
+  ],
+  "qualification": "Software-rendered Chromium and touch emulation only. No physical iPhone test, FPS guarantee or photographic realism certification."
+}

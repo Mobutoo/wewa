@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite app --host 0.0.0.0",
-    "build": "tsc --noEmit -p app/tsconfig.json && vite build app --outDir ../dist",
+    "build": "tsc --noEmit -p app/tsconfig.json && vite build app --outDir ../dist --emptyOutDir",
     "preview": "vite preview app --outDir ../dist --host 0.0.0.0",
     "test": "vitest run app/src",
     "test:browser": "python3 tools/browser_checks.py"
