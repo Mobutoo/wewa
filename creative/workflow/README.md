@@ -2,6 +2,8 @@
 
 Version 1, 20 octobre 2026. Procédure de production du projet, construite à partir de la [recherche moto](../MOTORCYCLE_RECONSTRUCTION_RESEARCH.md), de son [complément documentaire](RESEARCH.md) et des [sources consultées](sources.json). Les conditions de passage ci-dessous sont nos décisions de travail ; aucune source ne garantit le résultat à notre place.
 
+Direction graphique choisie par l’utilisateur : [style2, réalisme cinématographique](../GRAPHIC_STYLE.md). L’utiliser comme cible de lumière et de matière ; les références techniques restent la base des formes et dimensions.
+
 **Une pièce observable et vérifiable constitue l’unité de fabrication.** Un véhicule, une façade ou un personnage est un assemblage de pièces. Une entrée du catalogue peut couvrir plusieurs objets ; plusieurs entrées peuvent désigner le même objet. Le [routage du dossier](coverage.json) conserve les 92 fiches AS et les 67 compléments CON sans les transformer en 159 modèles distincts.
 
 La priorité reste la moto seule, puis ses composants successifs. Le conducteur attend sa réception. Le lot 01 demeure refusé ; les moodboards sont des intentions, jamais des références de mesure ni des rendus du moteur.

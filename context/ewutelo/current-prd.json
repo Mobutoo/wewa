@@ -1,6 +1,6 @@
 {
   "idea_id": "27f8ffb12df14ff79c6e0f13cbd1cf91",
-  "revision": 17,
+  "revision": 18,
   "prd": {
     "acceptance_criteria": [
       "Petite moto utilitaire Wewa ; clavier ZQSD/WASD et tactile.",
@@ -199,13 +199,14 @@
       "documentary_research": "creative/workflow/RESEARCH.md",
       "family_recipes": "creative/workflow/RECIPES.md",
       "motorcycle_decomposition": "creative/workflow/motorcycle-assembly.json",
-      "next_action": "Prepare annotated landmarks and constrained camera/guides comparison; identify actual tyre and bound critical unknowns before detailed front tyre fabrication.",
+      "next_action": "Review and refine the isolated tyre against documentary views; resolve camera/tread uncertainty before receiving it, then continue wheel components; rider after motorcycle reception.",
       "production": {
         "active_component": "MOTO-TYRE-FRONT-001",
         "art_accepted": false,
         "camera_calibration_executed": false,
+        "current_candidate_status": "First isolated tyre candidate rendered and under rework; no component art acceptance.",
         "motorcycle_groups": 25,
-        "new_geometry": false,
+        "new_geometry": true,
         "previous_lot": "hero-lot01 remains rejected in all views",
         "public_preview_unchanged": true,
         "rider": "deferred until motorcycle user reception"
@@ -259,7 +260,7 @@
         "motorcycle": "Respecter références officielles présentes dans les fichiers",
         "preview_audience": "public",
         "temporary_domain_candidate": "Wewa.io.cloud (non configuré)",
-        "visual_identity": "Réalisme photographique pour le jeu et ses images. La référence de l’utilisateur est le critère visuel ; aucune validation par la couverture seule."
+        "visual_identity": "Style2 selected2026-10-20: cinematic photographic realism, faithful real-world proportions, warm directional light, credible rich colors and readable shadows."
       },
       "atmosphere_reference": {
         "film": "Viva Riva!",
@@ -315,6 +316,15 @@
           "Eh chauffeur, tu conduis ou tu danses ?",
           "Doucement, laisse passer les mamans !"
         ]
+      },
+      "selected_graphic_style": {
+        "accepted_geometry": false,
+        "accepted_style": true,
+        "date": "2026-10-20",
+        "document": "creative/GRAPHIC_STYLE.md",
+        "id": 2,
+        "name": "Réalisme cinématographique",
+        "user_decision": "Oui, le2."
       },
       "source": "Décisions utilisateur dans cette conversation",
       "technical_reference": "R9 / plan 1.2 conservés, nouvelles décisions priment pour nom, audience et appareils",
@@ -456,7 +466,7 @@
         "Rush 30 s, six colis, poursuite et indice, balade",
         "Record local, réglages et maquette sonore originale"
       ],
-      "latest_art_status": "All hero-lot01 views remain rejected. Reusable component workflow, family recipes, source register, catalogue routing and blocked front-tyre record prepared. Motorcycle only before driver.",
+      "latest_art_status": "Style2 cinematic realism selected; solo motorcycle visual target generated; first isolated editable tyre candidate built and undergoing corrections. No new complete motorcycle or public deployment.",
       "limits": [
         "Exact street reference and real facade survey",
         "Human mobile and local road-priority validation",
@@ -464,7 +474,7 @@
         "Sustained hardware performance qualification",
         "Full V1 fifteen-minute assembly and later phases"
       ],
-      "milestone": "Documentary research extended and reusable asset workflow prepared; no new geometry or art acceptance.",
+      "milestone": "Selected style and motorcycle-only visual target; first real isolated Blender component for correction.",
       "preview_url": "https://viva-wewa.chummyrose33.chatgpt.site",
       "repository": "https://github.com/Mobutoo/wewa",
       "review_url": "https://viva-wewa.chummyrose33.chatgpt.site/relecture.html",
@@ -478,6 +488,45 @@
       "release": "Retour au neutre, perte de focus ou pause efface les contacts et axes.",
       "scheme": "Un seul joystick analogique au pouce gauche : haut accélérer, bas freiner puis reculer, gauche/droite diriger simultanément. Nitro et klaxon indépendants à droite.",
       "verification_scope": "Unit tests and real Chromium touch events; physical Safari approval pending."
+    },
+    "motorcycle_component_fabrication": {
+      "date": "2026-10-20",
+      "evidence": {
+        "actual_blender_renders": "creative/reviews/front-tyre-v1/",
+        "engine_review": "tools/asset-lab/",
+        "geometry_check": "creative/reviews/front-tyre-v1/geometry-check.json",
+        "public_game_unchanged": true,
+        "reference_observations": "assets-src/moto-components/front-tyre/reference-observations.json",
+        "rider_created": false,
+        "user_art_accepted": false,
+        "whole_motorcycle_complete": false
+      },
+      "first_component": {
+        "construction": "Closed shaped section with hollow liner/beads, integral geometric grooves, editable source and separate inspection export",
+        "corrections": "Initial inward winding corrected; overexposed studio lights reduced; groove-aligned topology replaces uniform-grid stair stepping; explicit glTF roughness fallback",
+        "export": "assets-src/moto-components/front-tyre/front-tyre-inspection.glb",
+        "generator": "assets-src/moto-components/front-tyre/build.py",
+        "id": "MOTO-TYRE-FRONT-001",
+        "limits": [
+          "Supplier and exact tread mould not identified",
+          "Inflated width and outside diameter bounded working estimates",
+          "Photo cameras not calibrated",
+          "Procedural micrograin bake and runtime material parity open",
+          "Not optimized or qualified on physical iPhone"
+        ],
+        "parameters": "assets-src/moto-components/front-tyre/parameters.json",
+        "review": "creative/reviews/front-tyre-v1/README.md",
+        "source": "assets-src/moto-components/front-tyre/front-tyre-v1.blend",
+        "status": "candidate_rework_not_accepted"
+      },
+      "next_action": "Review and refine the isolated tyre against documentary views; resolve camera/tread uncertainty before receiving it, then continue wheel components; rider after motorcycle reception.",
+      "scope": "Motorcycle alone, first isolated tyre candidate, not a completed motorcycle",
+      "solo_visual_target": {
+        "art_accepted": false,
+        "kind": "image_gen reference-guided generated image; not Blender or gameplay output",
+        "mechanical_sources": "RDC manufacturer rotation00,01,04",
+        "path": "creative/direction/motorcycle-style-02-generated-reference.png"
+      }
     },
     "non_goals": [
       "Pas de paiement réel, multijoueur ou combat complexe dans V0.",
@@ -734,9 +783,9 @@
         ],
         "details": "Silhouettes locales, LOD, collisions et animations contrôlés. Guidon, compteur et mains utilisables en première personne sans obstruction.",
         "id": "W17",
-        "implementation_status": "Hero-lot01 rejected in all views. Motorcycle-only reference/component planning first; no piece accepted as realistic. Driver deferred until motorcycle reception.",
+        "implementation_status": "Style2 cinematic realism selected; solo motorcycle visual target generated; first isolated editable tyre candidate built and undergoing corrections. No new complete motorcycle or public deployment.",
         "name": "Moto, pilote et véhicules",
-        "next_action": "Prepare annotated landmarks and constrained camera/guides comparison; identify actual tyre and bound critical unknowns before detailed front tyre fabrication.",
+        "next_action": "Review and refine the isolated tyre against documentary views; resolve camera/tread uncertainty before receiving it, then continue wheel components; rider after motorcycle reception.",
         "phase": "P4",
         "status": "blocked"
       },

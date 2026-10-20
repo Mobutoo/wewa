@@ -1,5 +1,7 @@
 # Viva Wewa — production par phases
 
+Le 20 octobre 2026, le style2 est choisi : [réalisme cinématographique](creative/GRAPHIC_STYLE.md). Une [référence générée de la moto seule](creative/direction/motorcycle-style-02-generated-reference.png) est distincte de la [première pièce Blender](assets-src/moto-components/front-tyre/README.md), un pneu avant candidat encore à reprendre. La sélection du style ne réceptionne pas la géométrie et ne constitue pas une nouvelle moto3D complète.
+
 Référence : [plan complet](WEWA_Developpement_Web/docs/PLAN_DE_PRODUCTION.md). Le lien public est une version de travail ; sa disponibilité ne ferme aucune phase.
 
 Le [workflow de fabrication fidèle](creative/workflow/README.md) définit les neuf passages et leurs preuves par composant, les [recettes de famille](creative/workflow/RECIPES.md), les fiches réutilisables et le contrôle des déclarations. Le [complément documentaire](creative/workflow/RESEARCH.md) conserve les nouvelles sources, conflits de variantes et manques moto. Les 92 fiches AS et 67 lignes CON sont routées vers ces recettes, sans prétendre que leur recherche ou fabrication est achevée.

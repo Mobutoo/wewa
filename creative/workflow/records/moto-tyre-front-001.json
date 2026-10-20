@@ -15,7 +15,11 @@
     "variant": "Boxer125HD RDC, série rouge visière longue; fournisseur et millésime pneu inconnus",
     "variant_confirmed": false,
     "usage": "Premier plan, moto seule avant conducteur",
-    "review_distances_m": []
+    "review_distances_m": [
+      0.35,
+      0.8,
+      2
+    ]
   },
   "source_register": "../sources.json",
   "sources": [
@@ -69,6 +73,44 @@
       "status": "documented_related_variant",
       "adopted": false,
       "scope": "MRF product only; not identified Boxer fitment"
+    },
+    {
+      "id": "CANDIDATE-OUTSIDE-DIAMETER",
+      "property": "candidate_outside_diameter",
+      "value": 0.58,
+      "unit": "m",
+      "source": "D01",
+      "locator": "Current working parameter in assets-src/moto-components/front-tyre/parameters.json",
+      "status": "estimated",
+      "adopted": true,
+      "method": "Working silhouette estimate from official multi-view reference; not a calibrated physical measurement",
+      "uncertainty": {
+        "range_m": [
+          0.56,
+          0.62
+        ],
+        "kind": "plausible working range, not confidence interval"
+      },
+      "scope": "Unloaded isolated candidate only; exact OEM tyre unknown"
+    },
+    {
+      "id": "CANDIDATE-WIDTH",
+      "property": "candidate_overall_section_width",
+      "value": 0.071,
+      "unit": "m",
+      "source": "D01",
+      "locator": "Current working parameter in assets-src/moto-components/front-tyre/parameters.json",
+      "status": "estimated",
+      "adopted": true,
+      "method": "Nominal2.75in designation and observed narrow-tyre proportions; actual inflated width unmeasured",
+      "uncertainty": {
+        "range_m": [
+          0.068,
+          0.08
+        ],
+        "kind": "working bound"
+      },
+      "scope": "Unloaded candidate only, not published manufacturer width"
     }
   ],
   "views": [
@@ -189,19 +231,39 @@
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "front-tyre-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "kind": "editable_source",
+          "path": "../../../assets-src/moto-components/front-tyre/front-tyre-v1.blend",
+          "sha256": "33bf2d29063cf267da47323cf7d2a126f803166caf5e2ea410dc56e89072326c",
+          "revision": "front-tyre-v1"
+        },
+        {
+          "kind": "isolated_comparison",
+          "path": "../../reviews/front-tyre-v1/tread-close.png",
+          "sha256": "2fa347cf7b4c7c8222c99ff21a2827da3a976d0bea496e5a3791ef1f3747b68a",
+          "revision": "front-tyre-v1"
+        }
+      ],
+      "reason": "Isolated editable candidate built, initial inward orientation corrected; shape and estimated tread not accepted against calibrated views.",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "front-tyre-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "kind": "surface_or_sound_comparison",
+          "path": "../../reviews/front-tyre-v1/cinematic-quarter.png",
+          "sha256": "228e5043fd83495ae78096ede04a9df4ded6f8affc3920fce4673fb38ca4bdef",
+          "revision": "front-tyre-v1"
+        }
+      ],
+      "reason": "Original rubber rendered under neutral/cinematic lights; exposure correction and microdetail review required.",
       "reviewed_at": null
     },
     "G5": {
@@ -213,11 +275,24 @@
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "front-tyre-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "kind": "real_runtime_comparison",
+          "path": "../../reviews/front-tyre-v1/engine-quarter.png",
+          "sha256": "6677dd455617b5581a2ae53e6ab0dd5128976a1ab59164992e71bdc1f5a58631",
+          "revision": "front-tyre-v1"
+        },
+        {
+          "kind": "technical_export_check",
+          "path": "../../reviews/front-tyre-v1/geometry-check.json",
+          "sha256": "9c7de6f883cd98c64cf8411e6a4e488e814bc88c54c9d97a072933ec84188a0c",
+          "revision": "front-tyre-v1"
+        }
+      ],
+      "reason": "Actual glTF inspected in Babylon.js; procedural grain bake/parity pending, not a mobile delivery asset.",
       "reviewed_at": null
     },
     "G7": {
@@ -237,9 +312,12 @@
       "reviewed_at": null
     }
   },
-  "active_detailed_fabrication": false,
-  "source_revision": "documentary-workflow-v1-2026-10-20",
-  "export_revision": null,
-  "next_action": "Annoter repères et préparer guides/caméras; chercher flanc et sculpture de la monte exacte avant détail du pneu.",
-  "art_accepted": false
+  "active_detailed_fabrication": true,
+  "source_revision": "front-tyre-v1",
+  "export_revision": "front-tyre-inspection-v1",
+  "next_action": "Review isolated tyre; refine reference-camera alignment and tread/sidewall detail before receiving this component or assembling the motorcycle.",
+  "art_accepted": false,
+  "generated_candidate_source": "../../../assets-src/moto-components/front-tyre/README.md",
+  "candidate_review": "../../reviews/front-tyre-v1/README.md",
+  "graphic_style": "../../GRAPHIC_STYLE.md"
 }
