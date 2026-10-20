@@ -1,5 +1,6 @@
-# Viva Wewa — premier lot de fabrication à valider
+# Sources historiques du lot01 refusé
 
+**Lot refusé par l’utilisateur : aucune vue ni composant reçu comme réaliste.** Sources historiques conservées ; reprise moto seule, pièce par pièce, selon [le plan](../../creative/MOTORCYCLE_PLAN.md).
 Ce lot contient une moto utilitaire au gabarit de référence Boxer 125 HD, un adulte assis articulé, une tenue veste/denim, des chaussures noires, un casque et un sac. Un export séparé fournit les manches et les mains pour examiner la vue au guidon. Il ne représente ni toute la liste du dossier, ni la rue étalon achevée, ni une réception artistique.
 
 Les fichiers et captures à recevoir sont décrits dans [la fiche de validation](../../creative/reviews/hero-lot01/README.md). Le [registre de fabrication](../../creative/library/fabrication-register.json) conserve les identifiants AS et les compléments du concept.

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "workflow": "../MOTORCYCLE_PLAN.md",
+  "user_feedback": "All lot01 views rejected: work too global; require component-by-component realism verification.",
+  "previous_lot": {
+    "id": "hero-lot01",
+    "state": "rejected_by_user",
+    "art_accepted": false
+  },
+  "scope_note": "Initial decomposition of the first motorcycle component, not a completed component inventory of all92 source families.",
+  "active_component": "MOTO-TYRE-FRONT-001",
+  "components": [
+    {
+      "id": "MOTO-TYRE-FRONT-001",
+      "parent_source_ids": [
+        "AS-049",
+        "CON-001"
+      ],
+      "name": "Pneu avant de la moto utilitaire de référence",
+      "reference_vehicle": "Bajaj Boxer125HD, variant and tyre supplier to identify",
+      "state": "reference_gaps_identified_reconstruction_pending",
+      "source_manifest": "motorcycle-reference-views.json",
+      "published_reference": {
+        "front_tyre_designation": "2.75-17",
+        "nominal_rim_diameter_m": 0.4318
+      },
+      "unknown": [
+        "high-resolution tread pattern and supplier identification",
+        "inflated outer diameter",
+        "loaded profile",
+        "legible sidewall markings",
+        "bead and rim interface detail"
+      ],
+      "rejected_source": "../../assets-src/hero-lot01/build_motorcycle.py",
+      "observed_model_defects": [
+        "circular torus section, no separate shoulder/sidewall profile",
+        "same section radius front and rear; width variable unused",
+        "42 invented repeated tread blocks",
+        "constant rubber colour and roughness, no verified surface detail"
+      ],
+      "gates": {
+        "references_sufficient": false,
+        "shape_comparison_passed": false,
+        "material_comparison_passed": false,
+        "engine_comparison_passed": false,
+        "optimized_variant_rechecked": false,
+        "user_art_accepted": false
+      },
+      "next_action": "Find legible front/side/tread references for a documented tyre variant before reconstructing its profile and grooves; log any remaining estimates."
+    }
+  ],
+  "coding_or_modeling_started_after_feedback": false,
+  "rider_gate": "Deferred until motorcycle artistic reception"
+}

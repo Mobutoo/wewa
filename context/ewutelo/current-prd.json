@@ -1,6 +1,6 @@
 {
   "idea_id": "27f8ffb12df14ff79c6e0f13cbd1cf91",
-  "revision": 14,
+  "revision": 15,
   "prd": {
     "acceptance_criteria": [
       "Petite moto utilitaire Wewa ; clavier ZQSD/WASD et tactile.",
@@ -40,8 +40,9 @@
           "separate first-person sleeves and hands",
           "original cardboard parcel, tape and restraint cords"
         ],
-        "state": "awaiting_user_review",
+        "state": "rejected_by_user",
         "storage": "Editable Blender, source vendors with rights and GLBs tracked in GitHub. Structured tracking only in Directus; no binary upload claimed.",
+        "user_feedback": "All views rejected for lack of realism and bulk assembly. Plan faithful motorcycle alone before coding; verify real dimensions and each component before rider.",
         "verification": {
           "actual_motorcycle_width_height_length_m": [
             0.7400729358196259,
@@ -67,7 +68,48 @@
       },
       "full_game_shipped": false,
       "model_identity_answer": "Codex, based on GPT-6; public game is Site version 3, still prealpha.",
-      "next_lot": "Review and correct first motorcycle/rider/equipment lot, then source-referenced 150–250m street. No art phase completion.",
+      "motorcycle_component_plan": {
+        "art_accepted": false,
+        "document": "https://github.com/Mobutoo/wewa/blob/main/creative/MOTORCYCLE_PLAN.md",
+        "driver_included": false,
+        "exact_variant_source": "Bajaj Boxer125HD RDC; current red-long-visor series, page model selector00JL22, not a certified model year",
+        "missing": [
+          "top/underneath views",
+          "legible instrument/control details",
+          "high-resolution tyre sidewall and tread identification",
+          "dimensioned drawings or measurements for individual parts"
+        ],
+        "new_geometry_created": false,
+        "published_dimensions_mm": {
+          "height": 1134,
+          "length": 2016,
+          "wheelbase": 1285,
+          "width": 740
+        },
+        "reference_images": {
+          "commercial_detail_images_downloaded_and_examined": 6,
+          "manifest": "creative/library/motorcycle-reference-views.json",
+          "rights": "Documentary study only; no redistribution/game-texture license established",
+          "rotation_angles_downloaded_and_examined": 8
+        },
+        "sequence": [
+          "document one piece and its measured/published/estimated dimensions",
+          "isolated shape comparison",
+          "material and surface comparison",
+          "correct critical defects",
+          "assemble verified motorcycle components only",
+          "recheck actual engine export and optimization",
+          "user motorcycle reception",
+          "then rider"
+        ],
+        "state": "planning_before_rebuild",
+        "tyre_designations": {
+          "front": "2.75-17",
+          "rear": "3.00-17"
+        },
+        "verified_source": "https://www.bajajauto.com/fr-cd/bikes/boxer-125hd"
+      },
+      "next_lot": "Motorcycle-only reference and component design plan. No new modeling before this planning step; rider deferred until motorcycle artistic reception.",
       "production_inventory": "92 source catalogue entries AS-001–AS-092 plus 67 overlapping concept traceability rows; previous 112 preparatory families were incomplete. creative/DOSSIER_ASSET_LIST.md and creative/library/fabrication-register.json.",
       "public_site_version_unchanged": 3,
       "public_source_commit_unchanged": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
@@ -312,7 +354,7 @@
         "Rush 30 s, six colis, poursuite et indice, balade",
         "Record local, réglages et maquette sonore originale"
       ],
-      "latest_art_status": "Editable first hero lot fabricated and inspected locally in Blender and Babylon for user review; public Site version3 unchanged and photographic target not met.",
+      "latest_art_status": "All first hero-lot views rejected; component-by-component motorcycle plan and verified manufacturer dimensions/references prepared. No new geometry or public deployment.",
       "limits": [
         "Exact street reference and real facade survey",
         "Human mobile and local road-priority validation",
@@ -590,7 +632,7 @@
         ],
         "details": "Silhouettes locales, LOD, collisions et animations contrôlés. Guidon, compteur et mains utilisables en première personne sans obstruction.",
         "id": "W17",
-        "implementation_status": "First editable motorcycle/rider/equipment/parcel lot submitted for user art review; W15, further vehicles, LOD, colliders, animations and physical Safari qualification remain open.",
+        "implementation_status": "Hero-lot01 rejected in all views. Motorcycle-only reference/component planning first; no piece accepted as realistic. Driver deferred until motorcycle reception.",
         "name": "Moto, pilote et véhicules",
         "phase": "P4",
         "status": "blocked"

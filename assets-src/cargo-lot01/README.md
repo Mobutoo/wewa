@@ -1,5 +1,6 @@
-# Colis de validation — cargo-lot01
+# Sources historiques du lot01 refusé
 
+**Lot refusé par l’utilisateur : aucune vue ni composant reçu comme réaliste.** Sources historiques conservées ; reprise moto seule, pièce par pièce, selon [le plan](../../creative/MOTORCYCLE_PLAN.md).
 Création originale pour Viva Wewa : carton kraft plié, ruban adhésif, deux liens de ficelle et étiquette fictive. Aucun modèle ou photographie tiers n’est incorporé. Les matières papier, ruban et fibre sont fabriquées dans Blender puis cuites en textures PBR ; elles ne sont pas des scans photographiques.
 
 Le carton nominal mesure 0,34 × 0,30 × 0,24 m. L’encombrement réel de l’ensemble, notamment les ficelles et leurs nœuds, est indiqué dans `provenance.json`. Origine au centre sous le carton. Repère Blender : Z haut, −Y avant ; glTF : Y haut, +Z avant.

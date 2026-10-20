@@ -1,5 +1,7 @@
 # Viva Wewa — production artistique après le refus de la version 3
 
+**Correction après refus du lot 01 :** toutes ses vues sont refusées par l’utilisateur. Appliquer la [fabrication et le contrôle pièce par pièce](COMPONENT_WORKFLOW.md). L’assemblage moto/pilote ne constitue plus l’unité de réception initiale ; aucun de ses composants n’a passé la vérification de réalisme demandée.
+
 La version publique 3 reste une préalpha. La référence photographique fournie par l’utilisateur est la cible artistique. La capture du moteur dans `WEWA_Developpement_Web/validation/browser/desktop-game.png` montre que cette cible n’est pas atteinte. Les fichiers Blender, tests logiciels et quantités d’objets ne remplacent pas cette comparaison.
 
 ## Écarts qui empêchent l’acceptation

@@ -4,7 +4,7 @@ Référence : [plan complet](WEWA_Developpement_Web/docs/PLAN_DE_PRODUCTION.md).
 
 Après le nouveau refus du rendu de la version 3, suivre aussi l’[audit et la fabrication artistique](creative/ART_PRODUCTION.md). La collecte de sources est séparée de leur adaptation dans Blender et de leur réception dans le moteur. Aucun nouveau déploiement artistique dans cette passe : la version 3 reste la préalpha publique.
 
-La fabrication a commencé avec le [lot moto/pilote à valider](creative/reviews/hero-lot01/README.md), ses modèles Blender/GLB et ses captures dans le moteur. La [liste rapprochée du dossier](creative/DOSSIER_ASSET_LIST.md) conserve les 92 fiches AS et les compléments du concept ; les 112 familles préparatoires ne couvraient pas entièrement ce dossier. Les lots et leurs états sont dans le [registre de fabrication](creative/library/fabrication-register.json). Aucun élément n’est déclaré reçu artistiquement avant retour utilisateur.
+Le [lot moto/pilote est refusé](creative/reviews/hero-lot01/README.md) : aucun de ses composants n’a atteint le réalisme demandé. La reprise suit la [fabrication pièce par pièce](creative/COMPONENT_WORKFLOW.md), à commencer par le pneu avant et ses références de détail. La [liste rapprochée du dossier](creative/DOSSIER_ASSET_LIST.md) conserve les 92 fiches AS et les compléments du concept ; les 112 familles préparatoires ne couvraient pas entièrement ce dossier. Les lots et leurs états sont dans le [registre de fabrication](creative/library/fabrication-register.json). Aucun élément n’est déclaré reçu artistiquement avant retour utilisateur.
 
 | Phase du plan | Production présente | Critères encore ouverts |
 |---|---|---|

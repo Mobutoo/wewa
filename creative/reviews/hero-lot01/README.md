@@ -1,4 +1,6 @@
-# Viva Wewa — lot 01 à valider
+# Viva Wewa — lot 01 refusé
+
+**Décision utilisateur : toutes les vues sont refusées pour manque de réalisme et fabrication trop globale.** Les fichiers ci-dessous sont des preuves historiques du lot rejeté, pas des composants reçus ni une nouvelle demande de validation. Reprise selon le [contrôle pièce par pièce](../../COMPONENT_WORKFLOW.md).
 
 **Premier lot de modèles, pas une nouvelle version du jeu complet.** La ville, ses façades et son ambiance restent à fabriquer selon la liste du dossier. Le jeu public n’est pas remplacé par ces modèles pendant cette réception.
 
@@ -15,7 +17,7 @@ Le lot comprend la moto utilitaire au gabarit de référence, le pilote articul�
 
 Les images de studio sont calculées à partir des vrais modèles dans Blender. Les images dans la rue proviennent de Babylon.js : les réponses des fichiers GLB sont remplacées **localement** pour examiner le lot. La ville visible derrière reste celle de la préalpha. Le cadrage au guidon est une proposition de réception, pas un réglage déjà appliqué au jeu public.
 
-## Retour demandé
+## Demande de retour initiale — archivée après refus
 
 Examiner les proportions de la moto et du pilote, la posture, le casque, le sac et les couleurs. Signaler les éléments à conserver et ceux à reprendre. Cela reçoit une direction de fabrication ; cela ne clôt ni W17, ni la qualité photographique de toute la scène.
 
