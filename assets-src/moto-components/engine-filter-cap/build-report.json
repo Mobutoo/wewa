@@ -1,0 +1,125 @@
+{
+  "preflight": {
+    "component_id": "MOTO-ENGINE-FILTER-CAP-001",
+    "source_sha256": "0e608b408cbadc490b52397cc20ff10b198344bb874725a6554dd4d14e092924",
+    "export_sha256": "45372ed74ec862985dd3af8452ba96d4f6f37be8567250f5c373b78c36648d3a",
+    "parent_source_sha256": "185274d117291007e185fba8209abac91153ece3ae9e4a0a8ce5a67667c4331f",
+    "collection": "WEWA_ENGINE_FILTER_CAP",
+    "geometry": [
+      {
+        "name": "RH oil filter cap - editable candidate",
+        "vertices": 3974,
+        "faces": 7956,
+        "connected_shells": 1,
+        "non_manifold_edges": 0,
+        "signed_volume_m3": 2.6263990915749048e-05
+      }
+    ],
+    "cleanup": {
+      "name": "RH oil filter cap - editable candidate",
+      "before_vertices_faces": [
+        3986,
+        7980
+      ],
+      "after_vertices_faces": [
+        3974,
+        7956
+      ],
+      "weld_distance_m": 1e-07,
+      "degenerate_distance_m": 1e-09,
+      "retained_vertex_to_original_vertex_max_m": 0.0,
+      "old_vertices_to_clean_surface_max_m": 4.6566128730773926e-09,
+      "clean_vertices_to_old_surface_max_m": 0.0,
+      "volume_before_m3": 2.626399098496637e-05,
+      "volume_after_m3": 2.6263990915749048e-05,
+      "volume_relative_delta": 2.635445748794054e-09,
+      "area_relative_delta": 4.200440186648903e-09,
+      "non_manifold_edges_after": 0,
+      "zero_area_triangles_after": 0,
+      "tangents_repaired": false
+    },
+    "interface_case_surface_crossings": 0,
+    "radial_spigot_to_parent_bore_gap_working_m": 0.0005,
+    "axial_gasket_gap_working_m": 0.0005,
+    "gasket_or_filter_element_fabricated": false,
+    "three_ears_only_documented_related_variant": true,
+    "normal_policy": "Inherited baked weighted custom normals explicitly cleared; plate planes flat and curved zones interpolated",
+    "custom_normals_present": false,
+    "matching_case_screw_stations_certified": false,
+    "datum_world_m_estimated": [
+      -0.105,
+      0.214,
+      -0.635
+    ],
+    "cap_centre_local_uvw_m": [
+      0.05676,
+      0.0066,
+      0.03825
+    ],
+    "bounds_world_m": {
+      "min": [
+        -0.14840000867843628,
+        0.11724000424146652,
+        -0.66839998960495
+      ],
+      "max": [
+        -0.13849999010562897,
+        0.19724000990390778,
+        -0.5849000215530396
+      ]
+    },
+    "all_dimensions_estimated": true,
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "CSG": {
+    "stages": [
+      {
+        "operation": "union",
+        "part": "Related catalogue fastening ear estimate 1",
+        "status": "NoError",
+        "before_volume_m3": 2.6339700399910727e-05,
+        "after_volume_m3": 2.652341900476032e-05
+      },
+      {
+        "operation": "union",
+        "part": "Related catalogue fastening ear estimate 2",
+        "status": "NoError",
+        "before_volume_m3": 2.652341900476032e-05,
+        "after_volume_m3": 2.6707137700947562e-05
+      },
+      {
+        "operation": "union",
+        "part": "Related catalogue fastening ear estimate 3",
+        "status": "NoError",
+        "before_volume_m3": 2.6707137700947562e-05,
+        "after_volume_m3": 2.689085645013413e-05
+      },
+      {
+        "operation": "subtract",
+        "part": "Ear screw bore estimate 1",
+        "status": "NoError",
+        "before_volume_m3": 2.689085645013413e-05,
+        "after_volume_m3": 2.6681901302042915e-05
+      },
+      {
+        "operation": "subtract",
+        "part": "Ear screw bore estimate 2",
+        "status": "NoError",
+        "before_volume_m3": 2.6681901302042915e-05,
+        "after_volume_m3": 2.6472946134111185e-05
+      },
+      {
+        "operation": "subtract",
+        "part": "Ear screw bore estimate 3",
+        "status": "NoError",
+        "before_volume_m3": 2.6472946134111185e-05,
+        "after_volume_m3": 2.626399098303583e-05
+      }
+    ],
+    "tool": "manifold3d",
+    "tool_version": "3.3.2",
+    "solid_components": 1,
+    "volume_m3": 2.626399098303583e-05
+  }
+}

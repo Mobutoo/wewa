@@ -1,0 +1,221 @@
+{
+  "schema": 1,
+  "id": "MOTO-FORK-INNER-TUBE-001",
+  "label": "Tube intérieur de fourche — pièce isolée",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01",
+    "D04",
+    "D15"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "whole",
+      "camera_location_m": [
+        0.55,
+        0.85,
+        0.39
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.275
+      ],
+      "ortho_scale_m": 0.63,
+      "checkpoint_file": "checkpoint-whole.json",
+      "PNG_sha256": "1ab3fd7a3aec8a251756f224659340cda0019fbcddc79124df62793d67468394",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "upper-thread",
+      "camera_location_m": [
+        0.075,
+        0.09,
+        0.61
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.537
+      ],
+      "ortho_scale_m": 0.07,
+      "checkpoint_file": "checkpoint-upper-thread.json",
+      "PNG_sha256": "4bcc7bd6aca32add09047e68635467d1d19de18d44a2ef9b62b3a93f0ab7c94a",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "lower-machining",
+      "camera_location_m": [
+        0.075,
+        0.1,
+        -0.055
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.027
+      ],
+      "ortho_scale_m": 0.087,
+      "checkpoint_file": "checkpoint-lower-machining.json",
+      "PNG_sha256": "f9dac12eab18fbfd193e268b5f47042d79b8cea7dea19d7dc97cbcb25dda7368",
+      "reused_verified_checkpoint": false
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-FORK-INNER-TUBE-001-IDENTITY-DIM",
+      "description": "Exact current RDC part, dimensions and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Attributed related photographs and documentary details, then measured same-part evidence if available; no related dimension certified as current"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "pending",
+      "revision": "front-fork-inner-tube-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "front-fork-inner-tube-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "front-fork-inner-tube-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "front-fork-inner-tube-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/front-fork/inner-tube/front-fork-inner-tube-v1.blend",
+          "kind": "editable_source",
+          "revision": "front-fork-inner-tube-v1",
+          "sha256": "dca2502286663e14f80bdcd35365bc61bedab849a2df2c612e48438e456d0294"
+        },
+        {
+          "path": "../../reviews/front-fork-inner-tube-v1/whole.png",
+          "kind": "isolated_comparison",
+          "revision": "front-fork-inner-tube-v1",
+          "sha256": "1ab3fd7a3aec8a251756f224659340cda0019fbcddc79124df62793d67468394"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "front-fork-inner-tube-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/front-fork-inner-tube-v1/lower-machining.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "front-fork-inner-tube-v1",
+          "sha256": "f9dac12eab18fbfd193e268b5f47042d79b8cea7dea19d7dc97cbcb25dda7368"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "front-fork-inner-tube-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/front-fork-inner-tube-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "front-fork-inner-tube-v1",
+          "sha256": "5c9de0b1b31f78c79551c1ee2396bf935d84be9435f01ca276bd2b18ff4e2475"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "front-fork-inner-tube-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/front-fork-inner-tube-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "front-fork-inner-tube-v1",
+          "sha256": "a265012d6adb0b9cd519cbfc3b65ccd59933a09d50152058a918da6b2c4bf5f2"
+        },
+        {
+          "path": "../../reviews/front-fork-inner-tube-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "front-fork-inner-tube-v1",
+          "sha256": "637c050a32fb23185d59db9942eb7968aaa9dd75d20b9ccc87b85b0af303b775"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "front-fork-inner-tube-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "front-fork-inner-tube-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "front-fork-inner-tube-v1",
+  "export_revision": "front-fork-inner-tube-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "production_group": 13,
+  "candidate_source": "../../../assets-src/moto-components/front-fork/inner-tube/README.md",
+  "candidate_review": "../../reviews/front-fork-inner-tube-v1/README.md"
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "revision": "switchgear-left-v1",
+  "source_sha256": "1d3daa6c33c688e4900ed6870b403e72c6e124b511c9d1184540bcf981e48664",
+  "export_sha256": "0a52d32bb408594b055df9aaf381dfca994d5b28a71a41440c459478a28c66ae",
+  "coordinate_system": "glTF metres; Blender(x,y,z)->glTF(x,z,-y)",
+  "node_rest_transform": "All listed PIVOT nodes are root nodes, quaternion(0,0,0,1), scale(1,1,1), translation only; axes local=node parent=glTF world. Verified with actual NodeIO exported nodes.",
+  "additive_translation_components": true,
+  "physical_device_or_electrical_tested": false,
+  "all_travel_estimated": true,
+  "controls": [
+    {
+      "node": "LH dipper rocker - high low PIVOT",
+      "type": "rotation",
+      "axis_local": [
+        -0.9166959524,
+        0,
+        0.3995854259
+      ],
+      "range_degrees": [
+        -9,
+        9
+      ],
+      "function_status": "documented_related_variant"
+    },
+    {
+      "node": "LH turn selector - centre push PIVOT",
+      "type": "translation",
+      "axis_local": [
+        -0.9166959524,
+        0,
+        0.3995854259
+      ],
+      "range_metres": [
+        -0.003,
+        0.003
+      ],
+      "function_status": "documented_related_variant"
+    },
+    {
+      "node": "LH turn selector - centre push PIVOT",
+      "type": "translation",
+      "axis_local": [
+        0.3995854259,
+        0,
+        0.9166959524
+      ],
+      "range_metres": [
+        0,
+        0.0014
+      ],
+      "function": "centre cancellation press",
+      "function_status": "documented_related_variant"
+    },
+    {
+      "node": "LH horn push tongue PIVOT",
+      "type": "translation",
+      "axis_local": [
+        0.3995854259,
+        0,
+        0.9166959524
+      ],
+      "range_metres": [
+        0,
+        0.0014
+      ],
+      "function_status": "documented_related_variant"
+    }
+  ]
+}

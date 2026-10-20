@@ -1,0 +1,127 @@
+{
+  "preflight": {
+    "id": "MOTO-ENGINE-COVER-RIGHT-001",
+    "source_sha256": "185274d117291007e185fba8209abac91153ece3ae9e4a0a8ce5a67667c4331f",
+    "export_sha256": "d5c3681252405fe5f3118e955d70276606d2ad8c4bfcdc38147ec841cf2c7d08",
+    "collection": "WEWA_ENGINE_COVER_RIGHT",
+    "geometry": [
+      {
+        "name": "RH clutch cover hollow casting - editable candidate",
+        "vertices": 178562,
+        "faces": 357132,
+        "connected_shells": 1,
+        "non_manifold_edges": 0,
+        "signed_volume_m3": 0.00011964237357061866
+      }
+    ],
+    "topology_cleanup": {
+      "name": "RH clutch cover hollow casting - editable candidate",
+      "before_vertices_faces": [
+        178562,
+        357132
+      ],
+      "after_vertices_faces": [
+        178562,
+        357132
+      ],
+      "weld_distance_m": 1e-07,
+      "degenerate_distance_m": 1e-09,
+      "retained_vertex_to_original_vertex_max_m": 0.0,
+      "old_vertices_to_clean_surface_max_m": 0.0,
+      "clean_vertices_to_old_surface_max_m": 0.0,
+      "volume_before_m3": 0.00011964237357061866,
+      "volume_after_m3": 0.00011964237357061866,
+      "volume_relative_delta": 0.0,
+      "area_relative_delta": 0.0,
+      "non_manifold_edges_after": 0,
+      "zero_area_triangles_after": 0,
+      "tangents_repaired": false
+    },
+    "filter_bore_ray_clear": true,
+    "rear_cavity_roof_local_w_m": 0.04400000721216202,
+    "datum_world_m_estimated": [
+      -0.105,
+      0.214,
+      -0.635
+    ],
+    "basis_local_u_v_w_world": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        0
+      ]
+    ],
+    "bounds_world_m": {
+      "min": [
+        -0.15200001001358032,
+        0.08711498975753784,
+        -0.7294384837150574
+      ],
+      "max": [
+        -0.10499998927116394,
+        0.340457022190094,
+        -0.5395680069923401
+      ]
+    },
+    "gasket_interface_and_internal_geometry_recovered": false,
+    "estimated_visible_fixation_count": 2,
+    "complete_fixation_count_known": false,
+    "material_measured": false,
+    "all_dimensions_estimated": true,
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "CSG": {
+    "stages": [
+      {
+        "operation": "union",
+        "part": "Visible fixation collar candidate 1",
+        "status": "NoError",
+        "before_volume_m3": 0.00012565225645966234,
+        "after_volume_m3": 0.00012708094907471827
+      },
+      {
+        "operation": "union",
+        "part": "Visible fixation collar candidate 2",
+        "status": "NoError",
+        "before_volume_m3": 0.00012708094907471827,
+        "after_volume_m3": 0.00012772237735849936
+      },
+      {
+        "operation": "subtract",
+        "part": "Visible fixation bore candidate 1",
+        "status": "NoError",
+        "before_volume_m3": 0.00012772237735849936,
+        "after_volume_m3": 0.00012727836306063127
+      },
+      {
+        "operation": "subtract",
+        "part": "Visible fixation bore candidate 2",
+        "status": "NoError",
+        "before_volume_m3": 0.00012727836306063127,
+        "after_volume_m3": 0.00012703007765552248
+      },
+      {
+        "operation": "subtract",
+        "part": "Filter seat actual open bore - diameter estimated",
+        "status": "NoError",
+        "before_volume_m3": 0.00012703007765552248,
+        "after_volume_m3": 0.00011964237356519441
+      }
+    ],
+    "tool": "manifold3d",
+    "tool_version": "3.3.2",
+    "solid_components": 1,
+    "volume_m3": 0.00011964237356519441
+  }
+}

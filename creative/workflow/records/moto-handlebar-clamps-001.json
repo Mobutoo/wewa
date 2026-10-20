@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-HANDLEBAR-CLAMPS-001",
-  "label": "Pontets et fixations du guidon",
+  "label": "Pontets du guidon — candidat séparé",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,9 +12,9 @@
     "material"
   ],
   "identity": {
-    "variant": "Boxer125HD current RDC target with related-parts catalogue; exact part applicability under research",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
-    "usage": "First-person foreground; isolated candidate before installed assembly",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
       0.15,
       0.35,
@@ -25,11 +25,47 @@
   "sources": [
     "D01",
     "D04",
-    "D13",
     "D15"
   ],
   "claims": [],
-  "views": [],
+  "views": [
+    {
+      "name": "quarter",
+      "camera_location_m": [
+        0.3,
+        0.32,
+        0.23
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        -0.015
+      ],
+      "lens_mm": 70,
+      "exploded_offsets_m": null,
+      "checkpoint_file": "checkpoint-quarter.json",
+      "PNG_sha256": "4805c716dc4d445e9676ac476c68b4866e82fe1c41860af3df30bc24e79aeb0b",
+      "reused_verified_checkpoint": true
+    },
+    {
+      "name": "material-close",
+      "camera_location_m": [
+        0.135,
+        0.13,
+        0.095
+      ],
+      "camera_target_m": [
+        0.045,
+        0,
+        0.003
+      ],
+      "lens_mm": 90,
+      "exploded_offsets_m": null,
+      "checkpoint_file": "checkpoint-material-close.json",
+      "PNG_sha256": "a022c9017199db8d25be0e35cc2c2a585048670d52ceb411e52d7ef417bfbb58",
+      "reused_verified_checkpoint": false
+    }
+  ],
   "criteria": [
     "Observable curved sections, openings, seams and fastening details compared with actual references",
     "All working dimensions and unseen interfaces labelled estimated",
@@ -52,7 +88,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "handlebar-clamps-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -60,73 +96,115 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": null,
+      "revision": "handlebar-clamps-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Documentary and scaling research in progress; no calibrated measurements",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
       "status": "blocked",
-      "revision": null,
+      "revision": "handlebar-clamps-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Documentary and scaling research in progress; no calibrated measurements",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "handlebar-clamps-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/handlebar-clamps/handlebar-clamps-v1.blend",
+          "kind": "editable_source",
+          "revision": "handlebar-clamps-v1",
+          "sha256": "416fd21980fe4425628bf7414607c8c37c12dea4f70965e0bac67c721d7e14c5"
+        },
+        {
+          "path": "../../reviews/handlebar-clamps-v1/quarter.png",
+          "kind": "isolated_comparison",
+          "revision": "handlebar-clamps-v1",
+          "sha256": "4805c716dc4d445e9676ac476c68b4866e82fe1c41860af3df30bc24e79aeb0b"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "handlebar-clamps-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-clamps-v1/material-close.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "handlebar-clamps-v1",
+          "sha256": "a022c9017199db8d25be0e35cc2c2a585048670d52ceb411e52d7ef417bfbb58"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "handlebar-clamps-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-clamps-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "handlebar-clamps-v1",
+          "sha256": "b4c21cdda42c06eebbb3513682276c5e407912ae9713e0b91c472aaddad1ab93"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "handlebar-clamps-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-clamps-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "handlebar-clamps-v1",
+          "sha256": "7ca987594e816f0de1033b142f5bc12d8c517f627fc64b8870914128926dec1f"
+        },
+        {
+          "path": "../../reviews/handlebar-clamps-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "handlebar-clamps-v1",
+          "sha256": "5a3750046ef6b804d209b379b41232682234a43419dd8217cefea464b7b65bb1"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "handlebar-clamps-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "handlebar-clamps-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
       "reviewed_at": null
     }
   },
-  "active_detailed_fabrication": true,
+  "active_detailed_fabrication": false,
   "source_revision": "handlebar-clamps-v1",
-  "export_revision": null,
-  "next_action": "Research attributed views and parameter ranges before constructing isolated source; retain exact RDC and mounting gaps",
+  "export_revision": "handlebar-clamps-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
   "art_accepted": false,
-  "production_group": 1
+  "production_group": 1,
+  "candidate_source": "../../../assets-src/moto-components/handlebar-clamps/README.md",
+  "candidate_review": "../../reviews/handlebar-clamps-v1/README.md"
 }

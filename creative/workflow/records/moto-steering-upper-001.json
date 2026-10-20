@@ -1,0 +1,204 @@
+{
+  "schema": 1,
+  "id": "MOTO-STEERING-UPPER-001",
+  "label": "Té supérieur — plaque isolée",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01",
+    "D04",
+    "D15"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "front-shape",
+      "camera_location_m": [
+        0,
+        0.045,
+        0.35
+      ],
+      "camera_target_m": [
+        0,
+        0.045,
+        0
+      ],
+      "ortho_scale_m": 0.26,
+      "checkpoint_file": "checkpoint-front-shape.json",
+      "PNG_sha256": "d3c9b569ad8303e5aaa693c9babe09f468fb9a953ebcf64a86dc8d0d07302f2e",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "reverse-rim",
+      "camera_location_m": [
+        -0.12,
+        -0.1,
+        -0.22
+      ],
+      "camera_target_m": [
+        0,
+        0.045,
+        0
+      ],
+      "ortho_scale_m": 0.27,
+      "checkpoint_file": "checkpoint-reverse-rim.json",
+      "PNG_sha256": "abffb67645ed5bbaf9938e827f208baaff0730489ecd4292ef6076e80f71136f",
+      "reused_verified_checkpoint": false
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-STEERING-UPPER-001-IDENTITY-DIM",
+      "description": "Exact current RDC part, dimensions and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Attributed related photographs and documentary details, then measured same-part evidence if available; no related dimension certified as current"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "pending",
+      "revision": "steering-upper-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "steering-upper-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "steering-upper-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "steering-upper-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/steering-triples/upper/steering-upper-v1.blend",
+          "kind": "editable_source",
+          "revision": "steering-upper-v1",
+          "sha256": "ba2bf24d27f3ef2092d3997823f2c792cec4af268aa527ee4730ba23f064e47f"
+        },
+        {
+          "path": "../../reviews/steering-upper-v1/front-shape.png",
+          "kind": "isolated_comparison",
+          "revision": "steering-upper-v1",
+          "sha256": "d3c9b569ad8303e5aaa693c9babe09f468fb9a953ebcf64a86dc8d0d07302f2e"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "steering-upper-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/steering-upper-v1/reverse-rim.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "steering-upper-v1",
+          "sha256": "abffb67645ed5bbaf9938e827f208baaff0730489ecd4292ef6076e80f71136f"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "steering-upper-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/steering-upper-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "steering-upper-v1",
+          "sha256": "a52bf4a90639c0d73f357af834483c61c0a3fe1a0c14a7722408f6d20f16722d"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "steering-upper-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/steering-upper-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "steering-upper-v1",
+          "sha256": "b358c17fa1d5ade229e3c6891bd09a55144e40b50575fcadb69e0d7f6bbdc6cd"
+        },
+        {
+          "path": "../../reviews/steering-upper-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "steering-upper-v1",
+          "sha256": "4e70fc19926eda27303e9adcd7d541a3593e138f339ee5e5e38186c9b57f5416"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "steering-upper-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "steering-upper-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "steering-upper-v1",
+  "export_revision": "steering-upper-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "production_group": 13,
+  "candidate_source": "../../../assets-src/moto-components/steering-triples/upper/README.md",
+  "candidate_review": "../../reviews/steering-upper-v1/README.md"
+}

@@ -1,0 +1,755 @@
+{
+  "component_id": "MOTO-THROTTLE-CONTROL-001",
+  "revision": "throttle-control-v1",
+  "source_sha256": "1c0747975fbdcd2ada2140f2461ff359940967aa1a3036e2b7e0a3d24221237f",
+  "source_check": {
+    "component_id": "MOTO-THROTTLE-CONTROL-001",
+    "revision": "throttle-control-v1",
+    "source_sha256": "1c0747975fbdcd2ada2140f2461ff359940967aa1a3036e2b7e0a3d24221237f",
+    "export_sha256": "ccb6b814a59e00b63647ec1268f31bbb1dd91225a44f572a63c792f4a0946a2c",
+    "geometry": [
+      {
+        "name": "Throttle sleeve and cable spool - moving candidate",
+        "vertices": 3009,
+        "faces": 6018,
+        "connected_shells": 1,
+        "non_manifold_edges": 0,
+        "signed_volume_m3": 1.6154531121819798e-05
+      },
+      {
+        "name": "Throttle fixed hollow cable guide - estimated",
+        "vertices": 672,
+        "faces": 672,
+        "connected_shells": 1,
+        "non_manifold_edges": 0,
+        "signed_volume_m3": 5.613995189178631e-07
+      }
+    ],
+    "motion_poses": [
+      {
+        "opening_degrees": 0,
+        "local_X_rotation_degrees": 0,
+        "surface_crossings_grip": 0,
+        "surface_crossings_bar": 0,
+        "surface_crossings_fixed_guide": 0
+      },
+      {
+        "opening_degrees": 10,
+        "local_X_rotation_degrees": -10,
+        "surface_crossings_grip": 0,
+        "surface_crossings_bar": 0,
+        "surface_crossings_fixed_guide": 0
+      },
+      {
+        "opening_degrees": 20,
+        "local_X_rotation_degrees": -20,
+        "surface_crossings_grip": 0,
+        "surface_crossings_bar": 0,
+        "surface_crossings_fixed_guide": 0
+      },
+      {
+        "opening_degrees": 30,
+        "local_X_rotation_degrees": -30,
+        "surface_crossings_grip": 0,
+        "surface_crossings_bar": 0,
+        "surface_crossings_fixed_guide": 0
+      },
+      {
+        "opening_degrees": 40,
+        "local_X_rotation_degrees": -40,
+        "surface_crossings_grip": 0,
+        "surface_crossings_bar": 0,
+        "surface_crossings_fixed_guide": 0
+      },
+      {
+        "opening_degrees": 50,
+        "local_X_rotation_degrees": -50,
+        "surface_crossings_grip": 0,
+        "surface_crossings_bar": 0,
+        "surface_crossings_fixed_guide": 0
+      }
+    ],
+    "scope": "Actual meshes and six working poses; not measured cable actuation or exact RDC throttle",
+    "candidate_clearances_m": {
+      "tube_to_sleeve_radial": 0.00015,
+      "sleeve_to_rubber_radial": 0.0002,
+      "spool_to_reserved_housing_radial": 0.0005
+    },
+    "all_dimensions_and_motion_estimated": true,
+    "linked_grip_revision": "handlebar-grips-v2 corrected handedness",
+    "external_housing_created": false,
+    "full_cable_modelled": false,
+    "physical_iphone_tested": false,
+    "art_accepted": false,
+    "opening_direction_geometry_test": {
+      "actual_mesh_vertex_index": 527,
+      "local_mesh_position_m": [
+        0.003000000026077032,
+        0.012500000186264515,
+        0.0
+      ],
+      "world_position_closed_m": [
+        -0.33724990487098694,
+        0.08380124717950821,
+        0.11749999970197678
+      ],
+      "world_position_open50_m": [
+        -0.3334236741065979,
+        0.09257911890745163,
+        0.11303484439849854
+      ],
+      "delta_world_Y_m": 0.00877787172794342,
+      "opening_rotation_axis_local": [
+        -1,
+        0,
+        0
+      ],
+      "opening_angle_range_degrees": [
+        0,
+        50
+      ]
+    }
+  },
+  "export_check": {
+    "asset": "throttle",
+    "revision": "throttle-control-v1",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/throttle-control/throttle-control-inspection.glb",
+        "sha256": "ccb6b814a59e00b63647ec1268f31bbb1dd91225a44f572a63c792f4a0946a2c",
+        "bytes": 136556,
+        "glTF_errors": 0,
+        "glTF_warnings": 0,
+        "messages": [],
+        "bounds": {
+          "min": [
+            -0.34310149242755295,
+            0.07199999310888104,
+            -0.09552202710313046
+          ],
+          "max": [
+            -0.21363699582899712,
+            0.12350000186855972,
+            -0.010485603660664583
+          ]
+        },
+        "vertices": 3681,
+        "triangles": 7362,
+        "triangle_area_local_m2": {
+          "minimum": 2.6375199316201284e-10,
+          "exactly_zero": 0,
+          "below_1e_minus18": 0,
+          "note": "Local exported coordinates; not a self-intersection or surface-fidelity proof"
+        },
+        "tangent_frame": {
+          "vectors": 0,
+          "max_unit_error": 0,
+          "max_normal_dot": 0,
+          "handedness_sign_is_unit": true,
+          "note": "Finite orthonormal frame only; not full MikkTSpace or renderer visual parity"
+        },
+        "node_names": [
+          "Throttle fixed hollow cable guide - estimated",
+          "Throttle sleeve and cable spool - moving candidate",
+          "Throttle datum - physical RIGHT -X"
+        ],
+        "materials": [
+          {
+            "name": "Throttle cable guide polymer - estimated",
+            "basecolor": [
+              0.012000000104308128,
+              0.014000000432133675,
+              0.017000000923871994,
+              1
+            ],
+            "metallic": 0,
+            "roughness": 0.550000011920929,
+            "extensions": []
+          },
+          {
+            "name": "Throttle carrier pale polymer - estimated",
+            "basecolor": [
+              0.550000011920929,
+              0.5299999713897705,
+              0.44999998807907104,
+              1
+            ],
+            "metallic": 0,
+            "roughness": 0.41999998688697815,
+            "extensions": []
+          }
+        ]
+      }
+    ],
+    "scope": "Actual glTF buffers and format only; not shape reception, physical interface or mobile qualification",
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "browser_check": {
+    "camera": {
+      "position": [
+        -0.2794980728588906,
+        0.2609526907579899,
+        -0.32090502591214476
+      ],
+      "target": [
+        -0.2794980728588906,
+        0.09774999636483556,
+        -0.05518975581561909
+      ],
+      "radius": 0.31183284660159666,
+      "fov": 0.72,
+      "fovMode": 0
+    },
+    "framing": {
+      "min": [
+        0.3660710820666945,
+        0.33017366789141356
+      ],
+      "max": [
+        0.6407539914745849,
+        0.6604499842298615
+      ],
+      "scope": "Conservative projected actual mesh bounding boxes; whole-piece framing only"
+    },
+    "asset": "throttle",
+    "revision": "throttle-control-v1",
+    "config": {
+      "label": "Manchon accélérateur et entraînement de câble",
+      "lot": 3,
+      "review": "throttle-control-v1",
+      "source": "throttle-control/throttle-control-v1.blend",
+      "component_id": "MOTO-THROTTLE-CONTROL-001",
+      "files": [
+        "throttle-control/throttle-control-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "throttle",
+          "label": "Rotation du manchon",
+          "node": "Throttle sleeve and cable spool - moving candidate",
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "min": 0,
+          "max": 50,
+          "initial": 0
+        }
+      ],
+      "collection": "WEWA_THROTTLE_CONTROL"
+    },
+    "files": [
+      "throttle-control/throttle-control-inspection.glb"
+    ],
+    "meshes": 2,
+    "vertices": 3681,
+    "triangles": 7362,
+    "bounds": {
+      "min": [
+        -0.3455589434788769,
+        0.07199999017374921,
+        -0.10115970858276051
+      ],
+      "max": [
+        -0.2134372022389044,
+        0.1235000025559219,
+        -0.009219803048477679
+      ]
+    },
+    "textures_ready": true,
+    "renderer": {
+      "vendor": "Google Inc. (Google)",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "rig_states": {
+      "throttle": 0
+    },
+    "attachments": [],
+    "rigs": [
+      {
+        "id": "throttle",
+        "node": "Throttle sleeve and cable spool - moving candidate",
+        "quaternion": [
+          -1.1102230246251565e-16,
+          2.220446049250313e-16,
+          2.6469779601696886e-23,
+          1
+        ],
+        "world_matrix": [
+          0.9166959524154663,
+          1.720335518484717e-08,
+          0.399585485458374,
+          0.0,
+          -0.399585485458374,
+          -6.237571881229087e-08,
+          0.9166960716247559,
+          0.0,
+          -1.720335518484717e-08,
+          -1.0000001192092896,
+          -6.237571881229087e-08,
+          0.0,
+          -0.3400000035762787,
+          0.10499999672174454,
+          -0.08500000089406967,
+          1.0
+        ],
+        "actual_geometry": [
+          {
+            "mesh": "Throttle sleeve and cable spool - moving candidate",
+            "vertex_index": 1504,
+            "point_world": [
+              -0.23211879087829723,
+              0.0951005018534336,
+              -0.027175743404874123
+            ]
+          }
+        ]
+      }
+    ],
+    "art_accepted": false,
+    "physical_iphone_tested": false,
+    "public_game_unchanged": true,
+    "pixel_checks": [
+      {
+        "view": "quarter",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 43874,
+        "changed_fraction": 0.038085069444444446,
+        "rgb_min": [
+          26,
+          31,
+          36
+        ],
+        "rgb_max": [
+          237,
+          236,
+          227
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "driver",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 53477,
+        "changed_fraction": 0.04642100694444445,
+        "rgb_min": [
+          26,
+          31,
+          36
+        ],
+        "rgb_max": [
+          237,
+          236,
+          225
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "reverse",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50478,
+        "changed_fraction": 0.04381770833333333,
+        "rgb_min": [
+          26,
+          31,
+          35
+        ],
+        "rgb_max": [
+          234,
+          235,
+          230
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "throttle:0",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50478,
+        "changed_fraction": 0.04381770833333333,
+        "rgb_min": [
+          26,
+          31,
+          35
+        ],
+        "rgb_max": [
+          234,
+          235,
+          230
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "throttle:50",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50467,
+        "changed_fraction": 0.04380815972222222,
+        "rgb_min": [
+          26,
+          31,
+          35
+        ],
+        "rgb_max": [
+          234,
+          236,
+          230
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "throttle:-1000",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50478,
+        "changed_fraction": 0.04381770833333333,
+        "rgb_min": [
+          26,
+          31,
+          35
+        ],
+        "rgb_max": [
+          234,
+          235,
+          230
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "throttle:1050",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50467,
+        "changed_fraction": 0.04380815972222222,
+        "rgb_min": [
+          26,
+          31,
+          35
+        ],
+        "rgb_max": [
+          234,
+          236,
+          230
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "landscape-844x390",
+        "width": 844,
+        "height": 390,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 10159,
+        "changed_fraction": 0.03086340989184591,
+        "rgb_min": [
+          26,
+          31,
+          36
+        ],
+        "rgb_max": [
+          237,
+          236,
+          225
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      }
+    ],
+    "page_errors": [],
+    "http_failures": [],
+    "pose_checks": [
+      {
+        "rig": "throttle",
+        "states": [
+          {
+            "requested": 0,
+            "rig_states": {
+              "throttle": 0
+            },
+            "rig": {
+              "id": "throttle",
+              "node": "Throttle sleeve and cable spool - moving candidate",
+              "quaternion": [
+                -1.1102230246251565e-16,
+                2.220446049250313e-16,
+                2.6469779601696886e-23,
+                1
+              ],
+              "world_matrix": [
+                0.9166959524154663,
+                1.720335518484717e-08,
+                0.399585485458374,
+                0.0,
+                -0.399585485458374,
+                -6.237571881229087e-08,
+                0.9166960716247559,
+                0.0,
+                -1.720335518484717e-08,
+                -1.0000001192092896,
+                -6.237571881229087e-08,
+                0.0,
+                -0.3400000035762787,
+                0.10499999672174454,
+                -0.08500000089406967,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "Throttle sleeve and cable spool - moving candidate",
+                  "vertex_index": 1504,
+                  "point_world": [
+                    -0.23211879087829723,
+                    0.0951005018534336,
+                    -0.027175743404874123
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 50,
+            "rig_states": {
+              "throttle": 50
+            },
+            "rig": {
+              "id": "throttle",
+              "node": "Throttle sleeve and cable spool - moving candidate",
+              "quaternion": [
+                -0.42261826174069955,
+                2.012407433264201e-16,
+                9.384012895208446e-17,
+                0.9063077870366499
+              ],
+              "world_matrix": [
+                0.9166959524154663,
+                1.720335518484717e-08,
+                0.399585485458374,
+                0.0,
+                -0.25684860348701477,
+                0.7660444974899292,
+                0.5892409682273865,
+                0.0,
+                -0.3061002492904663,
+                -0.642787754535675,
+                0.7022298574447632,
+                0.0,
+                -0.3400000035762787,
+                0.10499999672174454,
+                -0.08500000089406967,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "Throttle sleeve and cable spool - moving candidate",
+                  "vertex_index": 1504,
+                  "point_world": [
+                    -0.23373600557364477,
+                    0.10622017835204035,
+                    -0.02346566192003563
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": -1000,
+            "rig_states": {
+              "throttle": 0
+            },
+            "rig": {
+              "id": "throttle",
+              "node": "Throttle sleeve and cable spool - moving candidate",
+              "quaternion": [
+                -1.1102230246251565e-16,
+                2.220446049250313e-16,
+                2.6469779601696886e-23,
+                1
+              ],
+              "world_matrix": [
+                0.9166959524154663,
+                1.720335518484717e-08,
+                0.399585485458374,
+                0.0,
+                -0.399585485458374,
+                -6.237571881229087e-08,
+                0.9166960716247559,
+                0.0,
+                -1.720335518484717e-08,
+                -1.0000001192092896,
+                -6.237571881229087e-08,
+                0.0,
+                -0.3400000035762787,
+                0.10499999672174454,
+                -0.08500000089406967,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "Throttle sleeve and cable spool - moving candidate",
+                  "vertex_index": 1504,
+                  "point_world": [
+                    -0.23211879087829723,
+                    0.0951005018534336,
+                    -0.027175743404874123
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 1050,
+            "rig_states": {
+              "throttle": 50
+            },
+            "rig": {
+              "id": "throttle",
+              "node": "Throttle sleeve and cable spool - moving candidate",
+              "quaternion": [
+                -0.42261826174069955,
+                2.012407433264201e-16,
+                9.384012895208446e-17,
+                0.9063077870366499
+              ],
+              "world_matrix": [
+                0.9166959524154663,
+                1.720335518484717e-08,
+                0.399585485458374,
+                0.0,
+                -0.25684860348701477,
+                0.7660444974899292,
+                0.5892409682273865,
+                0.0,
+                -0.3061002492904663,
+                -0.642787754535675,
+                0.7022298574447632,
+                0.0,
+                -0.3400000035762787,
+                0.10499999672174454,
+                -0.08500000089406967,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "Throttle sleeve and cable spool - moving candidate",
+                  "vertex_index": 1504,
+                  "point_world": [
+                    -0.23373600557364477,
+                    0.10622017835204035,
+                    -0.02346566192003563
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "actual_vertex_travel_m": 0.011833312867859814
+      }
+    ],
+    "scope": "Actual Babylon imports and vertex motion in Chromium softwareWebGL; not Safari/iPhone/FPS qualification",
+    "render_mode": "Manual frames after scene readiness",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/throttle-control/throttle-control-inspection.glb",
+        "sha256": "ccb6b814a59e00b63647ec1268f31bbb1dd91225a44f572a63c792f4a0946a2c"
+      }
+    ],
+    "inspector_sha256": "19e4908f4a7b69b492710adfb7d28a5508745721f9c991941a5ed439f3a9fb07",
+    "capture_tool_sha256": "53b07b0e9bda4b86c9d7f05c10815755b3be50dcc85e29a4b3f164cbc38fcf28",
+    "inspector_path": "tools/motorcycle-lab/review-v2.js",
+    "capture_tool_path": "tools/capture_motorcycle18_v3.py",
+    "inputs_unchanged_during_capture": true
+  },
+  "render_report": {
+    "source_sha256": "1c0747975fbdcd2ada2140f2461ff359940967aa1a3036e2b7e0a3d24221237f",
+    "samples": 96,
+    "denoising": "OpenImageDenoise",
+    "resolution_px": [
+      1100,
+      850
+    ],
+    "actual_blender_render": true,
+    "studio_area_energy_multiplier": 0.08,
+    "guides_visible": false,
+    "views": [
+      {
+        "name": "quarter-rest",
+        "frame": 1,
+        "working_angle_degrees": 0,
+        "location": [
+          -0.4399999976158142,
+          -0.13099999725818634,
+          0.24500000476837158
+        ],
+        "target": [
+          -0.28,
+          0.059,
+          0.105
+        ],
+        "lens_mm": 65
+      },
+      {
+        "name": "spool-working-50deg",
+        "frame": 49,
+        "working_angle_degrees": 50,
+        "location": [
+          -0.1249999925494194,
+          -0.08499999344348907,
+          0.2150000035762787
+        ],
+        "target": [
+          -0.225,
+          0.035,
+          0.105
+        ],
+        "lens_mm": 80
+      }
+    ],
+    "art_accepted": false
+  },
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true
+}

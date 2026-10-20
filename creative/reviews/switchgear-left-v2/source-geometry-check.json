@@ -1,0 +1,382 @@
+{
+  "component_id": "MOTO-SWITCHGEAR-LEFT-001",
+  "revision": "switchgear-left-v2",
+  "source_sha256": "657ecbdb13f48f9eb59a354ed7ebfba2ab05a7ac7d6b6e7c7ced8cb33b610ea4",
+  "export_sha256": "145a1464a83b0454eb2116e0c8b18cd51c972a9c5b74d5e5ca08624b2bd8f1d3",
+  "checks": [
+    {
+      "object": "LH switch upper shell - editable",
+      "vertices": 1467,
+      "faces": 2942,
+      "shells": 1,
+      "non_manifold_edges": 0,
+      "signed_volume_m3": 1.4999112914485723e-05
+    },
+    {
+      "object": "LH switch lower shell - editable",
+      "vertices": 2016,
+      "faces": 4044,
+      "shells": 1,
+      "non_manifold_edges": 0,
+      "signed_volume_m3": 2.7509867719173163e-05
+    },
+    {
+      "object": "LH dipper rocker - high low",
+      "vertices": 266,
+      "faces": 528,
+      "shells": 1,
+      "non_manifold_edges": 0,
+      "signed_volume_m3": 5.892564334733833e-07
+    },
+    {
+      "object": "LH turn selector - centre push",
+      "vertices": 304,
+      "faces": 604,
+      "shells": 1,
+      "non_manifold_edges": 0,
+      "signed_volume_m3": 4.083983612251015e-07
+    },
+    {
+      "object": "LH horn push tongue",
+      "vertices": 326,
+      "faces": 648,
+      "shells": 1,
+      "non_manifold_edges": 0,
+      "signed_volume_m3": 9.052620422193195e-07
+    },
+    {
+      "object": "LH underside screw head 0.129",
+      "vertices": 1419,
+      "faces": 2834,
+      "shells": 1,
+      "non_manifold_edges": 0,
+      "signed_volume_m3": 2.5921957566346066e-08
+    },
+    {
+      "object": "LH underside screw head 0.158",
+      "vertices": 1419,
+      "faces": 2834,
+      "shells": 1,
+      "non_manifold_edges": 0,
+      "signed_volume_m3": 2.5921948402197927e-08
+    }
+  ],
+  "bar_axis_clear_in_both_shells": [
+    true,
+    true
+  ],
+  "controls": [
+    {
+      "object": "LH dipper rocker - high low",
+      "pivot_world_m": [
+        0.20992319285869598,
+        0.05557171255350113,
+        0.11774999648332596
+      ],
+      "travel_estimated": {
+        "rotation_degrees": [
+          -9,
+          9
+        ]
+      },
+      "actual_electrical_state_tested": false
+    },
+    {
+      "object": "LH turn selector - centre push",
+      "pivot_world_m": [
+        0.205339714884758,
+        0.05357377976179123,
+        0.09699999541044235
+      ],
+      "travel_estimated": {
+        "slide_metres": [
+          -0.003,
+          0.003
+        ],
+        "push_metres": 0.0014
+      },
+      "actual_electrical_state_tested": false
+    },
+    {
+      "object": "LH horn push tongue",
+      "pivot_world_m": [
+        0.20992319285869598,
+        0.05557171255350113,
+        0.06999999284744263
+      ],
+      "travel_estimated": {
+        "push_metres": 0.0014
+      },
+      "actual_electrical_state_tested": false
+    }
+  ],
+  "CSG": [
+    {
+      "stages": [
+        {
+          "operation": "features",
+          "part": "Estimated clamp screw boss0.129",
+          "before_volume_m3": 0.00011564141392528016,
+          "after_volume_m3": 0.00011567099660533264
+        },
+        {
+          "operation": "features",
+          "part": "Estimated clamp screw boss0.158",
+          "before_volume_m3": 0.00011567099660533264,
+          "after_volume_m3": 0.0001157005792853851
+        },
+        {
+          "operation": "drills",
+          "part": "LH switch interior wall cavity",
+          "before_volume_m3": 0.0001157005792853851,
+          "after_volume_m3": 4.8386382475805897e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Bar passage 22.5mm working",
+          "before_volume_m3": 4.8386382475805897e-05,
+          "after_volume_m3": 4.6002442232530785e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Estimated screw core0.129",
+          "before_volume_m3": 4.6002442232530785e-05,
+          "after_volume_m3": 4.5832323994555933e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Estimated underside counterbore0.129",
+          "before_volume_m3": 4.5832323994555933e-05,
+          "after_volume_m3": 4.5643001850451714e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Estimated screw core0.158",
+          "before_volume_m3": 4.5643001850451714e-05,
+          "after_volume_m3": 4.5472883612476856e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Estimated underside counterbore0.158",
+          "before_volume_m3": 4.5472883612476856e-05,
+          "after_volume_m3": 4.528356146827679e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Dipper actuator aperture",
+          "before_volume_m3": 4.528356146827679e-05,
+          "after_volume_m3": 4.436721900128017e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Turn selector slot",
+          "before_volume_m3": 4.436721900128017e-05,
+          "after_volume_m3": 4.400298032990137e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Horn actuator lower aperture",
+          "before_volume_m3": 4.400298032990137e-05,
+          "after_volume_m3": 4.288229294086619e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Turn selector rectangular inset panel",
+          "before_volume_m3": 4.288229294086619e-05,
+          "after_volume_m3": 4.2648687256279605e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Split plane upper",
+          "before_volume_m3": 4.2648687256279605e-05,
+          "after_volume_m3": 1.4999126391177785e-05
+        }
+      ],
+      "solid_components": 1,
+      "volume_m3": 1.4999126391177785e-05,
+      "worker": "manifold3d",
+      "worker_version": "3.3.2"
+    },
+    {
+      "stages": [
+        {
+          "operation": "features",
+          "part": "Estimated clamp screw boss0.129",
+          "before_volume_m3": 0.00011564141392528016,
+          "after_volume_m3": 0.00011567099660533264
+        },
+        {
+          "operation": "features",
+          "part": "Estimated clamp screw boss0.158",
+          "before_volume_m3": 0.00011567099660533264,
+          "after_volume_m3": 0.0001157005792853851
+        },
+        {
+          "operation": "drills",
+          "part": "LH switch interior wall cavity",
+          "before_volume_m3": 0.0001157005792853851,
+          "after_volume_m3": 4.8386382475805897e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Bar passage 22.5mm working",
+          "before_volume_m3": 4.8386382475805897e-05,
+          "after_volume_m3": 4.6002442232530785e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Estimated screw core0.129",
+          "before_volume_m3": 4.6002442232530785e-05,
+          "after_volume_m3": 4.5832323994555933e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Estimated underside counterbore0.129",
+          "before_volume_m3": 4.5832323994555933e-05,
+          "after_volume_m3": 4.5643001850451714e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Estimated screw core0.158",
+          "before_volume_m3": 4.5643001850451714e-05,
+          "after_volume_m3": 4.5472883612476856e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Estimated underside counterbore0.158",
+          "before_volume_m3": 4.5472883612476856e-05,
+          "after_volume_m3": 4.528356146827679e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Dipper actuator aperture",
+          "before_volume_m3": 4.528356146827679e-05,
+          "after_volume_m3": 4.436721900128017e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Turn selector slot",
+          "before_volume_m3": 4.436721900128017e-05,
+          "after_volume_m3": 4.400298032990137e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Horn actuator lower aperture",
+          "before_volume_m3": 4.400298032990137e-05,
+          "after_volume_m3": 4.288229294086619e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Turn selector rectangular inset panel",
+          "before_volume_m3": 4.288229294086619e-05,
+          "after_volume_m3": 4.2648687256279605e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Split plane lower",
+          "before_volume_m3": 4.2648687256279605e-05,
+          "after_volume_m3": 2.7509884163992198e-05
+        }
+      ],
+      "solid_components": 1,
+      "volume_m3": 2.7509884163992198e-05,
+      "worker": "manifold3d",
+      "worker_version": "3.3.2"
+    }
+  ],
+  "datum": {
+    "endpoint_m": [
+      0.3400000035762787,
+      0.08500000089406967,
+      0.10499999672174454
+    ],
+    "inward_axis": [
+      -0.9166959524154663,
+      -0.39958542585372925,
+      0.0
+    ],
+    "thumb_side_radial": [
+      -0.39958542585372925,
+      0.9166959524154663,
+      0.0
+    ],
+    "left_is_positive_X": true
+  },
+  "all_dimensions_estimated": true,
+  "exact_current_RDC_identity_confirmed": false,
+  "functional_electrical_controls": false,
+  "accepted_art": false,
+  "parent_revision": "switchgear-left-v1",
+  "parent_source_sha256": "1d3daa6c33c688e4900ed6870b403e72c6e124b511c9d1184540bcf981e48664",
+  "parent_export_sha256": "0a52d32bb408594b055df9aaf381dfca994d5b28a71a41440c459478a28c66ae",
+  "only_icon_contours_changed": true,
+  "source_rigid_geometry_normals_UV_parenting_identical": true,
+  "source_rigid_signature_sha256": {
+    "LH switch upper shell - editable": "6ba469a44461cc8e92c42fc4c162760fc92adef4d4b5ee358964efeefc10ddc8",
+    "LH switch lower shell - editable": "b0c69a9af65f3311d70cbd47505a629be090aaa53d70a1f5759de344ec75b26c",
+    "LH dipper rocker - high low": "181c55f0f52d4de8105b9e919052b7350482ab2ced7e028eae8b473d5c0a4ce4",
+    "LH turn selector - centre push": "24bf76f1a4242165709abaf1794fcc54e701c53f3679cfeac479ac323e80b662",
+    "LH horn push tongue": "a62d384cb450825b3ccfd5865986c45fa3d1e62e3f112692b4c6ffda79d42db7",
+    "LH underside screw head 0.129": "e811536dbac6cb953b185107decc640ada58e9a9032a422030e9e0ffe6d588e5",
+    "LH underside screw head 0.158": "8bb558c44dabeeeec080453920156c5c709a43d530e1639695385b80d67a8f8e"
+  },
+  "removed_icons": [
+    "LH print beam housing 0.014",
+    "LH print beam ray 0.014 0",
+    "LH print beam ray 0.014 1",
+    "LH print beam ray 0.014 2",
+    "LH print beam housing 0.006",
+    "LH print beam ray 0.006 0",
+    "LH print beam ray 0.006 1",
+    "LH print beam ray 0.006 2",
+    "LH print horn",
+    "LH print horn lower loop"
+  ],
+  "new_icon_contours": [
+    {
+      "object": "LH print high_beam traced contours v2",
+      "editable_curve": "EDITABLE high_beam white ink outline v2",
+      "source_components": 6,
+      "contour_loops": 7,
+      "width_m_estimated": 0.0063,
+      "photo_bounds_px": [
+        407,
+        120,
+        458,
+        145
+      ],
+      "five_rays_documented": 5
+    },
+    {
+      "object": "LH print low_beam traced contours v2",
+      "editable_curve": "EDITABLE low_beam white ink outline v2",
+      "source_components": 6,
+      "contour_loops": 7,
+      "width_m_estimated": 0.0063,
+      "photo_bounds_px": [
+        412,
+        175,
+        464,
+        201
+      ],
+      "five_rays_documented": 5
+    },
+    {
+      "object": "LH print horn traced contours v2",
+      "editable_curve": "EDITABLE horn white ink outline v2",
+      "source_components": 1,
+      "contour_loops": 2,
+      "width_m_estimated": 0.0079,
+      "photo_bounds_px": [
+        290,
+        437,
+        358,
+        477
+      ],
+      "five_rays_documented": null
+    }
+  ],
+  "glyph_trace_register": "creative/research/switchgear-left/marking-vector-contours-v2.json",
+  "inherited_geometric_checks_exact_rigid_identity": true,
+  "art_accepted": false
+}

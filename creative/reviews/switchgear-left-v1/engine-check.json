@@ -1,0 +1,1104 @@
+{
+  "camera": {
+    "position": [
+      0.20770572870969772,
+      0.19904863097035147,
+      -0.20149257316845548
+    ],
+    "target": [
+      0.20770572870969772,
+      0.09462499991059303,
+      -0.03147728368639946
+    ],
+    "radius": 0.19952316502444484,
+    "fov": 0.72,
+    "fovMode": 0
+  },
+  "framing": {
+    "min": [
+      0.38833125694322285,
+      0.2209305120509822
+    ],
+    "max": [
+      0.6117377633938151,
+      0.8101411749871857
+    ],
+    "scope": "Conservative projected actual mesh bounding boxes; whole-piece framing only"
+  },
+  "asset": "switchgear-left",
+  "revision": "switchgear-left-v1",
+  "config": {
+    "label": "Commodo gauche \u2014 variante li\u00e9e",
+    "lot": 4,
+    "review": "switchgear-left-v1",
+    "source": "switchgear-left/switchgear-left-v1.blend",
+    "component_id": "MOTO-SWITCHGEAR-LEFT-001",
+    "files": [
+      "switchgear-left/switchgear-left-inspection.glb"
+    ],
+    "rigs": [
+      {
+        "id": "dipper",
+        "label": "Code/phare",
+        "node": "LH dipper rocker - high low PIVOT",
+        "axis": [
+          -0.9166959524,
+          0,
+          0.3995854259
+        ],
+        "kind": "rotation",
+        "min": -9,
+        "max": 9,
+        "step": 0.1,
+        "initial": 0
+      },
+      {
+        "id": "turn",
+        "label": "Clignotant",
+        "node": "LH turn selector - centre push PIVOT",
+        "axis": [
+          -0.9166959524,
+          0,
+          0.3995854259
+        ],
+        "kind": "translation",
+        "min": -0.003,
+        "max": 0.003,
+        "step": 0.0001,
+        "initial": 0
+      },
+      {
+        "id": "turn_push",
+        "label": "Rappel central",
+        "node": "LH turn selector - centre push PIVOT",
+        "axis": [
+          0.3995854259,
+          0,
+          0.9166959524
+        ],
+        "kind": "translation",
+        "min": 0,
+        "max": 0.0014,
+        "step": 0.0001,
+        "initial": 0
+      },
+      {
+        "id": "horn",
+        "label": "Klaxon",
+        "node": "LH horn push tongue PIVOT",
+        "axis": [
+          0.3995854259,
+          0,
+          0.9166959524
+        ],
+        "kind": "translation",
+        "min": 0,
+        "max": 0.0014,
+        "step": 0.0001,
+        "initial": 0
+      }
+    ],
+    "collection": "WEWA_SWITCHGEAR_LEFT"
+  },
+  "files": [
+    "switchgear-left/switchgear-left-inspection.glb"
+  ],
+  "meshes": 20,
+  "vertices": 13227,
+  "triangles": 15710,
+  "bounds": {
+    "min": [
+      0.17847149074077606,
+      0.06224999576807022,
+      -0.06342160701751709
+    ],
+    "max": [
+      0.23693996667861938,
+      0.12700000405311584,
+      0.00046703964471817017
+    ]
+  },
+  "textures_ready": true,
+  "renderer": {
+    "vendor": "Google Inc. (Google)",
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+  },
+  "rig_states": {
+    "dipper": 0,
+    "turn": 0,
+    "turn_push": 0,
+    "horn": 0
+  },
+  "attachments": [],
+  "rigs": [
+    {
+      "id": "dipper",
+      "node": "LH dipper rocker - high low PIVOT",
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "world_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.20992319285869598,
+        0.11774999648332596,
+        -0.05557171255350113,
+        1.0
+      ],
+      "actual_geometry": [
+        {
+          "mesh": "LH dipper rocker - high low",
+          "vertex_index": 187,
+          "point_world": [
+            0.20624125003814697,
+            0.11140457540750504,
+            -0.054000481963157654
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turn",
+      "node": "LH turn selector - centre push PIVOT",
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "world_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.205339714884758,
+        0.09699999541044235,
+        -0.05357377976179123,
+        1.0
+      ],
+      "actual_geometry": [
+        {
+          "mesh": "LH turn selector - centre push",
+          "vertex_index": 277,
+          "point_world": [
+            0.20585395395755768,
+            0.09619195759296417,
+            -0.04779812693595886
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turn_push",
+      "node": "LH turn selector - centre push PIVOT",
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "world_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.205339714884758,
+        0.09699999541044235,
+        -0.05357377976179123,
+        1.0
+      ],
+      "actual_geometry": [
+        {
+          "mesh": "LH turn selector - centre push",
+          "vertex_index": 277,
+          "point_world": [
+            0.20585395395755768,
+            0.09619195759296417,
+            -0.04779812693595886
+          ]
+        }
+      ]
+    },
+    {
+      "id": "horn",
+      "node": "LH horn push tongue PIVOT",
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "world_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.20992319285869598,
+        0.06999999284744263,
+        -0.05557171255350113,
+        1.0
+      ],
+      "actual_geometry": [
+        {
+          "mesh": "LH horn push tongue",
+          "vertex_index": 213,
+          "point_world": [
+            0.21189996600151062,
+            0.07644999772310257,
+            -0.0629240870475769
+          ]
+        }
+      ]
+    }
+  ],
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true,
+  "page_errors": [],
+  "http_failures": [],
+  "pose_checks": [
+    {
+      "rig": "dipper",
+      "states": [
+        {
+          "requested": -9,
+          "rig_states": {
+            "dipper": -9,
+            "turn": 0,
+            "turn_push": 0,
+            "horn": 0
+          },
+          "rig": {
+            "id": "dipper",
+            "node": "LH dipper rocker - high low PIVOT",
+            "quaternion": [
+              0.07192313613940157,
+              0,
+              -0.03135111146840323,
+              0.996917333733128
+            ],
+            "world_matrix": [
+              0.9980342388153076,
+              -0.06250893324613571,
+              -0.004509740509092808,
+              0.0,
+              0.06250893324613571,
+              0.9876883625984192,
+              0.1434028446674347,
+              0.0,
+              -0.004509740509092808,
+              -0.1434028446674347,
+              0.9896541237831116,
+              0.0,
+              0.20992319285869598,
+              0.11774999648332596,
+              -0.05557171255350113,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "LH dipper rocker - high low",
+                "vertex_index": 187,
+                "point_world": [
+                  0.20584475651373835,
+                  0.11148753331265293,
+                  -0.05491008454654896
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 9,
+          "rig_states": {
+            "dipper": 9,
+            "turn": 0,
+            "turn_push": 0,
+            "horn": 0
+          },
+          "rig": {
+            "id": "dipper",
+            "node": "LH dipper rocker - high low PIVOT",
+            "quaternion": [
+              -0.07192313613940157,
+              0,
+              0.03135111146840323,
+              0.996917333733128
+            ],
+            "world_matrix": [
+              0.9980342388153076,
+              0.06250893324613571,
+              -0.004509740509092808,
+              0.0,
+              -0.06250893324613571,
+              0.9876883625984192,
+              -0.1434028446674347,
+              0.0,
+              -0.004509740509092808,
+              0.1434028446674347,
+              0.9896541237831116,
+              0.0,
+              0.20992319285869598,
+              0.11774999648332596,
+              -0.05557171255350113,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "LH dipper rocker - high low",
+                "vertex_index": 187,
+                "point_world": [
+                  0.20663804751863257,
+                  0.11147786254924885,
+                  -0.05309018168077813
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": -1009,
+          "rig_states": {
+            "dipper": -9,
+            "turn": 0,
+            "turn_push": 0,
+            "horn": 0
+          },
+          "rig": {
+            "id": "dipper",
+            "node": "LH dipper rocker - high low PIVOT",
+            "quaternion": [
+              0.07192313613940157,
+              0,
+              -0.03135111146840323,
+              0.996917333733128
+            ],
+            "world_matrix": [
+              0.9980342388153076,
+              -0.06250893324613571,
+              -0.004509740509092808,
+              0.0,
+              0.06250893324613571,
+              0.9876883625984192,
+              0.1434028446674347,
+              0.0,
+              -0.004509740509092808,
+              -0.1434028446674347,
+              0.9896541237831116,
+              0.0,
+              0.20992319285869598,
+              0.11774999648332596,
+              -0.05557171255350113,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "LH dipper rocker - high low",
+                "vertex_index": 187,
+                "point_world": [
+                  0.20584475651373835,
+                  0.11148753331265293,
+                  -0.05491008454654896
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 1009,
+          "rig_states": {
+            "dipper": 9,
+            "turn": 0,
+            "turn_push": 0,
+            "horn": 0
+          },
+          "rig": {
+            "id": "dipper",
+            "node": "LH dipper rocker - high low PIVOT",
+            "quaternion": [
+              -0.07192313613940157,
+              0,
+              0.03135111146840323,
+              0.996917333733128
+            ],
+            "world_matrix": [
+              0.9980342388153076,
+              0.06250893324613571,
+              -0.004509740509092808,
+              0.0,
+              -0.06250893324613571,
+              0.9876883625984192,
+              -0.1434028446674347,
+              0.0,
+              -0.004509740509092808,
+              0.1434028446674347,
+              0.9896541237831116,
+              0.0,
+              0.20992319285869598,
+              0.11774999648332596,
+              -0.05557171255350113,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "LH dipper rocker - high low",
+                "vertex_index": 187,
+                "point_world": [
+                  0.20663804751863257,
+                  0.11147786254924885,
+                  -0.05309018168077813
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actual_vertex_travel_m": 0.0019853086870690365
+    },
+    {
+      "rig": "turn",
+      "states": [
+        {
+          "requested": -0.003,
+          "rig_states": {
+            "dipper": 0,
+            "turn": -0.003,
+            "turn_push": 0,
+            "horn": 0
+          },
+          "rig": {
+            "id": "turn",
+            "node": "LH turn selector - centre push PIVOT",
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "world_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.20808979868888855,
+              0.09699999541044235,
+              -0.05477253720164299,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "LH turn selector - centre push",
+                "vertex_index": 277,
+                "point_world": [
+                  0.20860403776168823,
+                  0.09619195759296417,
+                  -0.04899688437581062
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 0.003,
+          "rig_states": {
+            "dipper": 0,
+            "turn": 0.003,
+            "turn_push": 0,
+            "horn": 0
+          },
+          "rig": {
+            "id": "turn",
+            "node": "LH turn selector - centre push PIVOT",
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "world_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.20258963108062744,
+              0.09699999541044235,
+              -0.05237502232193947,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "LH turn selector - centre push",
+                "vertex_index": 277,
+                "point_world": [
+                  0.20310387015342712,
+                  0.09619195759296417,
+                  -0.0465993694961071
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": -1000.003,
+          "rig_states": {
+            "dipper": 0,
+            "turn": -0.003,
+            "turn_push": 0,
+            "horn": 0
+          },
+          "rig": {
+            "id": "turn",
+            "node": "LH turn selector - centre push PIVOT",
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "world_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.20808979868888855,
+              0.09699999541044235,
+              -0.05477253720164299,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "LH turn selector - centre push",
+                "vertex_index": 277,
+                "point_world": [
+                  0.20860403776168823,
+                  0.09619195759296417,
+                  -0.04899688437581062
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 1000.003,
+          "rig_states": {
+            "dipper": 0,
+            "turn": 0.003,
+            "turn_push": 0,
+            "horn": 0
+          },
+          "rig": {
+            "id": "turn",
+            "node": "LH turn selector - centre push PIVOT",
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "world_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.20258963108062744,
+              0.09699999541044235,
+              -0.05237502232193947,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "LH turn selector - centre push",
+                "vertex_index": 277,
+                "point_world": [
+                  0.20310387015342712,
+                  0.09619195759296417,
+                  -0.0465993694961071
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actual_vertex_travel_m": 0.005999993443110127
+    },
+    {
+      "rig": "turn_push",
+      "states": [
+        {
+          "requested": 0,
+          "rig_states": {
+            "dipper": 0,
+            "turn": 0,
+            "turn_push": 0,
+            "horn": 0
+          },
+          "rig": {
+            "id": "turn_push",
+            "node": "LH turn selector - centre push PIVOT",
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "world_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.205339714884758,
+              0.09699999541044235,
+              -0.05357377976179123,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "LH turn selector - centre push",
+                "vertex_index": 277,
+                "point_world": [
+                  0.20585395395755768,
+                  0.09619195759296417,
+                  -0.04779812693595886
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 0.0014,
+          "rig_states": {
+            "dipper": 0,
+            "turn": 0,
+            "turn_push": 0.0014,
+            "horn": 0
+          },
+          "rig": {
+            "id": "turn_push",
+            "node": "LH turn selector - centre push PIVOT",
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "world_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.20589913427829742,
+              0.09699999541044235,
+              -0.052290406078100204,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "LH turn selector - centre push",
+                "vertex_index": 277,
+                "point_world": [
+                  0.2064133733510971,
+                  0.09619195759296417,
+                  -0.04651475325226784
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": -1000,
+          "rig_states": {
+            "dipper": 0,
+            "turn": 0,
+            "turn_push": 0,
+            "horn": 0
+          },
+          "rig": {
+            "id": "turn_push",
+            "node": "LH turn selector - centre push PIVOT",
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "world_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.205339714884758,
+              0.09699999541044235,
+              -0.05357377976179123,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "LH turn selector - centre push",
+                "vertex_index": 277,
+                "point_world": [
+                  0.20585395395755768,
+                  0.09619195759296417,
+                  -0.04779812693595886
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 1000.0014,
+          "rig_states": {
+            "dipper": 0,
+            "turn": 0,
+            "turn_push": 0.0014,
+            "horn": 0
+          },
+          "rig": {
+            "id": "turn_push",
+            "node": "LH turn selector - centre push PIVOT",
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "world_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.20589913427829742,
+              0.09699999541044235,
+              -0.052290406078100204,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "LH turn selector - centre push",
+                "vertex_index": 277,
+                "point_world": [
+                  0.2064133733510971,
+                  0.09619195759296417,
+                  -0.04651475325226784
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actual_vertex_travel_m": 0.0013999993106636492
+    },
+    {
+      "rig": "horn",
+      "states": [
+        {
+          "requested": 0,
+          "rig_states": {
+            "dipper": 0,
+            "turn": 0,
+            "turn_push": 0,
+            "horn": 0
+          },
+          "rig": {
+            "id": "horn",
+            "node": "LH horn push tongue PIVOT",
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "world_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.20992319285869598,
+              0.06999999284744263,
+              -0.05557171255350113,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "LH horn push tongue",
+                "vertex_index": 213,
+                "point_world": [
+                  0.21189996600151062,
+                  0.07644999772310257,
+                  -0.0629240870475769
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 0.0014,
+          "rig_states": {
+            "dipper": 0,
+            "turn": 0,
+            "turn_push": 0,
+            "horn": 0.0014
+          },
+          "rig": {
+            "id": "horn",
+            "node": "LH horn push tongue PIVOT",
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "world_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.2104826122522354,
+              0.06999999284744263,
+              -0.054288338869810104,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "LH horn push tongue",
+                "vertex_index": 213,
+                "point_world": [
+                  0.21245938539505005,
+                  0.07644999772310257,
+                  -0.06164071336388588
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": -1000,
+          "rig_states": {
+            "dipper": 0,
+            "turn": 0,
+            "turn_push": 0,
+            "horn": 0
+          },
+          "rig": {
+            "id": "horn",
+            "node": "LH horn push tongue PIVOT",
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "world_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.20992319285869598,
+              0.06999999284744263,
+              -0.05557171255350113,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "LH horn push tongue",
+                "vertex_index": 213,
+                "point_world": [
+                  0.21189996600151062,
+                  0.07644999772310257,
+                  -0.0629240870475769
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 1000.0014,
+          "rig_states": {
+            "dipper": 0,
+            "turn": 0,
+            "turn_push": 0,
+            "horn": 0.0014
+          },
+          "rig": {
+            "id": "horn",
+            "node": "LH horn push tongue PIVOT",
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "world_matrix": [
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.2104826122522354,
+              0.06999999284744263,
+              -0.054288338869810104,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "LH horn push tongue",
+                "vertex_index": 213,
+                "point_world": [
+                  0.21245938539505005,
+                  0.07644999772310257,
+                  -0.06164071336388588
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actual_vertex_travel_m": 0.0013999993106636492
+    }
+  ],
+  "scope": "Actual Babylon imports and vertex motion in Chromium softwareWebGL; not Safari/iPhone/FPS qualification",
+  "render_mode": "Manual frames after scene readiness",
+  "exports": [
+    {
+      "path": "assets-src/moto-components/switchgear-left/switchgear-left-inspection.glb",
+      "sha256": "0a52d32bb408594b055df9aaf381dfca994d5b28a71a41440c459478a28c66ae"
+    }
+  ],
+  "inspector_sha256": "19e4908f4a7b69b492710adfb7d28a5508745721f9c991941a5ed439f3a9fb07",
+  "capture_tool_sha256": "4887ec05cdfc9434953ff678cf0909f8ef191ef52e50c72485d6fcea4bd7f7da",
+  "inspector_path": "tools/motorcycle-lab/review-v2.js",
+  "capture_tool_path": "tools/capture_motorcycle18_v2.py",
+  "inputs_unchanged_during_capture": true
+}

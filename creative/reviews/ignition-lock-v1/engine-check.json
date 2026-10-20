@@ -1,0 +1,422 @@
+{
+  "camera": {
+    "position": [
+      1.2232891977668588e-09,
+      0.1533960961937155,
+      -0.1700564200558044
+    ],
+    "target": [
+      1.2232891834912385e-09,
+      0.010202054965364006,
+      0.06308215331569281
+    ],
+    "radius": 0.273602134196727,
+    "fov": 0.72,
+    "fovMode": 0
+  },
+  "framing": {
+    "min": [
+      0.43908300041946297,
+      0.3998735186860298
+    ],
+    "max": [
+      0.5609170268964999,
+      0.5670948745743093
+    ],
+    "scope": "Conservative projected actual mesh bounding boxes; whole-piece framing only"
+  },
+  "asset": "ignition-lock",
+  "revision": "ignition-lock-v1",
+  "config": {
+    "label": "Contacteur et cl\u00e9 \u2014 position estim\u00e9e",
+    "lot": 9,
+    "review": "ignition-lock-v1",
+    "source": "ignition-lock/ignition-lock-v1.blend",
+    "collection": "WEWA_IGNITION_LOCK",
+    "component_id": "MOTO-IGNITION-LOCK-001",
+    "files": [
+      "ignition-lock/ignition-lock-inspection.glb"
+    ],
+    "rigs": [
+      {
+        "id": "key_state",
+        "label": "\u00c9tats de pr\u00e9sentation estim\u00e9s",
+        "node": "Ignition rotor and key state pivot",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "min": -35,
+        "max": 45,
+        "initial": 0,
+        "step": 1
+      }
+    ]
+  },
+  "files": [
+    "ignition-lock/ignition-lock-inspection.glb"
+  ],
+  "meshes": 8,
+  "vertices": 8276,
+  "triangles": 10317,
+  "bounds": {
+    "min": [
+      -0.026000000090156943,
+      -0.02996745952775208,
+      0.006449462655592764
+    ],
+    "max": [
+      0.02600000253673531,
+      0.05037156945848009,
+      0.11971484397579285
+    ]
+  },
+  "textures_ready": true,
+  "renderer": {
+    "vendor": "Google Inc. (Google)",
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+  },
+  "rig_states": {
+    "key_state": 0
+  },
+  "attachments": [],
+  "rigs": [
+    {
+      "id": "key_state",
+      "node": "Ignition rotor and key state pivot",
+      "quaternion": [
+        0,
+        1.3496040646398784e-16,
+        -4.706628568669166e-16,
+        1
+      ],
+      "world_matrix": [
+        -0.9999999403953552,
+        3.706936979597231e-08,
+        6.687490383683325e-08,
+        0.0,
+        -3.706936979597231e-08,
+        0.5299191474914551,
+        -0.8480481505393982,
+        0.0,
+        -6.687490383683325e-08,
+        -0.8480481505393982,
+        -0.5299190878868103,
+        0.0,
+        0.0,
+        0.01899999938905239,
+        0.054999999701976776,
+        1.0
+      ],
+      "actual_geometry": [
+        {
+          "mesh": "Ignition front rotor - presentation states",
+          "vertex_index": 352,
+          "point_world": [
+            -2.1611518614193457e-09,
+            0.007891012813563861,
+            0.05277504990378656
+          ]
+        },
+        {
+          "mesh": "Key black moulded head - estimated",
+          "vertex_index": 370,
+          "point_world": [
+            0.004404336109169242,
+            0.04032518070733133,
+            0.024646726039910333
+          ]
+        },
+        {
+          "mesh": "Key metal blade - generic nonfunctional cut",
+          "vertex_index": 71,
+          "point_world": [
+            0.0012499988130101375,
+            0.03309677014062599,
+            0.03096852157695899
+          ]
+        }
+      ]
+    }
+  ],
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true,
+  "page_errors": [],
+  "http_failures": [],
+  "pose_checks": [
+    {
+      "rig": "key_state",
+      "states": [
+        {
+          "requested": -35,
+          "rig_states": {
+            "key_state": -35
+          },
+          "rig": {
+            "id": "key_state",
+            "node": "Ignition rotor and key state pivot",
+            "quaternion": [
+              -1.4153105067113141e-16,
+              -0.300705799504273,
+              -4.488791446815648e-16,
+              0.9537169507482269
+            ],
+            "world_matrix": [
+              -0.8191520571708679,
+              -0.4864204227924347,
+              -0.3039490580558777,
+              0.0,
+              -3.706936979597231e-08,
+              0.5299191474914551,
+              -0.8480481505393982,
+              0.0,
+              0.5735763907432556,
+              -0.694680392742157,
+              -0.43408435583114624,
+              0.0,
+              0.0,
+              0.01899999938905239,
+              0.054999999701976776,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "Ignition front rotor - presentation states",
+                "vertex_index": 352,
+                "point_world": [
+                  0.006079908400426332,
+                  0.009516710219907718,
+                  0.05379089754724295
+                ]
+              },
+              {
+                "mesh": "Key black moulded head - estimated",
+                "vertex_index": 370,
+                "point_world": [
+                  0.0024606680054818013,
+                  0.042160805103320986,
+                  0.025793751129473394
+                ]
+              },
+              {
+                "mesh": "Key metal blade - generic nonfunctional cut",
+                "vertex_index": 71,
+                "point_world": [
+                  0.0014713286021924654,
+                  0.033824422553270325,
+                  0.03142320906583714
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 45,
+          "rig_states": {
+            "key_state": 45
+          },
+          "rig": {
+            "id": "key_state",
+            "node": "Ignition rotor and key state pivot",
+            "quaternion": [
+              1.8011487755259059e-16,
+              0.3826834323650899,
+              -4.3483578017263353e-16,
+              0.9238795325112867
+            ],
+            "world_matrix": [
+              -0.7071066498756409,
+              0.5996606349945068,
+              0.37470942735671997,
+              0.0,
+              -3.706936979597231e-08,
+              0.5299191474914551,
+              -0.8480481505393982,
+              0.0,
+              -0.7071067690849304,
+              -0.5996605753898621,
+              -0.3747093379497528,
+              0.0,
+              0.0,
+              0.01899999938905239,
+              0.054999999701976776,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "Ignition front rotor - presentation states",
+                "vertex_index": 352,
+                "point_world": [
+                  -0.007495332515568927,
+                  0.01052392199258259,
+                  0.05442027380452485
+                ]
+              },
+              {
+                "mesh": "Key black moulded head - estimated",
+                "vertex_index": 370,
+                "point_world": [
+                  0.004528548645300827,
+                  0.03718729780813064,
+                  0.02268595999570975
+                ]
+              },
+              {
+                "mesh": "Key metal blade - generic nonfunctional cut",
+                "vertex_index": 71,
+                "point_world": [
+                  0.0003323389788185366,
+                  0.03254093671911796,
+                  0.03062119849210646
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": -1035,
+          "rig_states": {
+            "key_state": -35
+          },
+          "rig": {
+            "id": "key_state",
+            "node": "Ignition rotor and key state pivot",
+            "quaternion": [
+              -1.4153105067113141e-16,
+              -0.300705799504273,
+              -4.488791446815648e-16,
+              0.9537169507482269
+            ],
+            "world_matrix": [
+              -0.8191520571708679,
+              -0.4864204227924347,
+              -0.3039490580558777,
+              0.0,
+              -3.706936979597231e-08,
+              0.5299191474914551,
+              -0.8480481505393982,
+              0.0,
+              0.5735763907432556,
+              -0.694680392742157,
+              -0.43408435583114624,
+              0.0,
+              0.0,
+              0.01899999938905239,
+              0.054999999701976776,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "Ignition front rotor - presentation states",
+                "vertex_index": 352,
+                "point_world": [
+                  0.006079908400426332,
+                  0.009516710219907718,
+                  0.05379089754724295
+                ]
+              },
+              {
+                "mesh": "Key black moulded head - estimated",
+                "vertex_index": 370,
+                "point_world": [
+                  0.0024606680054818013,
+                  0.042160805103320986,
+                  0.025793751129473394
+                ]
+              },
+              {
+                "mesh": "Key metal blade - generic nonfunctional cut",
+                "vertex_index": 71,
+                "point_world": [
+                  0.0014713286021924654,
+                  0.033824422553270325,
+                  0.03142320906583714
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 1045,
+          "rig_states": {
+            "key_state": 45
+          },
+          "rig": {
+            "id": "key_state",
+            "node": "Ignition rotor and key state pivot",
+            "quaternion": [
+              1.8011487755259059e-16,
+              0.3826834323650899,
+              -4.3483578017263353e-16,
+              0.9238795325112867
+            ],
+            "world_matrix": [
+              -0.7071066498756409,
+              0.5996606349945068,
+              0.37470942735671997,
+              0.0,
+              -3.706936979597231e-08,
+              0.5299191474914551,
+              -0.8480481505393982,
+              0.0,
+              -0.7071067690849304,
+              -0.5996605753898621,
+              -0.3747093379497528,
+              0.0,
+              0.0,
+              0.01899999938905239,
+              0.054999999701976776,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "Ignition front rotor - presentation states",
+                "vertex_index": 352,
+                "point_world": [
+                  -0.007495332515568927,
+                  0.01052392199258259,
+                  0.05442027380452485
+                ]
+              },
+              {
+                "mesh": "Key black moulded head - estimated",
+                "vertex_index": 370,
+                "point_world": [
+                  0.004528548645300827,
+                  0.03718729780813064,
+                  0.02268595999570975
+                ]
+              },
+              {
+                "mesh": "Key metal blade - generic nonfunctional cut",
+                "vertex_index": 71,
+                "point_world": [
+                  0.0003323389788185366,
+                  0.03254093671911796,
+                  0.03062119849210646
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actual_vertex_travel_m": 0.013627096387549213
+    }
+  ],
+  "scope": "Actual Babylon imports and vertex motion in Chromium softwareWebGL; not Safari/iPhone/FPS qualification",
+  "render_mode": "Manual frames after scene readiness",
+  "exports": [
+    {
+      "path": "assets-src/moto-components/ignition-lock/ignition-lock-inspection.glb",
+      "sha256": "f88f11073be723104097e419162863a892236b802e6e1b16367e5eeb218a54cb"
+    }
+  ],
+  "inspector_sha256": "19e4908f4a7b69b492710adfb7d28a5508745721f9c991941a5ed439f3a9fb07",
+  "capture_tool_sha256": "4887ec05cdfc9434953ff678cf0909f8ef191ef52e50c72485d6fcea4bd7f7da",
+  "inspector_path": "tools/motorcycle-lab/review-v2.js",
+  "capture_tool_path": "tools/capture_motorcycle18_v2.py",
+  "inputs_unchanged_during_capture": true
+}

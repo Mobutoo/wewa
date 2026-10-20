@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-SWITCHGEAR-RIGHT-001",
-  "label": "Commodo droit",
+  "label": "Commodo droit — fonction rouge inconnue",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,9 +12,9 @@
     "material"
   ],
   "identity": {
-    "variant": "Current RDC appearance with related reference parts; exact identity under research",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
-    "usage": "Physical pilot RIGHT -X foreground",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
       0.15,
       0.35,
@@ -25,11 +25,27 @@
   "sources": [
     "D01",
     "D04",
-    "D13",
-    "D15"
+    "D15",
+    "D19"
   ],
   "claims": [],
-  "views": [],
+  "views": [
+    {
+      "name": "front",
+      "file": "creative/reviews/switchgear-right-v1/front.png",
+      "actually_saved": true
+    },
+    {
+      "name": "quarter",
+      "file": "creative/reviews/switchgear-right-v1/quarter.png",
+      "actually_saved": true
+    },
+    {
+      "name": "underside",
+      "file": "creative/reviews/switchgear-right-v1/underside.png",
+      "actually_saved": true
+    }
+  ],
   "criteria": [],
   "gaps": [
     {
@@ -48,7 +64,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "switchgear-right-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -56,63 +72,103 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": null,
+      "revision": "switchgear-right-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Reference variant/local dimensions not certified",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
       "status": "blocked",
-      "revision": null,
+      "revision": "switchgear-right-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Reference variant/local dimensions not certified",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "switchgear-right-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/switchgear-right/switchgear-right-v1.blend",
+          "kind": "editable_source",
+          "revision": "switchgear-right-v1",
+          "sha256": "84182072eb72607cf3b9a029cf4e09964f8b4a86df612bfed912d0d666e9087c"
+        },
+        {
+          "path": "../../reviews/switchgear-right-v1/front.png",
+          "kind": "isolated_comparison",
+          "revision": "switchgear-right-v1",
+          "sha256": "402baa9bf2ce2c01197400db431fa7a6b5d22704f2a3c78c4fa3d8c61abb6f43"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "switchgear-right-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/switchgear-right-v1/underside.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "switchgear-right-v1",
+          "sha256": "77feeaca09e57b61c609cde79aec49a8c9cd4e7701e6719fb1823973bb375272"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "switchgear-right-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/switchgear-right-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "switchgear-right-v1",
+          "sha256": "b4c4333549062fa9c2a73316b1fb792eb993c4ec3f3a86d1df8dd0f23f478827"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "switchgear-right-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/switchgear-right-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "switchgear-right-v1",
+          "sha256": "4425b7cda293ecec27c4a86026ef11ddd5e295dc0d9ec0776dce9ff84a6e39dc"
+        },
+        {
+          "path": "../../reviews/switchgear-right-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "switchgear-right-v1",
+          "sha256": "20de49d5b446ef1a391e78607c282d380e8889d48f9b5b8316eace133dc80778"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "switchgear-right-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "switchgear-right-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -121,8 +177,10 @@
   },
   "active_detailed_fabrication": false,
   "source_revision": "switchgear-right-v1",
-  "export_revision": null,
-  "next_action": "Make isolated candidate after attributed reference inspection; document unknown functions and all estimated sections",
+  "export_revision": "switchgear-right-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
   "art_accepted": false,
-  "production_group": 5
+  "production_group": 5,
+  "candidate_source": "../../../assets-src/moto-components/switchgear-right/README.md",
+  "candidate_review": "../../reviews/switchgear-right-v1/README.md"
 }

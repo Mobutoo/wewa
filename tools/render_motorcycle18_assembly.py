@@ -1,0 +1,13 @@
+"""Actual Cycles review views, with raw noisy HDR retained privately."""
+import bpy,json,hashlib,argparse,sys
+from pathlib import Path
+from mathutils import Vector
+ROOT=Path(__file__).resolve().parents[1]
+p=argparse.ArgumentParser();p.add_argument('revision');p.add_argument('--views',default='driver,quarter');p.add_argument('--samples',type=int,default=128);a=p.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else [])
+review=ROOT/'creative/reviews'/a.revision;source=ROOT/'assets-src/moto-components'/a.revision/(a.revision+'.blend');check=json.loads((review/'source-geometry-check.json').read_text());assert check['source_sha256']==hashlib.sha256(source.read_bytes()).hexdigest()
+for row in check['linked_sources']:assert row['sha256']==hashlib.sha256((ROOT/row['source']).read_bytes()).hexdigest(),row['asset']
+bpy.ops.wm.open_mainfile(filepath=str(source));scene=bpy.context.scene;scene.cycles.samples=a.samples;scene.render.image_settings.file_format='PNG';scene.use_nodes=True;tree=scene.node_tree;tree.nodes.clear();layer=tree.nodes.new('CompositorNodeRLayers');out=tree.nodes.new('CompositorNodeComposite');tree.links.new(layer.outputs['Image'],out.inputs['Image']);raw=tree.nodes.new('CompositorNodeOutputFile');raw.base_path='/workspace/wewa-assets/render-raw/'+a.revision;Path(raw.base_path).mkdir(parents=True,exist_ok=True);raw.format.file_format='OPEN_EXR';raw.format.color_depth='16';raw.format.exr_codec='ZIP';tree.links.new(layer.outputs['Noisy Image'],raw.inputs[0])
+views={'driver':((0,.67,.49),(0,-.03,.07),28),'quarter':((.75,.85,.65),(0,-.01,.07),45),'left-detail':((.4,.40,.28),(.21,.03,.10),65),'right-detail':((-.4,.40,.28),(-.21,.03,.10),65),'whole':((1.9,2.7,1.2),(0,.25,-.45),45)};report={'source_sha256':check['source_sha256'],'samples':a.samples,'denoising':'OpenImageDenoise','actual_blender_render':True,'blender_version':bpy.app.version_string,'resolution_px':[scene.render.resolution_x,scene.render.resolution_y],'art_accepted':False,'views':[]}
+for name in a.views.split(','):
+ position,target,lens=views[name];scene.camera.location=position;scene.camera.rotation_euler=(Vector(target)-Vector(position)).to_track_quat('-Z','Y').to_euler();scene.camera.data.lens=lens;scene.render.filepath=str(review/(name+'.png'));raw.file_slots[0].path=name+'-raw-';bpy.ops.render.render(write_still=True);hdr=Path(raw.base_path)/(name+'-raw-0001.exr');report['views'].append({'name':name,'camera_location_m':position,'camera_target_m':target,'lens_mm':lens,'raw_linear_hdr':{'private_path':str(hdr),'sha256':hashlib.sha256(hdr.read_bytes()).hexdigest(),'bytes':hdr.stat().st_size,'in_public_repo':False}})
+(review/'render-report.json').write_text(json.dumps(report,indent=2)+'\n')

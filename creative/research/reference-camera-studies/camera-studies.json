@@ -1,0 +1,1262 @@
+{
+  "schema": "wewa.reference-camera-study.v1",
+  "stage": "G2_preparation_reserved",
+  "camera_calibrated": false,
+  "physical_part_dimensions_measured": false,
+  "G2_passed": false,
+  "inputs": [
+    {
+      "path": "creative/workflow/motorcycle-datums-v1.json",
+      "sha256": "19bf9708f8777b6216ab0c7d487f9ff685e3bedcdd9806f3c9985db78b5e5c9a"
+    },
+    {
+      "path": "creative/research/body-powertrain-18/profile-landmarks.json",
+      "sha256": "b2ff3fda8486e19268506b6c5f4a84499a9b6161f35fdc9a13a8fa2b5f01807c"
+    }
+  ],
+  "script_sha256": "68f2a793130deafc08967e3651c50097bcef869d2168532c251e26dfd1bf2516",
+  "guides_world_m_unchanged": {
+    "front_axle": [
+      0.0,
+      -0.42,
+      -0.74
+    ],
+    "rear_axle": [
+      0.0,
+      0.865,
+      -0.74
+    ],
+    "bar_clamp": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "guide_status": "Only wheelbase is a published constraint. Guide origin/axle locations and bar relation remain estimates.",
+  "raster": {
+    "width": 1000,
+    "height": 700,
+    "pixel_origin": "top-left",
+    "pixel_aspect": 1.0
+  },
+  "tyres_used_for_fit": false,
+  "tyre_note": "No provisional tyre radius, outside tyre envelope or assumption of equal apparent wheel sizes is used. Different apparent sizes may involve depth/perspective, different tyres, cutout/resampling or view error.",
+  "profile_annotation_use": "Tank/seat open contours copied only as image overlays. They have no world points and are not optimisation constraints or hidden sections.",
+  "views": [
+    {
+      "id": "R00",
+      "reference_private_path": "/workspace/wewa-assets/references/dimensions-verified/rotation-00.png",
+      "reference_sha256": "82be9285506c65dd8ff3fdba000fe963587548e306691844ed774f685870ea40",
+      "visible_side": "Rider RIGHT; X negative in cockpit datum frame",
+      "reading_uncertainty_uv_px": {
+        "front_axle": [
+          5.0,
+          5.0
+        ],
+        "rear_axle": [
+          5.0,
+          5.0
+        ],
+        "bar_clamp": [
+          12.0,
+          12.0
+        ]
+      },
+      "selected_working_camera": {
+        "kind": "ORTHO",
+        "role": "selected_working_camera_not_calibrated",
+        "location_m": [
+          -4.0,
+          0.3041840607210626,
+          -0.3888804554079697
+        ],
+        "rotation_matrix_local_to_world": [
+          [
+            0.0,
+            -0.0,
+            -1.0
+          ],
+          [
+            -1.0,
+            0.0,
+            -0.0
+          ],
+          [
+            0.0,
+            1.0,
+            -0.0
+          ]
+        ],
+        "rotation_quaternion_wxyz": [
+          0.5,
+          0.5,
+          -0.5,
+          -0.5
+        ],
+        "forward_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up_world": [
+          -0.0,
+          0.0,
+          1.0
+        ],
+        "target_m": [
+          0.0,
+          0.3041840607210626,
+          -0.3888804554079697
+        ],
+        "ortho_scale_m": 2.4383301707779883,
+        "ortho_scale_convention": "Blender horizontal frame width, sensor_fit HORIZONTAL",
+        "pixels_per_candidate_working_m": 410.1167315175098,
+        "distance_m": 4.0,
+        "distance_status": "Arbitrary: orthographic distance is unobservable.",
+        "fit": {
+          "projected_uv_px": {
+            "front_axle": [
+              797.0,
+              494.0
+            ],
+            "rear_axle": [
+              269.99999999999994,
+              494.0
+            ],
+            "bar_clamp": [
+              624.7509727626459,
+              190.51361867704276
+            ]
+          },
+          "observed_uv_px": {
+            "front_axle": [
+              797.0,
+              494.0
+            ],
+            "rear_axle": [
+              270.0,
+              494.0
+            ],
+            "bar_clamp": [
+              625.0,
+              190.0
+            ]
+          },
+          "signed_residual_uv_px": {
+            "front_axle": [
+              0.0,
+              0.0
+            ],
+            "rear_axle": [
+              -5.684341886080802e-14,
+              0.0
+            ],
+            "bar_clamp": [
+              -0.24902723735408472,
+              0.5136186770427571
+            ]
+          },
+          "euclidean_residual_px": {
+            "front_axle": 0.0,
+            "rear_axle": 5.684341886080802e-14,
+            "bar_clamp": 0.5708053173818195
+          },
+          "unweighted_rms_coordinate_px": 0.23303029500881056,
+          "max_absolute_normalised_reading_residual": 0.04280155642022976,
+          "normalisation_is": "Manual image-reading intervals only; not a probabilistic camera-error or physical tolerance."
+        }
+      },
+      "perspective_comparison": {
+        "bounds": {
+          "yaw_deg": [
+            -20,
+            20
+          ],
+          "pitch_deg": [
+            -15,
+            15
+          ],
+          "roll_deg": [
+            -5,
+            5
+          ],
+          "distance_to_guide_centroid_m": [
+            1.3,
+            15.0
+          ],
+          "lens_samples_mm": [
+            35,
+            50,
+            85,
+            120
+          ],
+          "horizontal_vertical_camera_offset_m_each": [
+            -1,
+            1
+          ],
+          "all_bounds_are": "Declared exploration assumptions; no EXIF/camera measurement supports them."
+        },
+        "hypotheses": [
+          {
+            "kind": "PERSP",
+            "role": "bounded_alternative_not_selected_or_calibrated",
+            "lens_mm": 35.0,
+            "sensor_width_mm": 36.0,
+            "sensor_fit": "HORIZONTAL",
+            "principal_point_px": [
+              500.0,
+              350.0
+            ],
+            "location_m": [
+              -2.367135969206494,
+              0.3007761765452057,
+              -0.3648880102224257
+            ],
+            "rotation_matrix_local_to_world": [
+              [
+                0.0013116488561798164,
+                0.010114516267804036,
+                -0.9999479867162824
+              ],
+              [
+                -0.9999991181869121,
+                -0.00019457537685091237,
+                -0.001313684064387117
+              ],
+              [
+                -0.00020785253518663016,
+                0.9999488280412608,
+                0.010114252134120726
+              ]
+            ],
+            "rotation_quaternion_wxyz": [
+              0.5027999914512353,
+              0.49784334185035306,
+              -0.49708639179544245,
+              -0.5022442579698627
+            ],
+            "forward_world": [
+              0.9999479867162824,
+              0.001313684064387117,
+              -0.010114252134120726
+            ],
+            "up_world": [
+              0.010114516267804036,
+              -0.00019457537685091237,
+              0.9999488280412608
+            ],
+            "yaw_pitch_roll_working_degrees": [
+              0.07527242436584727,
+              -0.5795138410298132,
+              -0.01190968229754065
+            ],
+            "distance_to_working_guide_centroid_m": 2.368111713341264,
+            "active_parameter_bounds": [],
+            "fit": {
+              "projected_uv_px": {
+                "front_axle": [
+                  797.0,
+                  494.0
+                ],
+                "rear_axle": [
+                  270.0,
+                  494.0
+                ],
+                "bar_clamp": [
+                  625.0,
+                  190.0
+                ]
+              },
+              "observed_uv_px": {
+                "front_axle": [
+                  797.0,
+                  494.0
+                ],
+                "rear_axle": [
+                  270.0,
+                  494.0
+                ],
+                "bar_clamp": [
+                  625.0,
+                  190.0
+                ]
+              },
+              "signed_residual_uv_px": {
+                "front_axle": [
+                  0.0,
+                  0.0
+                ],
+                "rear_axle": [
+                  0.0,
+                  0.0
+                ],
+                "bar_clamp": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "euclidean_residual_px": {
+                "front_axle": 0.0,
+                "rear_axle": 0.0,
+                "bar_clamp": 0.0
+              },
+              "unweighted_rms_coordinate_px": 0.0,
+              "max_absolute_normalised_reading_residual": 0.0,
+              "normalisation_is": "Manual image-reading intervals only; not a probabilistic camera-error or physical tolerance."
+            },
+            "optimisation_note": "Best of three deterministic local starts; no global optimum or recovered true lens claimed."
+          },
+          {
+            "kind": "PERSP",
+            "role": "bounded_alternative_not_selected_or_calibrated",
+            "lens_mm": 50.0,
+            "sensor_width_mm": 36.0,
+            "sensor_fit": "HORIZONTAL",
+            "principal_point_px": [
+              500.0,
+              350.0
+            ],
+            "location_m": [
+              -3.3812619853647115,
+              0.2971578699014046,
+              -0.3383421242699298
+            ],
+            "rotation_matrix_local_to_world": [
+              [
+                0.001979707323085366,
+                0.014924056338821495,
+                -0.9998866702288369
+              ],
+              [
+                -0.9999980127254596,
+                -0.00020559707335694597,
+                -0.0019829964637047303
+              ],
+              [
+                -0.00023516812403168383,
+                0.9998886089321347,
+                0.014923619658592562
+              ]
+            ],
+            "rotation_quaternion_wxyz": [
+              0.5041571505761673,
+              0.4968052145302648,
+              -0.4957043160859519,
+              -0.5032766409761296
+            ],
+            "forward_world": [
+              0.9998866702288369,
+              0.0019829964637047303,
+              -0.014923619658592562
+            ],
+            "up_world": [
+              0.014924056338821495,
+              -0.00020559707335694597,
+              0.9998886089321347
+            ],
+            "yaw_pitch_roll_working_degrees": [
+              0.11363005686972229,
+              -0.8550921637253458,
+              -0.013475641800708059
+            ],
+            "distance_to_working_guide_centroid_m": 3.382896699042427,
+            "active_parameter_bounds": [],
+            "fit": {
+              "projected_uv_px": {
+                "front_axle": [
+                  797.0,
+                  494.0
+                ],
+                "rear_axle": [
+                  270.0,
+                  494.0
+                ],
+                "bar_clamp": [
+                  625.0,
+                  189.99999999999997
+                ]
+              },
+              "observed_uv_px": {
+                "front_axle": [
+                  797.0,
+                  494.0
+                ],
+                "rear_axle": [
+                  270.0,
+                  494.0
+                ],
+                "bar_clamp": [
+                  625.0,
+                  190.0
+                ]
+              },
+              "signed_residual_uv_px": {
+                "front_axle": [
+                  0.0,
+                  0.0
+                ],
+                "rear_axle": [
+                  0.0,
+                  0.0
+                ],
+                "bar_clamp": [
+                  0.0,
+                  -2.842170943040401e-14
+                ]
+              },
+              "euclidean_residual_px": {
+                "front_axle": 0.0,
+                "rear_axle": 0.0,
+                "bar_clamp": 2.842170943040401e-14
+              },
+              "unweighted_rms_coordinate_px": 1.160311428702309e-14,
+              "max_absolute_normalised_reading_residual": 2.3684757858670005e-15,
+              "normalisation_is": "Manual image-reading intervals only; not a probabilistic camera-error or physical tolerance."
+            },
+            "optimisation_note": "Best of three deterministic local starts; no global optimum or recovered true lens claimed."
+          },
+          {
+            "kind": "PERSP",
+            "role": "bounded_alternative_not_selected_or_calibrated",
+            "lens_mm": 85.0,
+            "sensor_width_mm": 36.0,
+            "sensor_fit": "HORIZONTAL",
+            "principal_point_px": [
+              500.0,
+              350.0
+            ],
+            "location_m": [
+              -5.744713936441434,
+              0.27893389298346855,
+              -0.21709855815883744
+            ],
+            "rotation_matrix_local_to_world": [
+              [
+                0.004306646752075985,
+                0.029856263721393436,
+                -0.9995449246083697
+              ],
+              [
+                -0.9999906495195277,
+                -0.00026325147833761533,
+                -0.004316430489717475
+              ],
+              [
+                -0.00039200416610408204,
+                0.9995541677244201,
+                0.029854850819858367
+              ]
+            ],
+            "rotation_quaternion_wxyz": [
+              0.5084039353933043,
+              0.4936382905049393,
+              -0.49131844331088564,
+              -0.5064117533060721
+            ],
+            "forward_world": [
+              0.9995449246083697,
+              0.004316430489717475,
+              -0.029854850819858367
+            ],
+            "up_world": [
+              0.029856263721393436,
+              -0.00026325147833761533,
+              0.9995541677244201
+            ],
+            "yaw_pitch_roll_working_degrees": [
+              0.24742430901013862,
+              -1.7108111586339665,
+              -0.02247020105868847
+            ],
+            "distance_to_working_guide_centroid_m": 5.749782878263447,
+            "active_parameter_bounds": [],
+            "fit": {
+              "projected_uv_px": {
+                "front_axle": [
+                  797.0,
+                  494.0
+                ],
+                "rear_axle": [
+                  270.0,
+                  494.0
+                ],
+                "bar_clamp": [
+                  625.0,
+                  190.0
+                ]
+              },
+              "observed_uv_px": {
+                "front_axle": [
+                  797.0,
+                  494.0
+                ],
+                "rear_axle": [
+                  270.0,
+                  494.0
+                ],
+                "bar_clamp": [
+                  625.0,
+                  190.0
+                ]
+              },
+              "signed_residual_uv_px": {
+                "front_axle": [
+                  0.0,
+                  0.0
+                ],
+                "rear_axle": [
+                  0.0,
+                  0.0
+                ],
+                "bar_clamp": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "euclidean_residual_px": {
+                "front_axle": 0.0,
+                "rear_axle": 0.0,
+                "bar_clamp": 0.0
+              },
+              "unweighted_rms_coordinate_px": 0.0,
+              "max_absolute_normalised_reading_residual": 0.0,
+              "normalisation_is": "Manual image-reading intervals only; not a probabilistic camera-error or physical tolerance."
+            },
+            "optimisation_note": "Best of three deterministic local starts; no global optimum or recovered true lens claimed."
+          },
+          {
+            "kind": "PERSP",
+            "role": "bounded_alternative_not_selected_or_calibrated",
+            "lens_mm": 120.0,
+            "sensor_width_mm": 36.0,
+            "sensor_fit": "HORIZONTAL",
+            "principal_point_px": [
+              500.0,
+              350.0
+            ],
+            "location_m": [
+              -7.92699503818099,
+              1.4994515148405079,
+              -1.0187278921201868
+            ],
+            "rotation_matrix_local_to_world": [
+              [
+                -0.1480060305360467,
+                -0.07776485115906638,
+                -0.9859243595982256
+              ],
+              [
+                -0.9889727658368341,
+                0.006391850260297752,
+                0.14795949676614978
+              ],
+              [
+                -0.0052041673690581885,
+                0.9969512386142355,
+                -0.07785335232047907
+              ]
+            ],
+            "rotation_quaternion_wxyz": [
+              -0.44173874275519803,
+              -0.4804829527475804,
+              0.555034060467649,
+              0.5156939082331858
+            ],
+            "forward_world": [
+              0.9859243595982256,
+              -0.14795949676614978,
+              0.07785335232047907
+            ],
+            "up_world": [
+              -0.07776485115906638,
+              0.006391850260297752,
+              0.9969512386142355
+            ],
+            "yaw_pitch_roll_working_degrees": [
+              -8.534791918189633,
+              4.465186970003072,
+              -0.29908595952972944
+            ],
+            "distance_to_working_guide_centroid_m": 8.056232000456795,
+            "active_parameter_bounds": [],
+            "fit": {
+              "projected_uv_px": {
+                "front_axle": [
+                  797.0,
+                  494.0
+                ],
+                "rear_axle": [
+                  270.0,
+                  494.0
+                ],
+                "bar_clamp": [
+                  625.0,
+                  189.99999999999997
+                ]
+              },
+              "observed_uv_px": {
+                "front_axle": [
+                  797.0,
+                  494.0
+                ],
+                "rear_axle": [
+                  270.0,
+                  494.0
+                ],
+                "bar_clamp": [
+                  625.0,
+                  190.0
+                ]
+              },
+              "signed_residual_uv_px": {
+                "front_axle": [
+                  0.0,
+                  0.0
+                ],
+                "rear_axle": [
+                  0.0,
+                  0.0
+                ],
+                "bar_clamp": [
+                  0.0,
+                  -2.842170943040401e-14
+                ]
+              },
+              "euclidean_residual_px": {
+                "front_axle": 0.0,
+                "rear_axle": 0.0,
+                "bar_clamp": 2.842170943040401e-14
+              },
+              "unweighted_rms_coordinate_px": 1.160311428702309e-14,
+              "max_absolute_normalised_reading_residual": 2.3684757858670005e-15,
+              "normalisation_is": "Manual image-reading intervals only; not a probabilistic camera-error or physical tolerance."
+            },
+            "optimisation_note": "Best of three deterministic local starts; no global optimum or recovered true lens claimed."
+          }
+        ],
+        "identifiability": "Three non-collinear points provide six scalar image constraints. Free perspective pose plus unknown focal length has at least seven parameters; all three 3D controls also include estimated coordinates. Low residual cannot determine the true lens/pose or metric shape."
+      },
+      "photo_projection_test": "Not a calibrated photograph. Keep all residuals, especially R04 clamp, visible when comparing geometry.",
+      "working_camera_limits": "Near-zeroR00 residual is not independent validation: the original guide positions were already based on this view.",
+      "open_profile_segment_count": 8,
+      "private_preview": {
+        "path": "/tmp/viva-wewa-reference-camera-studies/R00-working-guide-overlay.png",
+        "sha256": "f00a23984602af45b9a443fe77e5b4c398b215a2103d9508dde435eaf905b776",
+        "redistribute": false
+      }
+    },
+    {
+      "id": "R04",
+      "reference_private_path": "/workspace/wewa-assets/references/dimensions-verified/rotation-04.png",
+      "reference_sha256": "b086dedb4a2bcbc2644aab9578a3d1efa7445e163459b444b3687047bf2e8e02",
+      "visible_side": "Rider LEFT; X positive in cockpit datum frame",
+      "reading_uncertainty_uv_px": {
+        "front_axle": [
+          5.0,
+          5.0
+        ],
+        "rear_axle": [
+          5.0,
+          5.0
+        ],
+        "bar_clamp": [
+          12.0,
+          12.0
+        ]
+      },
+      "selected_working_camera": {
+        "kind": "ORTHO",
+        "role": "selected_working_camera_not_calibrated",
+        "location_m": [
+          4.0,
+          0.2699639639639639,
+          -0.4065945945945947
+        ],
+        "rotation_matrix_local_to_world": [
+          [
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            1.0,
+            0.0,
+            -0.0
+          ],
+          [
+            0.0,
+            1.0,
+            -0.0
+          ]
+        ],
+        "rotation_quaternion_wxyz": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "forward_world": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "up_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "target_m": [
+          0.0,
+          0.2699639639639639,
+          -0.4065945945945947
+        ],
+        "ortho_scale_m": 2.315315315315315,
+        "ortho_scale_convention": "Blender horizontal frame width, sensor_fit HORIZONTAL",
+        "pixels_per_candidate_working_m": 431.90661478599225,
+        "distance_m": 4.0,
+        "distance_status": "Arbitrary: orthographic distance is unobservable.",
+        "fit": {
+          "projected_uv_px": {
+            "front_axle": [
+              202.00000000000003,
+              494.0
+            ],
+            "rear_axle": [
+              757.0,
+              494.0
+            ],
+            "bar_clamp": [
+              383.40077821011675,
+              174.38910505836571
+            ]
+          },
+          "observed_uv_px": {
+            "front_axle": [
+              202.0,
+              494.0
+            ],
+            "rear_axle": [
+              757.0,
+              494.0
+            ],
+            "bar_clamp": [
+              364.0,
+              188.0
+            ]
+          },
+          "signed_residual_uv_px": {
+            "front_axle": [
+              2.842170943040401e-14,
+              0.0
+            ],
+            "rear_axle": [
+              0.0,
+              0.0
+            ],
+            "bar_clamp": [
+              19.400778210116755,
+              -13.610894941634285
+            ]
+          },
+          "euclidean_residual_px": {
+            "front_axle": 2.842170943040401e-14,
+            "rear_axle": 0.0,
+            "bar_clamp": 23.699085557682324
+          },
+          "unweighted_rms_coordinate_px": 9.675111164480633,
+          "max_absolute_normalised_reading_residual": 1.6167315175097297,
+          "normalisation_is": "Manual image-reading intervals only; not a probabilistic camera-error or physical tolerance."
+        }
+      },
+      "perspective_comparison": {
+        "bounds": {
+          "yaw_deg": [
+            -20,
+            20
+          ],
+          "pitch_deg": [
+            -15,
+            15
+          ],
+          "roll_deg": [
+            -5,
+            5
+          ],
+          "distance_to_guide_centroid_m": [
+            1.3,
+            15.0
+          ],
+          "lens_samples_mm": [
+            35,
+            50,
+            85,
+            120
+          ],
+          "horizontal_vertical_camera_offset_m_each": [
+            -1,
+            1
+          ],
+          "all_bounds_are": "Declared exploration assumptions; no EXIF/camera measurement supports them."
+        },
+        "hypotheses": [
+          {
+            "kind": "PERSP",
+            "role": "bounded_alternative_not_selected_or_calibrated",
+            "lens_mm": 35.0,
+            "sensor_width_mm": 36.0,
+            "sensor_fit": "HORIZONTAL",
+            "principal_point_px": [
+              500.0,
+              350.0
+            ],
+            "location_m": [
+              2.0951463258184595,
+              0.8708483744730081,
+              -0.7046784447809131
+            ],
+            "rotation_matrix_local_to_world": [
+              [
+                -0.25489045734739485,
+                0.12487679654613487,
+                0.9588725882188994
+              ],
+              [
+                0.9669465763701199,
+                0.03980884252237148,
+                0.25185228707147483
+              ],
+              [
+                -0.0067211010511216114,
+                0.9913733109890562,
+                -0.13089608496535085
+              ]
+            ],
+            "rotation_quaternion_wxyz": [
+              0.40435822614657724,
+              0.4572189806579514,
+              0.5969914959266835,
+              0.5206211506123414
+            ],
+            "forward_world": [
+              -0.9588725882188994,
+              -0.25185228707147483,
+              0.13089608496535085
+            ],
+            "up_world": [
+              0.12487679654613487,
+              0.03980884252237148,
+              0.9913733109890562
+            ],
+            "yaw_pitch_roll_working_degrees": [
+              14.716589987582157,
+              7.521376694763407,
+              -0.3884357384408661
+            ],
+            "distance_to_working_guide_centroid_m": 2.2186096933544857,
+            "active_parameter_bounds": [],
+            "fit": {
+              "projected_uv_px": {
+                "front_axle": [
+                  202.04213520517294,
+                  495.2575779036487
+                ],
+                "rear_axle": [
+                  756.2190890629927,
+                  493.8996992877387
+                ],
+                "bar_clamp": [
+                  368.96202296796673,
+                  181.45245135118668
+                ]
+              },
+              "observed_uv_px": {
+                "front_axle": [
+                  202.0,
+                  494.0
+                ],
+                "rear_axle": [
+                  757.0,
+                  494.0
+                ],
+                "bar_clamp": [
+                  364.0,
+                  188.0
+                ]
+              },
+              "signed_residual_uv_px": {
+                "front_axle": [
+                  0.042135205172940005,
+                  1.2575779036487233
+                ],
+                "rear_axle": [
+                  -0.7809109370073202,
+                  -0.10030071226128712
+                ],
+                "bar_clamp": [
+                  4.962022967966732,
+                  -6.5475486488133186
+                ]
+              },
+              "euclidean_residual_px": {
+                "front_axle": 1.2582835766473641,
+                "rear_axle": 0.7873259327735701,
+                "bar_clamp": 8.21535545446492
+              },
+              "unweighted_rms_coordinate_px": 3.4082063935664837,
+              "max_absolute_normalised_reading_residual": 0.5456290540677765,
+              "normalisation_is": "Manual image-reading intervals only; not a probabilistic camera-error or physical tolerance."
+            },
+            "optimisation_note": "Best of three deterministic local starts; no global optimum or recovered true lens claimed."
+          },
+          {
+            "kind": "PERSP",
+            "role": "bounded_alternative_not_selected_or_calibrated",
+            "lens_mm": 50.0,
+            "sensor_width_mm": 36.0,
+            "sensor_fit": "HORIZONTAL",
+            "principal_point_px": [
+              500.0,
+              350.0
+            ],
+            "location_m": [
+              3.1073995585563368,
+              0.873423695423708,
+              -0.5475644009417033
+            ],
+            "rotation_matrix_local_to_world": [
+              [
+                -0.18213025935936317,
+                0.03969051906577656,
+                0.9824730181139737
+              ],
+              [
+                0.9831598184851628,
+                0.022605179499769146,
+                0.18134436075049315
+              ],
+              [
+                -0.015011327120307807,
+                0.9989562896123497,
+                -0.043139210725448685
+              ]
+            ],
+            "rotation_quaternion_wxyz": [
+              0.4464682825842608,
+              0.4578219555313824,
+              0.5585415493910415,
+              0.5282958141832437
+            ],
+            "forward_world": [
+              -0.9824730181139737,
+              -0.18134436075049315,
+              0.043139210725448685
+            ],
+            "up_world": [
+              0.03969051906577656,
+              0.022605179499769146,
+              0.9989562896123497
+            ],
+            "yaw_pitch_roll_working_degrees": [
+              10.457919811087297,
+              2.472461982627606,
+              -0.8609195093352766
+            ],
+            "distance_to_working_guide_centroid_m": 3.1867667564339195,
+            "active_parameter_bounds": [],
+            "fit": {
+              "projected_uv_px": {
+                "front_axle": [
+                  202.3307720440667,
+                  496.0418027045886
+                ],
+                "rear_axle": [
+                  755.5849643997983,
+                  493.96961846619934
+                ],
+                "bar_clamp": [
+                  370.77619611834723,
+                  176.58373192106893
+                ]
+              },
+              "observed_uv_px": {
+                "front_axle": [
+                  202.0,
+                  494.0
+                ],
+                "rear_axle": [
+                  757.0,
+                  494.0
+                ],
+                "bar_clamp": [
+                  364.0,
+                  188.0
+                ]
+              },
+              "signed_residual_uv_px": {
+                "front_axle": [
+                  0.33077204406669125,
+                  2.0418027045885765
+                ],
+                "rear_axle": [
+                  -1.4150356002016906,
+                  -0.03038153380066433
+                ],
+                "bar_clamp": [
+                  6.7761961183472295,
+                  -11.416268078931068
+                ]
+              },
+              "euclidean_residual_px": {
+                "front_axle": 2.0684217243109013,
+                "rear_axle": 1.4153617161115526,
+                "bar_clamp": 13.27584312517757
+              },
+              "unweighted_rms_coordinate_px": 5.515578360446588,
+              "max_absolute_normalised_reading_residual": 0.9513556732442557,
+              "normalisation_is": "Manual image-reading intervals only; not a probabilistic camera-error or physical tolerance."
+            },
+            "optimisation_note": "Best of three deterministic local starts; no global optimum or recovered true lens claimed."
+          },
+          {
+            "kind": "PERSP",
+            "role": "bounded_alternative_not_selected_or_calibrated",
+            "lens_mm": 85.0,
+            "sensor_width_mm": 36.0,
+            "sensor_fit": "HORIZONTAL",
+            "principal_point_px": [
+              500.0,
+              350.0
+            ],
+            "location_m": [
+              5.139504104405963,
+              0.837219322782949,
+              0.9901530741124535
+            ],
+            "rotation_matrix_local_to_world": [
+              [
+                -0.09679663236679786,
+                -0.26092994136405695,
+                0.9604925703315965
+              ],
+              [
+                0.9947239522589677,
+                0.007585154729893351,
+                0.10230700968175445
+              ],
+              [
+                -0.033980446800270334,
+                0.9653279396803314,
+                0.2588190451025207
+              ]
+            ],
+            "rotation_quaternion_wxyz": [
+              0.540741982711167,
+              0.39899848615025724,
+              0.45977242794511136,
+              0.5805235832288437
+            ],
+            "forward_world": [
+              -0.9604925703315965,
+              -0.10230700968175445,
+              -0.2588190451025207
+            ],
+            "up_world": [
+              -0.26092994136405695,
+              0.007585154729893351,
+              0.9653279396803314
+            ],
+            "yaw_pitch_roll_working_degrees": [
+              6.079944383164998,
+              -14.999999999999996,
+              -2.016032636784688
+            ],
+            "distance_to_working_guide_centroid_m": 5.3908879084606065,
+            "active_parameter_bounds": [
+              1
+            ],
+            "fit": {
+              "projected_uv_px": {
+                "front_axle": [
+                  202.63451212022125,
+                  495.04088199192086
+                ],
+                "rear_axle": [
+                  756.1933640735535,
+                  494.30764625984307
+                ],
+                "bar_clamp": [
+                  365.05793800782277,
+                  180.52142732653823
+                ]
+              },
+              "observed_uv_px": {
+                "front_axle": [
+                  202.0,
+                  494.0
+                ],
+                "rear_axle": [
+                  757.0,
+                  494.0
+                ],
+                "bar_clamp": [
+                  364.0,
+                  188.0
+                ]
+              },
+              "signed_residual_uv_px": {
+                "front_axle": [
+                  0.6345121202212454,
+                  1.0408819919208554
+                ],
+                "rear_axle": [
+                  -0.8066359264464609,
+                  0.30764625984306804
+                ],
+                "bar_clamp": [
+                  1.05793800782277,
+                  -7.47857267346177
+                ]
+              },
+              "euclidean_residual_px": {
+                "front_axle": 1.219032793575623,
+                "rear_axle": 0.863312075109325,
+                "bar_clamp": 7.55303131601115
+              },
+              "unweighted_rms_coordinate_px": 3.143236939618337,
+              "max_absolute_normalised_reading_residual": 0.6232143894551475,
+              "normalisation_is": "Manual image-reading intervals only; not a probabilistic camera-error or physical tolerance."
+            },
+            "optimisation_note": "Best of three deterministic local starts; no global optimum or recovered true lens claimed."
+          },
+          {
+            "kind": "PERSP",
+            "role": "bounded_alternative_not_selected_or_calibrated",
+            "lens_mm": 120.0,
+            "sensor_width_mm": 36.0,
+            "sensor_fit": "HORIZONTAL",
+            "principal_point_px": [
+              500.0,
+              350.0
+            ],
+            "location_m": [
+              7.259279678680305,
+              1.2056300696991316,
+              1.5648966264786615
+            ],
+            "rotation_matrix_local_to_world": [
+              [
+                -0.11495447418710264,
+                -0.2615033757804536,
+                0.9583326423115273
+              ],
+              [
+                0.9926454137683317,
+                0.006620721431376417,
+                0.12087699769776594
+              ],
+              [
+                -0.037954596415511424,
+                0.9651798539666868,
+                0.2588190451025207
+              ]
+            ],
+            "rotation_quaternion_wxyz": [
+              0.5363033871669082,
+              0.3935752022418969,
+              0.4644233388073748,
+              0.5846265470063448
+            ],
+            "forward_world": [
+              -0.9583326423115273,
+              -0.12087699769776594,
+              -0.2588190451025207
+            ],
+            "up_world": [
+              -0.2615033757804536,
+              0.006620721431376417,
+              0.9651798539666868
+            ],
+            "yaw_pitch_roll_working_degrees": [
+              7.188902840036485,
+              -14.999999999999996,
+              -2.251930859212552
+            ],
+            "distance_to_working_guide_centroid_m": 7.617316643715555,
+            "active_parameter_bounds": [
+              1
+            ],
+            "fit": {
+              "projected_uv_px": {
+                "front_axle": [
+                  202.4864999007849,
+                  494.98180936542065
+                ],
+                "rear_axle": [
+                  756.2560206324325,
+                  494.2129434086791
+                ],
+                "bar_clamp": [
+                  365.5216193796826,
+                  181.30907673642704
+                ]
+              },
+              "observed_uv_px": {
+                "front_axle": [
+                  202.0,
+                  494.0
+                ],
+                "rear_axle": [
+                  757.0,
+                  494.0
+                ],
+                "bar_clamp": [
+                  364.0,
+                  188.0
+                ]
+              },
+              "signed_residual_uv_px": {
+                "front_axle": [
+                  0.48649990078490646,
+                  0.981809365420645
+                ],
+                "rear_axle": [
+                  -0.7439793675674764,
+                  0.21294340867910933
+                ],
+                "bar_clamp": [
+                  1.5216193796825905,
+                  -6.690923263572955
+                ]
+              },
+              "euclidean_residual_px": {
+                "front_axle": 1.0957334454562448,
+                "rear_axle": 0.7738541171732437,
+                "bar_clamp": 6.861762139250194
+              },
+              "unweighted_rms_coordinate_px": 2.8543318434093816,
+              "max_absolute_normalised_reading_residual": 0.5575769386310796,
+              "normalisation_is": "Manual image-reading intervals only; not a probabilistic camera-error or physical tolerance."
+            },
+            "optimisation_note": "Best of three deterministic local starts; no global optimum or recovered true lens claimed."
+          }
+        ],
+        "identifiability": "Three non-collinear points provide six scalar image constraints. Free perspective pose plus unknown focal length has at least seven parameters; all three 3D controls also include estimated coordinates. Low residual cannot determine the true lens/pose or metric shape."
+      },
+      "photo_projection_test": "Not a calibrated photograph. Keep all residuals, especially R04 clamp, visible when comparing geometry.",
+      "working_camera_limits": "R04 clamp residual exceeds the12px reading interval on at least one coordinate. It remains visible; do not deform assets or move frozen datums to force agreement.",
+      "open_profile_segment_count": 8,
+      "private_preview": {
+        "path": "/tmp/viva-wewa-reference-camera-studies/R04-working-guide-overlay.png",
+        "sha256": "fced865a73a5e55d0f3be58d6b4aa00a39ec7e4e0b97b21772463c6d29960d22",
+        "redistribute": false
+      }
+    }
+  ],
+  "use_rules": [
+    "Use selected ORTHO cameras only as repeatable profile working views, not as source-camera identification.",
+    "Do not alter frozen axle/bar guides or deform an asset to absorb R04 bar-clamp residual.",
+    "Do not recover part dimensions or hidden coordinates by inverting either camera.",
+    "Perspective alternatives demonstrate camera/guide ambiguity. No best residual is a physical calibration.",
+    "For a future measured reconstruction obtain surveyed correspondences at multiple depths, camera metadata/targets and views of actual hidden interfaces."
+  ]
+}

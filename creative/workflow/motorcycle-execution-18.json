@@ -11,15 +11,15 @@
     {
       "lot": 1,
       "label": "Pontets et fixations du guidon",
-      "state": "research_and_separate_candidate_fabrication",
+      "state": "separate_candidates_under_review_not_complete",
       "source_folders": [
         "../../assets-src/moto-components/handlebar-clamps"
       ],
       "research": "../research/chassis-running-18/report.json",
       "depends_on_lots": [],
       "user_art_accepted": false,
-      "any_source_blend_built": false,
-      "any_runtime_checked": false,
+      "any_source_blend_built": true,
+      "any_runtime_checked": true,
       "all_required_components_built": false,
       "all_interfaces_checked": false,
       "group_complete": false,
@@ -28,7 +28,17 @@
         "berceaux inférieurs avec goujons",
         "visserie visible"
       ],
-      "owner_chain": "A"
+      "owner_chain": "A",
+      "candidates": [
+        {
+          "component_id": "MOTO-HANDLEBAR-CLAMPS-001",
+          "revision": "handlebar-clamps-v1",
+          "source_sha256": "416fd21980fe4425628bf7414607c8c37c12dea4f70965e0bac67c721d7e14c5",
+          "review": "../reviews/handlebar-clamps-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        }
+      ]
     },
     {
       "lot": 2,
@@ -45,9 +55,9 @@
       "candidates": [
         {
           "component_id": "MOTO-INSTRUMENT-BRACKET-001",
-          "revision": "instrument-bracket-v1",
-          "source_sha256": "86891d5bbf7e2a0833a74595c949132535995ae8361344065926f562060c75f5",
-          "review": "../reviews/instrument-bracket-v1/README.md",
+          "revision": "instrument-bracket-v2",
+          "source_sha256": "52d89cdeb675610ef4f89d8ea10a17c95f79824c68aa8953d6c503b5ce245759",
+          "review": "../reviews/instrument-bracket-v2/README.md",
           "runtime_checked": true,
           "art_accepted": false
         }
@@ -80,6 +90,14 @@
           "review": "../reviews/handlebar-grips-v2/README.md",
           "runtime_checked": true,
           "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-THROTTLE-CONTROL-001",
+          "revision": "throttle-control-v1",
+          "source_sha256": "1c0747975fbdcd2ada2140f2461ff359940967aa1a3036e2b7e0a3d24221237f",
+          "review": "../reviews/throttle-control-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
         }
       ],
       "any_source_blend_built": true,
@@ -97,15 +115,15 @@
     {
       "lot": 4,
       "label": "Commodo gauche",
-      "state": "research_and_separate_candidate_fabrication",
+      "state": "separate_candidates_under_review_not_complete",
       "source_folders": [
         "../../assets-src/moto-components/switchgear-left"
       ],
       "research": "../research/forward-cockpit-18/report.json",
       "depends_on_lots": [],
       "user_art_accepted": false,
-      "any_source_blend_built": false,
-      "any_runtime_checked": false,
+      "any_source_blend_built": true,
+      "any_runtime_checked": true,
       "all_required_components_built": false,
       "all_interfaces_checked": false,
       "group_complete": false,
@@ -115,12 +133,22 @@
         "sélecteur clignotants et rappel",
         "poussoir klaxon"
       ],
-      "owner_chain": "C"
+      "owner_chain": "C",
+      "candidates": [
+        {
+          "component_id": "MOTO-SWITCHGEAR-LEFT-001",
+          "revision": "switchgear-left-v2",
+          "source_sha256": "657ecbdb13f48f9eb59a354ed7ebfba2ab05a7ac7d6b6e7c7ced8cb33b610ea4",
+          "review": "../reviews/switchgear-left-v2/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        }
+      ]
     },
     {
       "lot": 5,
       "label": "Commodo droit",
-      "state": "queued_after_interfaces",
+      "state": "separate_candidates_under_review_not_complete",
       "source_folders": [
         "../../assets-src/moto-components/switchgear-right"
       ],
@@ -129,8 +157,8 @@
         3
       ],
       "user_art_accepted": false,
-      "any_source_blend_built": false,
-      "any_runtime_checked": false,
+      "any_source_blend_built": true,
+      "any_runtime_checked": true,
       "all_required_components_built": false,
       "all_interfaces_checked": false,
       "group_complete": false,
@@ -138,12 +166,22 @@
         "coques droite",
         "commande rouge observée de fonction inconnue"
       ],
-      "owner_chain": "C"
+      "owner_chain": "C",
+      "candidates": [
+        {
+          "component_id": "MOTO-SWITCHGEAR-RIGHT-001",
+          "revision": "switchgear-right-v1",
+          "source_sha256": "84182072eb72607cf3b9a029cf4e09964f8b4a86df612bfed912d0d666e9087c",
+          "review": "../reviews/switchgear-right-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        }
+      ]
     },
     {
       "lot": 6,
       "label": "Levier embrayage et support",
-      "state": "queued_after_interfaces",
+      "state": "separate_candidates_under_review_not_complete",
       "source_folders": [
         "../../assets-src/moto-components/clutch-control"
       ],
@@ -152,8 +190,8 @@
         4
       ],
       "user_art_accepted": false,
-      "any_source_blend_built": false,
-      "any_runtime_checked": false,
+      "any_source_blend_built": true,
+      "any_runtime_checked": true,
       "all_required_components_built": false,
       "all_interfaces_checked": false,
       "group_complete": false,
@@ -162,12 +200,22 @@
         "support et collier",
         "pivot et réglage de câble"
       ],
-      "owner_chain": "B"
+      "owner_chain": "B",
+      "candidates": [
+        {
+          "component_id": "MOTO-CLUTCH-CONTROL-001",
+          "revision": "clutch-control-v2",
+          "source_sha256": "586b41d08fd0cb8a9caad66e7cbe83af1592aad42e6def823135f99b6f200059",
+          "review": "../reviews/clutch-control-v2/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        }
+      ]
     },
     {
       "lot": 7,
       "label": "Levier frein au guidon et support",
-      "state": "queued_after_interfaces",
+      "state": "separate_candidates_under_review_not_complete",
       "source_folders": [
         "../../assets-src/moto-components/front-brake-control"
       ],
@@ -177,8 +225,8 @@
         5
       ],
       "user_art_accepted": false,
-      "any_source_blend_built": false,
-      "any_runtime_checked": false,
+      "any_source_blend_built": true,
+      "any_runtime_checked": true,
       "all_required_components_built": false,
       "all_interfaces_checked": false,
       "group_complete": false,
@@ -187,12 +235,22 @@
         "support et collier",
         "pivot et réglage de câble"
       ],
-      "owner_chain": "B"
+      "owner_chain": "B",
+      "candidates": [
+        {
+          "component_id": "MOTO-FRONT-BRAKE-CONTROL-001",
+          "revision": "front-brake-control-v2",
+          "source_sha256": "6ab2f1ecb322f92a1f26643a149e7b2b93691dc91d3fb2e965c8b8f55733b2e1",
+          "review": "../reviews/front-brake-control-v2/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        }
+      ]
     },
     {
       "lot": 8,
       "label": "Rétroviseurs gauche/droit",
-      "state": "documentary_research",
+      "state": "left_mirror_rework_in_progress_not_in_this_source_checkpoint",
       "source_folders": [],
       "research": "../research/forward-cockpit-18/report.json",
       "depends_on_lots": [
@@ -216,14 +274,16 @@
     {
       "lot": 9,
       "label": "Contacteur et clé",
-      "state": "documentary_research",
-      "source_folders": [],
+      "state": "separate_candidate_built_review_in_progress",
+      "source_folders": [
+        "../../assets-src/moto-components/ignition-lock"
+      ],
       "research": "../research/forward-cockpit-18/report.json",
       "depends_on_lots": [
         2
       ],
       "user_art_accepted": false,
-      "any_source_blend_built": false,
+      "any_source_blend_built": true,
       "any_runtime_checked": false,
       "all_required_components_built": false,
       "all_interfaces_checked": false,
@@ -237,8 +297,10 @@
     {
       "lot": 10,
       "label": "Câbles et faisceau visibles",
-      "state": "queued_after_interfaces",
-      "source_folders": [],
+      "state": "visible_partial_candidate_built_final_views_pending",
+      "source_folders": [
+        "../../assets-src/moto-components/cockpit-cables"
+      ],
       "research": null,
       "depends_on_lots": [
         2,
@@ -250,7 +312,7 @@
         9
       ],
       "user_art_accepted": false,
-      "any_source_blend_built": false,
+      "any_source_blend_built": true,
       "any_runtime_checked": false,
       "all_required_components_built": false,
       "all_interfaces_checked": false,
@@ -259,7 +321,8 @@
         "départs de gaines visibles",
         "faisceau visible et attaches documentées"
       ],
-      "owner_chain": "B"
+      "owner_chain": "B",
+      "remaining_scope": "Only three documented visible sheath segments; electrical assignment and hidden routes unresolved, not full harness"
     },
     {
       "lot": 11,
@@ -308,15 +371,18 @@
     {
       "lot": 13,
       "label": "Fourche et direction",
-      "state": "documentary_research",
-      "source_folders": [],
+      "state": "separate_candidates_under_review_not_complete",
+      "source_folders": [
+        "../../assets-src/moto-components/front-fork/inner-tube",
+        "../../assets-src/moto-components/steering-triples/upper"
+      ],
       "research": "../research/chassis-running-18/report.json",
       "depends_on_lots": [
         1
       ],
       "user_art_accepted": false,
-      "any_source_blend_built": false,
-      "any_runtime_checked": false,
+      "any_source_blend_built": true,
+      "any_runtime_checked": true,
       "all_required_components_built": false,
       "all_interfaces_checked": false,
       "group_complete": false,
@@ -327,7 +393,25 @@
         "tube et fourreau droit",
         "soufflets et joints visibles"
       ],
-      "owner_chain": "A"
+      "owner_chain": "A",
+      "candidates": [
+        {
+          "component_id": "MOTO-FORK-INNER-TUBE-001",
+          "revision": "front-fork-inner-tube-v1",
+          "source_sha256": "dca2502286663e14f80bdcd35365bc61bedab849a2df2c612e48438e456d0294",
+          "review": "../reviews/front-fork-inner-tube-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-STEERING-UPPER-001",
+          "revision": "steering-upper-v1",
+          "source_sha256": "ba2bf24d27f3ef2092d3997823f2c792cec4af268aa527ee4730ba23f064e47f",
+          "review": "../reviews/steering-upper-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        }
+      ]
     },
     {
       "lot": 14,
@@ -402,15 +486,17 @@
     {
       "lot": 17,
       "label": "Moteur extérieur, échappement, repose-pieds, pédales et béquilles",
-      "state": "documentary_research",
-      "source_folders": [],
+      "state": "right_cover_candidate_built_final_views_pending_other_parts_remaining",
+      "source_folders": [
+        "../../assets-src/moto-components/engine-cover-right"
+      ],
       "research": "../research/body-powertrain-18/report.json",
       "depends_on_lots": [
         15,
         16
       ],
       "user_art_accepted": false,
-      "any_source_blend_built": false,
+      "any_source_blend_built": true,
       "any_runtime_checked": false,
       "all_required_components_built": false,
       "all_interfaces_checked": false,

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-CLUTCH-CONTROL-001",
-  "label": "Commande embrayage et support",
+  "label": "Levier embrayage et support",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,9 +12,9 @@
     "material"
   ],
   "identity": {
-    "variant": "Current RDC appearance with related reference parts; exact identity under research",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
-    "usage": "Physical pilot LEFT +X foreground",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
       0.15,
       0.35,
@@ -25,11 +25,43 @@
   "sources": [
     "D01",
     "D04",
-    "D13",
     "D15"
   ],
   "claims": [],
-  "views": [],
+  "views": [
+    {
+      "name": "quarter-rest",
+      "frame": 1,
+      "working_pull_degrees": 0,
+      "location": [
+        0.4671996235847473,
+        0.2612171769142151,
+        0.3557499945163727
+      ],
+      "target": [
+        0.26719963550567627,
+        -0.008782846853137016,
+        0.10574999451637268
+      ],
+      "lens_mm": 58
+    },
+    {
+      "name": "pivot-working-12deg",
+      "frame": 25,
+      "working_pull_degrees": 12,
+      "location": [
+        0.4073103666305542,
+        0.1546100378036499,
+        0.32899999618530273
+      ],
+      "target": [
+        0.2473103553056717,
+        -0.015389963984489441,
+        0.10899999737739563
+      ],
+      "lens_mm": 65
+    }
+  ],
   "criteria": [],
   "gaps": [
     {
@@ -48,7 +80,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "clutch-control-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -56,73 +88,123 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": null,
+      "revision": "clutch-control-v2",
       "reviewer": null,
       "evidence": [],
-      "reason": "Reference variant/local dimensions not certified",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
       "status": "blocked",
-      "revision": null,
+      "revision": "clutch-control-v2",
       "reviewer": null,
       "evidence": [],
-      "reason": "Reference variant/local dimensions not certified",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "clutch-control-v2",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/clutch-control/clutch-control-v2.blend",
+          "kind": "editable_source",
+          "revision": "clutch-control-v2",
+          "sha256": "586b41d08fd0cb8a9caad66e7cbe83af1592aad42e6def823135f99b6f200059"
+        },
+        {
+          "path": "../../reviews/clutch-control-v2/quarter-rest.png",
+          "kind": "isolated_comparison",
+          "revision": "clutch-control-v2",
+          "sha256": "f7aa85d259f48966906f2248352fbc94a465ebcb6fae02b8ed59e59aa7392e0c"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "clutch-control-v2",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/clutch-control-v2/pivot-working-12deg.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "clutch-control-v2",
+          "sha256": "9251b1e25f7bd54e0403b75fd745440d31c6aaca7ad30917a4ff0e58933cae2b"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "clutch-control-v2",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/clutch-control-v2/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "clutch-control-v2",
+          "sha256": "c4a3692f8b8c152ca79cf0daac8e7dae2b34ae82cb8d21bc03b504319785e117"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "clutch-control-v2",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/clutch-control-v2/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "clutch-control-v2",
+          "sha256": "e94de557635524dd68a8194bb63807ae9cb1d45aadade8fb52075a92dd275618"
+        },
+        {
+          "path": "../../reviews/clutch-control-v2/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "clutch-control-v2",
+          "sha256": "b1dc126a5df112a64736b81103a1716be19c6b2fc2ea50abd9864158c4d842c3"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "clutch-control-v2",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "clutch-control-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "",
       "reviewed_at": null
     }
   },
-  "active_detailed_fabrication": true,
-  "source_revision": "clutch-control-v1",
-  "export_revision": null,
-  "next_action": "Make isolated candidate after attributed reference inspection; document unknown functions and all estimated sections",
+  "active_detailed_fabrication": false,
+  "source_revision": "clutch-control-v2",
+  "export_revision": "clutch-control-v2-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
   "art_accepted": false,
-  "production_group": 6
+  "production_group": 6,
+  "previous_revisions": [
+    {
+      "revision": "clutch-control-v1",
+      "source": null,
+      "review": null,
+      "art_accepted": false
+    }
+  ],
+  "candidate_source": "../../../assets-src/moto-components/clutch-control/README_v2.md",
+  "candidate_review": "../../reviews/clutch-control-v2/README.md"
 }

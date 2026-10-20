@@ -1,0 +1,191 @@
+{
+  "schema": "wewa.independent-photo-audit.v1",
+  "created_utc": "2026-10-20T23:16:23.646604+00:00",
+  "component_id": "MOTO-HANDLEBAR-CLAMPS-001",
+  "scope": "Independent appearance comparison of supplied renders against three actually viewed product images; no geometry, new render, topology/normals test or manifest change.",
+  "reference_observations": {
+    "path": "/workspace/wewa-github/creative/research/handlebar-clamps/reference-observations.json",
+    "sha256": "5120bcfd45e2ec04a80ff1e2ab79ab278b9727505766945c79840ee311f3bd3e"
+  },
+  "images_actually_compared": [
+    {
+      "role": "candidate-overview",
+      "path": "/tmp/wewa-clamps-preview.png",
+      "sha256": "8b38e28fd1ff0791729de07974441cf5721ee83f887056f3458839eccc4668d9",
+      "size_px": [
+        600,
+        450
+      ],
+      "actually_viewed": true
+    },
+    {
+      "role": "candidate-detail",
+      "path": "/tmp/wewa-clamps-preview-detail.png",
+      "sha256": "8e27444e817bf5bec90a8718153c508526c35304c4a809a292ebfa6d2af475a3",
+      "size_px": [
+        600,
+        450
+      ],
+      "actually_viewed": true
+    },
+    {
+      "role": "documentary-reference",
+      "path": "/workspace/wewa-assets/references/handlebar-clamps/matriz.jpg",
+      "sha256": "70386e685afaba29bff0bcddaadd1772717446f9cf53d3c85ef9a00e545e4b62",
+      "size_px": [
+        1210,
+        1210
+      ],
+      "actually_viewed": true,
+      "source_url": "https://bajajmatriz.com/wp-content/uploads/2025/04/36DS1801.jpg",
+      "rights": "Private documentary reference only; no photo pixels used as textures."
+    },
+    {
+      "role": "documentary-reference",
+      "path": "/workspace/wewa-assets/references/handlebar-clamps/pow-front.png",
+      "sha256": "d290920b5aae8dc77cdbeaaf4b8843d1eca948763c683ee89fa385873bbb2442",
+      "size_px": [
+        266,
+        266
+      ],
+      "actually_viewed": true,
+      "source_url": "https://partonwheels.com/wp-content/uploads/2023/12/36DS1801-optimized.png",
+      "rights": "Private documentary reference only; no photo pixels used as textures."
+    },
+    {
+      "role": "documentary-reference",
+      "path": "/workspace/wewa-assets/references/handlebar-clamps/pow-back.png",
+      "sha256": "ac1c4256b8716700614f9abce87d0257f08a01e368f93b4918e45dc5a345b296",
+      "size_px": [
+        266,
+        266
+      ],
+      "actually_viewed": true,
+      "source_url": "https://partonwheels.com/wp-content/uploads/2023/12/36DS1801-1-optimized.png",
+      "rights": "Private documentary reference only; no photo pixels used as textures."
+    }
+  ],
+  "comparability_limits": [
+    "The candidate is assembled with bolts; the product photographs show separated upper/lower halves without those four installed bolt heads. Clamping gap, final preload and visible hardware stack cannot be matched directly.",
+    "Different oblique cameras, rotation, framing, lighting, exposure and backgrounds. No shared camera calibration, scale target, roughness measurement or colour reference.",
+    "Matriz is the useful detailed surface/form source. POW views are only260x260 including packaging; they corroborate general shape and lower stud but cannot resolve micrograin or small radii.",
+    "36DS1801 seller identification remains a related-market/variant reference, not certified exact current RDC fitment. A similarity does not close mounting or dimensional unknowns.",
+    "The present review is of the exact preview hashes only; it does not transfer to any later changed model or render."
+  ],
+  "observations": [
+    {
+      "id": "PHOTO-CLAMP-01",
+      "topic": "main silhouette and open tube seat",
+      "evidence": [
+        "candidate-overview",
+        "candidate-detail",
+        "matriz.jpg",
+        "pow-front.png",
+        "pow-back.png"
+      ],
+      "finding": "The candidate preserves upper/lower profiled saddles, raised crown, two lateral bolt ears, an open round tube passage and lower central stud. The images do not support calling it a rectangular solid or a filled tube passage.",
+      "classification": "supported_visible_structure",
+      "confidence": "high_for_presence_not_dimensions",
+      "action": "No obligatory shape change inferred from these unmatched views."
+    },
+    {
+      "id": "PHOTO-CLAMP-02",
+      "topic": "crown and transverse camber",
+      "evidence": [
+        "candidate-detail",
+        "matriz.jpg"
+      ],
+      "finding": "Matriz shows broad curved outer highlights and rounded transitions; the candidate has a continuous arch and rounded crown/ear transition. Apparent transverse bulging differs, but Matriz rotates and separates the halves while the render shows an assembled part.",
+      "classification": "uncertain_shape_difference",
+      "confidence": "insufficient_for_specific_correction",
+      "action": "Do not order a new convexity, thickness or silhouette deformation from highlight shape alone."
+    },
+    {
+      "id": "PHOTO-CLAMP-03",
+      "topic": "bolt ears and edge sections",
+      "evidence": [
+        "candidate-detail",
+        "matriz.jpg",
+        "pow-front.png"
+      ],
+      "finding": "Candidate ears and exposed front faces read rather regular; Matriz edges read softer and locally uneven. The photographs nevertheless do not establish the same section plane or allow a radius/depth comparison.",
+      "classification": "uncertain_shape_difference",
+      "confidence": "insufficient_for_specific_correction",
+      "action": "No mandatory radius or ear-width change. Do not copy individual casting/photographic irregularities as certified geometry."
+    },
+    {
+      "id": "PHOTO-CLAMP-04",
+      "topic": "casting grain versus tube-seat surface",
+      "evidence": [
+        "candidate-detail",
+        "matriz.jpg"
+      ],
+      "finding": "In preview-detail the small irregular relief is conspicuous on the outer crown, front cut face and visible cylindrical tube seat. On Matriz, the outside has a subtle casting-like texture while the concave tube seat reads smoother, with a more continuous dark reflection. The render therefore separates those surface finishes less clearly than the detailed source photo.",
+      "classification": "supported_appearance_difference",
+      "confidence": {
+        "visible_difference": "high",
+        "specific_cause_and_real_grain_scale": "not_certified"
+      },
+      "certainty_limit": "These images prove a difference in surface reading, not a roughness number, measured grain size, machining process or exact surface finish on the RDC bike. Lighting can amplify the difference.",
+      "action": "Convey to maker A: reduce the visible granular relief on the tube-contact seat relative to the cast exterior; retain a restrained exterior texture. Check appearance through the existing material workflow. No geometry or new scratch texture is required by this observation."
+    },
+    {
+      "id": "PHOTO-CLAMP-05",
+      "topic": "small circular seat depression",
+      "evidence": [
+        "matriz.jpg",
+        "candidate-detail"
+      ],
+      "finding": "The isolated lower saddle in Matriz exposes a small circular depression on the concave seat. In the assembled candidate, the corresponding inner surface is partially occluded and dark; this view does not demonstrate either its absence or a wrong position.",
+      "classification": "not_assessable_in_supplied_render",
+      "confidence": "high_about_occlusion",
+      "action": "Do not order another hole or deepen the existing feature from this view. Reference-observations already records the function/size uncertainty."
+    },
+    {
+      "id": "PHOTO-CLAMP-06",
+      "topic": "joint gap, visible bores and stud",
+      "evidence": [
+        "candidate-overview",
+        "candidate-detail",
+        "matriz.jpg",
+        "pow-back.png"
+      ],
+      "finding": "The candidate has a thin dark separation between the halves and a lower threaded stud. Product photos confirm separated halves with two passages and one lower stud, but do not show the same assembled preload or the installed upper bolts.",
+      "classification": "supported_presence_assembly_not_calibrated",
+      "confidence": "high_for_presence_not_fit",
+      "action": "No request to close the gap, shorten the stud, change bolt heads or alter stack height from these photos."
+    },
+    {
+      "id": "PHOTO-CLAMP-07",
+      "topic": "metal colour and highlights",
+      "evidence": [
+        "candidate-overview",
+        "candidate-detail",
+        "matriz.jpg",
+        "pow-front.png",
+        "pow-back.png"
+      ],
+      "finding": "Both candidate and detailed source read as light silver metal. Candidate bolts/stud have brighter narrow highlights than the product sample; the studio render and uncontrolled product lighting are too different to identify a material error from that alone.",
+      "classification": "uncertain_material_difference",
+      "confidence": "insufficient_for_specific_metalness_or_colour_change",
+      "action": "Do not prescribe a new albedo, metalness or corrosion layer from brightness alone."
+    }
+  ],
+  "certain_findings_to_maker_A": [
+    "PHOTO-CLAMP-04: material surface reading inside the tube seat is more granular and less differentiated from the outer casting than in the detailed Matriz photograph; act on surface response, without inventing new geometry."
+  ],
+  "mandatory_geometry_corrections_from_this_review": [],
+  "decision": {
+    "status": "appearance_audit_complete_not_artistic_acceptance",
+    "conclusion": "No additional silhouette/void/section correction is sufficiently demonstrated by the supplied unmatched views. One supported material-reading difference is passed to maker A. Dimensional fit, transverse crown recovery, exact RDC finish and user artistic acceptance remain open.",
+    "G8_passed": false,
+    "manufacturer_notified": "/root/handlebar_fabrication"
+  },
+  "verification_scope": {
+    "technical_triangles_normals_retested": false,
+    "new_renders_created": false,
+    "models_modified": false,
+    "manifest_modified": false,
+    "reference_report_modified": false
+  }
+}

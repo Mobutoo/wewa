@@ -1,0 +1,269 @@
+{
+  "component_id": "MOTO-SWITCHGEAR-RIGHT-001",
+  "revision": "switchgear-right-v1",
+  "source_sha256": "84182072eb72607cf3b9a029cf4e09964f8b4a86df612bfed912d0d666e9087c",
+  "export_sha256": "33e78f6f5f8bdb9745a6af10701e6d610c12fd94603c61afa37362bd57714e4d",
+  "checks": [
+    {
+      "object": "RH switch upper shell - editable",
+      "vertices": 1518,
+      "faces": 3044,
+      "shells": 1,
+      "non_manifold_edges": 0,
+      "signed_volume_m3": 1.881566595487495e-05
+    },
+    {
+      "object": "RH switch lower shell - editable",
+      "vertices": 2338,
+      "faces": 4688,
+      "shells": 1,
+      "non_manifold_edges": 0,
+      "signed_volume_m3": 2.197028312173009e-05
+    },
+    {
+      "object": "RH observed red top control - function unknown",
+      "vertices": 1920,
+      "faces": 3836,
+      "shells": 1,
+      "non_manifold_edges": 0,
+      "signed_volume_m3": 3.6871567643557787e-07
+    },
+    {
+      "object": "RH estimated black actuator collar",
+      "vertices": 1920,
+      "faces": 3840,
+      "shells": 1,
+      "non_manifold_edges": 0,
+      "signed_volume_m3": 8.315229738502586e-08
+    },
+    {
+      "object": "RH underside screw head 0.141",
+      "vertices": 1419,
+      "faces": 2834,
+      "shells": 1,
+      "non_manifold_edges": 0,
+      "signed_volume_m3": 2.5921961109146177e-08
+    },
+    {
+      "object": "RH underside screw head 0.159",
+      "vertices": 1419,
+      "faces": 2834,
+      "shells": 1,
+      "non_manifold_edges": 0,
+      "signed_volume_m3": 2.5921962603735885e-08
+    }
+  ],
+  "bar_axis_clear_in_both_shells": [
+    true,
+    true
+  ],
+  "controls": [
+    {
+      "object": "RH observed red top control - function unknown",
+      "pivot_world_m": [
+        -0.21304935216903687,
+        0.03838953375816345,
+        0.12999999523162842
+      ],
+      "function": "unknown",
+      "actual_control_type_verified": false,
+      "review_motion_hypothesis": {
+        "push_metres": 0.0004,
+        "axis_blender_world": [
+          0,
+          0,
+          -1
+        ]
+      },
+      "bind_as_kill_or_starter": false,
+      "actual_electrical_state_tested": false
+    }
+  ],
+  "CSG": [
+    {
+      "stages": [
+        {
+          "operation": "features",
+          "part": "Estimated clamp screw boss0.141",
+          "before_volume_m3": 0.00011243620058188261,
+          "after_volume_m3": 0.00011262340118411465
+        },
+        {
+          "operation": "features",
+          "part": "Estimated clamp screw boss0.159",
+          "before_volume_m3": 0.00011262340118411465,
+          "after_volume_m3": 0.00011281063073871224
+        },
+        {
+          "operation": "drills",
+          "part": "RH switch interior wall cavity",
+          "before_volume_m3": 0.00011281063073871224,
+          "after_volume_m3": 4.7362168998896716e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Bar passage 22.5mm working",
+          "before_volume_m3": 4.7362168998896716e-05,
+          "after_volume_m3": 4.497822875562162e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Estimated screw core0.141",
+          "before_volume_m3": 4.497822875562162e-05,
+          "after_volume_m3": 4.4845015252557127e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Estimated underside counterbore0.141",
+          "before_volume_m3": 4.4845015252557127e-05,
+          "after_volume_m3": 4.4665183490894794e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Estimated screw core0.159",
+          "before_volume_m3": 4.4665183490894794e-05,
+          "after_volume_m3": 4.453183980918698e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Estimated underside counterbore0.159",
+          "before_volume_m3": 4.453183980918698e-05,
+          "after_volume_m3": 4.435199539376571e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Reserved cable wheel chamber",
+          "before_volume_m3": 4.435199539376571e-05,
+          "after_volume_m3": 4.214231087278828e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Separate fixed cable guide outlet",
+          "before_volume_m3": 4.214231087278828e-05,
+          "after_volume_m3": 4.1057867911567475e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Observed red control stem passage",
+          "before_volume_m3": 4.1057867911567475e-05,
+          "after_volume_m3": 4.091320662027058e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Split plane upper",
+          "before_volume_m3": 4.091320662027058e-05,
+          "after_volume_m3": 1.8815670935260744e-05
+        }
+      ],
+      "solid_components": 1,
+      "volume_m3": 1.8815670935260744e-05,
+      "worker": "manifold3d",
+      "worker_version": "3.3.2"
+    },
+    {
+      "stages": [
+        {
+          "operation": "features",
+          "part": "Estimated clamp screw boss0.141",
+          "before_volume_m3": 0.00011243620058188261,
+          "after_volume_m3": 0.00011262340118411465
+        },
+        {
+          "operation": "features",
+          "part": "Estimated clamp screw boss0.159",
+          "before_volume_m3": 0.00011262340118411465,
+          "after_volume_m3": 0.00011281063073871224
+        },
+        {
+          "operation": "drills",
+          "part": "RH switch interior wall cavity",
+          "before_volume_m3": 0.00011281063073871224,
+          "after_volume_m3": 4.7362168998896716e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Bar passage 22.5mm working",
+          "before_volume_m3": 4.7362168998896716e-05,
+          "after_volume_m3": 4.497822875562162e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Estimated screw core0.141",
+          "before_volume_m3": 4.497822875562162e-05,
+          "after_volume_m3": 4.4845015252557127e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Estimated underside counterbore0.141",
+          "before_volume_m3": 4.4845015252557127e-05,
+          "after_volume_m3": 4.4665183490894794e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Estimated screw core0.159",
+          "before_volume_m3": 4.4665183490894794e-05,
+          "after_volume_m3": 4.453183980918698e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Estimated underside counterbore0.159",
+          "before_volume_m3": 4.453183980918698e-05,
+          "after_volume_m3": 4.435199539376571e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Reserved cable wheel chamber",
+          "before_volume_m3": 4.435199539376571e-05,
+          "after_volume_m3": 4.214231087278828e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Separate fixed cable guide outlet",
+          "before_volume_m3": 4.214231087278828e-05,
+          "after_volume_m3": 4.1057867911567475e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Observed red control stem passage",
+          "before_volume_m3": 4.1057867911567475e-05,
+          "after_volume_m3": 4.091320662027058e-05
+        },
+        {
+          "operation": "drills",
+          "part": "Split plane lower",
+          "before_volume_m3": 4.091320662027058e-05,
+          "after_volume_m3": 2.1970289018525656e-05
+        }
+      ],
+      "solid_components": 1,
+      "volume_m3": 2.1970289018525656e-05,
+      "worker": "manifold3d",
+      "worker_version": "3.3.2"
+    }
+  ],
+  "datum": {
+    "endpoint_m": [
+      -0.3400000035762787,
+      0.08500000089406967,
+      0.10499999672174454
+    ],
+    "inward_axis": [
+      0.9166959524154663,
+      -0.39958542585372925,
+      0.0
+    ],
+    "thumb_side_radial": [
+      0.39958542585372925,
+      0.9166959524154663,
+      -0.0
+    ],
+    "physical_right_is_negative_X": true
+  },
+  "all_dimensions_estimated": true,
+  "exact_current_RDC_identity_confirmed": false,
+  "functional_electrical_controls": false,
+  "partial_current_photo_inferred_scope": true,
+  "red_control_function": "unknown",
+  "wheel_and_guide_created_in_this_source": false,
+  "accepted_art": false
+}

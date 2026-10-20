@@ -18,7 +18,36 @@
       "files": [
         "instruments/instruments-inspection.glb"
       ],
-      "rigs": [],
+      "rigs": [
+        {
+          "id": "speed_angle",
+          "label": "Aiguille vitesse — angle relatif de revue",
+          "node": "SPEED_NEEDLE_PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -270,
+          "max": 0,
+          "initial": 0,
+          "step": 1
+        },
+        {
+          "id": "fuel_angle",
+          "label": "Aiguille carburant — angle relatif de revue",
+          "node": "FUEL_NEEDLE_PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -28,
+          "max": 52,
+          "initial": 0,
+          "step": 1
+        }
+      ],
       "source": "instruments/instruments-v1.blend",
       "collection": "WEWA_INSTRUMENTS_SEPARATE_PARTS"
     },
@@ -34,6 +63,118 @@
       "component_id": "MOTO-HANDLEBAR-GRIPS-001",
       "readme": "README_v2.md",
       "lot": 3
+    },
+    "clamps": {
+      "label": "Pontets du guidon — candidat séparé",
+      "lot": 1,
+      "review": "handlebar-clamps-v1",
+      "source": "handlebar-clamps/handlebar-clamps-v1.blend",
+      "component_id": "MOTO-HANDLEBAR-CLAMPS-001",
+      "files": [
+        "handlebar-clamps/handlebar-clamps-inspection.glb"
+      ],
+      "rigs": [],
+      "collection": "WEWA_HANDLEBAR_CLAMPS_SEPARATE_PARTS"
+    },
+    "throttle": {
+      "label": "Manchon accélérateur et entraînement de câble",
+      "lot": 3,
+      "review": "throttle-control-v1",
+      "source": "throttle-control/throttle-control-v1.blend",
+      "component_id": "MOTO-THROTTLE-CONTROL-001",
+      "files": [
+        "throttle-control/throttle-control-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "throttle",
+          "label": "Rotation du manchon",
+          "node": "Throttle sleeve and cable spool - moving candidate",
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "min": 0,
+          "max": 50,
+          "initial": 0
+        }
+      ],
+      "collection": "WEWA_THROTTLE_CONTROL"
+    },
+    "switchgear-left": {
+      "label": "Commodo gauche v2 — pictogrammes documentés",
+      "lot": 4,
+      "review": "switchgear-left-v2",
+      "source": "switchgear-left/switchgear-left-v2.blend",
+      "component_id": "MOTO-SWITCHGEAR-LEFT-001",
+      "files": [
+        "switchgear-left/switchgear-left-v2-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "dipper",
+          "label": "Code/phare",
+          "node": "LH dipper rocker - high low PIVOT",
+          "axis": [
+            -0.9166959524,
+            0,
+            0.3995854259
+          ],
+          "kind": "rotation",
+          "min": -9,
+          "max": 9,
+          "step": 0.1,
+          "initial": 0
+        },
+        {
+          "id": "turn",
+          "label": "Clignotant",
+          "node": "LH turn selector - centre push PIVOT",
+          "axis": [
+            -0.9166959524,
+            0,
+            0.3995854259
+          ],
+          "kind": "translation",
+          "min": -0.003,
+          "max": 0.003,
+          "step": 0.0001,
+          "initial": 0
+        },
+        {
+          "id": "turn_push",
+          "label": "Rappel central",
+          "node": "LH turn selector - centre push PIVOT",
+          "axis": [
+            0.3995854259,
+            0,
+            0.9166959524
+          ],
+          "kind": "translation",
+          "min": 0,
+          "max": 0.0014,
+          "step": 0.0001,
+          "initial": 0
+        },
+        {
+          "id": "horn",
+          "label": "Klaxon",
+          "node": "LH horn push tongue PIVOT",
+          "axis": [
+            0.3995854259,
+            0,
+            0.9166959524
+          ],
+          "kind": "translation",
+          "min": 0,
+          "max": 0.0014,
+          "step": 0.0001,
+          "initial": 0
+        }
+      ],
+      "collection": "WEWA_SWITCHGEAR_LEFT",
+      "readme": "README_v2.md"
     },
     "instrument-bracket": {
       "label": "Support des compteurs — pièce isolée",
@@ -86,6 +227,250 @@
           ]
         }
       }
+    },
+    "switchgear-right": {
+      "label": "Commodo droit — fonction rouge inconnue",
+      "lot": 5,
+      "review": "switchgear-right-v1",
+      "source": "switchgear-right/switchgear-right-v1.blend",
+      "collection": "WEWA_SWITCHGEAR_RIGHT",
+      "component_id": "MOTO-SWITCHGEAR-RIGHT-001",
+      "files": [
+        "switchgear-right/switchgear-right-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "red_observed",
+          "label": "Course géométrique estimée — fonction inconnue",
+          "node": "RH observed red top control - FUNCTION UNKNOWN PIVOT",
+          "kind": "translation",
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "min": 0,
+          "max": 0.0004,
+          "step": 5e-05,
+          "initial": 0
+        }
+      ]
+    },
+    "clutch-control": {
+      "label": "Levier embrayage et support",
+      "lot": 6,
+      "review": "clutch-control-v2",
+      "source": "clutch-control/clutch-control-v2.blend",
+      "collection": "WEWA_CLUTCH_CONTROL",
+      "component_id": "MOTO-CLUTCH-CONTROL-001",
+      "files": [
+        "clutch-control/clutch-control-v2-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "pull",
+          "label": "Course partielle estimée",
+          "node": "Clutch lever - moving candidate",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": 0,
+          "max": 12,
+          "step": 0.1,
+          "initial": 0
+        }
+      ],
+      "readme": "README_v2.md"
+    },
+    "front-brake-control": {
+      "label": "Levier du frein avant à câble",
+      "lot": 7,
+      "review": "front-brake-control-v2",
+      "source": "front-brake-control/front-brake-control-v2.blend",
+      "collection": "WEWA_FRONT_BRAKE_CONTROL",
+      "component_id": "MOTO-FRONT-BRAKE-CONTROL-001",
+      "files": [
+        "front-brake-control/front-brake-control-v2-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "pull",
+          "label": "Course partielle estimée",
+          "node": "Front cable brake lever - moving candidate",
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "min": 0,
+          "max": 12,
+          "step": 0.1,
+          "initial": 0
+        }
+      ],
+      "readme": "README_v2.md"
+    },
+    "ignition-lock": {
+      "label": "Contacteur et clé — position estimée",
+      "lot": 9,
+      "review": "ignition-lock-v1",
+      "source": "ignition-lock/ignition-lock-v1.blend",
+      "collection": "WEWA_IGNITION_LOCK",
+      "component_id": "MOTO-IGNITION-LOCK-001",
+      "files": [
+        "ignition-lock/ignition-lock-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "key_state",
+          "label": "États de présentation estimés",
+          "node": "Ignition rotor and key state pivot",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -35,
+          "max": 45,
+          "initial": 0,
+          "step": 1
+        }
+      ]
+    },
+    "grips-v3": {
+      "label": "Poignées v3 — motifs arrondis élargis",
+      "review": "handlebar-grips-v3",
+      "files": [
+        "handlebar-grips/handlebar-grips-v3-inspection.glb"
+      ],
+      "rigs": [],
+      "source": "handlebar-grips/handlebar-grips-v3.blend",
+      "collection": "WEWA_HANDLEBAR_GRIP_ENVELOPES",
+      "component_id": "MOTO-HANDLEBAR-GRIPS-001",
+      "readme": "README_v3.md",
+      "lot": 3
+    },
+    "cockpit-cables": {
+      "label": "Câbles visibles — trois tronçons partiels",
+      "lot": 10,
+      "review": "cockpit-cables-v1",
+      "source": "cockpit-cables/cockpit-cables-v1.blend",
+      "collection": "WEWA_COCKPIT_CABLES_PARTIAL",
+      "component_id": "MOTO-COCKPIT-CABLES-001",
+      "files": [
+        "cockpit-cables/cockpit-cables-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Tronçons visibles documentés, affectation de deux gaines inconnue. Aucun trajet caché, raccord moyeu ou brochage certifié."
+    },
+    "instrument-bracket-v2": {
+      "label": "Support des compteurs v2 — nervure élargie",
+      "lot": 2,
+      "review": "instrument-bracket-v2",
+      "source": "instrument-bracket/instrument-bracket-v2.blend",
+      "collection": "WEWA_INSTRUMENT_BRACKET_ISOLATED_V2",
+      "source_frame": "isolated_local",
+      "component_id": "MOTO-INSTRUMENT-BRACKET-001",
+      "files": [
+        "instrument-bracket/instrument-bracket-v2-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Repère local XY, face+Z. Vues de la pièce seule ; aucun montage sur les compteurs actuels certifié. Sections et dimensions estimées.",
+      "views": {
+        "quarter": {
+          "target": [
+            -0.001566,
+            -0.0016,
+            0.058245
+          ],
+          "position": [
+            0.17843399999999998,
+            0.1784,
+            -0.161755
+          ]
+        },
+        "driver": {
+          "target": [
+            -0.001566,
+            -0.0016,
+            0.058245
+          ],
+          "position": [
+            -0.001566,
+            0.3184,
+            0.078245
+          ]
+        },
+        "reverse": {
+          "target": [
+            -0.001566,
+            -0.0016,
+            0.058245
+          ],
+          "position": [
+            0.078434,
+            -0.3016,
+            0.11824499999999999
+          ]
+        }
+      },
+      "readme": "README_v2.md"
+    },
+    "fork-inner-tube": {
+      "label": "Tube intérieur de fourche — pièce isolée",
+      "lot": 13,
+      "review": "front-fork-inner-tube-v1",
+      "source": "front-fork/inner-tube/front-fork-inner-tube-v1.blend",
+      "collection": "WEWA_FORK_INNER_TUBE_ISOLATED",
+      "source_frame": "isolated_local",
+      "component_id": "MOTO-FORK-INNER-TUBE-001",
+      "files": [
+        "front-fork/inner-tube/front-fork-inner-tube-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Un seul tube creux. Diamètre31mm lié à une autre variante ; longueur550mm estimée. Aucune pose installée ni interface de fourche certifiée."
+    },
+    "engine-cover-right": {
+      "label": "Carter moteur droit — coque extérieure",
+      "lot": 17,
+      "review": "engine-cover-right-v1",
+      "source": "engine-cover-right/engine-cover-right-v1.blend",
+      "collection": "WEWA_ENGINE_COVER_RIGHT",
+      "component_id": "MOTO-ENGINE-COVER-RIGHT-001",
+      "files": [
+        "engine-cover-right/engine-cover-right-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Coque creuse et ouverture filtre. Dimensions, intérieur et datum estimés ; bouchons, kick et autres pièces séparés, aucun moteur complet annoncé."
+    },
+    "steering-upper": {
+      "label": "Té supérieur — plaque isolée",
+      "lot": 13,
+      "review": "steering-upper-v1",
+      "source": "steering-triples/upper/steering-upper-v1.blend",
+      "collection": "WEWA_STEERING_UPPER_ISOLATED",
+      "source_frame": "isolated_local",
+      "component_id": "MOTO-STEERING-UPPER-001",
+      "files": [
+        "steering-triples/upper/steering-upper-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "DS181005 lié, sept ajours observés. Largeur≈218,5mm et épaisseur2,2mm estimées ; aucune calibration31mm ou pose installée."
+    },
+    "engine-filter-cap": {
+      "label": "Bouchon du filtre moteur — pièce séparée",
+      "lot": 17,
+      "review": "engine-filter-cap-v1",
+      "source": "engine-filter-cap/engine-filter-cap-v1.blend",
+      "collection": "WEWA_ENGINE_FILTER_CAP",
+      "component_id": "MOTO-ENGINE-FILTER-CAP-001",
+      "files": [
+        "engine-filter-cap/engine-filter-cap-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Trois oreilles issues d’une référence liée, dimensions et raccord estimés. Pas de joint, vis, filtre ou compatibilité OEM certifiés."
     }
   }
 }

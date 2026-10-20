@@ -1,0 +1,9 @@
+from pathlib import Path
+import bpy,json,hashlib,sys
+from mathutils import Vector
+HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[2];OUT=ROOT/'creative/reviews/engine-filter-cap-v1';source=HERE/'engine-filter-cap-v1.blend';check=json.loads((OUT/'source-geometry-check.json').read_text());gltf=json.loads((OUT/'export-check.json').read_text());assert hashlib.sha256(source.read_bytes()).hexdigest()==check['source_sha256'];assert hashlib.sha256((HERE/'engine-filter-cap-inspection.glb').read_bytes()).hexdigest()==gltf['sha256'];assert not gltf['glTF_errors'];assert not any(m['zeroAreaTriangles'] for m in gltf['meshes'])
+sys.path.insert(0,str(HERE.parent/'throttle-control'));from render_checkpoint import checkpoint_view
+bpy.ops.wm.open_mainfile(filepath=str(source));scene=bpy.context.scene;bpy.data.collections['ENGINE_FILTER_CAP_IMMUTABLE_CASE_GUIDE'].hide_render=True;datum=bpy.data.objects['RH oil filter cap provisional datum'];target=datum.matrix_world@Vector(check['cap_centre_local_uvw_m']);report={'source_sha256':check['source_sha256'],'export_sha256':gltf['sha256'],'samples':96,'denoising':'OpenImageDenoise','resolution_px':[1100,850],'actual_blender_render':True,'guides_visible':False,'all_dimensions_estimated':True,'views':[],'art_accepted':False}
+for name,offset in [('outer-face',(.01,.075,.24)),('rear-spigot',(-.06,.09,-.24))]:
+ scene.camera.location=target+datum.matrix_world.to_3x3()@Vector(offset);scene.camera.rotation_euler=(target-scene.camera.location).to_track_quat('-Z','Y').to_euler();scene.camera.data.lens=65;cp=checkpoint_view(scene,OUT,source,name);report['views'].append({'name':name,'camera_m':list(scene.camera.location),'target_m':list(target),'lens_mm':65,'checkpoint':name+'.checkpoint.json','outputs':cp['outputs']})
+(OUT/'render-report.json').write_text(json.dumps(report,indent=2)+'\n')

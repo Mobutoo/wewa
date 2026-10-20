@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-SWITCHGEAR-LEFT-001",
-  "label": "Commodo gauche",
+  "label": "Commodo gauche v2 — pictogrammes documentés",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,9 +12,9 @@
     "material"
   ],
   "identity": {
-    "variant": "Boxer125HD current RDC target with related-parts catalogue; exact part applicability under research",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
-    "usage": "First-person foreground; isolated candidate before installed assembly",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
       0.15,
       0.35,
@@ -25,11 +25,42 @@
   "sources": [
     "D01",
     "D04",
-    "D13",
-    "D15"
+    "D15",
+    "D19"
   ],
   "claims": [],
-  "views": [],
+  "views": [
+    {
+      "name": "markings-front",
+      "camera_location_m": [
+        0.12575170397758484,
+        0.22614765167236328,
+        0.10099999606609344
+      ],
+      "camera_target_m": [
+        0.20167294144630432,
+        0.05197543650865555,
+        0.10099999606609344
+      ],
+      "lens_mm": 90,
+      "actually_saved": true
+    },
+    {
+      "name": "markings-grazing",
+      "camera_location_m": [
+        0.04783254861831665,
+        0.19218289852142334,
+        0.11599999666213989
+      ],
+      "camera_target_m": [
+        0.20167294144630432,
+        0.05197543650865555,
+        0.10099999606609344
+      ],
+      "lens_mm": 90,
+      "actually_saved": true
+    }
+  ],
   "criteria": [
     "Observable curved sections, openings, seams and fastening details compared with actual references",
     "All working dimensions and unseen interfaces labelled estimated",
@@ -52,7 +83,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "switchgear-left-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -60,73 +91,123 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": null,
+      "revision": "switchgear-left-v2",
       "reviewer": null,
       "evidence": [],
-      "reason": "Documentary and scaling research in progress; no calibrated measurements",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
       "status": "blocked",
-      "revision": null,
+      "revision": "switchgear-left-v2",
       "reviewer": null,
       "evidence": [],
-      "reason": "Documentary and scaling research in progress; no calibrated measurements",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "switchgear-left-v2",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/switchgear-left/switchgear-left-v2.blend",
+          "kind": "editable_source",
+          "revision": "switchgear-left-v2",
+          "sha256": "657ecbdb13f48f9eb59a354ed7ebfba2ab05a7ac7d6b6e7c7ced8cb33b610ea4"
+        },
+        {
+          "path": "../../reviews/switchgear-left-v2/markings-front.png",
+          "kind": "isolated_comparison",
+          "revision": "switchgear-left-v2",
+          "sha256": "d29fecb0079ba0cfe9f04caa6c1d9cbfda91ff225619b3bb44e0b58b16b6a099"
+        }
+      ],
+      "reason": "Known visual rework: physical pictogram contours retain raster steps; smooth curves in a separate v3 while preserving native photograph reading uncertainty",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "switchgear-left-v2",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/switchgear-left-v2/markings-grazing.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "switchgear-left-v2",
+          "sha256": "f6ce46c1158bb7d29cbb4ce4beedd1168c2aff7a9f1eb7436bc8352072242a83"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "switchgear-left-v2",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/switchgear-left-v2/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "switchgear-left-v2",
+          "sha256": "a9a436e38022e060ed1b8d41500166d52cbe488339de8824a904aa42b6a37648"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "switchgear-left-v2",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/switchgear-left-v2/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "switchgear-left-v2",
+          "sha256": "d4286ba351a13cd4d5d5ce4da718aca15ed04162417be1651439c10a05016f55"
+        },
+        {
+          "path": "../../reviews/switchgear-left-v2/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "switchgear-left-v2",
+          "sha256": "f594797b72d882d9f7c1b0cf031b43c3cdef5a90716826b09c142805f10613aa"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "switchgear-left-v2",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "switchgear-left-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "",
       "reviewed_at": null
     }
   },
-  "active_detailed_fabrication": true,
-  "source_revision": "switchgear-left-v1",
-  "export_revision": null,
-  "next_action": "Research attributed views and parameter ranges before constructing isolated source; retain exact RDC and mounting gaps",
+  "active_detailed_fabrication": false,
+  "source_revision": "switchgear-left-v2",
+  "export_revision": "switchgear-left-v2-inspection",
+  "next_action": "Smooth only pictogram contours in separate v3; retain current body/controls, then photo/material and installed-interface review",
   "art_accepted": false,
-  "production_group": 4
+  "production_group": 4,
+  "previous_revisions": [
+    {
+      "revision": "switchgear-left-v1",
+      "source": null,
+      "review": null,
+      "art_accepted": false
+    }
+  ],
+  "candidate_source": "../../../assets-src/moto-components/switchgear-left/README_v2.md",
+  "candidate_review": "../../reviews/switchgear-left-v2/README.md"
 }
