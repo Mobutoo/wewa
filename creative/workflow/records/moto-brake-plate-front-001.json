@@ -81,6 +81,21 @@
   ],
   "views": [
     {
+      "name": "quarter",
+      "camera_location_m": [
+        0.45,
+        -0.25,
+        0.49
+      ],
+      "camera_target_m": [
+        0.032,
+        0,
+        0.29
+      ],
+      "lens_mm": 80,
+      "wheel_fit_inspection": false
+    },
+    {
       "name": "front",
       "camera_location_m": [
         0.5,
@@ -93,8 +108,7 @@
         0.29
       ],
       "lens_mm": 80,
-      "wheel_fit_inspection": false,
-      "kind": "studio_inspection_not_calibrated_documentary_camera"
+      "wheel_fit_inspection": false
     },
     {
       "name": "rear",
@@ -109,40 +123,22 @@
         0.29
       ],
       "lens_mm": 80,
-      "wheel_fit_inspection": false,
-      "kind": "studio_inspection_not_calibrated_documentary_camera"
+      "wheel_fit_inspection": false
     },
     {
-      "name": "quarter",
+      "name": "macro",
       "camera_location_m": [
-        0.45,
-        -0.25,
-        0.49
+        0.19,
+        -0.1,
+        0.355
       ],
       "camera_target_m": [
-        0.032,
-        0,
-        0.29
+        0.04,
+        -0.025,
+        0.31
       ],
-      "lens_mm": 80,
-      "wheel_fit_inspection": false,
-      "kind": "studio_inspection_not_calibrated_documentary_camera"
-    },
-    {
-      "name": "fit-neutral",
-      "camera_location_m": [
-        0.95,
-        -1.38,
-        0.84
-      ],
-      "camera_target_m": [
-        0,
-        0,
-        0.29
-      ],
-      "lens_mm": 70,
-      "wheel_fit_inspection": true,
-      "kind": "studio_inspection_not_calibrated_documentary_camera"
+      "lens_mm": 100,
+      "wheel_fit_inspection": false
     },
     {
       "name": "cinematic-quarter",
@@ -157,8 +153,7 @@
         0.29
       ],
       "lens_mm": 80,
-      "wheel_fit_inspection": false,
-      "kind": "studio_inspection_not_calibrated_documentary_camera"
+      "wheel_fit_inspection": false
     }
   ],
   "criteria": [
@@ -243,24 +238,24 @@
       "evidence": [
         {
           "kind": "editable_source",
-          "path": "../../../assets-src/moto-components/front-brake-plate/front-brake-plate-v1.blend",
-          "sha256": "16e99efb3781adb8cbfc8ef64750ff3bd230026a205b284158238ea888f7a69a",
-          "revision": "front-brake-plate-v1"
+          "path": "../../../assets-src/moto-components/front-brake-plate/front-brake-plate-v2.blend",
+          "sha256": "b22bab7f58f4456c74b227610e7f30e51e07793b0420106a9ad9df71e69f71ec",
+          "revision": "front-brake-plate-v2"
         },
         {
           "kind": "isolated_comparison",
-          "path": "../../../creative/reviews/front-brake-plate-v1/front.png",
-          "sha256": "c55655d245d1f39702f56a807ef65a964f0a848807acbb7ad9e90b6e193eb352",
-          "revision": "front-brake-plate-v1"
+          "path": "../../reviews/front-brake-plate-v2/front.png",
+          "sha256": "b8d388e01a22d3d665e57a51de458b01ccc61e385778b26ca0467e330da331b1",
+          "revision": "front-brake-plate-v2"
         },
         {
           "kind": "isolated_comparison",
-          "path": "../../../creative/reviews/front-brake-plate-v1/rear.png",
-          "sha256": "cc547a4452bbbb9e0429fb816e41e28202dc23696e4517dcb78a4c5a0eb2fad4",
-          "revision": "front-brake-plate-v1"
+          "path": "../../reviews/front-brake-plate-v2/rear.png",
+          "sha256": "078101cb421b1ff4c1b0333bb59161675e0b5b8fd24d59249ce7cc2792f691b3",
+          "revision": "front-brake-plate-v2"
         }
       ],
-      "reason": "Single closed casting, lofted reliefs and photographed front/back features built; exact RDC geometry and calibrated silhouette comparison remain open.",
+      "reason": "Closed source geometry and isolated views produced; dimensions and calibrated documentary comparison unresolved.",
       "reviewed_at": null
     },
     "G4": {
@@ -270,12 +265,18 @@
       "evidence": [
         {
           "kind": "surface_or_sound_comparison",
-          "path": "../../../creative/reviews/front-brake-plate-v1/cinematic-quarter.png",
-          "sha256": "8aefa7512907d9272b9de3d9e79f2b266d877146546d12573ace6e985f51f79d",
-          "revision": "front-brake-plate-v1"
+          "path": "../../reviews/front-brake-plate-v2/macro.png",
+          "sha256": "c15830952bae402687c7b4f85c107bdc5b95846b1bccb1f00b0326e0249fa0fe",
+          "revision": "front-brake-plate-v2"
+        },
+        {
+          "kind": "technical_export_check",
+          "path": "../../reviews/front-brake-plate-v2/material-parity-check.json",
+          "sha256": "9916f33ddab40bda911e1285b7d497d0f30f84a73d1773f65a03fcaa18a53728",
+          "revision": "front-brake-plate-v2"
         }
       ],
-      "reason": "Candidate silver coating and machined bore materials rendered; micrograin, measured reflectance and art reception unresolved.",
+      "reason": "Original textured PBR candidate rendered; unmeasured surface appearance and artistic comparison remain open.",
       "reviewed_at": null
     },
     "G5": {
@@ -285,18 +286,12 @@
       "evidence": [
         {
           "kind": "motion_or_interface_check",
-          "path": "../../../creative/reviews/front-brake-plate-v1/source-geometry-check.json",
-          "sha256": "90211b8c3587736dd5a7db9d58ede14c25b4cf1d983b72bca32ab508b755776b",
-          "revision": "front-brake-plate-v1"
-        },
-        {
-          "kind": "motion_or_interface_check",
-          "path": "../../../creative/reviews/front-brake-plate-v1/fit-neutral.png",
-          "sha256": "9b624f67dfd438c7d3e7ac7777c4a4bf3cb87c6265815dd924f8d52198f88a8a",
-          "revision": "front-brake-plate-v1"
+          "path": "../../reviews/front-brake-plate-v2/source-geometry-check.json",
+          "sha256": "97f810e685c7ce7d216eaadaee043ba48527b9999f343434a1c3d54c21b97970",
+          "revision": "front-brake-plate-v2"
         }
       ],
-      "reason": "Actual openings and no candidate hub surface crossing checked; working dimensions and fork clocking not verified.",
+      "reason": "Actual isolated openings checked; installed angles, hardware and functional brake not verified.",
       "reviewed_at": null
     },
     "G6": {
@@ -306,18 +301,18 @@
       "evidence": [
         {
           "kind": "real_runtime_comparison",
-          "path": "../../../creative/reviews/front-brake-plate-v1/engine-wheelpanel-quarter.png",
-          "sha256": "a618e39a36fbf8197c1e7fe475e0dfd228d5d6dc1d66181da14e0bd1fb7bd3bb",
-          "revision": "front-brake-plate-v1"
+          "path": "../../reviews/front-brake-plate-v2/engine-plate-quarter.png",
+          "sha256": "aef36db5cfb66ddd2b2bda2d1643c114911922c251ae9c38e1d2274092f8e270",
+          "revision": "front-brake-plate-v2"
         },
         {
           "kind": "technical_export_check",
-          "path": "../../../creative/reviews/front-brake-plate-v1/geometry-check.json",
-          "sha256": "f074e1e4f7c60b7246e739513a171ffd33993daedbf1b3a65b6d5590a5306d82",
-          "revision": "front-brake-plate-v1"
+          "path": "../../reviews/front-brake-plate-v2/geometry-check.json",
+          "sha256": "ae576a78318649a814f709df07dfc81f7d268307f9b36956dbe1351eb3c65f73",
+          "revision": "front-brake-plate-v2"
         }
       ],
-      "reason": "Both actual exports loaded/captured in Babylon.js; artistic runtime comparison and physical Safari qualification open.",
+      "reason": "Actual GLB loaded in Babylon.js; visual reception and physical Safari qualification remain open.",
       "reviewed_at": null
     },
     "G7": {
@@ -327,12 +322,12 @@
       "evidence": [
         {
           "kind": "before_after_comparison",
-          "path": "../../../creative/reviews/front-brake-plate-v1/source-geometry-check.json",
-          "sha256": "90211b8c3587736dd5a7db9d58ede14c25b4cf1d983b72bca32ab508b755776b",
-          "revision": "front-brake-plate-v1"
+          "path": "../../reviews/front-brake-plate-v2/geometry-check.json",
+          "sha256": "ae576a78318649a814f709df07dfc81f7d268307f9b36956dbe1351eb3c65f73",
+          "revision": "front-brake-plate-v2"
         }
       ],
-      "reason": "Sparse source-to-inspection geometry distances recorded; not a finished mobile LOD or representative hardware cost measurement.",
+      "reason": "Inspection export only; no accepted mobile LOD or representative hardware cost.",
       "reviewed_at": null
     },
     "G8": {
@@ -344,12 +339,13 @@
       "reviewed_at": null
     }
   },
-  "active_detailed_fabrication": true,
-  "source_revision": "front-brake-plate-v1",
-  "export_revision": "front-brake-plate-inspection-v1",
-  "next_action": "Fabricate isolated front/back casting; verify bore openness and fit to existing candidate hub before detailed renders; lever/axle remain separate.",
+  "active_detailed_fabrication": false,
+  "source_revision": "front-brake-plate-v2",
+  "export_revision": "front-brake-plate-v2-inspection",
+  "next_action": "Resolve dimensions/identity and inspect coating/UV seams; lever is the next separate candidate.",
   "art_accepted": false,
-  "candidate_source": "../../../assets-src/moto-components/front-brake-plate/README.md",
-  "candidate_review": "../../reviews/front-brake-plate-v1/README.md",
-  "graphic_style": "../../GRAPHIC_STYLE.md"
+  "candidate_source": "../../../assets-src/moto-components/front-brake-plate/README_v2.md",
+  "candidate_review": "../../reviews/front-brake-plate-v2/README.md",
+  "graphic_style": "../../GRAPHIC_STYLE.md",
+  "previous_review": "../../reviews/front-brake-plate-v1/README.md"
 }

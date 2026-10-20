@@ -1,0 +1,160 @@
+{
+  "parameters": {
+    "component_id": "MOTO-BRAKE-LEVER-FRONT-001",
+    "revision": "front-brake-lever-v1",
+    "related_catalogue_part": "JA131607, D04 sheet44 item18 UG5gear",
+    "exact_RDC_fitment_confirmed": false,
+    "units": "metres",
+    "working_blade_thickness_m": 0.0025,
+    "working_shaft_bore_radius_m": 0.0057,
+    "working_shaft_to_eye_centre_m": 0.088,
+    "working_eye_bore_radius_m": 0.0045,
+    "working_spline_count": 20,
+    "spline_count_verified": false,
+    "working_spline_depth_m": 0.0003,
+    "working_slot_width_m": 0.0028,
+    "dimension_status": "All dimensions estimated. Shaft-to-eye range75\u2013105mm; thickness2\u20133.5mm; no manufacturer dimensional drawing.",
+    "outline_yz_m": [
+      [
+        -0.01,
+        0.01
+      ],
+      [
+        0.01,
+        0.01
+      ],
+      [
+        0.011,
+        -0.013
+      ],
+      [
+        0.0125,
+        -0.027
+      ],
+      [
+        0.013,
+        -0.04
+      ],
+      [
+        0.011,
+        -0.055
+      ],
+      [
+        0.006,
+        -0.07
+      ],
+      [
+        0.004,
+        -0.079
+      ],
+      [
+        0.007,
+        -0.084
+      ],
+      [
+        0.008,
+        -0.091
+      ],
+      [
+        0.004,
+        -0.098
+      ],
+      [
+        -0.004,
+        -0.098
+      ],
+      [
+        -0.01,
+        -0.092
+      ],
+      [
+        -0.011,
+        -0.084
+      ],
+      [
+        -0.008,
+        -0.077
+      ],
+      [
+        -0.004,
+        -0.069
+      ],
+      [
+        -0.001,
+        -0.056
+      ],
+      [
+        0,
+        -0.046
+      ],
+      [
+        -0.002,
+        -0.034
+      ],
+      [
+        -0.006,
+        -0.02
+      ],
+      [
+        -0.009,
+        -0.009
+      ]
+    ],
+    "outline_status": "Manual photo-informed landmarks, not a calibrated pixel-to-mm reconstruction",
+    "shaft_origin_world_xyz_m": [
+      0,
+      0,
+      0.105
+    ],
+    "art_accepted": false
+  },
+  "CSG": {
+    "stages": [
+      {
+        "operation": "subtract",
+        "part": "Estimated serrated shaft seat",
+        "status": "NoError",
+        "before_volume_m3": 4.364542422826803e-06,
+        "after_volume_m3": 4.122571273724088e-06
+      },
+      {
+        "operation": "subtract",
+        "part": "Cable pin end eye",
+        "status": "NoError",
+        "before_volume_m3": 4.122571273724088e-06,
+        "after_volume_m3": 3.96354630628105e-06
+      },
+      {
+        "operation": "subtract",
+        "part": "Open head slot - estimated",
+        "status": "NoError",
+        "before_volume_m3": 3.96354630628105e-06,
+        "after_volume_m3": 3.914040801242972e-06
+      }
+    ],
+    "tool": "manifold3d",
+    "tool_version": "3.3.2",
+    "solid_components": 1,
+    "volume_m3": 3.914040801242972e-06
+  },
+  "source_geometry": {
+    "vertices": 12074,
+    "faces": 18304,
+    "non_manifold_edges": 0,
+    "connected_shells": 1,
+    "signed_volume_m3": 3.914040324438482e-06,
+    "axial_probe_surface_hit": {
+      "shaft": false,
+      "eye": false,
+      "open_slot": false,
+      "blade": true
+    },
+    "estimated_dimensions": true,
+    "installed_interface_verified": false,
+    "art_accepted": false,
+    "source_sha256": "57b7313863157608a679563cfd80f3b6b6a29b8febebafb44e42c68819337a0d",
+    "export_sha256": "f7e27e1782549a1c06c8fb929cd6d8f55dcfaf3e31c772741378783e4dcbe9c8"
+  },
+  "texture_origin": "Original periodic mathematical data, no reference photo pixels",
+  "shader_limit": "Static colour variation approximates appearance only; no spectral or angle-dependent plating model"
+}

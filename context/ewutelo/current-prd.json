@@ -1,6 +1,6 @@
 {
   "idea_id": "27f8ffb12df14ff79c6e0f13cbd1cf91",
-  "revision": 20,
+  "revision": 21,
   "prd": {
     "acceptance_criteria": [
       "Petite moto utilitaire Wewa ; clavier ZQSD/WASD et tactile.",
@@ -151,7 +151,7 @@
         "source_types": "Official documentation, first-person artist accounts, forum exchange and public course outline; no paid lessons or tools purchased.",
         "state": "researched_plan_not_executed"
       },
-      "next_lot": "Review and refine panel surfaces and documentary comparison, resolve current RDC variant/critical dimensions and installation clocking; lever and axle next as separate pieces. Tyre/rim/panel remain without user art reception.",
+      "next_lot": "Review corrected lever surfaces, spline profile, forming offsets and coating; document measured sections, reverse view, exact RDC identity and interfaces. Camshaft and wheel axle next as separate parts; axle research prepared without dimensions.",
       "production_inventory": "92 source catalogue entries AS-001–AS-092 plus 67 overlapping concept traceability rows; previous 112 preparatory families were incomplete. creative/DOSSIER_ASSET_LIST.md and creative/library/fabrication-register.json.",
       "public_site_version_unchanged": 3,
       "public_source_commit_unchanged": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
@@ -194,17 +194,17 @@
         "distinct_model_count": null,
         "note": "Overlapping source rows routed to recipes; not159 distinct or fabricated models. Family-specific research/decomposition remains pending outside current motorcycle preparation."
       },
-      "current_component": "creative/workflow/records/moto-brake-plate-front-001.json",
+      "current_component": "creative/workflow/records/moto-brake-lever-front-001.json",
       "date": "2026-10-20",
       "documentary_research": "creative/workflow/RESEARCH.md",
       "family_recipes": "creative/workflow/RECIPES.md",
       "motorcycle_decomposition": "creative/workflow/motorcycle-assembly.json",
-      "next_action": "Review and refine panel surfaces and documentary comparison, resolve current RDC variant/critical dimensions and installation clocking; lever and axle next as separate pieces. Tyre/rim/panel remain without user art reception.",
+      "next_action": "Review corrected lever surfaces, spline profile, forming offsets and coating; document measured sections, reverse view, exact RDC identity and interfaces. Camshaft and wheel axle next as separate parts; axle research prepared without dimensions.",
       "production": {
-        "active_component": "MOTO-BRAKE-PLATE-FRONT-001",
+        "active_component": "MOTO-BRAKE-LEVER-FRONT-001",
         "art_accepted": false,
         "camera_calibration_executed": false,
-        "current_candidate_status": "Tyre, rim and brake-panel body candidates; no individual component art reception.",
+        "current_candidate_status": "Four isolated candidates, no artistic reception",
         "motorcycle_groups": 25,
         "new_geometry": true,
         "previous_lot": "hero-lot01 remains rejected in all views",
@@ -234,7 +234,7 @@
       ],
       "verification": "WEWA_Developpement_Web/validation/asset-workflow.json",
       "verification_results": {
-        "current_component_records": 3,
+        "current_component_records": 4,
         "declaration_checks": 7,
         "local_workflow_links_checked": 15,
         "passed": 7,
@@ -476,7 +476,7 @@
         "Rush 30 s, six colis, poursuite et indice, balade",
         "Record local, réglages et maquette sonore originale"
       ],
-      "latest_art_status": "Style2 cinematic realism selected; solo motorcycle visual target generated; first isolated editable tyre candidate built and undergoing corrections. No new complete motorcycle or public deployment.",
+      "latest_art_status": "Panel material v2 and separate front cam lever candidates built, with real Blender and Babylon views. No accepted motorcycle or public integration.",
       "limits": [
         "Exact street reference and real facade survey",
         "Human mobile and local road-priority validation",
@@ -501,92 +501,74 @@
     },
     "motorcycle_component_fabrication": {
       "active_component": {
-        "all_panel_dimensions_estimated": true,
         "art_accepted": false,
-        "construction": "Original closed turned section with integral concentric rings, eight rear ribs, tapered fork-stop pad/socket, lofted front spine, raised bosses and open bores; robust original-volume union/cutting via Manifold3D3.3.2, construction volumes retained in Blender",
+        "construction": "Original photo-informed curved/joggled steel-looking blade, open serrated shaft seat, end eye and edge radii; constrained interior triangulation before forming; original construction and cutters retained",
         "corrections": [
-          "Self-crossing central section rejected and rebuilt",
-          "Open Blender Boolean unions and disconnected fragments rejected before detailed rendering",
-          "Concentric rings integrated in the turned profile; original feature volumes processed with robust Manifold solid operations",
-          "Tapered pad/spine replaces coarse constant-section blocks",
-          "Actual source openings and candidate hub surface crossings independently checked"
+          "Rejected rear lever JW131601 after catalogue comparison",
+          "Rejected non-planar large-cap facets in first source/render; rebuilt dense constrained interior and checked outline area",
+          "Actual glTF openings checked with node world transform"
         ],
+        "dimensions": {
+          "all_estimated": true,
+          "blade_thickness_working_m": 0.0025,
+          "shaft_to_eye_working_m": 0.088,
+          "spline_count_verified": false,
+          "spline_count_working": 20
+        },
         "documentary_sources": [
-          "D01",
-          "D02",
           "D04",
-          "D07",
-          "D08",
-          "D09"
+          "D10",
+          "D11",
+          "D12"
         ],
         "exports": [
-          "assets-src/moto-components/front-brake-plate/front-brake-plate-inspection.glb",
-          "assets-src/moto-components/front-brake-plate/front-wheel-panel-fit-inspection.glb"
+          "assets-src/moto-components/front-brake-lever/front-brake-lever-inspection.glb"
         ],
-        "generator": "assets-src/moto-components/front-brake-plate/build.py",
-        "id": "MOTO-BRAKE-PLATE-FRONT-001",
-        "installation_clocking_verified": false,
-        "lever_axle_shoes_springs_modelled": false,
+        "generator": "assets-src/moto-components/front-brake-lever/build.py",
+        "id": "MOTO-BRAKE-LEVER-FRONT-001",
         "limits": [
-          "Related-part identity not confirmed for current RDC motorcycle",
-          "All body section and bore dimensions are working estimates against existing candidate hub",
-          "Photo cameras not calibrated",
-          "Body only; fitted seal/gear/pivot details, lever and axle remain separate",
-          "Coating grain and fine casting detail not finished",
-          "No optimized mobile LOD or physical iPhone qualification"
+          "Two angles of main visible side, no calibrated reverse view",
+          "All dimensions, forming offsets and tooth count estimated",
+          "Exact RDC identity and installed angle not confirmed",
+          "Camshaft, cable, fixing hardware and wheel axle remain separate",
+          "Static colour variation, no angle-dependent plating",
+          "No accepted mobile LOD, physical iPhone qualification or user art reception"
         ],
-        "parameters": "assets-src/moto-components/front-brake-plate/parameters.json",
-        "reference": "JA131605 in related BM125UG5gear catalogue and retailer front/back photographs; exact current RDC fitment unconfirmed",
-        "reference_view_directions": 2,
-        "retailer_downloaded_images": 5,
-        "retailer_duplicates_are_independent_confirmation": false,
-        "review": "creative/reviews/front-brake-plate-v1/README.md",
-        "review_url": "https://github.com/Mobutoo/wewa/blob/main/creative/reviews/front-brake-plate-v1/README.md",
-        "solid_worker": "assets-src/moto-components/front-brake-plate/csg.py",
-        "source": "assets-src/moto-components/front-brake-plate/front-brake-plate-v1.blend",
-        "status": "single_cast_panel_body_candidate_not_accepted",
+        "material": "Original PBR textures, static plated-steel appearance only; no reference photo texture or measured chemistry",
+        "parameters": "assets-src/moto-components/front-brake-lever/parameters.json",
+        "reference": "JA131607 related UG5gear front cam lever, D04 sheet44 item18; exact current RDC identity unconfirmed",
+        "review": "creative/reviews/front-brake-lever-v1/README.md",
+        "review_url": "https://github.com/Mobutoo/wewa/blob/main/creative/reviews/front-brake-lever-v1/README.md",
+        "source": "assets-src/moto-components/front-brake-lever/front-brake-lever-v1.blend",
+        "status": "isolated_candidate_rework_not_accepted",
         "technical_verification": {
-          "art_accepted": false,
-          "browser_assets": [
-            "plate",
-            "wheelpanel"
-          ],
-          "candidate_hub_surface_crossings": 0,
-          "connected_casting_shells": 1,
-          "exports": [
-            {
-              "file": "assets-src/moto-components/front-brake-plate/front-brake-plate-inspection.glb",
-              "glTF_errors": 0,
-              "glTF_warnings": 0,
-              "sha256": "bce93d34632f3cd3aaf9492ecaa88e56c7b5c5e539e5c471bb8b4e069dfafa7c"
-            },
-            {
-              "file": "assets-src/moto-components/front-brake-plate/front-wheel-panel-fit-inspection.glb",
-              "glTF_errors": 0,
-              "glTF_warnings": 0,
-              "sha256": "95a936734467643a99e76cedd4655cb2921414d367ac8032f3904b08606be31b"
-            }
-          ],
+          "babylon_actual_export_loaded": true,
+          "connected_shells": 1,
+          "export_sha256": "f7e27e1782549a1c06c8fb929cd6d8f55dcfaf3e31c772741378783e4dcbe9c8",
+          "glTF_errors": 0,
+          "glTF_warnings": 0,
           "non_manifold_edges": 0,
-          "open_passages": [
-            "axle",
-            "cam",
-            "upper_cross",
-            "outer_cross"
+          "openings_verified": [
+            "shaft",
+            "open_slot",
+            "eye"
           ],
-          "render_views": 5,
-          "socket_floor_verified": true,
-          "software": "manifold3d 3.3.2",
-          "source_sha256": "16e99efb3781adb8cbfc8ef64750ff3bd230026a205b284158238ea888f7a69a"
+          "physical_iphone_tested": false,
+          "render_views": 4,
+          "signed_volume_m3": 0.000003914040324438482,
+          "source_sha256": "57b7313863157608a679563cfd80f3b6b6a29b8febebafb44e42c68819337a0d"
         }
       },
       "date": "2026-10-20",
       "evidence": {
         "actual_blender_renders": "creative/reviews/front-tyre-v1/",
+        "axle_research": "creative/workflow/front-axle-research.json",
         "engine_review": "tools/asset-lab/",
-        "front_brake_plate_review": "creative/reviews/front-brake-plate-v1/",
-        "front_brake_plate_source_check": "creative/reviews/front-brake-plate-v1/source-geometry-check.json",
-        "front_brake_plate_validation": "WEWA_Developpement_Web/validation/front-brake-plate-v1.json",
+        "front_brake_lever_review": "creative/reviews/front-brake-lever-v1/",
+        "front_brake_lever_validation": "WEWA_Developpement_Web/validation/front-brake-lever-v1.json",
+        "front_brake_plate_review": "creative/reviews/front-brake-plate-v2/",
+        "front_brake_plate_source_check": "creative/reviews/front-brake-plate-v2/source-geometry-check.json",
+        "front_brake_plate_validation": "WEWA_Developpement_Web/validation/front-brake-plate-v2.json",
         "front_rim_geometry_check": "creative/reviews/front-rim-v1/geometry-check.json",
         "front_rim_review": "creative/reviews/front-rim-v1/",
         "front_rim_source_check": "creative/reviews/front-rim-v1/source-geometry-check.json",
@@ -617,7 +599,7 @@
         "source": "assets-src/moto-components/front-tyre/front-tyre-v1.blend",
         "status": "candidate_rework_not_accepted"
       },
-      "next_action": "Review and refine panel surfaces and documentary comparison, resolve current RDC variant/critical dimensions and installation clocking; lever and axle next as separate pieces. Tyre/rim/panel remain without user art reception.",
+      "next_action": "Review corrected lever surfaces, spline profile, forming offsets and coating; document measured sections, reverse view, exact RDC identity and interfaces. Camshaft and wheel axle next as separate parts; axle research prepared without dimensions.",
       "previous_components": [
         {
           "art_accepted": false,
@@ -686,9 +668,124 @@
             "preflight_passed": true,
             "source_sha256": "77f351d89b29f39dc435b434278bb556cff41a8c509edccd979dc9c8c1173c3a"
           }
+        },
+        {
+          "all_panel_dimensions_estimated": true,
+          "art_accepted": false,
+          "construction": "Original closed turned section with integral concentric rings, eight rear ribs, tapered fork-stop pad/socket, lofted front spine, raised bosses and open bores; robust original-volume union/cutting via Manifold3D3.3.2, construction volumes retained in Blender",
+          "corrections": [
+            "Self-crossing central section rejected and rebuilt",
+            "Open Blender Boolean unions and disconnected fragments rejected before detailed rendering",
+            "Concentric rings integrated in the turned profile; original feature volumes processed with robust Manifold solid operations",
+            "Tapered pad/spine replaces coarse constant-section blocks",
+            "Actual source openings and candidate hub surface crossings independently checked"
+          ],
+          "documentary_sources": [
+            "D01",
+            "D02",
+            "D04",
+            "D07",
+            "D08",
+            "D09"
+          ],
+          "exports": [
+            "assets-src/moto-components/front-brake-plate/front-brake-plate-v2-inspection.glb",
+            "assets-src/moto-components/front-brake-plate/front-wheel-panel-v2-fit-inspection.glb"
+          ],
+          "generator": "assets-src/moto-components/front-brake-plate/material_v2.py",
+          "id": "MOTO-BRAKE-PLATE-FRONT-001",
+          "installation_clocking_verified": false,
+          "lever_axle_shoes_springs_modelled": false,
+          "limits": [
+            "Related-part identity not confirmed for current RDC motorcycle",
+            "All body section and bore dimensions are working estimates against existing candidate hub",
+            "Photo cameras not calibrated",
+            "Body only; fitted seal/gear/pivot details, lever and axle remain separate",
+            "No optimized mobile LOD or physical iPhone qualification",
+            "Original surface grain added; unmeasured coating, UV seams, faceted bore contours and artistic appearance still require review",
+            "Runtime-generated tangent basis carries glTF warning; physical Safari unqualified"
+          ],
+          "material_revision": {
+            "original_periodic_PBR_maps": true,
+            "physical_uv_tile_m": 0.01,
+            "reflectance_measured": false,
+            "tangent_basis_runtime_generated_warning": true,
+            "texture_data_parity_passed": true,
+            "visual_parity_accepted": false
+          },
+          "parameters": "assets-src/moto-components/front-brake-plate/parameters.json",
+          "previous_revision": {
+            "review": "creative/reviews/front-brake-plate-v1/README.md",
+            "source": "assets-src/moto-components/front-brake-plate/front-brake-plate-v1.blend",
+            "technical_verification": {
+              "art_accepted": false,
+              "browser_assets": [
+                "plate",
+                "wheelpanel"
+              ],
+              "candidate_hub_surface_crossings": 0,
+              "connected_casting_shells": 1,
+              "exports": [
+                {
+                  "file": "assets-src/moto-components/front-brake-plate/front-brake-plate-inspection.glb",
+                  "glTF_errors": 0,
+                  "glTF_warnings": 0,
+                  "sha256": "bce93d34632f3cd3aaf9492ecaa88e56c7b5c5e539e5c471bb8b4e069dfafa7c"
+                },
+                {
+                  "file": "assets-src/moto-components/front-brake-plate/front-wheel-panel-fit-inspection.glb",
+                  "glTF_errors": 0,
+                  "glTF_warnings": 0,
+                  "sha256": "95a936734467643a99e76cedd4655cb2921414d367ac8032f3904b08606be31b"
+                }
+              ],
+              "non_manifold_edges": 0,
+              "open_passages": [
+                "axle",
+                "cam",
+                "upper_cross",
+                "outer_cross"
+              ],
+              "render_views": 5,
+              "socket_floor_verified": true,
+              "software": "manifold3d 3.3.2",
+              "source_sha256": "16e99efb3781adb8cbfc8ef64750ff3bd230026a205b284158238ea888f7a69a"
+            }
+          },
+          "reference": "JA131605 in related BM125UG5gear catalogue and retailer front/back photographs; exact current RDC fitment unconfirmed",
+          "reference_view_directions": 2,
+          "retailer_downloaded_images": 5,
+          "retailer_duplicates_are_independent_confirmation": false,
+          "review": "creative/reviews/front-brake-plate-v2/README.md",
+          "review_url": "https://github.com/Mobutoo/wewa/blob/main/creative/reviews/front-brake-plate-v2/README.md",
+          "solid_worker": "assets-src/moto-components/front-brake-plate/csg.py",
+          "source": "assets-src/moto-components/front-brake-plate/front-brake-plate-v2.blend",
+          "status": "material_v2_candidate_not_art_accepted",
+          "technical_verification": {
+            "art_accepted": false,
+            "candidate_hub_surface_crossings": 0,
+            "connected_casting_shells": 1,
+            "exports": [
+              {
+                "file": "assets-src/moto-components/front-brake-plate/front-brake-plate-v2-inspection.glb",
+                "glTF_errors": 0,
+                "glTF_warnings": 1,
+                "sha256": "495701dd4ce77ed82d4d27045f1aff7aec1ec47bc87a79163d6ee09b2834aa50"
+              },
+              {
+                "file": "assets-src/moto-components/front-brake-plate/front-wheel-panel-v2-fit-inspection.glb",
+                "glTF_errors": 0,
+                "glTF_warnings": 1,
+                "sha256": "2be758aab20a1d3deca50d7560290f76b1c0c4982e4c640e4c81662ebb8f7f30"
+              }
+            ],
+            "non_manifold_edges": 0,
+            "render_views": 5,
+            "source_sha256": "b22bab7f58f4456c74b227610e7f30e51e07793b0420106a9ad9df71e69f71ec"
+          }
         }
       ],
-      "scope": "Motorcycle alone: isolated tyre, cast rim and brake-panel body candidates; no accepted complete motorcycle or rider",
+      "scope": "Motorcycle alone: four isolated candidates (tyre, rim, brake-panel body v2, separate front cam lever); no accepted complete motorcycle or rider",
       "solo_visual_target": {
         "art_accepted": false,
         "kind": "image_gen edited artistic target; not Blender or gameplay output",

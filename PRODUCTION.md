@@ -50,3 +50,6 @@ Les sources modifiables sont versionnées dans `assets-src/`, séparées des fic
 Les exports individuels restent dans `assets-src/street-kit/exports/`. La bibliothèque web déduplique matériaux/textures et conserve les noms d'assets. Le manifeste donne dimensions, triangles, droits et empreintes. Les LOD proches sont réservés aux deux niveaux inférieurs à moins de 45 m ; les autres travées utilisent les LOD légers jusqu’à 200 m. Cela ne constitue pas une mesure de FPS.
 
 Les vérifications exécutées et captures réelles sont dans `WEWA_Developpement_Web/validation/`. Les tâches bloquées conservent leur cause et leur prochaine action ; aucune phase n’est close sur la seule existence de tests unitaires.
+# Reprise — flasque v2 et levier avant séparé
+
+La fabrication progresse sur deux incréments distincts : [matière du flasque v2](creative/reviews/front-brake-plate-v2/README.md) et [levier de came avant v1](creative/reviews/front-brake-lever-v1/README.md). Le levier est la pièce détaillée active ; le flasque conserve ses versions et ses preuves. Les dimensions et identités RDC restent à documenter. Les quatre composants candidats (pneu, jante, flasque, levier) ne constituent pas une moto finie et ne sont pas reçus artistiquement. La prévisualisation publique du jeu reste à sa version3.

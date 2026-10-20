@@ -1,0 +1,158 @@
+{
+  "scope": "Format, candidate scale, material presence and actual exported drilled openings; no exact RDC fitment, artistic or hardware qualification",
+  "exports": [
+    {
+      "file": "assets-src/moto-components/front-brake-plate/front-brake-plate-v2-inspection.glb",
+      "bytes": 9390904,
+      "sha256": "495701dd4ce77ed82d4d27045f1aff7aec1ec47bc87a79163d6ee09b2834aa50",
+      "glTF_errors": 0,
+      "glTF_warnings": 1,
+      "glTF_messages": [
+        {
+          "code": "MESH_PRIMITIVE_GENERATED_TANGENT_SPACE",
+          "message": "Material requires a tangent space but the mesh primitive does not provide it. Runtime-generated tangent space may be non-portable across implementations.",
+          "severity": 1,
+          "pointer": "/meshes/0/primitives/0/material"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/meshes/0/primitives/1/attributes/TEXCOORD_0"
+        }
+      ],
+      "meshes": 1,
+      "vertices": 182626,
+      "triangles": 269070,
+      "bounds": {
+        "min": [
+          0.01899990253150463,
+          0.21800273656845093,
+          -0.0719972550868988
+        ],
+        "max": [
+          0.052000101655721664,
+          0.3619973063468933,
+          0.07199731469154358
+        ]
+      },
+      "dimensions_xyz_m": [
+        0.03300019912421703,
+        0.14399456977844238,
+        0.14399456977844238
+      ],
+      "signed_volume_m3": 0.0001494417006643024,
+      "axial_ray_hits": {
+        "axle": [],
+        "cam": [],
+        "socket": [
+          0.023808963534975792,
+          0.04200010560428441
+        ]
+      },
+      "materials": [
+        {
+          "name": "Panel silver cast coating - candidate",
+          "roughness": 1,
+          "metallic": 1,
+          "normal_texture": "cast-grain-normal",
+          "roughness_texture": "cast-metallic-roughness"
+        },
+        {
+          "name": "Panel machined bores and seat",
+          "roughness": 0.25,
+          "metallic": 0.8999999761581421,
+          "normal_texture": null,
+          "roughness_texture": null
+        }
+      ]
+    },
+    {
+      "file": "assets-src/moto-components/front-brake-plate/front-wheel-panel-v2-fit-inspection.glb",
+      "bytes": 21702288,
+      "sha256": "2be758aab20a1d3deca50d7560290f76b1c0c4982e4c640e4c81662ebb8f7f30",
+      "glTF_errors": 0,
+      "glTF_warnings": 1,
+      "glTF_messages": [
+        {
+          "code": "MESH_PRIMITIVE_GENERATED_TANGENT_SPACE",
+          "message": "Material requires a tangent space but the mesh primitive does not provide it. Runtime-generated tangent space may be non-portable across implementations.",
+          "severity": 1,
+          "pointer": "/meshes/0/primitives/0/material"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/meshes/0/primitives/1/attributes/TEXCOORD_0"
+        },
+        {
+          "code": "UNUSED_OBJECT",
+          "message": "This object may be unused.",
+          "severity": 2,
+          "pointer": "/meshes/2/primitives/0/attributes/TEXCOORD_0"
+        }
+      ],
+      "meshes": 3,
+      "vertices": 417115,
+      "triangles": 730278,
+      "bounds": {
+        "min": [
+          -0.036000002175569534,
+          0.000005192157459532609,
+          -0.28999871015548706
+        ],
+        "max": [
+          0.052000101655721664,
+          0.579994797706604,
+          0.28999871015548706
+        ]
+      },
+      "dimensions_xyz_m": [
+        0.0880001038312912,
+        0.5799896055491445,
+        0.5799974203109741
+      ],
+      "signed_volume_m3": 0.0038328255596535342,
+      "axial_ray_hits": null,
+      "materials": [
+        {
+          "name": "Panel silver cast coating - candidate",
+          "roughness": 1,
+          "metallic": 1,
+          "normal_texture": "cast-grain-normal",
+          "roughness_texture": "cast-metallic-roughness"
+        },
+        {
+          "name": "Panel machined bores and seat",
+          "roughness": 0.25,
+          "metallic": 0.8999999761581421,
+          "normal_texture": null,
+          "roughness_texture": null
+        },
+        {
+          "name": "Silver coating on cast alloy - working reference",
+          "roughness": 0.30000001192092896,
+          "metallic": 0.7200000286102295,
+          "normal_texture": null,
+          "roughness_texture": null
+        },
+        {
+          "name": "Machined drum and bearing seat",
+          "roughness": 0.28999999165534973,
+          "metallic": 0.8799999952316284,
+          "normal_texture": null,
+          "roughness_texture": null
+        },
+        {
+          "name": "Rubber glTF baseline - micrograin bake pending.001",
+          "roughness": 0.6000000238418579,
+          "metallic": 0,
+          "normal_texture": null,
+          "roughness_texture": null
+        }
+      ]
+    }
+  ],
+  "art_accepted": false
+}

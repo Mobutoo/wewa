@@ -1,0 +1,313 @@
+{
+  "schema": 1,
+  "id": "MOTO-BRAKE-LEVER-FRONT-001",
+  "label": "Levier de came de frein avant — pièce seule",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Related JA131607; exact RDC unknown",
+    "variant_confirmed": false,
+    "usage": "Separate cam arm, no bolt/cable/camshaft assembly",
+    "review_distances_m": [
+      0.12,
+      0.3,
+      0.8
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D04",
+    "D10",
+    "D11",
+    "D12"
+  ],
+  "claims": [
+    {
+      "id": "LEVER-RELATED-PART",
+      "property": "related_UG5gear_part",
+      "value": "JA131607",
+      "source": "D04",
+      "locator": "PDF sheet44 item18 UG5gear",
+      "status": "documented_related_variant",
+      "adopted": false,
+      "scope": "Not certified current RDC part"
+    },
+    {
+      "id": "LEVER-WORKING-ENTRAXE",
+      "property": "shaft_to_eye_centre",
+      "value": 0.088,
+      "unit": "m",
+      "source": "D11",
+      "locator": "Uncalibrated visible-side photograph interpreted against candidate cam bore",
+      "status": "estimated",
+      "adopted": true,
+      "method": "Photo-informed proportions with provisional bore radius5.7mm; no pixel-to-mm calibration",
+      "uncertainty": {
+        "range_m": [
+          0.075,
+          0.105
+        ]
+      },
+      "scope": "Candidate geometry only, not manufacturer dimension"
+    },
+    {
+      "id": "LEVER-WORKING-THICKNESS",
+      "property": "blade_thickness",
+      "value": 0.0025,
+      "unit": "m",
+      "source": "D11",
+      "locator": "Oblique edge appearance, no measured section",
+      "status": "estimated",
+      "adopted": true,
+      "method": "Working steel-looking blade section, awaiting reverse/edge view",
+      "uncertainty": {
+        "range_m": [
+          0.002,
+          0.0035
+        ]
+      },
+      "scope": "Candidate geometry, forming offsets and spline count also provisional"
+    }
+  ],
+  "views": [
+    {
+      "name": "quarter",
+      "location": [
+        0.32,
+        -0.12,
+        0.14
+      ],
+      "target": [
+        0,
+        0.002,
+        0.06
+      ],
+      "lens_mm": 80
+    },
+    {
+      "name": "front",
+      "location": [
+        0.33,
+        0,
+        0.06
+      ],
+      "target": [
+        0,
+        0.002,
+        0.06
+      ],
+      "lens_mm": 80
+    },
+    {
+      "name": "rear",
+      "location": [
+        -0.33,
+        0,
+        0.06
+      ],
+      "target": [
+        0,
+        0.002,
+        0.06
+      ],
+      "lens_mm": 80
+    },
+    {
+      "name": "head-detail",
+      "location": [
+        0.13,
+        -0.055,
+        0.148
+      ],
+      "target": [
+        0.001,
+        0,
+        0.1
+      ],
+      "lens_mm": 100
+    }
+  ],
+  "criteria": [
+    {
+      "id": "LEVER-CURVE",
+      "scope": "artistic_pending",
+      "description": "Curved blade, open shaft seat and eye match calibrated documentary views, with smooth forming reflections"
+    },
+    {
+      "id": "LEVER-OPEN",
+      "scope": "technical",
+      "description": "Closed single body with positive volume; actual shaft, slot and eye open in source and exported buffers"
+    },
+    {
+      "id": "LEVER-INTERFACE",
+      "scope": "functional_pending",
+      "description": "Measured spline profile, cam engagement, cable pin and installed angle verified separately"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "LEVER-DIMS",
+      "description": "No calibrated dimensions or tooth count",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G3",
+        "G5"
+      ],
+      "next_research": "Same-part dimensional drawing or measured sample"
+    },
+    {
+      "id": "LEVER-RDC",
+      "description": "Exact current RDC identity unknown",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1"
+      ],
+      "next_research": "RDC spare-parts reference and installed close-up"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Related-part photos only, no exact RDC dimensions or camera calibration",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Related-part photos only, no exact RDC dimensions or camera calibration",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "editable_source",
+          "path": "../../../assets-src/moto-components/front-brake-lever/front-brake-lever-v1.blend",
+          "sha256": "57b7313863157608a679563cfd80f3b6b6a29b8febebafb44e42c68819337a0d",
+          "revision": "front-brake-lever-v1"
+        },
+        {
+          "kind": "isolated_comparison",
+          "path": "../../reviews/front-brake-lever-v1/front.png",
+          "sha256": "ae4bdc80893ac81111b3df6eee447bae2a7d14680d5c5afae2eb20d20891f31d",
+          "revision": "front-brake-lever-v1"
+        },
+        {
+          "kind": "isolated_comparison",
+          "path": "../../reviews/front-brake-lever-v1/rear.png",
+          "sha256": "8900976dde8cd26c7cf9807f17bac65362f0dc947c6d3ef57c6c61f19b99dd2a",
+          "revision": "front-brake-lever-v1"
+        }
+      ],
+      "reason": "Closed source geometry and isolated views produced; dimensions and calibrated documentary comparison unresolved.",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "surface_or_sound_comparison",
+          "path": "../../reviews/front-brake-lever-v1/quarter.png",
+          "sha256": "cab2c28d178c6ef8f35f72620511ab24a7ab915737a0d3ee74ae57b1fa1fbde7",
+          "revision": "front-brake-lever-v1"
+        }
+      ],
+      "reason": "Original textured PBR candidate rendered; unmeasured surface appearance and artistic comparison remain open.",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "motion_or_interface_check",
+          "path": "../../reviews/front-brake-lever-v1/source-geometry-check.json",
+          "sha256": "c32d94ee13f41029a29e15cd7e0045c7df948102f642818a39ae4aef5fc29ffb",
+          "revision": "front-brake-lever-v1"
+        }
+      ],
+      "reason": "Actual isolated openings checked; installed angles, hardware and functional brake not verified.",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "real_runtime_comparison",
+          "path": "../../reviews/front-brake-lever-v1/engine-lever-quarter.png",
+          "sha256": "ecd50d2dce54b306114b12f0aa181c921ac3a31acd5d4d9616022e1e575af471",
+          "revision": "front-brake-lever-v1"
+        },
+        {
+          "kind": "technical_export_check",
+          "path": "../../reviews/front-brake-lever-v1/geometry-check.json",
+          "sha256": "1f2a64004f130b09e3a683edff03622a1f11699f64562f3a9d50123ee6607466",
+          "revision": "front-brake-lever-v1"
+        }
+      ],
+      "reason": "Actual GLB loaded in Babylon.js; visual reception and physical Safari qualification remain open.",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "before_after_comparison",
+          "path": "../../reviews/front-brake-lever-v1/geometry-check.json",
+          "sha256": "1f2a64004f130b09e3a683edff03622a1f11699f64562f3a9d50123ee6607466",
+          "revision": "front-brake-lever-v1"
+        }
+      ],
+      "reason": "Inspection export only; no accepted mobile LOD or representative hardware cost.",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": true,
+  "source_revision": "front-brake-lever-v1",
+  "export_revision": "front-brake-lever-v1-inspection",
+  "next_action": "Compare corrected curved blade, tooth profile and forming offsets to related photos; document reverse view and dimensions before installed interface. Camshaft and wheel axle remain separate next components.",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/front-brake-lever/README.md",
+  "candidate_review": "../../reviews/front-brake-lever-v1/README.md"
+}

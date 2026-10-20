@@ -8,7 +8,7 @@
     "art_accepted": false
   },
   "scope_note": "Initial decomposition of the first motorcycle component, not a completed component inventory of all92 source families.",
-  "active_component": "MOTO-BRAKE-PLATE-FRONT-001",
+  "active_component": "MOTO-BRAKE-LEVER-FRONT-001",
   "components": [
     {
       "id": "MOTO-TYRE-FRONT-001",
@@ -88,9 +88,9 @@
         "CON-001"
       ],
       "name": "Corps moulé du flasque de frein avant Wewa",
-      "state": "isolated_cast_body_candidate_not_accepted",
-      "candidate_source": "../../assets-src/moto-components/front-brake-plate/README.md",
-      "candidate_review": "../reviews/front-brake-plate-v1/README.md",
+      "state": "material_v2_candidate_data_parity_verified_not_art_accepted",
+      "candidate_source": "../../assets-src/moto-components/front-brake-plate/README_v2.md",
+      "candidate_review": "../reviews/front-brake-plate-v2/README.md",
       "component_workflow": "../workflow/records/moto-brake-plate-front-001.json",
       "reference_part": "JA131605 related UG5gear part; current RDC identity unconfirmed",
       "unknown": [
@@ -108,15 +108,43 @@
         "optimized_variant_rechecked": false,
         "user_art_accepted": false
       }
+    },
+    {
+      "id": "MOTO-BRAKE-LEVER-FRONT-001",
+      "parent_source_ids": [
+        "AS-049",
+        "CON-001"
+      ],
+      "name": "Levier de came de frein avant seul",
+      "state": "isolated_candidate_rework_not_accepted",
+      "candidate_source": "../../assets-src/moto-components/front-brake-lever/README.md",
+      "candidate_review": "../reviews/front-brake-lever-v1/README.md",
+      "component_workflow": "../workflow/records/moto-brake-lever-front-001.json",
+      "reference_part": "JA131607 related variant only",
+      "unknown": [
+        "Exact RDC identity",
+        "Measured sections, forming offsets and tooth count",
+        "Reverse view",
+        "Installed interfaces",
+        "Measured coating response"
+      ],
+      "gates": {
+        "references_sufficient": false,
+        "shape_comparison_passed": false,
+        "material_comparison_passed": false,
+        "engine_comparison_passed": false,
+        "optimized_variant_rechecked": false,
+        "user_art_accepted": false
+      }
     }
   ],
   "coding_or_modeling_started_after_feedback": true,
   "rider_gate": "Deferred until motorcycle artistic reception",
   "research": "../MOTORCYCLE_RECONSTRUCTION_RESEARCH.md",
-  "planning_status": "style2_wewa_branding_tyre_rim_panel_candidates_no_art_reception",
-  "next_preparatory_step": "Compare and refine panel against related-part and exact-market views; establish installation clocking and critical dimensions before lever/axle reception.",
+  "planning_status": "four_isolated_candidates_no_art_reception",
+  "next_preparatory_step": "Compare lever corrected surfaces and measured sections; research camshaft and wheel axle separately. Rider deferred.",
   "general_workflow": "../workflow/README.md",
   "documentary_supplement": "../workflow/RESEARCH.md",
-  "detailed_component_record": "../workflow/records/moto-brake-plate-front-001.json",
+  "detailed_component_record": "../workflow/records/moto-brake-lever-front-001.json",
   "assembly_decomposition": "../workflow/motorcycle-assembly.json"
 }

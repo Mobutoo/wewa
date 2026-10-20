@@ -6,11 +6,15 @@ from pathlib import Path
 from playwright.sync_api import sync_playwright
 
 ROOT=Path(__file__).resolve().parents[2]
-parser=argparse.ArgumentParser();parser.add_argument('--asset',choices=['tyre','rim','wheel','plate','wheelpanel'],default='tyre');args=parser.parse_args()
+parser=argparse.ArgumentParser();parser.add_argument('--asset',choices=['tyre','rim','wheel','plate','wheelpanel','lever'],default='tyre');parser.add_argument('--revision',choices=['v1','v2'],default='v1');args=parser.parse_args()
 OUT=ROOT/('creative/reviews/front-tyre-v1' if args.asset=='tyre' else 'creative/reviews/front-brake-plate-v1' if args.asset in ['plate','wheelpanel'] else 'creative/reviews/front-rim-v1')
+if args.asset=='lever':OUT=ROOT/'creative/reviews/front-brake-lever-v1'
+if args.revision=='v2':OUT=ROOT/'creative/reviews/front-brake-plate-v2'
 prefix='engine-' if args.asset=='tyre' else 'engine-'+args.asset+'-'
 export_path='front-tyre/front-tyre-inspection.glb' if args.asset=='tyre' else 'front-rim/'+('front-rim-inspection.glb' if args.asset=='rim' else 'front-wheel-fit-inspection.glb')
 if args.asset in ['plate','wheelpanel']:export_path='front-brake-plate/'+('front-brake-plate-inspection.glb' if args.asset=='plate' else 'front-wheel-panel-fit-inspection.glb')
+if args.revision=='v2':export_path=export_path.replace('front-brake-plate-inspection','front-brake-plate-v2-inspection').replace('front-wheel-panel-fit','front-wheel-panel-v2-fit')
+if args.asset=='lever':export_path='front-brake-lever/front-brake-lever-inspection.glb'
 with sync_playwright() as playwright:
     browser=playwright.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader'])
     page=browser.new_page(viewport={'width':1200,'height':1000},device_scale_factor=1)
@@ -18,7 +22,7 @@ with sync_playwright() as playwright:
     failures=[]
     page.on('pageerror',lambda error:errors.append(str(error)))
     page.on('response',lambda response:failures.append({'url':response.url,'status':response.status}) if response.status>=400 else None)
-    page.goto('http://127.0.0.1:4142/tools/asset-lab/?asset='+args.asset,wait_until='networkidle',timeout=90000)
+    page.goto('http://127.0.0.1:4142/tools/asset-lab/?asset='+args.asset+'&revision='+args.revision,wait_until='networkidle',timeout=90000)
     page.wait_for_function('window.__ASSET_LAB__?.report().textures_ready',timeout=60000)
     for name in ['quarter','side','tread']:
         page.evaluate('(name)=>window.__ASSET_LAB__.view(name)',name)

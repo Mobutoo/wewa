@@ -1,0 +1,331 @@
+{
+  "revision": "front-brake-plate-v2",
+  "component_id": "MOTO-BRAKE-PLATE-FRONT-001",
+  "source_sha256": "b22bab7f58f4456c74b227610e7f30e51e07793b0420106a9ad9df71e69f71ec",
+  "source_check": {
+    "scope": "Actual saved casting and estimated hub interface. Surface-crossing check is not a seal, tolerance or installed-brake certification. Wheel inspection source deviation documented separately.",
+    "source_sha256": "b22bab7f58f4456c74b227610e7f30e51e07793b0420106a9ad9df71e69f71ec",
+    "vertices": 747412,
+    "faces": 747418,
+    "non_manifold_edges": 0,
+    "connected_casting_shells": 1,
+    "signed_volume_m3": 0.00014944340043706746,
+    "bounds_blender_xyz_m": {
+      "min": [
+        0.018999900668859482,
+        -0.07199730724096298,
+        0.21800272166728973
+      ],
+      "max": [
+        0.05200010538101196,
+        0.07199730724096298,
+        0.3619973063468933
+      ]
+    },
+    "material_faces": {
+      "Panel silver cast coating - candidate": 732449,
+      "Panel machined bores and seat": 14969
+    },
+    "bore_and_socket_probes": {
+      "axle": {
+        "surface_hit": false,
+        "first_hit_x_m": null
+      },
+      "cam": {
+        "surface_hit": false,
+        "first_hit_x_m": null
+      },
+      "socket": {
+        "surface_hit": true,
+        "first_hit_x_m": 0.042000096291303635
+      },
+      "upper_cross": {
+        "surface_hit": false,
+        "first_hit_y_m": null
+      },
+      "outer_cross": {
+        "surface_hit": false,
+        "first_hit_y_m": null
+      }
+    },
+    "candidate_interface": {
+      "rim_region_vertices": 4323,
+      "rim_region_faces": 7900,
+      "surface_triangle_crossings": 0,
+      "nominal_spigot_radial_clearance_m": 0.0008,
+      "nominal_flange_axial_gap_m": 0.001,
+      "nominal_central_counterbore_axial_gap_m": 0.0015,
+      "all_dimensions_estimated": true,
+      "installation_clocking_verified": false
+    },
+    "reduction": {
+      "samples": 10101,
+      "directional_source_vertex_to_reduced_surface_max_m": 2.612991738715209e-05,
+      "p95_m": 1.2315620097069768e-06,
+      "full_hausdorff": false
+    },
+    "art_accepted": false,
+    "loose_vertices": 0,
+    "crossing_examples": []
+  },
+  "export_geometry_check": {
+    "scope": "Format, candidate scale, material presence and actual exported drilled openings; no exact RDC fitment, artistic or hardware qualification",
+    "exports": [
+      {
+        "file": "assets-src/moto-components/front-brake-plate/front-brake-plate-v2-inspection.glb",
+        "bytes": 9390904,
+        "sha256": "495701dd4ce77ed82d4d27045f1aff7aec1ec47bc87a79163d6ee09b2834aa50",
+        "glTF_errors": 0,
+        "glTF_warnings": 1,
+        "glTF_messages": [
+          {
+            "code": "MESH_PRIMITIVE_GENERATED_TANGENT_SPACE",
+            "message": "Material requires a tangent space but the mesh primitive does not provide it. Runtime-generated tangent space may be non-portable across implementations.",
+            "severity": 1,
+            "pointer": "/meshes/0/primitives/0/material"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/1/attributes/TEXCOORD_0"
+          }
+        ],
+        "meshes": 1,
+        "vertices": 182626,
+        "triangles": 269070,
+        "bounds": {
+          "min": [
+            0.01899990253150463,
+            0.21800273656845093,
+            -0.0719972550868988
+          ],
+          "max": [
+            0.052000101655721664,
+            0.3619973063468933,
+            0.07199731469154358
+          ]
+        },
+        "dimensions_xyz_m": [
+          0.03300019912421703,
+          0.14399456977844238,
+          0.14399456977844238
+        ],
+        "signed_volume_m3": 0.0001494417006643024,
+        "axial_ray_hits": {
+          "axle": [],
+          "cam": [],
+          "socket": [
+            0.023808963534975792,
+            0.04200010560428441
+          ]
+        },
+        "materials": [
+          {
+            "name": "Panel silver cast coating - candidate",
+            "roughness": 1,
+            "metallic": 1,
+            "normal_texture": "cast-grain-normal",
+            "roughness_texture": "cast-metallic-roughness"
+          },
+          {
+            "name": "Panel machined bores and seat",
+            "roughness": 0.25,
+            "metallic": 0.8999999761581421,
+            "normal_texture": null,
+            "roughness_texture": null
+          }
+        ]
+      },
+      {
+        "file": "assets-src/moto-components/front-brake-plate/front-wheel-panel-v2-fit-inspection.glb",
+        "bytes": 21702288,
+        "sha256": "2be758aab20a1d3deca50d7560290f76b1c0c4982e4c640e4c81662ebb8f7f30",
+        "glTF_errors": 0,
+        "glTF_warnings": 1,
+        "glTF_messages": [
+          {
+            "code": "MESH_PRIMITIVE_GENERATED_TANGENT_SPACE",
+            "message": "Material requires a tangent space but the mesh primitive does not provide it. Runtime-generated tangent space may be non-portable across implementations.",
+            "severity": 1,
+            "pointer": "/meshes/0/primitives/0/material"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/1/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/2/primitives/0/attributes/TEXCOORD_0"
+          }
+        ],
+        "meshes": 3,
+        "vertices": 417115,
+        "triangles": 730278,
+        "bounds": {
+          "min": [
+            -0.036000002175569534,
+            5.192157459532609e-06,
+            -0.28999871015548706
+          ],
+          "max": [
+            0.052000101655721664,
+            0.579994797706604,
+            0.28999871015548706
+          ]
+        },
+        "dimensions_xyz_m": [
+          0.0880001038312912,
+          0.5799896055491445,
+          0.5799974203109741
+        ],
+        "signed_volume_m3": 0.0038328255596535342,
+        "axial_ray_hits": null,
+        "materials": [
+          {
+            "name": "Panel silver cast coating - candidate",
+            "roughness": 1,
+            "metallic": 1,
+            "normal_texture": "cast-grain-normal",
+            "roughness_texture": "cast-metallic-roughness"
+          },
+          {
+            "name": "Panel machined bores and seat",
+            "roughness": 0.25,
+            "metallic": 0.8999999761581421,
+            "normal_texture": null,
+            "roughness_texture": null
+          },
+          {
+            "name": "Silver coating on cast alloy - working reference",
+            "roughness": 0.30000001192092896,
+            "metallic": 0.7200000286102295,
+            "normal_texture": null,
+            "roughness_texture": null
+          },
+          {
+            "name": "Machined drum and bearing seat",
+            "roughness": 0.28999999165534973,
+            "metallic": 0.8799999952316284,
+            "normal_texture": null,
+            "roughness_texture": null
+          },
+          {
+            "name": "Rubber glTF baseline - micrograin bake pending.001",
+            "roughness": 0.6000000238418579,
+            "metallic": 0,
+            "normal_texture": null,
+            "roughness_texture": null
+          }
+        ]
+      }
+    ],
+    "art_accepted": false
+  },
+  "browser_check": {
+    "asset": "plate",
+    "file": "front-brake-plate-v2-inspection.glb",
+    "revision": "v2",
+    "meshes": 2,
+    "vertices": 182626,
+    "indices": 807210,
+    "textures_ready": true,
+    "renderer": {
+      "vendor": "Google Inc. (Google)",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "art_accepted": false,
+    "physical_iphone_tested": false,
+    "procedural_micrograin_baked": true,
+    "materials": [
+      {
+        "name": "Panel silver cast coating - candidate",
+        "normal_texture": true,
+        "metallic_roughness_texture": true
+      },
+      {
+        "name": "Panel machined bores and seat",
+        "normal_texture": false,
+        "metallic_roughness_texture": false
+      }
+    ],
+    "page_errors": [],
+    "http_failures": [],
+    "scope": "Actual exported plate in Babylon.js9.31.0; Chromium software renderer, not public integration or physical Safari performance measurement",
+    "micrograin_parity_passed": false,
+    "export_sha256": "495701dd4ce77ed82d4d27045f1aff7aec1ec47bc87a79163d6ee09b2834aa50"
+  },
+  "render_views": 5,
+  "review": "../../creative/reviews/front-brake-plate-v2/README.md",
+  "manifest": "../../creative/reviews/front-brake-plate-v2/manifest.json",
+  "full_motorcycle_complete": false,
+  "public_game_unchanged": true,
+  "physical_iphone_tested": false,
+  "art_accepted": false,
+  "material_parity": {
+    "scope": "Encoded PBR texture equality, not pixel-identical shading under different renderers/lights",
+    "export_sha256": "495701dd4ce77ed82d4d27045f1aff7aec1ec47bc87a79163d6ee09b2834aa50",
+    "maps": [
+      {
+        "map": "cast-grain-normal",
+        "source_export_pixels_identical": true,
+        "maximum_channel_difference_8bit": 0,
+        "channel_min": [
+          117,
+          118,
+          255
+        ],
+        "channel_max": [
+          138,
+          137,
+          255
+        ],
+        "channel_stddev": [
+          2.4670434359344497,
+          2.4630911951388588,
+          0.0
+        ]
+      },
+      {
+        "map": "cast-metallic-roughness",
+        "source_export_pixels_identical": true,
+        "maximum_channel_difference_8bit": 0,
+        "channel_min": [
+          255,
+          77,
+          179
+        ],
+        "channel_max": [
+          255,
+          112,
+          179
+        ],
+        "channel_stddev": [
+          0.0,
+          5.45983963495158,
+          0.0
+        ]
+      }
+    ],
+    "shader": {
+      "normal_scale": 0.6499999761581421,
+      "basecolor_factor": [
+        0.4300000071525574,
+        0.44999998807907104,
+        0.47999998927116394,
+        1
+      ]
+    },
+    "source_normal_strength": 0.65,
+    "common_physical_uv_tile_m": 0.01,
+    "format_and_data_parity_passed": true,
+    "visual_parity_accepted": false,
+    "physical_iphone_tested": false,
+    "art_accepted": false
+  }
+}
