@@ -1,0 +1,4172 @@
+{
+  "schema": 1,
+  "date": "2026-10-20",
+  "purpose": "Liste de fabrication traçable au dossier utilisateur; le précédent inventaire de 112 familles était préparatoire et non exhaustif.",
+  "not_a_finished_bill_of_materials": true,
+  "all_elements_finished": false,
+  "counts": {
+    "source_catalogue_entries": 92,
+    "concept_traceability_rows": 67,
+    "candidate_landmarks": 33,
+    "unlocated_reference_places": 6,
+    "design_zones": 9,
+    "structuring_axis_families": 11,
+    "working_inventory_families": 112,
+    "source_catalogue_coverage_in_working_inventory": {
+      "explicit_family": 37,
+      "partial_generic_family": 7,
+      "not_explicit_in_112": 48
+    }
+  },
+  "counting_rule": "Ne pas additionner 92, 112, compléments et repères : chevauchements et niveaux de détail différents. Chaque variante et bâtiment dédié doit ensuite avoir sa fiche de fabrication.",
+  "authority": "Décisions utilisateur actuelles, puis R9; annexe R8 et kit géographique restent références, avec leurs réserves.",
+  "sources": [
+    {
+      "id": "CONCEPT-R8",
+      "local_path": "/workspace/wewa-import/extracted/WEWA_Reprise_Codex2/WEWA_Reprise_Codex/context/concept_r8.txt",
+      "sha256": "a97e9225c03d895b727127b69d3ef7404ca0cb9638b14fbb66c32f9945dcb24e",
+      "consultation": "Texte des 31 pages lu; images non toutes examinées individuellement en pleine résolution."
+    },
+    {
+      "id": "CONCEPT-R9",
+      "local_path": "/workspace/wewa-import/extracted/WEWA_Reprise_Codex2/WEWA_Reprise_Codex/context/concept_r9_integral.txt",
+      "sha256": "28048666ffa354d147503a70e08be179e88cc9bc876cc3e73513fee1131c8424",
+      "consultation": "Huit pages actuelles lues; annexe R8 rapprochée du texte R8 séparé."
+    },
+    {
+      "id": "GEO-DOSSIER",
+      "local_path": "/workspace/wewa-import/extracted/WEWA_Reprise_Codex2/WEWA_Reprise_Codex/context/geographie.txt",
+      "sha256": "5ebb807275ef78f40c5cbaa2bad6f70746c225ab1a81c166a1bfeb270a646ba8",
+      "consultation": "Texte des sections 1 à 15 relu, y compris les sources documentaires de la section 13. Ne signifie pas nouvelle vérification de tous les liens externes."
+    },
+    {
+      "id": "KIT-CATALOGUE",
+      "local_path": "/workspace/wewa-import/extracted/Kit_Kinshasa_3D/Kit_Kinshasa_3D/catalogue_assets.json",
+      "sha256": "03a30419dff4e4a4b74b9275e43d7eb5befa0919f8e818d53620b9f2c5b6f54c",
+      "consultation": "92 entrées structurées intégralement parcourues."
+    },
+    {
+      "id": "KIT-POI",
+      "local_path": "/workspace/wewa-import/extracted/Kit_Kinshasa_3D/Kit_Kinshasa_3D/geodata/poi_selection_jeu.geojson",
+      "sha256": "8703278b300b8154a8992367b682e48fb3344a68678732e895ecc216bc3ea455",
+      "consultation": "33 repères parcourus; coordonnées sources conservées."
+    },
+    {
+      "id": "KIT-ZONES",
+      "local_path": "/workspace/wewa-import/extracted/Kit_Kinshasa_3D/Kit_Kinshasa_3D/zones_design.json",
+      "sha256": "d4d6329206ed90174014f41feac320fbae72cd928bb5f7a6abd6ea98c6b19d4c",
+      "consultation": "9 zones proposées parcourues."
+    },
+    {
+      "id": "KIT-NO-GPS",
+      "local_path": "/workspace/wewa-import/extracted/Kit_Kinshasa_3D/Kit_Kinshasa_3D/reperes_sans_gps.json",
+      "sha256": "767d6d62ba54f085cc7ecedacf31d6e7e65ebe10bf2410e6c0d1caca013e6afb",
+      "consultation": "6 fiches parcourues."
+    },
+    {
+      "id": "WORKING-112",
+      "local_path": "/workspace/wewa-github/creative/library/production-inventory.json",
+      "sha256": "3a9988a4686e3c3380f5c5da2c4d720519fb3fce15855c67b9deb760d208cb49",
+      "consultation": "112 familles de préparation rapprochées; ce fichier n’est pas modifié par cette matrice."
+    }
+  ],
+  "source_catalogue": [
+    {
+      "id": "AS-001",
+      "famille": "Voirie",
+      "objet": "Chaussée asphaltée",
+      "zones_cibles": "Z1-Z9",
+      "references": "S01,S04,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Dimensions à mesurer par segment ; variantes entretenues et usées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-001"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "street-01"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-002",
+      "famille": "Voirie",
+      "objet": "Reprise d’enrobé",
+      "zones_cibles": "Z1-Z9",
+      "references": "S01,S04,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Dimensions à mesurer par segment ; variantes entretenues et usées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-002"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "street-02"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-003",
+      "famille": "Voirie",
+      "objet": "Chaussée en terre",
+      "zones_cibles": "Z1-Z9",
+      "references": "S01,S04,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Dimensions à mesurer par segment ; variantes entretenues et usées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-003"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "street-13"
+      ],
+      "current_inventory_coverage": "partial_generic_family",
+      "reconciliation_note": "Un accotement de terre ne remplace pas une chaussée en terre.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-004",
+      "famille": "Voirie",
+      "objet": "Bordure",
+      "zones_cibles": "Z1-Z9",
+      "references": "S01,S04,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Dimensions à mesurer par segment ; variantes entretenues et usées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-004"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "street-04"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-005",
+      "famille": "Voirie",
+      "objet": "Trottoir pavé",
+      "zones_cibles": "Z1-Z9",
+      "references": "S01,S04,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Dimensions à mesurer par segment ; variantes entretenues et usées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-005"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "street-06"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-006",
+      "famille": "Voirie",
+      "objet": "Rampe d’accès",
+      "zones_cibles": "Z1-Z9",
+      "references": "S01,S04,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Dimensions à mesurer par segment ; variantes entretenues et usées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-006"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-007",
+      "famille": "Voirie",
+      "objet": "Dos-d’âne",
+      "zones_cibles": "Z1-Z9",
+      "references": "S01,S04,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Dimensions à mesurer par segment ; variantes entretenues et usées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-007"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-008",
+      "famille": "Voirie",
+      "objet": "Séparateur central",
+      "zones_cibles": "Z1-Z9",
+      "references": "S01,S04,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Dimensions à mesurer par segment ; variantes entretenues et usées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-008"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-009",
+      "famille": "Drainage",
+      "objet": "Caniveau ouvert",
+      "zones_cibles": "Z4-Z8",
+      "references": "S08,S09",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Raccordement au relief ; ne pas répartir au hasard.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-009"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "street-07"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-010",
+      "famille": "Drainage",
+      "objet": "Caniveau couvert",
+      "zones_cibles": "Z4-Z8",
+      "references": "S08,S09",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Raccordement au relief ; ne pas répartir au hasard.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-010"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-011",
+      "famille": "Drainage",
+      "objet": "Dalle franchissable",
+      "zones_cibles": "Z4-Z8",
+      "references": "S08,S09",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Raccordement au relief ; ne pas répartir au hasard.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-011"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-012",
+      "famille": "Drainage",
+      "objet": "Grille avaloir",
+      "zones_cibles": "Z4-Z8",
+      "references": "S08,S09",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Raccordement au relief ; ne pas répartir au hasard.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-012"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "street-08"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-013",
+      "famille": "Drainage",
+      "objet": "Buse",
+      "zones_cibles": "Z4-Z8",
+      "references": "S08,S09",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Raccordement au relief ; ne pas répartir au hasard.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-013"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-014",
+      "famille": "Drainage",
+      "objet": "Fossé",
+      "zones_cibles": "Z4-Z8",
+      "references": "S08,S09",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Raccordement au relief ; ne pas répartir au hasard.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-014"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-015",
+      "famille": "Drainage",
+      "objet": "Petit pont",
+      "zones_cibles": "Z4-Z8",
+      "references": "S08,S09",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Raccordement au relief ; ne pas répartir au hasard.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-015"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-016",
+      "famille": "Signalisation",
+      "objet": "Panneau de rue",
+      "zones_cibles": "Z1-Z7",
+      "references": "S01,S25",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Présence exacte, gabarit et aspect à confirmer sur photos datées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-016"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "street-17"
+      ],
+      "current_inventory_coverage": "partial_generic_family",
+      "reconciliation_note": "Panneau routier générique; panneau portant le nom de rue non séparé.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-017",
+      "famille": "Signalisation",
+      "objet": "Panneau routier",
+      "zones_cibles": "Z1-Z7",
+      "references": "S01,S25",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Présence exacte, gabarit et aspect à confirmer sur photos datées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-017"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "street-17"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-018",
+      "famille": "Signalisation",
+      "objet": "Feu de circulation",
+      "zones_cibles": "Z1-Z7",
+      "references": "S01,S25",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Présence exacte, gabarit et aspect à confirmer sur photos datées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-018"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-019",
+      "famille": "Signalisation",
+      "objet": "Marquage piéton",
+      "zones_cibles": "Z1-Z7",
+      "references": "S01,S25",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Présence exacte, gabarit et aspect à confirmer sur photos datées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-019"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "street-10"
+      ],
+      "current_inventory_coverage": "partial_generic_family",
+      "reconciliation_note": "Marquage général; passage piéton non distingué.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-020",
+      "famille": "Signalisation",
+      "objet": "Portique limiteur",
+      "zones_cibles": "Z1-Z7",
+      "references": "S01,S25",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Présence exacte, gabarit et aspect à confirmer sur photos datées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-020"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-021",
+      "famille": "Signalisation",
+      "objet": "Borne de protection",
+      "zones_cibles": "Z1-Z7",
+      "references": "S01,S25",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Présence exacte, gabarit et aspect à confirmer sur photos datées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-021"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "street-18"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-022",
+      "famille": "Éclairage et réseaux",
+      "objet": "Lampadaire simple",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01,V03",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Réseaux et groupes : propositions de kit à documenter localement.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-022"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "street-15"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-023",
+      "famille": "Éclairage et réseaux",
+      "objet": "Lampadaire double",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01,V03",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Réseaux et groupes : propositions de kit à documenter localement.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-023"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "street-15"
+      ],
+      "current_inventory_coverage": "partial_generic_family",
+      "reconciliation_note": "Lampadaire générique; variante double non séparée.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-024",
+      "famille": "Éclairage et réseaux",
+      "objet": "Poteau électrique",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01,V03",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Réseaux et groupes : propositions de kit à documenter localement.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-024"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "street-16"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-025",
+      "famille": "Éclairage et réseaux",
+      "objet": "Faisceau de câbles",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01,V03",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Réseaux et groupes : propositions de kit à documenter localement.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-025"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "street-16"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-026",
+      "famille": "Éclairage et réseaux",
+      "objet": "Armoire de rue",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01,V03",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Réseaux et groupes : propositions de kit à documenter localement.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-026"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-027",
+      "famille": "Éclairage et réseaux",
+      "objet": "Groupe électrogène",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01,V03",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Réseaux et groupes : propositions de kit à documenter localement.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-027"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-028",
+      "famille": "Commerce",
+      "objet": "Étal en bois",
+      "zones_cibles": "Z2,Z5,Z6,Z7,Z9",
+      "references": "S01,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Mix par quartier ; enseignes fictives cohérentes ou marques autorisées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-028"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "commerce-01"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-029",
+      "famille": "Commerce",
+      "objet": "Auvent toile",
+      "zones_cibles": "Z2,Z5,Z6,Z7,Z9",
+      "references": "S01,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Mix par quartier ; enseignes fictives cohérentes ou marques autorisées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-029"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "architecture-16"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-030",
+      "famille": "Commerce",
+      "objet": "Parasol",
+      "zones_cibles": "Z2,Z5,Z6,Z7,Z9",
+      "references": "S01,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Mix par quartier ; enseignes fictives cohérentes ou marques autorisées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-030"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "commerce-02"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-031",
+      "famille": "Commerce",
+      "objet": "Kiosque",
+      "zones_cibles": "Z2,Z5,Z6,Z7,Z9",
+      "references": "S01,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Mix par quartier ; enseignes fictives cohérentes ou marques autorisées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-031"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-032",
+      "famille": "Commerce",
+      "objet": "Table de vente",
+      "zones_cibles": "Z2,Z5,Z6,Z7,Z9",
+      "references": "S01,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Mix par quartier ; enseignes fictives cohérentes ou marques autorisées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-032"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "commerce-05"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-033",
+      "famille": "Commerce",
+      "objet": "Caisse boissons",
+      "zones_cibles": "Z2,Z5,Z6,Z7,Z9",
+      "references": "S01,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Mix par quartier ; enseignes fictives cohérentes ou marques autorisées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-033"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "commerce-06"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-034",
+      "famille": "Commerce",
+      "objet": "Présentoir fruits",
+      "zones_cibles": "Z2,Z5,Z6,Z7,Z9",
+      "references": "S01,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Mix par quartier ; enseignes fictives cohérentes ou marques autorisées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-034"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "commerce-12"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-035",
+      "famille": "Commerce",
+      "objet": "Enseigne peinte",
+      "zones_cibles": "Z2,Z5,Z6,Z7,Z9",
+      "references": "S01,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Mix par quartier ; enseignes fictives cohérentes ou marques autorisées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-035"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "architecture-16"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-036",
+      "famille": "Commerce",
+      "objet": "Rideau métallique",
+      "zones_cibles": "Z2,Z5,Z6,Z7,Z9",
+      "references": "S01,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Mix par quartier ; enseignes fictives cohérentes ou marques autorisées.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-036"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "architecture-05"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-037",
+      "famille": "Parcelles et façades",
+      "objet": "Mur enduit",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01,V03,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modules combinables ; relevé de proportions et motifs de façade.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-037"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "architecture-08"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-038",
+      "famille": "Parcelles et façades",
+      "objet": "Mur en blocs",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01,V03,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modules combinables ; relevé de proportions et motifs de façade.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-038"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "architecture-08"
+      ],
+      "current_inventory_coverage": "partial_generic_family",
+      "reconciliation_note": "Mur générique; maçonnerie apparente en blocs non séparée.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-039",
+      "famille": "Parcelles et façades",
+      "objet": "Portail métallique",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01,V03,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modules combinables ; relevé de proportions et motifs de façade.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-039"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "architecture-06"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-040",
+      "famille": "Parcelles et façades",
+      "objet": "Grille de fenêtre",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01,V03,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modules combinables ; relevé de proportions et motifs de façade.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-040"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "architecture-14"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-041",
+      "famille": "Parcelles et façades",
+      "objet": "Balcon",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01,V03,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modules combinables ; relevé de proportions et motifs de façade.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-041"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "architecture-03"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-042",
+      "famille": "Parcelles et façades",
+      "objet": "Brise-soleil",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01,V03,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modules combinables ; relevé de proportions et motifs de façade.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-042"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "architecture-02"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-043",
+      "famille": "Parcelles et façades",
+      "objet": "Climatiseur extérieur",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01,V03,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modules combinables ; relevé de proportions et motifs de façade.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-043"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "architecture-15"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-044",
+      "famille": "Parcelles et façades",
+      "objet": "Toiture tôle",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01,V03,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modules combinables ; relevé de proportions et motifs de façade.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-044"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "architecture-11"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-045",
+      "famille": "Parcelles et façades",
+      "objet": "Toiture terrasse",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01,V03,V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modules combinables ; relevé de proportions et motifs de façade.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-045"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "architecture-10"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-046",
+      "famille": "Mobilité",
+      "objet": "Taxi",
+      "zones_cibles": "Z1-Z9",
+      "references": "S04,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modèles de véhicules à concevoir ; ces références ne donnent pas les droits des marques.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-046"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "vehicles-02"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-047",
+      "famille": "Mobilité",
+      "objet": "Minibus",
+      "zones_cibles": "Z1-Z9",
+      "references": "S04,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modèles de véhicules à concevoir ; ces références ne donnent pas les droits des marques.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-047"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "vehicles-01"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-048",
+      "famille": "Mobilité",
+      "objet": "Bus urbain",
+      "zones_cibles": "Z1-Z9",
+      "references": "S04,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modèles de véhicules à concevoir ; ces références ne donnent pas les droits des marques.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-048"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "vehicles-05"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-049",
+      "famille": "Mobilité",
+      "objet": "Moto",
+      "zones_cibles": "Z1-Z9",
+      "references": "S04,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modèles de véhicules à concevoir ; ces références ne donnent pas les droits des marques.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-049"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "hero-01",
+        "vehicles-03"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-050",
+      "famille": "Mobilité",
+      "objet": "Camion",
+      "zones_cibles": "Z1-Z9",
+      "references": "S04,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modèles de véhicules à concevoir ; ces références ne donnent pas les droits des marques.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-050"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-051",
+      "famille": "Mobilité",
+      "objet": "Camionnette",
+      "zones_cibles": "Z1-Z9",
+      "references": "S04,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modèles de véhicules à concevoir ; ces références ne donnent pas les droits des marques.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-051"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "vehicles-04"
+      ],
+      "current_inventory_coverage": "partial_generic_family",
+      "reconciliation_note": "Pick-up générique; camionnette/fourgon distinct à définir.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-052",
+      "famille": "Mobilité",
+      "objet": "Arrêt de bus",
+      "zones_cibles": "Z1-Z9",
+      "references": "S04,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modèles de véhicules à concevoir ; ces références ne donnent pas les droits des marques.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-052"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-053",
+      "famille": "Mobilité",
+      "objet": "Abri",
+      "zones_cibles": "Z1-Z9",
+      "references": "S04,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modèles de véhicules à concevoir ; ces références ne donnent pas les droits des marques.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-053"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-054",
+      "famille": "Mobilité",
+      "objet": "Barrière de stationnement",
+      "zones_cibles": "Z1-Z9",
+      "references": "S04,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Modèles de véhicules à concevoir ; ces références ne donnent pas les droits des marques.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-054"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-055",
+      "famille": "Vie publique",
+      "objet": "Banc",
+      "zones_cibles": "Z1-Z9",
+      "references": "S24,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Le programme d’embellissement annoncé ne prouve pas les objets déjà installés.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-055"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-056",
+      "famille": "Vie publique",
+      "objet": "Chaise plastique",
+      "zones_cibles": "Z1-Z9",
+      "references": "S24,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Le programme d’embellissement annoncé ne prouve pas les objets déjà installés.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-056"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "commerce-03"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-057",
+      "famille": "Vie publique",
+      "objet": "Table terrasse",
+      "zones_cibles": "Z1-Z9",
+      "references": "S24,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Le programme d’embellissement annoncé ne prouve pas les objets déjà installés.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-057"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "commerce-05"
+      ],
+      "current_inventory_coverage": "partial_generic_family",
+      "reconciliation_note": "Table et plateau génériques; mobilier de terrasse non spécifié.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-058",
+      "famille": "Vie publique",
+      "objet": "Poubelle",
+      "zones_cibles": "Z1-Z9",
+      "references": "S24,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Le programme d’embellissement annoncé ne prouve pas les objets déjà installés.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-058"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-059",
+      "famille": "Vie publique",
+      "objet": "Conteneur",
+      "zones_cibles": "Z1-Z9",
+      "references": "S24,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Le programme d’embellissement annoncé ne prouve pas les objets déjà installés.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-059"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-060",
+      "famille": "Vie publique",
+      "objet": "Affiche",
+      "zones_cibles": "Z1-Z9",
+      "references": "S24,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Le programme d’embellissement annoncé ne prouve pas les objets déjà installés.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-060"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-061",
+      "famille": "Vie publique",
+      "objet": "Panneau publicitaire",
+      "zones_cibles": "Z1-Z9",
+      "references": "S24,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Le programme d’embellissement annoncé ne prouve pas les objets déjà installés.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-061"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-062",
+      "famille": "Vie publique",
+      "objet": "Terrain de sport",
+      "zones_cibles": "Z1-Z9",
+      "references": "S24,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Le programme d’embellissement annoncé ne prouve pas les objets déjà installés.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-062"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-063",
+      "famille": "Industrie et logistique",
+      "objet": "Hangar",
+      "zones_cibles": "Z2,Z6,Z7",
+      "references": "S01,S04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Implanter depuis les emprises réelles, puis dessiner les cours et accès.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-063"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-064",
+      "famille": "Industrie et logistique",
+      "objet": "Conteneur maritime",
+      "zones_cibles": "Z2,Z6,Z7",
+      "references": "S01,S04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Implanter depuis les emprises réelles, puis dessiner les cours et accès.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-064"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-065",
+      "famille": "Industrie et logistique",
+      "objet": "Quai de chargement",
+      "zones_cibles": "Z2,Z6,Z7",
+      "references": "S01,S04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Implanter depuis les emprises réelles, puis dessiner les cours et accès.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-065"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-066",
+      "famille": "Industrie et logistique",
+      "objet": "Palette",
+      "zones_cibles": "Z2,Z6,Z7",
+      "references": "S01,S04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Implanter depuis les emprises réelles, puis dessiner les cours et accès.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-066"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-067",
+      "famille": "Industrie et logistique",
+      "objet": "Clôture industrielle",
+      "zones_cibles": "Z2,Z6,Z7",
+      "references": "S01,S04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Implanter depuis les emprises réelles, puis dessiner les cours et accès.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-067"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-068",
+      "famille": "Industrie et logistique",
+      "objet": "Rail",
+      "zones_cibles": "Z2,Z6,Z7",
+      "references": "S01,S04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Implanter depuis les emprises réelles, puis dessiner les cours et accès.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-068"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-069",
+      "famille": "Industrie et logistique",
+      "objet": "Wagon",
+      "zones_cibles": "Z2,Z6,Z7",
+      "references": "S01,S04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Implanter depuis les emprises réelles, puis dessiner les cours et accès.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-069"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-070",
+      "famille": "Fleuve et loisirs",
+      "objet": "Pirogue",
+      "zones_cibles": "Z3,Z9",
+      "references": "S01,S02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Propositions à documenter par photos et relevés de rive.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-070"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-071",
+      "famille": "Fleuve et loisirs",
+      "objet": "Bateau",
+      "zones_cibles": "Z3,Z9",
+      "references": "S01,S02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Propositions à documenter par photos et relevés de rive.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-071"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-072",
+      "famille": "Fleuve et loisirs",
+      "objet": "Ponton",
+      "zones_cibles": "Z3,Z9",
+      "references": "S01,S02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Propositions à documenter par photos et relevés de rive.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-072"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-073",
+      "famille": "Fleuve et loisirs",
+      "objet": "Corde d’amarrage",
+      "zones_cibles": "Z3,Z9",
+      "references": "S01,S02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Propositions à documenter par photos et relevés de rive.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-073"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-074",
+      "famille": "Fleuve et loisirs",
+      "objet": "Étal de poisson",
+      "zones_cibles": "Z3,Z9",
+      "references": "S01,S02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Propositions à documenter par photos et relevés de rive.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-074"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-075",
+      "famille": "Fleuve et loisirs",
+      "objet": "Terrasse de rive",
+      "zones_cibles": "Z3,Z9",
+      "references": "S01,S02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Propositions à documenter par photos et relevés de rive.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-075"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-076",
+      "famille": "Fleuve et loisirs",
+      "objet": "Paillote",
+      "zones_cibles": "Z3,Z9",
+      "references": "S01,S02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Propositions à documenter par photos et relevés de rive.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-076"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-077",
+      "famille": "Végétation",
+      "objet": "Arbre d’alignement",
+      "zones_cibles": "Z1-Z9",
+      "references": "S14,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Identifier les espèces locales avant les modèles définitifs.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-077"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "vegetation-03"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-078",
+      "famille": "Végétation",
+      "objet": "Palmier",
+      "zones_cibles": "Z1-Z9",
+      "references": "S14,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Identifier les espèces locales avant les modèles définitifs.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-078"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "vegetation-01",
+        "vegetation-02"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-079",
+      "famille": "Végétation",
+      "objet": "Arbre d’ombrage",
+      "zones_cibles": "Z1-Z9",
+      "references": "S14,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Identifier les espèces locales avant les modèles définitifs.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-079"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "vegetation-04"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-080",
+      "famille": "Végétation",
+      "objet": "Haie",
+      "zones_cibles": "Z1-Z9",
+      "references": "S14,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Identifier les espèces locales avant les modèles définitifs.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-080"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "vegetation-05"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-081",
+      "famille": "Végétation",
+      "objet": "Herbe haute",
+      "zones_cibles": "Z1-Z9",
+      "references": "S14,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Identifier les espèces locales avant les modèles définitifs.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-081"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [
+        "vegetation-07"
+      ],
+      "current_inventory_coverage": "explicit_family",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-082",
+      "famille": "Végétation",
+      "objet": "Végétation de berge",
+      "zones_cibles": "Z1-Z9",
+      "references": "S14,V01,V02",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Identifier les espèces locales avant les modèles définitifs.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-082"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Correspondance de famille seulement; aucune réception artistique déduite.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-083",
+      "famille": "Matériaux",
+      "objet": "Enduit peint",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01-V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Photos propres sous lumière diffuse, échelle et charte couleur ; matériaux procéduraux réutilisables.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-083"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Matière à livrer et contrôler dans le moteur; ne pas compter comme modèle 3D.",
+      "candidate_material_ids": [
+        "ph:plastered_wall_02",
+        "ph:yellow_plaster"
+      ],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-084",
+      "famille": "Matériaux",
+      "objet": "Béton brut",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01-V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Photos propres sous lumière diffuse, échelle et charte couleur ; matériaux procéduraux réutilisables.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-084"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Matière à livrer et contrôler dans le moteur; ne pas compter comme modèle 3D.",
+      "candidate_material_ids": [
+        "ph:concrete_wall_003",
+        "ph:dirty_concrete"
+      ],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-085",
+      "famille": "Matériaux",
+      "objet": "Bloc maçonné",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01-V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Photos propres sous lumière diffuse, échelle et charte couleur ; matériaux procéduraux réutilisables.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-085"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Matière à livrer et contrôler dans le moteur; ne pas compter comme modèle 3D.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-086",
+      "famille": "Matériaux",
+      "objet": "Métal peint",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01-V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Photos propres sous lumière diffuse, échelle et charte couleur ; matériaux procéduraux réutilisables.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-086"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Matière à livrer et contrôler dans le moteur; ne pas compter comme modèle 3D.",
+      "candidate_material_ids": [
+        "ph:rusty_painted_metal"
+      ],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-087",
+      "famille": "Matériaux",
+      "objet": "Tôle ondulée",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01-V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Photos propres sous lumière diffuse, échelle et charte couleur ; matériaux procéduraux réutilisables.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-087"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Matière à livrer et contrôler dans le moteur; ne pas compter comme modèle 3D.",
+      "candidate_material_ids": [
+        "ph:rusty_corrugated_iron"
+      ],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-088",
+      "famille": "Matériaux",
+      "objet": "Asphalte",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01-V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Photos propres sous lumière diffuse, échelle et charte couleur ; matériaux procéduraux réutilisables.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-088"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Matière à livrer et contrôler dans le moteur; ne pas compter comme modèle 3D.",
+      "candidate_material_ids": [
+        "ph:clean_asphalt",
+        "ph:worn_asphalt"
+      ],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-089",
+      "famille": "Matériaux",
+      "objet": "Pavage",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01-V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Photos propres sous lumière diffuse, échelle et charte couleur ; matériaux procéduraux réutilisables.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-089"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Matière à livrer et contrôler dans le moteur; ne pas compter comme modèle 3D.",
+      "candidate_material_ids": [
+        "ph:pavement_02"
+      ],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-090",
+      "famille": "Matériaux",
+      "objet": "Terre sèche",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01-V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Photos propres sous lumière diffuse, échelle et charte couleur ; matériaux procéduraux réutilisables.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-090"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Matière à livrer et contrôler dans le moteur; ne pas compter comme modèle 3D.",
+      "candidate_material_ids": [
+        "ph:red_dirt_mud_01"
+      ],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-091",
+      "famille": "Matériaux",
+      "objet": "Sol humide",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01-V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Photos propres sous lumière diffuse, échelle et charte couleur ; matériaux procéduraux réutilisables.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-091"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Matière à livrer et contrôler dans le moteur; ne pas compter comme modèle 3D.",
+      "candidate_material_ids": [
+        "ph:brown_mud"
+      ],
+      "art_acceptance": "not_accepted"
+    },
+    {
+      "id": "AS-092",
+      "famille": "Matériaux",
+      "objet": "Verre",
+      "zones_cibles": "Z1-Z9",
+      "references": "V01-V04",
+      "statut": "Brief de modélisation proposé ; pas objet mesuré",
+      "verification": "Photos propres sous lumière diffuse, échelle et charte couleur ; matériaux procéduraux réutilisables.",
+      "dimensions_m": null,
+      "modele_3d_livre": false,
+      "source_ref": {
+        "id": "KIT-CATALOGUE",
+        "entry": "AS-092"
+      },
+      "scope_status": "source_design_brief_not_field_measured",
+      "current_inventory_ids": [],
+      "current_inventory_coverage": "not_explicit_in_112",
+      "reconciliation_note": "Matière à livrer et contrôler dans le moteur; ne pas compter comme modèle 3D.",
+      "candidate_material_ids": [],
+      "art_acceptance": "not_accepted"
+    }
+  ],
+  "concept_elements": [
+    {
+      "id": "CON-001",
+      "category": "vehicle",
+      "label": "Bajaj Boxer 125 HD",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 8
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        }
+      ],
+      "current_inventory_ids": [
+        "hero-01"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Référence constructeur de la moto jouable; proportions officielles à respecter.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-002",
+      "category": "vehicle",
+      "label": "TVS HLX 125",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 8
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        }
+      ],
+      "current_inventory_ids": [
+        "hero-01"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Deuxième référence, variante distincte à produire ensuite.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-003",
+      "category": "vehicle",
+      "label": "Petites motos importées/chinoises",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 8
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 13
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Modèles non identifiés dans le dossier : ne pas inventer marque ou génération.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-004",
+      "category": "vehicle",
+      "label": "Toyota ist taxi",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 7
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 9
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        }
+      ],
+      "current_inventory_ids": [
+        "vehicles-02"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Petit hayon jaune de référence.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-005",
+      "category": "vehicle",
+      "label": "Toyota Vitz taxi",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 13
+        }
+      ],
+      "current_inventory_ids": [
+        "vehicles-02"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Génération à choisir sur référence locale.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-006",
+      "category": "vehicle",
+      "label": "Mercedes T1/TN famille 207/208 et livrées",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 9
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 14
+        }
+      ],
+      "current_inventory_ids": [
+        "vehicles-01",
+        "vehicles-09"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Variantes entretenue/usée/retapée, bleue/jaune/blanche; mécanique exacte à confirmer.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-007",
+      "category": "vehicle",
+      "label": "Toyota Hilux simple cabine",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        }
+      ],
+      "current_inventory_ids": [
+        "vehicles-04"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Variante cabine et benne distincte.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-008",
+      "category": "vehicle",
+      "label": "Toyota Hilux double cabine",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 9
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        }
+      ],
+      "current_inventory_ids": [
+        "vehicles-04"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Référence photographique hors RDC signalée comme telle.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-009",
+      "category": "vehicle",
+      "label": "Toyota Prado J150",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 9
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "SUV fermé, distinct du pick-up; convoi fictif.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-010",
+      "category": "vehicle",
+      "label": "Toyota Land Cruiser 300",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Référence catalogue RDC; modèle non présent dans les 112 familles explicites.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-011",
+      "category": "vehicle",
+      "label": "Hyundai Palisade génération 2021",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 14
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Silhouette distincte; documente un lot destiné à la RDC, pas tout le parc.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-012",
+      "category": "vehicle",
+      "label": "Berlines et breaks",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Familles demandées, modèles à documenter.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-013",
+      "category": "vehicle",
+      "label": "Poids lourd et remorque",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 2
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 6
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 27
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Modèle exact à documenter; roues, virage large, masquage de vue et freinage.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-014",
+      "category": "vehicle",
+      "label": "Fourgon et camionnette",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Ne pas assimiler automatiquement à un Hilux.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-015",
+      "category": "vehicle",
+      "label": "Motos de service et escorte fictive",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 12
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Uniformes et configuration de jeu à définir.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-016",
+      "category": "character",
+      "label": "Pilote principal adulte",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 1
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 2
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 8
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 26
+        }
+      ],
+      "current_inventory_ids": [
+        "hero-02"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Rider, mains et posture en selle; identité Kito proposée séparément, pas un nom R8.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-017",
+      "category": "character",
+      "label": "Amie proche du héros",
+      "references": [
+        {
+          "source": "CONCEPT-R9",
+          "page": 4
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Personnage narratif actif, distinct de la personnalité fictive.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-018",
+      "category": "character",
+      "label": "Personnalité publique entièrement fictive",
+      "references": [
+        {
+          "source": "CONCEPT-R9",
+          "page": 4
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Aucun visage/voix/biographie de Didi Stone sans collaboration. Sana est un nom proposé.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-019",
+      "category": "character",
+      "label": "Passager adulte et conducteur de trafic",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 8
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 22
+        }
+      ],
+      "current_inventory_ids": [
+        "vehicles-07",
+        "people-05"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Silhouettes et poses montée/descente/assise à créer.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-020",
+      "category": "character",
+      "label": "Receveur de minibus",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 26
+        }
+      ],
+      "current_inventory_ids": [
+        "vehicles-08",
+        "people-11"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Gestes et appels de destination, pas simple mannequin.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-021",
+      "category": "character",
+      "label": "Agent PCR régulateur",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 10
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 12
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Tenue datée et gestes passage/arrêt; sifflet et traversées.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-022",
+      "category": "character",
+      "label": "Agents régulier, allié, corrompu et commissaire fictif",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 18
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Rôles distincts de fiction; dialogues, présentation des papiers et poignée de main.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-023",
+      "category": "prop",
+      "label": "Robot de roulage",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 10
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Socle, corps, bras, feux et panneau solaire; localisation historique à vérifier.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-024",
+      "category": "character",
+      "label": "Adversaires à pied et poursuivant à moto fictifs",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 4
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 15
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Silhouettes distinctes; première extension avant plusieurs gangs.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-025",
+      "category": "prop",
+      "label": "Machette générique et port de l’objet",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 4
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 15
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Pas de marque ni modèle déduit du terme oral non clarifié.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-026",
+      "category": "character",
+      "label": "Quado / mécanicien récurrent",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 15
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 21
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 27
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Tenue, outils, gestes de réparation et rôle de contact.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-027",
+      "category": "character",
+      "label": "Vendeurs et vendeuses ambulants",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 19
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 20
+        }
+      ],
+      "current_inventory_ids": [
+        "people-01",
+        "people-02"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Au moins deux identités de services; trajets courts et gestes de vente.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-028",
+      "category": "character",
+      "label": "Musiciens, techniciens et public de concert",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 22
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 24
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Plusieurs rôles, équipements et animations dédiés.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-029",
+      "category": "character",
+      "label": "Sapeur et sapeuse",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 23
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 24
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Costumes, chaussures, accessoires et poses; pas un clone répété.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-030",
+      "category": "character",
+      "label": "Enseignant, parents et élèves",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 23
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 24
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Uniformes blanc/bleu selon école, sacs, portail et traversée régulée; pas obstacles de course.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-031",
+      "category": "character",
+      "label": "Étudiants, voisins et familles",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 22
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Vie quotidienne et interactions sociales.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-032",
+      "category": "character",
+      "label": "Rencontres adultes de sortie de nuit",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 22
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Personnages fictifs et scènes non explicites; couche secondaire.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-033",
+      "category": "character",
+      "label": "Enfants en situation de rue et adulte de confiance",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 22
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Présence diurne et entraide, scènes distinctes des activités nocturnes adultes.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-034",
+      "category": "consumable",
+      "label": "Eau et soda génériques",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 19
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 20
+        }
+      ],
+      "current_inventory_ids": [
+        "commerce-08"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Contenants, emballages, prise et remise; bonus de jeu fictifs.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-035",
+      "category": "consumable",
+      "label": "Arachides, gâteau, chips et biscuits",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 19
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 20
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Sachets, plateaux, vitrines et boîtes; pas tous couverts par fruits.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-036",
+      "category": "consumable",
+      "label": "Noix de cola et racines traditionnelles de quête",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 19
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Espèces/préparations non identifiées; ne pas inventer un effet réel.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-037",
+      "category": "prop",
+      "label": "Glacière, réfrigérateur, canette et tablier de vendeur",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 19
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 20
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Formes et habillages distincts, séparables du sponsor.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-038",
+      "category": "prop",
+      "label": "Bouteilles/verres de bière et caisses de bar",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 20
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Décor social, aucun bonus de conduite associé à l’alcool.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-039",
+      "category": "prop",
+      "label": "Grill, menus, affiches de soirée et billets",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 20
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 22
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Terrasse/nganda et événements; établissements criminels fictifs.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-040",
+      "category": "prop",
+      "label": "Chambre à air, pompe/compresseur, jantes et pièces",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 20
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 21
+        }
+      ],
+      "current_inventory_ids": [
+        "commerce-17"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "L’outillage générique des 112 familles ne précise pas ces objets.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-041",
+      "category": "prop",
+      "label": "Documents du héros et remise narrative d’argent",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 18
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Objets de quête et animations; monnaie de jeu uniquement.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-042",
+      "category": "prop",
+      "label": "Téléphone oublié / message vocal",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 22
+        },
+        {
+          "source": "CONCEPT-R9",
+          "page": 4
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Objet de mission et voix originale; modèle/écran fictifs.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-043",
+      "category": "prop",
+      "label": "Scène démontable et structures de concert",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 24
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 27
+        }
+      ],
+      "current_inventory_ids": [
+        "extension-04"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Un lieu générique ne remplace pas la scène et ses accessoires.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-044",
+      "category": "prop",
+      "label": "Instruments, micros, câbles, retours et éclairages",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 23
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 24
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Choix selon répertoire validé; rumba et jazz distincts.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-045",
+      "category": "prop",
+      "label": "Barrières de public, accès de service et logistique concert",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 24
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 27
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Circulation et foule lisibles.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-046",
+      "category": "prop",
+      "label": "Costumes et accessoires de sape",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 24
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Tenues variées, chaussures et accessoires individualisés.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-047",
+      "category": "prop",
+      "label": "Uniformes scolaires, sacs et portail",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 24
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Variantes selon établissement et âge.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-048",
+      "category": "prop",
+      "label": "Planches maraîchères, arrosoirs, seaux et récoltes",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 24
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Parcelles et espèces à relever; paniers de transport fragile.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-049",
+      "category": "prop",
+      "label": "Engin de chantier et terrassement",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 25
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "État daté des travaux et déviation annoncée, pas un état urbain mélangé.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-050",
+      "category": "advertising",
+      "label": "Six supports ADS réservés",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 16
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 17
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "ADS-Z1-001 boulevard, ADS-Z1-002 devanture, ADS-Z1-003 abribus candidat, ADS-Z2-001 garage, ADS-Z2-002 dépôt, ADS-Z2-003 approche port; coordonnées non validées.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-051",
+      "category": "gameplay",
+      "label": "Colis Rush/livraison et zone de dépôt",
+      "references": [
+        {
+          "source": "CONCEPT-R9",
+          "page": 2
+        }
+      ],
+      "current_inventory_ids": [
+        "hero-05"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Colis de collecte, charge arrimée et signalétique lisibles.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-052",
+      "category": "gameplay",
+      "label": "Jetons de parcours et jeton nitro dédié",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 3
+        },
+        {
+          "source": "CONCEPT-R9",
+          "page": 3
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Collectibles distincts, symbole/couleur/son; objet fictif de gameplay.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-053",
+      "category": "gameplay",
+      "label": "Concentration, aimant et provisions",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 3
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 19
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Effets/UI et éventuels objets; aimant après prototype, ne pas tout traiter comme une bouteille nitro.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-054",
+      "category": "interface",
+      "label": "Mini-carte, objectif/distance, jauges, combo et cible",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 3
+        },
+        {
+          "source": "CONCEPT-R9",
+          "page": 2
+        },
+        {
+          "source": "CONCEPT-R9",
+          "page": 3
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "UI et sons, pas modèles de ville; version remappage/tactile selon décisions utilisateur.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-055",
+      "category": "interface",
+      "label": "Guidon, compteur, réservoir et mains première personne",
+      "references": [
+        {
+          "source": "CONCEPT-R9",
+          "page": 3
+        }
+      ],
+      "current_inventory_ids": [
+        "hero-06",
+        "hero-07"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Visibles sans obstruction, même moto et même physique.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-056",
+      "category": "cosmetic",
+      "label": "Peintures, selles, porte-bagages, stickers/plaque fictive, tenues",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 28
+        },
+        {
+          "source": "CONCEPT-R9",
+          "page": 5
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Aperçus exacts et objets visuels; aucun paiement réel dans la V0.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-057",
+      "category": "audio",
+      "label": "Moteurs distincts, ralenti, rapports, freins et klaxons",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 26
+        }
+      ],
+      "current_inventory_ids": [
+        "lighting_audio-06",
+        "lighting_audio-07",
+        "lighting_audio-08",
+        "lighting_audio-09"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Sources originales/autorisées et mix utiles à la conduite.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-058",
+      "category": "audio",
+      "label": "Sifflet, appels français/lingala et conversations",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 10
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 18
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 26
+        }
+      ],
+      "current_inventory_ids": [
+        "lighting_audio-10",
+        "lighting_audio-11"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Textes et prononciation à relire localement; locuteurs et enregistrements à produire.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-059",
+      "category": "audio",
+      "label": "Concert, radio fictive, répétition, terrasse et musique distante",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 22
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 24
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 25
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 26
+        }
+      ],
+      "current_inventory_ids": [
+        "lighting_audio-12"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Composer/licencier; une photo de concert ne confère aucun droit musical.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-060",
+      "category": "animation",
+      "label": "Conduite, passager, montée/descente, roues et manœuvres de trafic",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 2
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 8
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 11
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 26
+        }
+      ],
+      "current_inventory_ids": [
+        "people-07",
+        "people-13"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Inclinaison, mains/pieds, freinage/feux et braquage; exports riggés dédiés.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-061",
+      "category": "animation",
+      "label": "Marche, attente, traversée groupée, vente, mécanique et conversation",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 18
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 19
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 21
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 24
+        }
+      ],
+      "current_inventory_ids": [
+        "people-08",
+        "people-09",
+        "people-10",
+        "people-12",
+        "people-14"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Animations de rôle et transitions; gestes de jeu lisibles.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-062",
+      "category": "animation",
+      "label": "Esquive, garde, frappe, fuite et remontée moto",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 4
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 15
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Combat bref ultérieur; aucune violence graphique nécessaire.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-063",
+      "category": "place",
+      "label": "Zando dans un état daté, marché de la Liberté et commerces",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 25
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Ancien marché/chantier/reconstruction sont des états distincts.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-064",
+      "category": "place",
+      "label": "Avenue du Tourisme et ouvertures réelles sur le fleuve",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 25
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Pas de vue panoramique continue inventée.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-065",
+      "category": "place",
+      "label": "Quai fictif de sauvetage et accès portuaires",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 4
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 5
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 25
+        }
+      ],
+      "current_inventory_ids": [
+        "extension-02"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Séparer coordonnées réelles et final narratif fictif.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-066",
+      "category": "place",
+      "label": "École, jardin maraîcher, atelier/quado, nganda et dancing",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 21
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 22
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 24
+        }
+      ],
+      "current_inventory_ids": [],
+      "coverage": "not_explicit_in_112",
+      "note": "Sites à choisir et détails spécifiques à relever, pas un seul décor générique.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    },
+    {
+      "id": "CON-067",
+      "category": "place",
+      "label": "Halte au fleuve, bateaux et horizon de Brazzaville",
+      "references": [
+        {
+          "source": "CONCEPT-R8",
+          "page": 25
+        },
+        {
+          "source": "CONCEPT-R8",
+          "page": 27
+        }
+      ],
+      "current_inventory_ids": [
+        "extension-05"
+      ],
+      "coverage": "explicit_or_partial_family",
+      "note": "Brazzaville horizon visible, pas seconde ville jouable au premier prototype.",
+      "status": "to_specify_produce_or_finish_not_artistically_accepted"
+    }
+  ],
+  "landmarks": [
+    {
+      "id": "POI-01",
+      "label": "Académie des Beaux-Arts",
+      "zone": "Z1",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/109431897",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.293376790739945,
+          -4.3214927
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-02",
+      "label": "Cathédrale Notre-Dame du Congo",
+      "zone": "Z1",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/4714383",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.29462704199107,
+          -4.323812500000001
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-03",
+      "label": "Palais de la Nation",
+      "zone": "Z1",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/29200135",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.280401003006428,
+          -4.3023823
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-04",
+      "label": "Aéroport de Ndolo",
+      "zone": "Z2",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/998303567",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.326891555214596,
+          -4.3267185
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-05",
+      "label": "Hilton Kinshasa",
+      "zone": "Z2",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/553646171",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.312123681584584,
+          -4.2984253
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-06",
+      "label": "Hôtel Memling",
+      "zone": "Z2",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/node/2144927306",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.3121363,
+          -4.3041968
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-07",
+      "label": "Jardin botanique de Kinshasa",
+      "zone": "Z2",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/4421355",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.309830435237409,
+          -4.31057025
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-08",
+      "label": "Jardin zoologique de Kinshasa",
+      "zone": "Z2",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/4421354",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.306836966440457,
+          -4.3111827
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-09",
+      "label": "Novotel Kinshasa La Gombe",
+      "zone": "Z2",
+      "source_id": "S02",
+      "source_url": "https://all.accor.com/hotel/B713/index.fr.shtml",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.30503,
+          -4.30384
+        ]
+      },
+      "point_role": null,
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-10",
+      "label": "Espace Bilembo",
+      "zone": "Z3",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/node/3123535426",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2716004,
+          -4.3209339
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-11",
+      "label": "Fleuve Congo Hotel by Blazon Hotels",
+      "zone": "Z3",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/29200152",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.270253179279724,
+          -4.312620750000001
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-12",
+      "label": "Kin Plaza Mall",
+      "zone": "Z3",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/405239799",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.27432447348255,
+          -4.31865385
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-13",
+      "label": "Kintambo Magasins",
+      "zone": "Z3",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/node/435789914",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2582156,
+          -4.3340385
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-14",
+      "label": "Le Pullman Kinshasa Grand Hôtel",
+      "zone": "Z3",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/relation/2744501",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.273485185139238,
+          -4.312662550000001
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-15",
+      "label": "Mont Ngaliema",
+      "zone": "Z3",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/node/435900948",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.2446765,
+          -4.3299111
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-16",
+      "label": "Université Pedagogique Nationale",
+      "zone": "Z4",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/48527190",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.258221409437786,
+          -4.4042829999999995
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-17",
+      "label": "Cathédrale du Centenaire protestant",
+      "zone": "Z5",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/37365312",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.297524263378378,
+          -4.335525349999999
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-18",
+      "label": "IXORAS Hotel Victoire",
+      "zone": "Z5",
+      "source_id": "S02",
+      "source_url": "https://ixorashotels.com/hotels/ixoras-hotel-victoire",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.313305073456549,
+          -4.341445995632571
+        ]
+      },
+      "point_role": null,
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-19",
+      "label": "Musée national de la République démocratique du Congo",
+      "zone": "Z5",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/1229581933",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.299436580694252,
+          -4.3352778
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-20",
+      "label": "Palais du Peuple",
+      "zone": "Z5",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/relation/7335461",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.30346668348346,
+          -4.332155650000001
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-21",
+      "label": "Stade des Martyrs de la Pentecôte",
+      "zone": "Z5",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/4402561",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.31036353445758,
+          -4.3301897
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-22",
+      "label": "Université de Kinshasa",
+      "zone": "Z5",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/783572547",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.310994546726445,
+          -4.4213478
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-23",
+      "label": "Place Echangeur",
+      "zone": "Z6",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/57890331",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.345319015484735,
+          -4.3743386
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-24",
+      "label": "Stade Tata Raphaël",
+      "zone": "Z6",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/4650276",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.322629719585613,
+          -4.3379266
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-25",
+      "label": "Aéroport International de Ndjili",
+      "zone": "Z7",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/784957020",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.45087746293347,
+          -4.38406855
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-26",
+      "label": "Marché de la Liberté",
+      "zone": "Z7",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/4693467",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.384355760122347,
+          -4.39200545
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-27",
+      "label": "Lac Ma Vallée / Africa Park Aventure",
+      "zone": "Z8",
+      "source_id": "S02",
+      "source_url": "https://www.africabizinfo.com/fr-CD/africa-park-aventure-0825-001-115",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.282386,
+          -4.494128
+        ]
+      },
+      "point_role": null,
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-28",
+      "label": "Lola ya Bonobo",
+      "zone": "Z8",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/63957909",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.267161045435444,
+          -4.489451799999999
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-29",
+      "label": "Marché de Kinkole",
+      "zone": "Z9",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/way/63949566",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.512968846164444,
+          -4.322549
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-30",
+      "label": "Parc de la Vallée de la N’Sele",
+      "zone": "Z9",
+      "source_id": "S02",
+      "source_url": "https://parcdelavalleedelansele.com/ ; https://parcdelavalleedelansele.com/lodges/ ; https://parcdelavalleedelansele.com/restaurant/",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.724882,
+          -4.306728
+        ]
+      },
+      "point_role": null,
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-31",
+      "label": "Picasso Beach N’Sele",
+      "zone": "Z9",
+      "source_id": "S02",
+      "source_url": "https://kointikoin.cd/page/picasso_beach",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.5999,
+          -4.25333
+        ]
+      },
+      "point_role": null,
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-32",
+      "label": "Port de Kinkole",
+      "zone": "Z9",
+      "source_id": "S01",
+      "source_url": "https://www.openstreetmap.org/node/760223192",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.5034015,
+          -4.3217226
+        ]
+      },
+      "point_role": "Repère géométrique, pas une entrée",
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    },
+    {
+      "id": "POI-33",
+      "label": "Safari Beach Resort N’Sele",
+      "zone": "Z9",
+      "source_id": "S02",
+      "source_url": "https://www.tripadvisor.fr/Restaurant_Review-g294187-d14102249-Reviews-Safari_Beach_Resort_N_sele_Kinshasa-Kinshasa.html",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.54897,
+          -4.25624
+        ]
+      },
+      "point_role": null,
+      "production_status": "candidate_landmark_not_modelled_or_entry_validated"
+    }
+  ],
+  "unlocated_places": [
+    {
+      "id": "EXT-018",
+      "nom": "Bueno Vista Villa",
+      "categorie": "Hôtels établis",
+      "zone_liga": null,
+      "source_id": "S02",
+      "source_url": "https://www.buenovistavilla.com/a-propos-hotel-congolais",
+      "source_gps": null,
+      "notes": "GPS non fiabilisé. Non placé sur la carte et hors regroupement spatial.",
+      "localisation": "Repère publié ; entrée non confirmée"
+    },
+    {
+      "id": "EXT-030",
+      "nom": "Seray Mediterranean Lounge",
+      "categorie": "Restaurants de renom",
+      "zone_liga": null,
+      "source_id": "S02",
+      "source_url": "https://www.societebabsarl.com/en/",
+      "source_gps": null,
+      "notes": "La source récente localise à Limete. Ancien point de Gombe non réutilisé. GPS à confirmer.",
+      "localisation": "Repère publié ; entrée non confirmée"
+    },
+    {
+      "id": "EXT-031",
+      "nom": "Seray International Garden",
+      "categorie": "Restaurants de renom",
+      "zone_liga": null,
+      "source_id": "S02",
+      "source_url": "https://www.societebabsarl.com/en/menu/seray-international-garden/",
+      "source_gps": null,
+      "notes": "Ne pas confondre avec la branche de Limete ni 110 Street Food. GPS à confirmer.",
+      "localisation": "Repère publié ; entrée non confirmée"
+    },
+    {
+      "id": "EXT-032",
+      "nom": "Levantè Restaurant",
+      "categorie": "Restaurants de renom",
+      "zone_liga": null,
+      "source_id": "S02",
+      "source_url": "https://www.tripadvisor.fr/Restaurant_Review-g294187-d34108147-Reviews-Levante_Restaurant-Kinshasa.html",
+      "source_gps": null,
+      "notes": "GPS non fiabilisé. Équipements électriques à demander.",
+      "localisation": "Repère publié ; entrée non confirmée"
+    },
+    {
+      "id": "EXT-036",
+      "nom": "Chez Ntemba International",
+      "categorie": "Clubs et discothèques",
+      "zone_liga": null,
+      "source_id": "S02",
+      "source_url": "https://www.moncongo.com/chez-ntemba-international",
+      "source_gps": null,
+      "notes": "GPS non fiabilisé. Confirmer la branche et l’activité actuelle.",
+      "localisation": "Repère publié ; entrée non confirmée"
+    },
+    {
+      "id": "EXT-043",
+      "nom": "Texaf Bilembo",
+      "categorie": "Tourisme et loisirs aménagés",
+      "zone_liga": null,
+      "source_id": "S02",
+      "source_url": "https://www.texaf-bilembo.com/",
+      "source_gps": null,
+      "notes": "GPS non fiabilisé. Ne pas utiliser le centre-ville générique renvoyé par certains annuaires.",
+      "localisation": "Repère publié ; entrée non confirmée"
+    }
+  ],
+  "design_zones": [
+    {
+      "id": "Z1",
+      "nom_liga": "Nord central ouest",
+      "titre_jeu": "Boulevards et affaires",
+      "direction_artistique": "Tours, banques, hôtels, galeries, arbres d’alignement, vitrines et entrées de parcelles.",
+      "gameplay_propose": "Conduite urbaine, livraisons, lieux de rendez-vous et contrastes jour/nuit.",
+      "color": "#E3AD36",
+      "statut": "Contour de travail proposé, non administratif",
+      "regle": "Seuils 15.30 E et -4.34 conservés de LIGA ; autres limites proposées à partir des points. Rectangles découpés sur la limite provinciale OSM, à affiner pour le jeu.",
+      "decoupe": "Intersection avec la province Kinshasa OSM ; emprise d’étude partielle."
+    },
+    {
+      "id": "Z2",
+      "nom_liga": "Nord central est",
+      "titre_jeu": "Gare, commerce et front fluvial",
+      "direction_artistique": "Gare centrale, port, grandes artères, hôtels, magasins, espaces d’attente.",
+      "gameplay_propose": "Arrivée en ville, transports et transitions entre rues et rive.",
+      "color": "#E17454",
+      "statut": "Contour de travail proposé, non administratif",
+      "regle": "Seuils 15.30 E et -4.34 conservés de LIGA ; autres limites proposées à partir des points. Rectangles découpés sur la limite provinciale OSM, à affiner pour le jeu.",
+      "decoupe": "Intersection avec la province Kinshasa OSM ; emprise d’étude partielle."
+    },
+    {
+      "id": "Z3",
+      "nom_liga": "Ouest nord",
+      "titre_jeu": "Rive ouest et Kintambo",
+      "direction_artistique": "Grands hôtels côté rive, places de Kintambo, façades variées et fronts de parcelles.",
+      "gameplay_propose": "Promenades, loisirs et circulation entre quartiers historiques et boulevard.",
+      "color": "#51AAA4",
+      "statut": "Contour de travail proposé, non administratif",
+      "regle": "Seuils 15.30 E et -4.34 conservés de LIGA ; autres limites proposées à partir des points. Rectangles découpés sur la limite provinciale OSM, à affiner pour le jeu.",
+      "decoupe": "Intersection avec la province Kinshasa OSM ; emprise d’étude partielle."
+    },
+    {
+      "id": "Z4",
+      "nom_liga": "Ouest sud",
+      "titre_jeu": "Binza, relief et route de Matadi",
+      "direction_artistique": "Pentes, murs de soutènement, portails, villas, commerces de carrefour et chemins latéraux.",
+      "gameplay_propose": "Parcours vallonnés et vues lointaines ; tester freinage et lisibilité des virages.",
+      "color": "#83A865",
+      "statut": "Contour de travail proposé, non administratif",
+      "regle": "Seuils 15.30 E et -4.34 conservés de LIGA ; autres limites proposées à partir des points. Rectangles découpés sur la limite provinciale OSM, à affiner pour le jeu.",
+      "decoupe": "Intersection avec la province Kinshasa OSM ; emprise d’étude partielle."
+    },
+    {
+      "id": "Z5",
+      "nom_liga": "Centre ouest",
+      "titre_jeu": "Vie culturelle et quartiers centraux",
+      "direction_artistique": "Palais du Peuple, Musée national, stade, Bandal, Matonge, cours et façades actives. UNIKIN se situe aussi dans Z5 selon ce découpage.",
+      "gameplay_propose": "Musique, sport, marchés, activités sociales et missions à pied.",
+      "color": "#AA80B8",
+      "statut": "Contour de travail proposé, non administratif",
+      "regle": "Seuils 15.30 E et -4.34 conservés de LIGA ; autres limites proposées à partir des points. Rectangles découpés sur la limite provinciale OSM, à affiner pour le jeu.",
+      "decoupe": "Intersection avec la province Kinshasa OSM ; emprise d’étude partielle."
+    },
+    {
+      "id": "Z6",
+      "nom_liga": "Centre et sud-est",
+      "titre_jeu": "Limete, Lemba et grands équipements",
+      "direction_artistique": "Échangeur, stade Tata Raphaël, emprises industrielles, rues numérotées, habitat et marchés.",
+      "gameplay_propose": "Longues perspectives, logistique et transitions du tissu industriel au résidentiel.",
+      "color": "#5D91C4",
+      "statut": "Contour de travail proposé, non administratif",
+      "regle": "Seuils 15.30 E et -4.34 conservés de LIGA ; autres limites proposées à partir des points. Rectangles découpés sur la limite provinciale OSM, à affiner pour le jeu.",
+      "decoupe": "Intersection avec la province Kinshasa OSM ; emprise d’étude partielle."
+    },
+    {
+      "id": "Z7",
+      "nom_liga": "Est urbain",
+      "titre_jeu": "Est dense et porte aéroportuaire",
+      "direction_artistique": "Masina, N’djili, Kimbanseke, boulevard Lumumba, marchés et aéroport.",
+      "gameplay_propose": "Arrivée aéroportuaire, grands déplacements et ruelles de quartier.",
+      "color": "#CA788D",
+      "statut": "Contour de travail proposé, non administratif",
+      "regle": "Seuils 15.30 E et -4.34 conservés de LIGA ; autres limites proposées à partir des points. Rectangles découpés sur la limite provinciale OSM, à affiner pour le jeu.",
+      "decoupe": "Intersection avec la province Kinshasa OSM ; emprise d’étude partielle."
+    },
+    {
+      "id": "Z8",
+      "nom_liga": "Sud et collines",
+      "titre_jeu": "Collines et vallée de la Lukaya",
+      "direction_artistique": "Mont-Ngafula, Kimwenza, Lola ya Bonobo, Lac Ma Vallée, végétation et routes de relief.",
+      "gameplay_propose": "Exploration, détente et respiration paysagère ; éviter les pentes artificiellement plates.",
+      "color": "#929F66",
+      "statut": "Contour de travail proposé, non administratif",
+      "regle": "Seuils 15.30 E et -4.34 conservés de LIGA ; autres limites proposées à partir des points. Rectangles découpés sur la limite provinciale OSM, à affiner pour le jeu.",
+      "decoupe": "Intersection avec la province Kinshasa OSM ; emprise d’étude partielle."
+    },
+    {
+      "id": "Z9",
+      "nom_liga": "Est périphérique",
+      "titre_jeu": "N’Sele et extension orientale",
+      "direction_artistique": "Kinkole, rives, pêche, RN1, loisirs et Parc de la Vallée de la N’Sele.",
+      "gameplay_propose": "Exploration fluviale et contraste périurbain ; secteur plus espacé.",
+      "color": "#67A7B6",
+      "statut": "Contour de travail proposé, non administratif",
+      "regle": "Seuils 15.30 E et -4.34 conservés de LIGA ; autres limites proposées à partir des points. Rectangles découpés sur la limite provinciale OSM, à affiner pour le jeu.",
+      "decoupe": "Intersection avec la province Kinshasa OSM ; emprise d’étude partielle."
+    }
+  ],
+  "structuring_axes": [
+    "Boulevard du 30 Juin",
+    "Boulevard Lumumba / RN1",
+    "Congo-Japon / Poids-Lourds",
+    "Colonel Mondjiba / Tshatshi",
+    "Libération / ex-24-Novembre",
+    "Kasa-Vubu / Victoire",
+    "Démocratie / Huileries",
+    "Université / Sendwe",
+    "By-Pass / Foire",
+    "Route de Matadi / axe ouest",
+    "Route de Kimwenza / Lukaya"
+  ],
+  "open_identification_items": [
+    "Tronçon de rue étalon exact et façades individuelles",
+    "Génération Toyota Vitz",
+    "Variante mécanique et dimensions exactes du minibus local",
+    "Modèles précis des motos importées/chinoises",
+    "Bus, camions et fourgons à identifier",
+    "Tenues et gestes PCR/robot pour époque choisie",
+    "Espèces végétales, instruments et danses du répertoire retenu",
+    "Noms Kito/Mado/Sana et bracelet sont propositions d’implémentation, pas noms/objets imposés par R8/R9",
+    "Accès gare, Zando, Évolués, Victoire et quais à confirmer",
+    "Détails de marque/sponsoring ne sont pas partenariats acquis"
+  ],
+  "user_confirmation_state": "Fabrication autorisée; validation artistique des lots à demander sur éléments concrets. Aucun statut accepted inventé."
+}

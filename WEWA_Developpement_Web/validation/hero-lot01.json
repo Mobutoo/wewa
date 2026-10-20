@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "date": "2026-10-20",
+  "lot": "hero-lot01",
+  "state": "awaiting_user_review",
+  "art_accepted": false,
+  "full_dossier_modeled": false,
+  "public_game_modified": false,
+  "site_version_unchanged": 3,
+  "review": "../../creative/reviews/hero-lot01/README.md",
+  "editable_source": "../../assets-src/hero-lot01/hero-lot01.blend",
+  "source_list": "../../creative/DOSSIER_ASSET_LIST.md",
+  "dossier_counts": {
+    "source_catalogue_entries": 92,
+    "overlapping_concept_rows": 67,
+    "add_counts": false
+  },
+  "tools": {
+    "blender": "4.3.2 CPU, Cycles64samples, no denoising",
+    "gltf_transform": "4.5.1",
+    "babylon": "9.31.0 / WebGL2",
+    "browser": "Chromium154 software ANGLE/SwiftShader"
+  },
+  "gltf": {
+    "files": [
+      {
+        "file": "assets-src/hero-lot01/exports/motorcycle.glb",
+        "bytes": 964508,
+        "sha256": "ccf724b54bb90f315ad73f56ab53e790149e08f6c9954ce0b9b2097e70d35fe6",
+        "errors": 0,
+        "warnings": 1
+      },
+      {
+        "file": "assets-src/hero-lot01/exports/cargo.glb",
+        "bytes": 3384016,
+        "sha256": "b1ea6f10d84bd46f259321eb07be17d2e6eb53e415da4dfab7250f2c48f2bc08",
+        "errors": 0,
+        "warnings": 0
+      },
+      {
+        "file": "assets-src/hero-lot01/exports/rider.glb",
+        "bytes": 2288976,
+        "sha256": "84883b91af83e94047f74dd07932c9fbfdb0d8eb281507522d72c57c19b63945",
+        "errors": 0,
+        "warnings": 21
+      },
+      {
+        "file": "assets-src/hero-lot01/exports/firstperson.glb",
+        "bytes": 671140,
+        "sha256": "62617c0a38cb12d2894de8b71cf0c1e6c2bb949f285902088af7513c160a223b",
+        "errors": 0,
+        "warnings": 2
+      }
+    ],
+    "errors": 0,
+    "warnings": 24,
+    "warning_scope": "Skinned mesh non-root transforms (parent movement checked); one generated tangent-space warning on motorcycle. Full messages preserved per export."
+  },
+  "geometry": {
+    "schema": 1,
+    "scope": "Actual review GLB geometry measurements; not manufacturer CAD or local/art acceptance",
+    "motorcycle_dimensions_xyz_m": [
+      0.7400729358196259,
+      1.1330000013113022,
+      2.01401486992836
+    ],
+    "manufacturer_reference_width_height_length_m": [
+      0.74,
+      1.134,
+      2.016
+    ],
+    "envelope_tolerance_m": 0.005,
+    "wheelbase_m": 1.284999966621399,
+    "wheelbase_tolerance_m": 0.001,
+    "seated_rig_joints": 53,
+    "joint_positions_glb_xyz_m": {
+      "hand_l": [
+        0.30999997124879686,
+        0.982999731467167,
+        0.23999997772517198
+      ],
+      "hand_r": [
+        -0.3099999806773186,
+        0.9829993424423005,
+        0.24000008177680904
+      ],
+      "foot_l": [
+        0.18000407530314322,
+        0.36498112194318744,
+        -0.04000839455895777
+      ],
+      "foot_r": [
+        -0.18000411303423475,
+        0.3649810845177642,
+        -0.040008569202056365
+      ]
+    },
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "engine": {
+    "report": "../../creative/reviews/hero-lot01/engine-check.json",
+    "page_errors": [],
+    "http_failures": [],
+    "all_textures_loaded": true,
+    "skinned_parent_translation_delta_m": [
+      3,
+      0,
+      0
+    ],
+    "loaded_cargo_variant": true,
+    "firstperson_camera_proposal_only": true
+  },
+  "verification_scope": "Asset-only milestone: source build, glTF validation, independent geometry measurement, engine load and skin-parent movement. No application code changed; prior gameplay test results are not rerun or represented as new tests.",
+  "remaining": [
+    "User review of proportions, posture, materials and equipment",
+    "Shorter soft jacket cut and more detailed optics/bodywork/weathering",
+    "Fine hand grip and steering deformation to refine",
+    "Cargo cords currently encircle carton; final motorcycle anchors pending",
+    "Dynamic driving animations, LOD, KTX2 and colliders",
+    "Real scene/street and geographic reception",
+    "Physical iPhone15/16 Safari performance and play qualification",
+    "Cargo UV edge strips: 80 carton and 48 tape triangles degenerate; main panels and ropes nondegenerate. Consolidation pending."
+  ],
+  "cargo_source_uv_inspection": "../../assets-src/cargo-lot01/uv-inspection.json",
+  "blender_master_portability": {
+    "file_images": 16,
+    "unpacked": [],
+    "report": "../../assets-src/hero-lot01/blend-images.json"
+  },
+  "cargo_blender_portability": {
+    "file_images": 9,
+    "unpacked": [],
+    "report": "../../assets-src/cargo-lot01/blend-images.json"
+  }
+}

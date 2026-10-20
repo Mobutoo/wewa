@@ -5,7 +5,8 @@
     "task_backlog",
     "configs",
     "pilot_glb_cells",
-    "preparation_and_validation_scripts"
+    "preparation_and_validation_scripts",
+    "first_editable_hero_lot_and_dossier_traceability_for_review"
   ],
   "implemented_gameplay": true,
   "browser_build": true,
@@ -51,7 +52,8 @@
     "validation/engine-scenario.json",
     "validation/street-dressing.json",
     "validation/street-kit-runtime.json",
-    "validation/art-collection.json"
+    "validation/art-collection.json",
+    "validation/hero-lot01.json"
   ],
   "deployed_source_commit": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
   "site_project_id": "appgprj_6ad6ac128eb88191942dbc1f4124714b",
@@ -59,12 +61,12 @@
   "physical_qualification": "pending user test on Safari iPhone 15/16",
   "mobile_controls": "single_thumb_analog_joystick_plus_independent_nitro_horn",
   "steering_handedness": "corrected_and_screen_projection_verified",
-  "latest_feedback": "Version 3 rejected again: user requires photographic reference quality, serious asset production and corrected work loop.",
+  "latest_feedback": "User authorizes fabrication of dossier elements and requests concrete models for review; no lot artistically accepted yet.",
   "unit_tests_passed": 33,
   "browser_checks": "Chromium desktop, touch portrait and landscape; diagonal single thumb, independent nitro, down brake, cancellation, held-thumb interruption, camera and run lifecycle",
-  "ewutelo_revision": 12,
+  "ewutelo_revision": 14,
   "full_game_shipped": false,
-  "milestone": "software_engine_and_editable_blender_library",
+  "milestone": "first_hero_fabrication_lot_awaiting_review",
   "production_phase_document": "../../PRODUCTION.md",
   "actual_engine_features": [
     "simulation_owned_directed_traffic",
@@ -91,8 +93,21 @@
     "integrated_new_assets": 0,
     "art_accepted": false,
     "public_preview_unchanged": true,
-    "next_lot": "Motorcycle and rider foreground, then 150–250m reference street",
-    "validation": "art-collection.json"
+    "next_lot": "User review and correction of first motorcycle/rider/equipment lot, then source-referenced street; no art phase completion.",
+    "validation": "art-collection.json",
+    "source_catalogue_entries": 92,
+    "concept_traceability_rows": 67,
+    "counting_rule": "92 source entries and 67 concept rows overlap; not 159 delivered models. Previous 112 families were incomplete.",
+    "fabrication_register": "../../creative/library/fabrication-register.json",
+    "first_lot_review": "../../creative/reviews/hero-lot01/README.md",
+    "first_lot": {
+      "state": "awaiting_user_review",
+      "models": "motorcycle, rigged rider with garments/helmet/backpack, separate first-person arms, cargo variant",
+      "validation": "hero-lot01.json",
+      "inspection_glb_exports": 4,
+      "public_integrations": 0,
+      "art_accepted": false
+    }
   },
-  "authorized_preparatory_work": "Reference and source-asset preparation proceeds without claiming W01/W15 or the art phase accepted."
+  "authorized_preparatory_work": "User explicitly requests fabrication for review. Editable asset work proceeds without claiming physical/geographic prerequisites or art phase accepted."
 }
