@@ -1,0 +1,924 @@
+{
+  "schema": 1,
+  "id": "CHASSIS-RUNNING-18-RESEARCH",
+  "date": "2026-10-20",
+  "scope": {
+    "lot13": "Fork, steering head and mounts",
+    "lot14": "Existing front wheel/brake candidates: compatibility and interfaces",
+    "lot16": "Rear wheel, brake, drive, swingarm and suspension"
+  },
+  "status": "documentary_research_executed_no_models_created",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "sources": [
+    {
+      "id": "D01",
+      "url": "https://www.bajajauto.com/fr-cd/bikes/boxer-125hd",
+      "type": "manufacturer_exact_market",
+      "variant": "Current RDC125HD page selector00JL22; model year/VIN unspecified",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/dimensions-verified/bajaj-boxer125hd-rdc.html",
+        "bytes": 107465,
+        "sha256": "49e6b4b03405f49d22f7c910eb5548bd21a92bc0ae73e2d175ba6f196b068d63",
+        "in_public_repo": false
+      },
+      "read_this_pass": "Visible text and originals00,02,04,06 plus suspension/alloy-wheel detail images",
+      "limitations": [
+        "No dimensioned individual-part drawing",
+        "No measured loaded tyre radius",
+        "Height/width measurement conventions unspecified"
+      ]
+    },
+    {
+      "id": "D04",
+      "url": "https://motobro.ua/files/Boxer_BM_125_UG_Provisional_SPC_%282%29.pdf",
+      "type": "manufacturer_authored_related_catalogue_third_party_mirror",
+      "variant": "BM125UG rev00 mixed standard4gear/UG5gear",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/documentary-workflow/boxer-bm125-ug-spares.pdf",
+        "bytes": 7054568,
+        "sha256": "5228ed1fb3f5ab9ec1503864bf6cccf66bd429ece78adb30516f9904a099372e",
+        "in_public_repo": false
+      },
+      "read_this_pass_sheets": [
+        39,
+        43,
+        44,
+        45,
+        46,
+        47,
+        50,
+        51,
+        56
+      ],
+      "visually_inspected_sheets": [
+        39,
+        43
+      ],
+      "limitations": [
+        "Not current RDC confirmation",
+        "Part illustrations not to scale",
+        "Tyre-with-tube conflicts with current RDC tubeless description",
+        "Quantities4 for one panel and2for one chain are anomalies, not duplication instructions"
+      ]
+    },
+    {
+      "id": "D15",
+      "url": "https://reypiston.com/wp-content/uploads/2024/04/Boxer-BM150-SPC.pdf",
+      "type": "manufacturer_authored_related_catalogue_third_party_mirror",
+      "variant": "BOXER150 document71111461 rev00 MAR12; spoke/alloy and fairing/no-fairing groups separated",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/front-brake-cam/bm150-spares.pdf",
+        "bytes": 5077975,
+        "sha256": "2ccf8194176b00e31d4b210d5ba10cd97182b06aa376e5a0dd79f3a19dfc2f0e",
+        "in_public_repo": false
+      },
+      "read_this_pass_sheets": [
+        35,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        47,
+        48,
+        49,
+        63,
+        64
+      ],
+      "visually_inspected_sheets": [
+        42,
+        44,
+        49
+      ],
+      "limitations": [
+        "BM150 March2012, not125HD RDC current",
+        "Five-cast-spoke variant introduced fromMay2012 in this document",
+        "Parts cannot be merged across spoke/alloy tables silently"
+      ]
+    },
+    {
+      "id": "D02-prior",
+      "url": "https://cdn.globalbajaj.com/en/Brands/Boxer/Boxer-BM125",
+      "type": "manufacturer_related_market_prior_project_read",
+      "read_this_pass": false,
+      "prior_project_evidence": "creative/workflow/RESEARCH.md manufacturer specs row D02",
+      "limitations": [
+        "HTML retrieval previously403; no local primary hash",
+        "130mm drum and125/100mm travel remain related-market data, not exact RDC certification"
+      ]
+    },
+    {
+      "id": "RUN-shock-motozilla",
+      "url": "https://motozilla.com.ua/product/shockabsorber-rear-bajaj-boxer-x-125-ug-pf122028-4-bajaj-123-06154/",
+      "type": "retailer_related_part",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/chassis-running-18/shock-motozilla.html",
+        "bytes": 448677,
+        "sha256": "453df3ac00874a63049663a20b8a74bb5c80547bc51428935d8adb6e0034a6e8",
+        "in_public_repo": false
+      },
+      "limitations": [
+        "Not manufacturer-certified dimensional evidence for current RDC",
+        "Commercial photograph is private documentary reference only"
+      ]
+    },
+    {
+      "id": "RUN-shock-bajajmatriz",
+      "url": "https://bajajmatriz.com/producto/amortiguador-trasero-motocicleta-boxer-150-bajaj",
+      "type": "retailer_related_part",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/chassis-running-18/shock-bajajmatriz.html",
+        "bytes": 82849,
+        "sha256": "47f8c403ff0f28f88bb3c8cbc99acf86778a6a000111b6bd7c1981a582248639",
+        "in_public_repo": false
+      },
+      "limitations": [
+        "Not manufacturer-certified dimensional evidence for current RDC",
+        "Commercial photograph is private documentary reference only"
+      ]
+    },
+    {
+      "id": "RUN-fork-bajajmatriz",
+      "url": "https://bajajmatriz.com/producto/horquilla-suspension-delantera-boxer-150-4-vel-5-vel-ug-bajaj",
+      "type": "retailer_related_part",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/chassis-running-18/fork-bajajmatriz.html",
+        "bytes": 108252,
+        "sha256": "0e4383c3fdb010c5cef4be4fd99e7253dce8213442525094bf74eea3cfe66bd1",
+        "in_public_repo": false
+      },
+      "limitations": [
+        "Not manufacturer-certified dimensional evidence for current RDC",
+        "Commercial photograph is private documentary reference only"
+      ]
+    },
+    {
+      "id": "RUN-endurance",
+      "url": "http://airavatautospares.in/pdf/endurance.pdf",
+      "type": "supplier_cross_reference_pdf_third_party_host",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/chassis-running-18/endurance.pdf",
+        "bytes": 1806252,
+        "sha256": "5d309c850aa2f409ca21f898ee1be1c62a819a14b010fe88150bed962ac01b58",
+        "in_public_repo": false
+      },
+      "limitations": [
+        "Not manufacturer-certified dimensional evidence for current RDC",
+        "Commercial photograph is private documentary reference only"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "RUN-RDC-OVERALL_LENGTH",
+      "property": "overall_length",
+      "value": 2016,
+      "unit": "mm",
+      "source": "D01",
+      "locator": "Visible technical specification panel",
+      "status": "documented_exact_variant",
+      "scope": "Global vehicle reference; height/width conventions not supplied",
+      "adopted_for_exact_RDC": true
+    },
+    {
+      "id": "RUN-RDC-PUBLISHED_WIDTH",
+      "property": "published_width",
+      "value": 740,
+      "unit": "mm",
+      "source": "D01",
+      "locator": "Visible technical specification panel",
+      "status": "documented_exact_variant",
+      "scope": "Global vehicle reference; height/width conventions not supplied",
+      "adopted_for_exact_RDC": true
+    },
+    {
+      "id": "RUN-RDC-PUBLISHED_HEIGHT",
+      "property": "published_height",
+      "value": 1134,
+      "unit": "mm",
+      "source": "D01",
+      "locator": "Visible technical specification panel",
+      "status": "documented_exact_variant",
+      "scope": "Global vehicle reference; height/width conventions not supplied",
+      "adopted_for_exact_RDC": true
+    },
+    {
+      "id": "RUN-RDC-WHEELBASE",
+      "property": "wheelbase",
+      "value": 1285,
+      "unit": "mm",
+      "source": "D01",
+      "locator": "Visible technical specification panel",
+      "status": "documented_exact_variant",
+      "scope": "Global vehicle reference; height/width conventions not supplied",
+      "adopted_for_exact_RDC": true
+    },
+    {
+      "id": "RUN-RDC-TYRES",
+      "property": "front_rear_tyre_designation",
+      "value": [
+        "2.75-17",
+        "3.00-17"
+      ],
+      "unit": null,
+      "source": "D01",
+      "locator": "Freins et pneus",
+      "status": "documented_exact_variant",
+      "scope": "Nominal designations, not actual inflated dimensions",
+      "adopted_for_exact_RDC": true
+    },
+    {
+      "id": "RUN-RDC-WHEELS",
+      "property": "wheel_type",
+      "value": [
+        "17inch alloy wheels",
+        "tubeless tyres"
+      ],
+      "unit": null,
+      "source": "D01",
+      "locator": "Safety feature Jantes en alliage avec pneus tubeless",
+      "status": "documented_exact_variant",
+      "scope": "No tyre supplier or exact rim cross-section known",
+      "adopted_for_exact_RDC": true
+    },
+    {
+      "id": "RUN-RDC-SUSPENSION",
+      "property": "suspension_type",
+      "value": [
+        "front hydraulic telescopic",
+        "rear SNS"
+      ],
+      "unit": null,
+      "source": "D01",
+      "locator": "Véhicule specification panel",
+      "status": "documented_exact_variant",
+      "scope": "No spring rate, installed length, rake or travel given by this exact page",
+      "adopted_for_exact_RDC": true
+    },
+    {
+      "id": "RUN-RDC-FIVE-SPOKES",
+      "property": "visible_cast_spoke_count",
+      "value": 5,
+      "unit": null,
+      "source": "D01",
+      "locator": "00/04/alloy-wheels detail visually inspected",
+      "status": "photo_inferred",
+      "scope": "Visible front and rear cast-wheel design only; part number unconfirmed",
+      "adopted_for_exact_RDC": false,
+      "method": "Direct visual count on current-market manufacturer images",
+      "uncertainty": "Low-definition commercial cutouts; invisible sections unknown"
+    },
+    {
+      "id": "RUN-FORK31",
+      "property": "related_fork_diameter_label",
+      "value": 31,
+      "unit": "mm",
+      "source": "D04",
+      "locator": "PDFsheet51 item2 DJ181087 Seal-OilFor31DiaFork",
+      "status": "documented_related_variant",
+      "scope": "UG5gear component label, not exact current RDC measurement",
+      "adopted_for_exact_RDC": false
+    },
+    {
+      "id": "RUN-FORK31-CROSS",
+      "property": "related_fork_seal_label",
+      "value": 31,
+      "unit": "mm",
+      "source": "D15",
+      "locator": "PDFsheet48 item2A DJ181087 Seal-OilFor31DiaFork",
+      "status": "documented_related_variant",
+      "scope": "Independent related catalogue row; not a second physical measurement",
+      "adopted_for_exact_RDC": false
+    },
+    {
+      "id": "RUN-FRONT-BEARING",
+      "property": "related_spoke_front_bearing_dimensions",
+      "value": [
+        12,
+        37,
+        12
+      ],
+      "unit": "mm",
+      "source": "D15",
+      "locator": "PDFsheet41 item1 39268820",
+      "status": "documented_related_variant",
+      "scope": "BM150 spoke front hub only; not front shaft diameter",
+      "adopted_for_exact_RDC": false
+    },
+    {
+      "id": "RUN-REAR-AXLE",
+      "property": "related_rear_axle_diameter",
+      "value": 15,
+      "unit": "mm",
+      "source": "D15",
+      "locator": "PDFsheet43 item26 PF131208 AxleRearWheel(Dia15)",
+      "status": "documented_related_variant",
+      "scope": "Same PF131208 appears D04rear but current RDC identity remains unconfirmed",
+      "adopted_for_exact_RDC": false
+    },
+    {
+      "id": "RUN-FRONT-RIMWIDTH",
+      "property": "related_BM125UG_front_rim",
+      "value": {
+        "width_in": 1.4,
+        "diameter_in": 17
+      },
+      "unit": null,
+      "source": "D04",
+      "locator": "PDFsheet43 item1 JZ131011",
+      "status": "documented_related_variant",
+      "scope": "Not adopted for current RDC rim cross-section",
+      "adopted_for_exact_RDC": false
+    },
+    {
+      "id": "RUN-REAR-RIMWIDTH",
+      "property": "related_BM125UG_rear_rim",
+      "value": {
+        "width_in": 1.6,
+        "diameter_in": 17
+      },
+      "unit": null,
+      "source": "D04",
+      "locator": "PDFsheet43 item2 JZ131213",
+      "status": "documented_related_variant",
+      "scope": "Not adopted for current RDC rim cross-section",
+      "adopted_for_exact_RDC": false
+    },
+    {
+      "id": "RUN-DRIVE-KIT",
+      "property": "related_chain_sprocket_kit",
+      "value": {
+        "kit": "36PF0010",
+        "rear_teeth": 42,
+        "front_teeth": 14,
+        "chain_links": 122
+      },
+      "unit": null,
+      "source": "D15",
+      "locator": "PDFsheet64 kit14 DX151023/JZ551004/JV141004",
+      "status": "documented_related_variant",
+      "scope": "Related BM150 kit; pitch, current125HD teeth and chain length unconfirmed",
+      "adopted_for_exact_RDC": false
+    },
+    {
+      "id": "RUN-BRAKE130",
+      "property": "related_brake_drum_working_diameter",
+      "value": 130,
+      "unit": "mm",
+      "source": "D02-prior",
+      "locator": "Prior project research specification row",
+      "status": "documented_related_variant",
+      "scope": "Brake friction diameter, not external hub/flange diameter",
+      "adopted_for_exact_RDC": false
+    },
+    {
+      "id": "RUN-TRAVEL",
+      "property": "related_suspension_travel",
+      "value": {
+        "front": 125,
+        "rear": 100
+      },
+      "unit": "mm",
+      "source": "D02-prior",
+      "locator": "Prior project research specification row",
+      "status": "documented_related_variant",
+      "scope": "Travel, not installed fork or eye-to-eye damper length",
+      "adopted_for_exact_RDC": false
+    }
+  ],
+  "front_compatibility_matrix": [
+    {
+      "group": "D04 BM125 standard",
+      "wheel": "DM151320 FiveSpoke",
+      "panel": "DZ151027",
+      "lever": "DD151008",
+      "cam": "31151011",
+      "axle": "DZ151012",
+      "bearing": "KPBB6202",
+      "locators": [
+        "D04sheet43",
+        "D04sheet44"
+      ],
+      "current_RDC_confirmed": false
+    },
+    {
+      "group": "D04 BM125UG5gear",
+      "wheel": "JZ131011 1.40x17Drum; cast5branch illustration",
+      "panel": "JA131605",
+      "lever": "JA131607",
+      "cam": "30151004",
+      "axle": "DJ151041",
+      "bearing": "KPBB6202",
+      "locators": [
+        "D04sheet43",
+        "D04sheet44"
+      ],
+      "current_RDC_confirmed": false
+    },
+    {
+      "group": "D15 BM150 spoke",
+      "wheel": "DS151003 1.6x17 spoke rim",
+      "panel": "JA131605",
+      "lever": "JA131607",
+      "cam": "30151011",
+      "axle": "DJ151081 alternate DJ151041",
+      "bearing": "39268820 12x37x12",
+      "locators": [
+        "D15sheet39",
+        "D15sheet41"
+      ],
+      "current_RDC_confirmed": false
+    },
+    {
+      "group": "D15 BM150 alloy",
+      "wheel": "DS1510806spoke / PF1310125spoke fromMay2012",
+      "panel": "DS151087",
+      "lever": "DS151092",
+      "cam": "DS151089",
+      "axle": "JB131017",
+      "bearing": "39268820",
+      "locators": [
+        "D15sheet40",
+        "D15sheet42"
+      ],
+      "current_RDC_confirmed": false
+    }
+  ],
+  "rear_compatibility_matrix": [
+    {
+      "group": "D04 BM125UG5gear",
+      "wheel": "JZ1312131.60x17Drum",
+      "panel": "DS151069",
+      "lever": "JW131601",
+      "cam": "30151011",
+      "axle": "PF131208",
+      "drive": "36PF0010 kit; JV141004122links",
+      "locators": [
+        "D04sheet43",
+        "D04sheet46"
+      ],
+      "current_RDC_confirmed": false
+    },
+    {
+      "group": "D15 BM150 spoke",
+      "wheel": "DS1510342.15x17 spoke",
+      "panel": "DS151076",
+      "lever": "JW131601",
+      "cam": "30151011",
+      "axle": "PF131208Dia15",
+      "locators": [
+        "D15sheet39",
+        "D15sheet43"
+      ],
+      "current_RDC_confirmed": false
+    },
+    {
+      "group": "D15 BM150 alloy",
+      "wheel": "DH1510576spoke / PF1312225spoke fromMay2012",
+      "panel": "DJ151092",
+      "lever": "JZ131803",
+      "cam": "30151011",
+      "axle": "PF131208",
+      "locators": [
+        "D15sheet40",
+        "D15sheet44"
+      ],
+      "current_RDC_confirmed": false
+    }
+  ],
+  "important_compatibility_conclusions": [
+    "D15 assigns JA panel/lever to its spoke group and DS to its alloy group, but D04BM125UG shows a cast-five-branch wheel and cites JA parts; JA therefore is not universally incompatible with alloy wheels.",
+    "Neither catalogue certifies the current RDC125HD part identity; do not automatically replace candidate JA with DS or certify JA assembly.",
+    "A no-crossing BVH test on estimated geometry proves local geometric clearance only, not OEM fit, shaft/bearing dimensions, brake operation or seal.",
+    "D04 wheel/tyre descriptions include tubes whereas D01 current-market page says tubeless. Keep current-market tubeless target; do not introduce an inner tube because an older catalogue contains it.",
+    "D15 BM150spoke rear tyre100/90-17 and rim2.15in do not replace D01 RDC3.00-17 rear tyre or establish its rim width.",
+    "Spoke/alloy,125/150,4/5gear, fairing/no-fairing and regional revisions must remain separate."
+  ],
+  "lots": {
+    "13": {
+      "documented_related_parts": {
+        "fork_UG": "PF121026",
+        "inner_tube": "PF121017",
+        "outer_left": "PF121018",
+        "outer_right": "PF121019",
+        "upper_bracket": "DS181005",
+        "lower_holder": "DS181020",
+        "seal": "DJ18108731dia",
+        "steering_bearing_kit_related": "36314001"
+      },
+      "reference_observations": [
+        "RDC views00/02/04 show black accordion bellows and silver lower legs",
+        "PF121026 isolated photograph shows bare chrome stanchions, lower black yoke/steering stem and silver lower legs, without current bellows/headlamp covers",
+        "RDC headlamp/covers hide upper mount details; do not copy a2012 uncovered fork as a complete current assembly"
+      ],
+      "still_unknown": [
+        "Exact current fork assembly and bellows references",
+        "Inner/outer tube lengths, outer leg diameter/section and axle lug offset",
+        "Fork spacing, rake, trail, steering stem length and yoke offset",
+        "Installed compression and steering/suspension clearances"
+      ],
+      "fabrication_preparation": "Build individual fork tubes/legs/yokes/bellows only with explicit source and working estimates;31mm is a related-part datum, not a verified RDC measurement."
+    },
+    "14": {
+      "existing_candidates_scope": "Pneu/jante/flasque/levier/came or future wheel candidates remain individually unaccepted; this report does not alter their geometry",
+      "interface_checks_needed": [
+        "Resolve selected variant/part group before mechanical receipt",
+        "Measure bearing seats, axle and inner collars separately; do not infer shaft diameter solely from bearing designation",
+        "Compare flange stop/cam/cable orientation against actual fork lug/anchor",
+        "Confirm rim bead width, sealing section, valve and tyre bead contacts",
+        "Check brake shoe/drum friction diameter independently of exterior housing",
+        "Maintain source-versus-export scale, normals, face materials and moving pivots"
+      ],
+      "model_clearance_does_not_certify_fit": true
+    },
+    "16": {
+      "documented_related_parts": {
+        "swingarm_D04": "PF122030",
+        "swingarm_axis": "JA121003",
+        "chain_adjuster_LH": "DJ151036",
+        "chain_adjuster_RH": "DJ151037",
+        "rear_shock_standard": "PF122004",
+        "rear_shock_UG_D04": "PF122028",
+        "rear_shock_D15": "PF122005; DZ191016 Philippines",
+        "rear_shock_supplier_new": "PF122033 crosslisted PF122028 by retailer, not approved supersession",
+        "rear_axle": "PF131208",
+        "brake_pedal": "PF161002",
+        "brake_rod": "PF161001",
+        "torque_reaction_rod": "JW122004",
+        "chain_case_kit": "36PF0011"
+      },
+      "reference_observations": [
+        "RDC rear view06 confirms two shock absorbers; current photos show orange/black springs",
+        "PF122033 related retail photograph reveals two concentric springs per shock, orange inner and black outer, eye mounts and bush sleeves",
+        "D04 swingarm illustration shows twin box-section arms, cross brace, shock lugs, pivot tube, axle slots and separate threaded left/right chain adjusters",
+        "RDC view04 shows a long enclosed left-side silver chain case; right-side exhaust hides some rear-brake linkage",
+        "D15 rear alloy illustration shows separate drive coupling/rubber damper and brake plate; avoid fusing all as one decorative hub"
+      ],
+      "still_unknown": [
+        "Current rear rim/axle/brake group and drum exterior geometry",
+        "Damper eye-to-eye length, bush widths/bores, spring wire/coil diameters and installed sag",
+        "Swingarm pivot-to-axle length, section thickness, pivot width and real axle-adjuster range",
+        "Current chain pitch/link count, actual sprocket teeth, centreline and chain enclosure sections",
+        "Brake rod/cam/torque rod lengths and installed angular offsets"
+      ],
+      "rejected_dimensional_claims": [
+        {
+          "claim": "PF122028340mmlength,63mmdiameter,bushes12/10mm",
+          "status": "search_excerpt_only_not_adopted",
+          "source": "https://www.moto.com.ua/shop/id-51263/",
+          "reason": "Full page403; length convention(eye-to-eye versus overall) not specified, no ruler measurement; not current RDC certification"
+        }
+      ]
+    }
+  },
+  "global_assembly_guides": {
+    "units": "metres",
+    "exact_market_constraints": {
+      "wheelbase": 1.285,
+      "nominal_bead_seat_diameter_17in": 0.4318,
+      "published_overall_LWH": [
+        2.016,
+        0.74,
+        1.134
+      ]
+    },
+    "not_exact_market_constraints": [
+      "Actual inflated or loaded tyre radius",
+      "Seat height",
+      "Height including mirrors",
+      "Fork rake/trail/offset and suspension installed lengths",
+      "Steering/swingarm pivot coordinates"
+    ],
+    "existing_front_component_axis_convention": "X axle, Y longitudinal, Z up; positiveYtowardsrear is compatible with existing isolated wheel candidates",
+    "cockpit_root_proposal_from_parent": {
+      "front_axle_xyz_m": [
+        0,
+        -0.42,
+        -0.74
+      ],
+      "rear_axle_xyz_m": [
+        0,
+        0.865,
+        -0.74
+      ],
+      "longitudinal_separation_m": 1.285,
+      "status": "Provisional assembly guides derived from photo00 wheel centres and estimated bar-clamp origin, not manufactured coordinates",
+      "photo00_proposed_landmarks_px": {
+        "front_axle": [
+          797,
+          494
+        ],
+        "rear_axle": [
+          270,
+          494
+        ],
+        "bar_clamp": [
+          625,
+          190
+        ]
+      },
+      "annotation_uncertainty_px": {
+        "axles": 5,
+        "bar_clamp": 10
+      },
+      "camera_calibrated": false,
+      "actual_tyre_radius_fixed": false
+    },
+    "height_warning": "Do not scale the mirror-to-ground silhouette to1134mm. Published height convention is unspecified; mirror extremities are not a verified height datum.",
+    "rim_warning": "431.8mm is nominal17in bead-seat diameter, not tyre outside diameter or rim lip diameter.",
+    "suspension_warning": "125/100mm related travel does not specify fork overall length or damper eye-to-eye spacing."
+  },
+  "photos": [
+    {
+      "id": "rotation-00.png",
+      "source": "D01",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/00.png",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/dimensions-verified/rotation-00.png",
+        "bytes": 54230,
+        "sha256": "82be9285506c65dd8ff3fdba000fe963587548e306691844ed774f685870ea40",
+        "in_public_repo": false
+      },
+      "resolution_px": [
+        1000,
+        700
+      ],
+      "camera_calibrated": false,
+      "status": "exact_market_reference_not_metrology"
+    },
+    {
+      "id": "rotation-02.png",
+      "source": "D01",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/02.png",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/dimensions-verified/rotation-02.png",
+        "bytes": 114720,
+        "sha256": "eed85a43c40a6fcb4785ad4d24a5c0881e14fbde21d4663f2ae51e742095c93d",
+        "in_public_repo": false
+      },
+      "resolution_px": [
+        1000,
+        700
+      ],
+      "camera_calibrated": false,
+      "status": "exact_market_reference_not_metrology"
+    },
+    {
+      "id": "rotation-04.png",
+      "source": "D01",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/04.png",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/dimensions-verified/rotation-04.png",
+        "bytes": 54668,
+        "sha256": "b086dedb4a2bcbc2644aab9578a3d1efa7445e163459b444b3687047bf2e8e02",
+        "in_public_repo": false
+      },
+      "resolution_px": [
+        1000,
+        700
+      ],
+      "camera_calibrated": false,
+      "status": "exact_market_reference_not_metrology"
+    },
+    {
+      "id": "rotation-06.png",
+      "source": "D01",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/06.png",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/dimensions-verified/rotation-06.png",
+        "bytes": 123126,
+        "sha256": "60a01cd517728f6d3d4f61a3975fe610488f7b489098c20cae381b9768093362",
+        "in_public_repo": false
+      },
+      "resolution_px": [
+        1000,
+        700
+      ],
+      "camera_calibrated": false,
+      "status": "exact_market_reference_not_metrology"
+    },
+    {
+      "id": "suspension.webp",
+      "source": "D01",
+      "url": "https://cdn.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/features/boxer/125-hd/suspension.webp",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/dimensions-verified/suspension.webp",
+        "bytes": 97648,
+        "sha256": "cebd8313b14be6dd254cf64aa55bc2a32c64f1198dc09fa23284cd88e19646e2",
+        "in_public_repo": false
+      },
+      "resolution_px": [
+        1000,
+        600
+      ],
+      "camera_calibrated": false,
+      "status": "exact_market_reference_not_metrology"
+    },
+    {
+      "id": "alloy-wheels.webp",
+      "source": "D01",
+      "url": "https://cdn.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/features/boxer/125-hd/alloy-wheels.webp",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/dimensions-verified/alloy-wheels.webp",
+        "bytes": 69724,
+        "sha256": "9bb3edac033043803f39a0b8111e11bf19f44ef11c50f6b14f4f6caac2ad526b",
+        "in_public_repo": false
+      },
+      "resolution_px": [
+        1000,
+        600
+      ],
+      "camera_calibrated": false,
+      "status": "exact_market_reference_not_metrology"
+    },
+    {
+      "id": "shock-motozilla-1.jpg",
+      "source": "RUN-shock-motozilla",
+      "url": "https://motozilla.com.ua/wa-data/public/shop/products/42/31/303142/images/917687/917687.970.jpg",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/chassis-running-18/shock-motozilla-1.jpg",
+        "bytes": 114844,
+        "sha256": "15c78fde461dd2994a5248c9fc182aba055ceb18d365cf3a5d865b494fa2fe36",
+        "in_public_repo": false
+      },
+      "resolution_px": [
+        970,
+        970
+      ],
+      "camera_calibrated": false,
+      "status": "related_catalogue_diagram_not_surface_photo"
+    },
+    {
+      "id": "shock-motozilla-2.jpg",
+      "source": "RUN-shock-motozilla",
+      "url": "https://motozilla.com.ua/wa-data/public/shop/products/42/31/303142/images/917688/917688.970.jpg",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/chassis-running-18/shock-motozilla-2.jpg",
+        "bytes": 71243,
+        "sha256": "a5d0f578e394a0a72f6507e6cdc5bacc407b102bd6e3512687ce4018a6fc4dc5",
+        "in_public_repo": false
+      },
+      "resolution_px": [
+        743,
+        743
+      ],
+      "camera_calibrated": false,
+      "status": "related_catalogue_diagram_not_surface_photo"
+    },
+    {
+      "id": "shock-PF122033.jpg",
+      "source": "RUN-shock-bajajmatriz",
+      "url": "https://bajajmatriz.com/wp-content/uploads/2024/12/PF122033.jpg",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/chassis-running-18/shock-PF122033.jpg",
+        "bytes": 140631,
+        "sha256": "f0d9264f47a35d89ddd1ef4139cd4858c5e55c1baf86937fbab3cbd97d45b5f8",
+        "in_public_repo": false
+      },
+      "resolution_px": [
+        1210,
+        1210
+      ],
+      "camera_calibrated": false,
+      "status": "related_part_photo"
+    },
+    {
+      "id": "fork-PF121026.jpg",
+      "source": "RUN-fork-bajajmatriz",
+      "url": "https://bajajmatriz.com/wp-content/uploads/2025/06/PF121026.jpg",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/chassis-running-18/fork-PF121026.jpg",
+        "bytes": 58454,
+        "sha256": "1f1f3ac890204fdca00b432e8bd2c9df7234c3916047f5fdbfef6b7dd7422853",
+        "in_public_repo": false
+      },
+      "resolution_px": [
+        1210,
+        1210
+      ],
+      "camera_calibrated": false,
+      "status": "related_part_photo"
+    }
+  ],
+  "searches": [
+    {
+      "query": "\"PF122028\" shock length",
+      "url": "https://html.duckduckgo.com/html/?q=%22PF122028%22%20shock%20length",
+      "archive": "/workspace/wewa-assets/references/chassis-running-18/search-0548224ea1be.html",
+      "sha256": "c03abdab571a780b06eaa07cfcb8fd00056437db0611d23c3f600630d17991ff",
+      "response_status": "results"
+    },
+    {
+      "query": "\"PF122004\" shock absorber",
+      "url": "https://html.duckduckgo.com/html/?q=%22PF122004%22%20shock%20absorber",
+      "archive": "/workspace/wewa-assets/references/chassis-running-18/search-3270dbfacb10.html",
+      "sha256": "e8ae56d83d88c8c37811563d5ff952474e44799442252c6831648aed46c1ba9a",
+      "response_status": "results"
+    },
+    {
+      "query": "\"PF121026\" fork",
+      "url": "https://html.duckduckgo.com/html/?q=%22PF121026%22%20fork",
+      "archive": "/workspace/wewa-assets/references/chassis-running-18/search-bf13ad2bad25.html",
+      "sha256": "e36476fb4f3265cbb2219909f58f11851caa89f3c10b807c610a0d5afc20303b",
+      "response_status": "results"
+    },
+    {
+      "query": "\"PF121018\" fork",
+      "url": "https://html.duckduckgo.com/html/?q=%22PF121018%22%20fork",
+      "archive": "/workspace/wewa-assets/references/chassis-running-18/search-c906649083b6.html",
+      "sha256": "85ed57c219ad51578c3f9a760de4ec870936d223cdc70fa9c0dabdade6cd8ec9",
+      "response_status": "results"
+    },
+    {
+      "query": "\"JZ131213\" wheel",
+      "url": "https://html.duckduckgo.com/html/?q=%22JZ131213%22%20wheel",
+      "archive": "/workspace/wewa-assets/references/chassis-running-18/search-cfe22a564f82.html",
+      "sha256": "5e4eeb4f598041dc173020dd3d2b8f6a91e1eef6ee1334403151e8f8a5fa1408",
+      "response_status": "results"
+    },
+    {
+      "query": "\"Boxer 125 HD\" \"rear shock\" length",
+      "url": "https://html.duckduckgo.com/html/?q=%22Boxer%20125%20HD%22%20%22rear%20shock%22%20length",
+      "archive": "/workspace/wewa-assets/references/chassis-running-18/search-211573da23e2.html",
+      "sha256": "81c0d7dd1362400767ee04a2ee51bd7774c27eb678f69ab0d6f2aa6a74d50844",
+      "response_status": "bot_challenge"
+    },
+    {
+      "query": "\"DS151087\" panel brake",
+      "url": "https://html.duckduckgo.com/html/?q=%22DS151087%22%20panel%20brake",
+      "archive": "/workspace/wewa-assets/references/chassis-running-18/search-ee23ac675431.html",
+      "sha256": "0312fc37477d526a0b727964b0eca4370ccab11f71f144a0b6617597b309665f",
+      "response_status": "bot_challenge"
+    },
+    {
+      "query": "\"Boxer 125\" \"fork\" \"31\"",
+      "url": "https://html.duckduckgo.com/html/?q=%22Boxer%20125%22%20%22fork%22%20%2231%22",
+      "archive": "/workspace/wewa-assets/references/chassis-running-18/search-914f0da6e68c.html",
+      "sha256": "6917f9c3cdf6fc955aaba558cd85bf944e81dd8e79fe182485cbc77f15f92bde",
+      "response_status": "no_results"
+    },
+    {
+      "query": "\"JV141004\" \"428\"",
+      "url": "https://html.duckduckgo.com/html/?q=%22JV141004%22%20%22428%22",
+      "archive": "/workspace/wewa-assets/references/chassis-running-18/search-ae6008f39016.html",
+      "sha256": "7dfebaf4fd9f2150f542f5d3bf9f18cf5eda59497f7d7618bd9be286c0a458ad",
+      "response_status": "bot_challenge"
+    },
+    {
+      "query": "\"PF122028\" \"340\"",
+      "url": "https://html.duckduckgo.com/html/?q=%22PF122028%22%20%22340%22",
+      "archive": "/workspace/wewa-assets/references/chassis-running-18/search-16b8ff059ab8.html",
+      "sha256": "29af42fe6d36875dda42ec4bc896454ded02a1b794a426d65bae445234d6370c",
+      "response_status": "bot_challenge"
+    },
+    {
+      "query": "\"PF122033\" \"mm\"",
+      "url": "https://html.duckduckgo.com/html/?q=%22PF122033%22%20%22mm%22",
+      "archive": "/workspace/wewa-assets/references/chassis-running-18/search-c5a26429153b.html",
+      "sha256": "45b8376fbc583603ba18f79eb75dd41dc3d688830bc201bf88bbcc64fc130198",
+      "response_status": "bot_challenge"
+    },
+    {
+      "query": "\"PF121017\" length",
+      "url": "https://html.duckduckgo.com/html/?q=%22PF121017%22%20length",
+      "archive": "/workspace/wewa-assets/references/chassis-running-18/search-3d7bc7d10d53.html",
+      "sha256": "41c86950292f68e6fa05e5c269f6a349204bb589f7ec46a4b07ba47075f4dab3",
+      "response_status": "bot_challenge"
+    },
+    {
+      "query": "\"Boxer 125 HD\" \"suspension\" \"125\"",
+      "url": "https://html.duckduckgo.com/html/?q=%22Boxer%20125%20HD%22%20%22suspension%22%20%22125%22",
+      "archive": "/workspace/wewa-assets/references/chassis-running-18/search-2713451fa318.html",
+      "sha256": "8078d739b6d87d13034902787c8634bb78282ced73eb9195fa544cc55fa28d8e",
+      "response_status": "bot_challenge"
+    }
+  ],
+  "access_failures": [
+    {
+      "url": "https://www.moto.com.ua/shop/id-51263/",
+      "error": "HTTP Error 403: Forbidden",
+      "counted_as_read": false
+    },
+    {
+      "url": "https://seahawktechnologies.com/product-detail/pipe-left-fork-outer-2407054426-783",
+      "error": "HTTP Error 503: Service Unavailable",
+      "counted_as_read": false
+    },
+    {
+      "url": "https://motokvartal.com.ua/wheel_rear_1.60x17_drum_jz131213/",
+      "error": "HTTP Error 403: Forbidden",
+      "counted_as_read": false
+    }
+  ],
+  "rights": "All images/PDFs documentary only; no manufacturer or commercial photo pixels imported as textures or publicly redistributed. New private photographs are not original project artwork.",
+  "geometry_created": false,
+  "exact_part_measurements_acquired": false,
+  "camera_calibrated": false,
+  "art_accepted": false,
+  "next_action": "Use variant matrices and actual current-market silhouettes to prepare separate component candidates; keep estimated dimensions explicit. Resolve fork/axle/brake and rear suspension dimensions before receiving interfaces or calling the motorcycle faithful."
+}

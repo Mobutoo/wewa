@@ -1,0 +1,199 @@
+{
+  "schema": 1,
+  "id": "MOTO-INSTRUMENT-BRACKET-001",
+  "label": "Support des compteurs — pièce isolée",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01",
+    "D04",
+    "D13",
+    "D15"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "front-quarter",
+      "camera_location_m": [
+        0.1,
+        -0.16,
+        0.3
+      ],
+      "camera_target_m": [
+        0,
+        -0.05,
+        0
+      ],
+      "lens_mm": 50
+    },
+    {
+      "name": "reverse-quarter",
+      "camera_location_m": [
+        -0.13,
+        -0.16,
+        -0.3
+      ],
+      "camera_target_m": [
+        0,
+        -0.05,
+        0
+      ],
+      "lens_mm": 50
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "METER-BRACKET-FIT",
+      "description": "No measured thickness/sections or certified fit to current RDC USB cluster",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched rear/side measured reference and installed views"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "pending",
+      "revision": "instrument-bracket-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "instrument-bracket-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "instrument-bracket-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "instrument-bracket-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/instrument-bracket/instrument-bracket-v1.blend",
+          "kind": "editable_source",
+          "revision": "instrument-bracket-v1",
+          "sha256": "86891d5bbf7e2a0833a74595c949132535995ae8361344065926f562060c75f5"
+        },
+        {
+          "path": "../../reviews/instrument-bracket-v1/front-quarter.png",
+          "kind": "isolated_comparison",
+          "revision": "instrument-bracket-v1",
+          "sha256": "826d81debe1108b650b2796c33799bc5f84bbf00b94f1a43172ee021b5538c6c"
+        }
+      ],
+      "reason": "Photo audit identifies too narrow/tapered lower rib; separate v2 correction requested. Existing v1 remains an isolated unaccepted candidate; installed fit unresolved.",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "instrument-bracket-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/instrument-bracket-v1/reverse-quarter.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "instrument-bracket-v1",
+          "sha256": "434bf4570ca3e7c4939c4ecbed03612f5e0cf35878c0b6a1dfc6c38534181bd3"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "instrument-bracket-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/instrument-bracket-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "instrument-bracket-v1",
+          "sha256": "447929751e546ff12fc5081c9a733e18bd310214f0a87fc8052bbd400308e664"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "instrument-bracket-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/instrument-bracket-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "instrument-bracket-v1",
+          "sha256": "9887c384d4a778f54e653d616d4bed63f4b0be9810edfc08efc825ae1eab2341"
+        },
+        {
+          "path": "../../reviews/instrument-bracket-v1/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "instrument-bracket-v1",
+          "sha256": "8cb1f513769dd3cf2cc8e775eaac4c0afcb6b60b54543580ad16cf0a29b0acaa"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "instrument-bracket-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "instrument-bracket-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "instrument-bracket-v1",
+  "export_revision": "instrument-bracket-v1-inspection",
+  "next_action": "Photo audit identifies too narrow/tapered lower rib; separate v2 correction requested. Existing v1 remains an isolated unaccepted candidate; installed fit unresolved.",
+  "art_accepted": false,
+  "production_group": 2,
+  "candidate_source": "../../../assets-src/moto-components/instrument-bracket/README.md",
+  "candidate_review": "../../reviews/instrument-bracket-v1/README.md"
+}

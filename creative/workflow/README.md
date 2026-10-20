@@ -77,3 +77,11 @@ Pour les matières, contrôler les pixels et canaux des textures réellement emb
 ## Reprise parallèle du poste de conduite
 
 L’utilisateur demande explicitement de paralléliser, puis donne la priorité au guidon et aux compteurs pour sa vue embarquée. Les [trois candidats réunis pour revue](../reviews/cockpit-v1/README.md) restent distincts ; leurs sources sont liées, leurs volumes/exports contrôlés et les aiguilles manipulées dans Babylon.js. Les sources officielles du cockpit ont été retrouvées avant la construction. Les recherches séparées sur [l’axe](../research/front-axle-v2/README.md) et [la came](../research/front-brake-cam/README.md) restent de la documentation, pas des pièces fabriquées. La matrice de variantes de frein interdit de déclarer le flasque/levier JA déjà compatibles avec la jante moulée sans confirmation RDC.
+
+## GO des18lots
+
+L’utilisateur autorise la séquence complète du [plan détaillé](motorcycle-execution-18.json). La limite reste trois composants détaillés simultanés, avec recherche indépendante des lots suivants. Cette autorisation étend le périmètre de travail ; elle ne réceptionne aucun ancien candidat. Les groupes composites sont décomposés avant fabrication, les interfaces communes n’ont qu’un propriétaire et les sources historiques manifestées restent immuables.
+
+Le contrôle des corps CSG lit aussi l’aire des triangles dans l’export : une fermeture et un volume positifs peuvent masquer des milliers de triangles dégénérés issus d’un congé. Corriger ces coutures dans la source, comparer les sommets et la surface, puis refaire fermeture, ouvertures et interfaces avant de rendre. Sur les pontets, ce nettoyage a supprimé les réparations de tangentes précédemment expérimentées. Les tangentes inutilisées d’une primitive sans carte normale peuvent être retirées de l’export avec preuve d’invariance des autres buffers ; cela ne prouve pas la fidélité des matériaux.
+
+La revue de forme exige un cadrage entier de la pièce. Une inspection très rapprochée reste un complément. L’inspecteur v2 conserve un champ vertical fixe pour les écrans en paysage ; les anciens outils et leurs preuves restent versionnés séparément.

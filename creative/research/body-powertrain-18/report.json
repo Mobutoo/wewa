@@ -1,0 +1,1460 @@
+{
+  "schema": "viva-wewa.body-powertrain-research.v1",
+  "date": "2026-10-20",
+  "scope_lots": [
+    15,
+    17,
+    18
+  ],
+  "work_type": "documentary_research_only",
+  "reference": "Bajaj Boxer125HD RDC current product view; year not established",
+  "game_brand": "WEWA on future original tank graphics; manufacturer markings documentary only",
+  "owner_files": [
+    "report.json",
+    "README.md",
+    "archives.json"
+  ],
+  "private_archive_root": "/workspace/wewa-assets/references/body-powertrain-18",
+  "instructions_read": [
+    "AGENTS.md",
+    "creative/COMPONENT_WORKFLOW.md",
+    "creative/workflow/README.md",
+    "creative/workflow/RECIPES.md vehicle/material",
+    "creative/workflow/RESEARCH.md",
+    "creative/workflow/motorcycle-assembly.json",
+    "creative/workflow/sources.json"
+  ],
+  "state": {
+    "G0": "decomposition_prepared",
+    "G1": "partial_critical_metric_gaps_remain",
+    "G2_to_G8": "not_started",
+    "models_created": false,
+    "artistic_acceptance": false
+  },
+  "sources": [
+    {
+      "id": "D01",
+      "url": "https://www.bajajauto.com/fr-cd/bikes/boxer-125hd",
+      "kind": "manufacturer_exact_market_current_page_archived",
+      "variant": "Boxer125HD RDC; millésime non déterminé",
+      "read": "Texte technique déjà archivé relu; huit rotations et trois gros plans réellement examinés ici",
+      "rights": "Documentaire privé uniquement; pas texture ni redistribution publique établie"
+    },
+    {
+      "id": "D04",
+      "url": "https://motobro.ua/files/Boxer_BM_125_UG_Provisional_SPC_%282%29.pdf",
+      "kind": "manufacturer_catalogue_third_party_mirror",
+      "variant": "BM125 UG rev00, tables4/5gear, millésime et compatibilité RDC actuels inconnus",
+      "read": "Tables pertinentes et éclatés indiqués par composant; PDF sheets numérotées depuis1, pas pages imprimées",
+      "rights": "Documentaire privé uniquement"
+    },
+    {
+      "id": "D15",
+      "url": "https://reypiston.com/wp-content/uploads/2024/04/Boxer-BM150-SPC.pdf",
+      "kind": "manufacturer_related_variant_third_party_mirror",
+      "variant": "BM150 document71111461 rev00 MAR12; pas125RDC actuelle",
+      "read": "Tables comparatives pertinentes, illustrations effectivement vues aux feuilles28,32,34,37,51",
+      "rights": "Documentaire privé uniquement"
+    },
+    {
+      "id": "N01",
+      "url": "https://www.croslandrepuestos.pe/asiento-de-boxer-lineas-jv191001/p",
+      "kind": "distributor_related_part",
+      "variant": "JV191001 annoncé BM125/BM150, marché péruvien; carrosserie/housse RDC non certifiées",
+      "read": "Page et trois photos plein format (dessous, dos/dessus et dessus) effectivement vus",
+      "rights": "Photos privées documentaire uniquement, auteur/capture non établis"
+    },
+    {
+      "id": "N02",
+      "url": "https://bajajmatriz.com/producto/asiento-completo-moto-boxer-150-ug-bajaj",
+      "kind": "retailer_related_part",
+      "variant": "JV191001 annoncé Boxer150UG, marché vendeur hispanophone",
+      "read": "Page et photo3/4 selle sur boîte effectivement vus; pas dessous dans cette source",
+      "rights": "Documentaire privé uniquement"
+    },
+    {
+      "id": "N03",
+      "url": "https://partonwheels.com/product/kit-silencer-without-shield-for-boxer-bm-150-bajaj/",
+      "kind": "retailer_related_part",
+      "variant": "36PF0025 annoncé BM1502011–2013",
+      "read": "Page SKU et deux photos isolées effectivement examinées; photos insuffisantes pour une même géométrie RDC",
+      "rights": "Documentaire privé uniquement"
+    }
+  ],
+  "actual_views": [
+    {
+      "id": "R00",
+      "file": "rotation-00.png",
+      "direction": "profil droit",
+      "status": "visually_inspected",
+      "calibrated": false
+    },
+    {
+      "id": "R01",
+      "file": "rotation-01.png",
+      "direction": "trois quarts avant droit",
+      "status": "visually_inspected",
+      "calibrated": false
+    },
+    {
+      "id": "R02",
+      "file": "rotation-02.png",
+      "direction": "face avant",
+      "status": "visually_inspected",
+      "calibrated": false
+    },
+    {
+      "id": "R03",
+      "file": "rotation-03.png",
+      "direction": "trois quarts avant gauche",
+      "status": "visually_inspected",
+      "calibrated": false
+    },
+    {
+      "id": "R04",
+      "file": "rotation-04.png",
+      "direction": "profil gauche",
+      "status": "visually_inspected",
+      "calibrated": false
+    },
+    {
+      "id": "R05",
+      "file": "rotation-05.png",
+      "direction": "trois quarts arrière gauche",
+      "status": "visually_inspected",
+      "calibrated": false
+    },
+    {
+      "id": "R06",
+      "file": "rotation-06.png",
+      "direction": "arrière",
+      "status": "visually_inspected",
+      "calibrated": false
+    },
+    {
+      "id": "R07",
+      "file": "rotation-07.png",
+      "direction": "trois quarts arrière droit",
+      "status": "visually_inspected",
+      "calibrated": false
+    },
+    {
+      "id": "engine",
+      "file": "engine.webp",
+      "direction": "gros plan droit moteur/carter, oblique",
+      "status": "visually_inspected",
+      "calibrated": false
+    },
+    {
+      "id": "strong-chasis",
+      "file": "strong-chasis.webp",
+      "direction": "gros plan droit protection moteur et attaches",
+      "status": "visually_inspected",
+      "calibrated": false
+    },
+    {
+      "id": "wider-seat",
+      "file": "wider-seat.webp",
+      "direction": "profil droit arrière selle/sous-cadre/cache",
+      "status": "visually_inspected",
+      "calibrated": false
+    }
+  ],
+  "dimension_claims": [
+    {
+      "id": "DIM01",
+      "property": "gabarit hors tout",
+      "value": [
+        2016,
+        740,
+        1134
+      ],
+      "unit": "mm",
+      "order": "longueur,largeur,hauteur",
+      "object": "Boxer125HD RDC entière",
+      "source": "D01 specifications",
+      "status": "documented_exact_variant",
+      "not_a_part_dimension": true
+    },
+    {
+      "id": "DIM02",
+      "property": "empattement",
+      "value": 1285,
+      "unit": "mm",
+      "object": "moto entière",
+      "source": "D01 specifications",
+      "status": "documented_exact_variant",
+      "use": "Repère global seulement; aucune dimension de bras/cadre ne se déduit sans positions de pivots."
+    },
+    {
+      "id": "DIM03",
+      "property": "capacité carburant",
+      "value": 11,
+      "unit": "L",
+      "object": "réservoir courant RDC",
+      "source": "D01 specifications",
+      "status": "documented_exact_variant",
+      "use": "Capacité, pas une contrainte de sections extérieure déterminante."
+    },
+    {
+      "id": "DIM04",
+      "property": "Pipe Fuel E10 (L185)",
+      "value": 185,
+      "unit": "mm",
+      "object": "PF171803 durite du catalogue",
+      "source": "D04 sheet52 item6",
+      "status": "documented_related_variant",
+      "interpretation": "L185 est le libellé publié; ne cote ni le réservoir ni l’écart robinet/carburation sur la moto actuelle."
+    },
+    {
+      "id": "DIM05",
+      "property": "rondelle",
+      "value": [
+        5.1,
+        10,
+        1.0
+      ],
+      "unit": "mm",
+      "order": "ID,OD,épaisseur",
+      "object": "39217924 dans assemblage réservoir",
+      "source": "D04 sheet52 item3",
+      "status": "documented_related_variant",
+      "conflict": "La ligne UG5gear propose LDA00043 ID5.1×OD9×t1.0. Ne pas choisir sans variante."
+    },
+    {
+      "id": "DIM06",
+      "property": "joint filtre, diamètre intérieur",
+      "value": 59.6,
+      "unit": "mm",
+      "object": "DP121006 UG5gear",
+      "source": "D04 sheet25 item19",
+      "status": "documented_related_variant",
+      "use": "Cote interne d’un joint; pas diamètre extérieur du carter/du filtre."
+    }
+  ],
+  "components": [
+    {
+      "key": "mudguard-front",
+      "lot": 15,
+      "label": "Garde-boue avant",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R00",
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "D04:41",
+        "D15:37"
+      ],
+      "observable_decomposition": [
+        "Coque rouge bombée suivant le pneu; courbure longitudinale et transversale distinctes, bords amincis.",
+        "Partie arrière descendante et bavette noire: ne pas les fondre en simple demi-tore.",
+        "Attaches aux fourreaux, guides de câble et vis, à conserver séparés de la coque."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "52 PF00 65",
+          "source": "D04",
+          "pdf_sheet": 41,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Fender front ED painting; ligne UG5gear; pas une certification du rouge RDC.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "DF 1612 42",
+          "source": "D04",
+          "pdf_sheet": 41,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Version chrome distincte, non adoptée pour la coque rouge.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "DF 1612 45",
+          "source": "D04",
+          "pdf_sheet": 41,
+          "item": 3,
+          "status": "documented_related_variant",
+          "condition": "Bavette avant BM125; D15 utilise PF181408, ne pas fusionner.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "PF 1814 04 / PF 1814 08",
+          "source": "D15",
+          "pdf_sheet": 37,
+          "item": "1/3",
+          "status": "documented_related_variant",
+          "condition": "Avant chrome et bavette BM150; références comparatives uniquement.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Largeur à la couronne, rayon de section, épaisseur de tôle, longueur d’arc, entraxes et identité de bavette inconnus.",
+        "Le texte ED painting décrit une finition; ce n’est pas une preuve de matière/épaisseur identiques à la moto RDC."
+      ],
+      "next_useful_capture": "Face et dessus centrés, profil de chaque côté, dessous déposé avec règle sur couronne et entraxes. Mesurer jeu pneu/coque aux mêmes points; ne pas déduire le rayon extérieur du pneu des 17pouces de jante.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "mudguard-rear",
+      "lot": 15,
+      "label": "Garde-boue arrière, bavette et support de plaque",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R00",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "D04:41",
+        "D15:37"
+      ],
+      "observable_decomposition": [
+        "Coque noire arquée sous selle, avec retours latéraux et fixation avant distincte.",
+        "Descente arrière portant plaque, petit réflecteur rouge et extrémité de bavette; plis et décrochements réellement visibles de dos.",
+        "D04 montre coque et bavette séparées; leurs coutures/joints doivent rester lisibles."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "JV 1814 08",
+          "source": "D04",
+          "pdf_sheet": 41,
+          "item": 5,
+          "status": "documented_related_variant",
+          "condition": "Fender Rear; même chaîne de référence en D15, sans certification de compatibilité actuelle.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "JV 1814 10",
+          "source": "D04",
+          "pdf_sheet": 41,
+          "item": 6,
+          "status": "documented_related_variant",
+          "condition": "Fender Rear Flap; également cité D15.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "30 2010 69",
+          "source": "D04",
+          "pdf_sheet": 41,
+          "item": 19,
+          "status": "documented_related_variant",
+          "condition": "Réflecteur distinct; cotes et marquage non établis.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Section sous selle et attaches cachées; épaisseur/type de plastique, entraxes plaque et dimensions réflecteur inconnus."
+      ],
+      "next_useful_capture": "Dos orthogonal avec règle, 3/4 sous selle, dessous de la coque et zone du feu sans selle; distinguer support métallique et bavette plastique.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "frame",
+      "lot": 15,
+      "label": "Cadre et fixations moteur; protection extérieure séparée",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R00",
+        "R01",
+        "R03",
+        "R04",
+        "strong-chasis",
+        "D04:38",
+        "D15:34"
+      ],
+      "observable_decomposition": [
+        "Colonne de direction, liaison supérieure vers selle, descente avant, berceau bas et sous-cadre arrière triangulé.",
+        "Pattes soudées, supports de réservoir/selle, fixation de bras oscillant et attaches moteur distincts de la structure principale.",
+        "Le gros arceau noir visible devant le moteur est une protection rapportée; il ne remplace pas le cadre.",
+        "Les éclatés montrent ajours et sections non uniformes: une ossature de cylindres ronds interchangeables serait non justifiée."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "PF 1111 03",
+          "source": "D04",
+          "pdf_sheet": 38,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Frame Assly standard.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "PF 1110 00",
+          "source": "D04",
+          "pdf_sheet": 38,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Frame Assembly UG5gear; aussi D15 feuille34 item1; pas preuve de millésime RDC.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "JV 1134 01 / JA 1134 02",
+          "source": "D04",
+          "pdf_sheet": 37,
+          "item": "1/2",
+          "status": "documented_related_variant",
+          "condition": "Supports moteur à comparer au groupe BM150 D15 feuille33, dont le premier numéro diffère.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Diamètres/sections et épaisseurs, soudures, angle de colonne, coordonnées pivot/axes et attaches cachées non cotés.",
+        "La photo de protection extérieure ne révèle pas tout le berceau derrière elle."
+      ],
+      "next_useful_capture": "Moto dépouillée au moins côté réservoir/selle, profils avec repère vertical/sol, détails de chaque nœud soudé, vue dessous; mesurer colonne, pivot, attaches moteur et leur position dans un même repère.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "swingarm",
+      "lot": 15,
+      "label": "Bras oscillant et extrémités de réglage",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R00",
+        "R04",
+        "R05",
+        "R07",
+        "D04:39"
+      ],
+      "observable_decomposition": [
+        "Deux bras à faces larges, traverse et tube de pivot; logements d’axe arrière et tendeurs séparés.",
+        "Pattes d’amortisseurs, patin de chaîne, bagues et axe de pivot; le dessin D04 les distingue.",
+        "Les vues actuelles occultent des parties par chaîne/échappement: ne pas copier une symétrie parfaite sans contrôle."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "PF 1220 30",
+          "source": "D04",
+          "pdf_sheet": 39,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Assly Swing Arm BM125.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "JA 1210 03",
+          "source": "D04",
+          "pdf_sheet": 39,
+          "item": 12,
+          "status": "documented_related_variant",
+          "condition": "Shaft Swing Arm; également D15, aucune longueur publiée.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "DJ 1510 36 / DJ 1510 37",
+          "source": "D04",
+          "pdf_sheet": 39,
+          "item": "14/15",
+          "status": "documented_related_variant",
+          "condition": "Tendeurs LH/RH distincts.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "52 PF02 19",
+          "source": "D15",
+          "pdf_sheet": 35,
+          "item": 5,
+          "status": "documented_related_variant",
+          "condition": "Kit Swing Arm BM150 avec bague; ne pas confondre avec référence complète D04.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Longueur pivot-axe, largeur entre bras, section/cintrage, course de réglage et alésages non mesurés."
+      ],
+      "next_useful_capture": "Dessus et dessous sans roue si possible, profil de chaque bras avec règle, macro des lumières et tendeurs; relever pivot-axe et largeur intérieure.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "engine-top",
+      "lot": 17,
+      "label": "Moteur extérieur: cylindre, culasse et refroidissement",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R00",
+        "R01",
+        "R03",
+        "R04",
+        "engine",
+        "strong-chasis"
+      ],
+      "observable_decomposition": [
+        "Cylindre et culasse noirs à ailettes; plans/contours distincts, pas un empilement uniforme de carrés.",
+        "Pipe d’admission/carburation derrière le cylindre, sortie d’échappement en avant, câbles/durites visibles seulement comme interfaces.",
+        "Couvercles supérieurs et vis de culasse doivent suivre la variante de boîte: D04 sépare des tables 4 et5vitesses."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "JV 5110 13",
+          "source": "D04",
+          "pdf_sheet": 12,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Cover cylinder head standard.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "JV 5110 23 / 52 JV01 44",
+          "source": "D04",
+          "pdf_sheet": 13,
+          "item": "1/3",
+          "status": "documented_related_variant",
+          "condition": "Cylinder Head et deux Tappet Covers UG5gear; table associée, identité extérieure actuelle non certifiée.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Nombre exact et épaisseur des ailettes, profondeur entre ailettes, largeur totale, angle du cylindre et fixation de culasse inconnus.",
+        "124.45cm3 décrit une cylindrée, pas une cote extérieure du bloc."
+      ],
+      "next_useful_capture": "Profils gauche/droite nets et face/haut du moteur à hauteur du cylindre, macro ailettes avec règle et carte grise; identifier référence moteur réelle avant de choisir table de culasse.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "engine-cover-right",
+      "lot": 17,
+      "label": "Carter extérieur droit et interfaces kick/huile",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R00",
+        "R01",
+        "R07",
+        "engine",
+        "strong-chasis",
+        "D04:25"
+      ],
+      "observable_decomposition": [
+        "Fonderie claire asymétrique, grand bossage arrondi et couvercle de filtre distinct, plans et nervures entre ces formes.",
+        "Joint périphérique, bossages de vis, bouchon de remplissage, sortie d’axe de kick et commande d’embrayage.",
+        "La tige chromée repliée visible devant le carter est le kick, pas une nervure du carter ni un tube de cadre."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "36 PF00 08",
+          "source": "D04",
+          "pdf_sheet": 25,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Kit Clutch Cover standard.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "56 JV1V 3Q (DY541201)",
+          "source": "D04",
+          "pdf_sheet": 25,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Silver Cover Clutch, chaîne imprimée ligne UG5gear; ne pas normaliser sans confirmation.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "PF 5412 54",
+          "source": "D04",
+          "pdf_sheet": 25,
+          "item": 20,
+          "status": "documented_related_variant",
+          "condition": "Cap Filter B104E UG5gear; ne donne pas diamètre extérieur.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Contour/sections exactes, profondeur des bossages, entraxes, diamètre du filtre et reliefs de fonderie non cotés."
+      ],
+      "next_useful_capture": "Profil droit perpendiculaire, 3/4 rasant et vue avant/arrière du carter; règle au plan de joint, macro des vis et filtres, photo kick déplié/replié.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "engine-cover-left",
+      "lot": 17,
+      "label": "Carter extérieur gauche, magnéto et cache de sortie",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R03",
+        "R04",
+        "R05",
+        "D04:27"
+      ],
+      "observable_decomposition": [
+        "Couvercle de magnéto à bossage circulaire et contour externe non circulaire; petite forme supérieure et bouchon de contrôle distincts.",
+        "Cache arrière de sortie de transmission dissocié du couvercle principal; passage de sélecteur et périmètre de joint.",
+        "Ne pas dupliquer le carter droit en miroir; la photo de profil gauche présente une silhouette différente."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "36 PF00 07",
+          "source": "D04",
+          "pdf_sheet": 27,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Kit Cover Magneto standard, also related D15.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "52 PF17 35",
+          "source": "D04",
+          "pdf_sheet": 27,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Cover Magneto UG5gear.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "JV 5412 12 / PF 5412 87",
+          "source": "D04",
+          "pdf_sheet": 27,
+          "item": 5,
+          "status": "documented_related_variant",
+          "condition": "Cache arrière standard / UG5gear, variantes distinctes.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Contour exact du couvercle arrière, reliefs sous cache-chaîne, entraxes et épaisseurs inconnus."
+      ],
+      "next_useful_capture": "Profil gauche sans jambe du pilote, lumière rasante, vues de raccord au bloc et derrière pédale; macro de chaque bouchon et ligne de joint.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "exhaust",
+      "lot": 17,
+      "label": "Collecteur, silencieux, pare-chaleur et attaches",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R00",
+        "R01",
+        "R06",
+        "R07",
+        "D04:32",
+        "D15:28",
+        "N03:photo01",
+        "N03:photo02"
+      ],
+      "observable_decomposition": [
+        "Sortie avant de culasse, premier coude descendant, tube bas, transition vers silencieux arrière droit et sortie terminale.",
+        "Corps noir à section visuellement aplatie, flanc avec pare-chaleur clair et têtes de fixation visibles; patte haute et raccords séparés.",
+        "Sur la vue RDC deux têtes du petit pare-chaleur clair sont lisibles; ne pas inventer quatre têtes visibles parce que D04 liste quatre vis pour le groupe.",
+        "Les deux images vendeur N03 présentent des aspects différents et une protection supplémentaire: elles ne certifient pas une seule géométrie complète RDC."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "JV 5910 09",
+          "source": "D04",
+          "pdf_sheet": 32,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Silencer Assly BM125.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "PF 5910 45",
+          "source": "D04",
+          "pdf_sheet": 32,
+          "item": 7,
+          "status": "documented_related_variant",
+          "condition": "Shield Muffler; numéro également D15.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "36 PF00 25",
+          "source": "D15",
+          "pdf_sheet": 28,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Kit sans pare-chaleur BM150; vendeur N03 limite aux années2011–2013.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "PF 5910 17 / 65 / 79 / 59",
+          "source": "D15",
+          "pdf_sheet": 28,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Variantes CAT/sans CAT et avec/sans Wire Shield; choix non résolu pour RDC.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Longueurs développées, rayon/angle des coudes, section silencieux, diamètre sortie et entraxes inconnus.",
+        "D04 JV591009 et groupe BM150 ne doivent pas être fusionnés depuis une ressemblance de photo."
+      ],
+      "next_useful_capture": "Profil droit avec règle, vue arrière alignée à la sortie, dessus/dessous du silencieux, macros attaches/pare-chaleur; identifier code estampé avant adoption d’une photo vendeur.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "rider-footrests",
+      "lot": 17,
+      "label": "Repose-pieds conducteur gauche/droit",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R00",
+        "R01",
+        "R03",
+        "R04",
+        "R06",
+        "D04:40"
+      ],
+      "observable_decomposition": [
+        "Supports métal gauche/droit différents, patte fixée au cadre/bloc et tige porte-caoutchouc.",
+        "Patin conducteur à section non parfaitement circulaire, extrémité arrondie et grosses stries transversales.",
+        "Butée de kick à proximité côté droit; ne pas fusionner dans le repose-pied."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "PF 1130 00 / PF 1130 01",
+          "source": "D04",
+          "pdf_sheet": 40,
+          "item": "1/3",
+          "status": "documented_related_variant",
+          "condition": "Main Step LH/RH.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "DF 1614 13",
+          "source": "D04",
+          "pdf_sheet": 40,
+          "item": 4,
+          "status": "documented_related_variant",
+          "condition": "Rubber Main Step, deux éléments.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "DH 1611 94",
+          "source": "D04",
+          "pdf_sheet": 40,
+          "item": 5,
+          "status": "documented_related_variant",
+          "condition": "Kick Stopper, pièce distincte.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Largeur/projection, forme de section, stries, alignement sur cadre et caractère articulé ou fixe exact non mesurés."
+      ],
+      "next_useful_capture": "Dessus et face de chaque patin avec règle, dessous montrant fixation; relever position par rapport au pivot de bras et à l’axe de sélecteur/frein.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "pillion-footrests",
+      "lot": 17,
+      "label": "Repose-pieds passager et supports triangulés",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R00",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "D04:40"
+      ],
+      "observable_decomposition": [
+        "Supports triangulés latéraux en métal peint, petites fixations au cadre et au voisinage du pivot/bras.",
+        "Marches passager sur axe, caoutchouc strié, rondelle et goupille; l’articulation de pliage est illustrée dans D04.",
+        "Le support visible ne doit pas suivre la rotation de roue; contrôler son attache au châssis."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "PF 1130 02 / PF 1130 03",
+          "source": "D04",
+          "pdf_sheet": 40,
+          "item": "6/7",
+          "status": "documented_related_variant",
+          "condition": "Stay LH/RH.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "DP 1611 70 / JK 1130 08",
+          "source": "D04",
+          "pdf_sheet": 40,
+          "item": "8/9",
+          "status": "documented_related_variant",
+          "condition": "Step et Rubber Pillion Step.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "30 1710 22",
+          "source": "D04",
+          "pdf_sheet": 40,
+          "item": 10,
+          "status": "documented_related_variant",
+          "condition": "Axe de marche passager, pas de diamètre coté.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Section du support, entraxes et angle/limites de repli non mesurés."
+      ],
+      "next_useful_capture": "Chaque côté déplié et replié, macro axe/butée/goupille, dessus avec règle; relever articulations sans les inventer depuis le dessin éclaté.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "gear-pedal",
+      "lot": 17,
+      "label": "Sélecteur de vitesses côté gauche",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R03",
+        "R04",
+        "D04:22"
+      ],
+      "observable_decomposition": [
+        "Le dessin D04 présente un levier externe à deux branches et deux patins: dissocier embout avant et talonnière.",
+        "Moyeu de serrage/vis sur arbre, déports de tôle/bras et caoutchoucs distincts; ne pas confondre avec le mécanisme interne PF561200."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "JZ 5614 15",
+          "source": "D04",
+          "pdf_sheet": 22,
+          "item": 9,
+          "status": "documented_related_variant",
+          "condition": "Assly Gear Shift Lever externe.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "DH 1015 09 / JH 5614 04",
+          "source": "D04",
+          "pdf_sheet": 22,
+          "item": "10/11",
+          "status": "documented_related_variant",
+          "condition": "Deux dampers/patins externes.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "JZ 5614 01",
+          "source": "D15",
+          "pdf_sheet": 19,
+          "item": 9,
+          "status": "documented_related_variant",
+          "condition": "Gear Pedal BM150, numéro différent: non interchangeable par défaut.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Les petites rotations RDC ne suffisent pas à confirmer tous les déports de la pédale illustrée; entraxe deux appuis et cannelures inconnus."
+      ],
+      "next_useful_capture": "Vue gauche au niveau de la pédale sans autre obstacle, dessus et dessous du levier, distance moyeu/appuis et course fonctionnelle avec pied hors champ.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "rear-brake-pedal",
+      "lot": 17,
+      "label": "Pédale de frein droit et liaison visible",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R00",
+        "R01",
+        "R07",
+        "D04:47"
+      ],
+      "observable_decomposition": [
+        "Pédale cintrée avec plaquette d’appui quadrillée, pivot, retour et œillet arrière.",
+        "Tige de commande et ressorts jusqu’au frein arrière; coordination avec lot roue/frein, ne pas les recevoir ici par transfert.",
+        "D04 dessine distinctement tige de frein et tirant de réaction: ces deux longues pièces ne sont pas le même mécanisme."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "PF 1610 02",
+          "source": "D04",
+          "pdf_sheet": 47,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Brake Pedal, également D15.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "PF 1610 01",
+          "source": "D04",
+          "pdf_sheet": 47,
+          "item": 2,
+          "status": "documented_related_variant",
+          "condition": "Rod Brake.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "JV 1610 14",
+          "source": "D04",
+          "pdf_sheet": 47,
+          "item": 9,
+          "status": "documented_related_variant",
+          "condition": "Ressort de retour; D15 le désigne explicitement Brake Pedal Return Spring.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Angle et rayon de cintrage, pivot et passage devant échappement/repose-pied non cotés."
+      ],
+      "next_useful_capture": "Profil droit bas, dessus de la plaquette et vue de liaison arrière avec règle; mesurer axe/appui et jeux en position relâchée/enfoncée.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "kickstarter",
+      "lot": 17,
+      "label": "Kick de démarrage repliable",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R00",
+        "R01",
+        "R07",
+        "engine",
+        "D04:29"
+      ],
+      "observable_decomposition": [
+        "Bras chromé coudé remontant le long du carter droit, moyeu sur axe et vis de serrage.",
+        "Embout caoutchouc pliable à l’extrémité; position repliée distincte de la course de lancement."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "JA 6212 01",
+          "source": "D04",
+          "pdf_sheet": 29,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Lever Assly Kick standard.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "PA 6212 03",
+          "source": "D04",
+          "pdf_sheet": 29,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "UG5gear, choix non certifié RDC.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "DD 1010 97",
+          "source": "D04",
+          "pdf_sheet": 29,
+          "item": 13,
+          "status": "documented_related_variant",
+          "condition": "Kick Rubber.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Courbure/déports, diamètre d’axe et angle du pivot de patin non mesurés."
+      ],
+      "next_useful_capture": "Vue droite des positions repliée/dépliée, macro moyeu et charnière de patin, distance axe/embout; une séquence fonctionnelle peut compléter les photos.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "centre-stand",
+      "lot": 17,
+      "label": "Béquille centrale et ressort",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R04",
+        "R05",
+        "D04:42"
+      ],
+      "observable_decomposition": [
+        "Deux jambes jointes par traverse, axe supérieur, pieds aplatis et patte d’appui latérale.",
+        "Ressort de rappel, protection de ressort et tampon de butée; pas une simple fourche en tubes."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "PF 1132 00 / PF 1132 24",
+          "source": "D04",
+          "pdf_sheet": 42,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Centre stand standard/UG5gear.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "PF 1132 02",
+          "source": "D15",
+          "pdf_sheet": 38,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Centre stand BM150, référence différente.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "JA 1132 01 / DH 1611 21",
+          "source": "D04",
+          "pdf_sheet": 42,
+          "item": "2/4",
+          "status": "documented_related_variant",
+          "condition": "Axe et ressort central.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Vue actuelle très masquée; largeur pieds, longueur jambes, axe, butée et état replié/déployé incomplets."
+      ],
+      "next_useful_capture": "Dessous moto sécurisée, centre déployé puis replié; macros ressorts/butées et cotes pivot-sol, largeur entre pieds.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "side-stand",
+      "lot": 17,
+      "label": "Béquille latérale et fixation",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "D04:42"
+      ],
+      "observable_decomposition": [
+        "Jambe latérale terminée par appui aplati, patte d’ouverture, bossage percé et axe/vis.",
+        "Ressort externe de rappel et son cache; aucun placement précis actuel ne peut être déduit des rotations occultées."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "JA 1132 02",
+          "source": "D04",
+          "pdf_sheet": 42,
+          "item": 5,
+          "status": "documented_related_variant",
+          "condition": "Stand Side; même numéro comparatif D15.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "DH 1610 66 / DH 1611 46",
+          "source": "D04",
+          "pdf_sheet": 42,
+          "item": "6/10",
+          "status": "documented_related_variant",
+          "condition": "Ressort et cache de ressort latéral.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Montage exact sur RDC non visualisé, section réelle, largeur de patin, axe et inclinaison inconnus."
+      ],
+      "next_useful_capture": "Photos bas gauche repliée/déployée, dessous de patin et fixation au cadre; identification du montage avant toute préparation détaillée.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "tank",
+      "lot": 18,
+      "label": "Réservoir, bouchon, robinet et futur marquage WEWA",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R00",
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R07",
+        "D04:52",
+        "D04:53",
+        "D15:51"
+      ],
+      "observable_decomposition": [
+        "Volume rouge à épaules élargies, creux latéraux/retours bas et jonction avant de selle; ne pas utiliser une simple sphère ou cylindre.",
+        "Bouchon sur face supérieure, contour de portée, raccords avant/arrière et robinet inférieur distincts.",
+        "Logo WEWA sera une création du jeu; la photographie BOXER n’est pas un décalque réutilisable. Le volume technique reste à établir indépendamment du logo."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "DS 1410 09",
+          "source": "D04",
+          "pdf_sheet": 52,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Cap Fuel Tank; aussi D15.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "PF 1718 00",
+          "source": "D04",
+          "pdf_sheet": 52,
+          "item": 4,
+          "status": "documented_related_variant",
+          "condition": "Tap Fuel; D15 propose PF171802 différent.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "52 PF17 63 / 52 PF18 25",
+          "source": "D04",
+          "pdf_sheet": 64,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Ensembles tank+decal UG5gear noir/rouge; pas validation de la peinture actuelle RDC.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "PF 1718 03",
+          "source": "D04",
+          "pdf_sheet": 52,
+          "item": 6,
+          "status": "documented_related_variant",
+          "condition": "Pipe Fuel E10 L185; seule longueur explicitement imprimée ici, pas une cote du réservoir.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Aucune vue supérieure orthogonale actuelle; largeur maximale, sections, tunnel inférieur, profondeur et position précise du bouchon manquent.",
+        "Capacité11L ne détermine ni contour ni dimensions extérieures."
+      ],
+      "next_useful_capture": "Dessus perpendiculaire avec règle, front/dos à hauteur d’axe, profils, dessous si déposé, macro du bouchon et des silentblocs; relever longueur/largeur/hauteur et sections dans le même repère.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "side-covers",
+      "lot": 18,
+      "label": "Caches latéraux gauche/droit",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R00",
+        "R03",
+        "R04",
+        "R05",
+        "R07",
+        "wider-seat",
+        "D04:53"
+      ],
+      "observable_decomposition": [
+        "Panneaux rouges à contour triangulaire arrondi avec bourrelet et zone basse noire; gauche/droite non présumés identiques.",
+        "Vis visible, pions arrière, grommets et bords rentrants; l’éclaté D04 montre les raccords sous les surfaces.",
+        "Les grandes bandes colorées du constructeur restent documentaires; graphisme WEWA original à produire séparément après forme."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "52 JV02 89 / 52 JV02 92",
+          "source": "D04",
+          "pdf_sheet": 64,
+          "item": 3,
+          "status": "documented_related_variant",
+          "condition": "Caches LH UG5gear noir/rouge.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "52 JV02 90 / 52 JV02 93",
+          "source": "D04",
+          "pdf_sheet": 64,
+          "item": 4,
+          "status": "documented_related_variant",
+          "condition": "Caches RH UG5gear noir/rouge.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "DS 1410 12 / DH 1611 33",
+          "source": "D04",
+          "pdf_sheet": 53,
+          "item": "1/1A",
+          "status": "documented_related_variant",
+          "condition": "Grommets avant/arrière distincts.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Sections, lèvres, profondeurs des pions et petites différences entre côtés inconnues."
+      ],
+      "next_useful_capture": "Chaque cache de face et de dos déposé, règle dans le même plan, macros pion/vis/grommet et photo monté du jeu avec selle/réservoir.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "seat",
+      "lot": 18,
+      "label": "Selle: forme, housse, embase et appuis",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R00",
+        "R04",
+        "R05",
+        "R07",
+        "wider-seat",
+        "D04:36",
+        "D15:32",
+        "N01:photo00",
+        "N01:photo01",
+        "N01:photo02",
+        "N02:photo"
+      ],
+      "observable_decomposition": [
+        "Selle longue avec avant ajusté au réservoir, largeur et profil variables; pas un seul cylindre noir.",
+        "Housse, grain et couture/bourrelet périphérique distincts de la mousse et de l’embase.",
+        "Photo N01 du dessous: embase nervurée, agrafage périphérique, deux oreilles/attaches et sept appuis caoutchouc visibles.",
+        "Photos N01/N02: lignes embossées sur le dessus; visuel RDC plus lisse. Cette différence reste une variante ouverte, pas une texture à recopier."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "JV 1910 01",
+          "source": "D04",
+          "pdf_sheet": 36,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Flat Seat; Crosland liste BM125/BM150 et Matriz BM150UG pour ce numéro.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "PF 1910 00",
+          "source": "D15",
+          "pdf_sheet": 32,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Profile Seat, distincte de Flat Seat JV191001.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "DP 2110 09",
+          "source": "D04",
+          "pdf_sheet": 36,
+          "item": 8,
+          "status": "documented_related_variant",
+          "condition": "Damper For Seat, quantité7; cohérence documentaire avec vue du dessous N01 sans validation dimensionnelle.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Longueur, largeurs par station, hauteur de mousse et positions d’appui non cotées; bonne correspondance de numéro ne certifie pas housse RDC."
+      ],
+      "next_useful_capture": "Dessus orthogonal, profils sans charge, dessous et fixation avec règle; mesurer cinq largeurs et hauteurs, localiser appuis et extrémité avant au raccord réservoir.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "rack",
+      "lot": 18,
+      "label": "Porte-bagages et poignées latérales",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R00",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "wider-seat",
+        "D04:36",
+        "D15:32"
+      ],
+      "observable_decomposition": [
+        "Cadre de plateau arrière, traverses, branches latérales qui remontent et diagonales créant des jours triangulaires.",
+        "Supports vissés au sous-cadre et interface sous selle; il ne s’agit pas d’une échelle flottante fixée dans le rembourrage.",
+        "Les rotations arrière montrent largeur et attaches, mais pas une vue du dessus calibrée."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "PF 2314 05",
+          "source": "D04",
+          "pdf_sheet": 36,
+          "item": 6,
+          "status": "documented_related_variant",
+          "condition": "Grip Frame illustré avec plateau et branches latérales; repris D15 sans preuve de millésime RDC.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Diamètres/sections, rayons de cintrage, largeur utile, longueur plateau et points de vissage inconnus."
+      ],
+      "next_useful_capture": "Dessus du plateau et vue de dessous à la jonction selle, profil et dos avec règle; macro de chaque soudure et attache au cadre.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    },
+    {
+      "key": "indicators-tail",
+      "lot": 18,
+      "label": "Feu arrière, clignotants, support et plaque",
+      "G0": "identified_scope_variant_year_unknown",
+      "G1": "partial_not_ready_for_metric_fidelity",
+      "current_views_actually_inspected": [
+        "R00",
+        "R05",
+        "R06",
+        "R07",
+        "D04:58",
+        "D04:59"
+      ],
+      "observable_decomposition": [
+        "Feu rouge transversal avec bas arrondi/rétréci; lentille, corps noir, joints et attaches séparés.",
+        "Deux clignotants arrière ronds ambre sur supports courts; diffuser optique, tige/corps, vis et câblage.",
+        "Support métallique du feu, plaque noire et réflecteur inférieur distincts; ne pas confondre réflecteur et feu de frein."
+      ],
+      "conditional_part_candidates": [
+        {
+          "number": "PF 4010 05",
+          "source": "D04",
+          "pdf_sheet": 59,
+          "item": 1,
+          "status": "documented_related_variant",
+          "condition": "Tail Light Assly BM125; D15 feuille59 donne DF201138, différent.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "PF 2314 01",
+          "source": "D04",
+          "pdf_sheet": 59,
+          "item": 7,
+          "status": "documented_related_variant",
+          "condition": "Support de feu, repris D15.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "PF 4010 03 / PF 4010 04",
+          "source": "D04",
+          "pdf_sheet": 58,
+          "item": "3/4",
+          "status": "documented_related_variant",
+          "condition": "Rear LH/RH; ligne RH quantité2 non expliquée: ne pas en déduire trois clignotants arrière.",
+          "current_RDC_fitment_confirmed": false
+        },
+        {
+          "number": "DU 2010 16",
+          "source": "D04",
+          "pdf_sheet": 58,
+          "item": 7,
+          "status": "documented_related_variant",
+          "condition": "Lens; diamètre et motif prismatique non cotés.",
+          "current_RDC_fitment_confirmed": false
+        }
+      ],
+      "critical_unknowns": [
+        "Lentille épaisseurs/profondeur/prismes, arrière du corps, entraxes et filetage de tige non déterminés.",
+        "D15 et D04 diffèrent sur référence du feu complet et de plaque: choix exact restant ouvert."
+      ],
+      "next_useful_capture": "Dos perpendiculaire, deux profils et dessous du bloc, macro lentille éteinte/allumée avec exposition stable, attaches déposé si possible; mesurer dimensions hors tout et entraxes.",
+      "fabrication": "not_started",
+      "artistic_acceptance": false
+    }
+  ],
+  "contradictions_and_stop_rules": [
+    "D04 BM125 UG et D15 BM150 ne certifient pas les pièces RDC actuelles: numéros conditionnels, aucune équivalence automatique.",
+    "Selle: sept appuis et numéro JV191001 bien corroborés pour la pièce de distributeur; lignes embossées non transférées silencieusement à la housse RDC plus lisse.",
+    "Garde-boue avant: références chrome/ED différentes; ne pas recopier l’assemblage chrome du BM150 pour notre coque rouge.",
+    "Échappement: CAT/WireShield BM150 non résolus pour RDC; deux photos d’une fiche ne rendent pas leurs formes compatibles.",
+    "Le catalogue ne donne pas de plan à l’échelle: aucune dimension obtenue en mesurant sa planche n’est annoncée constructeur.",
+    "Rotations détourées sans caméra/focale ni étalon dans le plan: pas de reconstruction métrique certifiée; artefacts alpha/fond non interprétés comme pièces.",
+    "Seuls gabarit/empattement/capacité sont documentés pour la cible; dimensions locales majeures manquent. Les faibles cotes de joints/durite ne ferment pas ces lacunes."
+  ],
+  "next_capture_priority": [
+    {
+      "priority": 1,
+      "capture": "Dessus du réservoir et bouchon avec règle, profils et dessous",
+      "closes": "Lot18 premier plan cockpit: largeur/sections et jonction selle, actuellement bloqués."
+    },
+    {
+      "priority": 2,
+      "capture": "Profil droit/gauche du moteur et macros des deux carters avec règle",
+      "closes": "Lot17 asymétries, sections, ailettes, sorties de kick/pédales."
+    },
+    {
+      "priority": 3,
+      "capture": "Cadre et bras sans occultations; repère commun colonne/pivot/roues",
+      "closes": "Lot15 sections et coordonnées mécaniques, sans déformer cotes géographiques/moto."
+    },
+    {
+      "priority": 4,
+      "capture": "Selle déposée dessus/dessous avec règle et photo code pièce; porte-bagages dessus",
+      "closes": "Lot18 variante housse/embase, appuis et points de vissage."
+    },
+    {
+      "priority": 5,
+      "capture": "Arrière et dessous feu/garde-boue, optiques éteintes/allumées",
+      "closes": "Lot18 silhouette vue troisième personne et attaches."
+    },
+    {
+      "priority": 6,
+      "capture": "Pédales/repose-pieds/béquilles dans positions utiles et règle",
+      "closes": "Lot17 pivots, courses et interférences."
+    }
+  ],
+  "negative_research": [
+    {
+      "target": "Cotes seat/tank/bodyparts through Google",
+      "result": "HTTP200 mais page challenge/redirection; aucun résultat technique adopté."
+    },
+    {
+      "target": "Motoshed fuel tank search",
+      "result": "HTTP503; aucune photo/dimension nouvelle comptée."
+    },
+    {
+      "target": "Seahawk PF122030 swing arm product",
+      "result": "Recherche a trouvé URL mais pageHTTP503; aucune photo de cette page déclarée vue."
+    },
+    {
+      "target": "Searches exact part numbers and tank dimensions",
+      "result": "Résultats de variantes125X/BM150 ou pages sans cotes; pas d’adoption de dimensions voisines."
+    }
+  ],
+  "fabricator_handoff": "Choisir une seule pièce active après consolidation G1/G2. Les présents numéros servent à la recherche/identification, pas à approuver forme ou montage. Aucun modèle ni mise à jour des registres centraux, Git ou Ewutelo dans ce lot.",
+  "supplemental_views": [
+    {
+      "id": "N01:photo00",
+      "file": "seat-crosland-00.jpg",
+      "direction": "dessous complet, légèrement oblique",
+      "status": "visually_inspected"
+    },
+    {
+      "id": "N01:photo01",
+      "file": "seat-crosland-01.jpg",
+      "direction": "arrière et dessus en oblique, couture périphérique",
+      "status": "visually_inspected"
+    },
+    {
+      "id": "N01:photo02",
+      "file": "seat-crosland-02.jpg",
+      "direction": "dessus dans l’axe de la selle",
+      "status": "visually_inspected"
+    },
+    {
+      "id": "N02:photo",
+      "file": "seat-JV191001.jpg",
+      "direction": "dessus trois quarts; arrière marqué visible",
+      "status": "visually_inspected"
+    },
+    {
+      "id": "N03:photo01",
+      "file": "silencer-photo-01.jpg",
+      "direction": "ensemble en profil oblique; face précise non certifiée",
+      "status": "visually_inspected"
+    },
+    {
+      "id": "N03:photo02",
+      "file": "silencer-photo-02.webp",
+      "direction": "ensemble oblique, platines latérales visibles",
+      "status": "visually_inspected"
+    }
+  ],
+  "technical_checks": {
+    "component_count": 20,
+    "required_lots": [
+      15,
+      17,
+      18
+    ],
+    "private_originals_not_embedded_in_public_files": true,
+    "new_models": 0,
+    "central_registries_changed": false,
+    "Git_or_Ewutelo_actions": false
+  }
+}

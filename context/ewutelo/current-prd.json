@@ -1,6 +1,6 @@
 {
   "idea_id": "27f8ffb12df14ff79c6e0f13cbd1cf91",
-  "revision": 22,
+  "revision": 23,
   "prd": {
     "acceptance_criteria": [
       "Petite moto utilitaire Wewa ; clavier ZQSD/WASD et tactile.",
@@ -151,7 +151,7 @@
         "source_types": "Official documentation, first-person artist accounts, forum exchange and public course outline; no paid lessons or tools purchased.",
         "state": "researched_plan_not_executed"
       },
-      "next_lot": "Review cockpit candidates and legibility, then fabricate controls, levers, mirrors, mounting hardware and visor as separate documented components. Confirm exact RDC interfaces/parts and brake variant compatibility; rider remains deferred.",
+      "next_lot": "Continue all18authorized groups with separate detailed components, actual source/export/runtime checks and review; rider deferred.",
       "production_inventory": "92 source catalogue entries AS-001–AS-092 plus 67 overlapping concept traceability rows; previous 112 preparatory families were incomplete. creative/DOSSIER_ASSET_LIST.md and creative/library/fabrication-register.json.",
       "public_site_version_unchanged": 3,
       "public_source_commit_unchanged": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
@@ -194,17 +194,19 @@
         "distinct_model_count": null,
         "note": "Overlapping source rows routed to recipes; not159 distinct or fabricated models. Family-specific research/decomposition remains pending outside current motorcycle preparation."
       },
-      "current_component": "creative/workflow/records/moto-instruments-001.json",
+      "current_component": "creative/workflow/records/moto-instrument-bracket-001.json",
       "date": "2026-10-20",
       "documentary_research": "creative/workflow/RESEARCH.md",
       "family_recipes": "creative/workflow/RECIPES.md",
       "motorcycle_decomposition": "creative/workflow/motorcycle-assembly.json",
-      "next_action": "Review cockpit candidates and legibility, then fabricate controls, levers, mirrors, mounting hardware and visor as separate documented components. Confirm exact RDC interfaces/parts and brake variant compatibility; rider remains deferred.",
+      "next_action": "Continue all18authorized groups with separate detailed components, actual source/export/runtime checks and review; rider deferred.",
       "production": {
-        "active_component": "MOTO-INSTRUMENTS-001",
+        "active_component": "MOTO-INSTRUMENT-BRACKET-001",
         "art_accepted": false,
+        "authorized_execution_groups": 18,
         "camera_calibration_executed": false,
-        "current_candidate_status": "Seven separate candidate records and cockpit review assembly, no artistic reception",
+        "current_candidate_status": "Eight isolated candidate component records including corrected gripsv2 and instrument bracket; 18-group fabrication authorized and in progress, no accepted motorcycle.",
+        "execution_complete": false,
         "motorcycle_groups": 25,
         "new_geometry": true,
         "parallel_components_max": 3,
@@ -510,49 +512,36 @@
       "active_component": {
         "all_dimensions_estimated": true,
         "art_accepted": false,
-        "construction": "Separate closed housings, bezels, seals and lenses, original vector dial markings, two movable needle pivots and rounded USB cap; central cover and USB corrected after independent review",
-        "documentary_sources": [
-          "D01",
-          "D04",
-          "D13",
-          "D14"
-        ],
+        "construction": "Formed forked plate, three actual open passages, rounded end collars and ribs; source normal defects corrected before isolated review",
         "exports": [
-          "assets-src/moto-components/instruments/instruments-inspection.glb"
+          "assets-src/moto-components/instrument-bracket/instrument-bracket-inspection.glb"
         ],
-        "functions": [
-          "Speed0–140km/h",
-          "FuelE/F",
-          "Gear1–5",
-          "Closed USB cap; hidden connector/wiring not fabricated"
-        ],
-        "generator": "assets-src/moto-components/instruments/build.py",
-        "id": "MOTO-INSTRUMENTS-001",
+        "id": "MOTO-INSTRUMENT-BRACKET-001",
         "limits": [
-          "No measured dimensions, calibrated photo or verified reverse sections/mounts",
-          "Odometer static, local pointer controls not yet bound to game simulation",
-          "Fuel linear calibration and green active gear are demo conventions, not measured manufacturer behaviour",
-          "No refractive/caustic lens shadows in review; runtime reflections/readability still require artistic review",
-          "No physical iPhone qualification, accepted mobile LOD or art reception"
+          "Local XY frame, face +Z; not installed on instruments",
+          "No exact local measurements or calibrated photo",
+          "No accepted mobile LOD, physical iPhone test or artistic reception"
         ],
-        "parameters": "assets-src/moto-components/instruments/parameters.json",
-        "reference": "Official feature photo published on current Boxer125HD RDC page; asset filename includesBM150, exact current assembly part number not certified",
-        "review": "creative/reviews/instruments-v1/README.md",
-        "source": "assets-src/moto-components/instruments/instruments-v1.blend",
-        "status": "separate_instrument_candidate_rework_not_accepted",
+        "next_correction": "Independent photo audit identifies lower rib too narrow/tapered; separate v2 requested. Existing source remains an unaccepted candidate.",
+        "reference": "Related PF402404; exact current RDC USB-cluster fit unconfirmed",
+        "review": "creative/reviews/instrument-bracket-v1/README.md",
+        "source": "assets-src/moto-components/instrument-bracket/instrument-bracket-v1.blend",
+        "status": "isolated_candidate_not_installed_not_accepted",
         "technical_verification": {
-          "export_sha256": "26f411564cc903308ce529b0100efe8d68f95a22a0a2e7e17dd4cf4e3f7364ba",
+          "babylon_actual_export_loaded": true,
+          "export_sha256": "4e34055d06c00d5f8623d27d0e95752d1d3d035996a46db78989909e0b8855c0",
           "glTF_errors": 0,
           "glTF_warnings": 0,
-          "source_check": "creative/reviews/instruments-v1/source-geometry-check.json",
-          "source_sha256": "e3321cee34967f7749dbfa8650fe01c404137c55cfb5c42881363f098cb91ec0",
-          "triangles": 46801
+          "source_check": "creative/reviews/instrument-bracket-v1/source-geometry-check.json",
+          "source_sha256": "86891d5bbf7e2a0833a74595c949132535995ae8361344065926f562060c75f5",
+          "triangles": 53894
         }
       },
       "cockpit_review": {
         "all_placement_dimensions_estimated": true,
         "art_accepted": false,
         "bar_surface_crossings": 0,
+        "historical": true,
         "kind": "Linked-source candidate arrangement, not an installed brake/cockpit or gameplay capture",
         "linked_sources": [
           {
@@ -585,6 +574,7 @@
           "ignition position",
           "visor"
         ],
+        "note": "Prior cockpit-v1 uses historical gripsv1; new source candidates are reviewed separately.",
         "physical_iphone_tested": false,
         "pointer_ranges": {
           "fuel_fraction": [
@@ -609,6 +599,7 @@
         "actual_blender_renders": "creative/reviews/front-tyre-v1/",
         "actual_cockpit_increment_blender_views": 11,
         "axle_research": "creative/workflow/front-axle-research.json",
+        "cockpit18_shape_audit": "creative/research/cockpit18-shape-audit.json",
         "cockpit_review": "creative/reviews/cockpit-v1/",
         "cockpit_validation": "WEWA_Developpement_Web/validation/cockpit-v1.json",
         "cockpit_visual_audit": "creative/research/cockpit-visual-audit.json",
@@ -635,6 +626,19 @@
         "user_art_accepted": false,
         "whole_motorcycle_complete": false
       },
+      "execution_18": {
+        "art_accepted": false,
+        "authorization": "User: GO de1à18",
+        "completed_groups": 0,
+        "datums": "creative/workflow/motorcycle-datums-v1.json",
+        "documentary_file_hashes_verified": 240,
+        "groups": 18,
+        "note": "240 archived files, not240 photographs/views, independent sources or dimensions. Other controls/clamps/ignition currently under fabrication and not published as finished.",
+        "physical_iphone_tested": false,
+        "plan": "creative/workflow/motorcycle-execution-18.json",
+        "source_photos_private": true,
+        "status": "three_owner_rolling_fabrication_in_progress"
+      },
       "first_component": {
         "construction": "Closed shaped section with hollow liner/beads, integral geometric grooves, editable source and separate inspection export",
         "corrections": "Initial inward winding corrected; overexposed studio lights reduced; groove-aligned topology replaces uniform-grid stair stepping; explicit glTF roughness fallback",
@@ -653,23 +657,37 @@
         "source": "assets-src/moto-components/front-tyre/front-tyre-v1.blend",
         "status": "candidate_rework_not_accepted"
       },
-      "next_action": "Review cockpit candidates and legibility, then fabricate controls, levers, mirrors, mounting hardware and visor as separate documented components. Confirm exact RDC interfaces/parts and brake variant compatibility; rider remains deferred.",
+      "next_action": "Continue all18authorized groups with separate detailed components, actual source/export/runtime checks and review; rider deferred.",
       "parallel_execution": {
-        "authorization": "Explicit user: continue and parallelize; build handlebar and instruments for rider view",
+        "authorization": "Explicit user parallelization and GO18",
         "automatic_art_acceptance": false,
-        "components": [
-          "handlebar",
-          "grips",
-          "instruments"
-        ],
-        "independent_research": [
-          "front axle",
-          "front brake cam and variants"
-        ],
-        "independent_review": [
-          "lever",
-          "cockpit"
-        ]
+        "chains": {
+          "A": [
+            1,
+            2,
+            13,
+            14,
+            15,
+            16
+          ],
+          "B": [
+            3,
+            6,
+            7,
+            9,
+            10,
+            17,
+            18
+          ],
+          "C": [
+            4,
+            5,
+            8,
+            11,
+            12
+          ]
+        },
+        "detailed_owners_max": 3
       },
       "previous_components": [
         {
@@ -944,28 +962,97 @@
         {
           "all_dimensions_estimated": true,
           "art_accepted": false,
+          "correction": "Physical handedness corrected: pilot left +X bore22.4mm; pilot right -X bore25.4mm. Bore dimensions remain estimates.",
           "exports": [
-            "assets-src/moto-components/handlebar-grips/handlebar-grips-inspection.glb"
+            "assets-src/moto-components/handlebar-grips/handlebar-grips-v2-inspection.glb"
           ],
-          "generator": "assets-src/moto-components/handlebar-grips/build.py",
+          "generator": "assets-src/moto-components/handlebar-grips/build_v2.py",
           "id": "MOTO-HANDLEBAR-GRIPS-001",
           "limits": [
             "Exact current RDC part and dimensions unconfirmed",
             "No received installed controls or measured interfaces",
             "Inspection geometry, no qualified mobile LOD or physical iPhone test"
           ],
-          "parameters": "assets-src/moto-components/handlebar-grips/parameters.json",
+          "next_correction": "Independent photo audit identifies too narrow long grip motifs; separate v3 requested.",
+          "parameters": "assets-src/moto-components/handlebar-grips/parameters-v2.json",
+          "previous_revision": {
+            "all_dimensions_estimated": true,
+            "art_accepted": false,
+            "exports": [
+              "assets-src/moto-components/handlebar-grips/handlebar-grips-inspection.glb"
+            ],
+            "generator": "assets-src/moto-components/handlebar-grips/build.py",
+            "id": "MOTO-HANDLEBAR-GRIPS-001",
+            "limits": [
+              "Exact current RDC part and dimensions unconfirmed",
+              "No received installed controls or measured interfaces",
+              "Inspection geometry, no qualified mobile LOD or physical iPhone test"
+            ],
+            "parameters": "assets-src/moto-components/handlebar-grips/parameters.json",
+            "reference": "Related DU191009/DU191003 rubber envelopes; throttle carrier absent",
+            "review": "creative/reviews/handlebar-grips-v1/README.md",
+            "source": "assets-src/moto-components/handlebar-grips/handlebar-grips-v1.blend",
+            "status": "isolated_candidate_rework_not_accepted",
+            "technical_verification": {
+              "export_sha256": "d7fc7d0b74c3d21d4eab7131e7d2a92bf2e81da0c7640d58204da3e5f0100996",
+              "glTF_errors": 0,
+              "glTF_warnings": 0,
+              "source_check": "creative/reviews/handlebar-grips-v1/source-geometry-check.json",
+              "source_sha256": "d0070617414c809b1a6e71423029720a5d3dbb71130c8ca666316f5ffa4ed9a1",
+              "triangles": 114276
+            }
+          },
           "reference": "Related DU191009/DU191003 rubber envelopes; throttle carrier absent",
-          "review": "creative/reviews/handlebar-grips-v1/README.md",
-          "source": "assets-src/moto-components/handlebar-grips/handlebar-grips-v1.blend",
+          "review": "creative/reviews/handlebar-grips-v2/README.md",
+          "source": "assets-src/moto-components/handlebar-grips/handlebar-grips-v2.blend",
           "status": "isolated_candidate_rework_not_accepted",
           "technical_verification": {
-            "export_sha256": "d7fc7d0b74c3d21d4eab7131e7d2a92bf2e81da0c7640d58204da3e5f0100996",
+            "export_sha256": "603def6673b589c192551005c1b79f3e2cc1c83a0b60142343e4ac6948cb8c22",
+            "glTF_errors": 0,
+            "physical_iphone_tested": false,
+            "source_sha256": "40514ce73d9a5a763fbf98fe2c1d0ab84c248a0d9373a7747895781e18cd98ae"
+          }
+        },
+        {
+          "all_dimensions_estimated": true,
+          "art_accepted": false,
+          "construction": "Separate closed housings, bezels, seals and lenses, original vector dial markings, two movable needle pivots and rounded USB cap; central cover and USB corrected after independent review",
+          "documentary_sources": [
+            "D01",
+            "D04",
+            "D13",
+            "D14"
+          ],
+          "exports": [
+            "assets-src/moto-components/instruments/instruments-inspection.glb"
+          ],
+          "functions": [
+            "Speed0–140km/h",
+            "FuelE/F",
+            "Gear1–5",
+            "Closed USB cap; hidden connector/wiring not fabricated"
+          ],
+          "generator": "assets-src/moto-components/instruments/build.py",
+          "id": "MOTO-INSTRUMENTS-001",
+          "limits": [
+            "No measured dimensions, calibrated photo or verified reverse sections/mounts",
+            "Odometer static, local pointer controls not yet bound to game simulation",
+            "Fuel linear calibration and green active gear are demo conventions, not measured manufacturer behaviour",
+            "No refractive/caustic lens shadows in review; runtime reflections/readability still require artistic review",
+            "No physical iPhone qualification, accepted mobile LOD or art reception"
+          ],
+          "parameters": "assets-src/moto-components/instruments/parameters.json",
+          "reference": "Official feature photo published on current Boxer125HD RDC page; asset filename includesBM150, exact current assembly part number not certified",
+          "review": "creative/reviews/instruments-v1/README.md",
+          "source": "assets-src/moto-components/instruments/instruments-v1.blend",
+          "status": "separate_instrument_candidate_rework_not_accepted",
+          "technical_verification": {
+            "export_sha256": "26f411564cc903308ce529b0100efe8d68f95a22a0a2e7e17dd4cf4e3f7364ba",
             "glTF_errors": 0,
             "glTF_warnings": 0,
-            "source_check": "creative/reviews/handlebar-grips-v1/source-geometry-check.json",
-            "source_sha256": "d0070617414c809b1a6e71423029720a5d3dbb71130c8ca666316f5ffa4ed9a1",
-            "triangles": 114276
+            "source_check": "creative/reviews/instruments-v1/source-geometry-check.json",
+            "source_sha256": "e3321cee34967f7749dbfa8650fe01c404137c55cfb5c42881363f098cb91ec0",
+            "triangles": 46801
           }
         }
       ],
@@ -977,7 +1064,7 @@
         "provenance": "tools/provenance/blender-4.3.2-provenance.json",
         "raw_hdr": "Private NoisyImage EXR saved alongside denoised output, paths/hashes in render reports"
       },
-      "scope": "Motorcycle alone: seven separate candidate records including tube, grip envelopes and instruments, with a cockpit inspection assembly; no accepted motorcycle/rider.",
+      "scope": "Eight isolated candidate component records including corrected gripsv2 and instrument bracket; 18-group fabrication authorized and in progress, no accepted motorcycle.",
       "solo_visual_target": {
         "art_accepted": false,
         "kind": "image_gen edited artistic target; not Blender or gameplay output",

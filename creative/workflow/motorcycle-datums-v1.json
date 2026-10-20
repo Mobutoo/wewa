@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "purpose": "Shared assembly guides, not fabricated vehicle or calibrated reconstruction",
+  "published_constraints": {
+    "source": "D01",
+    "units": "m",
+    "wheelbase": 1.285,
+    "length": 2.016,
+    "width": 0.74,
+    "height": 1.134,
+    "height_includes_mirrors": null,
+    "rim_nominal_bead_diameter": 0.4318
+  },
+  "coordinate_frame": {
+    "origin": "Bare handlebar centre-clamp axis",
+    "X_positive": "Pilot LEFT; verified by actual Blender driver camera projection",
+    "Y_positive": "Pilot/rear",
+    "Z_positive": "Up",
+    "glTF_conversion": "(x,z,-y)"
+  },
+  "camera_side_verification": {
+    "actual_blender_source": "assets-src/moto-components/cockpit-review/cockpit-review-v1.blend",
+    "camera_xyz": [
+      0,
+      0.67,
+      0.49
+    ],
+    "source_test_point_xyz": [
+      0.34,
+      0.085,
+      0.105
+    ],
+    "projected_image_u": 0.12206783890724182,
+    "other_point_x": -0.34,
+    "other_projected_image_u": 0.8779320120811462,
+    "consequence": "Throttle/right brake at-X. Clutch at+X. Grip-v1 physical LH/RH labels inverted; corrected only in v2, old proofs remain immutable."
+  },
+  "provisional_guides_m": {
+    "front_axle": [
+      0,
+      -0.42,
+      -0.74
+    ],
+    "rear_axle": [
+      0,
+      0.865,
+      -0.74
+    ],
+    "ground_z": -1.03,
+    "front_radius_working": 0.29,
+    "rear_radius_working": 0.295,
+    "bar_to_front_axle_Y_range": [
+      -0.48,
+      -0.36
+    ],
+    "bar_to_front_axle_Z_range": [
+      -0.8,
+      -0.68
+    ]
+  },
+  "guide_status": "All local positions and outside tyre radii estimated. Only front/rear separation is constrained by published wheelbase. No certified interfaces. Do not silently move old components or infer tubes/axles from global dimensions.",
+  "side_reference_annotations": [
+    {
+      "private_reference": "/workspace/wewa-assets/references/dimensions-verified/rotation-00.png",
+      "sha256": "82be9285506c65dd8ff3fdba000fe963587548e306691844ed774f685870ea40",
+      "annotations_pixels": {
+        "front_axle_uv": [
+          797,
+          494
+        ],
+        "rear_axle_uv": [
+          270,
+          494
+        ],
+        "bar_clamp_uv": [
+          625,
+          190
+        ]
+      },
+      "annotation_uncertainty_pixels": {
+        "axle_centres": 5,
+        "bar_clamp_hidden_or_oblique": 12
+      },
+      "baseline_anchored_scale_m_per_pixel": 0.0024383301707779884,
+      "scale_is_camera_calibration": false,
+      "note": "One baseline constraint does not establish an orthographic camera; unknown yaw, lens and depths. No per-part dimension certified."
+    },
+    {
+      "private_reference": "/workspace/wewa-assets/references/dimensions-verified/rotation-04.png",
+      "sha256": "b086dedb4a2bcbc2644aab9578a3d1efa7445e163459b444b3687047bf2e8e02",
+      "annotations_pixels": {
+        "front_axle_uv": [
+          202,
+          494
+        ],
+        "rear_axle_uv": [
+          757,
+          494
+        ],
+        "bar_clamp_uv": [
+          364,
+          188
+        ]
+      },
+      "annotation_uncertainty_pixels": {
+        "axle_centres": 5,
+        "bar_clamp_hidden_or_oblique": 12
+      },
+      "baseline_anchored_scale_m_per_pixel": 0.002315315315315315,
+      "scale_is_camera_calibration": false,
+      "note": "One baseline constraint does not establish an orthographic camera; unknown yaw, lens and depths. No per-part dimension certified."
+    }
+  ],
+  "camera_calibrated": false,
+  "physical_dimensions_measured_on_bike": false,
+  "art_accepted": false
+}

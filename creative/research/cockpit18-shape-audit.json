@@ -1,0 +1,399 @@
+{
+  "schema": "wewa.independent-shape-audit.v1",
+  "date_utc": "2026-10-20",
+  "author_task": "/root/cam_research",
+  "scope": "Independent visual and read-only source audit of instrument-bracket-v1 and handlebar-grips-v2 only; no model/manifest/registry edits.",
+  "decision": "candidates_require_shape_comparison_and_local_rework_before_artistic_acceptance",
+  "art_accepted": false,
+  "metric_calibration_claimed": false,
+  "exact_current_RDC_part_identity_confirmed": false,
+  "method": {
+    "actually_viewed": "Twelve full-resolution files opened with view_image, including three isolated retailer photos, one current official RDC cockpit photo and eight real Blender/Babylon captures.",
+    "source_inspection": "Both actual saved .blend files opened in Blender4.3.2 background, CPU1, no render or save. Both actual GLB containers independently opened and hashed.",
+    "comparison": "Qualitative local contour/feature comparison. Different camera directions and unknown documentary camera prevent calibrated silhouette error, physical dimensions or a realism score.",
+    "not_done": [
+      "No physical dimensions measured",
+      "No camera calibration or matched projection",
+      "No additional renders",
+      "No fabricated/edited documentary photos",
+      "No exact RDC compatibility certification",
+      "No physical iPhone test"
+    ]
+  },
+  "artifacts": {
+    "bracket-photo": {
+      "path": "/workspace/wewa-assets/references/instrument-bracket/PF402404-matriz.jpg",
+      "sha256": "5a676ef460e09ad5d1a946b9c09bf1150b7dfc72c69eadcb0cf9fb72a44c146b",
+      "dimensions_px": [
+        1210,
+        1210
+      ],
+      "actually_visually_inspected": true,
+      "kind": "documentary_photo"
+    },
+    "grip-left-photo": {
+      "path": "/workspace/wewa-assets/references/handlebar-grips/DU191009-left.png",
+      "sha256": "b37b1a49413c5a666ba3c4ae6477a7128b48e2e2aedc378f93424a51eba322ca",
+      "dimensions_px": [
+        690,
+        766
+      ],
+      "actually_visually_inspected": true,
+      "kind": "documentary_photo"
+    },
+    "grip-right-photo": {
+      "path": "/workspace/wewa-assets/references/handlebar-grips/DU191003-right.png",
+      "sha256": "f3b411cfc6040146f07060582f23ef521be0352e66b4b4525342a6efd637a91c",
+      "dimensions_px": [
+        129,
+        129
+      ],
+      "actually_visually_inspected": true,
+      "kind": "documentary_photo"
+    },
+    "rdc-usb-photo": {
+      "path": "/workspace/wewa-assets/references/instruments/official-rdc-usb-meter.png",
+      "sha256": "eb8e10531cbd7f37c1825044a535c07a8549872975440233d86d581b6e3c2663",
+      "dimensions_px": [
+        1000,
+        600
+      ],
+      "actually_visually_inspected": true,
+      "kind": "documentary_photo"
+    },
+    "bracket-blender-front": {
+      "path": "/workspace/wewa-github/creative/reviews/instrument-bracket-v1/front-quarter.png",
+      "sha256": "826d81debe1108b650b2796c33799bc5f84bbf00b94f1a43172ee021b5538c6c",
+      "dimensions_px": [
+        1200,
+        1000
+      ],
+      "actually_visually_inspected": true,
+      "kind": "actual_candidate_render"
+    },
+    "bracket-blender-reverse": {
+      "path": "/workspace/wewa-github/creative/reviews/instrument-bracket-v1/reverse-quarter.png",
+      "sha256": "434bf4570ca3e7c4939c4ecbed03612f5e0cf35878c0b6a1dfc6c38534181bd3",
+      "dimensions_px": [
+        1200,
+        1000
+      ],
+      "actually_visually_inspected": true,
+      "kind": "actual_candidate_render"
+    },
+    "bracket-engine-quarter": {
+      "path": "/workspace/wewa-github/creative/reviews/instrument-bracket-v1/engine-quarter.png",
+      "sha256": "7dc6806fbfbd08b5a18e1fac133b82bf7617dfc705b15306c4072b3266cf4e95",
+      "dimensions_px": [
+        1280,
+        900
+      ],
+      "actually_visually_inspected": true,
+      "kind": "actual_candidate_render"
+    },
+    "bracket-engine-driver": {
+      "path": "/workspace/wewa-github/creative/reviews/instrument-bracket-v1/engine-driver.png",
+      "sha256": "8cb1f513769dd3cf2cc8e775eaac4c0afcb6b60b54543580ad16cf0a29b0acaa",
+      "dimensions_px": [
+        1280,
+        900
+      ],
+      "actually_visually_inspected": true,
+      "kind": "actual_candidate_render"
+    },
+    "grip-blender-left": {
+      "path": "/workspace/wewa-github/creative/reviews/handlebar-grips-v2/left-quarter.png",
+      "sha256": "09c0bbb8813b5d70444d3065c22d808f4bff7a2c7aea3aaae3d6d7ff295b847b",
+      "dimensions_px": [
+        1100,
+        850
+      ],
+      "actually_visually_inspected": true,
+      "kind": "actual_candidate_render"
+    },
+    "grip-blender-right": {
+      "path": "/workspace/wewa-github/creative/reviews/handlebar-grips-v2/right-quarter.png",
+      "sha256": "fd8abb7490171aa01bb6e831f800e53674afd92f700590baab979b56f9aef74c",
+      "dimensions_px": [
+        1100,
+        850
+      ],
+      "actually_visually_inspected": true,
+      "kind": "actual_candidate_render"
+    },
+    "grip-engine-quarter": {
+      "path": "/workspace/wewa-github/creative/reviews/handlebar-grips-v2/engine-quarter.png",
+      "sha256": "226aebc3edc55ac6aad2fe4c61dcf74557ef65f74ba1608fffc2b784726b78ad",
+      "dimensions_px": [
+        1280,
+        900
+      ],
+      "actually_visually_inspected": true,
+      "kind": "actual_candidate_render"
+    },
+    "grip-engine-driver": {
+      "path": "/workspace/wewa-github/creative/reviews/handlebar-grips-v2/engine-driver.png",
+      "sha256": "c29b4fd2d1458aad1afcc9ee67dae68508ed494fc915372329f0e0ea0201049b",
+      "dimensions_px": [
+        1280,
+        900
+      ],
+      "actually_visually_inspected": true,
+      "kind": "actual_candidate_render"
+    }
+  },
+  "actual_model_files": [
+    {
+      "component": "MOTO-INSTRUMENT-BRACKET-001",
+      "source_read_in_blender_4_3_2_cpu_threads": 1,
+      "source_not_saved_or_modified": true,
+      "files": [
+        {
+          "path": "assets-src/moto-components/instrument-bracket/instrument-bracket-v1.blend",
+          "bytes": 3174743,
+          "sha256": "86891d5bbf7e2a0833a74595c949132535995ae8361344065926f562060c75f5"
+        },
+        {
+          "path": "assets-src/moto-components/instrument-bracket/instrument-bracket-inspection.glb",
+          "bytes": 2663592,
+          "sha256": "4e34055d06c00d5f8623d27d0e95752d1d3d035996a46db78989909e0b8855c0",
+          "independent_container_read": {
+            "magic_valid": true,
+            "version": 2,
+            "declared_size_matches": true,
+            "meshes": 1,
+            "primitives": 1
+          }
+        }
+      ]
+    },
+    {
+      "component": "MOTO-HANDLEBAR-GRIPS-001",
+      "source_read_in_blender_4_3_2_cpu_threads": 1,
+      "source_not_saved_or_modified": true,
+      "files": [
+        {
+          "path": "assets-src/moto-components/handlebar-grips/handlebar-grips-v2.blend",
+          "bytes": 9025595,
+          "sha256": "40514ce73d9a5a763fbf98fe2c1d0ab84c248a0d9373a7747895781e18cd98ae"
+        },
+        {
+          "path": "assets-src/moto-components/handlebar-grips/handlebar-grips-v2-inspection.glb",
+          "bytes": 2566376,
+          "sha256": "603def6673b589c192551005c1b79f3e2cc1c83a0b60142343e4ac6948cb8c22",
+          "independent_container_read": {
+            "magic_valid": true,
+            "version": 2,
+            "declared_size_matches": true,
+            "meshes": 2,
+            "primitives": 2
+          }
+        }
+      ]
+    }
+  ],
+  "source_read_observations": [
+    {
+      "component": "instrument-bracket",
+      "collection": "WEWA_INSTRUMENT_BRACKET_ISOLATED",
+      "mesh_count": 1,
+      "vertices": 26943,
+      "polygons": 53893,
+      "working_axis_aligned_dimensions_m": [
+        0.1337912678718567,
+        0.143687903881073,
+        0.021800000220537186
+      ],
+      "dimensions_are": "candidate model bounds, not measured physical part"
+    },
+    {
+      "component": "handlebar-grips-v2",
+      "collection": "WEWA_HANDLEBAR_GRIP_ENVELOPES",
+      "mesh_count": 2,
+      "vertices_each": 71426,
+      "polygons_each": 71616,
+      "working_axis_aligned_dimensions_m_each": [
+        0.1259610652923584,
+        0.0811510980129242,
+        0.040999993681907654
+      ],
+      "dimensions_are": "rotated candidate object bounds, not axial grip length or measured physical dimensions"
+    }
+  ],
+  "supported_features": [
+    {
+      "component": "instrument-bracket",
+      "status": "photo_inferred_related_variant",
+      "references": [
+        "bracket-photo",
+        "bracket-blender-front",
+        "bracket-engine-quarter"
+      ],
+      "observed": "Forked black plate with large open U, two rounded arm ends with closed circular heads, three genuinely open lower/crosspiece passages and three short elongated formed features. Their broad arrangement is preserved by the candidate.",
+      "limit": "One oblique photo; outline was manually traced in its projection. This supports topology and feature arrangement, not deprojected proportions or installation on current USB instruments."
+    },
+    {
+      "component": "handlebar-grips-v2",
+      "status": "photo_inferred_related_variant",
+      "references": [
+        "grip-left-photo",
+        "grip-right-photo",
+        "grip-blender-left",
+        "grip-blender-right"
+      ],
+      "observed": "Long cylindrical rubber body, rounded longitudinal motifs, small neck rings, flared inward flange and closed-looking outward end are visible in the related photos and recognisable in the model.",
+      "limit": "Eight motifs, their relief sign, depth, full circumference, end cavity and exact length/diameter are not certified by these views. Right photo is only129x129px."
+    }
+  ],
+  "findings": [
+    {
+      "id": "CSA-GRIP-01",
+      "component": "handlebar-grips-v2",
+      "priority": "shape_rework_before_fidelity_claim",
+      "confidence": "high_for_visible_projected_difference",
+      "references": [
+        "grip-left-photo",
+        "grip-blender-left",
+        "grip-blender-right"
+      ],
+      "observation": "DU191009 photograph shows broad longitudinal rounded patches/bands on the barrel. Both candidate studio views show narrow line-like channels with much more plain rubber between features. Their visible width relative to their length differs substantially.",
+      "construction_crosscheck": "build_v2.py creates eight inward channels: maximum half-width1.5mm with an inner plateau half-width0.9mm and depth0.45mm, all working estimates. These values are not measured mould dimensions.",
+      "not_claimed": "The photograph alone does not establish whether the broad patch is raised or recessed. No exact width ratio or mm correction is assigned.",
+      "next_action": "Add a photo-like side camera, compare the long motif endcaps and apparent transverse width, then revise motif footprint; keep relief sign explicitly unresolved until another useful light/view exists."
+    },
+    {
+      "id": "CSA-BRACKET-01",
+      "component": "instrument-bracket-v1",
+      "priority": "shape_rework_before_fidelity_claim",
+      "confidence": "high_for_local_feature_shape",
+      "references": [
+        "bracket-photo",
+        "bracket-blender-front",
+        "bracket-engine-quarter"
+      ],
+      "observation": "The long formed rib on the lower bridge of PF402404 is a broad capsule/pressed band with rounded ends in the photo. In the candidate it is a thin tapered lenticular ridge. Short arm ridges are similarly pointed. Placement is recognisable, but the local cross-section/footprint is not faithfully reproduced.",
+      "construction_crosscheck": "All three features use scaled UV spheres in build.py with common working transverse semiaxis1.6mm and vertical semiaxis1.3mm. Treating the broader lower pressed feature as the same narrow ellipsoid loses its visible flat/rounded-end character.",
+      "not_claimed": "The actual rib height, forming tool shape and underside relief are unmeasured.",
+      "next_action": "Before material acceptance, compare a view close to the retailer photo and reconstruct each visible feature footprint separately; use broader rounded-end bridge feature if confirmed by that comparison."
+    },
+    {
+      "id": "CSA-BRACKET-02",
+      "component": "instrument-bracket-v1",
+      "priority": "presentation_fix",
+      "confidence": "certain_in_inspected_capture",
+      "references": [
+        "bracket-engine-driver"
+      ],
+      "observation": "The engine driver capture cuts the lower plate at the bottom frame/UI. The bridge and two lower passages cannot be reviewed completely in this view. The quarter capture does retain the full part.",
+      "next_action": "Frame the whole isolated bracket with margin for UI in a replacement review capture; do not describe this cropped view as full silhouette evidence.",
+      "time_scope": "Applies to the exact capture hash recorded here; a later regenerated capture may supersede it."
+    },
+    {
+      "id": "CSA-GRIP-02",
+      "component": "handlebar-grips-v2",
+      "priority": "comparison_limit",
+      "confidence": "high",
+      "references": [
+        "grip-left-photo",
+        "grip-blender-left",
+        "grip-blender-right",
+        "grip-engine-quarter"
+      ],
+      "observation": "Studio tops of the candidate render light gray/near-white, while the documentary grip is black. Babylon renders it dark. This difference in lights/exposure prevents judging rubber colour or roughness by the existing studio/reference pair.",
+      "next_action": "Compare under a documented neutral setup with an exposure/reference patch before accepting material. Do not correct albedo merely to compensate for the bright studio or call the current difference measured reflectance error."
+    },
+    {
+      "id": "CSA-GRIP-03",
+      "component": "handlebar-grips-v2",
+      "priority": "scope_and_interface_limit",
+      "confidence": "certain_visible_scope",
+      "references": [
+        "grip-right-photo",
+        "grip-blender-right"
+      ],
+      "observation": "The RH retailer photo includes a pale throttle carrier inside the flange. The isolated model is only the rubber envelope. That photo cannot support a claim that the complete photographed RH grip assembly or its fit/function has been reproduced.",
+      "next_action": "Keep rubber envelope and throttle carrier/controls separate in review; the missing carrier is a dependency, not a hidden accepted surface of this candidate."
+    }
+  ],
+  "unresolved_shape_and_fit": [
+    {
+      "component": "instrument-bracket",
+      "items": [
+        "Photo is PF402404 related BM1502012, not certified current RDC USB125 bracket",
+        "Unknown true sheet thickness and out-of-plane joggle",
+        "Backside stud length, pitch, leaning and attachments estimated",
+        "Three raised collars are visible but material/composition not established",
+        "No calibrated opposing view, current-cluster mounting stack or contact clearance proof"
+      ]
+    },
+    {
+      "component": "handlebar-grips-v2",
+      "items": [
+        "Related DU191009/DU191003 identities do not certify current RDC mould",
+        "RH isolated photo resolution129x129 limits end/collar detail",
+        "Full circumferential motif count and relief sign unknown",
+        "Inner cavities, rubber interference and closed end thickness estimated",
+        "No dimensions from pixels or actual grip measurements",
+        "Current official RDC photo confirms assembled context but hides most grip contours"
+      ]
+    }
+  ],
+  "technical_checks_are_not_fidelity": {
+    "what_is_supported": "Source collections exist, actual model files are nonempty and actual GLB containers parse. Existing topology, volume, embedded texture and clear-hole tests are useful technical checks.",
+    "what_is_not_supported": "Closed meshes, positive volume, material channels and valid hashes do not establish correct reference silhouettes, local section shape, physical dimensions, variant identity, mechanical fit or artistic reception.",
+    "gates": "This audit does not pass G2/G3/G4/G5/G8. It identifies local shape work and comparison limitations; it does not revoke the existence of the completed technical artifacts."
+  },
+  "reports_read": [
+    "creative/research/instrument-bracket/reference-observations.json",
+    "creative/research/handlebar-grips/reference-observations.json",
+    "creative/reviews/instrument-bracket-v1/README.md",
+    "creative/reviews/handlebar-grips-v2/README.md",
+    "creative/reviews/instrument-bracket-v1/source-geometry-check.json",
+    "creative/reviews/handlebar-grips-v2/source-geometry-check.json",
+    "creative/reviews/instrument-bracket-v1/render-report.json",
+    "creative/reviews/handlebar-grips-v2/render-report.json",
+    "assets-src/moto-components/instrument-bracket/parameters.json",
+    "assets-src/moto-components/instrument-bracket/provenance.json",
+    "assets-src/moto-components/instrument-bracket/build.py",
+    "assets-src/moto-components/handlebar-grips/parameters-v2.json",
+    "assets-src/moto-components/handlebar-grips/provenance-v2.json",
+    "assets-src/moto-components/handlebar-grips/build_v2.py"
+  ],
+  "next_order": [
+    "Correct review framing",
+    "Match a local documentary camera for the affected visible features",
+    "Revise grip motif footprint and bracket lower rib if confirmed by that view",
+    "Re-export/recheck and generate new exact-revision renders",
+    "Present reference/candidate together with unresolved variant and dimension limits for user decision"
+  ],
+  "analytical_crop_inspected": {
+    "source": "bracket-photo",
+    "source_crop_xyxy_px": [
+      650,
+      680,
+      890,
+      880
+    ],
+    "display_scale_factor": 3,
+    "temporary_path": "/tmp/wewa-bracket-rib-study.png",
+    "independent_view": false,
+    "purpose": "Read the lower pressed rib contour only; no perspective or metric calibration",
+    "approximate_feature_bounds_xyxy_px": [
+      690,
+      731,
+      841,
+      839
+    ],
+    "approximate_pixel_uncertainty": 6,
+    "approximate_axis_endpoints_px": [
+      [
+        706,
+        819
+      ],
+      [
+        822,
+        746
+      ]
+    ]
+  }
+}

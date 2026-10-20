@@ -1,0 +1,1716 @@
+{
+  "schema": "viva-wewa.profile-landmarks.v1",
+  "created_utc": "2026-10-20",
+  "scope": [
+    "tank",
+    "seat",
+    "their_visible_side_cover_and_mount_interfaces"
+  ],
+  "stage": "G2_preparation_image_annotations_only",
+  "not_a_G2_pass": true,
+  "no_3d_geometry_created": true,
+  "reference_guide": {
+    "file": "creative/workflow/motorcycle-datums-v1.json",
+    "sha256": "19bf9708f8777b6216ab0c7d487f9ff685e3bedcdd9806f3c9985db78b5e5c9a",
+    "coordinate_frame": {
+      "origin": "Bare handlebar centre-clamp axis",
+      "X_positive": "Pilot LEFT; verified by actual Blender driver camera projection",
+      "Y_positive": "Pilot/rear",
+      "Z_positive": "Up",
+      "glTF_conversion": "(x,z,-y)"
+    },
+    "unchanged": true
+  },
+  "pixel_convention": {
+    "origin": "top left pixel of original 1000x700 raster",
+    "u": "right",
+    "v": "down",
+    "coordinates": "integer pixel centres, no crop/resize transform applied to stored UV",
+    "uncertainty": "Per-point ±u/±v are conservative manual reading intervals for this raster, not a statistical confidence interval, physical tolerance or artistic acceptance threshold."
+  },
+  "calibration_limits": {
+    "camera_calibrated": false,
+    "orthographic_camera_proven": false,
+    "physical_part_dimensions_measured": false,
+    "world_positions_solved": false,
+    "wheelbase_m": 1.285,
+    "warning": "An axle-separation scale tied to1285mm gives only one projected baseline. It does not establish focal length, yaw/pitch, depth, projection type or an orthographic camera. Do not multiply these profile coordinates by the scale to claim tank/seat dimensions.",
+    "source_pixels_have_uncertainty_beyond_reading": "Cutout/alpha edges, source resampling and different surface depths may bias contours. No numerical camera-error bound has been established."
+  },
+  "views": [
+    {
+      "id": "R00",
+      "private_reference": "/workspace/wewa-assets/references/dimensions-verified/rotation-00.png",
+      "sha256": "82be9285506c65dd8ff3fdba000fe963587548e306691844ed774f685870ea40",
+      "raster_size_px": [
+        1000,
+        700
+      ],
+      "visible_bike_side": "Rider RIGHT; X negative in cockpit datum frame",
+      "front_in_image": "right",
+      "source": "D01 official RDC turntable raster; original capture/render and camera not published",
+      "annotation_method": "Manual reading on original raster displayed with pixel axes; cap grey-envelope check from local RGBA pixels. No original reference edited.",
+      "guide_pixel_anchors_copied_without_change": {
+        "front_axle_uv": [
+          797,
+          494
+        ],
+        "rear_axle_uv": [
+          270,
+          494
+        ],
+        "bar_clamp_uv": [
+          625,
+          190
+        ]
+      },
+      "guide_baseline_scale_m_per_px_copied": 0.0024383301707779884,
+      "baseline_scale_use": "Display/initial alignment aid only; not used to create metric part dimensions or world points.",
+      "points": {
+        "tank_upper_rear_visible_start": {
+          "uv_px": [
+            496,
+            254
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null,
+          "note": "Red boundary emerging beside the seat nose; tank continues behind the seat."
+        },
+        "tank_upper_rear_a": {
+          "uv_px": [
+            513,
+            246
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_upper_rear_b": {
+          "uv_px": [
+            533,
+            239
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_upper_rear_c": {
+          "uv_px": [
+            548,
+            236
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_upper_at_cap_rear": {
+          "uv_px": [
+            557,
+            235
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "cap_gray_rear_limit": {
+          "uv_px": [
+            558,
+            234
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_cap_projection",
+          "world_position_m": null
+        },
+        "cap_gray_top": {
+          "uv_px": [
+            576,
+            232
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            2
+          ],
+          "kind": "visible_cap_projection",
+          "world_position_m": null
+        },
+        "cap_gray_front_limit": {
+          "uv_px": [
+            596,
+            235
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_cap_projection",
+          "world_position_m": null
+        },
+        "cap_gray_bbox_centre": {
+          "uv_px": [
+            577,
+            234
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            3
+          ],
+          "kind": "image_envelope_centre_not_3d_axis",
+          "world_position_m": null,
+          "note": "Centre of visible grey cap pixels, not the 3D cap-axis location."
+        },
+        "tank_upper_front_at_cap": {
+          "uv_px": [
+            598,
+            236
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_upper_front_a": {
+          "uv_px": [
+            616,
+            240
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_upper_front_b": {
+          "uv_px": [
+            632,
+            248
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_upper_front_c": {
+          "uv_px": [
+            644,
+            257
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_front_near_headstock": {
+          "uv_px": [
+            651,
+            261
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            5,
+            4
+          ],
+          "kind": "visible_edge_against_occluding_headstock",
+          "world_position_m": null
+        },
+        "tank_front_edge_a": {
+          "uv_px": [
+            659,
+            274
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "red_black_boundary_may_include_occlusion",
+          "world_position_m": null
+        },
+        "tank_front_edge_b": {
+          "uv_px": [
+            664,
+            291
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "red_black_boundary_may_include_occlusion",
+          "world_position_m": null
+        },
+        "tank_front_edge_c": {
+          "uv_px": [
+            665,
+            309
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "red_black_boundary_may_include_occlusion",
+          "world_position_m": null
+        },
+        "tank_front_lower_round": {
+          "uv_px": [
+            661,
+            325
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            4
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_lower_front_a": {
+          "uv_px": [
+            650,
+            332
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_lower_front_b": {
+          "uv_px": [
+            636,
+            335
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_lower_front_c": {
+          "uv_px": [
+            616,
+            337
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_lower_middle_a": {
+          "uv_px": [
+            589,
+            337
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_lower_middle_b": {
+          "uv_px": [
+            558,
+            334
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_lower_rear_visible_end": {
+          "uv_px": [
+            523,
+            331
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            5,
+            4
+          ],
+          "kind": "visible_edge_near_cover_overlap",
+          "world_position_m": null,
+          "note": "Do not continue a hidden rear/underside outline beneath the cover from this point."
+        },
+        "seat_rear_top_corner": {
+          "uv_px": [
+            174,
+            239
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_top_rear_a": {
+          "uv_px": [
+            200,
+            242
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_top_rear_b": {
+          "uv_px": [
+            250,
+            246
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_top_middle_a": {
+          "uv_px": [
+            300,
+            250
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_top_middle_b": {
+          "uv_px": [
+            350,
+            253
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_top_front_a": {
+          "uv_px": [
+            400,
+            255
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_top_front_b": {
+          "uv_px": [
+            450,
+            255
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_nose_rise": {
+          "uv_px": [
+            476,
+            251
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_nose_tip": {
+          "uv_px": [
+            489,
+            250
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_nose_frontmost_visible": {
+          "uv_px": [
+            494,
+            254
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "joint_seat_tank_upper": {
+          "uv_px": [
+            491,
+            259
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "visible_material_interface_not_free_tank_contour",
+          "world_position_m": null
+        },
+        "joint_seat_tank_a": {
+          "uv_px": [
+            484,
+            276
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "visible_material_interface_not_free_tank_contour",
+          "world_position_m": null
+        },
+        "joint_seat_tank_b": {
+          "uv_px": [
+            477,
+            292
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "visible_material_interface_not_free_tank_contour",
+          "world_position_m": null
+        },
+        "joint_seat_tank_c": {
+          "uv_px": [
+            468,
+            306
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "visible_material_interface_not_free_tank_contour",
+          "world_position_m": null
+        },
+        "joint_seat_tank_lower": {
+          "uv_px": [
+            458,
+            315
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            5,
+            4
+          ],
+          "kind": "three_surface_overlap_boundary",
+          "world_position_m": null,
+          "note": "Seat/tank/cover overlap; not the rear-most geometric point of the tank."
+        },
+        "seat_lower_front_a": {
+          "uv_px": [
+            430,
+            316
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            5,
+            4
+          ],
+          "kind": "fabric_lower_edge_over_dark_frame",
+          "world_position_m": null
+        },
+        "seat_lower_front_b": {
+          "uv_px": [
+            400,
+            316
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            5,
+            4
+          ],
+          "kind": "fabric_lower_edge_over_dark_frame",
+          "world_position_m": null
+        },
+        "seat_lower_middle_a": {
+          "uv_px": [
+            365,
+            316
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            6,
+            5
+          ],
+          "kind": "fabric_lower_edge_over_dark_frame",
+          "world_position_m": null
+        },
+        "seat_lower_middle_b": {
+          "uv_px": [
+            330,
+            315
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            6,
+            5
+          ],
+          "kind": "fabric_lower_edge_over_dark_frame",
+          "world_position_m": null
+        },
+        "seat_lower_middle_c": {
+          "uv_px": [
+            290,
+            310
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            6,
+            5
+          ],
+          "kind": "fabric_lower_edge_over_dark_frame",
+          "world_position_m": null
+        },
+        "seat_lower_rear_a": {
+          "uv_px": [
+            252,
+            304
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            6,
+            5
+          ],
+          "kind": "fabric_lower_edge_over_dark_frame",
+          "world_position_m": null
+        },
+        "seat_lower_rear_visible_patch": {
+          "uv_px": [
+            207,
+            297
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            5,
+            4
+          ],
+          "kind": "fabric_edge_patch_between_rack_members",
+          "world_position_m": null
+        },
+        "seat_rear_lower_visible_patch": {
+          "uv_px": [
+            172,
+            289
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            6,
+            6
+          ],
+          "kind": "partly_occluded_rear_fabric_edge",
+          "world_position_m": null,
+          "note": "Do not connect across diagonal rack tubes as a continuous measured edge."
+        },
+        "cover_upper_rear_visible": {
+          "uv_px": [
+            371,
+            320
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            5,
+            4
+          ],
+          "kind": "visible_red_cover_black_seat_frame_interface",
+          "world_position_m": null
+        },
+        "cover_upper_middle_visible": {
+          "uv_px": [
+            413,
+            319
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            5,
+            4
+          ],
+          "kind": "visible_red_cover_black_seat_frame_interface",
+          "world_position_m": null
+        },
+        "cover_upper_front_overlap": {
+          "uv_px": [
+            472,
+            323
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            7,
+            5
+          ],
+          "kind": "tank_cover_red_red_overlap_not_certified_seam",
+          "world_position_m": null
+        },
+        "lateral_frame_fastener_visible": {
+          "uv_px": [
+            342,
+            333
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "visible_fastener_not_certified_seat_mount",
+          "world_position_m": null,
+          "note": "Near upper rear-shock/frame region; do not relabel as a seat fixing."
+        },
+        "rack_adjacent_fastener_visible": {
+          "uv_px": [
+            232,
+            302
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            6,
+            5
+          ],
+          "kind": "visible_fastener_function_unconfirmed",
+          "world_position_m": null,
+          "note": "At rack-diagonal/seat-base overlap; candidate rack/support fastening, not a certified seat mount."
+        }
+      },
+      "segments": [
+        {
+          "id": "tank_upper_rear",
+          "component": "tank",
+          "point_ids": [
+            "tank_upper_rear_visible_start",
+            "tank_upper_rear_a",
+            "tank_upper_rear_b",
+            "tank_upper_rear_c",
+            "tank_upper_at_cap_rear"
+          ],
+          "status": "visible_open_contour",
+          "closed": false,
+          "use": "Comparison polyline only; not a metric CAD section or proof of camera calibration.",
+          "note": "Only the red shell visible behind the cap and beside the seat; no continuation beneath cap/seat."
+        },
+        {
+          "id": "tank_upper_front",
+          "component": "tank",
+          "point_ids": [
+            "tank_upper_front_at_cap",
+            "tank_upper_front_a",
+            "tank_upper_front_b",
+            "tank_upper_front_c",
+            "tank_front_near_headstock"
+          ],
+          "status": "visible_open_contour",
+          "closed": false,
+          "use": "Comparison polyline only; not a metric CAD section or proof of camera calibration."
+        },
+        {
+          "id": "tank_front_occlusion_edge",
+          "component": "tank",
+          "point_ids": [
+            "tank_front_near_headstock",
+            "tank_front_edge_a",
+            "tank_front_edge_b",
+            "tank_front_edge_c",
+            "tank_front_lower_round"
+          ],
+          "status": "observed_boundary_with_occlusion_caution",
+          "closed": false,
+          "use": "Comparison polyline only; not a metric CAD section or proof of camera calibration.",
+          "note": "Red/black edge adjacent to the steering/frame assembly; do not equate every sample to a free 3D shell silhouette."
+        },
+        {
+          "id": "tank_lower_visible",
+          "component": "tank",
+          "point_ids": [
+            "tank_front_lower_round",
+            "tank_lower_front_a",
+            "tank_lower_front_b",
+            "tank_lower_front_c",
+            "tank_lower_middle_a",
+            "tank_lower_middle_b",
+            "tank_lower_rear_visible_end"
+          ],
+          "status": "visible_open_contour",
+          "closed": false,
+          "use": "Comparison polyline only; not a metric CAD section or proof of camera calibration."
+        },
+        {
+          "id": "seat_upper_visible",
+          "component": "seat",
+          "point_ids": [
+            "seat_rear_top_corner",
+            "seat_top_rear_a",
+            "seat_top_rear_b",
+            "seat_top_middle_a",
+            "seat_top_middle_b",
+            "seat_top_front_a",
+            "seat_top_front_b",
+            "seat_nose_rise",
+            "seat_nose_tip",
+            "seat_nose_frontmost_visible"
+          ],
+          "status": "visible_open_contour",
+          "closed": false,
+          "use": "Comparison polyline only; not a metric CAD section or proof of camera calibration."
+        },
+        {
+          "id": "seat_tank_interface",
+          "component": "tank_seat_joint",
+          "point_ids": [
+            "joint_seat_tank_upper",
+            "joint_seat_tank_a",
+            "joint_seat_tank_b",
+            "joint_seat_tank_c",
+            "joint_seat_tank_lower"
+          ],
+          "status": "visible_material_interface",
+          "closed": false,
+          "use": "Comparison polyline only; not a metric CAD section or proof of camera calibration.",
+          "note": "Common visible boundary: neither tank rear cut plane nor depth/section of the seat."
+        },
+        {
+          "id": "seat_lower_front_middle",
+          "component": "seat",
+          "point_ids": [
+            "joint_seat_tank_lower",
+            "seat_lower_front_a",
+            "seat_lower_front_b",
+            "seat_lower_middle_a",
+            "seat_lower_middle_b",
+            "seat_lower_middle_c",
+            "seat_lower_rear_a"
+          ],
+          "status": "low_contrast_visible_edge",
+          "closed": false,
+          "use": "Comparison polyline only; not a metric CAD section or proof of camera calibration.",
+          "note": "Endpoint precision is poorer because black fabric overlaps black base/frame."
+        },
+        {
+          "id": "cover_top_fragment",
+          "component": "side_cover_interface",
+          "point_ids": [
+            "cover_upper_rear_visible",
+            "cover_upper_middle_visible"
+          ],
+          "status": "visible_interface_fragment",
+          "closed": false,
+          "use": "Comparison polyline only; not a metric CAD section or proof of camera calibration.",
+          "note": "Do not join onward to the tank across merged red surfaces."
+        }
+      ],
+      "occluded_or_unresolved": [
+        {
+          "region": "tank top beneath cap",
+          "between_points": [
+            "tank_upper_at_cap_rear",
+            "tank_upper_front_at_cap"
+          ],
+          "reason": "Cap covers the actual shell crown under its footprint.",
+          "do_not": "Fit an inferred shell arc through the cap envelope and call it measured."
+        },
+        {
+          "region": "rear tank shell and underside beneath seat/cover",
+          "near_points": [
+            "joint_seat_tank_lower",
+            "tank_lower_rear_visible_end"
+          ],
+          "reason": "Seat nose and same-red cover overlap/merge with tank; depth ordering is partly hidden.",
+          "do_not": "Close a rear tank wall, tunnel or bracket profile from these image points."
+        },
+        {
+          "region": "seat rear/lower sections crossed by rack",
+          "near_points": [
+            "seat_rear_lower_visible_patch",
+            "rack_adjacent_fastener_visible",
+            "seat_lower_rear_visible_patch"
+          ],
+          "reason": "Rack rails and mounting hardware cross in front; isolated visible patches are not one free contour.",
+          "do_not": "Connect patches across the occluders as a certified seat outline."
+        },
+        {
+          "region": "tank front rubber mounts / rear support / seat mounts",
+          "uv_px": null,
+          "reason": "No mount is identified unambiguously in these profiles; visible silver heads belong to adjacent assemblies or remain unconfirmed.",
+          "do_not": "Turn image fasteners or the tank-seat seam into a 3D mounting datum."
+        }
+      ]
+    },
+    {
+      "id": "R04",
+      "private_reference": "/workspace/wewa-assets/references/dimensions-verified/rotation-04.png",
+      "sha256": "b086dedb4a2bcbc2644aab9578a3d1efa7445e163459b444b3687047bf2e8e02",
+      "raster_size_px": [
+        1000,
+        700
+      ],
+      "visible_bike_side": "Rider LEFT; X positive in cockpit datum frame",
+      "front_in_image": "left",
+      "source": "D01 official RDC turntable raster; original capture/render and camera not published",
+      "annotation_method": "Manual reading on original raster displayed with pixel axes; cap grey-envelope check from local RGBA pixels. No original reference edited.",
+      "guide_pixel_anchors_copied_without_change": {
+        "front_axle_uv": [
+          202,
+          494
+        ],
+        "rear_axle_uv": [
+          757,
+          494
+        ],
+        "bar_clamp_uv": [
+          364,
+          188
+        ]
+      },
+      "guide_baseline_scale_m_per_px_copied": 0.002315315315315315,
+      "baseline_scale_use": "Display/initial alignment aid only; not used to create metric part dimensions or world points.",
+      "points": {
+        "tank_front_upper_visible_start": {
+          "uv_px": [
+            355,
+            264
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "visible_red_edge_near_headstock",
+          "world_position_m": null
+        },
+        "tank_upper_front_a": {
+          "uv_px": [
+            368,
+            253
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_upper_front_b": {
+          "uv_px": [
+            386,
+            244
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_upper_front_at_cap": {
+          "uv_px": [
+            401,
+            237
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "cap_gray_front_limit": {
+          "uv_px": [
+            403,
+            235
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_cap_projection",
+          "world_position_m": null
+        },
+        "cap_gray_top": {
+          "uv_px": [
+            422,
+            232
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            2
+          ],
+          "kind": "visible_cap_projection",
+          "world_position_m": null
+        },
+        "cap_gray_rear_limit": {
+          "uv_px": [
+            441,
+            235
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_cap_projection",
+          "world_position_m": null
+        },
+        "cap_gray_bbox_centre": {
+          "uv_px": [
+            422,
+            234
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            3
+          ],
+          "kind": "image_envelope_centre_not_3d_axis",
+          "world_position_m": null,
+          "note": "Centre of visible grey cap pixels, not the 3D cap-axis location."
+        },
+        "tank_upper_rear_at_cap": {
+          "uv_px": [
+            444,
+            238
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_upper_rear_a": {
+          "uv_px": [
+            461,
+            241
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_upper_rear_b": {
+          "uv_px": [
+            483,
+            247
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_upper_rear_c": {
+          "uv_px": [
+            502,
+            255
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_upper_rear_visible_end": {
+          "uv_px": [
+            511,
+            261
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "visible_red_edge_entering_seat_occlusion",
+          "world_position_m": null
+        },
+        "tank_front_edge_a": {
+          "uv_px": [
+            346,
+            278
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "red_black_boundary_may_include_occlusion",
+          "world_position_m": null
+        },
+        "tank_front_edge_b": {
+          "uv_px": [
+            337,
+            296
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "red_black_boundary_may_include_occlusion",
+          "world_position_m": null
+        },
+        "tank_front_edge_c": {
+          "uv_px": [
+            337,
+            315
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "red_black_boundary_may_include_occlusion",
+          "world_position_m": null
+        },
+        "tank_lower_front_round": {
+          "uv_px": [
+            345,
+            329
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_lower_front_a": {
+          "uv_px": [
+            360,
+            336
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_lower_front_b": {
+          "uv_px": [
+            380,
+            338
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_lower_middle_a": {
+          "uv_px": [
+            407,
+            337
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_lower_middle_b": {
+          "uv_px": [
+            438,
+            334
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "tank_lower_rear_visible_end": {
+          "uv_px": [
+            477,
+            331
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            5,
+            4
+          ],
+          "kind": "visible_edge_near_cover_overlap",
+          "world_position_m": null,
+          "note": "Stop before the partly hidden rear tank/side-cover junction."
+        },
+        "seat_nose_frontmost_visible": {
+          "uv_px": [
+            511,
+            253
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_nose_top": {
+          "uv_px": [
+            520,
+            250
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_top_front_a": {
+          "uv_px": [
+            548,
+            254
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_top_front_b": {
+          "uv_px": [
+            590,
+            254
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_top_middle_a": {
+          "uv_px": [
+            640,
+            251
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_top_middle_b": {
+          "uv_px": [
+            690,
+            247
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_top_rear_a": {
+          "uv_px": [
+            740,
+            242
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_top_rear_b": {
+          "uv_px": [
+            790,
+            238
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            2
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_rear_top_corner": {
+          "uv_px": [
+            825,
+            234
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            3,
+            3
+          ],
+          "kind": "visible_image_boundary",
+          "world_position_m": null
+        },
+        "seat_rear_above_rack": {
+          "uv_px": [
+            834,
+            245
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "rear_edge_above_rack_occlusion",
+          "world_position_m": null
+        },
+        "joint_seat_tank_upper": {
+          "uv_px": [
+            515,
+            261
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "visible_material_interface_not_free_tank_contour",
+          "world_position_m": null
+        },
+        "joint_seat_tank_a": {
+          "uv_px": [
+            522,
+            277
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "visible_material_interface_not_free_tank_contour",
+          "world_position_m": null
+        },
+        "joint_seat_tank_b": {
+          "uv_px": [
+            530,
+            294
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "visible_material_interface_not_free_tank_contour",
+          "world_position_m": null
+        },
+        "joint_seat_tank_c": {
+          "uv_px": [
+            537,
+            307
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "visible_material_interface_not_free_tank_contour",
+          "world_position_m": null
+        },
+        "joint_seat_tank_lower": {
+          "uv_px": [
+            545,
+            315
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            5,
+            4
+          ],
+          "kind": "three_surface_overlap_boundary",
+          "world_position_m": null,
+          "note": "Seat/tank/cover overlap; not the complete rear tank termination."
+        },
+        "seat_lower_front_a": {
+          "uv_px": [
+            576,
+            315
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            5,
+            4
+          ],
+          "kind": "fabric_lower_edge_over_dark_frame",
+          "world_position_m": null
+        },
+        "seat_lower_front_b": {
+          "uv_px": [
+            610,
+            315
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            5,
+            4
+          ],
+          "kind": "fabric_lower_edge_over_dark_frame",
+          "world_position_m": null
+        },
+        "seat_lower_middle_a": {
+          "uv_px": [
+            646,
+            312
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            6,
+            5
+          ],
+          "kind": "fabric_lower_edge_over_dark_frame",
+          "world_position_m": null
+        },
+        "seat_lower_middle_b": {
+          "uv_px": [
+            682,
+            308
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            6,
+            5
+          ],
+          "kind": "fabric_lower_edge_over_dark_frame",
+          "world_position_m": null
+        },
+        "seat_lower_rear_visible_end": {
+          "uv_px": [
+            715,
+            303
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            7,
+            5
+          ],
+          "kind": "fabric_edge_approaching_rack_occlusion",
+          "world_position_m": null
+        },
+        "seat_rear_lower_visible_patch": {
+          "uv_px": [
+            832,
+            286
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            7,
+            7
+          ],
+          "kind": "partly_occluded_rear_fabric_edge",
+          "world_position_m": null,
+          "note": "A short patch behind rack tubes, not a reliable complete rear outline."
+        },
+        "cover_upper_front_overlap": {
+          "uv_px": [
+            527,
+            320
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            7,
+            5
+          ],
+          "kind": "tank_cover_red_red_overlap_not_certified_seam",
+          "world_position_m": null
+        },
+        "cover_upper_middle_visible": {
+          "uv_px": [
+            574,
+            318
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            5,
+            4
+          ],
+          "kind": "visible_red_cover_black_seat_frame_interface",
+          "world_position_m": null
+        },
+        "cover_upper_rear_visible": {
+          "uv_px": [
+            625,
+            318
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            5,
+            4
+          ],
+          "kind": "visible_red_cover_black_seat_frame_interface",
+          "world_position_m": null
+        },
+        "lateral_frame_fastener_visible": {
+          "uv_px": [
+            660,
+            333
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            4,
+            4
+          ],
+          "kind": "visible_fastener_not_certified_seat_mount",
+          "world_position_m": null,
+          "note": "Near upper rear-shock/frame region; not a certified seat fixing."
+        },
+        "rack_adjacent_fastener_visible": {
+          "uv_px": [
+            776,
+            299
+          ],
+          "reading_uncertainty_plus_minus_px": [
+            6,
+            5
+          ],
+          "kind": "visible_fastener_function_unconfirmed",
+          "world_position_m": null,
+          "note": "At rack-diagonal/seat-base overlap; candidate support fastening, not a certified seat mount."
+        }
+      },
+      "segments": [
+        {
+          "id": "tank_upper_front",
+          "component": "tank",
+          "point_ids": [
+            "tank_front_upper_visible_start",
+            "tank_upper_front_a",
+            "tank_upper_front_b",
+            "tank_upper_front_at_cap"
+          ],
+          "status": "visible_open_contour",
+          "closed": false,
+          "use": "Comparison polyline only; not a metric CAD section or proof of camera calibration."
+        },
+        {
+          "id": "tank_upper_rear",
+          "component": "tank",
+          "point_ids": [
+            "tank_upper_rear_at_cap",
+            "tank_upper_rear_a",
+            "tank_upper_rear_b",
+            "tank_upper_rear_c",
+            "tank_upper_rear_visible_end"
+          ],
+          "status": "visible_open_contour",
+          "closed": false,
+          "use": "Comparison polyline only; not a metric CAD section or proof of camera calibration."
+        },
+        {
+          "id": "tank_front_occlusion_edge",
+          "component": "tank",
+          "point_ids": [
+            "tank_front_upper_visible_start",
+            "tank_front_edge_a",
+            "tank_front_edge_b",
+            "tank_front_edge_c",
+            "tank_lower_front_round"
+          ],
+          "status": "observed_boundary_with_occlusion_caution",
+          "closed": false,
+          "use": "Comparison polyline only; not a metric CAD section or proof of camera calibration.",
+          "note": "Near-side frame/steering overlaps parts of the frontal red boundary."
+        },
+        {
+          "id": "tank_lower_visible",
+          "component": "tank",
+          "point_ids": [
+            "tank_lower_front_round",
+            "tank_lower_front_a",
+            "tank_lower_front_b",
+            "tank_lower_middle_a",
+            "tank_lower_middle_b",
+            "tank_lower_rear_visible_end"
+          ],
+          "status": "visible_open_contour",
+          "closed": false,
+          "use": "Comparison polyline only; not a metric CAD section or proof of camera calibration."
+        },
+        {
+          "id": "seat_upper_visible",
+          "component": "seat",
+          "point_ids": [
+            "seat_nose_frontmost_visible",
+            "seat_nose_top",
+            "seat_top_front_a",
+            "seat_top_front_b",
+            "seat_top_middle_a",
+            "seat_top_middle_b",
+            "seat_top_rear_a",
+            "seat_top_rear_b",
+            "seat_rear_top_corner",
+            "seat_rear_above_rack"
+          ],
+          "status": "visible_open_contour",
+          "closed": false,
+          "use": "Comparison polyline only; not a metric CAD section or proof of camera calibration."
+        },
+        {
+          "id": "seat_tank_interface",
+          "component": "tank_seat_joint",
+          "point_ids": [
+            "joint_seat_tank_upper",
+            "joint_seat_tank_a",
+            "joint_seat_tank_b",
+            "joint_seat_tank_c",
+            "joint_seat_tank_lower"
+          ],
+          "status": "visible_material_interface",
+          "closed": false,
+          "use": "Comparison polyline only; not a metric CAD section or proof of camera calibration.",
+          "note": "Occlusion boundary of seat nose over tank: do not invent a tank rear face here."
+        },
+        {
+          "id": "seat_lower_front_middle",
+          "component": "seat",
+          "point_ids": [
+            "joint_seat_tank_lower",
+            "seat_lower_front_a",
+            "seat_lower_front_b",
+            "seat_lower_middle_a",
+            "seat_lower_middle_b",
+            "seat_lower_rear_visible_end"
+          ],
+          "status": "low_contrast_visible_edge",
+          "closed": false,
+          "use": "Comparison polyline only; not a metric CAD section or proof of camera calibration.",
+          "note": "Stop before the rack diagonal obscures the seat/base outline."
+        },
+        {
+          "id": "cover_top_fragment",
+          "component": "side_cover_interface",
+          "point_ids": [
+            "cover_upper_middle_visible",
+            "cover_upper_rear_visible"
+          ],
+          "status": "visible_interface_fragment",
+          "closed": false,
+          "use": "Comparison polyline only; not a metric CAD section or proof of camera calibration."
+        }
+      ],
+      "occluded_or_unresolved": [
+        {
+          "region": "tank top under cap",
+          "between_points": [
+            "tank_upper_front_at_cap",
+            "tank_upper_rear_at_cap"
+          ],
+          "reason": "Cap interrupts the shell outline.",
+          "do_not": "Use the cap top as the shell height or a tank section measurement."
+        },
+        {
+          "region": "tank rear beneath seat and cover",
+          "near_points": [
+            "joint_seat_tank_lower",
+            "tank_lower_rear_visible_end"
+          ],
+          "reason": "Tank/seat/cover are overlapping surfaces, not a photographed rear cross-section.",
+          "do_not": "Invent rear tank thickness, attachment or underside from a red-red transition."
+        },
+        {
+          "region": "seat rear wall and underside behind rack diagonal",
+          "near_points": [
+            "seat_rear_above_rack",
+            "seat_rear_lower_visible_patch",
+            "seat_lower_rear_visible_end",
+            "rack_adjacent_fastener_visible"
+          ],
+          "reason": "Rail crosses the fabric side and masks the lower/rear outline.",
+          "do_not": "Treat the rack top edge as a seat seam or interpolate a hidden rear cap."
+        },
+        {
+          "region": "actual saddle/tank fixing points",
+          "uv_px": null,
+          "reason": "No unambiguous mounting-axis centre visible.",
+          "do_not": "Adopt adjacent frame/shock or rack fasteners as seat attachment positions."
+        }
+      ]
+    }
+  ],
+  "cross_view_correspondences": [
+    {
+      "semantic": "visible fuel-cap envelope centre",
+      "R00": "cap_gray_bbox_centre",
+      "R04": "cap_gray_bbox_centre",
+      "same_3d_point": false,
+      "relation": "Same component feature, different near/far envelope and perspective. Not a reconstructed physical centre."
+    },
+    {
+      "semantic": "seat front/nose extreme",
+      "R00": "seat_nose_frontmost_visible",
+      "R04": "seat_nose_frontmost_visible",
+      "same_3d_point": false,
+      "relation": "Opposite lateral silhouette points on shared seat; do not mirror their pixel coordinates into a 3D centreline."
+    },
+    {
+      "semantic": "seat rear top crown",
+      "R00": "seat_rear_top_corner",
+      "R04": "seat_rear_top_corner",
+      "same_3d_point": false,
+      "relation": "Opposite-side projected crown; rack occlusion differs."
+    },
+    {
+      "semantic": "lower seat/tank/cover junction",
+      "R00": "joint_seat_tank_lower",
+      "R04": "joint_seat_tank_lower",
+      "same_3d_point": false,
+      "relation": "Corresponding visible junction region, not a shared bolt, cross-section or precisely identified material point."
+    },
+    {
+      "semantic": "lateral frame/shock-area fastener",
+      "R00": "lateral_frame_fastener_visible",
+      "R04": "lateral_frame_fastener_visible",
+      "same_3d_point": false,
+      "relation": "Opposite-side hardware; no claim of coincident axes or saddle-mount identity."
+    },
+    {
+      "semantic": "rack-adjacent visible fastening",
+      "R00": "rack_adjacent_fastener_visible",
+      "R04": "rack_adjacent_fastener_visible",
+      "same_3d_point": false,
+      "relation": "Opposite-side observations with uncertain function; not interchangeable attachment datums."
+    }
+  ],
+  "asymmetry_rules": [
+    "R00 observes the right-side skins (X negative); R04 observes left-side skins (X positive). They are not mirror photographs with a known shared camera.",
+    "The guide baselines differ (527px in R00 and555px in R04). Preserve the recorded camera/guide uncertainty rather than deforming parts until both look identical.",
+    "The tank and saddle may have approximately bilateral main forms, but section symmetry is not proved by two non-calibrated side images. Keep lateral controls independently comparable.",
+    "Left and right covers are separate components. Their visible red interfaces do not prove common pions, screw positions or depth; no hidden geometry is annotated.",
+    "Decal edges, painted highlights and shading bands are not physical silhouette or seams. Manufacturer graphics remain documentary and are not transferred into WEWA textures."
+  ],
+  "attachment_handoff": {
+    "tank_front_mount": {
+      "world_position_m": null,
+      "image_point": null,
+      "state": "unobserved",
+      "next_evidence": "Front/underside tank and actual rubber supports with scale; D04/D15 mounting drawings remain related-variant only."
+    },
+    "tank_rear_mount": {
+      "world_position_m": null,
+      "image_point": null,
+      "state": "occluded_by_seat_cover",
+      "next_evidence": "Tank/seat separated or a clear underside photograph with scale."
+    },
+    "seat_fixings": {
+      "world_position_m": null,
+      "image_point": null,
+      "state": "unidentified_in_current_profiles",
+      "next_evidence": "Mounted saddle fixings with seat lifted/removed; do not transfer related JV191001 underside dimensions without measurement."
+    },
+    "rack_frame_visible_heads": "Only image observations are supplied. Their function and axes must be confirmed before constraints are added."
+  },
+  "next_manufacturer_comparison_protocol": [
+    "Keep the original raster/hash and these annotations fixed. Display projected candidate overlays at1000x700 with UV origin top-left; log any display crop/scale separately.",
+    "Use the shared cockpit axes: tank/seat in the same assembly frame, front toward-Y and up+Z. For an initial side comparison, camera on-X observes right side likeR00, camera on+X observes left side likeR04; yaw/pitch/focal length still require explicit fitting or measurement.",
+    "Fit/record camera hypotheses and use the unchanged wheel/handlebar guide anchors first. A convenient orthographic preview is allowed only as a named hypothesis, not as proof that the source is orthographic.",
+    "Compare upper shell, seat top, nose seam and lower visible arcs as separate open segments. Do not close contours across cap, rack, cover or steering occlusions.",
+    "Check each side independently. Annotated image reading intervals do not include unknown projection error; remaining disagreement may be camera, depth or genuine asymmetry, not automatically a shape defect.",
+    "Obtain tank top/front/back/underside and saddle top/underside with a scale before asserting transverse sections, thicknesses, actual mounting datums or physical part dimensions.",
+    "No component receives G3/G8 approval from this annotation JSON; no previous component or central datum is moved here."
+  ]
+}

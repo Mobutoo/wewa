@@ -1,0 +1,1248 @@
+{
+  "schema": 1,
+  "date": "2026-10-20",
+  "scope": "G2 preparation only for future mirror and windshield. No camera calibration, measuredmm, 3Dfabrication or gateacceptance.",
+  "coordinate_reference": {
+    "path": "creative/workflow/motorcycle-datums-v1.json",
+    "sha256": "19bf9708f8777b6216ab0c7d487f9ff685e3bedcdd9806f3c9985db78b5e5c9a",
+    "Xpositive": "PilotLEFT",
+    "Xnegative": "PilotRIGHT",
+    "Ypositive": "Pilot/rear",
+    "Zpositive": "Up"
+  },
+  "pixel_convention": {
+    "origin": "Upper-left native image pixel",
+    "u": "Right",
+    "v": "Down",
+    "units": "px",
+    "image_resizing_allowed_for_coordinate_reading": false,
+    "normalisation_if_needed": "u/nativewidth, v/nativeheight only, never converted to physicalscale"
+  },
+  "annotation_method": "Manually observed landmarks at native resolution. Local numericpixel edge queries used to refine highcontrast outerbounds. Soft reading uncertainty, not statistical confidence or mechanical tolerance.",
+  "projection_policy": "First fit an independent provisionalcamera/objectpose per image with documented residuals. Global740mm bike width and productpackaging do not calibrate a mirror/visor. Hidden sections remain free/unknown rather than forced by2Dtrace.",
+  "images": [
+    {
+      "file": "/workspace/wewa-assets/references/forward-cockpit-18/mirror-LH-back.jpg",
+      "sha256": "e6698b00fb0b9d0a45c45789b56dae2410e63eb6166d5a377b47f2d00664465a",
+      "pixels": [
+        1946,
+        2595
+      ],
+      "identity": "Retailer DJ221003 left mirror, related part only",
+      "direction": "Oblique rear/back of head; stem and stud also visible",
+      "actually_inspected_at_native_resolution": true,
+      "shape_annotations": [
+        {
+          "component": "back_shell_upper_and_outboard_outline",
+          "contour_is_closed": false,
+          "contour_order": "Neckupper to crown, rightside and lowertip",
+          "points": [
+            {
+              "id": "M-neck-upper",
+              "uv_px": [
+                915,
+                1068
+              ],
+              "feature": "shell/boot junction",
+              "uncertainty_radius_px": 18
+            },
+            {
+              "id": "M-upper-inboard",
+              "uv_px": [
+                1004,
+                1050
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 15
+            },
+            {
+              "id": "M-upper-quarter",
+              "uv_px": [
+                1128,
+                950
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 12
+            },
+            {
+              "id": "M-crown",
+              "uv_px": [
+                1300,
+                884
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 12
+            },
+            {
+              "id": "M-upper-outboard",
+              "uv_px": [
+                1544,
+                950
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 12
+            },
+            {
+              "id": "M-outboard-shoulder",
+              "uv_px": [
+                1744,
+                1050
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 15
+            },
+            {
+              "id": "M-outboard-upper",
+              "uv_px": [
+                1875,
+                1150
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 15
+            },
+            {
+              "id": "M-outboard-extreme",
+              "uv_px": [
+                1930,
+                1300
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 15
+            },
+            {
+              "id": "M-outboard-lower",
+              "uv_px": [
+                1912,
+                1450
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 20,
+              "note": "Coarse/lowcontrast reading, to refine beforehardconstraint; uncertainty is not a measured confidenceinterval."
+            },
+            {
+              "id": "M-lower-tip",
+              "uv_px": [
+                1800,
+                1583
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 22,
+              "note": "Coarse/lowcontrast reading, to refine beforehardconstraint; uncertainty is not a measured confidenceinterval."
+            }
+          ],
+          "missing_arc": "Lower/inboard contour is not closed through a hidden or lowcontrast section."
+        },
+        {
+          "component": "back_shell_lower_inboard_partial_outline",
+          "contour_is_closed": false,
+          "contour_order": "From neck/lowerjunction toward outboard direction",
+          "points": [
+            {
+              "id": "M-neck-lower",
+              "uv_px": [
+                980,
+                1300
+              ],
+              "feature": "shell/boot/lower-edge region",
+              "uncertainty_radius_px": 25,
+              "note": "Coarse/lowcontrast reading, to refine beforehardconstraint; uncertainty is not a measured confidenceinterval."
+            },
+            {
+              "id": "M-lower-inboard",
+              "uv_px": [
+                1093,
+                1350
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 20,
+              "note": "Coarse/lowcontrast reading, to refine beforehardconstraint; uncertainty is not a measured confidenceinterval."
+            },
+            {
+              "id": "M-lower-sweep-4",
+              "uv_px": [
+                1199,
+                1400
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 20,
+              "note": "Coarse/lowcontrast reading, to refine beforehardconstraint; uncertainty is not a measured confidenceinterval."
+            },
+            {
+              "id": "M-lower-sweep-3",
+              "uv_px": [
+                1314,
+                1450
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 25,
+              "note": "Coarse/lowcontrast reading, to refine beforehardconstraint; uncertainty is not a measured confidenceinterval."
+            }
+          ],
+          "missing_arc": "Between the lastpoint and lowertip, bluepackage reflection reduces edgecertainty; no hardclosedtrace supplied."
+        }
+      ],
+      "curvature_reading": [
+        "Crown and outboard end are rounded, not a box with uniform corner radii",
+        "Inboard neck narrows toward boot; lower outline sweeps obliquely toward the broad outboard body",
+        "Surface highlight/ridge inside shell is not a seam or external contour to emboss",
+        "Visible boot edge can constrain junction pose; it is not a calibrated spherical-pivot centre"
+      ],
+      "limitations": [
+        "Photo is oblique; apparent width/height cannot be interpreted as true orthogonal section",
+        "Lower silhouette reflects the blue package and is harder to separate; broad soft uncertainty is deliberate",
+        "Glass face, bezel lip and glass curvature are hidden in this isolated back view",
+        "Shell depth, wall thickness, pivot/socket internals, stem diameter/bend radius and thread specification are unmeasured",
+        "File has native resolution1946x2595. Earlier chat display1368x1824 was a resized preview, not native coordinate space.",
+        "No completehardclosed shelltrace is provided: ambiguous loweroutboard arc deliberately omitted instead of inventing a smooth section."
+      ]
+    },
+    {
+      "file": "/workspace/wewa-assets/references/forward-cockpit-18/visor-PF181209-8802.jpg",
+      "sha256": "c4e9cced79b2fe26b899d7db0188e5cd88eb0278719c22884020ea3b6c3695b0",
+      "pixels": [
+        800,
+        800
+      ],
+      "identity": "Retailer PF181209 windshield, related BM150/BM150X part, not certified currentRDC",
+      "direction": "Near-front isolated appearance, camera not calibrated",
+      "actually_inspected_at_native_resolution": true,
+      "shape_annotations": [
+        {
+          "component": "outer_visible_envelope_including_bright_lower_edge",
+          "contour_is_closed": true,
+          "contour_order": "Clockwise from crown",
+          "points": [
+            {
+              "id": "V-edge-00",
+              "uv_px": [
+                390,
+                120
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "V-edge-01",
+              "uv_px": [
+                483,
+                130
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "V-edge-02",
+              "uv_px": [
+                534,
+                150
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "V-edge-03",
+              "uv_px": [
+                576,
+                180
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "V-edge-04",
+              "uv_px": [
+                603,
+                220
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "V-edge-05",
+              "uv_px": [
+                605,
+                300
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "V-edge-06",
+              "uv_px": [
+                599,
+                400
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "V-edge-07",
+              "uv_px": [
+                586,
+                500
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "V-edge-08",
+              "uv_px": [
+                571,
+                580
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "V-edge-09",
+              "uv_px": [
+                563,
+                620
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 10
+            },
+            {
+              "id": "V-edge-10",
+              "uv_px": [
+                513,
+                650
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 10
+            },
+            {
+              "id": "V-edge-11",
+              "uv_px": [
+                454,
+                675
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 10
+            },
+            {
+              "id": "V-edge-12",
+              "uv_px": [
+                405,
+                683
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 10
+            },
+            {
+              "id": "V-edge-13",
+              "uv_px": [
+                346,
+                675
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 10
+            },
+            {
+              "id": "V-edge-14",
+              "uv_px": [
+                274,
+                650
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 10
+            },
+            {
+              "id": "V-edge-15",
+              "uv_px": [
+                196,
+                631
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 10
+            },
+            {
+              "id": "V-edge-16",
+              "uv_px": [
+                182,
+                580
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "V-edge-17",
+              "uv_px": [
+                165,
+                500
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "V-edge-18",
+              "uv_px": [
+                152,
+                400
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "V-edge-19",
+              "uv_px": [
+                148,
+                300
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "V-edge-20",
+              "uv_px": [
+                151,
+                220
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "V-edge-21",
+              "uv_px": [
+                192,
+                180
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "V-edge-22",
+              "uv_px": [
+                244,
+                150
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "V-edge-23",
+              "uv_px": [
+                303,
+                130
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            }
+          ]
+        }
+      ],
+      "excluded_nonpart_regions": [
+        {
+          "bbox_uv_px": [
+            33,
+            34,
+            71,
+            72
+          ],
+          "reason": "Upperleft black backgrounddot; not a mountinghole or partcontour"
+        },
+        {
+          "bbox_uv_px": [
+            732,
+            732,
+            768,
+            769
+          ],
+          "reason": "Lowerright black backgrounddot; not a mountinghole or partcontour"
+        }
+      ],
+      "curvature_reading": [
+        "Rounded crown transitions to long curved/tapered sides; do not use flat rectangle",
+        "Highlights imply curvature but do not give a measured sagittal depth or thickness",
+        "Bright lower band may include transmitted background/reflection; its inner tonal boundary is not necessarily a structural step",
+        "Related catalogue drawing/packagedphoto suggest lowercorner relief, but exact cutout section must remain provisional"
+      ],
+      "limitations": [
+        "No calibrated front camera, profile, back thickness or underside photograph",
+        "No mountinghole centres can be measured in this image",
+        "M5x16 related screw specification does not establish windshield thickness or hole spacing",
+        "CurrentRDC screen apparent silhouette differs with camera/rake and partial headlamp occlusion; no assertion that the related PF181209 surface is exact"
+      ]
+    },
+    {
+      "file": "/workspace/wewa-assets/references/forward-cockpit-18/official-rotation-02.png",
+      "sha256": "eed85a43c40a6fcb4785ad4d24a5c0881e14fbde21d4663f2ae51e742095c93d",
+      "pixels": [
+        1000,
+        700
+      ],
+      "identity": "Official marketed currentRDC125HD red-long-visor series, individual part IDs unconfirmed",
+      "direction": "Vehiclefront; imageleft is physicalRH(-X), imageright is physicalLH(+X)",
+      "actually_inspected_at_native_resolution": true,
+      "camera_mapping": {
+        "image_left": "pilot RIGHT, Xnegative",
+        "image_right": "pilot LEFT, Xpositive",
+        "image_up": "ApproximatelyZup, not camera calibration"
+      },
+      "shape_annotations": [
+        {
+          "component": "physical_RH_mirror_back_shell",
+          "datum_side": "-X",
+          "contour_is_closed": true,
+          "points": [
+            {
+              "id": "F-RH-00",
+              "uv_px": [
+                341,
+                76
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "F-RH-01",
+              "uv_px": [
+                323,
+                79
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "F-RH-02",
+              "uv_px": [
+                316,
+                88
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "F-RH-03",
+              "uv_px": [
+                315,
+                101
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "F-RH-04",
+              "uv_px": [
+                323,
+                108
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "F-RH-05",
+              "uv_px": [
+                348,
+                112
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "F-RH-06",
+              "uv_px": [
+                370,
+                111
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "F-RH-07",
+              "uv_px": [
+                371,
+                100
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "F-RH-08",
+              "uv_px": [
+                362,
+                82
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            }
+          ]
+        },
+        {
+          "component": "physical_LH_mirror_back_shell",
+          "datum_side": "+X",
+          "contour_is_closed": true,
+          "points": [
+            {
+              "id": "F-LH-00",
+              "uv_px": [
+                635,
+                76
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "F-LH-01",
+              "uv_px": [
+                620,
+                79
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "F-LH-02",
+              "uv_px": [
+                608,
+                87
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "F-LH-03",
+              "uv_px": [
+                604,
+                102
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "F-LH-04",
+              "uv_px": [
+                610,
+                109
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "F-LH-05",
+              "uv_px": [
+                634,
+                113
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "F-LH-06",
+              "uv_px": [
+                660,
+                110
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "F-LH-07",
+              "uv_px": [
+                666,
+                101
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "F-LH-08",
+              "uv_px": [
+                658,
+                84
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            }
+          ]
+        },
+        {
+          "component": "windshield_upper_visible_contour",
+          "contour_is_closed": false,
+          "points": [
+            {
+              "id": "F-V-00",
+              "uv_px": [
+                439,
+                188
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "F-V-01",
+              "uv_px": [
+                437,
+                165
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "F-V-02",
+              "uv_px": [
+                441,
+                146
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "F-V-03",
+              "uv_px": [
+                456,
+                132
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "F-V-04",
+              "uv_px": [
+                474,
+                122
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "F-V-05",
+              "uv_px": [
+                491,
+                118
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "F-V-06",
+              "uv_px": [
+                509,
+                122
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "F-V-07",
+              "uv_px": [
+                527,
+                132
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "F-V-08",
+              "uv_px": [
+                541,
+                147
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "F-V-09",
+              "uv_px": [
+                547,
+                165
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            },
+            {
+              "id": "F-V-10",
+              "uv_px": [
+                547,
+                188
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 6
+            }
+          ],
+          "missing_arc": "Lower edge not entered because headlamp/body overlaps and dark surfaces merge."
+        },
+        {
+          "component": "mirror_stem_registration_only",
+          "contour_is_closed": false,
+          "points": [
+            {
+              "id": "F-LH-neck",
+              "uv_px": [
+                605,
+                111
+              ],
+              "feature": "apparent mirror-to-stem neck",
+              "uncertainty_radius_px": 7
+            },
+            {
+              "id": "F-LH-stem-bend",
+              "uv_px": [
+                579,
+                133
+              ],
+              "feature": "apparent stem bend",
+              "uncertainty_radius_px": 7
+            },
+            {
+              "id": "F-LH-mount-region",
+              "uv_px": [
+                572,
+                155
+              ],
+              "feature": "mount partly hidden by control housing",
+              "uncertainty_radius_px": 10
+            },
+            {
+              "id": "F-RH-neck",
+              "uv_px": [
+                370,
+                109
+              ],
+              "feature": "apparent mirror-to-stem neck",
+              "uncertainty_radius_px": 7
+            },
+            {
+              "id": "F-RH-stem-bend",
+              "uv_px": [
+                397,
+                130
+              ],
+              "feature": "apparent stem bend",
+              "uncertainty_radius_px": 7
+            },
+            {
+              "id": "F-RH-mount-region",
+              "uv_px": [
+                408,
+                155
+              ],
+              "feature": "mount partly hidden by control housing",
+              "uncertainty_radius_px": 10
+            }
+          ]
+        }
+      ],
+      "excluded_artifacts": [
+        "Horizontal alpha/background streaks behind mirrors and to image right are not geometry",
+        "Do not fit an outer contour to the full alpha bounding box of this manufacturer asset"
+      ]
+    },
+    {
+      "file": "/workspace/wewa-assets/references/forward-cockpit-18/official-rotation-06.png",
+      "sha256": "60a01cd517728f6d3d4f61a3975fe610488f7b489098c20cae381b9768093362",
+      "pixels": [
+        1000,
+        700
+      ],
+      "identity": "Same official currentRDC rotationseries; rearview",
+      "direction": "Vehicle rear/rider direction; imageleft is physicalLH(+X), imageright physicalRH(-X)",
+      "actually_inspected_at_native_resolution": true,
+      "camera_mapping": {
+        "image_left": "pilot LEFT, Xpositive",
+        "image_right": "pilot RIGHT, Xnegative"
+      },
+      "shape_annotations": [
+        {
+          "component": "physical_LH_mirror_glass_and_bezel_outer_envelope",
+          "datum_side": "+X",
+          "contour_is_closed": true,
+          "points": [
+            {
+              "id": "R-LH-00",
+              "uv_px": [
+                346,
+                81
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-LH-01",
+              "uv_px": [
+                336,
+                82
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-LH-02",
+              "uv_px": [
+                329,
+                89
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-LH-03",
+              "uv_px": [
+                327,
+                100
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-LH-04",
+              "uv_px": [
+                333,
+                108
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-LH-05",
+              "uv_px": [
+                351,
+                114
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-LH-06",
+              "uv_px": [
+                375,
+                116
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-LH-07",
+              "uv_px": [
+                383,
+                109
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-LH-08",
+              "uv_px": [
+                383,
+                99
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-LH-09",
+              "uv_px": [
+                375,
+                89
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-LH-10",
+              "uv_px": [
+                363,
+                83
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            }
+          ]
+        },
+        {
+          "component": "physical_RH_mirror_glass_and_bezel_outer_envelope",
+          "datum_side": "-X",
+          "contour_is_closed": true,
+          "points": [
+            {
+              "id": "R-RH-00",
+              "uv_px": [
+                639,
+                79
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-RH-01",
+              "uv_px": [
+                626,
+                81
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-RH-02",
+              "uv_px": [
+                616,
+                88
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-RH-03",
+              "uv_px": [
+                609,
+                99
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-RH-04",
+              "uv_px": [
+                609,
+                109
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-RH-05",
+              "uv_px": [
+                623,
+                113
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-RH-06",
+              "uv_px": [
+                649,
+                111
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-RH-07",
+              "uv_px": [
+                665,
+                106
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-RH-08",
+              "uv_px": [
+                668,
+                95
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            },
+            {
+              "id": "R-RH-09",
+              "uv_px": [
+                661,
+                84
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 5
+            }
+          ]
+        },
+        {
+          "component": "windshield_upper_visible_back_contour",
+          "contour_is_closed": false,
+          "points": [
+            {
+              "id": "R-V-00",
+              "uv_px": [
+                444,
+                169
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 7
+            },
+            {
+              "id": "R-V-01",
+              "uv_px": [
+                451,
+                154
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 7
+            },
+            {
+              "id": "R-V-02",
+              "uv_px": [
+                466,
+                143
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 7
+            },
+            {
+              "id": "R-V-03",
+              "uv_px": [
+                481,
+                136
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 7
+            },
+            {
+              "id": "R-V-04",
+              "uv_px": [
+                491,
+                134
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 7
+            },
+            {
+              "id": "R-V-05",
+              "uv_px": [
+                507,
+                138
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 7
+            },
+            {
+              "id": "R-V-06",
+              "uv_px": [
+                522,
+                148
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 7
+            },
+            {
+              "id": "R-V-07",
+              "uv_px": [
+                534,
+                161
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 7
+            },
+            {
+              "id": "R-V-08",
+              "uv_px": [
+                539,
+                172
+              ],
+              "feature": "visible_silhouette",
+              "uncertainty_radius_px": 7
+            }
+          ],
+          "missing_arc": "Lower part hidden by instrumentpods/handlebar. Do not close with an invented base."
+        }
+      ],
+      "excluded_artifacts": [
+        "Horizontal grey/white/green stretches and brightgreen patch beside leftcontrol are extraction/backgroundartifacts, not fairing or cable geometry",
+        "Reflecting faces are lowresolution and may be near-white; no measured reflectance or glasscurvature derived"
+      ]
+    },
+    {
+      "file": "/workspace/wewa-assets/references/forward-cockpit-18/mirror-LH-front.jpg",
+      "sha256": "cd572469c9a7e7b0523898536afa4bd1a240f0a1277b2e7a74bd693c20127049",
+      "pixels": [
+        1946,
+        2595
+      ],
+      "identity": "DJ221003 package label only",
+      "direction": "Not a mirrorfront photograph",
+      "actually_inspected_at_native_resolution": true,
+      "shape_annotations": [],
+      "rejection": "Useful for label association, excluded from silhouette and opposing-view counts."
+    },
+    {
+      "file": "/workspace/wewa-assets/references/forward-cockpit-18/visor-PF181209-8804.jpg",
+      "sha256": "4d80384e0983cbd8062ced40cf7c7b5452910298d63553d3e2c3577bc000b8d7",
+      "pixels": [
+        800,
+        800
+      ],
+      "identity": "PF181209 package label / crop of packagedfront",
+      "direction": "Not a reverse or section view",
+      "actually_inspected_at_native_resolution": true,
+      "shape_annotations": [],
+      "rejection": "No additional geometricdirection; its package printedlabel is not a dimensional ruler."
+    }
+  ],
+  "cross_view_correspondences": [
+    {
+      "component": "physicalLHmirror",
+      "source_features": [
+        "M-crown",
+        "M-outboard-extreme",
+        "M-neck-upper"
+      ],
+      "target_groups": [
+        "F-LH",
+        "R-LH"
+      ],
+      "kind": "semantic silhouette features only",
+      "constraint_strength": "soft",
+      "warning": "Backshell outline and glass/bezel outline are different physical surfaces and differentlyprojected. Do not equate every silhouettepoint or force their exact2D sizes."
+    },
+    {
+      "component": "physicalRHmirror",
+      "source_features": [],
+      "target_groups": [
+        "F-RH",
+        "R-RH"
+      ],
+      "kind": "Oppositevehicle-side outline fromofficialseries only",
+      "constraint_strength": "soft",
+      "warning": "DJ221003 relatedLH cannot certify mirroredRH curvature, pivot bias or threadhandedness."
+    },
+    {
+      "component": "windscreen",
+      "source_features": [
+        "V-edge-00",
+        "V-edge-04",
+        "V-edge-09",
+        "V-edge-15",
+        "V-edge-20"
+      ],
+      "target_groups": [
+        "F-V",
+        "R-V"
+      ],
+      "kind": "Crown/shoulder/side silhouettes only",
+      "constraint_strength": "soft",
+      "warning": "Differentmarket/year partidentity and differentcameras. Currentlowerarc partlyoccluded; no automatic correspondence for packagedrelatedlowerlip."
+    }
+  ],
+  "unresolved_3d_sections": {
+    "mirror": [
+      "backshell depth distribution",
+      "bezel lip and glass inset",
+      "glass curvature",
+      "boot/pivot centre and socket",
+      "stem diameters/bend planes",
+      "thread dimensions and side-specifichandedness"
+    ],
+    "windscreen": [
+      "doublecurvature/sag",
+      "wall thickness and edge bevel",
+      "lowertruecutoutsection",
+      "holecentres and mounts",
+      "tilt/yaw against instrumenthousing and headlamp"
+    ]
+  },
+  "recommended_workflow": [
+    "Keep perimage sourcehash and nativepixels with annotations",
+    "Use currentofficialseries for currentvehicle silhouettes; use relatedisolated photos for localfeature study, not automaticexactpartidentity",
+    "Fit camera/pose before adjusting3D sections, report landmark/contour discrepancies perview within image readinguncertainty",
+    "Reserve an opposing officialview for checking overfitting",
+    "Construct and inspect truecurved sections; do not reproduce tonal reflections as geometricridges",
+    "Measure physicalpart or obtain dimensioneddrawing before promoting physicaldimensions/interfaces",
+    "Present grey/reflection renders and actualengine export separately; no userreception inferred"
+  ],
+  "source_images_edited": false,
+  "source_images_used_as_textures": false,
+  "scale_mm_per_pixel": null,
+  "camera_calibrated": false,
+  "G2_passed": false,
+  "art_accepted": false,
+  "geometry_created": false
+}

@@ -1,0 +1,470 @@
+{
+  "schema": 1,
+  "authorized_date": "2026-10-20",
+  "authorization": "User: GO de1à18, after persistent explicit request to parallelize",
+  "scope": "18 ordered production groups, each decomposed into observable components; not18 completed models",
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "parallel_detailed_components_max": 3,
+  "old_candidates": "Remain candidates, no user reception implied by GO",
+  "assembly_policy": "Review-only fit checks allowed among candidates. Rider deferred, public game integration deferred pending review/optimization. No automatic acceptance or model multiplication.",
+  "lots": [
+    {
+      "lot": 1,
+      "label": "Pontets et fixations du guidon",
+      "state": "research_and_separate_candidate_fabrication",
+      "source_folders": [
+        "../../assets-src/moto-components/handlebar-clamps"
+      ],
+      "research": "../research/chassis-running-18/report.json",
+      "depends_on_lots": [],
+      "user_art_accepted": false,
+      "any_source_blend_built": false,
+      "any_runtime_checked": false,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "demi-pontets supérieurs",
+        "berceaux inférieurs avec goujons",
+        "visserie visible"
+      ],
+      "owner_chain": "A"
+    },
+    {
+      "lot": 2,
+      "label": "Support des compteurs",
+      "state": "separate_candidates_under_review_not_complete",
+      "source_folders": [
+        "../../assets-src/moto-components/instrument-bracket"
+      ],
+      "research": "../research/forward-cockpit-18/report.json",
+      "depends_on_lots": [
+        1
+      ],
+      "user_art_accepted": false,
+      "candidates": [
+        {
+          "component_id": "MOTO-INSTRUMENT-BRACKET-001",
+          "revision": "instrument-bracket-v1",
+          "source_sha256": "86891d5bbf7e2a0833a74595c949132535995ae8361344065926f562060c75f5",
+          "review": "../reviews/instrument-bracket-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        }
+      ],
+      "any_source_blend_built": true,
+      "any_runtime_checked": true,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "support ajouré et collerettes"
+      ],
+      "owner_chain": "A"
+    },
+    {
+      "lot": 3,
+      "label": "Accélérateur et entraînement de câble",
+      "state": "separate_candidates_under_review_not_complete",
+      "source_folders": [
+        "../../assets-src/moto-components/throttle-control"
+      ],
+      "research": null,
+      "depends_on_lots": [],
+      "user_art_accepted": false,
+      "candidates": [
+        {
+          "component_id": "MOTO-HANDLEBAR-GRIPS-001",
+          "revision": "handlebar-grips-v2",
+          "source_sha256": "40514ce73d9a5a763fbf98fe2c1d0ab84c248a0d9373a7747895781e18cd98ae",
+          "review": "../reviews/handlebar-grips-v2/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        }
+      ],
+      "any_source_blend_built": true,
+      "any_runtime_checked": true,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "poignée droite v2",
+        "manchon et bobine",
+        "guide de câble fixe"
+      ],
+      "owner_chain": "B"
+    },
+    {
+      "lot": 4,
+      "label": "Commodo gauche",
+      "state": "research_and_separate_candidate_fabrication",
+      "source_folders": [
+        "../../assets-src/moto-components/switchgear-left"
+      ],
+      "research": "../research/forward-cockpit-18/report.json",
+      "depends_on_lots": [],
+      "user_art_accepted": false,
+      "any_source_blend_built": false,
+      "any_runtime_checked": false,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "coques gauche",
+        "bascule éclairage",
+        "sélecteur clignotants et rappel",
+        "poussoir klaxon"
+      ],
+      "owner_chain": "C"
+    },
+    {
+      "lot": 5,
+      "label": "Commodo droit",
+      "state": "queued_after_interfaces",
+      "source_folders": [
+        "../../assets-src/moto-components/switchgear-right"
+      ],
+      "research": "../research/forward-cockpit-18/report.json",
+      "depends_on_lots": [
+        3
+      ],
+      "user_art_accepted": false,
+      "any_source_blend_built": false,
+      "any_runtime_checked": false,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "coques droite",
+        "commande rouge observée de fonction inconnue"
+      ],
+      "owner_chain": "C"
+    },
+    {
+      "lot": 6,
+      "label": "Levier embrayage et support",
+      "state": "queued_after_interfaces",
+      "source_folders": [
+        "../../assets-src/moto-components/clutch-control"
+      ],
+      "research": null,
+      "depends_on_lots": [
+        4
+      ],
+      "user_art_accepted": false,
+      "any_source_blend_built": false,
+      "any_runtime_checked": false,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "lame embrayage",
+        "support et collier",
+        "pivot et réglage de câble"
+      ],
+      "owner_chain": "B"
+    },
+    {
+      "lot": 7,
+      "label": "Levier frein au guidon et support",
+      "state": "queued_after_interfaces",
+      "source_folders": [
+        "../../assets-src/moto-components/front-brake-control"
+      ],
+      "research": null,
+      "depends_on_lots": [
+        3,
+        5
+      ],
+      "user_art_accepted": false,
+      "any_source_blend_built": false,
+      "any_runtime_checked": false,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "lame frein à câble",
+        "support et collier",
+        "pivot et réglage de câble"
+      ],
+      "owner_chain": "B"
+    },
+    {
+      "lot": 8,
+      "label": "Rétroviseurs gauche/droit",
+      "state": "documentary_research",
+      "source_folders": [],
+      "research": "../research/forward-cockpit-18/report.json",
+      "depends_on_lots": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "user_art_accepted": false,
+      "any_source_blend_built": false,
+      "any_runtime_checked": false,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "rétroviseur gauche: coque, verre, col, tige",
+        "rétroviseur droit: coque, verre, col, tige"
+      ],
+      "owner_chain": "C"
+    },
+    {
+      "lot": 9,
+      "label": "Contacteur et clé",
+      "state": "documentary_research",
+      "source_folders": [],
+      "research": "../research/forward-cockpit-18/report.json",
+      "depends_on_lots": [
+        2
+      ],
+      "user_art_accepted": false,
+      "any_source_blend_built": false,
+      "any_runtime_checked": false,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "barillet/contacteur extérieur",
+        "clé générique non fonctionnelle"
+      ],
+      "owner_chain": "B"
+    },
+    {
+      "lot": 10,
+      "label": "Câbles et faisceau visibles",
+      "state": "queued_after_interfaces",
+      "source_folders": [],
+      "research": null,
+      "depends_on_lots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "user_art_accepted": false,
+      "any_source_blend_built": false,
+      "any_runtime_checked": false,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "départs de gaines visibles",
+        "faisceau visible et attaches documentées"
+      ],
+      "owner_chain": "B"
+    },
+    {
+      "lot": 11,
+      "label": "Visière et entourage des compteurs",
+      "state": "documentary_research",
+      "source_folders": [],
+      "research": "../research/forward-cockpit-18/report.json",
+      "depends_on_lots": [
+        2
+      ],
+      "user_art_accepted": false,
+      "any_source_blend_built": false,
+      "any_runtime_checked": false,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "visière extérieure",
+        "entourage/supports observables"
+      ],
+      "owner_chain": "C"
+    },
+    {
+      "lot": 12,
+      "label": "Phare et clignotants avant",
+      "state": "documentary_research",
+      "source_folders": [],
+      "research": "../research/forward-cockpit-18/report.json",
+      "depends_on_lots": [
+        11
+      ],
+      "user_art_accepted": false,
+      "any_source_blend_built": false,
+      "any_runtime_checked": false,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "coque du phare",
+        "réflecteur et optique",
+        "clignotant avant gauche",
+        "clignotant avant droit"
+      ],
+      "owner_chain": "C"
+    },
+    {
+      "lot": 13,
+      "label": "Fourche et direction",
+      "state": "documentary_research",
+      "source_folders": [],
+      "research": "../research/chassis-running-18/report.json",
+      "depends_on_lots": [
+        1
+      ],
+      "user_art_accepted": false,
+      "any_source_blend_built": false,
+      "any_runtime_checked": false,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "té supérieur et colonne",
+        "té inférieur",
+        "tube et fourreau gauche",
+        "tube et fourreau droit",
+        "soufflets et joints visibles"
+      ],
+      "owner_chain": "A"
+    },
+    {
+      "lot": 14,
+      "label": "Ensemble avant et compatibilité des candidats existants",
+      "state": "documentary_research",
+      "source_folders": [],
+      "research": "../research/chassis-running-18/report.json",
+      "depends_on_lots": [
+        13
+      ],
+      "user_art_accepted": false,
+      "any_source_blend_built": false,
+      "any_runtime_checked": false,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "pneu avant existant à revoir",
+        "jante/moyeu existant à revoir",
+        "flasque et levier de came existants à revoir",
+        "axe et entretoises visibles"
+      ],
+      "owner_chain": "A"
+    },
+    {
+      "lot": 15,
+      "label": "Garde-boue, cadre et bras oscillant",
+      "state": "documentary_research",
+      "source_folders": [],
+      "research": "../research/body-powertrain-18/report.json",
+      "depends_on_lots": [
+        13
+      ],
+      "user_art_accepted": false,
+      "any_source_blend_built": false,
+      "any_runtime_checked": false,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "garde-boue avant",
+        "cadre: tubes et jonctions visibles",
+        "bras oscillant et pivots visibles"
+      ],
+      "owner_chain": "A"
+    },
+    {
+      "lot": 16,
+      "label": "Roue arrière, frein, transmission et amortisseurs",
+      "state": "documentary_research",
+      "source_folders": [],
+      "research": "../research/chassis-running-18/report.json",
+      "depends_on_lots": [
+        15
+      ],
+      "user_art_accepted": false,
+      "any_source_blend_built": false,
+      "any_runtime_checked": false,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "pneu arrière",
+        "jante/moyeu arrière",
+        "flasque et commande du frein arrière",
+        "couronne/chaîne et protection",
+        "amortisseur gauche",
+        "amortisseur droit"
+      ],
+      "owner_chain": "A"
+    },
+    {
+      "lot": 17,
+      "label": "Moteur extérieur, échappement, repose-pieds, pédales et béquilles",
+      "state": "documentary_research",
+      "source_folders": [],
+      "research": "../research/body-powertrain-18/report.json",
+      "depends_on_lots": [
+        15,
+        16
+      ],
+      "user_art_accepted": false,
+      "any_source_blend_built": false,
+      "any_runtime_checked": false,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "carter moteur gauche",
+        "carter moteur droit",
+        "cylindre et culasse à ailettes",
+        "admission et détails extérieurs visibles",
+        "collecteur et silencieux",
+        "repose-pieds avant/arrière",
+        "pédale frein et tringlerie",
+        "sélecteur et kick visibles",
+        "béquille latérale",
+        "béquille centrale"
+      ],
+      "owner_chain": "B"
+    },
+    {
+      "lot": 18,
+      "label": "Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière",
+      "state": "documentary_research",
+      "source_folders": [],
+      "research": "../research/body-powertrain-18/report.json",
+      "depends_on_lots": [
+        15,
+        17
+      ],
+      "user_art_accepted": false,
+      "any_source_blend_built": false,
+      "any_runtime_checked": false,
+      "all_required_components_built": false,
+      "all_interfaces_checked": false,
+      "group_complete": false,
+      "observable_fabrication_units": [
+        "réservoir WEWA et bouchon",
+        "cache gauche",
+        "cache droit",
+        "selle et dessous documenté",
+        "porte-bagages et attaches",
+        "garde-boue arrière visible",
+        "feu arrière",
+        "clignotants arrière gauche/droit",
+        "support plaque"
+      ],
+      "owner_chain": "B"
+    }
+  ],
+  "research_status_is_not_fabrication": true,
+  "physical_iphone_tested": false,
+  "whole_bike_art_accepted": false,
+  "shared_datums": "motorcycle-datums-v1.json",
+  "inspection_tool": "../../tools/motorcycle-lab/",
+  "scope_note": "Lots15–18 contain multiple distinct parts and must not be counted as one completed mesh. Current provisional dimensions do not certify any hidden interface.",
+  "fabrication_dependency_policy": "Unresolved installed dependencies permit separately documented candidate work; G5 remains open, no assembly certification from a guide or preview.",
+  "unit_count_note": "Observable work units, not certified exact parts, fabricated models or accepted assets. Split further when a visible interface requires it."
+}
