@@ -37,9 +37,15 @@
       "depends_on": [
         "W00"
       ],
-      "status": "in_progress",
+      "status": "done",
       "acceptance": "Build reproductible, versions gelées, HTTPS et page sans erreur.",
-      "evidence": []
+      "evidence": [
+        "validation/browser/results.json",
+        "validation/unit-tests.json",
+        "validation/STATUS.json",
+        "https://viva-wewa.chummyrose33.chatgpt.site"
+      ],
+      "qualification_scope": "Chromium desktop and touch emulation; physical Safari qualification remains W01/W05/W09."
     },
     {
       "id": "W03",
@@ -49,9 +55,15 @@
       "depends_on": [
         "W02"
       ],
-      "status": "pending",
+      "status": "done",
       "acceptance": "Une cellule visible ; origine et axes corrects ; capture de temps de trame.",
-      "evidence": []
+      "evidence": [
+        "validation/browser/results.json",
+        "validation/unit-tests.json",
+        "validation/STATUS.json",
+        "validation/gameplay-route.json"
+      ],
+      "qualification_scope": "Chromium desktop and touch emulation; physical Safari qualification remains W01/W05/W09."
     },
     {
       "id": "W04",
@@ -61,9 +73,11 @@
       "depends_on": [
         "W01"
       ],
-      "status": "pending",
+      "status": "blocked",
       "acceptance": "Recouvrements examinés ; ponts/niveaux séparés ; corridor sans conflit bloquant.",
-      "evidence": []
+      "evidence": [],
+      "blocker": "Requires physical/local qualification from W01 and its prerequisites.",
+      "next_action": "Collect Safari iPhone 15/16 and Kinshasa route feedback."
     },
     {
       "id": "W05",
@@ -74,9 +88,11 @@
         "W03",
         "W01"
       ],
-      "status": "pending",
+      "status": "blocked",
       "acceptance": "Mesures réelle WebGL 2 sur appareils ; WebGPU testé si disponible ; décision enregistrée.",
-      "evidence": []
+      "evidence": [],
+      "blocker": "Requires physical/local qualification from W01 and its prerequisites.",
+      "next_action": "Collect Safari iPhone 15/16 and Kinshasa route feedback."
     },
     {
       "id": "W06",
@@ -86,9 +102,14 @@
       "depends_on": [
         "W03"
       ],
-      "status": "pending",
+      "status": "done",
       "acceptance": "Accélérer, freiner, braquer, incliner visuellement ; caméra sans traversée du décor.",
-      "evidence": []
+      "evidence": [
+        "validation/browser/results.json",
+        "validation/unit-tests.json",
+        "validation/STATUS.json"
+      ],
+      "qualification_scope": "Chromium desktop and touch emulation; physical Safari qualification remains W01/W05/W09."
     },
     {
       "id": "W07",
@@ -99,9 +120,12 @@
         "W04",
         "W06"
       ],
-      "status": "pending",
+      "status": "blocked",
       "acceptance": "Pas de traversée à vitesse maximale ; pente et reprise après chute vérifiées. Inclure la vitesse maximale avec nitro.",
-      "evidence": []
+      "evidence": [],
+      "implementation_status": "prototype_available_in_public_preview",
+      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
+      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done."
     },
     {
       "id": "W08",
@@ -111,9 +135,14 @@
       "depends_on": [
         "W06"
       ],
-      "status": "pending",
+      "status": "done",
       "acceptance": "ZQSD/WASD et tactile ; perte de focus sans accélération persistante.",
-      "evidence": []
+      "evidence": [
+        "validation/browser/results.json",
+        "validation/unit-tests.json",
+        "validation/STATUS.json"
+      ],
+      "qualification_scope": "Chromium desktop and touch emulation; physical Safari qualification remains W01/W05/W09."
     },
     {
       "id": "W09",
@@ -126,9 +155,11 @@
         "W08",
         "W37"
       ],
-      "status": "pending",
+      "status": "blocked",
       "acceptance": "Tour complet sur mobile et PC ; observations archivées, blocages corrigés.",
-      "evidence": []
+      "evidence": [],
+      "blocker": "Requires physical/local qualification from W01 and its prerequisites.",
+      "next_action": "Collect Safari iPhone 15/16 and Kinshasa route feedback."
     },
     {
       "id": "W10",
@@ -139,9 +170,12 @@
         "W04",
         "W09"
       ],
-      "status": "pending",
+      "status": "blocked",
       "acceptance": "Sens, priorités, files et arrêts ; aucun spawn inévitable.",
-      "evidence": []
+      "evidence": [],
+      "implementation_status": "prototype_available_in_public_preview",
+      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
+      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done."
     },
     {
       "id": "W11",
@@ -151,9 +185,12 @@
       "depends_on": [
         "W09"
       ],
-      "status": "pending",
+      "status": "blocked",
       "acceptance": "Prise, dépôt, récompense et reprise après interruption.",
-      "evidence": []
+      "evidence": [],
+      "implementation_status": "prototype_available_in_public_preview",
+      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
+      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done."
     },
     {
       "id": "W12",
@@ -164,9 +201,12 @@
         "W10",
         "W11"
       ],
-      "status": "pending",
+      "status": "blocked",
       "acceptance": "Perte de vue récupérable, cible persistante et mission gagnable.",
-      "evidence": []
+      "evidence": [],
+      "implementation_status": "prototype_available_in_public_preview",
+      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
+      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done."
     },
     {
       "id": "W13",
@@ -177,9 +217,12 @@
         "W04",
         "W12"
       ],
-      "status": "pending",
+      "status": "blocked",
       "acceptance": "Deux itinéraires utiles et bonus sans boucle de farming.",
-      "evidence": []
+      "evidence": [],
+      "implementation_status": "prototype_available_in_public_preview",
+      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
+      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done."
     },
     {
       "id": "W14",
@@ -192,9 +235,12 @@
         "W39",
         "W40"
       ],
-      "status": "pending",
-      "acceptance": "5-8 minutes jouables, clavier/tactile testés, URL privée et limites annoncées. Rush 30 s et récit R9 inclus ; aucun achat réel.",
-      "evidence": []
+      "status": "blocked",
+      "acceptance": "5-8 minutes jouables, clavier/tactile testés, URL publique (décision utilisateur) et limites annoncées. Rush 30 s et récit R9 inclus ; aucun achat réel.",
+      "evidence": [],
+      "implementation_status": "prototype_available_in_public_preview",
+      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
+      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done."
     },
     {
       "id": "W15",
@@ -317,9 +363,12 @@
       "depends_on": [
         "W14"
       ],
-      "status": "pending",
+      "status": "blocked",
       "acceptance": "Réinstallation/version et données locales gérées sans corruption.",
-      "evidence": []
+      "evidence": [],
+      "implementation_status": "prototype_available_in_public_preview",
+      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
+      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done."
     },
     {
       "id": "W25",
@@ -456,9 +505,14 @@
         "W06",
         "W08"
       ],
-      "status": "pending",
+      "status": "done",
       "acceptance": "Activation maintenue, consommation, recharge, interruption et vitesse maximale indépendantes du framerate.",
-      "evidence": []
+      "evidence": [
+        "validation/browser/results.json",
+        "validation/unit-tests.json",
+        "validation/STATUS.json"
+      ],
+      "qualification_scope": "Chromium desktop and touch emulation; physical Safari qualification remains W01/W05/W09."
     },
     {
       "id": "W36",
@@ -469,9 +523,14 @@
         "W06",
         "W08"
       ],
-      "status": "pending",
+      "status": "done",
       "acceptance": "Deux vues commutables clavier/tactile, horizon stable, choix mémorisé et physique inchangée.",
-      "evidence": []
+      "evidence": [
+        "validation/browser/results.json",
+        "validation/unit-tests.json",
+        "validation/STATUS.json"
+      ],
+      "qualification_scope": "Chromium desktop and touch emulation; physical Safari qualification remains W01/W05/W09."
     },
     {
       "id": "W37",
@@ -483,9 +542,12 @@
         "W36",
         "W07"
       ],
-      "status": "pending",
+      "status": "blocked",
       "acceptance": "Flou périphérique réglable, mode Confort, profil mobile léger ; obstacles lisibles et tests à vitesse nitro maximale.",
-      "evidence": []
+      "evidence": [],
+      "implementation_status": "prototype_available_in_public_preview",
+      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
+      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done."
     },
     {
       "id": "W38",
@@ -495,9 +557,12 @@
       "depends_on": [
         "W09"
       ],
-      "status": "pending",
+      "status": "blocked",
       "acceptance": "Timer actif, collecte et dépôt, capacité 3, fin unique à 30 s et reprise gratuite réinitialisée.",
-      "evidence": []
+      "evidence": [],
+      "implementation_status": "prototype_available_in_public_preview",
+      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
+      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done."
     },
     {
       "id": "W39",
@@ -507,9 +572,12 @@
       "depends_on": [
         "W38"
       ],
-      "status": "pending",
+      "status": "blocked",
       "acceptance": "Score et multiplicateur déterministes, identifiants anti-doublons, record local, réputation et monnaie séparées.",
-      "evidence": []
+      "evidence": [],
+      "implementation_status": "prototype_available_in_public_preview",
+      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
+      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done."
     },
     {
       "id": "W40",
@@ -519,9 +587,12 @@
       "depends_on": [
         "W12"
       ],
-      "status": "pending",
+      "status": "blocked",
       "acceptance": "Personnalité fictive et amie du héros ; message, poursuite et indice ; checkpoint gratuit et récit fictionnel.",
-      "evidence": []
+      "evidence": [],
+      "implementation_status": "prototype_available_in_public_preview",
+      "blocker": "Dependency and acceptance qualification still required; prototype availability is not full ticket completion.",
+      "next_action": "Validate prerequisites, real-device behavior and local/art criteria before marking done."
     },
     {
       "id": "W41",

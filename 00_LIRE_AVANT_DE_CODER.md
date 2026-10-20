@@ -1,3 +1,9 @@
+# ÉTAT ACTUEL — VIVA WEWA, PREMIER PROTOTYPE PUBLIC
+
+Jeu disponible : https://viva-wewa.chummyrose33.chatgpt.site ; relecture : https://viva-wewa.chummyrose33.chatgpt.site/relecture.html. Code dans app/, dépendances gelées à la racine. Lire validation/STATUS.json et backlog/tasks.json dans WEWA_Developpement_Web pour les résultats actuels : les descriptions de manque ci-dessous sont historiques. Ne pas réinitialiser le moteur ni recréer le projet. Safari iPhone 15/16 et la géographie restent à qualifier.
+
+---
+
 # À LIRE EN PREMIER - CADRAGE R9 / PLAN 1.2
 
 Le concept PDF est actualisé : huit pages R9 suivies du dossier source R8 identifié en annexe. Le plan PDF comprend deux pages 1.2 puis son annexe antérieure. Cadrage R9, configurations et backlog actuel prévalent. 45 tâches : W00 réalisé ; les autres en attente.
