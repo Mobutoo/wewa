@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-20",
+  "scope": "Documentation, source archival integrity, source-row routing and workflow declaration checks only",
+  "checks": [
+    {
+      "check": "coherent blocked record accepted as documentation",
+      "passed": true,
+      "errors_detected": []
+    },
+    {
+      "check": "passed gate without required proof rejected",
+      "passed": true,
+      "errors_detected": [
+        "G0: missing required evidence types"
+      ]
+    },
+    {
+      "check": "related tyre dimensions cannot become exact constraints",
+      "passed": true,
+      "errors_detected": [
+        "unresolved or related claim adopted as exact constraint: TYRE-MRF-FS"
+      ]
+    },
+    {
+      "check": "art acceptance without user gate rejected",
+      "passed": true,
+      "errors_detected": [
+        "art_accepted does not match G8"
+      ]
+    },
+    {
+      "check": "hash-backed gate declaration accepted",
+      "passed": true,
+      "errors_detected": []
+    },
+    {
+      "check": "changed evidence rejected",
+      "passed": true,
+      "errors_detected": [
+        "G0: evidence hash mismatch"
+      ]
+    },
+    {
+      "check": "stale gate revision rejected",
+      "passed": true,
+      "errors_detected": [
+        "G0: stale or unspecified revision",
+        "G0: evidence hash mismatch"
+      ]
+    }
+  ],
+  "record_validation": {
+    "valid": true,
+    "reports": [
+      {
+        "id": "MOTO-TYRE-FRONT-001",
+        "first_unfinished_gate": "G0",
+        "art_accepted": false
+      }
+    ],
+    "routed_source_rows": 159,
+    "errors": [],
+    "scope": "Declarations and local evidence integrity; no visual or hardware qualification"
+  },
+  "premature_fabrication_check": {
+    "valid": false,
+    "reports": [
+      {
+        "id": "MOTO-TYRE-FRONT-001",
+        "first_unfinished_gate": "G0",
+        "art_accepted": false,
+        "requested_gate": "G3",
+        "blockers": [
+          "G0 incomplete",
+          "G1 incomplete",
+          "G2 incomplete"
+        ]
+      }
+    ],
+    "routed_source_rows": 159,
+    "errors": [
+      "MOTO-TYRE-FRONT-001: G0 incomplete",
+      "MOTO-TYRE-FRONT-001: G1 incomplete",
+      "MOTO-TYRE-FRONT-001: G2 incomplete"
+    ],
+    "scope": "Declarations and local evidence integrity; no visual or hardware qualification"
+  },
+  "local_document_links_checked": 15,
+  "archived_sources_integrity_verified": [
+    "D01",
+    "D03",
+    "D04",
+    "D05",
+    "W01"
+  ],
+  "new_geometry_created": false,
+  "camera_calibration_executed": false,
+  "physical_iphone_tested": false,
+  "user_art_accepted": false,
+  "game_build_tests_repeated": false
+}

@@ -1,0 +1,409 @@
+{
+  "schema": 1,
+  "id": "MOTO-BOXER-RDC-001",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "scope": "initial decomposition; visible hardware may need separate child records, not25 completed assets",
+  "reference": "../library/motorcycle-reference-views.json",
+  "active_component": "MOTO-TYRE-FRONT-001",
+  "driver": "deferred_until_motorcycle_user_reception",
+  "whole_bike_art_accepted": false,
+  "components": [
+    {
+      "order": 1,
+      "key": "tyre-front",
+      "label": "Pneu avant",
+      "sources_to_crosscheck": [
+        "D01",
+        "D02",
+        "D04",
+        "D05",
+        "D06"
+      ],
+      "known_gaps": [
+        "manufacturer/model",
+        "tread/sidewall",
+        "inflated section"
+      ],
+      "state": "research_not_fabricated",
+      "record": "records/moto-tyre-front-001.json"
+    },
+    {
+      "order": 2,
+      "key": "rim-front",
+      "label": "Jante avant",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "tubeless vs tube variant",
+        "rim cross-section",
+        "spoke junctions"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 3,
+      "key": "hub-brake-front",
+      "label": "Moyeu et frein avant",
+      "sources_to_crosscheck": [
+        "D02",
+        "D04"
+      ],
+      "known_gaps": [
+        "outside hub dimensions",
+        "brake panel geometry"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 4,
+      "key": "fork",
+      "label": "Fourche et direction",
+      "sources_to_crosscheck": [
+        "D01",
+        "D02",
+        "D04"
+      ],
+      "known_gaps": [
+        "exact fork variant",
+        "rake/offset",
+        "mounts/diameters"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 5,
+      "key": "mudguard-front",
+      "label": "Garde-boue avant",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "section/thickness",
+        "clearance/mounts"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 6,
+      "key": "tyre-rear",
+      "label": "Pneu arrière",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "supplier/model",
+        "tread",
+        "outside dimensions"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 7,
+      "key": "rim-hub-rear",
+      "label": "Jante et moyeu arrière",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "cross-section",
+        "interfaces",
+        "exact variant"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 8,
+      "key": "rear-brake",
+      "label": "Frein et commande arrière",
+      "sources_to_crosscheck": [
+        "D02",
+        "D04"
+      ],
+      "known_gaps": [
+        "drum outside shape",
+        "rod/pedal attachments"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 9,
+      "key": "swingarm",
+      "label": "Bras oscillant",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "section",
+        "pivot and axle alignment"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 10,
+      "key": "rear-shocks",
+      "label": "Amortisseurs arrière",
+      "sources_to_crosscheck": [
+        "D01",
+        "D02",
+        "D04"
+      ],
+      "known_gaps": [
+        "spring/diameters",
+        "travel reference vs static length"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 11,
+      "key": "frame",
+      "label": "Cadre et supports",
+      "sources_to_crosscheck": [
+        "D01",
+        "D03",
+        "D04"
+      ],
+      "known_gaps": [
+        "tube diameters",
+        "welded junctions",
+        "hidden mounts"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 12,
+      "key": "engine",
+      "label": "Moteur et carters",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "separate left/right castings",
+        "fin dimensions",
+        "mounts"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 13,
+      "key": "drive",
+      "label": "Transmission et carter de chaîne",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "chain/sprocket geometry",
+        "clearances"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 14,
+      "key": "exhaust",
+      "label": "Échappement",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "bends",
+        "silencer section",
+        "brackets"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 15,
+      "key": "tank",
+      "label": "Réservoir et robinet",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "top shape",
+        "sections",
+        "seat/fuel-line interface"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 16,
+      "key": "side-covers",
+      "label": "Caches latéraux",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "asymmetric shapes",
+        "edges/fixings"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 17,
+      "key": "seat",
+      "label": "Selle",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "top dimensions",
+        "profile",
+        "seams/grain"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 18,
+      "key": "rack",
+      "label": "Porte-bagages et attaches",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "sections",
+        "welds/mounts"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 19,
+      "key": "headlamp",
+      "label": "Phare, réflecteur et visière",
+      "sources_to_crosscheck": [
+        "D01",
+        "D02",
+        "D04"
+      ],
+      "known_gaps": [
+        "exact visor revision",
+        "lens/reflector details"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 20,
+      "key": "indicators-tail",
+      "label": "Clignotants et feu arrière",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "lens geometry",
+        "mounts"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 21,
+      "key": "handlebar-controls",
+      "label": "Guidon, poignées et leviers",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "top/front views",
+        "control dimensions",
+        "motion clearance"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 22,
+      "key": "meter",
+      "label": "Compteur et contact",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "current USB/gear-indicator variant",
+        "legible face/top"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 23,
+      "key": "mirrors",
+      "label": "Rétroviseurs",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "section and stems",
+        "overall width measurement convention"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 24,
+      "key": "cables",
+      "label": "Câbles et durites",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "routing and retainers",
+        "steering clearance"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    },
+    {
+      "order": 25,
+      "key": "rests-stands",
+      "label": "Repose-pieds et béquilles",
+      "sources_to_crosscheck": [
+        "D01",
+        "D04"
+      ],
+      "known_gaps": [
+        "pivots",
+        "stops",
+        "deployed position"
+      ],
+      "state": "research_not_fabricated",
+      "record": null
+    }
+  ]
+}

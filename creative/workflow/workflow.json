@@ -1,0 +1,133 @@
+{
+  "version": 1,
+  "statuses": [
+    "pending",
+    "blocked",
+    "rework",
+    "passed",
+    "not_applicable"
+  ],
+  "claim_statuses": [
+    "documented_exact_variant",
+    "measured",
+    "documented_related_variant",
+    "photo_inferred",
+    "estimated",
+    "unknown",
+    "rejected"
+  ],
+  "recipes": [
+    "vehicle",
+    "architecture",
+    "terrain",
+    "prop",
+    "material",
+    "vegetation",
+    "character",
+    "animation",
+    "audio",
+    "interface",
+    "gameplay"
+  ],
+  "stages": [
+    {
+      "id": "G0",
+      "name": "identity_decomposition",
+      "required_evidence": [
+        "identity_and_parts"
+      ],
+      "depends_on": []
+    },
+    {
+      "id": "G1",
+      "name": "research",
+      "required_evidence": [
+        "source_view_dimension_matrix",
+        "critical_gap_disposition"
+      ],
+      "depends_on": [
+        "G0"
+      ]
+    },
+    {
+      "id": "G2",
+      "name": "calibration_or_protocol",
+      "required_evidence": [
+        "scale_and_comparison_protocol"
+      ],
+      "depends_on": [
+        "G1"
+      ]
+    },
+    {
+      "id": "G3",
+      "name": "shape_or_content",
+      "required_evidence": [
+        "editable_source",
+        "isolated_comparison"
+      ],
+      "depends_on": [
+        "G2"
+      ]
+    },
+    {
+      "id": "G4",
+      "name": "material_or_timbre",
+      "required_evidence": [
+        "surface_or_sound_comparison"
+      ],
+      "depends_on": [
+        "G3"
+      ]
+    },
+    {
+      "id": "G5",
+      "name": "function_interfaces",
+      "required_evidence": [
+        "motion_or_interface_check"
+      ],
+      "depends_on": [
+        "G4"
+      ]
+    },
+    {
+      "id": "G6",
+      "name": "runtime",
+      "required_evidence": [
+        "real_runtime_comparison",
+        "technical_export_check"
+      ],
+      "depends_on": [
+        "G5"
+      ]
+    },
+    {
+      "id": "G7",
+      "name": "optimization",
+      "required_evidence": [
+        "before_after_comparison",
+        "representative_cost_measurement"
+      ],
+      "depends_on": [
+        "G6"
+      ]
+    },
+    {
+      "id": "G8",
+      "name": "user_acceptance",
+      "required_evidence": [
+        "revision_bound_user_decision"
+      ],
+      "depends_on": [
+        "G7"
+      ]
+    }
+  ],
+  "policy": {
+    "detailed_active_components_max": 1,
+    "no_auto_art_acceptance": true,
+    "inapplicable_requires_reason_and_equivalent_proof": true,
+    "reference_binaries_outside_public_repo_unless_rights_established": true,
+    "stale_evidence_after_change_requires_recheck": true
+  }
+}

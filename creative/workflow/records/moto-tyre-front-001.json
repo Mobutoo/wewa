@@ -1,0 +1,245 @@
+{
+  "schema": 1,
+  "id": "MOTO-TYRE-FRONT-001",
+  "label": "Pneu avant — Boxer125HD RDC",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Boxer125HD RDC, série rouge visière longue; fournisseur et millésime pneu inconnus",
+    "variant_confirmed": false,
+    "usage": "Premier plan, moto seule avant conducteur",
+    "review_distances_m": []
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01",
+    "D02",
+    "D04",
+    "D05",
+    "D06"
+  ],
+  "claims": [
+    {
+      "id": "TYRE-DESIGNATION",
+      "property": "front_tyre_designation",
+      "value": "2.75-17",
+      "unit": null,
+      "source": "D01",
+      "locator": "technical specifications",
+      "status": "documented_exact_variant",
+      "adopted": true,
+      "scope": "nominal designation only, not inflated dimensions"
+    },
+    {
+      "id": "TYRE-RIM-BEAD",
+      "property": "nominal_rim_bead_seat_diameter",
+      "value": 431.8,
+      "unit": "mm",
+      "source": "D01",
+      "locator": "17in unit conversion",
+      "status": "documented_exact_variant",
+      "adopted": true,
+      "scope": "derived unit conversion17*25.4; neither outside rim nor tyre diameter"
+    },
+    {
+      "id": "TYRE-LOAD-SPEED",
+      "property": "front_tyre_load_speed_designation",
+      "value": "41P",
+      "unit": null,
+      "source": "D02",
+      "locator": "Brakes and Tyres",
+      "status": "documented_related_variant",
+      "adopted": false,
+      "scope": "requires exact variant confirmation"
+    },
+    {
+      "id": "TYRE-MRF-FS",
+      "property": "comparative_unloaded_outside_diameter",
+      "value": 568,
+      "unit": "mm",
+      "source": "D05",
+      "locator": "PDF sheet61, printed60, ZapperFS2.75-17",
+      "status": "documented_related_variant",
+      "adopted": false,
+      "scope": "MRF product only; not identified Boxer fitment"
+    }
+  ],
+  "views": [
+    {
+      "manifest": "../../library/motorcycle-reference-views.json",
+      "image": "rotation-02.png",
+      "role": "front overall; tread detail insufficient",
+      "calibrated": false
+    },
+    {
+      "manifest": "../../library/motorcycle-reference-views.json",
+      "image": "rotation-00.png",
+      "role": "right profile; sidewall not legible",
+      "calibrated": false
+    },
+    {
+      "manifest": "../../library/motorcycle-reference-views.json",
+      "image": "rotation-04.png",
+      "role": "left profile",
+      "calibrated": false
+    }
+  ],
+  "criteria": [
+    {
+      "id": "T1",
+      "criterion": "Section, shoulders, sidewalls and visible bead interface follow identified tyre",
+      "tolerance": "to_define_from_references_and_annotation_uncertainty",
+      "evidence_required": "front/profile close comparisons"
+    },
+    {
+      "id": "T2",
+      "criterion": "Tread sector and repeat follow documented pattern, no invented blocks",
+      "tolerance": "visible pattern mismatch requires rework",
+      "evidence_required": "tread reference, isolated sector and full revolution"
+    },
+    {
+      "id": "T3",
+      "criterion": "Rubber relief and roughness read under neutral and grazing light",
+      "tolerance": "to_define_before_material_work",
+      "evidence_required": "same-angle material comparisons"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "V01",
+      "description": "Exact tyre maker/model and fitment not established",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1"
+      ],
+      "next_research": "Read same-variant tyre sidewall, compare actual product sheet"
+    },
+    {
+      "id": "V02",
+      "description": "Inflated section/outside diameter and measurement conditions unknown",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1"
+      ],
+      "next_research": "Exact maker technical dimensions or measured tyre; do not borrow MRF values"
+    },
+    {
+      "id": "V03",
+      "description": "Tread and sidewall microdetail not legible",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1"
+      ],
+      "next_research": "Obtain real high-resolution tread/flank views with provenance"
+    },
+    {
+      "id": "V04",
+      "description": "Rim/bead and loaded contact not established",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1"
+      ],
+      "next_research": "Resolve current tubeless vs older tube-type catalogue difference; document relevant interface"
+    },
+    {
+      "id": "C01",
+      "description": "No annotated landmarks or fitted cameras",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G2"
+      ],
+      "next_research": "Annotate visible points, fit constrained guides, retain check views"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Component identified; tyre variant, review distances and criteria tolerances still incomplete",
+      "reviewed_at": null
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Critical tyre identity and geometry information missing; comparative documents are not exact fitment proof",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "No calibration or annotated comparison protocol executed",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "documentary-workflow-v1-2026-10-20",
+  "export_revision": null,
+  "next_action": "Annoter repères et préparer guides/caméras; chercher flanc et sculpture de la monte exacte avant détail du pneu.",
+  "art_accepted": false
+}

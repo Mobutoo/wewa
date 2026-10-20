@@ -1,5 +1,7 @@
 # Moto seule — plan de conception avant fabrication
 
+Voir aussi le [complément documentaire](workflow/RESEARCH.md), les [25 groupes de composants à développer](workflow/motorcycle-assembly.json) et le [workflow réutilisable](workflow/README.md). Les nouvelles informations des versions apparentées restent conditionnelles ; le conflit de largeur et l’interface pneu/jante ne sont pas résolus.
+
 **Complément de recherche :** appliquer la [méthode documentée de reconstruction](MOTORCYCLE_RECONSTRUCTION_RESEARCH.md). La prochaine étape est l’annotation des repères et le rapprochement des caméras aux photos, avant le premier pneu détaillé. Les guides de calibration ne constituent pas une nouvelle moto globale simplifiée. Aucune reconstruction photographique automatique ni précision millimétrique n’est acquise.
 
 ## Mandat actuel

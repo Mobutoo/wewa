@@ -1,5 +1,7 @@
 # Reprise après refus du lot 01
 
+Procédure opérationnelle commune : [workflow de fabrication fidèle](workflow/README.md), [recettes](workflow/RECIPES.md), [complément documentaire](workflow/RESEARCH.md). Ces fichiers détaillent et prolongent les conditions ci-dessous ; les fiches de composants et preuves sont conservées dans `workflow/records/`.
+
 Périmètre actuel : **moto seule, plan avant fabrication ; conducteur après réception de la moto**. Le [plan spécifique](MOTORCYCLE_PLAN.md) précise les vues réellement examinées, les dimensions vérifiées et les manques.
 
 L’utilisateur refuse toutes les vues du lot 01 et le travail trop global. Ce lot reste une étude rejetée ; ses contrôles glTF, ses cotes globales et ses sources Blender ne prouvent aucun réalisme. Aucun de ses composants n’est reçu artistiquement. Les fichiers précédents sont conservés pour comparaison, pas comme exemplaires à multiplier.
