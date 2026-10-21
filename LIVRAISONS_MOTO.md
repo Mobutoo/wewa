@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **106 composants candidats enregistrés**, après
+Le registre courant comporte **107 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P04** : [MOTO-SIDE-COVER-RIGHT-SKIN-001 — bounded exterior candidate — sources et images](creative/reviews/side-cover-right-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P03** : [bavette avant à trois trous — sources et images](creative/reviews/front-mudflap-coordination-v1/README.md). Variante apparentée, montage et reste du paquet ouverts.
 - **P01** : [cache gauche corrigé et fixation visible, sources et images](creative/reviews/side-cover-left-v2/coordinator-delivery.md). Même identité, paquet encore ouvert.
 - **P05** : [tail-lamp-upper-bracket — sources, rendus et contrôles](creative/reviews/tail-lamp-upper-bracket-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
