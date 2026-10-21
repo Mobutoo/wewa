@@ -1,0 +1,1 @@
+Le lien relatif existait et chargeait les sources ; le premier checker comparait les chaînes de chemins avec ../ à leur forme canonique. La version additive résout les chemins avant comparaison, sans changer le fichier de composition ni les bibliothèques.

@@ -1,6 +1,6 @@
 # Viva Wewa — revue des composants moto
 
-**95 composants uniques enregistrés · 95 vues Blender prouvées · aucune réception artistique.**
+**98 composants uniques enregistrés · 98 vues Blender prouvées · aucune réception artistique.**
 
 Une seule vue originale par composant, à la révision exacte de sa fiche. Les anciennes révisions et les sources seulement cataloguées ou gelées sans enregistrement central ne sont pas ajoutées. Ces rendus montrent des candidats isolés, pas le jeu ni une moto terminée.
 
@@ -22,13 +22,13 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 | [06 · Levier embrayage et support](#groupe-6) | 2 | Candidats partiels en revue ; groupe non terminé |
 | [07 · Levier frein au guidon et support](#groupe-7) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [08 · Rétroviseurs gauche/droit](#groupe-8) | 2 | Candidats partiels en revue ; groupe non terminé |
-| [09 · Contacteur et clé](#groupe-9) | 2 | Candidats partiels en revue ; groupe non terminé |
+| [09 · Contacteur et clé](#groupe-9) | 3 | Candidats partiels en revue ; groupe non terminé |
 | [10 · Câbles et faisceau visibles](#groupe-10) | 3 | Candidats partiels en revue ; groupe non terminé |
 | [11 · Visière et entourage des compteurs](#groupe-11) | 1 | Candidats partiels en revue ; groupe non terminé |
-| [12 · Phare et clignotants avant](#groupe-12) | 4 | Candidats partiels en revue ; groupe non terminé |
+| [12 · Phare et clignotants avant](#groupe-12) | 5 | Candidats partiels en revue ; groupe non terminé |
 | [13 · Fourche et direction](#groupe-13) | 6 | Candidats partiels en revue ; groupe non terminé |
 | [14 · Ensemble avant et compatibilité des candidats existants](#groupe-14) | 1 | Candidats partiels en revue ; groupe non terminé |
-| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 14 | Candidats partiels en revue ; groupe non terminé |
+| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 15 | Candidats partiels en revue ; groupe non terminé |
 | [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 18 | Candidats partiels en revue ; groupe non terminé |
 | [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 25 | Candidats partiels en revue ; groupe non terminé |
 | [18 · Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière](#groupe-18) | 2 | Candidats partiels en revue ; groupe non terminé |
@@ -479,6 +479,32 @@ PNG SHA-256 : `8827f60c70bbf908a50c7a6d2fbfb7aacd839c1bf06fff848b537d9c4b973962`
 
 </details>
 
+
+<a id="moto-ignition-connector-housing-001"></a>
+
+### Coque extérieure de connecteur de contact — pose conditionnelle v2
+
+`MOTO-IGNITION-CONNECTOR-HOUSING-001` · révision `ignition-connector-v2` · **candidat non reçu**
+
+![Coque extérieure de connecteur de contact — pose conditionnelle v2 — ignition-connector-v2](ignition-connector-v2/whole-housing.png)
+
+[Image entière](ignition-connector-v2/whole-housing.png) · [Preuve du rendu](ignition-connector-v2/render-report.json) · vue `whole-housing`
+
+Source SHA-256 : `4fdfe1a16433ded995a18a4b3c58e4600f4b9cfe4220567a01d2105de277b35e`  
+PNG SHA-256 : `5f12f4e72f0b364c2e538ef707cf72080ec5b7e5cede69ba2d10760aa8fa77f7`
+
+[Blender](../../assets-src/moto-components/ignition-connector/ignition-connector-v2.blend) · [GLB](../../assets-src/moto-components/ignition-connector/ignition-connector-v2-inspection.glb) · [README source](../../assets-src/moto-components/ignition-connector/README_v2.md) · [Revue et limites](ignition-connector-v2/README.md) · [Fiche](../workflow/records/moto-ignition-connector-housing-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [empty-mouth-not-contacts](ignition-connector-v2/empty-mouth-not-contacts.png) · [preuve](ignition-connector-v2/render-report.json)
+- [wire-shoulder-context](ignition-connector-v2/wire-shoulder-context.png) · [preuve](ignition-connector-v2/render-report.json)
+- [retaining-surface-control](ignition-connector-v2/retaining-surface-control.png) · [preuve](ignition-connector-v2/render-report.json)
+
+</details>
+
 Périmètre prévu : barillet/contacteur extérieur; clé générique non fonctionnelle.
 
 <a id="groupe-10"></a>
@@ -551,7 +577,7 @@ PNG SHA-256 : `4f9c42b0ff8876de159454754f0c4b34c8e749ddf61f9010366afe0941bb6f2a`
 Source SHA-256 : `82b14bb8f500fa905ca35288691bbbcffd6ff8394f1563e74d382038ded7afe3`  
 PNG SHA-256 : `c730677eadef967b35b4840e2b866b2a18b1225847b3d93cd0fd000cb723d367`
 
-[Blender](../../assets-src/moto-components/cockpit-cables/cockpit-cables-v3.blend) · [GLB](../../assets-src/moto-components/cockpit-cables/cockpit-cables-v3-inspection.glb) · [README source](../../assets-src/moto-components/cockpit-cables/README_v3.md) · [Fiche](../workflow/records/moto-cockpit-cables-001.json)
+[Blender](../../assets-src/moto-components/cockpit-cables/cockpit-cables-v3.blend) · [GLB](../../assets-src/moto-components/cockpit-cables/cockpit-cables-v3-inspection.glb) · [README source](../../assets-src/moto-components/cockpit-cables/README_v3.md) · [Revue et limites](cockpit-cables-v3/README.md) · [Fiche](../workflow/records/moto-cockpit-cables-001.json)
 
 
 <details>
@@ -697,6 +723,31 @@ PNG SHA-256 : `5e813fe4272939a47391095ae2729d64835cfcd85300e70aa51d4c2b53c7378c`
 
 - [neck-grooves-pbr](indicator-front-left-stalk-v1/neck-grooves-pbr.png) · [preuve](indicator-front-left-stalk-v1/render-report.json)
 - [neutral-outdoor](indicator-front-left-stalk-v1/neutral-outdoor.png) · [preuve](indicator-front-left-stalk-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-indicator-front-lens-001"></a>
+
+### Clignotant avant — lentille ambre, surface extérieure estimée
+
+`MOTO-INDICATOR-FRONT-LENS-001` · révision `indicator-front-lens-v1` · **candidat non reçu**
+
+![Clignotant avant — lentille ambre, surface extérieure estimée — indicator-front-lens-v1](indicator-front-lens-v1/whole-lens-pbr.png)
+
+[Image entière](indicator-front-lens-v1/whole-lens-pbr.png) · [Preuve du rendu](indicator-front-lens-v1/render-report.json) · vue `whole-lens-pbr`
+
+Source SHA-256 : `16cf50785238a919bee4a0858b9a27cc562cd8c6d40fea5be02f07e83a3f64e3`  
+PNG SHA-256 : `51d40b5f68d7be324c1089f62974603d3778e9938e40db5f251a8c3d93ed933b`
+
+[Blender](../../assets-src/moto-components/indicators-front/lens/indicator-front-lens-v1.blend) · [GLB](../../assets-src/moto-components/indicators-front/lens/indicator-front-lens-v1.glb) · [README source](../../assets-src/moto-components/indicators-front/lens/README.md) · [Revue et limites](indicator-front-lens-v1/README.md) · [Fiche](../workflow/records/moto-indicator-front-lens-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [rim-bands-pbr](indicator-front-lens-v1/rim-bands-pbr.png) · [preuve](indicator-front-lens-v1/render-report.json)
+- [neutral-outdoor](indicator-front-lens-v1/neutral-outdoor.png) · [preuve](indicator-front-lens-v1/render-report.json)
 
 </details>
 
@@ -1258,6 +1309,33 @@ PNG SHA-256 : `7b57e9fc10300cfb540e5983ea89f36c315b83114bb9976aed263dd696788018`
 - [doublebend-detail](engine-protection-terminal-a-v1/doublebend-detail.png) · [preuve](engine-protection-terminal-a-v1/render-report.json)
 - [upper-bore-detail](engine-protection-terminal-a-v1/upper-bore-detail.png) · [preuve](engine-protection-terminal-a-v1/render-report.json)
 - [lower-bore-detail](engine-protection-terminal-a-v1/lower-bore-detail.png) · [preuve](engine-protection-terminal-a-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-engine-protection-terminal-b-001"></a>
+
+### Second embout observé du pare-moteur — candidat partiel
+
+`MOTO-ENGINE-PROTECTION-TERMINAL-B-001` · révision `engine-protection-terminal-b-v1` · **candidat non reçu**
+
+![Second embout observé du pare-moteur — candidat partiel — engine-protection-terminal-b-v1](engine-protection-terminal-b-v1/quarter.png)
+
+[Image entière](engine-protection-terminal-b-v1/quarter.png) · [Preuve du rendu](engine-protection-terminal-b-v1/render-report.json) · vue `quarter`
+
+Source SHA-256 : `030e239da656a8e79b3cd542dd9001e4c98e52cfd653414caf665597661399cf`  
+PNG SHA-256 : `dc2dcde7450055705d3a2a7e360cbf00a4cd05eaaff0b8b3c1b01f71f1a189c2`
+
+[Blender](../../assets-src/moto-components/engine-protection-terminal-b/engine-protection-terminal-b-v1.blend) · [GLB](../../assets-src/moto-components/engine-protection-terminal-b/engine-protection-terminal-b-inspection.glb) · [README source](../../assets-src/moto-components/engine-protection-terminal-b/README.md) · [Revue et limites](engine-protection-terminal-b-v1/README.md) · [Fiche](../workflow/records/moto-engine-protection-terminal-b-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [reverse-quarter](engine-protection-terminal-b-v1/reverse-quarter.png) · [preuve](engine-protection-terminal-b-v1/render-report.json)
+- [doublebend-detail](engine-protection-terminal-b-v1/doublebend-detail.png) · [preuve](engine-protection-terminal-b-v1/render-report.json)
+- [upper-bore-detail](engine-protection-terminal-b-v1/upper-bore-detail.png) · [preuve](engine-protection-terminal-b-v1/render-report.json)
+- [lower-envelope-detail](engine-protection-terminal-b-v1/lower-envelope-detail.png) · [preuve](engine-protection-terminal-b-v1/render-report.json)
 
 </details>
 

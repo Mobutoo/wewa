@@ -384,10 +384,18 @@
           "review": "../reviews/ignition-key-ring-v1/README.md",
           "runtime_checked": true,
           "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-IGNITION-CONNECTOR-HOUSING-001",
+          "revision": "ignition-connector-v2",
+          "source_sha256": "4fdfe1a16433ded995a18a4b3c58e4600f4b9cfe4220567a01d2105de277b35e",
+          "review": "../reviews/ignition-connector-v2/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
         }
       ],
       "remaining_observable_units": [
-        "connecteur visible lié PF232605, suivi au lot10"
+        "court fil clair visible sur la variante PF232605 et raccords de faisceau, suivis au lot 10"
       ]
     },
     {
@@ -447,8 +455,9 @@
       ],
       "remaining_observable_units": [
         "continuations visibles embrayage/frein au-delà des coupes de revue des deux départs construits",
-        "départ accélérateur et câblage visible du commodo gauche, attaches visibles",
-        "connecteur allumage en cours et révision de route pigtail3, non encore enregistrés comme finalisés"
+        "départ accélérateur, câblage visible du commodo gauche et attaches observables",
+        "court fil clair documenté à l’entrée de la variante PF232605 ; identité RDC et géométrie locale restent bornées",
+        "vérification du routage et des liaisons restantes dans le cockpit mis à jour"
       ]
     },
     {
@@ -539,12 +548,20 @@
           "review": "../reviews/indicator-front-left-stalk-v1/README.md",
           "runtime_checked": true,
           "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-INDICATOR-FRONT-LENS-001",
+          "revision": "indicator-front-lens-v1",
+          "source_sha256": "16cf50785238a919bee4a0858b9a27cc562cd8c6d40fea5be02f07e83a3f64e3",
+          "review": "../reviews/indicator-front-lens-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
         }
       ],
       "remaining_observable_units": [
-        "zones larges et fines de lentille clignotant en cours avant matière",
-        "corps des clignotants avant, tige droite et raccords visibles",
-        "réflecteur, lentille principale et détails internes effectivement observables du phare"
+        "corps noir du clignotant en cours et raccords visibles de tige/vis distincts",
+        "tige droite, réflecteur/lentille principale et détails internes effectivement observables du phare",
+        "revue d’ensemble des deux clignotants et du phare"
       ]
     },
     {
@@ -819,10 +836,18 @@
           "review": "../reviews/engine-protection-terminal-a-v1/README.md",
           "runtime_checked": true,
           "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-ENGINE-PROTECTION-TERMINAL-B-001",
+          "revision": "engine-protection-terminal-b-v1",
+          "source_sha256": "030e239da656a8e79b3cd542dd9001e4c98e52cfd653414caf665597661399cf",
+          "review": "../reviews/engine-protection-terminal-b-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
         }
       ],
       "remaining_observable_units": [
-        "seconde terminaison du pare-moteur en cours ; soudures, crochets et liaisons visibles distinctes",
+        "premier cordon externe du pare-moteur en reprise de forme ; autres soudures, crochets et liaisons visibles distincts",
         "extrémités ouvertes du patin de chaîne",
         "garde-boue avant, bavettes et attaches visibles",
         "jonctions/attaches visibles du cadre, tendeurs de chaîne et écrou de pivot"
@@ -1380,5 +1405,15 @@
     ],
     "estimated_fit_policy": "Coherent bounded artistic placement is permitted with explicit assumptions; unavailable hidden OEM dimensions do not block fabrication of observable geometry. Physical fit remains unqualified.",
     "all_18_groups_complete": false
+  },
+  "backlog_refresh_source24": {
+    "scope": "Refreshed after independent technical admission of terminalB, connector2 and amber lens:98 registered physical candidate identities, not98 accepted parts. No group completion. The previous Source21 refresh remains a historical note.",
+    "already_built_removed_from_remaining": [
+      "terminalB outer plate candidate",
+      "connector exterior housing candidate",
+      "amber lens rendering surface candidate"
+    ],
+    "current_work": "A external guard weld; B driver cockpit review then17; C indicator housing then12/18",
+    "measured_hidden_geometry_not_invented": true
   }
 }

@@ -1,0 +1,1 @@
+Diagnostic en lecture interrompu par segfault Blender pendant itération live collection.all_objects et allocation/libération de meshes évalués. Aucun modèle ni image écrits. Nouveau checker snapshot les listes et utilise evaluated.to_mesh()/to_mesh_clear() sans créer/enlever de datablock source.

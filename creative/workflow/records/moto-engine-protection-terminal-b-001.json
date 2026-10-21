@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-ENGINE-PROTECTION-TERMINAL-B-001",
-  "label": "Arceau moteur \u2014 second embout d\u00e9port\u00e9 vu de chant",
+  "label": "Second embout observé du pare-moteur — candidat partiel",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,9 +12,9 @@
     "material"
   ],
   "identity": {
-    "variant": "Related PF231201 seller BM125/150/150X/UG, image-right terminal; exactRDC/handedness/geometry/contacts unqualified",
+    "variant": "RelatedPF231201 imageRIGHT, not installedpilotR/L or currentRDC certified",
     "variant_confirmed": false,
-    "usage": "Separate exterior component candidate then conditional review assembly",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
       0.15,
       0.35,
@@ -26,7 +26,33 @@
     "D01"
   ],
   "claims": [],
-  "views": [],
+  "views": [
+    {
+      "name": "quarter",
+      "PNG_sha256": "dc2dcde7450055705d3a2a7e360cbf00a4cd05eaaff0b8b3c1b01f71f1a189c2",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "reverse-quarter",
+      "PNG_sha256": "3b527f502bec374785a153cba170cc1f6616acaf2adde3a651ceee3cc640b49a",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "doublebend-detail",
+      "PNG_sha256": "c3a8d7ee3671e87de09326d7b49cefa4b641ba09996889f543b9128f5568f625",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "upper-bore-detail",
+      "PNG_sha256": "8f54cb37eb01456c3828fb7ba3f7a8100e4d4f67f83b1e0a57dfb50f4f7d08a9",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "lower-envelope-detail",
+      "PNG_sha256": "3a65614153ac63019cf96a1932459cdfde049602400e521dedb72ec061ac3aef",
+      "reused_verified_checkpoint": false
+    }
+  ],
   "criteria": [],
   "gaps": [
     {
@@ -43,7 +69,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "engine-protection-terminal-b-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -51,63 +77,103 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": null,
+      "revision": "engine-protection-terminal-b-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Actual edge-on upperpassage and doublebend observed, but reverse/lowerperforation and metric/variant identity unresolved for complete fidelity. Bounded exterior candidate may proceed with explicit gaps after tyre.",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
-      "status": "pending",
-      "revision": null,
+      "status": "blocked",
+      "revision": "engine-protection-terminal-b-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "engine-protection-terminal-b-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/engine-protection-terminal-b/engine-protection-terminal-b-v1.blend",
+          "kind": "editable_source",
+          "revision": "engine-protection-terminal-b-v1",
+          "sha256": "030e239da656a8e79b3cd542dd9001e4c98e52cfd653414caf665597661399cf"
+        },
+        {
+          "path": "../../reviews/engine-protection-terminal-b-v1/quarter.png",
+          "kind": "isolated_comparison",
+          "revision": "engine-protection-terminal-b-v1",
+          "sha256": "dc2dcde7450055705d3a2a7e360cbf00a4cd05eaaff0b8b3c1b01f71f1a189c2"
+        }
+      ],
+      "reason": "Root independently opened five actual final96 native images, two actual Babylon views, three isolated gray views, two actual PF photos and three separate gray junction-guide views. Finite independently developed double-offset plate with one observed upper passage; no mirrored A mesh or invented third hole. Lower exterior envelope, lower aperture status, reverse/section and all dimensions remain artistic estimates. All raw POSITION/N/UV/T/index buffers and world matrices protected G3-to-PBR; small reflection/edge grain not measured.",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "engine-protection-terminal-b-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/engine-protection-terminal-b-v1/lower-envelope-detail.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "engine-protection-terminal-b-v1",
+          "sha256": "3a65614153ac63019cf96a1932459cdfde049602400e521dedb72ec061ac3aef"
+        }
+      ],
+      "reason": "Original black coating candidate and two original512square maps, packed/relative and embedded; no photo texture. Five96 actually read and two actual browser views examined. Browser reverse is very dark and hides finish/inner contrast, native macro supplies separate shape detail; no measured paint, chemical finish or native/browser photographic parity reception.",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "engine-protection-terminal-b-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/engine-protection-terminal-b-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "engine-protection-terminal-b-v1",
+          "sha256": "cf328179a22139211f65ccca75ecec4377caba04a48eea7da6bedc25dfc0593c"
+        }
+      ],
+      "reason": "Isolated upper-opening datum; three gray guide views independently read show a coherent estimated review placement against four unchanged sources. Small sampled contact residuals are numerical witnesses, not mounted fit, weld penetration/strength, load path or tolerance. Guide adds0physicalIDs. No automatic vehicle pose, B-lower hole, hook, spacer, bolts or external weld declared built in this terminal unit; weld is a distinct following candidate.",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "engine-protection-terminal-b-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/engine-protection-terminal-b-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "engine-protection-terminal-b-v1",
+          "sha256": "4f00681a9f367e50e5d2c607512b7c10d13a278f5087178811eeb645fbcd0535"
+        },
+        {
+          "path": "../../reviews/engine-protection-terminal-b-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "engine-protection-terminal-b-v1",
+          "sha256": "a3da690fd38d03a9c1d57f2cc47176d713940bff49c50e005ec9cc83ba88eac8"
+        }
+      ],
+      "reason": "Actual157508triangles/one mesh, strict0glTFerrors, one normalmapped primitive/zero collapsed UV and four actual nonblank Babylon canvases, zero page/HTTP errors. Detailed inspection candidate only; no mobileLOD/Safari/physical iPhone or artistic qualification.",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "engine-protection-terminal-b-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "engine-protection-terminal-b-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -115,9 +181,9 @@
     }
   },
   "active_detailed_fabrication": false,
-  "source_revision": null,
-  "export_revision": null,
-  "next_action": "Revue auteur88 close apr\u00e8s cinq finales96 r\u00e9ellement lues. Attendre QA/admission root distincte. Guide de contact34 clos sans nouvelle pi\u00e8ce ; soudures externes/hook/spacer restent \u00e0 fabriquer, bas/perforationB/pose et G3/G5 fid\u00e9lit\u00e9 compl\u00e8te ouverts.",
+  "source_revision": "engine-protection-terminal-b-v1",
+  "export_revision": "engine-protection-terminal-b-v1-inspection",
+  "next_action": "Resolve documentary dimensions, remaining visible/hidden geometry and installed interfaces; compare native/browser material before art reception. No automatic mounting or mobile qualification.",
   "art_accepted": false,
   "documentary_references": [
     "creative/research/engine-protection-terminal-b-15-v1/documentary-preparation-v1.json",
@@ -125,7 +191,6 @@
     "creative/research/engine-protection-terminal-b-15-v1/working-study-v1.json"
   ],
   "production_group": 15,
-  "pending_revision": "engine-protection-terminal-b-v1",
   "candidate_revision": {
     "revision": "engine-protection-terminal-b-v1",
     "source_sha256": "030e239da656a8e79b3cd542dd9001e4c98e52cfd653414caf665597661399cf",
@@ -136,5 +201,7 @@
     "finals_status": "Five96 actually read, PNG+EXR/checkpoints verified, workerexit0/sourceunchanged; authorfinalmanifest88closed",
     "author_final_manifest": "creative/reviews/engine-protection-terminal-b-v1/manifest.json",
     "author_final_manifest_sha256": "0ec136ca550a9f105442b0d8f6295d4510b9346bb14e2593b42d1df2c056fde8"
-  }
+  },
+  "candidate_source": "../../../assets-src/moto-components/engine-protection-terminal-b/README.md",
+  "candidate_review": "../../reviews/engine-protection-terminal-b-v1/README.md"
 }

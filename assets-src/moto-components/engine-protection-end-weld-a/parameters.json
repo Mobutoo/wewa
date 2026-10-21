@@ -1,0 +1,58 @@
+{
+  "component_id": "MOTO-ENGINE-PROTECTION-END-WELD-A-001",
+  "revision": "engine-protection-end-weld-a-v1",
+  "collection": "WEWA_ENGINE_PROTECTION_END_WELD_A_ISOLATED",
+  "scope": "Only bounded frontal/upper-oblique exterior arc at first terminalA/tube junction. Unresolved backsector and secondjunction notbuilt. No internalpenetration or completeweld/OEMfidelity.",
+  "all_metric_parameters_estimated": true,
+  "tube_outer_radius_m_estimated": 0.01,
+  "axial_leg_m_estimated": 0.0017,
+  "radial_leg_m_estimated": 0.00145,
+  "crown_bulge_fraction_estimated": 0.14,
+  "leg_variation_fraction_estimated": 0.025,
+  "crown_variation_fraction_estimated": 0.025,
+  "arc_start_deg_estimated": -105,
+  "arc_end_deg_estimated": 140,
+  "angular_segments": 350,
+  "outer_profile_segments": 64,
+  "UV_tile_m_estimated": 0.01,
+  "ranges_estimated": {
+    "axial_leg_m": [
+      0.001,
+      0.003
+    ],
+    "radial_leg_m": [
+      0.0008,
+      0.0025
+    ],
+    "frontal_observation_window_deg": [
+      225,
+      260
+    ]
+  },
+  "frame": {
+    "origin": "centre nominal tubeend/plateface contact",
+    "X": "+toward tube awayfrom plate, not installed direction",
+    "Y": "+toward front of working contactguide after Rz180",
+    "Z": "+up in working guide"
+  },
+  "context_pose_estimated": {
+    "Euler_Z_deg": 180,
+    "translation_m": [
+      -0.045,
+      0,
+      -0.255
+    ]
+  },
+  "guide_source": "assets-src/moto-components/engine-protection-junctions-guide/engine-protection-junctions-guide-v1.blend",
+  "guide_source_sha256": "1afface3ec25e8d4cc336a1245768c7c0e17f9d93c8bc120a01d1d8a49b8bf03",
+  "guide_manifest": "creative/reviews/engine-protection-junctions-guide-v1/guide-manifest.json",
+  "guide_manifest_sha256": "111ff46e06d50397331ce4d5aec500f1f53ab841f619a1cd13ca2dc8502ccadb",
+  "method": "Separate finite crosssection swept through explicit frontal reconstruction window. Smooth original lowamplitude spatial variations, no copied weld/photo pixels. Exact beadprofile/extent/toeangles not measured. Window endpoints are constructionlimits, not observed real start/stop.",
+  "rear_continuation_built": false,
+  "second_junction_built": false,
+  "internal_penetration_built": false,
+  "art_accepted": false,
+  "window_fade_margin_deg_estimated": 15,
+  "window_end_leg_scale_estimated": 0.06,
+  "window_range_revision": "Initial150..210screeningrange rejected after actualsquarecap at+90 in context; additive correction records expanded245degworkingwindow before new geometry."
+}

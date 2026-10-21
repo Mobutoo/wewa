@@ -1,0 +1,11 @@
+# Engine-guard end weld A — partial external candidate v1
+
+MOTO-ENGINE-PROTECTION-END-WELD-A-001. A separately constructed closed solid for the frontal exterior arc of the first photographed terminal/tube junction. It does not contain the tube, tab, hidden penetration, opposite junction or a complete weld ring. The245° arc is a bounded reconstruction window with15° attenuated constructionmargins; the initial180° state was rejected for a visible square end, not measured real start/stop positions.
+
+The finite section has estimated axial/radial legs and a smoothly varying original crown. The original editable recipe constructs contact faces, actual volume and capped attenuated window boundaries. Profile and circumferential variation are geometry, not a bump-map substitute. No manufacturer throat/strength, chemical grade or measured weld thickness is claimed.
+
+[Related PF231201](https://www.croslandrepuestos.pe/protector-de-piernas-pf231201/p), [terminal macro](https://croslandpe.vteximg.com.br/arquivos/ids/174418/PF231201_2.jpg?v=639058581997070000) and [whole guard](https://croslandpe.vteximg.com.br/arquivos/ids/174419/PF231201_3.jpg?v=639058581999770000) are documentary references only. No private photograph pixels or vendor mesh are embedded. Exact current RDC identity and side mapping remain unconfirmed.
+
+`parameters.json` and `creative/research/engine-protection-end-weld-a-15-v1/pre-geometry-study-v1.json` precede detailed geometry. `build.py` constructs the standalone editable source and selected GLB. `check_export.mjs` reads actual exported buffers, closure/volume/areas/UV/normals and clear/solid probes. `inspect_self.py` reads actual native triangles; its BVH witness excludes adjacent/coplanar cases and is not a complete contact or strength certificate.
+
+Collection WEWA_ENGINE_PROTECTION_END_WELD_A_ISOLATED. Origin at nominal tube-end/plateface centre, local+X toward tube. Conditional context pose Rz180° and translation(-.045,0,-.255) preserves the existing four-source guide. `render_form.py` uses actual sources and geometry overrides in RAM only; it never saves the guide or component source. All guide/source estimates and the B lowerhole unknown remain unchanged.

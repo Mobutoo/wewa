@@ -1,0 +1,38 @@
+"""Static read-only composition: exact current candidate sources, no repair or new part."""
+from pathlib import Path
+import bpy,json,hashlib
+H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/cockpit-updated-review-v4';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+assert not(H/'preflight-manifest.json').exists()
+rows=json.loads((R/'creative/reviews/cockpit-current-review-v3/source-geometry-check.json').read_text())['linked_sources']
+inputs=[]
+for row in rows:
+    row=dict(row)
+    if row['asset']=='cockpit-cables-v2':
+        B=json.loads((H.parent/'cockpit-cables/build-report-v3.json').read_text());row.update(asset='cockpit-cables-v3',source='assets-src/moto-components/cockpit-cables/cockpit-cables-v3.blend',sha256=B['source_sha256'])
+    inputs.append({k:row[k]for k in['asset','source','sha256','source_collection']})
+for folder,blend,collection,report in [('clutch-upper-sheath','clutch-upper-sheath-v1.blend','WEWA_CLUTCH_UPPER_SHEATH','build-report.json'),('front-brake-upper-sheath','front-brake-upper-sheath-v1.blend','WEWA_FRONT_BRAKE_UPPER_SHEATH','build-report.json'),('ignition-key-ring','ignition-key-ring-v1.blend','WEWA_IGNITION_KEY_RING','build-report.json'),('ignition-connector','ignition-connector-v2.blend','WEWA_IGNITION_CONNECTOR_HOUSING','build-report-v2.json')]:
+    B=json.loads((H.parent/folder/report).read_text());inputs.append({'asset':folder,'source':f'assets-src/moto-components/{folder}/{blend}','sha256':B['source_sha256'],'source_collection':collection})
+assert (H.parent/'ignition-connector/preflight-manifest-v2.json').is_file(), 'Finish and freeze connector2 first'
+assert len(inputs)==18
+for row in inputs:assert sha(R/row['source'])==row['sha256']
+bpy.ops.wm.read_factory_settings(use_empty=True);s=bpy.context.scene;s.unit_settings.system='METRIC';s.unit_settings.scale_length=1
+seen=[]
+loaded=[]
+for row in inputs:
+    with bpy.data.libraries.load(str(R/row['source']),link=True,relative=True)as(a,l):l.collections=[row['source_collection']]
+    c=l.collections[0];assert c is not None;s.collection.children.link(c);local=list(c.all_objects);assert all(o is not None for o in local)
+    loaded.append((row,c))
+    row['mesh_objects']=sum(o.type=='MESH'for o in local)
+    row['actual_rest_world_matrices']=[{'object':o.name,'matrix':[list(q)for q in o.matrix_world]}for o in local if o.type=='MESH']
+    seen+=local
+s.frame_set(1);bpy.context.view_layer.update()
+diffs=[]
+for row,c in loaded:
+    for o in c.all_objects:
+        if o.type!='MESH':continue
+        before=next(q['matrix']for q in row['actual_rest_world_matrices']if q['object']==o.name);after=[list(q)for q in o.matrix_world]
+        if before!=after:diffs.append({'asset':row['asset'],'object':o.name,'before':before,'after':after,'local_matrix_basis':[list(q)for q in o.matrix_basis],'parent':o.parent.name if o.parent else None})
+result={'prepared_script_sha256':sha(H/'build.py'),'mismatch_count':len(diffs),'mismatches':diffs,'source_files_unchanged':True,'source_or_render_created':False}
+(O/'initial-rest-matrix-diagnostic.json').write_text(json.dumps(result,indent=2)+'\n')
+for row in inputs:assert sha(R/row['source'])==row['sha256']
+print('INITIAL_REST_MATRIX_DIAGNOSTIC',len(diffs));raise SystemExit(0)

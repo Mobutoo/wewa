@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-INDICATOR-FRONT-LENS-001",
-  "label": "Clignotant avant \u2014 \u00e9tude isol\u00e9e de lentille li\u00e9e DU201016",
+  "label": "Clignotant avant — lentille ambre, surface extérieure estimée",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,13 +12,13 @@
     "material"
   ],
   "identity": {
-    "variant": "DU201016 related BM125/BM150/X/UG branches, exact current RDC unknown",
+    "variant": "RelatedDU201016/PF401001/2, not exact currentRDC/USB certified",
     "variant_confirmed": false,
-    "usage": "Isolated visible lens rendering candidate; broad zones first, fine peripheral features then material",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
-      0.1,
-      0.25,
-      0.6
+      0.15,
+      0.35,
+      0.65
     ]
   },
   "source_register": "../sources.json",
@@ -26,7 +26,563 @@
     "D01"
   ],
   "claims": [],
-  "views": [],
+  "views": [
+    {
+      "name": "whole-lens-pbr",
+      "camera": {
+        "location_m": [
+          0.02500000037252903,
+          -0.18000000715255737,
+          0.02500000037252903
+        ],
+        "target_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "actual_matrix": [
+          [
+            0.9904922842979431,
+            -0.018748460337519646,
+            0.13628482818603516,
+            0.02500000037252903
+          ],
+          [
+            0.1375683844089508,
+            0.1349889189004898,
+            -0.9812507033348083,
+            -0.18000000715255737
+          ],
+          [
+            -2.5493744892912673e-09,
+            0.9906697273254395,
+            0.13628467917442322,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens_mm": 75,
+        "sensor_width_mm": 36,
+        "sensor_fit": "HORIZONTAL",
+        "near_far_m": [
+          0.001,
+          20
+        ],
+        "intentional_crop": false
+      },
+      "resolution_px": [
+        1000,
+        800
+      ],
+      "PNG_path": "creative/reviews/indicator-front-lens-v1/whole-lens-pbr.png",
+      "PNG_sha256": "51d40b5f68d7be324c1089f62974603d3778e9938e40db5f251a8c3d93ed933b",
+      "EXR_private_path": "/workspace/wewa-assets/renders/front-indicator-lens-v1/studio/whole-lens-pbr.exr",
+      "EXR_sha256": "64d689d82ab857ce208e24d77ef27288ddb1862e1eaa51b8f9ed59e106b20762",
+      "EXR_actual_channels": [
+        "ViewLayer.Combined.A",
+        "ViewLayer.Combined.B",
+        "ViewLayer.Combined.G",
+        "ViewLayer.Combined.R",
+        "ViewLayer.Denoising Albedo.B",
+        "ViewLayer.Denoising Albedo.G",
+        "ViewLayer.Denoising Albedo.R",
+        "ViewLayer.Denoising Depth.Z",
+        "ViewLayer.Denoising Normal.X",
+        "ViewLayer.Denoising Normal.Y",
+        "ViewLayer.Denoising Normal.Z",
+        "ViewLayer.Noisy Image.A",
+        "ViewLayer.Noisy Image.B",
+        "ViewLayer.Noisy Image.G",
+        "ViewLayer.Noisy Image.R"
+      ],
+      "EXR_channel_types": [
+        {
+          "name": "ViewLayer.Combined.A",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Combined.B",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Combined.G",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Combined.R",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Albedo.B",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Albedo.G",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Albedo.R",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Depth.Z",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Normal.X",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Normal.Y",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Normal.Z",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Noisy Image.A",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Noisy Image.B",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Noisy Image.G",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Noisy Image.R",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        }
+      ],
+      "config_sha256": "a6afec8e5f98aba0e7faf7b92cb82efafd398bb1fdb98da0dca947d119b590e8",
+      "paired_preview_sha256": "2b61bddfa8d532937bd6b0de8b20159de52fe656cb6150317549f04b32788d8f",
+      "lighting": {
+        "preset": "Source studio unchanged",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure_EV": 0,
+        "gamma": 1
+      },
+      "actually_saved": true,
+      "actually_read": true,
+      "observations": "Amber surface and shallow original broad/fine rendering zones read, full physical optical/mold/fit qualification remains absent."
+    },
+    {
+      "name": "rim-bands-pbr",
+      "camera": {
+        "location_m": [
+          0.0560000017285347,
+          -0.0949999988079071,
+          0.014999999664723873
+        ],
+        "target_m": [
+          0.02500000037252903,
+          -0.0010000000474974513,
+          0.0
+        ],
+        "actual_matrix": [
+          [
+            0.949688732624054,
+            -0.04692772403359413,
+            0.30965957045555115,
+            0.0560000017285347
+          ],
+          [
+            0.31319522857666016,
+            0.14229686558246613,
+            -0.9389677047729492,
+            -0.0949999988079071
+          ],
+          [
+            3.210331911418507e-08,
+            0.9887109994888306,
+            0.1498352736234665,
+            0.014999999664723873
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens_mm": 130,
+        "sensor_width_mm": 36,
+        "sensor_fit": "HORIZONTAL",
+        "near_far_m": [
+          0.001,
+          20
+        ],
+        "intentional_crop": true
+      },
+      "resolution_px": [
+        1000,
+        800
+      ],
+      "PNG_path": "creative/reviews/indicator-front-lens-v1/rim-bands-pbr.png",
+      "PNG_sha256": "c8739015402966176aa5c8a05350f08adf11fe8101231c52b7c18abbc22c90ef",
+      "EXR_private_path": "/workspace/wewa-assets/renders/front-indicator-lens-v1/studio/rim-bands-pbr.exr",
+      "EXR_sha256": "6021ef4bebcf8f9b6bca5b550a9ea1d6c79301e2ff0db262a3f90c9a540873d2",
+      "EXR_actual_channels": [
+        "ViewLayer.Combined.A",
+        "ViewLayer.Combined.B",
+        "ViewLayer.Combined.G",
+        "ViewLayer.Combined.R",
+        "ViewLayer.Denoising Albedo.B",
+        "ViewLayer.Denoising Albedo.G",
+        "ViewLayer.Denoising Albedo.R",
+        "ViewLayer.Denoising Depth.Z",
+        "ViewLayer.Denoising Normal.X",
+        "ViewLayer.Denoising Normal.Y",
+        "ViewLayer.Denoising Normal.Z",
+        "ViewLayer.Noisy Image.A",
+        "ViewLayer.Noisy Image.B",
+        "ViewLayer.Noisy Image.G",
+        "ViewLayer.Noisy Image.R"
+      ],
+      "EXR_channel_types": [
+        {
+          "name": "ViewLayer.Combined.A",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Combined.B",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Combined.G",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Combined.R",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Albedo.B",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Albedo.G",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Albedo.R",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Depth.Z",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Normal.X",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Normal.Y",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Normal.Z",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Noisy Image.A",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Noisy Image.B",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Noisy Image.G",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Noisy Image.R",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        }
+      ],
+      "config_sha256": "9543456a16d753301a9adae83a3b7cbde730b915d0764ade17305d7375832374",
+      "paired_preview_sha256": "961b9ebef107d4f770b47922d62994c8f65148fca77149e9a4c8e28558debd4a",
+      "lighting": {
+        "preset": "Source studio unchanged",
+        "view_transform": "AgX",
+        "look": "AgX - Medium High Contrast",
+        "exposure_EV": 0,
+        "gamma": 1
+      },
+      "actually_saved": true,
+      "actually_read": true,
+      "observations": "Amber surface and shallow original broad/fine rendering zones read, full physical optical/mold/fit qualification remains absent."
+    },
+    {
+      "name": "neutral-outdoor",
+      "camera": {
+        "location_m": [
+          0.025,
+          -0.18,
+          0.025
+        ],
+        "target_m": [
+          0,
+          0,
+          0
+        ],
+        "actual_matrix": [
+          [
+            0.9904922842979431,
+            -0.018748460337519646,
+            0.13628482818603516,
+            0.02500000037252903
+          ],
+          [
+            0.1375683844089508,
+            0.1349889189004898,
+            -0.9812507033348083,
+            -0.18000000715255737
+          ],
+          [
+            -2.5493744892912673e-09,
+            0.9906697273254395,
+            0.13628467917442322,
+            0.02500000037252903
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lens_mm": 75,
+        "sensor_width_mm": 36,
+        "sensor_fit": "HORIZONTAL; actual projection preflight preserved",
+        "near_far_m": [
+          0.0010000000474974513,
+          100.0
+        ],
+        "intentional_crop": false
+      },
+      "resolution_px": [
+        1000,
+        800
+      ],
+      "PNG_path": "creative/reviews/indicator-front-lens-v1/neutral-outdoor.png",
+      "PNG_sha256": "f96f3130cf2ad7f022c068ac686670ca96a93f29d91b9c9a251b291198099dd1",
+      "EXR_private_path": "/workspace/wewa-assets/renders/front-indicator-lens-v1/neutral-outdoor.exr",
+      "EXR_sha256": "e97b9018cd31da03a9e8f82972f2e95e792de03becb604da4775d9af2b9b44a5",
+      "EXR_actual_channels": [
+        "ViewLayer.Combined.A",
+        "ViewLayer.Combined.B",
+        "ViewLayer.Combined.G",
+        "ViewLayer.Combined.R",
+        "ViewLayer.Denoising Albedo.B",
+        "ViewLayer.Denoising Albedo.G",
+        "ViewLayer.Denoising Albedo.R",
+        "ViewLayer.Denoising Depth.Z",
+        "ViewLayer.Denoising Normal.X",
+        "ViewLayer.Denoising Normal.Y",
+        "ViewLayer.Denoising Normal.Z",
+        "ViewLayer.DiffCol.B",
+        "ViewLayer.DiffCol.G",
+        "ViewLayer.DiffCol.R",
+        "ViewLayer.Noisy Image.A",
+        "ViewLayer.Noisy Image.B",
+        "ViewLayer.Noisy Image.G",
+        "ViewLayer.Noisy Image.R",
+        "ViewLayer.Normal.X",
+        "ViewLayer.Normal.Y",
+        "ViewLayer.Normal.Z"
+      ],
+      "EXR_channel_types": [
+        {
+          "name": "ViewLayer.Combined.A",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Combined.B",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Combined.G",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Combined.R",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Albedo.B",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Albedo.G",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Albedo.R",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Depth.Z",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Normal.X",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Normal.Y",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Denoising Normal.Z",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.DiffCol.B",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.DiffCol.G",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.DiffCol.R",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Noisy Image.A",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Noisy Image.B",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Noisy Image.G",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Noisy Image.R",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Normal.X",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Normal.Y",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        },
+        {
+          "name": "ViewLayer.Normal.Z",
+          "pixel_type": 2,
+          "meaning": "FLOAT32"
+        }
+      ],
+      "config_sha256": "9e22d9a26cb423bedef0795b2c6689b837888dcc125fa9980bdd5d9b75cebf1f",
+      "paired_preview_sha256": "cb3470616da4a9684ff889692df25c3e6838237debd9b4f27f369761ea616dfe",
+      "lighting": {
+        "preset": "Neutral HDR only; warm sun hidden",
+        "color_management": {
+          "view_transform": "AgX",
+          "look": "AgX - Medium High Contrast",
+          "gamma": 1,
+          "exposure_EV": 1.7674521254993318
+        },
+        "exposure_reference_reused": {
+          "method": "Neutral HDR illuminating a real pure-diffuse18% camera-facing card at target, asset hidden for reference pass; mean of256 center linearEXR pixels",
+          "actual_Blender_render": true,
+          "linear_mean_RGB": [
+            0.049678496885462664,
+            0.0531281514413422,
+            0.05972244680742733
+          ],
+          "linear_mean_luminance": 0.05287086300819355,
+          "target_linear_luminance": 0.18,
+          "exposure_EV": 1.7674521254993318,
+          "reference_samples": 32,
+          "reference_resolution_px": [
+            128,
+            128
+          ],
+          "raw_private_path": "/workspace/wewa-assets/render-raw/material-lighting-review/indicator-front-lens-v1-neutral-lighting-graycard.exr",
+          "raw_sha256": "fd187805554975788efae9f1968ec77903b18828418f12860e22cf2f20fefc77",
+          "raw_public": false,
+          "white_balance_changed": false,
+          "asset_materials_changed": false,
+          "HDR_radiometrically_calibrated": false,
+          "reference_card_removed_from_final_views": true,
+          "reference_PNG": "creative/reviews/indicator-front-lens-v1-neutral-lighting/exposure-reference.png",
+          "reference_PNG_sha256": "0a9c5a1b6713afd2fe3f709f6cb0357007f0c6604dd840b495ecf0f8b4898314",
+          "camera_backdrop_strength_compensation": 0.2937270167121864
+        },
+        "radiometrically_calibrated": false
+      },
+      "actually_saved": true,
+      "actually_read": true,
+      "observations": "Amber surface and shallow original broad/fine rendering zones read, full physical optical/mold/fit qualification remains absent."
+    }
+  ],
   "criteria": [],
   "gaps": [
     {
@@ -69,11 +625,11 @@
           "revision": "indicator-front-lens-v1"
         }
       ],
-      "reason": "Original amber transmissive-surface approximation on bounded source6 exterior; exactRDC/mold/bulk optical behavior unqualified",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
-      "status": "rework",
+      "status": "blocked",
       "revision": "indicator-front-lens-v1",
       "reviewer": null,
       "evidence": [
@@ -84,39 +640,79 @@
           "revision": "indicator-front-lens-v1"
         }
       ],
-      "reason": "Original amber transmissive-surface approximation on bounded source6 exterior; exactRDC/mold/bulk optical behavior unqualified",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
       "status": "rework",
       "revision": "indicator-front-lens-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "Original amber transmissive-surface approximation on bounded source6 exterior; exactRDC/mold/bulk optical behavior unqualified",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/indicators-front/lens/indicator-front-lens-v1.blend",
+          "kind": "editable_source",
+          "revision": "indicator-front-lens-v1",
+          "sha256": "16cf50785238a919bee4a0858b9a27cc562cd8c6d40fea5be02f07e83a3f64e3"
+        },
+        {
+          "path": "../../reviews/indicator-front-lens-v1/whole-lens-pbr.png",
+          "kind": "isolated_comparison",
+          "revision": "indicator-front-lens-v1",
+          "sha256": "51d40b5f68d7be324c1089f62974603d3778e9938e40db5f251a8c3d93ed933b"
+        }
+      ],
+      "reason": "Root independently opened three actual final96 native images, two actual Babylon views, notch4 whole/reflection and broad5 gray, plus actualDU201016 photo. Convex exterior cap with finite edge, upper mouth, opposed notch and broad/fine original rendering zones. Earlier3 jagged normals rejected,4 Float64 differential correction retained without changing P/I/UV. Broad6station120um and fine128radial25um relief choices are artistic estimates, not measured mould/prism data. Current material stage protects actual native and GLB POSITION/N/UV/index/world matrices exactly from gray6. Rear/shortmouth boundaries deliberately open, not a physical bulk lens or finished complete indicator; untranscribed markings not forged.",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
+      "status": "rework",
       "revision": "indicator-front-lens-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "Original amber transmissive-surface approximation on bounded source6 exterior; exactRDC/mold/bulk optical behavior unqualified",
+      "evidence": [
+        {
+          "path": "../../reviews/indicator-front-lens-v1/neutral-outdoor.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "indicator-front-lens-v1",
+          "sha256": "f96f3130cf2ad7f022c068ac686670ca96a93f29d91b9c9a251b291198099dd1"
+        }
+      ],
+      "reason": "Original amber transmissive surface with unmeasured tint/transmission.96/IOR1.47/roughness.085, no maps or volume absorption/thickness claim. Root independently opened original checker-background witness: transmitted/tinted/distorted pattern, not an opaque painted disk. Uniform studio/HDR alone does not demonstrate transmission; same material gives dark studio amber and much lighter HDR. Babylon views are darker brown with readable zones. No calibrated optical performance, spectral material or photographic native/browser parity/art acceptance.",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
+      "status": "rework",
       "revision": "indicator-front-lens-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "Original amber transmissive-surface approximation on bounded source6 exterior; exactRDC/mold/bulk optical behavior unqualified",
+      "evidence": [
+        {
+          "path": "../../reviews/indicator-front-lens-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "indicator-front-lens-v1",
+          "sha256": "d4fe6ce42e1fc08155e8db18d98ab732a6814f475bb097b895ea1d3f4d5f39fe"
+        }
+      ],
+      "reason": "Unplaced local lens datum; body/socket, fastener and right-stalk/whole12 remain separate work. No inferred currentRDC identity, metric thickness, mechanical seating, seal, bulk optical prescription/focus or invented homologation text. Following body context is separately estimated and does not retroactively certify this lens.",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
+      "status": "rework",
       "revision": "indicator-front-lens-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "Original amber transmissive-surface approximation on bounded source6 exterior; exactRDC/mold/bulk optical behavior unqualified",
+      "evidence": [
+        {
+          "path": "../../reviews/indicator-front-lens-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "indicator-front-lens-v1",
+          "sha256": "33c2d8cb6f65c3be11ace9e2c6599eac0db71aa83217b99be95d6857fc378651"
+        },
+        {
+          "path": "../../reviews/indicator-front-lens-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "indicator-front-lens-v1",
+          "sha256": "adc731e84ea5e28eb7ea3009d9a63a5cac861dbc8b05894a2ef40e145c9e8bb0"
+        }
+      ],
+      "reason": "Actual398134triangles/one mesh, strict0glTFerrors, no normalmapped primitives; author allUV/area checks bounded. Four actual nonblank Babylon canvases and zero page/HTTPerrors. Source-geometry alias is byte-exact current build-report and additive outside31/40. Detailed source, no qualified mobileLOD/refraction cost/Safari/physical iPhone/art reception.",
       "reviewed_at": null
     },
     "G7": {
@@ -124,7 +720,7 @@
       "revision": "indicator-front-lens-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Original amber transmissive-surface approximation on bounded source6 exterior; exactRDC/mold/bulk optical behavior unqualified",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
@@ -138,8 +734,8 @@
   },
   "active_detailed_fabrication": false,
   "source_revision": "indicator-front-lens-v1",
-  "export_revision": "indicator-front-lens-v1",
-  "next_action": "QA racine de la lentille, corps en pr\u00e9paration puis reste12/si\u00e8ge18 ; attendre push22 avant nouveau build/rendu. Aucune r\u00e9ception OEM/artistique ni optique volumique certifi\u00e9e.",
+  "export_revision": "indicator-front-lens-v1-inspection",
+  "next_action": "Resolve documentary dimensions, remaining visible/hidden geometry and installed interfaces; compare native/browser material before art reception. No automatic mounting or mobile qualification.",
   "art_accepted": false,
   "gate_history_capture_diagnostic": {
     "status": "rejected_as_original_snapshot",
@@ -761,5 +1357,8 @@
     "finals": "Three actual96PNG opened, FLOAT32EXR/noisy/albedo/normal headers verified; root QA pending",
     "final_freeze": "creative/reviews/indicator-front-lens-v1/freeze-manifest.json",
     "final_freeze_sha256": "9fea5d501f0b471cae17bdfd0571d4f2d0cdf67235419c667338fae64238c0d3"
-  }
+  },
+  "candidate_source": "../../../assets-src/moto-components/indicators-front/lens/README.md",
+  "candidate_review": "../../reviews/indicator-front-lens-v1/README.md",
+  "production_group": 12
 }

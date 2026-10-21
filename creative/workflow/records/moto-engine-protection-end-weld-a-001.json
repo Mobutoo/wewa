@@ -1,0 +1,167 @@
+{
+  "schema": 1,
+  "id": "MOTO-ENGINE-PROTECTION-END-WELD-A-001",
+  "label": "Pare-moteur \u2014 arc frontal externe du cordon A",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Related sellerPF231201, no exact currentRDC or installedside certification",
+    "variant_confirmed": false,
+    "usage": "Partial separate external weld surface candidate in unchanged guidecontext",
+    "review_distances_m": [
+      0.08,
+      0.15,
+      0.65
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01"
+  ],
+  "claims": [
+    {
+      "id": "WELD-A-LEGS",
+      "source": "D01",
+      "status": "estimated",
+      "adopted": false,
+      "value": {
+        "axial_m": 0.0017,
+        "radial_m": 0.00145
+      },
+      "method": "Separate finite crosssection swept through explicit frontal reconstruction window. Smooth original lowamplitude spatial variations, no copied weld/photo pixels. Exact beadprofile/extent/toeangles not measured. Window endpoints are constructionlimits, not observed real start/stop.",
+      "uncertainty": {
+        "axial_leg_m": [
+          0.001,
+          0.003
+        ],
+        "radial_leg_m": [
+          0.0008,
+          0.0025
+        ],
+        "frontal_observation_window_deg": [
+          225,
+          260
+        ]
+      },
+      "scope": "Original workingsection only; not manufacturer/physical measurement"
+    }
+  ],
+  "views": [],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "WELD-A-BACK-PROFILE",
+      "status": "open",
+      "description": "Real crosssection/throat/backcontinuation/contact and penetration unknown. Only frontal constructionwindow candidate, not completeweld."
+    },
+    {
+      "id": "WELD-A-VARIANT-POSE",
+      "status": "open",
+      "description": "RelatedPF231201 only; exact RDC identity and nominal guidepose remain conditional."
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Only external frontal ridge documented. Exact section/extent/back/throat/penetration/variant unknown; a bounded visible exterior candidate proceeds with fullfidelity open.",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Bounded external geometry built and graycontinuous; isolatedcrown reflectionmacro insufficient. Need targetedlight witness after publication before material.",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "blocked",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "No G4applied. Require meaningful localreflection then material review. Prepared scripts/plan only.",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": null,
+  "export_revision": null,
+  "next_action": "Publicationfreeze: no workerA. G3copies/source/export/4gray/3reflections complete, localreflection insufficient. Resume targetedshortlight after rootpublication then G4 only if no criticalformdefect. Rearcomplete/Bjoint/centralweld/hook/spacer and later Aqueue remain unbuilt.",
+  "art_accepted": false,
+  "pending_revision": "engine-protection-end-weld-a-v1",
+  "documentary_references": [
+    {
+      "private_path": "/workspace/wewa-assets/references/crash-guard-15-v1/PF231201-174418.jpg",
+      "sha256": "f4745d681608180e64e88eefc6ed69ecc940f018a99451f52bc9b7ccbcc8d533",
+      "actually_opened_native": true,
+      "page": "https://www.croslandrepuestos.pe/protector-de-piernas-pf231201/p",
+      "rights": "Private documentaryonly, no pixels copied or redistributed"
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/crash-guard-15-v1/PF231201-174419.jpg",
+      "sha256": "f87a6cca46af156024ed210fa9aa91b840e39bb13f0b47c4583bc6f94a0b4fa0",
+      "actually_opened_native": true,
+      "page": "https://www.croslandrepuestos.pe/protector-de-piernas-pf231201/p",
+      "rights": "Private documentaryonly, no pixels copied or redistributed"
+    }
+  ],
+  "window_boundary_correction": "creative/research/engine-protection-end-weld-a-15-v1/window-boundary-correction-v1.json"
+}

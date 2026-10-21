@@ -1,0 +1,1 @@
+Premier build préparé refusé avant sauvegarde : matrices monde capturées avant mise à jour du depsgraph, puis contrôle après frame_set(1). Diagnostic séparé requis pour distinguer cache non évalué et vraie pose modifiée ; aucune source de pièce ni image changée.
