@@ -1,0 +1,33 @@
+"""Original DS181008 photographed-face candidate, every metric and unseen reverse estimated."""
+import bpy,bmesh,math,json,hashlib,sys,numpy as np
+from pathlib import Path
+from mathutils import Vector
+from mathutils.bvhtree import BVHTree
+H=Path(__file__).resolve().parent;R=H.parents[3];O=R/'creative/reviews/handlebar-mount-upper-damper-v1';sys.path.insert(0,str(H));from profile_shape import profile
+P=json.loads((H/'parameters.json').read_text());rows=profile(P);N=P['radial_segments'];tile=P['UV_reference_tile_m'];V=[];VN=[];F=[];UV=[];NS=[];arc=[0.]
+for i,(rad,z,nr,nz,tag)in enumerate(rows):
+ if i:arc.append(arc[-1]+math.hypot(rad-rows[i-1][0],z-rows[i-1][1]))
+ for j in range(N):
+  a=math.tau*j/N;V.append((rad*math.cos(a),rad*math.sin(a),z));VN.append((nr*math.cos(a),nr*math.sin(a),nz))
+flatfaces=0
+for i,row in enumerate(rows):
+ k=(i+1)%len(rows);flat=abs(row[1]-rows[k][1])<1e-14;front=row[4]=='frontface'and rows[k][4]=='frontface';repeats=max(1,round(math.tau*(row[0]+rows[k][0])/2/tile));av=arc[i];bv=arc[k]if k else arc[-1]+math.hypot(rows[0][0]-row[0],rows[0][1]-row[1])
+ for j in range(N):
+  ids=(i*N+j,i*N+(j+1)%N,k*N+(j+1)%N,k*N+j)
+  if flat or front:coords=[(V[q][0]/tile,V[q][1]/tile)for q in ids]
+  else:coords=[(j/N*repeats,av/tile),((j+1)/N*repeats,av/tile),((j+1)/N*repeats,bv/tile),(j/N*repeats,bv/tile)]
+  for t in[(0,1,2),(0,2,3)]:
+   F.append(tuple(ids[q]for q in t));UV.extend(coords[q]for q in t);NS.extend((0.,0.,0.)if flat else VN[ids[q]]for q in t);flatfaces+=flat
+bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False);s=bpy.context.scene;s.unit_settings.system='METRIC';s.unit_settings.scale_length=1;col=bpy.data.collections.new(P['collection']);s.collection.children.link(col);studio=bpy.data.collections.new('LOCAL_STUDIO_NOT_EXPORTED');s.collection.children.link(studio);m=bpy.data.meshes.new('Original collar and outerrim annular face, unobserved plain reverse');m.from_pydata(V,[],F);m.update();assert not m.validate(clean_customdata=False);m.polygons.foreach_set('use_smooth',np.ones(len(F),bool));uv=m.uv_layers.new(name='Original6mm face XY and roundedwall arc charts');uv.data.foreach_set('uv',np.asarray(UV,np.float32).ravel())
+for p in m.polygons:
+ q=[V[i]for i in p.vertices]
+ if max(v[2]for v in q)-min(v[2]for v in q)<1e-14:p.use_smooth=False
+m.normals_split_custom_set(NS);m.update();m.calc_loop_triangles();bm=bmesh.new();bm.from_mesh(m);nm=sum(not e.is_manifold for e in bm.edges);vol=bm.calc_volume(signed=True);chi=len(bm.verts)-len(bm.edges)+len(bm.faces);bm.free();assert nm==0 and chi==0 and vol>0,(nm,chi,vol);areas=[t.area for t in m.loop_triangles];assert min(areas)>1e-18;o=bpy.data.objects.new('Upper mountdamper photographed face only, reverse estimated',m);col.objects.link(o);o['component_id']=P['component_id'];o['all_dimensions_estimated']=True;o['unseen_reverse_measured']=False;o['hidden_insert_or_sleeve_built']=False;o['mounted_orientation_verified']=False
+mat=bpy.data.materials.new('Neutral shape gray only, rubber finish pending');mat.use_nodes=True;p=mat.node_tree.nodes['Principled BSDF'];p.inputs['Base Color'].default_value=(.20,.21,.23,1);p.inputs['Roughness'].default_value=.32;m.materials.append(mat)
+tree=BVHTree.FromPolygons([v.co for v in m.vertices],F,all_triangles=True);probes=[]
+for name,x,clear in[('axis genuine opening',0,True),('inside bore',P['bore_radius_m']-.0003,True),('collar finite wall',P['bore_radius_m']+.0006,False),('broad annular face',.011,False),('outside perimeter',P['outer_radius_m']+.0005,True)]:
+ hit=tree.ray_cast(Vector((x,0,-.01)),Vector((0,0,1)),.03);assert(hit[0]is None)==clear,(name,hit);probes.append({'name':name,'X_origin_m':x,'Z_origin_m':-.01,'direction':[0,0,1],'expected_clear':clear,'actually_clear':hit[0]is None})
+w=bpy.data.worlds.new('Local mountdamper neutral studio');w.use_nodes=True;s.world=w;w.node_tree.nodes['Background'].inputs[0].default_value=(.18,.20,.23,1);w.node_tree.nodes['Background'].inputs[1].default_value=.35
+for name,loc,power,size in[('KEY',(.06,.05,.075),.25,.07),('FILL',(-.065,.04,.03),.12,.06),('EDGE',(.03,-.07,.045),.18,.065),('LOWER',(-.035,.04,-.045),.05,.05)]:
+ l=bpy.data.lights.new(name,'AREA');l.energy=power;l.shape='DISK';l.size=size;ob=bpy.data.objects.new(name,l);studio.objects.link(ob);ob.location=loc;ob.rotation_euler=(Vector((0,0,.002))-ob.location).to_track_quat('-Z','Y').to_euler()
+cam=bpy.data.objects.new('UPPER_DAMPER_CAMERA',bpy.data.cameras.new('UPPER_DAMPER_CAMERA'));studio.objects.link(cam);s.camera=cam;cam.location=(.045,.055,.06);cam.rotation_euler=(Vector((0,0,.002))-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.type='ORTHO';cam.data.ortho_scale=.05;cam.data.clip_start=.001;cam.data.clip_end=5;s.render.engine='CYCLES';s.cycles.device='CPU';s.cycles.samples=96;s.cycles.use_denoising=True;s.cycles.denoiser='OPENIMAGEDENOISE';s.render.threads_mode='FIXED';s.render.threads=1;s.render.resolution_x=1400;s.render.resolution_y=1000;s.render.resolution_percentage=100;s.render.image_settings.file_format='PNG';s.view_settings.view_transform='AgX';s.view_settings.look='AgX - Medium High Contrast';s.view_settings.exposure=-.5;bpy.ops.object.select_all(action='DESELECT');o.select_set(True);bpy.context.view_layer.objects.active=o;src=H/'handlebar-mount-upper-damper-v1.blend';glb=H/'handlebar-mount-upper-damper-inspection.glb';bpy.ops.export_scene.gltf(filepath=str(glb),export_format='GLB',use_selection=True,export_apply=True,export_texcoords=True,export_normals=True,export_tangents=True);bpy.ops.wm.save_as_mainfile(filepath=str(src),compress=True);sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();a=np.asarray([v.co[:]for v in m.vertices]);r={'component_id':P['component_id'],'revision':P['revision'],'source_sha256':sha(src),'export_sha256':sha(glb),'collection':col.name,'frame':P['frame'],'vertices':len(m.vertices),'triangles':len(m.loop_triangles),'profile_rows':len(rows),'nonmanifold_edges':nm,'euler_characteristic':chi,'signed_volume_m3':vol,'minimum_triangle_area_m2':min(areas),'zero_area_triangles':sum(v<=1e-18 for v in areas),'true_planar_triangles_flat_routed':int(flatfaces),'bounds_m':[a.min(0).tolist(),a.max(0).tolist()],'source_probes':probes,'all_physical_dimensions_estimated':True,'front_face_measured_or_camera_calibrated':False,'unseen_reverse_observed':False,'hidden_insert_or_sleeve_built':False,'DS181009_or_DS181010_copied':False,'installed_orientation_compression_or_contacts_verified':False,'current_RDC_identity_verified':False,'art_accepted':False};(O/'source-geometry-check.json').write_text(json.dumps(r,indent=2)+'\n');(H/'build-report.json').write_text(json.dumps(r,indent=2)+'\n');print('MOUNT_UPPER_DAMPER_G3',json.dumps(r))

@@ -1,0 +1,65 @@
+{
+  "component_id": "MOTO-ENGINE-INTAKE-CLAMP-BAND-001",
+  "source_sha256": "20bae0746826b94e92ea52142ee2ed26f3bb04a5505238ad4bd483811b552bf4",
+  "export_sha256": "242064ad7de28b81a545f74edaa021b5b151579d4ac59984ab208ba4eb25bb0c",
+  "collection": "WEWA_ENGINE_INTAKE_CLAMP_BAND",
+  "root": "Intake clamp band isolated datum - not tightened",
+  "geometry": [
+    {
+      "name": "DP101198 related smooth band and formed ears - isolated",
+      "vertices": 12424,
+      "faces": 24849,
+      "connected_shells": 1,
+      "non_manifold_edges": 0,
+      "signed_volume_m3": 8.54320090490309e-07
+    }
+  ],
+  "triangles": 24852,
+  "working_ear_X_abs_m": 0.0094,
+  "working_ear_bore_diameter_m": 0.0042,
+  "all_dimensions_estimated": true,
+  "automatic_attachment_allowed": false,
+  "remaining_observed_parts": [
+    "Tangential screw/external hardware",
+    "Curved inner overlapping bridge",
+    "Second occurrence and installed pose"
+  ],
+  "CSG_report": {
+    "stages": [
+      {
+        "operation": "union",
+        "part": "Editable integral rounded folded lug -1",
+        "status": "NoError",
+        "before_volume_m3": 8.167673174707128e-07,
+        "after_volume_m3": 8.438970949359703e-07
+      },
+      {
+        "operation": "union",
+        "part": "Editable integral rounded folded lug 1",
+        "status": "NoError",
+        "before_volume_m3": 8.438970949359703e-07,
+        "after_volume_m3": 8.710268724012278e-07
+      },
+      {
+        "operation": "subtract",
+        "part": "Editable finite bore Xaxis lug -1",
+        "status": "NoError",
+        "before_volume_m3": 8.710268724012278e-07,
+        "after_volume_m3": 8.626734848147201e-07
+      },
+      {
+        "operation": "subtract",
+        "part": "Editable finite bore Xaxis lug 1",
+        "status": "NoError",
+        "before_volume_m3": 8.626734848147201e-07,
+        "after_volume_m3": 8.543200972282124e-07
+      }
+    ],
+    "tool": "manifold3d",
+    "tool_version": "3.3.2",
+    "solid_components": 1,
+    "volume_m3": 8.543200972282124e-07
+  },
+  "no_global_post_csg_bevel": true,
+  "art_accepted": false
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-21T11:32:49.776597+00:00",
+  "component": "MOTO-REAR-SNS-BODY-SIDE-EYE-EXTERIOR-001",
+  "revision": "rear-sns-body-side-eye-exterior-study-v1",
+  "independent_reading": {
+    "path": "creative/research/rear-sns-eyes/read-only-eye-reading-v1/report.json",
+    "sha256": "f7a7a20c8470e193b691ae015090ed054e33177129d19a6470d46b397bc76be4"
+  },
+  "reference_unit": "PF-body-side-left only, center65/546\u00b15px, region22..115/504..600; short col105..130/527..577",
+  "observations": [
+    "Rounded black outline and short neck toward barrel; face predominantly black.",
+    "Central metallic rim visible but reserved for separate sleeve skin, not part of this black exterior unit.",
+    "Small blue central patch could be background/reflection/insert, not proof of an actual separate blue part or large blue annulus.",
+    "SCL is a related distinct example, not the back of PF. Opposite PF broadblue eye not copied."
+  ],
+  "parameters": {
+    "schema": 1,
+    "revision": "rear-sns-body-side-eye-exterior-study-v1",
+    "units": "m, authored estimates not physical OEM cotes",
+    "eye_center_z_m": -0.1115,
+    "outer_eye_radius_m": 0.0168,
+    "neck_top_relative_z_m": 0.0205,
+    "neck_top_half_width_m": 0.01,
+    "neck_circle_join_degrees": 60,
+    "half_depth_y_m": 0.006,
+    "outer_edge_round_m": 0.00075,
+    "inner_passage_radius_m": 0.0072,
+    "inner_edge_round_m": 0.0004,
+    "angular_segments": 512,
+    "quarter_round_samples": 12,
+    "scope": "One continuous black eye/short-neck exterior candidate; observed black face does not establish metal/insert boundaries or separate OEM service parts",
+    "source_frame": "UnplacedSNS axis+Z, body-side eye negativeZ; eye axisY/front negativeY is an authored datum, not installed mounting pose",
+    "working_ranges_not_confidence_intervals": {
+      "outer_radius_m": [
+        0.015,
+        0.02
+      ],
+      "total_depth_m": [
+        0.01,
+        0.018
+      ],
+      "neck_top_width_m": [
+        0.016,
+        0.024
+      ]
+    },
+    "hidden_unknowns": [
+      "Rear face/profile/section",
+      "True black face composition and part boundaries",
+      "Actual root attachment/weld",
+      "Press-fit and sleeve length",
+      "CurrentRDC identity, dimensions and installation"
+    ]
+  },
+  "construction": "Original star-convex outline: circular eye with a C2 quintic transition to short flat neck end; finite depth, rounded exterior and passage edges, exactly planar front/back strips. Smooth hidden-back continuation explicitly estimated, no CSG/weld/grooves.",
+  "checks_before_material": [
+    "Curvature/inward-offset guard",
+    "Positive closed surface and actualGLB normal/area/UV checks",
+    "Whole front/quarter gray and neck/rim reflection read",
+    "No false actual weld/contact or fit claim"
+  ],
+  "still_visible_separate_unbuilt": [
+    "Central metallic sleeve lip and partial inner wall",
+    "Opposite eye and its broadblue annular region",
+    "Opposite spring rim"
+  ],
+  "source_frame_limit": "Neck root extends into the barrel end envelope only as an authored visual guide; no actual wall/weld/fixture contact certified.",
+  "art_accepted": false
+}

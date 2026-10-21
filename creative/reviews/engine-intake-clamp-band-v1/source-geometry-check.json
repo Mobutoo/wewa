@@ -1,0 +1,132 @@
+{
+  "component_id": "MOTO-ENGINE-INTAKE-CLAMP-BAND-001",
+  "source_sha256": "3fc41201dc15a252d00f661b9b6abc5083c12bf73ac6926b69ff7b08930e036e",
+  "export_sha256": "43f8260565e55972a8e200124d586c0aac0207b5135774fba3c2d712cd81da6d",
+  "collection": "WEWA_ENGINE_INTAKE_CLAMP_BAND",
+  "root": "Intake clamp band isolated datum - not tightened",
+  "geometry": [
+    {
+      "name": "DP101198 related smooth band and formed ears - isolated",
+      "vertices": 12064,
+      "faces": 24132,
+      "connected_shells": 1,
+      "non_manifold_edges": 0,
+      "signed_volume_m3": 8.535762714201713e-07
+    }
+  ],
+  "triangles": 24132,
+  "working_ear_X_abs_m": 0.0094,
+  "working_ear_bore_diameter_m": 0.0042,
+  "all_dimensions_estimated": true,
+  "automatic_attachment_allowed": false,
+  "remaining_observed_parts": [
+    "Tangential screw/external hardware",
+    "Curved inner overlapping bridge",
+    "Second occurrence and installed pose"
+  ],
+  "CSG_report": {
+    "stages": [
+      {
+        "operation": "union",
+        "part": "Editable integral rounded folded lug -1",
+        "status": "NoError",
+        "before_volume_m3": 8.167673174707128e-07,
+        "after_volume_m3": 8.435251854210655e-07
+      },
+      {
+        "operation": "union",
+        "part": "Editable integral rounded folded lug 1",
+        "status": "NoError",
+        "before_volume_m3": 8.435251854210655e-07,
+        "after_volume_m3": 8.702830533714181e-07
+      },
+      {
+        "operation": "subtract",
+        "part": "Editable finite bore Xaxis lug -1",
+        "status": "NoError",
+        "before_volume_m3": 8.702830533714181e-07,
+        "after_volume_m3": 8.619296657849104e-07
+      },
+      {
+        "operation": "subtract",
+        "part": "Editable finite bore Xaxis lug 1",
+        "status": "NoError",
+        "before_volume_m3": 8.619296657849104e-07,
+        "after_volume_m3": 8.535762781984026e-07
+      }
+    ],
+    "tool": "manifold3d",
+    "tool_version": "3.3.2",
+    "solid_components": 1,
+    "volume_m3": 8.535762781984026e-07
+  },
+  "no_global_post_csg_bevel": true,
+  "art_accepted": false,
+  "geometry_source_sha256": "b67a575d741ddea2c9f2ca0cdf572284fecb5e07570c065f94ed8b426dc9d542",
+  "source_positions_polygons_corner_normals_matrices_exact": true,
+  "shape_digest_before": "d84fdfd949aeba1052a2125d7751e6691eccaa0bd52f9f54b214549f587558ae",
+  "shape_digest_after": "d84fdfd949aeba1052a2125d7751e6691eccaa0bd52f9f54b214549f587558ae",
+  "old_UV_digest": "4de00e52601620f2de8d0de696f417f2b02b06eb6b601666a28486919733a4b0",
+  "new_UV_digest": "56b53a25022e50a0cb8351c2f780b1e818f92857843e6e1b4beba95d06818cd2",
+  "UV_changed_explicitly_in_G4": true,
+  "source_atlas_zero_area_triangles": 0,
+  "source_UV_area_sum": 0.28791922054725494,
+  "authored_source_surface_area_m2": 0.003021688156438218,
+  "authored_mean_atlas_texel_m": 0.00010004365170350497,
+  "bake_input_npz": "material-atlas-input.npz",
+  "bake_input_sha256": "b93112bbc0ee0e2d10d90284e49d40bcf15eeaa7196e84f14b24005798b78555",
+  "material": {
+    "proposal": "Original restrained yellow-green static color-field proposal over clean metallic baseline",
+    "linear_basecolor": [
+      0.44,
+      0.39,
+      0.16
+    ],
+    "metallic": 1.0,
+    "roughness": 0.34,
+    "status": "estimated representative, not measured coating chemistry/color/roughness",
+    "photo_pixels_used": false,
+    "normalmap": false,
+    "textures": true,
+    "limits": [
+      "Photo supports yellow/green patches qualitatively. Original map is a controlled visible-appearance hypothesis, not measured chemistry, thickness or angular interference.",
+      "No copied photographic pixels, shadows, scratches, oxidation or grain-depth map.",
+      "Exact currentRDC treatment/color/roughness not received. Uniform clean baseline preserved as short comparison only."
+    ],
+    "original_color_field": {
+      "seed": 101198,
+      "resolution": 1024,
+      "world_wavelength_range_m": [
+        0.003,
+        0.009
+      ],
+      "basis": "12 deterministic random-direction sine components, tanh bounded; authored scale not physical measurement",
+      "linear_RGB_modulation": [
+        -0.035,
+        0.015,
+        -0.008
+      ],
+      "not_angular_iridescence": true
+    }
+  },
+  "uniform_witness_only": false,
+  "uniform_witness_source_sha256": "4ab57c874b3da75e0e5420ed2470ec9a791ae5372001405413cd82de66cc024c",
+  "uniform_witness_export_sha256": "2907f13aaecfec7492320c81c73637c675e8669b2b913f6ff63945b43ce33e60",
+  "protected_uniform_source_digest": "c28954c6c6e76f76df0b29a1620f7a0d6b2b6d887673476b7733685113185c24",
+  "current_source_digest": "c28954c6c6e76f76df0b29a1620f7a0d6b2b6d887673476b7733685113185c24",
+  "source_position_indices_corner_normals_UV_matrices_exact_to_uniform_witness": true,
+  "G3_source_positions_polygons_corner_normals_matrices_exact": true,
+  "source_UV_changed_explicitly_in_G4_before_witness": true,
+  "original_color_image": {
+    "role": "basecolor",
+    "path": "textures/original-yellow-green-static-color.png",
+    "sha256": "efa0211247fb0d14e2dea3fa5c87e1f301079bd5d34f78c22ee84113dc6ed0e5",
+    "width": 1024,
+    "height": 1024,
+    "colorspace": "sRGB",
+    "channels": "RGB8"
+  },
+  "images": 1,
+  "normalmap": false,
+  "native_tangents_policy": "Not exported because no normalmap; no tangent buffer repair"
+}

@@ -1,0 +1,7 @@
+# SNS body-side central sleeve — original silver candidate
+
+One finite annular sleeve and rounded lips reconstruct the bright central appearance in the related PF body-side eye. Inner radius5.5mm, outer7.15mm, depth12.6mm, quarter-round.25mm and datum are authored estimates. Rear lip and complete depth are explicit smooth continuations. No alloy, coating, press-fit, thread, split, knurl or hidden retention is certified. A positive49.86µm authored radial gap to the existing black eye is geometric disjointness, not a manufacturing tolerance or installed contact.
+
+Original silver reflective shader uses linear base(.55,.56,.58), metallic1, roughness.22, no coat/maps. It is an appearance proposal, not measured metal response. Actual P/N/UV/indices and node matrices are bit-identical to the gray source; 26624 actual triangles pass strict/area/UV checks and min face-corner normal dot.997750. No tangent repair or photographic texture.
+
+Three current gray/reflection views were opened; the two initially misframed macros are rejected privately, and their exact old recipe is retained to prove the unchanged whole-view protocol. One whole and corrected lip PBR view precede neutral HDR/card review. Console text inherited from an older rim builder is a label only: actual paths, source object and reports identify this central sleeve. Static0rig; no artistic, physical device or installed qualification.

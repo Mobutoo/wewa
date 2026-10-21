@@ -1,0 +1,7 @@
+# SNS body-side eye — original black exterior candidate
+
+One continuous black eye/short-neck rendering exterior, based on PF body-side left. A C2 circle/neck outline has finite rounded depth and passage, with exactly plane front/back strips and flat neck-root plane. Radius16.8mm, depth12mm, center/neck placement, inner passage and rear closure are authored estimates. No weld, hidden press-fit, thread or sleeve is invented.
+
+Black does not identify painted steel versus an insert/elastomer or OEM service boundaries. The original continuous black shader uses linear base(.009,.010,.012), roughness.32 and coat.12, without photographs/maps. Bright reflections inside the black passage belong to this same shader; no metallic sleeve is present yet. The real central silver lip/partial wall remains a separate future piece. Ambiguous small centralblue is not a fabricated insert, and the opposite broadblue annulus is not copied here.
+
+Actual GLB53248triangles has zero strict/UV/geometric degeneracies and min face-corner normal dot0.996504. Actual POSITION/NORMAL/UV/indices and node matrices are bit-identical to the immutable gray study. No CSG, remesh, global bevel or buffer repair. Section, rear, root attachment and currentRDC dimensions/installed fit remain unknown. Static0rig, no artistic reception or physical iPhone qualification. The reused material generator console retains an older body label only; actual object/parameters identify this eye.

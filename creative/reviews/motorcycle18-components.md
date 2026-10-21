@@ -1,6 +1,6 @@
 # Viva Wewa — revue des composants moto
 
-**79 composants uniques enregistrés · 79 vues Blender prouvées · aucune réception artistique.**
+**86 composants uniques enregistrés · 86 vues Blender prouvées · aucune réception artistique.**
 
 Une seule vue originale par composant, à la révision exacte de sa fiche. Les anciennes révisions et les sources seulement cataloguées ou gelées sans enregistrement central ne sont pas ajoutées. Ces rendus montrent des candidats isolés, pas le jeu ni une moto terminée.
 
@@ -14,7 +14,7 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 
 | Groupe | Composants enregistrés dans la séquence | État |
 | --- | --- | --- |
-| [01 · Pontets et fixations du guidon](#groupe-1) | 3 | Candidats partiels en revue ; groupe non terminé |
+| [01 · Pontets et fixations du guidon](#groupe-1) | 4 | Candidats partiels en revue ; groupe non terminé |
 | [02 · Support des compteurs](#groupe-2) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [03 · Accélérateur et entraînement de câble](#groupe-3) | 2 | Candidats partiels en revue ; groupe non terminé |
 | [04 · Commodo gauche](#groupe-4) | 1 | Candidats partiels en revue ; groupe non terminé |
@@ -28,9 +28,9 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 | [12 · Phare et clignotants avant](#groupe-12) | 4 | Candidats partiels en revue ; groupe non terminé |
 | [13 · Fourche et direction](#groupe-13) | 6 | Candidats partiels en revue ; groupe non terminé |
 | [14 · Ensemble avant et compatibilité des candidats existants](#groupe-14) | Voir les préexistants ; aucun nouveau composant compté | Candidats antérieurs existants à recontrôler ; compatibilité restante |
-| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 13 | Candidats partiels en revue ; groupe non terminé |
-| [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 9 | Candidats partiels en revue ; groupe non terminé |
-| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 24 | Candidats partiels en revue ; groupe non terminé |
+| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 14 | Candidats partiels en revue ; groupe non terminé |
+| [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 13 | Candidats partiels en revue ; groupe non terminé |
+| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 25 | Candidats partiels en revue ; groupe non terminé |
 | [18 · Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière](#groupe-18) | 2 | Candidats partiels en revue ; groupe non terminé |
 
 <a id="groupe-1"></a>
@@ -108,6 +108,33 @@ PNG SHA-256 : `7905216d91a69aadc17d489d53be8eb5d095eb3d6ed38532e6350fe064d8e845`
 
 - [reverse](handlebar-mount-upper-washer-v1/reverse.png) · [preuve](handlebar-mount-upper-washer-v1/render-report.json)
 - [face-material](handlebar-mount-upper-washer-v1/face-material.png) · [preuve](handlebar-mount-upper-washer-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-handlebar-mount-upper-damper-001"></a>
+
+### Guidon — amortisseur supérieur DS181008 apparenté, face observée
+
+`MOTO-HANDLEBAR-MOUNT-UPPER-DAMPER-001` · révision `handlebar-mount-upper-damper-v1` · **candidat non reçu**
+
+![Guidon — amortisseur supérieur DS181008 apparenté, face observée — handlebar-mount-upper-damper-v1](handlebar-mount-upper-damper-v1/quarter.png)
+
+[Image entière](handlebar-mount-upper-damper-v1/quarter.png) · [Preuve du rendu](handlebar-mount-upper-damper-v1/render-report.json) · vue `quarter`
+
+Source SHA-256 : `ae6ed5f4f3b05881dab49fa650083c600fe52ba50d3733f1938c3e2d02ba5f8c`  
+PNG SHA-256 : `a4ada4faf40718f65c8b638288108405ebb56f52224d5b7b11f97943cdccba88`
+
+[Blender](../../assets-src/moto-components/handlebar-clamps/mounting-upper-damper/handlebar-mount-upper-damper-v1.blend) · [GLB](../../assets-src/moto-components/handlebar-clamps/mounting-upper-damper/handlebar-mount-upper-damper-inspection.glb) · [README source](../../assets-src/moto-components/handlebar-clamps/mounting-upper-damper/README.md) · [Revue et limites](handlebar-mount-upper-damper-v1/README.md) · [Fiche](../workflow/records/moto-handlebar-mount-upper-damper-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [top](handlebar-mount-upper-damper-v1/top.png) · [preuve](handlebar-mount-upper-damper-v1/render-report.json)
+- [reverse-quarter](handlebar-mount-upper-damper-v1/reverse-quarter.png) · [preuve](handlebar-mount-upper-damper-v1/render-report.json)
+- [collar-detail](handlebar-mount-upper-damper-v1/collar-detail.png) · [preuve](handlebar-mount-upper-damper-v1/render-report.json)
+- [outer-rim-detail](handlebar-mount-upper-damper-v1/outer-rim-detail.png) · [preuve](handlebar-mount-upper-damper-v1/render-report.json)
 
 </details>
 
@@ -1079,6 +1106,33 @@ PNG SHA-256 : `b47fdbd551499d1ef73882339f34bcb4dc10f7828b7320960855419fb440badc`
 
 </details>
 
+
+<a id="moto-engine-protection-terminal-a-001"></a>
+
+### Arceau moteur — premier embout déporté photographié
+
+`MOTO-ENGINE-PROTECTION-TERMINAL-A-001` · révision `engine-protection-terminal-a-v1` · **candidat non reçu**
+
+![Arceau moteur — premier embout déporté photographié — engine-protection-terminal-a-v1](engine-protection-terminal-a-v1/quarter.png)
+
+[Image entière](engine-protection-terminal-a-v1/quarter.png) · [Preuve du rendu](engine-protection-terminal-a-v1/render-report.json) · vue `quarter`
+
+Source SHA-256 : `c0a28ac4496603b07d7725bd40cd296a2a006e2db4ebfbd0a679d1d6f150d522`  
+PNG SHA-256 : `7b57e9fc10300cfb540e5983ea89f36c315b83114bb9976aed263dd696788018`
+
+[Blender](../../assets-src/moto-components/engine-protection-terminal-a/engine-protection-terminal-a-v1.blend) · [GLB](../../assets-src/moto-components/engine-protection-terminal-a/engine-protection-terminal-a-inspection.glb) · [README source](../../assets-src/moto-components/engine-protection-terminal-a/README.md) · [Revue et limites](engine-protection-terminal-a-v1/README.md) · [Fiche](../workflow/records/moto-engine-protection-terminal-a-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [reverse-quarter](engine-protection-terminal-a-v1/reverse-quarter.png) · [preuve](engine-protection-terminal-a-v1/render-report.json)
+- [doublebend-detail](engine-protection-terminal-a-v1/doublebend-detail.png) · [preuve](engine-protection-terminal-a-v1/render-report.json)
+- [upper-bore-detail](engine-protection-terminal-a-v1/upper-bore-detail.png) · [preuve](engine-protection-terminal-a-v1/render-report.json)
+- [lower-bore-detail](engine-protection-terminal-a-v1/lower-bore-detail.png) · [preuve](engine-protection-terminal-a-v1/render-report.json)
+
+</details>
+
 Périmètre prévu : garde-boue avant; cadre: tubes et jonctions visibles; bras oscillant et pivots visibles.
 
 <a id="groupe-16"></a>
@@ -1313,6 +1367,106 @@ PNG SHA-256 : `cbd8893e16d98f9983cb09649947c9716791bd6c7a696f5b572dc5a7bad6e839`
 
 - [covered-tip-pbr](rear-sns-rod-v1/covered-tip-pbr.png) · [preuve](rear-sns-rod-v1/render-report.json)
 - [neutral-outdoor](rear-sns-rod-v1/neutral-outdoor.png) · [preuve](rear-sns-rod-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-rear-sns-body-side-seat-rim-001"></a>
+
+### SNS arrière — bord visible de siège côté fût
+
+`MOTO-REAR-SNS-BODY-SIDE-SEAT-RIM-001` · révision `rear-sns-body-side-seat-rim-v1` · **candidat non reçu**
+
+![SNS arrière — bord visible de siège côté fût — rear-sns-body-side-seat-rim-v1](rear-sns-body-side-seat-rim-v1/whole-rim-pbr.png)
+
+[Image entière](rear-sns-body-side-seat-rim-v1/whole-rim-pbr.png) · [Preuve du rendu](rear-sns-body-side-seat-rim-v1/render-report.json) · vue `whole-rim-pbr`
+
+Source SHA-256 : `43b99d580d8040e3f2c0554c18a9e33eee693d9fc79fe04e49b749b0a8cf32df`  
+PNG SHA-256 : `bf9d754c5005ecd4304fc1df0af431eb0b7391d534bf0924c17a2a59dc01099c`
+
+[Blender](../../assets-src/moto-components/rear-sns/body-side-seat-rim/rear-sns-body-side-seat-rim-v1.blend) · [GLB](../../assets-src/moto-components/rear-sns/body-side-seat-rim/rear-sns-body-side-seat-rim-v1.glb) · [README source](../../assets-src/moto-components/rear-sns/body-side-seat-rim/README_v1.md) · [Revue et limites](rear-sns-body-side-seat-rim-v1/README.md) · [Fiche](../workflow/records/moto-rear-sns-body-side-seat-rim-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [rounded-edge-pbr](rear-sns-body-side-seat-rim-v1/rounded-edge-pbr.png) · [preuve](rear-sns-body-side-seat-rim-v1/render-report.json)
+- [neutral-outdoor](rear-sns-body-side-seat-rim-v1/neutral-outdoor.png) · [preuve](rear-sns-body-side-seat-rim-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-rear-sns-body-side-eye-exterior-001"></a>
+
+### SNS arrière — extérieur noir œil côté fût et col court
+
+`MOTO-REAR-SNS-BODY-SIDE-EYE-EXTERIOR-001` · révision `rear-sns-body-side-eye-exterior-v1` · **candidat non reçu**
+
+![SNS arrière — extérieur noir œil côté fût et col court — rear-sns-body-side-eye-exterior-v1](rear-sns-body-side-eye-exterior-v1/whole-eye-pbr.png)
+
+[Image entière](rear-sns-body-side-eye-exterior-v1/whole-eye-pbr.png) · [Preuve du rendu](rear-sns-body-side-eye-exterior-v1/render-report.json) · vue `whole-eye-pbr`
+
+Source SHA-256 : `113aefabec9d1c312dec0ee375cbf826aa395eef2d3463387cb62c1126f84688`  
+PNG SHA-256 : `204d412d9c335db464dabbbe114e8ff2bfdcfbf72bad90ce0c1a36567b468378`
+
+[Blender](../../assets-src/moto-components/rear-sns/body-side-eye-exterior/rear-sns-body-side-eye-exterior-v1.blend) · [GLB](../../assets-src/moto-components/rear-sns/body-side-eye-exterior/rear-sns-body-side-eye-exterior-v1.glb) · [README source](../../assets-src/moto-components/rear-sns/body-side-eye-exterior/README_v1.md) · [Revue et limites](rear-sns-body-side-eye-exterior-v1/README.md) · [Fiche](../workflow/records/moto-rear-sns-body-side-eye-exterior-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [neck-rounding-pbr](rear-sns-body-side-eye-exterior-v1/neck-rounding-pbr.png) · [preuve](rear-sns-body-side-eye-exterior-v1/render-report.json)
+- [neutral-outdoor](rear-sns-body-side-eye-exterior-v1/neutral-outdoor.png) · [preuve](rear-sns-body-side-eye-exterior-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-rear-sns-body-side-eye-sleeve-001"></a>
+
+### SNS arrière — manchon central argent côté fût
+
+`MOTO-REAR-SNS-BODY-SIDE-EYE-SLEEVE-001` · révision `rear-sns-body-side-eye-sleeve-v1` · **candidat non reçu**
+
+![SNS arrière — manchon central argent côté fût — rear-sns-body-side-eye-sleeve-v1](rear-sns-body-side-eye-sleeve-v1/whole-sleeve-pbr.png)
+
+[Image entière](rear-sns-body-side-eye-sleeve-v1/whole-sleeve-pbr.png) · [Preuve du rendu](rear-sns-body-side-eye-sleeve-v1/render-report.json) · vue `whole-sleeve-pbr`
+
+Source SHA-256 : `ec1bec08a0c6702eff57fee7e4b492e3620dc24bb1afec8c100b731c87cabfae`  
+PNG SHA-256 : `a074fda655f30d25afa1023f69c8b33ea4cab7f81a1b6acb44583d513544ae10`
+
+[Blender](../../assets-src/moto-components/rear-sns/body-side-eye-sleeve/rear-sns-body-side-eye-sleeve-v1.blend) · [GLB](../../assets-src/moto-components/rear-sns/body-side-eye-sleeve/rear-sns-body-side-eye-sleeve-v1.glb) · [README source](../../assets-src/moto-components/rear-sns/body-side-eye-sleeve/README_v1.md) · [Revue et limites](rear-sns-body-side-eye-sleeve-v1/README.md) · [Fiche](../workflow/records/moto-rear-sns-body-side-eye-sleeve-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [front-lip-pbr](rear-sns-body-side-eye-sleeve-v1/front-lip-pbr.png) · [preuve](rear-sns-body-side-eye-sleeve-v1/render-report.json)
+- [neutral-outdoor](rear-sns-body-side-eye-sleeve-v1/neutral-outdoor.png) · [preuve](rear-sns-body-side-eye-sleeve-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-rear-sns-opposite-seat-rim-001"></a>
+
+### SNS arrière — bord de siège opposé observé
+
+`MOTO-REAR-SNS-OPPOSITE-SEAT-RIM-001` · révision `rear-sns-opposite-seat-rim-v1` · **candidat non reçu**
+
+![SNS arrière — bord de siège opposé observé — rear-sns-opposite-seat-rim-v1](rear-sns-opposite-seat-rim-v1/whole-rim-pbr.png)
+
+[Image entière](rear-sns-opposite-seat-rim-v1/whole-rim-pbr.png) · [Preuve du rendu](rear-sns-opposite-seat-rim-v1/render-report.json) · vue `whole-rim-pbr`
+
+Source SHA-256 : `69e326632770ee32c8703e96605e40d5dda40b66bbe9eb16be8ef29693874836`  
+PNG SHA-256 : `d98e0c0127c4b9874266e9b693188896a2da7d1e8d9ddbbe2a180527bb6da519`
+
+[Blender](../../assets-src/moto-components/rear-sns/opposite-seat-rim/rear-sns-opposite-seat-rim-v1.blend) · [GLB](../../assets-src/moto-components/rear-sns/opposite-seat-rim/rear-sns-opposite-seat-rim-v1.glb) · [README source](../../assets-src/moto-components/rear-sns/opposite-seat-rim/README_v1.md) · [Revue et limites](rear-sns-opposite-seat-rim-v1/README.md) · [Fiche](../workflow/records/moto-rear-sns-opposite-seat-rim-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [rounded-edge-pbr](rear-sns-opposite-seat-rim-v1/rounded-edge-pbr.png) · [preuve](rear-sns-opposite-seat-rim-v1/render-report.json)
+- [neutral-outdoor](rear-sns-opposite-seat-rim-v1/neutral-outdoor.png) · [preuve](rear-sns-opposite-seat-rim-v1/render-report.json)
 
 </details>
 
@@ -1944,6 +2098,33 @@ PNG SHA-256 : `0b9e86cd1c1dbcd099442a027724805129795503a58b31e37eb4ab07f019052a`
 - [one-ring-normal](engine-intake-o-ring-v1/one-ring-normal.png) · [preuve](engine-intake-o-ring-v1/render-report.json)
 - [circular-section-detail](engine-intake-o-ring-v1/circular-section-detail.png) · [preuve](engine-intake-o-ring-v1/render-report.json)
 - [raking-surface-control](engine-intake-o-ring-v1/raking-surface-control.png) · [preuve](engine-intake-o-ring-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-engine-intake-clamp-band-001"></a>
+
+### Bande collier DP101198 lié — oreilles intégrales isolées
+
+`MOTO-ENGINE-INTAKE-CLAMP-BAND-001` · révision `engine-intake-clamp-band-v1` · **candidat non reçu**
+
+![Bande collier DP101198 lié — oreilles intégrales isolées — engine-intake-clamp-band-v1](engine-intake-clamp-band-v1/front-quarter.png)
+
+[Image entière](engine-intake-clamp-band-v1/front-quarter.png) · [Preuve du rendu](engine-intake-clamp-band-v1/render-report.json) · vue `front-quarter`
+
+Source SHA-256 : `3fc41201dc15a252d00f661b9b6abc5083c12bf73ac6926b69ff7b08930e036e`  
+PNG SHA-256 : `3d8960cd096ee8e2c9d4f64f6e7480c92b13dc60304e7cf17fdd078e4b8a8b04`
+
+[Blender](../../assets-src/moto-components/engine-intake-clamp-band/engine-intake-clamp-band-v1.blend) · [GLB](../../assets-src/moto-components/engine-intake-clamp-band/engine-intake-clamp-band-inspection.glb) · [README source](../../assets-src/moto-components/engine-intake-clamp-band/README.md) · [Revue et limites](engine-intake-clamp-band-v1/README.md) · [Fiche](../workflow/records/moto-engine-intake-clamp-band-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [opposite-quarter](engine-intake-clamp-band-v1/opposite-quarter.png) · [preuve](engine-intake-clamp-band-v1/render-report.json)
+- [lug-fold-and-hole-detail](engine-intake-clamp-band-v1/lug-fold-and-hole-detail.png) · [preuve](engine-intake-clamp-band-v1/render-report.json)
+- [inner-band-contact-detail](engine-intake-clamp-band-v1/inner-band-contact-detail.png) · [preuve](engine-intake-clamp-band-v1/render-report.json)
+- [finish-raking-control](engine-intake-clamp-band-v1/finish-raking-control.png) · [preuve](engine-intake-clamp-band-v1/render-report.json)
 
 </details>
 

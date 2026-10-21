@@ -1,0 +1,11 @@
+"""Five attributable actual96 band views, not an accepted complete clamp."""
+from pathlib import Path
+import json,hashlib
+H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/engine-intake-clamp-band-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();assert not(O/'review-manifest.json').exists();pre=H/'preflight-manifest.json';m=json.loads(pre.read_text());source=H/'engine-intake-clamp-band-v1.blend';glb=H/'engine-intake-clamp-band-inspection.glb';r=json.loads((O/'render-report.json').read_text());assert sha(source)==m['source_sha256']==r['source_sha256']and sha(glb)==m['export_sha256']==r['export_sha256'];assert r['samples']==96 and{v['name']for v in r['views']}=={'front-quarter','opposite-quarter','lug-fold-and-hole-detail','inner-band-contact-detail','finish-raking-control'};files=[pre,O/'render-report.json']
+for row in m['files']:
+ p=R/row['path'];assert sha(p)==row['sha256'];files.append(p)
+for row in r['views']:
+ cp=O/(row['name']+'.checkpoint.json');j=json.loads(cp.read_text());assert j['source_sha256']==sha(source)and j['configuration']['samples']==96 and j['configuration']['render_script_sha256']==sha(H/'render.py')and j['configuration']['protocol_sha256']==sha(H/'render_checkpoint.py');assert j['configuration_sha256']==hashlib.sha256(json.dumps(j['configuration'],sort_keys=True).encode()).hexdigest();files.append(cp)
+ for out in j['outputs']:
+  p=O/out['file'];assert sha(p)==out['sha256'];files.append(p)
+x={'component_id':m['component_id'],'revision':m['revision'],'source_sha256':sha(source),'export_sha256':sha(glb),'files':[{'path':str(p.relative_to(R)),'bytes':p.stat().st_size,'sha256':sha(p)}for p in sorted(set(files))],'scope':'Five actual96 views of isolated band/lugs only. Separate screw/inner bridge/hardware unmade. Original static yellow/green color hypothesis does not receive photo coating chemistry or angular iridescence; mapped and uniform witness native geometry buffers/matrices are identical. All dimensions/currentRDC identity, fit/compression/tightening and compound unknown, no automatic attachment or physicaliPhone/art/OEM reception.','all_dimensions_estimated':True,'automatic_attachment_allowed':False,'art_accepted':False,'physical_iphone_tested':False};(O/'review-manifest.json').write_text(json.dumps(x,indent=2)+'\n');print('BOUND_INTAKE_CLAMP_BAND',len(x['files']))

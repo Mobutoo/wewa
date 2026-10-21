@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-HANDLEBAR-MOUNT-UPPER-DAMPER-001",
-  "label": "Amortisseur supérieur de montage du guidon — DS181008 apparenté",
+  "label": "Guidon — amortisseur supérieur DS181008 apparenté, face observée",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,13 +12,13 @@
     "material"
   ],
   "identity": {
-    "variant": "Related D15 DS181008; exact current RDC identity unconfirmed",
+    "variant": "Seller-related DS181008 BM/BMX150 and D15; exact current125HD RDC identity/quantity/installed orientation unconfirmed",
     "variant_confirmed": false,
-    "usage": "Separate candidate preparation, no copied upper/lower section or installed pose",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
-      0.1,
-      0.25,
-      0.5
+      0.15,
+      0.35,
+      0.65
     ]
   },
   "source_register": "../sources.json",
@@ -26,7 +26,323 @@
     "D15"
   ],
   "claims": [],
-  "views": [],
+  "views": [
+    {
+      "name": "quarter",
+      "camera_location_m": [
+        0.045,
+        0.055,
+        0.06
+      ],
+      "target_m": [
+        0,
+        0,
+        0.002
+      ],
+      "ortho_scale_m": 0.05,
+      "allow_deliberate_macro_crop": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "UPPER_DAMPER_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.07767932806646577,
+        "farthest_actual_vertex_depth_m": 0.10606092753462334,
+        "projected_uv_min": [
+          0.16000052329126307,
+          0.1584882491975334
+        ],
+        "projected_uv_max": [
+          0.8399997649108433,
+          0.831750947455494
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Upper mountdamper photographed face only, reverse estimated",
+            "vertices": 80256,
+            "depth_m": [
+              0.07767932806646577,
+              0.10606092753462334
+            ],
+            "projected_uv_min": [
+              0.16000052329126307,
+              0.1584882491975334
+            ],
+            "projected_uv_max": [
+              0.8399997649108433,
+              0.831750947455494
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "a4ada4faf40718f65c8b638288108405ebb56f52224d5b7b11f97943cdccba88",
+      "checkpoint_file": "checkpoint-quarter.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "top",
+      "camera_location_m": [
+        0,
+        0,
+        0.1
+      ],
+      "target_m": [
+        0,
+        0,
+        0.002
+      ],
+      "ortho_scale_m": 0.05,
+      "allow_deliberate_macro_crop": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "UPPER_DAMPER_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.09600000130012631,
+        "farthest_actual_vertex_depth_m": 0.10000000149011612,
+        "projected_uv_min": [
+          0.15999998152256012,
+          0.023999941706655648
+        ],
+        "projected_uv_max": [
+          0.8400000184774399,
+          0.9760000582933444
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Upper mountdamper photographed face only, reverse estimated",
+            "vertices": 80256,
+            "depth_m": [
+              0.09600000130012631,
+              0.10000000149011612
+            ],
+            "projected_uv_min": [
+              0.15999998152256012,
+              0.023999941706655648
+            ],
+            "projected_uv_max": [
+              0.8400000184774399,
+              0.9760000582933444
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "3db5851e06dcec2ebdff31cdf8ca9839827fb097c60d54418e0ebe1ec8a967a6",
+      "checkpoint_file": "checkpoint-top.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "reverse-quarter",
+      "camera_location_m": [
+        0.045,
+        -0.055,
+        -0.06
+      ],
+      "target_m": [
+        0,
+        0,
+        0.002
+      ],
+      "ortho_scale_m": 0.05,
+      "allow_deliberate_macro_crop": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "UPPER_DAMPER_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.08028611942285489,
+        "farthest_actual_vertex_depth_m": 0.10803404817923778,
+        "projected_uv_min": [
+          0.16000070001429767,
+          0.1477502992834976
+        ],
+        "projected_uv_max": [
+          0.8399999532185405,
+          0.8427545618084449
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Upper mountdamper photographed face only, reverse estimated",
+            "vertices": 80256,
+            "depth_m": [
+              0.08028611942285489,
+              0.10803404817923778
+            ],
+            "projected_uv_min": [
+              0.16000070001429767,
+              0.1477502992834976
+            ],
+            "projected_uv_max": [
+              0.8399999532185405,
+              0.8427545618084449
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "ed1d6cd36e7be3a273a155fbb953fde6e6e215b6bda0d28f5835c277e0c4865f",
+      "checkpoint_file": "checkpoint-reverse-quarter.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "collar-detail",
+      "camera_location_m": [
+        0.025,
+        0.045,
+        0.035
+      ],
+      "target_m": [
+        0,
+        0.0068,
+        0.0038
+      ],
+      "ortho_scale_m": 0.015,
+      "allow_deliberate_macro_crop": true,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "UPPER_DAMPER_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.04619729212004112,
+        "farthest_actual_vertex_depth_m": 0.07607564798669293,
+        "projected_uv_min": [
+          -0.8815538709714572,
+          -0.37931419292422563
+        ],
+        "projected_uv_max": [
+          1.3850605087029622,
+          1.6665026581327087
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Upper mountdamper photographed face only, reverse estimated",
+            "vertices": 80256,
+            "depth_m": [
+              0.04619729212004112,
+              0.07607564798669293
+            ],
+            "projected_uv_min": [
+              -0.8815538709714572,
+              -0.37931419292422563
+            ],
+            "projected_uv_max": [
+              1.3850605087029622,
+              1.6665026581327087
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "6f621e9727f761a58373dba73ed91a4123fa54d96c420aabca31bd7d7c989bab",
+      "checkpoint_file": "checkpoint-collar-detail.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "outer-rim-detail",
+      "camera_location_m": [
+        0.08,
+        -0.03,
+        0.055
+      ],
+      "target_m": [
+        0.016,
+        0,
+        0.0034
+      ],
+      "ortho_scale_m": 0.012,
+      "allow_deliberate_macro_crop": true,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "UPPER_DAMPER_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.08549495842296893,
+        "farthest_actual_vertex_depth_m": 0.1148498984401363,
+        "projected_uv_min": [
+          -1.48257008721138,
+          0.018396181807543488
+        ],
+        "projected_uv_max": [
+          1.3507464514076002,
+          2.668515965876136
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Upper mountdamper photographed face only, reverse estimated",
+            "vertices": 80256,
+            "depth_m": [
+              0.08549495842296893,
+              0.1148498984401363
+            ],
+            "projected_uv_min": [
+              -1.48257008721138,
+              0.018396181807543488
+            ],
+            "projected_uv_max": [
+              1.3507464514076002,
+              2.668515965876136
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "107a7fe1095bf1a132ff31e77fec1c01d1e8b05050649a952f022a00406c06ac",
+      "checkpoint_file": "checkpoint-outer-rim-detail.json",
+      "reused_verified_checkpoint": false
+    }
+  ],
   "criteria": [],
   "gaps": [
     {
@@ -45,7 +361,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "handlebar-mount-upper-damper-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -53,63 +369,103 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": null,
+      "revision": "handlebar-mount-upper-damper-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Physical section/scale and exact current RDC applicability remain unknown; documentary preparation only",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
       "status": "blocked",
-      "revision": null,
+      "revision": "handlebar-mount-upper-damper-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Physical section/scale and exact current RDC applicability remain unknown; documentary preparation only",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "handlebar-mount-upper-damper-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/handlebar-clamps/mounting-upper-damper/handlebar-mount-upper-damper-v1.blend",
+          "kind": "editable_source",
+          "revision": "handlebar-mount-upper-damper-v1",
+          "sha256": "ae6ed5f4f3b05881dab49fa650083c600fe52ba50d3733f1938c3e2d02ba5f8c"
+        },
+        {
+          "path": "../../reviews/handlebar-mount-upper-damper-v1/quarter.png",
+          "kind": "isolated_comparison",
+          "revision": "handlebar-mount-upper-damper-v1",
+          "sha256": "a4ada4faf40718f65c8b638288108405ebb56f52224d5b7b11f97943cdccba88"
+        }
+      ],
+      "reason": "Root independently opened all five actual final96 images, two actual Babylon views and attributed DS181008975470 photo. Observed annular face, central collar, outer rim and true passage built; finite plain reverse/wall explicitly estimated, not photographed OEM section. No DS181009/010 copy or hidden insert inferred. All actual POSITION/N/UV/T/index buffers and world matrices exactly protected G3-to-PBR.",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "handlebar-mount-upper-damper-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-mount-upper-damper-v1/outer-rim-detail.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "handlebar-mount-upper-damper-v1",
+          "sha256": "107a7fe1095bf1a132ff31e77fec1c01d1e8b05050649a952f022a00406c06ac"
+        }
+      ],
+      "reason": "Original dark dielectric with two original512 normal/ORM maps, no photo pixels. Root read whole/top/reverse/collar/rim96. Fine grain, roughness, albedo, material identity and studio/browser photographic parity remain unmeasured hypotheses. Packed maps and existing relative companions checked by author; no art acceptance.",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "handlebar-mount-upper-damper-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-mount-upper-damper-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "handlebar-mount-upper-damper-v1",
+          "sha256": "e350be3c153dcadd93e92b42767e408c2f722c09c6cc8697666e092172c8dacb"
+        }
+      ],
+      "reason": "Static isolated local datum with positiveZ photographed face and origin at estimated reverse. WorkingOD34/ID12mm, face3.2mm, collar0.8mm and rim0.35mm are estimates. Photo grid has no established physical step, not a dimension calibration. No currentRDC quantity, orientation, compression, insert, DS009/010 compatibility, installed contact or load received.",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "handlebar-mount-upper-damper-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-mount-upper-damper-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "handlebar-mount-upper-damper-v1",
+          "sha256": "cd9ee9b2d8445e9dc9094b1f75c3a4244540c8afcc5d4d0fd70aa774314e6ab9"
+        },
+        {
+          "path": "../../reviews/handlebar-mount-upper-damper-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "handlebar-mount-upper-damper-v1",
+          "sha256": "345ab71c9e4ec04391c09e84e6a4de7cae11d768a53788d0af5355a0950dc74c"
+        }
+      ],
+      "reason": "Actual160512triangles, strict0glTFerrors, one normalmapped primitive and zero collapsedUV. Babylon1mesh/four actual nonblank canvases, zero page/HTTPerrors. High detail inspection source, no mobileLOD/Safari/iPhone or artistic qualification.",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "handlebar-mount-upper-damper-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "handlebar-mount-upper-damper-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -117,10 +473,16 @@
     }
   },
   "active_detailed_fabrication": false,
-  "source_revision": null,
-  "export_revision": null,
-  "next_action": "Owner A: find and read attributable physical views for DS181008 before detailed geometry; document section/scale estimates separately. Do not substitute a generic annulus or copy its upper/lower partner.",
+  "source_revision": "handlebar-mount-upper-damper-v1",
+  "export_revision": "handlebar-mount-upper-damper-v1-inspection",
+  "next_action": "Resolve documentary dimensions, remaining visible/hidden geometry and installed interfaces; compare native/browser material before art reception. No automatic mounting or mobile qualification.",
   "art_accepted": false,
   "production_group": 1,
-  "documentary_preparation": "../../research/handlebar-clamps/mounting-stack-remaining-v1.README.md"
+  "documentary_preparation": "../../research/handlebar-mount-upper-damper-1/documentary-preparation-v1.json",
+  "documentary_references": [
+    "creative/research/handlebar-mount-stack-followup-v2/report.json",
+    "creative/research/handlebar-mount-upper-damper-1/chosen-parameters-before-geometry-v1.json"
+  ],
+  "candidate_source": "../../../assets-src/moto-components/handlebar-clamps/mounting-upper-damper/README.md",
+  "candidate_review": "../../reviews/handlebar-mount-upper-damper-v1/README.md"
 }

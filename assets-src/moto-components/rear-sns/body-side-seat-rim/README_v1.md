@@ -1,0 +1,7 @@
+# SNS body-side spring rim — original black rendering candidate
+
+Only the visible flattened border type is reconstructed, as a complete smooth band for orbit review. Local PF122033/SCLblack fragments distinguish this rim from spring wire and lower scalloped collar. Full circumference, inner limit and section are explicitly authored; the hidden central seat/plate stack, fixing and actual spring footprint are not reconstructed. A separate modeling unit is not proof of OEM serviceability.
+
+Radii21.8–29.5mm, thickness2.5mm, rounding0.55mm and placement are estimates. Actual candidate gaps are0.298357mm radially from collar and0.505087/1.229802mm axially from coils. These demonstrate disjoint geometry, not seated contact or installed fit. Flat strips keep exactly axial normals, round-over surfaces use analytic normals, with no CSG, remesh, global bevel or buffer repair. Actual GLB26624triangles has zero strict/UV/geometric degeneracies and minimum face-corner normal dot0.997759.
+
+Original black coat(.009,.010,.012), roughness.27 and coat.15 is a rendering proposal, not measured paint/substrate. Actual POSITION/NORMAL/UV/indices and node matrices are bit-identical to the immutable gray study. No photographic texture, hidden adjustment mechanism, artistic reception or physical iPhone qualification is asserted. Static0rig. The reused material generator console retains an older body label only; actual object/parameters explicitly identify this rim.

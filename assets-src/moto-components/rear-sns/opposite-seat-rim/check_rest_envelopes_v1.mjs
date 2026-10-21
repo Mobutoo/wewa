@@ -1,0 +1,13 @@
+import fs from'node:fs/promises';import{createHash}from'node:crypto';import{NodeIO}from'@gltf-transform/core';import{ALL_EXTENSIONS}from'@gltf-transform/extensions';
+const io=new NodeIO().registerExtensions(ALL_EXTENSIONS),sha=b=>createHash('sha256').update(b).digest('hex'),O='creative/reviews/rear-sns-opposite-seat-rim-study-v1';
+const seg=(a,b)=>{const d=b.map((x,i)=>x-a[i]),dd=d[0]**2+d[1]**2,t=dd?Math.max(0,Math.min(1,-(a[0]*d[0]+a[1]*d[1])/dd)):0;return Math.hypot(a[0]+t*d[0],a[1]+t*d[1]);};
+const tri=(a,b,c)=>{const cr=(u,v)=>u[0]*v[1]-u[1]*v[0],s=[cr(a,b),cr(b,c),cr(c,a)],area=cr(b.map((x,i)=>x-a[i]),c.map((x,i)=>x-a[i]));if(area&&(s.every(x=>x>=0)||s.every(x=>x<=0)))return 0;return Math.min(seg(a,b),seg(b,c),seg(c,a));};
+const sets=[];
+for(const name of ['opposite-seat-rim/rear-sns-opposite-seat-rim-study-v1','outer-spring/rear-sns-outer-spring-v1','inner-spring/rear-sns-inner-spring-v1']){
+ const path=`assets-src/moto-components/rear-sns/${name}.glb`,bytes=await fs.readFile(path),r=(await io.readBinary(bytes)).getRoot();let minY=Infinity,maxY=-Infinity,minRadial=Infinity,maxRadial=0,triangles=0;
+ for(const n of r.listNodes()){const a=n.getWorldMatrix();if(a.some((x,i)=>Math.abs(x-([0,5,10,15].includes(i)?1:0))>1e-8))throw Error('Nonidentity node; explicit transforms required');}
+ for(const m of r.listMeshes())for(const p of m.listPrimitives()){const pos=p.getAttribute('POSITION'),idx=p.getIndices();for(let i=0;i<pos.getCount();i++){const a=pos.getElement(i,[]);minY=Math.min(minY,a[1]);maxY=Math.max(maxY,a[1]);maxRadial=Math.max(maxRadial,Math.hypot(a[0],a[2]));}for(let i=0;i<idx.getCount();i+=3){minRadial=Math.min(minRadial,tri(...[0,1,2].map(k=>{const p=pos.getElement(idx.getScalar(i+k),[]);return[p[0],p[2]];})));triangles++;}}
+ sets.push({path,sha256:sha(bytes),triangles,minY,maxY,minRadial,maxRadial,all_node_world_matrices_identity:true});
+}
+const axial=sets.slice(1).map(s=>({spring:s.path,axial_separation_bound_m:sets[0].minY-s.maxY}));
+const j={schema:1,sets,spring_rim_axial_disjoint_lower_bounds:axial,all_candidate_surfaces_disjoint_by_envelopes:axial.every(s=>s.axial_separation_bound_m>0),scope:'Actual exported vertices/triangles in unplaced authored datums only. Positive gaps, not seated contact or true spring-end support. Hidden central seat unbuilt.',art_accepted:false};await fs.writeFile(`${O}/rest-envelope-check.json`,JSON.stringify(j,null,2)+'\n');console.log(JSON.stringify(j));if(!j.all_candidate_surfaces_disjoint_by_envelopes)throw Error('Candidate band interpenetration');

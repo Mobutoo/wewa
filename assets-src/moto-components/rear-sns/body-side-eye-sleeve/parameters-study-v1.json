@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "revision": "rear-sns-body-side-eye-sleeve-study-v1",
+  "units": "m, authored estimates not physical cotes or fit tolerance",
+  "inner_radius_m": 0.0055,
+  "outer_radius_m": 0.00715,
+  "top_z_m": 0.0063,
+  "bottom_z_m": -0.0063,
+  "section_corner_radius_m": 0.00025,
+  "angular_segments": 256,
+  "quarter_round_samples": 12,
+  "eye_center_z_m": -0.1115,
+  "source_axis_mapping": "Construct radial/axial section around localZ, then rotateX+90deg and translateZ-.1115. Final sleeve axisY, front negativeY; arbitrary unplaced datum.",
+  "scope": "Visible bright central lip/partial inner wall guide an original finite annular sleeve candidate; depth/rear continuation fully estimated",
+  "hidden_unknowns": [
+    "Actual bore diameter and sleeve length",
+    "Alloy/coating and press-fit/retention",
+    "Back lip/section and exact currentRDC identity"
+  ],
+  "working_range_not_confidence_interval": {
+    "inner_radius_m": [
+      0.0045,
+      0.006
+    ],
+    "total_depth_m": [
+      0.01,
+      0.016
+    ]
+  },
+  "candidate_only_outer_constraint": "Radius7.15mm chosen to leave an authored positive radial gap inside existing black exterior hole7.2mm; not an OEM press-fit tolerance."
+}

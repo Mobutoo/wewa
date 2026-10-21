@@ -1,0 +1,9 @@
+import bpy,json,math,hashlib
+from pathlib import Path
+from mathutils import Vector
+from mathutils.bvhtree import BVHTree
+R=Path('/workspace/wewa-github');H=R/'assets-src/moto-components/engine-intake-clamp-band';b=json.loads((H/'geometry-report.json').read_text());P=json.loads((H/'parameters.json').read_text());source=H/'engine-intake-clamp-band-v1-geometry.blend';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();assert sha(source)==b['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(source));o=bpy.data.objects[b['geometry'][0]['name']];m=o.data;m.calc_loop_triangles();tree=BVHTree.FromPolygons([v.co for v in m.vertices],[tuple(t.vertices)for t in m.loop_triangles],all_triangles=True);rm=P['working_radius_inner_m']+P['working_thickness_m']/2;rb=P['working_turn_back_radius_m'];cx=(rm+rb)*.5;cy=-(rm+rb)*math.sqrt(3)/2;inner_radius=rb+P['working_thickness_m']/2;rows=[]
+for y in [cy-.0005,cy,cy+.0003,cy+.0006,cy+.0009]:
+ expected=-(cx-math.sqrt(inner_radius**2-(y-cy)**2)) if y>=cy else-b['working_ear_X_abs_m']+P['working_thickness_m']/2
+ a=tree.ray_cast(Vector((0,y,0)),Vector((-1,0,0)),.020)[0];assert a is not None;rows.append({'Y_m':y,'actual_inner_X_m':a.x,'analytic_continuous_strip_inner_X_m':expected,'extra_material_toward_centre_m':a.x-expected})
+r={'source_sha256':sha(source),'source_unchanged':True,'return_tangent_Y_m':cy,'ear_plate_authored_max_Y_m':P['working_ear_Y_max_m'],'actual_rows':rows,'scope':'Source local innerface atZ0; analytic reference is authored rounded strip, not photo measurement. Differential proves overlapping lug plate overrides continuous strip profile before gray G3 acceptance.','art_accepted':False};out=R/'creative/research/engine-intake-clamp-band/lug-return-line-diagnostic-v1.json';out.write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(r,indent=2));assert sha(source)==b['source_sha256']
