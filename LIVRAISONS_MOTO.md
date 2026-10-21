@@ -28,6 +28,8 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P11, plaque révisée** : [revue technique du dessin original](creative/reviews/license-plate-wewa-v2/DESIGN_REVIEW_V1.md) et [axes de perçages comparés aux GLB de la traverse](creative/reviews/license-plate-wewa-v2/nominal-carrier-interface-v1.json). Décalage nominal de2mm par côté supprimé dans la pose de revue ; visserie et pose véhicule restent ouvertes.
+
 - **P11** : [license-plate-wewa-v2 — sources, rendus et contrôles](creative/reviews/license-plate-wewa-v2/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **P21** : [Existing related DS151068 front: source normal and scalar roughness correction candidate — sources et images](creative/reviews/front-completion-p21-front-material-front10-v5-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P21** : [Related DS151068 reverse exterior independent study — sources et images](creative/reviews/front-completion-p21-reverse-front10-v8-coordination-v1/README.md). Candidat, paquet encore ouvert.

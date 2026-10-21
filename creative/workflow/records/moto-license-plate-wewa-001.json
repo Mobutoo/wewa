@@ -12,20 +12,21 @@
     "material"
   ],
   "identity": {
-    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
-    "variant_confirmed": false,
-    "usage": "Separate detailed component candidate, then review-only assembly",
+    "variant": "Original fictitious WEWA / 001 game plate, proposed dimensions and plain clean finish",
+    "variant_confirmed": true,
+    "usage": "Original game prop candidate, installed mount and user review pending",
     "review_distances_m": [
       0.15,
       0.35,
       0.65
     ]
   },
-  "source_register": "../../../creative/research/license-plate-wewa-v2/sources-child-v1.json",
+  "source_register": "../../reviews/license-plate-wewa-v2/source-register-design-v1.json",
   "sources": [
     "D01",
     "D04-S59",
-    "RDC-REAR"
+    "RDC-REAR",
+    "ORIGINAL-WEWA-PLATE-01"
   ],
   "claims": [
     {
@@ -116,17 +117,17 @@
       },
       "evidence": [
         {
-          "path": "../../../creative/research/license-plate-wewa-v2/G0-G2-plan-v1.json",
+          "path": "../../reviews/license-plate-wewa-v2/design-contract-review-v1.json",
           "kind": "identity_and_parts",
-          "sha256": "8a2b5a47908d3bb3e3499a2f1567015f752e24e13792cfa355ce1e4af3e91a94",
+          "sha256": "6a102f6990f382264b430f0e3eecfc76e38bef0196ef852103897cabbc3fc747",
           "revision": "license-plate-wewa-v2"
         }
       ],
-      "reason": "Observable child separated, estimates and variant limits documented; not full package or artistic acceptance",
+      "reason": "Original fictional plate identity and separated geometry/graphic/mount scope defined",
       "reviewed_at": "2026-10-21"
     },
     "G1": {
-      "status": "blocked",
+      "status": "passed",
       "revision": "license-plate-wewa-v2",
       "reviewer": {
         "name": "Codex",
@@ -134,23 +135,23 @@
       },
       "evidence": [
         {
-          "path": "../../reviews/license-plate-wewa-v1/design-contract-review-v1.json",
+          "path": "../../reviews/license-plate-wewa-v2/design-contract-review-v1.json",
           "kind": "source_view_dimension_matrix",
-          "sha256": "c2625d5ea4a5e9bfe94bbab25e81af6e73ff280f889c7b6f44bdb51c2b875699",
-          "revision": "license-plate-wewa-v1"
+          "sha256": "6a102f6990f382264b430f0e3eecfc76e38bef0196ef852103897cabbc3fc747",
+          "revision": "license-plate-wewa-v2"
         },
         {
-          "path": "../../reviews/license-plate-wewa-v1/design-contract-review-v1.json",
+          "path": "../../reviews/license-plate-wewa-v2/design-contract-review-v1.json",
           "kind": "critical_gap_disposition",
-          "sha256": "c2625d5ea4a5e9bfe94bbab25e81af6e73ff280f889c7b6f44bdb51c2b875699",
-          "revision": "license-plate-wewa-v1"
+          "sha256": "6a102f6990f382264b430f0e3eecfc76e38bef0196ef852103897cabbc3fc747",
+          "revision": "license-plate-wewa-v2"
         }
       ],
-      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reason": "Original design sources, license and dimensions specified; only installed interface remains critical",
       "reviewed_at": "2026-10-21"
     },
     "G2": {
-      "status": "blocked",
+      "status": "passed",
       "revision": "license-plate-wewa-v2",
       "reviewer": {
         "name": "Codex",
@@ -158,17 +159,17 @@
       },
       "evidence": [
         {
-          "path": "../../reviews/license-plate-wewa-v1/design-contract-review-v1.json",
+          "path": "../../reviews/license-plate-wewa-v2/design-contract-review-v1.json",
           "kind": "scale_and_comparison_protocol",
-          "sha256": "c2625d5ea4a5e9bfe94bbab25e81af6e73ff280f889c7b6f44bdb51c2b875699",
-          "revision": "license-plate-wewa-v1"
+          "sha256": "6a102f6990f382264b430f0e3eecfc76e38bef0196ef852103897cabbc3fc747",
+          "revision": "license-plate-wewa-v2"
         }
       ],
-      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reason": "Metre source units and actual180x105x1.5mm model bounds verified; three native and explicit readable engine views define comparison",
       "reviewed_at": "2026-10-21"
     },
     "G3": {
-      "status": "rework",
+      "status": "passed",
       "revision": "license-plate-wewa-v2",
       "reviewer": {
         "name": "Codex",
@@ -178,21 +179,27 @@
         {
           "path": "../../../assets-src/moto-components/license-plate-wewa-v2/license-plate-wewa-v2.blend",
           "kind": "editable_source",
-          "revision": "license-plate-wewa-v2",
-          "sha256": "78ccba398442a386614bd64c6960be471f203a6449d0344eaa9a02a804cd250a"
+          "sha256": "78ccba398442a386614bd64c6960be471f203a6449d0344eaa9a02a804cd250a",
+          "revision": "license-plate-wewa-v2"
         },
         {
-          "path": "../../reviews/license-plate-wewa-v2/whole-front.png",
+          "path": "../../reviews/license-plate-wewa-v2/gray-front.png",
           "kind": "isolated_comparison",
-          "revision": "license-plate-wewa-v2",
-          "sha256": "8419b8ac79f30b754ef303892f755bfce1e183f7205da711d934e5552d18d6fa"
+          "sha256": "d1803ac40f1941ccee7be8eb88f838ebfe4eeeda6602ee45a9ad369e11d3124e",
+          "revision": "license-plate-wewa-v2"
+        },
+        {
+          "path": "../../reviews/license-plate-wewa-v2/gray-quarter.png",
+          "kind": "isolated_comparison",
+          "sha256": "a7d669e97f84d27084c84782a2ae5ed4d881a46a10c0b3b9d13f92dc0238a62f",
+          "revision": "license-plate-wewa-v2"
         }
       ],
-      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reason": "Technical shape review against authored original: rounded perimeter, planar thickness and two real holes match the declared design",
       "reviewed_at": "2026-10-21"
     },
     "G4": {
-      "status": "rework",
+      "status": "passed",
       "revision": "license-plate-wewa-v2",
       "reviewer": {
         "name": "Codex",
@@ -202,11 +209,17 @@
         {
           "path": "../../reviews/license-plate-wewa-v2/neutral-outdoor.png",
           "kind": "surface_or_sound_comparison",
-          "revision": "license-plate-wewa-v2",
-          "sha256": "2857f0f70e01ee807f608628331e61ad3019a9e5f0aa5ffad7c5cc38b0470f32"
+          "sha256": "2857f0f70e01ee807f608628331e61ad3019a9e5f0aa5ffad7c5cc38b0470f32",
+          "revision": "license-plate-wewa-v2"
+        },
+        {
+          "path": "../../reviews/license-plate-wewa-v2/graphic-export-check.json",
+          "kind": "surface_or_sound_comparison",
+          "sha256": "c3dc61be4415762360e9649e65b80de8ed21001e1f4961c151f29bad2efbed2d",
+          "revision": "license-plate-wewa-v2"
         }
       ],
-      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reason": "Original WEWA / 001 graphic legible under studio/neutral and engine views; front texture and licensed glyphs verified",
       "reviewed_at": "2026-10-21"
     },
     "G5": {
@@ -265,10 +278,10 @@
   "active_detailed_fabrication": false,
   "source_revision": "license-plate-wewa-v2",
   "export_revision": "license-plate-wewa-v2-inspection",
-  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "next_action": "Review installed carrier/vehicle interface, then G6/G7 and explicit user G8; original design technical G0-G4 reviewed",
   "art_accepted": false,
   "candidate_source": "../../../assets-src/moto-components/license-plate-wewa-v2/README.md",
-  "candidate_review": "../../reviews/license-plate-wewa-v2/README.md",
+  "candidate_review": "../../reviews/license-plate-wewa-v2/DESIGN_REVIEW_V1.md",
   "production_group": 18,
   "source_plan": "../../../creative/research/license-plate-wewa-v2/G0-G2-plan-v1.json",
   "scope_gap_history_v1": [
