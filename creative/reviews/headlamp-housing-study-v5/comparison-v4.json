@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "baseline_export_sha256": "86118dc9eff9e25f4c00ec4f107a54ee9a9c62b8863ff764da1edce5d436f034",
+  "new_export_sha256": "22ebcab9611bd5b8056c6396a2a324a51b80f52b5dc2302149c240ec69c00c52",
+  "triangles": 193666,
+  "indexed_triangle_content_bit_identical": {
+    "POSITION": true,
+    "TEXCOORD_0": true
+  },
+  "scope": "Raw vertex/indices may repack when corner-normal splits change. The actual ordered triangle POSITION and UV values, including winding, are bit-identical. No geometric smoothing or position displacement.",
+  "changed_triangle_corner_normal_vectors": 15473,
+  "changed_faces": 5902,
+  "changed_normal_angle_over_point001deg": 15473,
+  "max_changed_normal_angle_deg": 6.167213676639986,
+  "changed_corner_bbox_glTF_m": {
+    "min": [
+      -0.08448175340890884,
+      -0.10827955603599548,
+      -0.08072088658809662
+    ],
+    "max": [
+      0.08448175340890884,
+      -0.02535865642130375,
+      -0.054499998688697815
+    ]
+  },
+  "cause": "Explicit C1 ribbon outlines used flat side normals per source segment. Revision blends only neighboring side normals across smooth ribbon corners, before planar bevel/forming, keeping intended end corners split.",
+  "art_accepted": false
+}

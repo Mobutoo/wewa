@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "revision_observed": "instruments-v3",
+  "source_sha256": "2ac37623a2e8df558373233228a6b936b143b6ff282e8ab6e70f08e27675e7da",
+  "object": "Shaped central cluster cover",
+  "source_polygon_count": 154,
+  "source_polygons_smooth": 0,
+  "source_side_polygons": 152,
+  "source_side_polygons_smooth": 0,
+  "evaluated_polygon_count": 1674,
+  "evaluated_polygons_smooth": 0,
+  "evaluated_triangles": 3644,
+  "modifiers": [
+    {
+      "name": "Moulded central cover edge radius",
+      "type": "BEVEL",
+      "limit_method": "ANGLE",
+      "harden_normals": false,
+      "keep_sharp": null,
+      "width": 0.00139999995008111,
+      "segments": 5
+    },
+    {
+      "name": "Weighted moulding normals",
+      "type": "WEIGHTED_NORMAL",
+      "limit_method": null,
+      "harden_normals": null,
+      "keep_sharp": true,
+      "width": null,
+      "segments": null
+    }
+  ],
+  "local_matrix": [
+    1.0,
+    -5.398416258559514e-16,
+    1.8826514274676662e-15,
+    -8.881784197001252e-16,
+    0.0,
+    1.0,
+    0.0,
+    -7.450580596923828e-09,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "visual_observation": "Root context ignition-interface-current.png actually opened: flat highlight bands on curved central cover sides. Original mesh() leaves every polygon flat; WeightedNormal alone does not make those faces smooth.",
+  "inference": "Test side-only continuous outline normal field, keep broad caps planar and edge split. No geometry or other instrument edits authorized by this audit itself.",
+  "source_modified": false,
+  "art_accepted": false
+}

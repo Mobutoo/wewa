@@ -1,0 +1,360 @@
+{
+  "schema": 1,
+  "id": "MOTO-FRAME-SEAT-RAIL-001",
+  "label": "Cadre — un longeron observé sous selle",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01",
+    "D04",
+    "D13",
+    "D15"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "quarter",
+      "camera_location_m": [
+        0.75,
+        0.12,
+        0.3
+      ],
+      "camera_target_m": [
+        0.018,
+        0.34,
+        0.025
+      ],
+      "ortho_scale_m": 0.85,
+      "allow_deliberate_macro_crop": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "SEAT_RAIL_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.7314270787356353,
+        "farthest_actual_vertex_depth_m": 0.8751018813538032,
+        "projected_uv_min": [
+          0.10265245220640601,
+          0.3675291675463536
+        ],
+        "projected_uv_max": [
+          0.8969639010093065,
+          0.6967469821356532
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "One observedface seatmember - conditionalsection andside",
+            "vertices": 48144,
+            "depth_m": [
+              0.7314270787356353,
+              0.8751018813538032
+            ],
+            "projected_uv_min": [
+              0.10265245220640601,
+              0.3675291675463536
+            ],
+            "projected_uv_max": [
+              0.8969639010093065,
+              0.6967469821356532
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "146404347298ef496b88186926bfa7f2c29b61dee0ba539136c41723127828e1",
+      "checkpoint_file": "checkpoint-quarter.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "reverse",
+      "camera_location_m": [
+        -0.7,
+        0.55,
+        0.3
+      ],
+      "camera_target_m": [
+        0.018,
+        0.34,
+        0.025
+      ],
+      "ortho_scale_m": 0.85,
+      "allow_deliberate_macro_crop": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "SEAT_RAIL_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.6797509923232983,
+        "farthest_actual_vertex_depth_m": 0.895000298414493,
+        "projected_uv_min": [
+          0.10242370645905052,
+          0.42815153893594565
+        ],
+        "projected_uv_max": [
+          0.8979668574331947,
+          0.6086113955212968
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "One observedface seatmember - conditionalsection andside",
+            "vertices": 48144,
+            "depth_m": [
+              0.6797509923232983,
+              0.895000298414493
+            ],
+            "projected_uv_min": [
+              0.10242370645905052,
+              0.42815153893594565
+            ],
+            "projected_uv_max": [
+              0.8979668574331947,
+              0.6086113955212968
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "e3d7f10dbfc93b40b9a6d8777fb012af7cb7e98b1ea2e4403906b03161022b5b",
+      "checkpoint_file": "checkpoint-reverse.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "front-joining",
+      "camera_location_m": [
+        0.13,
+        -0.1,
+        0.1
+      ],
+      "camera_target_m": [
+        0.003,
+        0.015,
+        -0.009
+      ],
+      "ortho_scale_m": 0.12,
+      "allow_deliberate_macro_crop": true,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "SEAT_RAIL_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.18081073115634239,
+        "farthest_actual_vertex_depth_m": 0.5104530231958821,
+        "projected_uv_min": [
+          0.30307417816310567,
+          0.3540456595374504
+        ],
+        "projected_uv_max": [
+          4.878925001220498,
+          4.444287348135295
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "One observedface seatmember - conditionalsection andside",
+            "vertices": 48144,
+            "depth_m": [
+              0.18081073115634239,
+              0.5104530231958821
+            ],
+            "projected_uv_min": [
+              0.30307417816310567,
+              0.3540456595374504
+            ],
+            "projected_uv_max": [
+              4.878925001220498,
+              4.444287348135295
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "27f2d368a2a82f82fede13f9b12d9b6ee771186940e79d88f6dea750fddf1c79",
+      "checkpoint_file": "checkpoint-front-joining.json",
+      "reused_verified_checkpoint": false
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "SEATRAIL-METRIC",
+      "description": "Exact section, metrics, physicalside and joiningplanes unknown",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Identifiedframe multi-view/calipersection and joiningpose"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "pending",
+      "revision": "frame-seat-rail-observed-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "frame-seat-rail-observed-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "frame-seat-rail-observed-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "frame-seat-rail-observed-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/frame/seat-rail-observed/frame-seat-rail-observed-v1.blend",
+          "kind": "editable_source",
+          "revision": "frame-seat-rail-observed-v1",
+          "sha256": "d56874f3b68866f4ffe5f1f948de832352087e8ee83096ac43f133361b01b52f"
+        },
+        {
+          "path": "../../reviews/frame-seat-rail-observed-v1/quarter.png",
+          "kind": "isolated_comparison",
+          "revision": "frame-seat-rail-observed-v1",
+          "sha256": "146404347298ef496b88186926bfa7f2c29b61dee0ba539136c41723127828e1"
+        }
+      ],
+      "reason": "Un seul longeron sous selle observé apparentéPF111000, réel corps creux aux deux bouts ouverts. Courbe3D, cotes, section, profondeur et côté estimés ; face opposée, traverses, pattes et soudures absentes.",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "frame-seat-rail-observed-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/frame-seat-rail-observed-v1/front-joining.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "frame-seat-rail-observed-v1",
+          "sha256": "27f2d368a2a82f82fede13f9b12d9b6ee771186940e79d88f6dea750fddf1c79"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "frame-seat-rail-observed-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/frame-seat-rail-observed-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "frame-seat-rail-observed-v1",
+          "sha256": "ead22cdb2a16dbb853ada115905aed603aa2327b322e09ea49f80c9b9c7ab6ea"
+        }
+      ],
+      "reason": "Pièce dans son repère isolé, sans pose montée certifiée. Aucun cadre complet, accord de variante ou réception de raccords.",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "frame-seat-rail-observed-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/frame-seat-rail-observed-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "frame-seat-rail-observed-v1",
+          "sha256": "c23cc3672e4e97c31a6e3545d4858744f6a0cbcd02a9616d0d1bc6642d0e777d"
+        },
+        {
+          "path": "../../reviews/frame-seat-rail-observed-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "frame-seat-rail-observed-v1",
+          "sha256": "38e90cb173b166ab34f6251ec4bbcd9c12c560e67b698e5ecd6d33fd102d7610"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "frame-seat-rail-observed-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "frame-seat-rail-observed-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "frame-seat-rail-observed-v1",
+  "export_revision": "frame-seat-rail-observed-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "production_group": 15,
+  "candidate_source": "../../../assets-src/moto-components/frame/seat-rail-observed/README.md",
+  "candidate_review": "../../reviews/frame-seat-rail-observed-v1/README.md"
+}

@@ -1,0 +1,347 @@
+{
+  "schema": "wewa.documentary-reference-search.v1",
+  "id": "rear-wheel-16-reference-search-v1",
+  "created_utc": "2026-10-21T03:56:24.746718+00:00",
+  "scope": "Première unité arrière lot16 : identité pneu3.00-17, sculpture observable, jante/moyeu ; recherche bornée pour A seulement.",
+  "outcome": "Marque/modèle de pneu arrière non identifiés sur D01 et photos RDC. Type de roue confirmé : alliage argent à cinq branches et pneu tubeless. Référence OEM exacte, profil de jante, moyeu et dimensions gonflées non résolus. Aucun modèle de pneu commercial choisi par défaut.",
+  "inputs": [
+    {
+      "path": "creative/research/chassis-running-18/report.json",
+      "sha256": "2f63e71e9a37db50bab58ffdee9516253115a9b0d11bb4ef21f80102fa4ff074"
+    },
+    {
+      "path": "creative/research/chassis-remaining-18.json",
+      "sha256": "5ccd298f86b10815ac5eae65b3fca5c47ab7492ecc251fd07ed573ec7f206f60"
+    },
+    {
+      "path": "creative/library/motorcycle-reference-preflight.json",
+      "sha256": "55284078410c07cc28cf7d222ce2e0bb7a20d642346309b9d665cc1856e66c18"
+    },
+    {
+      "path": "creative/workflow/RESEARCH.md",
+      "sha256": "6cfa94919f751ba885129bb9b685ff7163335743565d26dd91b1522496476978"
+    }
+  ],
+  "primary_source": {
+    "id": "D01",
+    "url": "https://www.bajajauto.com/fr-cd/bikes/boxer-125hd",
+    "private_path": "/workspace/wewa-assets/references/dimensions-verified/bajaj-boxer125hd-rdc.html",
+    "sha256": "49e6b4b03405f49d22f7c910eb5548bd21a92bc0ae73e2d175ba6f196b068d63",
+    "bytes": 107465,
+    "in_public_repo": false,
+    "manufacturer_text_reused": "Spécifications pneu arrière3.00-17 ; sécurité jantes alliage17 pouces/pneus tubeless. Pas de fournisseur ou moule nommé.",
+    "model_year_or_VIN": null
+  },
+  "identity": {
+    "tyre_brand": null,
+    "tyre_model": null,
+    "sidewall_legend_confidently_decoded": false,
+    "tyre_mould_or_pattern_name": null,
+    "rim_manufacturer": null,
+    "exact_current_RDC_rim_part_number": null,
+    "hub_exact_current_RDC_part_number": null,
+    "MRF_or_Eurogrip_selected": false,
+    "reason": "Aucun marquage lisible et aucune attribution primaire exact marché ; la ressemblance de sculpture ne suffit pas."
+  },
+  "measurement_matrix": [
+    {
+      "feature": "désignation pneu arrière",
+      "value": "3.00-17",
+      "source": "D01",
+      "status": "manufacturer_current_RDC_nominal",
+      "does_not_define": [
+        "diamètre extérieur gonflé",
+        "largeur réelle",
+        "profil de section",
+        "rayon chargé",
+        "sculpture",
+        "indice charge/vitesse"
+      ]
+    },
+    {
+      "feature": "diamètre nominal de portée de talon de la désignation17in",
+      "value_mm": 431.8,
+      "derivation": "17×25.4 mm/in",
+      "status": "nominal_size_conversion_not_physical_measurement",
+      "does_not_define": [
+        "diamètre extérieur de lèvre de jante",
+        "ouverture visible du pneu",
+        "diamètre extérieur pneu",
+        "rayon au sol"
+      ]
+    },
+    {
+      "feature": "largeur réelle/section pneu et diamètre gonflé",
+      "value": null,
+      "status": "unknown",
+      "note": "3.00in est une désignation nominale, pas un relevé de largeur gonflée. Ne pas imposer76.2mm comme largeur mesurée ni déduire un diamètre extérieur par ratio100%."
+    },
+    {
+      "feature": "largeur/section jante arrière courante",
+      "value": null,
+      "status": "unknown",
+      "note": "JZ1312131.60×17 D04 apparentée ; pas adopté sans preuve courante. D15 spoke2.15/100-90-17 non transférés."
+    },
+    {
+      "feature": "diamètre frein tambour",
+      "value": null,
+      "status": "unknown_for_exact_current_RDC",
+      "note": "130mm D02 apparenté est diamètre de friction, pas diamètre externe de moyeu ni empreinte de couplage."
+    }
+  ],
+  "photos_actually_opened": [
+    {
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/rotation-00.png",
+      "sha256": "82be9285506c65dd8ff3fdba000fe963587548e306691844ed774f685870ea40",
+      "bytes": 54230,
+      "in_public_repo": false,
+      "id": "D01-R00",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/00.png",
+      "resolution_px": [
+        1000,
+        700
+      ],
+      "actual_format": "WEBP",
+      "actually_opened_this_pass": true,
+      "view": "profil droit",
+      "visible": [
+        "Roue arrière alliage argent à cinq branches ; jante périphérique distincte du pneu, branches larges rejoignant le centre.",
+        "Portions du flanc et des épaules visibles ; sculptures présentes, pas une enveloppe lisse."
+      ],
+      "limits": [
+        "Échappement masque axe/moyeu et partie des branches ; marquages de pneu non lus avec certitude."
+      ],
+      "current_RDC_marketing_reference": true,
+      "camera_calibrated": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/rotation-04.png",
+      "sha256": "b086dedb4a2bcbc2644aab9578a3d1efa7445e163459b444b3687047bf2e8e02",
+      "bytes": 54668,
+      "in_public_repo": false,
+      "id": "D01-R04",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/04.png",
+      "resolution_px": [
+        1000,
+        700
+      ],
+      "actual_format": "WEBP",
+      "actually_opened_this_pass": true,
+      "view": "profil gauche",
+      "visible": [
+        "Cinq branches arrière argent, roue sous garde-boue ; sections des branches et bord extérieur partiellement lisibles."
+      ],
+      "limits": [
+        "Carter de chaîne masque axe, couplage et branches ; pas section de jante/moyeu identifiable ni code moulé lisible."
+      ],
+      "current_RDC_marketing_reference": true,
+      "camera_calibrated": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/rotation-05.png",
+      "sha256": "51bb532a693433ba382aa6a25048010031eab1749bef88e341bb67c9c4af0229",
+      "bytes": 44410,
+      "in_public_repo": false,
+      "id": "D01-R05",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/05.png",
+      "resolution_px": [
+        1000,
+        700
+      ],
+      "actual_format": "WEBP",
+      "actually_opened_this_pass": true,
+      "view": "trois-quarts arrière gauche",
+      "visible": [
+        "Bande et épaule arrière plus visibles : succession de pavés arrondis/anguleux séparés par sillons sinueux et obliques ; flanc arrondi.",
+        "Vue oblique de la jante arrière cinq branches."
+      ],
+      "limits": [
+        "Aucun nom de marque/modèle lu ; jonctions exactes des sillons et répétition360° insuffisamment résolues."
+      ],
+      "current_RDC_marketing_reference": true,
+      "camera_calibrated": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/rotation-06.png",
+      "sha256": "60a01cd517728f6d3d4f61a3975fe610488f7b489098c20cae381b9768093362",
+      "bytes": 123126,
+      "in_public_repo": false,
+      "id": "D01-R06",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/06.png",
+      "resolution_px": [
+        1000,
+        700
+      ],
+      "actual_format": "WEBP",
+      "actually_opened_this_pass": true,
+      "view": "arrière",
+      "visible": [
+        "Surface roulante arrière presque axiale visible sous le garde-boue : motif sinueux/oblique et pavés décalés, couronne arrondie.",
+        "Pneu sous l’axe longitudinal de la moto, bande supérieure occultée par garde-boue."
+      ],
+      "limits": [
+        "Bande très étroite en pixels ; profondeur, largeur de sillons, nombre de motifs et rayon de couronne ne sont pas mesurables.",
+        "Cette vue ne documente pas les talons ni les profils de jante."
+      ],
+      "current_RDC_marketing_reference": true,
+      "camera_calibrated": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/rotation-07.png",
+      "sha256": "cec77fe44f3203a390ce6cf313f5958a7746a25a6df0ae28b25080eb838a9f76",
+      "bytes": 42934,
+      "in_public_repo": false,
+      "id": "D01-R07",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/07.png",
+      "resolution_px": [
+        1000,
+        700
+      ],
+      "actual_format": "WEBP",
+      "actually_opened_this_pass": true,
+      "view": "trois-quarts arrière droit",
+      "visible": [
+        "Épaule et bande arrière visibles sous un autre angle, mêmes grandes familles de sillons sinueux/obliques.",
+        "Cinq branches de jante argent, moyeu partiellement couvert par échappement."
+      ],
+      "limits": [
+        "Pas de marque/modèle déchiffré ; arrière du flanc, détails moulés et couplage cachés."
+      ],
+      "current_RDC_marketing_reference": true,
+      "camera_calibrated": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/dimensions-verified/alloy-wheels.webp",
+      "sha256": "9bb3edac033043803f39a0b8111e11bf19f44ef11c50f6b14f4f6caac2ad526b",
+      "bytes": 69724,
+      "in_public_repo": false,
+      "id": "D01-alloy-wheels",
+      "url": "https://cdn.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/features/boxer/125-hd/alloy-wheels.webp",
+      "resolution_px": [
+        1000,
+        600
+      ],
+      "actually_opened_this_pass": true,
+      "view": "Gros plan roue AVANT officielle",
+      "visible": [
+        "Cinq branches argent et pneu AVANT."
+      ],
+      "limits": [
+        "Ne documente PAS la sculpture arrière ni son moyeu, sa largeur de jante ou ses talons. Ne pas copier l’avant vers l’arrière."
+      ]
+    }
+  ],
+  "catalogue_identity_guards": [
+    {
+      "source": "D04 PDF43 planche31 item2",
+      "reference": "DM151323 standard5spoke / JZ131213 UG5 WheelRear1.60×17Drum",
+      "status": "related_not_current_RDC_certified"
+    },
+    {
+      "source": "D04 PDF43 planche31 item4",
+      "reference": "DM151027 TyreWithTubeRear",
+      "status": "older_tube_group_conflicts_with_current_tubeless_target_not_adopted"
+    },
+    {
+      "source": "D15 PDF40 planche29 item4",
+      "reference": "DH1510576spoke / PF1312225spoke fromMay2012",
+      "status": "BM150_variant_not_current_RDC_certified"
+    },
+    {
+      "source": "D15 PDF40 items5/6/9",
+      "reference": "PF131211 tyre / DS151029 tube / PF131210 tyreWithTube",
+      "status": "BM150_tube_group_not_current_tubeless_reference"
+    },
+    {
+      "source": "D05/D06 déjà analysés dansRESEARCH.md",
+      "reference": "MRF dimensions/catalogue et ZapperFS avant apparenté",
+      "status": "no_fitment_proof_no_rear_tread_or_dimension_transfer"
+    }
+  ],
+  "catalogue_views_opened": [
+    {
+      "private_path": "/workspace/wewa-assets/references/chassis-running-18/D04-sheet43.png",
+      "sha256": "00bf1aa22e085afb32e18604cc10c709037c47a32b555a93e104402888bac7e7",
+      "bytes": 230409,
+      "in_public_repo": false,
+      "actually_opened_this_pass": true,
+      "not_to_scale": true
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/chassis-running-18/D15-sheet40.png",
+      "sha256": "f4b52caafdc267e6e8c206faf19db3d25a0de578552f3d24032e081cf8354d48",
+      "bytes": 218679,
+      "in_public_repo": false,
+      "actually_opened_this_pass": true,
+      "not_to_scale": true
+    }
+  ],
+  "preflight_limits": [
+    "Originaux marketing1000×700, rotations extension.png mais format réelWEBP selon préflight/Pillow.",
+    "Pas de pose/focale caméra EXIF ni caméra calibrée ; projection en pixels ou empattement1285 ne certifie pas la section transversale.",
+    "Le détailalloy-wheels concerne l’avant. Les vues catalogue ne sont pas des photos de sculpture réelle."
+  ],
+  "form_guidance": [
+    "Conserver une bande arrière avec pavés/sillons sinueux et obliques effectivement visibles, couronne arrondie ; ne pas déclarer un dessin commercial exact sans son identité.",
+    "Répétition360°, continuité du sillon central, pas, profondeur et largeur des rainures non certifiés : ne pas compléter sous étiquette OEM.",
+    "Jante arrière et moyeu constituent une unité propre : cinq branches visibles, mais profil caché, déports, logement de couplage, roulements et chambre de tambour ne sont pas déduits de la jante avant."
+  ],
+  "next_locks": [
+    "Obtenir un flanc arrière net portant marque, modèle,3.00-17,TL et indices ; vérifier que c’est la monte de la cible/même exemplaire.",
+    "Photographier la bande dans l’axe, les deux épaules et un tour complet du même pneu pour résoudre le motif et son sens.",
+    "Relever le marquage de largeur/profil et numéro de fonderie de la jante, les deux faces du moyeu et le couplage ; mesurer la roue démontée si géométrie cachée requise.",
+    "Pour dimensions gonflées/rayon chargé, préciser jante, pression et charge. En attendant, les dimensions de fabrication resteraient estimées et non reçues."
+  ],
+  "searches": [
+    {
+      "query": "\"Boxer 125 HD\" \"tyre\" \"brand\"",
+      "url": "https://html.duckduckgo.com/html/?q=%22Boxer%20125%20HD%22%20%22tyre%22%20%22brand%22",
+      "private_path": "/workspace/wewa-assets/references/rear-wheel-16/search-f734f980631d.html",
+      "sha256": "9d96d3cec490d6f576c6c2779e51937069d37e2ba8e174967a212e491ff62049",
+      "challenge": true,
+      "results": []
+    },
+    {
+      "query": "\"Boxer 125 HD\" \"rear tyre\"",
+      "url": "https://html.duckduckgo.com/html/?q=%22Boxer%20125%20HD%22%20%22rear%20tyre%22",
+      "private_path": "/workspace/wewa-assets/references/rear-wheel-16/search-d7e33c4c4cee.html",
+      "sha256": "1070c8fce276b06ef00517d86afed01a245ec5754cdbafb309bc252d7826ff1c",
+      "challenge": true,
+      "results": []
+    },
+    {
+      "query": "\"JZ131213\" wheel",
+      "url": "https://html.duckduckgo.com/html/?q=%22JZ131213%22%20wheel",
+      "private_path": "/workspace/wewa-assets/references/rear-wheel-16/search-cfe22a564f82.html",
+      "sha256": "d36c9313cd91c0d587698db6fd0d7931f9c7fddb0f80da1db3d97f161d13f90c",
+      "challenge": true,
+      "results": []
+    }
+  ],
+  "direct_checks": [
+    {
+      "query": "JZ131213",
+      "url": "https://bajajmatriz.com/wp-json/wp/v2/search?search=JZ131213&per_page=3",
+      "private_path": "/workspace/wewa-assets/references/rear-wheel-16/JZ131213-search.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "results": []
+    },
+    {
+      "query": "PF131222",
+      "url": "https://bajajmatriz.com/wp-json/wp/v2/search?search=PF131222&per_page=3",
+      "private_path": "/workspace/wewa-assets/references/rear-wheel-16/PF131222-search.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "results": []
+    }
+  ],
+  "bounded_search_result": "Trois requêtes en challenge sans résultats exploitables ; API Matriz JZ131213 etPF131222 retourne[] ; aucun gros plan supplémentaire attribuable téléchargé.",
+  "rights": "Six photos officielles existantes consultées privées, aucun pixel ajouté au repo ou réutilisé comme texture. Aucun achat/contact vendeur.",
+  "limits": {
+    "new_photo_downloads": 0,
+    "new_exact_dimensions": false,
+    "geometry_created": false,
+    "render_created": false,
+    "catalogue_or_shared_sources_modified": false,
+    "art_accepted": false
+  }
+}

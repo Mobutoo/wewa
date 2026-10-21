@@ -1,6 +1,6 @@
 # Viva Wewa — revue des composants moto
 
-**39 composants uniques enregistrés · 39 vues Blender prouvées · aucune réception artistique.**
+**44 composants uniques enregistrés · 44 vues Blender prouvées · aucune réception artistique.**
 
 Une seule vue originale par composant, à la révision exacte de sa fiche. Les anciennes révisions et les sources seulement cataloguées ou gelées sans enregistrement central ne sont pas ajoutées. Ces rendus montrent des candidats isolés, pas le jeu ni une moto terminée.
 
@@ -25,12 +25,12 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 | [09 · Contacteur et clé](#groupe-9) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [10 · Câbles et faisceau visibles](#groupe-10) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [11 · Visière et entourage des compteurs](#groupe-11) | 1 | Candidats partiels en revue ; groupe non terminé |
-| [12 · Phare et clignotants avant](#groupe-12) | 1 | Candidats partiels en revue ; groupe non terminé |
+| [12 · Phare et clignotants avant](#groupe-12) | 2 | Candidats partiels en revue ; groupe non terminé |
 | [13 · Fourche et direction](#groupe-13) | 6 | Candidats partiels en revue ; groupe non terminé |
 | [14 · Ensemble avant et compatibilité des candidats existants](#groupe-14) | Voir les préexistants ; aucun nouveau composant compté | Candidats antérieurs existants à recontrôler ; compatibilité restante |
-| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 5 | Candidats partiels en revue ; groupe non terminé |
+| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 6 | Candidats partiels en revue ; groupe non terminé |
 | [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 0 | À fabriquer ; aucune pièce enregistrée |
-| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 6 | Candidats partiels en revue ; groupe non terminé |
+| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 9 | Candidats partiels en revue ; groupe non terminé |
 | [18 · Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière](#groupe-18) | 0 | À fabriquer ; aucune pièce enregistrée |
 
 <a id="groupe-1"></a>
@@ -409,24 +409,24 @@ Périmètre prévu : barillet/contacteur extérieur; clé générique non foncti
 
 <a id="moto-cockpit-cables-001"></a>
 
-### Câbles visibles — trois tronçons partiels
+### Cockpit — faisceau partiel v2, boucle du contact corrigée
 
-`MOTO-COCKPIT-CABLES-001` · révision `cockpit-cables-v1` · **candidat non reçu**
+`MOTO-COCKPIT-CABLES-001` · révision `cockpit-cables-v2` · **candidat non reçu**
 
-![Câbles visibles — trois tronçons partiels — cockpit-cables-v1](cockpit-cables-v1/descending-visible-sections.png)
+![Cockpit — faisceau partiel v2, boucle du contact corrigée — cockpit-cables-v2](cockpit-cables-v2/ignition-pigtail-free-end.png)
 
-[Image entière](cockpit-cables-v1/descending-visible-sections.png) · [Preuve du rendu](cockpit-cables-v1/render-report.json) · vue `descending-visible-sections`
+[Image entière](cockpit-cables-v2/ignition-pigtail-free-end.png) · [Preuve du rendu](cockpit-cables-v2/render-report.json) · vue `ignition-pigtail-free-end`
 
-Source SHA-256 : `f24672df90a68f45b4033a94c5ea03f34dd67b834e10454d2953287a55456f15`  
-PNG SHA-256 : `64d3fd8ac318c274df12d217ddd91f799efe27e7d6d4c9f61e6c958f0185a5a6`
+Source SHA-256 : `1e836f483c6d682a47dc072377971d35aa927f50a53a51e9ab0cef37e0d18279`  
+PNG SHA-256 : `b3593fff26e49aeae75c7e24eab3c491806a7803c8aaa004232ec5c211dcc0fe`
 
-[Blender](../../assets-src/moto-components/cockpit-cables/cockpit-cables-v1.blend) · [GLB](../../assets-src/moto-components/cockpit-cables/cockpit-cables-inspection.glb) · [README source](../../assets-src/moto-components/cockpit-cables/README.md) · [Revue et limites](cockpit-cables-v1/README.md) · [Fiche](../workflow/records/moto-cockpit-cables-001.json)
+[Blender](../../assets-src/moto-components/cockpit-cables/cockpit-cables-v2.blend) · [GLB](../../assets-src/moto-components/cockpit-cables/cockpit-cables-v2-inspection.glb) · [README source](../../assets-src/moto-components/cockpit-cables/README_v2.md) · [Revue et limites](cockpit-cables-v2/README.md) · [Fiche](../workflow/records/moto-cockpit-cables-001.json)
 
 
 <details>
 <summary>Autres vues Blender prouvées de cette révision</summary>
 
-- [ignition-pigtail-free-end](cockpit-cables-v1/ignition-pigtail-free-end.png) · [preuve](cockpit-cables-v1/render-report.json)
+- [ignition-interface-current](cockpit-cables-v2/ignition-interface-current.png) · [preuve](cockpit-cables-v2/render-report.json)
 
 </details>
 
@@ -491,6 +491,30 @@ PNG SHA-256 : `1887e12779ae9b084f6e2c976a1b20be9809f5868f73f7b920795d9ffbf5e9f5`
 - [whole-quarter](headlamp-front-protector-v2/whole-quarter.png) · [preuve](headlamp-front-protector-v2/render-report.json)
 - [whole-back](headlamp-front-protector-v2/whole-back.png) · [preuve](headlamp-front-protector-v2/render-report.json)
 - [rod-band-junction](headlamp-front-protector-v2/rod-band-junction.png) · [preuve](headlamp-front-protector-v2/render-report.json)
+
+</details>
+
+
+<a id="moto-headlamp-housing-001"></a>
+
+### Phare — boîtier nu v2, normales des nervures corrigées
+
+`MOTO-HEADLAMP-HOUSING-001` · révision `headlamp-housing-v2` · **candidat non reçu**
+
+![Phare — boîtier nu v2, normales des nervures corrigées — headlamp-housing-v2](headlamp-housing-v2/whole-back.png)
+
+[Image entière](headlamp-housing-v2/whole-back.png) · [Preuve du rendu](headlamp-housing-v2/render-report.json) · vue `whole-back`
+
+Source SHA-256 : `28dc0546d85f95c13e7903d2c8232517b88d2fdbb1a5c108ec9708b2bd729bd3`  
+PNG SHA-256 : `4ec4ded59f3c1420c367dcbf9fd62f76bf5bb1bdfbcc7d137da4c9781fa78d36`
+
+[Blender](../../assets-src/moto-components/headlamp/housing/headlamp-housing-v2.blend) · [GLB](../../assets-src/moto-components/headlamp/housing/headlamp-housing-v2.glb) · [README source](../../assets-src/moto-components/headlamp/housing/README_v2.md) · [Revue et limites](headlamp-housing-v2/README.md) · [Fiche](../workflow/records/moto-headlamp-housing-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [lower-rounded-tip](headlamp-housing-v2/lower-rounded-tip.png) · [preuve](headlamp-housing-v2/render-report.json)
 
 </details>
 
@@ -574,32 +598,6 @@ PNG SHA-256 : `737c1f861c810194196e6a7682f77ec498cfffbd75a13f115e2e98497b6c0b2d`
 </details>
 
 
-<a id="moto-fork-bellows-001"></a>
-
-### Soufflet de fourche — déformation visuelle estimée
-
-`MOTO-FORK-BELLOWS-001` · révision `fork-bellows-v1` · **candidat non reçu**
-
-![Soufflet de fourche — déformation visuelle estimée — fork-bellows-v1](fork-bellows-v1/quarter.png)
-
-[Image entière](fork-bellows-v1/quarter.png) · [Preuve du rendu](fork-bellows-v1/render-report.json) · vue `quarter`
-
-Source SHA-256 : `fc97e6507c8a757698c39c794fdb38f4ecfc2eab7278d3b1f97a83c66bd7da2c`  
-PNG SHA-256 : `7dd5c6dded52ac3084ac8ed175dc9c634e477a4d4c9191d2834a6c5f5fa8b588`
-
-[Blender](../../assets-src/moto-components/front-fork/bellows/fork-bellows-v1.blend) · [GLB](../../assets-src/moto-components/front-fork/bellows/fork-bellows-inspection.glb) · [README source](../../assets-src/moto-components/front-fork/bellows/README.md) · [Revue et limites](fork-bellows-v1/README.md) · [Fiche](../workflow/records/moto-fork-bellows-001.json)
-
-
-<details>
-<summary>Autres vues Blender prouvées de cette révision</summary>
-
-- [lower-opening](fork-bellows-v1/lower-opening.png) · [preuve](fork-bellows-v1/render-report.json)
-- [compression-estimated](fork-bellows-v1/compression-estimated.png) · [preuve](fork-bellows-v1/render-report.json)
-- [extension-estimated](fork-bellows-v1/extension-estimated.png) · [preuve](fork-bellows-v1/render-report.json)
-
-</details>
-
-
 <a id="moto-fork-outer-left-001"></a>
 
 ### Fourreau de fourche gauche — talon continu
@@ -649,6 +647,32 @@ PNG SHA-256 : `88ab33fed08700338279233cfa2d5f6dc5d46ab3eaf8747c5602d2bf4adf28f1`
 - [inboard-quarter](fork-outer-right-v1/inboard-quarter.png) · [preuve](fork-outer-right-v1/render-report.json)
 - [outer-foot](fork-outer-right-v1/outer-foot.png) · [preuve](fork-outer-right-v1/render-report.json)
 - [top-opening](fork-outer-right-v1/top-opening.png) · [preuve](fork-outer-right-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-fork-bellows-001"></a>
+
+### Soufflet v2 — lèvre et gorge, animation de longueur estimée
+
+`MOTO-FORK-BELLOWS-001` · révision `fork-bellows-v2` · **candidat non reçu**
+
+![Soufflet v2 — lèvre et gorge, animation de longueur estimée — fork-bellows-v2](fork-bellows-v2/quarter.png)
+
+[Image entière](fork-bellows-v2/quarter.png) · [Preuve du rendu](fork-bellows-v2/render-report.json) · vue `quarter`
+
+Source SHA-256 : `4e7c2f823f0737a159b62528f9683d97ba3e285b8f685bc23f4ef40826bbc590`  
+PNG SHA-256 : `f5b0edd39ea46ac9aa9eb01c1369ad192f17d09b0e0bd0b276189701badfcfe6`
+
+[Blender](../../assets-src/moto-components/front-fork/bellows-v2/fork-bellows-v2.blend) · [GLB](../../assets-src/moto-components/front-fork/bellows-v2/fork-bellows-v2-inspection.glb) · [README source](../../assets-src/moto-components/front-fork/bellows-v2/README.md) · [Revue et limites](fork-bellows-v2/README.md) · [Fiche](../workflow/records/moto-fork-bellows-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [lower-opening](fork-bellows-v2/lower-opening.png) · [preuve](fork-bellows-v2/render-report.json)
+- [compression-estimated](fork-bellows-v2/compression-estimated.png) · [preuve](fork-bellows-v2/render-report.json)
+- [extension-estimated](fork-bellows-v2/extension-estimated.png) · [preuve](fork-bellows-v2/render-report.json)
 
 </details>
 
@@ -790,6 +814,31 @@ PNG SHA-256 : `3738f3ef12cd52de61dd1b63248c463458f26a87d7d1f8277dff994e7e6ed3b6`
 
 - [reverse](frame-lower-cradle-rail-v1/reverse.png) · [preuve](frame-lower-cradle-rail-v1/render-report.json)
 - [front-bend](frame-lower-cradle-rail-v1/front-bend.png) · [preuve](frame-lower-cradle-rail-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-frame-seat-rail-001"></a>
+
+### Cadre — un longeron observé sous selle
+
+`MOTO-FRAME-SEAT-RAIL-001` · révision `frame-seat-rail-observed-v1` · **candidat non reçu**
+
+![Cadre — un longeron observé sous selle — frame-seat-rail-observed-v1](frame-seat-rail-observed-v1/quarter.png)
+
+[Image entière](frame-seat-rail-observed-v1/quarter.png) · [Preuve du rendu](frame-seat-rail-observed-v1/render-report.json) · vue `quarter`
+
+Source SHA-256 : `d56874f3b68866f4ffe5f1f948de832352087e8ee83096ac43f133361b01b52f`  
+PNG SHA-256 : `146404347298ef496b88186926bfa7f2c29b61dee0ba539136c41723127828e1`
+
+[Blender](../../assets-src/moto-components/frame/seat-rail-observed/frame-seat-rail-observed-v1.blend) · [GLB](../../assets-src/moto-components/frame/seat-rail-observed/frame-seat-rail-observed-inspection.glb) · [README source](../../assets-src/moto-components/frame/seat-rail-observed/README.md) · [Revue et limites](frame-seat-rail-observed-v1/README.md) · [Fiche](../workflow/records/moto-frame-seat-rail-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [reverse](frame-seat-rail-observed-v1/reverse.png) · [preuve](frame-seat-rail-observed-v1/render-report.json)
+- [front-joining](frame-seat-rail-observed-v1/front-joining.png) · [preuve](frame-seat-rail-observed-v1/render-report.json)
 
 </details>
 
@@ -956,6 +1005,82 @@ PNG SHA-256 : `cd6b0343b05e99c629ed522e6e7a3ad9efb1d77705d3cec34ba4032dc94228e4`
 - [rear-left-quarter](engine-cylinder-v1/rear-left-quarter.png) · [preuve](engine-cylinder-v1/render-report.json)
 - [top-mating-passages](engine-cylinder-v1/top-mating-passages.png) · [preuve](engine-cylinder-v1/render-report.json)
 - [fin-edge-detail](engine-cylinder-v1/fin-edge-detail.png) · [preuve](engine-cylinder-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-engine-head-001"></a>
+
+### Culasse — corps extérieur UG5 conditionnel v2
+
+`MOTO-ENGINE-HEAD-001` · révision `engine-head-v2` · **candidat non reçu**
+
+![Culasse — corps extérieur UG5 conditionnel v2 — engine-head-v2](engine-head-v2/OHC-side-quarter.png)
+
+[Image entière](engine-head-v2/OHC-side-quarter.png) · [Preuve du rendu](engine-head-v2/render-report.json) · vue `OHC-side-quarter`
+
+Source SHA-256 : `ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f`  
+PNG SHA-256 : `0c0f4222fbafbd79564ce2a07c5095ecf6018cd14c8dedd2340a56f9dd7e839c`
+
+[Blender](../../assets-src/moto-components/engine-head/engine-head-v2.blend) · [GLB](../../assets-src/moto-components/engine-head/engine-head-v2-inspection.glb) · [README source](../../assets-src/moto-components/engine-head/README_v2.md) · [Revue et limites](engine-head-v2/README.md) · [Fiche](../workflow/records/moto-engine-head-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [opposite-plug-well](engine-head-v2/opposite-plug-well.png) · [preuve](engine-head-v2/render-report.json)
+- [top-fork-and-stud-columns](engine-head-v2/top-fork-and-stud-columns.png) · [preuve](engine-head-v2/render-report.json)
+- [lower-mating-passages](engine-head-v2/lower-mating-passages.png) · [preuve](engine-head-v2/render-report.json)
+
+</details>
+
+
+<a id="moto-engine-tappet-cap-001"></a>
+
+### Culasse — couvercle de visite, type unique en deux instances
+
+`MOTO-ENGINE-TAPPET-CAP-001` · révision `engine-tappet-cap-v1` · **candidat non reçu**
+
+![Culasse — couvercle de visite, type unique en deux instances — engine-tappet-cap-v1](engine-tappet-cap-v1/front-quarter.png)
+
+[Image entière](engine-tappet-cap-v1/front-quarter.png) · [Preuve du rendu](engine-tappet-cap-v1/render-report.json) · vue `front-quarter`
+
+Source SHA-256 : `357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9`  
+PNG SHA-256 : `12071a3d4ed30f96464b93ce98cf86526a881285c18aa141f3af58f4ee232d8c`
+
+[Blender](../../assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend) · [GLB](../../assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-inspection.glb) · [README source](../../assets-src/moto-components/engine-tappet-cap/README.md) · [Revue et limites](engine-tappet-cap-v1/README.md) · [Fiche](../workflow/records/moto-engine-tappet-cap-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [front-normal](engine-tappet-cap-v1/front-normal.png) · [preuve](engine-tappet-cap-v1/render-report.json)
+- [rear-cavity](engine-tappet-cap-v1/rear-cavity.png) · [preuve](engine-tappet-cap-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-engine-ohc-cover-001"></a>
+
+### Culasse — corps du couvercle OHC seul
+
+`MOTO-ENGINE-OHC-COVER-001` · révision `engine-ohc-cover-v1` · **candidat non reçu**
+
+![Culasse — corps du couvercle OHC seul — engine-ohc-cover-v1](engine-ohc-cover-v1/front-quarter.png)
+
+[Image entière](engine-ohc-cover-v1/front-quarter.png) · [Preuve du rendu](engine-ohc-cover-v1/render-report.json) · vue `front-quarter`
+
+Source SHA-256 : `92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45`  
+PNG SHA-256 : `6f5e4f0930f49ba09f7fb0c815a94f25490b5f2f534a4acdce8ed2633d7f6a8f`
+
+[Blender](../../assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend) · [GLB](../../assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-inspection.glb) · [README source](../../assets-src/moto-components/engine-ohc-cover/README.md) · [Revue et limites](engine-ohc-cover-v1/README.md) · [Fiche](../workflow/records/moto-engine-ohc-cover-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [front-normal](engine-ohc-cover-v1/front-normal.png) · [preuve](engine-ohc-cover-v1/render-report.json)
+- [rear-cavity](engine-ohc-cover-v1/rear-cavity.png) · [preuve](engine-ohc-cover-v1/render-report.json)
 
 </details>
 

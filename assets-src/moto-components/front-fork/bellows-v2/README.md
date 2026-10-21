@@ -1,0 +1,13 @@
+# Soufflet de fourche v2 — grande bouche révisée
+
+Révision distincte de la v1 intacte, même ID `MOTO-FORK-BELLOWS-001`. Les nouvelles photos apparentées PF121083 montrent une lèvre, une gorge/retour annulaire, un épaulement intérieur et des détails radiaux locaux. Leur fonction mécanique et le code du modèle RDC restent inconnus. Le chiffre vendeur50mm n’est pas adopté : la description parle d’un diamètre extérieur, ses traits semblent viser la bouche.
+
+La source originale construit une seule paroi fermée, avec entrée et sortie ouvertes pour le tube. Le profil de la manchette est différent entre les quatre ponts locaux conditionnels et la gorge entre ces ponts. Les sections des vrais triangles GLB sont tracées dans la revue ; les cinq états de longueur sont contrôlés. Le transport des tangentes de morph utilise le même correctif local gardé que la v1, sans modifier l’installation Blender ni les buffers exportés. Ce transport ne constitue pas un recalcul Mikk exact de tous les états intermédiaires.
+
+Toutes les cotes restent estimées : extérieur54mm [50–62], entrée46mm [42–52], chambre49mm [45–55], gorge≈3,65mm [2–6], quatre ponts±1. Les six plis et les longueurs110/125/140mm restent les estimations visuelles existantes ; ces longueurs ne sont pas des courses de suspension certifiées. La petite bouche31,6mm n’est pas une mesure OEM.
+
+L’entrée libre reste1mm plus petite radialement que le col48mm estimé du fourreau candidat, tandis que la chambre49mm laisserait0,5mm radial si elle était alignée. La pose axiale, le rôle de contact et l’étirement du caoutchouc ne sont pas établis. Aucun ajustement n’est imposé pour masquer cette réserve ; elle ne prouve pas une incompatibilité de la vraie moto. Le collier supérieur PF121054 reste une pièce séparée non fabriquée ici.
+
+Sources de famille : [Matriz PF121083](https://bajajmatriz.com/producto/cubre-polvo-de-barra-delantera-boxer-150-x-bajaj), [photo attribuée](https://bajajmatriz.com/wp-content/uploads/2025/12/PF121083.jpg), [MotoZilla](https://motozilla.com.ua/product/boxer-bmvmx-150cc-gofra-amortizatora-perednego-d3150-l160mm-pf121083-c-razborki-novyy-bajaj-358039/). Les URL et SHA des six photos effectivement ouvertes sont conservés dans la recherche. Aucun pixel documentaire n’est utilisé comme texture et aucun marquage illisible n’est inventé.
+
+Repère isolé : axe longitudinal+Z, origine au point bas de la lèvre inférieure. Collection `WEWA_FORK_BELLOWS_V2_ISOLATED`. Aucun placement sur la moto n’est certifié. Les scripts sont exécutés depuis la racine du dépôt avec Blender4.3.2, `--threads 1 --python-exit-code 1`. Les contrôles techniques restent distincts de la réception artistique et des performances sur iPhone.

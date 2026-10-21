@@ -1,0 +1,143 @@
+{
+  "asset": "fork-bellows-v2",
+  "revision": "fork-bellows-v2",
+  "input_hashes": {
+    "assets-src/moto-components/front-fork/bellows-v2/fork-bellows-v2.blend": "4e7c2f823f0737a159b62528f9683d97ba3e285b8f685bc23f4ef40826bbc590",
+    "assets-src/moto-components/front-fork/bellows-v2/fork-bellows-v2-inspection.glb": "0823e7d80fac05a7faf62929fa8cad61f6745eb72b5a36ccebe09abc2761f745",
+    "creative/reviews/fork-bellows-v2/source-geometry-check.json": "2aa15796087da570e3c85410af51c80a3badcaa975a4b44fb860e9ab8b0b6162",
+    "tools/motorcycle-lab/review-v3.js": "f8aa2646d50ddb3377e1c50085db3a6804b054a9675316bb195bd3f2b9b4f9b4",
+    "tools/check_fork_bellows_browser_morphs_v2.py": "ad853860c3be529a63fe4bcbb3f4dd57a74faa75eceded0766a7d42ecfe4afb9"
+  },
+  "source_sha256": "4e7c2f823f0737a159b62528f9683d97ba3e285b8f685bc23f4ef40826bbc590",
+  "export_sha256": "0823e7d80fac05a7faf62929fa8cad61f6745eb72b5a36ccebe09abc2761f745",
+  "tool_path": "tools/check_fork_bellows_browser_morphs_v2.py",
+  "tool_sha256": "ad853860c3be529a63fe4bcbb3f4dd57a74faa75eceded0766a7d42ecfe4afb9",
+  "inspector_path": "tools/motorcycle-lab/review-v3.js",
+  "inspector_sha256": "f8aa2646d50ddb3377e1c50085db3a6804b054a9675316bb195bd3f2b9b4f9b4",
+  "HTTP_export_bytes_verified": true,
+  "samples_per_state": 61,
+  "states": [
+    {
+      "state": "base",
+      "value_mm": 125,
+      "weights": [
+        0,
+        0
+      ],
+      "actual_bounds_glTF_m": {
+        "min": [
+          -0.027000000700354576,
+          0,
+          -0.027000000700354576
+        ],
+        "max": [
+          0.027000000700354576,
+          0.125,
+          0.027000000700354576
+        ]
+      },
+      "all_vertex_bounds_and_61_samples_max_difference_m": 0.0
+    },
+    {
+      "state": "half_compression",
+      "value_mm": 117.5,
+      "weights": [
+        0.5,
+        0
+      ],
+      "actual_bounds_glTF_m": {
+        "min": [
+          -0.027000000700354576,
+          0,
+          -0.027000000700354576
+        ],
+        "max": [
+          0.027000000700354576,
+          0.11749999970197678,
+          0.027000000700354576
+        ]
+      },
+      "all_vertex_bounds_and_61_samples_max_difference_m": 0.0
+    },
+    {
+      "state": "compression",
+      "value_mm": 110,
+      "weights": [
+        1,
+        0
+      ],
+      "actual_bounds_glTF_m": {
+        "min": [
+          -0.027000000700354576,
+          0,
+          -0.027000000700354576
+        ],
+        "max": [
+          0.027000000700354576,
+          0.10999999940395355,
+          0.027000000700354576
+        ]
+      },
+      "all_vertex_bounds_and_61_samples_max_difference_m": 0.0
+    },
+    {
+      "state": "half_extension",
+      "value_mm": 132.5,
+      "weights": [
+        0,
+        0.5
+      ],
+      "actual_bounds_glTF_m": {
+        "min": [
+          -0.027000000700354576,
+          0,
+          -0.027000000700354576
+        ],
+        "max": [
+          0.027000000700354576,
+          0.13250000029802322,
+          0.027000000700354576
+        ]
+      },
+      "all_vertex_bounds_and_61_samples_max_difference_m": 0.0
+    },
+    {
+      "state": "extension",
+      "value_mm": 140,
+      "weights": [
+        0,
+        1
+      ],
+      "actual_bounds_glTF_m": {
+        "min": [
+          -0.027000000700354576,
+          0,
+          -0.027000000700354576
+        ],
+        "max": [
+          0.027000000700354576,
+          0.14000000059604645,
+          0.027000000700354576
+        ]
+      },
+      "all_vertex_bounds_and_61_samples_max_difference_m": 0.0
+    }
+  ],
+  "decoded_sparse_accessors": [
+    {
+      "accessor": 5,
+      "count": 219764,
+      "sparse_count": 138767,
+      "implicit_zero_base": true
+    },
+    {
+      "accessor": 8,
+      "count": 219764,
+      "sparse_count": 138767,
+      "implicit_zero_base": true
+    }
+  ],
+  "scope": "Independent Python binary accessor decoder versus actual Babylon absolute target arrays and influences. Five states; all-vertex bounds also match source report. CPU target-array parity, not GPU feedback, mechanical travel, elastic fit, shader parity or physical iPhone qualification.",
+  "technical_passed": true,
+  "art_accepted": false
+}

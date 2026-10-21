@@ -1,0 +1,77 @@
+{
+  "component_id": "MOTO-COCKPIT-CABLES-001",
+  "revision_planned": "cockpit-cables-v2",
+  "pre_geometry_research_only": true,
+  "trigger": "Root requested correction of actual32triangle intersections current instrumentsv3 centralcover vs free ignition loop near endpoint. Existing complete lower sheaths remain untouched.",
+  "old_source_sha256": "f24672df90a68f45b4033a94c5ea03f34dd67b834e10454d2953287a55456f15",
+  "audit_path": "creative/research/cockpit-fit-preparation-v1/pigtail-crossing-localization.json",
+  "audit_sha256": "13b6a184fc39a16679da361f16dd3308a561b5524b5864154d1519c7202e8d30",
+  "observed_problem_world_mm": {
+    "x": [
+      6.8,
+      7.86
+    ],
+    "y": [
+      -109.94,
+      -108.54
+    ],
+    "z": [
+      26.47,
+      28.71
+    ]
+  },
+  "photos_actually_opened_before_geometry": [
+    {
+      "private_path": "/workspace/wewa-assets/references/forward-cockpit-18/ignition-PF232605-10986.jpg",
+      "sha256": "0f1e6c3b05de7020943c21f04a68c7430e5be0de45b7148111d12ae86a81d8ef"
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/forward-cockpit-18/ignition-PF232605-10988.jpg",
+      "sha256": "f828ed91d3761984ccd8d623b2b49573e65043c7e41466e747dc26a4a0f6ca1a"
+    }
+  ],
+  "reference_limit": "RelatedPF232605 isolated loop, NOT an exact installedRDC routing measurement. Photographed short flexible loop supports bounded slack estimate only.",
+  "permitted_changes": [
+    "Last2controlpoints in freeendregion only, retain first4controls/initialmount/exit.",
+    "Two lower descending unassigned sheaths have bitidentical buffers and matrices.",
+    "All instrument/visor/contact sources and matrices unchanged."
+  ],
+  "candidate_to_test": {
+    "free_end_world_delta_m": [
+      0,
+      0,
+      -0.008
+    ],
+    "bounded_delta_range_m": [
+      0.006,
+      0.01
+    ],
+    "method": "Transform world displacement into unchanged ignition datum; collision/mincurvature proof before adopting. No factorydimension claim.",
+    "penultimate_world_delta_m": [
+      0,
+      0,
+      -0.004
+    ],
+    "curvature_method": "A small numericalplanning study showed endpoint-only worsenedminradius. Distributed4/8mm preservesbaseline7.723mmestimated min, not manufacturerbend qualification."
+  },
+  "required_checks": [
+    "Closedpositive3volumes and actualGLB finite/zeroarea0.",
+    "Old vs new lower two actualPOSITION/NORMAL/index/matrices invariance.",
+    "Loop vs current instrumentsv3 cover/allphysicalobjects, visor, ignitionbody, other2sheaths, plus selfcontact/curvature.",
+    "Current sourceSHA asserted and none mutated.",
+    "Source/GLB actualframe projection and useful isolated/assembly visual read."
+  ],
+  "still_unmade": [
+    "Ignitionconnector body and pinout",
+    "Uppercommandcables and switches harness",
+    "Leverpinchclamp hardware",
+    "Visiblekeyring"
+  ],
+  "still_unknown": [
+    "ExactRDC routing/slack/terminalgeometry",
+    "Full steeringmotion/collision",
+    "Hiddenframepath",
+    "OEMcompatibility/physicaliPhoneperformance"
+  ],
+  "art_accepted": false
+}

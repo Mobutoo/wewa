@@ -1,0 +1,923 @@
+{
+  "schema": 1,
+  "revision": "motorcycle-source-dependencies-publication08-v1",
+  "snapshot_utc": "2026-10-21T04:06:09.561941+00:00",
+  "scope": "Only four frozen recipes housingv2, engine-headv2, engine-tappet-capv1, cockpit-cablesv2. Static read/import/call dependency audit and current file SHA/Git membership. No recipe/Blender invocation or source/manifests/index/records changes. Instrumentsv4 and bellowsv2 ignored.",
+  "manifest_summaries": [
+    {
+      "path": "creative/reviews/headlamp-housing-v2/source-freeze-manifest.json",
+      "sha256": "65b67fb73027075bdd2c376a1d740f02ca0b707df3344cf39decd4c332d0d68b",
+      "files_count": 20
+    },
+    {
+      "path": "creative/reviews/headlamp-housing-study-v5/study-freeze-manifest.json",
+      "sha256": "6cfd46d2315d20f413a38cc1e19d729f7dfedf5bf41847bff8d3fb9c0ad2d0e2",
+      "files_count": 16
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/preflight-manifest-v2.json",
+      "sha256": "1b8d965c99b06342a94fe02e7c6b4338a3c89f55338b65980693ce066eb0169e",
+      "files_count": 32
+    },
+    {
+      "path": "creative/reviews/engine-head-v2/review-manifest.json",
+      "sha256": "a2e2782caedebcba641d855ed63ae7cefbcb535aecf9d750c29244417787090b",
+      "files_count": 46
+    },
+    {
+      "path": "assets-src/moto-components/engine-tappet-cap/preflight-manifest.json",
+      "sha256": "c38b8d6cba63d7d3caa5b9308e26087f08e63ef7bed4f2fae0ada0bd0c10dbb7",
+      "files_count": 26
+    },
+    {
+      "path": "creative/reviews/engine-tappet-cap-v1/review-manifest.json",
+      "sha256": "7358957845180b70e0bac545032e0af0f0318383b043b7f082004f948064c7b5",
+      "files_count": 37
+    },
+    {
+      "path": "assets-src/moto-components/cockpit-cables/preflight-manifest-v2.json",
+      "sha256": "6df2cbf291681f09e739dfc308e2ef179980cb9b751cc511a340fb590dfbe3fb",
+      "files_count": 30
+    },
+    {
+      "path": "assets-src/moto-components/cockpit-cables/preflight-final-supplement-v2.json",
+      "sha256": "7b7540536a99dbd518693a88d6944486888e981524c8717913ad1230bfd380fb",
+      "files_count": 34
+    },
+    {
+      "path": "creative/reviews/cockpit-cables-v2/review-manifest.json",
+      "sha256": "34c54e4dcf7d30e36ffffac5e5965d4a2e391dc4c0b9767f33583f0865ee35c3",
+      "files_count": 42
+    }
+  ],
+  "recipe_summaries": [
+    {
+      "recipe": "housing",
+      "stages": {
+        "material_from_gray5": [
+          "assets-src/moto-components/headlamp/housing/build_material_v2.py",
+          "assets-src/moto-components/headlamp/housing/headlamp-housing-study-v5.blend",
+          "creative/reviews/headlamp-housing-study-v5/source-geometry-check.json",
+          "creative/reviews/headlamp-housing-study-v5/preview-review.json",
+          "creative/research/headlamp/housing-material-plan-v1.json"
+        ],
+        "gray5_from_editable_core2": [
+          "assets-src/moto-components/headlamp/housing/add_rear_structures_study_v5.py",
+          "assets-src/moto-components/headlamp/housing/housing_geometry_v3.py",
+          "assets-src/moto-components/headlamp/housing/housing_csg_worker_v2.py",
+          "assets-src/moto-components/headlamp/housing/headlamp-housing-core-study-v2.blend",
+          "creative/reviews/headlamp-housing-core-study-v2/source-geometry-check.json",
+          "creative/research/headlamp/housing-rear-structure-plan-v1.json",
+          "creative/research/headlamp/housing-lower-contour-plan-v4.json"
+        ],
+        "origin_core2_recipe": [
+          "assets-src/moto-components/headlamp/housing/build_core_study_v2.py",
+          "creative/research/headlamp/housing-shape-plan-v1.json",
+          "creative/research/headlamp/housing-reliefs-plan-v2.json",
+          "assets-src/moto-components/headlamp/housing/housing_csg_worker_v2.py"
+        ]
+      },
+      "all_required_paths": [
+        "assets-src/moto-components/headlamp/housing/add_rear_structures_study_v5.py",
+        "assets-src/moto-components/headlamp/housing/build_core_study_v2.py",
+        "assets-src/moto-components/headlamp/housing/build_material_v2.py",
+        "assets-src/moto-components/headlamp/housing/headlamp-housing-core-study-v2.blend",
+        "assets-src/moto-components/headlamp/housing/headlamp-housing-study-v5.blend",
+        "assets-src/moto-components/headlamp/housing/housing_csg_worker_v2.py",
+        "assets-src/moto-components/headlamp/housing/housing_geometry_v3.py",
+        "creative/research/headlamp/housing-lower-contour-plan-v4.json",
+        "creative/research/headlamp/housing-material-plan-v1.json",
+        "creative/research/headlamp/housing-rear-structure-plan-v1.json",
+        "creative/research/headlamp/housing-reliefs-plan-v2.json",
+        "creative/research/headlamp/housing-shape-plan-v1.json",
+        "creative/reviews/headlamp-housing-core-study-v2/source-geometry-check.json",
+        "creative/reviews/headlamp-housing-study-v5/preview-review.json",
+        "creative/reviews/headlamp-housing-study-v5/source-geometry-check.json"
+      ],
+      "required_files_absent_from_repo": [],
+      "required_files_not_in_git_index": [
+        "assets-src/moto-components/headlamp/housing/add_rear_structures_study_v5.py",
+        "assets-src/moto-components/headlamp/housing/build_core_study_v2.py",
+        "assets-src/moto-components/headlamp/housing/build_material_v2.py",
+        "assets-src/moto-components/headlamp/housing/headlamp-housing-core-study-v2.blend",
+        "assets-src/moto-components/headlamp/housing/headlamp-housing-study-v5.blend",
+        "assets-src/moto-components/headlamp/housing/housing_csg_worker_v2.py",
+        "assets-src/moto-components/headlamp/housing/housing_geometry_v3.py",
+        "creative/research/headlamp/housing-lower-contour-plan-v4.json",
+        "creative/research/headlamp/housing-material-plan-v1.json",
+        "creative/reviews/headlamp-housing-core-study-v2/source-geometry-check.json",
+        "creative/reviews/headlamp-housing-study-v5/preview-review.json",
+        "creative/reviews/headlamp-housing-study-v5/source-geometry-check.json"
+      ],
+      "required_files_missing_from_selected_frozen_manifest_union": [
+        "assets-src/moto-components/headlamp/housing/build_core_study_v2.py",
+        "creative/research/headlamp/housing-reliefs-plan-v2.json",
+        "creative/research/headlamp/housing-shape-plan-v1.json"
+      ],
+      "required_files_manifest_hash_mismatches": []
+    },
+    {
+      "recipe": "head",
+      "stages": {
+        "generate_from_numeric_parameters_and_barrel": [
+          "assets-src/moto-components/engine-head/build_v2.py",
+          "assets-src/moto-components/engine-head/parameters-v2.json",
+          "assets-src/moto-components/throttle-control/control_geometry.py",
+          "assets-src/moto-components/engine-head/topology_cleanup_head_v2.py",
+          "assets-src/moto-components/engine-head/head_geometry_v2.py",
+          "assets-src/moto-components/engine-head/underside_geometry_v2.py",
+          "assets-src/moto-components/engine-head/csg_driver_v2.py",
+          "assets-src/moto-components/engine-head/csg_kernel_v2.py",
+          "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend"
+        ]
+      },
+      "all_required_paths": [
+        "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+        "assets-src/moto-components/engine-head/build_v2.py",
+        "assets-src/moto-components/engine-head/csg_driver_v2.py",
+        "assets-src/moto-components/engine-head/csg_kernel_v2.py",
+        "assets-src/moto-components/engine-head/head_geometry_v2.py",
+        "assets-src/moto-components/engine-head/parameters-v2.json",
+        "assets-src/moto-components/engine-head/topology_cleanup_head_v2.py",
+        "assets-src/moto-components/engine-head/underside_geometry_v2.py",
+        "assets-src/moto-components/throttle-control/control_geometry.py"
+      ],
+      "required_files_absent_from_repo": [],
+      "required_files_not_in_git_index": [
+        "assets-src/moto-components/engine-head/build_v2.py",
+        "assets-src/moto-components/engine-head/csg_driver_v2.py",
+        "assets-src/moto-components/engine-head/csg_kernel_v2.py",
+        "assets-src/moto-components/engine-head/head_geometry_v2.py",
+        "assets-src/moto-components/engine-head/parameters-v2.json",
+        "assets-src/moto-components/engine-head/topology_cleanup_head_v2.py",
+        "assets-src/moto-components/engine-head/underside_geometry_v2.py"
+      ],
+      "required_files_missing_from_selected_frozen_manifest_union": [],
+      "required_files_manifest_hash_mismatches": []
+    },
+    {
+      "recipe": "cap",
+      "stages": {
+        "generate_from_editable_head": [
+          "assets-src/moto-components/engine-tappet-cap/build.py",
+          "assets-src/moto-components/engine-tappet-cap/parameters.json",
+          "assets-src/moto-components/throttle-control/control_geometry.py",
+          "assets-src/moto-components/clutch-control/topology_cleanup_v2.py",
+          "assets-src/moto-components/front-brake-plate/csg.py",
+          "assets-src/moto-components/engine-head/engine-head-v2.blend"
+        ]
+      },
+      "all_required_paths": [
+        "assets-src/moto-components/clutch-control/topology_cleanup_v2.py",
+        "assets-src/moto-components/engine-head/engine-head-v2.blend",
+        "assets-src/moto-components/engine-tappet-cap/build.py",
+        "assets-src/moto-components/engine-tappet-cap/parameters.json",
+        "assets-src/moto-components/front-brake-plate/csg.py",
+        "assets-src/moto-components/throttle-control/control_geometry.py"
+      ],
+      "required_files_absent_from_repo": [],
+      "required_files_not_in_git_index": [
+        "assets-src/moto-components/engine-head/engine-head-v2.blend",
+        "assets-src/moto-components/engine-tappet-cap/build.py",
+        "assets-src/moto-components/engine-tappet-cap/parameters.json"
+      ],
+      "required_files_missing_from_selected_frozen_manifest_union": [
+        "assets-src/moto-components/front-brake-plate/csg.py"
+      ],
+      "required_files_manifest_hash_mismatches": []
+    },
+    {
+      "recipe": "cables",
+      "stages": {
+        "generate_from_numeric_parameters_and_immutable_interfaces": [
+          "assets-src/moto-components/cockpit-cables/build_v2.py",
+          "assets-src/moto-components/cockpit-cables/parameters-v2.json",
+          "assets-src/moto-components/throttle-control/control_geometry.py",
+          "creative/workflow/motorcycle-datums-v1.json",
+          "assets-src/moto-components/ignition-lock/parameters.json",
+          "assets-src/moto-components/ignition-lock/ignition-lock-v1.blend",
+          "assets-src/moto-components/instruments/instruments-v3.blend",
+          "assets-src/moto-components/instrument-visor/instrument-visor-v1.blend"
+        ]
+      },
+      "all_required_paths": [
+        "assets-src/moto-components/cockpit-cables/build_v2.py",
+        "assets-src/moto-components/cockpit-cables/parameters-v2.json",
+        "assets-src/moto-components/ignition-lock/ignition-lock-v1.blend",
+        "assets-src/moto-components/ignition-lock/parameters.json",
+        "assets-src/moto-components/instrument-visor/instrument-visor-v1.blend",
+        "assets-src/moto-components/instruments/instruments-v3.blend",
+        "assets-src/moto-components/throttle-control/control_geometry.py",
+        "creative/workflow/motorcycle-datums-v1.json"
+      ],
+      "required_files_absent_from_repo": [],
+      "required_files_not_in_git_index": [
+        "assets-src/moto-components/cockpit-cables/build_v2.py",
+        "assets-src/moto-components/cockpit-cables/parameters-v2.json"
+      ],
+      "required_files_missing_from_selected_frozen_manifest_union": [
+        "assets-src/moto-components/ignition-lock/parameters.json",
+        "creative/workflow/motorcycle-datums-v1.json"
+      ],
+      "required_files_manifest_hash_mismatches": []
+    }
+  ],
+  "byte_pins_verified": [
+    {
+      "path": "assets-src/moto-components/headlamp/housing/headlamp-housing-study-v5.blend",
+      "sha256": "c614db61fdba6fe1919865b065d6d02017abdd0d33ea17010e47b94c011ff6a9",
+      "matches": true,
+      "pin_source": "creative/reviews/headlamp-housing-study-v5/source-geometry-check.json",
+      "field": "source_sha256"
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/housing/headlamp-housing-core-study-v2.blend",
+      "sha256": "74af35c86e5dae5b505e5e8822b9a03d5828b2623a2e2137c78ab8c014353bf3",
+      "matches": true,
+      "pin_source": "creative/reviews/headlamp-housing-core-study-v2/source-geometry-check.json",
+      "field": "source_sha256"
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/engine-head-v2.blend",
+      "sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f",
+      "matches": true,
+      "pin_source": "assets-src/moto-components/engine-tappet-cap/parameters.json",
+      "field": "parent_source_sha256"
+    },
+    {
+      "path": "assets-src/moto-components/ignition-lock/ignition-lock-v1.blend",
+      "sha256": "63447081802d85b8d9b61463f59aea6cc3db8aa72380ee9f66a960113707c4ef",
+      "matches": true,
+      "pin_source": "assets-src/moto-components/cockpit-cables/parameters-v2.json",
+      "field": "fixed_source_hashes.contact"
+    },
+    {
+      "path": "assets-src/moto-components/instruments/instruments-v3.blend",
+      "sha256": "2ac37623a2e8df558373233228a6b936b143b6ff282e8ab6e70f08e27675e7da",
+      "matches": true,
+      "pin_source": "assets-src/moto-components/cockpit-cables/parameters-v2.json",
+      "field": "fixed_source_hashes.instruments"
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/instrument-visor-v1.blend",
+      "sha256": "c790ffbba0a49f4d63e2dcf85a30cf88eb1aa8c6edd847514c041e5c0fa70f15",
+      "matches": true,
+      "pin_source": "assets-src/moto-components/cockpit-cables/parameters-v2.json",
+      "field": "fixed_source_hashes.visor"
+    },
+    {
+      "path": "creative/workflow/motorcycle-datums-v1.json",
+      "sha256": "19bf9708f8777b6216ab0c7d487f9ff685e3bedcdd9806f3c9985db78b5e5c9a",
+      "matches": true,
+      "pin_source": "assets-src/moto-components/cockpit-cables/parameters-v2.json",
+      "field": "guide_source_sha256"
+    }
+  ],
+  "findings": [
+    {
+      "recipe": "housing",
+      "result": "Recipe from existing editable core2 is covered by the gray5 study-freeze plus finalv2 source-freeze. The core2 origin builder is available but its3numeric/script inputs are outside that union.",
+      "missing_paths": [
+        "assets-src/moto-components/headlamp/housing/build_core_study_v2.py",
+        "creative/research/headlamp/housing-shape-plan-v1.json",
+        "creative/research/headlamp/housing-reliefs-plan-v2.json"
+      ],
+      "distinction": "Full origin reconstruction needs build_core_study_v2.py +2plans+worker; continuation from frozen core2 uses its.blend/report without needing core1 or graystudies1–4. V5 addrear script reads core2 directly, not grayv4.",
+      "non_input_path": "/tmp/housing-current-debug.blend is WRITTEN diagnostically by addrearv5; not a missing input to publish."
+    },
+    {
+      "recipe": "head",
+      "result": "All9required direct scripts/numeric inputs/imports and editable barrel dependency are present and byte-covered by preflight32/review46.",
+      "important_exclusion": "control_geometry.csg is imported but then shadowed by csg_driver_v2.csg; the head actually calls its own csg_kernel_v2.py. Do not incorrectly add front-brake-plate/csg.py to this head recipe."
+    },
+    {
+      "recipe": "cap",
+      "result": "Missing manifest closure for actual worker front-brake-plate/csg.py; control_geometry.csg invokes this file in a subprocess. File exists locally; current Git status given in files.",
+      "missing_paths": [
+        "assets-src/moto-components/front-brake-plate/csg.py"
+      ],
+      "parent_boundary": "This regenerates cap from fixed editable engine-headv2. Regenerating that parent itself is the separately audited9file head recipe; no need to publish unrelated older head studies."
+    },
+    {
+      "recipe": "cables",
+      "result": "Two required numeric inputs absent from preflight30/supplement34/review42 union: the shared datum JSON checked by read_bytes/SHA assertion, and ignition-lock parameters read to transform the loop.",
+      "missing_paths": [
+        "creative/workflow/motorcycle-datums-v1.json",
+        "assets-src/moto-components/ignition-lock/parameters.json"
+      ],
+      "important_exclusion": "No csg helper is called by this cable builder, so front-brake-plate/csg.py is not a cable dependency. The3frozen interface blends are already covered."
+    }
+  ],
+  "runtime_notes": [
+    "External workers resolve shutil.which(\"python\"); NumPy/Manifold pins are in tools/requirements-assets.txt. Blender/mathutils/bmesh are host APIs, not missing repo files.",
+    "Materials are built from original scalar/color constants or public numeric plans. No source script loads private photographs or photographic texture pixels.",
+    "Shape/reference/camera/preview reports not read by these generation chains are not added merely because they exist. Gray5 preview-review.json IS a real prerequisite: material builder reads and asserts its approval flags/source SHA.",
+    "Audit closes known direct runtime inputs and scripts to supplied editable boundaries. No clean-room execution or binary reproducibility is claimed."
+  ],
+  "files": [
+    {
+      "path": "creative/reviews/headlamp-housing-v2/source-freeze-manifest.json",
+      "exists": true,
+      "sha256": "65b67fb73027075bdd2c376a1d740f02ca0b707df3344cf39decd4c332d0d68b",
+      "bytes": 4360,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "frozen_manifest_read"
+      ],
+      "recipes": [
+        "housing"
+      ]
+    },
+    {
+      "path": "creative/reviews/headlamp-housing-study-v5/study-freeze-manifest.json",
+      "exists": true,
+      "sha256": "6cfd46d2315d20f413a38cc1e19d729f7dfedf5bf41847bff8d3fb9c0ad2d0e2",
+      "bytes": 3471,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "frozen_manifest_read"
+      ],
+      "recipes": [
+        "housing"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/preflight-manifest-v2.json",
+      "exists": true,
+      "sha256": "1b8d965c99b06342a94fe02e7c6b4338a3c89f55338b65980693ce066eb0169e",
+      "bytes": 6775,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "frozen_manifest_read"
+      ],
+      "recipes": [
+        "head"
+      ]
+    },
+    {
+      "path": "creative/reviews/engine-head-v2/review-manifest.json",
+      "exists": true,
+      "sha256": "a2e2782caedebcba641d855ed63ae7cefbcb535aecf9d750c29244417787090b",
+      "bytes": 9375,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "frozen_manifest_read"
+      ],
+      "recipes": [
+        "head"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-tappet-cap/preflight-manifest.json",
+      "exists": true,
+      "sha256": "c38b8d6cba63d7d3caa5b9308e26087f08e63ef7bed4f2fae0ada0bd0c10dbb7",
+      "bytes": 5683,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "frozen_manifest_read"
+      ],
+      "recipes": [
+        "cap"
+      ]
+    },
+    {
+      "path": "creative/reviews/engine-tappet-cap-v1/review-manifest.json",
+      "exists": true,
+      "sha256": "7358957845180b70e0bac545032e0af0f0318383b043b7f082004f948064c7b5",
+      "bytes": 7766,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "frozen_manifest_read"
+      ],
+      "recipes": [
+        "cap"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/cockpit-cables/preflight-manifest-v2.json",
+      "exists": true,
+      "sha256": "6df2cbf291681f09e739dfc308e2ef179980cb9b751cc511a340fb590dfbe3fb",
+      "bytes": 6411,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "frozen_manifest_read"
+      ],
+      "recipes": [
+        "cables"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/cockpit-cables/preflight-final-supplement-v2.json",
+      "exists": true,
+      "sha256": "7b7540536a99dbd518693a88d6944486888e981524c8717913ad1230bfd380fb",
+      "bytes": 7187,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "frozen_manifest_read"
+      ],
+      "recipes": [
+        "cables"
+      ]
+    },
+    {
+      "path": "creative/reviews/cockpit-cables-v2/review-manifest.json",
+      "exists": true,
+      "sha256": "34c54e4dcf7d30e36ffffac5e5965d4a2e391dc4c0b9767f33583f0865ee35c3",
+      "bytes": 8807,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "frozen_manifest_read"
+      ],
+      "recipes": [
+        "cables"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/housing/build_material_v2.py",
+      "exists": true,
+      "sha256": "6b4ec213ef14f7d855e1a970c87e53c7a43bc9e8ac67c7d19d797405e5a78df3",
+      "bytes": 3226,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "material_from_gray5"
+      ],
+      "recipes": [
+        "housing"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/housing/headlamp-housing-study-v5.blend",
+      "exists": true,
+      "sha256": "c614db61fdba6fe1919865b065d6d02017abdd0d33ea17010e47b94c011ff6a9",
+      "bytes": 34149628,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "material_from_gray5"
+      ],
+      "recipes": [
+        "housing"
+      ]
+    },
+    {
+      "path": "creative/reviews/headlamp-housing-study-v5/source-geometry-check.json",
+      "exists": true,
+      "sha256": "9dafc6fe0b6f321684196ef10f715587795d500a1c0763deeb46e50fd61438f0",
+      "bytes": 6925,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "material_from_gray5"
+      ],
+      "recipes": [
+        "housing"
+      ]
+    },
+    {
+      "path": "creative/reviews/headlamp-housing-study-v5/preview-review.json",
+      "exists": true,
+      "sha256": "ce74fba686b2463ace7d22b9e7bc4c3c93074ea10384f24964c2e86a32a239db",
+      "bytes": 1280,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "material_from_gray5"
+      ],
+      "recipes": [
+        "housing"
+      ]
+    },
+    {
+      "path": "creative/research/headlamp/housing-material-plan-v1.json",
+      "exists": true,
+      "sha256": "32c31403350b9047654ef5494ce753f2401600237671edf919be7c4927693d27",
+      "bytes": 1359,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "material_from_gray5"
+      ],
+      "recipes": [
+        "housing"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/housing/add_rear_structures_study_v5.py",
+      "exists": true,
+      "sha256": "03b2b8c3f52717e8d180973adb4e749964d76bc13562268715633742a35d0527",
+      "bytes": 8910,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "gray5_from_editable_core2"
+      ],
+      "recipes": [
+        "housing"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/housing/housing_geometry_v3.py",
+      "exists": true,
+      "sha256": "c9194ad3975cf64bb61308f52ef8b8785a14aa7193434dbe1211d9c2eda97081",
+      "bytes": 9264,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "gray5_from_editable_core2"
+      ],
+      "recipes": [
+        "housing"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/housing/housing_csg_worker_v2.py",
+      "exists": true,
+      "sha256": "7cc9fbe6b9dfa6ccf02a19d4c030e1b86be14b8ee0e6dbf92b8035e67fcbbb08",
+      "bytes": 1599,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "gray5_from_editable_core2",
+        "origin_core2_recipe"
+      ],
+      "recipes": [
+        "housing"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/housing/headlamp-housing-core-study-v2.blend",
+      "exists": true,
+      "sha256": "74af35c86e5dae5b505e5e8822b9a03d5828b2623a2e2137c78ab8c014353bf3",
+      "bytes": 10985416,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "gray5_from_editable_core2"
+      ],
+      "recipes": [
+        "housing"
+      ]
+    },
+    {
+      "path": "creative/reviews/headlamp-housing-core-study-v2/source-geometry-check.json",
+      "exists": true,
+      "sha256": "a18a90da8570d4968bf570b0b2b9627482a62606f893c54288155930bb134937",
+      "bytes": 2215,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "gray5_from_editable_core2"
+      ],
+      "recipes": [
+        "housing"
+      ]
+    },
+    {
+      "path": "creative/research/headlamp/housing-rear-structure-plan-v1.json",
+      "exists": true,
+      "sha256": "91de02de35ac3314b7e08cb3d681f75bff91ad58709185ce2530a463f3d2091c",
+      "bytes": 7964,
+      "git_state_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "gray5_from_editable_core2"
+      ],
+      "recipes": [
+        "housing"
+      ]
+    },
+    {
+      "path": "creative/research/headlamp/housing-lower-contour-plan-v4.json",
+      "exists": true,
+      "sha256": "f246d424413f5240163f607ec4ed7f388eaecf09904a6333291e75f4b7f6f582",
+      "bytes": 1442,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "gray5_from_editable_core2"
+      ],
+      "recipes": [
+        "housing"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/housing/build_core_study_v2.py",
+      "exists": true,
+      "sha256": "aa04bfba4fb104c3ff69cffc3601c1acb64cc6fdc5a1a214a8c2c1c238162609",
+      "bytes": 10156,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "origin_core2_recipe"
+      ],
+      "recipes": [
+        "housing"
+      ]
+    },
+    {
+      "path": "creative/research/headlamp/housing-shape-plan-v1.json",
+      "exists": true,
+      "sha256": "5ffad03b7215e835dc85bed391ed080d4e95a0a1ca44a5b6096bb40bad4d48e8",
+      "bytes": 5205,
+      "git_state_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "origin_core2_recipe"
+      ],
+      "recipes": [
+        "housing"
+      ]
+    },
+    {
+      "path": "creative/research/headlamp/housing-reliefs-plan-v2.json",
+      "exists": true,
+      "sha256": "27c1c4abc5a0860965ac802bd6b6c5e92561537ed694daa9c4aef1e1963b12fe",
+      "bytes": 6748,
+      "git_state_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "origin_core2_recipe"
+      ],
+      "recipes": [
+        "housing"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/build_v2.py",
+      "exists": true,
+      "sha256": "3018b1ae36ab55db927a3158b06330068554c6abcdc4a18d344d276ab40e6be8",
+      "bytes": 15263,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "generate_from_numeric_parameters_and_barrel"
+      ],
+      "recipes": [
+        "head"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/parameters-v2.json",
+      "exists": true,
+      "sha256": "851d1563ed00241a68c79578ecacdf61f892c8a89c6b9bdbc29b29c3b9e13000",
+      "bytes": 39969,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "generate_from_numeric_parameters_and_barrel"
+      ],
+      "recipes": [
+        "head"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/throttle-control/control_geometry.py",
+      "exists": true,
+      "sha256": "430351cb8ef4877a2575174958e86d998664d8dd5941a9d5cb74ff22f47ffe8c",
+      "bytes": 6312,
+      "git_state_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "generate_from_numeric_parameters_and_barrel",
+        "generate_from_editable_head",
+        "generate_from_numeric_parameters_and_immutable_interfaces"
+      ],
+      "recipes": [
+        "head",
+        "cap",
+        "cables"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/topology_cleanup_head_v2.py",
+      "exists": true,
+      "sha256": "82c726d0c1a7b6da792ec915fc3c5c9ceddca9913c89ca28433892f51a5fc989",
+      "bytes": 4495,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "generate_from_numeric_parameters_and_barrel"
+      ],
+      "recipes": [
+        "head"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/head_geometry_v2.py",
+      "exists": true,
+      "sha256": "b8521b67c150a99f596404afa1768bce58c806151a9518c771aff1781c67ffc4",
+      "bytes": 1505,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "generate_from_numeric_parameters_and_barrel"
+      ],
+      "recipes": [
+        "head"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/underside_geometry_v2.py",
+      "exists": true,
+      "sha256": "522e937c0fd6b46d23c9279c18087be0ae7d0c0b385dd25baed6ab91e9bd8fe2",
+      "bytes": 6099,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "generate_from_numeric_parameters_and_barrel"
+      ],
+      "recipes": [
+        "head"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/csg_driver_v2.py",
+      "exists": true,
+      "sha256": "eaf0ec14513ca7023385f89182a1c5ac58f34c3869f3477e9ea6f78b20c7fb48",
+      "bytes": 999,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "generate_from_numeric_parameters_and_barrel"
+      ],
+      "recipes": [
+        "head"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/csg_kernel_v2.py",
+      "exists": true,
+      "sha256": "56d36166be689031b890ce9720fd849eaf2c523927be4e5a4858d03185779e23",
+      "bytes": 2024,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "generate_from_numeric_parameters_and_barrel"
+      ],
+      "recipes": [
+        "head"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+      "exists": true,
+      "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6",
+      "bytes": 3081041,
+      "git_state_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "generate_from_numeric_parameters_and_barrel"
+      ],
+      "recipes": [
+        "head"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-tappet-cap/build.py",
+      "exists": true,
+      "sha256": "3f3139bd0e8ac4beafb65aae84c1b0c374a6879e8db3e9aa2f2b8c5b3bb6379d",
+      "bytes": 9723,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "generate_from_editable_head"
+      ],
+      "recipes": [
+        "cap"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-tappet-cap/parameters.json",
+      "exists": true,
+      "sha256": "f3b395d05a8ed0852dde06d1f38f91d01483093dc5e80ddae45ca35eeb997635",
+      "bytes": 2163,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "generate_from_editable_head"
+      ],
+      "recipes": [
+        "cap"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/clutch-control/topology_cleanup_v2.py",
+      "exists": true,
+      "sha256": "a32cd80f2575b54dd5b40ddb84f68c3913fc0a55a26410c1131bb10f9e4dd942",
+      "bytes": 4302,
+      "git_state_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "generate_from_editable_head"
+      ],
+      "recipes": [
+        "cap"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/front-brake-plate/csg.py",
+      "exists": true,
+      "sha256": "947178b2be8a9a5a0336b619692f62503c9d0921da9cac033e91771343bd707e",
+      "bytes": 1733,
+      "git_state_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "generate_from_editable_head"
+      ],
+      "recipes": [
+        "cap"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/engine-head-v2.blend",
+      "exists": true,
+      "sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f",
+      "bytes": 12427744,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "generate_from_editable_head"
+      ],
+      "recipes": [
+        "cap"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/cockpit-cables/build_v2.py",
+      "exists": true,
+      "sha256": "0e291dbe6ef59ac28da128c5a1ce78f2a7c71ec9a7872a51784bc203287b568a",
+      "bytes": 7952,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "generate_from_numeric_parameters_and_immutable_interfaces"
+      ],
+      "recipes": [
+        "cables"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/cockpit-cables/parameters-v2.json",
+      "exists": true,
+      "sha256": "29b8663696778c7a1425c02d4aba31bd3af2e0dce65d59b741107c28dd46657e",
+      "bytes": 3885,
+      "git_state_at_snapshot": "untracked",
+      "roles": [
+        "generate_from_numeric_parameters_and_immutable_interfaces"
+      ],
+      "recipes": [
+        "cables"
+      ]
+    },
+    {
+      "path": "creative/workflow/motorcycle-datums-v1.json",
+      "exists": true,
+      "sha256": "19bf9708f8777b6216ab0c7d487f9ff685e3bedcdd9806f3c9985db78b5e5c9a",
+      "bytes": 3572,
+      "git_state_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "generate_from_numeric_parameters_and_immutable_interfaces"
+      ],
+      "recipes": [
+        "cables"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/ignition-lock/parameters.json",
+      "exists": true,
+      "sha256": "69910520fdba65d5e67a28d4e35438bc6dddc47259bf30d887c9305e8b127791",
+      "bytes": 1752,
+      "git_state_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "generate_from_numeric_parameters_and_immutable_interfaces"
+      ],
+      "recipes": [
+        "cables"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/ignition-lock/ignition-lock-v1.blend",
+      "exists": true,
+      "sha256": "63447081802d85b8d9b61463f59aea6cc3db8aa72380ee9f66a960113707c4ef",
+      "bytes": 350130,
+      "git_state_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "generate_from_numeric_parameters_and_immutable_interfaces"
+      ],
+      "recipes": [
+        "cables"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/instruments-v3.blend",
+      "exists": true,
+      "sha256": "2ac37623a2e8df558373233228a6b936b143b6ff282e8ab6e70f08e27675e7da",
+      "bytes": 638057,
+      "git_state_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "generate_from_numeric_parameters_and_immutable_interfaces"
+      ],
+      "recipes": [
+        "cables"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/instrument-visor-v1.blend",
+      "exists": true,
+      "sha256": "c790ffbba0a49f4d63e2dcf85a30cf88eb1aa8c6edd847514c041e5c0fa70f15",
+      "bytes": 1222715,
+      "git_state_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "generate_from_numeric_parameters_and_immutable_interfaces"
+      ],
+      "recipes": [
+        "cables"
+      ]
+    },
+    {
+      "path": "tools/requirements-assets.txt",
+      "exists": true,
+      "sha256": "d37fb80e0a2bf34bf6e388eb968a144b27ce368350d49a9df4ae2b7aa30d2447",
+      "bytes": 110,
+      "git_state_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "external_worker_environment_pins"
+      ],
+      "recipes": [
+        "all"
+      ]
+    }
+  ],
+  "art_accepted": false
+}

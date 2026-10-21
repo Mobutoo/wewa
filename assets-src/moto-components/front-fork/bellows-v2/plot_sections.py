@@ -1,0 +1,10 @@
+"""Scientific section drawing from actualGLB intersections, no referencepixels."""
+import json,hashlib
+from pathlib import Path
+import matplotlib;matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+from matplotlib.collections import LineCollection
+HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[3];OUT=ROOT/'creative/reviews/fork-bellows-v2';j=json.loads((OUT/'actual-buffer-sections.json').read_text());export=HERE/'fork-bellows-v2-inspection.glb';assert hashlib.sha256(export.read_bytes()).hexdigest()==j['export_sha256'];fig,axes=plt.subplots(1,2,figsize=(11,7),sharex=True,sharey=True)
+for ax,section in zip(axes,j['sections']):
+ lines=[[[q[0]*1000,q[1]*1000]for q in segment]for segment in section['segments']];ax.add_collection(LineCollection(lines,colors='#172c3b',linewidths=1.7));ax.axvline(24,color='#cc662c',ls='--',lw=1,label='Guide de col R24 mm estimé');ax.set(xlim=(21.5,28),ylim=(-.5,11.5),xlabel='Rayon (mm)',title=str(round(section['source_azimuth_degrees']))+'° — '+('pont local candidat'if section['source_azimuth_degrees']==0 else'gorge entre les ponts'));ax.grid(alpha=.25);ax.set_aspect('equal');ax.legend(fontsize=8,loc='upper right')
+axes[0].set_ylabel('Z depuis la lèvre basse (mm)');fig.suptitle('Soufflet v2 — coupe des vrais triangles exportés',fontsize=15);fig.text(.5,.035,'Toutes les cotes sont estimées. Le guide de col n’a pas de pose axiale définie ; aucune réception OEM ou de montage.',ha='center',fontsize=9);fig.tight_layout(rect=(0,.065,1,.95));fig.savefig(OUT/'actual-buffer-sections.svg');fig.savefig(OUT/'actual-buffer-sections.png',dpi=160);(OUT/'section-plot-check.json').write_text(json.dumps({'export_sha256':j['export_sha256'],'section_data_sha256':hashlib.sha256((OUT/'actual-buffer-sections.json').read_bytes()).hexdigest(),'SVG_sha256':hashlib.sha256((OUT/'actual-buffer-sections.svg').read_bytes()).hexdigest(),'PNG_sha256':hashlib.sha256((OUT/'actual-buffer-sections.png').read_bytes()).hexdigest(),'source':'ActualGLB planeintersections, not parameters or referenceimagepixels','all_physical_dimensions_estimated':True,'guide_axial_pose_verified':False,'art_accepted':False},indent=2)+'\n')

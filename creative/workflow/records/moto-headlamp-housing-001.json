@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-HEADLAMP-HOUSING-001",
-  "label": "Phare avant — boîtier nu conditionnel lié YDY02002",
+  "label": "Phare — boîtier nu v2, normales des nervures corrigées",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,13 +12,13 @@
     "material"
   ],
   "identity": {
-    "variant": "RelatedCT125X YDY02002 barehousing, exactRDC125HD identity unknown",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
-    "usage": "One isolated housing with visible moulded ribs/ears; no optical/fastener assembly",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
-      0.12,
+      0.15,
       0.35,
-      0.6
+      0.65
     ]
   },
   "source_register": "../sources.json",
@@ -26,7 +26,91 @@
     "D01"
   ],
   "claims": [],
-  "views": [],
+  "views": [
+    {
+      "name": "whole-back",
+      "camera": {
+        "location": [
+          -0.13,
+          0.78,
+          0.19
+        ],
+        "target": [
+          0,
+          0.04,
+          -0.01
+        ],
+        "lens": 65
+      },
+      "PNG_path": "creative/reviews/headlamp-housing-v2/whole-back.png",
+      "PNG_sha256": "4ec4ded59f3c1420c367dcbf9fd62f76bf5bb1bdfbcc7d137da4c9781fa78d36",
+      "EXR_private_path": "/workspace/wewa-assets/renders/headlamp-housing-v2/whole-back.exr",
+      "EXR_sha256": "4dc3393fc209b6c29b4edd23dbb0860d83d22d48412123cd64a229adba6fab3b",
+      "EXR_actual_channels": [
+        "ViewLayer.Combined.A",
+        "ViewLayer.Combined.B",
+        "ViewLayer.Combined.G",
+        "ViewLayer.Combined.R",
+        "ViewLayer.Denoising Albedo.B",
+        "ViewLayer.Denoising Albedo.G",
+        "ViewLayer.Denoising Albedo.R",
+        "ViewLayer.Denoising Depth.Z",
+        "ViewLayer.Denoising Normal.X",
+        "ViewLayer.Denoising Normal.Y",
+        "ViewLayer.Denoising Normal.Z",
+        "ViewLayer.Noisy Image.A",
+        "ViewLayer.Noisy Image.B",
+        "ViewLayer.Noisy Image.G",
+        "ViewLayer.Noisy Image.R"
+      ],
+      "config_sha256": "3b7321928bdd0a391d50d29ebe5b571f36504c2b85d72cecfe5b1e50f5564d49",
+      "actually_saved": true,
+      "actually_read": true,
+      "observations": "Whole housing rear read: curved rib highlight transitions now continuous; six apertures and overall geometry remain unchanged."
+    },
+    {
+      "name": "lower-rounded-tip",
+      "camera": {
+        "location": [
+          0.2,
+          0.3,
+          -0.11
+        ],
+        "target": [
+          0.078,
+          0.07,
+          -0.111
+        ],
+        "lens": 95,
+        "crop": true
+      },
+      "PNG_path": "creative/reviews/headlamp-housing-v2/lower-rounded-tip.png",
+      "PNG_sha256": "b2ae46d4d3a46f8446c5b3158899efa43fcbcfb21a53feb42f89a78693531e3f",
+      "EXR_private_path": "/workspace/wewa-assets/renders/headlamp-housing-v2/lower-rounded-tip.exr",
+      "EXR_sha256": "adb07b0f21f5dbd9cc1c873993ce0bb4e241d9b1124f7f5a082c5a43e2c31e9a",
+      "EXR_actual_channels": [
+        "ViewLayer.Combined.A",
+        "ViewLayer.Combined.B",
+        "ViewLayer.Combined.G",
+        "ViewLayer.Combined.R",
+        "ViewLayer.Denoising Albedo.B",
+        "ViewLayer.Denoising Albedo.G",
+        "ViewLayer.Denoising Albedo.R",
+        "ViewLayer.Denoising Depth.Z",
+        "ViewLayer.Denoising Normal.X",
+        "ViewLayer.Denoising Normal.Y",
+        "ViewLayer.Denoising Normal.Z",
+        "ViewLayer.Noisy Image.A",
+        "ViewLayer.Noisy Image.B",
+        "ViewLayer.Noisy Image.G",
+        "ViewLayer.Noisy Image.R"
+      ],
+      "config_sha256": "ac33d2b63281bb61aa73b42a1bb7b1cae5509fb8aabf306e8e8194b5da09eec2",
+      "actually_saved": true,
+      "actually_read": true,
+      "observations": "Macro read: previous piecewise normal steps removed along both curved ribbon sides; terminal corners remain intentionally distinct. No mesh displacement or material change."
+    }
+  ],
   "criteria": [],
   "gaps": [
     {
@@ -54,7 +138,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "headlamp-housing-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -62,74 +146,116 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": null,
+      "revision": "headlamp-housing-v2",
       "reviewer": null,
       "evidence": [],
-      "reason": "Conditional photo-informed study permitted, exactmarket identity/mount not certified.",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
-      "status": "pending",
-      "revision": null,
+      "status": "blocked",
+      "revision": "headlamp-housing-v2",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "headlamp-housing-v2",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/headlamp/housing/headlamp-housing-v2.blend",
+          "kind": "editable_source",
+          "revision": "headlamp-housing-v2",
+          "sha256": "28dc0546d85f95c13e7903d2c8232517b88d2fdbb1a5c108ec9708b2bd729bd3"
+        },
+        {
+          "path": "../../reviews/headlamp-housing-v2/whole-back.png",
+          "kind": "isolated_comparison",
+          "revision": "headlamp-housing-v2",
+          "sha256": "4ec4ded59f3c1420c367dcbf9fd62f76bf5bb1bdfbcc7d137da4c9781fa78d36"
+        }
+      ],
+      "reason": "Boîtier nu apparentéYDY02002 seulement ; forme/reliefs observés, dimensions/identité RDC non confirmées. V2 corrige seulement les normales de quatre nervures, positions/UV/matières identiques ; ancien défaut de marches conservé en historiquev1. Clip central et vis distincts absents.",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "headlamp-housing-v2",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/headlamp-housing-v2/lower-rounded-tip.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "headlamp-housing-v2",
+          "sha256": "b2ae46d4d3a46f8446c5b3158899efa43fcbcfb21a53feb42f89a78693531e3f"
+        }
+      ],
+      "reason": "Deux vues96dos/macro effectivement ouvertes après les aperçus comparés ; défaut de reflets v1 corrigé. Résine sombre homogène et rugosité restent estimées, pas de grade/micrograin mesuré ni réception artistique.",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "blocked",
+      "revision": "headlamp-housing-v2",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/headlamp-housing-v2/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "headlamp-housing-v2",
+          "sha256": "dbc32982a4c08b4e62c5f8f97e427dc9b3fcab9333a2c315e495a33541b36233"
+        }
+      ],
+      "reason": "Pièce en repère isolé non placé : aucune compatibilité dimensionnelle ou fixation actuelle RDC certifiée. Optique, lentille, ampoule, carénage et clignotants ne sont pas compris.",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "headlamp-housing-v2",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/headlamp-housing-v2/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "headlamp-housing-v2",
+          "sha256": "f722aee448aa85972cbfb3f9d3901c9f0e2df0ba8ce2be3ef47c567887c1736f"
+        },
+        {
+          "path": "../../reviews/headlamp-housing-v2/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "headlamp-housing-v2",
+          "sha256": "d5b0b8f582a7bde09cd18524c91386840a0fde7e0d7d53f750d29bb4aa57cf93"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "headlamp-housing-v2",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "headlamp-housing-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "",
       "reviewed_at": null
     }
   },
-  "active_detailed_fabrication": true,
-  "source_revision": null,
-  "export_revision": null,
-  "next_action": "G3 begins: finite moulded core then rear arms/ribs/apertures within same activehousing piece. Partial core not a finished candidate.",
+  "active_detailed_fabrication": false,
+  "source_revision": "headlamp-housing-v2",
+  "export_revision": "headlamp-housing-v2-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
   "art_accepted": false,
   "production_group": 12,
-  "pending_revision": "headlamp-housing-study-v1"
+  "pending_revision": null,
+  "candidate_source": "../../../assets-src/moto-components/headlamp/housing/README_v2.md",
+  "candidate_review": "../../reviews/headlamp-housing-v2/README.md"
 }

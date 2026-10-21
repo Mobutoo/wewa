@@ -1,0 +1,288 @@
+{
+  "schema": 1,
+  "revision": "cockpit-fit-preparation-v2-assembly-addendum-v1",
+  "completed_utc": "2026-10-21T03:56:16.572749+00:00",
+  "scope": "Only current actual assembled loop / central cluster cover / visor versus freshly evaluated sources and real delivered GLB buffers. New addendum; prior cockpit-fit-preparation-v2 manifest untouched. No source/transforms/save/export/render.",
+  "inputs": {
+    "assembly": {
+      "path": "assets-src/moto-components/cockpit-current-review-v2/cockpit-current-review-v2.blend",
+      "sha256": "849f4121146889c2976b3378c3177846a0025532ee8531ea13c70d9951b00f98"
+    },
+    "delivery": {
+      "path": "assets-src/moto-components/cockpit-current-review-v2/cockpit-current-review-v2-delivery.glb",
+      "sha256": "f002b9746def7833f82744077789040d421cdd96a875750e26e92864036ee884"
+    },
+    "assembly_source_proof": {
+      "path": "creative/reviews/cockpit-current-review-v2/source-geometry-check-delivery-v1.json",
+      "sha256": "74de47e6a1b54a51a38dc6c7e1791ae5da62c6e3bf585ca60531f90a364fbaac"
+    },
+    "prior_contact_delivery_manifest": {
+      "path": "creative/research/cockpit-fit-preparation-v2/delivery-manifest.json",
+      "sha256": "77fcf4ada18c8bc3ed10d8d1a591dcf7a6f5f88f371eac41ba60b575ebc28a78"
+    },
+    "source_hashes_rechecked": [
+      {
+        "key": "handlebar",
+        "path": "assets-src/moto-components/handlebar/handlebar-v1.blend",
+        "sha256": "1385ccc667f30681e334ce96aff71d2214794238c5b31e0a1fd4b75b8ad6652a"
+      },
+      {
+        "key": "grips-v3",
+        "path": "assets-src/moto-components/handlebar-grips/handlebar-grips-v3.blend",
+        "sha256": "8ba577ea4078850569394d7d17e6e6d868e590bb287b329da3c0600706351381"
+      },
+      {
+        "key": "clamps",
+        "path": "assets-src/moto-components/handlebar-clamps/handlebar-clamps-v1.blend",
+        "sha256": "416fd21980fe4425628bf7414607c8c37c12dea4f70965e0bac67c721d7e14c5"
+      },
+      {
+        "key": "throttle",
+        "path": "assets-src/moto-components/throttle-control/throttle-control-v1.blend",
+        "sha256": "1c0747975fbdcd2ada2140f2461ff359940967aa1a3036e2b7e0a3d24221237f"
+      },
+      {
+        "key": "switchgear-left-v3",
+        "path": "assets-src/moto-components/switchgear-left/switchgear-left-v3.blend",
+        "sha256": "a8cde7758ea9c96f2eac7c2d7ba817b4a353935a0a62ac2d53d0003e8e9bdeea"
+      },
+      {
+        "key": "switchgear-right",
+        "path": "assets-src/moto-components/switchgear-right/switchgear-right-v1.blend",
+        "sha256": "84182072eb72607cf3b9a029cf4e09964f8b4a86df612bfed912d0d666e9087c"
+      },
+      {
+        "key": "clutch-control",
+        "path": "assets-src/moto-components/clutch-control/clutch-control-v2.blend",
+        "sha256": "586b41d08fd0cb8a9caad66e7cbe83af1592aad42e6def823135f99b6f200059"
+      },
+      {
+        "key": "front-brake-control",
+        "path": "assets-src/moto-components/front-brake-control/front-brake-control-v2.blend",
+        "sha256": "6ab2f1ecb322f92a1f26643a149e7b2b93691dc91d3fb2e965c8b8f55733b2e1"
+      },
+      {
+        "key": "mirror-left-v2",
+        "path": "assets-src/moto-components/mirrors/mirror-left-v2.blend",
+        "sha256": "7725731e869b6edeea744965054518659eeb6355f6acc670718738a8144b1a30"
+      },
+      {
+        "key": "mirror-right-v3",
+        "path": "assets-src/moto-components/mirrors/mirror-right-v3.blend",
+        "sha256": "4be6e74518d7e0a6baccfc66c136cba148882183bf1d6020ac329ed9c0c32c60"
+      },
+      {
+        "key": "ignition-lock",
+        "path": "assets-src/moto-components/ignition-lock/ignition-lock-v1.blend",
+        "sha256": "63447081802d85b8d9b61463f59aea6cc3db8aa72380ee9f66a960113707c4ef"
+      },
+      {
+        "key": "cockpit-cables-v2",
+        "path": "assets-src/moto-components/cockpit-cables/cockpit-cables-v2.blend",
+        "sha256": "1e836f483c6d682a47dc072377971d35aa927f50a53a51e9ab0cef37e0d18279"
+      },
+      {
+        "key": "instruments-v3",
+        "path": "assets-src/moto-components/instruments/instruments-v3.blend",
+        "sha256": "2ac37623a2e8df558373233228a6b936b143b6ff282e8ab6e70f08e27675e7da"
+      },
+      {
+        "key": "instrument-visor",
+        "path": "assets-src/moto-components/instrument-visor/instrument-visor-v1.blend",
+        "sha256": "c790ffbba0a49f4d63e2dcf85a30cf88eb1aa8c6edd847514c041e5c0fa70f15"
+      }
+    ]
+  },
+  "method": {
+    "source_evaluation": "Open each real source in fresh Blender4.3.2 state; activate hidden guide collections IN MEMORY before update/evaluated dependency graph. Extract actual evaluated local/world positions, triangle indices and worldmatrices to NPZ.",
+    "assembly_evaluation": "Open actual new linked assembly, activate hidden collections IN MEMORY, evaluate same exact3real meshes without placement edits.",
+    "delivery_geometry": "Read actual indexed POSITION accessors and worldnode matrices in deliveredGLB via NodeIO. Convert fresh Blender world coordinates(x,z,−y); map seam-duplicated exported vertices by actual positions, compare bidirectionally and exact oriented triangle multisets. Compute every matched triangle corner discrepancy for both fresh-source and assembly references.",
+    "historical_target_link": "Freshly reopen old assembly used by177tests. Extract actual cover/visor local/world positions/indices/matrices; these match new assembly bit for bit. Loop in the177test was actual sourcev2 appended/evaluated with guides, and new assembly loop matches that source bit for bit."
+  },
+  "results": [
+    {
+      "key": "loop",
+      "source_to_current_assembly": {
+        "local": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "world": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "triangles": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "matrix_world": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        }
+      },
+      "source_to_actual_delivery_triangles": {
+        "reference": "source",
+        "key": "loop",
+        "source_vertices": 8736,
+        "delivery_vertices": 8928,
+        "actual_triangles": 17472,
+        "delivery_triangles": 17472,
+        "GLB_to_source_max_vertex_distance_m": 0.0,
+        "source_to_GLB_max_vertex_distance_m": 0.0,
+        "every_oriented_triangle_multiset_identical_after_actual_position_mapping": true,
+        "maximum_matched_triangle_corner_world_distance_m": 0.0,
+        "mapped_source_vertex_indices_sha256": "a7e41b070526493f1417ad21e2e7eb789bd24814d4293eaa12a8fbf315cb861d",
+        "matched_source_triangle_indices_sha256": "0ab3e585b85c6638989b8f73411a7b2a68fdf575d02e4bc6514f29b8aadd29e8"
+      },
+      "assembly_to_actual_delivery_triangles": {
+        "reference": "assembly",
+        "key": "loop",
+        "source_vertices": 8736,
+        "delivery_vertices": 8928,
+        "actual_triangles": 17472,
+        "delivery_triangles": 17472,
+        "GLB_to_source_max_vertex_distance_m": 0.0,
+        "source_to_GLB_max_vertex_distance_m": 0.0,
+        "every_oriented_triangle_multiset_identical_after_actual_position_mapping": true,
+        "maximum_matched_triangle_corner_world_distance_m": 0.0,
+        "mapped_source_vertex_indices_sha256": "a7e41b070526493f1417ad21e2e7eb789bd24814d4293eaa12a8fbf315cb861d",
+        "matched_source_triangle_indices_sha256": "0ab3e585b85c6638989b8f73411a7b2a68fdf575d02e4bc6514f29b8aadd29e8"
+      }
+    },
+    {
+      "key": "cover",
+      "source_to_current_assembly": {
+        "local": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 2.9802322387695312e-08
+        },
+        "triangles": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "matrix_world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 3.5762786865234375e-07
+        }
+      },
+      "source_to_actual_delivery_triangles": {
+        "reference": "source",
+        "key": "cover",
+        "source_vertices": 1824,
+        "delivery_vertices": 6992,
+        "actual_triangles": 3644,
+        "delivery_triangles": 3644,
+        "GLB_to_source_max_vertex_distance_m": 3.172862052698463e-08,
+        "source_to_GLB_max_vertex_distance_m": 3.172862052698463e-08,
+        "every_oriented_triangle_multiset_identical_after_actual_position_mapping": true,
+        "maximum_matched_triangle_corner_world_distance_m": 3.172862052698463e-08,
+        "mapped_source_vertex_indices_sha256": "1da1f530657e751759d55fdd4e57774f4eca865f949948448598f8d842cfc515",
+        "matched_source_triangle_indices_sha256": "8e5df570f301ba74e4587aa21b9f8f1c1f8a10478619d9ea6ab1c3a07aa7faa3"
+      },
+      "assembly_to_actual_delivery_triangles": {
+        "reference": "assembly",
+        "key": "cover",
+        "source_vertices": 1824,
+        "delivery_vertices": 6992,
+        "actual_triangles": 3644,
+        "delivery_triangles": 3644,
+        "GLB_to_source_max_vertex_distance_m": 1.4908994725222376e-08,
+        "source_to_GLB_max_vertex_distance_m": 1.4908994725222376e-08,
+        "every_oriented_triangle_multiset_identical_after_actual_position_mapping": true,
+        "maximum_matched_triangle_corner_world_distance_m": 1.4908994725222376e-08,
+        "mapped_source_vertex_indices_sha256": "1da1f530657e751759d55fdd4e57774f4eca865f949948448598f8d842cfc515",
+        "matched_source_triangle_indices_sha256": "8e5df570f301ba74e4587aa21b9f8f1c1f8a10478619d9ea6ab1c3a07aa7faa3"
+      }
+    },
+    {
+      "key": "visor",
+      "source_to_current_assembly": {
+        "local": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "world": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "triangles": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "matrix_world": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        }
+      },
+      "source_to_actual_delivery_triangles": {
+        "reference": "source",
+        "key": "visor",
+        "source_vertices": 22242,
+        "delivery_vertices": 25138,
+        "actual_triangles": 44480,
+        "delivery_triangles": 44480,
+        "GLB_to_source_max_vertex_distance_m": 0.0,
+        "source_to_GLB_max_vertex_distance_m": 0.0,
+        "every_oriented_triangle_multiset_identical_after_actual_position_mapping": true,
+        "maximum_matched_triangle_corner_world_distance_m": 0.0,
+        "mapped_source_vertex_indices_sha256": "020f1d76aec2dc09275ebab1fcc65f187192cc341f40f9d9b7b62578d404c71f",
+        "matched_source_triangle_indices_sha256": "ab4f37622104701fed4cfaf06c4c37e32423cad041c82f44b5d3bd917134a0c1"
+      },
+      "assembly_to_actual_delivery_triangles": {
+        "reference": "assembly",
+        "key": "visor",
+        "source_vertices": 22242,
+        "delivery_vertices": 25138,
+        "actual_triangles": 44480,
+        "delivery_triangles": 44480,
+        "GLB_to_source_max_vertex_distance_m": 0.0,
+        "source_to_GLB_max_vertex_distance_m": 0.0,
+        "every_oriented_triangle_multiset_identical_after_actual_position_mapping": true,
+        "maximum_matched_triangle_corner_world_distance_m": 0.0,
+        "mapped_source_vertex_indices_sha256": "020f1d76aec2dc09275ebab1fcc65f187192cc341f40f9d9b7b62578d404c71f",
+        "matched_source_triangle_indices_sha256": "ab4f37622104701fed4cfaf06c4c37e32423cad041c82f44b5d3bd917134a0c1"
+      }
+    }
+  ],
+  "contact_proof_transfer": {
+    "historical_cover_and_visor_vs_new_assembly_all_four_arrays_bit_identical": true,
+    "fresh_loop_source_vs_new_assembly_all_four_arrays_bit_identical": true,
+    "other13source_hashes_vs_prior_contact_snapshot_identical": true,
+    "prior_177_contact_checks_not_rerun": true,
+    "reason": "The exact tested loop and exact cover/visor targets are bit-identical in the actual new assembly; all14source inputs retain the prior snapshot hashes. Nanometric delivery equivalence measured on each of65596actual selected triangles. No parent retained at an origin or inferred-placement matrix introduced.",
+    "prior_result": "177tests0surfacecrossings; historicalv1control32pairs versus newv2zero;31674segments0hits;31676samplepoints3directions0contained/ambiguous/boundary. Existing report remains authoritative for these tests.",
+    "source_vs_copy_rounding_reservation": "Central cover fresh-source worldmatrix coefficients differ by up to3.5762786865234375e−7; actual worldcoordinates differ by up to2.9802322387695312e−8m. Local coordinates/indices are bit-identical. New copy is nevertheless bit-identical to exact old cover used by the177test. Do not call allsource/copy arrays bit-identical.",
+    "GLB_max_actual_matched_corner_error_m": 3.172862052698463e-08
+  },
+  "attempts": {
+    "first_comparison": "Failed only the extra assumption that every source/copy matrix/world array must be bit-identical. Actual GLB triangle comparisons had passed; failure/log retained, not hidden.",
+    "attempt02": "Source-to-delivery triangle proof with explicit50nm coordinate tolerance and source/copy local/index identity.",
+    "attempt03": "Adds direct current-assembly-to-delivery triangle proof for all3meshes. Passed.",
+    "historical_extraction": "Proves exact bit-identity of prior contact targets to newly assembled targets, avoiding reliance on a clearance estimate."
+  },
+  "limits": [
+    "Coordinates/triangle parity only; no new normal/material/optical or artistic judgement. Optional material extensions were not loaded by geometry-only NodeIO reader.",
+    "Other13source hashes checked, but this bounded addendum does not re-evaluate every mesh of the other cockpit assets or every motion pose.",
+    "Selected contact proof is not full-steering, all-pair or OEM fit certification. Upper cables, connector and full harness remain unbuilt.",
+    "GLB equivalence is measured at explicit50nm tolerance; this is numeric parity, not physical tolerance or a pixel calibration."
+  ],
+  "models_modified": false,
+  "art_accepted": false,
+  "complete_upper_harness": false
+}

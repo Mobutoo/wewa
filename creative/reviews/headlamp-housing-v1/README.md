@@ -1,0 +1,7 @@
+# Boîtier de phare v1 — quatre vues réelles
+
+Face entière, dos, profil et pied inférieur ont été sauvés en Cycles96/OIDN CPU et réellement ouverts. Les PNG et EXR multilayer privés sont reliés par checkpoints aux empreintes exactes de source/export. Le protocole de présentation r2 utilise +2EV par rapport au studio source, avec fond caméra compensé ; aucune matière ni lumière objet n’est modifiée.
+
+La coque annulaire, ses cinq reliefs, ses pattes/nervures et six passages ont une épaisseur réelle. Le candidat est lié aux photos YDY02002 ; les dimensions, profondeurs, sections et emplacements restent estimés. Le clip central supérieur et les vis séparées ne sont pas fabriqués. L’identité RDC et le montage exact sont inconnus ; l’optique, les accessoires électriques, le carénage rouge et les clignotants sont des pièces suivantes. Le lot12 est incomplet.
+
+Les inversions de normales et contours anguleux précédents ont été corrigés avant matière. La macro finale révèle toutefois de petites marches de reflets sur les nervures basses : cette v1 devient un diagnostic conservé, pendant une correction distincte du champ de normales. Les buffers géométriques/normales/UV/indices restent identiques à la grise v4. Shader propre original estimé, sans phototexture ni grain mesuré. Les cartes UV de l’étude n’établissent pas un dépliage final de patine. Contrôles moteur, assemblage, réception artistique et Safari physique restent distincts.

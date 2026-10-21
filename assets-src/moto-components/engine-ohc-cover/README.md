@@ -1,0 +1,13 @@
+# Corps du couvercle latéral OHC UG5 — candidat conditionnel52JV0145
+
+Ce candidat fabrique le corps moulé seulement : contour à trois oreilles percées, face bombée, panneau peu saillant et deux reliefs parallèles. Le petit embout métallique visible sur la photo reste une pièce séparée à fabriquer ; son siège latéral estimé est ouvert. Les trois vis et le joint ne sont pas inclus. Ni distribution ni mécanisme caché ne sont inventés.
+
+La photographie liée52JV0145 et la face nue JV511023 documentent cette architecture. Trois centres de fixation lus en pixels donnent une aide affine vers les coordonnées déjà estimées de la culasse. Ils ne calibrent pas une perspective et ne fournissent aucune cote métrique. L'orientation de la photo est retournée pour aligner une oreille haute et deux basses avec le candidat de culasse ; ce choix ne certifie pas la variante RDC.
+
+Le contour2D est conservé dans les paramètres. Les profondeurs, épaisseurs et rayons restent bornés et estimés. Une surface continue porte le panneau sur la face du corps : les premiers essais de panneau CSG produisant des pointes aux raccords ont été refusés et archivés hors dépôt. Le passage de forme est examiné en gris puis sous reflets avant les vues coûteuses. Les reliefs parallèles ont de vrais bouts arrondis ; leur section positive reste une interprétation, faute de coupe documentaire. Le dos est une cavité aveugle simplifiée et non un relevé de fonderie.
+
+**Le montage sur la culassev2 reste bloqué :358paires de triangles se traversent au bord bas du couvercle et de l'ailette à Z≈44mm.** Le rapport donne les bornes des triangles impliqués, pas des points d'intersection ni une profondeur de pénétration. La face de bride provisoire est à X80mm alors que certaines pointes de cette ailette vont plus loin. Aucune translation ou encoche n'a été utilisée pour masquer ce conflit ; une reprise cohérente du corps de culasse et des portées doit le traiter avec les mêmes photographies.
+
+Collection `WEWA_ENGINE_OHC_COVER_BODY`, un corps fermé et un datum reprenant la matrice de la culasse figée. [Blender](engine-ohc-cover-v1.blend), [GLB](engine-ohc-cover-inspection.glb), [paramètres](parameters.json). Les trois alésages sont vérifiés par rayons ; les vrais triangles GLB sont contrôlés avant rendu. PBR noir propre original, sans texture photographique ni grain présenté comme mesuré. L'exposition de revue est relevée de1,5EV pour lire cette matière sombre. Les photos liées sont argentées : elles ne certifient pas une peinture noire exacte.
+
+Aucune réception artistique, compatibilité OEM RDC, installation complète ou qualification iPhone n'est déclarée. Les anciens états restent des études refusées ou diagnostiques, avec leurs propres empreintes.
