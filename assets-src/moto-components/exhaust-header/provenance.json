@@ -1,0 +1,98 @@
+{
+  "component_id": "MOTO-EXHAUST-HEADER-001",
+  "revision": "exhaust-header-v1",
+  "source_sha256": "651b06d1db9a01cd683492387b0516959dafd513ef6efcba401d6deb8ec9fd5a",
+  "export_sha256": "8f6f84863187770c63ad186aa517da53818eb8babfe0aab4b7fd24e7d5a1cb0c",
+  "reference_plan": "creative/research/exhaust-header/fabrication-plan-v1.json",
+  "reference_plan_sha256": "b0e55af45d9a3243f997f13211ae7dfc589bbe707ed536550e669b922b9ca1ea",
+  "related_catalogue": "creative/research/engine17-exhaust-exterior-v1/report.json",
+  "related_catalogue_sha256": "7efb5ebef9b41371f7f9603e609bde788a75c364ff37f8116a71de169d2475bc",
+  "private_reference_images_redistributed": false,
+  "source_stage": {
+    "geometry_source_sha256": "d3154864e8dea7925585a43a2ae4f977bc62e7744b1b89e43de885327efcb249",
+    "geometry_export_sha256": "1079f1c79a836c5cbc2ed2d8084332da478238a2bc47d41f8429b33d6d1a2fcd",
+    "method": "Adaptive chord-parameter C1 Hermite centreline, transported circular wall sections and rounded finite open mouths; authored source normals and parametric seam atlas. No CSG, global bevel, hidden internals or postexport buffer corrections."
+  },
+  "actual_inputs": [
+    {
+      "path": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+      "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/build-report-v3.json",
+      "sha256": "c4dc6c1b4ed2c82aa365ca9112e552ebef3223f72cf133983f4f8fd96347492b"
+    },
+    {
+      "path": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+      "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6"
+    },
+    {
+      "path": "assets-src/moto-components/engine-cover-right/engine-cover-right-v2.blend",
+      "sha256": "2558ea2479a02caf14e9feddad3f953f5587269083ae7b125a177acd4621515a"
+    },
+    {
+      "path": "assets-src/moto-components/throttle-control/control_geometry.py",
+      "sha256": "430351cb8ef4877a2575174958e86d998664d8dd5941a9d5cb74ff22f47ffe8c"
+    }
+  ],
+  "material": {
+    "recipe": "creative/research/exhaust-header/material-plan-v1.json",
+    "original_color_roughness_maps": {
+      "basecolor": {
+        "path": "assets-src/moto-components/exhaust-header/textures/exhaust-coating-basecolor-v1.png",
+        "sha256": "3a7772612f06d56aea3da7e8e82363cd391d03776b9527c149339a776576c3fb",
+        "minimum_buffer_rgb": [
+          0.1098039299249649,
+          0.11372549831867218,
+          0.12156863510608673
+        ],
+        "maximum_buffer_rgb": [
+          0.11372549831867218,
+          0.12156863510608673,
+          0.125490203499794
+        ],
+        "std_buffer_rgb": [
+          0.0052747237496078014,
+          0.005364175420254469,
+          0.002577559556812048
+        ],
+        "colorspace": "sRGB",
+        "size_px": [
+          512,
+          8192
+        ]
+      },
+      "roughness": {
+        "path": "assets-src/moto-components/exhaust-header/textures/exhaust-coating-roughness-v1.png",
+        "sha256": "b9e98bb01d880972cef4f6281ea37730565d9cac5b26a0c43630e920ef88cae1",
+        "minimum_buffer_rgb": [
+          0.45098042488098145,
+          0.45098042488098145,
+          0.45098042488098145
+        ],
+        "maximum_buffer_rgb": [
+          0.529411792755127,
+          0.529411792755127,
+          0.529411792755127
+        ],
+        "std_buffer_rgb": [
+          0.012712515890598297,
+          0.012712515890598297,
+          0.012712515890598297
+        ],
+        "colorspace": "Non-Color",
+        "size_px": [
+          512,
+          8192
+        ]
+      }
+    },
+    "photographic_pixels_used": false,
+    "normalmap_or_relief": false,
+    "optical_or_scale_measurement": false
+  },
+  "guide_policy": "Head/cylinder/RHcover loaded read-only, no transforms or source mutation. Hide only the local wrapper in isolated views. Actual source relative paths checked, not a universal portability or relocated-checkout proof.",
+  "all_dimensions_estimated": true,
+  "variant_current_code_certified": false,
+  "art_accepted": false
+}

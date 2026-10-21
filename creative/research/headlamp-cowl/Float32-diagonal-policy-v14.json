@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "revision": "headlamp-cowl-shell-study-v14",
+  "stage": "G3 finiteFloat32transport triangulation correction only",
+  "rejected_diagnostic": "creative/reviews/headlamp-cowl-shell-study-v14/normal-geometry-rejection-1.json",
+  "method": "For an actual outputface whose originalinterpolatednormal dot geometricface falls below.9, test only edge-neighbors with the exactsame originalinput/faceID. Flip internaldiagonal iff oriented patchboundary/vertices/ownership remain identical and both replacementfaces pass >.905dot, originalplanenormaldot>.99, UVnonzero, originalplane/barycentric tolerances. No vertex/normalfield/physicalparameter change, no globalremesh or deletion. Reject if no boundedflip exists.",
+  "required_report": "Beforeafter indices/quality, unchangedpositions/boundary, originalsourceIDs and signedpatchvolume delta caused by Float32noncoplanarity, followed by originalsource/actualGLBchecks.",
+  "worker": "assets-src/moto-components/headlamp/cowl/cowl_csg_worker_pad_v5.py",
+  "worker_sha256": "32edf392405e07f55bf9bf7f4d4f7c54b23246e7b74ab5e602f0d4d1e8d9d978",
+  "art_accepted": false,
+  "binding_note": "Manifold Mesh constructor needs writable arrays: native mesh.vert_properties view is readonly even when Ccontiguous. Owned C copies preserve values and satisfy binding, reproduced on independent unitcube. No geometry parameter change."
+}

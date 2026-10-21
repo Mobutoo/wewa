@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "revision": "headlamp-cowl-shell-study-v5",
+  "stage": "G2 angular rear profile before construction; source4 preserved",
+  "source4_sha256": "7ca962d2b262544fa5420d7874e4a55e7ec20dce91bd5ee6ccd2888715fac789",
+  "revised_feature_only": "Rear angularradius/depth distribution; frontellipseprofile, originalmouth/thickness, shortcentralreturn and exact2cutters from4 retained. No change of cameras or material.",
+  "rationale": "Two realphoto/focal comparisons show a roughlyelliptic rearflare produces broad roundwings in upperangularsector. Use distinct sidewall/shoulder contour instead of hiding it withpaint or camera refit. Silhouette extrema are not cross-view corresponding measurements.",
+  "profile_controls_status": "Estimated original controlcurve from these comparisons. Radius+Y at angularstations are cageparameters, not realOEM points, accepted silhouette or mmcalibration. Left/right grosssymmetry provisional; detailed mountingasymmetry remains separate.",
+  "angular_controls_degrees_radius_Y_m": [
+    [
+      0,
+      0.109,
+      0.025
+    ],
+    [
+      30,
+      0.11,
+      0.027
+    ],
+    [
+      60,
+      0.112,
+      0.035
+    ],
+    [
+      75,
+      0.116,
+      0.05
+    ],
+    [
+      85,
+      0.129,
+      0.08
+    ],
+    [
+      95,
+      0.148,
+      0.108
+    ],
+    [
+      105,
+      0.1625,
+      0.121
+    ],
+    [
+      115,
+      0.1655,
+      0.12
+    ],
+    [
+      130,
+      0.154,
+      0.1
+    ],
+    [
+      145,
+      0.1415,
+      0.073
+    ],
+    [
+      160,
+      0.136,
+      0.062
+    ],
+    [
+      180,
+      0.136,
+      0.06
+    ]
+  ],
+  "construction": "Mirror coarsecontrolcurve aroundtheta=pi, periodicCubicSpline forC2continuity; store originalcoefficients as deterministicJSON before Blender. Float64 evaluation, then originalfinitewall+exactexistingCSGcuts. No genericglobalbevel.",
+  "parameter_exploration_bounds": "Peak sideXrough.13..18m; rearcentralY.04..085, bottomradius.12..15. These are candidatechoices, not inferredconfidencebounds.",
+  "frozen_comparison_protocol": "Same native-camera-exploration-v1.json focal24/50 frontaz+7.5/backaz−7.5; no fitting to newshape. Source4native reading remains diagnostic.",
+  "existing_scallop_cutters": {
+    "method": "Same exactCSGtwo elliptical cylinders, no deformation outsidecutters",
+    "centre_X_m": [
+      -0.04,
+      0.04
+    ],
+    "centre_Y_m": 0.105,
+    "radii_X_Y_m": [
+      0.033,
+      0.09
+    ],
+    "Z_cut_bounds_m": [
+      -0.17,
+      -0.065
+    ],
+    "reason": "After short centralreturn, foretipY15mm offers true U negative spaces. Cutters remain estimated shapeparameters, no forkinterface certification."
+  },
+  "still_missing": [
+    "Centralkeyhole",
+    "Sixinside supportpads and theirholes",
+    "Twoadditional rearwallpostholes and shapedreturns",
+    "Observedinside ribs",
+    "Hardware, material, exactRDCidentity/mount"
+  ],
+  "art_accepted": false
+}

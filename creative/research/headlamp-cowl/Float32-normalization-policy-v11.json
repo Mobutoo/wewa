@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "revision": "headlamp-cowl-shell-study-v11",
+  "stage": "G3 Float32transport policy supplementary, not physicalshape/calibration",
+  "raw_source_sha256": "2be96ce6610ab489aa76c53533a2678184b3933d98eaa151c462dbe0f2d69ecb",
+  "raw_export_sha256": "35efac6d382d47280b99511c393006b03fcadd2f208e9626f0c48607b141a2ed",
+  "rejected_diagnostic": "creative/reviews/headlamp-cowl-shell-study-v11/CSG-Float32-quantization-rejection.json",
+  "cause": "Twovertices at Uscallop merge toexactlyidenticalFloat32position, leaving2zeroareatriangles. Not thenewP6root.",
+  "constructor_documentation": "manifold3d.Manifold(mesh).__doc__: retainsproperties and mergesonlypositions accordingto mergevectors; collapsesdegenerate triangles/unnecessaryvertices; allfieldsread forlosslessroundtrip.",
+  "bounded_policy": "Onlyif Float32zeroareaexists, reconstruct Manifold fromitsOWNMesh withruns+faceIDs. Requireallnonzeroorientedtriangles withtheirpositions/originIDs/faceIDs BITIDENTICAL andeveryoutputposition anexactsubset; oneclosedpositivecomponent and0zeroareas. No simplification/toleranceincrease, no newpositions, no normal/tangentfix. Ifanyconditionfails reject.",
+  "probe_result": "creative/reviews/headlamp-cowl-shell-study-v11/Float32-roundtrip-probe.json",
+  "worker_path": "assets-src/moto-components/headlamp/cowl/cowl_csg_worker_pad_v4.py",
+  "worker_sha256": "2f66fd47a6a21f52cbd806555873807295bc7712942d32c1febfe5deda46cdc7",
+  "still_required": "Actualsourcebarycentricnormal/UVinterpolation,trianglequality/closure andactualGLBstrictchecks mustpass; physicalshape/visual/material/mountnotapproved.",
+  "art_accepted": false
+}

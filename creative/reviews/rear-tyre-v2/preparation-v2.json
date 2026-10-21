@@ -1,0 +1,39 @@
+{
+  "component_id": "MOTO-TYRE-REAR-001",
+  "revision": "rear-tyre-v2",
+  "created_at_UTC": "2026-10-21T06:36:13.040532+00:00",
+  "trigger": "V1 native tread-detail actual reading found triangular tongues/shelves at crossings of unequal and tapered depth fields. Kept as G3 rework, not dismissed as reflection.",
+  "immutable_baseline": {
+    "source_path": "assets-src/moto-components/rear-tyre/g3-master-v1/rear-tyre-v1.blend",
+    "source_sha256": "a8c7479df851c41d9407c55217ae3706f6994761349cb69298124feeeb70f600",
+    "v1_manifest_path": "creative/reviews/rear-tyre-v1/manifest.json",
+    "v1_manifest_sha256": "1eb624e63320a9edeb4f00f68070ecc0fe7c0a4ccd1dca1db85ab99df98b6c40"
+  },
+  "method": "Let a,b,c>=0 be the original three authored depth fields. Replace max(a,b,c) at overlaps by (a^4+b^4+c^4)^(1/4), retaining exact single-field depth and zero outside their union. Additional inward depth bounded by maxdepth*(3^(1/4)-1). No new channels or normal-map camouflage.",
+  "theoretical_max_extra_depth_m": 0.001074651644038474,
+  "scope_limits": [
+    "Nominal3.00-17/TL and all original dimensional estimates unchanged.",
+    "No outer diameter, width, sidewall or bead adjustment.",
+    "Author analytical crown normals are recomputed from the corrected surface, never GLB tangent repairs.",
+    "Existing constraint-aligned triangulation retained initially; sample approximation and native macros must pass before accepting the revised candidate.",
+    "No exact brand/mould/repetition assigned from unreadable official photos.",
+    "Expanded correction mask includes original bad tail imprints, without new groove support. All vertices outside the expanded mask and all sidewall/bead/original land vertices remain exact."
+  ],
+  "comparison": [
+    "actual source vertex/index/UV before-after arrays",
+    "sidewall/bead and non-overlap vertex exactness",
+    "global dimensions and bounded extra depth",
+    "gray and narrow reflection native macros at originaljunctioncamera",
+    "strict actualGLB closure/area/UV/T and native sections"
+  ],
+  "art_accepted": false,
+  "first_diagnostic": "diagnostic-p16-review.json",
+  "broader_diagnostic": "diagnostic-p4-review.json",
+  "termination_correction": {
+    "reason": "b starts atax6.5mm and reachesfull depthat12mm while mainlane is10\u00b12.4mm; a short b tail may cross to opposite crown. c can overshoot outward similarly.",
+    "gate": "g=smoothstep(lane-bottom,lane+bottom,absX), bottom=mainwidth/2-lip=0.45mm in the current authored estimates. b*=g, c*=1-g. Both terminate in the existing longitudinal groove flat-floor band.",
+    "mask": "Original multi-family overlaps plus old positive b/c support where these gates change the fields. Not just original overlaps. All other source vertices remain exact.",
+    "restoration": "Depth can decrease locally toward the same reference crown; maximum restoration bounded by original3.4mm field depth. No new positive-depth support permitted.",
+    "previous_nonoverlap_exact_claim_not_reused": true
+  }
+}

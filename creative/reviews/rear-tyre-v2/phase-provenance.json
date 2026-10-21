@@ -1,0 +1,59 @@
+{
+  "component_id": "MOTO-TYRE-REAR-001",
+  "revision": "rear-tyre-v2",
+  "phases": [
+    {
+      "name": "p16 without termination",
+      "source_sha256": "597ea3fdf2ed8474e7d04dbd28f4f10b1b35e95b444ce9e8620926642a5ae523",
+      "GLB_sha256": "0f78810bebf92016b136539cbbb3acd1313761c0af9b39588c03a78edfed12f0",
+      "review": "diagnostic-p16-review.json",
+      "current_candidate": false
+    },
+    {
+      "name": "one broader p4 without termination",
+      "source_sha256": "940f864f3b3a36c8973cb5790097f7e85d7776595ff4fd4bb8d2c171a1513df5",
+      "GLB_sha256": "524590e4d3fc4314ae1ac7ad25096ea15c0e3f2845a9cecc02248a9caff3fe84",
+      "review": "diagnostic-p4-review.json",
+      "current_candidate": false
+    },
+    {
+      "name": "terminated but underresolved source",
+      "source_sha256": "181091dbd9bb8eb45ca31687ca67cd87a073ad15800784d39d0d3b4328fcc2cd",
+      "GLB_sha256": "725b3fce9dec623c14e26003c24b6d848370606ea858567b40877b5156122e77",
+      "proofs": [
+        "gated-unrefined-junction-source-change.json",
+        "gated-unrefined-junction-sampling-check.json"
+      ],
+      "current_candidate": false
+    },
+    {
+      "name": "G3 local conforming refinement",
+      "source_sha256": "85656be309cebd034455f37d5ab4047d0817c41cf6a62b35b75238579c376693",
+      "GLB_sha256": "7aa37c021554fe65868a8eeede90ebf6dce33dca801e77fc824eebae01765975",
+      "proofs": [
+        "junction-local-refinement.json",
+        "junction-change-readback.json",
+        "junction-sampling-check.json",
+        "native-section-check.json",
+        "native-sections-plot.json",
+        "g3-source-interface-check.json",
+        "gray-review.json"
+      ],
+      "indices_differ_from_V1": true,
+      "current_G3_master": true
+    },
+    {
+      "name": "PBR, original V1 rubber shader and PNG pixels unchanged",
+      "source_sha256": "9fe1f6c7fad5939804c9421accca99451c1a870ec6fd342f126a464ee1d46049",
+      "GLB_sha256": "39a1816a6bbd886bf3c16edff3c4aac87f40c2e27276cccc2cfdfa0a05d0f39c",
+      "proofs": [
+        "material-preservation-check.json",
+        "material-buffer-check.json"
+      ],
+      "all_actual_G3_attributes_and_indices_identical": true,
+      "current_candidate": true
+    }
+  ],
+  "all_physical_dimensions_except_nominal_size_estimated": true,
+  "art_accepted": false
+}

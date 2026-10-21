@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-21T06:49:49.683429+00:00",
+  "revision": "fuel-tank-shell-study-v1",
+  "identity": "Current RDC125HD visual exterior, related52PF1825 for visible isolated details only",
+  "frame": {
+    "X_positive": "Rider left",
+    "Y_positive": "Rear",
+    "Z_positive": "Up",
+    "origin": "Existing barclamp guide; estimated assembly relation only"
+  },
+  "geometry_scope": {
+    "included": "Finite upper/lateral skin with independently authored longitudinal crown/lower rail/shoulder/knee controls. Visible skin starts/ends at declared unresolved cut boundaries.",
+    "excluded": [
+      "Hidden tunnel",
+      "Closed underside pan",
+      "Fluid volume or11L capacity reconstruction",
+      "Hidden brackets",
+      "Cap or filler neck before shell review",
+      "Paint or lettering before gray/reflection review"
+    ]
+  },
+  "construction_assumptions": {
+    "units": "m for editable construction only, not measured tank dimensions",
+    "length_exploration_range_m": [
+      0.4,
+      0.52
+    ],
+    "full_width_exploration_range_m": [
+      0.26,
+      0.36
+    ],
+    "height_exploration_range_m": [
+      0.2,
+      0.28
+    ],
+    "skin_thickness_candidate_m": 0.001,
+    "ranges_are": "Design exploration bounds only, not physical uncertainty intervals or manufacturer claims",
+    "bilateral_initialization": "Initial main skin symmetric because no reliable difference is measured. Left/right controls kept separately editable, symmetry explicitly estimated. No random asymmetry added."
+  },
+  "surface_method": [
+    "Piecewise cubic Hermite longitudinal interpolants for crown, lower rail, halfwidth, front/rear sweep and cross-section fullness.",
+    "Cross profile separates crown, shoulder, full flank, knee return and lower edge; not a family of repeated ellipses.",
+    "Evaluate normals from the parametric surface; finite wall is a normal offset. Close only thickness at the declared boundary, not the unknown lower tank/pan volume.",
+    "Do not close a free rear end across the seat occlusion or infer an OEM mount."
+  ],
+  "comparison": {
+    "native_profile_overlays": "1000x700 with fixed R00/R04 working cameras from reference-camera-studies; print their existing residuals and camera limitations unchanged.",
+    "second_projection": "Repeat with fixed50mm perspective hypotheses; no point-fit to tank used to claim calibration.",
+    "independent_oblique": "Observe related product three-quarter shape; an illustrative candidate camera is estimated separately, no false pixel threshold.",
+    "required_previews": [
+      "whole gray left/right and upper oblique",
+      "whole reflection upper oblique",
+      "cross sections and actual cut-boundary view"
+    ],
+    "deformation_rule": "Change a section only if several views support the direction; retain camera/occlusion ambiguity instead of absorbing R04 guide error.",
+    "acceptance": "No new physical cote, calibratedphoto or G2/G3 pass from a small projected residual."
+  },
+  "details_sequence": [
+    "Outer skin gray/reflection",
+    "Filler mouth/neck, nearby holes and visible flange/ear individually after their own detail reading",
+    "Red finish original estimated and original WEWA lettering replacing BOXER",
+    "Seat18 next; mounting compatibility still open"
+  ],
+  "technical_checks": [
+    "Finite coords",
+    "Positive nonzero triangle area source and actual export",
+    "Closed wall, not closed fluid tank; positive wall volume",
+    "No duplicate or self-intersecting boundary offsets",
+    "UV area and normal/face dot actual GLB",
+    "Relative/embedded source dependencies",
+    "Actual whole camera preflight before expensive rendering"
+  ],
+  "art_accepted": false
+}

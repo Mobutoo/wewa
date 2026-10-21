@@ -1,0 +1,687 @@
+{
+  "schema": 1,
+  "snapshot_UTC": "2026-10-21T07:11:18.376894+00:00",
+  "base_HEAD": "a06006e4614895eaace31fa5c16caf808469290d",
+  "mode": "Static read-only admission; no Blender/node reconstruction/render/export was executed",
+  "scope": [
+    "headlamp-cowl-v1",
+    "exhaust-header-v1",
+    "rear-tyre-v2 source-freeze31 only; final review active at this snapshot"
+  ],
+  "closed_root_counts": {
+    "creative/reviews/headlamp-cowl-v1/freeze-manifest.json": 25,
+    "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json": 16,
+    "creative/reviews/headlamp-cowl-v1/production-manifest.json": 24,
+    "creative/reviews/headlamp-cowl-shell-study-v14/study-freeze-manifest.json": 17,
+    "assets-src/moto-components/exhaust-header/preflight-manifest.json": 58,
+    "creative/reviews/exhaust-header-v1/review-manifest.json": 72,
+    "creative/reviews/exhaust-header-v1/production-manifest.json": 20,
+    "creative/reviews/rear-tyre-v2/source-freeze.json": 31
+  },
+  "recursively_verified_manifest_counts": {
+    "creative/reviews/headlamp-cowl-v1/freeze-manifest.json": 25,
+    "creative/reviews/headlamp-cowl-shell-study-v14/study-freeze-manifest.json": 17,
+    "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json": 16,
+    "creative/reviews/headlamp-cowl-v1/production-manifest.json": 24,
+    "assets-src/moto-components/exhaust-header/preflight-manifest.json": 58,
+    "creative/reviews/exhaust-header-v1/review-manifest.json": 72,
+    "creative/reviews/exhaust-header-v1/production-manifest.json": 20,
+    "creative/reviews/rear-tyre-v2/source-freeze.json": 31,
+    "assets-src/moto-components/rear-tyre/v2/construction-input-manifest-v2.json": 4
+  },
+  "closed_manifest_file_SHA_checks": 267,
+  "errors": [],
+  "source_baselines": [
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/headlamp-cowl-shell-study-v14.blend",
+      "bytes": 59854159,
+      "sha256": "1a789dfa0da88a65b070f45ea5200f61600d2ef0099170bba4be34b2059df847"
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/headlamp-cowl-v1.blend",
+      "bytes": 59874641,
+      "sha256": "78f2af6ee6a7e8ddf396899dcbb4215b47bf21e566b96ebaef027d8d4fa13d68"
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/headlamp-cowl-inspection.glb",
+      "bytes": 11534600,
+      "sha256": "7ac45db74019417d0460d473a46dd2f7d47292b1dc4510b1e167a2fb7f941ff5"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/exhaust-header-v1-geometry.blend",
+      "bytes": 3220424,
+      "sha256": "d3154864e8dea7925585a43a2ae4f977bc62e7744b1b89e43de885327efcb249"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/exhaust-header-v1.blend",
+      "bytes": 7117898,
+      "sha256": "651b06d1db9a01cd683492387b0516959dafd513ef6efcba401d6deb8ec9fd5a"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/exhaust-header-inspection.glb",
+      "bytes": 6486268,
+      "sha256": "8f6f84863187770c63ad186aa517da53818eb8babfe0aab4b7fd24e7d5a1cb0c"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/g3-master-v2/rear-tyre-v2.blend",
+      "bytes": 67702029,
+      "sha256": "85656be309cebd034455f37d5ab4047d0817c41cf6a62b35b75238579c376693"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/rear-tyre-v2.blend",
+      "bytes": 68091942,
+      "sha256": "9fe1f6c7fad5939804c9421accca99451c1a870ec6fd342f126a464ee1d46049"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/rear-tyre-v2-inspection.glb",
+      "bytes": 79132912,
+      "sha256": "39a1816a6bbd886bf3c16edff3c4aac87f40c2e27276cccc2cfdfa0a05d0f39c"
+    }
+  ],
+  "stable_extra_inputs": [
+    {
+      "path": "creative/research/headlamp-cowl/native-camera-exploration-v1.json",
+      "sha256": "c3015de90f51e493e0fe00cc6669566309e488f4b29298d223d47b1e00047f03",
+      "bytes": 146888,
+      "already_in_base_HEAD": false,
+      "covered_by_existing_closed_manifest": false,
+      "reason": "Required numerical camera cases for render_candidate_v1.py; it compares documentary path names but does not open photo pixels."
+    },
+    {
+      "path": "creative/reviews/rear-tyre-v2/gray-review.json",
+      "sha256": "b7d0074c7e14c316ebe7a0357b008cb345eb2f29268e0b56c178424ddfa932d9",
+      "bytes": 1822,
+      "already_in_base_HEAD": false,
+      "covered_by_existing_closed_manifest": false,
+      "reason": "Required material.py readiness and exact G3 SHA guard, missing from source-freeze31."
+    },
+    {
+      "path": "creative/reviews/rear-tyre-v2/geometry-check.json",
+      "sha256": "9133ae291e38ef7a94d4dad440995f8ca4bce49ade4cd067d44c34ea1c35941f",
+      "bytes": 2648,
+      "already_in_base_HEAD": false,
+      "covered_by_existing_closed_manifest": false,
+      "reason": "Required render.py/check state for actual PBR GLB, missing from source-freeze31."
+    },
+    {
+      "path": "creative/reviews/rear-tyre-v2/source-geometry-check.json",
+      "sha256": "90af0b42713e00f7b0cf20d508c3569768629c2e5711cf90ed429bf44506bbb5",
+      "bytes": 5824,
+      "already_in_base_HEAD": false,
+      "covered_by_existing_closed_manifest": false,
+      "reason": "Required checks/render.py; actual PBR source/export hashes, missing from source-freeze31."
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/textures/rear-tyre-original-normal.png",
+      "sha256": "b9a9238165ffbaa5c7963dac848190bcdcdf5f1f14cab8e120f90fb930a24df3",
+      "bytes": 219846,
+      "already_in_base_HEAD": true,
+      "covered_by_existing_closed_manifest": false,
+      "reason": "inspect_material.py compares V2 actual pixels with the original V1 maps; already tracked."
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/textures/rear-tyre-original-metallic-roughness.png",
+      "sha256": "ff8bdf0c40e3f637524de6f4e2141e4dfbfe8fc7c18d61dc57073ff28367e132",
+      "bytes": 168722,
+      "already_in_base_HEAD": true,
+      "covered_by_existing_closed_manifest": false,
+      "reason": "inspect_material.py compares V2 actual pixels with original V1; already tracked."
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/parameters.json",
+      "sha256": "33a99669b5554ba1a4e8930eecadb4a14c44debcfc215b1fc4b4fbb85ee44b4f",
+      "bytes": 3864,
+      "already_in_base_HEAD": true,
+      "covered_by_existing_closed_manifest": false,
+      "reason": "read-only preparation-v2 baseline documentation; already tracked."
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/README.md",
+      "sha256": "387a21143c966de6490c6322c82abedbac7328c5bbeb6443baec475992623b5b",
+      "bytes": 2771,
+      "already_in_base_HEAD": false,
+      "covered_by_existing_closed_manifest": true,
+      "reason": "Required public reconstruction directions; retained by preflight58."
+    },
+    {
+      "path": "assets-src/moto-components/throttle-control/control_geometry.py",
+      "sha256": "430351cb8ef4877a2575174958e86d998664d8dd5941a9d5cb74ff22f47ffe8c",
+      "bytes": 6312,
+      "already_in_base_HEAD": true,
+      "covered_by_existing_closed_manifest": true,
+      "reason": "build.py imports only material/check_mesh/tree_world/export/studio. Its csg() function and its external csg.py path are not invoked by this builder."
+    },
+    {
+      "path": "tools/blender_component_camera_preflight.py",
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a",
+      "bytes": 3235,
+      "already_in_base_HEAD": true,
+      "covered_by_existing_closed_manifest": false,
+      "reason": "Shared helper called by cowl and tyre render recipes, already tracked."
+    },
+    {
+      "path": "package.json",
+      "sha256": "a39ce3bafb566edaf92a27fec2c35e3bd40550136b20ac501e56bcaa01c3a998",
+      "bytes": 782,
+      "already_in_base_HEAD": true,
+      "covered_by_existing_closed_manifest": false,
+      "reason": "Node dependency versions used by glTF checkers, already tracked."
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "f7806a8afda3413efb6d3cec57482f51fda453b3350e784f1e6e90cf8604f014",
+      "bytes": 74605,
+      "already_in_base_HEAD": true,
+      "covered_by_existing_closed_manifest": false,
+      "reason": "Node resolved dependency closure, already tracked."
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/requirements.txt",
+      "sha256": "14a70a7e2022953bd15fb5be4cba7f112c7772b0daa72a293737f8fd28b3a6df",
+      "bytes": 136,
+      "already_in_base_HEAD": false,
+      "covered_by_existing_closed_manifest": true,
+      "reason": "Host numerical/plot/readback dependencies; already included by source31."
+    }
+  ],
+  "scripts_read": [
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/build_candidate_v1.py",
+      "sha256": "f167d917aad25c0ea09d86df0404853a033a3d19d711b6cdfa01e58f6d0cfbb3"
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/render_candidate_v1.py",
+      "sha256": "00e26ad9d7b76a030e28feaeda00719fb0a86feacb1776fe50bf9473e08ff3df"
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/check_candidate_v1.mjs",
+      "sha256": "482f312cde1c8b7cab950ad079e0f1077d1234df98bb6dc0d0b93307939cfa1c"
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/check_material_v1.mjs",
+      "sha256": "c34222573f9564a1c6b9a926bf7bdbaaa30bf1f67e604d9fe830b8e0c6f9c903"
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/build_shell_study_v14.py",
+      "sha256": "a9b8c139b7bb6203c3c49fc3545e57f74be579d2bfd26f8af98692a5a4692376"
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/cowl_csg_worker_pad_v5.py",
+      "sha256": "32edf392405e07f55bf9bf7f4d4f7c54b23246e7b74ab5e602f0d4d1e8d9d978"
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/preview_native_cameras_v14.py",
+      "sha256": "14b84675cedce035f7e1236b9effd2ef390d4678e4e7f94ed8a9eea4a9af5623"
+    },
+    {
+      "path": "creative/research/headlamp-cowl/check-source-transport-v14.py",
+      "sha256": "0a9ef64d897e45e2e482f31b297bb7f707c82ac30928c772f8a34561cc840365"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/recipe.py",
+      "sha256": "e44b67fafc2913d04ca8821f909d685f4d62c2aa46934398898adca0ed709e42"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/build.py",
+      "sha256": "218eeeee7e83968cbc8282f1d1f22ec7652ed80878e72adf5cd2766417480145"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/sweep_geometry.py",
+      "sha256": "e091dec7378ad66ecf12f2d2a2d76f7954ab735b0d87ad30cabdd24019b34c00"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/material.py",
+      "sha256": "0889fba35488c6ae93b96f63476042e685416dbc1b27aa0c6ad724c984850ce9"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/check_export.mjs",
+      "sha256": "657d24e5ede5ddc2246e021036749c53c0dc0a129343b07691dc0f30fbce6e0a"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/check_geometry_export.mjs",
+      "sha256": "ec761bc225c9f30d4cc16cecc2ef7f6e441a8208ff08e63fe702808b1f6821bb"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/check_protected_export.mjs",
+      "sha256": "d63eb67e3bcea9141654a13d9c4643541dc2b114c88b6081596116031b2d24ba"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/check_material_export.mjs",
+      "sha256": "0a1c5e72bbe3b15d202cdd137112eee5b030a7cd5a2442857ebc6d09e86fc4e0"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/check_exported_map_pixels.py",
+      "sha256": "9c1f320504cb928535b6dd1fa7a41baaee27240dfb577ee78b71f31d7e628378"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/check_openings.py",
+      "sha256": "387fa42b8a739545a71f55ccd868d1184d6226a837d55d50257d931b967f8f09"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/check_interface.py",
+      "sha256": "aa09e75470a318fc125069d2a88cf098d32ae2c6fb335f1e18d70d4047cc65b7"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/check_reference_paths.py",
+      "sha256": "e905cac3fffc86576613fe404ac8d8ca121465a0e2981cc01f66bd4ef2d5880a"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/check_self_surface.py",
+      "sha256": "70903b921085af46fbce76c821eff8b292bd83638dd05a3b9058fe7711b0a670"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/render.py",
+      "sha256": "4d11a74510d5aaea208ca55efa9777d748003735f79856619d3b9892b05a0a05"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/render_checkpoint.py",
+      "sha256": "3b5ade95f0323f0df3425e6d5c0ea19d36b17674b40e5aa8413819039d5c602d"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/camera_preflight.py",
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/record_preflight.py",
+      "sha256": "3c420edc15492446032448879f236df61278f0bcfe1153987133dc237a31414b"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/record_review.py",
+      "sha256": "c1b12b12fd3805bfe1af67a0d8770b1e0ce1bbed3963dbf8dc816cb8a0911171"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/build.py",
+      "sha256": "ac66d379b84fbf29a6d48e884927158ff766e21a622d4888dc3be52dfff35d18"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/refine_junctions.py",
+      "sha256": "4612957c4dbcc3bac24b76a9feb69e8b71842bbc678468c3f7fc3a5394dead36"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/junction_field.py",
+      "sha256": "efb2809dd074f5185085e8182bc177340357d84b6b75b1623a41ef4395441ba1"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/material.py",
+      "sha256": "5ea8b372b33424267062319a26a5f801d82348d779a87e2f0c9b586a7e916fb1"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/verify_change.py",
+      "sha256": "bf2f09410fdf8a57a82862c7b2491355e78264c5d752f61edd967876dd075b40"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/check_junction_sampling.py",
+      "sha256": "00e2fbf947763859f8a5d316bf3705d7820be92b4ed4099ea40160a63970cda7"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/inspect_interfaces.py",
+      "sha256": "8d03985e02cd66e05336d4ac5b5cc92909d056dd977491e0834094f9c4faaa76"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/inspect_sections.py",
+      "sha256": "956fcc548e6d048e389c4a5a919c12ede2bf34a15a5067ad134be98bc732d62c"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/plot_sections.py",
+      "sha256": "871f9c03ea583e9dce34afdbb029892730869974fb406abaa2929378435f80a0"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/plot_field.py",
+      "sha256": "35385c9723e3aea5b7cb3ab5f9166c7d48183ac162fe99812266aca1c6aa2852"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/inspect_material.py",
+      "sha256": "9e04f3b28f3b96f1b1204df7f83aa3487d6eef7e21bd9095b2dd46f65057abe8"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/check_export.mjs",
+      "sha256": "24919609d35fc44d4e10fc968a152adb9529120780eef55258d4cc913e9c0f85"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/check_material_preservation.mjs",
+      "sha256": "cc1f9f4cd1161bb4932c85c52f8dc537192231886ffbb0cbac9bd58108c32bd2"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/render.py",
+      "sha256": "ca9b50c82acf45ecd256bc306de915f420e751329e92007cfb8f5680d4a4d974"
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/v2/record.py",
+      "sha256": "599ab3c89a7b36a077f015ed882097b3731addd9b7401313a2364e90d9d95443"
+    }
+  ],
+  "admission": {
+    "headlamp_cowl_v1": {
+      "status": "Admissible editable G3 master14 → original PBR candidate and final render/check recipes, with native-camera numerical JSON added explicitly. Existing final25/source16 and root production24 are closed.",
+      "restart_inputs": [
+        "assets-src/moto-components/headlamp/cowl/headlamp-cowl-shell-study-v14.blend",
+        "creative/reviews/headlamp-cowl-shell-study-v14/source-geometry-check.json",
+        "creative/reviews/headlamp-cowl-shell-study-v14/study-freeze-manifest.json",
+        "creative/research/headlamp-cowl/material-plan-v1.json",
+        "assets-src/moto-components/headlamp/cowl/build_candidate_v1.py"
+      ],
+      "master_self_containment_evidence": "creative/reviews/headlamp-cowl-shell-study-v14/source-transport-dependency-check.json reports external_libraries0 and external_file_images0; source14 SHA matches frozen entry. Not reopened by this static audit.",
+      "full_constructor_ancestry_selected": false,
+      "limitation": "build_shell_study_v14.py is retained historical construction code in the frozen17, but opens13; full origin reconstruction is NOT closed by the minimum publication. A caller may restart from the delivered editable14, not claim running every historical builder from a blank file. No ancestor models or trial directories swept in.",
+      "historical_diagnostic_exclusions": [
+        "preview_native_cameras_v14.py requires /tmp/wewa-cowl-source14-points.json and native-camera-exploration-v1.py; not required by render_candidate_v1.py and not claimed replayable in the minimal admission.",
+        "prepare-remaining-ribs-v14.py reads source13 and low-pads-and-ribs-addendum-v1/addendum.json; plan generation is not required when the authored remaining-partial-ribs-plan-v14.json is delivered.",
+        "check-source-transport-v14.py uses an absolute checkout root; reproducibility at arbitrary paths is not certified."
+      ]
+    },
+    "exhaust_header_v1": {
+      "status": "Constructor build.py → numeric sweep_geometry.py → editable geometry BLEND/GLB → material.py → real exported-map and protected-buffer checks; all required authored data/helpers/guide masters are covered by58/72.",
+      "additional_missing_public_numeric_or_geometry_input": null,
+      "transitive_helper_note": "control_geometry.py is imported, but only material/check_mesh/tree_world/export/studio are called. Its unrelated csg() implementation is not called; front-brake-plate/csg.py is not a header construction dependency.",
+      "guide_links": "reference-path-check.json records three relative direct Library targets (head3, cylinder1, RHcover2), all frozen in58; this audit did not reopen or relocate them.",
+      "regeneration_limits": [
+        "recipe.py and build.py intentionally refuse rebuilding in a frozen working directory; use a separate unfrozen work copy, preserve original historical output files.",
+        "recipe.py hardcodes the local Blender4.3.2 executable path; equivalent environment setup/path adaptation is needed outside this workspace.",
+        "check_material_export.mjs produces private extracted map/UV caches, then check_exported_map_pixels.py consumes them; these caches are regenerable predecessors, not omitted author inputs.",
+        "record_preflight.py also reads private preview checkpoints to reproduce the historical seal; no new seal or artistic decision can be recreated merely by replaying geometry/PBR."
+      ]
+    },
+    "rear_tyre_v2": {
+      "status": "Stable source31 only. Original V1 G3 inputs closed by construction-input-manifest4; V2 G3 master present for PBR restart. Final96/manifest/root QA closure remains pending at snapshot.",
+      "constructor_route": [
+        "restore unchanged V1 G3 source with construction-input-manifest-v2.json",
+        "build.py with preparation-v2.json, parameters.json and junction_field.py",
+        "refine_junctions.py against unrefined source/report generated by build.py",
+        "source/readback/interface/export/gray review",
+        "material.py after restoring refined G3 master and its source-geometry check to the active paths",
+        "PBR check_export/render.py with source-geometry-check.json and geometry-check.json"
+      ],
+      "material_restart_note": "Restore V2 g3-master-v2 BLEND/GLB/source-geometry-check.json to active paths in an isolated copy, as its README directs. gray-review.json pins that exact G3 source/export and is mandatory for material.py. Current PBR source SHA cannot be passed to the gray-readiness guard.",
+      "not_yet_admitted": [
+        "final manifest.json until A closes it",
+        "active final96 PNG/checkpoints",
+        "active render-report.json",
+        "source-render-review.json unless actually closed",
+        "future root production-manifest and root captures"
+      ],
+      "no_private_photo_inputs": true
+    }
+  },
+  "optional_historical_cowl_ancestry_snapshot_not_selected": [
+    {
+      "script": "assets-src/moto-components/headlamp/cowl/build_shell_study_v14.py",
+      "script_sha256": "a9b8c139b7bb6203c3c49fc3545e57f74be579d2bfd26f8af98692a5a4692376",
+      "direct_input_snapshot": [
+        {
+          "path": "assets-src/moto-components/headlamp/cowl/headlamp-cowl-shell-study-v13.blend",
+          "exists": true,
+          "sha256": "d4b6c85a940a1d3b458ab2b723917819613d6f5c891edb94024cd371504bbd6f",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "creative/reviews/headlamp-cowl-shell-study-v13/source-geometry-check.json",
+          "exists": true,
+          "sha256": "80a0fd062315e72899fe9e05fe16aac94d09c76325af6a2b6aa3ac0846ef7a3c",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "creative/research/headlamp-cowl/remaining-partial-ribs-plan-v14.json",
+          "exists": true,
+          "sha256": "29e7744a7cf5463f54e0cef9de78638887d9f0c2d9036c60af3db252e60438d2",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": true
+        },
+        {
+          "path": "assets-src/moto-components/headlamp/cowl/cowl_csg_worker_pad_v5.py",
+          "exists": true,
+          "sha256": "32edf392405e07f55bf9bf7f4d4f7c54b23246e7b74ab5e602f0d4d1e8d9d978",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": true
+        }
+      ]
+    },
+    {
+      "script": "assets-src/moto-components/headlamp/cowl/build_shell_study_v13.py",
+      "script_sha256": "5df7a37a00dbac17ce9dfeeda6c7377de3edf862513ae9e3ae9439477055f95b",
+      "direct_input_snapshot": [
+        {
+          "path": "assets-src/moto-components/headlamp/cowl/headlamp-cowl-shell-study-v12.blend",
+          "exists": true,
+          "sha256": "d923a27791ac0cda5ad207e689f0e0d7fcc15a3322859a89179aadd30ebe1fc9",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "creative/reviews/headlamp-cowl-shell-study-v12/source-geometry-check.json",
+          "exists": true,
+          "sha256": "819a7491b9cded4bf7ab92817fd8dbb09cf382319b492be0501603747f7d3667",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "creative/research/headlamp-cowl/first-central-rib-plan-v13.json",
+          "exists": true,
+          "sha256": "b02bf77b12c5c5185999f13e4ccd0024d15b0108a37ab2138a191c37aebd04fc",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "assets-src/moto-components/headlamp/cowl/cowl_csg_worker_pad_v4.py",
+          "exists": true,
+          "sha256": "2f66fd47a6a21f52cbd806555873807295bc7712942d32c1febfe5deda46cdc7",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        }
+      ]
+    },
+    {
+      "script": "assets-src/moto-components/headlamp/cowl/build_shell_study_v12.py",
+      "script_sha256": "bfb9fa72c770c6882a1517176b3d4f3fc2d7b4a85a14e45e3ae4f3803e4b5e71",
+      "direct_input_snapshot": [
+        {
+          "path": "assets-src/moto-components/headlamp/cowl/headlamp-cowl-shell-study-v11.blend",
+          "exists": true,
+          "sha256": "d9e4d28618b6b8830b1c98191a19314d60fc2cccf413cc85e3c9488e99528a39",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "creative/reviews/headlamp-cowl-shell-study-v11/source-geometry-check.json",
+          "exists": true,
+          "sha256": "c93fbd8820f825fc73ba1ef4acab23cfdae698b0e73bf6b0af1eaba61d8f7661",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "creative/research/headlamp-cowl/upper-wall-openings-plan-v12.json",
+          "exists": true,
+          "sha256": "257d856686333844c6cdb5aea7e6d6ae79b0671cefe1609d63eaeb33c1268a23",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "assets-src/moto-components/headlamp/cowl/cowl_csg_worker_pad_v4.py",
+          "exists": true,
+          "sha256": "2f66fd47a6a21f52cbd806555873807295bc7712942d32c1febfe5deda46cdc7",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        }
+      ]
+    },
+    {
+      "script": "assets-src/moto-components/headlamp/cowl/build_shell_study_v11.py",
+      "script_sha256": "3368cdca8674cf83ef8db8f83790d35edb35f3f2fe5dc3725a0275201c682b3e",
+      "direct_input_snapshot": [
+        {
+          "path": "assets-src/moto-components/headlamp/cowl/headlamp-cowl-raw-return-study-v11.blend",
+          "exists": true,
+          "sha256": "2be96ce6610ab489aa76c53533a2678184b3933d98eaa151c462dbe0f2d69ecb",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "creative/reviews/headlamp-cowl-raw-return-study-v11/source-geometry-check.json",
+          "exists": true,
+          "sha256": "3220266f5a346347185e7c07127f17485d7244b01bd1f2d88a6f625037212e86",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "assets-src/moto-components/headlamp/cowl/headlamp-cowl-shell-study-v7.blend",
+          "exists": true,
+          "sha256": "5a34b8c6aa9be86542a0d00e3615fb6d589e4a945d30141e778b192f53e6e65e",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "creative/reviews/headlamp-cowl-shell-study-v7/source-geometry-check.json",
+          "exists": true,
+          "sha256": "7953709f34e3dcb817d9b4e95ca202d0f70e4de4695ac83d656ea763718d0b14",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "creative/research/headlamp-cowl/sixth-support-return-plan-v11.json",
+          "exists": true,
+          "sha256": "fd810ee54d567160b86d5a6c4321a5e6cce9e6a209cbefe927bc4e54329d4efe",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "assets-src/moto-components/headlamp/cowl/rear-profile-v5.json",
+          "exists": true,
+          "sha256": "1c8b30aa0339925c49f12806b94257a8657103651c30462a5c686952497a5f63",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "assets-src/moto-components/headlamp/cowl/build_raw_study_v5.py",
+          "exists": true,
+          "sha256": "688e5d48fd6e24c5018f2d4c544f4fcff8bacf4510c2e85d4e048ce84f8c6e5a",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "assets-src/moto-components/headlamp/cowl/cowl_csg_worker_pad_v4.py",
+          "exists": true,
+          "sha256": "2f66fd47a6a21f52cbd806555873807295bc7712942d32c1febfe5deda46cdc7",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        }
+      ]
+    },
+    {
+      "script": "assets-src/moto-components/headlamp/cowl/build_raw_return_study_v11.py",
+      "script_sha256": "c89817fe92da6d74cd388c38514741ed938a023f8141ffb6301b6d55c9c2f817",
+      "direct_input_snapshot": [
+        {
+          "path": "assets-src/moto-components/headlamp/cowl/headlamp-cowl-raw-study-v5.blend",
+          "exists": true,
+          "sha256": "438e37f5f0c711a1512dfa6fbecbde4688e3aedd2f05212a8aa6f23f9fcde4f8",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "assets-src/moto-components/headlamp/cowl/rear-profile-v5.json",
+          "exists": true,
+          "sha256": "1c8b30aa0339925c49f12806b94257a8657103651c30462a5c686952497a5f63",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "creative/research/headlamp-cowl/angular-rear-profile-plan-v5.json",
+          "exists": true,
+          "sha256": "3fb45cc80251cd21a179730395efdd4c3a2182fba5486e04b98c4dd609352c0c",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "creative/research/headlamp-cowl/sixth-support-return-plan-v11.json",
+          "exists": true,
+          "sha256": "fd810ee54d567160b86d5a6c4321a5e6cce9e6a209cbefe927bc4e54329d4efe",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        }
+      ]
+    },
+    {
+      "script": "assets-src/moto-components/headlamp/cowl/build_shell_study_v7.py",
+      "script_sha256": "46ed4d9ec07058893f331c7ec570de13070a61ede36e6d2fe1a5373daf093308",
+      "direct_input_snapshot": [
+        {
+          "path": "assets-src/moto-components/headlamp/cowl/headlamp-cowl-raw-study-v5.blend",
+          "exists": true,
+          "sha256": "438e37f5f0c711a1512dfa6fbecbde4688e3aedd2f05212a8aa6f23f9fcde4f8",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "creative/reviews/headlamp-cowl-raw-study-v5/source-geometry-check.json",
+          "exists": true,
+          "sha256": "1f2a04058b527fb54d93b163f4cd6a7df3ada080819bcae6c58b27fb7e392734",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "creative/research/headlamp-cowl/central-keyhole-plan-v7.json",
+          "exists": true,
+          "sha256": "0dd2f0b159881f025e8d1c33d4d615adb94f26a87b549d6399195b7df9fd76d3",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "assets-src/moto-components/headlamp/cowl/cowl_csg_worker_v1.py",
+          "exists": true,
+          "sha256": "7cc9fbe6b9dfa6ccf02a19d4c030e1b86be14b8ee0e6dbf92b8035e67fcbbb08",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        }
+      ]
+    },
+    {
+      "script": "assets-src/moto-components/headlamp/cowl/build_raw_study_v5.py",
+      "script_sha256": "688e5d48fd6e24c5018f2d4c544f4fcff8bacf4510c2e85d4e048ce84f8c6e5a",
+      "direct_input_snapshot": [
+        {
+          "path": "assets-src/moto-components/headlamp/cowl/rear-profile-v5.json",
+          "exists": true,
+          "sha256": "1c8b30aa0339925c49f12806b94257a8657103651c30462a5c686952497a5f63",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        },
+        {
+          "path": "creative/research/headlamp-cowl/angular-rear-profile-plan-v5.json",
+          "exists": true,
+          "sha256": "3fb45cc80251cd21a179730395efdd4c3a2182fba5486e04b98c4dd609352c0c",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        }
+      ]
+    },
+    {
+      "script": "assets-src/moto-components/headlamp/cowl/prepare_profile_v5.py",
+      "script_sha256": "9e34d73683ac5b18051703d2ae970601384dd6c3d0195cad6cf74e997cf8360d",
+      "direct_input_snapshot": [
+        {
+          "path": "creative/research/headlamp-cowl/angular-rear-profile-plan-v5.json",
+          "exists": true,
+          "sha256": "3fb45cc80251cd21a179730395efdd4c3a2182fba5486e04b98c4dd609352c0c",
+          "already_in_base_HEAD": false,
+          "selected_by_minimum_closed_manifests": false
+        }
+      ]
+    }
+  ],
+  "private_vs_generated": {
+    "photo_rasters_as_public_texture_inputs": 0,
+    "documentary_photo_path_strings": "Metadata/provenance only; not followed or published as image files. render_candidate_v1.py uses path suffixes to choose numeric camera cases and never loads those photo pixels.",
+    "no_directory_sweep": true,
+    "global_catalogue_pin": false,
+    "legacy_reports_files_SHA": "Historical snapshots, never interpreted recursively as live manifests."
+  },
+  "no_claims": [
+    "No clean regeneration was executed",
+    "No artistic/OEM/fit/mobile reception",
+    "No full cowl ancestry rebuild closure",
+    "No completed tyre final96 review"
+  ],
+  "index_before_sha256": "20db04829c32baf5d835fcb89ba2fee60a90ec1d6c27d75d8e62f0b2520e93e9",
+  "index_after_sha256": "20db04829c32baf5d835fcb89ba2fee60a90ec1d6c27d75d8e62f0b2520e93e9"
+}

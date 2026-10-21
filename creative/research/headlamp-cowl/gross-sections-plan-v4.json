@@ -1,0 +1,127 @@
+{
+  "schema": 1,
+  "revision": "headlamp-cowl-shell-study-v4",
+  "stage": "G2 revised grosssections after two nativephotos/4camera previews, before construction",
+  "identity": "RelatedPF7401X3/PF74013F, exact125HD currentRDC mould/paint/mount notcertified",
+  "baseline_source3_sha256": "71a99ffc0912dc26c43702cc3c1aec197c28d7f09893e08b76fa4e0d48ed6f94",
+  "native_camera_study": {
+    "path": "creative/research/headlamp-cowl/native-camera-exploration-v1.json",
+    "sha256": "c3015de90f51e493e0fe00cc6669566309e488f4b29298d223d47b1e00047f03",
+    "poses_and_focals_frozen_for_before_after": true,
+    "not_calibrated_physical_camera": true
+  },
+  "conditional_central_reference": {
+    "path": "creative/research/headlamp-cowl/central-bridge-projection-study-v1.json",
+    "sha256": "2f4afe152246920a83812cba6133c612f26f70ed13ae0270a5ca4ce43e4db927",
+    "use": "Explore shortercentralreturn/largerbottomsection only. Ranges are choices under unverifiedcameras and assumedmouth radius, not measuredOEM points or confidence intervals."
+  },
+  "frame": "Blender+XriderLEFT,+Yrear,+Zup; isolatedunplaced, frontmidapertureR103.5mm asbefore; all detailed dimensions estimated",
+  "gross_section_parameters_m": {
+    "front_outer_X_semiaxis": {
+      "value": 0.112,
+      "range": [
+        0.105,
+        0.125
+      ]
+    },
+    "front_outer_Z_top_semiaxis": {
+      "value": 0.115,
+      "range": [
+        0.108,
+        0.128
+      ]
+    },
+    "front_outer_Z_bottom_semiaxis": {
+      "value": 0.138,
+      "range": [
+        0.125,
+        0.15
+      ]
+    },
+    "rear_X_semiaxis": {
+      "value": 0.16,
+      "range": [
+        0.135,
+        0.185
+      ]
+    },
+    "rear_Z_top_semiaxis": {
+      "value": 0.109,
+      "range": [
+        0.095,
+        0.125
+      ]
+    },
+    "rear_Z_bottom_semiaxis": {
+      "value": 0.136,
+      "range": [
+        0.12,
+        0.15
+      ]
+    },
+    "rear_depth_top": {
+      "value": 0.025,
+      "range": [
+        0.012,
+        0.055
+      ]
+    },
+    "rear_depth_side": {
+      "value": 0.12,
+      "range": [
+        0.08,
+        0.16
+      ]
+    },
+    "rear_depth_bottom": {
+      "value": 0.06,
+      "range": [
+        0.04,
+        0.085
+      ]
+    },
+    "nominal_normal_wall": {
+      "value": 0.0025,
+      "range": [
+        0.0018,
+        0.0034
+      ]
+    }
+  },
+  "surface_formula": {
+    "w": "(1−cos(theta))/2; theta0=top,pi/2=+X,pi=bottom",
+    "front_outer_radius": "Ellipse radial intersection with Xsemi.112 and smoothly changing Zsemi.115+.023*w^2*(3−2w)",
+    "rear_radius": "Ellipse radial intersection with Xsemi.160 and Zsemi.109+.027*w^2*(3−2w)",
+    "rear_depth": ".025+.035*w+.155*sin(theta)^2*w",
+    "cross_section": "Same clampedcubic spline construction and Float64wall/rollededges as1, with these bounded grosssections; frontaperture/clear radius unchanged. No material or normal repair hides a shapechange."
+  },
+  "two_actual_rear_scallops": {
+    "method": "Same exactCSGtwo elliptical cylinders, no deformation outsidecutters",
+    "centre_X_m": [
+      -0.04,
+      0.04
+    ],
+    "centre_Y_m": 0.105,
+    "radii_X_Y_m": [
+      0.033,
+      0.09
+    ],
+    "Z_cut_bounds_m": [
+      -0.17,
+      -0.065
+    ],
+    "reason": "After short centralreturn, foretipY15mm offers true U negative spaces. Cutters remain estimated shapeparameters, no forkinterface certification."
+  },
+  "next_comparisons": [
+    "Exactsame4frozen nativecamera settings, no refit to newshape",
+    "Wholeouter/inside gray and reflection before any paint",
+    "Only then the observed centralkeyhole, sixsupportpads, two additionalendwall holes and ribs, one feature at a time"
+  ],
+  "unresolved": [
+    "Exactcamera/lens/crop and conicbias from occludingpads",
+    "Outerrearwall/post shape and asymmetries not yet built",
+    "Mounting hole positions/axes/dimensions and hardware",
+    "ExactRDCcode, paint and installedinterfaces"
+  ],
+  "art_accepted": false
+}

@@ -1,0 +1,16 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 01:31:14)
+Read blend: "/workspace/wewa-github/assets-src/moto-components/exhaust-header/exhaust-header-v1-geometry.blend"
+Traceback (most recent call last):
+  File "/workspace/wewa-github/assets-src/moto-components/exhaust-header/render_geometry.py", line 19, in <module>
+    guides.hide_render=not context;s.camera.location=position;s.camera.rotation_euler=(aim-position).to_track_quat('-Z','Y').to_euler();s.camera.data.type='ORTHO'if ortho else'PERSP';s.camera.data.ortho_scale=.80;s.camera.data.lens=65;bpy.context.view_layer.update();frame=check_component_camera(s,[o]+(keepouts if context else[]),allow_crop=crop,margin=.005)
+                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/wewa-github/assets-src/moto-components/exhaust-header/camera_preflight.py", line 50, in check_component_camera
+    raise ValueError(json.dumps(result))
+ValueError: {"schema": "wewa.camera-preflight.v1", "camera": "CONTROL_CAMERA", "camera_type": "PERSP", "camera_clip_m": [0.0005000000237487257, 1000.0], "nearest_actual_vertex_depth_m": -0.10782888018013531, "farthest_actual_vertex_depth_m": 0.36910705440309427, "projected_uv_min": [-13945.986872495274, -43107.28007922013], "projected_uv_max": [6316.409432649009, 100076.44304176302], "allow_deliberate_crop": true, "whole_component_margin": 0.005, "mesh_rows": [{"object": "Hollow front and lower exhaust tube - conditional RDC", "vertices": 59136, "depth_m": [-0.10782888018013531, 0.36910705440309427], "projected_uv_min": [-13945.986872495274, -43107.28007922013], "projected_uv_max": [6316.409432649009, 100076.44304176302], "finite": true}], "actual_vertices_outside_depth_range": true, "projected_extent_outside_margin": true, "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception"}
+
+Error: script failed, file: '/workspace/wewa-github/assets-src/moto-components/exhaust-header/render_geometry.py', exiting.
+Info: Read library: '/workspace/wewa-github/assets-src/moto-components/engine-cover-right/engine-cover-right-v2.blend', '//../engine-cover-right/engine-cover-right-v2.blend', parent '<direct>'
+Info: Read library: '/workspace/wewa-github/assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend', '//../engine-cylinder/engine-cylinder-v1.blend', parent '<direct>'
+Info: Read library: '/workspace/wewa-github/assets-src/moto-components/engine-head/engine-head-v3.blend', '//../engine-head/engine-head-v3.blend', parent '<direct>'
+
+Blender quit

@@ -1,0 +1,3376 @@
+{
+  "schema": 1,
+  "source_geometry_file": "assets-src/moto-components/headlamp/cowl/headlamp-cowl-shell-study-v3.glb",
+  "source_geometry_export_sha256": "948fe07bb1c10260859123ffa363b78510920298192f4fc7384fa17999b852c3",
+  "source_geometry_changed": false,
+  "sampled_actual_export_vertices": 21468,
+  "assumed_front_clear_radius_m": 0.10225,
+  "radius_is_measured_RDC": false,
+  "invalidated_manual_guides": [
+    {
+      "files": [
+        "rear-negative-spaces-plan-v2.json",
+        "rear-negative-spaces-plan-v3.json"
+      ],
+      "field": "rear_scallops.coarse_manual_2D_guides_not_metric",
+      "reason": "Image padding/origin misread; ~190px Y error, original\u00b18px bounds FALSE. Never used by recipes as calibration. Preserve as rejected history, never reuse."
+    },
+    {
+      "file": "central-keyhole-plan-v4.json",
+      "field": "coarse_native_guide.centre_px",
+      "reason": "Initial[400,55] is FALSE; actual openkeyhole near[394,244], native padding retained. No source4built."
+    }
+  ],
+  "method": "White aperture island thresholds210..240; convex hull retainednative boundary, robust ellipse fit. Each view has an independent pinhole pose/focal-assumption sweep. Actual exported geometry projected without deformation. No camera principalpoint/crop/lensdistortion calibration or full contour fitting.",
+  "fixed_assumptions": [
+    "Sensor36mm is render convention, not known photographic sensor.",
+    "Eye azimuth fixedpergrid; rotation, distance and imageprincipalpoint fitted to the front conic only.",
+    "Projected centralpost is an unmeasured sourceproxy; actualrear mountingpost geometry still absent.",
+    "No inter-view physical scale or OEMdimension recovered."
+  ],
+  "fitted_conic_residual_is_not_native_photo_accuracy": true,
+  "native_boundary_limits": "Convexhull is affected by occludingpads, thresholds, lens/crop and possiblegeometryvariante. Fittedconic errors nearzero only reproduce the estimatedellipse, not the truepixel contour. Thresholds do not bound allerrors.",
+  "two_actual_photos": [
+    {
+      "photo": {
+        "path": "/workspace/wewa-assets/references/headlamp/cowl-black-8494.jpg",
+        "sha256": "32e232147372dabf9c8638d2a91aa83026fb6db9639b5a1633cef8d25a560460",
+        "native_pixels": [
+          800,
+          800
+        ],
+        "aperture_threshold_sensitivity": [
+          {
+            "threshold_min_RGB": 210,
+            "white_aperture_area_px": 85121,
+            "bbox_xyxy_native_px": [
+              207,
+              251,
+              594,
+              546
+            ],
+            "ellipse_cx_cy_a_b_angle_rad": [
+              406.76040451713436,
+              393.7832031360295,
+              204.9835742046753,
+              153.39024090596524,
+              0.024713869996690147
+            ],
+            "convex_hull_points": 63,
+            "hull_geometric_residual_RMS_px": 4.414627319389276,
+            "hull_max_abs_residual_px": 24.38476902475632
+          },
+          {
+            "threshold_min_RGB": 220,
+            "white_aperture_area_px": 85012,
+            "bbox_xyxy_native_px": [
+              207,
+              251,
+              594,
+              546
+            ],
+            "ellipse_cx_cy_a_b_angle_rad": [
+              406.68242392086046,
+              393.8185423600315,
+              204.91616566572637,
+              153.16252096166744,
+              0.027483721972745793
+            ],
+            "convex_hull_points": 65,
+            "hull_geometric_residual_RMS_px": 4.358199118461312,
+            "hull_max_abs_residual_px": 24.25308983492085
+          },
+          {
+            "threshold_min_RGB": 230,
+            "white_aperture_area_px": 84866,
+            "bbox_xyxy_native_px": [
+              207,
+              252,
+              594,
+              546
+            ],
+            "ellipse_cx_cy_a_b_angle_rad": [
+              407.0636692804536,
+              393.4091260156554,
+              205.06910680093816,
+              153.5222505925081,
+              0.022285404907449242
+            ],
+            "convex_hull_points": 67,
+            "hull_geometric_residual_RMS_px": 4.45411410464576,
+            "hull_max_abs_residual_px": 26.020552159806854
+          },
+          {
+            "threshold_min_RGB": 240,
+            "white_aperture_area_px": 84655,
+            "bbox_xyxy_native_px": [
+              207,
+              252,
+              594,
+              546
+            ],
+            "ellipse_cx_cy_a_b_angle_rad": [
+              407.0216991004993,
+              393.6841369439205,
+              204.7665354075937,
+              153.1661417642706,
+              0.022327736302888593
+            ],
+            "convex_hull_points": 61,
+            "hull_geometric_residual_RMS_px": 4.573529478666114,
+            "hull_max_abs_residual_px": 25.66878034445394
+          }
+        ],
+        "native_body_bbox_minRGB180": [
+          176,
+          195,
+          623,
+          604
+        ]
+      },
+      "view_side_Y_sign_assumed": -1,
+      "camera_candidates": [
+        {
+          "focal_mm_render_assumption_sensor36mm": 65,
+          "azimuth_degrees_render_assumption": 12.5,
+          "eye_world_m_estimated": [
+            0.11953366783159028,
+            -0.53918153196187,
+            0.46728610854927827
+          ],
+          "distance_to_front_origin_m_estimated": 0.7234371634061592,
+          "elevation_degrees_estimated": 40.23505999063103,
+          "roll_degrees_estimated": 162.33358985986104,
+          "principal_point_native_px_estimated": [
+            407.38604630959117,
+            378.9456841197258
+          ],
+          "aperture_conic_RMS_px": 3.262661042147226e-14,
+          "aperture_conic_max_abs_px": 1.0235940825405495e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.48923676714261,
+            219.24397514206268,
+            649.5741169008322,
+            604.0442894420545
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 28.375410346966603,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            360.9600524697079,
+            397.91638729306914
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 50,
+          "azimuth_degrees_render_assumption": -12.5,
+          "eye_world_m_estimated": [
+            -0.09194897525506944,
+            -0.41475502458605384,
+            0.3621304248915185
+          ],
+          "distance_to_front_origin_m_estimated": 0.5582246761850888,
+          "elevation_degrees_estimated": 40.44501812801008,
+          "roll_degrees_estimated": 200.14434841128877,
+          "principal_point_native_px_estimated": [
+            407.4830737714343,
+            374.5925481024599
+          ],
+          "aperture_conic_RMS_px": 3.5144249951265405e-14,
+          "aperture_conic_max_abs_px": 1.3236199998538418e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            164.58292041437733,
+            220.59302663632923,
+            650.5112546798345,
+            606.2778680069563
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 28.428402134542647,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            449.99355119440173,
+            395.2531868330789
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 65,
+          "azimuth_degrees_render_assumption": -7.5,
+          "eye_world_m_estimated": [
+            -0.07098459533577847,
+            -0.5391815319618698,
+            0.47708048819189464
+          ],
+          "distance_to_front_origin_m_estimated": 0.723437163406159,
+          "elevation_degrees_estimated": 41.25897796954424,
+          "roll_degrees_estimated": 192.56672207242497,
+          "principal_point_native_px_estimated": [
+            407.38604630959117,
+            378.9456841197258
+          ],
+          "aperture_conic_RMS_px": 3.6177294541780435e-14,
+          "aperture_conic_max_abs_px": 1.0749903677994937e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            163.2958431761073,
+            219.20767121778104,
+            650.8059314976578,
+            601.0853414599229
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 28.80542038688952,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            434.26142769295797,
+            396.7109816957594
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 65,
+          "azimuth_degrees_render_assumption": -12.5,
+          "eye_world_m_estimated": [
+            -0.11953366783159022,
+            -0.5391815319618697,
+            0.4672861085492783
+          ],
+          "distance_to_front_origin_m_estimated": 0.723437163406159,
+          "elevation_degrees_estimated": 40.235059990631036,
+          "roll_degrees_estimated": 200.2201294320129,
+          "principal_point_native_px_estimated": [
+            407.38604630959117,
+            378.9456841197258
+          ],
+          "aperture_conic_RMS_px": 4.082659652122416e-14,
+          "aperture_conic_max_abs_px": 1.1274804560912331e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            163.96505267232163,
+            219.26427738729322,
+            650.8347867202881,
+            607.4339072982414
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 29.01610451299022,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            452.92067416052816,
+            399.9661063178799
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 50,
+          "azimuth_degrees_render_assumption": -7.5,
+          "eye_world_m_estimated": [
+            -0.054603534873675745,
+            -0.41475502458605373,
+            0.36960994664898883
+          ],
+          "distance_to_front_origin_m_estimated": 0.5582246761850888,
+          "elevation_degrees_estimated": 41.46151391767022,
+          "roll_degrees_estimated": 192.52263709149156,
+          "principal_point_native_px_estimated": [
+            407.4830737714343,
+            374.5925481024599
+          ],
+          "aperture_conic_RMS_px": 4.1341765528324074e-14,
+          "aperture_conic_max_abs_px": 1.0168226923892227e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            163.84538721011495,
+            220.5377648985054,
+            650.467084065142,
+            600.3576905620976
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 29.173829266501397,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            432.55446362534354,
+            392.23145390734356
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 65,
+          "azimuth_degrees_render_assumption": 25,
+          "eye_world_m_estimated": [
+            0.25142447748956404,
+            -0.5391815319618697,
+            0.4116191651362951
+          ],
+          "distance_to_front_origin_m_estimated": 0.723437163406159,
+          "elevation_degrees_estimated": 34.678925226707676,
+          "roll_degrees_estimated": 141.94037714095336,
+          "principal_point_native_px_estimated": [
+            407.38604630959117,
+            378.9456841197258
+          ],
+          "aperture_conic_RMS_px": 4.684317767672871e-14,
+          "aperture_conic_max_abs_px": 1.329103187377735e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.2253590950548,
+            219.4706190192187,
+            646.9996966676061,
+            625.1399377988862
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 29.92110372786763,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            308.8969871685726,
+            413.0823410529953
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 65,
+          "azimuth_degrees_render_assumption": 0,
+          "eye_world_m_estimated": [
+            0.0,
+            -0.5391815319618698,
+            0.48233246312932415
+          ],
+          "distance_to_front_origin_m_estimated": 0.723437163406159,
+          "elevation_degrees_estimated": 41.81467380266971,
+          "roll_degrees_estimated": 181.27685964593698,
+          "principal_point_native_px_estimated": [
+            407.38604630959117,
+            378.9456841197258
+          ],
+          "aperture_conic_RMS_px": 3.829317100217683e-14,
+          "aperture_conic_max_abs_px": 1.209692513253004e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.6668558828608,
+            219.20754790221943,
+            650.7033046050819,
+            594.5095752846414
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 30.064879134244837,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            407.0374426963136,
+            394.5857814270307
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 65,
+          "azimuth_degrees_render_assumption": 7.5,
+          "eye_world_m_estimated": [
+            0.07098459533577849,
+            -0.53918153196187,
+            0.4770804881918945
+          ],
+          "distance_to_front_origin_m_estimated": 0.723437163406159,
+          "elevation_degrees_estimated": 41.258977969544226,
+          "roll_degrees_estimated": 169.986997219449,
+          "principal_point_native_px_estimated": [
+            407.38604630959117,
+            378.9456841197258
+          ],
+          "aperture_conic_RMS_px": 4.747125740476379e-14,
+          "aperture_conic_max_abs_px": 1.391553805123707e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.50226481261282,
+            219.20714360549152,
+            650.1934307264041,
+            598.3085704814733
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 30.256931223182182,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            379.74580368522965,
+            395.49587777819613
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 50,
+          "azimuth_degrees_render_assumption": 25,
+          "eye_world_m_estimated": [
+            0.19340344422274158,
+            -0.4147550245860537,
+            0.31966883871492696
+          ],
+          "distance_to_front_origin_m_estimated": 0.5582246761850886,
+          "elevation_degrees_estimated": 34.935410852201784,
+          "roll_degrees_estimated": 142.12113746519864,
+          "principal_point_native_px_estimated": [
+            407.4830737714343,
+            374.5925481024599
+          ],
+          "aperture_conic_RMS_px": 5.1285793650288496e-14,
+          "aperture_conic_max_abs_px": 1.4013754502767183e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.55614217893117,
+            220.7720986781303,
+            646.3555652577477,
+            623.2771626928728
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 30.275555789978586,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            315.27417197214623,
+            407.41089286144654
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 50,
+          "azimuth_degrees_render_assumption": 12.5,
+          "eye_world_m_estimated": [
+            0.09194897525506944,
+            -0.41475502458605384,
+            0.3621304248915185
+          ],
+          "distance_to_front_origin_m_estimated": 0.5582246761850888,
+          "elevation_degrees_estimated": 40.44501812801008,
+          "roll_degrees_estimated": 162.4093708805852,
+          "principal_point_native_px_estimated": [
+            407.48307377143436,
+            374.5925481024599
+          ],
+          "aperture_conic_RMS_px": 3.725614218051395e-14,
+          "aperture_conic_max_abs_px": 1.1349520943799307e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.81904309478227,
+            220.56378920255213,
+            648.9893277865285,
+            603.1852086865597
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 30.48688872801976,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            364.0942575647081,
+            393.33856932470076
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 50,
+          "azimuth_degrees_render_assumption": 7.5,
+          "eye_world_m_estimated": [
+            0.05460353487367575,
+            -0.4147550245860538,
+            0.36960994664898883
+          ],
+          "distance_to_front_origin_m_estimated": 0.5582246761850888,
+          "elevation_degrees_estimated": 41.46151391767022,
+          "roll_degrees_estimated": 170.0310822003824,
+          "principal_point_native_px_estimated": [
+            407.4830737714343,
+            374.5925481024599
+          ],
+          "aperture_conic_RMS_px": 4.159576086441427e-14,
+          "aperture_conic_max_abs_px": 1.104803479560892e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.8291116106725,
+            220.52386592586367,
+            649.649115506423,
+            597.8298946665494
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 32.28125302252566,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            381.65066262567467,
+            391.09685425560355
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 35,
+          "azimuth_degrees_render_assumption": -7.5,
+          "eye_world_m_estimated": [
+            -0.03822247441157301,
+            -0.29032851721023756,
+            0.26347772410574183
+          ],
+          "distance_to_front_origin_m_estimated": 0.3939189212967308,
+          "elevation_degrees_estimated": 41.97935796266893,
+          "roll_degrees_estimated": 192.41206290490337,
+          "principal_point_native_px_estimated": [
+            407.663835981095,
+            366.48265353769676
+          ],
+          "aperture_conic_RMS_px": 3.287654260484832e-14,
+          "aperture_conic_max_abs_px": 9.374925519315811e-14,
+          "projected_mesh_vertex_bbox_native_px": [
+            164.4252765843528,
+            222.77936794141647,
+            650.2759216421064,
+            599.1456394476487
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 32.28840806285924,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            429.7469140173874,
+            384.4863264942179
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 35,
+          "azimuth_degrees_render_assumption": 25,
+          "eye_world_m_estimated": [
+            0.1353824109559191,
+            -0.29032851721023756,
+            0.2292445669014806
+          ],
+          "distance_to_front_origin_m_estimated": 0.3939189212967308,
+          "elevation_degrees_estimated": 35.5884296257108,
+          "roll_degrees_estimated": 142.57261588264163,
+          "principal_point_native_px_estimated": [
+            407.663835981095,
+            366.48265353769676
+          ],
+          "aperture_conic_RMS_px": 5.28214532662782e-14,
+          "aperture_conic_max_abs_px": 1.4645168068873138e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.76229110197065,
+            222.95789409816368,
+            645.5354526281837,
+            619.9295878684874
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 32.2890186909476,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            325.91374386146424,
+            397.59004116317396
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 50,
+          "azimuth_degrees_render_assumption": 0,
+          "eye_world_m_estimated": [
+            0.0,
+            -0.4147550245860538,
+            0.37362154472483133
+          ],
+          "distance_to_front_origin_m_estimated": 0.5582246761850888,
+          "elevation_degrees_estimated": 42.01330580319689,
+          "roll_degrees_estimated": 181.27685964593698,
+          "principal_point_native_px_estimated": [
+            407.4830737714343,
+            374.5925481024599
+          ],
+          "aperture_conic_RMS_px": 3.899401805583095e-14,
+          "aperture_conic_max_abs_px": 1.235460490410053e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            163.09951827722696,
+            220.54980188187577,
+            650.2967156015716,
+            594.3436765929539
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 32.35083226860309,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            407.1339229836704,
+            390.257194387124
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 35,
+          "azimuth_degrees_render_assumption": -12.5,
+          "eye_world_m_estimated": [
+            -0.0643642826785486,
+            -0.29032851721023756,
+            0.25833835906686525
+          ],
+          "distance_to_front_origin_m_estimated": 0.39391892129673073,
+          "elevation_degrees_estimated": 40.98155774282538,
+          "roll_degrees_estimated": 199.95437344093943,
+          "principal_point_native_px_estimated": [
+            407.663835981095,
+            366.48265353769676
+          ],
+          "aperture_conic_RMS_px": 3.347350223969168e-14,
+          "aperture_conic_max_abs_px": 1.0294817449067076e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            165.3083443912907,
+            222.84694977123328,
+            650.3087836905187,
+            604.3605944746944
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 32.53270898774179,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            445.16604935658086,
+            387.110186366696
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 35,
+          "azimuth_degrees_render_assumption": 12.5,
+          "eye_world_m_estimated": [
+            0.06436428267854857,
+            -0.2903285172102375,
+            0.2583383590668653
+          ],
+          "distance_to_front_origin_m_estimated": 0.39391892129673073,
+          "elevation_degrees_estimated": 40.981557742825395,
+          "roll_degrees_estimated": 162.59934585093453,
+          "principal_point_native_px_estimated": [
+            407.663835981095,
+            366.48265353769676
+          ],
+          "aperture_conic_RMS_px": 4.712902670911666e-14,
+          "aperture_conic_max_abs_px": 1.5639333125879064e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.93710101731156,
+            222.7912379410046,
+            648.2556989553146,
+            601.783731759162
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 33.528094455753696,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            369.27978511245044,
+            385.41875022062516
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 28,
+          "azimuth_degrees_render_assumption": 25,
+          "eye_world_m_estimated": [
+            0.10830592876473528,
+            -0.2322628137681901,
+            0.18829643278874558
+          ],
+          "distance_to_front_origin_m_estimated": 0.3180121624499218,
+          "elevation_degrees_estimated": 36.3064926369829,
+          "roll_degrees_estimated": 143.054912745817,
+          "principal_point_native_px_estimated": [
+            407.8150102356795,
+            359.70022225469864
+          ],
+          "aperture_conic_RMS_px": 3.8391685896140644e-14,
+          "aperture_conic_max_abs_px": 1.300748185385573e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.50829529113494,
+            224.60947223085165,
+            645.2019549661366,
+            617.2848050665252
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 33.73191627696666,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            333.7947390326781,
+            389.9816110630881
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 28,
+          "azimuth_degrees_render_assumption": -12.5,
+          "eye_world_m_estimated": [
+            -0.051491426142838886,
+            -0.23226281376819014,
+            0.2110316417988901
+          ],
+          "distance_to_front_origin_m_estimated": 0.3180121624499218,
+          "elevation_degrees_estimated": 41.57471460758391,
+          "roll_degrees_estimated": 199.75033879582784,
+          "principal_point_native_px_estimated": [
+            407.81501023567944,
+            359.70022225469864
+          ],
+          "aperture_conic_RMS_px": 4.499996479421491e-14,
+          "aperture_conic_max_abs_px": 1.4760349233214603e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            165.53776671601048,
+            224.48481170644496,
+            650.5150667194823,
+            602.9825986341793
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 34.374087676500466,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            441.63561012021364,
+            380.7966558444672
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 28,
+          "azimuth_degrees_render_assumption": -7.5,
+          "eye_world_m_estimated": [
+            -0.030577979529258417,
+            -0.23226281376819005,
+            0.21505977767696766
+          ],
+          "distance_to_front_origin_m_estimated": 0.3180121624499218,
+          "elevation_degrees_estimated": 42.55228647476753,
+          "roll_degrees_estimated": 192.29321409335446,
+          "principal_point_native_px_estimated": [
+            407.8150102356795,
+            359.70022225469864
+          ],
+          "aperture_conic_RMS_px": 3.752327977342681e-14,
+          "aperture_conic_max_abs_px": 1.0750415261397336e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            164.61419709058248,
+            224.44923111484516,
+            650.3936251003727,
+            598.2630330092421
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 34.75042798984686,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            427.7002763653286,
+            378.4728667293131
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 24,
+          "azimuth_degrees_render_assumption": 25,
+          "eye_world_m_estimated": [
+            0.09283365322691596,
+            -0.1990824118013058,
+            0.16566861899128293
+          ],
+          "distance_to_front_origin_m_estimated": 0.2751326683230453,
+          "elevation_degrees_estimated": 37.023379152113904,
+          "roll_degrees_estimated": 143.5220771809748,
+          "principal_point_native_px_estimated": [
+            407.9412214161233,
+            354.03775902073505
+          ],
+          "aperture_conic_RMS_px": 5.545482037029165e-14,
+          "aperture_conic_max_abs_px": 1.5935031427290887e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.03533569005415,
+            225.8513936734711,
+            645.1113368875328,
+            615.2192950162143
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 35.05127825098612,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            339.7913174710929,
+            383.97273110343986
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 35,
+          "azimuth_degrees_render_assumption": -25,
+          "eye_world_m_estimated": [
+            -0.13538241095591916,
+            -0.2903285172102377,
+            0.22924456690148043
+          ],
+          "distance_to_front_origin_m_estimated": 0.3939189212967308,
+          "elevation_degrees_estimated": 35.58842962571077,
+          "roll_degrees_estimated": 219.9811034092323,
+          "principal_point_native_px_estimated": [
+            407.663835981095,
+            366.48265353769676
+          ],
+          "aperture_conic_RMS_px": 3.596959512617768e-14,
+          "aperture_conic_max_abs_px": 1.3569123050963302e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            168.06347393590974,
+            223.0184062445785,
+            650.5274862776234,
+            623.1246424891381
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 35.36383971312774,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            487.9467184806588,
+            401.20160951294264
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 35,
+          "azimuth_degrees_render_assumption": 7.5,
+          "eye_world_m_estimated": [
+            0.03822247441157302,
+            -0.2903285172102376,
+            0.2634777241057417
+          ],
+          "distance_to_front_origin_m_estimated": 0.39391892129673073,
+          "elevation_degrees_estimated": 41.97935796266891,
+          "roll_degrees_estimated": 170.14165638697062,
+          "principal_point_native_px_estimated": [
+            407.663835981095,
+            366.48265353769676
+          ],
+          "aperture_conic_RMS_px": 4.7925696203336284e-14,
+          "aperture_conic_max_abs_px": 1.5813981546872387e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            163.0064319459086,
+            222.76134323530388,
+            649.0571464537051,
+            597.0511144100686
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 35.46181086234341,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            384.8005163333081,
+            383.48451197039367
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 24,
+          "azimuth_degrees_render_assumption": -12.5,
+          "eye_world_m_estimated": [
+            -0.044135508122433345,
+            -0.19908241180130584,
+            0.18470580773952067
+          ],
+          "distance_to_front_origin_m_estimated": 0.27513266832304534,
+          "elevation_degrees_estimated": 42.17007716326314,
+          "roll_degrees_estimated": 199.55164529116644,
+          "principal_point_native_px_estimated": [
+            407.9412214161233,
+            354.03775902073505
+          ],
+          "aperture_conic_RMS_px": 3.790110051143045e-14,
+          "aperture_conic_max_abs_px": 1.2041563594790805e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            165.48880944148897,
+            225.748898049139,
+            650.8555421443514,
+            601.9461233063548
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 35.71564922369969,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            438.9749740596826,
+            375.7929259793163
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 28,
+          "azimuth_degrees_render_assumption": -25,
+          "eye_world_m_estimated": [
+            -0.10830592876473526,
+            -0.23226281376819005,
+            0.18829643278874555
+          ],
+          "distance_to_front_origin_m_estimated": 0.31801216244992175,
+          "elevation_degrees_estimated": 36.3064926369829,
+          "roll_degrees_estimated": 219.49880654605695,
+          "principal_point_native_px_estimated": [
+            407.8150102356795,
+            359.70022225469864
+          ],
+          "aperture_conic_RMS_px": 5.926656147856867e-14,
+          "aperture_conic_max_abs_px": 1.8756429653876725e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            168.36531561131955,
+            224.6656025160111,
+            650.6742919673259,
+            620.1482073543118
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 36.08387938680094,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            480.41255166098534,
+            393.2495894041955
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 20,
+          "azimuth_degrees_render_assumption": 25,
+          "eye_world_m_estimated": [
+            0.07736137768909666,
+            -0.16590200983442152,
+            0.14405740334291658
+          ],
+          "distance_to_front_origin_m_estimated": 0.23293946656365322,
+          "elevation_degrees_estimated": 38.20177833182217,
+          "roll_degrees_estimated": 144.26001468638614,
+          "principal_point_native_px_estimated": [
+            408.1177939933703,
+            346.11583226851343
+          ],
+          "aperture_conic_RMS_px": 3.4331455630239084e-14,
+          "aperture_conic_max_abs_px": 1.058512815856583e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            160.8931355068924,
+            227.459100955908,
+            645.3326525404691,
+            612.5715258522679
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 36.20023876720054,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            347.43358633332684,
+            375.99972103695563
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 50,
+          "azimuth_degrees_render_assumption": -25,
+          "eye_world_m_estimated": [
+            -0.1929985861616598,
+            -0.41388680367223973,
+            0.3204604487854425
+          ],
+          "distance_to_front_origin_m_estimated": 0.5578939323475296,
+          "elevation_degrees_estimated": 35.058399262835096,
+          "roll_degrees_estimated": 220.10704565915762,
+          "principal_point_native_px_estimated": [
+            407.39180206674547,
+            374.5525922038426
+          ],
+          "aperture_conic_RMS_px": 0.17748786891458526,
+          "aperture_conic_max_abs_px": 0.2640794808915056,
+          "projected_mesh_vertex_bbox_native_px": [
+            167.1277003081138,
+            221.00604585461664,
+            651.0203083079577,
+            626.3738513070668
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 36.390639062676506,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            497.9246957327798,
+            411.3799934912549
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 24,
+          "azimuth_degrees_render_assumption": -7.5,
+          "eye_world_m_estimated": [
+            -0.02620969673936435,
+            -0.19908241180130576,
+            0.18808835765874699
+          ],
+          "distance_to_front_origin_m_estimated": 0.2751326683230453,
+          "elevation_degrees_estimated": 43.12779154879766,
+          "roll_degrees_estimated": 192.17738666946718,
+          "principal_point_native_px_estimated": [
+            407.9412214161233,
+            354.03775902073505
+          ],
+          "aperture_conic_RMS_px": 4.4379830122195086e-14,
+          "aperture_conic_max_abs_px": 1.5196760173091545e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            164.50653486432236,
+            225.71727001479343,
+            650.6833214713207,
+            597.7076673880704
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 36.41717268474272,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            426.16189562121554,
+            373.69926063668913
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 35,
+          "azimuth_degrees_render_assumption": 0,
+          "eye_world_m_estimated": [
+            0.0,
+            -0.29032851721023767,
+            0.26623573886705126
+          ],
+          "distance_to_front_origin_m_estimated": 0.3939189212967308,
+          "elevation_degrees_estimated": 42.52130464279731,
+          "roll_degrees_estimated": 181.27685964593698,
+          "principal_point_native_px_estimated": [
+            407.663835981095,
+            366.48265353769676
+          ],
+          "aperture_conic_RMS_px": 3.604576572283224e-14,
+          "aperture_conic_max_abs_px": 8.997128518230426e-14,
+          "projected_mesh_vertex_bbox_native_px": [
+            163.52048129735456,
+            222.75558499793058,
+            649.8897763848245,
+            594.175086840392
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 36.855988849842525,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            407.30086577258953,
+            382.76730798319664
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 28,
+          "azimuth_degrees_render_assumption": 7.5,
+          "eye_world_m_estimated": [
+            0.030577979529258417,
+            -0.23226281376819005,
+            0.21505977767696768
+          ],
+          "distance_to_front_origin_m_estimated": 0.3180121624499218,
+          "elevation_degrees_estimated": 42.552286474767534,
+          "roll_degrees_estimated": 170.26050519851952,
+          "principal_point_native_px_estimated": [
+            407.8150102356795,
+            359.70022225469864
+          ],
+          "aperture_conic_RMS_px": 4.3135698104835466e-14,
+          "aperture_conic_max_abs_px": 1.1210049442808928e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.85485260616161,
+            224.454392289133,
+            648.8611297830669,
+            596.5153913666908
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 36.902182515560185,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            387.11305747985443,
+            377.5682143554589
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 65,
+          "azimuth_degrees_render_assumption": -25,
+          "eye_world_m_estimated": [
+            -0.2506062562099485,
+            -0.537426850765226,
+            0.4132103553690857
+          ],
+          "distance_to_front_origin_m_estimated": 0.722754393524689,
+          "elevation_degrees_estimated": 34.86998464311199,
+          "roll_degrees_estimated": 220.10704565915762,
+          "principal_point_native_px_estimated": [
+            407.27716632867174,
+            378.89758938042814
+          ],
+          "aperture_conic_RMS_px": 0.27599624984683124,
+          "aperture_conic_max_abs_px": 0.4063016158847853,
+          "projected_mesh_vertex_bbox_native_px": [
+            166.39119189991902,
+            219.78658294089723,
+            651.4991829364643,
+            628.3761846534966
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 36.92788083965735,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            503.94709855740143,
+            417.2729562802775
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 20,
+          "azimuth_degrees_render_assumption": -12.5,
+          "eye_world_m_estimated": [
+            -0.03677959010202778,
+            -0.16590200983442155,
+            0.15932539021695705
+          ],
+          "distance_to_front_origin_m_estimated": 0.23293946656365322,
+          "elevation_degrees_estimated": 43.155258499322976,
+          "roll_degrees_estimated": 199.235695986145,
+          "principal_point_native_px_estimated": [
+            408.1177939933703,
+            346.11583226851343
+          ],
+          "aperture_conic_RMS_px": 3.993347518680765e-14,
+          "aperture_conic_max_abs_px": 1.3624338626489964e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            165.06280794927608,
+            227.37838149388102,
+            651.7841923468451,
+            602.364556905434
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 36.981471240690986,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            435.61552799030255,
+            369.1103616384303
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 24,
+          "azimuth_degrees_render_assumption": -25,
+          "eye_world_m_estimated": [
+            -0.09283365322691597,
+            -0.19908241180130581,
+            0.16566861899128296
+          ],
+          "distance_to_front_origin_m_estimated": 0.27513266832304534,
+          "elevation_degrees_estimated": 37.0233791521139,
+          "roll_degrees_estimated": 219.03164211089913,
+          "principal_point_native_px_estimated": [
+            407.9412214161233,
+            354.03775902073505
+          ],
+          "aperture_conic_RMS_px": 3.8517763197199956e-14,
+          "aperture_conic_max_abs_px": 1.1197534360218189e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            168.38032702822593,
+            225.92264634530505,
+            651.0760055035591,
+            617.8117913179058
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 37.62021239730673,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            474.68966049048413,
+            386.9794930741441
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 24,
+          "azimuth_degrees_render_assumption": 7.5,
+          "eye_world_m_estimated": [
+            0.02620969673936437,
+            -0.19908241180130587,
+            0.1880883576587469
+          ],
+          "distance_to_front_origin_m_estimated": 0.27513266832304534,
+          "elevation_degrees_estimated": 43.127791548797624,
+          "roll_degrees_estimated": 170.3763326224068,
+          "principal_point_native_px_estimated": [
+            407.9412214161233,
+            354.03775902073505
+          ],
+          "aperture_conic_RMS_px": 3.65710339539687e-14,
+          "aperture_conic_max_abs_px": 1.0246868356845046e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.5174987055318,
+            225.75934225456785,
+            648.8913323559167,
+            596.3818646954687
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 38.11682402796096,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            388.8626034881398,
+            372.86789317427474
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 28,
+          "azimuth_degrees_render_assumption": 12.5,
+          "eye_world_m_estimated": [
+            0.05149142614283887,
+            -0.2322628137681901,
+            0.21103164179889014
+          ],
+          "distance_to_front_origin_m_estimated": 0.3180121624499218,
+          "elevation_degrees_estimated": 41.57471460758392,
+          "roll_degrees_estimated": 162.80338049604615,
+          "principal_point_native_px_estimated": [
+            407.8150102356795,
+            359.70022225469864
+          ],
+          "aperture_conic_RMS_px": 4.193879908796788e-14,
+          "aperture_conic_max_abs_px": 1.3583546567727175e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.6624793419448,
+            224.47919133945868,
+            647.9669777030624,
+            600.6979400366977
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 38.1717149956707,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            373.08802422792746,
+            379.26879219669144
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 28,
+          "azimuth_degrees_render_assumption": 0,
+          "eye_world_m_estimated": [
+            0.0,
+            -0.2322628137681901,
+            0.21722274468056632
+          ],
+          "distance_to_front_origin_m_estimated": 0.3180121624499218,
+          "elevation_degrees_estimated": 43.08356224241983,
+          "roll_degrees_estimated": 181.27685964593698,
+          "principal_point_native_px_estimated": [
+            407.8150102356795,
+            359.70022225469864
+          ],
+          "aperture_conic_RMS_px": 3.388422309874035e-14,
+          "aperture_conic_max_abs_px": 9.913036676668255e-14,
+          "projected_mesh_vertex_bbox_native_px": [
+            163.52134391278955,
+            224.42589260947298,
+            649.8382187021133,
+            594.0030621999522
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 38.327341309653974,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            407.43064117328373,
+            376.94493604657777
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 20,
+          "azimuth_degrees_render_assumption": -25,
+          "eye_world_m_estimated": [
+            -0.07736137768909665,
+            -0.16590200983442152,
+            0.14405740334291664
+          ],
+          "distance_to_front_origin_m_estimated": 0.23293946656365325,
+          "elevation_degrees_estimated": 38.201778331822176,
+          "roll_degrees_estimated": 218.2937046054878,
+          "principal_point_native_px_estimated": [
+            408.1177939933703,
+            346.11583226851343
+          ],
+          "aperture_conic_RMS_px": 4.5933908957299555e-14,
+          "aperture_conic_max_abs_px": 1.1989153080424462e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            168.06626294843693,
+            227.50257083089295,
+            651.9945822514032,
+            614.8980880872383
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 38.64879721734055,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            467.41022714206673,
+            378.6738917708742
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 24,
+          "azimuth_degrees_render_assumption": 0,
+          "eye_world_m_estimated": [
+            0.0,
+            -0.1990824118013059,
+            0.18990570947165902
+          ],
+          "distance_to_front_origin_m_estimated": 0.2751326683230454,
+          "elevation_degrees_estimated": 43.648573630335626,
+          "roll_degrees_estimated": 181.27685964593698,
+          "principal_point_native_px_estimated": [
+            407.9412214161233,
+            354.03775902073505
+          ],
+          "aperture_conic_RMS_px": 4.334745681326527e-14,
+          "aperture_conic_max_abs_px": 1.27119939753955e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            163.31554129539782,
+            225.6982746610128,
+            649.9923717872578,
+            595.5842241641574
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 38.89135628711975,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            407.53378758267667,
+            372.317273514233
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 24,
+          "azimuth_degrees_render_assumption": 12.5,
+          "eye_world_m_estimated": [
+            0.044135508122433324,
+            -0.1990824118013058,
+            0.18470580773952072
+          ],
+          "distance_to_front_origin_m_estimated": 0.27513266832304534,
+          "elevation_degrees_estimated": 42.17007716326315,
+          "roll_degrees_estimated": 163.00207400070752,
+          "principal_point_native_px_estimated": [
+            407.9412214161233,
+            354.03775902073505
+          ],
+          "aperture_conic_RMS_px": 5.052614046204483e-14,
+          "aperture_conic_max_abs_px": 1.3143075777621077e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.19340599891288,
+            225.73596612710628,
+            647.9308639164412,
+            599.90833761883
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 39.15172237254522,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            375.9689644323112,
+            374.38857905085797
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 16,
+          "azimuth_degrees_render_assumption": -25,
+          "eye_world_m_estimated": [
+            -0.061889102151277305,
+            -0.1327216078675372,
+            0.12428847791907424
+          ],
+          "distance_to_front_origin_m_estimated": 0.19207527665859486,
+          "elevation_degrees_estimated": 40.32196604735157,
+          "roll_degrees_estimated": 217.05456296760784,
+          "principal_point_native_px_estimated": [
+            408.38012423352717,
+            334.34638890524303
+          ],
+          "aperture_conic_RMS_px": 5.9569941834703e-14,
+          "aperture_conic_max_abs_px": 1.2700785307200243e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            166.81377929949952,
+            229.5909266751979,
+            654.5328993573385,
+            615.941809417586
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 39.32287219917788,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            457.88205003074046,
+            367.13495224191286
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 20,
+          "azimuth_degrees_render_assumption": 7.5,
+          "eye_world_m_estimated": [
+            0.021841413949470298,
+            -0.1659020098344215,
+            0.16205021089942062
+          ],
+          "distance_to_front_origin_m_estimated": 0.23293946656365322,
+          "elevation_degrees_estimated": 44.08104668096333,
+          "roll_degrees_estimated": 170.56069366907735,
+          "principal_point_native_px_estimated": [
+            408.1177939933703,
+            346.11583226851343
+          ],
+          "aperture_conic_RMS_px": 3.877006605617715e-14,
+          "aperture_conic_max_abs_px": 1.1440074888707423e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            161.72181332632752,
+            227.3543032961302,
+            649.2404042888079,
+            600.287773973284
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 39.45446941952085,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            391.0823980586355,
+            366.57154685002513
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 20,
+          "azimuth_degrees_render_assumption": 0,
+          "eye_world_m_estimated": [
+            0.0,
+            -0.16590200983442152,
+            0.16351549839650922
+          ],
+          "distance_to_front_origin_m_estimated": 0.23293946656365322,
+          "elevation_degrees_estimated": 44.584919934111376,
+          "roll_degrees_estimated": 181.27685964593698,
+          "principal_point_native_px_estimated": [
+            408.1177939933703,
+            346.11583226851343
+          ],
+          "aperture_conic_RMS_px": 3.490960839403128e-14,
+          "aperture_conic_max_abs_px": 9.444681743800812e-14,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.7275688385167,
+            227.33260145393845,
+            650.4855224205039,
+            599.6323795733884
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 39.70052361539062,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            407.6720529349398,
+            366.1139999930768
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 20,
+          "azimuth_degrees_render_assumption": 12.5,
+          "eye_world_m_estimated": [
+            0.03677959010202778,
+            -0.16590200983442155,
+            0.15932539021695705
+          ],
+          "distance_to_front_origin_m_estimated": 0.23293946656365322,
+          "elevation_degrees_estimated": 43.155258499322976,
+          "roll_degrees_estimated": 163.31802330572899,
+          "principal_point_native_px_estimated": [
+            408.1177939933703,
+            346.11583226851343
+          ],
+          "aperture_conic_RMS_px": 4.29032623721619e-14,
+          "aperture_conic_max_abs_px": 1.1173477277671498e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            161.23935600684652,
+            227.35166602304477,
+            648.2599426093304,
+            601.5968635965887
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 39.79746724750328,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            379.62282288735713,
+            367.8623349201466
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 20,
+          "azimuth_degrees_render_assumption": -7.5,
+          "eye_world_m_estimated": [
+            -0.021841413949470305,
+            -0.16590200983442155,
+            0.16205021089942057
+          ],
+          "distance_to_front_origin_m_estimated": 0.23293946656365322,
+          "elevation_degrees_estimated": 44.08104668096332,
+          "roll_degrees_estimated": 191.9930256227966,
+          "principal_point_native_px_estimated": [
+            408.1177939933703,
+            346.11583226851343
+          ],
+          "aperture_conic_RMS_px": 4.0895000713806166e-14,
+          "aperture_conic_max_abs_px": 1.2520666155517834e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            164.08888205536755,
+            227.350216379372,
+            651.398253117351,
+            600.7763027607865
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 40.07293141755053,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            424.22484590816555,
+            367.31026201567903
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 16,
+          "azimuth_degrees_render_assumption": -12.5,
+          "eye_world_m_estimated": [
+            -0.02942367208162222,
+            -0.1327216078675372,
+            0.13569131965518133
+          ],
+          "distance_to_front_origin_m_estimated": 0.19207527665859483,
+          "elevation_degrees_estimated": 44.94669732347334,
+          "roll_degrees_estimated": 198.6995347479833,
+          "principal_point_native_px_estimated": [
+            408.38012423352717,
+            334.34638890524303
+          ],
+          "aperture_conic_RMS_px": 3.7955578679812634e-14,
+          "aperture_conic_max_abs_px": 1.1167832303305389e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            163.6891986310462,
+            229.49661117768306,
+            653.7831796359148,
+            609.939189528121
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 40.776465495916916,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            431.25645492335167,
+            359.67929937369917
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 16,
+          "azimuth_degrees_render_assumption": 0,
+          "eye_world_m_estimated": [
+            0.0,
+            -0.1327216078675372,
+            0.13884482960676436
+          ],
+          "distance_to_front_origin_m_estimated": 0.19207527665859483,
+          "elevation_degrees_estimated": 46.29167407050703,
+          "roll_degrees_estimated": 181.27685964593698,
+          "principal_point_native_px_estimated": [
+            408.38012423352717,
+            334.34638890524303
+          ],
+          "aperture_conic_RMS_px": 3.6505274747518705e-14,
+          "aperture_conic_max_abs_px": 1.097689771157331e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            161.11855871305204,
+            229.4745625297516,
+            651.901081558598,
+            607.8225861111723
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 41.05210722190741,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            407.8684035061808,
+            357.3047337560443
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 16,
+          "azimuth_degrees_render_assumption": 7.5,
+          "eye_world_m_estimated": [
+            0.017473131159576237,
+            -0.1327216078675372,
+            0.137740975733482
+          ],
+          "distance_to_front_origin_m_estimated": 0.19207527665859483,
+          "elevation_degrees_estimated": 45.817191375792156,
+          "roll_degrees_estimated": 170.87404673121412,
+          "principal_point_native_px_estimated": [
+            408.38012423352717,
+            334.346388905243
+          ],
+          "aperture_conic_RMS_px": 4.087494219606383e-14,
+          "aperture_conic_max_abs_px": 1.3097978057328438e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            159.7849039916104,
+            229.45044509067858,
+            650.5014062755226,
+            608.3103263914231
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 41.19302854609339,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            393.9866046546896,
+            357.6418922578809
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 16,
+          "azimuth_degrees_render_assumption": 12.5,
+          "eye_world_m_estimated": [
+            0.02942367208162222,
+            -0.13272160786753723,
+            0.1356913196551813
+          ],
+          "distance_to_front_origin_m_estimated": 0.19207527665859483,
+          "elevation_degrees_estimated": 44.94669732347333,
+          "roll_degrees_estimated": 163.85418454389065,
+          "principal_point_native_px_estimated": [
+            408.38012423352717,
+            334.34638890524303
+          ],
+          "aperture_conic_RMS_px": 4.460624245643568e-14,
+          "aperture_conic_max_abs_px": 1.12948966858735e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            159.06994271407675,
+            229.46332937347265,
+            649.4886389622857,
+            609.3318827886624
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 41.23049020652683,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            384.39777781876217,
+            358.6348618723776
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 16,
+          "azimuth_degrees_render_assumption": 25,
+          "eye_world_m_estimated": [
+            0.0618891021512773,
+            -0.13272160786753717,
+            0.12428847791907421
+          ],
+          "distance_to_front_origin_m_estimated": 0.19207527665859483,
+          "elevation_degrees_estimated": 40.32196604735157,
+          "roll_degrees_estimated": 145.4991563242661,
+          "principal_point_native_px_estimated": [
+            408.38012423352717,
+            334.346388905243
+          ],
+          "aperture_conic_RMS_px": 4.8096485380543023e-14,
+          "aperture_conic_max_abs_px": 1.3641136292832242e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            158.08219640681708,
+            229.54651695603167,
+            646.4128659232011,
+            614.8878016631863
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 42.08409660577334,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            357.46643049252907,
+            364.89677896762134
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 16,
+          "azimuth_degrees_render_assumption": -7.5,
+          "eye_world_m_estimated": [
+            -0.01747313115957624,
+            -0.13272160786753723,
+            0.13774097573348199
+          ],
+          "distance_to_front_origin_m_estimated": 0.19207527665859483,
+          "elevation_degrees_estimated": 45.817191375792135,
+          "roll_degrees_estimated": 191.67967256065984,
+          "principal_point_native_px_estimated": [
+            408.38012423352717,
+            334.34638890524303
+          ],
+          "aperture_conic_RMS_px": 4.343435388427847e-14,
+          "aperture_conic_max_abs_px": 1.5460358954184412e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.60901578833816,
+            229.48186031783865,
+            653.0579578811108,
+            608.6798537572311
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 42.93324932103123,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            421.72139369472507,
+            358.2600756030914
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        }
+      ],
+      "candidate_sort_is_camera_certification": false
+    },
+    {
+      "photo": {
+        "path": "/workspace/wewa-assets/references/headlamp/cowl-black-8495.jpg",
+        "sha256": "4632b16a5d074f316a412f36e5d85df0a6732833497630adb16aee24b88ce79a",
+        "native_pixels": [
+          800,
+          800
+        ],
+        "aperture_threshold_sensitivity": [
+          {
+            "threshold_min_RGB": 210,
+            "white_aperture_area_px": 59910,
+            "bbox_xyxy_native_px": [
+              253,
+              333,
+              553,
+              586
+            ],
+            "ellipse_cx_cy_a_b_angle_rad": [
+              405.8184840172807,
+              459.42650109192095,
+              152.92935668010247,
+              127.08979266505159,
+              0.08132973818426817
+            ],
+            "convex_hull_points": 71,
+            "hull_geometric_residual_RMS_px": 2.4620360032094424,
+            "hull_max_abs_residual_px": 7.404959674316557
+          },
+          {
+            "threshold_min_RGB": 220,
+            "white_aperture_area_px": 59825,
+            "bbox_xyxy_native_px": [
+              254,
+              333,
+              553,
+              585
+            ],
+            "ellipse_cx_cy_a_b_angle_rad": [
+              405.8345303648912,
+              459.38531229922523,
+              151.98665596455342,
+              127.22488388468318,
+              0.08199573683056562
+            ],
+            "convex_hull_points": 69,
+            "hull_geometric_residual_RMS_px": 2.5171171758055335,
+            "hull_max_abs_residual_px": 6.6044688118006425
+          },
+          {
+            "threshold_min_RGB": 230,
+            "white_aperture_area_px": 59718,
+            "bbox_xyxy_native_px": [
+              254,
+              333,
+              553,
+              585
+            ],
+            "ellipse_cx_cy_a_b_angle_rad": [
+              405.3632083236726,
+              459.33026517286567,
+              151.54599317526038,
+              127.30578893990449,
+              0.09797321616326032
+            ],
+            "convex_hull_points": 76,
+            "hull_geometric_residual_RMS_px": 2.550530613519205,
+            "hull_max_abs_residual_px": 5.74352575186642
+          },
+          {
+            "threshold_min_RGB": 240,
+            "white_aperture_area_px": 59523,
+            "bbox_xyxy_native_px": [
+              254,
+              333,
+              553,
+              585
+            ],
+            "ellipse_cx_cy_a_b_angle_rad": [
+              405.6695460444884,
+              459.50202436776345,
+              151.76677827140668,
+              127.11593982629466,
+              0.08624723763182959
+            ],
+            "convex_hull_points": 69,
+            "hull_geometric_residual_RMS_px": 2.3359136034197627,
+            "hull_max_abs_residual_px": 6.082099681921935
+          }
+        ],
+        "native_body_bbox_minRGB180": [
+          101,
+          195,
+          698,
+          603
+        ]
+      },
+      "view_side_Y_sign_assumed": 1,
+      "camera_candidates": [
+        {
+          "focal_mm_render_assumption_sensor36mm": 35,
+          "azimuth_degrees_render_assumption": 7.5,
+          "eye_world_m_estimated": [
+            0.058037298111489936,
+            0.44083704582180533,
+            0.28433364424299085
+          ],
+          "distance_to_front_origin_m_estimated": 0.527779546960166,
+          "elevation_degrees_estimated": 32.59760879436129,
+          "roll_degrees_estimated": 199.34586305748275,
+          "principal_point_native_px_estimated": [
+            406.68971895820334,
+            445.8340905443074
+          ],
+          "aperture_conic_RMS_px": 3.533656694554182e-14,
+          "aperture_conic_max_abs_px": 9.986346460693566e-14,
+          "projected_mesh_vertex_bbox_native_px": [
+            209.17661658495203,
+            156.54801388031393,
+            629.4911503450027,
+            607.2653450332151
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 11.891778754852517,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            473.4814828684123,
+            160.93430004344282
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 50,
+          "azimuth_degrees_render_assumption": -7.5,
+          "eye_world_m_estimated": [
+            -0.08291042587355701,
+            0.6297672083168645,
+            0.4020673693161774
+          ],
+          "distance_to_front_origin_m_estimated": 0.7517573044930013,
+          "elevation_degrees_estimated": 32.3328350871205,
+          "roll_degrees_estimated": 171.7847608672913,
+          "principal_point_native_px_estimated": [
+            406.2881409563402,
+            449.9198224631092
+          ],
+          "aperture_conic_RMS_px": 3.914873500809422e-14,
+          "aperture_conic_max_abs_px": 1.0094391538007345e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            211.41925841808964,
+            164.9760576353815,
+            610.2545393741318,
+            604.9931241805192
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 11.921136384500242,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            396.148319189312,
+            167.198328061977
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 65,
+          "azimuth_degrees_render_assumption": -7.5,
+          "eye_world_m_estimated": [
+            -0.10778355363562418,
+            0.8186973708119244,
+            0.5206095469906334
+          ],
+          "distance_to_front_origin_m_estimated": 0.9761746666588278,
+          "elevation_degrees_estimated": 32.22977710859631,
+          "roll_degrees_estimated": 171.74684975585032,
+          "principal_point_native_px_estimated": [
+            406.0735944734227,
+            452.1026596933755
+          ],
+          "aperture_conic_RMS_px": 3.452221003664152e-14,
+          "aperture_conic_max_abs_px": 1.0896839138446694e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            216.559432219427,
+            172.35599520963314,
+            605.8766126945056,
+            604.0837777474661
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 12.187565163016258,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            395.95472858087936,
+            174.5885746029714
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 50,
+          "azimuth_degrees_render_assumption": 7.5,
+          "eye_world_m_estimated": [
+            0.08291042587355703,
+            0.6297672083168646,
+            0.4020673693161774
+          ],
+          "distance_to_front_origin_m_estimated": 0.7517573044930014,
+          "elevation_degrees_estimated": 32.33283508712049,
+          "roll_degrees_estimated": 199.44214271566415,
+          "principal_point_native_px_estimated": [
+            406.2881409563402,
+            449.9198224631092
+          ],
+          "aperture_conic_RMS_px": 4.039463653140709e-14,
+          "aperture_conic_max_abs_px": 1.0094983537730896e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            216.5098656476794,
+            170.23345473718268,
+            617.7971858016923,
+            605.384830596377
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 12.301623686944259,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            471.27837081875253,
+            174.58270290908445
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 50,
+          "azimuth_degrees_render_assumption": 0,
+          "eye_world_m_estimated": [
+            0.0,
+            0.6297672083168646,
+            0.410526866584108
+          ],
+          "distance_to_front_origin_m_estimated": 0.7517573044930014,
+          "elevation_degrees_estimated": 33.09915647169223,
+          "roll_degrees_estimated": 185.61345179147773,
+          "principal_point_native_px_estimated": [
+            406.2881409563402,
+            449.9198224631092
+          ],
+          "aperture_conic_RMS_px": 3.4205234013296143e-14,
+          "aperture_conic_max_abs_px": 9.269427210562412e-14,
+          "projected_mesh_vertex_bbox_native_px": [
+            213.41081194805017,
+            165.3972110136337,
+            614.3749788452708,
+            604.9926208183663
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 12.410494350184436,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            433.97652417214107,
+            168.2128799514207
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 65,
+          "azimuth_degrees_render_assumption": 7.5,
+          "eye_world_m_estimated": [
+            0.10778355363562417,
+            0.8186973708119242,
+            0.5206095469906336
+          ],
+          "distance_to_front_origin_m_estimated": 0.9761746666588277,
+          "elevation_degrees_estimated": 32.229777108596316,
+          "roll_degrees_estimated": 199.4800538271051,
+          "principal_point_native_px_estimated": [
+            406.0735944734227,
+            452.1026596933755
+          ],
+          "aperture_conic_RMS_px": 4.1960622545091974e-14,
+          "aperture_conic_max_abs_px": 1.1458470389762887e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            219.82716066299628,
+            177.54878545560848,
+            611.8220440122891,
+            604.473879191049
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 12.509062305832172,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            470.02941321591,
+            181.86921964663838
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 65,
+          "azimuth_degrees_render_assumption": 0,
+          "eye_world_m_estimated": [
+            0.0,
+            0.818697370811924,
+            0.5316498799511916
+          ],
+          "distance_to_front_origin_m_estimated": 0.9761746666588277,
+          "elevation_degrees_estimated": 32.999093806251345,
+          "roll_degrees_estimated": 185.6134517914777,
+          "principal_point_native_px_estimated": [
+            406.0735944734227,
+            452.1026596933755
+          ],
+          "aperture_conic_RMS_px": 3.590982613071559e-14,
+          "aperture_conic_max_abs_px": 1.0093740661280178e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            217.69407208061222,
+            172.71322385345917,
+            609.1706719899372,
+            604.0786168949287
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 12.582006423580738,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            433.2657140409072,
+            175.4447991001673
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 28,
+          "azimuth_degrees_render_assumption": 7.5,
+          "eye_world_m_estimated": [
+            0.04642983848919194,
+            0.35266963665744416,
+            0.2300593803036557
+          ],
+          "distance_to_front_origin_m_estimated": 0.42362592105291225,
+          "elevation_degrees_estimated": 32.89300973792862,
+          "roll_degrees_estimated": 199.24031482403953,
+          "principal_point_native_px_estimated": [
+            407.02841353792644,
+            442.3881466711878
+          ],
+          "aperture_conic_RMS_px": 2.922931159794063e-14,
+          "aperture_conic_max_abs_px": 8.48786802759751e-14,
+          "projected_mesh_vertex_bbox_native_px": [
+            202.65568180947054,
+            145.17954695289893,
+            640.0679397465536,
+            609.0228687794469
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 13.340063228906253,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            475.15656631639763,
+            149.59998081458377
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 35,
+          "azimuth_degrees_render_assumption": 12.5,
+          "eye_world_m_estimated": [
+            0.09773122015397537,
+            0.44083704582180533,
+            0.2732445019168672
+          ],
+          "distance_to_front_origin_m_estimated": 0.527779546960166,
+          "elevation_degrees_estimated": 31.179751530899125,
+          "roll_degrees_estimated": 208.79452386182027,
+          "principal_point_native_px_estimated": [
+            406.68971895820334,
+            445.8340905443074
+          ],
+          "aperture_conic_RMS_px": 5.366079630600776e-14,
+          "aperture_conic_max_abs_px": 1.4927459947702693e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            213.13866347638154,
+            162.85289896330556,
+            632.8509859012553,
+            607.9218268253397
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 13.829414218146285,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            499.63934305073974,
+            168.20055712607035
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 35,
+          "azimuth_degrees_render_assumption": -7.5,
+          "eye_world_m_estimated": [
+            -0.05803729811148995,
+            0.44083704582180544,
+            0.2843336442429907
+          ],
+          "distance_to_front_origin_m_estimated": 0.527779546960166,
+          "elevation_degrees_estimated": 32.59760879436128,
+          "roll_degrees_estimated": 171.8810405254727,
+          "principal_point_native_px_estimated": [
+            406.68971895820334,
+            445.8340905443074
+          ],
+          "aperture_conic_RMS_px": 4.0243479255173833e-14,
+          "aperture_conic_max_abs_px": 9.850023787670888e-14,
+          "projected_mesh_vertex_bbox_native_px": [
+            200.80271289904098,
+            151.1151245231265,
+            618.6642856967547,
+            606.8574366995745
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 13.928412209897282,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            396.6446412587528,
+            153.3821683969473
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 50,
+          "azimuth_degrees_render_assumption": 12.5,
+          "eye_world_m_estimated": [
+            0.13961602879139332,
+            0.6297672083168645,
+            0.3860565666996053
+          ],
+          "distance_to_front_origin_m_estimated": 0.7517573044930013,
+          "elevation_degrees_estimated": 30.89983828089249,
+          "roll_degrees_estimated": 208.96330454356075,
+          "principal_point_native_px_estimated": [
+            406.2881409563402,
+            449.9198224631092
+          ],
+          "aperture_conic_RMS_px": 4.856619758372543e-14,
+          "aperture_conic_max_abs_px": 1.118436196221023e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            219.2180385970046,
+            176.84668141081193,
+            619.8776618471309,
+            606.0433714279409
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 13.96809384142945,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            496.69711510421547,
+            182.22593835364466
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 65,
+          "azimuth_degrees_render_assumption": 12.5,
+          "eye_world_m_estimated": [
+            0.18150083742881137,
+            0.8186973708119241,
+            0.49970895615823857
+          ],
+          "distance_to_front_origin_m_estimated": 0.9761746666588277,
+          "elevation_degrees_estimated": 30.790822345069056,
+          "roll_degrees_estimated": 209.02980337997576,
+          "principal_point_native_px_estimated": [
+            406.0735944734227,
+            452.1026596933755
+          ],
+          "aperture_conic_RMS_px": 3.5812612881981944e-14,
+          "aperture_conic_max_abs_px": 9.612260144686855e-14,
+          "projected_mesh_vertex_bbox_native_px": [
+            221.77209122470546,
+            184.2865961504877,
+            613.3205221839465,
+            605.1342108063794
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 14.067326097333027,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            495.0106360689298,
+            189.66828779876857
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 35,
+          "azimuth_degrees_render_assumption": 0,
+          "eye_world_m_estimated": [
+            0.0,
+            0.4408370458218054,
+            0.29019639766989114
+          ],
+          "distance_to_front_origin_m_estimated": 0.527779546960166,
+          "elevation_degrees_estimated": 33.356308835743256,
+          "roll_degrees_estimated": 185.61345179147773,
+          "principal_point_native_px_estimated": [
+            406.68971895820334,
+            445.8340905443074
+          ],
+          "aperture_conic_RMS_px": 3.542763712334601e-14,
+          "aperture_conic_max_abs_px": 9.749894726661341e-14,
+          "projected_mesh_vertex_bbox_native_px": [
+            204.40974669400975,
+            151.74275931266124,
+            624.4461190468447,
+            606.8578018497609
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 14.270020290274541,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            435.30279158015816,
+            154.71917995624773
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 24,
+          "azimuth_degrees_render_assumption": 7.5,
+          "eye_world_m_estimated": [
+            0.039797004419307384,
+            0.3022882599920951,
+            0.19946407992938608
+          ],
+          "distance_to_front_origin_m_estimated": 0.36434586984330614,
+          "elevation_degrees_estimated": 33.192798843317135,
+          "roll_degrees_estimated": 199.1351651418625,
+          "principal_point_native_px_estimated": [
+            407.3141191734185,
+            439.48132252022424
+          ],
+          "aperture_conic_RMS_px": 3.8420360171900465e-14,
+          "aperture_conic_max_abs_px": 1.2819131304408947e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            197.03011523372282,
+            135.85934566014538,
+            649.2838595208525,
+            610.6492065283398
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 14.550766348710983,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            476.4020329412818,
+            140.32610536302258
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 65,
+          "azimuth_degrees_render_assumption": -12.5,
+          "eye_world_m_estimated": [
+            -0.18150083742881137,
+            0.8186973708119241,
+            0.49970895615823857
+          ],
+          "distance_to_front_origin_m_estimated": 0.9761746666588277,
+          "elevation_degrees_estimated": 30.790822345069056,
+          "roll_degrees_estimated": 162.1971002029797,
+          "principal_point_native_px_estimated": [
+            406.0735944734227,
+            452.1026596933755
+          ],
+          "aperture_conic_RMS_px": 3.255413399873093e-14,
+          "aperture_conic_max_abs_px": 1.0053826480602884e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            216.13601933098928,
+            173.98207874416585,
+            602.8978562965227,
+            604.2647572165647
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 14.91456594850337,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            369.9331111918519,
+            177.37468079851976
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 28,
+          "azimuth_degrees_render_assumption": -25,
+          "eye_world_m_estimated": [
+            -0.16164020786651045,
+            0.34663854440233527,
+            0.1773483067157014
+          ],
+          "distance_to_front_origin_m_estimated": 0.421590155434665,
+          "elevation_degrees_estimated": 24.876591417090435,
+          "roll_degrees_estimated": 139.89295434084238,
+          "principal_point_native_px_estimated": [
+            407.81723018168753,
+            441.9827010837168
+          ],
+          "aperture_conic_RMS_px": 0.8970015420877446,
+          "aperture_conic_max_abs_px": 1.3529301783805188,
+          "projected_mesh_vertex_bbox_native_px": [
+            185.24957822372778,
+            148.72574643843916,
+            606.5517059396246,
+            610.1589802236753
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 15.12188810016945,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            307.1784692034712,
+            154.0556717672668
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 28,
+          "azimuth_degrees_render_assumption": 12.5,
+          "eye_world_m_estimated": [
+            0.07818497612318026,
+            0.35266963665744416,
+            0.2212920194594741
+          ],
+          "distance_to_front_origin_m_estimated": 0.4236259210529122,
+          "elevation_degrees_estimated": 31.491765093836467,
+          "roll_degrees_estimated": 208.60965989643034,
+          "principal_point_native_px_estimated": [
+            407.02841353792644,
+            442.3881466711878
+          ],
+          "aperture_conic_RMS_px": 4.227063172864796e-14,
+          "aperture_conic_max_abs_px": 1.1776104269481894e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            207.5917554942366,
+            151.15673985263862,
+            644.5504491123216,
+            609.7068811239247
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 15.422941711683476,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            501.8344982723375,
+            156.46408794254933
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 24,
+          "azimuth_degrees_render_assumption": -25,
+          "eye_world_m_estimated": [
+            -0.1388485727300456,
+            0.2977617251224576,
+            0.15408293625483424
+          ],
+          "distance_to_front_origin_m_estimated": 0.362880865218854,
+          "elevation_degrees_estimated": 25.125996240309803,
+          "roll_degrees_estimated": 139.89295434084238,
+          "principal_point_native_px_estimated": [
+            408.1243976832891,
+            439.0691873398003
+          ],
+          "aperture_conic_RMS_px": 0.7848298947349888,
+          "aperture_conic_max_abs_px": 1.193822763938624,
+          "projected_mesh_vertex_bbox_native_px": [
+            172.0456546686217,
+            137.92748247142873,
+            609.2270342775133,
+            612.0327838736613
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 15.450658599531037,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            304.4498302563416,
+            143.05286060070148
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 28,
+          "azimuth_degrees_render_assumption": -7.5,
+          "eye_world_m_estimated": [
+            -0.046429838489191945,
+            0.3526696366574442,
+            0.23005938030365566
+          ],
+          "distance_to_front_origin_m_estimated": 0.42362592105291225,
+          "elevation_degrees_estimated": 32.89300973792861,
+          "roll_degrees_estimated": 171.98658875891596,
+          "principal_point_native_px_estimated": [
+            407.02841353792644,
+            442.3881466711878
+          ],
+          "aperture_conic_RMS_px": 3.0344313190575226e-14,
+          "aperture_conic_max_abs_px": 1.0771070943096122e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            191.2086948621882,
+            139.56636536157873,
+            625.9513406675303,
+            608.5965157752153
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 15.543804882419076,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            397.2083471094103,
+            141.93861420022438
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 50,
+          "azimuth_degrees_render_assumption": -12.5,
+          "eye_world_m_estimated": [
+            -0.13961602879139337,
+            0.6297672083168646,
+            0.38605656669960525
+          ],
+          "distance_to_front_origin_m_estimated": 0.7517573044930014,
+          "elevation_degrees_estimated": 30.89983828089248,
+          "roll_degrees_estimated": 162.26359903939473,
+          "principal_point_native_px_estimated": [
+            406.2881409563402,
+            449.9198224631092
+          ],
+          "aperture_conic_RMS_px": 3.767048091152884e-14,
+          "aperture_conic_max_abs_px": 9.576187155724304e-14,
+          "projected_mesh_vertex_bbox_native_px": [
+            210.35356058493608,
+            166.39876734439162,
+            606.7137354841294,
+            605.185659243965
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 15.584584300427068,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            369.7278926866987,
+            169.74640037859962
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 24,
+          "azimuth_degrees_render_assumption": 12.5,
+          "eye_world_m_estimated": [
+            0.06701569381986883,
+            0.302288259992095,
+            0.1920380626976551
+          ],
+          "distance_to_front_origin_m_estimated": 0.36434586984330614,
+          "elevation_degrees_estimated": 31.808122299699974,
+          "roll_degrees_estimated": 208.42566340299243,
+          "principal_point_native_px_estimated": [
+            407.3141191734185,
+            439.4813225202242
+          ],
+          "aperture_conic_RMS_px": 4.193411514144736e-14,
+          "aperture_conic_max_abs_px": 1.2843974463581975e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            202.77131332618814,
+            141.50573178165138,
+            654.8819567661001,
+            611.3606030720018
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 16.590836025135857,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            503.4274524324204,
+            146.79555429481735
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 28,
+          "azimuth_degrees_render_assumption": 0,
+          "eye_world_m_estimated": [
+            0.0,
+            0.35266963665744416,
+            0.2346977809180022
+          ],
+          "distance_to_front_origin_m_estimated": 0.42362592105291225,
+          "elevation_degrees_estimated": 33.64333036618415,
+          "roll_degrees_estimated": 185.6134517914777,
+          "principal_point_native_px_estimated": [
+            407.02841353792644,
+            442.3881466711878
+          ],
+          "aperture_conic_RMS_px": 3.175634299405264e-14,
+          "aperture_conic_max_abs_px": 9.524603535252876e-14,
+          "projected_mesh_vertex_bbox_native_px": [
+            196.43396257609047,
+            140.43750121196507,
+            633.2141083094158,
+            608.5960160235338
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 16.71608560747701,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            436.3987357132734,
+            143.56883331096668
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 35,
+          "azimuth_degrees_render_assumption": -25,
+          "eye_world_m_estimated": [
+            -0.20161068793596362,
+            0.432355515527367,
+            0.21871806611140104
+          ],
+          "distance_to_front_origin_m_estimated": 0.5248006800114297,
+          "elevation_degrees_estimated": 24.630457448400342,
+          "roll_degrees_estimated": 139.89295434084238,
+          "principal_point_native_px_estimated": [
+            407.3959625306225,
+            445.4675554277327
+          ],
+          "aperture_conic_RMS_px": 1.0101155528392285,
+          "aperture_conic_max_abs_px": 1.506735701713006,
+          "projected_mesh_vertex_bbox_native_px": [
+            199.42288998570817,
+            161.69017529596954,
+            603.2927451267406,
+            608.1712023195777
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 16.797526998899507,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            310.34571752312826,
+            167.24720237215797
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 20,
+          "azimuth_degrees_render_assumption": 7.5,
+          "eye_world_m_estimated": [
+            0.03316417034942283,
+            0.251906883326746,
+            0.16943414014211527
+          ],
+          "distance_to_front_origin_m_estimated": 0.305392972918596,
+          "elevation_degrees_estimated": 33.69741816992759,
+          "roll_degrees_estimated": 198.9625106946859,
+          "principal_point_native_px_estimated": [
+            407.7202683395695,
+            435.3490826957338
+          ],
+          "aperture_conic_RMS_px": 4.9300074667870444e-14,
+          "aperture_conic_max_abs_px": 1.36819744199681e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            188.88605627853082,
+            123.3399108888321,
+            662.8354614938995,
+            613.2164468738879
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 17.010620881337637,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            477.8491971269958,
+            127.87650081631779
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 24,
+          "azimuth_degrees_render_assumption": -7.5,
+          "eye_world_m_estimated": [
+            -0.03979700441930738,
+            0.302288259992095,
+            0.1994640799293861
+          ],
+          "distance_to_front_origin_m_estimated": 0.36434586984330614,
+          "elevation_degrees_estimated": 33.192798843317135,
+          "roll_degrees_estimated": 172.09173844109296,
+          "principal_point_native_px_estimated": [
+            407.3141191734185,
+            439.4813225202242
+          ],
+          "aperture_conic_RMS_px": 4.417903382659331e-14,
+          "aperture_conic_max_abs_px": 1.0574502806987336e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            182.76829380209065,
+            130.14191365160997,
+            632.1698809936588,
+            610.1980701069283
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 17.19631620014147,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            397.7922905839816,
+            132.59971902877737
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 35,
+          "azimuth_degrees_render_assumption": -12.5,
+          "eye_world_m_estimated": [
+            -0.09773122015397534,
+            0.4408370458218052,
+            0.27324450191686717
+          ],
+          "distance_to_front_origin_m_estimated": 0.5277795469601659,
+          "elevation_degrees_estimated": 31.179751530899125,
+          "roll_degrees_estimated": 162.43237972113516,
+          "principal_point_native_px_estimated": [
+            406.68971895820334,
+            445.8340905443074
+          ],
+          "aperture_conic_RMS_px": 3.536093627116241e-14,
+          "aperture_conic_max_abs_px": 9.905611833239235e-14,
+          "projected_mesh_vertex_bbox_native_px": [
+            198.63160274371816,
+            152.18442903261462,
+            613.9813802544188,
+            607.065345639335
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 17.729406775696614,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            369.572638477698,
+            155.4165741410386
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 50,
+          "azimuth_degrees_render_assumption": -25,
+          "eye_world_m_estimated": [
+            -0.28744169545723663,
+            0.6164207051510447,
+            0.30866183262017816
+          ],
+          "distance_to_front_origin_m_estimated": 0.7469065141921638,
+          "elevation_degrees_estimated": 24.409387664340688,
+          "roll_degrees_estimated": 139.89295434084238,
+          "principal_point_native_px_estimated": [
+            406.8302262879655,
+            449.6361866113129
+          ],
+          "aperture_conic_RMS_px": 1.1137753767902585,
+          "aperture_conic_max_abs_px": 1.6384870717325624,
+          "projected_mesh_vertex_bbox_native_px": [
+            214.01740521227444,
+            174.62539450723148,
+            599.2011548795379,
+            606.0676285176348
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 17.79941116940624,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            313.945210616819,
+            182.86746634842234
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 65,
+          "azimuth_degrees_render_assumption": -25,
+          "eye_world_m_estimated": [
+            -0.37338036109216194,
+            0.800716768344499,
+            0.39934318022756266
+          ],
+          "distance_to_front_origin_m_estimated": 0.9695541309032906,
+          "elevation_degrees_estimated": 24.323197426745075,
+          "roll_degrees_estimated": 139.89295434084238,
+          "principal_point_native_px_estimated": [
+            406.5049800656858,
+            451.8762611700264
+          ],
+          "aperture_conic_RMS_px": 1.1547232597367791,
+          "aperture_conic_max_abs_px": 1.686303064887342,
+          "projected_mesh_vertex_bbox_native_px": [
+            219.21933102832864,
+            180.44644613956916,
+            596.9237241496187,
+            605.0492402968703
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 17.884024433392966,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            315.7793185251771,
+            191.12107217523453
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 20,
+          "azimuth_degrees_render_assumption": 25,
+          "eye_world_m_estimated": [
+            0.11174326326858808,
+            0.2396342013998087,
+            0.14520455585040282
+          ],
+          "distance_to_front_origin_m_estimated": 0.30165455475783853,
+          "elevation_degrees_estimated": 28.774289351684335,
+          "roll_degrees_estimated": 220.10704565915762,
+          "principal_point_native_px_estimated": [
+            403.14278784023196,
+            433.3814494740198
+          ],
+          "aperture_conic_RMS_px": 3.5281544046757745,
+          "aperture_conic_max_abs_px": 5.545038622152721,
+          "projected_mesh_vertex_bbox_native_px": [
+            196.6145195868563,
+            124.64335574927588,
+            665.1601027144699,
+            612.3946692007208
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 18.06175595115767,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            512.4773267016271,
+            129.27043204559794
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 24,
+          "azimuth_degrees_render_assumption": 0,
+          "eye_world_m_estimated": [
+            0.0,
+            0.3022882599920951,
+            0.2033954786685951
+          ],
+          "distance_to_front_origin_m_estimated": 0.3643458698433062,
+          "elevation_degrees_estimated": 33.93474544914441,
+          "roll_degrees_estimated": 185.6134517914777,
+          "principal_point_native_px_estimated": [
+            407.3141191734185,
+            439.48132252022424
+          ],
+          "aperture_conic_RMS_px": 3.8371853832747275e-14,
+          "aperture_conic_max_abs_px": 1.082767981989134e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            189.43447732337813,
+            131.199135653596,
+            640.8384386826556,
+            610.1934577567613
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 18.062497939864496,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            437.2913709735829,
+            134.4869902867627
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 20,
+          "azimuth_degrees_render_assumption": -25,
+          "eye_world_m_estimated": [
+            -0.1161164516011291,
+            0.24901253404363458,
+            0.13131868265423544
+          ],
+          "distance_to_front_origin_m_estimated": 0.3045240037457038,
+          "elevation_degrees_estimated": 25.54539341799173,
+          "roll_degrees_estimated": 139.89295434084238,
+          "principal_point_native_px_estimated": [
+            408.47362149617214,
+            434.97316190150985
+          ],
+          "aperture_conic_RMS_px": 0.6016766177053209,
+          "aperture_conic_max_abs_px": 0.9270399160002247,
+          "projected_mesh_vertex_bbox_native_px": [
+            151.11668433156717,
+            123.04958156427926,
+            612.8912217986059,
+            615.0146492638821
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 18.07502851894195,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            300.55317858082725,
+            127.85390665692307
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 20,
+          "azimuth_degrees_render_assumption": -7.5,
+          "eye_world_m_estimated": [
+            -0.03316417034942282,
+            0.2519068833267458,
+            0.16943414014211533
+          ],
+          "distance_to_front_origin_m_estimated": 0.3053929729185959,
+          "elevation_degrees_estimated": 33.69741816992761,
+          "roll_degrees_estimated": 172.26439288826953,
+          "principal_point_native_px_estimated": [
+            407.72026833956954,
+            435.3490826957338
+          ],
+          "aperture_conic_RMS_px": 5.126219553813688e-14,
+          "aperture_conic_max_abs_px": 1.57164512109285e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            170.14586486035776,
+            117.37238468778418,
+            641.0844147831119,
+            612.7045810048778
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 18.9348125391245,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            398.79669460987736,
+            120.10659651667044
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 28,
+          "azimuth_degrees_render_assumption": -12.5,
+          "eye_world_m_estimated": [
+            -0.07818497612318029,
+            0.3526696366574442,
+            0.22129201945947402
+          ],
+          "distance_to_front_origin_m_estimated": 0.42362592105291225,
+          "elevation_degrees_estimated": 31.491765093836452,
+          "roll_degrees_estimated": 162.6172436865251,
+          "principal_point_native_px_estimated": [
+            407.02841353792644,
+            442.3881466711878
+          ],
+          "aperture_conic_RMS_px": 3.6791324920835083e-14,
+          "aperture_conic_max_abs_px": 1.1090208855168105e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            187.9551881662699,
+            140.35183985441176,
+            620.2013997493348,
+            608.8302526544327
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 19.46153109404813,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            369.70452129231467,
+            143.47731024974888
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 24,
+          "azimuth_degrees_render_assumption": 25,
+          "eye_world_m_estimated": [
+            0.13369622434283077,
+            0.2867124783491991,
+            0.17022578175041203
+          ],
+          "distance_to_front_origin_m_estimated": 0.35924301303881667,
+          "elevation_degrees_estimated": 28.28422473292535,
+          "roll_degrees_estimated": 220.10704565915762,
+          "principal_point_native_px_estimated": [
+            403.3302387320119,
+            437.7398281841158
+          ],
+          "aperture_conic_RMS_px": 3.7240620140147844,
+          "aperture_conic_max_abs_px": 5.774741286375891,
+          "projected_mesh_vertex_bbox_native_px": [
+            200.43583111682617,
+            137.19391790216218,
+            645.2789481931007,
+            609.3984191303821
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 19.509164847986597,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            509.2700845901377,
+            142.13292398496833
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 20,
+          "azimuth_degrees_render_assumption": 12.5,
+          "eye_world_m_estimated": [
+            0.05584641151655735,
+            0.2519068833267459,
+            0.16336758663023354
+          ],
+          "distance_to_front_origin_m_estimated": 0.30539297291859596,
+          "elevation_degrees_estimated": 32.33999116364043,
+          "roll_degrees_estimated": 208.1239051197009,
+          "principal_point_native_px_estimated": [
+            407.72026833956954,
+            435.3490826957338
+          ],
+          "aperture_conic_RMS_px": 3.49016772331102e-14,
+          "aperture_conic_max_abs_px": 1.0496864234586254e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            195.808177988107,
+            128.46722404081459,
+            670.3535264195884,
+            613.9781650674676
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 19.519520298868592,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            505.1973344846836,
+            133.71004715077015
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 20,
+          "azimuth_degrees_render_assumption": 0,
+          "eye_world_m_estimated": [
+            0.0,
+            0.25190688332674593,
+            0.17264932678890904
+          ],
+          "distance_to_front_origin_m_estimated": 0.30539297291859596,
+          "elevation_degrees_estimated": 34.42555536707996,
+          "roll_degrees_estimated": 185.61345179147773,
+          "principal_point_native_px_estimated": [
+            407.72026833956954,
+            435.3490826957338
+          ],
+          "aperture_conic_RMS_px": 3.464171460224436e-14,
+          "aperture_conic_max_abs_px": 1.0094914492523104e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            179.1969185392801,
+            118.81597202539484,
+            652.1334019526396,
+            612.7031921883427
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 20.309336410991854,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            438.48295035773094,
+            122.3636321819564
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 28,
+          "azimuth_degrees_render_assumption": 25,
+          "eye_world_m_estimated": [
+            0.15569840296615442,
+            0.33389630267320414,
+            0.19581302019215213
+          ],
+          "distance_to_front_origin_m_estimated": 0.41721873460071174,
+          "elevation_degrees_estimated": 27.990775522672525,
+          "roll_degrees_estimated": 220.10704565915762,
+          "principal_point_native_px_estimated": [
+            403.52566894820376,
+            440.8428299276763
+          ],
+          "aperture_conic_RMS_px": 3.8442103412904323,
+          "aperture_conic_max_abs_px": 5.906492479070659,
+          "projected_mesh_vertex_bbox_native_px": [
+            203.20511549868982,
+            146.61113251479986,
+            632.6733857795616,
+            607.5241008260963
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 20.32683320215276,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            506.9271818945498,
+            151.75506589247487
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 24,
+          "azimuth_degrees_render_assumption": -12.5,
+          "eye_world_m_estimated": [
+            -0.06701569381986883,
+            0.3022882599920951,
+            0.19203806269765514
+          ],
+          "distance_to_front_origin_m_estimated": 0.3643458698433062,
+          "elevation_degrees_estimated": 31.80812229969998,
+          "roll_degrees_estimated": 162.801240179963,
+          "principal_point_native_px_estimated": [
+            407.3141191734185,
+            439.4813225202242
+          ],
+          "aperture_conic_RMS_px": 5.120537220367411e-14,
+          "aperture_conic_max_abs_px": 1.497568525006221e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            178.3691836410544,
+            130.65870770304525,
+            625.4799638158952,
+            610.4581965634991
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 20.85966002782671,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            370.0244647627319,
+            133.6836550572691
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 16,
+          "azimuth_degrees_render_assumption": -7.5,
+          "eye_world_m_estimated": [
+            -0.026531336279538246,
+            0.20152550666139663,
+            0.14048008610205268
+          ],
+          "distance_to_front_origin_m_estimated": 0.2470852003482821,
+          "elevation_degrees_estimated": 34.649116956937625,
+          "roll_degrees_estimated": 172.5758971723769,
+          "principal_point_native_px_estimated": [
+            408.34485088804604,
+            428.9944595779393
+          ],
+          "aperture_conic_RMS_px": 3.361716279525973e-14,
+          "aperture_conic_max_abs_px": 8.482352379604809e-14,
+          "projected_mesh_vertex_bbox_native_px": [
+            149.4479996160968,
+            100.21404011298677,
+            655.0052152670839,
+            617.1582433596582
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 21.288262168732725,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            400.730808229664,
+            103.56586800380046
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 35,
+          "azimuth_degrees_render_assumption": 25,
+          "eye_world_m_estimated": [
+            0.19427178401338951,
+            0.41661718527645203,
+            0.24133772310182466
+          ],
+          "distance_to_front_origin_m_estimated": 0.5191871548135524,
+          "elevation_degrees_estimated": 27.699713816794944,
+          "roll_degrees_estimated": 220.10704565915762,
+          "principal_point_native_px_estimated": [
+            403.81705196046715,
+            444.5559823840986
+          ],
+          "aperture_conic_RMS_px": 3.9654807684614237,
+          "aperture_conic_max_abs_px": 6.021555154705753,
+          "projected_mesh_vertex_bbox_native_px": [
+            206.67042028997997,
+            158.2046422007142,
+            618.8669236718079,
+            605.53615045452
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 21.496378789424444,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            504.12076971661406,
+            163.57543137908425
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 50,
+          "azimuth_degrees_render_assumption": 25,
+          "eye_world_m_estimated": [
+            0.2770743790623165,
+            0.5941879233950265,
+            0.3403769275371523
+          ],
+          "distance_to_front_origin_m_estimated": 0.7387055926692947,
+          "elevation_degrees_estimated": 27.437115746542478,
+          "roll_degrees_estimated": 220.10704565915762,
+          "principal_point_native_px_estimated": [
+            404.23237659667745,
+            448.9986801941636
+          ],
+          "aperture_conic_RMS_px": 4.076704600735226,
+          "aperture_conic_max_abs_px": 6.101071751762506,
+          "projected_mesh_vertex_bbox_native_px": [
+            210.9272959526377,
+            170.69446899839323,
+            604.176854731358,
+            603.4538718731445
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 21.813754179977266,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            500.83098187968807,
+            177.90690722716073
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 65,
+          "azimuth_degrees_render_assumption": 25,
+          "eye_world_m_estimated": [
+            0.3599632468033475,
+            0.771943673898869,
+            0.4402672120394594
+          ],
+          "distance_to_front_origin_m_estimated": 0.9588043558091971,
+          "elevation_degrees_estimated": 27.334437643037596,
+          "roll_degrees_estimated": 220.10704565915762,
+          "principal_point_native_px_estimated": [
+            404.47865504412624,
+            451.38612866542456
+          ],
+          "aperture_conic_RMS_px": 4.120661916996977,
+          "aperture_conic_max_abs_px": 6.118628175679543,
+          "projected_mesh_vertex_bbox_native_px": [
+            213.27760289427454,
+            176.10657406962667,
+            597.2281015254702,
+            602.4497738947359
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 22.292731156294828,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            499.117540968201,
+            185.6038203142275
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 20,
+          "azimuth_degrees_render_assumption": -12.5,
+          "eye_world_m_estimated": [
+            -0.05584641151655735,
+            0.25190688332674593,
+            0.1633675866302335
+          ],
+          "distance_to_front_origin_m_estimated": 0.30539297291859596,
+          "elevation_degrees_estimated": 32.33999116364042,
+          "roll_degrees_estimated": 163.10299846325452,
+          "principal_point_native_px_estimated": [
+            407.72026833956954,
+            435.3490826957338
+          ],
+          "aperture_conic_RMS_px": 3.406865647562731e-14,
+          "aperture_conic_max_abs_px": 9.252074763996745e-14,
+          "projected_mesh_vertex_bbox_native_px": [
+            164.10719019443948,
+            117.56418075377934,
+            633.0888781087397,
+            613.0286199893924
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 22.366873484468687,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            370.83613352186285,
+            120.5039671428575
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 16,
+          "azimuth_degrees_render_assumption": -12.5,
+          "eye_world_m_estimated": [
+            -0.04467712921324588,
+            0.2015255066613967,
+            0.1358032419395097
+          ],
+          "distance_to_front_origin_m_estimated": 0.24708520034828216,
+          "elevation_degrees_estimated": 33.34102337647814,
+          "roll_degrees_estimated": 163.64632019280558,
+          "principal_point_native_px_estimated": [
+            408.34485088804604,
+            428.9944595779393
+          ],
+          "aperture_conic_RMS_px": 4.1394207943542746e-14,
+          "aperture_conic_max_abs_px": 1.343272052052491e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            140.1127814687639,
+            99.74070141732449,
+            644.8711779092376,
+            617.6299547302647
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 22.909716193584394,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            372.951826498666,
+            102.8815294584258
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 16,
+          "azimuth_degrees_render_assumption": 7.5,
+          "eye_world_m_estimated": [
+            0.02653133627953825,
+            0.20152550666139665,
+            0.1404800861020527
+          ],
+          "distance_to_front_origin_m_estimated": 0.24708520034828213,
+          "elevation_degrees_estimated": 34.649116956937625,
+          "roll_degrees_estimated": 198.65100641057856,
+          "principal_point_native_px_estimated": [
+            408.34485088804604,
+            428.9944595779393
+          ],
+          "aperture_conic_RMS_px": 3.415165438780136e-14,
+          "aperture_conic_max_abs_px": 1.1724799154745558e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            176.0748572537394,
+            106.63282875195978,
+            684.56011662502,
+            617.8633772411595
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 23.657126180346918,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            479.1724912080069,
+            111.27573613495815
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 16,
+          "azimuth_degrees_render_assumption": 0,
+          "eye_world_m_estimated": [
+            0.0,
+            0.20152550666139668,
+            0.14296351421260628
+          ],
+          "distance_to_front_origin_m_estimated": 0.24708520034828213,
+          "elevation_degrees_estimated": 35.352139142092014,
+          "roll_degrees_estimated": 185.61345179147773,
+          "principal_point_native_px_estimated": [
+            408.34485088804604,
+            428.9944595779393
+          ],
+          "aperture_conic_RMS_px": 3.313273732836029e-14,
+          "aperture_conic_max_abs_px": 1.1701456506362753e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            162.85701357467943,
+            102.3840549999174,
+            669.5619968406006,
+            617.1579610495294
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 23.90220873627263,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            440.05559191810397,
+            106.36327411891551
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 16,
+          "azimuth_degrees_render_assumption": -25,
+          "eye_world_m_estimated": [
+            -0.09348098605337421,
+            0.20047062152751852,
+            0.10950117794636485
+          ],
+          "distance_to_front_origin_m_estimated": 0.2468150579295805,
+          "elevation_degrees_estimated": 26.337432979293382,
+          "roll_degrees_estimated": 139.89295434084238,
+          "principal_point_native_px_estimated": [
+            408.78243890515523,
+            428.7849131107829
+          ],
+          "aperture_conic_RMS_px": 0.27405482113414004,
+          "aperture_conic_max_abs_px": 0.4297585286983882,
+          "projected_mesh_vertex_bbox_native_px": [
+            113.44847420465413,
+            102.08909257284972,
+            618.1115272866145,
+            620.5815398711688
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 26.30632398453451,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            294.7715698750835,
+            106.28656156015353
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 16,
+          "azimuth_degrees_render_assumption": 25,
+          "eye_world_m_estimated": [
+            0.08987192393435679,
+            0.19273096283673677,
+            0.12123525242136833
+          ],
+          "distance_to_front_origin_m_estimated": 0.24478597422505916,
+          "elevation_degrees_estimated": 29.687583759829234,
+          "roll_degrees_estimated": 220.10704565915762,
+          "principal_point_native_px_estimated": [
+            403.08583081742677,
+            426.81388592300056
+          ],
+          "aperture_conic_RMS_px": 3.1786999879087108,
+          "aperture_conic_max_abs_px": 5.091755324503075,
+          "projected_mesh_vertex_bbox_native_px": [
+            191.1535962960211,
+            108.05193174471594,
+            700.1864190889465,
+            617.9453489639232
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 26.86363216017993,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            516.8594338865908,
+            112.14192359292906
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        },
+        {
+          "focal_mm_render_assumption_sensor36mm": 16,
+          "azimuth_degrees_render_assumption": 12.5,
+          "eye_world_m_estimated": [
+            0.044677129213245875,
+            0.20152550666139668,
+            0.1358032419395097
+          ],
+          "distance_to_front_origin_m_estimated": 0.24708520034828213,
+          "elevation_degrees_estimated": 33.34102337647815,
+          "roll_degrees_estimated": 207.58058339014985,
+          "principal_point_native_px_estimated": [
+            408.34485088804604,
+            428.9944595779393
+          ],
+          "aperture_conic_RMS_px": 3.2896410780520045e-14,
+          "aperture_conic_max_abs_px": 1.0078312186655057e-13,
+          "projected_mesh_vertex_bbox_native_px": [
+            184.87856212422122,
+            110.87956442635203,
+            695.4345369312805,
+            618.8016626266974
+          ],
+          "sampled_vertex_outside_black_mask_median_px": 0.0,
+          "sampled_vertex_outside_black_mask_p95_px": 27.592831435305033,
+          "vertices_behind_or_before_nearclip_fraction": 0.0,
+          "central_rear_bridge_midpoint_proxy_projected_px": [
+            506.5531272455022,
+            116.01292047146177
+          ],
+          "limits": "Outside-mask values are one-sided diagnostics with unbuilt pads/ribs/edge returns and threshold errors. Not a shape quality score or a camera/section measurement."
+        }
+      ],
+      "candidate_sort_is_camera_certification": false
+    }
+  ],
+  "art_accepted": false
+}
