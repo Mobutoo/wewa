@@ -1,6 +1,6 @@
 # Viva Wewa — revue des composants moto
 
-**49 composants uniques enregistrés · 49 vues Blender prouvées · aucune réception artistique.**
+**52 composants uniques enregistrés · 52 vues Blender prouvées · aucune réception artistique.**
 
 Une seule vue originale par composant, à la révision exacte de sa fiche. Les anciennes révisions et les sources seulement cataloguées ou gelées sans enregistrement central ne sont pas ajoutées. Ces rendus montrent des candidats isolés, pas le jeu ni une moto terminée.
 
@@ -28,9 +28,9 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 | [12 · Phare et clignotants avant](#groupe-12) | 2 | Candidats partiels en revue ; groupe non terminé |
 | [13 · Fourche et direction](#groupe-13) | 6 | Candidats partiels en revue ; groupe non terminé |
 | [14 · Ensemble avant et compatibilité des candidats existants](#groupe-14) | Voir les préexistants ; aucun nouveau composant compté | Candidats antérieurs existants à recontrôler ; compatibilité restante |
-| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 6 | Candidats partiels en revue ; groupe non terminé |
+| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 7 | Candidats partiels en revue ; groupe non terminé |
 | [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 2 | Candidats partiels en revue ; groupe non terminé |
-| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 12 | Candidats partiels en revue ; groupe non terminé |
+| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 14 | Candidats partiels en revue ; groupe non terminé |
 | [18 · Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière](#groupe-18) | 0 | À fabriquer ; aucune pièce enregistrée |
 
 <a id="groupe-1"></a>
@@ -842,6 +842,32 @@ PNG SHA-256 : `146404347298ef496b88186926bfa7f2c29b61dee0ba539136c41723127828e1`
 
 </details>
 
+
+<a id="moto-swingarm-body-001"></a>
+
+### Corps de bras oscillant — candidat apparenté
+
+`MOTO-SWINGARM-BODY-001` · révision `swingarm-body-v1` · **candidat non reçu**
+
+![Corps de bras oscillant — candidat apparenté — swingarm-body-v1](swingarm-body-v1/quarter.png)
+
+[Image entière](swingarm-body-v1/quarter.png) · [Preuve du rendu](swingarm-body-v1/render-report.json) · vue `quarter`
+
+Source SHA-256 : `e829f89ea0d6594ceb43830c20d8d8698f41ef0a297b3a503c96b15b1d9df20c`  
+PNG SHA-256 : `e2b4a53f3e600dd5dfd12fddc5706fd726b1b18d9c959818bee2c0bf0e39b112`
+
+[Blender](../../assets-src/moto-components/swingarm/body/swingarm-body-v1.blend) · [GLB](../../assets-src/moto-components/swingarm/body/swingarm-body-v1-inspection.glb) · [README source](../../assets-src/moto-components/swingarm/body/README.md) · [Revue et limites](swingarm-body-v1/README.md) · [Fiche](../workflow/records/moto-swingarm-body-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [reverse-quarter](swingarm-body-v1/reverse-quarter.png) · [preuve](swingarm-body-v1/render-report.json)
+- [weld-detail](swingarm-body-v1/weld-detail.png) · [preuve](swingarm-body-v1/render-report.json)
+- [return-detail](swingarm-body-v1/return-detail.png) · [preuve](swingarm-body-v1/render-report.json)
+
+</details>
+
 Périmètre prévu : garde-boue avant; cadre: tubes et jonctions visibles; bras oscillant et pivots visibles.
 
 <a id="groupe-16"></a>
@@ -1208,6 +1234,57 @@ PNG SHA-256 : `60ad9248798f142e0d52502ac7aceefdca1c6935ead126d244e3cf8bf09c96af`
 - [short-port-contact](engine-spark-cap-v2/short-port-contact.png) · [preuve](engine-spark-cap-v2/render-report.json)
 - [installed-context](engine-spark-cap-v2/installed-context.png) · [preuve](engine-spark-cap-v2/render-report.json)
 - [grain-control](engine-spark-cap-v2/grain-control.png) · [preuve](engine-spark-cap-v2/render-report.json)
+
+</details>
+
+
+<a id="moto-engine-intake-manifold-001"></a>
+
+### Collecteur d’admission — variante conditionnelle
+
+`MOTO-ENGINE-INTAKE-MANIFOLD-001` · révision `engine-intake-manifold-v1` · **candidat non reçu**
+
+![Collecteur d’admission — variante conditionnelle — engine-intake-manifold-v1](engine-intake-manifold-v1/reference-like-quarter.png)
+
+[Image entière](engine-intake-manifold-v1/reference-like-quarter.png) · [Preuve du rendu](engine-intake-manifold-v1/render-report.json) · vue `reference-like-quarter`
+
+Source SHA-256 : `428eecbc58be7eb7cbcce12eb52b5d4e45549554964772a4f75a950f4508efab`  
+PNG SHA-256 : `0cdd27ce13915256f3f82e9f0e57c4be8bf5add9077c302ff91890250133849c`
+
+[Blender](../../assets-src/moto-components/engine-intake-manifold/engine-intake-manifold-v1.blend) · [GLB](../../assets-src/moto-components/engine-intake-manifold/engine-intake-manifold-inspection.glb) · [README source](../../assets-src/moto-components/engine-intake-manifold/README.md) · [Revue et limites](engine-intake-manifold-v1/README.md) · [Fiche](../workflow/records/moto-engine-intake-manifold-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [opposite-quarter](engine-intake-manifold-v1/opposite-quarter.png) · [preuve](engine-intake-manifold-v1/render-report.json)
+- [mouth-bands-detail](engine-intake-manifold-v1/mouth-bands-detail.png) · [preuve](engine-intake-manifold-v1/render-report.json)
+- [estimated-base-reverse](engine-intake-manifold-v1/estimated-base-reverse.png) · [preuve](engine-intake-manifold-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-engine-intake-insulator-001"></a>
+
+### Isolant d’admission v2 — stries originales sans relief
+
+`MOTO-ENGINE-INTAKE-INSULATOR-001` · révision `engine-intake-insulator-v2` · **candidat non reçu**
+
+![Isolant d’admission v2 — stries originales sans relief — engine-intake-insulator-v2](engine-intake-insulator-v2/front-quarter.png)
+
+[Image entière](engine-intake-insulator-v2/front-quarter.png) · [Preuve du rendu](engine-intake-insulator-v2/render-report.json) · vue `front-quarter`
+
+Source SHA-256 : `caa2dcbdb6d2e16f5b46916f0e9ede6e1d1d211205b8e5ae3912d9db9f17bf31`  
+PNG SHA-256 : `bfe4522c7203c2dcb87f5acb3952d892a920aa4ccf93a617d9241b7ba7bc744f`
+
+[Blender](../../assets-src/moto-components/engine-intake-insulator/engine-intake-insulator-v2.blend) · [GLB](../../assets-src/moto-components/engine-intake-insulator/engine-intake-insulator-v2-inspection.glb) · [README source](../../assets-src/moto-components/engine-intake-insulator/README_v2.md) · [Revue et limites](engine-intake-insulator-v2/README.md) · [Fiche](../workflow/records/moto-engine-intake-insulator-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [groove-ear-detail](engine-intake-insulator-v2/groove-ear-detail.png) · [preuve](engine-intake-insulator-v2/render-report.json)
+- [raking-finish-detail](engine-intake-insulator-v2/raking-finish-detail.png) · [preuve](engine-intake-insulator-v2/render-report.json)
 
 </details>
 

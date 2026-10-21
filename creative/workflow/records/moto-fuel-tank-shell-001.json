@@ -1,0 +1,188 @@
+{
+  "schema": 1,
+  "id": "MOTO-FUEL-TANK-SHELL-001",
+  "label": "Réservoir WEWA — coque supérieure et flancs observables",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current125HD RDC visual target; related52PF1825 not exactconfirmed",
+    "variant_confirmed": false,
+    "usage": "Motorcycle alone, visible upper/lateral skin; assembly relation estimated",
+    "review_distances_m": [
+      0.25,
+      0.5,
+      1.2
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01"
+  ],
+  "claims": [],
+  "views": [],
+  "criteria": [
+    "Changing longitudinal and transverse sections",
+    "Real skin thickness, declared cut boundaries instead of hidden invented tank",
+    "Compare both profile cameras and actual oblique references",
+    "Gray and reflection before red or lettering"
+  ],
+  "gaps": [
+    {
+      "id": "TANK-GAP-1",
+      "property": "ExactRDC code/part dimensions",
+      "status": "unknown",
+      "critical": true,
+      "blocks": [
+        "G8"
+      ],
+      "next_research": "Samevariant measured length,width,height plus top/front/back photographs"
+    },
+    {
+      "id": "TANK-GAP-2",
+      "property": "Hidden tunnel/pan/mounts",
+      "status": "unknown",
+      "critical": true,
+      "blocks": [
+        "G5",
+        "G8"
+      ],
+      "next_research": "Samevariant underside and separatedseat/tank with scale"
+    },
+    {
+      "id": "TANK-GAP-3",
+      "property": "Projection/crosssection calibration",
+      "status": "estimated",
+      "critical": true,
+      "blocks": [
+        "G8"
+      ],
+      "next_research": "Intrinsics or surveyed multi-depth correspondence and top/front views"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "rework",
+      "revision": "fuel-tank-shell-study-v1",
+      "reviewer": {
+        "name": "C fabrication agent",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/fuel-tank-shell/G0-G1-reading-v1.json",
+          "sha256": "afc5f6098aca7c58209bdf570dc776d05f66caa835440fb3ccffeef2a005effa",
+          "revision": "fuel-tank-shell-study-v1"
+        }
+      ],
+      "reason": "Visible currentRDC target identified but exactcode notconfirmed; estimated external candidate authorized.",
+      "reviewed_at": "2026-10-21T06:49:49.683429+00:00"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "fuel-tank-shell-study-v1",
+      "reviewer": {
+        "name": "C fabrication agent",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "source_view_dimension_matrix",
+          "path": "../../research/fuel-tank-shell/G0-G1-reading-v1.json",
+          "sha256": "afc5f6098aca7c58209bdf570dc776d05f66caa835440fb3ccffeef2a005effa",
+          "revision": "fuel-tank-shell-study-v1"
+        }
+      ],
+      "reason": "Exterior photos support observedskin; cotes, underside and mounts remain unresolved.",
+      "reviewed_at": "2026-10-21T06:49:49.683429+00:00"
+    },
+    "G2": {
+      "status": "rework",
+      "revision": "fuel-tank-shell-study-v1",
+      "reviewer": {
+        "name": "C fabrication agent",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "scale_and_comparison_protocol",
+          "path": "../../research/fuel-tank-shell/section-and-comparison-plan-v1.json",
+          "sha256": "7f763fd0979adfdeeef3bf0e9713dd93488889087d226fcf9e5e3f45caf76600",
+          "revision": "fuel-tank-shell-study-v1"
+        }
+      ],
+      "reason": "Repeatable camera and section hypotheses declared; no metric reconstruction or calibrated tolerances.",
+      "reviewed_at": "2026-10-21T06:49:49.683429+00:00"
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "fuel-tank-shell-study-v1",
+      "reviewer": {
+        "name": "C fabrication agent",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "gray_and_reflection_comparison",
+          "path": "../../reviews/fuel-tank-shell-study-v1/gray-reflection-reading.json",
+          "sha256": "72f12ea16e75e951f9042247d0d72691a87b69281ab3e45423ef4e217d8f707a",
+          "revision": "fuel-tank-shell-study-v1"
+        }
+      ],
+      "reason": "Firstskin only, incompleteobserved details/cuts and uncalibratedprofile disagreement. No shapefidelity acceptance.",
+      "reviewed_at": "2026-10-21T06:54:55.219975+00:00"
+    },
+    "G4": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": true,
+  "source_revision": "fuel-tank-shell-study-v1",
+  "export_revision": "fuel-tank-shell-study-v1",
+  "next_action": "Build first gray upper/lateral skin from declared sections, then read both profiles and reflection before filler mouth, red/WEWA or seat.",
+  "art_accepted": false
+}

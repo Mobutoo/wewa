@@ -1,0 +1,7 @@
+# Corps de bras oscillant candidat
+
+Une géométrie originale du corps apparenté a été construite à partir de deux faces du même52PF0219. Deux rails creux avec fentes, deux logements avant séparés, un U avec retour formé et extrémités progressives, des pattes et petites attaches ainsi que des cordons originaux sont présents. Bagues, axe, écrou, patin, tendeurs, frein et amortisseurs sont séparés. L’identité125HD RDC, les métriques, l’angle installé et les raccords restent conditionnels.
+
+Le G3 et le candidat peint ont205920triangles, une coque fermée et des passages réels. Les normales des plans sont définies dans la source ; la contraction bornée de petites arêtes et six rotations de diagonale traitent les aiguilles numériques. Aucun buffer n’est réparé. `gray-review.json`, `shadow-diagnostic-review.json` et `occluded-camera-diagnostic.json` distinguent les vrais gris/reflets utiles, les ombres portées et les premières caméras masquées archivées. La peinture propre utilise seulement deux cartes originales, une échelle de grain et des valeurs estimées. La conservation exacte des attributs G3 est contrôlée séparément.
+
+Le [dossier source](../../../assets-src/moto-components/swingarm/body/README.md) donne les URL comparables, paramètres, limites et la recette portable. Les vues96 et leur lecture sont liées par checkpoints à la source figée. Un contrôle technique réussi ne reçoit ni la forme ni la finition ; aucun montage, résistance mécanique ou Safari physique n’est certifié.

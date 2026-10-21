@@ -1,0 +1,49 @@
+{
+  "component_id": "MOTO-ENGINE-INTAKE-INSULATOR-001",
+  "scope": "Next physical exterior unit after cap2 freeze; no geometry yet.",
+  "reference_report": "creative/research/engine17-intake-exterior-v1/report.json",
+  "actually_opened_private_photos": [
+    {
+      "path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/JV581404-motozilla-919201.jpg",
+      "sha256": "399d30d31781135aa6f5c2a3f0b76d505bdfdf6fd267046fd84fd371da30add6"
+    },
+    {
+      "path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/JV581404-winter.jpg",
+      "sha256": "3464c720de7d126f75ea15ebcbc6c59885576ee250e1378977e378fc369c1b7b"
+    }
+  ],
+  "observed": [
+    "Two pierced bolt ears on an asymmetric oblong perimeter; central mouth and annular face groove.",
+    "Small outer tab visible on the left side of both supplied views.",
+    "Shallow circular molding marks appear separate from the through bolt openings; function not attributed."
+  ],
+  "invisible_or_uncertain": [
+    "Opposite face, exact thickness, groove depth, mould draft and all metric body dimensions.",
+    "Exact RDC identity; supplier code JV581404 is tied to UG5/125X branch only.",
+    "Photographic perspectives differ; no calibrated pose, homography or plane metrology."
+  ],
+  "conditional_working_plan": {
+    "bolt_centres": "Use current provisional head bolt datums as an explicitly estimated candidate interface, never as a photo calibration.",
+    "body_scale": "All dimensions remain estimated with ranges. Published LJA00011 O-ring ID28.7 and section1.9 are a separate linked part, not a scale for the photos.",
+    "central_bore": "Circular working bore linked conditionally to current estimated head port; no model-name-derived venturi size.",
+    "contour": "Original section-based asymmetric outer perimeter and small tab, three true through openings, visible annular groove; soften in authored sections rather than global bevel after CSG.",
+    "back": "Simple explicitly estimated back envelope. Do not pretend an observed reverse groove or exact O-ring compression.",
+    "separate_later_units": [
+      "Two O-rings in catalogue stack",
+      "52JV0180 metallic manifold",
+      "PF581402 rubber connector",
+      "Two DP101198 clamps",
+      "JV581204 external carburetor"
+    ],
+    "interface": "Keep head3 frozen; if the candidate conflicts, report and re-estimate coherently rather than translating a cap or cutting hidden features."
+  },
+  "source_photograph_pixels_to_public_texture": false,
+  "G1_metric_or_identity_complete": false,
+  "art_accepted": false,
+  "first_gray_review": {
+    "source_sha256": "990ac41b4b78ad5d28d6c94b2496d70943f91974473f71e6bfa08a4bc46dc70a",
+    "actually_opened": "gray/preview8/front-quarter.png",
+    "reading": "Outline, two bolt ears and front annular channel readable, no obvious new pinch. Initial11mm mouth inherits estimated head aperture too strictly and gives a narrow visible annulus ratio compared with two product face views. Increase only insulator working mouth to12.5mm with10.5..14mm range, keep head source fixed; no calibrated ratio measurement claimed.",
+    "previous_state_preserved_private": "/workspace/wewa-assets/work-in-progress/engine-intake-insulator/wip-990ac41b"
+  }
+}

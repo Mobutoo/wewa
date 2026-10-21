@@ -1,0 +1,12 @@
+{
+  "rejected_source_sha256": "78f710eb0330c4c09c10ca9c32571b8e6349180aaa9296ecc27ab1de418a553b",
+  "rejected_export_sha256": "81c7b231787ba1afd300c07ac27b61ba8eba247b49c34ec3e51470432ece23db",
+  "embedded_packed_texture_sha256": "59425f4f5cbade66349980d2cfe364c1d39b8ec6a048b68e60b3ca8c956acc38",
+  "actual_UV_sample_count": 201876,
+  "sampled_roughness_min": 0.0,
+  "sampled_roughness_max": 0.5413601590137855,
+  "sampled_roughness_below_recipe_lower_bound": 523,
+  "reason": "Antialiased island-border pixels blend baked roughness with black cleared padding, outside bounded original recipe. Candidate refused before any PBR view/freeze.",
+  "correction_recipe": "Initialize generated roughness image to neutral recipe0.49, normal image to neutral tangent(0.5,0.5,1), bake without clearing. Real shader signal then blends with bounded background; exported mesh UV samples must pass original bounds. No geometry/tangent or photograph repair.",
+  "art_accepted": false
+}

@@ -1,0 +1,1198 @@
+{
+  "schema": "wewa.public-source-dependency-audit.v1",
+  "created_utc": "2026-10-21T06:38:37.424074+00:00",
+  "scope": [
+    "engine-intake-insulator-v2",
+    "swingarm-body-v1"
+  ],
+  "method": "Static script/import/read-path analysis; SHA/existence for stable dependencies only; local read-only Git index; existing closed manifests; Zstandard BHead Library metadata reading. No geometry/render/UV/Babylon checker, recipe, rebuild or web request executed.",
+  "closed_inputs": [
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+      "sha256": "9c502a94ce20eccca4823dbc50fc51074e76a673c85d98143c99343a6e446c1a",
+      "files_count": 40,
+      "source_sha256": "caa2dcbdb6d2e16f5b46916f0e9ede6e1d1d211205b8e5ae3912d9db9f17bf31",
+      "export_sha256": "852751f2d9695f14f9dc2036dbe6b1789d67dd7581398ad4baf2d11e8dbb381a"
+    },
+    {
+      "path": "creative/reviews/engine-intake-insulator-v2/review-manifest.json",
+      "sha256": "f62f393984e7960b0c310c4786dcbf477181c958b938cf3465f3b83574c061ac",
+      "files_count": 51,
+      "source_sha256": "caa2dcbdb6d2e16f5b46916f0e9ede6e1d1d211205b8e5ae3912d9db9f17bf31",
+      "export_sha256": "852751f2d9695f14f9dc2036dbe6b1789d67dd7581398ad4baf2d11e8dbb381a"
+    },
+    {
+      "path": "creative/reviews/swingarm-body-v1/source-freeze.json",
+      "sha256": "fc21cce028725a702940103526906440c6a0eaca024b6a62906d0d83bc524dca",
+      "files_count": 26,
+      "source_sha256": "e829f89ea0d6594ceb43830c20d8d8698f41ef0a297b3a503c96b15b1d9df20c",
+      "export_sha256": "409a40a9f583a5361a70e1cc746207cc15a6fa0c0a95975c847bb6334cfc0fbb"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+      "exists": true,
+      "sha256": "9c502a94ce20eccca4823dbc50fc51074e76a673c85d98143c99343a6e446c1a",
+      "bytes": 9064,
+      "role": "closed_manifest",
+      "purpose": "Closed identity/witness; not a manufacturing master",
+      "exact_manifest_coverage": [
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/engine-intake-insulator-v2/review-manifest.json",
+      "exists": true,
+      "sha256": "f62f393984e7960b0c310c4786dcbf477181c958b938cf3465f3b83574c061ac",
+      "bytes": 11262,
+      "role": "closed_manifest",
+      "purpose": "Closed identity/witness; not a manufacturing master",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/swingarm-body-v1/source-freeze.json",
+      "exists": true,
+      "sha256": "fc21cce028725a702940103526906440c6a0eaca024b6a62906d0d83bc524dca",
+      "bytes": 5603,
+      "role": "closed_manifest",
+      "purpose": "Closed identity/witness; not a manufacturing master",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/build_v2.py",
+      "exists": true,
+      "sha256": "641f4895a88fc101c107c187366c821001b0fcb36ae9938f21d2764969702f2c",
+      "bytes": 8860,
+      "role": "required_insulator2_recipe_input",
+      "purpose": "Actually read/hash asserted by build_v2.py; v1 GLB is a protected identity witness, not imported geometry",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/parameters-v2.json",
+      "exists": true,
+      "sha256": "5d0fc71a28d982050e143f68f9b3c6801a2c97a160cdf3d2beac9cdd4a550dbb",
+      "bytes": 5447,
+      "role": "required_insulator2_recipe_input",
+      "purpose": "Actually read/hash asserted by build_v2.py; v1 GLB is a protected identity witness, not imported geometry",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/engine-intake-insulator-v1.blend",
+      "exists": true,
+      "sha256": "ac9255209957fafcdd0fe59909cff0af379740526d67b0105fbee3b3a40e765c",
+      "bytes": 3707947,
+      "role": "required_insulator2_recipe_input",
+      "purpose": "Actually read/hash asserted by build_v2.py; v1 GLB is a protected identity witness, not imported geometry",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/engine-intake-insulator-inspection.glb",
+      "exists": true,
+      "sha256": "14d3eea5b42dbdcd849bd6fe11f9208a794db4e2eaa4d0359ebb6ea92590523b",
+      "bytes": 1538368,
+      "role": "required_insulator2_recipe_input",
+      "purpose": "Actually read/hash asserted by build_v2.py; v1 GLB is a protected identity witness, not imported geometry",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/preflight-manifest.json",
+      "exists": true,
+      "sha256": "769ecf76639555d54004ea06a71ecedd570d0a5d2b4a97c7e382c42aa57e6d23",
+      "bytes": 7159,
+      "role": "required_insulator2_recipe_input",
+      "purpose": "Actually read/hash asserted by build_v2.py; v1 GLB is a protected identity witness, not imported geometry",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/build-report.json",
+      "exists": true,
+      "sha256": "f5e9094d9f5551fd47f3e6e25cc4fac38aa944a722a718ae34eb9f2686c773ed",
+      "bytes": 4325,
+      "role": "required_insulator2_recipe_input",
+      "purpose": "Actually read/hash asserted by build_v2.py; v1 GLB is a protected identity witness, not imported geometry",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/engine-intake-insulator-v2.blend",
+      "exists": true,
+      "sha256": "caa2dcbdb6d2e16f5b46916f0e9ede6e1d1d211205b8e5ae3912d9db9f17bf31",
+      "bytes": 7478083,
+      "role": "supplied_frozen_insulator2_output",
+      "purpose": "Generated from v1 and public procedural recipe; not an external texture master",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/engine-intake-insulator-v2-inspection.glb",
+      "exists": true,
+      "sha256": "852751f2d9695f14f9dc2036dbe6b1789d67dd7581398ad4baf2d11e8dbb381a",
+      "bytes": 5294068,
+      "role": "supplied_frozen_insulator2_output",
+      "purpose": "Generated from v1 and public procedural recipe; not an external texture master",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/build-report-v2.json",
+      "exists": true,
+      "sha256": "02ebb5a8695afd1f4e11645b6cb40f6e0fd61e6163135a25ef72493ae64a1b9d",
+      "bytes": 7698,
+      "role": "supplied_frozen_insulator2_output",
+      "purpose": "Generated from v1 and public procedural recipe; not an external texture master",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/textures-v2/insulator-striation-basecolor-v2.png",
+      "exists": true,
+      "sha256": "d28d339914fba7e919a05d15ea73b4cfdd8b9d76d60cdb168c6de94dd5deadb7",
+      "bytes": 1830533,
+      "role": "supplied_frozen_insulator2_output",
+      "purpose": "Generated from v1 and public procedural recipe; not an external texture master",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/textures-v2/insulator-striation-roughness-v2.png",
+      "exists": true,
+      "sha256": "c3d347222173b77abe98e5df4f3a32e3a61f7a8478af6c3150e17384c6b317fe",
+      "bytes": 1516884,
+      "role": "supplied_frozen_insulator2_output",
+      "purpose": "Generated from v1 and public procedural recipe; not an external texture master",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/render_v2.py",
+      "exists": true,
+      "sha256": "1002992e589433885fe661a9175de84ddbaf9a3bbe6c126a027ae30a79aa84e6",
+      "bytes": 5305,
+      "role": "insulator2_review_or_diagnostic_protocol",
+      "purpose": "Public protocol; private dump paths are outputs and recreatable diagnostic inputs only",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/render_checkpoint.py",
+      "exists": true,
+      "sha256": "3b5ade95f0323f0df3425e6d5c0ea19d36b17674b40e5aa8413819039d5c602d",
+      "bytes": 4282,
+      "role": "insulator2_review_or_diagnostic_protocol",
+      "purpose": "Public protocol; private dump paths are outputs and recreatable diagnostic inputs only",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/camera_preflight.py",
+      "exists": true,
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a",
+      "bytes": 3235,
+      "role": "insulator2_review_or_diagnostic_protocol",
+      "purpose": "Public protocol; private dump paths are outputs and recreatable diagnostic inputs only",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/check_material_export_v2.mjs",
+      "exists": true,
+      "sha256": "14829267c967ad45dad270df5b8f491ae120530cf20b88c2d980c09d215facf4",
+      "bytes": 2559,
+      "role": "insulator2_review_or_diagnostic_protocol",
+      "purpose": "Public protocol; private dump paths are outputs and recreatable diagnostic inputs only",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/check_exported_map_pixels_v2.py",
+      "exists": true,
+      "sha256": "4a9c607a72e47c086c467baa50f8e5f32e1519c548c6322f90a572dd09ecf299",
+      "bytes": 2447,
+      "role": "insulator2_review_or_diagnostic_protocol",
+      "purpose": "Public protocol; private dump paths are outputs and recreatable diagnostic inputs only",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/record_preflight_v2.py",
+      "exists": true,
+      "sha256": "d7de52dd577905cf046c85cf451b7322a3f83e9dc425e7b9817a585adfef6ea0",
+      "bytes": 4932,
+      "role": "insulator2_review_or_diagnostic_protocol",
+      "purpose": "Public protocol; private dump paths are outputs and recreatable diagnostic inputs only",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/record_review_v2.py",
+      "exists": true,
+      "sha256": "4eec19d240b35f77c40b4ac49a0615cff275c6d532c816ee9c9117b05c4ee64e",
+      "bytes": 2146,
+      "role": "insulator2_review_or_diagnostic_protocol",
+      "purpose": "Public protocol; private dump paths are outputs and recreatable diagnostic inputs only",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/engine-intake-insulator-v2/reference-path-check.json",
+      "exists": true,
+      "sha256": "1964843b593c8865e554417f9afeffacb82bfb7dbd867bdb137547449a21aa5e",
+      "bytes": 1372,
+      "role": "existing_path_evidence",
+      "purpose": "Current caa2dcb/852751f2 binding; not a relocated-clone test",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/build.py",
+      "exists": true,
+      "sha256": "181f10b70dcbed4ece3d2a28d1260b2ec3775f0b54fc49cc0f7b5f404f819153",
+      "bytes": 21560,
+      "role": "required_swingarm_full_recipe_source",
+      "purpose": "Native procedural generation and source refinement; no imported private mesh",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/parameters.json",
+      "exists": true,
+      "sha256": "c0b1bdea5c49079693c4d789d95aeed14746b392298a94804605253545ed0978",
+      "bytes": 6828,
+      "role": "required_swingarm_full_recipe_source",
+      "purpose": "Native procedural generation and source refinement; no imported private mesh",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/csg.py",
+      "exists": true,
+      "sha256": "b9c1f59011684d4d4eb992f9d5e1a605faac67425aea345e3128d17bde2d4802",
+      "bytes": 1540,
+      "role": "required_swingarm_full_recipe_source",
+      "purpose": "Native procedural generation and source refinement; no imported private mesh",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/refine_topology.py",
+      "exists": true,
+      "sha256": "8892b1f91d8f32e038c8aaf0f806c7cb4f47100c76d1d2736167d89038f5d513",
+      "bytes": 6344,
+      "role": "required_swingarm_full_recipe_source",
+      "purpose": "Native procedural generation and source refinement; no imported private mesh",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/refine_needles.py",
+      "exists": true,
+      "sha256": "53eb9f9d3aff200f1c77ee1c82705c32b4d36a2593ec2588dc9f42e71af0dd83",
+      "bytes": 8230,
+      "role": "required_swingarm_full_recipe_source",
+      "purpose": "Native procedural generation and source refinement; no imported private mesh",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/authored_normals.py",
+      "exists": true,
+      "sha256": "4c81a8b8911ff955825212f7a645161d96a87183a297b5fa3c9822adc845b1f7",
+      "bytes": 4494,
+      "role": "required_swingarm_full_recipe_source",
+      "purpose": "Native procedural generation and source refinement; no imported private mesh",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/material.py",
+      "exists": true,
+      "sha256": "da8bfa4678104a6477c7ddce76be7ef407dac029af41f8127106ebee3db91ba8",
+      "bytes": 4503,
+      "role": "required_swingarm_material_restart",
+      "purpose": "Restore G3 files into active paths in isolated work copy; original texture generation in material.py",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/g3-master-v1/swingarm-body-v1.blend",
+      "exists": true,
+      "sha256": "8b16faabe42e8ce7dcf1887977950dd8a38e64a06deec6c9c3fd32e941b70dd6",
+      "bytes": 8162981,
+      "role": "required_swingarm_material_restart",
+      "purpose": "Restore G3 files into active paths in isolated work copy; original texture generation in material.py",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/g3-master-v1/swingarm-body-v1-inspection.glb",
+      "exists": true,
+      "sha256": "6ba6cbe379dd34a7c44c522f28a9e555387416030a9d7af2aa546c29ef496656",
+      "bytes": 9628468,
+      "role": "required_swingarm_material_restart",
+      "purpose": "Restore G3 files into active paths in isolated work copy; original texture generation in material.py",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/g3-master-v1/source-geometry-check.json",
+      "exists": true,
+      "sha256": "cd5f337e4cb59ca1c345699c9a26bc6938ed76e102402fbf1478c20dc21b4e52",
+      "bytes": 16536,
+      "role": "required_swingarm_material_restart",
+      "purpose": "Restore G3 files into active paths in isolated work copy; original texture generation in material.py",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/g3-master-v1/geometry-check.json",
+      "exists": true,
+      "sha256": "8093cc0690583ef3bfdf61de295463efd4f2bd2a37cac27dc16e9dbf19d03d66",
+      "bytes": 2882,
+      "role": "supplied_swingarm_output_or_public_protocol",
+      "purpose": "Source-freeze26 coverage; G3 buffer witness, public environment, rendered/procedural output or protocol",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/g3-master-v1/README.md",
+      "exists": true,
+      "sha256": "a7bb76761af5cee94ebe4d1675683da376992b349cc27936fc267eed3c6a52fc",
+      "bytes": 480,
+      "role": "supplied_swingarm_output_or_public_protocol",
+      "purpose": "Source-freeze26 coverage; G3 buffer witness, public environment, rendered/procedural output or protocol",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/README.md",
+      "exists": true,
+      "sha256": "cc221bbc89dd367cc48d89355aca69995f5c67a39893ea064368cdba26f30034",
+      "bytes": 8835,
+      "role": "supplied_swingarm_output_or_public_protocol",
+      "purpose": "Source-freeze26 coverage; G3 buffer witness, public environment, rendered/procedural output or protocol",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/requirements.txt",
+      "exists": true,
+      "sha256": "7f3a18f74b541656630ebd0832b87dbbd8c504009a436fe55df814d2480f0837",
+      "bytes": 114,
+      "role": "supplied_swingarm_output_or_public_protocol",
+      "purpose": "Source-freeze26 coverage; G3 buffer witness, public environment, rendered/procedural output or protocol",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/build-report.json",
+      "exists": true,
+      "sha256": "21962971b93a0fe6dd62812f1ad93ea22090c276a6444ff5af844044fd8d6b91",
+      "bytes": 16664,
+      "role": "supplied_swingarm_output_or_public_protocol",
+      "purpose": "Source-freeze26 coverage; G3 buffer witness, public environment, rendered/procedural output or protocol",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/swingarm-body-v1.blend",
+      "exists": true,
+      "sha256": "e829f89ea0d6594ceb43830c20d8d8698f41ef0a297b3a503c96b15b1d9df20c",
+      "bytes": 8382837,
+      "role": "supplied_swingarm_output_or_public_protocol",
+      "purpose": "Source-freeze26 coverage; G3 buffer witness, public environment, rendered/procedural output or protocol",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/swingarm-body-v1-inspection.glb",
+      "exists": true,
+      "sha256": "409a40a9f583a5361a70e1cc746207cc15a6fa0c0a95975c847bb6334cfc0fbb",
+      "bytes": 9846872,
+      "role": "supplied_swingarm_output_or_public_protocol",
+      "purpose": "Source-freeze26 coverage; G3 buffer witness, public environment, rendered/procedural output or protocol",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/textures/swingarm-body-original-normal.png",
+      "exists": true,
+      "sha256": "6692d6017c7de0f4d0cfe42e9337b530b6f3438ede8178d4505b92990b17c0b5",
+      "bytes": 115046,
+      "role": "supplied_swingarm_output_or_public_protocol",
+      "purpose": "Source-freeze26 coverage; G3 buffer witness, public environment, rendered/procedural output or protocol",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/textures/swingarm-body-original-metallic-roughness.png",
+      "exists": true,
+      "sha256": "b9d0b85efd69fa7f0a111c9887bf2a5df870d3ffae37ac335974368fc17d3fda",
+      "bytes": 102885,
+      "role": "supplied_swingarm_output_or_public_protocol",
+      "purpose": "Source-freeze26 coverage; G3 buffer witness, public environment, rendered/procedural output or protocol",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/render.py",
+      "exists": true,
+      "sha256": "e9921e359bdb41f6ca11fdd1ae91eb8c65fd653fc7ca90df876af9d8ddcfb2ac",
+      "bytes": 5723,
+      "role": "supplied_swingarm_output_or_public_protocol",
+      "purpose": "Source-freeze26 coverage; G3 buffer witness, public environment, rendered/procedural output or protocol",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/record.py",
+      "exists": true,
+      "sha256": "cebf3ed6d1db2779285f4537cb12eda2f651f0b460234fc2a4284f8a1b319966",
+      "bytes": 4655,
+      "role": "supplied_swingarm_output_or_public_protocol",
+      "purpose": "Source-freeze26 coverage; G3 buffer witness, public environment, rendered/procedural output or protocol",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/check_export.mjs",
+      "exists": true,
+      "sha256": "4014b78af6da19f8ce09fc74e063360d6f10c726f600328576ac9d312cf1bff6",
+      "bytes": 5659,
+      "role": "supplied_swingarm_output_or_public_protocol",
+      "purpose": "Source-freeze26 coverage; G3 buffer witness, public environment, rendered/procedural output or protocol",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/check_material_preservation.mjs",
+      "exists": true,
+      "sha256": "7178d5d25865bef02bbd92b7cc0f2f15604044f54ef89e287db168647f67c156",
+      "bytes": 1848,
+      "role": "supplied_swingarm_output_or_public_protocol",
+      "purpose": "Source-freeze26 coverage; G3 buffer witness, public environment, rendered/procedural output or protocol",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/inspect_material.py",
+      "exists": true,
+      "sha256": "5ccb81d693789a5f3c0ace28073b373fd2fd31ec25c5d9ffbef9d372761a2b07",
+      "bytes": 2475,
+      "role": "supplied_swingarm_output_or_public_protocol",
+      "purpose": "Source-freeze26 coverage; G3 buffer witness, public environment, rendered/procedural output or protocol",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/body/inspect_interfaces.py",
+      "exists": true,
+      "sha256": "09144b2f16ee6793a16d4cb663e4cd132f0169239af8fbe44562f3d09010aaf5",
+      "bytes": 2304,
+      "role": "supplied_swingarm_output_or_public_protocol",
+      "purpose": "Source-freeze26 coverage; G3 buffer witness, public environment, rendered/procedural output or protocol",
+      "exact_manifest_coverage": [
+        "creative/reviews/swingarm-body-v1/source-freeze.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/swingarm-body-v1/gray-review.json",
+      "exists": true,
+      "sha256": "f454bf8b6a3e6309613edefb60188d0435699b20d85fc25825718d41293a1eba",
+      "bytes": 2239,
+      "role": "stable_swingarm_recipe_witness",
+      "purpose": "gray-review is read by material.py; raw/contraction reports are intermediate producer/consumer pins; active geometry metadata is rewritten by material; record.py plans these stable proofs in final manifest",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/swingarm-body-v1/raw-source-geometry-check.json",
+      "exists": true,
+      "sha256": "655f273569ffb08d77a06dbb847a667be8250d2805b3b5fd5a46a9d8737da3f4",
+      "bytes": 16473,
+      "role": "stable_swingarm_recipe_witness",
+      "purpose": "gray-review is read by material.py; raw/contraction reports are intermediate producer/consumer pins; active geometry metadata is rewritten by material; record.py plans these stable proofs in final manifest",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/swingarm-body-v1/contraction-stage-check.json",
+      "exists": true,
+      "sha256": "0d2a5373fc49ca0ce943687a82535056be704a7ce845f47ddc2ec3100a37d40a",
+      "bytes": 1584,
+      "role": "stable_swingarm_recipe_witness",
+      "purpose": "gray-review is read by material.py; raw/contraction reports are intermediate producer/consumer pins; active geometry metadata is rewritten by material; record.py plans these stable proofs in final manifest",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/swingarm-body-v1/needle-refinement-check.json",
+      "exists": true,
+      "sha256": "e3c7d42e628351d9a2d6320ce06d14e78a0412f9404a16ef1a3d845bbd7d9ca4",
+      "bytes": 13425,
+      "role": "stable_swingarm_recipe_witness",
+      "purpose": "gray-review is read by material.py; raw/contraction reports are intermediate producer/consumer pins; active geometry metadata is rewritten by material; record.py plans these stable proofs in final manifest",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/swingarm-body-v1/source-geometry-check.json",
+      "exists": true,
+      "sha256": "21962971b93a0fe6dd62812f1ad93ea22090c276a6444ff5af844044fd8d6b91",
+      "bytes": 16664,
+      "role": "stable_swingarm_recipe_witness",
+      "purpose": "gray-review is read by material.py; raw/contraction reports are intermediate producer/consumer pins; active geometry metadata is rewritten by material; record.py plans these stable proofs in final manifest",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/swingarm-body-v1/geometry-check.json",
+      "exists": true,
+      "sha256": "5dd563ca747e06ef34f6bde8be19cf3ebc0ff696e428d3d1f4d3b21afaf779aa",
+      "bytes": 2486,
+      "role": "stable_swingarm_recipe_witness",
+      "purpose": "gray-review is read by material.py; raw/contraction reports are intermediate producer/consumer pins; active geometry metadata is rewritten by material; record.py plans these stable proofs in final manifest",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/swingarm-body-v1/material-build-report.json",
+      "exists": true,
+      "sha256": "a95eb390ad38074d2ec4f394a588482689261892a8851c85e8b104b1efa3242c",
+      "bytes": 794,
+      "role": "stable_swingarm_recipe_witness",
+      "purpose": "gray-review is read by material.py; raw/contraction reports are intermediate producer/consumer pins; active geometry metadata is rewritten by material; record.py plans these stable proofs in final manifest",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "tools/blender_component_camera_preflight.py",
+      "exists": true,
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a",
+      "bytes": 3235,
+      "role": "public_environment_or_render_helper",
+      "purpose": "Blender/shared render preflight/host CSG or Node diagnostics environment; not private geometry master",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "tools/provenance/blender-4.3.2-provenance.json",
+      "exists": true,
+      "sha256": "4ec5c5e12a9d8728c04ae6ee262aa3828d570b103d7fbcafde86b86f102fd5f7",
+      "bytes": 606,
+      "role": "public_environment_or_render_helper",
+      "purpose": "Blender/shared render preflight/host CSG or Node diagnostics environment; not private geometry master",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "tools/requirements-assets.txt",
+      "exists": true,
+      "sha256": "d37fb80e0a2bf34bf6e388eb968a144b27ce368350d49a9df4ae2b7aa30d2447",
+      "bytes": 110,
+      "role": "public_environment_or_render_helper",
+      "purpose": "Blender/shared render preflight/host CSG or Node diagnostics environment; not private geometry master",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "package.json",
+      "exists": true,
+      "sha256": "a39ce3bafb566edaf92a27fec2c35e3bd40550136b20ac501e56bcaa01c3a998",
+      "bytes": 782,
+      "role": "public_environment_or_render_helper",
+      "purpose": "Blender/shared render preflight/host CSG or Node diagnostics environment; not private geometry master",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "package-lock.json",
+      "exists": true,
+      "sha256": "f7806a8afda3413efb6d3cec57482f51fda453b3350e784f1e6e90cf8604f014",
+      "bytes": 74605,
+      "role": "public_environment_or_render_helper",
+      "purpose": "Blender/shared render preflight/host CSG or Node diagnostics environment; not private geometry master",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+      "exists": true,
+      "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+      "bytes": 14733894,
+      "role": "conservative_stored_context_library",
+      "purpose": "Insulator inherited context only; conservative metadata closure, not proof every ID is loaded/required",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+      "exists": true,
+      "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6",
+      "bytes": 3081041,
+      "role": "conservative_stored_context_library",
+      "purpose": "Insulator inherited context only; conservative metadata closure, not proof every ID is loaded/required",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+      "exists": true,
+      "sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45",
+      "bytes": 4727012,
+      "role": "conservative_stored_context_library",
+      "purpose": "Insulator inherited context only; conservative metadata closure, not proof every ID is loaded/required",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+      "exists": true,
+      "sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9",
+      "bytes": 3334585,
+      "role": "conservative_stored_context_library",
+      "purpose": "Insulator inherited context only; conservative metadata closure, not proof every ID is loaded/required",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "assets-src/moto-components/engine-cover-left/engine-cover-left-v2.blend",
+      "exists": true,
+      "sha256": "f168aa9ef3e3c6e9b7bc2e884309d69da6fab736660ec6c8d1eaa29e7ecffe74",
+      "bytes": 13084643,
+      "role": "conservative_stored_context_library",
+      "purpose": "Insulator inherited context only; conservative metadata closure, not proof every ID is loaded/required",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "assets-src/moto-components/engine-cover-right/engine-cover-right-v2.blend",
+      "exists": true,
+      "sha256": "2558ea2479a02caf14e9feddad3f953f5587269083ae7b125a177acd4621515a",
+      "bytes": 21467684,
+      "role": "conservative_stored_context_library",
+      "purpose": "Insulator inherited context only; conservative metadata closure, not proof every ID is loaded/required",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/engine-head-v2.blend",
+      "exists": true,
+      "sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f",
+      "bytes": 12427744,
+      "role": "conservative_stored_context_library",
+      "purpose": "Insulator inherited context only; conservative metadata closure, not proof every ID is loaded/required",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "assets-src/moto-components/engine-output-cover-left/engine-output-cover-left-v1.blend",
+      "exists": true,
+      "sha256": "92f528236a8d9e94669b0eed18e186cb8a2c46612bfb7200907cd6a9abc79399",
+      "bytes": 3865030,
+      "role": "conservative_stored_context_library",
+      "purpose": "Insulator inherited context only; conservative metadata closure, not proof every ID is loaded/required",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "assets-src/moto-components/engine-cover-left/engine-cover-left-v1.blend",
+      "exists": true,
+      "sha256": "7e27606ef19b7a49e932ac13841b1da15c6d0d4936f1cef8f095bb233c3ce1d4",
+      "bytes": 12540725,
+      "role": "conservative_stored_context_library",
+      "purpose": "Insulator inherited context only; conservative metadata closure, not proof every ID is loaded/required",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-insulator/check_interface_v2.py",
+      "exists": true,
+      "sha256": "63f13836b4596cec7109aef911f30186f6d04543c9256823f38ada32430002ef",
+      "bytes": 5209,
+      "role": "conditional_interface_diagnostic_only",
+      "purpose": "Exact external manifold guide imported only by check_interface_v2.py; never read by isolated build_v2 material recipe.",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-intake-manifold/engine-intake-manifold-v1.blend",
+      "exists": true,
+      "sha256": "428eecbc58be7eb7cbcce12eb52b5d4e45549554964772a4f75a950f4508efab",
+      "bytes": 12963709,
+      "role": "conditional_interface_diagnostic_only",
+      "purpose": "Exact external manifold guide imported only by check_interface_v2.py; never read by isolated build_v2 material recipe.",
+      "exact_manifest_coverage": [
+        "assets-src/moto-components/engine-intake-insulator/preflight-manifest-v2.json",
+        "creative/reviews/engine-intake-insulator-v2/review-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    }
+  ],
+  "insulator2": {
+    "source_sha256": "caa2dcbdb6d2e16f5b46916f0e9ede6e1d1d211205b8e5ae3912d9db9f17bf31",
+    "export_sha256": "852751f2d9695f14f9dc2036dbe6b1789d67dd7581398ad4baf2d11e8dbb381a",
+    "imports": [
+      "pathlib",
+      "bpy",
+      "json",
+      "hashlib",
+      "math",
+      "numpy"
+    ],
+    "recipe_reads": [
+      "parameters-v2.json",
+      "preflight-manifest.json",
+      "engine-intake-insulator-v1.blend",
+      "engine-intake-insulator-inspection.glb hash witness only",
+      "build-report.json"
+    ],
+    "master_status": "Exact public v1 source ac925520 and its protected GLB14d3eea5 are supplied in preflight40; not a private gray source. v2 adds UV plus original color/roughness maps only.",
+    "procedural_recipe": {
+      "directional_transverse_spacing_working_m": 0.00018,
+      "directional_length_working_m": 0.005,
+      "fine_spacing_working_m": 0.0001,
+      "spacing_estimated_range_m": [
+        8e-05,
+        0.0005
+      ],
+      "directional_length_estimated_range_m": [
+        0.002,
+        0.012
+      ],
+      "direction_working_deg": 20,
+      "direction_estimated_uncertainty_deg": 45,
+      "roughness_range": [
+        0.38,
+        0.58
+      ],
+      "basecolor_multiplier_range": [
+        0.55,
+        1.35
+      ],
+      "noise_seed_W": 581.404,
+      "texture_size_px": [
+        2048,
+        2048
+      ],
+      "packing_margin_fraction": 0.012,
+      "bake_margin_px": 12,
+      "source": "Original irregular elongated streaks plus fine grain. Two relatedJV581404 physical photographs support visible nonuniform striated finish only; no chemistry, length, angle or depth measured. No photograph pixels.",
+      "normalmap_or_microrelief_applied": false,
+      "height_proposal_not_applied_m": 6e-06,
+      "height_proposal_estimated_range_not_applied_m": [
+        2e-06,
+        1.2e-05
+      ],
+      "scope": "Only original color and roughness variations realized; no geometric/normal displacement or measured relief claim. Six source-native zero tangents recorded; source indices/normals protected."
+    },
+    "bake": "Two EMIT atlas maps2048², CPU16 samples,12px margin; elongated4Dnoise W581.404 and fineW582.404 mixed.7/.3, angle20deg. Basecolor sRGB, roughness Non-Color; no normalmap, bump, displacement, RNG external seed file or photo pixels.",
+    "context": "Inherited head3 is a relative Library, hidden except conditional-head-context render; not fused/exported into the one authored body. Manifold1 appears as conditional interface-check input in40 but is not read by build_v2.py or its material bake.",
+    "private_diagnostics": "check_material_export_v2.mjs extracts public GLB texture payloads and UV samples under /workspace/wewa-assets/work-in-progress/engine-intake-insulator/exported-v2-textures; check_exported_map_pixels_v2.py reads those generated derivatives. No master promotion needed. Preview output/checkpoints also private, not bake inputs."
+  },
+  "swingarm1": {
+    "source_sha256": "e829f89ea0d6594ceb43830c20d8d8698f41ef0a297b3a503c96b15b1d9df20c",
+    "export_sha256": "409a40a9f583a5361a70e1cc746207cc15a6fa0c0a95975c847bb6334cfc0fbb",
+    "geometry_master_source_sha256": "8b16faabe42e8ce7dcf1887977950dd8a38e64a06deec6c9c3fd32e941b70dd6",
+    "geometry_master_export_sha256": "6ba6cbe379dd34a7c44c522f28a9e555387416030a9d7af2aa546c29ef496656",
+    "material_restart_sufficient_with_public_witnesses": true,
+    "material_restart_mapping": [
+      {
+        "from": "assets-src/moto-components/swingarm/body/g3-master-v1/swingarm-body-v1.blend",
+        "to_working_path": "assets-src/moto-components/swingarm/body/swingarm-body-v1.blend"
+      },
+      {
+        "from": "assets-src/moto-components/swingarm/body/g3-master-v1/swingarm-body-v1-inspection.glb",
+        "to_working_path": "assets-src/moto-components/swingarm/body/swingarm-body-v1-inspection.glb"
+      },
+      {
+        "from": "assets-src/moto-components/swingarm/body/g3-master-v1/source-geometry-check.json",
+        "to_working_path": "creative/reviews/swingarm-body-v1/source-geometry-check.json"
+      },
+      {
+        "from": "assets-src/moto-components/swingarm/body/g3-master-v1/geometry-check.json",
+        "to_working_path": "creative/reviews/swingarm-body-v1/geometry-check.json",
+        "needed_by_material_py": false,
+        "purpose": "G3 buffer-check witness for other diagnostics/rendering"
+      }
+    ],
+    "additional_material_input": "creative/reviews/swingarm-body-v1/gray-review.json: material.py asserts ready flag and exact G3 source/export SHA before opening active source; supplied master alone without this public JSON does not satisfy the script. This JSON is outside26 but explicitly planned by record.py for final review seal.",
+    "full_recipe": [
+      "build.py -- --stage=full: publicparameters + native local sections/proceduralwelds → hostcsg.py(manifold3d/numpy) → rawBLEND/GLB + raw-source-geometry-check.json",
+      "refine_topology.py: rawBLEND + rawreport + parameters → contractedBLEND + contraction-stage-check.json",
+      "refine_needles.py: contractedBLEND + raw/contractionreports + parameters; imports publicauthored_normals.author_normals → G3BLEND/GLB + source-geometry-check.json",
+      "material.py: activeG3BLEND/GLB + gray-review.json + source-geometry-check.json → original materialmaps and candidatePBR. It is not safe to run against current alreadyPBR active source: G3 SHA assertion intentionally fails until isolated restoration."
+    ],
+    "regeneratable_intermediates_not_external_inputs": [
+      {
+        "path": "assets-src/moto-components/swingarm/body/swingarm-body-raw-v1.blend",
+        "producer": "build.py --stage=full",
+        "consumer": "refine_topology.py",
+        "published_binary_required": false
+      },
+      {
+        "path": "assets-src/moto-components/swingarm/body/swingarm-body-contracted-v1.blend",
+        "producer": "refine_topology.py",
+        "consumer": "refine_needles.py",
+        "published_binary_required": false
+      },
+      {
+        "path": "/workspace/wewa-assets/work-in-progress/swingarm/body/needle-refinement-diagnostic.blend",
+        "producer": "refine_needles.py",
+        "consumer": null,
+        "private_master": false,
+        "path_limit": "Hardcoded output location; parent directory must be available in a future isolated rebuild or explicitly relocated in a new working recipe. No production script reads this .blend."
+      }
+    ],
+    "procedural_material": {
+      "source_sha256": "e829f89ea0d6594ceb43830c20d8d8698f41ef0a297b3a503c96b15b1d9df20c",
+      "export_sha256": "409a40a9f583a5361a70e1cc746207cc15a6fa0c0a95975c847bb6334cfc0fbb",
+      "seed": 15009,
+      "texture_size_px": [
+        512,
+        512
+      ],
+      "tile_m_estimated": 0.01,
+      "fine_filter_correlation_parameter_m_estimated": 0.000135,
+      "broad_filter_correlation_parameter_m_estimated": 0.00105,
+      "height_RMS_m_estimated": 2.6316948745570387e-07,
+      "normal_strength": 0.25,
+      "roughness_estimated": [
+        0.27,
+        0.33
+      ],
+      "baseColor_linear": [
+        0.009,
+        0.01,
+        0.012
+      ],
+      "metallic": 0,
+      "geometry_normals_UV_digest_unchanged": true,
+      "photo_pixels_used": false,
+      "physical_paint_reflectance_measured": false,
+      "current_RDC_part_identity_verified": false,
+      "art_accepted": false
+    },
+    "no_external_library_for_body_or_G3": true,
+    "photos": "Two related52PF0219 specimen views are documentary only; build/material/refinement scripts do not read their pixels or meshes.",
+    "geometry_vs_context": "All constructed body geometry is native. No imported pivot/wheel/crankcase guide is required by body recipe or material restart."
+  },
+  "library_metadata": [
+    {
+      "file": "assets-src/moto-components/engine-intake-insulator/engine-intake-insulator-v2.blend",
+      "exists": true,
+      "library_links": [
+        {
+          "stored_path": "//../engine-head/engine-head-v3.blend",
+          "path_kind": "relative",
+          "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-head/engine-head-v3.blend",
+          "exists": true,
+          "library_metadata_only": true,
+          "repo_path": "assets-src/moto-components/engine-head/engine-head-v3.blend"
+        }
+      ]
+    },
+    {
+      "file": "assets-src/moto-components/swingarm/body/swingarm-body-v1.blend",
+      "exists": true,
+      "library_links": []
+    },
+    {
+      "file": "assets-src/moto-components/swingarm/body/g3-master-v1/swingarm-body-v1.blend",
+      "exists": true,
+      "library_links": []
+    },
+    {
+      "file": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+      "exists": true,
+      "library_links": [
+        {
+          "stored_path": "//../engine-cylinder/engine-cylinder-v1.blend",
+          "path_kind": "relative",
+          "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+          "exists": true,
+          "library_metadata_only": true,
+          "repo_path": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend"
+        },
+        {
+          "stored_path": "//../engine-ohc-cover/engine-ohc-cover-v1.blend",
+          "path_kind": "relative",
+          "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+          "exists": true,
+          "library_metadata_only": true,
+          "repo_path": "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend"
+        },
+        {
+          "stored_path": "//../engine-tappet-cap/engine-tappet-cap-v1.blend",
+          "path_kind": "relative",
+          "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+          "exists": true,
+          "library_metadata_only": true,
+          "repo_path": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend"
+        }
+      ]
+    },
+    {
+      "file": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+      "exists": true,
+      "library_links": [
+        {
+          "stored_path": "//../engine-cover-left/engine-cover-left-v2.blend",
+          "path_kind": "relative",
+          "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-cover-left/engine-cover-left-v2.blend",
+          "exists": true,
+          "library_metadata_only": true,
+          "repo_path": "assets-src/moto-components/engine-cover-left/engine-cover-left-v2.blend"
+        },
+        {
+          "stored_path": "//../engine-cover-right/engine-cover-right-v2.blend",
+          "path_kind": "relative",
+          "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-cover-right/engine-cover-right-v2.blend",
+          "exists": true,
+          "library_metadata_only": true,
+          "repo_path": "assets-src/moto-components/engine-cover-right/engine-cover-right-v2.blend"
+        }
+      ]
+    },
+    {
+      "file": "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+      "exists": true,
+      "library_links": [
+        {
+          "stored_path": "//../engine-head/engine-head-v2.blend",
+          "path_kind": "relative",
+          "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-head/engine-head-v2.blend",
+          "exists": true,
+          "library_metadata_only": true,
+          "repo_path": "assets-src/moto-components/engine-head/engine-head-v2.blend"
+        }
+      ]
+    },
+    {
+      "file": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+      "exists": true,
+      "library_links": [
+        {
+          "stored_path": "//../engine-head/engine-head-v2.blend",
+          "path_kind": "relative",
+          "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-head/engine-head-v2.blend",
+          "exists": true,
+          "library_metadata_only": true,
+          "repo_path": "assets-src/moto-components/engine-head/engine-head-v2.blend"
+        }
+      ]
+    },
+    {
+      "file": "assets-src/moto-components/engine-cover-left/engine-cover-left-v2.blend",
+      "exists": true,
+      "library_links": [
+        {
+          "stored_path": "//../engine-output-cover-left/engine-output-cover-left-v1.blend",
+          "path_kind": "relative",
+          "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-output-cover-left/engine-output-cover-left-v1.blend",
+          "exists": true,
+          "library_metadata_only": true,
+          "repo_path": "assets-src/moto-components/engine-output-cover-left/engine-output-cover-left-v1.blend"
+        }
+      ]
+    },
+    {
+      "file": "assets-src/moto-components/engine-cover-right/engine-cover-right-v2.blend",
+      "exists": true,
+      "library_links": []
+    },
+    {
+      "file": "assets-src/moto-components/engine-head/engine-head-v2.blend",
+      "exists": true,
+      "library_links": [
+        {
+          "stored_path": "//../engine-cylinder/engine-cylinder-v1.blend",
+          "path_kind": "relative",
+          "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+          "exists": true,
+          "library_metadata_only": true,
+          "repo_path": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend"
+        }
+      ]
+    },
+    {
+      "file": "assets-src/moto-components/engine-output-cover-left/engine-output-cover-left-v1.blend",
+      "exists": true,
+      "library_links": [
+        {
+          "stored_path": "//../engine-cover-left/engine-cover-left-v1.blend",
+          "path_kind": "relative",
+          "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-cover-left/engine-cover-left-v1.blend",
+          "exists": true,
+          "library_metadata_only": true,
+          "repo_path": "assets-src/moto-components/engine-cover-left/engine-cover-left-v1.blend"
+        }
+      ]
+    },
+    {
+      "file": "assets-src/moto-components/engine-cover-left/engine-cover-left-v1.blend",
+      "exists": true,
+      "library_links": []
+    }
+  ],
+  "findings": [
+    {
+      "id": "REC-01",
+      "severity": "none_detected",
+      "statement": "No indispensable private authored master or photo texture input found. Both material recipes have their stable source inputs locally present."
+    },
+    {
+      "id": "REC-02",
+      "severity": "publication_coordination",
+      "statement": "Swingarm material replay additionally needs stable gray-review.json and source-geometry-check metadata. Master and own source scripts are in26; gray-review currently outside26 is explicitly planned in record.py final manifest. This audit provides its SHA without editing26 or claiming final seal."
+    },
+    {
+      "id": "REC-03",
+      "severity": "portability_only",
+      "statement": "Swingarm refine_needles writes a diagnostic .blend under absolute /workspace/wewa-assets. It is a disposable output, not a read/master. Insulator pixel dumps similarly derive from supplied GLB. Preserve role distinction; no private original promotion warranted."
+    },
+    {
+      "id": "REC-04",
+      "severity": "environment",
+      "statement": "Blender4.3.2 uses bundled numpy; body CSG calls shutil.which(python), importing manifold3d and numpy in host Python. Body requirements.txt pins manifold3d3.3.2/Pillow12.3.0 but not numpy; shared tools/requirements-assets.txt pins numpy2.3.5. Render helper tools/blender_component_camera_preflight.py is a public import outside body26. No binary exact-rebuild or moved-clone run performed."
+    },
+    {
+      "id": "REC-05",
+      "severity": "freeze_safety",
+      "statement": "Restoring G3 or executing builders would overwrite active paths. Work only in a separate copy/revision; frozen source files, manifests and previous README were not changed. Insulator build_v2 explicitly refuses an existing preflight-v2; body scripts rely on workflow isolation rather than such a recipe guard."
+    }
+  ],
+  "private_master_missing": false,
+  "requires_private_master_promotion": false,
+  "active_render_report_pinned": false,
+  "render_report_sha_recorded": false,
+  "swingarm_final_review_state": "Final four views owned by manufacturer, still in progress according to assignment. Their active render-report is not read/hashed as a stable recipe file by this audit; no final manifest is closed.",
+  "existing_readmes_or_shared_records_modified": false,
+  "new_render_or_geometry": false,
+  "limitations": [
+    "No full reconstruction or native Blender opening performed. Static scripts and supplied SHA-bound artifacts support dependency closure, not bitwise regeneration.",
+    "Conservative stored Library closure for insulator is not proof all ancestor IDs load or a relocated-checkout compatibility test.",
+    "No physical dimensions, OEM/RDC identity, material chemistry, artistic acceptance, LOD/mobile/iPhone qualification established.",
+    "Local tracked state and manifest coverage do not certify remote publication of new working files; root owns the publication cut."
+  ]
+}

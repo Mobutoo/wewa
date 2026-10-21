@@ -1,0 +1,11 @@
+# Isolant d’admission JV581404 — candidat conditionnel
+
+Une seule pièce physique : corps isolant asymétrique à deux oreilles, bouche traversante, deux perçages de fixation et gorge annulaire sur la face photographiée. Quatre marques circulaires de moulage sont représentées fermées et peu profondes, sans fonction mécanique attribuée. Le petit onglet du contour est conservé. Les arrondis sont construits dans les sections avant les soustractions ; aucun congé global n’est appliqué à la coque mince après CSG.
+
+Les photos Winter et Motozilla 919201 sont de vraies vues isolées de la branche UG5. Elles ne donnent aucune cote ni calibration de caméra. Le dos est une enveloppe plane explicitement simplifiée ; on n’affirme pas y voir une seconde gorge. L’épaisseur de travail de 4 mm, le diamètre de bouche 25 mm, les perçages et les rayons restent estimés avec bornes. La projection de contrôle a aussi corrigé les associations initiales des marques : les deux plages basses Motozilla et les deux plages hautes Winter sont conservées comme quatre marques fermées, sans prétendre à un appariement métrique. Le premier état non gelé, à bouche 22 mm, est conservé en privé après revue grise : son ouverture paraissait trop étroite au regard des proportions visibles, sans déduire une cote photographique.
+
+Le datum reprend une pose estimée derrière le port d’admission de la culasse v3, sans modifier celle-ci. L’ouverture de l’isolant est volontairement plus large que le port provisoire 22 mm de la culasse ; ni cette marche ni l’écartement 1,2 mm ne sont une interface OEM reçue. Les deux O-rings LJA00011 sont des pièces séparées encore à fabriquer : leur ID 28,7 × section 1,9 mm publié ne mesure pas le corps photographié, les entraxes ou une compression montée.
+
+Collecteur 52JV0180, manchon PF581402, colliers, carburateur et tuyaux restent séparés. La matière sombre de travail est originale, non métallique et constante ; sa chimie, le grain, les marques de surface et la réponse photométrique ne sont pas mesurés. Aucun pixel de photo documentaire n’est utilisé comme texture.
+
+Les contrôles de volume/manifold, buffers glTF, trois axes traversants, fonds de gorge/marques et raccord au candidat culasse ne constituent pas réception artistique, dimensionnelle ou sur iPhone.

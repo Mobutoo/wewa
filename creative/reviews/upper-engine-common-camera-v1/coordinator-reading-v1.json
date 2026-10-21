@@ -1,0 +1,32 @@
+{
+  "schema": "wewa.common-camera-reading.v1",
+  "source_sha256": "7c62b0c1752751632318c6c5347cbe6ff2667e463db05e72233b87a6c043eb58",
+  "delivery_sha256": "d0b1a121e325e6eceeb0da626268beeccd761b345a0235984c5caa5fc04bc580",
+  "actual_images_opened_by_coordinator": [
+    "creative/reviews/upper-engine-material-lighting-v1/neutral-outdoor.png",
+    "creative/reviews/upper-engine-common-camera-v1/front/actual-babylon-same-camera.png",
+    "creative/reviews/upper-engine-material-lighting-opposite-v1/neutral-outdoor.png",
+    "creative/reviews/upper-engine-common-camera-v1/opposite/actual-babylon-same-camera.png"
+  ],
+  "numeric_result": {
+    "camera_projection_witnesses_per_view": 8,
+    "max_differences_px": [
+      0.0002764630850491543,
+      0.0003299476744495858
+    ],
+    "bound_px": 0.05,
+    "bound_scope": "Software projection agreement only, not photographic landmark error."
+  },
+  "visual_findings": [
+    "Matching framing and silhouette are visible in both camera pairs. No geometry, source pose or GLB changes.",
+    "Babylon is darker overall, with more uniform illuminated planes and sharper visible bands on fin edges. Blender shows different highlights and stronger local shadowing.",
+    "Neutral HDR-only native views are compared to actual environment-lit Babylon canvases; no warm native sun image is substituted.",
+    "Different display transforms (native AgX Medium High Contrast, Babylon ACES), HDR orientation/prefilter and BRDF are not calibrated. This result isolates camera framing but does not isolate a single cause of the material difference.",
+    "Background colors differ and are not a color reference. No exposure tweak or geometry adjustment was made to hide the difference."
+  ],
+  "decision": "G6 appearance rework remains open; numeric camera check passed only.",
+  "next_action": "For a subsequent material qualification, align documented environment orientation and display response in a separate diagnostic, inspect actual imported roughness/normal response, and compare at cockpit distance before any art reception.",
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true
+}

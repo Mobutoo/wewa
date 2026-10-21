@@ -1,0 +1,13 @@
+# Collecteur d’admission — extérieur conditionnel 52JV0180
+
+Candidat original **MOTO-ENGINE-INTAKE-MANIFOLD-001**, lot 17. La photographie réelle Winter de 52JV0180 et D04 UG5 guident un seul corps physique : embase asymétrique à deux oreilles percées, col réellement annulaire à trois bandes arrondies, raccord inférieur et petit relief latéral fermé. La fonction de ce dernier et les petits signes de fonderie sont illisibles ; aucune prise de dépression, TPS, chiffre OEM ou conduite cachée n’est inventé.
+
+Toutes les dimensions, l’axe et son orientation sont estimés dans `parameters.json`. La seule photographie oblique ne certifie ni le revers ni la variante RDC. Le dos demeure volontairement simplifié. L’alésage de travail 25 mm concorde avec celui de l’isolant candidat, tandis que la culasse reste 22 mm : marche et interfaces ne sont pas reçues. Deux joints toriques, manchon, colliers, carburateur et fixation sont des unités séparées, absentes de cet export.
+
+La fabrication sépare `build.py` (sections arrondies avant CSG, col déjà creux), `topology_stage.py` (retriangulations locales bornées, tous sommets protégés) et `material.py` (UV et cartes originales réellement cuites). `recipe.py` refuse d’écraser une révision après son préflight. Les triangles plats mal conditionnés et un petit triangle du raccord ont été corrigés à la source avant UV : aucun buffer de tangentes n’est réparé. La vérification de distance de surface est échantillonnée et ne constitue pas une mesure physique.
+
+La finition représente un métal de fonderie, avec grain procédural original borné, converti en cartes 2048² normal tangent OpenGL et rugosité. La photographie atteste une texture de fonderie visible, pas sa période, sa profondeur, sa chimie ou son alliage. Ces choix restent explicitement estimés. Aucun pixel photographique n’est utilisé comme texture. Les cartes sont empaquetées et conservées dans `textures/`, avec chemins relatifs ; les bibliothèques de contexte sont liées relativement. Le contrôle des chemins actuels n’est pas un test de checkout déplacé.
+
+Le repère local Z suit le col depuis l’embase ; le datum hérite de l’isolant immuable sans déplacement des guides. Collection physique : `WEWA_ENGINE_INTAKE_MANIFOLD`, parent `Intake manifold provisional base datum`. Le GLB n’inclut ni studio ni pièces de contexte.
+
+Les gris, reflets et PBR sont rendus dans Blender 4.3.2, sur CPU, avec préflight des vrais sommets et checkpoint par vue. Les vues du revers et leurs caméras sont estimées. Les contrôles de volume, d’export, d’UV et de raccord du candidat ne valent ni réception artistique, ni cote OEM, ni validation iPhone.

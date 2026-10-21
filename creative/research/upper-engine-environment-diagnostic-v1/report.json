@@ -1,0 +1,917 @@
+{
+  "schema": "wewa.environment-coordinate-diagnostic.v1",
+  "date_utc": "2026-10-21",
+  "scope": "Lecture documentaire et diagnostic CPU de coordonnées ; aucun nouveau rendu, modèle, matière, GLB, outil existant ou galerie modifié.",
+  "software": {
+    "Blender": "4.3.2 Cycles",
+    "Babylon": "9.31.0 installé"
+  },
+  "images_opened": [
+    {
+      "path": "creative/reviews/upper-engine-material-lighting-v1/neutral-outdoor.png",
+      "sha256": "43c203e18d01fd261fd926025cefd82176861c1b67c8f2ad258031c2b04ead38",
+      "actually_opened": true,
+      "pixels": [
+        1000,
+        750
+      ],
+      "corner_pixel": [
+        98,
+        94,
+        93,
+        255
+      ]
+    },
+    {
+      "path": "creative/reviews/upper-engine-common-camera-v1/front/actual-babylon-same-camera.png",
+      "sha256": "dcfeaff78206749291c438c0706ccec3b0452741d9fc3f0d892d7d497f6ba9ab",
+      "actually_opened": true,
+      "pixels": [
+        1000,
+        750
+      ],
+      "corner_pixel": [
+        31,
+        31,
+        31
+      ]
+    },
+    {
+      "path": "creative/reviews/upper-engine-material-lighting-opposite-v1/neutral-outdoor.png",
+      "sha256": "9e7855534e8b8bc86d42f9dabaf96fbdb3c4df0347920eb9350f86c8e94ce47a",
+      "actually_opened": true,
+      "pixels": [
+        1000,
+        750
+      ],
+      "corner_pixel": [
+        97,
+        93,
+        92,
+        255
+      ]
+    },
+    {
+      "path": "creative/reviews/upper-engine-common-camera-v1/opposite/actual-babylon-same-camera.png",
+      "sha256": "9186bcd4d7367e5cf337d949cb4527ad3d7ebc651b2d207c03ba0f5af15a0e82",
+      "actually_opened": true,
+      "pixels": [
+        1000,
+        750
+      ],
+      "corner_pixel": [
+        31,
+        31,
+        31
+      ]
+    }
+  ],
+  "local_sources_read": [
+    {
+      "role": "inspector",
+      "path": "tools/motorcycle-material-camera-lab-v1/review.js",
+      "sha256": "20e0d8cc0a2ff14132e20729d91c6c07d0ff8dd9141b6662bd241ac87f49e8cc",
+      "actually_read": true
+    },
+    {
+      "role": "native_renderer",
+      "path": "tools/render_motorcycle_material_lighting_review_v4.py",
+      "sha256": "6830a7cbf107691ee231affddbb40403ea5d46fff6c5ff1740e78ae3ca865f1b",
+      "actually_read": true
+    },
+    {
+      "role": "camera_converter",
+      "path": "tools/prepare_material_camera_comparison_v1.py",
+      "sha256": "41bf54c5118122e2b0ae2c34549b6d92e109914183cd0bc15718c232cc16eb9c",
+      "actually_read": true
+    },
+    {
+      "role": "comparison_manifest",
+      "path": "creative/reviews/upper-engine-common-camera-v1/manifest.json",
+      "sha256": "664d2c6c37eb861cb97752b672a120776668c707f553516013d4eee8ed7e5a10",
+      "actually_read": true
+    },
+    {
+      "role": "hdr_converter",
+      "path": "node_modules/@babylonjs/core/Misc/HighDynamicRange/hdr.js",
+      "sha256": "7be93026ff8c84871b4db902e04607a674ea727ca69c1b439b44db4fae635928",
+      "actually_read": true
+    },
+    {
+      "role": "panorama_converter",
+      "path": "node_modules/@babylonjs/core/Misc/HighDynamicRange/panoramaToCubemap.js",
+      "sha256": "1da2eb907b3f42aa398c72db9c0d4aac32666c110a17b84e6194bc7829d230bb",
+      "actually_read": true
+    },
+    {
+      "role": "hdr_texture",
+      "path": "node_modules/@babylonjs/core/Materials/Textures/hdrCubeTexture.pure.js",
+      "sha256": "0f6cf5fc885bf9a6d9c2def7004dd61ade3632207a1153aba29931babc518136",
+      "actually_read": true
+    },
+    {
+      "role": "environment_texture",
+      "path": "node_modules/@babylonjs/core/Materials/Textures/envCubeTexture.pure.js",
+      "sha256": "2d24c068aa835e68d3871c7c570c4123259ad1481b8ea58c52ca22ee33bf71a5",
+      "actually_read": true
+    },
+    {
+      "role": "raw_cube_upload",
+      "path": "node_modules/@babylonjs/core/Engines/Extensions/engine.rawTexture.pure.js",
+      "sha256": "346b42291df87e91d3f7c7920237bc5e40977d937a42760c9a03e2d971d987fc",
+      "actually_read": true
+    },
+    {
+      "role": "ibl_defines",
+      "path": "node_modules/@babylonjs/core/Materials/materialHelper.functions.js",
+      "sha256": "b7ae2d99bd444fbd807995aeefa8e35986dd58bdeab770a678312c030c7712fd",
+      "actually_read": true
+    },
+    {
+      "role": "reflection_shader",
+      "path": "node_modules/@babylonjs/core/Shaders/ShadersInclude/reflectionFunction.js",
+      "sha256": "1d5c69890feab1c628119d9a947a12a3e34cb0ba6af408eb5064377a041cb03d",
+      "actually_read": true
+    },
+    {
+      "role": "pbr_reflection_shader",
+      "path": "node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrBlockReflection.js",
+      "sha256": "749c31246cead70bbb285cc0f0b91fd4e0d8dde6510b53e917e0385cd90da084",
+      "actually_read": true
+    },
+    {
+      "role": "pbr_vertex_shader",
+      "path": "node_modules/@babylonjs/core/Shaders/pbr.vertex.js",
+      "sha256": "ca9a444cdf4c44f1caabe3792d4565e162bdb54692ae67be00c74e7bebf7db03",
+      "actually_read": true
+    },
+    {
+      "role": "spherical_polynomial",
+      "path": "node_modules/@babylonjs/core/Misc/HighDynamicRange/cubemapToSphericalPolynomial.js",
+      "sha256": "eff833c2520c836d4a68feadbf796d178e29da2ce20f33c2a99e980b0610d419",
+      "actually_read": true
+    },
+    {
+      "role": "hdr_prefilter",
+      "path": "node_modules/@babylonjs/core/Materials/Textures/Filtering/hdrFiltering.js",
+      "sha256": "049a3719dcea976f46083a11c41965448c392ffa562173689dc95635fb4ada3a",
+      "actually_read": true
+    },
+    {
+      "role": "hdr_prefilter_shader",
+      "path": "node_modules/@babylonjs/core/Shaders/hdrFiltering.fragment.js",
+      "sha256": "f8a24696f19f682417fcbb66ea958da8b5bd5fa5ead150c58a6d4551d2bf2cf2",
+      "actually_read": true
+    },
+    {
+      "role": "display_shader",
+      "path": "node_modules/@babylonjs/core/Shaders/ShadersInclude/imageProcessingFunctions.js",
+      "sha256": "31d72e6d7a20baf98b5b9913fca08bbe853350a22ddce2aa29200e1c2fe96d27",
+      "actually_read": true
+    },
+    {
+      "role": "ambient_occlusion_shader",
+      "path": "node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrBlockAmbientOcclusion.js",
+      "sha256": "c6af331657635b26086f536a315853305d2e695d52074db623bcf2f9c7115349",
+      "actually_read": true
+    },
+    {
+      "role": "ocio",
+      "path": "/workspace/wewa-tools/blender-4.3.2-linux-x64/4.3/datafiles/colormanagement/config.ocio",
+      "sha256": "6a072a5e34fb520a35ee858b3b46271504ddd325fc112d2a78a8be75ea333f56",
+      "actually_read": true
+    }
+  ],
+  "remote_sources_read": [
+    {
+      "path": "/workspace/wewa-assets/references/upper-engine-environment-diagnostic-v1/blender-manual-environment.html",
+      "url": "https://docs.blender.org/manual/en/4.3/render/shader_nodes/textures/environment.html",
+      "sha256": "18e85f13a4d0de9cc7e3d40d91d80da7434dbcd4a51286308cf9435e5abd8de6",
+      "bytes": 403909,
+      "actually_read_relevant_passage": true
+    },
+    {
+      "path": "/workspace/wewa-assets/references/upper-engine-environment-diagnostic-v1/blender-intern-cycles-kernel-svm-image.h",
+      "url": "https://raw.githubusercontent.com/blender/blender/v4.3.2/intern/cycles/kernel/svm/image.h",
+      "sha256": "f7f20ff4bd5e3694bab0ae7d5e5bb946ec50f340c709a1567e8af64fe0156112",
+      "bytes": 7515,
+      "actually_read_relevant_passage": true
+    },
+    {
+      "path": "/workspace/wewa-assets/references/upper-engine-environment-diagnostic-v1/blender-intern-cycles-kernel-camera-projection.h",
+      "url": "https://raw.githubusercontent.com/blender/blender/v4.3.2/intern/cycles/kernel/camera/projection.h",
+      "sha256": "4bba84cca89fbe77366237ce42e7cdeb8aee2caa30ecdda9343a9fa4c2c76a7a",
+      "bytes": 11224,
+      "actually_read_relevant_passage": true
+    }
+  ],
+  "acquisition_log_private": "/workspace/wewa-assets/references/upper-engine-environment-diagnostic-v1/acquisition.json",
+  "current_state": {
+    "scene_RH": true,
+    "texture_constructor": "new HDRCubeTexture(url,scene,256,false,true,false,true)",
+    "cube_size": 256,
+    "generateHarmonics": true,
+    "gammaSpace": false,
+    "prefilterOnLoad": true,
+    "prefilterIrradianceOnLoad": false,
+    "coordinatesMode": "CUBIC_MODE",
+    "invertZ": false,
+    "rotationY_rad": 0,
+    "reflection_matrix": "identity",
+    "native_environment_mapping": "ShaderNodeTexEnvironment sans Vector ni Mapping connecté ; projection equirectangulaire, Z-up.",
+    "native_world_strength": 0.3,
+    "Babylon_environment_intensity": 0.3,
+    "exposure": "Le facteur 2**EV provenant de la carte grise Cycles est recopié dans Babylon ; aucune carte grise rendue par Babylon dans v1, donc exposition commune déclarée seulement."
+  },
+  "coordinate_derivation": {
+    "definitions": "b=(bx,by,bz), direction normalisée de Blender ; r=P*b direction glTF/Babylon RH ; M matrice de sampling de la texture ; q=F*M*r direction cube après le shader PBR.",
+    "P_Blender_to_gltf": "r=(bx,bz,-by)",
+    "Blender_equirect_uv": "uB=wrap(0.5-atan2(by,bx)/(2*pi)); vB_bottom=1-acos(bz)/pi ; tB_top=acos(bz)/pi.",
+    "shader_RH": "REFLECTIONMAP_OPPOSITEZ = isCube && RH ? !invertZ : invertZ ; dans ce cas F=(x,y,-z), appliqué APRÈS reflectionMatrix. Vrai pour radiance et irradiance SH dans les shaders lus.",
+    "cube_upload_order": [
+      "right",
+      "left",
+      "up",
+      "down",
+      "front",
+      "back"
+    ],
+    "cube_axis_to_converter_axis": {
+      "cube+X": "source+Z",
+      "cube-X": "source-Z",
+      "cube+Y": "source-Y",
+      "cube-Y": "source+Y",
+      "cube+Z": "source+X",
+      "cube-Z": "source-X"
+    },
+    "vertical_chain": "RGBE lu de haut en bas ; ConvertPanoramaToCubemap invertY=true ; upload cube invertY=false. Les axes des faces compensent ce sens. Ce ne sont pas des bascules à répéter dans l’inspecteur.",
+    "effective_HDR_sampling_after_cube": "uH=wrap(0.5+atan2(qx,qz)/(2*pi)); tH_top=acos(qy)/pi, à la discrétisation et au filtrage près.",
+    "current_azimuth": "M=I -> uH=wrap(uB+0.25), tH=tB. Le quart de tour est un défaut d’orientation de sampling dans ce cas précis, pas un facteur d’intensité.",
+    "candidate_alignment": "M=Babylon.Matrix.RotationY(+pi/2) -> M*r=(-by,bz,-bx) -> q=(-by,bz,+bx) -> uH=uB et tH=tB.",
+    "exact_next_code_change": "Dans une NOUVELLE variante d’inspecteur seulement : scene.environmentTexture.rotationY = Math.PI / 2 ; conserver RH, invertZ=false, CUBIC_MODE, HDR, intensité, exposition, GLB, caméra et matières inchangés.",
+    "limits": "La longitude aux pôles est indéterminée. rotationY est une rotation de sampling : ne pas déduire son signe depuis une rotation visuelle supposée d’un objet. Cette conclusion dépend des versions/conventions actuelles et ne vaut pas pour tout type de panorama/cube."
+  },
+  "cpu_witness": {
+    "private_report": "/workspace/wewa-assets/references/upper-engine-environment-diagnostic-v1/cpu-ray-witnesses.json",
+    "sha256": "a47a0928113645e37bc57beda34170bcb66a00162cbcf33cda51139e4ad82ca5",
+    "actual_HDR_sha256": "206c67e3a1b992282821cf06662bdd69bbb4915c1c4444a66338a40d6a7d4e34",
+    "actual_HDR_pixels": [
+      1024,
+      512
+    ],
+    "method": "CPU only, actual Babylon9.31.0 RGBE decoder and panorama-to-cubemap at256; standard WebGL cube face coordinate lookup implemented explicitly. No GPU render/prefilter/runtime material equivalence claimed.",
+    "rays": [
+      {
+        "Blender_direction": [
+          1,
+          0,
+          0
+        ],
+        "gltf_direction": [
+          1,
+          0,
+          0
+        ],
+        "Blender_expected_topdown_uv": [
+          0.5,
+          0.5
+        ],
+        "nearest_source_pixel": [
+          512,
+          256
+        ],
+        "nearest_source_RGB": [
+          1.28125,
+          0.9140625,
+          0.671875
+        ],
+        "modes": [
+          {
+            "rotationY_rad": 0,
+            "shader_cube_direction": [
+              1,
+              0,
+              0
+            ],
+            "derived_source_u": 0.75,
+            "cyclic_u_error": 0.25,
+            "actual_unfiltered_cube": {
+              "face": "right",
+              "cube_xy": [
+                128,
+                128
+              ],
+              "RGB": [
+                0.98046875,
+                0.7578125,
+                0.62109375
+              ]
+            }
+          },
+          {
+            "rotationY_rad": 1.5707963267948966,
+            "shader_cube_direction": [
+              6.123234262925839e-17,
+              0,
+              1
+            ],
+            "derived_source_u": 0.5,
+            "cyclic_u_error": 0,
+            "actual_unfiltered_cube": {
+              "face": "front",
+              "cube_xy": [
+                128,
+                128
+              ],
+              "RGB": [
+                1.2890625,
+                0.921875,
+                0.671875
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Blender_direction": [
+          0,
+          1,
+          0
+        ],
+        "gltf_direction": [
+          0,
+          0,
+          -1
+        ],
+        "Blender_expected_topdown_uv": [
+          0.25,
+          0.5
+        ],
+        "nearest_source_pixel": [
+          256,
+          256
+        ],
+        "nearest_source_RGB": [
+          0.4453125,
+          0.49609375,
+          0.60546875
+        ],
+        "modes": [
+          {
+            "rotationY_rad": 0,
+            "shader_cube_direction": [
+              0,
+              0,
+              1
+            ],
+            "derived_source_u": 0.5,
+            "cyclic_u_error": 0.25,
+            "actual_unfiltered_cube": {
+              "face": "front",
+              "cube_xy": [
+                128,
+                128
+              ],
+              "RGB": [
+                1.2890625,
+                0.921875,
+                0.671875
+              ]
+            }
+          },
+          {
+            "rotationY_rad": 1.5707963267948966,
+            "shader_cube_direction": [
+              -1,
+              0,
+              6.123234262925839e-17
+            ],
+            "derived_source_u": 0.25,
+            "cyclic_u_error": 0,
+            "actual_unfiltered_cube": {
+              "face": "left",
+              "cube_xy": [
+                128,
+                128
+              ],
+              "RGB": [
+                0.44921875,
+                0.5,
+                0.61328125
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Blender_direction": [
+          -1,
+          0,
+          0
+        ],
+        "gltf_direction": [
+          -1,
+          0,
+          0
+        ],
+        "Blender_expected_topdown_uv": [
+          0,
+          0.5
+        ],
+        "nearest_source_pixel": [
+          0,
+          256
+        ],
+        "nearest_source_RGB": [
+          0.46484375,
+          0.54296875,
+          0.6640625
+        ],
+        "modes": [
+          {
+            "rotationY_rad": 0,
+            "shader_cube_direction": [
+              -1,
+              0,
+              0
+            ],
+            "derived_source_u": 0.25,
+            "cyclic_u_error": 0.25,
+            "actual_unfiltered_cube": {
+              "face": "left",
+              "cube_xy": [
+                128,
+                128
+              ],
+              "RGB": [
+                0.44921875,
+                0.5,
+                0.61328125
+              ]
+            }
+          },
+          {
+            "rotationY_rad": 1.5707963267948966,
+            "shader_cube_direction": [
+              -6.123234262925839e-17,
+              0,
+              -1
+            ],
+            "derived_source_u": 0,
+            "cyclic_u_error": 0,
+            "actual_unfiltered_cube": {
+              "face": "back",
+              "cube_xy": [
+                128,
+                128
+              ],
+              "RGB": [
+                0.46875,
+                0.54296875,
+                0.66796875
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Blender_direction": [
+          0,
+          -1,
+          0
+        ],
+        "gltf_direction": [
+          0,
+          0,
+          1
+        ],
+        "Blender_expected_topdown_uv": [
+          0.75,
+          0.5
+        ],
+        "nearest_source_pixel": [
+          768,
+          256
+        ],
+        "nearest_source_RGB": [
+          0.97265625,
+          0.75,
+          0.6171875
+        ],
+        "modes": [
+          {
+            "rotationY_rad": 0,
+            "shader_cube_direction": [
+              0,
+              0,
+              -1
+            ],
+            "derived_source_u": 0,
+            "cyclic_u_error": 0.25,
+            "actual_unfiltered_cube": {
+              "face": "back",
+              "cube_xy": [
+                128,
+                128
+              ],
+              "RGB": [
+                0.46875,
+                0.54296875,
+                0.66796875
+              ]
+            }
+          },
+          {
+            "rotationY_rad": 1.5707963267948966,
+            "shader_cube_direction": [
+              1,
+              0,
+              -6.123234262925839e-17
+            ],
+            "derived_source_u": 0.75,
+            "cyclic_u_error": 0,
+            "actual_unfiltered_cube": {
+              "face": "right",
+              "cube_xy": [
+                128,
+                128
+              ],
+              "RGB": [
+                0.98046875,
+                0.7578125,
+                0.62109375
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Blender_direction": [
+          0.2672612419124244,
+          0.5345224838248488,
+          0.8017837257372732
+        ],
+        "gltf_direction": [
+          0.2672612419124244,
+          0.8017837257372732,
+          -0.5345224838248488
+        ],
+        "Blender_expected_topdown_uv": [
+          0.3237918088252165,
+          0.203884584447166
+        ],
+        "nearest_source_pixel": [
+          332,
+          104
+        ],
+        "nearest_source_RGB": [
+          0.234375,
+          0.3828125,
+          0.671875
+        ],
+        "modes": [
+          {
+            "rotationY_rad": 0,
+            "shader_cube_direction": [
+              0.2672612419124244,
+              0.8017837257372732,
+              0.5345224838248488
+            ],
+            "derived_source_u": 0.5737918088252165,
+            "cyclic_u_error": 0.25,
+            "actual_unfiltered_cube": {
+              "face": "up",
+              "cube_xy": [
+                171,
+                213
+              ],
+              "RGB": [
+                0.65625,
+                0.890625,
+                1.2421875
+              ]
+            }
+          },
+          {
+            "rotationY_rad": 1.5707963267948966,
+            "shader_cube_direction": [
+              -0.5345224838248488,
+              0.8017837257372732,
+              0.26726124191242445
+            ],
+            "derived_source_u": 0.3237918088252165,
+            "cyclic_u_error": 0,
+            "actual_unfiltered_cube": {
+              "face": "up",
+              "cube_xy": [
+                43,
+                171
+              ],
+              "RGB": [
+                0.23046875,
+                0.37890625,
+                0.6640625
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "Blender_direction": [
+          -0.8017837257372732,
+          0.5345224838248488,
+          -0.2672612419124244
+        ],
+        "gltf_direction": [
+          -0.8017837257372732,
+          -0.2672612419124244,
+          -0.5345224838248488
+        ],
+        "Blender_expected_topdown_uv": [
+          0.09358352090549937,
+          0.5861186642607611
+        ],
+        "nearest_source_pixel": [
+          96,
+          300
+        ],
+        "nearest_source_RGB": [
+          0.44140625,
+          0.6484375,
+          0.921875
+        ],
+        "modes": [
+          {
+            "rotationY_rad": 0,
+            "shader_cube_direction": [
+              -0.8017837257372732,
+              -0.2672612419124244,
+              0.5345224838248488
+            ],
+            "derived_source_u": 0.3435835209054994,
+            "cyclic_u_error": 0.25,
+            "actual_unfiltered_cube": {
+              "face": "left",
+              "cube_xy": [
+                213,
+                171
+              ],
+              "RGB": [
+                0.36328125,
+                0.4765625,
+                0.63671875
+              ]
+            }
+          },
+          {
+            "rotationY_rad": 1.5707963267948966,
+            "shader_cube_direction": [
+              -0.5345224838248488,
+              -0.2672612419124244,
+              -0.8017837257372732
+            ],
+            "derived_source_u": 0.09358352090549937,
+            "cyclic_u_error": 0,
+            "actual_unfiltered_cube": {
+              "face": "back",
+              "cube_xy": [
+                213,
+                171
+              ],
+              "RGB": [
+                0.453125,
+                0.6640625,
+                0.9375
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "results": "Les six rayons ont un écart cyclique u de0.25 tour à M=I, puis0 à la précision arithmétique des formules à M=RY(+pi/2). Des RGB du vrai cube256 non préfiltré sont relevés ; leurs écarts aux texels source viennent aussi de l’arrondi/ligne inversée/échantillonnage. Aucun seuil de parité couleur n’est imposé.",
+    "not_done": [
+      "Pas de capture GPU nouvelle.",
+      "Pas de preuve du cube préfiltré runtime ou de toutes les permutations shader compilées.",
+      "Pas de rendu de carte grise Babylon.",
+      "Pas de qualification physique ou artistique."
+    ]
+  },
+  "independent_remaining_differences": [
+    {
+      "topic": "Affichage AgX / ACES",
+      "documented": "Le v4 force AgX + AgX Medium High Contrast, gamma1. OCIO installé a un contraste1.2 autour du pivot−0.2 en AgX Log. Babylon applique exposition puis ACESFitted (matrices/RRTAndODTFit) puis toGammaSpace.",
+      "consequence": "Même EV et .3 ne garantissent ni mêmes noirs, teintes ni reflets. contrast=1 Babylon ne réplique pas le Look AgX. Le device d’affichage et les autres réglages hérités ne sont pas tous consignés par v4.",
+      "future_action": "Après l’orientation, isoler une comparaison linéaire avant view transform ou appliquer exactement un même transform documenté. Une hausse empirique d’exposition ne constitue pas cette preuve."
+    },
+    {
+      "topic": "Préfiltres et BRDF",
+      "documented": "Le lab demande un cube256 préfiltré en radiance, harmoniques/polynôme sphérique pour le diffus. Le code HDRFiltering utilise des niveaux de rugosité et radiance intégrée, et peut convertir le stockage selon caps. Cycles intègre le monde avec visibilité et sa BRDF dans un path tracer ; les vues actuelles n’ont que12spp puis OIDN.",
+      "consequence": "Aligner les directions ne rend pas les distributions spéculaires/diffuses, pi/normalisations, filtrage et débruitage identiques. Ne pas annoncer un facteur de correction universel ni une parité depuis les seules valeurs metallic/roughness.",
+      "future_action": "Journaliser le préfiltre prêt, type de texture et paramètres runtime ; examiner seulement le résidu après la paire orientée, sans retoucher les matières pour le cacher."
+    },
+    {
+      "topic": "Visibilité / occlusion entre ailettes",
+      "documented": "Le lab importe les meshes avec HDR IBL seulement : aucune lumière directe avec shadow map, aucun SSAO/GTAO ni autre visibilité de scène installé. Les12 matières de ce GLB n’ont aucune occlusionTexture. Le shader AO commence à1 sans carte. Cycles trace l’occlusion réelle des rayons du ciel par les ailettes et les autres pièces.",
+      "consequence": "Les grandes faces à normale similaire reçoivent un IBL semblable dans Babylon même dans un creux. La rotation HDR ne peut créer seule les ombres de contact/visibilité manquantes. AO approximatif et ombre de lumière ne sont pas interchangeables, et aucune approche ne certifie automatiquement l’autre.",
+      "future_action": "Traiter séparément la visibilité après l’orientation : choisir une approximation runtime bornée et documentée de l’occlusion, avec comparaison locale des creux, sans rebaisser l’albédo pour les assombrir."
+    },
+    {
+      "topic": "Fond de capture",
+      "documented": "v4 utilise un fond caméra shader indépendant exposé/AgX, compensé en force ; Babylon clearColor(.12,.12,.12) ne passe pas par ce même chemin. Les coins PNG ouverts diffèrent réellement.",
+      "consequence": "Le fond n’est pas une référence de couleur ni d’exposition et influence le contraste perçu.",
+      "future_action": "Garder cette différence explicitement séparée ; ne pas l’utiliser pour conclure que le matériau est identique ou différent à lui seul."
+    }
+  ],
+  "actual_GLB_material_read": {
+    "path": "assets-src/moto-components/upper-engine-current-review-v1/upper-engine-current-review-v1-delivery.glb",
+    "sha256": "d0b1a121e325e6eceeb0da626268beeccd761b345a0235984c5caa5fc04bc580",
+    "material_count": 12,
+    "occlusion_textures": 0,
+    "materials": [
+      {
+        "name": "Cylinder clean black coating - unmeasured original PBR",
+        "occlusionTexture": null,
+        "normalTexture": null,
+        "pbr": {
+          "baseColorFactor": [
+            0.017000000923871994,
+            0.019999999552965164,
+            0.023000000044703484,
+            1
+          ],
+          "metallicFactor": 0.029999999329447746,
+          "roughnessFactor": 0.4399999976158142
+        }
+      },
+      {
+        "name": "Cylinder unpainted mating surface - estimated aluminium PBR",
+        "occlusionTexture": null,
+        "normalTexture": null,
+        "pbr": {
+          "baseColorFactor": [
+            0.4300000071525574,
+            0.44999998807907104,
+            0.4699999988079071,
+            1
+          ],
+          "metallicFactor": 0.949999988079071,
+          "roughnessFactor": 0.3199999928474426
+        }
+      },
+      {
+        "name": "Head black coated casting - original unmeasured PBR",
+        "occlusionTexture": null,
+        "normalTexture": null,
+        "pbr": {
+          "baseColorFactor": [
+            0.017000000923871994,
+            0.019999999552965164,
+            0.023000000044703484,
+            1
+          ],
+          "metallicFactor": 0.029999999329447746,
+          "roughnessFactor": 0.4399999976158142
+        }
+      },
+      {
+        "name": "Head unpainted mating planes - original unmeasured PBR",
+        "occlusionTexture": null,
+        "normalTexture": null,
+        "pbr": {
+          "baseColorFactor": [
+            0.4300000071525574,
+            0.44999998807907104,
+            0.4699999988079071,
+            1
+          ],
+          "metallicFactor": 0.949999988079071,
+          "roughnessFactor": 0.3199999928474426
+        }
+      },
+      {
+        "name": "Original clean dark engine cap coating - conditional RDC estima",
+        "occlusionTexture": null,
+        "normalTexture": null,
+        "pbr": {
+          "baseColorFactor": [
+            0.012000000104308128,
+            0.014000000432133675,
+            0.01600000075995922,
+            1
+          ],
+          "metallicFactor": 0.11999999731779099,
+          "roughnessFactor": 0.38999998569488525
+        }
+      },
+      {
+        "name": "Original dark OHC cover clean coating - estimated",
+        "occlusionTexture": null,
+        "normalTexture": null,
+        "pbr": {
+          "baseColorFactor": [
+            0.012000000104308128,
+            0.014000000432133675,
+            0.01600000075995922,
+            1
+          ],
+          "metallicFactor": 0.11999999731779099,
+          "roughnessFactor": 0.38999998569488525
+        }
+      },
+      {
+        "name": "Original estimated plated metal - no photo texture",
+        "occlusionTexture": null,
+        "normalTexture": null,
+        "pbr": {
+          "baseColorFactor": [
+            0.5600000023841858,
+            0.5799999833106995,
+            0.6000000238418579,
+            1
+          ],
+          "roughnessFactor": 0.23999999463558197
+        }
+      },
+      {
+        "name": "Original unmarked white glazed ceramic",
+        "occlusionTexture": null,
+        "normalTexture": null,
+        "pbr": {
+          "baseColorFactor": [
+            0.8199999928474426,
+            0.800000011920929,
+            0.7400000095367432,
+            1
+          ],
+          "metallicFactor": 0,
+          "roughnessFactor": 0.1899999976158142
+        }
+      },
+      {
+        "name": "Original estimated plug metal plating",
+        "occlusionTexture": null,
+        "normalTexture": null,
+        "pbr": {
+          "baseColorFactor": [
+            0.5199999809265137,
+            0.49000000953674316,
+            0.41999998688697815,
+            1
+          ],
+          "roughnessFactor": 0.25
+        }
+      },
+      {
+        "name": "Original estimated seat washer metal",
+        "occlusionTexture": null,
+        "normalTexture": null,
+        "pbr": {
+          "baseColorFactor": [
+            0.3400000035762787,
+            0.3499999940395355,
+            0.36000001430511475,
+            1
+          ],
+          "roughnessFactor": 0.30000001192092896
+        }
+      },
+      {
+        "name": "Original representative molded cap grain v2 - estimated",
+        "occlusionTexture": null,
+        "normalTexture": {
+          "index": 0
+        },
+        "pbr": {
+          "baseColorFactor": [
+            0.014000000432133675,
+            0.01600000075995922,
+            0.017999999225139618,
+            1
+          ],
+          "metallicFactor": 0,
+          "metallicRoughnessTexture": {
+            "index": 1
+          }
+        }
+      },
+      {
+        "name": "Original estimated visible contact metal",
+        "occlusionTexture": null,
+        "normalTexture": null,
+        "pbr": {
+          "baseColorFactor": [
+            0.44999998807907104,
+            0.4399999976158142,
+            0.4000000059604645,
+            1
+          ],
+          "roughnessFactor": 0.27000001072883606
+        }
+      }
+    ]
+  },
+  "next_minimal_verification": "Créer une variante séparée avec rotationY+pi/2 seulement, attendre chargement/préfiltrage puis reprendre les deux vrais canvas GPU aux mêmes caméras. Rapporter la matrice, les flags et les SH réellement utilisés. Conserver v1 et toutes les réserves AgX/ACES/BRDF/visibilité ; aucun résultat visuel de cette étape n’est anticipé.",
+  "source_or_model_changed": false,
+  "art_accepted": false,
+  "photometric_parity": false
+}

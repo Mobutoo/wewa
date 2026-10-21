@@ -1,0 +1,655 @@
+{
+  "component_id": "MOTO-SWINGARM-BODY-001",
+  "revision": "swingarm-body-v1",
+  "partial_not_finished_candidate": false,
+  "scope": "Rails, slots, pivot housings, formed tapered U return, paired mounting tabs, two short front tubes, one asymmetric tab and original estimated weld envelopes.",
+  "vertices": 103302,
+  "triangles": 206748,
+  "connected_shells": 1,
+  "nonmanifold_edges": 0,
+  "signed_volume_m3": 0.0002769831654767948,
+  "min_triangle_area_m2": 1.7102737195237187e-15,
+  "zero_area_at_1e18_m2": 0,
+  "probes": [
+    {
+      "name": "open pivot axis",
+      "origin_m": [
+        -0.16,
+        0,
+        0
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "length_m": 0.32,
+      "clear": true,
+      "expected_clear": true
+    },
+    {
+      "name": "no central transverse tube",
+      "origin_m": [
+        0,
+        -0.04,
+        0.014
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "length_m": 0.08,
+      "clear": true,
+      "expected_clear": true
+    },
+    {
+      "name": "open rear slots",
+      "origin_m": [
+        -0.16,
+        0.52,
+        0
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "length_m": 0.32,
+      "clear": true,
+      "expected_clear": true
+    },
+    {
+      "name": "open U centre",
+      "origin_m": [
+        0,
+        0.25,
+        0.05
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "length_m": 0.1,
+      "clear": true,
+      "expected_clear": true
+    },
+    {
+      "name": "U front bridge material",
+      "origin_m": [
+        0,
+        0.13,
+        0.05
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "length_m": 0.1,
+      "clear": false,
+      "expected_clear": false
+    }
+  ],
+  "source_only_csg_stages": [
+    {
+      "operation": "union",
+      "name": "Separate pivot housing -1",
+      "before_volume_m3": 0.0004055692687756249,
+      "after_volume_m3": 0.0004105350114199493,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Original rounded rectangular rail 1",
+      "before_volume_m3": 0.0004105350114199493,
+      "after_volume_m3": 0.0008161042801955742,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Separate pivot housing 1",
+      "before_volume_m3": 0.0008161042801955742,
+      "after_volume_m3": 0.0008210700228398986,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Broad U plate original boundary",
+      "before_volume_m3": 0.0008210700228398986,
+      "after_volume_m3": 0.0008584866636140222,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Rolled inner U return - native radius section",
+      "before_volume_m3": 0.0008584866636140222,
+      "after_volume_m3": 0.0008657047284438299,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Paired pierced mounting tab -1 -1",
+      "before_volume_m3": 0.0008657047284438299,
+      "after_volume_m3": 0.0008693269231434679,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Paired pierced mounting tab -1 1",
+      "before_volume_m3": 0.0008693269231434679,
+      "after_volume_m3": 0.0008729412676233512,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Short hollow front attachment -1",
+      "before_volume_m3": 0.0008729412676233512,
+      "after_volume_m3": 0.0008744186729461537,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Paired pierced mounting tab 1 -1",
+      "before_volume_m3": 0.0008744186729461537,
+      "after_volume_m3": 0.0008780330174241025,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Paired pierced mounting tab 1 1",
+      "before_volume_m3": 0.0008780330174241025,
+      "after_volume_m3": 0.0008816552121245611,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Short hollow front attachment 1",
+      "before_volume_m3": 0.0008816552121245611,
+      "after_volume_m3": 0.0008831326174473774,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Additional asymmetric downward tab - function side conditional",
+      "before_volume_m3": 0.0008831326174473774,
+      "after_volume_m3": 0.0008845646387649003,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "U plate to rail weld -1 0",
+      "before_volume_m3": 0.0008845646387649003,
+      "after_volume_m3": 0.0008846817960529474,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "U plate to rail weld -1 1",
+      "before_volume_m3": 0.0008846817960529474,
+      "after_volume_m3": 0.0008847989520561578,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Rear half pivot-housing weld -1",
+      "before_volume_m3": 0.0008847989520561578,
+      "after_volume_m3": 0.0008848716741195445,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Mount tab base weld -1 -1 -1",
+      "before_volume_m3": 0.0008848716741195445,
+      "after_volume_m3": 0.0008848783412705088,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Mount tab base weld -1 -1 1",
+      "before_volume_m3": 0.0008848783412705088,
+      "after_volume_m3": 0.0008848973111972139,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Mount tab base weld -1 1 -1",
+      "before_volume_m3": 0.0008848973111972139,
+      "after_volume_m3": 0.0008849162605070891,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Mount tab base weld -1 1 1",
+      "before_volume_m3": 0.0008849162605070891,
+      "after_volume_m3": 0.000884922653709606,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Front attachment root weld -1 -1",
+      "before_volume_m3": 0.000884922653709606,
+      "after_volume_m3": 0.0008849350255509461,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Front attachment root weld -1 1",
+      "before_volume_m3": 0.0008849350255509461,
+      "after_volume_m3": 0.0008849473617162236,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "U plate to rail weld 1 0",
+      "before_volume_m3": 0.0008849473617162236,
+      "after_volume_m3": 0.0008850645213173885,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "U plate to rail weld 1 1",
+      "before_volume_m3": 0.0008850645213173885,
+      "after_volume_m3": 0.0008851816857733153,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Rear half pivot-housing weld 1",
+      "before_volume_m3": 0.0008851816857733153,
+      "after_volume_m3": 0.0008852542974996054,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Mount tab base weld 1 -1 -1",
+      "before_volume_m3": 0.0008852542974996054,
+      "after_volume_m3": 0.0008852607268690122,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Mount tab base weld 1 -1 1",
+      "before_volume_m3": 0.0008852607268690122,
+      "after_volume_m3": 0.0008852796535917387,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Mount tab base weld 1 1 -1",
+      "before_volume_m3": 0.0008852796535917387,
+      "after_volume_m3": 0.0008852985827751532,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Mount tab base weld 1 1 1",
+      "before_volume_m3": 0.0008852985827751532,
+      "after_volume_m3": 0.000885305198594215,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Front attachment root weld 1 -1",
+      "before_volume_m3": 0.000885305198594215,
+      "after_volume_m3": 0.0008853175347724824,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Front attachment root weld 1 1",
+      "before_volume_m3": 0.0008853175347724824,
+      "after_volume_m3": 0.0008853298156520915,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Additional asymmetric tab root weld -1",
+      "before_volume_m3": 0.0008853298156520915,
+      "after_volume_m3": 0.0008853450075062367,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Additional asymmetric tab root weld 1",
+      "before_volume_m3": 0.0008853450075062367,
+      "after_volume_m3": 0.0008853480650659883,
+      "status": "NoError"
+    },
+    {
+      "operation": "subtract",
+      "name": "Estimated hollow rail cavity -1",
+      "before_volume_m3": 0.0008853480650659883,
+      "after_volume_m3": 0.0005976677099716757,
+      "status": "NoError"
+    },
+    {
+      "operation": "subtract",
+      "name": "Rear axle slot -1",
+      "before_volume_m3": 0.0005976677099716757,
+      "after_volume_m3": 0.0005954445199813075,
+      "status": "NoError"
+    },
+    {
+      "operation": "subtract",
+      "name": "Estimated hollow rail cavity 1",
+      "before_volume_m3": 0.0005954445199813075,
+      "after_volume_m3": 0.0003077641648869948,
+      "status": "NoError"
+    },
+    {
+      "operation": "subtract",
+      "name": "Rear axle slot 1",
+      "before_volume_m3": 0.0003077641648869948,
+      "after_volume_m3": 0.0003055409748966266,
+      "status": "NoError"
+    },
+    {
+      "operation": "subtract",
+      "name": "Open pivot axes through two separate housings",
+      "before_volume_m3": 0.0003055409748966266,
+      "after_volume_m3": 0.0002789962163138939,
+      "status": "NoError"
+    },
+    {
+      "operation": "subtract",
+      "name": "Tab open hole and mouth radius -1 -1",
+      "before_volume_m3": 0.0002789962163138939,
+      "after_volume_m3": 0.0002787629626316645,
+      "status": "NoError"
+    },
+    {
+      "operation": "subtract",
+      "name": "Tab open hole and mouth radius -1 1",
+      "before_volume_m3": 0.0002787629626316645,
+      "after_volume_m3": 0.00027852970894943514,
+      "status": "NoError"
+    },
+    {
+      "operation": "subtract",
+      "name": "Short front attachment open axis -1",
+      "before_volume_m3": 0.00027852970894943514,
+      "after_volume_m3": 0.00027803117035741154,
+      "status": "NoError"
+    },
+    {
+      "operation": "subtract",
+      "name": "Tab open hole and mouth radius 1 -1",
+      "before_volume_m3": 0.00027803117035741154,
+      "after_volume_m3": 0.00027779791667518214,
+      "status": "NoError"
+    },
+    {
+      "operation": "subtract",
+      "name": "Tab open hole and mouth radius 1 1",
+      "before_volume_m3": 0.00027779791667518214,
+      "after_volume_m3": 0.0002775646629929528,
+      "status": "NoError"
+    },
+    {
+      "operation": "subtract",
+      "name": "Short front attachment open axis 1",
+      "before_volume_m3": 0.0002775646629929528,
+      "after_volume_m3": 0.0002770661244009292,
+      "status": "NoError"
+    },
+    {
+      "operation": "subtract",
+      "name": "Asymmetric tab actual open hole",
+      "before_volume_m3": 0.0002770661244009292,
+      "after_volume_m3": 0.0002769831718550401,
+      "status": "NoError"
+    }
+  ],
+  "coplanar_diagonals_only": [
+    {
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "offset_m": 0.012000000104308128,
+      "faces": 2042,
+      "volume_relative_change": 9.43689570931383e-15,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "offset_m": 0.010200000368058681,
+      "faces": 2051,
+      "volume_relative_change": 9.325873406851315e-15,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "offset_m": 0.014999999664723873,
+      "faces": 1497,
+      "volume_relative_change": 0.0,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "offset_m": -0.014999999664723873,
+      "faces": 336,
+      "volume_relative_change": 8.881784197001252e-16,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "offset_m": 0.013199999928474426,
+      "faces": 160,
+      "volume_relative_change": 0.0,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "offset_m": -0.013199999928474426,
+      "faces": 160,
+      "volume_relative_change": 1.1102230246251565e-15,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "offset_m": 0.02199999988079071,
+      "faces": 164,
+      "volume_relative_change": 3.9968028886505635e-15,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "offset_m": 0.5562000274658203,
+      "faces": 164,
+      "volume_relative_change": 7.771561172376096e-16,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "offset_m": 0.5580000281333923,
+      "faces": 164,
+      "volume_relative_change": 0.0,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "offset_m": -0.00800000037997961,
+      "faces": 124,
+      "volume_relative_change": 1.5543122344752192e-15,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        0.012544802867383523,
+        0
+      ],
+      "offset_m": -0.11499999999999999,
+      "faces": 454,
+      "volume_relative_change": 4.4173864566232623e-10,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        0.012544802867383523,
+        0
+      ],
+      "offset_m": -0.091,
+      "faces": 2441,
+      "volume_relative_change": 1.5974259581774675e-08,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        0.012544802867383523,
+        0
+      ],
+      "offset_m": -0.1132,
+      "faces": 166,
+      "volume_relative_change": 7.906295618198556e-10,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        0.012544802867383523,
+        0
+      ],
+      "offset_m": -0.0928,
+      "faces": 166,
+      "volume_relative_change": 1.5521011142993757e-09,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "offset_m": -0.11550000309944153,
+      "faces": 1005,
+      "volume_relative_change": 3.1086244689504383e-15,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "offset_m": -0.09049999713897705,
+      "faces": 640,
+      "volume_relative_change": 3.1086244689504383e-15,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        -0.012544802867383523,
+        0
+      ],
+      "offset_m": 0.091,
+      "faces": 2522,
+      "volume_relative_change": 1.3264626175235605e-08,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        -0.012544802867383523,
+        0
+      ],
+      "offset_m": 0.11499999999999999,
+      "faces": 455,
+      "volume_relative_change": 1.038127583896653e-09,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        -0.012544802867383523,
+        0
+      ],
+      "offset_m": 0.0928,
+      "faces": 166,
+      "volume_relative_change": 1.5521006702101658e-09,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        -0.012544802867383523,
+        0
+      ],
+      "offset_m": 0.1132,
+      "faces": 166,
+      "volume_relative_change": 7.906306720428802e-10,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "offset_m": 0.09049999713897705,
+      "faces": 640,
+      "volume_relative_change": 4.440892098500626e-16,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "offset_m": 0.11550000309944153,
+      "faces": 1002,
+      "volume_relative_change": 3.1086244689504383e-15,
+      "positions_preserved": true
+    }
+  ],
+  "all_dimensions_estimated": true,
+  "current_RDC_identity_verified": false,
+  "external_libraries": [],
+  "art_accepted": false,
+  "source_sha256": "492d82988b2eef106dc8d1e961d82e7938aec25c215cebca70a31cf6d1c258d9",
+  "export_sha256": "db616284e6a0db14204f0af59b8f5c5a1f8e18c6f4a83cb478c61a43ea16b2fc"
+}

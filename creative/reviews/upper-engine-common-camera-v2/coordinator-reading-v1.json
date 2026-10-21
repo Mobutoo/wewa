@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-10-21T06:28:05.868416+00:00",
+  "source_sha256": "7c62b0c1752751632318c6c5347cbe6ff2667e463db05e72233b87a6c043eb58",
+  "export_sha256": "d0b1a121e325e6eceeb0da626268beeccd761b345a0235984c5caa5fc04bc580",
+  "actual_images_opened_by_coordinator": [
+    "creative/reviews/upper-engine-common-camera-v2/front/actual-babylon-same-camera.png",
+    "creative/reviews/upper-engine-common-camera-v2/opposite/actual-babylon-same-camera.png"
+  ],
+  "change": "Only environment texture sampling rotationY=+pi/2 in a new inspector wrapper. Frozen v1 implementation, source, GLB, imported material settings, HDR file/intensity/exposure factor, camera and display transform unchanged.",
+  "numeric_camera_max_difference_px": 0.0003299476744495858,
+  "observations": [
+    "Actual GPU-executed screenshots show shifted highlights, including the OHC cover and the opposite-side fin surfaces. Framing stays the same.",
+    "Flat illumination and lack of local crevice shadow remain visible compared with native Cycles; no measured improvement score or appearance parity is asserted.",
+    "The convention-derived HDR alignment was checked by six CPU directions in the separate research report. Reading the runtime rotation and actual pixels does not separately calibrate GPU radiance, prefilter output or irradiance."
+  ],
+  "remaining_differences": [
+    "AgX Medium High Contrast versus ACES. Exposure reference was calibrated in Cycles only.",
+    "Cycles geometric environment visibility versus no occlusion texture/scene AO in this inspector.",
+    "HDR prefilter, IBL BRDF, spherical diffuse representation and camera background."
+  ],
+  "decision": "Keep this explicit orientation for a subsequent diagnostic; G6 appearance remains rework. Do not darken or recolor frozen materials to conceal missing occlusion.",
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true
+}

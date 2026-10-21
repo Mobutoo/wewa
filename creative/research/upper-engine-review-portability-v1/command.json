@@ -1,0 +1,27 @@
+{
+  "command": [
+    "blender",
+    "--background",
+    "--threads",
+    "1",
+    "--python-exit-code",
+    "1",
+    "--python",
+    "creative/research/upper-engine-review-portability-v1/check_moved_assembly.py",
+    "--",
+    "--assembly",
+    "assets-src/moto-components/upper-engine-current-review-v1/upper-engine-current-review-v1.blend",
+    "--repository-root",
+    "/workspace/wewa-github",
+    "--moved-root",
+    "/workspace/wewa-assets/portability-tests/engine-spark-cap-v2-full-context-checkout",
+    "--source-proof",
+    "creative/reviews/upper-engine-current-review-v1/source-geometry-check.json",
+    "--helper",
+    "creative/research/engine-spark-cap-portability-v2/portable_library_copy.py",
+    "--report",
+    "creative/research/upper-engine-review-portability-v1/actual-moved-assembly-check.json"
+  ],
+  "executable_used": "/workspace/wewa-tools/blender-4.3.2-linux-x64/blender",
+  "scope": "CLI source/proof/helper/root/report paths are arguments; Blender threads1, no render/export/save. Existing closed moved tree reused; missing selected libraries copied byte-for-byte, no overwriting mismatched files."
+}

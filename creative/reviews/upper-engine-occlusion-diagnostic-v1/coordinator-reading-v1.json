@@ -1,0 +1,44 @@
+{
+  "created_utc": "2026-10-21T06:32:53.471953+00:00",
+  "source_sha256": "7c62b0c1752751632318c6c5347cbe6ff2667e463db05e72233b87a6c043eb58",
+  "export_sha256": "d0b1a121e325e6eceeb0da626268beeccd761b345a0235984c5caa5fc04bc580",
+  "actual_images_opened_by_coordinator": [
+    "creative/reviews/upper-engine-occlusion-diagnostic-v1/front/actual-babylon-AO-disabled.png",
+    "creative/reviews/upper-engine-occlusion-diagnostic-v1/front/actual-babylon-AO-enabled.png"
+  ],
+  "same_session_control": "Only the SSAO camera pipeline is detached/attached. Disabled output equals the frozen rotated-HDR v2 front PNG exactly in all RGB8 pixels. No model or material changes.",
+  "control_RGB8_max_difference": 0,
+  "runtime_parameters": {
+    "enabled": true,
+    "pipeline_ready": true,
+    "supported": true,
+    "samples": 16,
+    "radius_m": 0.015,
+    "epsilon_depth_m": 0.0002,
+    "totalStrength": 1,
+    "base": 0,
+    "maxZ_m": 2,
+    "textureSamples": 1,
+    "bilateralSamples": 16,
+    "ssaoRatio": 1,
+    "blurRatio": 1,
+    "random_seed": 331601,
+    "scope": "Screen-space final-image occlusion approximation from actual depth and normals. Parameters are diagnostic choices, not measured material or a radiometric match. Hidden/off-screen visibility, physical indirect lighting and iPhone cost are not qualified."
+  },
+  "pixel_diagnostic_not_realism_score": {
+    "changed_pixels": 92899,
+    "pixels_with_any_channel_brighter_over8": 1373,
+    "max_channel_brightening8bit": 114,
+    "max_channel_darkening8bit": -86
+  },
+  "actual_visual_findings": [
+    "Crevices and fin overlaps darken in the enabled screenshot.",
+    "Bright dotted/irregular edge pixels and noise appear, including upper tabs and cover/fin contours. This is a visible defect; no assertion of physical visibility parity.",
+    "The effect is a screen-space postprocess with diagnostic radius15mm, depth bias0.2mm,16samples and textureSamples1. The exact cause of edge defects has not been isolated; aliasing/depth/filter/composition must be examined before adoption."
+  ],
+  "decision": "Rejected for production/game adoption at this stage. Preserve the paired diagnostic; do not expand to the opposite camera before fixing the visible issue. No albedo or source edits to conceal the difference.",
+  "next_action": "Review postprocess antialiasing, depth-edge validity and composition in a new revision. Recheck the enabled/disabled control, useful cockpit distance and actual device cost before considering adoption. Baked geometric occlusion remains a separate option after UV/LOD qualification.",
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true
+}
