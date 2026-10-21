@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **120 composants candidats enregistrés**, après
+Le registre courant comporte **124 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,10 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P13** : [seat-damper-pedestal-v2 — sources, rendus et contrôles](creative/reviews/seat-damper-pedestal-v2/README.md). Enfant candidat ; interfaces/paquet ouverts.
+- **P17** : [MOTO-CENTRE-STAND-MAIN-FRAME-001 — bounded exterior candidate — sources et images](creative/reviews/centre-stand-main-frame-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
+- **P18** : [MOTO-CRANKCASE-LH-OUTPUT-PANEL-001 — bounded exterior candidate — sources et images](creative/reviews/crankcase-lh-output-panel-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
+- **P15** : [MOTO-BRAKE-PEDAL-TEXTURED-PAD-001 — bounded exterior candidate — sources et images](creative/reviews/brake-pedal-textured-pad-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P11** : [license-plate-wewa — sources, rendus et contrôles](creative/reviews/license-plate-wewa-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **P19** : [MOTO-CARBURETTOR-UPPER-CASTING-001 — bounded exterior candidate — sources et images](creative/reviews/carburettor-upper-casting-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P12** : [fuel-cap-exterior-envelope-v2 — sources, rendus et contrôles](creative/reviews/fuel-cap-exterior-envelope-v2/README.md). Enfant candidat ; interfaces/paquet ouverts.

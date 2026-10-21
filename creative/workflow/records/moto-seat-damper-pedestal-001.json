@@ -1,0 +1,228 @@
+{
+  "schema": 1,
+  "id": "MOTO-SEAT-DAMPER-PEDESTAL-001",
+  "label": "P13 — socle de tampon, portée plane et base évasée",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../../creative/research/seat-damper-pedestal-v2/sources-child-v1.json",
+  "sources": [
+    "D01",
+    "JV191001-UNDER"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "whole-front",
+      "PNG_sha256": "a88002c16b2456d9da3156f98bd340e267c429858aaec1fb3b119fff6df4ec94",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.0,
+        0.0,
+        0.1655249148607254
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.007000000216066837
+      ]
+    },
+    {
+      "name": "whole-quarter",
+      "PNG_sha256": "dff9cc80c2ad691a60ec8bcf8807a77774cbb3ba0ecdcc32a6ed3b92e8b6786d",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.052841637283563614,
+        -0.0634099692106247,
+        0.11268327385187149
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.007000000216066837
+      ]
+    },
+    {
+      "name": "neutral-outdoor",
+      "PNG_sha256": "8336d8d41094d59ccea88b6efa861067a5b4dac046dbe53b26d645125cebb803",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.052841637283563614,
+        -0.0634099692106247,
+        0.11268327385187149
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.007000000216066837
+      ]
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-SEAT-DAMPER-PEDESTAL-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "seat-damper-pedestal-v2",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "path": "../../../creative/research/seat-damper-pedestal-v2/G0-G2-plan-v1.json",
+          "kind": "identity_and_parts",
+          "sha256": "021a5982c63ddecec36be3ef81bfe2b08d384c9d791ac3678662670563527655",
+          "revision": "seat-damper-pedestal-v2"
+        }
+      ],
+      "reason": "Observable child separated, estimates and variant limits documented; not full package or artistic acceptance",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "seat-damper-pedestal-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "seat-damper-pedestal-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "seat-damper-pedestal-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/seat-damper-pedestal-v2/seat-damper-pedestal-v2.blend",
+          "kind": "editable_source",
+          "revision": "seat-damper-pedestal-v2",
+          "sha256": "96a93d12e1c662b2494bb583681497b0e51c436f0a7d5bc8c00aefc03ca642e4"
+        },
+        {
+          "path": "../../reviews/seat-damper-pedestal-v2/whole-front.png",
+          "kind": "isolated_comparison",
+          "revision": "seat-damper-pedestal-v2",
+          "sha256": "a88002c16b2456d9da3156f98bd340e267c429858aaec1fb3b119fff6df4ec94"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "seat-damper-pedestal-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/seat-damper-pedestal-v2/neutral-outdoor.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "seat-damper-pedestal-v2",
+          "sha256": "8336d8d41094d59ccea88b6efa861067a5b4dac046dbe53b26d645125cebb803"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "seat-damper-pedestal-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/seat-damper-pedestal-v2/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "seat-damper-pedestal-v2",
+          "sha256": "fd2ba1b567d483bd7fd2423cc77e615736906022df343668d4c288df987f2f65"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "seat-damper-pedestal-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/seat-damper-pedestal-v2/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "seat-damper-pedestal-v2",
+          "sha256": "44fc7821e7c9d96c1e79dcca97e6403f710f3c2fbddde5206416ed5a9ddeed9a"
+        },
+        {
+          "path": "../../reviews/seat-damper-pedestal-v2/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "seat-damper-pedestal-v2",
+          "sha256": "5980e36dc4a339a576440d7f468d36c7692911ed59d52200100b03519d3a5d71"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "seat-damper-pedestal-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "seat-damper-pedestal-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "seat-damper-pedestal-v2",
+  "export_revision": "seat-damper-pedestal-v2-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/seat-damper-pedestal-v2/README.md",
+  "candidate_review": "../../reviews/seat-damper-pedestal-v2/README.md",
+  "production_group": 18,
+  "source_plan": "../../../creative/research/seat-damper-pedestal-v2/G0-G2-plan-v1.json"
+}

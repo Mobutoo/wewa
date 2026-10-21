@@ -1,0 +1,302 @@
+{
+  "schema": 1,
+  "id": "MOTO-CENTRE-STAND-MAIN-FRAME-001",
+  "label": "MOTO-CENTRE-STAND-MAIN-FRAME-001 — bounded exterior candidate",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../reviews/centre-stand-main-frame-v1-coordination-v1/source-register.json",
+  "sources": [
+    "D01",
+    "WORKER-REF-1",
+    "WORKER-REF-2"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "final-profile",
+      "PNG_sha256": "4059ab78c7fa71042ac742919838083d61615c515639cac0e9444e8c3c5defb4",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-profile",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-profile.png",
+        "exr": "raw/final-profile.exr",
+        "png_sha256": "4059ab78c7fa71042ac742919838083d61615c515639cac0e9444e8c3c5defb4",
+        "camera": [
+          0.02174999564886093,
+          0.14899998903274536,
+          1.0785000324249268
+        ],
+        "target": [
+          0.02174999564886093,
+          0.14899998903274536,
+          0.0
+        ],
+        "ortho_scale": 0.5931749939918518,
+        "actual_vertex_frame_min": [
+          0.19696970283985138,
+          0.16837061941623688,
+          1.0625
+        ],
+        "actual_vertex_frame_max": [
+          0.8030303120613098,
+          0.8316293954849243,
+          1.0945000648498535
+        ]
+      }
+    },
+    {
+      "name": "final-quarter",
+      "PNG_sha256": "b585ed25932760583507b697fc3d0251b5605a854d5da83cca2b21d233128fbf",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-quarter",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-quarter.png",
+        "exr": "raw/final-quarter.exr",
+        "png_sha256": "b585ed25932760583507b697fc3d0251b5605a854d5da83cca2b21d233128fbf",
+        "camera": [
+          0.4171999990940094,
+          0.4006499648094177,
+          0.9346999526023865
+        ],
+        "target": [
+          0.02174999564886093,
+          0.14899998903274536,
+          0.0
+        ],
+        "ortho_scale": 0.5931749939918518,
+        "actual_vertex_frame_min": [
+          0.11970171332359314,
+          0.30233246088027954,
+          0.9927563667297363
+        ],
+        "actual_vertex_frame_max": [
+          0.7757611274719238,
+          0.9628702402114868,
+          1.1623358726501465
+        ]
+      }
+    },
+    {
+      "name": "final-neutral-independent",
+      "PNG_sha256": "99d1dee318d67982a08b884370f49ade51e8263a48dcdc63d9e6c5bb64e500dd",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-neutral-independent",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-neutral-independent.png",
+        "exr": "raw/final-neutral-independent.exr",
+        "png_sha256": "99d1dee318d67982a08b884370f49ade51e8263a48dcdc63d9e6c5bb64e500dd",
+        "camera": [
+          -0.12205000966787338,
+          -0.06670001149177551,
+          1.0785000324249268
+        ],
+        "target": [
+          0.02174999564886093,
+          0.14899998903274536,
+          0.0
+        ],
+        "ortho_scale": 0.5931749939918518,
+        "actual_vertex_frame_min": [
+          0.2668001055717468,
+          0.016686221584677696,
+          1.0415797233581543
+        ],
+        "actual_vertex_frame_max": [
+          0.8952125310897827,
+          0.7934063673019409,
+          1.1512269973754883
+        ],
+        "independent_direction": [
+          -0.4,
+          -0.6,
+          3
+        ],
+        "lights_rgb": "Neutral white; same source rig, no material change",
+        "protocol_sha256": "76f39d897538df50b99b4b5811618ac547113d123c6a6d2dfeb9d25b0b98da32"
+      }
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-CENTRE-STAND-MAIN-FRAME-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "centre-stand-main-frame-v1-coordination-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/centre-stand-main-frame-v1-coordination-v1/G0-G2-plan-v1.json",
+          "sha256": "109b03080d478b00cd35e33c6b279f2346cfc3357b575edfa9f8f07af97ee26a",
+          "revision": "centre-stand-main-frame-v1-coordination-v1"
+        }
+      ],
+      "reason": "Observable worker child identified, sources/estimates/gaps linked; not a complete package or art reception",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "centre-stand-main-frame-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "centre-stand-main-frame-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "centre-stand-main-frame-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/centre-stand-main-frame-v1/child-candidate.blend",
+          "kind": "editable_source",
+          "revision": "centre-stand-main-frame-v1-coordination-v1",
+          "sha256": "568668a5fcb66d7d2dc452f301b00d4ce884b5c62d06a27014e44b75b155b989"
+        },
+        {
+          "path": "../../reviews/centre-stand-main-frame-v1-coordination-v1/final-profile.png",
+          "kind": "isolated_comparison",
+          "revision": "centre-stand-main-frame-v1-coordination-v1",
+          "sha256": "4059ab78c7fa71042ac742919838083d61615c515639cac0e9444e8c3c5defb4"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "centre-stand-main-frame-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/centre-stand-main-frame-v1-coordination-v1/final-neutral-independent.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "centre-stand-main-frame-v1-coordination-v1",
+          "sha256": "99d1dee318d67982a08b884370f49ade51e8263a48dcdc63d9e6c5bb64e500dd"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "centre-stand-main-frame-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/centre-stand-main-frame-v1-coordination-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "centre-stand-main-frame-v1-coordination-v1",
+          "sha256": "aefe19ab0cbb7b326751db0090f35ced7649c71be2cbd5dee90c80bdeb804c25"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "centre-stand-main-frame-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/centre-stand-main-frame-v1-coordination-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "centre-stand-main-frame-v1-coordination-v1",
+          "sha256": "be56a7f26cc3778dfe00141b9e5080b393fcb6505bd7bcbd32be7945370cb889"
+        },
+        {
+          "path": "../../reviews/centre-stand-main-frame-v1-coordination-v1/inspection-v5/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "centre-stand-main-frame-v1-coordination-v1",
+          "sha256": "e85f1a63e2c0d3adb2e35f458ac77c612b572f83c752809edc7f8f684de4b1dd"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "centre-stand-main-frame-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "centre-stand-main-frame-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "centre-stand-main-frame-v1-coordination-v1",
+  "export_revision": "centre-stand-main-frame-v1-coordination-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/centre-stand-main-frame-v1/README.md",
+  "candidate_review": "../../reviews/centre-stand-main-frame-v1-coordination-v1/README.md",
+  "production_group": 17,
+  "source_plan": "../../research/centre-stand-main-frame-v1-coordination-v1/G0-G2-plan-v1.json"
+}

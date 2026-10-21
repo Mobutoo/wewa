@@ -466,7 +466,7 @@
         "P02"
       ],
       "state": "active",
-      "detailed_work_started": false,
+      "detailed_work_started": true,
       "scope": "Socles, nervures, épine avant, montants, projection arrière, retours/agrafes et petits reliefs séparés ; compléter le tampon sans inventer revers/tenon ; pose après revue",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
@@ -474,7 +474,15 @@
       "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
       "current_stage": "documented_or_isolated_candidate_work_not_complete",
       "package_complete": false,
-      "continuation_owner": "body-coordinator"
+      "continuation_owner": "body-coordinator",
+      "continuation_children": [
+        {
+          "component_id": "MOTO-SEAT-DAMPER-PEDESTAL-001",
+          "revision": "seat-damper-pedestal-v2",
+          "review": "creative/reviews/seat-damper-pedestal-v2/README.md",
+          "state": "candidate_delivered_not_accepted"
+        }
+      ]
     },
     {
       "id": "P14",
@@ -567,9 +575,18 @@
           "package_complete": false
         }
       ],
-      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "current_stage": "worker_candidate_saved_with_coordination_evidence",
       "package_complete": false,
-      "continuation_owner": "powertrain-worker"
+      "continuation_owner": "powertrain-worker",
+      "candidate_review": "creative/reviews/brake-pedal-textured-pad-v1-coordination-v1/README.md",
+      "continuation_children": [
+        {
+          "component_id": "MOTO-BRAKE-PEDAL-TEXTURED-PAD-001",
+          "revision": "brake-pedal-textured-pad-v1-coordination-v1",
+          "state": "candidate_rework",
+          "review": "creative/reviews/brake-pedal-textured-pad-v1-coordination-v1/README.md"
+        }
+      ]
     },
     {
       "id": "P16",
@@ -638,9 +655,18 @@
           "package_complete": false
         }
       ],
-      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "current_stage": "worker_candidate_saved_with_coordination_evidence",
       "package_complete": false,
-      "continuation_owner": "powertrain-worker"
+      "continuation_owner": "powertrain-worker",
+      "candidate_review": "creative/reviews/centre-stand-main-frame-v1-coordination-v1/README.md",
+      "continuation_children": [
+        {
+          "component_id": "MOTO-CENTRE-STAND-MAIN-FRAME-001",
+          "revision": "centre-stand-main-frame-v1-coordination-v1",
+          "state": "candidate_rework",
+          "review": "creative/reviews/centre-stand-main-frame-v1-coordination-v1/README.md"
+        }
+      ]
     },
     {
       "id": "P18",
@@ -671,7 +697,16 @@
           "package_complete": false
         }
       ],
-      "current_stage": "documented_or_isolated_candidate_work_not_complete"
+      "current_stage": "worker_candidate_saved_with_coordination_evidence",
+      "candidate_review": "creative/reviews/crankcase-lh-output-panel-v1-coordination-v1/README.md",
+      "continuation_children": [
+        {
+          "component_id": "MOTO-CRANKCASE-LH-OUTPUT-PANEL-001",
+          "revision": "crankcase-lh-output-panel-v1-coordination-v1",
+          "state": "candidate_rework",
+          "review": "creative/reviews/crankcase-lh-output-panel-v1-coordination-v1/README.md"
+        }
+      ]
     },
     {
       "id": "P19",
@@ -694,6 +729,12 @@
         {
           "path": "creative/reviews/carburettor-cable-elbow-v1/delivery.json",
           "revision": "carburettor-cable-elbow-v1",
+          "milestone": "Usable isolated child candidate; package remains incomplete",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/carburettor-lower-body-v1/delivery.json",
+          "revision": "carburettor-lower-body-v1",
           "milestone": "Usable isolated child candidate; package remains incomplete",
           "package_complete": false
         },
@@ -872,6 +913,12 @@
           "package_complete": false
         },
         {
+          "path": "creative/reviews/front-completion-p23-lh-adjuster-front10-v1/delivery.json",
+          "revision": "front-completion-p23-lh-adjuster-front10-v1",
+          "milestone": "Bounded related isolated exterior, gray and clean material hypothesis reviewed",
+          "package_complete": false
+        },
+        {
           "path": "creative/reviews/front-completion-p23-rear-axle-v1/delivery.json",
           "revision": "front-completion-p23-rear-axle-v1",
           "milestone": "Retained WIP gray source; head-cylinder shading rework before material",
@@ -904,6 +951,12 @@
         {
           "path": "creative/reviews/front-completion-p23-torque-arm-front10-v2/delivery.json",
           "revision": "front-completion-p23-torque-arm-front10-v2",
+          "milestone": "Bounded related isolated exterior, gray and clean material hypothesis reviewed",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p23-torque-bolt-front10-v1/delivery.json",
+          "revision": "front-completion-p23-torque-bolt-front10-v1",
           "milestone": "Bounded related isolated exterior, gray and clean material hypothesis reviewed",
           "package_complete": false
         }
@@ -1272,7 +1325,7 @@
     "state": "ongoing_goal_not_final_handoff",
     "packages_complete": 0,
     "packages_started": 30,
-    "packages_with_geometry_or_source_work": 27,
+    "packages_with_geometry_or_source_work": 28,
     "packages_not_started": 0,
     "detailed_workers_authorized": 3,
     "current_package": "Multiple independent children; see current source work inventories",
@@ -1298,7 +1351,7 @@
     "goal": "Execute all30 packages continuously with regular GitHub saves; existing fidelity/receipt rules retained",
     "state": "running",
     "packages_assessed": 30,
-    "packages_with_geometry_or_source_work": 27,
+    "packages_with_geometry_or_source_work": 28,
     "packages_not_assessed": 0,
     "packages_complete": 0,
     "whole_motorcycle_art_accepted": false,

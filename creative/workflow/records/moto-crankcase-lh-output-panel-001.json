@@ -1,0 +1,308 @@
+{
+  "schema": 1,
+  "id": "MOTO-CRANKCASE-LH-OUTPUT-PANEL-001",
+  "label": "MOTO-CRANKCASE-LH-OUTPUT-PANEL-001 — bounded exterior candidate",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../reviews/crankcase-lh-output-panel-v1-coordination-v1/source-register.json",
+  "sources": [
+    "D01",
+    "WORKER-REF-1",
+    "WORKER-REF-2",
+    "WORKER-REF-3",
+    "WORKER-REF-4",
+    "WORKER-REF-5",
+    "WORKER-REF-6",
+    "WORKER-REF-7",
+    "WORKER-REF-8"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "final-profile",
+      "PNG_sha256": "c221705826d2a7b6228cf0a9b2da8c060183b1886295d8660635f8508cab4e8c",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-profile",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-profile.png",
+        "exr": "raw/final-profile.exr",
+        "png_sha256": "c221705826d2a7b6228cf0a9b2da8c060183b1886295d8660635f8508cab4e8c",
+        "camera": [
+          0.002663593739271164,
+          -0.029228705912828445,
+          0.7263198494911194
+        ],
+        "target": [
+          0.002663593739271164,
+          -0.029228705912828445,
+          0.006000000052154064
+        ],
+        "ortho_scale": 0.39617592096328735,
+        "actual_vertex_frame_min": [
+          0.3180444538593292,
+          0.11038961261510849,
+          0.7053198218345642
+        ],
+        "actual_vertex_frame_max": [
+          0.6819555759429932,
+          0.8896104097366333,
+          0.7353198528289795
+        ]
+      }
+    },
+    {
+      "name": "final-quarter",
+      "PNG_sha256": "6406965858eb9a19b1423e9917af232ce642bf0e8f312dc0c7bad1c2c120dada",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-quarter",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-quarter.png",
+        "exr": "raw/final-quarter.exr",
+        "png_sha256": "6406965858eb9a19b1423e9917af232ce642bf0e8f312dc0c7bad1c2c120dada",
+        "camera": [
+          0.2667808532714844,
+          0.13884592056274414,
+          0.630277156829834
+        ],
+        "target": [
+          0.002663593739271164,
+          -0.029228705912828445,
+          0.006000000052154064
+        ],
+        "ortho_scale": 0.39617592096328735,
+        "actual_vertex_frame_min": [
+          0.18083827197551727,
+          0.2570454478263855,
+          0.6594849824905396
+        ],
+        "actual_vertex_frame_max": [
+          0.8344110250473022,
+          0.822306215763092,
+          0.7624680995941162
+        ]
+      }
+    },
+    {
+      "name": "final-neutral-independent",
+      "PNG_sha256": "b50f7a920db106c44c078cf6d632f6f6c880daf15862b9aa933837284cf4d968",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-neutral-independent",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-neutral-independent.png",
+        "exr": "raw/final-neutral-independent.exr",
+        "png_sha256": "b50f7a920db106c44c078cf6d632f6f6c880daf15862b9aa933837284cf4d968",
+        "camera": [
+          -0.18942169845104218,
+          -0.2693353295326233,
+          0.6782984733581543
+        ],
+        "target": [
+          0.002663593739271164,
+          -0.029228705912828445,
+          0.006000000052154064
+        ],
+        "ortho_scale": 0.39617592096328735,
+        "actual_vertex_frame_min": [
+          0.19056721031665802,
+          0.10123161971569061,
+          0.689494788646698
+        ],
+        "actual_vertex_frame_max": [
+          0.8017048239707947,
+          0.7844513058662415,
+          0.793388843536377
+        ],
+        "independent_direction": [
+          -0.8,
+          -1.0,
+          2.8
+        ],
+        "lights_rgb": "Neutral white; same source rig, no material change",
+        "protocol_sha256": "76f39d897538df50b99b4b5811618ac547113d123c6a6d2dfeb9d25b0b98da32"
+      }
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-CRANKCASE-LH-OUTPUT-PANEL-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "crankcase-lh-output-panel-v1-coordination-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/crankcase-lh-output-panel-v1-coordination-v1/G0-G2-plan-v1.json",
+          "sha256": "a727d92fcd6a5e916fb36b2aeccbcaa58a8bf814db8b7cfbc7b714306fae69a3",
+          "revision": "crankcase-lh-output-panel-v1-coordination-v1"
+        }
+      ],
+      "reason": "Observable worker child identified, sources/estimates/gaps linked; not a complete package or art reception",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "crankcase-lh-output-panel-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "crankcase-lh-output-panel-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "crankcase-lh-output-panel-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/crankcase-lh-output-panel-v1/child-candidate.blend",
+          "kind": "editable_source",
+          "revision": "crankcase-lh-output-panel-v1-coordination-v1",
+          "sha256": "70b5e1d0233fa63518dc5ca5999e6ed756edf692a32811cf692f3e73cfaa1fbc"
+        },
+        {
+          "path": "../../reviews/crankcase-lh-output-panel-v1-coordination-v1/final-profile.png",
+          "kind": "isolated_comparison",
+          "revision": "crankcase-lh-output-panel-v1-coordination-v1",
+          "sha256": "c221705826d2a7b6228cf0a9b2da8c060183b1886295d8660635f8508cab4e8c"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "crankcase-lh-output-panel-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/crankcase-lh-output-panel-v1-coordination-v1/final-neutral-independent.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "crankcase-lh-output-panel-v1-coordination-v1",
+          "sha256": "b50f7a920db106c44c078cf6d632f6f6c880daf15862b9aa933837284cf4d968"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "crankcase-lh-output-panel-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/crankcase-lh-output-panel-v1-coordination-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "crankcase-lh-output-panel-v1-coordination-v1",
+          "sha256": "1ca714d8b26c1a2712cea162e6111e3b0b3fc960a622d37c729f6c4dbb064791"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "crankcase-lh-output-panel-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/crankcase-lh-output-panel-v1-coordination-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "crankcase-lh-output-panel-v1-coordination-v1",
+          "sha256": "509222504530421fb3f4a1f64e169c758007621bc65fcfa302f64e627a997550"
+        },
+        {
+          "path": "../../reviews/crankcase-lh-output-panel-v1-coordination-v1/inspection-v5/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "crankcase-lh-output-panel-v1-coordination-v1",
+          "sha256": "a64563e5899460562205ddb138f1220e136f0561c824abc10a359e18d4b33e6c"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "crankcase-lh-output-panel-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "crankcase-lh-output-panel-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "crankcase-lh-output-panel-v1-coordination-v1",
+  "export_revision": "crankcase-lh-output-panel-v1-coordination-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/crankcase-lh-output-panel-v1/README.md",
+  "candidate_review": "../../reviews/crankcase-lh-output-panel-v1-coordination-v1/README.md",
+  "production_group": 17,
+  "source_plan": "../../research/crankcase-lh-output-panel-v1-coordination-v1/G0-G2-plan-v1.json"
+}
