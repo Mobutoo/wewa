@@ -1,0 +1,9 @@
+# Longer­on inférieur de berceau — une pièce observée seule
+
+Candidat apparentéPF111000. Les deux photos montrent deux longerons inférieurs distincts ; cette source ne reproduit qu’un membre observable, avec une descente, deux cintrages continus et un retour supérieur. La section non ronde arrondie, ses cotes, l’intérieur et tous les rayons sont estimés. Aucun second côté identique, traverse, fixation de repose-pied ou soudure n’est déclaré fabriqué.
+
+Enveloppe de travail : portée240mm [190–300], profondeur90mm [55–125], rayon de courbure55mm [35–75], section18×18mm [15–24], épaisseur1.5mm [1–2.5], rayon de coin4mm [2–6]. Ces valeurs ne sont ni un relevé OEM ni des cotes de montage. Origine au bout supérieur avant, +Yarrière/Zhaut, face+X provisoire sans attribution physique.
+
+Sources documentaires attribuées : [MotoZilla PF111000](https://motozilla.com.ua/product/boxer-bm-vmx-150cc-rama-pf111000-c-razborki-novyy-bajaj-358153/) et [photo](https://motozilla.com.ua/wa-data/public/shop/products/60/77/227760/images/991893/991893.750x0.jpg) ; [Bikebox](https://bikeboxmt.com/shop/genuine-bajaj-boxer-frame-assy-bs/) et [photo](https://bikeboxmt.com/wp-content/uploads/2026/02/BOXER-FRAME-ASSY-GENUINE.webp). Aucune texture photographique réutilisée.
+
+SourceBlender et GLB réels : 52 224 triangles/une coque fermée, intérieur libre et bouts de jonction ouverts. Normales analytiques fraîches ; gris puis reflet natif relus avant finition. Deux cartes originales512² seed111004, microreliefRMS≈2.43µm force.45 et rugosité≈.20–.36 estimés ; noir diélectrique(.007,.009,.012). UV continu20mm dans le sens longitudinal, périmètre extérieur trois répétitions≈21.71mm, intérieur≈18.57mm ; étirement des cintres explicite. Tous les buffers forme/normales/UV/tangentes/transfos G3 conservés. Aucun certificat de profil industriel ou de matériau.

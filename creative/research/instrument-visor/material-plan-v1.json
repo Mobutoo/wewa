@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "revision": "instrument-visor-v1",
+  "stage": "G4 original clean smoked-polymer candidate; G3 rolled-studyv3 frozen",
+  "geometry_baseline": "instrument-visor-shell-study-v3",
+  "body_geometry_changes_permitted": false,
+  "material_identity": "Generic smoke-tinted transparent polymer, exact grade/substrate unknown; retailerPC claim vs genericABS contradiction retained.",
+  "working_estimates": {
+    "IOR": {
+      "value": 1.52,
+      "range": [
+        1.49,
+        1.59
+      ],
+      "status": "estimated"
+    },
+    "roughness": {
+      "value": 0.12,
+      "range": [
+        0.08,
+        0.22
+      ],
+      "status": "estimated"
+    },
+    "metallic": 0,
+    "surface_base_color_linear_RGB": [
+      1,
+      1,
+      1
+    ],
+    "transmission": 1,
+    "bulk_target_transmittance_at_thickness": {
+      "RGB": [
+        0.1,
+        0.12,
+        0.11
+      ],
+      "thickness_m": 0.0025,
+      "status": "estimated, clean visual target only; not measured from photographs"
+    },
+    "sigma_absorption_m_inverse": [
+      921.0340371976182,
+      848.1054144800364,
+      882.9099652758882
+    ],
+    "Cycles_volume_density_m_inverse": 1000.0,
+    "Cycles_volume_color_linear_RGB": [
+      0.07896596280238177,
+      0.1518945855199636,
+      0.11709003472411172
+    ],
+    "glTF_attenuation_distance_m": 0.001,
+    "glTF_attenuation_color_linear_RGB": [
+      0.39810717055349726,
+      0.4282254736676648,
+      0.4135776622790052
+    ],
+    "glTF_nominal_thickness_factor_m": 0.0025
+  },
+  "semantic_conversion": {
+    "Cycles_4_3_2": "sigma=(1\u2212Color)*Density, verified from officialv4.3.2 OSL and actual bundled.oso source comment",
+    "glTF_volume": "sigma=\u2212ln(attenuationColor)/attenuationDistance, official KHR_materials_volume",
+    "Blender_exporter": "4.3.2 directly copies nodeColor and1/Density; raw export therefore does not preserve the Cycles absorption coefficient.",
+    "correction": "Change ONLY actual KHR_materials_volume attenuationColor to exp(Color\u22121), retaining distance1/Density. Preserve all geometry/UV/normal/index/matrix and other material properties; no tangent repair.",
+    "references": "creative/research/instrument-visor/optics-reference-archive.json"
+  },
+  "texture_policy": "Clean smooth candidate: no photo textures, invented scratches, packaging wrinkles or unsupported micrograin. Bulk absorption and Fresnel separate from surface tint.",
+  "verification": [
+    "Real source slab witness at1.25/2.5/5mm with copied absorption shader and temporaryIOR1/roughness0 removes boundary Fresnel; compare saved linearEXR radiance with Beer-Lambert. Not a model material edit or physical measurement.",
+    "Actual finalGLB extensions and coefficient values checked; raw-to-final buffers/matrices/restmaterial properties identical.",
+    "Four short actual source views including edge and white-background transmission witness before96; runtime captured separately byroot."
+  ],
+  "limits": [
+    "Fixed raster thickness approximates rounded thin edges; full physical source path length is used byCycles.",
+    "Camera/light and renderer differences remain, no source/runtime appearance parity certified.",
+    "No hole centres, hidden return flanges, fixing set or installed headlamp/cable fit established; lot11 incomplete."
+  ],
+  "art_accepted": false
+}

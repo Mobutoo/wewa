@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-INSTRUMENT-VISOR-001",
-  "label": "Visière extérieure — panneau fumé isolé candidat v1",
+  "label": "Visière fumée — coque extérieure seule",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,11 +12,11 @@
     "material"
   ],
   "identity": {
-    "variant": "Current RDC125HD longvisor appearance with conditional PF181209 related references",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
-    "usage": "Isolated shell shape study before complete fixing/mount assembly",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
-      0.12,
+      0.15,
       0.35,
       0.65
     ]
@@ -28,7 +28,105 @@
     "D15"
   ],
   "claims": [],
-  "views": [],
+  "views": [
+    {
+      "name": "whole-front",
+      "camera": {
+        "location": [
+          0.0,
+          -0.74677574634552,
+          0.5972485542297363
+        ],
+        "target": [
+          0.0,
+          -0.18941709399223328,
+          0.09540054202079773
+        ],
+        "lens": 70
+      },
+      "PNG_path": "creative/reviews/instrument-visor-v1/whole-front.png",
+      "PNG_sha256": "a742e58a3f8591c46f5a74699cf8484e80ed3be6fdca772f6b91afe852680f08",
+      "EXR_private_path": "/workspace/wewa-assets/renders/instrument-visor-v1/whole-front.exr",
+      "EXR_sha256": "c02dc545f963deba8538666440b70dfa3516dd753cd1411c77c67508300b2efa",
+      "actually_saved": true,
+      "actually_read": true,
+      "config_sha256": "a0f349d39ebb1be068e8a6f9d4d0840185954675309333636bf0053b6254d5eb",
+      "observations": "Whole smoked panel in frame, continuous broad reflection; lower reliefs and rounded perimeter retained. Surface tint remains an estimate, not calibrated to photographs."
+    },
+    {
+      "name": "whole-profile",
+      "camera": {
+        "location": [
+          0.6800000071525574,
+          -0.28602591156959534,
+          0.18238753080368042
+        ],
+        "target": [
+          0.0,
+          -0.18941709399223328,
+          0.09540054202079773
+        ],
+        "lens": 70
+      },
+      "PNG_path": "creative/reviews/instrument-visor-v1/whole-profile.png",
+      "PNG_sha256": "d56b67250841ee12d536d5b58ebf125469648774f8cd5c2a277257dcb6e080d4",
+      "EXR_private_path": "/workspace/wewa-assets/renders/instrument-visor-v1/whole-profile.exr",
+      "EXR_sha256": "ce1009a7e0e8c1d5159d63cd6c9e1e654e2807860c6068db16b42a75cccc3cad",
+      "actually_saved": true,
+      "actually_read": true,
+      "config_sha256": "b84edb73ddef5e96a12e0e2f0dd1c5b540735877fb79f08b5dfca06c144c2e36",
+      "observations": "Whole wrap and finite wall visible. Broad highlights continuous; optical dark/light strip along edge without prior gray-bevel spears."
+    },
+    {
+      "name": "whole-inside",
+      "camera": {
+        "location": [
+          0.0,
+          0.3679415285587311,
+          -0.4064474403858185
+        ],
+        "target": [
+          0.0,
+          -0.18941709399223328,
+          0.09540054202079773
+        ],
+        "lens": 70
+      },
+      "PNG_path": "creative/reviews/instrument-visor-v1/whole-inside.png",
+      "PNG_sha256": "120f59bbaffa0a8663a6156f9deb366fdb314669f54aa20ddd45dd4460e3cc8c",
+      "EXR_private_path": "/workspace/wewa-assets/renders/instrument-visor-v1/whole-inside.exr",
+      "EXR_sha256": "f4d5558059fb0de4b4e24affa2b1776447072d0f3f4d6ebf5d7a7ee8a2211a2f",
+      "actually_saved": true,
+      "actually_read": true,
+      "config_sha256": "847f1f6bb5c426136e6a93fee6ac04930141895f10382e2c16061d86d0a9c94f",
+      "observations": "Entire inner face visible, lower reliefs and broad reflection continuous. No hidden mount holes or flanges invented."
+    },
+    {
+      "name": "edge-lower-right",
+      "camera": {
+        "location": [
+          0.12700000405311584,
+          -0.37074679136276245,
+          0.10008250921964645
+        ],
+        "target": [
+          0.10700000077486038,
+          -0.2518436312675476,
+          -0.006978382356464863
+        ],
+        "lens": 100,
+        "crop": true
+      },
+      "PNG_path": "creative/reviews/instrument-visor-v1/edge-lower-right.png",
+      "PNG_sha256": "2311e108c616e5d886d99955e32fd96f6c19c8aea0ae4c024828766b39f58f7d",
+      "EXR_private_path": "/workspace/wewa-assets/renders/instrument-visor-v1/edge-lower-right.exr",
+      "EXR_sha256": "6558518c5bf8e126322413586c5ad07b019e24e9cb85725cab18957aa8687e54",
+      "actually_saved": true,
+      "actually_read": true,
+      "config_sha256": "aa9ffd662ca3a1b0c9700929f02316c4ab52cf2c0ddb3ec4fae239e0e9ace542",
+      "observations": "Actual macro shows rounded tip and finite curved lip. No former triangular bevel spears. Multiple thin dark/light contours are refraction/reflection at the finite edge, not extra seams or physical validation."
+    }
+  ],
   "criteria": [],
   "gaps": [
     {
@@ -56,7 +154,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "instrument-visor-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -64,63 +162,103 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": null,
+      "revision": "instrument-visor-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Surface contour and bounded shape estimates permit a conditional shell study; exact hidden mounting and variant remain unresolved.",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
-      "status": "rework",
-      "revision": null,
+      "status": "blocked",
+      "revision": "instrument-visor-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Working coordinate/shape plan prepared; no calibrated camera or physical dimensions.",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "instrument-visor-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/instrument-visor/instrument-visor-v1.blend",
+          "kind": "editable_source",
+          "revision": "instrument-visor-v1",
+          "sha256": "c790ffbba0a49f4d63e2dcf85a30cf88eb1aa8c6edd847514c041e5c0fa70f15"
+        },
+        {
+          "path": "../../reviews/instrument-visor-v1/whole-front.png",
+          "kind": "isolated_comparison",
+          "revision": "instrument-visor-v1",
+          "sha256": "a742e58a3f8591c46f5a74699cf8484e80ed3be6fdca772f6b91afe852680f08"
+        }
+      ],
+      "reason": "Quatre PNG natifs Cycles96 effectivement terminés et relus par le fabricant ; responsable a ouvert la vue intérieure entière. Profil de bord explicite corrige les anciennes pointes du bevel. Contour et wrap photo-informés, sans étalonnage métrique ; réception artistique ouverte.",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "instrument-visor-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/instrument-visor-v1/edge-lower-right.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "instrument-visor-v1",
+          "sha256": "2311e108c616e5d886d99955e32fd96f6c19c8aea0ae4c024828766b39f58f7d"
+        }
+      ],
+      "reason": "Absorption bulk contrôlée sur témoin linéaire séparé ; grade réel, épaisseur et teinte estimés. Le témoin ne certifie ni optique complète ni shader Babylon/Safari. Lien source/GLB/PNG conservé.",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "instrument-visor-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/instrument-visor-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "instrument-visor-v1",
+          "sha256": "16380fcaaeb7105c874ed1cb956aa5bf480f1d656b7e9f438319ba8edc036f03"
+        }
+      ],
+      "reason": "Coque extérieure seule ; fixations, trous et retours cachés non construits. Implantation provisoire sans croisement avec deux coques de compteurs, non équivalente à un jeu mécanique mesuré. Supports, phare, câbles et montage réel restent ouverts.",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "instrument-visor-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/instrument-visor-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "instrument-visor-v1",
+          "sha256": "3c8c31a23dd8851af5b3740923435039aec19fc2a05f26d19de2afa0500b483a"
+        },
+        {
+          "path": "../../reviews/instrument-visor-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "instrument-visor-v1",
+          "sha256": "7d6f0fc6c3cf306b36a6614eb5a21bf92348a76b5c6989e314aa94aa05a0d82e"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "instrument-visor-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "instrument-visor-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -129,9 +267,10 @@
   },
   "active_detailed_fabrication": false,
   "source_revision": "instrument-visor-v1",
-  "export_revision": "instrument-visor-v1",
-  "next_action": "Four final96 views queued/running on frozen source after actualG4 preview readings; root runtime review separate. Exact fixing/hidden-return remains blocked, lot11 incomplete. Proceed documentary headlamp12 while no source edits.",
+  "export_revision": "instrument-visor-v1-inspection",
+  "next_action": "Rechercher et fabriquer seulement les supports/retours observables ; contrôler le montage avec compteurs et phare, puis comparer lumière et matériau en situation. Ne pas ajouter de perçages cachés génériques.",
   "art_accepted": false,
-  "pending_revision": "instrument-visor-v1",
-  "production_group": 11
+  "production_group": 11,
+  "candidate_source": "../../../assets-src/moto-components/instrument-visor/README_v1.md",
+  "candidate_review": "../../reviews/instrument-visor-v1/README.md"
 }

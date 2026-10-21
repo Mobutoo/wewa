@@ -415,15 +415,15 @@
     {
       "lot": 11,
       "label": "Visière et entourage des compteurs",
-      "state": "documentary_research",
+      "state": "separate_candidates_under_review_not_complete",
       "source_folders": [],
       "research": "../research/forward-cockpit-18/report.json",
       "depends_on_lots": [
         2
       ],
       "user_art_accepted": false,
-      "any_source_blend_built": false,
-      "any_runtime_checked": false,
+      "any_source_blend_built": true,
+      "any_runtime_checked": true,
       "all_required_components_built": false,
       "all_interfaces_checked": false,
       "group_complete": false,
@@ -431,20 +431,30 @@
         "visière extérieure",
         "entourage/supports observables"
       ],
-      "owner_chain": "C"
+      "owner_chain": "C",
+      "candidates": [
+        {
+          "component_id": "MOTO-INSTRUMENT-VISOR-001",
+          "revision": "instrument-visor-v1",
+          "source_sha256": "c790ffbba0a49f4d63e2dcf85a30cf88eb1aa8c6edd847514c041e5c0fa70f15",
+          "review": "../reviews/instrument-visor-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        }
+      ]
     },
     {
       "lot": 12,
       "label": "Phare et clignotants avant",
-      "state": "documentary_research",
+      "state": "separate_candidates_under_review_not_complete",
       "source_folders": [],
       "research": "../research/forward-cockpit-18/report.json",
       "depends_on_lots": [
         11
       ],
       "user_art_accepted": false,
-      "any_source_blend_built": false,
-      "any_runtime_checked": false,
+      "any_source_blend_built": true,
+      "any_runtime_checked": true,
       "all_required_components_built": false,
       "all_interfaces_checked": false,
       "group_complete": false,
@@ -454,7 +464,17 @@
         "clignotant avant gauche",
         "clignotant avant droit"
       ],
-      "owner_chain": "C"
+      "owner_chain": "C",
+      "candidates": [
+        {
+          "component_id": "MOTO-HEADLAMP-FRONT-PROTECTOR-001",
+          "revision": "headlamp-front-protector-v2",
+          "source_sha256": "b9a7e64ecc08ed9de44e2bf5e411fb76fabf2be40d43d9c405f4b7160c96c9fd",
+          "review": "../reviews/headlamp-front-protector-v2/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        }
+      ]
     },
     {
       "lot": 13,
@@ -613,6 +633,30 @@
           "review": "../reviews/frame-front-downmember-v1/README.md",
           "runtime_checked": true,
           "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-FRAME-BACKBONE-001",
+          "revision": "frame-front-backbone-v2",
+          "source_sha256": "cf2d2c141a501eb633eba9730ee926122db1fb90bc4a544097e6a2233a05f070",
+          "review": "../reviews/frame-front-backbone-v2/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-FRAME-HEAD-GUSSET-001",
+          "revision": "frame-head-gusset-v1",
+          "source_sha256": "c26005741e3ff96beb5b7582c477c5e1f7b22be2c129c77c7044a1c2b4bae145",
+          "review": "../reviews/frame-head-gusset-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-FRAME-LOWER-CRADLE-RAIL-001",
+          "revision": "frame-lower-cradle-rail-v1",
+          "source_sha256": "b2646434f124396701f7eb9508cc5f59cfe2e846b1ea84c54af20af56f5b42f3",
+          "review": "../reviews/frame-lower-cradle-rail-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
         }
       ]
     },
@@ -755,7 +799,8 @@
         "clignotants arrière gauche/droit",
         "support plaque"
       ],
-      "owner_chain": "B"
+      "owner_chain": "C",
+      "handoff_note": "2026-10-21 : lot18 entier transféré de B à C après12 puis amortisseursSNS16. B confirme aucune géométrie18 construite, recherches tank18/bodywork préservées ; C relira chaque source avant fabrication. Aucun déplacement de modèle ni réception transférée."
     }
   ],
   "research_status_is_not_fabrication": true,
@@ -770,9 +815,30 @@
     "date": "2026-10-21",
     "scope": "Balance already authorized parallel manufacture, maximum three new detailed component owners unchanged",
     "A": "Lots1/2/13/14/15 and lot16 except rear shock units",
-    "B": "Lots3/6/7/9/10/17/18",
-    "C": "Lots4/5/8/11/12, then rear SNS shock units from16",
+    "B": "Lots3/6/7/9/10/17",
+    "C": "Lots4/5/8/11/12, then rearSNSshock units from16, then all18",
     "rear_shocks_handoff": "C after11/12; A explicitly notified to avoid duplicate fabrication. Shock interfaces remain estimated/open; other16 components remain A. One new detailed component per owner and at most3 global long rendering workers.",
-    "no_group_completed_or_art_accepted": true
-  }
+    "no_group_completed_or_art_accepted": true,
+    "bodywork_handoff": "B and C explicitly acknowledge entire18 reassignment; documentary preparation retained, no existing18geometry moved. Other16 remains A."
+  },
+  "distribution_history": [
+    {
+      "date_utc": "2026-10-21",
+      "change": "Entire lot18 B→C, after12 and rearSNS16. B keeps17 and cockpit3/6/7/9/10; all other16 remains A.",
+      "owner_B_acknowledged": true,
+      "owner_C_acknowledged": true,
+      "existing_geometry_moved": false,
+      "documentary_research_preserved": true,
+      "reason": "Balance remaining engine/bodywork load across three detailed component owners.",
+      "previous_distribution": {
+        "date": "2026-10-21",
+        "scope": "Balance already authorized parallel manufacture, maximum three new detailed component owners unchanged",
+        "A": "Lots1/2/13/14/15 and lot16 except rear shock units",
+        "B": "Lots3/6/7/9/10/17/18",
+        "C": "Lots4/5/8/11/12, then rear SNS shock units from16",
+        "rear_shocks_handoff": "C after11/12; A explicitly notified to avoid duplicate fabrication. Shock interfaces remain estimated/open; other16 components remain A. One new detailed component per owner and at most3 global long rendering workers.",
+        "no_group_completed_or_art_accepted": true
+      }
+    }
+  ]
 }

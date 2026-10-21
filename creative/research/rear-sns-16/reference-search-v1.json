@@ -1,0 +1,714 @@
+{
+  "schema": "wewa.documentary-reference-search.v1",
+  "id": "rear-sns-16-reference-search-v1",
+  "created_utc": "2026-10-21T02:59:39.267148+00:00",
+  "scope": "Lot16 amortisseurs arrière SNS gauche/droit et parties observables ; documentation seulement, pour chaîneC.",
+  "inputs": [
+    {
+      "path": "creative/research/chassis-running-18/report.json",
+      "sha256": "2f63e71e9a37db50bab58ffdee9516253115a9b0d11bb4ef21f80102fa4ff074"
+    },
+    {
+      "path": "creative/research/chassis-running-18/README.md",
+      "sha256": "008ed7f9f851bbbb56ab1ec6d4879924ac7ee42ca8934d2d021c405f7fe7cf67"
+    },
+    {
+      "path": "creative/research/chassis-remaining-18.json",
+      "sha256": "5ccd298f86b10815ac5eae65b3fca5c47ab7492ecc251fd07ed573ec7f206f60"
+    }
+  ],
+  "outcome": "Meilleure preuve de forme isolée reste PF122033 existante. Deux nouvelles présentations physiques SCL apparentées apportent des vues de raccords, mais aucune multivue complète ni notice dimensionnelle constructeur exacte de la cible RDC.",
+  "color_order_correction": {
+    "claim": "NOIR extérieur / ORANGE intérieur",
+    "direct_support": [
+      "shock-PF122033.jpg",
+      "scl-52202F92-142D-468A-9004-25A500E5B656.jpg"
+    ],
+    "current_RDC_support": "Cohérence visuelle sur00/04/06 et suspension.webp ; détails non résolus ne pas identifier OEM.",
+    "corrects_only_this_task_wording": "orange extérieur/noir intérieur inversé dans demande ; anciens rapports et pointages inchangés."
+  },
+  "sources": [
+    {
+      "id": "D01",
+      "url": "https://www.bajajauto.com/fr-cd/bikes/boxer-125hd",
+      "type": "manufacturer_exact_market",
+      "variant": "Current RDC125HD page selector00JL22; model year/VIN unspecified",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/dimensions-verified/bajaj-boxer125hd-rdc.html",
+        "bytes": 107465,
+        "sha256": "49e6b4b03405f49d22f7c910eb5548bd21a92bc0ae73e2d175ba6f196b068d63",
+        "in_public_repo": false
+      },
+      "read_this_pass": "Visible text and originals00,02,04,06 plus suspension/alloy-wheel detail images",
+      "limitations": [
+        "No dimensioned individual-part drawing",
+        "No measured loaded tyre radius",
+        "Height/width measurement conventions unspecified"
+      ]
+    },
+    {
+      "id": "D04",
+      "url": "https://motobro.ua/files/Boxer_BM_125_UG_Provisional_SPC_%282%29.pdf",
+      "type": "manufacturer_authored_related_catalogue_third_party_mirror",
+      "variant": "BM125UG rev00 mixed standard4gear/UG5gear",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/documentary-workflow/boxer-bm125-ug-spares.pdf",
+        "bytes": 7054568,
+        "sha256": "5228ed1fb3f5ab9ec1503864bf6cccf66bd429ece78adb30516f9904a099372e",
+        "in_public_repo": false
+      },
+      "read_this_pass_sheets": [
+        39,
+        43,
+        44,
+        45,
+        46,
+        47,
+        50,
+        51,
+        56
+      ],
+      "visually_inspected_sheets": [
+        39,
+        43
+      ],
+      "limitations": [
+        "Not current RDC confirmation",
+        "Part illustrations not to scale",
+        "Tyre-with-tube conflicts with current RDC tubeless description",
+        "Quantities4 for one panel and2for one chain are anomalies, not duplication instructions"
+      ]
+    },
+    {
+      "id": "D15",
+      "url": "https://reypiston.com/wp-content/uploads/2024/04/Boxer-BM150-SPC.pdf",
+      "type": "manufacturer_authored_related_catalogue_third_party_mirror",
+      "variant": "BOXER150 document71111461 rev00 MAR12; spoke/alloy and fairing/no-fairing groups separated",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/front-brake-cam/bm150-spares.pdf",
+        "bytes": 5077975,
+        "sha256": "2ccf8194176b00e31d4b210d5ba10cd97182b06aa376e5a0dd79f3a19dfc2f0e",
+        "in_public_repo": false
+      },
+      "read_this_pass_sheets": [
+        35,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        47,
+        48,
+        49,
+        63,
+        64
+      ],
+      "visually_inspected_sheets": [
+        42,
+        44,
+        49
+      ],
+      "limitations": [
+        "BM150 March2012, not125HD RDC current",
+        "Five-cast-spoke variant introduced fromMay2012 in this document",
+        "Parts cannot be merged across spoke/alloy tables silently"
+      ]
+    },
+    {
+      "id": "RUN-shock-bajajmatriz",
+      "url": "https://bajajmatriz.com/producto/amortiguador-trasero-motocicleta-boxer-150-bajaj",
+      "type": "retailer_related_part",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/chassis-running-18/shock-bajajmatriz.html",
+        "bytes": 82849,
+        "sha256": "47f8c403ff0f28f88bb3c8cbc99acf86778a6a000111b6bd7c1981a582248639",
+        "in_public_repo": false
+      },
+      "limitations": [
+        "Not manufacturer-certified dimensional evidence for current RDC",
+        "Commercial photograph is private documentary reference only"
+      ]
+    },
+    {
+      "id": "RUN-endurance",
+      "url": "http://airavatautospares.in/pdf/endurance.pdf",
+      "type": "supplier_cross_reference_pdf_third_party_host",
+      "archive": {
+        "local_path": "/workspace/wewa-assets/references/chassis-running-18/endurance.pdf",
+        "bytes": 1806252,
+        "sha256": "5d309c850aa2f409ca21f898ee1be1c62a819a14b010fe88150bed962ac01b58",
+        "in_public_repo": false
+      },
+      "limitations": [
+        "Not manufacturer-certified dimensional evidence for current RDC",
+        "Commercial photograph is private documentary reference only"
+      ]
+    },
+    {
+      "id": "wayc-PF122005",
+      "url": "https://www.way-cauto.com/products/bajaj-boxer-bm150-pf122005-rear-shock-absorber-bm150-parts.html",
+      "archive": "/workspace/wewa-assets/references/rear-sns-16/wayc-PF122005.html",
+      "sha256": "e0c0b9f10c15fcafc6c38833da7a4bf650118403884cd4530b4e16451bd56c61",
+      "identity_status": "retailer_or_aftermarket_claim_not_current_RDC"
+    },
+    {
+      "id": "reliable-PF122005",
+      "url": "https://www.reliableautoexpo.com/bajaj-shock-absorber-pf122005.html",
+      "archive": "/workspace/wewa-assets/references/rear-sns-16/reliable-PF122005.html",
+      "sha256": "502924cf56251c15bf0a4c3f15da5a474f6bfae8f526a5881686b66e3b8a2b10",
+      "identity_status": "retailer_or_aftermarket_claim_not_current_RDC"
+    },
+    {
+      "id": "cookma-bm150",
+      "url": "https://www.cookmaparts.com/product-page/bajaj-bm150-motorcycle-rear-shock-absorber",
+      "archive": "/workspace/wewa-assets/references/rear-sns-16/cookma-bm150.html",
+      "sha256": "2f0f0f00844fc27256e4b509ca8768d22e05c4e8bd35fd5d7c1d0c661d3475b7",
+      "identity_status": "retailer_or_aftermarket_claim_not_current_RDC"
+    },
+    {
+      "id": "scl-340-PF122005",
+      "url": "https://www.sclmotos.com/productview/Rear-Shock-Absorber-340mm-Bajaj-Genuine-Rear-Suspension-Damper-PF122005-for-BAJAJ-BOXER-BM-150-SCL-2014030029",
+      "archive": "/workspace/wewa-assets/references/rear-sns-16/scl-340-PF122005.html",
+      "sha256": "e9ce803787702c0907396147f7f91eeef21b2e8a98e205377f6ed5027f082713",
+      "identity_status": "retailer_or_aftermarket_claim_not_current_RDC"
+    },
+    {
+      "id": "pf122028-ml",
+      "url": "https://articulo.mercadolibre.com.ar/MLA-897887720-amortiguador-trasero-bajaj-boxer-150-original-pf122028-um-_JM",
+      "error": "HTTP Error 403: Forbidden",
+      "identity_status": "retailer_or_aftermarket_claim_not_current_RDC"
+    }
+  ],
+  "identities": [
+    {
+      "reference": "current_RDC_125HD",
+      "source": "D01",
+      "known": "Suspension arrière SNS ; noir/orange sur vues00/04/06 et détail officiel. Deux amortisseurs.",
+      "exact_part_number": null,
+      "dimensional_part_notice": null
+    },
+    {
+      "reference": "PF122004",
+      "source": "D04 PDF39 plate27 item3",
+      "variant": "BM125 standard ; quantité2",
+      "conflict": "Endurance rang2 le classe BM100 S130112501 : illustre un code partagé ou une attribution conditionnelle, pas identité courante RDC."
+    },
+    {
+      "reference": "PF122028",
+      "source": "D04 PDF39 plate27 item3",
+      "variant": "BM125 UG5, quantité2",
+      "relation": "Matriz croise avec PF122033 pour BM1505 ; Motozilla schémas existants ne sont pas nouvelles photos produit."
+    },
+    {
+      "reference": "PF122005",
+      "source": "D15 PDF35 plate25 item3",
+      "variant": "BM150 MAR2012, quantité2",
+      "relation": "Endurance rang22 S130113101 BM150. SCL/WAY-C/Cookma sont des offres apparentées/adaptables, pas des pièces125HD RDC certifiées."
+    },
+    {
+      "reference": "DZ191016",
+      "source": "D15 PDF35 plate25 item3",
+      "variant": "Philippines uniquement, quantité2",
+      "relation": "Ne pas transférer à RDC ; aucune photo isolée utile acquise ici."
+    },
+    {
+      "reference": "PF122033",
+      "source": "RUN-shock-bajajmatriz + RUN-endurance PDF3 rang23",
+      "variant": "Matriz BM1505, Endurance BM150 REAR NEW / S20114201M",
+      "relation": "Noir extérieur/orange intérieur vu sur photo, meilleur apparenté ; pas supersession constructeur PF122028 certifiée."
+    },
+    {
+      "reference": "52400A115 / SCL-2014030029",
+      "source": "scl-340-PF122005",
+      "variant": "Adaptable vendu pour plusieurs BM125/BM150 et PF122004/005/028",
+      "relation": "Notice vendeur seule, mélange images chrome et noir ; ne sert pas de cote RDC."
+    },
+    {
+      "reference": "CT125 / CT100 / Platina",
+      "source": "search-log + Endurance",
+      "variant": "Familles distinctes",
+      "relation": "Aucune photo/cote exacte CT125 utile obtenue ; voisinage catalogue SNS/CT ne prouve pas interchangeabilité avec125HD RDC."
+    }
+  ],
+  "photos": [
+    {
+      "private_path": "/workspace/wewa-assets/references/chassis-running-18/shock-PF122033.jpg",
+      "sha256": "f0d9264f47a35d89ddd1ef4139cd4858c5e55c1baf86937fbab3cbd97d45b5f8",
+      "bytes": 140631,
+      "in_public_repo": false,
+      "source_id": "RUN-shock-bajajmatriz",
+      "resolution_px": [
+        1210,
+        1210
+      ],
+      "actually_opened_this_pass": true,
+      "view": "pièce isolée, latéral légèrement oblique, axe horizontal, œillets visibles",
+      "visible": [
+        "Deux ressorts concentriques distincts : grand diamètre NOIR à l’extérieur, petit diamètre ORANGE à l’intérieur ; fils ne pas fusionner en un seul ressort peint.",
+        "Le ressort noir présente des tours rapprochés vers un œillet et un pas plus ouvert dans la partie centrale ; changement non assimilable à un pas constant.",
+        "Ressort orange visible entre spires noires ; tige centrale partiellement brillante visible dans les intervalles ; coupelles noires distinctes.",
+        "Long corps cylindrique noir d’un côté, raccord vers le siège par une enveloppe plus large/évasée ; extrémités à œillet avec traversée métallique et anneau coloré bleu visible sur un côté."
+      ],
+      "limits": [
+        "Vendeur : Boxer150 cinq vitesses, SKU PF122033 / PF122028 ; identité exacte RDC non démontrée.",
+        "Un seul angle, aucune longueur publiée, faces axiales, revers, réglage et intérieur masqués ; anneau bleu non preuve de matière ni identité RDC."
+      ],
+      "selection": "primary_related_shape",
+      "camera_calibrated": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/rotation-00.png",
+      "sha256": "82be9285506c65dd8ff3fdba000fe963587548e306691844ed774f685870ea40",
+      "bytes": 54230,
+      "in_public_repo": false,
+      "source_id": "D01",
+      "resolution_px": [
+        1000,
+        700
+      ],
+      "actually_opened_this_pass": true,
+      "view": "profil droit moto complète",
+      "visible": [
+        "Amortisseur visible entre cadre sous la selle et bras oscillant, incliné ; grand ressort sombre avec orange visible, corps noir inférieur.",
+        "Attache haute, attache basse et portions de ressort masquées par cadre, rack/caches, roue et échappement selon projection."
+      ],
+      "limits": [
+        "Photo marketing non calibrée ; pas de mesure d’entraxe ni d’échelle orthographique."
+      ],
+      "selection": "primary_current_RDC_appearance",
+      "camera_calibrated": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/rotation-04.png",
+      "sha256": "b086dedb4a2bcbc2644aab9578a3d1efa7445e163459b444b3687047bf2e8e02",
+      "bytes": 54668,
+      "in_public_repo": false,
+      "source_id": "D01",
+      "resolution_px": [
+        1000,
+        700
+      ],
+      "actually_opened_this_pass": true,
+      "view": "profil gauche moto complète",
+      "visible": [
+        "Amortisseur gauche même famille visuelle noir/orange ; corps inférieur noir et raccord au bras."
+      ],
+      "limits": [
+        "Faces des œillets et détails des sièges insuffisamment résolus ; pas preuve de référence ni symétrie de toutes les bagues."
+      ],
+      "selection": "primary_current_RDC_appearance",
+      "camera_calibrated": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/rotation-06.png",
+      "sha256": "60a01cd517728f6d3d4f61a3975fe610488f7b489098c20cae381b9768093362",
+      "bytes": 123126,
+      "in_public_repo": false,
+      "source_id": "D01",
+      "resolution_px": [
+        1000,
+        700
+      ],
+      "actually_opened_this_pass": true,
+      "view": "arrière moto complète",
+      "visible": [
+        "Deux amortisseurs distincts, de part et d’autre de la roue ; portions de ressort orange entre tours sombres visibles."
+      ],
+      "limits": [
+        "Fixations hautes occultées ; ne démontre pas une identité géométrique parfaite LH/RH ni leur entraxe métrique."
+      ],
+      "selection": "primary_current_RDC_appearance",
+      "camera_calibrated": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/dimensions-verified/suspension.webp",
+      "sha256": "cebd8313b14be6dd254cf64aa55bc2a32c64f1198dc09fa23284cd88e19646e2",
+      "bytes": 97648,
+      "in_public_repo": false,
+      "source_id": "D01",
+      "resolution_px": [
+        1000,
+        600
+      ],
+      "actually_opened_this_pass": true,
+      "view": "détail marketing oblique droit",
+      "visible": [
+        "Raccord cadre/haut et corps inférieur/bras, ressorts noir et orange sur la moto125HD."
+      ],
+      "limits": [
+        "Image partielle, pas un détail coté ni un scan de pièce."
+      ],
+      "selection": "primary_current_RDC_appearance",
+      "camera_calibrated": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/rear-sns-16/scl-B2D3957E-1BEC-48EF-8BA1-21EC0065E050.jpg",
+      "sha256": "ac8fa5c7ce6a7fd0ec6650bcc0b422e3625a13860f8ad2d711f8ad2b5ce9b905",
+      "bytes": 51280,
+      "in_public_repo": false,
+      "source_id": "scl-340-PF122005",
+      "resolution_px": [
+        800,
+        800
+      ],
+      "actually_opened_this_pass": true,
+      "view": "paire isolée en obliques, œillets montrés sous des angles différents",
+      "visible": [
+        "Ressort EXTERIEUR chromé, ressort INTERIEUR orange ; corps noir, œillets traversants et douilles visibles.",
+        "Côté corps : pattes/oreilles sombres autour de coupelle, tige et interstices partiellement visibles ; les deux pièces de la paire documentent des angles différents."
+      ],
+      "limits": [
+        "Produit adaptable PF122005 revendiqué et références remplacées PF122004/PF122005/PF122028 ; pas homologation constructeur.",
+        "Finition extérieure chromée incompatible avec cible RDC noire ; aucune preuve qu’il s’agisse du même exemplaire que la seconde image noire/orange."
+      ],
+      "selection": "related_interface_only_not_color_target",
+      "camera_calibrated": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/rear-sns-16/scl-52202F92-142D-468A-9004-25A500E5B656.jpg",
+      "sha256": "eec577d441eea422137737c4c0d5582e25a85482a8e49fdc100d1b87f86d088a",
+      "bytes": 25059,
+      "in_public_repo": false,
+      "source_id": "scl-340-PF122005",
+      "resolution_px": [
+        561,
+        571
+      ],
+      "actually_opened_this_pass": true,
+      "view": "paire isolée en vue latérale quasi frontale, axe vertical",
+      "visible": [
+        "Grand ressort noir externe, petit ressort orange interne ; tours externes plus serrés en haut que dans la zone médiane/basse.",
+        "Deux œillets à traversées métalliques, corps noir sous le siège inférieur ; supports et raccords vus de face."
+      ],
+      "limits": [
+        "561×571px seulement, détails tige/bagues limités ; même fiche présente aussi version chromée.",
+        "Pas de certification fabricant, de millésime ni de deux faces opposées d’un même exemplaire."
+      ],
+      "selection": "secondary_related_shape",
+      "camera_calibrated": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/rear-sns-16/wayc-PF122005-a.jpg",
+      "sha256": "5a0793c900bd8d3d878a1301c2f3941b5fa951408245b4f88c56949ab81dc4ab",
+      "bytes": 876353,
+      "in_public_repo": false,
+      "source_id": "wayc-PF122005",
+      "resolution_px": [
+        5120,
+        3840
+      ],
+      "actually_opened_this_pass": true,
+      "view": "planche commerciale avec pièce isolée + moto BM150",
+      "visible": [
+        "Pièce affichée à grand ressort extérieur chromé et petit ressort orange intérieur, corps noir ; moto apparentée à rayons."
+      ],
+      "limits": [
+        "Planche marketing déjà composée par vendeur, pas un dessin coté ; pas multivue du même objet ; finition non cible."
+      ],
+      "selection": "not_used_for_target_shape",
+      "camera_calibrated": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/rear-sns-16/wayc-PF122005-b.jpg",
+      "sha256": "b73ff457dcf466d69a66463713f456ff4087cb577ce877d5a4f3fd5ccac2767c",
+      "bytes": 17420,
+      "in_public_repo": false,
+      "source_id": "wayc-PF122005",
+      "resolution_px": [
+        431,
+        431
+      ],
+      "actually_opened_this_pass": true,
+      "view": "pièce isolée, même présentation que la planche",
+      "visible": [
+        "Chromé extérieur/orange intérieur."
+      ],
+      "limits": [
+        "Même présentation de produit que la planche, pas angle indépendant utile ; ne pas compter comme multivue."
+      ],
+      "selection": "duplicate_presentation_not_new_evidence",
+      "camera_calibrated": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/rear-sns-16/cookma-PF122005.png",
+      "sha256": "025677d2dfc47986b932b911cf295fa26aa0fc9180e9cbb203c1aa295575072b",
+      "bytes": 242589,
+      "in_public_repo": false,
+      "source_id": "cookma-bm150",
+      "resolution_px": [
+        1024,
+        1024
+      ],
+      "actually_opened_this_pass": true,
+      "view": "pièce isolée oblique de synthèse commerciale/photo retouchée non vérifiable",
+      "visible": [
+        "Grand ressort noir, ressort interne BLEU ; œillets métalliques, petit dispositif à crans près du corps."
+      ],
+      "limits": [
+        "Aftermarket marque Cookma, pas pièce originale certifiée ; finition bleue non cible.",
+        "Authenticité photographique non vérifiable : ne pas traiter cette image commerciale comme preuve de surface constructeur ni utiliser pour les raccords RDC."
+      ],
+      "selection": "rejected_target_variant_and_photo_certainty",
+      "camera_calibrated": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/rear-sns-16/reliable-PF122005.jpg",
+      "sha256": "6da497f42acce639b1f0d34387d9e82ae1b3db244508ebfb79e29d8262f65b97",
+      "bytes": 3894,
+      "in_public_repo": false,
+      "source_id": "reliable-PF122005",
+      "resolution_px": [
+        180,
+        137
+      ],
+      "actually_opened_this_pass": true,
+      "view": "miniature oblique de pièce isolée",
+      "visible": [
+        "Ressort brillant et deux œillets, résolution trop faible pour SNS."
+      ],
+      "limits": [
+        "180×137px, ressort interne et raccords non identifiables ; aucune cote."
+      ],
+      "selection": "rejected_insufficient_detail",
+      "camera_calibrated": false
+    }
+  ],
+  "documentary_views_opened": [
+    {
+      "private_path": "/workspace/wewa-assets/references/chassis-running-18/D04-sheet39.png",
+      "sha256": "f0d68aacc1433e74c9bbcd4a1ce4ec3714a09bc656758a2ca62485800252fe5e",
+      "bytes": 169019,
+      "in_public_repo": false,
+      "actually_opened_this_pass": true,
+      "not_to_scale": true
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/chassis-running-18/D15-sheet35.png",
+      "sha256": "5c091bdf30f1a97d49c1f1ac0b10e9ac15ce1d360d359a4d93fdcbf71e912782",
+      "bytes": 155300,
+      "in_public_repo": false,
+      "actually_opened_this_pass": true,
+      "not_to_scale": true
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/chassis-running-18/endurance-sheet03.png",
+      "sha256": "90617ecd6acedd495f28a31864abf75dc9b665bd424d2ec218b0306896b34c14",
+      "bytes": 265047,
+      "in_public_repo": false,
+      "actually_opened_this_pass": true,
+      "not_to_scale": true
+    }
+  ],
+  "measurement_matrix": [
+    {
+      "feature": "entraxe entre centres des yeux à extension libre",
+      "current_RDC_mm": null,
+      "status": "unknown_not_measured",
+      "note": "Aucune notice exacte obtenue ; longueur moto2016 / empattement1285 ne calibrent pas cette photo en orthographique."
+    },
+    {
+      "feature": "longueur L adaptable SCL",
+      "seller_value_mm": 340,
+      "status": "published_related_aftermarket_only_not_adopted",
+      "source": "scl-340-PF122005",
+      "definition": "L=340mm sans dessin de repères ni tolérances ; ne pas réinterpréter en entraxe constructeur."
+    },
+    {
+      "feature": "A×B et C×D adaptable SCL",
+      "seller_text": "L=340mm,A*B=12*21;C*D=10*21",
+      "status": "published_related_aftermarket_only_not_adopted",
+      "source": "scl-340-PF122005",
+      "definition": "A/B/C/D non illustrés ; ne pas attribuer diamètre/largeur, haut/bas ni unités propres à chaque lettre par supposition."
+    },
+    {
+      "feature": "diamètres ressorts externe/interne, diamètre fil, pas, longueur active",
+      "current_RDC_mm": null,
+      "status": "unknown",
+      "note": "Deux ressorts et évolution de pas vus ; aucun comptage complet ni métrique depuis surfaces occultées."
+    },
+    {
+      "feature": "corps/tige, sièges, douilles/caoutchouc et axes des œillets",
+      "current_RDC_mm": null,
+      "status": "unknown",
+      "note": "Traversées et sièges visibles sur apparenté, sections et géométrie interne inconnues ; boulonM10 RSA D04 ne fixe pas bague RDC."
+    },
+    {
+      "feature": "course arrière100mm apparentée D02",
+      "status": "not_part_eye_distance",
+      "note": "Déplacement de suspension apparenté ≠ longueur libre ni course réelle de la tige du composant."
+    }
+  ],
+  "fabrication_observability": [
+    {
+      "part": "deux ressorts",
+      "visible": "hélices concentriques séparées, gros noir à pas variable apparent, petit orange",
+      "hidden": "extrémités d’appui, portion derrière corps et autres spires, nombre exact/tension/internals",
+      "guard": "Ne pas fabriquer une seule hélice multicolore ou deux ressorts en série ; ne pas étendre un comptage partiel."
+    },
+    {
+      "part": "corps/tige",
+      "visible": "long cylindre noir inférieur en montage, corps central et fine zone brillante par intervalles surPF122033",
+      "hidden": "piston/valves, course de travail, joints, alésage et face arrière complète",
+      "guard": "Pas d’intérieur imaginé ni amortissement/débattement certifié ; séparation tige/corps visible seulement."
+    },
+    {
+      "part": "coupelles/réglage",
+      "visible": "assiettes noires aux extrémités ressorts, transitions et petites oreilles sur apparentésSCL",
+      "hidden": "profil360°, nombre de crans et positions réelles RDC",
+      "guard": "Ne pas transférer la molette/crans visibles sur Cookma bleu à RDC."
+    },
+    {
+      "part": "œillets/douilles",
+      "visible": "deux traversées métalliques, anneaux et bouts noirs surPF122033 ; vuesSCL éclairent profil et largeur apparente",
+      "hidden": "largeur mesurée, caoutchouc interne, déport, revers, identité parfaite LH/RH",
+      "guard": "Deux instances total vues RDC, mais valider attaches/côté/obstacles séparément avant duplication."
+    }
+  ],
+  "next_locks": [
+    "Identifier référence réellement montée et millésime/VIN cible RDC ; PF122028/PF122033 restent conditionnels.",
+    "Photos du même amortisseur déposé : deux faces latérales, vues axiales des yeux, corps/coupelles360°, fond neutre avec règle dans le plan et état libre/non comprimé précisé.",
+    "Mesurer centre-à-centre libre, largeurs/diamètres des bagues des deux yeux, déports/axes, diamètres de fil et ressorts, longueur corps, tige exposée ; noter charge et position de précharge.",
+    "Comparer liaisons LH/RH sur la moto, dégagement roue/garde-boue/chaîne/échappement et mouvement sans collision ; pas de mesure estimée déguisée en document exact."
+  ],
+  "searches": [
+    {
+      "query": "\"PF122033\" amortiguador",
+      "url": "https://html.duckduckgo.com/html/?q=%22PF122033%22%20amortiguador",
+      "archive": "/workspace/wewa-assets/references/rear-sns-16/search-2e47e2f1ec63.html",
+      "sha256": "d706176bca78358661d1dccb707e3aece54bfeaaa29ed1f52985d8a93d160332",
+      "results": [],
+      "challenge": true
+    },
+    {
+      "query": "\"PF122028\" amortiguador medidas",
+      "url": "https://html.duckduckgo.com/html/?q=%22PF122028%22%20amortiguador%20medidas",
+      "archive": "/workspace/wewa-assets/references/rear-sns-16/search-b061d3d599b6.html",
+      "sha256": "e2db07cfe912b7a9cc53ed29c74ec6f38591229c16fc1b5ef0f6a418cfc00d70",
+      "results": [
+        {
+          "title": "Amortiguador Trasero Motocicleta Boxer 150 Bajaj",
+          "url": "https://bajajmatriz.com/producto/amortiguador-trasero-motocicleta-boxer-150-bajaj"
+        },
+        {
+          "title": "Amortiguador Trasero Bajaj Boxer Bm 150 Para Tambor Original",
+          "url": "https://www.mercadolibre.com.mx/amortiguador-trasero-bajaj-boxer-bm-150-para-tambor-original/up/MLMU705263649"
+        },
+        {
+          "title": "Amortiguador Trasero Bajaj Boxer 150 Original Pf122028 Um",
+          "url": "https://articulo.mercadolibre.com.ar/MLA-897887720-amortiguador-trasero-bajaj-boxer-150-original-pf122028-um-_JM"
+        }
+      ],
+      "challenge": false
+    },
+    {
+      "query": "\"PF122005\" shock absorber",
+      "url": "https://html.duckduckgo.com/html/?q=%22PF122005%22%20shock%20absorber",
+      "archive": "/workspace/wewa-assets/references/rear-sns-16/search-6687350ac58b.html",
+      "sha256": "1a43dba411425eb1489c6b247e4d38627e613b695b0b1b7ff0dbc7bd326eb6d7",
+      "results": [
+        {
+          "title": "WAY-C BAJAJ BOXER BM150 Rear Shock Absorber PF122005",
+          "url": "https://www.way-cauto.com/products/bajaj-boxer-bm150-pf122005-rear-shock-absorber-bm150-parts.html"
+        },
+        {
+          "title": "Bajaj Shock Absorber - PF122005 - reliableautoexpo.com",
+          "url": "https://www.reliableautoexpo.com/bajaj-shock-absorber-pf122005.html"
+        },
+        {
+          "title": "PF122005 Motorcycle Shock Absorber FOR BAJAJ BOXER BM150",
+          "url": "https://www.ecer.com/corp/details-uuudgvv-p19d47x-pf122005-motorcycle-shock-absorber-for-bajaj-boxer-bm150.html"
+        },
+        {
+          "title": "Bajaj BM150 Motorcycle Rear Shock Absorber | Cookma",
+          "url": "https://www.cookmaparts.com/product-page/bajaj-bm150-motorcycle-rear-shock-absorber"
+        },
+        {
+          "title": "Rear-Shock-Absorber-340mm-Bajaj-Genuine-Rear-Suspension-Damper-PF122005 ...",
+          "url": "https://www.sclmotos.com/productview/Rear-Shock-Absorber-340mm-Bajaj-Genuine-Rear-Suspension-Damper-PF122005-for-BAJAJ-BOXER-BM-150-SCL-2014030029"
+        },
+        {
+          "title": "Motorcycle Parts Accessories Rear Shock Absorber / Fork Assy for Bajaj ...",
+          "url": "https://haypo-motorcycle.en.made-in-china.com/product/bFEaRlWDHehY/China-Motorcycle-Parts-Accessories-Rear-Shock-Absorber-Fork-Assy-for-Bajaj-Bm150-PF122005.html"
+        },
+        {
+          "title": "PF122005 REAR SHOCK ABSORBER Spare Parts FIT for Bajaj Boxer Bm150 ...",
+          "url": "https://www.alibaba.com/pla/PF122005+REAR+SHOCK+ABSORBER+spare+parts+FIT+for+bajaj+boxer+bm150+bm125+bm100+motorcycle+INDIAN+SPARE+PARTS_11000009682468.html?biz=pla&product_id=11000009682468&material=A18dc170f3a3544bc97446e769c9a7581U.jpg"
+        }
+      ],
+      "challenge": false
+    },
+    {
+      "query": "\"Boxer 125\" \"SNS\" shock absorber length",
+      "url": "https://html.duckduckgo.com/html/?q=%22Boxer%20125%22%20%22SNS%22%20shock%20absorber%20length",
+      "archive": "/workspace/wewa-assets/references/rear-sns-16/search-d0b42abc57f0.html",
+      "sha256": "73dc8ac86cf07dc1d37234d379063fcf8e66464e92c8133b948f6c2cd6c87e82",
+      "results": [],
+      "challenge": true
+    },
+    {
+      "query": "\"Boxer\" \"SNS\" \"340\"",
+      "url": "https://html.duckduckgo.com/html/?q=%22Boxer%22%20%22SNS%22%20%22340%22",
+      "archive": "/workspace/wewa-assets/references/rear-sns-16/search-9f10a58cd69c.html",
+      "sha256": "005fdf8e23c10c27d89072e41949964c52fd0d6d1774b5b00248407852473ddd",
+      "results": [],
+      "challenge": true
+    },
+    {
+      "query": "\"CT 125\" \"SNS\" shock absorber",
+      "url": "https://html.duckduckgo.com/html/?q=%22CT%20125%22%20%22SNS%22%20shock%20absorber",
+      "archive": "/workspace/wewa-assets/references/rear-sns-16/search-c90bec5ec0b0.html",
+      "sha256": "2da2014984803de43d5261b5b4f16210e4b93cfebc1eaa61c9b62c94651d3439",
+      "results": [],
+      "challenge": true
+    }
+  ],
+  "access_failures": [
+    {
+      "id": "pf122028-ml",
+      "url": "https://articulo.mercadolibre.com.ar/MLA-897887720-amortiguador-trasero-bajaj-boxer-150-original-pf122028-um-_JM",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "rights": {
+    "images_private_only": true,
+    "license": "Photos constructeur/vendeurs, droits non acquis ; consultation documentaire privée seulement. Aucun pixel ajouté au repo public ni utilisé en texture/décalque.",
+    "purchases": 0
+  },
+  "limits": {
+    "new_exact_RDC_dimensions": false,
+    "camera_calibrated": false,
+    "same_part_full_multiangle_obtained": false,
+    "new_geometry": false,
+    "new_renders": false,
+    "shared_board_catalogue_or_records_modified": false,
+    "art_accepted": false
+  },
+  "archive_logs": [
+    {
+      "private_path": "/workspace/wewa-assets/references/rear-sns-16/search-log.json",
+      "sha256": "a3774d60d9f7b9d5666139d20b8e7f75ec2a393c69a82825e7a41be9590f9a4c",
+      "bytes": 4533,
+      "in_public_repo": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/rear-sns-16/page-log.json",
+      "sha256": "d55de7bb76a3cdfc85504af4e4f4ed956393816f23f3073641edd36a7d569389",
+      "bytes": 46666,
+      "in_public_repo": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/rear-sns-16/image-log.json",
+      "sha256": "9f997590701d8c4bfe9cea26cb20956fe834a20c1ab075a65a741eb7c39f3088",
+      "bytes": 1321,
+      "in_public_repo": false
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/rear-sns-16/scl-image-log.json",
+      "sha256": "0cba34e96a3f197320964961f2826d49691a261c9d480914aacf6e1172482a78",
+      "bytes": 596,
+      "in_public_repo": false
+    }
+  ]
+}

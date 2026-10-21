@@ -1,6 +1,6 @@
 # Viva Wewa — revue des composants moto
 
-**34 composants uniques enregistrés · 34 vues Blender prouvées · aucune réception artistique.**
+**39 composants uniques enregistrés · 39 vues Blender prouvées · aucune réception artistique.**
 
 Une seule vue originale par composant, à la révision exacte de sa fiche. Les anciennes révisions et les sources seulement cataloguées ou gelées sans enregistrement central ne sont pas ajoutées. Ces rendus montrent des candidats isolés, pas le jeu ni une moto terminée.
 
@@ -10,7 +10,7 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 
 ## Les 18 groupes
 
-**5 groupes restent sans nouvelle pièce enregistrée dans cette séquence.** Le groupe 14 dispose de candidats antérieurs ci-dessous ; sa compatibilité actuelle reste à recontrôler.
+**3 groupes restent sans nouvelle pièce enregistrée dans cette séquence.** Le groupe 14 dispose de candidats antérieurs ci-dessous ; sa compatibilité actuelle reste à recontrôler.
 
 | Groupe | Composants enregistrés dans la séquence | État |
 | --- | --- | --- |
@@ -24,11 +24,11 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 | [08 · Rétroviseurs gauche/droit](#groupe-8) | 2 | Candidats partiels en revue ; groupe non terminé |
 | [09 · Contacteur et clé](#groupe-9) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [10 · Câbles et faisceau visibles](#groupe-10) | 1 | Candidats partiels en revue ; groupe non terminé |
-| [11 · Visière et entourage des compteurs](#groupe-11) | 0 | À fabriquer ; aucune pièce enregistrée |
-| [12 · Phare et clignotants avant](#groupe-12) | 0 | À fabriquer ; aucune pièce enregistrée |
+| [11 · Visière et entourage des compteurs](#groupe-11) | 1 | Candidats partiels en revue ; groupe non terminé |
+| [12 · Phare et clignotants avant](#groupe-12) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [13 · Fourche et direction](#groupe-13) | 6 | Candidats partiels en revue ; groupe non terminé |
 | [14 · Ensemble avant et compatibilité des candidats existants](#groupe-14) | Voir les préexistants ; aucun nouveau composant compté | Candidats antérieurs existants à recontrôler ; compatibilité restante |
-| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 2 | Candidats partiels en revue ; groupe non terminé |
+| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 5 | Candidats partiels en revue ; groupe non terminé |
 | [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 0 | À fabriquer ; aucune pièce enregistrée |
 | [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 6 | Candidats partiels en revue ; groupe non terminé |
 | [18 · Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière](#groupe-18) | 0 | À fabriquer ; aucune pièce enregistrée |
@@ -436,7 +436,31 @@ Périmètre prévu : départs de gaines visibles; faisceau visible et attaches d
 
 ## 11 · Visière et entourage des compteurs
 
-**À fabriquer : aucun composant enregistré pour ce groupe.** Une recherche documentaire ne compte pas comme un modèle fini.
+
+<a id="moto-instrument-visor-001"></a>
+
+### Visière fumée — coque extérieure seule
+
+`MOTO-INSTRUMENT-VISOR-001` · révision `instrument-visor-v1` · **candidat non reçu**
+
+![Visière fumée — coque extérieure seule — instrument-visor-v1](instrument-visor-v1/whole-front.png)
+
+[Image entière](instrument-visor-v1/whole-front.png) · [Preuve du rendu](instrument-visor-v1/render-report.json) · vue `whole-front`
+
+Source SHA-256 : `c790ffbba0a49f4d63e2dcf85a30cf88eb1aa8c6edd847514c041e5c0fa70f15`  
+PNG SHA-256 : `a742e58a3f8591c46f5a74699cf8484e80ed3be6fdca772f6b91afe852680f08`
+
+[Blender](../../assets-src/moto-components/instrument-visor/instrument-visor-v1.blend) · [GLB](../../assets-src/moto-components/instrument-visor/instrument-visor-v1.glb) · [README source](../../assets-src/moto-components/instrument-visor/README_v1.md) · [Revue et limites](instrument-visor-v1/README.md) · [Fiche](../workflow/records/moto-instrument-visor-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [whole-profile](instrument-visor-v1/whole-profile.png) · [preuve](instrument-visor-v1/render-report.json)
+- [whole-inside](instrument-visor-v1/whole-inside.png) · [preuve](instrument-visor-v1/render-report.json)
+- [edge-lower-right](instrument-visor-v1/edge-lower-right.png) · [preuve](instrument-visor-v1/render-report.json)
+
+</details>
 
 Périmètre prévu : visière extérieure; entourage/supports observables.
 
@@ -444,7 +468,31 @@ Périmètre prévu : visière extérieure; entourage/supports observables.
 
 ## 12 · Phare et clignotants avant
 
-**À fabriquer : aucun composant enregistré pour ce groupe.** Une recherche documentaire ne compte pas comme un modèle fini.
+
+<a id="moto-headlamp-front-protector-001"></a>
+
+### Phare — bandeau et deux arceaux avant isolés
+
+`MOTO-HEADLAMP-FRONT-PROTECTOR-001` · révision `headlamp-front-protector-v2` · **candidat non reçu**
+
+![Phare — bandeau et deux arceaux avant isolés — headlamp-front-protector-v2](headlamp-front-protector-v2/whole-front.png)
+
+[Image entière](headlamp-front-protector-v2/whole-front.png) · [Preuve du rendu](headlamp-front-protector-v2/render-report.json) · vue `whole-front`
+
+Source SHA-256 : `b9a7e64ecc08ed9de44e2bf5e411fb76fabf2be40d43d9c405f4b7160c96c9fd`  
+PNG SHA-256 : `1887e12779ae9b084f6e2c976a1b20be9809f5868f73f7b920795d9ffbf5e9f5`
+
+[Blender](../../assets-src/moto-components/headlamp/headlamp-front-protector-v2.blend) · [GLB](../../assets-src/moto-components/headlamp/headlamp-front-protector-v2.glb) · [README source](../../assets-src/moto-components/headlamp/README-protector-v2.md) · [Revue et limites](headlamp-front-protector-v2/README.md) · [Fiche](../workflow/records/moto-headlamp-front-protector-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [whole-quarter](headlamp-front-protector-v2/whole-quarter.png) · [preuve](headlamp-front-protector-v2/render-report.json)
+- [whole-back](headlamp-front-protector-v2/whole-back.png) · [preuve](headlamp-front-protector-v2/render-report.json)
+- [rod-band-junction](headlamp-front-protector-v2/rod-band-junction.png) · [preuve](headlamp-front-protector-v2/render-report.json)
+
+</details>
 
 Périmètre prévu : coque du phare; réflecteur et optique; clignotant avant gauche; clignotant avant droit.
 
@@ -666,6 +714,82 @@ PNG SHA-256 : `3e979591d644bb7259fb85cd8dc0803c8ecfa524bbe556c2a97c27e3b0fa69ca`
 - [reverse](frame-front-downmember-v1/reverse.png) · [preuve](frame-front-downmember-v1/render-report.json)
 - [side-openings](frame-front-downmember-v1/side-openings.png) · [preuve](frame-front-downmember-v1/render-report.json)
 - [lower-opening](frame-front-downmember-v1/lower-opening.png) · [preuve](frame-front-downmember-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-frame-backbone-001"></a>
+
+### Cadre — membre supérieur avant v2, normales corrigées
+
+`MOTO-FRAME-BACKBONE-001` · révision `frame-front-backbone-v2` · **candidat non reçu**
+
+![Cadre — membre supérieur avant v2, normales corrigées — frame-front-backbone-v2](frame-front-backbone-v2/quarter.png)
+
+[Image entière](frame-front-backbone-v2/quarter.png) · [Preuve du rendu](frame-front-backbone-v2/render-report.json) · vue `quarter`
+
+Source SHA-256 : `cf2d2c141a501eb633eba9730ee926122db1fb90bc4a544097e6a2233a05f070`  
+PNG SHA-256 : `344b36dcd7ad9b08835a9546d1054c4ff92f9fe5464c163aae5a1e193322ad91`
+
+[Blender](../../assets-src/moto-components/frame/front-backbone-v2/frame-front-backbone-v2.blend) · [GLB](../../assets-src/moto-components/frame/front-backbone-v2/frame-front-backbone-v2-inspection.glb) · [README source](../../assets-src/moto-components/frame/front-backbone-v2/README.md) · [Revue et limites](frame-front-backbone-v2/README.md) · [Fiche](../workflow/records/moto-frame-backbone-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [reverse](frame-front-backbone-v2/reverse.png) · [preuve](frame-front-backbone-v2/render-report.json)
+- [side-features](frame-front-backbone-v2/side-features.png) · [preuve](frame-front-backbone-v2/render-report.json)
+- [front-opening](frame-front-backbone-v2/front-opening.png) · [preuve](frame-front-backbone-v2/render-report.json)
+
+</details>
+
+
+<a id="moto-frame-head-gusset-001"></a>
+
+### Cadre — gousset de colonne, face documentée seule
+
+`MOTO-FRAME-HEAD-GUSSET-001` · révision `frame-head-gusset-v1` · **candidat non reçu**
+
+![Cadre — gousset de colonne, face documentée seule — frame-head-gusset-v1](frame-head-gusset-v1/quarter.png)
+
+[Image entière](frame-head-gusset-v1/quarter.png) · [Preuve du rendu](frame-head-gusset-v1/render-report.json) · vue `quarter`
+
+Source SHA-256 : `c26005741e3ff96beb5b7582c477c5e1f7b22be2c129c77c7044a1c2b4bae145`  
+PNG SHA-256 : `0a472171a2972e42853844db6d40240a2ee397fabd3b578ff39a2425df3c0333`
+
+[Blender](../../assets-src/moto-components/frame/head-gusset/frame-head-gusset-v1.blend) · [GLB](../../assets-src/moto-components/frame/head-gusset/frame-head-gusset-inspection.glb) · [README source](../../assets-src/moto-components/frame/head-gusset/README.md) · [Revue et limites](frame-head-gusset-v1/README.md) · [Fiche](../workflow/records/moto-frame-head-gusset-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [reverse](frame-head-gusset-v1/reverse.png) · [preuve](frame-head-gusset-v1/render-report.json)
+- [formed-opening](frame-head-gusset-v1/formed-opening.png) · [preuve](frame-head-gusset-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-frame-lower-cradle-rail-001"></a>
+
+### Cadre — un longeron inférieur de berceau
+
+`MOTO-FRAME-LOWER-CRADLE-RAIL-001` · révision `frame-lower-cradle-rail-v1` · **candidat non reçu**
+
+![Cadre — un longeron inférieur de berceau — frame-lower-cradle-rail-v1](frame-lower-cradle-rail-v1/quarter.png)
+
+[Image entière](frame-lower-cradle-rail-v1/quarter.png) · [Preuve du rendu](frame-lower-cradle-rail-v1/render-report.json) · vue `quarter`
+
+Source SHA-256 : `b2646434f124396701f7eb9508cc5f59cfe2e846b1ea84c54af20af56f5b42f3`  
+PNG SHA-256 : `3738f3ef12cd52de61dd1b63248c463458f26a87d7d1f8277dff994e7e6ed3b6`
+
+[Blender](../../assets-src/moto-components/frame/lower-cradle-rail/frame-lower-cradle-rail-v1.blend) · [GLB](../../assets-src/moto-components/frame/lower-cradle-rail/frame-lower-cradle-rail-inspection.glb) · [README source](../../assets-src/moto-components/frame/lower-cradle-rail/README.md) · [Revue et limites](frame-lower-cradle-rail-v1/README.md) · [Fiche](../workflow/records/moto-frame-lower-cradle-rail-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [reverse](frame-lower-cradle-rail-v1/reverse.png) · [preuve](frame-lower-cradle-rail-v1/render-report.json)
+- [front-bend](frame-lower-cradle-rail-v1/front-bend.png) · [preuve](frame-lower-cradle-rail-v1/render-report.json)
 
 </details>
 

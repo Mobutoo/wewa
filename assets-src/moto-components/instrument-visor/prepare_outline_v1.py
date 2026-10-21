@@ -1,0 +1,10 @@
+"""Original smooth outline from manually read related loose-panel silhouette.
+No orthographic calibration or physical measurement is implied.
+"""
+import json,hashlib
+from pathlib import Path
+import numpy as np
+from scipy.interpolate import splprep,splev
+ROOT=Path('/workspace/wewa-github');HERE=Path(__file__).resolve().parent;native=ROOT/'creative/research/instrument-visor/bare-front-native-contour.json';j=json.loads(native.read_text());points=np.array(j['points_px']+[j['points_px'][0]],dtype=float);tck,u=splprep(points.T,s=8,per=True,k=3);pred=np.array(splev(u,tck)).T;error=np.linalg.norm(pred-points,axis=1);assert error.max()<3;curve=np.array(splev(np.linspace(0,1,1024,endpoint=False),tck)).T;lo=curve.min(axis=0);hi=curve.max(axis=0);cx=(lo[0]+hi[0])/2;planar=[[(float(x)-cx)/(hi[0]-lo[0])*.250,(hi[1]-float(y))/(hi[1]-lo[1])*.285]for x,y in curve];signed=sum(planar[i-1][0]*p[1]-p[0]*planar[i-1][1]for i,p in enumerate(planar))/2
+if signed<0:planar.reverse()
+report={'schema':1,'native_annotation_path':str(native.relative_to(ROOT)),'native_annotation_sha256':hashlib.sha256(native.read_bytes()).hexdigest(),'curve_type':'Periodic cubic B-spline C2; manually observed sparse contour, smoothing residual bound checked','degree':3,'knots':tck[0].tolist(),'control_points_native_px':np.array(tck[1]).T.tolist(),'smoothing_sum_squared_parameter':8,'sampled_native_curve_px':curve.tolist(),'native_control_residual_max_px':float(error.max()),'native_control_residual_RMS_px':float(np.sqrt(np.mean(error**2))),'native_working_bound_px':3,'physical_scaling':'Assigned working width250mm and planar/developed height285mm. Native pixels are not measuredmm; photo camera pose and shape depth remain unknown.','working_planar_outline_m':planar,'working_planar_bounds_m':{'width':.250,'height':.285},'scope':'Source curve construction, no surface or physical calibration yet','art_accepted':False};(HERE/'outline-v1.json').write_text(json.dumps(report,indent=2)+'\n');print('VISOR_OUTLINE_C2',len(planar),error.max(),signed)

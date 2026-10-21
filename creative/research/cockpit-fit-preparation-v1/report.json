@@ -1,0 +1,178 @@
+{
+  "schema": "wewa.cockpit-fit-preparation.v1",
+  "snapshot_utc": "2026-10-21T03:11:17.859402+00:00",
+  "scope": "Independent source-frame preparation and selected current-contact audit; no geometry fabrication, placements, source/export writes or renders.",
+  "source_frame": "Blender+XphysicalLEFT,−XphysicalRIGHT,+Ytowardrider,−Yforward,Zup; originmiddleofcentralclampedbar; metres. glTF=(x,z,−y).",
+  "shared_source_import_rule": "Preserve the complete stored hierarchy/matrices or import each currentGLB once with identityplacement. Do not center each part or reapply the construction origin; stop importedanimations before a rest review.",
+  "same_frame_current_sources": [
+    {"asset": "handlebar", "source": "assets-src/moto-components/handlebar/handlebar-v1.blend", "source_sha256": "1385ccc667f30681e334ce96aff71d2214794238c5b31e0a1fd4b75b8ad6652a", "export": {"path": "assets-src/moto-components/handlebar/handlebar-inspection.glb", "sha256": "2876b09b2a86cf7bdc28599e9c4c04f9b2909a5bb073b86430c2db5058cfc310"}, "saved_frame": 1, "scene_scale_length": 1.0, "world_bounds_Blender_m": {"min": [-0.3443794846534729, -0.011167616583406925, -0.011167616583406925], "max": [0.3443794846534729, 0.0950469821691513, 0.1161000058054924]}, "placement_status": "already_in_shared_candidate_frame_not_OEM_fit", "anchor_or_placement_note": "Origine au milieu du tube central ; bouts ±(.340,.085,.105)m."},
+    {"asset": "grips-v3", "source": "assets-src/moto-components/handlebar-grips/handlebar-grips-v3.blend", "source_sha256": "8ba577ea4078850569394d7d17e6e6d868e590bb287b329da3c0600706351381", "export": {"path": "assets-src/moto-components/handlebar-grips/handlebar-grips-v3-inspection.glb", "sha256": "b64eb5d02d4264f9e395d1da02b3baaf4140edf5771b27e78b0736273e8db431"}, "saved_frame": 1, "scene_scale_length": 1.0, "world_bounds_Blender_m": {"min": [-0.3484853208065033, 0.016764912754297256, 0.0819999948143959], "max": [0.3484853208065033, 0.10020775347948074, 0.12799999117851257]}, "placement_status": "already_in_shared_candidate_frame_not_OEM_fit", "anchor_or_placement_note": "Les deux volumes ont des matrices monde identité mais leurs sommets sont déjà aux extrémités du guidon ; ne pas les retranslater."},
+    {"asset": "clamps", "source": "assets-src/moto-components/handlebar-clamps/handlebar-clamps-v1.blend", "source_sha256": "416fd21980fe4425628bf7414607c8c37c12dea4f70965e0bac67c721d7e14c5", "export": {"path": "assets-src/moto-components/handlebar-clamps/handlebar-clamps-inspection.glb", "sha256": "7efa21103c06032dda92c66820e2989dfddb795fda6497c4676ea707a64de87d"}, "saved_frame": 1, "scene_scale_length": 1.0, "world_bounds_Blender_m": {"min": [-0.058000002056360245, -0.030146485194563866, -0.057999998331069946], "max": [0.058000002056360245, 0.030146483331918716, 0.02225000038743019]}, "placement_status": "already_in_shared_candidate_frame_not_OEM_fit", "anchor_or_placement_note": "Unités aux centresX±.045m,Y0,Z0 ; même repère que guidon, contacts de serrage encore estimés."},
+    {"asset": "throttle", "source": "assets-src/moto-components/throttle-control/throttle-control-v1.blend", "source_sha256": "1c0747975fbdcd2ada2140f2461ff359940967aa1a3036e2b7e0a3d24221237f", "export": {"path": "assets-src/moto-components/throttle-control/throttle-control-inspection.glb", "sha256": "ccb6b814a59e00b63647ec1268f31bbb1dd91225a44f572a63c792f4a0946a2c"}, "saved_frame": 1, "scene_scale_length": 1.0, "world_bounds_Blender_m": {"min": [-0.3431014914018481, 0.010485602422258496, 0.0720000003543074], "max": [-0.21363699731411256, 0.09552202548067038, 0.12349999918799741]}, "placement_status": "already_in_shared_candidate_frame_not_OEM_fit", "anchor_or_placement_note": "DatumRH (−.340,.085,.105)m et axe entrant(+.916696,−.399585,0)."},
+    {"asset": "switchgear-left-v3", "source": "assets-src/moto-components/switchgear-left/switchgear-left-v3.blend", "source_sha256": "a8cde7758ea9c96f2eac7c2d7ba817b4a353935a0a62ac2d53d0003e8e9bdeea", "export": {"path": "assets-src/moto-components/switchgear-left/switchgear-left-v3-inspection.glb", "sha256": "25fe15ea6d6d5aeebf64300f6428b683596d9f3fbff0f3b236ee9c5177059280"}, "saved_frame": 1, "scene_scale_length": 1.0, "world_bounds_Blender_m": {"min": [0.17847149074077606, -0.00046703964471817017, 0.06224999576807022], "max": [0.23693996667861938, 0.06342160701751709, 0.12700000405311584]}, "placement_status": "already_in_shared_candidate_frame_not_OEM_fit", "anchor_or_placement_note": "Coques déjà autour du tubeLH ; plage axiale q.121–.166m."},
+    {"asset": "switchgear-right", "source": "assets-src/moto-components/switchgear-right/switchgear-right-v1.blend", "source_sha256": "84182072eb72607cf3b9a029cf4e09964f8b4a86df612bfed912d0d666e9087c", "export": {"path": "assets-src/moto-components/switchgear-right/switchgear-right-inspection.glb", "sha256": "33e78f6f5f8bdb9745a6af10701e6d610c12fd94603c61afa37362bd57714e4d"}, "saved_frame": 1, "scene_scale_length": 1.0, "world_bounds_Blender_m": {"min": [-0.23804567754268646, -0.0032196305692195892, 0.0754999965429306], "max": [-0.17882664501667023, 0.058624424040317535, 0.13599999248981476]}, "placement_status": "already_in_shared_candidate_frame_not_OEM_fit", "anchor_or_placement_note": "CoquesRH et cavité du rotor séparé déjà placées ; ne pas recréer le guide ou la bobine."},
+    {"asset": "clutch-control", "source": "assets-src/moto-components/clutch-control/clutch-control-v2.blend", "source_sha256": "586b41d08fd0cb8a9caad66e7cbe83af1592aad42e6def823135f99b6f200059", "export": {"path": "assets-src/moto-components/clutch-control/clutch-control-v2-inspection.glb", "sha256": "bfdfa09f644805e30d653c10d741b937b0703b5cd5e58d8f86fab0d02dec3f7e"}, "saved_frame": 1, "scene_scale_length": 1.0, "world_bounds_Blender_m": {"min": [0.1661754585802555, -0.05489015579223633, 0.08749999664723873], "max": [0.3682238608598709, 0.037324462085962296, 0.1239999970421195]}, "placement_status": "already_in_shared_candidate_frame_not_OEM_fit", "anchor_or_placement_note": "PivotLH (.222310,−.015390,.109)m ; support et sortie de gaine déjà au repos dans ce repère."},
+    {"asset": "front-brake-control", "source": "assets-src/moto-components/front-brake-control/front-brake-control-v2.blend", "source_sha256": "6ab2f1ecb322f92a1f26643a149e7b2b93691dc91d3fb2e965c8b8f55733b2e1", "export": {"path": "assets-src/moto-components/front-brake-control/front-brake-control-v2-inspection.glb", "sha256": "639054507fdc0a43b5c6c31377c57e8b199c20469d2ae731716331d105da11d7"}, "saved_frame": 1, "scene_scale_length": 1.0, "world_bounds_Blender_m": {"min": [-0.3581574112176895, -0.05489015579223633, 0.08749999664723873], "max": [-0.1661754585802555, 0.03594303876161575, 0.1239999970421195]}, "placement_status": "already_in_shared_candidate_frame_not_OEM_fit", "anchor_or_placement_note": "PivotRH (−.222310,−.015390,.109)m ; support et sortie de gaine déjà placés."},
+    {"asset": "mirror-left-v2", "source": "assets-src/moto-components/mirrors/mirror-left-v2.blend", "source_sha256": "7725731e869b6edeea744965054518659eeb6355f6acc670718738a8144b1a30", "export": {"path": "assets-src/moto-components/mirrors/mirror-left-v2.glb", "sha256": "be1b5bcf2438cee25fb097f7bca96a6a8ae231d26500717638046af4becabcea"}, "saved_frame": 1, "scene_scale_length": 1.0, "world_bounds_Blender_m": {"min": [0.18015116453170776, -0.09905381500720978, 0.11400000005960464], "max": [0.4056043028831482, 0.00025556329637765884, 0.33151280879974365]}, "placement_status": "already_in_shared_candidate_frame_not_OEM_fit", "anchor_or_placement_note": "Monté numériquement sur le bossage du support embrayagev2, axe(.188651,−.008244,.118)m ; hypothèse de montage liée."},
+    {"asset": "mirror-right-v3", "source": "assets-src/moto-components/mirrors/mirror-right-v3.blend", "source_sha256": "4be6e74518d7e0a6baccfc66c136cba148882183bf1d6020ac329ed9c0c32c60", "export": {"path": "assets-src/moto-components/mirrors/mirror-right-v3.glb", "sha256": "ca5ee9189efcbae7f663ad6e398661c638570a0b31019af14bafbff27e28210e"}, "saved_frame": 1, "scene_scale_length": 1.0, "world_bounds_Blender_m": {"min": [-0.4049125015735626, -0.09905381500720978, 0.11400000005960464], "max": [-0.18015116453170776, 0.00025556329637765884, 0.3312523663043976]}, "placement_status": "already_in_shared_candidate_frame_not_OEM_fit", "anchor_or_placement_note": "Monté numériquement sur le bossage du support freinv2, axe(−.188651,−.008244,.118)m ; hypothèse de montage liée."},
+    {"asset": "ignition-lock", "source": "assets-src/moto-components/ignition-lock/ignition-lock-v1.blend", "source_sha256": "63447081802d85b8d9b61463f59aea6cc3db8aa72380ee9f66a960113707c4ef", "export": {"path": "assets-src/moto-components/ignition-lock/ignition-lock-inspection.glb", "sha256": "f88f11073be723104097e419162863a892236b802e6e1b16367e5eeb218a54cb"}, "saved_frame": 1, "scene_scale_length": 1.0, "world_bounds_Blender_m": {"min": [-0.025999996069642147, -0.11786012400963022, -0.026999297433298874], "max": [0.026000005522212623, -0.006892643670854411, 0.04993302194680163]}, "placement_status": "already_in_shared_candidate_frame_not_OEM_fit", "anchor_or_placement_note": "Datum(0,−.055,.019)m, EulerXYZ(58,0,180)° conditionnel sous les compteurs."},
+    {"asset": "cockpit-cables", "source": "assets-src/moto-components/cockpit-cables/cockpit-cables-v1.blend", "source_sha256": "f24672df90a68f45b4033a94c5ea03f34dd67b834e10454d2953287a55456f15", "export": {"path": "assets-src/moto-components/cockpit-cables/cockpit-cables-inspection.glb", "sha256": "6663c8825ab32ae796af5393a9620384d69ed12e5d6cbb732e1cc2a6feef5861"}, "saved_frame": 1, "scene_scale_length": 1.0, "world_bounds_Blender_m": {"min": [-0.0021386451553553343, -0.3169668912887573, -0.7511700987815857], "max": [0.11330000311136246, -0.10736089944839478, 0.029181379824876785]}, "placement_status": "already_in_shared_candidate_frame_not_OEM_fit", "anchor_or_placement_note": "Trois tronçons déjà dans le repère guidon ; coupes libres et affectations non résolues."},
+    {"asset": "instruments-v3", "source": "assets-src/moto-components/instruments/instruments-v3.blend", "source_sha256": "2ac37623a2e8df558373233228a6b936b143b6ff282e8ab6e70f08e27675e7da", "export": {"path": "assets-src/moto-components/instruments/instruments-v3-inspection.glb", "sha256": "d49d08333d727dbd4441c70976a45d2be07db010674d52372fa26191d4f26252"}, "saved_frame": 1, "scene_scale_length": 1.0, "world_bounds_Blender_m": {"min": [-0.11400000191307263, -0.16158556278810055, 0.017867076550835193], "max": [0.11400000072685308, -0.06090690399112809, 0.14303102380800814]}, "placement_status": "already_in_shared_candidate_frame_not_OEM_fit", "anchor_or_placement_note": "INSTRUMENT_CLUSTER_MOUNT : translation(0,−.12,.075)m, EulerXYZ(58,0,180)° ; bossages et fixations physiques non raccordés au support isolé."},
+    {"asset": "instrument-visor", "source": "assets-src/moto-components/instrument-visor/instrument-visor-v1.blend", "source_sha256": "c790ffbba0a49f4d63e2dcf85a30cf88eb1aa8c6edd847514c041e5c0fa70f15", "export": {"path": "assets-src/moto-components/instrument-visor/instrument-visor-v1.glb", "sha256": "67a3121a691bd29cac126c0fac5c07fea929680faad5f27ec250646aafb06cab"}, "saved_frame": 1, "scene_scale_length": 1.0, "world_bounds_Blender_m": {"min": [-0.12557454407215118, -0.2856447100639343, -0.021725447848439217], "max": [0.12557454407215118, -0.09318946301937103, 0.21252653002738953]}, "placement_status": "already_in_shared_candidate_frame_not_OEM_fit", "anchor_or_placement_note": "La géométrie est déjà construite dans le repère cockpit depuis l’ancre(0,−.285,0)m ; root identité, ne pas appliquer une seconde translation."}
+  ],
+  "isolated_sources_not_installable_as_is": [
+    {"asset": "bracket-isolated", "source": "assets-src/moto-components/instrument-bracket/instrument-bracket-v2.blend", "source_sha256": "52d89cdeb675610ef4f89d8ea10a17c95f79824c68aa8953d6c503b5ce245759", "world_bounds_as_is_m": {"min": [-0.06846205145120621, -0.13008879125118256, -0.012500000186264515], "max": [0.06532920897006989, 0.01359911821782589, 0.00930000003427267]}, "why_identity_is_not_an_installation": "Origine entre les deux têtes, planXY face+Z. Une pose cockpit est seulement suggérée dans les paramètres : applied:false, back_offset_local_z:null. Écart de travail108mm entre têtes contre128mm entre axes de pods, correspondance des fixations non prouvée.", "safe_review_policy": "Keep separate or omit from rider review; no invented offset/rotation/duplication to imply fit."},
+    {"asset": "upper-yoke-isolated", "source": "assets-src/moto-components/steering-triples/upper/steering-upper-v1.blend", "source_sha256": "ba2bf24d27f3ef2092d3997823f2c792cec4af268aa527ee4730ba23f064e47f", "world_bounds_as_is_m": {"min": [-0.10758719593286514, -0.024779219180345535, -0.004699999932199717], "max": [0.11089063435792923, 0.0935748741030693, 0.0]}, "why_identity_is_not_an_installation": "Origine au grand trou, XY de photo ; face+Z. Pose installée, fonction des trous et empilement inconnus.", "safe_review_policy": "Keep separate or omit from rider review; no invented offset/rotation/duplication to imply fit."},
+    {"asset": "lower-yoke-isolated", "source": "assets-src/moto-components/steering-triples/lower/steering-lower-v1.blend", "source_sha256": "c49ccb6cf81383736a895f611393a0f30adb318103d88e4f3beb8ca90ef31866", "world_bounds_as_is_m": {"min": [-0.10899999737739563, -0.0215000007301569, -0.008500001393258572], "max": [0.10899999737739563, 0.06800000369548798, 0.01600000075995922]}, "why_identity_is_not_an_installation": "Origine au milieu des axes de fourche ; XYlocal, siège centralY+.045m. Pas de translation/angle dans le repère guidon ; colonne/vis/roulements exclus.", "safe_review_policy": "Keep separate or omit from rider review; no invented offset/rotation/duplication to imply fit."},
+    {"asset": "nyloc-isolated", "source": "assets-src/moto-components/handlebar-clamps/mounting-nyloc-v3/handlebar-mount-nyloc-v3.blend", "source_sha256": "c82851ea5e7434de3477c9f1c91eb227f37729b946499ee688c0f825278c487e", "world_bounds_as_is_m": {"min": [-0.008500000461935997, -0.009784014895558357, 0.0], "max": [0.008500000461935997, 0.009784014895558357, 0.009999999776482582]}, "why_identity_is_not_an_installation": "Un écrou, axe+Z, origine face d’appui basse ; pas de pose montée. Le pas de famille1.5mm et M10 lié ne qualifient pas le goujon.", "safe_review_policy": "Keep separate or omit from rider review; no invented offset/rotation/duplication to imply fit."},
+    {"asset": "washer-isolated", "source": "assets-src/moto-components/handlebar-clamps/mounting-upper-washer/handlebar-mount-upper-washer-v1.blend", "source_sha256": "9486e5526cb7d126f17499bde267f880d3cf59fecc371fe76b8ba048a4a7d7ee", "world_bounds_as_is_m": {"min": [-0.014999999664723873, -0.014999999664723873, 0.0], "max": [0.014999999664723873, 0.014999999664723873, 0.0020000000949949026]}, "why_identity_is_not_an_installation": "Une rondelle, axe+Z, origine faceinférieure ; pose/contact et orientation montée inconnus. Les DS181008/9/10 manquants ne sont pas remplacés par cette seule rondelle.", "safe_review_policy": "Keep separate or omit from rider review; no invented offset/rotation/duplication to imply fit."}
+  ],
+  "explicit_candidate_links": [
+    {"kind": "mirror_to_current_perch", "mirror": "mirror-left-v2", "perch": "clutch-control", "linked_source_hash_matches_current": true, "shared_axis_point_Blender_m": [0.1886511594057083, -0.008244437165558338, 0.11800000071525574], "perch_bore_working_diameter_m": 0.0088, "stud_working_major_diameter_m": 0.008, "thread_mating_or_OEM_fit_certified": false},
+    {"kind": "mirror_to_current_perch", "mirror": "mirror-right-v3", "perch": "front-brake-control", "linked_source_hash_matches_current": true, "shared_axis_point_Blender_m": [-0.1886511594057083, -0.008244437165558338, 0.11800000071525574], "perch_bore_working_diameter_m": 0.0088, "stud_working_major_diameter_m": 0.008, "thread_mating_or_OEM_fit_certified": false},
+    {"kind": "common_tube_datums", "assets": ["handlebar", "grips-v3", "clamps", "throttle", "switchgear-left-v3", "switchgear-right", "clutch-control", "front-brake-control"], "bore_and_tube_values_m": {"bar_radius": 0.0111, "bar_knurl_max_radius": 0.01118, "clamps_bore_radius": 0.01125, "LH_grip_bore_radius": 0.0112, "RH_grip_bore_radius": 0.0127, "throttle_outer_radius": 0.0125}, "note": "Positive working radial spaces, not measured interference/serrage or tolerance certification."},
+    {"kind": "review_only_functional_binding", "assets": ["grips-v3", "throttle"], "actual_existing_binding": {"child": ["grips-v3", "Right rubber grip - editable candidate"], "parent": ["throttle", "Throttle sleeve and cable spool - moving candidate"], "axis_source": [-1, 0, 0], "test_degrees": 50, "fixed": [["throttle", "Throttle fixed hollow cable guide - estimated"], ["grips-v3", "Left rubber grip - editable candidate"]], "rest_world_matrix_delta": 2.9802322387695312e-08, "actual_attached_vertex_travel_m": 0.011988006396329362, "fixed_world_matrix_delta": 0.0, "mechanical_fit_certified": false}, "note": "Source files are separate. Root already bound only the copiedRHgrip to the copiedrotor preserving world matrices; no new binding assigned by this audit."},
+    {"kind": "instrument_visor_relationship", "assets": ["instruments-v3", "instrument-visor"], "evidence": "creative/reviews/instrument-visor-v1/instrument-interface-check.json", "exact_current_source_hashes_match": true, "sampled_surface_crossings": 0, "minimum_vertex_sample_distance_reported_m": 0.005912097170948982, "note": "Sample distance is not exact minimum clearance. Does not receive fixing/support interfaces."}
+  ],
+  "actual_free_sheath_ends": [
+    {"mesh": "Visible descending front sheath A - function unknown - free end", "actual_terminal_ring_centres_Blender_world_m": [[0.10499999672174454, -0.16994594037532806, -0.31861260533332825], [0.10499999672174454, -0.31581079959869385, -0.7307387590408325]], "ring_mean_vs_frozen_build_record_max_difference_m": 0.0, "factory_terminal_or_connector": false, "route_function_certified": false},
+    {"mesh": "Visible descending front sheath B - function unknown - free end", "actual_terminal_ring_centres_Blender_world_m": [[0.11100000143051147, -0.15142342448234558, -0.31861260533332825], [0.11100000143051147, -0.2833963930606842, -0.7492612600326538]], "ring_mean_vs_frozen_build_record_max_difference_m": 0.0, "factory_terminal_or_connector": false, "route_function_certified": false},
+    {"mesh": "Visible ignition pigtail loop - connector omitted - free end", "actual_terminal_ring_centres_Blender_world_m": [[4.82383810673781e-09, -0.11022946238517761, -0.01904873736202717], [0.0060000051744282246, -0.11139120906591415, 0.026213282719254494]], "ring_mean_vs_frozen_build_record_max_difference_m": 4.4747539007516934e-12, "factory_terminal_or_connector": false, "route_function_certified": false}
+  ],
+  "fixed_outlets_vs_moving_nipple_seats": [
+    {"asset": "clutch-control", "fixed_sheath_outlet_Blender_world_m": [0.1922004222869873, -0.05142316594719887, 0.10899999737739563], "outward_axis_Blender": [-0.9166959524154663, -0.39958542585372925, 0.0], "moving_nipple_seat_at_rest_Blender_world_m": [0.2425011694431305, -0.0316789448261261, 0.10899999737739563], "note": "Fixed sheath outlet and moving nipple seat are different points; do not connect a sheath to the moving nipple datum."},
+    {"asset": "front-brake-control", "fixed_sheath_outlet_Blender_world_m": [-0.1922004222869873, -0.05142316594719887, 0.10899999737739563], "outward_axis_Blender": [0.9166959524154663, -0.39958542585372925, 0.0], "moving_nipple_seat_at_rest_Blender_world_m": [-0.2425011694431305, -0.0316789448261261, 0.10899999737739563], "note": "Fixed sheath outlet and moving nipple seat are different points; do not connect a sheath to the moving nipple datum."}
+  ],
+  "source_to_export_bounds_checks": [
+    {"asset": "handlebar", "max_bound_coordinate_difference_m": 0.0},
+    {"asset": "grips-v3", "max_bound_coordinate_difference_m": 0.0},
+    {"asset": "clamps", "max_bound_coordinate_difference_m": 0.0},
+    {"asset": "throttle", "max_bound_coordinate_difference_m": 7.245426356106144e-09},
+    {"asset": "switchgear-left-v3", "max_bound_coordinate_difference_m": 0.0},
+    {"asset": "switchgear-right", "max_bound_coordinate_difference_m": 0.0},
+    {"asset": "clutch-control", "max_bound_coordinate_difference_m": 0.0},
+    {"asset": "front-brake-control", "max_bound_coordinate_difference_m": 0.0},
+    {"asset": "mirror-left-v2", "max_bound_coordinate_difference_m": 0.0},
+    {"asset": "mirror-right-v3", "max_bound_coordinate_difference_m": 0.0},
+    {"asset": "ignition-lock", "max_bound_coordinate_difference_m": 5.561695735900596e-09},
+    {"asset": "cockpit-cables", "max_bound_coordinate_difference_m": 0.0},
+    {"asset": "instruments-v3", "max_bound_coordinate_difference_m": 8.318053107414514e-09},
+    {"asset": "instrument-visor", "max_bound_coordinate_difference_m": 0.0}
+  ],
+  "max_source_export_bound_difference_m": 8.318053107414514e-09,
+  "current_contact_result": {
+    "assembly_source_sha256": "323b3443f63868fbbc3bb8ca2567e4b7a31bf868126c3954ac101ff3007faa29",
+    "source": "assets-src/moto-components/cockpit-current-review-v1/cockpit-current-review-v1.blend",
+    "selected_checks": 177,
+    "zero_checks": 176,
+    "nonzero_checks": [
+      {"group": "pigtail_current_instruments_visor_rest", "a": "M18 [cockpit-cables] Visible ignition pigtail loop - connector ", "b": "M18 [instruments-v3] Shaped central cluster cover", "pose": "rest", "actual_triangle_surface_crossings": 32}
+    ],
+    "per_group_count": {
+      "clutch-control_current_switch_rest": 30,
+      "clutch-control_current_switch_motion": 20,
+      "front-brake-control_current_switch_rest": 24,
+      "front-brake-control_current_switch_motion": 16,
+      "left_grip_v3_controls_rest": 11,
+      "right_grip_v3_controls_motion": 66,
+      "pigtail_current_instruments_visor_rest": 10
+    },
+    "full_cockpit_fit_certified": false
+  },
+  "historical_interface_reports_not_global_receipts": [
+    {"path": "creative/reviews/switchgear-left-v1/clutch-interface-check.json", "sha256": "5d5dbb599a0e411009cae15ea7bf5c55f9f63012964f8a8659a6142ba5040100", "note": "Historical surface tests are not a current whole-cockpit fit receipt.", "hash_comparisons": [{"field": "switch_source_sha256", "current_asset": "switchgear-left-v3", "matches_current_source": false}, {"field": "clutch_source_sha256", "current_asset": "clutch-control", "matches_current_source": false}]},
+    {"path": "creative/reviews/switchgear-right-v1/brake-interface-check.json", "sha256": "7b3bf01dbe6d35e60eb151c9b8bb245e61c16818b85ecf6d3ac9de1f4d85057a", "note": "Historical surface tests are not a current whole-cockpit fit receipt.", "hash_comparisons": [{"field": "switch_source_sha256", "current_asset": "switchgear-right", "matches_current_source": true}, {"field": "brake_source_sha256", "current_asset": "front-brake-control", "matches_current_source": false}]},
+    {"path": "creative/reviews/switchgear-left-v2/grips-v3-interface-check.json", "sha256": "c7ea7cef78d9eb409320c213c7b3048afd06cef3b122c8066e8b4b973e5fe5ab", "note": "Historical surface tests are not a current whole-cockpit fit receipt. LH side tests switchv2 hash657ecbdb, not v3a8cde775; body geometry largely protected but glyph source changed."}
+  ],
+  "findings": [
+    {"id": "FIT-01", "priority": "concrete_current_interference", "finding": "The free-end area of the ignitionpigtail crosses Shaped central cluster cover in the current14-source review copy:32triangle pairs, independently localized by segment/triangle intersections.", "evidence": "pigtail-crossing-localization.json", "intersection_bounds_Blender_world_m": {"min": [0.006800986360758543, -0.10993970185518265, 0.026473185047507286], "max": [0.007862520404160023, -0.10854394733905792, 0.028706854209303856]}, "next_action": "Show this region in the review view and retain the collision as a candidate issue. Do not move/stretch either source or invent a cable hole in an assembly script; cable/cover rework needs its own documented source revision."},
+    {"id": "FIT-02", "priority": "explicit_missing_links", "finding": "The two descending sheaths start atZ−.318613m and end nearZ−.731/−.749m, whereas lever outlets are nearZ+.109m. They do not form a continuous cockpit-to-hub cable. Functions remain unknown.", "next_action": "Keep their visible free cut ends identifiable, and do not parent their entire paths to moving levers or hide the gap with a newly generated line."},
+    {"id": "FIT-03", "priority": "not_placeable_without_hypothesis", "finding": "Counterbracket, upper/lower yokes and isolated nut/washer have independent origins and no verified installation transform. Matrixidentity is not a common datum.", "next_action": "Omit them from the rider assembly or display them separately; measure/resolve their reference and stack before an explicit candidate placement."},
+    {"id": "FIT-04", "priority": "conditional_existing_position", "finding": "Clockcluster, ignition and visor have explicit shared working placements but no verified complete supporting structure. Currentvisor vs cluster sample test is clear; this does not validate the bracket or hidden fixings.", "next_action": "Review these sources at their stored coordinates; retain missing support/fixing interfaces in the caption."},
+    {"id": "FIT-05", "priority": "functional_attachment_already_added_to_review_copy", "finding": "RHgrip and throttle are separate source hierarchies. Root review now links the copiedgrip to rotor while preserving restworldmatrix; LHgrip and fixedguide stay fixed.", "next_action": "Preserve this explicit copy-only binding; do not bind all grips or the fixedguide to the throttle rotor."},
+    {"id": "FIT-06", "priority": "control_id_collision_to_avoid", "finding": "Catalog identifiers yaw/pitch are reused by both mirrors, and pull by both levers. A direct concatenation into the existing inspector would alias rigStates/rest keys.", "next_action": "Use asset-qualified controlIDs in a separate review tool, or a static source pose. Existing inspectors/catalogue are unchanged by this audit."},
+    {"id": "FIT-07", "priority": "document_axis_label_discrepancy", "finding": "Barehandlebar README reverses the signs of the named left/right inward axes relative to the correctedphysical convention of grips/controls. Numeric source datums show physicalLEFT=+X and physicalRIGHT=−X.", "next_action": "Preserve actual source matrices and corrected physical convention; do not flip or mirror an assembly from that legacy prose."},
+    {"id": "FIT-08", "priority": "bounded_current_test_coverage", "finding": "177selected surface-crossing tests use the current source revisions.176zero results do not prove clearance, volumetric containment or all cockpit interfaces; tests are restricted to namedbody pairs/partial motions.", "next_action": "After the actual review view, test any new suspected interface under its exact source hashes rather than carrying forward an old all_clear score."}
+  ],
+  "review_view_preparation": {
+    "existing_root_review_source": "assets-src/moto-components/cockpit-current-review-v1/cockpit-current-review-v1.blend",
+    "root_builder_report_sha256": "2cd4b6dbb3b0d859ffcc9f4366b0361b01f7fb6ac462a1c33d50d24c11348ab6",
+    "copied_sources_match_this_snapshot": true,
+    "needle_pose": {
+      "asset": "instruments-v3",
+      "control": "speed_angle",
+      "relative_degrees": -81.0,
+      "source_axis": [0.0, 0.0, 1.0],
+      "rest_quaternion_wxyz": [0.38268330693244934, 0.0, 0.0, -0.9238795638084412],
+      "posed_quaternion_wxyz": [-0.3090170919895172, 0.0, 0.0, -0.9510564804077148],
+      "witness_mesh": "M18 [instruments-v3] SPEED red needle",
+      "witness_vertex": 0,
+      "actual_vertex_travel_m": 0.046760252830437964,
+      "manufacturer_calibration_certified": false
+    },
+    "existing_root_camera_from_builder_v2": {
+      "source_position_m": [0, 0.67, 0.49],
+      "target_m": [0, -0.03, 0.07],
+      "lens_mm": 28,
+      "note": "Existing conditional review camera, not an eye pose measured on the bike. Do not fit the whole camera to partial descending sheaths or silently omit the free ends from review."
+    },
+    "isolated_hardware_forced_into_view": false,
+    "driver_added": false,
+    "headlamp_fairing_or_missing_cable_generated": false
+  },
+  "documentation_read": [
+    {"path": "assets-src/moto-components/handlebar/parameters.json", "sha256": "298d2d3ea365312652c71d86168861de6868a88fd8e02aec651dd1abdf26d34c"},
+    {"path": "assets-src/moto-components/handlebar/README.md", "sha256": "d3eb2caa378dd3d27ccf5a100487a5b4607751e2f29f0c60c74ee8069041e007"},
+    {"path": "assets-src/moto-components/handlebar-grips/parameters-v3.json", "sha256": "c137ab3605028c9945a89c24f84ae420c332081def9f0c90d253ce7bcf2a25a5"},
+    {"path": "assets-src/moto-components/handlebar-grips/README_v3.md", "sha256": "cd57fe8aedee1aee7a4209bec90a5154caa4a663b9fa069da4993ef4f7c491e5"},
+    {"path": "assets-src/moto-components/handlebar-clamps/parameters.json", "sha256": "69c7b18be59f95e35f6bf8fe58b3af70a2f9e14c9d3df52e6b5bd2e9c18efbe4"},
+    {"path": "assets-src/moto-components/handlebar-clamps/README.md", "sha256": "0e29095a5be95ef805684479880986154baa9e169541dce2c99c5ca48ab10ad3"},
+    {"path": "assets-src/moto-components/throttle-control/parameters.json", "sha256": "4ba0beb597e3abf2de0af28463f9c58cb173ed2901cadf6b7d5a650bed28c686"},
+    {"path": "assets-src/moto-components/throttle-control/README.md", "sha256": "231a519b600108c04a9c089c3656fbad8c0297633e4708262ffed61b96934055"},
+    {"path": "assets-src/moto-components/switchgear-left/parameters.json", "sha256": "920e093436308ef3816fcdfc44d7f9fb934b6c11116d33f3be5ce86500a77b0f"},
+    {"path": "assets-src/moto-components/switchgear-left/README_v3.md", "sha256": "43500a9266eba8ca5fc784da316d602f9e3b4e6f8fcd136007d2de1a20b01f52"},
+    {"path": "assets-src/moto-components/switchgear-right/parameters.json", "sha256": "ea1c6bb6ef73b8e7a3e1172ede52721c4f51e8436e2425806f6f727799e2421a"},
+    {"path": "assets-src/moto-components/switchgear-right/README.md", "sha256": "81fbf1f0741cc84051f0ecefb9afac8fcabed62e9e86103a3e56cdd7df2bde68"},
+    {"path": "assets-src/moto-components/clutch-control/parameters-v2.json", "sha256": "7fb57cd88d0c063e463041005285bc94363dbdc134af93f8eb3d06aea046a6c8"},
+    {"path": "assets-src/moto-components/clutch-control/README_v2.md", "sha256": "ef3946a71e98e519654ad61fdf14aebb2e7ee66ab966b4b45874f4612356ad50"},
+    {"path": "assets-src/moto-components/front-brake-control/parameters-v2.json", "sha256": "deff6698a462f0530a1618ec30600abbebedb37b5d3f1235ca7e2870db2d45a0"},
+    {"path": "assets-src/moto-components/front-brake-control/README_v2.md", "sha256": "0179f1ed6ac61be07f1b8a4cb44c47484edc483e549c79f7f28ca8601c7558a1"},
+    {"path": "assets-src/moto-components/mirrors/parameters-left-v2.json", "sha256": "846ca106585a6c61709789178d022bc107e64a86390c5f24f4945207da6ec102"},
+    {"path": "assets-src/moto-components/mirrors/README-left-v2.md", "sha256": "ab6646237aff767c0d9ba0b9d3ed462b86b30209d2aeb3e51d72964f9b874020"},
+    {"path": "assets-src/moto-components/mirrors/parameters-right-v3.json", "sha256": "108463ff5eaf1be2d8150d0ff6fc095f5abcec1e1c7e66a84c756bb07b23016d"},
+    {"path": "assets-src/moto-components/mirrors/README-right-v3.md", "sha256": "8f94e2f1dcfaf10f28422d86c6b42c4c6a2aa8094b5e254bfbbce030809840c2"},
+    {"path": "assets-src/moto-components/ignition-lock/parameters.json", "sha256": "69910520fdba65d5e67a28d4e35438bc6dddc47259bf30d887c9305e8b127791"},
+    {"path": "assets-src/moto-components/ignition-lock/README.md", "sha256": "a19689fa88bd68363a50334c568e32f812c29160553aa7f986b73d455679e3fc"},
+    {"path": "assets-src/moto-components/cockpit-cables/parameters.json", "sha256": "6cb7cdabb71d4a454ef4e813d1e3a8d1f4ed8c138d7ec3d6c163f674b3e1336f"},
+    {"path": "assets-src/moto-components/cockpit-cables/README.md", "sha256": "9017022b6e06d5bfc6be13a87641f1f5c2f7772d36a4a9f80451352a08e74cb8"},
+    {"path": "assets-src/moto-components/instruments/parameters-v3.json", "sha256": "184db68b58305e03b820af9f3c5ab7dbdb434cfeebf3c13a0f2f19a4313e2ef2"},
+    {"path": "assets-src/moto-components/instruments/README_v3.md", "sha256": "e99655504e1bffc30aa83143c30c7ce4f255b937e69cb80aea056d65019f8e6e"},
+    {"path": "assets-src/moto-components/instrument-visor/parameters-v1.json", "sha256": "4d68880fc3e4bd87950d9fb5536214a7effc317a317ce2e5fb2d1bb411dc6aa0"},
+    {"path": "assets-src/moto-components/instrument-visor/README_v1.md", "sha256": "99c57744932e6d3bf96bd0cbfd9c94321da530516506dc7abbcfe26ef960a456"},
+    {"path": "assets-src/moto-components/instrument-bracket/parameters-v2.json", "sha256": "9e00b48b90bdfeffe3d453e2f1b216ed6f1eaf84845e9510a886caf137e4ad0d"},
+    {"path": "assets-src/moto-components/steering-triples/upper/parameters.json", "sha256": "dceb424f6455ff3d257c7e06167258a6ecd87f74ddce3d427c4673ef9ec191e5"},
+    {"path": "assets-src/moto-components/steering-triples/lower/parameters.json", "sha256": "3e073df88a32c37e63e857e9db347d997b394487e0984a4be4c0652e57233c91"},
+    {"path": "assets-src/moto-components/handlebar-clamps/mounting-nyloc-v3/parameters.json", "sha256": "0b4d3c57a8f651913ba114f1500f7fdbb4443b96757f0567ea5934cac5bb76ce"},
+    {"path": "assets-src/moto-components/handlebar-clamps/mounting-upper-washer/parameters.json", "sha256": "e1eadad6c6eac6187dd693070a088b35550b5d60b75b554355192017a5b1c8f8"}
+  ],
+  "evidence_files": [
+    {"path": "creative/research/cockpit-fit-preparation-v1/input-snapshot.json", "sha256": "1ff369ab80ed62158e823801c467e4500ec63056843375f48621f4ad04a17a3d"},
+    {"path": "creative/research/cockpit-fit-preparation-v1/evaluated-source-frames.json", "sha256": "eabc1abbd4dc3ab37075809ba7e659948b07a797b6363f4927d4bfdc3075522f"},
+    {"path": "creative/research/cockpit-fit-preparation-v1/export-frames.json", "sha256": "e5df154c75fa68e83e1c7ac88694d97c77fb38925940e6dc400c28f6c4d4bf3b"},
+    {"path": "creative/research/cockpit-fit-preparation-v1/current-contact-checks.json", "sha256": "674bf70678f2316ae6569402211bfd8d88211c46d85e8d845809ede5edee85e9"},
+    {"path": "creative/research/cockpit-fit-preparation-v1/pigtail-crossing-localization.json", "sha256": "13b6a184fc39a16679da361f16dd3308a561b5524b5864154d1519c7202e8d30"}
+  ],
+  "limits": {
+    "new_geometry": false,
+    "new_sources_or_exports": false,
+    "source_matrices_assigned_by_auditor": false,
+    "poses_changed_only_temporarily_in_memory_on_existing_review_copy": true,
+    "images_opened_or_rendered_by_auditor": false,
+    "NodeIO_material_extension_warnings": "Geometry/node reader does not interpret optional IOR/transmission/volume extensions; no GLB was rewritten and no material/optical result is asserted.",
+    "minimum_clearance_computed": false,
+    "full_steering_or_harness_motion_tested": false,
+    "OEM_fit_certified": false,
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  }
+}

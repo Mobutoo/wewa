@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "scope": "One observable curved panel shell study; fixing set not manufactured from unknown positions. No texture to hide uncertain sections.",
+  "exact_variant": "Current official RDC 125HD longvisor appearance; isolated PF181209 linked BM150 references conditional.",
+  "baseline_sources": [
+    "creative/research/forward-cockpit-18/shape-landmarks.json",
+    "creative/research/instrument-visor/references.json",
+    "creative/research/instrument-visor/bare-front-native-contour.json"
+  ],
+  "working_parameters": {
+    "width_m": {
+      "value": 0.25,
+      "range": [
+        0.22,
+        0.28
+      ],
+      "status": "estimated",
+      "reason": "Cockpit-relative candidate extent, not published or calibrated from global bike width."
+    },
+    "developed_height_m": {
+      "value": 0.285,
+      "range": [
+        0.25,
+        0.325
+      ],
+      "status": "estimated",
+      "reason": "Loose-panel visible aspect used conditionally; camera unknown."
+    },
+    "rake_from_vertical_deg": {
+      "value": 42,
+      "range": [
+        32,
+        52
+      ],
+      "status": "photo_inferred",
+      "reason": "Current official side silhouette shows substantial rearward rake; uncalibrated side-image hypothesis, not physical measurement."
+    },
+    "centreline_bottom_world_m": {
+      "value": [
+        0,
+        -0.275,
+        0
+      ],
+      "range_Y": [
+        -0.305,
+        -0.245
+      ],
+      "range_Z": [
+        -0.025,
+        0.025
+      ],
+      "status": "estimated",
+      "reason": "Initial cockpit interface placement to test against actual source instruments."
+    },
+    "transverse_wrap_sag_m": {
+      "value": 0.04,
+      "range": [
+        0.025,
+        0.06
+      ],
+      "status": "estimated",
+      "reason": "Related inner oblique photo establishes wrap, not its depth."
+    },
+    "thickness_m": {
+      "value": 0.0025,
+      "range": [
+        0.0018,
+        0.0035
+      ],
+      "status": "estimated",
+      "reason": "Finite shell, no detailed thickness published."
+    },
+    "edge_radius_m": {
+      "value": 0.00025,
+      "range": [
+        0.00015,
+        0.0004
+      ],
+      "status": "estimated",
+      "reason": "Working molded-sheet edge transition, not photo-measured."
+    }
+  },
+  "construction": [
+    "Fit a smooth source outline to manually observed bare-panel points, preserving low-corner reliefs and curved crown.",
+    "Distribute interior vertices in the planar domain before curving; constrained polygon triangulation plus conforming subdivision avoids a curved nonplanar n-gon.",
+    "Apply an analytic transverse wrap and rake, derive actual surface normals, then offset rear surface along those normals for finite wall thickness.",
+    "Close perimeter with an intentional small source edge transition; inspect diffuse and specular views before material.",
+    "Export the isolated shell study and inspect real buffers before final renders."
+  ],
+  "conditional_projection_check": "Under a front orthographic hypothesis, aspect 285/250*cos(42deg)\u22480.847, similar to official visible front envelope about92/110\u22480.836. Occlusion/perspective make this only an order-of-proportion check, not a camera fit or dimensional calibration.",
+  "blocked_subparts": [
+    {
+      "piece": "Four fixing holes/support flanges, screws/washers/wellnuts",
+      "documented_related": "BM150 catalogue plate41 sheet57 lists4\u00d7M5x16 screws,4nonmetal washers,4M5 wellnuts; PF181209 screen.",
+      "unknown": "Current RDC applicability, hole centres/diameters, concealed return profile, actual mounting counterpart and assembly clearances.",
+      "decision": "Bare panel study may proceed; do not invent four mounting centres or claim whole lot11 complete.",
+      "next_research": "Same-part inner/installed photographs resolving all mount points, or a measured original; examine catalogue line layout only as a related hypothesis."
+    }
+  ],
+  "materials": "Gray first. Smoked appearance documented visually; exact polymer/substrate/grade, IOR, absorption and coating unknown. Related retailer PC claim conflicts with generic ABS text.",
+  "art_accepted": false
+}

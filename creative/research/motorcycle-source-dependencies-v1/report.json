@@ -1,0 +1,1148 @@
+{
+  "schema": 1,
+  "revision": "motorcycle-source-dependencies-v1",
+  "snapshot_utc": "2026-10-21T03:25:09.676928+00:00",
+  "scope": [
+    "instrument-visor-v1",
+    "headlamp-front-protector-v2"
+  ],
+  "method": "Static code and JSON dependency audit; actual file hashes, Git index/HEAD membership and existing report pins checked. No Blender, render, build, source or registry modification.",
+  "limits": [
+    "This is recipe closure, not a clean-room execution test, bit-reproducibility guarantee, artistic reception or OEM compatibility.",
+    "Git/index state is only the timestamped observation and may change after root stages files.",
+    "Existing frozen reports/manifests remain historical; this report is a new dependency supplement."
+  ],
+  "candidates": [
+    {
+      "key": "instrument-visor-v1",
+      "shape_recipe_files": [
+        "creative/research/instrument-visor/bare-front-native-contour.json",
+        "assets-src/moto-components/instrument-visor/prepare_outline_v1.py",
+        "assets-src/moto-components/instrument-visor/outline-v1.json",
+        "assets-src/moto-components/instrument-visor/prepare_grid_v1.py",
+        "assets-src/moto-components/instrument-visor/planar-grid-v1.json",
+        "assets-src/moto-components/instrument-visor/build_shell_study_v1.py",
+        "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v1.blend",
+        "creative/reviews/instrument-visor-shell-study-v1/source-geometry-check.json",
+        "assets-src/moto-components/instrument-visor/prepare_rounded_grid_v3.py",
+        "assets-src/moto-components/instrument-visor/outline-rounded-v3.json",
+        "assets-src/moto-components/instrument-visor/rounded-planar-grid-v3.json",
+        "assets-src/moto-components/instrument-visor/build_rolled_study_v3.py",
+        "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v3.blend",
+        "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v3.glb",
+        "creative/reviews/instrument-visor-shell-study-v3/source-geometry-check.json"
+      ],
+      "minimum_material_recipe_files": [
+        "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v3.blend",
+        "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v3.glb",
+        "creative/reviews/instrument-visor-shell-study-v3/source-geometry-check.json",
+        "creative/research/instrument-visor/material-plan-v1.json",
+        "assets-src/moto-components/instrument-visor/build_material_v1.py",
+        "assets-src/moto-components/instrument-visor/finalize_material_export_v1.mjs"
+      ],
+      "order": [
+        "prepare_outline_v1.py",
+        "prepare_grid_v1.py",
+        "build_shell_study_v1.py",
+        "prepare_rounded_grid_v3.py",
+        "build_rolled_study_v3.py",
+        "build_material_v1.py",
+        "finalize_material_export_v1.mjs"
+      ],
+      "important": "The rolled v3 source reads v1 directly. Edge/bevel studyv2 is NOT an ancestor. Gray v3 GLB is an actual finalizer input, not merely a preview."
+    },
+    {
+      "key": "headlamp-front-protector-v2",
+      "shape_recipe_files": [
+        "creative/research/headlamp/protector-shape-plan-v1.json",
+        "assets-src/moto-components/headlamp/build_protector_study_v3.py",
+        "assets-src/moto-components/headlamp/protector_csg_worker_v3.py",
+        "assets-src/moto-components/headlamp/headlamp-front-protector-study-v3.blend",
+        "creative/reviews/headlamp-front-protector-study-v3/source-geometry-check.json"
+      ],
+      "minimum_material_recipe_files": [
+        "assets-src/moto-components/headlamp/headlamp-front-protector-study-v3.blend",
+        "creative/reviews/headlamp-front-protector-study-v3/source-geometry-check.json",
+        "creative/research/headlamp/protector-material-plan-v2.json",
+        "assets-src/moto-components/headlamp/build_protector_material_v2.py"
+      ],
+      "order": [
+        "build_protector_study_v3.py (calls protector_csg_worker_v3.py)",
+        "build_protector_material_v2.py"
+      ],
+      "important": "Studyv3 is built directly from the G2 shape plan; v1/v2 gray studies and materialv1 are not inputs. Studyv3 GLB is a useful validation artifact, not read by the material builder."
+    }
+  ],
+  "generation_edges": [
+    {
+      "candidate": "instrument-visor-v1",
+      "script": "assets-src/moto-components/instrument-visor/prepare_outline_v1.py",
+      "reads": [
+        "creative/research/instrument-visor/bare-front-native-contour.json"
+      ],
+      "writes": [
+        "assets-src/moto-components/instrument-visor/outline-v1.json"
+      ]
+    },
+    {
+      "candidate": "instrument-visor-v1",
+      "script": "assets-src/moto-components/instrument-visor/prepare_grid_v1.py",
+      "reads": [
+        "assets-src/moto-components/instrument-visor/outline-v1.json"
+      ],
+      "writes": [
+        "assets-src/moto-components/instrument-visor/planar-grid-v1.json"
+      ]
+    },
+    {
+      "candidate": "instrument-visor-v1",
+      "script": "assets-src/moto-components/instrument-visor/build_shell_study_v1.py",
+      "reads": [
+        "assets-src/moto-components/instrument-visor/outline-v1.json",
+        "assets-src/moto-components/instrument-visor/planar-grid-v1.json"
+      ],
+      "writes": [
+        "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v1.blend",
+        "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v1.glb",
+        "creative/reviews/instrument-visor-shell-study-v1/source-geometry-check.json"
+      ]
+    },
+    {
+      "candidate": "instrument-visor-v1",
+      "script": "assets-src/moto-components/instrument-visor/prepare_rounded_grid_v3.py",
+      "reads": [
+        "assets-src/moto-components/instrument-visor/outline-v1.json",
+        "creative/reviews/instrument-visor-shell-study-v1/source-geometry-check.json",
+        "creative/research/instrument-visor/bare-front-native-contour.json"
+      ],
+      "writes": [
+        "assets-src/moto-components/instrument-visor/outline-rounded-v3.json",
+        "assets-src/moto-components/instrument-visor/rounded-planar-grid-v3.json"
+      ]
+    },
+    {
+      "candidate": "instrument-visor-v1",
+      "script": "assets-src/moto-components/instrument-visor/build_rolled_study_v3.py",
+      "reads": [
+        "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v1.blend",
+        "creative/reviews/instrument-visor-shell-study-v1/source-geometry-check.json",
+        "assets-src/moto-components/instrument-visor/outline-rounded-v3.json",
+        "assets-src/moto-components/instrument-visor/rounded-planar-grid-v3.json"
+      ],
+      "writes": [
+        "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v3.blend",
+        "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v3.glb",
+        "creative/reviews/instrument-visor-shell-study-v3/source-geometry-check.json"
+      ]
+    },
+    {
+      "candidate": "instrument-visor-v1",
+      "script": "assets-src/moto-components/instrument-visor/build_material_v1.py",
+      "reads": [
+        "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v3.blend",
+        "creative/reviews/instrument-visor-shell-study-v3/source-geometry-check.json",
+        "creative/research/instrument-visor/material-plan-v1.json"
+      ],
+      "writes": [
+        "assets-src/moto-components/instrument-visor/instrument-visor-v1.blend",
+        "/workspace/wewa-assets/work-in-progress/instrument-visor/material-v1/raw-export.glb",
+        "creative/reviews/instrument-visor-v1/source-geometry-check.json"
+      ]
+    },
+    {
+      "candidate": "instrument-visor-v1",
+      "script": "assets-src/moto-components/instrument-visor/finalize_material_export_v1.mjs",
+      "reads": [
+        "creative/reviews/instrument-visor-v1/source-geometry-check.json",
+        "raw_export_private_path read from that newly generated report",
+        "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v3.glb"
+      ],
+      "writes": [
+        "assets-src/moto-components/instrument-visor/instrument-visor-v1.glb",
+        "creative/reviews/instrument-visor-v1/source-geometry-check.json",
+        "creative/reviews/instrument-visor-v1/optical-export-conversion.json"
+      ]
+    },
+    {
+      "candidate": "headlamp-front-protector-v2",
+      "script": "assets-src/moto-components/headlamp/build_protector_study_v3.py",
+      "reads": [
+        "creative/research/headlamp/protector-shape-plan-v1.json"
+      ],
+      "subprocess": "assets-src/moto-components/headlamp/protector_csg_worker_v3.py",
+      "writes": [
+        "assets-src/moto-components/headlamp/headlamp-front-protector-study-v3.blend",
+        "assets-src/moto-components/headlamp/headlamp-front-protector-study-v3.glb",
+        "creative/reviews/headlamp-front-protector-study-v3/source-geometry-check.json"
+      ]
+    },
+    {
+      "candidate": "headlamp-front-protector-v2",
+      "script": "assets-src/moto-components/headlamp/build_protector_material_v2.py",
+      "reads": [
+        "assets-src/moto-components/headlamp/headlamp-front-protector-study-v3.blend",
+        "creative/reviews/headlamp-front-protector-study-v3/source-geometry-check.json",
+        "creative/research/headlamp/protector-material-plan-v2.json"
+      ],
+      "writes": [
+        "assets-src/moto-components/headlamp/headlamp-front-protector-v2.blend",
+        "assets-src/moto-components/headlamp/headlamp-front-protector-v2.glb",
+        "creative/reviews/headlamp-front-protector-v2/source-geometry-check.json"
+      ]
+    }
+  ],
+  "byte_pins_checked": [
+    {
+      "report": "creative/reviews/instrument-visor-shell-study-v1/source-geometry-check.json",
+      "source": "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v1.blend",
+      "source_hash_matches": true,
+      "export": "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v1.glb",
+      "export_hash_matches": true
+    },
+    {
+      "report": "creative/reviews/instrument-visor-shell-study-v3/source-geometry-check.json",
+      "source": "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v3.blend",
+      "source_hash_matches": true,
+      "export": "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v3.glb",
+      "export_hash_matches": true
+    },
+    {
+      "report": "creative/reviews/headlamp-front-protector-study-v3/source-geometry-check.json",
+      "source": "assets-src/moto-components/headlamp/headlamp-front-protector-study-v3.blend",
+      "source_hash_matches": true,
+      "export": "assets-src/moto-components/headlamp/headlamp-front-protector-study-v3.glb",
+      "export_hash_matches": true
+    },
+    {
+      "report": "creative/reviews/instrument-visor-v1/source-geometry-check.json",
+      "source": "assets-src/moto-components/instrument-visor/instrument-visor-v1.blend",
+      "source_hash_matches": true,
+      "export": "assets-src/moto-components/instrument-visor/instrument-visor-v1.glb",
+      "export_hash_matches": true
+    },
+    {
+      "report": "creative/reviews/headlamp-front-protector-v2/source-geometry-check.json",
+      "source": "assets-src/moto-components/headlamp/headlamp-front-protector-v2.blend",
+      "source_hash_matches": true,
+      "export": "assets-src/moto-components/headlamp/headlamp-front-protector-v2.glb",
+      "export_hash_matches": true
+    }
+  ],
+  "required_recipe_paths_absent_from_existing_final_freeze_manifest": {
+    "instrument-visor-v1": [
+      "assets-src/moto-components/instrument-visor/build_rolled_study_v3.py",
+      "assets-src/moto-components/instrument-visor/build_shell_study_v1.py",
+      "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v1.blend",
+      "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v3.blend",
+      "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v3.glb",
+      "assets-src/moto-components/instrument-visor/outline-rounded-v3.json",
+      "assets-src/moto-components/instrument-visor/outline-v1.json",
+      "assets-src/moto-components/instrument-visor/planar-grid-v1.json",
+      "assets-src/moto-components/instrument-visor/prepare_grid_v1.py",
+      "assets-src/moto-components/instrument-visor/prepare_outline_v1.py",
+      "assets-src/moto-components/instrument-visor/prepare_rounded_grid_v3.py",
+      "assets-src/moto-components/instrument-visor/rounded-planar-grid-v3.json",
+      "creative/research/instrument-visor/bare-front-native-contour.json",
+      "creative/research/instrument-visor/material-plan-v1.json",
+      "creative/reviews/instrument-visor-shell-study-v1/source-geometry-check.json",
+      "creative/reviews/instrument-visor-shell-study-v3/source-geometry-check.json"
+    ],
+    "headlamp-front-protector-v2": [
+      "assets-src/moto-components/headlamp/build_protector_study_v3.py",
+      "assets-src/moto-components/headlamp/headlamp-front-protector-study-v3.blend",
+      "assets-src/moto-components/headlamp/protector_csg_worker_v3.py",
+      "creative/research/headlamp/protector-material-plan-v2.json",
+      "creative/research/headlamp/protector-shape-plan-v1.json",
+      "creative/reviews/headlamp-front-protector-study-v3/source-geometry-check.json"
+    ]
+  },
+  "privacy": {
+    "private_photographic_pixels_required": false,
+    "textures_required": false,
+    "actual_inputs": "Numeric manually recorded contour points / working parameter estimates / original scripts. Annotation and shape-plan include documentary private image paths and hashes, but the listed builders never open those images.",
+    "private_raw_glb": "Generated temporary original asset output, not an external photograph/texture or pre-existing secret input. Can be recreated by build_material_v1.py before finalize_material_export_v1.mjs.",
+    "private_EXR_and_photo_archives": "Not inputs to shape/material generation; needed only by separate historical diagnostic/review closure scripts."
+  },
+  "portability_findings": [
+    {
+      "severity": "recipe_environment",
+      "finding": "prepare_outline_v1.py hardcodes ROOT=/workspace/wewa-github. The remaining builders derive repo root from __file__; the Node finalizer assumes current directory is repository root.",
+      "action_for_publisher": "Document execution at this root or make a separate reviewed portable revision; do not silently alter frozen scripts."
+    },
+    {
+      "severity": "recipe_environment",
+      "finding": "build_material_v1.py creates /workspace/wewa-assets/work-in-progress/instrument-visor/material-v1 with mkdir(exist_ok=True) but without parents=True. Its parent directories must already exist; source output review root directories must also exist.",
+      "action_for_publisher": "Provision writable generated workspace parents first. raw-export.glb is then regenerated, and the finalizer consumes the report path."
+    },
+    {
+      "severity": "environment_gap",
+      "finding": "tools/requirements-assets.txt pins manifold3d3.3.2 and numpy2.3.5 but not SciPy or Shapely used by visor outline/grid preparation. Python current environment has SciPy1.17.0; Shapely distribution is not installed there.",
+      "action_for_publisher": "Recipe environment must include SciPy and Shapely with constrained_delaunay_triangles/get_parts/buffer quad_segs APIs (Shapely2.1+). A compatible isolated environment or published tested pins are needed for full shape regeneration. Checked-in numeric grids allow the v1/v3 Blender shape stages without rerunning those Python prep stages."
+    },
+    {
+      "severity": "environment",
+      "finding": "Blender4.3.2 and its bundled glTF exporter are documented in final render/material reports; visor absorption conversion explicitly checks those raw semantics. Protector build launches shutil.which(\"python\") for manifold3d worker.",
+      "action_for_publisher": "Use the intended external python on PATH with pinned CSG requirements and Blender4.3.2 exporter; do not substitute glTF export semantics silently."
+    },
+    {
+      "severity": "environment",
+      "finding": "Node finalizer imports @gltf-transform/core and @gltf-transform/extensions; installed versions are4.5.1. Root package/package-lock describe environment; core direct dependency, extensions supplied by resolved dependency tree.",
+      "action_for_publisher": "Install root lockfile dependencies and run Node finalizer from repository root."
+    },
+    {
+      "severity": "reproducibility_limit",
+      "finding": "Frozen .blend hashes are checked when a later stage consumes a saved baseline. Regenerating baseline scripts produces fresh reports; .blend files and exporter/CSG floating output are not proven bit-reproducible.",
+      "action_for_publisher": "Keep frozen baseline .blend/report pairs for exact current material recipe. Test full regeneration in a separate output workspace rather than overwriting historic proofs."
+    }
+  ],
+  "files": [
+    {
+      "path": "creative/research/instrument-visor/bare-front-native-contour.json",
+      "sha256": "7fdc85335fccb603f905850dea2a619027beed97f5ecc8c54a7df2cb925da7c6",
+      "bytes": 3041,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/prepare_outline_v1.py",
+      "sha256": "8b41f2f141b3089f72b680f916887feef2764ff4210415c6f893968eaea49ab7",
+      "bytes": 2025,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/outline-v1.json",
+      "sha256": "c9958f80e30e097b3ebd417089de4b41fb1f8fe461fe3e130e047a976c7311d6",
+      "bytes": 136502,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/prepare_grid_v1.py",
+      "sha256": "32a9ced435496c14b8cc5716b38a267c40aa9e5293cdd4518c4822f96a0af23e",
+      "bytes": 2395,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/planar-grid-v1.json",
+      "sha256": "186bc45efe43059e791728737e01ff9c2fe082c8c5655d15e09a294a9fef62eb",
+      "bytes": 729836,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/build_shell_study_v1.py",
+      "sha256": "039ce1ed95a7715745bfeeb77e36b6663ae780ed33e865d32b9231f0f0ee542a",
+      "bytes": 8937,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v1.blend",
+      "sha256": "5ec0267d6f9128123721de74e04f6a3df070b5cb1d4567e153853225a3dc3849",
+      "bytes": 603772,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "creative/reviews/instrument-visor-shell-study-v1/source-geometry-check.json",
+      "sha256": "3d491c0375c40e3afcbad0d6fdd01446a673e5fc13b70bec69e54128cb4fd695",
+      "bytes": 1855,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/prepare_rounded_grid_v3.py",
+      "sha256": "5abd5ee027d888b4b87754080b2e0647aed1e07961e6b170784ac5da547075ce",
+      "bytes": 5603,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/outline-rounded-v3.json",
+      "sha256": "ffba99b89fd30dd8202f33a07db6e7b068daf5ece0491caf5cc5d211e4235b67",
+      "bytes": 77259,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/rounded-planar-grid-v3.json",
+      "sha256": "fd1a2a702984809e464af6deeca026922f0eb48ea790269506019026d665fa10",
+      "bytes": 1238717,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/build_rolled_study_v3.py",
+      "sha256": "58876b266bcea3b7e404670f858b8e51fc3cd628bea6a990dd958ea307ee4cbc",
+      "bytes": 7691,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v3.blend",
+      "sha256": "4e1674fbac66b922ae6a195a4210fd8843960d4e269318ce320612c2cecfd5e2",
+      "bytes": 1221662,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate",
+        "minimum_material_recipe_input_or_script"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v3.glb",
+      "sha256": "4741baa476587e47db340fb70c2b31bf4823b169cda71feac4a076a171ae8b03",
+      "bytes": 1072776,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate",
+        "minimum_material_recipe_input_or_script"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "creative/reviews/instrument-visor-shell-study-v3/source-geometry-check.json",
+      "sha256": "4d336f9ed97a71c68e3b7d601afe2edfc5f6b422d2f9d507e8a69cb87f07de10",
+      "bytes": 2956,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate",
+        "minimum_material_recipe_input_or_script"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "creative/research/instrument-visor/material-plan-v1.json",
+      "sha256": "0b022c096343fe072a9b10e1d957c82b2c3f98015c6604f56fb76918950bd94a",
+      "bytes": 3342,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "minimum_material_recipe_input_or_script"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/build_material_v1.py",
+      "sha256": "270d501a6b60e5c2f3af887364e3ee0d29e22a3fbe0161781fff7cbb5f65493a",
+      "bytes": 3888,
+      "git_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "minimum_material_recipe_input_or_script"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/finalize_material_export_v1.mjs",
+      "sha256": "6ef08e82d84ad722dda873737176c8cfe03a571ba98f196ec92b2b3021b41ab3",
+      "bytes": 4692,
+      "git_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "minimum_material_recipe_input_or_script"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/instrument-visor-v1.blend",
+      "sha256": "c790ffbba0a49f4d63e2dcf85a30cf88eb1aa8c6edd847514c041e5c0fa70f15",
+      "bytes": 1222715,
+      "git_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "frozen_final_editable_or_delivery"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/instrument-visor-v1.glb",
+      "sha256": "67a3121a691bd29cac126c0fac5c07fea929680faad5f27ec250646aafb06cab",
+      "bytes": 1073000,
+      "git_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "frozen_final_editable_or_delivery"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/parameters-v1.json",
+      "sha256": "4d68880fc3e4bd87950d9fb5536214a7effc317a317ce2e5fb2d1bb411dc6aa0",
+      "bytes": 2781,
+      "git_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "public_declaration_not_read_by_generation"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/README_v1.md",
+      "sha256": "99c57744932e6d3bf96bd0cbfd9c94321da530516506dc7abbcfe26ef960a456",
+      "bytes": 1772,
+      "git_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "public_declaration_not_read_by_generation"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/controls-v1.json",
+      "sha256": "b835c8a4ad0fc9ac15943335323ce939136c18e3d94df1c2d9f625a48d801476",
+      "bytes": 526,
+      "git_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "public_declaration_not_read_by_generation"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/provenance-v1.json",
+      "sha256": "b020b1610a34228d98db355b57c5afaa59016a01a8fc017f7f7cf8cc812b7433",
+      "bytes": 1561,
+      "git_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "public_declaration_not_read_by_generation"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "creative/reviews/instrument-visor-v1/source-geometry-check.json",
+      "sha256": "16380fcaaeb7105c874ed1cb956aa5bf480f1d656b7e9f438319ba8edc036f03",
+      "bytes": 3916,
+      "git_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "frozen_proof_not_a_shape_input"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "creative/reviews/instrument-visor-v1/source-freeze-manifest.json",
+      "sha256": "fa97a6fdbc6216062b5930069cc1ceba29814d3fd9df7f8daeb34b206a96088f",
+      "bytes": 4003,
+      "git_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "frozen_proof_not_a_shape_input"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "creative/reviews/instrument-visor-v1/freeze-manifest.json",
+      "sha256": "d2318ae1df140fb05a1def8a83468ed8de48da8a8def9bbe81d751cf733a15c8",
+      "bytes": 6922,
+      "git_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "frozen_proof_not_a_shape_input"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "creative/reviews/instrument-visor-v1/production-manifest.json",
+      "sha256": "764cb706d553c2ba65512cc0467c600afb92d8ea6ccfdff8988c061c0031baca",
+      "bytes": 3256,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "frozen_proof_not_a_shape_input"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "creative/research/headlamp/protector-shape-plan-v1.json",
+      "sha256": "5968bd5003f0e54bf9494141c0585986d9fe478eee935598b43aacb914f39045",
+      "bytes": 4351,
+      "git_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/build_protector_study_v3.py",
+      "sha256": "8d7b4f4e6fc95b834eebf59336d084f97fa8cbecea04e9526e939fef7ebe03e9",
+      "bytes": 9386,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/protector_csg_worker_v3.py",
+      "sha256": "4e17d2c0cf15c73d5f697547447e893b38aa415a95490cc198820177e30530c0",
+      "bytes": 1615,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/headlamp-front-protector-study-v3.blend",
+      "sha256": "de8d2db0dca5b3c4a72cdc16a217eb47874c4dc411d6572c3d0a04ec1006cc49",
+      "bytes": 5389280,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate",
+        "minimum_material_recipe_input_or_script"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "creative/reviews/headlamp-front-protector-study-v3/source-geometry-check.json",
+      "sha256": "9ea1826a693a12bb203cecb1b3e71e6741a6ebae3e02c170d98b7457b12efdb9",
+      "bytes": 40783,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "shape_recipe_input_script_or_regenerated_intermediate",
+        "minimum_material_recipe_input_or_script"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "creative/research/headlamp/protector-material-plan-v2.json",
+      "sha256": "67151f01252429ef00bb013c0e45dcc9c23b7258d9c268defbde7298108e1d2c",
+      "bytes": 1614,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "minimum_material_recipe_input_or_script"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/build_protector_material_v2.py",
+      "sha256": "76790deaf5239d82bf7c8bb95aefa8ac118f7d3fd9c3162fe275c158dac01c1f",
+      "bytes": 2433,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "minimum_material_recipe_input_or_script"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/headlamp-front-protector-v2.blend",
+      "sha256": "b9a7e64ecc08ed9de44e2bf5e411fb76fabf2be40d43d9c405f4b7160c96c9fd",
+      "bytes": 5361920,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "frozen_final_editable_or_delivery"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/headlamp-front-protector-v2.glb",
+      "sha256": "034e8abe91f612a400aeb70d34aeb00e41bc72cd340bb6efef0d7f7c87e9d186",
+      "bytes": 977772,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "frozen_final_editable_or_delivery"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/protector-parameters-v2.json",
+      "sha256": "e082cfb3f8389eb88ba04c83214c5a59c0226cbfc72e8550e3bef1343685c515",
+      "bytes": 2847,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "public_declaration_not_read_by_generation"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/README-protector-v2.md",
+      "sha256": "f2cff7e5d28ea6ea0f58f0afbf2999a8e67e5e472b725344e01b3607f40d2c0f",
+      "bytes": 1654,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "public_declaration_not_read_by_generation"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/protector-controls-v2.json",
+      "sha256": "f211cfb88bf5881af8fe5c3e725d8b930d008950fac5140b9a2c4462df9861c7",
+      "bytes": 612,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "public_declaration_not_read_by_generation"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/protector-provenance-v2.json",
+      "sha256": "3507549a59c3e3082f0ff855c3bb15928ba3c9d373e6dcfcc8f8532ae39e9c5d",
+      "bytes": 1583,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "public_declaration_not_read_by_generation"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "creative/reviews/headlamp-front-protector-v2/source-geometry-check.json",
+      "sha256": "f5ff31a7b77eb678275e739dcf8fc64f97cefc027e8d66c144b5b31e5a3197e0",
+      "bytes": 41483,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "frozen_proof_not_a_shape_input"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "creative/reviews/headlamp-front-protector-v2/source-freeze-manifest.json",
+      "sha256": "2e930ede943f1583ee4660c3447cf3f1d031746bf981a542f3f994b7ee3706a1",
+      "bytes": 3668,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "frozen_proof_not_a_shape_input"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "creative/reviews/headlamp-front-protector-v2/freeze-manifest.json",
+      "sha256": "bb1c18e49041cf21f40de2be778e5b80e09bff588f4d96c3d3418014b6589895",
+      "bytes": 6592,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "frozen_proof_not_a_shape_input"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "creative/reviews/headlamp-front-protector-v2/production-manifest.json",
+      "sha256": "9c2f4fb165c33561ece41d8a6d30a4f9176d92e4d72db5e66c656dd802e6ea62",
+      "bytes": 3367,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "frozen_proof_not_a_shape_input"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/build_edge_study_v2.py",
+      "sha256": "bd614f2e2bd8ebff3f9d696815ef81cb76618c81a3b2692097e8aad81b78a94f",
+      "bytes": 3364,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v2.blend",
+      "sha256": "08ed708ff85e46f97e53268c6f87dabed52d3b2b941d4cb4f4df219b635099db",
+      "bytes": 1266901,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v2.glb",
+      "sha256": "6bddfb809af1293b10cba3a9846c63b2c8d76d4095bee1e545be09b302fb5e10",
+      "bytes": 1579044,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/instrument-visor-shell-study-v1.glb",
+      "sha256": "340ff4935c139df7443417c2e49c0a6162ba7cd6ce2f34acd26ba45a0d353d76",
+      "bytes": 546848,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/parameters-study-v1.json",
+      "sha256": "2b2d1e6d31b5daa889326344c708a5ba88324d28beedb15bd8dbc3766ff75e2a",
+      "bytes": 988,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/diagnose_edge_study_v2.py",
+      "sha256": "34183d6d02d7b1bc07d2c7c8a77fa950fc7bc8f03cf865779ec210eacb0ec32e",
+      "bytes": 2902,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/sweep_study_pose_v1.py",
+      "sha256": "10ced22e3582a6565545ea1e2b13bce10b61137926df0266f38b70477e287bd1",
+      "bytes": 2406,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "creative/research/instrument-visor/shape-plan-v1.json",
+      "sha256": "54ab2b9a1476498b710943f94e5b498dcdd44007fbe2d93dd1b08853c9ffccc5",
+      "bytes": 4164,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "creative/research/instrument-visor/placement-selection-v1.json",
+      "sha256": "f73f3d51150a511f7a32f636d3bab710bab8f2a5b31e368a1cb17d14c7cb2023",
+      "bytes": 902,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "creative/research/instrument-visor/placement-sweep-v1.json",
+      "sha256": "fe6b20095deb7f1cea5daa645a74484086b0dea91a74b41bcb73fbb3dc3fbad0",
+      "bytes": 2289,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "instrument-visor-v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/build_protector_study_v1.py",
+      "sha256": "79161834623ff2c6838617fa57ab91aa3984c0e0c081b21b8b1404337078326f",
+      "bytes": 7602,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/build_protector_study_v2.py",
+      "sha256": "a064b281046d63d92823d7552b8418a3c69792d48e33dac2c0d35c81423cd1d2",
+      "bytes": 9292,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/headlamp-front-protector-study-v1.blend",
+      "sha256": "6ec716284007a68c7e1300aaeee12bb2bb46a4792c8d481a8616e25eb02243d8",
+      "bytes": 4881772,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/headlamp-front-protector-study-v1.glb",
+      "sha256": "28183c452e976fcce0cd410e0daf13950db1a9a396ae95090f820564bda97111",
+      "bytes": 979884,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/headlamp-front-protector-study-v2.blend",
+      "sha256": "73f8286cc51887c08514beaaa429f3bc514420924ce5ef837a1a437a3404c943",
+      "bytes": 5389280,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/headlamp-front-protector-study-v2.glb",
+      "sha256": "fefb1c4245f6d051e85e64d43eed3b0c5097a502d4c014e1a649a46ec5b45be8",
+      "bytes": 977788,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/headlamp-front-protector-study-v3.glb",
+      "sha256": "b1bc99c4b75f144c3da10d28594594dfc73e6970446b78721ef3e2cee4cad352",
+      "bytes": 977596,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/build_protector_material_v1.py",
+      "sha256": "4734efbf182455a3668388952df064c1a0f30b2d5d3a6a8c606e074a5b99e997",
+      "bytes": 2433,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/headlamp-front-protector-v1.blend",
+      "sha256": "6a67a16f2ef57199eac6ac9718dfca7085af2eedcbd2008f7e3c43e58afbb477",
+      "bytes": 5361920,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/headlamp-front-protector-v1.glb",
+      "sha256": "476bd727e08c98692b4874d4bd9b13dafa56c873731059b662aa67ee045f8b2d",
+      "bytes": 977772,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "creative/research/headlamp/protector-material-plan-v1.json",
+      "sha256": "e5dd715e8a55014a71eeeac4a39044142a7beae3d1197068188708dc5d7d658e",
+      "bytes": 1400,
+      "git_at_snapshot": "added_to_index",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/compare_protector_studies_v2_v3.py",
+      "sha256": "5800bce1024c3cd721ac49d44bdd20d3205bae92f5359b458954e03d3db961e5",
+      "bytes": 2025,
+      "git_at_snapshot": "untracked",
+      "roles": [
+        "historical_diagnostic_or_unread_declaration_not_required"
+      ],
+      "candidates": [
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "tools/requirements-assets.txt",
+      "sha256": "d37fb80e0a2bf34bf6e388eb968a144b27ce368350d49a9df4ae2b7aa30d2447",
+      "bytes": 110,
+      "git_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "public_environment_definition"
+      ],
+      "candidates": [
+        "instrument-visor-v1",
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "package.json",
+      "sha256": "a39ce3bafb566edaf92a27fec2c35e3bd40550136b20ac501e56bcaa01c3a998",
+      "bytes": 782,
+      "git_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "public_environment_definition"
+      ],
+      "candidates": [
+        "instrument-visor-v1",
+        "headlamp-front-protector-v2"
+      ]
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "f7806a8afda3413efb6d3cec57482f51fda453b3350e784f1e6e90cf8604f014",
+      "bytes": 74605,
+      "git_at_snapshot": "tracked_in_HEAD",
+      "roles": [
+        "public_environment_definition"
+      ],
+      "candidates": [
+        "instrument-visor-v1",
+        "headlamp-front-protector-v2"
+      ]
+    }
+  ]
+}

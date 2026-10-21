@@ -19,6 +19,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Check committed motorcycle source proofs
+        run: python tools/check_motorcycle18_index_v2.py --ref "$GITHUB_SHA" --output WEWA_Developpement_Web/validation/motorcycle-source-ci.json
       - run: pip install playwright
       - run: python -m playwright install --with-deps chromium
       - run: npm run test:browser
@@ -26,4 +28,6 @@ jobs:
         if: always()
         with:
           name: viva-wewa-browser-evidence
-          path: WEWA_Developpement_Web/validation/browser
+          path: |
+            WEWA_Developpement_Web/validation/browser
+            WEWA_Developpement_Web/validation/motorcycle-source-ci.json

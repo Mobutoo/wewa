@@ -1,0 +1,170 @@
+{
+  "schema": 1,
+  "revision": "headlamp-housing-study-v1",
+  "stage": "G2 before construction",
+  "identity": "Related bareYDY02002 photo-informed conditional candidate; exactRDC code/fit unknown",
+  "parameters": {
+    "mouth_outer_radius_m": {
+      "value": 0.0985,
+      "range": [
+        0.089,
+        0.109
+      ],
+      "status": "estimated",
+      "basis": "Shared working scale with isolated frontprotection, not measuredOEM diameter."
+    },
+    "central_opening_radius_m": {
+      "value": 0.035,
+      "range": [
+        0.029,
+        0.044
+      ],
+      "status": "estimated",
+      "basis": "Front bare photo bounds; rear perspective prevents a single projected scale."
+    },
+    "axial_depth_to_central_opening_m": {
+      "value": 0.05,
+      "range": [
+        0.035,
+        0.07
+      ],
+      "status": "estimated"
+    },
+    "nominal_normal_wall_m": {
+      "value": 0.0023,
+      "range": [
+        0.0018,
+        0.0032
+      ],
+      "status": "estimated"
+    },
+    "moulded_edge_radius_m": {
+      "value": 0.0006,
+      "range": [
+        0.0003,
+        0.0012
+      ],
+      "status": "estimated"
+    },
+    "rear_rib_thickness_m": {
+      "value": 0.0018,
+      "range": [
+        0.0012,
+        0.0028
+      ],
+      "status": "estimated"
+    },
+    "mount_ear_wall_m": {
+      "value": 0.003,
+      "range": [
+        0.0022,
+        0.0042
+      ],
+      "status": "estimated"
+    },
+    "side_hole_diameter_m": {
+      "value": 0.0055,
+      "range": [
+        0.004,
+        0.007
+      ],
+      "status": "estimated"
+    },
+    "lower_hole_diameter_m": {
+      "value": 0.0055,
+      "range": [
+        0.004,
+        0.007
+      ],
+      "status": "estimated"
+    },
+    "upper_slot_width_m": {
+      "value": 0.008,
+      "range": [
+        0.005,
+        0.011
+      ],
+      "status": "estimated"
+    },
+    "upper_slot_length_m": {
+      "value": 0.012,
+      "range": [
+        0.008,
+        0.016
+      ],
+      "status": "estimated"
+    }
+  },
+  "unit_decomposition": [
+    {
+      "unit": "Finite annular dished shell with central throughhole",
+      "method": "Dense radial/angle surface before curvature, finite wall from normal offsets, intentional edge radii before unions; preserve actual openholes.",
+      "known": "Visible in barefront and rear photos; axial profile unmeasured."
+    },
+    {
+      "unit": "Five interior moulded reliefs",
+      "method": "Two upper tapered fins, central upper lip and two lower rounded blocks, source contours kept separately; not black decals.",
+      "known": "Visible front positions/shapes; exact section and coupling to rearlugs estimated."
+    },
+    {
+      "unit": "Rear ribs and mounting arms",
+      "method": "Distinct upper/side/lower profiles, curved lowerarms and sidewebs; no automatic side mirroring as OEMfact.",
+      "known": "Rear photo shows existence/count; source may construct conditional paired shapes where photos support similarity."
+    },
+    {
+      "unit": "Observable apertures",
+      "method": "Two side holes, two lower holes and two upper slots as real passages. Uppercentre clip/opening ambiguous: preserve unresolveddetail rather than a fabricated threadedbore.",
+      "known": "Bare rear +hardware photo. No thread/diameter certification."
+    }
+  ],
+  "frame": {
+    "Xpositive": "riderLEFT",
+    "Ypositive": "rearward",
+    "Zpositive": "up",
+    "estimated_front_interface_Y_m": 0.008,
+    "shared_reference": "Headlamp local isolated frame; protectorbackplane+.008 is an estimate, not a measured matingdatum.",
+    "cockpit_installation": "Unresolved, no arbitrary worldplacement."
+  },
+  "native_readings": {
+    "front_source_private_path": "/workspace/wewa-assets/references/headlamp/housing-YDY02002-0.jpg",
+    "pixels": [
+      500,
+      500
+    ],
+    "approximate_outer_bounds_px": [
+      51,
+      20,
+      454,
+      418
+    ],
+    "approximate_central_hole_bounds_px": [
+      186,
+      159,
+      326,
+      298
+    ],
+    "uncertainty_px": 4,
+    "scope": "Manual coarse landmarks only, not a calibrated outline fit or physical dimension."
+  },
+  "checks_before_freeze": [
+    "Connected closed finitewall body, positivevolume and actualpassages",
+    "Actual source/export triangleareas, UV and normals including tiny CSG intersectiontriangles; no arbitrarytangent patch",
+    "Actual inputsolid/face provenance for post-CSG normals, not nearestsurface classification or globalWeightedNormal",
+    "Short entirefront/rear/profile plus inneredge/ribjunction with diffuse and reflections before finalcoating/96",
+    "No cowl/lens/protectorpenetration assumed from unplacedsource; installedinterfaces stayopen"
+  ],
+  "critical_unknowns": [
+    "Detailed absolute dimensions/axis tilt/currentRDC identity",
+    "Bare axial profile and camera intrinsics",
+    "Uppercentre fastening shape/section/thread and unobserved innerhardware",
+    "Exact lensretaining interface/gasket and counterpart holepositions"
+  ],
+  "not_in_this_piece": [
+    "Lens/reflector",
+    "Dustcap/socket/bulb/lead",
+    "Screws/nuts as independenthardware",
+    "Red cowl or signals",
+    "Frontprotection source already frozen separately"
+  ],
+  "art_accepted": false
+}

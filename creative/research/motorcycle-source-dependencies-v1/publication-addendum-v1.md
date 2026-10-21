@@ -1,0 +1,7 @@
+# Complément de publication — recettes visière et protection
+
+Le point 07 joint les 25 chemins de recette identifiés et les cinq couples source/export vérifiés, soit 31 fichiers dans le [manifeste de dépendances](recipe-manifest.json). Les études diagnostiques v2 de visière et v1/v2 de protection ne sont pas nécessaires à ces recettes. Aucun pixel privé n’est ajouté aux textures ou au dépôt public.
+
+Les préparations numériques ont leur [requirements complémentaire](../../../tools/requirements-shape-preparation-v1.txt), qui inclut le requirements mécanique historique sans le modifier. Dans un environnement Python 3.12 séparé, NumPy 2.3.5, SciPy 1.17.0, Shapely 2.1.2 et Manifold 3.3.2 sont disponibles. La triangulation contrainte d’un polygone troué a été réellement exécutée : huit triangles, aire 12 conservée, trou préservé. Le [rapport de capacité](../../../tools/provenance/shape-preparation-v1.json) ne constitue pas une régénération de la visière ou du phare.
+
+Les scripts historiques conservent leurs chemins absolus de travail et les sémantiques d’export Blender 4.3.2. Ils ne doivent pas être rejoués dans le dossier de production gelé : leurs sorties écraseraient les sources et rapports. Le dépôt fournit les coordonnées, grilles et intermédiaires nécessaires ; la portabilité et une reconstruction complète dans une copie séparée restent à vérifier. Blender utilise son propre Python, distinct de cet environnement de préparation. Aucune reproduction binaire ni nouvelle réception artistique n’est déclarée.

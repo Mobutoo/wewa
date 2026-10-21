@@ -1,0 +1,9 @@
+# Normales des membres non ronds — retour reproductible
+
+Le flanc du premier backbone présentait un très léger motif diagonal en macro. Le témoin sans normal-map ne le supprimait pas ; le témoin neutre constant sans aucune carte le conservait. Les78coins de26faces du flanc avant s’écartaient de1,870–1,878° de la normale analytique du sweep auteur. Les petits segments des coins arrondis contribuaient aux normales interpolées du grand flanc voisin. Ceci décrit notre surface numérique, pas une mesure de forme OEM.
+
+La révisionv2 applique dans Blender `WeightedNormal`, mode `FACE_AREA_WITH_ANGLE`, poids50, `keep_sharp=True`, seuil.01. Le maillage évalué conserve strictement positions, faces et UV, puis ses normales sont conservées dans la source ; l’original avec le modificateur reste caché et éditable. Aucun bufferGLB n’est réparé. Les mêmes78coins ont un écart de0,040–0,045° après pondération ; ce nombre ne vaut pas réception artistique.
+
+Avant toute matière ou longue finale : contrôler source et vrais buffers, faire une vue grise et un reflet natif des grands plans **et des bords ouverts**, puis lire les images. Une vue de collerettes à distance du bord n’avait pas révélé ce défaut local. La révision normale seule doit conserver positions, UV et matrices des triangles orientés, tandis que NORMAL/TANGENT changent volontairement. La conservation complète des attributs doit ensuite être vérifiée entre G3 et G4 de la nouvelle révision.
+
+Cette méthode ne doit pas écraser des normales analytiques intentionnelles (colonne, rondelle, insert) ni aplatir une surface formée volontairement courbe. Elle ne répare pas une mauvaise section, une triangulation nulle, un maillage ouvert ou une interface estimée. Pour une tôle formée, répartir d’abord les points dans la surface et traiter sa vraie courbure. Les révisions/images précédentes restent immuables et identifiées comme diagnostics si refusées.
