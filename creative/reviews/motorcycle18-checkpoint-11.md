@@ -47,3 +47,9 @@ Une [nouvelle photo physique DS181008](../research/handlebar-mount-stack-followu
 Le pneu arrière reste à reprendre : sa correction de terminaisons et son raffinement local ne sont pas clos dans ce point. Le tube d’échappement et le carénage de phare suivent leurs propres revues ; réservoir WEWA puis selle sont engagés dans la chaîne18. Les études actives ne sont pas de nouvelles pièces livrées ici. Le conducteur attend la moto seule. Le jeu public, sa source et la qualification physique iPhone restent inchangés.
 
 Les preuves de commit exact, CI et synchronisation Ewutelo/Directus seront ajoutées après la coupe de ce point. Le suivi Directus reste structuré ; aucun téléversement binaire n’est déclaré.
+
+## Vérification après publication
+
+Source immuable : [`b0db1d39`](https://github.com/Mobutoo/wewa/commit/b0db1d397d63cbf602de27b741ae3fcf475c5c28), arbre `b317b57f7f83c4656c9ac3bca6d549c5254b0678`. Le contrôle de ce commit lit2386JSON,213manifestes,5702empreintes de fichiers,36empreintes PNG de checkpoints et3601liens ; aucune erreur. Ses71entrées de catalogue restent distinctes des52ID physiques enregistrés.
+
+[GitHub Actions](https://github.com/Mobutoo/wewa/actions/runs/39558784551) et son étape de preuves moto ont réussi sur ce même commit. Le PRD Ewutelo complet est sauvegardé puis relu en révision36, avec égalité de tous ses champs et45exigences conservées. Ce pied de revue et les [métadonnées de vérification](../../WEWA_Developpement_Web/validation/motorcycle18-source11-integrity.json) sont postérieurs à cet arbre ; ils ne sont pas présentés comme des fichiers déjà contenus dans le commit source. Aucun binaire n’a été téléversé dans Directus.
