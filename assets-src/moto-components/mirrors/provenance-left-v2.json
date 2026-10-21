@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "component_id": "MOTO-MIRROR-LEFT-001",
+  "revision": "mirror-left-v2",
+  "source_sha256": "7725731e869b6edeea744965054518659eeb6355f6acc670718738a8144b1a30",
+  "export_sha256": "be1b5bcf2438cee25fb097f7bca96a6a8ae231d26500717638046af4becabcea",
+  "original_construction": "Original parametric sections, centripetal contour interpolation, PCHIP compound hollow shell, curved internal neck, sampled spherical glass, finite rear coat, closed edge strip, continuous filleted steel stem/ball/cosmetic helicoidal stud, annular covers and formed-chamfer hexnut. Manifold CSG without global post-CSG bevel.",
+  "reference_register": "creative/research/mirrors/reference-observations.json",
+  "current_RDC_reference": "Official rotation02 silhouette only, native pixel uncertainty2px and no calibrated camera.",
+  "related_variant": "DJ221003 isolatedback and DJ221004multiangle, not exact currentRDC certification or automatic mirror symmetry.",
+  "all_dimensions_estimated": true,
+  "unknowns": [
+    "Actual part identity, metric dimensions, head orientation and depth",
+    "Left glass face unseen isolated; right related face informs conditional construction",
+    "Real glass curvature and material",
+    "Stem out-of-plane path, thread diameter/pitch/hand",
+    "Internal joint design, edge strip material and adjustment travel"
+  ],
+  "texture_origin": "Original seed221003 polymer grain, physical10mm tile/RMSheight2um estimated, generated roughness and slope-derived normal; no photo pixels",
+  "photographic_textures": false,
+  "copied_retailer_or_approval_marks": false,
+  "linked_mount_source": "assets-src/moto-components/clutch-control/clutch-control-v2.blend",
+  "linked_mount_source_sha256": "586b41d08fd0cb8a9caad66e7cbe83af1592aad42e6def823135f99b6f200059",
+  "inspection_mesh_not_mobile_optimized": true,
+  "art_accepted": false,
+  "cap_surface_status": "Original estimated1um grain on satin/flexible covers, using half strength of original2um source normal",
+  "prior_source_sha256": "bdd8a799b6a5ae07a5c076ba0c5a1019f6477ff9a4be5995229e13c2def3c6d0",
+  "prior_export_sha256": "fb796f4bbe842b7080ba5310aeab653a5fbc72d647f3a2c113309e27f256f8fa",
+  "v2_change": {
+    "only_changed_body": "LH continuous steel stem ball and cosmetic stud - candidate",
+    "sampling_method": {
+      "sectors": 144,
+      "helical_phase_boundaries": [
+        0,
+        0.15,
+        0.45,
+        0.65,
+        0.95
+      ],
+      "axial_range_q_m": [
+        -0.004,
+        0.024
+      ],
+      "pitch_estimated_m": 0.00125,
+      "major_diameter_estimated_m": 0.008,
+      "root_diameter_estimated_m": 0.0067,
+      "cap_boundary_vertices": [
+        148,
+        147
+      ],
+      "profile": "Exact old piecewise radial equation, mesh crease curves aligned in parameter domain; angular facets reduced, no added bevel or crease radius."
+    },
+    "retained_original_rod_and_ball_objects": [
+      "LH continuous bent rod construction",
+      "LH estimated steel articulation ball construction"
+    ],
+    "profile_and_dimensions_changed": false,
+    "nine_other_source_bodies_or_transforms_edited": false,
+    "materials_and_images_edited": false,
+    "normals": "Intentional sharp slope boundaries derived from source mesh at existing threshold0.65rad; smooth within each patch. No global bevel.",
+    "limits": "Diameter, pitch, hand, crest/root form and mating fit remain estimated cosmetic geometry, not OEM qualification."
+  },
+  "actual_geometry_witness": "creative/reviews/mirror-left-v2/stud-profile-ray-check.json",
+  "body_identity_proof": "creative/reviews/mirror-left-v2/v1-to-v2-stud-only-diff-check.json"
+}

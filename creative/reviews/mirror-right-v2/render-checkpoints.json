@@ -511,6 +511,662 @@
       },
       "required_detail_frame_check": null,
       "actually_saved": true
+    },
+    "joint-close": {
+      "source_sha256": "af1bfd1155b02281eb549b428042728e55f7975f0fdc449806bb288d850e0a58",
+      "config": {
+        "view": {
+          "location": [
+            -0.3378736078739166,
+            -0.2863640785217285,
+            0.26080477237701416
+          ],
+          "target": [
+            -0.24072271585464478,
+            -0.08295915275812149,
+            0.23019269108772278
+          ],
+          "lens": 80,
+          "crop": true,
+          "details": [
+            "RH fixed hollow lower neck cover - estimated",
+            "RH moving hollow upper neck cover - estimated"
+          ]
+        },
+        "samples": 96,
+        "resolution_px": [
+          1000,
+          800
+        ],
+        "renderer": "Blender4.3.2 Cycles/OpenImageDenoise CPU",
+        "camera_clip_m": [
+          0.001,
+          10
+        ],
+        "depth_of_field": false,
+        "AgX": "AgX - Medium High Contrast",
+        "max_bounces": 12,
+        "transmission_bounces": 8,
+        "denoising_store_passes": true
+      },
+      "config_sha256": "7e9378ede2eb37775f2b1a0f58d418204f9cba171b8a06aaa826c2545ec1d671",
+      "PNG_path": "creative/reviews/mirror-right-v2/joint-close.png",
+      "PNG_sha256": "72ebaa3ddddf7301176f40a9eb8b4dc50bb83b3faf2911fe23271335b392604d",
+      "EXR_private_path": "/workspace/wewa-assets/renders/mirrors/mirror-right-v2/joint-close.exr",
+      "EXR_sha256": "9f3e3afb13f61c61fed6fdd29b2fadac3cab1a189c45fb2f1430ddefb09a4926",
+      "EXR_channels_actual_header": [
+        "ViewLayer.Combined.A",
+        "ViewLayer.Combined.B",
+        "ViewLayer.Combined.G",
+        "ViewLayer.Combined.R",
+        "ViewLayer.Denoising Albedo.B",
+        "ViewLayer.Denoising Albedo.G",
+        "ViewLayer.Denoising Albedo.R",
+        "ViewLayer.Denoising Depth.Z",
+        "ViewLayer.Denoising Normal.X",
+        "ViewLayer.Denoising Normal.Y",
+        "ViewLayer.Denoising Normal.Z",
+        "ViewLayer.Noisy Image.A",
+        "ViewLayer.Noisy Image.B",
+        "ViewLayer.Noisy Image.G",
+        "ViewLayer.Noisy Image.R"
+      ],
+      "actual_frame_check": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "RH mirror CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          10.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.18546781217780017,
+        "farthest_actual_vertex_depth_m": 0.3381772571852498,
+        "projected_uv_min": [
+          -1.4280771946475344,
+          -0.3753417737091598
+        ],
+        "projected_uv_max": [
+          0.8010816187956178,
+          1.8644267926057718
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.025,
+        "mesh_rows": [
+          {
+            "object": "RH mirror compound shell and socket - candidate",
+            "vertices": 11138,
+            "depth_m": [
+              0.18546781217780017,
+              0.240568897555278
+            ],
+            "projected_uv_min": [
+              -1.4280771946475344,
+              0.39200499640398545
+            ],
+            "projected_uv_max": [
+              0.5494427015693125,
+              1.8644267926057718
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH convex mirror glass - finite thickness candidate",
+            "vertices": 6482,
+            "depth_m": [
+              0.1950116443987857,
+              0.2376907785783875
+            ],
+            "projected_uv_min": [
+              -1.3623868715057692,
+              0.6090312983415083
+            ],
+            "projected_uv_max": [
+              0.2594396767217587,
+              1.7911078318978952
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH rear metallic reflector - original candidate",
+            "vertices": 6482,
+            "depth_m": [
+              0.19496628112923253,
+              0.23524950503342823
+            ],
+            "projected_uv_min": [
+              -1.3615733504607583,
+              0.6100916014027046
+            ],
+            "projected_uv_max": [
+              0.25857777325857456,
+              1.7899226638720194
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH continuous mirror edge seal - estimated",
+            "vertices": 432,
+            "depth_m": [
+              0.19640598026883604,
+              0.23749953894711018
+            ],
+            "projected_uv_min": [
+              -1.3596188134898326,
+              0.6046390939956032
+            ],
+            "projected_uv_max": [
+              0.26327505186641126,
+              1.793837464091791
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH continuous steel stem ball and cosmetic stud - candidate",
+            "vertices": 27914,
+            "depth_m": [
+              0.2199966118371961,
+              0.33609943136851533
+            ],
+            "projected_uv_min": [
+              0.4267103719603169,
+              -0.3753417737091598
+            ],
+            "projected_uv_max": [
+              0.8010816187956178,
+              0.5916288241234361
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH mirror base washer - estimated",
+            "vertices": 384,
+            "depth_m": [
+              0.32353634221521244,
+              0.33793881146650695
+            ],
+            "projected_uv_min": [
+              0.5509505211059132,
+              -0.30675326859127106
+            ],
+            "projected_uv_max": [
+              0.6478557679343356,
+              -0.24891823437792882
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH mirror base hex nut - estimated thread-free bore",
+            "vertices": 576,
+            "depth_m": [
+              0.32266246832524614,
+              0.3378168859864536
+            ],
+            "projected_uv_min": [
+              0.5451388114943759,
+              -0.2957123034993119
+            ],
+            "projected_uv_max": [
+              0.6541775155528643,
+              -0.20121727261311895
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH hollow mirror mounting cover - estimated",
+            "vertices": 960,
+            "depth_m": [
+              0.3204854299465461,
+              0.3381772571852498
+            ],
+            "projected_uv_min": [
+              0.542352899387261,
+              -0.24827685308379654
+            ],
+            "projected_uv_max": [
+              0.6574691703593587,
+              -0.048358681757987076
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH fixed hollow lower neck cover - estimated",
+            "vertices": 1344,
+            "depth_m": [
+              0.2205052893457673,
+              0.24245115533491024
+            ],
+            "projected_uv_min": [
+              0.513157079046699,
+              0.27376798346954456
+            ],
+            "projected_uv_max": [
+              0.762739928175259,
+              0.5558814231144029
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH moving hollow upper neck cover - estimated",
+            "vertices": 768,
+            "depth_m": [
+              0.21130213415973853,
+              0.24442550222928805
+            ],
+            "projected_uv_min": [
+              0.345812982989964,
+              0.28187008534356073
+            ],
+            "projected_uv_max": [
+              0.6693828065727079,
+              0.7083460820118103
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "required_detail_frame_check": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "RH mirror CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          10.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.21130213415973853,
+        "farthest_actual_vertex_depth_m": 0.24442550222928805,
+        "projected_uv_min": [
+          0.345812982989964,
+          0.27376798346954456
+        ],
+        "projected_uv_max": [
+          0.762739928175259,
+          0.7083460820118103
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.015,
+        "mesh_rows": [
+          {
+            "object": "RH fixed hollow lower neck cover - estimated",
+            "vertices": 1344,
+            "depth_m": [
+              0.2205052893457673,
+              0.24245115533491024
+            ],
+            "projected_uv_min": [
+              0.513157079046699,
+              0.27376798346954456
+            ],
+            "projected_uv_max": [
+              0.762739928175259,
+              0.5558814231144029
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH moving hollow upper neck cover - estimated",
+            "vertices": 768,
+            "depth_m": [
+              0.21130213415973853,
+              0.24442550222928805
+            ],
+            "projected_uv_min": [
+              0.345812982989964,
+              0.28187008534356073
+            ],
+            "projected_uv_max": [
+              0.6693828065727079,
+              0.7083460820118103
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "actually_saved": true
+    },
+    "base-close": {
+      "source_sha256": "af1bfd1155b02281eb549b428042728e55f7975f0fdc449806bb288d850e0a58",
+      "config": {
+        "view": {
+          "location": [
+            -0.19688835740089417,
+            0.13696999847888947,
+            0.1867022067308426
+          ],
+          "target": [
+            -0.1886511594057083,
+            -0.008244437165558338,
+            0.1379999965429306
+          ],
+          "lens": 75,
+          "crop": true,
+          "details": [
+            "RH mirror base washer - estimated",
+            "RH mirror base hex nut - estimated thread-free bore",
+            "RH hollow mirror mounting cover - estimated"
+          ]
+        },
+        "samples": 96,
+        "resolution_px": [
+          1000,
+          800
+        ],
+        "renderer": "Blender4.3.2 Cycles/OpenImageDenoise CPU",
+        "camera_clip_m": [
+          0.001,
+          10
+        ],
+        "depth_of_field": false,
+        "AgX": "AgX - Medium High Contrast",
+        "max_bounces": 12,
+        "transmission_bounces": 8,
+        "denoising_store_passes": true
+      },
+      "config_sha256": "72459bc53361b0b767b3788e4a219e95b0d932d23e90be9f6f5e88af3ce5418c",
+      "PNG_path": "creative/reviews/mirror-right-v2/base-close.png",
+      "PNG_sha256": "f3e5d074777174c8dc2caa15cfceffc80965aae0069cfd4bb61ff33c796968ff",
+      "EXR_private_path": "/workspace/wewa-assets/renders/mirrors/mirror-right-v2/base-close.exr",
+      "EXR_sha256": "3e5f3e5ab1c5e3057cff7f7ee46624203af35180b1e1cfd911680351e245dde7",
+      "EXR_channels_actual_header": [
+        "ViewLayer.Combined.A",
+        "ViewLayer.Combined.B",
+        "ViewLayer.Combined.G",
+        "ViewLayer.Combined.R",
+        "ViewLayer.Denoising Albedo.B",
+        "ViewLayer.Denoising Albedo.G",
+        "ViewLayer.Denoising Albedo.R",
+        "ViewLayer.Denoising Depth.Z",
+        "ViewLayer.Denoising Normal.X",
+        "ViewLayer.Denoising Normal.Y",
+        "ViewLayer.Denoising Normal.Z",
+        "ViewLayer.Noisy Image.A",
+        "ViewLayer.Noisy Image.B",
+        "ViewLayer.Noisy Image.G",
+        "ViewLayer.Noisy Image.R"
+      ],
+      "actual_frame_check": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "RH mirror CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          10.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.10907255477533706,
+        "farthest_actual_vertex_depth_m": 0.20948599759513997,
+        "projected_uv_min": [
+          0.38436924136687434,
+          0.10533803027968813
+        ],
+        "projected_uv_max": [
+          4.474427146578139,
+          4.862054045450977
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.025,
+        "mesh_rows": [
+          {
+            "object": "RH mirror compound shell and socket - candidate",
+            "vertices": 11138,
+            "depth_m": [
+              0.10907255477533706,
+              0.20145974413002166
+            ],
+            "projected_uv_min": [
+              1.0686944428288814,
+              1.8664036159736885
+            ],
+            "projected_uv_max": [
+              4.474427146578139,
+              4.862054045450977
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH convex mirror glass - finite thickness candidate",
+            "vertices": 6482,
+            "depth_m": [
+              0.11156875374452158,
+              0.16741449379566875
+            ],
+            "projected_uv_min": [
+              1.4263523147245283,
+              2.2385021059869947
+            ],
+            "projected_uv_max": [
+              4.32150837790771,
+              4.696531938942836
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH rear metallic reflector - original candidate",
+            "vertices": 6482,
+            "depth_m": [
+              0.11393501287782826,
+              0.16744704962280332
+            ],
+            "projected_uv_min": [
+              1.4275829612008475,
+              2.23988054588361
+            ],
+            "projected_uv_max": [
+              4.25461257959725,
+              4.623899819723291
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH continuous mirror edge seal - estimated",
+            "vertices": 432,
+            "depth_m": [
+              0.1116818189233224,
+              0.16613694546246105
+            ],
+            "projected_uv_min": [
+              1.4209260681761178,
+              2.2367775797837166
+            ],
+            "projected_uv_max": [
+              4.328651431958432,
+              4.706122193194187
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH continuous steel stem ball and cosmetic stud - candidate",
+            "vertices": 27914,
+            "depth_m": [
+              0.14037246424526656,
+              0.20752536869377525
+            ],
+            "projected_uv_min": [
+              0.4390314984015163,
+              0.10533803027968813
+            ],
+            "projected_uv_max": [
+              1.1955458138762753,
+              2.1134474282228726
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH mirror base washer - estimated",
+            "vertices": 384,
+            "depth_m": [
+              0.15065389342865426,
+              0.16462572517738128
+            ],
+            "projected_uv_min": [
+              0.4047062929012743,
+              0.23320875356680687
+            ],
+            "projected_uv_max": [
+              0.5953306822739969,
+              0.34235696625400774
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH mirror base hex nut - estimated thread-free bore",
+            "vertices": 576,
+            "depth_m": [
+              0.14798712405576764,
+              0.16494287720197698
+            ],
+            "projected_uv_min": [
+              0.401196825767002,
+              0.24948317121150287
+            ],
+            "projected_uv_max": [
+              0.5945174027579282,
+              0.43686432442035206
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH hollow mirror mounting cover - estimated",
+            "vertices": 960,
+            "depth_m": [
+              0.14325273692422152,
+              0.1633817813486395
+            ],
+            "projected_uv_min": [
+              0.38436924136687434,
+              0.3480165861528391
+            ],
+            "projected_uv_max": [
+              0.6156567745143947,
+              0.7354439910564882
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH fixed hollow lower neck cover - estimated",
+            "vertices": 1344,
+            "depth_m": [
+              0.18603755551669554,
+              0.2083161686621735
+            ],
+            "projected_uv_min": [
+              0.799450152007734,
+              1.689655068861896
+            ],
+            "projected_uv_max": [
+              1.075576919482649,
+              2.0527173812771973
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH moving hollow upper neck cover - estimated",
+            "vertices": 768,
+            "depth_m": [
+              0.17544586821724906,
+              0.20948599759513997
+            ],
+            "projected_uv_min": [
+              0.929304565266152,
+              1.7239106195456264
+            ],
+            "projected_uv_max": [
+              1.2817914059145963,
+              2.274137521953842
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "required_detail_frame_check": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "RH mirror CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          10.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.14325273692422152,
+        "farthest_actual_vertex_depth_m": 0.16494287720197698,
+        "projected_uv_min": [
+          0.38436924136687434,
+          0.23320875356680687
+        ],
+        "projected_uv_max": [
+          0.6156567745143947,
+          0.7354439910564882
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.015,
+        "mesh_rows": [
+          {
+            "object": "RH mirror base washer - estimated",
+            "vertices": 384,
+            "depth_m": [
+              0.15065389342865426,
+              0.16462572517738128
+            ],
+            "projected_uv_min": [
+              0.4047062929012743,
+              0.23320875356680687
+            ],
+            "projected_uv_max": [
+              0.5953306822739969,
+              0.34235696625400774
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH mirror base hex nut - estimated thread-free bore",
+            "vertices": 576,
+            "depth_m": [
+              0.14798712405576764,
+              0.16494287720197698
+            ],
+            "projected_uv_min": [
+              0.401196825767002,
+              0.24948317121150287
+            ],
+            "projected_uv_max": [
+              0.5945174027579282,
+              0.43686432442035206
+            ],
+            "finite": true
+          },
+          {
+            "object": "RH hollow mirror mounting cover - estimated",
+            "vertices": 960,
+            "depth_m": [
+              0.14325273692422152,
+              0.1633817813486395
+            ],
+            "projected_uv_min": [
+              0.38436924136687434,
+              0.3480165861528391
+            ],
+            "projected_uv_max": [
+              0.6156567745143947,
+              0.7354439910564882
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "actually_saved": true
     }
   },
   "art_accepted": false

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "source_sha256": "4be6e74518d7e0a6baccfc66c136cba148882183bf1d6020ac329ed9c0c32c60",
+  "export_sha256": "ca5ee9189efcbae7f663ad6e398661c638570a0b31019af14bafbff27e28210e",
+  "collection": "WEWA_MIRROR_RIGHT",
+  "root": "RH mirror head adjustment PIVOT",
+  "axes": "glTF node LOCAL; pure translation pivot means local axes equal exported world axes at rest. Compose restQuaternion*yaw*pitch in listed order.",
+  "actual_exported_rest_quaternion_xyzw": [
+    0,
+    0,
+    0,
+    1
+  ],
+  "actual_exported_translation_m": [
+    -0.24072271585464478,
+    0.23019269108772278,
+    0.08295915275812149
+  ],
+  "actual_exported_scale": [
+    1,
+    1,
+    1
+  ],
+  "actual_moving_child_nodes": [
+    "RH continuous mirror edge seal - estimated",
+    "RH convex mirror glass - finite thickness candidate",
+    "RH mirror compound shell and socket - candidate",
+    "RH moving hollow upper neck cover - estimated",
+    "RH rear metallic reflector - original candidate"
+  ],
+  "all_travel_estimated": true,
+  "gameplay_binding": false,
+  "physical_device_or_mechanical_tested": false,
+  "controls": [
+    {
+      "node": "RH mirror head adjustment PIVOT",
+      "type": "rotation",
+      "axis_local": [
+        0,
+        1,
+        0
+      ],
+      "range_degrees": [
+        -10,
+        10
+      ],
+      "function": "review yaw",
+      "function_status": "estimated"
+    },
+    {
+      "node": "RH mirror head adjustment PIVOT",
+      "type": "rotation",
+      "axis_local": [
+        -0.9755259156227112,
+        0.010137728415429592,
+        -0.21965079009532928
+      ],
+      "range_degrees": [
+        -7,
+        7
+      ],
+      "function": "review pitch",
+      "function_status": "estimated"
+    }
+  ],
+  "revision": "mirror-right-v3",
+  "prior_source_sha256": "af1bfd1155b02281eb549b428042728e55f7975f0fdc449806bb288d850e0a58",
+  "prior_export_sha256": "a5765a2c2b2c9b5aaefc9a7cc2e95b587731269e05227394b8f84c5058944e70",
+  "base_cover_correction": "Inherited v2 rigid placement unchanged.",
+  "stud_sampling_correction": "Only combined fixed stem body rebuilt with phase-aligned cosmetic stud; all five moving head meshes and pivot matrices/axes remain bit-identical."
+}

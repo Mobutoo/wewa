@@ -1,0 +1,271 @@
+{
+  "component_id": "MOTO-MIRROR-LEFT-001",
+  "phase": "full v2 candidate; LH cosmetic stud mesh phase alignment only",
+  "source_sha256": "7725731e869b6edeea744965054518659eeb6355f6acc670718738a8144b1a30",
+  "export_sha256": "be1b5bcf2438cee25fb097f7bca96a6a8ae231d26500717638046af4becabcea",
+  "geometry": [
+    {
+      "object": "LH mirror compound shell and socket - candidate",
+      "vertices": 10766,
+      "faces": 21532,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 5.903012718685152e-05,
+      "triangles": 21532,
+      "exact_zero_area_triangles": 0,
+      "minimum_triangle_area_m2": 1.6759175698686374e-13
+    },
+    {
+      "object": "LH convex mirror glass - finite thickness candidate",
+      "vertices": 6482,
+      "faces": 6588,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 2.5363720435006137e-05,
+      "triangles": 12960,
+      "exact_zero_area_triangles": 0,
+      "minimum_triangle_area_m2": 6.404566477158369e-08
+    },
+    {
+      "object": "LH rear metallic reflector - original candidate",
+      "vertices": 6482,
+      "faces": 6588,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 6.064581119705456e-07,
+      "triangles": 12960,
+      "exact_zero_area_triangles": 0,
+      "minimum_triangle_area_m2": 4.345865534105542e-08
+    },
+    {
+      "object": "LH continuous mirror edge seal - estimated",
+      "vertices": 432,
+      "faces": 432,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 7.628307907969642e-08,
+      "triangles": 864,
+      "exact_zero_area_triangles": 0,
+      "minimum_triangle_area_m2": 2.957176263862493e-07
+    },
+    {
+      "object": "LH continuous steel stem ball and cosmetic stud - candidate",
+      "vertices": 25145,
+      "faces": 50286,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 1.1321979031637155e-05,
+      "triangles": 50286,
+      "exact_zero_area_triangles": 0,
+      "minimum_triangle_area_m2": 1.0361888430621136e-11
+    },
+    {
+      "object": "LH mirror base washer - estimated",
+      "vertices": 384,
+      "faces": 384,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 1.0469757632465465e-07,
+      "triangles": 768,
+      "exact_zero_area_triangles": 0,
+      "minimum_triangle_area_m2": 1.406896785738354e-07
+    },
+    {
+      "object": "LH mirror base hex nut - estimated thread-free bore",
+      "vertices": 576,
+      "faces": 576,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 6.621867663213102e-07,
+      "triangles": 1152,
+      "exact_zero_area_triangles": 0,
+      "minimum_triangle_area_m2": 1.3770791440492758e-07
+    },
+    {
+      "object": "LH hollow mirror mounting cover - estimated",
+      "vertices": 960,
+      "faces": 960,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 1.8868785536286023e-06,
+      "triangles": 1920,
+      "exact_zero_area_triangles": 0,
+      "minimum_triangle_area_m2": 5.828507454452847e-08
+    },
+    {
+      "object": "LH fixed hollow lower neck cover - estimated",
+      "vertices": 1344,
+      "faces": 1344,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 3.433239769171074e-06,
+      "triangles": 2688,
+      "exact_zero_area_triangles": 0,
+      "minimum_triangle_area_m2": 1.1444789294046132e-07
+    },
+    {
+      "object": "LH moving hollow upper neck cover - estimated",
+      "vertices": 768,
+      "faces": 768,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 2.7390807670547386e-06,
+      "triangles": 1536,
+      "exact_zero_area_triangles": 0,
+      "minimum_triangle_area_m2": 1.276672350059016e-07
+    }
+  ],
+  "CSG": [
+    {
+      "stages": [
+        {
+          "operation": "features",
+          "part": "LH integral socket outside construction",
+          "before_volume_m3": 4.357888913892893e-05,
+          "after_volume_m3": 6.371189298842775e-05
+        },
+        {
+          "operation": "drills",
+          "part": "LH curved neck working bore construction",
+          "before_volume_m3": 6.371189298842775e-05,
+          "after_volume_m3": 5.941230168739763e-05
+        },
+        {
+          "operation": "drills",
+          "part": "LH spherical socket clearance construction",
+          "before_volume_m3": 5.941230168739763e-05,
+          "after_volume_m3": 5.903013110070846e-05
+        }
+      ],
+      "solid_components": 1,
+      "volume_m3": 5.903013110070846e-05,
+      "worker": "manifold3d",
+      "worker_version": "3.3.2"
+    },
+    {
+      "stages": [
+        {
+          "operation": "features",
+          "part": "LH cosmetic helical stud construction - thread unknown",
+          "before_volume_m3": 8.84198051942111e-06,
+          "after_volume_m3": 9.94872433903816e-06
+        },
+        {
+          "operation": "features",
+          "part": "LH estimated steel articulation ball construction",
+          "before_volume_m3": 9.94872433903816e-06,
+          "after_volume_m3": 1.132066092698389e-05
+        }
+      ],
+      "solid_components": 1,
+      "volume_m3": 1.132066092698389e-05,
+      "worker": "manifold3d",
+      "worker_version": "3.3.2"
+    }
+  ],
+  "head_frame_world": {
+    "centre_m": [
+      0.32899999618530273,
+      -0.04500000178813934,
+      0.2840000092983246
+    ],
+    "outward_U": [
+      0.9755259156227112,
+      0.21965079009532928,
+      0.010137728415429592
+    ],
+    "up_V": [
+      9.313225746154785e-10,
+      -0.04610477015376091,
+      0.998936653137207
+    ],
+    "normal_toward_rider_N": [
+      -0.21988458931446075,
+      0.9744885563850403,
+      0.04497639462351799
+    ],
+    "left_positive_X": true
+  },
+  "mount_boss_world_m": [
+    0.1886511594057083,
+    -0.008244437165558338,
+    0.11800000071525574
+  ],
+  "ball_world_m": [
+    0.24072271585464478,
+    -0.08295915275812149,
+    0.23019269108772278
+  ],
+  "linked_mount_source_path": "assets-src/moto-components/clutch-control/clutch-control-v2.blend",
+  "linked_mount_source_sha256": "586b41d08fd0cb8a9caad66e7cbe83af1592aad42e6def823135f99b6f200059",
+  "all_dimensions_estimated": true,
+  "exact_current_RDC_identity_confirmed": false,
+  "art_accepted": false,
+  "prior_source_sha256": "bdd8a799b6a5ae07a5c076ba0c5a1019f6477ff9a4be5995229e13c2def3c6d0",
+  "prior_export_sha256": "fb796f4bbe842b7080ba5310aeab653a5fbc72d647f3a2c113309e27f256f8fa",
+  "new_stud_closed_geometry": {
+    "object": "LH phase-aligned cosmetic stud construction v2 - estimated",
+    "vertices": 16422,
+    "faces": 16569,
+    "components": 1,
+    "non_manifold_edges": 0,
+    "volume_m3": 1.1931278265031183e-06,
+    "triangles": 32840,
+    "exact_zero_area_triangles": 0,
+    "minimum_triangle_area_m2": 1.0784283882570023e-10
+  },
+  "change": {
+    "only_changed_body": "LH continuous steel stem ball and cosmetic stud - candidate",
+    "sampling_method": {
+      "sectors": 144,
+      "helical_phase_boundaries": [
+        0,
+        0.15,
+        0.45,
+        0.65,
+        0.95
+      ],
+      "axial_range_q_m": [
+        -0.004,
+        0.024
+      ],
+      "pitch_estimated_m": 0.00125,
+      "major_diameter_estimated_m": 0.008,
+      "root_diameter_estimated_m": 0.0067,
+      "cap_boundary_vertices": [
+        148,
+        147
+      ],
+      "profile": "Exact old piecewise radial equation, mesh crease curves aligned in parameter domain; angular facets reduced, no added bevel or crease radius."
+    },
+    "retained_original_rod_and_ball_objects": [
+      "LH continuous bent rod construction",
+      "LH estimated steel articulation ball construction"
+    ],
+    "profile_and_dimensions_changed": false,
+    "nine_other_source_bodies_or_transforms_edited": false,
+    "materials_and_images_edited": false,
+    "normals": "Intentional sharp slope boundaries derived from source mesh at existing threshold0.65rad; smooth within each patch. No global bevel.",
+    "limits": "Diameter, pitch, hand, crest/root form and mating fit remain estimated cosmetic geometry, not OEM qualification."
+  },
+  "CSG_v2": {
+    "stages": [
+      {
+        "operation": "features",
+        "part": "LH phase-aligned cosmetic stud construction v2 - estimated",
+        "before_volume_m3": 8.84198051942111e-06,
+        "after_volume_m3": 9.950042446940488e-06
+      },
+      {
+        "operation": "features",
+        "part": "LH estimated steel articulation ball construction",
+        "before_volume_m3": 9.950042446940488e-06,
+        "after_volume_m3": 1.132197903488622e-05
+      }
+    ],
+    "solid_components": 1,
+    "volume_m3": 1.132197903488622e-05,
+    "worker": "manifold3d",
+    "worker_version": "3.3.2"
+  }
+}

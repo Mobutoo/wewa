@@ -1,0 +1,623 @@
+{
+  "component_id": "MOTO-HANDLEBAR-MOUNT-NYLOC-001",
+  "revision": "handlebar-mount-nyloc-v3",
+  "source_sha256": "c82851ea5e7434de3477c9f1c91eb227f37729b946499ee688c0f825278c487e",
+  "source_check": {
+    "component_id": "MOTO-HANDLEBAR-MOUNT-NYLOC-001",
+    "revision": "handlebar-mount-nyloc-v3",
+    "collection": "WEWA_HANDLEBAR_MOUNT_NYLOC_ISOLATED",
+    "frame": "Axis+Z, origin lower bearing face; no installedpose",
+    "source_sha256": "c82851ea5e7434de3477c9f1c91eb227f37729b946499ee688c0f825278c487e",
+    "export_sha256": "e14f7226b43ad7ba76fed355590542b3993b66d7d0609d6a8e42f08a1725fdec",
+    "objects": [
+      {
+        "object": "Locknut metal body - conditionalDIN985M10 with original female ",
+        "vertices": 100848,
+        "triangles": 201696,
+        "connected_shells": 1,
+        "non_manifold_edges": 0,
+        "signed_volume_m3": 1.3631105284738889e-06,
+        "min_triangle_area_m2": 1.3983057333549764e-12,
+        "axis_open": true
+      },
+      {
+        "object": "Nonmetal locking insert - unloaded visualestimate",
+        "vertices": 14976,
+        "triangles": 29952,
+        "connected_shells": 1,
+        "non_manifold_edges": 0,
+        "signed_volume_m3": 1.6268975179018775e-07,
+        "min_triangle_area_m2": 1.0059139077256418e-09,
+        "axis_open": true
+      }
+    ],
+    "analytic_insert_normals_freshly_computed": true,
+    "helical_topology": {
+      "phase_steps_per_pitch": 48,
+      "angular_segments": 288,
+      "shifted_seam_profile_rows": 48,
+      "clamped_runout_limits_m": [
+        0.00035,
+        0.0069
+      ],
+      "no_uniform_axial_crest_staircase": true,
+      "axial_runout_boundary_cuts": [
+        {
+          "exact_axial_plane_m": 0.0009,
+          "split_original_triangles": 672,
+          "new_shared_intersection_vertices": 672,
+          "existing_points_moved": false
+        },
+        {
+          "exact_axial_plane_m": 0.00635,
+          "split_original_triangles": 672,
+          "new_shared_intersection_vertices": 672,
+          "existing_points_moved": false
+        }
+      ],
+      "original_vertex_positions_preserved": true,
+      "author_radial_function_changed": false,
+      "vertices_before_clamped_row_merge": 128928,
+      "vertices_after_clamped_row_merge": 100848,
+      "coincident_merge_distance_m": 1e-09
+    },
+    "conditional_family": "DIN985M10,notidentifiedOEMnorm",
+    "nominal_targets_m": {
+      "height": 0.01,
+      "across_flats": 0.017,
+      "pitch": 0.0015
+    },
+    "working_thread_major_minor_diameter_m": [
+      0.01012,
+      0.008496202367904179
+    ],
+    "insert_steel_radial_separation_m": 5.0000000000000565e-05,
+    "nylon_function_strain_and_preload_verified": false,
+    "current_RDC_identity_verified": false,
+    "art_accepted": false,
+    "geometry_and_shading_flags_preserved_by_material_stage": {
+      "Locknut metal body - conditionalDIN985M10 with original female ": "450ffd7860069fe3060a0b4d8da29018ccec8ccecb0a80f8086ea582bc01b228",
+      "Nonmetal locking insert - unloaded visualestimate": "ee0c1f96b7186ebfa000250e6ca20197ebd653a1622794f1448bfc86cd691ebc"
+    }
+  },
+  "export_check": {
+    "asset": "mount-nyloc-v3",
+    "revision": "handlebar-mount-nyloc-v3",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/handlebar-clamps/mounting-nyloc-v3/handlebar-mount-nyloc-v3-inspection.glb",
+        "sha256": "e14f7226b43ad7ba76fed355590542b3993b66d7d0609d6a8e42f08a1725fdec",
+        "bytes": 9130656,
+        "glTF_errors": 0,
+        "glTF_warnings": 0,
+        "messages": [
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/1/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/1/attributes/TEXCOORD_0"
+          }
+        ],
+        "bounds": {
+          "min": [
+            -0.008500000461935997,
+            0,
+            -0.009784014895558357
+          ],
+          "max": [
+            0.008500000461935997,
+            0.009999999776482582,
+            0.009784014895558357
+          ]
+        },
+        "vertices": 132541,
+        "triangles": 231648,
+        "triangle_area_local_m2": {
+          "minimum": 1.398305747921852e-12,
+          "exactly_zero": 0,
+          "below_1e_minus18": 0,
+          "note": "Local exported coordinates; not a self-intersection or surface-fidelity proof"
+        },
+        "tangent_frame": {
+          "vectors": 132541,
+          "max_unit_error": 7.766195718728053e-05,
+          "max_normal_dot": 0.00012785776707957552,
+          "handedness_sign_is_unit": true,
+          "note": "Finite orthonormal frame only; not full MikkTSpace or renderer visual parity"
+        },
+        "node_names": [
+          "Locknut metal body - conditionalDIN985M10 with original female ",
+          "Nonmetal locking insert - unloaded visualestimate"
+        ],
+        "materials": [
+          {
+            "name": "Silver locknut exterior - alloy and coating unmeasured",
+            "basecolor": [
+              0.550000011920929,
+              0.5799999833106995,
+              0.6200000047683716,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "extensions": []
+          },
+          {
+            "name": "Locknut thread and bearing - smoother estimate",
+            "basecolor": [
+              0.550000011920929,
+              0.5799999833106995,
+              0.6200000047683716,
+              1
+            ],
+            "metallic": 0.9300000071525574,
+            "roughness": 0.23999999463558197,
+            "extensions": []
+          },
+          {
+            "name": "Blue nonmetal insert - genericfamily appearance estimate",
+            "basecolor": [
+              0.014999999664723873,
+              0.024000000208616257,
+              0.1599999964237213,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "extensions": []
+          }
+        ]
+      }
+    ],
+    "scope": "Actual glTF buffers and format only; not shape reception, physical interface or mobile qualification",
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "browser_check": {
+    "camera": {
+      "position": [
+        2.6747962625566084e-18,
+        0.031829999289506444,
+        -0.04368273798484438
+      ],
+      "target": [
+        0,
+        0.004999999888241291,
+        0
+      ],
+      "radius": 0.05126431961632237,
+      "fov": 0.72,
+      "fovMode": 0
+    },
+    "framing": {
+      "min": [
+        0.3705683197272779,
+        0.2813161778903313
+      ],
+      "max": [
+        0.6294316410549654,
+        0.7736159854638651
+      ],
+      "scope": "Conservative projected actual mesh bounding boxes; whole-piece framing only"
+    },
+    "asset": "mount-nyloc-v3",
+    "revision": "handlebar-mount-nyloc-v3",
+    "config": {
+      "label": "Écrou Nyloc v3 — frontières du filet corrigées",
+      "lot": 1,
+      "review": "handlebar-mount-nyloc-v3",
+      "source": "handlebar-clamps/mounting-nyloc-v3/handlebar-mount-nyloc-v3.blend",
+      "collection": "WEWA_HANDLEBAR_MOUNT_NYLOC_ISOLATED",
+      "component_id": "MOTO-HANDLEBAR-MOUNT-NYLOC-001",
+      "source_frame": "isolated_local",
+      "files": [
+        "handlebar-clamps/mounting-nyloc-v3/handlebar-mount-nyloc-v3-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Une unité isolée, corps et insert ; deux plans de raccord ajoutés au maillage hélicoïdal. Même profil auteur et matières que v2, dimensions de famille conditionnelles ; aucun montage/serrage OEM certifié.",
+      "candidate_status": "frozen_candidate_final_views_pending"
+    },
+    "files": [
+      "handlebar-clamps/mounting-nyloc-v3/handlebar-mount-nyloc-v3-inspection.glb"
+    ],
+    "meshes": 3,
+    "vertices": 132541,
+    "triangles": 231648,
+    "bounds": {
+      "min": [
+        -0.008500000461935997,
+        0,
+        -0.009784014895558357
+      ],
+      "max": [
+        0.008500000461935997,
+        0.009999999776482582,
+        0.009784014895558357
+      ]
+    },
+    "textures_ready": true,
+    "renderer": {
+      "vendor": "Google Inc. (Google)",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "rig_states": {},
+    "attachments": [],
+    "rigs": [],
+    "art_accepted": false,
+    "physical_iphone_tested": false,
+    "public_game_unchanged": true,
+    "pixel_checks": [
+      {
+        "view": "quarter",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 145058,
+        "changed_fraction": 0.12591840277777777,
+        "rgb_min": [
+          26,
+          31,
+          36
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "driver",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 143235,
+        "changed_fraction": 0.1243359375,
+        "rgb_min": [
+          26,
+          31,
+          36
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "reverse",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 127819,
+        "changed_fraction": 0.11095399305555556,
+        "rgb_min": [
+          26,
+          31,
+          36
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "landscape-844x390",
+        "width": 844,
+        "height": 390,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 27011,
+        "changed_fraction": 0.08206039615992222,
+        "rgb_min": [
+          26,
+          31,
+          36
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      }
+    ],
+    "page_errors": [],
+    "http_failures": [],
+    "pose_checks": [],
+    "scope": "Actual Babylon imports and vertex motion in Chromium softwareWebGL; not Safari/iPhone/FPS qualification",
+    "render_mode": "Manual frames after scene readiness",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/handlebar-clamps/mounting-nyloc-v3/handlebar-mount-nyloc-v3-inspection.glb",
+        "sha256": "e14f7226b43ad7ba76fed355590542b3993b66d7d0609d6a8e42f08a1725fdec"
+      }
+    ],
+    "inspector_sha256": "19e4908f4a7b69b492710adfb7d28a5508745721f9c991941a5ed439f3a9fb07",
+    "capture_tool_sha256": "53b07b0e9bda4b86c9d7f05c10815755b3be50dcc85e29a4b3f164cbc38fcf28",
+    "inspector_path": "tools/motorcycle-lab/review-v2.js",
+    "capture_tool_path": "tools/capture_motorcycle18_v3.py",
+    "inputs_unchanged_during_capture": true
+  },
+  "render_report": {
+    "source_sha256": "c82851ea5e7434de3477c9f1c91eb227f37729b946499ee688c0f825278c487e",
+    "export_sha256": "e14f7226b43ad7ba76fed355590542b3993b66d7d0609d6a8e42f08a1725fdec",
+    "renderer": "Blender4.3.2 CyclesCPU OIDN",
+    "samples": 96,
+    "resolution_px": [
+      1200,
+      1000
+    ],
+    "views": [
+      {
+        "name": "quarter",
+        "camera_location_m": [
+          0.032,
+          0.038,
+          0.031
+        ],
+        "camera_target_m": [
+          0,
+          0,
+          0.005
+        ],
+        "ortho_scale_m": 0.029,
+        "allow_deliberate_macro_crop": false,
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "NYLOC_CAMERA",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0010000000474974513,
+            5.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.04704244272049932,
+          "farthest_actual_vertex_depth_m": 0.06604811978650248,
+          "projected_uv_min": [
+            0.16784934172268473,
+            0.16511055369362976
+          ],
+          "projected_uv_max": [
+            0.8321505757043166,
+            0.8247970320794016
+          ],
+          "allow_deliberate_crop": false,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Locknut metal body - conditionalDIN985M10 with original female ",
+              "vertices": 100848,
+              "depth_m": [
+                0.04704244272049932,
+                0.06604811978650248
+              ],
+              "projected_uv_min": [
+                0.16784934172268473,
+                0.16511055369362976
+              ],
+              "projected_uv_max": [
+                0.8321505757043166,
+                0.8247970320794016
+              ],
+              "finite": true
+            },
+            {
+              "object": "Nonmetal locking insert - unloaded visualestimate",
+              "vertices": 14976,
+              "depth_m": [
+                0.048168670498307115,
+                0.06093690597270528
+              ],
+              "projected_uv_min": [
+                0.27068994023273185,
+                0.45156981651158196
+              ],
+              "projected_uv_max": [
+                0.7293099974392987,
+                0.7885651282047693
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": false,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true,
+          "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        },
+        "PNG_sha256": "ca0eeff9d73e7bf7bf0f8f220f79e0cb851e31fc7d721d032d0b7efaf284a325",
+        "checkpoint_file": "checkpoint-quarter.json",
+        "reused_verified_checkpoint": false
+      },
+      {
+        "name": "underside-thread",
+        "camera_location_m": [
+          0.03,
+          0.033,
+          -0.026
+        ],
+        "camera_target_m": [
+          0,
+          0,
+          0.004
+        ],
+        "ortho_scale_m": 0.029,
+        "allow_deliberate_macro_crop": false,
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "NYLOC_CAMERA",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0010000000474974513,
+            5.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.04438116065159317,
+          "farthest_actual_vertex_depth_m": 0.0633478822389631,
+          "projected_uv_min": [
+            0.17033186032926634,
+            0.1774894228719836
+          ],
+          "projected_uv_max": [
+            0.8296688108938033,
+            0.8770954779201331
+          ],
+          "allow_deliberate_crop": false,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Locknut metal body - conditionalDIN985M10 with original female ",
+              "vertices": 100848,
+              "depth_m": [
+                0.04438116065159317,
+                0.0633478822389631
+              ],
+              "projected_uv_min": [
+                0.17033186032926634,
+                0.1774894228719836
+              ],
+              "projected_uv_max": [
+                0.8296688108938033,
+                0.8770954779201331
+              ],
+              "finite": true
+            },
+            {
+              "object": "Nonmetal locking insert - unloaded visualestimate",
+              "vertices": 14976,
+              "depth_m": [
+                0.050020396898675684,
+                0.06225058490950616
+              ],
+              "projected_uv_min": [
+                0.2706917629340586,
+                0.4552699784811357
+              ],
+              "projected_uv_max": [
+                0.7293089082890111,
+                0.8382862915773277
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": false,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true,
+          "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        },
+        "PNG_sha256": "91493396d6d846be4ffcbcadd52f831f93bc388e9475d776258c03e8365ada0f",
+        "checkpoint_file": "checkpoint-underside-thread.json",
+        "reused_verified_checkpoint": false
+      },
+      {
+        "name": "crown-material",
+        "camera_location_m": [
+          0.016,
+          0.02,
+          0.029
+        ],
+        "camera_target_m": [
+          0,
+          0,
+          0.008
+        ],
+        "ortho_scale_m": 0.018,
+        "allow_deliberate_macro_crop": true,
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "NYLOC_CAMERA",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0010000000474974513,
+            5.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.026053749072495663,
+          "farthest_actual_vertex_depth_m": 0.044633358883146124,
+          "projected_uv_min": [
+            -0.037359739574106654,
+            -0.2556121136589786
+          ],
+          "projected_uv_max": [
+            1.037359673056977,
+            0.9174444568746845
+          ],
+          "allow_deliberate_crop": true,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Locknut metal body - conditionalDIN985M10 with original female ",
+              "vertices": 100848,
+              "depth_m": [
+                0.026053749072495663,
+                0.044633358883146124
+              ],
+              "projected_uv_min": [
+                -0.037359739574106654,
+                -0.2556121136589786
+              ],
+              "projected_uv_max": [
+                1.037359673056977,
+                0.9174444568746845
+              ],
+              "finite": true
+            },
+            {
+              "object": "Nonmetal locking insert - unloaded visualestimate",
+              "vertices": 14976,
+              "depth_m": [
+                0.027120365135267027,
+                0.038772891201251186
+              ],
+              "projected_uv_min": [
+                0.13055598051474482,
+                0.17658999162218514
+              ],
+              "projected_uv_max": [
+                0.8694439692766185,
+                0.8517638653430117
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": true,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true,
+          "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        },
+        "PNG_sha256": "03ec36f0697fafb8e1e0ee0a6834526cbd22356530e4335cd7ce684a802afd0c",
+        "checkpoint_file": "checkpoint-crown-material.json",
+        "reused_verified_checkpoint": false
+      }
+    ],
+    "art_accepted": false
+  },
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true
+}

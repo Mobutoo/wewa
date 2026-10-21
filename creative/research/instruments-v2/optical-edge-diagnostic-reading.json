@@ -1,0 +1,48 @@
+{
+  "source_sha256": "dc4b3ccf26f35e3b4a4f10068306d841695901f987a43ebad65299cec132ad22",
+  "export_sha256": "444071ff19367a78aa9d2e7a70ebaf33ae78f0f014ed66ca0f9223927f66d30e",
+  "all_five_actual_previews_read": true,
+  "views": [
+    {
+      "name": "baseline",
+      "PNG_sha256": "e2d2b3d6002ff68230063f4da219dde1800ad768cc860286a64c7ef0b9030ee3",
+      "read_by_agent": true
+    },
+    {
+      "name": "uniform-environment",
+      "PNG_sha256": "9e6819e6e54efed535e36077cf5df40b97656c0262b6da9cfcd67197f6b5f353",
+      "read_by_agent": true
+    },
+    {
+      "name": "glass-sharp-30deg",
+      "PNG_sha256": "b5993e4b6fa1b84bf1728953607b901fd3dabc163083bad54f8b69d69efa3412",
+      "read_by_agent": true
+    },
+    {
+      "name": "glass-and-bezel-sharp-30deg",
+      "PNG_sha256": "7af68fd8f99952cd2e81f09ef139402552462b0919dd259e9a1e552eb72b95f9",
+      "read_by_agent": true
+    },
+    {
+      "name": "sealing-lip-hidden",
+      "PNG_sha256": "e7a9f48185000987d0911683dd8250981c73e9aae3ded3ec2639c4761e7dbfa4",
+      "read_by_agent": true
+    }
+  ],
+  "findings": {
+    "dominant_source_cause": "Inherited smooth corner normals mix front face and vertical cut edge of each closed lens. Outer front strip corner-normal/face angle38.20655degrees; separate actual steep edges gives0.22766degrees at identical geometry and studio.",
+    "glass_only": "Main broken bright lines disappear, original molded bezel remains smooth.",
+    "glass_plus_bezel": "Lens issue disappears but opaque bezel becomes visibly facetted/angular; reject blanket sharpening.",
+    "lip_hidden": "Bright segmented edge reflections persist, so sealing-lip presence/contact is not the dominant cause in this test.",
+    "uniform_environment": "Highlights depend on lighting; low-sample uniform-light render is noisy and not an appearance target. It does not override same-lighting glass-only causal comparison.",
+    "physical_facets": "Same192angular segments and exact vertex positions in successful glass-only witness; geometry faceting is not dominant for this observed artifact."
+  },
+  "next_revision": "instruments-v3, only two lens edge-normal splits; preserve mesh geometry, estimated profiles, material and all display/control state.",
+  "limits": [
+    "30degrees is an implementation crease threshold, not an OEM specification.",
+    "Lens thickness/profile/curvature/physical material grade still unmeasured.",
+    "No new numeric dial calibration or source/glTF visual parity claimed."
+  ],
+  "source_and_export_unchanged": true,
+  "art_accepted": false
+}

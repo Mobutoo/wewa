@@ -1,0 +1,56 @@
+{
+  "component_id": "MOTO-KICKSTARTER-001",
+  "revision": "kickstarter-v2",
+  "created_utc": "2026-10-21T01:52:38.895096+00:00",
+  "before_new_geometry": true,
+  "historical_source_sha256": "6fade26e0f95de87cc18a8891f15b6be3b08b1a66ebca31bdce984fb2ac8f013",
+  "historical_export_sha256": "eeeaa1e850c6b10d5a1b8a5aaaca6c940453c6e4c9c715f955b2b52772b42852",
+  "independent_audit": {
+    "path": "creative/research/kickstarter-independent-visual-audit.json",
+    "sha256": "c2c711344a1defb740dee69179ff57b306c910b453b520b99813c9e954f229f4"
+  },
+  "references_reopened": [
+    "/workspace/wewa-assets/references/kickstarter/bikebox-PA621203.png",
+    "/workspace/wewa-assets/references/kickstarter/partonwheels-PA621203.png"
+  ],
+  "reliable_visible_defect": "Spline cutter extrudedw\u00b160mm cut lower ear and connecting web after union. Teeth on those faces are not supported by the photos.",
+  "identity_limits": "PA621203 related BM150BS3 atBikebox, V12/V15 atPartOnWheels; exact current125RDC remains unknown",
+  "first_unit": "Fixed hub/clevis cutting scope only",
+  "plan": [
+    "Compute useful hub axial bounds from actual original rounded hub volume and bound cosmetic spline cutter to that range with small explicit numerical overcut",
+    "Bound real pinch slit to the same hub axial interval; preserve its opening at hub faces while leaving clevis material outside hub untouched",
+    "Keep splines on the hub bore; restore unstriated clevis faces and bridges outside that axial range",
+    "Verify actual section inside useful hub, keep real pinch slit and hinge/pinch bores open",
+    "Check fixed/mobile clearances and all57fold/stroke combinations after restoring removed material",
+    "Inspect arm-to-moving-eye reflection from two angles without smoothing away actual fixed/mobile gaps",
+    "If the arm/eye concern is confirmed as geometry/normal error, correct that distinct surface before freezing the revision",
+    "Actual export Float32 positions/normals/triangles, articulated vertex probes, then gray/PBR/macros before96views"
+  ],
+  "not_to_change_without_new_evidence": [
+    "Parent datum and handedness",
+    "Folding/stroke axes",
+    "Related variant into a certifiedRDC part",
+    "Spline count/depth estimates into measured values",
+    "Global silhouette merely to imitate a different photo perspective"
+  ],
+  "all_dimensions_estimated": true,
+  "actual_hidden_web_section_known": false,
+  "art_accepted": false,
+  "additional_observed_pipeline_defect": "Pinch slit Wdepth100mm also cut the lower clevis beyond useful hub axial interval; slit and splines will share bounded numerical overcut.",
+  "first_rework_attempt_rejected": {
+    "source_sha256": "94a2aa0b4359738e1f701445d196f2bf39d91a75d57bc0f58ca81242061491b4",
+    "reason": "Bounded cutters still expose tooth surface in original lower web crossing the shaft opening beyond hub. Actual macro opened; source geometry localu\u22127..+5mm/v\u22125..\u22121mm overlaps bore.",
+    "archive": "/workspace/wewa-assets/work-in-progress/kickstarter-v2/rejected-bounded-cut-only-94a2aa0b4359",
+    "macro": "/workspace/wewa-assets/work-in-progress/kickstarter-v2/94a2aa0b4359/preview/base-clamp-and-folding-joint.png",
+    "rejected_interpretation_superseded": true,
+    "status": "Retained minimal source after direct comparison against v1; initial macro interpretation corrected"
+  },
+  "second_correction": "Speculative lower web relocation source76e25409 rejected as unnecessary after actual v1/v2 macro comparison. Keep original bridge and axes; exposed internal bore wall is not the external ear defect.",
+  "final_decision": {
+    "source_sha256": "94a2aa0b4359738e1f701445d196f2bf39d91a75d57bc0f58ca81242061491b4",
+    "geometry": "Only spline and slit axial scope corrected, six other meshes unchanged.",
+    "comparison": "v1 base-clamp-and-folding-joint actually opened alongside v2 macro; old external ear stripes disappear; remaining bore internal stripes match related photo feature.",
+    "archive_name_note": "rejected-bounded-cut-only directory preserves the initially rejected reading, not a final geometry rejection",
+    "speculative_web_archive": "/workspace/wewa-assets/work-in-progress/kickstarter-v2/rejected-unnecessary-web-move-76e25409bc4c"
+  }
+}

@@ -1,6 +1,6 @@
 # Viva Wewa — revue des composants moto
 
-**26 composants uniques enregistrés · 26 vues Blender prouvées · aucune réception artistique.**
+**29 composants uniques enregistrés · 29 vues Blender prouvées · aucune réception artistique.**
 
 Une seule vue originale par composant, à la révision exacte de sa fiche. Les anciennes révisions et les sources seulement cataloguées ou gelées sans enregistrement central ne sont pas ajoutées. Ces rendus montrent des candidats isolés, pas le jeu ni une moto terminée.
 
@@ -14,19 +14,19 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 
 | Groupe | Composants enregistrés dans la séquence | État |
 | --- | --- | --- |
-| [01 · Pontets et fixations du guidon](#groupe-1) | 1 | Candidats partiels en revue ; groupe non terminé |
+| [01 · Pontets et fixations du guidon](#groupe-1) | 2 | Candidats partiels en revue ; groupe non terminé |
 | [02 · Support des compteurs](#groupe-2) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [03 · Accélérateur et entraînement de câble](#groupe-3) | 2 | Candidats partiels en revue ; groupe non terminé |
 | [04 · Commodo gauche](#groupe-4) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [05 · Commodo droit](#groupe-5) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [06 · Levier embrayage et support](#groupe-6) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [07 · Levier frein au guidon et support](#groupe-7) | 1 | Candidats partiels en revue ; groupe non terminé |
-| [08 · Rétroviseurs gauche/droit](#groupe-8) | 1 | Candidats partiels en revue ; groupe non terminé |
+| [08 · Rétroviseurs gauche/droit](#groupe-8) | 2 | Candidats partiels en revue ; groupe non terminé |
 | [09 · Contacteur et clé](#groupe-9) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [10 · Câbles et faisceau visibles](#groupe-10) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [11 · Visière et entourage des compteurs](#groupe-11) | 0 | À fabriquer ; aucune pièce enregistrée |
 | [12 · Phare et clignotants avant](#groupe-12) | 0 | À fabriquer ; aucune pièce enregistrée |
-| [13 · Fourche et direction](#groupe-13) | 4 | Candidats partiels en revue ; groupe non terminé |
+| [13 · Fourche et direction](#groupe-13) | 5 | Candidats partiels en revue ; groupe non terminé |
 | [14 · Ensemble avant et compatibilité des candidats existants](#groupe-14) | Voir les préexistants ; aucun nouveau composant compté | Candidats antérieurs existants à recontrôler ; compatibilité restante |
 | [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 0 | À fabriquer ; aucune pièce enregistrée |
 | [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 0 | À fabriquer ; aucune pièce enregistrée |
@@ -58,6 +58,31 @@ PNG SHA-256 : `4805c716dc4d445e9676ac476c68b4866e82fe1c41860af3df30bc24e79aeb0b`
 <summary>Autres vues Blender prouvées de cette révision</summary>
 
 - [material-close](handlebar-clamps-v1/material-close.png) · [preuve](handlebar-clamps-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-handlebar-mount-nyloc-001"></a>
+
+### Écrou Nyloc v3 — frontières du filet corrigées
+
+`MOTO-HANDLEBAR-MOUNT-NYLOC-001` · révision `handlebar-mount-nyloc-v3` · **candidat non reçu**
+
+![Écrou Nyloc v3 — frontières du filet corrigées — handlebar-mount-nyloc-v3](handlebar-mount-nyloc-v3/quarter.png)
+
+[Image entière](handlebar-mount-nyloc-v3/quarter.png) · [Preuve du rendu](handlebar-mount-nyloc-v3/render-report.json) · vue `quarter`
+
+Source SHA-256 : `c82851ea5e7434de3477c9f1c91eb227f37729b946499ee688c0f825278c487e`  
+PNG SHA-256 : `ca0eeff9d73e7bf7bf0f8f220f79e0cb851e31fc7d721d032d0b7efaf284a325`
+
+[Blender](../../assets-src/moto-components/handlebar-clamps/mounting-nyloc-v3/handlebar-mount-nyloc-v3.blend) · [GLB](../../assets-src/moto-components/handlebar-clamps/mounting-nyloc-v3/handlebar-mount-nyloc-v3-inspection.glb) · [README source](../../assets-src/moto-components/handlebar-clamps/mounting-nyloc-v3/README.md) · [Revue et limites](handlebar-mount-nyloc-v3/README.md) · [Fiche](../workflow/records/moto-handlebar-mount-nyloc-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [underside-thread](handlebar-mount-nyloc-v3/underside-thread.png) · [preuve](handlebar-mount-nyloc-v3/render-report.json)
+- [crown-material](handlebar-mount-nyloc-v3/crown-material.png) · [preuve](handlebar-mount-nyloc-v3/render-report.json)
 
 </details>
 
@@ -297,6 +322,34 @@ PNG SHA-256 : `2c9814e904dbbc0529b8e34dc7526b2a92f4eb220cbac8fdb7ace9f7da18ab15`
 
 </details>
 
+
+<a id="moto-mirror-right-001"></a>
+
+### Rétroviseur droit v2 — cache de base rapproché
+
+`MOTO-MIRROR-RIGHT-001` · révision `mirror-right-v2` · **candidat à reprendre, non reçu**
+
+![Rétroviseur droit v2 — cache de base rapproché — mirror-right-v2](mirror-right-v2/whole-front.png)
+
+[Image entière](mirror-right-v2/whole-front.png) · [Preuve du rendu](mirror-right-v2/render-report.json) · vue `whole-front`
+
+Source SHA-256 : `af1bfd1155b02281eb549b428042728e55f7975f0fdc449806bb288d850e0a58`  
+PNG SHA-256 : `ff05469ae21f0296b36a7e0e15affa6193e4efa10b9dfd5a11fab5ef4151f539`
+
+[Blender](../../assets-src/moto-components/mirrors/mirror-right-v2.blend) · [GLB](../../assets-src/moto-components/mirrors/mirror-right-v2.glb) · [README source](../../assets-src/moto-components/mirrors/README-right-v2.md) · [Revue et limites](mirror-right-v2/README.md) · [Fiche](../workflow/records/moto-mirror-right-001.json)
+
+À reprendre sur cette v2 : le rapprochement cache/écrou est conservé, mais le filet sous l’écrou apparaît ondulé/segmenté dans la vue de base. La grille axiale non alignée aux crêtes est une cause plausible à vérifier ; diamètre, pas et montage restent estimés.
+[Diagnostic de construction du filet](../research/mirrors-thread-diagnostic/source-audit.json)
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [whole-back](mirror-right-v2/whole-back.png) · [preuve](mirror-right-v2/render-report.json)
+- [joint-close](mirror-right-v2/joint-close.png) · [preuve](mirror-right-v2/render-report.json)
+- [base-close](mirror-right-v2/base-close.png) · [preuve](mirror-right-v2/render-report.json)
+
+</details>
+
 Périmètre prévu : rétroviseur gauche: coque, verre, col, tige; rétroviseur droit: coque, verre, col, tige.
 
 <a id="groupe-9"></a>
@@ -475,6 +528,33 @@ PNG SHA-256 : `7dd5c6dded52ac3084ac8ed175dc9c634e477a4d4c9191d2834a6c5f5fa8b588`
 - [lower-opening](fork-bellows-v1/lower-opening.png) · [preuve](fork-bellows-v1/render-report.json)
 - [compression-estimated](fork-bellows-v1/compression-estimated.png) · [preuve](fork-bellows-v1/render-report.json)
 - [extension-estimated](fork-bellows-v1/extension-estimated.png) · [preuve](fork-bellows-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-fork-outer-left-001"></a>
+
+### Fourreau de fourche gauche — talon continu
+
+`MOTO-FORK-OUTER-LEFT-001` · révision `fork-outer-left-v1` · **candidat non reçu**
+
+![Fourreau de fourche gauche — talon continu — fork-outer-left-v1](fork-outer-left-v1/outer-quarter.png)
+
+[Image entière](fork-outer-left-v1/outer-quarter.png) · [Preuve du rendu](fork-outer-left-v1/render-report.json) · vue `outer-quarter`
+
+Source SHA-256 : `8c310db96ce2b7aacab52e49ea9305ceda833fca5a080754a4a43a3b0901e472`  
+PNG SHA-256 : `bfed2a99196ca9eeb28d5e3411e1a2b37b06fd5da71455a8fde23a80339e2328`
+
+[Blender](../../assets-src/moto-components/front-fork/outer-left/fork-outer-left-v1.blend) · [GLB](../../assets-src/moto-components/front-fork/outer-left/fork-outer-left-inspection.glb) · [README source](../../assets-src/moto-components/front-fork/outer-left/README.md) · [Revue et limites](fork-outer-left-v1/README.md) · [Fiche](../workflow/records/moto-fork-outer-left-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [inboard-quarter](fork-outer-left-v1/inboard-quarter.png) · [preuve](fork-outer-left-v1/render-report.json)
+- [inboard-pocket](fork-outer-left-v1/inboard-pocket.png) · [preuve](fork-outer-left-v1/render-report.json)
+- [outer-foot](fork-outer-left-v1/outer-foot.png) · [preuve](fork-outer-left-v1/render-report.json)
+- [top-opening](fork-outer-left-v1/top-opening.png) · [preuve](fork-outer-left-v1/render-report.json)
 
 </details>
 
@@ -785,26 +865,26 @@ PNG SHA-256 : `3e1d8de77bb47d314051462cf48b1a149da87265b0ae04e0ec3c063917f3924d`
 
 <a id="moto-instruments-001"></a>
 
-### Deux cadrans, aiguilles et boîtier du poste de conduite
+### Compteurs v2 — USB et graphismes repris
 
-`MOTO-INSTRUMENTS-001` · révision `instruments-v1` · **candidat non reçu**
+`MOTO-INSTRUMENTS-001` · révision `instruments-v2` · **candidat à reprendre, non reçu**
 
-![Deux cadrans, aiguilles et boîtier du poste de conduite — instruments-v1](instruments-v1/quarter.png)
+![Compteurs v2 — USB et graphismes repris — instruments-v2](instruments-v2/whole-front.png)
 
-[Image entière](instruments-v1/quarter.png) · [Preuve du rendu](instruments-v1/render-report.json) · vue `quarter`
+[Image entière](instruments-v2/whole-front.png) · [Preuve du rendu](instruments-v2/render-report.json) · vue `whole-front`
 
-Source SHA-256 : `e3321cee34967f7749dbfa8650fe01c404137c55cfb5c42881363f098cb91ec0`  
-PNG SHA-256 : `651badb90e8d096069c09063addc9e42d866177f6f0f19793abf0aaea4b1f3b9`
+Source SHA-256 : `dc4b3ccf26f35e3b4a4f10068306d841695901f987a43ebad65299cec132ad22`  
+PNG SHA-256 : `3087f0cc396c2db6779fd27b3aa102717079a2136c499eb9aced647ecdbcb97b`
 
-[Blender](../../assets-src/moto-components/instruments/instruments-v1.blend) · [GLB](../../assets-src/moto-components/instruments/instruments-inspection.glb) · [README source](../../assets-src/moto-components/instruments/README.md) · [Revue et limites](instruments-v1/README.md) · [Fiche](../workflow/records/moto-instruments-001.json)
+[Blender](../../assets-src/moto-components/instruments/instruments-v2.blend) · [GLB](../../assets-src/moto-components/instruments/instruments-v2-inspection.glb) · [README source](../../assets-src/moto-components/instruments/README_v2.md) · [Revue et limites](instruments-v2/README.md) · [Fiche](../workflow/records/moto-instruments-001.json)
 
+À reprendre sur cette v2 : le lissage des vitres mélange leur face avec leur tranche et produit des reflets segmentés. Les témoins à géométrie et éclairage identiques isolent ce défaut de normales. Une v3 séparée conserve les profils, graduations, matières et pivots ; ses rendus ont leurs propres preuves.
+[Diagnostic optique et témoins comparés](../research/instruments-v2/optical-edge-diagnostic-reading.json)
 
 <details>
 <summary>Autres vues Blender prouvées de cette révision</summary>
 
-- [front](instruments-v1/front.png) · [preuve](instruments-v1/render-report.json)
-- [driver-42](instruments-v1/driver-42.png) · [preuve](instruments-v1/render-report.json)
-- [rear](instruments-v1/rear.png) · [preuve](instruments-v1/render-report.json)
+- [driver-42](instruments-v2/driver-42.png) · [preuve](instruments-v2/render-report.json)
 
 </details>
 

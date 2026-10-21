@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "revision": "mirror-left-v2",
+  "source_file": "assets-src/moto-components/mirrors/mirror-left-v1.blend",
+  "source_sha256": "7725731e869b6edeea744965054518659eeb6355f6acc670718738a8144b1a30",
+  "export_file": "assets-src/moto-components/mirrors/mirror-left-v1.glb",
+  "export_sha256": "be1b5bcf2438cee25fb097f7bca96a6a8ae231d26500717638046af4becabcea",
+  "coordinate_system": "glTFmetres; Blender(x,y,z)->glTF(x,z,-y), physicalLH+X",
+  "node_rest_transform": "Root pivot translation only, quaternion(0,0,0,1), scale1. Actual GLB NodeIO inspected. Local axes equal world glTF at rest.",
+  "rotation_composition_order": "restQuaternion * yaw(worldZmapped) * pitch(worldUmapped); both refer to same root pivot",
+  "pivot_translation_glTF_m": [
+    0.24072271585464478,
+    0.23019269108772278,
+    0.08295915275812149
+  ],
+  "all_travel_estimated": true,
+  "gameplay_binding": false,
+  "physical_device_or_mechanical_tested": false,
+  "controls": [
+    {
+      "node": "LH mirror head adjustment PIVOT",
+      "type": "rotation",
+      "axis_local": [
+        0,
+        1,
+        0
+      ],
+      "range_degrees": [
+        -10,
+        10
+      ],
+      "function": "reviewyaw",
+      "function_status": "estimated"
+    },
+    {
+      "node": "LH mirror head adjustment PIVOT",
+      "type": "rotation",
+      "axis_local": [
+        0.9755259156227112,
+        0.010137728415429592,
+        -0.21965079009532928
+      ],
+      "range_degrees": [
+        -7,
+        7
+      ],
+      "function": "reviewpitch",
+      "function_status": "estimated"
+    }
+  ],
+  "cap_surface_status": "Original estimated1um grain on satin/flexible covers, using half strength of original2um source normal",
+  "prior_source_sha256": "bdd8a799b6a5ae07a5c076ba0c5a1019f6477ff9a4be5995229e13c2def3c6d0",
+  "prior_export_sha256": "fb796f4bbe842b7080ba5310aeab653a5fbc72d647f3a2c113309e27f256f8fa",
+  "stud_sampling_correction": "Only combined fixed stem body rebuilt with phase-aligned cosmetic stud. Nine other bodies, matrices, materials/images, head pivots and axes unchanged."
+}

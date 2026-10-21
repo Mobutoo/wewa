@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-FORK-OUTER-LEFT-001",
-  "label": "Fourreau de fourche gauche — candidat isolé",
+  "label": "Fourreau de fourche gauche — talon continu",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,9 +12,9 @@
     "material"
   ],
   "identity": {
-    "variant": "Current RDC appearance target, related PF121018 body, exact applicability not certified",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
-    "usage": "Separate candidate before estimated review-only assembly",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
       0.15,
       0.35,
@@ -28,7 +28,323 @@
     "D15"
   ],
   "claims": [],
-  "views": [],
+  "views": [
+    {
+      "name": "outer-quarter",
+      "camera_location_m": [
+        0.6,
+        0.14,
+        0.3
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.15
+      ],
+      "ortho_scale_m": 0.4,
+      "allow_deliberate_macro_crop": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "OUTER_LEFT_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.5696190895420083,
+        "farthest_actual_vertex_depth_m": 0.6905814504460288,
+        "projected_uv_min": [
+          0.37857683457881713,
+          0.09086372325406389
+        ],
+        "projected_uv_max": [
+          0.6214245812527849,
+          0.9388782739485287
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "LH fork outer body - relatedPF121018 candidate",
+            "vertices": 54778,
+            "depth_m": [
+              0.5696190895420083,
+              0.6905814504460288
+            ],
+            "projected_uv_min": [
+              0.37857683457881713,
+              0.09086372325406389
+            ],
+            "projected_uv_max": [
+              0.6214245812527849,
+              0.9388782739485287
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "bfed2a99196ca9eeb28d5e3411e1a2b37b06fd5da71455a8fde23a80339e2328",
+      "checkpoint_file": "checkpoint-outer-quarter.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "inboard-quarter",
+      "camera_location_m": [
+        -0.6,
+        0.16,
+        0.28
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.15
+      ],
+      "ortho_scale_m": 0.4,
+      "allow_deliberate_macro_crop": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "OUTER_LEFT_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.5752839178187855,
+        "farthest_actual_vertex_depth_m": 0.6861599306810268,
+        "projected_uv_min": [
+          0.3786989856477596,
+          0.08811174008414319
+        ],
+        "projected_uv_max": [
+          0.6213004803044297,
+          0.9401595917733953
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "LH fork outer body - relatedPF121018 candidate",
+            "vertices": 54778,
+            "depth_m": [
+              0.5752839178187855,
+              0.6861599306810268
+            ],
+            "projected_uv_min": [
+              0.3786989856477596,
+              0.08811174008414319
+            ],
+            "projected_uv_max": [
+              0.6213004803044297,
+              0.9401595917733953
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "7d5b7915f9f129e8a2105432c22b48696d7fdcae75365b63f2e9fe79b92f7823",
+      "checkpoint_file": "checkpoint-inboard-quarter.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "inboard-pocket",
+      "camera_location_m": [
+        -0.12,
+        0.045,
+        0.045
+      ],
+      "camera_target_m": [
+        -0.014,
+        0,
+        0.035
+      ],
+      "ortho_scale_m": 0.105,
+      "allow_deliberate_macro_crop": true,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "OUTER_LEFT_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.07953707028664081,
+        "farthest_actual_vertex_depth_m": 0.15292112478651929,
+        "projected_uv_min": [
+          -0.027347697504376378,
+          0.0072143198857339
+        ],
+        "projected_uv_max": [
+          0.8814590828471907,
+          3.2812818810719646
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "LH fork outer body - relatedPF121018 candidate",
+            "vertices": 54778,
+            "depth_m": [
+              0.07953707028664081,
+              0.15292112478651929
+            ],
+            "projected_uv_min": [
+              -0.027347697504376378,
+              0.0072143198857339
+            ],
+            "projected_uv_max": [
+              0.8814590828471907,
+              3.2812818810719646
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "f38653cb8f64fad89c05c688d354c9afc4a50b8e7e2716774fbe057a00b8c6ce",
+      "checkpoint_file": "checkpoint-inboard-pocket.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "outer-foot",
+      "camera_location_m": [
+        0.12,
+        0.045,
+        0.045
+      ],
+      "camera_target_m": [
+        0.005,
+        0,
+        0.014
+      ],
+      "ortho_scale_m": 0.105,
+      "allow_deliberate_macro_crop": true,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "OUTER_LEFT_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.033064458060574425,
+        "farthest_actual_vertex_depth_m": 0.15687018114727944,
+        "projected_uv_min": [
+          0.06760071585246052,
+          0.21086964557386967
+        ],
+        "projected_uv_max": [
+          0.9809864883477366,
+          3.4376638017939825
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "LH fork outer body - relatedPF121018 candidate",
+            "vertices": 54778,
+            "depth_m": [
+              0.033064458060574425,
+              0.15687018114727944
+            ],
+            "projected_uv_min": [
+              0.06760071585246052,
+              0.21086964557386967
+            ],
+            "projected_uv_max": [
+              0.9809864883477366,
+              3.4376638017939825
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "950aa2519337a864b866b1794a186dc822a6c6c65c52db6a3550e5046d9930f7",
+      "checkpoint_file": "checkpoint-outer-foot.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "top-opening",
+      "camera_location_m": [
+        0.08,
+        0.1,
+        0.47
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.3
+      ],
+      "ortho_scale_m": 0.11,
+      "allow_deliberate_macro_crop": true,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "OUTER_LEFT_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.17874672492121263,
+        "farthest_actual_vertex_depth_m": 0.4715289369522506,
+        "projected_uv_min": [
+          0.15593683593624696,
+          -1.3263497315194157
+        ],
+        "projected_uv_max": [
+          0.8440641252584928,
+          0.8079499200846652
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "LH fork outer body - relatedPF121018 candidate",
+            "vertices": 54778,
+            "depth_m": [
+              0.17874672492121263,
+              0.4715289369522506
+            ],
+            "projected_uv_min": [
+              0.15593683593624696,
+              -1.3263497315194157
+            ],
+            "projected_uv_max": [
+              0.8440641252584928,
+              0.8079499200846652
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "04c75401172aa3c5c01174f0ce308b3a8439bb44f47f59a53e28655953b29a35",
+      "checkpoint_file": "checkpoint-top-opening.json",
+      "reused_verified_checkpoint": false
+    }
+  ],
   "criteria": [],
   "gaps": [
     {
@@ -47,7 +363,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "fork-outer-left-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -55,63 +371,103 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": null,
+      "revision": "fork-outer-left-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Conditional related part and estimated local dimensions, no measured current RDC counterpart",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
       "status": "blocked",
-      "revision": null,
+      "revision": "fork-outer-left-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Conditional related part and estimated local dimensions, no measured current RDC counterpart",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "fork-outer-left-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/front-fork/outer-left/fork-outer-left-v1.blend",
+          "kind": "editable_source",
+          "revision": "fork-outer-left-v1",
+          "sha256": "8c310db96ce2b7aacab52e49ea9305ceda833fca5a080754a4a43a3b0901e472"
+        },
+        {
+          "path": "../../reviews/fork-outer-left-v1/outer-quarter.png",
+          "kind": "isolated_comparison",
+          "revision": "fork-outer-left-v1",
+          "sha256": "bfed2a99196ca9eeb28d5e3411e1a2b37b06fd5da71455a8fde23a80339e2328"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "fork-outer-left-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/fork-outer-left-v1/top-opening.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "fork-outer-left-v1",
+          "sha256": "04c75401172aa3c5c01174f0ce308b3a8439bb44f47f59a53e28655953b29a35"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "fork-outer-left-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/fork-outer-left-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "fork-outer-left-v1",
+          "sha256": "d0dd6240023679e570cba9acf70297fd4b1069e23dd5eb545c1babe11d367df5"
+        }
+      ],
+      "reason": "Source isolée : col estimé 48 mm et ouverture basse du soufflet actuel 40,6 mm incompatibles. Interface réelle à résoudre avant assemblage ; aucune pose ou compatibilité OEM acquise.",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "fork-outer-left-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/fork-outer-left-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "fork-outer-left-v1",
+          "sha256": "e79e9392bdf9eb53eb3e9dafae984996ba115131a972a814d3a743a522673682"
+        },
+        {
+          "path": "../../reviews/fork-outer-left-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "fork-outer-left-v1",
+          "sha256": "a2f07aa8dc8c69c385814874065025ebe3bdb90061abdc08166b2c1090dc6ace"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "fork-outer-left-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "fork-outer-left-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -120,8 +476,10 @@
   },
   "active_detailed_fabrication": false,
   "source_revision": "fork-outer-left-v1",
-  "export_revision": null,
-  "next_action": "G3 candidate triangulation corrected and numerical checks pass; pause source fabrication while Nyloc thread is corrected, then short diffuse/reflection previews before freeze",
+  "export_revision": "fork-outer-left-v1-inspection",
+  "next_action": "Comparer les cinq vues à la référence attribuée et résoudre le couple fourreau/soufflet avant une pose installée. Dimensions estimées, aucune réception artistique.",
   "art_accepted": false,
-  "production_group": 13
+  "production_group": 13,
+  "candidate_source": "../../../assets-src/moto-components/front-fork/outer-left/README.md",
+  "candidate_review": "../../reviews/fork-outer-left-v1/README.md"
 }

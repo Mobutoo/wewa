@@ -1,0 +1,79 @@
+{
+  "source_sha256": "94a2aa0b4359738e1f701445d196f2bf39d91a75d57bc0f58ca81242061491b4",
+  "export_sha256": "5c72de13912c019a01b1fb4dab27212a76f3f77da7dbff7466a618555bd015ed",
+  "contract_sha256": "701109f2cdd1f2dfee391141cc1fa6652d1ee2797c54c3575fdc2c658d8def31",
+  "inspector_path": "tools/motorcycle-lab/review-v4.js",
+  "inspector_sha256": "2bee49c41f3e423eff9f5a03db58a5a1fadc22864fe7ebe2bb581d4360b72c3c",
+  "tool_path": "tools/check_kickstarter_browser_motion_v2.py",
+  "tool_sha256": "ead7644a0a3243b688d3d73328e9668df65a36ecdeaf9795999092e7d2e408d1",
+  "actual_matched_vertex": {
+    "mesh": "Kick ribbed pedal rubber - fixed to arm",
+    "vertex_index": 18048,
+    "distance": 1.0536712127723509e-08,
+    "point": [
+      -0.22536397725343704,
+      -0.39563605189323425,
+      -0.19999999552965164
+    ]
+  },
+  "states": [
+    {
+      "state": "rest",
+      "pose": {
+        "kick_fold": 0,
+        "kick_stroke": 0
+      },
+      "actual_glTF_world_m": [
+        -0.22536397725343704,
+        -0.39563605189323425,
+        -0.19999999552965164
+      ],
+      "Blender_witness_glTF_world_m": [
+        -0.22536398470401764,
+        -0.39563605189323425,
+        -0.19999998807907104
+      ],
+      "distance_m": 1.0536712127723509e-08
+    },
+    {
+      "state": "fold90",
+      "pose": {
+        "kick_fold": 90,
+        "kick_stroke": 0
+      },
+      "actual_glTF_world_m": [
+        -0.3410000130534172,
+        -0.39563605189323425,
+        -0.34636396914720535
+      ],
+      "Blender_witness_glTF_world_m": [
+        -0.3410000205039978,
+        -0.39563605189323425,
+        -0.34636396169662476
+      ],
+      "distance_m": 1.0536712127723509e-08
+    },
+    {
+      "state": "stroke60",
+      "pose": {
+        "kick_fold": 90,
+        "kick_stroke": 60
+      },
+      "actual_glTF_world_m": [
+        -0.3410000130534172,
+        -0.5559178673146259,
+        -0.5752522656300112
+      ],
+      "Blender_witness_glTF_world_m": [
+        -0.3410000205039978,
+        -0.5559177994728088,
+        -0.5752522349357605
+      ],
+      "distance_m": 7.48342188982686e-08
+    }
+  ],
+  "max_error_m": 7.48342188982686e-08,
+  "technical_passed": true,
+  "scope": "Three actual moving vertex states versus frozen Blender direction witness; not full mechanics, estimated joint stops or physical iPhone qualification",
+  "art_accepted": false
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "scope": "Read-only construction audit after frozen optical v3 source; no mesh, normals, materials, export or saved image changed.",
+  "sources": [
+    {
+      "side": "left",
+      "source_path": "assets-src/moto-components/mirrors/mirror-left-v1.blend",
+      "source_sha256": "bdd8a799b6a5ae07a5c076ba0c5a1019f6477ff9a4be5995229e13c2def3c6d0",
+      "pitch_working_m": 0.00125,
+      "pitch_status": "Estimated cosmetic geometry, not a manufacturer specification",
+      "construction_objects": [
+        {
+          "object": "LH cosmetic helical stud construction - thread unknown",
+          "vertices": 19440,
+          "axial_levels": 270,
+          "axial_step_m_range": [
+            0.00010408399999999735,
+            0.0001041000000000028
+          ],
+          "analytic_profile_vertex_radius_error_max_m": 2.115864244315452e-08,
+          "crease_phase_distance_min_max": [
+            3.147125243407878e-06,
+            0.14998763485524122
+          ],
+          "explanation": "Vertices follow the intended analytic radial profile, but uniform Z rings are not aligned with its four helical slope break curves. Linear faces therefore cross creases; a correct radial value at vertices does not ensure a smooth or constant-width helical ridge."
+        }
+      ],
+      "source_unchanged": true
+    },
+    {
+      "side": "right",
+      "source_path": "assets-src/moto-components/mirrors/mirror-right-v2.blend",
+      "source_sha256": "af1bfd1155b02281eb549b428042728e55f7975f0fdc449806bb288d850e0a58",
+      "pitch_working_m": 0.00125,
+      "pitch_status": "Estimated cosmetic geometry, not a manufacturer specification",
+      "construction_objects": [
+        {
+          "object": "RH cosmetic helical stud construction - thread unknown",
+          "vertices": 19440,
+          "axial_levels": 270,
+          "axial_step_m_range": [
+            0.00010408399999999735,
+            0.0001041000000000028
+          ],
+          "analytic_profile_vertex_radius_error_max_m": 2.115864244315452e-08,
+          "crease_phase_distance_min_max": [
+            3.147125243407878e-06,
+            0.14998763485524122
+          ],
+          "explanation": "Vertices follow the intended analytic radial profile, but uniform Z rings are not aligned with its four helical slope break curves. Linear faces therefore cross creases; a correct radial value at vertices does not ensure a smooth or constant-width helical ridge."
+        }
+      ],
+      "source_unchanged": true
+    }
+  ],
+  "observed_visual_reserve": "mirror-right-v2/base-close.png shows wavy/segmented bright thread below the nut. This audit tests a sampling cause, not an OEM shape.",
+  "next_conditional_method": "If revised, preserve the same estimated analytic profile/radius/pitch and place the four phase-break helices in mesh edges, with explicit closed runout/caps. Check full solid after union, actual triangle/UV areas, retained non-stud buffers, neutral/reflective closeups and mounting interfaces before final rendering.",
+  "limits": [
+    "The final Boolean mesh may also affect normals; this audit alone does not isolate every contribution to the saved render.",
+    "No OEM diameter/pitch/hand or mating-thread compatibility is established.",
+    "Do not infer artistic acceptance from this numerical inspection."
+  ],
+  "art_accepted": false
+}

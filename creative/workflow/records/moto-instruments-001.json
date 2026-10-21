@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-INSTRUMENTS-001",
-  "label": "Deux cadrans, aiguilles et boîtier du poste de conduite",
+  "label": "Compteurs v2 — USB et graphismes repris",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -9,13 +9,12 @@
   "parent_asset": "MOTO-BOXER-RDC-001",
   "recipes": [
     "vehicle",
-    "material",
-    "interface"
+    "material"
   ],
   "identity": {
-    "variant": "Current RDC placement with related-part references, exact part identity not certified",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
-    "usage": "Separate candidate for first-person cockpit review",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
       0.15,
       0.35,
@@ -64,96 +63,46 @@
   ],
   "views": [
     {
-      "name": "front",
+      "name": "whole-front",
       "camera_location_m": [
-        0.0,
-        0.4312312602996826,
-        0.41944754123687744
+        -3.9098914328405954e-08,
+        0.327239453792572,
+        0.35564541816711426
       ],
       "camera_target_m": [
-        0.0,
-        -0.11999999731779099,
-        0.07500000298023224
+        -5.46782785715294e-10,
+        -0.11374553292989731,
+        0.08008740842342377
       ],
       "lens_mm": 70,
-      "speed_kmh": 0,
-      "fuel_fraction": 0.65,
-      "pose_changes_saved_to_source": false,
-      "raw_linear_hdr": {
-        "private_path": "/workspace/wewa-assets/render-raw/instruments-v1/front-raw-0001.exr",
-        "sha256": "718faba11bd8370624b5a30c0a1fbd7972b97e898fe619a4cb7f592166b359a7",
-        "bytes": 5134453,
-        "in_public_repo": false
-      }
-    },
-    {
-      "name": "quarter",
-      "camera_location_m": [
-        0.25,
-        0.30000001192092896,
-        0.3700000047683716
-      ],
-      "camera_target_m": [
-        0.0,
-        -0.11999999731779099,
-        0.07500000298023224
-      ],
-      "lens_mm": 70,
-      "speed_kmh": 0,
-      "fuel_fraction": 0.65,
-      "pose_changes_saved_to_source": false,
-      "raw_linear_hdr": {
-        "private_path": "/workspace/wewa-assets/render-raw/instruments-v1/quarter-raw-0001.exr",
-        "sha256": "decbf990ea260c09a73abaf963647d431111ee4007e3e30e41c67f4336879477",
-        "bytes": 5079623,
-        "in_public_repo": false
-      }
+      "PNG_path": "creative/reviews/instruments-v2/whole-front.png",
+      "PNG_sha256": "3087f0cc396c2db6779fd27b3aa102717079a2136c499eb9aced647ecdbcb97b",
+      "EXR_private_path": "/workspace/wewa-assets/renders/instruments-v2/whole-front.exr",
+      "EXR_sha256": "ab019870d40475979d9b2289b8b6fc1ab0996b2b7fd4c625d5dc933467420b43",
+      "actually_saved": true,
+      "checkpoint_config_sha256": "2f787980908573a5bb00af7341199876f9942d0dbca515607738c466518759ea",
+      "visual_read_by_agent": true
     },
     {
       "name": "driver-42",
       "camera_location_m": [
-        0.0,
-        0.36000001430511475,
-        0.36000001430511475
+        0.13,
+        0.36,
+        0.36
       ],
       "camera_target_m": [
-        0.0,
-        -0.11999999731779099,
-        0.08500000089406967
-      ],
-      "lens_mm": 60,
-      "speed_kmh": 42,
-      "fuel_fraction": 0.65,
-      "pose_changes_saved_to_source": false,
-      "raw_linear_hdr": {
-        "private_path": "/workspace/wewa-assets/render-raw/instruments-v1/driver-42-raw-0001.exr",
-        "sha256": "ea7ecd128958e931764e23feea489dbe4db00fb4602287bf4a4d11c592ded26c",
-        "bytes": 4980692,
-        "in_public_repo": false
-      }
-    },
-    {
-      "name": "rear",
-      "camera_location_m": [
-        0.0,
-        -0.6499999761581421,
-        0.10000000149011612
-      ],
-      "camera_target_m": [
-        0.0,
-        -0.11999999731779099,
-        0.07500000298023224
+        0,
+        -0.12,
+        0.085
       ],
       "lens_mm": 70,
-      "speed_kmh": 0,
-      "fuel_fraction": 0.65,
-      "pose_changes_saved_to_source": false,
-      "raw_linear_hdr": {
-        "private_path": "/workspace/wewa-assets/render-raw/instruments-v1/rear-raw-0001.exr",
-        "sha256": "c0ff30d6698d258eae2fcb436613a1bf2b7e4e4e5527ae459671ca3bc1549a89",
-        "bytes": 3460560,
-        "in_public_repo": false
-      }
+      "PNG_path": "creative/reviews/instruments-v2/driver-42.png",
+      "PNG_sha256": "029f196eb55a325e991c315ac6942a3a581d044329dac317643ea03896ee7644",
+      "EXR_private_path": "/workspace/wewa-assets/renders/instruments-v2/driver-42.exr",
+      "EXR_sha256": "eff5261a54cb820b4b4c6d83ca0b23ed78a99ea44ecff60e45a36adf6a6f68a3",
+      "actually_saved": true,
+      "checkpoint_config_sha256": "854b3cc00c27e65fa3c66b3171cf509918a50b477acc9c650d003a3e67619e76",
+      "visual_read_by_agent": true
     }
   ],
   "criteria": [
@@ -189,7 +138,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": "instruments-v1",
+      "revision": "instruments-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -197,103 +146,103 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": "instruments-v1",
+      "revision": "instruments-v2",
       "reviewer": null,
       "evidence": [],
-      "reason": "Physical part dimensions and calibrated documentary comparison remain missing",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
       "status": "blocked",
-      "revision": "instruments-v1",
+      "revision": "instruments-v2",
       "reviewer": null,
       "evidence": [],
-      "reason": "Physical part dimensions and calibrated documentary comparison remain missing",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
       "status": "rework",
-      "revision": "instruments-v1",
+      "revision": "instruments-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../../assets-src/moto-components/instruments/instruments-v1.blend",
+          "path": "../../../assets-src/moto-components/instruments/instruments-v2.blend",
           "kind": "editable_source",
-          "revision": "instruments-v1",
-          "sha256": "e3321cee34967f7749dbfa8650fe01c404137c55cfb5c42881363f098cb91ec0"
+          "revision": "instruments-v2",
+          "sha256": "dc4b3ccf26f35e3b4a4f10068306d841695901f987a43ebad65299cec132ad22"
         },
         {
-          "path": "../../reviews/instruments-v1/front.png",
+          "path": "../../reviews/instruments-v2/whole-front.png",
           "kind": "isolated_comparison",
-          "revision": "instruments-v1",
-          "sha256": "d6930869d327a968658ef79b3ebdbbce7f9182d211066fc876b44bda4d806a7c"
+          "revision": "instruments-v2",
+          "sha256": "3087f0cc396c2db6779fd27b3aa102717079a2136c499eb9aced647ecdbcb97b"
         }
       ],
-      "reason": "Concrete candidate proof recorded; exact dimensions, artistic comparison and installed function still open",
+      "reason": "V2 source/USB/artwork and two actual96 views retained. Glass face-to-side smoothing creates segmented reflections; controlled fixed-geometry witnesses isolate this optical-normal defect. Separate v3 frozen correction is awaiting final views, no artistic acceptance.",
       "reviewed_at": null
     },
     "G4": {
       "status": "rework",
-      "revision": "instruments-v1",
+      "revision": "instruments-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/instruments-v1/driver-42.png",
+          "path": "../../reviews/instruments-v2/driver-42.png",
           "kind": "surface_or_sound_comparison",
-          "revision": "instruments-v1",
-          "sha256": "dd410053b6f169ca26ab94cb44c11225a5d753d63b64d2623507f11af08b2183"
+          "revision": "instruments-v2",
+          "sha256": "029f196eb55a325e991c315ac6942a3a581d044329dac317643ea03896ee7644"
         }
       ],
-      "reason": "Concrete candidate proof recorded; exact dimensions, artistic comparison and installed function still open",
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G5": {
       "status": "rework",
-      "revision": "instruments-v1",
+      "revision": "instruments-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/instruments-v1/source-geometry-check.json",
+          "path": "../../reviews/instruments-v2/source-geometry-check.json",
           "kind": "motion_or_interface_check",
-          "revision": "instruments-v1",
-          "sha256": "cea0e4b3365cbf4ad7ff5c27914be212ca999f0087e959c5c222e53860458a92"
+          "revision": "instruments-v2",
+          "sha256": "4fbab8f3fa1e962a470b683bddbf30bf8ac6df53f8133ed251fd18b6cf6143ca"
         }
       ],
-      "reason": "Concrete candidate proof recorded; exact dimensions, artistic comparison and installed function still open",
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G6": {
       "status": "rework",
-      "revision": "instruments-v1",
+      "revision": "instruments-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/instruments-v1/geometry-check.json",
+          "path": "../../reviews/instruments-v2/export-buffer-check.json",
           "kind": "technical_export_check",
-          "revision": "instruments-v1",
-          "sha256": "73edf518035a5c419d9eb6fafa9e41aeb1563e5ff0f1c37fca69b626efd70dcf"
+          "revision": "instruments-v2",
+          "sha256": "4bea0f188830a197afdcde70559d205e5d4fc6b7c8149115cb25ecde7eba39a1"
         },
         {
-          "path": "../../reviews/cockpit-v1/engine-pose-42.png",
+          "path": "../../reviews/instruments-v2/inspection-v3/engine-driver.png",
           "kind": "real_runtime_comparison",
-          "revision": "instruments-v1",
-          "sha256": "d8d5a6928e75a5cab482391941c0a18783b2095e64b1b91707dd228550ee7d81"
+          "revision": "instruments-v2",
+          "sha256": "e8c08a3e356057d3daf16df31e1620c336bdaa2654a5d7b69fe37776cb138a93"
         }
       ],
-      "reason": "Stricter current actual-buffer test rejects eight exactly-zero marking triangles; preserve historical source and fix in next revision",
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": "instruments-v1",
+      "revision": "instruments-v2",
       "reviewer": null,
       "evidence": [],
-      "reason": "Inspection export, not a qualified mobile LOD; no physical hardware cost measurement",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": "instruments-v1",
+      "revision": "instruments-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -301,12 +250,21 @@
     }
   },
   "active_detailed_fabrication": false,
-  "source_revision": "instruments-v1",
-  "export_revision": "instruments-v1-inspection",
-  "next_action": "Separate v2 source dc4b3ccf/GLB444071ff frozen, two needle controls and cleaned FONT geometry checked; complete hash-bound final views before replacement registration",
+  "source_revision": "instruments-v2",
+  "export_revision": "instruments-v2-inspection",
+  "next_action": "Complete source-specific final v3 views and source/export/runtime checks, replace v2 under same ID only with its own proofs. Preserve v2 optical diagnostic and conditional dial/gear calibration limits.",
   "art_accepted": false,
-  "candidate_source": "../../../assets-src/moto-components/instruments/README.md",
-  "candidate_review": "../../reviews/instruments-v1/README.md",
+  "candidate_source": "../../../assets-src/moto-components/instruments/README_v2.md",
+  "candidate_review": "../../reviews/instruments-v2/README.md",
   "graphic_style": "../../GRAPHIC_STYLE.md",
-  "pending_revision": "instruments-v2"
+  "pending_revision": "instruments-v3",
+  "previous_revisions": [
+    {
+      "revision": "instruments-v1",
+      "source": "../../../assets-src/moto-components/instruments/README.md",
+      "review": "../../reviews/instruments-v1/README.md",
+      "art_accepted": false
+    }
+  ],
+  "production_group": null
 }

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-HANDLEBAR-MOUNT-NYLOC-001",
-  "label": "Écrou Nyloc M10 de fixation guidon — pièce isolée",
+  "label": "Écrou Nyloc v3 — frontières du filet corrigées",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,9 +12,9 @@
     "material"
   ],
   "identity": {
-    "variant": "Current RDC visual target, related isolated part references; exact part and local dimensions not certified",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
-    "usage": "Separate detailed candidate before review-only assembly",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
       0.15,
       0.35,
@@ -28,7 +28,248 @@
     "D15"
   ],
   "claims": [],
-  "views": [],
+  "views": [
+    {
+      "name": "quarter",
+      "camera_location_m": [
+        0.032,
+        0.038,
+        0.031
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.005
+      ],
+      "ortho_scale_m": 0.029,
+      "allow_deliberate_macro_crop": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "NYLOC_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.04704244272049932,
+        "farthest_actual_vertex_depth_m": 0.06604811978650248,
+        "projected_uv_min": [
+          0.16784934172268473,
+          0.16511055369362976
+        ],
+        "projected_uv_max": [
+          0.8321505757043166,
+          0.8247970320794016
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Locknut metal body - conditionalDIN985M10 with original female ",
+            "vertices": 100848,
+            "depth_m": [
+              0.04704244272049932,
+              0.06604811978650248
+            ],
+            "projected_uv_min": [
+              0.16784934172268473,
+              0.16511055369362976
+            ],
+            "projected_uv_max": [
+              0.8321505757043166,
+              0.8247970320794016
+            ],
+            "finite": true
+          },
+          {
+            "object": "Nonmetal locking insert - unloaded visualestimate",
+            "vertices": 14976,
+            "depth_m": [
+              0.048168670498307115,
+              0.06093690597270528
+            ],
+            "projected_uv_min": [
+              0.27068994023273185,
+              0.45156981651158196
+            ],
+            "projected_uv_max": [
+              0.7293099974392987,
+              0.7885651282047693
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "ca0eeff9d73e7bf7bf0f8f220f79e0cb851e31fc7d721d032d0b7efaf284a325",
+      "checkpoint_file": "checkpoint-quarter.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "underside-thread",
+      "camera_location_m": [
+        0.03,
+        0.033,
+        -0.026
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.004
+      ],
+      "ortho_scale_m": 0.029,
+      "allow_deliberate_macro_crop": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "NYLOC_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.04438116065159317,
+        "farthest_actual_vertex_depth_m": 0.0633478822389631,
+        "projected_uv_min": [
+          0.17033186032926634,
+          0.1774894228719836
+        ],
+        "projected_uv_max": [
+          0.8296688108938033,
+          0.8770954779201331
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Locknut metal body - conditionalDIN985M10 with original female ",
+            "vertices": 100848,
+            "depth_m": [
+              0.04438116065159317,
+              0.0633478822389631
+            ],
+            "projected_uv_min": [
+              0.17033186032926634,
+              0.1774894228719836
+            ],
+            "projected_uv_max": [
+              0.8296688108938033,
+              0.8770954779201331
+            ],
+            "finite": true
+          },
+          {
+            "object": "Nonmetal locking insert - unloaded visualestimate",
+            "vertices": 14976,
+            "depth_m": [
+              0.050020396898675684,
+              0.06225058490950616
+            ],
+            "projected_uv_min": [
+              0.2706917629340586,
+              0.4552699784811357
+            ],
+            "projected_uv_max": [
+              0.7293089082890111,
+              0.8382862915773277
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "91493396d6d846be4ffcbcadd52f831f93bc388e9475d776258c03e8365ada0f",
+      "checkpoint_file": "checkpoint-underside-thread.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "crown-material",
+      "camera_location_m": [
+        0.016,
+        0.02,
+        0.029
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.008
+      ],
+      "ortho_scale_m": 0.018,
+      "allow_deliberate_macro_crop": true,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "NYLOC_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.026053749072495663,
+        "farthest_actual_vertex_depth_m": 0.044633358883146124,
+        "projected_uv_min": [
+          -0.037359739574106654,
+          -0.2556121136589786
+        ],
+        "projected_uv_max": [
+          1.037359673056977,
+          0.9174444568746845
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Locknut metal body - conditionalDIN985M10 with original female ",
+            "vertices": 100848,
+            "depth_m": [
+              0.026053749072495663,
+              0.044633358883146124
+            ],
+            "projected_uv_min": [
+              -0.037359739574106654,
+              -0.2556121136589786
+            ],
+            "projected_uv_max": [
+              1.037359673056977,
+              0.9174444568746845
+            ],
+            "finite": true
+          },
+          {
+            "object": "Nonmetal locking insert - unloaded visualestimate",
+            "vertices": 14976,
+            "depth_m": [
+              0.027120365135267027,
+              0.038772891201251186
+            ],
+            "projected_uv_min": [
+              0.13055598051474482,
+              0.17658999162218514
+            ],
+            "projected_uv_max": [
+              0.8694439692766185,
+              0.8517638653430117
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "03ec36f0697fafb8e1e0ee0a6834526cbd22356530e4335cd7ce684a802afd0c",
+      "checkpoint_file": "checkpoint-crown-material.json",
+      "reused_verified_checkpoint": false
+    }
+  ],
   "criteria": [],
   "gaps": [
     {
@@ -47,7 +288,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "handlebar-mount-nyloc-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -55,74 +296,123 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": null,
+      "revision": "handlebar-mount-nyloc-v3",
       "reviewer": null,
       "evidence": [],
-      "reason": "Local dimensions/camera and exact applicability unresolved",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
       "status": "blocked",
-      "revision": null,
+      "revision": "handlebar-mount-nyloc-v3",
       "reviewer": null,
       "evidence": [],
-      "reason": "Local dimensions/camera and exact applicability unresolved",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
       "status": "rework",
-      "revision": null,
+      "revision": "handlebar-mount-nyloc-v3",
       "reviewer": null,
-      "evidence": [],
-      "reason": "Actual96sample view exposes zigzags on female thread crest; geometry sampling correction required, not tangent or normalmap repair",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/handlebar-clamps/mounting-nyloc-v3/handlebar-mount-nyloc-v3.blend",
+          "kind": "editable_source",
+          "revision": "handlebar-mount-nyloc-v3",
+          "sha256": "c82851ea5e7434de3477c9f1c91eb227f37729b946499ee688c0f825278c487e"
+        },
+        {
+          "path": "../../reviews/handlebar-mount-nyloc-v3/quarter.png",
+          "kind": "isolated_comparison",
+          "revision": "handlebar-mount-nyloc-v3",
+          "sha256": "ca0eeff9d73e7bf7bf0f8f220f79e0cb851e31fc7d721d032d0b7efaf284a325"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "handlebar-mount-nyloc-v3",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-mount-nyloc-v3/crown-material.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "handlebar-mount-nyloc-v3",
+          "sha256": "03ec36f0697fafb8e1e0ee0a6834526cbd22356530e4335cd7ce684a802afd0c"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "handlebar-mount-nyloc-v3",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-mount-nyloc-v3/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "handlebar-mount-nyloc-v3",
+          "sha256": "af57c5e0154713b7372bf705f3e3c35e27f0857b7f00457152a16ff2a77e1c92"
+        }
+      ],
+      "reason": "Unité isolée liée à un écrou M10 Nyloc de catalogue apparenté ; dimensions conditionnelles DIN985 et insert/coating estimés, aucune compatibilité de pile ou certification OEM RDC. Pas de pose installée.",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "handlebar-mount-nyloc-v3",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-mount-nyloc-v3/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "handlebar-mount-nyloc-v3",
+          "sha256": "96d59121464c4985a94f0008cd7f140566c419e7b3ef586e730dd9794f63fc94"
+        },
+        {
+          "path": "../../reviews/handlebar-mount-nyloc-v3/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "handlebar-mount-nyloc-v3",
+          "sha256": "0e16daf3d6c926554aa1d7521cd7d6c78652bf4b5bc6faaccd553b267254fc08"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "handlebar-mount-nyloc-v3",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "handlebar-mount-nyloc-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "",
       "reviewed_at": null
     }
   },
-  "active_detailed_fabrication": true,
-  "source_revision": "handlebar-mount-nyloc-v1",
-  "export_revision": null,
-  "next_action": "Reject6856/1b1 diagnostic:96sample view exposes stair-stepped helical crest. Preserve old gel and images, rebuild thread-aligned topology in separate revision, then recheck actual buffers/previews",
+  "active_detailed_fabrication": false,
+  "source_revision": "handlebar-mount-nyloc-v3",
+  "export_revision": "handlebar-mount-nyloc-v3-inspection",
+  "next_action": "Revoir les trois vues finales et les références attribuées ; conserver profil/cotes conditionnels et résoudre la pile guidon avant assemblage.",
   "art_accepted": false,
   "production_group": 1,
-  "pending_revision": "handlebar-mount-nyloc-v3"
+  "previous_revisions": [
+    {
+      "revision": "handlebar-mount-nyloc-v1",
+      "source": null,
+      "review": null,
+      "art_accepted": false
+    }
+  ],
+  "candidate_source": "../../../assets-src/moto-components/handlebar-clamps/mounting-nyloc-v3/README.md",
+  "candidate_review": "../../reviews/handlebar-mount-nyloc-v3/README.md"
 }

@@ -1,0 +1,14 @@
+"""Seal this component only after source renders and their explicit visual review."""
+import json,hashlib
+from pathlib import Path
+from PIL import Image
+HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[3];OUT=ROOT/'creative/reviews/fork-outer-left-v1'
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+s=json.loads((OUT/'source-geometry-check.json').read_text());g=json.loads((OUT/'geometry-check.json').read_text());r=json.loads((OUT/'render-report.json').read_text());review=json.loads((OUT/'source-render-review.json').read_text());ss=sha(HERE/'fork-outer-left-v1.blend');es=sha(HERE/'fork-outer-left-inspection.glb');assert s['source_sha256']==g['source_sha256']==r['source_sha256']==review['source_sha256']==ss and s['export_sha256']==g['sha256']==r['export_sha256']==review['export_sha256']==es and g['technical_passed'];names={'outer-quarter','inboard-quarter','outer-foot','inboard-pocket','top-opening'};assert r['samples']==96 and {v['name']for v in r['views']}==names and set(review['images_actually_read'])==names
+for v in r['views']:
+ p=OUT/(v['name']+'.png');cp=json.loads((OUT/('checkpoint-'+v['name']+'.json')).read_text());assert cp['source_sha256']==ss and cp['export_sha256']==es and cp['PNG_sha256']==sha(p)and cp['view']['camera_preflight']['technical_preflight_passed']
+ with Image.open(p)as im:assert im.size==(1000,1400)
+files=[p for p in HERE.rglob('*')if p.is_file()and p.suffix not in['.blend1','.pyc']and'__pycache__'not in p.parts];files +=[OUT/n for n in['README.md','source-geometry-check.json','geometry-check.json','source-shading-check.json','gray-review.json','material-preview-review.json','geometry-preservation-check.json','material-build-report.json','material-buffer-check.json','render-report.json','source-render-review.json']]
+for pattern in['gray-*.png','gray-*.json','reflection-*.png','reflection-*.json','preview-*.png','preview-*.json']:files+=list(OUT.glob(pattern))
+for n in names:files +=[OUT/(n+'.png'),OUT/('checkpoint-'+n+'.json')]
+files +=[ROOT/'creative/research/front-fork'/n for n in['outer-left-v1-production.json','outer-left-proportion-study.json','planar-triangulation-note.md']];files=sorted(set(files));manifest={'component_id':'MOTO-FORK-OUTER-LEFT-001','revision':'fork-outer-left-v1','scope':'One isolated original related-variant candidate; no hydraulic mechanism, certified RDC interfaces or installed pose. Parent runtime and independently maintained documentary audits excluded.','files':[{'path':str(p.relative_to(ROOT)),'bytes':p.stat().st_size,'sha256':sha(p)}for p in files],'current_RDC_identity_verified':False,'all_physical_dimensions_estimated':True,'cast_identifier_glyphs_modelled':False,'bellows_and_brake_interface_verified':False,'art_accepted':False,'physical_iphone_tested':False};(OUT/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');print('WEWA_FORK_OUTER_LEFT_SEALED',len(files),sha(OUT/'manifest.json'))

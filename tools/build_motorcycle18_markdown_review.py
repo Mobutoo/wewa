@@ -89,6 +89,18 @@ def choose_image(images):
 
 
 def known_rework(component):
+    if component["candidate"]:
+        source_hash = gallery.sha(component["candidate"]["source"])
+        if (component["id"] == "MOTO-MIRROR-RIGHT-001" and
+                source_hash == "af1bfd1155b02281eb549b428042728e55f7975f0fdc449806bb288d850e0a58"):
+            audit = ROOT / "creative/research/mirrors-thread-diagnostic/source-audit.json"
+            return ["À reprendre sur cette v2 : le rapprochement cache/écrou est conservé, mais le filet sous l’écrou apparaît ondulé/segmenté dans la vue de base. La grille axiale non alignée aux crêtes est une cause plausible à vérifier ; diamètre, pas et montage restent estimés.",
+                    link(audit, "Diagnostic de construction du filet")]
+        if (component["id"] == "MOTO-INSTRUMENTS-001" and
+                source_hash == "dc4b3ccf26f35e3b4a4f10068306d841695901f987a43ebad65299cec132ad22"):
+            audit = ROOT / "creative/research/instruments-v2/optical-edge-diagnostic-reading.json"
+            return ["À reprendre sur cette v2 : le lissage des vitres mélange leur face avec leur tranche et produit des reflets segmentés. Les témoins à géométrie et éclairage identiques isolent ce défaut de normales. Une v3 séparée conserve les profils, graduations, matières et pivots ; ses rendus ont leurs propres preuves.",
+                    link(audit, "Diagnostic optique et témoins comparés")]
     if (component["id"] == "MOTO-KICKSTARTER-001" and component["candidate"]
             and gallery.sha(component["candidate"]["source"]) == "6fade26e0f95de87cc18a8891f15b6be3b08b1a66ebca31bdce984fb2ac8f013"):
         audit_dir = ROOT / "creative/research"

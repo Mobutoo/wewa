@@ -1,0 +1,27 @@
+{
+  "component_id": "MOTO-ENGINE-COVER-LEFT-001",
+  "source_rejected_sha256": "44a98e82ab5a426f6ec75b2736e1dc6bf4941c02e787858e8e3dc19f9a676fa7",
+  "cause_status": "Non-rim sharp flags make striae worse; residual striae remain after clearing3626flags in memory. Adaptive origin-centred polar samples cross steep, narrow local pad blends with uneven angular widths.",
+  "actual_observed_image": "/workspace/wewa-assets/work-in-progress/engine-cover-left-v2/preview/front-fixation-transition.png",
+  "diagnostic_image": "/workspace/wewa-assets/work-in-progress/engine-cover-left-v2/smooth-edges-diagnostic/front-fixation-transition.png",
+  "source_and_export_not_frozen": true,
+  "next": "Constrained 2D triangulation, concentric local rings tracking pad plateau/transition; preserve working pad planes, circles and global silhouette. New sampling is a geometry change, not a proof of OEM surface.",
+  "art_accepted": false,
+  "further_diagnostic": {
+    "rejected_CDT_attempt": "Closest-point-to-plane BVH inclusion at2e-8m was numerically unsuitable on the skinny fan triangles: rejected most interior samples and retained only11/6/25of128rear ring vertices. This invalidated support-boundary preparation.",
+    "correction": "Use direct 2D parity test for polygon inclusion, 128/128rear support ring samples included on all3stations. Direct connected root boundaries then close without weld displacement or degeneracy removal.",
+    "no_voxel_or_arbitrary_face_fill": true
+  },
+  "rejected_convex_hull": {
+    "source_sha256": "bdd4f7a34c383fcb92cd35570b51168de0e49749c49332fbed3f1bba73b88fe8",
+    "actual_whole_views_opened": true,
+    "actual_source_outline_to_output_max_m": [
+      0.009273950911276528,
+      0.00937351718942022
+    ],
+    "cause": "Raw CDT result retained convex hull triangles outside the concave working outline. A bounding box alone did not detect this.",
+    "epsilon_or_scale_alone_did_not_fix_it": true,
+    "correction": "Explicit domain filter; complete triangle inclusion, bidirectional boundary distance and domain area checks before extrusion. Keep three support holes separate at back.",
+    "new_numeric_proof_is_not_OEM_calibration": true
+  }
+}

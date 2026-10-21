@@ -1,0 +1,70 @@
+{
+  "component_id": "MOTO-ENGINE-COVER-LEFT-001",
+  "documented_before_new_geometry": true,
+  "base_source_sha256": "7e27606ef19b7a49e932ac13841b1da15c6d0d4936f1cef8f095bb233c3ce1d4",
+  "diagnosed_source_error": "Collar height evaluated only at centre, original curved skin intersects its intended flat pad by up to3.48\u20138.43mm on the actual source",
+  "references_unchanged_and_conditional": "CurrentRDC R03/R04/R05 only partially show hardware; backside and exact pad dimensions remain unknown",
+  "new_construction_plan": [
+    "Sample original skin within each support footprint before choosing a working pad plane",
+    "Blend original skin to a flat pad over a bounded annular transition, not a naked intersecting cylinder",
+    "Expand only local peripheral support where needed with a continuous outline, preserve original main boss surface elsewhere",
+    "Topologically connect rounded rear support sections directly to constrained circular boundaries in the inner skin; no tangent Boolean union",
+    "Rounded front bore lip; true through bore remains \u00d86.2mm working",
+    "Real interface test against frozen LH rear output cover, no inferred physical fit from it"
+  ],
+  "dimension_and_radius_status": "All working values/ranges in parameters-v2.json estimated, no physical measurement",
+  "not_to_change": [
+    "Published overall motorcycle dimensions",
+    "Bore centres",
+    "Unresolved upper lobe and3related relief sectors",
+    "Silently claim exact OEM rear casing or bolt count"
+  ],
+  "art_accepted": false,
+  "plane_choice_before_rebuild": {
+    "chosen": "Preserve original working collar planes, blend rising or falling original skin to flat pads",
+    "rejected": "Set planes above source skin footprint max, raising pads9\u201312mm without physical evidence",
+    "private_experiment_archive": "/workspace/wewa-assets/work-in-progress/engine-cover-left-v2/raised-pad-experiment",
+    "measurement_status": "No OEM height established by this source diagnostic"
+  },
+  "view_plan": [
+    {
+      "name": "outer-forward-boss",
+      "purpose": "Whole contour/boss and estimated front pads"
+    },
+    {
+      "name": "rear-hollow-shell",
+      "purpose": "Whole hollow wall/supports; backside estimated"
+    },
+    {
+      "name": "front-fixation-transition",
+      "purpose": "Macro pad and curved skin transition, intentional crop"
+    },
+    {
+      "name": "rear-fixation-root",
+      "purpose": "Macro rounded rear support root, intentional crop"
+    }
+  ],
+  "technical_pad_check": {
+    "sampled_radii_m": [
+      0.0035,
+      0.0045,
+      0.0055,
+      0.006
+    ],
+    "samples_per_pad": 384,
+    "max_sampled_height_error_acceptance_m": 5e-06,
+    "scope": "Model numerical coordinate tolerance only, not an OEM or manufacturing tolerance; actual values retained in report"
+  },
+  "sampling_revision": {
+    "method": "Constrained Delaunay with explicit plateau/transition rings, original 2D outline retained except local estimated support enlargement",
+    "foot_radius_working_m": 0.0095,
+    "foot_radius_range_m": [
+      0.007,
+      0.01
+    ],
+    "post_radius_working_m": 0.0051,
+    "post_root_radius_working_m": 0.0006,
+    "status": "All support section dimensions estimated, no new OEM evidence inferred",
+    "why": "Origin-centred radial sampling did not resolve the steep local blends reliably; the new grid follows those blends"
+  }
+}

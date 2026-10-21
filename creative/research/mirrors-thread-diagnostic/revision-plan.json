@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "status": "planned_after_optical_v3_freeze",
+  "target": "RH cosmetic stud first; LH only after the RH method is checked",
+  "baseline_sources": [
+    "assets-src/moto-components/mirrors/mirror-right-v2.blend",
+    "assets-src/moto-components/mirrors/mirror-left-v1.blend"
+  ],
+  "known_issue": "uniform axial sampling does not preserve helical slope-break edges; repeated width/reflection modulation",
+  "parameter_policy": {
+    "preserve_working_major_diameter_m": 0.008,
+    "preserve_working_pitch_m": 0.00125,
+    "preserve_root_radius_m": 0.00335,
+    "preserve_profile_phase_breaks": [
+      0.15,
+      0.45,
+      0.65,
+      0.95
+    ],
+    "preserve_start_end_q_m": [
+      -0.004,
+      0.024
+    ],
+    "status": "All remain estimated cosmetic values, not OEM facts."
+  },
+  "construction_method": [
+    "Use parameter domain u=theta/(2pi), v=(z-z0)/pitch-u, so constant-v edges follow each existing profile break helix.",
+    "Clip cells to finite axial start/end planes; share seam and cap vertices, refuse zero-area triangles.",
+    "Keep the same analytic radial profile; no new crest radius, bevel, wear, diameter, pitch or thread hand asserted.",
+    "Union the replacement stud with retained original rod and articulation ball; only the combined stem body is allowed to change.",
+    "Recompute intentional normals and physical UV on that single changed body, retaining all other nine source objects and exported primitive buffers."
+  ],
+  "checks": [
+    "Compare old/new profile at samples; verify every profile-break curve represented by mesh edges.",
+    "Closed connected positive stud and final stem, zero exact-null source/export triangles, positive used UV areas.",
+    "Protect head, glass, coating, seal, washer, nut, all covers, pivots, motions, materials and images byte-for-byte where transport permits.",
+    "Verify actual source interfaces and combined head poses remain clear.",
+    "Read short whole and base-detail diffuse/specular previews before freezing final96.",
+    "Retain historic sources and renders."
+  ],
+  "unknowns": [
+    "Exact RDC diameter, pitch, thread hand, profile class, mounting depth and mating fit.",
+    "Whether related product photos resolve a crest rounding radius; none is currently inferred."
+  ],
+  "art_accepted": false
+}

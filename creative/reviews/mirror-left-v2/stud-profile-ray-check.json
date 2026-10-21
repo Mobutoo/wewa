@@ -1,0 +1,48 @@
+{
+  "source_sha256": "7725731e869b6edeea744965054518659eeb6355f6acc670718738a8144b1a30",
+  "baseline_source_sha256": "bdd8a799b6a5ae07a5c076ba0c5a1019f6477ff9a4be5995229e13c2def3c6d0",
+  "method": "Actual final CSG body radial BVH rays at all four existing profile-break helices, 144 azimuths and visible lower stud range q=-3.9..5.8mm. No source saved; no render or material change.",
+  "sampled_sources": [
+    {
+      "revision": "v1",
+      "source_sha256": "bdd8a799b6a5ae07a5c076ba0c5a1019f6477ff9a4be5995229e13c2def3c6d0",
+      "actual_final_body": "LH continuous steel stem ball and cosmetic stud - candidate",
+      "sample_count": 4472,
+      "max_radius_error_m": 4.511083452962347e-05,
+      "RMS_radius_error_m": 3.11277225043604e-05,
+      "worst_witness": {
+        "u": 0.5555555555555556,
+        "turn": 3,
+        "phase_break": 0.15,
+        "q_m": 0.0006319444444444445,
+        "expected_radius_m": 0.004,
+        "actual_source_ray_radius_m": 0.003954889165470377,
+        "absolute_error_m": 4.511083452962347e-05
+      }
+    },
+    {
+      "revision": "v2",
+      "source_sha256": "7725731e869b6edeea744965054518659eeb6355f6acc670718738a8144b1a30",
+      "actual_final_body": "LH continuous steel stem ball and cosmetic stud - candidate",
+      "sample_count": 4472,
+      "max_radius_error_m": 2.204533666380626e-08,
+      "RMS_radius_error_m": 4.28833019261113e-09,
+      "worst_witness": {
+        "u": 0.9652777777777778,
+        "turn": -1,
+        "phase_break": 0.15,
+        "q_m": -0.003855902777777778,
+        "expected_radius_m": 0.004,
+        "actual_source_ray_radius_m": 0.003999977954663336,
+        "absolute_error_m": 2.204533666380626e-08
+      }
+    }
+  ],
+  "interpretation": "Phase-aligned sampling removes radial interpolation error along the old intended helical break curves; this verifies actual final CSG geometry, not manufacturer dimensions or final appearance.",
+  "limits": [
+    "Ray radius witness at these samples does not prove every normal or triangle between them.",
+    "Profile, diameter, pitch, hand and mounting remain estimated, not qualified threads.",
+    "Preview diffuse/reflection reading still required."
+  ],
+  "art_accepted": false
+}
