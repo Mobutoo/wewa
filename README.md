@@ -1,5 +1,7 @@
 # Viva Wewa
 
+[Voir les pièces de la moto, leurs images et leurs contrôles](LIVRAISONS_MOTO.md).
+
 Jeu solo de moto à Kinshasa pour navigateur PC et mobile. Le premier secteur réutilise les routes et modèles de Gombe fournis dans le dossier de reprise.
 
 ## Jouer et relire

@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "date": "2026-10-21T15:24:59.058373+00:00",
+  "scope": "Incremental delivery/source/export/native-image/Babylon checks only; not the full repository integrity audit",
+  "observed_published_base": "49bb7dbcc09eaf87dbcdbd9ead73e7f05badb639",
+  "registered_candidates_before": 98,
+  "registered_candidates_after": 99,
+  "catalogue_entries_after": 124,
+  "registered_component": "MOTO-INDICATOR-FRONT-HOUSING-001",
+  "source_revision": "indicator-front-housing-v1",
+  "source_sha256": "24ee3032f40cadf8cb5252fcd4a41853909aff24a280d89d431391322d782af6",
+  "export_sha256": "183a97189f98ed95daa7a2f86379761c63d1b0b2b2d457d2d0fbd9302075048b",
+  "new_mesh_or_material_built_this_session": false,
+  "existing_author_candidate_reviewed_and_registered_this_session": true,
+  "source_check": {
+    "schema": 1,
+    "asset": "indicator-front-housing",
+    "revision": "indicator-front-housing-v1",
+    "source_sha256": "24ee3032f40cadf8cb5252fcd4a41853909aff24a280d89d431391322d782af6",
+    "source": "assets-src/moto-components/indicators-front/housing/indicator-front-housing-v1.blend",
+    "checker": "tools/check_isolated_component_source_v1.py",
+    "checker_sha256": "015415b98e0c17d864910845863c1e539a41568841a378babcd1f765862f05b2",
+    "blender_version": "4.3.2",
+    "read_only_source_unchanged": true,
+    "collection": "WEWA_FRONT_INDICATOR_HOUSING",
+    "objects": [
+      {
+        "object": "Rounded front indicator hood black - estimated continuation",
+        "vertices": 71938,
+        "triangles": 143872,
+        "minimum_triangle_area_world_m2": 1.7986654931562819e-09,
+        "non_manifold_edges": 0,
+        "signed_volume_local_m3": 6.228826776771741e-06,
+        "world_matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "bounds_world_m": [
+          [
+            -0.03229999914765358,
+            0.03229999914765358
+          ],
+          [
+            0.009399999864399433,
+            0.035999998450279236
+          ],
+          [
+            -0.03229999914765358,
+            0.03229999914765358
+          ]
+        ]
+      }
+    ],
+    "scope": "Evaluated visible source meshes: finite vertices, nonzero triangle areas, closed edges and positive local volume. No self-intersection, wall-thickness, OEM variant, installed-fit, artistic or device-performance certification.",
+    "art_accepted": false
+  },
+  "export_check": {
+    "asset": "indicator-front-housing",
+    "revision": "indicator-front-housing-v1",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/indicators-front/housing/indicator-front-housing-v1.glb",
+        "sha256": "183a97189f98ed95daa7a2f86379761c63d1b0b2b2d457d2d0fbd9302075048b",
+        "bytes": 4055756,
+        "glTF_errors": 0,
+        "glTF_warnings": 0,
+        "messages": [
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/0/attributes/TEXCOORD_0"
+          }
+        ],
+        "bounds": {
+          "min": [
+            -0.03229999914765358,
+            -0.03229999914765358,
+            -0.035999998450279236
+          ],
+          "max": [
+            0.03229999914765358,
+            0.03229999914765358,
+            -0.009399999864399433
+          ]
+        },
+        "vertices": 72729,
+        "triangles": 143872,
+        "triangle_area_local_m2": {
+          "minimum": 1.798665843999695e-09,
+          "exactly_zero": 0,
+          "below_1e_minus18": 0,
+          "note": "Local exported coordinates; not a self-intersection or surface-fidelity proof"
+        },
+        "tangent_frame": {
+          "vectors": 0,
+          "max_unit_error": 0,
+          "max_normal_dot": 0,
+          "handedness_sign_is_unit": true,
+          "note": "Finite orthonormal frame only; not full MikkTSpace or renderer visual parity"
+        },
+        "node_names": [
+          "Rounded front indicator hood black - estimated continuation",
+          "FRONT_INDICATOR_HOUSING_UNPLACED_DATUM"
+        ],
+        "materials": [
+          {
+            "name": "WEWA original clean black opaque surface - unmeasured",
+            "basecolor": [
+              0.00800000037997961,
+              0.008999999612569809,
+              0.00800000037997961,
+              1
+            ],
+            "metallic": 0,
+            "roughness": 0.23999999463558197,
+            "extensions": []
+          }
+        ]
+      }
+    ],
+    "scope": "Actual glTF buffers and format only; not shape reception, physical interface or mobile qualification",
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "babylon_checks": [
+    {
+      "revision": "indicator-front-housing-v1",
+      "path": "creative/reviews/indicator-front-housing-v1/inspection-v3/engine-check.json",
+      "sha256": "e9059412c0292cb1d01612c1191fe7b321107ac241d976b0e778d3eeb3dfff00",
+      "nonblank_views": 4,
+      "page_errors": [],
+      "http_failures": []
+    },
+    {
+      "revision": "engine-protection-terminal-b-v1",
+      "path": "creative/reviews/engine-protection-terminal-b-v1/inspection-recovery-2026-10-21/engine-check.json",
+      "sha256": "faf55783b7ee2025e36bfc9d8505b415b6d1dbba74ba7be2e143969060033898",
+      "nonblank_views": 4,
+      "page_errors": [],
+      "http_failures": []
+    },
+    {
+      "revision": "indicator-front-lens-v1",
+      "path": "creative/reviews/indicator-front-lens-v1/inspection-recovery-2026-10-21/engine-check.json",
+      "sha256": "67c2f1072425808e4ac67967e79946aacc504b7207baaff6ca77aa0dd5d9924a",
+      "nonblank_views": 4,
+      "page_errors": [],
+      "http_failures": []
+    },
+    {
+      "revision": "ignition-connector-v2",
+      "path": "creative/reviews/ignition-connector-v2/inspection-recovery-2026-10-21/engine-check.json",
+      "sha256": "afb13d75650e95505da7443449c91f07886d5f3c94e1c07df77401a24df4734d",
+      "nonblank_views": 4,
+      "page_errors": [],
+      "http_failures": []
+    }
+  ],
+  "native_images_opened": 3,
+  "gray_and_reflection_images_opened": 5,
+  "engine_images_manually_opened": 2,
+  "physical_iphone_tested": false,
+  "art_accepted": false,
+  "completed_motorcycle_groups": 0,
+  "public_game_unchanged": true,
+  "canonical_prd_latest_observed_revision": 48,
+  "canonical_prd_updated_this_session": false,
+  "remaining": "Observed stalk-root transition and fasteners, right stalk, whole indicator and headlamp optics; authorized18-group work continues."
+}
