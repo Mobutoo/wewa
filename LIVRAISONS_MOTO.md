@@ -28,6 +28,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P01** : [cache gauche corrigé et fixation visible, sources et images](creative/reviews/side-cover-left-v2/coordinator-delivery.md). Même identité, paquet encore ouvert.
 - **P05** : [tail-lamp-upper-bracket — sources, rendus et contrôles](creative/reviews/tail-lamp-upper-bracket-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
 [Sauvegarde intermédiaire de l’avant : sources grises et recherches, non livrées comme pièces terminées](creative/reviews/exterior-continuation-checkpoint-01.md).
 

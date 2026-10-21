@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-SIDE-COVER-LEFT-SKIN-001",
-  "label": "P01 — peau extérieure du cache gauche, étude estimée",
+  "label": "P01 — cache gauche corrigé avec fixation visible en contexte",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,7 +12,7 @@
     "material"
   ],
   "identity": {
-    "variant": "Boxer125HD RDC profile target; uncalibrated outline and estimated convexity; no reverse mounting geometry",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
     "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
@@ -37,11 +37,11 @@
         0,
         0.5
       ],
-      "sha256": "1a0f648e2d1e67ac5832fd68cb7058ca5f6ac4c1088e081b12e3f8cf7d5e2fe4",
+      "sha256": "6cb142c17072d3001425f4e4abb6ca5f2d454d293e3e1978a933e31ffcfa2be5",
       "name": "whole-profile",
+      "PNG_sha256": "6cb142c17072d3001425f4e4abb6ca5f2d454d293e3e1978a933e31ffcfa2be5",
       "actually_saved": true,
-      "actually_read": true,
-      "PNG_sha256": "1a0f648e2d1e67ac5832fd68cb7058ca5f6ac4c1088e081b12e3f8cf7d5e2fe4"
+      "actually_read": true
     },
     {
       "view": "whole-quarter",
@@ -53,11 +53,11 @@
         0.12,
         0.46
       ],
-      "sha256": "b23c2e827365fbe6b84dfe6c1aa7e4773e5b990b634ed32b1c30fe0c3d3cc997",
+      "sha256": "62d15520413ab8778feab195d12f35dbf3097a4c3695ea4618f4c6b8aef179cc",
       "name": "whole-quarter",
+      "PNG_sha256": "62d15520413ab8778feab195d12f35dbf3097a4c3695ea4618f4c6b8aef179cc",
       "actually_saved": true,
-      "actually_read": true,
-      "PNG_sha256": "b23c2e827365fbe6b84dfe6c1aa7e4773e5b990b634ed32b1c30fe0c3d3cc997"
+      "actually_read": true
     },
     {
       "view": "neutral-outdoor",
@@ -69,11 +69,11 @@
         0.12,
         0.46
       ],
-      "sha256": "ac76d58038b49f1634088f2b358f4a221379538d7bb900faaf5bb7549916905b",
+      "sha256": "8781af15f35c50f20dde0c56c146481b3fd5d119eca2fe5cb9c548e51a5e7b4c",
       "name": "neutral-outdoor",
+      "PNG_sha256": "8781af15f35c50f20dde0c56c146481b3fd5d119eca2fe5cb9c548e51a5e7b4c",
       "actually_saved": true,
-      "actually_read": true,
-      "PNG_sha256": "ac76d58038b49f1634088f2b358f4a221379538d7bb900faaf5bb7549916905b"
+      "actually_read": true
     }
   ],
   "criteria": [],
@@ -94,25 +94,25 @@
   "gates": {
     "G0": {
       "status": "passed",
-      "revision": "side-cover-left-study-v1",
+      "revision": "side-cover-left-v2",
       "reviewer": {
         "name": "Codex",
         "role": "technical"
       },
       "evidence": [
         {
-          "path": "../../research/side-cover-left-p01/G0-G2-plan-v1.json",
           "kind": "identity_and_parts",
-          "revision": "side-cover-left-study-v1",
-          "sha256": "abf552558c6a601a49428918d92836810fdb76f1067527866072751c68c2f132"
+          "path": "../../research/powertrain-completion-p01-v2/plan.json",
+          "sha256": "78d0112939b269772aa352030cf908c1ce4a309fdf9f594dfae58388f6210105",
+          "revision": "side-cover-left-v2"
         }
       ],
-      "reason": "First exterior child scoped separately from visible fastener and mounting interfaces",
+      "reason": "Existing skin revised at corrected photo baseline; lower head separately identified in context, not a certified drive or installed mounting",
       "reviewed_at": "2026-10-21"
     },
     "G1": {
       "status": "blocked",
-      "revision": "side-cover-left-study-v1",
+      "revision": "side-cover-left-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -120,7 +120,7 @@
     },
     "G2": {
       "status": "blocked",
-      "revision": "side-cover-left-study-v1",
+      "revision": "side-cover-left-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -128,20 +128,20 @@
     },
     "G3": {
       "status": "rework",
-      "revision": "side-cover-left-study-v1",
+      "revision": "side-cover-left-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../../assets-src/moto-components/side-cover-left/side-cover-left-candidate-v1.blend",
+          "path": "../../../assets-src/moto-components/side-cover-left-v2/side-cover-left-candidate-v2.blend",
           "kind": "editable_source",
-          "revision": "side-cover-left-study-v1",
-          "sha256": "da345efd5eae693abb25715197cf2f63fb8fa4783d869b90698c4d4fb196563f"
+          "revision": "side-cover-left-v2",
+          "sha256": "b34d03bdb512809465e3ffb0ef9a06929ae27dc11675f704667246f622bb8c38"
         },
         {
-          "path": "../../reviews/side-cover-left-study-v1/whole-profile.png",
+          "path": "../../reviews/side-cover-left-v2/whole-profile.png",
           "kind": "isolated_comparison",
-          "revision": "side-cover-left-study-v1",
-          "sha256": "1a0f648e2d1e67ac5832fd68cb7058ca5f6ac4c1088e081b12e3f8cf7d5e2fe4"
+          "revision": "side-cover-left-v2",
+          "sha256": "6cb142c17072d3001425f4e4abb6ca5f2d454d293e3e1978a933e31ffcfa2be5"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -149,14 +149,14 @@
     },
     "G4": {
       "status": "rework",
-      "revision": "side-cover-left-study-v1",
+      "revision": "side-cover-left-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/side-cover-left-study-v1/neutral-outdoor.png",
+          "path": "../../reviews/side-cover-left-v2/neutral-outdoor.png",
           "kind": "surface_or_sound_comparison",
-          "revision": "side-cover-left-study-v1",
-          "sha256": "ac76d58038b49f1634088f2b358f4a221379538d7bb900faaf5bb7549916905b"
+          "revision": "side-cover-left-v2",
+          "sha256": "8781af15f35c50f20dde0c56c146481b3fd5d119eca2fe5cb9c548e51a5e7b4c"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -164,14 +164,14 @@
     },
     "G5": {
       "status": "rework",
-      "revision": "side-cover-left-study-v1",
+      "revision": "side-cover-left-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/side-cover-left-study-v1/source-geometry-check.json",
+          "path": "../../reviews/side-cover-left-v2/source-geometry-check.json",
           "kind": "motion_or_interface_check",
-          "revision": "side-cover-left-study-v1",
-          "sha256": "3d2b2ae681568faa8b3a839b7fbe00906c5d000a9dfb1e56fcae67402387f801"
+          "revision": "side-cover-left-v2",
+          "sha256": "1bd2169eb46ef4a44ae9a87ec8fe4fef62281718c76b2efd421e2f4752bd5a98"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -179,20 +179,20 @@
     },
     "G6": {
       "status": "rework",
-      "revision": "side-cover-left-study-v1",
+      "revision": "side-cover-left-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/side-cover-left-study-v1/export-buffer-check.json",
+          "path": "../../reviews/side-cover-left-v2/export-buffer-check.json",
           "kind": "technical_export_check",
-          "revision": "side-cover-left-study-v1",
-          "sha256": "90503e43c91adeb79ff0ef2a8227564bc12fb278d774eb8c330ef79192f2baca"
+          "revision": "side-cover-left-v2",
+          "sha256": "e89c997f9191c15358c76139b33c079bb48acc25451170de751826cdd8cb6267"
         },
         {
-          "path": "../../reviews/side-cover-left-study-v1/inspection-v3/engine-driver.png",
+          "path": "../../reviews/side-cover-left-v2/inspection-v5/engine-driver.png",
           "kind": "real_runtime_comparison",
-          "revision": "side-cover-left-study-v1",
-          "sha256": "5471eb32a3e6d4c80a557ae395bac6107a515e4cc4e9d14a4ceab23ee43dda7f"
+          "revision": "side-cover-left-v2",
+          "sha256": "168a738419c265d8e69534c6213e8979e405cae7d0f55a1fc1e14659c2bf91d3"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -200,7 +200,7 @@
     },
     "G7": {
       "status": "pending",
-      "revision": "side-cover-left-study-v1",
+      "revision": "side-cover-left-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
@@ -208,7 +208,7 @@
     },
     "G8": {
       "status": "pending",
-      "revision": "side-cover-left-study-v1",
+      "revision": "side-cover-left-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -216,12 +216,20 @@
     }
   },
   "active_detailed_fabrication": false,
-  "source_revision": "side-cover-left-study-v1",
-  "export_revision": "side-cover-left-study-v1-inspection",
+  "source_revision": "side-cover-left-v2",
+  "export_revision": "side-cover-left-v2-inspection",
   "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
   "art_accepted": false,
-  "candidate_source": "../../../assets-src/moto-components/side-cover-left/README.md",
-  "candidate_review": "../../reviews/side-cover-left-study-v1/README.md",
+  "candidate_source": "../../../assets-src/moto-components/side-cover-left-v2/README.md",
+  "candidate_review": "../../reviews/side-cover-left-v2/README.md",
   "production_group": 18,
-  "source_plan": "../../research/side-cover-left-p01/G0-G2-plan-v1.json"
+  "source_plan": "../../research/powertrain-completion-p01-v2/plan.json",
+  "previous_revisions": [
+    {
+      "revision": "side-cover-left-study-v1",
+      "source": "../../../assets-src/moto-components/side-cover-left/README.md",
+      "review": "../../reviews/side-cover-left-study-v1/README.md",
+      "art_accepted": false
+    }
+  ]
 }
