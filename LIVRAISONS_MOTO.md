@@ -28,6 +28,8 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+[Suivi courant des trente paquets et répartition du travail](creative/workflow/motorcycle-exterior-continuation-status-v1.json). Les dossiers et travaux de géométrie sont distingués des paquets complets ; les points ci-dessous conservent aussi les anciennes sauvegardes.
+
 - **P04** : [MOTO-SIDE-COVER-RIGHT-SKIN-001 — bounded exterior candidate — sources et images](creative/reviews/side-cover-right-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P03** : [bavette avant à trois trous — sources et images](creative/reviews/front-mudflap-coordination-v1/README.md). Variante apparentée, montage et reste du paquet ouverts.
 - **P01** : [cache gauche corrigé et fixation visible, sources et images](creative/reviews/side-cover-left-v2/coordinator-delivery.md). Même identité, paquet encore ouvert.
@@ -36,11 +38,11 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 - **P02** : [rear-rack-deck — sources, rendus et contrôles](creative/reviews/rear-rack-deck-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
 
-## Exécution du plan — P01 et P02 commencés
+## Historique — lancement de P01 et P02
 
 ![Première étude du cache gauche, ciel neutre](creative/reviews/side-cover-left-study-v1/neutral-outdoor.png)
 
-**0 paquet terminé / 2 commencés / 28 non démarrés.** P01 dispose d’une première
+Au jalon `7ec9c4e` : **0 paquet terminé / 2 commencés / 28 non démarrés.** P01 dispose d’une première
 peau extérieure Blender/GLB, de trois vues grises, deux aperçus, trois rendus
 détaillés96 et quatre vues Babylon contrôlées. Les huit EXR FLOAT32 sont conservés.
 La peinture en escalier a été corrigée ; l’état rejeté reste archivé.

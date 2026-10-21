@@ -57,7 +57,16 @@
           "state": "candidate_rework",
           "scope": "Corrected scale, original paint and visible head; fit and separation remain open"
         }
-      ]
+      ],
+      "continuation_work_inventory": [
+        {
+          "path": "creative/reviews/side-cover-left-v2/delivery.json",
+          "revision": "side-cover-left-v2",
+          "milestone": "Usable isolated child candidate; package remains incomplete",
+          "package_complete": false
+        }
+      ],
+      "continuation_owner": "powertrain-worker"
     },
     {
       "id": "P02",
@@ -100,7 +109,8 @@
           "review": "creative/reviews/rear-rack-deck-v1/README.md",
           "state": "candidate_delivered_not_accepted"
         }
-      ]
+      ],
+      "continuation_owner": "body-coordinator"
     },
     {
       "id": "P03",
@@ -117,7 +127,28 @@
       "next_action": "Current-market shell side forming, flap identity, supports/fasteners and mounted wheel/fork clearances remain unresolved",
       "current_stage": "related_flap_candidate_and_existing_shell_reviewed",
       "candidate_review": "creative/reviews/front-mudflap-coordination-v1/README.md",
-      "package_complete": false
+      "package_complete": false,
+      "continuation_work_inventory": [
+        {
+          "path": "creative/reviews/front-completion-p03-flap-material-v2/delivery.json",
+          "revision": "front-completion-p03-flap-material-v2",
+          "milestone": "native96 material appearance study, not material-finished package",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p03-flap-v1/delivery.json",
+          "revision": "front-completion-p03-flap-v1",
+          "milestone": "native96 gray/reflection PNG+EXR and actual four-view Babylon capture completed; shading rework required",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p03-v1/delivery.json",
+          "revision": "front-completion-p03-v1",
+          "milestone": "native96 gray/reflection PNG+EXR and real Babylon four-view capture completed",
+          "package_complete": false
+        }
+      ],
+      "continuation_owner": "front-worker"
     },
     {
       "id": "P04",
@@ -144,7 +175,16 @@
           "state": "candidate_rework",
           "review": "creative/reviews/side-cover-right-v1-coordination-v1/README.md"
         }
-      ]
+      ],
+      "continuation_work_inventory": [
+        {
+          "path": "creative/reviews/side-cover-right-v1/delivery.json",
+          "revision": "side-cover-right-v1",
+          "milestone": "Usable isolated child candidate; package remains incomplete",
+          "package_complete": false
+        }
+      ],
+      "continuation_owner": "powertrain-worker"
     },
     {
       "id": "P05",
@@ -169,7 +209,8 @@
           "state": "candidate_delivered_not_accepted"
         }
       ],
-      "package_complete": false
+      "package_complete": false,
+      "continuation_owner": "body-coordinator"
     },
     {
       "id": "P06",
@@ -177,13 +218,24 @@
       "title": "Optique principale du phare",
       "lot": 12,
       "depends_on": [],
-      "state": "planned",
+      "state": "active",
       "detailed_work_started": false,
       "scope": "Décomposer lentille, réflecteur et détails observables ; profil et relief documentés avant fabrication",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "continuation_work_inventory": [
+        {
+          "path": "creative/reviews/front-completion-p06-v1/delivery.json",
+          "revision": "front-completion-p06-v1",
+          "milestone": "optical surface fabrication blocked by unresolved relief ownership and profile",
+          "package_complete": false
+        }
+      ],
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "package_complete": false,
+      "continuation_owner": "front-worker"
     },
     {
       "id": "P07",
@@ -193,13 +245,16 @@
       "depends_on": [
         "P05"
       ],
-      "state": "planned",
-      "detailed_work_started": false,
+      "state": "active",
+      "detailed_work_started": true,
       "scope": "Décomposer corps, lentille et fixations ; forme éteinte puis éclairage de revue",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "package_complete": false,
+      "continuation_owner": "body-coordinator"
     },
     {
       "id": "P08",
@@ -210,13 +265,16 @@
         "P02",
         "P05"
       ],
-      "state": "planned",
+      "state": "active",
       "detailed_work_started": false,
       "scope": "Inclinaison, attaches et dégagement roue/garde-boue ; emplacement éclairage et catadioptre à documenter",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "package_complete": false,
+      "continuation_owner": "body-coordinator"
     },
     {
       "id": "P09",
@@ -224,13 +282,48 @@
       "title": "Clignotant avant : raccords et fixations",
       "lot": 12,
       "depends_on": [],
-      "state": "planned",
-      "detailed_work_started": false,
+      "state": "active",
+      "detailed_work_started": true,
       "scope": "Réutiliser coque, lentille et deux tiges déjà produites ; raccords visibles et revue gauche/droite",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "continuation_work_inventory": [
+        {
+          "path": "creative/reviews/front-completion-p09-leads-material-v2/delivery.json",
+          "revision": "front-completion-p09-leads-material-v2",
+          "milestone": "four native96 material PNG/EXR views including terminal/sleeve macros, gray before material",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p09-leads-v1/delivery.json",
+          "revision": "front-completion-p09-leads-v1",
+          "milestone": "gray source and actual export complete; review pending",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p09-leads-v2/delivery.json",
+          "revision": "front-completion-p09-leads-v2",
+          "milestone": "corrected source and actual export verified; gray/reflection previews actually read",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p09-nut-v1/delivery.json",
+          "revision": "front-completion-p09-nut-v1",
+          "milestone": "closed gray source and GLB ready; render pending",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p09-nut-v3/delivery.json",
+          "revision": "front-completion-p09-nut-v3",
+          "milestone": "corrected source gray/reflection previews inspected, actual export checks passed",
+          "package_complete": false
+        }
+      ],
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "package_complete": false,
+      "continuation_owner": "front-worker"
     },
     {
       "id": "P10",
@@ -241,13 +334,16 @@
         "P02",
         "P05"
       ],
-      "state": "planned",
+      "state": "active",
       "detailed_work_started": false,
       "scope": "Un exemplaire documenté et reçu avant répétition ; asymétries et pose de chaque côté contrôlées",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "package_complete": false,
+      "continuation_owner": "body-coordinator"
     },
     {
       "id": "P11",
@@ -257,13 +353,16 @@
       "depends_on": [
         "P08"
       ],
-      "state": "planned",
+      "state": "active",
       "detailed_work_started": false,
       "scope": "Documenter format et implantation RDC ; inscription de jeu fictive signalée ; éclairage/catadioptre seulement selon référence retenue",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "package_complete": false,
+      "continuation_owner": "body-coordinator"
     },
     {
       "id": "P12",
@@ -274,13 +373,16 @@
         "P01",
         "P04"
       ],
-      "state": "planned",
+      "state": "active",
       "detailed_work_started": false,
       "scope": "Bouchon, robinet et durite en composants distincts ; conserver réservoir WEWA existant",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "package_complete": false,
+      "continuation_owner": "body-coordinator"
     },
     {
       "id": "P13",
@@ -290,13 +392,16 @@
       "depends_on": [
         "P02"
       ],
-      "state": "planned",
+      "state": "active",
       "detailed_work_started": false,
       "scope": "Socles, nervures, épine avant, montants, projection arrière, retours/agrafes et petits reliefs séparés ; compléter le tampon sans inventer revers/tenon ; pose après revue",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "package_complete": false,
+      "continuation_owner": "body-coordinator"
     },
     {
       "id": "P14",
@@ -304,13 +409,24 @@
       "title": "Sélecteur de vitesses",
       "lot": 17,
       "depends_on": [],
-      "state": "planned",
-      "detailed_work_started": false,
+      "state": "active",
+      "detailed_work_started": true,
       "scope": "Levier, embout, fixation et liaison au carter ; débattement utile",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "continuation_work_inventory": [
+        {
+          "path": "creative/reviews/gear-selector-arm-v1/delivery.json",
+          "revision": "gear-selector-arm-v1",
+          "milestone": "Usable isolated child candidate; package remains incomplete",
+          "package_complete": false
+        }
+      ],
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "package_complete": false,
+      "continuation_owner": "powertrain-worker"
     },
     {
       "id": "P15",
@@ -318,13 +434,24 @@
       "title": "Pédale et tringlerie de frein arrière",
       "lot": 17,
       "depends_on": [],
-      "state": "planned",
-      "detailed_work_started": false,
+      "state": "active",
+      "detailed_work_started": true,
       "scope": "Pédale, pivot et liaison frein ; interfaces en revue, sans fonctionnement revendiqué avant contrôle",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "continuation_work_inventory": [
+        {
+          "path": "creative/reviews/brake-pedal-arm-v1/delivery.json",
+          "revision": "brake-pedal-arm-v1",
+          "milestone": "Usable isolated child candidate; package remains incomplete",
+          "package_complete": false
+        }
+      ],
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "package_complete": false,
+      "continuation_owner": "powertrain-worker"
     },
     {
       "id": "P16",
@@ -335,13 +462,24 @@
         "P14",
         "P15"
       ],
-      "state": "planned",
-      "detailed_work_started": false,
+      "state": "active",
+      "detailed_work_started": true,
       "scope": "Compléter ceux de devant et fabriquer ceux du passager ; supports et exemplaire avant duplication",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "continuation_work_inventory": [
+        {
+          "path": "creative/reviews/footrest-rubber-v1/delivery.json",
+          "revision": "footrest-rubber-v1",
+          "milestone": "Usable isolated child candidate; package remains incomplete",
+          "package_complete": false
+        }
+      ],
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "package_complete": false,
+      "continuation_owner": "powertrain-worker"
     },
     {
       "id": "P17",
@@ -349,13 +487,24 @@
       "title": "Béquilles et ressorts visibles",
       "lot": 17,
       "depends_on": [],
-      "state": "planned",
-      "detailed_work_started": false,
+      "state": "active",
+      "detailed_work_started": true,
       "scope": "Latérale/centrale selon variante documentée ; pivots, attaches, contact sol et positions repliées",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "continuation_work_inventory": [
+        {
+          "path": "creative/reviews/side-stand-fork-stem-v1/delivery.json",
+          "revision": "side-stand-fork-stem-v1",
+          "milestone": "Usable isolated child candidate; package remains incomplete",
+          "package_complete": false
+        }
+      ],
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "package_complete": false,
+      "continuation_owner": "powertrain-worker"
     },
     {
       "id": "P18",
@@ -369,7 +518,9 @@
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "package_complete": false,
+      "continuation_owner": "powertrain-worker"
     },
     {
       "id": "P19",
@@ -385,7 +536,9 @@
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "package_complete": false,
+      "continuation_owner": "powertrain-worker"
     },
     {
       "id": "P20",
@@ -401,7 +554,9 @@
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "package_complete": false,
+      "continuation_owner": "powertrain-worker"
     },
     {
       "id": "P21",
@@ -415,7 +570,9 @@
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "package_complete": false,
+      "continuation_owner": "front-worker"
     },
     {
       "id": "P22",
@@ -432,7 +589,9 @@
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "package_complete": false,
+      "continuation_owner": "front-worker"
     },
     {
       "id": "P23",
@@ -449,7 +608,9 @@
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "package_complete": false,
+      "continuation_owner": "front-worker"
     },
     {
       "id": "P24",
@@ -459,13 +620,36 @@
       "depends_on": [
         "P03"
       ],
-      "state": "planned",
-      "detailed_work_started": false,
+      "state": "active",
+      "detailed_work_started": true,
       "scope": "Empilements fourche/moyeu/flasque, valve, prise compteur et commande ; contrôler variantes existantes",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "continuation_work_inventory": [
+        {
+          "path": "creative/reviews/front-completion-p24-axle-material-v1/delivery.json",
+          "revision": "front-completion-p24-axle-material-v1",
+          "milestone": "native96 related exterior axle appearance study completed",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p24-axle-v1/delivery.json",
+          "revision": "front-completion-p24-axle-v1",
+          "milestone": "new finite gray source and GLB ready",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p24-v1/delivery.json",
+          "revision": "front-completion-p24-v1",
+          "milestone": "existing candidate exports recovered unchanged; explicit child inventory and blocking gaps",
+          "package_complete": false
+        }
+      ],
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "package_complete": false,
+      "continuation_owner": "front-worker"
     },
     {
       "id": "P25",
@@ -475,13 +659,36 @@
       "depends_on": [
         "P24"
       ],
-      "state": "planned",
-      "detailed_work_started": false,
+      "state": "active",
+      "detailed_work_started": true,
       "scope": "Capsules, quincaillerie et jonctions ; cohérence des tubes/soufflets existants",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "continuation_work_inventory": [
+        {
+          "path": "creative/reviews/front-completion-p25-cap-material-v1/delivery.json",
+          "revision": "front-completion-p25-cap-material-v1",
+          "milestone": "native96 clean silver appearance study completed",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p25-cap-v1/delivery.json",
+          "revision": "front-completion-p25-cap-v1",
+          "milestone": "gray source/export ready",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p25-v1/delivery.json",
+          "revision": "front-completion-p25-v1",
+          "milestone": "existing candidate exports recovered unchanged; explicit child inventory and blocking gaps",
+          "package_complete": false
+        }
+      ],
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "package_complete": false,
+      "continuation_owner": "front-worker"
     },
     {
       "id": "P26",
@@ -498,7 +705,9 @@
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "package_complete": false,
+      "continuation_owner": "powertrain-worker"
     },
     {
       "id": "P27",
@@ -515,7 +724,9 @@
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "package_complete": false,
+      "continuation_owner": "powertrain-worker"
     },
     {
       "id": "P28",
@@ -523,13 +734,30 @@
       "title": "Fixations guidon et leviers",
       "lot": 1,
       "depends_on": [],
-      "state": "planned",
-      "detailed_work_started": false,
+      "state": "active",
+      "detailed_work_started": true,
       "scope": "Amortisseurs/rondelles inférieurs et rondelles/écrous de leviers des lots6/7 ; pas de nouvelle commande complète",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "continuation_work_inventory": [
+        {
+          "path": "creative/reviews/front-completion-p28-lower-washer-v1/delivery.json",
+          "revision": "front-completion-p28-lower-washer-v1",
+          "milestone": "gray source and actual GLB ready; native96 review pending",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p28-v1/delivery.json",
+          "revision": "front-completion-p28-v1",
+          "milestone": "existing candidate exports recovered unchanged; explicit child inventory and blocking gaps",
+          "package_complete": false
+        }
+      ],
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "package_complete": false,
+      "continuation_owner": "front-worker"
     },
     {
       "id": "P29",
@@ -541,13 +769,30 @@
         "P24",
         "P28"
       ],
-      "state": "planned",
-      "detailed_work_started": false,
+      "state": "active",
+      "detailed_work_started": true,
       "scope": "Continuités accélérateur/embrayage/frein, départs commodos/contacteur, attaches et rayon au braquage ; garder départs déjà faits",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "continuation_work_inventory": [
+        {
+          "path": "creative/reviews/front-completion-p29-bow-v1/delivery.json",
+          "revision": "front-completion-p29-bow-v1",
+          "milestone": "gray source and actual GLB ready; native96 review pending",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p29-v1/delivery.json",
+          "revision": "front-completion-p29-v1",
+          "milestone": "existing candidate exports recovered unchanged; explicit child inventory and blocking gaps",
+          "package_complete": false
+        }
+      ],
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "package_complete": false,
+      "continuation_owner": "front-worker"
     },
     {
       "id": "P30",
@@ -560,13 +805,30 @@
         "P25",
         "P29"
       ],
-      "state": "planned",
-      "detailed_work_started": false,
+      "state": "active",
+      "detailed_work_started": true,
       "scope": "Retours/attaches visière, compteurs/support existants et dégagement des commandes/rétroviseurs",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "continuation_work_inventory": [
+        {
+          "path": "creative/reviews/front-completion-p30-head-v1/delivery.json",
+          "revision": "front-completion-p30-head-v1",
+          "milestone": "gray source and actual GLB ready; native96 review pending",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p30-v1/delivery.json",
+          "revision": "front-completion-p30-v1",
+          "milestone": "existing candidate exports recovered unchanged; explicit child inventory and blocking gaps",
+          "package_complete": false
+        }
+      ],
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "package_complete": false,
+      "continuation_owner": "front-worker"
     }
   ],
   "assembly_checkpoints": [
@@ -646,6 +908,18 @@
   },
   "execution_handoff": {
     "date": "2026-10-21",
+    "state": "ongoing_goal_not_final_handoff",
+    "packages_complete": 0,
+    "packages_started": 22,
+    "packages_with_geometry_or_source_work": 16,
+    "packages_not_started": 8,
+    "detailed_workers_authorized": 3,
+    "current_package": "Multiple independent children; see current source work inventories",
+    "next_action": "Continue each observable child and its actual source/native/export/runtime controls, save useful milestones; do not declare a whole package complete from one mesh.",
+    "background_automation_created": false
+  },
+  "pre_continuation_handoff": {
+    "date": "2026-10-21",
     "packages_complete": 0,
     "packages_started": 2,
     "packages_not_started": 28,
@@ -657,5 +931,55 @@
     "next_action": "Continue P01/P02 remaining children or independent P03 front-mudguard documentation. No active rendering or background fabrication after this handoff.",
     "background_automation_created": false,
     "last_verified_pushed_commit": "1ace9ea"
+  },
+  "continuous_execution": {
+    "date": "2026-10-21",
+    "goal": "Execute all30 packages continuously with regular GitHub saves; existing fidelity/receipt rules retained",
+    "state": "running",
+    "packages_assessed": 22,
+    "packages_with_geometry_or_source_work": 16,
+    "packages_not_assessed": 8,
+    "packages_complete": 0,
+    "whole_motorcycle_art_accepted": false,
+    "max_parallel_detailed_children": 3,
+    "owners": {
+      "front-worker": [
+        "P03",
+        "P06",
+        "P09",
+        "P21",
+        "P22",
+        "P23",
+        "P24",
+        "P25",
+        "P28",
+        "P29",
+        "P30"
+      ],
+      "powertrain-worker": [
+        "P01",
+        "P04",
+        "P14",
+        "P15",
+        "P16",
+        "P17",
+        "P18",
+        "P19",
+        "P20",
+        "P26",
+        "P27"
+      ],
+      "body-coordinator": [
+        "P02",
+        "P05",
+        "P07",
+        "P08",
+        "P10",
+        "P11",
+        "P12",
+        "P13"
+      ]
+    },
+    "note": "Work inventories may include refused or partial gray sources. No package completion inferred from file count, registry count or successful automated checks. No permanent background automation created."
   }
 }
