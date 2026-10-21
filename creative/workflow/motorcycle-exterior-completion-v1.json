@@ -1,0 +1,562 @@
+{
+  "schema": 1,
+  "plan_id": "motorcycle-exterior-completion-v1",
+  "date": "2026-10-21",
+  "baseline_commit": "37eaaa52aadb147d29d13e367c35e283c572a402",
+  "authorization": "User requests ordered planning of all remaining exterior parts, established method, and regular GitHub backups.",
+  "baseline_registered_candidates": 101,
+  "scope": "Execution packages covering all18 existing groups; not an exact OEM part count, fabrication result, scheduled automation or artistic acceptance.",
+  "max_parallel_detailed_components": 3,
+  "default_active_detailed_components": 1,
+  "dispatch_policy": "Select lowest-wave dependency-ready child. At most three independent detailed children globally, each one owner. A package may contain many sequential children. Blocked documentary/interface work yields to the next ready child, preserving the blocker. Review-only fit checks may use bounded estimated datums; no interface acceptance inferred.",
+  "existing_plan": "motorcycle-execution-18.json",
+  "workflow": "README.md",
+  "tasks": [
+    {
+      "id": "P01",
+      "wave": 1,
+      "title": "Cache latéral gauche",
+      "lot": 18,
+      "depends_on": [],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Contour, ajours et attaches visibles ; raccord au réservoir, à la selle et au cadre",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P02",
+      "wave": 1,
+      "title": "Porte-bagages et poignée passager",
+      "lot": 18,
+      "depends_on": [],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Tubes, plateforme et attaches ; place disponible au-dessus du garde-boue et derrière la selle",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P03",
+      "wave": 1,
+      "title": "Garde-boue avant",
+      "lot": 15,
+      "depends_on": [],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Courbure, épaisseur, bavette et supports documentés ; enveloppe roue/fourche",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P04",
+      "wave": 2,
+      "title": "Cache latéral droit",
+      "lot": 18,
+      "depends_on": [
+        "P01"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Documenter les asymétries ; ne pas réfléchir automatiquement le cache gauche",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P05",
+      "wave": 2,
+      "title": "Support du feu arrière",
+      "lot": 18,
+      "depends_on": [
+        "P02"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Interfaces avec cadre, garde-boue et porte-bagages",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P06",
+      "wave": 2,
+      "title": "Optique principale du phare",
+      "lot": 12,
+      "depends_on": [],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Décomposer lentille, réflecteur et détails observables ; profil et relief documentés avant fabrication",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P07",
+      "wave": 3,
+      "title": "Feu arrière",
+      "lot": 18,
+      "depends_on": [
+        "P05"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Décomposer corps, lentille et fixations ; forme éteinte puis éclairage de revue",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P08",
+      "wave": 3,
+      "title": "Support de plaque",
+      "lot": 18,
+      "depends_on": [
+        "P02",
+        "P05"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Inclinaison, attaches et dégagement roue/garde-boue ; emplacement éclairage et catadioptre à documenter",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P09",
+      "wave": 3,
+      "title": "Clignotant avant : raccords et fixations",
+      "lot": 12,
+      "depends_on": [],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Réutiliser coque, lentille et deux tiges déjà produites ; raccords visibles et revue gauche/droite",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P10",
+      "wave": 4,
+      "title": "Clignotants arrière et supports",
+      "lot": 18,
+      "depends_on": [
+        "P02",
+        "P05"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Un exemplaire documenté et reçu avant répétition ; asymétries et pose de chaque côté contrôlées",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P11",
+      "wave": 4,
+      "title": "Plaque et accessoires arrière observables",
+      "lot": 18,
+      "depends_on": [
+        "P08"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Documenter format et implantation RDC ; inscription de jeu fictive signalée ; éclairage/catadioptre seulement selon référence retenue",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P12",
+      "wave": 4,
+      "title": "Bouchon et accessoires visibles du réservoir",
+      "lot": 18,
+      "depends_on": [
+        "P01",
+        "P04"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Bouchon, robinet et durite en composants distincts ; conserver réservoir WEWA existant",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P13",
+      "wave": 5,
+      "title": "Supports et dessous de selle",
+      "lot": 18,
+      "depends_on": [
+        "P02"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Socles, nervures, épine avant, montants, projection arrière, retours/agrafes et petits reliefs séparés ; compléter le tampon sans inventer revers/tenon ; pose après revue",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P14",
+      "wave": 5,
+      "title": "Sélecteur de vitesses",
+      "lot": 17,
+      "depends_on": [],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Levier, embout, fixation et liaison au carter ; débattement utile",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P15",
+      "wave": 5,
+      "title": "Pédale et tringlerie de frein arrière",
+      "lot": 17,
+      "depends_on": [],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Pédale, pivot et liaison frein ; interfaces en revue, sans fonctionnement revendiqué avant contrôle",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P16",
+      "wave": 6,
+      "title": "Repose-pieds et caoutchoucs",
+      "lot": 17,
+      "depends_on": [
+        "P14",
+        "P15"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Compléter ceux de devant et fabriquer ceux du passager ; supports et exemplaire avant duplication",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P17",
+      "wave": 6,
+      "title": "Béquilles et ressorts visibles",
+      "lot": 17,
+      "depends_on": [],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Latérale/centrale selon variante documentée ; pivots, attaches, contact sol et positions repliées",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P18",
+      "wave": 6,
+      "title": "Moteur : volumes centraux extérieurs manquants",
+      "lot": 17,
+      "depends_on": [],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Inventorier contre carters/cylindre/culasse existants ; décomposer chaque volume et raccord visible",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P19",
+      "wave": 7,
+      "title": "Carburateur et raccords visibles",
+      "lot": 17,
+      "depends_on": [
+        "P18"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Corps, cuve, bouches, capot, levier et raccords séparés ; ne pas refaire admission existante",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P20",
+      "wave": 7,
+      "title": "Admission, durites et attaches échappement",
+      "lot": 17,
+      "depends_on": [
+        "P19"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Pont/vis/écrou collier, air/HT et attaches échappement ; conserver sources actuelles",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P21",
+      "wave": 7,
+      "title": "Moyeu arrière et porte-couronne",
+      "lot": 16,
+      "depends_on": [],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Moyeu, porte-couronne et entraînement distincts ; compatibilité jante/frein",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P22",
+      "wave": 8,
+      "title": "Couronne, pignon et chaîne",
+      "lot": 16,
+      "depends_on": [
+        "P18",
+        "P21"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Alignement transmission ; motif reçu avant répétition ; respect des volumes du carter de chaîne",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P23",
+      "wave": 8,
+      "title": "Axes arrière, tendeurs et commande de frein",
+      "lot": 16,
+      "depends_on": [
+        "P15",
+        "P21"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Empilements, réaction de frein et tension ; interfaces bras oscillant/roue",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P24",
+      "wave": 8,
+      "title": "Axe avant et détails roue/frein",
+      "lot": 14,
+      "depends_on": [
+        "P03"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Empilements fourche/moyeu/flasque, valve, prise compteur et commande ; contrôler variantes existantes",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P25",
+      "wave": 9,
+      "title": "Fourche et direction : finitions visibles",
+      "lot": 13,
+      "depends_on": [
+        "P24"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Capsules, quincaillerie et jonctions ; cohérence des tubes/soufflets existants",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P26",
+      "wave": 9,
+      "title": "Cadre, bras oscillant et pare-moteur : liaisons restantes",
+      "lot": 15,
+      "depends_on": [
+        "P18",
+        "P23"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Cordons, crochets, attaches, écrou de pivot et extrémités patin ; attache avant du carter supérieur à vérifier explicitement",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P27",
+      "wave": 9,
+      "title": "Pose et fixations des amortisseurs",
+      "lot": 16,
+      "depends_on": [
+        "P21",
+        "P23"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Réutiliser ensemble SNS et fermetures existants ; ancrages et débattement sans intersection",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P28",
+      "wave": 10,
+      "title": "Fixations guidon et leviers",
+      "lot": 1,
+      "depends_on": [],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Amortisseurs/rondelles inférieurs et rondelles/écrous de leviers des lots6/7 ; pas de nouvelle commande complète",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P29",
+      "wave": 10,
+      "title": "Câbles et faisceau visibles",
+      "lot": 10,
+      "depends_on": [
+        "P19",
+        "P24",
+        "P28"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Continuités accélérateur/embrayage/frein, départs commodos/contacteur, attaches et rayon au braquage ; garder départs déjà faits",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    },
+    {
+      "id": "P30",
+      "wave": 10,
+      "title": "Visière et cockpit : raccords finaux",
+      "lot": 11,
+      "depends_on": [
+        "P06",
+        "P09",
+        "P25",
+        "P29"
+      ],
+      "state": "planned",
+      "detailed_work_started": false,
+      "scope": "Retours/attaches visière, compteurs/support existants et dégagement des commandes/rétroviseurs",
+      "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
+      "owner": null,
+      "blockers": [],
+      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces."
+    }
+  ],
+  "assembly_checkpoints": [
+    {
+      "id": "R01",
+      "after": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P06",
+        "P07",
+        "P08",
+        "P09",
+        "P10",
+        "P11",
+        "P12"
+      ],
+      "scope": "Exterior silhouette: front/rear/left/right/top and two three-quarter views; visible inventory matrix and gaps, not reception"
+    },
+    {
+      "id": "R02",
+      "after": [
+        "P13",
+        "P14",
+        "P15",
+        "P16",
+        "P17",
+        "P18",
+        "P19",
+        "P20",
+        "P21",
+        "P22",
+        "P23",
+        "P24",
+        "P25",
+        "P26",
+        "P27"
+      ],
+      "scope": "Mounted candidate fit, contacts, clearances, steering/suspension/wheel and pedal/stand motions with explicit estimated interfaces"
+    },
+    {
+      "id": "R03",
+      "after": [
+        "P28",
+        "P29",
+        "P30",
+        "R01",
+        "R02"
+      ],
+      "scope": "Final exterior source/Babylon comparison, all camera views, no rider; optimize separate runtime derivative before hardware qualification and user reception"
+    }
+  ],
+  "save_policy": {
+    "events": [
+      "After G0-G2 documentation and bounded parameter plan",
+      "After gray source and geometric checks",
+      "After material previews then native detailed outputs",
+      "After GLB validation and actual Babylon captures",
+      "After each assembly checkpoint or before ending work"
+    ],
+    "destination": "origin/main after fetch and conflict resolution; reversible WIP branch if main cannot be advanced, report exact branch and blocker",
+    "contents": "Editable sources, scripts/parameters, generated PNG/EXR, GLB, manifests/hashes, workflow records, public delivery index and remaining issues; no unlicensed reference originals or credentials",
+    "verification": "Check staged evidence hashes and links, push, verify remote commit and public delivery bytes; retain last_verified_pushed_commit in handoff"
+  },
+  "completion": {
+    "exterior_complete": false,
+    "art_accepted": false,
+    "physical_device_qualified": false,
+    "criteria": [
+      "All packages decomposed and observable exterior units present or explicit reference-based not-applicable decision",
+      "All exterior views reviewed with no unexplained holes, floating parts or unconnected interfaces",
+      "Source and actual export/engine results linked to exact revisions",
+      "Optimization and hardware results recorded separately",
+      "Explicit user artistic reception; rider remains deferred"
+    ]
+  }
+}

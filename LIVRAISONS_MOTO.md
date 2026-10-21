@@ -113,6 +113,10 @@ OEM ni les performances iPhone.
 · [Sources modifiables](assets-src/moto-components/ignition-connector/)
 · [Nouveau contrôle Babylon de reprise](creative/reviews/ignition-connector-v2/inspection-recovery-2026-10-21/engine-check.json)
 
+## Planifier la suite
+
+[Ordre de fabrication des éléments extérieurs et sauvegardes GitHub](creative/workflow/MOTORCYCLE_EXTERIOR_COMPLETION.md) · [File de travail et dépendances](creative/workflow/motorcycle-exterior-completion-v1.json).
+
 ## Retrouver toute la progression
 
 - [Une image par composant](creative/reviews/motorcycle18-components.md)
