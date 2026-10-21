@@ -1,0 +1,32 @@
+{
+  "reason": "Radial squared-Y interpolation produces angular derivatives tied to perimeterparameter/corners, minnormal.face.8198; no render accepted.",
+  "files": [
+    {
+      "original": "assets-src/moto-components/fuel-tank-shell/fuel-tank-shell-study-v4.blend",
+      "archive": "/workspace/wewa-assets/work-in-progress/fuel-tank-shell-study-v4/rejected-radial-front-surface/fuel-tank-shell-study-v4.blend",
+      "sha256": "7dd77f7ef010feecde39bbabe83c399ba38886f638b7ae79d3258ffc44dd6e4e"
+    },
+    {
+      "original": "assets-src/moto-components/fuel-tank-shell/fuel-tank-shell-study-v4.glb",
+      "archive": "/workspace/wewa-assets/work-in-progress/fuel-tank-shell-study-v4/rejected-radial-front-surface/fuel-tank-shell-study-v4.glb",
+      "sha256": "1c263d6b6e75ad5df052f59dffbb73744d3e55db0ffb30df9a2b326f2be24843"
+    },
+    {
+      "original": "assets-src/moto-components/fuel-tank-shell/build_study_v4.py",
+      "archive": "/workspace/wewa-assets/work-in-progress/fuel-tank-shell-study-v4/rejected-radial-front-surface/build_study_v4.py",
+      "sha256": "4ec7f530e721cf14e210b8d3780bf5152c3c3dd9b03a1215555766106d26b42b"
+    },
+    {
+      "original": "creative/reviews/fuel-tank-shell-study-v4/build-report.json",
+      "archive": "/workspace/wewa-assets/work-in-progress/fuel-tank-shell-study-v4/rejected-radial-front-surface/build-report.json",
+      "sha256": "481a8866d9e27f585c70006f5aa1c26a300dfbe4b132a56d2564efe1769d31f1"
+    },
+    {
+      "original": "creative/reviews/fuel-tank-shell-study-v4/export-detail-check.json",
+      "archive": "/workspace/wewa-assets/work-in-progress/fuel-tank-shell-study-v4/rejected-radial-front-surface/export-detail-check.json",
+      "sha256": "b0c4e46c9e487da797d2371fc29c4c1d888c525031e2532b9c3cb7c26da39642"
+    }
+  ],
+  "correction": "Same X/Z topology and boundary vertices, replace Y construction by a single smooth graph over X/Z, constrained by each layer original boundaryprofile. Normals differentiated from that graph, not bufferrepair.",
+  "art_accepted": false
+}

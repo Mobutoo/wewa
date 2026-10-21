@@ -1,0 +1,81 @@
+{
+  "component_id": "MOTO-EXHAUST-SILENCER-BODY-001",
+  "revision": "exhaust-silencer-body-v1",
+  "source_sha256": "262b057c752be56eec3132ba931a269e0cd9fb40bc9ec8170f1f16aaae72b70b",
+  "export_sha256": "7bfc51c02f28f072448efdd7ea0eb57e1682107a16453c73db3ffce250697dda",
+  "reference_plan": "creative/research/exhaust-silencer-body/fabrication-plan-v1.json",
+  "reference_plan_sha256": "1f282519eece5673fd88b01f6cc7a68632181b3488c843a849060e767f966963",
+  "related_catalogue": "creative/research/engine17-exhaust-exterior-v1/report.json",
+  "related_catalogue_sha256": "7efb5ebef9b41371f7f9603e609bde788a75c364ff37f8116a71de169d2475bc",
+  "reference_photos_redistributed": false,
+  "source_method": "Monotone piecewise cubic variable scalar sections, bounded long rising main envelope, cross-section wall difference and rounded free-mouth edges. Source-authored analytic normals/UV; no CSG, global bevel or exported buffer repair. Rear projected ellipse not used as metric section.",
+  "actual_inputs": [
+    {
+      "path": "assets-src/moto-components/exhaust-header/exhaust-header-v1.blend",
+      "sha256": "651b06d1db9a01cd683492387b0516959dafd513ef6efcba401d6deb8ec9fd5a"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/interfaces.json",
+      "sha256": "38b8601a7a826cbb35be83f8a6d5e9c7e8e514307cffd6e33e959ac6728f3861"
+    },
+    {
+      "path": "assets-src/moto-components/throttle-control/control_geometry.py",
+      "sha256": "430351cb8ef4877a2575174958e86d998664d8dd5941a9d5cb74ff22f47ffe8c"
+    }
+  ],
+  "source_geometry_protected_digest": "11893a46e1f4f9f93c257abe7222b1129858683d5e80cb72286f622f16a7da13",
+  "original_material_maps": {
+    "basecolor": {
+      "path": "assets-src/moto-components/exhaust-silencer-body/textures/silencer-coating-basecolor-v1.png",
+      "sha256": "a6b3633f5011c4f2495f99c9deea3ec0e6ffd7e1171c15235da7081013cb224e",
+      "minimum_buffer_rgb": [
+        0.1098039299249649,
+        0.11372549831867218,
+        0.12156863510608673
+      ],
+      "maximum_buffer_rgb": [
+        0.11372549831867218,
+        0.12156863510608673,
+        0.125490203499794
+      ],
+      "std_buffer_rgb": [
+        0.005247125402092934,
+        0.005362836178392172,
+        0.002571199322119355
+      ],
+      "colorspace": "sRGB",
+      "size_px": [
+        512,
+        8192
+      ]
+    },
+    "roughness": {
+      "path": "assets-src/moto-components/exhaust-silencer-body/textures/silencer-coating-roughness-v1.png",
+      "sha256": "24ba3a858963f1f4eb0f52bc3b49eabfad73fe389e40e8081c91f2f3160d6b83",
+      "minimum_buffer_rgb": [
+        0.45098042488098145,
+        0.45098042488098145,
+        0.45098042488098145
+      ],
+      "maximum_buffer_rgb": [
+        0.529411792755127,
+        0.529411792755127,
+        0.529411792755127
+      ],
+      "std_buffer_rgb": [
+        0.012586245313286781,
+        0.012586245313286781,
+        0.012586245313286781
+      ],
+      "colorspace": "Non-Color",
+      "size_px": [
+        512,
+        8192
+      ]
+    }
+  },
+  "no_internal_baffles_or_catalyst_claim": true,
+  "physical_mounts_or_rear_closure_not_inferred": true,
+  "all_dimensions_estimated": true,
+  "art_accepted": false
+}

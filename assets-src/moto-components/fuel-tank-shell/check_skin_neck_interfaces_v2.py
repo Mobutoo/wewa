@@ -1,0 +1,7 @@
+import bpy,json,hashlib
+from pathlib import Path
+from mathutils.bvhtree import BVHTree
+H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/fuel-tank-shell-study-v2';j=json.loads((O/'build-report.json').read_text());sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();s=H/'fuel-tank-shell-study-v2.blend';assert sha(s)==j['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(s));o=bpy.data.objects[j['object']];m=o.data;v=[x.co.copy()for x in m.vertices];reg=m.attributes['SKIN_REGION'];regions={k:[tuple(p.vertices)for p in m.polygons if reg.data[p.index].value==k]for k in [0,1,3]};trees={k:BVHTree.FromPolygons(v,faces,all_triangles=True,epsilon=0)for k,faces in regions.items()};report={'source_sha256':j['source_sha256'],'pairs':[],'scope':'Read-only evaluated source topology/BVH. Shared-index seam contacts excluded; remaining candidatepairs would need exactintersection localization. Not OEM fit or wholebike clearance.','art_accepted':False}
+for a,b in [(0,3),(1,3),(0,1)]:
+ pairs=trees[a].overlap(trees[b]);shared=[(i,k)for i,k in pairs if set(regions[a][i])&set(regions[b][k])];other=[(i,k)for i,k in pairs if not(set(regions[a][i])&set(regions[b][k]))];report['pairs'].append({'region_a':a,'region_b':b,'BVH_candidatepairs':len(pairs),'topological_shared_vertex_contacts':len(shared),'remaining_candidatepairs':len(other),'first_remaining_pairs':other[:20]})
+(O/'skin-neck-interface-check.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report));assert sha(s)==j['source_sha256']

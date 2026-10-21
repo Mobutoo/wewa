@@ -1,0 +1,11 @@
+"""Actual central opening and normal plate-wall rays; not an exhaust-flow test."""
+from pathlib import Path
+import bpy,json,hashlib,math
+from mathutils import Vector
+from mathutils.bvhtree import BVHTree
+H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/exhaust-silencer-end-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();B=json.loads((H/'build-report.json').read_text());P=json.loads((H/'parameters.json').read_text());source=H/'exhaust-silencer-end-v1.blend';assert sha(source)==B['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(source));o=bpy.data.objects[B['geometry'][0]['name']];m=o.data;m.calc_loop_triangles();tree=BVHTree.FromPolygons([o.matrix_world@v.co for v in m.vertices],[tuple(t.vertices)for t in m.loop_triangles],all_triangles=True);centre=o.parent.matrix_world.translation;axis=Vector((0,1,0));rows=[];wall=[]
+for index,offset in enumerate([(0,0,0),(.004,0,0),(-.004,0,0),(0,0,.004),(0,0,-.004)]):
+ start=centre+Vector(offset)-axis*.001;hit=tree.ray_cast(start,axis,.010);row={'sample':index,'origin_world_m':list(start),'direction_world':list(axis),'length_m':.010,'wall_hit':hit[0]is not None};rows.append(row);assert hit[0]is None,row
+for j in range(4):
+ radial=Vector((math.cos(j*math.pi/2),0,math.sin(j*math.pi/2)));start=centre+radial*.025-axis*.001;hit=tree.ray_cast(start,axis,.01);assert hit[0]is not None;entry=hit[0];end=tree.ray_cast(entry+axis*1e-6,axis,.01);assert end[0]is not None;thickness=(end[0]-entry).length;row={'angle_rad':j*math.pi/2,'sampled_normal_plate_wall_m':thickness,'working_nominal_wall_m':P['working_plate_thickness_m'],'difference_m':thickness-P['working_plate_thickness_m']};wall.append(row);assert abs(row['difference_m'])<2e-6,row
+r={'component_id':B['component_id'],'source_sha256':sha(source),'export_sha256':B['export_sha256'],'lumen_rays':rows,'actual_wall_rays':wall,'scope':'Five retained-mesh central rays cross the finite technical plate without wall hit; four axial rays measure its outer flat wall. No physical outlet size, wall tolerance, internal pipe, pressure, acoustics or exhaust flow reception.','all_dimensions_estimated':True,'art_accepted':False};(O/'opening-wall-check.json').write_text(json.dumps(r,indent=2)+'\n');print('END_CLOSURE_OPENING',json.dumps(r))

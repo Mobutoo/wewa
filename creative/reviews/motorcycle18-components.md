@@ -1,6 +1,6 @@
 # Viva Wewa — revue des composants moto
 
-**52 composants uniques enregistrés · 52 vues Blender prouvées · aucune réception artistique.**
+**59 composants uniques enregistrés · 59 vues Blender prouvées · aucune réception artistique.**
 
 Une seule vue originale par composant, à la révision exacte de sa fiche. Les anciennes révisions et les sources seulement cataloguées ou gelées sans enregistrement central ne sont pas ajoutées. Ces rendus montrent des candidats isolés, pas le jeu ni une moto terminée.
 
@@ -10,7 +10,7 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 
 ## Les 18 groupes
 
-**2 groupes restent sans nouvelle pièce enregistrée dans cette séquence.** Le groupe 14 dispose de candidats antérieurs ci-dessous ; sa compatibilité actuelle reste à recontrôler.
+**1 groupes restent sans nouvelle pièce enregistrée dans cette séquence.** Le groupe 14 dispose de candidats antérieurs ci-dessous ; sa compatibilité actuelle reste à recontrôler.
 
 | Groupe | Composants enregistrés dans la séquence | État |
 | --- | --- | --- |
@@ -25,13 +25,13 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 | [09 · Contacteur et clé](#groupe-9) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [10 · Câbles et faisceau visibles](#groupe-10) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [11 · Visière et entourage des compteurs](#groupe-11) | 1 | Candidats partiels en revue ; groupe non terminé |
-| [12 · Phare et clignotants avant](#groupe-12) | 2 | Candidats partiels en revue ; groupe non terminé |
+| [12 · Phare et clignotants avant](#groupe-12) | 3 | Candidats partiels en revue ; groupe non terminé |
 | [13 · Fourche et direction](#groupe-13) | 6 | Candidats partiels en revue ; groupe non terminé |
 | [14 · Ensemble avant et compatibilité des candidats existants](#groupe-14) | Voir les préexistants ; aucun nouveau composant compté | Candidats antérieurs existants à recontrôler ; compatibilité restante |
-| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 7 | Candidats partiels en revue ; groupe non terminé |
+| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 9 | Candidats partiels en revue ; groupe non terminé |
 | [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 2 | Candidats partiels en revue ; groupe non terminé |
-| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 14 | Candidats partiels en revue ; groupe non terminé |
-| [18 · Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière](#groupe-18) | 0 | À fabriquer ; aucune pièce enregistrée |
+| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 17 | Candidats partiels en revue ; groupe non terminé |
+| [18 · Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière](#groupe-18) | 1 | Candidats partiels en revue ; groupe non terminé |
 
 <a id="groupe-1"></a>
 
@@ -518,6 +518,32 @@ PNG SHA-256 : `4ec4ded59f3c1420c367dcbf9fd62f76bf5bb1bdfbcc7d137da4c9781fa78d36`
 
 </details>
 
+
+<a id="moto-headlamp-cowl-001"></a>
+
+### Coiffe de phare — coque rouge et intérieur séparément relus
+
+`MOTO-HEADLAMP-COWL-001` · révision `headlamp-cowl-v1` · **candidat non reçu**
+
+![Coiffe de phare — coque rouge et intérieur séparément relus — headlamp-cowl-v1](headlamp-cowl-v1/whole-outside.png)
+
+[Image entière](headlamp-cowl-v1/whole-outside.png) · [Preuve du rendu](headlamp-cowl-v1/render-report.json) · vue `whole-outside`
+
+Source SHA-256 : `78f2af6ee6a7e8ddf396899dcbb4215b47bf21e566b96ebaef027d8d4fa13d68`  
+PNG SHA-256 : `5ac5cfbc61f8b583fa4ae81f5e7bd6f20208af7f4cdb36df5ddd1a46065bf955`
+
+[Blender](../../assets-src/moto-components/headlamp/cowl/headlamp-cowl-v1.blend) · [GLB](../../assets-src/moto-components/headlamp/cowl/headlamp-cowl-inspection.glb) · [README source](../../assets-src/moto-components/headlamp/cowl/README.md) · [Revue et limites](headlamp-cowl-v1/README.md) · [Fiche](../workflow/records/moto-headlamp-cowl-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [whole-inside](headlamp-cowl-v1/whole-inside.png) · [preuve](headlamp-cowl-v1/render-report.json)
+- [whole-oblique](headlamp-cowl-v1/whole-oblique.png) · [preuve](headlamp-cowl-v1/render-report.json)
+- [inside-partial-ribs](headlamp-cowl-v1/inside-partial-ribs.png) · [preuve](headlamp-cowl-v1/render-report.json)
+
+</details>
+
 Périmètre prévu : coque du phare; réflecteur et optique; clignotant avant gauche; clignotant avant droit.
 
 <a id="groupe-13"></a>
@@ -868,6 +894,57 @@ PNG SHA-256 : `e2b4a53f3e600dd5dfd12fddc5706fd726b1b18d9c959818bee2c0bf0e39b112`
 
 </details>
 
+
+<a id="moto-swingarm-pivot-bush-001"></a>
+
+### Bague de pivot — trois enveloppes isolées
+
+`MOTO-SWINGARM-PIVOT-BUSH-001` · révision `swingarm-pivot-bush-v1` · **candidat non reçu**
+
+![Bague de pivot — trois enveloppes isolées — swingarm-pivot-bush-v1](swingarm-pivot-bush-v1/quarter.png)
+
+[Image entière](swingarm-pivot-bush-v1/quarter.png) · [Preuve du rendu](swingarm-pivot-bush-v1/render-report.json) · vue `quarter`
+
+Source SHA-256 : `1fceb19d6a30e1b718417dd902d142df7aacb5c4a279a4ba72ad40d8eabbf36f`  
+PNG SHA-256 : `579d050f46197890961e220e5556c09d7bf1ac50b0595d2e10d22ac193f1e8ba`
+
+[Blender](../../assets-src/moto-components/swingarm/pivot-bush/swingarm-pivot-bush-v1.blend) · [GLB](../../assets-src/moto-components/swingarm/pivot-bush/swingarm-pivot-bush-inspection.glb) · [README source](../../assets-src/moto-components/swingarm/pivot-bush/README.md) · [Revue et limites](swingarm-pivot-bush-v1/README.md) · [Fiche](../workflow/records/moto-swingarm-pivot-bush-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [front](swingarm-pivot-bush-v1/front.png) · [preuve](swingarm-pivot-bush-v1/render-report.json)
+- [lip-detail](swingarm-pivot-bush-v1/lip-detail.png) · [preuve](swingarm-pivot-bush-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-swingarm-pivot-shaft-001"></a>
+
+### Axe de pivot — candidat JA121003 apparenté
+
+`MOTO-SWINGARM-PIVOT-SHAFT-001` · révision `swingarm-pivot-shaft-v1` · **candidat non reçu**
+
+![Axe de pivot — candidat JA121003 apparenté — swingarm-pivot-shaft-v1](swingarm-pivot-shaft-v1/quarter.png)
+
+[Image entière](swingarm-pivot-shaft-v1/quarter.png) · [Preuve du rendu](swingarm-pivot-shaft-v1/render-report.json) · vue `quarter`
+
+Source SHA-256 : `918fc762407cf96b2055bb7342acd869974a0be37aaa86e7f62cbfd46db72be9`  
+PNG SHA-256 : `e1668003611ff91daca7132829d37c92048b1b45a2d318f6997e035299173403`
+
+[Blender](../../assets-src/moto-components/swingarm/pivot-shaft/swingarm-pivot-shaft-v1.blend) · [GLB](../../assets-src/moto-components/swingarm/pivot-shaft/swingarm-pivot-shaft-inspection.glb) · [README source](../../assets-src/moto-components/swingarm/pivot-shaft/README.md) · [Revue et limites](swingarm-pivot-shaft-v1/README.md) · [Fiche](../workflow/records/moto-swingarm-pivot-shaft-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [side](swingarm-pivot-shaft-v1/side.png) · [preuve](swingarm-pivot-shaft-v1/render-report.json)
+- [head-detail](swingarm-pivot-shaft-v1/head-detail.png) · [preuve](swingarm-pivot-shaft-v1/render-report.json)
+- [thread-detail](swingarm-pivot-shaft-v1/thread-detail.png) · [preuve](swingarm-pivot-shaft-v1/render-report.json)
+
+</details>
+
 Périmètre prévu : garde-boue avant; cadre: tubes et jonctions visibles; bras oscillant et pivots visibles.
 
 <a id="groupe-16"></a>
@@ -903,26 +980,26 @@ PNG SHA-256 : `d17fd8a5dbefa5d646551d9432b9e0a74c7f6971128898082903ddc06a1f98eb`
 
 <a id="moto-tyre-rear-001"></a>
 
-### Pneu arrière — candidat isolé 3.00-17 TL
+### Pneu arrière v2 — terminaisons de sillons corrigées
 
-`MOTO-TYRE-REAR-001` · révision `rear-tyre-v1` · **candidat non reçu**
+`MOTO-TYRE-REAR-001` · révision `rear-tyre-v2` · **candidat non reçu**
 
-![Pneu arrière — candidat isolé 3.00-17 TL — rear-tyre-v1](rear-tyre-v1/quarter.png)
+![Pneu arrière v2 — terminaisons de sillons corrigées — rear-tyre-v2](rear-tyre-v2/quarter.png)
 
-[Image entière](rear-tyre-v1/quarter.png) · [Preuve du rendu](rear-tyre-v1/render-report.json) · vue `quarter`
+[Image entière](rear-tyre-v2/quarter.png) · [Preuve du rendu](rear-tyre-v2/render-report.json) · vue `quarter`
 
-Source SHA-256 : `612388ce8f1fb5850a01c3329e23fc39ad42e631c4a517e56576a0a359066b5c`  
-PNG SHA-256 : `62fc1b710c745db21a873b28b6062cfc3e02b11e331f118d94d91d620b4c512d`
+Source SHA-256 : `9fe1f6c7fad5939804c9421accca99451c1a870ec6fd342f126a464ee1d46049`  
+PNG SHA-256 : `e59f6b0e609dcc815852ea41c78e8656e54c4c8fc692500859d912a43439810e`
 
-[Blender](../../assets-src/moto-components/rear-tyre/rear-tyre-v1.blend) · [GLB](../../assets-src/moto-components/rear-tyre/rear-tyre-inspection.glb) · [README source](../../assets-src/moto-components/rear-tyre/README.md) · [Revue et limites](rear-tyre-v1/README.md) · [Fiche](../workflow/records/moto-tyre-rear-001.json)
+[Blender](../../assets-src/moto-components/rear-tyre/v2/rear-tyre-v2.blend) · [GLB](../../assets-src/moto-components/rear-tyre/v2/rear-tyre-v2-inspection.glb) · [README source](../../assets-src/moto-components/rear-tyre/v2/README.md) · [Revue et limites](rear-tyre-v2/README.md) · [Fiche](../workflow/records/moto-tyre-rear-001.json)
 
 
 <details>
 <summary>Autres vues Blender prouvées de cette révision</summary>
 
-- [rear-tread](rear-tyre-v1/rear-tread.png) · [preuve](rear-tyre-v1/render-report.json)
-- [tread-detail](rear-tyre-v1/tread-detail.png) · [preuve](rear-tyre-v1/render-report.json)
-- [bead-opening](rear-tyre-v1/bead-opening.png) · [preuve](rear-tyre-v1/render-report.json)
+- [rear-tread](rear-tyre-v2/rear-tread.png) · [preuve](rear-tyre-v2/render-report.json)
+- [tread-detail](rear-tyre-v2/tread-detail.png) · [preuve](rear-tyre-v2/render-report.json)
+- [bead-opening](rear-tyre-v2/bead-opening.png) · [preuve](rear-tyre-v2/render-report.json)
 
 </details>
 
@@ -1288,13 +1365,115 @@ PNG SHA-256 : `bfe4522c7203c2dcb87f5acb3952d892a920aa4ccf93a617d9241b7ba7bc744f`
 
 </details>
 
+
+<a id="moto-exhaust-header-001"></a>
+
+### Tube avant d’échappement — candidat creux isolé
+
+`MOTO-EXHAUST-HEADER-001` · révision `exhaust-header-v1` · **candidat non reçu**
+
+![Tube avant d’échappement — candidat creux isolé — exhaust-header-v1](exhaust-header-v1/right-profile.png)
+
+[Image entière](exhaust-header-v1/right-profile.png) · [Preuve du rendu](exhaust-header-v1/render-report.json) · vue `right-profile`
+
+Source SHA-256 : `651b06d1db9a01cd683492387b0516959dafd513ef6efcba401d6deb8ec9fd5a`  
+PNG SHA-256 : `0d4306abe6cd79574548f051229a742f360bbad96edae0f2dd69fd7f7bdcb323`
+
+[Blender](../../assets-src/moto-components/exhaust-header/exhaust-header-v1.blend) · [GLB](../../assets-src/moto-components/exhaust-header/exhaust-header-inspection.glb) · [README source](../../assets-src/moto-components/exhaust-header/README.md) · [Revue et limites](exhaust-header-v1/README.md) · [Fiche](../workflow/records/moto-exhaust-header-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [opposite-quarter](exhaust-header-v1/opposite-quarter.png) · [preuve](exhaust-header-v1/render-report.json)
+- [mouth-wall-detail](exhaust-header-v1/mouth-wall-detail.png) · [preuve](exhaust-header-v1/render-report.json)
+- [conditional-engine-context](exhaust-header-v1/conditional-engine-context.png) · [preuve](exhaust-header-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-exhaust-silencer-body-001"></a>
+
+### Silencieux — coque principale isolée
+
+`MOTO-EXHAUST-SILENCER-BODY-001` · révision `exhaust-silencer-body-v1` · **candidat non reçu**
+
+![Silencieux — coque principale isolée — exhaust-silencer-body-v1](exhaust-silencer-body-v1/right-profile.png)
+
+[Image entière](exhaust-silencer-body-v1/right-profile.png) · [Preuve du rendu](exhaust-silencer-body-v1/render-report.json) · vue `right-profile`
+
+Source SHA-256 : `262b057c752be56eec3132ba931a269e0cd9fb40bc9ec8170f1f16aaae72b70b`  
+PNG SHA-256 : `f9303d6d6dd1bbb5d1a490f99de75ad301b92f5edb8e4943820a2cba49c17cb3`
+
+[Blender](../../assets-src/moto-components/exhaust-silencer-body/exhaust-silencer-body-v1.blend) · [GLB](../../assets-src/moto-components/exhaust-silencer-body/exhaust-silencer-body-inspection.glb) · [README source](../../assets-src/moto-components/exhaust-silencer-body/README.md) · [Revue et limites](exhaust-silencer-body-v1/README.md) · [Fiche](../workflow/records/moto-exhaust-silencer-body-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [rear-quarter](exhaust-silencer-body-v1/rear-quarter.png) · [preuve](exhaust-silencer-body-v1/render-report.json)
+- [front-neck-detail](exhaust-silencer-body-v1/front-neck-detail.png) · [preuve](exhaust-silencer-body-v1/render-report.json)
+- [conditional-header-context](exhaust-silencer-body-v1/conditional-header-context.png) · [preuve](exhaust-silencer-body-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-exhaust-silencer-end-001"></a>
+
+### Silencieux — fond arrière et petite sortie isolés
+
+`MOTO-EXHAUST-SILENCER-END-001` · révision `exhaust-silencer-end-v1` · **candidat non reçu**
+
+![Silencieux — fond arrière et petite sortie isolés — exhaust-silencer-end-v1](exhaust-silencer-end-v1/outside-rear-quarter.png)
+
+[Image entière](exhaust-silencer-end-v1/outside-rear-quarter.png) · [Preuve du rendu](exhaust-silencer-end-v1/render-report.json) · vue `outside-rear-quarter`
+
+Source SHA-256 : `73dca8f12a2e7878d3f5820c93bdfd4a49317df4f7799f4a8a652eba62511317`  
+PNG SHA-256 : `5d303446c77720b3a850f309db3d8486231c3980fe467cfceb693781a3af775d`
+
+[Blender](../../assets-src/moto-components/exhaust-silencer-end/exhaust-silencer-end-v1.blend) · [GLB](../../assets-src/moto-components/exhaust-silencer-end/exhaust-silencer-end-inspection.glb) · [README source](../../assets-src/moto-components/exhaust-silencer-end/README.md) · [Revue et limites](exhaust-silencer-end-v1/README.md) · [Fiche](../workflow/records/moto-exhaust-silencer-end-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [estimated-inner-front](exhaust-silencer-end-v1/estimated-inner-front.png) · [preuve](exhaust-silencer-end-v1/render-report.json)
+- [small-outlet-detail](exhaust-silencer-end-v1/small-outlet-detail.png) · [preuve](exhaust-silencer-end-v1/render-report.json)
+- [conditional-rear-shell-context](exhaust-silencer-end-v1/conditional-rear-shell-context.png) · [preuve](exhaust-silencer-end-v1/render-report.json)
+
+</details>
+
 Périmètre prévu : carter moteur gauche; carter moteur droit; cylindre et culasse à ailettes; admission et détails extérieurs visibles; collecteur et silencieux; repose-pieds avant/arrière; pédale frein et tringlerie; sélecteur et kick visibles; béquille latérale; béquille centrale.
 
 <a id="groupe-18"></a>
 
 ## 18 · Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière
 
-**À fabriquer : aucun composant enregistré pour ce groupe.** Une recherche documentaire ne compte pas comme un modèle fini.
+
+<a id="moto-fuel-tank-shell-001"></a>
+
+### Réservoir WEWA — coque extérieure seule
+
+`MOTO-FUEL-TANK-SHELL-001` · révision `fuel-tank-shell-v1` · **candidat non reçu**
+
+![Réservoir WEWA — coque extérieure seule — fuel-tank-shell-v1](fuel-tank-shell-v1/right-oblique.png)
+
+[Image entière](fuel-tank-shell-v1/right-oblique.png) · [Preuve du rendu](fuel-tank-shell-v1/render-report.json) · vue `right-oblique`
+
+Source SHA-256 : `d0726a48b0254790c217d9676c1d0af02a6a9eed79fd2961fa36f2b7bba11362`  
+PNG SHA-256 : `51e28f1d7f153d4099ec15eb96ea59892966dff543bc3acb4436e669e4cdefec`
+
+[Blender](../../assets-src/moto-components/fuel-tank-shell/fuel-tank-shell-v1.blend) · [GLB](../../assets-src/moto-components/fuel-tank-shell/fuel-tank-shell-inspection.glb) · [README source](../../assets-src/moto-components/fuel-tank-shell/README.md) · [Revue et limites](fuel-tank-shell-v1/README.md) · [Fiche](../workflow/records/moto-fuel-tank-shell-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [left-oblique](fuel-tank-shell-v1/left-oblique.png) · [preuve](fuel-tank-shell-v1/render-report.json)
+- [mouth-detail](fuel-tank-shell-v1/mouth-detail.png) · [preuve](fuel-tank-shell-v1/render-report.json)
+- [open-underside-scope](fuel-tank-shell-v1/open-underside-scope.png) · [preuve](fuel-tank-shell-v1/render-report.json)
+
+</details>
 
 Périmètre prévu : réservoir WEWA et bouchon; cache gauche; cache droit; selle et dessous documenté; porte-bagages et attaches; garde-boue arrière visible; feu arrière; clignotants arrière gauche/droit; support plaque.
 

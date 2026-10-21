@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-EXHAUST-SILENCER-END-001",
-  "label": "Fond ext\u00e9rieur du silencieux et petit orifice \u2014 candidat conditionnel",
+  "label": "Silencieux — fond arrière et petite sortie isolés",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,13 +12,13 @@
     "material"
   ],
   "identity": {
-    "variant": "Current RDC rear visual, relatedJV591009 assembly, closure code/section unverified",
+    "variant": "Exact-market exterior rear fragments with estimated shell interfaces; no measured rear-face profile or current code certification",
     "variant_confirmed": false,
-    "usage": "Separate visible rear closure then candidate interface review",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
-      0.1,
-      0.5,
-      1.5
+      0.15,
+      0.35,
+      0.65
     ]
   },
   "source_register": "../sources.json",
@@ -27,7 +27,277 @@
     "D04"
   ],
   "claims": [],
-  "views": [],
+  "views": [
+    {
+      "name": "outside-rear-quarter",
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CONTROL_CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          0.0005000000237487257,
+          1000.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.2799565753572291,
+        "farthest_actual_vertex_depth_m": 0.3276620156413075,
+        "projected_uv_min": [
+          0.31089658318504587,
+          0.1617130711782669
+        ],
+        "projected_uv_max": [
+          0.7145217676562108,
+          0.8688961376319269
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Rear silencer closure with small bore - conditional RDC",
+            "vertices": 19392,
+            "depth_m": [
+              0.2799565753572291,
+              0.3276620156413075
+            ],
+            "projected_uv_min": [
+              0.31089658318504587,
+              0.1617130711782669
+            ],
+            "projected_uv_max": [
+              0.7145217676562108,
+              0.8688961376319269
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "outputs": [
+        {
+          "file": "outside-rear-quarter.exr",
+          "format": "OPEN_EXR",
+          "bytes": 1079977,
+          "sha256": "4b8d135c4285cef41a15a017e9b6b2b8fcb812ca250ff95616e9cc578abc271e",
+          "linear_scene_data": true
+        },
+        {
+          "file": "outside-rear-quarter.png",
+          "format": "PNG",
+          "bytes": 1459112,
+          "sha256": "5d303446c77720b3a850f309db3d8486231c3980fe467cfceb693781a3af775d",
+          "linear_scene_data": false
+        }
+      ]
+    },
+    {
+      "name": "estimated-inner-front",
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CONTROL_CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          0.0005000000237487257,
+          1000.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.2345311483953155,
+        "farthest_actual_vertex_depth_m": 0.27585744905781445,
+        "projected_uv_min": [
+          0.27361765546233663,
+          0.07815245037053287
+        ],
+        "projected_uv_max": [
+          0.75715660199035,
+          0.9454595528528162
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Rear silencer closure with small bore - conditional RDC",
+            "vertices": 19392,
+            "depth_m": [
+              0.2345311483953155,
+              0.27585744905781445
+            ],
+            "projected_uv_min": [
+              0.27361765546233663,
+              0.07815245037053287
+            ],
+            "projected_uv_max": [
+              0.75715660199035,
+              0.9454595528528162
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "outputs": [
+        {
+          "file": "estimated-inner-front.exr",
+          "format": "OPEN_EXR",
+          "bytes": 1316456,
+          "sha256": "6bfb62dc1863d2820a2e0dde3e9982cef8313ae58c9947e3161bc7e8ea7c8508",
+          "linear_scene_data": true
+        },
+        {
+          "file": "estimated-inner-front.png",
+          "format": "PNG",
+          "bytes": 1467572,
+          "sha256": "2f70a3e6c17f558d4076f7d2f4aa39e0fd43412843675bf257abb2ff173270e0",
+          "linear_scene_data": false
+        }
+      ]
+    },
+    {
+      "name": "small-outlet-detail",
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CONTROL_CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          0.0005000000237487257,
+          1000.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.11448252600145092,
+        "farthest_actual_vertex_depth_m": 0.1293629831828485,
+        "projected_uv_min": [
+          -0.4952012647515853,
+          -0.9785087318590437
+        ],
+        "projected_uv_max": [
+          1.4348953643523439,
+          2.123723538987157
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Rear silencer closure with small bore - conditional RDC",
+            "vertices": 19392,
+            "depth_m": [
+              0.11448252600145092,
+              0.1293629831828485
+            ],
+            "projected_uv_min": [
+              -0.4952012647515853,
+              -0.9785087318590437
+            ],
+            "projected_uv_max": [
+              1.4348953643523439,
+              2.123723538987157
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "outputs": [
+        {
+          "file": "small-outlet-detail.exr",
+          "format": "OPEN_EXR",
+          "bytes": 2442988,
+          "sha256": "da668e9ccc0a14f16424883ab68c574b7977cf11c74390c711bddc473db34c09",
+          "linear_scene_data": true
+        },
+        {
+          "file": "small-outlet-detail.png",
+          "format": "PNG",
+          "bytes": 1537700,
+          "sha256": "732247c70f5a3d6cea13913b2a8a23d150e1c792bf8f57de8841162f4365ee9c",
+          "linear_scene_data": false
+        }
+      ]
+    },
+    {
+      "name": "conditional-rear-shell-context",
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CONTROL_CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          0.0005000000237487257,
+          1000.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.36083505615416556,
+        "farthest_actual_vertex_depth_m": 0.9443072574656455,
+        "projected_uv_min": [
+          0.315194504534115,
+          0.17416473244184166
+        ],
+        "projected_uv_max": [
+          1.2385709075227904,
+          1.0125534222281842
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Rear silencer closure with small bore - conditional RDC",
+            "vertices": 19392,
+            "depth_m": [
+              0.3631621812150789,
+              0.41002894343170926
+            ],
+            "projected_uv_min": [
+              0.32686023660769825,
+              0.18863596704022573
+            ],
+            "projected_uv_max": [
+              0.6918212701143349,
+              0.8322732622766363
+            ],
+            "finite": true
+          },
+          {
+            "object": "Rising hollow silencer main shell - conditional RDC",
+            "vertices": 67840,
+            "depth_m": [
+              0.36083505615416556,
+              0.9443072574656455
+            ],
+            "projected_uv_min": [
+              0.315194504534115,
+              0.17416473244184166
+            ],
+            "projected_uv_max": [
+              1.2385709075227904,
+              1.0125534222281842
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "outputs": [
+        {
+          "file": "conditional-rear-shell-context.exr",
+          "format": "OPEN_EXR",
+          "bytes": 1866895,
+          "sha256": "af399c57e4f3cce8c75e860f5dde32942aa9210545d30aec309921d931b4f21f",
+          "linear_scene_data": true
+        },
+        {
+          "file": "conditional-rear-shell-context.png",
+          "format": "PNG",
+          "bytes": 1519223,
+          "sha256": "62c4c6b5b0fa496742c605a2e7412286ffdb1218803be6e9c521b32dc30de24d",
+          "linear_scene_data": false
+        }
+      ]
+    }
+  ],
   "criteria": [],
   "gaps": [
     {
@@ -55,7 +325,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "exhaust-silencer-end-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -66,60 +336,100 @@
       "revision": "exhaust-silencer-end-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Small bounded rear face and projected outlet visible. Exact section, inset, wall, outlet size and joining construction unknown; bounded fabrication authorized.",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
-      "status": "pending",
-      "revision": null,
+      "status": "blocked",
+      "revision": "exhaust-silencer-end-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "exhaust-silencer-end-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/exhaust-silencer-end/exhaust-silencer-end-v1.blend",
+          "kind": "editable_source",
+          "revision": "exhaust-silencer-end-v1",
+          "sha256": "73dca8f12a2e7878d3f5820c93bdfd4a49317df4f7799f4a8a652eba62511317"
+        },
+        {
+          "path": "../../reviews/exhaust-silencer-end-v1/outside-rear-quarter.png",
+          "kind": "isolated_comparison",
+          "revision": "exhaust-silencer-end-v1",
+          "sha256": "5d303446c77720b3a850f309db3d8486231c3980fe467cfceb693781a3af775d"
+        }
+      ],
+      "reason": "Four actual final96 views read, including whole rear face, estimated reverse, small outlet macro and unchanged-shell context. Rear lip and true small passage visible; section inherited from estimated shell, inset and backwall remain estimates from partial photo, not a measured rear mould.",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "exhaust-silencer-end-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/exhaust-silencer-end-v1/conditional-rear-shell-context.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "exhaust-silencer-end-v1",
+          "sha256": "62c4c6b5b0fa496742c605a2e7412286ffdb1218803be6e9c521b32dc30de24d"
+        }
+      ],
+      "reason": "Two original color/roughness maps decoded, no normalmap or invented metal on brighter reverse. Protected G3 geometry/N/UV/indices/poses exact. Coating scale and finish unmeasured; source/runtime illumination unmatched.",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "exhaust-silencer-end-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/exhaust-silencer-end-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "exhaust-silencer-end-v1",
+          "sha256": "c442ea70d767af57cfd456e6d86d51769a5293c7dd614958fe003e286df4487e"
+        }
+      ],
+      "reason": "One positive closed wall, five passage/four wall probes, targeted unchanged-body surface/inclusion0reported crossing with one explicitly direct-resolved numeric ambiguity. Candidate root/inset/gap declared before geometry. Actual seam/weld/clearance/fit not received; no hidden outlet tube,baffles,catalyst or heatshield claimed.",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "exhaust-silencer-end-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/exhaust-silencer-end-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "exhaust-silencer-end-v1",
+          "sha256": "fc06a2241eccaceafcd9c36933b784605149c9aa092465ed7d96a7969a809967"
+        },
+        {
+          "path": "../../reviews/exhaust-silencer-end-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "exhaust-silencer-end-v1",
+          "sha256": "41e3a0f647f84816b72ff3633e99ce0d69c5f11818d4e8c82f0935d59d2eca5a"
+        }
+      ],
+      "reason": "Actual38784triangles strict0errors,0normalmapped primitives, real Babylon1mesh/four nonblank canvas checks0page/HTTPerrors. Counts/pixels do not certify native visual parity or Safari/mobile cost.",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "exhaust-silencer-end-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "exhaust-silencer-end-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -127,9 +437,9 @@
     }
   },
   "active_detailed_fabrication": false,
-  "source_revision": null,
-  "export_revision": null,
-  "next_action": "Fond/sortie candidat gel53 ; quatre finales96 en file. Les cotes/ellipse/l\u00e8vre/inset/profil int\u00e9rieur, peinture et vraie soudure/monte restent non re\u00e7us. Pare-chaleur \u00e0 fabriquer s\u00e9par\u00e9ment depuis vraie photo li\u00e9e et vues RDC.",
+  "source_revision": "exhaust-silencer-end-v1",
+  "export_revision": "exhaust-silencer-end-v1-inspection",
+  "next_action": "Continue separate heatshield and visible mounts, then actual shell/header/end interfaces, dimensional reference review, mobileLOD and artistic reception. Small outlet is a bounded external candidate, hidden tube excluded.",
   "art_accepted": false,
   "production_group": 17,
   "working_revision": "exhaust-silencer-end-v1",

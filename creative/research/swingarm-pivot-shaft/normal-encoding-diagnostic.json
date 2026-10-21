@@ -1,0 +1,51 @@
+{
+  "source_sha256": "5ff287349a4a52d1f16e8cf07ec3f7906ec33c814da39e587678fc2b965d36cb",
+  "initial_check": "Naive decoded normal-vs-exact-axis vector error<1e-6 failed, retained as diagnostic. No surface or buffer correction applied.",
+  "original_ideal_axis_diagnostic": [
+    {
+      "state": "original",
+      "cap_sign": -1,
+      "max_error": 0.00034155306639149785,
+      "min_dot": 0.9999999403953552,
+      "actual_face_geometry_plane_error_m": 4.768371586472142e-09
+    },
+    {
+      "state": "original",
+      "cap_sign": 1,
+      "max_error": 0.00034844246692955494,
+      "min_dot": 0.9999998807907104,
+      "actual_face_geometry_plane_error_m": 4.768371586472142e-09
+    },
+    {
+      "state": "flat_caps_RAM",
+      "cap_sign": -1,
+      "max_error": 0.00239168520212126,
+      "min_dot": 0.999997079372406,
+      "actual_face_geometry_plane_error_m": 4.768371586472142e-09
+    },
+    {
+      "state": "flat_caps_RAM",
+      "cap_sign": 1,
+      "max_error": 0.001578991215403903,
+      "min_dot": 0.9999987483024597,
+      "actual_face_geometry_plane_error_m": 4.768371586472142e-09
+    }
+  ],
+  "exact_axis_replay": [
+    {
+      "sign": -1,
+      "same_decoded_cap_normals_as_exact_axis_replay": true,
+      "max_replay_difference": 0.0,
+      "decoded_exact_input_max_target_error": 0.00034155306639149785
+    },
+    {
+      "sign": 1,
+      "same_decoded_cap_normals_as_exact_axis_replay": true,
+      "max_replay_difference": 0.0,
+      "decoded_exact_input_max_target_error": 0.00034844246692955494
+    }
+  ],
+  "interpretation": "Exact intended \u00b1X normals replayed on RAM mesh copy decode bitwise identically to saved cap normals. Small decoded deviation belongs to Blender representation; not evidence of different authored plane direction. Flat-only RAM trial worsens it and was not applied.",
+  "limits": "No photometric proof from this numerical identity; actual gray and reflection images remain required.",
+  "art_accepted": false
+}

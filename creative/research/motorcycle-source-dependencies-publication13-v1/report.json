@@ -1,0 +1,1148 @@
+{
+  "schema": 1,
+  "snapshot_UTC": "2026-10-21T07:36:32.520757+00:00",
+  "snapshot_HEAD": "a233dc61777fc07a65dd78e24935c4b4488acda5",
+  "scope": [
+    "exhaust-silencer-body-v1 closed55/69/root20",
+    "swingarm-pivot-bush-v1 closed28/57, root QA still outside audit",
+    "exhaust-silencer-end-v1 preflight53 only, final96 active at snapshot"
+  ],
+  "method": "Static source/recipe/read-site and real byte/SHA review only. No Blender, Node checker, source reconstruction, render or export executed. No old stager12 used. SnapshotHEAD is informational, not a final source13 publication base.",
+  "closed_manifest_counts": {
+    "assets-src/moto-components/exhaust-silencer-body/preflight-manifest.json": {
+      "files": 55,
+      "sha256": "5d53ce6b579d63a1fc80bc226f9fe7b304713de262c2224cab7f7d39c44382be"
+    },
+    "creative/reviews/exhaust-silencer-body-v1/review-manifest.json": {
+      "files": 69,
+      "sha256": "18dc11c00e11f096a82c708ea564511862e12dd57bafed619f61c399c3e31126"
+    },
+    "creative/reviews/exhaust-silencer-body-v1/production-manifest.json": {
+      "files": 20,
+      "sha256": "0b004c2d27c4d2ea8e406dd23d4e43ad10441c947b900a952fc771af334ce3a0"
+    },
+    "creative/reviews/swingarm-pivot-bush-v1/source-freeze.json": {
+      "files": 28,
+      "sha256": "dd6fa3e90bb50fade63196f518deeb41035f9a4f7832248cfcf8f4b90c0c90c1"
+    },
+    "creative/reviews/swingarm-pivot-bush-v1/manifest.json": {
+      "files": 57,
+      "sha256": "cccb5442c6e28c162c6860788285deaee26fffb07c955f50ed28120245247352"
+    },
+    "assets-src/moto-components/exhaust-silencer-end/preflight-manifest.json": {
+      "files": 53,
+      "sha256": "be39a78d3a7f5fdc4d072f5673aaef8fda23711981587fc802e875548082bd39"
+    }
+  },
+  "frozen_file_SHA_checks": 282,
+  "errors": [],
+  "exact_recipe_inputs": [
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/build.py",
+      "role": "Native constructor",
+      "sha256": "a65d02a87c6255d1dfd3abc17ece585635e404cd9105879702e71748bcbdd778",
+      "bytes": 4294,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/loft_geometry.py",
+      "role": "Numerical geometry helper actually called",
+      "sha256": "4f0c47ee41253d14fa1f1072876b1727d87514f9e219f0cb330cdf8e8e152041",
+      "bytes": 3829,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/parameters.json",
+      "role": "Numerical section/frame/finish data",
+      "sha256": "65ee591f5798ae42a29246bee6f0cdf7eceac3ddd3c66b1194cf0e6cc2e18973",
+      "bytes": 3058,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/exhaust-silencer-body-v1-geometry.blend",
+      "role": "Editable pre-material G3 master",
+      "sha256": "4c91a1d242e0bb758a024e8eee450bf536540a2c9a4600bcf66dc8db881ac31d",
+      "bytes": 3135889,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/exhaust-silencer-body-v1-geometry.glb",
+      "role": "Protected native pre-material export baseline",
+      "sha256": "6c2426c54e1f11d7c8586a9fbd47151a095e623df2c16d7dd15bf3e3107cc6b0",
+      "bytes": 3821636,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/geometry-report.json",
+      "role": "Exact G3 source/export guards required by material.py",
+      "sha256": "147bdb606674e30deb144ab1a581ad18791d6279b472b44d77b1668f858a69f1",
+      "bytes": 1950,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/material.py",
+      "role": "Original procedural bake recipe",
+      "sha256": "d79f2719b50b0c3a85c21108a4dd040b918ae6d4f9d2f3c9b1ec4786cc868fb3",
+      "bytes": 6325,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/recipe.py",
+      "role": "Ordered working-copy constructor/material/check driver",
+      "sha256": "e44b67fafc2913d04ca8821f909d685f4d62c2aa46934398898adca0ed709e42",
+      "bytes": 909,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/exhaust-header-v1.blend",
+      "role": "Frozen visible guide source",
+      "sha256": "651b06d1db9a01cd683492387b0516959dafd513ef6efcba401d6deb8ec9fd5a",
+      "bytes": 7117898,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": true
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-header/interfaces.json",
+      "role": "Authored guide-interface numerical file",
+      "sha256": "38b8601a7a826cbb35be83f8a6d5e9c7e8e514307cffd6e33e959ac6728f3861",
+      "bytes": 1602,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": true
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/camera_preflight.py",
+      "role": "Local render camera checker",
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a",
+      "bytes": 3235,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/render.py",
+      "role": "Final/preview render recipe",
+      "sha256": "5d82356c7e1c07e1e1f0073e560290f4820feb2cfe9db29a38ef9bcef2068910",
+      "bytes": 4228,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/render_checkpoint.py",
+      "role": "Render checkpoint protocol",
+      "sha256": "3b5ade95f0323f0df3425e6d5c0ea19d36b17674b40e5aa8413819039d5c602d",
+      "bytes": 4282,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/build.py",
+      "role": "Native constructor",
+      "sha256": "b54c1b8e791d02c75ebb3ef07fac502ab859eae5b6cb0021f39d2c538d183ae6",
+      "bytes": 4316,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/annular_geometry.py",
+      "role": "Numerical geometry helper actually called",
+      "sha256": "86f01e58cce736d5aaea43f6af1d3fd747d77bc5b68895ff61c38aa8db622d57",
+      "bytes": 2958,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/parameters.json",
+      "role": "Numerical section/frame/finish data",
+      "sha256": "2ac68eeaac9b8c183c673702d2598c4f36716886bb88dca4337585beef9567ad",
+      "bytes": 2524,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/exhaust-silencer-end-v1-geometry.blend",
+      "role": "Editable pre-material G3 master",
+      "sha256": "63450846989d2c53c1d8420fc95a087d1d66e965dc26be58501c800d442d479a",
+      "bytes": 894118,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/exhaust-silencer-end-v1-geometry.glb",
+      "role": "Protected native pre-material export baseline",
+      "sha256": "f28df3cf4ea9e3f1cbea208e98fd314158f4a88fd4e225a9b7132fe259a304e7",
+      "bytes": 864192,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/geometry-report.json",
+      "role": "Exact G3 source/export guards required by material.py",
+      "sha256": "286b6917996cd84572b32a3e7bb12d7815ffb4c25b5c61753c942cf85149f492",
+      "bytes": 1692,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/material.py",
+      "role": "Original procedural bake recipe",
+      "sha256": "5cb189fb7cb26c47aabf9f4ae64c44c5f234d9febf71ceb975e17dd2240fa336",
+      "bytes": 6335,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/recipe.py",
+      "role": "Ordered working-copy constructor/material/check driver",
+      "sha256": "e44b67fafc2913d04ca8821f909d685f4d62c2aa46934398898adca0ed709e42",
+      "bytes": 909,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/exhaust-silencer-body-v1.blend",
+      "role": "Frozen visible guide source",
+      "sha256": "262b057c752be56eec3132ba931a269e0cd9fb40bc9ec8170f1f16aaae72b70b",
+      "bytes": 7147533,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/interfaces.json",
+      "role": "Authored guide-interface numerical file",
+      "sha256": "76561aa940a605f74f9e8e0ee845ed37a27d3dd9e641d9f1b2850a31342eb33d",
+      "bytes": 1683,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/camera_preflight.py",
+      "role": "Local render camera checker",
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a",
+      "bytes": 3235,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/render.py",
+      "role": "Final/preview render recipe",
+      "sha256": "31138df4d7116eb992a5597212f690a6781438d8c46e100086a53b2e13c3bf4c",
+      "bytes": 3995,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/render_checkpoint.py",
+      "role": "Render checkpoint protocol",
+      "sha256": "3b5ade95f0323f0df3425e6d5c0ea19d36b17674b40e5aa8413819039d5c602d",
+      "bytes": 4282,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/build.py",
+      "role": "Native three-envelope constructor, no imported model",
+      "sha256": "a96fc780252cb2109b4ce17709b922199004a583538c3e4a8af0f7197b4c2b20",
+      "bytes": 6512,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/parameters.json",
+      "role": "Numerical dimensions/sections, all estimated",
+      "sha256": "62642b1468d637444c52351e23dafeefb0221ce37f2b03456718ce799b20219a",
+      "bytes": 1639,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/material.py",
+      "role": "Seeded original FFT normal/ORM recipe",
+      "sha256": "9a71dcc14590be054c5ab5b16617c13009fb7d3c7e16ac4be18ca246f90311af",
+      "bytes": 5076,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/g3-master-v1/swingarm-pivot-bush-v1.blend",
+      "role": "Exact editable G3 master for material replay",
+      "sha256": "9f5950c72b71b66e4e114243be08355d4b5d52154dadb4153f8af6b2ec7a60af",
+      "bytes": 1806429,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/g3-master-v1/swingarm-pivot-bush-inspection.glb",
+      "role": "Exact native G3 export baseline",
+      "sha256": "db3a6056f1d2763110e927a5ae9b001690cddc12d37e98e0fe7481e92494c780",
+      "bytes": 2220968,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/g3-master-v1/source-geometry-check.json",
+      "role": "Restore to active review source-check before applying material",
+      "sha256": "b9ae239c8582069eb00ca4bbb728d9728e0a1e94e8dcc4c3a6194eb74a124892",
+      "bytes": 2609,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "creative/reviews/swingarm-pivot-bush-v1/gray-review.json",
+      "role": "Mandatory exact G3 SHA/readiness guard read by material.py; covered by57, not28",
+      "sha256": "f07e91f40cbe1dd1a6df06e8aa5fea141add5b7866cef9b528a85280cb55a038",
+      "bytes": 1641,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "creative/research/swingarm-pivot-bush/material-plan-v1.json",
+      "role": "Material factors/noise amplitudes",
+      "sha256": "3e4fc6ac331805efc9ebebd83723e8e2b9edb3fb83187e5403577227e0383552",
+      "bytes": 2012,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "creative/research/swingarm-pivot-bush/preparation-v1.json",
+      "role": "Documentary preparation; no raster input to builders",
+      "sha256": "da697bb17a4b04511704be02c092874d8fe5c210e45e5f9618d08b3f62acf3f5",
+      "bytes": 2320,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": true
+    },
+    {
+      "path": "creative/reviews/swingarm-pivot-bush-v1/source-geometry-check.json",
+      "role": "Current PBR source metadata for checks/render",
+      "sha256": "31ab332e6b65a035fb646571ef20402c39b872b6aa8dda224df85a2e836ebf07",
+      "bytes": 2720,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "creative/reviews/swingarm-pivot-bush-v1/geometry-check.json",
+      "role": "Current technical PBR export gate used by render.py",
+      "sha256": "43e8d16bf505c7ec7ca11c462b77e5d605ca24ea7410577db4657607c448fadf",
+      "bytes": 2498,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/throttle-control/control_geometry.py",
+      "role": "Only material/check_mesh/export/studio functions called; unrelated csg() and its worker are not used",
+      "sha256": "430351cb8ef4877a2575174958e86d998664d8dd5941a9d5cb74ff22f47ffe8c",
+      "bytes": 6312,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": true
+    },
+    {
+      "path": "tools/blender_component_camera_preflight.py",
+      "role": "Shared helper actually imported by A render.py",
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a",
+      "bytes": 3235,
+      "covered_by_current_closed_roots": false,
+      "already_in_snapshot_HEAD": true
+    },
+    {
+      "path": "package.json",
+      "role": "Node dependency declarations",
+      "sha256": "a39ce3bafb566edaf92a27fec2c35e3bd40550136b20ac501e56bcaa01c3a998",
+      "bytes": 782,
+      "covered_by_current_closed_roots": false,
+      "already_in_snapshot_HEAD": true
+    },
+    {
+      "path": "package-lock.json",
+      "role": "Resolved Node package versions",
+      "sha256": "f7806a8afda3413efb6d3cec57482f51fda453b3350e784f1e6e90cf8604f014",
+      "bytes": 74605,
+      "covered_by_current_closed_roots": false,
+      "already_in_snapshot_HEAD": true
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/requirements.txt",
+      "role": "Host numpy/Pillow/etc declaration",
+      "sha256": "c8beb1edfc65c136e8c77dd26529dc0958ca775492f8d56695ca273f3427f935",
+      "bytes": 170,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    }
+  ],
+  "new_indispensable_public_input_not_in_closed_roots_or_HEAD": [],
+  "scripts_and_read_sites": [
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/build.py",
+      "sha256": "a65d02a87c6255d1dfd3abc17ece585635e404cd9105879702e71748bcbdd778",
+      "input_read_sites": [
+        {
+          "line": 6,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/exhaust-silencer-body-v1';assert not(H/'preflight-manifest.json').exists();P=json.loads((H/'parameters.json').read_text());sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();assert sha(R/P['header_source'])==P['header_sha256']and sha(R/P['header_interfaces'])==P['header_interfaces_sha256'];sys.path.insert(0,str(H.parent/'throttle-control'));from control_geometry import material,check_mesh,export,studio"
+        },
+        {
+          "line": 7,
+          "code": "sys.path.insert(0,str(H));from loft_geometry import build"
+        },
+        {
+          "line": 16,
+          "code": "with bpy.data.libraries.load(str(R/P['header_source']),link=True)as(a,l):l.collections=['WEWA_EXHAUST_HEADER']"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/camera_preflight.py",
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a",
+      "input_read_sites": []
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/check_export.mjs",
+      "sha256": "1e357c02eaa98f39fee0f6bc9bb875d9c525ae46be8ad608798a13730902021d",
+      "input_read_sites": [
+        {
+          "line": 2,
+          "code": "const path='assets-src/moto-components/exhaust-silencer-body/exhaust-silencer-body-inspection.glb',bytes=await fs.readFile(path),root=(await new NodeIO().read(path)).getRoot(),v=await validator.validateBytes(new Uint8Array(bytes),{uri:path}),meshes=[];"
+        },
+        {
+          "line": 12,
+          "code": "const source=JSON.parse(await fs.readFile('creative/reviews/exhaust-silencer-body-v1/source-geometry-check.json','utf8'));for(const mesh of meshes){const src=source.geometry.find(x=>x.name===mesh.name);if(!src||src.faces!==mesh.triangles||Math.abs(mesh.signed_volume_m3/src.signed_volume_m3-1)>1e-5)throw Error('Export/source triangle volume mismatch '+mesh.name);}"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/check_exported_map_pixels.py",
+      "sha256": "868b936e9433fdc7e41795eeda56d177e083ba4e6233babbecc2cc39b8009b18",
+      "input_read_sites": [
+        {
+          "line": 5,
+          "code": "R=Path(__file__).resolve().parents[3];H=R/'assets-src/moto-components/exhaust-silencer-body';O=R/'creative/reviews/exhaust-silencer-body-v1';D=Path('/workspace/wewa-assets/work-in-progress/exhaust-silencer-body/exported-v1-textures');report=json.loads((O/'material-export-check.json').read_text());P=json.loads((H/'parameters.json').read_text());UV=np.asarray(json.loads((D/'actual_UV_vertices_and_triangle_centres.json').read_text()));assert np.isfinite(UV).all()and((UV>=0)&(UV<=1)).all();rows=[]"
+        },
+        {
+          "line": 7,
+          "code": "p=Path(t['extracted_actual_embedded_bytes']);assert hashlib.sha256(p.read_bytes()).hexdigest()==t['sha256'];a=np.asarray(Image.open(p).convert('RGB'),dtype=float)/255.;h,w=a.shape[:2]"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/check_geometry_export.mjs",
+      "sha256": "845e7254c5a413d866a0f70126794c53b4ffda56f15e26b49b06f13bf46ebb5a",
+      "input_read_sites": [
+        {
+          "line": 2,
+          "code": "const path='assets-src/moto-components/exhaust-silencer-body/exhaust-silencer-body-v1-geometry.glb',bytes=await fs.readFile(path),root=(await new NodeIO().read(path)).getRoot(),v=await validator.validateBytes(new Uint8Array(bytes),{uri:path}),meshes=[];"
+        },
+        {
+          "line": 12,
+          "code": "const source=JSON.parse(await fs.readFile('creative/reviews/exhaust-silencer-body-v1/geometry-source-check.json','utf8'));for(const mesh of meshes){const src=source.geometry.find(x=>x.name===mesh.name);if(!src||src.faces!==mesh.triangles||Math.abs(mesh.signed_volume_m3/src.signed_volume_m3-1)>1e-5)throw Error('Export/source triangle volume mismatch '+mesh.name);}"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/check_interface.py",
+      "sha256": "f22ee28bccbc7ee8c2497f36fd6339e505da7cdc4ee001e4c0c84a51c984c841",
+      "input_read_sites": [
+        {
+          "line": 7,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/exhaust-silencer-body-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();source=H/'exhaust-silencer-body-v1.blend';build=json.loads((H/'build-report.json').read_text());assert sha(source)==build['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(source));guides=bpy.data.collections['SILENCER_BODY_IMMUTABLE_GUIDES'];guides.hide_viewport=False;bpy.context.view_layer.update();deps=bpy.context.evaluated_depsgraph_get()"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/check_material_export.mjs",
+      "sha256": "2cc00ebe1a236002b740838b46291909e21099d4fc6eaba9b9964fa213d6a9e7",
+      "input_read_sites": [
+        {
+          "line": 2,
+          "code": "const H='assets-src/moto-components/exhaust-silencer-body/',O='creative/reviews/exhaust-silencer-body-v1/',path=H+'exhaust-silencer-body-inspection.glb',bytes=await fs.readFile(path),root=(await new NodeIO().readBinary(bytes)).getRoot(),hash=x=>createHash('sha256').update(x).digest('hex');"
+        },
+        {
+          "line": 9,
+          "code": "const b=JSON.parse(await fs.readFile(H+'build-report.json','utf8')),r={source_sha256:b.source_sha256,export_sha256:hash(bytes),textures,actual_UV_vertex_and_triangle_centre_samples:samples.length,actual_UV_zero_area_triangles:collapsed,actual_UV_minimum_area:minArea,normalmap_present:false,tangent_attribute_present:false,relief_claimed:false,native_exported_material:{name:material.getName(),baseColor:material.getBaseColorFactor(),metallic:material.getMetallicFactor(),roughness:material.getRoughnessFactor()},tangent_buffer_repaired:false,photographic_pixels_used:false,art_accepted:false};await fs.writeFile(O+'material-export-check.json',JSON.stringify(r,null,2)+'\\n');console.log(r);"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/check_openings.py",
+      "sha256": "af9a902063cc5e654ef1478f1bb833f84cc5349744bbca6b1c1b6b3bc998b0c9",
+      "input_read_sites": [
+        {
+          "line": 6,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/exhaust-silencer-body-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();B=json.loads((H/'build-report.json').read_text());P=json.loads((H/'parameters.json').read_text());source=H/'exhaust-silencer-body-v1.blend';assert sha(source)==B['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(source));o=bpy.data.objects[B['geometry'][0]['name']];m=o.data;m.calc_loop_triangles();tree=BVHTree.FromPolygons([o.matrix_world@v.co for v in m.vertices],[tuple(t.vertices)for t in m.loop_triangles],all_triangles=True);first=Vector(P['working_front_centre_world_m']);last=Vector((first.x,P['working_sections_world'][-1]['y_m'],P['working_sections_world'][-1]['centre_z_m']));axis=Vector((0,1,0));rows=[];wall=[]"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/check_protected_export.mjs",
+      "sha256": "3e07cecc74b7c99bf18206e694445da7f6fd27619dcc95d4ee7d255f2ccf9046",
+      "input_read_sites": [
+        {
+          "line": 2,
+          "code": "const H='assets-src/moto-components/exhaust-silencer-body/',O='creative/reviews/exhaust-silencer-body-v1/',sha=b=>createHash('sha256').update(b).digest('hex'),old=await fs.readFile(H+'exhaust-silencer-body-v1-geometry.glb'),bytes=await fs.readFile(H+'exhaust-silencer-body-inspection.glb'),io=new NodeIO(),a=(await io.readBinary(old)).getRoot(),b=(await io.readBinary(bytes)).getRoot(),ap=a.listMeshes()[0].listPrimitives()[0],bp=b.listMeshes()[0].listPrimitives()[0],attributes=[];"
+        },
+        {
+          "line": 5,
+          "code": "const r={source_sha256:JSON.parse(await fs.readFile(H+'build-report.json','utf8')).source_sha256,export_sha256:sha(bytes),geometry_export_sha256:sha(old),attributes,source_world_matrices_bit_identical:true,tangent_attribute_repaired:false,scope:'Actual native exported accessors byte-identical to the pre-material geometry export. Only authored material/images changed.',art_accepted:false};await fs.writeFile(O+'protected-export-invariants.json',JSON.stringify(r,null,2)+'\\n');console.log(r);"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/check_reference_paths.py",
+      "sha256": "8b4102f76e58e3ea4fa7a43dab9ddd9e379aa25f2a21920d204cc85f699fd24d",
+      "input_read_sites": [
+        {
+          "line": 5,
+          "code": "sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();b=json.loads((H/'build-report.json').read_text());source=H/'exhaust-silencer-body-v1.blend'"
+        },
+        {
+          "line": 6,
+          "code": "assert sha(source)==b['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(source));rows=[]"
+        },
+        {
+          "line": 13,
+          "code": "P=json.loads((H/'parameters.json').read_text());expected=[P['header_sha256']];assert all(any(x['sha256']==key for x in rows)for key in expected)"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/check_self_surface.py",
+      "sha256": "bae6f799744f9a968528ca2cce2043bfde06f886c23de1ed79fe2e231337bd5f",
+      "input_read_sites": [
+        {
+          "line": 5,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/exhaust-silencer-body-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();b=json.loads((H/'build-report.json').read_text());source=H/'exhaust-silencer-body-v1.blend';assert sha(source)==b['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(source));o=bpy.data.objects[b['geometry'][0]['name']];assert not o.modifiers;m=o.data;m.calc_loop_triangles();faces=[tuple(t.vertices)for t in m.loop_triangles];sets=[set(q)for q in faces];tree=BVHTree.FromPolygons([o.matrix_world@v.co for v in m.vertices],faces,all_triangles=True);other=BVHTree.FromPolygons([o.matrix_world@v.co for v in m.vertices],faces,all_triangles=True);pairs=tree.overlap(other);w1=BVHTree.FromPolygons([(-1,-1,0),(1,-1,0),(0,1,0)],[(0,1,2)],all_triangles=True);w2=BVHTree.FromPolygons([(0,-.5,-1),(0,-.5,1),(0,.5,0)],[(0,1,2)],all_triangles=True);w3=BVHTree.FromPolygons([(-1,-1,0),(1,-1,0),(0,1,0)],[(0,1,2)],all_triangles=True);witness={'known_noncoplanar_crossings':len(w1.overlap(w2)),'coincident_coplanar_triangle_pairs_returned':len(w1.overlap(w3))};assert witness['known_noncoplanar_crossings']>0"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/loft_geometry.py",
+      "sha256": "4f0c47ee41253d14fa1f1072876b1727d87514f9e219f0cb330cdf8e8e152041",
+      "input_read_sites": []
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/material.py",
+      "sha256": "d79f2719b50b0c3a85c21108a4dd040b918ae6d4f9d2f3c9b1ec4786cc868fb3",
+      "input_read_sites": [
+        {
+          "line": 6,
+          "code": "sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();P=json.loads((H/'parameters.json').read_text());G=P['material_original'];source0=H/'exhaust-silencer-body-v1-geometry.blend';old=json.loads((H/'geometry-report.json').read_text());assert sha(source0)==old['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(source0));s=bpy.context.scene;o=bpy.data.objects[old['geometry'][0]['name']];datum=o.parent"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/recipe.py",
+      "sha256": "e44b67fafc2913d04ca8821f909d685f4d62c2aa46934398898adca0ed709e42",
+      "input_read_sites": []
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/record_preflight.py",
+      "sha256": "da92abba0801d66006871b661ad5479f887301db965a5b982b2a00ef6aa635ca",
+      "input_read_sites": [
+        {
+          "line": 4,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/exhaust-silencer-body-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();source=H/'exhaust-silencer-body-v1.blend';glb=H/'exhaust-silencer-body-inspection.glb';assert not(H/'preflight-manifest.json').exists()"
+        },
+        {
+          "line": 5,
+          "code": "b=json.loads((H/'build-report.json').read_text());assert sha(source)==b['source_sha256']and sha(glb)==b['export_sha256'];reports={n:json.loads((O/(n+'.json')).read_text())for n in ['export-check','self-surface-check','interface-solid-check','opening-wall-check','reference-path-check','material-export-check','actual-embedded-map-pixel-check','protected-export-invariants','camera-layout-preflight','preview-review']}"
+        },
+        {
+          "line": 18,
+          "code": "assert row['actually_opened'];cp=Path(row['checkpoint_private']);q=json.loads(cp.read_text());assert q['source_sha256']==sha(source)and q['configuration']['samples']==24"
+        },
+        {
+          "line": 23,
+          "code": "files+=[R/'creative/research/exhaust-silencer-body'/n for n in ['fabrication-plan-v1.json','material-plan-v1.json']];files+=[R/'creative/research/engine17-exhaust-exterior-v1/report.json'];P=json.loads((H/'parameters.json').read_text());files+=[R/P['header_source'],R/P['header_interfaces'],H.parent/'throttle-control/control_geometry.py']"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/record_review.py",
+      "sha256": "5f37759a8b1f8cd1c1f75b7832f79d1c968f0e80bfa5c505a8dfac8e02237faa",
+      "input_read_sites": [
+        {
+          "line": 4,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/exhaust-silencer-body-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();pre=H/'preflight-manifest.json';m=json.loads(pre.read_text());source=H/'exhaust-silencer-body-v1.blend';glb=H/'exhaust-silencer-body-inspection.glb';r=json.loads((O/'render-report.json').read_text());assert sha(source)==m['source_sha256']==r['source_sha256']and sha(glb)==m['export_sha256']==r['export_sha256'];assert r['samples']==96 and {v['name']for v in r['views']}=={'right-profile','rear-quarter','front-neck-detail','conditional-header-context'};files=[pre,O/'render-report.json']"
+        },
+        {
+          "line": 8,
+          "code": "p=O/(row['name']+'.checkpoint.json');q=json.loads(p.read_text());assert q['source_sha256']==sha(source)and q['configuration']['samples']==96;assert q['configuration']['render_script_sha256']==sha(H/'render.py')and q['configuration']['protocol_sha256']==sha(H/'render_checkpoint.py');assert q['configuration_sha256']==hashlib.sha256(json.dumps(q['configuration'],sort_keys=True).encode()).hexdigest();files.append(p)"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/render.py",
+      "sha256": "5d82356c7e1c07e1e1f0073e560290f4820feb2cfe9db29a38ef9bcef2068910",
+      "input_read_sites": [
+        {
+          "line": 5,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[2];sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();source=H/'exhaust-silencer-body-v1.blend';b=json.loads((H/'build-report.json').read_text());e=json.loads((R/'creative/reviews/exhaust-silencer-body-v1/export-check.json').read_text());assert sha(source)==b['source_sha256']==e['source_sha256']and sha(H/'exhaust-silencer-body-inspection.glb')==e['sha256']and e['glTF_errors']==0"
+        },
+        {
+          "line": 6,
+          "code": "args=sys.argv[sys.argv.index('--')+1:]if'--'in sys.argv else[];preview='--preview'in args;mode='reflection'if'--reflection'in args else'gray'if'--gray'in args else'pbr';sys.path.insert(0,str(H));from render_checkpoint import checkpoint_view"
+        },
+        {
+          "line": 8,
+          "code": "bpy.ops.wm.open_mainfile(filepath=str(source));s=bpy.context.scene;o=bpy.data.objects[b['geometry'][0]['name']];guides=bpy.data.collections['SILENCER_BODY_IMMUTABLE_GUIDES'];guides.hide_viewport=False;bpy.context.view_layer.update();keepouts=[q for q in guides.all_objects if q.type=='MESH'];target=Vector(tuple((min((o.matrix_world@v.co)[i]for v in o.data.vertices)+max((o.matrix_world@v.co)[i]for v in o.data.vertices))/2 for i in range(3)));front=o.parent.matrix_world.translation.copy();end=Vector((front.x,1.045,-.754))"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/render_checkpoint.py",
+      "sha256": "3b5ade95f0323f0df3425e6d5c0ea19d36b17674b40e5aa8413819039d5c602d",
+      "input_read_sites": [
+        {
+          "line": 8,
+          "code": "def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()"
+        },
+        {
+          "line": 20,
+          "code": "previous=json.loads(checkpoint.read_text())"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/render_geometry.py",
+      "sha256": "768c125cc4af40b180c65477912116ca3329d60109c2b81ac813737662240023",
+      "input_read_sites": [
+        {
+          "line": 5,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[2];sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();source=H/'exhaust-silencer-body-v1-geometry.blend';b=json.loads((H/'geometry-report.json').read_text());e=json.loads((R/'creative/reviews/exhaust-silencer-body-v1/geometry-export-check.json').read_text());assert sha(source)==b['source_sha256']==e['source_sha256']and sha(H/'exhaust-silencer-body-v1-geometry.glb')==e['sha256']and e['glTF_errors']==0"
+        },
+        {
+          "line": 6,
+          "code": "args=sys.argv[sys.argv.index('--')+1:]if'--'in sys.argv else[];native='--native24'in args;mode='reflection'if'--reflection'in args else'gray';sys.path.insert(0,str(H));from render_checkpoint import checkpoint_view"
+        },
+        {
+          "line": 8,
+          "code": "bpy.ops.wm.open_mainfile(filepath=str(source));s=bpy.context.scene;o=bpy.data.objects[b['geometry'][0]['name']];guides=bpy.data.collections['SILENCER_BODY_IMMUTABLE_GUIDES'];guides.hide_viewport=False;bpy.context.view_layer.update();keepouts=[q for q in guides.all_objects if q.type=='MESH'];target=Vector(tuple((min((o.matrix_world@v.co)[i]for v in o.data.vertices)+max((o.matrix_world@v.co)[i]for v in o.data.vertices))/2 for i in range(3)));front=o.parent.matrix_world.translation.copy();end=Vector((front.x,1.045,-.754))"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/annular_geometry.py",
+      "sha256": "86f01e58cce736d5aaea43f6af1d3fd747d77bc5b68895ff61c38aa8db622d57",
+      "input_read_sites": []
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/build.py",
+      "sha256": "b54c1b8e791d02c75ebb3ef07fac502ab859eae5b6cb0021f39d2c538d183ae6",
+      "input_read_sites": [
+        {
+          "line": 6,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/exhaust-silencer-end-v1';assert not(H/'preflight-manifest.json').exists();P=json.loads((H/'parameters.json').read_text());sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();assert sha(R/P['body_source'])==P['body_sha256']and sha(R/P['body_interfaces'])==P['body_interfaces_sha256'];sys.path.insert(0,str(H.parent/'throttle-control'));from control_geometry import material,check_mesh,export,studio"
+        },
+        {
+          "line": 7,
+          "code": "sys.path.insert(0,str(H));from annular_geometry import build"
+        },
+        {
+          "line": 16,
+          "code": "with bpy.data.libraries.load(str(R/P['body_source']),link=True)as(a,l):l.collections=['WEWA_EXHAUST_SILENCER_BODY']"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/camera_preflight.py",
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a",
+      "input_read_sites": []
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/check_export.mjs",
+      "sha256": "0cca8c0cc837e25c6543d1a88881039fe0af46d39b9d9983f01c5680b3d6b463",
+      "input_read_sites": [
+        {
+          "line": 2,
+          "code": "const path='assets-src/moto-components/exhaust-silencer-end/exhaust-silencer-end-inspection.glb',bytes=await fs.readFile(path),root=(await new NodeIO().read(path)).getRoot(),v=await validator.validateBytes(new Uint8Array(bytes),{uri:path}),meshes=[];"
+        },
+        {
+          "line": 12,
+          "code": "const source=JSON.parse(await fs.readFile('creative/reviews/exhaust-silencer-end-v1/source-geometry-check.json','utf8'));for(const mesh of meshes){const src=source.geometry.find(x=>x.name===mesh.name);if(!src||src.faces!==mesh.triangles||Math.abs(mesh.signed_volume_m3/src.signed_volume_m3-1)>1e-5)throw Error('Export/source triangle volume mismatch '+mesh.name);}"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/check_exported_map_pixels.py",
+      "sha256": "142cacfb246a99c0155d8673490041d2e022e5d4319147c0ac9b8c38c6c424cb",
+      "input_read_sites": [
+        {
+          "line": 5,
+          "code": "R=Path(__file__).resolve().parents[3];H=R/'assets-src/moto-components/exhaust-silencer-end';O=R/'creative/reviews/exhaust-silencer-end-v1';D=Path('/workspace/wewa-assets/work-in-progress/exhaust-silencer-end/exported-v1-textures');report=json.loads((O/'material-export-check.json').read_text());P=json.loads((H/'parameters.json').read_text());UV=np.asarray(json.loads((D/'actual_UV_vertices_and_triangle_centres.json').read_text()));assert np.isfinite(UV).all()and((UV>=0)&(UV<=1)).all();rows=[]"
+        },
+        {
+          "line": 7,
+          "code": "p=Path(t['extracted_actual_embedded_bytes']);assert hashlib.sha256(p.read_bytes()).hexdigest()==t['sha256'];a=np.asarray(Image.open(p).convert('RGB'),dtype=float)/255.;h,w=a.shape[:2]"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/check_geometry_export.mjs",
+      "sha256": "27bc9fb7e066557ea79c33a87382a3b8f32a3600672398c126ccdd43a8e19bb8",
+      "input_read_sites": [
+        {
+          "line": 2,
+          "code": "const path='assets-src/moto-components/exhaust-silencer-end/exhaust-silencer-end-v1-geometry.glb',bytes=await fs.readFile(path),root=(await new NodeIO().read(path)).getRoot(),v=await validator.validateBytes(new Uint8Array(bytes),{uri:path}),meshes=[];"
+        },
+        {
+          "line": 12,
+          "code": "const source=JSON.parse(await fs.readFile('creative/reviews/exhaust-silencer-end-v1/geometry-source-check.json','utf8'));for(const mesh of meshes){const src=source.geometry.find(x=>x.name===mesh.name);if(!src||src.faces!==mesh.triangles||Math.abs(mesh.signed_volume_m3/src.signed_volume_m3-1)>1e-5)throw Error('Export/source triangle volume mismatch '+mesh.name);}"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/check_interface.py",
+      "sha256": "8ef48c40f440a726fedac537e8d705fd44762d93b80ee56be5d293cdb0eeff56",
+      "input_read_sites": [
+        {
+          "line": 7,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/exhaust-silencer-end-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();source=H/'exhaust-silencer-end-v1.blend';build=json.loads((H/'build-report.json').read_text());assert sha(source)==build['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(source));guides=bpy.data.collections['SILENCER_END_IMMUTABLE_GUIDES'];guides.hide_viewport=False;bpy.context.view_layer.update();deps=bpy.context.evaluated_depsgraph_get()"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/check_material_export.mjs",
+      "sha256": "3fbbe54c96961442591a27de76bea85d4c1f5854ecee401549b8759a37e78fb3",
+      "input_read_sites": [
+        {
+          "line": 2,
+          "code": "const H='assets-src/moto-components/exhaust-silencer-end/',O='creative/reviews/exhaust-silencer-end-v1/',path=H+'exhaust-silencer-end-inspection.glb',bytes=await fs.readFile(path),root=(await new NodeIO().readBinary(bytes)).getRoot(),hash=x=>createHash('sha256').update(x).digest('hex');"
+        },
+        {
+          "line": 9,
+          "code": "const b=JSON.parse(await fs.readFile(H+'build-report.json','utf8')),r={source_sha256:b.source_sha256,export_sha256:hash(bytes),textures,actual_UV_vertex_and_triangle_centre_samples:samples.length,actual_UV_zero_area_triangles:collapsed,actual_UV_minimum_area:minArea,normalmap_present:false,tangent_attribute_present:false,relief_claimed:false,native_exported_material:{name:material.getName(),baseColor:material.getBaseColorFactor(),metallic:material.getMetallicFactor(),roughness:material.getRoughnessFactor()},tangent_buffer_repaired:false,photographic_pixels_used:false,art_accepted:false};await fs.writeFile(O+'material-export-check.json',JSON.stringify(r,null,2)+'\\n');console.log(r);"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/check_openings.py",
+      "sha256": "20d14de8b9d1afb17ee70d698bf19862531ea3cd3f2de2b963ce79bf73d8d535",
+      "input_read_sites": [
+        {
+          "line": 6,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/exhaust-silencer-end-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();B=json.loads((H/'build-report.json').read_text());P=json.loads((H/'parameters.json').read_text());source=H/'exhaust-silencer-end-v1.blend';assert sha(source)==B['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(source));o=bpy.data.objects[B['geometry'][0]['name']];m=o.data;m.calc_loop_triangles();tree=BVHTree.FromPolygons([o.matrix_world@v.co for v in m.vertices],[tuple(t.vertices)for t in m.loop_triangles],all_triangles=True);centre=o.parent.matrix_world.translation;axis=Vector((0,1,0));rows=[];wall=[]"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/check_protected_export.mjs",
+      "sha256": "66304454fbd0849c66346a13d392e6b3e4164bd96eadc76a2f08925ad04077d1",
+      "input_read_sites": [
+        {
+          "line": 2,
+          "code": "const H='assets-src/moto-components/exhaust-silencer-end/',O='creative/reviews/exhaust-silencer-end-v1/',sha=b=>createHash('sha256').update(b).digest('hex'),old=await fs.readFile(H+'exhaust-silencer-end-v1-geometry.glb'),bytes=await fs.readFile(H+'exhaust-silencer-end-inspection.glb'),io=new NodeIO(),a=(await io.readBinary(old)).getRoot(),b=(await io.readBinary(bytes)).getRoot(),ap=a.listMeshes()[0].listPrimitives()[0],bp=b.listMeshes()[0].listPrimitives()[0],attributes=[];"
+        },
+        {
+          "line": 5,
+          "code": "const r={source_sha256:JSON.parse(await fs.readFile(H+'build-report.json','utf8')).source_sha256,export_sha256:sha(bytes),geometry_export_sha256:sha(old),attributes,source_world_matrices_bit_identical:true,tangent_attribute_repaired:false,scope:'Actual native exported accessors byte-identical to the pre-material geometry export. Only authored material/images changed.',art_accepted:false};await fs.writeFile(O+'protected-export-invariants.json',JSON.stringify(r,null,2)+'\\n');console.log(r);"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/check_reference_paths.py",
+      "sha256": "ba19cbf13c83b8d5d3487df7c756980136a8cd61def9ee691c346ef59e025590",
+      "input_read_sites": [
+        {
+          "line": 5,
+          "code": "sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();b=json.loads((H/'build-report.json').read_text());source=H/'exhaust-silencer-end-v1.blend'"
+        },
+        {
+          "line": 6,
+          "code": "assert sha(source)==b['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(source));rows=[]"
+        },
+        {
+          "line": 13,
+          "code": "P=json.loads((H/'parameters.json').read_text());expected=[P['body_sha256']];assert all(any(x['sha256']==key for x in rows)for key in expected)"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/check_self_surface.py",
+      "sha256": "f6f123b0c8e131e85287df8356517c4524635763d7a93dbc89b06d9117a56e54",
+      "input_read_sites": [
+        {
+          "line": 5,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/exhaust-silencer-end-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();b=json.loads((H/'build-report.json').read_text());source=H/'exhaust-silencer-end-v1.blend';assert sha(source)==b['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(source));o=bpy.data.objects[b['geometry'][0]['name']];assert not o.modifiers;m=o.data;m.calc_loop_triangles();faces=[tuple(t.vertices)for t in m.loop_triangles];sets=[set(q)for q in faces];tree=BVHTree.FromPolygons([o.matrix_world@v.co for v in m.vertices],faces,all_triangles=True);other=BVHTree.FromPolygons([o.matrix_world@v.co for v in m.vertices],faces,all_triangles=True);pairs=tree.overlap(other);w1=BVHTree.FromPolygons([(-1,-1,0),(1,-1,0),(0,1,0)],[(0,1,2)],all_triangles=True);w2=BVHTree.FromPolygons([(0,-.5,-1),(0,-.5,1),(0,.5,0)],[(0,1,2)],all_triangles=True);w3=BVHTree.FromPolygons([(-1,-1,0),(1,-1,0),(0,1,0)],[(0,1,2)],all_triangles=True);witness={'known_noncoplanar_crossings':len(w1.overlap(w2)),'coincident_coplanar_triangle_pairs_returned':len(w1.overlap(w3))};assert witness['known_noncoplanar_crossings']>0"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/material.py",
+      "sha256": "5cb189fb7cb26c47aabf9f4ae64c44c5f234d9febf71ceb975e17dd2240fa336",
+      "input_read_sites": [
+        {
+          "line": 6,
+          "code": "sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();P=json.loads((H/'parameters.json').read_text());G=P['material_original'];source0=H/'exhaust-silencer-end-v1-geometry.blend';old=json.loads((H/'geometry-report.json').read_text());assert sha(source0)==old['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(source0));s=bpy.context.scene;o=bpy.data.objects[old['geometry'][0]['name']];datum=o.parent"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/recipe.py",
+      "sha256": "e44b67fafc2913d04ca8821f909d685f4d62c2aa46934398898adca0ed709e42",
+      "input_read_sites": []
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/record_preflight.py",
+      "sha256": "d9a83a88ad845377701a58cdbd75541ab1e97fb27ff36b3ca92c23e1e8ec0da4",
+      "input_read_sites": [
+        {
+          "line": 4,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/exhaust-silencer-end-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();source=H/'exhaust-silencer-end-v1.blend';glb=H/'exhaust-silencer-end-inspection.glb';assert not(H/'preflight-manifest.json').exists()"
+        },
+        {
+          "line": 5,
+          "code": "b=json.loads((H/'build-report.json').read_text());assert sha(source)==b['source_sha256']and sha(glb)==b['export_sha256'];reports={n:json.loads((O/(n+'.json')).read_text())for n in ['export-check','self-surface-check','interface-solid-check','opening-wall-check','reference-path-check','material-export-check','actual-embedded-map-pixel-check','protected-export-invariants','camera-layout-preflight','preview-review']}"
+        },
+        {
+          "line": 18,
+          "code": "assert row['actually_opened'];cp=Path(row['checkpoint_private']);q=json.loads(cp.read_text());assert q['source_sha256']==sha(source)and q['configuration']['samples']==24"
+        },
+        {
+          "line": 23,
+          "code": "files+=[R/'creative/research/exhaust-silencer-end'/n for n in ['fabrication-plan-v1.json','material-plan-v1.json']];files+=[R/'creative/research/engine17-exhaust-exterior-v1/report.json'];P=json.loads((H/'parameters.json').read_text());files+=[R/P['body_source'],R/P['body_interfaces'],H.parent/'throttle-control/control_geometry.py']"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/record_review.py",
+      "sha256": "5c728a67ea396b69e460df88bb4d3aef229af4f25bf9e838ea96ea121c6a40dc",
+      "input_read_sites": [
+        {
+          "line": 4,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/exhaust-silencer-end-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();pre=H/'preflight-manifest.json';m=json.loads(pre.read_text());source=H/'exhaust-silencer-end-v1.blend';glb=H/'exhaust-silencer-end-inspection.glb';r=json.loads((O/'render-report.json').read_text());assert sha(source)==m['source_sha256']==r['source_sha256']and sha(glb)==m['export_sha256']==r['export_sha256'];assert r['samples']==96 and {v['name']for v in r['views']}=={'outside-rear-quarter','estimated-inner-front','small-outlet-detail','conditional-rear-shell-context'};files=[pre,O/'render-report.json']"
+        },
+        {
+          "line": 8,
+          "code": "p=O/(row['name']+'.checkpoint.json');q=json.loads(p.read_text());assert q['source_sha256']==sha(source)and q['configuration']['samples']==96;assert q['configuration']['render_script_sha256']==sha(H/'render.py')and q['configuration']['protocol_sha256']==sha(H/'render_checkpoint.py');assert q['configuration_sha256']==hashlib.sha256(json.dumps(q['configuration'],sort_keys=True).encode()).hexdigest();files.append(p)"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/render.py",
+      "sha256": "31138df4d7116eb992a5597212f690a6781438d8c46e100086a53b2e13c3bf4c",
+      "input_read_sites": [
+        {
+          "line": 5,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[2];sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();source=H/'exhaust-silencer-end-v1.blend';b=json.loads((H/'build-report.json').read_text());e=json.loads((R/'creative/reviews/exhaust-silencer-end-v1/export-check.json').read_text());assert sha(source)==b['source_sha256']==e['source_sha256']and sha(H/'exhaust-silencer-end-inspection.glb')==e['sha256']and e['glTF_errors']==0"
+        },
+        {
+          "line": 6,
+          "code": "args=sys.argv[sys.argv.index('--')+1:]if'--'in sys.argv else[];preview='--preview'in args;mode='reflection'if'--reflection'in args else'gray'if'--gray'in args else'pbr';sys.path.insert(0,str(H));from render_checkpoint import checkpoint_view"
+        },
+        {
+          "line": 8,
+          "code": "bpy.ops.wm.open_mainfile(filepath=str(source));s=bpy.context.scene;o=bpy.data.objects[b['geometry'][0]['name']];guides=bpy.data.collections['SILENCER_END_IMMUTABLE_GUIDES'];guides.hide_viewport=False;bpy.context.view_layer.update();keepouts=[q for q in guides.all_objects if q.type=='MESH'];target=o.parent.matrix_world.translation+Vector((0,.001,0));s.cycles.samples=24 if preview else 96;s.render.resolution_x=1100 if preview else 1440;s.render.resolution_y=850 if preview else 1080;s.camera.data.clip_start=.0005;mat=bpy.data.materials.new('Temporary rear closure '+mode+' control');mat.use_nodes=True;p=mat.node_tree.nodes['Principled BSDF'];p.inputs['Base Color'].default_value=(.35,.35,.35,1);p.inputs['Metallic'].default_value=1 if mode=='reflection'else 0;p.inputs['Roughness'].default_value=.17 if mode=='reflection'else .45;s.view_layers[0].material_override=mat if mode!='pbr'else None"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/render_checkpoint.py",
+      "sha256": "3b5ade95f0323f0df3425e6d5c0ea19d36b17674b40e5aa8413819039d5c602d",
+      "input_read_sites": [
+        {
+          "line": 8,
+          "code": "def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()"
+        },
+        {
+          "line": 20,
+          "code": "previous=json.loads(checkpoint.read_text())"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/render_geometry.py",
+      "sha256": "29f26b3151050b58d8a091fb7b59c91b77731a6159021eabef94465f8e2566d4",
+      "input_read_sites": [
+        {
+          "line": 5,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[2];sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();source=H/'exhaust-silencer-end-v1-geometry.blend';b=json.loads((H/'geometry-report.json').read_text());e=json.loads((R/'creative/reviews/exhaust-silencer-end-v1/geometry-export-check.json').read_text());assert sha(source)==b['source_sha256']==e['source_sha256']and sha(H/'exhaust-silencer-end-v1-geometry.glb')==e['sha256']and e['glTF_errors']==0"
+        },
+        {
+          "line": 6,
+          "code": "args=sys.argv[sys.argv.index('--')+1:]if'--'in sys.argv else[];native='--native24'in args;mode='reflection'if'--reflection'in args else'gray';sys.path.insert(0,str(H));from render_checkpoint import checkpoint_view"
+        },
+        {
+          "line": 8,
+          "code": "bpy.ops.wm.open_mainfile(filepath=str(source));s=bpy.context.scene;o=bpy.data.objects[b['geometry'][0]['name']];guides=bpy.data.collections['SILENCER_END_IMMUTABLE_GUIDES'];guides.hide_viewport=False;bpy.context.view_layer.update();keepouts=[q for q in guides.all_objects if q.type=='MESH'];target=o.parent.matrix_world.translation+Vector((0,.001,0));s.cycles.samples=24 if native else 8;s.render.resolution_x=1100 if native else 1000;s.render.resolution_y=850 if native else 773;s.camera.data.clip_start=.0005;mat=bpy.data.materials.new('Temporary rear closure '+mode+' control');mat.use_nodes=True;p=mat.node_tree.nodes['Principled BSDF'];p.inputs['Base Color'].default_value=(.35,.35,.35,1);p.inputs['Metallic'].default_value=1 if mode=='reflection'else 0;p.inputs['Roughness'].default_value=.17 if mode=='reflection'else .45;s.view_layers[0].material_override=mat"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/build.py",
+      "sha256": "a96fc780252cb2109b4ce17709b922199004a583538c3e4a8af0f7197b4c2b20",
+      "input_read_sites": [
+        {
+          "line": 7,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[3];O=R/'creative/reviews/swingarm-pivot-bush-v1';P=json.loads((H/'parameters.json').read_text());sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False);s=bpy.context.scene;s.unit_settings.system='METRIC';s.unit_settings.scale_length=1;col=bpy.data.collections.new(P['collection']);s.collection.children.link(col);studio=bpy.data.collections.new('LOCAL_NEUTRAL_STUDIO_NOT_EXPORT');s.collection.children.link(studio);rows=[]"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/check_export.mjs",
+      "sha256": "ffeb24039b3fa8238902a171fcfafc1643cd3627d65fe6141eb0a1766e33a15c",
+      "input_read_sites": [
+        {
+          "line": 2,
+          "code": "const H='assets-src/moto-components/swingarm/pivot-bush/',O='creative/reviews/swingarm-pivot-bush-v1/',file=H+'swingarm-pivot-bush-inspection.glb',bytes=await fs.readFile(file),root=(await new NodeIO().read(file)).getRoot(),src=JSON.parse(await fs.readFile(O+'source-geometry-check.json')),valid=await validator.validateBytes(new Uint8Array(bytes),{uri:file}),nodes=root.listNodes().filter(n=>n.getMesh());if(nodes.length!==3)throw Error('Three actual envelopes required');"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/check_material_preservation.mjs",
+      "sha256": "d3add151fb5fe055d35e715b470dc9303535baad2b9963280ae5cf43fc011126",
+      "input_read_sites": [
+        {
+          "line": 2,
+          "code": "const H='assets-src/moto-components/swingarm/pivot-bush/',O='creative/reviews/swingarm-pivot-bush-v1/',io=new NodeIO(),before=H+'g3-master-v1/swingarm-pivot-bush-inspection.glb',after=H+'swingarm-pivot-bush-inspection.glb',a=(await io.read(before)).getRoot(),b=(await io.read(after)).getRoot(),sha=async p=>createHash('sha256').update(await fs.readFile(p)).digest('hex'),digest=x=>createHash('sha256').update(Buffer.from(x.buffer,x.byteOffset,x.byteLength)).digest('hex'),rows=[];"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/inspect_interfaces.py",
+      "sha256": "46caf25c30d6606c3f589a78a487dd4e4dc81d60edd57f868db119dd3e2730fb",
+      "input_read_sites": [
+        {
+          "line": 6,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[3];O=R/'creative/reviews/swingarm-pivot-bush-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();bpy.ops.wm.open_mainfile(filepath=str(H/'swingarm-pivot-bush-v1.blend'));s=json.loads((O/'source-geometry-check.json').read_text());col=bpy.data.collections['WEWA_SWINGARM_PIVOT_BUSH_ISOLATED'];rows=[]"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/inspect_material.py",
+      "sha256": "7d061343ecda0e2927c243f96c0cfe60dec02e8a16037d275bba473ea082d0ef",
+      "input_read_sites": [
+        {
+          "line": 5,
+          "code": "H=Path(__file__).resolve().parent;O=H.parents[3]/'creative/reviews/swingarm-pivot-bush-v1';d=(H/'swingarm-pivot-bush-inspection.glb').read_bytes();n,_=struct.unpack_from('<II',d,12);g=json.loads(d[20:20+n]);bin=d[28+n:];assert len(g['materials'])==3;rows=[];byrole={}"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/material.py",
+      "sha256": "9a71dcc14590be054c5ab5b16617c13009fb7d3c7e16ac4be18ca246f90311af",
+      "input_read_sites": [
+        {
+          "line": 4,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[3];O=R/'creative/reviews/swingarm-pivot-bush-v1';D=R/'creative/research/swingarm-pivot-bush';T=H/'textures';T.mkdir(exist_ok=True);sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();src=H/'swingarm-pivot-bush-v1.blend';glb=H/'swingarm-pivot-bush-inspection.glb';q=json.loads((O/'gray-review.json').read_text());assert q['ready_for_estimated_material_candidate']and q['source_sha256']==sha(src)and q['export_sha256']==sha(glb);bpy.ops.wm.open_mainfile(filepath=str(src));col=bpy.data.collections['WEWA_SWINGARM_PIVOT_BUSH_ISOLATED'];plan=json.loads((D/'material-plan-v1.json').read_text())"
+        },
+        {
+          "line": 23,
+          "code": "bpy.context.view_layer.objects.active=col.objects[0];bpy.ops.export_scene.gltf(filepath=str(glb),export_format='GLB',use_selection=True,export_apply=True,export_texcoords=True,export_normals=True,export_tangents=True);bpy.ops.wm.save_as_mainfile(filepath=str(src),compress=True);r=json.loads((O/'source-geometry-check.json').read_text());r.update(source_sha256=sha(src),export_sha256=sha(glb),source_geometry_N_UV_digest_preserved=before);(O/'source-geometry-check.json').write_text(json.dumps(r,indent=2)+'\\n');(H/'build-report.json').write_text(json.dumps(r,indent=2)+'\\n');(O/'material-build-report.json').write_text(json.dumps({'source_sha256':r['source_sha256'],'export_sha256':r['export_sha256'],'materials':rows,'texture_size_px':[N,N],'author_noise_reference_tile_m_estimated':tile,'UV_radius_scale_variation_recorded_in_build_report':True,'geometry_normals_UV_preserved':True,'photo_pixels_used':False,'physical_reflectance_measured':False,'art_accepted':False},indent=2)+'\\n');print('PIVOT_BUSH_MATERIAL',r['source_sha256'],r['export_sha256'])"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/record.py",
+      "sha256": "2596ee29c239029c98d8778766f09d29bec054f9183507eb84835fff0f674c63",
+      "input_read_sites": [
+        {
+          "line": 5,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[3];O=R/'creative/reviews/swingarm-pivot-bush-v1';D=R/'creative/research/swingarm-pivot-bush';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();rows=lambda files:[{'path':str(p.relative_to(R)),'bytes':p.stat().st_size,'sha256':sha(p)}for p in sorted(files)]"
+        },
+        {
+          "line": 9,
+          "code": "inputs=[H/n for n in hn]+[D/'preparation-v1.json',D/'material-plan-v1.json'];s=sha(H/'swingarm-pivot-bush-v1.blend');g=sha(H/'swingarm-pivot-bush-inspection.glb');a=json.loads((O/'source-geometry-check.json').read_text());b=json.loads((O/'geometry-check.json').read_text());assert a['source_sha256']==b['source_sha256']==s and a['export_sha256']==b['export_sha256']==g and b['technical_passed'];assert len(set(inputs))==len(inputs)"
+        },
+        {
+          "line": 13,
+          "code": "assert json.loads((O/'source-freeze.json').read_text())['files']==rows(inputs),'Frozen input changed'"
+        },
+        {
+          "line": 14,
+          "code": "r=json.loads((O/'render-report.json').read_text());v=json.loads((O/'source-render-review.json').read_text());names={'quarter','front','lip-detail'};assert r['source_sha256']==v['source_sha256']==s and r['export_sha256']==v['export_sha256']==g and r['samples']==96 and{x['name']for x in r['views']}==set(v['images_actually_read'])==names"
+        },
+        {
+          "line": 16,
+          "code": "p=O/(n+'.png');q=json.loads((O/('checkpoint-'+n+'.json')).read_text());assert q['source_sha256']==s and q['export_sha256']==g and q['PNG_sha256']==sha(p)and q['view']['camera_preflight']['technical_preflight_passed']"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/render.py",
+      "sha256": "fd8ad27e6278dacb5da0831160146821e8d032c09337ae222c08e0b2a8ac6701",
+      "input_read_sites": [
+        {
+          "line": 5,
+          "code": "H=Path(__file__).resolve().parent;R=H.parents[3];O=R/'creative/reviews/swingarm-pivot-bush-v1';sys.path.insert(0,str(R/'tools'));from blender_component_camera_preflight import check_component_camera"
+        },
+        {
+          "line": 6,
+          "code": "sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();src=H/'swingarm-pivot-bush-v1.blend';glb=H/'swingarm-pivot-bush-inspection.glb';a=json.loads((O/'source-geometry-check.json').read_text());b=json.loads((O/'geometry-check.json').read_text());assert a['source_sha256']==b['source_sha256']==sha(src)and a['export_sha256']==b['export_sha256']==sha(glb)and b['technical_passed'];bpy.ops.wm.open_mainfile(filepath=str(src));s=bpy.context.scene;obs=list(bpy.data.collections['WEWA_SWINGARM_PIVOT_BUSH_ISOLATED'].objects);final='--final'in sys.argv;reflection='--reflection'in sys.argv;material='--material-preview'in sys.argv;assert not final or not(reflection or material);s.cycles.samples=96 if final else 24;s.render.resolution_x=1000;s.render.resolution_y=900;s.render.resolution_percentage=100 if final or reflection or'--native'in sys.argv else 65"
+        },
+        {
+          "line": 20,
+          "code": "q=json.loads(cp.read_text());reuse=q.get('config_sha256')==digest and q.get('PNG_sha256')==sha(png)"
+        }
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/throttle-control/control_geometry.py",
+      "sha256": "430351cb8ef4877a2575174958e86d998664d8dd5941a9d5cb74ff22f47ffe8c",
+      "input_read_sites": [
+        {
+          "line": 45,
+          "code": "inp=Path(tmp)/'in.json';out=Path(tmp)/'out.json';inp.write_text(json.dumps({'base':row(base),'features':[row(o) for o in features],'drills':[row(o) for o in drills]}));subprocess.run([shutil.which('python'),str(root/'assets-src/moto-components/front-brake-plate/csg.py'),str(inp),str(out)],check=True);data=json.loads(out.read_text())"
+        }
+      ]
+    },
+    {
+      "path": "tools/blender_component_camera_preflight.py",
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a",
+      "input_read_sites": []
+    }
+  ],
+  "original_generated_maps": [
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/textures/silencer-coating-basecolor-v1.png",
+      "role": "Original generated map; actual bytes checked by frozen source manifest",
+      "sha256": "a6b3633f5011c4f2495f99c9deea3ec0e6ffd7e1171c15235da7081013cb224e",
+      "bytes": 1632978,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/textures/silencer-coating-roughness-v1.png",
+      "role": "Original generated map; actual bytes checked by frozen source manifest",
+      "sha256": "24ba3a858963f1f4eb0f52bc3b49eabfad73fe389e40e8081c91f2f3160d6b83",
+      "bytes": 2374188,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/textures/silencer-end-coating-basecolor-v1.png",
+      "role": "Original generated map; actual bytes checked by frozen source manifest",
+      "sha256": "6900c82292b9a21cad73bd51e7c8cd637786f69046256c7863ac98f325f70c73",
+      "bytes": 311209,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-end/textures/silencer-end-coating-roughness-v1.png",
+      "role": "Original generated map; actual bytes checked by frozen source manifest",
+      "sha256": "c348827fcca22d42544838ff0635149b66de1876f898d608c603759820092ac6",
+      "bytes": 647161,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/textures/pivot-bush-dark-annulus-metallic-roughness.png",
+      "role": "Original generated map; actual bytes checked by frozen source manifest",
+      "sha256": "3d5b817ca62552e7e5d1d61519e9150974d1218a023e6e1c1f1fd2e2a194abab",
+      "bytes": 97326,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/textures/pivot-bush-dark-annulus-normal.png",
+      "role": "Original generated map; actual bytes checked by frozen source manifest",
+      "sha256": "90eed3225e6dd29f31adc03eab1103b92e5ac315b63ab19750d52ab8d3f715fe",
+      "bytes": 94926,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/textures/pivot-bush-inner-clear-metallic-roughness.png",
+      "role": "Original generated map; actual bytes checked by frozen source manifest",
+      "sha256": "8eb69d3a9d89f56881b0594c3715f1e19a72823864d02d99fa79c2bfe512b518",
+      "bytes": 48468,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/textures/pivot-bush-inner-clear-normal.png",
+      "role": "Original generated map; actual bytes checked by frozen source manifest",
+      "sha256": "f70081dab1a0844cf47f44b829933451665bdf5e66cf071372ebac2ea0eab0fa",
+      "bytes": 79912,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/textures/pivot-bush-outer-clear-metallic-roughness.png",
+      "role": "Original generated map; actual bytes checked by frozen source manifest",
+      "sha256": "4969964d73bef6ccbd6958d631f48a730607f7efd7ba99cdf1a415c7af791c69",
+      "bytes": 89704,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    },
+    {
+      "path": "assets-src/moto-components/swingarm/pivot-bush/textures/pivot-bush-outer-clear-normal.png",
+      "role": "Original generated map; actual bytes checked by frozen source manifest",
+      "sha256": "34d151b603b108e380be20ffe9039a7833cf4e0180d96b619dc9f662087400bd",
+      "bytes": 83436,
+      "covered_by_current_closed_roots": true,
+      "already_in_snapshot_HEAD": false
+    }
+  ],
+  "guard_checks": {
+    "bush_G3_master_matches_gray_review_source_and_export": true,
+    "body_and_end_guides_and_interfaces_match_parameters": true
+  },
+  "admission_results": {
+    "body1": {
+      "result": "No omitted indispensable author input found. Native build+loft helper+parameters → explicit editable geometryBLEND/GLB/report → original coating material+checks are closed by55/69. Root20 is separate production proof.",
+      "G3_restore": "The geometry master is already separate; material.py opens it directly and never uses finalPBR as geometry baseline.",
+      "guide": "Actual existing reference evidence records one relative direct header Library only. Its constructor closure and source12 header were already public; this audit does not infer all context libraries load.",
+      "final_state": "Four96 included by closed69; no new reading of their pixels or artistic reception claimed here."
+    },
+    "bush1": {
+      "result": "No omitted indispensable author input found in union28+57+tracked shared tools. The standalone28 is insufficient by itself for the G3 readiness guard;57 supplies gray-review.json and current source/export checks.",
+      "G3_restore": "Restore the two G3 binaires AND g3-master-v1/source-geometry-check.json to the active source/export/review paths of an isolated workcopy before material.py. Its guard checks the exact immutable G3 hashes. A new build.py may create equivalent geometry with different binary source hashes; no clean bit-reproducibility claim.",
+      "inputs": "build.py reads numerical parameters only, no imported geometry or private raster. material.py reads plan/readiness and generates six512² normal/ORM maps with seeds15170+i.",
+      "root_QA": "No current/future root production/captures auto-imported, catalog/registry not pinned."
+    },
+    "end1": {
+      "result": "No omitted indispensable author input found in preflight53 plus body1 closure and tracked shared helper. Native annular_geometry+parameters → separate editable geometryBLEND/GLB/report → original coating+checks.",
+      "guide": "Existing reference evidence records one relative direct body Library only; guide and interface data are frozen. No new opening/relocation test.",
+      "final_state": "Final96 checkpoints/PNG/EXR, render-report.json, final review-manifest and future root production are intentionally not read or frozen. Closure must be added only when B/root finish."
+    }
+  },
+  "material_origin": {
+    "body_end": "Blender Noise 4D→weak color/roughness→generated packed maps,2per component; all source noise scales/seed/material factors in parameters. No image-load from photographic reference.",
+    "bush": "Numpy seeded FFT noise→normal/ORM for3material roles,6maps; no reference photograph is opened.",
+    "private_photos": "Sources/provenance/plans contain documentary path/URL metadata only; no photo copied as texture, no web fetch and no private pixel loaded by this audit.",
+    "actual_embedded_pixel_proofs": "Existing frozen actual-map/material-buffer reports and decoder code inspected; no new independent decode or optical calibration was executed."
+  },
+  "generated_caches_and_historical_seals": {
+    "B_pixel_cache": "check_material_export.mjs extracts embedded PNG bytes and UV samples into a private scratch directory; following check_exported_map_pixels.py consumes these generated outputs. Scratch files are not missing authored dependencies and need not be published.",
+    "historical_seal": "record_preflight.py uses private actual preview checkpoints, plus human-read flags. Replaying build/material does not recreate historical reading or a valid new artistic seal.",
+    "path_constraints": "B recipe.py uses an absolute local Blender executable; some checker output caches use absolute scratch paths. Setup/path adaptation is required outside this workspace. Native generation intentionally refuses overwriting an existing preflight seal. No portability/clean-regeneration promise."
+  },
+  "future_metadata_projection_advice": {
+    "untracked_local_records_snapshot": [
+      {
+        "path": "creative/workflow/records/moto-exhaust-heatshield-001.json",
+        "id": "MOTO-EXHAUST-HEATSHIELD-001",
+        "source_revision": null,
+        "outside_this_admission": true
+      },
+      {
+        "path": "creative/workflow/records/moto-swingarm-pivot-shaft-001.json",
+        "id": "MOTO-SWINGARM-PIVOT-SHAFT-001",
+        "source_revision": null,
+        "outside_this_admission": true
+      }
+    ],
+    "changed_non_scope_tracked_records": [
+      {
+        "path": "creative/workflow/records/moto-fuel-tank-shell-001.json",
+        "id": "MOTO-FUEL-TANK-SHELL-001",
+        "worktree_source_revision": "fuel-tank-shell-v1",
+        "recommendation": "Retain HEAD if proof/source dependencies are outside the final source13 exact selection; never auto-import work-in-progress from this static audit."
+      }
+    ],
+    "rule": "Future unregistered/unrouted records and their inputs do not block this recipe admission and are not auto-selected. For final source13 selection, retain HEAD bytes of unrelated current records whose new evidence points outside the exact closed cut. No record/index/global file modified by this report."
+  },
+  "explicit_exclusions": [
+    "active end1 final renders/checkpoints/render-report",
+    "future shaft/tank/seat models and unrelated WIP",
+    "whole private archival directories",
+    "photos as texture files",
+    "catalogue or registry global as a new frozen input"
+  ],
+  "index_before_sha256": "33a67fc6c85154820c719a0f7bc790d9882e857dacb52880516b3a0cac4fd2b8",
+  "index_after_sha256": "33a67fc6c85154820c719a0f7bc790d9882e857dacb52880516b3a0cac4fd2b8",
+  "no_CI_publication_or_user_acceptance_claim": true
+}

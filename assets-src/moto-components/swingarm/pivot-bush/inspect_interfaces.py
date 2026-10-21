@@ -1,0 +1,9 @@
+"""Actual source shell/axis probes and portable packed resources, read only."""
+import bpy,json,hashlib
+from pathlib import Path
+from mathutils import Vector
+from mathutils.bvhtree import BVHTree
+H=Path(__file__).resolve().parent;R=H.parents[3];O=R/'creative/reviews/swingarm-pivot-bush-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();bpy.ops.wm.open_mainfile(filepath=str(H/'swingarm-pivot-bush-v1.blend'));s=json.loads((O/'source-geometry-check.json').read_text());col=bpy.data.collections['WEWA_SWINGARM_PIVOT_BUSH_ISOLATED'];rows=[]
+for o in col.objects:
+ p=next(x for x in s['objects']if x['object']==o.name);tree=BVHTree.FromObject(o,bpy.context.evaluated_depsgraph_get());hole=tree.ray_cast(Vector((-.06,0,0)),Vector((1,0,0)),.12);radius=(p['working_outer_radius_m']+p['working_inner_radius_m'])/2;wall=tree.ray_cast(Vector((-.06,radius,0)),Vector((1,0,0)),.12);assert hole[0]is None and wall[0]is not None and abs(wall[3]-(.06-p['working_length_m']/2))<1e-7;rows.append({'object':o.name,'actual_axial_bore_ray_clear':True,'actual_midwall_axial_hit_m':wall[3],'shell_touching_neighbors_is_candidate_not_measured_bond':True})
+libs=[l.filepath for l in bpy.data.libraries];imgs=[{'name':im.name,'path':im.filepath,'packed':bool(im.packed_file)}for im in bpy.data.images if im.source=='FILE'];assert not libs;assert all(im['packed']and im['path'].startswith('//')for im in imgs);r={'source_sha256':sha(H/'swingarm-pivot-bush-v1.blend'),'export_sha256':sha(H/'swingarm-pivot-bush-inspection.glb'),'objects':rows,'external_libraries':libs,'image_paths':imgs,'counterpart_body_and_shaft_fit_verified':False,'bonding_or_stiffness_qualified':False,'reverse_face_photographed':False,'art_accepted':False};(O/'source-interface-check.json').write_text(json.dumps(r,indent=2)+'\n');print('PIVOT_BUSH_INTERFACES',len(rows),len(imgs))

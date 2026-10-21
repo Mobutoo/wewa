@@ -1,0 +1,14 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 01:31:14)
+Read blend: "/workspace/wewa-github/assets-src/moto-components/exhaust-silencer-body/exhaust-silencer-body-v1-geometry.blend"
+Traceback (most recent call last):
+  File "/workspace/wewa-github/assets-src/moto-components/exhaust-silencer-body/render_geometry.py", line 17, in <module>
+    guides.hide_render=not context;s.camera.location=position;s.camera.rotation_euler=(aim-position).to_track_quat('-Z','Y').to_euler();s.camera.data.type='ORTHO'if ortho else'PERSP';s.camera.data.ortho_scale=width;s.camera.data.lens=lens;bpy.context.view_layer.update();frame=check_component_camera(s,[o]+(keepouts if context else[]),allow_crop=crop,margin=.005)
+                                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/wewa-github/assets-src/moto-components/exhaust-silencer-body/camera_preflight.py", line 50, in check_component_camera
+    raise ValueError(json.dumps(result))
+ValueError: {"schema": "wewa.camera-preflight.v1", "camera": "CONTROL_CAMERA", "camera_type": "PERSP", "camera_clip_m": [0.0005000000237487257, 1000.0], "nearest_actual_vertex_depth_m": 1.130272989134454, "farthest_actual_vertex_depth_m": 1.8122002032426394, "projected_uv_min": [-0.047789780997756215, 0.017713381168418862], "projected_uv_max": [0.9074813336058642, 0.834299517466238], "allow_deliberate_crop": false, "whole_component_margin": 0.005, "mesh_rows": [{"object": "Rising hollow silencer main shell - conditional RDC", "vertices": 67840, "depth_m": [1.130272989134454, 1.5274401226971435], "projected_uv_min": [-0.047789780997756215, 0.017713381168418862], "projected_uv_max": [0.5899861634171454, 0.33774770116386676], "finite": true}, {"object": "Hollow front and lower exhaust tube - conditional RDC", "vertices": 59136, "depth_m": [1.5035505520724257, 1.8122002032426394], "projected_uv_min": [0.5750930369282802, 0.30576582530115276], "projected_uv_max": [0.9074813336058642, 0.834299517466238], "finite": true}], "actual_vertices_outside_depth_range": false, "projected_extent_outside_margin": true, "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception"}
+
+Error: script failed, file: '/workspace/wewa-github/assets-src/moto-components/exhaust-silencer-body/render_geometry.py', exiting.
+Info: Read library: '/workspace/wewa-github/assets-src/moto-components/exhaust-header/exhaust-header-v1.blend', '//../exhaust-header/exhaust-header-v1.blend', parent '<direct>'
+
+Blender quit

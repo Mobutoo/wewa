@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "date_utc": "2026-10-21",
+  "scope": "Appoint documentaire sur la bride terminale apparente du seul réservoir rouge ; aucun modèle/caméra/cote, aucun fichier propriétaire modifié.",
+  "source": {
+    "private_path": "/workspace/wewa-assets/references/tank18-research-2026-10-21/UG-52PF1825-red.jpg",
+    "sha256": "74a548ebbee963e41ef810c8c76ad2531014d8eec0def2dc64058d91b24fdddd",
+    "url": "https://www.winter-summer.ru/content/catalog/bajaj_52pf1825.jpg",
+    "pixels": [
+      1000,
+      1000
+    ],
+    "actually_opened": true,
+    "identity": "52PF1825 UG apparenté, exacteRDC non certifiée",
+    "direction": "arrière image-gauche / avant image-droite : inférence de la silhouette, pas un repère 3D calibré"
+  },
+  "private_reading_crop": {
+    "path": "/workspace/wewa-assets/references/tank18-rear-flange-reading-v1/red-rear-flange-reading.png",
+    "sha256": "87c3488ee146e28a0eeef0f7282af0d1af8e27942bf9f1187b345895152b5465",
+    "native_box_xyxy": [
+      140,
+      350,
+      320,
+      640
+    ],
+    "scale": 3,
+    "resampling": "nearest neighbor",
+    "actually_opened": true,
+    "independent_view": false
+  },
+  "native_coordinates": "Origine haut-gauche ; u droite / v bas ; marges conservées. Tracés manuels grossiers ±8–12px, pas contours métrologiques.",
+  "observations": [
+    {
+      "id": "terminal-plate",
+      "status": "photo_inferred",
+      "region_xyxy": [
+        150,
+        378,
+        262,
+        555
+      ],
+      "claim": "Plage peinte percée qui dépasse derrière/à gauche de la peau terminale du corps. Bord extérieur libre oblique, raccord arrondi en bas et lumière claire près de la partie haute visible.",
+      "limits": "Une seule face oblique, dos et épaisseur cachés ; pas de plan de fixation ni méthode de soudure déduits."
+    },
+    {
+      "id": "terminal-aperture",
+      "status": "photo_inferred",
+      "approx_center_uv": [
+        227,
+        422
+      ],
+      "reading_uncertainty_px": 6,
+      "claim": "Ouverture claire à fond blanc visible dans la plage terminale, distincte de la petite oreille percée plus basse.",
+      "limits": "Profil apparent allongé influencé par la perspective ; forme réelle/axe/diamètre inconnus."
+    },
+    {
+      "id": "root-on-terminal-flank",
+      "status": "photo_inferred",
+      "approx_polyline_uv": [
+        [
+          258,
+          380
+        ],
+        [
+          243,
+          416
+        ],
+        [
+          222,
+          463
+        ],
+        [
+          200,
+          506
+        ],
+        [
+          195,
+          527
+        ],
+        [
+          208,
+          545
+        ],
+        [
+          250,
+          566
+        ]
+      ],
+      "reading_uncertainty_px": 12,
+      "claim": "Limite de raccord visible qui suit le contour terminal du flanc puis tourne vers son retour inférieur arrondi. La plage extérieure et le flanc se rejoignent par cette bande visible, plutôt que par une racine ponctuelle au sommet de la couronne.",
+      "limits": "La ligne de contraste ne démontre ni arête vive, ni soudure, ni découpe séparée ; ne pas extrapoler une section plane ou un contour caché."
+    },
+    {
+      "id": "root-upper-occlusion",
+      "status": "unknown",
+      "claim": "Au-dessus du début visible, la peau bombée du corps masque la continuité de la plage terminale.",
+      "limits": "Liaison sous la peau supérieure et retour opposé non observés."
+    },
+    {
+      "id": "lower-pierced-ear",
+      "status": "photo_inferred",
+      "approx_center_uv": [
+        294,
+        608
+      ],
+      "reading_uncertainty_px": 8,
+      "claim": "Autre oreille percée qui descend du bord inférieur ; distincte de la lumière de bride terminale227/422.",
+      "limits": "Fonction/axe/liaison arrière non attribués."
+    }
+  ],
+  "visible_root_classification": "Raccord observé au flanc terminal et au retour inférieur ; prolongement supérieur occulté. La photo n’appuie pas une tablette posée sur la couronne près du remplissage.",
+  "model_height_assessment": {
+    "candidate_seen": false,
+    "source_Z_checked": false,
+    "conclusion": "Le Z provisoire fourni par C ne peut être reçu/refusé depuis cette seule photo sans comparaison projetée. Corriger un raccord supposé de sommet si tel est le modèle, mais ne pas déduire un nouveauZ de ces pixels."
+  },
+  "hidden_or_unknown": [
+    "Section/dos/épaisseur/angle et profondeur de la bride.",
+    "Prolongement haut sous la peau, appui réel et fixations.",
+    "Position Z métrique et relation avec la couronne ou le tunnel.",
+    "Variante exacte et montage RDC."
+  ],
+  "next_use": "Raccorder le prochain candidat à un bord terminal du corps/retour inférieur dans ses vues de comparaison, avec pose et hauteur estimées explicites ; une limite de caméra ne doit pas servir à ignorer un raccord visible. Aucun appariement3D ou métrique fourni.",
+  "art_accepted": false,
+  "sources_or_models_modified": false
+}

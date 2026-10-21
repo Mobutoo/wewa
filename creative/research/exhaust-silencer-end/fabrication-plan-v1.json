@@ -1,0 +1,81 @@
+{
+  "component_id": "MOTO-EXHAUST-SILENCER-END-001",
+  "revision": "exhaust-silencer-end-v1",
+  "reference_images": [
+    {
+      "id": "R00",
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/rotation-00.png",
+      "sha256": "82be9285506c65dd8ff3fdba000fe963587548e306691844ed774f685870ea40",
+      "bytes": 54230,
+      "in_public_repo": false,
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/00.png",
+      "view": "profil droit",
+      "variant_status": "documented_exact_market_visual_year_unknown",
+      "actually_opened_this_pass": true,
+      "resolution_px": [
+        1000,
+        700
+      ],
+      "camera_calibrated": false
+    },
+    {
+      "id": "R06",
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/rotation-06.png",
+      "sha256": "60a01cd517728f6d3d4f61a3975fe610488f7b489098c20cae381b9768093362",
+      "bytes": 123126,
+      "in_public_repo": false,
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/06.png",
+      "view": "arri\u00e8re",
+      "variant_status": "documented_exact_market_visual_year_unknown",
+      "actually_opened_this_pass": true,
+      "resolution_px": [
+        1000,
+        700
+      ],
+      "camera_calibrated": false
+    },
+    {
+      "id": "R07",
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/rotation-07.png",
+      "sha256": "cec77fe44f3203a390ce6cf313f5958a7746a25a6df0ae28b25080eb838a9f76",
+      "bytes": 42934,
+      "in_public_repo": false,
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/07.png",
+      "view": "trois quarts arri\u00e8re droit",
+      "variant_status": "documented_exact_market_visual_year_unknown",
+      "actually_opened_this_pass": true,
+      "resolution_px": [
+        1000,
+        700
+      ],
+      "camera_calibrated": false
+    }
+  ],
+  "references_actually_opened_before_geometry": true,
+  "observed": "Bounded dark rear face distinct from the outer main casing, with a small approximately central projected hole and readable peripheral border. No broad megaphone outlet. Exact circularity, wall/inset and hidden neck not shown.",
+  "construction": "Closed annular wall volume with rounded perimeter/bore edges and a bounded small lip, no long internal pipe. Initial candidate datum derives from the unchanged body boundary; free radial gap and inset declared before shape.",
+  "equations": {
+    "outer_plate_semiaxes": "main_body_inner_semiaxes - estimated0.3mm free radial gap",
+    "front_plate_Y": "main_body_end_Y - estimated3mm inset",
+    "front_plate_XZ": "unchanged candidate rear centre XZ",
+    "back_plate_Y": "front_Y + estimated1.2mm wall",
+    "small_lip_Y": "back_Y + estimated0.8mm raised rim"
+  },
+  "inputs": [
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/exhaust-silencer-body-v1.blend",
+      "sha256": "262b057c752be56eec3132ba931a269e0cd9fb40bc9ec8170f1f16aaae72b70b"
+    },
+    {
+      "path": "assets-src/moto-components/exhaust-silencer-body/interfaces.json",
+      "sha256": "76561aa940a605f74f9e8e0ee845ed37a27d3dd9e641d9f1b2850a31342eb33d"
+    }
+  ],
+  "not_claimed": [
+    "Measured ellipse or hole diameter",
+    "Metric camera rectification",
+    "Weld or detachable cap",
+    "Hidden chambers/baffles/CAT/outlet pipe"
+  ],
+  "art_accepted": false
+}

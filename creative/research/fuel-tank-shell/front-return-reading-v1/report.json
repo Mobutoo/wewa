@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "date_utc": "2026-10-21",
+  "scope": "Lecture ponctuelle du retour avant apparent du réservoir, aucune dimension, géométrie, fonction ou nouvelle recherche générale.",
+  "sources": [
+    {
+      "id": "52PF1825",
+      "private_original": "/workspace/wewa-assets/references/tank18-research-2026-10-21/UG-52PF1825-red.jpg",
+      "sha256": "74a548ebbee963e41ef810c8c76ad2531014d8eec0def2dc64058d91b24fdddd",
+      "pixels": [
+        1000,
+        1000
+      ],
+      "url": "https://www.winter-summer.ru/content/catalog/bajaj_52pf1825.jpg",
+      "actually_opened": true,
+      "status": "documented_related_variant",
+      "private_crop": {
+        "path": "/workspace/wewa-assets/references/tank18-front-return-reading-v1/UG-52PF1825-red-reading.png",
+        "sha256": "049de8bb5eefc0e751b1986e4b82975da7534f037bd05a5ba40a5378c2867887",
+        "native_box_xyxy": [
+          785,
+          375,
+          880,
+          575
+        ],
+        "scale": 3,
+        "method": "PIL nearest neighbor ; aucun détail créé ni original modifié",
+        "actually_opened": true,
+        "independent_view": false
+      }
+    },
+    {
+      "id": "52PF1763",
+      "private_original": "/workspace/wewa-assets/references/tank18-research-2026-10-21/UG-52PF1763-black.jpg",
+      "sha256": "ef84baef1de3d7c53f792a1241b3c6734ee5b5b826db03e213f1af8959739e3f",
+      "pixels": [
+        1000,
+        1000
+      ],
+      "url": "https://www.winter-summer.ru/content/catalog/bajaj_52pf1763.jpg",
+      "actually_opened": true,
+      "status": "documented_related_variant",
+      "private_crop": {
+        "path": "/workspace/wewa-assets/references/tank18-front-return-reading-v1/UG-52PF1763-black-reading.png",
+        "sha256": "ab76414af955089960f1b0c780da90fa635a32b8561f10acb316b919ef09c52e",
+        "native_box_xyxy": [
+          810,
+          375,
+          900,
+          580
+        ],
+        "scale": 3,
+        "method": "PIL nearest neighbor ; aucun détail créé ni original modifié",
+        "actually_opened": true,
+        "independent_view": false
+      }
+    }
+  ],
+  "native_coordinates": "Origine haut-gauche, marges conservées, u vers droite, v vers bas ; régions approximatives, pas de calibration.",
+  "observations": [
+    {
+      "id": "red-protruding-outline",
+      "source": "52PF1825",
+      "region_approx_xyxy": [
+        800,
+        390,
+        865,
+        560
+      ],
+      "status": "photo_inferred",
+      "claim": "Contour externe saillant à l’extrémité image-droite, allongé verticalement et arrondi ; il se détache sur le fond blanc. Le flanc rouge présente une arête/limite de raccord en avant de cette plage.",
+      "limits": "La plage ne donne pas une section normale, son épaisseur ni sa profondeur."
+    },
+    {
+      "id": "red-gray-brown-patch",
+      "source": "52PF1825",
+      "region_approx_xyxy": [
+        820,
+        407,
+        854,
+        542
+      ],
+      "status": "photo_inferred",
+      "claim": "Plage gris-brun allongée visible dans la saillie, avec bandes sombres/claires et frange rouge.",
+      "limits": "Reflets et faible contraste empêchent de suivre un second contour interne fermé certain. Fond blanc traversant non observé ; cela ne prouve pas que la pièce est fermée. Aucun fond de cavité ni trajet interne démontré."
+    },
+    {
+      "id": "red-occlusions",
+      "source": "52PF1825",
+      "status": "unknown",
+      "claim": "Face opposée, dessous et profondeur du raccord cachés par la peau/bord du flanc ; le bas du détail se confond avec le retour inférieur.",
+      "limits": "Aucun contour complet de cavité ou tunnel ne peut être prolongé depuis ce fragment."
+    },
+    {
+      "id": "black-related-return",
+      "source": "52PF1763",
+      "region_approx_xyxy": [
+        825,
+        395,
+        884,
+        555
+      ],
+      "status": "photo_inferred",
+      "claim": "L’autre exemplaire noir montre un contour saillant arrondi et une plage oblique gris-brun au raccord du flanc. Le contraste suit un arrangement voisin.",
+      "limits": "Autre code/peinture/exemplaire photographié sous un angle proche : pas la face opposée ni une multivue certaine de la pièce rouge. N’apporte pas de coupe, profondeur ou ouverture certifiée."
+    }
+  ],
+  "construction_implication": "Un retour extérieur arrondi est appuyé comme fragment de silhouette ; le choix d’une surface fermée ou d’un volume ouvert et son prolongement intérieur restent des hypothèses distinctes à déclarer, pas des faits à déduire de la plage sombre. Aucune mécanique ou fixation assignée.",
+  "unresolved": [
+    "Ouverture réelle, cavité aveugle, simple face/retour en réflexion : non tranchés.",
+    "Nombre de parois, épaisseur, profondeur, direction 3D et section cachée.",
+    "Identité et montage exacts du réservoir actuel RDC125HD.",
+    "Continuité éventuelle vers le tunnel inférieur ou des appuis."
+  ],
+  "forbidden_inferences": [
+    "Ne pas appeler cette plage bouche traversante ni percer un tunnel pour correspondre à une ombre.",
+    "Ne pas copier une coupe ou cote d’un réservoir voisin.",
+    "Ne pas compter les crops comme nouvelles vues indépendantes.",
+    "Ne pas considérer noir et rouge comme deux côtés du même exemplaire."
+  ],
+  "next_useful_evidence": "Vraie vue avant/underside et oblique opposée du même réservoir, ou photo nette montrant un fond/second bord interne du retour ; aucune nouvelle recherche lancée dans cet appoint.",
+  "sources_fiches_galleries_models_modified": false,
+  "dimensions_measured": false,
+  "art_accepted": false
+}
