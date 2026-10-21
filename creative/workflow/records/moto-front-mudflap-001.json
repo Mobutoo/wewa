@@ -1,0 +1,197 @@
+{
+  "schema": 1,
+  "id": "MOTO-FRONT-MUDFLAP-001",
+  "label": "P03 — bavette apparentée trois trous, candidat de revue",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "whole-quarter",
+      "PNG_sha256": "c476cffa316cd513dd884dbd01153c0b3b8eeae1d1957ab46a5a2cbeffa7ad41",
+      "samples": 96,
+      "actually_saved": true
+    },
+    {
+      "name": "whole-reverse",
+      "PNG_sha256": "1ce47dd56b8b185ea6db3d818bb74b31f871bf9657248da714844512457edb85",
+      "samples": 96,
+      "actually_saved": true
+    },
+    {
+      "name": "neutral",
+      "PNG_sha256": "a10c61d1c1034ecdb0d4eba762792314bca8df453913cfc712b18d89e6d27fa5",
+      "samples": 96,
+      "actually_saved": true
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-FRONT-MUDFLAP-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "front-mudflap-coordination-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/front-mudflap-coordination-v1/G0-G2-plan-v1.json",
+          "revision": "front-mudflap-coordination-v1",
+          "sha256": "2e63783acc90e67d3f84a8523837a74570ab84415d72a30389d0405bdcf91795"
+        }
+      ],
+      "reason": "Related-variant flap separated from shell/support/fit; no automatic current-market identity or artistic reception",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "front-mudflap-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "front-mudflap-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "front-mudflap-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/front-completion-p03-flap-material-v2/flap-material.blend",
+          "kind": "editable_source",
+          "revision": "front-mudflap-coordination-v1",
+          "sha256": "c5ce19ab84c5210d40f6535db83d9d383bb594bc3f64fc8ae126ac79d6dbdb9c"
+        },
+        {
+          "path": "../../reviews/front-mudflap-coordination-v1/whole-quarter.png",
+          "kind": "isolated_comparison",
+          "revision": "front-mudflap-coordination-v1",
+          "sha256": "c476cffa316cd513dd884dbd01153c0b3b8eeae1d1957ab46a5a2cbeffa7ad41"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "front-mudflap-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/front-mudflap-coordination-v1/neutral.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "front-mudflap-coordination-v1",
+          "sha256": "a10c61d1c1034ecdb0d4eba762792314bca8df453913cfc712b18d89e6d27fa5"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "front-mudflap-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/front-mudflap-coordination-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "front-mudflap-coordination-v1",
+          "sha256": "6bb1e6f4c7b41ec93acaba6f34c3fe578a1d73cf8f52706814cd4bdc346fc7c9"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "front-mudflap-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/front-mudflap-coordination-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "front-mudflap-coordination-v1",
+          "sha256": "a2f3af66005ea3b4272739adc64411036171d69a817e0b854f6c86ab2aaa8aff"
+        },
+        {
+          "path": "../../reviews/front-mudflap-coordination-v1/inspection-v5/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "front-mudflap-coordination-v1",
+          "sha256": "7ffc7c5df6137d049a35217b949a5d2bf3cdbc2aad9eb3459ed9aeba8e3da512"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "front-mudflap-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "front-mudflap-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "front-mudflap-coordination-v1",
+  "export_revision": "front-mudflap-coordination-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/front-completion-p03-flap-material-v2/README.md",
+  "candidate_review": "../../reviews/front-mudflap-coordination-v1/README.md",
+  "production_group": 15,
+  "source_plan": "../../research/front-mudflap-coordination-v1/G0-G2-plan-v1.json"
+}
