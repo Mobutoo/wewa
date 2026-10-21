@@ -1,0 +1,20 @@
+"""Finalize only front9-owned fragments and hash tables. Never Git or shared registries."""
+from pathlib import Path
+import json,hashlib,sys
+R=Path('/workspace/wewa');K=sys.argv[1];H=R/'assets-src/moto-components'/K;O=R/'creative/reviews'/K
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+read=json.loads((O/'visual-review.json').read_text());assert read['native96_images_actually_read']
+raw=json.loads((O/'raw-check.json').read_text());assert len(raw['files'])==4
+for n in ['gray','material']:
+ d=json.loads((H/f'endplate-{n}.glb.validator.json').read_text());assert d['issues']['numErrors']==d['issues']['numWarnings']==0
+par=json.loads((O/'material-parity.json').read_text());assert par['binary_geometry_equal'] and par['mesh_accessors_nodes_equal']
+meta=json.loads((O/'source-metadata.json').read_text());assert sha(H/'endplate-gray.blend')==meta['source_sha256']
+asset={'component_id':'MOTO-REAR-ADJUSTER-ENDPLATE-DJ151047-STUDY-001','package':'P23','revision':K,'source':str((H/'endplate-material.blend').relative_to(R)),'source_sha256':sha(H/'endplate-material.blend'),'collection':'Scene Collection','collection_kind':'scene_root','source_objects':['DJ151047_RELATED_PRESSING_ESTIMATED_REVERSE'],'files':[K+'/endplate-material.glb'],'review':K,'details':'New isolated related DJ151047 pressing, continuous estimated finite sheet, raised boss, peripheral return and three real holes. Clean uniform metal hypothesis; all metric/reverse/finish estimates, no current RDC or mounted fit, no artistic acceptance.','render_report':str((O/'raw-check.json').relative_to(R))}
+# Flat per-asset entries; coordinator chooses admission. No root catalogue write.
+(O/'catalog-fragment.json').write_text(json.dumps({K:asset},indent=2))
+delivery={'package':'P23','child':'DJ151047 raised adjuster endplate','revision':K,'new_geometry':True,'milestone':'Bounded related exterior gray and uniform material hypothesis, native96 source proofs actually read','geometry_complete_for_study':True,'material_hypothesis_only':True,'material_fidelity_verified':False,'source':asset['source'],'gray_source':str((H/'endplate-gray.blend').relative_to(R)),'catalog_fragment':str((O/'catalog-fragment.json').relative_to(R)),'native96_exr_png_pairs':4,'actual_babylon':'Not executed; coordinator isolated inspection pending','mounted_fit':False,'current_RDC_identity':False,'package_complete':False,'art_accepted':False,'remaining':['P23 LH/RH adjusters, torque arm, torque bolt, collars/nuts and fitted assembly','Reverse DJ151047 only estimated continuation; no independent back photograph','Yellow treatment/wear and measured finish not reproduced'],'git_touched':False,'shared_catalog_modified':False}
+(O/'delivery.json').write_text(json.dumps(delivery,indent=2))
+paths=sorted(p for folder in [H,O] for p in folder.rglob('*')if p.is_file()and p.name not in ['files-hash.json','ready-paths.txt'])
+protocols=[R/'tools'/n for n in ['front_completion_p23_endplate_front9_v1.py','front_completion_endplate_front9_render_v1.py','front_completion_p23_endplate_front9_material_v1.py','front_completion_endplate_front9_material_render_v1.py','front_completion_endplate_front9_camera_audit_v1.py','front_completion_front9_finalize_v1.py','front_completion_preview_v2.py','front_completion_material_preview_v1.py','front_completion_source_metadata_v1.py','front_completion_check_raw_v1.py','front_completion_validate.mjs','front_completion_buffers_v1.mjs','front_completion_material_parity_v1.mjs','blender_component_camera_preflight.py']]
+paths=sorted(set(paths+protocols));rows=[{'path':str(p.relative_to(R)),'bytes':p.stat().st_size,'sha256':sha(p)}for p in paths]
+(O/'files-hash.json').write_text(json.dumps({'milestone':'front9 DJ151047 separate delivery','files':rows,'scope':'Exact bytes at delivery; integrity is not art acceptance','historical_protocols_unmodified':True},indent=2));(O/'ready-paths.txt').write_text('\n'.join(x['path']for x in rows)+'\n'+str((O/'files-hash.json').relative_to(R))+'\n'+str((O/'ready-paths.txt').relative_to(R))+'\n');print(K,len(rows),'files hashed')
