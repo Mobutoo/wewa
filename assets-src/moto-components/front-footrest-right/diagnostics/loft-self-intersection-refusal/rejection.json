@@ -1,0 +1,5 @@
+{
+  "source": "400ee6d36ae167f8638853735adc6d050a62aaf4283d2473f09ab92b9c03cc05",
+  "reason": "68 nonadjacent BVH self pairs in saddle transition/end regions after radially preserving scaledZ loft. Closed/positive manifold and zeroarea checks insufficient. Source rejected before grayscale/final/material. No numerical pass reinterpreted.",
+  "correction": "Restore original constant saddle cross-section, clip four actual end corners with planar XZ wedge cutters before union with tube. Plane cuts avoid twisted/nonplanar loft quads and preserve true lumen."
+}

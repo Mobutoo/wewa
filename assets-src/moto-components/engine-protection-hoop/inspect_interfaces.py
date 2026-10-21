@@ -1,0 +1,10 @@
+"""Read actual source tube, local bores/lumens and portable dependencies only."""
+import bpy,json,hashlib
+from pathlib import Path
+from mathutils import Vector
+from mathutils.bvhtree import BVHTree
+H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/engine-protection-hoop-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();src=H/'engine-protection-hoop-v1.blend';glb=H/'engine-protection-hoop-inspection.glb';bpy.ops.wm.open_mainfile(filepath=str(src));obs=list(bpy.data.collections['WEWA_ENGINE_PROTECTION_HOOP_TUBE_ISOLATED'].objects);assert len(obs)==1;o=obs[0];m=o.data;tree=BVHTree.FromPolygons([v.co for v in m.vertices],[tuple(p.vertices)for p in m.polygons]);probes=[]
+for name,origin,direction,length,clear in [('LH side mouth',(.07,-.03,-.255),(0,1,0),.030,True),('RH side mouth',(-.07,-.03,-.255),(0,1,0),.030,True),('Unpunched tube wall',(.08,-.03,-.255),(0,1,0),.030,False),('LH lumen',(-.02,0,-.255),(-1,0,0),.05,True),('RH lumen',(.02,0,-.255),(1,0,0),.05,True)]:
+ hit=tree.ray_cast(Vector(origin),Vector(direction),length);assert(hit[0]is None)==clear,(name,hit);probes.append({'name':name,'origin_m':origin,'direction':direction,'max_distance_m':length,'expected_clear':clear,'actually_clear':hit[0]is None})
+libs=[{'path':x.filepath}for x in bpy.data.libraries];assert not libs;images=[{'name':x.name,'path':x.filepath,'packed':bool(x.packed_file)}for x in bpy.data.images if x.source=='FILE'];assert all(x['packed']and x['path'].startswith('//')for x in images)
+r={'component_id':'MOTO-ENGINE-PROTECTION-HOOP-001','source_sha256':sha(src),'export_sha256':sha(glb),'actual_local_void_checks':probes,'external_libraries':libs,'images':images,'complete_guard_assembly':False,'terminal_and_centralplates_built':False,'tube_end_lumens_are_intermediate_component_not_finished_guard':True,'current_RDC_identity_verified':False,'installed_mount_or_frame_contact_qualified':False,'strength_qualified':False,'art_accepted':False};(O/'source-interface-check.json').write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(r))

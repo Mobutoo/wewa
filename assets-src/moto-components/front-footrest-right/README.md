@@ -1,0 +1,13 @@
+# Support droit PF113001 lié — candidat isolé
+
+Support métallique original construit après lecture effective des quatre photos Store (étiquette PF113001 / STAY MAIN STEP RH, APR2024) et de la photo Matriz. Variante commerciale liée : aucune identité actuelle125HD RDC, cote ni pose installée certifiée.
+
+Une pièce physique soudée : tube réellement creux au bout, base à deux trous, patte médiane pliée/ajourée, selle terminale à deux trous et lumière longitudinale, soudures originales. La selle est percée AVANT union avec le tube ; ce dernier reste intact derrière ses ouvertures. Aucun miroir géométrique du gauche, aucun de son renfort triangulaire/petit axe. La vis séparée vue chez Matriz n'est pas intégrée au support ; les photos Store montrent cette patte vide. Caoutchouc, fixations et contrepièce de cadre sont séparés et non construits ici.
+
+Les paramètres sont des estimations bornées en mètres, à partir de proportions qualitatives de photos non calibrées, sans règle, sans taille de paquet, ni empattement utilisé comme étalonnage local. Repère local : tube vers+X, baseYZ. Ce n'est PAS le repère moto ; la droite du pilote serait−X mais la transformation de montage reste inconnue. `interfaces.json` interdit le montage automatique. A n'a aucun ancrage cadre/repose-pied reçu à fournir.
+
+La source conserve ses volumes éditables, cachés seulement dans sa collection locale. Construction de sections, perçages et CSG Manifold ; aucun congé global ou remeshing après CSG. Un rayon estimé de0,45mm est évalué sur la tôle brute de patte avant perçage. Les coins de la selle sont découpés par plans avant union avec le tube. Diagnostic préservé : mauvais axe de perçage ayant produit une fente, puis essai de loft rejeté pour68paires de surfaces non adjacentes. Les seuils n'ont pas été relâchés. Les contrôles d'ouvertures ajoutent des témoins pleins autour des trois cercles, en plus des rayons vides.
+
+Six gris et trois reflets ont été réellement relus avant matière. Finition candidate : cartes originales couleur/rugosité/normal, noir représentatif, grain initial2µm de travail et tileUV150mm estimés ; aucune texture photo et aucun transfert de mesure/OEM depuis le gauche. Source détaillée d'inspection, pas un LOD mobile reçu ni un essai iPhone.
+
+Les positions/polygones/normales de coins/UV et matrices source sont protégés lors de la matière. Dans le GLB natif, MikkTSpace peut scinder/réindexer les sommets : les trois attributs développés par coins de triangles restent bit-identiques, les différences brutes ne sont pas cachées. Zéro UV effondrée/tangente nulle, aucune réparation de tampon exporté. Sept vues finales96 sont prévues après les quatre aperçus24 effectivement examinés, chacune avec PNG/EXR/checkpoint de source et de caméra.

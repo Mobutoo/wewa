@@ -1,6 +1,6 @@
 # Viva Wewa — revue des composants moto
 
-**67 composants uniques enregistrés · 67 vues Blender prouvées · aucune réception artistique.**
+**72 composants uniques enregistrés · 72 vues Blender prouvées · aucune réception artistique.**
 
 Une seule vue originale par composant, à la révision exacte de sa fiche. Les anciennes révisions et les sources seulement cataloguées ou gelées sans enregistrement central ne sont pas ajoutées. Ces rendus montrent des candidats isolés, pas le jeu ni une moto terminée.
 
@@ -25,12 +25,12 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 | [09 · Contacteur et clé](#groupe-9) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [10 · Câbles et faisceau visibles](#groupe-10) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [11 · Visière et entourage des compteurs](#groupe-11) | 1 | Candidats partiels en revue ; groupe non terminé |
-| [12 · Phare et clignotants avant](#groupe-12) | 3 | Candidats partiels en revue ; groupe non terminé |
+| [12 · Phare et clignotants avant](#groupe-12) | 4 | Candidats partiels en revue ; groupe non terminé |
 | [13 · Fourche et direction](#groupe-13) | 6 | Candidats partiels en revue ; groupe non terminé |
 | [14 · Ensemble avant et compatibilité des candidats existants](#groupe-14) | Voir les préexistants ; aucun nouveau composant compté | Candidats antérieurs existants à recontrôler ; compatibilité restante |
-| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 10 | Candidats partiels en revue ; groupe non terminé |
-| [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 4 | Candidats partiels en revue ; groupe non terminé |
-| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 21 | Candidats partiels en revue ; groupe non terminé |
+| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 12 | Candidats partiels en revue ; groupe non terminé |
+| [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 5 | Candidats partiels en revue ; groupe non terminé |
+| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 22 | Candidats partiels en revue ; groupe non terminé |
 | [18 · Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière](#groupe-18) | 2 | Candidats partiels en revue ; groupe non terminé |
 
 <a id="groupe-1"></a>
@@ -544,6 +544,31 @@ PNG SHA-256 : `5ac5cfbc61f8b583fa4ae81f5e7bd6f20208af7f4cdb36df5ddd1a46065bf955`
 
 </details>
 
+
+<a id="moto-indicator-front-left-stalk-001"></a>
+
+### Clignotant avant gauche — peau extérieure de tige rainurée
+
+`MOTO-INDICATOR-FRONT-LEFT-STALK-001` · révision `indicator-front-left-stalk-v1` · **candidat non reçu**
+
+![Clignotant avant gauche — peau extérieure de tige rainurée — indicator-front-left-stalk-v1](indicator-front-left-stalk-v1/whole-stalk-pbr.png)
+
+[Image entière](indicator-front-left-stalk-v1/whole-stalk-pbr.png) · [Preuve du rendu](indicator-front-left-stalk-v1/render-report.json) · vue `whole-stalk-pbr`
+
+Source SHA-256 : `d313baa457756eb2d1283010b289cec329212d01e23136bd32cb03a976e20678`  
+PNG SHA-256 : `5e813fe4272939a47391095ae2729d64835cfcd85300e70aa51d4c2b53c7378c`
+
+[Blender](../../assets-src/moto-components/indicators-front/left-stalk/indicator-front-left-stalk-v1.blend) · [GLB](../../assets-src/moto-components/indicators-front/left-stalk/indicator-front-left-stalk-v1.glb) · [README source](../../assets-src/moto-components/indicators-front/left-stalk/README.md) · [Revue et limites](indicator-front-left-stalk-v1/README.md) · [Fiche](../workflow/records/moto-indicator-front-left-stalk-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [neck-grooves-pbr](indicator-front-left-stalk-v1/neck-grooves-pbr.png) · [preuve](indicator-front-left-stalk-v1/render-report.json)
+- [neutral-outdoor](indicator-front-left-stalk-v1/neutral-outdoor.png) · [preuve](indicator-front-left-stalk-v1/render-report.json)
+
+</details>
+
 Périmètre prévu : coque du phare; réflecteur et optique; clignotant avant gauche; clignotant avant droit.
 
 <a id="groupe-13"></a>
@@ -972,6 +997,60 @@ PNG SHA-256 : `aefe041fd7979f153946ad18c0f25ab0270dbdc1537771dfd062dda64f79f5cc`
 
 </details>
 
+
+<a id="moto-engine-protection-hoop-001"></a>
+
+### Arceau moteur — tube isolé, garde incomplet
+
+`MOTO-ENGINE-PROTECTION-HOOP-001` · révision `engine-protection-hoop-v1` · **candidat non reçu**
+
+![Arceau moteur — tube isolé, garde incomplet — engine-protection-hoop-v1](engine-protection-hoop-v1/quarter.png)
+
+[Image entière](engine-protection-hoop-v1/quarter.png) · [Preuve du rendu](engine-protection-hoop-v1/render-report.json) · vue `quarter`
+
+Source SHA-256 : `7d0364876d5c198e1eb49bdb076b184fb169893d0ea80c82d609876f96b721c3`  
+PNG SHA-256 : `fa9c95a90d86a9d5c526d434066f5b36b208db7f91c588ebf9628bbf5ba5cb77`
+
+[Blender](../../assets-src/moto-components/engine-protection-hoop/engine-protection-hoop-v1.blend) · [GLB](../../assets-src/moto-components/engine-protection-hoop/engine-protection-hoop-inspection.glb) · [README source](../../assets-src/moto-components/engine-protection-hoop/README.md) · [Revue et limites](engine-protection-hoop-v1/README.md) · [Fiche](../workflow/records/moto-engine-protection-hoop-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [front](engine-protection-hoop-v1/front.png) · [preuve](engine-protection-hoop-v1/render-report.json)
+- [reverse-quarter](engine-protection-hoop-v1/reverse-quarter.png) · [preuve](engine-protection-hoop-v1/render-report.json)
+- [bend-detail](engine-protection-hoop-v1/bend-detail.png) · [preuve](engine-protection-hoop-v1/render-report.json)
+- [mouth-detail](engine-protection-hoop-v1/mouth-detail.png) · [preuve](engine-protection-hoop-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-engine-protection-centre-plate-001"></a>
+
+### Arceau moteur — platine centrale deux trous
+
+`MOTO-ENGINE-PROTECTION-CENTRE-PLATE-001` · révision `engine-protection-centre-plate-v1` · **candidat non reçu**
+
+![Arceau moteur — platine centrale deux trous — engine-protection-centre-plate-v1](engine-protection-centre-plate-v1/quarter.png)
+
+[Image entière](engine-protection-centre-plate-v1/quarter.png) · [Preuve du rendu](engine-protection-centre-plate-v1/render-report.json) · vue `quarter`
+
+Source SHA-256 : `923876df453b4f1719d9adc542ac04f2273cf52ff9f7e0c3cd8b1e7224dce4a6`  
+PNG SHA-256 : `bc3a8d7a00a20b4f46806c78c072aa4669cd8bd60ebb380d27e7c398b6bdcef5`
+
+[Blender](../../assets-src/moto-components/engine-protection-centre-plate/engine-protection-centre-plate-v1.blend) · [GLB](../../assets-src/moto-components/engine-protection-centre-plate/engine-protection-centre-plate-inspection.glb) · [README source](../../assets-src/moto-components/engine-protection-centre-plate/README.md) · [Revue et limites](engine-protection-centre-plate-v1/README.md) · [Fiche](../workflow/records/moto-engine-protection-centre-plate-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [front](engine-protection-centre-plate-v1/front.png) · [preuve](engine-protection-centre-plate-v1/render-report.json)
+- [reverse-quarter](engine-protection-centre-plate-v1/reverse-quarter.png) · [preuve](engine-protection-centre-plate-v1/render-report.json)
+- [fold-detail](engine-protection-centre-plate-v1/fold-detail.png) · [preuve](engine-protection-centre-plate-v1/render-report.json)
+- [hole-detail](engine-protection-centre-plate-v1/hole-detail.png) · [preuve](engine-protection-centre-plate-v1/render-report.json)
+
+</details>
+
 Périmètre prévu : garde-boue avant; cadre: tubes et jonctions visibles; bras oscillant et pivots visibles.
 
 <a id="groupe-16"></a>
@@ -1081,6 +1160,31 @@ PNG SHA-256 : `ef796c0fef0ec4ea5262075d54e087a55b0710e3cf67c5bc8652fcc3343e602e`
 - [rear-return-detail](chaincase-lower-v1/rear-return-detail.png) · [preuve](chaincase-lower-v1/render-report.json)
 - [front-hole-detail](chaincase-lower-v1/front-hole-detail.png) · [preuve](chaincase-lower-v1/render-report.json)
 - [inspection-hole-detail](chaincase-lower-v1/inspection-hole-detail.png) · [preuve](chaincase-lower-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-rear-sns-outer-spring-001"></a>
+
+### SNS arrière — ressort extérieur noir isolé
+
+`MOTO-REAR-SNS-OUTER-SPRING-001` · révision `rear-sns-outer-spring-v1` · **candidat non reçu**
+
+![SNS arrière — ressort extérieur noir isolé — rear-sns-outer-spring-v1](rear-sns-outer-spring-v1/whole-spring-pbr.png)
+
+[Image entière](rear-sns-outer-spring-v1/whole-spring-pbr.png) · [Preuve du rendu](rear-sns-outer-spring-v1/render-report.json) · vue `whole-spring-pbr`
+
+Source SHA-256 : `dcf116f2e6e0e12f03c746bfbad271c23652dd67154a742834b2bcc244935959`  
+PNG SHA-256 : `25439fc158a38d487482a0b1c6b356445995ca77f381e0022530b7016f8082c0`
+
+[Blender](../../assets-src/moto-components/rear-sns/outer-spring/rear-sns-outer-spring-v1.blend) · [GLB](../../assets-src/moto-components/rear-sns/outer-spring/rear-sns-outer-spring-v1.glb) · [README source](../../assets-src/moto-components/rear-sns/outer-spring/README.md) · [Revue et limites](rear-sns-outer-spring-v1/README.md) · [Fiche](../workflow/records/moto-rear-sns-outer-spring-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [tight-coils-pbr](rear-sns-outer-spring-v1/tight-coils-pbr.png) · [preuve](rear-sns-outer-spring-v1/render-report.json)
+- [neutral-outdoor](rear-sns-outer-spring-v1/neutral-outdoor.png) · [preuve](rear-sns-outer-spring-v1/render-report.json)
 
 </details>
 
@@ -1628,6 +1732,35 @@ PNG SHA-256 : `dcd2254ea929d52c55f1b25ddfb82287dbe09b5fec2999e95814be58fbfa54b0`
 - [front-near-normal](exhaust-header-gasket-v2/front-near-normal.png) · [preuve](exhaust-header-gasket-v2/render-report.json)
 - [estimated-reverse](exhaust-header-gasket-v2/estimated-reverse.png) · [preuve](exhaust-header-gasket-v2/render-report.json)
 - [annular-raised-region-detail](exhaust-header-gasket-v2/annular-raised-region-detail.png) · [preuve](exhaust-header-gasket-v2/render-report.json)
+
+</details>
+
+
+<a id="moto-front-footrest-right-001"></a>
+
+### Repose-pied avant droit — support métal PF113001 lié isolé
+
+`MOTO-FRONT-FOOTREST-RIGHT-001` · révision `front-footrest-right-v1` · **candidat non reçu**
+
+![Repose-pied avant droit — support métal PF113001 lié isolé — front-footrest-right-v1](front-footrest-right-v1/outer-quarter.png)
+
+[Image entière](front-footrest-right-v1/outer-quarter.png) · [Preuve du rendu](front-footrest-right-v1/render-report.json) · vue `outer-quarter`
+
+Source SHA-256 : `4a8c04f4abe7855918aa3a6a981a82a3e6d35c1ae86533065acad84e2fb0a8d1`  
+PNG SHA-256 : `f4b37f935f62b72dd6b1e4f4d0f318a22b7b0e980e89221361f46f6fd0b28324`
+
+[Blender](../../assets-src/moto-components/front-footrest-right/front-footrest-right-v1.blend) · [GLB](../../assets-src/moto-components/front-footrest-right/front-footrest-right-inspection.glb) · [README source](../../assets-src/moto-components/front-footrest-right/README.md) · [Revue et limites](front-footrest-right-v1/README.md) · [Fiche](../workflow/records/moto-front-footrest-right-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [opposite-side](front-footrest-right-v1/opposite-side.png) · [preuve](front-footrest-right-v1/render-report.json)
+- [tube-saddle-face](front-footrest-right-v1/tube-saddle-face.png) · [preuve](front-footrest-right-v1/render-report.json)
+- [middle-ear-hole](front-footrest-right-v1/middle-ear-hole.png) · [preuve](front-footrest-right-v1/render-report.json)
+- [tube-open-rim](front-footrest-right-v1/tube-open-rim.png) · [preuve](front-footrest-right-v1/render-report.json)
+- [base-weld-and-holes](front-footrest-right-v1/base-weld-and-holes.png) · [preuve](front-footrest-right-v1/render-report.json)
+- [grain-raking-control](front-footrest-right-v1/grain-raking-control.png) · [preuve](front-footrest-right-v1/render-report.json)
 
 </details>
 

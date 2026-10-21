@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "revision": "indicator-front-left-stalk-study-v1",
+  "units": "m, authored bounded proposal, not manufacturer part dimensions",
+  "frame": "Isolated unit; local+X from mount toward left head, +Yrear,+Zup, installationnull",
+  "root_flare": {
+    "length_m": 0.003,
+    "start_radius_m": 0.0108,
+    "end_radius_m": 0.013,
+    "quarter_segments": 24
+  },
+  "main_body": {
+    "start_m": 0.003,
+    "end_m": 0.032,
+    "radius_start_m": 0.013,
+    "radius_end_m": 0.0127,
+    "samples": 32
+  },
+  "shoulder": {
+    "start_m": 0.032,
+    "end_m": 0.041,
+    "end_radius_m": 0.0095,
+    "samples": 64
+  },
+  "neck": {
+    "start_m": 0.041,
+    "end_m": 0.058,
+    "radius_m": 0.0095,
+    "axial_sample_m": 0.0001
+  },
+  "grooves": [
+    {
+      "center_m": 0.0445,
+      "half_width_m": 0.0015,
+      "flat_half_width_m": 0.00045,
+      "depth_m": 0.0012
+    },
+    {
+      "center_m": 0.049,
+      "half_width_m": 0.0015,
+      "flat_half_width_m": 0.00045,
+      "depth_m": 0.0013
+    },
+    {
+      "center_m": 0.0535,
+      "half_width_m": 0.0015,
+      "flat_half_width_m": 0.00045,
+      "depth_m": 0.0012
+    }
+  ],
+  "head_stub": {
+    "start_m": 0.058,
+    "end_m": 0.064,
+    "end_radius_m": 0.0106,
+    "samples": 48
+  },
+  "radial_segments": 192,
+  "derivative_epsilon_m": 5e-07,
+  "authored_bounds": {
+    "overall_length_m": [
+      0.052,
+      0.08
+    ],
+    "maximum_outer_diameter_m": [
+      0.022,
+      0.032
+    ],
+    "meaning": "Working design envelope for uncalibrated related photos; not confidence interval, OEM tolerance or measured dimension"
+  },
+  "covered_end_faces": "Excluded: external skin has two intentional cut/interface boundaries, no internal peg/bore or exact mount face inferred",
+  "material_phase": "Neutralgray study only, compound polymer/hardness unconfirmed"
+}

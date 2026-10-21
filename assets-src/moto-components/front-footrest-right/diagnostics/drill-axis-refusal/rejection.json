@@ -1,0 +1,4 @@
+{
+  "reason": "Gray visual check revealed middle circular eye as rectangular vertical cut; cutters were primitive cylinder localZ while Euler Zrotation reset the prior axisX orientation. Same issue on saddle circles. Numeric centre rays alone passed because inside wrongly oriented strip is empty.",
+  "correction": "Construct middle/saddle cylinders directly axis=(0,1,0), do not overwrite Euler. Add positive actual annular witness rays outside required circular holes and opening ring shape checks. Preserve tube intact behind saddle."
+}

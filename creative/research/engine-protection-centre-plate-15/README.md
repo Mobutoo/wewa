@@ -1,0 +1,3 @@
+# Platine centrale de l’arceau — source isolée
+
+Deux ouvertures et face centrale sont observables sur [Crosland PF231201](https://www.croslandrepuestos.pe/protector-de-piernas-pf231201/p), photo174419 ; le dessin [BM125X](https://www.bajaj.club/catalog_file/BOXER-BM-125-X.pdf) feuille55/planche44 sépare crochet/entretoise et écrous. Photos réellement ouvertes avant cette forme, empreintes et URLs complètes dans ../crash-guard-15-v1/report.json. Aucune dimension de trou déduite de M6 comme norme certaine. Le retour supérieur et le raccord de soudure sont partiellement cachés : profil de tôle constant estimé, pas pièce exactRDC reçue.

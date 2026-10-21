@@ -1,0 +1,11 @@
+import fs from'node:fs/promises';import{createHash}from'node:crypto';import{NodeIO}from'@gltf-transform/core';
+const H='assets-src/moto-components/front-footrest-right/',O='creative/reviews/front-footrest-right-v1/',sha=b=>createHash('sha256').update(b).digest('hex'),old=await fs.readFile(H+'front-footrest-right-v1-geometry.glb'),bytes=await fs.readFile(H+'front-footrest-right-inspection.glb'),io=new NodeIO(),a=(await io.readBinary(old)).getRoot(),b=(await io.readBinary(bytes)).getRoot(),ap=a.listMeshes()[0].listPrimitives()[0],bp=b.listMeshes()[0].listPrimitives()[0],attributes=[];
+const buffer=a=>Buffer.from(a.buffer,a.byteOffset,a.byteLength),ai=ap.getIndices(),bi=bp.getIndices();if(ai.getCount()!==bi.getCount())throw Error('Triangle corner count changed');
+for(const key of ['POSITION','NORMAL','TEXCOORD_0']){
+ const x=ap.getAttribute(key),y=bp.getAttribute(key),xx=buffer(x.getArray()),yy=buffer(y.getArray()),xs=x.getElementSize(),xe=new Float32Array(ai.getCount()*xs),ye=new Float32Array(bi.getCount()*xs);
+ for(let i=0;i<ai.getCount();i++){let u=[],v=[];x.getElement(ai.getScalar(i),u);y.getElement(bi.getScalar(i),v);xe.set(u,i*xs);ye.set(v,i*xs);}
+ if(!buffer(xe).equals(buffer(ye)))throw Error('Expanded actual native triangle attribute changed '+key);
+ attributes.push({attribute:key,raw_accessor_bit_identical:xx.equals(yy),old_count:x.getCount(),new_count:y.getCount(),expanded_triangle_corners_bit_identical:true,expanded_count:ai.getCount(),expanded_sha256:sha(buffer(xe))});
+}
+for(const n of a.listNodes()){const m=b.listNodes().find(q=>q.getName()===n.getName());if(!m||JSON.stringify(n.getWorldMatrix())!==JSON.stringify(m.getWorldMatrix()))throw Error('World matrix changed '+n.getName());}
+const r={source_sha256:JSON.parse(await fs.readFile(H+'build-report.json','utf8')).source_sha256,export_sha256:sha(bytes),geometry_export_sha256:sha(old),attributes,raw_indices_bit_identical:buffer(ai.getArray()).equals(buffer(bi.getArray())),source_world_matrices_bit_identical:true,tangent_attribute_repaired:false,scope:'Actual native expanded triangle POSITION/NORMAL/UV and world matrices protected. Native tangent generation can split/reindex vertices; raw equality is reported independently, never pretended.',art_accepted:false};await fs.writeFile(O+'protected-export-invariants.json',JSON.stringify(r,null,2)+'\n');console.log(r);
