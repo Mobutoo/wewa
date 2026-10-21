@@ -51,3 +51,9 @@ Les [dépendances courantes](../research/motorcycle-source-dependencies-publicat
 La fabrication continue sur le pneu, le carénage de phare et le capuchon. Après la coque de phare, la chaîne C passe au réservoir WEWA puis à la selle avant de reprendre les autres unités d'éclairage et les amortisseurs. Admission, échappement, commandes basses et bras oscillant disposent de recherches complémentaires ; leurs dossiers ne sont pas des modèles supplémentaires.
 
 Le jeu public reste inchangé, sans conducteur ajouté. Les contrôles exacts du commit source, GitHub Actions et la relecture Ewutelo/Directus seront reliés après publication. Les vérifications techniques ne valent ni réception artistique, ni qualification physique sur iPhone.
+
+## Publication vérifiée
+
+Source immuable : [`1f525090`](https://github.com/Mobutoo/wewa/tree/1f525090cd0dbe9a795696a54c30ae9b0b5fd812). Son arbre `cb65a0ea8ec474975a344b0724efae8e7e9ee9ed` correspond exactement à celui contrôlé : 2 105 JSON,186 manifestes,4 641 empreintes de fichiers,36 empreintes PNG de checkpoints,3 265 liens de revue et65 entrées du catalogue, sans erreur. [GitHub Actions](https://github.com/Mobutoo/wewa/actions/runs/39549402837) a réussi sur ce commit exact, y compris l’étape de vérification des preuves de fabrication.
+
+Ewutelo/Directus : PRD enregistré puis relu en révision34, égalité du contenu complet vérifiée et45 exigences préservées. Le [rapport de source09](../../WEWA_Developpement_Web/validation/motorcycle18-source09-integrity.json), ce pied de revue et les métadonnées de synchronisation sont postérieurs à l’arbre source revendiqué. Directus reçoit le suivi structuré ; aucun téléversement binaire n’est déclaré. Les travaux locaux suivants restent distincts des48 types de ce point.
