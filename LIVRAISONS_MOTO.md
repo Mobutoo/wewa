@@ -28,6 +28,8 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P11** : [plaque fictive WEWA — revue technique G0 à G4](creative/reviews/license-plate-wewa-v1/DESIGN_REVIEW_V1.md). Dessin original contrôlé ; montage G5 et réception utilisateur ouverts.
+- **P02** : [différence de variante du porte-bagages](creative/research/rear-rack-variant-reconciliation-v1/G1-contradiction.json), appuyée par les [nouvelles références attribuées](creative/research/exterior-completion-next-v1/source-register.json).
 - **P13** : [seat-damper-pedestal-v2 — sources, rendus et contrôles](creative/reviews/seat-damper-pedestal-v2/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **P17** : [MOTO-CENTRE-STAND-MAIN-FRAME-001 — bounded exterior candidate — sources et images](creative/reviews/centre-stand-main-frame-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P18** : [MOTO-CRANKCASE-LH-OUTPUT-PANEL-001 — bounded exterior candidate — sources et images](creative/reviews/crankcase-lh-output-panel-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.

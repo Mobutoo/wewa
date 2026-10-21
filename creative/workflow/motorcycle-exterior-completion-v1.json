@@ -79,7 +79,9 @@
       "scope": "Tubes, plateforme et attaches ; place disponible au-dessus du garde-boue et derrière la selle",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": "current-session",
-      "blockers": [],
+      "blockers": [
+        "Crosland PF231405 rod-grid versus WAY-C plate-deck variants; current RDC deck choice unresolved"
+      ],
       "next_action": "Refine current-variant shape and highlight comparison, then separate deck, mounting tabs and flattened terminations; check installed interfaces.",
       "current_child": "MOTO-RACK-OUTER-RAIL-001",
       "research": "creative/research/rack-p02/G0-G2-plan-v1.json",
@@ -110,7 +112,8 @@
           "state": "candidate_delivered_not_accepted"
         }
       ],
-      "continuation_owner": "body-coordinator"
+      "continuation_owner": "body-coordinator",
+      "source_variant_update": "creative/research/rear-rack-variant-reconciliation-v1/G1-contradiction.json"
     },
     {
       "id": "P03",
@@ -417,7 +420,7 @@
       "owner": null,
       "blockers": [],
       "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
-      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "current_stage": "original_plate_design_G0_G4_reviewed_installed_mount_pending",
       "package_complete": false,
       "continuation_owner": "body-coordinator",
       "continuation_children": [
@@ -427,7 +430,8 @@
           "review": "creative/reviews/license-plate-wewa-v1/README.md",
           "state": "candidate_delivered_not_accepted"
         }
-      ]
+      ],
+      "original_plate_design_review": "creative/reviews/license-plate-wewa-v1/design-contract-review-v1.json"
     },
     {
       "id": "P12",
@@ -733,6 +737,12 @@
           "package_complete": false
         },
         {
+          "path": "creative/reviews/carburettor-float-bowl-v1/delivery.json",
+          "revision": "carburettor-float-bowl-v1",
+          "milestone": "Usable isolated child candidate; package remains incomplete",
+          "package_complete": false
+        },
+        {
           "path": "creative/reviews/carburettor-lower-body-v1/delivery.json",
           "revision": "carburettor-lower-body-v1",
           "milestone": "Usable isolated child candidate; package remains incomplete",
@@ -828,6 +838,24 @@
           "revision": "front-completion-p21-carrier-v3",
           "milestone": "Corrected partial gray source frozen; native96 proofs rendering separately",
           "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p21-reverse-front10-v1/delivery.json",
+          "revision": "front-completion-p21-reverse-front10-v1",
+          "milestone": "Technical construction rejected before export",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p21-reverse-front10-v2/delivery.json",
+          "revision": "front-completion-p21-reverse-front10-v2",
+          "milestone": "Retained rejected diagnostic mesh only",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p21-reverse-front10-v3/delivery.json",
+          "revision": "front-completion-p21-reverse-front10-v3",
+          "milestone": "G3 reflection rework",
+          "package_complete": false
         }
       ],
       "current_stage": "worker_candidate_saved_with_coordination_evidence",
@@ -851,7 +879,7 @@
         "P21"
       ],
       "state": "active",
-      "detailed_work_started": false,
+      "detailed_work_started": true,
       "scope": "Alignement transmission ; motif reçu avant répétition ; respect des volumes du carter de chaîne",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
@@ -1325,7 +1353,7 @@
     "state": "ongoing_goal_not_final_handoff",
     "packages_complete": 0,
     "packages_started": 30,
-    "packages_with_geometry_or_source_work": 28,
+    "packages_with_geometry_or_source_work": 29,
     "packages_not_started": 0,
     "detailed_workers_authorized": 3,
     "current_package": "Multiple independent children; see current source work inventories",
@@ -1351,7 +1379,7 @@
     "goal": "Execute all30 packages continuously with regular GitHub saves; existing fidelity/receipt rules retained",
     "state": "running",
     "packages_assessed": 30,
-    "packages_with_geometry_or_source_work": 28,
+    "packages_with_geometry_or_source_work": 29,
     "packages_not_assessed": 0,
     "packages_complete": 0,
     "whole_motorcycle_art_accepted": false,

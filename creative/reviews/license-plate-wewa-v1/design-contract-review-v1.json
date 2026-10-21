@@ -1,0 +1,63 @@
+{
+  "revision": "license-plate-wewa-v1",
+  "scope": "Authored fictitious WEWA game plate design; proposed nominal dimensions, no OEM/legal/vehicle-fit assertion",
+  "reviewer": {
+    "name": "Codex",
+    "role": "technical"
+  },
+  "actually_read_native_views": [
+    "whole-front.png",
+    "whole-quarter.png",
+    "neutral-outdoor.png"
+  ],
+  "actually_read_runtime_views": [
+    "inspection-v3/engine-quarter.png"
+  ],
+  "source_view_dimension_matrix": [
+    {
+      "path": "assets-src/moto-components/license-plate-wewa/parameters-v1.json",
+      "sha256": "e1e47a8a8bb2439c9ce3866d0970c3b12daca0641fc3f6c559986684a34f5f61",
+      "property": "Original rounded plate, two holes and nominal dimensions"
+    },
+    {
+      "path": "assets-src/moto-components/license-plate-wewa/graphic-layout-v1.json",
+      "sha256": "5c2546c0407488f0a30f47f7d6647830e545be6a287bef57296b1985de1a16a6",
+      "property": "Original WEWA / 001 layout and licensed font provenance"
+    },
+    {
+      "path": "creative/reviews/license-plate-wewa-v1/geometry-check.json",
+      "sha256": "cc53ebec8d6371912a4dbf1842c65da6fe6180bad0b12bb4f4d76d3436f3b351",
+      "property": "Actual source bounds and hole topology"
+    },
+    {
+      "path": "creative/reviews/license-plate-wewa-v1/graphic-export-check.json",
+      "sha256": "5b2725be573fc5733d5bcb1273c92b7c89fe3bc01b100ae92bfd3febf6581d53",
+      "property": "Actual embedded front image, decoded pixel equality and front-only assignment"
+    }
+  ],
+  "actual_model_dimensions_m": [
+    0.18000000715255737,
+    0.10499999672174454,
+    0.001500000013038516
+  ],
+  "critical_gap_disposition": {
+    "authored_dimensions": "Fixed by the original game design and verified in source/export",
+    "original_graphic": "Legible under studio, neutral sky and readable Babylon camera; font attributed",
+    "installed_mount": "Open: vehicle placement, carrier connection and hardware require G5",
+    "mobile_budget": "Open G7",
+    "user_art": "Open G8"
+  },
+  "decision": {
+    "G0": "passed original identity",
+    "G1": "passed authored source/design matrix",
+    "G2": "passed model units and comparison protocol",
+    "G3": "passed technical comparison to authored shape",
+    "G4": "passed technical comparison to original clean graphic design",
+    "G5": "blocked installed interface",
+    "G6": "rework until predecessor/installed review",
+    "G7": "pending mobile/LOD",
+    "G8": "pending user"
+  },
+  "art_accepted": false,
+  "package_complete": false
+}
