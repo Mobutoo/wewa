@@ -1,0 +1,7 @@
+# P20 short flanged intake duct v1 — reference-limited study
+
+Only a bounded D04air-cleaner callout2 form study: short annular connector, large flange, two broad fold estimates, stepped neck and rolled open mouths. Exact physical section/count/currentRDC part branch are unresolved. This is not a photographed or fitted boot. D04duplicates a duct code between branches; D15differs, so no silent code/variant merge. Existing PF581402 sleeve/manifold/insulator/clamps are retained and not replaced. All dimensions and wall/collar section estimated; no unobserved installed S-hose path.
+
+Actual source/GLB181248triangles, one closed connected annular wall, no zero-area triangles, validator0errors/0warnings. Dense source unoptimized. Whole-piece camera preflight caught a cropped quarter view; rejected framing preserved, field enlarged without relaxing clipping or geometry. All corrected views test actual source vertices. Gray3views then preview/Babylon inspected before two native96 PNG/Float32 EXRs. Actual gray/material triangles/normals equal; candidate source reopened. Four real softwareWebGL captures, no hardware or art acceptance. Original proposed dark rubber PBR, no vendor pixels.
+
+Remaining P20: physical opposing/detail source, correct part branch and fold section; actual airbox/carb endpoint axes and clearances; clamps and other hoses; exhaust hanger/bush/hardware and installed exhaust continuity. Package not complete. Rework creates v2; frozen scripts and parameters are exact.
