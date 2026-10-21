@@ -1,0 +1,13 @@
+"""Float64 point/triangle interpolation on actual source cap, analytic straight-groove witness.
+Only explicit line probes on straight rails; no globalHausdorff/OEM tolerance claim.
+"""
+import bpy,numpy as np,json,sys,hashlib
+from pathlib import Path
+H=Path(__file__).resolve().parent;R=H.parents[3];O=R/'creative/reviews/swingarm-chain-slider-v1';sys.path.insert(0,str(H));from profile_shape import shape,normal2,front_field
+args=sys.argv[sys.argv.index('--')+1:]if'--'in sys.argv else[];src=Path(args[args.index('--source')+1])if'--source'in args else H/'swingarm-chain-slider-v1.blend';out=Path(args[args.index('--output')+1])if'--output'in args else O/'groove-sampling-check.json';P=json.loads((H/'parameters.json').read_text());bpy.ops.wm.open_mainfile(filepath=str(src));m=bpy.data.collections[P['collection']].objects[0].data;m.calc_loop_triangles();V=np.asarray([v.co[:]for v in m.vertices],np.float64);F=np.asarray([t.vertices[:]for t in m.loop_triangles],int);Q=V[F];keep=(Q[:,:,0].min(axis=1)>.0120)&(Q[:,:,1].max(axis=1)>.074)&(Q[:,:,1].min(axis=1)<.136);T=Q[keep];a,b,c=T[:,0,1:],T[:,1,1:],T[:,2,1:];u=b-a;v=c-a;den=u[:,0]*v[:,1]-u[:,1]*v[:,0];valid=abs(den)>1e-20;T=T[valid];a=a[valid];u=u[valid];v=v[valid];den=den[valid];loops=shape(P);caps=[p-P['edge_radius_m_estimated']*normal2(p)for p in loops];ys=np.linspace(.075,.135,121);rows=[]
+for z in [.0183,.0181,.0175,.0167]:
+ probes=np.column_stack([ys,np.full(len(ys),z)]);ref=P['axial_width_X_m_estimated']/2+front_field(probes,caps);actual=[]
+ for p in probes:
+  w=p-a;B=(w[:,0]*v[:,1]-w[:,1]*v[:,0])/den;C=(u[:,0]*w[:,1]-u[:,1]*w[:,0])/den;A=1-B-C;inside=(A>=-1e-10)&(B>=-1e-10)&(C>=-1e-10);assert inside.any(),p;xs=A[inside]*T[inside,0,0]+B[inside]*T[inside,1,0]+C[inside]*T[inside,2,0];actual.append(float(xs.max()))
+ actual=np.array(actual);rows.append({'Z_m':z,'probes':len(ys),'actual_X_peak_to_peak_m':float(np.ptp(actual)),'max_abs_surface_vs_analytic_m':float(abs(actual-ref).max()),'actual_X_m':actual.tolist(),'analytic_X_m':ref.tolist()})
+r={'source_sha256':hashlib.sha256(src.read_bytes()).hexdigest(),'profile_sha256':hashlib.sha256((H/'profile_shape.py').read_bytes()).hexdigest(),'method':'Float64 barycentric interpolation of evaluated stored source triangles against analytic authorfield at121points each on4straight rail lines,Y.075..135. NotBVH.','rows':rows,'scope':'Sampled straightauthorsegment only; not global mesh/OEMerror, no fitteddimensions or material masking.','art_accepted':False};out.write_text(json.dumps(r,indent=2)+'\n');print(json.dumps({'source_sha256':r['source_sha256'],'summary':[{k:v for k,v in q.items()if k not in ['actual_X_m','analytic_X_m']}for q in rows]}))

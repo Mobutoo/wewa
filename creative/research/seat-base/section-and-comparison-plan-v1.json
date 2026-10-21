@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-21T08:28:02.942278+00:00",
+  "revision": "seat-base-study-v1",
+  "piece": "Bare visible related seat base plate only, without molded ribs/supports/holes yet",
+  "frame": "Blender+Xleft,+Yrear,+Zup, existing bar-clamp guide; all seat relation authored estimate. No frozen seat/frame moved.",
+  "scale": {
+    "exact_external_cotes_mm": null,
+    "authored_exploration_ranges_m": {
+      "length": [
+        0.6,
+        0.75
+      ],
+      "full_width": [
+        0.25,
+        0.32
+      ],
+      "plate_thickness": [
+        0.0018,
+        0.004
+      ]
+    },
+    "ranges_are": "Design bounds for isolated inspection only, not uncertainty intervals or seller dimensions",
+    "nominal_candidate_thickness_m": 0.0025,
+    "edge_radius_m": 0.0006
+  },
+  "shape_method": [
+    "C2 periodic cubic B-spline outline from editable non-elliptical front/side/rear controls; initial main outline symmetry explicitly estimated, no unjustified asymmetric hidden mount.",
+    "Bare underside is a gently varying height field, controls separate from camera hypotheses. No unmeasured molded full pan, foam or ribs completed at this stage.",
+    "Inset cap boundary and interior sampling points form constrained2D Delaunay triangulation via Blender mathutils.geometry.delaunay_2d_cdt(output_type1), bounded by explicit face. Not a large triangulated n-gon fan.",
+    "CDT documentation warns vertices may merge/move; retain orig mappings and report actual boundary displacement. Never infer measurement precision from epsilon.",
+    "Finite top/bottom material wall and explicit rounded edge profile, intended small radius before later rib junctions; no global bevel on CSG triangulation."
+  ],
+  "comparison": {
+    "reference": "Single uncalibrated related underside photo, not orthographic blueprint",
+    "camera": "Store independent illustrative overhead/oblique hypotheses. No pose/cote fit certified from single photograph.",
+    "current_RDC": "Exterior profiles do not reveal base; preserve identity/mount gaps, do not label related underside exactcurrent.",
+    "required": "Whole underside/top scope gray, reflective whole and edge macro with actual evaluated-vertex camera preflight. Actual area/UV/closed-wall checks before adding details."
+  },
+  "next_observed_features": "Six light circular regions/possible plate apertures, raised ledges, spine/rib groups, separate seven support candidates/projections/cover return and staples. Each requires its own gray review; bare plate not final full base.",
+  "art_accepted": false
+}

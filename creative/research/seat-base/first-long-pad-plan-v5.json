@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-21T08:54:50.886494+00:00",
+  "revision": "seat-base-study-v5",
+  "scope": "ONE left-in-photo long raised molded pad only, retain all six candidate holes and broad rear ledge",
+  "native_source_sha256": "cbf73ddab044bcf0c5ef1bbd23230ef9ab63fa281243bf4076c3c08e7b01fbbf",
+  "visible_native_region": {
+    "approx_polygon_px": [
+      [
+        391,
+        644
+      ],
+      [
+        451,
+        649
+      ],
+      [
+        431,
+        981
+      ],
+      [
+        364,
+        982
+      ]
+    ],
+    "uncertainty_px": 15,
+    "what_observed": "Long raised flat strip with rounded closed lower end, rounded shoulders at upper end; adjacent perimeter/rib runs are separate later steps. Dark bordering band may include shade; no millimetric fillet inferred."
+  },
+  "parameters": {
+    "id": "image-L-long-molded-pad",
+    "center_XY_m": [
+      -0.085,
+      0.75
+    ],
+    "outer_half_extents_m": [
+      0.017,
+      0.092
+    ],
+    "footprint_corner_radius_m": 0.007,
+    "transition_width_m": 0.004,
+    "rise_outward_m": 0.006,
+    "transition_layers": 20,
+    "corner_segments": 24,
+    "straight_segment_step_m": 0.003,
+    "interior_grid_spacing_m": 0.003,
+    "derivative_epsilon_m": 2e-06,
+    "status": "Authored original estimate; imageL notcertifiedriderside, footprint/depth/draft notmeasured"
+  },
+  "method": "Same explicit sampled C2 height-field construction as rear ledge, own independent rounded-rectangle controls. Footprint/root/height estimated, finite plate material retained and upper surface follows inspection-offset assumption; not OEM top thickness. Onepad first before second observedpad placement. No generic repeated support blocks.",
+  "comparison": [
+    "Whole gray",
+    "Diffuse close rounded end and side transition",
+    "Same camera lowroughness reflection"
+  ],
+  "protected": [
+    "Outer outline and height master",
+    "Six aperture boundaries",
+    "Rear ledge4 authored parameters"
+  ],
+  "unknown": [
+    "Actual molded dimensions/draft/foam-side",
+    "CurrentRDC identity",
+    "Camera metric calibration",
+    "Opposite-side physicalidentity/pose"
+  ],
+  "art_accepted": false
+}

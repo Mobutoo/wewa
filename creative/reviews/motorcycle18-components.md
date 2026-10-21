@@ -1,6 +1,6 @@
 # Viva Wewa — revue des composants moto
 
-**65 composants uniques enregistrés · 65 vues Blender prouvées · aucune réception artistique.**
+**67 composants uniques enregistrés · 67 vues Blender prouvées · aucune réception artistique.**
 
 Une seule vue originale par composant, à la révision exacte de sa fiche. Les anciennes révisions et les sources seulement cataloguées ou gelées sans enregistrement central ne sont pas ajoutées. Ces rendus montrent des candidats isolés, pas le jeu ni une moto terminée.
 
@@ -28,9 +28,9 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 | [12 · Phare et clignotants avant](#groupe-12) | 3 | Candidats partiels en revue ; groupe non terminé |
 | [13 · Fourche et direction](#groupe-13) | 6 | Candidats partiels en revue ; groupe non terminé |
 | [14 · Ensemble avant et compatibilité des candidats existants](#groupe-14) | Voir les préexistants ; aucun nouveau composant compté | Candidats antérieurs existants à recontrôler ; compatibilité restante |
-| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 9 | Candidats partiels en revue ; groupe non terminé |
+| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 10 | Candidats partiels en revue ; groupe non terminé |
 | [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 4 | Candidats partiels en revue ; groupe non terminé |
-| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 20 | Candidats partiels en revue ; groupe non terminé |
+| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 21 | Candidats partiels en revue ; groupe non terminé |
 | [18 · Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière](#groupe-18) | 2 | Candidats partiels en revue ; groupe non terminé |
 
 <a id="groupe-1"></a>
@@ -945,6 +945,33 @@ PNG SHA-256 : `e1668003611ff91daca7132829d37c92048b1b45a2d318f6997e035299173403`
 
 </details>
 
+
+<a id="moto-swingarm-chain-slider-001"></a>
+
+### Patin de chaîne du bras — surface partielle
+
+`MOTO-SWINGARM-CHAIN-SLIDER-001` · révision `swingarm-chain-slider-v1` · **candidat non reçu**
+
+![Patin de chaîne du bras — surface partielle — swingarm-chain-slider-v1](swingarm-chain-slider-v1/quarter.png)
+
+[Image entière](swingarm-chain-slider-v1/quarter.png) · [Preuve du rendu](swingarm-chain-slider-v1/render-report.json) · vue `quarter`
+
+Source SHA-256 : `7e8f460312867506ee59bca1fb362ceb07e98b8a0f87ec93d4c80604f5d94034`  
+PNG SHA-256 : `aefe041fd7979f153946ad18c0f25ab0270dbdc1537771dfd062dda64f79f5cc`
+
+[Blender](../../assets-src/moto-components/swingarm/chain-slider/swingarm-chain-slider-v1.blend) · [GLB](../../assets-src/moto-components/swingarm/chain-slider/swingarm-chain-slider-inspection.glb) · [README source](../../assets-src/moto-components/swingarm/chain-slider/README.md) · [Revue et limites](swingarm-chain-slider-v1/README.md) · [Fiche](../workflow/records/moto-swingarm-chain-slider-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [face](swingarm-chain-slider-v1/face.png) · [preuve](swingarm-chain-slider-v1/render-report.json)
+- [reverse-quarter](swingarm-chain-slider-v1/reverse-quarter.png) · [preuve](swingarm-chain-slider-v1/render-report.json)
+- [ring-detail](swingarm-chain-slider-v1/ring-detail.png) · [preuve](swingarm-chain-slider-v1/render-report.json)
+- [groove-detail](swingarm-chain-slider-v1/groove-detail.png) · [preuve](swingarm-chain-slider-v1/render-report.json)
+
+</details>
+
 Périmètre prévu : garde-boue avant; cadre: tubes et jonctions visibles; bras oscillant et pivots visibles.
 
 <a id="groupe-16"></a>
@@ -1551,30 +1578,56 @@ PNG SHA-256 : `e8037eaa27af74d53b36b653adf7d52d818f63eced4dfa1e94fe2361f307da10`
 </details>
 
 
-<a id="moto-exhaust-header-gasket-001"></a>
+<a id="moto-front-footrest-left-001"></a>
 
-### Joint de sortie d’échappement — isolé, non monté
+### Support de repose-pied avant gauche — tube et platine soudés
 
-`MOTO-EXHAUST-HEADER-GASKET-001` · révision `exhaust-header-gasket-v1` · **candidat à reprendre, non reçu**
+`MOTO-FRONT-FOOTREST-LEFT-001` · révision `front-footrest-left-v1` · **candidat non reçu**
 
-![Joint de sortie d’échappement — isolé, non monté — exhaust-header-gasket-v1](exhaust-header-gasket-v1/front-quarter.png)
+![Support de repose-pied avant gauche — tube et platine soudés — front-footrest-left-v1](front-footrest-left-v1/outer-quarter.png)
 
-[Image entière](exhaust-header-gasket-v1/front-quarter.png) · [Preuve du rendu](exhaust-header-gasket-v1/render-report.json) · vue `front-quarter`
+[Image entière](front-footrest-left-v1/outer-quarter.png) · [Preuve du rendu](front-footrest-left-v1/render-report.json) · vue `outer-quarter`
 
-Source SHA-256 : `754d172acafd51cf22d7a085626bf35023e567e9c71d6358266dfc9764bd0672`  
-PNG SHA-256 : `cb711e5bbe4adea9d1eacc822627eed0c3b5d1481191e0d749f3996d33cea2f4`
+Source SHA-256 : `4738deb0a7d108478349789f1e8169dc8e013c2900536ef5a0b9928d12cbc4f5`  
+PNG SHA-256 : `6f4bf04be425553896a41279e8503b73bbd94fc197dfdca1473c8e302eeb792a`
 
-[Blender](../../assets-src/moto-components/exhaust-header-gasket/exhaust-header-gasket-v1.blend) · [GLB](../../assets-src/moto-components/exhaust-header-gasket/exhaust-header-gasket-inspection.glb) · [README source](../../assets-src/moto-components/exhaust-header-gasket/README.md) · [Revue et limites](exhaust-header-gasket-v1/README.md) · [Fiche](../workflow/records/moto-exhaust-header-gasket-001.json)
+[Blender](../../assets-src/moto-components/front-footrest-left/front-footrest-left-v1.blend) · [GLB](../../assets-src/moto-components/front-footrest-left/front-footrest-left-inspection.glb) · [README source](../../assets-src/moto-components/front-footrest-left/README.md) · [Revue et limites](front-footrest-left-v1/README.md) · [Fiche](../workflow/records/moto-front-footrest-left-001.json)
 
-À reprendre sur cette matière v1 : un quadrillage régulier apparaît sur le joint. Dans les trois vrais contrôles à caméra et éclairage identiques, il disparaît quand seule la carte normale est débranchée et demeure quand seule la rugosité devient constante. La carte normale est la cause dominante observée ; le contrôle sans normale ne constitue pas une matière finale reçue.
-[Diagnostic et trois rendus réels](../research/exhaust-header-gasket/material-diagnostic-v1/report.json) · [Lecture indépendante et empreintes](../research/exhaust-header-gasket/material-diagnostic-v1/coordinator-review.json)
 
 <details>
 <summary>Autres vues Blender prouvées de cette révision</summary>
 
-- [front-near-normal](exhaust-header-gasket-v1/front-near-normal.png) · [preuve](exhaust-header-gasket-v1/render-report.json)
-- [estimated-reverse](exhaust-header-gasket-v1/estimated-reverse.png) · [preuve](exhaust-header-gasket-v1/render-report.json)
-- [annular-raised-region-detail](exhaust-header-gasket-v1/annular-raised-region-detail.png) · [preuve](exhaust-header-gasket-v1/render-report.json)
+- [plate-reverse](front-footrest-left-v1/plate-reverse.png) · [preuve](front-footrest-left-v1/render-report.json)
+- [tube-tabs-side](front-footrest-left-v1/tube-tabs-side.png) · [preuve](front-footrest-left-v1/render-report.json)
+- [formed-base-weld-detail](front-footrest-left-v1/formed-base-weld-detail.png) · [preuve](front-footrest-left-v1/render-report.json)
+- [tube-open-rim-detail](front-footrest-left-v1/tube-open-rim-detail.png) · [preuve](front-footrest-left-v1/render-report.json)
+- [grain-raking-control](front-footrest-left-v1/grain-raking-control.png) · [preuve](front-footrest-left-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-exhaust-header-gasket-001"></a>
+
+### Joint de sortie d’échappement — matière 2, non monté
+
+`MOTO-EXHAUST-HEADER-GASKET-001` · révision `exhaust-header-gasket-v2` · **candidat non reçu**
+
+![Joint de sortie d’échappement — matière 2, non monté — exhaust-header-gasket-v2](exhaust-header-gasket-v2/front-quarter.png)
+
+[Image entière](exhaust-header-gasket-v2/front-quarter.png) · [Preuve du rendu](exhaust-header-gasket-v2/render-report.json) · vue `front-quarter`
+
+Source SHA-256 : `a44bfdf8ac378d861416405b5867ad8208133d78fcff5fd39b30e07b7bb8d686`  
+PNG SHA-256 : `dcd2254ea929d52c55f1b25ddfb82287dbe09b5fec2999e95814be58fbfa54b0`
+
+[Blender](../../assets-src/moto-components/exhaust-header-gasket/exhaust-header-gasket-v2.blend) · [GLB](../../assets-src/moto-components/exhaust-header-gasket/exhaust-header-gasket-v2-inspection.glb) · [README source](../../assets-src/moto-components/exhaust-header-gasket/README_v2.md) · [Revue et limites](exhaust-header-gasket-v2/README.md) · [Fiche](../workflow/records/moto-exhaust-header-gasket-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [front-near-normal](exhaust-header-gasket-v2/front-near-normal.png) · [preuve](exhaust-header-gasket-v2/render-report.json)
+- [estimated-reverse](exhaust-header-gasket-v2/estimated-reverse.png) · [preuve](exhaust-header-gasket-v2/render-report.json)
+- [annular-raised-region-detail](exhaust-header-gasket-v2/annular-raised-region-detail.png) · [preuve](exhaust-header-gasket-v2/render-report.json)
 
 </details>
 

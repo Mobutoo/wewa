@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-21T09:09:13.501856+00:00",
+  "scope": "Unfrozen rib study7 construction correction, no historical source1..6 changed",
+  "rejected": "Power8 junction plus intersecting dense constraint contours under-resolved local slopes. Attempted unconstrained adaptive mid-edge subdivision introduced actual zero-area/nearcollinear CDT cases and was stopped, never rendered or accepted. Old sourceb718 remains diagnostic only.",
+  "new_method": {
+    "method": "Additive rib depth tapered to zero over existing pad rise by cubic power of remaining normalized rise. No power8 compound or new broad-body deformation.",
+    "mask_power": 3,
+    "rib_constraint_clip_margin_m": 0.0001,
+    "junction_grid_step_m": 0.0001
+  },
+  "sampling": "Clip only rib contour constraints before pad footprints, keep pad constraints fixed. Free100\u00b5m XY sampling across estimated junctions; sample selection excludes points within1\u00b5m of existing contours. No globaloutline movement, no outputnormal/tangent repair or threshold relaxation.",
+  "cap_preflight": {
+    "target_geometric_corner_normal_dot": 0.96,
+    "max_iterations": 0,
+    "minimum_new_edge_length_m": 2e-06,
+    "purpose": "Source sampling refinement of actual local C2 compound surface, not output normal repair, physical tolerance or metrology"
+  },
+  "not_metrology": true,
+  "art_accepted": false
+}

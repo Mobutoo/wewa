@@ -1,0 +1,548 @@
+{
+  "schema": "wewa.source16.preliminary-dependency-audit.v1",
+  "created_at_UTC": "2026-10-21T09:35:52.568154+00:00",
+  "base_commit": "ff197f3084c92058bd4b2638813049ea497b107b",
+  "status": "STATIC_ONLY_NO_STAGE_NO_FINAL_CUTOFF",
+  "scope": "Three named source/study units only. Slider and left metal footrest candidates have final96 views active at audit start. Seatbase7 is partialgrayG3 only, NOT a new registered production identity; no material/final96/generic rootproductionC inferred. Gasket2 excluded until own future gel.",
+  "source_manifest_roots": {
+    "slider1": {
+      "path": "creative/reviews/swingarm-chain-slider-v1/source-freeze.json",
+      "sha256": "5363f95128b38f48ca99af4488c275322b54cfd59b01b746d883254d012ac86f",
+      "bytes": 8704,
+      "in_immutable_base": false
+    },
+    "seatbase7": {
+      "path": "creative/reviews/seat-base-study-v7/study-freeze-manifest.json",
+      "sha256": "a034ff86eac75158f59e0aed5adbe073cf28525bf774565d251b063720a07154",
+      "bytes": 5506,
+      "in_immutable_base": false
+    },
+    "footrestLH1": {
+      "path": "assets-src/moto-components/front-footrest-left/preflight-manifest.json",
+      "sha256": "e541be0201d5cc5af01afd19516ddecc85bf9e5c7d92a4af273a948a630c0e5e",
+      "bytes": 15852,
+      "in_immutable_base": false
+    }
+  },
+  "source_manifest_counts": {
+    "slider1": 40,
+    "footrestLH1": 70,
+    "seatbase7": 26
+  },
+  "SHA_byte_pairs_checked": 136,
+  "source_freeze_errors": 0,
+  "source_closure_table": {
+    "path": "creative/research/motorcycle-source-dependencies-publication16-v1/source-closure-v1.json",
+    "sha256": "9c50c027524ae0475211706240c6af681f0cc7457e938853d3ee411704a28b41",
+    "bytes": 130722,
+    "in_immutable_base": false
+  },
+  "stable_recipe_inputs": {
+    "path": "creative/research/motorcycle-source-dependencies-publication16-v1/stable-recipe-inputs-v1.json",
+    "sha256": "bfda0ba35d7062e20092df0b84e3d58094d1a77dda42a20c19514da12ef23f6c",
+    "bytes": 31329,
+    "in_immutable_base": false
+  },
+  "named_public_input_count": 74,
+  "public_inputs_outside_source_manifests": [
+    {
+      "path": "creative/reviews/swingarm-chain-slider-v1/gray-review.json",
+      "sha256": "7c094a0d9d761784b0fddd90af45732b6d053489061dc220bdef5e70490380aa",
+      "bytes": 2072,
+      "in_immutable_base": false,
+      "uses": [
+        "slider1_material_restart"
+      ]
+    },
+    {
+      "path": "creative/reviews/swingarm-chain-slider-v1/source-geometry-check.json",
+      "sha256": "59f156484d2958497a9675c2f7555c141d61f1970aae13c5d27efba2b021cdb3",
+      "bytes": 957,
+      "in_immutable_base": false,
+      "uses": [
+        "slider1_current_render"
+      ]
+    },
+    {
+      "path": "creative/reviews/swingarm-chain-slider-v1/geometry-check.json",
+      "sha256": "fda5387e9db45ede2db6fee6403d7ffaf4fa27c071225d282c439f07371c4ac2",
+      "bytes": 1865,
+      "in_immutable_base": false,
+      "uses": [
+        "slider1_current_render"
+      ]
+    },
+    {
+      "path": "tools/blender_component_camera_preflight.py",
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a",
+      "bytes": 3235,
+      "in_immutable_base": true,
+      "uses": [
+        "slider1_current_render",
+        "seatbase7_gray_render"
+      ]
+    },
+    {
+      "path": "creative/reviews/swingarm-chain-slider-v1/source-interface-check.json",
+      "sha256": "afdfe115da709a0c60b40fd84ec26dd49e9055c59145f613cbfeabd112bfe191",
+      "bytes": 1267,
+      "in_immutable_base": false,
+      "uses": [
+        "slider1_proof_closure_prechecks"
+      ]
+    },
+    {
+      "path": "creative/reviews/swingarm-chain-slider-v1/groove-sampling-check.json",
+      "sha256": "501c4e9d94c76a5850dcee0a7165b956561bf1328d97cd6ed54737ab750e5260",
+      "bytes": 25359,
+      "in_immutable_base": false,
+      "uses": [
+        "slider1_proof_closure_prechecks"
+      ]
+    },
+    {
+      "path": "creative/reviews/swingarm-chain-slider-v1/material-preview-review.json",
+      "sha256": "fc78263fce69e7fde32c6f023e541c990ab30fad5adab74457396f456376dbd6",
+      "bytes": 1703,
+      "in_immutable_base": false,
+      "uses": [
+        "slider1_proof_closure_prechecks"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/seat-base/seat-base-study-v1.glb",
+      "sha256": "8418d1acde642597104cf191bb688185a985ae3ca2a19fd0bdfceb7306411cdf",
+      "bytes": 251724,
+      "in_immutable_base": false,
+      "uses": [
+        "seatbase7_comparison_baselines"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/seat-base/seat-base-study-v3.glb",
+      "sha256": "99186625385d167296f30932a527d7a60440fc39afd7465853cd35bddb53b9ac",
+      "bytes": 543596,
+      "in_immutable_base": false,
+      "uses": [
+        "seatbase7_comparison_baselines"
+      ]
+    },
+    {
+      "path": "creative/reviews/seat-base-study-v1/build-report.json",
+      "sha256": "cb1ad470aaa9649f25833a2b8ea0aaf629481c5ceee73ab0ec30887758a9af57",
+      "bytes": 1172,
+      "in_immutable_base": false,
+      "uses": [
+        "seatbase7_comparison_baselines",
+        "seatbase7_regenerate_source_region_witnesses"
+      ]
+    },
+    {
+      "path": "creative/reviews/seat-base-study-v3/build-report.json",
+      "sha256": "4a40d001bcc4f0598b8b952275da1af17b56b1c8ca5a835037dbffebaa36ca51",
+      "bytes": 1302,
+      "in_immutable_base": false,
+      "uses": [
+        "seatbase7_comparison_baselines",
+        "seatbase7_regenerate_source_region_witnesses"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/seat-base/extract_outer_rim_v1.py",
+      "sha256": "9ad8bc07dbb1f644b8d4adbd7db3dbc4b91b3d9956c6be41aeca60ea9b9871ed",
+      "bytes": 1072,
+      "in_immutable_base": false,
+      "uses": [
+        "seatbase7_regenerate_source_region_witnesses"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/seat-base/extract_apertures_v3.py",
+      "sha256": "7b1c8b9b8613e0d9ab7e3e9b366054dc14440c48e201fe24b2469ac80ec344e9",
+      "bytes": 1098,
+      "in_immutable_base": false,
+      "uses": [
+        "seatbase7_regenerate_source_region_witnesses"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/seat-base/seat-base-study-v1.blend",
+      "sha256": "d109f5792570d2556dee8e6eafd372b5831697143bdd397da4c4928d68d5a60c",
+      "bytes": 1398376,
+      "in_immutable_base": false,
+      "uses": [
+        "seatbase7_regenerate_source_region_witnesses"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/seat-base/seat-base-study-v3.blend",
+      "sha256": "7511e40e1516ba9e60d04d09d8d821601d7494f67189200b532e7cd5dce0ac72",
+      "bytes": 2452324,
+      "in_immutable_base": false,
+      "uses": [
+        "seatbase7_regenerate_source_region_witnesses"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/seat-base/build_study_v1.py",
+      "sha256": "32ca93904c276592f189959a3d5581ef99d424cd997d81c8bb748da4ff430f21",
+      "bytes": 9514,
+      "in_immutable_base": false,
+      "uses": [
+        "optional_reconstruct_historic_baseline1_and3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/seat-base/parameters-study-v1.json",
+      "sha256": "099ee3a3fc99227438b7fcafe2d854225579c707fcdf5ce00d28d35957ab6eba",
+      "bytes": 1331,
+      "in_immutable_base": false,
+      "uses": [
+        "optional_reconstruct_historic_baseline1_and3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/seat-base/build_study_v3.py",
+      "sha256": "3ab353bd03c5cf308b641e0ac5e7a5e2cff22b075f4cb361171e4ef1f572393a",
+      "bytes": 11188,
+      "in_immutable_base": false,
+      "uses": [
+        "optional_reconstruct_historic_baseline1_and3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/seat-base/parameters-study-v3.json",
+      "sha256": "6052b4d99ce6cea8a65d05c8a77f27654942d38fa578041d3c1cca1c4b644f40",
+      "bytes": 3359,
+      "in_immutable_base": false,
+      "uses": [
+        "optional_reconstruct_historic_baseline1_and3"
+      ]
+    },
+    {
+      "path": "creative/research/seat-base/section-and-comparison-plan-v1.json",
+      "sha256": "45be7c3dd79b84dd47dd453a31e01887c25c7cf012ce3bfc863fa429af889004",
+      "bytes": 2571,
+      "in_immutable_base": false,
+      "uses": [
+        "optional_reconstruct_historic_baseline1_and3"
+      ]
+    },
+    {
+      "path": "creative/research/seat-base/six-apertures-plan-v3.json",
+      "sha256": "004cd04a0ce6c03d5e2ff810ca69a5edb92e8ab505f2c0ff1c5e9269300cd27c",
+      "bytes": 3454,
+      "in_immutable_base": false,
+      "uses": [
+        "optional_reconstruct_historic_baseline1_and3"
+      ]
+    },
+    {
+      "path": "creative/reviews/seat-base-study-v7/source-geometry-check.json",
+      "sha256": "ac7d562cc9cff81e16672ed4e676defe7eb8aa56f1ed3ba07270afb96f62ccf8",
+      "bytes": 1000,
+      "in_immutable_base": false,
+      "uses": [
+        "seatbase7_external_admission_and_handoff"
+      ]
+    },
+    {
+      "path": "creative/reviews/seat-base-study-v7/README.md",
+      "sha256": "176539e91b1e4a1ae53d0a5572ed98d5c45417cb78baf24cfa0c444190258aab",
+      "bytes": 1312,
+      "in_immutable_base": false,
+      "uses": [
+        "seatbase7_external_admission_and_handoff"
+      ]
+    },
+    {
+      "path": "creative/reviews/seat-base-study-v7-handoff/README.md",
+      "sha256": "16ae9a5970747591003e68be367e9f31b8ce2cb1108f4bf2003152d0ef123916",
+      "bytes": 1375,
+      "in_immutable_base": false,
+      "uses": [
+        "seatbase7_external_admission_and_handoff"
+      ]
+    },
+    {
+      "path": "creative/reviews/seat-base-study-v7-handoff/handoff.json",
+      "sha256": "ea448d639a72f3ef7e4838444ae7016fe263e09191d9a80335923f27affa8774",
+      "bytes": 6020,
+      "in_immutable_base": false,
+      "uses": [
+        "seatbase7_external_admission_and_handoff"
+      ]
+    }
+  ],
+  "README_href_checks": [
+    {
+      "origin": "creative/reviews/seat-base-study-v7-handoff/README.md",
+      "href": "../seat-base-study-v7/study-freeze-manifest.json",
+      "target": "creative/reviews/seat-base-study-v7/study-freeze-manifest.json",
+      "exists": true,
+      "available_in_named_inputs_or_base": true
+    },
+    {
+      "origin": "creative/reviews/seat-base-study-v7-handoff/README.md",
+      "href": "../seat-base-study-v7/whole-partial-ribs-gray.png",
+      "target": "creative/reviews/seat-base-study-v7/whole-partial-ribs-gray.png",
+      "exists": true,
+      "available_in_named_inputs_or_base": true
+    },
+    {
+      "origin": "creative/reviews/seat-base-study-v7-handoff/README.md",
+      "href": "../seat-base-study-v7/rib-pad-junction-gray.png",
+      "target": "creative/reviews/seat-base-study-v7/rib-pad-junction-gray.png",
+      "exists": true,
+      "available_in_named_inputs_or_base": true
+    },
+    {
+      "origin": "creative/reviews/seat-base-study-v7-handoff/README.md",
+      "href": "../seat-base-study-v7/rib-pad-junction-reflection.png",
+      "target": "creative/reviews/seat-base-study-v7/rib-pad-junction-reflection.png",
+      "exists": true,
+      "available_in_named_inputs_or_base": true
+    },
+    {
+      "origin": "creative/reviews/seat-base-study-v7-handoff/README.md",
+      "href": "../seat-base-study-v7/render-report.json",
+      "target": "creative/reviews/seat-base-study-v7/render-report.json",
+      "exists": true,
+      "available_in_named_inputs_or_base": true
+    },
+    {
+      "origin": "creative/reviews/seat-base-study-v7/README.md",
+      "href": "../../../assets-src/moto-components/seat-base/README-study-v7.md",
+      "target": "assets-src/moto-components/seat-base/README-study-v7.md",
+      "exists": true,
+      "available_in_named_inputs_or_base": true
+    },
+    {
+      "origin": "creative/reviews/seat-base-study-v7/README.md",
+      "href": "study-freeze-manifest.json",
+      "target": "creative/reviews/seat-base-study-v7/study-freeze-manifest.json",
+      "exists": true,
+      "available_in_named_inputs_or_base": true
+    },
+    {
+      "origin": "creative/reviews/seat-base-study-v7/README.md",
+      "href": "source-geometry-check.json",
+      "target": "creative/reviews/seat-base-study-v7/source-geometry-check.json",
+      "exists": true,
+      "available_in_named_inputs_or_base": true
+    },
+    {
+      "origin": "creative/reviews/seat-base-study-v7/README.md",
+      "href": "whole-partial-ribs-gray.png",
+      "target": "creative/reviews/seat-base-study-v7/whole-partial-ribs-gray.png",
+      "exists": true,
+      "available_in_named_inputs_or_base": true
+    },
+    {
+      "origin": "creative/reviews/seat-base-study-v7/README.md",
+      "href": "rib-pad-junction-gray.png",
+      "target": "creative/reviews/seat-base-study-v7/rib-pad-junction-gray.png",
+      "exists": true,
+      "available_in_named_inputs_or_base": true
+    },
+    {
+      "origin": "creative/reviews/seat-base-study-v7/README.md",
+      "href": "rib-pad-junction-reflection.png",
+      "target": "creative/reviews/seat-base-study-v7/rib-pad-junction-reflection.png",
+      "exists": true,
+      "available_in_named_inputs_or_base": true
+    },
+    {
+      "origin": "creative/reviews/seat-base-study-v7/README.md",
+      "href": "render-report.json",
+      "target": "creative/reviews/seat-base-study-v7/render-report.json",
+      "exists": true,
+      "available_in_named_inputs_or_base": true
+    },
+    {
+      "origin": "creative/reviews/seat-base-study-v7/README.md",
+      "href": "../seat-base-study-v7-handoff/README.md",
+      "target": "creative/reviews/seat-base-study-v7-handoff/README.md",
+      "exists": true,
+      "available_in_named_inputs_or_base": true
+    }
+  ],
+  "missing_or_unselected_README_hrefs": 0,
+  "handoff_admission_SHA_checks": [
+    {
+      "path": "assets-src/moto-components/seat-base/build_study_v7.py",
+      "sha256": "b7f3c85a9ea392d6e47f59e84e00197ce9e9a489c6edda8a024743dc697d2087",
+      "bytes": 18923
+    },
+    {
+      "path": "assets-src/moto-components/seat-base/render_study_v7.py",
+      "sha256": "4046e7be82897c9f096d66eebdaa2528b22227ab5a4ab9935d2b5a4dffc6f9e2",
+      "bytes": 3653
+    },
+    {
+      "path": "assets-src/moto-components/seat-base/README-study-v7.md",
+      "sha256": "013630c9c43f131ebebcc260f39d76b4408caf4839f13ed198250d50a5fdd78c",
+      "bytes": 2255
+    },
+    {
+      "path": "assets-src/moto-components/seat-base/controls-study-v7.json",
+      "sha256": "70f3f671a3085ebde2ecae6e25f853375852cdde39a52a25c41d888303cbe157",
+      "bytes": 592
+    },
+    {
+      "path": "creative/reviews/seat-base-study-v7/render-report.json",
+      "sha256": "7a341d208e471137186737270f23397cf3bca92180ded8b46bccde69ca8e9576",
+      "bytes": 3130
+    },
+    {
+      "path": "creative/reviews/seat-base-study-v7/gray-reflection-reading.json",
+      "sha256": "f274a10611b818d791492b5bf7f00c73c373fd2873aa7ae2e64d20b719cbf7de",
+      "bytes": 2164
+    },
+    {
+      "path": "creative/reviews/seat-base-study-v7/study-freeze-manifest.json",
+      "sha256": "a034ff86eac75158f59e0aed5adbe073cf28525bf774565d251b063720a07154",
+      "bytes": 5506
+    },
+    {
+      "path": "creative/reviews/seat-base-study-v7/whole-partial-ribs-gray.png",
+      "sha256": "59ae84f1a3df62a70727b5add4fe1961164892e8225a1ba5411cd95400cc1eee",
+      "bytes": 600194
+    },
+    {
+      "path": "creative/reviews/seat-base-study-v7/rib-pad-junction-gray.png",
+      "sha256": "f3acd4bf9b707b6f1d84a7d5f2529fb34658c85d0b15963e3f19d4bf5e3a46f7",
+      "bytes": 632161
+    },
+    {
+      "path": "creative/reviews/seat-base-study-v7/rib-pad-junction-reflection.png",
+      "sha256": "8a95aae265f9c0de483d6b1088cdda934109470c7d63295b17991188924f4064",
+      "bytes": 712609
+    }
+  ],
+  "partial_state": {
+    "slider1": "Original partial ring/fork/bridge only. Tip mouths not built, opposedrunningface unobserved, installed chain/swingarm fit and componentG3/G5 open. Source40 does not complete lot15.",
+    "footrestLH1": "Original isolated metal support only, currentRDC identity/framefixing unreceived. RubberpadDF161413, fastening screws and RHsupportPF113001 remain separate. 2um coating optical assumption not measured. No wholefootrestgroup17 receipt.",
+    "seatbase7": "Bare finite plate, six proposed apertures, rear ledge, two long pads and seven partialribs. Other visible ribs/spine/pedestals/dampers/front uprights/rear projection3fins/upholsteryreturn/staples/moldedpatches explicitly not built; hiddenfoamface/latch/cotes separate unknowns. No completed base or seat, no G4 material.",
+    "art_accepted": false,
+    "physical_iphone_tested": false,
+    "all_lots_remain_open": true,
+    "no_registered_type_increment_claimed_by_this_audit": true
+  },
+  "restart": {
+    "slider1": "material.py reads gray-review hash/approval at active source/export paths, then overwrites them. Restore publicG3master binaries and four checks into component/review paths in a WORK COPY, retain gray-review and material-plan, then apply. Source geometry via build.py/profile_shape/parameters is independent of body/rim models. Original FFT periodic normal+ORM, seed15123. Existing diagnostic scripts assume original filenames if restored; not currentauthorinput.",
+    "footrestLH1": "Geometry origin calls actual control_geometry.csg -> front-brake-plate/csg.py -> host manifold3d3.3.2+NumPy. Temporary operands/outputJSON generated from current editable construction, not external mesh assets. Material restart uses provided geometryBLEND+report, current geometry-preview-review and originalmap-generation+threePNG; mapgenerator seed113000 Gaussian wrap fields does not read photos. Recipe refuses original preflight guard and requires real new geometry review for a new revision.",
+    "seatbase7": "build_study_v7.py standalone with parameter7 and existence of partial-transverse-ribs-plan7; no oldBLEND/GLB/script1–6 is read for current geometry generation. Gray renderer uses current source+build-report and commoncamera helper; optional WIP rendercheckpoints are cache/output, not mandatoryinput. There is no materialrecipe or final96 renderer for this study."
+  },
+  "seatbase_minimal_ancestry": {
+    "study26_references_other_manifests": false,
+    "studies2_4_5_6_required_by_current_build_or_comparators": false,
+    "why_baselines1_and3_are_needed": "Two supplied comparison scripts load GLB+buildreport1 and3, plus numeric source-region witnesses; source1 roundedrim and source3 aperturewalls. Their edits do not require intermediate2/4/5/6 to regenerate7.",
+    "four_historic_baseline_models": [
+      {
+        "path": "assets-src/moto-components/seat-base/seat-base-study-v1.blend",
+        "sha256": "d109f5792570d2556dee8e6eafd372b5831697143bdd397da4c4928d68d5a60c",
+        "bytes": 1398376,
+        "in_immutable_base": false
+      },
+      {
+        "path": "assets-src/moto-components/seat-base/seat-base-study-v1.glb",
+        "sha256": "8418d1acde642597104cf191bb688185a985ae3ca2a19fd0bdfceb7306411cdf",
+        "bytes": 251724,
+        "in_immutable_base": false
+      },
+      {
+        "path": "assets-src/moto-components/seat-base/seat-base-study-v3.blend",
+        "sha256": "7511e40e1516ba9e60d04d09d8d821601d7494f67189200b532e7cd5dce0ac72",
+        "bytes": 2452324,
+        "in_immutable_base": false
+      },
+      {
+        "path": "assets-src/moto-components/seat-base/seat-base-study-v3.glb",
+        "sha256": "99186625385d167296f30932a527d7a60440fc39afd7465853cd35bddb53b9ac",
+        "bytes": 543596,
+        "in_immutable_base": false
+      }
+    ],
+    "four_baseline_binary_bytes": 4646020,
+    "baseline_builders_parameter_plans": "Optional explicit phases include self-contained builders1/3 and their own parameters/plans, rather than publishing incomplete historical freeze chains.",
+    "source_region_witnesses": [
+      {
+        "private_path": "/workspace/wewa-assets/work-in-progress/seat-base-study-v2/outer-rim-source1-positions.json",
+        "sha256": "01015f9bca9f4eb248fc9d0f5215dbf91fd1964080adae798cbee9bb6e449b8c",
+        "bytes": 1133158,
+        "source_revision": 1,
+        "actual_triangle_rows": 5760,
+        "region": "Original outer rounded rim, PLATE_REGION2",
+        "source_and_export_match_public_baseline_files": true,
+        "generator": "assets-src/moto-components/seat-base/extract_outer_rim_v1.py",
+        "public_copy_created": false,
+        "role": "Generated read-only source-region coordinates for comparator; regenerate from supplied baselineBLEND/report. No reference photograph or texture data."
+      },
+      {
+        "private_path": "/workspace/wewa-assets/work-in-progress/seat-base-study-v4/aperture-walls-source3-positions.json",
+        "sha256": "106c6397e4bc03502a4dd3274edd7a0c988355ce2a6e039844d0fa04fb301069",
+        "bytes": 2053565,
+        "source_revision": 3,
+        "actual_triangle_rows": 10368,
+        "region": "Six rounded finite aperture walls, PLATE_REGION3",
+        "source_and_export_match_public_baseline_files": true,
+        "generator": "assets-src/moto-components/seat-base/extract_apertures_v3.py",
+        "public_copy_created": false,
+        "role": "Generated read-only source-region coordinates for comparator; regenerate from supplied baselineBLEND/report. No reference photograph or texture data."
+      }
+    ],
+    "witness_regeneration_commands": [
+      "BLENDER --background --threads 1 --python-exit-code 1 --python assets-src/moto-components/seat-base/extract_outer_rim_v1.py",
+      "BLENDER --background --threads 1 --python-exit-code 1 --python assets-src/moto-components/seat-base/extract_apertures_v3.py",
+      "node assets-src/moto-components/seat-base/compare_studies_1_7.mjs",
+      "node assets-src/moto-components/seat-base/compare_apertures_3_7.mjs"
+    ],
+    "commands_executed_here": false,
+    "fresh_witness_byte_equality_not_claimed": true,
+    "comparison_scope": "Actual source region POSITION/UV conserved and stored normal deltas reported by existing comparison, not full cap triangulation or allnormal bitidentity. No calibrated photo reconstruction."
+  },
+  "private_pixels_fonts_shaders": {
+    "private_reference_image_required_by_generation": false,
+    "private_image_or_EXR_copied": false,
+    "font_required": false,
+    "HDR_required": false,
+    "seatbase7_material": "Temporarygray shader and RAMreflection shape views only, no resinfinish or finalPBR",
+    "slider1_maps": "Two original512² normal/ORM, estimated1um field on5mm author domain, normalstrength.18; no measuredrubbergrade.",
+    "footrestLH1_maps": "Three original2048² maps current2um, prior8um state and its3originalmaps preserved by source70; no photo input.",
+    "footrest_8to2um": "Existing check_single_amplitude_test/protected-export report are frozen inputs; source geometry exact preservation is attributed to their existing checks, no new mesh/GLB calculation executed here.",
+    "generated_extracts": "Footrest Node checker produces embedded PNG/UV samples used by next Python pixelcheck; no unpublished texture master.",
+    "EXR_policy": "Seat26 contains only three ownPNG12, noEXR; EXR_private_path in renderreport is historical output/cache, not mandatorysource. Active A/B finalproofs not read/pinned here."
+  },
+  "production_admission_boundaries": {
+    "seatbase7": "No new generic production-manifest expected, no source_revision activation inferred from catalog. Publish study26+root alias+README+handoff/runtime only as separate partialstudy admission when root chooses. Runtime visuals not checked here.",
+    "slider_and_LH": "Final96 author manifests and rootQA expected later; this static report pins source-only frozeninputs.",
+    "gasket2": "Active and outside currentaudit, no cutoffassumption."
+  },
+  "platform": {
+    "Blender": "4.3.2 CPU NumPy/mathutils/bmesh, Cycles12/24/96 per actual owning script; no Blender run here.",
+    "hostCSG": "manifold3d3.3.2 recorded by LH geometry, NumPy; csg helper spawns shutil.which(python), install in that host interpreter.",
+    "hostOriginalMaps": "NumPy, SciPy gaussian_filter, Pillow; current generator named and frozen70.",
+    "Node": "Existing lock packages @gltf-transform/core/functions/extensions and gltf-validator, no install/vendoring/bootstrapperformed."
+  },
+  "read_method": "Only script/JSON/README text and SHA/byte readback. No rendering, source save, mesh inspection or private photo open. True manifest/freeze files only recursively traversed; report tables remain historical.",
+  "no_models_sources_old_gels_global_catalogue_registry_or_index_modified": true,
+  "index_before_SHA256": "a5227da050e8c08efb669aef9d5e25ef1e3b55515fbd268c1951ee450b631c01",
+  "index_after_SHA256": "a5227da050e8c08efb669aef9d5e25ef1e3b55515fbd268c1951ee450b631c01",
+  "new_files": [
+    "creative/research/motorcycle-source-dependencies-publication16-v1/README.md",
+    "creative/research/motorcycle-source-dependencies-publication16-v1/report.json",
+    "creative/research/motorcycle-source-dependencies-publication16-v1/source-closure-v1.json",
+    "creative/research/motorcycle-source-dependencies-publication16-v1/stable-recipe-inputs-v1.json"
+  ],
+  "final_readback": {
+    "source_SHA_byte_pairs_rechecked": 136,
+    "named_public_recipe_inputs_rechecked": 74,
+    "handoff_admission_inputs_checked": 10,
+    "README_local_hrefs_checked": 13,
+    "missing_or_changed": 0,
+    "no_new_physical_ID_for_gray_embase": true,
+    "no_stage_or_final_cutoff": true,
+    "index_unchanged": true
+  }
+}

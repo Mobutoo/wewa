@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-21T09:06:36.398247+00:00",
+  "rejected_source_sha256": "b71823e4a185458fc8acb2b7b3445bbdc30b6140b71aa2ca8be287f64eac9fbe",
+  "cause": "Power8 pad/rib compound slope changes quickly in local junctions; original contour sampling under-resolved surface. Actual export410faces<.9 (minimum.3244), no exactzero area/UV. Rejected before any render.",
+  "correction": "Adaptively add sourceXY edge midpoints for triangles whose actual heightfield geometry deviates from differentiated source normals; recomputeCDT, max8iterations, target.96. Constrained points not moved; no new global bevel, output normal/tangent patch, or relaxed strictchecker. Exactzeroareas remain failure.",
+  "bounds": {
+    "target_geometric_corner_normal_dot": 0.96,
+    "max_iterations": 8,
+    "minimum_new_edge_length_m": 2e-06,
+    "purpose": "Source sampling refinement of actual local C2 compound surface, not output normal repair, physical tolerance or metrology"
+  },
+  "diagnostic_private": "/workspace/wewa-assets/work-in-progress/seat-base-study-v7/rejected-undersampled-junctions",
+  "art_accepted": false
+}

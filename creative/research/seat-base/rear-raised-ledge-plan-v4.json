@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-21T08:51:09.174103+00:00",
+  "revision": "seat-base-study-v4",
+  "scope": "ONE broad raised rear ledge on related underside plate, before smaller ribs/pads/supports; preserve unseen questions",
+  "native_source": {
+    "path": "/workspace/wewa-assets/references/body-powertrain-18/seat-crosland-00.jpg",
+    "sha256": "cbf73ddab044bcf0c5ef1bbd23230ef9ab63fa281243bf4076c3c08e7b01fbbf",
+    "actually_opened": true,
+    "native_size_px": [
+      1300,
+      1734
+    ]
+  },
+  "visible_region": {
+    "approx_polygon_px": [
+      [
+        275,
+        1177
+      ],
+      [
+        963,
+        1178
+      ],
+      [
+        940,
+        1311
+      ],
+      [
+        293,
+        1308
+      ]
+    ],
+    "uncertainty_px": 15,
+    "uncertainty_kind": "Conservative manual region reading, no calibrated contour correspondence",
+    "observed": "Broad transverse raised molded ledge below rear aperture pair, rounded outer corners and steep transition. Central three-fin rear projection is a separate later feature; no closed circular rib pattern inferred."
+  },
+  "parameters": {
+    "center_XY_m": [
+      0,
+      0.974
+    ],
+    "outer_half_extents_m": [
+      0.117,
+      0.037
+    ],
+    "footprint_corner_radius_m": 0.01,
+    "transition_width_m": 0.005,
+    "rise_outward_m": 0.008,
+    "transition_layers": 20,
+    "corner_segments": 24,
+    "straight_segment_step_m": 0.004,
+    "interior_grid_spacing_m": 0.004,
+    "derivative_epsilon_m": 2e-06,
+    "status": "Authored bounded construction estimate, not photo dimensions/draft/radius of actual part"
+  },
+  "method": "Authored rounded-rectangle signed-distance footprint; quintic C2 transition to a flat plateau. Twenty nested footprint contours constrained in cap triangulation, explicit local flat-grid points. Apply only to local underside height and differentiate actual height field; no CSG/global bevel. Same finite wall offset carried by top as inspection thickness hypothesis, not a measurement of hidden face. Feature transition width is NOT a circular fillet radius. Preserve outer shape and six aperture boundaries.",
+  "comparison": [
+    "Whole underside gray with six apertures",
+    "Close diffuse ledge edge",
+    "Same macro with low roughness for normals/reflection"
+  ],
+  "checks": [
+    "Actual positive mesh areas/closed two-face edges",
+    "Strict actual glTF/UV/nonfinite/face-normal checks",
+    "Compare exported outer rim and authored XY aperture rings against baseline; report changed normals rather than claim bit parity"
+  ],
+  "not_inferred": [
+    "Physical footprint/rise/thickness/draft",
+    "Actual top/foam-side surface",
+    "CurrentRDC identity or mounting",
+    "Rear fins/hidden ribs/latch"
+  ],
+  "art_accepted": false
+}

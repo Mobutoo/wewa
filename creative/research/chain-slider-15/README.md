@@ -1,0 +1,3 @@
+# Patin JB122003 — préparation documentaire
+
+Deux vraies images vendeurs ont été ouvertes : BikeBox (SKU BoxerJB122003) et KMMotos (Pulsar135, SKU et fichierJB122003 ; corroboration apparentée seulement). Elles montrent toutes deux le côté intérieur/ouvert, sous deux obliques ; aucun revers certifié ni cote constructeur n’a été trouvé. La forme anneau/fourche, deux ajours, nervures/rails et terminaisons sont observables ; pose, surface opposée et contact chaîne/bras restent inconnus. Les originaux restent privés et ne deviennent pas des textures. Aucun modèle n’est fabriqué à ce stade. Voir report.json pour liens, empreintes et pistes négatives bornées.

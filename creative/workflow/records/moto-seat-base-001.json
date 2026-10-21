@@ -1,0 +1,1146 @@
+{
+  "schema": 1,
+  "id": "MOTO-SEAT-BASE-001",
+  "label": "Selle \u2014 plaque nue de l\u2019embase li\u00e9e",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "RelatedJV191001 underside only; exactcurrentRDC base notconfirmed",
+    "variant_confirmed": false,
+    "usage": "Isolated bare molded plate study, no foam/mount/ribs/supports assumed",
+    "review_distances_m": [
+      0.15,
+      0.5,
+      1.0
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01"
+  ],
+  "claims": [],
+  "views": [],
+  "criteria": [
+    "Editable nonelliptical outline and separate height controls",
+    "Finite plate material and rounded rim before features",
+    "Single photograph camera/depth ambiguity remains explicit"
+  ],
+  "gaps": [
+    {
+      "id": "BASE-GAP-1",
+      "property": "CurrentRDC identity/part dimensions/top/side/attachment geometry",
+      "status": "unknown",
+      "critical": true,
+      "blocks": [
+        "G8"
+      ],
+      "next_research": "Same identified seat removed, top/underside/side with scale and actual mounts"
+    },
+    {
+      "id": "BASE-GAP-2",
+      "property": "Related plate thickness/holes/raised features depth",
+      "status": "unknown",
+      "critical": true,
+      "blocks": [
+        "G5",
+        "G8"
+      ],
+      "next_research": "Related exactJV191001 multiple angles/sections with scale"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "rework",
+      "revision": "seat-base-study-v7",
+      "reviewer": {
+        "name": "C fabrication agent",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "bare_plate_preparation",
+          "path": "../../research/seat-base/G0-G1-reading-v1.json",
+          "sha256": "5fb25419d19c934681d2fe1d43a61f63ae46081eae3edb3e6b6d6cc9e5cbda1e",
+          "revision": "seat-base-study-v7"
+        }
+      ],
+      "reason": "RelatedJV191001 identified; exactcurrentRDC base notconfirmed.",
+      "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "seat-base-study-v7",
+      "reviewer": {
+        "name": "C fabrication agent",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "bare_plate_preparation",
+          "path": "../../research/seat-base/G0-G1-reading-v1.json",
+          "sha256": "5fb25419d19c934681d2fe1d43a61f63ae46081eae3edb3e6b6d6cc9e5cbda1e",
+          "revision": "seat-base-study-v7"
+        }
+      ],
+      "reason": "One undersidephoto and related catalogue read; external cotes/top/side and mounting unknown.",
+      "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+    },
+    "G2": {
+      "status": "rework",
+      "revision": "seat-base-study-v7",
+      "reviewer": {
+        "name": "C fabrication agent",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "bare_plate_preparation",
+          "path": "../../research/seat-base/section-and-comparison-plan-v1.json",
+          "sha256": "45be7c3dd79b84dd47dd453a31e01887c25c7cf012ce3bfc863fa429af889004",
+          "revision": "seat-base-study-v7"
+        },
+        {
+          "kind": "one_candidate_aperture_plan",
+          "path": "../../research/seat-base/first-aperture-plan-v2.json",
+          "sha256": "b9b68e53a5089d318ac5d24d158b9322a558bea7f396112382434d0d52da12be",
+          "revision": "seat-base-study-v7"
+        },
+        {
+          "kind": "six_observed_regions_bounded_plan",
+          "path": "../../research/seat-base/six-apertures-plan-v3.json",
+          "sha256": "004cd04a0ce6c03d5e2ff810ca69a5edb92e8ab505f2c0ff1c5e9269300cd27c",
+          "revision": "seat-base-study-v7"
+        },
+        {
+          "kind": "one_observed_ledge_plan",
+          "path": "../../research/seat-base/rear-raised-ledge-plan-v4.json",
+          "sha256": "4bfc77d7a2ad8b25c7b5091fdba4f92015dc2b6f04e5ff07a2b88ed80a73b4b6",
+          "revision": "seat-base-study-v7"
+        },
+        {
+          "kind": "one_observed_long_pad_plan",
+          "path": "../../research/seat-base/first-long-pad-plan-v5.json",
+          "sha256": "0ebc63ccdc7109d02353c6be8b71cec36408817d390f2b32a07016ff795b25c5",
+          "revision": "seat-base-study-v7"
+        },
+        {
+          "kind": "next_bounded_detail_plan",
+          "path": "../../research/seat-base/second-long-pad-plan-v6.json",
+          "sha256": "42e5e18a0fd9e15567363e6ded019ecea005261bd5af8f12c3c1cf0b06dc1bee",
+          "revision": "seat-base-study-v7"
+        },
+        {
+          "kind": "next_bounded_detail_plan",
+          "path": "../../research/seat-base/partial-transverse-ribs-plan-v7.json",
+          "sha256": "76de594af9f6ee8e77545c11b1b810bfe5610a93a0c8d130f05dedbdbdf641cb",
+          "revision": "seat-base-study-v7"
+        }
+      ],
+      "reason": "Bounded authored outline/height/plate method, single-photo depth/camera indeterminate.",
+      "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "seat-base-study-v7",
+      "reviewer": {
+        "name": "C fabrication agent",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "actual_bare_plate_export",
+          "path": "../../reviews/seat-base-study-v1/export-detail-check.json",
+          "sha256": "526de239097356d2fa9073f060649e91faeb98c0e8f2b74e8d3d4393c75f81b4",
+          "revision": "seat-base-study-v7"
+        },
+        {
+          "kind": "actual_one_aperture_export",
+          "path": "../../reviews/seat-base-study-v2/export-detail-check.json",
+          "sha256": "4c770811ea8d89e295690c2eed2ac9067bb6da1ff38e7f02404447210468d292",
+          "revision": "seat-base-study-v7"
+        },
+        {
+          "kind": "actual_six_aperture_export",
+          "path": "../../reviews/seat-base-study-v3/export-detail-check.json",
+          "sha256": "508129ff90f4885d27c3ae9963a093a6f2e8e24115d051711a15b07cb763b5a6",
+          "revision": "seat-base-study-v7"
+        },
+        {
+          "kind": "actual_ledge_export",
+          "path": "../../reviews/seat-base-study-v4/export-detail-check.json",
+          "sha256": "7c17334a46a041ffd53d4087e866585dfe02ac995dd1ab476196cf4efd248445",
+          "revision": "seat-base-study-v7"
+        },
+        {
+          "kind": "actual_ledge_gray_reflection_read",
+          "path": "../../reviews/seat-base-study-v4/gray-reflection-reading.json",
+          "sha256": "5bbdc49e2a0cebf6d3f5f138fce5a00622b0c59dd5a7787fd9bac558fd3767c2",
+          "revision": "seat-base-study-v7"
+        },
+        {
+          "kind": "actual_prior_detail_read",
+          "path": "../../reviews/seat-base-study-v5/gray-reflection-reading.json",
+          "sha256": "3e6f7cdb30d6b5bd3e50219eb6b0b65d0bd9066dd495a82ac46e2ccd4655cf9d",
+          "revision": "seat-base-study-v7"
+        },
+        {
+          "kind": "actual_prior_detail_read",
+          "path": "../../reviews/seat-base-study-v6/gray-reflection-reading.json",
+          "sha256": "53b48d886a3962cff34952bc25c1de8feb535fc68daf44667316c37bd9b985cd",
+          "revision": "seat-base-study-v7"
+        },
+        {
+          "kind": "actual_partial_rib_export",
+          "path": "../../reviews/seat-base-study-v7/export-detail-check.json",
+          "sha256": "056812b901009f8b501863ae87a53f062bab348ce667164abee409fab60e5d0b",
+          "revision": "seat-base-study-v7"
+        },
+        {
+          "kind": "actual_three_short_reads",
+          "path": "../../reviews/seat-base-study-v7/gray-reflection-reading.json",
+          "sha256": "f274a10611b818d791492b5bf7f00c73c373fd2873aa7ae2e64d20b719cbf7de",
+          "revision": "seat-base-study-v7"
+        }
+      ],
+      "reason": "Partial finite plate with6proposedholes, rearledge,2longpads and7visiblepartialtransverse ribs built/read; other ribgroups/spine/supports/projections/return unbuilt. Exactcurrentidentity/cotes/fit/art unresolved.",
+      "reviewed_at": "2026-10-21T08:42:49.282801+00:00"
+    },
+    "G4": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "seat-base-study-v7",
+  "export_revision": "seat-base-study-v7",
+  "next_action": "Optics12 thenSNS16 priority. Remaining18 includes relateddamper (preparation only), other visible rib groups/spine/projections/return and currentseat physicalinterfaces; no work silently complete.",
+  "art_accepted": false,
+  "working_source_state": "Bounded partial gray study7 frozen after actual whole/gray/reflection reads, no finalresin/currentRDC/fit/art receipt",
+  "gate_history": [
+    {
+      "at": "2026-10-21T08:42:49.282801+00:00",
+      "reason": "Bare1 frozen after gray/reflection/top/edge. First finite aperture2 built, five other regions and ribs await review",
+      "gates": {
+        "G0": {
+          "status": "rework",
+          "revision": "seat-base-study-v1",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/G0-G1-reading-v1.json",
+              "sha256": "5fb25419d19c934681d2fe1d43a61f63ae46081eae3edb3e6b6d6cc9e5cbda1e",
+              "revision": "seat-base-study-v1"
+            }
+          ],
+          "reason": "RelatedJV191001 identified; exactcurrentRDC base notconfirmed.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G1": {
+          "status": "blocked",
+          "revision": "seat-base-study-v1",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/G0-G1-reading-v1.json",
+              "sha256": "5fb25419d19c934681d2fe1d43a61f63ae46081eae3edb3e6b6d6cc9e5cbda1e",
+              "revision": "seat-base-study-v1"
+            }
+          ],
+          "reason": "One undersidephoto and related catalogue read; external cotes/top/side and mounting unknown.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G2": {
+          "status": "rework",
+          "revision": "seat-base-study-v1",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/section-and-comparison-plan-v1.json",
+              "sha256": "45be7c3dd79b84dd47dd453a31e01887c25c7cf012ce3bfc863fa429af889004",
+              "revision": "seat-base-study-v1"
+            }
+          ],
+          "reason": "Bounded authored outline/height/plate method, single-photo depth/camera indeterminate.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G3": {
+          "status": "rework",
+          "revision": "seat-base-study-v1",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "actual_bare_plate_export",
+              "path": "../../reviews/seat-base-study-v1/export-detail-check.json",
+              "sha256": "526de239097356d2fa9073f060649e91faeb98c0e8f2b74e8d3d4393c75f81b4",
+              "revision": "seat-base-study-v1"
+            }
+          ],
+          "reason": "Bare finite plate built and export positive/UV valid, actual gray/reflection review in progress. Six aperture regions, ledges/ribs/supports/projections not built yet; no exactRDC identity/dimensions/mount reception.",
+          "reviewed_at": "2026-10-21T08:34:03.056798+00:00"
+        },
+        "G4": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G5": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G6": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G7": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G8": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        }
+      }
+    },
+    {
+      "at": "2026-10-21T08:51:09.174103+00:00",
+      "reason": "First finite hole2 frozen after actual three short reads; six finite candidate holes3 built, only whole preview read, corrected macros running",
+      "gates": {
+        "G0": {
+          "status": "rework",
+          "revision": "seat-base-study-v2",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/G0-G1-reading-v1.json",
+              "sha256": "5fb25419d19c934681d2fe1d43a61f63ae46081eae3edb3e6b6d6cc9e5cbda1e",
+              "revision": "seat-base-study-v2"
+            }
+          ],
+          "reason": "RelatedJV191001 identified; exactcurrentRDC base notconfirmed.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G1": {
+          "status": "blocked",
+          "revision": "seat-base-study-v2",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/G0-G1-reading-v1.json",
+              "sha256": "5fb25419d19c934681d2fe1d43a61f63ae46081eae3edb3e6b6d6cc9e5cbda1e",
+              "revision": "seat-base-study-v2"
+            }
+          ],
+          "reason": "One undersidephoto and related catalogue read; external cotes/top/side and mounting unknown.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G2": {
+          "status": "rework",
+          "revision": "seat-base-study-v2",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/section-and-comparison-plan-v1.json",
+              "sha256": "45be7c3dd79b84dd47dd453a31e01887c25c7cf012ce3bfc863fa429af889004",
+              "revision": "seat-base-study-v2"
+            },
+            {
+              "kind": "one_candidate_aperture_plan",
+              "path": "../../research/seat-base/first-aperture-plan-v2.json",
+              "sha256": "b9b68e53a5089d318ac5d24d158b9322a558bea7f396112382434d0d52da12be",
+              "revision": "seat-base-study-v2"
+            }
+          ],
+          "reason": "Bounded authored outline/height/plate method, single-photo depth/camera indeterminate.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G3": {
+          "status": "rework",
+          "revision": "seat-base-study-v2",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "actual_bare_plate_export",
+              "path": "../../reviews/seat-base-study-v1/export-detail-check.json",
+              "sha256": "526de239097356d2fa9073f060649e91faeb98c0e8f2b74e8d3d4393c75f81b4",
+              "revision": "seat-base-study-v2"
+            },
+            {
+              "kind": "actual_one_aperture_export",
+              "path": "../../reviews/seat-base-study-v2/export-detail-check.json",
+              "sha256": "4c770811ea8d89e295690c2eed2ac9067bb6da1ff38e7f02404447210468d292",
+              "revision": "seat-base-study-v2"
+            }
+          ],
+          "reason": "One first finite aperture candidate built from bright native region, roundness/dimensions interpretation unresolved; whole/reflection review in progress. Otherfive/ledges/ribs/supports/projections not built. No exactcurrent fit/art reception.",
+          "reviewed_at": "2026-10-21T08:42:49.282801+00:00"
+        },
+        "G4": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G5": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G6": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G7": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G8": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        }
+      }
+    },
+    {
+      "at": "2026-10-21T08:52:25.299076+00:00",
+      "reason": "Six-aperture study3 frozen after actual whole/gray/reflection reads; next one rear ledge4 starts",
+      "gates": {
+        "G0": {
+          "status": "rework",
+          "revision": "seat-base-study-v3",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/G0-G1-reading-v1.json",
+              "sha256": "5fb25419d19c934681d2fe1d43a61f63ae46081eae3edb3e6b6d6cc9e5cbda1e",
+              "revision": "seat-base-study-v3"
+            }
+          ],
+          "reason": "RelatedJV191001 identified; exactcurrentRDC base notconfirmed.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G1": {
+          "status": "blocked",
+          "revision": "seat-base-study-v3",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/G0-G1-reading-v1.json",
+              "sha256": "5fb25419d19c934681d2fe1d43a61f63ae46081eae3edb3e6b6d6cc9e5cbda1e",
+              "revision": "seat-base-study-v3"
+            }
+          ],
+          "reason": "One undersidephoto and related catalogue read; external cotes/top/side and mounting unknown.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G2": {
+          "status": "rework",
+          "revision": "seat-base-study-v3",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/section-and-comparison-plan-v1.json",
+              "sha256": "45be7c3dd79b84dd47dd453a31e01887c25c7cf012ce3bfc863fa429af889004",
+              "revision": "seat-base-study-v3"
+            },
+            {
+              "kind": "one_candidate_aperture_plan",
+              "path": "../../research/seat-base/first-aperture-plan-v2.json",
+              "sha256": "b9b68e53a5089d318ac5d24d158b9322a558bea7f396112382434d0d52da12be",
+              "revision": "seat-base-study-v3"
+            },
+            {
+              "kind": "six_observed_regions_bounded_plan",
+              "path": "../../research/seat-base/six-apertures-plan-v3.json",
+              "sha256": "004cd04a0ce6c03d5e2ff810ca69a5edb92e8ab505f2c0ff1c5e9269300cd27c",
+              "revision": "seat-base-study-v3"
+            }
+          ],
+          "reason": "Bounded authored outline/height/plate method, single-photo depth/camera indeterminate.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G3": {
+          "status": "rework",
+          "revision": "seat-base-study-v3",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "actual_bare_plate_export",
+              "path": "../../reviews/seat-base-study-v1/export-detail-check.json",
+              "sha256": "526de239097356d2fa9073f060649e91faeb98c0e8f2b74e8d3d4393c75f81b4",
+              "revision": "seat-base-study-v3"
+            },
+            {
+              "kind": "actual_one_aperture_export",
+              "path": "../../reviews/seat-base-study-v2/export-detail-check.json",
+              "sha256": "4c770811ea8d89e295690c2eed2ac9067bb6da1ff38e7f02404447210468d292",
+              "revision": "seat-base-study-v3"
+            },
+            {
+              "kind": "actual_six_aperture_export",
+              "path": "../../reviews/seat-base-study-v3/export-detail-check.json",
+              "sha256": "508129ff90f4885d27c3ae9963a093a6f2e8e24115d051711a15b07cb763b5a6",
+              "revision": "seat-base-study-v3"
+            }
+          ],
+          "reason": "Six finite plate apertures built as bounded round-hole hypotheses. Whole gray read; corrected macro/reflection review pending after rejected camera clipping. Ledges/ribs/supports/projections not built; exactcurrentidentity/fit/art unresolved.",
+          "reviewed_at": "2026-10-21T08:42:49.282801+00:00"
+        },
+        "G4": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G5": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G6": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G7": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G8": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        }
+      }
+    },
+    {
+      "at": "2026-10-21T08:55:51.754784+00:00",
+      "reason": "One rear ledge4 frozen after three short readings; ONE image-L longpad5 next",
+      "gates": {
+        "G0": {
+          "status": "rework",
+          "revision": "seat-base-study-v4",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/G0-G1-reading-v1.json",
+              "sha256": "5fb25419d19c934681d2fe1d43a61f63ae46081eae3edb3e6b6d6cc9e5cbda1e",
+              "revision": "seat-base-study-v4"
+            }
+          ],
+          "reason": "RelatedJV191001 identified; exactcurrentRDC base notconfirmed.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G1": {
+          "status": "blocked",
+          "revision": "seat-base-study-v4",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/G0-G1-reading-v1.json",
+              "sha256": "5fb25419d19c934681d2fe1d43a61f63ae46081eae3edb3e6b6d6cc9e5cbda1e",
+              "revision": "seat-base-study-v4"
+            }
+          ],
+          "reason": "One undersidephoto and related catalogue read; external cotes/top/side and mounting unknown.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G2": {
+          "status": "rework",
+          "revision": "seat-base-study-v4",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/section-and-comparison-plan-v1.json",
+              "sha256": "45be7c3dd79b84dd47dd453a31e01887c25c7cf012ce3bfc863fa429af889004",
+              "revision": "seat-base-study-v4"
+            },
+            {
+              "kind": "one_candidate_aperture_plan",
+              "path": "../../research/seat-base/first-aperture-plan-v2.json",
+              "sha256": "b9b68e53a5089d318ac5d24d158b9322a558bea7f396112382434d0d52da12be",
+              "revision": "seat-base-study-v4"
+            },
+            {
+              "kind": "six_observed_regions_bounded_plan",
+              "path": "../../research/seat-base/six-apertures-plan-v3.json",
+              "sha256": "004cd04a0ce6c03d5e2ff810ca69a5edb92e8ab505f2c0ff1c5e9269300cd27c",
+              "revision": "seat-base-study-v4"
+            },
+            {
+              "kind": "one_observed_ledge_plan",
+              "path": "../../research/seat-base/rear-raised-ledge-plan-v4.json",
+              "sha256": "4bfc77d7a2ad8b25c7b5091fdba4f92015dc2b6f04e5ff07a2b88ed80a73b4b6",
+              "revision": "seat-base-study-v4"
+            }
+          ],
+          "reason": "Bounded authored outline/height/plate method, single-photo depth/camera indeterminate.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G3": {
+          "status": "rework",
+          "revision": "seat-base-study-v4",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "actual_bare_plate_export",
+              "path": "../../reviews/seat-base-study-v1/export-detail-check.json",
+              "sha256": "526de239097356d2fa9073f060649e91faeb98c0e8f2b74e8d3d4393c75f81b4",
+              "revision": "seat-base-study-v4"
+            },
+            {
+              "kind": "actual_one_aperture_export",
+              "path": "../../reviews/seat-base-study-v2/export-detail-check.json",
+              "sha256": "4c770811ea8d89e295690c2eed2ac9067bb6da1ff38e7f02404447210468d292",
+              "revision": "seat-base-study-v4"
+            },
+            {
+              "kind": "actual_six_aperture_export",
+              "path": "../../reviews/seat-base-study-v3/export-detail-check.json",
+              "sha256": "508129ff90f4885d27c3ae9963a093a6f2e8e24115d051711a15b07cb763b5a6",
+              "revision": "seat-base-study-v4"
+            }
+          ],
+          "reason": "Six finite holes3 frozen after actual three short reads. ONE observed rear raised ledge4 construction active; not all ribs/pads/supports built, no currentidentity/fit/art receipt.",
+          "reviewed_at": "2026-10-21T08:42:49.282801+00:00"
+        },
+        "G4": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G5": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G6": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G7": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G8": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        }
+      }
+    },
+    {
+      "at": "2026-10-21T08:59:37.815091+00:00",
+      "reason": "Study5 frozen after three short readings; next bounded detail6",
+      "gates": {
+        "G0": {
+          "status": "rework",
+          "revision": "seat-base-study-v5",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/G0-G1-reading-v1.json",
+              "sha256": "5fb25419d19c934681d2fe1d43a61f63ae46081eae3edb3e6b6d6cc9e5cbda1e",
+              "revision": "seat-base-study-v5"
+            }
+          ],
+          "reason": "RelatedJV191001 identified; exactcurrentRDC base notconfirmed.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G1": {
+          "status": "blocked",
+          "revision": "seat-base-study-v5",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/G0-G1-reading-v1.json",
+              "sha256": "5fb25419d19c934681d2fe1d43a61f63ae46081eae3edb3e6b6d6cc9e5cbda1e",
+              "revision": "seat-base-study-v5"
+            }
+          ],
+          "reason": "One undersidephoto and related catalogue read; external cotes/top/side and mounting unknown.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G2": {
+          "status": "rework",
+          "revision": "seat-base-study-v5",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/section-and-comparison-plan-v1.json",
+              "sha256": "45be7c3dd79b84dd47dd453a31e01887c25c7cf012ce3bfc863fa429af889004",
+              "revision": "seat-base-study-v5"
+            },
+            {
+              "kind": "one_candidate_aperture_plan",
+              "path": "../../research/seat-base/first-aperture-plan-v2.json",
+              "sha256": "b9b68e53a5089d318ac5d24d158b9322a558bea7f396112382434d0d52da12be",
+              "revision": "seat-base-study-v5"
+            },
+            {
+              "kind": "six_observed_regions_bounded_plan",
+              "path": "../../research/seat-base/six-apertures-plan-v3.json",
+              "sha256": "004cd04a0ce6c03d5e2ff810ca69a5edb92e8ab505f2c0ff1c5e9269300cd27c",
+              "revision": "seat-base-study-v5"
+            },
+            {
+              "kind": "one_observed_ledge_plan",
+              "path": "../../research/seat-base/rear-raised-ledge-plan-v4.json",
+              "sha256": "4bfc77d7a2ad8b25c7b5091fdba4f92015dc2b6f04e5ff07a2b88ed80a73b4b6",
+              "revision": "seat-base-study-v5"
+            },
+            {
+              "kind": "one_observed_long_pad_plan",
+              "path": "../../research/seat-base/first-long-pad-plan-v5.json",
+              "sha256": "0ebc63ccdc7109d02353c6be8b71cec36408817d390f2b32a07016ff795b25c5",
+              "revision": "seat-base-study-v5"
+            }
+          ],
+          "reason": "Bounded authored outline/height/plate method, single-photo depth/camera indeterminate.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G3": {
+          "status": "rework",
+          "revision": "seat-base-study-v5",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "actual_bare_plate_export",
+              "path": "../../reviews/seat-base-study-v1/export-detail-check.json",
+              "sha256": "526de239097356d2fa9073f060649e91faeb98c0e8f2b74e8d3d4393c75f81b4",
+              "revision": "seat-base-study-v5"
+            },
+            {
+              "kind": "actual_one_aperture_export",
+              "path": "../../reviews/seat-base-study-v2/export-detail-check.json",
+              "sha256": "4c770811ea8d89e295690c2eed2ac9067bb6da1ff38e7f02404447210468d292",
+              "revision": "seat-base-study-v5"
+            },
+            {
+              "kind": "actual_six_aperture_export",
+              "path": "../../reviews/seat-base-study-v3/export-detail-check.json",
+              "sha256": "508129ff90f4885d27c3ae9963a093a6f2e8e24115d051711a15b07cb763b5a6",
+              "revision": "seat-base-study-v5"
+            },
+            {
+              "kind": "actual_ledge_export",
+              "path": "../../reviews/seat-base-study-v4/export-detail-check.json",
+              "sha256": "7c17334a46a041ffd53d4087e866585dfe02ac995dd1ab476196cf4efd248445",
+              "revision": "seat-base-study-v5"
+            },
+            {
+              "kind": "actual_ledge_gray_reflection_read",
+              "path": "../../reviews/seat-base-study-v4/gray-reflection-reading.json",
+              "sha256": "5bbdc49e2a0cebf6d3f5f138fce5a00622b0c59dd5a7787fd9bac558fd3767c2",
+              "revision": "seat-base-study-v5"
+            }
+          ],
+          "reason": "Finite plate/six apertures and one broad rear ledge4 frozen as bounded studies, not fullbase/currentidentity/fit/art. ONE image-L longpad5 begins. Otherpad/ribs/supports/projections still unbuilt.",
+          "reviewed_at": "2026-10-21T08:42:49.282801+00:00"
+        },
+        "G4": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G5": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G6": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G7": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G8": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        }
+      }
+    },
+    {
+      "at": "2026-10-21T09:05:04.399233+00:00",
+      "reason": "Study6 frozen after three short readings; next bounded detail7",
+      "gates": {
+        "G0": {
+          "status": "rework",
+          "revision": "seat-base-study-v6",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/G0-G1-reading-v1.json",
+              "sha256": "5fb25419d19c934681d2fe1d43a61f63ae46081eae3edb3e6b6d6cc9e5cbda1e",
+              "revision": "seat-base-study-v6"
+            }
+          ],
+          "reason": "RelatedJV191001 identified; exactcurrentRDC base notconfirmed.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G1": {
+          "status": "blocked",
+          "revision": "seat-base-study-v6",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/G0-G1-reading-v1.json",
+              "sha256": "5fb25419d19c934681d2fe1d43a61f63ae46081eae3edb3e6b6d6cc9e5cbda1e",
+              "revision": "seat-base-study-v6"
+            }
+          ],
+          "reason": "One undersidephoto and related catalogue read; external cotes/top/side and mounting unknown.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G2": {
+          "status": "rework",
+          "revision": "seat-base-study-v6",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "bare_plate_preparation",
+              "path": "../../research/seat-base/section-and-comparison-plan-v1.json",
+              "sha256": "45be7c3dd79b84dd47dd453a31e01887c25c7cf012ce3bfc863fa429af889004",
+              "revision": "seat-base-study-v6"
+            },
+            {
+              "kind": "one_candidate_aperture_plan",
+              "path": "../../research/seat-base/first-aperture-plan-v2.json",
+              "sha256": "b9b68e53a5089d318ac5d24d158b9322a558bea7f396112382434d0d52da12be",
+              "revision": "seat-base-study-v6"
+            },
+            {
+              "kind": "six_observed_regions_bounded_plan",
+              "path": "../../research/seat-base/six-apertures-plan-v3.json",
+              "sha256": "004cd04a0ce6c03d5e2ff810ca69a5edb92e8ab505f2c0ff1c5e9269300cd27c",
+              "revision": "seat-base-study-v6"
+            },
+            {
+              "kind": "one_observed_ledge_plan",
+              "path": "../../research/seat-base/rear-raised-ledge-plan-v4.json",
+              "sha256": "4bfc77d7a2ad8b25c7b5091fdba4f92015dc2b6f04e5ff07a2b88ed80a73b4b6",
+              "revision": "seat-base-study-v6"
+            },
+            {
+              "kind": "one_observed_long_pad_plan",
+              "path": "../../research/seat-base/first-long-pad-plan-v5.json",
+              "sha256": "0ebc63ccdc7109d02353c6be8b71cec36408817d390f2b32a07016ff795b25c5",
+              "revision": "seat-base-study-v6"
+            },
+            {
+              "kind": "next_bounded_detail_plan",
+              "path": "../../research/seat-base/second-long-pad-plan-v6.json",
+              "sha256": "42e5e18a0fd9e15567363e6ded019ecea005261bd5af8f12c3c1cf0b06dc1bee",
+              "revision": "seat-base-study-v6"
+            }
+          ],
+          "reason": "Bounded authored outline/height/plate method, single-photo depth/camera indeterminate.",
+          "reviewed_at": "2026-10-21T08:28:02.942278+00:00"
+        },
+        "G3": {
+          "status": "rework",
+          "revision": "seat-base-study-v6",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "actual_bare_plate_export",
+              "path": "../../reviews/seat-base-study-v1/export-detail-check.json",
+              "sha256": "526de239097356d2fa9073f060649e91faeb98c0e8f2b74e8d3d4393c75f81b4",
+              "revision": "seat-base-study-v6"
+            },
+            {
+              "kind": "actual_one_aperture_export",
+              "path": "../../reviews/seat-base-study-v2/export-detail-check.json",
+              "sha256": "4c770811ea8d89e295690c2eed2ac9067bb6da1ff38e7f02404447210468d292",
+              "revision": "seat-base-study-v6"
+            },
+            {
+              "kind": "actual_six_aperture_export",
+              "path": "../../reviews/seat-base-study-v3/export-detail-check.json",
+              "sha256": "508129ff90f4885d27c3ae9963a093a6f2e8e24115d051711a15b07cb763b5a6",
+              "revision": "seat-base-study-v6"
+            },
+            {
+              "kind": "actual_ledge_export",
+              "path": "../../reviews/seat-base-study-v4/export-detail-check.json",
+              "sha256": "7c17334a46a041ffd53d4087e866585dfe02ac995dd1ab476196cf4efd248445",
+              "revision": "seat-base-study-v6"
+            },
+            {
+              "kind": "actual_ledge_gray_reflection_read",
+              "path": "../../reviews/seat-base-study-v4/gray-reflection-reading.json",
+              "sha256": "5bbdc49e2a0cebf6d3f5f138fce5a00622b0c59dd5a7787fd9bac558fd3767c2",
+              "revision": "seat-base-study-v6"
+            },
+            {
+              "kind": "actual_prior_detail_read",
+              "path": "../../reviews/seat-base-study-v5/gray-reflection-reading.json",
+              "sha256": "3e6f7cdb30d6b5bd3e50219eb6b0b65d0bd9066dd495a82ac46e2ccd4655cf9d",
+              "revision": "seat-base-study-v6"
+            }
+          ],
+          "reason": "Partial moldedbase study only, visible detail construction proceeds; exactcurrentidentity/cotes/fit/art reception unresolved.",
+          "reviewed_at": "2026-10-21T08:42:49.282801+00:00"
+        },
+        "G4": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G5": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G6": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G7": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G8": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-21T09:13:27.699539+00:00",
+  "scope": "Unfrozen r4 builder was rejected before saving/rendering",
+  "cause": "Implementation indentation error: added straightedge refinement body ran outside per-corner loop, leaving only one straightedge sampled and producing long erroneous constraint chords. This explains widespread upper and lower preflight failures inr4; it is not a reference uncertainty.",
+  "correction": "Move the straightedge refinement block inside each of four corner loops. All corners and original straightpoints restored; no threshold relaxed or surface reshaped to conceal error.",
+  "diagnostic_private": "/workspace/wewa-assets/work-in-progress/seat-base-study-v7/rejected-straight-loop-indent",
+  "art_accepted": false
+}

@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-21T09:19:21.585085+00:00",
+  "scope": "Unfrozen r6 actualsource/export passed strict but failed exact protected outerrim comparison",
+  "source_sha256": "48d257f9c7659c838d6cae0bf460173d406abe8b0c6e9b7e6cad638d993ce4fd",
+  "export_sha256": "ad744747bc78b426c7ed2beae2303491ece0572ff9fbd726da5731f3820e7ac3",
+  "finding": "114of5760outerrim trianglekeys differed after new uppercap expression. Original1..6 uses Float32Vector(height) plusFloat32Vector(th);7 had Float32Vector(double(height+th)). New sourceuppercap correctly excludes added underside ribs, but scalar addition order must preserve oldFloat32 storage at untouched rim.",
+  "correction": "Use Vector((x,y,baseheight))+Vector((0,0,th)) for uppercap in bothsourcegeometry and cap-preflight, restoring original storageorder without any geometry-output repair or sourceoutline deformation. Recheck actualexport protectedpositions and report normalcodec differences separately.",
+  "diagnostic_private": "/workspace/wewa-assets/work-in-progress/seat-base-study-v7/rejected-upper-float-order",
+  "art_accepted": false
+}
