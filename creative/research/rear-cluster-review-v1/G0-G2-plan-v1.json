@@ -1,0 +1,97 @@
+{
+  "identity": "Rear-cluster assembly review, not a new part",
+  "source_parameters": "assets-src/moto-components/rear-cluster-review-v1/parameters-v1.json",
+  "original_source_parts": [
+    {
+      "key": "tail-lamp-outer-lens-v2",
+      "component_id": "MOTO-TAIL-LAMP-OUTER-LENS-001",
+      "source": "assets-src/moto-components/tail-lamp-outer-lens-v2/tail-lamp-outer-lens-v2.blend",
+      "source_sha256": "453ea481f88eb380b5b0b100b4f68b94299365b3154331edd89272b8f345aa9f",
+      "export_files": [
+        "assets-src/moto-components/tail-lamp-outer-lens-v2/tail-lamp-outer-lens-v2.glb"
+      ],
+      "offset_rear_frame_m": [
+        0,
+        0,
+        0
+      ],
+      "rotation": "rear_facing"
+    },
+    {
+      "key": "tail-lamp-black-housing-v2",
+      "component_id": "MOTO-TAIL-LAMP-BLACK-HOUSING-001",
+      "source": "assets-src/moto-components/tail-lamp-black-housing-v2/tail-lamp-black-housing-v2.blend",
+      "source_sha256": "5f28a72240886a8c924318b11a19c6f934ae4923a14234b63a6bd6e900697ff0",
+      "export_files": [
+        "assets-src/moto-components/tail-lamp-black-housing-v2/tail-lamp-black-housing-v2.glb"
+      ],
+      "offset_rear_frame_m": [
+        0,
+        0,
+        0
+      ],
+      "rotation": "body_forward"
+    },
+    {
+      "key": "tail-lamp-upper-bracket",
+      "component_id": "MOTO-TAIL-LAMP-UPPER-BRACKET-001",
+      "source": "assets-src/moto-components/tail-lamp-upper-bracket/tail-lamp-upper-bracket-v1.blend",
+      "source_sha256": "b15e0c0e2fbc97507d08d9725dcb4a490a5c96bce8e2c2cc2a128f47befbe7ec",
+      "export_files": [
+        "assets-src/moto-components/tail-lamp-upper-bracket/tail-lamp-upper-bracket-v1.glb"
+      ],
+      "offset_rear_frame_m": [
+        0,
+        0.028,
+        -0.031
+      ],
+      "rotation": "rear_facing"
+    },
+    {
+      "key": "rear-plate-carrier-crossbar",
+      "component_id": "MOTO-REAR-PLATE-CARRIER-CROSSBAR-001",
+      "source": "assets-src/moto-components/rear-plate-carrier-crossbar/rear-plate-carrier-crossbar-v1.blend",
+      "source_sha256": "5a19e85936fa8dc761f8919de417ddfd1819ab68601672bc7b08820d40741ae8",
+      "export_files": [
+        "assets-src/moto-components/rear-plate-carrier-crossbar/rear-plate-carrier-crossbar-v1.glb"
+      ],
+      "offset_rear_frame_m": [
+        0,
+        -0.072,
+        0.0128
+      ],
+      "rotation": "rear_facing"
+    },
+    {
+      "key": "license-plate-wewa",
+      "component_id": "MOTO-LICENSE-PLATE-WEWA-001",
+      "source": "assets-src/moto-components/license-plate-wewa/license-plate-wewa-v1.blend",
+      "source_sha256": "42d50436be3fb82c958422b54d6fd0120a0762befc693a0f899e49ba07ce457f",
+      "export_files": [
+        "assets-src/moto-components/license-plate-wewa/license-plate-wewa-v1.glb"
+      ],
+      "offset_rear_frame_m": [
+        0,
+        -0.112,
+        0.015
+      ],
+      "rotation": "rear_facing"
+    }
+  ],
+  "datum": "+X pilot left, +Y rear, +Z up; handlebar-clamp shared datum, placements authored",
+  "placement_status": "Authored +/-40mm review positions, not measured installation",
+  "known_open_interfaces": [
+    "Wire carrier between upper bracket and crossbar absent",
+    "Plate holes x+/-77mm versus crossbar outer bores x+/-75mm:2mm nominal centre offset per side, no bolt/stack or fit accepted",
+    "Lamp retaining ears/screws, bushings and current-market installed geometry unresolved",
+    "Lens/body share the authored outer rim only; no optical internals or wall/retention fit established",
+    "Vehicle frame/rack/wheel not registered to this review pose"
+  ],
+  "protocol": [
+    "Build with source hashes pinned, append one mesh per original component unchanged",
+    "Inspect gray rear and quarter views before original-material previews",
+    "Actual native96 and GLB/Babylon review; compare exported world vertices to source parts under declared rigid transforms"
+  ],
+  "art_accepted": false,
+  "package_complete": false
+}

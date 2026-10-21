@@ -28,6 +28,12 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+### Revue du montage arrière : cinq pièces réunies
+
+![Montage arrière provisoire](creative/reviews/rear-cluster-review-v1/whole-quarter.png)
+
+[Sources, rendus et contrôles](creative/reviews/rear-cluster-review-v1/README.md). Arceau manquant et décalage des trous de plaque de 2 mm par côté signalés. Pose provisoire ; aucun lot déclaré terminé, aucun nouveau composant ajouté.
+
 - **P10** : [rear-indicator-left-stalk-v1 — sources, rendus et contrôles](creative/reviews/rear-indicator-left-stalk-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **P11** : [plaque fictive WEWA — revue technique G0 à G4](creative/reviews/license-plate-wewa-v1/DESIGN_REVIEW_V1.md). Dessin original contrôlé ; montage G5 et réception utilisateur ouverts.
 - **P02** : [différence de variante du porte-bagages](creative/research/rear-rack-variant-reconciliation-v1/G1-contradiction.json), appuyée par les [nouvelles références attribuées](creative/research/exterior-completion-next-v1/source-register.json).
