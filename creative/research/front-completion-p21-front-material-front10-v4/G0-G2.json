@@ -1,0 +1,22 @@
+{
+  "package": "P21",
+  "status": "G0-G2 applied: new material-only revision after independent rear freeze02",
+  "component_id": "MOTO-REAR-CARRIER-DS151068-STUDY-001",
+  "base_gray_source": "assets-src/moto-components/front-completion-p21-carrier-v3/carrier-gray.blend",
+  "base_gray_sha256": "5f064755bfda740230eb7481da1e8dd876a00a6e02b4460c2c43df87786f54a3",
+  "geometry_policy": "Reuse frozen gray v3 source untouched; no body remake, POSITION and NORMAL remain invariant",
+  "historical_G4_rework": "front-completion-p21-carrier-material-v3 remains DO NOT ADMIT, unchanged",
+  "defect_to_correct": "Polygon-center cast/machined roughness classification produced sawtooth boundary at mouth macro",
+  "proposed_method": [
+    "New original scalar roughness atlas, planar XY only on true flat Z27mm top land faces",
+    "Mask stays within existing source flat plateau: bounded segment capsule halfwidth3.2mm and mouth land circle4.0mm, smooth feather0.3mm; narrower than full casting land, not a measured OEM machining boundary",
+    "2048px original scalar image on130mm planar span; clean roughness.42 cast / .22 machined are author appearance estimates",
+    "Constant cast atlas texel on remaining surfaces, constant machined atlas texel on complete source collar/bore faces; no normal map, no procedural/photo grain or passivation claim",
+    "Pack original image into blend/export, inspect actual GLB roughness G channel and texture coordinates; intentional UV changes allowed",
+    "Canonical actual exported triangle POSITION/NORMAL parity must remain exact despite material primitive splitting",
+    "Reuse frozen gray native96 proof21. New material previews actually read before new native96 full/neutral/mouth/land macros"
+  ],
+  "material_fidelity_measured": false,
+  "mounted_fit": false,
+  "art_accepted": false
+}
