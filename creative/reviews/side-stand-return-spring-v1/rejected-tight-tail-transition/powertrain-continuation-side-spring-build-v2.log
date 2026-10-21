@@ -1,0 +1,16 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 01:31:14)
+Traceback (most recent call last):
+  File "/workspace/wewa/tools/powertrain_completion_p17_side_spring_v1.py", line 20, in <module>
+    (H/'parameters.json').write_text(json.dumps(P,indent=2)+'\n');bpy.ops.wm.read_factory_settings(use_empty=True);ob,report=round_wire('SIDE_STAND_SPRING_CONTINUOUS_WIRE_OPPOSED_OPEN_HOOKS',path,wire/2);(O/'centerline-clearance-check.json').write_text(json.dumps(report,indent=2)+'\n');ob['scope']=P['scope'];finish_source(H,O,P)
+                                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/wewa/tools/powertrain_continuation_sweep_v3.py", line 35, in round_wire
+    report=check_path(points,radius);tangents=[(points[min(i+1,len(points)-1)]-points[max(0,i-1)]).normalized()for i in range(len(points))];V=[];F=[];normal=None;previous=None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/wewa/tools/powertrain_continuation_sweep_v3.py", line 21, in check_path
+    minimum_curvature,minimum_index=min(curvature);assert minimum_curvature>radius*1.1,('Local wire fold',minimum_curvature,radius,minimum_index,[tuple(v)for v in points[minimum_index-1:minimum_index+2]])
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('Local wire fold', 0.0007238229159458304, 0.0009, 1100, [(-0.0044999998062849045, 0.014898350462317467, -0.0011327791726216674), (-0.0044999998062849045, 0.014996889047324657, -0.001206860993988812), (-0.0044999998062849045, 0.015104926191270351, -0.0012624704977497458)])
+
+Error: script failed, file: 'tools/powertrain_completion_p17_side_spring_v1.py', exiting.
+
+Blender quit
