@@ -249,10 +249,10 @@ def image_files(candidate):
     # versioned inspection proof; never mutate or reclassify older captures.
     engine_roots = list(dict.fromkeys([candidate.get("catalog_review", review), review]))
     versioned_paths = [p / version / "engine-check.json"
-                       for version in ("inspection-v4", "inspection-v3") for p in engine_roots]
+                       for version in ("inspection-v5", "inspection-v4", "inspection-v3") for p in engine_roots]
     engine_path = next((p for p in versioned_paths if p.is_file()), review / "engine-check.json")
     inspection_version = engine_path.parent.name.removeprefix("inspection-") if engine_path in versioned_paths else None
-    has_pixel_proof = inspection_version in ("v4", "v3")
+    has_pixel_proof = inspection_version in ("v5", "v4", "v3")
     engine_directory = engine_path.parent
     engine = read_json(engine_path)
     exports = {str(p.relative_to(ROOT)): sha(p) for p in candidate["glbs"]}
@@ -301,6 +301,28 @@ def image_files(candidate):
     return list(images.values()), notes, list(dict.fromkeys(evidence))
 
 
+def source_views_closed(candidate, images):
+    report = read_json(candidate["review"] / "render-report.json")
+    if report.get("source_sha256") != sha(candidate["source"]):
+        return False
+    views = report.get("views", [])
+    if not isinstance(views, list):
+        return False
+    expected = {Path(v.get("file") or v.get("path") or (str(v.get("name", "")) + ".png")).stem
+                for v in views if isinstance(v, dict)}
+    proved = {im["path"].stem for im in images if im["kind"].startswith("Rendu Blender")}
+    return bool(expected) and expected <= proved
+
+
+def current_display_text(text, candidate, images):
+    """Normalize old render-queue wording only when the exact series is proved."""
+    if source_views_closed(candidate, images):
+        text = re.sub(r"vues finales en cours", "vues finales disponibles", text, flags=re.I)
+        text = re.sub(r"(vues finales\s*\d*)\s+à produire", r"\1 disponibles", text, flags=re.I)
+        text = re.sub(r"vues prévues(?=\s*\d|\s*:)", "Vues disponibles", text, flags=re.I)
+    return text
+
+
 def correction_excerpt(candidate):
     blocks = []
     readme = candidate["review"] / "README.md"
@@ -309,6 +331,7 @@ def correction_excerpt(candidate):
         if re.search(r"correction|corrig|reprise|à reprendre|reste(?:nt)?|inconnu", para, re.I):
             plain = re.sub(r"!?\[([^\]]*)\]\([^)]*\)", r"\1", para)
             plain = re.sub(r"[*`#]", "", plain).strip()
+            plain = current_display_text(plain, candidate, candidate.get("images", []))
             if len(plain) > 40:
                 blocks.append(plain[:650] + ("…" if len(plain) > 650 else ""))
     return blocks[-2:]
@@ -384,7 +407,7 @@ def build():
 
     def card(c):
         source, review, record = c["source"], c["review"], c["record"]
-        title = c["entry"].get("label", source.stem)
+        title = current_display_text(c["entry"].get("label", source.stem), c, c["images"])
         state = "En revue" if c["images"] else "Construit · images en attente"
         record_current = record.get("source_revision")
         historical = record_current and source.stem != record_current

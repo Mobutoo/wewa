@@ -1,0 +1,758 @@
+{
+  "schema": "wewa-tank18-G0-G1-preparation-v1",
+  "date_utc": "2026-10-21",
+  "owner_future_fabrication": "lever_visual_audit (B)",
+  "scope": "Tank documentary preparation only. No geometry, Blender, shared registry, model source, Git or Ewutelo changes.",
+  "G0": {
+    "target": "Red Boxer 125 HD with long visor and USB, current official RDC appearance. Model year and VIN unknown. Game brand WEWA.",
+    "datum": "X positive: pilot LEFT. Y positive: rear. Z positive: up. Existing handlebar-clamp origin unchanged.",
+    "variant_identity": "Exact current tank OEM code is NOT established. D04 BM125 UG, D15 BM150 and 125X manuals remain conditional references.",
+    "decomposition": [
+      {
+        "id": "T01",
+        "name": "Coque supérieure et flancs rouge WEWA",
+        "status": "photo_inferred",
+        "evidence": [
+          "R00",
+          "R04",
+          "R01",
+          "R03",
+          "N01",
+          "N02"
+        ],
+        "construction_to_prepare": "Smooth broad upper crown and shoulders, lateral knee relief and rounded front; distinguish upper curvature from lower return. Longitudinal and transverse sections required, not sphere/ellipsoid substitution.",
+        "critical_unknowns": "Section widths/heights, asymmetry, sheet thickness, exact plane of lower seam, actual millimetres."
+      },
+      {
+        "id": "T02",
+        "name": "Coque inférieure, tunnel et jonction périphérique",
+        "status": "unknown",
+        "evidence": [
+          "D04:52 schematic only",
+          "D15:51 schematic only"
+        ],
+        "construction_to_prepare": "Separate lower pan, tunnel and perimeter seam only after identity/underside documentation.",
+        "critical_unknowns": "Tunnel entire section/depth, internal seam, welds, wall thickness, fuel-sender mounting and clearance toframe. No acceptable target underside."
+      },
+      {
+        "id": "T03",
+        "name": "Bouche de remplissage et portée du bouchon",
+        "status": "photo_inferred",
+        "evidence": [
+          "N01",
+          "N02",
+          "N04",
+          "D04:52"
+        ],
+        "construction_to_prepare": "Circular metal neck within a local shaped seat, plus two visible small nearby openings; functions of these holes are conditional against D04, not inferred blindly.",
+        "critical_unknowns": "Neck diameter/height, precise off-axis position, internal seating, top surface depression and hole spacing. No mm from photo."
+      },
+      {
+        "id": "T04",
+        "name": "Bouchon, charnière, serrure, retenue et joints",
+        "status": "documented_related_variant",
+        "part_candidates": [
+          "DS141009",
+          "39076101: M5 cap screw, quantity2",
+          "39217924: washer5.1×10×1mm; UG5gear alternative LDA00043:5.1×9×1mm"
+        ],
+        "evidence": [
+          "R00 cap projection",
+          "N09",
+          "N10",
+          "M125X",
+          "M150HD",
+          "D04:52"
+        ],
+        "construction_to_prepare": "Metal upper cap curved in both directions, hinge and key aperture separate; hidden latch/seals unresolved.",
+        "critical_unknowns": "Exact currentpartnumber, thickness, hinge travel, keyslot contour and undersurface. No complete underside image."
+      },
+      {
+        "id": "T05",
+        "name": "Brides et oreilles de la coque",
+        "status": "photo_inferred",
+        "evidence": [
+          "N01",
+          "N02",
+          "N04"
+        ],
+        "construction_to_prepare": "Rear terminal flange with elongated opening and a downward pierced ear actually visible on related detachedpart. Separate from body surface; flange relationship to currentframe not certified.",
+        "critical_unknowns": "Oppositeear, front underside cups and lugpositions, weld/bend sections, functionalassignment of lateral ear. Do not call every hole a chassis tank mount."
+      },
+      {
+        "id": "T06",
+        "name": "Appuis avant et arrière, rondelle et goupille",
+        "status": "documented_related_variant",
+        "part_candidates": [
+          "DJ141008 front damper x2",
+          "JV171001 rear damper x1",
+          "39105411 washer",
+          "39098308 snap pin"
+        ],
+        "evidence": [
+          "D04:53",
+          "N07",
+          "N08",
+          "N11"
+        ],
+        "construction_to_prepare": "Front grooved cylindrical rubber and rear rectangular profiled pad are discrete parts; frame abutments and fitting orientation remain unresolved.",
+        "critical_unknowns": "Dimensions, actual hidden socket/cup, fittedcompression, rear through-interface and exactRDCfitment. No tag/packaging size as a ruler."
+      },
+      {
+        "id": "T07",
+        "name": "Robinet, sortie, durite et fixation inférieure",
+        "status": "documented_related_variant",
+        "part_candidates": [
+          "PF171800 D04",
+          "PF171802 D15",
+          "PF171803 L185 related line",
+          "DK141041 clip"
+        ],
+        "evidence": [
+          "D04:52",
+          "D15:51",
+          "M125X",
+          "M150HD"
+        ],
+        "construction_to_prepare": "Separate tap assembly and hose, function ON/RES/OFF from related manuals.",
+        "critical_unknowns": "Currenttapidentity, undersideposition, flangeprofile, outletorientation and hiddenpassages; do not transfer D15tap to D04orcurrent automatically."
+      },
+      {
+        "id": "T08",
+        "name": "Jauge, joint et câblage éventuels",
+        "status": "unknown",
+        "part_candidates": [
+          "PF402600 D15 sensor only",
+          "JH171017 D04UG5gear O-ring only"
+        ],
+        "evidence": [
+          "D15:51",
+          "D04:52"
+        ],
+        "construction_to_prepare": "Reserve candidate sensor envelope as unknown. D15 shows four-nut flange; D04 lists an O-ring but no complete sensor geometry.",
+        "critical_unknowns": "CurrentRDC sender identity, access hole shape and exactposition. Fuel gauge onbike does not prove D15flange."
+      },
+      {
+        "id": "T09",
+        "name": "Marquage WEWA et finition",
+        "status": "user_authorized_original_design",
+        "evidence": [
+          "User instruction replaceBoxerbyWewa",
+          "R00/R04 appearance reference only"
+        ],
+        "construction_to_prepare": "Create original WEWA graphics after shellshape, UVandproportions. Use glossy red / cinematic realism as target, not newunlicensedphototexture.",
+        "critical_unknowns": "Paint/clearcoat measured spectra, filmthickness and exact roughness; lightingreflections are not albedotexture."
+      }
+    ]
+  },
+  "G1": {
+    "status": "partial; hidden geometry and metric fidelity unresolved",
+    "sources_actually_inspected": [
+      {
+        "file": "/workspace/wewa-assets/references/tank18-research-2026-10-21/UG-52PF1763-black.jpg",
+        "url": "https://www.winter-summer.ru/content/catalog/bajaj_52pf1763.jpg",
+        "bytes": 67972,
+        "sha256": "ef84baef1de3d7c53f792a1241b3c6734ee5b5b826db03e213f1af8959739e3f",
+        "actually_viewed": true,
+        "id": "N02",
+        "direction_and_observation": "Detached black tank, similar upper-oblique flank direction. Open filler neck, local mount openings and flange/ear visible. This is another coloured product, not the opposite side of N01.",
+        "status": "documented_related_variant",
+        "variant_limit": "BM150UG seller52PF1763; also D04BM125UG5gear. Black/green/yellow graphics differ from red target.",
+        "raster_size_px": [
+          1000,
+          1000
+        ],
+        "private_only": true,
+        "camera_calibrated": false,
+        "dimensions_measured": false,
+        "counts_as_independent_current_RDC_view": false,
+        "rights": "Private documentary comparison only; no redistribution, texture or decal license established.",
+        "content_kind": "photograph"
+      },
+      {
+        "file": "/workspace/wewa-assets/references/tank18-research-2026-10-21/UG-52PF1825-red.jpg",
+        "url": "https://www.winter-summer.ru/content/catalog/bajaj_52pf1825.jpg",
+        "bytes": 62951,
+        "sha256": "74a548ebbee963e41ef810c8c76ad2531014d8eec0def2dc64058d91b24fdddd",
+        "actually_viewed": true,
+        "id": "N01",
+        "direction_and_observation": "Single-flank upper oblique of detached red tank; cap absent. Broad shoulders, open filler neck, two nearby small openings, rear terminal flange with slot and a downward pierced ear are visible. Front-right/rear-left in this image is photo-inferred from mounted silhouette. Not a full top, opposite flank or underside.",
+        "status": "documented_related_variant",
+        "variant_limit": "BM150UG seller product52PF1825; also listed in D04 BM125UG5gear. Exact current125HDRDC installation unconfirmed.",
+        "raster_size_px": [
+          1000,
+          1000
+        ],
+        "private_only": true,
+        "camera_calibrated": false,
+        "dimensions_measured": false,
+        "counts_as_independent_current_RDC_view": false,
+        "rights": "Private documentary comparison only; no redistribution, texture or decal license established.",
+        "content_kind": "photograph"
+      },
+      {
+        "file": "/workspace/wewa-assets/references/tank18-research-2026-10-21/UG-52PF2452-greydecal.jpg",
+        "url": "https://www.winter-summer.ru/content/catalog/bajaj_52pf2452.jpg",
+        "bytes": 44100,
+        "sha256": "a9232764bdf79a39f805353ebfb42d05ee7f503935259348ba2c3c30e9c27e22",
+        "actually_viewed": true,
+        "id": "N03",
+        "direction_and_observation": "Small mounted lateral crop with grey/blue graphics; cap silhouette and upper crown visible. Adds no hidden-face coverage.",
+        "status": "documented_related_variant",
+        "variant_limit": "Seller BM150UG52PF2452; no exact target identity.",
+        "raster_size_px": [
+          1000,
+          1000
+        ],
+        "private_only": true,
+        "camera_calibrated": false,
+        "dimensions_measured": false,
+        "counts_as_independent_current_RDC_view": false,
+        "rights": "Private documentary comparison only; no redistribution, texture or decal license established.",
+        "content_kind": "photograph"
+      },
+      {
+        "file": "/workspace/wewa-assets/references/tank18-research-2026-10-21/prom-52PF0590-01.jpg",
+        "url": "https://images.prom.ua/6870083601_w1280_h1280_bak-toplivnyj-sin.jpg",
+        "bytes": 105540,
+        "sha256": "cf30a3266687174d18add29b986e29581ec729bb799a79a4ff9706efc7d521b8",
+        "actually_viewed": true,
+        "id": "N05",
+        "direction_and_observation": "Single blue detached flank in oblique view, long lower flange and pierced rear ear. Other generation/decal candidate; no underside or opposite face.",
+        "status": "documented_related_variant",
+        "variant_limit": "Seller labels52PF0590 Boxer125–150; second image contains X125 decal. Do not merge with current red125HD or adopt hidden structure.",
+        "raster_size_px": [
+          1080,
+          1080
+        ],
+        "private_only": true,
+        "camera_calibrated": false,
+        "dimensions_measured": false,
+        "counts_as_independent_current_RDC_view": false,
+        "rights": "Private documentary comparison only; no redistribution, texture or decal license established.",
+        "content_kind": "photograph"
+      },
+      {
+        "file": "/workspace/wewa-assets/references/tank18-research-2026-10-21/prom-52PF0590-02.jpg",
+        "url": "https://images.prom.ua/6870083602_w1280_h1280_bak-toplivnyj-sin.jpg",
+        "bytes": 391547,
+        "sha256": "f9e7be0c354717f96a03ea96aebe03257b8cacf8800706346011e729065f7c19",
+        "actually_viewed": true,
+        "id": "N06",
+        "direction_and_observation": "Catalogue plate with mounted blue motorcycle and decals, marked X125; NOT a second detached-part photograph.",
+        "status": "documented_related_variant",
+        "variant_limit": "Confirms seller family ambiguity despite broad125–150 title; not target geometry evidence.",
+        "raster_size_px": [
+          752,
+          942
+        ],
+        "private_only": true,
+        "camera_calibrated": false,
+        "dimensions_measured": false,
+        "counts_as_independent_current_RDC_view": false,
+        "rights": "Private documentary comparison only; no redistribution, texture or decal license established.",
+        "content_kind": "catalogue_plate"
+      },
+      {
+        "file": "/workspace/wewa-assets/references/tank18-research-2026-10-21/mount-DJ141008.jpg",
+        "url": "https://bajajmatriz.com/wp-content/uploads/2023/11/DJ141008.jpg",
+        "bytes": 115349,
+        "sha256": "0f720ca6204e265851a966f14e5c61faefc0ae11a058582b80f9250023218fdc",
+        "actually_viewed": true,
+        "id": "N07",
+        "direction_and_observation": "Isolated front tank rubber, one solid round face and grooved outer cylinder visible. Rear/socket and actual mounting orientation hidden.",
+        "status": "documented_related_variant",
+        "variant_limit": "Seller names DJ141008 and Boxer150 among multiple applications. D04:53 item8 lists front damper quantity2; exact RDC fit unconfirmed.",
+        "raster_size_px": [
+          1210,
+          1210
+        ],
+        "private_only": true,
+        "camera_calibrated": false,
+        "dimensions_measured": false,
+        "counts_as_independent_current_RDC_view": false,
+        "rights": "Private documentary comparison only; no redistribution, texture or decal license established.",
+        "content_kind": "photograph"
+      },
+      {
+        "file": "/workspace/wewa-assets/references/tank18-research-2026-10-21/tank99rpm.jpg",
+        "url": "https://www.99rpm.com/media/catalog/product/cache/7/image/1800x/9a78f71f122e46b8368bfe0b8f2ae15a/b/o/boxer_bm150_fuel_tank.jpg",
+        "bytes": 91134,
+        "sha256": "bae4ce17498da26ecca77fc7dd87ec67f13b8ba694d25e81d69bea9fa776a6c4",
+        "actually_viewed": true,
+        "id": "N11",
+        "direction_and_observation": "Exploded line drawing showing two front dampers, one rear pad and snap-pin/washer relationship. A schematic, NOT a new physical-part photo or plan to scale.",
+        "status": "documented_related_variant",
+        "variant_limit": "99rpm explicitly BM150BS3 2011–2013, tankPF7101X3/PF71013E/PF71013F. Distinct from UG painted codes and current target.",
+        "raster_size_px": [
+          800,
+          800
+        ],
+        "private_only": true,
+        "camera_calibrated": false,
+        "dimensions_measured": false,
+        "counts_as_independent_current_RDC_view": false,
+        "rights": "Private documentary comparison only; no redistribution, texture or decal license established.",
+        "content_kind": "line_drawing"
+      },
+      {
+        "file": "/workspace/wewa-assets/references/tank18-research-2026-10-21/UG-52PF1825-bajajonline.jpg",
+        "url": "https://bajajonline.ru/upload/iblock/b37/5gver99hoi7s3l54isufydo3z4d1hp13.jpg",
+        "sha256": "55510aada87b66f3b695d4b2400bb98a68dfc6568a8bfa3a787219ec042931af",
+        "bytes": 100642,
+        "actually_viewed": true,
+        "id": "N04",
+        "direction_and_observation": "Same red tank exposure as N01, with original surroundings and wider context; same scratches, reflections and decal alignment. This is a secondary archive of the same camera view, not independent validation.",
+        "status": "documented_related_variant",
+        "variant_limit": "Seller52PF1825; no certified exact currentRDC identity.",
+        "raster_size_px": [
+          1195,
+          753
+        ],
+        "private_only": true,
+        "camera_calibrated": false,
+        "dimensions_measured": false,
+        "counts_as_independent_current_RDC_view": false,
+        "rights": "Private documentary comparison only; no redistribution, texture or decal license established.",
+        "content_kind": "photograph"
+      },
+      {
+        "file": "/workspace/wewa-assets/references/tank18-research-2026-10-21/cap-DS141009-front.png",
+        "url": "https://partonwheels.com/wp-content/uploads/2023/11/DS141009-optimized.png",
+        "sha256": "1f648764400fd7a616ac3cc78e393dec182fb6330793bca261d9f12d6ced9246",
+        "bytes": 65307,
+        "actually_viewed": true,
+        "id": "N09",
+        "direction_and_observation": "Cap on packaging, raised rounded metal cover, central key opening and edge hinge visible, near-normal upper view. No dimensions.",
+        "status": "documented_related_variant",
+        "variant_limit": "Seller DS141009 for BM150BS3 2011–2013, not certified current125HDRDC.",
+        "raster_size_px": [
+          267,
+          267
+        ],
+        "private_only": true,
+        "camera_calibrated": false,
+        "dimensions_measured": false,
+        "counts_as_independent_current_RDC_view": false,
+        "rights": "Private documentary comparison only; no redistribution, texture or decal license established.",
+        "content_kind": "photograph"
+      },
+      {
+        "file": "/workspace/wewa-assets/references/tank18-research-2026-10-21/cap-DS141009-oblique.png",
+        "url": "https://partonwheels.com/wp-content/uploads/2023/11/DS141009-1-optimized.png",
+        "sha256": "825dc7d70f9a9633c66a258bb360813b7fc389be60284e678efaf50d99e7bebd",
+        "bytes": 22795,
+        "actually_viewed": true,
+        "id": "N10",
+        "direction_and_observation": "Same cap family, another upper oblique view. A light metallic top and key opening are visible. THIS IS NOT AN UNDERSIDE PHOTO.",
+        "status": "documented_related_variant",
+        "variant_limit": "Same DS141009 related model. Do not infer latch, gasket, underside or internal lock from this view.",
+        "raster_size_px": [
+          266,
+          266
+        ],
+        "private_only": true,
+        "camera_calibrated": false,
+        "dimensions_measured": false,
+        "counts_as_independent_current_RDC_view": false,
+        "rights": "Private documentary comparison only; no redistribution, texture or decal license established.",
+        "content_kind": "photograph"
+      },
+      {
+        "file": "/workspace/wewa-assets/references/tank18-research-2026-10-21/mount-JV171001-prom.jpg",
+        "url": "https://images.prom.ua/6597277340_w1280_h1280_dempfer-toplivnogo-baka.jpg",
+        "sha256": "71b86f3b431e8c447b73ad77428ef2a933be8ac54717e7ef1aa32c740c570fdf",
+        "bytes": 89504,
+        "id": "N08",
+        "actually_viewed": true,
+        "direction_and_observation": "Rectangular rubber rear pad, rounded edges and raised central circular feature with radial recesses; packaging visibly says JV171001 / DAMPER TANK REAR. Back/socket and actual fitted orientation hidden.",
+        "status": "documented_related_variant",
+        "variant_limit": "Seller Boxer125/150, package matches catalogueJV171001. No ruler or exact currentRDC fit proof.",
+        "raster_size_px": [
+          1280,
+          963
+        ],
+        "private_only": true,
+        "camera_calibrated": false,
+        "dimensions_measured": false,
+        "counts_as_independent_current_RDC_view": false,
+        "rights": "Private documentary comparison only; no redistribution, texture or decal license established.",
+        "content_kind": "photograph"
+      },
+      {
+        "id": "R00",
+        "file": "/workspace/wewa-assets/references/body-powertrain-18/rotation-00.png",
+        "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/00.png",
+        "sha256": "82be9285506c65dd8ff3fdba000fe963587548e306691844ed774f685870ea40",
+        "actually_viewed_this_task": true,
+        "status": "documented_exact_variant",
+        "claim_scope": "Current125HD publishedRDC appearance only; capture/render origin and camera unknown. No OEMpartnumber or hidden geometry from these pixels."
+      },
+      {
+        "id": "R01",
+        "file": "/workspace/wewa-assets/references/body-powertrain-18/rotation-01.png",
+        "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/01.png",
+        "sha256": "57187baaaeae474b045bdad064533084926dfc204688265463d01cf91f1adf02",
+        "actually_viewed_this_task": true,
+        "status": "documented_exact_variant",
+        "claim_scope": "Current125HD publishedRDC appearance only; capture/render origin and camera unknown. No OEMpartnumber or hidden geometry from these pixels."
+      },
+      {
+        "id": "R03",
+        "file": "/workspace/wewa-assets/references/body-powertrain-18/rotation-03.png",
+        "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/03.png",
+        "sha256": "c19b64be0100daa1ac2e27e6e879b34afbc2ede2553e291d86934f0a4005ad8e",
+        "actually_viewed_this_task": true,
+        "status": "documented_exact_variant",
+        "claim_scope": "Current125HD publishedRDC appearance only; capture/render origin and camera unknown. No OEMpartnumber or hidden geometry from these pixels."
+      },
+      {
+        "id": "R04",
+        "file": "/workspace/wewa-assets/references/body-powertrain-18/rotation-04.png",
+        "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/04.png",
+        "sha256": "b086dedb4a2bcbc2644aab9578a3d1efa7445e163459b444b3687047bf2e8e02",
+        "actually_viewed_this_task": true,
+        "status": "documented_exact_variant",
+        "claim_scope": "Current125HD publishedRDC appearance only; capture/render origin and camera unknown. No OEMpartnumber or hidden geometry from these pixels."
+      },
+      {
+        "id": "R05",
+        "file": "/workspace/wewa-assets/references/body-powertrain-18/rotation-05.png",
+        "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/05.png",
+        "sha256": "51bb532a693433ba382aa6a25048010031eab1749bef88e341bb67c9c4af0229",
+        "actually_viewed_this_task": true,
+        "status": "documented_exact_variant",
+        "claim_scope": "Current125HD publishedRDC appearance only; capture/render origin and camera unknown. No OEMpartnumber or hidden geometry from these pixels."
+      },
+      {
+        "id": "R07",
+        "file": "/workspace/wewa-assets/references/body-powertrain-18/rotation-07.png",
+        "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/07.png",
+        "sha256": "cec77fe44f3203a390ce6cf313f5958a7746a25a6df0ae28b25080eb838a9f76",
+        "actually_viewed_this_task": true,
+        "status": "documented_exact_variant",
+        "claim_scope": "Current125HD publishedRDC appearance only; capture/render origin and camera unknown. No OEMpartnumber or hidden geometry from these pixels."
+      },
+      {
+        "id": "M125X",
+        "original_private_path": "/workspace/wewa-assets/references/forward-cockpit-18/owners-ke-125-x.pdf",
+        "url": "https://www.bajajauto.com/en-ke/-/media/globalbajajauto/common-media/owners-manual/boxer/125-x.pdf",
+        "sha256": "b05535dbfe20ccd76fdcb24c84fdf5d0779669eeb4066506f040a473c63e797a",
+        "pdf_sheet_1based": 9,
+        "printed_page": 6,
+        "viewed_derivative": "/workspace/wewa-assets/references/tank18-research-2026-10-21/owners-ke-125-x.pdf-sheet9.png",
+        "derivative_sha256": "4ef3525c24aa97a59d745247d176b9a05851a7e3e9ccc1155e4b6ad21341c377",
+        "actually_viewed_this_task": true,
+        "status": "documented_related_variant",
+        "observation": "Mounted upper-flank closeup with cap and separate tap closeup. Does not expose bottom/tunnel or top perpendicular.",
+        "function_documented": "Insert key, rotate clockwise and lift cap. Press to lock. Tap ON/RES/OFF documented; reserve threshold and exact RDCmechanism unproven.",
+        "claim_limit": "Manufacturer manual for125X or150HD/BM150X, not exact current125HDRDC. Two manuals do not certify a shared shell."
+      },
+      {
+        "id": "M150HD",
+        "original_private_path": "/workspace/wewa-assets/references/forward-cockpit-18/owners-rdc-150-hd.pdf",
+        "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/owners-manual/boxer/150-hd.pdf",
+        "sha256": "400daa2017beab790b99e7bd7ccd6f7924d599bf2498adcadb153e4d9d11757c",
+        "pdf_sheet_1based": 10,
+        "printed_page": 7,
+        "viewed_derivative": "/workspace/wewa-assets/references/tank18-research-2026-10-21/owners-rdc-150-hd.pdf-sheet10.png",
+        "derivative_sha256": "94f2d8887426fc5e7a339d5e069e3db8db8255e76c097726cff12ac6421003bf",
+        "actually_viewed_this_task": true,
+        "status": "documented_related_variant",
+        "observation": "Mounted upper-flank closeup with cap and separate tap closeup. Does not expose bottom/tunnel or top perpendicular.",
+        "function_documented": "Insert key, rotate clockwise and lift cap. Press to lock. Tap ON/RES/OFF documented; reserve threshold and exact RDCmechanism unproven.",
+        "claim_limit": "Manufacturer manual for125X or150HD/BM150X, not exact current125HDRDC. Two manuals do not certify a shared shell."
+      },
+      {
+        "id": "D04",
+        "private_path": "/workspace/wewa-assets/references/body-powertrain-18/D04.pdf",
+        "url": "https://motobro.ua/files/Boxer_BM_125_UG_Provisional_SPC_%282%29.pdf",
+        "sha256": "5228ed1fb3f5ab9ec1503864bf6cccf66bd429ece78adb30516f9904a099372e",
+        "sheets_1based_actually_viewed_this_task": [
+          52,
+          53
+        ],
+        "status": "documented_related_variant",
+        "limits": "Exploded assembly only; no scale, no proof of exact currentRDC shell. D04UG5gear distinctions retained."
+      },
+      {
+        "id": "D15",
+        "private_path": "/workspace/wewa-assets/references/body-powertrain-18/D15.pdf",
+        "url": "https://reypiston.com/wp-content/uploads/2024/04/Boxer-BM150-SPC.pdf",
+        "sha256": "2ccf8194176b00e31d4b210d5ba10cd97182b06aa376e5a0dd79f3a19dfc2f0e",
+        "sheets_1based_actually_viewed_this_task": [
+          51
+        ],
+        "status": "documented_related_variant",
+        "limits": "Exploded assembly only; no scale, no proof of exact currentRDC shell. D04UG5gear distinctions retained."
+      }
+    ],
+    "view_matrix": [
+      {
+        "view": "RiderRIGHT profile",
+        "available": [
+          "R00"
+        ],
+        "what_it_constrains": "Open projected upper/front/lower silhouette and seatinterface; original profile-landmarks intervals.",
+        "still_missing": "True width/depth, hiddenreartail, cameraexactness."
+      },
+      {
+        "view": "RiderLEFT opposite profile",
+        "available": [
+          "R04"
+        ],
+        "what_it_constrains": "Otheractualcurrentflank; refutes blindcopyofdecals and lower details.",
+        "still_missing": "No top/bottom; matching mmrequirescameraanddepth. WorkingcameraR04retainsbarresidual(+19.4,-13.6)px."
+      },
+      {
+        "view": "Front obliques",
+        "available": [
+          "R01",
+          "R03"
+        ],
+        "what_it_constrains": "Frontroll and broadshoulders, partial depth ordering.",
+        "still_missing": "Headlight/forkocclude front/tunnel; no perpendicular cross-section."
+      },
+      {
+        "view": "Rear obliques",
+        "available": [
+          "R05",
+          "R07"
+        ],
+        "what_it_constrains": "Crowntransition and actual seatnoseoverlap.",
+        "still_missing": "Seat hides rearclosureandmounts."
+      },
+      {
+        "view": "Upper-oblique detachedrelatedtank",
+        "available": [
+          "N01",
+          "N02",
+          "N04"
+        ],
+        "what_it_constrains": "Fillerneck/seat, crown-toflanktransition, terminalflange and oneear.",
+        "still_missing": "Oppositeflank, perpendicular topwidth, closedunderside; N04 repeatsN01exposure."
+      },
+      {
+        "view": "Topperpendicular currenttank",
+        "available": [],
+        "what_it_constrains": null,
+        "still_missing": "Required for widthbylongitudinalstation, caplocation and shoulder/kneetaper. Noexactcurrentviewobtained."
+      },
+      {
+        "view": "Bottom currentorconfirmedUGtank",
+        "available": [],
+        "what_it_constrains": null,
+        "still_missing": "Tunnel, seam, frontcup, rearattachment, sensor/tapflanges. Ensonsundersidewrong/unconfirmedgeneration rejected."
+      },
+      {
+        "view": "Cap isolated related",
+        "available": [
+          "N09",
+          "N10"
+        ],
+        "what_it_constrains": "Twoupperviews, crown and keyaperture/hinge visibility.",
+        "still_missing": "No underside/latchorfullassembly; not exactcurrentpart."
+      },
+      {
+        "view": "Mountisolatedrelated",
+        "available": [
+          "N07",
+          "N08"
+        ],
+        "what_it_constrains": "Outerfrontgroovedrubber and rearrectangularpadshape.",
+        "still_missing": "Hiddenbacks, scale, fittedorientation, chassisinterfaces andcurrentcompatibility."
+      }
+    ],
+    "section_matrix": [
+      {
+        "feature": "Avant prèsdecolonne",
+        "required": "Transverse outersection and frontalopening, seam and steeringclearance",
+        "supported": "R01/R03frontroll only",
+        "status": "partial_photo_projection",
+        "blocked_by": "Frontheadstockoccultation and noface/underside."
+      },
+      {
+        "feature": "Boucheetépauleavant",
+        "required": "Two transversesectionsbefore/throughneck plus longitudinalcrowncurve",
+        "supported": "R00/R04upperprofiles; N01/N02upperoblique; capenvelopeinprofile-landmarks",
+        "status": "conditional_estimate_only",
+        "blocked_by": "Topwidth, capaxis and physicaldimensionsunknown."
+      },
+      {
+        "feature": "Largeurmaximale",
+        "required": "Truecross-section of broadshouldersandupper/lowerflank",
+        "supported": "Obliquecurrentimagesqualitativelywide",
+        "status": "unknown_metric_section",
+        "blocked_by": "Perspective and lackofperpendiculartop/front."
+      },
+      {
+        "feature": "Creuxgenoux/flancsmilieu",
+        "required": "Separateleft/rightcurves, lowerreturn and varyingcurvature",
+        "supported": "Currentflanks plus detachedrelatedphotossurface",
+        "status": "partial_photo_projection",
+        "blocked_by": "Specular/decalgradients cannot uniquelyprovide depth."
+      },
+      {
+        "feature": "Raccordnezdeselle",
+        "required": "Transverse taper, two shoulderjoints, hiddenrearclosure",
+        "supported": "R00/R04jointopencontours and R05/R07",
+        "status": "visible_interface_only",
+        "blocked_by": "Seatcoversrear; materialboundarynotfree-shellsilhouette."
+      },
+      {
+        "feature": "Brideterminalearrière",
+        "required": "Flange section, opening/eargeometry and padinterface",
+        "supported": "N01/N02/N04 and D04:53assemblyconditional",
+        "status": "related_variant_only",
+        "blocked_by": "Currentidentity, oppositeear, bent/weldedsection and mmunknown."
+      },
+      {
+        "feature": "Tunnel/paninférieur",
+        "required": "Longitudinaltunnelprofile and transversecutsatfront/middle/rear",
+        "supported": "Noapprovedtargetunderside",
+        "status": "blocked_unknown",
+        "blocked_by": "Do not fill with Ensons/Kawasaki geometry."
+      }
+    ]
+  },
+  "documented_vs_bounded": {
+    "documented_exact_variant": [
+      {
+        "property": "Publishedfuelcapacity",
+        "value": 11,
+        "unit": "L",
+        "source": "OfficialRDC125HDpage, alreadyarchived",
+        "limit": "Capacitynotexteriorgeometry; cannotderivewidth, sheetarea or length."
+      }
+    ],
+    "documented_related_variant": [
+      "D04:52 capDS141009, twoM5screws, standardwasher5.1x10x1 versusUG5gear5.1x9x1; variantretained.",
+      "D04:53 frontdamperDJ141008x2, rearJV171001x1, washer39105411andpin39098308.",
+      "D04:64 tank+decal52PF1763ebonyblack /52PF1825cocktailwineredUG5gear; codesconfirmcataloguefamily, notcurrentRDCfitment.",
+      "D04:52 pipePF171803L185 identifiesrelatedhoselength, nottankmm.",
+      "D15:51 tapPF171802 and sensorPF402600 differfromD04tapPF171800; identity/currentfittingunresolved."
+    ],
+    "bounded_only_in_images": "Existingprofile-landmarks.json gives opencontour intervals of±2–7px dependinglandmark; keep its individuallimits, no singlefalsepixelprecision. Nativephotocameraunresolved, silhouettecurvesareprojectionconstraints only.",
+    "conditional_estimates_possible": [
+      "Initialsurfacecrown/shouldercontinuity and visibleflank curvature from currentprofiles+obliques.",
+      "Candidatecapoutlineandrubberouterforms from correctlyattributedrelatedphotos, labelledestimated forcurrenttarget.",
+      "Relativeorderofvisibleflange/neck/ear inoneunscaledrelatedoblique."
+    ],
+    "remain_unknown": [
+      "Anycertifiedtankexteriormmdimension, maximumwidth, trueheight/length, sheetthickness andmaterialgrade.",
+      "Perpendicularcurrenttopview, exactcapaxis/neckdiameter, left/rightasymmetry.",
+      "Completebottom/tunnel andfrontcups/hiddenrearmounts, sections, holecentresandclearances.",
+      "Sender/tapflanges oncurrenttank, internalpartgeometry and fittedrubbercompression."
+    ],
+    "no_bounds_invented": "No millimetres from pixels, no scaling from packaging or weight, no shape recovered from capacity, and no assumed orthographic source camera."
+  },
+  "negative_or_redundant_sources": [
+    {
+      "source": "Ensons/Kawasaki earlierB18-TANK-LEGACY",
+      "existing_private": "/workspace/wewa-assets/references/bodywork18-supplement/tank-eauto-299.jpg",
+      "reinspected_this_task": true,
+      "decision": "Rejectedforcurrenttankstructure; preservepriorwrong/unconfirmedgenerationfinding. Its excellentundersideisnotcurrentevidence.",
+      "existing_source_report": "creative/research/bodywork18-supplement.json"
+    },
+    {
+      "source": "N04versusN01",
+      "decision": "Sameexposurewithdifferentcrop/background; countasoneview, notindependentcontrol."
+    },
+    {
+      "source": "N03greydecalcrop",
+      "decision": "Relatedmountedcropaddsnohiddenview."
+    },
+    {
+      "source": "N06Promsecondimage",
+      "decision": "CatalogueplatewithX125decals, notsecondtankphoto; broad125–150titleinsufficient."
+    },
+    {
+      "source": "SafexPF71013F",
+      "private_page": "/workspace/wewa-assets/references/tank18-research-2026-10-21/tank-safex.html",
+      "decision": "MainimageURLpointswholeBAJAJ_BOXER_150_BM.jpg; nopartsphotoacceptedordownloaded. DescriptionmixesGenuineandZadonaftermarketclaim; packing600gnotdimension."
+    },
+    {
+      "source": "MercadoLibrePF71013F",
+      "decision": "HTTP403; noimageviewed, nofactinferredfrominaccessibility."
+    },
+    {
+      "source": "TekaSomba125HDlisting",
+      "private_page": "/workspace/wewa-assets/references/tank18-research-2026-10-21/teka.html",
+      "decision": "Fetchedpublicpageonlyappshell/genericlogo; noactuallistingphotos exposed instaticresponse. NohiddenAPI/credentialaccessattempted."
+    },
+    {
+      "source": "PreviouslyblockedMotokvartal52PF1825/Pavithra/Seahawk",
+      "decision": "Notretried; existingnegativeevidencekept. Newwinterphotosareindependentlyattributedsources, notclaimsofbypassingblocks."
+    },
+    {
+      "source": "N09/N10sellerdescription",
+      "decision": "Productphotosusefulrelatedupperviews; genericcopydescribesanelectricalswitch, irrelevanttocapmechanicalmaterial/function; do notadoptthatboilerplate."
+    }
+  ],
+  "read_only_existing_inputs": [
+    {
+      "file": "creative/research/body-powertrain-18/report.json",
+      "sha256": "9c6206b0be9c77dd98e0d0de332c2815a97a319b7ae79f3cd9add5b82793b9c7"
+    },
+    {
+      "file": "creative/research/body-powertrain-18/archives.json",
+      "sha256": "bb40a0a47e246a46845c400ffd84274594db23cead74dc2b6ebc3f24bcbf3242"
+    },
+    {
+      "file": "creative/research/body-powertrain-18/profile-landmarks.json",
+      "sha256": "b2ff3fda8486e19268506b6c5f4a84499a9b6161f35fdc9a13a8fa2b5f01807c"
+    },
+    {
+      "file": "creative/research/bodywork18-supplement.json",
+      "sha256": "bb211fb33a825fadd1132c45f0bfb27ee7dce9ae46087ee311fbe9186aa8e4c3"
+    },
+    {
+      "file": "creative/workflow/motorcycle-datums-v1.json",
+      "sha256": "19bf9708f8777b6216ab0c7d487f9ff685e3bedcdd9806f3c9985db78b5e5c9a"
+    },
+    {
+      "file": "creative/research/reference-camera-studies/camera-studies.json",
+      "sha256": "c0fe1b65bee19f7d01afa08fd201fdaa0d51f1558282a8a13bf5f66a97fab00b"
+    }
+  ],
+  "G2_next_work_without_fabricating_unknowns": [
+    "Freeze identity and provenance for each contour before camera alignment. Keep R00/R04 as primary current flanks and reserve a current oblique for control.",
+    "Use existing camera studies only as estimated comparison aids; retain the R04 bar residual(+19.4,-13.6)px and do not deform the tank to absorb it.",
+    "Prepare longitudinal crown and lower-return curves with feature-based cross-sections. Label observable surfaces photo_inferred and all unsupported widths/depths estimated or unknown.",
+    "Keep cap/neck, lower pan/tunnel, front/rear dampers and tap/sender as separate interfaces. No hidden Ensons geometry transfer.",
+    "Before claiming shape fidelity, obtain missing top/bottom views or leave critical interfaces explicitly blocked. A generic closed mesh does not resolve them."
+  ],
+  "next_evidence_priority": [
+    {
+      "priority": 1,
+      "capture": "Identifiedcurrent125HDRDCtank, perpendiculartop plusruler inplane, bothfront/rearfaces. Includeuncoveredcapseat.",
+      "resolves": "Widthversusstation, crown/kneetaper, caplocation andvariantidentity."
+    },
+    {
+      "priority": 2,
+      "capture": "Samepartbottom, bothobliques andcloseupfrontcups/rearflange, stamping/partcode, scale.",
+      "resolves": "Tunnel, shellseam, mountassignment andtap/senderflanges; currentlycriticalunknowns."
+    },
+    {
+      "priority": 3,
+      "capture": "Currentcapopen/closed/bottom andactualmountedrubbers separated, uncompressed andfittedorientation.",
+      "resolves": "Hinge/latch/sealclearances, rubbersocketgeometry andfitfunction."
+    }
+  ],
+  "rights": "All reference pixels remain private. Public output contains facts, URLs, hashes and original descriptions only. WEWA artwork must be original; no BOXER decal copy or photo texture.",
+  "result": {
+    "new_downloaded_image_files_actually_opened": 11,
+    "new_exact_current_RDC_views": 0,
+    "new_certified_tank_mm_dimensions": 0,
+    "new_geometry": false,
+    "G1_closed": false,
+    "G8_acceptance": false,
+    "useful_advance": "Isolated related UG red/black upper obliques expose the mouth, flange and one ear. Identified related front/rear rubber photos and cap upper views improve decomposition without resolving the underside."
+  },
+  "official_identity_source": {
+    "url": "https://www.bajajauto.com/fr-cd/bikes/boxer-125hd",
+    "private_cached_page": "/workspace/wewa-assets/references/body-powertrain-18/bajaj-boxer125hd-rdc.html",
+    "sha256": "49e6b4b03405f49d22f7c910eb5548bd21a92bc0ae73e2d175ba6f196b068d63",
+    "usage": "Existing RDC page identifies the appearance reference and published11L capacity; it does not identify a tank OEMcode."
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "schema": "wewa-independent-dial-homography-study-v1",
+  "date_utc": "2026-10-21",
+  "author_role": "cam_research independent documentary study",
+  "status": "conditional_comparison_only_not_calibration",
+  "scope": "Read-only dial research; no Blender/render, geometry, artwork, pivot, source angle or contract changes.",
+  "inputs": [
+    {
+      "path": "creative/research/instruments-v2/speed-dial-calage.json",
+      "sha256": "9d4507b578cf6b0c1a141954ebc747f9e1f80a88335cd8b8aa9180e96b8228f4"
+    },
+    {
+      "path": "creative/research/instruments-v2/prepare_dial_calage.py",
+      "sha256": "8a51560df1f9a898221b4d6465147074a1173372cf0d9803b8d806d3f76eb1aa"
+    },
+    {
+      "path": "creative/research/instruments-v2/dial-artwork-plan.json",
+      "sha256": "f3334854c2ad4b50d687f1870348769e38db32f4399230d0059211d519c2fcf5"
+    },
+    {
+      "path": "/workspace/wewa-assets/references/instruments/official-rdc-usb-meter.png",
+      "sha256": "eb8e10531cbd7f37c1825044a535c07a8549872975440233d86d581b6e3c2663"
+    }
+  ],
+  "photo_inspection": {
+    "actually_opened": "/workspace/wewa-assets/references/instruments/official-rdc-usb-meter.png",
+    "native_size_px": [
+      1000,
+      600
+    ],
+    "new_landmark_readings": false,
+    "variant_caveat": "RDC125HD page / BM150 USB feature filename; exact OEM variant not certified."
+  },
+  "data": {
+    "rim_points": 16,
+    "major_mark_anchors": 6,
+    "speeds_kmh": [
+      40,
+      60,
+      80,
+      100,
+      120,
+      140
+    ],
+    "excluded": "0 occluded by needle,20 uncertain. Artwork-plan boxes are approximate and not independent new points.",
+    "point_uncertainty_px": {
+      "each_coordinate": 3,
+      "kind": "inherited approximate manual reading, not measured Gaussian sigma"
+    },
+    "native_uv": "u right, v down, origin top-left"
+  },
+  "assumptions": [
+    "The 16 printed rim anchors lie near one planar circular border; plane/circle are hypotheses, not certified facts.",
+    "The six major-mark anchors lie on equally spaced positive radial directions; their distances from centre are NOT forced equal.",
+    "The local homography uses theta40=0 and theta(s)=-(s-40)/20*delta.",
+    "Normalized image coordinates have arbitrary origin taken from input ellipse and scale80px; this is not a measured physical pivot.",
+    "A conic has projective ambiguities; varying the angular step can be offset by changes in rectification and projected centre.",
+    "Camera intrinsics, lens/glass refraction, printed mark radial support and exact coplanarity are unmeasured."
+  ],
+  "method": {
+    "optimizer": "scipy.optimize.least_squares local bounded fit",
+    "bounds": {
+      "normalized_affine_entries": [
+        -3,
+        3
+      ],
+      "normalized_image_translation": [
+        -0.5,
+        0.5
+      ],
+      "each_projective_term": [
+        -0.6,
+        0.6
+      ],
+      "free_step_deg": [
+        20,
+        60
+      ]
+    },
+    "residuals": "Approximate Sampson conic normal distance plus signed perpendicular image distance anchor→projected radial line. Neither is full 2D footprint error.",
+    "weight": "Both residual classes divided by3px; a working normalization, not statistical noise calibration.",
+    "initialization": "Ellipse from retained rim points and phase from first retained anchor only; conditional common-radius initialization then final radial-direction fit.",
+    "validation": "Each mark held out in turn; four interleaved groups of4rim points held out. All from one photo, not independent views.",
+    "sensitivity": "120 independent coordinate perturbations uniform[-3,3]px, seed4440, free-step projective refits. This is not a probability model or a confidence interval.",
+    "limits": "One deterministic initialization per fit, no proof of globally optimal or exhaustive feasible parameter set."
+  },
+  "model_summary": [
+    {
+      "perspective": false,
+      "fixed_delta_deg": 38.57142857142857,
+      "fitted_delta_deg": 38.57142857142857,
+      "max_training_ray_distance_px": 6.713032186136168,
+      "rms_training_ray_distance_px": 3.9376262645205995,
+      "max_LOO_ray_distance_px": 9.796163432634703
+    },
+    {
+      "perspective": false,
+      "fixed_delta_deg": 40.0,
+      "fitted_delta_deg": 40.0,
+      "max_training_ray_distance_px": 3.770929307015564,
+      "rms_training_ray_distance_px": 2.915727942590945,
+      "max_LOO_ray_distance_px": 5.361172142102156
+    },
+    {
+      "perspective": false,
+      "fixed_delta_deg": null,
+      "fitted_delta_deg": 40.64955301277962,
+      "max_training_ray_distance_px": 4.677974687530579,
+      "rms_training_ray_distance_px": 2.825985464536571,
+      "max_LOO_ray_distance_px": 12.681710949167421
+    },
+    {
+      "perspective": true,
+      "fixed_delta_deg": 38.57142857142857,
+      "fitted_delta_deg": 38.57142857142857,
+      "max_training_ray_distance_px": 1.6229386796071836,
+      "rms_training_ray_distance_px": 1.029129213214486,
+      "max_LOO_ray_distance_px": 4.995721022282709
+    },
+    {
+      "perspective": true,
+      "fixed_delta_deg": 40.0,
+      "fitted_delta_deg": 40.0,
+      "max_training_ray_distance_px": 2.0032676853164846,
+      "rms_training_ray_distance_px": 1.3718145184762096,
+      "max_LOO_ray_distance_px": 7.023693301332408
+    },
+    {
+      "perspective": true,
+      "fixed_delta_deg": null,
+      "fitted_delta_deg": 35.76191479164252,
+      "max_training_ray_distance_px": 0.9824497257094018,
+      "rms_training_ray_distance_px": 0.6997197070966107,
+      "max_LOO_ray_distance_px": 7.115100462642317
+    }
+  ],
+  "heldout_rim_max_px_approx": {
+    "v1_fixed_step": 1.663624931476041,
+    "free_step": 1.4731639000017456
+  },
+  "sensitivity": {
+    "repetitions": 120,
+    "uniform_each_coord_interval_px": [
+      -3,
+      3
+    ],
+    "delta_min_max_deg": [
+      23.165058234905036,
+      41.0952979502366
+    ],
+    "delta_p5_p50_p95_deg": [
+      30.615783928363783,
+      35.653920505025226,
+      39.26171502541465
+    ],
+    "confidence_interval": false
+  },
+  "sampled_profile": {
+    "step_grid_deg": [
+      20,
+      46,
+      0.5
+    ],
+    "observed_delta_range_both_residual_classes_max_le3px": [
+      27.0,
+      43.0
+    ],
+    "interpretation": "Diagnostic approximate normal-distance cut only. NOT a rigorous ±3px coordinate feasibility region, angular uncertainty interval, or hidden source measurement."
+  },
+  "conditional_working_projection": {
+    "status": "estimated comparison aid only; not a calibrated camera or source pivot",
+    "fixed_v1_contract": "theta(s)=225-s*270/140 degrees; unchanged",
+    "fixed_step_deg": 38.57142857142857,
+    "input_unit_radius": "dimensionless comparison circle; no physical radius used",
+    "H_local_theta40_zero_to_native": [
+      [
+        -105.34656764169117,
+        3.0480613967953483,
+        361.4930477927872
+      ],
+      [
+        -69.54657144242285,
+        106.98127201454923,
+        472.6129284152477
+      ],
+      [
+        -0.08774159347093763,
+        0.09663334488709326,
+        1.0
+      ]
+    ],
+    "H_v1_theta_to_native": [
+      [
+        87.57782169357596,
+        -58.62862048157251,
+        361.4930477927872
+      ],
+      [
+        1.96929671550543,
+        -127.58463869797689,
+        472.6129284152477
+      ],
+      [
+        0.022880891329790393,
+        -0.1285031337393821,
+        1.0
+      ]
+    ],
+    "v1_conversion": "H_v1=H_local@R(-147.85714285714286deg)",
+    "homogeneous_division": "[u,v,1] proportional to H@[cos(theta),sin(theta),1]",
+    "unit_circle_centre_projection_px": [
+      361.4930477927872,
+      472.6129284152477
+    ],
+    "centre_status": "Estimated by this fit, NOT independently read needle hub or imposed asset pivot.",
+    "gauge_conversion_max_abs_px": 5.684341886080802e-14
+  },
+  "findings": [
+    {
+      "claim": "A conditional projective comparison can reduce the affine angular inconsistency without changing v1 angles.",
+      "status": "computed_conditional",
+      "evidence": "Fixedv1 ray train max1.623px vs affine6.713px; held-out max4.996px. It does not substantiate full-point2px accuracy."
+    },
+    {
+      "claim": "The free angular increment is not identified from these approximate points.",
+      "status": "unknown",
+      "evidence": "Free fit35.762deg improves training but worsens heldoutmax to7.115px. Perturbations23.165..41.095deg are sensitivity results, not a confidence interval."
+    },
+    {
+      "claim": "The40deg alternative is not established.",
+      "status": "hypothesis",
+      "evidence": "Projective fixed40deg held-out max7.024px vs4.996px fixedv1; same-photo local fits do not prove either OEM increment."
+    },
+    {
+      "claim": "Common outer-anchor radius is an extra unsupported restriction.",
+      "status": "unknown",
+      "evidence": "Preliminary common-radius model fixedv1 had trainmax2.533px and heldoutmax5.514px; it is not the preferred final model. No common-radius results are used to establish geometry."
+    }
+  ],
+  "decision": "Do not move source angles, pivot, font, printed marks or model from this study. Conditional homography may be used only for labeled same-photo comparison.",
+  "next_evidence": [
+    "Independently annotate the visible needle hub/pivot with honest native uncertainty; do not reuse the asset pivot as a photo observation.",
+    "Re-read both endpoints/centreline of several major radial marks, distinguishing broad wedge tips from radial lines; preserve their uncertainty.",
+    "Acquire a clearer0/20 region and a genuinely independent coplanar view of this same variant.",
+    "Use a held-out centre/line observation or a second view before selecting an angular increment or asserting calibration."
+  ],
+  "reproduce": "OPENBLAS_NUM_THREADS=1 python creative/research/instruments-v2/study_dial_homography_independent.py",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "raw_results_file": "speed-dial-homography-independent-results.json",
+  "preserved_inputs_after_study": [
+    {
+      "path": "creative/research/instruments-v2/speed-dial-calage.json",
+      "sha256": "9d4507b578cf6b0c1a141954ebc747f9e1f80a88335cd8b8aa9180e96b8228f4"
+    },
+    {
+      "path": "creative/research/instruments-v2/prepare_dial_calage.py",
+      "sha256": "8a51560df1f9a898221b4d6465147074a1173372cf0d9803b8d806d3f76eb1aa"
+    },
+    {
+      "path": "creative/research/instruments-v2/dial-artwork-plan.json",
+      "sha256": "f3334854c2ad4b50d687f1870348769e38db32f4399230d0059211d519c2fcf5"
+    },
+    {
+      "path": "/workspace/wewa-assets/references/instruments/official-rdc-usb-meter.png",
+      "sha256": "eb8e10531cbd7f37c1825044a535c07a8549872975440233d86d581b6e3c2663"
+    }
+  ],
+  "technical_and_artistic_acceptance": "No model receipt, metric calibration, OEM conformity, or artistic acceptance."
+}

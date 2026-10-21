@@ -1,0 +1,206 @@
+{
+  "component_id": "MOTO-MIRROR-RIGHT-001",
+  "phase": "full v2 candidate; only base-cover rigid placement changed",
+  "source_sha256": "af1bfd1155b02281eb549b428042728e55f7975f0fdc449806bb288d850e0a58",
+  "export_sha256": "a5765a2c2b2c9b5aaefc9a7cc2e95b587731269e05227394b8f84c5058944e70",
+  "geometry": [
+    {
+      "object": "RH mirror compound shell and socket - candidate",
+      "vertices": 11138,
+      "faces": 22280,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 5.897185396123164e-05
+    },
+    {
+      "object": "RH convex mirror glass - finite thickness candidate",
+      "vertices": 6482,
+      "faces": 6588,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 2.5598761728568837e-05
+    },
+    {
+      "object": "RH rear metallic reflector - original candidate",
+      "vertices": 6482,
+      "faces": 6588,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 6.120551686003786e-07
+    },
+    {
+      "object": "RH continuous mirror edge seal - estimated",
+      "vertices": 432,
+      "faces": 432,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 7.770904213931902e-08
+    },
+    {
+      "object": "RH continuous steel stem ball and cosmetic stud - candidate",
+      "vertices": 27914,
+      "faces": 55824,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 1.1320654442146881e-05
+    },
+    {
+      "object": "RH mirror base washer - estimated",
+      "vertices": 384,
+      "faces": 384,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 1.0469757632465584e-07
+    },
+    {
+      "object": "RH mirror base hex nut - estimated thread-free bore",
+      "vertices": 576,
+      "faces": 576,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 6.621867663213179e-07
+    },
+    {
+      "object": "RH hollow mirror mounting cover - estimated",
+      "vertices": 960,
+      "faces": 960,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 1.8868785536286047e-06
+    },
+    {
+      "object": "RH fixed hollow lower neck cover - estimated",
+      "vertices": 1344,
+      "faces": 1344,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 3.433239772024032e-06
+    },
+    {
+      "object": "RH moving hollow upper neck cover - estimated",
+      "vertices": 768,
+      "faces": 768,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 2.739080777380358e-06
+    }
+  ],
+  "CSG": [
+    {
+      "stages": [
+        {
+          "operation": "features",
+          "part": "RH integral socket outside construction",
+          "before_volume_m3": 4.404004578661578e-05,
+          "after_volume_m3": 6.368519591128842e-05
+        },
+        {
+          "operation": "drills",
+          "part": "RH curved neck working bore construction",
+          "before_volume_m3": 6.368519591128842e-05,
+          "after_volume_m3": 5.938560461025831e-05
+        },
+        {
+          "operation": "drills",
+          "part": "RH spherical socket clearance construction",
+          "before_volume_m3": 5.938560461025831e-05,
+          "after_volume_m3": 5.900343402356914e-05
+        },
+        {
+          "operation": "drills",
+          "part": "RH observed rear circular passage cutter - function unknown",
+          "before_volume_m3": 5.900343402356914e-05,
+          "after_volume_m3": 5.897185478679383e-05
+        }
+      ],
+      "solid_components": 1,
+      "volume_m3": 5.897185478679383e-05,
+      "worker": "manifold3d",
+      "worker_version": "3.3.2"
+    },
+    {
+      "stages": [
+        {
+          "operation": "features",
+          "part": "RH cosmetic helical stud construction - thread unknown",
+          "before_volume_m3": 8.84197413567042e-06,
+          "after_volume_m3": 9.948717955287471e-06
+        },
+        {
+          "operation": "features",
+          "part": "RH estimated steel articulation ball construction",
+          "before_volume_m3": 9.948717955287471e-06,
+          "after_volume_m3": 1.1320654443051648e-05
+        }
+      ],
+      "solid_components": 1,
+      "volume_m3": 1.1320654443051648e-05,
+      "worker": "manifold3d",
+      "worker_version": "3.3.2"
+    }
+  ],
+  "head_frame_world": {
+    "centre_m": [
+      -0.32899999618530273,
+      -0.04500000178813934,
+      0.2840000092983246
+    ],
+    "outward_U": [
+      -0.9755259156227112,
+      0.21965079009532928,
+      0.010137728415429592
+    ],
+    "up_V": [
+      -9.313225746154785e-10,
+      -0.04610477015376091,
+      0.998936653137207
+    ],
+    "normal_toward_rider_N": [
+      0.21988458931446075,
+      0.9744885563850403,
+      0.04497639462351799
+    ],
+    "left_positive_X": false
+  },
+  "mount_boss_world_m": [
+    -0.1886511594057083,
+    -0.008244437165558338,
+    0.11800000071525574
+  ],
+  "ball_world_m": [
+    -0.24072271585464478,
+    -0.08295915275812149,
+    0.23019269108772278
+  ],
+  "linked_mount_source_path": "assets-src/moto-components/front-brake-control/front-brake-control-v2.blend",
+  "linked_mount_source_sha256": "6ab2f1ecb322f92a1f26643a149e7b2b93691dc91d3fb2e965c8b8f55733b2e1",
+  "all_dimensions_estimated": true,
+  "exact_current_RDC_identity_confirmed": false,
+  "art_accepted": false,
+  "inherited_CSG_from_v1_no_CSG_reexecuted": true,
+  "prior_source_sha256": "5e6d5b1437236c531dde93e06aca32cb1232c5dd54db6a1704bc99d0fe25b553",
+  "prior_export_sha256": "ced33a8779faf7727ad3a179fb401ed7992e1a730e537f48f63e111973aec2db",
+  "change": {
+    "object": "RH hollow mirror mounting cover - estimated",
+    "translation_before_world_m": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "translation_after_world_m": [
+      0.0,
+      0.0,
+      -0.006300000008195639
+    ],
+    "delta_world_m": [
+      0,
+      0,
+      -0.0063
+    ],
+    "source_mesh_UV_normals_materials_edited": false,
+    "cover_bottom_q_m_estimated": 0.0137,
+    "nut_top_q_m_estimated": 0.0133,
+    "gap_m_estimated": 0.00040000000000000105,
+    "interpretation": "Related-photo qualitative spacing correction; no calibrated photo distance, exact RDC fit or thread qualification."
+  }
+}

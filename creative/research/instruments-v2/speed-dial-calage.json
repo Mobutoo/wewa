@@ -1,0 +1,217 @@
+{
+  "schema": 1,
+  "reference_private_path": "/workspace/wewa-assets/references/instruments/official-rdc-usb-meter.png",
+  "reference_sha256": "eb8e10531cbd7f37c1825044a535c07a8549872975440233d86d581b6e3c2663",
+  "native_size_px": [
+    1000,
+    600
+  ],
+  "method": "Manual outer printed dial-boundary native landmarks, geometric ellipse fit, affine circle normalisation. Working in-plane rotation from six visible major marks relative to existing numerical-angle convention. No metric or projective camera is recovered.",
+  "landmarks_native_px": [
+    [
+      353.0,
+      395.0
+    ],
+    [
+      382.0,
+      398.0
+    ],
+    [
+      410.0,
+      412.0
+    ],
+    [
+      430.0,
+      435.0
+    ],
+    [
+      438.0,
+      464.0
+    ],
+    [
+      435.0,
+      489.0
+    ],
+    [
+      418.0,
+      512.0
+    ],
+    [
+      392.0,
+      526.0
+    ],
+    [
+      363.0,
+      533.0
+    ],
+    [
+      332.0,
+      528.0
+    ],
+    [
+      304.0,
+      514.0
+    ],
+    [
+      285.0,
+      494.0
+    ],
+    [
+      277.0,
+      468.0
+    ],
+    [
+      281.0,
+      442.0
+    ],
+    [
+      297.0,
+      419.0
+    ],
+    [
+      324.0,
+      402.0
+    ]
+  ],
+  "landmark_uncertainty_px_working": 3,
+  "ellipse_centre_px": [
+    358.03501442834414,
+    464.07279716960744
+  ],
+  "ellipse_semiaxes_px": [
+    80.94723992740667,
+    68.5933433620327
+  ],
+  "ellipse_rotation_degrees": 2.8132348830824374,
+  "ellipse_geometric_residuals_px_approx": [
+    0.5171281532336404,
+    0.8297203519526148,
+    0.15630319258876055,
+    -0.6668720652726815,
+    -0.9479104344978335,
+    1.0045107998359815,
+    0.752724262417334,
+    -0.7727794374092347,
+    0.3698997862847934,
+    -0.6547418477861002,
+    -0.31819853369426065,
+    0.687279393513777,
+    0.33220957650165406,
+    0.0008546274409350615,
+    -0.5936672550902198,
+    -0.610165005907316
+  ],
+  "max_ellipse_residual_px_approx": 1.0045107998359815,
+  "working_face_unit_to_native_matrix": [
+    [
+      80.5348102870679,
+      -7.883512647637267,
+      358.03501442834414
+    ],
+    [
+      -5.571057625499911,
+      -68.39927106878217,
+      464.07279716960744
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "working_native_to_face_unit_matrix": [
+    [
+      0.012318773119062792,
+      -0.0014198280503581193,
+      -3.7516485365935828
+    ],
+    [
+      -0.001003352723638609,
+      -0.014504395158180996,
+      7.090330639195033
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "working_rotation_offset_degrees": 7.975271517849251,
+  "outer_printed_radius_working_m": 0.0415,
+  "radius_is_estimated_not_measured": true,
+  "anchor_diagnostics": [
+    {
+      "value_kmh": 40,
+      "native_outer_mark_anchor_px_approx": [
+        283.5,
+        442.25
+      ],
+      "reading_uncertainty_px": 3,
+      "working_angle_error_after_median_rotation_degrees": 8.342228560468442
+    },
+    {
+      "value_kmh": 60,
+      "native_outer_mark_anchor_px_approx": [
+        320,
+        406.25
+      ],
+      "reading_uncertainty_px": 3,
+      "working_angle_error_after_median_rotation_degrees": 4.4984516005072805
+    },
+    {
+      "value_kmh": 80,
+      "native_outer_mark_anchor_px_approx": [
+        377,
+        397.75
+      ],
+      "reading_uncertainty_px": 3,
+      "working_angle_error_after_median_rotation_degrees": 0.11689856094653805
+    },
+    {
+      "value_kmh": 100,
+      "native_outer_mark_anchor_px_approx": [
+        425.5,
+        427.75
+      ],
+      "reading_uncertainty_px": 3,
+      "working_angle_error_after_median_rotation_degrees": -4.6598993069307255
+    },
+    {
+      "value_kmh": 120,
+      "native_outer_mark_anchor_px_approx": [
+        437.5,
+        473
+      ],
+      "reading_uncertainty_px": 3,
+      "working_angle_error_after_median_rotation_degrees": -5.78884507160663
+    },
+    {
+      "value_kmh": 140,
+      "native_outer_mark_anchor_px_approx": [
+        417.5,
+        506.5
+      ],
+      "reading_uncertainty_px": 3,
+      "working_angle_error_after_median_rotation_degrees": -0.11689856094653805
+    }
+  ],
+  "deliberately_not_fit": {
+    "0": "Partially obscured by needle; exact tip/footprint reading unreliable",
+    "20": "Outer wedge/tip ambiguous at native pixels; excluded from rotation gauge"
+  },
+  "uses": [
+    "Local artwork footprint and band-width comparisons on the speed face only"
+  ],
+  "not_valid_for": [
+    "Absolute dimensions",
+    "Whole cluster camera fit",
+    "USB plane or two-pod spacing correction",
+    "Lens thickness/curvature",
+    "A new speed/needle calibration"
+  ],
+  "numeric_angular_positions_and_needle_pivots_will_be_preserved": true,
+  "scope_limit": "The ellipse and rotation fit are a working shape comparison, not independent confirmation of the current v1 angular convention. Small local differences are retained as uncertainty.",
+  "art_accepted": false,
+  "direct_native_pixel_transfer_accepted": false,
+  "reason": "Up to8.34degrees residual of major-mark direction after affine ellipse normalisation exceeds the native-reading guide. Use only bounded relative footprint sizes; preserve existing numerical-angle and needle contract. No pixel-exact or recovered camera claim."
+}

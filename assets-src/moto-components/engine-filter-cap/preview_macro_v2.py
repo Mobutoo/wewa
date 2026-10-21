@@ -1,0 +1,13 @@
+from pathlib import Path
+import bpy,json,hashlib,sys
+from mathutils import Vector
+H=Path('/workspace/wewa-github/assets-src/moto-components/engine-filter-cap');R=H.parents[2];O=Path('/workspace/wewa-assets/work-in-progress/engine-filter-cap-v2');source=H/'engine-filter-cap-v2.blend';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();check=json.loads((R/'creative/reviews/engine-filter-cap-v2/source-geometry-check.json').read_text());gltf=json.loads((R/'creative/reviews/engine-filter-cap-v2/export-check.json').read_text());assert sha(source)==check['source_sha256'];assert sha(H/'engine-filter-cap-v2-inspection.glb')==gltf['sha256'];assert not gltf['glTF_errors'] and not any(m['zeroAreaTriangles'] for m in gltf['meshes'])
+sys.path.insert(0,str(H));from render_checkpoint_v2 import checkpoint_view
+from camera_preflight_v2 import check_component_camera
+bpy.ops.wm.open_mainfile(filepath=str(source));s=bpy.context.scene;s.cycles.samples=8;s.render.resolution_x=800;s.render.resolution_y=650;s.camera.data.clip_start=.001;bpy.data.collections['ENGINE_FILTER_CAP_V2_IMMUTABLE_CASE_GUIDE'].hide_render=True;body=bpy.data.objects['RH oil filter cap - editable candidate'];datum=bpy.data.objects['RH oil filter cap provisional datum'];old=json.loads((R/'creative/reviews/engine-filter-cap-v1/render-report.json').read_text());views=[dict(v,detail=False) for v in old['views']];target=datum.matrix_world@Vector((.05676,.0446,.042));camera=target+datum.matrix_world.to_3x3()@Vector((.015,.040,.095));views.append({'name':'tangent-ear-detail','target_m':list(target),'camera_m':list(camera),'lens_mm':65,'detail':True});report={'source_sha256':sha(source),'export_sha256':gltf['sha256'],'samples':8,'denoising':'OpenImageDenoise','resolution_px':[800,650],'actual_blender_render':True,'guides_visible':False,'all_dimensions_estimated':True,'reference_camera_calibrated':False,'views':[],'art_accepted':False}
+args=sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else []
+if '--view' in args:
+ requested=args[args.index('--view')+1];views=[v for v in views if v['name']==requested];assert views,('Unknown view',requested)
+for view in views:
+ target=Vector(view['target_m']);s.camera.location=view['camera_m'];s.camera.rotation_euler=(target-s.camera.location).to_track_quat('-Z','Y').to_euler();s.camera.data.lens=view['lens_mm'];bpy.context.view_layer.update();frame=check_component_camera(s,[body],allow_crop=view['detail']);cp=checkpoint_view(s,O,source,view['name']);report['views'].append({'name':view['name'],'camera_m':list(s.camera.location),'target_m':list(target),'lens_mm':65,'camera_preflight':frame,'checkpoint':view['name']+'.checkpoint.json','outputs':cp['outputs']})
+(O/'macro-render-report.json').write_text(json.dumps(report,indent=2)+'\n')

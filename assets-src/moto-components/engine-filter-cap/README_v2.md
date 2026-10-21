@@ -1,0 +1,13 @@
+# Bouchon de filtre v2 — raccords et sections arrondis
+
+Même ID MOTO-ENGINE-FILTER-CAP-001. Variante à trois oreilles seulement liée au catalogue BM125 D04:25, PF541254UG5/JV541205 standard ; sa présence exacte RDC reste inconnue. La v1 et ses preuves restent intactes. Les recherches de photos SKU n’ont pas apporté de référence exacte nouvelle ; le capuchon JV541006 vendu comme oil-filter-nut est une autre pièce et a été rejeté.
+
+L’étude des buffers conserve192secteurs sur le cercle hors zones des oreilles : une hausse aveugle du nombre de secteurs n’explique pas la correction. La v1 possède deux chanfreins droits en section et des oreilles cylindriques réunies au disque avec une rupture de tangence en plan. La v2 construit un contour commun disque/oreilles à raccordC1 avant la mise en volume, puis de vrais arcs dans la section. La maille s’affine localement aux nouveaux raccords ; le reste du cercle garde son ancien pas angulaire.
+
+Rayon frontal1mm [0.5;1.5] ; bord arrière elliptique1×0.6mm ; largeur radiale du raccord d’oreille1.2mm [0.6;2] ; bouche d’alésage frontale arrondie0.25mm [0;0.4]. Tous sont des estimations de fabrication, sans mesure physique ni promesse de rayonOEM. Le raccord en plan est une union radiale douce, pas un rayon constant mesuré. Les rayons sont construits dans les sections avantCSG, sans congé global sur les triangles finaux. Le relief annulaire0.4mm possède des transitions tangentes. Les faces réellement planes restent plates ; les normales personnalisées sont absentes.
+
+Le maximum du gabarit, les centres des trois trous, les rayons de spigot/alésage, le plan arrière et la hauteur maximale du relief restent identiques aux valeurs de travail v1. Source fermée monoconnectée et positive, trous réellement ray-testés, zéro traversée avec le carterRHv2 masqué lié parSHA. Les49114triangles détaillés sont un candidat d’inspection ; aucune optimisation mobile reçue.
+
+`build_v2.py` et `parameters-v2.json` conservent la construction éditable. Le contrôle `check_export_v2.mjs` lit les vrais buffers avant les images ; les quatre aperçus privés8 montrent gris, face, dos et macro. `render_v2.py` produit les deux vues entières96 et un macro, avec caméra contrôlée sur les vrais sommets et checkpoints source/script/PNG/EXR. Sélection d’une seule vue possible avec `-- --view tangent-ear-detail`. Un macro à horizon visible a été gardé comme rejet de cadrage et refait par une simple correction de caméra.
+
+Géométrie et rayons sont une proposition bornée ; matière PBR silver non mesurée inchangée, aucune texture photographique. Joints, vis, élément de filtre et compatibilité physique restent hors de cette coque. Aucune réception artistique ou qualification iPhone.

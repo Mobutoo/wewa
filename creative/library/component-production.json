@@ -7,8 +7,8 @@
     "state": "rejected_by_user",
     "art_accepted": false
   },
-  "scope_note": "Initial decomposition of the first motorcycle component, not a completed component inventory of all92 source families.",
-  "active_component": "MOTO-STEERING-LOWER-001",
+  "scope_note": "Rolling component-level manufacture across 18 authorized motorcycle groups. Source catalogue and concept rows overlap; candidate records, revisions and accepted parts are counted separately.",
+  "active_component": "MOTO-ENGINE-COVER-LEFT-001",
   "components": [
     {
       "id": "MOTO-TYRE-FRONT-001",
@@ -453,27 +453,6 @@
       }
     },
     {
-      "id": "MOTO-ENGINE-COVER-RIGHT-001",
-      "parent_source_ids": [
-        "AS-049",
-        "CON-001"
-      ],
-      "name": "Carter moteur droit — coque extérieure",
-      "state": "isolated_candidate_rework_not_accepted",
-      "candidate_source": "../../assets-src/moto-components/engine-cover-right/README.md",
-      "candidate_review": "../reviews/engine-cover-right-v1/README.md",
-      "component_workflow": "../workflow/records/moto-engine-cover-right-001.json",
-      "all_physical_dimensions_estimated": true,
-      "gates": {
-        "references_sufficient": false,
-        "shape_comparison_passed": false,
-        "material_comparison_passed": false,
-        "engine_comparison_passed": false,
-        "optimized_variant_rechecked": false,
-        "user_art_accepted": false
-      }
-    },
-    {
       "id": "MOTO-FORK-BELLOWS-001",
       "parent_source_ids": [
         "AS-049",
@@ -484,27 +463,6 @@
       "candidate_source": "../../assets-src/moto-components/front-fork/bellows/README.md",
       "candidate_review": "../reviews/fork-bellows-v1/README.md",
       "component_workflow": "../workflow/records/moto-fork-bellows-001.json",
-      "all_physical_dimensions_estimated": true,
-      "gates": {
-        "references_sufficient": false,
-        "shape_comparison_passed": false,
-        "material_comparison_passed": false,
-        "engine_comparison_passed": false,
-        "optimized_variant_rechecked": false,
-        "user_art_accepted": false
-      }
-    },
-    {
-      "id": "MOTO-ENGINE-FILTER-CAP-001",
-      "parent_source_ids": [
-        "AS-049",
-        "CON-001"
-      ],
-      "name": "Bouchon du filtre moteur — pièce séparée",
-      "state": "isolated_candidate_rework_not_accepted",
-      "candidate_source": "../../assets-src/moto-components/engine-filter-cap/README.md",
-      "candidate_review": "../reviews/engine-filter-cap-v1/README.md",
-      "component_workflow": "../workflow/records/moto-engine-filter-cap-001.json",
       "all_physical_dimensions_estimated": true,
       "gates": {
         "references_sufficient": false,
@@ -535,6 +493,111 @@
         "optimized_variant_rechecked": false,
         "user_art_accepted": false
       }
+    },
+    {
+      "id": "MOTO-ENGINE-COVER-LEFT-001",
+      "parent_source_ids": [
+        "AS-049",
+        "CON-001"
+      ],
+      "name": "Carter magnéto gauche — coque extérieure",
+      "state": "isolated_candidate_rework_not_accepted",
+      "candidate_source": "../../assets-src/moto-components/engine-cover-left/README.md",
+      "candidate_review": "../reviews/engine-cover-left-v1/README.md",
+      "component_workflow": "../workflow/records/moto-engine-cover-left-001.json",
+      "all_physical_dimensions_estimated": true,
+      "gates": {
+        "references_sufficient": false,
+        "shape_comparison_passed": false,
+        "material_comparison_passed": false,
+        "engine_comparison_passed": false,
+        "optimized_variant_rechecked": false,
+        "user_art_accepted": false
+      }
+    },
+    {
+      "id": "MOTO-ENGINE-OUTPUT-COVER-LEFT-001",
+      "parent_source_ids": [
+        "AS-049",
+        "CON-001"
+      ],
+      "name": "Cache sortie de boîte gauche — coque extérieure",
+      "state": "isolated_candidate_rework_not_accepted",
+      "candidate_source": "../../assets-src/moto-components/engine-output-cover-left/README.md",
+      "candidate_review": "../reviews/engine-output-cover-left-v1/README.md",
+      "component_workflow": "../workflow/records/moto-engine-output-cover-left-001.json",
+      "all_physical_dimensions_estimated": true,
+      "gates": {
+        "references_sufficient": false,
+        "shape_comparison_passed": false,
+        "material_comparison_passed": false,
+        "engine_comparison_passed": false,
+        "optimized_variant_rechecked": false,
+        "user_art_accepted": false
+      }
+    },
+    {
+      "id": "MOTO-ENGINE-COVER-RIGHT-001",
+      "parent_source_ids": [
+        "AS-049",
+        "CON-001"
+      ],
+      "name": "Carter moteur droit v2 — normales corrigées",
+      "state": "isolated_candidate_rework_not_accepted",
+      "candidate_source": "../../assets-src/moto-components/engine-cover-right/README_v2.md",
+      "candidate_review": "../reviews/engine-cover-right-v2/README.md",
+      "component_workflow": "../workflow/records/moto-engine-cover-right-001.json",
+      "all_physical_dimensions_estimated": true,
+      "gates": {
+        "references_sufficient": false,
+        "shape_comparison_passed": false,
+        "material_comparison_passed": false,
+        "engine_comparison_passed": false,
+        "optimized_variant_rechecked": false,
+        "user_art_accepted": false
+      }
+    },
+    {
+      "id": "MOTO-KICKSTARTER-001",
+      "parent_source_ids": [
+        "AS-049",
+        "CON-001"
+      ],
+      "name": "Kick articulé — déploiement et course conditionnels",
+      "state": "isolated_candidate_rework_not_accepted",
+      "candidate_source": "../../assets-src/moto-components/kickstarter/README.md",
+      "candidate_review": "../reviews/kickstarter-v1/README.md",
+      "component_workflow": "../workflow/records/moto-kickstarter-001.json",
+      "all_physical_dimensions_estimated": true,
+      "gates": {
+        "references_sufficient": false,
+        "shape_comparison_passed": false,
+        "material_comparison_passed": false,
+        "engine_comparison_passed": false,
+        "optimized_variant_rechecked": false,
+        "user_art_accepted": false
+      }
+    },
+    {
+      "id": "MOTO-ENGINE-FILTER-CAP-001",
+      "parent_source_ids": [
+        "AS-049",
+        "CON-001"
+      ],
+      "name": "Bouchon de filtre v2 — raccords et arrondis repris",
+      "state": "isolated_candidate_rework_not_accepted",
+      "candidate_source": "../../assets-src/moto-components/engine-filter-cap/README_v2.md",
+      "candidate_review": "../reviews/engine-filter-cap-v2/README.md",
+      "component_workflow": "../workflow/records/moto-engine-filter-cap-001.json",
+      "all_physical_dimensions_estimated": true,
+      "gates": {
+        "references_sufficient": false,
+        "shape_comparison_passed": false,
+        "material_comparison_passed": false,
+        "engine_comparison_passed": false,
+        "optimized_variant_rechecked": false,
+        "user_art_accepted": false
+      }
     }
   ],
   "coding_or_modeling_started_after_feedback": true,
@@ -544,12 +607,12 @@
   "next_preparatory_step": "Continue18 authorized groups with three independent fabrication owners; source/material corrections before final proof, no automatic artistic reception",
   "general_workflow": "../workflow/README.md",
   "documentary_supplement": "../workflow/RESEARCH.md",
-  "detailed_component_record": "../workflow/records/moto-steering-lower-001.json",
+  "detailed_component_record": "../workflow/records/moto-engine-cover-left-001.json",
   "assembly_decomposition": "../workflow/motorcycle-assembly.json",
   "parallel_execution": "Explicit user GO18: three independent fabrication chains; per-component source, photo, material and runtime review; no automatic art reception",
   "active_fabrication_records": {
-    "MOTO-FORK-BELLOWS-001": "fork-bellows-v1",
-    "MOTO-INSTRUMENTS-001": "instruments-v2",
-    "MOTO-ENGINE-OUTPUT-COVER-LEFT-001": "engine-output-cover-left-v1"
+    "MOTO-ENGINE-COVER-LEFT-001": "engine-cover-left-v2",
+    "MOTO-HANDLEBAR-MOUNT-NYLOC-001": "handlebar-mount-nyloc-v3",
+    "MOTO-INSTRUMENTS-001": "instruments-v2"
   }
 }

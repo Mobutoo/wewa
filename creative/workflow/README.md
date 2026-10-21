@@ -68,7 +68,7 @@ Pour un corps moulé, intégrer les détails de révolution dans une section con
 
 Blender, outils de métadonnées/PDF, Python et glTF servent à préparer et fabriquer les sources ; Babylon.js sert au contrôle réel du jeu. fSpy/COLMAP restent des aides conditionnelles à la qualité des prises de vue. Le pipeline ne dépend pas d’un logiciel payant cité dans un article, ni d’un générateur automatique censé inventer les parties manquantes. Aucun nouveau logiciel payant ou matériel n’est acheté.
 
-Le plan est applicable aux familles du dossier, mais leur recherche spécifique et leur décomposition restent à exécuter. Aujourd’hui : sept fiches de candidats séparés couvrent le pneu, la jante, le flasque avec matière v2, le levier de came, le guidon, les enveloppes de poignées et les compteurs ; aucune calibration complète ou réception artistique acquise. Pièce détaillée active : compteurs du poste de conduite. Les [vues de revue du cockpit](../reviews/cockpit-v1/README.md) réunissent seulement les trois derniers candidats. Prochain travail : comparaison photographique, commodos, leviers, supports, rétroviseurs et visière ; la documentation des sections de came, de l’axe et de la compatibilité du frein reste ouverte. La moto seule précède toujours le conducteur.
+Le plan est applicable aux familles du dossier ; leur recherche spécifique et leur décomposition restent à exécuter hors du travail effectivement consigné. Le [registre courant](../library/component-production.json) et le [plan des18lots](motorcycle-execution-18.json) distinguent sources construites, pièces restantes, révisions, interfaces et réception. Les [premières vues du cockpit](../reviews/cockpit-v1/README.md) sont historiques, pas une preuve des révisions suivantes. La [revue visuelle courante](../reviews/motorcycle18-components.md) ne retient que la révision enregistrée de chaque composant avec son PNG prouvé. La moto seule précède toujours le conducteur.
 
 Pour une tôle mise en forme, répartir les sommets dans la surface avant de la courber : une grande face non plane peut produire des cassures diagonales de reflets. Une triangulation contrainte avec points intérieurs doit encore exclure les triangles extérieurs et vérifier que son aire conserve le contour. Le [levier avant](../../assets-src/moto-components/front-brake-lever/README.md) conserve cette correction. Examiner les reflets dans la source et dans les buffers réellement exportés.
 
@@ -87,3 +87,16 @@ Le contrôle des corps CSG lit aussi l’aire des triangles dans l’export : un
 La revue de forme exige un cadrage entier de la pièce. Une inspection très rapprochée reste un complément. L’inspecteur v2 conserve un champ vertical fixe pour les écrans en paysage ; les anciens outils et leurs preuves restent versionnés séparément.
 
 Vérifier aussi les triangles UV effectivement utilisés par une carte normale : une lèvre annulaire plane peut recevoir par erreur une projection cylindrique qui écrase ses coordonnées. Des tangentes de norme correcte ne suffisent pas à détecter cette erreur. Le [contrôle UV](../../tools/check_motorcycle18_uv.mjs) lit le jeu de coordonnées déclaré par chaque matière, refuse les triangles UV exactement aplatis et conserve les petites aires comme mesures diagnostiques. Il ne certifie ni la densité de texture ni la qualité artistique.
+
+## Contrôles avant les vues finales et avant publication
+
+Avant tout rendu long, relire un aperçu diffus et un aperçu de reflets à la résolution utile du détail : un gris réduit peut masquer une crête hélicoïdale en escalier ou un congé pincé. Les plages réellement planes, les jonctions hélice/chanfrein et les transitions de corps moulé doivent être vérifiées dans la source. Les normales héritées d’un modificateur ne sont pas présumées correctes après réévaluation ; une normale analytique de source doit être dérivée de la surface et distinguée d’une réparation des buffers. Conserver les états rejetés et leurs empreintes.
+
+Le [préflight caméra](../../tools/blender_component_camera_preflight.py) vérifie les sommets évalués, y compris les formes déformées, contre near/farclip et le cadre. Un gros plan volontaire peut autoriser le recadrage ; il ne permet pas de couper la pièce par la profondeur de clipping. Les sources, éclairages, exposition/gamma et scripts de chaque nouveau protocole doivent rester liés aux checkpoints. Les protocoles historiques manifestés restent immuables.
+
+Le [contrôle de l’arbre Git](../../tools/check_motorcycle18_index.py) lit les objets réellement indexés ou un commit précis, au lieu de vérifier seulement les fichiers de travail. Il contrôle JSON, octets/empreintes des tables de fichiers des manifestes et présence des sources/exports catalogués. Les chemins privés absolus sont hors de ce contrôle du dépôt ; aucune réception artistique ou qualification iPhone n’en découle.
+
+```sh
+python tools/check_motorcycle18_index.py
+python tools/check_motorcycle18_index.py --ref dac7089eebab7eb7e9d5c318d8b9f3292f467fed --output /tmp/wewa-checkpoint03-integrity.json
+```

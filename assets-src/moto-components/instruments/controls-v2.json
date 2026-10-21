@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "source_sha256": "dc4b3ccf26f35e3b4a4f10068306d841695901f987a43ebad65299cec132ad22",
+  "export_sha256": "444071ff19367a78aa9d2e7a70ebaf33ae78f0f014ed66ca0f9223927f66d30e",
+  "collection": "WEWA_INSTRUMENTS_SEPARATE_PARTS",
+  "root": "INSTRUMENT_CLUSTER_MOUNT",
+  "axes": "glTF local node axes; delta is postmultiplied after rest quaternion",
+  "controls": [
+    {
+      "node": "SPEED_NEEDLE_PIVOT",
+      "type": "rotation",
+      "axis_local": [
+        0,
+        1,
+        0
+      ],
+      "range_degrees": [
+        -270,
+        0
+      ],
+      "function": "review speed0–140km/h",
+      "formula_delta_degrees": "-speed_kmh*270/140",
+      "function_status": "working calibration retained; unmeasured"
+    },
+    {
+      "node": "FUEL_NEEDLE_PIVOT",
+      "type": "rotation",
+      "axis_local": [
+        0,
+        1,
+        0
+      ],
+      "range_degrees": [
+        -28,
+        52
+      ],
+      "function": "review fuel0–1",
+      "formula_delta_degrees": "52-fuel_fraction*80",
+      "function_status": "working calibration retained; unmeasured"
+    }
+  ],
+  "gear_display": {
+    "ring_nodes": [
+      "GEAR_RING_1",
+      "GEAR_RING_2",
+      "GEAR_RING_3",
+      "GEAR_RING_4",
+      "GEAR_RING_5"
+    ],
+    "digit_nodes": [
+      "GEAR_DIGIT_1",
+      "GEAR_DIGIT_2",
+      "GEAR_DIGIT_3",
+      "GEAR_DIGIT_4",
+      "GEAR_DIGIT_5"
+    ],
+    "states_demonstration": [
+      "off",
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "range_is_transmission_certification": false,
+    "meaning": "Inherited display demonstration only. Official image filename BM150 and related4/5ratio sources conflict. No game gearbox changed."
+  },
+  "odometer_static": true,
+  "usb_function_not_animated": true,
+  "gameplay_binding": false,
+  "physical_device_or_mechanical_tested": false
+}

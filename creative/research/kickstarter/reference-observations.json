@@ -1,0 +1,111 @@
+{
+  "component_id": "MOTO-KICKSTARTER-001",
+  "scope": "One external kick lever assembly: separate split clamp, base folding hinge/arm, fixed upper pedal metal and rubber; no internal engine mechanism",
+  "research_utc": "2026-10-21T00:23:22.557846+00:00",
+  "documented_before_geometry": true,
+  "current_RDC_references": [
+    "engine.webp",
+    "rotation-00.png",
+    "rotation-01.png",
+    "rotation-07.png"
+  ],
+  "current_references_private_dir": "/workspace/wewa-assets/references/body-powertrain-18",
+  "related_product_photos": [
+    {
+      "file": "/workspace/wewa-assets/references/kickstarter/bikebox-PA621203.png",
+      "url": "https://bikeboxmt.com/wp-content/uploads/2026/01/PA621203.png",
+      "status": 200,
+      "sha256": "f95b469bfb942b781ecadbd4b8cb5e2491842967858b7bc653d69eea328da123",
+      "bytes": 673059,
+      "rights": "Private documentary use only, no photo texture or redistribution"
+    },
+    {
+      "file": "/workspace/wewa-assets/references/kickstarter/partonwheels-PA621203.png",
+      "url": "https://partonwheels.com/wp-content/uploads/2023/10/PA6212033-optimized.png",
+      "status": 200,
+      "sha256": "a001dc5592e4b0859831581bf61060a51e3a80200326d4d28a06cff78e5b7e13",
+      "bytes": 72163,
+      "rights": "Private documentary use only, no photo texture or redistribution"
+    }
+  ],
+  "photos_actually_examined": true,
+  "catalogue_actually_examined": {
+    "private_file": "/workspace/wewa-assets/references/body-powertrain-18/D04-sheet-29.png",
+    "page_title": "Kick Starter Mechanism, BM125",
+    "assembly_standard": "JA621201",
+    "assembly_UG5gear": "PA621203",
+    "rubber_related": "DD101097",
+    "fitment_current_RDC_certified": false
+  },
+  "useful_observations": [
+    "CurrentRDC long chromed arm has a lower dogleg and narrower long upper shank, a top fixed bent pedal covered with black rings",
+    "BikeboxPA621203 reveals a split splined clamp, pinch bolt/nut, rounded clamp corners, varying forged shank section, ribbed rubber closed by a shiny terminal",
+    "Catalogue shows a vertical base folding pin between separate clamp/boss and arm: folding articulation belongs at the BASE, not at rubber top",
+    "Motor kick stroke and folding articulation have different axes; rubber follows main arm without its own hinge",
+    "CurrentRDC deployed underside and base inner spline geometry remain occluded"
+  ],
+  "source_conflicts": [
+    {
+      "source": "BikeboxPA621203 page",
+      "claim": "BM150 BS3",
+      "decision": "Related product photo only, no current125RDC fitment certification"
+    },
+    {
+      "source": "PartOnWheelsPA621203 page",
+      "claim": "V12/V15 2016\u20132018 plus unrelated electrical lock description and122mm length",
+      "decision": "Photo only as related SKU crossview; reject irrelevant lock dimensions, material and generic fitment text"
+    },
+    {
+      "source": "Initial body-powertrain17-kick label",
+      "claim": "patin rabattable",
+      "decision": "Refined after isolated product/catalogue inspection: base folding joint, no demonstrated upper rubber hinge"
+    }
+  ],
+  "unknowns": [
+    "No measured arm length, section, axial offset or clamp shaft bore",
+    "No exact tooth count/pitch; no hidden shaft or ratchet manufactured",
+    "CurrentRDC deployed angle, stops, spring, casting mark and exact hinge axle retention unknown",
+    "No neutral chrome/material calibration or surface roughness measurements"
+  ],
+  "planned_scale": "Use conditional cockpit/world wheelbase guide only for approximate installed rest; all external lengths bounded estimates \u00b115\u201325%",
+  "G3_plan": [
+    "Variable rounded/oval forged sweep for continuous dogleg arm, no identical cylinders",
+    "Split clamp with real through bore and slit; cosmetic bore splines explicitly estimated rather than exact shaft compatibility",
+    "Base hinge separate moving arm datum; rubber physically ribbed closed volume, separate chrome end",
+    "Test real geometry fold0..75deg and inspection kick0..60deg versus sourceRH cover, not certified physical travel",
+    "Actual export buffers/UV/normals before gray views and material"
+  ],
+  "art_accepted": false,
+  "geometry_started": true,
+  "product_pages": [
+    {
+      "url": "https://bikeboxmt.com/shop/boxer-kick-lever-assy-genuine/",
+      "final_url": "https://bikeboxmt.com/shop/boxer-kick-lever-assy-genuine/",
+      "private_file": "/workspace/wewa-assets/references/kickstarter/bikebox-product.html",
+      "sha256": "64acca338442a451fc40847e9d2ceeb2615f29ab5d56310f3c8d63613cd77e92",
+      "bytes": 568550,
+      "status": 200
+    },
+    {
+      "url": "https://partonwheels.com/product/assly-kick-lever-for-bajaj-v12-v15/",
+      "final_url": "https://partonwheels.com/product/assly-kick-lever-for-bajaj-v12-v15/",
+      "private_file": "/workspace/wewa-assets/references/kickstarter/partonwheels-product.html",
+      "sha256": "a41310ece18b280ae9020938728736863655b0f5d8d658d1176d0eb49e48084a",
+      "bytes": 157538,
+      "status": 200
+    }
+  ],
+  "constructed_candidate": {
+    "source_sha256": "6fade26e0f95de87cc18a8891f15b6be3b08b1a66ebca31bdce984fb2ac8f013",
+    "export_sha256": "eeeaa1e850c6b10d5a1b8a5aaaca6c940453c6e4c9c715f955b2b52772b42852",
+    "positive_closed_meshes": 7,
+    "real_surface_poses_tested": 57,
+    "all_rest_hardware_pairs_and_cover_no_crossing": true,
+    "fold_direction_actual_export_checked": true,
+    "source_export_pose_max_error_m": 6.162943074623386e-08,
+    "cam_preflight_actual_vertices": true,
+    "coating_or_dimensions_measured": false,
+    "related_cover_source_sha256": "185274d117291007e185fba8209abac91153ece3ae9e4a0a8ce5a67667c4331f",
+    "remaining_caveat": "Global sourceRHV1 is later to rework, no universal fit transfer"
+  }
+}

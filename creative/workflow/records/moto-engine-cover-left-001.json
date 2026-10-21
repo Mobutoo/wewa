@@ -12,9 +12,9 @@
     "material"
   ],
   "identity": {
-    "variant": "Current RDC visual target, related isolated part references; exact part and local dimensions not certified",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
-    "usage": "Separate detailed candidate before review-only assembly",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
       0.15,
       0.35,
@@ -28,7 +28,70 @@
     "D15"
   ],
   "claims": [],
-  "views": [],
+  "views": [
+    {
+      "name": "outer-forward-boss",
+      "camera_m": [
+        0.6060000061988831,
+        0.15400001406669617,
+        -0.48900002241134644
+      ],
+      "target_m": [
+        0.12600000202655792,
+        0.15399999916553497,
+        -0.6190000176429749
+      ],
+      "lens_mm": 65,
+      "checkpoint": "outer-forward-boss.checkpoint.json",
+      "outputs": [
+        {
+          "file": "outer-forward-boss.exr",
+          "format": "OPEN_EXR",
+          "bytes": 1726131,
+          "sha256": "27a4a13c15227506cd7a71a1cb3ddb95d44f9df19fff0d74254bac1f85320006",
+          "linear_scene_data": true
+        },
+        {
+          "file": "outer-forward-boss.png",
+          "format": "PNG",
+          "bytes": 948934,
+          "sha256": "42d8a937047a3be5ab59f700f526d28e88672a16188a5b41e041c91bd55bb4c1",
+          "linear_scene_data": false
+        }
+      ]
+    },
+    {
+      "name": "rear-hollow-shell",
+      "camera_m": [
+        -0.3539999723434448,
+        -0.04600001871585846,
+        -0.45899999141693115
+      ],
+      "target_m": [
+        0.12600000202655792,
+        0.15399999916553497,
+        -0.6190000176429749
+      ],
+      "lens_mm": 65,
+      "checkpoint": "rear-hollow-shell.checkpoint.json",
+      "outputs": [
+        {
+          "file": "rear-hollow-shell.exr",
+          "format": "OPEN_EXR",
+          "bytes": 1691196,
+          "sha256": "44cfe422117314d3167fa60847fe07e73c603105bbe36cf41ebf2eb9e1b378f3",
+          "linear_scene_data": true
+        },
+        {
+          "file": "rear-hollow-shell.png",
+          "format": "PNG",
+          "bytes": 960428,
+          "sha256": "70b912a9c004fb285cb7edfe3d5dc7b251caea7877848f136b80c5f03e1813d3",
+          "linear_scene_data": false
+        }
+      ]
+    }
+  ],
   "criteria": [],
   "gaps": [
     {
@@ -47,7 +110,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "engine-cover-left-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -55,73 +118,122 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": null,
+      "revision": "engine-cover-left-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Local dimensions/camera and exact applicability unresolved",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
       "status": "blocked",
-      "revision": null,
+      "revision": "engine-cover-left-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Local dimensions/camera and exact applicability unresolved",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "engine-cover-left-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/engine-cover-left/engine-cover-left-v1.blend",
+          "kind": "editable_source",
+          "revision": "engine-cover-left-v1",
+          "sha256": "7e27606ef19b7a49e932ac13841b1da15c6d0d4936f1cef8f095bb233c3ce1d4"
+        },
+        {
+          "path": "../../reviews/engine-cover-left-v1/outer-forward-boss.png",
+          "kind": "isolated_comparison",
+          "revision": "engine-cover-left-v1",
+          "sha256": "42d8a937047a3be5ab59f700f526d28e88672a16188a5b41e041c91bd55bb4c1"
+        },
+        {
+          "path": "../../research/engine-lh-independent-visual-audit.json",
+          "kind": "isolated_comparison",
+          "revision": "engine-cover-left-v1",
+          "sha256": "33c4f4e09be08c2fb3e76fbd50414ac8a2621ac7c0051da2f692ddda6ddc997b"
+        }
+      ],
+      "reason": "Independent actual-image audit confirms local flats/corners and pinched transitions around mounting ears/bores; main boss silhouette generally continuous. Cause and OEM contour correspondence unresolved.",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "engine-cover-left-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/engine-cover-left-v1/rear-hollow-shell.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "engine-cover-left-v1",
+          "sha256": "70b912a9c004fb285cb7edfe3d5dc7b251caea7877848f136b80c5f03e1813d3"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "engine-cover-left-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/engine-cover-left-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "engine-cover-left-v1",
+          "sha256": "04cdd0369ed2e7760383508c98798e92c9e946116f17900c84ec3872292f9495"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "engine-cover-left-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/engine-cover-left-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "engine-cover-left-v1",
+          "sha256": "76c86ae8d8aad99809359a3399c8d7b78598f8b997a593e5ee894db40559bcab"
+        },
+        {
+          "path": "../../reviews/engine-cover-left-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "engine-cover-left-v1",
+          "sha256": "766ea463b3d5bc8d1809ff5a2e993c57bef418f710a3121ac99be6deec7a9501"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "engine-cover-left-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "engine-cover-left-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
       "reviewed_at": null
     }
   },
-  "active_detailed_fabrication": false,
+  "active_detailed_fabrication": true,
   "source_revision": "engine-cover-left-v1",
-  "export_revision": null,
-  "next_action": "Frozen separate LH-shell candidate, final views queued; upper lobe and face ribs remain uncertain, no copied RH mirror geometry",
+  "export_revision": "engine-cover-left-v1-inspection",
+  "next_action": "Diagnose local ear/bores flats in separate v2, preserve geometry evidence and frozen v1",
   "art_accepted": false,
-  "production_group": 17
+  "production_group": 17,
+  "candidate_source": "../../../assets-src/moto-components/engine-cover-left/README.md",
+  "candidate_review": "../../reviews/engine-cover-left-v1/README.md",
+  "pending_revision": "engine-cover-left-v2"
 }

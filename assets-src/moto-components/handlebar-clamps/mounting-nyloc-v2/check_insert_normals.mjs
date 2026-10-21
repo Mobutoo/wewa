@@ -1,0 +1,15 @@
+import fs from'node:fs/promises';import{createHash}from'node:crypto';import{NodeIO}from'@gltf-transform/core';
+const before='/workspace/wewa-assets/work-in-progress/handlebar-mount-nyloc-v2/chamfer-fixed-insert-normal-open/handlebar-mount-nyloc-v2-inspection.glb',after='assets-src/moto-components/handlebar-clamps/mounting-nyloc-v2/handlebar-mount-nyloc-v2-inspection.glb';
+async function read(file){const bytes=await fs.readFile(file),root=(await new NodeIO().read(file)).getRoot(),objects=[],cylinder={actual_vertices:0,max_radial_normal_error_degrees:0};
+ for(const node of root.listNodes().filter(n=>n.getMesh())){const triangles=[],withNormals=[];
+  for(const p of node.getMesh().listPrimitives()){const pos=p.getAttribute('POSITION'),nor=p.getAttribute('NORMAL'),ix=p.getIndices(),get=(a,i)=>{const r=[];a.getElement(i,r);return r;},canonical=a=>[a.join('|'),[a[1],a[2],a[0]].join('|'),[a[2],a[0],a[1]].join('|')].sort()[0];
+   for(let i=0;i<ix.getCount();i+=3){const xyz=[],nn=[];for(let j=0;j<3;j++){const k=ix.getScalar(i+j),q=get(pos,k),n=get(nor,k);xyz.push(q.join(','));nn.push([...q,...n].join(','));}triangles.push(canonical(xyz));withNormals.push(canonical(nn));}
+   if(node.getName().startsWith('Nonmetal'))for(let i=0;i<pos.getCount();i++){const q=get(pos,i),n=get(nor,i),radius=Math.hypot(q[0],q[2]);if(Math.abs(radius-.0047)>2e-9||q[1]<.00724||q[1]>.00931)continue;const cosine=(-q[0]*n[0]-q[2]*n[2])/(radius*Math.hypot(...n)),error=Math.acos(Math.max(-1,Math.min(1,cosine)))*180/Math.PI;cylinder.actual_vertices++;cylinder.max_radial_normal_error_degrees=Math.max(cylinder.max_radial_normal_error_degrees,error);}
+  }
+  const sha=a=>createHash('sha256').update(a.sort().join('\n')).digest('hex');objects.push({name:node.getName(),matrix:node.getWorldMatrix(),oriented_triangles:triangles.length,geometry_sha256:sha(triangles),geometry_normals_sha256:sha(withNormals)});
+ }
+ return{file,sha256:createHash('sha256').update(bytes).digest('hex'),objects:objects.sort((a,b)=>a.name.localeCompare(b.name)),insert_cylinder:cylinder};
+}
+const[a,b]=await Promise.all([read(before),read(after)]);for(let i=0;i<a.objects.length;i++){const x=a.objects[i],y=b.objects[i];if(x.name!==y.name||x.geometry_sha256!==y.geometry_sha256||JSON.stringify(x.matrix)!==JSON.stringify(y.matrix))throw Error('Normalfix moved geometry');if(x.name.startsWith('Locknut')&&x.geometry_normals_sha256!==y.geometry_normals_sha256)throw Error('Metal normals changed');}
+if(b.insert_cylinder.actual_vertices<500||b.insert_cylinder.max_radial_normal_error_degrees>.01)throw Error(JSON.stringify(b.insert_cylinder));
+const r={before:a,current:b,positions_oriented_triangles_and_transforms_identical:true,metal_normals_unchanged:true,insert_normals_freshly_computed_in_source_from_original_profile:true,GLB_buffers_edited:false,scope:'Analytical normal of the original straight internal cylinder. No manufacturer shape or reflectance measurement.',art_accepted:false};await fs.writeFile('creative/reviews/handlebar-mount-nyloc-v2/insert-normal-buffer-check.json',JSON.stringify(r,null,2)+'\n');console.log(JSON.stringify(r));

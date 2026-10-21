@@ -1,0 +1,115 @@
+{
+  "schema": "wewa.blender-rotation-witness.v1",
+  "spec_sha256": "caab72cac986fce391d0e236f240ef6e00c6c421d04706586fee85fab576b212",
+  "source_sha256": "af1bfd1155b02281eb549b428042728e55f7975f0fdc449806bb288d850e0a58",
+  "export_sha256": "a5765a2c2b2c9b5aaefc9a7cc2e95b587731269e05227394b8f84c5058944e70",
+  "source_parameters_sha256": "0aa5e690c34979f327a139caa53cc74dbb2e5feddf86dc813b1b4b1f5c2ece33",
+  "extractor_sha256": "023616f2961cfbce379072a286273104a23aa12f9eab0b5ee36bf31af44384fb",
+  "Blender_version": "4.3.2",
+  "pivot": "RH mirror head adjustment PIVOT",
+  "witness_mesh": "RH continuous mirror edge seal - estimated",
+  "source_evaluated_vertex_index": 83,
+  "source_evaluated_vertex_count": 432,
+  "source_vertex_local_m": [
+    -0.3963114023208618,
+    -0.031914737075567245,
+    0.2988663613796234
+  ],
+  "selection": "Farthest actual evaluated vertex of the explicitly named head edge seal",
+  "source_axes": [
+    {
+      "control_id": "yaw",
+      "axis_Blender": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "control_id": "pitch",
+      "axis_Blender": [
+        -0.9755259156227112,
+        0.21965079009532928,
+        0.010137728415429592
+      ]
+    }
+  ],
+  "composition": "restQuaternion @ sourceRotation[0] @ sourceRotation[1]",
+  "states": [
+    {
+      "name": "rest",
+      "controls": {
+        "yaw": 0,
+        "pitch": 0
+      },
+      "evaluated_Blender_world_m": [
+        -0.3963114023208618,
+        -0.031914737075567245,
+        0.2988663613796234
+      ],
+      "reverse_order_Blender_world_m": [
+        -0.3963114023208618,
+        -0.031914737075567245,
+        0.2988663613796234
+      ],
+      "order_separation_m": 0.0
+    },
+    {
+      "name": "positive_yaw_positive_pitch",
+      "controls": {
+        "yaw": 10,
+        "pitch": 7
+      },
+      "evaluated_Blender_world_m": [
+        -0.4024580121040344,
+        -0.051664646714925766,
+        0.2964632511138916
+      ],
+      "reverse_order_Blender_world_m": [
+        -0.40098562836647034,
+        -0.05164869502186775,
+        0.2999415099620819
+      ],
+      "order_separation_m": 0.0037770958343903284
+    },
+    {
+      "name": "negative_yaw_positive_pitch",
+      "controls": {
+        "yaw": -10,
+        "pitch": 7
+      },
+      "evaluated_Blender_world_m": [
+        -0.3820008337497711,
+        0.0017647743225097656,
+        0.2964632511138916
+      ],
+      "reverse_order_Blender_world_m": [
+        -0.3834175169467926,
+        0.0019969213753938675,
+        0.29304245114326477
+      ],
+      "order_separation_m": 0.003709818859988492
+    },
+    {
+      "name": "positive_yaw_negative_pitch",
+      "controls": {
+        "yaw": 7,
+        "pitch": -5
+      },
+      "evaluated_Blender_world_m": [
+        -0.40194621682167053,
+        -0.05712917447090149,
+        0.2999727129936218
+      ],
+      "reverse_order_Blender_world_m": [
+        -0.40265795588493347,
+        -0.056936826556921005,
+        0.2982313334941864
+      ],
+      "order_separation_m": 0.0018910242661692685
+    }
+  ],
+  "independent_of_browser_matrices": true,
+  "rendered_or_exported_or_saved_source": false,
+  "art_accepted": false
+}

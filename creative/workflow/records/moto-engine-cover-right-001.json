@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-ENGINE-COVER-RIGHT-001",
-  "label": "Carter moteur droit — coque extérieure",
+  "label": "Carter moteur droit v2 — normales corrigées",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -41,21 +41,64 @@
         0.21400000154972076,
         -0.6399999856948853
       ],
-      "lens_mm": 65,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CONTROL_CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          1000.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.5613268844253056,
+        "farthest_actual_vertex_depth_m": 0.645692602355263,
+        "projected_uv_min": [
+          0.13596944861004756,
+          0.19938775496386624
+        ],
+        "projected_uv_max": [
+          0.8775513635357879,
+          0.9019963488777831
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "RH clutch cover hollow casting - editable candidate",
+            "vertices": 178562,
+            "depth_m": [
+              0.5613268844253056,
+              0.645692602355263
+            ],
+            "projected_uv_min": [
+              0.13596944861004756,
+              0.19938775496386624
+            ],
+            "projected_uv_max": [
+              0.8775513635357879,
+              0.9019963488777831
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
       "checkpoint": "outer-bosses.checkpoint.json",
       "outputs": [
         {
           "file": "outer-bosses.exr",
           "format": "OPEN_EXR",
-          "bytes": 1801734,
-          "sha256": "3905335be047d03b460947beb9e8d211d6d0e6483956df8d5cd1cfd22a6ef406",
+          "bytes": 1796396,
+          "sha256": "2bbc7d05eacc5abf20ad9a1619554cc661bff526bb78227bd066bc723b8ad5f4",
           "linear_scene_data": true
         },
         {
           "file": "outer-bosses.png",
           "format": "PNG",
-          "bytes": 986980,
-          "sha256": "757a4f6c8dcd6c6f8b9ccc151c5540c8f2f6b314133f112d4ce231f3f7281527",
+          "bytes": 985261,
+          "sha256": "f6607df8afacbc045e49e219d10a5e52ac296f16ffe88c817a66f9a48e675abc",
           "linear_scene_data": false
         }
       ]
@@ -72,21 +115,64 @@
         0.21400000154972076,
         -0.6399999856948853
       ],
-      "lens_mm": 65,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CONTROL_CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          1000.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.5356059408755958,
+        "farthest_actual_vertex_depth_m": 0.6784920514867101,
+        "projected_uv_min": [
+          0.1708674413922021,
+          0.1155768554117465
+        ],
+        "projected_uv_max": [
+          0.8260680855585051,
+          0.8853723028348317
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "RH clutch cover hollow casting - editable candidate",
+            "vertices": 178562,
+            "depth_m": [
+              0.5356059408755958,
+              0.6784920514867101
+            ],
+            "projected_uv_min": [
+              0.1708674413922021,
+              0.1155768554117465
+            ],
+            "projected_uv_max": [
+              0.8260680855585051,
+              0.8853723028348317
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
       "checkpoint": "rear-hollow-shell.checkpoint.json",
       "outputs": [
         {
           "file": "rear-hollow-shell.exr",
           "format": "OPEN_EXR",
-          "bytes": 1797163,
-          "sha256": "c533b05177141d5201f43bd9b38bb6ba8f30f23390da40168625d7b34fe26ed3",
+          "bytes": 1766912,
+          "sha256": "eb93f385e6de7dd4f8fdb9adb62875320328d3871349fd6ad450c708499b4d37",
           "linear_scene_data": true
         },
         {
           "file": "rear-hollow-shell.png",
           "format": "PNG",
-          "bytes": 972126,
-          "sha256": "7f28a10b790db41fcc43665f7fb0dba97390c683c6727573b2fadc885410b8b1",
+          "bytes": 965987,
+          "sha256": "83867f8f0b13c5c88903a4fc959b4d18e161d5059c43ab8637f747fb711b35c4",
           "linear_scene_data": false
         }
       ]
@@ -110,7 +196,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": "engine-cover-right-v1",
+      "revision": "engine-cover-right-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -118,7 +204,7 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": "engine-cover-right-v1",
+      "revision": "engine-cover-right-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -126,7 +212,7 @@
     },
     "G2": {
       "status": "blocked",
-      "revision": "engine-cover-right-v1",
+      "revision": "engine-cover-right-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -134,41 +220,35 @@
     },
     "G3": {
       "status": "rework",
-      "revision": "engine-cover-right-v1",
+      "revision": "engine-cover-right-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../../assets-src/moto-components/engine-cover-right/engine-cover-right-v1.blend",
+          "path": "../../../assets-src/moto-components/engine-cover-right/engine-cover-right-v2.blend",
           "kind": "editable_source",
-          "revision": "engine-cover-right-v1",
-          "sha256": "185274d117291007e185fba8209abac91153ece3ae9e4a0a8ce5a67667c4331f"
+          "revision": "engine-cover-right-v2",
+          "sha256": "2558ea2479a02caf14e9feddad3f953f5587269083ae7b125a177acd4621515a"
         },
         {
-          "path": "../../reviews/engine-cover-right-v1/outer-bosses.png",
+          "path": "../../reviews/engine-cover-right-v2/outer-bosses.png",
           "kind": "isolated_comparison",
-          "revision": "engine-cover-right-v1",
-          "sha256": "757a4f6c8dcd6c6f8b9ccc151c5540c8f2f6b314133f112d4ce231f3f7281527"
-        },
-        {
-          "path": "../../research/engine-rh-independent-visual-audit.json",
-          "kind": "isolated_comparison",
-          "revision": "engine-cover-right-v1",
-          "sha256": "906d493ccb089f83c92b2ab47dbfad821320badb7b223370ae71edb8fcf2375c"
+          "revision": "engine-cover-right-v2",
+          "sha256": "f6607df8afacbc045e49e219d10a5e52ac296f16ffe88c817a66f9a48e675abc"
         }
       ],
-      "reason": "Independent actual-image audit: right reverse rim has local interruptions; mounting ears and bores visibly irregular/faceted. Smoothness between bosses to investigate, OEM discrepancy not established",
+      "reason": "Inherited-normal defect corrected with unchanged geometry; final96 views and export confirm clean rim/ear shading. Recess between bosses and exact OEM shape/dimensions remain conditional, no user art acceptance.",
       "reviewed_at": null
     },
     "G4": {
       "status": "rework",
-      "revision": "engine-cover-right-v1",
+      "revision": "engine-cover-right-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/engine-cover-right-v1/rear-hollow-shell.png",
+          "path": "../../reviews/engine-cover-right-v2/rear-hollow-shell.png",
           "kind": "surface_or_sound_comparison",
-          "revision": "engine-cover-right-v1",
-          "sha256": "7f28a10b790db41fcc43665f7fb0dba97390c683c6727573b2fadc885410b8b1"
+          "revision": "engine-cover-right-v2",
+          "sha256": "83867f8f0b13c5c88903a4fc959b4d18e161d5059c43ab8637f747fb711b35c4"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -176,14 +256,14 @@
     },
     "G5": {
       "status": "rework",
-      "revision": "engine-cover-right-v1",
+      "revision": "engine-cover-right-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/engine-cover-right-v1/source-geometry-check.json",
+          "path": "../../reviews/engine-cover-right-v2/source-geometry-check.json",
           "kind": "motion_or_interface_check",
-          "revision": "engine-cover-right-v1",
-          "sha256": "7ad2a67f4ad790ee5563c1b8e32e3429b134a99c76c58e359eec924259a5032b"
+          "revision": "engine-cover-right-v2",
+          "sha256": "95b2b11538fa44b5f359dd6b74335fa455e817311e64bdcf7004830002b41fab"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -191,20 +271,20 @@
     },
     "G6": {
       "status": "rework",
-      "revision": "engine-cover-right-v1",
+      "revision": "engine-cover-right-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/engine-cover-right-v1/export-buffer-check.json",
+          "path": "../../reviews/engine-cover-right-v2/export-buffer-check.json",
           "kind": "technical_export_check",
-          "revision": "engine-cover-right-v1",
-          "sha256": "b24a143ab6f3e6a47a8fe396da7cae1bfa84a9d6de8581c9fd9ba113c08f893a"
+          "revision": "engine-cover-right-v2",
+          "sha256": "dce88e7568f1325383f64c6baa61f2b9ddfcc99a7aee3adea2c4b9270e6e70c4"
         },
         {
-          "path": "../../reviews/engine-cover-right-v1/inspection-v3/engine-driver.png",
+          "path": "../../reviews/engine-cover-right-v2/inspection-v3/engine-driver.png",
           "kind": "real_runtime_comparison",
-          "revision": "engine-cover-right-v1",
-          "sha256": "be840a5ac960abb5edae214ad5f8f4586b2d1b1c9f8107d9453c8a61efb26e27"
+          "revision": "engine-cover-right-v2",
+          "sha256": "9a71a0231c0f9000a6effb6d8cff964cadf6a7e01d33cb8ffcb3c619d693d67f"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -212,7 +292,7 @@
     },
     "G7": {
       "status": "pending",
-      "revision": "engine-cover-right-v1",
+      "revision": "engine-cover-right-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
@@ -220,7 +300,7 @@
     },
     "G8": {
       "status": "pending",
-      "revision": "engine-cover-right-v1",
+      "revision": "engine-cover-right-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -228,11 +308,19 @@
     }
   },
   "active_detailed_fabrication": false,
-  "source_revision": "engine-cover-right-v1",
-  "export_revision": "engine-cover-right-v1-inspection",
-  "next_action": "Preserve frozen v1; inspect actual edge/ear and boss geometry, then create separate v2 correction after kickstarter source freezes",
+  "source_revision": "engine-cover-right-v2",
+  "export_revision": "engine-cover-right-v2-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
   "art_accepted": false,
   "production_group": 17,
-  "candidate_source": "../../../assets-src/moto-components/engine-cover-right/README.md",
-  "candidate_review": "../../reviews/engine-cover-right-v1/README.md"
+  "candidate_source": "../../../assets-src/moto-components/engine-cover-right/README_v2.md",
+  "candidate_review": "../../reviews/engine-cover-right-v2/README.md",
+  "previous_revisions": [
+    {
+      "revision": "engine-cover-right-v1",
+      "source": "../../../assets-src/moto-components/engine-cover-right/README.md",
+      "review": "../../reviews/engine-cover-right-v1/README.md",
+      "art_accepted": false
+    }
+  ]
 }

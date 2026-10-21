@@ -657,6 +657,245 @@
       ],
       "rigs": [],
       "details": "Pièce liée PF541287, formes de travail estimées ; légende de rapports omise car variante4/5non résolue. Aucun moteur complet, raccord ou dos certifié."
+    },
+    "mount-nyloc": {
+      "label": "Diagnostic rejeté — écrou Nyloc v1",
+      "lot": 1,
+      "review": "handlebar-mount-nyloc-v1",
+      "source": "handlebar-clamps/mounting-nyloc/handlebar-mount-nyloc-v1.blend",
+      "collection": "WEWA_HANDLEBAR_MOUNT_NYLOC_ISOLATED",
+      "component_id": "MOTO-HANDLEBAR-MOUNT-NYLOC-001",
+      "source_frame": "isolated_local",
+      "files": [
+        "handlebar-clamps/mounting-nyloc/handlebar-mount-nyloc-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Gel6856/1b1 retenu comme diagnostic : crêtes hélicoïdales en escalier visibles dans le rendu96. Reconstruction de la topologie du filet en cours, aucun écrou reçu ni montage certifié.",
+      "candidate_status": "rejected_diagnostic"
+    },
+    "kickstarter": {
+      "label": "Kick articulé — déploiement et course conditionnels",
+      "lot": 17,
+      "review": "kickstarter-v1",
+      "source": "kickstarter/kickstarter-v1.blend",
+      "collection": "WEWA_KICKSTARTER",
+      "component_id": "MOTO-KICKSTARTER-001",
+      "files": [
+        "kickstarter/kickstarter-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "kick_fold",
+          "node": "Kick base folding pivot - inspection range estimated",
+          "label": "Déploiement estimé (°)",
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "min": 0,
+          "max": 90,
+          "initial": 90
+        },
+        {
+          "id": "kick_stroke",
+          "node": "Kick engine shaft provisional datum",
+          "label": "Course estimée, kick déployé (°)",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": 0,
+          "max": 60,
+          "initial": 0
+        }
+      ],
+      "pose_constraints": [
+        {
+          "type": "requires_pose",
+          "control": "kick_stroke",
+          "requires_control": "kick_fold",
+          "requires_value": 90,
+          "tolerance": 0.001,
+          "neutral": 0
+        }
+      ],
+      "inspection_url": "v4.html",
+      "details": "Commande isolée ; charnière à la base, course de présentation autorisée après déploiement90°. Angles, pose et raccord moteur estimés ; aucune butée ni compatibilité certifiée."
+    },
+    "engine-cover-right-v2": {
+      "label": "Carter moteur droit v2 — normales corrigées",
+      "lot": 17,
+      "review": "engine-cover-right-v2",
+      "source": "engine-cover-right/engine-cover-right-v2.blend",
+      "collection": "WEWA_ENGINE_COVER_RIGHT",
+      "component_id": "MOTO-ENGINE-COVER-RIGHT-001",
+      "files": [
+        "engine-cover-right/engine-cover-right-v2-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Géométrie de la coque v1 conservée, normales héritées retirées. Raccord entre bosses, cotes et compatibilité RDC restent à examiner ; vues finales en attente.",
+      "readme": "README_v2.md"
+    },
+    "engine-filter-cap-v2": {
+      "label": "Bouchon de filtre v2 — raccords et arrondis repris",
+      "lot": 17,
+      "review": "engine-filter-cap-v2",
+      "source": "engine-filter-cap/engine-filter-cap-v2.blend",
+      "collection": "WEWA_ENGINE_FILTER_CAP",
+      "component_id": "MOTO-ENGINE-FILTER-CAP-001",
+      "files": [
+        "engine-filter-cap/engine-filter-cap-v2-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Contour disque/oreilles tangent et vraies sections arrondies, gabarit conservé. Rayons et référence liés estimés ; surfaces vérifiées contre RHv2, vis/joint/filtre et compatibilité OEM restent ouverts.",
+      "readme": "README_v2.md"
+    },
+    "instruments-v2": {
+      "label": "Compteurs v2 — USB et graphismes repris",
+      "review": "instruments-v2",
+      "files": [
+        "instruments/instruments-v2-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "speed_angle",
+          "label": "Aiguille vitesse — angle relatif de revue",
+          "node": "SPEED_NEEDLE_PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -270,
+          "max": 0,
+          "initial": 0,
+          "step": 1
+        },
+        {
+          "id": "fuel_angle",
+          "label": "Aiguille carburant — angle relatif de revue",
+          "node": "FUEL_NEEDLE_PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -28,
+          "max": 52,
+          "initial": 0,
+          "step": 1
+        }
+      ],
+      "source": "instruments/instruments-v2.blend",
+      "collection": "WEWA_INSTRUMENTS_SEPARATE_PARTS",
+      "readme": "README_v2.md",
+      "component_id": "MOTO-INSTRUMENTS-001",
+      "details": "Complément cockpit : embases/USB, marquages et huit triangles de texte repris. Angles et135nœuds préservés ; géométrie locale et calibration conditionnelles. États LCD1–5 de démonstration, aucun nombre de rapports RDC certifié."
+    },
+    "mirror-right": {
+      "label": "Diagnostic à reprendre — rétroviseur droit v1",
+      "lot": 8,
+      "review": "mirror-right-v1",
+      "source": "mirrors/mirror-right-v1.blend",
+      "collection": "WEWA_MIRROR_RIGHT",
+      "component_id": "MOTO-MIRROR-RIGHT-001",
+      "files": [
+        "mirrors/mirror-right-v1.glb"
+      ],
+      "readme": "README-right.md",
+      "rigs": [
+        {
+          "id": "yaw",
+          "label": "Orientation latérale estimée",
+          "node": "RH mirror head adjustment PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -10,
+          "max": 10,
+          "initial": 0,
+          "step": 0.1
+        },
+        {
+          "id": "pitch",
+          "label": "Inclinaison estimée",
+          "node": "RH mirror head adjustment PIVOT",
+          "axis": [
+            -0.9755259156227112,
+            0.010137728415429592,
+            -0.21965079009532928
+          ],
+          "min": -7,
+          "max": 7,
+          "initial": 0,
+          "step": 0.1
+        }
+      ],
+      "details": "Écart cache/écrou observé contre photos DJ221004 : filetage exposé excessif au-dessus de l’écrou. Correction v2 séparée en cours ; ancien gel et captures conservés, aucune réception.",
+      "candidate_status": "rejected_base_interface_diagnostic"
+    },
+    "mount-nyloc-v2": {
+      "label": "Diagnostic à reprendre — écrou Nyloc v2",
+      "lot": 1,
+      "review": "handlebar-mount-nyloc-v2",
+      "source": "handlebar-clamps/mounting-nyloc-v2/handlebar-mount-nyloc-v2.blend",
+      "collection": "WEWA_HANDLEBAR_MOUNT_NYLOC_ISOLATED",
+      "component_id": "MOTO-HANDLEBAR-MOUNT-NYLOC-001",
+      "source_frame": "isolated_local",
+      "files": [
+        "handlebar-clamps/mounting-nyloc-v2/handlebar-mount-nyloc-v2-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Crêtes principales corrigées ; petite ondulation géométrique à l’entrée du filet confirmée sur buffers et rendus avec/sans débruitage. V3 séparée en préparation ; aucun écrou reçu ni montage certifié.",
+      "candidate_status": "rejected_lower_entry_diagnostic"
+    },
+    "mirror-right-v2": {
+      "label": "Rétroviseur droit v2 — cache de base rapproché",
+      "lot": 8,
+      "review": "mirror-right-v2",
+      "source": "mirrors/mirror-right-v2.blend",
+      "collection": "WEWA_MIRROR_RIGHT",
+      "component_id": "MOTO-MIRROR-RIGHT-001",
+      "files": [
+        "mirrors/mirror-right-v2.glb"
+      ],
+      "readme": "README-right-v2.md",
+      "rigs": [
+        {
+          "id": "yaw",
+          "label": "Orientation latérale estimée",
+          "node": "RH mirror head adjustment PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -10,
+          "max": 10,
+          "initial": 0,
+          "step": 0.1
+        },
+        {
+          "id": "pitch",
+          "label": "Inclinaison estimée",
+          "node": "RH mirror head adjustment PIVOT",
+          "axis": [
+            -0.9755259156227112,
+            0.010137728415429592,
+            -0.21965079009532928
+          ],
+          "min": -7,
+          "max": 7,
+          "initial": 0,
+          "step": 0.1
+        }
+      ],
+      "details": "Cache de base rapproché de l’écrou après comparaison aux photos liées. Dix maillages conservés ; déplacement et jeu estimés. Deux réglages de tête, vues finales en cours ; aucune réception ni compatibilité RDC certifiée.",
+      "candidate_status": "frozen_candidate_final_views_pending"
     }
   }
 }

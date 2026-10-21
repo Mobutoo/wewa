@@ -1,0 +1,108 @@
+{
+  "component_id": "MOTO-MIRROR-RIGHT-001",
+  "phase": "head isolated candidate, exact identity/dimensions unresolved",
+  "source_sha256": "4853ac8357c4ce464952db0d5a7497e44e6bfe08c1ce4e2364209438c15d1043",
+  "export_sha256": "2f88ab855d9b6d21232b2c6fe7e37d8a81f4f7e9daf4c5b3639914167ea3d8ab",
+  "geometry": [
+    {
+      "object": "RH mirror compound shell and socket - candidate",
+      "vertices": 11138,
+      "faces": 22280,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 5.897185396123164e-05
+    },
+    {
+      "object": "RH convex mirror glass - finite thickness candidate",
+      "vertices": 6482,
+      "faces": 6588,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 2.5598761728568837e-05
+    },
+    {
+      "object": "RH rear metallic reflector - original candidate",
+      "vertices": 6482,
+      "faces": 6588,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 6.120551686003786e-07
+    },
+    {
+      "object": "RH continuous mirror edge seal - estimated",
+      "vertices": 432,
+      "faces": 432,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 7.770904213931902e-08
+    }
+  ],
+  "CSG": [
+    {
+      "stages": [
+        {
+          "operation": "features",
+          "part": "RH integral socket outside construction",
+          "before_volume_m3": 4.404004578661578e-05,
+          "after_volume_m3": 6.368519591128842e-05
+        },
+        {
+          "operation": "drills",
+          "part": "RH curved neck working bore construction",
+          "before_volume_m3": 6.368519591128842e-05,
+          "after_volume_m3": 5.938560461025831e-05
+        },
+        {
+          "operation": "drills",
+          "part": "RH spherical socket clearance construction",
+          "before_volume_m3": 5.938560461025831e-05,
+          "after_volume_m3": 5.900343402356914e-05
+        },
+        {
+          "operation": "drills",
+          "part": "RH observed rear circular passage cutter - function unknown",
+          "before_volume_m3": 5.900343402356914e-05,
+          "after_volume_m3": 5.897185478679383e-05
+        }
+      ],
+      "solid_components": 1,
+      "volume_m3": 5.897185478679383e-05,
+      "worker": "manifold3d",
+      "worker_version": "3.3.2"
+    }
+  ],
+  "head_frame_world": {
+    "centre_m": [
+      -0.32899999618530273,
+      -0.04500000178813934,
+      0.2840000092983246
+    ],
+    "outward_U": [
+      -0.9755259156227112,
+      0.21965079009532928,
+      0.010137728415429592
+    ],
+    "up_V": [
+      -9.313225746154785e-10,
+      -0.04610477015376091,
+      0.998936653137207
+    ],
+    "normal_toward_rider_N": [
+      0.21988458931446075,
+      0.9744885563850403,
+      0.04497639462351799
+    ],
+    "left_positive_X": false
+  },
+  "mount_boss_world_m": [
+    -0.1886511594057083,
+    -0.008244437165558338,
+    0.11800000071525574
+  ],
+  "ball_world_m": null,
+  "linked_mount_source_path": null,
+  "linked_mount_source_sha256": null,
+  "all_dimensions_estimated": true,
+  "exact_current_RDC_identity_confirmed": false,
+  "art_accepted": false
+}

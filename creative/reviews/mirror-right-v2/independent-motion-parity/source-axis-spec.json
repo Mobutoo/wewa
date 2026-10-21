@@ -1,0 +1,56 @@
+{
+  "schema": "wewa.source-rotation-parity-spec.v1",
+  "source": "assets-src/moto-components/mirrors/mirror-right-v2.blend",
+  "export": "assets-src/moto-components/mirrors/mirror-right-v2.glb",
+  "source_parameters": "assets-src/moto-components/mirrors/parameters-right-v2.json",
+  "source_sha256": "af1bfd1155b02281eb549b428042728e55f7975f0fdc449806bb288d850e0a58",
+  "export_sha256": "a5765a2c2b2c9b5aaefc9a7cc2e95b587731269e05227394b8f84c5058944e70",
+  "source_parameters_sha256": "0aa5e690c34979f327a139caa53cc74dbb2e5feddf86dc813b1b4b1f5c2ece33",
+  "collection": "WEWA_MIRROR_RIGHT",
+  "pivot": "RH mirror head adjustment PIVOT",
+  "witness_mesh": "RH continuous mirror edge seal - estimated",
+  "source_rotation_order": [
+    {
+      "control_id": "yaw",
+      "axis_source": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "control_id": "pitch",
+      "parameter_property": "head_pitch_axis_world"
+    }
+  ],
+  "poses": [
+    {
+      "name": "rest",
+      "controls": {
+        "yaw": 0,
+        "pitch": 0
+      }
+    },
+    {
+      "name": "positive_yaw_positive_pitch",
+      "controls": {
+        "yaw": 10,
+        "pitch": 7
+      }
+    },
+    {
+      "name": "negative_yaw_positive_pitch",
+      "controls": {
+        "yaw": -10,
+        "pitch": 7
+      }
+    },
+    {
+      "name": "positive_yaw_negative_pitch",
+      "controls": {
+        "yaw": 7,
+        "pitch": -5
+      }
+    }
+  ]
+}

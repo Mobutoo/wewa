@@ -1,0 +1,11 @@
+# Rétroviseur droit — candidat séparé
+
+Le contour droit est relevé indépendamment sur la rotation officielle RDC. Les photographies isolées DJ221004 documentent conditionnellement sa coque bombée, le bord/verre, le col et les caches. Le petit orifice arrière est réellement percé dans la géométrie ; sa fonction, ses dimensions et son installation RDC restent inconnues. Les photos restent privées, aucune texture photographique, étiquette commerciale ou marque d’homologation n’est copiée.
+
+Dix corps fermés distincts : coque et col intégral ; vitre convexe d’épaisseur finie ; couche réfléchissante arrière ; bande de bord ; tige d’acier courbe avec boule et filetage cosmétique ; rondelle ; écrou formé ; cache de base creux à deux étages ; cache inférieur de col ; cache supérieur mobile. L’intérieur du joint, les cotes, le filetage et les matières conservent leurs estimations. La vitre 2,5 mm et le rayon 2 m sont des paramètres de travail, pas des cotes constructeur.
+
+Le raccord se fait sur le bossage du frein avant v2 figé. Les contrôles BVH de 45 paires, neuf poses combinées de tête et cinq poses du levier n’ont pas de traversée de surface ; cela ne certifie pas un montage physique ni les filets. Le pivot exporté `RH mirror head adjustment PIVOT` conserve ses cinq enfants mobiles. `controls-right.json` décrit ses axes glTF locaux et amplitudes estimées. Les caches inférieur et supérieur se recouvrent sans exposer la boule ; l’écrou et la rondelle restent séparés du cache de base.
+
+Les aperçus diffus et de reflets de la coque ont été examinés avant la matière. La géométrie et les normales des 22280 triangles de coque restent bit-identiques entre gris et tête ; les quatre corps de tête sont ensuite bit-identiques dans l’assemblage. Les UV et tangentes utiles sont lus dans les véritables buffers GLB, pas déduits des noms de matière. Les PNG/EXR à 96 échantillons ne sont déclarés terminés que dans le rapport des vues réellement sauvées et relues.
+
+Sources : `mirror-right-v1.blend`, `mirror-right-v1.glb`, `parameters-right.json`, `provenance-right.json`. Générateur droit distinct `mirror_builder_right_v1.py` ; le miroir gauche historique est intact. Revue : `creative/reviews/mirror-right-v1/`. Aucune réception artistique ni qualification iPhone acquise.

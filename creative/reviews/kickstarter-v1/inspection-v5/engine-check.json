@@ -1,0 +1,4686 @@
+{
+  "camera": {
+    "position": [
+      -0.1972482046112418,
+      -0.203953008004988,
+      -0.8285284079249556
+    ],
+    "target": [
+      -0.19724820461124182,
+      -0.5420000217854977,
+      -0.27814378403127193
+    ],
+    "radius": 0.6459094501124069,
+    "fov": 0.72,
+    "fovMode": 0
+  },
+  "framing": {
+    "min": [
+      0.46476739923374727,
+      0.24439893277445987
+    ],
+    "max": [
+      0.6787352523389402,
+      0.8240230963890727
+    ],
+    "scope": "Projected actual mesh bounds, including CPU-evaluated active morph positions; whole-piece framing only"
+  },
+  "asset": "kickstarter",
+  "revision": "kickstarter-v1",
+  "config": {
+    "label": "Kick articul\u00e9 \u2014 d\u00e9ploiement et course conditionnels",
+    "lot": 17,
+    "review": "kickstarter-v1",
+    "source": "kickstarter/kickstarter-v1.blend",
+    "collection": "WEWA_KICKSTARTER",
+    "component_id": "MOTO-KICKSTARTER-001",
+    "files": [
+      "kickstarter/kickstarter-inspection.glb"
+    ],
+    "rigs": [
+      {
+        "id": "kick_fold",
+        "node": "Kick base folding pivot - inspection range estimated",
+        "label": "D\u00e9ploiement estim\u00e9 (\u00b0)",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "min": 0,
+        "max": 90,
+        "initial": 90
+      },
+      {
+        "id": "kick_stroke",
+        "node": "Kick engine shaft provisional datum",
+        "label": "Course estim\u00e9e, kick d\u00e9ploy\u00e9 (\u00b0)",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "min": 0,
+        "max": 60,
+        "initial": 0
+      }
+    ],
+    "pose_constraints": [
+      {
+        "type": "requires_pose",
+        "control": "kick_stroke",
+        "requires_control": "kick_fold",
+        "requires_value": 90,
+        "tolerance": 0.001,
+        "neutral": 0
+      }
+    ],
+    "inspection_url": "v4.html",
+    "details": "Commande isol\u00e9e ; charni\u00e8re \u00e0 la base, course de pr\u00e9sentation autoris\u00e9e apr\u00e8s d\u00e9ploiement90\u00b0. Angles, pose et raccord moteur estim\u00e9s ; aucune but\u00e9e ni compatibilit\u00e9 certifi\u00e9e."
+  },
+  "files": [
+    "kickstarter/kickstarter-inspection.glb"
+  ],
+  "meshes": 7,
+  "vertices": 34281,
+  "triangles": 55456,
+  "bounds": {
+    "min": [
+      -0.23449640721082687,
+      -0.6920000240206718,
+      -0.3602875731885433
+    ],
+    "max": [
+      -0.16000000201165676,
+      -0.3920000195503235,
+      -0.19599999487400055
+    ]
+  },
+  "textures_ready": true,
+  "renderer": {
+    "vendor": "Google Inc. (Google)",
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+  },
+  "rig_states": {
+    "kick_fold": 90,
+    "kick_stroke": 0
+  },
+  "pose_constraints": [
+    {
+      "type": "requires_pose",
+      "control": "kick_stroke",
+      "requires_control": "kick_fold",
+      "requires_value": 90,
+      "tolerance": 0.001,
+      "neutral": 0,
+      "satisfied": true
+    }
+  ],
+  "attachments": [],
+  "rigs": [
+    {
+      "id": "kick_fold",
+      "node": "Kick base folding pivot - inspection range estimated",
+      "quaternion": [
+        0,
+        0,
+        0.7071067811865475,
+        0.7071067811865476
+      ],
+      "world_matrix": [
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        0.0,
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        -0.21000000834465027,
+        -0.6669999957084656,
+        -0.3310000002384186,
+        1.0
+      ],
+      "morph_targets": null,
+      "actual_geometry": [
+        {
+          "mesh": "Kick closed chrome pedal end",
+          "vertex_index": 0,
+          "point_world": [
+            -0.34140001237392426,
+            -0.39804020524024963,
+            -0.3439598046243191
+          ]
+        },
+        {
+          "mesh": "Kick closed chrome pedal end",
+          "vertex_index": 577,
+          "point_world": [
+            -0.3442000150680542,
+            -0.39556533098220825,
+            -0.34643467888236046
+          ]
+        },
+        {
+          "mesh": "Kick closed chrome pedal end",
+          "vertex_index": 1153,
+          "point_world": [
+            -0.3432000130414963,
+            -0.39778971672058105,
+            -0.3436923436820507
+          ]
+        },
+        {
+          "mesh": "Kick closed chrome pedal end",
+          "vertex_index": 960,
+          "point_world": [
+            -0.3450000137090683,
+            -0.4020000100135803,
+            -0.340000007301569
+          ]
+        },
+        {
+          "mesh": "Kick closed chrome pedal end",
+          "vertex_index": 504,
+          "point_world": [
+            -0.34200001507997513,
+            -0.4020000100135803,
+            -0.33090000599622726
+          ]
+        },
+        {
+          "mesh": "Kick closed chrome pedal end",
+          "vertex_index": 408,
+          "point_world": [
+            -0.34200001507997513,
+            -0.4020000100135803,
+            -0.3491000086069107
+          ]
+        },
+        {
+          "mesh": "Kick closed chrome pedal end",
+          "vertex_index": 552,
+          "point_world": [
+            -0.34200001507997513,
+            -0.3929000198841095,
+            -0.340000007301569
+          ]
+        },
+        {
+          "mesh": "Kick closed chrome pedal end",
+          "vertex_index": 456,
+          "point_world": [
+            -0.34200001507997513,
+            -0.41110000014305115,
+            -0.340000007301569
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 0,
+          "point_world": [
+            -0.1963973008096218,
+            -0.6677552266046405,
+            -0.3277224823832512
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 3655,
+          "point_world": [
+            -0.1811976656317711,
+            -0.6461796946823597,
+            -0.3530096337199211
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 7310,
+          "point_world": [
+            -0.3430071249604225,
+            -0.40060240030288696,
+            -0.3452160060405731
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 3561,
+          "point_world": [
+            -0.18071243539452553,
+            -0.6494819633662701,
+            -0.35011111944913864
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 7208,
+          "point_world": [
+            -0.3430274650454521,
+            -0.39660006761550903,
+            -0.340000007301569
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 123,
+          "point_world": [
+            -0.21000001206994057,
+            -0.6735000247717835,
+            -0.32200000807642937
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 3703,
+          "point_world": [
+            -0.18793582916259766,
+            -0.6393797323107719,
+            -0.3554963991045952
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 7099,
+          "point_world": [
+            -0.3071034625172615,
+            -0.3965751826763153,
+            -0.340000007301569
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 69,
+          "point_world": [
+            -0.20599314011633396,
+            -0.6740000247955322,
+            -0.32350367680191994
+          ]
+        },
+        {
+          "mesh": "Kick ribbed pedal rubber - fixed to arm",
+          "vertex_index": 0,
+          "point_world": [
+            -0.2750000134110451,
+            -0.39804020524024963,
+            -0.3439598046243191
+          ]
+        },
+        {
+          "mesh": "Kick ribbed pedal rubber - fixed to arm",
+          "vertex_index": 9280,
+          "point_world": [
+            -0.30800001323223114,
+            -0.40907108783721924,
+            -0.33292894065380096
+          ]
+        },
+        {
+          "mesh": "Kick ribbed pedal rubber - fixed to arm",
+          "vertex_index": 18559,
+          "point_world": [
+            -0.3410000130534172,
+            -0.3978506922721863,
+            -0.34376073628664017
+          ]
+        },
+        {
+          "mesh": "Kick ribbed pedal rubber - fixed to arm",
+          "vertex_index": 18048,
+          "point_world": [
+            -0.3410000130534172,
+            -0.39563605189323425,
+            -0.34636396914720535
+          ]
+        },
+        {
+          "mesh": "Kick ribbed pedal rubber - fixed to arm",
+          "vertex_index": 672,
+          "point_world": [
+            -0.2760000117123127,
+            -0.4020000100135803,
+            -0.33000000938773155
+          ]
+        },
+        {
+          "mesh": "Kick ribbed pedal rubber - fixed to arm",
+          "vertex_index": 544,
+          "point_world": [
+            -0.2760000117123127,
+            -0.4020000100135803,
+            -0.3500000052154064
+          ]
+        },
+        {
+          "mesh": "Kick ribbed pedal rubber - fixed to arm",
+          "vertex_index": 736,
+          "point_world": [
+            -0.2760000117123127,
+            -0.3920000195503235,
+            -0.340000007301569
+          ]
+        },
+        {
+          "mesh": "Kick ribbed pedal rubber - fixed to arm",
+          "vertex_index": 608,
+          "point_world": [
+            -0.2760000117123127,
+            -0.41200000047683716,
+            -0.340000007301569
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kick_stroke",
+      "node": "Kick engine shaft provisional datum",
+      "quaternion": [
+        0.5,
+        -0.5,
+        0.5,
+        0.5
+      ],
+      "world_matrix": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        -0.17000000178813934,
+        -0.6740000247955322,
+        -0.32199999690055847,
+        1.0
+      ],
+      "morph_targets": null,
+      "actual_geometry": [
+        {
+          "mesh": "Kick closed chrome pedal end",
+          "vertex_index": 0,
+          "point_world": [
+            -0.34140001237392426,
+            -0.39804020524024963,
+            -0.3439598046243191
+          ]
+        },
+        {
+          "mesh": "Kick closed chrome pedal end",
+          "vertex_index": 577,
+          "point_world": [
+            -0.3442000150680542,
+            -0.39556533098220825,
+            -0.34643467888236046
+          ]
+        },
+        {
+          "mesh": "Kick closed chrome pedal end",
+          "vertex_index": 1153,
+          "point_world": [
+            -0.3432000130414963,
+            -0.39778971672058105,
+            -0.3436923436820507
+          ]
+        },
+        {
+          "mesh": "Kick closed chrome pedal end",
+          "vertex_index": 960,
+          "point_world": [
+            -0.3450000137090683,
+            -0.4020000100135803,
+            -0.340000007301569
+          ]
+        },
+        {
+          "mesh": "Kick closed chrome pedal end",
+          "vertex_index": 504,
+          "point_world": [
+            -0.34200001507997513,
+            -0.4020000100135803,
+            -0.33090000599622726
+          ]
+        },
+        {
+          "mesh": "Kick closed chrome pedal end",
+          "vertex_index": 408,
+          "point_world": [
+            -0.34200001507997513,
+            -0.4020000100135803,
+            -0.3491000086069107
+          ]
+        },
+        {
+          "mesh": "Kick closed chrome pedal end",
+          "vertex_index": 552,
+          "point_world": [
+            -0.34200001507997513,
+            -0.3929000198841095,
+            -0.340000007301569
+          ]
+        },
+        {
+          "mesh": "Kick closed chrome pedal end",
+          "vertex_index": 456,
+          "point_world": [
+            -0.34200001507997513,
+            -0.41110000014305115,
+            -0.340000007301569
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 0,
+          "point_world": [
+            -0.1963973008096218,
+            -0.6677552266046405,
+            -0.3277224823832512
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 3655,
+          "point_world": [
+            -0.1811976656317711,
+            -0.6461796946823597,
+            -0.3530096337199211
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 7310,
+          "point_world": [
+            -0.3430071249604225,
+            -0.40060240030288696,
+            -0.3452160060405731
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 3561,
+          "point_world": [
+            -0.18071243539452553,
+            -0.6494819633662701,
+            -0.35011111944913864
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 7208,
+          "point_world": [
+            -0.3430274650454521,
+            -0.39660006761550903,
+            -0.340000007301569
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 123,
+          "point_world": [
+            -0.21000001206994057,
+            -0.6735000247717835,
+            -0.32200000807642937
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 3703,
+          "point_world": [
+            -0.18793582916259766,
+            -0.6393797323107719,
+            -0.3554963991045952
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 7099,
+          "point_world": [
+            -0.3071034625172615,
+            -0.3965751826763153,
+            -0.340000007301569
+          ]
+        },
+        {
+          "mesh": "Kick forged arm and base hinge eye - moving candidate",
+          "vertex_index": 69,
+          "point_world": [
+            -0.20599314011633396,
+            -0.6740000247955322,
+            -0.32350367680191994
+          ]
+        },
+        {
+          "mesh": "Kick ribbed pedal rubber - fixed to arm",
+          "vertex_index": 0,
+          "point_world": [
+            -0.2750000134110451,
+            -0.39804020524024963,
+            -0.3439598046243191
+          ]
+        },
+        {
+          "mesh": "Kick ribbed pedal rubber - fixed to arm",
+          "vertex_index": 9280,
+          "point_world": [
+            -0.30800001323223114,
+            -0.40907108783721924,
+            -0.33292894065380096
+          ]
+        },
+        {
+          "mesh": "Kick ribbed pedal rubber - fixed to arm",
+          "vertex_index": 18559,
+          "point_world": [
+            -0.3410000130534172,
+            -0.3978506922721863,
+            -0.34376073628664017
+          ]
+        },
+        {
+          "mesh": "Kick ribbed pedal rubber - fixed to arm",
+          "vertex_index": 18048,
+          "point_world": [
+            -0.3410000130534172,
+            -0.39563605189323425,
+            -0.34636396914720535
+          ]
+        },
+        {
+          "mesh": "Kick ribbed pedal rubber - fixed to arm",
+          "vertex_index": 672,
+          "point_world": [
+            -0.2760000117123127,
+            -0.4020000100135803,
+            -0.33000000938773155
+          ]
+        },
+        {
+          "mesh": "Kick ribbed pedal rubber - fixed to arm",
+          "vertex_index": 544,
+          "point_world": [
+            -0.2760000117123127,
+            -0.4020000100135803,
+            -0.3500000052154064
+          ]
+        },
+        {
+          "mesh": "Kick ribbed pedal rubber - fixed to arm",
+          "vertex_index": 736,
+          "point_world": [
+            -0.2760000117123127,
+            -0.3920000195503235,
+            -0.340000007301569
+          ]
+        },
+        {
+          "mesh": "Kick ribbed pedal rubber - fixed to arm",
+          "vertex_index": 608,
+          "point_world": [
+            -0.2760000117123127,
+            -0.41200000047683716,
+            -0.340000007301569
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+          "vertex_index": 0,
+          "point_world": [
+            -0.17106919537764043,
+            -0.691353814676404,
+            -0.3429499976336956
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+          "vertex_index": 556,
+          "point_world": [
+            -0.17238884908147156,
+            -0.6840887637808919,
+            -0.33929999731481075
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+          "vertex_index": 1111,
+          "point_world": [
+            -0.17545000091195107,
+            -0.6839885506778955,
+            -0.2984999977052212
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+          "vertex_index": 38,
+          "point_world": [
+            -0.17255000304430723,
+            -0.6890114992856979,
+            -0.34549999609589577
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+          "vertex_index": 873,
+          "point_world": [
+            -0.17255000094883144,
+            -0.6890114974230528,
+            -0.2984999977052212
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+          "vertex_index": 111,
+          "point_world": [
+            -0.16833109396975487,
+            -0.6866112845018506,
+            -0.339649997651577
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+          "vertex_index": 418,
+          "point_world": [
+            -0.1796689098700881,
+            -0.6866112845018506,
+            -0.3429499976336956
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+          "vertex_index": 622,
+          "point_world": [
+            -0.1714650021167472,
+            -0.681503058411181,
+            -0.3429499976336956
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+          "vertex_index": 24,
+          "point_world": [
+            -0.1714650021167472,
+            -0.6914969924837351,
+            -0.3429499976336956
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch nut - estimated cosmetic",
+          "vertex_index": 0,
+          "point_world": [
+            -0.17113641288597137,
+            -0.6911139506846666,
+            -0.30454655922949314
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch nut - estimated cosmetic",
+          "vertex_index": 334,
+          "point_world": [
+            -0.1709150018868968,
+            -0.6911505814641714,
+            -0.2995999976992607
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch nut - estimated cosmetic",
+          "vertex_index": 668,
+          "point_world": [
+            -0.17686359118670225,
+            -0.6818860983476043,
+            -0.29925343580543995
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch nut - estimated cosmetic",
+          "vertex_index": 43,
+          "point_world": [
+            -0.1710555156460032,
+            -0.6882000248879194,
+            -0.3045999985188246
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch nut - estimated cosmetic",
+          "vertex_index": 349,
+          "point_world": [
+            -0.171345942071639,
+            -0.6910969913005829,
+            -0.2991999965161085
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch nut - estimated cosmetic",
+          "vertex_index": 390,
+          "point_world": [
+            -0.16834553598891944,
+            -0.686627178452909,
+            -0.2995999976992607
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch nut - estimated cosmetic",
+          "vertex_index": 155,
+          "point_world": [
+            -0.17965446785092354,
+            -0.686627178452909,
+            -0.3041999973356724
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch nut - estimated cosmetic",
+          "vertex_index": 238,
+          "point_world": [
+            -0.17151500203181058,
+            -0.681503058411181,
+            -0.3041999973356724
+          ]
+        },
+        {
+          "mesh": "Kick clamp pinch nut - estimated cosmetic",
+          "vertex_index": 18,
+          "point_world": [
+            -0.17151500203181058,
+            -0.6914969924837351,
+            -0.3041999973356724
+          ]
+        },
+        {
+          "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+          "vertex_index": 0,
+          "point_world": [
+            -0.16450000228360295,
+            -0.6897470708936453,
+            -0.338398814201355
+          ]
+        },
+        {
+          "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+          "vertex_index": 2160,
+          "point_world": [
+            -0.21118932589888573,
+            -0.6550000254064798,
+            -0.33450363762676716
+          ]
+        },
+        {
+          "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+          "vertex_index": 4320,
+          "point_world": [
+            -0.216128159314394,
+            -0.6555000245571136,
+            -0.31953501980751753
+          ]
+        },
+        {
+          "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+          "vertex_index": 630,
+          "point_world": [
+            -0.21000000089406967,
+            -0.6785000246018171,
+            -0.3439999967813492
+          ]
+        },
+        {
+          "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+          "vertex_index": 3450,
+          "point_world": [
+            -0.16450000135228038,
+            -0.6875000242143869,
+            -0.3049999959766865
+          ]
+        },
+        {
+          "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+          "vertex_index": 11,
+          "point_world": [
+            -0.16000000201165676,
+            -0.6875000242143869,
+            -0.33449999801814556
+          ]
+        },
+        {
+          "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+          "vertex_index": 1249,
+          "point_world": [
+            -0.22300000116229057,
+            -0.6785000246018171,
+            -0.3309999965131283
+          ]
+        },
+        {
+          "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+          "vertex_index": 1737,
+          "point_world": [
+            -0.18180000130087137,
+            -0.6550000235438347,
+            -0.32819999707862735
+          ]
+        },
+        {
+          "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+          "vertex_index": 9,
+          "point_world": [
+            -0.16450000135228038,
+            -0.6920000240206718,
+            -0.33449999801814556
+          ]
+        },
+        {
+          "mesh": "Kick vertical folding pivot pin - estimated",
+          "vertex_index": 0,
+          "point_world": [
+            -0.21000000089406967,
+            -0.6800000248476863,
+            -0.3309999965131283
+          ]
+        },
+        {
+          "mesh": "Kick vertical folding pivot pin - estimated",
+          "vertex_index": 577,
+          "point_world": [
+            -0.21226274222135544,
+            -0.6545000243932009,
+            -0.3287372551858425
+          ]
+        },
+        {
+          "mesh": "Kick vertical folding pivot pin - estimated",
+          "vertex_index": 1153,
+          "point_world": [
+            -0.21000000089406967,
+            -0.6515000239014626,
+            -0.3309999965131283
+          ]
+        },
+        {
+          "mesh": "Kick vertical folding pivot pin - estimated",
+          "vertex_index": 121,
+          "point_world": [
+            -0.21000000089406967,
+            -0.6800000248476863,
+            -0.3357999958097935
+          ]
+        },
+        {
+          "mesh": "Kick vertical folding pivot pin - estimated",
+          "vertex_index": 25,
+          "point_world": [
+            -0.21000000089406967,
+            -0.6800000248476863,
+            -0.3261999967508018
+          ]
+        },
+        {
+          "mesh": "Kick vertical folding pivot pin - estimated",
+          "vertex_index": 73,
+          "point_world": [
+            -0.20520000159740448,
+            -0.6800000248476863,
+            -0.3309999965131283
+          ]
+        },
+        {
+          "mesh": "Kick vertical folding pivot pin - estimated",
+          "vertex_index": 169,
+          "point_world": [
+            -0.21480000019073486,
+            -0.6800000248476863,
+            -0.3309999965131283
+          ]
+        }
+      ]
+    }
+  ],
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true,
+  "pixel_checks": [
+    {
+      "view": "quarter",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 23850,
+      "changed_fraction": 0.020703125,
+      "rgb_min": [
+        25,
+        29,
+        33
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "driver",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 25844,
+      "changed_fraction": 0.02243402777777778,
+      "rgb_min": [
+        24,
+        28,
+        32
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "reverse",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 17211,
+      "changed_fraction": 0.014940104166666668,
+      "rgb_min": [
+        24,
+        27,
+        31
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "kick_fold:0",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 13650,
+      "changed_fraction": 0.011848958333333333,
+      "rgb_min": [
+        25,
+        28,
+        31
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "kick_fold:90",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 17211,
+      "changed_fraction": 0.014940104166666668,
+      "rgb_min": [
+        24,
+        27,
+        31
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "kick_fold:-1000",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 13650,
+      "changed_fraction": 0.011848958333333333,
+      "rgb_min": [
+        25,
+        28,
+        31
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "kick_fold:1090",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 17211,
+      "changed_fraction": 0.014940104166666668,
+      "rgb_min": [
+        24,
+        27,
+        31
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "kick_stroke:0",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 17211,
+      "changed_fraction": 0.014940104166666668,
+      "rgb_min": [
+        24,
+        27,
+        31
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "kick_stroke:60",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 12363,
+      "changed_fraction": 0.010731770833333333,
+      "rgb_min": [
+        25,
+        28,
+        32
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "kick_stroke:-1000",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 17211,
+      "changed_fraction": 0.014940104166666668,
+      "rgb_min": [
+        24,
+        27,
+        31
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "kick_stroke:1060",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 12363,
+      "changed_fraction": 0.010731770833333333,
+      "rgb_min": [
+        25,
+        28,
+        32
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "constraint:kick_stroke:0",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 13650,
+      "changed_fraction": 0.011848958333333333,
+      "rgb_min": [
+        25,
+        28,
+        31
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "constraint:kick_stroke:90",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 12363,
+      "changed_fraction": 0.010731770833333333,
+      "rgb_min": [
+        25,
+        28,
+        32
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "constraint:kick_stroke:45.0",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 17938,
+      "changed_fraction": 0.015571180555555555,
+      "rgb_min": [
+        23,
+        27,
+        31
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "landscape-844x390",
+      "width": 844,
+      "height": 390,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 5072,
+      "changed_fraction": 0.015408919674322518,
+      "rgb_min": [
+        25,
+        29,
+        33
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    }
+  ],
+  "page_errors": [],
+  "http_failures": [],
+  "pose_checks": [
+    {
+      "rig": "kick_fold",
+      "states": [
+        {
+          "requested": 0,
+          "rig_states": {
+            "kick_fold": 0,
+            "kick_stroke": 0
+          },
+          "rig": {
+            "id": "kick_fold",
+            "node": "Kick base folding pivot - inspection range estimated",
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "world_matrix": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0,
+              -0.21000000834465027,
+              -0.6669999957084656,
+              -0.3310000002384186,
+              1.0
+            ],
+            "morph_targets": null,
+            "actual_geometry": [
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.22295981273055077,
+                  -0.39804020524024963,
+                  -0.1995999962091446
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 577,
+                "point_world": [
+                  -0.22543468698859215,
+                  -0.39556533098220825,
+                  -0.19679999351501465
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 1153,
+                "point_world": [
+                  -0.2226923517882824,
+                  -0.39778971672058105,
+                  -0.19779999554157257
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 960,
+                "point_world": [
+                  -0.21900001540780067,
+                  -0.4020000100135803,
+                  -0.19599999487400055
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 504,
+                "point_world": [
+                  -0.20990001410245895,
+                  -0.4020000100135803,
+                  -0.19899999350309372
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 408,
+                "point_world": [
+                  -0.2281000167131424,
+                  -0.4020000100135803,
+                  -0.19899999350309372
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 552,
+                "point_world": [
+                  -0.21900001540780067,
+                  -0.3929000198841095,
+                  -0.19899999350309372
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 456,
+                "point_world": [
+                  -0.21900001540780067,
+                  -0.41110000014305115,
+                  -0.19899999350309372
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.20672249048948288,
+                  -0.6677552266046405,
+                  -0.34460270777344704
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3655,
+                "point_world": [
+                  -0.2320096418261528,
+                  -0.6461796946823597,
+                  -0.35980234295129776
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7310,
+                "point_world": [
+                  -0.2242160141468048,
+                  -0.40060240030288696,
+                  -0.19799288362264633
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3561,
+                "point_world": [
+                  -0.22911112755537033,
+                  -0.6494819633662701,
+                  -0.3602875731885433
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7208,
+                "point_world": [
+                  -0.21900001540780067,
+                  -0.39660006761550903,
+                  -0.19797254353761673
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 123,
+                "point_world": [
+                  -0.20100001618266106,
+                  -0.6735000247717835,
+                  -0.3309999965131283
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3703,
+                "point_world": [
+                  -0.23449640721082687,
+                  -0.6393797323107719,
+                  -0.3530641794204712
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7099,
+                "point_world": [
+                  -0.21900001540780067,
+                  -0.3965751826763153,
+                  -0.23389654606580734
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 69,
+                "point_world": [
+                  -0.20250368490815163,
+                  -0.6740000247955322,
+                  -0.3350068684667349
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.22295981273055077,
+                  -0.39804020524024963,
+                  -0.2659999951720238
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 9280,
+                "point_world": [
+                  -0.21192894876003265,
+                  -0.40907108783721924,
+                  -0.2329999953508377
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 18559,
+                "point_world": [
+                  -0.22276074439287186,
+                  -0.3978506922721863,
+                  -0.19999999552965164
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 18048,
+                "point_world": [
+                  -0.22536397725343704,
+                  -0.39563605189323425,
+                  -0.19999999552965164
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 672,
+                "point_world": [
+                  -0.20900001749396324,
+                  -0.4020000100135803,
+                  -0.26499999687075615
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 544,
+                "point_world": [
+                  -0.2290000133216381,
+                  -0.4020000100135803,
+                  -0.26499999687075615
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 736,
+                "point_world": [
+                  -0.21900001540780067,
+                  -0.3920000195503235,
+                  -0.26499999687075615
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 608,
+                "point_world": [
+                  -0.21900001540780067,
+                  -0.41200000047683716,
+                  -0.26499999687075615
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 90,
+          "rig_states": {
+            "kick_fold": 90,
+            "kick_stroke": 0
+          },
+          "rig": {
+            "id": "kick_fold",
+            "node": "Kick base folding pivot - inspection range estimated",
+            "quaternion": [
+              0,
+              0,
+              0.7071067811865475,
+              0.7071067811865476
+            ],
+            "world_matrix": [
+              -1.0,
+              0.0,
+              2.220446049250313e-16,
+              0.0,
+              -2.220446049250313e-16,
+              0.0,
+              -1.0,
+              0.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0,
+              -0.21000000834465027,
+              -0.6669999957084656,
+              -0.3310000002384186,
+              1.0
+            ],
+            "morph_targets": null,
+            "actual_geometry": [
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.34140001237392426,
+                  -0.39804020524024963,
+                  -0.3439598046243191
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 577,
+                "point_world": [
+                  -0.3442000150680542,
+                  -0.39556533098220825,
+                  -0.34643467888236046
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 1153,
+                "point_world": [
+                  -0.3432000130414963,
+                  -0.39778971672058105,
+                  -0.3436923436820507
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 960,
+                "point_world": [
+                  -0.3450000137090683,
+                  -0.4020000100135803,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 504,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.4020000100135803,
+                  -0.33090000599622726
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 408,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.4020000100135803,
+                  -0.3491000086069107
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 552,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.3929000198841095,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 456,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.41110000014305115,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.1963973008096218,
+                  -0.6677552266046405,
+                  -0.3277224823832512
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3655,
+                "point_world": [
+                  -0.1811976656317711,
+                  -0.6461796946823597,
+                  -0.3530096337199211
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7310,
+                "point_world": [
+                  -0.3430071249604225,
+                  -0.40060240030288696,
+                  -0.3452160060405731
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3561,
+                "point_world": [
+                  -0.18071243539452553,
+                  -0.6494819633662701,
+                  -0.35011111944913864
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7208,
+                "point_world": [
+                  -0.3430274650454521,
+                  -0.39660006761550903,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 123,
+                "point_world": [
+                  -0.21000001206994057,
+                  -0.6735000247717835,
+                  -0.32200000807642937
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3703,
+                "point_world": [
+                  -0.18793582916259766,
+                  -0.6393797323107719,
+                  -0.3554963991045952
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7099,
+                "point_world": [
+                  -0.3071034625172615,
+                  -0.3965751826763153,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 69,
+                "point_world": [
+                  -0.20599314011633396,
+                  -0.6740000247955322,
+                  -0.32350367680191994
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.2750000134110451,
+                  -0.39804020524024963,
+                  -0.3439598046243191
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 9280,
+                "point_world": [
+                  -0.30800001323223114,
+                  -0.40907108783721924,
+                  -0.33292894065380096
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 18559,
+                "point_world": [
+                  -0.3410000130534172,
+                  -0.3978506922721863,
+                  -0.34376073628664017
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 18048,
+                "point_world": [
+                  -0.3410000130534172,
+                  -0.39563605189323425,
+                  -0.34636396914720535
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 672,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.4020000100135803,
+                  -0.33000000938773155
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 544,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.4020000100135803,
+                  -0.3500000052154064
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 736,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.3920000195503235,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 608,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.41200000047683716,
+                  -0.340000007301569
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": -1000,
+          "rig_states": {
+            "kick_fold": 0,
+            "kick_stroke": 0
+          },
+          "rig": {
+            "id": "kick_fold",
+            "node": "Kick base folding pivot - inspection range estimated",
+            "quaternion": [
+              0,
+              0,
+              0,
+              1
+            ],
+            "world_matrix": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0,
+              -0.21000000834465027,
+              -0.6669999957084656,
+              -0.3310000002384186,
+              1.0
+            ],
+            "morph_targets": null,
+            "actual_geometry": [
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.22295981273055077,
+                  -0.39804020524024963,
+                  -0.1995999962091446
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 577,
+                "point_world": [
+                  -0.22543468698859215,
+                  -0.39556533098220825,
+                  -0.19679999351501465
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 1153,
+                "point_world": [
+                  -0.2226923517882824,
+                  -0.39778971672058105,
+                  -0.19779999554157257
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 960,
+                "point_world": [
+                  -0.21900001540780067,
+                  -0.4020000100135803,
+                  -0.19599999487400055
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 504,
+                "point_world": [
+                  -0.20990001410245895,
+                  -0.4020000100135803,
+                  -0.19899999350309372
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 408,
+                "point_world": [
+                  -0.2281000167131424,
+                  -0.4020000100135803,
+                  -0.19899999350309372
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 552,
+                "point_world": [
+                  -0.21900001540780067,
+                  -0.3929000198841095,
+                  -0.19899999350309372
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 456,
+                "point_world": [
+                  -0.21900001540780067,
+                  -0.41110000014305115,
+                  -0.19899999350309372
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.20672249048948288,
+                  -0.6677552266046405,
+                  -0.34460270777344704
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3655,
+                "point_world": [
+                  -0.2320096418261528,
+                  -0.6461796946823597,
+                  -0.35980234295129776
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7310,
+                "point_world": [
+                  -0.2242160141468048,
+                  -0.40060240030288696,
+                  -0.19799288362264633
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3561,
+                "point_world": [
+                  -0.22911112755537033,
+                  -0.6494819633662701,
+                  -0.3602875731885433
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7208,
+                "point_world": [
+                  -0.21900001540780067,
+                  -0.39660006761550903,
+                  -0.19797254353761673
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 123,
+                "point_world": [
+                  -0.20100001618266106,
+                  -0.6735000247717835,
+                  -0.3309999965131283
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3703,
+                "point_world": [
+                  -0.23449640721082687,
+                  -0.6393797323107719,
+                  -0.3530641794204712
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7099,
+                "point_world": [
+                  -0.21900001540780067,
+                  -0.3965751826763153,
+                  -0.23389654606580734
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 69,
+                "point_world": [
+                  -0.20250368490815163,
+                  -0.6740000247955322,
+                  -0.3350068684667349
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.22295981273055077,
+                  -0.39804020524024963,
+                  -0.2659999951720238
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 9280,
+                "point_world": [
+                  -0.21192894876003265,
+                  -0.40907108783721924,
+                  -0.2329999953508377
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 18559,
+                "point_world": [
+                  -0.22276074439287186,
+                  -0.3978506922721863,
+                  -0.19999999552965164
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 18048,
+                "point_world": [
+                  -0.22536397725343704,
+                  -0.39563605189323425,
+                  -0.19999999552965164
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 672,
+                "point_world": [
+                  -0.20900001749396324,
+                  -0.4020000100135803,
+                  -0.26499999687075615
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 544,
+                "point_world": [
+                  -0.2290000133216381,
+                  -0.4020000100135803,
+                  -0.26499999687075615
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 736,
+                "point_world": [
+                  -0.21900001540780067,
+                  -0.3920000195503235,
+                  -0.26499999687075615
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 608,
+                "point_world": [
+                  -0.21900001540780067,
+                  -0.41200000047683716,
+                  -0.26499999687075615
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 1090,
+          "rig_states": {
+            "kick_fold": 90,
+            "kick_stroke": 0
+          },
+          "rig": {
+            "id": "kick_fold",
+            "node": "Kick base folding pivot - inspection range estimated",
+            "quaternion": [
+              0,
+              0,
+              0.7071067811865475,
+              0.7071067811865476
+            ],
+            "world_matrix": [
+              -1.0,
+              0.0,
+              2.220446049250313e-16,
+              0.0,
+              -2.220446049250313e-16,
+              0.0,
+              -1.0,
+              0.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0,
+              -0.21000000834465027,
+              -0.6669999957084656,
+              -0.3310000002384186,
+              1.0
+            ],
+            "morph_targets": null,
+            "actual_geometry": [
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.34140001237392426,
+                  -0.39804020524024963,
+                  -0.3439598046243191
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 577,
+                "point_world": [
+                  -0.3442000150680542,
+                  -0.39556533098220825,
+                  -0.34643467888236046
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 1153,
+                "point_world": [
+                  -0.3432000130414963,
+                  -0.39778971672058105,
+                  -0.3436923436820507
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 960,
+                "point_world": [
+                  -0.3450000137090683,
+                  -0.4020000100135803,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 504,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.4020000100135803,
+                  -0.33090000599622726
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 408,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.4020000100135803,
+                  -0.3491000086069107
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 552,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.3929000198841095,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 456,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.41110000014305115,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.1963973008096218,
+                  -0.6677552266046405,
+                  -0.3277224823832512
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3655,
+                "point_world": [
+                  -0.1811976656317711,
+                  -0.6461796946823597,
+                  -0.3530096337199211
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7310,
+                "point_world": [
+                  -0.3430071249604225,
+                  -0.40060240030288696,
+                  -0.3452160060405731
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3561,
+                "point_world": [
+                  -0.18071243539452553,
+                  -0.6494819633662701,
+                  -0.35011111944913864
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7208,
+                "point_world": [
+                  -0.3430274650454521,
+                  -0.39660006761550903,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 123,
+                "point_world": [
+                  -0.21000001206994057,
+                  -0.6735000247717835,
+                  -0.32200000807642937
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3703,
+                "point_world": [
+                  -0.18793582916259766,
+                  -0.6393797323107719,
+                  -0.3554963991045952
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7099,
+                "point_world": [
+                  -0.3071034625172615,
+                  -0.3965751826763153,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 69,
+                "point_world": [
+                  -0.20599314011633396,
+                  -0.6740000247955322,
+                  -0.32350367680191994
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.2750000134110451,
+                  -0.39804020524024963,
+                  -0.3439598046243191
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 9280,
+                "point_world": [
+                  -0.30800001323223114,
+                  -0.40907108783721924,
+                  -0.33292894065380096
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 18559,
+                "point_world": [
+                  -0.3410000130534172,
+                  -0.3978506922721863,
+                  -0.34376073628664017
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 18048,
+                "point_world": [
+                  -0.3410000130534172,
+                  -0.39563605189323425,
+                  -0.34636396914720535
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 672,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.4020000100135803,
+                  -0.33000000938773155
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 544,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.4020000100135803,
+                  -0.3500000052154064
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 736,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.3920000195503235,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 608,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.41200000047683716,
+                  -0.340000007301569
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actual_vertex_travel_m": 0.1913426328632992
+    },
+    {
+      "rig": "kick_stroke",
+      "states": [
+        {
+          "requested": 0,
+          "rig_states": {
+            "kick_fold": 90,
+            "kick_stroke": 0
+          },
+          "rig": {
+            "id": "kick_stroke",
+            "node": "Kick engine shaft provisional datum",
+            "quaternion": [
+              0.5,
+              -0.5,
+              0.5,
+              0.5
+            ],
+            "world_matrix": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0,
+              -0.17000000178813934,
+              -0.6740000247955322,
+              -0.32199999690055847,
+              1.0
+            ],
+            "morph_targets": null,
+            "actual_geometry": [
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.34140001237392426,
+                  -0.39804020524024963,
+                  -0.3439598046243191
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 577,
+                "point_world": [
+                  -0.3442000150680542,
+                  -0.39556533098220825,
+                  -0.34643467888236046
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 1153,
+                "point_world": [
+                  -0.3432000130414963,
+                  -0.39778971672058105,
+                  -0.3436923436820507
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 960,
+                "point_world": [
+                  -0.3450000137090683,
+                  -0.4020000100135803,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 504,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.4020000100135803,
+                  -0.33090000599622726
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 408,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.4020000100135803,
+                  -0.3491000086069107
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 552,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.3929000198841095,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 456,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.41110000014305115,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.1963973008096218,
+                  -0.6677552266046405,
+                  -0.3277224823832512
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3655,
+                "point_world": [
+                  -0.1811976656317711,
+                  -0.6461796946823597,
+                  -0.3530096337199211
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7310,
+                "point_world": [
+                  -0.3430071249604225,
+                  -0.40060240030288696,
+                  -0.3452160060405731
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3561,
+                "point_world": [
+                  -0.18071243539452553,
+                  -0.6494819633662701,
+                  -0.35011111944913864
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7208,
+                "point_world": [
+                  -0.3430274650454521,
+                  -0.39660006761550903,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 123,
+                "point_world": [
+                  -0.21000001206994057,
+                  -0.6735000247717835,
+                  -0.32200000807642937
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3703,
+                "point_world": [
+                  -0.18793582916259766,
+                  -0.6393797323107719,
+                  -0.3554963991045952
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7099,
+                "point_world": [
+                  -0.3071034625172615,
+                  -0.3965751826763153,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 69,
+                "point_world": [
+                  -0.20599314011633396,
+                  -0.6740000247955322,
+                  -0.32350367680191994
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.2750000134110451,
+                  -0.39804020524024963,
+                  -0.3439598046243191
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 9280,
+                "point_world": [
+                  -0.30800001323223114,
+                  -0.40907108783721924,
+                  -0.33292894065380096
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 18559,
+                "point_world": [
+                  -0.3410000130534172,
+                  -0.3978506922721863,
+                  -0.34376073628664017
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 18048,
+                "point_world": [
+                  -0.3410000130534172,
+                  -0.39563605189323425,
+                  -0.34636396914720535
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 672,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.4020000100135803,
+                  -0.33000000938773155
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 544,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.4020000100135803,
+                  -0.3500000052154064
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 736,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.3920000195503235,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 608,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.41200000047683716,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.17106919537764043,
+                  -0.691353814676404,
+                  -0.3429499976336956
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 556,
+                "point_world": [
+                  -0.17238884908147156,
+                  -0.6840887637808919,
+                  -0.33929999731481075
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 1111,
+                "point_world": [
+                  -0.17545000091195107,
+                  -0.6839885506778955,
+                  -0.2984999977052212
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 38,
+                "point_world": [
+                  -0.17255000304430723,
+                  -0.6890114992856979,
+                  -0.34549999609589577
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 873,
+                "point_world": [
+                  -0.17255000094883144,
+                  -0.6890114974230528,
+                  -0.2984999977052212
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 111,
+                "point_world": [
+                  -0.16833109396975487,
+                  -0.6866112845018506,
+                  -0.339649997651577
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 418,
+                "point_world": [
+                  -0.1796689098700881,
+                  -0.6866112845018506,
+                  -0.3429499976336956
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 622,
+                "point_world": [
+                  -0.1714650021167472,
+                  -0.681503058411181,
+                  -0.3429499976336956
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 24,
+                "point_world": [
+                  -0.1714650021167472,
+                  -0.6914969924837351,
+                  -0.3429499976336956
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.17113641288597137,
+                  -0.6911139506846666,
+                  -0.30454655922949314
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 334,
+                "point_world": [
+                  -0.1709150018868968,
+                  -0.6911505814641714,
+                  -0.2995999976992607
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 668,
+                "point_world": [
+                  -0.17686359118670225,
+                  -0.6818860983476043,
+                  -0.29925343580543995
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 43,
+                "point_world": [
+                  -0.1710555156460032,
+                  -0.6882000248879194,
+                  -0.3045999985188246
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 349,
+                "point_world": [
+                  -0.171345942071639,
+                  -0.6910969913005829,
+                  -0.2991999965161085
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 390,
+                "point_world": [
+                  -0.16834553598891944,
+                  -0.686627178452909,
+                  -0.2995999976992607
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 155,
+                "point_world": [
+                  -0.17965446785092354,
+                  -0.686627178452909,
+                  -0.3041999973356724
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 238,
+                "point_world": [
+                  -0.17151500203181058,
+                  -0.681503058411181,
+                  -0.3041999973356724
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 18,
+                "point_world": [
+                  -0.17151500203181058,
+                  -0.6914969924837351,
+                  -0.3041999973356724
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.16450000228360295,
+                  -0.6897470708936453,
+                  -0.338398814201355
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 2160,
+                "point_world": [
+                  -0.21118932589888573,
+                  -0.6550000254064798,
+                  -0.33450363762676716
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 4320,
+                "point_world": [
+                  -0.216128159314394,
+                  -0.6555000245571136,
+                  -0.31953501980751753
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 630,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6785000246018171,
+                  -0.3439999967813492
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 3450,
+                "point_world": [
+                  -0.16450000135228038,
+                  -0.6875000242143869,
+                  -0.3049999959766865
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 11,
+                "point_world": [
+                  -0.16000000201165676,
+                  -0.6875000242143869,
+                  -0.33449999801814556
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 1249,
+                "point_world": [
+                  -0.22300000116229057,
+                  -0.6785000246018171,
+                  -0.3309999965131283
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 1737,
+                "point_world": [
+                  -0.18180000130087137,
+                  -0.6550000235438347,
+                  -0.32819999707862735
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 9,
+                "point_world": [
+                  -0.16450000135228038,
+                  -0.6920000240206718,
+                  -0.33449999801814556
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6800000248476863,
+                  -0.3309999965131283
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 577,
+                "point_world": [
+                  -0.21226274222135544,
+                  -0.6545000243932009,
+                  -0.3287372551858425
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 1153,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6515000239014626,
+                  -0.3309999965131283
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 121,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6800000248476863,
+                  -0.3357999958097935
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 25,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6800000248476863,
+                  -0.3261999967508018
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 73,
+                "point_world": [
+                  -0.20520000159740448,
+                  -0.6800000248476863,
+                  -0.3309999965131283
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 169,
+                "point_world": [
+                  -0.21480000019073486,
+                  -0.6800000248476863,
+                  -0.3309999965131283
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 60,
+          "rig_states": {
+            "kick_fold": 90,
+            "kick_stroke": 60
+          },
+          "rig": {
+            "id": "kick_stroke",
+            "node": "Kick engine shaft provisional datum",
+            "quaternion": [
+              0.18301270189221938,
+              -0.18301270189221938,
+              0.6830127018922193,
+              0.6830127018922193
+            ],
+            "world_matrix": [
+              0.0,
+              0.8660253882408142,
+              0.5,
+              0.0,
+              -1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.5,
+              0.8660253882408142,
+              0.0,
+              -0.17000000178813934,
+              -0.6740000247955322,
+              -0.32199999690055847,
+              1.0
+            ],
+            "morph_targets": null,
+            "actual_geometry": [
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.34140001237392426,
+                  -0.5550378764738062,
+                  -0.5719681255328286
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 577,
+                "point_world": [
+                  -0.3442000150680542,
+                  -0.555943743284953,
+                  -0.5753488666020168
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 1153,
+                "point_world": [
+                  -0.3432000130414963,
+                  -0.5546810042476047,
+                  -0.5720513244791903
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 960,
+                "point_world": [
+                  -0.3450000137090683,
+                  -0.553588493846682,
+                  -0.566558935405272
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 504,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.5457076616832315,
+                  -0.5620089347526012
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 408,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.5614693260101324,
+                  -0.5711089360579429
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 552,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.5490384987819465,
+                  -0.5744397578901346
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 456,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.5581384889114174,
+                  -0.5586781129204095
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.1963973008096218,
+                  -0.6758334538581896,
+                  -0.3302694083208186
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3655,
+                "point_world": [
+                  -0.1811976656317711,
+                  -0.686945002950893,
+                  -0.36159794239864884
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7310,
+                "point_world": [
+                  -0.3430071249604225,
+                  -0.5574068763243449,
+                  -0.5703773002670864
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3561,
+                "point_world": [
+                  -0.18071243539452553,
+                  -0.6860859503461723,
+                  -0.35728883674419865
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7208,
+                "point_world": [
+                  -0.3430274650454521,
+                  -0.5508885226476463,
+                  -0.5712354226170397
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 123,
+                "point_world": [
+                  -0.21000001206994057,
+                  -0.6737500449084977,
+                  -0.32243303010434254
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3703,
+                "point_world": [
+                  -0.18793582916259766,
+                  -0.6856986237228253,
+                  -0.3687302651438631
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7099,
+                "point_world": [
+                  -0.3071034625172615,
+                  -0.5508760801780495,
+                  -0.5712569736061663
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 69,
+                "point_world": [
+                  -0.20599314011633396,
+                  -0.6753022602121506,
+                  -0.3227518517524004
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.2750000134110451,
+                  -0.5550378764738062,
+                  -0.5719681255328286
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 9280,
+                "point_world": [
+                  -0.30800001323223114,
+                  -0.5510003095195914,
+                  -0.5568996691638901
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 18559,
+                "point_world": [
+                  -0.3410000130534172,
+                  -0.5547707217553497,
+                  -0.5720327144057329
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 18048,
+                "point_world": [
+                  -0.3410000130534172,
+                  -0.5559178673146259,
+                  -0.5752522656300112
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 672,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.5449282417709436,
+                  -0.5615589364483533
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 544,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.5622487459224204,
+                  -0.5715589343621907
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 736,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.5485884986150535,
+                  -0.5752191810286185
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 608,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.5585884890783104,
+                  -0.5578986897819256
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.17106919537764043,
+                  -0.7008201522545285,
+                  -0.31744617464809555
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 556,
+                "point_world": [
+                  -0.17238884908147156,
+                  -0.6940266338635311,
+                  -0.32191289301102827
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 1111,
+                "point_world": [
+                  -0.17545000091195107,
+                  -0.6586426918099131,
+                  -0.3015996802976627
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 38,
+                "point_world": [
+                  -0.17255000304430723,
+                  -0.7018573579674159,
+                  -0.3207496784748143
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 873,
+                "point_world": [
+                  -0.17255000094883144,
+                  -0.6611541651824917,
+                  -0.297249680892575
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 111,
+                "point_world": [
+                  -0.16833109396975487,
+                  -0.6955910034015429,
+                  -0.3199033261926976
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 418,
+                "point_world": [
+                  -0.1796689098700881,
+                  -0.6984488871672518,
+                  -0.3215533261837569
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 622,
+                "point_world": [
+                  -0.1714650021167472,
+                  -0.695894774121917,
+                  -0.32597717966715095
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 24,
+                "point_world": [
+                  -0.1714650021167472,
+                  -0.7008917411581941,
+                  -0.3173221790319142
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.17113641288597137,
+                  -0.6674418676048782,
+                  -0.29845218375256366
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 334,
+                "point_world": [
+                  -0.1709150018868968,
+                  -0.663176335124954,
+                  -0.29594717980240526
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 668,
+                "point_world": [
+                  -0.17686359118670225,
+                  -0.6582439621680248,
+                  -0.3037971764433704
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 43,
+                "point_world": [
+                  -0.1710555156460032,
+                  -0.6660311844877952,
+                  -0.3010024371166623
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 349,
+                "point_world": [
+                  -0.171345942071639,
+                  -0.6628031288632236,
+                  -0.2957935896530568
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 390,
+                "point_world": [
+                  -0.16834553598891944,
+                  -0.6609146336193228,
+                  -0.29986456165140346
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 155,
+                "point_world": [
+                  -0.17965446785092354,
+                  -0.6648983500903538,
+                  -0.3021645614696093
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 238,
+                "point_world": [
+                  -0.17151500203181058,
+                  -0.6623362900694898,
+                  -0.30660217951813934
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 18,
+                "point_world": [
+                  -0.17151500203181058,
+                  -0.6673332571057669,
+                  -0.29794717888290256
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.16450000228360295,
+                  -0.6960753399642012,
+                  -0.31656206384019236
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 2160,
+                "point_world": [
+                  -0.21118932589888573,
+                  -0.6753284954153446,
+                  -0.34470629911114214
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 4320,
+                "point_world": [
+                  -0.216128159314394,
+                  -0.6626152919323174,
+                  -0.3367889782429696
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 630,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6953025831367343,
+                  -0.32910288276163235
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 3450,
+                "point_world": [
+                  -0.16450000135228038,
+                  -0.6660275921047691,
+                  -0.30180865420065806
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 11,
+                "point_world": [
+                  -0.16000000201165676,
+                  -0.6915753428258286,
+                  -0.3165586552213876
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 1249,
+                "point_world": [
+                  -0.22300000116229057,
+                  -0.6840442528573176,
+                  -0.3226028826275219
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 1737,
+                "point_world": [
+                  -0.18180000130087137,
+                  -0.6698693817309886,
+                  -0.34155448045017023
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 9,
+                "point_world": [
+                  -0.16450000135228038,
+                  -0.693825342728971,
+                  -0.3126615411420661
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6847942529802522,
+                  -0.32130384433223175
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 577,
+                "point_world": [
+                  -0.21226274222135544,
+                  -0.6700846613165583,
+                  -0.34225612146232554
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 1153,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6705442525071403,
+                  -0.34598556871654873
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 121,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6889511742347023,
+                  -0.32370384398056434
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 25,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6806373313225276,
+                  -0.3189038444510685
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 73,
+                "point_world": [
+                  -0.20520000159740448,
+                  -0.6847942529802522,
+                  -0.32130384433223175
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 169,
+                "point_world": [
+                  -0.21480000019073486,
+                  -0.6847942529802522,
+                  -0.32130384433223175
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": -1000,
+          "rig_states": {
+            "kick_fold": 90,
+            "kick_stroke": 0
+          },
+          "rig": {
+            "id": "kick_stroke",
+            "node": "Kick engine shaft provisional datum",
+            "quaternion": [
+              0.5,
+              -0.5,
+              0.5,
+              0.5
+            ],
+            "world_matrix": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -1.0,
+              0.0,
+              0.0,
+              -0.17000000178813934,
+              -0.6740000247955322,
+              -0.32199999690055847,
+              1.0
+            ],
+            "morph_targets": null,
+            "actual_geometry": [
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.34140001237392426,
+                  -0.39804020524024963,
+                  -0.3439598046243191
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 577,
+                "point_world": [
+                  -0.3442000150680542,
+                  -0.39556533098220825,
+                  -0.34643467888236046
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 1153,
+                "point_world": [
+                  -0.3432000130414963,
+                  -0.39778971672058105,
+                  -0.3436923436820507
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 960,
+                "point_world": [
+                  -0.3450000137090683,
+                  -0.4020000100135803,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 504,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.4020000100135803,
+                  -0.33090000599622726
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 408,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.4020000100135803,
+                  -0.3491000086069107
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 552,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.3929000198841095,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 456,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.41110000014305115,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.1963973008096218,
+                  -0.6677552266046405,
+                  -0.3277224823832512
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3655,
+                "point_world": [
+                  -0.1811976656317711,
+                  -0.6461796946823597,
+                  -0.3530096337199211
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7310,
+                "point_world": [
+                  -0.3430071249604225,
+                  -0.40060240030288696,
+                  -0.3452160060405731
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3561,
+                "point_world": [
+                  -0.18071243539452553,
+                  -0.6494819633662701,
+                  -0.35011111944913864
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7208,
+                "point_world": [
+                  -0.3430274650454521,
+                  -0.39660006761550903,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 123,
+                "point_world": [
+                  -0.21000001206994057,
+                  -0.6735000247717835,
+                  -0.32200000807642937
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3703,
+                "point_world": [
+                  -0.18793582916259766,
+                  -0.6393797323107719,
+                  -0.3554963991045952
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7099,
+                "point_world": [
+                  -0.3071034625172615,
+                  -0.3965751826763153,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 69,
+                "point_world": [
+                  -0.20599314011633396,
+                  -0.6740000247955322,
+                  -0.32350367680191994
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.2750000134110451,
+                  -0.39804020524024963,
+                  -0.3439598046243191
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 9280,
+                "point_world": [
+                  -0.30800001323223114,
+                  -0.40907108783721924,
+                  -0.33292894065380096
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 18559,
+                "point_world": [
+                  -0.3410000130534172,
+                  -0.3978506922721863,
+                  -0.34376073628664017
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 18048,
+                "point_world": [
+                  -0.3410000130534172,
+                  -0.39563605189323425,
+                  -0.34636396914720535
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 672,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.4020000100135803,
+                  -0.33000000938773155
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 544,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.4020000100135803,
+                  -0.3500000052154064
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 736,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.3920000195503235,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 608,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.41200000047683716,
+                  -0.340000007301569
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.17106919537764043,
+                  -0.691353814676404,
+                  -0.3429499976336956
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 556,
+                "point_world": [
+                  -0.17238884908147156,
+                  -0.6840887637808919,
+                  -0.33929999731481075
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 1111,
+                "point_world": [
+                  -0.17545000091195107,
+                  -0.6839885506778955,
+                  -0.2984999977052212
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 38,
+                "point_world": [
+                  -0.17255000304430723,
+                  -0.6890114992856979,
+                  -0.34549999609589577
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 873,
+                "point_world": [
+                  -0.17255000094883144,
+                  -0.6890114974230528,
+                  -0.2984999977052212
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 111,
+                "point_world": [
+                  -0.16833109396975487,
+                  -0.6866112845018506,
+                  -0.339649997651577
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 418,
+                "point_world": [
+                  -0.1796689098700881,
+                  -0.6866112845018506,
+                  -0.3429499976336956
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 622,
+                "point_world": [
+                  -0.1714650021167472,
+                  -0.681503058411181,
+                  -0.3429499976336956
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 24,
+                "point_world": [
+                  -0.1714650021167472,
+                  -0.6914969924837351,
+                  -0.3429499976336956
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.17113641288597137,
+                  -0.6911139506846666,
+                  -0.30454655922949314
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 334,
+                "point_world": [
+                  -0.1709150018868968,
+                  -0.6911505814641714,
+                  -0.2995999976992607
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 668,
+                "point_world": [
+                  -0.17686359118670225,
+                  -0.6818860983476043,
+                  -0.29925343580543995
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 43,
+                "point_world": [
+                  -0.1710555156460032,
+                  -0.6882000248879194,
+                  -0.3045999985188246
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 349,
+                "point_world": [
+                  -0.171345942071639,
+                  -0.6910969913005829,
+                  -0.2991999965161085
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 390,
+                "point_world": [
+                  -0.16834553598891944,
+                  -0.686627178452909,
+                  -0.2995999976992607
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 155,
+                "point_world": [
+                  -0.17965446785092354,
+                  -0.686627178452909,
+                  -0.3041999973356724
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 238,
+                "point_world": [
+                  -0.17151500203181058,
+                  -0.681503058411181,
+                  -0.3041999973356724
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 18,
+                "point_world": [
+                  -0.17151500203181058,
+                  -0.6914969924837351,
+                  -0.3041999973356724
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.16450000228360295,
+                  -0.6897470708936453,
+                  -0.338398814201355
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 2160,
+                "point_world": [
+                  -0.21118932589888573,
+                  -0.6550000254064798,
+                  -0.33450363762676716
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 4320,
+                "point_world": [
+                  -0.216128159314394,
+                  -0.6555000245571136,
+                  -0.31953501980751753
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 630,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6785000246018171,
+                  -0.3439999967813492
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 3450,
+                "point_world": [
+                  -0.16450000135228038,
+                  -0.6875000242143869,
+                  -0.3049999959766865
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 11,
+                "point_world": [
+                  -0.16000000201165676,
+                  -0.6875000242143869,
+                  -0.33449999801814556
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 1249,
+                "point_world": [
+                  -0.22300000116229057,
+                  -0.6785000246018171,
+                  -0.3309999965131283
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 1737,
+                "point_world": [
+                  -0.18180000130087137,
+                  -0.6550000235438347,
+                  -0.32819999707862735
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 9,
+                "point_world": [
+                  -0.16450000135228038,
+                  -0.6920000240206718,
+                  -0.33449999801814556
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6800000248476863,
+                  -0.3309999965131283
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 577,
+                "point_world": [
+                  -0.21226274222135544,
+                  -0.6545000243932009,
+                  -0.3287372551858425
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 1153,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6515000239014626,
+                  -0.3309999965131283
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 121,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6800000248476863,
+                  -0.3357999958097935
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 25,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6800000248476863,
+                  -0.3261999967508018
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 73,
+                "point_world": [
+                  -0.20520000159740448,
+                  -0.6800000248476863,
+                  -0.3309999965131283
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 169,
+                "point_world": [
+                  -0.21480000019073486,
+                  -0.6800000248476863,
+                  -0.3309999965131283
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 1060,
+          "rig_states": {
+            "kick_fold": 90,
+            "kick_stroke": 60
+          },
+          "rig": {
+            "id": "kick_stroke",
+            "node": "Kick engine shaft provisional datum",
+            "quaternion": [
+              0.18301270189221938,
+              -0.18301270189221938,
+              0.6830127018922193,
+              0.6830127018922193
+            ],
+            "world_matrix": [
+              0.0,
+              0.8660253882408142,
+              0.5,
+              0.0,
+              -1.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              -0.5,
+              0.8660253882408142,
+              0.0,
+              -0.17000000178813934,
+              -0.6740000247955322,
+              -0.32199999690055847,
+              1.0
+            ],
+            "morph_targets": null,
+            "actual_geometry": [
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.34140001237392426,
+                  -0.5550378764738062,
+                  -0.5719681255328286
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 577,
+                "point_world": [
+                  -0.3442000150680542,
+                  -0.555943743284953,
+                  -0.5753488666020168
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 1153,
+                "point_world": [
+                  -0.3432000130414963,
+                  -0.5546810042476047,
+                  -0.5720513244791903
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 960,
+                "point_world": [
+                  -0.3450000137090683,
+                  -0.553588493846682,
+                  -0.566558935405272
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 504,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.5457076616832315,
+                  -0.5620089347526012
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 408,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.5614693260101324,
+                  -0.5711089360579429
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 552,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.5490384987819465,
+                  -0.5744397578901346
+                ]
+              },
+              {
+                "mesh": "Kick closed chrome pedal end",
+                "vertex_index": 456,
+                "point_world": [
+                  -0.34200001507997513,
+                  -0.5581384889114174,
+                  -0.5586781129204095
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.1963973008096218,
+                  -0.6758334538581896,
+                  -0.3302694083208186
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3655,
+                "point_world": [
+                  -0.1811976656317711,
+                  -0.686945002950893,
+                  -0.36159794239864884
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7310,
+                "point_world": [
+                  -0.3430071249604225,
+                  -0.5574068763243449,
+                  -0.5703773002670864
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3561,
+                "point_world": [
+                  -0.18071243539452553,
+                  -0.6860859503461723,
+                  -0.35728883674419865
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7208,
+                "point_world": [
+                  -0.3430274650454521,
+                  -0.5508885226476463,
+                  -0.5712354226170397
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 123,
+                "point_world": [
+                  -0.21000001206994057,
+                  -0.6737500449084977,
+                  -0.32243303010434254
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 3703,
+                "point_world": [
+                  -0.18793582916259766,
+                  -0.6856986237228253,
+                  -0.3687302651438631
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 7099,
+                "point_world": [
+                  -0.3071034625172615,
+                  -0.5508760801780495,
+                  -0.5712569736061663
+                ]
+              },
+              {
+                "mesh": "Kick forged arm and base hinge eye - moving candidate",
+                "vertex_index": 69,
+                "point_world": [
+                  -0.20599314011633396,
+                  -0.6753022602121506,
+                  -0.3227518517524004
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.2750000134110451,
+                  -0.5550378764738062,
+                  -0.5719681255328286
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 9280,
+                "point_world": [
+                  -0.30800001323223114,
+                  -0.5510003095195914,
+                  -0.5568996691638901
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 18559,
+                "point_world": [
+                  -0.3410000130534172,
+                  -0.5547707217553497,
+                  -0.5720327144057329
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 18048,
+                "point_world": [
+                  -0.3410000130534172,
+                  -0.5559178673146259,
+                  -0.5752522656300112
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 672,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.5449282417709436,
+                  -0.5615589364483533
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 544,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.5622487459224204,
+                  -0.5715589343621907
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 736,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.5485884986150535,
+                  -0.5752191810286185
+                ]
+              },
+              {
+                "mesh": "Kick ribbed pedal rubber - fixed to arm",
+                "vertex_index": 608,
+                "point_world": [
+                  -0.2760000117123127,
+                  -0.5585884890783104,
+                  -0.5578986897819256
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.17106919537764043,
+                  -0.7008201522545285,
+                  -0.31744617464809555
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 556,
+                "point_world": [
+                  -0.17238884908147156,
+                  -0.6940266338635311,
+                  -0.32191289301102827
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 1111,
+                "point_world": [
+                  -0.17545000091195107,
+                  -0.6586426918099131,
+                  -0.3015996802976627
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 38,
+                "point_world": [
+                  -0.17255000304430723,
+                  -0.7018573579674159,
+                  -0.3207496784748143
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 873,
+                "point_world": [
+                  -0.17255000094883144,
+                  -0.6611541651824917,
+                  -0.297249680892575
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 111,
+                "point_world": [
+                  -0.16833109396975487,
+                  -0.6955910034015429,
+                  -0.3199033261926976
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 418,
+                "point_world": [
+                  -0.1796689098700881,
+                  -0.6984488871672518,
+                  -0.3215533261837569
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 622,
+                "point_world": [
+                  -0.1714650021167472,
+                  -0.695894774121917,
+                  -0.32597717966715095
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch bolt - estimated unthreaded",
+                "vertex_index": 24,
+                "point_world": [
+                  -0.1714650021167472,
+                  -0.7008917411581941,
+                  -0.3173221790319142
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.17113641288597137,
+                  -0.6674418676048782,
+                  -0.29845218375256366
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 334,
+                "point_world": [
+                  -0.1709150018868968,
+                  -0.663176335124954,
+                  -0.29594717980240526
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 668,
+                "point_world": [
+                  -0.17686359118670225,
+                  -0.6582439621680248,
+                  -0.3037971764433704
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 43,
+                "point_world": [
+                  -0.1710555156460032,
+                  -0.6660311844877952,
+                  -0.3010024371166623
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 349,
+                "point_world": [
+                  -0.171345942071639,
+                  -0.6628031288632236,
+                  -0.2957935896530568
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 390,
+                "point_world": [
+                  -0.16834553598891944,
+                  -0.6609146336193228,
+                  -0.29986456165140346
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 155,
+                "point_world": [
+                  -0.17965446785092354,
+                  -0.6648983500903538,
+                  -0.3021645614696093
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 238,
+                "point_world": [
+                  -0.17151500203181058,
+                  -0.6623362900694898,
+                  -0.30660217951813934
+                ]
+              },
+              {
+                "mesh": "Kick clamp pinch nut - estimated cosmetic",
+                "vertex_index": 18,
+                "point_world": [
+                  -0.17151500203181058,
+                  -0.6673332571057669,
+                  -0.29794717888290256
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.16450000228360295,
+                  -0.6960753399642012,
+                  -0.31656206384019236
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 2160,
+                "point_world": [
+                  -0.21118932589888573,
+                  -0.6753284954153446,
+                  -0.34470629911114214
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 4320,
+                "point_world": [
+                  -0.216128159314394,
+                  -0.6626152919323174,
+                  -0.3367889782429696
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 630,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6953025831367343,
+                  -0.32910288276163235
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 3450,
+                "point_world": [
+                  -0.16450000135228038,
+                  -0.6660275921047691,
+                  -0.30180865420065806
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 11,
+                "point_world": [
+                  -0.16000000201165676,
+                  -0.6915753428258286,
+                  -0.3165586552213876
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 1249,
+                "point_world": [
+                  -0.22300000116229057,
+                  -0.6840442528573176,
+                  -0.3226028826275219
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 1737,
+                "point_world": [
+                  -0.18180000130087137,
+                  -0.6698693817309886,
+                  -0.34155448045017023
+                ]
+              },
+              {
+                "mesh": "Kick split mounting clamp and clevis - fixed candidate",
+                "vertex_index": 9,
+                "point_world": [
+                  -0.16450000135228038,
+                  -0.693825342728971,
+                  -0.3126615411420661
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 0,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6847942529802522,
+                  -0.32130384433223175
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 577,
+                "point_world": [
+                  -0.21226274222135544,
+                  -0.6700846613165583,
+                  -0.34225612146232554
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 1153,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6705442525071403,
+                  -0.34598556871654873
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 121,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6889511742347023,
+                  -0.32370384398056434
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 25,
+                "point_world": [
+                  -0.21000000089406967,
+                  -0.6806373313225276,
+                  -0.3189038444510685
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 73,
+                "point_world": [
+                  -0.20520000159740448,
+                  -0.6847942529802522,
+                  -0.32130384433223175
+                ]
+              },
+              {
+                "mesh": "Kick vertical folding pivot pin - estimated",
+                "vertex_index": 169,
+                "point_world": [
+                  -0.21480000019073486,
+                  -0.6847942529802522,
+                  -0.32130384433223175
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actual_vertex_travel_m": 0.28257390442969305
+    }
+  ],
+  "constraint_checks": [
+    {
+      "constraint": {
+        "type": "requires_pose",
+        "control": "kick_stroke",
+        "requires_control": "kick_fold",
+        "requires_value": 90,
+        "tolerance": 0.001,
+        "neutral": 0
+      },
+      "states": [
+        {
+          "requested_requirement": 0,
+          "requested_dependent": 60,
+          "actual_states": {
+            "kick_fold": 0,
+            "kick_stroke": 0
+          }
+        },
+        {
+          "requested_requirement": 90,
+          "requested_dependent": 60,
+          "actual_states": {
+            "kick_fold": 90,
+            "kick_stroke": 60
+          }
+        },
+        {
+          "requested_requirement": 45.0,
+          "requested_dependent": 60,
+          "actual_states": {
+            "kick_fold": 45,
+            "kick_stroke": 0
+          }
+        }
+      ]
+    }
+  ],
+  "scope": "Actual Babylon imports and vertex motion in Chromium softwareWebGL; not Safari/iPhone/FPS qualification",
+  "render_mode": "Manual frames after scene readiness",
+  "exports": [
+    {
+      "path": "assets-src/moto-components/kickstarter/kickstarter-inspection.glb",
+      "sha256": "eeeaa1e850c6b10d5a1b8a5aaaca6c940453c6e4c9c715f955b2b52772b42852"
+    }
+  ],
+  "inspector_sha256": "2bee49c41f3e423eff9f5a03db58a5a1fadc22864fe7ebe2bb581d4360b72c3c",
+  "capture_tool_sha256": "2969084ab7962f17f0b2fe39bfa76494565762fb7f4bb969c0f7d700b0d17747",
+  "inspector_path": "tools/motorcycle-lab/review-v4.js",
+  "capture_tool_path": "tools/capture_motorcycle18_v5.py",
+  "inputs_unchanged_during_capture": true
+}

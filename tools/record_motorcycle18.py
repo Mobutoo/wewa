@@ -13,11 +13,12 @@ p=argparse.ArgumentParser();p.add_argument('assets',nargs='+');args=p.parse_args
 catalog=read('tools/motorcycle-lab/catalog.json')['assets'];results=[]
 for key in args.assets:
  c=catalog[key];revision=c['review'];cid=c['component_id'];base='assets-src/moto-components/'+c['source'].rsplit('/',1)[0];source='assets-src/moto-components/'+c['source'];review='creative/reviews/'+revision
- browser_dir=next((review+'/'+v for v in ['inspection-v4','inspection-v3'] if (ROOT/review/v/'engine-check.json').exists()),review)
+ browser_dir=next((review+'/'+v for v in ['inspection-v5','inspection-v4','inspection-v3'] if (ROOT/review/v/'engine-check.json').exists()),review)
  source_hash=sha(source);check=read(review+'/source-geometry-check.json');render=read(review+'/render-report.json');export=read(review+'/export-buffer-check.json');browser=read(browser_dir+'/engine-check.json')
  assert check['source_sha256']==source_hash==render['source_sha256'],(key,'Stale source/render proof')
  assert not browser['page_errors'] and not browser['http_failures'] and browser['textures_ready']
  assert {r['id'] for r in c.get('rigs',[])+c.get('morph_controls',[])}=={r['rig'] for r in browser.get('pose_checks',[])},(key,'Declared controls were not all exercised')
+ assert {constraint['control']for constraint in c.get('pose_constraints',[])}=={check['constraint']['control']for check in browser.get('constraint_checks',[])},(key,'Declared pose constraints were not exercised')
  if browser_dir!=review:
   assert browser.get('pixel_checks') and all(v['changed_pixels']>100 and v['changed_fraction']>.0001 for v in browser['pixel_checks']),(key,'Missing actual nonblank canvas proof')
  inspector=browser.get('inspector_path','tools/motorcycle-lab/review.js');capture=browser.get('capture_tool_path','tools/capture_motorcycle18.py')

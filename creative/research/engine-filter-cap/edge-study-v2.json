@@ -1,0 +1,38 @@
+{
+  "component_id": "MOTO-ENGINE-FILTER-CAP-001",
+  "documented_before_geometry": true,
+  "base_source_sha256": "0e608b408cbadc490b52397cc20ff10b198344bb874725a6554dd4d14e092924",
+  "actual_D04_sheet25_reexamined": true,
+  "catalogue_cap_identities_conditional": [
+    "JV541205",
+    "PF541254 UG5gear"
+  ],
+  "source_mesh_custom_normals_already_absent": true,
+  "identified_construction_features": [
+    "Outer rim uses two straight section chamfers, with hard slope changes",
+    "Ear cylinders united with main disk: in-plane circle intersection is not tangent",
+    "Ear edge bevel has only3section subdivisions; source192/96circumference retained outside cuts"
+  ],
+  "actual_buffer_circle_check": {
+    "outer_circle_original_sectors": 192,
+    "surviving_points_per_ring_after_ear_overlap": 171,
+    "remaining_gaps_around_ear_junction_are_not_missing_circle_data": true,
+    "single_sector_chord_sag_m": 5.3545e-06,
+    "decision": "Do not increase circumference resolution blindly"
+  },
+  "targeted_photo_searches_private": "/workspace/wewa-assets/references/engine-filter-cap-v2/search-results.json",
+  "negative_results": [
+    "PF541254/JV541205 searches atBikebox do not identify a matching product photo",
+    "PartOnWheelsPF541254 no products",
+    "Bikebox oil filter cap is JV541006, different oil nut: rejected as substitute"
+  ],
+  "planned_geometry_changes": [
+    "Single C1 blended outline disk+ears before extrusion, original radial maximum and bore centres retained",
+    "True round outer section front and elliptic rear radius, not straight chamfer",
+    "Smooth shallow face ring transition, no change of working peak relief",
+    "Rounded cutter mouth on front ear bores; no hidden seal mechanics",
+    "All curvature radii bounded estimates, no OEM identity or exact dimension claim"
+  ],
+  "all_dimensions_estimated": true,
+  "art_accepted": false
+}

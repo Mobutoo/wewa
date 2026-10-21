@@ -1,0 +1,859 @@
+{
+  "camera": {
+    "position": [
+      -2.7802025331530837e-10,
+      0.35269893820157444,
+      -0.3298359141978924
+    ],
+    "target": [
+      -2.780202804086862e-10,
+      0.080934197929675,
+      0.11263252440583264
+    ],
+    "radius": 0.5192633178027034,
+    "fov": 0.72,
+    "fovMode": 0
+  },
+  "framing": {
+    "min": [
+      0.35756051139904615,
+      0.3432876610824972
+    ],
+    "max": [
+      0.6424394577566366,
+      0.6575225415778938
+    ],
+    "scope": "Conservative projected actual mesh bounding boxes; whole-piece framing only"
+  },
+  "asset": "instruments-v2",
+  "revision": "instruments-v2",
+  "config": {
+    "label": "Compteurs v2 \u2014 USB et graphismes repris",
+    "review": "instruments-v2",
+    "files": [
+      "instruments/instruments-v2-inspection.glb"
+    ],
+    "rigs": [
+      {
+        "id": "speed_angle",
+        "label": "Aiguille vitesse \u2014 angle relatif de revue",
+        "node": "SPEED_NEEDLE_PIVOT",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "min": -270,
+        "max": 0,
+        "initial": 0,
+        "step": 1
+      },
+      {
+        "id": "fuel_angle",
+        "label": "Aiguille carburant \u2014 angle relatif de revue",
+        "node": "FUEL_NEEDLE_PIVOT",
+        "axis": [
+          0,
+          1,
+          0
+        ],
+        "min": -28,
+        "max": 52,
+        "initial": 0,
+        "step": 1
+      }
+    ],
+    "source": "instruments/instruments-v2.blend",
+    "collection": "WEWA_INSTRUMENTS_SEPARATE_PARTS",
+    "readme": "README_v2.md",
+    "component_id": "MOTO-INSTRUMENTS-001",
+    "details": "Compl\u00e9ment cockpit : embases/USB, marquages et huit triangles de texte repris. Angles et135n\u0153uds pr\u00e9serv\u00e9s ; g\u00e9om\u00e9trie locale et calibration conditionnelles. \u00c9tats LCD1\u20135 de d\u00e9monstration, aucun nombre de rapports RDC certifi\u00e9."
+  },
+  "files": [
+    "instruments/instruments-v2-inspection.glb"
+  ],
+  "meshes": 175,
+  "vertices": 44765,
+  "triangles": 56615,
+  "bounds": {
+    "min": [
+      -0.11399999797998707,
+      0.017334503410237012,
+      0.06011202987020272
+    ],
+    "max": [
+      0.11399999742394651,
+      0.144533892449113,
+      0.16515301894146256
+    ]
+  },
+  "textures_ready": true,
+  "renderer": {
+    "vendor": "Google Inc. (Google)",
+    "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+  },
+  "rig_states": {
+    "speed_angle": 0,
+    "fuel_angle": 0
+  },
+  "attachments": [],
+  "rigs": [
+    {
+      "id": "speed_angle",
+      "node": "SPEED_NEEDLE_PIVOT",
+      "quaternion": [
+        0,
+        -0.9238795638084412,
+        0,
+        0.3826833963394165
+      ],
+      "world_matrix": [
+        0.7071067690849304,
+        -0.5996605753898621,
+        -0.3747093975543976,
+        0.0,
+        -3.706936979597231e-08,
+        0.5299191474914551,
+        -0.8480481505393982,
+        0.0,
+        0.7071067094802856,
+        0.5996606349945068,
+        0.3747093975543976,
+        0.0,
+        0.06399999558925629,
+        0.09153347462415695,
+        0.09354089200496674,
+        1.0
+      ],
+      "actual_geometry": [
+        {
+          "mesh": "SPEED red needle",
+          "vertex_index": 2,
+          "point_world": [
+            0.05813100932805261,
+            0.09495153995383768,
+            0.09567673565066297
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fuel_angle",
+      "node": "FUEL_NEEDLE_PIVOT",
+      "quaternion": [
+        0,
+        0.9981348514556885,
+        0,
+        0.061048511415719986
+      ],
+      "world_matrix": [
+        0.9925463199615479,
+        0.10335099697113037,
+        0.06458079814910889,
+        0.0,
+        -3.706936979597231e-08,
+        0.5299191474914551,
+        -0.8480481505393982,
+        0.0,
+        -0.12186922132968903,
+        0.8417271375656128,
+        0.5259692668914795,
+        0.0,
+        -0.06400000303983688,
+        0.09153348207473755,
+        0.09354090690612793,
+        1.0
+      ],
+      "actual_geometry": [
+        {
+          "mesh": "FUEL red needle",
+          "vertex_index": 2,
+          "point_world": [
+            -0.07078939750586417,
+            0.08971577979179472,
+            0.09240508125631006
+          ]
+        }
+      ]
+    }
+  ],
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true,
+  "pixel_checks": [
+    {
+      "view": "quarter",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 112075,
+      "changed_fraction": 0.09728732638888889,
+      "rgb_min": [
+        24,
+        28,
+        31
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "driver",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 120818,
+      "changed_fraction": 0.1048767361111111,
+      "rgb_min": [
+        26,
+        31,
+        34
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "reverse",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 61560,
+      "changed_fraction": 0.0534375,
+      "rgb_min": [
+        22,
+        25,
+        29
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "speed_angle:-270",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 61560,
+      "changed_fraction": 0.0534375,
+      "rgb_min": [
+        22,
+        25,
+        29
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "speed_angle:0",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 61560,
+      "changed_fraction": 0.0534375,
+      "rgb_min": [
+        22,
+        25,
+        29
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "speed_angle:-1270",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 61560,
+      "changed_fraction": 0.0534375,
+      "rgb_min": [
+        22,
+        25,
+        29
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "speed_angle:1000",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 61560,
+      "changed_fraction": 0.0534375,
+      "rgb_min": [
+        22,
+        25,
+        29
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "fuel_angle:-28",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 61560,
+      "changed_fraction": 0.0534375,
+      "rgb_min": [
+        22,
+        25,
+        29
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "fuel_angle:52",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 61560,
+      "changed_fraction": 0.0534375,
+      "rgb_min": [
+        22,
+        25,
+        29
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "fuel_angle:-1028",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 61560,
+      "changed_fraction": 0.0534375,
+      "rgb_min": [
+        22,
+        25,
+        29
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "fuel_angle:1052",
+      "width": 1280,
+      "height": 900,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 61560,
+      "changed_fraction": 0.0534375,
+      "rgb_min": [
+        22,
+        25,
+        29
+      ],
+      "rgb_max": [
+        255,
+        255,
+        255
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    },
+    {
+      "view": "landscape-844x390",
+      "width": 844,
+      "height": 390,
+      "background_rgb": [
+        26,
+        31,
+        36
+      ],
+      "changed_pixels": 22785,
+      "changed_fraction": 0.06922165512212905,
+      "rgb_min": [
+        24,
+        28,
+        32
+      ],
+      "rgb_max": [
+        241,
+        247,
+        246
+      ],
+      "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+    }
+  ],
+  "page_errors": [],
+  "http_failures": [],
+  "pose_checks": [
+    {
+      "rig": "speed_angle",
+      "states": [
+        {
+          "requested": -270,
+          "rig_states": {
+            "speed_angle": -270,
+            "fuel_angle": 0
+          },
+          "rig": {
+            "id": "speed_angle",
+            "node": "SPEED_NEEDLE_PIVOT",
+            "quaternion": [
+              0,
+              0.3826834799695177,
+              -0.0,
+              -0.9238795291677191
+            ],
+            "world_matrix": [
+              -0.7071067094802856,
+              -0.5996606349945068,
+              -0.3747093975543976,
+              0.0,
+              -3.706936979597231e-08,
+              0.5299191474914551,
+              -0.8480481505393982,
+              0.0,
+              0.7071067690849304,
+              -0.5996605753898621,
+              -0.3747093975543976,
+              0.0,
+              0.06399999558925629,
+              0.09153347462415695,
+              0.09354089200496674,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "SPEED red needle",
+                "vertex_index": 2,
+                "point_world": [
+                  0.06803050390608772,
+                  0.0965106579488143,
+                  0.09665098008695662
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 0,
+          "rig_states": {
+            "speed_angle": 0,
+            "fuel_angle": 0
+          },
+          "rig": {
+            "id": "speed_angle",
+            "node": "SPEED_NEEDLE_PIVOT",
+            "quaternion": [
+              0,
+              -0.9238795638084412,
+              0,
+              0.3826833963394165
+            ],
+            "world_matrix": [
+              0.7071067690849304,
+              -0.5996605753898621,
+              -0.3747093975543976,
+              0.0,
+              -3.706936979597231e-08,
+              0.5299191474914551,
+              -0.8480481505393982,
+              0.0,
+              0.7071067094802856,
+              0.5996606349945068,
+              0.3747093975543976,
+              0.0,
+              0.06399999558925629,
+              0.09153347462415695,
+              0.09354089200496674,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "SPEED red needle",
+                "vertex_index": 2,
+                "point_world": [
+                  0.05813100932805261,
+                  0.09495153995383768,
+                  0.09567673565066297
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": -1270,
+          "rig_states": {
+            "speed_angle": -270,
+            "fuel_angle": 0
+          },
+          "rig": {
+            "id": "speed_angle",
+            "node": "SPEED_NEEDLE_PIVOT",
+            "quaternion": [
+              0,
+              0.3826834799695177,
+              -0.0,
+              -0.9238795291677191
+            ],
+            "world_matrix": [
+              -0.7071067094802856,
+              -0.5996606349945068,
+              -0.3747093975543976,
+              0.0,
+              -3.706936979597231e-08,
+              0.5299191474914551,
+              -0.8480481505393982,
+              0.0,
+              0.7071067690849304,
+              -0.5996605753898621,
+              -0.3747093975543976,
+              0.0,
+              0.06399999558925629,
+              0.09153347462415695,
+              0.09354089200496674,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "SPEED red needle",
+                "vertex_index": 2,
+                "point_world": [
+                  0.06803050390608772,
+                  0.0965106579488143,
+                  0.09665098008695662
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 1000,
+          "rig_states": {
+            "speed_angle": 0,
+            "fuel_angle": 0
+          },
+          "rig": {
+            "id": "speed_angle",
+            "node": "SPEED_NEEDLE_PIVOT",
+            "quaternion": [
+              0,
+              -0.9238795638084412,
+              0,
+              0.3826833963394165
+            ],
+            "world_matrix": [
+              0.7071067690849304,
+              -0.5996605753898621,
+              -0.3747093975543976,
+              0.0,
+              -3.706936979597231e-08,
+              0.5299191474914551,
+              -0.8480481505393982,
+              0.0,
+              0.7071067094802856,
+              0.5996606349945068,
+              0.3747093975543976,
+              0.0,
+              0.06399999558925629,
+              0.09153347462415695,
+              0.09354089200496674,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "SPEED red needle",
+                "vertex_index": 2,
+                "point_world": [
+                  0.05813100932805261,
+                  0.09495153995383768,
+                  0.09567673565066297
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actual_vertex_travel_m": 0.01006876328276992
+    },
+    {
+      "rig": "fuel_angle",
+      "states": [
+        {
+          "requested": -28,
+          "rig_states": {
+            "speed_angle": 0,
+            "fuel_angle": -28
+          },
+          "rig": {
+            "id": "fuel_angle",
+            "node": "FUEL_NEEDLE_PIVOT",
+            "quaternion": [
+              0,
+              0.9537170090093522,
+              0,
+              0.30070578505043744
+            ],
+            "world_matrix": [
+              0.819152295589447,
+              0.4864204227924347,
+              0.3039490580558777,
+              0.0,
+              -3.706936979597231e-08,
+              0.5299191474914551,
+              -0.8480481505393982,
+              0.0,
+              -0.5735763907432556,
+              0.6946806311607361,
+              0.4340844750404358,
+              0.0,
+              -0.06400000303983688,
+              0.09153348207473755,
+              0.09354090690612793,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "FUEL red needle",
+                "vertex_index": 2,
+                "point_world": [
+                  -0.06898841997595853,
+                  0.08722545418712374,
+                  0.09084895361497466
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 52,
+          "rig_states": {
+            "speed_angle": 0,
+            "fuel_angle": 52
+          },
+          "rig": {
+            "id": "fuel_angle",
+            "node": "FUEL_NEEDLE_PIVOT",
+            "quaternion": [
+              0,
+              0.9238795678511516,
+              0,
+              -0.38268348088689974
+            ],
+            "world_matrix": [
+              0.7071067690849304,
+              -0.5996606945991516,
+              -0.37470948696136475,
+              0.0,
+              -3.706936979597231e-08,
+              0.5299191474914551,
+              -0.8480481505393982,
+              0.0,
+              0.70710688829422,
+              0.5996606349945068,
+              0.3747093975543976,
+              0.0,
+              -0.06400000303983688,
+              0.09153348207473755,
+              0.09354090690612793,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "FUEL red needle",
+                "vertex_index": 2,
+                "point_world": [
+                  -0.06986898953349868,
+                  0.09495154823888333,
+                  0.09567675117767295
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": -1028,
+          "rig_states": {
+            "speed_angle": 0,
+            "fuel_angle": -28
+          },
+          "rig": {
+            "id": "fuel_angle",
+            "node": "FUEL_NEEDLE_PIVOT",
+            "quaternion": [
+              0,
+              0.9537170090093522,
+              0,
+              0.30070578505043744
+            ],
+            "world_matrix": [
+              0.819152295589447,
+              0.4864204227924347,
+              0.3039490580558777,
+              0.0,
+              -3.706936979597231e-08,
+              0.5299191474914551,
+              -0.8480481505393982,
+              0.0,
+              -0.5735763907432556,
+              0.6946806311607361,
+              0.4340844750404358,
+              0.0,
+              -0.06400000303983688,
+              0.09153348207473755,
+              0.09354090690612793,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "FUEL red needle",
+                "vertex_index": 2,
+                "point_world": [
+                  -0.06898841997595853,
+                  0.08722545418712374,
+                  0.09084895361497466
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "requested": 1052,
+          "rig_states": {
+            "speed_angle": 0,
+            "fuel_angle": 52
+          },
+          "rig": {
+            "id": "fuel_angle",
+            "node": "FUEL_NEEDLE_PIVOT",
+            "quaternion": [
+              0,
+              0.9238795678511516,
+              0,
+              -0.38268348088689974
+            ],
+            "world_matrix": [
+              0.7071067690849304,
+              -0.5996606945991516,
+              -0.37470948696136475,
+              0.0,
+              -3.706936979597231e-08,
+              0.5299191474914551,
+              -0.8480481505393982,
+              0.0,
+              0.70710688829422,
+              0.5996606349945068,
+              0.3747093975543976,
+              0.0,
+              -0.06400000303983688,
+              0.09153348207473755,
+              0.09354090690612793,
+              1.0
+            ],
+            "actual_geometry": [
+              {
+                "mesh": "FUEL red needle",
+                "vertex_index": 2,
+                "point_world": [
+                  -0.06986898953349868,
+                  0.09495154823888333,
+                  0.09567675117767295
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "actual_vertex_travel_m": 0.009152899067983696
+    }
+  ],
+  "scope": "Actual Babylon imports and vertex motion in Chromium softwareWebGL; not Safari/iPhone/FPS qualification",
+  "render_mode": "Manual frames after scene readiness",
+  "exports": [
+    {
+      "path": "assets-src/moto-components/instruments/instruments-v2-inspection.glb",
+      "sha256": "444071ff19367a78aa9d2e7a70ebaf33ae78f0f014ed66ca0f9223927f66d30e"
+    }
+  ],
+  "inspector_sha256": "19e4908f4a7b69b492710adfb7d28a5508745721f9c991941a5ed439f3a9fb07",
+  "capture_tool_sha256": "53b07b0e9bda4b86c9d7f05c10815755b3be50dcc85e29a4b3f164cbc38fcf28",
+  "inspector_path": "tools/motorcycle-lab/review-v2.js",
+  "capture_tool_path": "tools/capture_motorcycle18_v3.py",
+  "inputs_unchanged_during_capture": true
+}

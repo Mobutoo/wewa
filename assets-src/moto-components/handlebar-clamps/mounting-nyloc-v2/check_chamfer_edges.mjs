@@ -1,0 +1,14 @@
+// Actual boundary edges at cone/flat intersections, not an assertion on object names.
+import fs from'node:fs/promises';import{createHash}from'node:crypto';import{NodeIO}from'@gltf-transform/core';
+const current='assets-src/moto-components/handlebar-clamps/mounting-nyloc-v2/handlebar-mount-nyloc-v2-inspection.glb',old='/workspace/wewa-assets/work-in-progress/handlebar-mount-nyloc/rejected-thread-grid/source/handlebar-mount-nyloc-inspection.glb';
+async function inspect(file){const bytes=await fs.readFile(file),root=(await new NodeIO().read(file)).getRoot(),rows=[0,1].map(top=>({boundary:top?'upper':'lower',edges:0,seam_edges:0,max_cone_residual_m:0,max_hex_plane_residual_m:0})),seen=new Set();
+ for(const mesh of root.listMeshes())for(const p of mesh.listPrimitives()){
+  const pos=p.getAttribute('POSITION'),ix=p.getIndices(),v=[];
+  for(let i=0;i<pos.getCount();i++){const q=[];pos.getElement(i,q);const x=q[0],y=-q[2],z=q[1],radius=Math.hypot(x,y),angle=(Math.atan2(y,x)+2*Math.PI)%(2*Math.PI),d=Array.from({length:6},(_,k)=>Math.abs(x*Math.cos(k*Math.PI/3)+y*Math.sin(k*Math.PI/3)-.0085)),plane=d.findIndex(r=>r<5e-9),residuals=[Math.abs(radius-Math.sqrt(3)*z-.0079),Math.abs(radius-Math.sqrt(3)*(.0067-z)-.0079)],cls=residuals.findIndex(r=>r<5e-9);v.push({q,angle,plane,planeError:plane>=0?d[plane]:Infinity,cls,coneError:cls>=0?residuals[cls]:Infinity});}
+  for(let i=0;i<ix.getCount();i+=3)for(let j=0;j<3;j++){
+   const a=v[ix.getScalar(i+j)],b=v[ix.getScalar(i+(j+1)%3)];if(a.plane<0||a.plane!==b.plane||a.cls<0||a.cls!==b.cls)continue;const raw=b.angle-a.angle,da=((raw+3*Math.PI)%(2*Math.PI))-Math.PI;if(Math.abs(Math.abs(da)-2*Math.PI/288)>1e-5)continue;const key=[a.q.join(','),b.q.join(',')].sort().join('|');if(seen.has(key))continue;seen.add(key);const r=rows[a.cls];r.edges++;if(Math.abs(raw)>Math.PI)r.seam_edges++;r.max_cone_residual_m=Math.max(r.max_cone_residual_m,a.coneError,b.coneError);r.max_hex_plane_residual_m=Math.max(r.max_hex_plane_residual_m,a.planeError,b.planeError);
+  }
+ }
+ return{file,sha256:createHash('sha256').update(bytes).digest('hex'),actual_boundary_edges:rows,boundaries_follow_cone_hex_intersection:rows.every(r=>r.edges>=250&&r.seam_edges>=1)};
+}
+const[before,after]=await Promise.all([inspect(old),inspect(current)]);if(!after.boundaries_follow_cone_hex_intersection)throw Error(JSON.stringify(after));const r={method:'Actual GLB edges whose endpoints meet both a17mm AF plane and the estimated60degree chamfer cone. Roundedcorner regions excluded; angularseam included.5nm is numerical residual tolerance, not manufacture accuracy.',old_rejected:before,current:after,art_accepted:false};await fs.writeFile('creative/reviews/handlebar-mount-nyloc-v2/chamfer-edge-buffer-check.json',JSON.stringify(r,null,2)+'\n');console.log(JSON.stringify(r));

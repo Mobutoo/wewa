@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-ENGINE-OUTPUT-COVER-LEFT-001",
-  "label": "Cache transmission gauche — pièce isolée",
+  "label": "Cache sortie de boîte gauche — coque extérieure",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,9 +12,9 @@
     "material"
   ],
   "identity": {
-    "variant": "Current RDC visual target, related isolated part references; exact part and local dimensions not certified",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
-    "usage": "Separate detailed candidate before review-only assembly",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
       0.15,
       0.35,
@@ -28,7 +28,104 @@
     "D15"
   ],
   "claims": [],
-  "views": [],
+  "views": [
+    {
+      "name": "outer-reference-direction",
+      "camera_m": [
+        0.6519999504089355,
+        0.24000003933906555,
+        -0.4140000343322754
+      ],
+      "target_m": [
+        0.13199999928474426,
+        0.30000001192092896,
+        -0.6340000033378601
+      ],
+      "lens_mm": 65,
+      "camera_roll_deg": -34,
+      "checkpoint": "outer-reference-direction.checkpoint.json",
+      "outputs": [
+        {
+          "file": "outer-reference-direction.exr",
+          "format": "OPEN_EXR",
+          "bytes": 1646016,
+          "sha256": "9f313ba89dce7431c6080676e18fb73bb201e0749c3bbaafcd538d6d57a5ce03",
+          "linear_scene_data": true
+        },
+        {
+          "file": "outer-reference-direction.png",
+          "format": "PNG",
+          "bytes": 940271,
+          "sha256": "7d2bbcfd275e90e4a496507c1e3c625e7c38bd23db85727a8241e9a0fb1ff32d",
+          "linear_scene_data": false
+        }
+      ]
+    },
+    {
+      "name": "back-formed-wall",
+      "camera_m": [
+        -0.36800000071525574,
+        0.3199999928474426,
+        -0.49399998784065247
+      ],
+      "target_m": [
+        0.13199999928474426,
+        0.30000001192092896,
+        -0.6340000033378601
+      ],
+      "lens_mm": 65,
+      "camera_roll_deg": 0,
+      "checkpoint": "back-formed-wall.checkpoint.json",
+      "outputs": [
+        {
+          "file": "back-formed-wall.exr",
+          "format": "OPEN_EXR",
+          "bytes": 1648118,
+          "sha256": "33a8249f10a5bd9db76b757aa7942520647b0c2197f777f0b3c0cdef44b67036",
+          "linear_scene_data": true
+        },
+        {
+          "file": "back-formed-wall.png",
+          "format": "PNG",
+          "bytes": 956726,
+          "sha256": "fdc11f44365d5fbfe3097d2fbbbec83596888f03401b428f090f5e2265067d6e",
+          "linear_scene_data": false
+        }
+      ]
+    },
+    {
+      "name": "coating-grazing-detail",
+      "camera_m": [
+        0.22699999809265137,
+        0.2750000059604645,
+        -0.6079999804496765
+      ],
+      "target_m": [
+        0.13199999928474426,
+        0.30000001192092896,
+        -0.6340000033378601
+      ],
+      "lens_mm": 65,
+      "camera_roll_deg": 0,
+      "checkpoint": "coating-grazing-detail.checkpoint.json",
+      "outputs": [
+        {
+          "file": "coating-grazing-detail.exr",
+          "format": "OPEN_EXR",
+          "bytes": 2720988,
+          "sha256": "59cff5d913882acbcd1acff3bd21069aa430cc25e3d08f087a9d08109d04e325",
+          "linear_scene_data": true
+        },
+        {
+          "file": "coating-grazing-detail.png",
+          "format": "PNG",
+          "bytes": 1137090,
+          "sha256": "e17230ab4d66c6ee8e16e28e162e2e786e996381f9abca6c355be4033db8bb28",
+          "linear_scene_data": false
+        }
+      ]
+    }
+  ],
   "criteria": [],
   "gaps": [
     {
@@ -47,7 +144,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "engine-output-cover-left-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -55,63 +152,103 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": null,
+      "revision": "engine-output-cover-left-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Local dimensions/camera and exact applicability unresolved",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
       "status": "blocked",
-      "revision": null,
+      "revision": "engine-output-cover-left-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Local dimensions/camera and exact applicability unresolved",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "engine-output-cover-left-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/engine-output-cover-left/engine-output-cover-left-v1.blend",
+          "kind": "editable_source",
+          "revision": "engine-output-cover-left-v1",
+          "sha256": "92f528236a8d9e94669b0eed18e186cb8a2c46612bfb7200907cd6a9abc79399"
+        },
+        {
+          "path": "../../reviews/engine-output-cover-left-v1/outer-reference-direction.png",
+          "kind": "isolated_comparison",
+          "revision": "engine-output-cover-left-v1",
+          "sha256": "7d2bbcfd275e90e4a496507c1e3c625e7c38bd23db85727a8241e9a0fb1ff32d"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "engine-output-cover-left-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/engine-output-cover-left-v1/coating-grazing-detail.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "engine-output-cover-left-v1",
+          "sha256": "e17230ab4d66c6ee8e16e28e162e2e786e996381f9abca6c355be4033db8bb28"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "engine-output-cover-left-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/engine-output-cover-left-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "engine-output-cover-left-v1",
+          "sha256": "6ecfdd50d60ed76587d394756c2aa31b5b9d06ce2349806d72048d1e1a16c659"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "engine-output-cover-left-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/engine-output-cover-left-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "engine-output-cover-left-v1",
+          "sha256": "eabb654d5be4fdefbc7874ce00b7040f104bd09f0178d0329b6bf2f8b9714636"
+        },
+        {
+          "path": "../../reviews/engine-output-cover-left-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "engine-output-cover-left-v1",
+          "sha256": "75a69dc31da422303a8876a3cc3f8d8e706bc7fe9cb3532f358d8e07ad0149a4"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "engine-output-cover-left-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "engine-output-cover-left-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -120,8 +257,10 @@
   },
   "active_detailed_fabrication": false,
   "source_revision": "engine-output-cover-left-v1",
-  "export_revision": null,
-  "next_action": "Source frozen92f528236a8d, strict GLB and UV pass; browser validation and final96views queued",
+  "export_revision": "engine-output-cover-left-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
   "art_accepted": false,
-  "production_group": 17
+  "production_group": 17,
+  "candidate_source": "../../../assets-src/moto-components/engine-output-cover-left/README.md",
+  "candidate_review": "../../reviews/engine-output-cover-left-v1/README.md"
 }
