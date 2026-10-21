@@ -1,0 +1,5 @@
+# Colonne isolée — candidat apparentéPF111000
+
+Sources nues réellement vues MotoZilla et Bikebox, conservées en privé ; cotes et alésage internes restent une enveloppe estimée. Aucune cuvette, aucun siège précis, ni soudure/membre de cadre complet. Les rendus gris/reflets et cartes originales sont liés par SHA à la révision. Les vues finales96 doivent être terminées et relues avant clôture ; validation artistique, montage et moteur restent séparés.
+
+Photos attribuées à comparer : [MotoZilla — cadre PF111000 déposé](https://motozilla.com.ua/product/boxer-bm-vmx-150cc-rama-pf111000-c-razborki-novyy-bajaj-358153/) et [photo MotoZilla](https://motozilla.com.ua/wa-data/public/shop/products/60/77/227760/images/991893/991893.750x0.jpg) ; [Bikebox — cadre PF111000](https://bikeboxmt.com/shop/genuine-bajaj-boxer-frame-assy-bs/) et [photo fournisseur publiée par Bikebox](https://bikeboxmt.com/wp-content/uploads/2026/02/BOXER-FRAME-ASSY-GENUINE.webp). Variantes apparentées, aucune calibration métrique ni réutilisation des pixels.

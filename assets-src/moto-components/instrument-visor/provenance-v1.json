@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "revision": "instrument-visor-v1",
+  "source_sha256": "c790ffbba0a49f4d63e2dcf85a30cf88eb1aa8c6edd847514c041e5c0fa70f15",
+  "export_sha256": "67a3121a691bd29cac126c0fac5c07fea929680faad5f27ec250646aafb06cab",
+  "authorship": "Original procedural surfaces and shader for WEWA; documentary photos are private references, never textures.",
+  "geometry_baseline": {
+    "revision": "instrument-visor-shell-study-v3",
+    "source_sha256": "4e1674fbac66b922ae6a195a4210fd8843960d4e269318ce320612c2cecfd5e2",
+    "export_sha256": "4741baa476587e47db340fb70c2b31bf4823b169cda71feac4a076a171ae8b03",
+    "geometry_attributes_indices_and_matrices_bit_identical": true
+  },
+  "references": [
+    "creative/research/instrument-visor/references.json",
+    "creative/research/instrument-visor/bare-front-native-contour.json",
+    "creative/research/instrument-visor/shape-plan-v1.json",
+    "creative/research/instrument-visor/material-plan-v1.json",
+    "creative/research/instrument-visor/optics-reference-archive.json"
+  ],
+  "export_conversion": {
+    "report": "creative/reviews/instrument-visor-v1/optical-export-conversion.json",
+    "change": "Only KHR_materials_volume attenuationColor converted exp(CyclesColor-1); other material properties and geometry unchanged.",
+    "reason": "Official Blender4.3.2 exporter copies an absorption node Color with different semantics from glTF Beer-Lambert attenuationColor.",
+    "limits": "Coefficient equivalence only; raster fixed thickness and renderer differences remain."
+  },
+  "art_accepted": false
+}

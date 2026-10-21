@@ -1,0 +1,750 @@
+{
+  "component_id": "MOTO-FORK-OUTER-RIGHT-001",
+  "revision": "fork-outer-right-v1",
+  "source_sha256": "5d08454e9da7fbf85df3532a23d0965475559d94cb13e23dfdae9e8056c14ac6",
+  "source_check": {
+    "component_id": "MOTO-FORK-OUTER-RIGHT-001",
+    "revision": "fork-outer-right-v1",
+    "collection": "WEWA_FORK_OUTER_RIGHT_ISOLATED",
+    "frame": "IsolatedRH; axis+Z; origin axlecentre; -Xoutboardright/+Xinboardtowheel; +Ytowardrider. No installedpose",
+    "vertices": 54944,
+    "triangles": 109896,
+    "connected_shells": 1,
+    "nonmanifold_edges": 0,
+    "signed_volume_m3": 0.00019994917425763365,
+    "min_triangle_area_m2": 1.2757979153054028e-11,
+    "zero_area_triangles_at_1e18_m2": 0,
+    "passage_probes": [
+      {
+        "name": "axle",
+        "centre_yz_m": [
+          0,
+          0
+        ],
+        "axis_X_clear": true
+      },
+      {
+        "name": "ear_front",
+        "centre_yz_m": [
+          -0.027,
+          0.218
+        ],
+        "axis_X_clear": true
+      },
+      {
+        "name": "ear_rear",
+        "centre_yz_m": [
+          0.027,
+          0.218
+        ],
+        "axis_X_clear": true
+      }
+    ],
+    "estimated_blind_cavity_floor_z_actual_m": 0.05500003695487976,
+    "LH_rectangular_feature_transferred": false,
+    "coplanar_retriangulation": [
+      {
+        "plane_x_m": -0.008,
+        "faces": 441,
+        "candidate_internal_edges": 439,
+        "volume_relative_change": 4.440892098500626e-16,
+        "vertex_positions_preserved": true,
+        "operation": "Blenderbeautify_fill AREA, coplanar interior diagonals only"
+      },
+      {
+        "plane_x_m": 0.008,
+        "faces": 441,
+        "candidate_internal_edges": 439,
+        "volume_relative_change": 0.0,
+        "vertex_positions_preserved": true,
+        "operation": "Blenderbeautify_fill AREA, coplanar interior diagonals only"
+      },
+      {
+        "plane_x_m": -0.0177,
+        "faces": 472,
+        "candidate_internal_edges": 472,
+        "volume_relative_change": 2.220446049250313e-16,
+        "vertex_positions_preserved": true,
+        "operation": "Blenderbeautify_fill AREA, coplanar interior diagonals only"
+      },
+      {
+        "plane_x_m": 0.0177,
+        "faces": 320,
+        "candidate_internal_edges": 320,
+        "volume_relative_change": 1.9984014443252818e-15,
+        "vertex_positions_preserved": true,
+        "operation": "Blenderbeautify_fill AREA, coplanar interior diagonals only"
+      }
+    ],
+    "construction_operand_checks": [
+      {
+        "name": "Original continuous heel hollow lowerleg and expandedneck",
+        "evaluated_vertices_before": 52194,
+        "clean_vertices": 52194,
+        "signed_volume_before_m3": 0.00018670494575488407,
+        "signed_volume_after_m3": 0.00018670494575488407,
+        "nonmanifold_edges": 0
+      },
+      {
+        "name": "Observed axleeye raised barrel",
+        "evaluated_vertices_before": 1600,
+        "clean_vertices": 1600,
+        "signed_volume_before_m3": 2.0550267354459143e-05,
+        "signed_volume_after_m3": 2.0550267354459143e-05,
+        "nonmanifold_edges": 0
+      },
+      {
+        "name": "Observed integral mid mounting ear -1",
+        "evaluated_vertices_before": 686,
+        "clean_vertices": 682,
+        "signed_volume_before_m3": 1.0366864056149765e-05,
+        "signed_volume_after_m3": 1.0366864056149765e-05,
+        "nonmanifold_edges": 0
+      },
+      {
+        "name": "Observed integral mid mounting ear 1",
+        "evaluated_vertices_before": 686,
+        "clean_vertices": 682,
+        "signed_volume_before_m3": 1.0366864055830715e-05,
+        "signed_volume_after_m3": 1.0366864055830715e-05,
+        "nonmanifold_edges": 0
+      },
+      {
+        "name": "Estimated visible ear aperture -1",
+        "evaluated_vertices_before": 320,
+        "clean_vertices": 320,
+        "signed_volume_before_m3": 2.5415234593989527e-06,
+        "signed_volume_after_m3": 2.5415234593989527e-06,
+        "nonmanifold_edges": 0
+      },
+      {
+        "name": "Estimated visible ear aperture 1",
+        "evaluated_vertices_before": 320,
+        "clean_vertices": 320,
+        "signed_volume_before_m3": 2.5415234593989527e-06,
+        "signed_volume_after_m3": 2.5415234593989527e-06,
+        "nonmanifold_edges": 0
+      },
+      {
+        "name": "True axle passage - diameter estimated",
+        "evaluated_vertices_before": 320,
+        "clean_vertices": 320,
+        "signed_volume_before_m3": 1.2073179196077372e-05,
+        "signed_volume_after_m3": 1.2073179196077372e-05,
+        "nonmanifold_edges": 0
+      },
+      {
+        "name": "Estimated observed outboard axle aperture edgebreak",
+        "evaluated_vertices_before": 320,
+        "clean_vertices": 320,
+        "signed_volume_before_m3": 8.614965506881485e-07,
+        "signed_volume_after_m3": 8.614965506881485e-07,
+        "nonmanifold_edges": 0
+      }
+    ],
+    "csg_tool": {
+      "tool": "manifold3d",
+      "tool_version": "3.3.2",
+      "solid_components": 1
+    },
+    "csg_helper_sha256": "947178b2be8a9a5a0336b619692f62503c9d0921da9cac033e91771343bd707e",
+    "csg_stages": [
+      {
+        "operation": "union",
+        "part": "Observed axleeye raised barrel",
+        "status": "NoError",
+        "before_volume_m3": 0.00018670494575488377,
+        "after_volume_m3": 0.000189619072817764
+      },
+      {
+        "operation": "union",
+        "part": "Observed integral mid mounting ear -1",
+        "status": "NoError",
+        "before_volume_m3": 0.000189619072817764,
+        "after_volume_m3": 0.00019750288651033894
+      },
+      {
+        "operation": "union",
+        "part": "Observed integral mid mounting ear 1",
+        "status": "NoError",
+        "before_volume_m3": 0.00019750288651033894,
+        "after_volume_m3": 0.0002053867002032933
+      },
+      {
+        "operation": "subtract",
+        "part": "Estimated visible ear aperture -1",
+        "status": "NoError",
+        "before_volume_m3": 0.0002053867002032933,
+        "after_volume_m3": 0.00020480578038774657
+      },
+      {
+        "operation": "subtract",
+        "part": "Estimated visible ear aperture 1",
+        "status": "NoError",
+        "before_volume_m3": 0.00020480578038774657,
+        "after_volume_m3": 0.00020422486057219987
+      },
+      {
+        "operation": "subtract",
+        "part": "True axle passage - diameter estimated",
+        "status": "NoError",
+        "before_volume_m3": 0.00020422486057219987,
+        "after_volume_m3": 0.0001999509552645206
+      },
+      {
+        "operation": "subtract",
+        "part": "Estimated observed outboard axle aperture edgebreak",
+        "status": "NoError",
+        "before_volume_m3": 0.0001999509552645206,
+        "after_volume_m3": 0.00019994917444553163
+      }
+    ],
+    "all_dimensions_estimated": true,
+    "hidden_hydraulics_modelled": false,
+    "exact_RDC_verified": false,
+    "cast_identifier_glyphs_modelled": false,
+    "bellows_interface_verified": false,
+    "art_accepted": false,
+    "source_sha256": "5d08454e9da7fbf85df3532a23d0965475559d94cb13e23dfdae9e8056c14ac6",
+    "export_sha256": "b891726afccf8256d4eaee305cff09cbaf7abd9ed71727f1540f4fb961c4b66d",
+    "geometry_and_smooth_flags_preserved_by_material_stage": "3ee1d4a9d7e9390b0874b571a4a133ff0ec4341295c0ec95cf735cb3b59f241f"
+  },
+  "export_check": {
+    "asset": "fork-outer-right",
+    "revision": "fork-outer-right-v1",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/front-fork/outer-right/fork-outer-right-inspection.glb",
+        "sha256": "b891726afccf8256d4eaee305cff09cbaf7abd9ed71727f1540f4fb961c4b66d",
+        "bytes": 4006888,
+        "glTF_errors": 0,
+        "glTF_warnings": 0,
+        "messages": [
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/1/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/1/attributes/TEXCOORD_0"
+          }
+        ],
+        "bounds": {
+          "min": [
+            -0.024000000208616257,
+            -0.017999999225139618,
+            -0.03400000184774399
+          ],
+          "max": [
+            0.024000000208616257,
+            0.32499998807907104,
+            0.03400000184774399
+          ]
+        },
+        "vertices": 61801,
+        "triangles": 109896,
+        "triangle_area_local_m2": {
+          "minimum": 1.275798130600233e-11,
+          "exactly_zero": 0,
+          "below_1e_minus18": 0,
+          "note": "Local exported coordinates; not a self-intersection or surface-fidelity proof"
+        },
+        "tangent_frame": {
+          "vectors": 61801,
+          "max_unit_error": 6.946490520687298e-05,
+          "max_normal_dot": 0.0001270199205153713,
+          "handedness_sign_is_unit": true,
+          "note": "Finite orthonormal frame only; not full MikkTSpace or renderer visual parity"
+        },
+        "node_names": [
+          "RH fork outer body - relatedPF121019 candidate"
+        ],
+        "materials": [
+          {
+            "name": "Silver gray coated fork surface - composition unmeasured",
+            "basecolor": [
+              0.47999998927116394,
+              0.5099999904632568,
+              0.550000011920929,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "extensions": []
+          },
+          {
+            "name": "Smoother aperture and inner seat - finish estimated",
+            "basecolor": [
+              0.3499999940395355,
+              0.3700000047683716,
+              0.4000000059604645,
+              1
+            ],
+            "metallic": 0.6499999761581421,
+            "roughness": 0.2800000011920929,
+            "extensions": []
+          }
+        ]
+      }
+    ],
+    "scope": "Actual glTF buffers and format only; not shape reception, physical interface or mobile qualification",
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "browser_check": {
+    "camera": {
+      "position": [
+        3.398027647483509e-17,
+        0.49434494409174606,
+        -0.5549400283982856
+      ],
+      "target": [
+        0,
+        0.1534999944269657,
+        0
+      ],
+      "radius": 0.6512554912096148,
+      "fov": 0.72,
+      "fovMode": 0
+    },
+    "framing": {
+      "min": [
+        0.4723363746779708,
+        0.13120902201514661
+      ],
+      "max": [
+        0.5276636406927703,
+        0.8058250319955614
+      ],
+      "scope": "Conservative projected actual mesh bounding boxes; whole-piece framing only"
+    },
+    "asset": "fork-outer-right",
+    "revision": "fork-outer-right-v1",
+    "config": {
+      "label": "Fourreau de fourche droit — référence propre au côté",
+      "lot": 13,
+      "review": "fork-outer-right-v1",
+      "source": "front-fork/outer-right/fork-outer-right-v1.blend",
+      "collection": "WEWA_FORK_OUTER_RIGHT_ISOLATED",
+      "component_id": "MOTO-FORK-OUTER-RIGHT-001",
+      "source_frame": "isolated_local",
+      "files": [
+        "front-fork/outer-right/fork-outer-right-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Source isolée : origine axe de roue,+Z tube,−X extérieur droit,+Y pilote. Poche LH non copiée ; forme liée aux photos PF121019/Endurance, cotes/revers et interfaces estimés. Aucune pose OEM certifiée."
+    },
+    "files": [
+      "front-fork/outer-right/fork-outer-right-inspection.glb"
+    ],
+    "meshes": 2,
+    "vertices": 61801,
+    "triangles": 109896,
+    "bounds": {
+      "min": [
+        -0.024000000208616257,
+        -0.017999999225139618,
+        -0.03400000184774399
+      ],
+      "max": [
+        0.024000000208616257,
+        0.32499998807907104,
+        0.03400000184774399
+      ]
+    },
+    "textures_ready": true,
+    "renderer": {
+      "vendor": "Google Inc. (Google)",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "rig_states": {},
+    "attachments": [],
+    "rigs": [],
+    "art_accepted": false,
+    "physical_iphone_tested": false,
+    "public_game_unchanged": true,
+    "pixel_checks": [
+      {
+        "view": "quarter",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 43846,
+        "changed_fraction": 0.03806076388888889,
+        "rgb_min": [
+          26,
+          31,
+          36
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "driver",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 42434,
+        "changed_fraction": 0.036835069444444445,
+        "rgb_min": [
+          26,
+          31,
+          36
+        ],
+        "rgb_max": [
+          251,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "reverse",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 44457,
+        "changed_fraction": 0.03859114583333333,
+        "rgb_min": [
+          26,
+          31,
+          36
+        ],
+        "rgb_max": [
+          237,
+          246,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "landscape-844x390",
+        "width": 844,
+        "height": 390,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 8063,
+        "changed_fraction": 0.024495685988576984,
+        "rgb_min": [
+          26,
+          31,
+          36
+        ],
+        "rgb_max": [
+          250,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      }
+    ],
+    "page_errors": [],
+    "http_failures": [],
+    "pose_checks": [],
+    "scope": "Actual Babylon imports and vertex motion in Chromium softwareWebGL; not Safari/iPhone/FPS qualification",
+    "render_mode": "Manual frames after scene readiness",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/front-fork/outer-right/fork-outer-right-inspection.glb",
+        "sha256": "b891726afccf8256d4eaee305cff09cbaf7abd9ed71727f1540f4fb961c4b66d"
+      }
+    ],
+    "inspector_sha256": "19e4908f4a7b69b492710adfb7d28a5508745721f9c991941a5ed439f3a9fb07",
+    "capture_tool_sha256": "53b07b0e9bda4b86c9d7f05c10815755b3be50dcc85e29a4b3f164cbc38fcf28",
+    "inspector_path": "tools/motorcycle-lab/review-v2.js",
+    "capture_tool_path": "tools/capture_motorcycle18_v3.py",
+    "inputs_unchanged_during_capture": true
+  },
+  "render_report": {
+    "source_sha256": "5d08454e9da7fbf85df3532a23d0965475559d94cb13e23dfdae9e8056c14ac6",
+    "export_sha256": "b891726afccf8256d4eaee305cff09cbaf7abd9ed71727f1540f4fb961c4b66d",
+    "renderer": "Blender4.3.2 CyclesCPU OIDN",
+    "samples": 96,
+    "resolution_px": [
+      1000,
+      1400
+    ],
+    "views": [
+      {
+        "name": "outer-quarter",
+        "camera_location_m": [
+          -0.6,
+          0.14,
+          0.3
+        ],
+        "camera_target_m": [
+          0,
+          0,
+          0.15
+        ],
+        "ortho_scale_m": 0.4,
+        "allow_deliberate_macro_crop": false,
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "OUTER_RIGHT_CAMERA",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0010000000474974513,
+            5.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.5696190895420083,
+          "farthest_actual_vertex_depth_m": 0.6905814508866387,
+          "projected_uv_min": [
+            0.3785754187472151,
+            0.09086372325406389
+          ],
+          "projected_uv_max": [
+            0.6214231654211828,
+            0.9388782739485287
+          ],
+          "allow_deliberate_crop": false,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "RH fork outer body - relatedPF121019 candidate",
+              "vertices": 54944,
+              "depth_m": [
+                0.5696190895420083,
+                0.6905814508866387
+              ],
+              "projected_uv_min": [
+                0.3785754187472151,
+                0.09086372325406389
+              ],
+              "projected_uv_max": [
+                0.6214231654211828,
+                0.9388782739485287
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": false,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true,
+          "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        },
+        "PNG_sha256": "88ab33fed08700338279233cfa2d5f6dc5d46ab3eaf8747c5602d2bf4adf28f1",
+        "checkpoint_file": "checkpoint-outer-quarter.json",
+        "reused_verified_checkpoint": false
+      },
+      {
+        "name": "inboard-quarter",
+        "camera_location_m": [
+          0.6,
+          0.16,
+          0.28
+        ],
+        "camera_target_m": [
+          0,
+          0,
+          0.15
+        ],
+        "ortho_scale_m": 0.4,
+        "allow_deliberate_macro_crop": false,
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "OUTER_RIGHT_CAMERA",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0010000000474974513,
+            5.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.5752839178187855,
+          "farthest_actual_vertex_depth_m": 0.6861599302993546,
+          "projected_uv_min": [
+            0.37869951969557025,
+            0.08811174008414319
+          ],
+          "projected_uv_max": [
+            0.6213010143522404,
+            0.9401595917733953
+          ],
+          "allow_deliberate_crop": false,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "RH fork outer body - relatedPF121019 candidate",
+              "vertices": 54944,
+              "depth_m": [
+                0.5752839178187855,
+                0.6861599302993546
+              ],
+              "projected_uv_min": [
+                0.37869951969557025,
+                0.08811174008414319
+              ],
+              "projected_uv_max": [
+                0.6213010143522404,
+                0.9401595917733953
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": false,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true,
+          "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        },
+        "PNG_sha256": "46c52abdca61e15f9e0365d981c8c9b5cc218e6f4d50122b6ac0e1df3611ee72",
+        "checkpoint_file": "checkpoint-inboard-quarter.json",
+        "reused_verified_checkpoint": false
+      },
+      {
+        "name": "outer-foot",
+        "camera_location_m": [
+          -0.12,
+          0.045,
+          0.045
+        ],
+        "camera_target_m": [
+          -0.005,
+          0,
+          0.014
+        ],
+        "ortho_scale_m": 0.105,
+        "allow_deliberate_macro_crop": true,
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "OUTER_RIGHT_CAMERA",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0010000000474974513,
+            5.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.033064458060574425,
+          "farthest_actual_vertex_depth_m": 0.1568701816007894,
+          "projected_uv_min": [
+            0.019013511652263337,
+            0.21086964557386967
+          ],
+          "projected_uv_max": [
+            0.9323992841475395,
+            3.4376638017939825
+          ],
+          "allow_deliberate_crop": true,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "RH fork outer body - relatedPF121019 candidate",
+              "vertices": 54944,
+              "depth_m": [
+                0.033064458060574425,
+                0.1568701816007894
+              ],
+              "projected_uv_min": [
+                0.019013511652263337,
+                0.21086964557386967
+              ],
+              "projected_uv_max": [
+                0.9323992841475395,
+                3.4376638017939825
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": true,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true,
+          "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        },
+        "PNG_sha256": "b0feaf33f56c882536ef9cf6c27f335b70da5f3c8f918b0d6c849cac90f520a8",
+        "checkpoint_file": "checkpoint-outer-foot.json",
+        "reused_verified_checkpoint": false
+      },
+      {
+        "name": "top-opening",
+        "camera_location_m": [
+          -0.08,
+          0.1,
+          0.47
+        ],
+        "camera_target_m": [
+          0,
+          0,
+          0.3
+        ],
+        "ortho_scale_m": 0.11,
+        "allow_deliberate_macro_crop": true,
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "OUTER_RIGHT_CAMERA",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0010000000474974513,
+            5.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.17874672492121263,
+          "farthest_actual_vertex_depth_m": 0.47152893844000043,
+          "projected_uv_min": [
+            0.1559358747415071,
+            -1.3263497213309123
+          ],
+          "projected_uv_max": [
+            0.844063164063753,
+            0.8079499200846652
+          ],
+          "allow_deliberate_crop": true,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "RH fork outer body - relatedPF121019 candidate",
+              "vertices": 54944,
+              "depth_m": [
+                0.17874672492121263,
+                0.47152893844000043
+              ],
+              "projected_uv_min": [
+                0.1559358747415071,
+                -1.3263497213309123
+              ],
+              "projected_uv_max": [
+                0.844063164063753,
+                0.8079499200846652
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": true,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true,
+          "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        },
+        "PNG_sha256": "17088bd8b6597dc8f056d970ae39b0a756c78ed0f17a046e96859a3defefb203",
+        "checkpoint_file": "checkpoint-top-opening.json",
+        "reused_verified_checkpoint": false
+      }
+    ],
+    "art_accepted": false
+  },
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true
+}

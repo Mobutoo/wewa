@@ -45,6 +45,14 @@
           "review": "../reviews/handlebar-mount-nyloc-v3/README.md",
           "runtime_checked": true,
           "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-HANDLEBAR-MOUNT-UPPER-WASHER-001",
+          "revision": "handlebar-mount-upper-washer-v1",
+          "source_sha256": "9486e5526cb7d126f17499bde267f880d3cf59fecc371fe76b8ba048a4a7d7ee",
+          "review": "../reviews/handlebar-mount-upper-washer-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
         }
       ],
       "remaining_observable_units": [
@@ -305,18 +313,18 @@
       "owner_chain": "C",
       "candidates": [
         {
-          "component_id": "MOTO-MIRROR-LEFT-001",
-          "revision": "mirror-left-v1",
-          "source_sha256": "bdd8a799b6a5ae07a5c076ba0c5a1019f6477ff9a4be5995229e13c2def3c6d0",
-          "review": "../reviews/mirror-left-v1/README.md",
+          "component_id": "MOTO-MIRROR-RIGHT-001",
+          "revision": "mirror-right-v3",
+          "source_sha256": "4be6e74518d7e0a6baccfc66c136cba148882183bf1d6020ac329ed9c0c32c60",
+          "review": "../reviews/mirror-right-v3/README.md",
           "runtime_checked": true,
           "art_accepted": false
         },
         {
-          "component_id": "MOTO-MIRROR-RIGHT-001",
-          "revision": "mirror-right-v2",
-          "source_sha256": "af1bfd1155b02281eb549b428042728e55f7975f0fdc449806bb288d850e0a58",
-          "review": "../reviews/mirror-right-v2/README.md",
+          "component_id": "MOTO-MIRROR-LEFT-001",
+          "revision": "mirror-left-v2",
+          "source_sha256": "7725731e869b6edeea744965054518659eeb6355f6acc670718738a8144b1a30",
+          "review": "../reviews/mirror-left-v2/README.md",
           "runtime_checked": true,
           "art_accepted": false
         }
@@ -515,6 +523,14 @@
           "review": "../reviews/fork-outer-left-v1/README.md",
           "runtime_checked": true,
           "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-FORK-OUTER-RIGHT-001",
+          "revision": "fork-outer-right-v1",
+          "source_sha256": "5d08454e9da7fbf85df3532a23d0965475559d94cb13e23dfdae9e8056c14ac6",
+          "review": "../reviews/fork-outer-right-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
         }
       ],
       "documentary_blockers": [
@@ -558,15 +574,15 @@
     {
       "lot": 15,
       "label": "Garde-boue, cadre et bras oscillant",
-      "state": "documentary_research",
+      "state": "separate_candidates_under_review_not_complete",
       "source_folders": [],
       "research": "../research/body-powertrain-18/report.json",
       "depends_on_lots": [
         13
       ],
       "user_art_accepted": false,
-      "any_source_blend_built": false,
-      "any_runtime_checked": false,
+      "any_source_blend_built": true,
+      "any_runtime_checked": true,
       "all_required_components_built": false,
       "all_interfaces_checked": false,
       "group_complete": false,
@@ -580,7 +596,25 @@
         "path": "../research/chassis-remaining-18.json",
         "sha256": "5ccd298f86b10815ac5eae65b3fca5c47ab7492ecc251fd07ed573ec7f206f60",
         "scope": "Observable tracking units, not new built meshes or certified exact RDC counts"
-      }
+      },
+      "candidates": [
+        {
+          "component_id": "MOTO-FRAME-HEADTUBE-001",
+          "revision": "frame-head-tube-v1",
+          "source_sha256": "12832eb665a9ba9f3dbd1f6e1501bcafa0ebf66bf4395a05e0d23bf7d0f90ccc",
+          "review": "../reviews/frame-head-tube-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-FRAME-DOWNMEMBER-001",
+          "revision": "frame-front-downmember-v1",
+          "source_sha256": "df14820aef2164aa280432b2ba951001315be956ce85b04a5ac5464932dd3cee",
+          "review": "../reviews/frame-front-downmember-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        }
+      ]
     },
     {
       "lot": 16,
@@ -645,14 +679,6 @@
       "owner_chain": "B",
       "candidates": [
         {
-          "component_id": "MOTO-ENGINE-COVER-LEFT-001",
-          "revision": "engine-cover-left-v1",
-          "source_sha256": "7e27606ef19b7a49e932ac13841b1da15c6d0d4936f1cef8f095bb233c3ce1d4",
-          "review": "../reviews/engine-cover-left-v1/README.md",
-          "runtime_checked": true,
-          "art_accepted": false
-        },
-        {
           "component_id": "MOTO-ENGINE-OUTPUT-COVER-LEFT-001",
           "revision": "engine-output-cover-left-v1",
           "source_sha256": "92f528236a8d9e94669b0eed18e186cb8a2c46612bfb7200907cd6a9abc79399",
@@ -669,18 +695,34 @@
           "art_accepted": false
         },
         {
-          "component_id": "MOTO-KICKSTARTER-001",
-          "revision": "kickstarter-v1",
-          "source_sha256": "6fade26e0f95de87cc18a8891f15b6be3b08b1a66ebca31bdce984fb2ac8f013",
-          "review": "../reviews/kickstarter-v1/README.md",
-          "runtime_checked": true,
-          "art_accepted": false
-        },
-        {
           "component_id": "MOTO-ENGINE-FILTER-CAP-001",
           "revision": "engine-filter-cap-v2",
           "source_sha256": "dc8ded5d6b392eee0f3084da1d66a647efcd3ca44d6cd148fad48f1fa9875436",
           "review": "../reviews/engine-filter-cap-v2/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-ENGINE-COVER-LEFT-001",
+          "revision": "engine-cover-left-v2",
+          "source_sha256": "f168aa9ef3e3c6e9b7bc2e884309d69da6fab736660ec6c8d1eaa29e7ecffe74",
+          "review": "../reviews/engine-cover-left-v2/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-KICKSTARTER-001",
+          "revision": "kickstarter-v2",
+          "source_sha256": "94a2aa0b4359738e1f701445d196f2bf39d91a75d57bc0f58ca81242061491b4",
+          "review": "../reviews/kickstarter-v2/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-ENGINE-CYLINDER-001",
+          "revision": "engine-cylinder-v1",
+          "source_sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6",
+          "review": "../reviews/engine-cylinder-v1/README.md",
           "runtime_checked": true,
           "art_accepted": false
         }
@@ -723,5 +765,14 @@
   "inspection_tool": "../../tools/motorcycle-lab/",
   "scope_note": "Lots15–18 contain multiple distinct parts and must not be counted as one completed mesh. Current provisional dimensions do not certify any hidden interface.",
   "fabrication_dependency_policy": "Unresolved installed dependencies permit separately documented candidate work; G5 remains open, no assembly certification from a guide or preview.",
-  "unit_count_note": "Observable work units, not certified exact parts, fabricated models or accepted assets. Split further when a visible interface requires it."
+  "unit_count_note": "Observable work units, not certified exact parts, fabricated models or accepted assets. Split further when a visible interface requires it.",
+  "distribution_update": {
+    "date": "2026-10-21",
+    "scope": "Balance already authorized parallel manufacture, maximum three new detailed component owners unchanged",
+    "A": "Lots1/2/13/14/15 and lot16 except rear shock units",
+    "B": "Lots3/6/7/9/10/17/18",
+    "C": "Lots4/5/8/11/12, then rear SNS shock units from16",
+    "rear_shocks_handoff": "C after11/12; A explicitly notified to avoid duplicate fabrication. Shock interfaces remain estimated/open; other16 components remain A. One new detailed component per owner and at most3 global long rendering workers.",
+    "no_group_completed_or_art_accepted": true
+  }
 }

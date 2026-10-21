@@ -1,0 +1,1808 @@
+{
+  "component_id": "MOTO-MIRROR-RIGHT-001",
+  "revision": "mirror-right-v3",
+  "source_sha256": "4be6e74518d7e0a6baccfc66c136cba148882183bf1d6020ac329ed9c0c32c60",
+  "source_check": {
+    "component_id": "MOTO-MIRROR-RIGHT-001",
+    "phase": "full v3 candidate; RH cosmetic stud mesh phase alignment only",
+    "source_sha256": "4be6e74518d7e0a6baccfc66c136cba148882183bf1d6020ac329ed9c0c32c60",
+    "export_sha256": "ca5ee9189efcbae7f663ad6e398661c638570a0b31019af14bafbff27e28210e",
+    "geometry": [
+      {
+        "object": "RH mirror compound shell and socket - candidate",
+        "vertices": 11138,
+        "faces": 22280,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 5.897185396123164e-05,
+        "triangles": 22280,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 2.5561922370465062e-12
+      },
+      {
+        "object": "RH convex mirror glass - finite thickness candidate",
+        "vertices": 6482,
+        "faces": 6588,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 2.5598761728568837e-05,
+        "triangles": 12960,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 4.87977587226851e-08
+      },
+      {
+        "object": "RH rear metallic reflector - original candidate",
+        "vertices": 6482,
+        "faces": 6588,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 6.120551686003786e-07,
+        "triangles": 12960,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 3.08615781818844e-08
+      },
+      {
+        "object": "RH continuous mirror edge seal - estimated",
+        "vertices": 432,
+        "faces": 432,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 7.770904213931902e-08,
+        "triangles": 864,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 2.1679301198673784e-07
+      },
+      {
+        "object": "RH continuous steel stem ball and cosmetic stud - candidate",
+        "vertices": 25145,
+        "faces": 50286,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 1.1321972549650587e-05,
+        "triangles": 50286,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 6.388002540130833e-12
+      },
+      {
+        "object": "RH mirror base washer - estimated",
+        "vertices": 384,
+        "faces": 384,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 1.0469757632465584e-07,
+        "triangles": 768,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 1.406896785738354e-07
+      },
+      {
+        "object": "RH mirror base hex nut - estimated thread-free bore",
+        "vertices": 576,
+        "faces": 576,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 6.621867663213179e-07,
+        "triangles": 1152,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 1.3770791440492758e-07
+      },
+      {
+        "object": "RH hollow mirror mounting cover - estimated",
+        "vertices": 960,
+        "faces": 960,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 1.8868785536286047e-06,
+        "triangles": 1920,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 5.828507454452847e-08
+      },
+      {
+        "object": "RH fixed hollow lower neck cover - estimated",
+        "vertices": 1344,
+        "faces": 1344,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 3.433239772024032e-06,
+        "triangles": 2688,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 1.1444749503652929e-07
+      },
+      {
+        "object": "RH moving hollow upper neck cover - estimated",
+        "vertices": 768,
+        "faces": 768,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 2.739080777380358e-06,
+        "triangles": 1536,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 1.2766945189923717e-07
+      }
+    ],
+    "CSG": [
+      {
+        "stages": [
+          {
+            "operation": "features",
+            "part": "RH integral socket outside construction",
+            "before_volume_m3": 4.404004578661578e-05,
+            "after_volume_m3": 6.368519591128842e-05
+          },
+          {
+            "operation": "drills",
+            "part": "RH curved neck working bore construction",
+            "before_volume_m3": 6.368519591128842e-05,
+            "after_volume_m3": 5.938560461025831e-05
+          },
+          {
+            "operation": "drills",
+            "part": "RH spherical socket clearance construction",
+            "before_volume_m3": 5.938560461025831e-05,
+            "after_volume_m3": 5.900343402356914e-05
+          },
+          {
+            "operation": "drills",
+            "part": "RH observed rear circular passage cutter - function unknown",
+            "before_volume_m3": 5.900343402356914e-05,
+            "after_volume_m3": 5.897185478679383e-05
+          }
+        ],
+        "solid_components": 1,
+        "volume_m3": 5.897185478679383e-05,
+        "worker": "manifold3d",
+        "worker_version": "3.3.2"
+      },
+      {
+        "stages": [
+          {
+            "operation": "features",
+            "part": "RH cosmetic helical stud construction - thread unknown",
+            "before_volume_m3": 8.84197413567042e-06,
+            "after_volume_m3": 9.948717955287471e-06
+          },
+          {
+            "operation": "features",
+            "part": "RH estimated steel articulation ball construction",
+            "before_volume_m3": 9.948717955287471e-06,
+            "after_volume_m3": 1.1320654443051648e-05
+          }
+        ],
+        "solid_components": 1,
+        "volume_m3": 1.1320654443051648e-05,
+        "worker": "manifold3d",
+        "worker_version": "3.3.2"
+      }
+    ],
+    "head_frame_world": {
+      "centre_m": [
+        -0.32899999618530273,
+        -0.04500000178813934,
+        0.2840000092983246
+      ],
+      "outward_U": [
+        -0.9755259156227112,
+        0.21965079009532928,
+        0.010137728415429592
+      ],
+      "up_V": [
+        -9.313225746154785e-10,
+        -0.04610477015376091,
+        0.998936653137207
+      ],
+      "normal_toward_rider_N": [
+        0.21988458931446075,
+        0.9744885563850403,
+        0.04497639462351799
+      ],
+      "left_positive_X": false
+    },
+    "mount_boss_world_m": [
+      -0.1886511594057083,
+      -0.008244437165558338,
+      0.11800000071525574
+    ],
+    "ball_world_m": [
+      -0.24072271585464478,
+      -0.08295915275812149,
+      0.23019269108772278
+    ],
+    "linked_mount_source_path": "assets-src/moto-components/front-brake-control/front-brake-control-v2.blend",
+    "linked_mount_source_sha256": "6ab2f1ecb322f92a1f26643a149e7b2b93691dc91d3fb2e965c8b8f55733b2e1",
+    "all_dimensions_estimated": true,
+    "exact_current_RDC_identity_confirmed": false,
+    "art_accepted": false,
+    "prior_source_sha256": "af1bfd1155b02281eb549b428042728e55f7975f0fdc449806bb288d850e0a58",
+    "prior_export_sha256": "a5765a2c2b2c9b5aaefc9a7cc2e95b587731269e05227394b8f84c5058944e70",
+    "change": {
+      "only_changed_body": "RH continuous steel stem ball and cosmetic stud - candidate",
+      "sampling_method": {
+        "sectors": 144,
+        "helical_phase_boundaries": [
+          0,
+          0.15,
+          0.45,
+          0.65,
+          0.95
+        ],
+        "axial_range_q_m": [
+          -0.004,
+          0.024
+        ],
+        "pitch_estimated_m": 0.00125,
+        "major_diameter_estimated_m": 0.008,
+        "root_diameter_estimated_m": 0.0067,
+        "cap_boundary_vertices": [
+          148,
+          147
+        ],
+        "profile": "Exact old piecewise radial equation, mesh crease curves aligned in parameter domain; angular facets reduced, no added bevel or crease radius."
+      },
+      "retained_original_rod_and_ball_objects": [
+        "RH continuous bent rod construction",
+        "RH estimated steel articulation ball construction"
+      ],
+      "profile_and_dimensions_changed": false,
+      "nine_other_source_bodies_or_transforms_edited": false,
+      "materials_and_images_edited": false,
+      "normals": "Intentional sharp slope boundaries derived from source mesh at existing threshold0.65rad; smooth within each patch. No global bevel.",
+      "limits": "Diameter, pitch, hand, crest/root form and mating fit remain estimated cosmetic geometry, not OEM qualification."
+    },
+    "new_stud_closed_geometry": {
+      "object": "RH phase-aligned cosmetic stud construction v3 - estimated",
+      "vertices": 16422,
+      "faces": 16569,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 1.1931278265031446e-06,
+      "triangles": 32840,
+      "exact_zero_area_triangles": 0,
+      "minimum_triangle_area_m2": 1.0784283882570023e-10
+    },
+    "CSG_v3": {
+      "stages": [
+        {
+          "operation": "features",
+          "part": "RH phase-aligned cosmetic stud construction v3 - estimated",
+          "before_volume_m3": 8.84197413567042e-06,
+          "after_volume_m3": 9.9500360631898e-06
+        },
+        {
+          "operation": "features",
+          "part": "RH estimated steel articulation ball construction",
+          "before_volume_m3": 9.9500360631898e-06,
+          "after_volume_m3": 1.1321972550953976e-05
+        }
+      ],
+      "solid_components": 1,
+      "volume_m3": 1.1321972550953976e-05,
+      "worker": "manifold3d",
+      "worker_version": "3.3.2"
+    }
+  },
+  "export_check": {
+    "asset": "mirror-right-v3",
+    "revision": "mirror-right-v3",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/mirrors/mirror-right-v3.glb",
+        "sha256": "ca5ee9189efcbae7f663ad6e398661c638570a0b31019af14bafbff27e28210e",
+        "bytes": 4286216,
+        "glTF_errors": 0,
+        "glTF_warnings": 0,
+        "messages": [
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/0/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/1/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/1/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/1/primitives/0/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/1/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/2/primitives/0/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/2/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/5/primitives/0/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/5/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/6/primitives/0/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/6/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/9/primitives/0/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/9/primitives/0/attributes/TEXCOORD_0"
+          }
+        ],
+        "bounds": {
+          "min": [
+            -0.4049125015735626,
+            0.11400000005960464,
+            -0.00025556329637765884
+          ],
+          "max": [
+            -0.18015116453170776,
+            0.3312523663043976,
+            0.09905381500720978
+          ]
+        },
+        "vertices": 74908,
+        "triangles": 107414,
+        "triangle_area_local_m2": {
+          "minimum": 2.5561921242897926e-12,
+          "exactly_zero": 0,
+          "below_1e_minus18": 0,
+          "note": "Local exported coordinates; not a self-intersection or surface-fidelity proof"
+        },
+        "tangent_frame": {
+          "vectors": 74908,
+          "max_unit_error": 6.91135892869621e-05,
+          "max_normal_dot": 0.00013082162436006683,
+          "handedness_sign_is_unit": true,
+          "note": "Finite orthonormal frame only; not full MikkTSpace or renderer visual parity"
+        },
+        "node_names": [
+          "RH continuous steel stem ball and cosmetic stud - candidate",
+          "RH mirror base washer - estimated",
+          "RH mirror base hex nut - estimated thread-free bore",
+          "RH hollow mirror mounting cover - estimated",
+          "RH fixed hollow lower neck cover - estimated",
+          "RH continuous mirror edge seal - estimated",
+          "RH convex mirror glass - finite thickness candidate",
+          "RH mirror compound shell and socket - candidate",
+          "RH moving hollow upper neck cover - estimated",
+          "RH rear metallic reflector - original candidate",
+          "RH mirror head adjustment PIVOT"
+        ],
+        "materials": [
+          {
+            "name": "RH original black enamel on steel stem",
+            "basecolor": [
+              0.006000000052154064,
+              0.007000000216066837,
+              0.008999999612569809,
+              1
+            ],
+            "metallic": 0,
+            "roughness": 0.1899999976158142,
+            "extensions": []
+          },
+          {
+            "name": "RH estimated steel fasteners",
+            "basecolor": [
+              0.3499999940395355,
+              0.3799999952316284,
+              0.4099999964237213,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 0.2199999988079071,
+            "extensions": []
+          },
+          {
+            "name": "RH original satin articulation cover",
+            "basecolor": [
+              0.006000000052154064,
+              0.007000000216066837,
+              0.00800000037997961,
+              1
+            ],
+            "metallic": 0,
+            "roughness": 0.30000001192092896,
+            "extensions": []
+          },
+          {
+            "name": "RH original matte neck and base covers",
+            "basecolor": [
+              0.006000000052154064,
+              0.007000000216066837,
+              0.00800000037997961,
+              1
+            ],
+            "metallic": 0,
+            "roughness": 0.5600000023841858,
+            "extensions": []
+          },
+          {
+            "name": "RH matte rubber edge seal",
+            "basecolor": [
+              0.006000000052154064,
+              0.007000000216066837,
+              0.00800000037997961,
+              1
+            ],
+            "metallic": 0,
+            "roughness": 0.5600000023841858,
+            "extensions": []
+          },
+          {
+            "name": "RH mirror glass dielectric - estimated IOR1.52",
+            "basecolor": [
+              0.9399999976158142,
+              0.9800000190734863,
+              0.9599999785423279,
+              1
+            ],
+            "metallic": 0,
+            "roughness": 0.019999999552965164,
+            "extensions": [
+              "KHR_materials_ior",
+              "KHR_materials_transmission"
+            ]
+          },
+          {
+            "name": "RH original black moulded mirror polymer",
+            "basecolor": [
+              0.004000000189989805,
+              0.004999999888241291,
+              0.006000000052154064,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "extensions": []
+          },
+          {
+            "name": "RH original rear mirror metallic layer",
+            "basecolor": [
+              0.7799999713897705,
+              0.7900000214576721,
+              0.800000011920929,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 0.02500000037252903,
+            "extensions": []
+          }
+        ]
+      }
+    ],
+    "scope": "Actual glTF buffers and format only; not shape reception, physical interface or mobile qualification",
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "browser_check": {
+    "camera": {
+      "position": [
+        -0.29253183305263514,
+        0.5393647092612558,
+        -0.4662925011735972
+      ],
+      "target": [
+        -0.2925318330526352,
+        0.22262618318200111,
+        0.04939912585541606
+      ],
+      "radius": 0.6051951322430557,
+      "fov": 0.72,
+      "fovMode": 0
+    },
+    "framing": {
+      "min": [
+        0.38118486634775894,
+        0.238112542534083
+      ],
+      "max": [
+        0.6302388446579151,
+        0.7475224150487078
+      ],
+      "scope": "Conservative projected actual mesh bounding boxes; whole-piece framing only"
+    },
+    "asset": "mirror-right-v3",
+    "revision": "mirror-right-v3",
+    "config": {
+      "label": "Rétroviseur droit v3 — filet aligné sur le profil",
+      "lot": 8,
+      "review": "mirror-right-v3",
+      "source": "mirrors/mirror-right-v3.blend",
+      "collection": "WEWA_MIRROR_RIGHT",
+      "component_id": "MOTO-MIRROR-RIGHT-001",
+      "files": [
+        "mirrors/mirror-right-v3.glb"
+      ],
+      "readme": "README-right-v3.md",
+      "rigs": [
+        {
+          "id": "yaw",
+          "label": "Orientation latérale estimée",
+          "node": "RH mirror head adjustment PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -10,
+          "max": 10,
+          "initial": 0,
+          "step": 0.1
+        },
+        {
+          "id": "pitch",
+          "label": "Inclinaison estimée",
+          "node": "RH mirror head adjustment PIVOT",
+          "axis": [
+            -0.9755259156227112,
+            0.010137728415429592,
+            -0.21965079009532928
+          ],
+          "min": -7,
+          "max": 7,
+          "initial": 0,
+          "step": 0.1
+        }
+      ],
+      "details": "Filet cosmétique reconstruit sur ses ruptures hélicoïdales ; neuf autres corps, matières et réglages conservés. Profil/pas estimés, aucune qualification OEM ni réception artistique.",
+      "candidate_status": "isolated_candidate_rework_not_accepted"
+    },
+    "files": [
+      "mirrors/mirror-right-v3.glb"
+    ],
+    "meshes": 11,
+    "vertices": 74908,
+    "triangles": 107414,
+    "bounds": {
+      "min": [
+        -0.4049125015735626,
+        0.11400000005960464,
+        -0.00025556329637765884
+      ],
+      "max": [
+        -0.18015116453170776,
+        0.3312523663043976,
+        0.09905381500720978
+      ]
+    },
+    "textures_ready": true,
+    "renderer": {
+      "vendor": "Google Inc. (Google)",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "rig_states": {
+      "yaw": 0,
+      "pitch": 0
+    },
+    "attachments": [],
+    "rigs": [
+      {
+        "id": "yaw",
+        "node": "RH mirror head adjustment PIVOT",
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "world_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -0.24072271585464478,
+          0.23019269108772278,
+          0.08295915275812149,
+          1.0
+        ],
+        "actual_geometry": [
+          {
+            "mesh": "RH continuous mirror edge seal - estimated",
+            "vertex_index": 440,
+            "point_world": [
+              -0.33025026321411133,
+              0.3263198137283325,
+              0.04779974743723869
+            ]
+          },
+          {
+            "mesh": "RH convex mirror glass - finite thickness candidate",
+            "vertex_index": 3353,
+            "point_world": [
+              -0.3293791711330414,
+              0.28535589575767517,
+              0.047337792813777924
+            ]
+          },
+          {
+            "mesh": "RH mirror compound shell and socket - candidate",
+            "vertex_index": 6828,
+            "point_world": [
+              -0.2813866138458252,
+              0.25507161021232605,
+              0.06261781603097916
+            ]
+          },
+          {
+            "mesh": "RH moving hollow upper neck cover - estimated",
+            "vertex_index": 721,
+            "point_world": [
+              -0.2449381947517395,
+              0.24515698850154877,
+              0.08994054049253464
+            ]
+          },
+          {
+            "mesh": "RH rear metallic reflector - original candidate",
+            "vertex_index": 3353,
+            "point_world": [
+              -0.3293971121311188,
+              0.2853488028049469,
+              0.047415509819984436
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pitch",
+        "node": "RH mirror head adjustment PIVOT",
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "world_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          -0.24072271585464478,
+          0.23019269108772278,
+          0.08295915275812149,
+          1.0
+        ],
+        "actual_geometry": [
+          {
+            "mesh": "RH continuous mirror edge seal - estimated",
+            "vertex_index": 440,
+            "point_world": [
+              -0.33025026321411133,
+              0.3263198137283325,
+              0.04779974743723869
+            ]
+          },
+          {
+            "mesh": "RH convex mirror glass - finite thickness candidate",
+            "vertex_index": 3353,
+            "point_world": [
+              -0.3293791711330414,
+              0.28535589575767517,
+              0.047337792813777924
+            ]
+          },
+          {
+            "mesh": "RH mirror compound shell and socket - candidate",
+            "vertex_index": 6828,
+            "point_world": [
+              -0.2813866138458252,
+              0.25507161021232605,
+              0.06261781603097916
+            ]
+          },
+          {
+            "mesh": "RH moving hollow upper neck cover - estimated",
+            "vertex_index": 721,
+            "point_world": [
+              -0.2449381947517395,
+              0.24515698850154877,
+              0.08994054049253464
+            ]
+          },
+          {
+            "mesh": "RH rear metallic reflector - original candidate",
+            "vertex_index": 3353,
+            "point_world": [
+              -0.3293971121311188,
+              0.2853488028049469,
+              0.047415509819984436
+            ]
+          }
+        ]
+      }
+    ],
+    "art_accepted": false,
+    "physical_iphone_tested": false,
+    "public_game_unchanged": true,
+    "pixel_checks": [
+      {
+        "view": "quarter",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 37575,
+        "changed_fraction": 0.0326171875,
+        "rgb_min": [
+          23,
+          26,
+          29
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "driver",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 53279,
+        "changed_fraction": 0.046249131944444445,
+        "rgb_min": [
+          24,
+          28,
+          31
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "reverse",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 13629,
+        "changed_fraction": 0.011830729166666666,
+        "rgb_min": [
+          20,
+          23,
+          27
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "yaw:-10",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 12605,
+        "changed_fraction": 0.010941840277777778,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "yaw:10",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 15174,
+        "changed_fraction": 0.013171875,
+        "rgb_min": [
+          20,
+          23,
+          27
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "yaw:-1010",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 12605,
+        "changed_fraction": 0.010941840277777778,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "yaw:1010",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 15174,
+        "changed_fraction": 0.013171875,
+        "rgb_min": [
+          20,
+          23,
+          27
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "pitch:-7",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 12262,
+        "changed_fraction": 0.010644097222222221,
+        "rgb_min": [
+          20,
+          23,
+          27
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "pitch:7",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 14341,
+        "changed_fraction": 0.012448784722222222,
+        "rgb_min": [
+          20,
+          23,
+          27
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "pitch:-1007",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 12262,
+        "changed_fraction": 0.010644097222222221,
+        "rgb_min": [
+          20,
+          23,
+          27
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "pitch:1007",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 14341,
+        "changed_fraction": 0.012448784722222222,
+        "rgb_min": [
+          20,
+          23,
+          27
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "landscape-844x390",
+        "width": 844,
+        "height": 390,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 10303,
+        "changed_fraction": 0.03130088710657431,
+        "rgb_min": [
+          23,
+          27,
+          32
+        ],
+        "rgb_max": [
+          185,
+          194,
+          205
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      }
+    ],
+    "page_errors": [],
+    "http_failures": [],
+    "pose_checks": [
+      {
+        "rig": "yaw",
+        "states": [
+          {
+            "requested": -10,
+            "rig_states": {
+              "yaw": -10,
+              "pitch": 0
+            },
+            "rig": {
+              "id": "yaw",
+              "node": "RH mirror head adjustment PIVOT",
+              "quaternion": [
+                0,
+                -0.08715574274765817,
+                0,
+                0.9961946980917455
+              ],
+              "world_matrix": [
+                0.9848077297210693,
+                0.0,
+                0.1736481785774231,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.1736481785774231,
+                0.0,
+                0.9848077297210693,
+                0.0,
+                -0.24072271585464478,
+                0.23019269108772278,
+                0.08295915275812149,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "RH continuous mirror edge seal - estimated",
+                  "vertex_index": 440,
+                  "point_world": [
+                    -0.32278477000513717,
+                    0.3263198137283325,
+                    0.0327876020427853
+                  ]
+                },
+                {
+                  "mesh": "RH convex mirror glass - finite thickness candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    -0.3218466942114513,
+                    0.28535589575767517,
+                    0.03248392911207176
+                  ]
+                },
+                {
+                  "mesh": "RH mirror compound shell and socket - candidate",
+                  "vertex_index": 6828,
+                  "point_world": [
+                    -0.2772366010262073,
+                    0.25507161021232605,
+                    0.055865634244886664
+                  ]
+                },
+                {
+                  "mesh": "RH moving hollow upper neck cover - estimated",
+                  "vertex_index": 721,
+                  "point_world": [
+                    -0.2460864575027606,
+                    0.24515698850154877,
+                    0.08910246607938
+                  ]
+                },
+                {
+                  "mesh": "RH rear metallic reflector - original candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    -0.32187785806160907,
+                    0.2853488028049469,
+                    0.03255734999887672
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 10,
+            "rig_states": {
+              "yaw": 10,
+              "pitch": 0
+            },
+            "rig": {
+              "id": "yaw",
+              "node": "RH mirror head adjustment PIVOT",
+              "quaternion": [
+                0,
+                0.08715574274765817,
+                0,
+                0.9961946980917455
+              ],
+              "world_matrix": [
+                0.9848077297210693,
+                0.0,
+                -0.1736481785774231,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.1736481785774231,
+                0.0,
+                0.9848077297210693,
+                0.0,
+                -0.24072271585464478,
+                0.23019269108772278,
+                0.08295915275812149,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "RH continuous mirror edge seal - estimated",
+                  "vertex_index": 440,
+                  "point_world": [
+                    -0.3349955028480507,
+                    0.3263198137283325,
+                    0.06388019244400045
+                  ]
+                },
+                {
+                  "mesh": "RH convex mirror glass - finite thickness candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    -0.3342178622122636,
+                    0.28535589575767517,
+                    0.06327399240678488
+                  ]
+                },
+                {
+                  "mesh": "RH mirror compound shell and socket - candidate",
+                  "vertex_index": 6828,
+                  "point_world": [
+                    -0.2843010726264441,
+                    0.25507161021232605,
+                    0.06998805722320434
+                  ]
+                },
+                {
+                  "mesh": "RH moving hollow upper neck cover - estimated",
+                  "vertex_index": 721,
+                  "point_world": [
+                    -0.2436618464299536,
+                    0.24515698850154877,
+                    0.09056648588226857
+                  ]
+                },
+                {
+                  "mesh": "RH rear metallic reflector - original candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    -0.33422203522927685,
+                    0.2853488028049469,
+                    0.06335364413686584
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": -1010,
+            "rig_states": {
+              "yaw": -10,
+              "pitch": 0
+            },
+            "rig": {
+              "id": "yaw",
+              "node": "RH mirror head adjustment PIVOT",
+              "quaternion": [
+                0,
+                -0.08715574274765817,
+                0,
+                0.9961946980917455
+              ],
+              "world_matrix": [
+                0.9848077297210693,
+                0.0,
+                0.1736481785774231,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.1736481785774231,
+                0.0,
+                0.9848077297210693,
+                0.0,
+                -0.24072271585464478,
+                0.23019269108772278,
+                0.08295915275812149,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "RH continuous mirror edge seal - estimated",
+                  "vertex_index": 440,
+                  "point_world": [
+                    -0.32278477000513717,
+                    0.3263198137283325,
+                    0.0327876020427853
+                  ]
+                },
+                {
+                  "mesh": "RH convex mirror glass - finite thickness candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    -0.3218466942114513,
+                    0.28535589575767517,
+                    0.03248392911207176
+                  ]
+                },
+                {
+                  "mesh": "RH mirror compound shell and socket - candidate",
+                  "vertex_index": 6828,
+                  "point_world": [
+                    -0.2772366010262073,
+                    0.25507161021232605,
+                    0.055865634244886664
+                  ]
+                },
+                {
+                  "mesh": "RH moving hollow upper neck cover - estimated",
+                  "vertex_index": 721,
+                  "point_world": [
+                    -0.2460864575027606,
+                    0.24515698850154877,
+                    0.08910246607938
+                  ]
+                },
+                {
+                  "mesh": "RH rear metallic reflector - original candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    -0.32187785806160907,
+                    0.2853488028049469,
+                    0.03255734999887672
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 1010,
+            "rig_states": {
+              "yaw": 10,
+              "pitch": 0
+            },
+            "rig": {
+              "id": "yaw",
+              "node": "RH mirror head adjustment PIVOT",
+              "quaternion": [
+                0,
+                0.08715574274765817,
+                0,
+                0.9961946980917455
+              ],
+              "world_matrix": [
+                0.9848077297210693,
+                0.0,
+                -0.1736481785774231,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.1736481785774231,
+                0.0,
+                0.9848077297210693,
+                0.0,
+                -0.24072271585464478,
+                0.23019269108772278,
+                0.08295915275812149,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "RH continuous mirror edge seal - estimated",
+                  "vertex_index": 440,
+                  "point_world": [
+                    -0.3349955028480507,
+                    0.3263198137283325,
+                    0.06388019244400045
+                  ]
+                },
+                {
+                  "mesh": "RH convex mirror glass - finite thickness candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    -0.3342178622122636,
+                    0.28535589575767517,
+                    0.06327399240678488
+                  ]
+                },
+                {
+                  "mesh": "RH mirror compound shell and socket - candidate",
+                  "vertex_index": 6828,
+                  "point_world": [
+                    -0.2843010726264441,
+                    0.25507161021232605,
+                    0.06998805722320434
+                  ]
+                },
+                {
+                  "mesh": "RH moving hollow upper neck cover - estimated",
+                  "vertex_index": 721,
+                  "point_world": [
+                    -0.2436618464299536,
+                    0.24515698850154877,
+                    0.09056648588226857
+                  ]
+                },
+                {
+                  "mesh": "RH rear metallic reflector - original candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    -0.33422203522927685,
+                    0.2853488028049469,
+                    0.06335364413686584
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "actual_vertex_travel_m": 0.03340435861409022
+      },
+      {
+        "rig": "pitch",
+        "states": [
+          {
+            "requested": -7,
+            "rig_states": {
+              "yaw": 0,
+              "pitch": -7
+            },
+            "rig": {
+              "id": "pitch",
+              "node": "RH mirror head adjustment PIVOT",
+              "quaternion": [
+                0.059554430784109776,
+                -0.0006188934968882017,
+                0.013409359573043383,
+                0.9981347984218669
+              ],
+              "world_matrix": [
+                0.999639630317688,
+                0.02669498138129711,
+                0.002832651836797595,
+                0.0,
+                -0.02684241160750389,
+                0.9925469160079956,
+                0.11887010186910629,
+                0.0,
+                0.00036169527447782457,
+                -0.11890329420566559,
+                0.9929057955741882,
+                0.0,
+                -0.24072271585464478,
+                0.23019269108772278,
+                0.08295915275812149,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "RH continuous mirror edge seal - estimated",
+                  "vertex_index": 440,
+                  "point_world": [
+                    -0.33281100095707766,
+                    0.3273940024817577,
+                    0.05922221676396322
+                  ]
+                },
+                {
+                  "mesh": "RH convex mirror glass - finite thickness candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    -0.3308408195307641,
+                    0.2868135737457658,
+                    0.05389662173949045
+                  ]
+                },
+                {
+                  "mesh": "RH mirror compound shell and socket - candidate",
+                  "vertex_index": 6828,
+                  "point_world": [
+                    -0.28204712733613185,
+                    0.25621931485138283,
+                    0.06560429544610119
+                  ]
+                },
+                {
+                  "mesh": "RH moving hollow upper neck cover - estimated",
+                  "vertex_index": 721,
+                  "point_world": [
+                    -0.24533582829003892,
+                    0.24410281557290658,
+                    0.09165788050339775
+                  ]
+                },
+                {
+                  "mesh": "RH rear metallic reflector - original candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    -0.3308585355616192,
+                    0.2867968139147466,
+                    0.053972893444753034
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 7,
+            "rig_states": {
+              "yaw": 0,
+              "pitch": 7
+            },
+            "rig": {
+              "id": "pitch",
+              "node": "RH mirror head adjustment PIVOT",
+              "quaternion": [
+                -0.059554430784109776,
+                0.0006188934968882017,
+                -0.013409359573043383,
+                0.9981347984218669
+              ],
+              "world_matrix": [
+                0.999639630317688,
+                -0.02684241160750389,
+                0.00036169527447782457,
+                0.0,
+                0.02669498138129711,
+                0.9925469160079956,
+                -0.11890329420566559,
+                0.0,
+                0.002832651836797595,
+                0.11887010186910629,
+                0.9929057955741882,
+                0.0,
+                -0.24072271585464478,
+                0.23019269108772278,
+                0.08295915275812149,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "RH continuous mirror edge seal - estimated",
+                  "vertex_index": 440,
+                  "point_world": [
+                    -0.32775148292921585,
+                    0.323827103700278,
+                    0.03658696258806833
+                  ]
+                },
+                {
+                  "mesh": "RH convex mirror glass - finite thickness candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    -0.3279755443474668,
+                    0.28309019844555977,
+                    0.04099934502531302
+                  ]
+                },
+                {
+                  "mesh": "RH mirror compound shell and socket - candidate",
+                  "vertex_index": 6828,
+                  "point_world": [
+                    -0.28076543757582,
+                    0.25355972616360883,
+                    0.0597892286293682
+                  ]
+                },
+                {
+                  "mesh": "RH moving hollow upper neck cover - estimated",
+                  "vertex_index": 721,
+                  "point_world": [
+                    -0.24451742826328346,
+                    0.2459884905335113,
+                    0.08811018450128623
+                  ]
+                },
+                {
+                  "mesh": "RH rear metallic reflector - original candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    -0.32799344808117303,
+                    0.2830928781653037,
+                    0.041077347577460954
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": -1007,
+            "rig_states": {
+              "yaw": 0,
+              "pitch": -7
+            },
+            "rig": {
+              "id": "pitch",
+              "node": "RH mirror head adjustment PIVOT",
+              "quaternion": [
+                0.059554430784109776,
+                -0.0006188934968882017,
+                0.013409359573043383,
+                0.9981347984218669
+              ],
+              "world_matrix": [
+                0.999639630317688,
+                0.02669498138129711,
+                0.002832651836797595,
+                0.0,
+                -0.02684241160750389,
+                0.9925469160079956,
+                0.11887010186910629,
+                0.0,
+                0.00036169527447782457,
+                -0.11890329420566559,
+                0.9929057955741882,
+                0.0,
+                -0.24072271585464478,
+                0.23019269108772278,
+                0.08295915275812149,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "RH continuous mirror edge seal - estimated",
+                  "vertex_index": 440,
+                  "point_world": [
+                    -0.33281100095707766,
+                    0.3273940024817577,
+                    0.05922221676396322
+                  ]
+                },
+                {
+                  "mesh": "RH convex mirror glass - finite thickness candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    -0.3308408195307641,
+                    0.2868135737457658,
+                    0.05389662173949045
+                  ]
+                },
+                {
+                  "mesh": "RH mirror compound shell and socket - candidate",
+                  "vertex_index": 6828,
+                  "point_world": [
+                    -0.28204712733613185,
+                    0.25621931485138283,
+                    0.06560429544610119
+                  ]
+                },
+                {
+                  "mesh": "RH moving hollow upper neck cover - estimated",
+                  "vertex_index": 721,
+                  "point_world": [
+                    -0.24533582829003892,
+                    0.24410281557290658,
+                    0.09165788050339775
+                  ]
+                },
+                {
+                  "mesh": "RH rear metallic reflector - original candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    -0.3308585355616192,
+                    0.2867968139147466,
+                    0.053972893444753034
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 1007,
+            "rig_states": {
+              "yaw": 0,
+              "pitch": 7
+            },
+            "rig": {
+              "id": "pitch",
+              "node": "RH mirror head adjustment PIVOT",
+              "quaternion": [
+                -0.059554430784109776,
+                0.0006188934968882017,
+                -0.013409359573043383,
+                0.9981347984218669
+              ],
+              "world_matrix": [
+                0.999639630317688,
+                -0.02684241160750389,
+                0.00036169527447782457,
+                0.0,
+                0.02669498138129711,
+                0.9925469160079956,
+                -0.11890329420566559,
+                0.0,
+                0.002832651836797595,
+                0.11887010186910629,
+                0.9929057955741882,
+                0.0,
+                -0.24072271585464478,
+                0.23019269108772278,
+                0.08295915275812149,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "RH continuous mirror edge seal - estimated",
+                  "vertex_index": 440,
+                  "point_world": [
+                    -0.32775148292921585,
+                    0.323827103700278,
+                    0.03658696258806833
+                  ]
+                },
+                {
+                  "mesh": "RH convex mirror glass - finite thickness candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    -0.3279755443474668,
+                    0.28309019844555977,
+                    0.04099934502531302
+                  ]
+                },
+                {
+                  "mesh": "RH mirror compound shell and socket - candidate",
+                  "vertex_index": 6828,
+                  "point_world": [
+                    -0.28076543757582,
+                    0.25355972616360883,
+                    0.0597892286293682
+                  ]
+                },
+                {
+                  "mesh": "RH moving hollow upper neck cover - estimated",
+                  "vertex_index": 721,
+                  "point_world": [
+                    -0.24451742826328346,
+                    0.2459884905335113,
+                    0.08811018450128623
+                  ]
+                },
+                {
+                  "mesh": "RH rear metallic reflector - original candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    -0.32799344808117303,
+                    0.2830928781653037,
+                    0.041077347577460954
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "actual_vertex_travel_m": 0.023466491454815885
+      }
+    ],
+    "scope": "Actual Babylon imports and vertex motion in Chromium softwareWebGL; not Safari/iPhone/FPS qualification",
+    "render_mode": "Manual frames after scene readiness",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/mirrors/mirror-right-v3.glb",
+        "sha256": "ca5ee9189efcbae7f663ad6e398661c638570a0b31019af14bafbff27e28210e"
+      }
+    ],
+    "inspector_sha256": "19e4908f4a7b69b492710adfb7d28a5508745721f9c991941a5ed439f3a9fb07",
+    "capture_tool_sha256": "53b07b0e9bda4b86c9d7f05c10815755b3be50dcc85e29a4b3f164cbc38fcf28",
+    "inspector_path": "tools/motorcycle-lab/review-v2.js",
+    "capture_tool_path": "tools/capture_motorcycle18_v3.py",
+    "inputs_unchanged_during_capture": true
+  },
+  "render_report": {
+    "source_sha256": "4be6e74518d7e0a6baccfc66c136cba148882183bf1d6020ac329ed9c0c32c60",
+    "export_sha256": "ca5ee9189efcbae7f663ad6e398661c638570a0b31019af14bafbff27e28210e",
+    "renderer": "Blender4.3.2 Cycles/OpenImageDenoise CPU",
+    "samples": 96,
+    "resolution_px": [
+      1000,
+      800
+    ],
+    "views": [
+      {
+        "name": "whole-front",
+        "camera_location_m": [
+          -0.23176753520965576,
+          0.6741977334022522,
+          0.2960229516029358
+        ],
+        "camera_target_m": [
+          -0.2925318479537964,
+          -0.04939912632107735,
+          0.22262617945671082
+        ],
+        "lens_mm": 70,
+        "PNG_path": "creative/reviews/mirror-right-v3/whole-front.png",
+        "PNG_sha256": "3a41594453ae18c29c60b1af1fc4c2cd445b77843e2050854c86f2f29255e025",
+        "EXR_private_path": "/workspace/wewa-assets/renders/mirrors/mirror-right-v3/whole-front.exr",
+        "EXR_sha256": "fafc7cb31c8060c47c03935db8d1848080a04dea2c2ab3307af85904a44999c5",
+        "actually_saved": true,
+        "checkpoint_config_sha256": "e9bdc4cb1cca4cff06633bbb9433c87e62eb7d8e1d39c8bd68178d535ab62cb3",
+        "visual_read_by_agent": true
+      },
+      {
+        "name": "base-close",
+        "camera_location_m": [
+          -0.19688835740089417,
+          0.13696999847888947,
+          0.1867022067308426
+        ],
+        "camera_target_m": [
+          -0.1886511594057083,
+          -0.008244437165558338,
+          0.1379999965429306
+        ],
+        "lens_mm": 75,
+        "PNG_path": "creative/reviews/mirror-right-v3/base-close.png",
+        "PNG_sha256": "1f1fac82d3db41dd84e8f0074394787d628cecd3e85d68ac4c433a824c4074ce",
+        "EXR_private_path": "/workspace/wewa-assets/renders/mirrors/mirror-right-v3/base-close.exr",
+        "EXR_sha256": "bfe681eafaaaaca3eba81d4c1eeb153e00ec666c75625488c6889e99c8fc5a20",
+        "actually_saved": true,
+        "checkpoint_config_sha256": "72459bc53361b0b767b3788e4a219e95b0d932d23e90be9f6f5e88af3ce5418c",
+        "visual_read_by_agent": true
+      }
+    ],
+    "derived_from": "creative/reviews/mirror-right-v3/render-checkpoints.json",
+    "visual_reading_by_agent": "creative/reviews/mirror-right-v3/visual-reading.json",
+    "scope": "Only fixed cosmetic stud sampling changed; nine body buffers, matrices, rig and materials unchanged. No physical thread qualification.",
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true
+}

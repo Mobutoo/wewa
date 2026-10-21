@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-INSTRUMENTS-001",
-  "label": "Compteurs v2 — USB et graphismes repris",
+  "label": "Compteurs v3 — normales de vitre corrigées",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -75,10 +75,10 @@
         0.08008740842342377
       ],
       "lens_mm": 70,
-      "PNG_path": "creative/reviews/instruments-v2/whole-front.png",
-      "PNG_sha256": "3087f0cc396c2db6779fd27b3aa102717079a2136c499eb9aced647ecdbcb97b",
-      "EXR_private_path": "/workspace/wewa-assets/renders/instruments-v2/whole-front.exr",
-      "EXR_sha256": "ab019870d40475979d9b2289b8b6fc1ab0996b2b7fd4c625d5dc933467420b43",
+      "PNG_path": "creative/reviews/instruments-v3/whole-front.png",
+      "PNG_sha256": "6eacb67a31daebfc12a6936fd1ec489b4ce2d87d804a2787320c8e9d6b3ee2e2",
+      "EXR_private_path": "/workspace/wewa-assets/renders/instruments-v3/whole-front.exr",
+      "EXR_sha256": "5a8fed2e8a32559ba2167180828c6f01c91680df46166faccee787cde5b8e5e5",
       "actually_saved": true,
       "checkpoint_config_sha256": "2f787980908573a5bb00af7341199876f9942d0dbca515607738c466518759ea",
       "visual_read_by_agent": true
@@ -96,10 +96,10 @@
         0.085
       ],
       "lens_mm": 70,
-      "PNG_path": "creative/reviews/instruments-v2/driver-42.png",
-      "PNG_sha256": "029f196eb55a325e991c315ac6942a3a581d044329dac317643ea03896ee7644",
-      "EXR_private_path": "/workspace/wewa-assets/renders/instruments-v2/driver-42.exr",
-      "EXR_sha256": "eff5261a54cb820b4b4c6d83ca0b23ed78a99ea44ecff60e45a36adf6a6f68a3",
+      "PNG_path": "creative/reviews/instruments-v3/driver-42.png",
+      "PNG_sha256": "120520f869e3ff9ffab3772b3964b636ccf959b3526dea7f2b30c1d35649b4ba",
+      "EXR_private_path": "/workspace/wewa-assets/renders/instruments-v3/driver-42.exr",
+      "EXR_sha256": "fb87bd573ffed4aebd4e03e6701dfd7267dd6bedc35c3ca1f53decd5514291d5",
       "actually_saved": true,
       "checkpoint_config_sha256": "854b3cc00c27e65fa3c66b3171cf509918a50b477acc9c650d003a3e67619e76",
       "visual_read_by_agent": true
@@ -138,7 +138,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": "instruments-v2",
+      "revision": "instruments-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -146,7 +146,7 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": "instruments-v2",
+      "revision": "instruments-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -154,7 +154,7 @@
     },
     "G2": {
       "status": "blocked",
-      "revision": "instruments-v2",
+      "revision": "instruments-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -162,35 +162,35 @@
     },
     "G3": {
       "status": "rework",
-      "revision": "instruments-v2",
+      "revision": "instruments-v3",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../../assets-src/moto-components/instruments/instruments-v2.blend",
+          "path": "../../../assets-src/moto-components/instruments/instruments-v3.blend",
           "kind": "editable_source",
-          "revision": "instruments-v2",
-          "sha256": "dc4b3ccf26f35e3b4a4f10068306d841695901f987a43ebad65299cec132ad22"
+          "revision": "instruments-v3",
+          "sha256": "2ac37623a2e8df558373233228a6b936b143b6ff282e8ab6e70f08e27675e7da"
         },
         {
-          "path": "../../reviews/instruments-v2/whole-front.png",
+          "path": "../../reviews/instruments-v3/whole-front.png",
           "kind": "isolated_comparison",
-          "revision": "instruments-v2",
-          "sha256": "3087f0cc396c2db6779fd27b3aa102717079a2136c499eb9aced647ecdbcb97b"
+          "revision": "instruments-v3",
+          "sha256": "6eacb67a31daebfc12a6936fd1ec489b4ce2d87d804a2787320c8e9d6b3ee2e2"
         }
       ],
-      "reason": "V2 source/USB/artwork and two actual96 views retained. Glass face-to-side smoothing creates segmented reflections; controlled fixed-geometry witnesses isolate this optical-normal defect. Separate v3 frozen correction is awaiting final views, no artistic acceptance.",
+      "reason": "Deux vitres : séparation des normales face/tranche corrige les reflets segmentés dans les témoins et deux finales studio. Géométrie physique, profils, graduations, pivots et 173 autres nœuds conservés. Fidélité des dimensions/profils encore à revoir sur références attribuées.",
       "reviewed_at": null
     },
     "G4": {
       "status": "rework",
-      "revision": "instruments-v2",
+      "revision": "instruments-v3",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/instruments-v2/driver-42.png",
+          "path": "../../reviews/instruments-v3/driver-42.png",
           "kind": "surface_or_sound_comparison",
-          "revision": "instruments-v2",
-          "sha256": "029f196eb55a325e991c315ac6942a3a581d044329dac317643ea03896ee7644"
+          "revision": "instruments-v3",
+          "sha256": "120520f869e3ff9ffab3772b3964b636ccf959b3526dea7f2b30c1d35649b4ba"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -198,35 +198,35 @@
     },
     "G5": {
       "status": "rework",
-      "revision": "instruments-v2",
+      "revision": "instruments-v3",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/instruments-v2/source-geometry-check.json",
+          "path": "../../reviews/instruments-v3/source-geometry-check.json",
           "kind": "motion_or_interface_check",
-          "revision": "instruments-v2",
-          "sha256": "4fbab8f3fa1e962a470b683bddbf30bf8ac6df53f8133ed251fd18b6cf6143ca"
+          "revision": "instruments-v3",
+          "sha256": "c3bc0a69a09d9a3fe596563ea1013220bfd65bbe2dc59df7699a524197cde486"
         }
       ],
-      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reason": "Deux aiguilles exercées dans Babylon, mais calibration angulaire, cotes et fit visière/support estimés. Démonstration LCD1–5 non preuve du nombre de rapports de la version RDC.",
       "reviewed_at": null
     },
     "G6": {
       "status": "rework",
-      "revision": "instruments-v2",
+      "revision": "instruments-v3",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/instruments-v2/export-buffer-check.json",
+          "path": "../../reviews/instruments-v3/export-buffer-check.json",
           "kind": "technical_export_check",
-          "revision": "instruments-v2",
-          "sha256": "4bea0f188830a197afdcde70559d205e5d4fc6b7c8149115cb25ecde7eba39a1"
+          "revision": "instruments-v3",
+          "sha256": "cee6eb4068bbcada21a33134f2343d640305353337eb1e413ed16e6208f3dd68"
         },
         {
-          "path": "../../reviews/instruments-v2/inspection-v3/engine-driver.png",
+          "path": "../../reviews/instruments-v3/inspection-v3/engine-driver.png",
           "kind": "real_runtime_comparison",
-          "revision": "instruments-v2",
-          "sha256": "e8c08a3e356057d3daf16df31e1620c336bdaa2654a5d7b69fe37776cb138a93"
+          "revision": "instruments-v3",
+          "sha256": "964dfdbbcd48bceb06e371edf3bd91ac11f6234c42c4e853fb0f76d757caec04"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -234,7 +234,7 @@
     },
     "G7": {
       "status": "pending",
-      "revision": "instruments-v2",
+      "revision": "instruments-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
@@ -242,7 +242,7 @@
     },
     "G8": {
       "status": "pending",
-      "revision": "instruments-v2",
+      "revision": "instruments-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -250,19 +250,24 @@
     }
   },
   "active_detailed_fabrication": false,
-  "source_revision": "instruments-v2",
-  "export_revision": "instruments-v2-inspection",
-  "next_action": "Complete source-specific final v3 views and source/export/runtime checks, replace v2 under same ID only with its own proofs. Preserve v2 optical diagnostic and conditional dial/gear calibration limits.",
+  "source_revision": "instruments-v3",
+  "export_revision": "instruments-v3-inspection",
+  "next_action": "Revoir les deux rendus et raccorder au support/visière avec interfaces conservées ouvertes ; aucune réception artistique ou qualification iPhone.",
   "art_accepted": false,
-  "candidate_source": "../../../assets-src/moto-components/instruments/README_v2.md",
-  "candidate_review": "../../reviews/instruments-v2/README.md",
+  "candidate_source": "../../../assets-src/moto-components/instruments/README_v3.md",
+  "candidate_review": "../../reviews/instruments-v3/README.md",
   "graphic_style": "../../GRAPHIC_STYLE.md",
-  "pending_revision": "instruments-v3",
   "previous_revisions": [
     {
       "revision": "instruments-v1",
       "source": "../../../assets-src/moto-components/instruments/README.md",
       "review": "../../reviews/instruments-v1/README.md",
+      "art_accepted": false
+    },
+    {
+      "revision": "instruments-v2",
+      "source": "../../../assets-src/moto-components/instruments/README_v2.md",
+      "review": "../../reviews/instruments-v2/README.md",
       "art_accepted": false
     }
   ],

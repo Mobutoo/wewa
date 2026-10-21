@@ -1,0 +1,133 @@
+{
+  "component_id": "MOTO-ENGINE-CYLINDER-001",
+  "revision": "engine-cylinder-v1",
+  "source_sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6",
+  "export_sha256": "1c295882865c152f6813aa849431911447dcc05076447d060abb28236903625e",
+  "collection": "WEWA_ENGINE_CYLINDER",
+  "parent_datum": "Engine cylinder base provisional datum",
+  "geometry": [
+    {
+      "name": "Engine cylinder finned hollow casting - editable candidate",
+      "vertices": 34902,
+      "faces": 69832,
+      "connected_shells": 1,
+      "non_manifold_edges": 0,
+      "signed_volume_m3": 0.0005177586746774094
+    }
+  ],
+  "cleanup": [
+    {
+      "name": "Engine cylinder finned hollow casting - editable candidate",
+      "before_vertices_faces": [
+        34909,
+        69846
+      ],
+      "after_vertices_faces": [
+        34902,
+        69832
+      ],
+      "weld_distance_m": 1e-07,
+      "degenerate_distance_m": 1e-09,
+      "retained_vertex_to_original_vertex_max_m": 0.0,
+      "old_vertices_to_clean_surface_max_m": 1.862645149230957e-09,
+      "clean_vertices_to_old_surface_max_m": 0.0,
+      "volume_before_m3": 0.0005177586746799673,
+      "volume_after_m3": 0.0005177586746774094,
+      "volume_relative_delta": 4.940235461837195e-12,
+      "area_relative_delta": 1.5059352595757302e-09,
+      "non_manifold_edges_after": 0,
+      "zero_area_triangles_after": 0,
+      "tangents_repaired": false
+    }
+  ],
+  "actual_passage_probes": [
+    {
+      "name": "centre bore",
+      "local_xy_m": [
+        0,
+        0
+      ],
+      "through_clear": true
+    },
+    {
+      "name": "stud1",
+      "local_xy_m": [
+        -0.036,
+        -0.033
+      ],
+      "through_clear": true
+    },
+    {
+      "name": "stud2",
+      "local_xy_m": [
+        -0.036,
+        0.033
+      ],
+      "through_clear": true
+    },
+    {
+      "name": "stud3",
+      "local_xy_m": [
+        0.036,
+        -0.033
+      ],
+      "through_clear": true
+    },
+    {
+      "name": "stud4",
+      "local_xy_m": [
+        0.036,
+        0.033
+      ],
+      "through_clear": true
+    },
+    {
+      "name": "timing well",
+      "local_xy_m": [
+        0.05,
+        0.003
+      ],
+      "through_clear": true
+    }
+  ],
+  "estimated_guide_surface_tests": [
+    {
+      "guide": "RH clutch cover hollow casting - editable candidate",
+      "surface_crossings": 0,
+      "fit_certified": false
+    },
+    {
+      "guide": "LH magneto cover hollow casting - editable candidate",
+      "surface_crossings": 0,
+      "fit_certified": false
+    }
+  ],
+  "linked_immutable_sources": [
+    {
+      "source": "assets-src/moto-components/engine-cover-right/engine-cover-right-v2.blend",
+      "sha256": "2558ea2479a02caf14e9feddad3f953f5587269083ae7b125a177acd4621515a"
+    },
+    {
+      "source": "assets-src/moto-components/engine-cover-left/engine-cover-left-v2.blend",
+      "sha256": "f168aa9ef3e3c6e9b7bc2e884309d69da6fab736660ec6c8d1eaa29e7ecffe74"
+    }
+  ],
+  "machined_interface_face_count": 2802,
+  "pressed_liner_manufactured": false,
+  "fin_count_estimated": 5,
+  "boundaries_world_m": {
+    "min": [
+      -0.06353147327899933,
+      0.047962769865989685,
+      -0.5589518547058105
+    ],
+    "max": [
+      0.06706783175468445,
+      0.1870197057723999,
+      -0.44882914423942566
+    ]
+  },
+  "all_dimensions_estimated": true,
+  "current_RDC_identity_certified": false,
+  "art_accepted": false
+}

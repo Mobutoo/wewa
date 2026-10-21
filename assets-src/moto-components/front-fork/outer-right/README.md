@@ -17,3 +17,5 @@ Le col48mm et l’ouverture40,6mm du soufflet figé sont incompatibles à ce sta
 `material.py` crée un grain original, semence121019, période10mm en projection dominante, RMS≈2µm et rugosité≈.30–.44 estimés ; aucune composition chimique ni réflectance mesurée. Les alésages et le siège intérieur restent plus lisses. Les attributs POSITION/NORMAL/UV/TANGENT et matrices doivent rester identiques entre G3 et G4, indépendamment des groupes matière.
 
 `render.py` enregistre des checkpoints par vue96samples/OIDN, source/export/caméra/config/PNG hachés ; les vues incomplètes ne sont pas des preuves. Les contrôles Babylon et la réception utilisateur restent séparés, pilotés par le registre central. Ce candidat ne constitue ni une fourche complète, ni un composant reçu, ni une optimisation mobile.
+
+Références attribuées : [Matriz — fourreau droit PF121019](https://bajajmatriz.com/producto/base-soporte-barra-suspension-derecha-moto-boxer-150-bajaj), [catalogue fournisseur Endurance](https://airavatautospares.in/pdf/endurance.pdf), feuille3 ligne32PF121019↔550BF17707. Images consultées en privé ; variante apparentée, pas cote ni identité RDC certifiée.

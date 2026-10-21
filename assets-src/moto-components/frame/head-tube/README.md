@@ -1,0 +1,11 @@
+# Colonne de cadre — enveloppe apparentéePF111000
+
+Une pièce isolée originale, pas le cadre complet. Les deux photos nues MotoZilla/Bikebox et les éclatés D04/D15 attestent le tube, ses lèvres externes et ses liaisons aux autres membres. Les pattes, soudures et longerons seront fabriqués séparément ; aucune attribution courante125HD RDC certifiée.
+
+Local+Z axe, origine centre ouverture basse, aucune inclinaison/pose installée validée. Toutes les cotes sont estimées : longueur150mm(plage130–180), diamètre central44mm(40–50), lèvres48mm(44–56), alésageenveloppe41mm(36–45). Cet alésage droit ne décrit aucun vrai siège de roulement ; épaisseur et section interne sont une enveloppe de travail. Les cônes, cages, cuvettes et écrous restent absents.
+
+`build.py` génère une surface creuse continue avec transitions Bézier, lèvres arrondies, deux passages ouverts et normales analytiques fraîches. Les sommets/triangles, volume et connectivité sont contrôlés dans la source et les véritables buffersGLB. Le gris/revers et un reflet natif précèdent la matière. `material.py` produit deux cartes originales512², périodeUV10mm projetée aux lèvres/14répétitions circonférentielles(≈9–11mm suivant rayon). Couche sombre non métallique et grain/roughness sont estimés, sans pixels de photo ni formule chimique prétendue mesurée ; intérieur plus lisse, toujours non documenté.
+
+`render.py` hache source/export/caméra/config et PNG pour chaque finale96samples/OIDN. Les contrôles moteur et la réception utilisateur restent séparés ; aucune qualification de roulement, rigidité, soudure ou sécurité mécanique. La caméra ne transforme pas un diamètre estimé en cote fabricant.
+
+Photos attribuées à comparer : [MotoZilla — cadre PF111000 déposé](https://motozilla.com.ua/product/boxer-bm-vmx-150cc-rama-pf111000-c-razborki-novyy-bajaj-358153/) et [photo MotoZilla](https://motozilla.com.ua/wa-data/public/shop/products/60/77/227760/images/991893/991893.750x0.jpg) ; [Bikebox — cadre PF111000](https://bikeboxmt.com/shop/genuine-bajaj-boxer-frame-assy-bs/) et [photo fournisseur publiée par Bikebox](https://bikeboxmt.com/wp-content/uploads/2026/02/BOXER-FRAME-ASSY-GENUINE.webp). Variantes apparentées, aucune calibration métrique ni réutilisation des pixels.

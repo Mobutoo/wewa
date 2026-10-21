@@ -1,0 +1,1801 @@
+{
+  "component_id": "MOTO-MIRROR-LEFT-001",
+  "revision": "mirror-left-v2",
+  "source_sha256": "7725731e869b6edeea744965054518659eeb6355f6acc670718738a8144b1a30",
+  "source_check": {
+    "component_id": "MOTO-MIRROR-LEFT-001",
+    "phase": "full v2 candidate; LH cosmetic stud mesh phase alignment only",
+    "source_sha256": "7725731e869b6edeea744965054518659eeb6355f6acc670718738a8144b1a30",
+    "export_sha256": "be1b5bcf2438cee25fb097f7bca96a6a8ae231d26500717638046af4becabcea",
+    "geometry": [
+      {
+        "object": "LH mirror compound shell and socket - candidate",
+        "vertices": 10766,
+        "faces": 21532,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 5.903012718685152e-05,
+        "triangles": 21532,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 1.6759175698686374e-13
+      },
+      {
+        "object": "LH convex mirror glass - finite thickness candidate",
+        "vertices": 6482,
+        "faces": 6588,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 2.5363720435006137e-05,
+        "triangles": 12960,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 6.404566477158369e-08
+      },
+      {
+        "object": "LH rear metallic reflector - original candidate",
+        "vertices": 6482,
+        "faces": 6588,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 6.064581119705456e-07,
+        "triangles": 12960,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 4.345865534105542e-08
+      },
+      {
+        "object": "LH continuous mirror edge seal - estimated",
+        "vertices": 432,
+        "faces": 432,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 7.628307907969642e-08,
+        "triangles": 864,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 2.957176263862493e-07
+      },
+      {
+        "object": "LH continuous steel stem ball and cosmetic stud - candidate",
+        "vertices": 25145,
+        "faces": 50286,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 1.1321979031637155e-05,
+        "triangles": 50286,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 1.0361888430621136e-11
+      },
+      {
+        "object": "LH mirror base washer - estimated",
+        "vertices": 384,
+        "faces": 384,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 1.0469757632465465e-07,
+        "triangles": 768,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 1.406896785738354e-07
+      },
+      {
+        "object": "LH mirror base hex nut - estimated thread-free bore",
+        "vertices": 576,
+        "faces": 576,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 6.621867663213102e-07,
+        "triangles": 1152,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 1.3770791440492758e-07
+      },
+      {
+        "object": "LH hollow mirror mounting cover - estimated",
+        "vertices": 960,
+        "faces": 960,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 1.8868785536286023e-06,
+        "triangles": 1920,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 5.828507454452847e-08
+      },
+      {
+        "object": "LH fixed hollow lower neck cover - estimated",
+        "vertices": 1344,
+        "faces": 1344,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 3.433239769171074e-06,
+        "triangles": 2688,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 1.1444789294046132e-07
+      },
+      {
+        "object": "LH moving hollow upper neck cover - estimated",
+        "vertices": 768,
+        "faces": 768,
+        "components": 1,
+        "non_manifold_edges": 0,
+        "volume_m3": 2.7390807670547386e-06,
+        "triangles": 1536,
+        "exact_zero_area_triangles": 0,
+        "minimum_triangle_area_m2": 1.276672350059016e-07
+      }
+    ],
+    "CSG": [
+      {
+        "stages": [
+          {
+            "operation": "features",
+            "part": "LH integral socket outside construction",
+            "before_volume_m3": 4.357888913892893e-05,
+            "after_volume_m3": 6.371189298842775e-05
+          },
+          {
+            "operation": "drills",
+            "part": "LH curved neck working bore construction",
+            "before_volume_m3": 6.371189298842775e-05,
+            "after_volume_m3": 5.941230168739763e-05
+          },
+          {
+            "operation": "drills",
+            "part": "LH spherical socket clearance construction",
+            "before_volume_m3": 5.941230168739763e-05,
+            "after_volume_m3": 5.903013110070846e-05
+          }
+        ],
+        "solid_components": 1,
+        "volume_m3": 5.903013110070846e-05,
+        "worker": "manifold3d",
+        "worker_version": "3.3.2"
+      },
+      {
+        "stages": [
+          {
+            "operation": "features",
+            "part": "LH cosmetic helical stud construction - thread unknown",
+            "before_volume_m3": 8.84198051942111e-06,
+            "after_volume_m3": 9.94872433903816e-06
+          },
+          {
+            "operation": "features",
+            "part": "LH estimated steel articulation ball construction",
+            "before_volume_m3": 9.94872433903816e-06,
+            "after_volume_m3": 1.132066092698389e-05
+          }
+        ],
+        "solid_components": 1,
+        "volume_m3": 1.132066092698389e-05,
+        "worker": "manifold3d",
+        "worker_version": "3.3.2"
+      }
+    ],
+    "head_frame_world": {
+      "centre_m": [
+        0.32899999618530273,
+        -0.04500000178813934,
+        0.2840000092983246
+      ],
+      "outward_U": [
+        0.9755259156227112,
+        0.21965079009532928,
+        0.010137728415429592
+      ],
+      "up_V": [
+        9.313225746154785e-10,
+        -0.04610477015376091,
+        0.998936653137207
+      ],
+      "normal_toward_rider_N": [
+        -0.21988458931446075,
+        0.9744885563850403,
+        0.04497639462351799
+      ],
+      "left_positive_X": true
+    },
+    "mount_boss_world_m": [
+      0.1886511594057083,
+      -0.008244437165558338,
+      0.11800000071525574
+    ],
+    "ball_world_m": [
+      0.24072271585464478,
+      -0.08295915275812149,
+      0.23019269108772278
+    ],
+    "linked_mount_source_path": "assets-src/moto-components/clutch-control/clutch-control-v2.blend",
+    "linked_mount_source_sha256": "586b41d08fd0cb8a9caad66e7cbe83af1592aad42e6def823135f99b6f200059",
+    "all_dimensions_estimated": true,
+    "exact_current_RDC_identity_confirmed": false,
+    "art_accepted": false,
+    "prior_source_sha256": "bdd8a799b6a5ae07a5c076ba0c5a1019f6477ff9a4be5995229e13c2def3c6d0",
+    "prior_export_sha256": "fb796f4bbe842b7080ba5310aeab653a5fbc72d647f3a2c113309e27f256f8fa",
+    "new_stud_closed_geometry": {
+      "object": "LH phase-aligned cosmetic stud construction v2 - estimated",
+      "vertices": 16422,
+      "faces": 16569,
+      "components": 1,
+      "non_manifold_edges": 0,
+      "volume_m3": 1.1931278265031183e-06,
+      "triangles": 32840,
+      "exact_zero_area_triangles": 0,
+      "minimum_triangle_area_m2": 1.0784283882570023e-10
+    },
+    "change": {
+      "only_changed_body": "LH continuous steel stem ball and cosmetic stud - candidate",
+      "sampling_method": {
+        "sectors": 144,
+        "helical_phase_boundaries": [
+          0,
+          0.15,
+          0.45,
+          0.65,
+          0.95
+        ],
+        "axial_range_q_m": [
+          -0.004,
+          0.024
+        ],
+        "pitch_estimated_m": 0.00125,
+        "major_diameter_estimated_m": 0.008,
+        "root_diameter_estimated_m": 0.0067,
+        "cap_boundary_vertices": [
+          148,
+          147
+        ],
+        "profile": "Exact old piecewise radial equation, mesh crease curves aligned in parameter domain; angular facets reduced, no added bevel or crease radius."
+      },
+      "retained_original_rod_and_ball_objects": [
+        "LH continuous bent rod construction",
+        "LH estimated steel articulation ball construction"
+      ],
+      "profile_and_dimensions_changed": false,
+      "nine_other_source_bodies_or_transforms_edited": false,
+      "materials_and_images_edited": false,
+      "normals": "Intentional sharp slope boundaries derived from source mesh at existing threshold0.65rad; smooth within each patch. No global bevel.",
+      "limits": "Diameter, pitch, hand, crest/root form and mating fit remain estimated cosmetic geometry, not OEM qualification."
+    },
+    "CSG_v2": {
+      "stages": [
+        {
+          "operation": "features",
+          "part": "LH phase-aligned cosmetic stud construction v2 - estimated",
+          "before_volume_m3": 8.84198051942111e-06,
+          "after_volume_m3": 9.950042446940488e-06
+        },
+        {
+          "operation": "features",
+          "part": "LH estimated steel articulation ball construction",
+          "before_volume_m3": 9.950042446940488e-06,
+          "after_volume_m3": 1.132197903488622e-05
+        }
+      ],
+      "solid_components": 1,
+      "volume_m3": 1.132197903488622e-05,
+      "worker": "manifold3d",
+      "worker_version": "3.3.2"
+    }
+  },
+  "export_check": {
+    "asset": "mirror-left-v2",
+    "revision": "mirror-left-v2",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/mirrors/mirror-left-v2.glb",
+        "sha256": "be1b5bcf2438cee25fb097f7bca96a6a8ae231d26500717638046af4becabcea",
+        "bytes": 4240780,
+        "glTF_errors": 0,
+        "glTF_warnings": 0,
+        "messages": [
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/0/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/1/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/1/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/1/primitives/0/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/1/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/2/primitives/0/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/2/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/5/primitives/0/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/5/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/6/primitives/0/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/6/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/9/primitives/0/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/9/primitives/0/attributes/TEXCOORD_0"
+          }
+        ],
+        "bounds": {
+          "min": [
+            0.18015116453170776,
+            0.11400000005960464,
+            -0.00025556329637765884
+          ],
+          "max": [
+            0.4056043028831482,
+            0.33151280879974365,
+            0.09905381500720978
+          ]
+        },
+        "vertices": 74075,
+        "triangles": 106666,
+        "triangle_area_local_m2": {
+          "minimum": 1.6759176023880623e-13,
+          "exactly_zero": 0,
+          "below_1e_minus18": 0,
+          "note": "Local exported coordinates; not a self-intersection or surface-fidelity proof"
+        },
+        "tangent_frame": {
+          "vectors": 74075,
+          "max_unit_error": 6.9933203934891e-05,
+          "max_normal_dot": 0.00013082162436006683,
+          "handedness_sign_is_unit": true,
+          "note": "Finite orthonormal frame only; not full MikkTSpace or renderer visual parity"
+        },
+        "node_names": [
+          "LH continuous steel stem ball and cosmetic stud - candidate",
+          "LH mirror base washer - estimated",
+          "LH mirror base hex nut - estimated thread-free bore",
+          "LH hollow mirror mounting cover - estimated",
+          "LH fixed hollow lower neck cover - estimated",
+          "LH continuous mirror edge seal - estimated",
+          "LH convex mirror glass - finite thickness candidate",
+          "LH mirror compound shell and socket - candidate",
+          "LH moving hollow upper neck cover - estimated",
+          "LH rear metallic reflector - original candidate",
+          "LH mirror head adjustment PIVOT"
+        ],
+        "materials": [
+          {
+            "name": "LH original black enamel on steel stem",
+            "basecolor": [
+              0.006000000052154064,
+              0.007000000216066837,
+              0.008999999612569809,
+              1
+            ],
+            "metallic": 0,
+            "roughness": 0.1899999976158142,
+            "extensions": []
+          },
+          {
+            "name": "LH estimated steel fasteners",
+            "basecolor": [
+              0.3499999940395355,
+              0.3799999952316284,
+              0.4099999964237213,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 0.2199999988079071,
+            "extensions": []
+          },
+          {
+            "name": "LH original satin articulation cover",
+            "basecolor": [
+              0.006000000052154064,
+              0.007000000216066837,
+              0.00800000037997961,
+              1
+            ],
+            "metallic": 0,
+            "roughness": 0.30000001192092896,
+            "extensions": []
+          },
+          {
+            "name": "LH original matte neck and base covers",
+            "basecolor": [
+              0.006000000052154064,
+              0.007000000216066837,
+              0.00800000037997961,
+              1
+            ],
+            "metallic": 0,
+            "roughness": 0.5600000023841858,
+            "extensions": []
+          },
+          {
+            "name": "LH matte rubber edge seal",
+            "basecolor": [
+              0.006000000052154064,
+              0.007000000216066837,
+              0.00800000037997961,
+              1
+            ],
+            "metallic": 0,
+            "roughness": 0.5600000023841858,
+            "extensions": []
+          },
+          {
+            "name": "LH mirror glass dielectric - estimated IOR1.52",
+            "basecolor": [
+              0.9399999976158142,
+              0.9800000190734863,
+              0.9599999785423279,
+              1
+            ],
+            "metallic": 0,
+            "roughness": 0.019999999552965164,
+            "extensions": [
+              "KHR_materials_ior",
+              "KHR_materials_transmission"
+            ]
+          },
+          {
+            "name": "LH original black moulded mirror polymer",
+            "basecolor": [
+              0.004000000189989805,
+              0.004999999888241291,
+              0.006000000052154064,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "extensions": []
+          },
+          {
+            "name": "LH original rear mirror metallic layer",
+            "basecolor": [
+              0.7799999713897705,
+              0.7900000214576721,
+              0.800000011920929,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 0.02500000037252903,
+            "extensions": []
+          }
+        ]
+      }
+    ],
+    "scope": "Actual glTF buffers and format only; not shape reception, physical interface or mobile qualification",
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "browser_check": {
+    "camera": {
+      "position": [
+        0.29287773370742803,
+        0.5401195123406604,
+        -0.4673094018487548
+      ],
+      "target": [
+        0.292877733707428,
+        0.22275640442967415,
+        0.04939912585541606
+      ],
+      "radius": 0.6063885263303819,
+      "fov": 0.72,
+      "fovMode": 0
+    },
+    "framing": {
+      "min": [
+        0.36954363365375975,
+        0.23836359468862214
+      ],
+      "max": [
+        0.6189265917843716,
+        0.7472585518336974
+      ],
+      "scope": "Conservative projected actual mesh bounding boxes; whole-piece framing only"
+    },
+    "asset": "mirror-left-v2",
+    "revision": "mirror-left-v2",
+    "config": {
+      "label": "Rétroviseur gauche v2 — filet aligné sur le profil",
+      "lot": 8,
+      "review": "mirror-left-v2",
+      "source": "mirrors/mirror-left-v2.blend",
+      "collection": "WEWA_MIRROR_LEFT",
+      "component_id": "MOTO-MIRROR-LEFT-001",
+      "files": [
+        "mirrors/mirror-left-v2.glb"
+      ],
+      "readme": "README-left-v2.md",
+      "rigs": [
+        {
+          "id": "yaw",
+          "label": "Orientation latérale estimée",
+          "node": "LH mirror head adjustment PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -10,
+          "max": 10,
+          "initial": 0,
+          "step": 0.1
+        },
+        {
+          "id": "pitch",
+          "label": "Inclinaison estimée",
+          "node": "LH mirror head adjustment PIVOT",
+          "axis": [
+            0.9755259156227112,
+            0.010137728415429592,
+            -0.21965079009532928
+          ],
+          "min": -7,
+          "max": 7,
+          "initial": 0,
+          "step": 0.1
+        }
+      ],
+      "details": "Filet cosmétique reconstruit, neuf autres corps protégés. Intervalle supérieur propre au gauche conservé d’après sa photo. Profil/pas et réglages estimés, aucune conformité OEM ni réception."
+    },
+    "files": [
+      "mirrors/mirror-left-v2.glb"
+    ],
+    "meshes": 11,
+    "vertices": 74075,
+    "triangles": 106666,
+    "bounds": {
+      "min": [
+        0.18015116453170776,
+        0.11400000005960464,
+        -0.00025556329637765884
+      ],
+      "max": [
+        0.4056043028831482,
+        0.33151280879974365,
+        0.09905381500720978
+      ]
+    },
+    "textures_ready": true,
+    "renderer": {
+      "vendor": "Google Inc. (Google)",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "rig_states": {
+      "yaw": 0,
+      "pitch": 0
+    },
+    "attachments": [],
+    "rigs": [
+      {
+        "id": "yaw",
+        "node": "LH mirror head adjustment PIVOT",
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "world_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.24072271585464478,
+          0.23019269108772278,
+          0.08295915275812149,
+          1.0
+        ],
+        "actual_geometry": [
+          {
+            "mesh": "LH continuous mirror edge seal - estimated",
+            "vertex_index": 440,
+            "point_world": [
+              0.3289414048194885,
+              0.32711195945739746,
+              0.048149123787879944
+            ]
+          },
+          {
+            "mesh": "LH convex mirror glass - finite thickness candidate",
+            "vertex_index": 3353,
+            "point_world": [
+              0.32938769459724426,
+              0.2854037284851074,
+              0.04733811318874359
+            ]
+          },
+          {
+            "mesh": "LH mirror compound shell and socket - candidate",
+            "vertex_index": 6412,
+            "point_world": [
+              0.2901599705219269,
+              0.2659040689468384,
+              0.06451306492090225
+            ]
+          },
+          {
+            "mesh": "LH moving hollow upper neck cover - estimated",
+            "vertex_index": 721,
+            "point_world": [
+              0.2419617623090744,
+              0.24515698850154877,
+              0.07489845901727676
+            ]
+          },
+          {
+            "mesh": "LH rear metallic reflector - original candidate",
+            "vertex_index": 3353,
+            "point_world": [
+              0.3294052183628082,
+              0.28539663553237915,
+              0.04741591960191727
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pitch",
+        "node": "LH mirror head adjustment PIVOT",
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "world_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.24072271585464478,
+          0.23019269108772278,
+          0.08295915275812149,
+          1.0
+        ],
+        "actual_geometry": [
+          {
+            "mesh": "LH continuous mirror edge seal - estimated",
+            "vertex_index": 440,
+            "point_world": [
+              0.3289414048194885,
+              0.32711195945739746,
+              0.048149123787879944
+            ]
+          },
+          {
+            "mesh": "LH convex mirror glass - finite thickness candidate",
+            "vertex_index": 3353,
+            "point_world": [
+              0.32938769459724426,
+              0.2854037284851074,
+              0.04733811318874359
+            ]
+          },
+          {
+            "mesh": "LH mirror compound shell and socket - candidate",
+            "vertex_index": 6412,
+            "point_world": [
+              0.2901599705219269,
+              0.2659040689468384,
+              0.06451306492090225
+            ]
+          },
+          {
+            "mesh": "LH moving hollow upper neck cover - estimated",
+            "vertex_index": 721,
+            "point_world": [
+              0.2419617623090744,
+              0.24515698850154877,
+              0.07489845901727676
+            ]
+          },
+          {
+            "mesh": "LH rear metallic reflector - original candidate",
+            "vertex_index": 3353,
+            "point_world": [
+              0.3294052183628082,
+              0.28539663553237915,
+              0.04741591960191727
+            ]
+          }
+        ]
+      }
+    ],
+    "art_accepted": false,
+    "physical_iphone_tested": false,
+    "public_game_unchanged": true,
+    "pixel_checks": [
+      {
+        "view": "quarter",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 47839,
+        "changed_fraction": 0.04152690972222222,
+        "rgb_min": [
+          23,
+          25,
+          28
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "driver",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 52708,
+        "changed_fraction": 0.04575347222222222,
+        "rgb_min": [
+          23,
+          27,
+          30
+        ],
+        "rgb_max": [
+          254,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "reverse",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 16760,
+        "changed_fraction": 0.014548611111111111,
+        "rgb_min": [
+          20,
+          23,
+          27
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "yaw:-10",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 14779,
+        "changed_fraction": 0.012828993055555555,
+        "rgb_min": [
+          20,
+          23,
+          27
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "yaw:10",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 19120,
+        "changed_fraction": 0.01659722222222222,
+        "rgb_min": [
+          20,
+          23,
+          27
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "yaw:-1010",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 14779,
+        "changed_fraction": 0.012828993055555555,
+        "rgb_min": [
+          20,
+          23,
+          27
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "yaw:1010",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 19120,
+        "changed_fraction": 0.01659722222222222,
+        "rgb_min": [
+          20,
+          23,
+          27
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "pitch:-7",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 18552,
+        "changed_fraction": 0.016104166666666666,
+        "rgb_min": [
+          20,
+          23,
+          27
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "pitch:7",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 14914,
+        "changed_fraction": 0.012946180555555556,
+        "rgb_min": [
+          20,
+          23,
+          27
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "pitch:-1007",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 18552,
+        "changed_fraction": 0.016104166666666666,
+        "rgb_min": [
+          20,
+          23,
+          27
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "pitch:1007",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 14914,
+        "changed_fraction": 0.012946180555555556,
+        "rgb_min": [
+          20,
+          23,
+          27
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "landscape-844x390",
+        "width": 844,
+        "height": 390,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 10045,
+        "changed_fraction": 0.03051707376351926,
+        "rgb_min": [
+          24,
+          27,
+          30
+        ],
+        "rgb_max": [
+          176,
+          184,
+          194
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      }
+    ],
+    "page_errors": [],
+    "http_failures": [],
+    "pose_checks": [
+      {
+        "rig": "yaw",
+        "states": [
+          {
+            "requested": -10,
+            "rig_states": {
+              "yaw": -10,
+              "pitch": 0
+            },
+            "rig": {
+              "id": "yaw",
+              "node": "LH mirror head adjustment PIVOT",
+              "quaternion": [
+                0,
+                -0.08715574274765817,
+                0,
+                0.9961946980917455
+              ],
+              "world_matrix": [
+                0.9848077297210693,
+                0.0,
+                0.1736481785774231,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.1736481785774231,
+                0.0,
+                0.9848077297210693,
+                0.0,
+                0.24072271585464478,
+                0.23019269108772278,
+                0.08295915275812149,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH continuous mirror edge seal - estimated",
+                  "vertex_index": 440,
+                  "point_world": [
+                    0.33364586041698896,
+                    0.32711195945739746,
+                    0.06399698009845167
+                  ]
+                },
+                {
+                  "mesh": "LH convex mirror glass - finite thickness candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    0.3342262005531653,
+                    0.2854037284851074,
+                    0.06327578799856148
+                  ]
+                },
+                {
+                  "mesh": "LH mirror compound shell and socket - candidate",
+                  "vertex_index": 6412,
+                  "point_world": [
+                    0.29261203557898297,
+                    0.2659040689468384,
+                    0.07337799038656101
+                  ]
+                },
+                {
+                  "mesh": "LH moving hollow upper neck cover - estimated",
+                  "vertex_index": 721,
+                  "point_world": [
+                    0.24334266280361616,
+                    0.24515698850154877,
+                    0.07523607570201296
+                  ]
+                },
+                {
+                  "mesh": "LH rear metallic reflector - original candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    0.3342299471510173,
+                    0.28539663553237915,
+                    0.06335545532564879
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 10,
+            "rig_states": {
+              "yaw": 10,
+              "pitch": 0
+            },
+            "rig": {
+              "id": "yaw",
+              "node": "LH mirror head adjustment PIVOT",
+              "quaternion": [
+                0,
+                0.08715574274765817,
+                0,
+                0.9961946980917455
+              ],
+              "world_matrix": [
+                0.9848077297210693,
+                0.0,
+                -0.1736481785774231,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.1736481785774231,
+                0.0,
+                0.9848077297210693,
+                0.0,
+                0.24072271585464478,
+                0.23019269108772278,
+                0.08295915275812149,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH continuous mirror edge seal - estimated",
+                  "vertex_index": 440,
+                  "point_world": [
+                    0.3215564647079292,
+                    0.32711195945739746,
+                    0.033358951449720564
+                  ]
+                },
+                {
+                  "mesh": "LH convex mirror glass - finite thickness candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    0.32185514381741154,
+                    0.2854037284851074,
+                    0.03248276453578036
+                  ]
+                },
+                {
+                  "mesh": "LH mirror compound shell and socket - candidate",
+                  "vertex_index": 6412,
+                  "point_world": [
+                    0.2862057770141182,
+                    0.2659040689468384,
+                    0.05620861259461307
+                  ]
+                },
+                {
+                  "mesh": "LH moving hollow upper neck cover - estimated",
+                  "vertex_index": 721,
+                  "point_world": [
+                    0.2405432137760397,
+                    0.24515698850154877,
+                    0.07480576004377948
+                  ]
+                },
+                {
+                  "mesh": "LH rear metallic reflector - original candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    0.321885912299122,
+                    0.28539663553237915,
+                    0.03255634592292367
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": -1010,
+            "rig_states": {
+              "yaw": -10,
+              "pitch": 0
+            },
+            "rig": {
+              "id": "yaw",
+              "node": "LH mirror head adjustment PIVOT",
+              "quaternion": [
+                0,
+                -0.08715574274765817,
+                0,
+                0.9961946980917455
+              ],
+              "world_matrix": [
+                0.9848077297210693,
+                0.0,
+                0.1736481785774231,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                -0.1736481785774231,
+                0.0,
+                0.9848077297210693,
+                0.0,
+                0.24072271585464478,
+                0.23019269108772278,
+                0.08295915275812149,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH continuous mirror edge seal - estimated",
+                  "vertex_index": 440,
+                  "point_world": [
+                    0.33364586041698896,
+                    0.32711195945739746,
+                    0.06399698009845167
+                  ]
+                },
+                {
+                  "mesh": "LH convex mirror glass - finite thickness candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    0.3342262005531653,
+                    0.2854037284851074,
+                    0.06327578799856148
+                  ]
+                },
+                {
+                  "mesh": "LH mirror compound shell and socket - candidate",
+                  "vertex_index": 6412,
+                  "point_world": [
+                    0.29261203557898297,
+                    0.2659040689468384,
+                    0.07337799038656101
+                  ]
+                },
+                {
+                  "mesh": "LH moving hollow upper neck cover - estimated",
+                  "vertex_index": 721,
+                  "point_world": [
+                    0.24334266280361616,
+                    0.24515698850154877,
+                    0.07523607570201296
+                  ]
+                },
+                {
+                  "mesh": "LH rear metallic reflector - original candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    0.3342299471510173,
+                    0.28539663553237915,
+                    0.06335545532564879
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 1010,
+            "rig_states": {
+              "yaw": 10,
+              "pitch": 0
+            },
+            "rig": {
+              "id": "yaw",
+              "node": "LH mirror head adjustment PIVOT",
+              "quaternion": [
+                0,
+                0.08715574274765817,
+                0,
+                0.9961946980917455
+              ],
+              "world_matrix": [
+                0.9848077297210693,
+                0.0,
+                -0.1736481785774231,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.1736481785774231,
+                0.0,
+                0.9848077297210693,
+                0.0,
+                0.24072271585464478,
+                0.23019269108772278,
+                0.08295915275812149,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH continuous mirror edge seal - estimated",
+                  "vertex_index": 440,
+                  "point_world": [
+                    0.3215564647079292,
+                    0.32711195945739746,
+                    0.033358951449720564
+                  ]
+                },
+                {
+                  "mesh": "LH convex mirror glass - finite thickness candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    0.32185514381741154,
+                    0.2854037284851074,
+                    0.03248276453578036
+                  ]
+                },
+                {
+                  "mesh": "LH mirror compound shell and socket - candidate",
+                  "vertex_index": 6412,
+                  "point_world": [
+                    0.2862057770141182,
+                    0.2659040689468384,
+                    0.05620861259461307
+                  ]
+                },
+                {
+                  "mesh": "LH moving hollow upper neck cover - estimated",
+                  "vertex_index": 721,
+                  "point_world": [
+                    0.2405432137760397,
+                    0.24515698850154877,
+                    0.07480576004377948
+                  ]
+                },
+                {
+                  "mesh": "LH rear metallic reflector - original candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    0.321885912299122,
+                    0.28539663553237915,
+                    0.03255634592292367
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "actual_vertex_travel_m": 0.033185137316856586
+      },
+      {
+        "rig": "pitch",
+        "states": [
+          {
+            "requested": -7,
+            "rig_states": {
+              "yaw": 0,
+              "pitch": -7
+            },
+            "rig": {
+              "id": "pitch",
+              "node": "LH mirror head adjustment PIVOT",
+              "quaternion": [
+                -0.059554430784109776,
+                -0.0006188934968882017,
+                0.013409359573043383,
+                0.9981347984218669
+              ],
+              "world_matrix": [
+                0.999639630317688,
+                0.02684241160750389,
+                -0.00036169527447782457,
+                0.0,
+                -0.02669498138129711,
+                0.9925469160079956,
+                -0.11890329420566559,
+                0.0,
+                -0.002832651836797595,
+                0.11887010186910629,
+                0.9929057955741882,
+                0.0,
+                0.24072271585464478,
+                0.23019269108772278,
+                0.08295915275812149,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH continuous mirror edge seal - estimated",
+                  "vertex_index": 440,
+                  "point_world": [
+                    0.3264209602304269,
+                    0.32461974298731733,
+                    0.03684014506267611
+                  ]
+                },
+                {
+                  "mesh": "LH convex mirror glass - finite thickness candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    0.3279827869387926,
+                    0.28313794154499616,
+                    0.04099397257571393
+                  ]
+                },
+                {
+                  "mesh": "LH mirror compound shell and socket - candidate",
+                  "vertex_index": 6412,
+                  "point_world": [
+                    0.2892410917356828,
+                    0.26477223615302475,
+                    0.06037984392669689
+                  ]
+                },
+                {
+                  "mesh": "LH moving hollow upper neck cover - estimated",
+                  "vertex_index": 721,
+                  "point_world": [
+                    0.2415846774163523,
+                    0.24412054215147605,
+                    0.07317589118855286
+                  ]
+                },
+                {
+                  "mesh": "LH rear metallic reflector - original candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    0.3280002733370846,
+                    0.28314062069302853,
+                    0.04107206405146875
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 7,
+            "rig_states": {
+              "yaw": 0,
+              "pitch": 7
+            },
+            "rig": {
+              "id": "pitch",
+              "node": "LH mirror head adjustment PIVOT",
+              "quaternion": [
+                0.059554430784109776,
+                0.0006188934968882017,
+                -0.013409359573043383,
+                0.9981347984218669
+              ],
+              "world_matrix": [
+                0.999639630317688,
+                -0.02669498138129711,
+                -0.002832651836797595,
+                0.0,
+                0.02684241160750389,
+                0.9925469160079956,
+                0.11887010186910629,
+                0.0,
+                -0.00036169527447782457,
+                -0.11890329420566559,
+                0.9929057955741882,
+                0.0,
+                0.24072271585464478,
+                0.23019269108772278,
+                0.08295915275812149,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH continuous mirror edge seal - estimated",
+                  "vertex_index": 440,
+                  "point_world": [
+                    0.33152375096927633,
+                    0.32817364223363643,
+                    0.05966698455099624
+                  ]
+                },
+                {
+                  "mesh": "LH convex mirror glass - finite thickness candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    0.33085062375324886,
+                    0.28686078434450596,
+                    0.05390260157882662
+                  ]
+                },
+                {
+                  "mesh": "LH mirror compound shell and socket - candidate",
+                  "vertex_index": 6412,
+                  "point_world": [
+                    0.291107406173981,
+                    0.2665114824316354,
+                    0.0687489026613223
+                  ]
+                },
+                {
+                  "mesh": "LH moving hollow upper neck cover - estimated",
+                  "vertex_index": 721,
+                  "point_world": [
+                    0.2423659091131755,
+                    0.2459708244206644,
+                    0.0767309418259409
+                  ]
+                },
+                {
+                  "mesh": "LH rear metallic reflector - original candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    0.3308679226696104,
+                    0.286844025020718,
+                    0.05397896323865953
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": -1007,
+            "rig_states": {
+              "yaw": 0,
+              "pitch": -7
+            },
+            "rig": {
+              "id": "pitch",
+              "node": "LH mirror head adjustment PIVOT",
+              "quaternion": [
+                -0.059554430784109776,
+                -0.0006188934968882017,
+                0.013409359573043383,
+                0.9981347984218669
+              ],
+              "world_matrix": [
+                0.999639630317688,
+                0.02684241160750389,
+                -0.00036169527447782457,
+                0.0,
+                -0.02669498138129711,
+                0.9925469160079956,
+                -0.11890329420566559,
+                0.0,
+                -0.002832651836797595,
+                0.11887010186910629,
+                0.9929057955741882,
+                0.0,
+                0.24072271585464478,
+                0.23019269108772278,
+                0.08295915275812149,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH continuous mirror edge seal - estimated",
+                  "vertex_index": 440,
+                  "point_world": [
+                    0.3264209602304269,
+                    0.32461974298731733,
+                    0.03684014506267611
+                  ]
+                },
+                {
+                  "mesh": "LH convex mirror glass - finite thickness candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    0.3279827869387926,
+                    0.28313794154499616,
+                    0.04099397257571393
+                  ]
+                },
+                {
+                  "mesh": "LH mirror compound shell and socket - candidate",
+                  "vertex_index": 6412,
+                  "point_world": [
+                    0.2892410917356828,
+                    0.26477223615302475,
+                    0.06037984392669689
+                  ]
+                },
+                {
+                  "mesh": "LH moving hollow upper neck cover - estimated",
+                  "vertex_index": 721,
+                  "point_world": [
+                    0.2415846774163523,
+                    0.24412054215147605,
+                    0.07317589118855286
+                  ]
+                },
+                {
+                  "mesh": "LH rear metallic reflector - original candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    0.3280002733370846,
+                    0.28314062069302853,
+                    0.04107206405146875
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 1007,
+            "rig_states": {
+              "yaw": 0,
+              "pitch": 7
+            },
+            "rig": {
+              "id": "pitch",
+              "node": "LH mirror head adjustment PIVOT",
+              "quaternion": [
+                0.059554430784109776,
+                0.0006188934968882017,
+                -0.013409359573043383,
+                0.9981347984218669
+              ],
+              "world_matrix": [
+                0.999639630317688,
+                -0.02669498138129711,
+                -0.002832651836797595,
+                0.0,
+                0.02684241160750389,
+                0.9925469160079956,
+                0.11887010186910629,
+                0.0,
+                -0.00036169527447782457,
+                -0.11890329420566559,
+                0.9929057955741882,
+                0.0,
+                0.24072271585464478,
+                0.23019269108772278,
+                0.08295915275812149,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH continuous mirror edge seal - estimated",
+                  "vertex_index": 440,
+                  "point_world": [
+                    0.33152375096927633,
+                    0.32817364223363643,
+                    0.05966698455099624
+                  ]
+                },
+                {
+                  "mesh": "LH convex mirror glass - finite thickness candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    0.33085062375324886,
+                    0.28686078434450596,
+                    0.05390260157882662
+                  ]
+                },
+                {
+                  "mesh": "LH mirror compound shell and socket - candidate",
+                  "vertex_index": 6412,
+                  "point_world": [
+                    0.291107406173981,
+                    0.2665114824316354,
+                    0.0687489026613223
+                  ]
+                },
+                {
+                  "mesh": "LH moving hollow upper neck cover - estimated",
+                  "vertex_index": 721,
+                  "point_world": [
+                    0.2423659091131755,
+                    0.2459708244206644,
+                    0.0767309418259409
+                  ]
+                },
+                {
+                  "mesh": "LH rear metallic reflector - original candidate",
+                  "vertex_index": 3353,
+                  "point_world": [
+                    0.3308679226696104,
+                    0.286844025020718,
+                    0.05397896323865953
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "actual_vertex_travel_m": 0.023658682850129387
+      }
+    ],
+    "scope": "Actual Babylon imports and vertex motion in Chromium softwareWebGL; not Safari/iPhone/FPS qualification",
+    "render_mode": "Manual frames after scene readiness",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/mirrors/mirror-left-v2.glb",
+        "sha256": "be1b5bcf2438cee25fb097f7bca96a6a8ae231d26500717638046af4becabcea"
+      }
+    ],
+    "inspector_sha256": "19e4908f4a7b69b492710adfb7d28a5508745721f9c991941a5ed439f3a9fb07",
+    "capture_tool_sha256": "53b07b0e9bda4b86c9d7f05c10815755b3be50dcc85e29a4b3f164cbc38fcf28",
+    "inspector_path": "tools/motorcycle-lab/review-v2.js",
+    "capture_tool_path": "tools/capture_motorcycle18_v3.py",
+    "inputs_unchanged_during_capture": true
+  },
+  "render_report": {
+    "source_sha256": "7725731e869b6edeea744965054518659eeb6355f6acc670718738a8144b1a30",
+    "export_sha256": "be1b5bcf2438cee25fb097f7bca96a6a8ae231d26500717638046af4becabcea",
+    "renderer": "Blender4.3.2 Cycles/OpenImageDenoise CPU",
+    "samples": 96,
+    "resolution_px": [
+      1000,
+      800
+    ],
+    "views": [
+      {
+        "name": "whole-front",
+        "camera_location_m": [
+          0.23211342096328735,
+          0.6741977334022522,
+          0.29615318775177
+        ],
+        "camera_target_m": [
+          0.292877733707428,
+          -0.04939912632107735,
+          0.22275640070438385
+        ],
+        "lens_mm": 70,
+        "PNG_path": "creative/reviews/mirror-left-v2/whole-front.png",
+        "PNG_sha256": "060c5dba1756563e88f2e321aa03f61708203b1ac227ba21284fe873356591fb",
+        "EXR_private_path": "/workspace/wewa-assets/renders/mirrors/mirror-left-v2/whole-front.exr",
+        "EXR_sha256": "4faf5b5fad0b03611f9ef0c9e3112591c3f6265fedfb68b731b7afc3a63c89a0",
+        "actually_saved": true,
+        "checkpoint_config_sha256": "5340ebbac238eb2a0e067396bf8c800b1a175ca1a366b60b6a5203f59fdfa913",
+        "visual_read_by_agent": true
+      },
+      {
+        "name": "base-close",
+        "camera_location_m": [
+          0.19688835740089417,
+          0.13696999847888947,
+          0.1867022067308426
+        ],
+        "camera_target_m": [
+          0.1886511594057083,
+          -0.008244437165558338,
+          0.1379999965429306
+        ],
+        "lens_mm": 75,
+        "PNG_path": "creative/reviews/mirror-left-v2/base-close.png",
+        "PNG_sha256": "f9eeaa2749bbacf7474d49735c7fd5120dfe696f2efb19bbeb7de31bda292e2d",
+        "EXR_private_path": "/workspace/wewa-assets/renders/mirrors/mirror-left-v2/base-close.exr",
+        "EXR_sha256": "2c592924b04a6bd0edbfc56cc8ab774bec7e382bf2161d79807724eb144e73fa",
+        "actually_saved": true,
+        "checkpoint_config_sha256": "04b7142f966268c563dac90cc1d98b5f31fa3e8a12ffb8e81280594114170430",
+        "visual_read_by_agent": true
+      }
+    ],
+    "derived_from": "creative/reviews/mirror-left-v2/render-checkpoints.json",
+    "visual_reading_by_agent": "creative/reviews/mirror-left-v2/visual-reading.json",
+    "scope": "Only fixed cosmetic stud sampling changed; nine body buffers, matrices, rig and materials unchanged. No physical thread qualification.",
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true
+}

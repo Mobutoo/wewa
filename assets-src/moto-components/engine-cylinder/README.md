@@ -1,0 +1,15 @@
+# Cylindre extérieur à ailettes — candidat estimé
+
+ID `MOTO-ENGINE-CYLINDER-001`, lot17. Pièce seule : fonderie extérieure du barillet, avec ses ailettes, plans de joint et passages de matière. Culasse, couvre-culasse, chemise rapportée, piston, joints et mécanismes ne sont pas fabriqués dans cette unité.
+
+Les vues officielles RDC imposent la finition noire et la disposition générale du bloc incliné. Trois vues nues BM15036PF0002 et une photographie noire d’identité contradictoire36JZ0002/36PF0159 documentent seulement une architecture apparentée : contour arrondi/asymétrique, vrais espaces entre ailettes, passages de goujons, puits latéral et siège accessoire. Aucun diamètre ni référence voisine n’est présenté comme une cote125RDC. Les trois interruptions frontales et le siège arrière restent conditionnels. Les originaux sont privés, sans emploi de pixels comme texture.
+
+`parameters.json` conserve valeurs de travail et plages : hauteur73mm [60;100], cinq ailettes [4;7], vide de matière R28mm [24;32], inclinaison20° [10;30]. Le vide n’est pas un alésage moteur ou une cote de chemise certifiée. Aucun alésage/course n’est déduit des124,45cm³ publiés. Les sections cachées gardent25% d’incertitude. Le repère global reste X gauche pilote,−Y avant,Z haut ; datum estimé(0;0,125;−0,540)m et rotationX20°.
+
+`build.py` crée des contours originaux continus, des sections de rives arrondies, cinq ailettes de portée variable reliées au noyau et aux colonnes, puis les vrais vides. Les rayons sont construits avant les unions ; aucun congé global ne masque une coque ouverte. Un premier assemblage a été refusé pour six petites cavités involontaires entre logement latéral et colonne. Le recouvrement réel de la section estimée a été corrigé ; aucun fragment négatif n’a été supprimé pour faire passer le contrôle.
+
+Source `engine-cylinder-v1.blend`, collection `WEWA_ENGINE_CYLINDER`, objet `Engine cylinder finned hollow casting - editable candidate`, parent `Engine cylinder base provisional datum`. Export `engine-cylinder-inspection.glb`. Un volume connexe fermé,69832triangles évalués ; six passages testés par rayons et surfaces des deux carters liés sans croisement. Cela ne certifie ni leurs jeux ni l’accouplement au bloc central non fabriqué.
+
+Deux matières PBR originales : peinture noire propre et surfaces de joint/siège non peintes. Leur réponse et leur teinte ne sont pas mesurées ; pas de photo, normal map ou usure inventée. La séparation matière conserve exactement les positions des trianglesFloat32, attestées dans la revue. Gris entier, dessous, gros plan de reflets et PBR sont relus avant le gel. Les vues finales96 comportent deux quarts, les passages supérieurs et un détail d’ailettes volontairement recadré ; chaque vue lie source, configuration effective, PNG et EXR par checkpoint.
+
+Identité OEM, mesures exactes, montage interne, réception artistique et Safari physique restent ouverts. Les références de la culasse et du couvre-culasse sont traitées séparément.

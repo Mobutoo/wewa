@@ -1,0 +1,172 @@
+{
+  "schema": 1,
+  "revision": "headlamp-front-protector-study-v1",
+  "stage": "G2 before source",
+  "identity": "Conditional original external two-bar protection candidate; officialRDC appearance + relatedDY401002 photographs; OEM identity/removability unknown",
+  "parameters": {
+    "outer_radius_m": {
+      "value": 0.1,
+      "range": [
+        0.09,
+        0.11
+      ],
+      "status": "estimated",
+      "basis": "No physical/OEM headlamp diameter found; working scale only."
+    },
+    "ring_radial_width_m": {
+      "value": 0.006,
+      "range": [
+        0.004,
+        0.008
+      ],
+      "status": "estimated",
+      "basis": "Visible dark perimeter width relative to photographed aperture, no calibrated section."
+    },
+    "ring_axial_depth_m": {
+      "value": 0.011,
+      "range": [
+        0.007,
+        0.016
+      ],
+      "status": "estimated",
+      "basis": "Two oblique photographed views; currentRDC depth unseen."
+    },
+    "ring_small_edge_radius_m": {
+      "value": 0.001,
+      "range": [
+        0.0005,
+        0.0015
+      ],
+      "status": "estimated"
+    },
+    "rod_radius_m": {
+      "value": 0.00225,
+      "range": [
+        0.0017,
+        0.003
+      ],
+      "status": "estimated",
+      "basis": "Round rod apparent width relative to frontdiameter; photo reflection/bloom uncertain."
+    },
+    "upper_rod_end_Z_m": {
+      "value": 0.06,
+      "range": [
+        0.05,
+        0.07
+      ],
+      "status": "estimated"
+    },
+    "upper_rod_centre_Z_m": {
+      "value": 0.042,
+      "range": [
+        0.034,
+        0.05
+      ],
+      "status": "estimated"
+    },
+    "lower_rod_end_Z_m": {
+      "value": -0.066,
+      "range": [
+        -0.075,
+        -0.055
+      ],
+      "status": "estimated"
+    },
+    "lower_rod_centre_Z_m": {
+      "value": -0.047,
+      "range": [
+        -0.055,
+        -0.039
+      ],
+      "status": "estimated"
+    },
+    "forward_bow_m": {
+      "value": 0.018,
+      "range": [
+        0.009,
+        0.028
+      ],
+      "status": "estimated",
+      "basis": "Visible gap above lens under oblique view; not a physically measured standoff."
+    }
+  },
+  "native_landmarks": {
+    "source_private_path": "/workspace/wewa-assets/references/dimensions-verified/headlight.webp",
+    "pixels": [
+      1000,
+      600
+    ],
+    "approximate_landmarks_px": {
+      "outer_left": [
+        399,
+        296
+      ],
+      "outer_right": [
+        558,
+        296
+      ],
+      "outer_top": [
+        477,
+        219
+      ],
+      "outer_bottom": [
+        477,
+        374
+      ],
+      "upper_left_end": [
+        417,
+        249
+      ],
+      "upper_centre": [
+        477,
+        261
+      ],
+      "upper_right_end": [
+        541,
+        250
+      ],
+      "lower_left_end": [
+        419,
+        343
+      ],
+      "lower_centre": [
+        477,
+        333
+      ],
+      "lower_right_end": [
+        535,
+        343
+      ]
+    },
+    "working_reading_radius_px": 4,
+    "scope": "Coarse handoff, not a calibrated camera or proof of physical dimensions; refine visually before reception."
+  },
+  "construction": [
+    "One closed annular band with explicit rounded section, no automatic bevel afterCSG",
+    "Two independent dense swept round rods, upper/lower bend toward aperture centre as actually visible; estimated finite forward standoff",
+    "Union contact only where bars meet band; no invented weld bead or screw",
+    "Source curves and profiles retained as hidden editable construction",
+    "Original neutralgray first, no photo texture; blackfinish only after real diffuse/reflection preview"
+  ],
+  "frame": {
+    "Xpositive": "riderLEFT",
+    "Ypositive": "rearward",
+    "Zpositive": "up",
+    "ring_reference_plane_Y_m": 0,
+    "installed_transform": "Unresolved; isolated origin, no arbitrary cockpit fit."
+  },
+  "unknowns": [
+    "Exact currentRDC assembly code and guard/component separability",
+    "Absolute diameter and metalgrade/coatgrain",
+    "Band backside fastening, actualweld details",
+    "Exact rod bending section/standoff",
+    "Clearance to actualcurrent lens and cowl, currentheadlamp attachment"
+  ],
+  "blocked_claims": [
+    "ExactOEM reconstruction",
+    "Installed mechanicalcompatibility",
+    "Certified opticalbeam/brightness",
+    "Completeheadlamp or lot12 coverage"
+  ],
+  "art_accepted": false
+}

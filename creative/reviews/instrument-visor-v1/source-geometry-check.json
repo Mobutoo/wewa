@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "revision": "instrument-visor-v1",
+  "source_sha256": "c790ffbba0a49f4d63e2dcf85a30cf88eb1aa8c6edd847514c041e5c0fa70f15",
+  "export_sha256": "67a3121a691bd29cac126c0fac5c07fea929680faad5f27ec250646aafb06cab",
+  "collection": "WEWA_INSTRUMENT_VISOR",
+  "root": "VISOR_PANEL_MOUNT_ESTIMATED",
+  "object": "Visor finite smoked curved shell - conditional estimated",
+  "geometry": {
+    "vertices": 22242,
+    "faces": 31493,
+    "triangles": 44480,
+    "components": 1,
+    "non_manifold_edges": 0,
+    "signed_volume_m3": 0.0001656662737930492,
+    "exact_zero_area_triangles": 0,
+    "min_triangle_area_m2": 9.659850176702012e-12,
+    "min_face_custom_normal_dot": 0.9778414368629456
+  },
+  "source_grid_sha256": "186bc45efe43059e791728737e01ff9c2fe082c8c5655d15e09a294a9fef62eb",
+  "source_outline_sha256": "c9958f80e30e097b3ebd417089de4b41fb1f8fe461fe3e130e047a976c7311d6",
+  "frame": {
+    "U": [
+      1,
+      0,
+      0
+    ],
+    "up_V": [
+      0,
+      0.6691306233406067,
+      0.7431448101997375
+    ],
+    "front_N": [
+      0,
+      -0.7431448101997375,
+      0.6691306233406067
+    ],
+    "origin_m": [
+      0,
+      -0.2849999964237213,
+      0
+    ]
+  },
+  "working_parameters": {
+    "width_m": 0.25,
+    "developed_height_m": 0.285,
+    "rake_deg": 42,
+    "transverse_wrap_sag_m": 0.04,
+    "normal_wall_thickness_m": 0.0025
+  },
+  "limits": [
+    "All detailed physical dimensions and section parameters remain estimates; not camera calibrated.",
+    "Fixing centres/diameters and hidden return flanges unresolved; no invented holes or fasteners.",
+    "All-required-components-built is false; no artistic reception.",
+    "Edge and tiny tip radii are working estimates inside native reading uncertainty, not physical/OEM measurements.",
+    "Clean smoked material is an original estimate, not a measured grade, tint, roughness or IOR."
+  ],
+  "art_accepted": false,
+  "baseline_source_sha256": "4e1674fbac66b922ae6a195a4210fd8843960d4e269318ce320612c2cecfd5e2",
+  "baseline_export_sha256": "4741baa476587e47db340fb70c2b31bf4823b169cda71feac4a076a171ae8b03",
+  "rounded_grid_sha256": "fd1a2a702984809e464af6deeca026922f0eb48ea790269506019026d665fa10",
+  "rounded_outline_sha256": "ffba99b89fd30dd8202f33a07db6e7b068daf5ece0491caf5cc5d211e4235b67",
+  "edge_method": {
+    "source": "Explicit metric-offset inner chart + source quarter-round perimeter sections, no bevel or CSG",
+    "edge_radius_estimated_m": 0.00025,
+    "quarter_segments": 4,
+    "tip_regularisation_estimated_m": 0.0004,
+    "native_manual_point_max_error_px": 0.9229421625740254,
+    "manual_working_band_px": 3,
+    "normals": "Normal of designed rolling crosssection crossed with local source station tangent; analytic front/back normals preserved at joins. Not normals inherited from an operation.",
+    "UV": "Continuous circumference/cross-profile chart for rolled edge, midsurface arc/height on front/back; no arbitrary tangent repair."
+  },
+  "raw_export_sha256": "15181efe8a6df2361b97714025eefd7ce8cef59af96fe54907d0bf1530190246",
+  "raw_export_private_path": "/workspace/wewa-assets/work-in-progress/instrument-visor/material-v1/raw-export.glb",
+  "material": {
+    "name": "WEWA original clean smoked polymer - estimated bulk absorption",
+    "IOR": 1.5199999809265137,
+    "roughness": 0.11999999731779099,
+    "transmission": 1,
+    "density_m_inverse": 1000,
+    "Cycle_Absorption_Color_RGB": [
+      0.07896596193313599,
+      0.15189458429813385,
+      0.11709003150463104
+    ],
+    "nominal_thickness_factor_m": 0.0024999999441206455
+  },
+  "source_geometry_or_normals_UV_changed": false,
+  "scope": "Material only, original clean smoked-polymer estimate. Final GLB requires documented bulk attenuation conversion; no photometric or physicalOEM qualification.",
+  "bulk_semantic_conversion": "Only attenuationColor changed: exp(CyclesColor−1), retaining1/Density and thicknessFactor."
+}

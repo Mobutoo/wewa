@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "revision": "headlamp-bucket-study-v1",
+  "piece": "Opaque moulded rear bucket only, not complete headlamp",
+  "reference_identity": "PF401007 Boxer125/150 related, packageSEP19, exact currentRDC applicability unconfirmed",
+  "references": "references-v1.json > related_photos p00831-122404/122421/122412",
+  "parameters": {
+    "front_outer_radius_m": {
+      "value": 0.1,
+      "range": [
+        0.09,
+        0.11
+      ],
+      "status": "estimated",
+      "basis": "Round related PF401007 photographs, current circular appearance; no calibrated photograph or OEM diameter."
+    },
+    "axial_depth_m": {
+      "value": 0.112,
+      "range": [
+        0.095,
+        0.13
+      ],
+      "status": "estimated",
+      "basis": "Two related uncalibrated profile photos constrain proportion, not physical depth."
+    },
+    "wall_m": {
+      "value": 0.0025,
+      "range": [
+        0.0018,
+        0.0035
+      ],
+      "status": "estimated",
+      "basis": "Visible front lip and moulded body construction; physical thickness unmeasured."
+    },
+    "side_mount_boss_radius_m": {
+      "value": 0.027,
+      "range": [
+        0.023,
+        0.031
+      ],
+      "status": "estimated",
+      "basis": "Visible related side photographs, grey inset is separate grommet rather than bucket material."
+    },
+    "mount_seat_opening_radius_m": {
+      "value": 0.018,
+      "range": [
+        0.015,
+        0.022
+      ],
+      "status": "estimated",
+      "basis": "Related assembly shown installed with grommet; bare bore hidden and unresolved."
+    },
+    "rear_window_width_m": {
+      "value": 0.043,
+      "range": [
+        0.035,
+        0.052
+      ],
+      "status": "estimated"
+    },
+    "rear_window_height_m": {
+      "value": 0.053,
+      "range": [
+        0.045,
+        0.065
+      ],
+      "status": "estimated"
+    },
+    "rear_window_offset_x_m": {
+      "value": 0.049,
+      "range": [
+        0.042,
+        0.057
+      ],
+      "status": "estimated"
+    },
+    "rear_window_corner_radius_m": {
+      "value": 0.009,
+      "range": [
+        0.005,
+        0.013
+      ],
+      "status": "estimated"
+    },
+    "centre_spine_width_m": {
+      "value": 0.036,
+      "range": [
+        0.03,
+        0.045
+      ],
+      "status": "estimated"
+    },
+    "centre_spine_rear_depth_m": {
+      "value": 0.006,
+      "range": [
+        0.003,
+        0.01
+      ],
+      "status": "estimated"
+    },
+    "moulded_small_radius_m": {
+      "value": 0.0012,
+      "range": [
+        0.0006,
+        0.002
+      ],
+      "status": "estimated"
+    }
+  },
+  "source_frame": {
+    "Xpositive": "riderLEFT",
+    "Ypositive": "rider/rear; localbucketaxis rearward",
+    "Zpositive": "up",
+    "local_front_plane_Y_m": 0,
+    "placement": "Isolated local origin; installed frame transform unresolved. No arbitrary headlamp/cockpit registration."
+  },
+  "observable_structure": [
+    {
+      "part": "Main hollow moulded cup",
+      "method": "Smooth axial sections with intentional lip/transition radii before operations, finite inner wall and open front",
+      "source": "Two side/rear photos"
+    },
+    {
+      "part": "Central rear spine and upper curved rear shoulder",
+      "method": "Rounded profiles, integrated before cavity and openings",
+      "source": "Rear photo; width/depth estimates"
+    },
+    {
+      "part": "Two rear cable openings",
+      "method": "Rounded rectangular cutting profiles through actual finite wall, separateleft/right boundaries",
+      "source": "Rear photo reveals two open holes, no invented wires inside"
+    },
+    {
+      "part": "Two raised side mounting seats",
+      "method": "Rounded bosses with seat apertures; grey damper not bucket, not fabricated in this unit",
+      "source": "Two side photos; bare hidden bore unknown"
+    },
+    {
+      "part": "Side rim-fastener seats",
+      "method": "Visible upper-forward seats only if still representable from source, no invented screw threading",
+      "source": "Two side photos show screw heads, exact hidden threadedboss unresolved"
+    }
+  ],
+  "excluded": [
+    "Front rim/chrome or black variant",
+    "Lens/reflector/guard",
+    "Bulb/socket/wires",
+    "Side rubber dampers and collars",
+    "Cowl/frame/brackets/installed hardware"
+  ],
+  "construction_checks": [
+    "One closed shell connected body and positive volume, front cavity open by design but shell boundary watertight",
+    "Two back windows are actual apertures; mount holes remain open",
+    "No null triangles or UVs on exported surfaces; no arbitrary tangents",
+    "Preview whole front/rear/profile and a window-lip under diffuse and specular light before material/final96",
+    "Interface/currentRDC fit not certified by isolated fabrication"
+  ],
+  "critical_unknowns": [
+    "Bare side seat aperture geometry hidden by related rubber insert",
+    "CurrentRDC same bucket identity",
+    "Headlamp physical dimensions and installed position/tilt",
+    "Inner ribs/fasteners not observed in bare bucket"
+  ],
+  "status": "conditional shape study only; exact mount and currentRDC acceptance blocked",
+  "art_accepted": false
+}

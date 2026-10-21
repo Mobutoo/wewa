@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "revision": "instrument-visor-v1",
+  "source_sha256": "c790ffbba0a49f4d63e2dcf85a30cf88eb1aa8c6edd847514c041e5c0fa70f15",
+  "export_sha256": "67a3121a691bd29cac126c0fac5c07fea929680faad5f27ec250646aafb06cab",
+  "frame": {
+    "U": [
+      1,
+      0,
+      0
+    ],
+    "up_V": [
+      0,
+      0.6691306233406067,
+      0.7431448101997375
+    ],
+    "front_N": [
+      0,
+      -0.7431448101997375,
+      0.6691306233406067
+    ],
+    "origin_m": [
+      0,
+      -0.2849999964237213,
+      0
+    ]
+  },
+  "working_parameters": {
+    "width_m": 0.25,
+    "developed_height_m": 0.285,
+    "rake_deg": 42,
+    "transverse_wrap_sag_m": 0.04,
+    "normal_wall_thickness_m": 0.0025
+  },
+  "edge_method": {
+    "source": "Explicit metric-offset inner chart + source quarter-round perimeter sections, no bevel or CSG",
+    "edge_radius_estimated_m": 0.00025,
+    "quarter_segments": 4,
+    "tip_regularisation_estimated_m": 0.0004,
+    "native_manual_point_max_error_px": 0.9229421625740254,
+    "manual_working_band_px": 3,
+    "normals": "Normal of designed rolling crosssection crossed with local source station tangent; analytic front/back normals preserved at joins. Not normals inherited from an operation.",
+    "UV": "Continuous circumference/cross-profile chart for rolled edge, midsurface arc/height on front/back; no arbitrary tangent repair."
+  },
+  "material": {
+    "IOR": {
+      "value": 1.52,
+      "range": [
+        1.49,
+        1.59
+      ],
+      "status": "estimated"
+    },
+    "roughness": {
+      "value": 0.12,
+      "range": [
+        0.08,
+        0.22
+      ],
+      "status": "estimated"
+    },
+    "metallic": 0,
+    "surface_base_color_linear_RGB": [
+      1,
+      1,
+      1
+    ],
+    "transmission": 1,
+    "bulk_target_transmittance_at_thickness": {
+      "RGB": [
+        0.1,
+        0.12,
+        0.11
+      ],
+      "thickness_m": 0.0025,
+      "status": "estimated, clean visual target only; not measured from photographs"
+    },
+    "sigma_absorption_m_inverse": [
+      921.0340371976182,
+      848.1054144800364,
+      882.9099652758882
+    ],
+    "Cycles_volume_density_m_inverse": 1000.0,
+    "Cycles_volume_color_linear_RGB": [
+      0.07896596280238177,
+      0.1518945855199636,
+      0.11709003472411172
+    ],
+    "glTF_attenuation_distance_m": 0.001,
+    "glTF_attenuation_color_linear_RGB": [
+      0.39810717055349726,
+      0.4282254736676648,
+      0.4135776622790052
+    ],
+    "glTF_nominal_thickness_factor_m": 0.0025
+  },
+  "all_detailed_dimensions_estimated": true,
+  "unresolved": [
+    "Fixing centres and diameters",
+    "Hidden return flanges and exact panel mounting",
+    "Four related screw/washer/wellnut sets",
+    "Current RDC variant certification and installed headlamp/cable clearance"
+  ]
+}

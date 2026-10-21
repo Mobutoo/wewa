@@ -1,0 +1,11 @@
+# Référencer l’exposition avant de juger la matière — v2
+
+Le premier preset extérieur était trop sombre pour comparer les matières. Les témoins sont conservés ; la v2 corrige le protocole d’éclairage et d’exposition, sans modifier l’albédo ou les autres paramètres des pièces.
+
+Le [rendu v2](../../tools/render_motorcycle_material_lighting_review_v2.py) charge une source gelée, son export et le HDR avec leurs empreintes. Il vérifie le cadrage réel, masque provisoirement la pièce et rend une vraie carte Lambert diffuse 18 % face à la caméra, sans reflet spéculaire. Le centre du résultat EXR 32 bits est lu en linéaire ; l’exposition est choisie par `log2(0,18 / luminance_mesurée)`. La même exposition reste utilisée dans les deux vues finales : HDR puis HDR avec ajout d’un soleil chaud. La balance des blancs reste inchangée. Le fond de caméra gris est compensé séparément et n’éclaire pas l’objet.
+
+La carte et sa mesure sont une référence numérique du scénario. Elles ne rendent pas le HDR radiométriquement calibré, ne mesurent aucune matière réelle et ne certifient pas la caméra d’un téléphone. L’EXR de mesure reste privé ; son empreinte, ses valeurs et un PNG de la carte sont conservés. Un reflet bleu sous un ciel bleu n’est pas une erreur d’albédo démontrée. Les petits échantillonnages restent des aperçus.
+
+Relire réellement les images et comparer aux photos attribuées avant toute correction de matériau. Conserver l’ancien protocole, les symptômes et les nouvelles preuves ; une révision source distincte est nécessaire si une vraie correction de pièce est justifiée. Comparer ensuite le shader dans le moteur réel : un résultat Cycles ne prouve pas la parité de Babylon ou les performances iPhone.
+
+Trois familles examinées sur sources inchangées : [compteurs/verre](../reviews/instruments-v3-material-lighting-v2/README.md), [caoutchouc](../reviews/fork-bellows-v1-material-lighting-v2/README.md), [revêtement métallique](../reviews/fork-outer-left-material-lighting-v2/README.md). Les expositions diffèrent selon l’orientation de la carte dans le HDR ; aucun réglage de matière n’est adapté pour uniformiser artificiellement les rendus. Aucune réception artistique automatique.

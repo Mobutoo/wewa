@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-MIRROR-LEFT-001",
-  "label": "R\u00e9troviseur gauche \u2014 caches corrig\u00e9s, vues finales en cours",
+  "label": "Rétroviseur gauche v2 — filet aligné sur le profil",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -42,52 +42,34 @@
         0.22275640070438385
       ],
       "lens_mm": 70,
-      "PNG_path": "creative/reviews/mirror-left-v1/whole-front.png",
-      "PNG_sha256": "2c9814e904dbbc0529b8e34dc7526b2a92f4eb220cbac8fdb7ace9f7da18ab15",
-      "EXR_private_path": "/workspace/wewa-assets/renders/mirrors/mirror-left-v1/whole-front.exr",
-      "EXR_sha256": "bc717a1bf3c4896de667b56bb6eff14e2397dee42e40f3f8f9819185a859b40a",
+      "PNG_path": "creative/reviews/mirror-left-v2/whole-front.png",
+      "PNG_sha256": "060c5dba1756563e88f2e321aa03f61708203b1ac227ba21284fe873356591fb",
+      "EXR_private_path": "/workspace/wewa-assets/renders/mirrors/mirror-left-v2/whole-front.exr",
+      "EXR_sha256": "4faf5b5fad0b03611f9ef0c9e3112591c3f6265fedfb68b731b7afc3a63c89a0",
       "actually_saved": true,
-      "checkpoint_config_sha256": "9adbceab3c8137946019300d686ec15f79a08642819e1b2f4bf176d96e8ce9e2"
+      "checkpoint_config_sha256": "5340ebbac238eb2a0e067396bf8c800b1a175ca1a366b60b6a5203f59fdfa913",
+      "visual_read_by_agent": true
     },
     {
-      "name": "whole-back",
+      "name": "base-close",
       "camera_location_m": [
-        0.5487472414970398,
-        -0.7290658354759216,
-        0.2313871681690216
+        0.19688835740089417,
+        0.13696999847888947,
+        0.1867022067308426
       ],
       "camera_target_m": [
-        0.292877733707428,
-        -0.04939912632107735,
-        0.22275640070438385
+        0.1886511594057083,
+        -0.008244437165558338,
+        0.1379999965429306
       ],
-      "lens_mm": 70,
-      "PNG_path": "creative/reviews/mirror-left-v1/whole-back.png",
-      "PNG_sha256": "ad33a05c8ae4df82fbffaebc7d8d1981be803368a6e42abf601cb1220a6121b5",
-      "EXR_private_path": "/workspace/wewa-assets/renders/mirrors/mirror-left-v1/whole-back.exr",
-      "EXR_sha256": "49d1b4328b4ae0fb0833f0ca6f6ffb2f4205dab1902de8ce566d6dee73e16779",
+      "lens_mm": 75,
+      "PNG_path": "creative/reviews/mirror-left-v2/base-close.png",
+      "PNG_sha256": "f9eeaa2749bbacf7474d49735c7fd5120dfe696f2efb19bbeb7de31bda292e2d",
+      "EXR_private_path": "/workspace/wewa-assets/renders/mirrors/mirror-left-v2/base-close.exr",
+      "EXR_sha256": "2c592924b04a6bd0edbfc56cc8ab774bec7e382bf2161d79807724eb144e73fa",
       "actually_saved": true,
-      "checkpoint_config_sha256": "bfe9a6269f9241567ebbf1af3d2980eeed742d04de9e0b29fde8ddc58e24de57"
-    },
-    {
-      "name": "joint-close",
-      "camera_location_m": [
-        0.3378736078739166,
-        -0.2863640785217285,
-        0.26080477237701416
-      ],
-      "camera_target_m": [
-        0.24072271585464478,
-        -0.08295915275812149,
-        0.23019269108772278
-      ],
-      "lens_mm": 80,
-      "PNG_path": "creative/reviews/mirror-left-v1/joint-close.png",
-      "PNG_sha256": "c4c2c313e25e1e9f3072a072a32f7c696f79ca85cf462be067f8fd0ee310de82",
-      "EXR_private_path": "/workspace/wewa-assets/renders/mirrors/mirror-left-v1/joint-close.exr",
-      "EXR_sha256": "a3492bfc1c866ccd559d45d656031eadba5947e65088de47690f1368129ad1fe",
-      "actually_saved": true,
-      "checkpoint_config_sha256": "fc5acbb9d7166944eab5101d95626e0ed845c96f6da5d09471f97fa2f857d8db"
+      "checkpoint_config_sha256": "04b7142f966268c563dac90cc1d98b5f31fa3e8a12ffb8e81280594114170430",
+      "visual_read_by_agent": true
     }
   ],
   "criteria": [],
@@ -108,7 +90,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": "mirror-left-v1",
+      "revision": "mirror-left-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -116,7 +98,7 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": "mirror-left-v1",
+      "revision": "mirror-left-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -124,7 +106,7 @@
     },
     "G2": {
       "status": "blocked",
-      "revision": "mirror-left-v1",
+      "revision": "mirror-left-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -132,35 +114,35 @@
     },
     "G3": {
       "status": "rework",
-      "revision": "mirror-left-v1",
+      "revision": "mirror-left-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../../assets-src/moto-components/mirrors/mirror-left-v1.blend",
+          "path": "../../../assets-src/moto-components/mirrors/mirror-left-v2.blend",
           "kind": "editable_source",
-          "revision": "mirror-left-v1",
-          "sha256": "bdd8a799b6a5ae07a5c076ba0c5a1019f6477ff9a4be5995229e13c2def3c6d0"
+          "revision": "mirror-left-v2",
+          "sha256": "7725731e869b6edeea744965054518659eeb6355f6acc670718738a8144b1a30"
         },
         {
-          "path": "../../reviews/mirror-left-v1/whole-front.png",
+          "path": "../../reviews/mirror-left-v2/whole-front.png",
           "kind": "isolated_comparison",
-          "revision": "mirror-left-v1",
-          "sha256": "2c9814e904dbbc0529b8e34dc7526b2a92f4eb220cbac8fdb7ace9f7da18ab15"
+          "revision": "mirror-left-v2",
+          "sha256": "060c5dba1756563e88f2e321aa03f61708203b1ac227ba21284fe873356591fb"
         }
       ],
-      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reason": "Profil cosmétique du filet aligné sur ses ruptures hélicoïdales ; neuf autres corps/matrices/matières conservés. Deux finales réellement lues ; intervalle fileté supérieur propre au gauche conservé d’après sa photo, sans copie du rapprochement RH. Cotes/pas/rayon du verre et contours OEM non calibrés.",
       "reviewed_at": null
     },
     "G4": {
       "status": "rework",
-      "revision": "mirror-left-v1",
+      "revision": "mirror-left-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/mirror-left-v1/joint-close.png",
+          "path": "../../reviews/mirror-left-v2/base-close.png",
           "kind": "surface_or_sound_comparison",
-          "revision": "mirror-left-v1",
-          "sha256": "c4c2c313e25e1e9f3072a072a32f7c696f79ca85cf462be067f8fd0ee310de82"
+          "revision": "mirror-left-v2",
+          "sha256": "f9eeaa2749bbacf7474d49735c7fd5120dfe696f2efb19bbeb7de31bda292e2d"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -168,35 +150,41 @@
     },
     "G5": {
       "status": "rework",
-      "revision": "mirror-left-v1",
+      "revision": "mirror-left-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/mirror-left-v1/source-geometry-check.json",
+          "path": "../../reviews/mirror-left-v2/source-geometry-check.json",
           "kind": "motion_or_interface_check",
-          "revision": "mirror-left-v1",
-          "sha256": "ba00bcf7f055285831a776c250f7851d6aef744178e63ce3b0e6a4513ff8b0ea"
+          "revision": "mirror-left-v2",
+          "sha256": "7a48859f471cd15c67d17ea9c1f5d31a0fbfc849669ed1ac243d7ccb3e180158"
+        },
+        {
+          "path": "../../reviews/mirror-left-v2/independent-motion-parity/attempt-01/browser-source-motion-parity.json",
+          "kind": "motion_or_interface_check",
+          "revision": "mirror-left-v2",
+          "sha256": "d28f6a15058de7a8734888ba7783624c9eebe557f7b6801bf3247f7ead0b5c1c"
         }
       ],
-      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reason": "Témoin source indépendant et sommet réellement chargé dans Babylon concordent sur4poses combinées, écart max18,70nm. Réglages et fit estimés ; aucun contrôle OEM de filet/rotule/serrage ni qualification iPhone.",
       "reviewed_at": null
     },
     "G6": {
       "status": "rework",
-      "revision": "mirror-left-v1",
+      "revision": "mirror-left-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/mirror-left-v1/export-buffer-check.json",
+          "path": "../../reviews/mirror-left-v2/export-buffer-check.json",
           "kind": "technical_export_check",
-          "revision": "mirror-left-v1",
-          "sha256": "2cbdc4ce0e9226bab53afe002edd8edb0fffa5cb847608d37522a21a28111c1a"
+          "revision": "mirror-left-v2",
+          "sha256": "71f0d82da0bb6cc0289af6074840e5aa49f0f7f618303556466b865d4dc702ff"
         },
         {
-          "path": "../../reviews/mirror-left-v1/inspection-v3/engine-driver.png",
+          "path": "../../reviews/mirror-left-v2/inspection-v3/engine-driver.png",
           "kind": "real_runtime_comparison",
-          "revision": "mirror-left-v1",
-          "sha256": "d4531054e98c6c57f79b21be55989e04c5a4700418113508e1f0e568261f00e9"
+          "revision": "mirror-left-v2",
+          "sha256": "6af6f03e135802d1ac353183eeb4e6554531d7c8b1eaed77235c10d4138fe6e1"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -204,7 +192,7 @@
     },
     "G7": {
       "status": "pending",
-      "revision": "mirror-left-v1",
+      "revision": "mirror-left-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
@@ -212,7 +200,7 @@
     },
     "G8": {
       "status": "pending",
-      "revision": "mirror-left-v1",
+      "revision": "mirror-left-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -220,12 +208,19 @@
     }
   },
   "active_detailed_fabrication": false,
-  "source_revision": "mirror-left-v1",
-  "export_revision": "mirror-left-v1-inspection",
-  "next_action": "LH v2 phase-aligned stud source frozen after whole/specular/diffuse previews; final96 queued behind RHv3. Upper thread interval kept from isolated related LH photo, not copied from RH. Retain pendingv2 and dimensional/fit gaps.",
+  "source_revision": "mirror-left-v2",
+  "export_revision": "mirror-left-v2-inspection",
+  "next_action": "Revue photographique et interfaces estimées avant réception, sans modifier le placement LH par analogie avec RH.",
   "art_accepted": false,
   "production_group": 8,
-  "candidate_source": "../../../assets-src/moto-components/mirrors/README-left.md",
-  "candidate_review": "../../reviews/mirror-left-v1/README.md",
-  "pending_revision": "mirror-left-v2"
+  "candidate_source": "../../../assets-src/moto-components/mirrors/README-left-v2.md",
+  "candidate_review": "../../reviews/mirror-left-v2/README.md",
+  "previous_revisions": [
+    {
+      "revision": "mirror-left-v1",
+      "source": "../../../assets-src/moto-components/mirrors/README-left.md",
+      "review": "../../reviews/mirror-left-v1/README.md",
+      "art_accepted": false
+    }
+  ]
 }

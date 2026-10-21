@@ -1,0 +1,123 @@
+{
+  "schema": "wewa.estimated-cylinder-envelope.v1",
+  "created_utc": "2026-10-21T02:06:35.686387+00:00",
+  "component_id": "MOTO-ENGINE-CYLINDER-001",
+  "before_geometry": true,
+  "scope": "Cylinder barrel casting alone; no head, liner/piston or internal mechanism fabricated in this unit",
+  "references_actually_reopened": [
+    "/workspace/wewa-assets/references/engine-cylinder/pow-150-36PF0002-optimized.png",
+    "/workspace/wewa-assets/references/engine-cylinder/pow-150-36PF00023-optimized.png",
+    "/workspace/wewa-assets/references/engine-cylinder/pow-150-36PF0002-1-optimized.png",
+    "/workspace/wewa-assets/references/engine-cylinder/bikebox-black-4-BOXER-KIT-CYLINDER-BLOCK-PISTON-BLACK-36JZ0002-BAJAJ-1.jpg",
+    "/workspace/wewa-assets/references/body-powertrain-18/engine.webp",
+    "/workspace/wewa-assets/references/body-powertrain-18/strong-chasis.webp",
+    "/workspace/wewa-assets/references/body-powertrain-18/rotation-04.png"
+  ],
+  "basis": "RDC black finish and tilted fin stack visible; related BM150 disassembled photos inform separated volumes and real passages only. Numeric values below are bounded production estimates, no bore/stroke deduction from124.45cm3.",
+  "datum_world_working_m": [
+    0,
+    0.125,
+    -0.54
+  ],
+  "datum_uncertainty_m": [
+    0.015,
+    0.035,
+    0.035
+  ],
+  "axes": "Localx physicalLEFT+X; localy rear, localz cylinderaxis tilted20degrees toward\u2212Y from worldZ",
+  "working_dimensions_estimated": [
+    {
+      "property": "height along cylinderaxis",
+      "value_m": 0.073,
+      "range_m": [
+        0.06,
+        0.1
+      ]
+    },
+    {
+      "property": "fin outside transverse width",
+      "value_m": 0.128,
+      "range_m": [
+        0.105,
+        0.15
+      ]
+    },
+    {
+      "property": "fin outside longitudinal depth",
+      "value_m": 0.112,
+      "range_m": [
+        0.09,
+        0.14
+      ]
+    },
+    {
+      "property": "material bore void radius, not exact OEM bore or liner fit",
+      "value_m": 0.028,
+      "range_m": [
+        0.024,
+        0.032
+      ]
+    },
+    {
+      "property": "cylinder tilt forward degrees",
+      "value": 20,
+      "range": [
+        10,
+        30
+      ]
+    },
+    {
+      "property": "fin count",
+      "value": 5,
+      "range": [
+        4,
+        7
+      ]
+    },
+    {
+      "property": "fin thickness",
+      "value_m": 0.0035,
+      "range_m": [
+        0.0025,
+        0.005
+      ]
+    },
+    {
+      "property": "stud through bore diameter",
+      "value_m": 0.0085,
+      "range_m": [
+        0.007,
+        0.01
+      ]
+    }
+  ],
+  "geometry_plan": [
+    "Continuous rounded asymmetric fin perimeter, varying reach and rounded edge sections; real gaps joined only through casting core",
+    "Separate base mating flange and top deck integral to barrel; four provisional stud passages, through cylinder void and side timing well",
+    "Timing housing placement on pilot left is conditional related reconstruction, no chain fabricated",
+    "No generic stacked square blocks, no global bevel after CSG; constructive edge radii before union",
+    "Gray whole/underface and raking light fin edge before PBR/freeze, evaluated closed connected material volume and actual GLB triangles"
+  ],
+  "gaps": [
+    "Current125RDC bare part identity and dimensional drawing absent",
+    "Exact fin count/depth/tilt unresolved",
+    "Mating planes, stud pattern, liner and timing passage hidden sections unknown",
+    "Engine core/semelle not yet fabricated, assembly placement unqualified"
+  ],
+  "art_accepted": false,
+  "preflight_failure_and_source_correction": {
+    "issue": "Initial52mm-longitudinal timing housing union enclosed six narrow unplanned cavities, not six external components",
+    "actual_void_xy_bounds_m": [
+      [
+        0.0337566957,
+        -0.0232603271
+      ],
+      [
+        0.0359999985,
+        -0.023
+      ]
+    ],
+    "correction": "Increase estimated cast housing longitudinal depth52\u219254mm within25percent uncertainty, make actual structural overlap; no negative-volume components discarded",
+    "archive": "/workspace/wewa-assets/work-in-progress/engine-cylinder/rejected-six-enclosed-voids"
+  }
+}

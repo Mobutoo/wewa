@@ -1,0 +1,531 @@
+{
+  "component_id": "MOTO-FRAME-HEADTUBE-001",
+  "revision": "frame-head-tube-v1",
+  "source_sha256": "12832eb665a9ba9f3dbd1f6e1501bcafa0ebf66bf4395a05e0d23bf7d0f90ccc",
+  "source_check": {
+    "component_id": "MOTO-FRAME-HEADTUBE-001",
+    "revision": "frame-head-tube-v1",
+    "collection": "WEWA_FRAME_HEADTUBE_ISOLATED",
+    "frame": "Local+Z steeringaxis; origin lower opening centre; no installedpose or tilt certified",
+    "source_sha256": "12832eb665a9ba9f3dbd1f6e1501bcafa0ebf66bf4395a05e0d23bf7d0f90ccc",
+    "export_sha256": "e40f3117915fc191e1f515dc72d556aa45775e489d71c248caabf739799803b4",
+    "vertices": 46080,
+    "triangles": 92160,
+    "connected_shells": 1,
+    "nonmanifold_edges": 0,
+    "signed_volume_m3": 3.203439661627969e-05,
+    "minimum_triangle_area_m2": 1.1700101456989971e-08,
+    "zero_area_triangles_at_1e18_m2": 0,
+    "probes": [
+      {
+        "name": "axis",
+        "origin_x_m": 0,
+        "Z_ray_clear": true,
+        "expected_clear": true
+      },
+      {
+        "name": "inside_working_bore",
+        "origin_x_m": 0.0202,
+        "Z_ray_clear": true,
+        "expected_clear": true
+      },
+      {
+        "name": "estimated_annular_end_face",
+        "origin_x_m": 0.0211,
+        "Z_ray_clear": false,
+        "expected_clear": false
+      },
+      {
+        "name": "outside_ring",
+        "origin_x_m": 0.0245,
+        "Z_ray_clear": true,
+        "expected_clear": true
+      }
+    ],
+    "fresh_analytical_profile_normals": true,
+    "maximum_source_corner_normal_vector_error": 0.0005180683821352359,
+    "normal_encoding_note": "Fresh analytical normals encoded by Blender source API; numerical max vector error bounded by0.001, not a physical tolerance",
+    "measured_manufacturer_dimensions": false,
+    "all_physical_dimensions_estimated": true,
+    "bearing_seats_modelled": false,
+    "complete_frame_modelled": false,
+    "current_RDC_identity_verified": false,
+    "art_accepted": false,
+    "geometry_and_smooth_flags_preserved_by_material_stage": "ff65e0b258a3f920eebd75d92bd3a6f9175a062caa4037d71c5f4845baf29b04"
+  },
+  "export_check": {
+    "asset": "frame-headtube",
+    "revision": "frame-head-tube-v1",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/frame/head-tube/frame-head-tube-inspection.glb",
+        "sha256": "e40f3117915fc191e1f515dc72d556aa45775e489d71c248caabf739799803b4",
+        "bytes": 3200436,
+        "glTF_errors": 0,
+        "glTF_warnings": 0,
+        "messages": [
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/1/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/1/attributes/TEXCOORD_0"
+          }
+        ],
+        "bounds": {
+          "min": [
+            -0.024000000208616257,
+            0,
+            -0.024000000208616257
+          ],
+          "max": [
+            0.024000000208616257,
+            0.15000000596046448,
+            0.024000000208616257
+          ]
+        },
+        "vertices": 47970,
+        "triangles": 92160,
+        "triangle_area_local_m2": {
+          "minimum": 1.1700101462605052e-08,
+          "exactly_zero": 0,
+          "below_1e_minus18": 0,
+          "note": "Local exported coordinates; not a self-intersection or surface-fidelity proof"
+        },
+        "tangent_frame": {
+          "vectors": 47970,
+          "max_unit_error": 6.048626551269365e-05,
+          "max_normal_dot": 0.00012584978107454958,
+          "handedness_sign_is_unit": true,
+          "note": "Finite orthonormal frame only; not full MikkTSpace or renderer visual parity"
+        },
+        "node_names": [
+          "Frame headtube - relatedPF111000 conditional envelope"
+        ],
+        "materials": [
+          {
+            "name": "Black frame coating - composition unmeasured",
+            "basecolor": [
+              0.007000000216066837,
+              0.008999999612569809,
+              0.012000000104308128,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "extensions": []
+          },
+          {
+            "name": "Unseen bore envelope - finish estimated",
+            "basecolor": [
+              0.3499999940395355,
+              0.3700000047683716,
+              0.4000000059604645,
+              1
+            ],
+            "metallic": 0.6499999761581421,
+            "roughness": 0.2800000011920929,
+            "extensions": []
+          }
+        ]
+      }
+    ],
+    "scope": "Actual glTF buffers and format only; not shape reception, physical interface or mobile qualification",
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "browser_check": {
+    "camera": {
+      "position": [
+        1.5851002763711396e-17,
+        0.23399618546081416,
+        -0.2588665201223321
+      ],
+      "target": [
+        0,
+        0.07500000298023224,
+        0
+      ],
+      "radius": 0.30379542669968596,
+      "fov": 0.72,
+      "fovMode": 0
+    },
+    "framing": {
+      "min": [
+        0.439647346111724,
+        0.14357619030593918
+      ],
+      "max": [
+        0.5603526187482254,
+        0.8148771933633846
+      ],
+      "scope": "Conservative projected actual mesh bounding boxes; whole-piece framing only"
+    },
+    "asset": "frame-headtube",
+    "revision": "frame-head-tube-v1",
+    "config": {
+      "label": "Colonne de cadre — enveloppe extérieure isolée",
+      "lot": 15,
+      "review": "frame-head-tube-v1",
+      "source": "frame/head-tube/frame-head-tube-v1.blend",
+      "collection": "WEWA_FRAME_HEADTUBE_ISOLATED",
+      "component_id": "MOTO-FRAME-HEADTUBE-001",
+      "source_frame": "isolated_local",
+      "files": [
+        "frame/head-tube/frame-head-tube-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Origine ouverture basse,+Z axe. Tube ouvert/lèvres estimés depuis cadres nus PF111000 ; intérieur droit provisoire sans sièges de roulement. Pas de pose inclinée ni de cadre complet certifié."
+    },
+    "files": [
+      "frame/head-tube/frame-head-tube-inspection.glb"
+    ],
+    "meshes": 2,
+    "vertices": 47970,
+    "triangles": 92160,
+    "bounds": {
+      "min": [
+        -0.024000000208616257,
+        0,
+        -0.024000000208616257
+      ],
+      "max": [
+        0.024000000208616257,
+        0.15000000596046448,
+        0.024000000208616257
+      ]
+    },
+    "textures_ready": true,
+    "renderer": {
+      "vendor": "Google Inc. (Google)",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "rig_states": {},
+    "attachments": [],
+    "rigs": [],
+    "art_accepted": false,
+    "physical_iphone_tested": false,
+    "public_game_unchanged": true,
+    "pixel_checks": [
+      {
+        "view": "quarter",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 54057,
+        "changed_fraction": 0.046924479166666665,
+        "rgb_min": [
+          23,
+          27,
+          32
+        ],
+        "rgb_max": [
+          189,
+          195,
+          205
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "driver",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 72872,
+        "changed_fraction": 0.06325694444444445,
+        "rgb_min": [
+          23,
+          27,
+          32
+        ],
+        "rgb_max": [
+          239,
+          240,
+          241
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "reverse",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 26763,
+        "changed_fraction": 0.02323177083333333,
+        "rgb_min": [
+          21,
+          25,
+          30
+        ],
+        "rgb_max": [
+          193,
+          194,
+          195
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "landscape-844x390",
+        "width": 844,
+        "height": 390,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 13985,
+        "changed_fraction": 0.04248693644428241,
+        "rgb_min": [
+          24,
+          28,
+          33
+        ],
+        "rgb_max": [
+          193,
+          194,
+          195
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      }
+    ],
+    "page_errors": [],
+    "http_failures": [],
+    "pose_checks": [],
+    "scope": "Actual Babylon imports and vertex motion in Chromium softwareWebGL; not Safari/iPhone/FPS qualification",
+    "render_mode": "Manual frames after scene readiness",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/frame/head-tube/frame-head-tube-inspection.glb",
+        "sha256": "e40f3117915fc191e1f515dc72d556aa45775e489d71c248caabf739799803b4"
+      }
+    ],
+    "inspector_sha256": "19e4908f4a7b69b492710adfb7d28a5508745721f9c991941a5ed439f3a9fb07",
+    "capture_tool_sha256": "53b07b0e9bda4b86c9d7f05c10815755b3be50dcc85e29a4b3f164cbc38fcf28",
+    "inspector_path": "tools/motorcycle-lab/review-v2.js",
+    "capture_tool_path": "tools/capture_motorcycle18_v3.py",
+    "inputs_unchanged_during_capture": true
+  },
+  "render_report": {
+    "source_sha256": "12832eb665a9ba9f3dbd1f6e1501bcafa0ebf66bf4395a05e0d23bf7d0f90ccc",
+    "export_sha256": "e40f3117915fc191e1f515dc72d556aa45775e489d71c248caabf739799803b4",
+    "renderer": "Blender4.3.2 CyclesCPU OIDN",
+    "samples": 96,
+    "resolution_px": [
+      1200,
+      1000
+    ],
+    "views": [
+      {
+        "name": "quarter",
+        "camera_location_m": [
+          0.26,
+          0.3,
+          0.22
+        ],
+        "camera_target_m": [
+          0,
+          0,
+          0.075
+        ],
+        "ortho_scale_m": 0.215,
+        "allow_deliberate_macro_crop": false,
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "FRAME_HEADTUBE_CAMERA",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0010000000474974513,
+            5.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.37447981247901874,
+          "farthest_actual_vertex_depth_m": 0.47080125612659796,
+          "projected_uv_min": [
+            0.3883739126320095,
+            0.06147835554968051
+          ],
+          "projected_uv_max": [
+            0.6116259155810645,
+            0.9385211752795204
+          ],
+          "allow_deliberate_crop": false,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Frame headtube - relatedPF111000 conditional envelope",
+              "vertices": 46080,
+              "depth_m": [
+                0.37447981247901874,
+                0.47080125612659796
+              ],
+              "projected_uv_min": [
+                0.3883739126320095,
+                0.06147835554968051
+              ],
+              "projected_uv_max": [
+                0.6116259155810645,
+                0.9385211752795204
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": false,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true,
+          "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        },
+        "PNG_sha256": "9918e193362354a41079654023fde75ab572c534df8db8310cf437e67b6275fe",
+        "checkpoint_file": "checkpoint-quarter.json",
+        "reused_verified_checkpoint": false
+      },
+      {
+        "name": "reverse",
+        "camera_location_m": [
+          -0.26,
+          -0.3,
+          0.2
+        ],
+        "camera_target_m": [
+          0,
+          0,
+          0.075
+        ],
+        "ortho_scale_m": 0.215,
+        "allow_deliberate_macro_crop": false,
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "FRAME_HEADTUBE_CAMERA",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0010000000474974513,
+            5.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.37088841953631013,
+          "farthest_actual_vertex_depth_m": 0.46151770795741953,
+          "projected_uv_min": [
+            0.388373856641104,
+            0.06105996936655256
+          ],
+          "projected_uv_max": [
+            0.6116258373419913,
+            0.938939869977363
+          ],
+          "allow_deliberate_crop": false,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Frame headtube - relatedPF111000 conditional envelope",
+              "vertices": 46080,
+              "depth_m": [
+                0.37088841953631013,
+                0.46151770795741953
+              ],
+              "projected_uv_min": [
+                0.388373856641104,
+                0.06105996936655256
+              ],
+              "projected_uv_max": [
+                0.6116258373419913,
+                0.938939869977363
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": false,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true,
+          "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        },
+        "PNG_sha256": "2651c586244aa2ea28e1099a9e0fb70d47c85c4b25f21a8ec5f28562ca17b12f",
+        "checkpoint_file": "checkpoint-reverse.json",
+        "reused_verified_checkpoint": false
+      },
+      {
+        "name": "upper-lip",
+        "camera_location_m": [
+          0.07,
+          0.09,
+          0.23
+        ],
+        "camera_target_m": [
+          0,
+          0,
+          0.145
+        ],
+        "ortho_scale_m": 0.08,
+        "allow_deliberate_macro_crop": true,
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "FRAME_HEADTUBE_CAMERA",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0010000000474974513,
+            5.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.12014493128489409,
+          "farthest_actual_vertex_depth_m": 0.2479607070532022,
+          "projected_uv_min": [
+            0.20000614627507085,
+            -1.4565255088802573
+          ],
+          "projected_uv_max": [
+            0.7999935369142525,
+            0.7728958697039316
+          ],
+          "allow_deliberate_crop": true,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Frame headtube - relatedPF111000 conditional envelope",
+              "vertices": 46080,
+              "depth_m": [
+                0.12014493128489409,
+                0.2479607070532022
+              ],
+              "projected_uv_min": [
+                0.20000614627507085,
+                -1.4565255088802573
+              ],
+              "projected_uv_max": [
+                0.7999935369142525,
+                0.7728958697039316
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": true,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true,
+          "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        },
+        "PNG_sha256": "65179cd88eef2574ed7bacef5326871c74e52056321aaf1638a903280e0cdc57",
+        "checkpoint_file": "checkpoint-upper-lip.json",
+        "reused_verified_checkpoint": false
+      }
+    ],
+    "art_accepted": false
+  },
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true
+}

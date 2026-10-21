@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "date": "2026-10-21",
+  "manufacturer_current_RDC": {
+    "known": "125HD page official appearance and headlamp12V only",
+    "visible": "Circular optical unit, dark perimeter, two dark upper/lower bands, red surrounding cowl, amber round indicators",
+    "unknown": [
+      "Whether dark bands are separate external guard or another structure",
+      "Exact assembly part number",
+      "Headlamp diameter/depth, lens section, optical facet shape, installed tilt",
+      "Exact bulb type/power/socket and currentRDC bracket dimensions"
+    ]
+  },
+  "related_catalogues": {
+    "D04_headlamp": "PF401000 assembly, DJ201046 rim, DJ201051 reflector+lens, CL20102312V35/35WHS1 bulb; sheet57, related only",
+    "D15_headlamp": "PF401007 withoutbulb, PF401009 holder/socket, PF121025 fairing structure; sheet56/57 related only",
+    "D04_front_signals": "PF401001 LH/PF401002 RH, DU201016 lens; sheet58 related only",
+    "D15_front_signals": "DM201027 LH/DM201028 RH12V10W; sheet58 related only"
+  },
+  "conflicts": [
+    {
+      "id": "HL-CURRENT-GUARD",
+      "observation": "OfficialRDC dark rim+two dark bowed horizontal bands; ZariaPF401007 chrome rim and no visible bands.",
+      "consequence": "Do not certify oldPF401007 exactRDC or create lens bars as glass structure. Investigate separate guard."
+    },
+    {
+      "id": "COWL-PAINT-CODES",
+      "observation": "99rpm lists PF7401X3 EbonyBlack, PF74013F FlameRed, PF74013E ElectronBlue.",
+      "consequence": "Blackrelatedphotos inform candidate surface/hidden ribs, not exact red part identity or paint match."
+    },
+    {
+      "id": "HL-200MM",
+      "observation": "Search snippet of Bigl aftermarketYK-275644 mentions200mm and PF401007; downloaded page has no readable product data.",
+      "status": "unverified search lead, not manufacturer dimension",
+      "consequence": "No documented200mm currentRDC claim or packaging/grid calibration."
+    },
+    {
+      "id": "MOTOZILLA-NONPHOTO",
+      "observation": "Both DJ201051 product images are exploded drawings.",
+      "consequence": "No optical rib/reflector source photography obtained from these images."
+    }
+  ],
+  "decomposition": [
+    {
+      "piece": "Opaque moulded headlamp rear bucket",
+      "references": "ZariaPF401007 rear/two sides, exactRDC hidden applicability unknown",
+      "status": "related candidate possible; plan before construction"
+    },
+    {
+      "piece": "Front rim",
+      "references": "CurrentRDC perimeter + related chromePF401007; need separate guard attribution",
+      "status": "hold classification"
+    },
+    {
+      "piece": "Reflector",
+      "references": "Related catalogues and wrapped face only",
+      "status": "optical sections unknown; search actual bare photos"
+    },
+    {
+      "piece": "Finite lens",
+      "references": "OfficialRDC face + wrapped related face",
+      "status": "prism arrangement variant unresolved; do not invent full optical prescription"
+    },
+    {
+      "piece": "Lamp/holder",
+      "references": "Related CL201023/PF401009, currentRDC12V only",
+      "status": "related identity unknown exact; search actual photos"
+    },
+    {
+      "piece": "Possible front protection guard",
+      "references": "OfficialRDC dark perimeter/two bands",
+      "status": "hypothesis under independent documentary investigation"
+    },
+    {
+      "piece": "Red headlamp fairing/cowl",
+      "references": "CurrentRDC red appearance + four related blackPF7401X3 photos + PF74013F related red code",
+      "status": "separate original source planned, parent explicitly assigned"
+    },
+    {
+      "piece": "Front LH amber signal",
+      "references": "OfficialRDC + relatedpartcatalogues",
+      "status": "search exact round unit and stem before shape"
+    },
+    {
+      "piece": "Front RH amber signal",
+      "references": "OfficialRDC + relatedpartcatalogues",
+      "status": "separate side, no automatic unobserved mirroring"
+    }
+  ],
+  "all_required_components_built": false,
+  "art_accepted": false
+}
