@@ -1,0 +1,62 @@
+{
+  "package": "P30",
+  "revision": "front-completion-p30-v1",
+  "milestone": "existing candidate exports recovered unchanged; explicit child inventory and blocking gaps",
+  "new_geometry": false,
+  "reused": [
+    {
+      "source": "HEAD:assets-src/moto-components/instrument-visor/instrument-visor-v1.glb",
+      "snapshot": "assets-src/moto-components/front-completion-p30-v1/instrument-visor-v1.glb",
+      "new_geometry": false
+    },
+    {
+      "source": "HEAD:assets-src/moto-components/instrument-bracket/instrument-bracket-v2-inspection.glb",
+      "snapshot": "assets-src/moto-components/front-completion-p30-v1/instrument-bracket-v2-inspection.glb",
+      "new_geometry": false
+    }
+  ],
+  "child_inventory": [
+    {
+      "child": "visor panel and rolled rim",
+      "state": "reuse existing v1 candidate"
+    },
+    {
+      "child": "visor hidden returns",
+      "state": "unfabricated; depth/backside unresolved"
+    },
+    {
+      "child": "four visor screws/washers/nuts",
+      "state": "unfabricated; hole centres, diameters and visible head forms not established"
+    },
+    {
+      "child": "instrument bracket",
+      "state": "reuse existing v2 candidate"
+    },
+    {
+      "child": "instruments",
+      "state": "reuse existing v5, source pointer preserved"
+    },
+    {
+      "child": "command/mirror clearance",
+      "state": "not validated in mounted cockpit"
+    },
+    {
+      "child": "final headlamp/harness interfaces",
+      "state": "blocked by P06/P25/P29; not transferred from isolated reviews"
+    }
+  ],
+  "evidence": [
+    "assets-src/moto-components/instrument-visor/README_v1.md",
+    "assets-src/moto-components/instruments/README_v5.md"
+  ],
+  "unresolved_gap": "No certified mounting centres/returns or combined steering/control clearance.",
+  "official_views_actually_read": [
+    "/workspace/wewa-assets/references/exterior-completion-current/00.png",
+    "/workspace/wewa-assets/references/exterior-completion-current/02.png"
+  ],
+  "package_complete": false,
+  "mounted_fit": false,
+  "art_accepted": false,
+  "physical_device_qualified": false,
+  "catalog_note": "Separate isolated entries; no placement or assembly equivalence asserted"
+}

@@ -28,6 +28,8 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+[Sauvegarde intermédiaire de l’avant : sources grises et recherches, non livrées comme pièces terminées](creative/reviews/exterior-continuation-checkpoint-01.md).
+
 - **P02** : [rear-rack-deck — sources, rendus et contrôles](creative/reviews/rear-rack-deck-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
 
 ## Exécution du plan — P01 et P02 commencés

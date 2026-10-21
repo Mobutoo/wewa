@@ -1,0 +1,62 @@
+{
+  "package": "P28",
+  "revision": "front-completion-p28-v1",
+  "milestone": "existing candidate exports recovered unchanged; explicit child inventory and blocking gaps",
+  "new_geometry": false,
+  "reused": [
+    {
+      "source": "HEAD:assets-src/moto-components/handlebar-clamps/mounting-nyloc-v3/handlebar-mount-nyloc-v3-inspection.glb",
+      "snapshot": "assets-src/moto-components/front-completion-p28-v1/handlebar-mount-nyloc-v3-inspection.glb",
+      "new_geometry": false
+    },
+    {
+      "source": "HEAD:assets-src/moto-components/handlebar-clamps/mounting-upper-washer/handlebar-mount-upper-washer-inspection.glb",
+      "snapshot": "assets-src/moto-components/front-completion-p28-v1/handlebar-mount-upper-washer-inspection.glb",
+      "new_geometry": false
+    }
+  ],
+  "child_inventory": [
+    {
+      "child": "upper washer DS181007",
+      "state": "reuse existing bounded candidate"
+    },
+    {
+      "child": "upper damper DS181008",
+      "state": "reuse existing bounded candidate; not a template for lower"
+    },
+    {
+      "child": "mounting Nyloc",
+      "state": "reuse existing v3 candidate"
+    },
+    {
+      "child": "lower damper DS181009",
+      "state": "unfabricated; section and faces unknown; no duplication of upper"
+    },
+    {
+      "child": "lower washer DS181010",
+      "state": "unfabricated; flat/dished/stepped cross section unresolved"
+    },
+    {
+      "child": "lever pivot washers/nuts",
+      "state": "pivot and nut present in existing controls; missing washer section not evidenced"
+    },
+    {
+      "child": "stack preload/contact",
+      "state": "unverified; exploded order does not establish compression or dimensions"
+    }
+  ],
+  "evidence": [
+    "creative/research/handlebar-mount-stack-followup-v2/README.md",
+    "creative/research/handlebar-clamps/mounting-stack-section-addendum-v1.json"
+  ],
+  "unresolved_gap": "Lower washer/damper need isolated physical profiles. No generic washers/grommets substituted.",
+  "official_views_actually_read": [
+    "/workspace/wewa-assets/references/exterior-completion-current/00.png",
+    "/workspace/wewa-assets/references/exterior-completion-current/02.png"
+  ],
+  "package_complete": false,
+  "mounted_fit": false,
+  "art_accepted": false,
+  "physical_device_qualified": false,
+  "catalog_note": "Separate isolated entries; no placement or assembly equivalence asserted"
+}

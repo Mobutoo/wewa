@@ -1,0 +1,2 @@
+import fs from 'node:fs/promises';import crypto from 'node:crypto';import {validateBytes} from 'gltf-validator';
+for(const p of process.argv.slice(2)){const bytes=await fs.readFile(p);const v=await validateBytes(new Uint8Array(bytes),{uri:p,maxIssues:1000});const report={path:p,sha256:crypto.createHash('sha256').update(bytes).digest('hex'),...v};await fs.writeFile(p+'.validator.json',JSON.stringify(report,null,2));console.log(JSON.stringify({path:p,errors:v.issues.numErrors,warnings:v.issues.numWarnings}));if(v.issues.numErrors)process.exitCode=1;}

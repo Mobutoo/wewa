@@ -1,0 +1,58 @@
+{
+  "package": "P25",
+  "revision": "front-completion-p25-v1",
+  "milestone": "existing candidate exports recovered unchanged; explicit child inventory and blocking gaps",
+  "new_geometry": false,
+  "reused": [
+    {
+      "source": "HEAD:assets-src/moto-components/front-fork/outer-right/fork-outer-right-inspection.glb",
+      "snapshot": "assets-src/moto-components/front-completion-p25-v1/fork-outer-right-inspection.glb",
+      "new_geometry": false
+    },
+    {
+      "source": "HEAD:assets-src/moto-components/front-fork/inner-tube/front-fork-inner-tube-inspection.glb",
+      "snapshot": "assets-src/moto-components/front-completion-p25-v1/front-fork-inner-tube-inspection.glb",
+      "new_geometry": false
+    }
+  ],
+  "child_inventory": [
+    {
+      "child": "inner tube",
+      "state": "reuse existing candidate"
+    },
+    {
+      "child": "LH/RH sliders",
+      "state": "existing distinct candidates; not mirrored"
+    },
+    {
+      "child": "bellows",
+      "state": "existing candidate; 40.6mm opening versus 48mm slider collar is a known mismatch"
+    },
+    {
+      "child": "top capsules",
+      "state": "unfabricated; isolated profile and seat dimensions unresolved"
+    },
+    {
+      "child": "steering stem/cap fasteners",
+      "state": "unfabricated; form and exposed interfaces unresolved"
+    },
+    {
+      "child": "triple fasteners and visible joins",
+      "state": "unfabricated; no verified bore/station or mounted clamping fit"
+    }
+  ],
+  "evidence": [
+    "assets-src/moto-components/front-fork/outer-right/README.md",
+    "assets-src/moto-components/front-fork/inner-tube/README.md"
+  ],
+  "unresolved_gap": "Explicit 48mm slider collar versus 40.6mm bellows opening mismatch; no mounted steering fit.",
+  "official_views_actually_read": [
+    "/workspace/wewa-assets/references/exterior-completion-current/00.png",
+    "/workspace/wewa-assets/references/exterior-completion-current/02.png"
+  ],
+  "package_complete": false,
+  "mounted_fit": false,
+  "art_accepted": false,
+  "physical_device_qualified": false,
+  "catalog_note": "Separate isolated entries; no placement or assembly equivalence asserted"
+}

@@ -1,0 +1,9 @@
+# Compteurs v5 — normales du carter et des fonds de pods
+
+Source `instruments-v5.blend`, export réel `instruments-v5-inspection.glb`, collection `WEWA_INSTRUMENTS_SEPARATE_PARTS`. La v4 intermédiaire est conservée sans finales96 et sans réception ; la v5 reprend sa correction de carter, puis corrige uniquement les deux fonds de pods réellement plans et leurs limites de normales. Les fonds étaient lissés avec les flancs, créant un faux creux/bombé dans les reflets. Leurs faces planes sont désormais plates ; les profils courbes et leurs sections restent identiques.
+
+Les positions/topologie/UV/matières et matrices évaluées sont bit-identiques à4. Les176autres objets sources, dont le carter déjà corrigé, et173autres nœuds de maillage GLB conservent leurs buffers, indices, matières, images et matrices exacts. Les redivisions de sommets aux nouvelles discontinuités ne déplacent aucun triangle physique. La chaîne de preuve3→4→5 est référencée dans `creative/reviews/instruments-v5/revision-chain.json`.
+
+Les cadrans, épaisseurs, vitrages, angles, pivots et USB restent les candidats antérieurs. Le LCD1–5 est une démonstration d’affichage, pas une certification du nombre de rapports RDC. Les dimensions, montages et grain restent estimés. Les vitres conservent leur correction optique3 ; aucune nouvelle calibration ou géométrie physique n’est déduite des reflets.
+
+Le contexte de contrôle reprend exactement la caméra/lumières et les sources clé/pigtail gelées de cockpit-cablesv2 ; la copie évaluée du seul carter5 remplace son témoin3 en RAM. Ce témoin n’est pas un nouvel assemblage ni une preuve de monte réelle. Deux aperçus courts précèdent les deux vues96 ; les checkpoints conservent source/protocole/caméra et PNG/EXR réellement sauvés. Réception artistique, parité d’apparence source/moteur et Safari physique restent ouverts.

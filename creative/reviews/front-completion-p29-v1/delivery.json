@@ -1,0 +1,60 @@
+{
+  "package": "P29",
+  "revision": "front-completion-p29-v1",
+  "milestone": "existing candidate exports recovered unchanged; explicit child inventory and blocking gaps",
+  "new_geometry": false,
+  "reused": [
+    {
+      "source": "HEAD:assets-src/moto-components/cockpit-cables/cockpit-cables-v3-inspection.glb",
+      "snapshot": "assets-src/moto-components/front-completion-p29-v1/cockpit-cables-v3-inspection.glb",
+      "new_geometry": false
+    }
+  ],
+  "child_inventory": [
+    {
+      "child": "electrical pigtail",
+      "state": "reuse existing v3; bounded exterior route only"
+    },
+    {
+      "child": "two lower sheaths",
+      "state": "existing unassigned sheaths; neither relabelled throttle nor brake"
+    },
+    {
+      "child": "throttle continuity",
+      "state": "unfabricated; endpoints at carburetor and steering slack unresolved"
+    },
+    {
+      "child": "clutch continuity",
+      "state": "existing upper departure; complete route and lower arm contact unresolved"
+    },
+    {
+      "child": "front brake continuity",
+      "state": "existing upper departure; lower actuator variant/interface unresolved"
+    },
+    {
+      "child": "switch/ignition departures",
+      "state": "existing partial candidates; pinout and harness continuity unknown"
+    },
+    {
+      "child": "clips/retainers",
+      "state": "unfabricated; exact paths and visible attachment stations unresolved"
+    },
+    {
+      "child": "steering radius/slack",
+      "state": "not verified; no asserted full-lock clearance"
+    }
+  ],
+  "evidence": [
+    "assets-src/moto-components/cockpit-cables/README_v3.md"
+  ],
+  "unresolved_gap": "P19/P24/P28 interfaces unverified; no invented full routes or electrical pinout.",
+  "official_views_actually_read": [
+    "/workspace/wewa-assets/references/exterior-completion-current/00.png",
+    "/workspace/wewa-assets/references/exterior-completion-current/02.png"
+  ],
+  "package_complete": false,
+  "mounted_fit": false,
+  "art_accepted": false,
+  "physical_device_qualified": false,
+  "catalog_note": "Separate isolated entries; no placement or assembly equivalence asserted"
+}
