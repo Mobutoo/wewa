@@ -459,6 +459,49 @@
       "rigs": [],
       "details": "DS181005 lié, sept ajours observés. Largeur≈218,5mm et épaisseur2,2mm estimées ; aucune calibration31mm ou pose installée."
     },
+    "mirror-left": {
+      "label": "Rétroviseur gauche — caches corrigés, vues finales en cours",
+      "lot": 8,
+      "review": "mirror-left-v1",
+      "source": "mirrors/mirror-left-v1.blend",
+      "collection": "WEWA_MIRROR_LEFT",
+      "component_id": "MOTO-MIRROR-LEFT-001",
+      "files": [
+        "mirrors/mirror-left-v1.glb"
+      ],
+      "readme": "README-left.md",
+      "rigs": [
+        {
+          "id": "yaw",
+          "label": "Orientation latérale estimée",
+          "node": "LH mirror head adjustment PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -10,
+          "max": 10,
+          "initial": 0,
+          "step": 0.1
+        },
+        {
+          "id": "pitch",
+          "label": "Inclinaison estimée",
+          "node": "LH mirror head adjustment PIVOT",
+          "axis": [
+            0.9755259156227112,
+            0.010137728415429592,
+            -0.21965079009532928
+          ],
+          "min": -7,
+          "max": 7,
+          "initial": 0,
+          "step": 0.1
+        }
+      ],
+      "details": "Candidat avec caches emboîtés et écrou visible corrigés ; dimensions/courbure estimées, vues finales en cours. Deux poses composées yaw puis pitch, sans qualification mécanique."
+    },
     "engine-filter-cap": {
       "label": "Bouchon du filtre moteur — pièce séparée",
       "lot": 17,
@@ -471,6 +514,149 @@
       ],
       "rigs": [],
       "details": "Trois oreilles issues d’une référence liée, dimensions et raccord estimés. Pas de joint, vis, filtre ou compatibilité OEM certifiés."
+    },
+    "steering-lower": {
+      "label": "Corps du té inférieur — pièce isolée",
+      "lot": 13,
+      "review": "steering-lower-v1",
+      "source": "steering-triples/lower/steering-lower-v1.blend",
+      "collection": "WEWA_STEERING_LOWER_BODY_ISOLATED",
+      "source_frame": "isolated_local",
+      "component_id": "MOTO-STEERING-LOWER-001",
+      "files": [
+        "steering-triples/lower/steering-lower-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Corps seul avec deux poches et bagues fendues. Cotes/poses estimées ; colonne, boulons et roulements absents, aucune conformité mécanique."
+    },
+    "engine-cover-left": {
+      "label": "Carter magnéto gauche — coque extérieure",
+      "lot": 17,
+      "review": "engine-cover-left-v1",
+      "source": "engine-cover-left/engine-cover-left-v1.blend",
+      "collection": "WEWA_ENGINE_COVER_LEFT",
+      "component_id": "MOTO-ENGINE-COVER-LEFT-001",
+      "files": [
+        "engine-cover-left/engine-cover-left-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Coque propre au flanc+X, pas une symétrie du droit. Lobe supérieur masqué et reliefs de face non résolus, cotes/dos estimés. Cache transmission et bouchons séparés."
+    },
+    "switchgear-left-v3": {
+      "label": "Commodo gauche v3 — pictogrammes lissés",
+      "lot": 4,
+      "review": "switchgear-left-v3",
+      "source": "switchgear-left/switchgear-left-v3.blend",
+      "component_id": "MOTO-SWITCHGEAR-LEFT-001",
+      "files": [
+        "switchgear-left/switchgear-left-v3-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "dipper",
+          "label": "Code/phare",
+          "node": "LH dipper rocker - high low PIVOT",
+          "axis": [
+            -0.9166959524,
+            0,
+            0.3995854259
+          ],
+          "kind": "rotation",
+          "min": -9,
+          "max": 9,
+          "step": 0.1,
+          "initial": 0
+        },
+        {
+          "id": "turn",
+          "label": "Clignotant",
+          "node": "LH turn selector - centre push PIVOT",
+          "axis": [
+            -0.9166959524,
+            0,
+            0.3995854259
+          ],
+          "kind": "translation",
+          "min": -0.003,
+          "max": 0.003,
+          "step": 0.0001,
+          "initial": 0
+        },
+        {
+          "id": "turn_push",
+          "label": "Rappel central",
+          "node": "LH turn selector - centre push PIVOT",
+          "axis": [
+            0.3995854259,
+            0,
+            0.9166959524
+          ],
+          "kind": "translation",
+          "min": 0,
+          "max": 0.0014,
+          "step": 0.0001,
+          "initial": 0
+        },
+        {
+          "id": "horn",
+          "label": "Klaxon",
+          "node": "LH horn push tongue PIVOT",
+          "axis": [
+            0.3995854259,
+            0,
+            0.9166959524
+          ],
+          "kind": "translation",
+          "min": 0,
+          "max": 0.0014,
+          "step": 0.0001,
+          "initial": 0
+        }
+      ],
+      "collection": "WEWA_SWITCHGEAR_LEFT",
+      "readme": "README_v3.md"
+    },
+    "fork-bellows": {
+      "label": "Soufflet de fourche — déformation visuelle estimée",
+      "lot": 13,
+      "review": "fork-bellows-v1",
+      "source": "front-fork/bellows/fork-bellows-v1.blend",
+      "collection": "WEWA_FORK_BELLOWS_ISOLATED",
+      "source_frame": "isolated_local",
+      "component_id": "MOTO-FORK-BELLOWS-001",
+      "files": [
+        "front-fork/bellows/fork-bellows-inspection.glb"
+      ],
+      "rigs": [],
+      "morph_controls": [
+        {
+          "id": "length_mm",
+          "node": "Single fork bellows - estimated currentRDC visual candidate",
+          "label": "Longueur visuelle estimée (mm)",
+          "min": 110,
+          "rest": 125,
+          "max": 140,
+          "initial": 125,
+          "step": 0.1,
+          "target_low": "Compression visual estimate H110mm",
+          "target_high": "Extension visual estimate H140mm"
+        }
+      ],
+      "details": "Pièce creuse isolée ; 110/125/140mm estimés, pas une course mécanique certifiée. Aucune pose installée.",
+      "inspection_url": "v3.html"
+    },
+    "engine-output-cover-left": {
+      "label": "Cache sortie de boîte gauche — coque extérieure",
+      "lot": 17,
+      "review": "engine-output-cover-left-v1",
+      "source": "engine-output-cover-left/engine-output-cover-left-v1.blend",
+      "collection": "WEWA_ENGINE_OUTPUT_COVER_LEFT",
+      "component_id": "MOTO-ENGINE-OUTPUT-COVER-LEFT-001",
+      "files": [
+        "engine-output-cover-left/engine-output-cover-left-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Pièce liée PF541287, formes de travail estimées ; légende de rapports omise car variante4/5non résolue. Aucun moteur complet, raccord ou dos certifié."
     }
   }
 }

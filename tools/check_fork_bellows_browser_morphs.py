@@ -1,0 +1,21 @@
+import json,struct,hashlib
+from pathlib import Path
+import numpy as np
+from playwright.sync_api import sync_playwright
+R=Path(__file__).resolve().parents[1];p=R/'assets-src/moto-components/front-fork/bellows/fork-bellows-inspection.glb';data=p.read_bytes();n=struct.unpack_from('<I',data,12)[0];g=json.loads(data[20:20+n]);start=28+n;blob=data[start:];prim=g['meshes'][0]['primitives'][0]
+def acc(i):
+ a=g['accessors'][i];v=g['bufferViews'][a['bufferView']];assert a['componentType']==5126 and a['type']=='VEC3' and not a.get('sparse');return np.ndarray((a['count'],3),dtype='<f4',buffer=blob,offset=v.get('byteOffset',0)+a.get('byteOffset',0),strides=(v.get('byteStride',12),4)).astype(float)
+base=acc(prim['attributes']['POSITION']);delta=[acc(t['POSITION'])for t in prim['targets']];indices=np.unique(np.linspace(0,len(base)-1,61,dtype=int));source=json.loads((R/'assets-src/moto-components/front-fork/bellows/build-report.json').read_text());states=[]
+for s in source['morph_states']:
+ q=base+sum(w*d for w,d in zip(s['weights'],delta));expected_min=[s['bounds_min_m'][0],s['bounds_min_m'][2],-s['bounds_max_m'][1]];expected_max=[s['bounds_max_m'][0],s['bounds_max_m'][2],-s['bounds_min_m'][1]];assert np.max(abs(q.min(0)-expected_min))<2e-8 and np.max(abs(q.max(0)-expected_max))<2e-8
+ states.append({'name':s['name'],'weights':s['weights'],'value':125-15*s['weights'][0]+15*s['weights'][1],'min':q.min(0).tolist(),'max':q.max(0).tolist(),'samples':q[indices].tolist()})
+with sync_playwright() as pw:
+ b=pw.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']);page=b.new_page();page.goto('http://127.0.0.1:4143/tools/motorcycle-lab/v3.html?asset=fork-bellows',wait_until='networkidle',timeout=120000);page.wait_for_function('window.__MOTO_LAB__?.scene.isReady()',timeout=90000);page.evaluate('window.__MOTO_LAB__.engine.stopRenderLoop()');results=[]
+ for s in states:
+  page.evaluate('(v)=>window.__MOTO_LAB__.setPose({length_mm:v})',s['value'])
+  actual=page.evaluate('''ids=>{const m=window.__MOTO_LAB__.scene.getMeshByName('Single fork bellows - estimated currentRDC visual candidate'),base=m.getVerticesData('position'),mgr=m.morphTargetManager,p=Float64Array.from(base),weights=[];for(let k=0;k<mgr.numTargets;k++){const t=mgr.getTarget(k),pos=t.getPositions();weights.push(t.influence);for(let i=0;i<p.length;i++)p[i]+=t.influence*(pos[i]-base[i]);}const low=[Infinity,Infinity,Infinity],high=[-Infinity,-Infinity,-Infinity];for(let i=0;i<p.length;i+=3)for(let j=0;j<3;j++){low[j]=Math.min(low[j],p[i+j]);high[j]=Math.max(high[j],p[i+j]);}return {min:low,max:high,weights,samples:ids.map(i=>Array.from(p.slice(i*3,i*3+3))),matrix:m.computeWorldMatrix(true).asArray()};}''',indices.tolist())
+  error=max(float(np.max(abs(np.array(actual[k])-s[k])))for k in ['min','max','samples']);assert error<2e-8,(s['name'],error);assert actual['weights']==s['weights'];assert np.max(abs(np.array(actual['matrix']).reshape(4,4)-np.eye(4)))<1e-7
+  results.append({'state':s['name'],'value_mm':s['value'],'actual_bounds_glTF_m':{'min':actual['min'],'max':actual['max']},'weights':actual['weights'],'all_vertex_bounds_and_61_samples_max_difference_m':error})
+ b.close()
+report={'tool_path':'tools/check_fork_bellows_browser_morphs.py','tool_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'inspector_path':'tools/motorcycle-lab/review-v3.js','inspector_sha256':hashlib.sha256((R/'tools/motorcycle-lab/review-v3.js').read_bytes()).hexdigest(),'source_sha256':hashlib.sha256((R/'assets-src/moto-components/front-fork/bellows/fork-bellows-v1.blend').read_bytes()).hexdigest(),'export_sha256':hashlib.sha256(data).hexdigest(),'scope':'Independent Python binary accessor decoder versus actual Babylon absolute target arrays and influences; five states. Bounds also match source build report under (x,z,-y). Not mechanical travel, exact shader parity or physical iPhone test.','samples_per_state':len(indices),'states':results,'technical_passed':True,'art_accepted':False}
+(R/'creative/reviews/fork-bellows-v1/browser-morph-parity.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps({'states':len(results),'max_difference_m':max(s['all_vertex_bounds_and_61_samples_max_difference_m']for s in results)}))

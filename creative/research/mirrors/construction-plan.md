@@ -1,0 +1,13 @@
+# Reconstruction du rétroviseur gauche, puis droit
+
+Les formes actuelles installées sont documentées par les rotations officielles RDC ; les éléments isolés DJ221003/004 sont des variantes liées. Le contour LH est relevé indépendamment du RH. La vue isolée LH DJ221003-02 montre le dos, la tige coudée, les caches et le goujon ; DJ221003-01 montre seulement l’étiquette. Les sept vues DJ221004 incluent deux faces réfléchissantes et des profils utiles. Aucune photo n’est calibrée métriquement et aucune cote de miroir n’est publiée dans ces sources.
+
+L’unité suivante est la coque gauche : galbe composé avec couronne décentrée vers le col, paroi finie et lèvre continue, logement de verre et articulation creuse. L’étude grise initiale présente une sortie ovale de perçage non documentée près du col : elle est refusée en l’état. La correction vise un passage interne rejoignant la cavité, sans trou parasite exposé. La lèvre doit laisser un logement au verre fini de 2,5mm (estimation), avant de créer ce verre. On ne transfère pas au LH le petit trou vu sur la photo RH.
+
+Le verre sera un solide bombé de faible courbure, avec une couche réfléchissante arrière séparée et un joint. Rayon de travail2m, plage1,2–3m : l’objet réel n’est pas mesuré. Aucune photo de décor n’est collée sur le verre : les reflets sont ceux de la vraie géométrie du studio. Le contrôle moteur devra encore juger la conversion du matériau et son coût.
+
+La tige coudée continue, la rotule et le goujon seront construits comme un corps métallique cohérent ; les caches et écrous resteront séparés. Le support fourni par le levier existant est un raccord estimé. Le diamètre et le pas de goujon envisagés sont des hypothèses cosmétiques, pas un filetage constructeur certifié. Les caches ne doivent pas masquer une discontinuité de tige.
+
+Chaque volume est contrôlé dans la source puis dans les buffers glTF avant les rendus coûteux. Les contacts internes intentionnels sont décrits ; les vides de verre, lèvre, col et articulation sont testés. Les amplitudes de réglage proposées sont des poses de revue estimées, sans preuve d’amplitude constructeur. Les pivots restent explicites dans le repère cockpit LH+X/RH−X.
+
+La matière suit seulement après correction du gris : polymère noir à grain original, verre/transparence/couche métallique, acier peint de tige, caoutchouc et fixation. Les gros plans neutres/rasants/reflets complètent une vue entière. Les dimensions estimées, l’identité exacte RDC, le verre gauche isolé, le dos exact RDC, l’amplitude et le filetage restent ouverts ; aucun score technique ne reçoit la forme artistique.

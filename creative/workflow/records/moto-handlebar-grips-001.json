@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-HANDLEBAR-GRIPS-001",
-  "label": "Poignées v2 — côtés physiques corrigés",
+  "label": "Poignées v3 — motifs arrondis élargis",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -50,34 +50,38 @@
   ],
   "views": [
     {
-      "name": "left-quarter",
+      "name": "left-reference-side",
+      "physical_side": "left",
       "camera_location_m": [
-        0.11877071857452393,
-        0.2721939980983734,
-        0.26499998569488525
+        0.16472303867340088,
+        0.37949445843696594,
+        0.1899999976158142
       ],
-      "camera_target_m": [
+      "target_m": [
         0.28683164715766907,
         0.061824046075344086,
         0.10499999672174454
       ],
       "lens_mm": 65,
-      "other_grip_hidden_for_isolated_review": true
+      "projection_scope": "Approximate documentary direction only; no metric overlay",
+      "other_grip_hidden": true
     },
     {
       "name": "right-quarter",
+      "physical_side": "right",
       "camera_location_m": [
         -0.32655513286590576,
-        -0.2044878751039505,
+        -0.2044878602027893,
         0.26499998569488525
       ],
-      "camera_target_m": [
+      "target_m": [
         -0.28683164715766907,
         0.061824046075344086,
         0.10499999672174454
       ],
       "lens_mm": 65,
-      "other_grip_hidden_for_isolated_review": true
+      "projection_scope": "Approximate documentary direction only; no metric overlay",
+      "other_grip_hidden": true
     }
   ],
   "criteria": [
@@ -103,7 +107,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": "handlebar-grips-v2",
+      "revision": "handlebar-grips-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -111,7 +115,7 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": "handlebar-grips-v2",
+      "revision": "handlebar-grips-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -119,7 +123,7 @@
     },
     "G2": {
       "status": "blocked",
-      "revision": "handlebar-grips-v2",
+      "revision": "handlebar-grips-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -127,35 +131,35 @@
     },
     "G3": {
       "status": "rework",
-      "revision": "handlebar-grips-v2",
+      "revision": "handlebar-grips-v3",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../../assets-src/moto-components/handlebar-grips/handlebar-grips-v2.blend",
+          "path": "../../../assets-src/moto-components/handlebar-grips/handlebar-grips-v3.blend",
           "kind": "editable_source",
-          "revision": "handlebar-grips-v2",
-          "sha256": "40514ce73d9a5a763fbf98fe2c1d0ab84c248a0d9373a7747895781e18cd98ae"
+          "revision": "handlebar-grips-v3",
+          "sha256": "8ba577ea4078850569394d7d17e6e6d868e590bb287b329da3c0600706351381"
         },
         {
-          "path": "../../reviews/handlebar-grips-v2/left-quarter.png",
+          "path": "../../reviews/handlebar-grips-v3/left-reference-side.png",
           "kind": "isolated_comparison",
-          "revision": "handlebar-grips-v2",
-          "sha256": "09c0bbb8813b5d70444d3065c22d808f4bff7a2c7aea3aaae3d6d7ff295b847b"
+          "revision": "handlebar-grips-v3",
+          "sha256": "c8dca4c734646d2f2dc6b1320f0c0b885932ce38a4e211f71bec3349850b1049"
         }
       ],
-      "reason": "Photo audit identifies too narrow long grip motifs; v3 shape correction requested. Existing v2 is retained as a rejected candidate, not superseded without new proof.",
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G4": {
       "status": "rework",
-      "revision": "handlebar-grips-v2",
+      "revision": "handlebar-grips-v3",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/handlebar-grips-v2/right-quarter.png",
+          "path": "../../reviews/handlebar-grips-v3/right-quarter.png",
           "kind": "surface_or_sound_comparison",
-          "revision": "handlebar-grips-v2",
-          "sha256": "fd8abb7490171aa01bb6e831f800e53674afd92f700590baab979b56f9aef74c"
+          "revision": "handlebar-grips-v3",
+          "sha256": "7b2c3c93b9df8fc5e13ed38c98d051416e022491cb2956dfbc5cd5cca7006a7a"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -163,14 +167,14 @@
     },
     "G5": {
       "status": "rework",
-      "revision": "handlebar-grips-v2",
+      "revision": "handlebar-grips-v3",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/handlebar-grips-v2/source-geometry-check.json",
+          "path": "../../reviews/handlebar-grips-v3/source-geometry-check.json",
           "kind": "motion_or_interface_check",
-          "revision": "handlebar-grips-v2",
-          "sha256": "11d317faad985d1e581de78200335e84b46e256307f22b008497a4c0fea68627"
+          "revision": "handlebar-grips-v3",
+          "sha256": "72e68839f083e5b47e5794a0cada4e331e24474b7a8bed783c41e0599edc2291"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -178,20 +182,20 @@
     },
     "G6": {
       "status": "rework",
-      "revision": "handlebar-grips-v2",
+      "revision": "handlebar-grips-v3",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/handlebar-grips-v2/export-buffer-check.json",
+          "path": "../../reviews/handlebar-grips-v3/export-buffer-check.json",
           "kind": "technical_export_check",
-          "revision": "handlebar-grips-v2",
-          "sha256": "2cf90b741c2252f2ba1383f483905dadecf6b5bf86ba24c5d0e4485b97996924"
+          "revision": "handlebar-grips-v3",
+          "sha256": "f7464bca69fb02b26662fc86b4b341b7aced9402ee8a1da3b120cea7b40e3c2b"
         },
         {
-          "path": "../../reviews/handlebar-grips-v2/engine-driver.png",
+          "path": "../../reviews/handlebar-grips-v3/inspection-v3/engine-driver.png",
           "kind": "real_runtime_comparison",
-          "revision": "handlebar-grips-v2",
-          "sha256": "c29b4fd2d1458aad1afcc9ee67dae68508ed494fc915372329f0e0ea0201049b"
+          "revision": "handlebar-grips-v3",
+          "sha256": "8118b3269abe77d6cbe3784bf190771bad76a63097cd10adc0a2be5a694cb3c0"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -199,7 +203,7 @@
     },
     "G7": {
       "status": "pending",
-      "revision": "handlebar-grips-v2",
+      "revision": "handlebar-grips-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
@@ -207,7 +211,7 @@
     },
     "G8": {
       "status": "pending",
-      "revision": "handlebar-grips-v2",
+      "revision": "handlebar-grips-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -215,18 +219,24 @@
     }
   },
   "active_detailed_fabrication": false,
-  "source_revision": "handlebar-grips-v2",
-  "export_revision": "handlebar-grips-v2-inspection",
-  "next_action": "Photo audit identifies too narrow long grip motifs; v3 shape correction requested. Existing v2 is retained as a rejected candidate, not superseded without new proof.",
+  "source_revision": "handlebar-grips-v3",
+  "export_revision": "handlebar-grips-v3-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
   "art_accepted": false,
-  "candidate_source": "../../../assets-src/moto-components/handlebar-grips/README_v2.md",
-  "candidate_review": "../../reviews/handlebar-grips-v2/README.md",
+  "candidate_source": "../../../assets-src/moto-components/handlebar-grips/README_v3.md",
+  "candidate_review": "../../reviews/handlebar-grips-v3/README.md",
   "graphic_style": "../../GRAPHIC_STYLE.md",
   "previous_revisions": [
     {
       "revision": "handlebar-grips-v1",
       "source": "../../../assets-src/moto-components/handlebar-grips/README.md",
       "review": "../../reviews/handlebar-grips-v1/README.md",
+      "art_accepted": false
+    },
+    {
+      "revision": "handlebar-grips-v2",
+      "source": "../../../assets-src/moto-components/handlebar-grips/README_v2.md",
+      "review": "../../reviews/handlebar-grips-v2/README.md",
       "art_accepted": false
     }
   ],

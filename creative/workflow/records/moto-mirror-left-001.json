@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-MIRROR-LEFT-001",
-  "label": "Rétroviseur gauche seul",
+  "label": "Rétroviseur gauche — caches corrigés, vues finales en cours",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,9 +12,9 @@
     "material"
   ],
   "identity": {
-    "variant": "Current RDC visual target, related isolated part references; exact part and local dimensions not certified",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
-    "usage": "Separate detailed candidate before review-only assembly",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
       0.15,
       0.35,
@@ -28,7 +28,68 @@
     "D15"
   ],
   "claims": [],
-  "views": [],
+  "views": [
+    {
+      "name": "whole-front",
+      "camera_location_m": [
+        0.23211342096328735,
+        0.6741977334022522,
+        0.29615318775177
+      ],
+      "camera_target_m": [
+        0.292877733707428,
+        -0.04939912632107735,
+        0.22275640070438385
+      ],
+      "lens_mm": 70,
+      "PNG_path": "creative/reviews/mirror-left-v1/whole-front.png",
+      "PNG_sha256": "2c9814e904dbbc0529b8e34dc7526b2a92f4eb220cbac8fdb7ace9f7da18ab15",
+      "EXR_private_path": "/workspace/wewa-assets/renders/mirrors/mirror-left-v1/whole-front.exr",
+      "EXR_sha256": "bc717a1bf3c4896de667b56bb6eff14e2397dee42e40f3f8f9819185a859b40a",
+      "actually_saved": true,
+      "checkpoint_config_sha256": "9adbceab3c8137946019300d686ec15f79a08642819e1b2f4bf176d96e8ce9e2"
+    },
+    {
+      "name": "whole-back",
+      "camera_location_m": [
+        0.5487472414970398,
+        -0.7290658354759216,
+        0.2313871681690216
+      ],
+      "camera_target_m": [
+        0.292877733707428,
+        -0.04939912632107735,
+        0.22275640070438385
+      ],
+      "lens_mm": 70,
+      "PNG_path": "creative/reviews/mirror-left-v1/whole-back.png",
+      "PNG_sha256": "ad33a05c8ae4df82fbffaebc7d8d1981be803368a6e42abf601cb1220a6121b5",
+      "EXR_private_path": "/workspace/wewa-assets/renders/mirrors/mirror-left-v1/whole-back.exr",
+      "EXR_sha256": "49d1b4328b4ae0fb0833f0ca6f6ffb2f4205dab1902de8ce566d6dee73e16779",
+      "actually_saved": true,
+      "checkpoint_config_sha256": "bfe9a6269f9241567ebbf1af3d2980eeed742d04de9e0b29fde8ddc58e24de57"
+    },
+    {
+      "name": "joint-close",
+      "camera_location_m": [
+        0.3378736078739166,
+        -0.2863640785217285,
+        0.26080477237701416
+      ],
+      "camera_target_m": [
+        0.24072271585464478,
+        -0.08295915275812149,
+        0.23019269108772278
+      ],
+      "lens_mm": 80,
+      "PNG_path": "creative/reviews/mirror-left-v1/joint-close.png",
+      "PNG_sha256": "c4c2c313e25e1e9f3072a072a32f7c696f79ca85cf462be067f8fd0ee310de82",
+      "EXR_private_path": "/workspace/wewa-assets/renders/mirrors/mirror-left-v1/joint-close.exr",
+      "EXR_sha256": "a3492bfc1c866ccd559d45d656031eadba5947e65088de47690f1368129ad1fe",
+      "actually_saved": true,
+      "checkpoint_config_sha256": "fc5acbb9d7166944eab5101d95626e0ed845c96f6da5d09471f97fa2f857d8db"
+    }
+  ],
   "criteria": [],
   "gaps": [
     {
@@ -47,7 +108,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "mirror-left-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -55,73 +116,115 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": null,
+      "revision": "mirror-left-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Local dimensions/camera and exact applicability unresolved",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
       "status": "blocked",
-      "revision": null,
+      "revision": "mirror-left-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Local dimensions/camera and exact applicability unresolved",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "mirror-left-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/mirrors/mirror-left-v1.blend",
+          "kind": "editable_source",
+          "revision": "mirror-left-v1",
+          "sha256": "bdd8a799b6a5ae07a5c076ba0c5a1019f6477ff9a4be5995229e13c2def3c6d0"
+        },
+        {
+          "path": "../../reviews/mirror-left-v1/whole-front.png",
+          "kind": "isolated_comparison",
+          "revision": "mirror-left-v1",
+          "sha256": "2c9814e904dbbc0529b8e34dc7526b2a92f4eb220cbac8fdb7ace9f7da18ab15"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "mirror-left-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/mirror-left-v1/joint-close.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "mirror-left-v1",
+          "sha256": "c4c2c313e25e1e9f3072a072a32f7c696f79ca85cf462be067f8fd0ee310de82"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "mirror-left-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/mirror-left-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "mirror-left-v1",
+          "sha256": "ba00bcf7f055285831a776c250f7851d6aef744178e63ce3b0e6a4513ff8b0ea"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "mirror-left-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/mirror-left-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "mirror-left-v1",
+          "sha256": "2cbdc4ce0e9226bab53afe002edd8edb0fffa5cb847608d37522a21a28111c1a"
+        },
+        {
+          "path": "../../reviews/mirror-left-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "mirror-left-v1",
+          "sha256": "d4531054e98c6c57f79b21be55989e04c5a4700418113508e1f0e568261f00e9"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "mirror-left-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "mirror-left-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
       "reviewed_at": null
     }
   },
-  "active_detailed_fabrication": true,
+  "active_detailed_fabrication": false,
   "source_revision": "mirror-left-v1",
-  "export_revision": null,
-  "next_action": "Complete isolated form/material/source checks and real views, then actual export review; retain estimated dimensions and unresolved installed interfaces",
+  "export_revision": "mirror-left-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
   "art_accepted": false,
-  "production_group": 8
+  "production_group": 8,
+  "candidate_source": "../../../assets-src/moto-components/mirrors/README-left.md",
+  "candidate_review": "../../reviews/mirror-left-v1/README.md"
 }

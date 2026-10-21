@@ -13,10 +13,11 @@ p=argparse.ArgumentParser();p.add_argument('assets',nargs='+');args=p.parse_args
 catalog=read('tools/motorcycle-lab/catalog.json')['assets'];results=[]
 for key in args.assets:
  c=catalog[key];revision=c['review'];cid=c['component_id'];base='assets-src/moto-components/'+c['source'].rsplit('/',1)[0];source='assets-src/moto-components/'+c['source'];review='creative/reviews/'+revision
- browser_dir=review+'/inspection-v3' if (ROOT/review/'inspection-v3/engine-check.json').exists() else review
+ browser_dir=next((review+'/'+v for v in ['inspection-v4','inspection-v3'] if (ROOT/review/v/'engine-check.json').exists()),review)
  source_hash=sha(source);check=read(review+'/source-geometry-check.json');render=read(review+'/render-report.json');export=read(review+'/export-buffer-check.json');browser=read(browser_dir+'/engine-check.json')
  assert check['source_sha256']==source_hash==render['source_sha256'],(key,'Stale source/render proof')
  assert not browser['page_errors'] and not browser['http_failures'] and browser['textures_ready']
+ assert {r['id'] for r in c.get('rigs',[])+c.get('morph_controls',[])}=={r['rig'] for r in browser.get('pose_checks',[])},(key,'Declared controls were not all exercised')
  if browser_dir!=review:
   assert browser.get('pixel_checks') and all(v['changed_pixels']>100 and v['changed_fraction']>.0001 for v in browser['pixel_checks']),(key,'Missing actual nonblank canvas proof')
  inspector=browser.get('inspector_path','tools/motorcycle-lab/review.js');capture=browser.get('capture_tool_path','tools/capture_motorcycle18.py')
@@ -38,6 +39,7 @@ for key in args.assets:
  if record['source_revision'] and record['source_revision']!=revision:
   record.setdefault('previous_revisions',[]).append({'revision':record['source_revision'],'source':record.get('candidate_source'),'review':record.get('candidate_review'),'art_accepted':record['art_accepted']})
  record.update(id=cid,label=c['label'],source_ids=['AS-049','CON-001'],parent_asset='MOTO-BOXER-RDC-001',recipes=['vehicle','material'],identity={'variant':c.get('variant','Current RDC appearance target, related part references; exact applicability not certified'),'variant_confirmed':False,'usage':'Separate detailed component candidate, then review-only assembly','review_distances_m':[.15,.35,.65]},source_revision=revision,export_revision=revision+'-inspection',active_detailed_fabrication=False,art_accepted=False,candidate_source='../../../'+base+'/'+c.get('readme','README.md'),candidate_review='../../reviews/'+revision+'/README.md',views=render['views'],production_group=c.get('lot'),next_action='Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied')
+ if record.get('pending_revision')==revision:record.pop('pending_revision')
  if not record['sources']:record['sources']=['D01','D04','D13','D15']
  if not record['gaps']:record['gaps']=[{'id':cid+'-DIM','description':'Exact current RDC part, measured sections and installed interfaces unconfirmed','critical':True,'status':'open','blocks':['G1','G2','G5'],'next_research':'Matched measured part photos/drawings and actual interface checks'}]
  for gate in record['gates'].values():gate['revision']=revision

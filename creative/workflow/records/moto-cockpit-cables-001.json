@@ -1,0 +1,206 @@
+{
+  "schema": 1,
+  "id": "MOTO-COCKPIT-CABLES-001",
+  "label": "Câbles visibles — trois tronçons partiels",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01",
+    "D04",
+    "D13",
+    "D15"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "descending-visible-sections",
+      "shown_objects": [
+        "Visible descending front sheath A - function unknown - free end",
+        "Visible descending front sheath B - function unknown - free end"
+      ],
+      "target_m": [
+        0.10785000026226044,
+        -0.23188750445842743,
+        -0.5348554849624634
+      ],
+      "camera_m": [
+        0.6578500270843506,
+        0.5181124806404114,
+        -0.08485549688339233
+      ],
+      "lens_mm": 60
+    },
+    {
+      "name": "ignition-pigtail-free-end",
+      "shown_objects": [
+        "Visible ignition pigtail loop - connector omitted - free end"
+      ],
+      "target_m": [
+        0.017945298925042152,
+        -0.11768490821123123,
+        -0.0009838007390499115
+      ],
+      "camera_m": [
+        0.14794529974460602,
+        0.06231509894132614,
+        0.11901620030403137
+      ],
+      "lens_mm": 70
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-COCKPIT-CABLES-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "pending",
+      "revision": "cockpit-cables-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "cockpit-cables-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "cockpit-cables-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "cockpit-cables-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/cockpit-cables/cockpit-cables-v1.blend",
+          "kind": "editable_source",
+          "revision": "cockpit-cables-v1",
+          "sha256": "f24672df90a68f45b4033a94c5ea03f34dd67b834e10454d2953287a55456f15"
+        },
+        {
+          "path": "../../reviews/cockpit-cables-v1/descending-visible-sections.png",
+          "kind": "isolated_comparison",
+          "revision": "cockpit-cables-v1",
+          "sha256": "64d3fd8ac318c274df12d217ddd91f799efe27e7d6d4c9f61e6c958f0185a5a6"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "cockpit-cables-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/cockpit-cables-v1/ignition-pigtail-free-end.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "cockpit-cables-v1",
+          "sha256": "c623c4e14fd31dd8f7cb62407454a00abb21b4db8506ed815094b94d75ab79e9"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "cockpit-cables-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/cockpit-cables-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "cockpit-cables-v1",
+          "sha256": "48be32cb9e59b27f7b5414faa8385502904ed784178a51619bb2ba071849e8a5"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "cockpit-cables-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/cockpit-cables-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "cockpit-cables-v1",
+          "sha256": "abf52c91cefd48df9557c928ae5b9bab59863d17821873c5fe19249cea46d116"
+        },
+        {
+          "path": "../../reviews/cockpit-cables-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "cockpit-cables-v1",
+          "sha256": "0139a78409c917dff0e595da5103182e9165faa99978e80f2a7ec1497acd0b43"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "cockpit-cables-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "cockpit-cables-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "cockpit-cables-v1",
+  "export_revision": "cockpit-cables-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/cockpit-cables/README.md",
+  "candidate_review": "../../reviews/cockpit-cables-v1/README.md",
+  "production_group": 10
+}

@@ -1,0 +1,25 @@
+{
+  "scope": "Regression check of real near-clip failure, deliberate macro cropping and evaluated shape-key bounds; not asset realism",
+  "blender": "4.3.2",
+  "technical_passed": true,
+  "checks": [
+    "100mm near clip rejects mesh at85mm",
+    "1mm near clip passes same mesh",
+    "whole-view crop rejected, explicit macro crop allowed",
+    "active shape-key extension included"
+  ],
+  "files": [
+    {
+      "path": "tools/blender_component_camera_preflight.py",
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+    },
+    {
+      "path": "creative/reviews/camera-preflight-v1/regression-smoke.py",
+      "sha256": "f40912f3b84c5baa156c03ba3c8e9f46e0527172181fa749857d5b088407eea2"
+    },
+    {
+      "path": "creative/reviews/camera-preflight-v1/regression-smoke.txt",
+      "sha256": "8b186b9cdf9c9245bc3c4211624cc2228a72b5166e971f4acacce1379f094e26"
+    }
+  ]
+}

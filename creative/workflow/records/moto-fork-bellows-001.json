@@ -1,0 +1,266 @@
+{
+  "schema": 1,
+  "id": "MOTO-FORK-BELLOWS-001",
+  "label": "Soufflet de fourche — déformation visuelle estimée",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01",
+    "D04",
+    "D15"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "quarter",
+      "camera_location_m": [
+        0.14,
+        0.22,
+        0.14
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.0625
+      ],
+      "ortho_scale_m": 0.18,
+      "morph_weights": [
+        0,
+        0
+      ],
+      "checkpoint_file": "checkpoint-quarter.json",
+      "PNG_sha256": "7dd5c6dded52ac3084ac8ed175dc9c634e477a4d4c9191d2834a6c5f5fa8b588",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "lower-opening",
+      "camera_location_m": [
+        0.07,
+        0.09,
+        -0.075
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.01
+      ],
+      "ortho_scale_m": 0.08,
+      "morph_weights": [
+        0,
+        0
+      ],
+      "checkpoint_file": "checkpoint-lower-opening.json",
+      "PNG_sha256": "a70f88b060810da4f2a9a0380a54dde2676da761aff8e7924a4801c10535da5d",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "compression-estimated",
+      "camera_location_m": [
+        0.14,
+        0.22,
+        0.14
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.0625
+      ],
+      "ortho_scale_m": 0.18,
+      "morph_weights": [
+        1,
+        0
+      ],
+      "checkpoint_file": "checkpoint-compression-estimated.json",
+      "PNG_sha256": "5be6ed90b402cb1b8d938c1dd375c593d4c2abc99595094b56d26faded45d33f",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "extension-estimated",
+      "camera_location_m": [
+        0.14,
+        0.22,
+        0.14
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.0625
+      ],
+      "ortho_scale_m": 0.18,
+      "morph_weights": [
+        0,
+        1
+      ],
+      "checkpoint_file": "checkpoint-extension-estimated.json",
+      "PNG_sha256": "ffb630f771ef364932407ff9c322b8846564c551db5ffb85b4d64fe0d84959cc",
+      "reused_verified_checkpoint": false
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-FORK-BELLOWS-001-IDENTITY-DIM",
+      "description": "Exact current RDC part, dimensions and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Attributed related photographs and documentary details, then measured same-part evidence if available; no related dimension certified as current"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "pending",
+      "revision": "fork-bellows-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "fork-bellows-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "fork-bellows-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "fork-bellows-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/front-fork/bellows/fork-bellows-v1.blend",
+          "kind": "editable_source",
+          "revision": "fork-bellows-v1",
+          "sha256": "fc97e6507c8a757698c39c794fdb38f4ecfc2eab7278d3b1f97a83c66bd7da2c"
+        },
+        {
+          "path": "../../reviews/fork-bellows-v1/quarter.png",
+          "kind": "isolated_comparison",
+          "revision": "fork-bellows-v1",
+          "sha256": "7dd5c6dded52ac3084ac8ed175dc9c634e477a4d4c9191d2834a6c5f5fa8b588"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "fork-bellows-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/fork-bellows-v1/extension-estimated.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "fork-bellows-v1",
+          "sha256": "ffb630f771ef364932407ff9c322b8846564c551db5ffb85b4d64fe0d84959cc"
+        },
+        {
+          "path": "../../research/bellows-material-independent-audit.json",
+          "kind": "surface_or_sound_comparison",
+          "revision": "fork-bellows-v1",
+          "sha256": "1342ab1cafd98c2de7f999c44b928c1f7f61f7402ff0f962c933807db42c57a2"
+        }
+      ],
+      "reason": "Source base color and embedded metallic/roughness data independently checked, no wrong white albedo or metallic conversion established. Broad studio highlights look silver; separate outdoor-HDR diagnostic preserves the black source material. Exact photometric realism and artistic reception still open.",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "fork-bellows-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/fork-bellows-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "fork-bellows-v1",
+          "sha256": "f141c2969657ca9fab443d923e319331f143f9ddc522a77a5e635903f7d9ed54"
+        },
+        {
+          "path": "../../reviews/fork-bellows-v1/browser-morph-parity.json",
+          "kind": "motion_or_interface_check",
+          "revision": "fork-bellows-v1",
+          "sha256": "c2141f7b033a51abb3de621ccc61fc9562b82995b860b9e93713aeddf8ff26ff"
+        }
+      ],
+      "reason": "Five estimated length states match independently decoded export bounds and61 sampled vertices/state in Babylon. Installed seat, fork travel and mechanical rubber response unverified.",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "fork-bellows-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/fork-bellows-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "fork-bellows-v1",
+          "sha256": "dc2ab3693911f019f4d5193c2c68f9d7ab0041ad6e3580f2b83e87c0d4a23ace"
+        },
+        {
+          "path": "../../reviews/fork-bellows-v1/inspection-v4/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "fork-bellows-v1",
+          "sha256": "d073a905f1056830bb3891bffe0194064f1215f062c90bd83498908091d5245b"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "fork-bellows-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "fork-bellows-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "fork-bellows-v1",
+  "export_revision": "fork-bellows-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "production_group": 13,
+  "candidate_source": "../../../assets-src/moto-components/front-fork/bellows/README.md",
+  "candidate_review": "../../reviews/fork-bellows-v1/README.md"
+}

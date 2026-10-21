@@ -1,0 +1,434 @@
+{
+  "schema": "wewa.independent-morph-tangent-audit.v1",
+  "date_utc": "2026-10-21",
+  "scope": "Read-only independent audit of asset-local Blender4.3.2 glTF morph-tangent compatibility correction for one fork bellows. No render, model/GLB edit, shared installation change or artistic reception.",
+  "decision": "forward_normal_transport_correction_supported_for_this_asset_with_explicit_material_and_interpolation_limits",
+  "inputs": [
+    {
+      "path": "/workspace/wewa-tools/blender-4.3.2-linux-x64/4.3/scripts/addons_core/io_scene_gltf2/blender/exp/primitive_extract.py",
+      "sha256": "af539328c81432c23213e5c1d300b0b1646b528c3b419a5b18bfaa21597ad9ae"
+    },
+    {
+      "path": "assets-src/moto-components/front-fork/bellows/gltf_morph_tangent_compat.py",
+      "sha256": "207001982e81623580a57201eb172f7c7bfc718e68ae5c3ab21ac9deb4058b25"
+    },
+    {
+      "path": "assets-src/moto-components/front-fork/bellows/fork-bellows-v1.blend",
+      "sha256": "fc97e6507c8a757698c39c794fdb38f4ecfc2eab7278d3b1f97a83c66bd7da2c",
+      "revision_role": "Current G4 at time of source/material reading; numeric G3 comparison is pinned separately below."
+    },
+    {
+      "path": "assets-src/moto-components/front-fork/bellows/fork-bellows-inspection.glb",
+      "sha256": "42cb7a7e74f80d5bbc26223c103b405bd835fcdd03a29f674b82c14aac72c9e6",
+      "revision_role": "Current G4 at time of source/material reading; numeric G3 comparison is pinned separately below."
+    },
+    {
+      "path": "creative/reviews/fork-bellows-v1/morph-tangent-compatibility-check.json",
+      "sha256": "141667a687278b4934f95f53562a69b431212d556640de1816ab408ca9fedc00"
+    },
+    {
+      "path": "creative/reviews/fork-bellows-v1/converter-preservation-check.json",
+      "sha256": "fb6b7a5268a6ac1de67e76cc03663e85bb185f3651d150c6d6f527347cfc5496"
+    },
+    {
+      "path": "tools/motorcycle-lab/review-v3.js",
+      "sha256": "f8aa2646d50ddb3377e1c50085db3a6804b054a9675316bb195bd3f2b9b4f9b4"
+    },
+    {
+      "path": "tools/motorcycle-lab/review-v2.js",
+      "sha256": "19e4908f4a7b69b492710adfb7d28a5508745721f9c991941a5ed439f3a9fb07"
+    },
+    {
+      "path": "node_modules/@babylonjs/loaders/glTF/2.0/glTFLoader.pure.js",
+      "sha256": "a2e34caa90dc9b700159df16185c4516d1c3c6916fee65126f2ef7ce9ad797fb"
+    },
+    {
+      "path": "node_modules/@babylonjs/loaders/glTF/2.0/pbrMaterialLoadingAdapter.js",
+      "sha256": "17fcadda4d9756bed238b708fc9e4db21710e095e0ff60992aca6ca72148b341"
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Materials/PBR/pbrBaseMaterial.pure.js",
+      "sha256": "fc3a71a18055e31c9e222a81294ad352d5d8a2088d97a65b04b208402302fbf5"
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpVertex.js",
+      "sha256": "c102957ad1d6ac5c91000f0586a1e4efac76cdab69fe6d0ff436d4937ed54fdd"
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpFragment.js",
+      "sha256": "787ab224ef217c000e26dde2e758d9e016e7bd5b1b378e51c4b10c9e0faef2b5"
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Shaders/ShadersInclude/bumpFragmentMainFunctions.js",
+      "sha256": "1681f6404818f821e89390c783e361771678a4b67c31ee7351a8aedcf9b5d880"
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Shaders/ShadersInclude/morphTargetsVertex.js",
+      "sha256": "68068df16fa67ab2b33d9904ce718d7bb5c3f692e4cd5af04105b36370ab5613"
+    }
+  ],
+  "native_code_context": {
+    "class": "PrimitiveCreator",
+    "method": "__calc_morph_tangents",
+    "source_lines_1based": [
+      1595,
+      1623
+    ],
+    "normal_preparation_lines_1based": [
+      1420,
+      1467
+    ],
+    "UV_conversion_lines_1based": [
+      1400,
+      1410
+    ],
+    "bitangent_sign_lines_1based": [
+      1505,
+      1521
+    ],
+    "actual_arrays": "self.normals is baseNORMAL;self.morph_normals is targetNORMAL delta;self.tangents holds baseTANGENT includingw. These arrays have already received the same Zup→Yup transform.",
+    "reconstruction": "morph_n = n + morphNormalDelta",
+    "native_rotation": "morph_n.rotation_difference(n)",
+    "native_application": "t_morph = copy(t);t_morph.rotate(rotation);deltaT = t_morph-t",
+    "mathematical_issue": "rotation_difference maps its receiver direction onto its argument. Applied actively to a vector, the native quaternion transports target normal toward base normal, the inverse of the required base→target transport.",
+    "supported_change": "n.rotation_difference(morph_n), same active application and delta subtraction; do not alter normals,UV,positions,w or materials."
+  },
+  "controlled_mathutils_test": {
+    "executed": "Actual Blender4.3.2 background CPU1, no scene/source opened or saved, no render",
+    "base_N": [
+      0,
+      0,
+      1
+    ],
+    "target_N": [
+      0.5,
+      0,
+      0.8660254037844386
+    ],
+    "base_T": [
+      1,
+      0,
+      0
+    ],
+    "inverse_native": {
+      "rotated_N_error": 1.0000001192092824,
+      "target_N_dot_rotated_T": 0.8660254776477814,
+      "rotated_B_vs_cross_target_N_rotated_T_error": 0.5000000596046412,
+      "rotation_determinant": 1.0
+    },
+    "forward": {
+      "rotated_N_error": 1.1920928955078125e-07,
+      "target_N_dot_rotated_T": -8.940696716308594e-08,
+      "rotated_B_vs_cross_target_N_rotated_T_error": 0.0,
+      "rotation_determinant": 1.0
+    },
+    "interpretation": "A proper rotationQ preserves cross products:Q(N×T)=(QN)×(QT). Thus source handednessw is preserved by the corrected transport; orthogonality alone would not establish this."
+  },
+  "UV_direction_method_limits": {
+    "method": "Actual sparse/regularGLB accessors decoded independently withNumPy. Face dP/du,dP/dv derived from actual triangles andUV; unit face derivatives combined with corner-angle weights and projected into the exported normal plane.",
+    "what_it_checks": "Tangential direction relative toUV-U, no180degree reversal; actualw preserved; baseline vs target UV-V polarity separated from patch change.",
+    "not_claimed": "This is an angle-weighted derivative surrogate, not an independently recomputed exactMikkTSpace frame per morphed mesh. Maximum residual angle therefore is a comparison observation, not a Mikk parity pass/tolerance.",
+    "baseline_surrogate_max_angle_deg": 0.007227108744162839,
+    "minimum_target_normal_cosine_to_base": 0.9964049831710126,
+    "opposite_normal_case_present": false
+  },
+  "source_preservation": {
+    "helper_read": "Version+native-fileSHA guard, temporary method replacement in contextmanager, original method restored in finally. No installed file write or post-export buffer editing in helper.",
+    "installed_module_actual_sha256": "af539328c81432c23213e5c1d300b0b1646b528c3b419a5b18bfaa21597ad9ae",
+    "asset_helper_report_read": "creative/reviews/fork-bellows-v1/morph-tangent-compatibility-check.json",
+    "independently_confirmed_on_actual_GLBs": "Indices, base POSITION/NORMAL/TEXCOORD_0/TANGENT including w, and morph POSITION/NORMAL are numerically identical between archived 50e82d5 and actual patched eeda9976. Only morph TANGENT buffers changed."
+  },
+  "handedness_and_runtime_reading": {
+    "not_a_global_sign_repair": "Do not change tangentw merely to make it align with raw exported dP/dV. The negative orientation is already present at base and in both before/after files; the local morph patch does not create it.",
+    "actual_UV_math": "For all 154010 vertices in every sampled state, w*cross(N,T) has negative dot with the angle-weighted dP/dV surrogate. UV-U stays aligned; the UV Jacobian determinant is nonzero. Exporter explicitly maps Vsource to 1−Vsource while retaining the native Blender sign.",
+    "glTF_spec": {
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF/main/specification/2.0/Specification.adoc",
+      "snapshot_sha256": "2b028eeb43660d8161d7ac4f1f3883b0ea8f9ceaca3acb5fbdf08776548b75f8",
+      "sections": [
+        "meshes/vertex attributes bitangent definition",
+        "morph-targets-usage",
+        "additional-textures-normal"
+      ],
+      "facts": [
+        "B=(N×Txyz)*Tw",
+        "Morph tangents haveXYZ deltas only;w cannot be displaced",
+        "Morph attribute values usebase+sum(weight*delta)",
+        "RGB normal textures maplinearly into tangent-spaceXYZ, then normalise;green maps to tangentY"
+      ]
+    },
+    "Babylon_version": "Actual installed @babylonjs/core and @babylonjs/loaders 9.31.0",
+    "viewer": "review-v2.js and review-v3.js explicitly setscene.useRightHandedSystem=true before importingglTF; no manual normalmap inversion/UV mutation found in these files.",
+    "loader_normal_texture_branch": "glTFLoader.pure.js1950–1961 loads normalTexture asnonColorData and setsnormalmap inversions(!RH,RH):in ourRH sceneXfalse/Ytrue. pbrMaterialLoadingAdapter1159–1161 assigns these properties.",
+    "runtime_texture_flipY": "glTFLoader.pure.js2119 constructs importedtexture with invertY:false. This is upload orientation, distinct from green-channel inversion and fromUVv→1−v.",
+    "PBR_uniforms": "pbrBaseMaterial.pure.js1634–1641,non-mirroredcamera: vTangentSpaceParams=(invertX?−1:+1,invertY?−1:+1),hence(+1,−1)when a normalTexture is imported inRH.",
+    "provided_tangent_shader_path": "bumpVertex.js6 normalises updatedN/T, buildsB=cross(N,T)*w andvTBN. bumpFragment.js14 uses thatvTBN directly whenTANGENT+NORMAL are defined; in that branchinvertX/Y uniforms are not an extra automatic sign correction of the providedTBN.",
+    "missing_tangent_shader_path": "bumpFragment.js16 derivescotangent_frame from sampledUV and passesvTangentSpaceParams; bumpFragmentMainFunctions.js67 scales derivativeT/B by those parameters.",
+    "morph_shader_path": "morphTargetsVertex.js normalUpdated/tangentUpdated accumulate weighted differences; bumpVertex normalises before buildingTBN. No per-target UV derivative/Mikk rebuild in this path.",
+    "actual_bellows_material": "Audited G3 export eeda9976 had one neutral double-sided PBR material and no normalTexture, textures or images. G4 arrived subsequently; see explicit addendum below.",
+    "remaining_G4_reserve": "Subsequent G4 source/image/UV orientation is now checked in the addendum. Exact shader photometric parity, NormalMap Strength vs glTF scale and untested morph weights remain reserved; no w/texture sign repair is required by this audit.",
+    "conclusion": "The evidence establishes preserved source basis/conventions under the local rotation fix, not a new global UV-handedness/material parity certification."
+  },
+  "interpolation_limits": {
+    "sampled_exclusive_states": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0.5,
+        0
+      ],
+      [
+        0,
+        0.5
+      ]
+    ],
+    "observed": "Actual export preserves base rounding residual≈1.256e−4 rather than making it exactly zero; five sampled states remain near that residual and UV-U direction remains close to the derivative surrogate.",
+    "not_claimed": [
+      "No proof of all continuous weights, simultaneous compression+extension, antipodal or zero normals, skinning, arbitrary reflected or nonuniform transforms",
+      "No independently recomputed exact MikkTSpace frame per endpoint or interpolated mesh",
+      "No real rubber strain or manufacturer fork travel qualification"
+    ],
+    "usage": "Keep the existing exclusive compression/extension review rule. Material parity needs its own sampled runtime comparison after normal maps exist."
+  },
+  "art_accepted": false,
+  "new_physical_dimensions": false,
+  "audit_changes": "Only this new research note and README; no source,GLB,buffer,shared addon,registry orGit writes.",
+  "actual_GLB_comparison": {
+    "native_glb_sha256": "50e82d5483ecefa4c34c3c543c865b538012f78732944fb94420548352693f45",
+    "patched_glb_sha256": "eeda99761f426335e01ca6fd72dd712d2304da044a7d7b185ec7791152fb7935",
+    "only_morph_T_changed_independently_confirmed": true,
+    "vertices": 154010,
+    "triangles": 304896,
+    "minimum_normal_target_cosine": 0.9964049831710126,
+    "method": "Actual patched export deltas vs archived actual native deltas; angle-weighted face UV derivatives surrogate, not a full MikkTSpace parity test; no files/buffers modified.",
+    "states": [
+      {
+        "weights": [
+          0,
+          0
+        ],
+        "uv_det_min_abs": 0.0010531508736448814,
+        "native": {
+          "max_abs_normal_dot_tangent": 0.00012560039458342498,
+          "uvU_surrogate_angle_deg_max": 0.007227108744162839,
+          "uvU_surrogate_angle_deg_p99": 0.004668456158547178,
+          "uvU_surrogate_angle_deg_mean": 0.0014618708443757589,
+          "uvV_handedness_negative_count": 154010,
+          "uvV_handedness_positive_count": 0,
+          "normalised_tangent_min_length_before_renorm": 0.9999398829977086
+        },
+        "patched_actual": {
+          "max_abs_normal_dot_tangent": 0.00012560039458342498,
+          "uvU_surrogate_angle_deg_max": 0.007227108744162839,
+          "uvU_surrogate_angle_deg_p99": 0.004668456158547178,
+          "uvU_surrogate_angle_deg_mean": 0.0014618708443757589,
+          "uvV_handedness_negative_count": 154010,
+          "uvV_handedness_positive_count": 0,
+          "normalised_tangent_min_length_before_renorm": 0.9999398829977086
+        }
+      },
+      {
+        "weights": [
+          1,
+          0
+        ],
+        "uv_det_min_abs": 0.0010531508736448814,
+        "native": {
+          "max_abs_normal_dot_tangent": 0.0020694227997947005,
+          "uvU_surrogate_angle_deg_max": 0.1334331049880051,
+          "uvU_surrogate_angle_deg_p99": 0.010036224525060877,
+          "uvU_surrogate_angle_deg_mean": 0.003281967446538009,
+          "uvV_handedness_negative_count": 154010,
+          "uvV_handedness_positive_count": 0,
+          "normalised_tangent_min_length_before_renorm": 0.9999398346564946
+        },
+        "patched_actual": {
+          "max_abs_normal_dot_tangent": 0.00012564500101413959,
+          "uvU_surrogate_angle_deg_max": 0.06317486697766059,
+          "uvU_surrogate_angle_deg_p99": 0.005306428225672193,
+          "uvU_surrogate_angle_deg_mean": 0.0018224298854485454,
+          "uvV_handedness_negative_count": 154010,
+          "uvV_handedness_positive_count": 0,
+          "normalised_tangent_min_length_before_renorm": 0.9999398245329773
+        }
+      },
+      {
+        "weights": [
+          0,
+          1
+        ],
+        "uv_det_min_abs": 0.0010531508736448814,
+        "native": {
+          "max_abs_normal_dot_tangent": 0.0017883558994379245,
+          "uvU_surrogate_angle_deg_max": 0.10992625629890883,
+          "uvU_surrogate_angle_deg_p99": 0.010393270870093726,
+          "uvU_surrogate_angle_deg_mean": 0.0031828902740860046,
+          "uvV_handedness_negative_count": 154010,
+          "uvV_handedness_positive_count": 0,
+          "normalised_tangent_min_length_before_renorm": 0.9999398250479865
+        },
+        "patched_actual": {
+          "max_abs_normal_dot_tangent": 0.00012557298521405542,
+          "uvU_surrogate_angle_deg_max": 0.05281054648362759,
+          "uvU_surrogate_angle_deg_p99": 0.005317733595398403,
+          "uvU_surrogate_angle_deg_mean": 0.0017603087643755344,
+          "uvV_handedness_negative_count": 154010,
+          "uvV_handedness_positive_count": 0,
+          "normalised_tangent_min_length_before_renorm": 0.9999398188168578
+        }
+      },
+      {
+        "weights": [
+          0.5,
+          0
+        ],
+        "uv_det_min_abs": 0.0010531508736448814,
+        "native": {
+          "max_abs_normal_dot_tangent": 0.0010707716710360018,
+          "uvU_surrogate_angle_deg_max": 0.06809581761467194,
+          "uvU_surrogate_angle_deg_p99": 0.005361372207565407,
+          "uvU_surrogate_angle_deg_mean": 0.0018432392250670854,
+          "uvV_handedness_negative_count": 154010,
+          "uvV_handedness_positive_count": 0,
+          "normalised_tangent_min_length_before_renorm": 0.9999398587673193
+        },
+        "patched_actual": {
+          "max_abs_normal_dot_tangent": 0.0001256102117238047,
+          "uvU_surrogate_angle_deg_max": 0.03378372244627934,
+          "uvU_surrogate_angle_deg_p99": 0.005288872635784658,
+          "uvU_surrogate_angle_deg_mean": 0.0016446076894387686,
+          "uvV_handedness_negative_count": 154010,
+          "uvV_handedness_positive_count": 0,
+          "normalised_tangent_min_length_before_renorm": 0.9999398531678014
+        }
+      },
+      {
+        "weights": [
+          0,
+          0.5
+        ],
+        "uv_det_min_abs": 0.0010531508736448814,
+        "native": {
+          "max_abs_normal_dot_tangent": 0.0008939904998228818,
+          "uvU_surrogate_angle_deg_max": 0.055414795145322555,
+          "uvU_surrogate_angle_deg_p99": 0.005393628772587471,
+          "uvU_surrogate_angle_deg_mean": 0.0018035168034986403,
+          "uvV_handedness_negative_count": 154010,
+          "uvV_handedness_positive_count": 0,
+          "normalised_tangent_min_length_before_renorm": 0.9999398540224887
+        },
+        "patched_actual": {
+          "max_abs_normal_dot_tangent": 0.0001255804114971736,
+          "uvU_surrogate_angle_deg_max": 0.026619898366520765,
+          "uvU_surrogate_angle_deg_p99": 0.005311310141163273,
+          "uvU_surrogate_angle_deg_mean": 0.0015936338814461464,
+          "uvV_handedness_negative_count": 154010,
+          "uvV_handedness_positive_count": 0,
+          "normalised_tangent_min_length_before_renorm": 0.9999398507120272
+        }
+      }
+    ]
+  },
+  "archived_G3_inputs": [
+    {
+      "path": "/workspace/wewa-assets/work-in-progress/fork-bellows/g3/fork-bellows-inspection.glb",
+      "sha256": "eeda99761f426335e01ca6fd72dd712d2304da044a7d7b185ec7791152fb7935"
+    },
+    {
+      "path": "/workspace/wewa-assets/work-in-progress/fork-bellows/g3/fork-bellows-v1.blend",
+      "sha256": "df1679b2ddfe9f48895903d756b92bfacf7c98c1643f1759a31767e888a9bb1b"
+    }
+  ],
+  "G4_image_orientation_addendum": {
+    "revision_export_sha256": "42cb7a7e74f80d5bbc26223c103b405bd835fcdd03a29f674b82c14aac72c9e6",
+    "revision_source_sha256": "fc97e6507c8a757698c39c794fdb38f4ecfc2eab7278d3b1f97a83c66bd7da2c",
+    "method": "Read material.py, inspect_material.py and actual embedded PNG; independently regenerated deterministic height/normal field in NumPy and compared top-down PNG row order and channel contents. No render or source/image/buffer write.",
+    "material_authoring": "Normal direction = normalise(−dH/du,−dH/dv_source,1); assigned as bottom-up Blender Image.pixels with Non-Color; source NormalMap Strength 0.55.",
+    "actual_image_comparison": {
+      "source_material_script_sha256": "a4fd251dd6eb8ef8548323d4b2496d482d919edbc092b4feee5e2c10e0d63ce6",
+      "actual_PNG_sha256": "b2b23660cb6eb3a33acf5bde196daff5595bd96ad9992b8e508e98d40796dd1b",
+      "method": "Regenerate deterministic authored float normals independently fromseed/heightformula;comparequantisedRGB withPNGtop-downrows. No source/imagewrites.",
+      "same_row_order": {
+        "max_abs_byte_error": 16,
+        "mean_abs_byte_error": 1.8992652893066406,
+        "fraction_exact_bytes": 0.4087664286295573
+      },
+      "vertical_reversed": {
+        "max_abs_byte_error": 1,
+        "mean_abs_byte_error": 1.2715657552083333e-06,
+        "fraction_exact_bytes": 0.9999987284342448
+      },
+      "PNG_matches_vertical_reversal_with_one_byte_quantisation_tolerance": true,
+      "green_inversion_alternative_mean_abs_byte_error": 4.098091125488281,
+      "GLB_sha256": "42cb7a7e74f80d5bbc26223c103b405bd835fcdd03a29f674b82c14aac72c9e6",
+      "embeddedPNG_raw_sha256": "b2b23660cb6eb3a33acf5bde196daff5595bd96ad9992b8e508e98d40796dd1b",
+      "embeddedPixels_identical_PNG": true,
+      "normalTexture_scale": 0.550000011920929
+    },
+    "all_G4_mesh_morph_attributes_preserved": {
+      "G3_sha256": "eeda99761f426335e01ca6fd72dd712d2304da044a7d7b185ec7791152fb7935",
+      "G4_sha256": "42cb7a7e74f80d5bbc26223c103b405bd835fcdd03a29f674b82c14aac72c9e6",
+      "changed_scalar_counts": {
+        "indices": 0,
+        "base_POSITION": 0,
+        "base_NORMAL": 0,
+        "base_TEXCOORD_0": 0,
+        "base_TANGENT": 0,
+        "0_POSITION": 0,
+        "0_NORMAL": 0,
+        "0_TANGENT": 0,
+        "1_POSITION": 0,
+        "1_NORMAL": 0,
+        "1_TANGENT": 0
+      },
+      "independently_all_mesh_morph_buffers_unchanged": true
+    },
+    "exact_component_count": 786432,
+    "components_matching_regenerated_vertically_reversed_RGB": 786431,
+    "one_remaining_component_max_byte_error": 1,
+    "orientation_conclusion": "PNG top-down rows are the vertical reversal of the deterministic bottom-up authoring array, with no green-channel inversion. Embedded PNG pixels are identical to authored PNG. This is consistent with exported V=1−Vsource and loader texture invertY=false: corresponding surface points retain source texel contents.",
+    "tangent_basis_conclusion": "With supplied TANGENT, Babylon uses the explicit TBN; proper Zup→Yup rotation preserves source N,T and B=w(N×T). Keeping UV, pixel channels and w unchanged therefore preserves the authored source basis. Opposite sign relative to exported dP/dV alone is not a reason to change w.",
+    "source_branch_evidence": "materialHelper.functions.js1098–1101 enables NORMAL/TANGENT when mesh data exists and normals are needed; pbrBaseMaterial.pure.js1434 calls it. Fragment uses supplied vTBN when TANGENT and NORMAL are defined.",
+    "remaining_limits": [
+      "No new GPU render or actual compiled shader sampling test",
+      "No exact photometric parity claim for Blender NormalMap Strength and glTF normalTexture.scale",
+      "No exact independently recomputed MikkTSpace parity at arbitrary morphed states",
+      "No material realism or chemical reflectance acceptance"
+    ],
+    "additional_source_files_read": [
+      {
+        "path": "assets-src/moto-components/front-fork/bellows/material.py",
+        "sha256": "a4fd251dd6eb8ef8548323d4b2496d482d919edbc092b4feee5e2c10e0d63ce6"
+      },
+      {
+        "path": "assets-src/moto-components/front-fork/bellows/inspect_material.py",
+        "sha256": "7d7f1e60ab1c0ed7619c9013de817796e693bad02691680d0509bc97eff43bb0"
+      },
+      {
+        "path": "assets-src/moto-components/front-fork/bellows/textures/bellows-original-normal.png",
+        "sha256": "b2b23660cb6eb3a33acf5bde196daff5595bd96ad9992b8e508e98d40796dd1b"
+      },
+      {
+        "path": "node_modules/@babylonjs/core/Materials/materialHelper.functions.js",
+        "sha256": "b7ae2d99bd444fbd807995aeefa8e35986dd58bdeab770a678312c030c7712fd"
+      },
+      {
+        "path": "creative/reviews/fork-bellows-v1/material-buffer-check.json",
+        "sha256": "90eabfd892316f9b186defb65a0455f849b8a8d23be6ab3d88d3f99328d0bc6e"
+      },
+      {
+        "path": "creative/reviews/fork-bellows-v1/material-preservation-check.json",
+        "sha256": "8dcd70c62d91c1b3a1f7d06fb6b3614ed01622730b04a735fc3b2681e4d748f0"
+      }
+    ]
+  }
+}

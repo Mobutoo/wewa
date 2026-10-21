@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-ENGINE-FILTER-CAP-001",
-  "label": "Bouchon du filtre moteur — pièce isolée",
+  "label": "Bouchon du filtre moteur — pièce séparée",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,9 +12,9 @@
     "material"
   ],
   "identity": {
-    "variant": "Current RDC visual target, related isolated part references; exact part and local dimensions not certified",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
-    "usage": "Separate detailed candidate before review-only assembly",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
       0.15,
       0.35,
@@ -28,7 +28,70 @@
     "D15"
   ],
   "claims": [],
-  "views": [],
+  "views": [
+    {
+      "name": "outer-face",
+      "camera_m": [
+        -0.38324999809265137,
+        0.14724001288414001,
+        -0.5533999800682068
+      ],
+      "target_m": [
+        -0.1432500034570694,
+        0.15724000334739685,
+        -0.6283999681472778
+      ],
+      "lens_mm": 65,
+      "checkpoint": "outer-face.checkpoint.json",
+      "outputs": [
+        {
+          "file": "outer-face.exr",
+          "format": "OPEN_EXR",
+          "bytes": 1490008,
+          "sha256": "a4e7fc181cf8d9a44d6356f8a8f67ab7b94ea6f885f89befcdc2997d04a1b9c6",
+          "linear_scene_data": true
+        },
+        {
+          "file": "outer-face.png",
+          "format": "PNG",
+          "bytes": 937040,
+          "sha256": "5f08b841751bc6756eb18675ea865397dfa1fa3e34bff42f3954bf567de09011",
+          "linear_scene_data": false
+        }
+      ]
+    },
+    {
+      "name": "rear-spigot",
+      "camera_m": [
+        0.09674999117851257,
+        0.21723999083042145,
+        -0.5383999347686768
+      ],
+      "target_m": [
+        -0.1432500034570694,
+        0.15724000334739685,
+        -0.6283999681472778
+      ],
+      "lens_mm": 65,
+      "checkpoint": "rear-spigot.checkpoint.json",
+      "outputs": [
+        {
+          "file": "rear-spigot.exr",
+          "format": "OPEN_EXR",
+          "bytes": 1527244,
+          "sha256": "7d55e47998a23d5f792ae0f0f942405b2ad5c1a69e157fcee6f59e9320bc195a",
+          "linear_scene_data": true
+        },
+        {
+          "file": "rear-spigot.png",
+          "format": "PNG",
+          "bytes": 932531,
+          "sha256": "3182bb28a72d193e20b5a2eebf4085703b6e6cccec1f928b2e90dd97ebab6d35",
+          "linear_scene_data": false
+        }
+      ]
+    }
+  ],
   "criteria": [],
   "gaps": [
     {
@@ -47,7 +110,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "engine-filter-cap-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -55,63 +118,103 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": null,
+      "revision": "engine-filter-cap-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Local dimensions/camera and exact applicability unresolved",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
       "status": "blocked",
-      "revision": null,
+      "revision": "engine-filter-cap-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Local dimensions/camera and exact applicability unresolved",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "engine-filter-cap-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/engine-filter-cap/engine-filter-cap-v1.blend",
+          "kind": "editable_source",
+          "revision": "engine-filter-cap-v1",
+          "sha256": "0e608b408cbadc490b52397cc20ff10b198344bb874725a6554dd4d14e092924"
+        },
+        {
+          "path": "../../reviews/engine-filter-cap-v1/outer-face.png",
+          "kind": "isolated_comparison",
+          "revision": "engine-filter-cap-v1",
+          "sha256": "5f08b841751bc6756eb18675ea865397dfa1fa3e34bff42f3954bf567de09011"
+        }
+      ],
+      "reason": "Actual96sample outer-face view shows irregular/faceted ring and ear highlights. Cause in topology or normals pending source inspection; preserve v1 and prepare separate correction with RH cover.",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "engine-filter-cap-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/engine-filter-cap-v1/rear-spigot.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "engine-filter-cap-v1",
+          "sha256": "3182bb28a72d193e20b5a2eebf4085703b6e6cccec1f928b2e90dd97ebab6d35"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "engine-filter-cap-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/engine-filter-cap-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "engine-filter-cap-v1",
+          "sha256": "35ccd666b2347bca1383290b7cbbe438d9312b594eed88c9b06f724fae969efa"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "engine-filter-cap-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/engine-filter-cap-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "engine-filter-cap-v1",
+          "sha256": "f5f2cc9a7e5ccd621ce7611cc895f9c6c0c8683493c6435955721fd01521a86a"
+        },
+        {
+          "path": "../../reviews/engine-filter-cap-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "engine-filter-cap-v1",
+          "sha256": "7dde0c24adc252fe41b802b0967044b2310258a61a0278d632d5f2ec20eddcaa"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "engine-filter-cap-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "engine-filter-cap-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -120,8 +223,10 @@
   },
   "active_detailed_fabrication": false,
   "source_revision": "engine-filter-cap-v1",
-  "export_revision": null,
-  "next_action": "Frozen separate cap, final views queued; three-ear variant conditional and actual fasteners/gasket/filter not certified",
+  "export_revision": "engine-filter-cap-v1-inspection",
+  "next_action": "After kickstarter freeze, inspect actual ring/ear topology and normals; create separate v2 if confirmed, never overwrite v1 proofs",
   "art_accepted": false,
-  "production_group": 17
+  "production_group": 17,
+  "candidate_source": "../../../assets-src/moto-components/engine-filter-cap/README.md",
+  "candidate_review": "../../reviews/engine-filter-cap-v1/README.md"
 }

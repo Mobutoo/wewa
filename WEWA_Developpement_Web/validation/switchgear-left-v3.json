@@ -1,0 +1,2251 @@
+{
+  "component_id": "MOTO-SWITCHGEAR-LEFT-001",
+  "revision": "switchgear-left-v3",
+  "source_sha256": "a8cde7758ea9c96f2eac7c2d7ba817b4a353935a0a62ac2d53d0003e8e9bdeea",
+  "source_check": {
+    "component_id": "MOTO-SWITCHGEAR-LEFT-001",
+    "revision": "switchgear-left-v3",
+    "source_sha256": "a8cde7758ea9c96f2eac7c2d7ba817b4a353935a0a62ac2d53d0003e8e9bdeea",
+    "export_sha256": "25fe15ea6d6d5aeebf64300f6428b683596d9f3fbff0f3b236ee9c5177059280",
+    "checks": [
+      {
+        "object": "LH switch upper shell - editable",
+        "vertices": 1467,
+        "faces": 2942,
+        "shells": 1,
+        "non_manifold_edges": 0,
+        "signed_volume_m3": 1.4999112914485723e-05
+      },
+      {
+        "object": "LH switch lower shell - editable",
+        "vertices": 2016,
+        "faces": 4044,
+        "shells": 1,
+        "non_manifold_edges": 0,
+        "signed_volume_m3": 2.7509867719173163e-05
+      },
+      {
+        "object": "LH dipper rocker - high low",
+        "vertices": 266,
+        "faces": 528,
+        "shells": 1,
+        "non_manifold_edges": 0,
+        "signed_volume_m3": 5.892564334733833e-07
+      },
+      {
+        "object": "LH turn selector - centre push",
+        "vertices": 304,
+        "faces": 604,
+        "shells": 1,
+        "non_manifold_edges": 0,
+        "signed_volume_m3": 4.083983612251015e-07
+      },
+      {
+        "object": "LH horn push tongue",
+        "vertices": 326,
+        "faces": 648,
+        "shells": 1,
+        "non_manifold_edges": 0,
+        "signed_volume_m3": 9.052620422193195e-07
+      },
+      {
+        "object": "LH underside screw head 0.129",
+        "vertices": 1419,
+        "faces": 2834,
+        "shells": 1,
+        "non_manifold_edges": 0,
+        "signed_volume_m3": 2.5921957566346066e-08
+      },
+      {
+        "object": "LH underside screw head 0.158",
+        "vertices": 1419,
+        "faces": 2834,
+        "shells": 1,
+        "non_manifold_edges": 0,
+        "signed_volume_m3": 2.5921948402197927e-08
+      }
+    ],
+    "bar_axis_clear_in_both_shells": [
+      true,
+      true
+    ],
+    "controls": [
+      {
+        "object": "LH dipper rocker - high low",
+        "pivot_world_m": [
+          0.20992319285869598,
+          0.05557171255350113,
+          0.11774999648332596
+        ],
+        "travel_estimated": {
+          "rotation_degrees": [
+            -9,
+            9
+          ]
+        },
+        "actual_electrical_state_tested": false
+      },
+      {
+        "object": "LH turn selector - centre push",
+        "pivot_world_m": [
+          0.205339714884758,
+          0.05357377976179123,
+          0.09699999541044235
+        ],
+        "travel_estimated": {
+          "slide_metres": [
+            -0.003,
+            0.003
+          ],
+          "push_metres": 0.0014
+        },
+        "actual_electrical_state_tested": false
+      },
+      {
+        "object": "LH horn push tongue",
+        "pivot_world_m": [
+          0.20992319285869598,
+          0.05557171255350113,
+          0.06999999284744263
+        ],
+        "travel_estimated": {
+          "push_metres": 0.0014
+        },
+        "actual_electrical_state_tested": false
+      }
+    ],
+    "CSG": [
+      {
+        "stages": [
+          {
+            "operation": "features",
+            "part": "Estimated clamp screw boss0.129",
+            "before_volume_m3": 0.00011564141392528016,
+            "after_volume_m3": 0.00011567099660533264
+          },
+          {
+            "operation": "features",
+            "part": "Estimated clamp screw boss0.158",
+            "before_volume_m3": 0.00011567099660533264,
+            "after_volume_m3": 0.0001157005792853851
+          },
+          {
+            "operation": "drills",
+            "part": "LH switch interior wall cavity",
+            "before_volume_m3": 0.0001157005792853851,
+            "after_volume_m3": 4.8386382475805897e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Bar passage 22.5mm working",
+            "before_volume_m3": 4.8386382475805897e-05,
+            "after_volume_m3": 4.6002442232530785e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Estimated screw core0.129",
+            "before_volume_m3": 4.6002442232530785e-05,
+            "after_volume_m3": 4.5832323994555933e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Estimated underside counterbore0.129",
+            "before_volume_m3": 4.5832323994555933e-05,
+            "after_volume_m3": 4.5643001850451714e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Estimated screw core0.158",
+            "before_volume_m3": 4.5643001850451714e-05,
+            "after_volume_m3": 4.5472883612476856e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Estimated underside counterbore0.158",
+            "before_volume_m3": 4.5472883612476856e-05,
+            "after_volume_m3": 4.528356146827679e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Dipper actuator aperture",
+            "before_volume_m3": 4.528356146827679e-05,
+            "after_volume_m3": 4.436721900128017e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Turn selector slot",
+            "before_volume_m3": 4.436721900128017e-05,
+            "after_volume_m3": 4.400298032990137e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Horn actuator lower aperture",
+            "before_volume_m3": 4.400298032990137e-05,
+            "after_volume_m3": 4.288229294086619e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Turn selector rectangular inset panel",
+            "before_volume_m3": 4.288229294086619e-05,
+            "after_volume_m3": 4.2648687256279605e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Split plane upper",
+            "before_volume_m3": 4.2648687256279605e-05,
+            "after_volume_m3": 1.4999126391177785e-05
+          }
+        ],
+        "solid_components": 1,
+        "volume_m3": 1.4999126391177785e-05,
+        "worker": "manifold3d",
+        "worker_version": "3.3.2"
+      },
+      {
+        "stages": [
+          {
+            "operation": "features",
+            "part": "Estimated clamp screw boss0.129",
+            "before_volume_m3": 0.00011564141392528016,
+            "after_volume_m3": 0.00011567099660533264
+          },
+          {
+            "operation": "features",
+            "part": "Estimated clamp screw boss0.158",
+            "before_volume_m3": 0.00011567099660533264,
+            "after_volume_m3": 0.0001157005792853851
+          },
+          {
+            "operation": "drills",
+            "part": "LH switch interior wall cavity",
+            "before_volume_m3": 0.0001157005792853851,
+            "after_volume_m3": 4.8386382475805897e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Bar passage 22.5mm working",
+            "before_volume_m3": 4.8386382475805897e-05,
+            "after_volume_m3": 4.6002442232530785e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Estimated screw core0.129",
+            "before_volume_m3": 4.6002442232530785e-05,
+            "after_volume_m3": 4.5832323994555933e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Estimated underside counterbore0.129",
+            "before_volume_m3": 4.5832323994555933e-05,
+            "after_volume_m3": 4.5643001850451714e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Estimated screw core0.158",
+            "before_volume_m3": 4.5643001850451714e-05,
+            "after_volume_m3": 4.5472883612476856e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Estimated underside counterbore0.158",
+            "before_volume_m3": 4.5472883612476856e-05,
+            "after_volume_m3": 4.528356146827679e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Dipper actuator aperture",
+            "before_volume_m3": 4.528356146827679e-05,
+            "after_volume_m3": 4.436721900128017e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Turn selector slot",
+            "before_volume_m3": 4.436721900128017e-05,
+            "after_volume_m3": 4.400298032990137e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Horn actuator lower aperture",
+            "before_volume_m3": 4.400298032990137e-05,
+            "after_volume_m3": 4.288229294086619e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Turn selector rectangular inset panel",
+            "before_volume_m3": 4.288229294086619e-05,
+            "after_volume_m3": 4.2648687256279605e-05
+          },
+          {
+            "operation": "drills",
+            "part": "Split plane lower",
+            "before_volume_m3": 4.2648687256279605e-05,
+            "after_volume_m3": 2.7509884163992198e-05
+          }
+        ],
+        "solid_components": 1,
+        "volume_m3": 2.7509884163992198e-05,
+        "worker": "manifold3d",
+        "worker_version": "3.3.2"
+      }
+    ],
+    "datum": {
+      "endpoint_m": [
+        0.3400000035762787,
+        0.08500000089406967,
+        0.10499999672174454
+      ],
+      "inward_axis": [
+        -0.9166959524154663,
+        -0.39958542585372925,
+        0.0
+      ],
+      "thumb_side_radial": [
+        -0.39958542585372925,
+        0.9166959524154663,
+        0.0
+      ],
+      "left_is_positive_X": true
+    },
+    "all_dimensions_estimated": true,
+    "exact_current_RDC_identity_confirmed": false,
+    "functional_electrical_controls": false,
+    "accepted_art": false,
+    "parent_revision": "switchgear-left-v2",
+    "parent_source_sha256": "657ecbdb13f48f9eb59a354ed7ebfba2ab05a7ac7d6b6e7c7ced8cb33b610ea4",
+    "parent_export_sha256": "145a1464a83b0454eb2116e0c8b18cd51c972a9c5b74d5e5ca08624b2bd8f1d3",
+    "only_icon_contours_changed": true,
+    "source_rigid_geometry_normals_UV_parenting_identical": true,
+    "source_rigid_signature_sha256": {
+      "LH switch upper shell - editable": "6ba469a44461cc8e92c42fc4c162760fc92adef4d4b5ee358964efeefc10ddc8",
+      "LH switch lower shell - editable": "b0c69a9af65f3311d70cbd47505a629be090aaa53d70a1f5759de344ec75b26c",
+      "LH dipper rocker - high low": "181c55f0f52d4de8105b9e919052b7350482ab2ced7e028eae8b473d5c0a4ce4",
+      "LH turn selector - centre push": "24bf76f1a4242165709abaf1794fcc54e701c53f3679cfeac479ac323e80b662",
+      "LH horn push tongue": "a62d384cb450825b3ccfd5865986c45fa3d1e62e3f112692b4c6ffda79d42db7",
+      "LH underside screw head 0.129": "e811536dbac6cb953b185107decc640ada58e9a9032a422030e9e0ffe6d588e5",
+      "LH underside screw head 0.158": "8bb558c44dabeeeec080453920156c5c709a43d530e1639695385b80d67a8f8e"
+    },
+    "removed_icons": [
+      "LH print high_beam traced contours v2",
+      "LH print low_beam traced contours v2",
+      "LH print horn traced contours v2"
+    ],
+    "new_icon_contours": [
+      {
+        "object": "LH print high_beam smooth contours v3",
+        "editable_curve": "EDITABLE high_beam white ink outline v3",
+        "source_components": 6,
+        "contour_loops": 7,
+        "width_m_estimated": 0.0063,
+        "photo_bounds_px": [
+          407,
+          120,
+          458,
+          145
+        ],
+        "five_rays_documented": 5
+      },
+      {
+        "object": "LH print low_beam smooth contours v3",
+        "editable_curve": "EDITABLE low_beam white ink outline v3",
+        "source_components": 6,
+        "contour_loops": 7,
+        "width_m_estimated": 0.0063,
+        "photo_bounds_px": [
+          412,
+          175,
+          464,
+          201
+        ],
+        "five_rays_documented": 5
+      },
+      {
+        "object": "LH print horn smooth contours v3",
+        "editable_curve": "EDITABLE horn white ink outline v3",
+        "source_components": 1,
+        "contour_loops": 2,
+        "width_m_estimated": 0.0079,
+        "photo_bounds_px": [
+          290,
+          437,
+          358,
+          477
+        ],
+        "five_rays_documented": null
+      }
+    ],
+    "glyph_trace_register": "creative/research/switchgear-left/marking-vector-contours-v3.json",
+    "inherited_geometric_checks_exact_rigid_identity": true,
+    "art_accepted": false
+  },
+  "export_check": {
+    "asset": "switchgear-left-v3",
+    "revision": "switchgear-left-v3",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/switchgear-left/switchgear-left-v3-inspection.glb",
+        "sha256": "25fe15ea6d6d5aeebf64300f6428b683596d9f3fbff0f3b236ee9c5177059280",
+        "bytes": 1545708,
+        "glTF_errors": 0,
+        "glTF_warnings": 0,
+        "messages": [
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/2/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/3/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/4/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/5/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/6/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/7/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/8/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/9/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/10/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/11/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/12/primitives/0/attributes/TEXCOORD_0"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/accessors/23"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/accessors/24"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/accessors/25"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/accessors/26"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/accessors/27"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/accessors/28"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/accessors/29"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/accessors/30"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/accessors/31"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/accessors/32"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/accessors/33"
+          }
+        ],
+        "bounds": {
+          "min": [
+            0.17847149074077606,
+            0.06224999576807022,
+            -0.06342160701751709
+          ],
+          "max": [
+            0.23693996667861938,
+            0.12700000405311584,
+            0.00046703964471817017
+          ]
+        },
+        "vertices": 26444,
+        "triangles": 22230,
+        "triangle_area_local_m2": {
+          "minimum": 2.893241202173158e-13,
+          "exactly_zero": 0,
+          "below_1e_minus18": 0,
+          "note": "Local exported coordinates; not a self-intersection or surface-fidelity proof"
+        },
+        "tangent_frame": {
+          "vectors": 6272,
+          "max_unit_error": 6.888585390973923e-05,
+          "max_normal_dot": 0.00012932792535025328,
+          "handedness_sign_is_unit": true,
+          "note": "Finite orthonormal frame only; not full MikkTSpace or renderer visual parity"
+        },
+        "node_names": [
+          "LH switch upper shell - editable",
+          "LH switch lower shell - editable",
+          "LH dipper rocker - high low",
+          "LH dipper rocker - high low PIVOT",
+          "LH turn selector - centre push",
+          "LH turn selector - centre push PIVOT",
+          "LH horn push tongue",
+          "LH horn push tongue PIVOT",
+          "LH underside screw head 0.129",
+          "LH underside screw head 0.158",
+          "LH print TURN projected mesh",
+          "LH print left arrow",
+          "LH print right arrow",
+          "LH print high_beam smooth contours v3",
+          "LH print low_beam smooth contours v3",
+          "LH print horn smooth contours v3"
+        ],
+        "materials": [
+          {
+            "name": "LH moulded black polymer - candidate",
+            "basecolor": [
+              0.004000000189989805,
+              0.004999999888241291,
+              0.006000000052154064,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "extensions": []
+          },
+          {
+            "name": "LH buttons satin black",
+            "basecolor": [
+              0.008999999612569809,
+              0.010999999940395355,
+              0.013000000268220901,
+              1
+            ],
+            "metallic": 0,
+            "roughness": 0.25,
+            "extensions": []
+          },
+          {
+            "name": "LH estimated screw steel",
+            "basecolor": [
+              0.20000000298023224,
+              0.2199999988079071,
+              0.23999999463558197,
+              1
+            ],
+            "metallic": 0.8500000238418579,
+            "roughness": 0.2800000011920929,
+            "extensions": []
+          },
+          {
+            "name": "LH original white printed markings",
+            "basecolor": [
+              0.7200000286102295,
+              0.75,
+              0.7200000286102295,
+              1
+            ],
+            "metallic": 0,
+            "roughness": 0.5,
+            "extensions": []
+          }
+        ]
+      }
+    ],
+    "scope": "Actual glTF buffers and format only; not shape reception, physical interface or mobile qualification",
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "browser_check": {
+    "camera": {
+      "position": [
+        0.20770572870969772,
+        0.19904863097035147,
+        -0.20149257316845548
+      ],
+      "target": [
+        0.20770572870969772,
+        0.09462499991059303,
+        -0.03147728368639946
+      ],
+      "radius": 0.19952316502444484,
+      "fov": 0.72,
+      "fovMode": 0
+    },
+    "framing": {
+      "min": [
+        0.38833125694322285,
+        0.2209305120509822
+      ],
+      "max": [
+        0.6117377633938151,
+        0.8101411749871857
+      ],
+      "scope": "Conservative projected actual mesh bounding boxes; whole-piece framing only"
+    },
+    "asset": "switchgear-left-v3",
+    "revision": "switchgear-left-v3",
+    "config": {
+      "label": "Commodo gauche v3 — pictogrammes lissés",
+      "lot": 4,
+      "review": "switchgear-left-v3",
+      "source": "switchgear-left/switchgear-left-v3.blend",
+      "component_id": "MOTO-SWITCHGEAR-LEFT-001",
+      "files": [
+        "switchgear-left/switchgear-left-v3-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "dipper",
+          "label": "Code/phare",
+          "node": "LH dipper rocker - high low PIVOT",
+          "axis": [
+            -0.9166959524,
+            0,
+            0.3995854259
+          ],
+          "kind": "rotation",
+          "min": -9,
+          "max": 9,
+          "step": 0.1,
+          "initial": 0
+        },
+        {
+          "id": "turn",
+          "label": "Clignotant",
+          "node": "LH turn selector - centre push PIVOT",
+          "axis": [
+            -0.9166959524,
+            0,
+            0.3995854259
+          ],
+          "kind": "translation",
+          "min": -0.003,
+          "max": 0.003,
+          "step": 0.0001,
+          "initial": 0
+        },
+        {
+          "id": "turn_push",
+          "label": "Rappel central",
+          "node": "LH turn selector - centre push PIVOT",
+          "axis": [
+            0.3995854259,
+            0,
+            0.9166959524
+          ],
+          "kind": "translation",
+          "min": 0,
+          "max": 0.0014,
+          "step": 0.0001,
+          "initial": 0
+        },
+        {
+          "id": "horn",
+          "label": "Klaxon",
+          "node": "LH horn push tongue PIVOT",
+          "axis": [
+            0.3995854259,
+            0,
+            0.9166959524
+          ],
+          "kind": "translation",
+          "min": 0,
+          "max": 0.0014,
+          "step": 0.0001,
+          "initial": 0
+        }
+      ],
+      "collection": "WEWA_SWITCHGEAR_LEFT",
+      "readme": "README_v3.md"
+    },
+    "files": [
+      "switchgear-left/switchgear-left-v3-inspection.glb"
+    ],
+    "meshes": 13,
+    "vertices": 26444,
+    "triangles": 22230,
+    "bounds": {
+      "min": [
+        0.17847149074077606,
+        0.06224999576807022,
+        -0.06342160701751709
+      ],
+      "max": [
+        0.23693996667861938,
+        0.12700000405311584,
+        0.00046703964471817017
+      ]
+    },
+    "textures_ready": true,
+    "renderer": {
+      "vendor": "Google Inc. (Google)",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "rig_states": {
+      "dipper": 0,
+      "turn": 0,
+      "turn_push": 0,
+      "horn": 0
+    },
+    "attachments": [],
+    "rigs": [
+      {
+        "id": "dipper",
+        "node": "LH dipper rocker - high low PIVOT",
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "world_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.20992319285869598,
+          0.11774999648332596,
+          -0.05557171255350113,
+          1.0
+        ],
+        "actual_geometry": [
+          {
+            "mesh": "LH dipper rocker - high low",
+            "vertex_index": 187,
+            "point_world": [
+              0.20624125003814697,
+              0.11140457540750504,
+              -0.054000481963157654
+            ]
+          }
+        ]
+      },
+      {
+        "id": "turn",
+        "node": "LH turn selector - centre push PIVOT",
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "world_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.205339714884758,
+          0.09699999541044235,
+          -0.05357377976179123,
+          1.0
+        ],
+        "actual_geometry": [
+          {
+            "mesh": "LH turn selector - centre push",
+            "vertex_index": 277,
+            "point_world": [
+              0.20585395395755768,
+              0.09619195759296417,
+              -0.04779812693595886
+            ]
+          }
+        ]
+      },
+      {
+        "id": "turn_push",
+        "node": "LH turn selector - centre push PIVOT",
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "world_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.205339714884758,
+          0.09699999541044235,
+          -0.05357377976179123,
+          1.0
+        ],
+        "actual_geometry": [
+          {
+            "mesh": "LH turn selector - centre push",
+            "vertex_index": 277,
+            "point_world": [
+              0.20585395395755768,
+              0.09619195759296417,
+              -0.04779812693595886
+            ]
+          }
+        ]
+      },
+      {
+        "id": "horn",
+        "node": "LH horn push tongue PIVOT",
+        "quaternion": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "world_matrix": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.20992319285869598,
+          0.06999999284744263,
+          -0.05557171255350113,
+          1.0
+        ],
+        "actual_geometry": [
+          {
+            "mesh": "LH horn push tongue",
+            "vertex_index": 213,
+            "point_world": [
+              0.21189996600151062,
+              0.07644999772310257,
+              -0.0629240870475769
+            ]
+          }
+        ]
+      }
+    ],
+    "art_accepted": false,
+    "physical_iphone_tested": false,
+    "public_game_unchanged": true,
+    "pixel_checks": [
+      {
+        "view": "quarter",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 89007,
+        "changed_fraction": 0.07726302083333333,
+        "rgb_min": [
+          23,
+          27,
+          31
+        ],
+        "rgb_max": [
+          241,
+          248,
+          248
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "driver",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 80134,
+        "changed_fraction": 0.06956076388888889,
+        "rgb_min": [
+          23,
+          27,
+          30
+        ],
+        "rgb_max": [
+          242,
+          248,
+          247
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "reverse",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50647,
+        "changed_fraction": 0.04396440972222222,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          122,
+          123,
+          125
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "dipper:-9",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50741,
+        "changed_fraction": 0.044046006944444445,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          122,
+          123,
+          125
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "dipper:9",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50647,
+        "changed_fraction": 0.04396440972222222,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          122,
+          123,
+          125
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "dipper:-1009",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50741,
+        "changed_fraction": 0.044046006944444445,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          122,
+          123,
+          125
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "dipper:1009",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50647,
+        "changed_fraction": 0.04396440972222222,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          122,
+          123,
+          125
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "turn:-0.003",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50647,
+        "changed_fraction": 0.04396440972222222,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          122,
+          123,
+          125
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "turn:0.003",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50647,
+        "changed_fraction": 0.04396440972222222,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          122,
+          123,
+          125
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "turn:-1000.003",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50647,
+        "changed_fraction": 0.04396440972222222,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          122,
+          123,
+          125
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "turn:1000.003",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50647,
+        "changed_fraction": 0.04396440972222222,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          122,
+          123,
+          125
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "turn_push:0",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50647,
+        "changed_fraction": 0.04396440972222222,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          122,
+          123,
+          125
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "turn_push:0.0014",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50647,
+        "changed_fraction": 0.04396440972222222,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          122,
+          123,
+          125
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "turn_push:-1000",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50647,
+        "changed_fraction": 0.04396440972222222,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          122,
+          123,
+          125
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "turn_push:1000.0014",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50647,
+        "changed_fraction": 0.04396440972222222,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          122,
+          123,
+          125
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "horn:0",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50647,
+        "changed_fraction": 0.04396440972222222,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          122,
+          123,
+          125
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "horn:0.0014",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50647,
+        "changed_fraction": 0.04396440972222222,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          122,
+          123,
+          125
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "horn:-1000",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50647,
+        "changed_fraction": 0.04396440972222222,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          122,
+          123,
+          125
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "horn:1000.0014",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 50647,
+        "changed_fraction": 0.04396440972222222,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          122,
+          123,
+          125
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "landscape-844x390",
+        "width": 844,
+        "height": 390,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 15351,
+        "changed_fraction": 0.04663689391177543,
+        "rgb_min": [
+          23,
+          27,
+          31
+        ],
+        "rgb_max": [
+          221,
+          228,
+          229
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      }
+    ],
+    "page_errors": [],
+    "http_failures": [],
+    "pose_checks": [
+      {
+        "rig": "dipper",
+        "states": [
+          {
+            "requested": -9,
+            "rig_states": {
+              "dipper": -9,
+              "turn": 0,
+              "turn_push": 0,
+              "horn": 0
+            },
+            "rig": {
+              "id": "dipper",
+              "node": "LH dipper rocker - high low PIVOT",
+              "quaternion": [
+                0.07192313613940157,
+                0,
+                -0.03135111146840323,
+                0.996917333733128
+              ],
+              "world_matrix": [
+                0.9980342388153076,
+                -0.06250893324613571,
+                -0.004509740509092808,
+                0.0,
+                0.06250893324613571,
+                0.9876883625984192,
+                0.1434028446674347,
+                0.0,
+                -0.004509740509092808,
+                -0.1434028446674347,
+                0.9896541237831116,
+                0.0,
+                0.20992319285869598,
+                0.11774999648332596,
+                -0.05557171255350113,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH dipper rocker - high low",
+                  "vertex_index": 187,
+                  "point_world": [
+                    0.20584475651373835,
+                    0.11148753331265293,
+                    -0.05491008454654896
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 9,
+            "rig_states": {
+              "dipper": 9,
+              "turn": 0,
+              "turn_push": 0,
+              "horn": 0
+            },
+            "rig": {
+              "id": "dipper",
+              "node": "LH dipper rocker - high low PIVOT",
+              "quaternion": [
+                -0.07192313613940157,
+                0,
+                0.03135111146840323,
+                0.996917333733128
+              ],
+              "world_matrix": [
+                0.9980342388153076,
+                0.06250893324613571,
+                -0.004509740509092808,
+                0.0,
+                -0.06250893324613571,
+                0.9876883625984192,
+                -0.1434028446674347,
+                0.0,
+                -0.004509740509092808,
+                0.1434028446674347,
+                0.9896541237831116,
+                0.0,
+                0.20992319285869598,
+                0.11774999648332596,
+                -0.05557171255350113,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH dipper rocker - high low",
+                  "vertex_index": 187,
+                  "point_world": [
+                    0.20663804751863257,
+                    0.11147786254924885,
+                    -0.05309018168077813
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": -1009,
+            "rig_states": {
+              "dipper": -9,
+              "turn": 0,
+              "turn_push": 0,
+              "horn": 0
+            },
+            "rig": {
+              "id": "dipper",
+              "node": "LH dipper rocker - high low PIVOT",
+              "quaternion": [
+                0.07192313613940157,
+                0,
+                -0.03135111146840323,
+                0.996917333733128
+              ],
+              "world_matrix": [
+                0.9980342388153076,
+                -0.06250893324613571,
+                -0.004509740509092808,
+                0.0,
+                0.06250893324613571,
+                0.9876883625984192,
+                0.1434028446674347,
+                0.0,
+                -0.004509740509092808,
+                -0.1434028446674347,
+                0.9896541237831116,
+                0.0,
+                0.20992319285869598,
+                0.11774999648332596,
+                -0.05557171255350113,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH dipper rocker - high low",
+                  "vertex_index": 187,
+                  "point_world": [
+                    0.20584475651373835,
+                    0.11148753331265293,
+                    -0.05491008454654896
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 1009,
+            "rig_states": {
+              "dipper": 9,
+              "turn": 0,
+              "turn_push": 0,
+              "horn": 0
+            },
+            "rig": {
+              "id": "dipper",
+              "node": "LH dipper rocker - high low PIVOT",
+              "quaternion": [
+                -0.07192313613940157,
+                0,
+                0.03135111146840323,
+                0.996917333733128
+              ],
+              "world_matrix": [
+                0.9980342388153076,
+                0.06250893324613571,
+                -0.004509740509092808,
+                0.0,
+                -0.06250893324613571,
+                0.9876883625984192,
+                -0.1434028446674347,
+                0.0,
+                -0.004509740509092808,
+                0.1434028446674347,
+                0.9896541237831116,
+                0.0,
+                0.20992319285869598,
+                0.11774999648332596,
+                -0.05557171255350113,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH dipper rocker - high low",
+                  "vertex_index": 187,
+                  "point_world": [
+                    0.20663804751863257,
+                    0.11147786254924885,
+                    -0.05309018168077813
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "actual_vertex_travel_m": 0.0019853086870690365
+      },
+      {
+        "rig": "turn",
+        "states": [
+          {
+            "requested": -0.003,
+            "rig_states": {
+              "dipper": 0,
+              "turn": -0.003,
+              "turn_push": 0,
+              "horn": 0
+            },
+            "rig": {
+              "id": "turn",
+              "node": "LH turn selector - centre push PIVOT",
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "world_matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.20808979868888855,
+                0.09699999541044235,
+                -0.05477253720164299,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH turn selector - centre push",
+                  "vertex_index": 277,
+                  "point_world": [
+                    0.20860403776168823,
+                    0.09619195759296417,
+                    -0.04899688437581062
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 0.003,
+            "rig_states": {
+              "dipper": 0,
+              "turn": 0.003,
+              "turn_push": 0,
+              "horn": 0
+            },
+            "rig": {
+              "id": "turn",
+              "node": "LH turn selector - centre push PIVOT",
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "world_matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.20258963108062744,
+                0.09699999541044235,
+                -0.05237502232193947,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH turn selector - centre push",
+                  "vertex_index": 277,
+                  "point_world": [
+                    0.20310387015342712,
+                    0.09619195759296417,
+                    -0.0465993694961071
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": -1000.003,
+            "rig_states": {
+              "dipper": 0,
+              "turn": -0.003,
+              "turn_push": 0,
+              "horn": 0
+            },
+            "rig": {
+              "id": "turn",
+              "node": "LH turn selector - centre push PIVOT",
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "world_matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.20808979868888855,
+                0.09699999541044235,
+                -0.05477253720164299,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH turn selector - centre push",
+                  "vertex_index": 277,
+                  "point_world": [
+                    0.20860403776168823,
+                    0.09619195759296417,
+                    -0.04899688437581062
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 1000.003,
+            "rig_states": {
+              "dipper": 0,
+              "turn": 0.003,
+              "turn_push": 0,
+              "horn": 0
+            },
+            "rig": {
+              "id": "turn",
+              "node": "LH turn selector - centre push PIVOT",
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "world_matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.20258963108062744,
+                0.09699999541044235,
+                -0.05237502232193947,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH turn selector - centre push",
+                  "vertex_index": 277,
+                  "point_world": [
+                    0.20310387015342712,
+                    0.09619195759296417,
+                    -0.0465993694961071
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "actual_vertex_travel_m": 0.005999993443110127
+      },
+      {
+        "rig": "turn_push",
+        "states": [
+          {
+            "requested": 0,
+            "rig_states": {
+              "dipper": 0,
+              "turn": 0,
+              "turn_push": 0,
+              "horn": 0
+            },
+            "rig": {
+              "id": "turn_push",
+              "node": "LH turn selector - centre push PIVOT",
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "world_matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.205339714884758,
+                0.09699999541044235,
+                -0.05357377976179123,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH turn selector - centre push",
+                  "vertex_index": 277,
+                  "point_world": [
+                    0.20585395395755768,
+                    0.09619195759296417,
+                    -0.04779812693595886
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 0.0014,
+            "rig_states": {
+              "dipper": 0,
+              "turn": 0,
+              "turn_push": 0.0014,
+              "horn": 0
+            },
+            "rig": {
+              "id": "turn_push",
+              "node": "LH turn selector - centre push PIVOT",
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "world_matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.20589913427829742,
+                0.09699999541044235,
+                -0.052290406078100204,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH turn selector - centre push",
+                  "vertex_index": 277,
+                  "point_world": [
+                    0.2064133733510971,
+                    0.09619195759296417,
+                    -0.04651475325226784
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": -1000,
+            "rig_states": {
+              "dipper": 0,
+              "turn": 0,
+              "turn_push": 0,
+              "horn": 0
+            },
+            "rig": {
+              "id": "turn_push",
+              "node": "LH turn selector - centre push PIVOT",
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "world_matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.205339714884758,
+                0.09699999541044235,
+                -0.05357377976179123,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH turn selector - centre push",
+                  "vertex_index": 277,
+                  "point_world": [
+                    0.20585395395755768,
+                    0.09619195759296417,
+                    -0.04779812693595886
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 1000.0014,
+            "rig_states": {
+              "dipper": 0,
+              "turn": 0,
+              "turn_push": 0.0014,
+              "horn": 0
+            },
+            "rig": {
+              "id": "turn_push",
+              "node": "LH turn selector - centre push PIVOT",
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "world_matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.20589913427829742,
+                0.09699999541044235,
+                -0.052290406078100204,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH turn selector - centre push",
+                  "vertex_index": 277,
+                  "point_world": [
+                    0.2064133733510971,
+                    0.09619195759296417,
+                    -0.04651475325226784
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "actual_vertex_travel_m": 0.0013999993106636492
+      },
+      {
+        "rig": "horn",
+        "states": [
+          {
+            "requested": 0,
+            "rig_states": {
+              "dipper": 0,
+              "turn": 0,
+              "turn_push": 0,
+              "horn": 0
+            },
+            "rig": {
+              "id": "horn",
+              "node": "LH horn push tongue PIVOT",
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "world_matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.20992319285869598,
+                0.06999999284744263,
+                -0.05557171255350113,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH horn push tongue",
+                  "vertex_index": 213,
+                  "point_world": [
+                    0.21189996600151062,
+                    0.07644999772310257,
+                    -0.0629240870475769
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 0.0014,
+            "rig_states": {
+              "dipper": 0,
+              "turn": 0,
+              "turn_push": 0,
+              "horn": 0.0014
+            },
+            "rig": {
+              "id": "horn",
+              "node": "LH horn push tongue PIVOT",
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "world_matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.2104826122522354,
+                0.06999999284744263,
+                -0.054288338869810104,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH horn push tongue",
+                  "vertex_index": 213,
+                  "point_world": [
+                    0.21245938539505005,
+                    0.07644999772310257,
+                    -0.06164071336388588
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": -1000,
+            "rig_states": {
+              "dipper": 0,
+              "turn": 0,
+              "turn_push": 0,
+              "horn": 0
+            },
+            "rig": {
+              "id": "horn",
+              "node": "LH horn push tongue PIVOT",
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "world_matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.20992319285869598,
+                0.06999999284744263,
+                -0.05557171255350113,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH horn push tongue",
+                  "vertex_index": 213,
+                  "point_world": [
+                    0.21189996600151062,
+                    0.07644999772310257,
+                    -0.0629240870475769
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "requested": 1000.0014,
+            "rig_states": {
+              "dipper": 0,
+              "turn": 0,
+              "turn_push": 0,
+              "horn": 0.0014
+            },
+            "rig": {
+              "id": "horn",
+              "node": "LH horn push tongue PIVOT",
+              "quaternion": [
+                0,
+                0,
+                0,
+                1
+              ],
+              "world_matrix": [
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.2104826122522354,
+                0.06999999284744263,
+                -0.054288338869810104,
+                1.0
+              ],
+              "actual_geometry": [
+                {
+                  "mesh": "LH horn push tongue",
+                  "vertex_index": 213,
+                  "point_world": [
+                    0.21245938539505005,
+                    0.07644999772310257,
+                    -0.06164071336388588
+                  ]
+                }
+              ]
+            }
+          }
+        ],
+        "actual_vertex_travel_m": 0.0013999993106636492
+      }
+    ],
+    "scope": "Actual Babylon imports and vertex motion in Chromium softwareWebGL; not Safari/iPhone/FPS qualification",
+    "render_mode": "Manual frames after scene readiness",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/switchgear-left/switchgear-left-v3-inspection.glb",
+        "sha256": "25fe15ea6d6d5aeebf64300f6428b683596d9f3fbff0f3b236ee9c5177059280"
+      }
+    ],
+    "inspector_sha256": "19e4908f4a7b69b492710adfb7d28a5508745721f9c991941a5ed439f3a9fb07",
+    "capture_tool_sha256": "53b07b0e9bda4b86c9d7f05c10815755b3be50dcc85e29a4b3f164cbc38fcf28",
+    "inspector_path": "tools/motorcycle-lab/review-v2.js",
+    "capture_tool_path": "tools/capture_motorcycle18_v3.py",
+    "inputs_unchanged_during_capture": true
+  },
+  "render_report": {
+    "source_sha256": "a8cde7758ea9c96f2eac7c2d7ba817b4a353935a0a62ac2d53d0003e8e9bdeea",
+    "export_sha256": "25fe15ea6d6d5aeebf64300f6428b683596d9f3fbff0f3b236ee9c5177059280",
+    "renderer": "Blender4.3.2 Cycles/OpenImageDenoise CPU",
+    "samples": 96,
+    "resolution_px": [
+      1100,
+      1000
+    ],
+    "views": [
+      {
+        "name": "symbols-high-low",
+        "camera_location_m": [
+          0.165278822183609,
+          0.12796002626419067,
+          0.11749999970197678
+        ],
+        "camera_target_m": [
+          0.19924357533454895,
+          0.050040870904922485,
+          0.11749999970197678
+        ],
+        "lens_mm": 90,
+        "PNG_path": "creative/reviews/switchgear-left-v3/symbols-high-low.png",
+        "PNG_sha256": "9eea16c6dabb10c643a46eee944214c3e03154408efb99d48188177a085e8f08",
+        "EXR_private_path": "/workspace/wewa-assets/renders/switchgear-left-v3/symbols-high-low.exr",
+        "EXR_sha256": "ed1e0cabba2dd1bdcf65eb05934122526eba63bd59e043ccad633afc1ed5aa29",
+        "actually_saved": true,
+        "checkpoint_config_sha256": "d927c7d07721d4b411c210a50a5d3e407938ba394e49c241ec4c559bb2dba880"
+      },
+      {
+        "name": "symbol-horn",
+        "camera_location_m": [
+          0.17292490601539612,
+          0.11667554825544357,
+          0.08549999445676804
+        ],
+        "camera_target_m": [
+          0.2082294523715973,
+          0.05570352077484131,
+          0.08349999785423279
+        ],
+        "lens_mm": 90,
+        "PNG_path": "creative/reviews/switchgear-left-v3/symbol-horn.png",
+        "PNG_sha256": "38b2c97816df2e8667bfd6080f8b97b30a295c3c7e4899de6cd940604f84a185",
+        "EXR_private_path": "/workspace/wewa-assets/renders/switchgear-left-v3/symbol-horn.exr",
+        "EXR_sha256": "cab5a483d576d42868a65621883900565a83c67b4db9bd112fa939a7745ffe7d",
+        "actually_saved": true,
+        "checkpoint_config_sha256": "c7fb8c45135c7658881dfc2ca010a26ede7b95684a9ec6b13c292181716dffcd"
+      }
+    ],
+    "derived_from": "creative/reviews/switchgear-left-v3/render-checkpoints.json",
+    "visual_reading_by_agent": "Both actual96 images read: five smooth separate ray strokes, open D interiors, smooth horn outline and loop; target ink fully visible. Shape/material/exact-variant reception remains open.",
+    "body_views_inherited_by_bit_identical_buffers": "creative/reviews/switchgear-left-v2/render-report.json",
+    "art_accepted": false
+  },
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true
+}

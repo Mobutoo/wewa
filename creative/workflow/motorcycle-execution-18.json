@@ -38,6 +38,13 @@
           "runtime_checked": true,
           "art_accepted": false
         }
+      ],
+      "remaining_observable_units": [
+        "amortisseurs supérieurs DS181008 ×2, variante liée",
+        "amortisseurs inférieurs DS181009 ×2, variante liée",
+        "rondelles supérieures DS181007 ×2, variante liée",
+        "rondelles inférieures DS181010 ×2, variante liée",
+        "écrous Nyloc M10 39042215 ×2, variante liée"
       ]
     },
     {
@@ -64,13 +71,14 @@
       ],
       "any_source_blend_built": true,
       "any_runtime_checked": true,
-      "all_required_components_built": false,
+      "all_required_components_built": true,
       "all_interfaces_checked": false,
       "group_complete": false,
       "observable_fabrication_units": [
         "support ajouré et collerettes"
       ],
-      "owner_chain": "A"
+      "owner_chain": "A",
+      "fabrication_scope": "All documented observable units for this candidate variant; not certified exact RDC inventory, artistic acceptance or installed fit"
     },
     {
       "lot": 3,
@@ -84,18 +92,18 @@
       "user_art_accepted": false,
       "candidates": [
         {
-          "component_id": "MOTO-HANDLEBAR-GRIPS-001",
-          "revision": "handlebar-grips-v2",
-          "source_sha256": "40514ce73d9a5a763fbf98fe2c1d0ab84c248a0d9373a7747895781e18cd98ae",
-          "review": "../reviews/handlebar-grips-v2/README.md",
-          "runtime_checked": true,
-          "art_accepted": false
-        },
-        {
           "component_id": "MOTO-THROTTLE-CONTROL-001",
           "revision": "throttle-control-v1",
           "source_sha256": "1c0747975fbdcd2ada2140f2461ff359940967aa1a3036e2b7e0a3d24221237f",
           "review": "../reviews/throttle-control-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-HANDLEBAR-GRIPS-001",
+          "revision": "handlebar-grips-v3",
+          "source_sha256": "8ba577ea4078850569394d7d17e6e6d868e590bb287b329da3c0600706351381",
+          "review": "../reviews/handlebar-grips-v3/README.md",
           "runtime_checked": true,
           "art_accepted": false
         }
@@ -106,11 +114,14 @@
       "all_interfaces_checked": false,
       "group_complete": false,
       "observable_fabrication_units": [
-        "poignée droite v2",
+        "poignées droite/gauche v3, motifs de travail estimés",
         "manchon et bobine",
         "guide de câble fixe"
       ],
-      "owner_chain": "B"
+      "owner_chain": "B",
+      "remaining_observable_units": [
+        "segment accélérateur sortant, suivi au lot10"
+      ]
     },
     {
       "lot": 4,
@@ -124,7 +135,7 @@
       "user_art_accepted": false,
       "any_source_blend_built": true,
       "any_runtime_checked": true,
-      "all_required_components_built": false,
+      "all_required_components_built": true,
       "all_interfaces_checked": false,
       "group_complete": false,
       "observable_fabrication_units": [
@@ -137,13 +148,15 @@
       "candidates": [
         {
           "component_id": "MOTO-SWITCHGEAR-LEFT-001",
-          "revision": "switchgear-left-v2",
-          "source_sha256": "657ecbdb13f48f9eb59a354ed7ebfba2ab05a7ac7d6b6e7c7ced8cb33b610ea4",
-          "review": "../reviews/switchgear-left-v2/README.md",
+          "revision": "switchgear-left-v3",
+          "source_sha256": "a8cde7758ea9c96f2eac7c2d7ba817b4a353935a0a62ac2d53d0003e8e9bdeea",
+          "review": "../reviews/switchgear-left-v3/README.md",
           "runtime_checked": true,
           "art_accepted": false
         }
-      ]
+      ],
+      "fabrication_scope": "All documented observable units for this candidate variant; not certified exact RDC inventory, artistic acceptance or installed fit",
+      "known_visual_rework": "Smooth printed glyphs revision3 rendering; version2 remains pixel-stepped"
     },
     {
       "lot": 5,
@@ -176,7 +189,9 @@
           "runtime_checked": true,
           "art_accepted": false
         }
-      ]
+      ],
+      "documented_observable_candidate_units_built": true,
+      "full_current_rdc_inventory_confirmed": false
     },
     {
       "lot": 6,
@@ -210,6 +225,10 @@
           "runtime_checked": true,
           "art_accepted": false
         }
+      ],
+      "remaining_observable_units": [
+        "vis et écrous de bridage du support",
+        "segment sortant de câble, suivi au lot10"
       ]
     },
     {
@@ -245,13 +264,19 @@
           "runtime_checked": true,
           "art_accepted": false
         }
+      ],
+      "remaining_observable_units": [
+        "vis et écrous de bridage du support",
+        "segment sortant de câble, suivi au lot10"
       ]
     },
     {
       "lot": 8,
       "label": "Rétroviseurs gauche/droit",
-      "state": "left_mirror_rework_in_progress_not_in_this_source_checkpoint",
-      "source_folders": [],
+      "state": "separate_candidates_under_review_not_complete",
+      "source_folders": [
+        "../../assets-src/moto-components/mirrors"
+      ],
       "research": "../research/forward-cockpit-18/report.json",
       "depends_on_lots": [
         4,
@@ -260,8 +285,8 @@
         7
       ],
       "user_art_accepted": false,
-      "any_source_blend_built": false,
-      "any_runtime_checked": false,
+      "any_source_blend_built": true,
+      "any_runtime_checked": true,
       "all_required_components_built": false,
       "all_interfaces_checked": false,
       "group_complete": false,
@@ -269,12 +294,22 @@
         "rétroviseur gauche: coque, verre, col, tige",
         "rétroviseur droit: coque, verre, col, tige"
       ],
-      "owner_chain": "C"
+      "owner_chain": "C",
+      "candidates": [
+        {
+          "component_id": "MOTO-MIRROR-LEFT-001",
+          "revision": "mirror-left-v1",
+          "source_sha256": "bdd8a799b6a5ae07a5c076ba0c5a1019f6477ff9a4be5995229e13c2def3c6d0",
+          "review": "../reviews/mirror-left-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        }
+      ]
     },
     {
       "lot": 9,
       "label": "Contacteur et clé",
-      "state": "separate_candidate_built_review_in_progress",
+      "state": "separate_candidates_under_review_not_complete",
       "source_folders": [
         "../../assets-src/moto-components/ignition-lock"
       ],
@@ -284,7 +319,7 @@
       ],
       "user_art_accepted": false,
       "any_source_blend_built": true,
-      "any_runtime_checked": false,
+      "any_runtime_checked": true,
       "all_required_components_built": false,
       "all_interfaces_checked": false,
       "group_complete": false,
@@ -292,12 +327,26 @@
         "barillet/contacteur extérieur",
         "clé générique non fonctionnelle"
       ],
-      "owner_chain": "B"
+      "owner_chain": "B",
+      "candidates": [
+        {
+          "component_id": "MOTO-IGNITION-LOCK-001",
+          "revision": "ignition-lock-v1",
+          "source_sha256": "63447081802d85b8d9b61463f59aea6cc3db8aa72380ee9f66a960113707c4ef",
+          "review": "../reviews/ignition-lock-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        }
+      ],
+      "remaining_observable_units": [
+        "petit anneau de clé",
+        "connecteur visible lié PF232605, suivi au lot10"
+      ]
     },
     {
       "lot": 10,
       "label": "Câbles et faisceau visibles",
-      "state": "visible_partial_candidate_built_final_views_pending",
+      "state": "separate_candidates_under_review_not_complete",
       "source_folders": [
         "../../assets-src/moto-components/cockpit-cables"
       ],
@@ -313,7 +362,7 @@
       ],
       "user_art_accepted": false,
       "any_source_blend_built": true,
-      "any_runtime_checked": false,
+      "any_runtime_checked": true,
       "all_required_components_built": false,
       "all_interfaces_checked": false,
       "group_complete": false,
@@ -322,7 +371,22 @@
         "faisceau visible et attaches documentées"
       ],
       "owner_chain": "B",
-      "remaining_scope": "Only three documented visible sheath segments; electrical assignment and hidden routes unresolved, not full harness"
+      "remaining_scope": "Only three documented visible sheath segments; electrical assignment and hidden routes unresolved, not full harness",
+      "candidates": [
+        {
+          "component_id": "MOTO-COCKPIT-CABLES-001",
+          "revision": "cockpit-cables-v1",
+          "source_sha256": "f24672df90a68f45b4033a94c5ea03f34dd67b834e10454d2953287a55456f15",
+          "review": "../reviews/cockpit-cables-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        }
+      ],
+      "remaining_observable_units": [
+        "segments cockpit embrayage, frein, accélérateur",
+        "câblage visible des commodos",
+        "connecteur visible allumage"
+      ]
     },
     {
       "lot": 11,
@@ -374,7 +438,8 @@
       "state": "separate_candidates_under_review_not_complete",
       "source_folders": [
         "../../assets-src/moto-components/front-fork/inner-tube",
-        "../../assets-src/moto-components/steering-triples/upper"
+        "../../assets-src/moto-components/steering-triples/upper",
+        "../../assets-src/moto-components/steering-triples/lower"
       ],
       "research": "../research/chassis-running-18/report.json",
       "depends_on_lots": [
@@ -410,21 +475,45 @@
           "review": "../reviews/steering-upper-v1/README.md",
           "runtime_checked": true,
           "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-STEERING-LOWER-001",
+          "revision": "steering-lower-v1",
+          "source_sha256": "c49ccb6cf81383736a895f611393a0f30adb318103d88e4f3beb8ca90ef31866",
+          "review": "../reviews/steering-lower-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-FORK-BELLOWS-001",
+          "revision": "fork-bellows-v1",
+          "source_sha256": "fc97e6507c8a757698c39c794fdb38f4ecfc2eab7278d3b1f97a83c66bd7da2c",
+          "review": "../reviews/fork-bellows-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
         }
+      ],
+      "documentary_blockers": [
+        "Fourreau gauche : face opposée, attribution côté et ancrage frein non contraints ; aucune pièce générique déclarée fidèle"
       ]
     },
     {
       "lot": 14,
       "label": "Ensemble avant et compatibilité des candidats existants",
-      "state": "documentary_research",
-      "source_folders": [],
+      "state": "legacy_candidates_require_new_review_and_fit",
+      "source_folders": [
+        "../../assets-src/moto-components/front-tyre",
+        "../../assets-src/moto-components/front-rim",
+        "../../assets-src/moto-components/front-brake-plate",
+        "../../assets-src/moto-components/front-brake-cam-lever"
+      ],
       "research": "../research/chassis-running-18/report.json",
       "depends_on_lots": [
         13
       ],
       "user_art_accepted": false,
-      "any_source_blend_built": false,
-      "any_runtime_checked": false,
+      "any_source_blend_built": true,
+      "any_runtime_checked": true,
       "all_required_components_built": false,
       "all_interfaces_checked": false,
       "group_complete": false,
@@ -434,7 +523,13 @@
         "flasque et levier de came existants à revoir",
         "axe et entretoises visibles"
       ],
-      "owner_chain": "A"
+      "owner_chain": "A",
+      "detailed_documentary_unit_matrix": {
+        "path": "../research/chassis-remaining-18.json",
+        "sha256": "5ccd298f86b10815ac5eae65b3fca5c47ab7492ecc251fd07ed573ec7f206f60",
+        "scope": "Observable tracking units, not new built meshes or certified exact RDC counts"
+      },
+      "legacy_review_scope": "Existing isolated candidates and historical Babylon proofs; current18 compatibility/quality review still pending, not newly fabricated or accepted"
     },
     {
       "lot": 15,
@@ -456,7 +551,12 @@
         "cadre: tubes et jonctions visibles",
         "bras oscillant et pivots visibles"
       ],
-      "owner_chain": "A"
+      "owner_chain": "A",
+      "detailed_documentary_unit_matrix": {
+        "path": "../research/chassis-remaining-18.json",
+        "sha256": "5ccd298f86b10815ac5eae65b3fca5c47ab7492ecc251fd07ed573ec7f206f60",
+        "scope": "Observable tracking units, not new built meshes or certified exact RDC counts"
+      }
     },
     {
       "lot": 16,
@@ -481,12 +581,17 @@
         "amortisseur gauche",
         "amortisseur droit"
       ],
-      "owner_chain": "A"
+      "owner_chain": "A",
+      "detailed_documentary_unit_matrix": {
+        "path": "../research/chassis-remaining-18.json",
+        "sha256": "5ccd298f86b10815ac5eae65b3fca5c47ab7492ecc251fd07ed573ec7f206f60",
+        "scope": "Observable tracking units, not new built meshes or certified exact RDC counts"
+      }
     },
     {
       "lot": 17,
       "label": "Moteur extérieur, échappement, repose-pieds, pédales et béquilles",
-      "state": "right_cover_candidate_built_final_views_pending_other_parts_remaining",
+      "state": "separate_candidates_under_review_not_complete",
       "source_folders": [
         "../../assets-src/moto-components/engine-cover-right"
       ],
@@ -497,7 +602,7 @@
       ],
       "user_art_accepted": false,
       "any_source_blend_built": true,
-      "any_runtime_checked": false,
+      "any_runtime_checked": true,
       "all_required_components_built": false,
       "all_interfaces_checked": false,
       "group_complete": false,
@@ -513,7 +618,25 @@
         "béquille latérale",
         "béquille centrale"
       ],
-      "owner_chain": "B"
+      "owner_chain": "B",
+      "candidates": [
+        {
+          "component_id": "MOTO-ENGINE-COVER-RIGHT-001",
+          "revision": "engine-cover-right-v1",
+          "source_sha256": "185274d117291007e185fba8209abac91153ece3ae9e4a0a8ce5a67667c4331f",
+          "review": "../reviews/engine-cover-right-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-ENGINE-FILTER-CAP-001",
+          "revision": "engine-filter-cap-v1",
+          "source_sha256": "0e608b408cbadc490b52397cc20ff10b198344bb874725a6554dd4d14e092924",
+          "review": "../reviews/engine-filter-cap-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        }
+      ]
     },
     {
       "lot": 18,

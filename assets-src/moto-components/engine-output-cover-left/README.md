@@ -1,0 +1,17 @@
+# Carter arrière gauche de sortie — candidat v1
+
+ID `MOTO-ENGINE-OUTPUT-COVER-LEFT-001`. Une seule coque séparée, distincte du carter magnéto et du carter de chaîne. Source Blender originale, exports évalués et grain original ; aucune réception artistique.
+
+La photo produit associée au SKU PF541287 documente les deux grands dégagements ouverts, la petite encoche supérieure, le panneau formé et un bossage arrondi réellement percé. Les rotations RDC03/04/05 confirment l’emplacement général. Le catalogue D04:27 associe PF541287 à UG5gear, mais la légende photographiée paraît avoir quatre rapports : cette contradiction reste ouverte et aucune légende n’est copiée. Les originaux avec filigranes sont privés.
+
+Repère local droit : u=arrière+Y, v=haut+Z, w=extérieur gauche+X. Datum estimé `(0.113,0.310,-0.629)` m. L’annotation de la photo oblique utilise seulement une rotation dans son plan34° et une échelle de travail0.16mm/px, avec incertitude globale±20% ; aucune rectification ou calibration n’est acquise. Épaisseur2.6mm [1.8;3.4], bombé12mm [6;22], panneau3mm [0;6] et alésageØ6.2mm restent estimés. Dos, matériau du substrat et fixation supérieure non documentés.
+
+La triangulation contrainte possède des points intérieurs ; son aire est vérifiée avant courbure. Les petits rayons sont construits sur la plaque plane, puis celle-ci est formée continûment avec un panneau à raccord doux. L’union du bossage et le perçage précèdent le nettoyage ; aucune grande face non plane ni congé global sur le CSG courbé. Le corps est une paroi fermée à volume positif, un seul fragment, zéro bord non manifold. Trois rayons vérifient réellement l’alésage et les deux dégagements. La source magnéto liée reste intacte et masquée au rendu ; zéro croisement de surfaces ne vaut pas qualification des attaches.
+
+Le gris antérieur est archivé en privé avec ses vues et empreintes. Les47608triangles orientés Float32 sont exactement identiques après ajout de matière (signature canonique dans `gray-geometry-baseline.json`). Le grain est un champ périodique original seed541287,256², projection6mm, hauteur source RMS3µm [0.5;10] non mesurée. Il alimente une normal map tangentielle OpenGL+Y, sans déplacement du maillage ; rugositéG0.34–0.50/métalB0.20, images Non-Color. Tous les triangles UV utilisés sont non aplatis ; les deux PNG embarqués sont identiques aux originaux. Aucun pixel de photo ni éclairage photographié.
+
+Le glTF Blender officiel arrondit normales et tangentes à4décimales puis renormalise les normales. La borne analytique du produit scalaire après ces deux arrondis vaut1.73228e-4, plus1e-6 de marge Float32 ; maximum mesuré1.20944e-4, source1.3411e-7. Aucun vecteur n’est réparé. Le contrôle conserve ce diagnostic, zéro triangle d’aire0 et zéro erreur/avertissement glTF.
+
+Construction : `blender --background --threads 1 --python-exit-code 1 --python assets-src/moto-components/engine-output-cover-left/build.py`, puis `node assets-src/moto-components/engine-output-cover-left/check_export.mjs`. `render.py` réalise trois vues isolées96/OIDN avec PNG, EXR linéaires et checkpoints par source/caméra. Deux vues entières et un macro16ont été réellement examinés avant gel ; les images96 et le navigateur restent des preuves séparées à produire, sans validation physique iPhone.
+
+Vis, montage supérieur, légende actuelle, mécanismes cachés et carter de chaîne ne sont pas fabriqués par cette coque. Les images ne certifient ni les dimensions ni la variante RDC. La matière reste une proposition sous éclairage de studio.

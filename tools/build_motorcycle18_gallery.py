@@ -67,6 +67,21 @@ def link(path, label):
     return f'<a href="{url(path)}">{esc(label)}</a>' if path and path.is_file() else ""
 
 
+def inspection_link(candidate):
+    """Only use the inspector version explicitly chosen by the catalogue."""
+    configured = candidate["entry"].get("inspection_url")
+    if not isinstance(configured, str):
+        return ""
+    parsed = urlsplit(configured)
+    if parsed.scheme or parsed.netloc:
+        return ""
+    path = local(parsed.path, CATALOG.parent)
+    if not path or not within(path, CATALOG.parent) or path.suffix != ".html":
+        return ""
+    target = url(path) + "?asset=" + quote(candidate["key"], safe="")
+    return f'<a href="{target}">Inspection interactive de la pièce</a>'
+
+
 def files_in_manifest(review, suffix):
     result = []
     for manifest in sorted(review.glob("*manifest.json")):
@@ -230,11 +245,14 @@ def image_files(candidate):
     # not Blender renders and not screenshots of the running game.
     # The catalogue's inspection review can differ from the older Blender
     # review (notably instruments-18-baseline versus instruments-v1). Preserve
-    # both: source renders stay in their original review, v3 capture wins.
+    # both: source renders stay in their original review. Prefer the newest
+    # versioned inspection proof; never mutate or reclassify older captures.
     engine_roots = list(dict.fromkeys([candidate.get("catalog_review", review), review]))
-    v3_paths = [p / "inspection-v3/engine-check.json" for p in engine_roots]
-    engine_path = next((p for p in v3_paths if p.is_file()), review / "engine-check.json")
-    is_v3 = engine_path.parent.name == "inspection-v3"
+    versioned_paths = [p / version / "engine-check.json"
+                       for version in ("inspection-v4", "inspection-v3") for p in engine_roots]
+    engine_path = next((p for p in versioned_paths if p.is_file()), review / "engine-check.json")
+    inspection_version = engine_path.parent.name.removeprefix("inspection-") if engine_path in versioned_paths else None
+    has_pixel_proof = inspection_version in ("v4", "v3")
     engine_directory = engine_path.parent
     engine = read_json(engine_path)
     exports = {str(p.relative_to(ROOT)): sha(p) for p in candidate["glbs"]}
@@ -248,7 +266,7 @@ def image_files(candidate):
     source_matches = True
     bound_source_proofs = []
     checked_pixels = {}
-    if is_v3:
+    if has_pixel_proof:
         source_matches = local(engine.get("config", {}).get("source"), SOURCES) == source
         source_proofs = [p / "source-geometry-check.json" for p in engine_roots]
         if candidate.get("record_path"):
@@ -270,16 +288,16 @@ def image_files(candidate):
             view = path.stem.removeprefix("engine-")
             pixel_bound = view in checked_pixels or (
                 view.startswith("motion-") and any(str(k).startswith(view.removeprefix("motion-") + ":") for k in checked_pixels))
-            if is_v3 and not pixel_bound:
-                notes.append(f"Vue v3 sans contrôle de pixels correspondant : {path.name}.")
+            if has_pixel_proof and not pixel_bound:
+                notes.append(f"Vue {inspection_version} sans contrôle de pixels correspondant : {path.name}.")
                 continue
             if all(path.stat().st_mtime_ns >= p.stat().st_mtime_ns for p in candidate["glbs"]):
-                kind = "Capture Babylon.js v3 — cadre entier et pixels contrôlés" if is_v3 else "Capture Babylon.js — inspection isolée"
+                kind = f"Capture Babylon.js {inspection_version} — cadre entier et pixels contrôlés" if has_pixel_proof else "Capture Babylon.js — inspection isolée"
                 add(path.resolve(), kind, engine_path, allowed_parent=engine_directory)
-        if is_v3:
-            notes.append("Inspection v3 privilégiée : cadre entier et pixels contrôlés techniquement. Anciennes captures v2 conservées en historique, non présentées ici. Aucune qualification mobile physique ni réception artistique.")
+        if has_pixel_proof:
+            notes.append(f"Inspection {inspection_version} privilégiée : cadre entier et pixels contrôlés techniquement. Les anciennes séries restent en historique et ne sont pas présentées ici. Aucune qualification mobile physique ni réception artistique.")
     elif engine:
-        notes.append("Capture moteur non reliée à la source, à l’export ou au code courant par les preuves disponibles. Si une série v3 existe, les anciennes captures v2 restent exclues.")
+        notes.append("Capture moteur non reliée à la source, à l’export ou au code courant par les preuves disponibles. Si une série versionnée existe, les anciennes séries restent exclues ; aucune substitution par une preuve antérieure.")
     return list(images.values()), notes, list(dict.fromkeys(evidence))
 
 
@@ -351,10 +369,17 @@ def build():
         built = sum(c["built"] for c in cs)
         views = sum(len(c["images"]) for c in cs)
         status = "En revue · partiel" if views else ("Construit · vues en attente" if built else "À fabriquer")
+        legacy_existing = bool(lot.get("legacy_review_scope")) and lot.get("any_source_blend_built") is True
+        construction_note = f'{built} candidat(s) avec Blender + GLB'
+        review_note = f'{views} image(s)'
+        if legacy_existing and not built:
+            status = "Candidats existants à recontrôler"
+            construction_note = "Sources et preuves historiques existantes ; compatibilité des 18 groupes à vérifier, sans nouvelle fabrication comptée"
+            review_note = '<a href="#preexistants">Voir les vues des candidats antérieurs</a>'
         scope = "; ".join(lot.get("observable_fabrication_units", []))
         research = local(lot.get("research"), PLAN.parent)
         complete = lot.get("group_complete") is True and lot.get("all_required_components_built") is True
-        out.append(f'<tr><td><a href="#lot-{lot["lot"]}">{lot["lot"]:02d} · {esc(lot["label"])}</a></td><td><span class="status">{status}</span><small>{built} candidat(s) avec Blender + GLB ; {"périmètre déclaré construit" if complete else "groupe non terminé"}</small></td><td>{views} image(s)<small>Réception artistique : {"déclarée au plan, voir preuve" if lot.get("user_art_accepted") else "non acquise"}</small></td><td>{esc(scope)}<small>État source : <code>{esc(lot.get("state", "non consigné"))}</code></small>{link(research, "Recherche — ne vaut pas fabrication")}</td></tr>')
+        out.append(f'<tr><td><a href="#lot-{lot["lot"]}">{lot["lot"]:02d} · {esc(lot["label"])}</a></td><td><span class="status">{status}</span><small>{esc(construction_note)} ; {"périmètre déclaré construit" if complete else "groupe non terminé"}</small></td><td>{review_note}<small>Réception artistique : {"déclarée au plan, voir preuve" if lot.get("user_art_accepted") else "non acquise"}</small></td><td>{esc(scope)}<small>État source : <code>{esc(lot.get("state", "non consigné"))}</code></small>{link(research, "Recherche — ne vaut pas fabrication")}</td></tr>')
     out.append('</tbody></table></div></details><div id="candidats" class="toolbar"><label for="search">Filtrer les candidats</label><input id="search" type="search" placeholder="Nom, groupe, révision…" autocomplete="off"><label><input id="with-images" type="checkbox"> Avec images uniquement</label></div><p id="filter-count" class="small" aria-live="polite"></p>')
 
     def card(c):
@@ -370,7 +395,7 @@ def build():
         bits = [f'<article class="candidate" data-search="{esc(str(c["lot"]) + " " + title + " " + source.stem)}" data-images="{len(c["images"])}"><div class="candidate-head"><div><p class="eyebrow">{esc(source.stem)}</p><h3>{esc(title)}</h3></div><div class="pills"><span class="pill">{state}</span><span class="pill">Candidat non reçu</span>{history_badge}</div></div>',
                 '<p class="muted">Dimensions locales et interfaces estimées ou non confirmées. La ressemblance à une pièce de marché voisin ne certifie pas sa compatibilité avec la Boxer RDC.</p>', '<div class="links">',
                 link(source, "Source Blender"), *[link(p, "Export GLB" if len(c["glbs"]) == 1 else p.name) for p in c["glbs"]],
-                link(readme, "README source"), link(review / "README.md", "Revue et limites"), link(c["record_path"], "Fiche du composant"), '</div>']
+                link(readme, "README source"), link(review / "README.md", "Revue et limites"), link(c["record_path"], "Fiche du composant"), inspection_link(c), '</div>']
         blender_images = [im for im in c["images"] if im["kind"].startswith("Rendu Blender")]
         technical_images = [im for im in c["images"] if not im["kind"].startswith("Rendu Blender")]
         if blender_images:
@@ -407,6 +432,8 @@ def build():
         cs = groups[lot["lot"]]
         if cs:
             out.extend(card(c) for c in cs)
+        elif lot.get("legacy_review_scope") and lot.get("any_source_blend_built") is True:
+            out.append('<p class="empty">Des candidats antérieurs et leurs preuves historiques existent. <a href="#preexistants">Voir les pièces déjà isolées</a>. Leur revue et leur compatibilité dans la séquence des 18 groupes restent à vérifier ; aucun nouveau modèle ni ensemble terminé n’est compté ici.</p>')
         else:
             out.append('<p class="empty">À fabriquer dans ce groupe : aucun candidat avec source Blender enregistré dans le catalogue ou une fiche liée. La recherche, même documentée, ne constitue pas une pièce fabriquée.</p>')
         if lot.get("remaining_scope"):
@@ -448,7 +475,7 @@ def validate(document):
                     else:
                         if urlsplit(value).scheme or value.startswith("//"):
                             raise ValueError("Only local gallery links are allowed: " + value)
-                        p = (OUTPUT.parent / unquote(value)).resolve()
+                        p = (OUTPUT.parent / unquote(urlsplit(value).path)).resolve()
                         if not within(p, ROOT) or not p.is_file():
                             raise ValueError("Missing or unsafe gallery link: " + value)
                         self.links.append(p)

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-IGNITION-LOCK-001",
-  "label": "Contact et clé — candidat conditionnel",
+  "label": "Contacteur et clé — position estimée",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,9 +12,9 @@
     "material"
   ],
   "identity": {
-    "variant": "Related PF232605, position conditional on manual150HD; current125HD identity unconfirmed",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
-    "usage": "Below cluster, USB cap remains separate",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
       0.15,
       0.35,
@@ -29,7 +29,38 @@
     "D19"
   ],
   "claims": [],
-  "views": [],
+  "views": [
+    {
+      "name": "quarter-off",
+      "frame": 1,
+      "camera_m": [
+        -0.15000002086162567,
+        0.0893879383802414,
+        0.19176609814167023
+      ],
+      "target_m": [
+        4.4483230987601985e-10,
+        -0.06008828803896904,
+        0.01582048460841179
+      ],
+      "lens_mm": 55
+    },
+    {
+      "name": "rear-mount-on",
+      "frame": 25,
+      "camera_m": [
+        0.15000002086162567,
+        -0.2720737159252167,
+        0.16636009514331818
+      ],
+      "target_m": [
+        4.4483230987601985e-10,
+        -0.06008828803896904,
+        0.01582048460841179
+      ],
+      "lens_mm": 65
+    }
+  ],
   "criteria": [],
   "gaps": [
     {
@@ -48,7 +79,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "ignition-lock-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -56,63 +87,103 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": null,
+      "revision": "ignition-lock-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Related part and estimated installed pose",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
       "status": "blocked",
-      "revision": null,
+      "revision": "ignition-lock-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "Related part and estimated installed pose",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "ignition-lock-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/ignition-lock/ignition-lock-v1.blend",
+          "kind": "editable_source",
+          "revision": "ignition-lock-v1",
+          "sha256": "63447081802d85b8d9b61463f59aea6cc3db8aa72380ee9f66a960113707c4ef"
+        },
+        {
+          "path": "../../reviews/ignition-lock-v1/quarter-off.png",
+          "kind": "isolated_comparison",
+          "revision": "ignition-lock-v1",
+          "sha256": "a0a99b09477fe43dd2bfa90e686ecf0086ccb8417ebda43a865d8e6f26e3725e"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "ignition-lock-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/ignition-lock-v1/rear-mount-on.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "ignition-lock-v1",
+          "sha256": "943fbba2ff37e48a399760d8d31c5c0d2edeb8d739a71e8e326b3dd52c4c98bf"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "ignition-lock-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/ignition-lock-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "ignition-lock-v1",
+          "sha256": "aa2fac5019a892e0f17015caae2eb62b0e40765b42e94be19076056dfc018791"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "ignition-lock-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/ignition-lock-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "ignition-lock-v1",
+          "sha256": "78d91c0b9b6fdb84c08ec853d3e683177ffe0442bf31f6e85b9167a022408ff8"
+        },
+        {
+          "path": "../../reviews/ignition-lock-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "ignition-lock-v1",
+          "sha256": "41fb7f4b75ea9bce9521ff0b6f5cf2366a4230bc5f53ed02c74a2a6f5b292664"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "ignition-lock-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "ignition-lock-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -121,8 +192,10 @@
   },
   "active_detailed_fabrication": false,
   "source_revision": "ignition-lock-v1",
-  "export_revision": null,
-  "next_action": "Review source and bounded key-state poses, document cylinder/bracket/connector and provisional installation; no functional key or steering lock claimed",
+  "export_revision": "ignition-lock-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
   "art_accepted": false,
-  "production_group": 9
+  "production_group": 9,
+  "candidate_source": "../../../assets-src/moto-components/ignition-lock/README.md",
+  "candidate_review": "../../reviews/ignition-lock-v1/README.md"
 }

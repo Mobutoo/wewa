@@ -1,0 +1,413 @@
+{
+  "component_id": "MOTO-STEERING-LOWER-001",
+  "revision": "steering-lower-v1",
+  "source_sha256": "c49ccb6cf81383736a895f611393a0f30adb318103d88e4f3beb8ca90ef31866",
+  "source_check": {
+    "component_id": "MOTO-STEERING-LOWER-001",
+    "revision": "steering-lower-v1",
+    "collection": "WEWA_STEERING_LOWER_BODY_ISOLATED",
+    "frame": "X transverse(+left rider),+Y rider,Zup; origin midpoint fork bores; no installed cockpit pose",
+    "vertices": 14476,
+    "triangles": 28976,
+    "non_manifold_edges": 0,
+    "connected_shells": 1,
+    "signed_volume_m3": 7.055700123662581e-05,
+    "zero_area_triangles_at_1e18_m2": 0,
+    "min_triangle_area_m2": 1.7382918677180844e-11,
+    "open_passages": [
+      {
+        "name": "fork_left",
+        "centre_m": [
+          -0.0875,
+          0,
+          0
+        ],
+        "radius_m_estimated": 0.01555,
+        "clear": true
+      },
+      {
+        "name": "fork_right",
+        "centre_m": [
+          0.0875,
+          0,
+          0
+        ],
+        "radius_m_estimated": 0.01555,
+        "clear": true
+      },
+      {
+        "name": "stem",
+        "centre_m": [
+          0,
+          0.045,
+          0
+        ],
+        "radius_m_estimated": 0.0125,
+        "clear": true
+      },
+      {
+        "name": "small_1",
+        "centre_m": [
+          -0.023,
+          0.002,
+          0
+        ],
+        "radius_m_estimated": 0.0027,
+        "clear": true
+      },
+      {
+        "name": "small_2",
+        "centre_m": [
+          0.023,
+          0.002,
+          0
+        ],
+        "radius_m_estimated": 0.0027,
+        "clear": true
+      }
+    ],
+    "true_radial_splits": [
+      {
+        "centre_x_m": -0.0875,
+        "clear": true
+      },
+      {
+        "centre_x_m": 0.0875,
+        "clear": true
+      }
+    ],
+    "underside_recesses": 2,
+    "stem_bolts_bearings_included": false,
+    "current_RDC_identity_verified": false,
+    "installed_pose_applied": false,
+    "art_accepted": false,
+    "nonmanifold_edge_detail": [],
+    "source_sha256": "c49ccb6cf81383736a895f611393a0f30adb318103d88e4f3beb8ca90ef31866",
+    "export_sha256": "d6402a1e226acb45a5213711fc5a63e664f4faa08df3434e17a731ac3686f915",
+    "geometry_sha256_preserved_by_material_stage": "c7c0c4946cdd49c73a93e61257f0ac0361ae12a608760451374c1f34b954a190",
+    "hidden_pocket_depth_estimated": true,
+    "small_internal_threads_modelled": false,
+    "manufacturing_process_verified": false
+  },
+  "export_check": {
+    "asset": "steering-lower",
+    "revision": "steering-lower-v1",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/steering-triples/lower/steering-lower-inspection.glb",
+        "sha256": "d6402a1e226acb45a5213711fc5a63e664f4faa08df3434e17a731ac3686f915",
+        "bytes": 1700860,
+        "glTF_errors": 0,
+        "glTF_warnings": 0,
+        "messages": [
+          {
+            "code": "UNUSED_MESH_TANGENT",
+            "message": "Tangents are not used because the material has no normal texture.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/1/attributes/TANGENT"
+          },
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/1/attributes/TEXCOORD_0"
+          }
+        ],
+        "bounds": {
+          "min": [
+            -0.10899999737739563,
+            -0.008500001393258572,
+            -0.06800000369548798
+          ],
+          "max": [
+            0.10899999737739563,
+            0.01600000075995922,
+            0.0215000007301569
+          ]
+        },
+        "vertices": 23096,
+        "triangles": 28976,
+        "triangle_area_local_m2": {
+          "minimum": 1.7382918799963023e-11,
+          "exactly_zero": 0,
+          "below_1e_minus18": 0,
+          "note": "Local exported coordinates; not a self-intersection or surface-fidelity proof"
+        },
+        "tangent_frame": {
+          "vectors": 23096,
+          "max_unit_error": 6.9803968008042e-05,
+          "max_normal_dot": 0.00011851768195692003,
+          "handedness_sign_is_unit": true,
+          "note": "Finite orthonormal frame only; not full MikkTSpace or renderer visual parity"
+        },
+        "node_names": [
+          "Lower steering casting only - relatedDS181020 candidate"
+        ],
+        "materials": [
+          {
+            "name": "Black coated lower casting - visual estimate",
+            "basecolor": [
+              0.014999999664723873,
+              0.019999999552965164,
+              0.026000000536441803,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "extensions": []
+          },
+          {
+            "name": "Machined bore finish - appearance estimated",
+            "basecolor": [
+              0.18000000715255737,
+              0.20000000298023224,
+              0.2199999988079071,
+              1
+            ],
+            "metallic": 0.6499999761581421,
+            "roughness": 0.30000001192092896,
+            "extensions": []
+          }
+        ]
+      }
+    ],
+    "scope": "Actual glTF buffers and format only; not shape reception, physical interface or mobile qualification",
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "browser_check": {
+    "camera": {
+      "position": [
+        2.2809875361731052e-17,
+        0.23254833878123327,
+        -0.3957635356316491
+      ],
+      "target": [
+        0,
+        0.0037499996833503246,
+        -0.02325000148266554
+      ],
+      "radius": 0.43716703111981786,
+      "fov": 0.72,
+      "fovMode": 0
+    },
+    "framing": {
+      "min": [
+        0.3295924146487987,
+        0.40407720200902314
+      ],
+      "max": [
+        0.6704075990904587,
+        0.6109320765407928
+      ],
+      "scope": "Conservative projected actual mesh bounding boxes; whole-piece framing only"
+    },
+    "asset": "steering-lower",
+    "revision": "steering-lower-v1",
+    "config": {
+      "label": "Corps du té inférieur — pièce isolée",
+      "lot": 13,
+      "review": "steering-lower-v1",
+      "source": "steering-triples/lower/steering-lower-v1.blend",
+      "collection": "WEWA_STEERING_LOWER_BODY_ISOLATED",
+      "source_frame": "isolated_local",
+      "component_id": "MOTO-STEERING-LOWER-001",
+      "files": [
+        "steering-triples/lower/steering-lower-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Corps seul avec deux poches et bagues fendues. Cotes/poses estimées ; colonne, boulons et roulements absents, aucune conformité mécanique."
+    },
+    "files": [
+      "steering-triples/lower/steering-lower-inspection.glb"
+    ],
+    "meshes": 2,
+    "vertices": 23096,
+    "triangles": 28976,
+    "bounds": {
+      "min": [
+        -0.10899999737739563,
+        -0.008500001393258572,
+        -0.06800000369548798
+      ],
+      "max": [
+        0.10899999737739563,
+        0.01600000075995922,
+        0.0215000007301569
+      ]
+    },
+    "textures_ready": true,
+    "renderer": {
+      "vendor": "Google Inc. (Google)",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "rig_states": {},
+    "attachments": [],
+    "rigs": [],
+    "art_accepted": false,
+    "physical_iphone_tested": false,
+    "public_game_unchanged": true,
+    "pixel_checks": [
+      {
+        "view": "quarter",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 44674,
+        "changed_fraction": 0.03877951388888889,
+        "rgb_min": [
+          23,
+          28,
+          33
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "driver",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 45562,
+        "changed_fraction": 0.03955034722222222,
+        "rgb_min": [
+          23,
+          28,
+          32
+        ],
+        "rgb_max": [
+          247,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "reverse",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 29938,
+        "changed_fraction": 0.02598784722222222,
+        "rgb_min": [
+          24,
+          28,
+          33
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "landscape-844x390",
+        "width": 844,
+        "height": 390,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 8778,
+        "changed_fraction": 0.026667881881152024,
+        "rgb_min": [
+          23,
+          27,
+          32
+        ],
+        "rgb_max": [
+          217,
+          221,
+          226
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      }
+    ],
+    "page_errors": [],
+    "http_failures": [],
+    "pose_checks": [],
+    "scope": "Actual Babylon imports and vertex motion in Chromium softwareWebGL; not Safari/iPhone/FPS qualification",
+    "render_mode": "Manual frames after scene readiness",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/steering-triples/lower/steering-lower-inspection.glb",
+        "sha256": "d6402a1e226acb45a5213711fc5a63e664f4faa08df3434e17a731ac3686f915"
+      }
+    ],
+    "inspector_sha256": "19e4908f4a7b69b492710adfb7d28a5508745721f9c991941a5ed439f3a9fb07",
+    "capture_tool_sha256": "53b07b0e9bda4b86c9d7f05c10815755b3be50dcc85e29a4b3f164cbc38fcf28",
+    "inspector_path": "tools/motorcycle-lab/review-v2.js",
+    "capture_tool_path": "tools/capture_motorcycle18_v3.py",
+    "inputs_unchanged_during_capture": true
+  },
+  "render_report": {
+    "source_sha256": "c49ccb6cf81383736a895f611393a0f30adb318103d88e4f3beb8ca90ef31866",
+    "export_sha256": "d6402a1e226acb45a5213711fc5a63e664f4faa08df3434e17a731ac3686f915",
+    "actual_blender_render": true,
+    "samples": 96,
+    "denoiser": "OpenImageDenoise official Blender4.3.2 CPU",
+    "resolution_px": [
+      1200,
+      1000
+    ],
+    "art_accepted": false,
+    "views": [
+      {
+        "name": "upper-quarter",
+        "camera_location_m": [
+          0.13,
+          -0.21,
+          0.23
+        ],
+        "camera_target_m": [
+          0,
+          0.025,
+          0
+        ],
+        "ortho_scale_m": 0.28,
+        "checkpoint_file": "checkpoint-upper-quarter.json",
+        "PNG_sha256": "737c1f861c810194196e6a7682f77ec498cfffbd75a13f115e2e98497b6c0b2d",
+        "reused_verified_checkpoint": false
+      },
+      {
+        "name": "underside-ribs",
+        "camera_location_m": [
+          -0.13,
+          -0.18,
+          -0.24
+        ],
+        "camera_target_m": [
+          0,
+          0.025,
+          0
+        ],
+        "ortho_scale_m": 0.28,
+        "checkpoint_file": "checkpoint-underside-ribs.json",
+        "PNG_sha256": "bf2db2484e8cc367ea5763a8ceea79951fa8a7bdf042d0451bb83051c23772f5",
+        "reused_verified_checkpoint": false
+      }
+    ]
+  },
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true
+}
