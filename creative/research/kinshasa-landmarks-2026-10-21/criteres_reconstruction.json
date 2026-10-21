@@ -1,0 +1,63 @@
+{
+  "version": "1.0",
+  "date": "2026-10-21",
+  "objectif": "Reconstruction realiste documentee de reperes de Kinshasa dans Blender",
+  "statuts_preuves": [
+    "reperee",
+    "consultee",
+    "telechargee",
+    "controle_visuel",
+    "mesuree",
+    "recoupee",
+    "autorisee_pour_usage"
+  ],
+  "champs_obligatoires": [
+    "lieu_id",
+    "nom_et_alias",
+    "position_et_nature_du_point",
+    "date_de_prise_de_vue",
+    "date_publication",
+    "auteur",
+    "url_page",
+    "url_fichier",
+    "sha256",
+    "resolution_pixels",
+    "angle",
+    "etat_historique_chantier_projet_actuel",
+    "licence_photo",
+    "droits_oeuvre",
+    "dimension_valeur_unite_source_incertitude"
+  ],
+  "exterieur_detaille": [
+    "Identite etat et emplacement recoupes",
+    "Emprise et dimension de reference explicites",
+    "Faces principales et toiture couvertes",
+    "Modules de facade mesures ou estimes et marques comme tels",
+    "Materiaux observes sans eclairage confondu avec couleur",
+    "Parties invisibles etiquetees comme hypotheses"
+  ],
+  "statue": [
+    "Tour de l objet en secteurs; profils et dos",
+    "Niveaux bas et haut pour limiter les occultations",
+    "Gros plans visage mains accessoires inscriptions",
+    "Mesure du sujet hors socle puis du socle",
+    "Pose et changement d emplacement dates"
+  ],
+  "photogrammetrie": [
+    "Images chevauchantes du meme etat depuis des positions differentes",
+    "Surface visible dans au moins trois vues, recommandation COLMAP",
+    "Pas de simple rotation panoramique depuis un seul point",
+    "Lumiere aussi coherente que possible; eviter reflets et surfaces sans texture",
+    "Essai de reconstruction et points de controle avant toute affirmation de precision"
+  ],
+  "textures": [
+    "Banque CC0 pour les surfaces generiques",
+    "Photos de textures seulement si usage etabli et definition suffisante",
+    "Conserver echelle physique, balance des blancs et image source",
+    "Distinguer couleur diffuse, rugosite, normale et deplacement",
+    "Ne pas projeter dans le jeu des photos de presse ou Google sous statut reference seule"
+  ],
+  "traitement_incertitude": "Valeur inconnue = null; ne pas inventer une cote. Toute estimation doit avoir sa methode et rester editable.",
+  "evaluation": "Niveaux A/B/C = richesse documentaire, sans certification de precision ni validation des droits",
+  "limites": "Aucun scan, modele Blender fini, nuage de points ou raster aerien integral n est livre dans cette collecte."
+}
