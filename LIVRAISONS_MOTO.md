@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **140 composants candidats enregistrés**, après
+Le registre courant comporte **146 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,13 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P21** : [Existing related DS151068 front: source normal and scalar roughness correction candidate — sources et images](creative/reviews/front-completion-p21-front-material-front10-v5-coordination-v1/README.md). Candidat, paquet encore ouvert.
+- **P21** : [Related DS151068 reverse exterior independent study — sources et images](creative/reviews/front-completion-p21-reverse-front10-v8-coordination-v1/README.md). Candidat, paquet encore ouvert.
+- **P23** : [Single related DH151029 shouldered hex bolt exterior — sources et images](creative/reviews/front-completion-p23-torque-bolt-front10-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
+- **P23** : [Related DJ151036 two-cheek LH adjuster exterior — sources et images](creative/reviews/front-completion-p23-lh-adjuster-front10-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
+- **P23** : [Related DJ151037 formed RH adjuster exterior — sources et images](creative/reviews/front-completion-p23-rh-adjuster-front10-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
+- **P23** : [Related JW122004 pressed torque arm — sources et images](creative/reviews/front-completion-p23-torque-arm-front10-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
+- **P23** : [MOTO-REAR-ADJUSTER-ENDPLATE-DJ151047-STUDY-001 — sources et images](creative/reviews/front-completion-p23-endplate-front9-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P12** : [fuel-valve-visible-lever-v1 — sources, rendus et contrôles](creative/reviews/fuel-valve-visible-lever-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **P17** : [MOTO-SIDE-STAND-PIVOT-BOLT-001 — bounded exterior candidate — sources et images](creative/reviews/side-stand-pivot-bolt-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P17** : [MOTO-SIDE-STAND-CURVED-FOOT-001 — bounded exterior candidate — sources et images](creative/reviews/side-stand-curved-foot-v3-coordination-v1/README.md). Candidat, paquet encore ouvert.
