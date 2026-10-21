@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-21T12:07:55.676532+00:00",
+  "component": "MOTO-REAR-SNS-OPPOSITE-EYE-EXTERIOR-001",
+  "revision": "rear-sns-opposite-eye-exterior-study-v2",
+  "reference_reading": {
+    "path": "creative/research/rear-sns-eyes/read-only-eye-reading-v1/report.json",
+    "sha256": "f7a7a20c8470e193b691ae015090ed054e33177129d19a6470d46b397bc76be4"
+  },
+  "C_actual_native_reading": "PF1210square reopened during sleeve material work. Opposite/right eye has round black contour, broader straight neck toward left, largeblue annulus and central silver lip. These end details differ from body-side eye.",
+  "native_regions": {
+    "center_px": [
+      1126,
+      554
+    ],
+    "outer_region_px": [
+      1070,
+      499,
+      1186,
+      610
+    ],
+    "neck_region_px": [
+      1037,
+      515,
+      1090,
+      593
+    ],
+    "uncertainty_px": 5,
+    "meaning": "Approximate document regions, no metric/perspective calibration"
+  },
+  "parameters": {
+    "schema": 1,
+    "revision": "rear-sns-opposite-eye-exterior-study-v2",
+    "units": "m, authored estimates not physical OEM cotes",
+    "eye_center_z_m": 0.22,
+    "outer_eye_radius_m": 0.0185,
+    "neck_top_relative_z_m": 0.023,
+    "neck_top_half_width_m": 0.011,
+    "neck_circle_join_degrees": 60,
+    "half_depth_y_m": 0.0055,
+    "outer_edge_round_m": 0.00065,
+    "inner_passage_radius_m": 0.0148,
+    "inner_edge_round_m": 0.0004,
+    "angular_segments": 1024,
+    "quarter_round_samples": 24,
+    "scope": "Opposite black eye/neck external candidate around separate broadblue region. Back/depth/part boundaries estimated, no material or serviceability certification.",
+    "source_frame": "UnplacedSNS+Z, opposite eye positiveZ; analytic neck generator is oriented down by proper rotationY180deg, not a reflected assertion of equal end geometry. AxisY/frontnegativeY authored.",
+    "working_ranges_not_confidence_intervals": {
+      "outer_radius_m": [
+        0.017,
+        0.022
+      ],
+      "total_depth_m": [
+        0.009,
+        0.016
+      ],
+      "neck_width_m": [
+        0.018,
+        0.027
+      ]
+    },
+    "hidden_unknowns": [
+      "Rear/profile/section and actual neckroot attachment/weld",
+      "Black composition and material/service boundaries",
+      "Broadblue composition/retention and sleeve dimensions",
+      "CurrentRDC identity, scale and installed pose"
+    ]
+  },
+  "construction": "Own C2 circle/neck outline, actual closed rounded depth and circular opening to leave broadblue annular appearance for NEXT separate unit. Reuse analytical construction only; independent radii/depth/neck/bore/placement and proper orientation, no blind symmetric end duplication.",
+  "not_included": "Broadblue region and metallic central sleeve separately observable and still to fabricate. No weld, press-fit, elastomer/cap function, hidden shoulder or exact part-count assertion.",
+  "checks": [
+    "Closed positive volume/edgevalence2, true triangle/UV/normal checks",
+    "Wholefront/quarter plus neckgray/reflection actually read before black material",
+    "Keep two ends and SCLgold/chrome distinct; no composition inferred from appearance"
+  ],
+  "limits": "Full rear/depth/bore and physical frame authored. Large opening is candidate interface for blue region, not measured mounting hole. No exactRDC/OEM/weld/installed contact certification.",
+  "art_accepted": false,
+  "sampling_diagnostic": {
+    "previous_source_sha256": "37f6680a019f148664318f08af64c6e0d0c661a58e5cedd4d7d4e60349761f26",
+    "previous_diagnostic_manifest": "creative/reviews/rear-sns-opposite-eye-exterior-study-v1/diagnostic-manifest.json",
+    "only_changes": [
+      "Angular1024 from512",
+      "Quarterround24 from12"
+    ],
+    "intent": "Same analytic outline/sections, dimensions and cameras; compare specular neck edge before deciding. No new photographic shape or physical dimension inferred."
+  }
+}

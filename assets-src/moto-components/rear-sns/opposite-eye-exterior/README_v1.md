@@ -1,0 +1,7 @@
+# SNS opposite black eye and neck — original black candidate
+
+The PF opposite/right end has a rounded black outline and broad neck, with a conspicuous blue annular region and silver central lip. This source contains only its black exterior. Blue and silver remain separate next modeling units with unknown materials/functions. Independent authored radius18.5mm, depth11mm, neck23mm/halfwidth11mm, opening14.8mm and centerZ.22m remain unmeasured. Rear, section, root and installed pose are estimated; no weld/press-fit or material/service-part boundaries certified.
+
+Own C2 outline is oriented toward the coils by proper Y180° rotation, with retained winding; reuse of the generator does not establish identical or symmetric OEM ends. Four original gray views and a round-key probe were actually read. A denser204800 sample did not visibly improve a bright studio border. The same source1 under only roundKey removes that other-lamp highlight, so no neck deformation or tessellation inflation was adopted. This is a bounded lighting diagnosis, not global normal-field or artistic certification.
+
+Original continuous black shader uses linear base(.009,.010,.012), roughness.32 and coat.12 without images. Actual P/N/UV/indices and node matrices remain bit-identical to the gray source;53248triangles pass strict/area/UV0, min face-corner normal dot.996532. No CSG, remesh, global bevel or buffer repair. Static0rig, no installed contact or physical device reception.

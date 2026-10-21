@@ -1,0 +1,489 @@
+{
+  "schema": 1,
+  "id": "MOTO-CLUTCH-UPPER-SHEATH-001",
+  "label": "Court départ supérieur de gaine d’embrayage — coupe de revue",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "RDC qualitative local departure; all working dimensions/occlusion and current compatibility estimated",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01",
+    "D04",
+    "D15"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "whole-short-departure",
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CONTROL_CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          9.999999747378752e-05,
+          1000.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.25136613396247887,
+        "farthest_actual_vertex_depth_m": 0.2708388322626858,
+        "projected_uv_min": [
+          0.2219525410971106,
+          0.4450732857098597
+        ],
+        "projected_uv_max": [
+          0.788077033347999,
+          0.5655014209273662
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Visible short upper clutch outer sheath - distal review cut",
+            "vertices": 24768,
+            "depth_m": [
+              0.25136613396247887,
+              0.2708388322626858
+            ],
+            "projected_uv_min": [
+              0.2219525410971106,
+              0.4450732857098597
+            ],
+            "projected_uv_max": [
+              0.788077033347999,
+              0.5655014209273662
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "conditional_control_context": false,
+      "rendered": true,
+      "outputs": [
+        {
+          "file": "whole-short-departure.exr",
+          "format": "OPEN_EXR",
+          "bytes": 233241,
+          "sha256": "2f97f746b43439818062e195f47d6740b3c73da9d0e8cf6f7d2c4f7eef344ad8",
+          "linear_scene_data": true
+        },
+        {
+          "file": "whole-short-departure.png",
+          "format": "PNG",
+          "bytes": 1385491,
+          "sha256": "c399b5104b91e3b4e6caae20b47feca60bc6acf3e6b3b12e48770428cb83c1d0",
+          "linear_scene_data": false
+        }
+      ]
+    },
+    {
+      "name": "control-gap-context",
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CONTROL_CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          9.999999747378752e-05,
+          1000.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.042754686728488034,
+        "farthest_actual_vertex_depth_m": 0.17074364716109391,
+        "projected_uv_min": [
+          0.24411251955261937,
+          -1.6352384826105646
+        ],
+        "projected_uv_max": [
+          3.2682112624683777,
+          0.9107125493449364
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Visible short upper clutch outer sheath - distal review cut",
+            "vertices": 24768,
+            "depth_m": [
+              0.09057726384750131,
+              0.17074364716109391
+            ],
+            "projected_uv_min": [
+              0.4004554008564072,
+              0.30104344274627015
+            ],
+            "projected_uv_max": [
+              0.5643591952127289,
+              0.9107125493449364
+            ],
+            "finite": true
+          },
+          {
+            "object": "GUIDE Clutch cast perch - fixed candidate",
+            "vertices": 5210,
+            "depth_m": [
+              0.042754686728488034,
+              0.09420339926914467
+            ],
+            "projected_uv_min": [
+              0.24411251955261937,
+              -1.6352384826105646
+            ],
+            "projected_uv_max": [
+              3.2682112624683777,
+              0.7657634030403463
+            ],
+            "finite": true
+          },
+          {
+            "object": "GUIDE Clutch hollow cable barrel adjuster",
+            "vertices": 11040,
+            "depth_m": [
+              0.06937494500188679,
+              0.09322198506933987
+            ],
+            "projected_uv_min": [
+              0.3679181166874298,
+              -0.2573174001467805
+            ],
+            "projected_uv_max": [
+              0.6320811508774593,
+              0.4859068060032547
+            ],
+            "finite": true
+          },
+          {
+            "object": "GUIDE Clutch adjuster locknut",
+            "vertices": 384,
+            "depth_m": [
+              0.0796259057228863,
+              0.08786791926113602
+            ],
+            "projected_uv_min": [
+              0.313268367287714,
+              -0.0024231420415060656
+            ],
+            "projected_uv_max": [
+              0.6867308587435206,
+              0.4273861572356903
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "conditional_control_context": true,
+      "rendered": true,
+      "outputs": [
+        {
+          "file": "control-gap-context.exr",
+          "format": "OPEN_EXR",
+          "bytes": 1061419,
+          "sha256": "88838e5fd55c28e87d14121f6ad9e6d6a87d736abc10ad7eb3f8bdbaa547ff32",
+          "linear_scene_data": true
+        },
+        {
+          "file": "control-gap-context.png",
+          "format": "PNG",
+          "bytes": 1451091,
+          "sha256": "0267fe90ce65ad455e4e4991308cec6bb9b4e2a853e26a73a8bf668276e9d910",
+          "linear_scene_data": false
+        }
+      ]
+    },
+    {
+      "name": "bend-profile",
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CONTROL_CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          9.999999747378752e-05,
+          1000.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.058814551678164406,
+        "farthest_actual_vertex_depth_m": 0.06709744868619172,
+        "projected_uv_min": [
+          -1.3936218964974973,
+          -0.5387241061965564
+        ],
+        "projected_uv_max": [
+          2.603006311408124,
+          1.2219840385712715
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Visible short upper clutch outer sheath - distal review cut",
+            "vertices": 24768,
+            "depth_m": [
+              0.058814551678164406,
+              0.06709744868619172
+            ],
+            "projected_uv_min": [
+              -1.3936218964974973,
+              -0.5387241061965564
+            ],
+            "projected_uv_max": [
+              2.603006311408124,
+              1.2219840385712715
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "conditional_control_context": false,
+      "rendered": true,
+      "outputs": [
+        {
+          "file": "bend-profile.exr",
+          "format": "OPEN_EXR",
+          "bytes": 1196834,
+          "sha256": "111ab604c837712e8bd570c4bd0d56f489de6c7d6fa152381bcabe34e99b7231",
+          "linear_scene_data": true
+        },
+        {
+          "file": "bend-profile.png",
+          "format": "PNG",
+          "bytes": 1387340,
+          "sha256": "fb3e967ad041992aafbdd6d7fb5f4eded12b98d264eb1a159db16d84118cd281",
+          "linear_scene_data": false
+        }
+      ]
+    },
+    {
+      "name": "distal-REVIEW-CUT-not-terminal",
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CONTROL_CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          9.999999747378752e-05,
+          1000.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.02330596504779603,
+        "farthest_actual_vertex_depth_m": 0.0994092174513409,
+        "projected_uv_min": [
+          0.18975816651049265,
+          0.17063078878842686
+        ],
+        "projected_uv_max": [
+          0.810242561096367,
+          2.139977139571502
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Visible short upper clutch outer sheath - distal review cut",
+            "vertices": 24768,
+            "depth_m": [
+              0.02330596504779603,
+              0.0994092174513409
+            ],
+            "projected_uv_min": [
+              0.18975816651049265,
+              0.17063078878842686
+            ],
+            "projected_uv_max": [
+              0.810242561096367,
+              2.139977139571502
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "conditional_control_context": false,
+      "rendered": true,
+      "outputs": [
+        {
+          "file": "distal-REVIEW-CUT-not-terminal.exr",
+          "format": "OPEN_EXR",
+          "bytes": 1559828,
+          "sha256": "5e06762e09663ef463a73ee837b813f588a90da932ce4ff6b625ba98655dfcc1",
+          "linear_scene_data": true
+        },
+        {
+          "file": "distal-REVIEW-CUT-not-terminal.png",
+          "format": "PNG",
+          "bytes": 1315924,
+          "sha256": "5677a1ea20f8d6dc8cbd9f42a42fa29c89dcff1f0d66b720782c1815ba92d05f",
+          "linear_scene_data": false
+        }
+      ]
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "CLUTCH-UPPER-001",
+      "description": "Photoresolution/overlappingblackwiring prevent calibratedfullroute, actualseat/boot/ferrule andinnerwire unknown",
+      "critical": true,
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "status": "open"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "pending",
+      "revision": "clutch-upper-sheath-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "clutch-upper-sheath-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "clutch-upper-sheath-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "clutch-upper-sheath-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/clutch-upper-sheath/clutch-upper-sheath-v1.blend",
+          "kind": "editable_source",
+          "revision": "clutch-upper-sheath-v1",
+          "sha256": "589a2d1a0a1b25e196a1ff0e458c3fdaeccb1fb6550cb32840a3215f24bc5535"
+        },
+        {
+          "path": "../../reviews/clutch-upper-sheath-v1/whole-short-departure.png",
+          "kind": "isolated_comparison",
+          "revision": "clutch-upper-sheath-v1",
+          "sha256": "c399b5104b91e3b4e6caae20b47feca60bc6acf3e6b3b12e48770428cb83c1d0"
+        }
+      ],
+      "reason": "Root independently opened all four actual96 final native images, two actual Babylon views, actual gray distal-cut macro and R07/R05/crop references. Only82.5mm estimated upper clutch outer sheath segment built, with finite annular wall, through lumen and curved centreline. OD5/ID3mm, route, tangent and first occlusion are estimates. Distal planar section is REVIEW CUT, not a manufactured end. Ferrule, boot, inner wire, hidden continuation and connection to older lower cable portions are NOT BUILT. All POSITION/N/UV/index buffers and world matrices exactly protected G3-to-PBR.",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "clutch-upper-sheath-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/clutch-upper-sheath-v1/distal-REVIEW-CUT-not-terminal.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "clutch-upper-sheath-v1",
+          "sha256": "5677a1ea20f8d6dc8cbd9f42a42fa29c89dcff1f0d66b720782c1815ba92d05f"
+        }
+      ],
+      "reason": "Original constant black dielectric, no texture, photo pixels or measured micrograin. Four96 actually read; black distal macro gives weak inside-wall contrast, while independent gray macro makes finite wall/lumen readable. Native/browser finish, roughness and photographic parity remain unreceived; no artistic acceptance is inferred from actual nonblank canvas checks.",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "clutch-upper-sheath-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/clutch-upper-sheath-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "clutch-upper-sheath-v1",
+          "sha256": "8243d4639cc8185aa1ee136abacc22dfb40bf213f48100ed5b11981fc2a51d15"
+        }
+      ],
+      "reason": "Identity shared candidate cockpit datum. Five conditional signed control poses against33 source snapshot guides and72 wall witnesses found no crossing/inclusion in declared geometry scope. Provisional0.2mm gap to own estimated adjuster outlet is a review standoff, not a seated connection. No physical measured fit, clamp/boot contact, flexible steering simulation, hidden path or lower-cable junction; updated cockpit whole driver-view review required.",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "clutch-upper-sheath-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/clutch-upper-sheath-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "clutch-upper-sheath-v1",
+          "sha256": "b99a236f5e8d4c96a4b3492a616803288a2a9e08010c150695b678fd961d2bb3"
+        },
+        {
+          "path": "../../reviews/clutch-upper-sheath-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "clutch-upper-sheath-v1",
+          "sha256": "a2c6f9f0c0522ed0df8a25017e47c0797cd83de6025eeaf32660290282ce2969"
+        }
+      ],
+      "reason": "Actual49536triangles, strict0glTFerrors, one actual mesh/four nonblank Babylon canvases, zero page/HTTP errors. No normalmapped primitive; root helper does not inspect all UVs, separate author allUV/area results are bounded. Detailed inspection segment only, no mobileLOD/Safari/physical iPhone/performance or artistic qualification.",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "clutch-upper-sheath-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "clutch-upper-sheath-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "clutch-upper-sheath-v1",
+  "export_revision": "clutch-upper-sheath-v1-inspection",
+  "next_action": "Resolve documentary dimensions, remaining visible/hidden geometry and installed interfaces; compare native/browser material before art reception. No automatic mounting or mobile qualification.",
+  "art_accepted": false,
+  "production_group": 10,
+  "working_revision": "clutch-upper-sheath-v1",
+  "previous_revisions": [
+    {
+      "revision": "589a2d1a0a1b25e196a1ff0e458c3fdaeccb1fb6550cb32840a3215f24bc5535",
+      "source": null,
+      "review": null,
+      "art_accepted": false
+    }
+  ],
+  "candidate_source": "../../../assets-src/moto-components/clutch-upper-sheath/README.md",
+  "candidate_review": "../../reviews/clutch-upper-sheath-v1/README.md"
+}

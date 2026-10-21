@@ -1,6 +1,6 @@
 # Viva Wewa — revue des composants moto
 
-**86 composants uniques enregistrés · 86 vues Blender prouvées · aucune réception artistique.**
+**92 composants uniques enregistrés · 92 vues Blender prouvées · aucune réception artistique.**
 
 Une seule vue originale par composant, à la révision exacte de sa fiche. Les anciennes révisions et les sources seulement cataloguées ou gelées sans enregistrement central ne sont pas ajoutées. Ces rendus montrent des candidats isolés, pas le jeu ni une moto terminée.
 
@@ -19,17 +19,17 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 | [03 · Accélérateur et entraînement de câble](#groupe-3) | 2 | Candidats partiels en revue ; groupe non terminé |
 | [04 · Commodo gauche](#groupe-4) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [05 · Commodo droit](#groupe-5) | 1 | Candidats partiels en revue ; groupe non terminé |
-| [06 · Levier embrayage et support](#groupe-6) | 1 | Candidats partiels en revue ; groupe non terminé |
+| [06 · Levier embrayage et support](#groupe-6) | 2 | Candidats partiels en revue ; groupe non terminé |
 | [07 · Levier frein au guidon et support](#groupe-7) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [08 · Rétroviseurs gauche/droit](#groupe-8) | 2 | Candidats partiels en revue ; groupe non terminé |
-| [09 · Contacteur et clé](#groupe-9) | 1 | Candidats partiels en revue ; groupe non terminé |
-| [10 · Câbles et faisceau visibles](#groupe-10) | 1 | Candidats partiels en revue ; groupe non terminé |
+| [09 · Contacteur et clé](#groupe-9) | 2 | Candidats partiels en revue ; groupe non terminé |
+| [10 · Câbles et faisceau visibles](#groupe-10) | 2 | Candidats partiels en revue ; groupe non terminé |
 | [11 · Visière et entourage des compteurs](#groupe-11) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [12 · Phare et clignotants avant](#groupe-12) | 4 | Candidats partiels en revue ; groupe non terminé |
 | [13 · Fourche et direction](#groupe-13) | 6 | Candidats partiels en revue ; groupe non terminé |
 | [14 · Ensemble avant et compatibilité des candidats existants](#groupe-14) | Voir les préexistants ; aucun nouveau composant compté | Candidats antérieurs existants à recontrôler ; compatibilité restante |
 | [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 14 | Candidats partiels en revue ; groupe non terminé |
-| [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 13 | Candidats partiels en revue ; groupe non terminé |
+| [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 16 | Candidats partiels en revue ; groupe non terminé |
 | [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 25 | Candidats partiels en revue ; groupe non terminé |
 | [18 · Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière](#groupe-18) | 2 | Candidats partiels en revue ; groupe non terminé |
 
@@ -313,6 +313,32 @@ PNG SHA-256 : `f7aa85d259f48966906f2248352fbc94a465ebcb6fae02b8ed59e59aa7392e0c`
 
 </details>
 
+
+<a id="moto-control-perch-clamp-bolt-001"></a>
+
+### Boulon hexagonal de bridage lié39072504 — isolé
+
+`MOTO-CONTROL-PERCH-CLAMP-BOLT-001` · révision `control-perch-clamp-bolt-v1` · **candidat non reçu**
+
+![Boulon hexagonal de bridage lié39072504 — isolé — control-perch-clamp-bolt-v1](control-perch-clamp-bolt-v1/opposite-bearing-quarter.png)
+
+[Image entière](control-perch-clamp-bolt-v1/opposite-bearing-quarter.png) · [Preuve du rendu](control-perch-clamp-bolt-v1/render-report.json) · vue `opposite-bearing-quarter`
+
+Source SHA-256 : `629448fe0b7cfa693b339dc5e3db4a05e9811bc83409d6ca6bbc325e31984691`  
+PNG SHA-256 : `867b3091379f9ecea893bd45679158cd0847bcba6484ad8557d4d90f9b2c40d4`
+
+[Blender](../../assets-src/moto-components/control-perch-clamp-bolt/control-perch-clamp-bolt-v1.blend) · [GLB](../../assets-src/moto-components/control-perch-clamp-bolt/control-perch-clamp-bolt-inspection.glb) · [README source](../../assets-src/moto-components/control-perch-clamp-bolt/README.md) · [Revue et limites](control-perch-clamp-bolt-v1/README.md) · [Fiche](../workflow/records/moto-control-perch-clamp-bolt-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [whole-bolt](control-perch-clamp-bolt-v1/whole-bolt.png) · [preuve](control-perch-clamp-bolt-v1/render-report.json)
+- [hex-cone-boundary-detail](control-perch-clamp-bolt-v1/hex-cone-boundary-detail.png) · [preuve](control-perch-clamp-bolt-v1/render-report.json)
+- [thread-runout-detail](control-perch-clamp-bolt-v1/thread-runout-detail.png) · [preuve](control-perch-clamp-bolt-v1/render-report.json)
+
+</details>
+
 Périmètre prévu : lame embrayage; support et collier; pivot et réglage de câble.
 
 <a id="groupe-7"></a>
@@ -427,6 +453,32 @@ PNG SHA-256 : `a0a99b09477fe43dd2bfa90e686ecf0086ccb8417ebda43a865d8e6f26e3725e`
 
 </details>
 
+
+<a id="moto-ignition-key-ring-001"></a>
+
+### Anneau de clé séparé liéPF232605 — deux tours estimés
+
+`MOTO-IGNITION-KEY-RING-001` · révision `ignition-key-ring-v1` · **candidat non reçu**
+
+![Anneau de clé séparé liéPF232605 — deux tours estimés — ignition-key-ring-v1](ignition-key-ring-v1/whole-ring.png)
+
+[Image entière](ignition-key-ring-v1/whole-ring.png) · [Preuve du rendu](ignition-key-ring-v1/render-report.json) · vue `whole-ring`
+
+Source SHA-256 : `1abfaffd052fccfd2c8f6562246af5a1c0f4292a4370c85f6c9381b4a5c31d76`  
+PNG SHA-256 : `8827f60c70bbf908a50c7a6d2fbfb7aacd839c1bf06fff848b537d9c4b973962`
+
+[Blender](../../assets-src/moto-components/ignition-key-ring/ignition-key-ring-v1.blend) · [GLB](../../assets-src/moto-components/ignition-key-ring/ignition-key-ring-inspection.glb) · [README source](../../assets-src/moto-components/ignition-key-ring/README.md) · [Revue et limites](ignition-key-ring-v1/README.md) · [Fiche](../workflow/records/moto-ignition-key-ring-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [split-end-detail](ignition-key-ring-v1/split-end-detail.png) · [preuve](ignition-key-ring-v1/render-report.json)
+- [two-turn-strip-profile](ignition-key-ring-v1/two-turn-strip-profile.png) · [preuve](ignition-key-ring-v1/render-report.json)
+- [key-opening-context](ignition-key-ring-v1/key-opening-context.png) · [preuve](ignition-key-ring-v1/render-report.json)
+
+</details>
+
 Périmètre prévu : barillet/contacteur extérieur; clé générique non fonctionnelle.
 
 <a id="groupe-10"></a>
@@ -454,6 +506,32 @@ PNG SHA-256 : `b3593fff26e49aeae75c7e24eab3c491806a7803c8aaa004232ec5c211dcc0fe`
 <summary>Autres vues Blender prouvées de cette révision</summary>
 
 - [ignition-interface-current](cockpit-cables-v2/ignition-interface-current.png) · [preuve](cockpit-cables-v2/render-report.json)
+
+</details>
+
+
+<a id="moto-clutch-upper-sheath-001"></a>
+
+### Court départ supérieur de gaine d’embrayage — coupe de revue
+
+`MOTO-CLUTCH-UPPER-SHEATH-001` · révision `clutch-upper-sheath-v1` · **candidat non reçu**
+
+![Court départ supérieur de gaine d’embrayage — coupe de revue — clutch-upper-sheath-v1](clutch-upper-sheath-v1/whole-short-departure.png)
+
+[Image entière](clutch-upper-sheath-v1/whole-short-departure.png) · [Preuve du rendu](clutch-upper-sheath-v1/render-report.json) · vue `whole-short-departure`
+
+Source SHA-256 : `589a2d1a0a1b25e196a1ff0e458c3fdaeccb1fb6550cb32840a3215f24bc5535`  
+PNG SHA-256 : `c399b5104b91e3b4e6caae20b47feca60bc6acf3e6b3b12e48770428cb83c1d0`
+
+[Blender](../../assets-src/moto-components/clutch-upper-sheath/clutch-upper-sheath-v1.blend) · [GLB](../../assets-src/moto-components/clutch-upper-sheath/clutch-upper-sheath-inspection.glb) · [README source](../../assets-src/moto-components/clutch-upper-sheath/README.md) · [Revue et limites](clutch-upper-sheath-v1/README.md) · [Fiche](../workflow/records/moto-clutch-upper-sheath-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [control-gap-context](clutch-upper-sheath-v1/control-gap-context.png) · [preuve](clutch-upper-sheath-v1/render-report.json)
+- [bend-profile](clutch-upper-sheath-v1/bend-profile.png) · [preuve](clutch-upper-sheath-v1/render-report.json)
+- [distal-REVIEW-CUT-not-terminal](clutch-upper-sheath-v1/distal-REVIEW-CUT-not-terminal.png) · [preuve](clutch-upper-sheath-v1/render-report.json)
 
 </details>
 
@@ -1467,6 +1545,81 @@ PNG SHA-256 : `d98e0c0127c4b9874266e9b693188896a2da7d1e8d9ddbbe2a180527bb6da519`
 
 - [rounded-edge-pbr](rear-sns-opposite-seat-rim-v1/rounded-edge-pbr.png) · [preuve](rear-sns-opposite-seat-rim-v1/render-report.json)
 - [neutral-outdoor](rear-sns-opposite-seat-rim-v1/neutral-outdoor.png) · [preuve](rear-sns-opposite-seat-rim-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-rear-sns-opposite-eye-exterior-001"></a>
+
+### SNS arrière — extérieur noir œil opposé et col
+
+`MOTO-REAR-SNS-OPPOSITE-EYE-EXTERIOR-001` · révision `rear-sns-opposite-eye-exterior-v1` · **candidat non reçu**
+
+![SNS arrière — extérieur noir œil opposé et col — rear-sns-opposite-eye-exterior-v1](rear-sns-opposite-eye-exterior-v1/whole-eye-pbr.png)
+
+[Image entière](rear-sns-opposite-eye-exterior-v1/whole-eye-pbr.png) · [Preuve du rendu](rear-sns-opposite-eye-exterior-v1/render-report.json) · vue `whole-eye-pbr`
+
+Source SHA-256 : `92403c738c262d5e105ce9ccdcc59bae88c60b866a8e90b39cc474fed818d0a7`  
+PNG SHA-256 : `3b0b06d0f7253b4f0116354728f37d5ce725b4951e304f879c873271f59c6351`
+
+[Blender](../../assets-src/moto-components/rear-sns/opposite-eye-exterior/rear-sns-opposite-eye-exterior-v1.blend) · [GLB](../../assets-src/moto-components/rear-sns/opposite-eye-exterior/rear-sns-opposite-eye-exterior-v1.glb) · [README source](../../assets-src/moto-components/rear-sns/opposite-eye-exterior/README_v1.md) · [Revue et limites](rear-sns-opposite-eye-exterior-v1/README.md) · [Fiche](../workflow/records/moto-rear-sns-opposite-eye-exterior-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [neck-rounding-pbr](rear-sns-opposite-eye-exterior-v1/neck-rounding-pbr.png) · [preuve](rear-sns-opposite-eye-exterior-v1/render-report.json)
+- [neutral-outdoor](rear-sns-opposite-eye-exterior-v1/neutral-outdoor.png) · [preuve](rear-sns-opposite-eye-exterior-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-rear-sns-opposite-blue-region-001"></a>
+
+### SNS arrière — région annulaire bleue opposée
+
+`MOTO-REAR-SNS-OPPOSITE-BLUE-REGION-001` · révision `rear-sns-opposite-blue-region-v1` · **candidat non reçu**
+
+![SNS arrière — région annulaire bleue opposée — rear-sns-opposite-blue-region-v1](rear-sns-opposite-blue-region-v1/whole-annulus-pbr.png)
+
+[Image entière](rear-sns-opposite-blue-region-v1/whole-annulus-pbr.png) · [Preuve du rendu](rear-sns-opposite-blue-region-v1/render-report.json) · vue `whole-annulus-pbr`
+
+Source SHA-256 : `6962de614f96bf5e1b8859e63c7c07003b6828f7fcada419c167201a1905464a`  
+PNG SHA-256 : `f4300bec854943982a86d3c6615472e9c1e7a5773df608f43860ac4c78beb23a`
+
+[Blender](../../assets-src/moto-components/rear-sns/opposite-blue-region/rear-sns-opposite-blue-region-v1.blend) · [GLB](../../assets-src/moto-components/rear-sns/opposite-blue-region/rear-sns-opposite-blue-region-v1.glb) · [README source](../../assets-src/moto-components/rear-sns/opposite-blue-region/README_v1.md) · [Revue et limites](rear-sns-opposite-blue-region-v1/README.md) · [Fiche](../workflow/records/moto-rear-sns-opposite-blue-region-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [front-band-pbr](rear-sns-opposite-blue-region-v1/front-band-pbr.png) · [preuve](rear-sns-opposite-blue-region-v1/render-report.json)
+- [neutral-outdoor](rear-sns-opposite-blue-region-v1/neutral-outdoor.png) · [preuve](rear-sns-opposite-blue-region-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-rear-sns-opposite-eye-sleeve-001"></a>
+
+### SNS arrière — lèvre centrale argentée opposée
+
+`MOTO-REAR-SNS-OPPOSITE-EYE-SLEEVE-001` · révision `rear-sns-opposite-eye-sleeve-v1` · **candidat non reçu**
+
+![SNS arrière — lèvre centrale argentée opposée — rear-sns-opposite-eye-sleeve-v1](rear-sns-opposite-eye-sleeve-v1/whole-sleeve-pbr.png)
+
+[Image entière](rear-sns-opposite-eye-sleeve-v1/whole-sleeve-pbr.png) · [Preuve du rendu](rear-sns-opposite-eye-sleeve-v1/render-report.json) · vue `whole-sleeve-pbr`
+
+Source SHA-256 : `392ba34e4590d037e154797663e664daf368fabae1d29a9b2b53ce9ae548406e`  
+PNG SHA-256 : `6034182ce6bc2d4b60764f7c4ef58af2c2fd36ea47b598bb3fcb665a7456890e`
+
+[Blender](../../assets-src/moto-components/rear-sns/opposite-eye-sleeve/rear-sns-opposite-eye-sleeve-v1.blend) · [GLB](../../assets-src/moto-components/rear-sns/opposite-eye-sleeve/rear-sns-opposite-eye-sleeve-v1.glb) · [README source](../../assets-src/moto-components/rear-sns/opposite-eye-sleeve/README_v1.md) · [Revue et limites](rear-sns-opposite-eye-sleeve-v1/README.md) · [Fiche](../workflow/records/moto-rear-sns-opposite-eye-sleeve-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [front-lip-pbr](rear-sns-opposite-eye-sleeve-v1/front-lip-pbr.png) · [preuve](rear-sns-opposite-eye-sleeve-v1/render-report.json)
+- [neutral-outdoor](rear-sns-opposite-eye-sleeve-v1/neutral-outdoor.png) · [preuve](rear-sns-opposite-eye-sleeve-v1/render-report.json)
 
 </details>
 

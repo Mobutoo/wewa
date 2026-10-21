@@ -1,0 +1,12 @@
+"""Constant representative clean steel proposal only after actual G3 preview review."""
+from pathlib import Path
+import bpy,json,hashlib,sys,array
+H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/control-perch-clamp-bolt-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();B=json.loads((H/'geometry-report.json').read_text());G=json.loads((O/'geometry-preview-review.json').read_text());assert G['ready_for_representative_material']and G['source_sha256']==B['source_sha256'];assert not(H/'preflight-manifest.json').exists();source0=H/'control-perch-clamp-bolt-v1-geometry.blend';assert sha(source0)==B['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(source0));o=bpy.data.objects[B['geometry'][0]['name']];m=o.data
+
+def signature():
+ m.calc_loop_triangles();data={}
+ for label,seq,key,n in [('positions',m.vertices,'co',3),('corner_normals',m.corner_normals,'vector',3),('UV',m.uv_layers.active.data,'uv',2)]:
+  a=array.array('f',[0.]*(len(seq)*n));seq.foreach_get(key,a);data[label]=hashlib.sha256(a.tobytes()).hexdigest()
+ a=array.array('I',[i for t in m.loop_triangles for i in t.vertices]);data['indices']=hashlib.sha256(a.tobytes()).hexdigest();data['object_matrix']=[list(q)for q in o.matrix_world];data['root_matrix']=[list(q)for q in o.parent.matrix_world];return data
+before=signature();mat=m.materials[0];mat.name='Original clean steel fastener proposal - finish unknown';bsdf=mat.node_tree.nodes['Principled BSDF'];bsdf.inputs['Base Color'].default_value=(.50,.53,.56,1);bsdf.inputs['Metallic'].default_value=1;bsdf.inputs['Roughness'].default_value=.27;assert signature()==before;sys.path.insert(0,str(H.parent/'throttle-control'));from control_geometry import export
+source=H/'control-perch-clamp-bolt-v1.blend';glb=H/'control-perch-clamp-bolt-inspection.glb';export(glb,[o.parent,o]);bpy.ops.wm.save_as_mainfile(filepath=str(source),compress=True);r={**B,'geometry_source_sha256':B['source_sha256'],'geometry_export_sha256':B['export_sha256'],'source_sha256':sha(source),'export_sha256':sha(glb),'source_protected_geometry_signatures':before,'source_geometry_exact':True,'material':{'linear_basecolor':[.50,.53,.56],'metallic':1,'roughness':.27,'status':'original estimated representative clean steel, not measured OEM coating or chemistry','texture_images':0},'art_accepted':False};(H/'build-report.json').write_text(json.dumps(r,indent=2)+'\n');(O/'source-material-check.json').write_text(json.dumps(r,indent=2)+'\n');assert sha(source0)==B['source_sha256'];print(json.dumps(r))

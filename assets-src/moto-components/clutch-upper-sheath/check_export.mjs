@@ -1,0 +1,14 @@
+import fs from 'node:fs/promises';import{createHash}from'node:crypto';import{NodeIO}from'@gltf-transform/core';import{getBounds}from'@gltf-transform/functions';import validator from'gltf-validator';
+const path='assets-src/moto-components/clutch-upper-sheath/clutch-upper-sheath-inspection.glb',bytes=await fs.readFile(path),root=(await new NodeIO().read(path)).getRoot(),v=await validator.validateBytes(new Uint8Array(bytes),{uri:path}),meshes=[];
+for(const mesh of root.listMeshes()){
+ let vertices=0,triangles=0,zeroAreaTriangles=0,nonFinitePositions=0,nonUnitNormals=0,volume=0;
+ for(const p of mesh.listPrimitives()){
+  const pos=p.getAttribute('POSITION'),norm=p.getAttribute('NORMAL'),ix=p.getIndices();vertices+=pos.getCount();triangles+=ix.getCount()/3;
+  for(let i=0;i<pos.getCount();i++){let a=[],n=[];pos.getElement(i,a);norm.getElement(i,n);if(a.some(x=>!Number.isFinite(x)))nonFinitePositions++;if(n.some(x=>!Number.isFinite(x))||Math.abs(Math.hypot(...n)-1)>1e-4)nonUnitNormals++;}
+  for(let i=0;i<ix.getCount();i+=3){const a=[],b=[],c=[];pos.getElement(ix.getScalar(i),a);pos.getElement(ix.getScalar(i+1),b);pos.getElement(ix.getScalar(i+2),c);const u=b.map((x,k)=>x-a[k]),w=c.map((x,k)=>x-a[k]);if(Math.hypot(u[1]*w[2]-u[2]*w[1],u[2]*w[0]-u[0]*w[2],u[0]*w[1]-u[1]*w[0])===0)zeroAreaTriangles++;volume+=(a[0]*(b[1]*c[2]-b[2]*c[1])+a[1]*(b[2]*c[0]-b[0]*c[2])+a[2]*(b[0]*c[1]-b[1]*c[0]))/6;}
+ }
+ const row={name:root.listNodes().find(n=>n.getMesh()===mesh).getName(),mesh_label:mesh.getName(),vertices,triangles,zeroAreaTriangles,nonFinitePositions,nonUnitNormals,signed_volume_m3:volume};if(zeroAreaTriangles||nonFinitePositions||nonUnitNormals||volume<=0)throw Error(JSON.stringify(row));meshes.push(row);
+}
+const source=JSON.parse(await fs.readFile('creative/reviews/clutch-upper-sheath-v1/source-material-check.json','utf8'));for(const mesh of meshes){const src=source.geometry.find(x=>x.name===mesh.name);if(!src||source.triangles!==mesh.triangles||Math.abs(mesh.signed_volume_m3/src.signed_volume_m3-1)>1e-5)throw Error('Export/source triangle volume mismatch '+mesh.name);}
+const report={path,sha256:createHash('sha256').update(bytes).digest('hex'),glTF_errors:v.issues.numErrors,glTF_warnings:v.issues.numWarnings,messages:v.issues.messages,meshes,source_all_faces_are_triangles:source.geometry[0].faces===source.triangles,bounds:getBounds(root.getDefaultScene()),materials:root.listMaterials().map(m=>({name:m.getName(),basecolor:m.getBaseColorFactor(),metallic:m.getMetallicFactor(),roughness:m.getRoughnessFactor()})),source_sha256:source.source_sha256,all_dimensions_estimated:true,exact_RDC_identity_confirmed:false,art_accepted:false};
+if(report.glTF_errors||meshes.length!==1)throw Error(JSON.stringify(report));await fs.writeFile('creative/reviews/clutch-upper-sheath-v1/export-check.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report,null,2));

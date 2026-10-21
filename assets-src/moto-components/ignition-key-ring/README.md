@@ -1,0 +1,9 @@
+# Anneau de clé séparé — candidat liéPF232605
+
+Les trois photos10986/87/88 ont été réellement ouvertes avant la forme. Elles montrent une boucle métallique avec périmètre dédoublé/séparé ; elles ne mesurent ni diamètre, ni section, ni tours exacts. Le candidat est un fil plat à section arrondie, enroulé2,02tours, avec ses extrémités propres. Ce n’est pas un tore soudé. Rayon11,5mm, largeur0,9mm, épaisseur0,6mm, pas0,85mm et pose sont estimés et bornés dans parameters.json.
+
+Le repère reprend la matrice de repos du pivot de clé existant, sans changer le contacteur ni la clé. La boucle localeYZ se développe autour deZ53mm. Son passage dans l’ouverture de clé et les trois états de présentation liés sont à contrôler. Les guides sont des snapshots de nos géométries propres, sourcés et hashés, sans liensBlender absolus ni textures importées. Aucune souplesse, coteOEM, varianteRDC ou réception artistique n’est déduite des contrôles.
+
+La matrice effectivement sauvée est consignée dans saved-datum-check.json : la sérialisation des rotations en float32 produit jusqu’à15,7nm d’écart sur un sommet par rapport à la matrice héritée cible. Il ne s’agit pas d’un déplacement de conception ni d’une précision de la pièce réelle. Les matrices et buffers natifs sont bit à bit identiques entre la géométrie et la finition ; le raccord de revue doit préserver la matrice réellement exportée.
+
+La finition proposée utilise une couleur linéaire0,42/0,45/0,48, métal0,92 et rugosité0,25, constants et estimés. Aucune photo, carte normale, usure ou grain mesuré n’est ajouté. Les quatre aperçus24spp ont été réellement ouverts ; quelques reflets fins présentent encore du bruit d’échantillonnage, à relire dans les finales96. Les guides géométriques en gris n’attribuent aucune nouvelle finition à la clé ou aux compteurs.
