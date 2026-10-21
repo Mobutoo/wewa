@@ -1,0 +1,5 @@
+"""Reproduce actual GLB front-image extraction and decoded source-pixel comparison."""
+from pathlib import Path
+from PIL import Image,ImageChops
+import hashlib,json,subprocess
+R=Path(__file__).resolve().parents[1];subprocess.run(['node','tools/check_wewa_plate_graphic_v2.mjs'],cwd=R,check=True);a=R/'assets-src/moto-components/license-plate-wewa-v2/wewa-game-plate-original.png';O=R/'creative/reviews/license-plate-wewa-v2';b=O/'embedded-front-color.png';ia=Image.open(a).convert('RGB');ib=Image.open(b).convert('RGB');assert ia.size==ib.size==(1024,1024);assert ImageChops.difference(ia,ib).getbbox()is None;sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();p=O/'graphic-export-check.json';d=json.loads(p.read_text());d.update(decoded_RGB_pixels_equal_source=True,source_texture_sha256=sha(a),extraction_protocol_sha256=sha(R/'tools/check_wewa_plate_graphic_v2.mjs'),pixel_check_protocol_sha256=sha(Path(__file__)));p.write_text(json.dumps(d,indent=2)+'\n');print('GLB_PLATE_TEXTURE_PIXELS_EQUAL_SOURCE')
