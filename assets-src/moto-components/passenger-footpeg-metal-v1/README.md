@@ -1,0 +1,9 @@
+P16 partial second child: metal passenger footpeg
+
+New private physical DP161170 imagery documents a shaped pierced root, long rounded body, distal circular flange and elongated upper stop tab. D04 plate28 lists this metal step separately from rider PF113000/001 supports and from optional third-footrest PF113060/61. This independent candidate preserves those visible distinctions. Current RDC identity and all dimensions/interfaces remain unqualified estimates, with ranges in parameters.json. The core is a solid exterior envelope, not a measured hidden tube/channel section; opposite root, actual stop engagement, hinge/pin fit and rubber retention remain unresolved.
+
+The initial source failed its topology gate. Diagnostic isolation showed three coincident opposite triangle pairs from the bore cut, not the stop tab. Both zero-volume faces of each exact pair were removed in Blender source; no exported buffer repair or gate relaxation. Joined tab retained. Diagnostic script/logs are preserved under rejected-union-topology (initial suspicion). Actual exported geometry is closed, connected and has one through-hole; triangle ray and topology checks accompany it.
+
+Gray is read before uniform proposed coating. Actual GLB validation, source reopen/gray equality, Babylon captures and native96 PNG/Float32 multilayer EXR accompany delivery. No vendor pixels, measured coating, art reception or hardware qualification. Existing rider supports and rider rubber remain unchanged.
+
+Reproduction: official Blender 4.3.2 runs tools/powertrain_completion_p16_passenger_peg_v1.py, followed by powertrain_completion_render.py reviewed gray/material/preview/final stages. Exact parameters/scripts accompany delivery.json. P16 remaining: passenger stays, distinct rubber/end retention, pin/washer/retainer, opposite/root rounding and actual hinge/stop/installed folding review.
