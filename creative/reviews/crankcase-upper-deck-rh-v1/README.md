@@ -1,0 +1,7 @@
+# P18 right upper crankcase land v1 — bounded fragment
+
+Only the photographed machined upper land is modeled: traced outer contour, saddle void, rounded long gallery, four bores and two counterbores. JH541007 related physical top photograph constrains the projection. Pixel scale, thickness, bore/counterbore size and fragment boundary are explicit working estimates; no camera calibration, cylinder/stud fit or full casting depth. This is not a completed central crankcase. Existing cylinder/head and sidecovers remain separate.
+
+First smooth/CSG boundary export failed corner-normal gate. Failed source/export preserved. Source triangulation and1e-7m degenerate-edge cleanup, with planar lands flat and curved walls smooth, corrected the actual triangles. Final GLB3682triangles, one closed connected mesh, minimum area3.33e-8m², minimum face/corner normal dot0.981, validator0errors/0warnings. Gray/material geometry and normals identical; candidate reopened against gray mesh digest. Gray3views then preview/Babylon inspected before two native96 PNG/Float32 EXR. Four real softwareWebGL views; no hardware, art reception or fit certification.
+
+Remaining P18: central crankcase exterior walls, ribs, bosses, underside and LH distinct surfaces; installed registration with existing covers/cylinder, dimensional comparison and interfaces. No private photo pixels, stamped IDs or textures redistributed. Scripts/parameters frozen; rework creates v2.
