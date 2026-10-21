@@ -1,0 +1,228 @@
+{
+  "schema": 1,
+  "id": "MOTO-RACK-OUTER-RAIL-001",
+  "label": "P02 — rail extérieur du porte-bagages, étude estimée",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Related PF231405 family, official RDC mounted context; unmeasured dimensions and no exact fit certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../research/rack-p02/sources-v1.json",
+  "sources": [
+    "D01",
+    "B18-RACK"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "view": "whole-profile",
+      "png": "whole-profile.png",
+      "exr": "raw/whole-profile.exr",
+      "samples": 96,
+      "camera": [
+        0,
+        0,
+        0.95
+      ],
+      "sha256": "2b172538075c398b0a5f9ca9527928e45d6f6a21394cffafc5a83ee964910fb2",
+      "name": "whole-profile",
+      "actually_saved": true,
+      "actually_read": true,
+      "PNG_sha256": "2b172538075c398b0a5f9ca9527928e45d6f6a21394cffafc5a83ee964910fb2"
+    },
+    {
+      "view": "whole-quarter",
+      "png": "whole-quarter.png",
+      "exr": "raw/whole-quarter.exr",
+      "samples": 96,
+      "camera": [
+        0.65,
+        -0.72,
+        0.52
+      ],
+      "sha256": "efe636975d2a11208509c3543accea230727b9a3a121886a9fc20d02da419190",
+      "name": "whole-quarter",
+      "actually_saved": true,
+      "actually_read": true,
+      "PNG_sha256": "efe636975d2a11208509c3543accea230727b9a3a121886a9fc20d02da419190"
+    },
+    {
+      "view": "neutral-outdoor",
+      "png": "neutral-outdoor.png",
+      "exr": "raw/neutral-outdoor.exr",
+      "samples": 96,
+      "camera": [
+        0.65,
+        -0.72,
+        0.52
+      ],
+      "sha256": "8ef80871a8ef79ff6a86c8aacbf93ff92cfd27519ed208ad0d84f9ab08eca491",
+      "name": "neutral-outdoor",
+      "actually_saved": true,
+      "actually_read": true,
+      "PNG_sha256": "8ef80871a8ef79ff6a86c8aacbf93ff92cfd27519ed208ad0d84f9ab08eca491"
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-RACK-OUTER-RAIL-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "rack-outer-rail-study-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/rack-p02/G0-G2-plan-v1.json",
+          "sha256": "eb09703938ef796e86bbb7cf3aecddb9dc7c1846cd192ebe2d0024f3dd9d0fb6",
+          "revision": "rack-outer-rail-study-v1"
+        }
+      ],
+      "reason": "One exterior rail child isolated from deck, tabs and installed interfaces; bounded related-variant study only",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "rack-outer-rail-study-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "rack-outer-rail-study-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "rack-outer-rail-study-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/rack-outer-rail/rack-outer-rail-candidate-v1.blend",
+          "kind": "editable_source",
+          "revision": "rack-outer-rail-study-v1",
+          "sha256": "0bbf85a7709a810741db772d1b9be33a680af1a9437f1b16fd8b6c870ca5f3a6"
+        },
+        {
+          "path": "../../reviews/rack-outer-rail-study-v1/whole-profile.png",
+          "kind": "isolated_comparison",
+          "revision": "rack-outer-rail-study-v1",
+          "sha256": "2b172538075c398b0a5f9ca9527928e45d6f6a21394cffafc5a83ee964910fb2"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "rack-outer-rail-study-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rack-outer-rail-study-v1/neutral-outdoor.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "rack-outer-rail-study-v1",
+          "sha256": "8ef80871a8ef79ff6a86c8aacbf93ff92cfd27519ed208ad0d84f9ab08eca491"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "rack-outer-rail-study-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rack-outer-rail-study-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "rack-outer-rail-study-v1",
+          "sha256": "c7c56c946888754b116dc46d8baabe8600349ee1d8e2f49a667d1d560fd679ff"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "rack-outer-rail-study-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rack-outer-rail-study-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "rack-outer-rail-study-v1",
+          "sha256": "7151b5ab4b0e52ef06969b3d3beae5dab4884b4eecfb47690857fb8dae18aa5c"
+        },
+        {
+          "path": "../../reviews/rack-outer-rail-study-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "rack-outer-rail-study-v1",
+          "sha256": "f2c83954da89aead1988e3cdc8045bf98d8528f76f4dead83c07a6fe6f2c2460"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "rack-outer-rail-study-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "rack-outer-rail-study-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "rack-outer-rail-study-v1",
+  "export_revision": "rack-outer-rail-study-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/rack-outer-rail/README.md",
+  "candidate_review": "../../reviews/rack-outer-rail-study-v1/README.md",
+  "production_group": 18,
+  "source_plan": "../../research/rack-p02/G0-G2-plan-v1.json"
+}
