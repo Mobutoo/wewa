@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-TAIL-LAMP-UPPER-BRACKET-001",
-  "label": "P05 — support supérieur de feu, première surface estimée",
+  "label": "P05 — support supérieur plié, cinq perçages PF231401",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -21,60 +21,61 @@
       0.65
     ]
   },
-  "source_register": "../../../creative/research/tail-lamp-upper-bracket-v1/sources-child-v1.json",
+  "source_register": "../../../creative/research/tail-lamp-upper-bracket-v4/sources-child-v1.json",
   "sources": [
     "D01",
-    "D04-S59",
-    "RDC-REAR"
+    "PF231401-crosland-0",
+    "PF231401-crosland-1",
+    "PF231401-matriz-0"
   ],
   "claims": [],
   "views": [
     {
       "name": "whole-front",
-      "PNG_sha256": "b8980334ce865961cea0e6659402133e9d271b64120c5134454e8ad20ad20eb7",
+      "PNG_sha256": "0ebc3566f0cd254f9e3e31f00a1ec78df52345028402bd49cb31b37c9823ba5c",
       "actually_saved": true,
       "samples": 96,
       "camera_eye": [
         0.0,
-        -0.0040000006556510925,
-        0.5219999551773071
+        -0.0005578119307756424,
+        0.5227175951004028
       ],
       "camera_target": [
         0.0,
-        -0.0040000006556510925,
-        0.0
+        -0.0005578119307756424,
+        0.005768805276602507
       ]
     },
     {
       "name": "whole-quarter",
-      "PNG_sha256": "cbc3f5973744ffd13fcff6ee5d50f78dd0b6487d23bf1128b5aa6e688b9380f9",
+      "PNG_sha256": "02379b78dc488ea4445211eed6a644393ddf44c97f8be405e050ec716c9edf8d",
       "actually_saved": true,
       "samples": 96,
       "camera_eye": [
-        0.17399999499320984,
-        -0.21279999613761902,
-        0.3479999899864197
+        0.1723162680864334,
+        -0.20733733475208282,
+        0.3504013419151306
       ],
       "camera_target": [
         0.0,
-        -0.0040000006556510925,
-        0.0
+        -0.0005578119307756424,
+        0.005768805276602507
       ]
     },
     {
       "name": "neutral-outdoor",
-      "PNG_sha256": "08d1b850f5e2505c56c5ccf8971ddffb13216869a1ea96d9073be8c0ba261410",
+      "PNG_sha256": "59ad8a5147c57c394f9aeb7c0a5f8068cb795ed2096c816d026a9a0d6bee854b",
       "actually_saved": true,
       "samples": 96,
       "camera_eye": [
-        0.17399999499320984,
-        -0.21279999613761902,
-        0.3479999899864197
+        0.1723162680864334,
+        -0.20733733475208282,
+        0.3504013419151306
       ],
       "camera_target": [
         0.0,
-        -0.0040000006556510925,
-        0.0
+        -0.0005578119307756424,
+        0.005768805276602507
       ]
     }
   ],
@@ -96,17 +97,17 @@
   "gates": {
     "G0": {
       "status": "passed",
-      "revision": "tail-lamp-upper-bracket-v1",
+      "revision": "tail-lamp-upper-bracket-v4",
       "reviewer": {
         "name": "Codex",
         "role": "technical"
       },
       "evidence": [
         {
-          "path": "../../../creative/research/tail-lamp-upper-bracket-v1/G0-G2-plan-v1.json",
+          "path": "../../../creative/research/tail-lamp-upper-bracket-v4/G0-G2-plan-v1.json",
           "kind": "identity_and_parts",
-          "sha256": "ad57bd6f9ef28bf3e33feec7fac010c418213766c26c35520aa9bb4ea5b1df51",
-          "revision": "tail-lamp-upper-bracket-v1"
+          "sha256": "8f21ca576bf1dbb3848f8ad171fd1916bc0e08ed3ecc1db78ca082a0024c42b3",
+          "revision": "tail-lamp-upper-bracket-v4"
         }
       ],
       "reason": "Observable child separated, estimates and variant limits documented; not full package or artistic acceptance",
@@ -114,7 +115,7 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": "tail-lamp-upper-bracket-v1",
+      "revision": "tail-lamp-upper-bracket-v4",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -122,7 +123,7 @@
     },
     "G2": {
       "status": "blocked",
-      "revision": "tail-lamp-upper-bracket-v1",
+      "revision": "tail-lamp-upper-bracket-v4",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -130,20 +131,20 @@
     },
     "G3": {
       "status": "rework",
-      "revision": "tail-lamp-upper-bracket-v1",
+      "revision": "tail-lamp-upper-bracket-v4",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../../assets-src/moto-components/tail-lamp-upper-bracket/tail-lamp-upper-bracket-v1.blend",
+          "path": "../../../assets-src/moto-components/tail-lamp-upper-bracket-v4/tail-lamp-upper-bracket-v4.blend",
           "kind": "editable_source",
-          "revision": "tail-lamp-upper-bracket-v1",
-          "sha256": "b15e0c0e2fbc97507d08d9725dcb4a490a5c96bce8e2c2cc2a128f47befbe7ec"
+          "revision": "tail-lamp-upper-bracket-v4",
+          "sha256": "1c3b87ba4b7668ff4fd9bf7c257435f759a59a162edeb9adf61ff2cf0d7bcb45"
         },
         {
-          "path": "../../reviews/tail-lamp-upper-bracket-v1/whole-front.png",
+          "path": "../../reviews/tail-lamp-upper-bracket-v4/whole-front.png",
           "kind": "isolated_comparison",
-          "revision": "tail-lamp-upper-bracket-v1",
-          "sha256": "b8980334ce865961cea0e6659402133e9d271b64120c5134454e8ad20ad20eb7"
+          "revision": "tail-lamp-upper-bracket-v4",
+          "sha256": "0ebc3566f0cd254f9e3e31f00a1ec78df52345028402bd49cb31b37c9823ba5c"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -151,14 +152,14 @@
     },
     "G4": {
       "status": "rework",
-      "revision": "tail-lamp-upper-bracket-v1",
+      "revision": "tail-lamp-upper-bracket-v4",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/tail-lamp-upper-bracket-v1/neutral-outdoor.png",
+          "path": "../../reviews/tail-lamp-upper-bracket-v4/neutral-outdoor.png",
           "kind": "surface_or_sound_comparison",
-          "revision": "tail-lamp-upper-bracket-v1",
-          "sha256": "08d1b850f5e2505c56c5ccf8971ddffb13216869a1ea96d9073be8c0ba261410"
+          "revision": "tail-lamp-upper-bracket-v4",
+          "sha256": "59ad8a5147c57c394f9aeb7c0a5f8068cb795ed2096c816d026a9a0d6bee854b"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -166,14 +167,14 @@
     },
     "G5": {
       "status": "rework",
-      "revision": "tail-lamp-upper-bracket-v1",
+      "revision": "tail-lamp-upper-bracket-v4",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/tail-lamp-upper-bracket-v1/source-geometry-check.json",
+          "path": "../../reviews/tail-lamp-upper-bracket-v4/source-geometry-check.json",
           "kind": "motion_or_interface_check",
-          "revision": "tail-lamp-upper-bracket-v1",
-          "sha256": "589f64c7579cefb8a85777bd2ae3d15de74aac1ce0f9a743898817dbbcad4030"
+          "revision": "tail-lamp-upper-bracket-v4",
+          "sha256": "ca049422ea6e48a780cf1b710559a60c56f78146e606f9b3e568c61a27340d70"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -181,20 +182,20 @@
     },
     "G6": {
       "status": "rework",
-      "revision": "tail-lamp-upper-bracket-v1",
+      "revision": "tail-lamp-upper-bracket-v4",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/tail-lamp-upper-bracket-v1/export-buffer-check.json",
+          "path": "../../reviews/tail-lamp-upper-bracket-v4/export-buffer-check.json",
           "kind": "technical_export_check",
-          "revision": "tail-lamp-upper-bracket-v1",
-          "sha256": "3842058f9fff472c4a55e89f50064984622aaebec727c06f0fbcdd7ee8c471b3"
+          "revision": "tail-lamp-upper-bracket-v4",
+          "sha256": "3dab0ccba91bad9407831b5497d178bffb2d92847510424ccf47c6638f47bdf3"
         },
         {
-          "path": "../../reviews/tail-lamp-upper-bracket-v1/inspection-v3/engine-driver.png",
+          "path": "../../reviews/tail-lamp-upper-bracket-v4/inspection-v3/engine-driver.png",
           "kind": "real_runtime_comparison",
-          "revision": "tail-lamp-upper-bracket-v1",
-          "sha256": "24a36fec65da54c888c91dc2692ee4733ead4c18c2e655fd292ba4e675d16e53"
+          "revision": "tail-lamp-upper-bracket-v4",
+          "sha256": "9efa636e320b3e6d430c4c2256e3efa9ea88f8e0e3990d51e5ea017f80b30d72"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -202,7 +203,7 @@
     },
     "G7": {
       "status": "pending",
-      "revision": "tail-lamp-upper-bracket-v1",
+      "revision": "tail-lamp-upper-bracket-v4",
       "reviewer": null,
       "evidence": [],
       "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
@@ -210,7 +211,7 @@
     },
     "G8": {
       "status": "pending",
-      "revision": "tail-lamp-upper-bracket-v1",
+      "revision": "tail-lamp-upper-bracket-v4",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -218,12 +219,20 @@
     }
   },
   "active_detailed_fabrication": false,
-  "source_revision": "tail-lamp-upper-bracket-v1",
-  "export_revision": "tail-lamp-upper-bracket-v1-inspection",
+  "source_revision": "tail-lamp-upper-bracket-v4",
+  "export_revision": "tail-lamp-upper-bracket-v4-inspection",
   "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
   "art_accepted": false,
-  "candidate_source": "../../../assets-src/moto-components/tail-lamp-upper-bracket/README.md",
-  "candidate_review": "../../reviews/tail-lamp-upper-bracket-v1/README.md",
+  "candidate_source": "../../../assets-src/moto-components/tail-lamp-upper-bracket-v4/README.md",
+  "candidate_review": "../../reviews/tail-lamp-upper-bracket-v4/README.md",
   "production_group": 18,
-  "source_plan": "../../../creative/research/tail-lamp-upper-bracket-v1/G0-G2-plan-v1.json"
+  "source_plan": "../../../creative/research/tail-lamp-upper-bracket-v4/G0-G2-plan-v1.json",
+  "previous_revisions": [
+    {
+      "revision": "tail-lamp-upper-bracket-v1",
+      "source": "../../../assets-src/moto-components/tail-lamp-upper-bracket/README.md",
+      "review": "../../reviews/tail-lamp-upper-bracket-v1/README.md",
+      "art_accepted": false
+    }
+  ]
 }

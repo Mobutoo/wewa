@@ -28,6 +28,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P05** : [tail-lamp-upper-bracket-v4 — sources, rendus et contrôles](creative/reviews/tail-lamp-upper-bracket-v4/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **Sources historiques retrouvées localement** : [54 fichiers exacts restaurés depuis Git](creative/research/historical-source-restoration-v1/report.json), soit27 sources Blender et27 GLB du cadre, bras oscillant, pare-moteur et amortisseurs. Aucun nouveau modèle ni réception supplémentaire.
 
 - **P19** : [MOTO-CARBURETTOR-FLOAT-BOWL-001 — bounded exterior candidate — sources et images](creative/reviews/carburettor-float-bowl-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.

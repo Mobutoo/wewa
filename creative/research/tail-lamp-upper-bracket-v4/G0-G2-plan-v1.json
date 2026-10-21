@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "package": "P05",
+  "component_id": "MOTO-TAIL-LAMP-UPPER-BRACKET-001",
+  "sources": [
+    {
+      "url": "https://croslandpe.vteximg.com.br/arquivos/ids/171755/PF231401_2.jpg?v=639058539253200000",
+      "title": "SOPORTE DE FARO POSTERIOR",
+      "page": "soporte-de-faro-posterior-pf231401",
+      "private_path": "/workspace/wewa-assets/references/exterior-missing-interfaces-v1/PF231401-crosland-0.jpg",
+      "sha256": "37061d1e8bbfa70703cacb2b0120c672958aa7436294dd4ab8824543ef56877c",
+      "actually_viewed": true,
+      "rights": "Private documentary reference only; not for public redistribution or texture use",
+      "id": "PF231401-crosland-0",
+      "status": "documented_related_variant"
+    },
+    {
+      "url": "https://croslandpe.vteximg.com.br/arquivos/ids/171756/PF231401_1.jpg?v=639058539258070000",
+      "title": "SOPORTE DE FARO POSTERIOR",
+      "page": "soporte-de-faro-posterior-pf231401",
+      "private_path": "/workspace/wewa-assets/references/exterior-missing-interfaces-v1/PF231401-crosland-1.jpg",
+      "sha256": "9adcf09b3479b7575a0ec5dcb5cae2171b90298a734a8b09a76afe15cdb723c4",
+      "actually_viewed": true,
+      "rights": "Private documentary reference only; not for public redistribution or texture use",
+      "id": "PF231401-crosland-1",
+      "status": "documented_related_variant"
+    },
+    {
+      "url": "https://bajajmatriz.com/wp-content/uploads/2019/12/PF231401.jpg",
+      "title": "PF231401",
+      "page": "https://bajajmatriz.com/?attachment_id=5078",
+      "private_path": "/workspace/wewa-assets/references/exterior-missing-interfaces-v1/PF231401-matriz-0.jpg",
+      "sha256": "4dcb41e138e019ba1a92bd3804617adecee7c73dd142d32b6d3c932dd93231e2",
+      "actually_viewed": true,
+      "rights": "Private documentary reference only; not for public redistribution or texture use",
+      "id": "PF231401-matriz-0",
+      "status": "documented_related_variant"
+    }
+  ],
+  "scope": "New formed-sheet upper PF231401 bracket study from oblique rear and front product photos: closed central aperture, two damper holes, two folded-ear holes and long upper flange. Replaces open-arch/flat-end interpretation; all metrics and current RDC fit remain estimates. Dampers, collars, boot, welds and hardware are separate missing children.",
+  "reconciliation": "creative/research/rear-cluster-reference-reconciliation-v2/contradictions-v1.json",
+  "observations": [
+    "Central circular aperture is closed, not a bottom cutaway",
+    "Two round damper seats visible in main web; two fastening apertures lie in turned-up ends",
+    "Long upper lip and return ears are finite sheet; no hidden backing insert",
+    "Rubber boot and two dampers in front photo are separate parts, not filled steel holes"
+  ],
+  "authored_estimates": {
+    "all_shape_parameters": true,
+    "unfolded_width_m": 0.18,
+    "formed_width_working_m": 0.172,
+    "overall_width_range_m": [
+      0.135,
+      0.205
+    ],
+    "sheet_thickness_m": [
+      0.001,
+      0.0025
+    ],
+    "bend_radius_range_m": [
+      0.002,
+      0.007
+    ],
+    "method": "Bounded original dimensions from related product proportions; photos uncalibrated, no OEM/measured dimensions"
+  },
+  "remaining": [
+    "Exact blank outline, metric bends and hole centres",
+    "Grommets, collars and central cable boot",
+    "Wire join positions and welds",
+    "Vehicle current RDC variant and installed pose"
+  ],
+  "art_accepted": false,
+  "package_complete": false,
+  "rejected_geometry_revision": {
+    "revision": "tail-lamp-upper-bracket-v2",
+    "reason": "Actual exported normals check found minimum face/corner dot -0.114. Long perimeter cap edges crossed sheet bends without longitudinal subdivision; no material stage allowed.",
+    "correction": "Resample all perimeter edges to the same maximum pitch as the interior before constrained triangulation and bend. Same design coordinates, no hidden geometry."
+  },
+  "revised_visible_contour": {
+    "reason": "Distinct front source shows both turned ear holes, inconsistent with an assumed90deg ear fold viewed along main-web normal; shallow concave lower edge also visible",
+    "working_ear_angle_deg": 45,
+    "estimated_ear_angle_range_deg": [
+      25,
+      75
+    ],
+    "angle_is_not_measured": true,
+    "working_formed_width_m": 0.171,
+    "lower_edge_lift_at_centre_m": 0.006,
+    "prior_gray_revision": "tail-lamp-upper-bracket-v3",
+    "prior_gray_scope": "Topology/bend diagnostic only, not a received or materialled source"
+  },
+  "actual_mesh_bounds_m": {
+    "min": [
+      -0.0861581340432167,
+      -0.0308656245470047,
+      -0.000750000006519258
+    ],
+    "max": [
+      0.0861581340432167,
+      0.029750000685453415,
+      0.012287610210478306
+    ],
+    "scope": "Computed authored model only; not physical/OEM measurement"
+  },
+  "source_pose_groups": {
+    "crosland": "One oblique rear pose, two exposure images",
+    "matriz": "Distinct frontal pose with rubber dampers and central boot"
+  }
+}

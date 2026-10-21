@@ -1,0 +1,8 @@
+file:///workspace/wewa/tools/check_body_completion_exports_v2.mjs:5
+ if([...edges.values()].some(n=>n>2))throw Error('Nonmanifold actual edge');const boundary=[...edges].filter(([k,n])=>n===1),graph=new Map();for(const[e]of boundary){const[a,b]=e.split('|');for(const[x,y]of[[a,b],[b,a]]){if(!graph.has(x))graph.set(x,new Set());graph.get(x).add(y)}}if([...graph.values()].some(v=>v.size!==2))throw Error('Branched boundary');let loops=0;const seen=new Set();for(const initial of graph.keys()){if(seen.has(initial))continue;loops++;const todo=[initial];while(todo.length){const k=todo.pop();if(seen.has(k))continue;seen.add(k);todo.push(...graph.get(k))}}if(minNormalDot<=0)throw Error('Folded normals '+minNormalDot);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^
+
+Error: Folded normals -0.11418109297561699
+    at file:///workspace/wewa/tools/check_body_completion_exports_v2.mjs:5:613
+
+Node.js v24.19.0
