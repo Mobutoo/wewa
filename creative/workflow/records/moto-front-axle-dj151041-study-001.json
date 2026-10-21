@@ -1,0 +1,270 @@
+{
+  "schema": 1,
+  "id": "MOTO-FRONT-AXLE-DJ151041-STUDY-001",
+  "label": "front-completion-p24-axle-material-v1 — bounded appearance study",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../reviews/front-completion-p24-axle-material-v1-coordination-v1/source-register.json",
+  "sources": [
+    "D01",
+    "WORKER-REF-1"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "whole-quarter",
+      "PNG_sha256": "7dd1980ac185b7c12125d04fa3320d6d7571283c30ede18d2b157fbcb43e6621",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "whole-quarter",
+        "samples": 96,
+        "resolution": [
+          1200,
+          1000
+        ],
+        "camera": [
+          0.4099999964237213,
+          -0.4099999964237213,
+          0.4099999964237213
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.10249999910593033
+        ],
+        "ortho_scale": 0.3382500112056732,
+        "name": "whole-quarter",
+        "PNG": "creative/reviews/front-completion-p24-axle-material-v1/whole-quarter.png",
+        "PNG_sha256": "7dd1980ac185b7c12125d04fa3320d6d7571283c30ede18d2b157fbcb43e6621",
+        "EXR": "creative/reviews/front-completion-p24-axle-material-v1/raw/whole-quarter.exr",
+        "EXR_sha256": "26e2d3244e752b5ec36d8dacc1e895e698f7cf9de8151dda09d2e8c8e99724ef"
+      }
+    },
+    {
+      "name": "whole-reverse",
+      "PNG_sha256": "99ecf0391b81bab0f97087bdc0c2e81b132b6d2e3630e0fb132c7d01f61696a3",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "whole-reverse",
+        "samples": 96,
+        "resolution": [
+          1200,
+          1000
+        ],
+        "camera": [
+          -0.4099999964237213,
+          0.20499999821186066,
+          0.3075000047683716
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.10249999910593033
+        ],
+        "ortho_scale": 0.3382500112056732,
+        "name": "whole-reverse",
+        "PNG": "creative/reviews/front-completion-p24-axle-material-v1/whole-reverse.png",
+        "PNG_sha256": "99ecf0391b81bab0f97087bdc0c2e81b132b6d2e3630e0fb132c7d01f61696a3",
+        "EXR": "creative/reviews/front-completion-p24-axle-material-v1/raw/whole-reverse.exr",
+        "EXR_sha256": "cceea2ae44bcc107665ea1a7c3637713c72b39b8c1d8915bd44c85a6d1493c0d"
+      }
+    },
+    {
+      "name": "neutral",
+      "PNG_sha256": "05637119c82b40e035458f3bba3f22c94be724fb30c3d414d05b1c762397d5b9",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "neutral",
+        "samples": 96,
+        "resolution": [
+          1200,
+          1000
+        ],
+        "camera": [
+          0.4099999964237213,
+          -0.20499999821186066,
+          0.3075000047683716
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.10249999910593033
+        ],
+        "ortho_scale": 0.3382500112056732,
+        "name": "neutral",
+        "PNG": "creative/reviews/front-completion-p24-axle-material-v1/neutral.png",
+        "PNG_sha256": "05637119c82b40e035458f3bba3f22c94be724fb30c3d414d05b1c762397d5b9",
+        "EXR": "creative/reviews/front-completion-p24-axle-material-v1/raw/neutral.exr",
+        "EXR_sha256": "2f208ef6ab6c20040645f52ccd8da95a29ad76b71c4bff2eb49af5864009ba48"
+      }
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-FRONT-AXLE-DJ151041-STUDY-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "front-completion-p24-axle-material-v1-coordination-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/front-completion-p24-axle-material-v1-coordination-v1/G0-G2-plan-v1.json",
+          "sha256": "0fd12556bf7a8f6946ba503277d8a284b150d4074a86ac5e410d60470c8bad48",
+          "revision": "front-completion-p24-axle-material-v1-coordination-v1"
+        }
+      ],
+      "reason": "Observable worker child identified, sources/estimates/gaps linked; not a complete package or art reception",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "front-completion-p24-axle-material-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "front-completion-p24-axle-material-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "front-completion-p24-axle-material-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/front-completion-p24-axle-material-v1/material.blend",
+          "kind": "editable_source",
+          "revision": "front-completion-p24-axle-material-v1-coordination-v1",
+          "sha256": "356a305a51227cd9656e08cde63921677ac50724928689eb2d56b724d1f569c6"
+        },
+        {
+          "path": "../../reviews/front-completion-p24-axle-material-v1-coordination-v1/whole-quarter.png",
+          "kind": "isolated_comparison",
+          "revision": "front-completion-p24-axle-material-v1-coordination-v1",
+          "sha256": "7dd1980ac185b7c12125d04fa3320d6d7571283c30ede18d2b157fbcb43e6621"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "front-completion-p24-axle-material-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/front-completion-p24-axle-material-v1-coordination-v1/neutral.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "front-completion-p24-axle-material-v1-coordination-v1",
+          "sha256": "05637119c82b40e035458f3bba3f22c94be724fb30c3d414d05b1c762397d5b9"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "front-completion-p24-axle-material-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/front-completion-p24-axle-material-v1-coordination-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "front-completion-p24-axle-material-v1-coordination-v1",
+          "sha256": "067da21c58313b06f86ae5e58f56cc50f368a7fbcb7e3733e8f1f9682d26be61"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "front-completion-p24-axle-material-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/front-completion-p24-axle-material-v1-coordination-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "front-completion-p24-axle-material-v1-coordination-v1",
+          "sha256": "e436ff44ebedb8d4fcbf476b0c411ce4eebaea2f1f0bf9448474b19b5dac7fe3"
+        },
+        {
+          "path": "../../reviews/front-completion-p24-axle-material-v1-coordination-v1/inspection-v5/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "front-completion-p24-axle-material-v1-coordination-v1",
+          "sha256": "46eb4b454df20548ba09f3942da8eabc9d234eacaa2339b30512d675b4da0079"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "front-completion-p24-axle-material-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "front-completion-p24-axle-material-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "front-completion-p24-axle-material-v1-coordination-v1",
+  "export_revision": "front-completion-p24-axle-material-v1-coordination-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/front-completion-p24-axle-material-v1/../../../creative/reviews/front-completion-p24-axle-material-v1-coordination-v1/README.md",
+  "candidate_review": "../../reviews/front-completion-p24-axle-material-v1-coordination-v1/README.md",
+  "production_group": 14,
+  "source_plan": "../../research/front-completion-p24-axle-material-v1-coordination-v1/G0-G2-plan-v1.json"
+}

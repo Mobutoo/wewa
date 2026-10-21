@@ -1,0 +1,228 @@
+{
+  "schema": 1,
+  "id": "MOTO-REAR-INDICATOR-MOUNT-WASHER-001",
+  "label": "P10 — rondelle arrière, faces planes et biseaux corrigés",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../../creative/research/rear-indicator-mount-washer-v2/sources-child-v1.json",
+  "sources": [
+    "D01",
+    "D04-S58"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "whole-front",
+      "PNG_sha256": "4f073494a951bd56311fa34674877d628a4822c1d2ae5022cefc444f89bcad90",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.0,
+        0.0,
+        0.053999997675418854
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "whole-quarter",
+      "PNG_sha256": "2c306694eceb653e47eeb4e291ac4079f1fb54dffe660b1e95b3178566ebc5ec",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.017999999225139618,
+        -0.02160000056028366,
+        0.035999998450279236
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "neutral-outdoor",
+      "PNG_sha256": "2982435096b447be43a35bb6533057e0f0e1a5c33d4709c74c9125b6fccd08e1",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.017999999225139618,
+        -0.02160000056028366,
+        0.035999998450279236
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-REAR-INDICATOR-MOUNT-WASHER-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "rear-indicator-mount-washer-v2",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "path": "../../../creative/research/rear-indicator-mount-washer-v2/G0-G2-plan-v1.json",
+          "kind": "identity_and_parts",
+          "sha256": "e71d92a78d12d8918b7d3accb9c50e132061f7df24e2387b5185a2bb7d5a2276",
+          "revision": "rear-indicator-mount-washer-v2"
+        }
+      ],
+      "reason": "Observable child separated, estimates and variant limits documented; not full package or artistic acceptance",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "rear-indicator-mount-washer-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "rear-indicator-mount-washer-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "rear-indicator-mount-washer-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/rear-indicator-mount-washer-v2/rear-indicator-mount-washer-v2.blend",
+          "kind": "editable_source",
+          "revision": "rear-indicator-mount-washer-v2",
+          "sha256": "e71d52136fd49145ed742620324973116deb8cb6291ad50dbd1aea2a737906bc"
+        },
+        {
+          "path": "../../reviews/rear-indicator-mount-washer-v2/whole-front.png",
+          "kind": "isolated_comparison",
+          "revision": "rear-indicator-mount-washer-v2",
+          "sha256": "4f073494a951bd56311fa34674877d628a4822c1d2ae5022cefc444f89bcad90"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "rear-indicator-mount-washer-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rear-indicator-mount-washer-v2/neutral-outdoor.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "rear-indicator-mount-washer-v2",
+          "sha256": "2982435096b447be43a35bb6533057e0f0e1a5c33d4709c74c9125b6fccd08e1"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "rear-indicator-mount-washer-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rear-indicator-mount-washer-v2/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "rear-indicator-mount-washer-v2",
+          "sha256": "d6e9b31fddeb711eac9c4d3f2a3b6670f5c6cbc874a44fa6411280768f64842d"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "rear-indicator-mount-washer-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rear-indicator-mount-washer-v2/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "rear-indicator-mount-washer-v2",
+          "sha256": "b4d85130f9f308a1bb861d746aa32f166445ec22e08fd2d1ff0a9864bc81fa2e"
+        },
+        {
+          "path": "../../reviews/rear-indicator-mount-washer-v2/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "rear-indicator-mount-washer-v2",
+          "sha256": "c6f129b346791061c653cddc1e4a0690c9f50bd299cfbb9fce8caaa00bb9c903"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "rear-indicator-mount-washer-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "rear-indicator-mount-washer-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "rear-indicator-mount-washer-v2",
+  "export_revision": "rear-indicator-mount-washer-v2-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/rear-indicator-mount-washer-v2/README.md",
+  "candidate_review": "../../reviews/rear-indicator-mount-washer-v2/README.md",
+  "production_group": 18,
+  "source_plan": "../../../creative/research/rear-indicator-mount-washer-v2/G0-G2-plan-v1.json"
+}
