@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **146 composants candidats enregistrés**, après
+Le registre courant comporte **148 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,10 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P19** : [MOTO-CARBURETTOR-FLOAT-BOWL-001 — bounded exterior candidate — sources et images](creative/reviews/carburettor-float-bowl-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
+- **P19** : [MOTO-CARBURETTOR-LOWER-BODY-001 — bounded exterior candidate — sources et images](creative/reviews/carburettor-lower-body-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
+- **P19** : [MOTO-CARBURETTOR-CABLE-ADJUSTER-BARREL-001 — bounded exterior candidate — sources et images](creative/reviews/carburettor-cable-adjuster-barrel-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
+- **P17** : [MOTO-CENTRE-STAND-OPERATING-ARM-001 — bounded exterior candidate — sources et images](creative/reviews/centre-stand-operating-arm-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P05/P08 : nouvelles références du support arrière** — [contradictions documentées](creative/research/rear-cluster-reference-reconciliation-v2/contradictions-v1.json), [montagev2 conservé comme diagnostic](creative/reviews/rear-cluster-review-v2/README.md). Les formes planes antérieures restent à reprendre ; nouvelles tôles pliées et arceau déporté en préparation.
 
 - **P11, plaque révisée** : [revue technique du dessin original](creative/reviews/license-plate-wewa-v2/DESIGN_REVIEW_V1.md) et [axes de perçages comparés aux GLB de la traverse](creative/reviews/license-plate-wewa-v2/nominal-carrier-interface-v1.json). Décalage nominal de2mm par côté supprimé dans la pose de revue ; visserie et pose véhicule restent ouvertes.
