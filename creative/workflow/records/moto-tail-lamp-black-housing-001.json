@@ -1,0 +1,229 @@
+{
+  "schema": 1,
+  "id": "MOTO-TAIL-LAMP-BLACK-HOUSING-001",
+  "label": "P07 — corps noir, contour de raccord extérieur corrigé",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../../creative/research/tail-lamp-black-housing-v2/sources-child-v1.json",
+  "sources": [
+    "D01",
+    "D04-S59",
+    "RDC-REAR"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "whole-front",
+      "PNG_sha256": "c290c00797cd1a9be6439e799b472c41551ea8b2317054013642d53b84e8166c",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        3.725290298461914e-09,
+        -0.00327166635543108,
+        0.4799354672431946
+      ],
+      "camera_target": [
+        3.725290298461914e-09,
+        -0.00327166635543108,
+        0.014000000432133675
+      ]
+    },
+    {
+      "name": "whole-quarter",
+      "PNG_sha256": "a47044b42ebcacbfd1ebeee2c0834ac53dd3d133a486dbaf36edd3d3424ad164",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.15531182289123535,
+        -0.18964585661888123,
+        0.32462364435195923
+      ],
+      "camera_target": [
+        3.725290298461914e-09,
+        -0.00327166635543108,
+        0.014000000432133675
+      ]
+    },
+    {
+      "name": "neutral-outdoor",
+      "PNG_sha256": "7a57bea30c4442c4dcfa855db2dfae399b3a9f05f93369f194ea7e638e0411f8",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.15531182289123535,
+        -0.18964585661888123,
+        0.32462364435195923
+      ],
+      "camera_target": [
+        3.725290298461914e-09,
+        -0.00327166635543108,
+        0.014000000432133675
+      ]
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-TAIL-LAMP-BLACK-HOUSING-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "tail-lamp-black-housing-v2",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "path": "../../../creative/research/tail-lamp-black-housing-v2/G0-G2-plan-v1.json",
+          "kind": "identity_and_parts",
+          "sha256": "e55b946bd51603069c759c2e723b0bd644e14b498325d2857922bf6b8feb3122",
+          "revision": "tail-lamp-black-housing-v2"
+        }
+      ],
+      "reason": "Observable child separated, estimates and variant limits documented; not full package or artistic acceptance",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "tail-lamp-black-housing-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "tail-lamp-black-housing-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "tail-lamp-black-housing-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/tail-lamp-black-housing-v2/tail-lamp-black-housing-v2.blend",
+          "kind": "editable_source",
+          "revision": "tail-lamp-black-housing-v2",
+          "sha256": "5f28a72240886a8c924318b11a19c6f934ae4923a14234b63a6bd6e900697ff0"
+        },
+        {
+          "path": "../../reviews/tail-lamp-black-housing-v2/whole-front.png",
+          "kind": "isolated_comparison",
+          "revision": "tail-lamp-black-housing-v2",
+          "sha256": "c290c00797cd1a9be6439e799b472c41551ea8b2317054013642d53b84e8166c"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "tail-lamp-black-housing-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/tail-lamp-black-housing-v2/neutral-outdoor.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "tail-lamp-black-housing-v2",
+          "sha256": "7a57bea30c4442c4dcfa855db2dfae399b3a9f05f93369f194ea7e638e0411f8"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "tail-lamp-black-housing-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/tail-lamp-black-housing-v2/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "tail-lamp-black-housing-v2",
+          "sha256": "2561b2aff7cb20d9d9c80ad7d593be51f9028d93391e6bd20e3afeb6b07696c6"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "tail-lamp-black-housing-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/tail-lamp-black-housing-v2/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "tail-lamp-black-housing-v2",
+          "sha256": "6a0ef3a6226f953696bddf5b887903c4f933341ca6aa00d5ad8fe37fadf5f926"
+        },
+        {
+          "path": "../../reviews/tail-lamp-black-housing-v2/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "tail-lamp-black-housing-v2",
+          "sha256": "06e832363fe751bfbd826ae3011d79d7ba4a6ce1920f4792ee57c4cf770620a1"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "tail-lamp-black-housing-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "tail-lamp-black-housing-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "tail-lamp-black-housing-v2",
+  "export_revision": "tail-lamp-black-housing-v2-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/tail-lamp-black-housing-v2/README.md",
+  "candidate_review": "../../reviews/tail-lamp-black-housing-v2/README.md",
+  "production_group": 18,
+  "source_plan": "../../../creative/research/tail-lamp-black-housing-v2/G0-G2-plan-v1.json"
+}

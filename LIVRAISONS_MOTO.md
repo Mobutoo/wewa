@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **108 composants candidats enregistrés**, après
+Le registre courant comporte **111 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,9 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P08** : [rear-plate-carrier-crossbar — sources, rendus et contrôles](creative/reviews/rear-plate-carrier-crossbar-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
+- **P14** : [MOTO-GEAR-SELECTOR-ARM-001 — bounded exterior candidate — sources et images](creative/reviews/gear-selector-arm-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
+- **P07** : [tail-lamp-black-housing-v2 — sources, rendus et contrôles](creative/reviews/tail-lamp-black-housing-v2/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **P07** : [tail-lamp-outer-lens-v2 — sources, rendus et contrôles](creative/reviews/tail-lamp-outer-lens-v2/README.md). Enfant candidat ; interfaces/paquet ouverts.
 [Suivi courant des trente paquets et répartition du travail](creative/workflow/motorcycle-exterior-continuation-status-v1.json). Les dossiers et travaux de géométrie sont distingués des paquets complets ; les points ci-dessous conservent aussi les anciennes sauvegardes.
 
