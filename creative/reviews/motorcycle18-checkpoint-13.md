@@ -43,3 +43,9 @@ Les [entrées stables du silencieux et de la bague](../research/motorcycle-sourc
 La suite porte sur les deux demi-carters de chaîne, les éléments de selle, le pare-chaleur et les fixations, puis les autres pièces de chaque groupe. Les défauts repérés dans les gris doivent être repris dans la source avant la matière. Les photos documentaires restent attribuées et privées ; les images de cette revue sont de vrais rendus des modèles fournis.
 
 Les contrôles de fichiers et de navigateur ne remplacent ni la réception artistique, ni le contrôle des interfaces mesurées, ni les LOD et essais physiques sur iPhone 15/16. Le jeu public reste à sa version précédente ; le conducteur attend la réception de la moto.
+
+## Vérification après publication
+
+Source immuable : [`44861a22`](https://github.com/Mobutoo/wewa/commit/44861a22b16c781776ca18066f218c221668c336), arbre `3ce9411a49d155504c4c8c9c4fb3248173817388`. Le contrôle du commit lit 2 757 JSON, 243 manifestes, 6 960 empreintes de fichiers, 44 empreintes PNG de checkpoints et 4 045 liens ; aucune erreur. Les 79 choix du catalogue restent distincts des 59 identités physiques et des 63 fiches déclarées. La galerie contient 600 PNG et quatre révisions historiques supplémentaires.
+
+[GitHub Actions](https://github.com/Mobutoo/wewa/actions/runs/39567130618), dont l’étape de preuves moto, a réussi sur ce même commit. Le PRD complet Ewutelo est sauvegardé puis relu en révision 38 : égalité de tous ses champs, 45 exigences inchangées. L’état complet précédent reste dans son archive canonique Git immuable. Ce pied de revue et les [métadonnées de vérification](../../WEWA_Developpement_Web/validation/motorcycle18-source13-integrity.json) sont postérieurs au commit source ; les travaux suivants restent hors de cette coupe.
