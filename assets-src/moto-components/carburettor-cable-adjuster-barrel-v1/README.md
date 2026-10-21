@@ -1,0 +1,1 @@
+Original exterior study from JV581204. Two fine grip bands and open annular lumen. Dimensions, grip count, seam part identity and plain bore are working interpretations; hidden threads and cable retention unqualified. No package completion or artistic acceptance.
