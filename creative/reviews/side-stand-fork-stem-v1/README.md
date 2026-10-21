@@ -1,0 +1,7 @@
+# P17 side-stand pierced fork and stem v1 — first child
+
+Related JA113202 physical photograph constrains two pierced fork ears, actual gap and straight slightly tapered stem. Finite ear edge radii and real bores are modeled. Foot, deployment loop, spring pin and hardware are separate children, not replaced by a generic complete stand. Dimensions, fork gap/bore and stem section are explicit estimates. Stem closure represents a bounded exterior envelope, not a measured rod/tube interior or foot attachment. No vendor pixels used.
+
+Original CSG with many redundant collinear longitudinal stem sections failed the degenerate-triangle gate. Failed protocol/log preserved. Removing redundant straight sections, with recorded0.1µm source-only seam cleanup, retains the intended tapered profile. Actual final GLB2676triangles, one closed connected mesh, minimum triangle area1.45e-10m², validator0errors/0warnings. Gray/material triangles/normals identical; source reopened against gray digest. Gray3views and preview/runtime read before native96 two-view PNG/Float32 EXR. Four real softwareWebGL captures; no hardware test, installed fit or art reception.
+
+Remaining: foot, deployment loop, spring pin, frame pivot bracket/bolt/nut, spring/cover/stop; centre-stand legs/pivot/crossbar/web/feet/operating arm and deployment/ground clearances. No full P17 completion. Rework must create v2; frozen scripts/parameters are exact.
