@@ -1,0 +1,11 @@
+// Actual exported hollow elbow: two mouths, annular ends and one continuous passage. No liner/fit certification.
+import fs from 'node:fs/promises';import crypto from 'node:crypto';import {NodeIO}from '@gltf-transform/core';
+const path=process.argv[2],bytes=await fs.readFile(path),root=(await new NodeIO().read(path)).getRoot(),ts=[];for(const m of root.listMeshes())for(const p of m.listPrimitives()){const pos=p.getAttribute('POSITION'),idx=p.getIndices().getArray();for(let i=0;i<idx.length;i+=3)ts.push([0,1,2].map(k=>pos.getElement(idx[i+k],[])));}
+const sub=(a,b)=>a.map((v,i)=>v-b[i]),cross=(a,b)=>[a[1]*b[2]-a[2]*b[1],a[2]*b[0]-a[0]*b[2],a[0]*b[1]-a[1]*b[0]],dot=(a,b)=>a.reduce((s,v,i)=>s+v*b[i],0);
+function hit(o,d,t){const e1=sub(t[1],t[0]),e2=sub(t[2],t[0]),h=cross(d,e2),det=dot(e1,h);if(Math.abs(det)<1e-15)return null;const inv=1/det,s=sub(o,t[0]),u=inv*dot(s,h);if(u<0||u>1)return null;const q=cross(s,e1),v=inv*dot(d,q);if(v<0||u+v>1)return null;const a=inv*dot(e2,q);return a>0?a:null;}
+const rows=[];
+// Source (x,y,z) maps to glTF (x,z,-y). Axial rays must cross the
+// entire bell/neck without hitting the branch walls inside the airway.
+for(const x of [-.009,0,.009]){const o=[x,.050,-.0011],d=[0,-1,0];const hits=ts.map(t=>hit(o,d,t)).filter(v=>v!==null&&v<.110);if(hits.length)throw Error('Obstructed axial inlet '+JSON.stringify({x,hits}));rows.push({label:'Axial open inlet',origin:o,direction:d,hits_in_working_span:hits.length,span_m:.110});}
+for(const [label,o,d,max]of [['Left barrel opening',[-.070,-.017,0],[1,0,0],.040],['Side opening',[-.020,-.014,.060],[0,0,-1],.045],['Lower flange ear',[-.023,-.027,.060],[0,0,-1],.045]]){const hits=ts.map(t=>hit(o,d,t)).filter(v=>v!==null&&v<max);if(hits.length)throw Error('Blocked opening '+label);rows.push({label,origin:o,direction:d,clear_span_m:max});}
+const report={path,sha256:crypto.createHash('sha256').update(bytes).digest('hex'),actual_export_rays:rows,scope:'Actual exported open mouths and cleared axial inlet only; not calibrated port dimensions or functioning airflow',art_accepted:false};await fs.writeFile('creative/reviews/carburettor-upper-casting-v1/airway-export-check.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));

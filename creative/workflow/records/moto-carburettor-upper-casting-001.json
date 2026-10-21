@@ -1,0 +1,301 @@
+{
+  "schema": 1,
+  "id": "MOTO-CARBURETTOR-UPPER-CASTING-001",
+  "label": "MOTO-CARBURETTOR-UPPER-CASTING-001 — bounded exterior candidate",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../reviews/carburettor-upper-casting-v1-coordination-v1/source-register.json",
+  "sources": [
+    "D01",
+    "WORKER-REF-1"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "final-profile",
+      "PNG_sha256": "f11738314a01341394e27867f19e7ddf9106d8ce603c654ee8f73bb1a9668b04",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-profile",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-profile.png",
+        "exr": "raw/final-profile.exr",
+        "png_sha256": "f11738314a01341394e27867f19e7ddf9106d8ce603c654ee8f73bb1a9668b04",
+        "camera": [
+          -0.010400000028312206,
+          0.0,
+          0.21734870970249176
+        ],
+        "target": [
+          -0.010400000028312206,
+          0.0,
+          -0.008251292631030083
+        ],
+        "ortho_scale": 0.12407999485731125,
+        "actual_vertex_frame_min": [
+          0.19696968793869019,
+          0.218154177069664,
+          0.19885128736495972
+        ],
+        "actual_vertex_frame_max": [
+          0.8030303120613098,
+          0.7818458080291748,
+          0.25234872102737427
+        ]
+      }
+    },
+    {
+      "name": "final-quarter",
+      "PNG_sha256": "497a7f7c2eebf2453a7309363fa5f3f862a9d168c2079296e5410c962c333596",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-quarter",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-quarter.png",
+        "exr": "raw/final-quarter.exr",
+        "png_sha256": "497a7f7c2eebf2453a7309363fa5f3f862a9d168c2079296e5410c962c333596",
+        "camera": [
+          0.07232000678777695,
+          0.052639998495578766,
+          0.1872686892747879
+        ],
+        "target": [
+          -0.010400000028312206,
+          0.0,
+          -0.008251292631030083
+        ],
+        "ortho_scale": 0.12407999485731125,
+        "actual_vertex_frame_min": [
+          0.23579932749271393,
+          0.15096300840377808,
+          0.17904849350452423
+        ],
+        "actual_vertex_frame_max": [
+          0.7850777506828308,
+          0.8756585717201233,
+          0.25742819905281067
+        ]
+      }
+    },
+    {
+      "name": "final-neutral-independent",
+      "PNG_sha256": "e1e2027b61e69902da9e67466a98b1d1312eb052d177647971d3c6669f91048f",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-neutral-independent",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-neutral-independent.png",
+        "exr": "raw/final-neutral-independent.exr",
+        "png_sha256": "e1e2027b61e69902da9e67466a98b1d1312eb052d177647971d3c6669f91048f",
+        "camera": [
+          -0.07056000083684921,
+          -0.07519999891519547,
+          0.20230869948863983
+        ],
+        "target": [
+          -0.010400000028312206,
+          0.0,
+          -0.008251292631030083
+        ],
+        "ortho_scale": 0.12407999485731125,
+        "actual_vertex_frame_min": [
+          0.17274995148181915,
+          0.08747076243162155,
+          0.1989338994026184
+        ],
+        "actual_vertex_frame_max": [
+          0.7846463322639465,
+          0.9287647604942322,
+          0.2629072964191437
+        ],
+        "independent_direction": [
+          -0.8,
+          -1.0,
+          2.8
+        ],
+        "lights_rgb": "Neutral white; same source rig, no material change",
+        "protocol_sha256": "76f39d897538df50b99b4b5811618ac547113d123c6a6d2dfeb9d25b0b98da32"
+      }
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-CARBURETTOR-UPPER-CASTING-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "carburettor-upper-casting-v1-coordination-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/carburettor-upper-casting-v1-coordination-v1/G0-G2-plan-v1.json",
+          "sha256": "ae596ace0f0b9e71bfc7554c09224af35c86e57a821852206d18be0b4c8ac24c",
+          "revision": "carburettor-upper-casting-v1-coordination-v1"
+        }
+      ],
+      "reason": "Observable worker child identified, sources/estimates/gaps linked; not a complete package or art reception",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "carburettor-upper-casting-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "carburettor-upper-casting-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "carburettor-upper-casting-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/carburettor-upper-casting-v1/child-candidate.blend",
+          "kind": "editable_source",
+          "revision": "carburettor-upper-casting-v1-coordination-v1",
+          "sha256": "7bd167d4fd2abd8d125736aaae58f6ee6f62b57bd5909615f31b18a2e3d27561"
+        },
+        {
+          "path": "../../reviews/carburettor-upper-casting-v1-coordination-v1/final-profile.png",
+          "kind": "isolated_comparison",
+          "revision": "carburettor-upper-casting-v1-coordination-v1",
+          "sha256": "f11738314a01341394e27867f19e7ddf9106d8ce603c654ee8f73bb1a9668b04"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "carburettor-upper-casting-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/carburettor-upper-casting-v1-coordination-v1/final-neutral-independent.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "carburettor-upper-casting-v1-coordination-v1",
+          "sha256": "e1e2027b61e69902da9e67466a98b1d1312eb052d177647971d3c6669f91048f"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "carburettor-upper-casting-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/carburettor-upper-casting-v1-coordination-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "carburettor-upper-casting-v1-coordination-v1",
+          "sha256": "ff5f3149f972613c287d5caa7d8e334dfce34848177714e1755840997c135aa4"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "carburettor-upper-casting-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/carburettor-upper-casting-v1-coordination-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "carburettor-upper-casting-v1-coordination-v1",
+          "sha256": "28c48a5a150b924353b7083bc84efcb4d6ba2c77bc755328c0208725c0a209f5"
+        },
+        {
+          "path": "../../reviews/carburettor-upper-casting-v1-coordination-v1/inspection-v5/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "carburettor-upper-casting-v1-coordination-v1",
+          "sha256": "131aef28406229430e64784d157ba95c14cbeddc882192b116e37273891bd6fb"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "carburettor-upper-casting-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "carburettor-upper-casting-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "carburettor-upper-casting-v1-coordination-v1",
+  "export_revision": "carburettor-upper-casting-v1-coordination-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/carburettor-upper-casting-v1/README.md",
+  "candidate_review": "../../reviews/carburettor-upper-casting-v1-coordination-v1/README.md",
+  "production_group": 17,
+  "source_plan": "../../research/carburettor-upper-casting-v1-coordination-v1/G0-G2-plan-v1.json"
+}

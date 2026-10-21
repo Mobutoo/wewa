@@ -411,7 +411,7 @@
         "P08"
       ],
       "state": "active",
-      "detailed_work_started": false,
+      "detailed_work_started": true,
       "scope": "Documenter format et implantation RDC ; inscription de jeu fictive signalée ; éclairage/catadioptre seulement selon référence retenue",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
@@ -419,7 +419,15 @@
       "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
       "current_stage": "documented_or_isolated_candidate_work_not_complete",
       "package_complete": false,
-      "continuation_owner": "body-coordinator"
+      "continuation_owner": "body-coordinator",
+      "continuation_children": [
+        {
+          "component_id": "MOTO-LICENSE-PLATE-WEWA-001",
+          "revision": "license-plate-wewa-v1",
+          "review": "creative/reviews/license-plate-wewa-v1/README.md",
+          "state": "candidate_delivered_not_accepted"
+        }
+      ]
     },
     {
       "id": "P12",
@@ -612,6 +620,12 @@
       "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
       "continuation_work_inventory": [
         {
+          "path": "creative/reviews/centre-stand-main-frame-v1/delivery.json",
+          "revision": "centre-stand-main-frame-v1",
+          "milestone": "Usable isolated child candidate; package remains incomplete",
+          "package_complete": false
+        },
+        {
           "path": "creative/reviews/side-stand-deployment-rod-v1/delivery.json",
           "revision": "side-stand-deployment-rod-v1",
           "milestone": "Usable isolated child candidate; package remains incomplete",
@@ -696,7 +710,16 @@
           "package_complete": false
         }
       ],
-      "current_stage": "documented_or_isolated_candidate_work_not_complete"
+      "current_stage": "worker_candidate_saved_with_coordination_evidence",
+      "candidate_review": "creative/reviews/carburettor-upper-casting-v1-coordination-v1/README.md",
+      "continuation_children": [
+        {
+          "component_id": "MOTO-CARBURETTOR-UPPER-CASTING-001",
+          "revision": "carburettor-upper-casting-v1-coordination-v1",
+          "state": "candidate_rework",
+          "review": "creative/reviews/carburettor-upper-casting-v1-coordination-v1/README.md"
+        }
+      ]
     },
     {
       "id": "P20",
@@ -864,6 +887,12 @@
           "path": "creative/reviews/front-completion-p23-rh-adjuster-front10-v1/delivery.json",
           "revision": "front-completion-p23-rh-adjuster-front10-v1",
           "milestone": "G3 rework",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p23-rh-adjuster-front10-v2/delivery.json",
+          "revision": "front-completion-p23-rh-adjuster-front10-v2",
+          "milestone": "Bounded related isolated exterior, gray and clean material hypothesis reviewed",
           "package_complete": false
         },
         {
@@ -1243,7 +1272,7 @@
     "state": "ongoing_goal_not_final_handoff",
     "packages_complete": 0,
     "packages_started": 30,
-    "packages_with_geometry_or_source_work": 26,
+    "packages_with_geometry_or_source_work": 27,
     "packages_not_started": 0,
     "detailed_workers_authorized": 3,
     "current_package": "Multiple independent children; see current source work inventories",
@@ -1269,7 +1298,7 @@
     "goal": "Execute all30 packages continuously with regular GitHub saves; existing fidelity/receipt rules retained",
     "state": "running",
     "packages_assessed": 30,
-    "packages_with_geometry_or_source_work": 26,
+    "packages_with_geometry_or_source_work": 27,
     "packages_not_assessed": 0,
     "packages_complete": 0,
     "whole_motorcycle_art_accepted": false,

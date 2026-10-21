@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **118 composants candidats enregistrés**, après
+Le registre courant comporte **120 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,8 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P11** : [license-plate-wewa — sources, rendus et contrôles](creative/reviews/license-plate-wewa-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
+- **P19** : [MOTO-CARBURETTOR-UPPER-CASTING-001 — bounded exterior candidate — sources et images](creative/reviews/carburettor-upper-casting-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P12** : [fuel-cap-exterior-envelope-v2 — sources, rendus et contrôles](creative/reviews/fuel-cap-exterior-envelope-v2/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **P21** : [MOTO-REAR-CARRIER-DS151068-STUDY-001 — sources et images](creative/reviews/front-completion-p21-carrier-v3-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P29** : [front-completion-p29-bow-material-v1 — bounded appearance study — sources et images](creative/reviews/front-completion-p29-bow-material-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
