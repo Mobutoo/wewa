@@ -1,0 +1,448 @@
+{
+  "schema": 1,
+  "id": "FRONT-WHEEL-ASSEMBLY-PREPARATION-V1",
+  "created_utc": "2026-10-21T14:11:43.933642+00:00",
+  "scope": "Additive bounded preparation for chain A lot14. Read existing reports, recipes and two real guide images; no new search, mesh, Blender, render, central register or source edits.",
+  "inputs": [
+    {
+      "path": "creative/research/front-axle-v2/README.md",
+      "sha256": "c2b4d6aa92afa05a9d05355163ad8603c4591767672688f1de0524ed17c6fbac",
+      "bytes": 3886
+    },
+    {
+      "path": "creative/research/front-axle-v2/report.json",
+      "sha256": "89b9f27adccfb3738679bae2500489dccb6fa4d02a692304a78d1e171dae89dc",
+      "bytes": 23720
+    },
+    {
+      "path": "creative/research/front-wheel-interface-review-v1/preparation-v1.json",
+      "sha256": "f18314443bc9fca191b255635c9f810e357ce9745dd3e9d554a1741e6e9a0382",
+      "bytes": 6117
+    },
+    {
+      "path": "creative/research/front-wheel-interface-review-v1/neutral-axial-intervals-v1.json",
+      "sha256": "1267cf99e65ed0c89da516adc03f56843eaafa0737cc435207f44e0bce93257a",
+      "bytes": 1611
+    },
+    {
+      "path": "creative/research/front-wheel-interface-review-v1/source-inspection-surface-read-v1.json",
+      "sha256": "daa221b8afd4b8637c6b0dfcada5f60532dc1b66c528985161bc229ef967b327",
+      "bytes": 18037
+    },
+    {
+      "path": "creative/research/front-wheel-interface-review-v1/actual-GLB-ray-comparison-v1.json",
+      "sha256": "fc6a8231617cb17701c883becffd52038fc302708d77df325e0e64134c97e6a9",
+      "bytes": 20687
+    },
+    {
+      "path": "creative/research/front-wheel-interface-review-v1/neutral-guide-report-v1.json",
+      "sha256": "6336a5f8b2a79b952f44248a8ef30874d7df48b82a2a4c3b5e96521efe7cb1a9",
+      "bytes": 9857
+    },
+    {
+      "path": "creative/research/front-wheel-interface-review-v1/neutral-guide-image-reading-v1.json",
+      "sha256": "29c21c7165f8da8a968283dd019a46d10d8b231874e41a921594fc87df087ac7",
+      "bytes": 1409
+    },
+    {
+      "path": "creative/research/chassis-running-18/report.json",
+      "sha256": "2f63e71e9a37db50bab58ffdee9516253115a9b0d11bb4ef21f80102fa4ff074",
+      "bytes": 34918
+    },
+    {
+      "path": "assets-src/moto-components/front-brake-plate/parameters.json",
+      "sha256": "0117dc6e6971f3314b9a6be3b0036478afb8baa6f9674290b95477cb5cd3c35f",
+      "bytes": 1138
+    },
+    {
+      "path": "assets-src/moto-components/front-brake-lever/parameters.json",
+      "sha256": "91f63b73320df3a705de75c23b05026a1a5fda8682ee5f29ca5c027bcf9a7a1b",
+      "bytes": 1683
+    },
+    {
+      "path": "assets-src/moto-components/front-brake-lever/build.py",
+      "sha256": "84840b3fa048167552e874157ad233ed74e05f4a17af446063c0d48468f925ca",
+      "bytes": 12929
+    }
+  ],
+  "unchanged_existing_assets": [
+    {
+      "key": "rim",
+      "source": {
+        "path": "assets-src/moto-components/front-rim/front-rim-v1.blend",
+        "sha256": "77f351d89b29f39dc435b434278bb556cff41a8c509edccd979dc9c8c1173c3a",
+        "bytes": 5743997
+      },
+      "export": {
+        "path": "assets-src/moto-components/front-rim/front-rim-inspection.glb",
+        "sha256": "11d3331c2b5b22e8d9cf70863336933b75d8f5981d6ad0be82b0eaaf88b1dcc6",
+        "bytes": 3972156
+      },
+      "inspected_object": "Front cast rim - inspection export",
+      "scope": "Existing read-only inspection report, not master reinspection; hashes checked again, no Blender opened."
+    },
+    {
+      "key": "panel",
+      "source": {
+        "path": "assets-src/moto-components/front-brake-plate/front-brake-plate-v2.blend",
+        "sha256": "b22bab7f58f4456c74b227610e7f30e51e07793b0420106a9ad9df71e69f71ec",
+        "bytes": 41053494
+      },
+      "export": {
+        "path": "assets-src/moto-components/front-brake-plate/front-brake-plate-v2-inspection.glb",
+        "sha256": "495701dd4ce77ed82d4d27045f1aff7aec1ec47bc87a79163d6ee09b2834aa50",
+        "bytes": 9390904
+      },
+      "inspected_object": "Front brake panel - inspection export",
+      "scope": "Existing read-only inspection report, not master reinspection; hashes checked again, no Blender opened."
+    },
+    {
+      "key": "fork-left",
+      "source": {
+        "path": "assets-src/moto-components/front-fork/outer-left/fork-outer-left-v1.blend",
+        "sha256": "8c310db96ce2b7aacab52e49ea9305ceda833fca5a080754a4a43a3b0901e472",
+        "bytes": 4205074
+      },
+      "export": {
+        "path": "assets-src/moto-components/front-fork/outer-left/fork-outer-left-inspection.glb",
+        "sha256": "fa1a8adafc88f5729be87a3b696554b0ae34f034cb029756be0d16a77f3e95b1",
+        "bytes": 4027676
+      },
+      "inspected_object": "LH fork outer body - relatedPF121018 candidate",
+      "scope": "Existing read-only inspection report, not master reinspection; hashes checked again, no Blender opened."
+    },
+    {
+      "key": "fork-right",
+      "source": {
+        "path": "assets-src/moto-components/front-fork/outer-right/fork-outer-right-v1.blend",
+        "sha256": "5d08454e9da7fbf85df3532a23d0965475559d94cb13e23dfdae9e8056c14ac6",
+        "bytes": 4473577
+      },
+      "export": {
+        "path": "assets-src/moto-components/front-fork/outer-right/fork-outer-right-inspection.glb",
+        "sha256": "b891726afccf8256d4eaee305cff09cbaf7abd9ed71727f1540f4fb961c4b66d",
+        "bytes": 4006888
+      },
+      "inspected_object": "RH fork outer body - relatedPF121019 candidate",
+      "scope": "Existing read-only inspection report, not master reinspection; hashes checked again, no Blender opened."
+    }
+  ],
+  "images_actually_opened": [
+    {
+      "path": "creative/research/front-wheel-interface-review-v1/whole-quarter.png",
+      "sha256": "9e7fa43b579a4ae18e4ff80bccdbc924f8e93e7ee810ed4502a640fef3473d45",
+      "bytes": 963875,
+      "actually_opened": true,
+      "observation": "Actually opened: five-spoke wheel and brake panel between upright isolated fork legs; open axle eyes/centre. No tyre or physical axle/collars. Gives component context, not an installed steering pose.",
+      "source_guide_sha256": "57eff1e961cd4a4f47f20f4a227bb89e75309df20cca1d90a649cd26f05569a4",
+      "art_accepted": false
+    },
+    {
+      "path": "creative/research/front-wheel-interface-review-v1/axial-stack.png",
+      "sha256": "e8f6a361b843166d55ea69be52361b60792e2805ec784e45d95f3db5eb6dd05e",
+      "bytes": 910180,
+      "actually_opened": true,
+      "observation": "Actually opened: deliberate axial crop clearly exposes empty intervals on both sides of hub/panel; panel/reaction projection does not establish contact with the left fork. Empty screen intervals are not a parts drawing or spacer specification.",
+      "source_guide_sha256": "57eff1e961cd4a4f47f20f4a227bb89e75309df20cca1d90a649cd26f05569a4",
+      "art_accepted": false
+    }
+  ],
+  "basis": {
+    "documented_exact_market_nominals": [
+      {
+        "property": "front tyre designation",
+        "value": "2.75-17",
+        "source": "D01 RDC page",
+        "limit": "Does not give actual inflated width, diameter, bead section or manufacturer."
+      },
+      {
+        "property": "nominal bead-seat diameter",
+        "value": 431.8,
+        "unit": "mm",
+        "source": "17 inch designation, 25.4 mm/inch conversion",
+        "limit": "Not rim lip diameter or tyre OD."
+      },
+      {
+        "property": "wheel/tyre type",
+        "value": "alloy wheel and tubeless tyre",
+        "source": "D01 RDC page",
+        "limit": "Does not identify wheel/brake/axle part number."
+      },
+      {
+        "property": "wheelbase",
+        "value": 1285,
+        "unit": "mm",
+        "source": "D01 RDC page",
+        "limit": "No front fork spacing, steering rake, trail or shaft dimension."
+      }
+    ],
+    "source_values_not_exact_RDC": [
+      {
+        "property": "D04 UG front rim nominal",
+        "value": "1.40×17",
+        "source": "D04 sheet43 JZ131011",
+        "limit": "35.56 mm is a related nominal rim width, not actual current rim/tyre contact."
+      },
+      {
+        "property": "pinch nut related to D04 UG lever",
+        "value": "M6×1, height6, class4",
+        "source": "D04 sheet44 item17 LC L00002",
+        "limit": "Only this nut line; head width/flange and current RDC identity not proved."
+      },
+      {
+        "property": "same bolt number in D15 spoke table",
+        "value": "M6×30,39077504",
+        "source": "D15 sheet41 item9",
+        "limit": "Cross-catalogue related datum; do not infer wheel axle thread or apply D15 alloy parts."
+      }
+    ],
+    "existing_geometry_values_are_not_published_dimensions": true
+  },
+  "conditional_variant_plan": {
+    "preferred_reference_family": "D04 BM125UG5gear as an artistic coherence hypothesis, not exact RDC identity. Retain existing JA panel/lever rather than switching families because the rim is alloy.",
+    "parts": {
+      "wheel": "JZ131011 related five-branch depiction",
+      "panel": "JA131605 existing candidate",
+      "cam_lever": "JA131607 existing candidate",
+      "cam": "30151004 related candidate, not the D15 spoke30151011",
+      "axle": "DJ151041 related candidate",
+      "internal_collar": "30151032 related",
+      "outer_collar": "DS151061 related",
+      "speedometer_bush": "JA131606 related"
+    },
+    "alternatives_kept_separate": [
+      {
+        "group": "D04 BM125 standard",
+        "wheel": "DM151320 FiveSpoke",
+        "panel": "DZ151027",
+        "lever": "DD151008",
+        "cam": "31151011",
+        "axle": "DZ151012",
+        "bearing": "KPBB6202",
+        "locators": [
+          "D04sheet43",
+          "D04sheet44"
+        ],
+        "current_RDC_confirmed": false
+      },
+      {
+        "group": "D04 BM125UG5gear",
+        "wheel": "JZ131011 1.40x17Drum; cast5branch illustration",
+        "panel": "JA131605",
+        "lever": "JA131607",
+        "cam": "30151004",
+        "axle": "DJ151041",
+        "bearing": "KPBB6202",
+        "locators": [
+          "D04sheet43",
+          "D04sheet44"
+        ],
+        "current_RDC_confirmed": false
+      },
+      {
+        "group": "D15 BM150 spoke",
+        "wheel": "DS151003 1.6x17 spoke rim",
+        "panel": "JA131605",
+        "lever": "JA131607",
+        "cam": "30151011",
+        "axle": "DJ151081 alternate DJ151041",
+        "bearing": "39268820 12x37x12",
+        "locators": [
+          "D15sheet39",
+          "D15sheet41"
+        ],
+        "current_RDC_confirmed": false
+      },
+      {
+        "group": "D15 BM150 alloy",
+        "wheel": "DS1510806spoke / PF1310125spoke fromMay2012",
+        "panel": "DS151087",
+        "lever": "DS151092",
+        "cam": "DS151089",
+        "axle": "JB131017",
+        "bearing": "39268820",
+        "locators": [
+          "D15sheet40",
+          "D15sheet42"
+        ],
+        "current_RDC_confirmed": false
+      }
+    ],
+    "guard": "No D04 standard DZ151012/DZ151027 or D15 alloy JB131017/DS151087 silently merged into the chosen set. D04 shows JA with cast wheel; D15 JA spoke table does not prove universal JA/alloy incompatibility."
+  },
+  "usable_numeric_interfaces": {
+    "coordinate_frame": "Wheel axle +X, +Y rear, +Z up; old wheel centre(0,0,0.29)m. Isolated fork origin is axle centre, not an installed motorcycle pose.",
+    "actual_sparse_ray_anchor": {
+      "ray_y_m": 0.0075,
+      "wheel_ray_z_m": 0.29,
+      "fork_local_ray_z_m": 0,
+      "rim_x_stations_m": [
+        -0.03598376770703851,
+        0.034963846393180925
+      ],
+      "panel_x_stations_m": [
+        0.03649992101419253,
+        0.04800006537837401
+      ],
+      "fork_local_eye_x_stations_m": [
+        -0.01769999973475933,
+        0.01769999973475933
+      ],
+      "source_export_station_error_m": 0,
+      "scope": "Read actual reported source and GLB intersections on this ray. Rays omit coplanar faces and do not establish all contacts or minimum bore diameter."
+    },
+    "parameter_estimates_not_measured": {
+      "fork_bore_diameter_m": 0.0124,
+      "rim_bore_diameter_m": 0.013,
+      "panel_bore_diameter_m": 0.0134,
+      "fork_centre_spacing_S_m": null,
+      "guide_example_S_m": 0.175,
+      "guide_prior_estimate_range_m": [
+        0.15,
+        0.19
+      ],
+      "wheel_axial_translation_T_m": null,
+      "panel_axial_translation_relative_to_wheel_P_m": null,
+      "panel_clocking_phi_rad": null,
+      "tyre_bead_spacing_working_m": 0.044,
+      "panel_spigot_radial_gap_working_m": 0.0008
+    },
+    "symbolic_axial_model": {
+      "symbols": "S fork centre separation; T wheel translation relative to fork midplane; P panel-only additional translation relative to wheel; a=0.01769999973475933m sampled eye half-thickness. These are working variables, not independent contact dimensions.",
+      "RH_fork_inner_x": "-S/2+a",
+      "LH_fork_inner_x": "S/2-a",
+      "RH_open_interval_length": "(T+r0)-(-S/2+a) = S/2+T-0.05368376744179784",
+      "rim_to_panel_open_interval_length": "(T+P+p0)-(T+r1) = P+0.0015360746210116016",
+      "LH_open_interval_length": "(S/2-a)-(T+P+p1) = S/2-T-P-0.06570006511313334",
+      "RH_LH_outer_face_span": "S+2a; at S175mm this gives210.4mm as a guide span, not axle under-head/overall length.",
+      "prior_S175_T0_P0_intervals_mm": [
+        33.81623255820215,
+        1.5360746210116016,
+        21.799934886866655
+      ],
+      "interpretation": "Do not fill those intervals with simple cylinders by default. Relevant radial footprints, bearing faces/seal lips, speedometer housing, panel clocking, fork stops and preloads differ. Solve which separate surfaces the part is meant to touch before selecting a spacer length.",
+      "no_spacing_solution_claimed": true
+    },
+    "reuse_limits": "The48 ray probes agree source/export, not the entire detailed master surfaces. Existing valve objects are separate in rim GLB; no duplicated valve. The G3 tyre correction/G4 successor currently in production is outside this old guide packet, so its old README material deficit is historical, not an instruction to redo the now ongoing work."
+  },
+  "bounded_sequence": [
+    {
+      "step": 1,
+      "piece_or_action": "Freeze the conditional part family and keep legacy sources immutable",
+      "concrete_result": "One assembly manifest with exact candidate hashes, independent assembly transforms S,T,P,phi; distinguish shape/pose estimates from published values. Tyre added only from its actual current immutable revision."
+    },
+    {
+      "step": 2,
+      "piece_or_action": "Front axle external artistic candidate, separately editable",
+      "concrete_result": "Head/flange/shaft/thread/lead-ins individually referenced or estimated. No final length from S175. No nut/washer/collar fused into shaft."
+    },
+    {
+      "step": 3,
+      "piece_or_action": "Nut and washer, then external collars one at a time",
+      "concrete_result": "Each own observable source and review. Use both end support footprints; preserve separate seal lips and speedometer path. Hidden bearings/internal collar act as separately labelled interface context until visible or required, no fake precision from bearing code."
+    },
+    {
+      "step": 4,
+      "piece_or_action": "Clock panel and establish reaction feature without forced fit",
+      "concrete_result": "Panel shaft axis stays coaxial with wheel; examine ring overlap, shoulders and sparse anchors plus actual surfaces at all useful azimuths. Use phi as a pose parameter. An inferred rectangular fork pocket is not certified as brake stop; unresolved matching contact stays explicit, no deformation/rotation justified only by a BVH pass."
+    },
+    {
+      "step": 5,
+      "piece_or_action": "Speedometer take-off: external bush/retainer/cable interface first",
+      "concrete_result": "Related JA131606 bush, seal/washer/stopper and cable exit stay separate. D04 item12 gear meter screw is not replaced by a cable stuck into a solid face. Internal gear ratio and exact drive engagement remain unknown. Attach actual current lot12 speedometer cable only after exit position/orientation are declared estimates and checked through steering motion."
+    },
+    {
+      "step": 6,
+      "piece_or_action": "Brake cam, existing cam lever and cable termination",
+      "concrete_result": "Move existing isolated lever from its own origin to the actual panel cam-hole frame by rigid transform, not vertex scaling. Check actual cam-hole/lever seat, cable eye, cable sheath stop and reaction. Create pinch hardware only after the lever interface exists. The current lever build subtracts shaft bore, cable eye and slot only; it has NO transverse clamp-bolt drill, so a floating M6 bolt/nut cannot be called installed."
+    },
+    {
+      "step": 7,
+      "piece_or_action": "One bounded assembly comparison after individual pieces",
+      "concrete_result": "Whole wheel and axial close view, visible shaft retention, gaps/contacts and separate materials; source/export same actual buffers and useful steering/wheel/cable poses. No hidden shoes, free-spinning cam or sparse-ray equality described as functional brake certification."
+    }
+  ],
+  "next_observable_piece": {
+    "component": "Front axle, separate estimated artistic candidate, provisionally related to DJ151041 in D04 UG5gear",
+    "why_this_next": "The guide shows open axle eyes and no visible retention. A separately editable axle supplies a concrete external silhouette without deforming the existing wheel/panel/fork to hide the spaces. It is not a generic shaft declared OEM.",
+    "scope": "One shaft/head component first. Nut, washer and outer collars remain separate later units. Under-head length and installed direction remain parameters, not inferred from the guide.",
+    "documented_form_only": [
+      "long cylindrical shaft",
+      "head with circular flange/collar-looking underside",
+      "external thread at other end",
+      "flanged nut shown separately in HAYPO photos"
+    ],
+    "variant_assumption": "D04 BM125UG5gear DJ151041 conditional because the retained JA131605/JA131607 candidates belong to that group. Current RDC identity, exact head profile and dimensions remain unconfirmed.",
+    "first_deliverable": "Before detailed G3, a labelled G0–G2 shape/section sheet from the already archived DJ/DZ/HAYPO photographs: explicitly choose the related source used for head/flange vocabulary and list unresolved head faces. Then one original editable artistic candidate with all part dimensions marked estimates and with G3/G4 source/GLB proof. No new unscaled photo dimension is called a real measurement.",
+    "parameter_contract": {
+      "shaft_diameter_m": null,
+      "shaft_diameter_rule": "New artistic working choice required; verify against actual multi-azimuth sections of each candidate bore. Do not copy M12, KPBB6202 or the 12.4/13/13.4 mm working bore labels as an axle specification. Sparse no-hit axial rays do not prove cylindrical clearance.",
+      "under_head_length_m": null,
+      "under_head_length_rule": "Depends on independently chosen S, wheel/panel transforms, real clamping stations and separate washer/nut allowances. Do not set to 210.4 mm from the guide.",
+      "head_side": null,
+      "head_side_rule": "Installed direction not established by the current guide. A labelled artistic pose is allowed; keep it reversible until documentary/photo comparison.",
+      "head_flange_thread_chamfers": "Appearance and dimensions estimated individually; head/flange silhouette comes only from attributed related photos, no assumed complete fastener standard.",
+      "deferred_real_part_dimensions": [
+        "Overall length and under-head useful length separately",
+        "Shaft diameter at each bearing/collar station",
+        "Head type, across-flats width and height",
+        "Flange/collar diameter and thickness",
+        "Thread major diameter, pitch, handedness and threaded length",
+        "Shoulder/groove geometry and lead-in chamfers",
+        "Confirmed fork/collar/bearing/panel stack and clamping faces",
+        "Exact RDC125HD part revision"
+      ]
+    },
+    "faithful_dimensioned_reproduction_cleared": false,
+    "artistic_candidate_not_OEM_certification": true,
+    "not_authorization_to_mutate_frozen_legacy_parts": true
+  },
+  "brake_numeric_preparation": {
+    "panel_cam_axis_at_phi0": {
+      "y_m": -0.03,
+      "z_m": 0.25,
+      "x_axis_parallel_to_wheel": true,
+      "status": "From current panel estimated parameters: centreZ.29 plus cam offsetZ−.04. Actual aperture surface must be read before shaft sizing."
+    },
+    "isolated_lever_reference_origin_xyz_m": [
+      0,
+      0,
+      0.105
+    ],
+    "estimated_local_cam_and_lever_seat_radius_m": 0.0057,
+    "estimated_lever_shaft_to_eye_m": 0.088,
+    "estimated_lever_eye_radius_m": 0.0045,
+    "spline_count_working": 20,
+    "spline_count_verified": false,
+    "rigid_transform_rule": "For an evaluated point pWorld from the isolated lever scene: pAssembly = camAxisCentreAssembly + Rx(phi)*(pWorld - [0,0,0.105]). For native lever-local coordinates, do not subtract this origin again. Panel pose phi and lever actuation angle remain distinct. X shaft engagement/offset remains a separate estimated placement to verify against actual faces.",
+    "limitation": "These are parameter anchors, not new measurements or proof of compatible splines/cam/actuation. Separate pose and frame must be verified in evaluated exported surfaces.",
+    "lever_serrated_seat_limit": "5.7mm is the estimated cutter outer radius; the 0.3mm estimated spline relief changes the actual minimum profile. A smooth11.4mm shaft is not proven to fit this seat."
+  },
+  "pass_conditions": [
+    "New part visible whole and in useful close view, with attributed related shape references and estimated dimensions explicit.",
+    "No frozen legacy geometry altered to force the artistic stack; transforms and new candidate revisions are additive.",
+    "Actual multi-azimuth surface checks for bores/shoulders/rings before claim of local clearance; sparse axial rays alone insufficient.",
+    "No floating fastener where a matching aperture or support face is absent.",
+    "Spinning wheel, stationary panel/fork, cable sheath anchor and moving cam lever have separate parents/pivots.",
+    "Material and GLB proof after shape, then actual game-engine view; no automatic OEM, art or phone qualification."
+  ],
+  "known_non_goals": [
+    "Exact current RDC part identity",
+    "Dimensioned faithful axle reproduction",
+    "175mm fork spacing as manufactured fact",
+    "Bearing preload, press fits, hydraulic internals or friction performance",
+    "Detailed hidden brake mechanism without evidence or visibility requirement"
+  ],
+  "technical_validation": {
+    "four_source_and_four_export_hashes_still_match_existing_surface_packet": true,
+    "two_guide_PNG_hashes_match_and_actually_opened": true,
+    "new_blender_processes": 0,
+    "new_meshes": 0,
+    "new_renders": 0,
+    "new_external_searches": 0,
+    "global_register_edits": 0,
+    "free_parameter_equations_reproduce_existing_S175_T0_P0_guide_intervals": true
+  },
+  "art_accepted": false,
+  "physical_iphone_tested": false
+}

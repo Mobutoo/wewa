@@ -1,0 +1,666 @@
+{
+  "schema": 1,
+  "time_UTC": "2026-10-21T12:18:38Z",
+  "scope": "Read-only actual evaluated inspection geometry, not full editable masters, no pose/contact/clearance receipt. Source files and export buffers untouched.",
+  "script_sha256": "36f863d94e22528ca0c1be6aeff34f2b80c8252616cc6bb4fb04390117131189",
+  "coordinate_system": "Native Blender world XYZ, unchanged. Wheel centre Z=.29; each isolated fork origin axlecentre Z=0.",
+  "ray_method": "Two-sided Moller-Trumbore on actual triangles, +X from -.20 to +.20m; omit parallel/coplanar triangles, merge shared-edge stations within1micrometre. Sparse rays cannot certify all contacts or wall thickness.",
+  "rows": [
+    {
+      "key": "rim",
+      "source": "assets-src/moto-components/front-rim/front-rim-v1.blend",
+      "source_sha256": "77f351d89b29f39dc435b434278bb556cff41a8c509edccd979dc9c8c1173c3a",
+      "source_bytes": 5743997,
+      "GLB": "assets-src/moto-components/front-rim/front-rim-inspection.glb",
+      "export_sha256": "11d3331c2b5b22e8d9cf70863336933b75d8f5981d6ad0be82b0eaaf88b1dcc6",
+      "export_bytes": 3972156,
+      "source_object": "Front cast rim - inspection export",
+      "object_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_object_modifiers": [],
+      "inspection_vertices": 81494,
+      "inspection_triangles": 163008,
+      "bounds_m": {
+        "min": [
+          -0.036000002175569534,
+          -0.22627316415309906,
+          0.0636759027838707
+        ],
+        "max": [
+          0.03500017151236534,
+          0.22627317905426025,
+          0.5162241458892822
+        ]
+      },
+      "private_original_geometry_cache": "/workspace/wewa-assets/work-in-progress/front-wheel-interface-review-v1/rim-inspection-native.npz",
+      "cache_sha256": "0d53b68ba472e7d530521de1eeeb3a78ba8f6140de112f477f9e60fa7fa8a5b6",
+      "axial_rays": [
+        {
+          "y_m": 0,
+          "z_m": 0.29,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.004,
+          "z_m": 0.29,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.0063,
+          "z_m": 0.29,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.0075,
+          "z_m": 0.29,
+          "x_surface_stations_m": [
+            -0.03598376770703851,
+            0.034963846393180925
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.012,
+          "z_m": 0.29,
+          "x_surface_stations_m": [
+            -0.03599986492309737,
+            0.0349998040834813
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.02,
+          "z_m": 0.29,
+          "x_surface_stations_m": [
+            -0.035989404692208904,
+            0.0349999173904276
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.03,
+          "z_m": 0.29,
+          "x_surface_stations_m": [
+            -0.027909951438894465,
+            -0.02099925725300958
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.05,
+          "z_m": 0.29,
+          "x_surface_stations_m": [
+            -0.02732280977997273,
+            -0.020999880720411063
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.0645,
+          "z_m": 0.29,
+          "x_surface_stations_m": [
+            -0.02568004457177117,
+            -0.015552008897836644,
+            -0.013283278698319384,
+            -0.01037991131042873,
+            0.01037634299656251,
+            0.013289830515959528
+          ],
+          "raw_triangle_hits": 6,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.07,
+          "z_m": 0.29,
+          "x_surface_stations_m": [
+            -0.02198479252051419,
+            0.023992765149186135
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0,
+          "z_m": 0.3,
+          "x_surface_stations_m": [
+            -0.035996990581173144,
+            0.034999466484308045
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0,
+          "z_m": 0.27999999999999997,
+          "x_surface_stations_m": [
+            -0.03599907273005459,
+            0.03500009361452114
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        }
+      ],
+      "source_SHA_unchanged_after_read": true,
+      "source_vs_GLB_surface_comparison_performed": false
+    },
+    {
+      "key": "panel",
+      "source": "assets-src/moto-components/front-brake-plate/front-brake-plate-v2.blend",
+      "source_sha256": "b22bab7f58f4456c74b227610e7f30e51e07793b0420106a9ad9df71e69f71ec",
+      "source_bytes": 41053494,
+      "GLB": "assets-src/moto-components/front-brake-plate/front-brake-plate-v2-inspection.glb",
+      "export_sha256": "495701dd4ce77ed82d4d27045f1aff7aec1ec47bc87a79163d6ee09b2834aa50",
+      "export_bytes": 9390904,
+      "source_object": "Front brake panel - inspection export",
+      "object_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_object_modifiers": [],
+      "inspection_vertices": 134529,
+      "inspection_triangles": 269070,
+      "bounds_m": {
+        "min": [
+          0.01899990253150463,
+          -0.07199731469154358,
+          0.21800273656845093
+        ],
+        "max": [
+          0.052000101655721664,
+          0.0719972550868988,
+          0.3619973063468933
+        ]
+      },
+      "private_original_geometry_cache": "/workspace/wewa-assets/work-in-progress/front-wheel-interface-review-v1/panel-inspection-native.npz",
+      "cache_sha256": "801bc18865faa0a969596e1c19ad01c6b6e08a12aa8118b49844e042929a416a",
+      "axial_rays": [
+        {
+          "y_m": 0,
+          "z_m": 0.29,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.004,
+          "z_m": 0.29,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.0063,
+          "z_m": 0.29,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.0075,
+          "z_m": 0.29,
+          "x_surface_stations_m": [
+            0.03649992101419253,
+            0.04800006537837401
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.012,
+          "z_m": 0.29,
+          "x_surface_stations_m": [
+            0.03649991549652698,
+            0.04800010195210078
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.02,
+          "z_m": 0.29,
+          "x_surface_stations_m": [
+            0.03649991044220799,
+            0.04433344065930145
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.03,
+          "z_m": 0.29,
+          "x_surface_stations_m": [
+            0.03156687813271042,
+            0.04427151279748287
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.05,
+          "z_m": 0.29,
+          "x_surface_stations_m": [
+            0.029593940631893523,
+            0.034015019925345225
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.0645,
+          "z_m": 0.29,
+          "x_surface_stations_m": [
+            0.02792715313436689,
+            0.03700009206371094
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.07,
+          "z_m": 0.29,
+          "x_surface_stations_m": [
+            0.027999925978093892,
+            0.03693408237528134
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0,
+          "z_m": 0.3,
+          "x_surface_stations_m": [
+            0.03649993888344952,
+            0.0499732951492442
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0,
+          "z_m": 0.27999999999999997,
+          "x_surface_stations_m": [
+            0.03649989708122234,
+            0.04800016240993185
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        }
+      ],
+      "source_SHA_unchanged_after_read": true,
+      "source_vs_GLB_surface_comparison_performed": false
+    },
+    {
+      "key": "fork-left",
+      "source": "assets-src/moto-components/front-fork/outer-left/fork-outer-left-v1.blend",
+      "source_sha256": "8c310db96ce2b7aacab52e49ea9305ceda833fca5a080754a4a43a3b0901e472",
+      "source_bytes": 4205074,
+      "GLB": "assets-src/moto-components/front-fork/outer-left/fork-outer-left-inspection.glb",
+      "export_sha256": "fa1a8adafc88f5729be87a3b696554b0ae34f034cb029756be0d16a77f3e95b1",
+      "export_bytes": 4027676,
+      "source_object": "LH fork outer body - relatedPF121018 candidate",
+      "object_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_object_modifiers": [],
+      "inspection_vertices": 54778,
+      "inspection_triangles": 109564,
+      "bounds_m": {
+        "min": [
+          -0.024000000208616257,
+          -0.03400000184774399,
+          -0.017999999225139618
+        ],
+        "max": [
+          0.024000000208616257,
+          0.03400000184774399,
+          0.32499998807907104
+        ]
+      },
+      "private_original_geometry_cache": "/workspace/wewa-assets/work-in-progress/front-wheel-interface-review-v1/fork-left-inspection-native.npz",
+      "cache_sha256": "33c2fdcbf4eeeb68e72c27e6b6231768eddb18ccb92ad4d01a4e16825eac461e",
+      "axial_rays": [
+        {
+          "y_m": 0,
+          "z_m": 0,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.004,
+          "z_m": 0,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.0063,
+          "z_m": 0,
+          "x_surface_stations_m": [
+            -0.01769999973475933,
+            0.01750000007578109
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.0075,
+          "z_m": 0,
+          "x_surface_stations_m": [
+            -0.01769999973475933,
+            0.01769999973475933
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.012,
+          "z_m": 0,
+          "x_surface_stations_m": [
+            -0.01769999973475933,
+            0.01769999973475933
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.02,
+          "z_m": 0,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.03,
+          "z_m": 0,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.05,
+          "z_m": 0,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.0645,
+          "z_m": 0,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.07,
+          "z_m": 0,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0,
+          "z_m": 0.01,
+          "x_surface_stations_m": [
+            -0.01769999973475936,
+            0.017699999734759303
+          ],
+          "raw_triangle_hits": 4,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0,
+          "z_m": -0.01,
+          "x_surface_stations_m": [
+            -0.01769999973475933,
+            0.017699999734759303
+          ],
+          "raw_triangle_hits": 4,
+          "merge_distance_m": 1e-06
+        }
+      ],
+      "source_SHA_unchanged_after_read": true,
+      "source_vs_GLB_surface_comparison_performed": false
+    },
+    {
+      "key": "fork-right",
+      "source": "assets-src/moto-components/front-fork/outer-right/fork-outer-right-v1.blend",
+      "source_sha256": "5d08454e9da7fbf85df3532a23d0965475559d94cb13e23dfdae9e8056c14ac6",
+      "source_bytes": 4473577,
+      "GLB": "assets-src/moto-components/front-fork/outer-right/fork-outer-right-inspection.glb",
+      "export_sha256": "b891726afccf8256d4eaee305cff09cbaf7abd9ed71727f1540f4fb961c4b66d",
+      "export_bytes": 4006888,
+      "source_object": "RH fork outer body - relatedPF121019 candidate",
+      "object_world_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_object_modifiers": [],
+      "inspection_vertices": 54944,
+      "inspection_triangles": 109896,
+      "bounds_m": {
+        "min": [
+          -0.024000000208616257,
+          -0.03400000184774399,
+          -0.017999999225139618
+        ],
+        "max": [
+          0.024000000208616257,
+          0.03400000184774399,
+          0.32499998807907104
+        ]
+      },
+      "private_original_geometry_cache": "/workspace/wewa-assets/work-in-progress/front-wheel-interface-review-v1/fork-right-inspection-native.npz",
+      "cache_sha256": "69f3581a8dca36992286896fa4f831e06100d29b21402c6d7be1d558d6bf6573",
+      "axial_rays": [
+        {
+          "y_m": 0,
+          "z_m": 0,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.004,
+          "z_m": 0,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.0063,
+          "z_m": 0,
+          "x_surface_stations_m": [
+            -0.017500000067941113,
+            0.01769999973475933
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.0075,
+          "z_m": 0,
+          "x_surface_stations_m": [
+            -0.01769999973475933,
+            0.01769999973475933
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.012,
+          "z_m": 0,
+          "x_surface_stations_m": [
+            -0.01769999973475933,
+            0.01769999973475933
+          ],
+          "raw_triangle_hits": 2,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.02,
+          "z_m": 0,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.03,
+          "z_m": 0,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.05,
+          "z_m": 0,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.0645,
+          "z_m": 0,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0.07,
+          "z_m": 0,
+          "x_surface_stations_m": [],
+          "raw_triangle_hits": 0,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0,
+          "z_m": 0.01,
+          "x_surface_stations_m": [
+            -0.01769999973475933,
+            0.017699999734759303
+          ],
+          "raw_triangle_hits": 4,
+          "merge_distance_m": 1e-06
+        },
+        {
+          "y_m": 0,
+          "z_m": -0.01,
+          "x_surface_stations_m": [
+            -0.01769999973475933,
+            0.017699999734759303
+          ],
+          "raw_triangle_hits": 4,
+          "merge_distance_m": 1e-06
+        }
+      ],
+      "source_SHA_unchanged_after_read": true,
+      "source_vs_GLB_surface_comparison_performed": false
+    }
+  ],
+  "new_geometry_saved": false,
+  "source_files_modified": false,
+  "installed_pose_verified": false,
+  "art_accepted": false
+}

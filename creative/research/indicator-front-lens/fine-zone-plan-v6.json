@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "created_before_geometry": true,
+  "component_id": "MOTO-INDICATOR-FRONT-LENS-001",
+  "revision": "indicator-front-lens-study-v6",
+  "baseline_source_sha256": "17dcd3c0a906b7edb18da7aafb8163aeb798f3c964b4c803fb8b61f5bbfd2942",
+  "reference_docs": [
+    "creative/research/front-indicators-current-v1/lens-DU201016/report.json",
+    "creative/research/front-indicators-current-v1/report.json"
+  ],
+  "observation": "Fine repeated peripheral striation appearance is visible in the actual related transparent lens and assembled samples. Neither exact rib count/section nor inner-versus-outer assignment is resolved. Broad optical superposition is not a measured solid.",
+  "bounded_hypothesis": {
+    "normal_displacement_peak_m": 2.5e-05,
+    "original_rib_count": 128,
+    "radial_zero_inner_m": 0.026,
+    "radial_full_inner_m": 0.0272,
+    "radial_full_outer_m": 0.0292,
+    "radial_zero_outer_m": 0.0304,
+    "mouth_exclusion_inner_radius_m": 0.0047,
+    "mouth_exclusion_outer_radius_m": 0.0067,
+    "notch_exclusion_inner_degrees": 10,
+    "notch_exclusion_outer_degrees": 14,
+    "conforming_refinement_passes": 2,
+    "refinement_front_y_limit_m": 1e-06,
+    "refinement_inner_radius_m": 0.0255,
+    "refinement_outer_radius_m": 0.0308,
+    "maximum_selected_edge_angular_length_m": 0.0002,
+    "Jacobian_finite_step_m": 1e-07,
+    "meaning": "Fine radial fluting appearance on a bounded original peripheral sector; count, pitch, height, external/inner assignment are working rendering choices, not counted/measured OEM prisms.",
+    "working_range_not_OEM_tolerance": {
+      "height_m": [
+        1.5e-05,
+        4.5e-05
+      ],
+      "rib_count": [
+        96,
+        192
+      ]
+    }
+  },
+  "construction": "Conforming angular-edge refinement of actual source5 cap, then smooth original shallow peripheral yheightfield with mouth/notch and innerface masks. Float64 differential, no normal map or private pixel texture. Fine angular count is an original rendering proposal, not a certified prism count.",
+  "protect": [
+    "Source5 unchanged",
+    "Top mouth/wall, opposed U/rim boundaries and rear interface",
+    "Broad-zone prior surface apart from explicit superposed shallow periphery relief"
+  ],
+  "inspection": [
+    "Actual GLB area/N/UV/strict checks",
+    "Whole gray and useful side-annulus strip reflection before material",
+    "No requirement to copy unreadable marks; untranscribed markings remain explicitly absent"
+  ],
+  "not_claimed": [
+    "OEM optical prescription, prismatic section or physical focal behavior",
+    "Measured thickness/IOR/absorption/RDC identity",
+    "Seating fit/art reception/mobile optimization"
+  ],
+  "art_accepted": false
+}

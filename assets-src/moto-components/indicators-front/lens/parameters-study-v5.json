@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "revision": "indicator-front-lens-study-v5",
+  "units": "m, estimated design envelope, not manufacturer cotes",
+  "frame": "Isolated lens, Xhorizontal/Zup/front normal-Y; vehicle installation unknown",
+  "face_radius_m": 0.031,
+  "face_sag_m": 0.007,
+  "rim_fillet_radius_m": 0.001,
+  "rear_interface_y_m": 0.009,
+  "angular_segments": 256,
+  "cap_radial_rings": 96,
+  "fillet_rings": 32,
+  "wall_rings": 16,
+  "authored_envelope": {
+    "diameter_m": [
+      0.05,
+      0.075
+    ],
+    "sag_m": [
+      0.003,
+      0.012
+    ],
+    "rim_depth_m": [
+      0.005,
+      0.016
+    ],
+    "meaning": "Design exploration envelope only, not a measured interval or OEM tolerance"
+  },
+  "scope": "Bounded rendering-surface broad zones only, preserving gross cap/mouth/notch; no OEM prism prescription or face assignment",
+  "pocket": {
+    "center_xz_m": [
+      0,
+      0.025
+    ],
+    "mouth_radius_m": 0.0015,
+    "outer_transition_radius_m": 0.0045,
+    "depression_m": 0.0012,
+    "visible_wall_depth_m": 0.0014,
+    "angular_segments": 192,
+    "transition_rings": 24,
+    "wall_rings": 12,
+    "meaning": "One estimated local mouth/depression from visible fastener region, no through/blind/back socket claimed"
+  },
+  "notch": {
+    "theta_center_degrees": -90,
+    "theta_half_span_degrees": 8,
+    "depth_m": 0.0018,
+    "radial_transition_start_m": 0.025,
+    "radial_transition_end_m": 0.03,
+    "local_edge_refinement_passes": 2,
+    "local_refinement_margin_degrees": 4,
+    "Jacobian_finite_step_m": 5e-08,
+    "meaning": "Authored C1 U-shaped radial trim of the opposite boundary, not a measured mold/assembly fit. Cap kept on original analytic sphere locally; finite rim transitions to unchanged rear interface plane.",
+    "working_envelope_not_measured_uncertainty": {
+      "depth_m": [
+        0.001,
+        0.0026
+      ],
+      "angular_half_span_degrees": [
+        6,
+        11
+      ]
+    },
+    "normal_differential_precision": "Pure Python float64 perturbation and field evaluation, then one MatrixFloat32 conversion; source geometry map unchanged"
+  },
+  "broad_zones": {
+    "normal_displacement_peak_m": 0.00012,
+    "ridge_halfwidth_m": 0.0019,
+    "stations_z_m": [
+      -0.02,
+      -0.012,
+      -0.004,
+      0.004,
+      0.012,
+      0.02
+    ],
+    "small_arch_curvature_inverse_m": 1.5,
+    "full_weight_until_radius_m": 0.025,
+    "zero_weight_after_radius_m": 0.0285,
+    "mouth_exclusion_inner_radius_m": 0.0047,
+    "mouth_exclusion_outer_radius_m": 0.0067,
+    "conforming_refinement_passes": 1,
+    "refinement_front_y_limit_m": 1e-06,
+    "Jacobian_finite_step_m": 1e-07,
+    "meaning": "Six shallow smooth original rendering zones, number/height/pitch/curve are working choices, not photo measurements or certified optical profile. Rendered exterior assignment is one explicit hypothesis, pending transmission review.",
+    "working_range_not_OEM_tolerance": {
+      "height_m": [
+        6e-05,
+        0.00018
+      ],
+      "halfwidth_m": [
+        0.0013,
+        0.0025
+      ]
+    }
+  }
+}

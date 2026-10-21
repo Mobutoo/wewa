@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "revision": "headlamp-cowl-shell-study-v4",
+  "stage": "G2 futurefeature hold: native2viewcamera must beexplored before geometry4",
+  "identity": "RelatedPF7401X3, currentRDC identity/mount notcertified",
+  "baseline": "True cut shell3, pending current gray comparison",
+  "private_photo": "/workspace/wewa-assets/references/headlamp/cowl-black-8495.jpg",
+  "native_photo_sha256": "4632b16a5d074f316a412f36e5d85df0a6732833497630adb16aee24b88ce79a",
+  "observation": "Small circular open-edge keyhole with narrow straight throat at central bridge. Its fastening function/screwtype unknown. Do not replace it with a plain roundhole or Vnotch.",
+  "parameters": {
+    "circle_radius_m": {
+      "value": 0.0025,
+      "range": [
+        0.0018,
+        0.0035
+      ],
+      "status": "estimated"
+    },
+    "throat_width_m": {
+      "value": 0.0022,
+      "range": [
+        0.0015,
+        0.0035
+      ],
+      "status": "estimated"
+    },
+    "circle_centre_Y_m": {
+      "value": 0.1415,
+      "range": [
+        0.139,
+        0.1435
+      ],
+      "status": "estimated",
+      "basis": "Working shell midrearY.145, no OEM datum"
+    },
+    "throat_rear_extent_Y_m": 0.16,
+    "cut_extrusion_Z_m": [
+      -0.17,
+      -0.065
+    ]
+  },
+  "construction": "Subtract finite circlecylinder then overlapping rectangularthroat, exact originaltriangleowner norm/UV interpolation. No deformation of remainingbody, no globalafter-CSGbevel. Cut radius/chamfer unmeasured; any additional roundover needs its own visible rationale.",
+  "proof_before_next_feature": [
+    "Actualsource/GLBclosure+positivevolume+zeroarea/UV checks",
+    "Wholeinner view and targeted centralkeyhole macro",
+    "Preserve previousscallops and allsurfaces outside newcut via exactCSGprovenance"
+  ],
+  "still_missing": [
+    "Six observed inside supportpads with holes and their ribs",
+    "Two additional circular holes near rearend wallposts need separate verification",
+    "Inside bridge ribs and any actual edge folds",
+    "Screws/paint/stickers/mountcompatibility"
+  ],
+  "art_accepted": false,
+  "rejected_initial_manual_guide": {
+    "centre_px": [
+      400,
+      55
+    ],
+    "approx_circle_diameter_px": 14,
+    "approx_throat_width_px": 6,
+    "uncertainty_px": 5,
+    "pixel_to_mm_scale_recovered": false,
+    "status": "rejected",
+    "reason": "Native white margin/origin misread, Y55false; actualfeature nearY244. No generationread thisfield."
+  },
+  "native_guide_after_padding_correction": {
+    "centre_px_approx": [
+      394,
+      244
+    ],
+    "approx_circle_diameter_px": 14,
+    "approx_throat_width_px": 5,
+    "status": "coarse_feature_location_only",
+    "uncertainty_px": 5,
+    "pixel_to_mm_scale_recovered": false
+  }
+}

@@ -1,0 +1,879 @@
+{
+  "component_id": "MOTO-REAR-SNS-ROD-001",
+  "revision": "rear-sns-rod-v1",
+  "source_sha256": "946846232d58661345565041e9a94f416460cf1a5edeb7e48dcf1c44f1925c26",
+  "source_check": {
+    "schema": 1,
+    "source_sha256": "946846232d58661345565041e9a94f416460cf1a5edeb7e48dcf1c44f1925c26",
+    "export_sha256": "87d196f4d2c72aed8c83eb16d1b3087c7062286e29933ad77040d2f8da8f7ad4",
+    "builder_sha256": "8daa20f425261ff9a6e22a638b8d7441147b2cd91e48bad9ecf3c27960b11d29",
+    "baseline_source_sha256": "fabc597c3627a4138f2328b1b94c9c3d79c9aa405bb4dbd86c91541dfbe6db00",
+    "baseline_export_sha256": "e8c3ccb0915b2ea6d9b3b9d5f712bea7b7ee5c4424a5ce335fc7dd74f46b8aa8",
+    "object": "SNS reflective axial shaft exterior - estimated",
+    "objects": [
+      "SNS reflective axial shaft exterior - estimated"
+    ],
+    "root": "REAR_SNS_ROD_UNPLACED_DATUM",
+    "collection": "WEWA_REAR_SNS_ROD",
+    "original_material_parameters": {
+      "BaseColor_linear_RGB": [
+        0.55,
+        0.55,
+        0.55
+      ],
+      "metallic": 1,
+      "roughness": 0.13,
+      "IOR": 1.5,
+      "coat_weight": 0,
+      "coat_roughness": 0.15
+    },
+    "images": [],
+    "external_libraries": [],
+    "external_images": [],
+    "installation_transform": null,
+    "full_SNS_completed": false,
+    "art_accepted": false
+  },
+  "export_check": {
+    "asset": "rear-sns-rod",
+    "revision": "rear-sns-rod-v1",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/rear-sns/rod/rear-sns-rod-v1.glb",
+        "sha256": "87d196f4d2c72aed8c83eb16d1b3087c7062286e29933ad77040d2f8da8f7ad4",
+        "bytes": 55240,
+        "glTF_errors": 0,
+        "glTF_warnings": 0,
+        "messages": [
+          {
+            "code": "UNUSED_OBJECT",
+            "message": "This object may be unused.",
+            "severity": 2,
+            "pointer": "/meshes/0/primitives/0/attributes/TEXCOORD_0"
+          }
+        ],
+        "bounds": {
+          "min": [
+            -0.005499999970197678,
+            0.0020000000949949026,
+            -0.005499999970197678
+          ],
+          "max": [
+            0.005499999970197678,
+            0.18700000643730164,
+            0.005499999970197678
+          ]
+        },
+        "vertices": 1285,
+        "triangles": 2048,
+        "triangle_area_local_m2": {
+          "minimum": 3.1215680284604564e-06,
+          "exactly_zero": 0,
+          "below_1e_minus18": 0,
+          "note": "Local exported coordinates; not a self-intersection or surface-fidelity proof"
+        },
+        "tangent_frame": {
+          "vectors": 0,
+          "max_unit_error": 0,
+          "max_normal_dot": 0,
+          "handedness_sign_is_unit": true,
+          "note": "Finite orthonormal frame only; not full MikkTSpace or renderer visual parity"
+        },
+        "node_names": [
+          "SNS reflective axial shaft exterior - estimated",
+          "REAR_SNS_ROD_UNPLACED_DATUM"
+        ],
+        "materials": [
+          {
+            "name": "Original reflective SNS shaft proposal",
+            "basecolor": [
+              0.550000011920929,
+              0.550000011920929,
+              0.550000011920929,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 0.12999999523162842,
+            "extensions": [
+              "KHR_materials_clearcoat"
+            ]
+          }
+        ]
+      }
+    ],
+    "scope": "Actual glTF buffers and format only; not shape reception, physical interface or mobile qualification",
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "browser_check": {
+    "camera": {
+      "position": [
+        1.787350577982186e-17,
+        0.2737832466608331,
+        -0.2918965009709916
+      ],
+      "target": [
+        0,
+        0.09450000326614827,
+        0
+      ],
+      "radius": 0.3425580952790722,
+      "fov": 0.72,
+      "fovMode": 0
+    },
+    "framing": {
+      "min": [
+        0.48833695019518003,
+        0.1368365223001023
+      ],
+      "max": [
+        0.5116631057829035,
+        0.780947899080686
+      ],
+      "scope": "Conservative projected actual mesh bounding boxes; whole-piece framing only"
+    },
+    "asset": "rear-sns-rod",
+    "revision": "rear-sns-rod-v1",
+    "config": {
+      "label": "SNS arrière — extérieur de tige, métal proposé",
+      "lot": 16,
+      "review": "rear-sns-rod-v1",
+      "source": "rear-sns/rod/rear-sns-rod-v1.blend",
+      "readme": "README_v1.md",
+      "collection": "WEWA_REAR_SNS_ROD",
+      "component_id": "MOTO-REAR-SNS-ROD-001",
+      "files": [
+        "rear-sns/rod/rear-sns-rod-v1.glb"
+      ],
+      "rigs": [],
+      "source_frame": "isolated_local",
+      "details": "Seule surface de tige visible entre les spires, dimensions et métal réfléchissant originaux estimés. Deux coupes d’interface cachées n’indiquent pas une vraie tige creuse. Pas de piston, joint, filetage, empreinte de montage ou hydraulique inférés. Géométrie et matrices exactes depuis le gris ; chrome/alliage/finition physiques non mesurés.",
+      "variant": "Related PF122033 photo; exact currentRDC identity/scale unconfirmed"
+    },
+    "files": [
+      "rear-sns/rod/rear-sns-rod-v1.glb"
+    ],
+    "meshes": 1,
+    "vertices": 1285,
+    "triangles": 2048,
+    "bounds": {
+      "min": [
+        -0.005499999970197678,
+        0.0020000000949949026,
+        -0.005499999970197678
+      ],
+      "max": [
+        0.005499999970197678,
+        0.18700000643730164,
+        0.005499999970197678
+      ]
+    },
+    "textures_ready": true,
+    "renderer": {
+      "vendor": "Google Inc. (Google)",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "rig_states": {},
+    "attachments": [],
+    "rigs": [],
+    "art_accepted": false,
+    "physical_iphone_tested": false,
+    "public_game_unchanged": true,
+    "pixel_checks": [
+      {
+        "view": "quarter",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 22770,
+        "changed_fraction": 0.019765625,
+        "rgb_min": [
+          23,
+          27,
+          31
+        ],
+        "rgb_max": [
+          143,
+          143,
+          141
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "driver",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 22965,
+        "changed_fraction": 0.019934895833333334,
+        "rgb_min": [
+          22,
+          26,
+          30
+        ],
+        "rgb_max": [
+          148,
+          147,
+          143
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "reverse",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 24641,
+        "changed_fraction": 0.021389756944444446,
+        "rgb_min": [
+          21,
+          24,
+          28
+        ],
+        "rgb_max": [
+          166,
+          156,
+          148
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "landscape-844x390",
+        "width": 844,
+        "height": 390,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 4430,
+        "changed_fraction": 0.01345850042532507,
+        "rgb_min": [
+          24,
+          28,
+          32
+        ],
+        "rgb_max": [
+          143,
+          139,
+          134
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      }
+    ],
+    "page_errors": [],
+    "http_failures": [],
+    "pose_checks": [],
+    "scope": "Actual Babylon imports and vertex motion in Chromium softwareWebGL; not Safari/iPhone/FPS qualification",
+    "render_mode": "Manual frames after scene readiness",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/rear-sns/rod/rear-sns-rod-v1.glb",
+        "sha256": "87d196f4d2c72aed8c83eb16d1b3087c7062286e29933ad77040d2f8da8f7ad4"
+      }
+    ],
+    "inspector_sha256": "19e4908f4a7b69b492710adfb7d28a5508745721f9c991941a5ed439f3a9fb07",
+    "capture_tool_sha256": "53b07b0e9bda4b86c9d7f05c10815755b3be50dcc85e29a4b3f164cbc38fcf28",
+    "inspector_path": "tools/motorcycle-lab/review-v2.js",
+    "capture_tool_path": "tools/capture_motorcycle18_v3.py",
+    "inputs_unchanged_during_capture": true
+  },
+  "render_report": {
+    "schema": 1,
+    "revision": "rear-sns-rod-v1",
+    "source_sha256": "946846232d58661345565041e9a94f416460cf1a5edeb7e48dcf1c44f1925c26",
+    "export_sha256": "87d196f4d2c72aed8c83eb16d1b3087c7062286e29933ad77040d2f8da8f7ad4",
+    "renderer": "Blender4.3.2 Cycles96/OpenImageDenoise CPU",
+    "samples": 96,
+    "resolution_by_view": {
+      "whole-rod-pbr": [
+        1000,
+        800
+      ],
+      "covered-tip-pbr": [
+        1000,
+        800
+      ],
+      "neutral-outdoor": [
+        1000,
+        800
+      ]
+    },
+    "source_and_export_unchanged": true,
+    "views": [
+      {
+        "name": "whole-rod-pbr",
+        "camera": {
+          "location_m": [
+            0.2800000011920929,
+            -0.4399999976158142,
+            0.2199999988079071
+          ],
+          "target_m": [
+            0.0,
+            0.0,
+            0.0949999988079071
+          ],
+          "actual_matrix": [
+            [
+              0.8436614871025085,
+              -0.12513239681720734,
+              0.5220892429351807,
+              0.2800000011920929
+            ],
+            [
+              0.5368754863739014,
+              0.19663678109645844,
+              -0.8204259276390076,
+              -0.4399999976158142
+            ],
+            [
+              -8.513650584518473e-08,
+              0.9724586606025696,
+              0.23307539522647858,
+              0.2199999988079071
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens_mm": 70,
+          "sensor_width_mm": 36,
+          "sensor_fit": "HORIZONTAL",
+          "near_far_m": [
+            0.001,
+            20
+          ],
+          "intentional_crop": false
+        },
+        "resolution_px": [
+          1000,
+          800
+        ],
+        "PNG_path": "creative/reviews/rear-sns-rod-v1/whole-rod-pbr.png",
+        "PNG_sha256": "cbd8893e16d98f9983cb09649947c9716791bd6c7a696f5b572dc5a7bad6e839",
+        "EXR_private_path": "/workspace/wewa-assets/renders/rear-sns/rod-v1/whole-rod-pbr.exr",
+        "EXR_sha256": "1ffe07a43884f15ebb192f9a6168149a4386b39b77b57ef7c4c40ecc12720e9c",
+        "EXR_actual_channels": [
+          "ViewLayer.Combined.A",
+          "ViewLayer.Combined.B",
+          "ViewLayer.Combined.G",
+          "ViewLayer.Combined.R",
+          "ViewLayer.Denoising Albedo.B",
+          "ViewLayer.Denoising Albedo.G",
+          "ViewLayer.Denoising Albedo.R",
+          "ViewLayer.Denoising Depth.Z",
+          "ViewLayer.Denoising Normal.X",
+          "ViewLayer.Denoising Normal.Y",
+          "ViewLayer.Denoising Normal.Z",
+          "ViewLayer.Noisy Image.A",
+          "ViewLayer.Noisy Image.B",
+          "ViewLayer.Noisy Image.G",
+          "ViewLayer.Noisy Image.R"
+        ],
+        "EXR_channel_types": [
+          {
+            "name": "ViewLayer.Combined.A",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Combined.B",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Combined.G",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Combined.R",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Albedo.B",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Albedo.G",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Albedo.R",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Depth.Z",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Normal.X",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Normal.Y",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Normal.Z",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Noisy Image.A",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Noisy Image.B",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Noisy Image.G",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Noisy Image.R",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          }
+        ],
+        "config_sha256": "90a675f4aa572937b151d31de7ffed99308a8bd9adfed5ded43e2717b1b8b327",
+        "paired_preview_sha256": "903dca6a4dec613d38af8077c7bb61dba037a29c99b1cd4923a3f5fb50e5da81",
+        "lighting": {
+          "preset": "Source studio unchanged",
+          "view_transform": "AgX",
+          "look": "AgX - Medium High Contrast",
+          "exposure_EV": 0,
+          "gamma": 1
+        },
+        "actually_saved": true,
+        "actually_read": true,
+        "observations": "Whole reflective shaft read, with deliberate covered-interface cuts; no hydraulic inside or true hollow shaft inferred."
+      },
+      {
+        "name": "covered-tip-pbr",
+        "camera": {
+          "location_m": [
+            0.05000000074505806,
+            -0.06499999761581421,
+            0.1899999976158142
+          ],
+          "target_m": [
+            0.0,
+            0.0,
+            0.1809999942779541
+          ],
+          "actual_matrix": [
+            [
+              0.7926239371299744,
+              -0.06651507318019867,
+              0.6060718297958374,
+              0.05000000074505806
+            ],
+            [
+              0.6097108721733093,
+              0.08646953850984573,
+              -0.7878931760787964,
+              -0.06499999761581421
+            ],
+            [
+              2.3295356754715613e-08,
+              0.994031548500061,
+              0.10909278690814972,
+              0.1899999976158142
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens_mm": 140,
+          "sensor_width_mm": 36,
+          "sensor_fit": "HORIZONTAL",
+          "near_far_m": [
+            0.001,
+            20
+          ],
+          "intentional_crop": true
+        },
+        "resolution_px": [
+          1000,
+          800
+        ],
+        "PNG_path": "creative/reviews/rear-sns-rod-v1/covered-tip-pbr.png",
+        "PNG_sha256": "a1b21e43c37cec36dda81231cb7e005499973ef6d5575dc0bfcaac4fa1f0d7de",
+        "EXR_private_path": "/workspace/wewa-assets/renders/rear-sns/rod-v1/covered-tip-pbr.exr",
+        "EXR_sha256": "113d796e19d4334dd95f93a7bf667f9db9a2ea63670c60251fc390a63e8105ee",
+        "EXR_actual_channels": [
+          "ViewLayer.Combined.A",
+          "ViewLayer.Combined.B",
+          "ViewLayer.Combined.G",
+          "ViewLayer.Combined.R",
+          "ViewLayer.Denoising Albedo.B",
+          "ViewLayer.Denoising Albedo.G",
+          "ViewLayer.Denoising Albedo.R",
+          "ViewLayer.Denoising Depth.Z",
+          "ViewLayer.Denoising Normal.X",
+          "ViewLayer.Denoising Normal.Y",
+          "ViewLayer.Denoising Normal.Z",
+          "ViewLayer.Noisy Image.A",
+          "ViewLayer.Noisy Image.B",
+          "ViewLayer.Noisy Image.G",
+          "ViewLayer.Noisy Image.R"
+        ],
+        "EXR_channel_types": [
+          {
+            "name": "ViewLayer.Combined.A",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Combined.B",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Combined.G",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Combined.R",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Albedo.B",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Albedo.G",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Albedo.R",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Depth.Z",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Normal.X",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Normal.Y",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Normal.Z",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Noisy Image.A",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Noisy Image.B",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Noisy Image.G",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Noisy Image.R",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          }
+        ],
+        "config_sha256": "b9bf994e9c211356505e0397ef72630e7d6e57afea7d6f011519fc8ceed6c748",
+        "paired_preview_sha256": "1533a1d109d5088f99f1f6847276589d078b50f19d9aadd6b49821527a59db46",
+        "lighting": {
+          "preset": "Source studio unchanged",
+          "view_transform": "AgX",
+          "look": "AgX - Medium High Contrast",
+          "exposure_EV": 0,
+          "gamma": 1
+        },
+        "actually_saved": true,
+        "actually_read": true,
+        "observations": "Intentional covered-interface macro read: smooth cylinder with broad studio reflections and open cut boundary. No seal or hidden hardware inferred."
+      },
+      {
+        "name": "neutral-outdoor",
+        "camera": {
+          "location_m": [
+            0.28,
+            -0.44,
+            0.22
+          ],
+          "target_m": [
+            0,
+            0,
+            0.095
+          ],
+          "actual_matrix": [
+            [
+              0.8436614871025085,
+              -0.12513239681720734,
+              0.5220892429351807,
+              0.2800000011920929
+            ],
+            [
+              0.5368754863739014,
+              0.19663678109645844,
+              -0.8204259276390076,
+              -0.4399999976158142
+            ],
+            [
+              -8.513650584518473e-08,
+              0.9724586606025696,
+              0.23307539522647858,
+              0.2199999988079071
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "lens_mm": 70,
+          "sensor_width_mm": 36,
+          "sensor_fit": "HORIZONTAL; actual projection preflight preserved",
+          "near_far_m": [
+            0.0010000000474974513,
+            100.0
+          ],
+          "intentional_crop": false
+        },
+        "resolution_px": [
+          1000,
+          800
+        ],
+        "PNG_path": "creative/reviews/rear-sns-rod-v1/neutral-outdoor.png",
+        "PNG_sha256": "8769e93137c0feb58b531baf331d1bbe48edb4f7262c77e9e3744450bb90e86b",
+        "EXR_private_path": "/workspace/wewa-assets/renders/rear-sns/rod-v1/neutral-outdoor.exr",
+        "EXR_sha256": "dc7f746ea78701bc2c75092f1f5f1d95138a4f70244a6ea7c6c2a03267aa8d61",
+        "EXR_actual_channels": [
+          "ViewLayer.Combined.A",
+          "ViewLayer.Combined.B",
+          "ViewLayer.Combined.G",
+          "ViewLayer.Combined.R",
+          "ViewLayer.Denoising Albedo.B",
+          "ViewLayer.Denoising Albedo.G",
+          "ViewLayer.Denoising Albedo.R",
+          "ViewLayer.Denoising Depth.Z",
+          "ViewLayer.Denoising Normal.X",
+          "ViewLayer.Denoising Normal.Y",
+          "ViewLayer.Denoising Normal.Z",
+          "ViewLayer.DiffCol.B",
+          "ViewLayer.DiffCol.G",
+          "ViewLayer.DiffCol.R",
+          "ViewLayer.Noisy Image.A",
+          "ViewLayer.Noisy Image.B",
+          "ViewLayer.Noisy Image.G",
+          "ViewLayer.Noisy Image.R",
+          "ViewLayer.Normal.X",
+          "ViewLayer.Normal.Y",
+          "ViewLayer.Normal.Z"
+        ],
+        "EXR_channel_types": [
+          {
+            "name": "ViewLayer.Combined.A",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Combined.B",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Combined.G",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Combined.R",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Albedo.B",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Albedo.G",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Albedo.R",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Depth.Z",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Normal.X",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Normal.Y",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Denoising Normal.Z",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.DiffCol.B",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.DiffCol.G",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.DiffCol.R",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Noisy Image.A",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Noisy Image.B",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Noisy Image.G",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Noisy Image.R",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Normal.X",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Normal.Y",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          },
+          {
+            "name": "ViewLayer.Normal.Z",
+            "pixel_type": 2,
+            "meaning": "FLOAT32"
+          }
+        ],
+        "config_sha256": "e04a84532ccd135891a6d09ac37c80fbb0ed0493bd2d968e0e203458778409b7",
+        "paired_preview_sha256": "5b02aca60a1df5cefddcbf8bce31a086f98f979a6adc9f4335a5decfab661963",
+        "lighting": {
+          "preset": "Neutral HDR only; warm sun hidden",
+          "color_management": {
+            "view_transform": "AgX",
+            "look": "AgX - Medium High Contrast",
+            "gamma": 1,
+            "exposure_EV": 1.505257715699027
+          },
+          "exposure_reference_reused": {
+            "method": "Neutral HDR illuminating a real pure-diffuse18% camera-facing card at target, asset hidden for reference pass; mean of256 center linearEXR pixels",
+            "actual_Blender_render": true,
+            "linear_mean_RGB": [
+              0.06146248291770462,
+              0.06351881097361911,
+              0.06804056221153587
+            ],
+            "linear_mean_luminance": 0.06340810606830928,
+            "target_linear_luminance": 0.18,
+            "exposure_EV": 1.505257715699027,
+            "reference_samples": 32,
+            "reference_resolution_px": [
+              128,
+              128
+            ],
+            "raw_private_path": "/workspace/wewa-assets/render-raw/material-lighting-review/rear-sns-rod-v1-neutral-lighting-graycard.exr",
+            "raw_sha256": "5e7604dd3dca35ded689e1fc050cb8fb8e78d388afcd62c4f4537f4c302e40fe",
+            "raw_public": false,
+            "white_balance_changed": false,
+            "asset_materials_changed": false,
+            "HDR_radiometrically_calibrated": false,
+            "reference_card_removed_from_final_views": true,
+            "reference_PNG": "creative/reviews/rear-sns-rod-v1-neutral-lighting/exposure-reference.png",
+            "reference_PNG_sha256": "a3b6a72143773ac0778daaa2959fb4d4aeb2499d2fbfa112ebc6a4a277992ea9",
+            "camera_backdrop_strength_compensation": 0.3522672559350516
+          },
+          "radiometrically_calibrated": false
+        },
+        "actually_saved": true,
+        "actually_read": true,
+        "observations": "Whole reflective shaft read, with deliberate covered-interface cuts; no hydraulic inside or true hollow shaft inferred."
+      }
+    ],
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true
+}

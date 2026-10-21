@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "created_before_geometry": true,
+  "component_id": "MOTO-INDICATOR-FRONT-LENS-001",
+  "revision": "indicator-front-lens-study-v5",
+  "baseline_source": "assets-src/moto-components/indicators-front/lens/indicator-front-lens-study-v4.blend",
+  "baseline_sha256": "ba3aa301c7e2a3be49188c6498d9db8bb3fcfbd5c5f4315bf888eb997d2c1c9d",
+  "references": [
+    {
+      "path": "/workspace/wewa-assets/references/front-indicators-current-v1/lens-DU201016/DU201016-173223.jpg",
+      "sha256": "fab85df0a4b29afa930d9d412a35fe2c3cf3e843bc8024cd2aa852106164e65a",
+      "status": "documented_related_variant",
+      "actual_opened": true,
+      "observation": "Transparent convex lens with repeated broad line/zone structure; transparency superposes front/back, so physical surface assignment/profile/count not resolved."
+    },
+    {
+      "path": "/workspace/wewa-assets/references/front-indicators-current-v1/PF401002-173209.jpg",
+      "sha256": "ce4fe392d463a7eb254538d2fade9e0f96201e393d607695084facde1fc75291",
+      "status": "documented_related_variant",
+      "actual_opened": true,
+      "observation": "Multiple roughly transverse broad optical zones, peripheral fine texture and opposed top screw/bottom U in a different related assembled sample. Not calibrated same-unit multiview."
+    }
+  ],
+  "bounded_hypothesis": {
+    "normal_displacement_peak_m": 0.00012,
+    "ridge_halfwidth_m": 0.0019,
+    "stations_z_m": [
+      -0.02,
+      -0.012,
+      -0.004,
+      0.004,
+      0.012,
+      0.02
+    ],
+    "small_arch_curvature_inverse_m": 1.5,
+    "full_weight_until_radius_m": 0.025,
+    "zero_weight_after_radius_m": 0.0285,
+    "mouth_exclusion_inner_radius_m": 0.0047,
+    "mouth_exclusion_outer_radius_m": 0.0067,
+    "conforming_refinement_passes": 1,
+    "refinement_front_y_limit_m": 1e-06,
+    "Jacobian_finite_step_m": 1e-07,
+    "meaning": "Six shallow smooth original rendering zones, number/height/pitch/curve are working choices, not photo measurements or certified optical profile. Rendered exterior assignment is one explicit hypothesis, pending transmission review.",
+    "working_range_not_OEM_tolerance": {
+      "height_m": [
+        6e-05,
+        0.00018
+      ],
+      "halfwidth_m": [
+        0.0013,
+        0.0025
+      ]
+    }
+  },
+  "scope": "Fabricate visible broad-zone appearance with a shallow original smooth exterior height field; this is a labeled rendering hypothesis, not external/internal assignment proven or optical engineering. Preserve cap gross curvature, mouth/notch/rim and all historical sources. One conforming cap refinement for real shallow geometric relief; no normal-map/phototexture shortcut.",
+  "protected": [
+    "Top mouth and wall",
+    "Opposed U notch and rim",
+    "Side/rear interfaces",
+    "Source4 immutable"
+  ],
+  "inspection": [
+    "Actual GLB finite positions/normals/UV and nonzero triangle areas with unchanged checks",
+    "Whole gray plus useful band macro/reflection read before material",
+    "Broad zones are not the later fine perimeter features"
+  ],
+  "still_unmade": [
+    "Fine peripheral zones",
+    "Molded text/marks untranscribed, no fake approval glyphs",
+    "Amber/transmission",
+    "Black head housing/right stalk/fasteners and wholeindicator review"
+  ],
+  "not_certified": [
+    "Any physical cotes",
+    "RDC exact identity",
+    "Optical focal/prism prescription",
+    "Fit or artistic acceptance"
+  ],
+  "art_accepted": false
+}

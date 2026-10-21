@@ -1,0 +1,1 @@
+Exact author inputs for rejected diagnostic4084268f/286c990d. Replay by restoring these six files into the parent v3 directory (in a separate checkout), then running Blender build.py -- --diagnostic-save-after=4. Nested directory is an archive, not an alternate execution location. Do not overwrite this diagnostic or historical v1/v2.

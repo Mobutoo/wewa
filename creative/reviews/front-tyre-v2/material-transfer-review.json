@@ -1,0 +1,87 @@
+{
+  "component_id": "MOTO-TYRE-FRONT-001",
+  "revision": "front-tyre-v2",
+  "source_sha256": "2636df84c85adda9cd5beecceae332e0b317fff9f2763c832a733ae073342ba9",
+  "export_sha256": "f8f9adde8e30ee095a493821c8af5640c4c22350d0bb34334fac204b78d02c07",
+  "read_at": "2026-10-21T12:46:02.105302+00:00",
+  "comparison_images_actually_read": [
+    "native-tread-detail",
+    "atlas-tread-detail",
+    "native-sidewall-detail",
+    "atlas-sidewall-detail",
+    "atlas-whole-quarter"
+  ],
+  "views": [
+    {
+      "name": "native-tread-detail",
+      "path": "creative/reviews/front-tyre-v2/compare-native-tread-detail.png",
+      "sha256": "024c2a57b234d34a5b8aa726c7b1c445064c828b8d9c4e078fe9ab76cc904717",
+      "actually_opened_native": true,
+      "samples": 24,
+      "resolution_px": [
+        1400,
+        1100
+      ]
+    },
+    {
+      "name": "atlas-tread-detail",
+      "path": "creative/reviews/front-tyre-v2/compare-atlas-tread-detail.png",
+      "sha256": "69aedcc7cf7d02944026cdb34c429074a8990e52e0086f269a6783c7ee760ba1",
+      "actually_opened_native": true,
+      "samples": 24,
+      "resolution_px": [
+        1400,
+        1100
+      ]
+    },
+    {
+      "name": "native-sidewall-detail",
+      "path": "creative/reviews/front-tyre-v2/compare-native-sidewall-detail.png",
+      "sha256": "0ddce172e4976e6dc8e245b63b8b12e344673418c3218d580bfac5464dfc43ee",
+      "actually_opened_native": true,
+      "samples": 24,
+      "resolution_px": [
+        1400,
+        1100
+      ]
+    },
+    {
+      "name": "atlas-sidewall-detail",
+      "path": "creative/reviews/front-tyre-v2/compare-atlas-sidewall-detail.png",
+      "sha256": "c903e06f598b10188f75093a272f14ce8c3f96cbb95c4446c98c6e7f6bdc8cf7",
+      "actually_opened_native": true,
+      "samples": 24,
+      "resolution_px": [
+        1400,
+        1100
+      ]
+    },
+    {
+      "name": "atlas-whole-quarter",
+      "path": "creative/reviews/front-tyre-v2/compare-atlas-whole-quarter.png",
+      "sha256": "372b585d13448dbe1d0522e535dc69f6ec9f2118134a1de88d0d386d7667265d",
+      "actually_opened_native": true,
+      "samples": 24,
+      "resolution_px": [
+        1400,
+        1100
+      ]
+    }
+  ],
+  "initial_macro_worker_exit_code": 1,
+  "initial_worker_failure": "First four macro checkpoints saved and valid; original whole camera ortho.72 failed preflight before producing any wholePNG. No cropped image accepted.",
+  "corrected_whole_worker_exit_code": 0,
+  "corrected_whole_camera_ortho_scale_m": 0.77,
+  "study_completed_with_verified_checkpoints": true,
+  "findings": [
+    "Both actual procedural and atlas tread macros show inherited steps/facets at groove junctions. They are visible geometry debt, not a normalmap-only or reflectedlight explanation. Geometryv1 was deliberately unchanged in this transfer study.",
+    "Atlas retains working grain but smooths the finest native3Dnoise. Sidewall paired macros also show finiteatlas filtering/stretch at this close view. No exactcontinuousshader parity or measured compound claim.",
+    "Sameinspection paired cameras/light/exposure and exact old/new POSITION/N/UV0/indices/matrix establish a material study; they do not receive tread/mould/shape or fit. New tangent is explicitly new, image bytes and ORMdata verified.",
+    "Corrected wholeview is fully within preflight margin. No final96was launched; v2 remains a transfer study and a distinctv3 must correct the visible junction geometry, then rebake if surface changes."
+  ],
+  "geometry_rework_required": true,
+  "ready_for_final_candidate_views": false,
+  "production_candidate_ready": false,
+  "final96_run": false,
+  "art_accepted": false
+}

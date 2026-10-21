@@ -1,0 +1,11 @@
+# Coque rouge du garde-boue avant — candidate isolée
+
+La forme vise les vues officielles RDC125HD, rouge/longue visière : courbures longitudinale et transversale distinctes, nez arrondi, descente arrière et bord fini. La bavette noire et les fixations sont des unités séparées non fabriquées ici. Le dessous et l’interface de fourche restent inconnus ; aucun assemblage certifié.
+
+Paramètres estimés : rayon de couronne342mm [315–375], largeur120mm [105–140], chute transversale47mm [35–60], épaisseur1.2mm [.8–2.0], angles centraux avant−33° [−42..−25] / arrière86° [76–96]. L’échelle déduite conditionnellement du profil et de l’empattement publié1285mm ne remplace pas une mesure physique. Le bord arrondi à demi-épaisseur n’est pas présenté comme un ourlet industriel relevé.
+
+[Modèle officielRDC](https://www.bajajauto.com/fr-cd/bikes/boxer-125hd), [profilR00](https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/00.png), [faceR02](https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/02.png), [trois-quartsR03](https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/03.png). Photos documentaires privées, aucun pixel repris comme texture. Les références52PF0065 etDF161242 des anciens catalogues ne certifient pas le code de cette coque.
+
+La recherche indépendante [des nouvelles photos](../../../creative/research/front-fender-15/README.md) distingue52PF2877/PF7201X3/PF72012D : reliefs latéraux et2ou3perçages visibles, sans identité de mouleRDC établie. Cette première enveloppe ne les reproduit pas ; la coque entière ne sera pas déclarée finie/fidèle tant que cette région n’est pas résolue. Aucun trou voisin transféré comme faitRDC.
+
+État : **étude G3 incomplète**, pas un garde-boue terminé. Les vrais buffers exportés sont fermés (102 912tri), mais cette validité ne reçoit ni la silhouette ni l’interface. L’étude conditionnelleR00 garde un résidu du nez≈10.83px, couronne≈5.46px avec lecture±5px et caméra non étalonnée. Aucun matériau final ni longue série96 n’est lancé. Le gros plan officielstrong-chasis montre une partie du rouge et une fixation, sans résoudre son motif entier.

@@ -1,0 +1,307 @@
+{
+  "schema": 1,
+  "scope": "Linked inspection guide only, no new physical component, no installed pose or exact current RDC fit. Forks upright, not inferred rake. No tyre to avoid concealing axial interfaces.",
+  "script_sha256": "22fa9d34f231477f396e719fddb6dbec61e1b545f35ff5364231131df622f858",
+  "source_guide_sha256": "57eff1e961cd4a4f47f20f4a227bb89e75309df20cca1d90a649cd26f05569a4",
+  "inputs": [
+    {
+      "key": "rim",
+      "source": "assets-src/moto-components/front-rim/front-rim-v1.blend",
+      "source_sha256": "77f351d89b29f39dc435b434278bb556cff41a8c509edccd979dc9c8c1173c3a",
+      "object": "Front cast rim - inspection export",
+      "extra_neutral_translation_m": [
+        0,
+        0,
+        0
+      ],
+      "working_centre_spacing_m": null,
+      "translation_or_clocking_measured": false,
+      "geometry_created_or_modified": false
+    },
+    {
+      "key": "panel",
+      "source": "assets-src/moto-components/front-brake-plate/front-brake-plate-v2.blend",
+      "source_sha256": "b22bab7f58f4456c74b227610e7f30e51e07793b0420106a9ad9df71e69f71ec",
+      "object": "Front brake panel - inspection export",
+      "extra_neutral_translation_m": [
+        0,
+        0,
+        0
+      ],
+      "working_centre_spacing_m": null,
+      "translation_or_clocking_measured": false,
+      "geometry_created_or_modified": false
+    },
+    {
+      "key": "fork-left",
+      "source": "assets-src/moto-components/front-fork/outer-left/fork-outer-left-v1.blend",
+      "source_sha256": "8c310db96ce2b7aacab52e49ea9305ceda833fca5a080754a4a43a3b0901e472",
+      "object": "LH fork outer body - relatedPF121018 candidate",
+      "extra_neutral_translation_m": [
+        0.0875,
+        0,
+        0.29
+      ],
+      "working_centre_spacing_m": 0.175,
+      "translation_or_clocking_measured": false,
+      "geometry_created_or_modified": false
+    },
+    {
+      "key": "fork-right",
+      "source": "assets-src/moto-components/front-fork/outer-right/fork-outer-right-v1.blend",
+      "source_sha256": "5d08454e9da7fbf85df3532a23d0965475559d94cb13e23dfdae9e8056c14ac6",
+      "object": "RH fork outer body - relatedPF121019 candidate",
+      "extra_neutral_translation_m": [
+        -0.0875,
+        0,
+        0.29
+      ],
+      "working_centre_spacing_m": 0.175,
+      "translation_or_clocking_measured": false,
+      "geometry_created_or_modified": false
+    }
+  ],
+  "relative_libraries": [
+    {
+      "uri": "//../../../assets-src/moto-components/front-fork/outer-left/fork-outer-left-v1.blend",
+      "sha256": "8c310db96ce2b7aacab52e49ea9305ceda833fca5a080754a4a43a3b0901e472",
+      "exists": true
+    },
+    {
+      "uri": "//../../../assets-src/moto-components/front-fork/outer-right/fork-outer-right-v1.blend",
+      "sha256": "5d08454e9da7fbf85df3532a23d0965475559d94cb13e23dfdae9e8056c14ac6",
+      "exists": true
+    },
+    {
+      "uri": "//../../../assets-src/moto-components/front-brake-plate/front-brake-plate-v2.blend",
+      "sha256": "b22bab7f58f4456c74b227610e7f30e51e07793b0420106a9ad9df71e69f71ec",
+      "exists": true
+    },
+    {
+      "uri": "//../../../assets-src/moto-components/front-rim/front-rim-v1.blend",
+      "sha256": "77f351d89b29f39dc435b434278bb556cff41a8c509edccd979dc9c8c1173c3a",
+      "exists": true
+    }
+  ],
+  "working_spacing_m_estimated": 0.175,
+  "working_spacing_range_m": [
+    0.15,
+    0.19
+  ],
+  "axis_line_is_hardware": false,
+  "guides_or_context_exported_as_hardware": false,
+  "installed_contacts_verified": false,
+  "art_accepted": false,
+  "renders": [
+    {
+      "name": "whole-quarter",
+      "PNG_sha256": "9e7fa43b579a4ae18e4ff80bccdbc924f8e93e7ee810ed4502a640fef3473d45",
+      "samples": 12,
+      "resolution_px": [
+        1100,
+        850
+      ],
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "NEUTRAL INTERFACE CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 1.2066687002845762,
+        "farthest_actual_vertex_depth_m": 1.5935827292596612,
+        "projected_uv_min": [
+          0.2935639558224567,
+          0.05699116502049273
+        ],
+        "projected_uv_max": [
+          0.7064397656233474,
+          0.9629257369115556
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "CONDITIONAL GUIDE rim",
+            "vertices": 81494,
+            "depth_m": [
+              1.2066687002845762,
+              1.5935827292596612
+            ],
+            "projected_uv_min": [
+              0.2935639558224567,
+              0.05699116502049273
+            ],
+            "projected_uv_max": [
+              0.7064397656233474,
+              0.7896199320010602
+            ],
+            "finite": true
+          },
+          {
+            "object": "CONDITIONAL GUIDE panel",
+            "vertices": 134529,
+            "depth_m": [
+              1.3189871348339897,
+              1.439624984585263
+            ],
+            "projected_uv_min": [
+              0.4686153874302102,
+              0.2977737082498547
+            ],
+            "projected_uv_max": [
+              0.5969008127705284,
+              0.5278646393106473
+            ],
+            "finite": true
+          },
+          {
+            "object": "CONDITIONAL GUIDE fork-left",
+            "vertices": 54778,
+            "depth_m": [
+              1.2205966038988145,
+              1.3677502707895774
+            ],
+            "projected_uv_min": [
+              0.5487606958343134,
+              0.3650911016693342
+            ],
+            "projected_uv_max": [
+              0.6179138339344383,
+              0.9046477249715477
+            ],
+            "finite": true
+          },
+          {
+            "object": "CONDITIONAL GUIDE fork-right",
+            "vertices": 54944,
+            "depth_m": [
+              1.3280568803414057,
+              1.4752105472321686
+            ],
+            "projected_uv_min": [
+              0.38208649549618523,
+              0.42336911360934204
+            ],
+            "projected_uv_max": [
+              0.4512396335963102,
+              0.9629257369115556
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "targeted_crop_not_complete_component": false
+    },
+    {
+      "name": "axial-stack",
+      "PNG_sha256": "e8f6a361b843166d55ea69be52361b60792e2805ec784e45d95f3db5eb6dd05e",
+      "samples": 12,
+      "resolution_px": [
+        1100,
+        850
+      ],
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "NEUTRAL INTERFACE CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.47372681156761076,
+        "farthest_actual_vertex_depth_m": 0.9262731547737514,
+        "projected_uv_min": [
+          0.17205883355351048,
+          -0.36144157429621016
+        ],
+        "projected_uv_max": [
+          0.8279411664464895,
+          1.737023667553998
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "CONDITIONAL GUIDE rim",
+            "vertices": 81494,
+            "depth_m": [
+              0.47372681156761076,
+              0.9262731547737514
+            ],
+            "projected_uv_min": [
+              0.39411764267963534,
+              -0.36144157429621016
+            ],
+            "projected_uv_max": [
+              0.6029416789552648,
+              1.3610602927628659
+            ],
+            "finite": true
+          },
+          {
+            "object": "CONDITIONAL GUIDE panel",
+            "vertices": 134529,
+            "depth_m": [
+              0.6280026610067633,
+              0.7719972307857496
+            ],
+            "projected_uv_min": [
+              0.5558820652032654,
+              0.22596156635135856
+            ],
+            "projected_uv_max": [
+              0.6529414725408778,
+              0.7740377528518867
+            ],
+            "finite": true
+          },
+          {
+            "object": "CONDITIONAL GUIDE fork-left",
+            "vertices": 54778,
+            "depth_m": [
+              0.6660000093903881,
+              0.734000013085876
+            ],
+            "projected_uv_min": [
+              0.6867646973238273,
+              0.4314874423160937
+            ],
+            "projected_uv_max": [
+              0.8279411664464895,
+              1.737023667553998
+            ],
+            "finite": true
+          },
+          {
+            "object": "CONDITIONAL GUIDE fork-right",
+            "vertices": 54944,
+            "depth_m": [
+              0.6660000093903881,
+              0.734000013085876
+            ],
+            "projected_uv_min": [
+              0.17205883355351048,
+              0.4314874423160937
+            ],
+            "projected_uv_max": [
+              0.3132353026761727,
+              1.737023667553998
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "targeted_crop_not_complete_component": true
+    }
+  ]
+}

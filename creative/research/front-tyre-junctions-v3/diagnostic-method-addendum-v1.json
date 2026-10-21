@@ -1,0 +1,257 @@
+{
+  "component_id": "MOTO-TYRE-FRONT-001",
+  "revision": "front-tyre-v3",
+  "written_utc": "2026-10-21T13:08:21.341361+00:00",
+  "status": "Bounded G3 diagnostic only; no production freeze/material/96/art receipt",
+  "baseline_plan": "G0-G2-repair-plan-v1.json",
+  "method_changes_after_actual_failures": [
+    "The hard field-to-protected-mesh boundary was replaced by a C1 blend toward a fixed piecewise-linear baseline reference, retaining old vertices and protected bounds.",
+    "Longest-projected-edge-only and single-error-edge selection retained starvation/fans. Current diagnostic bisects all actual failing midpoint edges; centre-only failures select footprint longest edge.",
+    "New normals are actual refined smooth-mesh normals with C1 taper toward retained old normal inputs. These are not the initially planned analytic normals, and Blender custom-normal storage quantization means stored outside normals are not bit-identical.",
+    "The chosen20micrometre sampled criterion was not attained after bounded attempts. Four-pass diagnostic is saved explicitly to assess actual visual effect before any further numeric refinement."
+  ],
+  "scope": [
+    "Existing two groove fields only, bounded p4 overlap union; no new groove family or supplier mould claim.",
+    "All original vertices retained.560oldvertices radially changed; old unaffected coordinates, all old X and six bounds exact.",
+    "Inserted UV corners interpolate their own source face/seam. No buffer repair and no old baked normal map.",
+    "Sampled target errors are local point witnesses, not global Hausdorff error or OEM tolerance."
+  ],
+  "bounded_diagnostic_source": {
+    "path": "assets-src/moto-components/front-tyre/v3/front-tyre-v3-junction-diagnostic-v1.blend",
+    "sha256": "4084268f536b94b8170f882ba964fb91e6c46d51c85c5ff264c408b73307cb15",
+    "triangles": 581140,
+    "vertices": 290570,
+    "sampled_goal_met": false,
+    "max_sampled_target_gap_m": 0.00017221250907336347
+  },
+  "visible_macro_witness": {
+    "triangle_index": 566354,
+    "vertex_indices": [
+      180686,
+      213159,
+      213143
+    ],
+    "vertices_m": [
+      [
+        -0.007602721452713013,
+        -0.09770305454730988,
+        0.5607439279556274
+      ],
+      [
+        -0.007451360579580069,
+        -0.09720863401889801,
+        0.560073733329773
+      ],
+      [
+        -0.008056802675127983,
+        -0.0983084887266159,
+        0.5615931153297424
+      ]
+    ],
+    "camera_eye_m": [
+      0.075,
+      -0.17,
+      0.69
+    ],
+    "camera_target_m": [
+      0.012,
+      -0.1,
+      0.562
+    ],
+    "ortho_scale_m": 0.05,
+    "resolution_px": [
+      1400,
+      1100
+    ],
+    "vertices_projected_xy_pixels": [
+      [
+        335.04730469173006,
+        863.4177876118792
+      ],
+      [
+        347.45845861422606,
+        858.301612579982
+      ],
+      [
+        314.256465409154,
+        874.2103407461638
+      ]
+    ],
+    "projected_triangle_extent_px": [
+      33.201993205072085,
+      15.908728166181731
+    ],
+    "actual_mesh_sample_m": [
+      -0.007754081627354026,
+      -0.09775856137275696,
+      0.5608334243297577
+    ],
+    "target_sample_m": [
+      -0.00775408191839233,
+      -0.09781687628610541,
+      0.560995442921579
+    ],
+    "sample_deviation_m": 0.00017219365033205997,
+    "actual_sample_projected_px": [
+      330.85746201169,
+      866.2559766630728
+    ],
+    "target_sample_projected_px": [
+      329.7651588742589,
+      867.9668622014625
+    ],
+    "projected_sample_deviation_px": 2.029841242440613,
+    "scope": "Exact projection of our working-mesh witness in the proposed macro camera, not photo fidelity or OEM tolerance."
+  },
+  "cause_limits": "C1 target is continuous and corners match within roughly20-24nanometres in the reported global worst face; no positional discontinuity is established. A coarse original face crossing the narrow repair band leaves curved interior samples/fans despite edge-midpoint refinement. Gray images must establish whether this causes a visible defect.",
+  "preserved_private_diagnostic_inputs": [
+    {
+      "directory_private": "/workspace/wewa-assets/work-in-progress/front-tyre-v3/C1-gate-before-local-diagnostic",
+      "files": [
+        {
+          "name": "build.log",
+          "sha256": "06f19a9e13557bdb4e7481a6cb48ff1510a0c98eabc19d00780da188c6575d43",
+          "bytes": 3916
+        },
+        {
+          "name": "build.py",
+          "sha256": "a83e659e773ed8466884f8f2c65c3aa00c867cebb2b64893efbd7a9ad791e55a",
+          "bytes": 12298
+        }
+      ]
+    },
+    {
+      "directory_private": "/workspace/wewa-assets/work-in-progress/front-tyre-v3/all-midpoint-witnesses-numeric-v1",
+      "files": [
+        {
+          "name": "build.log",
+          "sha256": "e2592fa7146b444a0f9e2ca78188580e87fde929db5aa0f87503765a0778cd79",
+          "bytes": 3923
+        },
+        {
+          "name": "build.py",
+          "sha256": "6009658cee09524454171711ed885ffff9d312100e9537ce29ce3724c90284dc",
+          "bytes": 14529
+        },
+        {
+          "name": "diagnostic.json",
+          "sha256": "9cd749923e0bcebc02029e779f0f91921b513ac7c3ad6053bab9cfffaaf03223",
+          "bytes": 1437
+        }
+      ]
+    },
+    {
+      "directory_private": "/workspace/wewa-assets/work-in-progress/front-tyre-v3/bounded-visual-diagnostic-v1-author-inputs",
+      "files": [
+        {
+          "name": "build.py",
+          "sha256": "b9fee2150343751280a6498e7f822a0dfe01094bd785b52bfa66f85d3aa65020",
+          "bytes": 17243
+        },
+        {
+          "name": "camera_preflight.py",
+          "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a",
+          "bytes": 3235
+        },
+        {
+          "name": "check_diagnostic.mjs",
+          "sha256": "68556f3ebd090d0a5d41803d0527957515de9f94882a123b899343d21b354470",
+          "bytes": 3618
+        },
+        {
+          "name": "junction_field.py",
+          "sha256": "9acf799bef8ceb573038f4b68a3c9838a077df2a13b490e13e3a0d8e9e26de01",
+          "bytes": 3588
+        },
+        {
+          "name": "parameters.json",
+          "sha256": "0875f2828fe41604c2116c42533ba6b11e9153d60eefba01a4ec7b89df94dd3e",
+          "bytes": 1303
+        },
+        {
+          "name": "render_gray_compare.py",
+          "sha256": "5c14c433d00f9da9cc7d32d7543cad1334322e0af46bc98158e78ef96230e23a",
+          "bytes": 3443
+        }
+      ]
+    },
+    {
+      "directory_private": "/workspace/wewa-assets/work-in-progress/front-tyre-v3/hard-band-boundary-v1",
+      "files": [
+        {
+          "name": "build.log",
+          "sha256": "2e8bf650bb0ab85ea158a96059d06ec647aabec668a2be5bdbece26993a7390e",
+          "bytes": 3914
+        },
+        {
+          "name": "build.py",
+          "sha256": "801aee35a547656ee4a8949b0992ac7d94463c6592228bea5c871749f9b2006a",
+          "bytes": 11876
+        },
+        {
+          "name": "junction_field.py",
+          "sha256": "9acf799bef8ceb573038f4b68a3c9838a077df2a13b490e13e3a0d8e9e26de01",
+          "bytes": 3588
+        }
+      ]
+    },
+    {
+      "directory_private": "/workspace/wewa-assets/work-in-progress/front-tyre-v3/initial-scalar-normal-run",
+      "files": [
+        {
+          "name": "build.log",
+          "sha256": "a2dd32b337f7ac617b7da9279db8ec8d8c541010390d8b04e4bce73aded15c2b",
+          "bytes": 485
+        },
+        {
+          "name": "build.py",
+          "sha256": "41cc805de3eadeac9eb1a8132689b815ed11a78fecfe3eee5ce9aeee687ffd18",
+          "bytes": 11585
+        }
+      ]
+    },
+    {
+      "directory_private": "/workspace/wewa-assets/work-in-progress/front-tyre-v3/projected-longest-edge-diagnostic-v1",
+      "files": [
+        {
+          "name": "build.log",
+          "sha256": "843a977dda2f36edd39fb3344d4fab560a122582f331b4a69f4274579ac2e7b3",
+          "bytes": 1802
+        },
+        {
+          "name": "build.py",
+          "sha256": "d795da020ee52ea62bf6e23ca4ca030d68040f6ca63e7fb383f4048f8b5d393e",
+          "bytes": 13129
+        },
+        {
+          "name": "diagnostic.json",
+          "sha256": "10684d9306059a60de22fd79a18f09f0f7467ae07784d354279988548b430dfb",
+          "bytes": 1464
+        }
+      ]
+    },
+    {
+      "directory_private": "/workspace/wewa-assets/work-in-progress/front-tyre-v3/single-witness-edge-v1",
+      "files": [
+        {
+          "name": "build.log",
+          "sha256": "bd174fd52f6b84336de908d63e06fffe09ee379f06784ef8ddb58b61d94ac068",
+          "bytes": 3933
+        },
+        {
+          "name": "build.py",
+          "sha256": "2aff3ab6b285429bcd713c15f683d9011a176dbc6af7650893e7006f8315c9a9",
+          "bytes": 13857
+        },
+        {
+          "name": "diagnostic.json",
+          "sha256": "fa137fa88d18da249811be1879deb94e2bc4f14d0fd5d5a694aa7227f29a1486",
+          "bytes": 1472
+        }
+      ]
+    }
+  ],
+  "actual_gray_pair_read": false,
+  "next_action": "Actually open native same-camera gray pair, document disappearance or persistence of stair/lip defects, and decide a local correction from image evidence before reflection/material.",
+  "art_accepted": false
+}

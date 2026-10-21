@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "scope": "Only differential precision, same notch geometry/UV/parameters as rejected3",
+  "rejected_diagnostic": "creative/reviews/indicator-front-lens-study-v3/diagnostic-freeze-manifest.json",
+  "rejected_source_sha256": "008546fa4b97af652d854c8359e27ce25430e2b247990aa0b454814187c51b40",
+  "cause_to_verify": "Noisy finite differences from Float32 input/output at50nm",
+  "method": "Compute all central-difference coordinates and field outputs in pure float64 before Matrix construction. Geometry remains one final VectorFloat32 conversion as before. No arbitrary normal averaging or export repairs.",
+  "proofs": [
+    "Actual source3/4 V/F/per-cornerUV byte digests identical",
+    "Actual source andGLB area/UV/unit normals checks, thresholds unchanged",
+    "Same round-key camera/light and whole gray recheck"
+  ],
+  "art_accepted": false
+}

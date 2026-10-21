@@ -1,0 +1,73 @@
+{
+  "input_sha256": "a104f76e538c749c9479525cbc90fa20a819f3b51ddd063ce1567eefe1e2d500",
+  "method": "Float64 normalized plane inclusion and clamped projections onto all three triangle edges. Candidate triangle AABBs intersect cube bounded by exact nearest-vertex distance +1e-11m. All exactly shared positions/faces proven coincident; all other vertices and changed triangle centroids sampled. No float32 nearest BVH used.",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "rtree": "1.4.1"
+  },
+  "identity_tests": [
+    {
+      "surface": "before",
+      "triangle_centroids": 96,
+      "maximum_self_distance_m": 1.3173056395698879e-17
+    },
+    {
+      "surface": "after",
+      "triangle_centroids": 96,
+      "maximum_self_distance_m": 1.8275582869958784e-17
+    }
+  ],
+  "before_to_after": {
+    "vertices_on_source_surface": 104401,
+    "vertex_positions_proved_exactly_shared": 88449,
+    "changed_vertices_distance_sampled": 15952,
+    "triangles": 208946,
+    "exact_shared_triangles_proved_coincident": 166736,
+    "changed_triangle_centroids_distance_sampled": 42210,
+    "maximum_sampled_closest_surface_distance_m": 1.9350755388653923e-06,
+    "worst_sample": {
+      "kind": "vertex",
+      "point_m": [
+        -0.09661904722452164,
+        0.059556156396865845,
+        0.015333598479628563
+      ],
+      "distance_m": 1.9350755388653923e-06
+    },
+    "maximum_conservative_AABB_candidates": 9308
+  },
+  "after_to_before": {
+    "vertices_on_source_surface": 88094,
+    "vertex_positions_proved_exactly_shared": 88094,
+    "changed_vertices_distance_sampled": 0,
+    "triangles": 176332,
+    "exact_shared_triangles_proved_coincident": 166736,
+    "changed_triangle_centroids_distance_sampled": 9596,
+    "maximum_sampled_closest_surface_distance_m": 7.366630705715666e-05,
+    "worst_sample": {
+      "kind": "triangle_centroid",
+      "point_m": [
+        -0.09305438896020253,
+        0.16376405457655588,
+        0.012478028113643328
+      ],
+      "distance_m": 7.366630705715666e-05
+    },
+    "maximum_conservative_AABB_candidates": 1131
+  },
+  "sampling_is_not_a_global_Hausdorff_proof": true,
+  "source_simplification": {
+    "requested_tolerance_m": 5e-07,
+    "native_tolerance_m": 6.651878692309765e-08,
+    "library_claimed_surface_tolerance_m": 5e-07,
+    "vertices_before": 104401,
+    "triangles_before": 208946,
+    "volume_before_m3": 0.0002769831718550401,
+    "volume_after_m3": 0.0002769810877405978,
+    "volume_relative_change": 7.524335967068474e-06,
+    "scope": "Source-only Manifold simplify preserves topology within library tolerance; no exported buffer repair."
+  },
+  "elapsed_s": 64.44928447100392,
+  "passed": false
+}

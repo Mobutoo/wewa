@@ -1,0 +1,1 @@
+Neutral independently constructed terminalB master. Rebuild with ../build.py then ../check_export.mjs and ../inspect_interfaces.py and ../inspect_self.py, compare the recorded hashes/digests. This additive master is the explicit geometry input to ../material.py. The working lower envelope is not a claim of absent OEM lower hole. No photo pixels or parent runtime proofs.

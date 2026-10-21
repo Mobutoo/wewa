@@ -1,0 +1,69 @@
+{
+  "component_id": "MOTO-TYRE-FRONT-001",
+  "revision": "front-tyre-v2",
+  "prepared_at": "2026-10-21T12:25:59.567354+00:00",
+  "scope": "Material-export revision of the existing candidate inspection only; original detailed source and oldGLB immutable. No geometry/tread/sidewall/bead change, no new supplier/marking.",
+  "reason": "Native original3D Noise+Bump and roughness ramp are absent from legacyconstant GLB.",
+  "inputs": [
+    {
+      "path": "assets-src/moto-components/front-tyre/front-tyre-v1.blend",
+      "sha256": "33bf2d29063cf267da47323cf7d2a126f803166caf5e2ea410dc56e89072326c",
+      "bytes": 42133854
+    },
+    {
+      "path": "assets-src/moto-components/front-tyre/front-tyre-inspection.glb",
+      "sha256": "0417b090c1323715acf69be2d96357f1c8ff75653c3ee61ee5ce2ea2648182a2",
+      "bytes": 8389408
+    },
+    {
+      "path": "assets-src/moto-components/front-tyre/build.py",
+      "sha256": "c9271a1052b9abde21a74d4b52a990f98d7aac647be359f3017715686df7377e",
+      "bytes": 14032
+    },
+    {
+      "path": "assets-src/moto-components/front-tyre/parameters.json",
+      "sha256": "161630d783a907f2b499062b7e4d5c45052d22e27e8e85feefa9717c5e8c6f53",
+      "bytes": 1220
+    },
+    {
+      "path": "creative/reviews/front-tyre-v1/manifest.json",
+      "sha256": "f78528ffe5d462a7fd155ed7892e97fd0c6684d42a22cfd78662150728e411fc",
+      "bytes": 1939
+    }
+  ],
+  "geometry_preservation": "Append the exact named inspection object from oldsource; retain positions/topology/smooth normals/UV0/world matrix. Compare actual old/newGLB triangle corner POSITION/NORMAL/UV0, matrix; new tangent data is explicitly new, not claimed oldT preservation. No postexport buffer repair.",
+  "material_transfer": "Bake actual existing donor original rubber material on the same inspection geometry and unchanged UV0. Normal tangent +X,+Y,+Z includes originalBump strength and distance; final normalStrength1 avoids a second attenuation. Roughness linear via temporary emission of original ramp, then pack ORM R255/Groughness/B0. Retain constant linear baseColor and IOR from actualnative donor.",
+  "bake_plan": {
+    "normal_resolution_px": [
+      16384,
+      2048
+    ],
+    "roughness_resolution_px": [
+      4096,
+      512
+    ],
+    "samples": 1,
+    "normal_PNG_bits_per_channel": 8,
+    "roughness_PNG_bits_per_channel": 8,
+    "bake_margin_pixels": 4,
+    "normal_space": "TANGENT",
+    "normal_channels": [
+      "POS_X",
+      "POS_Y",
+      "POS_Z"
+    ],
+    "estimated_texel_pitch_m_U_at_crown": 0.00011121360712170898,
+    "limits": "Finite atlas can filter/alias procedural highoctaves and UV distortion/shoulder shear. Resolution chosen to retain substantially more crown micrograin than an8Kwholewheel; no exactcontinuousnoise/shader parity or mobile budget claimed. Actual sourcecoords and UVs, no fictitious physical dimensions.",
+    "large_file_limit_bytes": 95000000,
+    "if_over_limit": "Do not seal; keep highres diagnostic private and choose a separately documented filtered encoding, compare before publication."
+  },
+  "comparison_plan": [
+    "Read actual donor nodes/settings and preflight actual inspection triangles/UVs before expensive bake.",
+    "Render original procedural donor and converted atlas on same inspection with identical macro camera/light/exposure, plus whole tyre.",
+    "Check actual embeddedPNGpixels/NonColorspaces/normalScale and ORMchannels, UV sampling and tangent orthogonality.",
+    "Root independently reviewsGLBstrict/UV/Babylon after a sourcefreeze."
+  ],
+  "source_inputs_changed": false,
+  "bake_performed": false,
+  "export_or_art_received": false
+}

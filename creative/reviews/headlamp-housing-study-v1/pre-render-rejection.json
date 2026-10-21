@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "revision": "headlamp-housing-study-v1",
+  "state": "rejected_before_render",
+  "source_sha256": "8ea6ec4cbca6ce9887f2bc112724d1ecd0fbaa940a0d7b1ee32ed2571fe2dcb9",
+  "export_sha256": "788047b5cf19d62af5f5bde119cb7b95de78b399ddd1124a6b5b68978bc98f73",
+  "actually_rendered_views": [],
+  "defect": "614 outputtriangles have a corner-normal/face dot below0.5; some oppose geometric faces. Source-input audit independently finds defects before CSG.",
+  "cause_confirmed": "Coarse 3D chords along long boundaries of formed profiles; then bevel acting on already curved/triangulated thin profiles generates additional bad surface and normal triangles.",
+  "evidence": [
+    "input-normal-diagnostic.json",
+    "source-geometry-check.json"
+  ],
+  "planned_correction": "Round a finite planar solid before forming, retessellate planar faces and shared edges before deformation; inverse-transpose normal transport. Reject any nonpositive area or inconsistent source input before CSG.",
+  "art_accepted": false
+}

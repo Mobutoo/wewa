@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-21T13:42:09.943356+00:00",
+  "revision": "indicator-front-lens-study-v3",
+  "component": "MOTO-INDICATOR-FRONT-LENS-001",
+  "scope": "Only the observed opposed edge notch, no optical bands or material finishing in this first reprise",
+  "baseline": {
+    "source": "assets-src/moto-components/indicators-front/lens/indicator-front-lens-study-v2.blend",
+    "sha256": "6c09153fc8bfa272fed44b2529c2aba4bf5853f5b9c7b6848998e2042dd4da86",
+    "GLB": "assets-src/moto-components/indicators-front/lens/indicator-front-lens-study-v2.glb",
+    "GLB_sha256": "224c03ee329447462dbee46130d4c6b89637fc930c3c9ea1889701781b9cf819"
+  },
+  "sources_actually_reopened": [
+    {
+      "private_path": "/workspace/wewa-assets/references/front-indicators-current-v1/PF401002-173209.jpg",
+      "sha256": "ce4fe392d463a7eb254538d2fade9e0f96201e393d607695084facde1fc75291",
+      "reading": "Opposed lower-edge U interruption visible beneath top screw region; assembled right-related variant, no calibrated lens section",
+      "rough_native_locator_px": {
+        "upper_fastener": [
+          224,
+          111
+        ],
+        "opposed_feature": [
+          224,
+          285
+        ]
+      },
+      "locator_uncertainty_px": 6,
+      "not_a_metric_trace": true
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/front-indicators-current-v1/PF401001-172212.jpg",
+      "sha256": "db0af752769129230828e639945b88be46f06141c710263fc0b56ecb2e18f819",
+      "reading": "Oblique assembled left-related view, top fastening region and finite amber boundary; not an opposite view of the very same sample or a calibrated notch section"
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/front-indicators-current-v1/lens-DU201016/DU201016-173223.jpg",
+      "sha256": "fab85df0a4b29afa930d9d412a35fe2c3cf3e843bc8024cd2aa852106164e65a",
+      "reading": "Nude related amber lens has localized fastening region and small opposing rim feature. One pose only; exact cut section/reverse and tooling identity unresolved."
+    }
+  ],
+  "method": [
+    "Preserve source2 as historical finite exterior and upper pocket; add independent source3 file.",
+    "Locally refine the bottom angular/radial mesh neighborhood only, with conforming edge splits and per-corner UV/normal transport; no T junctions or full surface regeneration.",
+    "Create a smooth bounded U interruption at the opposite rim. Retained old cap points remain on the same original sphere, pocket unchanged. Rim wall gets an estimated finite transition to the same rear-plane datum; no hidden lug or socket.",
+    "Check actual source topology/boundary loops/triangle areas/normal orientation and GLB attributes, document changed versus unaffected triangles and any normal re-encoding.",
+    "Read whole gray plus notch macro and reflection with actual preflight before any band/material work."
+  ],
+  "bounded_hypotheses": [
+    "Depth/angular span/width and all scale are authored, not manufacturer cotes or a calibrated camera",
+    "U profile/finite wall and front/rear assignment are a rendering candidate, not a tooling or fit certification",
+    "No generic reflector, bulb/socket, hidden rear lug, optical prescription or approval marking invented"
+  ],
+  "parameters": {
+    "theta_center_degrees": -90,
+    "theta_half_span_degrees": 8,
+    "depth_m": 0.0018,
+    "radial_transition_start_m": 0.025,
+    "radial_transition_end_m": 0.03,
+    "local_edge_refinement_passes": 2,
+    "local_refinement_margin_degrees": 4,
+    "Jacobian_finite_step_m": 5e-08,
+    "meaning": "Authored C1 U-shaped radial trim of the opposite boundary, not a measured mold/assembly fit. Cap kept on original analytic sphere locally; finite rim transitions to unchanged rear interface plane.",
+    "working_envelope_not_measured_uncertainty": {
+      "depth_m": [
+        0.001,
+        0.0026
+      ],
+      "angular_half_span_degrees": [
+        6,
+        11
+      ]
+    }
+  },
+  "visible_still_unmade": [
+    "Broad parallel optical zones",
+    "Fine peripheral optical zones",
+    "Untranscribed molded letters/marks; no false approval text"
+  ],
+  "art_accepted": false
+}

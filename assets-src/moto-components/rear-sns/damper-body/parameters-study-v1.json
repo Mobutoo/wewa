@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "revision": "rear-sns-damper-body-study-v1",
+  "units": "m, authored estimated exterior only",
+  "axis": "Unplaced SNS local+Z toward spring/upper eye. Body below tentative lower spring datumZ0; no vehicle mounting transform.",
+  "profile_sections": [
+    {
+      "name": "lower visible neck",
+      "z0_m": -0.095,
+      "z1_m": -0.092,
+      "r0_m": 0.0115,
+      "r1_m": 0.0152,
+      "samples": 32
+    },
+    {
+      "name": "long barrel",
+      "z0_m": -0.092,
+      "z1_m": -0.026,
+      "r0_m": 0.0152,
+      "r1_m": 0.0154,
+      "samples": 96
+    },
+    {
+      "name": "upper body flare",
+      "z0_m": -0.026,
+      "z1_m": -0.012,
+      "r0_m": 0.0154,
+      "r1_m": 0.0194,
+      "samples": 64
+    },
+    {
+      "name": "upper visible short neck",
+      "z0_m": -0.012,
+      "z1_m": -0.006,
+      "r0_m": 0.0194,
+      "r1_m": 0.0194,
+      "samples": 16
+    }
+  ],
+  "angular_segments": 192,
+  "open_interfaces": "Two deliberate exterior cut rings, no hydraulic bore/wall/back cap or eye joint inferred",
+  "author_envelope": {
+    "barrel_diameter_m": [
+      0.027,
+      0.037
+    ],
+    "visible_body_length_m": [
+      0.075,
+      0.105
+    ],
+    "upper_flare_diameter_m": [
+      0.034,
+      0.045
+    ],
+    "meaning": "Working hypothesis envelope only, not measured uncertainty or OEM tolerances"
+  },
+  "material_phase": "Neutral gray before original black paint; no photos copied"
+}

@@ -1,0 +1,410 @@
+{
+  "component_id": "MOTO-SWINGARM-BODY-001",
+  "revision": "swingarm-body-base-study",
+  "partial_not_finished_candidate": true,
+  "scope": "Two hollow rails with rear slots, two separated pivot housings and U plate. Returns, tabs and welds NOT yet modelled.",
+  "vertices": 37774,
+  "triangles": 75560,
+  "connected_shells": 1,
+  "nonmanifold_edges": 0,
+  "signed_volume_m3": 0.000256869358343679,
+  "min_triangle_area_m2": 1.9058108748873657e-12,
+  "zero_area_at_1e18_m2": 0,
+  "probes": [
+    {
+      "name": "open pivot axis",
+      "origin_m": [
+        -0.16,
+        0,
+        0
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "length_m": 0.32,
+      "clear": true,
+      "expected_clear": true
+    },
+    {
+      "name": "no central transverse tube",
+      "origin_m": [
+        0,
+        -0.04,
+        0.014
+      ],
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "length_m": 0.08,
+      "clear": true,
+      "expected_clear": true
+    },
+    {
+      "name": "open rear slots",
+      "origin_m": [
+        -0.16,
+        0.52,
+        0
+      ],
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "length_m": 0.32,
+      "clear": true,
+      "expected_clear": true
+    },
+    {
+      "name": "open U centre",
+      "origin_m": [
+        0,
+        0.25,
+        0.05
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "length_m": 0.1,
+      "clear": true,
+      "expected_clear": true
+    },
+    {
+      "name": "U front bridge material",
+      "origin_m": [
+        0,
+        0.13,
+        0.05
+      ],
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "length_m": 0.1,
+      "clear": false,
+      "expected_clear": false
+    }
+  ],
+  "source_only_csg_stages": [
+    {
+      "operation": "union",
+      "name": "Separate pivot housing -1",
+      "before_volume_m3": 0.0004055692687756249,
+      "after_volume_m3": 0.0004105350114199493,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Original rounded rectangular rail 1",
+      "before_volume_m3": 0.0004105350114199493,
+      "after_volume_m3": 0.0008161042801955742,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Separate pivot housing 1",
+      "before_volume_m3": 0.0008161042801955742,
+      "after_volume_m3": 0.0008210700228398986,
+      "status": "NoError"
+    },
+    {
+      "operation": "union",
+      "name": "Broad U plate original boundary",
+      "before_volume_m3": 0.0008210700228398986,
+      "after_volume_m3": 0.000863221211496882,
+      "status": "NoError"
+    },
+    {
+      "operation": "subtract",
+      "name": "Estimated hollow rail cavity -1",
+      "before_volume_m3": 0.000863221211496882,
+      "after_volume_m3": 0.0005755408564025694,
+      "status": "NoError"
+    },
+    {
+      "operation": "subtract",
+      "name": "Rear axle slot -1",
+      "before_volume_m3": 0.0005755408564025694,
+      "after_volume_m3": 0.0005733176664122012,
+      "status": "NoError"
+    },
+    {
+      "operation": "subtract",
+      "name": "Estimated hollow rail cavity 1",
+      "before_volume_m3": 0.0005733176664122012,
+      "after_volume_m3": 0.00028563731131788856,
+      "status": "NoError"
+    },
+    {
+      "operation": "subtract",
+      "name": "Rear axle slot 1",
+      "before_volume_m3": 0.00028563731131788856,
+      "after_volume_m3": 0.00028341412132752036,
+      "status": "NoError"
+    },
+    {
+      "operation": "subtract",
+      "name": "Open pivot axes through two separate housings",
+      "before_volume_m3": 0.00028341412132752036,
+      "after_volume_m3": 0.0002568693627447876,
+      "status": "NoError"
+    }
+  ],
+  "coplanar_diagonals_only": [
+    {
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "offset_m": 0.012000000104308128,
+      "faces": 213,
+      "volume_relative_change": 3.774758283725532e-15,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "offset_m": 0.010200000368058681,
+      "faces": 213,
+      "volume_relative_change": 1.7763568394002505e-15,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "offset_m": 0.014999999664723873,
+      "faces": 164,
+      "volume_relative_change": 0.0,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "offset_m": -0.014999999664723873,
+      "faces": 164,
+      "volume_relative_change": 8.881784197001252e-16,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "offset_m": 0.013199999928474426,
+      "faces": 160,
+      "volume_relative_change": 0.0,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "offset_m": -0.013199999928474426,
+      "faces": 160,
+      "volume_relative_change": 8.881784197001252e-16,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "offset_m": 0.02199999988079071,
+      "faces": 164,
+      "volume_relative_change": 3.3306690738754696e-15,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "offset_m": 0.5562000274658203,
+      "faces": 164,
+      "volume_relative_change": 4.440892098500626e-16,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "offset_m": 0.5580000281333923,
+      "faces": 164,
+      "volume_relative_change": 8.881784197001252e-16,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        0,
+        1,
+        0
+      ],
+      "offset_m": -0.00800000037997961,
+      "faces": 124,
+      "volume_relative_change": 8.881784197001252e-16,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        0.012544802867383523,
+        0
+      ],
+      "offset_m": -0.11499999999999999,
+      "faces": 325,
+      "volume_relative_change": 1.3558947298264457e-09,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        0.012544802867383523,
+        0
+      ],
+      "offset_m": -0.091,
+      "faces": 268,
+      "volume_relative_change": 1.733388910185596e-08,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        0.012544802867383523,
+        0
+      ],
+      "offset_m": -0.1132,
+      "faces": 166,
+      "volume_relative_change": 8.525387062974232e-10,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        0.012544802867383523,
+        0
+      ],
+      "offset_m": -0.0928,
+      "faces": 166,
+      "volume_relative_change": 1.6736354524482522e-09,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "offset_m": -0.11550000309944153,
+      "faces": 640,
+      "volume_relative_change": 0.0,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "offset_m": -0.09049999713897705,
+      "faces": 640,
+      "volume_relative_change": 4.218847493575595e-15,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        -0.012544802867383523,
+        0
+      ],
+      "offset_m": 0.091,
+      "faces": 268,
+      "volume_relative_change": 1.5866914226947415e-08,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        -0.012544802867383523,
+        0
+      ],
+      "offset_m": 0.11499999999999999,
+      "faces": 325,
+      "volume_relative_change": 1.3558956180048654e-09,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        -0.012544802867383523,
+        0
+      ],
+      "offset_m": 0.0928,
+      "faces": 166,
+      "volume_relative_change": 1.6736372288050916e-09,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        -0.012544802867383523,
+        0
+      ],
+      "offset_m": 0.1132,
+      "faces": 166,
+      "volume_relative_change": 8.525398165204479e-10,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "offset_m": 0.09049999713897705,
+      "faces": 640,
+      "volume_relative_change": 2.4424906541753444e-15,
+      "positions_preserved": true
+    },
+    {
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "offset_m": 0.11550000309944153,
+      "faces": 640,
+      "volume_relative_change": 3.3306690738754696e-15,
+      "positions_preserved": true
+    }
+  ],
+  "all_dimensions_estimated": true,
+  "current_RDC_identity_verified": false,
+  "external_libraries": [],
+  "art_accepted": false,
+  "source_sha256": "e60f6f2201d29c5e705513686177fc2b659b3c16917e0cd93586feb08419b6e6",
+  "export_sha256": "164f62b874dec65620a85b299b4f3197c33b84699b425616cbd7b85a9c1106ae"
+}

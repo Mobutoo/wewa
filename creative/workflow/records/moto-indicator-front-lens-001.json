@@ -1,0 +1,765 @@
+{
+  "schema": 1,
+  "id": "MOTO-INDICATOR-FRONT-LENS-001",
+  "label": "Clignotant avant \u2014 \u00e9tude isol\u00e9e de lentille li\u00e9e DU201016",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "DU201016 related BM125/BM150/X/UG branches, exact current RDC unknown",
+    "variant_confirmed": false,
+    "usage": "Isolated visible lens rendering candidate; broad zones first, fine peripheral features then material",
+    "review_distances_m": [
+      0.1,
+      0.25,
+      0.6
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01"
+  ],
+  "claims": [],
+  "views": [],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "IND-LENS-GAP-1",
+      "property": "Exact identity, scale, rear section, optical relief assignment and seating fit",
+      "status": "unknown",
+      "critical": true,
+      "blocks": [
+        "G5",
+        "G8"
+      ],
+      "next_research": "Identified reverse/profile photograph and measured dimensions; do not infer physical optical prescription from one transparent view."
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "rework",
+      "revision": "indicator-front-lens-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "original_amber_surface_plan",
+          "path": "../../research/indicator-front-lens/amber-material-plan-v1.json",
+          "sha256": "7eee870da673dcfeb69686f9fe87bc71c37799d8daea9bd1072d17131efe8789",
+          "revision": "indicator-front-lens-v1"
+        }
+      ],
+      "reason": "Original amber transmissive-surface approximation on bounded source6 exterior; exactRDC/mold/bulk optical behavior unqualified",
+      "reviewed_at": null
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "indicator-front-lens-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "original_amber_surface_plan",
+          "path": "../../research/indicator-front-lens/amber-material-plan-v1.json",
+          "sha256": "7eee870da673dcfeb69686f9fe87bc71c37799d8daea9bd1072d17131efe8789",
+          "revision": "indicator-front-lens-v1"
+        }
+      ],
+      "reason": "Original amber transmissive-surface approximation on bounded source6 exterior; exactRDC/mold/bulk optical behavior unqualified",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "rework",
+      "revision": "indicator-front-lens-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "kind": "original_amber_surface_plan",
+          "path": "../../research/indicator-front-lens/amber-material-plan-v1.json",
+          "sha256": "7eee870da673dcfeb69686f9fe87bc71c37799d8daea9bd1072d17131efe8789",
+          "revision": "indicator-front-lens-v1"
+        }
+      ],
+      "reason": "Original amber transmissive-surface approximation on bounded source6 exterior; exactRDC/mold/bulk optical behavior unqualified",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "indicator-front-lens-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Original amber transmissive-surface approximation on bounded source6 exterior; exactRDC/mold/bulk optical behavior unqualified",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "pending",
+      "revision": "indicator-front-lens-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Original amber transmissive-surface approximation on bounded source6 exterior; exactRDC/mold/bulk optical behavior unqualified",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "pending",
+      "revision": "indicator-front-lens-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Original amber transmissive-surface approximation on bounded source6 exterior; exactRDC/mold/bulk optical behavior unqualified",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "pending",
+      "revision": "indicator-front-lens-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Original amber transmissive-surface approximation on bounded source6 exterior; exactRDC/mold/bulk optical behavior unqualified",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "indicator-front-lens-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Original amber transmissive-surface approximation on bounded source6 exterior; exactRDC/mold/bulk optical behavior unqualified",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "indicator-front-lens-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Original amber transmissive-surface approximation on bounded source6 exterior; exactRDC/mold/bulk optical behavior unqualified",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "indicator-front-lens-v1",
+  "export_revision": "indicator-front-lens-v1",
+  "next_action": "QA racine de la lentille, corps en pr\u00e9paration puis reste12/si\u00e8ge18 ; attendre push22 avant nouveau build/rendu. Aucune r\u00e9ception OEM/artistique ni optique volumique certifi\u00e9e.",
+  "art_accepted": false,
+  "gate_history_capture_diagnostic": {
+    "status": "rejected_as_original_snapshot",
+    "reason": "The transition helper retained a shared Python gates mapping before editing current gates. The serialized history is not an original prior-fiche snapshot and must not be treated as one. Historical source/review freezes remain unchanged and authoritative for their own revisions.",
+    "captured_rows": [
+      {
+        "source_revision": "indicator-front-lens-study-v1",
+        "gates": {
+          "G0": {
+            "status": "rework",
+            "revision": "indicator-front-lens-study-v2",
+            "reviewer": {
+              "name": "C fabrication agent",
+              "role": "technical"
+            },
+            "evidence": [
+              {
+                "kind": "attachment_region_plan",
+                "path": "../../research/indicator-front-lens/attachment-region-plan-v2.json",
+                "sha256": "670ac36ef5da64b997829e1f8e9821ac4cc8862855b2c335c864c1e7ba67c1c4",
+                "revision": "indicator-front-lens-study-v2"
+              }
+            ],
+            "reason": "One nude oblique pose plus related assembled appearance. Scale, curvature, section, identity and optical prescription remain estimated or unknown.",
+            "reviewed_at": "2026-10-21T09:50:59.471851+00:00"
+          },
+          "G1": {
+            "status": "blocked",
+            "revision": "indicator-front-lens-study-v2",
+            "reviewer": {
+              "name": "C fabrication agent",
+              "role": "technical"
+            },
+            "evidence": [
+              {
+                "kind": "attachment_region_plan",
+                "path": "../../research/indicator-front-lens/attachment-region-plan-v2.json",
+                "sha256": "670ac36ef5da64b997829e1f8e9821ac4cc8862855b2c335c864c1e7ba67c1c4",
+                "revision": "indicator-front-lens-study-v2"
+              }
+            ],
+            "reason": "One nude oblique pose plus related assembled appearance. Scale, curvature, section, identity and optical prescription remain estimated or unknown.",
+            "reviewed_at": "2026-10-21T09:50:59.471851+00:00"
+          },
+          "G2": {
+            "status": "rework",
+            "revision": "indicator-front-lens-study-v2",
+            "reviewer": {
+              "name": "C fabrication agent",
+              "role": "technical"
+            },
+            "evidence": [
+              {
+                "kind": "attachment_region_plan",
+                "path": "../../research/indicator-front-lens/attachment-region-plan-v2.json",
+                "sha256": "670ac36ef5da64b997829e1f8e9821ac4cc8862855b2c335c864c1e7ba67c1c4",
+                "revision": "indicator-front-lens-study-v2"
+              }
+            ],
+            "reason": "One nude oblique pose plus related assembled appearance. Scale, curvature, section, identity and optical prescription remain estimated or unknown.",
+            "reviewed_at": "2026-10-21T09:50:59.471851+00:00"
+          },
+          "G3": {
+            "status": "pending",
+            "revision": null,
+            "reviewer": null,
+            "evidence": [],
+            "reason": "",
+            "reviewed_at": null
+          },
+          "G4": {
+            "status": "pending",
+            "revision": null,
+            "reviewer": null,
+            "evidence": [],
+            "reason": "",
+            "reviewed_at": null
+          },
+          "G5": {
+            "status": "pending",
+            "revision": null,
+            "reviewer": null,
+            "evidence": [],
+            "reason": "",
+            "reviewed_at": null
+          },
+          "G6": {
+            "status": "pending",
+            "revision": null,
+            "reviewer": null,
+            "evidence": [],
+            "reason": "",
+            "reviewed_at": null
+          },
+          "G7": {
+            "status": "pending",
+            "revision": null,
+            "reviewer": null,
+            "evidence": [],
+            "reason": "",
+            "reviewed_at": null
+          },
+          "G8": {
+            "status": "pending",
+            "revision": null,
+            "reviewer": null,
+            "evidence": [],
+            "reason": "",
+            "reviewed_at": null
+          }
+        }
+      }
+    ],
+    "historical_revision_evidence": "creative/reviews/indicator-front-lens-study-v1/study-freeze-manifest.json"
+  },
+  "gate_history": [
+    {
+      "source_revision": "indicator-front-lens-study-v2",
+      "gates": {
+        "G0": {
+          "status": "rework",
+          "revision": "indicator-front-lens-study-v2",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "attachment_region_plan",
+              "path": "../../research/indicator-front-lens/attachment-region-plan-v2.json",
+              "sha256": "670ac36ef5da64b997829e1f8e9821ac4cc8862855b2c335c864c1e7ba67c1c4",
+              "revision": "indicator-front-lens-study-v2"
+            }
+          ],
+          "reason": "One nude oblique pose plus related assembled appearance. Scale, curvature, section, identity and optical prescription remain estimated or unknown.",
+          "reviewed_at": "2026-10-21T09:50:59.471851+00:00"
+        },
+        "G1": {
+          "status": "blocked",
+          "revision": "indicator-front-lens-study-v2",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "attachment_region_plan",
+              "path": "../../research/indicator-front-lens/attachment-region-plan-v2.json",
+              "sha256": "670ac36ef5da64b997829e1f8e9821ac4cc8862855b2c335c864c1e7ba67c1c4",
+              "revision": "indicator-front-lens-study-v2"
+            }
+          ],
+          "reason": "One nude oblique pose plus related assembled appearance. Scale, curvature, section, identity and optical prescription remain estimated or unknown.",
+          "reviewed_at": "2026-10-21T09:50:59.471851+00:00"
+        },
+        "G2": {
+          "status": "rework",
+          "revision": "indicator-front-lens-study-v2",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "attachment_region_plan",
+              "path": "../../research/indicator-front-lens/attachment-region-plan-v2.json",
+              "sha256": "670ac36ef5da64b997829e1f8e9821ac4cc8862855b2c335c864c1e7ba67c1c4",
+              "revision": "indicator-front-lens-study-v2"
+            }
+          ],
+          "reason": "One nude oblique pose plus related assembled appearance. Scale, curvature, section, identity and optical prescription remain estimated or unknown.",
+          "reviewed_at": "2026-10-21T09:50:59.471851+00:00"
+        },
+        "G3": {
+          "status": "rework",
+          "revision": "indicator-front-lens-study-v2",
+          "reviewer": {
+            "name": "C fabrication agent",
+            "role": "technical"
+          },
+          "evidence": [
+            {
+              "kind": "actual_gray_reflection_reading",
+              "path": "../../reviews/indicator-front-lens-study-v2/gray-reflection-reading.json",
+              "sha256": "12e3c2e991f55e81278823cf5cb445e25bd64aeffa11d49f5bb5196c5d1e7b61",
+              "revision": "indicator-front-lens-study-v2"
+            }
+          ],
+          "reason": "Partial exterior and local mouth only, three real12views read. Optical bands/notch and fine zones remain visibly unbuilt; hidden side/section unknown.",
+          "reviewed_at": "2026-10-21T10:03:15.755301+00:00"
+        },
+        "G4": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G5": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G6": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G7": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        },
+        "G8": {
+          "status": "pending",
+          "revision": null,
+          "reviewer": null,
+          "evidence": [],
+          "reason": "",
+          "reviewed_at": null
+        }
+      },
+      "scope": "Actual record snapshot before separate notch3, no retroactive approval"
+    },
+    {
+      "source_revision": "indicator-front-lens-study-v3",
+      "gates": {
+        "G0": {
+          "status": "rework",
+          "revision": "indicator-front-lens-study-v3",
+          "reviewer": null,
+          "evidence": [
+            {
+              "kind": "bounded_opposed_notch_plan",
+              "path": "../../research/indicator-front-lens/opposed-notch-plan-v3.json",
+              "sha256": "ab4fa26d2b6620f2a12f340c0bb306abbfc9637be306a96e33636e294579529d",
+              "revision": "indicator-front-lens-study-v3"
+            }
+          ],
+          "reason": "Opposite edge feature documented in related images; full cut profile/section/scale/exactRDC remain estimated or unknown",
+          "reviewed_at": null
+        },
+        "G1": {
+          "status": "blocked",
+          "revision": "indicator-front-lens-study-v3",
+          "reviewer": null,
+          "evidence": [
+            {
+              "kind": "bounded_opposed_notch_plan",
+              "path": "../../research/indicator-front-lens/opposed-notch-plan-v3.json",
+              "sha256": "ab4fa26d2b6620f2a12f340c0bb306abbfc9637be306a96e33636e294579529d",
+              "revision": "indicator-front-lens-study-v3"
+            }
+          ],
+          "reason": "Opposite edge feature documented in related images; full cut profile/section/scale/exactRDC remain estimated or unknown",
+          "reviewed_at": null
+        },
+        "G2": {
+          "status": "rework",
+          "revision": "indicator-front-lens-study-v3",
+          "reviewer": null,
+          "evidence": [
+            {
+              "kind": "bounded_opposed_notch_plan",
+              "path": "../../research/indicator-front-lens/opposed-notch-plan-v3.json",
+              "sha256": "ab4fa26d2b6620f2a12f340c0bb306abbfc9637be306a96e33636e294579529d",
+              "revision": "indicator-front-lens-study-v3"
+            }
+          ],
+          "reason": "Opposite edge feature documented in related images; full cut profile/section/scale/exactRDC remain estimated or unknown",
+          "reviewed_at": null
+        },
+        "G3": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v3",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Not executed for new notch3 candidate",
+          "reviewed_at": null
+        },
+        "G4": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v3",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Not executed for new notch3 candidate",
+          "reviewed_at": null
+        },
+        "G5": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v3",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Not executed for new notch3 candidate",
+          "reviewed_at": null
+        },
+        "G6": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v3",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Not executed for new notch3 candidate",
+          "reviewed_at": null
+        },
+        "G7": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v3",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Not executed for new notch3 candidate",
+          "reviewed_at": null
+        },
+        "G8": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v3",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Not executed for new notch3 candidate",
+          "reviewed_at": null
+        }
+      },
+      "rejected_diagnostic": "creative/reviews/indicator-front-lens-study-v3/diagnostic-freeze-manifest.json"
+    },
+    {
+      "source_revision": "indicator-front-lens-study-v4",
+      "gates": {
+        "G0": {
+          "status": "rework",
+          "revision": "indicator-front-lens-study-v4",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Normal-only precision revision4 pending, rejected3 retained; original profile/scale/RDC remain unqualified",
+          "reviewed_at": null
+        },
+        "G1": {
+          "status": "blocked",
+          "revision": "indicator-front-lens-study-v4",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Normal-only precision revision4 pending, rejected3 retained; original profile/scale/RDC remain unqualified",
+          "reviewed_at": null
+        },
+        "G2": {
+          "status": "rework",
+          "revision": "indicator-front-lens-study-v4",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Normal-only precision revision4 pending, rejected3 retained; original profile/scale/RDC remain unqualified",
+          "reviewed_at": null
+        },
+        "G3": {
+          "status": "rework",
+          "revision": "indicator-front-lens-study-v4",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Normal-only precision revision4 pending, rejected3 retained; original profile/scale/RDC remain unqualified",
+          "reviewed_at": null
+        },
+        "G4": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v4",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Normal-only precision revision4 pending, rejected3 retained; original profile/scale/RDC remain unqualified",
+          "reviewed_at": null
+        },
+        "G5": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v4",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Normal-only precision revision4 pending, rejected3 retained; original profile/scale/RDC remain unqualified",
+          "reviewed_at": null
+        },
+        "G6": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v4",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Normal-only precision revision4 pending, rejected3 retained; original profile/scale/RDC remain unqualified",
+          "reviewed_at": null
+        },
+        "G7": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v4",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Normal-only precision revision4 pending, rejected3 retained; original profile/scale/RDC remain unqualified",
+          "reviewed_at": null
+        },
+        "G8": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v4",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Normal-only precision revision4 pending, rejected3 retained; original profile/scale/RDC remain unqualified",
+          "reviewed_at": null
+        }
+      },
+      "bounded_gray_study_freeze": "creative/reviews/indicator-front-lens-study-v4/study-freeze-manifest.json",
+      "freeze_sha256": "5d6685790cf4be08bec181604f5d019b1e16b063af55e87ec9fe54aeee90d182"
+    },
+    {
+      "source_revision": "indicator-front-lens-study-v5",
+      "gates": {
+        "G0": {
+          "status": "rework",
+          "revision": "indicator-front-lens-study-v5",
+          "reviewer": null,
+          "evidence": [
+            {
+              "kind": "broad_zone_rendering_plan",
+              "path": "../../research/indicator-front-lens/broad-zone-plan-v5.json",
+              "sha256": "1c6cc1c084afb547bfe340fa48654906eb1dc0be5634061acbbfa8fe90541d07",
+              "revision": "indicator-front-lens-study-v5"
+            }
+          ],
+          "reason": "Bounded broad-zone rendering hypothesis, not optical prescription/currentRDC certification; no new5 geometry/view claimed yet",
+          "reviewed_at": null
+        },
+        "G1": {
+          "status": "blocked",
+          "revision": "indicator-front-lens-study-v5",
+          "reviewer": null,
+          "evidence": [
+            {
+              "kind": "broad_zone_rendering_plan",
+              "path": "../../research/indicator-front-lens/broad-zone-plan-v5.json",
+              "sha256": "1c6cc1c084afb547bfe340fa48654906eb1dc0be5634061acbbfa8fe90541d07",
+              "revision": "indicator-front-lens-study-v5"
+            }
+          ],
+          "reason": "Bounded broad-zone rendering hypothesis, not optical prescription/currentRDC certification; no new5 geometry/view claimed yet",
+          "reviewed_at": null
+        },
+        "G2": {
+          "status": "rework",
+          "revision": "indicator-front-lens-study-v5",
+          "reviewer": null,
+          "evidence": [
+            {
+              "kind": "broad_zone_rendering_plan",
+              "path": "../../research/indicator-front-lens/broad-zone-plan-v5.json",
+              "sha256": "1c6cc1c084afb547bfe340fa48654906eb1dc0be5634061acbbfa8fe90541d07",
+              "revision": "indicator-front-lens-study-v5"
+            }
+          ],
+          "reason": "Bounded broad-zone rendering hypothesis, not optical prescription/currentRDC certification; no new5 geometry/view claimed yet",
+          "reviewed_at": null
+        },
+        "G3": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v5",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Bounded broad-zone rendering hypothesis, not optical prescription/currentRDC certification; no new5 geometry/view claimed yet",
+          "reviewed_at": null
+        },
+        "G4": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v5",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Bounded broad-zone rendering hypothesis, not optical prescription/currentRDC certification; no new5 geometry/view claimed yet",
+          "reviewed_at": null
+        },
+        "G5": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v5",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Bounded broad-zone rendering hypothesis, not optical prescription/currentRDC certification; no new5 geometry/view claimed yet",
+          "reviewed_at": null
+        },
+        "G6": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v5",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Bounded broad-zone rendering hypothesis, not optical prescription/currentRDC certification; no new5 geometry/view claimed yet",
+          "reviewed_at": null
+        },
+        "G7": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v5",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Bounded broad-zone rendering hypothesis, not optical prescription/currentRDC certification; no new5 geometry/view claimed yet",
+          "reviewed_at": null
+        },
+        "G8": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v5",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Bounded broad-zone rendering hypothesis, not optical prescription/currentRDC certification; no new5 geometry/view claimed yet",
+          "reviewed_at": null
+        }
+      },
+      "bounded_gray_study_freeze": "creative/reviews/indicator-front-lens-study-v5/study-freeze-manifest.json",
+      "freeze_sha256": "05ddf09ec110d7e206d3edd3928c462db6f00ea20ca7feb18deb635bfd51fb8b"
+    },
+    {
+      "source_revision": "indicator-front-lens-study-v6",
+      "gates": {
+        "G0": {
+          "status": "rework",
+          "revision": "indicator-front-lens-study-v6",
+          "reviewer": null,
+          "evidence": [
+            {
+              "kind": "fine_zone_rendering_plan",
+              "path": "../../research/indicator-front-lens/fine-zone-plan-v6.json",
+              "sha256": "96c7b30b8be8fd9c378ae7dd17d2b699e2bcacdab0f114a6d81f836e5415ec32",
+              "revision": "indicator-front-lens-study-v6"
+            }
+          ],
+          "reason": "Bounded original fine-zone rendering hypothesis; optical prescription and exactRDC unqualified",
+          "reviewed_at": null
+        },
+        "G1": {
+          "status": "blocked",
+          "revision": "indicator-front-lens-study-v6",
+          "reviewer": null,
+          "evidence": [
+            {
+              "kind": "fine_zone_rendering_plan",
+              "path": "../../research/indicator-front-lens/fine-zone-plan-v6.json",
+              "sha256": "96c7b30b8be8fd9c378ae7dd17d2b699e2bcacdab0f114a6d81f836e5415ec32",
+              "revision": "indicator-front-lens-study-v6"
+            }
+          ],
+          "reason": "Bounded original fine-zone rendering hypothesis; optical prescription and exactRDC unqualified",
+          "reviewed_at": null
+        },
+        "G2": {
+          "status": "rework",
+          "revision": "indicator-front-lens-study-v6",
+          "reviewer": null,
+          "evidence": [
+            {
+              "kind": "fine_zone_rendering_plan",
+              "path": "../../research/indicator-front-lens/fine-zone-plan-v6.json",
+              "sha256": "96c7b30b8be8fd9c378ae7dd17d2b699e2bcacdab0f114a6d81f836e5415ec32",
+              "revision": "indicator-front-lens-study-v6"
+            }
+          ],
+          "reason": "Bounded original fine-zone rendering hypothesis; optical prescription and exactRDC unqualified",
+          "reviewed_at": null
+        },
+        "G3": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v6",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Bounded original fine-zone rendering hypothesis; optical prescription and exactRDC unqualified",
+          "reviewed_at": null
+        },
+        "G4": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v6",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Bounded original fine-zone rendering hypothesis; optical prescription and exactRDC unqualified",
+          "reviewed_at": null
+        },
+        "G5": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v6",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Bounded original fine-zone rendering hypothesis; optical prescription and exactRDC unqualified",
+          "reviewed_at": null
+        },
+        "G6": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v6",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Bounded original fine-zone rendering hypothesis; optical prescription and exactRDC unqualified",
+          "reviewed_at": null
+        },
+        "G7": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v6",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Bounded original fine-zone rendering hypothesis; optical prescription and exactRDC unqualified",
+          "reviewed_at": null
+        },
+        "G8": {
+          "status": "pending",
+          "revision": "indicator-front-lens-study-v6",
+          "reviewer": null,
+          "evidence": [],
+          "reason": "Bounded original fine-zone rendering hypothesis; optical prescription and exactRDC unqualified",
+          "reviewed_at": null
+        }
+      },
+      "bounded_gray_study_freeze": "creative/reviews/indicator-front-lens-study-v6/study-freeze-manifest.json",
+      "freeze_sha256": "8bcab843e2f1addd714dac81f2e6c3616b40ba78fd4ca6c168397cf9be74ddd0"
+    }
+  ],
+  "candidate_revision": {
+    "source_sha256": "16cf50785238a919bee4a0858b9a27cc562cd8c6d40fea5be02f07e83a3f64e3",
+    "export_sha256": "3e5d19ae7dda87ad9f32d3b686a0d4b254ad0fc71e8a2dda262f54f9625df257",
+    "freeze": "creative/reviews/indicator-front-lens-v1/source-freeze-manifest.json",
+    "freeze_sha256": "ed20337d91e2cce74a2e87388112dd1465562da2aa066c4d882302ce5f829b14",
+    "finals": "Three actual96PNG opened, FLOAT32EXR/noisy/albedo/normal headers verified; root QA pending",
+    "final_freeze": "creative/reviews/indicator-front-lens-v1/freeze-manifest.json",
+    "final_freeze_sha256": "9fea5d501f0b471cae17bdfd0571d4f2d0cdf67235419c667338fae64238c0d3"
+  }
+}

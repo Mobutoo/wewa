@@ -1,0 +1,92 @@
+{
+  "schema": "bounded-documentary-addendum-v1",
+  "date_utc": "2026-10-21T11:03:57.870374+00:00",
+  "part": "JV581204 carburettor exterior",
+  "status": "negative_new_opposite_or_bowl_bottom_view_search_closed",
+  "scope": "Three bounded leads: exact-code Crosland API, exact-code search, BajajOnline listing. No generic VM24/26 or other carburettor substitution.",
+  "branch": "D04 UG5 related code; current RDC carburettor identity remains unconfirmed. Listing code is attribution, not a manufacturer dimensional drawing.",
+  "existing_baseline": {
+    "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/JV581204-motopulse.webp",
+    "sha256": "72a41c5df6f9d400efabb3d11c82b02b31fd41a13d62889d53b5a20e38812a97",
+    "raster_px": [
+      1600,
+      1600
+    ],
+    "actually_reopened": true,
+    "new_download": false
+  },
+  "downloaded_images": [
+    {
+      "URL": "https://bajajonline.ru/upload/iblock/7e6/97z1675oe8g223hr1t2altjxlthjho94.jpg",
+      "page_URL": "https://bajajonline.ru/catalog/item/karbyurator_5/",
+      "private_path": "/workspace/wewa-assets/references/JV581204-opposite-bowl-v1/JV581204-bajajonline-3241889.jpg",
+      "sha256": "dad90df2c2bedf5f6422f289133a412cbd68d6165a98af4a89088d1763233724",
+      "raster_px": [
+        1200,
+        1184
+      ],
+      "actually_opened": true,
+      "classification": "actual_photo_existing_pose_reused",
+      "new_independent_angle": false,
+      "observation": "Same arrangement of carburettor, hoses, reflections, blue witness marks, label and cloth/background as the existing MotoPulse image; alternate crop/size without the lower MotoPulse watermark, not an opposite face or bowl underside."
+    }
+  ],
+  "leads": [
+    {
+      "name": "crosland-JV581204",
+      "URL": "https://www.croslandrepuestos.pe/api/catalog_system/pub/products/search?fq=alternateIds_RefId%3AJV581204",
+      "status": 200,
+      "private_path": "/workspace/wewa-assets/references/JV581204-opposite-bowl-v1/crosland-JV581204.html",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "result": "Exact RefId API returned empty list; no image."
+    },
+    {
+      "name": "search-JV581204",
+      "URL": "https://html.duckduckgo.com/html/?q=%22JV581204%22",
+      "status": 200,
+      "private_path": "/workspace/wewa-assets/references/JV581204-opposite-bowl-v1/search-JV581204.html",
+      "sha256": "9addab1e49f371fe0d501c925339eefd4556988317483eb539ca0ac33602a913",
+      "result": "Exact-code query discovered BajajOnline and MotoMarket. MotoMarket challenge already documented in old intake report, not requested again."
+    },
+    {
+      "URL": "https://bajajonline.ru/catalog/item/karbyurator_5/",
+      "status": 200,
+      "private_path": "/workspace/wewa-assets/references/JV581204-opposite-bowl-v1/bajajonline.html",
+      "sha256": "e354a9ecd2e697a8a901928681d4c295886dc7d2e562df449bcb34630c7edf3c",
+      "result": "Exact article JV581204, manufacturer field BAJAJ; one slider image only. Downloaded and actually opened: same existing pose as MotoPulse, no new face."
+    }
+  ],
+  "conclusion": "No new independent angle obtained. The new 1200×1184 file is not an opposite/underside view and must not increase photographed coverage.",
+  "visible_existing_only": [
+    "Oblique view into the large mouth with visible small bores/bosses; these do not certify hidden passage routing or an installed side.",
+    "Body, peripheral bowl seam and a limited near lower surface are visible, but the bowl underside and far face are not documented.",
+    "Cable elbow/adjuster, cap, lever and loose hoses remain visible only in the old pose; their functional routing is not established."
+  ],
+  "unknowns": [
+    "Opposite-side controls and topology.",
+    "Bowl bottom, drain interface and hidden fasteners.",
+    "Exact side-to-engine orientation, vent/overflow routes and each nipple function.",
+    "Venturi/bore and envelope dimensions, installation offsets and exact current RDC article."
+  ],
+  "dimensions": {
+    "published_exact_dimensions_found": false,
+    "adopted_dimensions": [],
+    "excluded": "No generic VM24/26 measurements, another carburettor, model-number inference or clamp diameter used."
+  },
+  "not_repeated": [
+    "MotoPulse existing1600² photo downloaded previously; only local reopen.",
+    "Motozilla913929/913930 catalogue drawings already rejected as photographs.",
+    "MotoMarket challenge and UCAL failed mirrors already reported; not retried."
+  ],
+  "protected_old_reports": [
+    {
+      "path": "creative/research/engine17-intake-exterior-v1/README.md",
+      "sha256": "a806c62b4be1480d07cf7773698808eae76fcbf8ee9f0281b4cfc6bee9432afa"
+    },
+    {
+      "path": "creative/research/engine17-intake-exterior-v1/report.json",
+      "sha256": "cfab309827ef67bbd903208e0ea35ff7d696f4067b05802ec6d646cd728fee97"
+    }
+  ],
+  "rights": "All raw pages and pixels private outside repo. URLs and hashes only; redistribution, texture and public illustration permission not established. No geometry/source/global record changed."
+}

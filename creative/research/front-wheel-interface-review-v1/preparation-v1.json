@@ -1,0 +1,116 @@
+{
+  "schema": 1,
+  "prepared_at": "2026-10-21T12:11:09.244757+00:00",
+  "phase": "Read-only G2 preparation from existing JSON/docs while DS181008 source is frozen and rendering. No new Blender/runtime, no geometry fabrication, no source modification, no fit/art receipt.",
+  "inputs": [
+    {
+      "path": "assets-src/moto-components/front-tyre/parameters.json",
+      "sha256": "161630d783a907f2b499062b7e4d5c45052d22e27e8e85feefa9717c5e8c6f53",
+      "bytes": 1220
+    },
+    {
+      "path": "assets-src/moto-components/front-rim/parameters.json",
+      "sha256": "488929beb9807c70a843244e2b302dea8f4b8b731c6f04fe41b480df6f527420",
+      "bytes": 1590
+    },
+    {
+      "path": "assets-src/moto-components/front-brake-plate/parameters.json",
+      "sha256": "0117dc6e6971f3314b9a6be3b0036478afb8baa6f9674290b95477cb5cd3c35f",
+      "bytes": 1138
+    },
+    {
+      "path": "assets-src/moto-components/front-brake-lever/parameters.json",
+      "sha256": "91f63b73320df3a705de75c23b05026a1a5fda8682ee5f29ca5c027bcf9a7a1b",
+      "bytes": 1683
+    },
+    {
+      "path": "assets-src/moto-components/front-fork/outer-left/parameters.json",
+      "sha256": "be519f52a946dc128d95b37a665f81ce8ad99a4b2f67080038961acc8925e73f",
+      "bytes": 3498
+    },
+    {
+      "path": "assets-src/moto-components/front-fork/outer-right/parameters.json",
+      "sha256": "79f0eabbe53894bfe9c787e716a76fed4b57d93c343676a6ec50593524aa538b",
+      "bytes": 3554
+    },
+    {
+      "path": "assets-src/moto-components/front-fork/bellows-v2/parameters.json",
+      "sha256": "bb775ed62a645c8645bf2fe9b5ba37c8b0c9ee206473da7459415bfc6a1d0da0",
+      "bytes": 3790
+    },
+    {
+      "path": "assets-src/moto-components/steering-triples/lower/parameters.json",
+      "sha256": "3e073df88a32c37e63e857e9db347d997b394487e0984a4be4c0652e57233c91",
+      "bytes": 1656
+    },
+    {
+      "path": "creative/workflow/motorcycle-datums-v1.json",
+      "sha256": "19bf9708f8777b6216ab0c7d487f9ff685e3bedcdd9806f3c9985db78b5e5c9a",
+      "bytes": 3572
+    },
+    {
+      "path": "creative/research/chassis-remaining-18.json",
+      "sha256": "5ccd298f86b10815ac5eae65b3fca5c47ab7492ecc251fd07ed573ec7f206f60",
+      "bytes": 86419
+    },
+    {
+      "path": "creative/research/front-axle-v2/report.json",
+      "sha256": "89b9f27adccfb3738679bae2500489dccb6fa4d02a692304a78d1e171dae89dc",
+      "bytes": 23720
+    },
+    {
+      "path": "creative/research/chassis-running-18/report.json",
+      "sha256": "2f63e71e9a37db50bab58ffdee9516253115a9b0d11bb4ef21f80102fa4ff074",
+      "bytes": 34918
+    }
+  ],
+  "reference_frame": {
+    "shared": "Cockpit origin barcentre; +X pilotleft/+Yrear/+Zup",
+    "legacy_wheel": "Axle+X, wheelcentre at(0,0,.29)m",
+    "fork_legs": "Each isolated origin at axlecentre, localaxis+Z, +Xleft/-Xright outboard, no installedpose",
+    "provisional_world_translation_for_legacy_wheel_only_m": [
+      0,
+      -0.42,
+      -1.03
+    ],
+    "translation_scope": "Only datum subtraction for a future conditional guide, not a certified installed transform."
+  },
+  "variant_guards": [
+    "D01 front2.75-17/rear3.00-17 and nominal17in bead431.8mm do not determine tyre OD/actual width or hub/axle dimensions.",
+    "D15 BM150 distinguishes JA spoke and DS alloy groups; D04 BM125UG shows cast-five-branch and cites JA, so JA is not universally incompatible with alloy. Exact currentRDC match remains unconfirmed.",
+    "No universal transfer DZ151012 versus DJ151041 versus JB131017, or M12 from relatedalloy nut into currentRDC shaft.",
+    "Use activebellowsv2 lip/chamber profile. Older frozen outerleg parameter note about legacy40.6mm bellows is historical, not a currentv2-bore assertion."
+  ],
+  "parameter_only_derived_envelopes_not_vertex_measurements": {
+    "rim_vs_tyre_bead_separation_working_m": 0.044,
+    "related_catalogue_width_not_RDC_m": 0.03556,
+    "old_initial_gap_each_bead_m": 0.004219999999999998,
+    "nominal_drum_to_spigot_radial_gap_m": 0.000800000000000009,
+    "fork_centre_spacing_working_m": 0.175,
+    "fork_eye_axial_width_working_m": 0.0354,
+    "outer_eye_span_if_parallel_axles_m": 0.21039999999999998,
+    "inner_eye_gap_if_parallel_axles_m": 0.1396,
+    "fork_bore_working_diameter_m": 0.0124,
+    "rim_bore_working_diameter_m": 0.013,
+    "panel_bore_working_diameter_m": 0.0134,
+    "interpretation": "Different bores do not by themselves prove incompatible hardware or determine axle diameter; collars/bearingstations/actual surfaces still unresolved. No sleeve/axle produced from these numbers."
+  },
+  "concrete_existing_gaps": [
+    "Front tyre README states procedural micrograin not yet baked to glTF; material export parity remains open.",
+    "Rim44mm width was adjusted to estimatedtyre beadseparation, not measured RDC width or tubeless sealing proof.",
+    "PanelJA131605 and leverJA131607 are relatedcandidates, clocking and reaction-lug/fork-pocket assignment unresolved.",
+    "ForkLH inferred rectangular recess is not certified brake reaction contact; no force-fit rotation of panel to pocket.",
+    "Actual frontaxle/collars and visible retained ends not yet built; hidden bearing/shoe detail not automatically an external fabrication requirement.",
+    "DS181009/010 remain separate unbuilt documented blockers, not copies of DS181008."
+  ],
+  "next_order": [
+    "Read actual legacyfront renders against officialfront reference and classify concrete shape/export deficits.",
+    "When CPU slot available, identify canonical evaluated source/export objects, then extract real source and GLB surfaces in a separate read-only packet. Preserve old meshes/revisions.",
+    "Prepare neutral localaxial guide with parameter-estimated spacing explicitly distinct from installedpose; sample shoulder/bore/lug surfaces instead of assuming AABB contact.",
+    "Choose next single observable physical unit or narrowly scoped revision from actual observed deficits and attributable references; no generic shaft or mixedvariant stack."
+  ],
+  "source_records_modified": false,
+  "new_geometry_created": false,
+  "new_fit_tests_performed": false,
+  "art_accepted": false
+}

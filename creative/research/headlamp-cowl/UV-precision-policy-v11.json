@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "stage": "G3 UV transport correction, not physical calibration",
+  "diagnostic": "creative/reviews/headlamp-cowl-shell-study-v11/UV-quantization-rejection.json",
+  "rejected_source_sha256": "e870d3f2cd270dde1c326b0f2ab986922c9022d59dc755da2fe8fbc42519452a",
+  "rejected_export_sha256": "dd238f78aac30e0926c7c24303e7fb706adb5d3f83d1031a9feab34544de22af",
+  "source_input_index": 16,
+  "source_face_index": 196,
+  "method": "Translate all descendant UV corners from this original cutter triangle by minus its original first UV, before barycentric interpolation and Float32 storage. Every descendant uses the same offset. No physical vertex, index, normal, material, camera or UV derivative change intended. One chart boundary seam is explicitly introduced; no current texture/normal map.",
+  "required": "Actual GLB nonzero UVs and bit-identical oriented geometry/normals/material comparison to diagnostic; source mapping float64 translation residual and counts. No arbitrary per-corner offset."
+}

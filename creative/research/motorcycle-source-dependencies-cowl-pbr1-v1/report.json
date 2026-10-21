@@ -1,0 +1,920 @@
+{
+  "schema": "wewa.public-source-dependency-audit.v1",
+  "created_utc": "2026-10-21T06:55:45.009520+00:00",
+  "scope": "headlamp-cowl-v1 closed PBR source78f2/GLB7ac4; prospective next publication only, outside publication11 cut",
+  "method": "Read-only static analysis of actual builders, renderer, shape-plan preparation and workers; stable file SHA/path/manifest coverage, local Git index. No model, render, test/checker/rebuild, photo reopening, web or source mutation.",
+  "closed_manifests": [
+    {
+      "path": "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json",
+      "sha256": "fe4d3a568845311af66083d012d0a02f23d91f1377a0eb372188a9a2d5e79a33",
+      "files_count": 16,
+      "source_sha256": "78f2af6ee6a7e8ddf396899dcbb4215b47bf21e566b96ebaef027d8d4fa13d68",
+      "export_sha256": "7ac45db74019417d0460d473a46dd2f7d47292b1dc4510b1e167a2fb7f941ff5"
+    },
+    {
+      "path": "creative/reviews/headlamp-cowl-v1/freeze-manifest.json",
+      "sha256": "f9a7d8cefbc43c36ef9d53c508df6ab72607e4f3bbeacd701de8979a8d85189f",
+      "files_count": 25,
+      "source_sha256": "78f2af6ee6a7e8ddf396899dcbb4215b47bf21e566b96ebaef027d8d4fa13d68",
+      "export_sha256": "7ac45db74019417d0460d473a46dd2f7d47292b1dc4510b1e167a2fb7f941ff5"
+    },
+    {
+      "path": "creative/reviews/headlamp-cowl-shell-study-v12/study-freeze-manifest.json",
+      "sha256": "124656b64614d6876e17583c040121ce3de084dcb00a85f999c9757232abcd40",
+      "files_count": 14,
+      "source_sha256": "d923a27791ac0cda5ad207e689f0e0d7fcc15a3322859a89179aadd30ebe1fc9",
+      "export_sha256": "f4c5aed6e5dc64bf90e5b742a6147f4145823cb9d27022d93ac3d44ddff04f02"
+    },
+    {
+      "path": "creative/reviews/headlamp-cowl-shell-study-v13/study-freeze-manifest.json",
+      "sha256": "994ee099b060cad8579de656dc87a40f7df8e68a10739b69818c198644574ba1",
+      "files_count": 12,
+      "source_sha256": "d4b6c85a940a1d3b458ab2b723917819613d6f5c891edb94024cd371504bbd6f",
+      "export_sha256": "1e318c5dcbf8e2437d758f74e43891bc1ddc1aa86f5e8b6f23fd71a93bbd4d98"
+    },
+    {
+      "path": "creative/reviews/headlamp-cowl-shell-study-v14/study-freeze-manifest.json",
+      "sha256": "06f0aa656d1b2c4e81b726c98289f664deb6061590962860ac3c7360c2d77ccf",
+      "files_count": 17,
+      "source_sha256": "1a789dfa0da88a65b070f45ea5200f61600d2ef0099170bba4be34b2059df847",
+      "export_sha256": "52a23980316f02589b98eb207eaf1a282eb8656a64e318530b8e6e2c120ce893"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json",
+      "exists": true,
+      "sha256": "fe4d3a568845311af66083d012d0a02f23d91f1377a0eb372188a9a2d5e79a33",
+      "bytes": 3752,
+      "role": "closed_manifest",
+      "read_by": [],
+      "purpose": "Own exact file witness; nested manifest is not the payload of its listed files",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-v1/freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/headlamp-cowl-v1/freeze-manifest.json",
+      "exists": true,
+      "sha256": "f9a7d8cefbc43c36ef9d53c508df6ab72607e4f3bbeacd701de8979a8d85189f",
+      "bytes": 6039,
+      "role": "closed_manifest",
+      "read_by": [],
+      "purpose": "Own exact file witness; nested manifest is not the payload of its listed files",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/headlamp-cowl-shell-study-v12/study-freeze-manifest.json",
+      "exists": true,
+      "sha256": "124656b64614d6876e17583c040121ce3de084dcb00a85f999c9757232abcd40",
+      "bytes": 3829,
+      "role": "closed_manifest",
+      "read_by": [],
+      "purpose": "Own exact file witness; nested manifest is not the payload of its listed files",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/headlamp-cowl-shell-study-v13/study-freeze-manifest.json",
+      "exists": true,
+      "sha256": "994ee099b060cad8579de656dc87a40f7df8e68a10739b69818c198644574ba1",
+      "bytes": 3333,
+      "role": "closed_manifest",
+      "read_by": [],
+      "purpose": "Own exact file witness; nested manifest is not the payload of its listed files",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/headlamp-cowl-shell-study-v14/study-freeze-manifest.json",
+      "exists": true,
+      "sha256": "06f0aa656d1b2c4e81b726c98289f664deb6061590962860ac3c7360c2d77ccf",
+      "bytes": 4677,
+      "role": "closed_manifest",
+      "read_by": [
+        "build_candidate_v1.py"
+      ],
+      "purpose": "Own exact file witness; nested manifest is not the payload of its listed files",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json",
+        "creative/reviews/headlamp-cowl-v1/freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/build_candidate_v1.py",
+      "exists": true,
+      "sha256": "f167d917aad25c0ea09d86df0404853a033a3d19d711b6cdfa01e58f6d0cfbb3",
+      "bytes": 5433,
+      "role": "pbr1_source_output_or_protocol",
+      "read_by": [],
+      "purpose": "Frozen16/25 own component; controls are metadata, not read by material builder",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json",
+        "creative/reviews/headlamp-cowl-v1/freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/render_candidate_v1.py",
+      "exists": true,
+      "sha256": "00e26ad9d7b76a030e28feaeda00719fb0a86feacb1776fe50bf9473e08ff3df",
+      "bytes": 5523,
+      "role": "pbr1_source_output_or_protocol",
+      "read_by": [],
+      "purpose": "Frozen16/25 own component; controls are metadata, not read by material builder",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json",
+        "creative/reviews/headlamp-cowl-v1/freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/check_candidate_v1.mjs",
+      "exists": true,
+      "sha256": "482f312cde1c8b7cab950ad079e0f1077d1234df98bb6dc0d0b93307939cfa1c",
+      "bytes": 2787,
+      "role": "pbr1_source_output_or_protocol",
+      "read_by": [],
+      "purpose": "Frozen16/25 own component; controls are metadata, not read by material builder",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json",
+        "creative/reviews/headlamp-cowl-v1/freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/check_material_v1.mjs",
+      "exists": true,
+      "sha256": "c34222573f9564a1c6b9a926bf7bdbaaa30bf1f67e604d9fe830b8e0c6f9c903",
+      "bytes": 2403,
+      "role": "pbr1_source_output_or_protocol",
+      "read_by": [],
+      "purpose": "Frozen16/25 own component; controls are metadata, not read by material builder",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json",
+        "creative/reviews/headlamp-cowl-v1/freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/headlamp-cowl-v1.blend",
+      "exists": true,
+      "sha256": "78f2af6ee6a7e8ddf396899dcbb4215b47bf21e566b96ebaef027d8d4fa13d68",
+      "bytes": 59874641,
+      "role": "pbr1_source_output_or_protocol",
+      "read_by": [],
+      "purpose": "Frozen16/25 own component; controls are metadata, not read by material builder",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json",
+        "creative/reviews/headlamp-cowl-v1/freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/headlamp-cowl-inspection.glb",
+      "exists": true,
+      "sha256": "7ac45db74019417d0460d473a46dd2f7d47292b1dc4510b1e167a2fb7f941ff5",
+      "bytes": 11534600,
+      "role": "pbr1_source_output_or_protocol",
+      "read_by": [],
+      "purpose": "Frozen16/25 own component; controls are metadata, not read by material builder",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json",
+        "creative/reviews/headlamp-cowl-v1/freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/controls.json",
+      "exists": true,
+      "sha256": "2c35678d48f9197d5a7d04f93d5a888de69dc3fd06081aa916cc8b5423bc65d3",
+      "bytes": 539,
+      "role": "pbr1_source_output_or_protocol",
+      "read_by": [],
+      "purpose": "Frozen16/25 own component; controls are metadata, not read by material builder",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json",
+        "creative/reviews/headlamp-cowl-v1/freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/provenance.json",
+      "exists": true,
+      "sha256": "eea3f8d6c263acd80307829c44e5b6eaac1d9878b6c2725160edc9476f619372",
+      "bytes": 3571,
+      "role": "pbr1_source_output_or_protocol",
+      "read_by": [],
+      "purpose": "Frozen16/25 own component; controls are metadata, not read by material builder",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json",
+        "creative/reviews/headlamp-cowl-v1/freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/README.md",
+      "exists": true,
+      "sha256": "5664324f35f9c14d2a4a3c96912091c5b0bd84723bcb3bbd46730b155091fd9f",
+      "bytes": 3728,
+      "role": "pbr1_source_output_or_protocol",
+      "read_by": [],
+      "purpose": "Frozen16/25 own component; controls are metadata, not read by material builder",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json",
+        "creative/reviews/headlamp-cowl-v1/freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/headlamp-cowl-shell-study-v14.blend",
+      "exists": true,
+      "sha256": "1a789dfa0da88a65b070f45ea5200f61600d2ef0099170bba4be34b2059df847",
+      "bytes": 59854159,
+      "role": "required_gray_master_for_PBR1",
+      "read_by": [
+        "build_candidate_v1.py"
+      ],
+      "purpose": "Exact editable G3 source with source-class attributes, local studio and UV/normals",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v14/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/headlamp-cowl-shell-study-v14/source-geometry-check.json",
+      "exists": true,
+      "sha256": "b459b8172095d213f9798c09834b128eb4628cb17bc5cb612724bd35ae34690c",
+      "bytes": 8120,
+      "role": "required_gray_master_metadata_for_PBR1",
+      "read_by": [
+        "build_candidate_v1.py"
+      ],
+      "purpose": "Read for masterSHA/object/root/geometry IDs; no private pixels read",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v14/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/research/headlamp-cowl/material-plan-v1.json",
+      "exists": true,
+      "sha256": "edc3d74018a237f1a035307850cc4b33736b36942e4752d5fccdd1b0df73ef04",
+      "bytes": 2961,
+      "role": "required_authored_material_parameters",
+      "read_by": [
+        "build_candidate_v1.py"
+      ],
+      "purpose": "Two constant original PBR sets and source-class mask rule; no image texture",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json",
+        "creative/reviews/headlamp-cowl-v1/freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/headlamp-cowl-v1/build-report.json",
+      "exists": true,
+      "sha256": "a87531aefb39830ca9d66ffd59e7ee72b1575b5349c275a5fa3599600fa2f064",
+      "bytes": 3253,
+      "role": "required_existing_final_render_input",
+      "read_by": [
+        "render_candidate_v1.py"
+      ],
+      "purpose": "Frozen own report/check/pass gate for final rendering, not a geometry master",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json",
+        "creative/reviews/headlamp-cowl-v1/freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/headlamp-cowl-v1/preview-review.json",
+      "exists": true,
+      "sha256": "a4aefc3a4f1c0a7798017de482206d9f5840b9cd564946c38669126dbd0b1402",
+      "bytes": 17732,
+      "role": "required_existing_final_render_input",
+      "read_by": [
+        "render_candidate_v1.py"
+      ],
+      "purpose": "Frozen own report/check/pass gate for final rendering, not a geometry master",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json",
+        "creative/reviews/headlamp-cowl-v1/freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/headlamp-cowl-v1/export-detail-check.json",
+      "exists": true,
+      "sha256": "744b8cb7fd767e6529ac6bc3d0f0f720f4ac88fc17ebd5c3374f0efc2e8bdd92",
+      "bytes": 752,
+      "role": "required_existing_final_render_input",
+      "read_by": [
+        "render_candidate_v1.py"
+      ],
+      "purpose": "Frozen own report/check/pass gate for final rendering, not a geometry master",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-v1/source-freeze-manifest.json",
+        "creative/reviews/headlamp-cowl-v1/freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/research/headlamp-cowl/native-camera-exploration-v1.json",
+      "exists": true,
+      "sha256": "c3015de90f51e493e0fe00cc6669566309e488f4b29298d223d47b1e00047f03",
+      "bytes": 146888,
+      "role": "required_numeric_camera_parameters",
+      "read_by": [
+        "render_candidate_v1.py"
+      ],
+      "purpose": "Read prepared numerical camera cases; photo paths are string selectors/attribution, photo pixels not opened",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "tools/blender_component_camera_preflight.py",
+      "exists": true,
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a",
+      "bytes": 3235,
+      "role": "required_render_import",
+      "read_by": [
+        "render_candidate_v1.py"
+      ],
+      "purpose": "Read/import public camera helper; outside16/25",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/build_shell_study_v13.py",
+      "exists": true,
+      "sha256": "5df7a37a00dbac17ce9dfeeda6c7377de3edf862513ae9e3ae9439477055f95b",
+      "bytes": 12838,
+      "role": "geometry_stage_recipe",
+      "read_by": [],
+      "purpose": "Actual stage builder, not documentary remaining-work links",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v13/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/headlamp-cowl-shell-study-v12.blend",
+      "exists": true,
+      "sha256": "d923a27791ac0cda5ad207e689f0e0d7fcc15a3322859a89179aadd30ebe1fc9",
+      "bytes": 33525539,
+      "role": "required_predecessor_geometry_master",
+      "read_by": [
+        "build_shell_study_v13.py"
+      ],
+      "purpose": "Actual predecessor .blend opened, SHA asserted before construction",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v12/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/headlamp-cowl-shell-study-v12/source-geometry-check.json",
+      "exists": true,
+      "sha256": "819a7491b9cded4bf7ab92817fd8dbb09cf382319b492be0501603747f7d3667",
+      "bytes": 3405,
+      "role": "required_predecessor_metadata",
+      "read_by": [
+        "build_shell_study_v13.py"
+      ],
+      "purpose": "Read predecessor object/root/collection and exact source pin",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v12/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/research/headlamp-cowl/first-central-rib-plan-v13.json",
+      "exists": true,
+      "sha256": "b02bf77b12c5c5185999f13e4ccd0024d15b0108a37ab2138a191c37aebd04fc",
+      "bytes": 30877,
+      "role": "required_prepared_numeric_shape_plan",
+      "read_by": [
+        "build_shell_study_v13.py"
+      ],
+      "purpose": "All authored proxy points/normals/sections are serialized; no photo read during this stage",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v13/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/cowl_csg_worker_pad_v4.py",
+      "exists": true,
+      "sha256": "2f66fd47a6a21f52cbd806555873807295bc7712942d32c1febfe5deda46cdc7",
+      "bytes": 5545,
+      "role": "required_host_CSG_helper",
+      "read_by": [
+        "build_shell_study_v13.py"
+      ],
+      "purpose": "Host Python subprocess; manifold3d/numpy with source IDs; no private geometry",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v12/study-freeze-manifest.json",
+        "creative/reviews/headlamp-cowl-shell-study-v13/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/build_shell_study_v14.py",
+      "exists": true,
+      "sha256": "a9b8c139b7bb6203c3c49fc3545e57f74be579d2bfd26f8af98692a5a4692376",
+      "bytes": 13042,
+      "role": "geometry_stage_recipe",
+      "read_by": [],
+      "purpose": "Actual stage builder, not documentary remaining-work links",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v14/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/headlamp-cowl-shell-study-v13.blend",
+      "exists": true,
+      "sha256": "d4b6c85a940a1d3b458ab2b723917819613d6f5c891edb94024cd371504bbd6f",
+      "bytes": 46165860,
+      "role": "required_predecessor_geometry_master",
+      "read_by": [
+        "build_shell_study_v14.py"
+      ],
+      "purpose": "Actual predecessor .blend opened, SHA asserted before construction",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v13/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/headlamp-cowl-shell-study-v13/source-geometry-check.json",
+      "exists": true,
+      "sha256": "80a0fd062315e72899fe9e05fe16aac94d09c76325af6a2b6aa3ac0846ef7a3c",
+      "bytes": 3045,
+      "role": "required_predecessor_metadata",
+      "read_by": [
+        "build_shell_study_v14.py"
+      ],
+      "purpose": "Read predecessor object/root/collection and exact source pin",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v13/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/research/headlamp-cowl/remaining-partial-ribs-plan-v14.json",
+      "exists": true,
+      "sha256": "29e7744a7cf5463f54e0cef9de78638887d9f0c2d9036c60af3db252e60438d2",
+      "bytes": 193525,
+      "role": "required_prepared_numeric_shape_plan",
+      "read_by": [
+        "build_shell_study_v14.py"
+      ],
+      "purpose": "All authored proxy points/normals/sections are serialized; no photo read during this stage",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v14/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/cowl_csg_worker_pad_v5.py",
+      "exists": true,
+      "sha256": "32edf392405e07f55bf9bf7f4d4f7c54b23246e7b74ab5e602f0d4d1e8d9d978",
+      "bytes": 11282,
+      "role": "required_host_CSG_helper",
+      "read_by": [
+        "build_shell_study_v14.py"
+      ],
+      "purpose": "Host Python subprocess; manifold3d/numpy with source IDs; no private geometry",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v14/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/build_shell_study_v12.py",
+      "exists": true,
+      "sha256": "bfb9fa72c770c6882a1517176b3d4f3fc2d7b4a85a14e45e3ae4f3803e4b5e71",
+      "bytes": 11556,
+      "role": "upstream_boundary_recipe_not_closed",
+      "read_by": [],
+      "purpose": "Read confirms source11/report11/plan12; earlier complete reconstruction intentionally not audited",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v12/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/headlamp-cowl-shell-study-v14.glb",
+      "exists": true,
+      "sha256": "52a23980316f02589b98eb207eaf1a282eb8656a64e318530b8e6e2c120ce893",
+      "bytes": 12228180,
+      "role": "provided_gray_export_witness",
+      "read_by": [],
+      "purpose": "Derived export, not read by PBR material builder",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v14/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/research/headlamp-cowl/prepare-first-rib-v13.py",
+      "exists": true,
+      "sha256": "56734724ea22160f7111e3f078a559a25a5325b65db305f7d537f6522dee9378",
+      "bytes": 4345,
+      "role": "optional_shape_plan_regenerator",
+      "read_by": [],
+      "purpose": "Reads predecessor .blend/report + cameraJSON + authored addendumJSON, not photo pixels. Absolute repo root in script is portability limit.",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v13/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/research/headlamp-cowl/prepare-remaining-ribs-v14.py",
+      "exists": true,
+      "sha256": "e35a0dbca65400babb66107e6efb39757ddbcfdbe45b6d6469c86b4af0be5fda",
+      "bytes": 5761,
+      "role": "optional_shape_plan_regenerator",
+      "read_by": [],
+      "purpose": "Reads predecessor .blend/report + cameraJSON + authored addendumJSON, not photo pixels. Absolute repo root in script is portability limit.",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v14/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/research/headlamp-cowl/low-pads-and-ribs-addendum-v1/addendum.json",
+      "exists": true,
+      "sha256": "580253d8277c5d4b7b37bb6071beb2b00b32db03386381dccc20244605df8b14",
+      "bytes": 14097,
+      "role": "optional_shape_plan_regenerator_input",
+      "read_by": [
+        "prepare-first-rib-v13.py /prepare-remaining-ribs-v14.py"
+      ],
+      "purpose": "Authored documentary pixel polylines and uncertainty, no copied image payload",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/preview_native_cameras_v14.py",
+      "exists": true,
+      "sha256": "14b84675cedce035f7e1236b9effd2ef390d4678e4e7f94ed8a9eea4a9af5623",
+      "bytes": 5992,
+      "role": "gray14_control_or_preview_protocol",
+      "read_by": [],
+      "purpose": "Separate gray-stage controls; not called by build_candidate_v1 or render_candidate_v1",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v14/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/preview_partial_ribs_v14.py",
+      "exists": true,
+      "sha256": "f0a05f91ce1a6793577c8c6b68a71ff4bed220ec1a1c36bde28db50a5eeb844f",
+      "bytes": 5009,
+      "role": "gray14_control_or_preview_protocol",
+      "read_by": [],
+      "purpose": "Separate gray-stage controls; not called by build_candidate_v1 or render_candidate_v1",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v14/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/preview_reflection_r2_v14.py",
+      "exists": true,
+      "sha256": "446894c7444b22654f3d681dd70973078b15d7ec3e714fba71218c69c9800522",
+      "bytes": 5084,
+      "role": "gray14_control_or_preview_protocol",
+      "read_by": [],
+      "purpose": "Separate gray-stage controls; not called by build_candidate_v1 or render_candidate_v1",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v14/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "assets-src/moto-components/headlamp/cowl/check_shell_study_v14.mjs",
+      "exists": true,
+      "sha256": "9f1eff7d8833fd6c79c9ea1bead65ba49f743385f9b94386b27feb6bb8d82f83",
+      "bytes": 2791,
+      "role": "gray14_control_or_preview_protocol",
+      "read_by": [],
+      "purpose": "Separate gray-stage controls; not called by build_candidate_v1 or render_candidate_v1",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v14/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/research/headlamp-cowl/native-camera-exploration-v1.py",
+      "exists": true,
+      "sha256": "487c4ba5d211d449a4ad1e4fc1c1694a359ad5b124d7ad2bb209274ad7849cc3",
+      "bytes": 7514,
+      "role": "optional_original_camera_research",
+      "read_by": [],
+      "purpose": "Native-camera preview extracts only project() AST; full top-level research opens privatephotos and source3 point dump",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/headlamp-cowl-shell-study-v14/source-transport-dependency-check.json",
+      "exists": true,
+      "sha256": "631346e4125a1287581d9ea7eeef01cb40fc4c6a9221481b2443d7b0dfea80e5",
+      "bytes": 1776,
+      "role": "stable_technical_witness_or_environment",
+      "read_by": [],
+      "purpose": "Attribution/environment only; no checker executed",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v14/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "creative/reviews/headlamp-cowl-shell-study-v12/source-dependency-check.json",
+      "exists": true,
+      "sha256": "f86ba7605518d12885ce5d16a8782656a38f072961a6c89bfc99d23c599beeb4",
+      "bytes": 342,
+      "role": "stable_technical_witness_or_environment",
+      "read_by": [],
+      "purpose": "Attribution/environment only; no checker executed",
+      "exact_manifest_coverage": [
+        "creative/reviews/headlamp-cowl-shell-study-v12/study-freeze-manifest.json"
+      ],
+      "git_tracked_at_snapshot": false
+    },
+    {
+      "path": "tools/requirements-assets.txt",
+      "exists": true,
+      "sha256": "d37fb80e0a2bf34bf6e388eb968a144b27ce368350d49a9df4ae2b7aa30d2447",
+      "bytes": 110,
+      "role": "stable_technical_witness_or_environment",
+      "read_by": [],
+      "purpose": "Attribution/environment only; no checker executed",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "tools/provenance/blender-4.3.2-provenance.json",
+      "exists": true,
+      "sha256": "4ec5c5e12a9d8728c04ae6ee262aa3828d570b103d7fbcafde86b86f102fd5f7",
+      "bytes": 606,
+      "role": "stable_technical_witness_or_environment",
+      "read_by": [],
+      "purpose": "Attribution/environment only; no checker executed",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "package.json",
+      "exists": true,
+      "sha256": "a39ce3bafb566edaf92a27fec2c35e3bd40550136b20ac501e56bcaa01c3a998",
+      "bytes": 782,
+      "role": "stable_technical_witness_or_environment",
+      "read_by": [],
+      "purpose": "Attribution/environment only; no checker executed",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    },
+    {
+      "path": "package-lock.json",
+      "exists": true,
+      "sha256": "f7806a8afda3413efb6d3cec57482f51fda453b3350e784f1e6e90cf8604f014",
+      "bytes": 74605,
+      "role": "stable_technical_witness_or_environment",
+      "read_by": [],
+      "purpose": "Attribution/environment only; no checker executed",
+      "exact_manifest_coverage": [],
+      "git_tracked_at_snapshot": true
+    }
+  ],
+  "PBR1_replay": {
+    "source_sha256": "78f2af6ee6a7e8ddf396899dcbb4215b47bf21e566b96ebaef027d8d4fa13d68",
+    "export_sha256": "7ac45db74019417d0460d473a46dd2f7d47292b1dc4510b1e167a2fb7f941ff5",
+    "exact_gray14_source_sha256": "1a789dfa0da88a65b070f45ea5200f61600d2ef0099170bba4be34b2059df847",
+    "exact_gray14_export_sha256": "52a23980316f02589b98eb207eaf1a282eb8656a64e318530b8e6e2c120ce893",
+    "provided_gray_master_sufficient_for_material_replay_with_public_metadata_and_plan": true,
+    "private_authored_master_required": false,
+    "recipe_reads": [
+      "gray14 BLEND",
+      "source-geometry-check14 JSON",
+      "existence ofstudy-freeze14",
+      "material-plan-v1 JSON"
+    ],
+    "no_texture_bake_or_image_input": true,
+    "no_external_library_or_FILE_image": "Existing source14 transport report states0/0; builder also asserts no libraries/FILE images before saving PBR. This audit did not reopen Blender.",
+    "material_parameters": {
+      "red_paint_candidate": {
+        "original_linear_RGBA": [
+          0.42,
+          0.006,
+          0.012,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.22,
+        "coat_weight": 0.35,
+        "coat_roughness": 0.12,
+        "IOR": 1.5,
+        "source": "Original artistchosen provisional palette consistent with A proposed fender, not a measured/OEM paint.",
+        "assignment": "Exterior sourcefaces class1 + frontrolledrim class3 near Y0. Otherwall holes/cuts black; precise paintmask not observed and remains a hypothesis."
+      },
+      "inner_moulded_polymer_candidate": {
+        "original_linear_RGBA": [
+          0.009,
+          0.01,
+          0.012,
+          1
+        ],
+        "metallic": 0,
+        "roughness": 0.32,
+        "coat_weight": 0,
+        "IOR": 1.5,
+        "source": "Original estimateddarkpolymer finish, chemicalIORunmeasured. IOR1.5 chosen for canonicalopaque source/glTF parity; provisional1.48 source was archived because Blender omitted opaqueIORextension and exported1.5. No artificial transmission/specular or binarypatch.",
+        "assignment": "Interior, ribs, supports, rearreturns and borewalls. Redwrap boundary estimated."
+      },
+      "textures": {
+        "photo_textures_used": false,
+        "normal_map": false,
+        "resolved_micrograin_or_measured_roughness": false,
+        "note": "This cleanmaterialcandidate uses explicit PBR opticalparameters. It does not pretend to reproduce subpixel grain, localized wear or chemically exact finish; those are not established by lowresolution photographs."
+      }
+    },
+    "mask": "WEWA_surface_class==1 orclass3with facecentreY<=.0016 →red; allothers dark. Authored hypothesis, not measured factory mask.",
+    "controls": "controls.json has no controls, component static; arbitrary isolated frame/unconfirmed installed transform. Not an input read by build_candidate_v1.py.",
+    "publication_closure_limit": "Own16/25 include the gray14 manifest, but neither the actual gray14BLEND nor its metadata. Those are listed in the separate gray14freeze. NativecameraJSON and render helper are additional actual render dependencies outside16/25. Prospective coordinated publication must include exact payloads; nested SHA alone is not their presence."
+  },
+  "form13_14_recipes": {
+    "read_from_actual_builders_not_remaining_v3": true,
+    "build14_inputs": {
+      "source13": "d4b6c85a940a1d3b458ab2b723917819613d6f5c891edb94024cd371504bbd6f",
+      "source13_metadata": "creative/reviews/headlamp-cowl-shell-study-v13/source-geometry-check.json",
+      "shape_plan": "creative/research/headlamp-cowl/remaining-partial-ribs-plan-v14.json",
+      "worker": "assets-src/moto-components/headlamp/cowl/cowl_csg_worker_pad_v5.py"
+    },
+    "build13_inputs": {
+      "source12": "d923a27791ac0cda5ad207e689f0e0d7fcc15a3322859a89179aadd30ebe1fc9",
+      "source12_metadata": "creative/reviews/headlamp-cowl-shell-study-v12/source-geometry-check.json",
+      "shape_plan": "creative/research/headlamp-cowl/first-central-rib-plan-v13.json",
+      "worker": "assets-src/moto-components/headlamp/cowl/cowl_csg_worker_pad_v4.py"
+    },
+    "prepared_plan_replay": "Each stage can consume its supplied numerical plan and predecessor master without rerunning photographic annotation or camera fitting. Files all exist locally; this is not a bitwise regeneration or public publication claim.",
+    "plans_can_be_regenerated_from_existing_numeric_annotations": "prepare-first-rib-v13 reads12; prepare-remaining-ribs-v14 reads13. Both read public nativecameraJSON and addendumJSON, then do geometry backprojection; no photo file reads. Their hardcoded/workspace/wewa-github root is a portability limitation.",
+    "integral_chain_from_original_native_construction_closed": false,
+    "boundary": "source12 is a required pre-existing master for13. Its own builder reads source11/report11/upper-wall plan12; earlier stages are outside this bounded audit. Direct-linking study13 in remaining-work-v3 does not close build13 dependencies or change build14 predecessor.",
+    "standalone_freeze_coverage_gap": "gray14freeze omits actualsource13 andreport13; gray13freeze omits actualsource12 andreport12. They exist locally and in separate predecessor stage material, but transitive payload inclusion must be coordinated for full-recipe publication. Do not close13/14from scratch using just16/25 or onlygray14."
+  },
+  "camera_and_controls": {
+    "final_render_reads": "PBRBLEND + ownbuild-report + native-camera-exploration-v1.json + publiccamera helper; finalmode additionally ownpreview-review/export-detail-check. Private paths inside cameraJSON are string matching/provenance, not opened images.",
+    "research_JSON_status": "Prepared numerical camera guesses originally from source3, reused conditionally for14/PBR; neither calibrated camera nor bodyscale certification. Finalwholeoutside/inside select24mm casesaz±7.5°, plus two explicit script cameras.",
+    "full_camera_JSON_regeneration": "native-camera-exploration-v1.py top-level opens private8494/8495 with Pillow/scipy and source3point dump. Private documentary inputs are necessary for that original research, not for consuming the already supplied cameraJSON in final render. Chain not closed publicly by this audit.",
+    "gray14_native_preview": "preview_native_cameras_v14.py reads temporarysource14points and extracts only project()AST from nativecamera.py, avoiding its top-level private photo reads; two other14macros use suppliedplan14 without pointdump. This historical diagnostic is not the PBRfinal renderer."
+  },
+  "private_references": [
+    {
+      "path": "/workspace/wewa-assets/references/headlamp/cowl-black-8492.jpg",
+      "exists": true,
+      "sha256": "628f497ce435722495e8de20ac407a82a93c5582d633d9b3dc7b425349ca8893",
+      "sha_origin": "Existing frozen provenance, not reopened visually or re-downloaded in this audit",
+      "page_url": "https://elgaragedemimoto.com/tapas-laterales/3979-mascara-fairing-cubre-faro-bajaj-boxer-150-ebony-black.html",
+      "image_url": null,
+      "role": "documentary_only_no_PBR_or_builder_texture",
+      "needed_to_replay_PBR1_from14": false,
+      "needed_by_original_numeric_camera_refit": false,
+      "rights": "Private documentary reference; redistribution and texture/decal use not established. Pixels remain outside repository."
+    },
+    {
+      "path": "/workspace/wewa-assets/references/headlamp/cowl-black-8493.jpg",
+      "exists": true,
+      "sha256": "516db5f9503cfc1965ff1606cfabc12489011fedc94de95660883d121f5a8794",
+      "sha_origin": "Existing frozen provenance, not reopened visually or re-downloaded in this audit",
+      "page_url": "https://elgaragedemimoto.com/tapas-laterales/3979-mascara-fairing-cubre-faro-bajaj-boxer-150-ebony-black.html",
+      "image_url": null,
+      "role": "documentary_only_no_PBR_or_builder_texture",
+      "needed_to_replay_PBR1_from14": false,
+      "needed_by_original_numeric_camera_refit": false,
+      "rights": "Private documentary reference; redistribution and texture/decal use not established. Pixels remain outside repository."
+    },
+    {
+      "path": "/workspace/wewa-assets/references/headlamp/cowl-black-8494.jpg",
+      "exists": true,
+      "sha256": "32e232147372dabf9c8638d2a91aa83026fb6db9639b5a1633cef8d25a560460",
+      "sha_origin": "Existing frozen provenance, not reopened visually or re-downloaded in this audit",
+      "page_url": "https://elgaragedemimoto.com/tapas-laterales/3979-mascara-fairing-cubre-faro-bajaj-boxer-150-ebony-black.html",
+      "image_url": null,
+      "role": "documentary_only_no_PBR_or_builder_texture",
+      "needed_to_replay_PBR1_from14": false,
+      "needed_by_original_numeric_camera_refit": true,
+      "rights": "Private documentary reference; redistribution and texture/decal use not established. Pixels remain outside repository."
+    },
+    {
+      "path": "/workspace/wewa-assets/references/headlamp/cowl-black-8495.jpg",
+      "exists": true,
+      "sha256": "4632b16a5d074f316a412f36e5d85df0a6732833497630adb16aee24b88ce79a",
+      "sha_origin": "Existing frozen provenance, not reopened visually or re-downloaded in this audit",
+      "page_url": "https://elgaragedemimoto.com/tapas-laterales/3979-mascara-fairing-cubre-faro-bajaj-boxer-150-ebony-black.html",
+      "image_url": null,
+      "role": "documentary_only_no_PBR_or_builder_texture",
+      "needed_to_replay_PBR1_from14": false,
+      "needed_by_original_numeric_camera_refit": true,
+      "rights": "Private documentary reference; redistribution and texture/decal use not established. Pixels remain outside repository."
+    },
+    {
+      "path": "/workspace/wewa-assets/references/headlamp-cowl/PF74013F-partsmybike.png",
+      "exists": true,
+      "sha256": "b2b9d64594490fb5258993250d44f61b880132bcdd0abb355fd412817b796fdc",
+      "sha_origin": "Existing frozen provenance, not reopened visually or re-downloaded in this audit",
+      "page_url": null,
+      "image_url": "https://partsmybike.com/wp-content/uploads/2025/09/headlamp-fairing-flame-red-bajaj-boxer-bm150.png",
+      "role": "documentary_only_no_PBR_or_builder_texture",
+      "needed_to_replay_PBR1_from14": false,
+      "needed_by_original_numeric_camera_refit": false,
+      "rights": "Private documentary reference; redistribution and texture/decal use not established. Pixels remain outside repository."
+    },
+    {
+      "path": "/workspace/wewa-assets/references/headlamp-cowl/PF7401X3-Matriz.jpg",
+      "exists": true,
+      "sha256": "26e4ef467850e181907d06b8a84c1865ab8dc58ff533b945570eee4a8500aff4",
+      "sha_origin": "Existing frozen provenance, not reopened visually or re-downloaded in this audit",
+      "page_url": null,
+      "image_url": "https://bajajmatriz.com/wp-content/uploads/2020/07/PF7401X3.jpg",
+      "role": "documentary_only_no_PBR_or_builder_texture",
+      "needed_to_replay_PBR1_from14": false,
+      "needed_by_original_numeric_camera_refit": false,
+      "rights": "Private documentary reference; redistribution and texture/decal use not established. Pixels remain outside repository."
+    }
+  ],
+  "private_temporary_diagnostics": [
+    {
+      "path": "/tmp/wewa-cowl-source14-points.json",
+      "exists": true,
+      "sha256_snapshot": "54d14ff1b60101971f081ab523ad493dd7e0011e27957a06e13c8deb105911a4",
+      "role": "temporary_diagnostic_geometry_derivative",
+      "required_for_PBR1_replay": false,
+      "purpose": "Historical native-camera14 preview reads this GLB14-derived point dump; no explicit dump producer located among inspected scripts.",
+      "stable_recipe_master": false,
+      "producer_chain_publicly_closed_by_this_audit": false
+    },
+    {
+      "path": "/tmp/wewa-cowl-source3-points.json",
+      "exists": true,
+      "sha256_snapshot": "9baeaf685b665dab5d0b37bd57829479815930b986e1d9dfd8396a356134a05b",
+      "role": "temporary_diagnostic_geometry_derivative",
+      "required_for_PBR1_replay": false,
+      "purpose": "Original numerical-camera research reads source3-derived point dump before fitting; not read by finalPBR render.",
+      "stable_recipe_master": false,
+      "producer_chain_publicly_closed_by_this_audit": false
+    }
+  ],
+  "other_private_outputs": {
+    "preview_checkpoints": "Own sourcefreeze16 mentions private previewcheckpointSHA; preview images/EXR/checkpoint outputs are review history, not input geometry/material masters.",
+    "final_EXR": "freeze25 lists four privateEXR outputs; finalrenderer writes them and may read existing files only for resume hash validation. A new isolated render can create outputs without an oldEXR; no EXR is shader input.",
+    "rejected_CSG_cache": "build13/14 write rejectedCSGdump under private work-in-progress only on rejection. No builder reads it as master.",
+    "copied_pixels": false
+  },
+  "findings": [
+    {
+      "id": "COWL-DEP-01",
+      "state": "bounded_material_restart_available",
+      "statement": "Exactgray14 master and publicJSON metadata/materialplan suffice for PBR1 recipe; source is local editable geometry, no private texture/bake master."
+    },
+    {
+      "id": "COWL-DEP-02",
+      "state": "publication_payload_coordination_needed",
+      "statement": "Nestedgray14manifest in16/25 does not include its payload automatically. CameraJSON/sharedhelper are additional actual render imports outside16/25. Local untracked new files are not certified as publicremote."
+    },
+    {
+      "id": "COWL-DEP-03",
+      "state": "integral_chain_not_closed",
+      "statement": "Actual14→13→12master dependencies are explicit and locally present, but predecessorbinary/metadata are omitted by each successor studyfreeze. Do not turn remaining-v3directlink13 into an integral recipe claim."
+    },
+    {
+      "id": "COWL-DEP-04",
+      "state": "private_research_distinct_from_asset_inputs",
+      "statement": "Originalcamera fitting needs privatephotos andtemporarysource3points. Historicalnative14preview needs temporarysource14points and isolatedproject()function. PreparednumericJSON allows PBRfinalcamera replay without privatepixels; originalresearch regeneration is not declared publiclyclosed."
+    },
+    {
+      "id": "COWL-DEP-05",
+      "state": "environment_and_isolation",
+      "statement": "Blender4.3.2 with bundlednumpy for builders; CSG workers run hostPython via shutil.which(python), requiring manifold3d/numpy. Node checker imports@gltf-transform/extensions in additioncore/validator; package-lock records resolution. Optional originalcamera fitting adds scipy/Pillow not required by PBRbuilder. Builders overwrite named active paths, so any future replay belongs in isolatedcopy/newrevision."
+    }
+  ],
+  "all_stable_dependencies_exist": true,
+  "private_master_missing_for_PBR1": false,
+  "full_research_and_earlier_geometry_chain_closed": false,
+  "public_remote_publication_verified": false,
+  "existing_gels_or_global_changed": false,
+  "art_acceptance_or_physical_dimension_validation": false,
+  "limitations": [
+    "No Blender opening, newchecks or reconstruction run. SHA-attribution audit does not prove bitwise regeneration.",
+    "No private photographs/EXR/caches copied or republished. Source-dependent photographs retain documentary-only rights.",
+    "Not part of publication11 and no freeze was amended; root owns next payload publication."
+  ]
+}

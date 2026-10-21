@@ -1,0 +1,70 @@
+{
+  "created_utc": "2026-10-21T08:23:05.944154+00:00",
+  "scope": "Official documentation/source reading only; no Blender or model execution",
+  "official_sources": [
+    {
+      "path": "/workspace/wewa-assets/audits/ao-uv-padding-docs/api-uv.html",
+      "url": "https://docs.blender.org/api/4.3/bpy.ops.uv.html",
+      "sha256": "3f12d7e1d934e52504eca77b3f55407afe6d6e3bd39eb2e300f0de31e499b14d",
+      "bytes": 400816
+    },
+    {
+      "path": "/workspace/wewa-assets/audits/ao-uv-padding-docs/uv_pack.cc",
+      "url": "https://raw.githubusercontent.com/blender/blender/v4.3.2/source/blender/geometry/intern/uv_pack.cc",
+      "sha256": "b4da54618daf692fd0d1f8d3fce9a0b1c16877426e0875228c1ce28a456854b8",
+      "bytes": 85750
+    },
+    {
+      "path": "/workspace/wewa-assets/audits/ao-uv-padding-docs/uvedit_unwrap_ops.cc",
+      "url": "https://raw.githubusercontent.com/blender/blender/v4.3.2/source/blender/editors/uvedit/uvedit_unwrap_ops.cc",
+      "sha256": "2003a0ce8b86afd6a25ee51bdc7cab1585434d7a0e3030a588666c8085d4871d",
+      "bytes": 138181
+    },
+    {
+      "path": "/workspace/wewa-assets/audits/ao-uv-padding-docs/bmesh_query_uv.cc",
+      "url": "https://raw.githubusercontent.com/blender/blender/v4.3.2/source/blender/bmesh/intern/bmesh_query_uv.cc",
+      "sha256": "c4e8f280bccb9155c0328a3add342f427ed38f775ee307d28fe29a844c065c31",
+      "bytes": 6380
+    },
+    {
+      "path": "/workspace/wewa-assets/audits/ao-uv-padding-docs/manual-uv-editing.html",
+      "url": "https://docs.blender.org/manual/en/4.3/modeling/meshes/uv/editing.html",
+      "sha256": "80b2139a138c6d612a539979917575fe37d1cecfb82cf5b538ae59400d1588df",
+      "bytes": 444850
+    }
+  ],
+  "reported_case": {
+    "triangles": 657316,
+    "meshes": 12,
+    "UV_AO_index": 1,
+    "angle_deg": 66,
+    "second_pack_margin_fraction": 0.015625,
+    "resolution": 1024,
+    "border_px": 8,
+    "root_reported_failed_zero_UV_triangles": 637656,
+    "root_reported_failed_anomalies": 644312
+  },
+  "failure_file_read": false,
+  "model_or_Blender_run": false,
+  "conclusion": "Measure current rejected atlas and SmartProject-only returnOBJECT first; small-local-face rejection and fixed-fraction packing pressure are separate testable hypotheses, not established diagnosis.",
+  "source_lookup_failures": [
+    {
+      "url": "https://raw.githubusercontent.com/blender/blender/v4.3.2/scripts/startup/bl_operators/uvcalc_smart_project.py",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ],
+  "prepared_measurement_tool": {
+    "path": "tools/measure_upper_engine_smart_uv_v1.py",
+    "sha256": "8e1b46eb3ab75dcefb0f9e267735d93005087d45cdf02a2850da838cc018440e",
+    "state": "PREPARED_NOT_RUN",
+    "static_compile": "python -m py_compile passed; bpy not imported/executed by compilation",
+    "pinned_rejected_blend_sha256": "7017d79d4fb8d8279ba544173e0d9b3586346af90da2d59267d5ecf3c3ea0e25",
+    "notes": [
+      "Counts area and absdet thresholds separately, plus same strict anomaly union; no threshold loosened.",
+      "Computes zeroUV count on localBMeshfaces≤1e-12 vsabove to test correspondence.",
+      "At most3fixed triangleexamples perobject, each has before/after, no large triangleJSON.",
+      "Optional --count-islands: exact sharedmesh-edgeUV connectivity and second count cutting flaggedseams.",
+      "Raw geometry/cornerN/nonAOuv hashes plus privateinput/spec/7frozenproduction-sourceSHA protected. No evaluatedmesh/tangent recompute, bake/export/save/secondpack."
+    ]
+  }
+}

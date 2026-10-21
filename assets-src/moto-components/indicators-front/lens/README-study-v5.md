@@ -1,0 +1,5 @@
+# Lens5 — broad visible-zone gray hypothesis
+
+Six smooth shallow original ridges represent the visible broad-zone appearance of the related transparent DU201016/PF samples. Count, profile,120µm peak, pitch and external-face assignment are working choices, not measurements or an optical prescription. Construction loads frozen4 and conformingly refines the cap, preserving mouth/notch/rim. The height field and differential use Float64; source per-corner normals are transported before their documented Blender encoding. No exported-normal repair.
+
+Three actual12sample PNGs were read: whole gray, an insufficient near-uniform first reflection retained as diagnostic, and a useful isolated strip-key macro. The latter shows continuous reflection tracks. Actual source/export geometry and strict/UV checks are recorded. This remains partial G3; fine perimeter structure, amber/transmission and untranscribed marks are not finished. No hidden reflector, socket, bulb, approval text, photo texture or artistic/fit acceptance.

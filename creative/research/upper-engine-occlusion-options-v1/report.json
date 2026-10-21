@@ -1,0 +1,366 @@
+{
+  "schema": "wewa.upper-engine-occlusion-options.v1",
+  "date_utc": "2026-10-21",
+  "scope": "Deux pistes seulement, recherche préparatoire. Aucun bake/rendu, copie source, modification de matière/GLB/outils gelés, code production ou registre.",
+  "recommendation": "Priorité1 : dérivé AO explicite de la copie de revue, canalR glTF, UV dédiés. Piste2 : ombres directes de la lampe SUN seulement pour la comparaison chaude du v4 ; ne résout pas le ciel neutre.",
+  "inputs": {
+    "source": "assets-src/moto-components/upper-engine-current-review-v1/upper-engine-current-review-v1.blend",
+    "source_sha256": "7c62b0c1752751632318c6c5347cbe6ff2667e463db05e72233b87a6c043eb58",
+    "export": "assets-src/moto-components/upper-engine-current-review-v1/upper-engine-current-review-v1-delivery.glb",
+    "export_sha256": "d0b1a121e325e6eceeb0da626268beeccd761b345a0235984c5caa5fc04bc580",
+    "collection": "MOTORCYCLE18_LINKED_REVIEW_COPIES",
+    "libraries": 7,
+    "physical_mesh_copies": 12,
+    "distinct_GLTF_meshes": 11,
+    "GLTF_primitives": 13,
+    "materials": 12,
+    "physical_nodes": [
+      {
+        "name": "M18 [engine-cylinder] Engine cylinder finned hollow casting - e",
+        "mesh": 0
+      },
+      {
+        "name": "M18 [engine-head-v3] Engine UG5 head hollow exterior casting - ",
+        "mesh": 1
+      },
+      {
+        "name": "M18 [engine-tappet-cap] UG5 tappet cap FRONT - editable conditi",
+        "mesh": 2
+      },
+      {
+        "name": "M18 [engine-tappet-cap] UG5 tappet cap REAR - same conditional ",
+        "mesh": 2
+      },
+      {
+        "name": "M18 [engine-ohc-cover] UG5 OHC cast cover body - conditional ca",
+        "mesh": 3
+      },
+      {
+        "name": "M18 [engine-ohc-stub] OHC metallic hollow tube with one distal ",
+        "mesh": 4
+      },
+      {
+        "name": "M18 [engine-spark-plug-v2] Plug exposed ceramic five estimated ",
+        "mesh": 5
+      },
+      {
+        "name": "M18 [engine-spark-plug-v2] Plug metal body rounded hex - hidden",
+        "mesh": 6
+      },
+      {
+        "name": "M18 [engine-spark-plug-v2] Plug separate estimated uncompressed",
+        "mesh": 7
+      },
+      {
+        "name": "M18 [engine-spark-plug-v2] Plug separate exposed SAE-like termi",
+        "mesh": 8
+      },
+      {
+        "name": "M18 [engine-spark-cap-v2] Molded spark cap body - conditional c",
+        "mesh": 9
+      },
+      {
+        "name": "M18 [engine-spark-cap-v2] Visible short-port metallic contact -",
+        "mesh": 10
+      }
+    ],
+    "UV_inventory": [
+      {
+        "mesh": 0,
+        "name": "Engine cylinder finned hollow casting - editable candidate clea",
+        "primitive": 0,
+        "material": 0,
+        "uv_attributes": []
+      },
+      {
+        "mesh": 0,
+        "name": "Engine cylinder finned hollow casting - editable candidate clea",
+        "primitive": 1,
+        "material": 1,
+        "uv_attributes": []
+      },
+      {
+        "mesh": 1,
+        "name": "Engine UG5 head hollow exterior casting - editable candidat.003",
+        "primitive": 0,
+        "material": 2,
+        "uv_attributes": []
+      },
+      {
+        "mesh": 1,
+        "name": "Engine UG5 head hollow exterior casting - editable candidat.003",
+        "primitive": 1,
+        "material": 3,
+        "uv_attributes": []
+      },
+      {
+        "mesh": 2,
+        "name": "UG5 tappet cap FRONT - editable conditional candidate cleaned e",
+        "primitive": 0,
+        "material": 4,
+        "uv_attributes": []
+      },
+      {
+        "mesh": 3,
+        "name": "UG5 OHC cast cover body - conditional candidate cleaned evaluat",
+        "primitive": 0,
+        "material": 5,
+        "uv_attributes": []
+      },
+      {
+        "mesh": 4,
+        "name": "OHC metallic hollow tube with one distal retention lip - editab",
+        "primitive": 0,
+        "material": 6,
+        "uv_attributes": []
+      },
+      {
+        "mesh": 5,
+        "name": "Plug exposed ceramic five estimated lower ribs - unmarked",
+        "primitive": 0,
+        "material": 7,
+        "uv_attributes": []
+      },
+      {
+        "mesh": 6,
+        "name": "Plug metal body rounded hex - hidden insertion plain",
+        "primitive": 0,
+        "material": 8,
+        "uv_attributes": []
+      },
+      {
+        "mesh": 7,
+        "name": "Plug separate estimated uncompressed seat washer",
+        "primitive": 0,
+        "material": 9,
+        "uv_attributes": []
+      },
+      {
+        "mesh": 8,
+        "name": "Plug separate exposed SAE-like terminal - conditional option",
+        "primitive": 0,
+        "material": 8,
+        "uv_attributes": []
+      },
+      {
+        "mesh": 9,
+        "name": "Molded spark cap body - conditional candidate.004",
+        "primitive": 0,
+        "material": 10,
+        "uv_attributes": [
+          "TEXCOORD_0"
+        ]
+      },
+      {
+        "mesh": 10,
+        "name": "Visible short-port metallic contact - section estimated",
+        "primitive": 0,
+        "material": 11,
+        "uv_attributes": []
+      }
+    ],
+    "UV_inventory_limit": "Présence des attributs GLB inspectée, pas un audit des UV source non exportés ni de chevauchement UV0 du capHT.",
+    "occlusion_textures": 0
+  },
+  "actual_images_opened": [
+    {
+      "path": "creative/reviews/upper-engine-occlusion-diagnostic-v1/front/actual-babylon-AO-enabled.png",
+      "sha256": "12d2e8272652852040d9521d9d718774b58a779ba6ee69b0dd26276982b41902"
+    },
+    {
+      "path": "creative/reviews/upper-engine-occlusion-diagnostic-v1/front/actual-babylon-AO-disabled.png",
+      "sha256": "ff113a51c820ba617a3a216d13188c573d9089e6c7aa142bd8b958f011b52852"
+    }
+  ],
+  "observed_baseline": "Le diagnostic SSAO2v3 assombrit les creux mais présente des points/contours lumineux irréguliers. Etat refusé conservé ; aucune cause unique isolée et aucune retouche d’albédo proposée. V2 garde le sampling HDR tourné de+pi/2.",
+  "official_web_sources": [
+    {
+      "path": "/workspace/wewa-assets/references/upper-engine-occlusion-options-v1/Blender43-baking.html",
+      "url": "https://docs.blender.org/manual/en/4.3/render/cycles/baking.html",
+      "sha256": "97645079e6849ff996000680b9cf65f539875c0a9940c8d7e162ac78d000200a",
+      "bytes": 408059,
+      "relevant_passage_actually_read": true
+    },
+    {
+      "path": "/workspace/wewa-assets/references/upper-engine-occlusion-options-v1/Blender43-gltf.html",
+      "url": "https://docs.blender.org/manual/en/4.3/addons/import_export/scene_gltf2.html",
+      "sha256": "499bd7d6eeb96f647977d38a154bee1de324509c3e05688214a5006708f4ce14",
+      "bytes": 470932,
+      "relevant_passage_actually_read": true
+    },
+    {
+      "path": "/workspace/wewa-assets/references/upper-engine-occlusion-options-v1/glTF-Specification.adoc",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF/main/specification/2.0/Specification.adoc",
+      "sha256": "2b028eeb43660d8161d7ac4f1f3883b0ea8f9ceaca3acb5fbdf08776548b75f8",
+      "bytes": 189297,
+      "relevant_passage_actually_read": true
+    },
+    {
+      "path": "/workspace/wewa-assets/references/upper-engine-occlusion-options-v1/Babylon-shadows.md",
+      "url": "https://raw.githubusercontent.com/BabylonJS/Documentation/master/content/features/featuresDeepDive/lights/shadows.md",
+      "sha256": "312a07897a5d4c2a215efa80e2e2b82503bb9522aa98db04d893c6e9dade4757",
+      "bytes": 41728,
+      "relevant_passage_actually_read": true
+    },
+    {
+      "path": "/workspace/wewa-assets/references/upper-engine-occlusion-options-v1/Babylon-shadow-math.md",
+      "url": "https://raw.githubusercontent.com/BabylonJS/Documentation/master/content/features/featuresDeepDive/lights/mathShadows.md",
+      "sha256": "0d6e63fa064fc974ee46e20e5945fcbc18ad6974c53e69200a38e4fd18269e4c",
+      "bytes": 17750,
+      "relevant_passage_actually_read": true
+    },
+    {
+      "path": "/workspace/wewa-assets/references/upper-engine-occlusion-options-v1/Blender43-AO-node.html",
+      "url": "https://docs.blender.org/manual/en/4.3/render/shader_nodes/input/ao.html",
+      "sha256": "828cebccbfef71f211ad9c617d11d306f3ea690cab29b6acb9091734daca6e6a",
+      "bytes": 403345,
+      "relevant_passage_actually_read": true
+    }
+  ],
+  "installed_sources_read": [
+    {
+      "path": "tools/motorcycle-material-camera-lab-v1/review.js",
+      "sha256": "20e0d8cc0a2ff14132e20729d91c6c07d0ff8dd9141b6662bd241ac87f49e8cc"
+    },
+    {
+      "path": "tools/motorcycle-material-camera-lab-v2/review.js",
+      "sha256": "7152820c179f10f232e2d94a29dd0787bc45cddc7bc0ea073beb6c402830a023"
+    },
+    {
+      "path": "tools/motorcycle-material-camera-lab-v3/review.js",
+      "sha256": "c197c55cea1fab4f21a320c4dc1e6b6186cbf4e890fdfa9e1b74d1ef193900dc"
+    },
+    {
+      "path": "tools/render_motorcycle_material_lighting_review_v4.py",
+      "sha256": "6830a7cbf107691ee231affddbb40403ea5d46fff6c5ff1740e78ae3ca865f1b"
+    },
+    {
+      "path": "tools/build_motorcycle18_assembly_v2.py",
+      "sha256": "4957336316a9ca32061ab4f7aaf9384bba38d4f0415cc952621e25aec67e12da"
+    },
+    {
+      "path": "tools/check_linked_motorcycle_review_export.mjs",
+      "sha256": "8b93302fd834be4c422414468d531db74d0587fa7d5add88859088d51b60425b"
+    },
+    {
+      "path": "node_modules/@babylonjs/loaders/glTF/2.0/glTFLoader.pure.js",
+      "sha256": "a2e34caa90dc9b700159df16185c4516d1c3c6916fee65126f2ef7ce9ad797fb"
+    },
+    {
+      "path": "node_modules/@babylonjs/loaders/glTF/2.0/pbrMaterialLoadingAdapter.js",
+      "sha256": "17fcadda4d9756bed238b708fc9e4db21710e095e0ff60992aca6ca72148b341"
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Materials/PBR/pbrBaseMaterial.pure.js",
+      "sha256": "fc3a71a18055e31c9e222a81294ad352d5d8a2088d97a65b04b208402302fbf5"
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrBlockAmbientOcclusion.js",
+      "sha256": "c6af331657635b26086f536a315853305d2e695d52074db623bcf2f9c7115349"
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrBlockFinalLitComponents.js",
+      "sha256": "1a7fdb1c7f2902029561fc2712e507b028fcc643f0da3491ab1ae71a679f24a0"
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrBlockFinalUnlitComponents.js",
+      "sha256": "7d3390f1fe7f491ac5c405e9368a2c21ae599904a737f9dc7ccc9fe5e3cb579b"
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Shaders/ShadersInclude/pbrBlockReflectance.js",
+      "sha256": "9e1d7d0bfcebff4e8af216757fbe33d172f21590a82a329551255e56af101586"
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Lights/Shadows/shadowGenerator.js",
+      "sha256": "2c094f0c900a6cffd385a17fe8e0ceafe04b801d0e4bb460784ca22223bd62ac"
+    },
+    {
+      "path": "/workspace/wewa-tools/blender-4.3.2-linux-x64/4.3/scripts/addons_core/io_scene_gltf2/blender/exp/material/texture_info.py",
+      "sha256": "25c0d8b54424e7dcef38b56fe869c4e6a90699a228617b7b665a6426b089c453"
+    },
+    {
+      "path": "/workspace/wewa-tools/blender-4.3.2-linux-x64/4.3/scripts/addons_core/io_scene_gltf2/blender/exp/material/materials.py",
+      "sha256": "02f48374fe3b0ee8c4c845c553f33558c1eea9927955709baaa36dfdd4db6aa4"
+    },
+    {
+      "path": "/workspace/wewa-tools/blender-4.3.2-linux-x64/4.3/scripts/addons_core/io_scene_gltf2/blender/exp/primitive_extract.py",
+      "sha256": "af539328c81432c23213e5c1d300b0b1646b528c3b419a5b18bfaa21597ad9ae"
+    }
+  ],
+  "route_1_AO_derivative": {
+    "goal": "Approximation d’accessibilité géométrique locale, indépendante de la caméra et de l’éclairage ; ne reproduit pas le ciel directionnel, le rebond, la transmission ou l’occlusion spéculaire complète.",
+    "immutable_basis": "Ouvrir la revue figée en copie de travail distincte ; copier et rendre locaux les datablocks mesh et matériaux concernés. Conserver les7 bibliothèques et fichiers sources figés ; pas de make_local/save dans leur chemin ni de modification de leurs collections.",
+    "geometry_policy": "Conserver les12 copies physiques, matrices locales/monde, parents, faces, normales évaluées et pose provisoire. Pas d’union, remesh, décimation, changement de silhouette ou quatrième auteur de géométrie. Une UV est un attribut de surface ; ses coutures peuvent néanmoins dédoubler/réordonner des sommets exportés.",
+    "UV_plan": "Créer UV_AO dédiée (index1) sur les copies recevant AO. Préserver UV0 du capHT et ses images/normales/tangentes. Sur les copies sans UV0, créer un slot UV0 réservé sans écraser une donnée source, puis UV_AO ; enregistrer les indices réels. Utiliser explicitement ShaderNodeUVMap(UV_AO), pas seulement la UV active. Atlas global non chevauchant pour tous les récepteurs sélectionnés, pas douze dépliages superposés dans le même0..1.",
+    "instance_policy": "Les deux copies physiques de tappet partagent actuellement une définition GLB. Avec AO de voisinage, elles exigent des UV/occurrences distinctes si elles reçoivent AO, donc des mesh data de dérivé distinctes et si besoin des matériaux de dérivé propres. Un AO purement local peut au contraire être réutilisé si les formes sont identiques ; ne jamais réutiliser silencieusement une ombre de voisin différente.",
+    "bake_method": {
+      "preferred": "Cycles : ShaderNodeAmbientOcclusion sortieAO (facteur sans teinte) -> Emission blanche, bakeEMIT vers ImageTexture active dédiée. Le shader de bake est temporaire sur copies locales ; restaurer les Principled initiaux avant export, puis ajouter seulement le hook glTF Occlusion. Cette variante rend Distance/OnlyLocal explicites plutôt que d’hériter d’un World non consigné.",
+      "official_alternative": "Le bake Cycles typeAO est documenté et ignore les lampes. Si choisi, consigner ses réglages réels ; ne pas déduire la distance de MaxRayDistance du SelectedToActive, qui est une projection haute/basse résolution différente.",
+      "distance_initial_m": 0.015,
+      "distance_status": "Choix exploratoire borné pour les creux proches, pas cote OEM ni réglage optimal ; ne pas le présenter comme équivalent du rayon SSAO15mm. Une seule distance initiale, pas une batterie.",
+      "inside": false,
+      "first_only_local": true,
+      "first_scope": "AO propre des pièces, surtout culasse/cylindre et leurs ailettes ; les autres copies restent présentes mais ne contribuent pas avec OnlyLocal=true. Aucun objet ne doit être joint car cela modifierait le sens de local.",
+      "assembly_option": "OnlyLocal=false inclut les autres copies visibles. Réserver cette variante aux contacts/pose explicitement figés. La revue actuelle reste un assemblage provisoire ; sa carte d’assemblage n’est pas un AO réutilisable sur toute la moto ou sur des pièces déplacées. Ne pas multiplier AO local et AO assemblage : ils compteraient deux fois les mêmes occlusions.",
+      "initial_texture_px": [
+        1024,
+        1024
+      ],
+      "initial_margin_px": 8,
+      "sampling": "Fixer et consigner séparément les échantillons Cycles et du nodeAO, le backendCPU, seed et durée lors de la future exécution. Aucun nombre n’est ici qualifié par un bake.",
+      "target": "Image originale non-color, noir0/blanc1, sans AgX/exposition/couleur de lumière/albédo ; PNG linéaire de données ; aucun denoise ou contraste peint pour masquer un défaut.",
+      "clear_policy": "Atlas partagé : initialiser une fois au blanc puis ne pas effacer les îlots déjà cuits à chaque nouvel objet. Toutes les faces doivent avoir une cible ImageTexture active de bake dans leurs slots matériaux.",
+      "LOD_limit": "Un atlas doit suivre les UV/LOD et les contacts utilisés lors de la cuisson. Une nouvelle topologie/pose ou réutilisation modulaire exige une validation ou un bake adapté."
+    },
+    "export_contract": {
+      "hook": "Nodegroup exact glTF Material Output, entréeOcclusion ; ImageTexture non-color, canalR via SeparateColor/connexion reconnue, UVMap expliciteUV_AO. Le hook n’est pas censé changer le rendu Principled Cycles.",
+      "glTF": "material.occlusionTexture.index +texCoord:1 +strength:1 ; TEXCOORD_1 présents sur chaque primitive qui référence cette carte ; image R en transfert linéaire. Les canauxGB ne sont pas lus pour AO. AO séparé des cartes metal/rough existantes au premier essai.",
+      "factor": "AO_effectif=1+strength*(R-1). Strength0 désactive,1 utilise la carte. Aucun produit AO dans baseColorFactor ou pixels albédo.",
+      "loader9_31": "occlusionTexture.nonColorData=true -> PBR ambientTexture ; useAmbientInGrayScale=true ; texCoord -> coordinatesIndex ; strength -> ambientTextureStrength. Le défaut ambientTextureImpactOnAnalyticalLights=0 préserve les lumières directes. L’IBL diffus est modulé et une approximation de radiance occlusion peut exister selon les defines ; ce n’est pas un multiplicateur arbitraire sur l’image finale."
+    },
+    "minimal_separate_future_protocol": [
+      "Geler une fiche de dérivé nouvelle avec SHA des7libs,12copies, matrices, réglages AO, UV/atlas et chemin de sortie neuf ; ne pas renommer ni écraser le témoin.",
+      "Construire uniquement UV/atlas et copie locale des hookups, puis cuire la carte originale ; vérifier îlots, bordures et absence de recouvrement des zones recevant des valeurs distinctes. Pas de rendu ni bake fait dans cette mission.",
+      "Comparer les buffers POSITION/NORMAL/indices aux témoins si leur organisation est stable. En cas de coutures nouvelles, vérifier par nœud les mêmes triangles ORIENTÉS et attributs par coin, matrices et affectations de matière ; pas seulement bornes/triangles comptés. Préserver UV0/T/maps du capHT par correspondance des coins. Une égalité byte à byte ne peut être promise après scission UV.",
+      "Inspecter le vrai JSON/binaire glTF : texCoord1, UV_AO effectifs, image R embarquée byte/pixels conformes, couleur non-color ; Principled constants et cartes préexistantes inchangés ; aucune tangente issue de UV_AO ne doit remplacer celles de la normalmapUV0.",
+      "Charger le dérivé seul dans un inspecteur séparé au cadrage avant existant, HDR+pi/2 et exposition inchangés, sansSSAO ni lampe ajoutée. Vérifier runtime ambientTexture.coordinatesIndex=1, gammaSpace=false, strength réellement appliqué et impactAnalytical=0.",
+      "Dans cette seule caméra, obtenir le contrôle strength0 puis1, vérifier le shader/texture réellement utilisés et les creux sans halo/bruit de bord/couture ; aucun score de réalisme ni parité AgX/ACES. Ne pas élargir avant lecture de cette paire."
+    ]
+  },
+  "route_2_direct_light_shadows": {
+    "scope": "Piste secondaire uniquement pour la vue warm-late-day du renderer_v4. La vue neutral-outdoor a son SUN masqué et seulement le HDR : ajouter un soleil pour la rendre moins plate changerait le problème de comparaison.",
+    "actual_source_lamp": {
+      "type": "SUN",
+      "energy_native": 1.5,
+      "color_native_RGB": [
+        1,
+        0.72,
+        0.48
+      ],
+      "angular_size_deg": 2,
+      "EulerXYZ_deg": [
+        65,
+        -20,
+        -35
+      ],
+      "direction_Blender_local_minusZ": [
+        0.6382402697817541,
+        0.6594968679207888,
+        -0.39713126196710263
+      ],
+      "direction_gltf": [
+        0.6382402697817541,
+        -0.39713126196710263,
+        -0.6594968679207888
+      ],
+      "direction_method": "Calcul de Rz(-35)*Ry(-20)*Rx(65)*(0,0,-1), puisP(x,y,z)=(x,z,-y), sans Blender ni nouveau rendu."
+    },
+    "future_setup": "Nouvelle variante avec DirectionalLight suivant cette direction et ShadowGenerator. Tous les mesh instances physiques pertinents caster et receiveShadows=true. Couper toute lumière de remplissage non prévue, conserver le HDR tourné et la caméra ; utiliser un volume d’ombre serré autour de cet assemblage. Aucune UV nécessaire pour shadowmap.",
+    "limits": "Babylon intensity/photometric mode et energy1.5 Cycles ne sont pas automatiquement équivalents ; consigner/calibrer séparément. PCF peut lisser la shadowmap mais ne reproduit pas automatiquement le disque solaire2° ; taille de carte, étendue, profondeur, bias et normalBias sont des paramètres à journaliser, pas des cotes de pièce. Ajuster le biais avec preuve d’acne/peter-panning, pas pour masquer des ailettes. Ombres directes ne masquent pas le HDR et ne remplacent pas le bakeAO du ciel.",
+    "minimal_comparison": "Une caméra et paire shadowsOff/On avec la même lampe allumée, comparée à warm-late-day natif ; aucun soleil ne serait ajouté à la référence neutre par convenance."
+  },
+  "no_third_route": "Ni nouveau SSAO de réglages en série, ni nouveau pipeline général ou moteur de visibilité proposé ici.",
+  "implemented_or_baked": false,
+  "source_copy_created": false,
+  "photometric_or_art_parity": false
+}

@@ -1,0 +1,719 @@
+{
+  "component_id": "MOTO-ENGINE-INTAKE-CLAMP-BAND-001",
+  "revision": "engine-intake-clamp-band-v1",
+  "source_sha256": "3fc41201dc15a252d00f661b9b6abc5083c12bf73ac6926b69ff7b08930e036e",
+  "source_check": {
+    "component_id": "MOTO-ENGINE-INTAKE-CLAMP-BAND-001",
+    "source_sha256": "3fc41201dc15a252d00f661b9b6abc5083c12bf73ac6926b69ff7b08930e036e",
+    "export_sha256": "43f8260565e55972a8e200124d586c0aac0207b5135774fba3c2d712cd81da6d",
+    "collection": "WEWA_ENGINE_INTAKE_CLAMP_BAND",
+    "root": "Intake clamp band isolated datum - not tightened",
+    "geometry": [
+      {
+        "name": "DP101198 related smooth band and formed ears - isolated",
+        "vertices": 12064,
+        "faces": 24132,
+        "connected_shells": 1,
+        "non_manifold_edges": 0,
+        "signed_volume_m3": 8.535762714201713e-07
+      }
+    ],
+    "triangles": 24132,
+    "working_ear_X_abs_m": 0.0094,
+    "working_ear_bore_diameter_m": 0.0042,
+    "all_dimensions_estimated": true,
+    "automatic_attachment_allowed": false,
+    "remaining_observed_parts": [
+      "Tangential screw/external hardware",
+      "Curved inner overlapping bridge",
+      "Second occurrence and installed pose"
+    ],
+    "CSG_report": {
+      "stages": [
+        {
+          "operation": "union",
+          "part": "Editable integral rounded folded lug -1",
+          "status": "NoError",
+          "before_volume_m3": 8.167673174707128e-07,
+          "after_volume_m3": 8.435251854210655e-07
+        },
+        {
+          "operation": "union",
+          "part": "Editable integral rounded folded lug 1",
+          "status": "NoError",
+          "before_volume_m3": 8.435251854210655e-07,
+          "after_volume_m3": 8.702830533714181e-07
+        },
+        {
+          "operation": "subtract",
+          "part": "Editable finite bore Xaxis lug -1",
+          "status": "NoError",
+          "before_volume_m3": 8.702830533714181e-07,
+          "after_volume_m3": 8.619296657849104e-07
+        },
+        {
+          "operation": "subtract",
+          "part": "Editable finite bore Xaxis lug 1",
+          "status": "NoError",
+          "before_volume_m3": 8.619296657849104e-07,
+          "after_volume_m3": 8.535762781984026e-07
+        }
+      ],
+      "tool": "manifold3d",
+      "tool_version": "3.3.2",
+      "solid_components": 1,
+      "volume_m3": 8.535762781984026e-07
+    },
+    "no_global_post_csg_bevel": true,
+    "art_accepted": false,
+    "geometry_source_sha256": "b67a575d741ddea2c9f2ca0cdf572284fecb5e07570c065f94ed8b426dc9d542",
+    "source_positions_polygons_corner_normals_matrices_exact": true,
+    "shape_digest_before": "d84fdfd949aeba1052a2125d7751e6691eccaa0bd52f9f54b214549f587558ae",
+    "shape_digest_after": "d84fdfd949aeba1052a2125d7751e6691eccaa0bd52f9f54b214549f587558ae",
+    "old_UV_digest": "4de00e52601620f2de8d0de696f417f2b02b06eb6b601666a28486919733a4b0",
+    "new_UV_digest": "56b53a25022e50a0cb8351c2f780b1e818f92857843e6e1b4beba95d06818cd2",
+    "UV_changed_explicitly_in_G4": true,
+    "source_atlas_zero_area_triangles": 0,
+    "source_UV_area_sum": 0.28791922054725494,
+    "authored_source_surface_area_m2": 0.003021688156438218,
+    "authored_mean_atlas_texel_m": 0.00010004365170350497,
+    "bake_input_npz": "material-atlas-input.npz",
+    "bake_input_sha256": "b93112bbc0ee0e2d10d90284e49d40bcf15eeaa7196e84f14b24005798b78555",
+    "material": {
+      "proposal": "Original restrained yellow-green static color-field proposal over clean metallic baseline",
+      "linear_basecolor": [
+        0.44,
+        0.39,
+        0.16
+      ],
+      "metallic": 1.0,
+      "roughness": 0.34,
+      "status": "estimated representative, not measured coating chemistry/color/roughness",
+      "photo_pixels_used": false,
+      "normalmap": false,
+      "textures": true,
+      "limits": [
+        "Photo supports yellow/green patches qualitatively. Original map is a controlled visible-appearance hypothesis, not measured chemistry, thickness or angular interference.",
+        "No copied photographic pixels, shadows, scratches, oxidation or grain-depth map.",
+        "Exact currentRDC treatment/color/roughness not received. Uniform clean baseline preserved as short comparison only."
+      ],
+      "original_color_field": {
+        "seed": 101198,
+        "resolution": 1024,
+        "world_wavelength_range_m": [
+          0.003,
+          0.009
+        ],
+        "basis": "12 deterministic random-direction sine components, tanh bounded; authored scale not physical measurement",
+        "linear_RGB_modulation": [
+          -0.035,
+          0.015,
+          -0.008
+        ],
+        "not_angular_iridescence": true
+      }
+    },
+    "uniform_witness_only": false,
+    "uniform_witness_source_sha256": "4ab57c874b3da75e0e5420ed2470ec9a791ae5372001405413cd82de66cc024c",
+    "uniform_witness_export_sha256": "2907f13aaecfec7492320c81c73637c675e8669b2b913f6ff63945b43ce33e60",
+    "protected_uniform_source_digest": "c28954c6c6e76f76df0b29a1620f7a0d6b2b6d887673476b7733685113185c24",
+    "current_source_digest": "c28954c6c6e76f76df0b29a1620f7a0d6b2b6d887673476b7733685113185c24",
+    "source_position_indices_corner_normals_UV_matrices_exact_to_uniform_witness": true,
+    "G3_source_positions_polygons_corner_normals_matrices_exact": true,
+    "source_UV_changed_explicitly_in_G4_before_witness": true,
+    "original_color_image": {
+      "role": "basecolor",
+      "path": "textures/original-yellow-green-static-color.png",
+      "sha256": "efa0211247fb0d14e2dea3fa5c87e1f301079bd5d34f78c22ee84113dc6ed0e5",
+      "width": 1024,
+      "height": 1024,
+      "colorspace": "sRGB",
+      "channels": "RGB8"
+    },
+    "images": 1,
+    "normalmap": false,
+    "native_tangents_policy": "Not exported because no normalmap; no tangent buffer repair"
+  },
+  "export_check": {
+    "asset": "engine-intake-clamp-band",
+    "revision": "engine-intake-clamp-band-v1",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/engine-intake-clamp-band/engine-intake-clamp-band-inspection.glb",
+        "sha256": "43f8260565e55972a8e200124d586c0aac0207b5135774fba3c2d712cd81da6d",
+        "bytes": 722340,
+        "glTF_errors": 0,
+        "glTF_warnings": 0,
+        "messages": [],
+        "bounds": {
+          "min": [
+            -0.023099388927221298,
+            -0.004999999888241291,
+            -0.023099999874830246
+          ],
+          "max": [
+            0.023099388927221298,
+            0.004999999888241291,
+            0.032499998807907104
+          ]
+        },
+        "vertices": 14620,
+        "triangles": 24132,
+        "triangle_area_local_m2": {
+          "minimum": 1.5803383146936146e-09,
+          "exactly_zero": 0,
+          "below_1e_minus18": 0,
+          "note": "Local exported coordinates; not a self-intersection or surface-fidelity proof"
+        },
+        "tangent_frame": {
+          "vectors": 0,
+          "max_unit_error": 0,
+          "max_normal_dot": 0,
+          "handedness_sign_is_unit": true,
+          "note": "Finite orthonormal frame only; not full MikkTSpace or renderer visual parity"
+        },
+        "node_names": [
+          "DP101198 related smooth band and formed ears - isolated",
+          "Intake clamp band isolated datum - not tightened"
+        ],
+        "materials": [
+          {
+            "name": "Original restrained yellow-green band proposal - static field",
+            "basecolor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 0.3400000035762787,
+            "extensions": []
+          }
+        ]
+      }
+    ],
+    "scope": "Actual glTF buffers and format only; not shape reception, physical interface or mobile qualification",
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "browser_check": {
+    "camera": {
+      "position": [
+        7.025800350636958e-18,
+        0.07047348683702173,
+        -0.11004002770747767
+      ],
+      "target": [
+        0,
+        0,
+        0.004699999466538429
+      ],
+      "radius": 0.1346543210701455,
+      "fov": 0.72,
+      "fovMode": 0
+    },
+    "framing": {
+      "min": [
+        0.3691375071520177,
+        0.33954725222450083
+      ],
+      "max": [
+        0.6308625369053712,
+        0.7199869179494895
+      ],
+      "scope": "Conservative projected actual mesh bounding boxes; whole-piece framing only"
+    },
+    "asset": "engine-intake-clamp-band",
+    "revision": "engine-intake-clamp-band-v1",
+    "config": {
+      "label": "Bande collier DP101198 lié — oreilles intégrales isolées",
+      "lot": 17,
+      "review": "engine-intake-clamp-band-v1",
+      "source": "engine-intake-clamp-band/engine-intake-clamp-band-v1.blend",
+      "readme": "README.md",
+      "collection": "WEWA_ENGINE_INTAKE_CLAMP_BAND",
+      "component_id": "MOTO-ENGINE-INTAKE-CLAMP-BAND-001",
+      "files": [
+        "engine-intake-clamp-band/engine-intake-clamp-band-inspection.glb"
+      ],
+      "rigs": [],
+      "source_frame": "isolated_local",
+      "details": "Bande lisse et oreilles formées percées seules. Vis et pont intérieur distincts non fabriqués. Carte couleur originale statique jaune/vert très discrète, pas iridescence angulaire ni chimie mesurée. ID45×W10 commercial lié, toutes cotes de travail estimées, conflit39mm et interférence rigide0,6mm avec manchon non résolus.",
+      "variant": "D04 UG5 DP101198 lié / Crosland Pulsar-Torito,125HD RDC non certifié"
+    },
+    "files": [
+      "engine-intake-clamp-band/engine-intake-clamp-band-inspection.glb"
+    ],
+    "meshes": 1,
+    "vertices": 14620,
+    "triangles": 24132,
+    "bounds": {
+      "min": [
+        -0.023099388927221298,
+        -0.004999999888241291,
+        -0.023099999874830246
+      ],
+      "max": [
+        0.023099388927221298,
+        0.004999999888241291,
+        0.032499998807907104
+      ]
+    },
+    "textures_ready": true,
+    "renderer": {
+      "vendor": "Google Inc. (Google)",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "rig_states": {},
+    "attachments": [],
+    "rigs": [],
+    "art_accepted": false,
+    "physical_iphone_tested": false,
+    "public_game_unchanged": true,
+    "pixel_checks": [
+      {
+        "view": "quarter",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 63062,
+        "changed_fraction": 0.05474131944444444,
+        "rgb_min": [
+          23,
+          27,
+          29
+        ],
+        "rgb_max": [
+          255,
+          255,
+          212
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "driver",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 59366,
+        "changed_fraction": 0.05153298611111111,
+        "rgb_min": [
+          23,
+          27,
+          30
+        ],
+        "rgb_max": [
+          255,
+          255,
+          202
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "reverse",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 48562,
+        "changed_fraction": 0.04215451388888889,
+        "rgb_min": [
+          23,
+          26,
+          29
+        ],
+        "rgb_max": [
+          255,
+          255,
+          227
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "landscape-844x390",
+        "width": 844,
+        "height": 390,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 11319,
+        "changed_fraction": 0.03438753189938024,
+        "rgb_min": [
+          24,
+          28,
+          30
+        ],
+        "rgb_max": [
+          171,
+          172,
+          143
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      }
+    ],
+    "page_errors": [],
+    "http_failures": [],
+    "pose_checks": [],
+    "scope": "Actual Babylon imports and vertex motion in Chromium softwareWebGL; not Safari/iPhone/FPS qualification",
+    "render_mode": "Manual frames after scene readiness",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/engine-intake-clamp-band/engine-intake-clamp-band-inspection.glb",
+        "sha256": "43f8260565e55972a8e200124d586c0aac0207b5135774fba3c2d712cd81da6d"
+      }
+    ],
+    "inspector_sha256": "19e4908f4a7b69b492710adfb7d28a5508745721f9c991941a5ed439f3a9fb07",
+    "capture_tool_sha256": "53b07b0e9bda4b86c9d7f05c10815755b3be50dcc85e29a4b3f164cbc38fcf28",
+    "inspector_path": "tools/motorcycle-lab/review-v2.js",
+    "capture_tool_path": "tools/capture_motorcycle18_v3.py",
+    "inputs_unchanged_during_capture": true
+  },
+  "render_report": {
+    "source_sha256": "3fc41201dc15a252d00f661b9b6abc5083c12bf73ac6926b69ff7b08930e036e",
+    "export_sha256": "43f8260565e55972a8e200124d586c0aac0207b5135774fba3c2d712cd81da6d",
+    "samples": 96,
+    "camera_calibrated": false,
+    "isolated_unmounted": true,
+    "assembly_incomplete_screw_bridge_separate": true,
+    "views": [
+      {
+        "name": "front-quarter",
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "CONTROL_CAMERA",
+          "camera_type": "PERSP",
+          "camera_clip_m": [
+            9.999999747378752e-05,
+            1000.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.1696231774299479,
+          "farthest_actual_vertex_depth_m": 0.219446233309813,
+          "projected_uv_min": [
+            0.24356126560294428,
+            0.248956164894932
+          ],
+          "projected_uv_max": [
+            0.7393024133731149,
+            0.705632733509061
+          ],
+          "allow_deliberate_crop": false,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "DP101198 related smooth band and formed ears - isolated",
+              "vertices": 12064,
+              "depth_m": [
+                0.1696231774299479,
+                0.219446233309813
+              ],
+              "projected_uv_min": [
+                0.24356126560294428,
+                0.248956164894932
+              ],
+              "projected_uv_max": [
+                0.7393024133731149,
+                0.705632733509061
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": false,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true
+        },
+        "rendered": true,
+        "outputs": [
+          {
+            "file": "front-quarter.exr",
+            "format": "OPEN_EXR",
+            "bytes": 562631,
+            "sha256": "fb9eb43bde8001723f086a41c459904c3a97b5b4c406e6fed6e13ae0cf4da285",
+            "linear_scene_data": true
+          },
+          {
+            "file": "front-quarter.png",
+            "format": "PNG",
+            "bytes": 1437401,
+            "sha256": "3d8960cd096ee8e2c9d4f64f6e7480c92b13dc60304e7cf17fdd078e4b8a8b04",
+            "linear_scene_data": false
+          }
+        ]
+      },
+      {
+        "name": "opposite-quarter",
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "CONTROL_CAMERA",
+          "camera_type": "PERSP",
+          "camera_clip_m": [
+            9.999999747378752e-05,
+            1000.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.17508767017041904,
+          "farthest_actual_vertex_depth_m": 0.22558265626184443,
+          "projected_uv_min": [
+            0.26163463246531715,
+            0.25974571924064394
+          ],
+          "projected_uv_max": [
+            0.713269436843168,
+            0.69704966903096
+          ],
+          "allow_deliberate_crop": false,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "DP101198 related smooth band and formed ears - isolated",
+              "vertices": 12064,
+              "depth_m": [
+                0.17508767017041904,
+                0.22558265626184443
+              ],
+              "projected_uv_min": [
+                0.26163463246531715,
+                0.25974571924064394
+              ],
+              "projected_uv_max": [
+                0.713269436843168,
+                0.69704966903096
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": false,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true
+        },
+        "rendered": true,
+        "outputs": [
+          {
+            "file": "opposite-quarter.exr",
+            "format": "OPEN_EXR",
+            "bytes": 527192,
+            "sha256": "2a2ff2dc483d0d1acc6d46d728320ce291ef9eb22d12918491cc7a4e1bead7be",
+            "linear_scene_data": true
+          },
+          {
+            "file": "opposite-quarter.png",
+            "format": "PNG",
+            "bytes": 1425221,
+            "sha256": "f402d0d204de974783a92bfca54f9938c85b890855f77dad685302599ccaf096",
+            "linear_scene_data": false
+          }
+        ]
+      },
+      {
+        "name": "lug-fold-and-hole-detail",
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "CONTROL_CAMERA",
+          "camera_type": "PERSP",
+          "camera_clip_m": [
+            9.999999747378752e-05,
+            1000.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.09045291890525253,
+          "farthest_actual_vertex_depth_m": 0.13995000263834267,
+          "projected_uv_min": [
+            0.11251312101227784,
+            0.057668520943231494
+          ],
+          "projected_uv_max": [
+            1.8932808720876708,
+            1.282882593589089
+          ],
+          "allow_deliberate_crop": true,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "DP101198 related smooth band and formed ears - isolated",
+              "vertices": 12064,
+              "depth_m": [
+                0.09045291890525253,
+                0.13995000263834267
+              ],
+              "projected_uv_min": [
+                0.11251312101227784,
+                0.057668520943231494
+              ],
+              "projected_uv_max": [
+                1.8932808720876708,
+                1.282882593589089
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": true,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true
+        },
+        "rendered": true,
+        "outputs": [
+          {
+            "file": "lug-fold-and-hole-detail.exr",
+            "format": "OPEN_EXR",
+            "bytes": 1436832,
+            "sha256": "25869e8d79c6d6ad504ebc581ee6ffe3f8fe442c91570b2daaf14790ef22cd4f",
+            "linear_scene_data": true
+          },
+          {
+            "file": "lug-fold-and-hole-detail.png",
+            "format": "PNG",
+            "bytes": 1518274,
+            "sha256": "dbaa4b796d1f7d4d89ef364a219eb3e634f72c952b5f7b0a696140ef9c81fce4",
+            "linear_scene_data": false
+          }
+        ]
+      },
+      {
+        "name": "inner-band-contact-detail",
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "CONTROL_CAMERA",
+          "camera_type": "PERSP",
+          "camera_clip_m": [
+            9.999999747378752e-05,
+            1000.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.01648997927654655,
+          "farthest_actual_vertex_depth_m": 0.05479852895559292,
+          "projected_uv_min": [
+            -4.626989762511983,
+            -9.227136855754766
+          ],
+          "projected_uv_max": [
+            1.495281629343246,
+            1.0356468076334586
+          ],
+          "allow_deliberate_crop": true,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "DP101198 related smooth band and formed ears - isolated",
+              "vertices": 12064,
+              "depth_m": [
+                0.01648997927654655,
+                0.05479852895559292
+              ],
+              "projected_uv_min": [
+                -4.626989762511983,
+                -9.227136855754766
+              ],
+              "projected_uv_max": [
+                1.495281629343246,
+                1.0356468076334586
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": true,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true
+        },
+        "rendered": true,
+        "outputs": [
+          {
+            "file": "inner-band-contact-detail.exr",
+            "format": "OPEN_EXR",
+            "bytes": 1432075,
+            "sha256": "2c6771717af0ca46da1e00229b4a90c8f21601f463b9f48ecccab36a170a181c",
+            "linear_scene_data": true
+          },
+          {
+            "file": "inner-band-contact-detail.png",
+            "format": "PNG",
+            "bytes": 1462363,
+            "sha256": "69935af7c81c7b007c3ea336ef24e10da0ffcdd7f3ec1e8bdfaa31bfaab349d1",
+            "linear_scene_data": false
+          }
+        ]
+      },
+      {
+        "name": "finish-raking-control",
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "CONTROL_CAMERA",
+          "camera_type": "PERSP",
+          "camera_clip_m": [
+            9.999999747378752e-05,
+            1000.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.01648997927654655,
+          "farthest_actual_vertex_depth_m": 0.05479852895559292,
+          "projected_uv_min": [
+            -4.626989762511983,
+            -9.227136855754766
+          ],
+          "projected_uv_max": [
+            1.495281629343246,
+            1.0356468076334586
+          ],
+          "allow_deliberate_crop": true,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "DP101198 related smooth band and formed ears - isolated",
+              "vertices": 12064,
+              "depth_m": [
+                0.01648997927654655,
+                0.05479852895559292
+              ],
+              "projected_uv_min": [
+                -4.626989762511983,
+                -9.227136855754766
+              ],
+              "projected_uv_max": [
+                1.495281629343246,
+                1.0356468076334586
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": true,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true
+        },
+        "rendered": true,
+        "outputs": [
+          {
+            "file": "finish-raking-control.exr",
+            "format": "OPEN_EXR",
+            "bytes": 1782902,
+            "sha256": "10d62439f155928b9a67c3faea2b408426659a78f53a14207b932901e37e5c10",
+            "linear_scene_data": true
+          },
+          {
+            "file": "finish-raking-control.png",
+            "format": "PNG",
+            "bytes": 1499509,
+            "sha256": "11054a87a8d462d3ae90216ff1d8655eb001ddb5a524dcb4ba380792b5cb8d9e",
+            "linear_scene_data": false
+          }
+        ]
+      }
+    ],
+    "art_accepted": false
+  },
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true
+}

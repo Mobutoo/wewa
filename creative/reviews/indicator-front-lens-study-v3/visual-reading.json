@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "four_actual_images_opened": true,
+  "source_sha256": "008546fa4b97af652d854c8359e27ce25430e2b247990aa0b454814187c51b40",
+  "export_sha256": "6964625204e517da0cc4e8e268d0dd77101f26e5732ee1798c69aa4e52f19adf",
+  "decision": "REJECTED specular normal quality; retain immutable diagnostic, no material/96",
+  "findings": [
+    "Whole and gray macro show an opposed U interruption, shape remains bounded estimated profile.",
+    "First reflection had insufficient key direction at the lower edge and cannot establish smoothness.",
+    "Additional round key at same source/camera reveals jagged/wispy specular edge response; a true defect to correct before broad bands."
+  ],
+  "cause_hypothesis": "Numerical Jacobian used Float32 Vector inputs/outputs for50nm central differences; derivative cancellation/rounding can produce noisy normals. Confirm with float64 differences and a same-camera/light recheck, preserving shape/UV.",
+  "not_claimed": [
+    "ExactUprofile/OEMmold/scale",
+    "Surface optical bands or approval marks",
+    "Artistic/fit acceptance"
+  ],
+  "art_accepted": false
+}

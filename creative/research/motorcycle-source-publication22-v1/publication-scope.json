@@ -1,0 +1,40 @@
+{
+  "schema": "wewa.publication22.working-scope-snapshot.v1",
+  "base_HEAD": "824c01d8116e2cf22f03a09479ae6d8591adc1af",
+  "created_at_UTC": "2026-10-21T14:33:56.534492+00:00",
+  "request": "Publier tous les fichiers de travail utiles, y compris les études, diagnostics et préparations, en conservant leur état réel.",
+  "registered_physical_IDs": 95,
+  "workflow_records": 104,
+  "catalogue_entries_for_inspection": 120,
+  "scope_is_not_new_production_receipt": true,
+  "states": {
+    "engine-protection-terminal-b": "Source68 et cinq finales96 closes dans manifeste88 ; candidat auteur, pas nouvel ID enregistré dans cette publication.",
+    "engine-protection-junctions-guide": "Guide34 fermé, copies de quatre sources existantes ; zéro nouvelle pièce physique.",
+    "ignition-connector-v2": "Source66 stable ; finales individuelles admises seulement si leur checkpoint lie les deux outputs complets. Série finale et synthèses encore actives à cette observation.",
+    "indicator-front-lens-v1": "Source31 et finale40 closes ; études2–6 distinctes, étude3 refusée conservée comme diagnostic.",
+    "indicator-front-housing": "Paramètres et recettes préparatoires non exécutés ; aucun BLEND/GLB/PNG fabriqué.",
+    "seat-damper": "Préparation documentaire et paramètres ; aucun modèle livré.",
+    "cockpit-updated-review-v4": "Scripts préparatoires et vérificateur non exécutés, aucun assemblage ni rendu.",
+    "AO": "Petits scripts, mesures et rapports d’échec conservés comme diagnostics non adoptés ; aucun bake validé revendiqué."
+  },
+  "deferred_while_mutating": [
+    "creative/reviews/ignition-connector-v2/author-final-read-progress.json",
+    "creative/reviews/ignition-connector-v2/render-report.json"
+  ],
+  "exclusion_policy": [
+    "Fichiers réellement en cours d’écriture ou dépourvus de checkpoint atomique complet.",
+    "Fichiers privés externes, photographies documentaires, secrets et environnement.",
+    "Sauvegardes .blend1, logs bruts, caches et gros buffers/BLEND échoués inutiles. Aucun de ces fichiers privés n’est copié au dépôt."
+  ],
+  "selection_is_explicit_snapshot_not_folder_sweep": true,
+  "historical_reports_are_not_live_manifests": true,
+  "no_clean_rebuild_test_executed": true,
+  "no_model_or_render_executed_by_this_preparation": true,
+  "no_artist_mobile_or_mechanical_acceptance": true,
+  "no_CI_or_commit_claim": true,
+  "exact_frozen_diagnostic_logs": [
+    "creative/reviews/engine-protection-junctions-guide-v1/diagnostics/wewa-guard-contact-guide1.log",
+    "creative/reviews/engine-protection-junctions-guide-v1/diagnostics/wewa-guard-contact-guide2.log",
+    "creative/reviews/engine-protection-junctions-guide-v1/diagnostics/wewa-guard-contact-guide3.log"
+  ]
+}

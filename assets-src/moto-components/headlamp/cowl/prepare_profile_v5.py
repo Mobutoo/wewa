@@ -1,0 +1,8 @@
+"""Original periodic controlcurve coefficients, no photograph pixels read."""
+from pathlib import Path
+import json,hashlib,math
+import numpy as np
+import scipy
+from scipy.interpolate import CubicSpline
+H=Path(__file__).resolve().parent;R=H.parents[3];p=R/'creative/research/headlamp-cowl/angular-rear-profile-plan-v5.json';plan=json.loads(p.read_text());control=plan['angular_controls_degrees_radius_Y_m'];allrows=control+[[360-a,r,y]for a,r,y in reversed(control[1:-1])]+[[360,control[0][1],control[0][2]]];x=np.radians(np.array([r[0]for r in allrows]));radius=np.array([r[1]for r in allrows]);depth=np.array([r[2]for r in allrows]);a=CubicSpline(x,radius,bc_type='periodic');b=CubicSpline(x,depth,bc_type='periodic');t=np.linspace(0,math.tau,4096);assert a(t).min()>.09 and a(t).max()<.19 and b(t).min()>.01 and b(t).max()<.16
+out={'schema':1,'profile_id':'WEWA_COWL_REAR_ANGULAR_V5','control_geometry_authorship':'Original estimatedC2curve; no photo raster read or dimensioncertification.','plan_sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'preparer_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'scipy_version':scipy.__version__,'knots_radians':x.tolist(),'radius_coefficients_descending_power':a.c.tolist(),'Y_coefficients_descending_power':b.c.tolist(),'evaluated_diagnostic_bounds_radius_m':[float(a(t).min()),float(a(t).max())],'evaluated_diagnostic_bounds_depth_m':[float(b(t).min()),float(b(t).max())],'measured_real_dimensions':False};f=H/'rear-profile-v5.json';f.write_text(json.dumps(out,indent=2)+'\n');print('ANGULAR_PROFILE',hashlib.sha256(f.read_bytes()).hexdigest())

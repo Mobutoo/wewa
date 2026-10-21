@@ -1,0 +1,13 @@
+import fs from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+import {NodeIO} from '@gltf-transform/core';
+import {ALL_EXTENSIONS} from '@gltf-transform/extensions';
+const H='assets-src/moto-components/rear-sns/opposite-eye-exterior',O='creative/reviews/rear-sns-opposite-eye-exterior-study-v2';
+const io=new NodeIO().registerExtensions(ALL_EXTENSIONS),sha=b=>createHash('sha256').update(b).digest('hex'),sets=[];
+for(const v of [1,2]){const path=`${H}/rear-sns-opposite-eye-exterior-study-v${v}.glb`,bytes=await fs.readFile(path),r=(await io.readBinary(bytes)).getRoot(),points=new Map();let count=0;
+for(const node of r.listNodes())if(node.getWorldMatrix().some((x,i)=>x!==([0,5,10,15].includes(i)?1:0)))throw Error('Nonidentity transform');
+for(const m of r.listMeshes())for(const p of m.listPrimitives()){const a=p.getAttribute('POSITION').getArray(),n=p.getAttribute('NORMAL').getArray();if(!(a instanceof Float32Array))throw Error('Unexpected position type');for(let i=0;i<a.length;i+=3){const key=Buffer.from(a.buffer,a.byteOffset+i*4,12).toString('hex');points.set(key,[n[i],n[i+1],n[i+2]]);count++;}}
+sets.push({path,sha256:sha(bytes),points,accessor_vertex_count:count});}
+let missing=0,maxNormalVectorDelta=0;for(const[k,n]of sets[0].points){const m=sets[1].points.get(k);if(!m)missing++;else maxNormalVectorDelta=Math.max(maxNormalVectorDelta,Math.hypot(...n.map((x,i)=>x-m[i])));}
+const params=await Promise.all([1,2].map(async v=>JSON.parse(await fs.readFile(`${H}/parameters-study-v${v}.json`))));const differences=Object.keys(params[0]).filter(k=>JSON.stringify(params[0][k])!==JSON.stringify(params[1][k]));if(differences.some(k=>!['revision','angular_segments','quarter_round_samples'].includes(k)))throw Error('Unexpected physical shape parameter change');
+const result={schema:1,inputs:sets.map(({points,...r})=>({...r,unique_position_count:points.size})),changed_parameters:differences,previous_unique_positions_missing_in_refined_actual_GLB:missing,retained_actual_POSITION_Float32_bit_identical:missing===0,maximum_retained_NORMAL_vector_delta:maxNormalVectorDelta,UV_parameterization_recomputed_with_refined_section:true,textures_or_normal_maps:0,scope:'Same authored analytic outline/section dimensions and proper orientation; more tessellation samples, new triangles and UVs. Retained actual mesh positions checked, not exact continuous-surface proof or photographic/OEM calibration.',art_accepted:false};await fs.writeFile(`${O}/sampling-comparison.json`,JSON.stringify(result,null,2)+'\n');if(missing)throw Error('Retained point drift');console.log(JSON.stringify(result));

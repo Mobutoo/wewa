@@ -1,0 +1,350 @@
+{
+  "schema": 1,
+  "revision": "headlamp-cowl-shell-study-v3",
+  "stage": "G2 true boundary trimming; replace rejected warped section2",
+  "identity": "Related PF7401X3 black/PF74013F red BM150 shell appearance; exact125HD currentRDC mould/paint/code not proved",
+  "sources": [
+    {
+      "path": "creative/research/headlamp-cowl/reference-preparation-v1.json",
+      "sha256": "f413ba33da1ea8737e82569a73a1c983a6a681d121047ad93410d672208dab08"
+    }
+  ],
+  "frame": "Isolated Blender+X riderLEFT,+Yrear,+Zup; glTF(x,y,z)=(x,z,-y). Front opening nominal planeY0, circular aperture centred atorigin. Not a certified installed transform.",
+  "orientation_evidence": {
+    "known": "Native product views show circular front opening with narrow rolled ring and formed wrap toward the opposite open edge; two rounded scallops and a central open-edge keyhole occur in that opposite edge.",
+    "conditional_installation_hypothesis": "Interpret longer formed return as lower/side shell and the two scallops as rear lower-edge features, based on related catalog illustration and official RDC side silhouette. Product photos were held in varying poses: image-up does not mean motorcycle-up.",
+    "unproved": "Scallop function, installed top/bottom mapping of every hidden pad, exact lamp/fork mating datums. Do not create fork collisions or drill every guessed support before comparison.",
+    "review_views_private": [
+      "/workspace/wewa-assets/references/headlamp/cowl-black-8492.jpg",
+      "/workspace/wewa-assets/references/headlamp/cowl-black-8493.jpg",
+      "/workspace/wewa-assets/references/headlamp/cowl-black-8494.jpg",
+      "/workspace/wewa-assets/references/headlamp/cowl-black-8495.jpg",
+      "/workspace/wewa-assets/references/headlamp/cowl-catalog-99rpm.jpg",
+      "/workspace/wewa-assets/references/dimensions-verified/rotation-00.png",
+      "/workspace/wewa-assets/references/dimensions-verified/rotation-02.png"
+    ]
+  },
+  "parameters": {
+    "front_clear_aperture_radius": {
+      "value": 0.1035,
+      "range": [
+        0.097,
+        0.113
+      ],
+      "unit": "m",
+      "status": "estimated",
+      "basis": "Working fit interval near the independently estimated lamp/protector, NOT measured pixel/mm or a forced shared fit",
+      "is_manufacturer_dimension": false
+    },
+    "front_outer_radius_side": {
+      "value": 0.121,
+      "range": [
+        0.112,
+        0.135
+      ],
+      "unit": "m",
+      "status": "estimated",
+      "basis": "Photo outer/front aperture ratio varies with angular position and perspective",
+      "is_manufacturer_dimension": false
+    },
+    "front_outer_radius_top": {
+      "value": 0.115,
+      "range": [
+        0.106,
+        0.128
+      ],
+      "unit": "m",
+      "status": "estimated",
+      "basis": "Narrower lip at top, perspective photograph conditional",
+      "is_manufacturer_dimension": false
+    },
+    "front_outer_radius_bottom": {
+      "value": 0.122,
+      "range": [
+        0.112,
+        0.137
+      ],
+      "unit": "m",
+      "status": "estimated",
+      "basis": "Lower painted band visible on official front view; no physical width measurement",
+      "is_manufacturer_dimension": false
+    },
+    "rear_wrap_maximum_depth": {
+      "value": 0.145,
+      "range": [
+        0.105,
+        0.19
+      ],
+      "unit": "m",
+      "status": "estimated",
+      "basis": "Related isolated three-quarter shell view and official whole-bike side silhouette; substantial focal/depth ambiguity",
+      "is_manufacturer_dimension": false
+    },
+    "rear_wrap_upper_depth": {
+      "value": 0.025,
+      "range": [
+        0.012,
+        0.055
+      ],
+      "unit": "m",
+      "status": "estimated",
+      "basis": "Upper lip remains shorter than the side/lower formed return, conditional orientation",
+      "is_manufacturer_dimension": false
+    },
+    "nominal_shell_normal_thickness": {
+      "value": 0.0025,
+      "range": [
+        0.0018,
+        0.0034
+      ],
+      "unit": "m",
+      "status": "estimated",
+      "basis": "Finite thin moulded shell construction assumption; not vendor or OEM thickness",
+      "is_manufacturer_dimension": false
+    },
+    "lip_edge_radius": {
+      "value": 0.0008,
+      "range": [
+        0.0004,
+        0.0015
+      ],
+      "unit": "m",
+      "status": "estimated",
+      "basis": "Visible rolled edge needs continuous finite radius; no dimension published",
+      "is_manufacturer_dimension": false
+    },
+    "rear_scallop_width_each": {
+      "value": 0.052,
+      "range": [
+        0.038,
+        0.07
+      ],
+      "unit": "m",
+      "status": "estimated",
+      "basis": "Visible rounded open-edge negative spaces in8495; actual axial depth unconstrained",
+      "is_manufacturer_dimension": false
+    },
+    "rear_scallop_depth": {
+      "value": 0.035,
+      "range": [
+        0.02,
+        0.055
+      ],
+      "unit": "m",
+      "status": "estimated",
+      "basis": "Estimated shape ratio only, not a fork clearance certificate",
+      "is_manufacturer_dimension": false
+    },
+    "rib_normal_thickness": {
+      "value": 0.0018,
+      "range": [
+        0.0012,
+        0.0028
+      ],
+      "unit": "m",
+      "status": "estimated",
+      "basis": "Related inner ribs visible but thickness unmeasured",
+      "is_manufacturer_dimension": false
+    },
+    "mount_pad_hole_diameter": {
+      "value": 0.0055,
+      "range": [
+        0.004,
+        0.007
+      ],
+      "unit": "m",
+      "status": "estimated",
+      "basis": "Round holes visible in product views; screw size unknown",
+      "is_manufacturer_dimension": false
+    }
+  },
+  "construction_sequence": [
+    {
+      "unit": "Continuous finite shell only",
+      "surface_method": "Separate angular front aperture/rolled lip, changing side shoulder and long formed rear returns by continuous spline section fields. Construct outer/inner connected surfaces at finite normal thickness. No stack of generic toroids or after-CSG global bevel.",
+      "section_stations": "At least front lip, shoulder, midwrap and scalloped rear edge with continuous interpolated derivatives. Top/side/lower angular sections distinct, not a uniform revolved bowl.",
+      "first_gray_checks": [
+        "Whole external quarter",
+        "Whole inside quarter matching8495 negative spaces",
+        "Exact side section",
+        "Short neutral reflection strip over shoulder and rear edge"
+      ]
+    },
+    {
+      "unit": "Rear open-edge scallops and central keyhole",
+      "surface_method": "Build real open boundary and rolled thickness, continuous spline lobes; no dark decal substituting a void. Keep open-edge versus drilled hole distinct.",
+      "order": "Only after outer shell perspective/negative spaces read; same active component."
+    },
+    {
+      "unit": "Inner support pads and thin ribs",
+      "surface_method": "Six observed side pad regions and actual circular holes documented as related geometry; fitted depth/axis estimates explicit. Avoid copying a hidden mirror counterpart without evidence. CSG union only after finite volumes and normal-field prechecks.",
+      "order": "One observed region at a time; do not invent unseen bosses to make a supposedly complete assembly."
+    },
+    {
+      "unit": "Separate paint/material stage",
+      "surface_method": "Only after whole gray and reflection acceptance; original procedural UV/PBR, no private photo texture or transplanted light. Red tentative(.42,.006,.012)linear, metal0rough.22 is a non-OEM candidate, not frozen common paint."
+    }
+  ],
+  "comparison_protocol": {
+    "projection": "Perspective views to be compared separately; no whole-photo single pixel/mm scale. Lens/pose/scale initially estimated and saved; no pixel error as calibrated fidelity until camera is actually constrained.",
+    "native_observable_checks": [
+      "Front aperture and outer band proportions around full arc",
+      "Short upper lip versus longer changing rear wrap",
+      "Side shoulder continuity and highlights",
+      "Two rear scallop negative spaces and centre keyhole",
+      "Inside pad count, holes and rib termini against the actual related image"
+    ],
+    "unknown_camera_rule": "If contour mismatch can be focal/pose ambiguity, record both before deforming sections. Keep uncertainty rather than forcing a false contour fit.",
+    "gray_and_reflection_before_material": true,
+    "whole_and_detail_preview_before96": true,
+    "camera_near_clip_m": 0.001,
+    "avoid_multiple_long_jobs": true,
+    "new_reference_camera": {
+      "location_m": [
+        0,
+        0.58,
+        0.43
+      ],
+      "target_m": [
+        0,
+        0.06,
+        -0.025
+      ],
+      "lens_mm": 65,
+      "roll_degrees": 180,
+      "resolution_px": [
+        1000,
+        1000
+      ],
+      "status": "estimated held-photo matching orientation, no solved camera/pixelcalibration"
+    }
+  },
+  "blocked_parts": [
+    "ExactRDC partidentity and installed mounting transform",
+    "Hidden pad dimensions/axes and hardware stack",
+    "Any claim of fit to the independently estimated housing/protector/forks without separate checks"
+  ],
+  "not_in_this_component": [
+    "Headlamp lens/reflector (G1hold)",
+    "Housing/protection already separate and frozen",
+    "Visor and frontsignals",
+    "OEM logos/stickers; originalWEWA artwork later only if visible/documented"
+  ],
+  "art_accepted": false,
+  "initial_shell_study_sections": {
+    "revision": "s0, no detailed pads/ribs/scallops yet; not finalcowl or acceptedform",
+    "coordinates": "theta0=top,+pi/2=+Xleft,pi=bottom; yrear>=0. Candidate orientation as conditional in plan.",
+    "front_outer_radius_formula_m": ".115 + .006*sin(theta)^2 + .007*max(0,-cos(theta))^2",
+    "rear_depth_formula_m": ".025 + .12*((1-cos(theta))/2)^.85",
+    "rear_radius_formula_m": "front_outer_radius - .004 + .005*sin(theta)^2",
+    "wall": "2.5mm normal thickness around C1 mid-surface; rounded front and rear connected edge, not Solidify+globalbevel; values estimated",
+    "symmetric_estimate": "Only gross shell section is provisionally mirrored; detailed pads/asymmetries not silently replicated as observed.",
+    "first_read_before_detail": "Three graywhole views and one reflection detail. Form/camera corrections before adding observed scallops and pads.",
+    "curve_method": "Clamped cubic B-spline; control polygon estimated, not interpolation or measured sections. No Catmull overshoot. Actual minimum radius/parallel offset quality must pass before image.",
+    "cross_section_Bspline_controls_R_Y": "[(.1035,0),(.1075,-.0007),(Ro-.004,0),(Ro,.004),(Ro+.001,min(.014,.22*Yrear)),(Ro+.0015,.35*Yrear),(Rrear,.8*Yrear),(Rrear-.0015,Yrear)]",
+    "numerical_geometry": "Spline/finite-difference/normal-offset calculations inFloat64; only final mesh positions quantized once toFloat32, to prevent derivative noise from entering thin-wall construction."
+  },
+  "baseline_shell_source_sha256": "f0c2bf0951f6a92b5e981948c3f85da4a20540bac00a79ea00a25e02a5baaa7c",
+  "rear_scallops": {
+    "observed": 2,
+    "private_native_image": "/workspace/wewa-assets/references/headlamp/cowl-black-8495.jpg",
+    "native_pixels": [
+      800,
+      800
+    ],
+    "coarse_manual_2D_guides_not_metric": {
+      "left_U_px": [
+        [
+          242,
+          98
+        ],
+        [
+          282,
+          215
+        ],
+        [
+          338,
+          201
+        ],
+        [
+          375,
+          116
+        ],
+        [
+          384,
+          59
+        ]
+      ],
+      "right_U_px": [
+        [
+          413,
+          63
+        ],
+        [
+          444,
+          178
+        ],
+        [
+          492,
+          215
+        ],
+        [
+          538,
+          182
+        ],
+        [
+          576,
+          96
+        ]
+      ],
+      "central_open_keyhole_approx_px": [
+        400,
+        55
+      ],
+      "uncertainty_px": 8,
+      "guide_usage": "Locate separate negative spaces, not a calibrated3D trace or physical dimension. Imageheld orientation differs from installed world."
+    },
+    "estimated_X_centres_m": [
+      -0.04,
+      0.04
+    ],
+    "X_centre_interval_abs_m": [
+      0.03,
+      0.075
+    ],
+    "estimated_half_width_m": 0.032,
+    "estimated_half_width_range_m": [
+      0.02,
+      0.04
+    ],
+    "estimated_forward_depth_m": 0.035,
+    "depth_range_m": [
+      0.02,
+      0.055
+    ],
+    "original_smooth_negative_boundary": "REJECTED in2: deforming sectiondepth warps the skin and is not a valid boundary trim.",
+    "function_or_fork_compatibility": "unknown; do not name these forkholes or infer mechanical fit",
+    "central_keyhole": "documented observable but not built in this stage; next distinct feature",
+    "only_new_unit": "Two rear open-edge scallops; no pads, ribs, paint, mechanical pose or other sourcechange.",
+    "new_construction": {
+      "method": "Subtract two closed elliptical cylinders from frozen shell1 by exact Manifold CSG. No rescale/deformation of kept shell.",
+      "cutter_axes": "Extrusion alongZ overlower panel only; ellipse inXY, open on actualrear edge. Not a declared forkinterface.",
+      "centre_X_m_estimated": [
+        -0.04,
+        0.04
+      ],
+      "ellipse_centre_Y_m_estimated": 0.15,
+      "ellipse_radius_X_m_estimated": 0.033,
+      "ellipse_radius_Y_m_estimated": 0.09,
+      "extrusion_Z_m_estimated": [
+        -0.17,
+        -0.065
+      ],
+      "geometric_interpretation": "The actual retained shell intersects these ellipses. Foremost tipY=.060m; notchdepth depends on uncalibrated shell geometry. These are candidate workingvalues, not photo-to-mm or OEMhole dimensions.",
+      "uncertainty": "Xcentre abs.030..075, Xradius.025..040, Ytip.035..085, Zcaps only disjoint cutting bounds not componentfeatures. Longer depth than2 required for deep observedU, but no calibratedfit claimed.",
+      "normals_and_UV": "Exact inputvolume/originaltriangle IDs, barycentric sourcecorner normal+UV fields. Reverse only subtractivecutters. No globalpost-CSGbevel or arbitrary tangent repair.",
+      "edge_radius": "Actualwall remainsfinite. Cutedge roundover radius not yet observed/measured; keepexplicit sharp intersection candidate before a dedicated edge decision.",
+      "source_identity": "Same relatedPF7401X3conditionalmould; no currentRDCcode/mountcompatibility"
+    }
+  }
+}

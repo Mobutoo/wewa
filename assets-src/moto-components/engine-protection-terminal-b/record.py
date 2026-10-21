@@ -1,0 +1,27 @@
+"""Explicit B construction and actual-read proof list, no parent QA collected."""
+from pathlib import Path
+import json,hashlib,datetime,sys
+H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/engine-protection-terminal-b-v1';D=R/'creative/research/engine-protection-terminal-b-15-v1';S=R/'creative/research/crash-guard-15-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();rows=lambda ps:[{'path':str(p.relative_to(R)),'bytes':p.stat().st_size,'sha256':sha(p)}for p in sorted(set(ps))];put=lambda p,j:p.write_text(json.dumps(j,indent=2)+'\n')
+s=sha(H/'engine-protection-terminal-b-v1.blend');g=sha(H/'engine-protection-terminal-b-inspection.glb')
+for name in ['source-geometry-check','geometry-check','source-interface-check','self-surface-check','material-preview-review']:
+ q=json.loads((O/(name+'.json')).read_text());assert q['source_sha256']==s and q['export_sha256']==g,name
+assert json.loads((O/'geometry-check.json').read_text())['technical_passed'];assert json.loads((O/'material-preview-review.json').read_text())['ready_for_final_candidate_views'];assert json.loads((O/'material-preservation-check.json').read_text())['all_actual_attributes_indices_world_matrices_identical']
+hn=['README.md','requirements.txt','provenance.json','parameters.json','profile_shape.py','build.py','archive_g3.py','build-report.json','probes.json','check_export.mjs','inspect_interfaces.py','inspect_self.py','camera_preflight.py','render_gray_v1.py','render_reflection_v1.py','material.py','check_material_preservation.mjs','inspect_material.py','render.py','run_final.py','record.py','engine-protection-terminal-b-v1.blend','engine-protection-terminal-b-inspection.glb','textures/engine-protection-terminal-b-original-normal.png','textures/engine-protection-terminal-b-original-metallic-roughness.png']
+hn+=['g3-master-v1/'+n for n in ['README.md','engine-protection-terminal-b-v1.blend','engine-protection-terminal-b-inspection.glb','source-geometry-check.json','geometry-check.json','source-interface-check.json','self-surface-check.json']]
+inputs=[H/n for n in hn]+[D/n for n in ['README.md','documentary-preparation-v1.json','working-study-v1.json','material-plan-v1.json']]+[S/n for n in ['README.md','report.json']]+[O/n for n in ['gray-review.json','source-geometry-check.json','geometry-check.json','source-interface-check.json','self-surface-check.json','material-preservation-check.json','material-build-report.json','material-buffer-check.json','material-preview-report.json','material-preview-review.json','gray-render-report-v1.json','reflection-render-report-v1.json']]
+for prefix,names in [('gray-',['quarter','profile','doublebend-detail']),('reflection-',['quarter','profile','doublebend-detail']),('preview-',['quarter','doublebend-detail','upper-bore-detail'])]:
+ for name in names:inputs +=[O/(prefix+name+'.png'),O/(prefix+name+'.json')]
+freeze=O/'source-freeze.json'
+if '--freeze'in sys.argv:
+ q={'component_id':'MOTO-ENGINE-PROTECTION-TERMINAL-B-001','revision':'engine-protection-terminal-b-v1','source_sha256':s,'export_sha256':g,'frozen_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'files':rows(inputs),'scope':'Second visible terminal only: independent finite formed sheet, one observed working upper passage. Lower perforation and metric/backside/installed/contact fidelity open. No photo pixels or automaticmirrorA.','complete_guard_assembly':False,'art_accepted':False}
+ if freeze.exists():assert json.loads(freeze.read_text())['files']==q['files'],'Never overwrite closed source freeze'
+ else:put(freeze,q)
+ print('TERMINAL_B_FROZEN',len(q['files']),sha(freeze),s,g);raise SystemExit
+f=json.loads(freeze.read_text());assert f['files']==rows(inputs),'Frozen input changed';worker=json.loads((O/'render-worker.json').read_text());r=json.loads((O/'render-report.json').read_text());v=json.loads((O/'source-render-review.json').read_text());names={'quarter','reverse-quarter','doublebend-detail','upper-bore-detail','lower-envelope-detail'};assert worker['state']=='completed'and worker['exit_code']==0 and worker['source_unchanged'];assert r['source_sha256']==v['source_sha256']==s and r['export_sha256']==v['export_sha256']==g and r['samples']==96 and r['status']=='completed'and{x['name']for x in r['views']}==set(v['images_actually_read'])==names
+proof=[O/n for n in ['README.md','source-freeze.json','render-report.json','render-worker.json','source-render-review.json']]
+for name in names:
+ p=O/(name+'.png');e=O/(name+'.exr');cp=O/('checkpoint-'+name+'.json');q=json.loads(cp.read_text());assert q['source_sha256']==s and q['export_sha256']==g and q['samples']==96 and q['PNG_sha256']==sha(p)and q['EXR_sha256']==sha(e);proof +=[p,e,cp]
+q={'component_id':f['component_id'],'revision':f['revision'],'source_sha256':s,'export_sha256':g,'closed_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'files':rows(inputs+proof),'scope':f['scope'],'complete_guard_assembly':False,'all_metric_parameters_estimated':True,'lower_perforation_and_hidden_envelope_unresolved':True,'installed_mount_contact_or_strength_verified':False,'current_RDC_identity_verified':False,'physical_iphone_tested':False,'mobile_LOD_qualified':False,'material_reflectance_measured':False,'art_accepted':False};p=O/'manifest.json'
+if p.exists():assert json.loads(p.read_text())['files']==q['files'],'Never overwrite closed review manifest'
+else:put(p,q)
+print('TERMINAL_B_REVIEW_CLOSED',len(q['files']),sha(p))

@@ -1,0 +1,5213 @@
+{
+  "schema": "wewa.smart-project-only-measurement.v1",
+  "status": "measurement_complete_no_atlas_acceptance_claimed",
+  "script_sha256": "8e1b46eb3ab75dcefb0f9e267735d93005087d45cdf02a2850da838cc018440e",
+  "input_sha256": "7017d79d4fb8d8279ba544173e0d9b3586346af90da2d59267d5ecf3c3ea0e25",
+  "blender": "4.3.2",
+  "source_files_before": {
+    "/workspace/wewa-assets/work-in-progress/upper-engine-local-ao-diagnostic-v1/run-005/executed-spec-v5.json": "4656d783b7e4976915465fdbb6d14553286cca6b670f7e6f4b0defc5b69e9f2b",
+    "/workspace/wewa-assets/work-in-progress/upper-engine-local-ao-diagnostic-v1/run-005/prepare/FAILED-UV-INSPECTION-ONLY.blend": "7017d79d4fb8d8279ba544173e0d9b3586346af90da2d59267d5ecf3c3ea0e25",
+    "/workspace/wewa-github/assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6",
+    "/workspace/wewa-github/assets-src/moto-components/engine-head/engine-head-v3.blend": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+    "/workspace/wewa-github/assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45",
+    "/workspace/wewa-github/assets-src/moto-components/engine-ohc-stub/engine-ohc-stub-v1.blend": "285eca8f5345efbfe31da9d2cc95464edcd9070a2e2e902e1e74990b2fb110c0",
+    "/workspace/wewa-github/assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend": "bceb87f8a34bcfd2354bccef2cf236ed6a0103a2725b4a76e3e3e3721da883e3",
+    "/workspace/wewa-github/assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5",
+    "/workspace/wewa-github/assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9"
+  },
+  "no_bake_export_save_or_second_pack": true,
+  "count_islands_requested": true,
+  "samples_limit": "At most3fixed triangle examples per object with before/after values, no per-triangle anomaly list.",
+  "before": [
+    {
+      "object": "M18 [engine-cylinder] Engine cylinder finned hollow casting - e",
+      "mesh": "Engine cylinder finned hollow casting - editable candidate clea",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 0,
+      "active_UV_name": "UV0_placeholder",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 69832,
+      "triangles": 69832,
+      "local_BMesh_faces_le_1e_minus12": 1,
+      "local_BMesh_face_area_quantiles": {
+        "min": 7.073716612460146e-13,
+        "p01": 6.492904534027845e-09,
+        "p50": 1.0686536455750684e-07,
+        "p99": 3.344332071719691e-05,
+        "max": 0.0013596881181001663
+      },
+      "UV_exact_zero_triangles": 65684,
+      "UV_area_le_1e_minus18_triangles": 65684,
+      "UV_abs_determinant_le_1e_minus18_triangles": 65684,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 1,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 65683,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 66949,
+      "UV_area_quantiles": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p50": 0.0,
+        "p99": 5.329070518200751e-15,
+        "max": 1.5631940186722204e-13
+      },
+      "UV_positive_area_quantiles": {
+        "min": 1.1102230246251565e-16,
+        "p01": 2.220446049250313e-16,
+        "p50": 1.7763568394002505e-15,
+        "p99": 3.410383087043539e-14,
+        "max": 1.5631940186722204e-13
+      },
+      "UV_bounds": {
+        "min": [
+          0.024730702862143517,
+          0.0647943988442421
+        ],
+        "max": [
+          2.0531527996063232,
+          1.8919932842254639
+        ]
+      },
+      "UV_triangles_outside_0_1": 37130,
+      "UV_islands": {
+        "exact_UV_continuity": 254,
+        "exact_UV_continuity_and_mesh_seams": 254,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "63ad23839cd447398aec2af0b8630602f37c0713f1f458a2b38dce08a4fefc6c"
+    },
+    {
+      "object": "M18 [engine-head-v3] Engine UG5 head hollow exterior casting - ",
+      "mesh": "Engine UG5 head hollow exterior casting - editable candidat.003",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 0,
+      "active_UV_name": "UV0_placeholder",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 160144,
+      "triangles": 160144,
+      "local_BMesh_faces_le_1e_minus12": 59,
+      "local_BMesh_face_area_quantiles": {
+        "min": 0.0,
+        "p01": 5.518795426207035e-10,
+        "p50": 2.4164236833712494e-07,
+        "p99": 1.803509940145894e-05,
+        "max": 0.0009085967903956771
+      },
+      "UV_exact_zero_triangles": 146960,
+      "UV_area_le_1e_minus18_triangles": 146960,
+      "UV_abs_determinant_le_1e_minus18_triangles": 146960,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 59,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 146901,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 150535,
+      "UV_area_quantiles": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p50": 0.0,
+        "p99": 3.552713678800501e-15,
+        "max": 1.1046719095020308e-13
+      },
+      "UV_positive_area_quantiles": {
+        "min": 5.551115123125783e-17,
+        "p01": 1.1102230246251565e-16,
+        "p50": 8.881784197001252e-16,
+        "p99": 2.842170943040401e-14,
+        "max": 1.1046719095020308e-13
+      },
+      "UV_bounds": {
+        "min": [
+          0.023193616420030594,
+          0.023193359375
+        ],
+        "max": [
+          2.0841057300567627,
+          2.0531935691833496
+        ]
+      },
+      "UV_triangles_outside_0_1": 87427,
+      "UV_islands": {
+        "exact_UV_continuity": 1169,
+        "exact_UV_continuity_and_mesh_seams": 1169,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "daed10c01bbb03e00ab5bf5d2f2ef0ddaad72b39470bcfdcc5a5886c9d80d810"
+    },
+    {
+      "object": "M18 [engine-ohc-cover] UG5 OHC cast cover body - conditional ca",
+      "mesh": "UG5 OHC cast cover body - conditional candidate cleaned evaluat",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 0,
+      "active_UV_name": "UV0_placeholder",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 87500,
+      "triangles": 87500,
+      "local_BMesh_faces_le_1e_minus12": 5,
+      "local_BMesh_face_area_quantiles": {
+        "min": 9.18996459877211e-14,
+        "p01": 1.6592981377794302e-09,
+        "p50": 5.741017972127338e-08,
+        "p99": 5.475572252180347e-06,
+        "max": 4.508580605033785e-05
+      },
+      "UV_exact_zero_triangles": 86048,
+      "UV_area_le_1e_minus18_triangles": 86048,
+      "UV_abs_determinant_le_1e_minus18_triangles": 86048,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 5,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 86043,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 86988,
+      "UV_area_quantiles": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p50": 0.0,
+        "p99": 8.881784197001252e-16,
+        "max": 2.842170943040401e-14
+      },
+      "UV_positive_area_quantiles": {
+        "min": 1.1102230246251565e-16,
+        "p01": 1.1102230246251565e-16,
+        "p50": 8.881784197001252e-16,
+        "p99": 1.0658141036401503e-14,
+        "max": 2.842170943040401e-14
+      },
+      "UV_bounds": {
+        "min": [
+          0.1436697244644165,
+          0.02636704035103321
+        ],
+        "max": [
+          2.0841057300567627,
+          1.9582828283309937
+        ]
+      },
+      "UV_triangles_outside_0_1": 69749,
+      "UV_islands": {
+        "exact_UV_continuity": 59,
+        "exact_UV_continuity_and_mesh_seams": 59,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "00f8dadeabdc78d15707c7e222c19dc71d7d31dead0bebd21a6aec6a9c89a03f"
+    },
+    {
+      "object": "M18 [engine-ohc-stub] OHC metallic hollow tube with one distal ",
+      "mesh": "OHC metallic hollow tube with one distal retention lip - editab",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 0,
+      "active_UV_name": "UV0_placeholder",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 22656,
+      "triangles": 45312,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 2.3882060773416924e-09,
+        "p01": 2.3884541011653937e-09,
+        "p50": 9.336089235034706e-09,
+        "p99": 2.569448042777367e-06,
+        "max": 2.9114110020600492e-06
+      },
+      "UV_exact_zero_triangles": 45292,
+      "UV_area_le_1e_minus18_triangles": 45292,
+      "UV_abs_determinant_le_1e_minus18_triangles": 45292,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 45292,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 45312,
+      "UV_area_quantiles": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p50": 0.0,
+        "p99": 0.0,
+        "max": 1.4210854715202004e-14
+      },
+      "UV_positive_area_quantiles": {
+        "min": 1.1102230246251565e-16,
+        "p01": 1.1102230246251565e-16,
+        "p50": 3.552713678800501e-15,
+        "p99": 1.4210854715202004e-14,
+        "max": 1.4210854715202004e-14
+      },
+      "UV_bounds": {
+        "min": [
+          0.023699631914496422,
+          0.404348224401474
+        ],
+        "max": [
+          1.7791386842727661,
+          1.819416880607605
+        ]
+      },
+      "UV_triangles_outside_0_1": 45312,
+      "UV_islands": {
+        "exact_UV_continuity": 25,
+        "exact_UV_continuity_and_mesh_seams": 25,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "bfad5ae85001ef11ce8f31bb9a8b7f0e212d50e8829faaf5c879fff18d9b366d"
+    },
+    {
+      "object": "M18 [engine-spark-cap-v2] Molded spark cap body - conditional c",
+      "mesh": "Molded spark cap body - conditional candidate.004",
+      "UV_names": [
+        "Original grain source atlas v2",
+        "UV_AO"
+      ],
+      "active_UV_index": 0,
+      "active_UV_name": "Original grain source atlas v2",
+      "render_UVs": [
+        "Original grain source atlas v2"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 48936,
+      "triangles": 48936,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 1.1783916897822877e-10,
+        "p01": 6.826144288707425e-10,
+        "p50": 1.1989565451564488e-09,
+        "p99": 1.855487425928004e-06,
+        "max": 2.015772679442307e-06
+      },
+      "UV_exact_zero_triangles": 48719,
+      "UV_area_le_1e_minus18_triangles": 48719,
+      "UV_abs_determinant_le_1e_minus18_triangles": 48719,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 48719,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 48936,
+      "UV_area_quantiles": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p50": 0.0,
+        "p99": 0.0,
+        "max": 7.105427357601002e-15
+      },
+      "UV_positive_area_quantiles": {
+        "min": 8.881784197001252e-16,
+        "p01": 8.881784197001252e-16,
+        "p50": 1.7763568394002505e-15,
+        "p99": 7.105427357601002e-15,
+        "max": 7.105427357601002e-15
+      },
+      "UV_bounds": {
+        "min": [
+          0.17277777194976807,
+          0.16374409198760986
+        ],
+        "max": [
+          1.7795453071594238,
+          1.7370522022247314
+        ]
+      },
+      "UV_triangles_outside_0_1": 48936,
+      "UV_islands": {
+        "exact_UV_continuity": 29,
+        "exact_UV_continuity_and_mesh_seams": 29,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "8cf651953c5d933689e71258692cc35550e560145f5ee3ba18ce835e47bcd124"
+    },
+    {
+      "object": "M18 [engine-spark-cap-v2] Visible short-port metallic contact -",
+      "mesh": "Visible short-port metallic contact - section estimated",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 0,
+      "active_UV_name": "UV0_placeholder",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 7392,
+      "triangles": 14592,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 2.862908576872769e-09,
+        "p01": 2.8629167925231513e-09,
+        "p50": 2.9074457286171196e-09,
+        "p99": 3.2701564123271964e-08,
+        "max": 3.2701592544981395e-08
+      },
+      "UV_exact_zero_triangles": 14591,
+      "UV_area_le_1e_minus18_triangles": 14591,
+      "UV_abs_determinant_le_1e_minus18_triangles": 14591,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 14591,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 14592,
+      "UV_area_quantiles": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p50": 0.0,
+        "p99": 0.0,
+        "max": 1.7763568394002505e-15
+      },
+      "UV_positive_area_quantiles": {
+        "min": 1.7763568394002505e-15,
+        "p01": 1.7763568394002505e-15,
+        "p50": 1.7763568394002505e-15,
+        "p99": 1.7763568394002505e-15,
+        "max": 1.7763568394002505e-15
+      },
+      "UV_bounds": {
+        "min": [
+          0.08584722876548767,
+          0.11591576039791107
+        ],
+        "max": [
+          2.053194522857666,
+          2.022045135498047
+        ]
+      },
+      "UV_triangles_outside_0_1": 14592,
+      "UV_islands": {
+        "exact_UV_continuity": 42,
+        "exact_UV_continuity_and_mesh_seams": 42,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "d4b0193680378de8802ac0bfb3b0e5103dc79db8c000db86c5895af5a97dff76"
+    },
+    {
+      "object": "M18 [engine-spark-plug-v2] Plug exposed ceramic five estimated ",
+      "mesh": "Plug exposed ceramic five estimated lower ribs - unmarked",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 0,
+      "active_UV_name": "UV0_placeholder",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 25536,
+      "triangles": 50688,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 1.4171277484820166e-08,
+        "p01": 1.417179706919569e-08,
+        "p50": 1.682538908198694e-08,
+        "p99": 3.7692393561883364e-07,
+        "max": 1.0150843081646599e-06
+      },
+      "UV_exact_zero_triangles": 50668,
+      "UV_area_le_1e_minus18_triangles": 50668,
+      "UV_abs_determinant_le_1e_minus18_triangles": 50668,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 50668,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 50688,
+      "UV_area_quantiles": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p50": 0.0,
+        "p99": 0.0,
+        "max": 7.105427357601002e-15
+      },
+      "UV_positive_area_quantiles": {
+        "min": 7.105427357601002e-15,
+        "p01": 7.105427357601002e-15,
+        "p50": 7.105427357601002e-15,
+        "p99": 7.105427357601002e-15,
+        "max": 7.105427357601002e-15
+      },
+      "UV_bounds": {
+        "min": [
+          1.1632362604141235,
+          0.1158968061208725
+        ],
+        "max": [
+          2.0532419681549072,
+          1.7792595624923706
+        ]
+      },
+      "UV_triangles_outside_0_1": 50688,
+      "UV_islands": {
+        "exact_UV_continuity": 30,
+        "exact_UV_continuity_and_mesh_seams": 30,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "b8db95c35a4f12454125d0c4a7918cb410cbdd48a3a005b2def46070858c4263"
+    },
+    {
+      "object": "M18 [engine-spark-plug-v2] Plug metal body rounded hex - hidden",
+      "mesh": "Plug metal body rounded hex - hidden insertion plain",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 0,
+      "active_UV_name": "UV0_placeholder",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 10212,
+      "triangles": 20424,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 6.946133251917175e-11,
+        "p01": 3.481913368741374e-10,
+        "p50": 2.197862158936914e-08,
+        "p99": 2.7128439796797466e-06,
+        "max": 2.848928716048249e-06
+      },
+      "UV_exact_zero_triangles": 20359,
+      "UV_area_le_1e_minus18_triangles": 20359,
+      "UV_abs_determinant_le_1e_minus18_triangles": 20359,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 20359,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 20424,
+      "UV_area_quantiles": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p50": 0.0,
+        "p99": 0.0,
+        "max": 7.105427357601002e-15
+      },
+      "UV_positive_area_quantiles": {
+        "min": 2.220446049250313e-16,
+        "p01": 2.220446049250313e-16,
+        "p50": 3.552713678800501e-15,
+        "p99": 7.105427357601002e-15,
+        "max": 7.105427357601002e-15
+      },
+      "UV_bounds": {
+        "min": [
+          0.21083582937717438,
+          0.024004364386200905
+        ],
+        "max": [
+          1.7794721126556396,
+          1.7798435688018799
+        ]
+      },
+      "UV_triangles_outside_0_1": 20424,
+      "UV_islands": {
+        "exact_UV_continuity": 40,
+        "exact_UV_continuity_and_mesh_seams": 40,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "4b5178b0ba5bc19506621ebffb64ddc9bcd785ec3e5e9078a038a1d652ef4c1c"
+    },
+    {
+      "object": "M18 [engine-spark-plug-v2] Plug separate estimated uncompressed",
+      "mesh": "Plug separate estimated uncompressed seat washer",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 0,
+      "active_UV_name": "UV0_placeholder",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 6912,
+      "triangles": 13824,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 3.336360077099698e-09,
+        "p01": 3.3363671825270558e-09,
+        "p50": 6.041624978081472e-09,
+        "p99": 9.859900274022948e-07,
+        "max": 9.859923011390492e-07
+      },
+      "UV_exact_zero_triangles": 13814,
+      "UV_area_le_1e_minus18_triangles": 13814,
+      "UV_abs_determinant_le_1e_minus18_triangles": 13814,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 13814,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 13824,
+      "UV_area_quantiles": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p50": 0.0,
+        "p99": 0.0,
+        "max": 7.105427357601002e-15
+      },
+      "UV_positive_area_quantiles": {
+        "min": 8.881784197001252e-16,
+        "p01": 8.881784197001252e-16,
+        "p50": 8.881784197001252e-16,
+        "p99": 7.105427357601002e-15,
+        "max": 7.105427357601002e-15
+      },
+      "UV_bounds": {
+        "min": [
+          0.11902804672718048,
+          1.373630166053772
+        ],
+        "max": [
+          1.588830590248108,
+          1.8193916082382202
+        ]
+      },
+      "UV_triangles_outside_0_1": 13824,
+      "UV_islands": {
+        "exact_UV_continuity": 10,
+        "exact_UV_continuity_and_mesh_seams": 10,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "8e2041225daf1e9c951ac113172f27eab86778fdccc66912e0fe0ddbaa74f043"
+    },
+    {
+      "object": "M18 [engine-spark-plug-v2] Plug separate exposed SAE-like termi",
+      "mesh": "Plug separate exposed SAE-like terminal - conditional option",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 0,
+      "active_UV_name": "UV0_placeholder",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 3072,
+      "triangles": 5760,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 3.185479613421194e-08,
+        "p01": 3.1854920479190696e-08,
+        "p50": 6.012934328225583e-08,
+        "p99": 2.9418430358418846e-07,
+        "max": 2.9418458780128276e-07
+      },
+      "UV_exact_zero_triangles": 5750,
+      "UV_area_le_1e_minus18_triangles": 5750,
+      "UV_abs_determinant_le_1e_minus18_triangles": 5750,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 5750,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 5760,
+      "UV_area_quantiles": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p50": 0.0,
+        "p99": 0.0,
+        "max": 1.7763568394002505e-15
+      },
+      "UV_positive_area_quantiles": {
+        "min": 8.881784197001252e-16,
+        "p01": 8.881784197001252e-16,
+        "p50": 1.7763568394002505e-15,
+        "p99": 1.7763568394002505e-15,
+        "max": 1.7763568394002505e-15
+      },
+      "UV_bounds": {
+        "min": [
+          1.439736008644104,
+          0.19765615463256836
+        ],
+        "max": [
+          1.9587395191192627,
+          1.9903429746627808
+        ]
+      },
+      "UV_triangles_outside_0_1": 5760,
+      "UV_islands": {
+        "exact_UV_continuity": 24,
+        "exact_UV_continuity_and_mesh_seams": 24,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "0edf4814bc71bf73211a31a8d7ebf3c061ef4d76ddd2f4966f80b879d41d6bbf"
+    },
+    {
+      "object": "M18 [engine-tappet-cap] UG5 tappet cap FRONT - editable conditi",
+      "mesh": "UG5 tappet cap FRONT - editable conditional candidate cleaned e",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 0,
+      "active_UV_name": "UV0_placeholder",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 70152,
+      "triangles": 70152,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 3.0816065255123704e-09,
+        "p01": 3.0842413112353028e-09,
+        "p50": 1.4856749608327391e-08,
+        "p99": 1.8923933544103213e-06,
+        "max": 6.4185005612671375e-06
+      },
+      "UV_exact_zero_triangles": 69995,
+      "UV_area_le_1e_minus18_triangles": 69995,
+      "UV_abs_determinant_le_1e_minus18_triangles": 69995,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 69995,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 70152,
+      "UV_area_quantiles": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p50": 0.0,
+        "p99": 0.0,
+        "max": 1.4210854715202004e-14
+      },
+      "UV_positive_area_quantiles": {
+        "min": 1.7763568394002505e-15,
+        "p01": 1.7763568394002505e-15,
+        "p50": 3.552713678800501e-15,
+        "p99": 1.0658141036401503e-14,
+        "max": 1.4210854715202004e-14
+      },
+      "UV_bounds": {
+        "min": [
+          0.02321743778884411,
+          0.023213595151901245
+        ],
+        "max": [
+          2.053245782852173,
+          2.053192138671875
+        ]
+      },
+      "UV_triangles_outside_0_1": 70152,
+      "UV_islands": {
+        "exact_UV_continuity": 79,
+        "exact_UV_continuity_and_mesh_seams": 79,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "ea5e6f14b18d0be2a71a1f16729cbb8e9abb65e3bef593f7f18e43870a921bec"
+    },
+    {
+      "object": "M18 [engine-tappet-cap] UG5 tappet cap REAR - same conditional ",
+      "mesh": "UG5 tappet cap FRONT - editable conditional candidate clean",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 0,
+      "active_UV_name": "UV0_placeholder",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 70152,
+      "triangles": 70152,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 3.0816065255123704e-09,
+        "p01": 3.0842413112353028e-09,
+        "p50": 1.4856749608327391e-08,
+        "p99": 1.8923933544103213e-06,
+        "max": 6.4185005612671375e-06
+      },
+      "UV_exact_zero_triangles": 69776,
+      "UV_area_le_1e_minus18_triangles": 69776,
+      "UV_abs_determinant_le_1e_minus18_triangles": 69776,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 69776,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 70152,
+      "UV_area_quantiles": {
+        "min": 0.0,
+        "p01": 0.0,
+        "p50": 0.0,
+        "p99": 0.0,
+        "max": 1.4210854715202004e-14
+      },
+      "UV_positive_area_quantiles": {
+        "min": 1.1102230246251565e-16,
+        "p01": 1.1102230246251565e-16,
+        "p50": 2.220446049250313e-16,
+        "p99": 8.881784197001252e-15,
+        "max": 1.4210854715202004e-14
+      },
+      "UV_bounds": {
+        "min": [
+          0.027331162244081497,
+          0.025906885042786598
+        ],
+        "max": [
+          2.053245782852173,
+          2.053192138671875
+        ]
+      },
+      "UV_triangles_outside_0_1": 70152,
+      "UV_islands": {
+        "exact_UV_continuity": 79,
+        "exact_UV_continuity_and_mesh_seams": 79,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "26b7cb0be5d0a7bf83d172a70bd322c0f056829158f9f03a9fe34d847b63aaff"
+    }
+  ],
+  "after_smart_only": [
+    {
+      "object": "M18 [engine-cylinder] Engine cylinder finned hollow casting - e",
+      "mesh": "Engine cylinder finned hollow casting - editable candidate clea",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 1,
+      "active_UV_name": "UV_AO",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 69832,
+      "triangles": 69832,
+      "local_BMesh_faces_le_1e_minus12": 1,
+      "local_BMesh_face_area_quantiles": {
+        "min": 7.073716612460146e-13,
+        "p01": 6.492904534027845e-09,
+        "p50": 1.0686536455750684e-07,
+        "p99": 3.344332071719691e-05,
+        "max": 0.0013596881181001663
+      },
+      "UV_exact_zero_triangles": 1,
+      "UV_area_le_1e_minus18_triangles": 1,
+      "UV_abs_determinant_le_1e_minus18_triangles": 1,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 1,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 0,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 11,
+      "UV_area_quantiles": {
+        "min": 0.0,
+        "p01": 7.253213389901703e-09,
+        "p50": 1.1743067462877121e-07,
+        "p99": 3.290374889422443e-05,
+        "max": 0.0016589909344654208
+      },
+      "UV_positive_area_quantiles": {
+        "min": 7.1809225232755125e-12,
+        "p01": 7.2568798969996354e-09,
+        "p50": 1.174326755837285e-07,
+        "p99": 3.2905205474520046e-05,
+        "max": 0.0016589909344654208
+      },
+      "UV_bounds": {
+        "min": [
+          -1.51138692672248e-08,
+          -5.987714501998198e-08
+        ],
+        "max": [
+          0.9721158146858215,
+          0.9814137816429138
+        ]
+      },
+      "UV_triangles_outside_0_1": 10,
+      "UV_islands": {
+        "exact_UV_continuity": 254,
+        "exact_UV_continuity_and_mesh_seams": 254,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "b1d8beaa835e921f33c7a86164ad887de28fc745777da8ca499505f6233367f0"
+    },
+    {
+      "object": "M18 [engine-head-v3] Engine UG5 head hollow exterior casting - ",
+      "mesh": "Engine UG5 head hollow exterior casting - editable candidat.003",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 1,
+      "active_UV_name": "UV_AO",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 160144,
+      "triangles": 160144,
+      "local_BMesh_faces_le_1e_minus12": 59,
+      "local_BMesh_face_area_quantiles": {
+        "min": 0.0,
+        "p01": 5.518795426207035e-10,
+        "p50": 2.4164236833712494e-07,
+        "p99": 1.803509940145894e-05,
+        "max": 0.0009085967903956771
+      },
+      "UV_exact_zero_triangles": 82,
+      "UV_area_le_1e_minus18_triangles": 82,
+      "UV_abs_determinant_le_1e_minus18_triangles": 82,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 59,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 23,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 94,
+      "UV_area_quantiles": {
+        "min": 0.0,
+        "p01": 5.981683814937356e-10,
+        "p50": 2.638736582016854e-07,
+        "p99": 2.086085787914363e-05,
+        "max": 0.001108791603066872
+      },
+      "UV_positive_area_quantiles": {
+        "min": 3.9968028886505635e-15,
+        "p01": 7.010500846504897e-10,
+        "p50": 2.644253951356035e-07,
+        "p99": 2.086250970734227e-05,
+        "max": 0.001108791603066872
+      },
+      "UV_bounds": {
+        "min": [
+          -3.492188316300826e-09,
+          -2.280689770373101e-08
+        ],
+        "max": [
+          0.9724616408348083,
+          0.9813570380210876
+        ]
+      },
+      "UV_triangles_outside_0_1": 12,
+      "UV_islands": {
+        "exact_UV_continuity": 1169,
+        "exact_UV_continuity_and_mesh_seams": 1169,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "e161416b15c2cd1a518ef4bf7c4af4d87b2fa89b6e10253efc21871b3184b16b"
+    },
+    {
+      "object": "M18 [engine-ohc-cover] UG5 OHC cast cover body - conditional ca",
+      "mesh": "UG5 OHC cast cover body - conditional candidate cleaned evaluat",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 1,
+      "active_UV_name": "UV_AO",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 87500,
+      "triangles": 87500,
+      "local_BMesh_faces_le_1e_minus12": 5,
+      "local_BMesh_face_area_quantiles": {
+        "min": 9.18996459877211e-14,
+        "p01": 1.6592981377794302e-09,
+        "p50": 5.741017972127338e-08,
+        "p99": 5.475572252180347e-06,
+        "max": 4.508580605033785e-05
+      },
+      "UV_exact_zero_triangles": 5,
+      "UV_area_le_1e_minus18_triangles": 5,
+      "UV_abs_determinant_le_1e_minus18_triangles": 5,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 5,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 0,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 5,
+      "UV_area_quantiles": {
+        "min": 0.0,
+        "p01": 1.9280652785447217e-09,
+        "p50": 6.902587257329174e-08,
+        "p99": 6.556782421496226e-06,
+        "max": 5.5019471464134995e-05
+      },
+      "UV_positive_area_quantiles": {
+        "min": 1.3822276656583199e-12,
+        "p01": 1.9306722531808873e-09,
+        "p50": 6.904352556347249e-08,
+        "p99": 6.5571594645596855e-06,
+        "max": 5.5019471464134995e-05
+      },
+      "UV_bounds": {
+        "min": [
+          0.03656376525759697,
+          2.4544648535851366e-09
+        ],
+        "max": [
+          0.96626877784729,
+          0.9751441478729248
+        ]
+      },
+      "UV_triangles_outside_0_1": 0,
+      "UV_islands": {
+        "exact_UV_continuity": 59,
+        "exact_UV_continuity_and_mesh_seams": 59,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "9b6e3d4050a4f7fdd7cdae099c8e53dd2f03a25f97b48a14283566447b0bd126"
+    },
+    {
+      "object": "M18 [engine-ohc-stub] OHC metallic hollow tube with one distal ",
+      "mesh": "OHC metallic hollow tube with one distal retention lip - editab",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 1,
+      "active_UV_name": "UV_AO",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 22656,
+      "triangles": 45312,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 2.3882060773416924e-09,
+        "p01": 2.3884541011653937e-09,
+        "p50": 9.336089235034706e-09,
+        "p99": 2.569448042777367e-06,
+        "max": 2.9114110020600492e-06
+      },
+      "UV_exact_zero_triangles": 0,
+      "UV_area_le_1e_minus18_triangles": 0,
+      "UV_abs_determinant_le_1e_minus18_triangles": 0,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 0,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 0,
+      "UV_area_quantiles": {
+        "min": 8.629230663359522e-10,
+        "p01": 9.92585551529146e-10,
+        "p50": 4.6143981968782555e-09,
+        "p99": 1.4763430931097332e-06,
+        "max": 1.7758841637238731e-06
+      },
+      "UV_positive_area_quantiles": {
+        "min": 8.629230663359522e-10,
+        "p01": 9.92585551529146e-10,
+        "p50": 4.6143981968782555e-09,
+        "p99": 1.4763430931097332e-06,
+        "max": 1.7758841637238731e-06
+      },
+      "UV_bounds": {
+        "min": [
+          0.03656376898288727,
+          0.020999625325202942
+        ],
+        "max": [
+          0.9693282246589661,
+          0.9714466333389282
+        ]
+      },
+      "UV_triangles_outside_0_1": 0,
+      "UV_islands": {
+        "exact_UV_continuity": 25,
+        "exact_UV_continuity_and_mesh_seams": 25,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "598e6dfa0b607baf23a4f1b622728eb2742b7418d42c2a27ff9ad17a3e25a9d6"
+    },
+    {
+      "object": "M18 [engine-spark-cap-v2] Molded spark cap body - conditional c",
+      "mesh": "Molded spark cap body - conditional candidate.004",
+      "UV_names": [
+        "Original grain source atlas v2",
+        "UV_AO"
+      ],
+      "active_UV_index": 1,
+      "active_UV_name": "UV_AO",
+      "render_UVs": [
+        "Original grain source atlas v2"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 48936,
+      "triangles": 48936,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 1.1783916897822877e-10,
+        "p01": 6.826144288707425e-10,
+        "p50": 1.1989565451564488e-09,
+        "p99": 1.855487425928004e-06,
+        "max": 2.015772679442307e-06
+      },
+      "UV_exact_zero_triangles": 0,
+      "UV_area_le_1e_minus18_triangles": 0,
+      "UV_abs_determinant_le_1e_minus18_triangles": 0,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 0,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 3,
+      "UV_area_quantiles": {
+        "min": 1.3430667689107167e-10,
+        "p01": 6.03787153607982e-10,
+        "p50": 1.4392327329915133e-09,
+        "p99": 2.164185430490577e-06,
+        "max": 2.458277155170663e-06
+      },
+      "UV_positive_area_quantiles": {
+        "min": 1.3430667689107167e-10,
+        "p01": 6.03787153607982e-10,
+        "p50": 1.4392327329915133e-09,
+        "p99": 2.164185430490577e-06,
+        "max": 2.458277155170663e-06
+      },
+      "UV_bounds": {
+        "min": [
+          0.015149688348174095,
+          -2.6865272229059656e-09
+        ],
+        "max": [
+          0.9721089601516724,
+          0.9999999403953552
+        ]
+      },
+      "UV_triangles_outside_0_1": 3,
+      "UV_islands": {
+        "exact_UV_continuity": 29,
+        "exact_UV_continuity_and_mesh_seams": 29,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "bf8ff6596701c9ee419f259eec580a741b7bcd8dd665477e7a4abd5e820d873e"
+    },
+    {
+      "object": "M18 [engine-spark-cap-v2] Visible short-port metallic contact -",
+      "mesh": "Visible short-port metallic contact - section estimated",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 1,
+      "active_UV_name": "UV_AO",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 7392,
+      "triangles": 14592,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 2.862908576872769e-09,
+        "p01": 2.8629167925231513e-09,
+        "p50": 2.9074457286171196e-09,
+        "p99": 3.2701564123271964e-08,
+        "max": 3.2701592544981395e-08
+      },
+      "UV_exact_zero_triangles": 0,
+      "UV_area_le_1e_minus18_triangles": 0,
+      "UV_abs_determinant_le_1e_minus18_triangles": 0,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 0,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 0,
+      "UV_area_quantiles": {
+        "min": 1.197767218741319e-09,
+        "p01": 1.2390530157446733e-09,
+        "p50": 1.7019365916581819e-09,
+        "p99": 2.0625515031458274e-08,
+        "max": 3.9836468346265974e-08
+      },
+      "UV_positive_area_quantiles": {
+        "min": 1.197767218741319e-09,
+        "p01": 1.2390530157446733e-09,
+        "p50": 1.7019365916581819e-09,
+        "p99": 2.0625515031458274e-08,
+        "max": 3.9836468346265974e-08
+      },
+      "UV_bounds": {
+        "min": [
+          0.05949462577700615,
+          0.19754736125469208
+        ],
+        "max": [
+          0.4635966122150421,
+          0.9744458794593811
+        ]
+      },
+      "UV_triangles_outside_0_1": 0,
+      "UV_islands": {
+        "exact_UV_continuity": 42,
+        "exact_UV_continuity_and_mesh_seams": 42,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "9f6fda17eb758c6e5b34c33a86c83e4469fdf96eb22906edc0d57cfacf21f1c9"
+    },
+    {
+      "object": "M18 [engine-spark-plug-v2] Plug exposed ceramic five estimated ",
+      "mesh": "Plug exposed ceramic five estimated lower ribs - unmarked",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 1,
+      "active_UV_name": "UV_AO",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 25536,
+      "triangles": 50688,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 1.4171277484820166e-08,
+        "p01": 1.417179706919569e-08,
+        "p50": 1.682538908198694e-08,
+        "p99": 3.7692393561883364e-07,
+        "max": 1.0150843081646599e-06
+      },
+      "UV_exact_zero_triangles": 0,
+      "UV_area_le_1e_minus18_triangles": 0,
+      "UV_abs_determinant_le_1e_minus18_triangles": 0,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 0,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 0,
+      "UV_area_quantiles": {
+        "min": 6.065329571924849e-09,
+        "p01": 6.285496567670634e-09,
+        "p50": 8.442162524602281e-09,
+        "p99": 4.5994903263846254e-07,
+        "max": 6.19456336892199e-07
+      },
+      "UV_positive_area_quantiles": {
+        "min": 6.065329571924849e-09,
+        "p01": 6.285496567670634e-09,
+        "p50": 8.442162524602281e-09,
+        "p99": 4.5994903263846254e-07,
+        "max": 6.19456336892199e-07
+      },
+      "UV_bounds": {
+        "min": [
+          0.20120100677013397,
+          0.32757216691970825
+        ],
+        "max": [
+          0.8401474952697754,
+          0.9729578495025635
+        ]
+      },
+      "UV_triangles_outside_0_1": 0,
+      "UV_islands": {
+        "exact_UV_continuity": 30,
+        "exact_UV_continuity_and_mesh_seams": 30,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "0211bba82e5935bbb88bc68d7228f3c597afce0ed3b347150d0b33c90bb4799d"
+    },
+    {
+      "object": "M18 [engine-spark-plug-v2] Plug metal body rounded hex - hidden",
+      "mesh": "Plug metal body rounded hex - hidden insertion plain",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 1,
+      "active_UV_name": "UV_AO",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 10212,
+      "triangles": 20424,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 6.946133251917175e-11,
+        "p01": 3.481913368741374e-10,
+        "p50": 2.197862158936914e-08,
+        "p99": 2.7128439796797466e-06,
+        "max": 2.848928716048249e-06
+      },
+      "UV_exact_zero_triangles": 0,
+      "UV_area_le_1e_minus18_triangles": 0,
+      "UV_abs_determinant_le_1e_minus18_triangles": 0,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 0,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 0,
+      "UV_area_quantiles": {
+        "min": 2.2589929926652985e-11,
+        "p01": 3.3986351510861826e-11,
+        "p50": 1.0374386683054126e-08,
+        "p99": 1.516646488397555e-06,
+        "max": 1.7369136617872982e-06
+      },
+      "UV_positive_area_quantiles": {
+        "min": 2.2589929926652985e-11,
+        "p01": 3.3986351510861826e-11,
+        "p50": 1.0374386683054126e-08,
+        "p99": 1.516646488397555e-06,
+        "max": 1.7369136617872982e-06
+      },
+      "UV_bounds": {
+        "min": [
+          0.2912837266921997,
+          0.13479749858379364
+        ],
+        "max": [
+          0.9726294279098511,
+          0.972502589225769
+        ]
+      },
+      "UV_triangles_outside_0_1": 0,
+      "UV_islands": {
+        "exact_UV_continuity": 40,
+        "exact_UV_continuity_and_mesh_seams": 40,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "e17eb5f5b72d48f9c888550192fa66cf4668645d28eeadc5e01d180874f5fa65"
+    },
+    {
+      "object": "M18 [engine-spark-plug-v2] Plug separate estimated uncompressed",
+      "mesh": "Plug separate estimated uncompressed seat washer",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 1,
+      "active_UV_name": "UV_AO",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 6912,
+      "triangles": 13824,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 3.336360077099698e-09,
+        "p01": 3.3363671825270558e-09,
+        "p50": 6.041624978081472e-09,
+        "p99": 9.859900274022948e-07,
+        "max": 9.859923011390492e-07
+      },
+      "UV_exact_zero_triangles": 0,
+      "UV_area_le_1e_minus18_triangles": 0,
+      "UV_abs_determinant_le_1e_minus18_triangles": 0,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 0,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 0,
+      "UV_area_quantiles": {
+        "min": 1.2703051943674382e-09,
+        "p01": 1.2981562491631848e-09,
+        "p50": 2.719390490568685e-09,
+        "p99": 7.694512094280625e-07,
+        "max": 7.695725523504393e-07
+      },
+      "UV_positive_area_quantiles": {
+        "min": 1.2703051943674382e-09,
+        "p01": 1.2981562491631848e-09,
+        "p50": 2.719390490568685e-09,
+        "p99": 7.694512094280625e-07,
+        "max": 7.695725523504393e-07
+      },
+      "UV_bounds": {
+        "min": [
+          0.10949509590864182,
+          0.13463808596134186
+        ],
+        "max": [
+          0.8290699124336243,
+          0.8575860857963562
+        ]
+      },
+      "UV_triangles_outside_0_1": 0,
+      "UV_islands": {
+        "exact_UV_continuity": 10,
+        "exact_UV_continuity_and_mesh_seams": 10,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "f6198ddd010cdd03d7ec900bc0545d3700595e45bbf31aecb80d686b55d9b941"
+    },
+    {
+      "object": "M18 [engine-spark-plug-v2] Plug separate exposed SAE-like termi",
+      "mesh": "Plug separate exposed SAE-like terminal - conditional option",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 1,
+      "active_UV_name": "UV_AO",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 3072,
+      "triangles": 5760,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 3.185479613421194e-08,
+        "p01": 3.1854920479190696e-08,
+        "p50": 6.012934328225583e-08,
+        "p99": 2.9418430358418846e-07,
+        "max": 2.9418458780128276e-07
+      },
+      "UV_exact_zero_triangles": 0,
+      "UV_area_le_1e_minus18_triangles": 0,
+      "UV_abs_determinant_le_1e_minus18_triangles": 0,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 0,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 0,
+      "UV_area_quantiles": {
+        "min": 1.0637457137363526e-08,
+        "p01": 1.2221952969682094e-08,
+        "p50": 2.980133939622931e-08,
+        "p99": 1.7789459747730162e-07,
+        "max": 1.7938230456593374e-07
+      },
+      "UV_positive_area_quantiles": {
+        "min": 1.0637457137363526e-08,
+        "p01": 1.2221952969682094e-08,
+        "p50": 2.980133939622931e-08,
+        "p99": 1.7789459747730162e-07,
+        "max": 1.7938230456593374e-07
+      },
+      "UV_bounds": {
+        "min": [
+          0.20901258289813995,
+          0.061431702226400375
+        ],
+        "max": [
+          0.9233993887901306,
+          0.9739519953727722
+        ]
+      },
+      "UV_triangles_outside_0_1": 0,
+      "UV_islands": {
+        "exact_UV_continuity": 24,
+        "exact_UV_continuity_and_mesh_seams": 24,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "cc4ed92b4870f1ba7a613fce0b59ae809dbcda17199eabdd1092cc0741c22a4a"
+    },
+    {
+      "object": "M18 [engine-tappet-cap] UG5 tappet cap FRONT - editable conditi",
+      "mesh": "UG5 tappet cap FRONT - editable conditional candidate cleaned e",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 1,
+      "active_UV_name": "UV_AO",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 70152,
+      "triangles": 70152,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 3.0816065255123704e-09,
+        "p01": 3.0842413112353028e-09,
+        "p50": 1.4856749608327391e-08,
+        "p99": 1.8923933544103213e-06,
+        "max": 6.4185005612671375e-06
+      },
+      "UV_exact_zero_triangles": 0,
+      "UV_area_le_1e_minus18_triangles": 0,
+      "UV_abs_determinant_le_1e_minus18_triangles": 0,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 0,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 0,
+      "UV_area_quantiles": {
+        "min": 2.365460716191592e-09,
+        "p01": 2.8801779672349426e-09,
+        "p50": 1.4875590648166792e-08,
+        "p99": 2.2773667663012154e-06,
+        "max": 7.833093733644603e-06
+      },
+      "UV_positive_area_quantiles": {
+        "min": 2.365460716191592e-09,
+        "p01": 2.8801779672349426e-09,
+        "p50": 1.4875590648166792e-08,
+        "p99": 2.2773667663012154e-06,
+        "max": 7.833093733644603e-06
+      },
+      "UV_bounds": {
+        "min": [
+          0.0665157288312912,
+          0.08888184279203415
+        ],
+        "max": [
+          0.9721322655677795,
+          0.9736257195472717
+        ]
+      },
+      "UV_triangles_outside_0_1": 0,
+      "UV_islands": {
+        "exact_UV_continuity": 79,
+        "exact_UV_continuity_and_mesh_seams": 79,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "a1a191ff42efc42f77d34514abca19b9db2b1f4b888ec430b15714d72752801c"
+    },
+    {
+      "object": "M18 [engine-tappet-cap] UG5 tappet cap REAR - same conditional ",
+      "mesh": "UG5 tappet cap FRONT - editable conditional candidate clean",
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "active_UV_index": 1,
+      "active_UV_name": "UV_AO",
+      "render_UVs": [
+        "UV0_placeholder"
+      ],
+      "object_scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "faces": 70152,
+      "triangles": 70152,
+      "local_BMesh_faces_le_1e_minus12": 0,
+      "local_BMesh_face_area_quantiles": {
+        "min": 3.0816065255123704e-09,
+        "p01": 3.0842413112353028e-09,
+        "p50": 1.4856749608327391e-08,
+        "p99": 1.8923933544103213e-06,
+        "max": 6.4185005612671375e-06
+      },
+      "UV_exact_zero_triangles": 0,
+      "UV_area_le_1e_minus18_triangles": 0,
+      "UV_abs_determinant_le_1e_minus18_triangles": 0,
+      "threshold_note": "Area=abs(det)/2; determinant threshold also reported unchanged to compare run005 epsilon convention.",
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 0,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 0,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 0,
+      "UV_area_quantiles": {
+        "min": 2.365460716191592e-09,
+        "p01": 2.880412708350377e-09,
+        "p50": 1.4877946430402744e-08,
+        "p99": 2.27750457285849e-06,
+        "max": 7.833093733644603e-06
+      },
+      "UV_positive_area_quantiles": {
+        "min": 2.365460716191592e-09,
+        "p01": 2.880412708350377e-09,
+        "p50": 1.4877946430402744e-08,
+        "p99": 2.27750457285849e-06,
+        "max": 7.833093733644603e-06
+      },
+      "UV_bounds": {
+        "min": [
+          1.1457942233894514e-10,
+          1.3709406943007707e-09
+        ],
+        "max": [
+          0.9721322655677795,
+          0.9736257791519165
+        ]
+      },
+      "UV_triangles_outside_0_1": 0,
+      "UV_islands": {
+        "exact_UV_continuity": 79,
+        "exact_UV_continuity_and_mesh_seams": 79,
+        "definition": "Same mesh edge and exactly equal endpoint UV values; no epsilon, no overlap merge."
+      },
+      "UV_AO_sha256": "09488266c76c234fc51aa6da82a3a446395cab2f97d23245873025aef23c7a7d"
+    }
+  ],
+  "examples": {
+    "M18 [engine-cylinder] Engine cylinder finned hollow casting - e": [
+      {
+        "triangle_index": 1,
+        "before": {
+          "triangle_index": 1,
+          "polygon_index": 1,
+          "loops": [
+            3,
+            4,
+            5
+          ],
+          "local_BMesh_polygon_area": 2.944398147519678e-08,
+          "UV_AO": [
+            [
+              0.08414504677057266,
+              0.5792353749275208
+            ],
+            [
+              0.08414505422115326,
+              0.5792353749275208
+            ],
+            [
+              0.08414506912231445,
+              0.5792353749275208
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.3890736401081085,
+              0.026576051488518715
+            ],
+            [
+              0.390493780374527,
+              0.026152772828936577
+            ],
+            [
+              0.39192697405815125,
+              0.025776179507374763
+            ]
+          ],
+          "signed_determinant": 7.182496131186156e-08,
+          "UV_area": 3.591248065593078e-08
+        }
+      },
+      {
+        "triangle_index": 2,
+        "before": {
+          "triangle_index": 2,
+          "polygon_index": 2,
+          "loops": [
+            6,
+            7,
+            8
+          ],
+          "local_BMesh_polygon_area": 2.18020045394951e-06,
+          "UV_AO": [
+            [
+              1.3810464143753052,
+              0.9773437976837158
+            ],
+            [
+              1.3810464143753052,
+              0.9773437976837158
+            ],
+            [
+              1.3810464143753052,
+              0.9773438572883606
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.9600697755813599,
+              0.7618781328201294
+            ],
+            [
+              0.9600697755813599,
+              0.7632691264152527
+            ],
+            [
+              0.9564794898033142,
+              0.7618781328201294
+            ]
+          ],
+          "signed_determinant": 4.994064521923747e-06,
+          "UV_area": 2.4970322609618734e-06
+        }
+      },
+      {
+        "triangle_index": 3,
+        "before": {
+          "triangle_index": 3,
+          "polygon_index": 3,
+          "loops": [
+            9,
+            10,
+            11
+          ],
+          "local_BMesh_polygon_area": 2.1802015908178873e-06,
+          "UV_AO": [
+            [
+              1.3810464143753052,
+              0.9773437976837158
+            ],
+            [
+              1.3810464143753052,
+              0.9773438572883606
+            ],
+            [
+              1.3810464143753052,
+              0.9773437976837158
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.9600697755813599,
+              0.7618781328201294
+            ],
+            [
+              0.9564794898033142,
+              0.7604711055755615
+            ],
+            [
+              0.9600697755813599,
+              0.7604711055755615
+            ]
+          ],
+          "signed_determinant": 5.051629905494792e-06,
+          "UV_area": 2.525814952747396e-06
+        }
+      }
+    ],
+    "M18 [engine-head-v3] Engine UG5 head hollow exterior casting - ": [
+      {
+        "triangle_index": 0,
+        "before": {
+          "triangle_index": 0,
+          "polygon_index": 0,
+          "loops": [
+            0,
+            1,
+            2
+          ],
+          "local_BMesh_polygon_area": 6.888055850140518e-07,
+          "UV_AO": [
+            [
+              0.18761597573757172,
+              0.7509660124778748
+            ],
+            [
+              0.1876159906387329,
+              0.7509660124778748
+            ],
+            [
+              0.1876159906387329,
+              0.7509660124778748
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.16806849837303162,
+              0.3800066411495209
+            ],
+            [
+              0.16884535551071167,
+              0.3782155215740204
+            ],
+            [
+              0.16882279515266418,
+              0.3796851933002472
+            ]
+          ],
+          "signed_determinant": 1.1013166716367095e-06,
+          "UV_area": 5.506583358183548e-07
+        }
+      },
+      {
+        "triangle_index": 4,
+        "before": {
+          "triangle_index": 4,
+          "polygon_index": 4,
+          "loops": [
+            12,
+            13,
+            14
+          ],
+          "local_BMesh_polygon_area": 1.886364771053195e-07,
+          "UV_AO": [
+            [
+              0.33367758989334106,
+              0.08657225966453552
+            ],
+            [
+              0.33367758989334106,
+              0.08657224476337433
+            ],
+            [
+              0.33367758989334106,
+              0.08657227456569672
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.03680818900465965,
+              0.23095165193080902
+            ],
+            [
+              0.038364846259355545,
+              0.23139692842960358
+            ],
+            [
+              0.03504028171300888,
+              0.23074175417423248
+            ]
+          ],
+          "signed_determinant": 4.6046870350036073e-07,
+          "UV_area": 2.3023435175018037e-07
+        }
+      },
+      {
+        "triangle_index": 5,
+        "before": {
+          "triangle_index": 5,
+          "polygon_index": 5,
+          "loops": [
+            15,
+            16,
+            17
+          ],
+          "local_BMesh_polygon_area": 6.843259825473069e-07,
+          "UV_AO": [
+            [
+              0.33367758989334106,
+              0.08657222986221313
+            ],
+            [
+              0.33367758989334106,
+              0.08657223731279373
+            ],
+            [
+              0.33367758989334106,
+              0.08657222241163254
+            ]
+          ],
+          "signed_determinant": -0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.03984832391142845,
+              0.23199154436588287
+            ],
+            [
+              0.038574349135160446,
+              0.23076899349689484
+            ],
+            [
+              0.040096916258335114,
+              0.23137830197811127
+            ]
+          ],
+          "signed_determinant": 1.085172123493905e-06,
+          "UV_area": 5.425860617469525e-07
+        }
+      }
+    ],
+    "M18 [engine-ohc-cover] UG5 OHC cast cover body - conditional ca": [
+      {
+        "triangle_index": 0,
+        "before": {
+          "triangle_index": 0,
+          "polygon_index": 0,
+          "loops": [
+            0,
+            1,
+            2
+          ],
+          "local_BMesh_polygon_area": 1.1293897372866013e-08,
+          "UV_AO": [
+            [
+              0.22417175769805908,
+              0.5781785845756531
+            ],
+            [
+              0.22417175769805908,
+              0.5781785845756531
+            ],
+            [
+              0.22417175769805908,
+              0.5781785845756531
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.6757139563560486,
+              0.7464069724082947
+            ],
+            [
+              0.6755297183990479,
+              0.7466661334037781
+            ],
+            [
+              0.6754671335220337,
+              0.7466197609901428
+            ]
+          ],
+          "signed_determinant": 2.4763117778547894e-08,
+          "UV_area": 1.2381558889273947e-08
+        }
+      },
+      {
+        "triangle_index": 1,
+        "before": {
+          "triangle_index": 1,
+          "polygon_index": 1,
+          "loops": [
+            3,
+            4,
+            5
+          ],
+          "local_BMesh_polygon_area": 1.1437235158950898e-08,
+          "UV_AO": [
+            [
+              0.22417175769805908,
+              0.5781785845756531
+            ],
+            [
+              0.22417175769805908,
+              0.5781785845756531
+            ],
+            [
+              0.22417175769805908,
+              0.5781785845756531
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.6756404042243958,
+              0.7467478513717651
+            ],
+            [
+              0.6756866574287415,
+              0.7467817664146423
+            ],
+            [
+              0.6754416227340698,
+              0.7470011711120605
+            ]
+          ],
+          "signed_determinant": 1.8458532480281065e-08,
+          "UV_area": 9.229266240140532e-09
+        }
+      },
+      {
+        "triangle_index": 2,
+        "before": {
+          "triangle_index": 2,
+          "polygon_index": 2,
+          "loops": [
+            6,
+            7,
+            8
+          ],
+          "local_BMesh_polygon_area": 1.1534503130405938e-08,
+          "UV_AO": [
+            [
+              0.22417175769805908,
+              0.5781785845756531
+            ],
+            [
+              0.22417175769805908,
+              0.5781785845756531
+            ],
+            [
+              0.22417175769805908,
+              0.5781785845756531
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.6756404042243958,
+              0.7467478513717651
+            ],
+            [
+              0.6758285164833069,
+              0.7464831471443176
+            ],
+            [
+              0.6758763790130615,
+              0.7465148568153381
+            ]
+          ],
+          "signed_determinant": 1.863439180738169e-08,
+          "UV_area": 9.317195903690845e-09
+        }
+      }
+    ],
+    "M18 [engine-ohc-stub] OHC metallic hollow tube with one distal ": [
+      {
+        "triangle_index": 0,
+        "before": {
+          "triangle_index": 0,
+          "polygon_index": 0,
+          "loops": [
+            0,
+            1,
+            2
+          ],
+          "local_BMesh_polygon_area": 2.8200168866732156e-09,
+          "UV_AO": [
+            [
+              1.2318636178970337,
+              1.7792117595672607
+            ],
+            [
+              1.2318636178970337,
+              1.7792117595672607
+            ],
+            [
+              1.2318636178970337,
+              1.7792117595672607
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.7419288754463196,
+              0.33467742800712585
+            ],
+            [
+              0.7420385479927063,
+              0.3346041142940521
+            ],
+            [
+              0.7420533299446106,
+              0.3346254527568817
+            ]
+          ],
+          "signed_determinant": 3.4239633350807708e-09,
+          "UV_area": 1.7119816675403854e-09
+        }
+      },
+      {
+        "triangle_index": 1,
+        "before": {
+          "triangle_index": 1,
+          "polygon_index": 0,
+          "loops": [
+            0,
+            2,
+            3
+          ],
+          "local_BMesh_polygon_area": 2.8200168866732156e-09,
+          "UV_AO": [
+            [
+              1.2318636178970337,
+              1.7792117595672607
+            ],
+            [
+              1.2318636178970337,
+              1.7792117595672607
+            ],
+            [
+              1.2318636178970337,
+              1.7792117595672607
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.7419288754463196,
+              0.33467742800712585
+            ],
+            [
+              0.7420533299446106,
+              0.3346254527568817
+            ],
+            [
+              0.7419428825378418,
+              0.33469921350479126
+            ]
+          ],
+          "signed_determinant": 3.439325269027904e-09,
+          "UV_area": 1.719662634513952e-09
+        }
+      },
+      {
+        "triangle_index": 2,
+        "before": {
+          "triangle_index": 2,
+          "polygon_index": 1,
+          "loops": [
+            4,
+            5,
+            6
+          ],
+          "local_BMesh_polygon_area": 2.837902357555322e-09,
+          "UV_AO": [
+            [
+              1.2318636178970337,
+              1.7792117595672607
+            ],
+            [
+              1.2318636178970337,
+              1.7792117595672607
+            ],
+            [
+              1.2318636178970337,
+              1.7792117595672607
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.7419428825378418,
+              0.33469921350479126
+            ],
+            [
+              0.7420533299446106,
+              0.3346254527568817
+            ],
+            [
+              0.7420676946640015,
+              0.33464622497558594
+            ]
+          ],
+          "signed_determinant": 3.3537901344971033e-09,
+          "UV_area": 1.6768950672485516e-09
+        }
+      }
+    ],
+    "M18 [engine-spark-cap-v2] Molded spark cap body - conditional c": [
+      {
+        "triangle_index": 0,
+        "before": {
+          "triangle_index": 0,
+          "polygon_index": 0,
+          "loops": [
+            0,
+            1,
+            2
+          ],
+          "local_BMesh_polygon_area": 3.0786553306683118e-09,
+          "UV_AO": [
+            [
+              1.692300796508789,
+              1.2637288570404053
+            ],
+            [
+              1.692300796508789,
+              1.2637288570404053
+            ],
+            [
+              1.692300796508789,
+              1.2637288570404053
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.4633569121360779,
+              0.7334497570991516
+            ],
+            [
+              0.46335530281066895,
+              0.7332819104194641
+            ],
+            [
+              0.4633958637714386,
+              0.7332854270935059
+            ]
+          ],
+          "signed_determinant": 6.802363117230925e-09,
+          "UV_area": 3.4011815586154626e-09
+        }
+      },
+      {
+        "triangle_index": 1,
+        "before": {
+          "triangle_index": 1,
+          "polygon_index": 1,
+          "loops": [
+            3,
+            4,
+            5
+          ],
+          "local_BMesh_polygon_area": 3.074626331311947e-09,
+          "UV_AO": [
+            [
+              1.692300796508789,
+              1.2637288570404053
+            ],
+            [
+              1.692300796508789,
+              1.2637288570404053
+            ],
+            [
+              1.692300796508789,
+              1.2637288570404053
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.46339747309684753,
+              0.733453094959259
+            ],
+            [
+              0.4633958637714386,
+              0.7332854270935059
+            ],
+            [
+              0.463434100151062,
+              0.7332903742790222
+            ]
+          ],
+          "signed_determinant": 6.403050534231625e-09,
+          "UV_area": 3.2015252671158123e-09
+        }
+      },
+      {
+        "triangle_index": 2,
+        "before": {
+          "triangle_index": 2,
+          "polygon_index": 2,
+          "loops": [
+            6,
+            7,
+            8
+          ],
+          "local_BMesh_polygon_area": 3.0784719218246437e-09,
+          "UV_AO": [
+            [
+              1.692300796508789,
+              1.2637288570404053
+            ],
+            [
+              1.692300796508789,
+              1.2637288570404053
+            ],
+            [
+              1.692300796508789,
+              1.2637288570404053
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.4633569121360779,
+              0.7334497570991516
+            ],
+            [
+              0.4633146822452545,
+              0.733447790145874
+            ],
+            [
+              0.46335530281066895,
+              0.7332819104194641
+            ]
+          ],
+          "signed_determinant": 7.084981490379505e-09,
+          "UV_area": 3.5424907451897525e-09
+        }
+      }
+    ],
+    "M18 [engine-spark-cap-v2] Visible short-port metallic contact -": [
+      {
+        "triangle_index": 0,
+        "before": {
+          "triangle_index": 0,
+          "polygon_index": 0,
+          "loops": [
+            0,
+            1,
+            2
+          ],
+          "local_BMesh_polygon_area": 3.270156767598564e-08,
+          "UV_AO": [
+            [
+              1.9256824254989624,
+              1.007887601852417
+            ],
+            [
+              1.9256824254989624,
+              1.007887601852417
+            ],
+            [
+              1.9256824254989624,
+              1.007887601852417
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.1292315274477005,
+              0.5069408416748047
+            ],
+            [
+              0.1303330361843109,
+              0.5069047212600708
+            ],
+            [
+              0.1303330510854721,
+              0.5069770216941833
+            ]
+          ],
+          "signed_determinant": 7.964009807182038e-08,
+          "UV_area": 3.982004903591019e-08
+        }
+      },
+      {
+        "triangle_index": 1,
+        "before": {
+          "triangle_index": 1,
+          "polygon_index": 1,
+          "loops": [
+            3,
+            4,
+            5
+          ],
+          "local_BMesh_polygon_area": 3.2701560570558286e-08,
+          "UV_AO": [
+            [
+              1.9256824254989624,
+              1.007887601852417
+            ],
+            [
+              1.9256824254989624,
+              1.007887601852417
+            ],
+            [
+              1.9256824254989624,
+              1.007887601852417
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.1292315274477005,
+              0.5069408416748047
+            ],
+            [
+              0.13032831251621246,
+              0.5068325996398926
+            ],
+            [
+              0.1303330361843109,
+              0.5069047212600708
+            ]
+          ],
+          "signed_determinant": 7.961321557559131e-08,
+          "UV_area": 3.9806607787795656e-08
+        }
+      },
+      {
+        "triangle_index": 2,
+        "before": {
+          "triangle_index": 2,
+          "polygon_index": 2,
+          "loops": [
+            6,
+            7,
+            8
+          ],
+          "local_BMesh_polygon_area": 3.270157833412668e-08,
+          "UV_AO": [
+            [
+              1.9256824254989624,
+              1.007887601852417
+            ],
+            [
+              1.9256824254989624,
+              1.007887601852417
+            ],
+            [
+              1.9256824254989624,
+              1.007887601852417
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.1292315274477005,
+              0.5069408416748047
+            ],
+            [
+              0.13031889498233795,
+              0.5067608952522278
+            ],
+            [
+              0.13032831251621246,
+              0.5068325996398926
+            ]
+          ],
+          "signed_determinant": 7.966367476797132e-08,
+          "UV_area": 3.983183738398566e-08
+        }
+      }
+    ],
+    "M18 [engine-spark-plug-v2] Plug exposed ceramic five estimated ": [
+      {
+        "triangle_index": 0,
+        "before": {
+          "triangle_index": 0,
+          "polygon_index": 0,
+          "loops": [
+            0,
+            1,
+            2
+          ],
+          "local_BMesh_polygon_area": 3.769238787754148e-07,
+          "UV_AO": [
+            [
+              1.7368881702423096,
+              1.5828466415405273
+            ],
+            [
+              1.7368882894515991,
+              1.5828466415405273
+            ],
+            [
+              1.7368882894515991,
+              1.5828466415405273
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.8348456025123596,
+              0.48886680603027344
+            ],
+            [
+              0.8372683525085449,
+              0.4935835599899292
+            ],
+            [
+              0.8371127247810364,
+              0.4936603009700775
+            ]
+          ],
+          "signed_determinant": 9.199819093197448e-07,
+          "UV_area": 4.599909546598724e-07
+        }
+      },
+      {
+        "triangle_index": 1,
+        "before": {
+          "triangle_index": 1,
+          "polygon_index": 1,
+          "loops": [
+            3,
+            4,
+            5
+          ],
+          "local_BMesh_polygon_area": 3.7692385035370535e-07,
+          "UV_AO": [
+            [
+              1.7368881702423096,
+              1.5828466415405273
+            ],
+            [
+              1.7368882894515991,
+              1.5828466415405273
+            ],
+            [
+              1.7368882894515991,
+              1.5828466415405273
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.8348456025123596,
+              0.48886680603027344
+            ],
+            [
+              0.8374214172363281,
+              0.493501752614975
+            ],
+            [
+              0.8372683525085449,
+              0.4935835599899292
+            ]
+          ],
+          "signed_determinant": 9.201674782133296e-07,
+          "UV_area": 4.600837391066648e-07
+        }
+      },
+      {
+        "triangle_index": 2,
+        "before": {
+          "triangle_index": 2,
+          "polygon_index": 2,
+          "loops": [
+            6,
+            7,
+            8
+          ],
+          "local_BMesh_polygon_area": 3.769238219319959e-07,
+          "UV_AO": [
+            [
+              1.7368881702423096,
+              1.5828466415405273
+            ],
+            [
+              1.7368882894515991,
+              1.5828466415405273
+            ],
+            [
+              1.7368882894515991,
+              1.5828466415405273
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.8348456025123596,
+              0.48886680603027344
+            ],
+            [
+              0.8375716805458069,
+              0.4934149980545044
+            ],
+            [
+              0.8374214172363281,
+              0.493501752614975
+            ]
+          ],
+          "signed_determinant": 9.199260873060666e-07,
+          "UV_area": 4.599630436530333e-07
+        }
+      }
+    ],
+    "M18 [engine-spark-plug-v2] Plug metal body rounded hex - hidden": [
+      {
+        "triangle_index": 0,
+        "before": {
+          "triangle_index": 0,
+          "polygon_index": 0,
+          "loops": [
+            0,
+            1,
+            2
+          ],
+          "local_BMesh_polygon_area": 4.4838934343260917e-08,
+          "UV_AO": [
+            [
+              1.737106204032898,
+              0.9453577399253845
+            ],
+            [
+              1.737106204032898,
+              0.9453577399253845
+            ],
+            [
+              1.737106204032898,
+              0.9453577399253845
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.8997309803962708,
+              0.48404985666275024
+            ],
+            [
+              0.8995270729064941,
+              0.48415619134902954
+            ],
+            [
+              0.8994472622871399,
+              0.4840109646320343
+            ]
+          ],
+          "signed_determinant": 3.809945248178792e-08,
+          "UV_area": 1.904972624089396e-08
+        }
+      },
+      {
+        "triangle_index": 1,
+        "before": {
+          "triangle_index": 1,
+          "polygon_index": 0,
+          "loops": [
+            0,
+            2,
+            3
+          ],
+          "local_BMesh_polygon_area": 4.4838934343260917e-08,
+          "UV_AO": [
+            [
+              1.737106204032898,
+              0.9453577399253845
+            ],
+            [
+              1.737106204032898,
+              0.9453577399253845
+            ],
+            [
+              1.737106204032898,
+              0.9453577399253845
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.8997309803962708,
+              0.48404985666275024
+            ],
+            [
+              0.8994472622871399,
+              0.4840109646320343
+            ],
+            [
+              0.8996574878692627,
+              0.48390132188796997
+            ]
+          ],
+          "signed_determinant": 3.9283731823047674e-08,
+          "UV_area": 1.9641865911523837e-08
+        }
+      },
+      {
+        "triangle_index": 2,
+        "before": {
+          "triangle_index": 2,
+          "polygon_index": 1,
+          "loops": [
+            4,
+            5,
+            6
+          ],
+          "local_BMesh_polygon_area": 4.459226587982812e-08,
+          "UV_AO": [
+            [
+              1.737106204032898,
+              0.9453577399253845
+            ],
+            [
+              1.737106204032898,
+              0.9453577399253845
+            ],
+            [
+              1.737106204032898,
+              0.9453577399253845
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.8995270729064941,
+              0.48415619134902954
+            ],
+            [
+              0.8993290066719055,
+              0.48427054286003113
+            ],
+            [
+              0.8992430567741394,
+              0.4841288626194
+            ]
+          ],
+          "signed_determinant": 3.7890572457399685e-08,
+          "UV_area": 1.8945286228699842e-08
+        }
+      }
+    ],
+    "M18 [engine-spark-plug-v2] Plug separate estimated uncompressed": [
+      {
+        "triangle_index": 0,
+        "before": {
+          "triangle_index": 0,
+          "polygon_index": 0,
+          "loops": [
+            0,
+            1,
+            2
+          ],
+          "local_BMesh_polygon_area": 6.0356089015556336e-09,
+          "UV_AO": [
+            [
+              1.5888303518295288,
+              1.373630404472351
+            ],
+            [
+              1.5888303518295288,
+              1.373630404472351
+            ],
+            [
+              1.5888303518295288,
+              1.373630404472351
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.30518805980682373,
+              0.6439887881278992
+            ],
+            [
+              0.3055262267589569,
+              0.6439554691314697
+            ],
+            [
+              0.3055287003517151,
+              0.6439768671989441
+            ]
+          ],
+          "signed_determinant": 7.31853688762385e-09,
+          "UV_area": 3.659268443811925e-09
+        }
+      },
+      {
+        "triangle_index": 1,
+        "before": {
+          "triangle_index": 1,
+          "polygon_index": 0,
+          "loops": [
+            0,
+            2,
+            3
+          ],
+          "local_BMesh_polygon_area": 6.0356089015556336e-09,
+          "UV_AO": [
+            [
+              1.5888303518295288,
+              1.373630404472351
+            ],
+            [
+              1.5888303518295288,
+              1.373630404472351
+            ],
+            [
+              1.5888303518295288,
+              1.373630404472351
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.30518805980682373,
+              0.6439887881278992
+            ],
+            [
+              0.3055287003517151,
+              0.6439768671989441
+            ],
+            [
+              0.3051898181438446,
+              0.6440102458000183
+            ]
+          ],
+          "signed_determinant": 7.3303141334690736e-09,
+          "UV_area": 3.6651570667345368e-09
+        }
+      },
+      {
+        "triangle_index": 2,
+        "before": {
+          "triangle_index": 2,
+          "polygon_index": 1,
+          "loops": [
+            4,
+            5,
+            6
+          ],
+          "local_BMesh_polygon_area": 6.035587585273561e-09,
+          "UV_AO": [
+            [
+              1.5888303518295288,
+              1.373630404472351
+            ],
+            [
+              1.5888303518295288,
+              1.3736302852630615
+            ],
+            [
+              1.5888303518295288,
+              1.3736302852630615
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.3055262267589569,
+              0.6439554691314697
+            ],
+            [
+              0.3058631420135498,
+              0.6439111232757568
+            ],
+            [
+              0.3058663010597229,
+              0.6439324021339417
+            ]
+          ],
+          "signed_determinant": 7.309262528565341e-09,
+          "UV_area": 3.6546312642826706e-09
+        }
+      }
+    ],
+    "M18 [engine-spark-plug-v2] Plug separate exposed SAE-like termi": [
+      {
+        "triangle_index": 0,
+        "before": {
+          "triangle_index": 0,
+          "polygon_index": 0,
+          "loops": [
+            0,
+            1,
+            2
+          ],
+          "local_BMesh_polygon_area": 1.1059049853656688e-07,
+          "UV_AO": [
+            [
+              1.8183414936065674,
+              1.1404719352722168
+            ],
+            [
+              1.8183414936065674,
+              1.1404719352722168
+            ],
+            [
+              1.8183414936065674,
+              1.1404719352722168
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.46819868683815,
+              0.1976151317358017
+            ],
+            [
+              0.4684334099292755,
+              0.2004777491092682
+            ],
+            [
+              0.46833962202072144,
+              0.20048390328884125
+            ]
+          ],
+          "signed_determinant": 2.699234245007176e-07,
+          "UV_area": 1.349617122503588e-07
+        }
+      },
+      {
+        "triangle_index": 1,
+        "before": {
+          "triangle_index": 1,
+          "polygon_index": 1,
+          "loops": [
+            3,
+            4,
+            5
+          ],
+          "local_BMesh_polygon_area": 1.1059049143113953e-07,
+          "UV_AO": [
+            [
+              1.8183414936065674,
+              1.1404719352722168
+            ],
+            [
+              1.8183414936065674,
+              1.1404719352722168
+            ],
+            [
+              1.8183414936065674,
+              1.1404719352722168
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.46819868683815,
+              0.1976151317358017
+            ],
+            [
+              0.4685269594192505,
+              0.2004685401916504
+            ],
+            [
+              0.4684334099292755,
+              0.2004777491092682
+            ]
+          ],
+          "signed_determinant": 2.69957940890464e-07,
+          "UV_area": 1.34978970445232e-07
+        }
+      },
+      {
+        "triangle_index": 2,
+        "before": {
+          "triangle_index": 2,
+          "polygon_index": 2,
+          "loops": [
+            6,
+            7,
+            8
+          ],
+          "local_BMesh_polygon_area": 1.1059051985284896e-07,
+          "UV_AO": [
+            [
+              1.8183414936065674,
+              1.1404719352722168
+            ],
+            [
+              1.8183414936065674,
+              1.1404719352722168
+            ],
+            [
+              1.8183414936065674,
+              1.1404719352722168
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.46819868683815,
+              0.1976151317358017
+            ],
+            [
+              0.4686201214790344,
+              0.20045627653598785
+            ],
+            [
+              0.4685269594192505,
+              0.2004685401916504
+            ]
+          ],
+          "signed_determinant": 2.6985523104983145e-07,
+          "UV_area": 1.3492761552491572e-07
+        }
+      }
+    ],
+    "M18 [engine-tappet-cap] UG5 tappet cap FRONT - editable conditi": [
+      {
+        "triangle_index": 0,
+        "before": {
+          "triangle_index": 0,
+          "polygon_index": 0,
+          "loops": [
+            0,
+            1,
+            2
+          ],
+          "local_BMesh_polygon_area": 9.815948942559771e-09,
+          "UV_AO": [
+            [
+              1.5301120281219482,
+              1.1559761762619019
+            ],
+            [
+              1.5301120281219482,
+              1.1559761762619019
+            ],
+            [
+              1.5301120281219482,
+              1.1559761762619019
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.7137815952301025,
+              0.9376747608184814
+            ],
+            [
+              0.713731050491333,
+              0.9380014538764954
+            ],
+            [
+              0.7137247920036316,
+              0.9376766085624695
+            ]
+          ],
+          "signed_determinant": 1.8463826023662477e-08,
+          "UV_area": 9.231913011831239e-09
+        }
+      },
+      {
+        "triangle_index": 1,
+        "before": {
+          "triangle_index": 1,
+          "polygon_index": 1,
+          "loops": [
+            3,
+            4,
+            5
+          ],
+          "local_BMesh_polygon_area": 9.816353063740735e-09,
+          "UV_AO": [
+            [
+              1.5301120281219482,
+              1.1559761762619019
+            ],
+            [
+              1.5301120281219482,
+              1.1559761762619019
+            ],
+            [
+              1.5301120281219482,
+              1.1559761762619019
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.7137247920036316,
+              0.9376766085624695
+            ],
+            [
+              0.7136626839637756,
+              0.9376780986785889
+            ],
+            [
+              0.7137183547019958,
+              0.9373542666435242
+            ]
+          ],
+          "signed_determinant": 2.00296170760339e-08,
+          "UV_area": 1.001480853801695e-08
+        }
+      },
+      {
+        "triangle_index": 2,
+        "before": {
+          "triangle_index": 2,
+          "polygon_index": 2,
+          "loops": [
+            6,
+            7,
+            8
+          ],
+          "local_BMesh_polygon_area": 9.922558774633217e-09,
+          "UV_AO": [
+            [
+              1.5301120281219482,
+              1.1559761762619019
+            ],
+            [
+              1.5301120281219482,
+              1.1559761762619019
+            ],
+            [
+              1.5301120281219482,
+              1.1559761762619019
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.7136626839637756,
+              0.9376780986785889
+            ],
+            [
+              0.713668942451477,
+              0.9380033016204834
+            ],
+            [
+              0.7136025428771973,
+              0.9380046129226685
+            ]
+          ],
+          "signed_determinant": 2.1601543664928613e-08,
+          "UV_area": 1.0800771832464306e-08
+        }
+      }
+    ],
+    "M18 [engine-tappet-cap] UG5 tappet cap REAR - same conditional ": [
+      {
+        "triangle_index": 0,
+        "before": {
+          "triangle_index": 0,
+          "polygon_index": 0,
+          "loops": [
+            0,
+            1,
+            2
+          ],
+          "local_BMesh_polygon_area": 9.815948942559771e-09,
+          "UV_AO": [
+            [
+              1.5301119089126587,
+              1.1208178997039795
+            ],
+            [
+              1.5301119089126587,
+              1.1208178997039795
+            ],
+            [
+              1.5301119089126587,
+              1.1208178997039795
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.004340300802141428,
+              0.9427384734153748
+            ],
+            [
+              0.004289774689823389,
+              0.9430651664733887
+            ],
+            [
+              0.004283512476831675,
+              0.9427403807640076
+            ]
+          ],
+          "signed_determinant": 1.8455980743681266e-08,
+          "UV_area": 9.227990371840633e-09
+        }
+      },
+      {
+        "triangle_index": 1,
+        "before": {
+          "triangle_index": 1,
+          "polygon_index": 1,
+          "loops": [
+            3,
+            4,
+            5
+          ],
+          "local_BMesh_polygon_area": 9.816353063740735e-09,
+          "UV_AO": [
+            [
+              1.5301119089126587,
+              1.1208178997039795
+            ],
+            [
+              1.5301119089126587,
+              1.1208178997039795
+            ],
+            [
+              1.5301119089126587,
+              1.1208178997039795
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.004283512476831675,
+              0.9427403807640076
+            ],
+            [
+              0.0042213802225887775,
+              0.942741870880127
+            ],
+            [
+              0.004277037922292948,
+              0.9424180388450623
+            ]
+          ],
+          "signed_determinant": 2.0037477899137457e-08,
+          "UV_area": 1.0018738949568728e-08
+        }
+      },
+      {
+        "triangle_index": 2,
+        "before": {
+          "triangle_index": 2,
+          "polygon_index": 2,
+          "loops": [
+            6,
+            7,
+            8
+          ],
+          "local_BMesh_polygon_area": 9.922558774633217e-09,
+          "UV_AO": [
+            [
+              1.5301119089126587,
+              1.1208178997039795
+            ],
+            [
+              1.5301119089126587,
+              1.1208178997039795
+            ],
+            [
+              1.5301119089126587,
+              1.1208178997039795
+            ]
+          ],
+          "signed_determinant": 0.0,
+          "UV_area": 0.0
+        },
+        "after_smart_only": {
+          "UV_AO": [
+            [
+              0.0042213802225887775,
+              0.942741870880127
+            ],
+            [
+              0.004227639641612768,
+              0.9430670738220215
+            ],
+            [
+              0.004161223769187927,
+              0.9430683851242065
+            ]
+          ],
+          "signed_determinant": 2.16068450908935e-08,
+          "UV_area": 1.080342254544675e-08
+        }
+      }
+    ]
+  },
+  "art_accepted": false,
+  "protected_meshes_before": {
+    "M18 [engine-cylinder] Engine cylinder finned hollow casting - e": {
+      "mesh": "Engine cylinder finned hollow casting - editable candidate clea",
+      "world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.9396925568580627,
+          -0.34202006459236145,
+          0.125
+        ],
+        [
+          0.0,
+          0.34202006459236145,
+          0.9396925568580627,
+          -0.5400000214576721
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-cylinder] Engine cylinder base provisional datum",
+      "positions": "cb609fe9ac4ffe2533ba2a03ee87d5261350be572b137c4a62adcbfae2085d2d",
+      "edges": "5b27fdb0252a8f135461f4f3266e35174a9644957c9d52d4e2378ed6e34ad454",
+      "loop_vertices": "238e9123a98e0c04eaee00f6aab123555f532f2ec415b1d08e8d0ef5a19a16b3",
+      "polygon_starts": "ac3022d3fdc6fc97d6f5d26fa630d04a0763e4c6b42e45c8b5ac41a34ae317cd",
+      "polygon_totals": "51175cb37fa1523509c49d86ac9439595f72e3fed88f6ad478507ed74469b2ff",
+      "triangle_loops": "6fd281bee77ea3fd8abdba8f6b2d72eaa6dc49562346f83abcd73d170eba3245",
+      "corner_normals": "201c424bedfdf2910b87c5318a7000358120169b25d068f7bf99f1e5918ce9e0",
+      "protected_UVs": {
+        "UV0_placeholder": "63ad23839cd447398aec2af0b8630602f37c0713f1f458a2b38dce08a4fefc6c"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-head-v3] Engine UG5 head hollow exterior casting - ": {
+      "mesh": "Engine UG5 head hollow exterior casting - editable candidat.003",
+      "world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.9396926164627075,
+          -0.34202003479003906,
+          0.09982731938362122
+        ],
+        [
+          0.0,
+          0.34202003479003906,
+          0.9396926164627075,
+          -0.47083863615989685
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-head-v3] Engine head base provisional datum",
+      "positions": "b6afb9df4282c0a944a4e94f4a4c697155d8c3edb9412f78421e81aeea1c26a0",
+      "edges": "c4973470748f052784b17d17dfcef3453c6650366d8189d9e2980f416d5a4da4",
+      "loop_vertices": "99c0fc2b8bce5860d1f8d8bff28e3a0b68305e7270373612e38a29ff7592fd4f",
+      "polygon_starts": "552d3f32c5cecc431d56666c94bb1e5f2abebcd1596b16459bb09318cdee973a",
+      "polygon_totals": "88ed72937ced30562c7c350b3b36dfa6567ac117357bb50359874c252de15100",
+      "triangle_loops": "7cb38e7d0b5538f565a717a58e31432064f4c539a2af1d432561d331b83a2776",
+      "corner_normals": "f0e1c5291a383f07ddeef25512c00cdb653a6e9ec1f9b06a5aaec137007c7200",
+      "protected_UVs": {
+        "UV0_placeholder": "daed10c01bbb03e00ab5bf5d2f2ef0ddaad72b39470bcfdcc5a5886c9d80d810"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-ohc-cover] UG5 OHC cast cover body - conditional ca": {
+      "mesh": "UG5 OHC cast cover body - conditional candidate cleaned evaluat",
+      "world": [
+        [
+          -4.107527118435428e-08,
+          -1.7975700927763683e-07,
+          1.0,
+          0.0803999975323677
+        ],
+        [
+          0.9396926164627075,
+          -0.3420199155807495,
+          -2.2882350236841376e-08,
+          0.07314975559711456
+        ],
+        [
+          0.3420199155807495,
+          0.9396926164627075,
+          1.8296492498848238e-07,
+          -0.3975426256656647
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-ohc-cover] OHC cover inherited estimated head datum",
+      "positions": "9e3b882a3e755571a9896649c0203d228b516dd5f42ffc9ccd20ab0cd38a4b31",
+      "edges": "4a7d636bb3d59f980f996e01aa7e54e52b38609f3f4269c0e238fcfed67a05f9",
+      "loop_vertices": "a6bf1c1e92a665fc919da7fda067d72192509792ed5124efacf904d102a93afe",
+      "polygon_starts": "5f092621760d5d28fcb4092cffb04493d9bf9c2f907502d62ec71feb8312248e",
+      "polygon_totals": "680d8acc24b8c85e33aadc39b09f7fc8951b6d8faf349cf95896f13eb9e9abc5",
+      "triangle_loops": "e92f85307fd2159f3dc113828ac326f6cefeb83ddecdb04cf0e9cce712d1f186",
+      "corner_normals": "1df4258923dc9b90390d72be01a94f17a9eafee837d7a0b4aa71e0456c7afb47",
+      "protected_UVs": {
+        "UV0_placeholder": "00f8dadeabdc78d15707c7e222c19dc71d7d31dead0bebd21a6aec6a9c89a03f"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-ohc-stub] OHC metallic hollow tube with one distal ": {
+      "mesh": "OHC metallic hollow tube with one distal retention lip - editab",
+      "world": [
+        [
+          0.1473069041967392,
+          -1.9736003942227853e-09,
+          -0.9890908002853394,
+          0.09239999949932098
+        ],
+        [
+          -0.8825151920318604,
+          -0.4515434503555298,
+          -0.13143447041511536,
+          0.01633981615304947
+        ],
+        [
+          -0.4466174840927124,
+          0.8922489285469055,
+          -0.0665154904127121,
+          -0.41396304965019226
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-ohc-stub] OHC metallic stub inherited provisional s",
+      "positions": "ea2850f6c01e8eb5c0695cf8f8b50c68d733996982f378f67604bf516c879666",
+      "edges": "aa925a097026f426c6686646f8ce79a82524a4ddee2cc8e1708663aec3cc4c66",
+      "loop_vertices": "e48797dc3c06aec3bdf9f4f1516c106c43934ca3b813b4af00df6f73e6cae3b7",
+      "polygon_starts": "521f394c943a96f8ee9cc4c1118baad3e1c78f452bc0256a986255840647a22a",
+      "polygon_totals": "48f83b40236446378f902d2c5aa5199092f86064ecd112fc37ed8e8d8509c97e",
+      "triangle_loops": "f9a6dfd68dec54ec06829e3eec23b4133a3dec03699325c8383890f23e2423ac",
+      "corner_normals": "8f9f52e73f8b1b5a0c2265da0e3016893caf51c73d1c991cb736d5b67c92b99e",
+      "protected_UVs": {
+        "UV0_placeholder": "bfad5ae85001ef11ce8f31bb9a8b7f0e212d50e8829faaf5c879fff18d9b366d"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-spark-cap-v2] Molded spark cap body - conditional c": {
+      "mesh": "Molded spark cap body - conditional candidate.004",
+      "world": [
+        [
+          -0.9438583254814148,
+          -5.831210714291046e-08,
+          -0.3303503394126892,
+          -0.051510173827409744
+        ],
+        [
+          -0.11298651248216629,
+          0.9396925568580627,
+          0.3228185474872589,
+          0.09109603613615036
+        ],
+        [
+          0.310427725315094,
+          0.34202009439468384,
+          -0.8869367837905884,
+          -0.44684964418411255
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-spark-cap-v2] Spark cap inherited unchanged provisi",
+      "positions": "e8f10c225b6d6e4edcedefb0dd7dea8c6bc79eecbba64287076db9aad44b60d5",
+      "edges": "b5bc50df5535284cc0254bd2a2f6759df7cd17b90c9b3882c15d39792a92abde",
+      "loop_vertices": "9c11273853bea5b68730c397fe9c3cd64f15c704fdb54639b477042ba4e9d404",
+      "polygon_starts": "e7258b6ea3a7e38950ce6c1272dee56d10a9d99cc370ead44a27f52c9e980c5d",
+      "polygon_totals": "0d35b9474906858be8f6785e0f9143e7fbc92bac5474cee045ef0827e1412d2e",
+      "triangle_loops": "be6d4e002e8a59f52437b6a8d709a8fca0db4eba055e6c7c2997d07ba43af1b0",
+      "corner_normals": "2784ff228f89167a7747db341cf7539f84d87b174f6570602e684e746bb32da5",
+      "protected_UVs": {
+        "Original grain source atlas v2": "c58faaa11347ae1cf515d3a5b53c656fa186bcd0c4470545438a160cb0909dbb"
+      },
+      "UV_names": [
+        "Original grain source atlas v2",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "Original grain source atlas v2"
+      ]
+    },
+    "M18 [engine-spark-cap-v2] Visible short-port metallic contact -": {
+      "mesh": "Visible short-port metallic contact - section estimated",
+      "world": [
+        [
+          -1.295714326943198e-07,
+          0.9438583254814148,
+          -0.3303503394126892,
+          -0.12229955196380615
+        ],
+        [
+          0.9396925568580627,
+          0.11298658698797226,
+          0.3228185474872589,
+          0.08262205123901367
+        ],
+        [
+          0.3420201241970062,
+          -0.3104276955127716,
+          -0.8869367837905884,
+          -0.4235675632953644
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          7.549790126404332e-08,
+          -1.0,
+          0.0,
+          0.07500000298023224
+        ],
+        [
+          1.0,
+          7.549790126404332e-08,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-spark-cap-v2] Spark cap inherited unchanged provisi",
+      "positions": "85940bbfd7001c18eccfd13080cdd411948145b6c20fca8777796d73ad99ad04",
+      "edges": "cd881090c21b9c113f4a4d27cc3205d69f6b53de8184a37c21dc890dc872f3b8",
+      "loop_vertices": "91bf6c36afeed7f3618dfef8abc50418b3a6c1e35f4af74586daf5467780cc54",
+      "polygon_starts": "542fe31a6887023ce87edcd981abfab15cfc1fb2725e08b2a6737787afbff02d",
+      "polygon_totals": "54516d7e669ceecbef573cfe1be1207f955d76e6641f23a7974462e756fb1653",
+      "triangle_loops": "ab7654aeee39dc04de58d73fec4a99701774f90dbe30e593f303c1e533e264f5",
+      "corner_normals": "fc6e24da00d5ad6ff873882bfc419c15d6ed7a827c1bc9788ab0bb68d2ce2288",
+      "protected_UVs": {
+        "UV0_placeholder": "d4b0193680378de8802ac0bfb3b0e5103dc79db8c000db86c5895af5a97dff76"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-spark-plug-v2] Plug exposed ceramic five estimated ": {
+      "mesh": "Plug exposed ceramic five estimated lower ribs - unmarked",
+      "world": [
+        [
+          -0.9438583254814148,
+          -5.131085245579925e-08,
+          -0.3303503394126892,
+          -0.051510173827409744
+        ],
+        [
+          -0.1129865050315857,
+          0.9396925568580627,
+          0.3228185474872589,
+          0.09109603613615036
+        ],
+        [
+          0.310427725315094,
+          0.34202009439468384,
+          -0.8869367837905884,
+          -0.44684964418411255
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-spark-plug-v2] Spark plug inherited estimated seat ",
+      "positions": "17a8457c90410069df1eda093373f731d75574baa80338628d3cc345b1bc66a2",
+      "edges": "cb09bb2ed23d26292b143354ec84384fbe593317e4e72c907d7a83d739ac7624",
+      "loop_vertices": "e2ba1b02fc723b4f2ce29dd13702e174b70b1c41bdb905957faa7140bff7cc16",
+      "polygon_starts": "cf954bb07eebe40c6031c734c744f1cb04e1332400a22ed441f29ecfe789e9b3",
+      "polygon_totals": "3826b0dce66de9f95fc947710b9d8564a1b7eec0ae62bd3f6823038e6f8d9594",
+      "triangle_loops": "b76d1d4a72e52295470f58d049d1900a7e7caf22913884667cd73d62b3b8b760",
+      "corner_normals": "3173203961d9f72c8663bcf5b6d1f44929fed11918644548befe01c1b1a81fb0",
+      "protected_UVs": {
+        "UV0_placeholder": "b8db95c35a4f12454125d0c4a7918cb410cbdd48a3a005b2def46070858c4263"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-spark-plug-v2] Plug metal body rounded hex - hidden": {
+      "mesh": "Plug metal body rounded hex - hidden insertion plain",
+      "world": [
+        [
+          -0.9438583254814148,
+          -5.131085245579925e-08,
+          -0.3303503394126892,
+          -0.051510173827409744
+        ],
+        [
+          -0.1129865050315857,
+          0.9396925568580627,
+          0.3228185474872589,
+          0.09109603613615036
+        ],
+        [
+          0.310427725315094,
+          0.34202009439468384,
+          -0.8869367837905884,
+          -0.44684964418411255
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-spark-plug-v2] Spark plug inherited estimated seat ",
+      "positions": "a8cb7e2703a9f75eb5fb717184451ccfff2a119b127908130e5f1ed71b83a5d0",
+      "edges": "af90478253753b3defbcde0c2a6fe0419fca35bb121d3c70000e4c115e22788f",
+      "loop_vertices": "a978833a1786ce0123633e87cd499f56896d3e610bdbccbb126ed9470eeeea6b",
+      "polygon_starts": "8c5a091d4b7ae8983ad7e5f51f1204fe10a354bc8f66202b6f92a194042179e8",
+      "polygon_totals": "f36e0d4d628d8326f6e70ea6296385a36f98a7c144d7e2b35bef235c4a425328",
+      "triangle_loops": "c51db1b5cb7e79880f0e6d193fbe44428f2bdaf502c93ec4508509ec3052c20b",
+      "corner_normals": "29d1f0db27b93f779bb26375c0712a069777f4449a560de62a274f102221a36e",
+      "protected_UVs": {
+        "UV0_placeholder": "4b5178b0ba5bc19506621ebffb64ddc9bcd785ec3e5e9078a038a1d652ef4c1c"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-spark-plug-v2] Plug separate estimated uncompressed": {
+      "mesh": "Plug separate estimated uncompressed seat washer",
+      "world": [
+        [
+          -0.9438583254814148,
+          -5.131085245579925e-08,
+          -0.3303503394126892,
+          -0.051510173827409744
+        ],
+        [
+          -0.1129865050315857,
+          0.9396925568580627,
+          0.3228185474872589,
+          0.09109603613615036
+        ],
+        [
+          0.310427725315094,
+          0.34202009439468384,
+          -0.8869367837905884,
+          -0.44684964418411255
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-spark-plug-v2] Spark plug inherited estimated seat ",
+      "positions": "180550fc1b33ce1e6f81fe83eb637829dc6babdc0ee77b563690c8db461c82ed",
+      "edges": "c9723c56927096c91ef8b9e1ec275af715d80c6a21a4736224615874508ef2d1",
+      "loop_vertices": "a6b973f07a4a205e0240424a96f742f4857001bb5a009dc5443d2611f32c6ed6",
+      "polygon_starts": "5df0a3cac1550b01e98fdd6190fb56f73791c3dab03e1683570ee52c3476b76d",
+      "polygon_totals": "d6da466df125a4866e1db57b8c4af7ec41646b092f9c9fca74cef2eee2d4c4af",
+      "triangle_loops": "dbc3f71a41f5de79085c2454c2c8fb5ffcf57a14625036790cd8733e54ffef7f",
+      "corner_normals": "9831c9ad56d898858ad73adbb7616951333382e631f182349b8bf3feb0f97d58",
+      "protected_UVs": {
+        "UV0_placeholder": "8e2041225daf1e9c951ac113172f27eab86778fdccc66912e0fe0ddbaa74f043"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-spark-plug-v2] Plug separate exposed SAE-like termi": {
+      "mesh": "Plug separate exposed SAE-like terminal - conditional option",
+      "world": [
+        [
+          -0.9438583254814148,
+          -5.131085245579925e-08,
+          -0.3303503394126892,
+          -0.051510173827409744
+        ],
+        [
+          -0.1129865050315857,
+          0.9396925568580627,
+          0.3228185474872589,
+          0.09109603613615036
+        ],
+        [
+          0.310427725315094,
+          0.34202009439468384,
+          -0.8869367837905884,
+          -0.44684964418411255
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-spark-plug-v2] Spark plug inherited estimated seat ",
+      "positions": "1b2d83b2bd49fddc0c6ea6e388f29a18e8a8e7728bd3b316a40756e34be84808",
+      "edges": "3a0016fb2064f77f89cf48fe225035bf1bb3625a4994a08b134beae0c170aead",
+      "loop_vertices": "1cd9097b578d512bd8cf0e41125905ce50834a1239dedf2b16b8da8207aa3185",
+      "polygon_starts": "761f25f02f376de3605d490d01c1b8fcc1caa9470e39b797c94f513c579492a4",
+      "polygon_totals": "399f8f98fd0bc737ad8c0c630323d06396b86312a0f20bd612b5795a3f7ff78d",
+      "triangle_loops": "2f18c1c6727d21fe62703d0771801a39949128f40a146f91a9be93d4a4a7b10f",
+      "corner_normals": "f10743938cd3234dd2c802fcef05dab29e53af260d2cdebb4767ee33fd0f11e3",
+      "protected_UVs": {
+        "UV0_placeholder": "0edf4814bc71bf73211a31a8d7ebf3c061ef4d76ddd2f4966f80b879d41d6bbf"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-tappet-cap] UG5 tappet cap FRONT - editable conditi": {
+      "mesh": "UG5 tappet cap FRONT - editable conditional candidate cleaned e",
+      "world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.3420199453830719,
+          -0.9396926164627075,
+          0.015452627092599869
+        ],
+        [
+          0.0,
+          0.9396926164627075,
+          -0.3420199453830719,
+          -0.41854262351989746
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          7.549790126404332e-08,
+          -1.0,
+          -0.061400000005960464
+        ],
+        [
+          0.0,
+          1.0,
+          7.549790126404332e-08,
+          0.07800000160932541
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-tappet-cap] Tappet caps inherited estimated head da",
+      "positions": "f09e081ffa8b7fa11cf149d38e207a036b74c562938c645eb36e50779b206770",
+      "edges": "3111e17dafed58ce6ade86f51d5d6118b2a6f74f552ff95fdb71f78b37d55950",
+      "loop_vertices": "a4ab59f4b59c0e52c35d592cca1f8f92d8e99ae42ec70ba88a79e551199527cb",
+      "polygon_starts": "11482210431b915e8ff4759a1fc5a5ad1db7337ee4a017fb4e15af876170f167",
+      "polygon_totals": "637ef6d382136d8d84f2fffa4b4740fb219f4c310bf715593991b27c8a1ecc4d",
+      "triangle_loops": "087197c4c16d7daed2994db0afdb4f1fcb037c077dbabd4a50e53a9dcc1d9aff",
+      "corner_normals": "5913fd8f188906216576f385d53be0b4856b13e4786df654ff28afc874c028d1",
+      "protected_UVs": {
+        "UV0_placeholder": "ea5e6f14b18d0be2a71a1f16729cbb8e9abb65e3bef593f7f18e43870a921bec"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-tappet-cap] UG5 tappet cap REAR - same conditional ": {
+      "mesh": "UG5 tappet cap FRONT - editable conditional candidate clean",
+      "world": [
+        [
+          -1.0,
+          1.1399865765455465e-14,
+          -1.5099580252808664e-07,
+          0.0
+        ],
+        [
+          -1.4188964314598707e-07,
+          -0.34202006459236145,
+          0.9396926164627075,
+          0.13084688782691956
+        ],
+        [
+          -5.164358540810099e-08,
+          0.9396926164627075,
+          0.34202006459236145,
+          -0.3765425682067871
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          -1.0,
+          1.1399865765455465e-14,
+          -1.5099580252808664e-07,
+          0.0
+        ],
+        [
+          -1.5099580252808664e-07,
+          -7.549790126404332e-08,
+          1.0,
+          0.061400000005960464
+        ],
+        [
+          0.0,
+          1.0,
+          7.549790126404332e-08,
+          0.07800000160932541
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-tappet-cap] Tappet caps inherited estimated head da",
+      "positions": "f09e081ffa8b7fa11cf149d38e207a036b74c562938c645eb36e50779b206770",
+      "edges": "3111e17dafed58ce6ade86f51d5d6118b2a6f74f552ff95fdb71f78b37d55950",
+      "loop_vertices": "a4ab59f4b59c0e52c35d592cca1f8f92d8e99ae42ec70ba88a79e551199527cb",
+      "polygon_starts": "11482210431b915e8ff4759a1fc5a5ad1db7337ee4a017fb4e15af876170f167",
+      "polygon_totals": "637ef6d382136d8d84f2fffa4b4740fb219f4c310bf715593991b27c8a1ecc4d",
+      "triangle_loops": "087197c4c16d7daed2994db0afdb4f1fcb037c077dbabd4a50e53a9dcc1d9aff",
+      "corner_normals": "5913fd8f188906216576f385d53be0b4856b13e4786df654ff28afc874c028d1",
+      "protected_UVs": {
+        "UV0_placeholder": "26b7cb0be5d0a7bf83d172a70bd322c0f056829158f9f03a9fe34d847b63aaff"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    }
+  },
+  "actual_edit_selection": [
+    {
+      "object": "M18 [engine-cylinder] Engine cylinder finned hollow casting - e",
+      "selected_faces": 69832,
+      "active_bmesh_UV": "UV_AO"
+    },
+    {
+      "object": "M18 [engine-head-v3] Engine UG5 head hollow exterior casting - ",
+      "selected_faces": 160144,
+      "active_bmesh_UV": "UV_AO"
+    },
+    {
+      "object": "M18 [engine-ohc-cover] UG5 OHC cast cover body - conditional ca",
+      "selected_faces": 87500,
+      "active_bmesh_UV": "UV_AO"
+    },
+    {
+      "object": "M18 [engine-ohc-stub] OHC metallic hollow tube with one distal ",
+      "selected_faces": 22656,
+      "active_bmesh_UV": "UV_AO"
+    },
+    {
+      "object": "M18 [engine-spark-cap-v2] Molded spark cap body - conditional c",
+      "selected_faces": 48936,
+      "active_bmesh_UV": "UV_AO"
+    },
+    {
+      "object": "M18 [engine-spark-cap-v2] Visible short-port metallic contact -",
+      "selected_faces": 7392,
+      "active_bmesh_UV": "UV_AO"
+    },
+    {
+      "object": "M18 [engine-spark-plug-v2] Plug exposed ceramic five estimated ",
+      "selected_faces": 25536,
+      "active_bmesh_UV": "UV_AO"
+    },
+    {
+      "object": "M18 [engine-spark-plug-v2] Plug metal body rounded hex - hidden",
+      "selected_faces": 10212,
+      "active_bmesh_UV": "UV_AO"
+    },
+    {
+      "object": "M18 [engine-spark-plug-v2] Plug separate estimated uncompressed",
+      "selected_faces": 6912,
+      "active_bmesh_UV": "UV_AO"
+    },
+    {
+      "object": "M18 [engine-spark-plug-v2] Plug separate exposed SAE-like termi",
+      "selected_faces": 3072,
+      "active_bmesh_UV": "UV_AO"
+    },
+    {
+      "object": "M18 [engine-tappet-cap] UG5 tappet cap FRONT - editable conditi",
+      "selected_faces": 70152,
+      "active_bmesh_UV": "UV_AO"
+    },
+    {
+      "object": "M18 [engine-tappet-cap] UG5 tappet cap REAR - same conditional ",
+      "selected_faces": 70152,
+      "active_bmesh_UV": "UV_AO"
+    }
+  ],
+  "smart_operator_result": [
+    "FINISHED"
+  ],
+  "protected_meshes_after": {
+    "M18 [engine-cylinder] Engine cylinder finned hollow casting - e": {
+      "mesh": "Engine cylinder finned hollow casting - editable candidate clea",
+      "world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.9396925568580627,
+          -0.34202006459236145,
+          0.125
+        ],
+        [
+          0.0,
+          0.34202006459236145,
+          0.9396925568580627,
+          -0.5400000214576721
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-cylinder] Engine cylinder base provisional datum",
+      "positions": "cb609fe9ac4ffe2533ba2a03ee87d5261350be572b137c4a62adcbfae2085d2d",
+      "edges": "5b27fdb0252a8f135461f4f3266e35174a9644957c9d52d4e2378ed6e34ad454",
+      "loop_vertices": "238e9123a98e0c04eaee00f6aab123555f532f2ec415b1d08e8d0ef5a19a16b3",
+      "polygon_starts": "ac3022d3fdc6fc97d6f5d26fa630d04a0763e4c6b42e45c8b5ac41a34ae317cd",
+      "polygon_totals": "51175cb37fa1523509c49d86ac9439595f72e3fed88f6ad478507ed74469b2ff",
+      "triangle_loops": "6fd281bee77ea3fd8abdba8f6b2d72eaa6dc49562346f83abcd73d170eba3245",
+      "corner_normals": "201c424bedfdf2910b87c5318a7000358120169b25d068f7bf99f1e5918ce9e0",
+      "protected_UVs": {
+        "UV0_placeholder": "63ad23839cd447398aec2af0b8630602f37c0713f1f458a2b38dce08a4fefc6c"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-head-v3] Engine UG5 head hollow exterior casting - ": {
+      "mesh": "Engine UG5 head hollow exterior casting - editable candidat.003",
+      "world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.9396926164627075,
+          -0.34202003479003906,
+          0.09982731938362122
+        ],
+        [
+          0.0,
+          0.34202003479003906,
+          0.9396926164627075,
+          -0.47083863615989685
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-head-v3] Engine head base provisional datum",
+      "positions": "b6afb9df4282c0a944a4e94f4a4c697155d8c3edb9412f78421e81aeea1c26a0",
+      "edges": "c4973470748f052784b17d17dfcef3453c6650366d8189d9e2980f416d5a4da4",
+      "loop_vertices": "99c0fc2b8bce5860d1f8d8bff28e3a0b68305e7270373612e38a29ff7592fd4f",
+      "polygon_starts": "552d3f32c5cecc431d56666c94bb1e5f2abebcd1596b16459bb09318cdee973a",
+      "polygon_totals": "88ed72937ced30562c7c350b3b36dfa6567ac117357bb50359874c252de15100",
+      "triangle_loops": "7cb38e7d0b5538f565a717a58e31432064f4c539a2af1d432561d331b83a2776",
+      "corner_normals": "f0e1c5291a383f07ddeef25512c00cdb653a6e9ec1f9b06a5aaec137007c7200",
+      "protected_UVs": {
+        "UV0_placeholder": "daed10c01bbb03e00ab5bf5d2f2ef0ddaad72b39470bcfdcc5a5886c9d80d810"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-ohc-cover] UG5 OHC cast cover body - conditional ca": {
+      "mesh": "UG5 OHC cast cover body - conditional candidate cleaned evaluat",
+      "world": [
+        [
+          -4.107527118435428e-08,
+          -1.7975700927763683e-07,
+          1.0,
+          0.0803999975323677
+        ],
+        [
+          0.9396926164627075,
+          -0.3420199155807495,
+          -2.2882350236841376e-08,
+          0.07314975559711456
+        ],
+        [
+          0.3420199155807495,
+          0.9396926164627075,
+          1.8296492498848238e-07,
+          -0.3975426256656647
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-ohc-cover] OHC cover inherited estimated head datum",
+      "positions": "9e3b882a3e755571a9896649c0203d228b516dd5f42ffc9ccd20ab0cd38a4b31",
+      "edges": "4a7d636bb3d59f980f996e01aa7e54e52b38609f3f4269c0e238fcfed67a05f9",
+      "loop_vertices": "a6bf1c1e92a665fc919da7fda067d72192509792ed5124efacf904d102a93afe",
+      "polygon_starts": "5f092621760d5d28fcb4092cffb04493d9bf9c2f907502d62ec71feb8312248e",
+      "polygon_totals": "680d8acc24b8c85e33aadc39b09f7fc8951b6d8faf349cf95896f13eb9e9abc5",
+      "triangle_loops": "e92f85307fd2159f3dc113828ac326f6cefeb83ddecdb04cf0e9cce712d1f186",
+      "corner_normals": "1df4258923dc9b90390d72be01a94f17a9eafee837d7a0b4aa71e0456c7afb47",
+      "protected_UVs": {
+        "UV0_placeholder": "00f8dadeabdc78d15707c7e222c19dc71d7d31dead0bebd21a6aec6a9c89a03f"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-ohc-stub] OHC metallic hollow tube with one distal ": {
+      "mesh": "OHC metallic hollow tube with one distal retention lip - editab",
+      "world": [
+        [
+          0.1473069041967392,
+          -1.9736003942227853e-09,
+          -0.9890908002853394,
+          0.09239999949932098
+        ],
+        [
+          -0.8825151920318604,
+          -0.4515434503555298,
+          -0.13143447041511536,
+          0.01633981615304947
+        ],
+        [
+          -0.4466174840927124,
+          0.8922489285469055,
+          -0.0665154904127121,
+          -0.41396304965019226
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-ohc-stub] OHC metallic stub inherited provisional s",
+      "positions": "ea2850f6c01e8eb5c0695cf8f8b50c68d733996982f378f67604bf516c879666",
+      "edges": "aa925a097026f426c6686646f8ce79a82524a4ddee2cc8e1708663aec3cc4c66",
+      "loop_vertices": "e48797dc3c06aec3bdf9f4f1516c106c43934ca3b813b4af00df6f73e6cae3b7",
+      "polygon_starts": "521f394c943a96f8ee9cc4c1118baad3e1c78f452bc0256a986255840647a22a",
+      "polygon_totals": "48f83b40236446378f902d2c5aa5199092f86064ecd112fc37ed8e8d8509c97e",
+      "triangle_loops": "f9a6dfd68dec54ec06829e3eec23b4133a3dec03699325c8383890f23e2423ac",
+      "corner_normals": "8f9f52e73f8b1b5a0c2265da0e3016893caf51c73d1c991cb736d5b67c92b99e",
+      "protected_UVs": {
+        "UV0_placeholder": "bfad5ae85001ef11ce8f31bb9a8b7f0e212d50e8829faaf5c879fff18d9b366d"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-spark-cap-v2] Molded spark cap body - conditional c": {
+      "mesh": "Molded spark cap body - conditional candidate.004",
+      "world": [
+        [
+          -0.9438583254814148,
+          -5.831210714291046e-08,
+          -0.3303503394126892,
+          -0.051510173827409744
+        ],
+        [
+          -0.11298651248216629,
+          0.9396925568580627,
+          0.3228185474872589,
+          0.09109603613615036
+        ],
+        [
+          0.310427725315094,
+          0.34202009439468384,
+          -0.8869367837905884,
+          -0.44684964418411255
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-spark-cap-v2] Spark cap inherited unchanged provisi",
+      "positions": "e8f10c225b6d6e4edcedefb0dd7dea8c6bc79eecbba64287076db9aad44b60d5",
+      "edges": "b5bc50df5535284cc0254bd2a2f6759df7cd17b90c9b3882c15d39792a92abde",
+      "loop_vertices": "9c11273853bea5b68730c397fe9c3cd64f15c704fdb54639b477042ba4e9d404",
+      "polygon_starts": "e7258b6ea3a7e38950ce6c1272dee56d10a9d99cc370ead44a27f52c9e980c5d",
+      "polygon_totals": "0d35b9474906858be8f6785e0f9143e7fbc92bac5474cee045ef0827e1412d2e",
+      "triangle_loops": "be6d4e002e8a59f52437b6a8d709a8fca0db4eba055e6c7c2997d07ba43af1b0",
+      "corner_normals": "2784ff228f89167a7747db341cf7539f84d87b174f6570602e684e746bb32da5",
+      "protected_UVs": {
+        "Original grain source atlas v2": "c58faaa11347ae1cf515d3a5b53c656fa186bcd0c4470545438a160cb0909dbb"
+      },
+      "UV_names": [
+        "Original grain source atlas v2",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "Original grain source atlas v2"
+      ]
+    },
+    "M18 [engine-spark-cap-v2] Visible short-port metallic contact -": {
+      "mesh": "Visible short-port metallic contact - section estimated",
+      "world": [
+        [
+          -1.295714326943198e-07,
+          0.9438583254814148,
+          -0.3303503394126892,
+          -0.12229955196380615
+        ],
+        [
+          0.9396925568580627,
+          0.11298658698797226,
+          0.3228185474872589,
+          0.08262205123901367
+        ],
+        [
+          0.3420201241970062,
+          -0.3104276955127716,
+          -0.8869367837905884,
+          -0.4235675632953644
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          7.549790126404332e-08,
+          -1.0,
+          0.0,
+          0.07500000298023224
+        ],
+        [
+          1.0,
+          7.549790126404332e-08,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-spark-cap-v2] Spark cap inherited unchanged provisi",
+      "positions": "85940bbfd7001c18eccfd13080cdd411948145b6c20fca8777796d73ad99ad04",
+      "edges": "cd881090c21b9c113f4a4d27cc3205d69f6b53de8184a37c21dc890dc872f3b8",
+      "loop_vertices": "91bf6c36afeed7f3618dfef8abc50418b3a6c1e35f4af74586daf5467780cc54",
+      "polygon_starts": "542fe31a6887023ce87edcd981abfab15cfc1fb2725e08b2a6737787afbff02d",
+      "polygon_totals": "54516d7e669ceecbef573cfe1be1207f955d76e6641f23a7974462e756fb1653",
+      "triangle_loops": "ab7654aeee39dc04de58d73fec4a99701774f90dbe30e593f303c1e533e264f5",
+      "corner_normals": "fc6e24da00d5ad6ff873882bfc419c15d6ed7a827c1bc9788ab0bb68d2ce2288",
+      "protected_UVs": {
+        "UV0_placeholder": "d4b0193680378de8802ac0bfb3b0e5103dc79db8c000db86c5895af5a97dff76"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-spark-plug-v2] Plug exposed ceramic five estimated ": {
+      "mesh": "Plug exposed ceramic five estimated lower ribs - unmarked",
+      "world": [
+        [
+          -0.9438583254814148,
+          -5.131085245579925e-08,
+          -0.3303503394126892,
+          -0.051510173827409744
+        ],
+        [
+          -0.1129865050315857,
+          0.9396925568580627,
+          0.3228185474872589,
+          0.09109603613615036
+        ],
+        [
+          0.310427725315094,
+          0.34202009439468384,
+          -0.8869367837905884,
+          -0.44684964418411255
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-spark-plug-v2] Spark plug inherited estimated seat ",
+      "positions": "17a8457c90410069df1eda093373f731d75574baa80338628d3cc345b1bc66a2",
+      "edges": "cb09bb2ed23d26292b143354ec84384fbe593317e4e72c907d7a83d739ac7624",
+      "loop_vertices": "e2ba1b02fc723b4f2ce29dd13702e174b70b1c41bdb905957faa7140bff7cc16",
+      "polygon_starts": "cf954bb07eebe40c6031c734c744f1cb04e1332400a22ed441f29ecfe789e9b3",
+      "polygon_totals": "3826b0dce66de9f95fc947710b9d8564a1b7eec0ae62bd3f6823038e6f8d9594",
+      "triangle_loops": "b76d1d4a72e52295470f58d049d1900a7e7caf22913884667cd73d62b3b8b760",
+      "corner_normals": "3173203961d9f72c8663bcf5b6d1f44929fed11918644548befe01c1b1a81fb0",
+      "protected_UVs": {
+        "UV0_placeholder": "b8db95c35a4f12454125d0c4a7918cb410cbdd48a3a005b2def46070858c4263"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-spark-plug-v2] Plug metal body rounded hex - hidden": {
+      "mesh": "Plug metal body rounded hex - hidden insertion plain",
+      "world": [
+        [
+          -0.9438583254814148,
+          -5.131085245579925e-08,
+          -0.3303503394126892,
+          -0.051510173827409744
+        ],
+        [
+          -0.1129865050315857,
+          0.9396925568580627,
+          0.3228185474872589,
+          0.09109603613615036
+        ],
+        [
+          0.310427725315094,
+          0.34202009439468384,
+          -0.8869367837905884,
+          -0.44684964418411255
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-spark-plug-v2] Spark plug inherited estimated seat ",
+      "positions": "a8cb7e2703a9f75eb5fb717184451ccfff2a119b127908130e5f1ed71b83a5d0",
+      "edges": "af90478253753b3defbcde0c2a6fe0419fca35bb121d3c70000e4c115e22788f",
+      "loop_vertices": "a978833a1786ce0123633e87cd499f56896d3e610bdbccbb126ed9470eeeea6b",
+      "polygon_starts": "8c5a091d4b7ae8983ad7e5f51f1204fe10a354bc8f66202b6f92a194042179e8",
+      "polygon_totals": "f36e0d4d628d8326f6e70ea6296385a36f98a7c144d7e2b35bef235c4a425328",
+      "triangle_loops": "c51db1b5cb7e79880f0e6d193fbe44428f2bdaf502c93ec4508509ec3052c20b",
+      "corner_normals": "29d1f0db27b93f779bb26375c0712a069777f4449a560de62a274f102221a36e",
+      "protected_UVs": {
+        "UV0_placeholder": "4b5178b0ba5bc19506621ebffb64ddc9bcd785ec3e5e9078a038a1d652ef4c1c"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-spark-plug-v2] Plug separate estimated uncompressed": {
+      "mesh": "Plug separate estimated uncompressed seat washer",
+      "world": [
+        [
+          -0.9438583254814148,
+          -5.131085245579925e-08,
+          -0.3303503394126892,
+          -0.051510173827409744
+        ],
+        [
+          -0.1129865050315857,
+          0.9396925568580627,
+          0.3228185474872589,
+          0.09109603613615036
+        ],
+        [
+          0.310427725315094,
+          0.34202009439468384,
+          -0.8869367837905884,
+          -0.44684964418411255
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-spark-plug-v2] Spark plug inherited estimated seat ",
+      "positions": "180550fc1b33ce1e6f81fe83eb637829dc6babdc0ee77b563690c8db461c82ed",
+      "edges": "c9723c56927096c91ef8b9e1ec275af715d80c6a21a4736224615874508ef2d1",
+      "loop_vertices": "a6b973f07a4a205e0240424a96f742f4857001bb5a009dc5443d2611f32c6ed6",
+      "polygon_starts": "5df0a3cac1550b01e98fdd6190fb56f73791c3dab03e1683570ee52c3476b76d",
+      "polygon_totals": "d6da466df125a4866e1db57b8c4af7ec41646b092f9c9fca74cef2eee2d4c4af",
+      "triangle_loops": "dbc3f71a41f5de79085c2454c2c8fb5ffcf57a14625036790cd8733e54ffef7f",
+      "corner_normals": "9831c9ad56d898858ad73adbb7616951333382e631f182349b8bf3feb0f97d58",
+      "protected_UVs": {
+        "UV0_placeholder": "8e2041225daf1e9c951ac113172f27eab86778fdccc66912e0fe0ddbaa74f043"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-spark-plug-v2] Plug separate exposed SAE-like termi": {
+      "mesh": "Plug separate exposed SAE-like terminal - conditional option",
+      "world": [
+        [
+          -0.9438583254814148,
+          -5.131085245579925e-08,
+          -0.3303503394126892,
+          -0.051510173827409744
+        ],
+        [
+          -0.1129865050315857,
+          0.9396925568580627,
+          0.3228185474872589,
+          0.09109603613615036
+        ],
+        [
+          0.310427725315094,
+          0.34202009439468384,
+          -0.8869367837905884,
+          -0.44684964418411255
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-spark-plug-v2] Spark plug inherited estimated seat ",
+      "positions": "1b2d83b2bd49fddc0c6ea6e388f29a18e8a8e7728bd3b316a40756e34be84808",
+      "edges": "3a0016fb2064f77f89cf48fe225035bf1bb3625a4994a08b134beae0c170aead",
+      "loop_vertices": "1cd9097b578d512bd8cf0e41125905ce50834a1239dedf2b16b8da8207aa3185",
+      "polygon_starts": "761f25f02f376de3605d490d01c1b8fcc1caa9470e39b797c94f513c579492a4",
+      "polygon_totals": "399f8f98fd0bc737ad8c0c630323d06396b86312a0f20bd612b5795a3f7ff78d",
+      "triangle_loops": "2f18c1c6727d21fe62703d0771801a39949128f40a146f91a9be93d4a4a7b10f",
+      "corner_normals": "f10743938cd3234dd2c802fcef05dab29e53af260d2cdebb4767ee33fd0f11e3",
+      "protected_UVs": {
+        "UV0_placeholder": "0edf4814bc71bf73211a31a8d7ebf3c061ef4d76ddd2f4966f80b879d41d6bbf"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-tappet-cap] UG5 tappet cap FRONT - editable conditi": {
+      "mesh": "UG5 tappet cap FRONT - editable conditional candidate cleaned e",
+      "world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.3420199453830719,
+          -0.9396926164627075,
+          0.015452627092599869
+        ],
+        [
+          0.0,
+          0.9396926164627075,
+          -0.3420199453830719,
+          -0.41854262351989746
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          7.549790126404332e-08,
+          -1.0,
+          -0.061400000005960464
+        ],
+        [
+          0.0,
+          1.0,
+          7.549790126404332e-08,
+          0.07800000160932541
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-tappet-cap] Tappet caps inherited estimated head da",
+      "positions": "f09e081ffa8b7fa11cf149d38e207a036b74c562938c645eb36e50779b206770",
+      "edges": "3111e17dafed58ce6ade86f51d5d6118b2a6f74f552ff95fdb71f78b37d55950",
+      "loop_vertices": "a4ab59f4b59c0e52c35d592cca1f8f92d8e99ae42ec70ba88a79e551199527cb",
+      "polygon_starts": "11482210431b915e8ff4759a1fc5a5ad1db7337ee4a017fb4e15af876170f167",
+      "polygon_totals": "637ef6d382136d8d84f2fffa4b4740fb219f4c310bf715593991b27c8a1ecc4d",
+      "triangle_loops": "087197c4c16d7daed2994db0afdb4f1fcb037c077dbabd4a50e53a9dcc1d9aff",
+      "corner_normals": "5913fd8f188906216576f385d53be0b4856b13e4786df654ff28afc874c028d1",
+      "protected_UVs": {
+        "UV0_placeholder": "ea5e6f14b18d0be2a71a1f16729cbb8e9abb65e3bef593f7f18e43870a921bec"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    },
+    "M18 [engine-tappet-cap] UG5 tappet cap REAR - same conditional ": {
+      "mesh": "UG5 tappet cap FRONT - editable conditional candidate clean",
+      "world": [
+        [
+          -1.0,
+          1.1399865765455465e-14,
+          -1.5099580252808664e-07,
+          0.0
+        ],
+        [
+          -1.4188964314598707e-07,
+          -0.34202006459236145,
+          0.9396926164627075,
+          0.13084688782691956
+        ],
+        [
+          -5.164358540810099e-08,
+          0.9396926164627075,
+          0.34202006459236145,
+          -0.3765425682067871
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "basis": [
+        [
+          -1.0,
+          1.1399865765455465e-14,
+          -1.5099580252808664e-07,
+          0.0
+        ],
+        [
+          -1.5099580252808664e-07,
+          -7.549790126404332e-08,
+          1.0,
+          0.061400000005960464
+        ],
+        [
+          0.0,
+          1.0,
+          7.549790126404332e-08,
+          0.07800000160932541
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "parent": "M18 [engine-tappet-cap] Tappet caps inherited estimated head da",
+      "positions": "f09e081ffa8b7fa11cf149d38e207a036b74c562938c645eb36e50779b206770",
+      "edges": "3111e17dafed58ce6ade86f51d5d6118b2a6f74f552ff95fdb71f78b37d55950",
+      "loop_vertices": "a4ab59f4b59c0e52c35d592cca1f8f92d8e99ae42ec70ba88a79e551199527cb",
+      "polygon_starts": "11482210431b915e8ff4759a1fc5a5ad1db7337ee4a017fb4e15af876170f167",
+      "polygon_totals": "637ef6d382136d8d84f2fffa4b4740fb219f4c310bf715593991b27c8a1ecc4d",
+      "triangle_loops": "087197c4c16d7daed2994db0afdb4f1fcb037c077dbabd4a50e53a9dcc1d9aff",
+      "corner_normals": "5913fd8f188906216576f385d53be0b4856b13e4786df654ff28afc874c028d1",
+      "protected_UVs": {
+        "UV0_placeholder": "26b7cb0be5d0a7bf83d172a70bd322c0f056829158f9f03a9fe34d847b63aaff"
+      },
+      "UV_names": [
+        "UV0_placeholder",
+        "UV_AO"
+      ],
+      "render_UVs": [
+        "UV0_placeholder"
+      ]
+    }
+  },
+  "protected_geometry_N_nonAO_UVs_exact": true,
+  "totals": {
+    "before": {
+      "faces": 582496,
+      "triangles": 657316,
+      "local_BMesh_faces_le_1e_minus12": 65,
+      "UV_exact_zero_triangles": 637656,
+      "UV_area_le_1e_minus18_triangles": 637656,
+      "UV_abs_determinant_le_1e_minus18_triangles": 637656,
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 65,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 637591,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 644312
+    },
+    "after_smart_only": {
+      "faces": 582496,
+      "triangles": 657316,
+      "local_BMesh_faces_le_1e_minus12": 65,
+      "UV_exact_zero_triangles": 88,
+      "UV_area_le_1e_minus18_triangles": 88,
+      "UV_abs_determinant_le_1e_minus18_triangles": 88,
+      "UV_nonfinite_triangles": 0,
+      "UV_zero_triangles_on_small_local_faces": 65,
+      "UV_zero_triangles_on_local_faces_above_1e_minus12": 23,
+      "strict_anomaly_union_det_le_1e_minus18_or_nonfinite_or_outside": 113
+    }
+  },
+  "elapsed_seconds": 29.479266173002543,
+  "source_files_after": {
+    "/workspace/wewa-assets/work-in-progress/upper-engine-local-ao-diagnostic-v1/run-005/executed-spec-v5.json": "4656d783b7e4976915465fdbb6d14553286cca6b670f7e6f4b0defc5b69e9f2b",
+    "/workspace/wewa-assets/work-in-progress/upper-engine-local-ao-diagnostic-v1/run-005/prepare/FAILED-UV-INSPECTION-ONLY.blend": "7017d79d4fb8d8279ba544173e0d9b3586346af90da2d59267d5ecf3c3ea0e25",
+    "/workspace/wewa-github/assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6",
+    "/workspace/wewa-github/assets-src/moto-components/engine-head/engine-head-v3.blend": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+    "/workspace/wewa-github/assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45",
+    "/workspace/wewa-github/assets-src/moto-components/engine-ohc-stub/engine-ohc-stub-v1.blend": "285eca8f5345efbfe31da9d2cc95464edcd9070a2e2e902e1e74990b2fb110c0",
+    "/workspace/wewa-github/assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend": "bceb87f8a34bcfd2354bccef2cf236ed6a0103a2725b4a76e3e3e3721da883e3",
+    "/workspace/wewa-github/assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5",
+    "/workspace/wewa-github/assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9"
+  },
+  "protected_disk_sources_exact": true
+}

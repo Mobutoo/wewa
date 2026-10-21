@@ -1,0 +1,21 @@
+{
+  "component_id": "MOTO-TYRE-FRONT-001",
+  "revision": "front-tyre-v3-local-grid-diagnostic-v2",
+  "baseline_source": "assets-src/moto-components/front-tyre/front-tyre-v1.blend",
+  "baseline_sha256": "33bf2d29063cf267da47323cf7d2a126f803166caf5e2ea410dc56e89072326c",
+  "angular_subdivisions_per_old_cell": 16,
+  "section_subdivisions_per_old_cell": 4,
+  "patch_angular_old_cells_either_side": 2,
+  "patch_section_boundary_rule": "First original exterior section rail below4.2mm and first above7.8mm, mirrored by actual X only. The source rails determine actual bounds.",
+  "full_weight_x_interval_m": [
+    0.0047,
+    0.0073
+  ],
+  "full_weight_crosscut_arc_distance_m": 0.0013,
+  "base_reference": "Actual piecewise-linear source triangle containing each structured parameter point, never an unconstrained quad interpolation.",
+  "new_target": "Same unchanged existing groove fields/p4union in the same source U/t coordinates. C1weight fades toward actual source-triangle surface at patch boundary; no new family/pitch.",
+  "protected": "All original non-overlap vertex coordinates, X coordinates and six bounds; old faces outside patch plus necessary boundary-edge splits retain their actual planar geometry.",
+  "normal_rule": "Actual fresh mesh smooth normals inside patch, C1fade to retained source corner-normal inputs at boundary. Quantization measured, no post-export repair.",
+  "visual_requirement": "No pinched bulges or stepped lips in native same-camera gray before reflection/material/96.",
+  "art_accepted": false
+}

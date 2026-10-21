@@ -1,0 +1,1176 @@
+{
+  "component_id": "MOTO-SWINGARM-BODY-001",
+  "revision": "swingarm-body-v1",
+  "source_sha256": "e829f89ea0d6594ceb43830c20d8d8698f41ef0a297b3a503c96b15b1d9df20c",
+  "source_check": {
+    "component_id": "MOTO-SWINGARM-BODY-001",
+    "revision": "swingarm-body-v1",
+    "partial_not_finished_candidate": false,
+    "scope": "Rails, slots, pivot housings, formed tapered U return, paired mounting tabs, two short front tubes, one asymmetric tab and original estimated weld envelopes.",
+    "vertices": 102888,
+    "triangles": 205920,
+    "connected_shells": 1,
+    "nonmanifold_edges": 0,
+    "signed_volume_m3": 0.00027698316495986425,
+    "min_triangle_area_m2": 3.4827492561102046e-13,
+    "zero_area_at_1e18_m2": 0,
+    "probes": [
+      {
+        "name": "open pivot axis",
+        "origin_m": [
+          -0.16,
+          0,
+          0
+        ],
+        "direction": [
+          1,
+          0,
+          0
+        ],
+        "length_m": 0.32,
+        "clear": true,
+        "expected_clear": true
+      },
+      {
+        "name": "no central transverse tube",
+        "origin_m": [
+          0,
+          -0.04,
+          0.014
+        ],
+        "direction": [
+          0,
+          1,
+          0
+        ],
+        "length_m": 0.08,
+        "clear": true,
+        "expected_clear": true
+      },
+      {
+        "name": "open rear slots",
+        "origin_m": [
+          -0.16,
+          0.52,
+          0
+        ],
+        "direction": [
+          1,
+          0,
+          0
+        ],
+        "length_m": 0.32,
+        "clear": true,
+        "expected_clear": true
+      },
+      {
+        "name": "open U centre",
+        "origin_m": [
+          0,
+          0.25,
+          0.05
+        ],
+        "direction": [
+          0,
+          0,
+          -1
+        ],
+        "length_m": 0.1,
+        "clear": true,
+        "expected_clear": true
+      },
+      {
+        "name": "U front bridge material",
+        "origin_m": [
+          0,
+          0.13,
+          0.05
+        ],
+        "direction": [
+          0,
+          0,
+          -1
+        ],
+        "length_m": 0.1,
+        "clear": false,
+        "expected_clear": false
+      }
+    ],
+    "source_only_csg_stages": [
+      {
+        "operation": "union",
+        "name": "Separate pivot housing -1",
+        "before_volume_m3": 0.0004055692687756249,
+        "after_volume_m3": 0.0004105350114199493,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Original rounded rectangular rail 1",
+        "before_volume_m3": 0.0004105350114199493,
+        "after_volume_m3": 0.0008161042801955742,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Separate pivot housing 1",
+        "before_volume_m3": 0.0008161042801955742,
+        "after_volume_m3": 0.0008210700228398986,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Broad U plate original boundary",
+        "before_volume_m3": 0.0008210700228398986,
+        "after_volume_m3": 0.0008584866636140222,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Rolled inner U return - native radius section",
+        "before_volume_m3": 0.0008584866636140222,
+        "after_volume_m3": 0.0008657047284438299,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Paired pierced mounting tab -1 -1",
+        "before_volume_m3": 0.0008657047284438299,
+        "after_volume_m3": 0.0008693269231434679,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Paired pierced mounting tab -1 1",
+        "before_volume_m3": 0.0008693269231434679,
+        "after_volume_m3": 0.0008729412676233512,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Short hollow front attachment -1",
+        "before_volume_m3": 0.0008729412676233512,
+        "after_volume_m3": 0.0008744186729461537,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Paired pierced mounting tab 1 -1",
+        "before_volume_m3": 0.0008744186729461537,
+        "after_volume_m3": 0.0008780330174241025,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Paired pierced mounting tab 1 1",
+        "before_volume_m3": 0.0008780330174241025,
+        "after_volume_m3": 0.0008816552121245611,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Short hollow front attachment 1",
+        "before_volume_m3": 0.0008816552121245611,
+        "after_volume_m3": 0.0008831326174473774,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Additional asymmetric downward tab - function side conditional",
+        "before_volume_m3": 0.0008831326174473774,
+        "after_volume_m3": 0.0008845646387649003,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "U plate to rail weld -1 0",
+        "before_volume_m3": 0.0008845646387649003,
+        "after_volume_m3": 0.0008846817960529474,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "U plate to rail weld -1 1",
+        "before_volume_m3": 0.0008846817960529474,
+        "after_volume_m3": 0.0008847989520561578,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Rear half pivot-housing weld -1",
+        "before_volume_m3": 0.0008847989520561578,
+        "after_volume_m3": 0.0008848716741195445,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Mount tab base weld -1 -1 -1",
+        "before_volume_m3": 0.0008848716741195445,
+        "after_volume_m3": 0.0008848783412705088,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Mount tab base weld -1 -1 1",
+        "before_volume_m3": 0.0008848783412705088,
+        "after_volume_m3": 0.0008848973111972139,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Mount tab base weld -1 1 -1",
+        "before_volume_m3": 0.0008848973111972139,
+        "after_volume_m3": 0.0008849162605070891,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Mount tab base weld -1 1 1",
+        "before_volume_m3": 0.0008849162605070891,
+        "after_volume_m3": 0.000884922653709606,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Front attachment root weld -1 -1",
+        "before_volume_m3": 0.000884922653709606,
+        "after_volume_m3": 0.0008849350255509461,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Front attachment root weld -1 1",
+        "before_volume_m3": 0.0008849350255509461,
+        "after_volume_m3": 0.0008849473617162236,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "U plate to rail weld 1 0",
+        "before_volume_m3": 0.0008849473617162236,
+        "after_volume_m3": 0.0008850645213173885,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "U plate to rail weld 1 1",
+        "before_volume_m3": 0.0008850645213173885,
+        "after_volume_m3": 0.0008851816857733153,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Rear half pivot-housing weld 1",
+        "before_volume_m3": 0.0008851816857733153,
+        "after_volume_m3": 0.0008852542974996054,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Mount tab base weld 1 -1 -1",
+        "before_volume_m3": 0.0008852542974996054,
+        "after_volume_m3": 0.0008852607268690122,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Mount tab base weld 1 -1 1",
+        "before_volume_m3": 0.0008852607268690122,
+        "after_volume_m3": 0.0008852796535917387,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Mount tab base weld 1 1 -1",
+        "before_volume_m3": 0.0008852796535917387,
+        "after_volume_m3": 0.0008852985827751532,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Mount tab base weld 1 1 1",
+        "before_volume_m3": 0.0008852985827751532,
+        "after_volume_m3": 0.000885305198594215,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Front attachment root weld 1 -1",
+        "before_volume_m3": 0.000885305198594215,
+        "after_volume_m3": 0.0008853175347724824,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Front attachment root weld 1 1",
+        "before_volume_m3": 0.0008853175347724824,
+        "after_volume_m3": 0.0008853298156520915,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Additional asymmetric tab root weld -1",
+        "before_volume_m3": 0.0008853298156520915,
+        "after_volume_m3": 0.0008853450075062367,
+        "status": "NoError"
+      },
+      {
+        "operation": "union",
+        "name": "Additional asymmetric tab root weld 1",
+        "before_volume_m3": 0.0008853450075062367,
+        "after_volume_m3": 0.0008853480650659883,
+        "status": "NoError"
+      },
+      {
+        "operation": "subtract",
+        "name": "Estimated hollow rail cavity -1",
+        "before_volume_m3": 0.0008853480650659883,
+        "after_volume_m3": 0.0005976677099716757,
+        "status": "NoError"
+      },
+      {
+        "operation": "subtract",
+        "name": "Rear axle slot -1",
+        "before_volume_m3": 0.0005976677099716757,
+        "after_volume_m3": 0.0005954445199813075,
+        "status": "NoError"
+      },
+      {
+        "operation": "subtract",
+        "name": "Estimated hollow rail cavity 1",
+        "before_volume_m3": 0.0005954445199813075,
+        "after_volume_m3": 0.0003077641648869948,
+        "status": "NoError"
+      },
+      {
+        "operation": "subtract",
+        "name": "Rear axle slot 1",
+        "before_volume_m3": 0.0003077641648869948,
+        "after_volume_m3": 0.0003055409748966266,
+        "status": "NoError"
+      },
+      {
+        "operation": "subtract",
+        "name": "Open pivot axes through two separate housings",
+        "before_volume_m3": 0.0003055409748966266,
+        "after_volume_m3": 0.0002789962163138939,
+        "status": "NoError"
+      },
+      {
+        "operation": "subtract",
+        "name": "Tab open hole and mouth radius -1 -1",
+        "before_volume_m3": 0.0002789962163138939,
+        "after_volume_m3": 0.0002787629626316645,
+        "status": "NoError"
+      },
+      {
+        "operation": "subtract",
+        "name": "Tab open hole and mouth radius -1 1",
+        "before_volume_m3": 0.0002787629626316645,
+        "after_volume_m3": 0.00027852970894943514,
+        "status": "NoError"
+      },
+      {
+        "operation": "subtract",
+        "name": "Short front attachment open axis -1",
+        "before_volume_m3": 0.00027852970894943514,
+        "after_volume_m3": 0.00027803117035741154,
+        "status": "NoError"
+      },
+      {
+        "operation": "subtract",
+        "name": "Tab open hole and mouth radius 1 -1",
+        "before_volume_m3": 0.00027803117035741154,
+        "after_volume_m3": 0.00027779791667518214,
+        "status": "NoError"
+      },
+      {
+        "operation": "subtract",
+        "name": "Tab open hole and mouth radius 1 1",
+        "before_volume_m3": 0.00027779791667518214,
+        "after_volume_m3": 0.0002775646629929528,
+        "status": "NoError"
+      },
+      {
+        "operation": "subtract",
+        "name": "Short front attachment open axis 1",
+        "before_volume_m3": 0.0002775646629929528,
+        "after_volume_m3": 0.0002770661244009292,
+        "status": "NoError"
+      },
+      {
+        "operation": "subtract",
+        "name": "Asymmetric tab actual open hole",
+        "before_volume_m3": 0.0002770661244009292,
+        "after_volume_m3": 0.0002769831718550401,
+        "status": "NoError"
+      }
+    ],
+    "coplanar_diagonals_only": [
+      {
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "offset_m": 0.012000000104308128,
+        "faces": 2042,
+        "volume_relative_change": 9.43689570931383e-15,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "offset_m": 0.010200000368058681,
+        "faces": 2051,
+        "volume_relative_change": 9.325873406851315e-15,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "offset_m": 0.014999999664723873,
+        "faces": 1497,
+        "volume_relative_change": 0.0,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "offset_m": -0.014999999664723873,
+        "faces": 336,
+        "volume_relative_change": 8.881784197001252e-16,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "offset_m": 0.013199999928474426,
+        "faces": 160,
+        "volume_relative_change": 0.0,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          0,
+          0,
+          1
+        ],
+        "offset_m": -0.013199999928474426,
+        "faces": 160,
+        "volume_relative_change": 1.1102230246251565e-15,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          0,
+          1,
+          0
+        ],
+        "offset_m": 0.02199999988079071,
+        "faces": 164,
+        "volume_relative_change": 3.9968028886505635e-15,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          0,
+          1,
+          0
+        ],
+        "offset_m": 0.5562000274658203,
+        "faces": 164,
+        "volume_relative_change": 7.771561172376096e-16,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          0,
+          1,
+          0
+        ],
+        "offset_m": 0.5580000281333923,
+        "faces": 164,
+        "volume_relative_change": 0.0,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          0,
+          1,
+          0
+        ],
+        "offset_m": -0.00800000037997961,
+        "faces": 124,
+        "volume_relative_change": 1.5543122344752192e-15,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          1,
+          0.012544802867383523,
+          0
+        ],
+        "offset_m": -0.11499999999999999,
+        "faces": 454,
+        "volume_relative_change": 4.4173864566232623e-10,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          1,
+          0.012544802867383523,
+          0
+        ],
+        "offset_m": -0.091,
+        "faces": 2441,
+        "volume_relative_change": 1.5974259581774675e-08,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          1,
+          0.012544802867383523,
+          0
+        ],
+        "offset_m": -0.1132,
+        "faces": 166,
+        "volume_relative_change": 7.906295618198556e-10,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          1,
+          0.012544802867383523,
+          0
+        ],
+        "offset_m": -0.0928,
+        "faces": 166,
+        "volume_relative_change": 1.5521011142993757e-09,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "offset_m": -0.11550000309944153,
+        "faces": 1005,
+        "volume_relative_change": 3.1086244689504383e-15,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "offset_m": -0.09049999713897705,
+        "faces": 640,
+        "volume_relative_change": 3.1086244689504383e-15,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          1,
+          -0.012544802867383523,
+          0
+        ],
+        "offset_m": 0.091,
+        "faces": 2522,
+        "volume_relative_change": 1.3264626175235605e-08,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          1,
+          -0.012544802867383523,
+          0
+        ],
+        "offset_m": 0.11499999999999999,
+        "faces": 455,
+        "volume_relative_change": 1.038127583896653e-09,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          1,
+          -0.012544802867383523,
+          0
+        ],
+        "offset_m": 0.0928,
+        "faces": 166,
+        "volume_relative_change": 1.5521006702101658e-09,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          1,
+          -0.012544802867383523,
+          0
+        ],
+        "offset_m": 0.1132,
+        "faces": 166,
+        "volume_relative_change": 7.906306720428802e-10,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "offset_m": 0.09049999713897705,
+        "faces": 640,
+        "volume_relative_change": 4.440892098500626e-16,
+        "positions_preserved": true
+      },
+      {
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "offset_m": 0.11550000309944153,
+        "faces": 1002,
+        "volume_relative_change": 3.1086244689504383e-15,
+        "positions_preserved": true
+      }
+    ],
+    "all_dimensions_estimated": true,
+    "current_RDC_identity_verified": false,
+    "external_libraries": [],
+    "art_accepted": false,
+    "source_sha256": "e829f89ea0d6594ceb43830c20d8d8698f41ef0a297b3a503c96b15b1d9df20c",
+    "export_sha256": "409a40a9f583a5361a70e1cc746207cc15a6fa0c0a95975c847bb6334cfc0fbb",
+    "needle_refinement_report": "needle-refinement-check.json",
+    "source_geometry_normals_UV_preserved_at_material_stage": "79bb4178ae4e6720b352e2bed77eba757465440b19226223f8f3749e3c977f1f"
+  },
+  "export_check": {
+    "asset": "swingarm-body",
+    "revision": "swingarm-body-v1",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/swingarm/body/swingarm-body-v1-inspection.glb",
+        "sha256": "409a40a9f583a5361a70e1cc746207cc15a6fa0c0a95975c847bb6334cfc0fbb",
+        "bytes": 9846872,
+        "glTF_errors": 0,
+        "glTF_warnings": 0,
+        "messages": [],
+        "bounds": {
+          "min": [
+            -0.12200000137090683,
+            -0.04172762855887413,
+            -0.5580000281333923
+          ],
+          "max": [
+            0.12200000137090683,
+            0.052000001072883606,
+            0.01600000075995922
+          ]
+        },
+        "vertices": 149081,
+        "triangles": 205920,
+        "triangle_area_local_m2": {
+          "minimum": 3.482749254900536e-13,
+          "exactly_zero": 0,
+          "below_1e_minus18": 0,
+          "note": "Local exported coordinates; not a self-intersection or surface-fidelity proof"
+        },
+        "tangent_frame": {
+          "vectors": 149081,
+          "max_unit_error": 7.090359008721236e-05,
+          "max_normal_dot": 0.00013829134749920868,
+          "handedness_sign_is_unit": true,
+          "note": "Finite orthonormal frame only; not full MikkTSpace or renderer visual parity"
+        },
+        "node_names": [
+          "Related swingarm welded body - estimated reconstruction"
+        ],
+        "materials": [
+          {
+            "name": "Original black coated welded body candidate - not measured OEM ",
+            "basecolor": [
+              0.008999999612569809,
+              0.009999999776482582,
+              0.012000000104308128,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "extensions": []
+          }
+        ]
+      }
+    ],
+    "scope": "Actual glTF buffers and format only; not shape reception, physical interface or mobile qualification",
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "browser_check": {
+    "camera": {
+      "position": [
+        6.072096810330894e-17,
+        0.6142081969599286,
+        -1.2626486775395964
+      ],
+      "target": [
+        0,
+        0.005136186257004738,
+        -0.27100001368671656
+      ],
+      "radius": 1.1637593336866967,
+      "fov": 0.72,
+      "fovMode": 0
+    },
+    "framing": {
+      "min": [
+        0.41629861633157805,
+        0.3174763836927556
+      ],
+      "max": [
+        0.5837013858407217,
+        0.7676333354579069
+      ],
+      "scope": "Conservative projected actual mesh bounding boxes; whole-piece framing only"
+    },
+    "asset": "swingarm-body",
+    "revision": "swingarm-body-v1",
+    "config": {
+      "label": "Corps de bras oscillant — candidat apparenté",
+      "lot": 15,
+      "review": "swingarm-body-v1",
+      "source": "swingarm/body/swingarm-body-v1.blend",
+      "collection": "WEWA_SWINGARM_BODY_ISOLATED",
+      "component_id": "MOTO-SWINGARM-BODY-001",
+      "files": [
+        "swingarm/body/swingarm-body-v1-inspection.glb"
+      ],
+      "rigs": [],
+      "source_frame": "local_pivot_center_Xleft_Yrear_Zcandidate_up",
+      "variant": "Related52PF0219 BM/BMX150 physical specimen; exact125HD current RDC identity, all dimensions and installed pose unconfirmed",
+      "details": "Corps soudé seul : deux rails creux, fentes arrière, logements de pivot séparés, pont en U à retour formé, pattes percées et cordons originaux. Cotes, asymétries installées et soudures estimées ; peinture noire propre originale. Bagues, axe, patin, tendeurs, frein et amortisseurs séparés. Aucun fit, LOD mobile ou réception artistique."
+    },
+    "files": [
+      "swingarm/body/swingarm-body-v1-inspection.glb"
+    ],
+    "meshes": 1,
+    "vertices": 149081,
+    "triangles": 205920,
+    "bounds": {
+      "min": [
+        -0.12200000137090683,
+        -0.04172762855887413,
+        -0.5580000281333923
+      ],
+      "max": [
+        0.12200000137090683,
+        0.052000001072883606,
+        0.01600000075995922
+      ]
+    },
+    "textures_ready": true,
+    "renderer": {
+      "vendor": "Google Inc. (Google)",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "rig_states": {},
+    "attachments": [],
+    "rigs": [],
+    "art_accepted": false,
+    "physical_iphone_tested": false,
+    "public_game_unchanged": true,
+    "pixel_checks": [
+      {
+        "view": "quarter",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 33507,
+        "changed_fraction": 0.0290859375,
+        "rgb_min": [
+          23,
+          26,
+          31
+        ],
+        "rgb_max": [
+          236,
+          237,
+          238
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "driver",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 32457,
+        "changed_fraction": 0.028174479166666665,
+        "rgb_min": [
+          23,
+          27,
+          32
+        ],
+        "rgb_max": [
+          129,
+          130,
+          132
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "reverse",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 21768,
+        "changed_fraction": 0.018895833333333334,
+        "rgb_min": [
+          24,
+          27,
+          32
+        ],
+        "rgb_max": [
+          132,
+          132,
+          134
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "landscape-844x390",
+        "width": 844,
+        "height": 390,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 6175,
+        "changed_fraction": 0.018759873617693525,
+        "rgb_min": [
+          23,
+          27,
+          32
+        ],
+        "rgb_max": [
+          72,
+          77,
+          87
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      }
+    ],
+    "page_errors": [],
+    "http_failures": [],
+    "pose_checks": [],
+    "scope": "Actual Babylon imports and vertex motion in Chromium softwareWebGL; not Safari/iPhone/FPS qualification",
+    "render_mode": "Manual frames after scene readiness",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/swingarm/body/swingarm-body-v1-inspection.glb",
+        "sha256": "409a40a9f583a5361a70e1cc746207cc15a6fa0c0a95975c847bb6334cfc0fbb"
+      }
+    ],
+    "inspector_sha256": "19e4908f4a7b69b492710adfb7d28a5508745721f9c991941a5ed439f3a9fb07",
+    "capture_tool_sha256": "53b07b0e9bda4b86c9d7f05c10815755b3be50dcc85e29a4b3f164cbc38fcf28",
+    "inspector_path": "tools/motorcycle-lab/review-v2.js",
+    "capture_tool_path": "tools/capture_motorcycle18_v3.py",
+    "inputs_unchanged_during_capture": true
+  },
+  "render_report": {
+    "source_sha256": "e829f89ea0d6594ceb43830c20d8d8698f41ef0a297b3a503c96b15b1d9df20c",
+    "export_sha256": "409a40a9f583a5361a70e1cc746207cc15a6fa0c0a95975c847bb6334cfc0fbb",
+    "renderer": "Blender4.3.2 CyclesCPU96 OIDN",
+    "samples": 96,
+    "resolution_px": [
+      1400,
+      1000
+    ],
+    "views": [
+      {
+        "name": "quarter",
+        "camera_location_m": [
+          0.65,
+          0.82,
+          0.68
+        ],
+        "target_m": [
+          0,
+          0.27,
+          0
+        ],
+        "ortho_scale_m": 0.72,
+        "allow_deliberate_macro_crop": false,
+        "preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "SWINGARM_CAMERA",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0010000000474974513,
+            5.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.8628955717643336,
+          "farthest_actual_vertex_depth_m": 1.3074553393892117,
+          "projected_uv_min": [
+            0.09348743696405692,
+            0.13980148643288287
+          ],
+          "projected_uv_max": [
+            0.9148059721855971,
+            0.8457823018630442
+          ],
+          "allow_deliberate_crop": false,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Related swingarm welded body - estimated reconstruction",
+              "vertices": 102888,
+              "depth_m": [
+                0.8628955717643336,
+                1.3074553393892117
+              ],
+              "projected_uv_min": [
+                0.09348743696405692,
+                0.13980148643288287
+              ],
+              "projected_uv_max": [
+                0.9148059721855971,
+                0.8457823018630442
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": false,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true,
+          "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        },
+        "PNG_sha256": "e2b4a53f3e600dd5dfd12fddc5706fd726b1b18d9c959818bee2c0bf0e39b112",
+        "checkpoint_file": "checkpoint-quarter.json",
+        "reused_verified_checkpoint": false
+      },
+      {
+        "name": "reverse-quarter",
+        "camera_location_m": [
+          -0.65,
+          0.82,
+          -0.55
+        ],
+        "target_m": [
+          0,
+          0.27,
+          0
+        ],
+        "ortho_scale_m": 0.72,
+        "allow_deliberate_macro_crop": false,
+        "preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "SWINGARM_CAMERA",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0010000000474974513,
+            5.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.7717080497977051,
+          "farthest_actual_vertex_depth_m": 1.2462518990375726,
+          "projected_uv_min": [
+            0.08519402224716588,
+            0.19474083596187275
+          ],
+          "projected_uv_max": [
+            0.9065125298739756,
+            0.8177931783320742
+          ],
+          "allow_deliberate_crop": false,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Related swingarm welded body - estimated reconstruction",
+              "vertices": 102888,
+              "depth_m": [
+                0.7717080497977051,
+                1.2462518990375726
+              ],
+              "projected_uv_min": [
+                0.08519402224716588,
+                0.19474083596187275
+              ],
+              "projected_uv_max": [
+                0.9065125298739756,
+                0.8177931783320742
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": false,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true,
+          "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        },
+        "PNG_sha256": "29b1bd7ab1b4eb39dbac78c3eb50176188cc73464e0025d0d621097ffcc95233",
+        "checkpoint_file": "checkpoint-reverse-quarter.json",
+        "reused_verified_checkpoint": false
+      },
+      {
+        "name": "weld-detail",
+        "camera_location_m": [
+          -0.222,
+          0.065,
+          0.524
+        ],
+        "target_m": [
+          0.094,
+          0.245,
+          0.012
+        ],
+        "ortho_scale_m": 0.1,
+        "allow_deliberate_macro_crop": true,
+        "preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "SWINGARM_CAMERA",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0010000000474974513,
+            5.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.4485534431892002,
+          "farthest_actual_vertex_depth_m": 0.7531048063153841,
+          "projected_uv_min": [
+            -3.288817893125894,
+            -3.213733773466162
+          ],
+          "projected_uv_max": [
+            2.872109069504723,
+            2.559809126124236
+          ],
+          "allow_deliberate_crop": true,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Related swingarm welded body - estimated reconstruction",
+              "vertices": 102888,
+              "depth_m": [
+                0.4485534431892002,
+                0.7531048063153841
+              ],
+              "projected_uv_min": [
+                -3.288817893125894,
+                -3.213733773466162
+              ],
+              "projected_uv_max": [
+                2.872109069504723,
+                2.559809126124236
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": true,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true,
+          "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        },
+        "PNG_sha256": "131f9770200a9181f10c87492b77f7c23188442982ff10ba385b2fcf2ec2fde5",
+        "checkpoint_file": "checkpoint-weld-detail.json",
+        "reused_verified_checkpoint": false
+      },
+      {
+        "name": "return-detail",
+        "camera_location_m": [
+          -0.18,
+          0.63,
+          0.293
+        ],
+        "target_m": [
+          0.045,
+          0.18,
+          0.008
+        ],
+        "ortho_scale_m": 0.1,
+        "allow_deliberate_macro_crop": true,
+        "preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "SWINGARM_CAMERA",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0010000000474974513,
+            5.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.2161326323772872,
+          "farthest_actual_vertex_depth_m": 0.7642413436960755,
+          "projected_uv_min": [
+            -1.8791764087418414,
+            -2.6230876580330356
+          ],
+          "projected_uv_max": [
+            2.8100420689653722,
+            1.9558860565344642
+          ],
+          "allow_deliberate_crop": true,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Related swingarm welded body - estimated reconstruction",
+              "vertices": 102888,
+              "depth_m": [
+                0.2161326323772872,
+                0.7642413436960755
+              ],
+              "projected_uv_min": [
+                -1.8791764087418414,
+                -2.6230876580330356
+              ],
+              "projected_uv_max": [
+                2.8100420689653722,
+                1.9558860565344642
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": true,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true,
+          "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        },
+        "PNG_sha256": "f07856c4f6dc2e184ec1854d26a60a37d113f97f766915deb8bcde8c1f5ba6f7",
+        "checkpoint_file": "checkpoint-return-detail.json",
+        "reused_verified_checkpoint": false
+      }
+    ],
+    "art_accepted": false
+  },
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true
+}

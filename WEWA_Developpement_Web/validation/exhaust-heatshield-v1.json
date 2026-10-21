@@ -1,0 +1,790 @@
+{
+  "component_id": "MOTO-EXHAUST-HEATSHIELD-001",
+  "revision": "exhaust-heatshield-v1",
+  "source_sha256": "000d35f158031e2feedaeec2040982e5f8a4295a84da18e336d58185323aa734",
+  "source_check": {
+    "component_id": "MOTO-EXHAUST-HEATSHIELD-001",
+    "revision": "exhaust-heatshield-v1",
+    "source_sha256": "000d35f158031e2feedaeec2040982e5f8a4295a84da18e336d58185323aa734",
+    "export_sha256": "f2058ab69764574c8dc8674889c40401dbb1ff5c309d45b0a01f5ffb233887b9",
+    "geometry": [
+      {
+        "name": "Formed heatshield with two dished true holes - conditional PF59",
+        "vertices": 53889,
+        "faces": 107782,
+        "connected_shells": 1,
+        "non_manifold_edges": 0,
+        "signed_volume_m3": 2.040088371684054e-05
+      }
+    ],
+    "shape": {
+      "domain": {
+        "whole_triangle_domain_checked": true,
+        "retained_triangle_count": 14661,
+        "unique_vertices_checked": 7627,
+        "unique_edges_checked": 22289,
+        "vertices_outside_closed_domain": 0,
+        "edge_midpoints_outside_closed_domain": 0,
+        "proper_crossings_of_outer_or_hole_boundaries": 0,
+        "triangles_containing_entire_hole": 0,
+        "numeric_coordinate_tolerance_m": 2e-07,
+        "scope": "Complete triangle boundary inclusion plus absence of an enclosed hole; no physical casting tolerance or art reception."
+      },
+      "boundary_both_directions_m": [
+        [
+          1.4996910388578426e-08,
+          1.5016070422348865e-08
+        ],
+        [
+          7.446590099704635e-09,
+          7.450580596923828e-09
+        ],
+        [
+          7.450580596923828e-09,
+          7.446590099704635e-09
+        ]
+      ],
+      "expected_area_m2": 0.01883966628604891,
+      "retained_area_m2": 0.018839668721574537,
+      "area_error_m2": 2.435525624927548e-09,
+      "discarded_triangles_outside_domain": 221,
+      "skin_vertices_per_face": 7627,
+      "method": "Constrained skin with two exact hole loops, cubic-section body-conformal working camber, quintic pressed seats, explicitly rolled perimeter and bore lips",
+      "all_dimensions_estimated": true,
+      "hidden_mounts_fabricated": false
+    },
+    "triangles": 107782,
+    "zero_area_triangles": 0,
+    "collection": "WEWA_EXHAUST_HEATSHIELD",
+    "root": "Heatshield conditional body-conformal datum",
+    "datum_world_matrix": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        -0.18000000715255737
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.8550000190734863
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        -0.7659804224967957
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "body_source_sha256": "262b057c752be56eec3132ba931a269e0cd9fb40bc9ec8170f1f16aaae72b70b",
+    "candidate_guide_surface_tests": [
+      {
+        "name": "Rising hollow silencer main shell - conditional RDC",
+        "surface_crossing_pairs": 0
+      }
+    ],
+    "normals": "Analytic skin source normals, actual swept rim vertex normals; no arbitrary tangent repair",
+    "all_dimensions_estimated": true,
+    "art_accepted": false,
+    "protected_geometry_source_sha256": "fc5630ea26e71903981dcb4c5e5a8d08d2e39d0d1aae1d994a669b4b00fcc086",
+    "protected_geometry_digest": "3e9468ae511fa03eec42126a06979dccb459c4b06c87aa2fc6964465bbd0cb2b",
+    "new_geometry_digest": "3e9468ae511fa03eec42126a06979dccb459c4b06c87aa2fc6964465bbd0cb2b",
+    "source_geometry_normals_UV_matrices_bit_identical": true,
+    "maps": {
+      "basecolor": {
+        "path": "assets-src/moto-components/exhaust-heatshield/textures/heatshield-finish-basecolor-v1.png",
+        "sha256": "0b8a673a7c5469da11b467a524db4388fc156dd0d55082a06eeb856acb051fec",
+        "minimum_buffer_rgb": [
+          0.6509804129600525,
+          0.658823549747467,
+          0.6784313917160034
+        ],
+        "maximum_buffer_rgb": [
+          0.8313726186752319,
+          0.8352941870689392,
+          0.847058892250061
+        ],
+        "std_buffer_rgb": [
+          0.08697659522294998,
+          0.08571489155292511,
+          0.08084677159786224
+        ],
+        "colorspace": "sRGB",
+        "size_px": [
+          2048,
+          2048
+        ]
+      },
+      "roughness": {
+        "path": "assets-src/moto-components/exhaust-heatshield/textures/heatshield-finish-roughness-v1.png",
+        "sha256": "47886907e3f57bcc6fa7964d64bc97e73611aac8c608eee5335f50689d8058a5",
+        "minimum_buffer_rgb": [
+          0.18039216101169586,
+          0.18039216101169586,
+          0.18039216101169586
+        ],
+        "maximum_buffer_rgb": [
+          0.24313727021217346,
+          0.24313727021217346,
+          0.24313727021217346
+        ],
+        "std_buffer_rgb": [
+          0.007868028245866299,
+          0.007868028245866299,
+          0.007868028245866299
+        ],
+        "colorspace": "Non-Color",
+        "size_px": [
+          2048,
+          2048
+        ]
+      }
+    },
+    "material_original": {
+      "representative_finish": "Bright formed metal representative of observed isolated shield. Optical chemistry/chrome plating not measured; original weak color and roughness variation only.",
+      "linear_base_color": [
+        0.65,
+        0.66,
+        0.68
+      ],
+      "metallic": 1,
+      "roughness_range": [
+        0.17,
+        0.25
+      ],
+      "color_multiplier_range": [
+        0.985,
+        1.015
+      ],
+      "texture_size_px": [
+        2048,
+        2048
+      ],
+      "working_noise_scale_m": 0.0006,
+      "working_large_variation_scale_m": 0.006,
+      "noise_seed_W": 591.045,
+      "bake_margin_px": 3,
+      "normalmap": false,
+      "bump_or_displacement": false,
+      "scale_is_estimated": true
+    },
+    "normalmap": false,
+    "bump_or_displacement": false,
+    "tangent_buffers_repaired": false,
+    "photographic_pixels_used": false,
+    "material_measured": false,
+    "actual_candidate_world_bounds_m": {
+      "min": [
+        -0.22899992763996124,
+        0.7049999833106995,
+        -0.8122947216033936
+      ],
+      "max": [
+        -0.20465628802776337,
+        0.99097740650177,
+        -0.7170421481132507
+      ],
+      "scope": "Actual current candidate bounds transformed from native glTF, not physical measurements; 300x82mm parameters are unfilleted UV control envelope."
+    }
+  },
+  "export_check": {
+    "asset": "exhaust-heatshield",
+    "revision": "exhaust-heatshield-v1",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/exhaust-heatshield/exhaust-heatshield-inspection.glb",
+        "sha256": "f2058ab69764574c8dc8674889c40401dbb1ff5c309d45b0a01f5ffb233887b9",
+        "bytes": 4350524,
+        "glTF_errors": 0,
+        "glTF_warnings": 0,
+        "messages": [],
+        "bounds": {
+          "min": [
+            -0.22899992763996124,
+            -0.8122947216033936,
+            -0.99097740650177
+          ],
+          "max": [
+            -0.20465628802776337,
+            -0.7170421481132507,
+            -0.7049999833106995
+          ]
+        },
+        "vertices": 55254,
+        "triangles": 107782,
+        "triangle_area_local_m2": {
+          "minimum": 1.9788672414642833e-09,
+          "exactly_zero": 0,
+          "below_1e_minus18": 0,
+          "note": "Local exported coordinates; not a self-intersection or surface-fidelity proof"
+        },
+        "tangent_frame": {
+          "vectors": 0,
+          "max_unit_error": 0,
+          "max_normal_dot": 0,
+          "handedness_sign_is_unit": true,
+          "note": "Finite orthonormal frame only; not full MikkTSpace or renderer visual parity"
+        },
+        "node_names": [
+          "Formed heatshield with two dished true holes - conditional PF59",
+          "Heatshield conditional body-conformal datum"
+        ],
+        "materials": [
+          {
+            "name": "Original bright formed metal finish - estimated",
+            "basecolor": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "metallic": 1,
+            "roughness": 1,
+            "extensions": []
+          }
+        ]
+      }
+    ],
+    "scope": "Actual glTF buffers and format only; not shape reception, physical interface or mobile qualification",
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "browser_check": {
+    "camera": {
+      "position": [
+        -0.21682810783386228,
+        -0.4726388605805891,
+        -1.3234509260532965
+      ],
+      "target": [
+        -0.2168281078338623,
+        -0.7646684348583221,
+        -0.8479886949062347
+      ],
+      "radius": 0.5579835172298335,
+      "fov": 0.72,
+      "fovMode": 0
+    },
+    "framing": {
+      "min": [
+        0.48183125770307206,
+        0.26589180898524833
+      ],
+      "max": [
+        0.518168755435829,
+        0.8325267798910232
+      ],
+      "scope": "Conservative projected actual mesh bounding boxes; whole-piece framing only"
+    },
+    "asset": "exhaust-heatshield",
+    "revision": "exhaust-heatshield-v1",
+    "config": {
+      "label": "Pare-chaleur — tôle emboutie et deux cuvettes percées",
+      "lot": 17,
+      "review": "exhaust-heatshield-v1",
+      "source": "exhaust-heatshield/exhaust-heatshield-v1.blend",
+      "collection": "WEWA_EXHAUST_HEATSHIELD",
+      "component_id": "MOTO-EXHAUST-HEATSHIELD-001",
+      "files": [
+        "exhaust-heatshield/exhaust-heatshield-inspection.glb"
+      ],
+      "rigs": [],
+      "source_frame": "conditional_silencer_body_world_Xleft_Yrear_Zup",
+      "details": "Tôle seule, deux vrais passages avec cuvettes et retour périphérique. Courbure liée au corps candidat ; épaisseur, sections et décalage estimés. Deux cartes originales couleur/rugosité sans normalmap ni relief. Grain et reflets restent en révision artistique ; aucun raccord OEM ni jeu mesuré reçu. Fixations et supports séparés.",
+      "variant": "PF591045 related donor150/X2019/BS3; exact125RDC identity and installed interfaces unconfirmed"
+    },
+    "files": [
+      "exhaust-heatshield/exhaust-heatshield-inspection.glb"
+    ],
+    "meshes": 1,
+    "vertices": 55254,
+    "triangles": 107782,
+    "bounds": {
+      "min": [
+        -0.22899992763996124,
+        -0.8122947216033936,
+        -0.99097740650177
+      ],
+      "max": [
+        -0.20465628802776337,
+        -0.7170421481132507,
+        -0.7049999833106995
+      ]
+    },
+    "textures_ready": true,
+    "renderer": {
+      "vendor": "Google Inc. (Google)",
+      "renderer": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+      "version": "WebGL 2.0 (OpenGL ES 3.0 Chromium)"
+    },
+    "rig_states": {},
+    "attachments": [],
+    "rigs": [],
+    "art_accepted": false,
+    "physical_iphone_tested": false,
+    "public_game_unchanged": true,
+    "pixel_checks": [
+      {
+        "view": "quarter",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 58947,
+        "changed_fraction": 0.051169270833333336,
+        "rgb_min": [
+          24,
+          28,
+          33
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "driver",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 17917,
+        "changed_fraction": 0.015552951388888889,
+        "rgb_min": [
+          26,
+          31,
+          36
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "reverse",
+        "width": 1280,
+        "height": 900,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 18266,
+        "changed_fraction": 0.015855902777777778,
+        "rgb_min": [
+          25,
+          31,
+          36
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      },
+      {
+        "view": "landscape-844x390",
+        "width": 844,
+        "height": 390,
+        "background_rgb": [
+          26,
+          31,
+          36
+        ],
+        "changed_pixels": 3427,
+        "changed_fraction": 0.010411350103293231,
+        "rgb_min": [
+          26,
+          31,
+          36
+        ],
+        "rgb_max": [
+          255,
+          255,
+          255
+        ],
+        "scope": "Actual WebGL canvas pixels; DOM controls excluded, not a shape/material reception"
+      }
+    ],
+    "page_errors": [],
+    "http_failures": [],
+    "pose_checks": [],
+    "scope": "Actual Babylon imports and vertex motion in Chromium softwareWebGL; not Safari/iPhone/FPS qualification",
+    "render_mode": "Manual frames after scene readiness",
+    "exports": [
+      {
+        "path": "assets-src/moto-components/exhaust-heatshield/exhaust-heatshield-inspection.glb",
+        "sha256": "f2058ab69764574c8dc8674889c40401dbb1ff5c309d45b0a01f5ffb233887b9"
+      }
+    ],
+    "inspector_sha256": "19e4908f4a7b69b492710adfb7d28a5508745721f9c991941a5ed439f3a9fb07",
+    "capture_tool_sha256": "53b07b0e9bda4b86c9d7f05c10815755b3be50dcc85e29a4b3f164cbc38fcf28",
+    "inspector_path": "tools/motorcycle-lab/review-v2.js",
+    "capture_tool_path": "tools/capture_motorcycle18_v3.py",
+    "inputs_unchanged_during_capture": true
+  },
+  "render_report": {
+    "source_sha256": "000d35f158031e2feedaeec2040982e5f8a4295a84da18e336d58185323aa734",
+    "export_sha256": "f2058ab69764574c8dc8674889c40401dbb1ff5c309d45b0a01f5ffb233887b9",
+    "samples": 96,
+    "diagnostic_mode": "pbr",
+    "camera_calibrated": false,
+    "all_dimensions_estimated": true,
+    "views": [
+      {
+        "name": "opposite-inner",
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "CONTROL_CAMERA",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0005000000237487257,
+            1000.0
+          ],
+          "nearest_actual_vertex_depth_m": 1.287828064469227,
+          "farthest_actual_vertex_depth_m": 1.3121716984422724,
+          "projected_uv_min": [
+            0.1135441213523572,
+            0.32837360166960006
+          ],
+          "projected_uv_max": [
+            0.8864560918526216,
+            0.6716261186959629
+          ],
+          "allow_deliberate_crop": false,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Formed heatshield with two dished true holes - conditional PF59",
+              "vertices": 53889,
+              "depth_m": [
+                1.287828064469227,
+                1.3121716984422724
+              ],
+              "projected_uv_min": [
+                0.1135441213523572,
+                0.32837360166960006
+              ],
+              "projected_uv_max": [
+                0.8864560918526216,
+                0.6716261186959629
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": false,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true
+        },
+        "outputs": [
+          {
+            "file": "opposite-inner.exr",
+            "format": "OPEN_EXR",
+            "bytes": 1126973,
+            "sha256": "cf15cf00f56c66bf2aea74f457a615673291c5ad32c29abcdf55fb2e7c90673c",
+            "linear_scene_data": true
+          },
+          {
+            "file": "opposite-inner.png",
+            "format": "PNG",
+            "bytes": 1521218,
+            "sha256": "baecfd4bb3ade861f1f5c02db20d51c4ec29f5c01eb91e22cb182ae365eaf523",
+            "linear_scene_data": false
+          }
+        ]
+      },
+      {
+        "name": "outside-quarter",
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "CONTROL_CAMERA",
+          "camera_type": "PERSP",
+          "camera_clip_m": [
+            0.0005000000237487257,
+            1000.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.520451091016696,
+          "farthest_actual_vertex_depth_m": 0.6762948722008293,
+          "projected_uv_min": [
+            0.06733611062247108,
+            0.3129319610657988
+          ],
+          "projected_uv_max": [
+            0.8525089771836634,
+            0.6895364049076937
+          ],
+          "allow_deliberate_crop": false,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Formed heatshield with two dished true holes - conditional PF59",
+              "vertices": 53889,
+              "depth_m": [
+                0.520451091016696,
+                0.6762948722008293
+              ],
+              "projected_uv_min": [
+                0.06733611062247108,
+                0.3129319610657988
+              ],
+              "projected_uv_max": [
+                0.8525089771836634,
+                0.6895364049076937
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": false,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true
+        },
+        "outputs": [
+          {
+            "file": "outside-quarter.exr",
+            "format": "OPEN_EXR",
+            "bytes": 1136573,
+            "sha256": "600ce0fdad0f074f7fee0d875f03d032d0c3e56a3a1a7560f449edfdfd638daf",
+            "linear_scene_data": true
+          },
+          {
+            "file": "outside-quarter.png",
+            "format": "PNG",
+            "bytes": 1470963,
+            "sha256": "6c0244ae5ffb121696d475f471a79d6ac50d70bf6d7592085ffa90ed383e03d7",
+            "linear_scene_data": false
+          }
+        ]
+      },
+      {
+        "name": "pressed-seat-detail",
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "CONTROL_CAMERA",
+          "camera_type": "PERSP",
+          "camera_clip_m": [
+            0.0005000000237487257,
+            1000.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.2812164919275668,
+          "farthest_actual_vertex_depth_m": 0.36867416040972945,
+          "projected_uv_min": [
+            -3.9827000907587493,
+            -0.2921179933686725
+          ],
+          "projected_uv_max": [
+            1.0507285596391447,
+            1.644498449378936
+          ],
+          "allow_deliberate_crop": true,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Formed heatshield with two dished true holes - conditional PF59",
+              "vertices": 53889,
+              "depth_m": [
+                0.2812164919275668,
+                0.36867416040972945
+              ],
+              "projected_uv_min": [
+                -3.9827000907587493,
+                -0.2921179933686725
+              ],
+              "projected_uv_max": [
+                1.0507285596391447,
+                1.644498449378936
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": true,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true
+        },
+        "outputs": [
+          {
+            "file": "pressed-seat-detail.exr",
+            "format": "OPEN_EXR",
+            "bytes": 3485016,
+            "sha256": "cf518c9c5dda4780f6b5e69bf52ddf8d7bac6018556233a0a8587da535a74fd7",
+            "linear_scene_data": true
+          },
+          {
+            "file": "pressed-seat-detail.png",
+            "format": "PNG",
+            "bytes": 1540913,
+            "sha256": "e449e8852953f2a1dda109cb6ed98cf3ab6ca36128ff63fed591942042321767",
+            "linear_scene_data": false
+          }
+        ]
+      },
+      {
+        "name": "rolled-edge-detail",
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "CONTROL_CAMERA",
+          "camera_type": "PERSP",
+          "camera_clip_m": [
+            0.0005000000237487257,
+            1000.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.33693817714786,
+          "farthest_actual_vertex_depth_m": 0.378863452984351,
+          "projected_uv_min": [
+            0.33044681034266055,
+            -0.6070189326572499
+          ],
+          "projected_uv_max": [
+            4.646713120265974,
+            1.1617858835059471
+          ],
+          "allow_deliberate_crop": true,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Formed heatshield with two dished true holes - conditional PF59",
+              "vertices": 53889,
+              "depth_m": [
+                0.33693817714786,
+                0.378863452984351
+              ],
+              "projected_uv_min": [
+                0.33044681034266055,
+                -0.6070189326572499
+              ],
+              "projected_uv_max": [
+                4.646713120265974,
+                1.1617858835059471
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": true,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true
+        },
+        "outputs": [
+          {
+            "file": "rolled-edge-detail.exr",
+            "format": "OPEN_EXR",
+            "bytes": 2133456,
+            "sha256": "c73563b9765067082228730e496c54d8a8b4ffde6538749eaa46d3169119ede7",
+            "linear_scene_data": true
+          },
+          {
+            "file": "rolled-edge-detail.png",
+            "format": "PNG",
+            "bytes": 1569565,
+            "sha256": "6ade4fcd5234dad5f2b61c996df42ee7fb0effb57b7a88016a5e8e1d66982df0",
+            "linear_scene_data": false
+          }
+        ]
+      },
+      {
+        "name": "conditional-silencer-context",
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "CONTROL_CAMERA",
+          "camera_type": "PERSP",
+          "camera_clip_m": [
+            0.0005000000237487257,
+            1000.0
+          ],
+          "nearest_actual_vertex_depth_m": 0.8265785017641942,
+          "farthest_actual_vertex_depth_m": 1.2178600552079875,
+          "projected_uv_min": [
+            0.07105215336227899,
+            0.3579753760043327
+          ],
+          "projected_uv_max": [
+            0.8527853439017976,
+            0.6021964935529691
+          ],
+          "allow_deliberate_crop": false,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Formed heatshield with two dished true holes - conditional PF59",
+              "vertices": 53889,
+              "depth_m": [
+                0.8497530059336178,
+                1.014059668493541
+              ],
+              "projected_uv_min": [
+                0.19069715952434396,
+                0.38617972722210825
+              ],
+              "projected_uv_max": [
+                0.5805518670252473,
+                0.5730475686582199
+              ],
+              "finite": true
+            },
+            {
+              "object": "Rising hollow silencer main shell - conditional RDC",
+              "vertices": 67840,
+              "depth_m": [
+                0.8265785017641942,
+                1.2178600552079875
+              ],
+              "projected_uv_min": [
+                0.07105215336227899,
+                0.3579753760043327
+              ],
+              "projected_uv_max": [
+                0.8527853439017976,
+                0.6021964935529691
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": false,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true
+        },
+        "outputs": [
+          {
+            "file": "conditional-silencer-context.exr",
+            "format": "OPEN_EXR",
+            "bytes": 681412,
+            "sha256": "bedd35622054eafb45bbc95ce45d9e2834bbd1159deaeb2c15f67cefc322bc43",
+            "linear_scene_data": true
+          },
+          {
+            "file": "conditional-silencer-context.png",
+            "format": "PNG",
+            "bytes": 1432173,
+            "sha256": "735f7280879d40fa2a7f4cf16f607647b47c90f910fcc607aac8f45eee274a9e",
+            "linear_scene_data": false
+          }
+        ]
+      }
+    ],
+    "art_accepted": false
+  },
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "public_game_unchanged": true
+}

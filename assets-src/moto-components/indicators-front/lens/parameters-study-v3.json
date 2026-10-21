@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "revision": "indicator-front-lens-study-v3",
+  "units": "m, estimated design envelope, not manufacturer cotes",
+  "frame": "Isolated lens, Xhorizontal/Zup/front normal-Y; vehicle installation unknown",
+  "face_radius_m": 0.031,
+  "face_sag_m": 0.007,
+  "rim_fillet_radius_m": 0.001,
+  "rear_interface_y_m": 0.009,
+  "angular_segments": 256,
+  "cap_radial_rings": 96,
+  "fillet_rings": 32,
+  "wall_rings": 16,
+  "authored_envelope": {
+    "diameter_m": [
+      0.05,
+      0.075
+    ],
+    "sag_m": [
+      0.003,
+      0.012
+    ],
+    "rim_depth_m": [
+      0.005,
+      0.016
+    ],
+    "meaning": "Design exploration envelope only, not a measured interval or OEM tolerance"
+  },
+  "scope": "Gross finite exterior and existing upper attachment mouth, plus ONE opposite external edge notch candidate. Broad bands/fine peripheral optical zones/untranscribed markings remain separate unmade visible features.",
+  "pocket": {
+    "center_xz_m": [
+      0,
+      0.025
+    ],
+    "mouth_radius_m": 0.0015,
+    "outer_transition_radius_m": 0.0045,
+    "depression_m": 0.0012,
+    "visible_wall_depth_m": 0.0014,
+    "angular_segments": 192,
+    "transition_rings": 24,
+    "wall_rings": 12,
+    "meaning": "One estimated local mouth/depression from visible fastener region, no through/blind/back socket claimed"
+  },
+  "notch": {
+    "theta_center_degrees": -90,
+    "theta_half_span_degrees": 8,
+    "depth_m": 0.0018,
+    "radial_transition_start_m": 0.025,
+    "radial_transition_end_m": 0.03,
+    "local_edge_refinement_passes": 2,
+    "local_refinement_margin_degrees": 4,
+    "Jacobian_finite_step_m": 5e-08,
+    "meaning": "Authored C1 U-shaped radial trim of the opposite boundary, not a measured mold/assembly fit. Cap kept on original analytic sphere locally; finite rim transitions to unchanged rear interface plane.",
+    "working_envelope_not_measured_uncertainty": {
+      "depth_m": [
+        0.001,
+        0.0026
+      ],
+      "angular_half_span_degrees": [
+        6,
+        11
+      ]
+    }
+  }
+}

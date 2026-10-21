@@ -1,0 +1,151 @@
+{
+  "schema": "wewa.local-ao-preparation-spec.v1",
+  "state": "TOOL_AND_SPEC_ONLY_NOT_EXECUTED_ROOT_REVIEW_PENDING",
+  "purpose": "QA derivative of existing source review; not a new motorcycle part or production material.",
+  "material_spec": "creative/research/upper-engine-material-lighting-v1.json",
+  "material_spec_sha256": "822f90b033e2239cc81b0a66df800cc2a4d89d3234eb293ab7e46e64aceb6c3a",
+  "collection": "MOTORCYCLE18_LINKED_REVIEW_COPIES",
+  "physical_mesh_copies": 12,
+  "linked_libraries_expected": [
+    {
+      "asset": "engine-cylinder",
+      "source": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+      "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6",
+      "source_collection": "WEWA_ENGINE_CYLINDER",
+      "objects": 2,
+      "copied_hierarchy_max_world_matrix_delta": 5.960464477539063e-08,
+      "placement": {},
+      "art_accepted": false
+    },
+    {
+      "asset": "engine-head-v3",
+      "source": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+      "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+      "source_collection": "WEWA_ENGINE_HEAD",
+      "objects": 2,
+      "copied_hierarchy_max_world_matrix_delta": 2.9802322387695312e-08,
+      "placement": {},
+      "art_accepted": false
+    },
+    {
+      "asset": "engine-tappet-cap",
+      "source": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+      "sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9",
+      "source_collection": "WEWA_ENGINE_TAPPET_CAP",
+      "objects": 3,
+      "copied_hierarchy_max_world_matrix_delta": 6.357302595461078e-08,
+      "placement": {},
+      "art_accepted": false
+    },
+    {
+      "asset": "engine-ohc-cover",
+      "source": "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+      "sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45",
+      "source_collection": "WEWA_ENGINE_OHC_COVER_BODY",
+      "objects": 2,
+      "copied_hierarchy_max_world_matrix_delta": 1.1920928955078125e-07,
+      "placement": {},
+      "art_accepted": false
+    },
+    {
+      "asset": "engine-ohc-stub",
+      "source": "assets-src/moto-components/engine-ohc-stub/engine-ohc-stub-v1.blend",
+      "sha256": "285eca8f5345efbfe31da9d2cc95464edcd9070a2e2e902e1e74990b2fb110c0",
+      "source_collection": "WEWA_ENGINE_OHC_STUB",
+      "objects": 2,
+      "copied_hierarchy_max_world_matrix_delta": 1.1920928955078125e-07,
+      "placement": {},
+      "art_accepted": false
+    },
+    {
+      "asset": "engine-spark-plug-v2",
+      "source": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+      "sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5",
+      "source_collection": "WEWA_ENGINE_SPARK_PLUG_EXTERIOR",
+      "objects": 5,
+      "copied_hierarchy_max_world_matrix_delta": 2.9802322387695312e-08,
+      "placement": {},
+      "art_accepted": false
+    },
+    {
+      "asset": "engine-spark-cap-v2",
+      "source": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend",
+      "sha256": "bceb87f8a34bcfd2354bccef2cf236ed6a0103a2725b4a76e3e3e3721da883e3",
+      "source_collection": "WEWA_ENGINE_SPARK_CAP",
+      "objects": 3,
+      "copied_hierarchy_max_world_matrix_delta": 1.2665987014770508e-07,
+      "placement": {},
+      "art_accepted": false
+    }
+  ],
+  "output_root": "/workspace/wewa-assets/work-in-progress/upper-engine-local-ao-diagnostic-v1/run-001",
+  "AO": {
+    "resolution": 1024,
+    "margin_px": 8,
+    "distance_m": 0.015,
+    "only_local": true,
+    "inside": false,
+    "cycles_samples": 16,
+    "node_samples": 16,
+    "seed": 331601,
+    "threads": 1,
+    "device": "CPU",
+    "unwrap_angle_deg": 66
+  },
+  "tolerances": {
+    "normal_unit_error": 0.001,
+    "uv_area_epsilon": 1e-18
+  },
+  "API_references": [
+    {
+      "path": "/workspace/wewa-assets/references/upper-engine-occlusion-options-v1/Blender43-api-uv.html",
+      "sha256": "3f12d7e1d934e52504eca77b3f55407afe6d6e3bd39eb2e300f0de31e499b14d",
+      "read_only_API_reference": true
+    },
+    {
+      "path": "/workspace/wewa-assets/references/upper-engine-occlusion-options-v1/Blender43-api-bake.html",
+      "sha256": "ecbe90b39099fcd08c9313da02ca81feb267d79bcb9ed906a95594500f690aba",
+      "read_only_API_reference": true
+    },
+    {
+      "path": "/workspace/wewa-tools/blender-4.3.2-linux-x64/4.3/scripts/addons_core/io_scene_gltf2/__init__.py",
+      "sha256": "ef5e163399d294be0960dfbdcbaef80ac97b855bf098b0a62a5b90cfa7cf1c50",
+      "read_only_API_reference": true
+    },
+    {
+      "path": "/workspace/wewa-tools/blender-4.3.2-linux-x64/4.3/scripts/addons_core/io_scene_gltf2/blender/com/material_helpers.py",
+      "sha256": "ad69d5b2f5f2af364d09a1b1428e23018d4c60381fcd7642dbd9b4f702762833",
+      "read_only_API_reference": true
+    },
+    {
+      "path": "/workspace/wewa-tools/blender-4.3.2-linux-x64/4.3/scripts/addons_core/io_scene_gltf2/blender/exp/material/texture_info.py",
+      "sha256": "25c0d8b54424e7dcef38b56fe869c4e6a90699a228617b7b665a6426b089c453",
+      "read_only_API_reference": true
+    },
+    {
+      "path": "/workspace/wewa-tools/blender-4.3.2-linux-x64/4.3/scripts/addons_core/io_scene_gltf2/blender/exp/material/materials.py",
+      "sha256": "02f48374fe3b0ee8c4c845c553f33558c1eea9927955709baaa36dfdd4db6aa4",
+      "read_only_API_reference": true
+    },
+    {
+      "path": "/workspace/wewa-tools/blender-4.3.2-linux-x64/4.3/scripts/addons_core/io_scene_gltf2/blender/exp/primitive_extract.py",
+      "sha256": "af539328c81432c23213e5c1d300b0b1646b528c3b419a5b18bfaa21597ad9ae",
+      "read_only_API_reference": true
+    }
+  ],
+  "limits": [
+    "Every numeric AO/UV/sampling choice is exploratory and unqualified.",
+    "No source copy, UV layout, bake, export or rendered screenshot has been created by this delivery.",
+    "UV splits can duplicate/reorder vertices; compare oriented triangle corners and attributes, not global vertex array identity.",
+    "Positive UV overlap above explicit epsilon is a hard failure; UV pixel density/gutters at all mip levels remain a visual gate.",
+    "Bake/export failures preserve FAILED.json and require a fresh output_root; never loosen checks to obtain an image.",
+    "Runtime shader, GLTF validator, performance and artistic gates remain separate; no iPhone or photometric claim."
+  ],
+  "export_conservation": {
+    "POSITION": "Exact float32 bits per oriented triangle/corner; no quantization or spatial grouping.",
+    "NORMAL_UV0_T": "Exact protected float32 bits; no change tolerance.",
+    "coincident_triangles": "Compare sorted complete oriented position/material/protected-corner records; never match by proximity.",
+    "failure_policy": "Keep FAILED.json and exact record/bit deltas; investigate cause before any new protocol decision.",
+    "normal_unit_limit": "Technical unit-length check only; does not permit any NORMAL change."
+  }
+}

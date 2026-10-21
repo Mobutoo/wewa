@@ -1,0 +1,11 @@
+# Second visible engine-guard terminal — candidate v1
+
+MOTO-ENGINE-PROTECTION-TERMINAL-B-001. Original finite formed-sheet reconstruction from the image-right second terminal of related PF231201, independently developed rather than a mirrored first mesh. Source collection `WEWA_ENGINE_PROTECTION_TERMINAL_B_ISOLATED`; origin at the working upper opening centre. All dimensions and the round hole section are estimates.
+
+Visible double offset and upper opening are supported by [Crosland PF231201](https://www.croslandrepuestos.pe/protector-de-piernas-pf231201/p), especially [actual terminal photograph](https://croslandpe.vteximg.com.br/arquivos/ids/174418/PF231201_2.jpg?v=639058581997070000) and [whole guard](https://croslandpe.vteximg.com.br/arquivos/ids/174419/PF231201_3.jpg?v=639058581999770000). Related BM125/150/X/UG seller attribution does not certify current RDC identity. Private photographs are documentary inputs only. No photograph pixels or third-party mesh are embedded.
+
+The lower face is an explicit finite candidate envelope: its perforation status is unknown, not copied from terminalA and not certified absent. Tube, junction welds, hook, spacer, fasteners and installed pose remain separate. No reception of OEM fidelity, fit, strength, mobile budget or art.
+
+`parameters.json` and the documentary working study precede the generated mesh. `build.py` constructs the sheet outline, the one observed working opening, finite edges and continuous circular bend sections. `check_export.mjs` reads actual GLB buffers, closure, volume, areas, UV/tangent frames and opening probes; `inspect_interfaces.py` reads the actual native source and portability. Short gray/reflection images are geometry witnesses, not final materials. Material scripts are prepared only until their preceding views have been actually read.
+
+Current source now carries the original estimated black coating, two512² packed NonColor images with relative companion paths. The neutral source is retained in g3-master-v1. G3→PBR actual POSITION/NORMAL/UV/TANGENT/indices/world matrices were compared exactly; native source digest is protected separately. No source-buffer repair. All three gray, three reflective and three material-preview native views were actually read before freeze. Reflection overrides remain diagnostic and separate from proposed black paint.
