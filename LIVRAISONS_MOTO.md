@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **104 composants candidats enregistrés**, après
+Le registre courant comporte **105 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P05** : [tail-lamp-upper-bracket — sources, rendus et contrôles](creative/reviews/tail-lamp-upper-bracket-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
 [Sauvegarde intermédiaire de l’avant : sources grises et recherches, non livrées comme pièces terminées](creative/reviews/exterior-continuation-checkpoint-01.md).
 
 - **P02** : [rear-rack-deck — sources, rendus et contrôles](creative/reviews/rear-rack-deck-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
