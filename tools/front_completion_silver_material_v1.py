@@ -1,0 +1,8 @@
+import bpy,json,hashlib,sys
+from pathlib import Path
+R=Path('/workspace/wewa');old,key=sys.argv[sys.argv.index('--')+1:][:2];H=R/'assets-src/moto-components'/key;O=R/'creative/reviews'/key;H.mkdir(parents=True,exist_ok=True);O.mkdir(parents=True,exist_ok=True);source=next((R/'assets-src/moto-components'/old).glob('*.blend'));bpy.ops.wm.open_mainfile(filepath=str(source));bpy.context.preferences.filepaths.save_version=0
+rough=.32 if 'axle'in old else .24;mat=bpy.data.materials.new('Original estimated clean silver metal');mat.use_nodes=True;p=mat.node_tree.nodes['Principled BSDF'];p.inputs['Base Color'].default_value=(.62,.64,.66,1);p.inputs['Roughness'].default_value=rough;p.inputs['Metallic'].default_value=1
+bpy.ops.object.select_all(action='DESELECT')
+for ob in bpy.data.objects:
+ if ob.type=='MESH':ob.data.materials.clear();ob.data.materials.append(mat);ob.select_set(True);bpy.context.view_layer.objects.active=ob
+bpy.ops.wm.save_as_mainfile(filepath=str(H/'material.blend'),compress=True);bpy.ops.export_scene.gltf(filepath=str(H/'material.glb'),export_format='GLB',use_selection=True,export_tangents=False,export_animations=False);(O/'material-plan.json').write_text(json.dumps({'gray_source':str(source.relative_to(R)),'gray_source_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'gray_review':'Whole gray and reflection actually read; any macro/fit limits remain explicit','appearance':{'base_color_linear':[.62,.64,.66,1],'metallic':1,'roughness':rough,'grain':'none invented','textures':'none'},'measured':False,'not_claimed':['alloy identification','plating chemistry','OEM reflectance','surface metrology'],'art_accepted':False},indent=2))

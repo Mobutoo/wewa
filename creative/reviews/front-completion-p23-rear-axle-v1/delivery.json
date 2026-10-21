@@ -1,0 +1,34 @@
+{
+  "component_id": "MOTO-REAR-AXLE-PF131208-EXTERIOR-STUDY-001",
+  "package": "P23",
+  "revision": "front-completion-p23-rear-axle-v1",
+  "milestone": "Retained WIP gray source; head-cylinder shading rework before material",
+  "source": "assets-src/moto-components/front-completion-p23-rear-axle-v1/rear-axle-gray.blend",
+  "source_sha256": "8044d4c7dbbab226a6abde4b50870cda7a9e8d770a3cc900d55528e6ffa11f8e",
+  "decision": "Head-gray macro reveals weighted normal shading band beside observed mouth. Geometry, shaft/helix and actual buffers pass; v2 source normals correction needed.",
+  "child_inventory": [
+    {
+      "child": "Round head and observed side mouth",
+      "state": "Real geometry with single open inner review-cut loop; exterior cylinder normals rework"
+    },
+    {
+      "child": "Long shaft, continuous steps and external helical end",
+      "state": "Bounded geometry; thread/reflection macros read"
+    },
+    {
+      "child": "Complete hidden head bore/opposite exit, current fitted stack and certified thread",
+      "state": "Unverified and excluded"
+    }
+  ],
+  "images_actually_read": [
+    "detail-preview/head-gray.png",
+    "detail-preview/thread-gray.png",
+    "detail-preview/thread-reflection.png"
+  ],
+  "actual_validator": "0 errors/0 warnings; technical pass does not override visual normal rework",
+  "package_complete": false,
+  "material_finished": false,
+  "admit_to_catalog": false,
+  "mounted_fit": false,
+  "art_accepted": false
+}

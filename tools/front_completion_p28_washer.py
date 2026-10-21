@@ -1,0 +1,16 @@
+"""Conditional DS181010 plain-lower-washer envelope; not resolved OEM section."""
+import bpy,bmesh,math,json
+from pathlib import Path
+R=Path('/workspace/wewa');key='front-completion-p28-lower-washer-v1';H=R/'assets-src/moto-components'/key;O=R/'creative/reviews'/key;H.mkdir(parents=True,exist_ok=True);O.mkdir(parents=True,exist_ok=True);bpy.ops.wm.read_factory_settings(use_empty=True);bpy.context.preferences.filepaths.save_version=0
+P={'related_part':'DS181010 Washer Plain Lower, related D15 exploded stack item22','status':'conditional flat-section envelope only, not verified target profile','evidence':'Annular exploded symbol and Plain Lower designation; neither calibrated section nor reverse is known','outer_radius_m':.016,'outer_radius_bounds_m':[.013,.019],'bore_radius_m':.006,'bore_radius_bounds_m':[.005,.0075],'thickness_m':.0024,'thickness_bounds_m':[.0012,.0035],'edge_radius_m':.00018,'edge_radius_bounds_m':[.00008,.00035],'all_dimensions_estimated':True,'flat_section_hypothesis':True,'alternatives_unresolved':['dished','stepped','other bearing-face shape'],'upper_washer_copied':False,'standard_washer_size_adopted':False,'hidden_retention_or_damper_geometry':'none fabricated','mounted_contact':False}
+(H/'parameters.json').write_text(json.dumps(P,indent=2));ro=.016;ri=.006;h=.0024;e=.00018;profile=[]
+for cr,cz,start in [(ro-e,e,-math.pi/2),(ro-e,h-e,0),(ri+e,h-e,math.pi/2),(ri+e,e,math.pi)]:
+ for j in range(17):a=start+j/16*math.pi/2;profile.append((cr+e*math.cos(a),cz+e*math.sin(a)))
+n=320;v=[(r*math.cos(2*math.pi*j/n),r*math.sin(2*math.pi*j/n),z)for r,z in profile for j in range(n)];f=[]
+for i in range(len(profile)):
+ for j in range(n):a=i*n+j;b=i*n+(j+1)%n;c=((i+1)%len(profile))*n+(j+1)%n;d=((i+1)%len(profile))*n+j;f.append((a,b,c,d))
+m=bpy.data.meshes.new('Independent continuous lower washer section hypothesis');m.from_pydata(v,[],f);m.update();bm=bmesh.new();bm.from_mesh(m);bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces));bm.to_mesh(m);bm.free();m.update();ob=bpy.data.objects.new('DS181010_CONDITIONAL_FLAT_SECTION_ENVELOPE',m);bpy.context.collection.objects.link(ob)
+for p in m.polygons:p.use_smooth=True
+m.set_sharp_from_angle(angle=.7);mat=bpy.data.materials.new('Gray hypothesis only');mat.use_nodes=True;mat.node_tree.nodes['Principled BSDF'].inputs['Base Color'].default_value=(.25,.25,.25,1);mat.node_tree.nodes['Principled BSDF'].inputs['Roughness'].default_value=.35;m.materials.append(mat)
+bm=bmesh.new();bm.from_mesh(m);m.calc_loop_triangles();report={'triangles':len(m.loop_triangles),'nonmanifold_edges':sum(not e.is_manifold for e in bm.edges),'volume_m3':bm.calc_volume(signed=True),'minimum_triangle_area_m2':min(t.area for t in m.loop_triangles),'conditional_section_hypothesis':True,'all_dimensions_estimated':True};bm.free();assert report['nonmanifold_edges']==0 and report['volume_m3']>0 and report['minimum_triangle_area_m2']>1e-18
+ob.select_set(True);bpy.context.view_layer.objects.active=ob;bpy.context.scene.unit_settings.system='METRIC';bpy.ops.wm.save_as_mainfile(filepath=str(H/'washer-gray.blend'),compress=True);bpy.ops.export_scene.gltf(filepath=str(H/'washer-gray.glb'),export_format='GLB',use_selection=True,export_tangents=False,export_animations=False);(O/'geometry-check.json').write_text(json.dumps(report,indent=2))
