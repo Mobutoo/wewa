@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-21T11:04:24.369707+00:00",
+  "status": "Rod G3 begins after collar candidate source freeze3b8296f0; collar finals immutable in separate worker.",
+  "reference": {
+    "private_path": "/workspace/wewa-assets/references/chassis-running-18/shock-PF122033.jpg",
+    "sha256": "f0d9264f47a35d89ddd1ef4139cd4858c5e55c1baf86937fbab3cbd97d45b5f8",
+    "actually_reopened_C": true,
+    "related_code": "PF122033, exact currentRDC not confirmed",
+    "visible_region_approx_px": [
+      478,
+      535,
+      1015,
+      578
+    ],
+    "occlusions": "Repeated spring-wire occlusions; no isolated side/profile or end/section view."
+  },
+  "observations": [
+    "A slender reflective axial shaft is visible through several spring gaps.",
+    "Bright longitudinal bands are reflections, not grooves.",
+    "The two ends disappear under other components; hidden pistons/seals/threads are not documented."
+  ],
+  "parameters": {
+    "schema": 1,
+    "revision": "rear-sns-rod-study-v1",
+    "units": "m, authored working estimates, not OEM dimensions",
+    "radius_m": 0.0055,
+    "z0_m": 0.002,
+    "z1_m": 0.187,
+    "angular_segments": 256,
+    "axial_intervals": 4,
+    "working_ranges_not_confidence_intervals": {
+      "radius_m": [
+        0.004,
+        0.007
+      ],
+      "visible_segment_length_m": [
+        0.16,
+        0.21
+      ]
+    },
+    "scope": "One external cylindrical shaft surface with two hidden-interface cut rings. No piston, seal, hidden thread or second shaft.",
+    "profile_sections": [
+      {
+        "z0_m": 0.002,
+        "z1_m": 0.187,
+        "r0_m": 0.0055,
+        "r1_m": 0.0055,
+        "samples": 4
+      }
+    ]
+  },
+  "planned_construction": "Original cylindrical skin, analytic radial normals, two intentional covered-interface cuts. No hidden inside/end cap.",
+  "source_frame": "UnplacedSNS+Z, coil0..190mm frame estimate; no vehicle installation transform",
+  "required_before_material": [
+    "Actual GLB area/UV/normals/strict check",
+    "Whole gray plus reflective macro actually opened",
+    "Candidate radial clearance against existing exported coils only, not fit or compression"
+  ],
+  "material_after_gray": "Original reflective metal proposal under neutral HDR and studio; no physical chrome/roughness certification",
+  "art_accepted": false
+}

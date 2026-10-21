@@ -1,0 +1,7 @@
+# SNS collar — complete rendering envelope, estimated back
+
+The three observed PF-E1/E2/E3 front fragments retain a separate immutable finite-sector study2. This new envelope closes the undocumented208degree back with a smooth explicitly estimated continuation, authorized for orbit review. It adds no new recess, hole or mechanism. Closed geometry does not establish the OEM rear edge or total notch count.
+
+Three actual Cycles12/OIDN images were opened: front, estimated back, and a front lip reflection macro. No new critical shape/normal defect was established. Actual GLB162720 triangles have zero geometric/UV degeneracies and zero strict errors/warnings, minimum face-corner normal dot0.98923. Source edges have valence2 and positive volume. Authored coaxial radial separation to the actual barrel2 GLB is at least0.599847mm, not a fit measurement.
+
+The editable source FACE attribute documentary_region identifies1/2/3 front fragments and0 estimated back. This attribute is source provenance, not a claim that a custom face attribute is carried into glTF. Wall1.2mm, radii17.1–21.5mm, angles and relief are authored. Exact upper tooling, section/seat/function, dimensions and currentRDC identity remain unknown. No photographic texture, final material/96 or artistic reception is asserted. The console name retains an old one-arc label; the actual parameters/report/source regions explicitly contain three fragments plus back.

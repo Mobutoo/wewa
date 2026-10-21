@@ -1,0 +1,1 @@
+Revue isolée des deux occurrences nominales LJA00011. Aucune réception artistique, matière, jointure montée ou qualification iPhone. Les étapes réelles sont ajoutées après exécution, sans assimiler documentation et rendu.

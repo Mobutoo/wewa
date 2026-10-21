@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "read_at": "2026-10-21T10:36:11.944408+00:00",
+  "native_photo": {
+    "private_path": "/workspace/wewa-assets/references/chassis-running-18/shock-PF122033.jpg",
+    "sha256": "f0d9264f47a35d89ddd1ef4139cd4858c5e55c1baf86937fbab3cbd97d45b5f8",
+    "size_px": [
+      1210,
+      1210
+    ]
+  },
+  "actual_analysis_crops": [
+    {
+      "path": "/workspace/wewa-assets/work-in-progress/rear-sns-damper-body-detail-reading/PF122033-body-native-crop-3x.png",
+      "sha256": "322c635a18c35a1a2db9e3108e0d23624ee397c498d4ea35f8325f7045b4a14b",
+      "native_crop_box": [
+        85,
+        470,
+        438,
+        645
+      ],
+      "display_enlargement": 3,
+      "interpolation": "nearest",
+      "actually_opened": true
+    },
+    {
+      "path": "/workspace/wewa-assets/work-in-progress/rear-sns-damper-body-detail-reading/PF122033-flare-native-crop-4x.png",
+      "sha256": "5397487c7053cf58dd6b75f19cb5e3b84ef6847deabf58992008f8545e691861",
+      "native_crop_box": [
+        340,
+        470,
+        458,
+        645
+      ],
+      "display_enlargement": 4,
+      "interpolation": "nearest",
+      "actually_opened": true
+    }
+  ],
+  "findings": [
+    {
+      "feature": "Expanded top shoulder in source1",
+      "status": "rejected_attribution",
+      "finding": "Photo shows a distinct external collar/cup overlapping the barrel, with clearly scalloped lower edge. A smooth integral body-to-flare surface is not established.",
+      "consequence": "Remove flare from body2. Model the observed scalloped external piece as a separate next unit, exact functional role/count/section not yet certified."
+    },
+    {
+      "feature": "Long bright horizontal bands on barrel",
+      "status": "photo_inferred",
+      "finding": "Continuous bright reflection bands on painted cylinder, not a resolved split seam or added longitudinal rib.",
+      "consequence": "Do not turn highlights into body geometry or normal map."
+    },
+    {
+      "feature": "Letter-like regions on barrel",
+      "status": "photo_inferred",
+      "finding": "Visible pressed/raised letterforms; complete reading and relief sign not reliably established here.",
+      "consequence": "Leave explicitly not reproduced, no fake OEM text. Original surface inscription may be a separate art decision."
+    },
+    {
+      "feature": "Lower irregular circumferential join next to eye",
+      "status": "photo_inferred",
+      "finding": "Visible local irregular bead/attachment region near lower eye connection, not a seam running along barrel. Its process/hidden contour unconfirmed.",
+      "consequence": "Treat in lower-eye joint unit, not by adding random seam along current skin."
+    }
+  ],
+  "public_photo_pixels_added": false,
+  "art_accepted": false
+}

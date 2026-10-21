@@ -1,0 +1,118 @@
+{
+  "schema": "wewa.rear-mudguard15-local-gray-reading.v1",
+  "created_utc": "2026-10-21T10:58:51.053969+00:00",
+  "scope": "Read-only local visual comparison, four current original gray PNGs versus two private relatedJV181408 photos. No calibration/global proportions, code/model/rerender.",
+  "revision": {
+    "source": "assets-src/moto-components/rear-mudguard-shell/rear-mudguard-shell-features-v1.blend",
+    "source_sha256": "07d9f9098658b9ad2b8e7949acfa365dcdf8827f890be2640e04ab8fcacb8b92",
+    "export": "assets-src/moto-components/rear-mudguard-shell/rear-mudguard-shell-features-v1-inspection.glb",
+    "export_sha256": "01c893d5cda9e3116cd363e7c22342e921dd706b5ee75b71ec5c2ebb1931d3b0",
+    "not_frozen_by_this_review": true
+  },
+  "actual_render_PNGs_opened": [
+    {
+      "path": "creative/reviews/rear-mudguard-shell-v1/features-gray-whole-quarter.png",
+      "sha256": "0b778ad6b70a948d36a1ac1a2e6450aedcdaeaf8c5884d287f127c6d222d4bce",
+      "checkpoint": "creative/reviews/rear-mudguard-shell-v1/features-gray-whole-quarter.json",
+      "checkpoint_sha256": "5257634087d1223ec8a95fe97cc0a037b064b06ca4a954453fbc4e43e98502d8",
+      "actually_opened": true
+    },
+    {
+      "path": "creative/reviews/rear-mudguard-shell-v1/features-gray-profile.png",
+      "sha256": "1ea213681780738aa2fbc4ab66706100136ab0a86085abaa89074d38ef46b2b4",
+      "checkpoint": "creative/reviews/rear-mudguard-shell-v1/features-gray-profile.json",
+      "checkpoint_sha256": "d4df3704a7b0d135acb91914279b107b048e7fb2223ab07230935339be4aaf8d",
+      "actually_opened": true
+    },
+    {
+      "path": "creative/reviews/rear-mudguard-shell-v1/features-gray-major-step-detail.png",
+      "sha256": "e53c96ab871b4477fe42a6c744227f70a90c43112915cbd21b4691f1a4dc762b",
+      "checkpoint": "creative/reviews/rear-mudguard-shell-v1/features-gray-major-step-detail.json",
+      "checkpoint_sha256": "b8c0b487a6004caf4208dc176d85d3e795b58cf7f0d5f362bbf476f9a2ddd10c",
+      "actually_opened": true
+    },
+    {
+      "path": "creative/reviews/rear-mudguard-shell-v1/features-gray-front-tip-detail.png",
+      "sha256": "339f0bf9a2cfa7112146b993e2077cbeb0d84b400c63c5f5a56a7284991137f0",
+      "checkpoint": "creative/reviews/rear-mudguard-shell-v1/features-gray-front-tip-detail.json",
+      "checkpoint_sha256": "c81273ada9ae368568944eefce685ea2b4aa3d30c7cc420c1af78a177387d0da",
+      "actually_opened": true
+    }
+  ],
+  "reference_photos_opened": [
+    {
+      "private_path": "/workspace/wewa-assets/references/rear-mudguard-15-v1/JV181408-crosland-177596.jpg",
+      "sha256": "bb9e634dff5b52e7ba1c65c25201b69c9d054cba04aea51f64a8bc4582b36078",
+      "actually_opened_native": true
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/rear-mudguard-15-v1/JV181408-matriz.jpg",
+      "sha256": "620183ae427eee445376ac1d827a963a5053c3e36313dbd2ebacd2f50e550176",
+      "actually_opened_native": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "observed-fields-present",
+      "observation": "Whole/profile and step macro expose arched canopy, major transverse step, tray/formed extension, separate long outer band and shoulder reliefs, upper mouth pair and one terminal opening. Their presence is readable in the shown gray revision.",
+      "limit": "Presence/readability is not exactRDC topology, full underside, fit, dimensions or material acceptance."
+    },
+    {
+      "id": "side-mouth-height",
+      "status": "qualitative_difference_unresolved_for_mandatory_rework",
+      "observation": "In nativeMatriz image the large side opening appears high in the descending end-field near upper return. Current gray profile shows the side mouth lower in the visible side field, below its long raised band.",
+      "native_image_locators_only": {
+        "Matriz_large_side_opening_approx_px": [
+          538,
+          179
+        ],
+        "Matriz_uncertainty_px": 7,
+        "Crosland_side_opening_approx_px": [
+          124,
+          103
+        ],
+        "Crosland_uncertainty_px": 7,
+        "current_gray_profile_opening_approx_px": [
+          698,
+          360
+        ],
+        "gray_uncertainty_px": 3
+      },
+      "decision": "Do not prescribe a metric shift, mirrored move or global deformation. Location remains estimated; maker can retain explicit reserve, not treat this comparison as a calibrated correction.",
+      "why_not_unique": "Two photographs are opposite obliques from separate sellers, not calibrated same-specimen/mould views. Visible top-return/arch references and surface/camera mapping differ. Crosland does not supply an independent metric/end-field correspondence certifying the same height."
+    },
+    {
+      "id": "no_new_certain_detail_omission",
+      "status": "no_additional_rework_requested",
+      "observation": "Within this bounded comparison no additional distinct lower band/rib was identified confidently enough as missing to justify adding one.",
+      "limit": "Not a claim all surface details or hidden faces are complete."
+    }
+  ],
+  "known_items_not_reopened": [
+    "Former nose-return/one-hole issue already corrected byA/root",
+    "Old too-high tip camera already classified diagnostic",
+    "Known outer-ring/transition reflection sampling already being corrected/checked byA",
+    "Any previous gray diagnostic source3667 instead of current07d9"
+  ],
+  "not_done": [
+    "No pixel-to-mm scaling or ratios treated as measurements",
+    "No camera fitting or global length/width/arch deformation suggestion",
+    "No assumptions about hidden underside/ribs/extra holes",
+    "No source edit or extra rendered camera",
+    "No acceptance of material/fit/whole shell"
+  ],
+  "protected_old_reports": [
+    {
+      "path": "creative/research/rear-mudguard-15-v1/report.json",
+      "sha256": "cc96199279fc0a5f730e10f71ca76120c83d9906feef4e6b703573b9f5243278"
+    },
+    {
+      "path": "creative/research/rear-mudguard-15-v1/README.md",
+      "sha256": "c1856ef8de87549da54cccbaffc4dff29f9128054d709dc0a97ce6996c21404b"
+    }
+  ],
+  "protected_old_reports_unchanged": true,
+  "source_export_unchanged": true,
+  "private_pixels_added": false,
+  "art_accepted": false
+}

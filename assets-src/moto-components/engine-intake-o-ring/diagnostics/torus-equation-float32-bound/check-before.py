@@ -1,0 +1,13 @@
+"""Actual retained triangles/topology/analytic section and review-only pair separation."""
+from pathlib import Path
+import bpy,json,hashlib,sys,math
+from mathutils import Vector
+from mathutils.bvhtree import BVHTree
+H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/engine-intake-o-ring-v1';final='--final'in sys.argv;source=H/('engine-intake-o-ring-v1.blend'if final else'engine-intake-o-ring-v1-geometry.blend');b=json.loads((H/('build-report.json'if final else'geometry-report.json')).read_text());sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();assert sha(source)==b['source_sha256'];bpy.ops.wm.open_mainfile(filepath=str(source));objects=[bpy.data.objects[q['name']]for q in b['geometry']];trees=[];rows=[]
+for o in objects:
+ m=o.data;m.calc_loop_triangles();faces=[tuple(t.vertices)for t in m.loop_triangles];sets=[set(f)for f in faces];vs=[o.matrix_world@v.co for v in m.vertices];tree=BVHTree.FromPolygons(vs,faces,all_triangles=True);other=BVHTree.FromPolygons(vs,faces,all_triangles=True);pairs=[(a,c)for a,c in tree.overlap(other)if a<c and not sets[a].intersection(sets[c])];assert not pairs
+ centre=o.matrix_world.translation;assert tree.ray_cast(centre+Vector((0,0,.01)),Vector((0,0,-1)),.02)[0]is None
+ # Analytic torus equation evaluated on actual retained local vertices, including inner+outer extrema.
+ max_error=max(abs((math.hypot(v.co.x,v.co.y)-.01530)**2+v.co.z**2-.00095**2)for v in m.vertices);assert max_error<1e-12
+ rows.append({'object':o.name,'actual_triangle_count':len(faces),'nonadjacent_BVH_crossings':len(pairs),'centre_axial_ray_clear':True,'max_analytic_torus_equation_error_m2':max_error,'world_matrix':[list(q)for q in o.matrix_world]});trees.append(tree)
+assert not trees[0].overlap(trees[1]);q={'source_sha256':sha(source),'export_sha256':b['export_sha256'],'rings':rows,'review_pair_surface_crossings':0,'actual_pair_nearest_nominal_extent_gap_m':.045-.0325,'installation_fit_tested':False,'automatic_attachment_allowed':False,'scope':'Retained geometry self-crossings excluding adjacent faces; native BVH cannot certify coincident coplanar contact. Centre rays and equation validate nominal torus only, not compression/groove fit.','art_accepted':False};(O/('source-geometry-check.json'if final else'geometry-check.json')).write_text(json.dumps(q,indent=2)+'\n');assert sha(source)==b['source_sha256'];print('ACTUAL_O_RING_GEOMETRY',json.dumps(q))

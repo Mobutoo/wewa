@@ -1,0 +1,3 @@
+# Diagnostic antérieur au retour avant
+
+Recette originale du stade3667fed7/16cce2e6, conservée avant correction locale du nez et de l’échantillonnage de l’anneau/transition. Pour reconstruire, restaurer ces fichiers à leur chemin canonique dans un checkout isolé puis exécuter la chaîne prepare/triangulate/generate/build. Les binaires réellement rendus, domaines/NPZ et toutes preuves sont archivés en privé sous /workspace/wewa-assets/work-in-progress/rear-mudguard-shell/features-before-tip-return-3667fed7. Aucune réception de ce stade ; seules quatre vues grises et deux reflets sauvegardés ont été lus. Aucun matériau exécuté sur cet état.

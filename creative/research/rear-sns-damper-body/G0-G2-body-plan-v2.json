@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-21T10:36:11.944408+00:00",
+  "component": "MOTO-REAR-SNS-DAMPER-BODY-001",
+  "revision": "rear-sns-damper-body-study-v2",
+  "scope": "ONE visible cylindrical barrel skin only; separate overlapping scalloped collar, eye joint and hydraulics excluded.",
+  "reading": {
+    "path": "creative/research/rear-sns-damper-body/native-body-boundary-reading-v2.json",
+    "sha256": "0906dc5193634822e79aaec36296b4f662e9e065244793e3f916c4c0656b5ef8"
+  },
+  "parameters": {
+    "schema": 1,
+    "revision": "rear-sns-damper-body-study-v2",
+    "units": "m, authored estimated exterior only",
+    "axis": "Unplaced SNS local+Z toward spring/upper eye. Body below tentative lower spring datumZ0; no vehicle mounting transform.",
+    "profile_sections": [
+      {
+        "name": "visible cylindrical barrel only",
+        "z0_m": -0.092,
+        "z1_m": -0.006,
+        "r0_m": 0.0153,
+        "r1_m": 0.0153,
+        "samples": 4
+      }
+    ],
+    "angular_segments": 256,
+    "open_interfaces": "Two intentional covered-interface cut rings, no body flare, lower-eye weld, hydraulic bore, wall or back cap inferred",
+    "author_envelope": {
+      "barrel_diameter_m": [
+        0.027,
+        0.037
+      ],
+      "visible_body_length_m": [
+        0.075,
+        0.105
+      ],
+      "meaning": "Working hypothesis envelope only, not measured uncertainty or OEM tolerances"
+    },
+    "material_phase": "Neutral gray before original black paint; no photos copied"
+  },
+  "revision_reason": "Native crop distinguishes separate scalloped collar; original integrated smooth flare rejected before96 or final material freeze.",
+  "shape_hypothesis": "Constant cylinder is the simplest observed barrel candidate. Radius/length and endpoint planes remain authored estimates; no dimension/camera calibration. Do not infer taper from perspective.",
+  "still_visible_not_reproduced_on_barrel": [
+    "Untranscribed letter-like stamped/raised regions, relief sign unknown"
+  ],
+  "not_established_as_barrel_feature": [
+    "A longitudinal split seam or rib from bright reflection bands"
+  ],
+  "separate_next_observable_pieces": [
+    "Overlapping scalloped collar/cup",
+    "Lower-eye attachment bead/region",
+    "Rod and upper cup/eye"
+  ],
+  "hidden_unknowns": [
+    "Actual endpoint connections under collar/eye",
+    "Hydraulics/wall/seals",
+    "Dimensions/tooling/code",
+    "Physical fit and compression"
+  ],
+  "comparison": [
+    "Whole cylinder gray",
+    "Upper covered-interface macro gray",
+    "Same macro reflection"
+  ],
+  "art_accepted": false
+}

@@ -1,0 +1,11 @@
+"""Bind four actual96 views after actual author reads; separate from reception."""
+from pathlib import Path
+import json,hashlib
+H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/engine-intake-o-ring-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();assert not(O/'review-manifest.json').exists();pre=H/'preflight-manifest.json';m=json.loads(pre.read_text());source=H/'engine-intake-o-ring-v1.blend';glb=H/'engine-intake-o-ring-inspection.glb';r=json.loads((O/'render-report.json').read_text());assert sha(source)==m['source_sha256']==r['source_sha256']and sha(glb)==m['export_sha256']==r['export_sha256'];assert r['samples']==96 and{v['name']for v in r['views']}=={'isolated-pair','one-ring-normal','circular-section-detail','raking-surface-control'};files=[pre,O/'render-report.json']
+for q in m['files']:
+ p=R/q['path'];assert sha(p)==q['sha256'];files.append(p)
+for q in r['views']:
+ cp=O/(q['name']+'.checkpoint.json');j=json.loads(cp.read_text());assert j['source_sha256']==sha(source)and j['configuration']['samples']==96;assert j['configuration']['render_script_sha256']==sha(H/'render.py')and j['configuration']['protocol_sha256']==sha(H/'render_checkpoint.py');assert j['configuration_sha256']==hashlib.sha256(json.dumps(j['configuration'],sort_keys=True).encode()).hexdigest();files.append(cp)
+ for out in j['outputs']:
+  p=O/out['file'];assert sha(p)==out['sha256'];files.append(p)
+x={'component_id':m['component_id'],'revision':m['revision'],'source_sha256':sha(source),'export_sha256':sha(glb),'files':[{'path':str(p.relative_to(R)),'bytes':p.stat().st_size,'sha256':sha(p)}for p in sorted(set(files))],'scope':'Four actual96 isolated views of one nominal related O-ring type in two review poses. Nominal catalogue dimensions do not certify currentRDC/tolerance/compound, mounted compression/grooves or material finish. No automatic attachment or physical seal simulation, no photo texture or invented microscopic seam.','quantity':2,'unique_physical_types':1,'automatic_attachment_allowed':False,'art_accepted':False,'physical_iphone_tested':False};(O/'review-manifest.json').write_text(json.dumps(x,indent=2)+'\n');print('BOUND_INTAKE_O_RING',len(x['files']))

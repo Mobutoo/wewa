@@ -1,0 +1,9 @@
+# SNS lower barrel — corrected black candidate2
+
+Native reinspection separates the overlapping scalloped collar from the cylindrical barrel. The earlier integral smooth flare is rejected attribution history. This revision is the visible barrel skin only, authored radius15.3mm and length86mm, with two covered-interface cut rings. These are estimates, not current RDC part dimensions, hydraulic bore or prescribed wall/end geometry.
+
+Long bright photo bands are reflections, not a documented longitudinal seam. Letter-like regions remain explicitly not reproduced because full text/relief sign is unknown; no invented OEM text is added. The observed scalloped collar and lower-eye join region are separate next pieces. Their existence is retained rather than relabeled as dimensional uncertainty.
+
+Three gray/reflection12 views and two PBR12 plus neutralHDR12/actual diffuse18% reference were opened before freezing. Material-only assignment preserves all actual POSITION/NORMAL/UV/indices and node matrices bit-identically to gray2. Black coating parameters are original unmeasured proposals, no texture or normal map. Source has no images or linked libraries.
+
+Build standalone gray with build_study_v2.py, then build_candidate_v2.py. Actual buffer checks: check_candidate_v2.mjs and check_gray_candidate_v2.mjs. Final sequence uses render_final_studio_v2.py then render_final_neutral_v2.py -- --spec assets-src/moto-components/rear-sns/damper-body/neutral-final-spec-v2.json, Blender4.3.2CPU --background --threads1 --python-exit-code1. Three sequential96 views preserve their actual preflight cameras at1000×800 and write PNG/private linear multilayerEXR/checkpoints. A frozen protocol does not assert outputs already exist. controls-v2.json is static, no hydraulic/compression/fit or artistic reception certified.

@@ -1,0 +1,48 @@
+{
+  "component_id": "MOTO-REAR-MUDGUARD-SHELL-001",
+  "author_mesh_sha256": "8631f77de883bd7e8199c4fdce48584d966f8723534e8f56379308303b8efe9c",
+  "chart_sha256": "fad6693bb9a81edfbe9886f1d764f97996ca4e2480a3860026769aea224355f9",
+  "current_surface_recipe_sha256": "21f4181665b36160b8bc082a12aa665598c3cdb07eb5aa2adcae0fd63ba2b028",
+  "diagnostic_surface_recipe_sha256": "6aa36b997a980bb9321c5ba1277673ece75c016a0b2a5bea5b4673238b2e0852",
+  "method": "Distance from actualfloat32 trianglecentroid to authorparametric outerfield at chartcentroid, all captriangles in namedlocal masks. Not closestpoint distance, globalHausdorff, manufacturedtolerance or OEM reconstruction error.",
+  "local_sampling": [
+    {
+      "region": "roof_ring_radius6to9mm",
+      "actual_cap_triangles_sampled": 3574,
+      "centroid_authorfield_distance_m_quantiles_50_95_100": [
+        1.848133929462137e-06,
+        3.862898624207052e-06,
+        5.5948885337087805e-06
+      ]
+    },
+    {
+      "region": "majorstep_chartabsX80to100mm_Yminus110to70mm",
+      "actual_cap_triangles_sampled": 40664,
+      "centroid_authorfield_distance_m_quantiles_50_95_100": [
+        2.379791577572545e-06,
+        9.913852456392498e-06,
+        5.51824297536793e-05
+      ]
+    },
+    {
+      "region": "front_return_y_below_minus401mm",
+      "actual_cap_triangles_sampled": 35867,
+      "centroid_authorfield_distance_m_quantiles_50_95_100": [
+        4.7385297176677836e-06,
+        1.1790399116627989e-05,
+        3.457908778909617e-05
+      ]
+    }
+  ],
+  "analytic_main_shape_parameter_sets_exact": true,
+  "analytic_main_field_witness_Y_m": [
+    -0.4,
+    0.31
+  ],
+  "analytic_main_field_witness_points": 25351,
+  "max_base_field_difference_outside_front_change_m": 0.0,
+  "max_outer_field_difference_outside_front_change_m": 0.0,
+  "mesh_positions_indices_identical_claimed": false,
+  "shape_change_scope": "C2 downwardterminal returnY<-.401 and one frontmouthlocation/axis move. Mainarch/width/wall and otherouterfeaturefield params unchanged; localretessellation to sampleexistingring/step curvature.",
+  "art_accepted": false
+}

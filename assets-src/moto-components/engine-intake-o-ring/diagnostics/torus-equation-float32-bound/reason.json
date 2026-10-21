@@ -1,0 +1,10 @@
+{
+  "scope": "Diagnostic checker precision, no source/export geometry change",
+  "source_sha256": "e8f63ffb32b3efde9e770f61dc24d344a8f6df6c8823fb0c852a3f4adcb1b0de",
+  "initial_equation_threshold_m2": 1e-12,
+  "observed_max_equation_error_m2": 1.6900124990194034e-12,
+  "reason": "Fixed1e-12m\u00b2 corresponds to subnanometre radial error and is below conservative binary32 rounding of16.25mm coordinates. Actual min/max and volume pass; no surface mutation or export baking identified.",
+  "correction": "Bound derived before renewed check from halfULP of maximumXY16.25mm andZ0.95mm: E=sqrt(2*ulpXY\u00b2+ulpZ\u00b2), equation error<=2*r*E+E\u00b2. No arbitrary threshold fitted to result.",
+  "nominal_dimensions_unchanged": true,
+  "art_accepted": false
+}

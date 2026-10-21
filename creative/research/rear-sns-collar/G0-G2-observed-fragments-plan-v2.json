@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-21T10:58:13.231598+00:00",
+  "component": "MOTO-REAR-SNS-LOWER-COLLAR-001",
+  "revision": "rear-sns-lower-collar-observed-study-v2",
+  "prior_prototype": {
+    "path": "creative/reviews/rear-sns-lower-collar-arc-study-v1/study-freeze-manifest.json",
+    "sha256": "0ce67908a5910e1d062e08c5d31cba15b6cc7f8d0c7ce6430edcd7887950afd4",
+    "all_three_actual_gray_reflection_views_read": true
+  },
+  "independent_reading": {
+    "path": "creative/research/rear-sns-collar/read-only-collar-review-v1/report.json",
+    "sha256": "49e46e97b6dd4a851ce347c839743cc96214b3d9ec0ca5695d4e79b91f0a470b"
+  },
+  "scope": "Three separately documented PF-E1/E2/E3 fragments joined in one finite frontal sector. No opposite circumference or total notch count.",
+  "parameters": {
+    "schema": 1,
+    "revision": "rear-sns-lower-collar-observed-study-v2",
+    "units": "m, authored prototype, not physical cotes",
+    "scope": "Three separately documented PF-E1/E2/E3 fragments joined in one finite frontal sector. No opposite circumference or total notch count.",
+    "source_frame": "Unplaced SNS axis+Z; angle measured around front radial(sin(theta),-cos(theta),0). Angular slice ends are study cuts, not physical part ends.",
+    "theta_start_degrees": -76,
+    "theta_end_degrees": 76,
+    "lower_outer_radius_m": 0.0171,
+    "upper_outer_radius_m": 0.0215,
+    "radial_wall_thickness_m": 0.0012,
+    "top_z_m": -0.003,
+    "free_edge_end_z_m": -0.026,
+    "angular_samples": 384,
+    "wall_samples": 48,
+    "free_lip_halfround_samples": 16,
+    "authored_envelope": {
+      "wall_thickness_m": [
+        0.0007,
+        0.0018
+      ],
+      "lower_outer_radius_m": [
+        0.0165,
+        0.019
+      ],
+      "upper_outer_radius_m": [
+        0.02,
+        0.025
+      ],
+      "edge_relief_m": [
+        0.002,
+        0.005
+      ],
+      "meaning": "Working design envelope, not measured uncertainty or OEM tolerance"
+    },
+    "hidden_unknowns": "Actual radial clearance/wall section, opposite collar, total notches, angular pitch/function and actual seat unknown",
+    "edge_fragments": [
+      {
+        "id": "PF-E1",
+        "theta0_degrees": -76,
+        "theta1_degrees": -23,
+        "z0_m": -0.025,
+        "z1_m": -0.026,
+        "recess_height_m": 0.004
+      },
+      {
+        "id": "PF-E2",
+        "theta0_degrees": -23,
+        "theta1_degrees": 29,
+        "z0_m": -0.026,
+        "z1_m": -0.0252,
+        "recess_height_m": 0.0035
+      },
+      {
+        "id": "PF-E3",
+        "theta0_degrees": 29,
+        "theta1_degrees": 76,
+        "z0_m": -0.0252,
+        "z1_m": -0.026,
+        "recess_height_m": 0.0038
+      }
+    ],
+    "fragment_parameters_status": "Each angular span, height and depth independently authored. Not a metric tracing or known angular pitch. E4 not added."
+  },
+  "method": "Same analytic finite-wall/lip construction; C2 edge joins, independently specified E1/E2/E3. End cuts are study slices. No repeated whole ring, perforation or mechanism.",
+  "views": [
+    "Whole frontal sector gray",
+    "Oblique sector gray to read finite lip/ends",
+    "Lower edge macro/reflection"
+  ],
+  "still_observed_not_built": [
+    "Partial upper rim transitions not constrained as a whole section"
+  ],
+  "ambiguous_not_added": [
+    "PF-E4"
+  ],
+  "hidden_unknowns": [
+    "Remaining208degree circumference and total count",
+    "True wall thickness/section",
+    "Spring seat/mounting/ratchet/function",
+    "Scale, exact RDC identity"
+  ],
+  "art_accepted": false
+}

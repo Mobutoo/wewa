@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-21T10:51:25.624500+00:00",
+  "component": "MOTO-REAR-SNS-LOWER-COLLAR-001",
+  "revision": "rear-sns-lower-collar-arc-study-v1",
+  "scope": "ONE observed front edge fragment PF-E1 only; not a full collar or circumferential notch count",
+  "independent_native_reading": {
+    "path": "creative/research/rear-sns-collar/read-only-collar-review-v1/report.json",
+    "sha256": "49e46e97b6dd4a851ce347c839743cc96214b3d9ec0ca5695d4e79b91f0a470b"
+  },
+  "reference_fragment": {
+    "id": "PF-E1",
+    "feature": "First clearly visible body-facing scalloped arc from upper lip into a recess and back",
+    "native_polyline_px": [
+      [
+        363,
+        505
+      ],
+      [
+        373,
+        518
+      ],
+      [
+        356,
+        535
+      ]
+    ],
+    "uncertainty_px": 5,
+    "confidence": "moderate/high for non-straight edge; approximate points only",
+    "reason_uncertainty": "Black collar on black barrel; reflection width and soft edge/oblique image, source has no calibrated silhouette."
+  },
+  "observations": [
+    "Distinct expanded collar overlaps barrel; free body-facing edge is locally scalloped.",
+    "PF-E1,E2,E3 are observed fragments, E4 is separately ambiguous. No global circle/count or preload function established.",
+    "Dark areas are shadow/overlap, not proved perforations. First outer spring coil is not a collar groove."
+  ],
+  "parameters": {
+    "schema": 1,
+    "revision": "rear-sns-lower-collar-arc-study-v1",
+    "units": "m, authored prototype, not physical cotes",
+    "scope": "ONE observed front edge fragment PF-E1 only; not a full collar or circumferential notch count",
+    "source_frame": "Unplaced SNS axis+Z; angle measured around front radial(sin(theta),-cos(theta),0). Angular slice ends are study cuts, not physical part ends.",
+    "theta_start_degrees": -55,
+    "theta_end_degrees": -16,
+    "lower_outer_radius_m": 0.0171,
+    "upper_outer_radius_m": 0.0215,
+    "radial_wall_thickness_m": 0.0012,
+    "top_z_m": -0.003,
+    "free_edge_start_z_m": -0.024,
+    "free_edge_end_z_m": -0.026,
+    "edge_recess_height_m": 0.004,
+    "angular_samples": 96,
+    "wall_samples": 48,
+    "free_lip_halfround_samples": 16,
+    "authored_envelope": {
+      "wall_thickness_m": [
+        0.0007,
+        0.0018
+      ],
+      "lower_outer_radius_m": [
+        0.0165,
+        0.019
+      ],
+      "upper_outer_radius_m": [
+        0.02,
+        0.025
+      ],
+      "edge_relief_m": [
+        0.002,
+        0.005
+      ],
+      "meaning": "Working design envelope, not measured uncertainty or OEM tolerance"
+    },
+    "hidden_unknowns": "Actual radial clearance/wall section, opposite collar, total notches, angular pitch/function and actual seat unknown"
+  },
+  "construction": "Original finite curved sector with one smooth local edge recess and rounded free lip, upper hidden-interface strip and two explicit angular study cut caps. No whole-ring repetition, holes or hidden mechanism. Parametric source, no CSG/global bevel.",
+  "comparison": [
+    "Whole gray finite fragment",
+    "Free scalloped lip macro gray",
+    "Same lip with reflection, before another observed arc or material"
+  ],
+  "dimension_and_camera_limits": "Angles, radii, wall and axial relief are authored hypotheses. Native pixels do not provide a metric/camera solution; no \u00b15px photograph match claimed.",
+  "rest_guard": "Proposed minimum inner radius15.9mm is outside corrected barrel radius15.3mm in this authored coaxial datum. Actual export check required, not OEM clearance or fit.",
+  "still_observed_not_built": [
+    "PF-E2 and PF-E3 edge fragments",
+    "Other visible upper rim/body transition fragments",
+    "E4 ambiguous beginning not promoted to definite notch"
+  ],
+  "hidden_unknowns": [
+    "Opposite circumference and notch count",
+    "True wall/seat/thickness and mounting",
+    "Actual function/preload/ratchet",
+    "Dimensions/tooling/currentRDC identity"
+  ],
+  "art_accepted": false
+}

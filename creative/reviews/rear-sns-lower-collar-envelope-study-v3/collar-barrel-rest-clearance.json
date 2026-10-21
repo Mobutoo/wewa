@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "sets": [
+    {
+      "file": "assets-src/moto-components/rear-sns/lower-collar/rear-sns-lower-collar-envelope-study-v3.glb",
+      "sha256": "e632bc48a821d568f1787fe666eba647c38bfbc88a48e9172417da27fe01fce0",
+      "triangles": 162720,
+      "minimum_radius_all_projected_actual_triangles_m": 0.01589984784669394,
+      "maximum_radius_all_actual_vertices_m": 0.021500000908873752,
+      "actual_identity_node_matrices": [
+        {
+          "node": "SNS collar - observed front and estimated back",
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "node": "REAR_SNS_LOWER_COLLAR_UNPLACED_DATUM",
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "file": "assets-src/moto-components/rear-sns/damper-body/rear-sns-damper-body-v2.glb",
+      "sha256": "af02eefc2e4bf8b5f797c5761c96a401c5a8ed13a101c978b87e7f95da045478",
+      "triangles": 2048,
+      "minimum_radius_all_projected_actual_triangles_m": 0.015298847595035915,
+      "maximum_radius_all_actual_vertices_m": 0.015300000589221045,
+      "actual_identity_node_matrices": [
+        {
+          "node": "Related SNS lower body exterior skin - estimated",
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "node": "REAR_SNS_DAMPER_BODY_UNPLACED_DATUM",
+          "matrix": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "minimum_rest_radial_surface_separation_lower_bound_m": 0.0005998472574728943,
+  "coaxial_candidate_geometry_disjoint": true,
+  "method": "Collar minimum is exact point-to-filled-projected-triangle distance in actual glTF XZ plane, including projected edge interiors. Barrel maximum is bounded by actual vertex norms using convexity of Euclidean norm over a triangle. Datums are explicitly identity; glTFY is SNS axis. Thus radial annuli are disjoint regardless of axial overlap in this unplaced rest candidate.",
+  "limits": "Authored scale and coaxial placement only. No actual OEM gap, compressed pose, seat fit, installed fit or second shock certified.",
+  "art_accepted": false
+}

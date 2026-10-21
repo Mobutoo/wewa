@@ -1,0 +1,300 @@
+{
+  "schema": "wewa.rear-sns-collar-read-only-review.v1",
+  "created_utc": "2026-10-21T10:46:05.055992+00:00",
+  "scope": "Independent local native photograph reading only, no web/download/model/render.",
+  "conclusion": "PF photo shows distinct overlapping scalloped body-facing border, not a proved smooth integral flare. Three local arcs annotated plus one ambiguous low beginning separately; neither complete circumferential topology nor notch count/function is established.",
+  "coordinate_convention": "Pixels in each original raster: origin top-left, x right/y down. PF shock axis runs mostly horizontal; body-facing/lower collar edge is LEFT in PF photo, not photo-bottom. No camera/metric datum solved.",
+  "original_references": [
+    {
+      "id": "PF-photo",
+      "private_path": "/workspace/wewa-assets/references/chassis-running-18/shock-PF122033.jpg",
+      "sha256": "f0d9264f47a35d89ddd1ef4139cd4858c5e55c1baf86937fbab3cbd97d45b5f8",
+      "raster_px": [
+        1210,
+        1210
+      ],
+      "actually_opened_native": true,
+      "variant_limit": "Related Matriz PF122033/PF122028 BM1505, exactRDC collar/tooling unverified.",
+      "calibrated": false,
+      "private_pixels_only": true
+    },
+    {
+      "id": "SCL-black",
+      "private_path": "/workspace/wewa-assets/references/rear-sns-16/scl-52202F92-142D-468A-9004-25A500E5B656.jpg",
+      "sha256": "eec577d441eea422137737c4c0d5582e25a85482a8e49fdc100d1b87f86d088a",
+      "raster_px": [
+        561,
+        571
+      ],
+      "actually_opened_native": true,
+      "variant_limit": "Related/adaptable black outer spring/orange inner pair; not opposite view of PF specimen.",
+      "calibrated": false,
+      "private_pixels_only": true
+    },
+    {
+      "id": "SCL-chrome",
+      "private_path": "/workspace/wewa-assets/references/rear-sns-16/scl-B2D3957E-1BEC-48EF-8BA1-21EC0065E050.jpg",
+      "sha256": "ac8fa5c7ce6a7fd0ec6650bcc0b422e3625a13860f8ad2d711f8ad2b5ce9b905",
+      "raster_px": [
+        800,
+        800
+      ],
+      "actually_opened_native": true,
+      "variant_limit": "Related/adaptable chrome outer spring/orange inner pair; separate variant from black pair and PF specimen.",
+      "calibrated": false,
+      "private_pixels_only": true
+    }
+  ],
+  "existing_analysis_crops_used_for_visibility_only": [
+    {
+      "private_path": "/workspace/wewa-assets/work-in-progress/rear-sns-damper-body-detail-reading/PF122033-body-native-crop-3x.png",
+      "sha256": "322c635a18c35a1a2db9e3108e0d23624ee397c498d4ea35f8325f7045b4a14b",
+      "native_crop_box": [
+        85,
+        470,
+        438,
+        645
+      ],
+      "existing_C_derivative_opened": true,
+      "display_scale": 3,
+      "sampling": "nearest, existing crop; no new resolution or pixel evidence generated"
+    },
+    {
+      "private_path": "/workspace/wewa-assets/work-in-progress/rear-sns-damper-body-detail-reading/PF122033-flare-native-crop-4x.png",
+      "sha256": "5397487c7053cf58dd6b75f19cb5e3b84ef6847deabf58992008f8545e691861",
+      "native_crop_box": [
+        340,
+        470,
+        458,
+        645
+      ],
+      "existing_C_derivative_opened": true,
+      "display_scale": 4,
+      "sampling": "nearest, existing crop; no new resolution or pixel evidence generated"
+    }
+  ],
+  "native_segments_PF_only": [
+    {
+      "id": "PF-E1",
+      "feature": "First clearly visible body-facing scalloped arc from upper lip into a recess and back",
+      "native_polyline_px": [
+        [
+          363,
+          505
+        ],
+        [
+          373,
+          518
+        ],
+        [
+          356,
+          535
+        ]
+      ],
+      "uncertainty_px": 5,
+      "confidence": "moderate/high for non-straight edge; approximate points only",
+      "reason_uncertainty": "Black collar on black barrel; reflection width and soft edge/oblique image, source has no calibrated silhouette."
+    },
+    {
+      "id": "PF-E2",
+      "feature": "Next visible alternating inward/outward edge fragment",
+      "native_polyline_px": [
+        [
+          356,
+          535
+        ],
+        [
+          365,
+          548
+        ],
+        [
+          350,
+          565
+        ]
+      ],
+      "uncertainty_px": 5,
+      "confidence": "moderate/high for another local scallop; not angular repeat count"
+    },
+    {
+      "id": "PF-E3",
+      "feature": "Lower visible waviness continuing towards box-side margin",
+      "native_polyline_px": [
+        [
+          350,
+          565
+        ],
+        [
+          357,
+          578
+        ],
+        [
+          347,
+          589
+        ]
+      ],
+      "uncertainty_px": 5,
+      "confidence": "moderate; end approaches darker region"
+    },
+    {
+      "id": "PF-E4-ambiguous",
+      "feature": "Low terminal beginning/return, partly blending into lower silhouette and box background",
+      "native_polyline_px": [
+        [
+          347,
+          589
+        ],
+        [
+          351,
+          598
+        ],
+        [
+          348,
+          604
+        ]
+      ],
+      "uncertainty_px": 7,
+      "confidence": "ambiguous, not counted as an additional notch or separate repeated arch",
+      "do_not_promote": "May include tangent overlap/lip thickness/shadow transition; no complete hidden shape inferred."
+    }
+  ],
+  "other_native_region_locators": [
+    {
+      "id": "PF-top-edge",
+      "source": "PF-photo",
+      "native_polyline_px": [
+        [
+          366,
+          505
+        ],
+        [
+          382,
+          497
+        ],
+        [
+          405,
+          489
+        ]
+      ],
+      "uncertainty_px": 6,
+      "interpretation": "Part of expanded exterior cup/collar upper silhouette; disappears under spring/seat region. No closing circle inferred."
+    },
+    {
+      "id": "PF-low-outer-margin",
+      "source": "PF-photo",
+      "native_polyline_px": [
+        [
+          348,
+          604
+        ],
+        [
+          383,
+          616
+        ],
+        [
+          411,
+          625
+        ]
+      ],
+      "uncertainty_px": 7,
+      "interpretation": "Partial lower external silhouette over blue box; endpoint spring-occluded, not a measured wall section."
+    },
+    {
+      "id": "SCL-black-left-collar-region",
+      "source": "SCL-black",
+      "native_bbox_xyxy_px": [
+        190,
+        382,
+        264,
+        431
+      ],
+      "uncertainty_px": 5,
+      "interpretation": "Short cup/rim and dark descending tongue-like fragments near barrel top. Coils and low resolution limit contour separation."
+    },
+    {
+      "id": "SCL-black-right-collar-region",
+      "source": "SCL-black",
+      "native_bbox_xyxy_px": [
+        286,
+        381,
+        356,
+        430
+      ],
+      "uncertainty_px": 5,
+      "interpretation": "Another viewed unit in pair, partial returns/dark interior-looking regions. Not a reverse of PF and no through-hole established."
+    },
+    {
+      "id": "SCL-chrome-upper-unit-collar-region",
+      "source": "SCL-chrome",
+      "native_bbox_xyxy_px": [
+        309,
+        264,
+        389,
+        368
+      ],
+      "uncertainty_px": 6,
+      "interpretation": "Distinct tab/ear-like extensions toward barrel are visible on this chrome variant. Small dark end patches do not certify holes, screw heads or exact interfaces onPF."
+    }
+  ],
+  "visible_vs_unproven": [
+    {
+      "feature": "Overlap boundary",
+      "observation": "Black cup-like expanded envelope crosses over barrel with non-straight/free scalloped margin; bright barrel reflection is truncated/occluded at its boundary.",
+      "limit": "Separate visual layers do not certify disassembly method, full radial clearance, manufacturing seam, complete section or currentRDC collar identity."
+    },
+    {
+      "feature": "Barrel bright horizontal bands",
+      "observation": "Long highlight bands follow cylindrical barrel under collar; their termination and curvature are lighting/occlusion.",
+      "limit": "Not through-holes, raised longitudinal ribs or a seam to model."
+    },
+    {
+      "feature": "PF dark regions between edge scallops",
+      "observation": "Dark barrel and the overhanging edge produce closed/shadowed regions.",
+      "limit": "No open background or independent rear face proves a perforation. Do not add holes."
+    },
+    {
+      "feature": "SCL tabs/returns",
+      "observation": "Partial protruding tongues/ears appear next to barrel on related SCL units, clearest onchrome.",
+      "limit": "Count and same tooling not established; do not transfer chrome tab positions/count to PF black collar."
+    },
+    {
+      "feature": "Coil and rim overlap",
+      "observation": "Thick black outer coil/rim masks the spring-side part of collar; orange helix partly behind.",
+      "limit": "Do not turn first coil edge into a collar groove or count hidden notches from periodic spring turns."
+    }
+  ],
+  "unknowns": [
+    "Total notch/arch count over360degrees",
+    "Angular pitch/hand/orientation and hidden opposite contours",
+    "True hole versus shadow/fastener on SCL dark patches",
+    "Actual collar thickness, inner seat/section and attachment/disassembly",
+    "Preload/adjustment function, code and exact currentRDC tooling",
+    "All millimetre dimensions/material grade"
+  ],
+  "prohibited_inferences": [
+    "No full circle or six arches extrapolated from the three visible fragments",
+    "No mm conversion from pixels, shock length, wheelbase or variant dimensions",
+    "No preload/cam/ratchet function certified by scalloped appearance",
+    "No photographic marks/reflections or supplier logo copied into geometry/texture"
+  ],
+  "protected_existing_reports": [
+    {
+      "path": "creative/research/rear-sns-damper-body/native-body-boundary-reading-v2.json",
+      "sha256": "0906dc5193634822e79aaec36296b4f662e9e065244793e3f916c4c0656b5ef8"
+    },
+    {
+      "path": "creative/research/rear-sns-damper-body/G0-G2-body-plan-v2.json",
+      "sha256": "0b879b124eb6aa7483042a2ba3d6c807a12681a18f0b3889ce11d7e934f0aacb"
+    },
+    {
+      "path": "creative/research/rear-sns-16/reference-search-v1.json",
+      "sha256": "b5f821fd72938eace0124a8cfd750702272e8f50eec2f9282233b3736098b82f"
+    }
+  ],
+  "protected_reports_unchanged": true,
+  "new_public_photo_pixels": false,
+  "new_crops": false,
+  "new_models": false,
+  "new_renders": false,
+  "globals_or_records_modified": false,
+  "art_accepted": false
+}

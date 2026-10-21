@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-21T10:25:59.206452+00:00",
+  "component": "MOTO-REAR-SNS-DAMPER-BODY-001",
+  "revision": "rear-sns-damper-body-study-v1",
+  "scope": "ONE visible external lower damper body skin only, before rod, spring cups, eyes/sleeves or whole shock. No hydraulic internals.",
+  "reference_report": {
+    "path": "creative/research/rear-sns-16/reference-search-v1.json",
+    "sha256": "b5f821fd72938eace0124a8cfd750702272e8f50eec2f9282233b3736098b82f"
+  },
+  "photos": [
+    {
+      "private_path": "/workspace/wewa-assets/references/chassis-running-18/shock-PF122033.jpg",
+      "sha256": "f0d9264f47a35d89ddd1ef4139cd4858c5e55c1baf86937fbab3cbd97d45b5f8",
+      "actually_opened_by_C": true
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/rear-sns-16/scl-52202F92-142D-468A-9004-25A500E5B656.jpg",
+      "sha256": "eec577d441eea422137737c4c0d5582e25a85482a8e49fdc100d1b87f86d088a",
+      "actually_opened_by_C": true
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/dimensions-verified/suspension.webp",
+      "sha256": "cebd8313b14be6dd254cf64aa55bc2a32c64f1198dc09fa23284cd88e19646e2",
+      "actually_opened_by_C": true
+    }
+  ],
+  "identity": "Related PF122033/PF122028 single isolated physical photo. Official currentRDC appearance coherent, exact body/tooling/code unknown. SCL black pair is a related example, not reverse of PF specimen.",
+  "native_reading": {
+    "PF122033_visible_barrel_axis_approx_px": [
+      [
+        112,
+        549
+      ],
+      [
+        372,
+        549
+      ]
+    ],
+    "barrel_outer_y_approx_px": [
+      501,
+      596
+    ],
+    "flare_toward_spring_region_approx_px": [
+      363,
+      493,
+      419,
+      611
+    ],
+    "read_uncertainty_px": 10,
+    "meaning": "Gross visible long black body and flared transition only, camera/perspective not calibrated; no pixel-to-mm conversion.",
+    "molded_or_stamped_characters": "Visible but not reliably transcribed; no supplier/certification marks copied."
+  },
+  "parameters": {
+    "schema": 1,
+    "revision": "rear-sns-damper-body-study-v1",
+    "units": "m, authored estimated exterior only",
+    "axis": "Unplaced SNS local+Z toward spring/upper eye. Body below tentative lower spring datumZ0; no vehicle mounting transform.",
+    "profile_sections": [
+      {
+        "name": "lower visible neck",
+        "z0_m": -0.095,
+        "z1_m": -0.092,
+        "r0_m": 0.0115,
+        "r1_m": 0.0152,
+        "samples": 32
+      },
+      {
+        "name": "long barrel",
+        "z0_m": -0.092,
+        "z1_m": -0.026,
+        "r0_m": 0.0152,
+        "r1_m": 0.0154,
+        "samples": 96
+      },
+      {
+        "name": "upper body flare",
+        "z0_m": -0.026,
+        "z1_m": -0.012,
+        "r0_m": 0.0154,
+        "r1_m": 0.0194,
+        "samples": 64
+      },
+      {
+        "name": "upper visible short neck",
+        "z0_m": -0.012,
+        "z1_m": -0.006,
+        "r0_m": 0.0194,
+        "r1_m": 0.0194,
+        "samples": 16
+      }
+    ],
+    "angular_segments": 192,
+    "open_interfaces": "Two deliberate exterior cut rings, no hydraulic bore/wall/back cap or eye joint inferred",
+    "author_envelope": {
+      "barrel_diameter_m": [
+        0.027,
+        0.037
+      ],
+      "visible_body_length_m": [
+        0.075,
+        0.105
+      ],
+      "upper_flare_diameter_m": [
+        0.034,
+        0.045
+      ],
+      "meaning": "Working hypothesis envelope only, not measured uncertainty or OEM tolerances"
+    },
+    "material_phase": "Neutral gray before original black paint; no photos copied"
+  },
+  "construction": "Editable monotone exterior surface of revolution with smooth lower transition, long shallow barrel and upper flared shoulder. Two open covered interfaces instead of unknown hydraulic bore/end caps. No generic whole shock or hidden seat/eye invented.",
+  "comparison": [
+    "Whole gray exterior body",
+    "Flare detail gray",
+    "Same detail reflection before paint"
+  ],
+  "separate_visible_units": [
+    "Thin rod visible between coils",
+    "Upper/lower cups and small visible projections",
+    "Eye housings and sleeves",
+    "Second shock and mounting"
+  ],
+  "still_visible_unbuilt_on_this_body": [
+    "Untranscribed molded/stamped marks; local seams or ribs not resolved sufficiently by current pose"
+  ],
+  "hidden_unknowns": [
+    "Wall/hydraulic interior and seals",
+    "Body-to-eye welded/forged attachment termination",
+    "Exact body-to-cup division and seating detail",
+    "Scale/diameters/length/tooling/code",
+    "Full physical mounting and compression"
+  ],
+  "no_scale_from_SCL340mm": true,
+  "art_accepted": false
+}

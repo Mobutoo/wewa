@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "/workspace/wewa-github/assets-src/moto-components/front-brake-plate/csg.py", line 15, in <module>
+    part=solid(row);before=result.volume();result=result+part if operation=='features' else result-part
+         ^^^^^^^^^^
+  File "/workspace/wewa-github/assets-src/moto-components/front-brake-plate/csg.py", line 9, in solid
+    assert result.status()==m.Error.NoError,(row['name'],result.status())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('Editable rear related-code glyph 0 P', Error.NotManifold)
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 01:31:14)
+Traceback (most recent call last):
+  File "/workspace/wewa-github/assets-src/moto-components/engine-intake-sleeve/build.py", line 60, in <module>
+    bpy.context.view_layer.update();result,data=csg(body,features,drills,parts,mat,R,'PF581402 sleeve - isolated conditional')
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/wewa-github/assets-src/moto-components/throttle-control/control_geometry.py", line 45, in csg
+    inp=Path(tmp)/'in.json';out=Path(tmp)/'out.json';inp.write_text(json.dumps({'base':row(base),'features':[row(o) for o in features],'drills':[row(o) for o in drills]}));subprocess.run([shutil.which('python'),str(root/'assets-src/moto-components/front-brake-plate/csg.py'),str(inp),str(out)],check=True);data=json.loads(out.read_text())
+                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/wewa-tools/blender-4.3.2-linux-x64/4.3/python/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python', '/workspace/wewa-github/assets-src/moto-components/front-brake-plate/csg.py', '/tmp/wewa-control-csg-18e295zz/in.json', '/tmp/wewa-control-csg-18e295zz/out.json']' returned non-zero exit status 1.
+
+Error: script failed, file: '/workspace/wewa-github/assets-src/moto-components/engine-intake-sleeve/build.py', exiting.
+
+Blender quit

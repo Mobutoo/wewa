@@ -1,6 +1,6 @@
 # Viva Wewa — revue des composants moto
 
-**72 composants uniques enregistrés · 72 vues Blender prouvées · aucune réception artistique.**
+**79 composants uniques enregistrés · 79 vues Blender prouvées · aucune réception artistique.**
 
 Une seule vue originale par composant, à la révision exacte de sa fiche. Les anciennes révisions et les sources seulement cataloguées ou gelées sans enregistrement central ne sont pas ajoutées. Ces rendus montrent des candidats isolés, pas le jeu ni une moto terminée.
 
@@ -28,9 +28,9 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 | [12 · Phare et clignotants avant](#groupe-12) | 4 | Candidats partiels en revue ; groupe non terminé |
 | [13 · Fourche et direction](#groupe-13) | 6 | Candidats partiels en revue ; groupe non terminé |
 | [14 · Ensemble avant et compatibilité des candidats existants](#groupe-14) | Voir les préexistants ; aucun nouveau composant compté | Candidats antérieurs existants à recontrôler ; compatibilité restante |
-| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 12 | Candidats partiels en revue ; groupe non terminé |
-| [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 5 | Candidats partiels en revue ; groupe non terminé |
-| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 22 | Candidats partiels en revue ; groupe non terminé |
+| [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 13 | Candidats partiels en revue ; groupe non terminé |
+| [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 9 | Candidats partiels en revue ; groupe non terminé |
+| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 24 | Candidats partiels en revue ; groupe non terminé |
 | [18 · Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière](#groupe-18) | 2 | Candidats partiels en revue ; groupe non terminé |
 
 <a id="groupe-1"></a>
@@ -1051,6 +1051,34 @@ PNG SHA-256 : `bc3a8d7a00a20b4f46806c78c072aa4669cd8bd60ebb380d27e7c398b6bdcef5`
 
 </details>
 
+
+<a id="moto-rear-mudguard-shell-001"></a>
+
+### Garde-boue arrière — coque seule
+
+`MOTO-REAR-MUDGUARD-SHELL-001` · révision `rear-mudguard-shell-v1` · **candidat non reçu**
+
+![Garde-boue arrière — coque seule — rear-mudguard-shell-v1](rear-mudguard-shell-v1/quarter.png)
+
+[Image entière](rear-mudguard-shell-v1/quarter.png) · [Preuve du rendu](rear-mudguard-shell-v1/render-report.json) · vue `quarter`
+
+Source SHA-256 : `d3d8bb96b2c48c449b9d88bcb14aedba34c7ee7189bb2b4a50729c3475851283`  
+PNG SHA-256 : `b47fdbd551499d1ef73882339f34bcb4dc10f7828b7320960855419fb440badc`
+
+[Blender](../../assets-src/moto-components/rear-mudguard-shell/rear-mudguard-shell-v1.blend) · [GLB](../../assets-src/moto-components/rear-mudguard-shell/rear-mudguard-shell-inspection.glb) · [README source](../../assets-src/moto-components/rear-mudguard-shell/README.md) · [Revue et limites](rear-mudguard-shell-v1/README.md) · [Fiche](../workflow/records/moto-rear-mudguard-shell-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [opposite-quarter](rear-mudguard-shell-v1/opposite-quarter.png) · [preuve](rear-mudguard-shell-v1/render-report.json)
+- [underside](rear-mudguard-shell-v1/underside.png) · [preuve](rear-mudguard-shell-v1/render-report.json)
+- [roof-mouth-detail](rear-mudguard-shell-v1/roof-mouth-detail.png) · [preuve](rear-mudguard-shell-v1/render-report.json)
+- [front-tip-detail](rear-mudguard-shell-v1/front-tip-detail.png) · [preuve](rear-mudguard-shell-v1/render-report.json)
+- [side-band-detail](rear-mudguard-shell-v1/side-band-detail.png) · [preuve](rear-mudguard-shell-v1/render-report.json)
+
+</details>
+
 Périmètre prévu : garde-boue avant; cadre: tubes et jonctions visibles; bras oscillant et pivots visibles.
 
 <a id="groupe-16"></a>
@@ -1185,6 +1213,106 @@ PNG SHA-256 : `25439fc158a38d487482a0b1c6b356445995ca77f381e0022530b7016f8082c0`
 
 - [tight-coils-pbr](rear-sns-outer-spring-v1/tight-coils-pbr.png) · [preuve](rear-sns-outer-spring-v1/render-report.json)
 - [neutral-outdoor](rear-sns-outer-spring-v1/neutral-outdoor.png) · [preuve](rear-sns-outer-spring-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-rear-sns-inner-spring-001"></a>
+
+### SNS arrière — ressort intérieur orange isolé
+
+`MOTO-REAR-SNS-INNER-SPRING-001` · révision `rear-sns-inner-spring-v1` · **candidat non reçu**
+
+![SNS arrière — ressort intérieur orange isolé — rear-sns-inner-spring-v1](rear-sns-inner-spring-v1/whole-spring-pbr.png)
+
+[Image entière](rear-sns-inner-spring-v1/whole-spring-pbr.png) · [Preuve du rendu](rear-sns-inner-spring-v1/render-report.json) · vue `whole-spring-pbr`
+
+Source SHA-256 : `cbeb1e352c910dbc95e08ada95ee5c81f718527c8f96f17b1e55635a14d8ded7`  
+PNG SHA-256 : `71843dc4d688bfa0a88e425633206004b77b337bf541c139a6cf299c46cbc2ec`
+
+[Blender](../../assets-src/moto-components/rear-sns/inner-spring/rear-sns-inner-spring-v1.blend) · [GLB](../../assets-src/moto-components/rear-sns/inner-spring/rear-sns-inner-spring-v1.glb) · [README source](../../assets-src/moto-components/rear-sns/inner-spring/README.md) · [Revue et limites](rear-sns-inner-spring-v1/README.md) · [Fiche](../workflow/records/moto-rear-sns-inner-spring-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [wire-detail-pbr](rear-sns-inner-spring-v1/wire-detail-pbr.png) · [preuve](rear-sns-inner-spring-v1/render-report.json)
+- [neutral-outdoor](rear-sns-inner-spring-v1/neutral-outdoor.png) · [preuve](rear-sns-inner-spring-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-rear-sns-damper-body-001"></a>
+
+### SNS arrière — fût extérieur seul, révision2
+
+`MOTO-REAR-SNS-DAMPER-BODY-001` · révision `rear-sns-damper-body-v2` · **candidat non reçu**
+
+![SNS arrière — fût extérieur seul, révision2 — rear-sns-damper-body-v2](rear-sns-damper-body-v2/whole-body-pbr.png)
+
+[Image entière](rear-sns-damper-body-v2/whole-body-pbr.png) · [Preuve du rendu](rear-sns-damper-body-v2/render-report.json) · vue `whole-body-pbr`
+
+Source SHA-256 : `0b7c78df3dfcbe90b3b91146f7a2ba82062b6673e5ffdc703b8b16f0da4e7643`  
+PNG SHA-256 : `c091b80b6816ba9d785c1b710edbcb9c15dba79c3bea7d1d97c68151d35315bb`
+
+[Blender](../../assets-src/moto-components/rear-sns/damper-body/rear-sns-damper-body-v2.blend) · [GLB](../../assets-src/moto-components/rear-sns/damper-body/rear-sns-damper-body-v2.glb) · [README source](../../assets-src/moto-components/rear-sns/damper-body/README_v2.md) · [Revue et limites](rear-sns-damper-body-v2/README.md) · [Fiche](../workflow/records/moto-rear-sns-damper-body-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [upper-interface-pbr](rear-sns-damper-body-v2/upper-interface-pbr.png) · [preuve](rear-sns-damper-body-v2/render-report.json)
+- [neutral-outdoor](rear-sns-damper-body-v2/neutral-outdoor.png) · [preuve](rear-sns-damper-body-v2/render-report.json)
+
+</details>
+
+
+<a id="moto-rear-sns-lower-collar-001"></a>
+
+### SNS arrière — collerette festonnée, avant observé et arrière estimé
+
+`MOTO-REAR-SNS-LOWER-COLLAR-001` · révision `rear-sns-lower-collar-v1` · **candidat non reçu**
+
+![SNS arrière — collerette festonnée, avant observé et arrière estimé — rear-sns-lower-collar-v1](rear-sns-lower-collar-v1/whole-collar-pbr.png)
+
+[Image entière](rear-sns-lower-collar-v1/whole-collar-pbr.png) · [Preuve du rendu](rear-sns-lower-collar-v1/render-report.json) · vue `whole-collar-pbr`
+
+Source SHA-256 : `7f0cdf03b3ae3f8f10f2b859303a90a41a4a5d59e1d7736451d418d7fd4fb8b2`  
+PNG SHA-256 : `8bad5362e043aca1d81a148e363627373b3c5fc558a52bdf76139cbedfd891c8`
+
+[Blender](../../assets-src/moto-components/rear-sns/lower-collar/rear-sns-lower-collar-v1.blend) · [GLB](../../assets-src/moto-components/rear-sns/lower-collar/rear-sns-lower-collar-v1.glb) · [README source](../../assets-src/moto-components/rear-sns/lower-collar/README_v1.md) · [Revue et limites](rear-sns-lower-collar-v1/README.md) · [Fiche](../workflow/records/moto-rear-sns-lower-collar-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [front-lip-pbr](rear-sns-lower-collar-v1/front-lip-pbr.png) · [preuve](rear-sns-lower-collar-v1/render-report.json)
+- [neutral-outdoor](rear-sns-lower-collar-v1/neutral-outdoor.png) · [preuve](rear-sns-lower-collar-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-rear-sns-rod-001"></a>
+
+### SNS arrière — extérieur de tige, métal proposé
+
+`MOTO-REAR-SNS-ROD-001` · révision `rear-sns-rod-v1` · **candidat non reçu**
+
+![SNS arrière — extérieur de tige, métal proposé — rear-sns-rod-v1](rear-sns-rod-v1/whole-rod-pbr.png)
+
+[Image entière](rear-sns-rod-v1/whole-rod-pbr.png) · [Preuve du rendu](rear-sns-rod-v1/render-report.json) · vue `whole-rod-pbr`
+
+Source SHA-256 : `946846232d58661345565041e9a94f416460cf1a5edeb7e48dcf1c44f1925c26`  
+PNG SHA-256 : `cbd8893e16d98f9983cb09649947c9716791bd6c7a696f5b572dc5a7bad6e839`
+
+[Blender](../../assets-src/moto-components/rear-sns/rod/rear-sns-rod-v1.blend) · [GLB](../../assets-src/moto-components/rear-sns/rod/rear-sns-rod-v1.glb) · [README source](../../assets-src/moto-components/rear-sns/rod/README_v1.md) · [Revue et limites](rear-sns-rod-v1/README.md) · [Fiche](../workflow/records/moto-rear-sns-rod-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [covered-tip-pbr](rear-sns-rod-v1/covered-tip-pbr.png) · [preuve](rear-sns-rod-v1/render-report.json)
+- [neutral-outdoor](rear-sns-rod-v1/neutral-outdoor.png) · [preuve](rear-sns-rod-v1/render-report.json)
 
 </details>
 
@@ -1761,6 +1889,61 @@ PNG SHA-256 : `f4b37f935f62b72dd6b1e4f4d0f318a22b7b0e980e89221361f46f6fd0b28324`
 - [tube-open-rim](front-footrest-right-v1/tube-open-rim.png) · [preuve](front-footrest-right-v1/render-report.json)
 - [base-weld-and-holes](front-footrest-right-v1/base-weld-and-holes.png) · [preuve](front-footrest-right-v1/render-report.json)
 - [grain-raking-control](front-footrest-right-v1/grain-raking-control.png) · [preuve](front-footrest-right-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-engine-intake-sleeve-001"></a>
+
+### Manchon admission PF581402 lié — deux faces conditionnelles
+
+`MOTO-ENGINE-INTAKE-SLEEVE-001` · révision `engine-intake-sleeve-v1` · **candidat non reçu**
+
+![Manchon admission PF581402 lié — deux faces conditionnelles — engine-intake-sleeve-v1](engine-intake-sleeve-v1/front-quarter.png)
+
+[Image entière](engine-intake-sleeve-v1/front-quarter.png) · [Preuve du rendu](engine-intake-sleeve-v1/render-report.json) · vue `front-quarter`
+
+Source SHA-256 : `0a0a1bfcf331e0160445dbb6d8af3e68834f74fa2d0c11f3def1514187f19e0c`  
+PNG SHA-256 : `b996542d4b9b514081f26ccb3100073f5ea82f00d060750527aed21fd6c72a78`
+
+[Blender](../../assets-src/moto-components/engine-intake-sleeve/engine-intake-sleeve-v1.blend) · [GLB](../../assets-src/moto-components/engine-intake-sleeve/engine-intake-sleeve-inspection.glb) · [README source](../../assets-src/moto-components/engine-intake-sleeve/README.md) · [Revue et limites](engine-intake-sleeve-v1/README.md) · [Fiche](../workflow/records/moto-engine-intake-sleeve-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [opposite-quarter-estimated](engine-intake-sleeve-v1/opposite-quarter-estimated.png) · [preuve](engine-intake-sleeve-v1/render-report.json)
+- [front-mouth-normal](engine-intake-sleeve-v1/front-mouth-normal.png) · [preuve](engine-intake-sleeve-v1/render-report.json)
+- [inner-lip-detail](engine-intake-sleeve-v1/inner-lip-detail.png) · [preuve](engine-intake-sleeve-v1/render-report.json)
+- [fork-and-seam-detail](engine-intake-sleeve-v1/fork-and-seam-detail.png) · [preuve](engine-intake-sleeve-v1/render-report.json)
+- [rear-mouth-normal](engine-intake-sleeve-v1/rear-mouth-normal.png) · [preuve](engine-intake-sleeve-v1/render-report.json)
+- [grain-raking-control](engine-intake-sleeve-v1/grain-raking-control.png) · [preuve](engine-intake-sleeve-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-engine-intake-o-ring-001"></a>
+
+### Deux joints toriques admission LJA00011 liés — nominal isolé
+
+`MOTO-ENGINE-INTAKE-O-RING-001` · révision `engine-intake-o-ring-v1` · **candidat non reçu**
+
+![Deux joints toriques admission LJA00011 liés — nominal isolé — engine-intake-o-ring-v1](engine-intake-o-ring-v1/isolated-pair.png)
+
+[Image entière](engine-intake-o-ring-v1/isolated-pair.png) · [Preuve du rendu](engine-intake-o-ring-v1/render-report.json) · vue `isolated-pair`
+
+Source SHA-256 : `be6769462f111f639b18311eaa02325103bf0a7129bc9f14bedfdac87feaaf70`  
+PNG SHA-256 : `0b9e86cd1c1dbcd099442a027724805129795503a58b31e37eb4ab07f019052a`
+
+[Blender](../../assets-src/moto-components/engine-intake-o-ring/engine-intake-o-ring-v1.blend) · [GLB](../../assets-src/moto-components/engine-intake-o-ring/engine-intake-o-ring-inspection.glb) · [README source](../../assets-src/moto-components/engine-intake-o-ring/README.md) · [Revue et limites](engine-intake-o-ring-v1/README.md) · [Fiche](../workflow/records/moto-engine-intake-o-ring-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [one-ring-normal](engine-intake-o-ring-v1/one-ring-normal.png) · [preuve](engine-intake-o-ring-v1/render-report.json)
+- [circular-section-detail](engine-intake-o-ring-v1/circular-section-detail.png) · [preuve](engine-intake-o-ring-v1/render-report.json)
+- [raking-surface-control](engine-intake-o-ring-v1/raking-surface-control.png) · [preuve](engine-intake-o-ring-v1/render-report.json)
 
 </details>
 

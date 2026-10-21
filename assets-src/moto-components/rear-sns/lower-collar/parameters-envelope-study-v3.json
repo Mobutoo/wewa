@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "revision": "rear-sns-lower-collar-envelope-study-v3",
+  "units": "m, authored prototype, not physical cotes",
+  "scope": "Three observed front edge fragments plus smooth estimated back continuation, no additional notches or mechanism.",
+  "source_frame": "Unplaced SNS axis+Z; front radial(sin(theta),-cos(theta),0). Closed authored circumference; front152degrees document-supported fragments, rear208degrees smooth estimated continuation.",
+  "theta_start_degrees": -76,
+  "theta_end_degrees": 284,
+  "lower_outer_radius_m": 0.0171,
+  "upper_outer_radius_m": 0.0215,
+  "radial_wall_thickness_m": 0.0012,
+  "top_z_m": -0.003,
+  "free_edge_end_z_m": -0.026,
+  "angular_samples": 720,
+  "wall_samples": 48,
+  "free_lip_halfround_samples": 16,
+  "authored_envelope": {
+    "wall_thickness_m": [
+      0.0007,
+      0.0018
+    ],
+    "lower_outer_radius_m": [
+      0.0165,
+      0.019
+    ],
+    "upper_outer_radius_m": [
+      0.02,
+      0.025
+    ],
+    "edge_relief_m": [
+      0.002,
+      0.005
+    ],
+    "meaning": "Working design envelope, not measured uncertainty or OEM tolerance"
+  },
+  "hidden_unknowns": "True rear edge, full notch count, wall/seat/section/function and dimensions remain unknown despite authored complete envelope.",
+  "edge_fragments": [
+    {
+      "id": "PF-E1",
+      "theta0_degrees": -76,
+      "theta1_degrees": -23,
+      "z0_m": -0.025,
+      "z1_m": -0.026,
+      "recess_height_m": 0.004
+    },
+    {
+      "id": "PF-E2",
+      "theta0_degrees": -23,
+      "theta1_degrees": 29,
+      "z0_m": -0.026,
+      "z1_m": -0.0252,
+      "recess_height_m": 0.0035
+    },
+    {
+      "id": "PF-E3",
+      "theta0_degrees": 29,
+      "theta1_degrees": 76,
+      "z0_m": -0.0252,
+      "z1_m": -0.026,
+      "recess_height_m": 0.0038
+    }
+  ],
+  "fragment_parameters_status": "Each angular span, height and depth independently authored. Not a metric tracing or known angular pitch. E4 not added.",
+  "closed_circumference": true,
+  "back_continuation": {
+    "theta0_degrees": 76,
+    "theta1_degrees": 284,
+    "z0_m": -0.026,
+    "z1_m": -0.025,
+    "recess_height_m": 0,
+    "id": "BACK-HYPOTHESIS",
+    "status": "estimated_unobserved",
+    "meaning": "Smooth exterior closure for orbit review; not documentary evidence of the back edge."
+  }
+}
