@@ -1,515 +1,1070 @@
 {
-  "idea_id": "27f8ffb12df14ff79c6e0f13cbd1cf91",
-  "revision": 23,
-  "prd": {
-    "acceptance_criteria": [
-      "Petite moto utilitaire Wewa ; clavier ZQSD/WASD et tactile.",
-      "Livraison et poursuite gagnables ; perte de vue récupérable ; deux trajets et points de reprise.",
-      "WebGL 2 de base ; Babylon.js et TypeScript candidats ; WebGPU après mesure.",
-      "60 FPS PC et 30 FPS mobile sont des cibles à valider, pas des résultats.",
-      "Préserver sources et hauteurs estimées ; vérifier les recouvrements route/bâtiment.",
-      "V0 : nitro fonctionnel et deux vues commutables, réglages de confort, collisions testées à vitesse nitro maximale ; W35-W37 terminées avant W09.",
-      "R9 : Rush termine exactement à 30 s avec score déterministe, rejouable gratuitement ; récit de prototype entièrement fictif ; pas de paiement réel ni profilage sensible en V0."
-    ],
-    "art_production_recovery": {
-      "acceptance": "Real engine captures and movement evaluated against target. Tests, asset counts and cover renders do not establish visual acceptance. iPhone hardware qualification remains separate.",
-      "acquisition_limits": "Seven additional photo files returned HTTP 429 and are not counted. Irrelevant Boma/café/historical publication images excluded; old construction photos explicitly qualified.",
+  "acceptance_criteria": [
+    "Petite moto utilitaire Wewa ; clavier ZQSD/WASD et tactile.",
+    "Livraison et poursuite gagnables ; perte de vue récupérable ; deux trajets et points de reprise.",
+    "WebGL 2 de base ; Babylon.js et TypeScript candidats ; WebGPU après mesure.",
+    "60 FPS PC et 30 FPS mobile sont des cibles à valider, pas des résultats.",
+    "Préserver sources et hauteurs estimées ; vérifier les recouvrements route/bâtiment.",
+    "V0 : nitro fonctionnel et deux vues commutables, réglages de confort, collisions testées à vitesse nitro maximale ; W35-W37 terminées avant W09.",
+    "R9 : Rush termine exactement à 30 s avec score déterministe, rejouable gratuitement ; récit de prototype entièrement fictif ; pas de paiement réel ni profilage sensible en V0."
+  ],
+  "art_production_recovery": {
+    "acceptance": "Real engine captures and movement evaluated against target. Tests, asset counts and cover renders do not establish visual acceptance. iPhone hardware qualification remains separate.",
+    "acquisition_limits": "Seven additional photo files returned HTTP 429 and are not counted. Irrelevant Boma/café/historical publication images excluded; old construction photos explicitly qualified.",
+    "art_accepted": false,
+    "audit": "creative/ART_PRODUCTION.md",
+    "current_component_checkpoint": "creative/reviews/motorcycle18-checkpoint-02.md",
+    "date": "2026-10-20",
+    "first_fabrication_lot": {
       "art_accepted": false,
-      "audit": "creative/ART_PRODUCTION.md",
+      "catalogue": "https://github.com/Mobutoo/wewa/blob/main/creative/DOSSIER_ASSET_LIST.md",
       "date": "2026-10-20",
-      "first_fabrication_lot": {
+      "editable_sources": "https://github.com/Mobutoo/wewa/tree/main/assets-src/hero-lot01",
+      "full_game_shipped": false,
+      "limits": [
+        "first lot only; full dossier still to produce",
+        "jacket cut, optics, bodywork and weathering need refinement",
+        "street unchanged and far below target",
+        "LOD, KTX2, dynamic steering animations and physical Safari performance remain unqualified",
+        "cargo cords currently encircle carton; final motorcycle anchoring pending",
+        "fine grip and dynamic driving deformation still to refine"
+      ],
+      "public_site_version_unchanged": 3,
+      "review": "https://github.com/Mobutoo/wewa/tree/main/creative/reviews/hero-lot01",
+      "scope": [
+        "original dimension-checked utility motorcycle",
+        "CC0 anatomical adult and garments adaptation with 53-bone rig",
+        "original jet helmet and fitted backpack",
+        "separate first-person sleeves and hands",
+        "original cardboard parcel, tape and restraint cords"
+      ],
+      "state": "rejected_by_user",
+      "storage": "Editable Blender, source vendors with rights and GLBs tracked in GitHub. Structured tracking only in Directus; no binary upload claimed.",
+      "user_feedback": "All views rejected for lack of realism and bulk assembly. Plan faithful motorcycle alone before coding; verify real dimensions and each component before rider.",
+      "verification": {
+        "actual_motorcycle_width_height_length_m": [
+          0.7400729358196259,
+          1.1330000013113022,
+          2.01401486992836
+        ],
+        "all_textures_loaded": true,
+        "engine_http_failures": 0,
+        "engine_javascript_errors": 0,
+        "glb_exports": 4,
+        "gltf_errors": 0,
+        "gltf_warnings": 24,
+        "physical_iphone_tested": false,
+        "report": "WEWA_Developpement_Web/validation/hero-lot01.json",
+        "rig_bones": 53,
+        "skin_parent_translation_test_m": [
+          3,
+          0,
+          0
+        ],
+        "wheelbase_m": 1.284999966621399
+      }
+    },
+    "full_game_shipped": false,
+    "model_identity_answer": "Codex, based on GPT-6; public game is Site version 3, still prealpha.",
+    "motorcycle_component_plan": {
+      "art_accepted": false,
+      "document": "https://github.com/Mobutoo/wewa/blob/main/creative/MOTORCYCLE_PLAN.md",
+      "driver_included": false,
+      "exact_variant_source": "Bajaj Boxer125HD RDC; current red-long-visor series, page model selector00JL22, not a certified model year",
+      "missing": [
+        "top/underneath views",
+        "legible instrument/control details",
+        "high-resolution tyre sidewall and tread identification",
+        "dimensioned drawings or measurements for individual parts"
+      ],
+      "new_geometry_created": false,
+      "published_dimensions_mm": {
+        "height": 1134,
+        "length": 2016,
+        "wheelbase": 1285,
+        "width": 740
+      },
+      "reference_images": {
+        "commercial_detail_images_downloaded_and_examined": 6,
+        "manifest": "creative/library/motorcycle-reference-views.json",
+        "rights": "Documentary study only; no redistribution/game-texture license established",
+        "rotation_angles_downloaded_and_examined": 8
+      },
+      "sequence": [
+        "document one piece and its measured/published/estimated dimensions",
+        "isolated shape comparison",
+        "material and surface comparison",
+        "correct critical defects",
+        "assemble verified motorcycle components only",
+        "recheck actual engine export and optimization",
+        "user motorcycle reception",
+        "then rider"
+      ],
+      "state": "planning_before_rebuild",
+      "tyre_designations": {
+        "front": "2.75-17",
+        "rear": "3.00-17"
+      },
+      "verified_source": "https://www.bajajauto.com/fr-cd/bikes/boxer-125hd"
+    },
+    "motorcycle_reconstruction_research": {
+      "acceptance_protocol": [
+        "landmark reprojection errors limited by observed image uncertainty",
+        "contour and internal opening comparisons",
+        "reserved-view checks against single-view overfitting",
+        "published/measured/estimated dimensions distinguished",
+        "clean material checks under fixed neutral lights",
+        "engine export and optimization visually rechecked"
+      ],
+      "actual_reference_preflight": {
+        "actual_format": "WEBP despite PNG suffix on rotation images",
+        "available_camera_exif": false,
+        "commercial_detail_views": 6,
+        "files": 14,
+        "hashes_verified": true,
+        "rotation_resolution": [
+          1000,
+          700
+        ],
+        "rotation_views": 8
+      },
+      "art_accepted": false,
+      "calibration_executed": false,
+      "date": "2026-10-20",
+      "first_execution_gate": "Landmark annotations with reading uncertainty, then dimensioned guides and per-view camera fitting before detailed tyre construction.",
+      "fspy": "Conditional aid where justified perpendicular vanishing directions exist; not guaranteed on curved isolated motorcycle.",
+      "limits": [
+        "Hidden geometry and missing dimensions remain estimates until new evidence",
+        "No millimetric accuracy or visual acceptance claimed from product images",
+        "Some Blender manual URLs failed web fetch402 and are not counted as fully read."
+      ],
+      "new_geometry_created": false,
+      "photogrammetry": "Not demonstrated; optional diagnostic, requires adequate overlap and usable surface evidence. Existing8 cutouts are not promised as a full scan.",
+      "physical_part_dimensions_measured": false,
+      "plan": "https://github.com/Mobutoo/wewa/blob/main/creative/MOTORCYCLE_RECONSTRUCTION_RESEARCH.md",
+      "research_sources": 11,
+      "rider_included": false,
+      "selected_method": "Component modeling constrained by documented dimensions and multiple fitted photo cameras; geometry/material/game-export comparisons kept separate.",
+      "source_register": "creative/library/motorcycle-methods-sources.json",
+      "source_types": "Official documentation, first-person artist accounts, forum exchange and public course outline; no paid lessons or tools purchased.",
+      "state": "researched_plan_not_executed"
+    },
+    "next_lot": "Continue all18 authorized groups component by component. Complete queued grips/cables/ignition/engine views, correct LH switch glyphs and instrument USB/markings, finish mirror covers and interfaces, then remaining fork/wheels/frame/body/engine/lighting. Rider deferred.",
+    "production_inventory": "92 source catalogue entries AS-001–AS-092 plus 67 overlapping concept traceability rows; previous 112 preparatory families were incomplete. creative/DOSSIER_ASSET_LIST.md and creative/library/fabrication-register.json.",
+    "public_site_version_unchanged": 3,
+    "public_source_commit_unchanged": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
+    "required_loop": [
+      "identified references and local use",
+      "Blender modeling or source adaptation",
+      "UV and PBR, rig and animation, LOD",
+      "actual engine integration",
+      "comparable stills and continuous motion",
+      "correct defects before replication or geographic expansion"
+    ],
+    "source_library": {
+      "bytes": 582162029,
+      "documentary_photos_retained": 29,
+      "files": 196,
+      "integrated_this_pass": 0,
+      "models": 17,
+      "pbr_material_sets": 22,
+      "provider_license": "CC0-1.0 for Poly Haven; Commons photos retain individual licenses and authors"
+    },
+    "source_manifest": "creative/library/manifest.json",
+    "source_verification": {
+      "blender_4_3_2_imports": 5,
+      "gltf_errors": 0,
+      "gltf_models_checked": 16,
+      "gltf_warnings": 40,
+      "hash_verified_files": 196,
+      "heavy_tree_validation_deferred": true,
+      "missing_images": 0
+    },
+    "storage": "Raw 582MB source library stays outside web bundle at /workspace/wewa-asset-library; tracked manifest and restore tool pin URLs, rights and hashes. No binary upload to Directus claimed.",
+    "trigger": "User again rejects version 3 graphics and workflow against the photographic target."
+  },
+  "asset_production_workflow": {
+    "checker": "tools/check_asset_workflow.py",
+    "component_template": "creative/workflow/templates/asset-template.json",
+    "coverage": {
+      "catalogue_rows": 92,
+      "concept_rows": 67,
+      "distinct_model_count": null,
+      "note": "Overlapping source rows routed to recipes; not159 distinct or fabricated models. Family-specific research/decomposition remains pending outside current motorcycle preparation."
+    },
+    "current_component": "creative/workflow/records/moto-steering-upper-001.json",
+    "date": "2026-10-20",
+    "documentary_research": "creative/workflow/RESEARCH.md",
+    "family_recipes": "creative/workflow/RECIPES.md",
+    "motorcycle_decomposition": "creative/workflow/motorcycle-assembly.json",
+    "next_action": "Continue all18authorized groups with separate detailed components, actual source/export/runtime checks and review; rider deferred.",
+    "production": {
+      "active_component": "MOTO-STEERING-UPPER-001",
+      "art_accepted": false,
+      "authorized_execution_groups": 18,
+      "camera_calibration_executed": false,
+      "current_candidate_status": "Sixteen isolated candidate component records retained for review; all18group fabrication continues in three chains. No completed group or accepted motorcycle.",
+      "execution_complete": false,
+      "motorcycle_groups": 25,
+      "new_geometry": true,
+      "parallel_components_max": 3,
+      "parallel_user_authorized": true,
+      "previous_lot": "hero-lot01 remains rejected in all views",
+      "public_preview_unchanged": true,
+      "rider": "deferred until motorcycle user reception",
+      "working_camera_studies_executed": true
+    },
+    "research_results": [
+      "Manufacturer BM125 global drum-brake and suspension information found; exact RDC component compatibility conditional.",
+      "Bajaj-authored BM125 UG revision00 parts catalogue mirrored by third party,72PDF sheets; index and selected technical sections read, wheel illustration inspected.",
+      "HD brochure width770mm conflicts with current RDC740mm; retain RDC reference, no silent merge.",
+      "Older catalogue tube-type tyre description differs from current RDC tubeless advertisement.",
+      "MRF product-specific tyre dimensions and views found as comparative references only; no Boxer supplier/fitment established."
+    ],
+    "review_template": "creative/workflow/templates/review-template.md",
+    "source_routing": "creative/workflow/coverage.json",
+    "sources": "creative/workflow/sources.json",
+    "stages": [
+      "identity and decomposition",
+      "sources, variants, views and dimensions",
+      "scale and comparison protocol",
+      "isolated form",
+      "materials",
+      "function and interfaces",
+      "real engine comparison",
+      "optimization with comparison",
+      "revision-bound user reception"
+    ],
+    "verification": "WEWA_Developpement_Web/validation/asset-workflow.json",
+    "verification_results": {
+      "declared_component_records": 22,
+      "local_workflow_and_evidence_integrity": "passed",
+      "manifest_file_hashes_checked": 650,
+      "physical_iphone_tested": false,
+      "registered_candidate_component_records": 16,
+      "review_manifests_checked": 34,
+      "runtime_capture": "Actual WebGL canvas pixels and whole object framing after explicit resize; old captures preserved separately",
+      "source_checkpoint": "b4d5753b4fc6dbdf77c5bfb4b4845bf28b4ca0fc",
+      "staged_json_files_checked": 687,
+      "visual_realism_certified": false
+    },
+    "version": 1,
+    "workflow_definition": "creative/workflow/workflow.json",
+    "workflow_document": "creative/workflow/README.md"
+  },
+  "creative_direction": {
+    "approved": {
+      "budget_eur": 0,
+      "creative_autonomy": true,
+      "devices": [
+        "iPhone 16",
+        "iPhone 15"
+      ],
+      "final_brand": "Viva Wewa",
+      "hosting": "Prévisualisation d'abord ; domaine définitif et VPS Hetzner à choisir plus tard",
+      "local_reviewer": "Utilisateur connaît parfaitement Kinshasa",
+      "motorcycle": "Respecter références officielles présentes dans les fichiers",
+      "preview_audience": "public",
+      "temporary_domain_candidate": "Wewa.io.cloud (non configuré)",
+      "visual_identity": "Style2 selected2026-10-20: cinematic photographic realism, faithful real-world proportions, warm directional light, credible rich colors and readable shadows."
+    },
+    "atmosphere_reference": {
+      "film": "Viva Riva!",
+      "scope": "Atmosphère urbaine, débrouille, tension, humour ; univers, personnages et récit originaux",
+      "source": "Référence utilisateur"
+    },
+    "cultural_notes": {
+      "ambient_sound": [
+        "Klaxons",
+        "Receveurs qui appellent les stations et les trajets",
+        "Rumba et musique congolaise originale",
+        "Échanges taquins et chamailleries folkloriques entre taxis, receveurs et minibus"
+      ],
+      "geography": "Photos/satellites comme références ; ne pas affirmer des détails non vérifiés",
+      "lingala_as_provided": [
+        "babele la",
+        "bazo belela"
+      ],
+      "lingala_status": "Conserver les mots fournis comme notes ; écriture, sens et prononciation à faire relire avant enregistrement",
+      "street_life": [
+        "Piétons et mamans qui traversent parfois en groupe et en courant ; véhicules qui anticipent et attendent",
+        "Rues non goudronnées étroites, nids de poule, eau en saison des pluies, caniveaux"
+      ]
+    },
+    "expansion": {
+      "later": "Autres quartiers de Kinshasa, ajoutés progressivement avec données et validation locale",
+      "pilot": "Gombe et gare centrale / environs à valider géographiquement"
+    },
+    "game_title": "Viva Wewa",
+    "implementation_status": "Démarrage autorisé ; aucune fonctionnalité nouvelle déclarée terminée",
+    "motorcycle_branding": {
+      "documentary_names_unchanged": true,
+      "future_3d_tank": "Use WEWA; tank not yet fabricated in current wheel component lot",
+      "generated_target": "creative/direction/motorcycle-wewa-style-02-generated-reference.png",
+      "tank_wordmark": "WEWA",
+      "user_instruction": "Remplacer Boxer par Wewa sur la moto"
+    },
+    "review_register": {
+      "audio": "Synthèse originale pour moteur, klaxons et maquette rythmique ; aucun morceau connu réutilisé",
+      "dialogue_status": "Brouillons français inventés, pas de traduction lingala prétendument authentique",
+      "proposed_characters": [
+        {
+          "name": "Kito",
+          "role": "Coursier adulte et pilote jouable",
+          "status": "proposition à relire"
+        },
+        {
+          "name": "Mado",
+          "role": "Amie du héros, participe activement à l’enquête",
+          "status": "proposition à relire"
+        },
+        {
+          "name": "Sana",
+          "role": "Artiste entièrement fictive",
+          "status": "proposition à relire"
+        }
+      ],
+      "proposed_dialogue_french": [
+        "Gombe ! Gombe ! Encore deux places !",
+        "Eh chauffeur, tu conduis ou tu danses ?",
+        "Doucement, laisse passer les mamans !"
+      ]
+    },
+    "selected_graphic_style": {
+      "accepted_geometry": false,
+      "accepted_style": true,
+      "date": "2026-10-20",
+      "document": "creative/GRAPHIC_STYLE.md",
+      "id": 2,
+      "name": "Réalisme cinématographique",
+      "user_decision": "Oui, le2."
+    },
+    "source": "Décisions utilisateur dans cette conversation",
+    "technical_reference": "R9 / plan 1.2 conservés, nouvelles décisions priment pour nom, audience et appareils",
+    "version": "1.0",
+    "visual_correction": {
+      "brand": "Couleurs punchy réservées à l'identité et à l'interface",
+      "reference": "Image fournie par l'utilisateur dans la conversation",
+      "status": "Cible artistique à atteindre, pas preuve d'un rendu moteur déjà livré",
+      "target": "Réalisme photographique, proportions et matériaux crédibles, usure, lumière naturelle, caméra de poursuite ; pas d'illustration/cartoon pour l'accueil"
+    }
+  },
+  "creative_review_register": [
+    {
+      "category": "personnages",
+      "id": "characters",
+      "items": [
+        {
+          "name": "Kito",
+          "role": "Coursier adulte jouable, connaît les passages de Gombe"
+        },
+        {
+          "name": "Mado",
+          "role": "Amie du héros, participe à l’enquête et laisse elle-même un indice"
+        },
+        {
+          "name": "Sana",
+          "role": "Artiste fictive du futur récit, non représentée dans ce premier chapitre"
+        }
+      ],
+      "status": "à relire"
+    },
+    {
+      "category": "missions inventées",
+      "id": "missions",
+      "items": [
+        {
+          "description": "30 secondes de collecte et dépôt sur le tracé pilote, tentatives gratuites",
+          "name": "Wewa Rush"
+        },
+        {
+          "description": "Six colis à livrer à deux relais fictifs",
+          "name": "La tournée"
+        },
+        {
+          "description": "Livraison pour Mado, message interrompu, taxi jaune à suivre, bracelet laissé comme indice vers la suite",
+          "name": "Le dernier appel"
+        },
+        {
+          "description": "Balade libre sur le secteur chargé",
+          "name": "Kin à ton rythme"
+        }
+      ],
+      "status": "jouables en prototype, à relire"
+    },
+    {
+      "category": "textes et paroles inventés",
+      "id": "dialogue",
+      "items": [
+        "Gombe ! Gombe ! Encore deux places !",
+        "Eh chauffeur, tu conduis ou tu danses ?",
+        "Doucement ! Laisse passer les mamans !",
+        "Kito, apporte-moi ces colis. Je t’attends au relais.",
+        "Kito ? On a changé de taxi… Jaune, bande noire. Je te laisse une piste…",
+        "On va bien. Suis la piste vers le port."
+      ],
+      "status": "à corriger librement par utilisateur"
+    },
+    {
+      "category": "géographie et décors",
+      "id": "places",
+      "items": [
+        "Routes et emprises fournies préservées ; boucle d'environ 1,50 km sur Boulevard du 30 Juin et rues adjacentes",
+        "Relais Chez Mado et Relais du quartier fictifs ; pas des commerces documentés",
+        "Palmiers, étals, fenêtres et habillages originaux placés pour le prototype ; pas un relevé de terrain",
+        "Gare centrale et autres quartiers visés pour la suite ; aucune liaison complète au port déclarée validée"
+      ],
+      "status": "validation locale requise"
+    },
+    {
+      "category": "scènes de rue inspirées des indications utilisateur",
+      "id": "street-life",
+      "items": [
+        "Groupe de piétons traversant ensemble et véhicules qui attendent",
+        "Receveurs appelant les trajets, par sous-titres et voix française facultative du navigateur",
+        "Klaxons, échanges taquins et maquette instrumentale originale",
+        "Caniveaux, pluie, nids de poule et routes dégradées à approfondir sur références locales, pas simulés en détail dans cette première version"
+      ],
+      "status": "première mise en scène simplifiée"
+    },
+    {
+      "category": "images et modèles originaux",
+      "id": "assets",
+      "items": [
+        "Historical rejected hero-lot01 motorcycle and rider remain preserved; they do not qualify the new component work.",
+        "Rider and garments adapted from documented MakeHuman/MPFB CC0 graphical data, 53-bone rig; not an entirely original anatomical sculpt.",
+        "Original helmet, backpack and cardboard parcel/tape/cords; source Blender and review GLBs in GitHub; art acceptance pending.",
+        "First-person sleeves and hands plus proposed camera inspected locally; fine grip and dynamic steering still to refine.",
+        "Other minibus/taxi/street models remain prealpha and unaccepted; no public asset replacement in this lot.",
+        "Current source checkpoint:16 separate candidate component records, real Blender views and runtime checks; see motorcycle18-checkpoint-02. Each part and all18groups remain subject to visual/interface review."
+      ],
+      "status": "Hero-lot01 rejected by user; separate motorcycle fabrication underway, public prealpha unchanged"
+    },
+    {
+      "category": "son et langue",
+      "id": "audio",
+      "items": [
+        "Moteur et klaxons synthétisés via Web Audio",
+        "Motif instrumental original de travail, pas un morceau congolais existant et pas une rumba enregistrée authentifiée",
+        "Français via voix système facultative ; aucun lingala inventé ou voix d’un tiers copiée",
+        "Notes utilisateur babele la / bazo belela conservées ; écriture et prononciation à valider avec lui"
+      ],
+      "status": "maquette originale"
+    }
+  ],
+  "date": "2026-10-20",
+  "decisions": [
+    "# WEWA - Cadrage R9\n\n## WEWA / LE CADRAGE ACTUEL\n\nRévision 9 - 20 octobre 2026 - Document de départ pour Codex\n\n### La promesse\n\nDans Kinshasa, ta meilleure arme, c’est de connaître le passage. Petite moto Wewa, trafic lisible, choix d’itinéraire et conduite précise constituent le cœur du jeu. La ville, les personnages et la musique donnent du sens à cette maîtrise.\n\n### Ce qui est décidé\n\nAjouter Wewa Rush de 30 secondes ; conserver les livraisons et l’enquête narrative ; intégrer nitro, vue arrière et vue au guidon ; distinguer score, réputation et monnaie gagnée. Reprises narratives gratuites. Personnalisation fondée sur les préférences de jeu. Aucun paiement réel dans la V0.\n\n### Autorité des documents\n\nCes huit premières pages constituent le cadrage R9 et prévalent sur les formulations antérieures concernant modes, récit, caméras et reprises. Les 31 pages R8 qui suivent conservent les références de Kinshasa, véhicules, lieux, personnages, sources et économie générale. Elles sont identifiées comme annexe antérieure. Le détail nitro du précédent addendum reste valable sauf contradiction explicite.\n\n### État réel\n\nLe pilote Gombe comporte des volumes de bâtiments et de voirie, des données et des scripts. Aucune application jouable, conduite, mission, boutique ou mesure de FPS n’est encore livrée. Les nouveaux réglages sont des hypothèses de conception à éprouver. Le rendu photoréaliste et le classement parmi les meilleurs jeux restent des ambitions.\n\n## WEWA RUSH / 30 SECONDES\n\nUne boucle courte : choisir, transporter, livrer, recommencer\n\n### Règles de la première version\n\nAprès un compte à rebours 3-2-1, le joueur part déjà en mouvement et dispose de 30 secondes de simulation active. Ramasser un colis par passage dans une zone balisée ; capacité initiale de trois colis. Livrer dans une zone dédiée en roulant sous le seuil configurable de 15 km/h. Un dépôt consomme seulement les colis présents. Aucun arrêt obligatoire à un menu.\n\n### Score de départ à équilibrer\n\nChaque colis livré vaut 100 points × multiplicateur. Le multiplicateur démarre à 1, augmente de 0,25 après un dépôt propre et plafonne à 3. Un dépôt groupé utilise le même multiplicateur pour tous ses colis, puis augmente le multiplicateur une seule fois. Un passage technique validé rapporte 10 points, au maximum une fois par balise et par course. Le score est entier, arrondi à la fin de chaque événement.\n\n### Risque et fin de manche\n\nUne collision remet le multiplicateur à 1 et ralentit physiquement la moto ; un contact continu compte comme un seul incident. Les colis restent à bord en V0. À 30 secondes, aucun colis non livré ne marque de point ; aucun nouvel événement de score n’est accepté. Afficher score, colis livrés, record personnel et Rejouer. Pas de bonus pour heurter des personnes. Aucun prolongement payant en V0.\n\n### Équité et variété\n\nUne seule route et un trafic à graine fixe pour le premier Rush ; deux branches pour choisir entre trajet sûr et collecte supplémentaire. Les identifiants de colis et dépôts empêchent les doubles récompenses. Réinitialiser tout l’état au redémarrage. Une pause fige le temps en solo non classé. Plus tard, les défis classés partagent graine, règles et assistance ; aucune reprise ni adaptation cachée ne modifie un score classé.\n\n## NITRO / DEUX CAMÉRAS\n\nSensation de vitesse forte, obstacles toujours lisibles\n\n### Nitro arcade\n\nMaintenir Maj ou le bouton tactile NITRO. Jauge de 100 unités ; consommation 33,3 unités/s, soit environ trois secondes pleines. Accélération × 1,5 et vitesse maximale × 1,25 comme valeurs de départ. Recharge passive 5 unités/s après deux secondes sans activation ; jeton dédié +20 dans la limite de 100. Pas de nitro à l’arrêt ou en marche arrière. Freinage, pause, perte de focus et chute l’interrompent.\n\n### Effets de vitesse\n\nFlou radial surtout périphérique, vent, régime moteur renforcé et légère ouverture du champ de vision. Garder le centre et le HUD lisibles. Champ vertical proposé : 60° à 68° en vue arrière, 65° à 71° au guidon. Transitions de 0,2 s à l’entrée et 0,35 s au retour. Les effets n’augmentent pas la vitesse physique au-delà des paramètres du contrôleur.\n\n### Vue au guidon\n\nTouche C ou bouton caméra : bascule à tout moment entre poursuite et première personne, y compris sous nitro. Mains, guidon, compteur et réservoir visibles, horizon stabilisé. Même physique, mêmes récompenses et mêmes collisions dans les deux vues. Choix mémorisé ; aucune bascule forcée pendant une manœuvre. Modèles provisoires acceptés pour la V0.\n\n### Confort et performance\n\nFlou, secousses et variation du champ de vision réglables séparément. Mode Confort sans flou ni secousse. Flou désactivé par défaut sur le profil mobile modeste. Aucune exigence de miroirs temps réel. Collisions balayées et chargement anticipé testés à la vitesse nitro maximale. Les paramètres détaillés restent dans config/nitro_camera.json.\n\n## LE RÉCIT / UNE DISPARITION\n\nLe lien personnel motive le héros ; la célébrité amplifie l’enjeu\n\n### Déclencheur fictif\n\nUne personnalité attendue à Kinshasa doit participer à un événement. Une amie proche du héros travaille dans son équipe. Après un changement de véhicule, les deux femmes disparaissent. Le héros reçoit de son amie un message vocal interrompu ; un détail du taxi et sa connaissance des rues lui donnent une première piste. Il peut admirer la célébrité, mais cherche avant tout son amie.\n\n### Personnages et participation\n\nPour le prototype, utiliser une personnalité entièrement fictive, sans visage, voix ou biographie identifiables de Didi Stone. Didi Stone est conservée dans les notes comme proposition de collaboration à lui présenter, sans accord ni participation annoncés. Tout usage futur de son identité demanderait un cadrage de collaboration et un récit explicitement fictionnel. Aucun enlèvement réel n’est allégué.\n\n### Progression en chapitres\n\n1. Une livraison présente l’amie avant la disparition. 2. Le message déclenche une courte poursuite. 3. Le taxi disparaît ; un témoin ouvre l’enquête. 4. Une course utile permet d’obtenir un contact ou un accès. 5. Un indice mène vers un relais puis le port. 6. Le sauvetage résout le premier arc, avec une suite possible. Les lieux et distances restent soumis à validation du parcours.\n\n### Rythme et initiative des victimes\n\nL’amie laisse des indices et contribue à l’évasion ; la personnalité a aussi des décisions et une voix. Alterner tension, recherche, rencontre et respiration. Les livraisons annexes se placent pendant une attente ou servent directement l’enquête. Pas de cinquante courses sans rapport pendant une urgence immédiate. La V0 ne développe que l’introduction, une poursuite et un indice ; pas toute la campagne.\n\n## REJOUER / PROGRESSER / ACHETER\n\nUne économie compréhensible et une histoire accessible\n\n### Trois compteurs distincts\n\nScore de manche : performance et record, jamais dépensé. Réputation : contacts et missions, jamais vendue. Monnaie gagnée : personnalisation et équipements équilibrés. Les petits bonus récurrents doivent correspondre à une action ou un objectif clair ; éviter une multiplication de monnaies et des récompenses sans utilité.\n\n### Règles de reprise retenues\n\nCampagne : checkpoints gratuits, reprise proche de l’erreur. Rush V0 : tentatives gratuites illimitées, redémarrage immédiat, aucune seconde chance au-delà des 30 secondes. Après la V0, des événements peuvent utiliser des tickets gagnés en jeu et une reprise par jeton hors classement. Les reprises payantes obligatoires et les prix qui augmentent après un échec ne sont pas retenus.\n\n### Revenus envisagés\n\nCosmétiques, collections, épisodes annexes, packs de nouveaux défis et sponsoring naturel du décor. Les effets visuels de nitro peuvent être personnalisables, sans avantage mécanique. Les prix indicatifs de l’annexe R8 sont en USD, restent des hypothèses et doivent être validés avant vente. Pas de contrat de marque présumé. Toute boutique V0 est une démonstration sans encaissement.\n\n### Offres et options non engagées\n\nPrésenter contenu exact, aperçu et prix explicite ; proposer des articles correspondant aux goûts du joueur. Pas d’offre pendant la conduite ni après chaque échec. Les tentatives payantes facultatives restent une piste à réexaminer, pas une tâche de développement autorisée pour la V0. Pas de récompense aléatoire payante. Le revenu doit être suivi avec la satisfaction, les retours et les remboursements.\n\n## PERSONNALISATION / PRÉFÉRENCES\n\nAdapter les propositions sans modifier l’équité\n\n### Profils de jeu modifiables\n\nChronomètre : records et parcours techniques. Exploration : repères et raccourcis. Histoire : chapitres et dialogues. Personnalisation : livrées et accessoires. Temps disponible court : Rush. Ces catégories décrivent une préférence récente, pas la psychologie, la richesse ou la vulnérabilité de la personne. Le joueur peut choisir son mode sans recommandation.\n\n### Premières règles simples\n\nV0 : choix explicite entre Rush, livraison et histoire ; progression locale seulement. Plus tard : après au moins cinq sessions valides, proposer en priorité le mode le plus souvent choisi. Après trois échecs consécutifs, proposer entraînement ou assistance, sans achat associé. La proposition reste refusable et ne modifie pas silencieusement la difficulté d’une course classée.\n\n### Données et contrôle\n\nPrévoir des événements locaux minimaux : début et fin de course, mode, durée active, colis livrés, score, collisions, caméra et activation d’une aide. Ne pas enregistrer les touches brutes, les contacts ou les données privées du téléphone. Préférences réinitialisables. Un suivi distant éventuel fera l’objet d’un chantier séparé avec information et choix utilisateur ; aucune connexion analytique cachée en V0.\n\n### Essais et limites des références\n\nComparer des variantes clairement définies sur des groupes distincts lorsque l’audience le permet. Le support Tetris Mobile décrit des essais sur récompenses et prix ; cela ne prouve pas un profilage psychologique individuel. La recherche sur l’ajustement de difficulté ne garantit aucun gain pour WEWA. Nos premières règles sont des hypothèses produit à mesurer, pas un algorithme de monétisation déjà validé.\n\n## RYTHME / REJOUABILITÉ / PREUVES\n\nValider la qualité d’une course avant d’étendre les neuf zones\n\n### Trois durées complémentaires\n\nRush : 30 s pour la maîtrise et la revanche immédiate. Livraison express : cible de 2 à 4 min pour un trajet complet. Chapitre narratif : cible de 8 à 15 min plus tard, avec sauvegarde intermédiaire. La première V0 reste un petit ensemble de courses et une poursuite de 5 à 8 min, complété du Rush.\n\n### La rue devient un terrain de maîtrise\n\nDeux ou trois itinéraires ont des risques et avantages compréhensibles. Un carrefour doit donner une décision, pas une collision inévitable. Alterner densité, ouverture et climax. Trafic annoncé par gestes, roues, feux et sons. Garder l’humour, la musique et l’entraide ; Kinshasa ne se résume pas aux crimes. Prioriser moto, premier plan, signalétique et ambiance sonore.\n\n### Extension après validation\n\nFantôme personnel d’abord, puis fantômes d’amis avec conditions comparables, uniquement après le socle. Défis de quartier, variations de parcours et collections peuvent renouveler l’intérêt. Ne pas démarrer par un multijoueur temps réel, une ville complète ou une boutique complexe. Les classements publics exigent une validation des scores et des mesures contre la triche, absentes du prototype local.\n\n### Ce que l’on mesurera\n\nPetit panel qualitatif de 20 à 30 personnes, incluant des joueurs kinois : compréhension, incidents injustes, choix de trajet et relance spontanée. Puis, sur une audience suffisante : retour J1/J7, taux de fin de course, nombre de relances, stabilité et satisfaction. Définir les cohortes et distinguer retour volontaire et relance suggérée. Les essais ne démontrent pas à eux seuls un futur best-seller.\n\n## DÉMARRER DANS CODEX\n\nPriorité : une course agréable, reproductible et réellement jouable\n\n### Ordre opérationnel\n\nLire 00_LIRE_AVANT_DE_CODER.md puis PROMPT_REPRISE_CODEX.txt. Initialiser app/ et importer une cellule de Gombe ; réaliser le contrôleur et les collisions ; ajouter nitro et deux caméras ; réaliser Rush et le score ; ajouter livraison et courte poursuite. Mesurer la performance. Affiner ensuite art, personnages, musique et recommandations. Aucun paiement réel avant les tâches dédiées post-bêta.\n\n### Contrats vérifiables\n\nÀ 30 s, le Rush termine exactement une fois et ne compte plus de dépôt. Un colis ne rapporte qu’une fois. Rejouer réinitialise timer, jauge, trafic, inventaire et multiplicateur. La simulation produit les mêmes règles à 30 et 60 images/s. Pause et perte de focus ne laissent pas l’accélérateur bloqué. Les deux caméras partagent le même état du véhicule. Les dépendances du backlog doivent rester sans cycle.\n\n### Fichiers faisant autorité\n\nWEWA_Developpement_Web/docs/CADRAGE_R9.md ; config/rush.json ; config/nitro_camera.json ; config/personalization.json ; config/narrative.json ; backlog/tasks.json. Les fichiers context/ conservent les textes et exports ; la version R9 prévaut sur les descriptions historiques. Le plan de production est actualisé en version 1.2. Les fonctionnalités indiquées pending ne sont pas réalisées.\n\n### Références et annexes\n\nLa suite conserve le dossier R8 complet, avec ses crédits et ses références locales. Sources complémentaires relues le 20 octobre 2026 : support Tetris Mobile, « My rewards are different from someone else » ; Ascarza, Netzer et Runge, « Personalized game design for improved user retention and monetization in freemium games », DOI 10.1016/j.ijresmar.2025.01.006. Ces sources éclairent les tests ; elles ne prouvent pas la performance de WEWA.\n",
+    "Reprends WEWA, jeu solo de petite moto à Kinshasa, dans ce dossier.\nLis AGENTS.md puis 00_LIRE_AVANT_DE_CODER.md. Dans WEWA_Developpement_Web, lis AGENTS.md, docs/CADRAGE_R9.md, docs/PLAN_DE_PRODUCTION.md (mise à jour 1.2), config/product.json, config/rush.json, config/nitro_camera.json, config/personalization.json, config/narrative.json et backlog/tasks.json.\nLe cadrage R9 prévaut sur les annexes et exports historiques. Si Ewutelo est disponible, lis l’idée 27f8ffb12df14ff79c6e0f13cbd1cf91 ; le contexte local suffit sinon.\nCrée app/ et commence W02 puis W03. Réutilise les modèles Gombe et les sources ; ne refais pas tout le dossier. Implémente ensuite contrôleur, collisions, nitro, vue arrière et au guidon ; puis Wewa Rush 30 secondes avec score, dépôt et relance gratuits. Conserve livraison et courte poursuite narrative pour fermer la V0. Respecte les dépendances ; W01 peut attendre des appareils physiques sans bloquer le socle web.\nLe récit utilise une amie du héros et une personnalité fictive. Didi Stone est uniquement une piste de collaboration, sans participation acquise ni visage utilisé dans le prototype. Reprises narratives gratuites. Aucun achat réel, paiement pour difficulté, profilage sensible, télémétrie distante cachée ou classement public dans la V0.\nTravaille par jalons jouables, tests exécutés et preuves. Ne déclare aucun FPS, photoréalisme ou succès commercial sans mesure. Si une vérification est impossible, note la limite et poursuis le travail faisable. Les 45 tâches actuelles font autorité ; les fonctionnalités nouvelles restent à programmer.\n",
+    "SOCLE À PRÉSERVER : Géographie en neuf zones de jeu, routes et POI sourcés ; Gombe pilote. Petites motos Wewa, vieux Mercedes T1/207 jaunes et bleus, taxis jaunes, Hilux/Prado ; Hyundai Palisade comme référence visuelle, dotations gouvernementales non confirmées. Roulages ordinaires, alliés ou corrompus fictifs, robots documentés historiquement, convois et détours. Vendeurs, quados, marchés, nganda ntaba, concerts et rumba, sapeurs, écoles, maraîchers, fleuve et Brazzaville. Kuluna et réseaux criminels fictifs ; vie quotidienne positive et habitants variés. Monuments, Martyrs, Limete, Lumumba, Liberté, Zando, Tourisme et aéroport restent des références à valider spatialement. Publicités et produits avec marques fictives tant qu'aucun contrat n'existe. Petite moto et matériaux de premier plan prioritaires. V0 TypeScript/Babylon.js candidat, WebGL2, GLB par cellules de 128 m ; données et code séparés. Objectifs non mesurés : 30 FPS mobile, 60 PC, chargement progressif. 1 747 objets bâtis, 191 cellules, 351 GLB, hauteurs souvent estimées et recouvrements à contrôler. Aucun moteur, conduite, mission, paiement ou benchmark implémenté. Les documents intégraux, références, licences et géodonnées sont dans WEWA_Reprise_Codex.zip. Le concept R9 contient huit pages actuelles et 31 pages R8 de référence ; le plan 1.2 contient deux pages actuelles et 15 pages de référence. L'archive contient aussi nitro_camera.json, rush.json, personalization.json, narrative.json et 45 tâches. Les descriptions historiques cèdent devant R9.",
+    "Décisions utilisateur de lancement Viva Wewa : prévisualisation publique, iPhone 15/16, budget 0 €, motos réalistes selon références officielles, identité illustrée punchy/colorée, liberté créative sous relecture, ambiance sonore et vie de rue de Kinshasa. Le détail fait autorité dans creative_direction.",
+    "2026-10-20 — User requests WEWA tank lettering, regenerated solo target, and continued3D production. Generated branding target separate from actual editable cast-rim and tyre-fit candidates. Related1.40in rim width not certified RDC;44mm working width remains estimated. No art acceptance or public update.",
+    "2026-10-20 — Continue with single front brake-panel casting. Related JA131605 front/back photographs traced to BM125UG catalogue; reused retailer photos are not independent captures or exact RDC confirmation. Original Blender construction volumes with robust Manifold3D3.3.2 CSG; source topology, openings and candidate hub interface checked before real renders and Babylon captures. Dimensions, clocking and finish remain provisional; no lever/axle, art reception or public deployment."
+  ],
+  "goals": [
+    "Livrer une V0 de 5 à 8 minutes avec conduite, livraison et poursuite de taxi.",
+    "Puis produire quinze minutes de qualité artistique, avec vie locale, roulage, convoi, contact et berge.",
+    "Étendre progressivement aux neuf zones LIGA.",
+    "Monétiser ensuite cosmétiques, contenu et publicité intégrée à petits prix."
+  ],
+  "implementation_report": {
+    "art_recovery_document": "creative/ART_PRODUCTION.md",
+    "deployment": {
+      "source_commit": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
+      "status": "succeeded",
+      "version": 3
+    },
+    "fabrication_source_commit": "b4d5753b4fc6dbdf77c5bfb4b4845bf28b4ca0fc",
+    "features": [
+      "Moto originale aux proportions documentées",
+      "GLB Gombe et chargement par cellules",
+      "Clavier et commandes tactiles simultanées",
+      "Nitro, deux caméras, confort et pause",
+      "Rush 30 s, six colis, poursuite et indice, balade",
+      "Record local, réglages et maquette sonore originale"
+    ],
+    "latest_art_status": "Actual separate Blender/OIDN components and runtime movement/canvas checks published incrementally; LH mirror correction and remaining groups continue. Public game Site version3 unchanged.",
+    "limits": [
+      "Exact street reference and real facade survey",
+      "Human mobile and local road-priority validation",
+      "Finished photoreal art, character animation and lighting",
+      "Sustained hardware performance qualification",
+      "Full V1 fifteen-minute assembly and later phases"
+    ],
+    "milestone": "Authorized18group motorcycle fabrication in progress;16candidate component records, no artistic reception",
+    "preview_url": "https://viva-wewa.chummyrose33.chatgpt.site",
+    "repository": "https://github.com/Mobutoo/wewa",
+    "review_url": "https://github.com/Mobutoo/wewa/blob/main/creative/reviews/motorcycle18-checkpoint-02.md",
+    "source_commit": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
+    "tests": "33 passing logic/integration tests, actual browser QA desktop/touch, full driven story with six parcels and 1300m pursuit in about300s, checkpoint restored, no collisions in automated scenario."
+  },
+  "mobile_controls_revision": {
+    "date": "2026-10-20",
+    "handedness": "Fixed reversed steering in RH scene; actual camera projection verifies right input turns screen right.",
+    "reason": "Utilisateur refuse les commandes séparées qui mobilisent deux mains pour conduire.",
+    "release": "Retour au neutre, perte de focus ou pause efface les contacts et axes.",
+    "scheme": "Un seul joystick analogique au pouce gauche : haut accélérer, bas freiner puis reculer, gauche/droite diriger simultanément. Nitro et klaxon indépendants à droite.",
+    "verification_scope": "Unit tests and real Chromium touch events; physical Safari approval pending."
+  },
+  "motorcycle_component_fabrication": {
+    "active_component": {
+      "all_dimensions_estimated": true,
+      "art_accepted": false,
+      "construction": "Separate original plate, shaped edge and seven actual open passages; no installed pose or hidden stamping section certified",
+      "exports": [
+        "assets-src/moto-components/steering-triples/upper/steering-upper-inspection.glb"
+      ],
+      "id": "MOTO-STEERING-UPPER-001",
+      "limits": [
+        "Working width218.5mm and thickness2.2mm estimated, not calibrated from31mm fork diameter",
+        "Local isolated XY frame; no installed steering or instrument fit certified",
+        "No accepted mobile LOD, physical iPhone test or motorcycle reception"
+      ],
+      "reference": "Related DS181005 photographs; exact current RDC applicability unconfirmed",
+      "review": "creative/reviews/steering-upper-v1/README.md",
+      "source": "assets-src/moto-components/steering-triples/upper/steering-upper-v1.blend",
+      "status": "isolated_candidate_in_review_not_installed_not_accepted",
+      "technical_verification": {
+        "actual_blender_views": 2,
+        "babylon_actual_export_loaded": true,
+        "export_sha256": "28bd5bc125aa398a6ce4835f770b157a7cd245211ad8a2e7475c7ff15f5802a4",
+        "glTF_errors": 0,
+        "glTF_warnings": 0,
+        "nonblank_canvas_and_whole_framing_checked": true,
+        "source_check": "creative/reviews/steering-upper-v1/source-geometry-check.json",
+        "source_sha256": "ba2bf24d27f3ef2092d3997823f2c792cec4af268aa527ee4730ba23f064e47f",
+        "triangles": 79154
+      }
+    },
+    "cockpit_review": {
+      "all_placement_dimensions_estimated": true,
+      "art_accepted": false,
+      "bar_surface_crossings": 0,
+      "historical": true,
+      "kind": "Linked-source candidate arrangement, not an installed brake/cockpit or gameplay capture",
+      "linked_sources": [
+        {
+          "component": "instruments",
+          "object_count": 159,
+          "sha256": "e3321cee34967f7749dbfa8650fe01c404137c55cfb5c42881363f098cb91ec0",
+          "source": "assets-src/moto-components/instruments/instruments-v1.blend"
+        },
+        {
+          "component": "handlebar",
+          "object_count": 1,
+          "sha256": "1385ccc667f30681e334ce96aff71d2214794238c5b31e0a1fd4b75b8ad6652a",
+          "source": "assets-src/moto-components/handlebar/handlebar-v1.blend"
+        },
+        {
+          "component": "grips",
+          "object_count": 2,
+          "sha256": "d0070617414c809b1a6e71423029720a5d3dbb71130c8ca666316f5ffa4ed9a1",
+          "source": "assets-src/moto-components/handlebar-grips/handlebar-grips-v1.blend"
+        }
+      ],
+      "missing": [
+        "clamps",
+        "instrument bracket",
+        "throttle carrier",
+        "switches",
+        "levers",
+        "cables",
+        "mirrors",
+        "ignition position",
+        "visor"
+      ],
+      "note": "Prior cockpit-v1 uses historical gripsv1; new source candidates are reviewed separately.",
+      "physical_iphone_tested": false,
+      "pointer_ranges": {
+        "fuel_fraction": [
+          0,
+          1
+        ],
+        "gear": [
+          0,
+          5
+        ],
+        "speed_kmh": [
+          0,
+          140
+        ]
+      },
+      "review": "creative/reviews/cockpit-v1/README.md",
+      "source": "assets-src/moto-components/cockpit-review/cockpit-review-v1.blend",
+      "source_sha256": "befc6e3c4a444b051acc524762234011236d86e5a632dcfceb30d0b8009a9452"
+    },
+    "date": "2026-10-20",
+    "evidence": {
+      "actual_blender_renders": "creative/reviews/front-tyre-v1/",
+      "actual_cockpit_increment_blender_views": 11,
+      "axle_research": "creative/workflow/front-axle-research.json",
+      "cockpit18_shape_audit": "creative/research/cockpit18-shape-audit.json",
+      "cockpit_review": "creative/reviews/cockpit-v1/",
+      "cockpit_validation": "WEWA_Developpement_Web/validation/cockpit-v1.json",
+      "cockpit_visual_audit": "creative/research/cockpit-visual-audit.json",
+      "core_shape_audit": "creative/research/cockpit-core-shape-audit.json",
+      "current_canvas_capture_tool": "tools/capture_motorcycle18_v3.py",
+      "engine_review": "tools/asset-lab/",
+      "front_brake_lever_review": "creative/reviews/front-brake-lever-v1/",
+      "front_brake_lever_validation": "WEWA_Developpement_Web/validation/front-brake-lever-v1.json",
+      "front_brake_plate_review": "creative/reviews/front-brake-plate-v2/",
+      "front_brake_plate_source_check": "creative/reviews/front-brake-plate-v2/source-geometry-check.json",
+      "front_brake_plate_validation": "WEWA_Developpement_Web/validation/front-brake-plate-v2.json",
+      "front_rim_geometry_check": "creative/reviews/front-rim-v1/geometry-check.json",
+      "front_rim_review": "creative/reviews/front-rim-v1/",
+      "front_rim_source_check": "creative/reviews/front-rim-v1/source-geometry-check.json",
+      "front_rim_validation": "WEWA_Developpement_Web/validation/front-rim-v1.json",
+      "geometry_check": "creative/reviews/front-tyre-v1/geometry-check.json",
+      "grips_review": "creative/reviews/handlebar-grips-v1/",
+      "handlebar_review": "creative/reviews/handlebar-v1/",
+      "independent_component_audit": "creative/research/motorcycle18-independent-audit.json",
+      "instruments_review": "creative/reviews/instruments-v1/",
+      "instruments_validation": "WEWA_Developpement_Web/validation/instruments-v1.json",
+      "latest_fabrication_checkpoint": "WEWA_Developpement_Web/validation/motorcycle18-checkpoint-02.json",
+      "latest_fabrication_source_commit": "b4d5753b4fc6dbdf77c5bfb4b4845bf28b4ca0fc",
+      "lever_audit": "creative/research/front-brake-lever-audit.json",
+      "preflight": "creative/reviews/front-rim-v1/preflight-check.json",
+      "public_game_unchanged": true,
+      "reference_observations": "assets-src/moto-components/front-tyre/reference-observations.json",
+      "review_gallery_source": "creative/reviews/motorcycle18-gallery/index.html",
+      "rider_created": false,
+      "user_art_accepted": false,
+      "uv_check": "WEWA_Developpement_Web/validation/motorcycle18-uv.json",
+      "whole_motorcycle_complete": false
+    },
+    "execution_18": {
+      "art_accepted": false,
+      "authorization": "User: GO de1à18",
+      "checkpoint_review": "creative/reviews/motorcycle18-checkpoint-02.md",
+      "completed_groups": 0,
+      "datums": "creative/workflow/motorcycle-datums-v1.json",
+      "documentary_file_hashes_verified": 240,
+      "groups": 18,
+      "note": "Sixteen candidate component records include historical wheel/cockpit work; catalogue has eighteen choices including multiple revisions and pending-view sources. No eighteen-group completion or visual acceptance implied. Provisional LH mirror excluded from this checkpoint while its covers were corrected.",
+      "physical_iphone_tested": false,
+      "plan": "creative/workflow/motorcycle-execution-18.json",
+      "published_checkpoint": "b4d5753b4fc6dbdf77c5bfb4b4845bf28b4ca0fc",
+      "registered_candidate_component_records": 16,
+      "source_photos_private": true,
+      "status": "three_owner_rolling_fabrication_in_progress"
+    },
+    "first_component": {
+      "construction": "Closed shaped section with hollow liner/beads, integral geometric grooves, editable source and separate inspection export",
+      "corrections": "Initial inward winding corrected; overexposed studio lights reduced; groove-aligned topology replaces uniform-grid stair stepping; explicit glTF roughness fallback",
+      "export": "assets-src/moto-components/front-tyre/front-tyre-inspection.glb",
+      "generator": "assets-src/moto-components/front-tyre/build.py",
+      "id": "MOTO-TYRE-FRONT-001",
+      "limits": [
+        "Supplier and exact tread mould not identified",
+        "Inflated width and outside diameter bounded working estimates",
+        "Photo cameras not calibrated",
+        "Procedural micrograin bake and runtime material parity open",
+        "Not optimized or qualified on physical iPhone"
+      ],
+      "parameters": "assets-src/moto-components/front-tyre/parameters.json",
+      "review": "creative/reviews/front-tyre-v1/README.md",
+      "source": "assets-src/moto-components/front-tyre/front-tyre-v1.blend",
+      "status": "candidate_rework_not_accepted"
+    },
+    "next_action": "Continue all18 authorized groups component by component. Complete queued grips/cables/ignition/engine views, correct LH switch glyphs and instrument USB/markings, finish mirror covers and interfaces, then remaining fork/wheels/frame/body/engine/lighting. Rider deferred.",
+    "parallel_execution": {
+      "authorization": "Explicit user parallelization and GO18",
+      "automatic_art_acceptance": false,
+      "chains": {
+        "A": [
+          1,
+          2,
+          13,
+          14,
+          15,
+          16
+        ],
+        "B": [
+          3,
+          6,
+          7,
+          9,
+          10,
+          17,
+          18
+        ],
+        "C": [
+          4,
+          5,
+          8,
+          11,
+          12
+        ]
+      },
+      "detailed_owners_max": 3
+    },
+    "previous_components": [
+      {
         "art_accepted": false,
-        "catalogue": "https://github.com/Mobutoo/wewa/blob/main/creative/DOSSIER_ASSET_LIST.md",
-        "date": "2026-10-20",
-        "editable_sources": "https://github.com/Mobutoo/wewa/tree/main/assets-src/hero-lot01",
-        "full_game_shipped": false,
+        "construction": "Editable closed rim, five swept I-section cast spokes, hollow integral drum housing and separate estimated valve; linked existing tyre for fit inspection.",
+        "corrections": [
+          "Rounded casting junction surface instead of Boolean normal patches",
+          "44mm working rim width explicitly chosen to match the estimated tyre bead separation, not adopted as a manufacturer width",
+          "Evaluated export copy retains five actual cast spokes",
+          "Machined cavity/bearing material restored after voxel remeshing and checked on actual faces/buffers"
+        ],
+        "dimensions": {
+          "estimated_working_width_m": 0.044,
+          "nominal_bead_seat_diameter_m": 0.4318,
+          "observed_spokes": 5,
+          "related_catalogue_width_adopted": false,
+          "related_catalogue_width_m": 0.03556
+        },
+        "exports": [
+          "assets-src/moto-components/front-rim/front-rim-inspection.glb",
+          "assets-src/moto-components/front-rim/front-wheel-fit-inspection.glb"
+        ],
+        "generator": "assets-src/moto-components/front-rim/build.py",
+        "id": "MOTO-RIM-FRONT-001",
         "limits": [
-          "first lot only; full dossier still to produce",
-          "jacket cut, optics, bodywork and weathering need refinement",
-          "street unchanged and far below target",
-          "LOD, KTX2, dynamic steering animations and physical Safari performance remain unqualified",
-          "cargo cords currently encircle carton; final motorcycle anchoring pending",
-          "fine grip and dynamic driving deformation still to refine"
+          "Exact RDC wheel part and section unconfirmed",
+          "Working width matches estimated tyre bead separation, not a manufacturer section or certified seal",
+          "Spoke roots, drum cavity, bearing and valve dimensions estimated",
+          "Photo cameras not calibrated",
+          "No mobile LOD or physical iPhone qualification",
+          "Brake plate, axle and complete motorcycle not fabricated"
         ],
-        "public_site_version_unchanged": 3,
-        "review": "https://github.com/Mobutoo/wewa/tree/main/creative/reviews/hero-lot01",
-        "scope": [
-          "original dimension-checked utility motorcycle",
-          "CC0 anatomical adult and garments adaptation with 53-bone rig",
-          "original jet helmet and fitted backpack",
-          "separate first-person sleeves and hands",
-          "original cardboard parcel, tape and restraint cords"
-        ],
-        "state": "rejected_by_user",
-        "storage": "Editable Blender, source vendors with rights and GLBs tracked in GitHub. Structured tracking only in Directus; no binary upload claimed.",
-        "user_feedback": "All views rejected for lack of realism and bulk assembly. Plan faithful motorcycle alone before coding; verify real dimensions and each component before rider.",
-        "verification": {
-          "actual_motorcycle_width_height_length_m": [
-            0.7400729358196259,
-            1.1330000013113022,
-            2.01401486992836
+        "no_render_preflight": "tools/check_rim_preflight.py",
+        "parameters": "assets-src/moto-components/front-rim/parameters.json",
+        "review": "creative/reviews/front-rim-v1/README.md",
+        "review_url": "https://github.com/Mobutoo/wewa/blob/main/creative/reviews/front-rim-v1/README.md",
+        "source": "assets-src/moto-components/front-rim/front-rim-v1.blend",
+        "status": "isolated_casting_candidate_rework_not_accepted",
+        "technical_verification": {
+          "art_accepted": false,
+          "browser_assets": [
+            "rim",
+            "wheel"
           ],
-          "all_textures_loaded": true,
-          "engine_http_failures": 0,
-          "engine_javascript_errors": 0,
-          "glb_exports": 4,
-          "gltf_errors": 0,
-          "gltf_warnings": 24,
+          "connected_casting_shells": 1,
+          "exports": [
+            {
+              "file": "assets-src/moto-components/front-rim/front-rim-inspection.glb",
+              "glTF_errors": 0,
+              "glTF_warnings": 0,
+              "triangles": 164148
+            },
+            {
+              "file": "assets-src/moto-components/front-rim/front-wheel-fit-inspection.glb",
+              "glTF_errors": 0,
+              "glTF_warnings": 0,
+              "triangles": 462348
+            }
+          ],
+          "material_faces": {
+            "Machined drum and bearing seat": 74141,
+            "Silver coating on cast alloy - working reference": 1280001
+          },
+          "non_manifold_edges": 0,
+          "photo_cameras_calibrated": false,
           "physical_iphone_tested": false,
-          "report": "WEWA_Developpement_Web/validation/hero-lot01.json",
-          "rig_bones": 53,
-          "skin_parent_translation_test_m": [
-            3,
-            0,
-            0
-          ],
-          "wheelbase_m": 1.284999966621399
+          "preflight_passed": true,
+          "source_sha256": "77f351d89b29f39dc435b434278bb556cff41a8c509edccd979dc9c8c1173c3a"
         }
       },
-      "full_game_shipped": false,
-      "model_identity_answer": "Codex, based on GPT-6; public game is Site version 3, still prealpha.",
-      "motorcycle_component_plan": {
+      {
+        "all_panel_dimensions_estimated": true,
         "art_accepted": false,
-        "document": "https://github.com/Mobutoo/wewa/blob/main/creative/MOTORCYCLE_PLAN.md",
-        "driver_included": false,
-        "exact_variant_source": "Bajaj Boxer125HD RDC; current red-long-visor series, page model selector00JL22, not a certified model year",
-        "missing": [
-          "top/underneath views",
-          "legible instrument/control details",
-          "high-resolution tyre sidewall and tread identification",
-          "dimensioned drawings or measurements for individual parts"
+        "construction": "Original closed turned section with integral concentric rings, eight rear ribs, tapered fork-stop pad/socket, lofted front spine, raised bosses and open bores; robust original-volume union/cutting via Manifold3D3.3.2, construction volumes retained in Blender",
+        "corrections": [
+          "Self-crossing central section rejected and rebuilt",
+          "Open Blender Boolean unions and disconnected fragments rejected before detailed rendering",
+          "Concentric rings integrated in the turned profile; original feature volumes processed with robust Manifold solid operations",
+          "Tapered pad/spine replaces coarse constant-section blocks",
+          "Actual source openings and candidate hub surface crossings independently checked"
         ],
-        "new_geometry_created": false,
-        "published_dimensions_mm": {
-          "height": 1134,
-          "length": 2016,
-          "wheelbase": 1285,
-          "width": 740
-        },
-        "reference_images": {
-          "commercial_detail_images_downloaded_and_examined": 6,
-          "manifest": "creative/library/motorcycle-reference-views.json",
-          "rights": "Documentary study only; no redistribution/game-texture license established",
-          "rotation_angles_downloaded_and_examined": 8
-        },
-        "sequence": [
-          "document one piece and its measured/published/estimated dimensions",
-          "isolated shape comparison",
-          "material and surface comparison",
-          "correct critical defects",
-          "assemble verified motorcycle components only",
-          "recheck actual engine export and optimization",
-          "user motorcycle reception",
-          "then rider"
+        "documentary_sources": [
+          "D01",
+          "D02",
+          "D04",
+          "D07",
+          "D08",
+          "D09"
         ],
-        "state": "planning_before_rebuild",
-        "tyre_designations": {
-          "front": "2.75-17",
-          "rear": "3.00-17"
-        },
-        "verified_source": "https://www.bajajauto.com/fr-cd/bikes/boxer-125hd"
-      },
-      "motorcycle_reconstruction_research": {
-        "acceptance_protocol": [
-          "landmark reprojection errors limited by observed image uncertainty",
-          "contour and internal opening comparisons",
-          "reserved-view checks against single-view overfitting",
-          "published/measured/estimated dimensions distinguished",
-          "clean material checks under fixed neutral lights",
-          "engine export and optimization visually rechecked"
+        "exports": [
+          "assets-src/moto-components/front-brake-plate/front-brake-plate-v2-inspection.glb",
+          "assets-src/moto-components/front-brake-plate/front-wheel-panel-v2-fit-inspection.glb"
         ],
-        "actual_reference_preflight": {
-          "actual_format": "WEBP despite PNG suffix on rotation images",
-          "available_camera_exif": false,
-          "commercial_detail_views": 6,
-          "files": 14,
-          "hashes_verified": true,
-          "rotation_resolution": [
-            1000,
-            700
-          ],
-          "rotation_views": 8
-        },
-        "art_accepted": false,
-        "calibration_executed": false,
-        "date": "2026-10-20",
-        "first_execution_gate": "Landmark annotations with reading uncertainty, then dimensioned guides and per-view camera fitting before detailed tyre construction.",
-        "fspy": "Conditional aid where justified perpendicular vanishing directions exist; not guaranteed on curved isolated motorcycle.",
+        "generator": "assets-src/moto-components/front-brake-plate/material_v2.py",
+        "id": "MOTO-BRAKE-PLATE-FRONT-001",
+        "installation_clocking_verified": false,
+        "lever_axle_shoes_springs_modelled": false,
         "limits": [
-          "Hidden geometry and missing dimensions remain estimates until new evidence",
-          "No millimetric accuracy or visual acceptance claimed from product images",
-          "Some Blender manual URLs failed web fetch402 and are not counted as fully read."
+          "Related-part identity not confirmed for current RDC motorcycle",
+          "All body section and bore dimensions are working estimates against existing candidate hub",
+          "Photo cameras not calibrated",
+          "Body only; fitted seal/gear/pivot details, lever and axle remain separate",
+          "No optimized mobile LOD or physical iPhone qualification",
+          "Original surface grain added; unmeasured coating, UV seams, faceted bore contours and artistic appearance still require review",
+          "Runtime-generated tangent basis carries glTF warning; physical Safari unqualified"
         ],
-        "new_geometry_created": false,
-        "photogrammetry": "Not demonstrated; optional diagnostic, requires adequate overlap and usable surface evidence. Existing8 cutouts are not promised as a full scan.",
-        "physical_part_dimensions_measured": false,
-        "plan": "https://github.com/Mobutoo/wewa/blob/main/creative/MOTORCYCLE_RECONSTRUCTION_RESEARCH.md",
-        "research_sources": 11,
-        "rider_included": false,
-        "selected_method": "Component modeling constrained by documented dimensions and multiple fitted photo cameras; geometry/material/game-export comparisons kept separate.",
-        "source_register": "creative/library/motorcycle-methods-sources.json",
-        "source_types": "Official documentation, first-person artist accounts, forum exchange and public course outline; no paid lessons or tools purchased.",
-        "state": "researched_plan_not_executed"
+        "material_revision": {
+          "original_periodic_PBR_maps": true,
+          "physical_uv_tile_m": 0.01,
+          "reflectance_measured": false,
+          "tangent_basis_runtime_generated_warning": true,
+          "texture_data_parity_passed": true,
+          "visual_parity_accepted": false
+        },
+        "parameters": "assets-src/moto-components/front-brake-plate/parameters.json",
+        "previous_revision": {
+          "review": "creative/reviews/front-brake-plate-v1/README.md",
+          "source": "assets-src/moto-components/front-brake-plate/front-brake-plate-v1.blend",
+          "technical_verification": {
+            "art_accepted": false,
+            "browser_assets": [
+              "plate",
+              "wheelpanel"
+            ],
+            "candidate_hub_surface_crossings": 0,
+            "connected_casting_shells": 1,
+            "exports": [
+              {
+                "file": "assets-src/moto-components/front-brake-plate/front-brake-plate-inspection.glb",
+                "glTF_errors": 0,
+                "glTF_warnings": 0,
+                "sha256": "bce93d34632f3cd3aaf9492ecaa88e56c7b5c5e539e5c471bb8b4e069dfafa7c"
+              },
+              {
+                "file": "assets-src/moto-components/front-brake-plate/front-wheel-panel-fit-inspection.glb",
+                "glTF_errors": 0,
+                "glTF_warnings": 0,
+                "sha256": "95a936734467643a99e76cedd4655cb2921414d367ac8032f3904b08606be31b"
+              }
+            ],
+            "non_manifold_edges": 0,
+            "open_passages": [
+              "axle",
+              "cam",
+              "upper_cross",
+              "outer_cross"
+            ],
+            "render_views": 5,
+            "socket_floor_verified": true,
+            "software": "manifold3d 3.3.2",
+            "source_sha256": "16e99efb3781adb8cbfc8ef64750ff3bd230026a205b284158238ea888f7a69a"
+          }
+        },
+        "reference": "JA131605 in related BM125UG5gear catalogue and retailer front/back photographs; exact current RDC fitment unconfirmed",
+        "reference_view_directions": 2,
+        "retailer_downloaded_images": 5,
+        "retailer_duplicates_are_independent_confirmation": false,
+        "review": "creative/reviews/front-brake-plate-v2/README.md",
+        "review_url": "https://github.com/Mobutoo/wewa/blob/main/creative/reviews/front-brake-plate-v2/README.md",
+        "solid_worker": "assets-src/moto-components/front-brake-plate/csg.py",
+        "source": "assets-src/moto-components/front-brake-plate/front-brake-plate-v2.blend",
+        "status": "material_v2_candidate_not_art_accepted",
+        "technical_verification": {
+          "art_accepted": false,
+          "candidate_hub_surface_crossings": 0,
+          "connected_casting_shells": 1,
+          "exports": [
+            {
+              "file": "assets-src/moto-components/front-brake-plate/front-brake-plate-v2-inspection.glb",
+              "glTF_errors": 0,
+              "glTF_warnings": 1,
+              "sha256": "495701dd4ce77ed82d4d27045f1aff7aec1ec47bc87a79163d6ee09b2834aa50"
+            },
+            {
+              "file": "assets-src/moto-components/front-brake-plate/front-wheel-panel-v2-fit-inspection.glb",
+              "glTF_errors": 0,
+              "glTF_warnings": 1,
+              "sha256": "2be758aab20a1d3deca50d7560290f76b1c0c4982e4c640e4c81662ebb8f7f30"
+            }
+          ],
+          "non_manifold_edges": 0,
+          "render_views": 5,
+          "source_sha256": "b22bab7f58f4456c74b227610e7f30e51e07793b0420106a9ad9df71e69f71ec"
+        }
       },
-      "next_lot": "Continue all18authorized groups with separate detailed components, actual source/export/runtime checks and review; rider deferred.",
-      "production_inventory": "92 source catalogue entries AS-001–AS-092 plus 67 overlapping concept traceability rows; previous 112 preparatory families were incomplete. creative/DOSSIER_ASSET_LIST.md and creative/library/fabrication-register.json.",
-      "public_site_version_unchanged": 3,
-      "public_source_commit_unchanged": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
-      "required_loop": [
-        "identified references and local use",
-        "Blender modeling or source adaptation",
-        "UV and PBR, rig and animation, LOD",
-        "actual engine integration",
-        "comparable stills and continuous motion",
-        "correct defects before replication or geographic expansion"
-      ],
-      "source_library": {
-        "bytes": 582162029,
-        "documentary_photos_retained": 29,
-        "files": 196,
-        "integrated_this_pass": 0,
-        "models": 17,
-        "pbr_material_sets": 22,
-        "provider_license": "CC0-1.0 for Poly Haven; Commons photos retain individual licenses and authors"
-      },
-      "source_manifest": "creative/library/manifest.json",
-      "source_verification": {
-        "blender_4_3_2_imports": 5,
-        "gltf_errors": 0,
-        "gltf_models_checked": 16,
-        "gltf_warnings": 40,
-        "hash_verified_files": 196,
-        "heavy_tree_validation_deferred": true,
-        "missing_images": 0
-      },
-      "storage": "Raw 582MB source library stays outside web bundle at /workspace/wewa-asset-library; tracked manifest and restore tool pin URLs, rights and hashes. No binary upload to Directus claimed.",
-      "trigger": "User again rejects version 3 graphics and workflow against the photographic target."
-    },
-    "asset_production_workflow": {
-      "checker": "tools/check_asset_workflow.py",
-      "component_template": "creative/workflow/templates/asset-template.json",
-      "coverage": {
-        "catalogue_rows": 92,
-        "concept_rows": 67,
-        "distinct_model_count": null,
-        "note": "Overlapping source rows routed to recipes; not159 distinct or fabricated models. Family-specific research/decomposition remains pending outside current motorcycle preparation."
-      },
-      "current_component": "creative/workflow/records/moto-instrument-bracket-001.json",
-      "date": "2026-10-20",
-      "documentary_research": "creative/workflow/RESEARCH.md",
-      "family_recipes": "creative/workflow/RECIPES.md",
-      "motorcycle_decomposition": "creative/workflow/motorcycle-assembly.json",
-      "next_action": "Continue all18authorized groups with separate detailed components, actual source/export/runtime checks and review; rider deferred.",
-      "production": {
-        "active_component": "MOTO-INSTRUMENT-BRACKET-001",
+      {
         "art_accepted": false,
-        "authorized_execution_groups": 18,
-        "camera_calibration_executed": false,
-        "current_candidate_status": "Eight isolated candidate component records including corrected gripsv2 and instrument bracket; 18-group fabrication authorized and in progress, no accepted motorcycle.",
-        "execution_complete": false,
-        "motorcycle_groups": 25,
-        "new_geometry": true,
-        "parallel_components_max": 3,
-        "parallel_user_authorized": true,
-        "previous_lot": "hero-lot01 remains rejected in all views",
-        "public_preview_unchanged": true,
-        "rider": "deferred until motorcycle user reception"
-      },
-      "research_results": [
-        "Manufacturer BM125 global drum-brake and suspension information found; exact RDC component compatibility conditional.",
-        "Bajaj-authored BM125 UG revision00 parts catalogue mirrored by third party,72PDF sheets; index and selected technical sections read, wheel illustration inspected.",
-        "HD brochure width770mm conflicts with current RDC740mm; retain RDC reference, no silent merge.",
-        "Older catalogue tube-type tyre description differs from current RDC tubeless advertisement.",
-        "MRF product-specific tyre dimensions and views found as comparative references only; no Boxer supplier/fitment established."
-      ],
-      "review_template": "creative/workflow/templates/review-template.md",
-      "source_routing": "creative/workflow/coverage.json",
-      "sources": "creative/workflow/sources.json",
-      "stages": [
-        "identity and decomposition",
-        "sources, variants, views and dimensions",
-        "scale and comparison protocol",
-        "isolated form",
-        "materials",
-        "function and interfaces",
-        "real engine comparison",
-        "optimization with comparison",
-        "revision-bound user reception"
-      ],
-      "verification": "WEWA_Developpement_Web/validation/asset-workflow.json",
-      "verification_results": {
-        "all_gate_evidence_hashes_checked": 47,
-        "all_review_manifest_file_hashes_checked": 194,
-        "central_source_archives_checked": 17,
-        "current_cockpit_document_links_checked": 37,
-        "current_component_records": 7,
-        "declaration_checks": 7,
-        "local_workflow_links_checked": 15,
-        "new_private_documentary_archives_checked": 63,
-        "passed": 7,
-        "physical_iphone_tested": false,
-        "premature_fabrication_gate": "correctly refused",
-        "source_archives_checked": 5,
-        "visual_realism_certified": false
-      },
-      "version": 1,
-      "workflow_definition": "creative/workflow/workflow.json",
-      "workflow_document": "creative/workflow/README.md"
-    },
-    "creative_direction": {
-      "approved": {
-        "budget_eur": 0,
-        "creative_autonomy": true,
-        "devices": [
-          "iPhone 16",
-          "iPhone 15"
+        "construction": "Original photo-informed curved/joggled steel-looking blade, open serrated shaft seat, end eye and edge radii; constrained interior triangulation before forming; original construction and cutters retained",
+        "corrections": [
+          "Rejected rear lever JW131601 after catalogue comparison",
+          "Rejected non-planar large-cap facets in first source/render; rebuilt dense constrained interior and checked outline area",
+          "Actual glTF openings checked with node world transform"
         ],
-        "final_brand": "Viva Wewa",
-        "hosting": "Prévisualisation d'abord ; domaine définitif et VPS Hetzner à choisir plus tard",
-        "local_reviewer": "Utilisateur connaît parfaitement Kinshasa",
-        "motorcycle": "Respecter références officielles présentes dans les fichiers",
-        "preview_audience": "public",
-        "temporary_domain_candidate": "Wewa.io.cloud (non configuré)",
-        "visual_identity": "Style2 selected2026-10-20: cinematic photographic realism, faithful real-world proportions, warm directional light, credible rich colors and readable shadows."
-      },
-      "atmosphere_reference": {
-        "film": "Viva Riva!",
-        "scope": "Atmosphère urbaine, débrouille, tension, humour ; univers, personnages et récit originaux",
-        "source": "Référence utilisateur"
-      },
-      "cultural_notes": {
-        "ambient_sound": [
-          "Klaxons",
-          "Receveurs qui appellent les stations et les trajets",
-          "Rumba et musique congolaise originale",
-          "Échanges taquins et chamailleries folkloriques entre taxis, receveurs et minibus"
+        "dimensions": {
+          "all_estimated": true,
+          "blade_thickness_working_m": 0.0025,
+          "shaft_to_eye_working_m": 0.088,
+          "spline_count_verified": false,
+          "spline_count_working": 20
+        },
+        "documentary_sources": [
+          "D04",
+          "D10",
+          "D11",
+          "D12"
         ],
-        "geography": "Photos/satellites comme références ; ne pas affirmer des détails non vérifiés",
-        "lingala_as_provided": [
-          "babele la",
-          "bazo belela"
+        "exports": [
+          "assets-src/moto-components/front-brake-lever/front-brake-lever-inspection.glb"
         ],
-        "lingala_status": "Conserver les mots fournis comme notes ; écriture, sens et prononciation à faire relire avant enregistrement",
-        "street_life": [
-          "Piétons et mamans qui traversent parfois en groupe et en courant ; véhicules qui anticipent et attendent",
-          "Rues non goudronnées étroites, nids de poule, eau en saison des pluies, caniveaux"
-        ]
+        "generator": "assets-src/moto-components/front-brake-lever/build.py",
+        "id": "MOTO-BRAKE-LEVER-FRONT-001",
+        "limits": [
+          "Two angles of main visible side, no calibrated reverse view",
+          "All dimensions, forming offsets and tooth count estimated",
+          "Exact RDC identity and installed angle not confirmed",
+          "Camshaft, cable, fixing hardware and wheel axle remain separate",
+          "Static colour variation, no angle-dependent plating",
+          "No accepted mobile LOD, physical iPhone qualification or user art reception"
+        ],
+        "material": "Original PBR textures, static plated-steel appearance only; no reference photo texture or measured chemistry",
+        "parameters": "assets-src/moto-components/front-brake-lever/parameters.json",
+        "reference": "JA131607 related UG5gear front cam lever, D04 sheet44 item18; exact current RDC identity unconfirmed",
+        "review": "creative/reviews/front-brake-lever-v1/README.md",
+        "review_url": "https://github.com/Mobutoo/wewa/blob/main/creative/reviews/front-brake-lever-v1/README.md",
+        "source": "assets-src/moto-components/front-brake-lever/front-brake-lever-v1.blend",
+        "status": "isolated_candidate_rework_not_accepted",
+        "technical_verification": {
+          "babylon_actual_export_loaded": true,
+          "connected_shells": 1,
+          "export_sha256": "f7e27e1782549a1c06c8fb929cd6d8f55dcfaf3e31c772741378783e4dcbe9c8",
+          "glTF_errors": 0,
+          "glTF_warnings": 0,
+          "non_manifold_edges": 0,
+          "openings_verified": [
+            "shaft",
+            "open_slot",
+            "eye"
+          ],
+          "physical_iphone_tested": false,
+          "render_views": 4,
+          "signed_volume_m3": 0.000003914040324438482,
+          "source_sha256": "57b7313863157608a679563cfd80f3b6b6a29b8febebafb44e42c68819337a0d"
+        }
       },
-      "expansion": {
-        "later": "Autres quartiers de Kinshasa, ajoutés progressivement avec données et validation locale",
-        "pilot": "Gombe et gare centrale / environs à valider géographiquement"
+      {
+        "all_dimensions_estimated": true,
+        "art_accepted": false,
+        "exports": [
+          "assets-src/moto-components/handlebar/handlebar-inspection.glb"
+        ],
+        "generator": "assets-src/moto-components/handlebar/build.py",
+        "id": "MOTO-HANDLEBAR-001",
+        "limits": [
+          "Exact current RDC part and dimensions unconfirmed",
+          "No received installed controls or measured interfaces",
+          "Inspection geometry, no qualified mobile LOD or physical iPhone test"
+        ],
+        "parameters": "assets-src/moto-components/handlebar/parameters.json",
+        "reference": "Related DU181021; exact current RDC identity unknown",
+        "review": "creative/reviews/handlebar-v1/README.md",
+        "source": "assets-src/moto-components/handlebar/handlebar-v1.blend",
+        "status": "isolated_candidate_rework_not_accepted",
+        "technical_verification": {
+          "export_sha256": "2876b09b2a86cf7bdc28599e9c4c04f9b2909a5bb073b86430c2db5058cfc310",
+          "glTF_errors": 0,
+          "glTF_warnings": 0,
+          "source_check": "creative/reviews/handlebar-v1/source-geometry-check.json",
+          "source_sha256": "1385ccc667f30681e334ce96aff71d2214794238c5b31e0a1fd4b75b8ad6652a",
+          "triangles": 507392
+        }
       },
-      "game_title": "Viva Wewa",
-      "implementation_status": "Démarrage autorisé ; aucune fonctionnalité nouvelle déclarée terminée",
-      "motorcycle_branding": {
-        "documentary_names_unchanged": true,
-        "future_3d_tank": "Use WEWA; tank not yet fabricated in current wheel component lot",
-        "generated_target": "creative/direction/motorcycle-wewa-style-02-generated-reference.png",
-        "tank_wordmark": "WEWA",
-        "user_instruction": "Remplacer Boxer par Wewa sur la moto"
-      },
-      "review_register": {
-        "audio": "Synthèse originale pour moteur, klaxons et maquette rythmique ; aucun morceau connu réutilisé",
-        "dialogue_status": "Brouillons français inventés, pas de traduction lingala prétendument authentique",
-        "proposed_characters": [
-          {
-            "name": "Kito",
-            "role": "Coursier adulte et pilote jouable",
-            "status": "proposition à relire"
-          },
-          {
-            "name": "Mado",
-            "role": "Amie du héros, participe activement à l’enquête",
-            "status": "proposition à relire"
-          },
-          {
-            "name": "Sana",
-            "role": "Artiste entièrement fictive",
-            "status": "proposition à relire"
+      {
+        "all_dimensions_estimated": true,
+        "art_accepted": false,
+        "correction": "Physical handedness corrected: pilot left +X bore22.4mm; pilot right -X bore25.4mm. Bore dimensions remain estimates.",
+        "exports": [
+          "assets-src/moto-components/handlebar-grips/handlebar-grips-v2-inspection.glb"
+        ],
+        "generator": "assets-src/moto-components/handlebar-grips/build_v2.py",
+        "id": "MOTO-HANDLEBAR-GRIPS-001",
+        "limits": [
+          "Exact current RDC part and dimensions unconfirmed",
+          "No received installed controls or measured interfaces",
+          "Inspection geometry, no qualified mobile LOD or physical iPhone test"
+        ],
+        "next_correction": "Independent photo audit identifies too narrow long grip motifs; separate v3 requested.",
+        "parameters": "assets-src/moto-components/handlebar-grips/parameters-v2.json",
+        "previous_revision": {
+          "all_dimensions_estimated": true,
+          "art_accepted": false,
+          "exports": [
+            "assets-src/moto-components/handlebar-grips/handlebar-grips-inspection.glb"
+          ],
+          "generator": "assets-src/moto-components/handlebar-grips/build.py",
+          "id": "MOTO-HANDLEBAR-GRIPS-001",
+          "limits": [
+            "Exact current RDC part and dimensions unconfirmed",
+            "No received installed controls or measured interfaces",
+            "Inspection geometry, no qualified mobile LOD or physical iPhone test"
+          ],
+          "parameters": "assets-src/moto-components/handlebar-grips/parameters.json",
+          "reference": "Related DU191009/DU191003 rubber envelopes; throttle carrier absent",
+          "review": "creative/reviews/handlebar-grips-v1/README.md",
+          "source": "assets-src/moto-components/handlebar-grips/handlebar-grips-v1.blend",
+          "status": "isolated_candidate_rework_not_accepted",
+          "technical_verification": {
+            "export_sha256": "d7fc7d0b74c3d21d4eab7131e7d2a92bf2e81da0c7640d58204da3e5f0100996",
+            "glTF_errors": 0,
+            "glTF_warnings": 0,
+            "source_check": "creative/reviews/handlebar-grips-v1/source-geometry-check.json",
+            "source_sha256": "d0070617414c809b1a6e71423029720a5d3dbb71130c8ca666316f5ffa4ed9a1",
+            "triangles": 114276
           }
-        ],
-        "proposed_dialogue_french": [
-          "Gombe ! Gombe ! Encore deux places !",
-          "Eh chauffeur, tu conduis ou tu danses ?",
-          "Doucement, laisse passer les mamans !"
-        ]
-      },
-      "selected_graphic_style": {
-        "accepted_geometry": false,
-        "accepted_style": true,
-        "date": "2026-10-20",
-        "document": "creative/GRAPHIC_STYLE.md",
-        "id": 2,
-        "name": "Réalisme cinématographique",
-        "user_decision": "Oui, le2."
-      },
-      "source": "Décisions utilisateur dans cette conversation",
-      "technical_reference": "R9 / plan 1.2 conservés, nouvelles décisions priment pour nom, audience et appareils",
-      "version": "1.0",
-      "visual_correction": {
-        "brand": "Couleurs punchy réservées à l'identité et à l'interface",
-        "reference": "Image fournie par l'utilisateur dans la conversation",
-        "status": "Cible artistique à atteindre, pas preuve d'un rendu moteur déjà livré",
-        "target": "Réalisme photographique, proportions et matériaux crédibles, usure, lumière naturelle, caméra de poursuite ; pas d'illustration/cartoon pour l'accueil"
-      }
-    },
-    "creative_review_register": [
-      {
-        "category": "personnages",
-        "id": "characters",
-        "items": [
-          {
-            "name": "Kito",
-            "role": "Coursier adulte jouable, connaît les passages de Gombe"
-          },
-          {
-            "name": "Mado",
-            "role": "Amie du héros, participe à l’enquête et laisse elle-même un indice"
-          },
-          {
-            "name": "Sana",
-            "role": "Artiste fictive du futur récit, non représentée dans ce premier chapitre"
-          }
-        ],
-        "status": "à relire"
+        },
+        "reference": "Related DU191009/DU191003 rubber envelopes; throttle carrier absent",
+        "review": "creative/reviews/handlebar-grips-v2/README.md",
+        "source": "assets-src/moto-components/handlebar-grips/handlebar-grips-v2.blend",
+        "status": "isolated_candidate_rework_not_accepted",
+        "technical_verification": {
+          "export_sha256": "603def6673b589c192551005c1b79f3e2cc1c83a0b60142343e4ac6948cb8c22",
+          "glTF_errors": 0,
+          "physical_iphone_tested": false,
+          "source_sha256": "40514ce73d9a5a763fbf98fe2c1d0ab84c248a0d9373a7747895781e18cd98ae"
+        }
       },
       {
-        "category": "missions inventées",
-        "id": "missions",
-        "items": [
-          {
-            "description": "30 secondes de collecte et dépôt sur le tracé pilote, tentatives gratuites",
-            "name": "Wewa Rush"
-          },
-          {
-            "description": "Six colis à livrer à deux relais fictifs",
-            "name": "La tournée"
-          },
-          {
-            "description": "Livraison pour Mado, message interrompu, taxi jaune à suivre, bracelet laissé comme indice vers la suite",
-            "name": "Le dernier appel"
-          },
-          {
-            "description": "Balade libre sur le secteur chargé",
-            "name": "Kin à ton rythme"
-          }
+        "all_dimensions_estimated": true,
+        "art_accepted": false,
+        "construction": "Separate closed housings, bezels, seals and lenses, original vector dial markings, two movable needle pivots and rounded USB cap; central cover and USB corrected after independent review",
+        "documentary_sources": [
+          "D01",
+          "D04",
+          "D13",
+          "D14"
         ],
-        "status": "jouables en prototype, à relire"
+        "exports": [
+          "assets-src/moto-components/instruments/instruments-inspection.glb"
+        ],
+        "functions": [
+          "Speed0–140km/h",
+          "FuelE/F",
+          "Gear1–5",
+          "Closed USB cap; hidden connector/wiring not fabricated"
+        ],
+        "generator": "assets-src/moto-components/instruments/build.py",
+        "id": "MOTO-INSTRUMENTS-001",
+        "limits": [
+          "No measured dimensions, calibrated photo or verified reverse sections/mounts",
+          "Odometer static, local pointer controls not yet bound to game simulation",
+          "Fuel linear calibration and green active gear are demo conventions, not measured manufacturer behaviour",
+          "No refractive/caustic lens shadows in review; runtime reflections/readability still require artistic review",
+          "No physical iPhone qualification, accepted mobile LOD or art reception"
+        ],
+        "parameters": "assets-src/moto-components/instruments/parameters.json",
+        "reference": "Official feature photo published on current Boxer125HD RDC page; asset filename includesBM150, exact current assembly part number not certified",
+        "review": "creative/reviews/instruments-v1/README.md",
+        "source": "assets-src/moto-components/instruments/instruments-v1.blend",
+        "status": "separate_instrument_candidate_rework_not_accepted",
+        "technical_verification": {
+          "export_sha256": "26f411564cc903308ce529b0100efe8d68f95a22a0a2e7e17dd4cf4e3f7364ba",
+          "glTF_errors": 0,
+          "glTF_warnings": 0,
+          "source_check": "creative/reviews/instruments-v1/source-geometry-check.json",
+          "source_sha256": "e3321cee34967f7749dbfa8650fe01c404137c55cfb5c42881363f098cb91ec0",
+          "triangles": 46801
+        }
       },
       {
-        "category": "textes et paroles inventés",
-        "id": "dialogue",
-        "items": [
-          "Gombe ! Gombe ! Encore deux places !",
-          "Eh chauffeur, tu conduis ou tu danses ?",
-          "Doucement ! Laisse passer les mamans !",
-          "Kito, apporte-moi ces colis. Je t’attends au relais.",
-          "Kito ? On a changé de taxi… Jaune, bande noire. Je te laisse une piste…",
-          "On va bien. Suis la piste vers le port."
-        ],
-        "status": "à corriger librement par utilisateur"
-      },
-      {
-        "category": "géographie et décors",
-        "id": "places",
-        "items": [
-          "Routes et emprises fournies préservées ; boucle d'environ 1,50 km sur Boulevard du 30 Juin et rues adjacentes",
-          "Relais Chez Mado et Relais du quartier fictifs ; pas des commerces documentés",
-          "Palmiers, étals, fenêtres et habillages originaux placés pour le prototype ; pas un relevé de terrain",
-          "Gare centrale et autres quartiers visés pour la suite ; aucune liaison complète au port déclarée validée"
-        ],
-        "status": "validation locale requise"
-      },
-      {
-        "category": "scènes de rue inspirées des indications utilisateur",
-        "id": "street-life",
-        "items": [
-          "Groupe de piétons traversant ensemble et véhicules qui attendent",
-          "Receveurs appelant les trajets, par sous-titres et voix française facultative du navigateur",
-          "Klaxons, échanges taquins et maquette instrumentale originale",
-          "Caniveaux, pluie, nids de poule et routes dégradées à approfondir sur références locales, pas simulés en détail dans cette première version"
-        ],
-        "status": "première mise en scène simplifiée"
-      },
-      {
-        "category": "images et modèles originaux",
-        "id": "assets",
-        "items": [
-          "Current hero-lot01: original dimension-checked motorcycle geometry; manufacturer images used as documentary references only, no logos.",
-          "Rider and garments adapted from documented MakeHuman/MPFB CC0 graphical data, 53-bone rig; not an entirely original anatomical sculpt.",
-          "Original helmet, backpack and cardboard parcel/tape/cords; source Blender and review GLBs in GitHub; art acceptance pending.",
-          "First-person sleeves and hands plus proposed camera inspected locally; fine grip and dynamic steering still to refine.",
-          "Other minibus/taxi/street models remain prealpha and unaccepted; no public asset replacement in this lot."
-        ],
-        "status": "first fabrication lot awaiting review; public prealpha unchanged"
-      },
-      {
-        "category": "son et langue",
-        "id": "audio",
-        "items": [
-          "Moteur et klaxons synthétisés via Web Audio",
-          "Motif instrumental original de travail, pas un morceau congolais existant et pas une rumba enregistrée authentifiée",
-          "Français via voix système facultative ; aucun lingala inventé ou voix d’un tiers copiée",
-          "Notes utilisateur babele la / bazo belela conservées ; écriture et prononciation à valider avec lui"
-        ],
-        "status": "maquette originale"
-      }
-    ],
-    "date": "2026-10-20",
-    "decisions": [
-      "# WEWA - Cadrage R9\n\n## WEWA / LE CADRAGE ACTUEL\n\nRévision 9 - 20 octobre 2026 - Document de départ pour Codex\n\n### La promesse\n\nDans Kinshasa, ta meilleure arme, c’est de connaître le passage. Petite moto Wewa, trafic lisible, choix d’itinéraire et conduite précise constituent le cœur du jeu. La ville, les personnages et la musique donnent du sens à cette maîtrise.\n\n### Ce qui est décidé\n\nAjouter Wewa Rush de 30 secondes ; conserver les livraisons et l’enquête narrative ; intégrer nitro, vue arrière et vue au guidon ; distinguer score, réputation et monnaie gagnée. Reprises narratives gratuites. Personnalisation fondée sur les préférences de jeu. Aucun paiement réel dans la V0.\n\n### Autorité des documents\n\nCes huit premières pages constituent le cadrage R9 et prévalent sur les formulations antérieures concernant modes, récit, caméras et reprises. Les 31 pages R8 qui suivent conservent les références de Kinshasa, véhicules, lieux, personnages, sources et économie générale. Elles sont identifiées comme annexe antérieure. Le détail nitro du précédent addendum reste valable sauf contradiction explicite.\n\n### État réel\n\nLe pilote Gombe comporte des volumes de bâtiments et de voirie, des données et des scripts. Aucune application jouable, conduite, mission, boutique ou mesure de FPS n’est encore livrée. Les nouveaux réglages sont des hypothèses de conception à éprouver. Le rendu photoréaliste et le classement parmi les meilleurs jeux restent des ambitions.\n\n## WEWA RUSH / 30 SECONDES\n\nUne boucle courte : choisir, transporter, livrer, recommencer\n\n### Règles de la première version\n\nAprès un compte à rebours 3-2-1, le joueur part déjà en mouvement et dispose de 30 secondes de simulation active. Ramasser un colis par passage dans une zone balisée ; capacité initiale de trois colis. Livrer dans une zone dédiée en roulant sous le seuil configurable de 15 km/h. Un dépôt consomme seulement les colis présents. Aucun arrêt obligatoire à un menu.\n\n### Score de départ à équilibrer\n\nChaque colis livré vaut 100 points × multiplicateur. Le multiplicateur démarre à 1, augmente de 0,25 après un dépôt propre et plafonne à 3. Un dépôt groupé utilise le même multiplicateur pour tous ses colis, puis augmente le multiplicateur une seule fois. Un passage technique validé rapporte 10 points, au maximum une fois par balise et par course. Le score est entier, arrondi à la fin de chaque événement.\n\n### Risque et fin de manche\n\nUne collision remet le multiplicateur à 1 et ralentit physiquement la moto ; un contact continu compte comme un seul incident. Les colis restent à bord en V0. À 30 secondes, aucun colis non livré ne marque de point ; aucun nouvel événement de score n’est accepté. Afficher score, colis livrés, record personnel et Rejouer. Pas de bonus pour heurter des personnes. Aucun prolongement payant en V0.\n\n### Équité et variété\n\nUne seule route et un trafic à graine fixe pour le premier Rush ; deux branches pour choisir entre trajet sûr et collecte supplémentaire. Les identifiants de colis et dépôts empêchent les doubles récompenses. Réinitialiser tout l’état au redémarrage. Une pause fige le temps en solo non classé. Plus tard, les défis classés partagent graine, règles et assistance ; aucune reprise ni adaptation cachée ne modifie un score classé.\n\n## NITRO / DEUX CAMÉRAS\n\nSensation de vitesse forte, obstacles toujours lisibles\n\n### Nitro arcade\n\nMaintenir Maj ou le bouton tactile NITRO. Jauge de 100 unités ; consommation 33,3 unités/s, soit environ trois secondes pleines. Accélération × 1,5 et vitesse maximale × 1,25 comme valeurs de départ. Recharge passive 5 unités/s après deux secondes sans activation ; jeton dédié +20 dans la limite de 100. Pas de nitro à l’arrêt ou en marche arrière. Freinage, pause, perte de focus et chute l’interrompent.\n\n### Effets de vitesse\n\nFlou radial surtout périphérique, vent, régime moteur renforcé et légère ouverture du champ de vision. Garder le centre et le HUD lisibles. Champ vertical proposé : 60° à 68° en vue arrière, 65° à 71° au guidon. Transitions de 0,2 s à l’entrée et 0,35 s au retour. Les effets n’augmentent pas la vitesse physique au-delà des paramètres du contrôleur.\n\n### Vue au guidon\n\nTouche C ou bouton caméra : bascule à tout moment entre poursuite et première personne, y compris sous nitro. Mains, guidon, compteur et réservoir visibles, horizon stabilisé. Même physique, mêmes récompenses et mêmes collisions dans les deux vues. Choix mémorisé ; aucune bascule forcée pendant une manœuvre. Modèles provisoires acceptés pour la V0.\n\n### Confort et performance\n\nFlou, secousses et variation du champ de vision réglables séparément. Mode Confort sans flou ni secousse. Flou désactivé par défaut sur le profil mobile modeste. Aucune exigence de miroirs temps réel. Collisions balayées et chargement anticipé testés à la vitesse nitro maximale. Les paramètres détaillés restent dans config/nitro_camera.json.\n\n## LE RÉCIT / UNE DISPARITION\n\nLe lien personnel motive le héros ; la célébrité amplifie l’enjeu\n\n### Déclencheur fictif\n\nUne personnalité attendue à Kinshasa doit participer à un événement. Une amie proche du héros travaille dans son équipe. Après un changement de véhicule, les deux femmes disparaissent. Le héros reçoit de son amie un message vocal interrompu ; un détail du taxi et sa connaissance des rues lui donnent une première piste. Il peut admirer la célébrité, mais cherche avant tout son amie.\n\n### Personnages et participation\n\nPour le prototype, utiliser une personnalité entièrement fictive, sans visage, voix ou biographie identifiables de Didi Stone. Didi Stone est conservée dans les notes comme proposition de collaboration à lui présenter, sans accord ni participation annoncés. Tout usage futur de son identité demanderait un cadrage de collaboration et un récit explicitement fictionnel. Aucun enlèvement réel n’est allégué.\n\n### Progression en chapitres\n\n1. Une livraison présente l’amie avant la disparition. 2. Le message déclenche une courte poursuite. 3. Le taxi disparaît ; un témoin ouvre l’enquête. 4. Une course utile permet d’obtenir un contact ou un accès. 5. Un indice mène vers un relais puis le port. 6. Le sauvetage résout le premier arc, avec une suite possible. Les lieux et distances restent soumis à validation du parcours.\n\n### Rythme et initiative des victimes\n\nL’amie laisse des indices et contribue à l’évasion ; la personnalité a aussi des décisions et une voix. Alterner tension, recherche, rencontre et respiration. Les livraisons annexes se placent pendant une attente ou servent directement l’enquête. Pas de cinquante courses sans rapport pendant une urgence immédiate. La V0 ne développe que l’introduction, une poursuite et un indice ; pas toute la campagne.\n\n## REJOUER / PROGRESSER / ACHETER\n\nUne économie compréhensible et une histoire accessible\n\n### Trois compteurs distincts\n\nScore de manche : performance et record, jamais dépensé. Réputation : contacts et missions, jamais vendue. Monnaie gagnée : personnalisation et équipements équilibrés. Les petits bonus récurrents doivent correspondre à une action ou un objectif clair ; éviter une multiplication de monnaies et des récompenses sans utilité.\n\n### Règles de reprise retenues\n\nCampagne : checkpoints gratuits, reprise proche de l’erreur. Rush V0 : tentatives gratuites illimitées, redémarrage immédiat, aucune seconde chance au-delà des 30 secondes. Après la V0, des événements peuvent utiliser des tickets gagnés en jeu et une reprise par jeton hors classement. Les reprises payantes obligatoires et les prix qui augmentent après un échec ne sont pas retenus.\n\n### Revenus envisagés\n\nCosmétiques, collections, épisodes annexes, packs de nouveaux défis et sponsoring naturel du décor. Les effets visuels de nitro peuvent être personnalisables, sans avantage mécanique. Les prix indicatifs de l’annexe R8 sont en USD, restent des hypothèses et doivent être validés avant vente. Pas de contrat de marque présumé. Toute boutique V0 est une démonstration sans encaissement.\n\n### Offres et options non engagées\n\nPrésenter contenu exact, aperçu et prix explicite ; proposer des articles correspondant aux goûts du joueur. Pas d’offre pendant la conduite ni après chaque échec. Les tentatives payantes facultatives restent une piste à réexaminer, pas une tâche de développement autorisée pour la V0. Pas de récompense aléatoire payante. Le revenu doit être suivi avec la satisfaction, les retours et les remboursements.\n\n## PERSONNALISATION / PRÉFÉRENCES\n\nAdapter les propositions sans modifier l’équité\n\n### Profils de jeu modifiables\n\nChronomètre : records et parcours techniques. Exploration : repères et raccourcis. Histoire : chapitres et dialogues. Personnalisation : livrées et accessoires. Temps disponible court : Rush. Ces catégories décrivent une préférence récente, pas la psychologie, la richesse ou la vulnérabilité de la personne. Le joueur peut choisir son mode sans recommandation.\n\n### Premières règles simples\n\nV0 : choix explicite entre Rush, livraison et histoire ; progression locale seulement. Plus tard : après au moins cinq sessions valides, proposer en priorité le mode le plus souvent choisi. Après trois échecs consécutifs, proposer entraînement ou assistance, sans achat associé. La proposition reste refusable et ne modifie pas silencieusement la difficulté d’une course classée.\n\n### Données et contrôle\n\nPrévoir des événements locaux minimaux : début et fin de course, mode, durée active, colis livrés, score, collisions, caméra et activation d’une aide. Ne pas enregistrer les touches brutes, les contacts ou les données privées du téléphone. Préférences réinitialisables. Un suivi distant éventuel fera l’objet d’un chantier séparé avec information et choix utilisateur ; aucune connexion analytique cachée en V0.\n\n### Essais et limites des références\n\nComparer des variantes clairement définies sur des groupes distincts lorsque l’audience le permet. Le support Tetris Mobile décrit des essais sur récompenses et prix ; cela ne prouve pas un profilage psychologique individuel. La recherche sur l’ajustement de difficulté ne garantit aucun gain pour WEWA. Nos premières règles sont des hypothèses produit à mesurer, pas un algorithme de monétisation déjà validé.\n\n## RYTHME / REJOUABILITÉ / PREUVES\n\nValider la qualité d’une course avant d’étendre les neuf zones\n\n### Trois durées complémentaires\n\nRush : 30 s pour la maîtrise et la revanche immédiate. Livraison express : cible de 2 à 4 min pour un trajet complet. Chapitre narratif : cible de 8 à 15 min plus tard, avec sauvegarde intermédiaire. La première V0 reste un petit ensemble de courses et une poursuite de 5 à 8 min, complété du Rush.\n\n### La rue devient un terrain de maîtrise\n\nDeux ou trois itinéraires ont des risques et avantages compréhensibles. Un carrefour doit donner une décision, pas une collision inévitable. Alterner densité, ouverture et climax. Trafic annoncé par gestes, roues, feux et sons. Garder l’humour, la musique et l’entraide ; Kinshasa ne se résume pas aux crimes. Prioriser moto, premier plan, signalétique et ambiance sonore.\n\n### Extension après validation\n\nFantôme personnel d’abord, puis fantômes d’amis avec conditions comparables, uniquement après le socle. Défis de quartier, variations de parcours et collections peuvent renouveler l’intérêt. Ne pas démarrer par un multijoueur temps réel, une ville complète ou une boutique complexe. Les classements publics exigent une validation des scores et des mesures contre la triche, absentes du prototype local.\n\n### Ce que l’on mesurera\n\nPetit panel qualitatif de 20 à 30 personnes, incluant des joueurs kinois : compréhension, incidents injustes, choix de trajet et relance spontanée. Puis, sur une audience suffisante : retour J1/J7, taux de fin de course, nombre de relances, stabilité et satisfaction. Définir les cohortes et distinguer retour volontaire et relance suggérée. Les essais ne démontrent pas à eux seuls un futur best-seller.\n\n## DÉMARRER DANS CODEX\n\nPriorité : une course agréable, reproductible et réellement jouable\n\n### Ordre opérationnel\n\nLire 00_LIRE_AVANT_DE_CODER.md puis PROMPT_REPRISE_CODEX.txt. Initialiser app/ et importer une cellule de Gombe ; réaliser le contrôleur et les collisions ; ajouter nitro et deux caméras ; réaliser Rush et le score ; ajouter livraison et courte poursuite. Mesurer la performance. Affiner ensuite art, personnages, musique et recommandations. Aucun paiement réel avant les tâches dédiées post-bêta.\n\n### Contrats vérifiables\n\nÀ 30 s, le Rush termine exactement une fois et ne compte plus de dépôt. Un colis ne rapporte qu’une fois. Rejouer réinitialise timer, jauge, trafic, inventaire et multiplicateur. La simulation produit les mêmes règles à 30 et 60 images/s. Pause et perte de focus ne laissent pas l’accélérateur bloqué. Les deux caméras partagent le même état du véhicule. Les dépendances du backlog doivent rester sans cycle.\n\n### Fichiers faisant autorité\n\nWEWA_Developpement_Web/docs/CADRAGE_R9.md ; config/rush.json ; config/nitro_camera.json ; config/personalization.json ; config/narrative.json ; backlog/tasks.json. Les fichiers context/ conservent les textes et exports ; la version R9 prévaut sur les descriptions historiques. Le plan de production est actualisé en version 1.2. Les fonctionnalités indiquées pending ne sont pas réalisées.\n\n### Références et annexes\n\nLa suite conserve le dossier R8 complet, avec ses crédits et ses références locales. Sources complémentaires relues le 20 octobre 2026 : support Tetris Mobile, « My rewards are different from someone else » ; Ascarza, Netzer et Runge, « Personalized game design for improved user retention and monetization in freemium games », DOI 10.1016/j.ijresmar.2025.01.006. Ces sources éclairent les tests ; elles ne prouvent pas la performance de WEWA.\n",
-      "Reprends WEWA, jeu solo de petite moto à Kinshasa, dans ce dossier.\nLis AGENTS.md puis 00_LIRE_AVANT_DE_CODER.md. Dans WEWA_Developpement_Web, lis AGENTS.md, docs/CADRAGE_R9.md, docs/PLAN_DE_PRODUCTION.md (mise à jour 1.2), config/product.json, config/rush.json, config/nitro_camera.json, config/personalization.json, config/narrative.json et backlog/tasks.json.\nLe cadrage R9 prévaut sur les annexes et exports historiques. Si Ewutelo est disponible, lis l’idée 27f8ffb12df14ff79c6e0f13cbd1cf91 ; le contexte local suffit sinon.\nCrée app/ et commence W02 puis W03. Réutilise les modèles Gombe et les sources ; ne refais pas tout le dossier. Implémente ensuite contrôleur, collisions, nitro, vue arrière et au guidon ; puis Wewa Rush 30 secondes avec score, dépôt et relance gratuits. Conserve livraison et courte poursuite narrative pour fermer la V0. Respecte les dépendances ; W01 peut attendre des appareils physiques sans bloquer le socle web.\nLe récit utilise une amie du héros et une personnalité fictive. Didi Stone est uniquement une piste de collaboration, sans participation acquise ni visage utilisé dans le prototype. Reprises narratives gratuites. Aucun achat réel, paiement pour difficulté, profilage sensible, télémétrie distante cachée ou classement public dans la V0.\nTravaille par jalons jouables, tests exécutés et preuves. Ne déclare aucun FPS, photoréalisme ou succès commercial sans mesure. Si une vérification est impossible, note la limite et poursuis le travail faisable. Les 45 tâches actuelles font autorité ; les fonctionnalités nouvelles restent à programmer.\n",
-      "SOCLE À PRÉSERVER : Géographie en neuf zones de jeu, routes et POI sourcés ; Gombe pilote. Petites motos Wewa, vieux Mercedes T1/207 jaunes et bleus, taxis jaunes, Hilux/Prado ; Hyundai Palisade comme référence visuelle, dotations gouvernementales non confirmées. Roulages ordinaires, alliés ou corrompus fictifs, robots documentés historiquement, convois et détours. Vendeurs, quados, marchés, nganda ntaba, concerts et rumba, sapeurs, écoles, maraîchers, fleuve et Brazzaville. Kuluna et réseaux criminels fictifs ; vie quotidienne positive et habitants variés. Monuments, Martyrs, Limete, Lumumba, Liberté, Zando, Tourisme et aéroport restent des références à valider spatialement. Publicités et produits avec marques fictives tant qu'aucun contrat n'existe. Petite moto et matériaux de premier plan prioritaires. V0 TypeScript/Babylon.js candidat, WebGL2, GLB par cellules de 128 m ; données et code séparés. Objectifs non mesurés : 30 FPS mobile, 60 PC, chargement progressif. 1 747 objets bâtis, 191 cellules, 351 GLB, hauteurs souvent estimées et recouvrements à contrôler. Aucun moteur, conduite, mission, paiement ou benchmark implémenté. Les documents intégraux, références, licences et géodonnées sont dans WEWA_Reprise_Codex.zip. Le concept R9 contient huit pages actuelles et 31 pages R8 de référence ; le plan 1.2 contient deux pages actuelles et 15 pages de référence. L'archive contient aussi nitro_camera.json, rush.json, personalization.json, narrative.json et 45 tâches. Les descriptions historiques cèdent devant R9.",
-      "Décisions utilisateur de lancement Viva Wewa : prévisualisation publique, iPhone 15/16, budget 0 €, motos réalistes selon références officielles, identité illustrée punchy/colorée, liberté créative sous relecture, ambiance sonore et vie de rue de Kinshasa. Le détail fait autorité dans creative_direction.",
-      "2026-10-20 — User requests WEWA tank lettering, regenerated solo target, and continued3D production. Generated branding target separate from actual editable cast-rim and tyre-fit candidates. Related1.40in rim width not certified RDC;44mm working width remains estimated. No art acceptance or public update.",
-      "2026-10-20 — Continue with single front brake-panel casting. Related JA131605 front/back photographs traced to BM125UG catalogue; reused retailer photos are not independent captures or exact RDC confirmation. Original Blender construction volumes with robust Manifold3D3.3.2 CSG; source topology, openings and candidate hub interface checked before real renders and Babylon captures. Dimensions, clocking and finish remain provisional; no lever/axle, art reception or public deployment."
-    ],
-    "goals": [
-      "Livrer une V0 de 5 à 8 minutes avec conduite, livraison et poursuite de taxi.",
-      "Puis produire quinze minutes de qualité artistique, avec vie locale, roulage, convoi, contact et berge.",
-      "Étendre progressivement aux neuf zones LIGA.",
-      "Monétiser ensuite cosmétiques, contenu et publicité intégrée à petits prix."
-    ],
-    "implementation_report": {
-      "art_recovery_document": "creative/ART_PRODUCTION.md",
-      "deployment": {
-        "source_commit": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
-        "status": "succeeded",
-        "version": 3
-      },
-      "features": [
-        "Moto originale aux proportions documentées",
-        "GLB Gombe et chargement par cellules",
-        "Clavier et commandes tactiles simultanées",
-        "Nitro, deux caméras, confort et pause",
-        "Rush 30 s, six colis, poursuite et indice, balade",
-        "Record local, réglages et maquette sonore originale"
-      ],
-      "latest_art_status": "Separate handlebar/grips/instruments fabricated with parallel source research, actual Blender/OIDN renders and movable Babylon needles. Cockpit review only; public game version3 unchanged.",
-      "limits": [
-        "Exact street reference and real facade survey",
-        "Human mobile and local road-priority validation",
-        "Finished photoreal art, character animation and lighting",
-        "Sustained hardware performance qualification",
-        "Full V1 fifteen-minute assembly and later phases"
-      ],
-      "milestone": "Seven isolated component candidates including parallel cockpit fabrication; first-person inspection assembly, no artistic reception",
-      "preview_url": "https://viva-wewa.chummyrose33.chatgpt.site",
-      "repository": "https://github.com/Mobutoo/wewa",
-      "review_url": "https://github.com/Mobutoo/wewa/blob/main/creative/reviews/cockpit-v1/README.md",
-      "source_commit": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
-      "tests": "33 passing logic/integration tests, actual browser QA desktop/touch, full driven story with six parcels and 1300m pursuit in about300s, checkpoint restored, no collisions in automated scenario."
-    },
-    "mobile_controls_revision": {
-      "date": "2026-10-20",
-      "handedness": "Fixed reversed steering in RH scene; actual camera projection verifies right input turns screen right.",
-      "reason": "Utilisateur refuse les commandes séparées qui mobilisent deux mains pour conduire.",
-      "release": "Retour au neutre, perte de focus ou pause efface les contacts et axes.",
-      "scheme": "Un seul joystick analogique au pouce gauche : haut accélérer, bas freiner puis reculer, gauche/droite diriger simultanément. Nitro et klaxon indépendants à droite.",
-      "verification_scope": "Unit tests and real Chromium touch events; physical Safari approval pending."
-    },
-    "motorcycle_component_fabrication": {
-      "active_component": {
         "all_dimensions_estimated": true,
         "art_accepted": false,
         "construction": "Formed forked plate, three actual open passages, rounded end collars and ribs; source normal defects corrected before isolated review",
@@ -536,1112 +1091,593 @@
           "source_sha256": "86891d5bbf7e2a0833a74595c949132535995ae8361344065926f562060c75f5",
           "triangles": 53894
         }
-      },
-      "cockpit_review": {
-        "all_placement_dimensions_estimated": true,
-        "art_accepted": false,
-        "bar_surface_crossings": 0,
-        "historical": true,
-        "kind": "Linked-source candidate arrangement, not an installed brake/cockpit or gameplay capture",
-        "linked_sources": [
-          {
-            "component": "instruments",
-            "object_count": 159,
-            "sha256": "e3321cee34967f7749dbfa8650fe01c404137c55cfb5c42881363f098cb91ec0",
-            "source": "assets-src/moto-components/instruments/instruments-v1.blend"
-          },
-          {
-            "component": "handlebar",
-            "object_count": 1,
-            "sha256": "1385ccc667f30681e334ce96aff71d2214794238c5b31e0a1fd4b75b8ad6652a",
-            "source": "assets-src/moto-components/handlebar/handlebar-v1.blend"
-          },
-          {
-            "component": "grips",
-            "object_count": 2,
-            "sha256": "d0070617414c809b1a6e71423029720a5d3dbb71130c8ca666316f5ffa4ed9a1",
-            "source": "assets-src/moto-components/handlebar-grips/handlebar-grips-v1.blend"
-          }
-        ],
-        "missing": [
-          "clamps",
-          "instrument bracket",
-          "throttle carrier",
-          "switches",
-          "levers",
-          "cables",
-          "mirrors",
-          "ignition position",
-          "visor"
-        ],
-        "note": "Prior cockpit-v1 uses historical gripsv1; new source candidates are reviewed separately.",
-        "physical_iphone_tested": false,
-        "pointer_ranges": {
-          "fuel_fraction": [
-            0,
-            1
-          ],
-          "gear": [
-            0,
-            5
-          ],
-          "speed_kmh": [
-            0,
-            140
-          ]
-        },
-        "review": "creative/reviews/cockpit-v1/README.md",
-        "source": "assets-src/moto-components/cockpit-review/cockpit-review-v1.blend",
-        "source_sha256": "befc6e3c4a444b051acc524762234011236d86e5a632dcfceb30d0b8009a9452"
-      },
-      "date": "2026-10-20",
-      "evidence": {
-        "actual_blender_renders": "creative/reviews/front-tyre-v1/",
-        "actual_cockpit_increment_blender_views": 11,
-        "axle_research": "creative/workflow/front-axle-research.json",
-        "cockpit18_shape_audit": "creative/research/cockpit18-shape-audit.json",
-        "cockpit_review": "creative/reviews/cockpit-v1/",
-        "cockpit_validation": "WEWA_Developpement_Web/validation/cockpit-v1.json",
-        "cockpit_visual_audit": "creative/research/cockpit-visual-audit.json",
-        "engine_review": "tools/asset-lab/",
-        "front_brake_lever_review": "creative/reviews/front-brake-lever-v1/",
-        "front_brake_lever_validation": "WEWA_Developpement_Web/validation/front-brake-lever-v1.json",
-        "front_brake_plate_review": "creative/reviews/front-brake-plate-v2/",
-        "front_brake_plate_source_check": "creative/reviews/front-brake-plate-v2/source-geometry-check.json",
-        "front_brake_plate_validation": "WEWA_Developpement_Web/validation/front-brake-plate-v2.json",
-        "front_rim_geometry_check": "creative/reviews/front-rim-v1/geometry-check.json",
-        "front_rim_review": "creative/reviews/front-rim-v1/",
-        "front_rim_source_check": "creative/reviews/front-rim-v1/source-geometry-check.json",
-        "front_rim_validation": "WEWA_Developpement_Web/validation/front-rim-v1.json",
-        "geometry_check": "creative/reviews/front-tyre-v1/geometry-check.json",
-        "grips_review": "creative/reviews/handlebar-grips-v1/",
-        "handlebar_review": "creative/reviews/handlebar-v1/",
-        "instruments_review": "creative/reviews/instruments-v1/",
-        "instruments_validation": "WEWA_Developpement_Web/validation/instruments-v1.json",
-        "lever_audit": "creative/research/front-brake-lever-audit.json",
-        "preflight": "creative/reviews/front-rim-v1/preflight-check.json",
-        "public_game_unchanged": true,
-        "reference_observations": "assets-src/moto-components/front-tyre/reference-observations.json",
-        "rider_created": false,
-        "user_art_accepted": false,
-        "whole_motorcycle_complete": false
-      },
-      "execution_18": {
-        "art_accepted": false,
-        "authorization": "User: GO de1à18",
-        "completed_groups": 0,
-        "datums": "creative/workflow/motorcycle-datums-v1.json",
-        "documentary_file_hashes_verified": 240,
-        "groups": 18,
-        "note": "240 archived files, not240 photographs/views, independent sources or dimensions. Other controls/clamps/ignition currently under fabrication and not published as finished.",
-        "physical_iphone_tested": false,
-        "plan": "creative/workflow/motorcycle-execution-18.json",
-        "source_photos_private": true,
-        "status": "three_owner_rolling_fabrication_in_progress"
-      },
-      "first_component": {
-        "construction": "Closed shaped section with hollow liner/beads, integral geometric grooves, editable source and separate inspection export",
-        "corrections": "Initial inward winding corrected; overexposed studio lights reduced; groove-aligned topology replaces uniform-grid stair stepping; explicit glTF roughness fallback",
-        "export": "assets-src/moto-components/front-tyre/front-tyre-inspection.glb",
-        "generator": "assets-src/moto-components/front-tyre/build.py",
-        "id": "MOTO-TYRE-FRONT-001",
-        "limits": [
-          "Supplier and exact tread mould not identified",
-          "Inflated width and outside diameter bounded working estimates",
-          "Photo cameras not calibrated",
-          "Procedural micrograin bake and runtime material parity open",
-          "Not optimized or qualified on physical iPhone"
-        ],
-        "parameters": "assets-src/moto-components/front-tyre/parameters.json",
-        "review": "creative/reviews/front-tyre-v1/README.md",
-        "source": "assets-src/moto-components/front-tyre/front-tyre-v1.blend",
-        "status": "candidate_rework_not_accepted"
-      },
-      "next_action": "Continue all18authorized groups with separate detailed components, actual source/export/runtime checks and review; rider deferred.",
-      "parallel_execution": {
-        "authorization": "Explicit user parallelization and GO18",
-        "automatic_art_acceptance": false,
-        "chains": {
-          "A": [
-            1,
-            2,
-            13,
-            14,
-            15,
-            16
-          ],
-          "B": [
-            3,
-            6,
-            7,
-            9,
-            10,
-            17,
-            18
-          ],
-          "C": [
-            4,
-            5,
-            8,
-            11,
-            12
-          ]
-        },
-        "detailed_owners_max": 3
-      },
-      "previous_components": [
-        {
-          "art_accepted": false,
-          "construction": "Editable closed rim, five swept I-section cast spokes, hollow integral drum housing and separate estimated valve; linked existing tyre for fit inspection.",
-          "corrections": [
-            "Rounded casting junction surface instead of Boolean normal patches",
-            "44mm working rim width explicitly chosen to match the estimated tyre bead separation, not adopted as a manufacturer width",
-            "Evaluated export copy retains five actual cast spokes",
-            "Machined cavity/bearing material restored after voxel remeshing and checked on actual faces/buffers"
-          ],
-          "dimensions": {
-            "estimated_working_width_m": 0.044,
-            "nominal_bead_seat_diameter_m": 0.4318,
-            "observed_spokes": 5,
-            "related_catalogue_width_adopted": false,
-            "related_catalogue_width_m": 0.03556
-          },
-          "exports": [
-            "assets-src/moto-components/front-rim/front-rim-inspection.glb",
-            "assets-src/moto-components/front-rim/front-wheel-fit-inspection.glb"
-          ],
-          "generator": "assets-src/moto-components/front-rim/build.py",
-          "id": "MOTO-RIM-FRONT-001",
-          "limits": [
-            "Exact RDC wheel part and section unconfirmed",
-            "Working width matches estimated tyre bead separation, not a manufacturer section or certified seal",
-            "Spoke roots, drum cavity, bearing and valve dimensions estimated",
-            "Photo cameras not calibrated",
-            "No mobile LOD or physical iPhone qualification",
-            "Brake plate, axle and complete motorcycle not fabricated"
-          ],
-          "no_render_preflight": "tools/check_rim_preflight.py",
-          "parameters": "assets-src/moto-components/front-rim/parameters.json",
-          "review": "creative/reviews/front-rim-v1/README.md",
-          "review_url": "https://github.com/Mobutoo/wewa/blob/main/creative/reviews/front-rim-v1/README.md",
-          "source": "assets-src/moto-components/front-rim/front-rim-v1.blend",
-          "status": "isolated_casting_candidate_rework_not_accepted",
-          "technical_verification": {
-            "art_accepted": false,
-            "browser_assets": [
-              "rim",
-              "wheel"
-            ],
-            "connected_casting_shells": 1,
-            "exports": [
-              {
-                "file": "assets-src/moto-components/front-rim/front-rim-inspection.glb",
-                "glTF_errors": 0,
-                "glTF_warnings": 0,
-                "triangles": 164148
-              },
-              {
-                "file": "assets-src/moto-components/front-rim/front-wheel-fit-inspection.glb",
-                "glTF_errors": 0,
-                "glTF_warnings": 0,
-                "triangles": 462348
-              }
-            ],
-            "material_faces": {
-              "Machined drum and bearing seat": 74141,
-              "Silver coating on cast alloy - working reference": 1280001
-            },
-            "non_manifold_edges": 0,
-            "photo_cameras_calibrated": false,
-            "physical_iphone_tested": false,
-            "preflight_passed": true,
-            "source_sha256": "77f351d89b29f39dc435b434278bb556cff41a8c509edccd979dc9c8c1173c3a"
-          }
-        },
-        {
-          "all_panel_dimensions_estimated": true,
-          "art_accepted": false,
-          "construction": "Original closed turned section with integral concentric rings, eight rear ribs, tapered fork-stop pad/socket, lofted front spine, raised bosses and open bores; robust original-volume union/cutting via Manifold3D3.3.2, construction volumes retained in Blender",
-          "corrections": [
-            "Self-crossing central section rejected and rebuilt",
-            "Open Blender Boolean unions and disconnected fragments rejected before detailed rendering",
-            "Concentric rings integrated in the turned profile; original feature volumes processed with robust Manifold solid operations",
-            "Tapered pad/spine replaces coarse constant-section blocks",
-            "Actual source openings and candidate hub surface crossings independently checked"
-          ],
-          "documentary_sources": [
-            "D01",
-            "D02",
-            "D04",
-            "D07",
-            "D08",
-            "D09"
-          ],
-          "exports": [
-            "assets-src/moto-components/front-brake-plate/front-brake-plate-v2-inspection.glb",
-            "assets-src/moto-components/front-brake-plate/front-wheel-panel-v2-fit-inspection.glb"
-          ],
-          "generator": "assets-src/moto-components/front-brake-plate/material_v2.py",
-          "id": "MOTO-BRAKE-PLATE-FRONT-001",
-          "installation_clocking_verified": false,
-          "lever_axle_shoes_springs_modelled": false,
-          "limits": [
-            "Related-part identity not confirmed for current RDC motorcycle",
-            "All body section and bore dimensions are working estimates against existing candidate hub",
-            "Photo cameras not calibrated",
-            "Body only; fitted seal/gear/pivot details, lever and axle remain separate",
-            "No optimized mobile LOD or physical iPhone qualification",
-            "Original surface grain added; unmeasured coating, UV seams, faceted bore contours and artistic appearance still require review",
-            "Runtime-generated tangent basis carries glTF warning; physical Safari unqualified"
-          ],
-          "material_revision": {
-            "original_periodic_PBR_maps": true,
-            "physical_uv_tile_m": 0.01,
-            "reflectance_measured": false,
-            "tangent_basis_runtime_generated_warning": true,
-            "texture_data_parity_passed": true,
-            "visual_parity_accepted": false
-          },
-          "parameters": "assets-src/moto-components/front-brake-plate/parameters.json",
-          "previous_revision": {
-            "review": "creative/reviews/front-brake-plate-v1/README.md",
-            "source": "assets-src/moto-components/front-brake-plate/front-brake-plate-v1.blend",
-            "technical_verification": {
-              "art_accepted": false,
-              "browser_assets": [
-                "plate",
-                "wheelpanel"
-              ],
-              "candidate_hub_surface_crossings": 0,
-              "connected_casting_shells": 1,
-              "exports": [
-                {
-                  "file": "assets-src/moto-components/front-brake-plate/front-brake-plate-inspection.glb",
-                  "glTF_errors": 0,
-                  "glTF_warnings": 0,
-                  "sha256": "bce93d34632f3cd3aaf9492ecaa88e56c7b5c5e539e5c471bb8b4e069dfafa7c"
-                },
-                {
-                  "file": "assets-src/moto-components/front-brake-plate/front-wheel-panel-fit-inspection.glb",
-                  "glTF_errors": 0,
-                  "glTF_warnings": 0,
-                  "sha256": "95a936734467643a99e76cedd4655cb2921414d367ac8032f3904b08606be31b"
-                }
-              ],
-              "non_manifold_edges": 0,
-              "open_passages": [
-                "axle",
-                "cam",
-                "upper_cross",
-                "outer_cross"
-              ],
-              "render_views": 5,
-              "socket_floor_verified": true,
-              "software": "manifold3d 3.3.2",
-              "source_sha256": "16e99efb3781adb8cbfc8ef64750ff3bd230026a205b284158238ea888f7a69a"
-            }
-          },
-          "reference": "JA131605 in related BM125UG5gear catalogue and retailer front/back photographs; exact current RDC fitment unconfirmed",
-          "reference_view_directions": 2,
-          "retailer_downloaded_images": 5,
-          "retailer_duplicates_are_independent_confirmation": false,
-          "review": "creative/reviews/front-brake-plate-v2/README.md",
-          "review_url": "https://github.com/Mobutoo/wewa/blob/main/creative/reviews/front-brake-plate-v2/README.md",
-          "solid_worker": "assets-src/moto-components/front-brake-plate/csg.py",
-          "source": "assets-src/moto-components/front-brake-plate/front-brake-plate-v2.blend",
-          "status": "material_v2_candidate_not_art_accepted",
-          "technical_verification": {
-            "art_accepted": false,
-            "candidate_hub_surface_crossings": 0,
-            "connected_casting_shells": 1,
-            "exports": [
-              {
-                "file": "assets-src/moto-components/front-brake-plate/front-brake-plate-v2-inspection.glb",
-                "glTF_errors": 0,
-                "glTF_warnings": 1,
-                "sha256": "495701dd4ce77ed82d4d27045f1aff7aec1ec47bc87a79163d6ee09b2834aa50"
-              },
-              {
-                "file": "assets-src/moto-components/front-brake-plate/front-wheel-panel-v2-fit-inspection.glb",
-                "glTF_errors": 0,
-                "glTF_warnings": 1,
-                "sha256": "2be758aab20a1d3deca50d7560290f76b1c0c4982e4c640e4c81662ebb8f7f30"
-              }
-            ],
-            "non_manifold_edges": 0,
-            "render_views": 5,
-            "source_sha256": "b22bab7f58f4456c74b227610e7f30e51e07793b0420106a9ad9df71e69f71ec"
-          }
-        },
-        {
-          "art_accepted": false,
-          "construction": "Original photo-informed curved/joggled steel-looking blade, open serrated shaft seat, end eye and edge radii; constrained interior triangulation before forming; original construction and cutters retained",
-          "corrections": [
-            "Rejected rear lever JW131601 after catalogue comparison",
-            "Rejected non-planar large-cap facets in first source/render; rebuilt dense constrained interior and checked outline area",
-            "Actual glTF openings checked with node world transform"
-          ],
-          "dimensions": {
-            "all_estimated": true,
-            "blade_thickness_working_m": 0.0025,
-            "shaft_to_eye_working_m": 0.088,
-            "spline_count_verified": false,
-            "spline_count_working": 20
-          },
-          "documentary_sources": [
-            "D04",
-            "D10",
-            "D11",
-            "D12"
-          ],
-          "exports": [
-            "assets-src/moto-components/front-brake-lever/front-brake-lever-inspection.glb"
-          ],
-          "generator": "assets-src/moto-components/front-brake-lever/build.py",
-          "id": "MOTO-BRAKE-LEVER-FRONT-001",
-          "limits": [
-            "Two angles of main visible side, no calibrated reverse view",
-            "All dimensions, forming offsets and tooth count estimated",
-            "Exact RDC identity and installed angle not confirmed",
-            "Camshaft, cable, fixing hardware and wheel axle remain separate",
-            "Static colour variation, no angle-dependent plating",
-            "No accepted mobile LOD, physical iPhone qualification or user art reception"
-          ],
-          "material": "Original PBR textures, static plated-steel appearance only; no reference photo texture or measured chemistry",
-          "parameters": "assets-src/moto-components/front-brake-lever/parameters.json",
-          "reference": "JA131607 related UG5gear front cam lever, D04 sheet44 item18; exact current RDC identity unconfirmed",
-          "review": "creative/reviews/front-brake-lever-v1/README.md",
-          "review_url": "https://github.com/Mobutoo/wewa/blob/main/creative/reviews/front-brake-lever-v1/README.md",
-          "source": "assets-src/moto-components/front-brake-lever/front-brake-lever-v1.blend",
-          "status": "isolated_candidate_rework_not_accepted",
-          "technical_verification": {
-            "babylon_actual_export_loaded": true,
-            "connected_shells": 1,
-            "export_sha256": "f7e27e1782549a1c06c8fb929cd6d8f55dcfaf3e31c772741378783e4dcbe9c8",
-            "glTF_errors": 0,
-            "glTF_warnings": 0,
-            "non_manifold_edges": 0,
-            "openings_verified": [
-              "shaft",
-              "open_slot",
-              "eye"
-            ],
-            "physical_iphone_tested": false,
-            "render_views": 4,
-            "signed_volume_m3": 0.000003914040324438482,
-            "source_sha256": "57b7313863157608a679563cfd80f3b6b6a29b8febebafb44e42c68819337a0d"
-          }
-        },
-        {
-          "all_dimensions_estimated": true,
-          "art_accepted": false,
-          "exports": [
-            "assets-src/moto-components/handlebar/handlebar-inspection.glb"
-          ],
-          "generator": "assets-src/moto-components/handlebar/build.py",
-          "id": "MOTO-HANDLEBAR-001",
-          "limits": [
-            "Exact current RDC part and dimensions unconfirmed",
-            "No received installed controls or measured interfaces",
-            "Inspection geometry, no qualified mobile LOD or physical iPhone test"
-          ],
-          "parameters": "assets-src/moto-components/handlebar/parameters.json",
-          "reference": "Related DU181021; exact current RDC identity unknown",
-          "review": "creative/reviews/handlebar-v1/README.md",
-          "source": "assets-src/moto-components/handlebar/handlebar-v1.blend",
-          "status": "isolated_candidate_rework_not_accepted",
-          "technical_verification": {
-            "export_sha256": "2876b09b2a86cf7bdc28599e9c4c04f9b2909a5bb073b86430c2db5058cfc310",
-            "glTF_errors": 0,
-            "glTF_warnings": 0,
-            "source_check": "creative/reviews/handlebar-v1/source-geometry-check.json",
-            "source_sha256": "1385ccc667f30681e334ce96aff71d2214794238c5b31e0a1fd4b75b8ad6652a",
-            "triangles": 507392
-          }
-        },
-        {
-          "all_dimensions_estimated": true,
-          "art_accepted": false,
-          "correction": "Physical handedness corrected: pilot left +X bore22.4mm; pilot right -X bore25.4mm. Bore dimensions remain estimates.",
-          "exports": [
-            "assets-src/moto-components/handlebar-grips/handlebar-grips-v2-inspection.glb"
-          ],
-          "generator": "assets-src/moto-components/handlebar-grips/build_v2.py",
-          "id": "MOTO-HANDLEBAR-GRIPS-001",
-          "limits": [
-            "Exact current RDC part and dimensions unconfirmed",
-            "No received installed controls or measured interfaces",
-            "Inspection geometry, no qualified mobile LOD or physical iPhone test"
-          ],
-          "next_correction": "Independent photo audit identifies too narrow long grip motifs; separate v3 requested.",
-          "parameters": "assets-src/moto-components/handlebar-grips/parameters-v2.json",
-          "previous_revision": {
-            "all_dimensions_estimated": true,
-            "art_accepted": false,
-            "exports": [
-              "assets-src/moto-components/handlebar-grips/handlebar-grips-inspection.glb"
-            ],
-            "generator": "assets-src/moto-components/handlebar-grips/build.py",
-            "id": "MOTO-HANDLEBAR-GRIPS-001",
-            "limits": [
-              "Exact current RDC part and dimensions unconfirmed",
-              "No received installed controls or measured interfaces",
-              "Inspection geometry, no qualified mobile LOD or physical iPhone test"
-            ],
-            "parameters": "assets-src/moto-components/handlebar-grips/parameters.json",
-            "reference": "Related DU191009/DU191003 rubber envelopes; throttle carrier absent",
-            "review": "creative/reviews/handlebar-grips-v1/README.md",
-            "source": "assets-src/moto-components/handlebar-grips/handlebar-grips-v1.blend",
-            "status": "isolated_candidate_rework_not_accepted",
-            "technical_verification": {
-              "export_sha256": "d7fc7d0b74c3d21d4eab7131e7d2a92bf2e81da0c7640d58204da3e5f0100996",
-              "glTF_errors": 0,
-              "glTF_warnings": 0,
-              "source_check": "creative/reviews/handlebar-grips-v1/source-geometry-check.json",
-              "source_sha256": "d0070617414c809b1a6e71423029720a5d3dbb71130c8ca666316f5ffa4ed9a1",
-              "triangles": 114276
-            }
-          },
-          "reference": "Related DU191009/DU191003 rubber envelopes; throttle carrier absent",
-          "review": "creative/reviews/handlebar-grips-v2/README.md",
-          "source": "assets-src/moto-components/handlebar-grips/handlebar-grips-v2.blend",
-          "status": "isolated_candidate_rework_not_accepted",
-          "technical_verification": {
-            "export_sha256": "603def6673b589c192551005c1b79f3e2cc1c83a0b60142343e4ac6948cb8c22",
-            "glTF_errors": 0,
-            "physical_iphone_tested": false,
-            "source_sha256": "40514ce73d9a5a763fbf98fe2c1d0ab84c248a0d9373a7747895781e18cd98ae"
-          }
-        },
-        {
-          "all_dimensions_estimated": true,
-          "art_accepted": false,
-          "construction": "Separate closed housings, bezels, seals and lenses, original vector dial markings, two movable needle pivots and rounded USB cap; central cover and USB corrected after independent review",
-          "documentary_sources": [
-            "D01",
-            "D04",
-            "D13",
-            "D14"
-          ],
-          "exports": [
-            "assets-src/moto-components/instruments/instruments-inspection.glb"
-          ],
-          "functions": [
-            "Speed0–140km/h",
-            "FuelE/F",
-            "Gear1–5",
-            "Closed USB cap; hidden connector/wiring not fabricated"
-          ],
-          "generator": "assets-src/moto-components/instruments/build.py",
-          "id": "MOTO-INSTRUMENTS-001",
-          "limits": [
-            "No measured dimensions, calibrated photo or verified reverse sections/mounts",
-            "Odometer static, local pointer controls not yet bound to game simulation",
-            "Fuel linear calibration and green active gear are demo conventions, not measured manufacturer behaviour",
-            "No refractive/caustic lens shadows in review; runtime reflections/readability still require artistic review",
-            "No physical iPhone qualification, accepted mobile LOD or art reception"
-          ],
-          "parameters": "assets-src/moto-components/instruments/parameters.json",
-          "reference": "Official feature photo published on current Boxer125HD RDC page; asset filename includesBM150, exact current assembly part number not certified",
-          "review": "creative/reviews/instruments-v1/README.md",
-          "source": "assets-src/moto-components/instruments/instruments-v1.blend",
-          "status": "separate_instrument_candidate_rework_not_accepted",
-          "technical_verification": {
-            "export_sha256": "26f411564cc903308ce529b0100efe8d68f95a22a0a2e7e17dd4cf4e3f7364ba",
-            "glTF_errors": 0,
-            "glTF_warnings": 0,
-            "source_check": "creative/reviews/instruments-v1/source-geometry-check.json",
-            "source_sha256": "e3321cee34967f7749dbfa8650fe01c404137c55cfb5c42881363f098cb91ec0",
-            "triangles": 46801
-          }
-        }
-      ],
-      "renderer": {
-        "archive_sha256": "4da1c956673c0485e63054e563ee69198cc8f80d8157dd7592dffc8a6a5592e6",
-        "capability_test": "tools/provenance/blender-4.3.2-oidn-capability.json",
-        "image_generation_used_for_model_renders": false,
-        "name": "Official Blender4.3.2 with CPU OpenImageDenoise",
-        "provenance": "tools/provenance/blender-4.3.2-provenance.json",
-        "raw_hdr": "Private NoisyImage EXR saved alongside denoised output, paths/hashes in render reports"
-      },
-      "scope": "Eight isolated candidate component records including corrected gripsv2 and instrument bracket; 18-group fabrication authorized and in progress, no accepted motorcycle.",
-      "solo_visual_target": {
-        "art_accepted": false,
-        "kind": "image_gen edited artistic target; not Blender or gameplay output",
-        "manufacturer_names_retained_in_documentation": true,
-        "path": "creative/direction/motorcycle-wewa-style-02-generated-reference.png",
-        "tank_wordmark": "WEWA"
-      },
-      "variant_warning": {
-        "axle_report": "creative/research/front-axle-v2/report.json",
-        "finding": "BM125UG and BM150 spoke/alloy parts groups differ; current JA panel/lever not certified compatible with current RDC cast wheel",
-        "measured_axle_dimensions_found": false,
-        "report": "creative/research/front-brake-cam/research.json"
       }
+    ],
+    "renderer": {
+      "archive_sha256": "4da1c956673c0485e63054e563ee69198cc8f80d8157dd7592dffc8a6a5592e6",
+      "capability_test": "tools/provenance/blender-4.3.2-oidn-capability.json",
+      "image_generation_used_for_model_renders": false,
+      "name": "Official Blender4.3.2 with CPU OpenImageDenoise",
+      "provenance": "tools/provenance/blender-4.3.2-provenance.json",
+      "raw_hdr": "Per-component only. Clamp/bracket/fork PNG views have no EXR. Throttle provides public16bit linear denoised Combined EXR, not an undenoised NoisyImage. Private multilayer raw passes exist only where a report explicitly identifies and verifies them."
     },
-    "non_goals": [
-      "Pas de paiement réel, multijoueur ou combat complexe dans V0.",
-      "Pas de prétention à un classement top 10 % ou à des FPS non mesurés."
-    ],
-    "open_questions": [
-      "Height and floors missing on 99.4% of global building objects",
-      "Gombe estimated road/building overlaps about 2061 square metres summed",
-      "Exact port access, playable corridor and local device profiles not verified",
-      "Cheta/Chelsea terminology and chikwangue repair anecdote unverified",
-      "No human experts hired; roles describe responsibilities",
-      "No measured FPS or top-decile ranking"
-    ],
-    "phases": [
-      {
-        "phase": "P0-P7",
-        "scope": "Backlog W00-W34 fourni dans requirements. W00 terminé ; W01 et W02 prêts. Exécuter selon dépendances."
-      }
-    ],
-    "problem": "Créer WEWA, jeu solo de petite moto à Kinshasa : Rush de 30 secondes, livraisons et enquête sur la disparition d'une amie accompagnant une personnalité fictive. Secteur pilote Gombe. Spécifications prêtes pour développement ; aucun jeu jouable existant.",
-    "production_recovery": {
-      "blender_production": {
-        "collectibles": 2,
-        "editable_sources": "assets-src/ in GitHub repository",
-        "facade_lod1_variants": 12,
-        "facades": 12,
-        "library_bytes": 1529528,
-        "new_asset_types": 34,
-        "street_props": 20,
-        "validation_errors": 0,
-        "validation_warnings": 0
-      },
-      "date": "2026-10-20",
-      "engine_systems": [
-        "source-directed roads and safe lane graph",
-        "fixed-step seeded traffic and pedestrian crossings",
-        "spatial swept collisions, crash recovery and wheel-contact surface sampling",
-        "interpolated rendering",
-        "mission director: 6 parcels, 1300m pursuit and recoverable clue",
-        "versioned checkpoints with geometry fingerprint",
-        "local records per rules/seed/world, reputation and coins",
-        "single-thumb joystick and remappable keyboard",
-        "optional peripheral radial postprocess",
-        "thin instances, facade LOD and static prop batching"
-      ],
-      "evidence": {
-        "browser": "Chromium desktop and touch portrait/landscape, reload checkpoint, key remapping, optional postprocess and lifecycle passed",
-        "collisions": 0,
-        "delivered": 6,
-        "driven_story_seconds": 300.43333333333334,
-        "logic_tests": 33,
-        "physical_iphone": "not tested",
-        "restored_during_pursuit": true,
-        "static_prop_colliders": 15,
-        "traffic_vehicles": 8
-      },
-      "full_game_shipped": false,
-      "phase_gates_open": [
-        "Exact street reference and real facade survey",
-        "Human mobile and local road-priority validation",
-        "Finished photoreal art, character animation and lighting",
-        "Sustained hardware performance qualification",
-        "Full V1 fifteen-minute assembly and later phases"
-      ],
-      "site_version": 3,
-      "source_commit": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
-      "street_choice": "Current 220m corridor provisional; exact 150–250m stretch requested from user",
-      "user_request": "Respecter les phases et produire le vrai moteur du jeu, puis des éléments 3D modifiables dans Blender ; ne pas présenter le prototype comme jeu abouti."
+    "scope": "Eight isolated candidate component records including corrected gripsv2 and instrument bracket; 18-group fabrication authorized and in progress, no accepted motorcycle.",
+    "solo_visual_target": {
+      "art_accepted": false,
+      "kind": "image_gen edited artistic target; not Blender or gameplay output",
+      "manufacturer_names_retained_in_documentation": true,
+      "path": "creative/direction/motorcycle-wewa-style-02-generated-reference.png",
+      "tank_wordmark": "WEWA"
     },
-    "requirements": [
-      {
-        "dependencies": [],
-        "details": "Plan, manifest et contrôle structurel disponibles ; limites explicites.",
-        "id": "W00",
-        "name": "Audit et blockout",
-        "phase": "P0",
-        "status": "done"
-      },
-      {
-        "dependencies": [
-          "W00"
-        ],
-        "details": "Deux appareils physiques identifiés ; parcours et état des lieux validés.",
-        "id": "W01",
-        "name": "Appareils et trajet pilote",
-        "phase": "P1",
-        "status": "blocked"
-      },
-      {
-        "dependencies": [
-          "W00"
-        ],
-        "details": "Build reproductible, versions gelées, HTTPS et page sans erreur.",
-        "id": "W02",
-        "name": "Projet TypeScript et moteur",
-        "phase": "P1",
-        "status": "done"
-      },
-      {
-        "dependencies": [
-          "W02"
-        ],
-        "details": "Une cellule visible ; origine et axes corrects ; capture de temps de trame.",
-        "id": "W03",
-        "name": "Import GLB et instrumentation",
-        "phase": "P1",
-        "status": "done"
-      },
-      {
-        "dependencies": [
-          "W01"
-        ],
-        "details": "Recouvrements examinés ; ponts/niveaux séparés ; corridor sans conflit bloquant.",
-        "id": "W04",
-        "name": "Audit routier et emprises",
-        "phase": "P1",
-        "status": "blocked"
-      },
-      {
-        "dependencies": [
-          "W03",
-          "W01"
-        ],
-        "details": "Mesures réelle WebGL 2 sur appareils ; WebGPU testé si disponible ; décision enregistrée.",
-        "id": "W05",
-        "name": "Scène de charge et choix moteur",
-        "phase": "P1",
-        "status": "blocked"
-      },
-      {
-        "dependencies": [
-          "W03"
-        ],
-        "details": "Accélérer, freiner, braquer, incliner visuellement ; caméra sans traversée du décor.",
-        "id": "W06",
-        "name": "Contrôleur moto et caméra",
-        "phase": "P2",
-        "status": "done"
-      },
-      {
-        "dependencies": [
-          "W04",
-          "W06"
-        ],
-        "details": "Pas de traversée à vitesse maximale ; pente et reprise après chute vérifiées. Inclure la vitesse maximale avec nitro.",
-        "id": "W07",
-        "name": "Sol et collisions balayées",
-        "phase": "P2",
-        "status": "blocked"
-      },
-      {
-        "dependencies": [
-          "W06"
-        ],
-        "details": "ZQSD/WASD et tactile ; perte de focus sans accélération persistante.",
-        "id": "W08",
-        "name": "Commandes et pause",
-        "phase": "P2",
-        "status": "done"
-      },
-      {
-        "dependencies": [
-          "W05",
-          "W07",
-          "W08",
-          "W37"
-        ],
-        "details": "Tour complet sur mobile et PC ; observations archivées, blocages corrigés.",
-        "id": "W09",
-        "name": "Tour jouable et test conduite",
-        "phase": "P2",
-        "status": "blocked"
-      },
-      {
-        "dependencies": [
-          "W04",
-          "W09"
-        ],
-        "details": "Sens, priorités, files et arrêts ; aucun spawn inévitable.",
-        "id": "W10",
-        "name": "Graphe de voies et trafic",
-        "phase": "P3",
-        "status": "blocked"
-      },
-      {
-        "dependencies": [
-          "W09"
-        ],
-        "details": "Prise, dépôt, récompense et reprise après interruption.",
-        "id": "W11",
-        "name": "Livraison et points de reprise",
-        "phase": "P3",
-        "status": "blocked"
-      },
-      {
-        "dependencies": [
-          "W10",
-          "W11"
-        ],
-        "details": "Perte de vue récupérable, cible persistante et mission gagnable.",
-        "id": "W12",
-        "name": "Poursuite et recherche",
-        "phase": "P3",
-        "status": "blocked"
-      },
-      {
-        "dependencies": [
-          "W04",
-          "W12"
-        ],
-        "details": "Deux itinéraires utiles et bonus sans boucle de farming.",
-        "id": "W13",
-        "name": "Deux raccourcis et jetons",
-        "phase": "P3",
-        "status": "blocked"
-      },
-      {
-        "dependencies": [
-          "W13",
-          "W08",
-          "W39",
-          "W40"
-        ],
-        "details": "5-8 minutes jouables, clavier/tactile testés, URL privée et limites annoncées. Rush 30 s et récit R9 inclus ; aucun achat réel.",
-        "id": "W14",
-        "name": "Livraison V0 web",
-        "phase": "P3",
-        "status": "blocked"
-      },
-      {
-        "dependencies": [
-          "W01"
-        ],
-        "details": "Références datées et autorisées pour la rue, la moto et le minibus.",
-        "id": "W15",
-        "name": "Collecte terrain et droits",
-        "phase": "P4",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W15",
-          "W09"
-        ],
-        "details": "150-250 m finis ; dimensions et texture density cohérentes.",
-        "id": "W16",
-        "name": "Étalon rue et matériaux",
-        "phase": "P4",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W15"
-        ],
-        "details": "Silhouettes locales, LOD, collisions et animations contrôlés. Guidon, compteur et mains utilisables en première personne sans obstruction.",
-        "id": "W17",
-        "implementation_status": "Style2 cinematic realism selected; solo motorcycle visual target generated; first isolated editable tyre candidate built and undergoing corrections. No new complete motorcycle or public deployment.",
-        "name": "Moto, pilote et véhicules",
-        "next_action": "Review and refine the isolated tyre against documentary views; resolve camera/tread uncertainty before receiving it, then continue wheel components; rider after motorcycle reception.",
-        "phase": "P4",
-        "status": "blocked"
-      },
-      {
-        "dependencies": [
-          "W16",
-          "W17"
-        ],
-        "details": "Exports validés, compression inspectée et coût de chargement mesuré.",
-        "id": "W18",
-        "name": "GLB, KTX2 et budget assets",
-        "phase": "P4",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W18"
-        ],
-        "details": "Heure fixe cohérente ; audio activable et danger audible.",
-        "id": "W19",
-        "name": "Lumière et audio spatialisé",
-        "phase": "P4",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W19",
-          "W14"
-        ],
-        "details": "Captures du moteur, retours kinois et mesures du parcours étalon.",
-        "id": "W20",
-        "name": "Revue locale et rendu",
-        "phase": "P4",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W05",
-          "W04"
-        ],
-        "details": "Chargement anticipé, mémoire bornée et collisions prêtes avant entrée.",
-        "id": "W21",
-        "name": "Streaming cellules et cache",
-        "phase": "P5",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W12",
-          "W20"
-        ],
-        "details": "Événements annoncés et détours gagnables ; contact utile.",
-        "id": "W22",
-        "name": "Roulage, convoi et contact",
-        "phase": "P5",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W20"
-        ],
-        "details": "Lieux localisés, contexte et horizon validés, droits audio connus.",
-        "id": "W23",
-        "name": "Concert et halte fluviale",
-        "phase": "P5",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W14"
-        ],
-        "details": "Réinstallation/version et données locales gérées sans corruption.",
-        "id": "W24",
-        "name": "Sauvegarde et reprise",
-        "phase": "P5",
-        "status": "blocked"
-      },
-      {
-        "dependencies": [
-          "W21",
-          "W22",
-          "W23",
-          "W24"
-        ],
-        "details": "Parcours intégral jouable sans blocage et sans téléchargement de toute la ville.",
-        "id": "W25",
-        "name": "Assemblage V1 quinze minutes",
-        "phase": "P5",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W25"
-        ],
-        "details": "Froid, chaud, déconnexion, perte de contexte et session 20 minutes documentés.",
-        "id": "W26",
-        "name": "Réseau lent et stabilité",
-        "phase": "P6",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W26"
-        ],
-        "details": "Trois captures de 180 s par profil ; p95/p99 et qualité documentés.",
-        "id": "W27",
-        "name": "Profilage et optimisation",
-        "phase": "P6",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W20"
-        ],
-        "details": "Au moins 10 références comparables datées ; grille et limites publiées.",
-        "id": "W28",
-        "name": "Panel comparatif déclaré",
-        "phase": "P6",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W27",
-          "W28",
-          "W43"
-        ],
-        "details": "Retour utilisateurs, aucun bug bloquant, rollback possible.",
-        "id": "W29",
-        "name": "Bêta web privée",
-        "phase": "P6",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W29"
-        ],
-        "details": "Une zone ajoutée avec les mêmes gates, sans régression de budget.",
-        "id": "W30",
-        "name": "Pipeline de nouvelles zones",
-        "phase": "P7",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W29"
-        ],
-        "details": "Contenu et prix exacts, aperçu, pas de vente de puissance.",
-        "id": "W31",
-        "name": "Catalogue cosmétique",
-        "phase": "P7",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W31"
-        ],
-        "details": "Contrat, pays, frais et reversements vérifiés ; transactions de test.",
-        "id": "W32",
-        "name": "Prestataire et backend paiement",
-        "phase": "P7",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W32"
-        ],
-        "details": "Webhook authentifié, idempotence, restauration et remboursement testés.",
-        "id": "W33",
-        "name": "Droits et transactions fiables",
-        "phase": "P7",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W33",
-          "W29"
-        ],
-        "details": "Support et rapprochement opérationnels ; dépenses claires et campagne autorisée.",
-        "id": "W34",
-        "name": "Pilote commercial limité",
-        "phase": "P7",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W06",
-          "W08"
-        ],
-        "details": "Activation maintenue, consommation, recharge, interruption et vitesse maximale indépendantes du framerate.",
-        "id": "W35",
-        "name": "Contrôleur nitro et jauge",
-        "phase": "P2",
-        "status": "done"
-      },
-      {
-        "dependencies": [
-          "W06",
-          "W08"
-        ],
-        "details": "Deux vues commutables clavier/tactile, horizon stable, choix mémorisé et physique inchangée.",
-        "id": "W36",
-        "name": "Vue au guidon et bascule",
-        "phase": "P2",
-        "status": "done"
-      },
-      {
-        "dependencies": [
-          "W35",
-          "W36",
-          "W07"
-        ],
-        "details": "Flou périphérique réglable, mode Confort, profil mobile léger ; obstacles lisibles et tests à vitesse nitro maximale.",
-        "id": "W37",
-        "name": "Effets nitro et confort",
-        "phase": "P2",
-        "status": "blocked"
-      },
-      {
-        "dependencies": [
-          "W09"
-        ],
-        "details": "Timer actif, collecte et dépôt, capacité 3, fin unique à 30 s et reprise gratuite réinitialisée.",
-        "id": "W38",
-        "name": "Wewa Rush 30 secondes",
-        "phase": "P3",
-        "status": "blocked"
-      },
-      {
-        "dependencies": [
-          "W38"
-        ],
-        "details": "Score et multiplicateur déterministes, identifiants anti-doublons, record local, réputation et monnaie séparées.",
-        "id": "W39",
-        "name": "Score, records et progression locale",
-        "phase": "P3",
-        "status": "blocked"
-      },
-      {
-        "dependencies": [
-          "W12"
-        ],
-        "details": "Personnalité fictive et amie du héros ; message, poursuite et indice ; checkpoint gratuit et récit fictionnel.",
-        "id": "W40",
-        "name": "Introduction et indice de la disparition",
-        "phase": "P3",
-        "status": "blocked"
-      },
-      {
-        "dependencies": [
-          "W25"
-        ],
-        "details": "Choix explicite, règles compréhensibles, réinitialisation, pas de profil sensible ni de prix lié aux échecs.",
-        "id": "W41",
-        "name": "Préférences et recommandations locales",
-        "phase": "P5",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W29"
-        ],
-        "details": "Fantôme personnel d’abord, graine et règles versionnées ; validation de scores avant classement public.",
-        "id": "W42",
-        "name": "Fantômes et défis comparables",
-        "phase": "P7",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W14"
-        ],
-        "details": "20-30 essais qualitatifs proposés ; protocole, observations et limites, aucune rétention inventée.",
-        "id": "W43",
-        "name": "Panel conduite et relance volontaire",
-        "phase": "P4",
-        "status": "pending"
-      },
-      {
-        "dependencies": [
-          "W31",
-          "W41"
-        ],
-        "details": "Contenus exacts, prix explicites, préférences désactivables, aucune offre pendant la course ; paiement via W32-W34 seulement.",
-        "id": "W44",
-        "name": "Packs de défis et catalogue adapté",
-        "phase": "P7",
-        "status": "pending"
-      }
-    ],
-    "status": "prototype_in_development",
-    "title": "Viva Wewa — Kinshasa à moto, navigateur web",
-    "version": "R9 / production 1.2",
-    "visual_feedback_revision": {
-      "acceptance": "Comparer des captures réelles du moteur à la référence, puis vérifier sur iPhone 15/16 ; ne pas annoncer le photoréalisme sans ce résultat.",
-      "priority": "Polir le parcours visible avant extension des quartiers ou missions.",
-      "reason": "Utilisateur refuse le rendu géométrique trop éloigné de la photographie.",
-      "runtime_changes": [
-        "Textures photographiques CC0 asphalt/pavement/concrete/ground",
-        "Sky-only HDR and reflections",
-        "Original curved compact taxi",
-        "Original facade and palm cutout textures",
-        "Street furnishings and revised camera",
-        "Continuous clothed rider replaces segmented mannequin"
-      ],
-      "status": "not_accepted"
+    "variant_warning": {
+      "axle_report": "creative/research/front-axle-v2/report.json",
+      "finding": "BM125UG and BM150 spoke/alloy parts groups differ; current JA panel/lever not certified compatible with current RDC cast wheel",
+      "measured_axle_dimensions_found": false,
+      "report": "creative/research/front-brake-cam/research.json"
     }
+  },
+  "non_goals": [
+    "Pas de paiement réel, multijoueur ou combat complexe dans V0.",
+    "Pas de prétention à un classement top 10 % ou à des FPS non mesurés."
+  ],
+  "open_questions": [
+    "Height and floors missing on 99.4% of global building objects",
+    "Gombe estimated road/building overlaps about 2061 square metres summed",
+    "Exact port access, playable corridor and local device profiles not verified",
+    "Cheta/Chelsea terminology and chikwangue repair anecdote unverified",
+    "No human experts hired; roles describe responsibilities",
+    "No measured FPS or top-decile ranking"
+  ],
+  "phases": [
+    {
+      "phase": "P0-P7",
+      "scope": "Backlog W00-W34 fourni dans requirements. W00 terminé ; W01 et W02 prêts. Exécuter selon dépendances."
+    }
+  ],
+  "problem": "Créer WEWA, jeu solo de petite moto à Kinshasa : Rush de 30 secondes, livraisons et enquête sur la disparition d'une amie accompagnant une personnalité fictive. Secteur pilote Gombe. Spécifications prêtes pour développement ; aucun jeu jouable existant.",
+  "production_recovery": {
+    "blender_production": {
+      "collectibles": 2,
+      "editable_sources": "assets-src/ in GitHub repository",
+      "facade_lod1_variants": 12,
+      "facades": 12,
+      "library_bytes": 1529528,
+      "new_asset_types": 34,
+      "street_props": 20,
+      "validation_errors": 0,
+      "validation_warnings": 0
+    },
+    "date": "2026-10-20",
+    "engine_systems": [
+      "source-directed roads and safe lane graph",
+      "fixed-step seeded traffic and pedestrian crossings",
+      "spatial swept collisions, crash recovery and wheel-contact surface sampling",
+      "interpolated rendering",
+      "mission director: 6 parcels, 1300m pursuit and recoverable clue",
+      "versioned checkpoints with geometry fingerprint",
+      "local records per rules/seed/world, reputation and coins",
+      "single-thumb joystick and remappable keyboard",
+      "optional peripheral radial postprocess",
+      "thin instances, facade LOD and static prop batching"
+    ],
+    "evidence": {
+      "browser": "Chromium desktop and touch portrait/landscape, reload checkpoint, key remapping, optional postprocess and lifecycle passed",
+      "collisions": 0,
+      "delivered": 6,
+      "driven_story_seconds": 300.43333333333334,
+      "logic_tests": 33,
+      "physical_iphone": "not tested",
+      "restored_during_pursuit": true,
+      "static_prop_colliders": 15,
+      "traffic_vehicles": 8
+    },
+    "full_game_shipped": false,
+    "phase_gates_open": [
+      "Exact street reference and real facade survey",
+      "Human mobile and local road-priority validation",
+      "Finished photoreal art, character animation and lighting",
+      "Sustained hardware performance qualification",
+      "Full V1 fifteen-minute assembly and later phases"
+    ],
+    "site_version": 3,
+    "source_commit": "2d978c59f7d2011f6b1b5c34cc7a435ad6d24cc1",
+    "street_choice": "Current 220m corridor provisional; exact 150–250m stretch requested from user",
+    "user_request": "Respecter les phases et produire le vrai moteur du jeu, puis des éléments 3D modifiables dans Blender ; ne pas présenter le prototype comme jeu abouti."
+  },
+  "requirements": [
+    {
+      "dependencies": [],
+      "details": "Plan, manifest et contrôle structurel disponibles ; limites explicites.",
+      "id": "W00",
+      "name": "Audit et blockout",
+      "phase": "P0",
+      "status": "done"
+    },
+    {
+      "dependencies": [
+        "W00"
+      ],
+      "details": "Deux appareils physiques identifiés ; parcours et état des lieux validés.",
+      "id": "W01",
+      "name": "Appareils et trajet pilote",
+      "phase": "P1",
+      "status": "blocked"
+    },
+    {
+      "dependencies": [
+        "W00"
+      ],
+      "details": "Build reproductible, versions gelées, HTTPS et page sans erreur.",
+      "id": "W02",
+      "name": "Projet TypeScript et moteur",
+      "phase": "P1",
+      "status": "done"
+    },
+    {
+      "dependencies": [
+        "W02"
+      ],
+      "details": "Une cellule visible ; origine et axes corrects ; capture de temps de trame.",
+      "id": "W03",
+      "name": "Import GLB et instrumentation",
+      "phase": "P1",
+      "status": "done"
+    },
+    {
+      "dependencies": [
+        "W01"
+      ],
+      "details": "Recouvrements examinés ; ponts/niveaux séparés ; corridor sans conflit bloquant.",
+      "id": "W04",
+      "name": "Audit routier et emprises",
+      "phase": "P1",
+      "status": "blocked"
+    },
+    {
+      "dependencies": [
+        "W03",
+        "W01"
+      ],
+      "details": "Mesures réelle WebGL 2 sur appareils ; WebGPU testé si disponible ; décision enregistrée.",
+      "id": "W05",
+      "name": "Scène de charge et choix moteur",
+      "phase": "P1",
+      "status": "blocked"
+    },
+    {
+      "dependencies": [
+        "W03"
+      ],
+      "details": "Accélérer, freiner, braquer, incliner visuellement ; caméra sans traversée du décor.",
+      "id": "W06",
+      "name": "Contrôleur moto et caméra",
+      "phase": "P2",
+      "status": "done"
+    },
+    {
+      "dependencies": [
+        "W04",
+        "W06"
+      ],
+      "details": "Pas de traversée à vitesse maximale ; pente et reprise après chute vérifiées. Inclure la vitesse maximale avec nitro.",
+      "id": "W07",
+      "name": "Sol et collisions balayées",
+      "phase": "P2",
+      "status": "blocked"
+    },
+    {
+      "dependencies": [
+        "W06"
+      ],
+      "details": "ZQSD/WASD et tactile ; perte de focus sans accélération persistante.",
+      "id": "W08",
+      "name": "Commandes et pause",
+      "phase": "P2",
+      "status": "done"
+    },
+    {
+      "dependencies": [
+        "W05",
+        "W07",
+        "W08",
+        "W37"
+      ],
+      "details": "Tour complet sur mobile et PC ; observations archivées, blocages corrigés.",
+      "id": "W09",
+      "name": "Tour jouable et test conduite",
+      "phase": "P2",
+      "status": "blocked"
+    },
+    {
+      "dependencies": [
+        "W04",
+        "W09"
+      ],
+      "details": "Sens, priorités, files et arrêts ; aucun spawn inévitable.",
+      "id": "W10",
+      "name": "Graphe de voies et trafic",
+      "phase": "P3",
+      "status": "blocked"
+    },
+    {
+      "dependencies": [
+        "W09"
+      ],
+      "details": "Prise, dépôt, récompense et reprise après interruption.",
+      "id": "W11",
+      "name": "Livraison et points de reprise",
+      "phase": "P3",
+      "status": "blocked"
+    },
+    {
+      "dependencies": [
+        "W10",
+        "W11"
+      ],
+      "details": "Perte de vue récupérable, cible persistante et mission gagnable.",
+      "id": "W12",
+      "name": "Poursuite et recherche",
+      "phase": "P3",
+      "status": "blocked"
+    },
+    {
+      "dependencies": [
+        "W04",
+        "W12"
+      ],
+      "details": "Deux itinéraires utiles et bonus sans boucle de farming.",
+      "id": "W13",
+      "name": "Deux raccourcis et jetons",
+      "phase": "P3",
+      "status": "blocked"
+    },
+    {
+      "dependencies": [
+        "W13",
+        "W08",
+        "W39",
+        "W40"
+      ],
+      "details": "5-8 minutes jouables, clavier/tactile testés, URL privée et limites annoncées. Rush 30 s et récit R9 inclus ; aucun achat réel.",
+      "id": "W14",
+      "name": "Livraison V0 web",
+      "phase": "P3",
+      "status": "blocked"
+    },
+    {
+      "dependencies": [
+        "W01"
+      ],
+      "details": "Références datées et autorisées pour la rue, la moto et le minibus.",
+      "id": "W15",
+      "name": "Collecte terrain et droits",
+      "phase": "P4",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W15",
+        "W09"
+      ],
+      "details": "150-250 m finis ; dimensions et texture density cohérentes.",
+      "id": "W16",
+      "name": "Étalon rue et matériaux",
+      "phase": "P4",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W15"
+      ],
+      "details": "Silhouettes locales, LOD, collisions et animations contrôlés. Guidon, compteur et mains utilisables en première personne sans obstruction.",
+      "id": "W17",
+      "implementation_status": "Style2 cinematic realism selected; all18motorcycle fabrication groups authorized and progressing in three component chains.16candidate component records in published review checkpoint, no complete accepted motorcycle or rider.",
+      "name": "Moto, pilote et véhicules",
+      "next_action": "Continue all18 authorized groups component by component. Complete queued grips/cables/ignition/engine views, correct LH switch glyphs and instrument USB/markings, finish mirror covers and interfaces, then remaining fork/wheels/frame/body/engine/lighting. Rider deferred.",
+      "phase": "P4",
+      "status": "blocked"
+    },
+    {
+      "dependencies": [
+        "W16",
+        "W17"
+      ],
+      "details": "Exports validés, compression inspectée et coût de chargement mesuré.",
+      "id": "W18",
+      "name": "GLB, KTX2 et budget assets",
+      "phase": "P4",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W18"
+      ],
+      "details": "Heure fixe cohérente ; audio activable et danger audible.",
+      "id": "W19",
+      "name": "Lumière et audio spatialisé",
+      "phase": "P4",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W19",
+        "W14"
+      ],
+      "details": "Captures du moteur, retours kinois et mesures du parcours étalon.",
+      "id": "W20",
+      "name": "Revue locale et rendu",
+      "phase": "P4",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W05",
+        "W04"
+      ],
+      "details": "Chargement anticipé, mémoire bornée et collisions prêtes avant entrée.",
+      "id": "W21",
+      "name": "Streaming cellules et cache",
+      "phase": "P5",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W12",
+        "W20"
+      ],
+      "details": "Événements annoncés et détours gagnables ; contact utile.",
+      "id": "W22",
+      "name": "Roulage, convoi et contact",
+      "phase": "P5",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W20"
+      ],
+      "details": "Lieux localisés, contexte et horizon validés, droits audio connus.",
+      "id": "W23",
+      "name": "Concert et halte fluviale",
+      "phase": "P5",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W14"
+      ],
+      "details": "Réinstallation/version et données locales gérées sans corruption.",
+      "id": "W24",
+      "name": "Sauvegarde et reprise",
+      "phase": "P5",
+      "status": "blocked"
+    },
+    {
+      "dependencies": [
+        "W21",
+        "W22",
+        "W23",
+        "W24"
+      ],
+      "details": "Parcours intégral jouable sans blocage et sans téléchargement de toute la ville.",
+      "id": "W25",
+      "name": "Assemblage V1 quinze minutes",
+      "phase": "P5",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W25"
+      ],
+      "details": "Froid, chaud, déconnexion, perte de contexte et session 20 minutes documentés.",
+      "id": "W26",
+      "name": "Réseau lent et stabilité",
+      "phase": "P6",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W26"
+      ],
+      "details": "Trois captures de 180 s par profil ; p95/p99 et qualité documentés.",
+      "id": "W27",
+      "name": "Profilage et optimisation",
+      "phase": "P6",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W20"
+      ],
+      "details": "Au moins 10 références comparables datées ; grille et limites publiées.",
+      "id": "W28",
+      "name": "Panel comparatif déclaré",
+      "phase": "P6",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W27",
+        "W28",
+        "W43"
+      ],
+      "details": "Retour utilisateurs, aucun bug bloquant, rollback possible.",
+      "id": "W29",
+      "name": "Bêta web privée",
+      "phase": "P6",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W29"
+      ],
+      "details": "Une zone ajoutée avec les mêmes gates, sans régression de budget.",
+      "id": "W30",
+      "name": "Pipeline de nouvelles zones",
+      "phase": "P7",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W29"
+      ],
+      "details": "Contenu et prix exacts, aperçu, pas de vente de puissance.",
+      "id": "W31",
+      "name": "Catalogue cosmétique",
+      "phase": "P7",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W31"
+      ],
+      "details": "Contrat, pays, frais et reversements vérifiés ; transactions de test.",
+      "id": "W32",
+      "name": "Prestataire et backend paiement",
+      "phase": "P7",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W32"
+      ],
+      "details": "Webhook authentifié, idempotence, restauration et remboursement testés.",
+      "id": "W33",
+      "name": "Droits et transactions fiables",
+      "phase": "P7",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W33",
+        "W29"
+      ],
+      "details": "Support et rapprochement opérationnels ; dépenses claires et campagne autorisée.",
+      "id": "W34",
+      "name": "Pilote commercial limité",
+      "phase": "P7",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W06",
+        "W08"
+      ],
+      "details": "Activation maintenue, consommation, recharge, interruption et vitesse maximale indépendantes du framerate.",
+      "id": "W35",
+      "name": "Contrôleur nitro et jauge",
+      "phase": "P2",
+      "status": "done"
+    },
+    {
+      "dependencies": [
+        "W06",
+        "W08"
+      ],
+      "details": "Deux vues commutables clavier/tactile, horizon stable, choix mémorisé et physique inchangée.",
+      "id": "W36",
+      "name": "Vue au guidon et bascule",
+      "phase": "P2",
+      "status": "done"
+    },
+    {
+      "dependencies": [
+        "W35",
+        "W36",
+        "W07"
+      ],
+      "details": "Flou périphérique réglable, mode Confort, profil mobile léger ; obstacles lisibles et tests à vitesse nitro maximale.",
+      "id": "W37",
+      "name": "Effets nitro et confort",
+      "phase": "P2",
+      "status": "blocked"
+    },
+    {
+      "dependencies": [
+        "W09"
+      ],
+      "details": "Timer actif, collecte et dépôt, capacité 3, fin unique à 30 s et reprise gratuite réinitialisée.",
+      "id": "W38",
+      "name": "Wewa Rush 30 secondes",
+      "phase": "P3",
+      "status": "blocked"
+    },
+    {
+      "dependencies": [
+        "W38"
+      ],
+      "details": "Score et multiplicateur déterministes, identifiants anti-doublons, record local, réputation et monnaie séparées.",
+      "id": "W39",
+      "name": "Score, records et progression locale",
+      "phase": "P3",
+      "status": "blocked"
+    },
+    {
+      "dependencies": [
+        "W12"
+      ],
+      "details": "Personnalité fictive et amie du héros ; message, poursuite et indice ; checkpoint gratuit et récit fictionnel.",
+      "id": "W40",
+      "name": "Introduction et indice de la disparition",
+      "phase": "P3",
+      "status": "blocked"
+    },
+    {
+      "dependencies": [
+        "W25"
+      ],
+      "details": "Choix explicite, règles compréhensibles, réinitialisation, pas de profil sensible ni de prix lié aux échecs.",
+      "id": "W41",
+      "name": "Préférences et recommandations locales",
+      "phase": "P5",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W29"
+      ],
+      "details": "Fantôme personnel d’abord, graine et règles versionnées ; validation de scores avant classement public.",
+      "id": "W42",
+      "name": "Fantômes et défis comparables",
+      "phase": "P7",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W14"
+      ],
+      "details": "20-30 essais qualitatifs proposés ; protocole, observations et limites, aucune rétention inventée.",
+      "id": "W43",
+      "name": "Panel conduite et relance volontaire",
+      "phase": "P4",
+      "status": "pending"
+    },
+    {
+      "dependencies": [
+        "W31",
+        "W41"
+      ],
+      "details": "Contenus exacts, prix explicites, préférences désactivables, aucune offre pendant la course ; paiement via W32-W34 seulement.",
+      "id": "W44",
+      "name": "Packs de défis et catalogue adapté",
+      "phase": "P7",
+      "status": "pending"
+    }
+  ],
+  "status": "prototype_in_development",
+  "title": "Viva Wewa — Kinshasa à moto, navigateur web",
+  "version": "R9 / production 1.2",
+  "visual_feedback_revision": {
+    "acceptance": "Comparer des captures réelles du moteur à la référence, puis vérifier sur iPhone 15/16 ; ne pas annoncer le photoréalisme sans ce résultat.",
+    "priority": "Polir le parcours visible avant extension des quartiers ou missions.",
+    "reason": "Utilisateur refuse le rendu géométrique trop éloigné de la photographie.",
+    "runtime_changes": [
+      "Textures photographiques CC0 asphalt/pavement/concrete/ground",
+      "Sky-only HDR and reflections",
+      "Original curved compact taxi",
+      "Original facade and palm cutout textures",
+      "Street furnishings and revised camera",
+      "Continuous clothed rider replaces segmented mannequin"
+    ],
+    "status": "not_accepted"
   }
 }

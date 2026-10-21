@@ -41,6 +41,6 @@ Les pontets ont reçu une vraie correction des secteurs de normales et de la por
 
 La nouvelle inspection des compteurs conserve les quatre rendus historiques à l’identique et corrige la preuve de cadrage dans un dossier séparé. Le contrôle plus strict a aussi révélé8triangles nuls dans quatre marquages du modèle historique ; le capuchon USB reste à corriger. Ces points ouverts ne sont pas masqués par une capture réussie.
 
-Les dimensions publiées de la moto ne donnent pas les cotes de chaque pièce. Les références de variantes liées et les dimensions estimées restent distinguées ; les poses isolées ne certifient pas un montage. Les PNG des pontets sont disponibles sans EXR ; d’autres composants conservent leurs EXR linéaires en privé quand leur rapport l’indique.
+Les dimensions publiées de la moto ne donnent pas les cotes de chaque pièce. Les références de variantes liées et les dimensions estimées restent distinguées ; les poses isolées ne certifient pas un montage. Les PNG des pontets sont disponibles sans EXR ; les EXR des autres composants sont qualifiés dans leurs rapports : certains sont linéaires mais déjà débruités, certains conservent des passes brutes privées. Tous ne sont pas des Noisy Image.
 
 Aucun conducteur ajouté. Aucun test physique sur iPhone15/16 réalisé. Les sources d’inspection ne sont pas encore les versions optimisées pour une scène jouable. Le jeu public n’est pas redéployé par ce point de fabrication.
