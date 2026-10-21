@@ -1,0 +1,300 @@
+{
+  "schema": 1,
+  "id": "MOTO-CARBURETTOR-CURVED-CONNECTOR-001",
+  "label": "MOTO-CARBURETTOR-CURVED-CONNECTOR-001 — bounded exterior candidate",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../reviews/carburettor-curved-connector-v1-coordination-v1/source-register.json",
+  "sources": [
+    "D01"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "final-profile",
+      "PNG_sha256": "d8f0dc037d8959690b29daa8f0e567eb8af21e630da541421b1786e2a8516f1d",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-profile",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-profile.png",
+        "exr": "raw/final-profile.exr",
+        "png_sha256": "d8f0dc037d8959690b29daa8f0e567eb8af21e630da541421b1786e2a8516f1d",
+        "camera": [
+          -0.010999999940395355,
+          0.0,
+          0.06962500512599945
+        ],
+        "target": [
+          -0.010999999940395355,
+          0.0,
+          -0.010625000111758709
+        ],
+        "ortho_scale": 0.04413750022649765,
+        "actual_vertex_frame_min": [
+          0.25077882409095764,
+          0.3834809958934784,
+          0.06687500327825546
+        ],
+        "actual_vertex_frame_max": [
+          0.7492212057113647,
+          0.6165189743041992,
+          0.093625009059906
+        ]
+      }
+    },
+    {
+      "name": "final-quarter",
+      "PNG_sha256": "cea703d2fcc5cc4b2fb09849448224f181831a993ba86b763cad481155299e48",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-quarter",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-quarter.png",
+        "exr": "raw/final-quarter.exr",
+        "png_sha256": "cea703d2fcc5cc4b2fb09849448224f181831a993ba86b763cad481155299e48",
+        "camera": [
+          0.018425000831484795,
+          0.018725000321865082,
+          0.058924999088048935
+        ],
+        "target": [
+          -0.010999999940395355,
+          0.0,
+          -0.010625000111758709
+        ],
+        "ortho_scale": 0.04413750022649765,
+        "actual_vertex_frame_min": [
+          0.3136347234249115,
+          0.34451112151145935,
+          0.06160175800323486
+        ],
+        "actual_vertex_frame_max": [
+          0.6757492423057556,
+          0.7589554190635681,
+          0.09413385391235352
+        ]
+      }
+    },
+    {
+      "name": "final-neutral-independent",
+      "PNG_sha256": "ca8739033eead0aff6f815a673c99d79dd33abbc4e69382497abccdcdb9d3399",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-neutral-independent",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-neutral-independent.png",
+        "exr": "raw/final-neutral-independent.exr",
+        "png_sha256": "ca8739033eead0aff6f815a673c99d79dd33abbc4e69382497abccdcdb9d3399",
+        "camera": [
+          -0.03240000084042549,
+          -0.026750000193715096,
+          0.06427500396966934
+        ],
+        "target": [
+          -0.010999999940395355,
+          0.0,
+          -0.010625000111758709
+        ],
+        "ortho_scale": 0.04413750022649765,
+        "actual_vertex_frame_min": [
+          0.2855505645275116,
+          0.12014298141002655,
+          0.0708124116063118
+        ],
+        "actual_vertex_frame_max": [
+          0.7335308194160461,
+          0.8766880035400391,
+          0.09430759400129318
+        ],
+        "independent_direction": [
+          -0.8,
+          -1.0,
+          2.8
+        ],
+        "lights_rgb": "Neutral white; same source rig, no material change",
+        "protocol_sha256": "0a7f8ac7626973c41ba8ff3977e4a0063bd27ca901bff6d22526f69f3f61955e"
+      }
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-CARBURETTOR-CURVED-CONNECTOR-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "carburettor-curved-connector-v1-coordination-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/powertrain-completion-p19-v1/curved-connector-plan-v7.json",
+          "sha256": "3ad77887e3c1574e3153c4c8ee6d36b92df7c8cbc6b2bb31d7941ad72739f29d",
+          "revision": "carburettor-curved-connector-v1-coordination-v1"
+        }
+      ],
+      "reason": "Observable worker child identified, sources/estimates/gaps linked; not a complete package or art reception",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "carburettor-curved-connector-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "carburettor-curved-connector-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "carburettor-curved-connector-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/carburettor-curved-connector-v1/child-candidate.blend",
+          "kind": "editable_source",
+          "revision": "carburettor-curved-connector-v1-coordination-v1",
+          "sha256": "c49cb8ebc6c55a4b31deedc026a1ad8d3479c06eba9837900bbdecefa42661eb"
+        },
+        {
+          "path": "../../reviews/carburettor-curved-connector-v1-coordination-v1/final-profile.png",
+          "kind": "isolated_comparison",
+          "revision": "carburettor-curved-connector-v1-coordination-v1",
+          "sha256": "d8f0dc037d8959690b29daa8f0e567eb8af21e630da541421b1786e2a8516f1d"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "carburettor-curved-connector-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/carburettor-curved-connector-v1-coordination-v1/final-neutral-independent.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "carburettor-curved-connector-v1-coordination-v1",
+          "sha256": "ca8739033eead0aff6f815a673c99d79dd33abbc4e69382497abccdcdb9d3399"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "carburettor-curved-connector-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/carburettor-curved-connector-v1-coordination-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "carburettor-curved-connector-v1-coordination-v1",
+          "sha256": "0bba776dcdd3bb03be76828a42c4600e7f3ad966153e17ec4e55240b2c79f2a3"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "carburettor-curved-connector-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/carburettor-curved-connector-v1-coordination-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "carburettor-curved-connector-v1-coordination-v1",
+          "sha256": "f87224e9843d374a020d7ff29b4986a2c36eecb800d651da0aab5fd036ea15e8"
+        },
+        {
+          "path": "../../reviews/carburettor-curved-connector-v1-coordination-v1/inspection-v5/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "carburettor-curved-connector-v1-coordination-v1",
+          "sha256": "ec4ce7593d5d6186a1398655a9912c15bf8f4f863a996f4399972a945abb04cb"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "carburettor-curved-connector-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "carburettor-curved-connector-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "carburettor-curved-connector-v1-coordination-v1",
+  "export_revision": "carburettor-curved-connector-v1-coordination-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/carburettor-curved-connector-v1/../../../creative/reviews/carburettor-curved-connector-v1-coordination-v1/README.md",
+  "candidate_review": "../../reviews/carburettor-curved-connector-v1-coordination-v1/README.md",
+  "production_group": 17,
+  "source_plan": "../../research/powertrain-completion-p19-v1/curved-connector-plan-v7.json"
+}

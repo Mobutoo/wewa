@@ -1,0 +1,300 @@
+{
+  "schema": 1,
+  "id": "MOTO-CARBURETTOR-ENTRY-BOOT-001",
+  "label": "MOTO-CARBURETTOR-ENTRY-BOOT-001 — bounded exterior candidate",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../reviews/carburettor-entry-boot-v1-coordination-v1/source-register.json",
+  "sources": [
+    "D01"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "final-profile",
+      "PNG_sha256": "a00976078a97959fd07fdbb56737626b97b2cd18e3762f6fd03f2ea0e64e8e20",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-profile",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-profile.png",
+        "exr": "raw/final-profile.exr",
+        "png_sha256": "a00976078a97959fd07fdbb56737626b97b2cd18e3762f6fd03f2ea0e64e8e20",
+        "camera": [
+          0.0,
+          0.0,
+          0.07899999618530273
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.007000000216066837
+        ],
+        "ortho_scale": 0.03959999978542328,
+        "actual_vertex_frame_min": [
+          0.19696968793869019,
+          0.1103896051645279,
+          0.06499999761581421
+        ],
+        "actual_vertex_frame_max": [
+          0.8030303120613098,
+          0.8896104097366333,
+          0.07899999618530273
+        ]
+      }
+    },
+    {
+      "name": "final-quarter",
+      "PNG_sha256": "ad41aa48776d16fd6e3f5cb0b3d08bec8439067900ea7a1bb518185869a20a0e",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-quarter",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-quarter.png",
+        "exr": "raw/final-quarter.exr",
+        "png_sha256": "ad41aa48776d16fd6e3f5cb0b3d08bec8439067900ea7a1bb518185869a20a0e",
+        "camera": [
+          0.026400001719594002,
+          0.01679999940097332,
+          0.06939999759197235
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.007000000216066837
+        ],
+        "ortho_scale": 0.03959999978542328,
+        "actual_vertex_frame_min": [
+          0.19697001576423645,
+          0.07195141166448593,
+          0.06068791449069977
+        ],
+        "actual_vertex_frame_max": [
+          0.8030305504798889,
+          0.7905193567276001,
+          0.08066780865192413
+        ]
+      }
+    },
+    {
+      "name": "final-neutral-independent",
+      "PNG_sha256": "28b5d3b5150714ec6a14689c29fdc92f39106a77dc53c815c646e39138d3c2ef",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-neutral-independent",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-neutral-independent.png",
+        "exr": "raw/final-neutral-independent.exr",
+        "png_sha256": "28b5d3b5150714ec6a14689c29fdc92f39106a77dc53c815c646e39138d3c2ef",
+        "camera": [
+          -0.019200000911951065,
+          -0.024000000208616257,
+          0.07419999688863754
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.007000000216066837
+        ],
+        "ortho_scale": 0.03959999978542328,
+        "actual_vertex_frame_min": [
+          0.19703182578086853,
+          0.07191567122936249,
+          0.06487720459699631
+        ],
+        "actual_vertex_frame_max": [
+          0.8029682636260986,
+          0.7989802360534668,
+          0.08448772132396698
+        ],
+        "independent_direction": [
+          -0.8,
+          -1.0,
+          2.8
+        ],
+        "lights_rgb": "Neutral white; same source rig, no material change",
+        "protocol_sha256": "0a7f8ac7626973c41ba8ff3977e4a0063bd27ca901bff6d22526f69f3f61955e"
+      }
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-CARBURETTOR-ENTRY-BOOT-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "carburettor-entry-boot-v1-coordination-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/powertrain-completion-p19-v1/entry-boot-plan-v6.json",
+          "sha256": "bae645d79b6b6f588e7ea8bbd55d521f6a9773d4ebf6cfc51fd1219829b26642",
+          "revision": "carburettor-entry-boot-v1-coordination-v1"
+        }
+      ],
+      "reason": "Observable worker child identified, sources/estimates/gaps linked; not a complete package or art reception",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "carburettor-entry-boot-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "carburettor-entry-boot-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "carburettor-entry-boot-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/carburettor-entry-boot-v1/child-candidate.blend",
+          "kind": "editable_source",
+          "revision": "carburettor-entry-boot-v1-coordination-v1",
+          "sha256": "c39062fc9ac0e23c58b42583a9e2291a5ad7a1fb40d883899b8dda0e054a6c08"
+        },
+        {
+          "path": "../../reviews/carburettor-entry-boot-v1-coordination-v1/final-profile.png",
+          "kind": "isolated_comparison",
+          "revision": "carburettor-entry-boot-v1-coordination-v1",
+          "sha256": "a00976078a97959fd07fdbb56737626b97b2cd18e3762f6fd03f2ea0e64e8e20"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "carburettor-entry-boot-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/carburettor-entry-boot-v1-coordination-v1/final-neutral-independent.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "carburettor-entry-boot-v1-coordination-v1",
+          "sha256": "28b5d3b5150714ec6a14689c29fdc92f39106a77dc53c815c646e39138d3c2ef"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "carburettor-entry-boot-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/carburettor-entry-boot-v1-coordination-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "carburettor-entry-boot-v1-coordination-v1",
+          "sha256": "29edf53637f33d9619f291fad8ce81a8e4549c711765bf3f82342983d4f9b951"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "carburettor-entry-boot-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/carburettor-entry-boot-v1-coordination-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "carburettor-entry-boot-v1-coordination-v1",
+          "sha256": "a4c6d037f0d212f7e1ea30f7b5d5930626d6d9866ac171ee0c6db3c912f884a6"
+        },
+        {
+          "path": "../../reviews/carburettor-entry-boot-v1-coordination-v1/inspection-v5/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "carburettor-entry-boot-v1-coordination-v1",
+          "sha256": "cf17d5cf09d1eb6357724881cc87360b79be7d8917af4a34a7ca2a815eb23cab"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "carburettor-entry-boot-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "carburettor-entry-boot-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "carburettor-entry-boot-v1-coordination-v1",
+  "export_revision": "carburettor-entry-boot-v1-coordination-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/carburettor-entry-boot-v1/../../../creative/reviews/carburettor-entry-boot-v1-coordination-v1/README.md",
+  "candidate_review": "../../reviews/carburettor-entry-boot-v1-coordination-v1/README.md",
+  "production_group": 17,
+  "source_plan": "../../research/powertrain-completion-p19-v1/entry-boot-plan-v6.json"
+}

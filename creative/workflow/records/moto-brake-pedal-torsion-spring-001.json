@@ -1,0 +1,301 @@
+{
+  "schema": 1,
+  "id": "MOTO-BRAKE-PEDAL-TORSION-SPRING-001",
+  "label": "MOTO-BRAKE-PEDAL-TORSION-SPRING-001 — bounded exterior candidate",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../reviews/brake-pedal-torsion-spring-v1-coordination-v1/source-register.json",
+  "sources": [
+    "D01"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "final-profile",
+      "PNG_sha256": "e2a9a5eaa5a87f8c98b0ff15dcf058409e1b68c5f219541ac8841896b6f9c6bc",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-profile",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-profile.png",
+        "exr": "raw/final-profile.exr",
+        "png_sha256": "e2a9a5eaa5a87f8c98b0ff15dcf058409e1b68c5f219541ac8841896b6f9c6bc",
+        "camera": [
+          -0.0022499999031424522,
+          -4.654284566640854e-07,
+          0.24749675393104553
+        ],
+        "target": [
+          -0.0022499999031424522,
+          -4.654284566640854e-07,
+          -0.02850046567618847
+        ],
+        "ortho_scale": 0.15179845690727234,
+        "actual_vertex_frame_min": [
+          0.36989328265190125,
+          0.43592721223831177,
+          0.2299976795911789
+        ],
+        "actual_vertex_frame_max": [
+          0.6301067471504211,
+          0.5640727877616882,
+          0.3219967484474182
+        ]
+      }
+    },
+    {
+      "name": "final-quarter",
+      "PNG_sha256": "86a33e80642be0091bcb869484a4de18e0ccae6527c7f9446cc88449b64727d5",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-quarter",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-quarter.png",
+        "exr": "raw/final-quarter.exr",
+        "png_sha256": "86a33e80642be0091bcb869484a4de18e0ccae6527c7f9446cc88449b64727d5",
+        "camera": [
+          0.09894897788763046,
+          0.0643988847732544,
+          0.21069709956645966
+        ],
+        "target": [
+          -0.0022499999031424522,
+          -4.654284566640854e-07,
+          -0.02850046567618847
+        ],
+        "ortho_scale": 0.15179845690727234,
+        "actual_vertex_frame_min": [
+          0.3918684124946594,
+          0.24823807179927826,
+          0.22285085916519165
+        ],
+        "actual_vertex_frame_max": [
+          0.6115319728851318,
+          0.7790654897689819,
+          0.31010207533836365
+        ]
+      }
+    },
+    {
+      "name": "final-neutral-independent",
+      "PNG_sha256": "3b6708fb56538b321c92fe4b8d8507aeec85055977847c599a541b053fa44134",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-neutral-independent",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-neutral-independent.png",
+        "exr": "raw/final-neutral-independent.exr",
+        "png_sha256": "3b6708fb56538b321c92fe4b8d8507aeec85055977847c599a541b053fa44134",
+        "camera": [
+          -0.039049629122018814,
+          -0.27599769830703735,
+          0.02669897861778736
+        ],
+        "target": [
+          -0.0022499999031424522,
+          -4.654284566640854e-07,
+          -0.02850046567618847
+        ],
+        "ortho_scale": 0.15179845690727234,
+        "actual_vertex_frame_min": [
+          0.36450517177581787,
+          0.10784859210252762,
+          0.26872700452804565
+        ],
+        "actual_vertex_frame_max": [
+          0.6343123912811279,
+          0.8927021026611328,
+          0.28982025384902954
+        ],
+        "independent_direction": [
+          -0.4,
+          -3,
+          0.6
+        ],
+        "lights_rgb": "Neutral white; same source rig, no material change",
+        "protocol_sha256": "53d5064cddbd54205e048790db7f34d492a61a49e4113ddb949388d7086c4cdb",
+        "camera_config_sha256": "a82dc448391cf8c0e871d567d76d1c24ea3c118452eb41ce4f010fee7fb87f1a"
+      }
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-BRAKE-PEDAL-TORSION-SPRING-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "brake-pedal-torsion-spring-v1-coordination-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/powertrain-completion-p15-v1/pedal-torsion-spring-plan-v10.json",
+          "sha256": "0d7ac4b8507abc73cf968174bdbd5cce7c16faee77a25d2793ae5d9f3599708b",
+          "revision": "brake-pedal-torsion-spring-v1-coordination-v1"
+        }
+      ],
+      "reason": "Observable worker child identified, sources/estimates/gaps linked; not a complete package or art reception",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "brake-pedal-torsion-spring-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "brake-pedal-torsion-spring-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "brake-pedal-torsion-spring-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/brake-pedal-torsion-spring-v1/child-candidate.blend",
+          "kind": "editable_source",
+          "revision": "brake-pedal-torsion-spring-v1-coordination-v1",
+          "sha256": "64cb0ac7fa150b0ef72b1173e70b90a1a5857ac302d890a6ea49c027e987b6c2"
+        },
+        {
+          "path": "../../reviews/brake-pedal-torsion-spring-v1-coordination-v1/final-profile.png",
+          "kind": "isolated_comparison",
+          "revision": "brake-pedal-torsion-spring-v1-coordination-v1",
+          "sha256": "e2a9a5eaa5a87f8c98b0ff15dcf058409e1b68c5f219541ac8841896b6f9c6bc"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "brake-pedal-torsion-spring-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/brake-pedal-torsion-spring-v1-coordination-v1/final-neutral-independent.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "brake-pedal-torsion-spring-v1-coordination-v1",
+          "sha256": "3b6708fb56538b321c92fe4b8d8507aeec85055977847c599a541b053fa44134"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "brake-pedal-torsion-spring-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/brake-pedal-torsion-spring-v1-coordination-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "brake-pedal-torsion-spring-v1-coordination-v1",
+          "sha256": "904b7a077f009245bd3ba74c503f1087c118e8556573b2024d9c7a0be32e51ea"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "brake-pedal-torsion-spring-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/brake-pedal-torsion-spring-v1-coordination-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "brake-pedal-torsion-spring-v1-coordination-v1",
+          "sha256": "40d6ddebeb54cf1efce74e85d01a434f94dc5918d3a4f1a879bbee00d1dc7917"
+        },
+        {
+          "path": "../../reviews/brake-pedal-torsion-spring-v1-coordination-v1/inspection-v5/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "brake-pedal-torsion-spring-v1-coordination-v1",
+          "sha256": "9b92d7e1c90a3bc75c1194e6a85b7259dafae128b2ad3af3e905e4c7fbb5fbea"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "brake-pedal-torsion-spring-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "brake-pedal-torsion-spring-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "brake-pedal-torsion-spring-v1-coordination-v1",
+  "export_revision": "brake-pedal-torsion-spring-v1-coordination-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/brake-pedal-torsion-spring-v1/../../../creative/reviews/brake-pedal-torsion-spring-v1-coordination-v1/README.md",
+  "candidate_review": "../../reviews/brake-pedal-torsion-spring-v1-coordination-v1/README.md",
+  "production_group": 17,
+  "source_plan": "../../research/powertrain-completion-p15-v1/pedal-torsion-spring-plan-v10.json"
+}

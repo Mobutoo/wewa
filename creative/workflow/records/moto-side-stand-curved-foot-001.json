@@ -1,0 +1,303 @@
+{
+  "schema": 1,
+  "id": "MOTO-SIDE-STAND-CURVED-FOOT-001",
+  "label": "MOTO-SIDE-STAND-CURVED-FOOT-001 — bounded exterior candidate",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../reviews/side-stand-curved-foot-v3-coordination-v1/source-register.json",
+  "sources": [
+    "D01",
+    "WORKER-REF-1",
+    "WORKER-REF-2"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "final-profile",
+      "PNG_sha256": "4c9c816dfe37a244d2ad3ea3d6f60cef80854baef6df5a328e34997f5ecef6fc",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-profile",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-profile.png",
+        "exr": "raw/final-profile.exr",
+        "png_sha256": "4c9c816dfe37a244d2ad3ea3d6f60cef80854baef6df5a328e34997f5ecef6fc",
+        "camera": [
+          0.2609598636627197,
+          0.030210116878151894,
+          0.2441394329071045
+        ],
+        "target": [
+          0.2609598636627197,
+          0.030210116878151894,
+          0.0
+        ],
+        "ortho_scale": 0.13427668809890747,
+        "actual_vertex_frame_min": [
+          0.22734607756137848,
+          0.11038962751626968,
+          0.2296394407749176
+        ],
+        "actual_vertex_frame_max": [
+          0.7726540565490723,
+          0.8896104097366333,
+          0.2586394250392914
+        ]
+      }
+    },
+    {
+      "name": "final-quarter",
+      "PNG_sha256": "90d243b689d5a38ed412f60094f7876af81c2c4704ee08dfee9daeae2dccdeff",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-quarter",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-quarter.png",
+        "exr": "raw/final-quarter.exr",
+        "png_sha256": "90d243b689d5a38ed412f60094f7876af81c2c4704ee08dfee9daeae2dccdeff",
+        "camera": [
+          0.3504776656627655,
+          0.08717598021030426,
+          0.21158748865127563
+        ],
+        "target": [
+          0.2609598636627197,
+          0.030210116878151894,
+          0.0
+        ],
+        "ortho_scale": 0.13427668809890747,
+        "actual_vertex_frame_min": [
+          0.35706380009651184,
+          0.03331434726715088,
+          0.20480170845985413
+        ],
+        "actual_vertex_frame_max": [
+          0.6123301982879639,
+          0.9610852599143982,
+          0.26722970604896545
+        ]
+      }
+    },
+    {
+      "name": "final-neutral-independent",
+      "PNG_sha256": "e2dff541b83b8f7b4bdb3d21bb5d961245c83b737a3617f7ab8c686b69fe82df",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-neutral-independent",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-neutral-independent.png",
+        "exr": "raw/final-neutral-independent.exr",
+        "png_sha256": "e2dff541b83b8f7b4bdb3d21bb5d961245c83b737a3617f7ab8c686b69fe82df",
+        "camera": [
+          0.22840793430805206,
+          -0.21392931044101715,
+          0.08137980848550797
+        ],
+        "target": [
+          0.2609598636627197,
+          0.030210116878151894,
+          0.0
+        ],
+        "ortho_scale": 0.13427668809890747,
+        "actual_vertex_frame_min": [
+          0.24915748834609985,
+          0.2952805161476135,
+          0.2161305695772171
+        ],
+        "actual_vertex_frame_max": [
+          0.7309280037879944,
+          0.7348208427429199,
+          0.3031769394874573
+        ],
+        "independent_direction": [
+          -0.4,
+          -3,
+          1
+        ],
+        "lights_rgb": "Neutral white; same source rig, no material change",
+        "protocol_sha256": "53d5064cddbd54205e048790db7f34d492a61a49e4113ddb949388d7086c4cdb",
+        "camera_config_sha256": "ea651ecf554922104b02c100569eecc872945be30ad678aa9d8c7a8f80a85efc"
+      }
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-SIDE-STAND-CURVED-FOOT-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "side-stand-curved-foot-v3-coordination-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/powertrain-completion-p17-v1/side-foot-curved-plan-v13.json",
+          "sha256": "215c3694f24e5e863f4e976ec95e29f44e6ffd1dd3eff8d6bdaa7c5a9ea7af64",
+          "revision": "side-stand-curved-foot-v3-coordination-v1"
+        }
+      ],
+      "reason": "Observable worker child identified, sources/estimates/gaps linked; not a complete package or art reception",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "side-stand-curved-foot-v3-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "side-stand-curved-foot-v3-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "side-stand-curved-foot-v3-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/side-stand-curved-foot-v3/child-candidate.blend",
+          "kind": "editable_source",
+          "revision": "side-stand-curved-foot-v3-coordination-v1",
+          "sha256": "c43e989ddf09f77d569fec660845abf0b37859a2acafee349e466d483240e700"
+        },
+        {
+          "path": "../../reviews/side-stand-curved-foot-v3-coordination-v1/final-profile.png",
+          "kind": "isolated_comparison",
+          "revision": "side-stand-curved-foot-v3-coordination-v1",
+          "sha256": "4c9c816dfe37a244d2ad3ea3d6f60cef80854baef6df5a328e34997f5ecef6fc"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "side-stand-curved-foot-v3-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/side-stand-curved-foot-v3-coordination-v1/final-neutral-independent.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "side-stand-curved-foot-v3-coordination-v1",
+          "sha256": "e2dff541b83b8f7b4bdb3d21bb5d961245c83b737a3617f7ab8c686b69fe82df"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "side-stand-curved-foot-v3-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/side-stand-curved-foot-v3-coordination-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "side-stand-curved-foot-v3-coordination-v1",
+          "sha256": "baa7fcd6ae795a2009037961ab083663ac2eb2b4b3a6394cd639a0e9aa96cdaf"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "side-stand-curved-foot-v3-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/side-stand-curved-foot-v3-coordination-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "side-stand-curved-foot-v3-coordination-v1",
+          "sha256": "feed2ee39f0c271742a58e9ccb83f30c8c008d560b9decf03f6fe528754a1107"
+        },
+        {
+          "path": "../../reviews/side-stand-curved-foot-v3-coordination-v1/inspection-v5/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "side-stand-curved-foot-v3-coordination-v1",
+          "sha256": "ecb7c2e9472e6576103e8c67b224d9b83e7c985c90c0465ec118249999db59c9"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "side-stand-curved-foot-v3-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "side-stand-curved-foot-v3-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "side-stand-curved-foot-v3-coordination-v1",
+  "export_revision": "side-stand-curved-foot-v3-coordination-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/side-stand-curved-foot-v3/../../../creative/reviews/side-stand-curved-foot-v3-coordination-v1/README.md",
+  "candidate_review": "../../reviews/side-stand-curved-foot-v3-coordination-v1/README.md",
+  "production_group": 17,
+  "source_plan": "../../research/powertrain-completion-p17-v1/side-foot-curved-plan-v13.json"
+}

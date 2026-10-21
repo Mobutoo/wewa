@@ -1,0 +1,303 @@
+{
+  "schema": 1,
+  "id": "MOTO-SIDE-STAND-PIVOT-BOLT-001",
+  "label": "MOTO-SIDE-STAND-PIVOT-BOLT-001 — bounded exterior candidate",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../reviews/side-stand-pivot-bolt-v1-coordination-v1/source-register.json",
+  "sources": [
+    "D01",
+    "WORKER-REF-1",
+    "WORKER-REF-2"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "final-profile",
+      "PNG_sha256": "feed777ed0ef83ef69ef30a8bfd02609eb4bd95d5cc1709d0a7d74dbb7a6db25",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-profile",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-profile.png",
+        "exr": "raw/final-profile.exr",
+        "png_sha256": "feed777ed0ef83ef69ef30a8bfd02609eb4bd95d5cc1709d0a7d74dbb7a6db25",
+        "camera": [
+          0.0,
+          0.0,
+          0.11374999582767487
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.016249999403953552
+        ],
+        "ortho_scale": 0.05362499877810478,
+        "actual_vertex_frame_min": [
+          0.34149181842803955,
+          0.26467642188072205,
+          0.08124999701976776
+        ],
+        "actual_vertex_frame_max": [
+          0.6585081815719604,
+          0.7353236079216003,
+          0.11374999582767487
+        ]
+      }
+    },
+    {
+      "name": "final-quarter",
+      "PNG_sha256": "db31e9230ceda7ff9b63a402bbf5ae0c027f7190a8102721a52b275d6b691c80",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-quarter",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-quarter.png",
+        "exr": "raw/final-quarter.exr",
+        "png_sha256": "db31e9230ceda7ff9b63a402bbf5ae0c027f7190a8102721a52b275d6b691c80",
+        "camera": [
+          0.035749997943639755,
+          0.022749999538064003,
+          0.10074999183416367
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.016249999403953552
+        ],
+        "ortho_scale": 0.05362499877810478,
+        "actual_vertex_frame_min": [
+          0.33769330382347107,
+          0.12271302938461304,
+          0.07818850874900818
+        ],
+        "actual_vertex_frame_max": [
+          0.662306547164917,
+          0.7712771892547607,
+          0.11308925598859787
+        ]
+      }
+    },
+    {
+      "name": "final-neutral-independent",
+      "PNG_sha256": "1e5af63ebf02633e2e6839daa5df6cd70b113f3085708c658477599cb4c9630d",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-neutral-independent",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-neutral-independent.png",
+        "exr": "raw/final-neutral-independent.exr",
+        "png_sha256": "1e5af63ebf02633e2e6839daa5df6cd70b113f3085708c658477599cb4c9630d",
+        "camera": [
+          0.08124999701976776,
+          -0.045499999076128006,
+          0.042249999940395355
+        ],
+        "target": [
+          0.0,
+          0.0,
+          0.016249999403953552
+        ],
+        "ortho_scale": 0.05362499877810478,
+        "actual_vertex_frame_min": [
+          0.3403056263923645,
+          0.06667522341012955,
+          0.08773841708898544
+        ],
+        "actual_vertex_frame_max": [
+          0.6596941947937012,
+          0.9013684988021851,
+          0.11031833291053772
+        ],
+        "independent_direction": [
+          2.5,
+          -1.4,
+          0.8
+        ],
+        "lights_rgb": "Neutral white; same source rig, no material change",
+        "protocol_sha256": "53d5064cddbd54205e048790db7f34d492a61a49e4113ddb949388d7086c4cdb",
+        "camera_config_sha256": "5e37e9653bfdf80e338072e69fdce2c040bdd7d69cc88358ff8cfed0367f8d32"
+      }
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-SIDE-STAND-PIVOT-BOLT-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "side-stand-pivot-bolt-v1-coordination-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/powertrain-completion-p17-v1/side-pivot-physical-plan-v11.json",
+          "sha256": "e6d89e34bad65fbe641ce226196feaa93a76b31a027834fbab6443dc9f8190c1",
+          "revision": "side-stand-pivot-bolt-v1-coordination-v1"
+        }
+      ],
+      "reason": "Observable worker child identified, sources/estimates/gaps linked; not a complete package or art reception",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "side-stand-pivot-bolt-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "side-stand-pivot-bolt-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "side-stand-pivot-bolt-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/side-stand-pivot-bolt-v1/child-candidate.blend",
+          "kind": "editable_source",
+          "revision": "side-stand-pivot-bolt-v1-coordination-v1",
+          "sha256": "497f1fbcd1745fbb3c919f11fb491ff7f3065bf9d19230be9b317ca0bf1d5466"
+        },
+        {
+          "path": "../../reviews/side-stand-pivot-bolt-v1-coordination-v1/final-profile.png",
+          "kind": "isolated_comparison",
+          "revision": "side-stand-pivot-bolt-v1-coordination-v1",
+          "sha256": "feed777ed0ef83ef69ef30a8bfd02609eb4bd95d5cc1709d0a7d74dbb7a6db25"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "side-stand-pivot-bolt-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/side-stand-pivot-bolt-v1-coordination-v1/final-neutral-independent.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "side-stand-pivot-bolt-v1-coordination-v1",
+          "sha256": "1e5af63ebf02633e2e6839daa5df6cd70b113f3085708c658477599cb4c9630d"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "side-stand-pivot-bolt-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/side-stand-pivot-bolt-v1-coordination-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "side-stand-pivot-bolt-v1-coordination-v1",
+          "sha256": "488deec47c389779f9c69da5c65d87d9563cf305f04e5cf845112b84f300f1e0"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "side-stand-pivot-bolt-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/side-stand-pivot-bolt-v1-coordination-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "side-stand-pivot-bolt-v1-coordination-v1",
+          "sha256": "24de70719101b489e0c2ae1595f2773bef3a48aed3478cd52e699127af016154"
+        },
+        {
+          "path": "../../reviews/side-stand-pivot-bolt-v1-coordination-v1/inspection-v5/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "side-stand-pivot-bolt-v1-coordination-v1",
+          "sha256": "d98336b34595c22104c2c3f3f1b8fdd248c2f9e01961002cff56e4f6abad1720"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "side-stand-pivot-bolt-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "side-stand-pivot-bolt-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "side-stand-pivot-bolt-v1-coordination-v1",
+  "export_revision": "side-stand-pivot-bolt-v1-coordination-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/side-stand-pivot-bolt-v1/../../../creative/reviews/side-stand-pivot-bolt-v1-coordination-v1/README.md",
+  "candidate_review": "../../reviews/side-stand-pivot-bolt-v1-coordination-v1/README.md",
+  "production_group": 17,
+  "source_plan": "../../research/powertrain-completion-p17-v1/side-pivot-physical-plan-v11.json"
+}
