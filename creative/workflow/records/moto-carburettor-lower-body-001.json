@@ -1,0 +1,300 @@
+{
+  "schema": 1,
+  "id": "MOTO-CARBURETTOR-LOWER-BODY-001",
+  "label": "MOTO-CARBURETTOR-LOWER-BODY-001 — bounded exterior candidate",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../reviews/carburettor-lower-body-v1-coordination-v1/source-register.json",
+  "sources": [
+    "D01"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "final-profile",
+      "PNG_sha256": "4233b556f14646acba53f751c2a32ffebf721eaa28ec2ac0be05651a2ac7165a",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-profile",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-profile.png",
+        "exr": "raw/final-profile.exr",
+        "png_sha256": "4233b556f14646acba53f751c2a32ffebf721eaa28ec2ac0be05651a2ac7165a",
+        "camera": [
+          0.020349999889731407,
+          -0.0017502568662166595,
+          0.19149845838546753
+        ],
+        "target": [
+          0.020349999889731407,
+          -0.0017502568662166595,
+          -0.014000000432133675
+        ],
+        "ortho_scale": 0.11302414536476135,
+        "actual_vertex_frame_min": [
+          0.3553406596183777,
+          0.11038962006568909,
+          0.1799984574317932
+        ],
+        "actual_vertex_frame_max": [
+          0.6446593403816223,
+          0.8896104097366333,
+          0.2309984564781189
+        ]
+      }
+    },
+    {
+      "name": "final-quarter",
+      "PNG_sha256": "c2ba59de84143b371555cd40a78e50d40bfccf6244aace4838cd84de87d49c00",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-quarter",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-quarter.png",
+        "exr": "raw/final-quarter.exr",
+        "png_sha256": "c2ba59de84143b371555cd40a78e50d40bfccf6244aace4838cd84de87d49c00",
+        "camera": [
+          0.09569943696260452,
+          0.04619938135147095,
+          0.16409865021705627
+        ],
+        "target": [
+          0.020349999889731407,
+          -0.0017502568662166595,
+          -0.014000000432133675
+        ],
+        "ortho_scale": 0.11302414536476135,
+        "actual_vertex_frame_min": [
+          0.18534603714942932,
+          0.12366045266389847,
+          0.1676158905029297
+        ],
+        "actual_vertex_frame_max": [
+          0.7470115423202515,
+          0.7808384895324707,
+          0.2259174883365631
+        ]
+      }
+    },
+    {
+      "name": "final-neutral-independent",
+      "PNG_sha256": "3b2d92344d807fae72d5286569299925a48fd33bbcc0c5f7fff7eb3d9dde8b85",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-neutral-independent",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-neutral-independent.png",
+        "exr": "raw/final-neutral-independent.exr",
+        "png_sha256": "3b2d92344d807fae72d5286569299925a48fd33bbcc0c5f7fff7eb3d9dde8b85",
+        "camera": [
+          -0.034449584782123566,
+          -0.07024973630905151,
+          0.1777985543012619
+        ],
+        "target": [
+          0.020349999889731407,
+          -0.0017502568662166595,
+          -0.014000000432133675
+        ],
+        "ortho_scale": 0.11302414536476135,
+        "actual_vertex_frame_min": [
+          0.281995564699173,
+          0.19759386777877808,
+          0.18653735518455505
+        ],
+        "actual_vertex_frame_max": [
+          0.7884411215782166,
+          0.9225482940673828,
+          0.24242278933525085
+        ],
+        "independent_direction": [
+          -0.8,
+          -1.0,
+          2.8
+        ],
+        "lights_rgb": "Neutral white; same source rig, no material change",
+        "protocol_sha256": "ddff4c3f4e1eb3f3dc532fafa3fff5c47a096a0ab9fab2982cd6776fbfc384dd"
+      }
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-CARBURETTOR-LOWER-BODY-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "carburettor-lower-body-v1-coordination-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/powertrain-completion-p19-v1/lower-body-plan-v4.json",
+          "sha256": "e6337e1379aa69e5c6dc1186be00622810ec452375df8b9c4cddcd95b8542e4e",
+          "revision": "carburettor-lower-body-v1-coordination-v1"
+        }
+      ],
+      "reason": "Observable worker child identified, sources/estimates/gaps linked; not a complete package or art reception",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "carburettor-lower-body-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "carburettor-lower-body-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "carburettor-lower-body-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/carburettor-lower-body-v1/child-candidate.blend",
+          "kind": "editable_source",
+          "revision": "carburettor-lower-body-v1-coordination-v1",
+          "sha256": "6b6805130b9c32971600dfc07da0b1dfba45f7cae16fe6ff07c49b2134c5e1ff"
+        },
+        {
+          "path": "../../reviews/carburettor-lower-body-v1-coordination-v1/final-profile.png",
+          "kind": "isolated_comparison",
+          "revision": "carburettor-lower-body-v1-coordination-v1",
+          "sha256": "4233b556f14646acba53f751c2a32ffebf721eaa28ec2ac0be05651a2ac7165a"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "carburettor-lower-body-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/carburettor-lower-body-v1-coordination-v1/final-neutral-independent.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "carburettor-lower-body-v1-coordination-v1",
+          "sha256": "3b2d92344d807fae72d5286569299925a48fd33bbcc0c5f7fff7eb3d9dde8b85"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "carburettor-lower-body-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/carburettor-lower-body-v1-coordination-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "carburettor-lower-body-v1-coordination-v1",
+          "sha256": "de0ef39fa5d31a500029584b9eac61b89c77045d71cf8c1d0424728a60fcd975"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "carburettor-lower-body-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/carburettor-lower-body-v1-coordination-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "carburettor-lower-body-v1-coordination-v1",
+          "sha256": "7e9fa151b2a06e71a7ec1990f7bfadf06ddbd014879cc900e7337240b8cc84ba"
+        },
+        {
+          "path": "../../reviews/carburettor-lower-body-v1-coordination-v1/inspection-v5/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "carburettor-lower-body-v1-coordination-v1",
+          "sha256": "02ca62f3952f553a26192c677ec4d0a544150a41b9ffca7ec17425dcb64897e6"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "carburettor-lower-body-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "carburettor-lower-body-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "carburettor-lower-body-v1-coordination-v1",
+  "export_revision": "carburettor-lower-body-v1-coordination-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/carburettor-lower-body-v1/../../../creative/reviews/carburettor-lower-body-v1-coordination-v1/README.md",
+  "candidate_review": "../../reviews/carburettor-lower-body-v1-coordination-v1/README.md",
+  "production_group": 17,
+  "source_plan": "../../research/powertrain-completion-p19-v1/lower-body-plan-v4.json"
+}

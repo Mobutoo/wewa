@@ -1,0 +1,300 @@
+{
+  "schema": 1,
+  "id": "MOTO-BRAKE-ACTUATION-ROD-001",
+  "label": "MOTO-BRAKE-ACTUATION-ROD-001 — bounded exterior candidate",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../reviews/brake-actuation-rod-v1-coordination-v1/source-register.json",
+  "sources": [
+    "D01"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "final-profile",
+      "PNG_sha256": "d8530bd6b732f19f3125de44f0d50d25cdc5242cc90eb5114e94605b997f0a46",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-profile",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-profile.png",
+        "exr": "raw/final-profile.exr",
+        "png_sha256": "d8530bd6b732f19f3125de44f0d50d25cdc5242cc90eb5114e94605b997f0a46",
+        "camera": [
+          0.24500000476837158,
+          0.0,
+          1.4700000286102295
+        ],
+        "target": [
+          0.24500000476837158,
+          0.0,
+          0.0
+        ],
+        "ortho_scale": 0.8084999918937683,
+        "actual_vertex_frame_min": [
+          0.19696968793869019,
+          0.495626837015152,
+          1.4672499895095825
+        ],
+        "actual_vertex_frame_max": [
+          0.8030303120613098,
+          0.5043731927871704,
+          1.4727500677108765
+        ]
+      }
+    },
+    {
+      "name": "final-quarter",
+      "PNG_sha256": "3c96288cf1693519c7ce649e9d1a7aa39c7496ef8444686eeb755f15585a8997",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-quarter",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-quarter.png",
+        "exr": "raw/final-quarter.exr",
+        "png_sha256": "3c96288cf1693519c7ce649e9d1a7aa39c7496ef8444686eeb755f15585a8997",
+        "camera": [
+          0.784000039100647,
+          0.34299999475479126,
+          1.2739999294281006
+        ],
+        "target": [
+          0.24500000476837158,
+          0.0,
+          0.0
+        ],
+        "ortho_scale": 0.8084999918937683,
+        "actual_vertex_frame_min": [
+          0.33451175689697266,
+          0.20340318977832794,
+          1.3300622701644897
+        ],
+        "actual_vertex_frame_max": [
+          0.6654884815216064,
+          0.7965970039367676,
+          1.5203739404678345
+        ]
+      }
+    },
+    {
+      "name": "final-neutral-independent",
+      "PNG_sha256": "9d99acee9b3d79ce7834f3a1305c217fbaedb7da8bfb92e11a77283fb9d5745b",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-neutral-independent",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-neutral-independent.png",
+        "exr": "raw/final-neutral-independent.exr",
+        "png_sha256": "9d99acee9b3d79ce7834f3a1305c217fbaedb7da8bfb92e11a77283fb9d5745b",
+        "camera": [
+          -0.1470000147819519,
+          -0.49000000953674316,
+          1.371999979019165
+        ],
+        "target": [
+          0.24500000476837158,
+          0.0,
+          0.0
+        ],
+        "ortho_scale": 0.8084999918937683,
+        "actual_vertex_frame_min": [
+          0.2613237500190735,
+          0.2751588225364685,
+          1.4424113035202026
+        ],
+        "actual_vertex_frame_max": [
+          0.7386766672134399,
+          0.7248417139053345,
+          1.5749703645706177
+        ],
+        "independent_direction": [
+          -0.8,
+          -1.0,
+          2.8
+        ],
+        "lights_rgb": "Neutral white; same source rig, no material change",
+        "protocol_sha256": "ddff4c3f4e1eb3f3dc532fafa3fff5c47a096a0ab9fab2982cd6776fbfc384dd"
+      }
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-BRAKE-ACTUATION-ROD-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "brake-actuation-rod-v1-coordination-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/powertrain-completion-p15-v1/actuation-rod-plan-v5.json",
+          "sha256": "6432042439e466748424a568fa4df8f6245cce66396a00027a5ef8081e201818",
+          "revision": "brake-actuation-rod-v1-coordination-v1"
+        }
+      ],
+      "reason": "Observable worker child identified, sources/estimates/gaps linked; not a complete package or art reception",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "brake-actuation-rod-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "brake-actuation-rod-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "brake-actuation-rod-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/brake-actuation-rod-v1/child-candidate.blend",
+          "kind": "editable_source",
+          "revision": "brake-actuation-rod-v1-coordination-v1",
+          "sha256": "4cdf7e0bc0efc6bb95e1e888d6552fdba006bc423c0862aa571aafffa0ed663c"
+        },
+        {
+          "path": "../../reviews/brake-actuation-rod-v1-coordination-v1/final-profile.png",
+          "kind": "isolated_comparison",
+          "revision": "brake-actuation-rod-v1-coordination-v1",
+          "sha256": "d8530bd6b732f19f3125de44f0d50d25cdc5242cc90eb5114e94605b997f0a46"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "brake-actuation-rod-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/brake-actuation-rod-v1-coordination-v1/final-neutral-independent.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "brake-actuation-rod-v1-coordination-v1",
+          "sha256": "9d99acee9b3d79ce7834f3a1305c217fbaedb7da8bfb92e11a77283fb9d5745b"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "brake-actuation-rod-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/brake-actuation-rod-v1-coordination-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "brake-actuation-rod-v1-coordination-v1",
+          "sha256": "05fcdececd482e9c6a50c4410c0ef781ce531ff10ab3f8fccd74359c62142b09"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "brake-actuation-rod-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/brake-actuation-rod-v1-coordination-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "brake-actuation-rod-v1-coordination-v1",
+          "sha256": "873aa0772253263b8ba552af57ecb583d87c724fade29466b76ba18b5af163c0"
+        },
+        {
+          "path": "../../reviews/brake-actuation-rod-v1-coordination-v1/inspection-v5/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "brake-actuation-rod-v1-coordination-v1",
+          "sha256": "4dc06f458a76b28fbad59e9096493c4a60a4a6eb6ec33a2ee8358931058a30a9"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "brake-actuation-rod-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "brake-actuation-rod-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "brake-actuation-rod-v1-coordination-v1",
+  "export_revision": "brake-actuation-rod-v1-coordination-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/brake-actuation-rod-v1/../../../creative/reviews/brake-actuation-rod-v1-coordination-v1/README.md",
+  "candidate_review": "../../reviews/brake-actuation-rod-v1-coordination-v1/README.md",
+  "production_group": 17,
+  "source_plan": "../../research/powertrain-completion-p15-v1/actuation-rod-plan-v5.json"
+}

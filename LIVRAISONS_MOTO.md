@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **126 composants candidats enregistrés**, après
+Le registre courant comporte **132 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,12 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P17** : [MOTO-CENTRE-STAND-RETURN-SPRING-001 — bounded exterior candidate — sources et images](creative/reviews/centre-stand-return-spring-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
+- **P17** : [MOTO-SIDE-STAND-RETURN-SPRING-001 — bounded exterior candidate — sources et images](creative/reviews/side-stand-return-spring-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
+- **P15** : [MOTO-BRAKE-ROD-CLEVIS-001 — bounded exterior candidate — sources et images](creative/reviews/brake-rod-clevis-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
+- **P15** : [MOTO-BRAKE-ACTUATION-ROD-001 — bounded exterior candidate — sources et images](creative/reviews/brake-actuation-rod-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
+- **P19** : [MOTO-CARBURETTOR-FLOAT-BOWL-001 — bounded exterior candidate — sources et images](creative/reviews/carburettor-float-bowl-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
+- **P19** : [MOTO-CARBURETTOR-LOWER-BODY-001 — bounded exterior candidate — sources et images](creative/reviews/carburettor-lower-body-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P08** : [rear-plate-carrier-wire-v1 — sources, rendus et contrôles](creative/reviews/rear-plate-carrier-wire-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
 [Quatorze nouvelles sauvegardes figées : train arrière, carburateur, frein et ressorts](creative/reviews/continuation-backup-v1/continuation-ready-v2.md). Sources Blender, exports et rendus conservés ; revue indépendante et réception distinctes.
 

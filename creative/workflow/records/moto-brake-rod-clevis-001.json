@@ -1,0 +1,300 @@
+{
+  "schema": 1,
+  "id": "MOTO-BRAKE-ROD-CLEVIS-001",
+  "label": "MOTO-BRAKE-ROD-CLEVIS-001 — bounded exterior candidate",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../reviews/brake-rod-clevis-v1-coordination-v1/source-register.json",
+  "sources": [
+    "D01"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "final-profile",
+      "PNG_sha256": "a4aeb11341e6a78e00ba108c84c6de2ebebd0179a6dd5fcebe1902405ecba0ac",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-profile",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-profile.png",
+        "exr": "raw/final-profile.exr",
+        "png_sha256": "a4aeb11341e6a78e00ba108c84c6de2ebebd0179a6dd5fcebe1902405ecba0ac",
+        "camera": [
+          0.009749379009008408,
+          0.0,
+          0.11549627780914307
+        ],
+        "target": [
+          0.009749379009008408,
+          0.0,
+          0.0
+        ],
+        "ortho_scale": 0.06352294981479645,
+        "actual_vertex_frame_min": [
+          0.19696968793869019,
+          0.3178386390209198,
+          0.10949628055095673
+        ],
+        "actual_vertex_frame_max": [
+          0.8030303120613098,
+          0.6821613907814026,
+          0.1214962750673294
+        ]
+      }
+    },
+    {
+      "name": "final-quarter",
+      "PNG_sha256": "4e1566929c6e8141bd3ff3059303fb34520e5534bd0d2d62a8656c2101aed834",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-quarter",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-quarter.png",
+        "exr": "raw/final-quarter.exr",
+        "png_sha256": "4e1566929c6e8141bd3ff3059303fb34520e5534bd0d2d62a8656c2101aed834",
+        "camera": [
+          0.05209801346063614,
+          0.02694913186132908,
+          0.10009676963090897
+        ],
+        "target": [
+          0.009749379009008408,
+          0.0,
+          0.0
+        ],
+        "ortho_scale": 0.06352294981479645,
+        "actual_vertex_frame_min": [
+          0.27172285318374634,
+          0.1263064593076706,
+          0.09870441257953644
+        ],
+        "actual_vertex_frame_max": [
+          0.7556582093238831,
+          0.8767754435539246,
+          0.12449668347835541
+        ]
+      }
+    },
+    {
+      "name": "final-neutral-independent",
+      "PNG_sha256": "336854a1fc120ce172336705b9fa3eba64aec74782a4091c493bd9000d7366bf",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "final-neutral-independent",
+        "samples": 96,
+        "resolution_px": [
+          900,
+          700
+        ],
+        "png": "final-neutral-independent.png",
+        "exr": "raw/final-neutral-independent.exr",
+        "png_sha256": "336854a1fc120ce172336705b9fa3eba64aec74782a4091c493bd9000d7366bf",
+        "camera": [
+          -0.021049628034234047,
+          -0.038498759269714355,
+          0.10779652744531631
+        ],
+        "target": [
+          0.009749379009008408,
+          0.0,
+          0.0
+        ],
+        "ortho_scale": 0.06352294981479645,
+        "actual_vertex_frame_min": [
+          0.1945338398218155,
+          0.1615408957004547,
+          0.10714612156152725
+        ],
+        "actual_vertex_frame_max": [
+          0.7676637172698975,
+          0.834003746509552,
+          0.13039861619472504
+        ],
+        "independent_direction": [
+          -0.8,
+          -1.0,
+          2.8
+        ],
+        "lights_rgb": "Neutral white; same source rig, no material change",
+        "protocol_sha256": "ddff4c3f4e1eb3f3dc532fafa3fff5c47a096a0ab9fab2982cd6776fbfc384dd"
+      }
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-BRAKE-ROD-CLEVIS-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "brake-rod-clevis-v1-coordination-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/powertrain-completion-p15-v1/rod-clevis-plan-v6.json",
+          "sha256": "4221cb88a375786695b02d7386de0f0050253f483317f7c28ea1c80ded1cc885",
+          "revision": "brake-rod-clevis-v1-coordination-v1"
+        }
+      ],
+      "reason": "Observable worker child identified, sources/estimates/gaps linked; not a complete package or art reception",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "brake-rod-clevis-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "brake-rod-clevis-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "brake-rod-clevis-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/brake-rod-clevis-v1/child-candidate.blend",
+          "kind": "editable_source",
+          "revision": "brake-rod-clevis-v1-coordination-v1",
+          "sha256": "22405ae8dc22265a4cbb20300b19a073b1b1fed88069e6d6b640cd1e71aab770"
+        },
+        {
+          "path": "../../reviews/brake-rod-clevis-v1-coordination-v1/final-profile.png",
+          "kind": "isolated_comparison",
+          "revision": "brake-rod-clevis-v1-coordination-v1",
+          "sha256": "a4aeb11341e6a78e00ba108c84c6de2ebebd0179a6dd5fcebe1902405ecba0ac"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "brake-rod-clevis-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/brake-rod-clevis-v1-coordination-v1/final-neutral-independent.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "brake-rod-clevis-v1-coordination-v1",
+          "sha256": "336854a1fc120ce172336705b9fa3eba64aec74782a4091c493bd9000d7366bf"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "brake-rod-clevis-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/brake-rod-clevis-v1-coordination-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "brake-rod-clevis-v1-coordination-v1",
+          "sha256": "923fa038e4bbb7a4bc5a7176fe84a4e54249a5b1fa39ef373fc3da42468d438f"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "brake-rod-clevis-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/brake-rod-clevis-v1-coordination-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "brake-rod-clevis-v1-coordination-v1",
+          "sha256": "6a6af537b40c9f4385d4a9c0c8ef83f5d9fc1a322f9fb241b0434cea8616daec"
+        },
+        {
+          "path": "../../reviews/brake-rod-clevis-v1-coordination-v1/inspection-v5/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "brake-rod-clevis-v1-coordination-v1",
+          "sha256": "50f1ba223946b1f723dd5a4cfec33665721f37aca0d1dd13b02907b336bd27e9"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "brake-rod-clevis-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "brake-rod-clevis-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "brake-rod-clevis-v1-coordination-v1",
+  "export_revision": "brake-rod-clevis-v1-coordination-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/brake-rod-clevis-v1/../../../creative/reviews/brake-rod-clevis-v1-coordination-v1/README.md",
+  "candidate_review": "../../reviews/brake-rod-clevis-v1-coordination-v1/README.md",
+  "production_group": 17,
+  "source_plan": "../../research/powertrain-completion-p15-v1/rod-clevis-plan-v6.json"
+}
