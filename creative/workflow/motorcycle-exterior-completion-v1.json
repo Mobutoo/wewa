@@ -431,7 +431,7 @@
         "P04"
       ],
       "state": "active",
-      "detailed_work_started": false,
+      "detailed_work_started": true,
       "scope": "Bouchon, robinet et durite en composants distincts ; conserver réservoir WEWA existant",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
@@ -439,7 +439,15 @@
       "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
       "current_stage": "documented_or_isolated_candidate_work_not_complete",
       "package_complete": false,
-      "continuation_owner": "body-coordinator"
+      "continuation_owner": "body-coordinator",
+      "continuation_children": [
+        {
+          "component_id": "MOTO-FUEL-CAP-EXTERIOR-ENVELOPE-001",
+          "revision": "fuel-cap-exterior-envelope-v2",
+          "review": "creative/reviews/fuel-cap-exterior-envelope-v2/README.md",
+          "state": "candidate_delivered_not_accepted"
+        }
+      ]
     },
     {
       "id": "P13",
@@ -637,6 +645,12 @@
       "continuation_owner": "powertrain-worker",
       "continuation_work_inventory": [
         {
+          "path": "creative/reviews/crankcase-lh-output-panel-v1/delivery.json",
+          "revision": "crankcase-lh-output-panel-v1",
+          "milestone": "Usable isolated child candidate; package remains incomplete",
+          "package_complete": false
+        },
+        {
           "path": "creative/reviews/crankcase-upper-deck-rh-v1/delivery.json",
           "revision": "crankcase-upper-deck-rh-v1",
           "milestone": "Usable isolated child candidate; package remains incomplete",
@@ -718,7 +732,7 @@
       "lot": 16,
       "depends_on": [],
       "state": "active",
-      "detailed_work_started": false,
+      "detailed_work_started": true,
       "scope": "Moyeu, porte-couronne et entraînement distincts ; compatibilité jante/frein",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
@@ -752,7 +766,16 @@
           "package_complete": false
         }
       ],
-      "current_stage": "documented_or_isolated_candidate_work_not_complete"
+      "current_stage": "worker_candidate_saved_with_coordination_evidence",
+      "candidate_review": "creative/reviews/front-completion-p21-carrier-v3-coordination-v1/README.md",
+      "continuation_children": [
+        {
+          "component_id": "MOTO-REAR-CARRIER-DS151068-STUDY-001",
+          "revision": "front-completion-p21-carrier-v3-coordination-v1",
+          "state": "candidate_rework",
+          "review": "creative/reviews/front-completion-p21-carrier-v3-coordination-v1/README.md"
+        }
+      ]
     },
     {
       "id": "P22",
@@ -838,9 +861,21 @@
           "package_complete": false
         },
         {
+          "path": "creative/reviews/front-completion-p23-rh-adjuster-front10-v1/delivery.json",
+          "revision": "front-completion-p23-rh-adjuster-front10-v1",
+          "milestone": "G3 rework",
+          "package_complete": false
+        },
+        {
           "path": "creative/reviews/front-completion-p23-torque-arm-front10-v1/delivery.json",
           "revision": "front-completion-p23-torque-arm-front10-v1",
           "milestone": "G3 rework",
+          "package_complete": false
+        },
+        {
+          "path": "creative/reviews/front-completion-p23-torque-arm-front10-v2/delivery.json",
+          "revision": "front-completion-p23-torque-arm-front10-v2",
+          "milestone": "Bounded related isolated exterior, gray and clean material hypothesis reviewed",
           "package_complete": false
         }
       ],
@@ -1078,9 +1113,18 @@
           "package_complete": false
         }
       ],
-      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "current_stage": "worker_candidate_saved_with_coordination_evidence",
       "package_complete": false,
-      "continuation_owner": "front-worker"
+      "continuation_owner": "front-worker",
+      "candidate_review": "creative/reviews/front-completion-p29-bow-material-v1-coordination-v1/README.md",
+      "continuation_children": [
+        {
+          "component_id": "MOTO-FRONT-BRAKE-LOWER-SHEATH-STUDY-001",
+          "revision": "front-completion-p29-bow-material-v1-coordination-v1",
+          "state": "candidate_rework",
+          "review": "creative/reviews/front-completion-p29-bow-material-v1-coordination-v1/README.md"
+        }
+      ]
     },
     {
       "id": "P30",
@@ -1199,7 +1243,7 @@
     "state": "ongoing_goal_not_final_handoff",
     "packages_complete": 0,
     "packages_started": 30,
-    "packages_with_geometry_or_source_work": 24,
+    "packages_with_geometry_or_source_work": 26,
     "packages_not_started": 0,
     "detailed_workers_authorized": 3,
     "current_package": "Multiple independent children; see current source work inventories",
@@ -1225,7 +1269,7 @@
     "goal": "Execute all30 packages continuously with regular GitHub saves; existing fidelity/receipt rules retained",
     "state": "running",
     "packages_assessed": 30,
-    "packages_with_geometry_or_source_work": 24,
+    "packages_with_geometry_or_source_work": 26,
     "packages_not_assessed": 0,
     "packages_complete": 0,
     "whole_motorcycle_art_accepted": false,

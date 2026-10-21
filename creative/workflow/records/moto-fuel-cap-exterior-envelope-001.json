@@ -1,0 +1,228 @@
+{
+  "schema": 1,
+  "id": "MOTO-FUEL-CAP-EXTERIOR-ENVELOPE-001",
+  "label": "P12 — bouchon, enveloppe polygonale corrigée",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../../creative/research/fuel-cap-exterior-envelope-v2/sources-child-v1.json",
+  "sources": [
+    "D01",
+    "D04-S52"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "whole-front",
+      "PNG_sha256": "61fd5a62cdc36cc7e708d45deff446fb4ca2c1584efa75fff1179f1509793cf2",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.0,
+        -0.00028599053621292114,
+        0.20288550853729248
+      ],
+      "camera_target": [
+        0.0,
+        -0.00028599053621292114,
+        0.0037499999161809683
+      ]
+    },
+    {
+      "name": "whole-quarter",
+      "PNG_sha256": "50484a113970c0642c814ac5b5dfb5b434e2a340565c19e9d82f7e170f352e72",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.06637850403785706,
+        -0.07994019985198975,
+        0.13650700449943542
+      ],
+      "camera_target": [
+        0.0,
+        -0.00028599053621292114,
+        0.0037499999161809683
+      ]
+    },
+    {
+      "name": "neutral-outdoor",
+      "PNG_sha256": "c2126b4d513480d60662e63f41229e883b8b15d37981cfe1b794c242819b0a11",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.06637850403785706,
+        -0.07994019985198975,
+        0.13650700449943542
+      ],
+      "camera_target": [
+        0.0,
+        -0.00028599053621292114,
+        0.0037499999161809683
+      ]
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-FUEL-CAP-EXTERIOR-ENVELOPE-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "fuel-cap-exterior-envelope-v2",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "path": "../../../creative/research/fuel-cap-exterior-envelope-v2/G0-G2-plan-v1.json",
+          "kind": "identity_and_parts",
+          "sha256": "d910eb135216f14e4b7f441eeadf7e257022ad1526b885367aba2ba5319bc36b",
+          "revision": "fuel-cap-exterior-envelope-v2"
+        }
+      ],
+      "reason": "Observable child separated, estimates and variant limits documented; not full package or artistic acceptance",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "fuel-cap-exterior-envelope-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "fuel-cap-exterior-envelope-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "fuel-cap-exterior-envelope-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/fuel-cap-exterior-envelope-v2/fuel-cap-exterior-envelope-v2.blend",
+          "kind": "editable_source",
+          "revision": "fuel-cap-exterior-envelope-v2",
+          "sha256": "80b758fa75348e9bdcb878b34633a3eaeecbb028f15fef45857a202aa3397002"
+        },
+        {
+          "path": "../../reviews/fuel-cap-exterior-envelope-v2/whole-front.png",
+          "kind": "isolated_comparison",
+          "revision": "fuel-cap-exterior-envelope-v2",
+          "sha256": "61fd5a62cdc36cc7e708d45deff446fb4ca2c1584efa75fff1179f1509793cf2"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "fuel-cap-exterior-envelope-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/fuel-cap-exterior-envelope-v2/neutral-outdoor.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "fuel-cap-exterior-envelope-v2",
+          "sha256": "c2126b4d513480d60662e63f41229e883b8b15d37981cfe1b794c242819b0a11"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "fuel-cap-exterior-envelope-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/fuel-cap-exterior-envelope-v2/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "fuel-cap-exterior-envelope-v2",
+          "sha256": "ab03271345c8781438b0793522505c8efeaa9af635c8cedd3909cef0d4f01a81"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "fuel-cap-exterior-envelope-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/fuel-cap-exterior-envelope-v2/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "fuel-cap-exterior-envelope-v2",
+          "sha256": "b319394266c5d6e8dc1cf2134cc9fd481d3ff433b9355ab44a20470b62aeb89d"
+        },
+        {
+          "path": "../../reviews/fuel-cap-exterior-envelope-v2/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "fuel-cap-exterior-envelope-v2",
+          "sha256": "fcf1342acce54b608ffa386d96c70b33dd99c4794a860ea759081185759ae03d"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "fuel-cap-exterior-envelope-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "fuel-cap-exterior-envelope-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "fuel-cap-exterior-envelope-v2",
+  "export_revision": "fuel-cap-exterior-envelope-v2-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/fuel-cap-exterior-envelope-v2/README.md",
+  "candidate_review": "../../reviews/fuel-cap-exterior-envelope-v2/README.md",
+  "production_group": 18,
+  "source_plan": "../../../creative/research/fuel-cap-exterior-envelope-v2/G0-G2-plan-v1.json"
+}
