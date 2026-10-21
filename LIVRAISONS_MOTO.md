@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **139 composants candidats enregistrés**, après
+Le registre courant comporte **140 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P12** : [fuel-valve-visible-lever-v1 — sources, rendus et contrôles](creative/reviews/fuel-valve-visible-lever-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **P17** : [MOTO-SIDE-STAND-PIVOT-BOLT-001 — bounded exterior candidate — sources et images](creative/reviews/side-stand-pivot-bolt-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P17** : [MOTO-SIDE-STAND-CURVED-FOOT-001 — bounded exterior candidate — sources et images](creative/reviews/side-stand-curved-foot-v3-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P17** : [MOTO-SIDE-STAND-SPRING-ANCHOR-PIN-001 — bounded exterior candidate — sources et images](creative/reviews/side-stand-spring-anchor-pin-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
