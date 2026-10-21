@@ -5,8 +5,8 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **99 composants candidats enregistrés**, dont la
-coque noire du clignotant avant ajoutée lors de cette reprise. Le point Source23
+Le registre courant comporte **101 composants candidats enregistrés**, après
+la tige droite du clignotant et la face d'un tampon de selle. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
 réussi ne vaut pas réception artistique ni validation sur iPhone.
@@ -28,12 +28,45 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Dernières pièces livrées avec leurs contrôles
 
-Les trois premières pièces ci-dessous ont été enregistrées lors de la
-publication qui a porté le registre à 98 candidats. La coque du clignotant est
-le 99e candidat après sa revue de coordination. Leurs preuves d'export et leur
+### Tige du clignotant avant droit — nouvelle fabrication
+
+![Tige droite, vrai rendu détaillé](creative/reviews/indicator-front-right-stalk-v1/neutral-outdoor.png)
+
+Profil indépendant lié à PF401002, avec trois rainures géométriques. La tige
+gauche n'a pas été réfléchie. Les extrémités restent deux coupes de revue ; le
+raccord à la coque et les fixations suivent séparément.
+
+[Images et limites](creative/reviews/indicator-front-right-stalk-v1/README.md)
+· [Revue de coordination](creative/reviews/indicator-front-right-stalk-v1/coordinator-review.json)
+· [Buffers protégés entre gris et matière](creative/reviews/indicator-front-right-stalk-v1/material-transfer-check.json)
+· [Contrôles Babylon](creative/reviews/indicator-front-right-stalk-v1/inspection-v3/engine-check.json)
+· [Source Blender et GLB](assets-src/moto-components/indicators-front/right-stalk/)
+
+### Face rainurée d'un tampon de selle — nouvelle fabrication
+
+![Tampon, vraie face détaillée](creative/reviews/seat-damper-v1/neutral-outdoor.png)
+
+Un exemplaire lié à DP211009 : cinq vallées, contour et bouche arrondis. Le
+revers, le tenon et le fond restent inconnus. Les coupes de revue ne prouvent
+ni une épaisseur réelle ni un trou traversant. Les sept emplacements ne sont
+pas multipliés avant revue de l'exemplaire et des interfaces.
+
+[Images et limites](creative/reviews/seat-damper-v1/README.md)
+· [Revue de coordination](creative/reviews/seat-damper-v1/coordinator-review.json)
+· [Buffers protégés entre gris et matière](creative/reviews/seat-damper-v1/material-transfer-check.json)
+· [Contrôles Babylon](creative/reviews/seat-damper-v1/inspection-v3/engine-check.json)
+· [Source Blender et GLB](assets-src/moto-components/seat-damper/)
+
+Les deux nouvelles pièces ont chacune trois rendus Cycles96, quatre vues
+Babylon non vides et leurs sources/GLB/PNG/EXR sauvegardés. Leurs sections,
+matières et interfaces restent des candidats à recevoir.
+
+Les livraisons précédentes regroupent les trois pièces qui ont porté le registre
+à 98 candidats, puis la coque du clignotant, enregistrée comme 99e candidat
+après sa revue de coordination. Leurs preuves d'export et leur
 rendu dans Babylon restent distincts de la lecture des rendus Blender.
 
-### Coque noire du clignotant avant — nouvelle livraison de cette reprise
+### Coque noire du clignotant avant — livraison précédente
 
 ![Coque du clignotant sous ciel neutre](creative/reviews/indicator-front-housing-v1/neutral-outdoor.png)
 
