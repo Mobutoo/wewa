@@ -15,3 +15,11 @@ Le registre comporte 98 identités physiques candidates ; 106 fiches incluent de
 Les photos documentaires à droits de redistribution non établis restent privées. Secrets, dépendances installées, caches, sauvegardes Blender et buffers temporaires ne sont pas des livrables. Les sources publiques et leurs dépendances figées sont vérifiées ; les scripts et rapports historiques conservent leurs échecs sans être présentés comme des résultats validés. Le jeu public et son hébergement ne sont pas modifiés par cet envoi.
 
 Tous les passages d’acceptation artistique, d’ajustement mécanique exact et de qualification sur iPhone15/16 restent ouverts. Les données Ewutelo décrivent l’état et les liens du dépôt ; elles ne contiennent pas les fichiers binaires du projet.
+
+## Envoi et vérification
+
+Les 272 fichiers supplémentaires (79 040 237 octets sélectionnés) sont poussés dans [`840f2fa8`](https://github.com/Mobutoo/wewa/commit/840f2fa869b752a1f760ff9750c968c1887ccee8), arbre `096b790456fa541320e827d4b8155a935e965340`. Les trois propriétaires ont figé leurs sorties et arrêté tous leurs calculs avant cet instantané.
+
+[Le contrôle du commit](../../../WEWA_Developpement_Web/validation/motorcycle18-source24-integrity.json) relit 5 419 JSON, 432 manifestes, 13 721 empreintes de fichiers, 69 PNG de checkpoints et 6 490 liens, sans erreur. La sélection complémentaire contrôle 754 empreintes et inclut tous les nouveaux fichiers utiles, sans delta différé.
+
+Le PRD complet Ewutelo est sauvegardé et relu égal en révision48 ; ses 45 exigences restent inchangées. [GitHub Actions](https://github.com/Mobutoo/wewa/actions/runs/39624341763) est en cours à cette observation. Le contrôle local réussi ne préjuge pas de son résultat distant. Aucune fabrication permanente ne continue après cette publication ; la suite des18lots reste documentée pour la reprise.
