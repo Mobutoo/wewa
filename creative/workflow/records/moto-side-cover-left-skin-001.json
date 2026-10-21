@@ -1,0 +1,229 @@
+{
+  "schema": 1,
+  "id": "MOTO-SIDE-COVER-LEFT-SKIN-001",
+  "label": "P01 — peau extérieure du cache gauche, étude estimée",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Boxer125HD RDC profile target; uncalibrated outline and estimated convexity; no reverse mounting geometry",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01",
+    "D04",
+    "D13",
+    "D15"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "view": "whole-profile",
+      "png": "whole-profile.png",
+      "exr": "raw/whole-profile.exr",
+      "samples": 96,
+      "camera": [
+        0,
+        0,
+        0.5
+      ],
+      "sha256": "1a0f648e2d1e67ac5832fd68cb7058ca5f6ac4c1088e081b12e3f8cf7d5e2fe4",
+      "name": "whole-profile",
+      "actually_saved": true,
+      "actually_read": true,
+      "PNG_sha256": "1a0f648e2d1e67ac5832fd68cb7058ca5f6ac4c1088e081b12e3f8cf7d5e2fe4"
+    },
+    {
+      "view": "whole-quarter",
+      "png": "whole-quarter.png",
+      "exr": "raw/whole-quarter.exr",
+      "samples": 96,
+      "camera": [
+        0.24,
+        0.12,
+        0.46
+      ],
+      "sha256": "b23c2e827365fbe6b84dfe6c1aa7e4773e5b990b634ed32b1c30fe0c3d3cc997",
+      "name": "whole-quarter",
+      "actually_saved": true,
+      "actually_read": true,
+      "PNG_sha256": "b23c2e827365fbe6b84dfe6c1aa7e4773e5b990b634ed32b1c30fe0c3d3cc997"
+    },
+    {
+      "view": "neutral-outdoor",
+      "png": "neutral-outdoor.png",
+      "exr": "raw/neutral-outdoor.exr",
+      "samples": 96,
+      "camera": [
+        0.24,
+        0.12,
+        0.46
+      ],
+      "sha256": "ac76d58038b49f1634088f2b358f4a221379538d7bb900faaf5bb7549916905b",
+      "name": "neutral-outdoor",
+      "actually_saved": true,
+      "actually_read": true,
+      "PNG_sha256": "ac76d58038b49f1634088f2b358f4a221379538d7bb900faaf5bb7549916905b"
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-SIDE-COVER-LEFT-SKIN-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "side-cover-left-study-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "path": "../../research/side-cover-left-p01/G0-G2-plan-v1.json",
+          "kind": "identity_and_parts",
+          "revision": "side-cover-left-study-v1",
+          "sha256": "abf552558c6a601a49428918d92836810fdb76f1067527866072751c68c2f132"
+        }
+      ],
+      "reason": "First exterior child scoped separately from visible fastener and mounting interfaces",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "side-cover-left-study-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "side-cover-left-study-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "side-cover-left-study-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/side-cover-left/side-cover-left-candidate-v1.blend",
+          "kind": "editable_source",
+          "revision": "side-cover-left-study-v1",
+          "sha256": "da345efd5eae693abb25715197cf2f63fb8fa4783d869b90698c4d4fb196563f"
+        },
+        {
+          "path": "../../reviews/side-cover-left-study-v1/whole-profile.png",
+          "kind": "isolated_comparison",
+          "revision": "side-cover-left-study-v1",
+          "sha256": "1a0f648e2d1e67ac5832fd68cb7058ca5f6ac4c1088e081b12e3f8cf7d5e2fe4"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "side-cover-left-study-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/side-cover-left-study-v1/neutral-outdoor.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "side-cover-left-study-v1",
+          "sha256": "ac76d58038b49f1634088f2b358f4a221379538d7bb900faaf5bb7549916905b"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "side-cover-left-study-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/side-cover-left-study-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "side-cover-left-study-v1",
+          "sha256": "3d2b2ae681568faa8b3a839b7fbe00906c5d000a9dfb1e56fcae67402387f801"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "side-cover-left-study-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/side-cover-left-study-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "side-cover-left-study-v1",
+          "sha256": "90503e43c91adeb79ff0ef2a8227564bc12fb278d774eb8c330ef79192f2baca"
+        },
+        {
+          "path": "../../reviews/side-cover-left-study-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "side-cover-left-study-v1",
+          "sha256": "5471eb32a3e6d4c80a557ae395bac6107a515e4cc4e9d14a4ceab23ee43dda7f"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "side-cover-left-study-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "side-cover-left-study-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "side-cover-left-study-v1",
+  "export_revision": "side-cover-left-study-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/side-cover-left/README.md",
+  "candidate_review": "../../reviews/side-cover-left-study-v1/README.md",
+  "production_group": 18
+}

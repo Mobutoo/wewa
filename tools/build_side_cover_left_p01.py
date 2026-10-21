@@ -68,11 +68,9 @@ elif stage in ('gray','material','preview','final'):
  if stage=='material':
   assert json.loads((O/'gray-review.json').read_text())['read_for_exterior_study']
   m=ob.data;m.materials.clear()
-  for name,color,rough in [('Original plain red',P['original_red_linear'],.30),('Original plain lower black',P['original_black_linear'],.46)]:
-   mat=bpy.data.materials.new(name);mat.use_nodes=True;bs=mat.node_tree.nodes['Principled BSDF'];bs.inputs['Base Color'].default_value=color;bs.inputs['Roughness'].default_value=rough;m.materials.append(mat)
-  for f in m.polygons:
-   # Bounded paint field inferred from reference, no printed graphics copied.
-   x,y=f.center.x,f.center.y;f.material_index=int(y < -.030 + .35*max(0,-x))
+  mat=bpy.data.materials.new('Original smooth red-black study paint');mat.use_nodes=True;nodes=mat.node_tree.nodes;bs=nodes['Principled BSDF'];bs.inputs['Roughness'].default_value=.35
+  tex=nodes.new('ShaderNodeTexImage');tex.image=bpy.data.images.load(str(H/'textures/original-red-black-study-v1.png'));tex.image.colorspace_settings.name='sRGB';tex.interpolation='Linear';tex.image.pack();mat.node_tree.links.new(tex.outputs['Color'],bs.inputs['Base Color']);m.materials.append(mat)
+  for f in m.polygons:f.material_index=0
   assert digest(ob)==before
   bpy.ops.wm.save_as_mainfile(filepath=str(H/'side-cover-left-candidate-v1.blend'),compress=True);export('side-cover-left-candidate-v1.glb');write('material-transfer-check.json',dict(gray_geometry_digest=before,material_geometry_digest=digest(ob),identical=True,scope='No geometry or UV changes; original plain colors, no vendor pixels'))
  else:

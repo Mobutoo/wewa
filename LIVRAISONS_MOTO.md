@@ -5,8 +5,8 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **101 composants candidats enregistrés**, après
-la tige droite du clignotant et la face d'un tampon de selle. Le point Source23
+Le registre courant comporte **102 composants candidats enregistrés**, après
+la première étude extérieure du cache latéral gauche. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
 réussi ne vaut pas réception artistique ni validation sur iPhone.
@@ -25,6 +25,20 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 [Revue de l'ensemble à quatorze sources](creative/reviews/rear-sns-rest-assembly-v3/README.md)
 · [Contrôles Source21](WEWA_Developpement_Web/validation/motorcycle18-source21-integrity.json)
+
+## Exécution du plan — P01 commencé
+
+![Première étude du cache gauche, ciel neutre](creative/reviews/side-cover-left-study-v1/neutral-outdoor.png)
+
+**0 paquet terminé / 1 commencé / 29 non démarrés.** P01 dispose d’une première
+peau extérieure Blender/GLB, de trois vues grises, deux aperçus, trois rendus
+détaillés96 et quatre vues Babylon contrôlées. Les huit EXR FLOAT32 sont conservés.
+La peinture en escalier a été corrigée ; l’état rejeté reste archivé.
+
+[Ouvrir les images, sources et limites de P01](creative/reviews/side-cover-left-study-v1/README.md).
+Le bombé et le retour sont estimés ; forme, fixation basse et montage restent
+à terminer. Aucun cache complet ni réception artistique ne sont déclarés.
+Les jalons documentaires et gris ont été poussés sous `512aa5f` et `54da5f6`.
 
 ## Dernières pièces livrées avec leurs contrôles
 
