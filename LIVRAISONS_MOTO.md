@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **125 composants candidats enregistrés**, après
+Le registre courant comporte **126 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -27,6 +27,9 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 · [Contrôles Source21](WEWA_Developpement_Web/validation/motorcycle18-source21-integrity.json)
 
 ## Exécution continue des trente paquets
+
+- **P08** : [rear-plate-carrier-wire-v1 — sources, rendus et contrôles](creative/reviews/rear-plate-carrier-wire-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
+[Quatorze nouvelles sauvegardes figées : train arrière, carburateur, frein et ressorts](creative/reviews/continuation-backup-v1/continuation-ready-v2.md). Sources Blender, exports et rendus conservés ; revue indépendante et réception distinctes.
 
 ### Revue du montage arrière : cinq pièces réunies
 

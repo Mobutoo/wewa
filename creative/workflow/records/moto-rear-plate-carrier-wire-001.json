@@ -1,0 +1,229 @@
+{
+  "schema": 1,
+  "id": "MOTO-REAR-PLATE-CARRIER-WIRE-001",
+  "label": "P08 — arceau du support de plaque, étude PF231401",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../../creative/research/rear-plate-carrier-wire-v1/sources-child-v1.json",
+  "sources": [
+    "D01",
+    "D04-S59",
+    "RDC-REAR"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "whole-front",
+      "PNG_sha256": "4ddb970247b64a8db4c96fb15cae9d1ff21e8600bd09241664b41cef2ef009aa",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.0,
+        -0.005249999463558197,
+        0.35100001096725464
+      ],
+      "camera_target": [
+        0.0,
+        -0.005249999463558197,
+        0.0
+      ]
+    },
+    {
+      "name": "whole-quarter",
+      "PNG_sha256": "08cb955df1e1090e950eae7ddebc7b7cc1ba7ff624c707a847bb3bdd0eb61de9",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.11699999868869781,
+        -0.1456499993801117,
+        0.23399999737739563
+      ],
+      "camera_target": [
+        0.0,
+        -0.005249999463558197,
+        0.0
+      ]
+    },
+    {
+      "name": "neutral-outdoor",
+      "PNG_sha256": "6d8d171218886f19f49fa176b4c86f985669b3d60fc07540d2f9433408489f77",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.11699999868869781,
+        -0.1456499993801117,
+        0.23399999737739563
+      ],
+      "camera_target": [
+        0.0,
+        -0.005249999463558197,
+        0.0
+      ]
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-REAR-PLATE-CARRIER-WIRE-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "rear-plate-carrier-wire-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "path": "../../../creative/research/rear-plate-carrier-wire-v1/G0-G2-plan-v1.json",
+          "kind": "identity_and_parts",
+          "sha256": "3ceabedc97144ccb72753cfecb8e5b49bc6224fb4c175cf23c9fd736cd5978ac",
+          "revision": "rear-plate-carrier-wire-v1"
+        }
+      ],
+      "reason": "Observable child separated, estimates and variant limits documented; not full package or artistic acceptance",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "rear-plate-carrier-wire-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "rear-plate-carrier-wire-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "rear-plate-carrier-wire-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/rear-plate-carrier-wire-v1/rear-plate-carrier-wire-v1.blend",
+          "kind": "editable_source",
+          "revision": "rear-plate-carrier-wire-v1",
+          "sha256": "307528392af5ef1c031ae577a20b7631ce1f1346151ac2484656f2c32ee7e975"
+        },
+        {
+          "path": "../../reviews/rear-plate-carrier-wire-v1/whole-front.png",
+          "kind": "isolated_comparison",
+          "revision": "rear-plate-carrier-wire-v1",
+          "sha256": "4ddb970247b64a8db4c96fb15cae9d1ff21e8600bd09241664b41cef2ef009aa"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "rear-plate-carrier-wire-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rear-plate-carrier-wire-v1/neutral-outdoor.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "rear-plate-carrier-wire-v1",
+          "sha256": "6d8d171218886f19f49fa176b4c86f985669b3d60fc07540d2f9433408489f77"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "rear-plate-carrier-wire-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rear-plate-carrier-wire-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "rear-plate-carrier-wire-v1",
+          "sha256": "c9ba2ac858c1e5e250d562cb8f683f74c4ac348c5aeddfe7c8c9920afed9e27a"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "rear-plate-carrier-wire-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rear-plate-carrier-wire-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "rear-plate-carrier-wire-v1",
+          "sha256": "13c14852b71ec1e0f263145fe5ec40e79010d61e7fe880da0dbc73954f7483cd"
+        },
+        {
+          "path": "../../reviews/rear-plate-carrier-wire-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "rear-plate-carrier-wire-v1",
+          "sha256": "41bccda2378585ffb183639179302461d7a10d380806f1638544de4a44000dee"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "rear-plate-carrier-wire-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "rear-plate-carrier-wire-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "rear-plate-carrier-wire-v1",
+  "export_revision": "rear-plate-carrier-wire-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/rear-plate-carrier-wire-v1/README.md",
+  "candidate_review": "../../reviews/rear-plate-carrier-wire-v1/README.md",
+  "production_group": 18,
+  "source_plan": "../../../creative/research/rear-plate-carrier-wire-v1/G0-G2-plan-v1.json"
+}
