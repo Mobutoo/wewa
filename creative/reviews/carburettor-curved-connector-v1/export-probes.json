@@ -1,0 +1,70 @@
+{
+  "probes": [
+    {
+      "label": "Upper mouth and straight lumen open",
+      "origin_source": [
+        0.001,
+        0,
+        0
+      ],
+      "direction_source": [
+        -1,
+        0,
+        0
+      ],
+      "span_m": 0.006,
+      "clear": true
+    },
+    {
+      "label": "Lower mouth and straight lumen open",
+      "origin_source": [
+        -0.018,
+        0,
+        -0.03
+      ],
+      "direction_source": [
+        0,
+        0,
+        1
+      ],
+      "span_m": 0.01,
+      "clear": true
+    },
+    {
+      "label": "Finite lower annular end",
+      "origin_source": [
+        -0.018,
+        0.0022,
+        -0.03
+      ],
+      "direction_source": [
+        0,
+        0,
+        1
+      ],
+      "first_hit_range_m": [
+        0.0059,
+        0.0061
+      ]
+    },
+    {
+      "label": "Curved wall outer crest",
+      "origin_source": [
+        -0.014485281374,
+        0.02,
+        -0.003514718626
+      ],
+      "direction_source": [
+        0,
+        -1,
+        0
+      ],
+      "first_hit_range_m": [
+        0.0172,
+        0.0174
+      ]
+    }
+  ],
+  "output": "creative/reviews/carburettor-curved-connector-v1/openings-export-check.json",
+  "scope": "Actual exported open mouths, finite annular end and curved wall only; no complete through-ray across bend or fluid qualification"
+}
