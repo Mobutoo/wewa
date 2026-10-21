@@ -1,0 +1,72 @@
+{
+  "package": "P19",
+  "revision": "carburettor-lower-body-v2",
+  "supersedes_for_review_only": "carburettor-lower-body-v1",
+  "prior_frozen_unchanged": true,
+  "trigger": "Main actual three-native/GLB review rejects broad facets/reflection breaks and arbitrary closure disc",
+  "private_source": "/workspace/wewa-assets/references/powertrain-completion-docs/JV581204.webp",
+  "source_sha256": "72a41c5df6f9d400efabb3d11c82b02b31fd41a13d62889d53b5a20e38812a97",
+  "source_read_again": true,
+  "observed_landmarks": {
+    "joint_trace_px": [
+      [
+        1045,
+        681
+      ],
+      [
+        1025,
+        765
+      ],
+      [
+        1002,
+        851
+      ],
+      [
+        947,
+        950
+      ],
+      [
+        856,
+        1032
+      ],
+      [
+        808,
+        1068
+      ]
+    ],
+    "large_side_seat_px": [
+      729,
+      860
+    ],
+    "smaller_side_seat_px": [
+      820,
+      802
+    ]
+  },
+  "observations": [
+    "Visible shell is a sculpted continuous casting surrounding the bowl-joint region, not a stack of planar cones",
+    "Joint flange is a finite perimeter, not a large solid cap across the open interface",
+    "Hoses, inlet and fittings hide parts of shell boundary; single image does not determine hidden back contour"
+  ],
+  "geometry_revision": [
+    "Replace capped sparse straight ring loft with densely sampled periodic cubic B-spline meridian of finite-wall annular casting envelope",
+    "Use analytic smooth rounded quadrangular transverse contour rather than singular signed-power sections",
+    "Preserve distinct visible seats/attachment regions, soften observed seat rims; no hidden galleries or fabricated large closure",
+    "Open review boundaries at upper and bowl interfaces explicitly estimated, not claimed actual gallery topology"
+  ],
+  "section_continuity_requirement": "C2 meridian before local seat unions, finite wall and no transverse closing disc; inspect source-facing silhouette plus native neutral",
+  "selected_dimensions_m": {
+    "working_joint_width": 0.059,
+    "working_joint_depth": 0.051,
+    "wall": 0.0035
+  },
+  "all_dimensions_estimated": true,
+  "camera_calibrated": false,
+  "remaining": [
+    "Opposite face and hidden internal topology",
+    "Source-camera calibration and true installed registration with frozen upper/bowl",
+    "Exact mating wall and gallery geometry"
+  ],
+  "art_accepted": false,
+  "package_complete": false
+}

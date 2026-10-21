@@ -1,0 +1,8 @@
+file:///workspace/wewa/tools/powertrain_continuation_openings_v2.mjs:8
+for(const p of config.probes){const o=conv(p.origin_source),d=conv(p.direction_source),hits=ts.map(t=>hit(o,d,t)).filter(v=>v!==null&&v<=(p.span_m??10)).sort((a,b)=>a-b);if(p.clear){if(hits.length)throw Error('Blocked '+p.label+JSON.stringify(hits.slice(0,3)));}else{if(!hits.length||hits[0]<p.first_hit_range_m[0]||hits[0]>p.first_hit_range_m[1])throw Error(JSON.stringify({probe:p,hits:hits.slice(0,4)}));}rows.push({...p,origin_gltf:o,direction_gltf:d,first_hit_m:hits[0]??null});}
+                                                                                                                                                                                                                                                                                                                                                                 ^
+
+Error: {"probe":{"label":"Finite outer casting wall","origin_source":[0.022,-0.07,-0.014],"direction_source":[0,1,0],"first_hit_range_m":[0.04,0.055]},"hits":[0.03400000154972078,0.05299999907612801,0.09157006227988942,0.0960870604468456]}
+    at file:///workspace/wewa/tools/powertrain_continuation_openings_v2.mjs:8:354
+
+Node.js v24.19.0
