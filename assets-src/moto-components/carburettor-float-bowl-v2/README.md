@@ -1,0 +1,1 @@
+New original rounded bowl study from JV581204, frozen v1 unchanged. Analytic convex outer cup, concave inner cup and point poles replace broad planar closing faces. Finite rolled annular rim, visible pierced seats. Hidden belly, interior and all dimensions estimated; no source-camera calibration, gallery, gasket, installed fit or artistic acceptance.
