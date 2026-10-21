@@ -1,0 +1,7 @@
+# P26 forward upper-chaincase ear v1 — isolated attachment study
+
+New shaped ear candidate from two attributed related kit views: flared root, formed offset, rounded lower lobe and estimated pierced/pressed seat. Historical upper chaincase, three known wall-hole coordinates and all old files remain untouched. New isolated seat centre/hole is an estimate under an occluded hardware region, not a certified fourth mounting axis. Root/back section, actual currentRDC identity and installed registration remain unresolved. All dimensions and position uncertainty explicit; no vendor pixels.
+
+First radial grid folded and failed actual face/corner normal test; source/export preserved. Uniform-angle rays into the same outline, with bounded corner smoothing, remove folded cells. Final GLB31680triangles, one closed connected body, minimum area7.34e-9m², minimum normal dot0.810, validator0errors/0warnings. Gray/material actual triangles/normals identical; candidate reopened against gray digest. Gray3views and preview/runtime read before two native96 PNG/Float32 EXR. Four real softwareWebGL captures, no hardware, art reception, fastening strength or fit claim.
+
+Remaining: register ear/root to immutable upper case, resolve seat/head/axis relation to three wall passages, visible fastener; other frame hooks/welds/brackets, pivot washer/nut, slider ends and engine-guard connections; installed contacts. This does not complete P26 or the upper chaincase. Rework creates v2; exact scripts/parameters frozen.
