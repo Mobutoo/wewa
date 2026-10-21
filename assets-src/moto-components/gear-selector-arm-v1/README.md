@@ -1,0 +1,7 @@
+# P14 selector bent metal arm v1 — first child
+
+Related JZ561415 physical two-view study, not a complete selector. Two distinct bent arms and out-of-plane offsets, broadened root and estimated root clearance are actual Blender geometry. The body is a section loft, not a single generic toe lever. Dimensions, root clearance, edge radius and offsets are explicit working estimates; no spline or hidden clamping seat is claimed. Photographs remain private and no pixels are used as texture.
+
+Source/GLB:14496triangles, one connected closed mesh, no zero-area triangles, validator0errors/0warnings. The smallest CSG triangle area is4.64e-13m², retained as a numerical diagnostic, not a visual fidelity score. Gray3views read before original proposed black PBR; preview and Babylon read before native96 two-view PNG/Float32 EXR. Actual gray/material triangle/normal signatures equal and candidate source reopened against gray mesh digest. Camera frame and clipping checked on actual source vertices for every view. Four real softwareWebGL captures, no hardware/FPS or art acceptance.
+
+Remaining children: split clamping hub; toe rubber; broad ribbed heel pad; clamp hardware; installed clocking, travel and clearance. Do not call this package complete. Root clearance is a placeholder estimate for the visible aperture, not certified fit. Scripts/parameters frozen with exact hashes; create a new revision for rework.
