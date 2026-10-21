@@ -35,3 +35,9 @@ L’[admission documentaire](../research/motorcycle-source-dependencies-publicat
 La fabrication continue sur la bague de pivot, le corps et les extrémités du silencieux, le réservoir puis la selle et les unités restantes du plan18. Ces travaux en cours ne sont pas présentés comme des pièces déjà livrées dans cette revue. Le conducteur attend la réception de la moto ; le jeu public et sa qualification physique iPhone restent inchangés.
 
 Les [petites preuves documentaires héritées](../research/motorcycle-source12-inherited-doc-readback-v1/README.md) sont ajoutées sans aspirer les anciens essais 3D. Une version antérieure de plan de support demeure introuvable ; son ancienne empreinte est conservée comme limite historique, sans attribuer ses octets au plan disponible. La reprise depuis le maître gris14 n’en dépend pas.
+
+## Vérification après publication
+
+Source immuable : [`a233dc61`](https://github.com/Mobutoo/wewa/commit/a233dc61777fc07a65dd78e24935c4b4488acda5), arbre `7547009e0503f11e90a2ac95b7a9b0452b9d9b39`. Le contrôle de ce commit lit2535JSON,224manifestes,6324empreintes de fichiers,40empreintes PNG de checkpoints et3735liens ; aucune erreur. Les74choix du catalogue restent distincts des54ID enregistrés.
+
+[GitHub Actions](https://github.com/Mobutoo/wewa/actions/runs/39562628013), dont l’étape de preuves moto, a réussi sur ce même commit. Le PRD complet Ewutelo est sauvegardé puis relu en révision37, avec égalité de tous ses champs et45exigences conservées. L’état complet précédent reste accessible dans son archive canonique Git ; son nouveau lien historique évite une duplication de charge utile. Ce pied de revue et les [métadonnées de vérification](../../WEWA_Developpement_Web/validation/motorcycle18-source12-integrity.json) sont postérieurs au commit source.
