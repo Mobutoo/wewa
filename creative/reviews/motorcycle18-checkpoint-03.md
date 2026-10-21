@@ -54,3 +54,5 @@ Les dimensions locales non publiées, la variante exacte de plusieurs pièces et
 Le [contrôle indépendant du carter droit](../research/engine-rh-independent-visual-audit.README.md) relève des interruptions locales du chant arrière et une finition irrégulière des oreilles. Le bouchon présente aussi des reflets de bord à examiner. Les sources v1 restent préservées ; les corrections seront des révisions séparées. Les contrôles de fichiers et de mouvements ne valident pas leur réalisme.
 
 Le jeu public reste à sa version antérieure. Ce point présente des composants réellement fabriqués et leurs limites, pas un nouveau rendu du jeu.
+
+Source publiée : `dac7089eebab7eb7e9d5c318d8b9f3292f467fed`. [GitHub Actions terminé avec succès](https://github.com/Mobutoo/wewa/actions/runs/39522378677). Le suivi Ewutelo/Directus a été relu à la révision25, avec les45exigences conservées. Ces contrôles ne constituent pas une réception visuelle.
