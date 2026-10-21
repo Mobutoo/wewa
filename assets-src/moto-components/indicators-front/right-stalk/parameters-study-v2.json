@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "revision": "indicator-front-right-stalk-study-v2",
+  "units": "m, authored bounded proposal, not manufacturer part dimensions",
+  "frame": "Isolated+X from mounting-side cut toward lamp; no installed or pilot handedness transform; PF401002 source label only.",
+  "root_flare": {
+    "length_m": 0.003,
+    "start_radius_m": 0.0098,
+    "end_radius_m": 0.0126,
+    "quarter_segments": 24
+  },
+  "main_body": {
+    "start_m": 0.003,
+    "end_m": 0.031,
+    "radius_start_m": 0.0126,
+    "radius_end_m": 0.0124,
+    "samples": 32
+  },
+  "shoulder": {
+    "start_m": 0.031,
+    "end_m": 0.0395,
+    "end_radius_m": 0.0092,
+    "samples": 64
+  },
+  "neck": {
+    "start_m": 0.0395,
+    "end_m": 0.056,
+    "radius_m": 0.0092,
+    "axial_sample_m": 0.0001
+  },
+  "grooves": [
+    {
+      "center_m": 0.042,
+      "half_width_m": 0.0013,
+      "flat_half_width_m": 0.00038,
+      "depth_m": 0.00095
+    },
+    {
+      "center_m": 0.0466,
+      "half_width_m": 0.0013,
+      "flat_half_width_m": 0.00038,
+      "depth_m": 0.00105
+    },
+    {
+      "center_m": 0.0512,
+      "half_width_m": 0.0013,
+      "flat_half_width_m": 0.00038,
+      "depth_m": 0.00095
+    }
+  ],
+  "head_stub": {
+    "start_m": 0.056,
+    "end_m": 0.0615,
+    "end_radius_m": 0.0102,
+    "samples": 48
+  },
+  "radial_segments": 192,
+  "derivative_epsilon_m": 5e-07,
+  "authored_bounds": {
+    "overall_length_m": [
+      0.05,
+      0.077
+    ],
+    "maximum_outer_diameter_m": [
+      0.021,
+      0.031
+    ],
+    "meaning": "Working design envelope for uncalibrated related photos; not confidence interval, OEM tolerance or measured dimension"
+  },
+  "covered_end_faces": "Excluded: external skin has two intentional cut/interface boundaries, no internal peg/bore or exact mount face inferred",
+  "material_phase": "Neutralgray study only, compound polymer/hardness unconfirmed",
+  "independent_parameters": "PF401002 photo read independently. Same analytic C2 loft technique as prior LH, no reflected/copied mesh, metric equality or certified side symmetry."
+}
