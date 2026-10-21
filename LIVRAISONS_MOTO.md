@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **124 composants candidats enregistrés**, après
+Le registre courant comporte **125 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P10** : [rear-indicator-left-stalk-v1 — sources, rendus et contrôles](creative/reviews/rear-indicator-left-stalk-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **P11** : [plaque fictive WEWA — revue technique G0 à G4](creative/reviews/license-plate-wewa-v1/DESIGN_REVIEW_V1.md). Dessin original contrôlé ; montage G5 et réception utilisateur ouverts.
 - **P02** : [différence de variante du porte-bagages](creative/research/rear-rack-variant-reconciliation-v1/G1-contradiction.json), appuyée par les [nouvelles références attribuées](creative/research/exterior-completion-next-v1/source-register.json).
 - **P13** : [seat-damper-pedestal-v2 — sources, rendus et contrôles](creative/reviews/seat-damper-pedestal-v2/README.md). Enfant candidat ; interfaces/paquet ouverts.

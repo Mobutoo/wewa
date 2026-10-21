@@ -1,0 +1,229 @@
+{
+  "schema": 1,
+  "id": "MOTO-REAR-INDICATOR-LEFT-STALK-001",
+  "label": "P10 — tige caoutchouc arrière gauche, étude PF401003",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../../creative/research/rear-indicator-left-stalk-v1/sources-child-v1.json",
+  "sources": [
+    "D01",
+    "LOCAL-0",
+    "LOCAL-1"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "whole-front",
+      "PNG_sha256": "14559f3028e91a11d5fcd1910b5f83bc51e14aeca9ffa76f3ef992901fb2a171",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.0,
+        0.16499999165534973,
+        0.03849999979138374
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.027499999850988388
+      ]
+    },
+    {
+      "name": "whole-quarter",
+      "PNG_sha256": "edcdefd113257e5dd2bd571e23061ce0432a24ffa169fca974d7aafe6479aa5f",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.0989999994635582,
+        -0.10999999940395355,
+        0.08249999582767487
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.027499999850988388
+      ]
+    },
+    {
+      "name": "neutral-outdoor",
+      "PNG_sha256": "68210ab742927d712e07f507e4b08650eac0646df5d0f10fdaf5ce239491546f",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.0989999994635582,
+        -0.10999999940395355,
+        0.08249999582767487
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.027499999850988388
+      ]
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-REAR-INDICATOR-LEFT-STALK-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "rear-indicator-left-stalk-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "path": "../../../creative/research/rear-indicator-left-stalk-v1/G0-G2-plan-v1.json",
+          "kind": "identity_and_parts",
+          "sha256": "960ecd000ef78efd7ce7ed2cadb5de3b4fee4affcf7dadfc184911d821b4ee80",
+          "revision": "rear-indicator-left-stalk-v1"
+        }
+      ],
+      "reason": "Observable child separated, estimates and variant limits documented; not full package or artistic acceptance",
+      "reviewed_at": "2026-10-21"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "rear-indicator-left-stalk-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "rear-indicator-left-stalk-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "rear-indicator-left-stalk-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/rear-indicator-left-stalk-v1/rear-indicator-left-stalk-v1.blend",
+          "kind": "editable_source",
+          "revision": "rear-indicator-left-stalk-v1",
+          "sha256": "ad1e151795681bb5509acdb76602a31d4c8f8e7bd71a33bf9b282278fe590a82"
+        },
+        {
+          "path": "../../reviews/rear-indicator-left-stalk-v1/whole-front.png",
+          "kind": "isolated_comparison",
+          "revision": "rear-indicator-left-stalk-v1",
+          "sha256": "14559f3028e91a11d5fcd1910b5f83bc51e14aeca9ffa76f3ef992901fb2a171"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "rear-indicator-left-stalk-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rear-indicator-left-stalk-v1/neutral-outdoor.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "rear-indicator-left-stalk-v1",
+          "sha256": "68210ab742927d712e07f507e4b08650eac0646df5d0f10fdaf5ce239491546f"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "rear-indicator-left-stalk-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rear-indicator-left-stalk-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "rear-indicator-left-stalk-v1",
+          "sha256": "abf4c7a03111b3056f4a48e71a9546f3b89b02f4f0f33f24b52cae5e08677141"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "rear-indicator-left-stalk-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rear-indicator-left-stalk-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "rear-indicator-left-stalk-v1",
+          "sha256": "dcb07a5281cfa402c3ebc91c14b8f27485e089a2af7d6267d44404610d90e1f9"
+        },
+        {
+          "path": "../../reviews/rear-indicator-left-stalk-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "rear-indicator-left-stalk-v1",
+          "sha256": "add3036e88241597532ae8ff1c138088e1fa96f96e0add0d67f39ee303c7fba7"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "rear-indicator-left-stalk-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "rear-indicator-left-stalk-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "rear-indicator-left-stalk-v1",
+  "export_revision": "rear-indicator-left-stalk-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/rear-indicator-left-stalk-v1/README.md",
+  "candidate_review": "../../reviews/rear-indicator-left-stalk-v1/README.md",
+  "production_group": 18,
+  "source_plan": "../../../creative/research/rear-indicator-left-stalk-v1/G0-G2-plan-v1.json"
+}
