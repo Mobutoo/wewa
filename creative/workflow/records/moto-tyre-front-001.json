@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-TYRE-FRONT-001",
-  "label": "Pneu avant — Boxer125HD RDC",
+  "label": "Pneu avant v3 — lèvres corrigées et caoutchouc original fraîchement cuit",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,13 +12,13 @@
     "material"
   ],
   "identity": {
-    "variant": "Boxer125HD RDC, série rouge visière longue; fournisseur et millésime pneu inconnus",
+    "variant": "Nominal2.75-17 and RDCofficial groove families; supplier/mould/section/outerdimensions/pitch unmeasured estimates",
     "variant_confirmed": false,
-    "usage": "Premier plan, moto seule avant conducteur",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
+      0.15,
       0.35,
-      0.8,
-      2
+      0.65
     ]
   },
   "source_register": "../sources.json",
@@ -115,22 +115,548 @@
   ],
   "views": [
     {
-      "manifest": "../../library/motorcycle-reference-views.json",
-      "image": "rotation-02.png",
-      "role": "front overall; tread detail insufficient",
-      "calibrated": false
+      "source_sha256": "f8d22eb2419fe7dc7a6b34be11d3e5befb123db1475f7ae89acebc01f55f3a50",
+      "export_sha256": "7e75d395ff0ac68b762fc1dd719d0da6ea6ca6f4acc79bd0149461127db5fe34",
+      "render_script_sha256": "f8b8479e1a9a51cdda756a9719a818c239565dd373e776a9838eefd8d656d728",
+      "samples": 96,
+      "resolution_px": [
+        1400,
+        1100
+      ],
+      "exposure_EV": -0.5,
+      "gamma": 1.0,
+      "view_transform": "AgX",
+      "look": "AgX - Medium High Contrast",
+      "denoiser": "OPENIMAGEDENOISE",
+      "world_strength": 0.25,
+      "world_color_linear": [
+        0.18000000715255737,
+        0.20000000298023224,
+        0.23000000417232513,
+        1.0
+      ],
+      "lights": [
+        {
+          "name": "KEY",
+          "location_m": [
+            0.699999988079071,
+            -0.699999988079071,
+            1.0
+          ],
+          "rotation_rad": [
+            0.948614239692688,
+            -5.555041227012225e-08,
+            0.7853981852531433
+          ],
+          "shape": "DISK",
+          "power_W": 30.0,
+          "size_m": 0.6000000238418579
+        },
+        {
+          "name": "FILL",
+          "location_m": [
+            -0.5,
+            -0.30000001192092896,
+            0.6000000238418579
+          ],
+          "rotation_rad": [
+            1.0821540355682373,
+            3.8684873970851186e-08,
+            -1.03037691116333
+          ],
+          "shape": "DISK",
+          "power_W": 12.0,
+          "size_m": 0.6000000238418579
+        },
+        {
+          "name": "EDGE",
+          "location_m": [
+            0.25,
+            0.699999988079071,
+            0.6499999761581421
+          ],
+          "rotation_rad": [
+            1.119767665863037,
+            4.597758174185174e-09,
+            2.7985687255859375
+          ],
+          "shape": "DISK",
+          "power_W": 20.0,
+          "size_m": 0.5
+        }
+      ],
+      "name": "quarter",
+      "camera_eye_m": [
+        0.7,
+        -0.9,
+        0.65
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.29
+      ],
+      "ortho_scale_m": 0.77,
+      "allow_intentional_crop": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "FRONT_TYRE_MATERIAL_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.9500343920680505,
+        "farthest_actual_vertex_depth_m": 1.4412830883625753,
+        "projected_uv_min": [
+          0.24591705954639115,
+          0.026400890307351654
+        ],
+        "projected_uv_max": [
+          0.754083119050179,
+          0.9735988803963385
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Front tyre existing-lip strip diagnostic v3",
+            "vertices": 554960,
+            "depth_m": [
+              0.9500343920680505,
+              1.4412830883625753
+            ],
+            "projected_uv_min": [
+              0.24591705954639115,
+              0.026400890307351654
+            ],
+            "projected_uv_max": [
+              0.754083119050179,
+              0.9735988803963385
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "config_signature": "5580e600b74af1ffbf02e64641297f219003043f251bf68456daa81c463359f4",
+      "PNG_sha256": "f0fdbf82322be720bfe93aadd19b6ae4f8662f206211ba67f4b0d52b41850966",
+      "PNG_bytes": 1514902,
+      "EXR_sha256": "7545799ba15bccc39324a909803f4f116a52ac03b464f4ac606f57a0da19baf8",
+      "EXR_bytes": 10209409,
+      "EXR_scope": "Linear32bit render result, PNG has stated AgX display transform",
+      "source_saved": false
     },
     {
-      "manifest": "../../library/motorcycle-reference-views.json",
-      "image": "rotation-00.png",
-      "role": "right profile; sidewall not legible",
-      "calibrated": false
+      "source_sha256": "f8d22eb2419fe7dc7a6b34be11d3e5befb123db1475f7ae89acebc01f55f3a50",
+      "export_sha256": "7e75d395ff0ac68b762fc1dd719d0da6ea6ca6f4acc79bd0149461127db5fe34",
+      "render_script_sha256": "f8b8479e1a9a51cdda756a9719a818c239565dd373e776a9838eefd8d656d728",
+      "samples": 96,
+      "resolution_px": [
+        1400,
+        1100
+      ],
+      "exposure_EV": -0.5,
+      "gamma": 1.0,
+      "view_transform": "AgX",
+      "look": "AgX - Medium High Contrast",
+      "denoiser": "OPENIMAGEDENOISE",
+      "world_strength": 0.25,
+      "world_color_linear": [
+        0.18000000715255737,
+        0.20000000298023224,
+        0.23000000417232513,
+        1.0
+      ],
+      "lights": [
+        {
+          "name": "KEY",
+          "location_m": [
+            0.699999988079071,
+            -0.699999988079071,
+            1.0
+          ],
+          "rotation_rad": [
+            0.948614239692688,
+            -5.555041227012225e-08,
+            0.7853981852531433
+          ],
+          "shape": "DISK",
+          "power_W": 30.0,
+          "size_m": 0.6000000238418579
+        },
+        {
+          "name": "FILL",
+          "location_m": [
+            -0.5,
+            -0.30000001192092896,
+            0.6000000238418579
+          ],
+          "rotation_rad": [
+            1.0821540355682373,
+            3.8684873970851186e-08,
+            -1.03037691116333
+          ],
+          "shape": "DISK",
+          "power_W": 12.0,
+          "size_m": 0.6000000238418579
+        },
+        {
+          "name": "EDGE",
+          "location_m": [
+            0.25,
+            0.699999988079071,
+            0.6499999761581421
+          ],
+          "rotation_rad": [
+            1.119767665863037,
+            4.597758174185174e-09,
+            2.7985687255859375
+          ],
+          "shape": "DISK",
+          "power_W": 20.0,
+          "size_m": 0.5
+        }
+      ],
+      "name": "reverse-quarter",
+      "camera_eye_m": [
+        -0.7,
+        0.9,
+        0.65
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0.29
+      ],
+      "ortho_scale_m": 0.77,
+      "allow_intentional_crop": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "FRONT_TYRE_MATERIAL_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.9500344893799297,
+        "farthest_actual_vertex_depth_m": 1.4412830691652385,
+        "projected_uv_min": [
+          0.2459171998304442,
+          0.02640279376000343
+        ],
+        "projected_uv_max": [
+          0.7540832984160976,
+          0.9735966239658124
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Front tyre existing-lip strip diagnostic v3",
+            "vertices": 554960,
+            "depth_m": [
+              0.9500344893799297,
+              1.4412830691652385
+            ],
+            "projected_uv_min": [
+              0.2459171998304442,
+              0.02640279376000343
+            ],
+            "projected_uv_max": [
+              0.7540832984160976,
+              0.9735966239658124
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "config_signature": "4c5f8a24afed7fd5d1a44685987d2d2dae9de9433b0a54286ba6e46056f8dfc4",
+      "PNG_sha256": "130ddc2733055c7c40e44c3a1fd299310519363c9e8ae784da3f95e08093c433",
+      "PNG_bytes": 1521989,
+      "EXR_sha256": "52e3139a9893a85611684d531d2e7272b2517a05183819a65aab64a7f4d1111a",
+      "EXR_bytes": 10172092,
+      "EXR_scope": "Linear32bit render result, PNG has stated AgX display transform",
+      "source_saved": false
     },
     {
-      "manifest": "../../library/motorcycle-reference-views.json",
-      "image": "rotation-04.png",
-      "role": "left profile",
-      "calibrated": false
+      "source_sha256": "f8d22eb2419fe7dc7a6b34be11d3e5befb123db1475f7ae89acebc01f55f3a50",
+      "export_sha256": "7e75d395ff0ac68b762fc1dd719d0da6ea6ca6f4acc79bd0149461127db5fe34",
+      "render_script_sha256": "f8b8479e1a9a51cdda756a9719a818c239565dd373e776a9838eefd8d656d728",
+      "samples": 96,
+      "resolution_px": [
+        1400,
+        1100
+      ],
+      "exposure_EV": -0.5,
+      "gamma": 1.0,
+      "view_transform": "AgX",
+      "look": "AgX - Medium High Contrast",
+      "denoiser": "OPENIMAGEDENOISE",
+      "world_strength": 0.25,
+      "world_color_linear": [
+        0.18000000715255737,
+        0.20000000298023224,
+        0.23000000417232513,
+        1.0
+      ],
+      "lights": [
+        {
+          "name": "KEY",
+          "location_m": [
+            0.699999988079071,
+            -0.699999988079071,
+            1.0
+          ],
+          "rotation_rad": [
+            0.948614239692688,
+            -5.555041227012225e-08,
+            0.7853981852531433
+          ],
+          "shape": "DISK",
+          "power_W": 30.0,
+          "size_m": 0.6000000238418579
+        },
+        {
+          "name": "FILL",
+          "location_m": [
+            -0.5,
+            -0.30000001192092896,
+            0.6000000238418579
+          ],
+          "rotation_rad": [
+            1.0821540355682373,
+            3.8684873970851186e-08,
+            -1.03037691116333
+          ],
+          "shape": "DISK",
+          "power_W": 12.0,
+          "size_m": 0.6000000238418579
+        },
+        {
+          "name": "EDGE",
+          "location_m": [
+            0.25,
+            0.699999988079071,
+            0.6499999761581421
+          ],
+          "rotation_rad": [
+            1.119767665863037,
+            4.597758174185174e-09,
+            2.7985687255859375
+          ],
+          "shape": "DISK",
+          "power_W": 20.0,
+          "size_m": 0.5
+        }
+      ],
+      "name": "tread-detail",
+      "camera_eye_m": [
+        0.075,
+        -0.17,
+        0.69
+      ],
+      "camera_target_m": [
+        0.012,
+        -0.1,
+        0.562
+      ],
+      "ortho_scale_m": 0.05,
+      "allow_intentional_crop": true,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "FRONT_TYRE_MATERIAL_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.15507898167032463,
+        "farthest_actual_vertex_depth_m": 0.6985385830176623,
+        "projected_uv_min": [
+          -2.5364465640184912,
+          -8.365628140326427
+        ],
+        "projected_uv_max": [
+          5.85552371603226,
+          4.536516435678038
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Front tyre existing-lip strip diagnostic v3",
+            "vertices": 554960,
+            "depth_m": [
+              0.15507898167032463,
+              0.6985385830176623
+            ],
+            "projected_uv_min": [
+              -2.5364465640184912,
+              -8.365628140326427
+            ],
+            "projected_uv_max": [
+              5.85552371603226,
+              4.536516435678038
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "config_signature": "ab127ba590873cb4e8f6c5e49433c364aee1970a896e29a6f9f2ad4d6dee57c3",
+      "PNG_sha256": "7f45e08b92291d4e1ee8f46ff47a1e9972e0a8340a95cb88a5211afee01563e2",
+      "PNG_bytes": 1700801,
+      "EXR_sha256": "a78af6ac11adb3a342bf1ef97bc85c591f63015e0c3bfad20b5d4f5bee0bb8c1",
+      "EXR_bytes": 17692636,
+      "EXR_scope": "Linear32bit render result, PNG has stated AgX display transform",
+      "source_saved": false
+    },
+    {
+      "source_sha256": "f8d22eb2419fe7dc7a6b34be11d3e5befb123db1475f7ae89acebc01f55f3a50",
+      "export_sha256": "7e75d395ff0ac68b762fc1dd719d0da6ea6ca6f4acc79bd0149461127db5fe34",
+      "render_script_sha256": "f8b8479e1a9a51cdda756a9719a818c239565dd373e776a9838eefd8d656d728",
+      "samples": 96,
+      "resolution_px": [
+        1400,
+        1100
+      ],
+      "exposure_EV": -0.5,
+      "gamma": 1.0,
+      "view_transform": "AgX",
+      "look": "AgX - Medium High Contrast",
+      "denoiser": "OPENIMAGEDENOISE",
+      "world_strength": 0.25,
+      "world_color_linear": [
+        0.18000000715255737,
+        0.20000000298023224,
+        0.23000000417232513,
+        1.0
+      ],
+      "lights": [
+        {
+          "name": "KEY",
+          "location_m": [
+            0.699999988079071,
+            -0.699999988079071,
+            1.0
+          ],
+          "rotation_rad": [
+            0.948614239692688,
+            -5.555041227012225e-08,
+            0.7853981852531433
+          ],
+          "shape": "DISK",
+          "power_W": 30.0,
+          "size_m": 0.6000000238418579
+        },
+        {
+          "name": "FILL",
+          "location_m": [
+            -0.5,
+            -0.30000001192092896,
+            0.6000000238418579
+          ],
+          "rotation_rad": [
+            1.0821540355682373,
+            3.8684873970851186e-08,
+            -1.03037691116333
+          ],
+          "shape": "DISK",
+          "power_W": 12.0,
+          "size_m": 0.6000000238418579
+        },
+        {
+          "name": "EDGE",
+          "location_m": [
+            0.25,
+            0.699999988079071,
+            0.6499999761581421
+          ],
+          "rotation_rad": [
+            1.119767665863037,
+            4.597758174185174e-09,
+            2.7985687255859375
+          ],
+          "shape": "DISK",
+          "power_W": 20.0,
+          "size_m": 0.5
+        }
+      ],
+      "name": "sidewall-detail",
+      "camera_eye_m": [
+        0.15,
+        -0.17,
+        0.52
+      ],
+      "camera_target_m": [
+        0.035,
+        -0.12,
+        0.49
+      ],
+      "ortho_scale_m": 0.04,
+      "allow_intentional_crop": true,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "FRONT_TYRE_MATERIAL_CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          5.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.09975117956655488,
+        "farthest_actual_vertex_depth_m": 0.4066937268458135,
+        "projected_uv_min": [
+          -3.885046300682034,
+          -14.173350740327637
+        ],
+        "projected_uv_max": [
+          9.689698738249668,
+          3.979044107725398
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Front tyre existing-lip strip diagnostic v3",
+            "vertices": 554960,
+            "depth_m": [
+              0.09975117956655488,
+              0.4066937268458135
+            ],
+            "projected_uv_min": [
+              -3.885046300682034,
+              -14.173350740327637
+            ],
+            "projected_uv_max": [
+              9.689698738249668,
+              3.979044107725398
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "config_signature": "8c50e22bf912a5376e52d4c73eb910297c4526287d315c8d5fcbe306c39f8e0b",
+      "PNG_sha256": "d5cb49847367b038017b89cd7584de1eeae5fac9c2537f122b70172004b7801b",
+      "PNG_bytes": 1520297,
+      "EXR_sha256": "342002915429d7d8e369ea9da60245f287486550de25bf4377f362d2dcbbca9d",
+      "EXR_bytes": 16880360,
+      "EXR_scope": "Linear32bit render result, PNG has stated AgX display transform",
+      "source_saved": false
     }
   ],
   "criteria": [
@@ -208,7 +734,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "front-tyre-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "Nominal candidate and review distances defined; exact tyre supplier and agreed visual tolerances unresolved.",
@@ -216,96 +742,103 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": null,
+      "revision": "front-tyre-v3",
       "reviewer": null,
       "evidence": [],
-      "reason": "Critical tyre identity and geometry information missing; comparative documents are not exact fitment proof",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
       "status": "blocked",
-      "revision": null,
+      "revision": "front-tyre-v3",
       "reviewer": null,
       "evidence": [],
-      "reason": "No calibration or annotated comparison protocol executed",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
       "status": "rework",
-      "revision": "front-tyre-v1",
+      "revision": "front-tyre-v3",
       "reviewer": null,
       "evidence": [
         {
+          "path": "../../../assets-src/moto-components/front-tyre/material-v3/front-tyre-v3.blend",
           "kind": "editable_source",
-          "path": "../../../assets-src/moto-components/front-tyre/front-tyre-v1.blend",
-          "sha256": "33bf2d29063cf267da47323cf7d2a126f803166caf5e2ea410dc56e89072326c",
-          "revision": "front-tyre-v1"
+          "revision": "front-tyre-v3",
+          "sha256": "f8d22eb2419fe7dc7a6b34be11d3e5befb123db1475f7ae89acebc01f55f3a50"
         },
         {
+          "path": "../../reviews/front-tyre-v3/quarter.png",
           "kind": "isolated_comparison",
-          "path": "../../reviews/front-tyre-v1/tread-close.png",
-          "sha256": "2fa347cf7b4c7c8222c99ff21a2827da3a976d0bea496e5a3791ef1f3747b68a",
-          "revision": "front-tyre-v1"
+          "revision": "front-tyre-v3",
+          "sha256": "f0fdbf82322be720bfe93aadd19b6ae4f8662f206211ba67f4b0d52b41850966"
         }
       ],
-      "reason": "Isolated editable candidate built, initial inward orientation corrected; shape and estimated tread not accepted against calibrated views.",
+      "reason": "Root independently opened four actual final96 native images, two actual Babylon views, four current gray/reflection G3 strip images and earlier rejected fan/grid diagnostics. Same physical front tyre identity, not a new component. Continuous repair footprint follows existing crown incisions; old junction steps/pinches absent in these current views. 148540 old vertices protected exactly and560 changed within the old overlap. Nominal17inch bead seat is documented; OD580mm, width71mm, section, mould and tread pattern remain estimated. Protected radius/width/profile contract replaces an explicitly failed sixAABB equality: new crest samples shift axial Z extremes by about1.3um, disclosed without clamping. Old20um sampled-error criterion and refused local narrow/grid attempts remain archived. A small terminal highlight and mould fidelity remain unreceived.",
       "reviewed_at": null
     },
     "G4": {
       "status": "rework",
-      "revision": "front-tyre-v1",
+      "revision": "front-tyre-v3",
       "reviewer": null,
       "evidence": [
         {
+          "path": "../../reviews/front-tyre-v3/sidewall-detail.png",
           "kind": "surface_or_sound_comparison",
-          "path": "../../reviews/front-tyre-v1/cinematic-quarter.png",
-          "sha256": "228e5043fd83495ae78096ede04a9df4ded6f8affc3920fce4673fb38ca4bdef",
-          "revision": "front-tyre-v1"
+          "revision": "front-tyre-v3",
+          "sha256": "d5cb49847367b038017b89cd7584de1eeae5fac9c2537f122b70172004b7801b"
         }
       ],
-      "reason": "Original rubber rendered under neutral/cinematic lights; exposure correction and microdetail review required.",
+      "reason": "Fresh original normal/roughness baking from corrected G3 and original procedural v1 rubber, not reused v2 atlas. Packed relative normal16384x2048 and ORM4096x512 match actual embedded PNGbytes. Expanded oriented POSITION/N/UV corners and world transforms remain exact G3-to-PBR; tangent generation and vertex splits do not imply identical raw indices/layout. Four96 actually read; grain is softer/coarser with atlas filtering and flank stretch, not perfect continuous shader or native/browser photographic parity. No third-party photo texture or measured OEM finish.",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "front-tyre-v3",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/front-tyre-v3/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "front-tyre-v3",
+          "sha256": "7935576d436c387ac624dc81ff3f940d76aa525edac67630e4389648693332f1"
+        }
+      ],
+      "reason": "Isolated tyre source datum, no new front wheel installation transform. 17inch nominal seat alone does not certify rim fit, pressure, loaded section, rolling deformation, mould, real tread pitch or mechanical tolerances. Existing candidates and failed diagnostics remain separately attributable; front axle/spacers/brake and review-only coherent placement follow before full assembly reception.",
       "reviewed_at": null
     },
     "G6": {
       "status": "rework",
-      "revision": "front-tyre-v1",
+      "revision": "front-tyre-v3",
       "reviewer": null,
       "evidence": [
         {
-          "kind": "real_runtime_comparison",
-          "path": "../../reviews/front-tyre-v1/engine-quarter.png",
-          "sha256": "6677dd455617b5581a2ae53e6ab0dd5128976a1ab59164992e71bdc1f5a58631",
-          "revision": "front-tyre-v1"
+          "path": "../../reviews/front-tyre-v3/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "front-tyre-v3",
+          "sha256": "af07cd60b9e212d2e96649ff497d38ed8b9058519d5c1230a5cf79076a21eef9"
         },
         {
-          "kind": "technical_export_check",
-          "path": "../../reviews/front-tyre-v1/geometry-check.json",
-          "sha256": "9c7de6f883cd98c64cf8411e6a4e488e814bc88c54c9d97a072933ec84188a0c",
-          "revision": "front-tyre-v1"
+          "path": "../../reviews/front-tyre-v3/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "front-tyre-v3",
+          "sha256": "8b0e4dea3b72e488b7e3e27b9ab674f7431ad3158497cfcfd196fc52ce8cb86c"
         }
       ],
-      "reason": "Actual glTF inspected in Babylon.js; procedural grain bake/parity pending, not a mobile delivery asset.",
+      "reason": "Actual1109920triangles, strict0glTFerrors, one normalmapped primitive/zero collapsed UV. Actual one mesh/four nonblank Babylon canvases and zero page/HTTPerrors. Root opened two actual runtime views: dark inspection material and finest grain filtering remain visible limitations. Detailed master only, no game LOD/texture budget/Safari/physical iPhone performance or artistic reception.",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "front-tyre-v3",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "front-tyre-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -313,11 +846,21 @@
     }
   },
   "active_detailed_fabrication": false,
-  "source_revision": "front-tyre-v1",
-  "export_revision": "front-tyre-inspection-v1",
-  "next_action": "Review isolated tyre; refine reference-camera alignment and tread/sidewall detail before receiving this component or assembling the motorcycle.",
+  "source_revision": "front-tyre-v3",
+  "export_revision": "front-tyre-v3-inspection",
+  "next_action": "Resolve documentary dimensions, remaining visible/hidden geometry and installed interfaces; compare native/browser material before art reception. No automatic mounting or mobile qualification.",
   "art_accepted": false,
   "generated_candidate_source": "../../../assets-src/moto-components/front-tyre/README.md",
-  "candidate_review": "../../reviews/front-tyre-v1/README.md",
-  "graphic_style": "../../GRAPHIC_STYLE.md"
+  "candidate_review": "../../reviews/front-tyre-v3/README.md",
+  "graphic_style": "../../GRAPHIC_STYLE.md",
+  "previous_revisions": [
+    {
+      "revision": "front-tyre-v1",
+      "source": null,
+      "review": "../../reviews/front-tyre-v1/README.md",
+      "art_accepted": false
+    }
+  ],
+  "candidate_source": "../../../assets-src/moto-components/front-tyre/material-v3/README.md",
+  "production_group": 14
 }

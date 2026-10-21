@@ -1,0 +1,22 @@
+{
+  "component_id": "MOTO-TYRE-FRONT-001",
+  "revision": "front-tyre-v3-local-strip-diagnostic-v3",
+  "baseline_source": "assets-src/moto-components/front-tyre/front-tyre-v1.blend",
+  "baseline_sha256": "33bf2d29063cf267da47323cf7d2a126f803166caf5e2ea410dc56e89072326c",
+  "angular_subdivisions_per_old_cell": 16,
+  "section_subdivisions_per_old_cell": 4,
+  "patch_angular_old_cells_either_side": 1,
+  "patch_section_boundary_rule": "Actual outer crown until original transverse mask is zero, with one additional shoulder source rail for normal transition; source profile/old coordinates determine bounds.",
+  "full_weight_x_interval_m": [
+    0.0047,
+    0.0073
+  ],
+  "full_weight_crosscut_arc_distance_m": 0.0013,
+  "base_reference": "Actual source triangle with transverse cut removed only; old crown and longitudinal interpolation retained.",
+  "new_target": "Reference lane-only surface minus p4(transverse depth, interpolated old lane depth) minus lane depth; no blend of old coarse crosscut back through its active lip.",
+  "protected": "Protected old coordinates/all old X, actual width and exact radial envelope; sampled AABBZ reported separately, not bit-identical.",
+  "normal_rule": "Actual fresh mesh corner normals in active groove, taper to old inputs only beyond angular lip and zero transverse shoulder mask.",
+  "visual_requirement": "No pinched bulges or stepped lips in native same-camera gray before reflection/material/96.",
+  "art_accepted": false,
+  "radial_contract_addendum": "creative/research/front-tyre-junctions-v3/radial-envelope-contract-addendum-v1.json"
+}

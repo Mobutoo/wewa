@@ -1,0 +1,89 @@
+{
+  "prepared_at": "2026-10-21T12:48:07.408232+00:00",
+  "component_id": "MOTO-TYRE-FRONT-001",
+  "revision": "front-tyre-v3",
+  "phase": "G0-G2 bounded repair preparation, before new surface fabrication",
+  "inputs": [
+    {
+      "path": "assets-src/moto-components/front-tyre/front-tyre-v1.blend",
+      "sha256": "33bf2d29063cf267da47323cf7d2a126f803166caf5e2ea410dc56e89072326c",
+      "bytes": 42133854
+    },
+    {
+      "path": "assets-src/moto-components/front-tyre/front-tyre-inspection.glb",
+      "sha256": "0417b090c1323715acf69be2d96357f1c8ff75653c3ee61ee5ce2ea2648182a2",
+      "bytes": 8389408
+    },
+    {
+      "path": "assets-src/moto-components/front-tyre/build.py",
+      "sha256": "c9271a1052b9abde21a74d4b52a990f98d7aac647be359f3017715686df7377e",
+      "bytes": 14032
+    },
+    {
+      "path": "assets-src/moto-components/front-tyre/parameters.json",
+      "sha256": "161630d783a907f2b499062b7e4d5c45052d22e27e8e85feefa9717c5e8c6f53",
+      "bytes": 1220
+    },
+    {
+      "path": "creative/reviews/front-tyre-v2/study-manifest.json",
+      "sha256": "7a462c6e49305d7d77c9be168afe90b80ef108daf1246779a5c24fdfbd8d2585",
+      "bytes": 9712
+    }
+  ],
+  "actual_reference_reading": [
+    {
+      "file_private": "/workspace/wewa-assets/references/dimensions-verified/rotation-01.png",
+      "sha256": "57187baaaeae474b045bdad064533084926dfc204688265463d01cf91f1adf02",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/01.png",
+      "actually_opened_native": true,
+      "use": "Documentary silhouette/directional-groove families only; no pixels copied or calibrated junction dimensions"
+    },
+    {
+      "file_private": "/workspace/wewa-assets/references/dimensions-verified/rotation-02.png",
+      "sha256": "eed85a43c40a6fcb4785ad4d24a5c0881e14fbde21d4663f2ae51e742095c93d",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/02.png",
+      "actually_opened_native": true,
+      "use": "Documentary silhouette/directional-groove families only; no pixels copied or calibrated junction dimensions"
+    },
+    {
+      "file_private": "/workspace/wewa-assets/references/dimensions-verified/rotation-03.png",
+      "sha256": "c19b64be0100daa1ac2e27e6e879b34afbc2ede2553e291d86934f0a4005ad8e",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/03.png",
+      "actually_opened_native": true,
+      "use": "Documentary silhouette/directional-groove families only; no pixels copied or calibrated junction dimensions"
+    },
+    {
+      "file_private": "/workspace/wewa-assets/references/dimensions-verified/alloy-wheels.webp",
+      "sha256": "9bb3edac033043803f39a0b8111e11bf19f44ef11c50f6b14f4f6caac2ad526b",
+      "url": "https://cdn.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/features/boxer/125-hd/alloy-wheels.webp",
+      "actually_opened_native": true,
+      "use": "Documentary silhouette/directional-groove families only; no pixels copied or calibrated junction dimensions"
+    }
+  ],
+  "observations": [
+    "Official front R02 shows a narrow tread with directional/chevron-like grooves; R01/R03 and alloycloseup show angular incisions on outer shoulders. Pixel sampling/cutout/compression/occlusion prevent an exact mold/pitch/depth/rounding measurement.",
+    "The authored15angularsamples per26mmworkingrepeat put the1.3mmhalf-groove on only one coarse interval. The max(crosscut,lane) union has a derivative crease where the depths become equal. Both native and atlas macros show these steps/facets, so they are G3 debt and no new96will be launched in that state."
+  ],
+  "repair_method": [
+    "Start from the exact existing inspection mesh and keep all old vertices. Only vertices in the original outer-crown overlap of the two existing fields are moved radially by the bounded new-depth minus old-depth. No global remeshing, widening, bead/liner/sidewall shift or new groove family.",
+    "Replace depthmax by p4positive-depth norm only where both fields exist; a single field stays exact. Additional depth <=maxdepth*(2^(1/4)-1), atmost0.568mm workingbound, not a measuredOEMfillet.",
+    "Conforming longest-edge bisection only around the existing two lane/crosscut junction bands; sharededge midpoint identity, per-cornerUVinterpolation preserves the seam. Retain old mesh and all failed comparisons.",
+    "Probe face centres and edge midpoints against the same old crown profile/newunion field. Refine only faces with sampled20umerror, not blindly allpolygons. Prove protected old vertices/finite bounds, manifold/volume, truearea/UV/opening and no repairs after export.",
+    "Author normals derive from the continuous corrected crown only where edited/refined; preserve original normal fields on unrelated old regions. Gray native/reflection witness precedes any material; future changed surface requires distinct real rebake, no stalev2normal atlas."
+  ],
+  "preserved_definitions": {
+    "working_radius_m": 0.29,
+    "working_width_m": 0.071,
+    "nominal_bead_radius_m": 0.2159,
+    "estimated_tread_pitch_m": 0.026,
+    "working_repeat_count": 70
+  },
+  "view_plan": [
+    "Same50mm-native1400x1100treadmacro fromv2",
+    "Wholetyre gray and shoulder/crown context",
+    "Rakingreflection of junction before material",
+    "No final96 until visible shape debt is actually resolved"
+  ],
+  "identity_or_geometry_received": false,
+  "art_accepted": false
+}

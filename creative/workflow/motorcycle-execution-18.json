@@ -64,11 +64,8 @@
         }
       ],
       "remaining_observable_units": [
-        "amortisseurs supérieurs DS181008 ×2, variante liée",
         "amortisseurs inférieurs DS181009 ×2, variante liée",
-        "rondelles supérieures DS181007 ×2, variante liée",
-        "rondelles inférieures DS181010 ×2, variante liée",
-        "écrous Nyloc M10 39042215 ×2, variante liée"
+        "rondelles inférieures DS181010 ×2, variante liée"
       ]
     },
     {
@@ -144,7 +141,7 @@
       ],
       "owner_chain": "B",
       "remaining_observable_units": [
-        "segment accélérateur sortant, suivi au lot10"
+        "départ visible et continuation de câble accélérateur, suivi au lot10"
       ]
     },
     {
@@ -215,7 +212,10 @@
         }
       ],
       "documented_observable_candidate_units_built": true,
-      "full_current_rdc_inventory_confirmed": false
+      "full_current_rdc_inventory_confirmed": false,
+      "remaining_observable_units": [
+        "déterminer et reproduire seulement les éventuelles sorties électriques réellement visibles ; commande droite observée conservée sans fonction inventée"
+      ]
     },
     {
       "lot": 6,
@@ -259,8 +259,8 @@
         }
       ],
       "remaining_observable_units": [
-        "vis et écrous de bridage du support",
-        "segment sortant de câble, suivi au lot10"
+        "rondelle/écrou de bridage visibles et variante de montage cohérente avec le passage réel",
+        "continuation de câble au-delà du court départ construit, suivi au lot10"
       ]
     },
     {
@@ -298,8 +298,8 @@
         }
       ],
       "remaining_observable_units": [
-        "vis et écrous de bridage du support",
-        "segment sortant de câble, suivi au lot10"
+        "rondelle/écrou de bridage visibles et variante de montage cohérente avec le passage réel",
+        "continuation de câble au-delà du court départ construit, suivi au lot10"
       ]
     },
     {
@@ -387,7 +387,6 @@
         }
       ],
       "remaining_observable_units": [
-        "petit anneau de clé",
         "connecteur visible lié PF232605, suivi au lot10"
       ]
     },
@@ -422,26 +421,34 @@
       "remaining_scope": "Only three documented visible sheath segments; electrical assignment and hidden routes unresolved, not full harness",
       "candidates": [
         {
-          "component_id": "MOTO-COCKPIT-CABLES-001",
-          "revision": "cockpit-cables-v2",
-          "source_sha256": "1e836f483c6d682a47dc072377971d35aa927f50a53a51e9ab0cef37e0d18279",
-          "review": "../reviews/cockpit-cables-v2/README.md",
-          "runtime_checked": true,
-          "art_accepted": false
-        },
-        {
           "component_id": "MOTO-CLUTCH-UPPER-SHEATH-001",
           "revision": "clutch-upper-sheath-v1",
           "source_sha256": "589a2d1a0a1b25e196a1ff0e458c3fdaeccb1fb6550cb32840a3215f24bc5535",
           "review": "../reviews/clutch-upper-sheath-v1/README.md",
           "runtime_checked": true,
           "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-FRONT-BRAKE-UPPER-SHEATH-001",
+          "revision": "front-brake-upper-sheath-v1",
+          "source_sha256": "d9cef4f168f401ded48722365a7b23071ef16ac579e8aaea40e943dfe4e70f0e",
+          "review": "../reviews/front-brake-upper-sheath-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-COCKPIT-CABLES-001",
+          "revision": "cockpit-cables-v3",
+          "source_sha256": "82b14bb8f500fa905ca35288691bbbcffd6ff8394f1563e74d382038ded7afe3",
+          "review": "../reviews/cockpit-cables-v3/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
         }
       ],
       "remaining_observable_units": [
-        "segments cockpit embrayage, frein, accélérateur",
-        "câblage visible des commodos",
-        "connecteur visible allumage"
+        "continuations visibles embrayage/frein au-delà des coupes de revue des deux départs construits",
+        "départ accélérateur et câblage visible du commodo gauche, attaches visibles",
+        "connecteur allumage en cours et révision de route pigtail3, non encore enregistrés comme finalisés"
       ]
     },
     {
@@ -473,6 +480,9 @@
           "runtime_checked": true,
           "art_accepted": false
         }
+      ],
+      "remaining_observable_units": [
+        "retours et attaches/supports visibles de la visière à terminer après revue de la composition cockpit"
       ]
     },
     {
@@ -530,6 +540,11 @@
           "runtime_checked": true,
           "art_accepted": false
         }
+      ],
+      "remaining_observable_units": [
+        "zones larges et fines de lentille clignotant en cours avant matière",
+        "corps des clignotants avant, tige droite et raccords visibles",
+        "réflecteur, lentille principale et détails internes effectivement observables du phare"
       ]
     },
     {
@@ -611,12 +626,16 @@
       ],
       "documentary_blockers": [
         "Fourreau gauche : face opposée, attribution côté et ancrage frein non contraints ; aucune pièce générique déclarée fidèle"
+      ],
+      "remaining_observable_units": [
+        "capsules supérieures, quincaillerie et jonctions visibles de direction",
+        "raccords fourche/roue à contrôler dans une variante artistique cohérente explicitement estimée"
       ]
     },
     {
       "lot": 14,
       "label": "Ensemble avant et compatibilité des candidats existants",
-      "state": "legacy_candidates_require_new_review_and_fit",
+      "state": "separate_candidates_under_review_not_complete",
       "source_folders": [
         "../../assets-src/moto-components/front-tyre",
         "../../assets-src/moto-components/front-rim",
@@ -645,7 +664,22 @@
         "sha256": "5ccd298f86b10815ac5eae65b3fca5c47ab7492ecc251fd07ed573ec7f206f60",
         "scope": "Observable tracking units, not new built meshes or certified exact RDC counts"
       },
-      "legacy_review_scope": "Existing isolated candidates and historical Babylon proofs; current18 compatibility/quality review still pending, not newly fabricated or accepted"
+      "legacy_review_scope": "Existing isolated candidates and historical Babylon proofs; current18 compatibility/quality review still pending, not newly fabricated or accepted",
+      "remaining_observable_units": [
+        "axe avant et empilement visible entre fourche, moyeu et flasque",
+        "valve, prise de compteur et commande de frein visibles",
+        "qualité géométrique et compatibilité des candidats jante/moyeu/flasque existants"
+      ],
+      "candidates": [
+        {
+          "component_id": "MOTO-TYRE-FRONT-001",
+          "revision": "front-tyre-v3",
+          "source_sha256": "f8d22eb2419fe7dc7a6b34be11d3e5befb123db1475f7ae89acebc01f55f3a50",
+          "review": "../reviews/front-tyre-v3/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        }
+      ]
     },
     {
       "lot": 15,
@@ -786,6 +820,12 @@
           "runtime_checked": true,
           "art_accepted": false
         }
+      ],
+      "remaining_observable_units": [
+        "seconde terminaison du pare-moteur en cours ; soudures, crochets et liaisons visibles distinctes",
+        "extrémités ouvertes du patin de chaîne",
+        "garde-boue avant, bavettes et attaches visibles",
+        "jonctions/attaches visibles du cadre, tendeurs de chaîne et écrou de pivot"
       ]
     },
     {
@@ -945,7 +985,28 @@
           "review": "../reviews/rear-sns-opposite-eye-sleeve-v1/README.md",
           "runtime_checked": true,
           "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-REAR-SNS-OPPOSITE-END-CLOSURE-001",
+          "revision": "rear-sns-opposite-end-closure-v1",
+          "source_sha256": "6e4fa52d88060fb9cfdce2143b5e51fde66d819a99ea96ab14bf65a67e0d76f5",
+          "review": "../reviews/rear-sns-opposite-end-closure-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-REAR-SNS-BODY-END-CLOSURE-001",
+          "revision": "rear-sns-body-end-closure-v1",
+          "source_sha256": "3979e377dfdbb451541482d35a321d4a284fb10c64b0cfe1d935d705323fa153",
+          "review": "../reviews/rear-sns-body-end-closure-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
         }
+      ],
+      "remaining_observable_units": [
+        "axe arrière, moyeu, porte-couronne et entraînement visible",
+        "couronne, pignon et chaîne, commande/tringlerie de frein et réaction",
+        "fixations visibles et pose des amortisseurs dans une composition cohérente ; aucune installation validée actuellement"
       ]
     },
     {
@@ -1180,6 +1241,13 @@
           "runtime_checked": true,
           "art_accepted": false
         }
+      ],
+      "remaining_observable_units": [
+        "corps de carburateur, cuve, bouches, capot, conduits, levier et raccords visibles",
+        "pont/vis/écrou du collier admission ; durites air/HT visibles",
+        "parties centrales extérieures du moteur encore absentes",
+        "caoutchoucs de repose-pieds avant et repose-pieds arrière",
+        "sélecteur, pédale de frein/tringlerie, béquilles et fixations visibles échappement"
       ]
     },
     {
@@ -1228,6 +1296,12 @@
           "runtime_checked": true,
           "art_accepted": false
         }
+      ],
+      "remaining_observable_units": [
+        "bouchon/robinet/durite visibles du réservoir",
+        "caches latéraux gauche/droit et attaches visibles",
+        "huit catégories de dessous de selle encore absentes de l’étude7 : nervures, épine avant, tampons, socles, montants avant, projection arrière à ailettes, retour/agrafes, petits reliefs moulés",
+        "porte-bagages, feu et clignotants arrière, support de feu et support plaque"
       ]
     }
   ],
@@ -1294,5 +1368,17 @@
       "Resume unbuilt intake O-rings, air sleeve, clamps and carburetor, then remaining ground controls and cockpit leads"
     ],
     "reason": "Advance complete observable motorcycle silhouette while preserving all small-unit obligations and the three-author maximum."
+  },
+  "backlog_refresh_source21": {
+    "scope": "Working observable fabrication backlog refreshed against registered source20 and root-closed future21 components; not a certified OEM parts inventory or artistic acceptance. Existing sources and frozen plans retained.",
+    "already_built_removed_from_remaining": [
+      "DS181008 upper damper",
+      "DS181007 upper washer",
+      "39042215 related Nyloc",
+      "ignition key ring",
+      "short clutch and brake upper sheath departures (continuations still absent)"
+    ],
+    "estimated_fit_policy": "Coherent bounded artistic placement is permitted with explicit assumptions; unavailable hidden OEM dimensions do not block fabrication of observable geometry. Physical fit remains unqualified.",
+    "all_18_groups_complete": false
   }
 }

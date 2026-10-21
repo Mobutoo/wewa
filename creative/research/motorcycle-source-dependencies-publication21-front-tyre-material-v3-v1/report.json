@@ -1,0 +1,124 @@
+{
+  "schema": "wewa.source21.front-tyre-material-v3.static-recipe-admission.v1",
+  "created_at_UTC": "2026-10-21T14:00:36.989438+00:00",
+  "immutable_base_Source21": "7741d73f54782dc5746b715b3c21f01279dbd9d1",
+  "cutoff_or_curator_defined": false,
+  "roots": {
+    "creative/reviews/front-tyre-v3/source-freeze.json": {
+      "path": "creative/reviews/front-tyre-v3/source-freeze.json",
+      "sha256": "73c8373211c588ba739556b7644e9d33a8d9248a763a0e5f160bd7c6aa4f8d18",
+      "bytes": 15012,
+      "already_in_base": false
+    },
+    "creative/reviews/front-tyre-v3/g3-source-freeze-v1.json": {
+      "path": "creative/reviews/front-tyre-v3/g3-source-freeze-v1.json",
+      "sha256": "eaf53c6a45425c24b101ddcd36ab35b530e947f4be0fffcbc84ad7d7cfd28ae7",
+      "bytes": 7210,
+      "already_in_base": false
+    },
+    "creative/reviews/front-tyre-v3/coordinator-g3-manifest-v1.json": {
+      "path": "creative/reviews/front-tyre-v3/coordinator-g3-manifest-v1.json",
+      "sha256": "be16c7be91f4783043df4af98654d2b49e8e6ef91bfa59db0998b609c7d8060b",
+      "bytes": 510,
+      "already_in_base": false
+    }
+  },
+  "source_SHA_byte_pairs_checked": 107,
+  "stable_recipe_inputs": 78,
+  "readback": {
+    "construction_matiere": "Le builder lit le maîtreG3corrigé335788/GLBb5eb exacts, son gel33 complet et la lecture des trois nouvelles vues de forme. Il append l’objet corrigé, puis charge séparément le matériau procédural original depuis front-tyre-v1.blend33bf2d29…. Aucun ancienatlasv2, ancien modèle de réparation rejetée, photo, police ou matériau externe n’est consommé. L’ancien donneur est une vraie entrée ; le master courant et ses maps suffisent pour les rendus sans reconstruire G3.",
+    "cuisson_reelle": "Cycles fait une nouvelle cuisson tangentNORMAL16384×2048 et une cuissonEMIT4096×512 de la rampe de rugosité sur la même géométrie corrigée,1sample/marge4. RGB normal+MR sont écrits en PNG8bit brut avec inversion explicite bottomup→topdown, sans AgX sur les données ; R_MR=255, B_métal=0 et G_rugosité. Le shader constant reprend base/IOR du donneur ; la normale cuite est appliquée une seule fois, strength1. Les deux checkpoints publics signent donneur, digest de géométrie, shader, dimensions et paramètres ; s’ils existent ils doivent matcher les vraisPNG, sinon une nouvelle cuisson a lieu. Aucun checkpoint privé nécessaire.",
+    "preservation_et_limite_optique": "Le digest natif protège positions/normales/UV/topologie/matrice pendantG4. Le checker glTF fourni compare les vrais coins orientés P/N/UV et matrices à G3 ; des tangentes requises et de nouveaux splits de sommets peuvent changer les indices bruts sans déplacer de coin. Aucun calcul géométrique rejoué ici. Les cinq comparaisons24 déjà gelées constatent un grain plus doux/grossi dans l’atlas, particulièrement sur le flanc avec étirement de filtrage ; la recette ne prouve pas l’égalité d’un shader continu ni un caoutchoucOEM.",
+    "portabilite_chemins": "Le builder packe les deux images, les marque NonColor et garde des compagnons //textures/…, sauvegarde sans remappage absolu. La preuve source-portability-check exacte constate0Library,2images packées/relatives avec compagnonsSHA, et le donneur natif intégré. Cette preuve et ses contrôles de hash sont relus, mais aucun nouveau Blender ou checkout déplacé n’est ouvert ici. Lecture indépendante du vrai GLB : un seulbufferBIN, deuxPNG embarqués, aucuneURI externe ; chacun est byte-identique à son compagnon. Samplers effectifs linéaire/trilinéaire et Repeat sur deuxaxes, tailles/bitdepth relus dans IHDR. Détail attribué dans le nouveau rapport de transport, aucune réparation ou export.",
+    "baseline_et_preuves_G3": "Le petit diagnostic-gray-baseline.json reste réellement requis par le renderer grisG3 :3338octets SHAff51f32a4078119b8b3facb78c82bb4f52cbc5cd8985ecfadfa37e04e186f50d. Il est hors33 et72, listé explicitement ici ; ses anciens PNG/EXR/master ne sont pas nécessaires. coordinator-g3-review-v1.json et coordinator-g3-manifest-v1.json sont les deux preuves racine additives reprises avec leurs vraisSHA, sans modifier33 ni l’auditG3 antérieur. Le rayon/largeur protégés, l’empreinte élargie et l’ancien20µm non reçu restent ceux de cet audit.",
+    "reprise_rendus_et_environnement": "render.py vérifie réellement les72membres, lit material-build-report et material-preview-review ready_for_final96, ouvre le source packé et utilise le helper caméra local. Les checkpoints finals sont des sorties facultatives, jamais des inputs privés initiaux ; aucun96 actif n’est lu ou pinné ici. run_final.py nomme Blender4.3.2 absolu et écrit sa trace sous /workspace/wewa-assets/work-in-progress : ce répertoire et l’exécutable sont des prérequis d’environnement, pas des bibliothèques de modèle manquantes. Node lockfile et requirements numpy2.3.5/Pillow12.3.0 fournis pour les checkers ; aucune installation exécutée.",
+    "garde_et_histoire": "Le builder matière peut réécrire son propre résultat et ne refuse pas automatiquement source-freeze72 : ne jamais le lancer dans le dossier gelé, reprendre dans une copie de travail isolée. Refaire les cuissons peut changer les octets selon environnement ; aucune reprise propre/bit-identique exécutée. record.py --freeze compare une fermeture existante et refuse de l’écraser si différente. Ancienv1/v2, diagnostics rejetés et preuves historiques restent inchangés ; les deux sources42Mo/G3 existantes nécessaires sont référencées, jamais dupliquées.",
+    "perimetre": "Source matière72 seulement, mêmeID MOTO-TYRE-FRONT-001 et0nouveau composant. Aucun état des96/worker/render-report actifs, aucun cutoff, stage ou réception artistique/fit/mouleOEM/iPhone/LOD. Atlas16384×2048 est un master de revue, pas une qualification mobile."
+  },
+  "replay_copies": [],
+  "unresolved_required_build_material_render_file_inputs": [],
+  "static_only": true,
+  "new_render_checker_export_Blender_executed": false,
+  "source_freeze_or_global_modified": false,
+  "Git_mutation_commands_executed": false,
+  "source_count": 72,
+  "source_sha256": "f8d22eb2419fe7dc7a6b34be11d3e5befb123db1475f7ae89acebc01f55f3a50",
+  "export_sha256": "7e75d395ff0ac68b762fc1dd719d0da6ea6ca6f4acc79bd0149461127db5fe34",
+  "required_numeric_G3_input_outside33and72": {
+    "path": "creative/reviews/front-tyre-v3/diagnostic-gray-baseline.json",
+    "sha256": "ff51f32a4078119b8b3facb78c82bb4f52cbc5cd8985ecfadfa37e04e186f50d",
+    "bytes": 3338,
+    "already_in_base": false
+  },
+  "additive_G3_coordinator_manifest": {
+    "path": "creative/reviews/front-tyre-v3/coordinator-g3-manifest-v1.json",
+    "sha256": "be16c7be91f4783043df4af98654d2b49e8e6ef91bfa59db0998b609c7d8060b",
+    "bytes": 510,
+    "already_in_base": false
+  },
+  "native_portability_proof_readback": {
+    "path": "creative/reviews/front-tyre-v3/source-portability-check.json",
+    "sha256": "524ecb09d49a77ff9713e853edb09d61a5a4074360c97bf226c75d2819bf9e10",
+    "bytes": 1136,
+    "already_in_base": false
+  },
+  "independent_current_GLB_image_transport_readback": [
+    {
+      "semantic": "normal",
+      "texture_index": 0,
+      "image_index": 0,
+      "companion": {
+        "path": "assets-src/moto-components/front-tyre/material-v3/textures/original-rubber-baked-tangent-normal.png",
+        "sha256": "fad099413f341b0cca045b1469c32f7ae6ac163911c2042ec1e5bf4cd2e072c1",
+        "bytes": 29304585,
+        "already_in_base": false
+      },
+      "embedded_image_sha256": "fad099413f341b0cca045b1469c32f7ae6ac163911c2042ec1e5bf4cd2e072c1",
+      "embedded_byte_identical": true,
+      "external_uri": null,
+      "PNG_width_height": [
+        16384,
+        2048
+      ],
+      "raw_PNG_bits": 8,
+      "raw_PNG_color_type_RGB": 2,
+      "sampler": {
+        "magFilter": 9729,
+        "minFilter": 9987,
+        "effective_wrapS": 10497,
+        "effective_wrapT": 10497
+      }
+    },
+    {
+      "semantic": "metallic_roughness",
+      "texture_index": 1,
+      "image_index": 1,
+      "companion": {
+        "path": "assets-src/moto-components/front-tyre/material-v3/textures/original-rubber-baked-metallic-roughness.png",
+        "sha256": "1396447ed92d09c777fd2b8ef36c16e8cc16e37a013343d1b5ca4995f6708902",
+        "bytes": 531609,
+        "already_in_base": false
+      },
+      "embedded_image_sha256": "1396447ed92d09c777fd2b8ef36c16e8cc16e37a013343d1b5ca4995f6708902",
+      "embedded_byte_identical": true,
+      "external_uri": null,
+      "PNG_width_height": [
+        4096,
+        512
+      ],
+      "raw_PNG_bits": 8,
+      "raw_PNG_color_type_RGB": 2,
+      "sampler": {
+        "magFilter": 9729,
+        "minFilter": 9987,
+        "effective_wrapS": 10497,
+        "effective_wrapT": 10497
+      }
+    }
+  ],
+  "GLB_external_buffer_or_image_URIs": [],
+  "no_independent_Blender_or_relocated_checkout_opened": true,
+  "closed_final96_not_read_or_pinned": true,
+  "current_maps_not_old_v2_atlas": true,
+  "prior_audits_unchanged": true
+}

@@ -1,0 +1,123 @@
+{
+  "prepared_utc": "2026-10-21T13:27:46.373353+00:00",
+  "component_id": "MOTO-TYRE-FRONT-001",
+  "applies_to": "front-tyre-v3-local-strip-diagnostic-v3 only; older contracts/failures retained",
+  "failed_contract": "All six sampled AABB coordinates identical",
+  "actual_failure_evidence": {
+    "path": "creative/reviews/front-tyre-v3/local-strip-bounds-diagnostic-v1.json",
+    "sha256": "5cbe03ca6ce58734b3417fa2e99251c554a9b26e3d818965a9f7be4b08e14541"
+  },
+  "observed": {
+    "old_min_m": [
+      -0.03552263602614403,
+      -0.28999871015548706,
+      5.192157459532609e-06
+    ],
+    "old_max_m": [
+      0.03552263602614403,
+      0.28999871015548706,
+      0.579994797706604
+    ],
+    "new_min_m": [
+      -0.03552263602614403,
+      -0.28999871015548706,
+      3.8941248021728825e-06
+    ],
+    "new_max_m": [
+      0.03552263602614403,
+      0.28999871015548706,
+      0.5799961090087891
+    ],
+    "minimum_delta_m": [
+      0.0,
+      0.0,
+      -1.2980326573597267e-06
+    ],
+    "maximum_delta_m": [
+      0.0,
+      0.0,
+      1.3113021850585938e-06
+    ],
+    "old_max_radial_m": 0.2900000512599945,
+    "new_max_radial_m": 0.2900000512599945,
+    "source_export_saved": false,
+    "author_contract_six_bounds_exact": false,
+    "extreme_vertices": [
+      {
+        "axis": 0,
+        "side": "min",
+        "vertex_index": 114,
+        "point_m": [
+          -0.03552263602614403,
+          0.0,
+          0.5442972779273987
+        ],
+        "old_vertex": true
+      },
+      {
+        "axis": 0,
+        "side": "max",
+        "vertex_index": 28,
+        "point_m": [
+          0.03552263602614403,
+          0.0,
+          0.5442972779273987
+        ],
+        "old_vertex": true
+      },
+      {
+        "axis": 1,
+        "side": "min",
+        "vertex_index": 111754,
+        "point_m": [
+          0.0,
+          -0.28999871015548706,
+          0.28913232684135437
+        ],
+        "old_vertex": true
+      },
+      {
+        "axis": 1,
+        "side": "max",
+        "vertex_index": 37204,
+        "point_m": [
+          0.0,
+          0.28999871015548706,
+          0.2908676862716675
+        ],
+        "old_vertex": true
+      },
+      {
+        "axis": 2,
+        "side": "min",
+        "vertex_index": 346041,
+        "point_m": [
+          0.0,
+          0.0013015092117711902,
+          3.8941248021728825e-06
+        ],
+        "old_vertex": false
+      },
+      {
+        "axis": 2,
+        "side": "max",
+        "vertex_index": 149158,
+        "point_m": [
+          0.0,
+          0.0013015092117711902,
+          0.5799961090087891
+        ],
+        "old_vertex": false
+      }
+    ]
+  },
+  "interpretation": "New lip samples recover points near the angular top/bottom absent from the coarser old ring. Float32 maximum radial radius is unchanged, X/Yextents and all protected old coordinates are unchanged. AABBZ changes1.3micrometres; this is reported, not hidden or forcibly flattened.",
+  "new_contract_before_next_save": [
+    "Retain every protected original coordinate and every old X; retain actual width extrema.",
+    "Retain exact maximum radial radius in float64 coordinate evaluation, and check actual radial envelope rather than conflating angular AABBsampling with diameter.",
+    "Report every AABB coordinate and change. Do not claim all six extents identical for this new strip.",
+    "Same estimated radius/width/motif/sidewall/bead/liner, and no performance/art/OEM receipt."
+  ],
+  "no_new_OEM_tolerance": true,
+  "art_accepted": false
+}

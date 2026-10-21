@@ -1,6 +1,6 @@
 # Viva Wewa — revue des composants moto
 
-**92 composants uniques enregistrés · 92 vues Blender prouvées · aucune réception artistique.**
+**95 composants uniques enregistrés · 95 vues Blender prouvées · aucune réception artistique.**
 
 Une seule vue originale par composant, à la révision exacte de sa fiche. Les anciennes révisions et les sources seulement cataloguées ou gelées sans enregistrement central ne sont pas ajoutées. Ces rendus montrent des candidats isolés, pas le jeu ni une moto terminée.
 
@@ -10,7 +10,7 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 
 ## Les 18 groupes
 
-**1 groupes restent sans nouvelle pièce enregistrée dans cette séquence.** Le groupe 14 dispose de candidats antérieurs ci-dessous ; sa compatibilité actuelle reste à recontrôler.
+**0 groupes restent sans nouvelle pièce enregistrée dans cette séquence.** Le groupe 14 dispose de candidats antérieurs ci-dessous ; sa compatibilité actuelle reste à recontrôler.
 
 | Groupe | Composants enregistrés dans la séquence | État |
 | --- | --- | --- |
@@ -23,13 +23,13 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 | [07 · Levier frein au guidon et support](#groupe-7) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [08 · Rétroviseurs gauche/droit](#groupe-8) | 2 | Candidats partiels en revue ; groupe non terminé |
 | [09 · Contacteur et clé](#groupe-9) | 2 | Candidats partiels en revue ; groupe non terminé |
-| [10 · Câbles et faisceau visibles](#groupe-10) | 2 | Candidats partiels en revue ; groupe non terminé |
+| [10 · Câbles et faisceau visibles](#groupe-10) | 3 | Candidats partiels en revue ; groupe non terminé |
 | [11 · Visière et entourage des compteurs](#groupe-11) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [12 · Phare et clignotants avant](#groupe-12) | 4 | Candidats partiels en revue ; groupe non terminé |
 | [13 · Fourche et direction](#groupe-13) | 6 | Candidats partiels en revue ; groupe non terminé |
-| [14 · Ensemble avant et compatibilité des candidats existants](#groupe-14) | Voir les préexistants ; aucun nouveau composant compté | Candidats antérieurs existants à recontrôler ; compatibilité restante |
+| [14 · Ensemble avant et compatibilité des candidats existants](#groupe-14) | 1 | Candidats partiels en revue ; groupe non terminé |
 | [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 14 | Candidats partiels en revue ; groupe non terminé |
-| [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 16 | Candidats partiels en revue ; groupe non terminé |
+| [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 18 | Candidats partiels en revue ; groupe non terminé |
 | [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 25 | Candidats partiels en revue ; groupe non terminé |
 | [18 · Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière](#groupe-18) | 2 | Candidats partiels en revue ; groupe non terminé |
 
@@ -486,30 +486,6 @@ Périmètre prévu : barillet/contacteur extérieur; clé générique non foncti
 ## 10 · Câbles et faisceau visibles
 
 
-<a id="moto-cockpit-cables-001"></a>
-
-### Cockpit — faisceau partiel v2, boucle du contact corrigée
-
-`MOTO-COCKPIT-CABLES-001` · révision `cockpit-cables-v2` · **candidat non reçu**
-
-![Cockpit — faisceau partiel v2, boucle du contact corrigée — cockpit-cables-v2](cockpit-cables-v2/ignition-pigtail-free-end.png)
-
-[Image entière](cockpit-cables-v2/ignition-pigtail-free-end.png) · [Preuve du rendu](cockpit-cables-v2/render-report.json) · vue `ignition-pigtail-free-end`
-
-Source SHA-256 : `1e836f483c6d682a47dc072377971d35aa927f50a53a51e9ab0cef37e0d18279`  
-PNG SHA-256 : `b3593fff26e49aeae75c7e24eab3c491806a7803c8aaa004232ec5c211dcc0fe`
-
-[Blender](../../assets-src/moto-components/cockpit-cables/cockpit-cables-v2.blend) · [GLB](../../assets-src/moto-components/cockpit-cables/cockpit-cables-v2-inspection.glb) · [README source](../../assets-src/moto-components/cockpit-cables/README_v2.md) · [Revue et limites](cockpit-cables-v2/README.md) · [Fiche](../workflow/records/moto-cockpit-cables-001.json)
-
-
-<details>
-<summary>Autres vues Blender prouvées de cette révision</summary>
-
-- [ignition-interface-current](cockpit-cables-v2/ignition-interface-current.png) · [preuve](cockpit-cables-v2/render-report.json)
-
-</details>
-
-
 <a id="moto-clutch-upper-sheath-001"></a>
 
 ### Court départ supérieur de gaine d’embrayage — coupe de revue
@@ -532,6 +508,56 @@ PNG SHA-256 : `c399b5104b91e3b4e6caae20b47feca60bc6acf3e6b3b12e48770428cb83c1d0`
 - [control-gap-context](clutch-upper-sheath-v1/control-gap-context.png) · [preuve](clutch-upper-sheath-v1/render-report.json)
 - [bend-profile](clutch-upper-sheath-v1/bend-profile.png) · [preuve](clutch-upper-sheath-v1/render-report.json)
 - [distal-REVIEW-CUT-not-terminal](clutch-upper-sheath-v1/distal-REVIEW-CUT-not-terminal.png) · [preuve](clutch-upper-sheath-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-front-brake-upper-sheath-001"></a>
+
+### Court départ supérieur de gaine d’frein avant — coupe de revue
+
+`MOTO-FRONT-BRAKE-UPPER-SHEATH-001` · révision `front-brake-upper-sheath-v1` · **candidat non reçu**
+
+![Court départ supérieur de gaine d’frein avant — coupe de revue — front-brake-upper-sheath-v1](front-brake-upper-sheath-v1/whole-short-departure.png)
+
+[Image entière](front-brake-upper-sheath-v1/whole-short-departure.png) · [Preuve du rendu](front-brake-upper-sheath-v1/render-report.json) · vue `whole-short-departure`
+
+Source SHA-256 : `d9cef4f168f401ded48722365a7b23071ef16ac579e8aaea40e943dfe4e70f0e`  
+PNG SHA-256 : `4f9c42b0ff8876de159454754f0c4b34c8e749ddf61f9010366afe0941bb6f2a`
+
+[Blender](../../assets-src/moto-components/front-brake-upper-sheath/front-brake-upper-sheath-v1.blend) · [GLB](../../assets-src/moto-components/front-brake-upper-sheath/front-brake-upper-sheath-inspection.glb) · [README source](../../assets-src/moto-components/front-brake-upper-sheath/README.md) · [Revue et limites](front-brake-upper-sheath-v1/README.md) · [Fiche](../workflow/records/moto-front-brake-upper-sheath-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [control-gap-context](front-brake-upper-sheath-v1/control-gap-context.png) · [preuve](front-brake-upper-sheath-v1/render-report.json)
+- [bend-profile](front-brake-upper-sheath-v1/bend-profile.png) · [preuve](front-brake-upper-sheath-v1/render-report.json)
+- [distal-REVIEW-CUT-not-terminal](front-brake-upper-sheath-v1/distal-REVIEW-CUT-not-terminal.png) · [preuve](front-brake-upper-sheath-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-cockpit-cables-001"></a>
+
+### Faisceau partiel — implantation extérieure conditionnelle v3
+
+`MOTO-COCKPIT-CABLES-001` · révision `cockpit-cables-v3` · **candidat non reçu**
+
+![Faisceau partiel — implantation extérieure conditionnelle v3 — cockpit-cables-v3](cockpit-cables-v3/loop-current-under-context.png)
+
+[Image entière](cockpit-cables-v3/loop-current-under-context.png) · [Preuve du rendu](cockpit-cables-v3/render-report.json) · vue `loop-current-under-context`
+
+Source SHA-256 : `82b14bb8f500fa905ca35288691bbbcffd6ff8394f1563e74d382038ded7afe3`  
+PNG SHA-256 : `c730677eadef967b35b4840e2b866b2a18b1225847b3d93cd0fd000cb723d367`
+
+[Blender](../../assets-src/moto-components/cockpit-cables/cockpit-cables-v3.blend) · [GLB](../../assets-src/moto-components/cockpit-cables/cockpit-cables-v3-inspection.glb) · [README source](../../assets-src/moto-components/cockpit-cables/README_v3.md) · [Fiche](../workflow/records/moto-cockpit-cables-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [wireentry-gap-current](cockpit-cables-v3/wireentry-gap-current.png) · [preuve](cockpit-cables-v3/render-report.json)
 
 </details>
 
@@ -838,7 +864,31 @@ Périmètre prévu : té supérieur et colonne; té inférieur; tube et fourreau
 
 ## 14 · Ensemble avant et compatibilité des candidats existants
 
-Les pièces antérieures existent dans la section des [préexistants](#preexistants). La compatibilité de l’ensemble avant reste à recontrôler ; aucun ensemble terminé n’est déclaré.
+
+<a id="moto-tyre-front-001"></a>
+
+### Pneu avant v3 — lèvres corrigées et caoutchouc original fraîchement cuit
+
+`MOTO-TYRE-FRONT-001` · révision `front-tyre-v3` · **candidat non reçu**
+
+![Pneu avant v3 — lèvres corrigées et caoutchouc original fraîchement cuit — front-tyre-v3](front-tyre-v3/quarter.png)
+
+[Image entière](front-tyre-v3/quarter.png) · [Preuve du rendu](front-tyre-v3/render-report.json) · vue `quarter`
+
+Source SHA-256 : `f8d22eb2419fe7dc7a6b34be11d3e5befb123db1475f7ae89acebc01f55f3a50`  
+PNG SHA-256 : `f0fdbf82322be720bfe93aadd19b6ae4f8662f206211ba67f4b0d52b41850966`
+
+[Blender](../../assets-src/moto-components/front-tyre/material-v3/front-tyre-v3.blend) · [GLB](../../assets-src/moto-components/front-tyre/material-v3/front-tyre-v3-inspection.glb) · [README source](../../assets-src/moto-components/front-tyre/material-v3/README.md) · [Revue et limites](front-tyre-v3/README.md) · [Fiche](../workflow/records/moto-tyre-front-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [reverse-quarter](front-tyre-v3/reverse-quarter.png) · [preuve](front-tyre-v3/render-report.json)
+- [tread-detail](front-tyre-v3/tread-detail.png) · [preuve](front-tyre-v3/render-report.json)
+- [sidewall-detail](front-tyre-v3/sidewall-detail.png) · [preuve](front-tyre-v3/render-report.json)
+
+</details>
 
 Périmètre prévu : pneu avant existant à revoir; jante/moyeu existant à revoir; flasque et levier de came existants à revoir; axe et entretoises visibles.
 
@@ -1623,6 +1673,56 @@ PNG SHA-256 : `6034182ce6bc2d4b60764f7c4ef58af2c2fd36ea47b598bb3fcb665a7456890e`
 
 </details>
 
+
+<a id="moto-rear-sns-opposite-end-closure-001"></a>
+
+### SNS arrière — enveloppe extérieure de liaison opposée
+
+`MOTO-REAR-SNS-OPPOSITE-END-CLOSURE-001` · révision `rear-sns-opposite-end-closure-v1` · **candidat non reçu**
+
+![SNS arrière — enveloppe extérieure de liaison opposée — rear-sns-opposite-end-closure-v1](rear-sns-opposite-end-closure-v1/whole-closure-pbr.png)
+
+[Image entière](rear-sns-opposite-end-closure-v1/whole-closure-pbr.png) · [Preuve du rendu](rear-sns-opposite-end-closure-v1/render-report.json) · vue `whole-closure-pbr`
+
+Source SHA-256 : `6e4fa52d88060fb9cfdce2143b5e51fde66d819a99ea96ab14bf65a67e0d76f5`  
+PNG SHA-256 : `bdb760f874c3913a48aa30b033a9fc84329e540fd03a23d86166f57e0025077f`
+
+[Blender](../../assets-src/moto-components/rear-sns/opposite-end-closure/rear-sns-opposite-end-closure-v1.blend) · [GLB](../../assets-src/moto-components/rear-sns/opposite-end-closure/rear-sns-opposite-end-closure-v1.glb) · [README source](../../assets-src/moto-components/rear-sns/opposite-end-closure/README_v1.md) · [Revue et limites](rear-sns-opposite-end-closure-v1/README.md) · [Fiche](../workflow/records/moto-rear-sns-opposite-end-closure-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [dished-back-pbr](rear-sns-opposite-end-closure-v1/dished-back-pbr.png) · [preuve](rear-sns-opposite-end-closure-v1/render-report.json)
+- [neutral-outdoor](rear-sns-opposite-end-closure-v1/neutral-outdoor.png) · [preuve](rear-sns-opposite-end-closure-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-rear-sns-body-end-closure-001"></a>
+
+### SNS arrière — enveloppe extérieure de liaison côté fût
+
+`MOTO-REAR-SNS-BODY-END-CLOSURE-001` · révision `rear-sns-body-end-closure-v1` · **candidat non reçu**
+
+![SNS arrière — enveloppe extérieure de liaison côté fût — rear-sns-body-end-closure-v1](rear-sns-body-end-closure-v1/whole-closure-pbr.png)
+
+[Image entière](rear-sns-body-end-closure-v1/whole-closure-pbr.png) · [Preuve du rendu](rear-sns-body-end-closure-v1/render-report.json) · vue `whole-closure-pbr`
+
+Source SHA-256 : `3979e377dfdbb451541482d35a321d4a284fb10c64b0cfe1d935d705323fa153`  
+PNG SHA-256 : `8ca975b14bb5686ae4f9ea365470d2ddb66850602ecb5eae218f10b5bb6b85e0`
+
+[Blender](../../assets-src/moto-components/rear-sns/body-end-closure/rear-sns-body-end-closure-v1.blend) · [GLB](../../assets-src/moto-components/rear-sns/body-end-closure/rear-sns-body-end-closure-v1.glb) · [README source](../../assets-src/moto-components/rear-sns/body-end-closure/README_v1.md) · [Revue et limites](rear-sns-body-end-closure-v1/README.md) · [Fiche](../workflow/records/moto-rear-sns-body-end-closure-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [boss-back-pbr](rear-sns-body-end-closure-v1/boss-back-pbr.png) · [preuve](rear-sns-body-end-closure-v1/render-report.json)
+- [neutral-outdoor](rear-sns-body-end-closure-v1/neutral-outdoor.png) · [preuve](rear-sns-body-end-closure-v1/render-report.json)
+
+</details>
+
 Périmètre prévu : pneu arrière; jante/moyeu arrière; flasque et commande du frein arrière; couronne/chaîne et protection; amortisseur gauche; amortisseur droit.
 
 <a id="groupe-17"></a>
@@ -2347,32 +2447,6 @@ Périmètre prévu : réservoir WEWA et bouchon; cache gauche; cache droit; sell
 ## Préexistants hors décompte de compatibilité des 18 groupes
 
 Ces candidats sont enregistrés et illustrés une seule fois. Leur existence ne certifie pas les raccords de l’ensemble avant ni la réception de la moto.
-
-<a id="moto-tyre-front-001"></a>
-
-### Pneu avant de la moto utilitaire de référence
-
-`MOTO-TYRE-FRONT-001` · révision `front-tyre-v1` · **candidat non reçu**
-
-![Pneu avant de la moto utilitaire de référence — front-tyre-v1](front-tyre-v1/neutral-quarter.png)
-
-[Image entière](front-tyre-v1/neutral-quarter.png) · [Preuve du rendu](front-tyre-v1/manifest.json) · vue `neutral-quarter`
-
-Source SHA-256 : `33bf2d29063cf267da47323cf7d2a126f803166caf5e2ea410dc56e89072326c`  
-PNG SHA-256 : `40e0afb2af254ee8f86a8794d9b8e57f70db3dfcd783fe5ab5e93a4073295a28`
-
-[Blender](../../assets-src/moto-components/front-tyre/front-tyre-v1.blend) · [GLB](../../assets-src/moto-components/front-tyre/front-tyre-inspection.glb) · [README source](../../assets-src/moto-components/front-tyre/README.md) · [Revue et limites](front-tyre-v1/README.md) · [Fiche](../workflow/records/moto-tyre-front-001.json)
-
-
-<details>
-<summary>Autres vues Blender prouvées de cette révision</summary>
-
-- [neutral-side](front-tyre-v1/neutral-side.png) · [preuve](front-tyre-v1/manifest.json)
-- [tread-close](front-tyre-v1/tread-close.png) · [preuve](front-tyre-v1/manifest.json)
-- [cinematic-quarter](front-tyre-v1/cinematic-quarter.png) · [preuve](front-tyre-v1/manifest.json)
-
-</details>
-
 
 <a id="moto-rim-front-001"></a>
 

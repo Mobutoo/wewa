@@ -11,46 +11,6 @@
   "active_component": "MOTO-ENGINE-COVER-LEFT-001",
   "components": [
     {
-      "id": "MOTO-TYRE-FRONT-001",
-      "parent_source_ids": [
-        "AS-049",
-        "CON-001"
-      ],
-      "name": "Pneu avant de la moto utilitaire de référence",
-      "reference_vehicle": "Bajaj Boxer125HD, variant and tyre supplier to identify",
-      "state": "isolated_tyre_candidate_rework",
-      "source_manifest": "motorcycle-reference-views.json",
-      "published_reference": {
-        "front_tyre_designation": "2.75-17",
-        "nominal_rim_diameter_m": 0.4318
-      },
-      "unknown": [
-        "high-resolution tread pattern and supplier identification",
-        "inflated outer diameter",
-        "loaded profile",
-        "legible sidewall markings",
-        "bead and rim interface detail"
-      ],
-      "rejected_source": "../../assets-src/hero-lot01/build_motorcycle.py",
-      "observed_model_defects": [
-        "circular torus section, no separate shoulder/sidewall profile",
-        "same section radius front and rear; width variable unused",
-        "42 invented repeated tread blocks",
-        "constant rubber colour and roughness, no verified surface detail"
-      ],
-      "gates": {
-        "references_sufficient": false,
-        "shape_comparison_passed": false,
-        "material_comparison_passed": false,
-        "engine_comparison_passed": false,
-        "optimized_variant_rechecked": false,
-        "user_art_accepted": false
-      },
-      "next_action": "Refine candidate tread/profile and calibrate documentary views; remains unaccepted while rim candidate is inspected.",
-      "candidate_source": "../../assets-src/moto-components/front-tyre/README.md",
-      "candidate_review": "../reviews/front-tyre-v1/README.md"
-    },
-    {
       "id": "MOTO-RIM-FRONT-001",
       "parent_source_ids": [
         "AS-049",
@@ -820,27 +780,6 @@
       "candidate_source": "../../assets-src/moto-components/frame/seat-rail-observed/README.md",
       "candidate_review": "../reviews/frame-seat-rail-observed-v1/README.md",
       "component_workflow": "../workflow/records/moto-frame-seat-rail-001.json",
-      "all_physical_dimensions_estimated": true,
-      "gates": {
-        "references_sufficient": false,
-        "shape_comparison_passed": false,
-        "material_comparison_passed": false,
-        "engine_comparison_passed": false,
-        "optimized_variant_rechecked": false,
-        "user_art_accepted": false
-      }
-    },
-    {
-      "id": "MOTO-COCKPIT-CABLES-001",
-      "parent_source_ids": [
-        "AS-049",
-        "CON-001"
-      ],
-      "name": "Cockpit — faisceau partiel v2, boucle du contact corrigée",
-      "state": "isolated_candidate_rework_not_accepted",
-      "candidate_source": "../../assets-src/moto-components/cockpit-cables/README_v2.md",
-      "candidate_review": "../reviews/cockpit-cables-v2/README.md",
-      "component_workflow": "../workflow/records/moto-cockpit-cables-001.json",
       "all_physical_dimensions_estimated": true,
       "gates": {
         "references_sufficient": false,
@@ -1987,6 +1926,111 @@
       "candidate_source": "../../assets-src/moto-components/clutch-upper-sheath/README.md",
       "candidate_review": "../reviews/clutch-upper-sheath-v1/README.md",
       "component_workflow": "../workflow/records/moto-clutch-upper-sheath-001.json",
+      "all_physical_dimensions_estimated": true,
+      "gates": {
+        "references_sufficient": false,
+        "shape_comparison_passed": false,
+        "material_comparison_passed": false,
+        "engine_comparison_passed": false,
+        "optimized_variant_rechecked": false,
+        "user_art_accepted": false
+      }
+    },
+    {
+      "id": "MOTO-FRONT-BRAKE-UPPER-SHEATH-001",
+      "parent_source_ids": [
+        "AS-049",
+        "CON-001"
+      ],
+      "name": "Court départ supérieur de gaine d’frein avant — coupe de revue",
+      "state": "isolated_candidate_rework_not_accepted",
+      "candidate_source": "../../assets-src/moto-components/front-brake-upper-sheath/README.md",
+      "candidate_review": "../reviews/front-brake-upper-sheath-v1/README.md",
+      "component_workflow": "../workflow/records/moto-front-brake-upper-sheath-001.json",
+      "all_physical_dimensions_estimated": true,
+      "gates": {
+        "references_sufficient": false,
+        "shape_comparison_passed": false,
+        "material_comparison_passed": false,
+        "engine_comparison_passed": false,
+        "optimized_variant_rechecked": false,
+        "user_art_accepted": false
+      }
+    },
+    {
+      "id": "MOTO-REAR-SNS-OPPOSITE-END-CLOSURE-001",
+      "parent_source_ids": [
+        "AS-049",
+        "CON-001"
+      ],
+      "name": "SNS arrière — enveloppe extérieure de liaison opposée",
+      "state": "isolated_candidate_rework_not_accepted",
+      "candidate_source": "../../assets-src/moto-components/rear-sns/opposite-end-closure/README_v1.md",
+      "candidate_review": "../reviews/rear-sns-opposite-end-closure-v1/README.md",
+      "component_workflow": "../workflow/records/moto-rear-sns-opposite-end-closure-001.json",
+      "all_physical_dimensions_estimated": true,
+      "gates": {
+        "references_sufficient": false,
+        "shape_comparison_passed": false,
+        "material_comparison_passed": false,
+        "engine_comparison_passed": false,
+        "optimized_variant_rechecked": false,
+        "user_art_accepted": false
+      }
+    },
+    {
+      "id": "MOTO-REAR-SNS-BODY-END-CLOSURE-001",
+      "parent_source_ids": [
+        "AS-049",
+        "CON-001"
+      ],
+      "name": "SNS arrière — enveloppe extérieure de liaison côté fût",
+      "state": "isolated_candidate_rework_not_accepted",
+      "candidate_source": "../../assets-src/moto-components/rear-sns/body-end-closure/README_v1.md",
+      "candidate_review": "../reviews/rear-sns-body-end-closure-v1/README.md",
+      "component_workflow": "../workflow/records/moto-rear-sns-body-end-closure-001.json",
+      "all_physical_dimensions_estimated": true,
+      "gates": {
+        "references_sufficient": false,
+        "shape_comparison_passed": false,
+        "material_comparison_passed": false,
+        "engine_comparison_passed": false,
+        "optimized_variant_rechecked": false,
+        "user_art_accepted": false
+      }
+    },
+    {
+      "id": "MOTO-TYRE-FRONT-001",
+      "parent_source_ids": [
+        "AS-049",
+        "CON-001"
+      ],
+      "name": "Pneu avant v3 — lèvres corrigées et caoutchouc original fraîchement cuit",
+      "state": "isolated_candidate_rework_not_accepted",
+      "candidate_source": "../../assets-src/moto-components/front-tyre/material-v3/README.md",
+      "candidate_review": "../reviews/front-tyre-v3/README.md",
+      "component_workflow": "../workflow/records/moto-tyre-front-001.json",
+      "all_physical_dimensions_estimated": true,
+      "gates": {
+        "references_sufficient": false,
+        "shape_comparison_passed": false,
+        "material_comparison_passed": false,
+        "engine_comparison_passed": false,
+        "optimized_variant_rechecked": false,
+        "user_art_accepted": false
+      }
+    },
+    {
+      "id": "MOTO-COCKPIT-CABLES-001",
+      "parent_source_ids": [
+        "AS-049",
+        "CON-001"
+      ],
+      "name": "Faisceau partiel — implantation extérieure conditionnelle v3",
+      "state": "isolated_candidate_rework_not_accepted",
+      "candidate_source": "../../assets-src/moto-components/cockpit-cables/README_v3.md",
+      "candidate_review": "../reviews/cockpit-cables-v3/README.md",
+      "component_workflow": "../workflow/records/moto-cockpit-cables-001.json",
       "all_physical_dimensions_estimated": true,
       "gates": {
         "references_sufficient": false,
