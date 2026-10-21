@@ -1,0 +1,49 @@
+{
+  "component_id": "MOTO-ENGINE-SPARK-CAP-001",
+  "revision": "engine-spark-cap-v2",
+  "basis": "New two gray estimated near-profiles compared with StockNuts1/4; source69dc and28/42manifests immutable.",
+  "geometry_change": "Outer shoulder X.051..058 only: straight cone between physical circular end arcs. No datum translation.",
+  "protected": [
+    "Body mouths/port/socket regions outside changed outer shoulder",
+    "Visible contact mesh/material/pose exactly",
+    "Original head3 and plug2 library matrices",
+    "Mainbody/endneck radii and overall envelope ends"
+  ],
+  "material_change": "Body material only gets original physically-scaled representative grain and roughness maps, UV atlas and native tangent export. Contact material unchanged.",
+  "grain_claims": {
+    "status": "Representative original mold grain, not measured or OEM-certified. No photo pixels.",
+    "spacing_working_m": 0.00012,
+    "spacing_estimated_range_m": [
+      6e-05,
+      0.0002
+    ],
+    "height_working_m": 6e-06,
+    "height_estimated_range_m": [
+      2e-06,
+      1.2e-05
+    ],
+    "noise_seed_W": 17.391,
+    "roughness_range": [
+      0.46,
+      0.58
+    ],
+    "texture_size_px": [
+      2048,
+      2048
+    ],
+    "normal_space": "Tangent OpenGL +Y",
+    "UV": "New smart-project source atlas, actual triangle UV/tangent tests required before acceptance",
+    "packing_margin_fraction": 0.015,
+    "bake_margin_px": 16,
+    "render_status": "No material reception; evaluate actual baked maps and original grain under control light."
+  },
+  "verification": [
+    "Gray nearprofiles before material work",
+    "Actual manifold/volume/index and retained surface checks",
+    "Same plug2/head3 source intersections and sampled inclusion",
+    "Baked image source/config/hash and embeddedGLB dimensions/channels",
+    "Native UV noncollapse and finite orthogonal tangents without repair",
+    "Microrelief visible in actual controlled renders, not a claimed OEM capture"
+  ],
+  "art_accepted": false
+}

@@ -1,0 +1,1894 @@
+{
+  "schema": "wewa.public-reconstruction-dependency-audit.v1",
+  "id": "motorcycle-source-dependencies-publication10-tyre-cap2-v1",
+  "snapshot_utc": "2026-10-21T05:38:51.482311+00:00",
+  "scope": "Static closure of rear-tyre-v1 freeze22 and engine-spark-cap-v2 preflight57. No regeneration, Blenderopen, mesh/UV/strict/Babylon tests, final96review or oldmanifest editing.",
+  "input_freezes": [
+    {
+      "path": "creative/reviews/rear-tyre-v1/source-freeze.json",
+      "sha256": "ead87e1e5de6971a9b61d257517d1912362f6b715efe6e5cd936183c0bd6e8e1",
+      "declared_file_count": 22,
+      "source_sha256": "612388ce8f1fb5850a01c3329e23fc39ad42e631c4a517e56576a0a359066b5c",
+      "export_sha256": "5a257315f4ae0925f4a3419ccfc61d5a4296981923a7df5e97ef432dd4d38453"
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/preflight-manifest-v2.json",
+      "sha256": "27ce841ffbef95fdc298d07fb86893dadf06973021c05c0589a7c5878be3d924",
+      "declared_file_count": 57,
+      "source_sha256": "bceb87f8a34bcfd2354bccef2cf236ed6a0103a2725b4a76e3e3e3721da883e3",
+      "export_sha256": "2a924e6ee27dd7a1eaef0434cdba269fd32d0e4a2fe299e4923bd1542fa1a995"
+    }
+  ],
+  "root_existing_verification_not_repeated": "Root already checked79fileSHA and strict/UV/Babylon separately. This audit follows dependencies; it does not rerun the79entry hashloop or any of those tests. Known entrySHA copied from root-verified freezes; extra dependencySHA explicitly marked.",
+  "conclusion": {
+    "missing_own_master_or_map_found": false,
+    "private_photograph_dependency_required_for_build": false,
+    "private_authored_master_to_promote": [],
+    "cap2_isolated_geometry_missing": false,
+    "public_reconstruction_runtime_executed": false,
+    "public_context_portability_issue": true,
+    "tyre_G4_gate_outside22": true
+  },
+  "findings": [
+    {
+      "id": "TYRE-G4-GATE",
+      "kind": "input_outside_local_freeze_not_private_missing_master",
+      "path": "creative/reviews/rear-tyre-v1/gray-review.json",
+      "sha256": "cf08f89547c9623bd7a658a97540cc7973d9f0a77defec72fefa642cf684b432",
+      "evidence": "material.py line4 hardreads file and asserts gray source/export pin. It exists inrepositoryworktree but not22; record.py explicitly plans it in later finalreviewmanifest.",
+      "action": "Root should include exactgrayreview in coordinated publication/finalmanifest. Restore suppliedG3master andmetadata as documented; never reuse oldreview for changedfreshgeometry."
+    },
+    {
+      "id": "CAP2-ABS-CONTEXT",
+      "kind": "portable_path_defect_context_only",
+      "path": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend",
+      "source_sha256": "bceb87f8a34bcfd2354bccef2cf236ed6a0103a2725b4a76e3e3e3721da883e3",
+      "stored_library_path": "/workspace/wewa-github/assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+      "evidence": "Static LI blockpath; build_v2.py34 explicitlylinks plug2 into SPARK_CAP_V2_IMMUTABLE_GUIDES, exporter44selects only datum/body/contact.",
+      "effect": "Freshcloneatdifferentroot can fail or omit contextlibrary onopening/rebuilding installed-context; not missing cap exportedgeometry and not evidence against standaloneGLB.",
+      "action": "Coordinated additive relocatedworkingcopy/libraryremap with newidentity or documented targetroot; frozenfile/hash unchanged in thisaudit."
+    },
+    {
+      "id": "CAP2-ANCESTOR-ABS-CONTEXT",
+      "kind": "inherited_context_path_issue",
+      "path": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+      "source_sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5",
+      "stored_library_path": "/workspace/wewa-github/assets-src/moto-components/engine-spark-cap/engine-spark-cap-v1.blend",
+      "evidence": "Static LI block in plug2 contextancestor, already public source09; follow dependencycycle without changing it.",
+      "effect": "Second absolute context path in nested opening closure; all target files exist publicly, component volumes remain separate.",
+      "action": "Include in same additiveworkingcopy remap plan, not mutate oldplug2freeze."
+    },
+    {
+      "id": "SHARED-ENV-AND-RENDER",
+      "kind": "outside_local_freeze_already_public_support",
+      "paths": [
+        "tools/blender_component_camera_preflight.py",
+        "tools/requirements-assets.txt",
+        "tools/provenance/blender-4.3.2-provenance.json"
+      ],
+      "evidence": "Tyre render.py imports camerahelper; capCSG calls externalPython with manifold3d/numpy; public requirements andBlenderprovenance exist. recipe_v2.py10 hardcodes localBlenderbinary.",
+      "action": "Document/parameterize workingcopy runtime location for a clone; no proprietaryresource missing. Sharedhelper hash should travel in finalrenderproof, not claim22coversit."
+    }
+  ],
+  "geometry_vs_context_boundary": {
+    "cap_own_geometry": "Body and metalliccontact are local objects inheritedfrom cap1 and rebuiltshoulder in cap2. build_v2 exports datum/body/contact only. material_v2 exports same selection with suppliedoriginalmaps. Linkedplug/head/ancestors are guides not fused or exported.",
+    "rebuild_as_written": "build_v2 still requires exactbasecap1/plug2/head3/report2 because it opensbase and runs explicitinterfaceassertions beforeexport; context is required by this guardedrecipe, even though not exportedgeometry.",
+    "isolated_final_inspection": "Standalone capGLB embeds finalcomponent and maps; immutable capBLEND owncollection can be considered separately from guide availability. This audit does not reopen Blender or retest GLB.",
+    "installed_context_views": "render_v2.py installed-context unhides SPARK_CAP_V2_IMMUTABLE_GUIDES plug2/head3; basecap1 also retains earlier plug1/head3libraryguides. Their nestedLibraries are traced statically below. Portability is separate from geometry.",
+    "full_ancestor_regeneration_boundary": "Frozenbasecap1, plug2 andhead3 are permitted suppliededitable inputs. Rebuilding eachancestorfromscratch is an olderrecipe boundary, not repeated here. build_v2 extracts sectionmesh viaAST only, so it does not execute build.py top-level or require cap1parameters.json for thisv2stage."
+  },
+  "material_generators": [
+    {
+      "component": "rear-tyre-v1",
+      "generator": "assets-src/moto-components/rear-tyre/material.py",
+      "generator_sha256": "c838bd84472afb0f27518d71b9030c1ff245bfce5a05bea16e38203e137ae479",
+      "algorithm": "NumPydefault_rng16003, FFTfiltered Gaussian heights, periodic512×512 normal/ORM,10mmtile; normalstrength0.45. All constants in script; no sourcePNG or privatephoto read.",
+      "seed": 16003,
+      "master": "g3-master-v1 exactsource/GLB/json/README already in22",
+      "input_gate": "gray-review.json outside22, present notonlyprivate",
+      "output_maps": [
+        "assets-src/moto-components/rear-tyre/textures/rear-tyre-original-normal.png",
+        "assets-src/moto-components/rear-tyre/textures/rear-tyre-original-metallic-roughness.png"
+      ],
+      "maps_packed_by_code": true
+    },
+    {
+      "component": "engine-spark-cap-v2",
+      "generator": "assets-src/moto-components/engine-spark-cap/material_v2.py",
+      "generator_sha256": "c5f1aa38a186cb233f3e728ce3f19d66f113bec0da7200c44907aebd0a752ae8",
+      "algorithm": "Localmetre coordinates→Blender4Dnoise W17.391→6µmbump and roughness0.46–0.58→CyclesNORMAL/EMITbake in nativeUVatlas2048². No inputPNG/masterimage or photo read.",
+      "noise_seed_W": 17.391,
+      "parameters": "parameters-v2.json original_grain",
+      "master": "v2geometry andv2topology BLEND+reports supplied in57",
+      "output_maps": [
+        "assets-src/moto-components/engine-spark-cap/textures/cap-grain-normal-v2.png",
+        "assets-src/moto-components/engine-spark-cap/textures/cap-grain-roughness-v2.png"
+      ],
+      "maps_packed_by_code": true
+    }
+  ],
+  "dependency_files": [
+    {
+      "path": "assets-src/moto-components/rear-tyre/build.py",
+      "exists_in_workspace": true,
+      "sha256": "0d38016213dfc5a36f660a84002d3e22f752b891ed4c64ac4bcb0dbbca8e7bed",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": true,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [],
+      "role": "Native geometry generator, no external asset load",
+      "needed_for": [
+        "tyre geometry/G4"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/parameters.json",
+      "exists_in_workspace": true,
+      "sha256": "33a99669b5554ba1a4e8930eecadb4a14c44debcfc215b1fc4b4fbb85ee44b4f",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": true,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [],
+      "role": "Estimated profile/groove parameters",
+      "needed_for": [
+        "tyre geometry/G4"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/material.py",
+      "exists_in_workspace": true,
+      "sha256": "c838bd84472afb0f27518d71b9030c1ff245bfce5a05bea16e38203e137ae479",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": true,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [],
+      "role": "Original seed16003 map generator and material/export stage",
+      "needed_for": [
+        "tyre geometry/G4"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/textures/rear-tyre-original-normal.png",
+      "exists_in_workspace": true,
+      "sha256": "b9a9238165ffbaa5c7963dac848190bcdcdf5f1f14cab8e120f90fb930a24df3",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": true,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [],
+      "role": "Original generated normal, supplied/packed",
+      "needed_for": [
+        "tyre geometry/G4"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/textures/rear-tyre-original-metallic-roughness.png",
+      "exists_in_workspace": true,
+      "sha256": "ff8bdf0c40e3f637524de6f4e2141e4dfbfe8fc7c18d61dc57073ff28367e132",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": true,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [],
+      "role": "Original generated ORM, supplied/packed",
+      "needed_for": [
+        "tyre geometry/G4"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/g3-master-v1/rear-tyre-v1.blend",
+      "exists_in_workspace": true,
+      "sha256": "a8c7479df851c41d9407c55217ae3706f6994761349cb69298124feeeb70f600",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": true,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [],
+      "role": "Exact gray master for G4 replay",
+      "needed_for": [
+        "tyre geometry/G4"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/g3-master-v1/rear-tyre-inspection.glb",
+      "exists_in_workspace": true,
+      "sha256": "16ff10ebd30ec0695e0e532a922ca0de5e0b631c200f3753c2a7b30067249f1e",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": true,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [],
+      "role": "Exact gray export witness",
+      "needed_for": [
+        "tyre geometry/G4"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/g3-master-v1/source-geometry-check.json",
+      "exists_in_workspace": true,
+      "sha256": "debb780725111f2cfa674f4a72cb4cfb3420b68e9eba54526c12ea3d976a031d",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": true,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [],
+      "role": "Exact gray metadata to restore at review output path",
+      "needed_for": [
+        "tyre geometry/G4"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/g3-master-v1/README.md",
+      "exists_in_workspace": true,
+      "sha256": "c164ff5428efbcd48e73af18006bb982b4f07174eb5e211d8b0fa4a7879667c6",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": true,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [],
+      "role": "Restoration instruction; fresh generatedBlend may differ containerSHA",
+      "needed_for": [
+        "tyre geometry/G4"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "creative/reviews/rear-tyre-v1/gray-review.json",
+      "exists_in_workspace": true,
+      "sha256": "cf08f89547c9623bd7a658a97540cc7973d9f0a77defec72fefa642cf684b432",
+      "sha_basis": "computed_this_static_dependency_audit",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": false,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [],
+      "role": "Hard material gate read at material.py line4; outside freeze22",
+      "needed_for": [
+        "tyre geometry/G4"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "creative/reviews/rear-tyre-v1/source-geometry-check.json",
+      "exists_in_workspace": true,
+      "sha256": "aebc9b99d5f866ee27abb2df215c727355de5dfe6c8679ebf3c9b3b3f4281aef",
+      "sha_basis": "computed_this_static_dependency_audit",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": false,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [],
+      "role": "Material.py line19 output metadata input; master copy supplied separately",
+      "needed_for": [
+        "tyre geometry/G4"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/render.py",
+      "exists_in_workspace": true,
+      "sha256": "53a9fef7b8229c912beb0b8064dac5b5d73d47faba5de1c22f4d32fcb93f22a9",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": true,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [],
+      "role": "Render-only entrypoint, no new render performed",
+      "needed_for": [
+        "tyre view regeneration"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "tools/blender_component_camera_preflight.py",
+      "exists_in_workspace": true,
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a",
+      "sha_basis": "computed_this_static_dependency_audit",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [],
+      "role": "Render-only helper imported by tyre render.py; public sharedtool outside22",
+      "needed_for": [
+        "tyre view regeneration"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/build_v2.py",
+      "exists_in_workspace": true,
+      "sha256": "3e3351fbda8583b637a3fde56ec98d8aa2b0673cbae7c483ae337d10a5f991ae",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "3e3351fbda8583b637a3fde56ec98d8aa2b0673cbae7c483ae337d10a5f991ae"
+        }
+      ],
+      "role": "Refines shoulder using local basecap geometry, loads context for interface assertions",
+      "needed_for": [
+        "cap2 isolated recipe"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/build.py",
+      "exists_in_workspace": true,
+      "sha256": "79876682376cfc06cdc9ca65bdfcc4c080d82c5a243e5ead2a78e75e0ba9e2df",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-supplement-v1/recipe-manifest.json",
+          "sha256": "79876682376cfc06cdc9ca65bdfcc4c080d82c5a243e5ead2a78e75e0ba9e2df"
+        },
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v1/review-manifest.json",
+          "sha256": "79876682376cfc06cdc9ca65bdfcc4c080d82c5a243e5ead2a78e75e0ba9e2df"
+        },
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v1/review-manifest.json",
+          "sha256": "79876682376cfc06cdc9ca65bdfcc4c080d82c5a243e5ead2a78e75e0ba9e2df"
+        }
+      ],
+      "role": "Only sectionmesh FunctionDef extracted by AST, v1top-level NOT executed",
+      "needed_for": [
+        "cap2 isolated recipe"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/parameters-v2.json",
+      "exists_in_workspace": true,
+      "sha256": "e910017b385705a5fe094587239a851f1727f0b8fdae710dc1c67904af8631fc",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "e910017b385705a5fe094587239a851f1727f0b8fdae710dc1c67904af8631fc"
+        }
+      ],
+      "role": "Base/plug/head exactpins, seam/shoulder/grain parameters",
+      "needed_for": [
+        "cap2 isolated recipe"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/shoulder_profile_v2.py",
+      "exists_in_workspace": true,
+      "sha256": "41793e65b87a0ad87d8639e3d09a80e5945119b5435c5ed51ddab1011a6adc94",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "41793e65b87a0ad87d8639e3d09a80e5945119b5435c5ed51ddab1011a6adc94"
+        }
+      ],
+      "role": "Bounded shoulder analytic helper",
+      "needed_for": [
+        "cap2 isolated recipe"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/topology_stage_v2.py",
+      "exists_in_workspace": true,
+      "sha256": "3904320aadf4824090f98cf1882fdb4c4fcf79538149cf26722052d5a634300d",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "3904320aadf4824090f98cf1882fdb4c4fcf79538149cf26722052d5a634300d"
+        }
+      ],
+      "role": "One source diagonal operation; reads geometrygraystage/report",
+      "needed_for": [
+        "cap2 isolated recipe"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/material_v2.py",
+      "exists_in_workspace": true,
+      "sha256": "c5f1aa38a186cb233f3e728ce3f19d66f113bec0da7200c44907aebd0a752ae8",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "c5f1aa38a186cb233f3e728ce3f19d66f113bec0da7200c44907aebd0a752ae8"
+        }
+      ],
+      "role": "Original local4Dnoise bake; reads topologygraystage/report",
+      "needed_for": [
+        "cap2 isolated recipe"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/recipe_v2.py",
+      "exists_in_workspace": true,
+      "sha256": "c528efec568472e764cd240046b80d18e1fb1cd7e8c0d4708ef49b4b64a0ae2d",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "c528efec568472e764cd240046b80d18e1fb1cd7e8c0d4708ef49b4b64a0ae2d"
+        }
+      ],
+      "role": "Three-stage orchestrator with hardcoded Blenderbinary and freeze guard",
+      "needed_for": [
+        "cap2 isolated recipe"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v1.blend",
+      "exists_in_workspace": true,
+      "sha256": "69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-spark2-v1/recipe-manifest.json",
+          "sha256": "69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d"
+        },
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-supplement-v1/recipe-manifest.json",
+          "sha256": "69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d"
+        },
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v1/review-manifest.json",
+          "sha256": "69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d"
+        }
+      ],
+      "role": "Immutable base own geometry/construction/contact and inherited datum",
+      "needed_for": [
+        "cap2 isolated recipe"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2-geometry.blend",
+      "exists_in_workspace": true,
+      "sha256": "c2271ab276992dc96c80039512703197098330299859030e68f617d78a7c05da",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "c2271ab276992dc96c80039512703197098330299859030e68f617d78a7c05da"
+        }
+      ],
+      "role": "Gray source before local topology",
+      "needed_for": [
+        "cap2 isolated recipe"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2-topology.blend",
+      "exists_in_workspace": true,
+      "sha256": "da4648f5f2a29ab96819bfe9b52ba719a5d75eba0955c57c0ce6252ab6f5154b",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "da4648f5f2a29ab96819bfe9b52ba719a5d75eba0955c57c0ce6252ab6f5154b"
+        }
+      ],
+      "role": "Gray source before UV/bake",
+      "needed_for": [
+        "cap2 isolated recipe"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/geometry-report-v2.json",
+      "exists_in_workspace": true,
+      "sha256": "4d02766265b8b3cf38cf91258342a20ebb25791adbf82980191290cb8bc97c04",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "4d02766265b8b3cf38cf91258342a20ebb25791adbf82980191290cb8bc97c04"
+        }
+      ],
+      "role": "Input topology stage",
+      "needed_for": [
+        "cap2 isolated recipe"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/topology-report-v2.json",
+      "exists_in_workspace": true,
+      "sha256": "7b4da68b04e48796324365a5c37e481cfbff5f7002d62ca5eea6e516c648b81a",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "7b4da68b04e48796324365a5c37e481cfbff5f7002d62ca5eea6e516c648b81a"
+        }
+      ],
+      "role": "Input material stage",
+      "needed_for": [
+        "cap2 isolated recipe"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/textures/cap-grain-normal-v2.png",
+      "exists_in_workspace": true,
+      "sha256": "d3ba6b878e974a6304f6826c1dde316d1b53353ad619439bea5fe918f0895837",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "d3ba6b878e974a6304f6826c1dde316d1b53353ad619439bea5fe918f0895837"
+        }
+      ],
+      "role": "Original baked normal supplied and packed",
+      "needed_for": [
+        "cap2 isolated recipe"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/textures/cap-grain-roughness-v2.png",
+      "exists_in_workspace": true,
+      "sha256": "1ec65fdc2bc8b0d6f19c02cabc6ef51eec7504858e4ec3ecba3c6697252cdd90",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "1ec65fdc2bc8b0d6f19c02cabc6ef51eec7504858e4ec3ecba3c6697252cdd90"
+        }
+      ],
+      "role": "Original baked roughness supplied and packed",
+      "needed_for": [
+        "cap2 isolated recipe"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/render_v2.py",
+      "exists_in_workspace": true,
+      "sha256": "65321a73c3dcab9972b3e6b9b668344d8cb689244a0c53c5d2ecefb40615016f",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "65321a73c3dcab9972b3e6b9b668344d8cb689244a0c53c5d2ecefb40615016f"
+        }
+      ],
+      "role": "Render-only contextswitch/hashes",
+      "needed_for": [
+        "cap2 view regeneration"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/render_checkpoint.py",
+      "exists_in_workspace": true,
+      "sha256": "3b5ade95f0323f0df3425e6d5c0ea19d36b17674b40e5aa8413819039d5c602d",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v1/review-manifest.json",
+          "sha256": "3b5ade95f0323f0df3425e6d5c0ea19d36b17674b40e5aa8413819039d5c602d"
+        },
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v1/review-manifest.json",
+          "sha256": "3b5ade95f0323f0df3425e6d5c0ea19d36b17674b40e5aa8413819039d5c602d"
+        },
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "3b5ade95f0323f0df3425e6d5c0ea19d36b17674b40e5aa8413819039d5c602d"
+        }
+      ],
+      "role": "Render-only protocol",
+      "needed_for": [
+        "cap2 view regeneration"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/camera_preflight.py",
+      "exists_in_workspace": true,
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v1/review-manifest.json",
+          "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        },
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v1/review-manifest.json",
+          "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        },
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        }
+      ],
+      "role": "Render-only camerahelper",
+      "needed_for": [
+        "cap2 view regeneration"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/throttle-control/control_geometry.py",
+      "exists_in_workspace": true,
+      "sha256": "430351cb8ef4877a2575174958e86d998664d8dd5941a9d5cb74ff22f47ffe8c",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication08-v1/recipe-manifest.json",
+          "sha256": "430351cb8ef4877a2575174958e86d998664d8dd5941a9d5cb74ff22f47ffe8c"
+        },
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-spark2-v1/recipe-manifest.json",
+          "sha256": "430351cb8ef4877a2575174958e86d998664d8dd5941a9d5cb74ff22f47ffe8c"
+        },
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-supplement-v1/recipe-manifest.json",
+          "sha256": "430351cb8ef4877a2575174958e86d998664d8dd5941a9d5cb74ff22f47ffe8c"
+        }
+      ],
+      "role": "Imported construction/CSG/exporthelper",
+      "needed_for": [
+        "cap2 recipe/interface/context"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/clutch-control/topology_cleanup_v2.py",
+      "exists_in_workspace": true,
+      "sha256": "a32cd80f2575b54dd5b40ddb84f68c3913fc0a55a26410c1131bb10f9e4dd942",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication08-v1/recipe-manifest.json",
+          "sha256": "a32cd80f2575b54dd5b40ddb84f68c3913fc0a55a26410c1131bb10f9e4dd942"
+        },
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-supplement-v1/recipe-manifest.json",
+          "sha256": "a32cd80f2575b54dd5b40ddb84f68c3913fc0a55a26410c1131bb10f9e4dd942"
+        },
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+          "sha256": "a32cd80f2575b54dd5b40ddb84f68c3913fc0a55a26410c1131bb10f9e4dd942"
+        }
+      ],
+      "role": "Imported cleanuphelper",
+      "needed_for": [
+        "cap2 recipe/interface/context"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/front-brake-plate/csg.py",
+      "exists_in_workspace": true,
+      "sha256": "947178b2be8a9a5a0336b619692f62503c9d0921da9cac033e91771343bd707e",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication08-v1/recipe-manifest.json",
+          "sha256": "947178b2be8a9a5a0336b619692f62503c9d0921da9cac033e91771343bd707e"
+        },
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-supplement-v1/recipe-manifest.json",
+          "sha256": "947178b2be8a9a5a0336b619692f62503c9d0921da9cac033e91771343bd707e"
+        },
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+          "sha256": "947178b2be8a9a5a0336b619692f62503c9d0921da9cac033e91771343bd707e"
+        }
+      ],
+      "role": "Subprocess invoked by control_geometry.csg; imports externalmanifold3d/numpy",
+      "needed_for": [
+        "cap2 recipe/interface/context"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/build-report-v2.json",
+      "exists_in_workspace": true,
+      "sha256": "7004972dfa705c24b35f54bb7145ca085bcf8296d428587368842ca4585a4ac0",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-spark2-v1/recipe-manifest.json",
+          "sha256": "7004972dfa705c24b35f54bb7145ca085bcf8296d428587368842ca4585a4ac0"
+        },
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "7004972dfa705c24b35f54bb7145ca085bcf8296d428587368842ca4585a4ac0"
+        },
+        {
+          "manifest": "creative/reviews/engine-spark-plug-v2/review-manifest.json",
+          "sha256": "7004972dfa705c24b35f54bb7145ca085bcf8296d428587368842ca4585a4ac0"
+        }
+      ],
+      "role": "Names of guide plug2 meshes used in interface assertions and installed context",
+      "needed_for": [
+        "cap2 recipe/interface/context"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+      "exists_in_workspace": true,
+      "sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-spark2-v1/recipe-manifest.json",
+          "sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5"
+        },
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5"
+        },
+        {
+          "manifest": "creative/reviews/engine-spark-plug-v2/production-manifest.json",
+          "sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5"
+        }
+      ],
+      "role": "Context guide, NOT exported cap mesh",
+      "needed_for": [
+        "cap2 recipe/interface/context"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v1.blend",
+      "exists_in_workspace": true,
+      "sha256": "a797527ddb7a291d89b4280d7d8cead24ef1d0388732b275958a649020f4253c",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-spark2-v1/recipe-manifest.json",
+          "sha256": "a797527ddb7a291d89b4280d7d8cead24ef1d0388732b275958a649020f4253c"
+        },
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-supplement-v1/recipe-manifest.json",
+          "sha256": "a797527ddb7a291d89b4280d7d8cead24ef1d0388732b275958a649020f4253c"
+        },
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v1/review-manifest.json",
+          "sha256": "a797527ddb7a291d89b4280d7d8cead24ef1d0388732b275958a649020f4253c"
+        }
+      ],
+      "role": "Inherited context guide from basecap1",
+      "needed_for": [
+        "cap2 recipe/interface/context"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+      "exists_in_workspace": true,
+      "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-spark2-v1/recipe-manifest.json",
+          "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+        },
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-supplement-v1/recipe-manifest.json",
+          "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+        },
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+          "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+        }
+      ],
+      "role": "Context head guide, NOT exported cap mesh",
+      "needed_for": [
+        "cap2 recipe/interface/context"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend",
+      "exists_in_workspace": true,
+      "sha256": "bceb87f8a34bcfd2354bccef2cf236ed6a0103a2725b4a76e3e3e3721da883e3",
+      "sha_basis": "declared_in_input_freeze_already_checked_by_root",
+      "in_git_index_at_snapshot": false,
+      "in_tyre22": false,
+      "in_cap57": true,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+          "sha256": "bceb87f8a34bcfd2354bccef2cf236ed6a0103a2725b4a76e3e3e3721da883e3"
+        }
+      ],
+      "role": "Transitive context library (source09/older archive), NOT exported cap mesh",
+      "needed_for": [
+        "context library opening; possible Blender transitive resolution"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+      "exists_in_workspace": true,
+      "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6",
+      "sha_basis": "computed_this_static_dependency_audit",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication08-v1/recipe-manifest.json",
+          "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6"
+        },
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+          "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6"
+        },
+        {
+          "manifest": "creative/reviews/engine-head-v3/review-manifest.json",
+          "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6"
+        }
+      ],
+      "role": "Transitive context library (source09/older archive), NOT exported cap mesh",
+      "needed_for": [
+        "context library opening; possible Blender transitive resolution"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+      "exists_in_workspace": true,
+      "sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45",
+      "sha_basis": "computed_this_static_dependency_audit",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+          "sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45"
+        },
+        {
+          "manifest": "creative/reviews/engine-head-v3/review-manifest.json",
+          "sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45"
+        },
+        {
+          "manifest": "creative/reviews/engine-head-v3/review-manifest.json",
+          "sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45"
+        }
+      ],
+      "role": "Transitive context library (source09/older archive), NOT exported cap mesh",
+      "needed_for": [
+        "context library opening; possible Blender transitive resolution"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+      "exists_in_workspace": true,
+      "sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9",
+      "sha_basis": "computed_this_static_dependency_audit",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+          "sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9"
+        },
+        {
+          "manifest": "creative/reviews/engine-head-v3/review-manifest.json",
+          "sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9"
+        },
+        {
+          "manifest": "creative/reviews/engine-head-v3/review-manifest.json",
+          "sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9"
+        }
+      ],
+      "role": "Transitive context library (source09/older archive), NOT exported cap mesh",
+      "needed_for": [
+        "context library opening; possible Blender transitive resolution"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-cover-left/engine-cover-left-v2.blend",
+      "exists_in_workspace": true,
+      "sha256": "f168aa9ef3e3c6e9b7bc2e884309d69da6fab736660ec6c8d1eaa29e7ecffe74",
+      "sha_basis": "computed_this_static_dependency_audit",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-cover-left-v2/production-manifest.json",
+          "sha256": "f168aa9ef3e3c6e9b7bc2e884309d69da6fab736660ec6c8d1eaa29e7ecffe74"
+        },
+        {
+          "manifest": "creative/reviews/engine-cover-left-v2/review-manifest.json",
+          "sha256": "f168aa9ef3e3c6e9b7bc2e884309d69da6fab736660ec6c8d1eaa29e7ecffe74"
+        },
+        {
+          "manifest": "creative/reviews/engine-cylinder-v1/review-manifest.json",
+          "sha256": "f168aa9ef3e3c6e9b7bc2e884309d69da6fab736660ec6c8d1eaa29e7ecffe74"
+        }
+      ],
+      "role": "Transitive context library (source09/older archive), NOT exported cap mesh",
+      "needed_for": [
+        "context library opening; possible Blender transitive resolution"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-cover-right/engine-cover-right-v2.blend",
+      "exists_in_workspace": true,
+      "sha256": "2558ea2479a02caf14e9feddad3f953f5587269083ae7b125a177acd4621515a",
+      "sha_basis": "computed_this_static_dependency_audit",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-cover-right-v2/production-manifest.json",
+          "sha256": "2558ea2479a02caf14e9feddad3f953f5587269083ae7b125a177acd4621515a"
+        },
+        {
+          "manifest": "creative/reviews/engine-cover-right-v2/review-manifest.json",
+          "sha256": "2558ea2479a02caf14e9feddad3f953f5587269083ae7b125a177acd4621515a"
+        },
+        {
+          "manifest": "creative/reviews/engine-cylinder-v1/review-manifest.json",
+          "sha256": "2558ea2479a02caf14e9feddad3f953f5587269083ae7b125a177acd4621515a"
+        }
+      ],
+      "role": "Transitive context library (source09/older archive), NOT exported cap mesh",
+      "needed_for": [
+        "context library opening; possible Blender transitive resolution"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/engine-head-v2.blend",
+      "exists_in_workspace": true,
+      "sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f",
+      "sha_basis": "computed_this_static_dependency_audit",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication08-v1/recipe-manifest.json",
+          "sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f"
+        },
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+          "sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f"
+        },
+        {
+          "manifest": "creative/reviews/engine-head-v2/production-manifest.json",
+          "sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f"
+        }
+      ],
+      "role": "Transitive context library (source09/older archive), NOT exported cap mesh",
+      "needed_for": [
+        "context library opening; possible Blender transitive resolution"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-output-cover-left/engine-output-cover-left-v1.blend",
+      "exists_in_workspace": true,
+      "sha256": "92f528236a8d9e94669b0eed18e186cb8a2c46612bfb7200907cd6a9abc79399",
+      "sha_basis": "computed_this_static_dependency_audit",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-cover-left-v2/review-manifest.json",
+          "sha256": "92f528236a8d9e94669b0eed18e186cb8a2c46612bfb7200907cd6a9abc79399"
+        },
+        {
+          "manifest": "creative/reviews/engine-output-cover-left-v1/production-manifest.json",
+          "sha256": "92f528236a8d9e94669b0eed18e186cb8a2c46612bfb7200907cd6a9abc79399"
+        },
+        {
+          "manifest": "creative/reviews/engine-output-cover-left-v1/review-manifest.json",
+          "sha256": "92f528236a8d9e94669b0eed18e186cb8a2c46612bfb7200907cd6a9abc79399"
+        }
+      ],
+      "role": "Transitive context library (source09/older archive), NOT exported cap mesh",
+      "needed_for": [
+        "context library opening; possible Blender transitive resolution"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "assets-src/moto-components/engine-cover-left/engine-cover-left-v1.blend",
+      "exists_in_workspace": true,
+      "sha256": "7e27606ef19b7a49e932ac13841b1da15c6d0d4936f1cef8f095bb233c3ce1d4",
+      "sha_basis": "computed_this_static_dependency_audit",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/reviews/engine-cover-left-v1/production-manifest.json",
+          "sha256": "7e27606ef19b7a49e932ac13841b1da15c6d0d4936f1cef8f095bb233c3ce1d4"
+        },
+        {
+          "manifest": "creative/reviews/engine-cover-left-v1/review-manifest.json",
+          "sha256": "7e27606ef19b7a49e932ac13841b1da15c6d0d4936f1cef8f095bb233c3ce1d4"
+        }
+      ],
+      "role": "Transitive context library (source09/older archive), NOT exported cap mesh",
+      "needed_for": [
+        "context library opening; possible Blender transitive resolution"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "tools/requirements-assets.txt",
+      "exists_in_workspace": true,
+      "sha256": "d37fb80e0a2bf34bf6e388eb968a144b27ce368350d49a9df4ae2b7aa30d2447",
+      "sha_basis": "computed_this_static_dependency_audit",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication08-v1/recipe-manifest.json",
+          "sha256": "d37fb80e0a2bf34bf6e388eb968a144b27ce368350d49a9df4ae2b7aa30d2447"
+        },
+        {
+          "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+          "sha256": "d37fb80e0a2bf34bf6e388eb968a144b27ce368350d49a9df4ae2b7aa30d2447"
+        }
+      ],
+      "role": "ExternalsystemPython CSG package pinsmanifold3d3.3.2/numpy2.3.5",
+      "needed_for": [
+        "environment provisioning, not private asset"
+      ],
+      "private_only": false
+    },
+    {
+      "path": "tools/provenance/blender-4.3.2-provenance.json",
+      "exists_in_workspace": true,
+      "sha256": "4ec5c5e12a9d8728c04ae6ee262aa3828d570b103d7fbcafde86b86f102fd5f7",
+      "sha_basis": "computed_this_static_dependency_audit",
+      "in_git_index_at_snapshot": true,
+      "in_tyre22": false,
+      "in_cap57": false,
+      "other_recipe_or_prior_manifest_coverage": [],
+      "role": "Public Blender4.3.2 download/checksum provenance",
+      "needed_for": [
+        "environment provisioning, not private asset"
+      ],
+      "private_only": false
+    }
+  ],
+  "static_python_imports_read": [
+    {
+      "path": "assets-src/moto-components/rear-tyre/build.py",
+      "sha256": "0d38016213dfc5a36f660a84002d3e22f752b891ed4c64ac4bcb0dbbca8e7bed",
+      "imports": [
+        "bisect",
+        "bmesh",
+        "bpy",
+        "hashlib",
+        "json",
+        "math",
+        "mathutils",
+        "mathutils.bvhtree",
+        "mathutils.geometry",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/material.py",
+      "sha256": "c838bd84472afb0f27518d71b9030c1ff245bfce5a05bea16e38203e137ae479",
+      "imports": [
+        "bpy",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/rear-tyre/render.py",
+      "sha256": "53a9fef7b8229c912beb0b8064dac5b5d73d47faba5de1c22f4d32fcb93f22a9",
+      "imports": [
+        "blender_component_camera_preflight",
+        "bpy",
+        "hashlib",
+        "json",
+        "mathutils",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/build_v2.py",
+      "sha256": "3e3351fbda8583b637a3fde56ec98d8aa2b0673cbae7c483ae337d10a5f991ae",
+      "imports": [
+        "array",
+        "ast",
+        "bpy",
+        "control_geometry",
+        "hashlib",
+        "json",
+        "math",
+        "mathutils",
+        "pathlib",
+        "shoulder_profile_v2",
+        "sys",
+        "topology_cleanup_v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/build.py",
+      "sha256": "79876682376cfc06cdc9ca65bdfcc4c080d82c5a243e5ead2a78e75e0ba9e2df",
+      "imports": [
+        "bmesh",
+        "bpy",
+        "control_geometry",
+        "hashlib",
+        "json",
+        "math",
+        "mathutils",
+        "pathlib",
+        "sys",
+        "topology_cleanup_v2"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/topology_stage_v2.py",
+      "sha256": "3904320aadf4824090f98cf1882fdb4c4fcf79538149cf26722052d5a634300d",
+      "imports": [
+        "bmesh",
+        "bpy",
+        "control_geometry",
+        "hashlib",
+        "json",
+        "math",
+        "mathutils",
+        "mathutils.bvhtree",
+        "numpy",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/material_v2.py",
+      "sha256": "c5f1aa38a186cb233f3e728ce3f19d66f113bec0da7200c44907aebd0a752ae8",
+      "imports": [
+        "array",
+        "bpy",
+        "hashlib",
+        "json",
+        "math",
+        "numpy",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/recipe_v2.py",
+      "sha256": "c528efec568472e764cd240046b80d18e1fb1cd7e8c0d4708ef49b4b64a0ae2d",
+      "imports": [
+        "pathlib",
+        "shutil",
+        "subprocess"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/shoulder_profile_v2.py",
+      "sha256": "41793e65b87a0ad87d8639e3d09a80e5945119b5435c5ed51ddab1011a6adc94",
+      "imports": [
+        "math"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/throttle-control/control_geometry.py",
+      "sha256": "430351cb8ef4877a2575174958e86d998664d8dd5941a9d5cb74ff22f47ffe8c",
+      "imports": [
+        "bmesh",
+        "bpy",
+        "json",
+        "math",
+        "mathutils",
+        "mathutils.bvhtree",
+        "pathlib",
+        "shutil",
+        "subprocess",
+        "tempfile"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/front-brake-plate/csg.py",
+      "sha256": "947178b2be8a9a5a0336b619692f62503c9d0921da9cac033e91771343bd707e",
+      "imports": [
+        "importlib.metadata",
+        "json",
+        "manifold3d",
+        "numpy",
+        "sys"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/clutch-control/topology_cleanup_v2.py",
+      "sha256": "a32cd80f2575b54dd5b40ddb84f68c3913fc0a55a26410c1131bb10f9e4dd942",
+      "imports": [
+        "bmesh",
+        "bpy",
+        "math",
+        "mathutils.bvhtree",
+        "mathutils.kdtree"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/render_v2.py",
+      "sha256": "65321a73c3dcab9972b3e6b9b668344d8cb689244a0c53c5d2ecefb40615016f",
+      "imports": [
+        "bpy",
+        "camera_preflight",
+        "hashlib",
+        "json",
+        "mathutils",
+        "pathlib",
+        "render_checkpoint",
+        "sys"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/render_checkpoint.py",
+      "sha256": "3b5ade95f0323f0df3425e6d5c0ea19d36b17674b40e5aa8413819039d5c602d",
+      "imports": [
+        "bpy",
+        "hashlib",
+        "json",
+        "os",
+        "pathlib",
+        "sys"
+      ]
+    }
+  ],
+  "context_library_closure": {
+    "method": "Zstandard stream+BHead LI blocks and ASCII path fields, static; no Blender open/evaluation",
+    "root": "/workspace/wewa-github",
+    "files": [
+      {
+        "file": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend",
+        "exists": true,
+        "library_links": [
+          {
+            "stored_path": "//../engine-head/engine-head-v3.blend",
+            "path_kind": "relative",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-head/engine-head-v3.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+            "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+            "in_cap57": true,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-spark2-v1/recipe-manifest.json",
+                "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+              },
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-supplement-v1/recipe-manifest.json",
+                "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+              },
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+                "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+              }
+            ]
+          },
+          {
+            "stored_path": "//../engine-spark-plug/engine-spark-plug-v1.blend",
+            "path_kind": "relative",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-spark-plug/engine-spark-plug-v1.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v1.blend",
+            "sha256": "a797527ddb7a291d89b4280d7d8cead24ef1d0388732b275958a649020f4253c",
+            "in_cap57": true,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-spark2-v1/recipe-manifest.json",
+                "sha256": "a797527ddb7a291d89b4280d7d8cead24ef1d0388732b275958a649020f4253c"
+              },
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-supplement-v1/recipe-manifest.json",
+                "sha256": "a797527ddb7a291d89b4280d7d8cead24ef1d0388732b275958a649020f4253c"
+              },
+              {
+                "manifest": "creative/reviews/engine-spark-cap-v1/review-manifest.json",
+                "sha256": "a797527ddb7a291d89b4280d7d8cead24ef1d0388732b275958a649020f4253c"
+              }
+            ]
+          },
+          {
+            "stored_path": "/workspace/wewa-github/assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+            "path_kind": "absolute",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+            "sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5",
+            "in_cap57": true,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-spark2-v1/recipe-manifest.json",
+                "sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5"
+              },
+              {
+                "manifest": "creative/reviews/engine-spark-cap-v2/review-manifest.json",
+                "sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5"
+              },
+              {
+                "manifest": "creative/reviews/engine-spark-plug-v2/production-manifest.json",
+                "sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "file": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+        "exists": true,
+        "library_links": [
+          {
+            "stored_path": "//../engine-cylinder/engine-cylinder-v1.blend",
+            "path_kind": "relative",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+            "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6",
+            "in_cap57": false,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication08-v1/recipe-manifest.json",
+                "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6"
+              },
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+                "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6"
+              },
+              {
+                "manifest": "creative/reviews/engine-head-v3/review-manifest.json",
+                "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6"
+              }
+            ]
+          },
+          {
+            "stored_path": "//../engine-ohc-cover/engine-ohc-cover-v1.blend",
+            "path_kind": "relative",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+            "sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45",
+            "in_cap57": false,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+                "sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45"
+              },
+              {
+                "manifest": "creative/reviews/engine-head-v3/review-manifest.json",
+                "sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45"
+              },
+              {
+                "manifest": "creative/reviews/engine-head-v3/review-manifest.json",
+                "sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45"
+              }
+            ]
+          },
+          {
+            "stored_path": "//../engine-tappet-cap/engine-tappet-cap-v1.blend",
+            "path_kind": "relative",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+            "sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9",
+            "in_cap57": false,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+                "sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9"
+              },
+              {
+                "manifest": "creative/reviews/engine-head-v3/review-manifest.json",
+                "sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9"
+              },
+              {
+                "manifest": "creative/reviews/engine-head-v3/review-manifest.json",
+                "sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "file": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v1.blend",
+        "exists": true,
+        "library_links": [
+          {
+            "stored_path": "//../engine-head/engine-head-v3.blend",
+            "path_kind": "relative",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-head/engine-head-v3.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+            "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+            "in_cap57": true,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-spark2-v1/recipe-manifest.json",
+                "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+              },
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-supplement-v1/recipe-manifest.json",
+                "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+              },
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+                "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "file": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+        "exists": true,
+        "library_links": [
+          {
+            "stored_path": "//../engine-head/engine-head-v3.blend",
+            "path_kind": "relative",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-head/engine-head-v3.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+            "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+            "in_cap57": true,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-spark2-v1/recipe-manifest.json",
+                "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+              },
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-supplement-v1/recipe-manifest.json",
+                "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+              },
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+                "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+              }
+            ]
+          },
+          {
+            "stored_path": "/workspace/wewa-github/assets-src/moto-components/engine-spark-cap/engine-spark-cap-v1.blend",
+            "path_kind": "absolute",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-spark-cap/engine-spark-cap-v1.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v1.blend",
+            "sha256": "69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d",
+            "in_cap57": true,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-spark2-v1/recipe-manifest.json",
+                "sha256": "69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d"
+              },
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-supplement-v1/recipe-manifest.json",
+                "sha256": "69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d"
+              },
+              {
+                "manifest": "creative/reviews/engine-spark-cap-v1/review-manifest.json",
+                "sha256": "69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "file": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+        "exists": true,
+        "library_links": [
+          {
+            "stored_path": "//../engine-cover-left/engine-cover-left-v2.blend",
+            "path_kind": "relative",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-cover-left/engine-cover-left-v2.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-cover-left/engine-cover-left-v2.blend",
+            "sha256": "f168aa9ef3e3c6e9b7bc2e884309d69da6fab736660ec6c8d1eaa29e7ecffe74",
+            "in_cap57": false,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/reviews/engine-cover-left-v2/production-manifest.json",
+                "sha256": "f168aa9ef3e3c6e9b7bc2e884309d69da6fab736660ec6c8d1eaa29e7ecffe74"
+              },
+              {
+                "manifest": "creative/reviews/engine-cover-left-v2/review-manifest.json",
+                "sha256": "f168aa9ef3e3c6e9b7bc2e884309d69da6fab736660ec6c8d1eaa29e7ecffe74"
+              },
+              {
+                "manifest": "creative/reviews/engine-cylinder-v1/review-manifest.json",
+                "sha256": "f168aa9ef3e3c6e9b7bc2e884309d69da6fab736660ec6c8d1eaa29e7ecffe74"
+              }
+            ]
+          },
+          {
+            "stored_path": "//../engine-cover-right/engine-cover-right-v2.blend",
+            "path_kind": "relative",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-cover-right/engine-cover-right-v2.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-cover-right/engine-cover-right-v2.blend",
+            "sha256": "2558ea2479a02caf14e9feddad3f953f5587269083ae7b125a177acd4621515a",
+            "in_cap57": false,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/reviews/engine-cover-right-v2/production-manifest.json",
+                "sha256": "2558ea2479a02caf14e9feddad3f953f5587269083ae7b125a177acd4621515a"
+              },
+              {
+                "manifest": "creative/reviews/engine-cover-right-v2/review-manifest.json",
+                "sha256": "2558ea2479a02caf14e9feddad3f953f5587269083ae7b125a177acd4621515a"
+              },
+              {
+                "manifest": "creative/reviews/engine-cylinder-v1/review-manifest.json",
+                "sha256": "2558ea2479a02caf14e9feddad3f953f5587269083ae7b125a177acd4621515a"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "file": "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+        "exists": true,
+        "library_links": [
+          {
+            "stored_path": "//../engine-head/engine-head-v2.blend",
+            "path_kind": "relative",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-head/engine-head-v2.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-head/engine-head-v2.blend",
+            "sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f",
+            "in_cap57": false,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication08-v1/recipe-manifest.json",
+                "sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f"
+              },
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+                "sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f"
+              },
+              {
+                "manifest": "creative/reviews/engine-head-v2/production-manifest.json",
+                "sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "file": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+        "exists": true,
+        "library_links": [
+          {
+            "stored_path": "//../engine-head/engine-head-v2.blend",
+            "path_kind": "relative",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-head/engine-head-v2.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-head/engine-head-v2.blend",
+            "sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f",
+            "in_cap57": false,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication08-v1/recipe-manifest.json",
+                "sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f"
+              },
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+                "sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f"
+              },
+              {
+                "manifest": "creative/reviews/engine-head-v2/production-manifest.json",
+                "sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "file": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v1.blend",
+        "exists": true,
+        "library_links": [
+          {
+            "stored_path": "//../engine-head/engine-head-v3.blend",
+            "path_kind": "relative",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-head/engine-head-v3.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+            "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+            "in_cap57": true,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-spark2-v1/recipe-manifest.json",
+                "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+              },
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-supplement-v1/recipe-manifest.json",
+                "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+              },
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+                "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+              }
+            ]
+          },
+          {
+            "stored_path": "//../engine-spark-plug/engine-spark-plug-v1.blend",
+            "path_kind": "relative",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-spark-plug/engine-spark-plug-v1.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v1.blend",
+            "sha256": "a797527ddb7a291d89b4280d7d8cead24ef1d0388732b275958a649020f4253c",
+            "in_cap57": true,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-spark2-v1/recipe-manifest.json",
+                "sha256": "a797527ddb7a291d89b4280d7d8cead24ef1d0388732b275958a649020f4253c"
+              },
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-supplement-v1/recipe-manifest.json",
+                "sha256": "a797527ddb7a291d89b4280d7d8cead24ef1d0388732b275958a649020f4253c"
+              },
+              {
+                "manifest": "creative/reviews/engine-spark-cap-v1/review-manifest.json",
+                "sha256": "a797527ddb7a291d89b4280d7d8cead24ef1d0388732b275958a649020f4253c"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "file": "assets-src/moto-components/engine-cover-left/engine-cover-left-v2.blend",
+        "exists": true,
+        "library_links": [
+          {
+            "stored_path": "//../engine-output-cover-left/engine-output-cover-left-v1.blend",
+            "path_kind": "relative",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-output-cover-left/engine-output-cover-left-v1.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-output-cover-left/engine-output-cover-left-v1.blend",
+            "sha256": "92f528236a8d9e94669b0eed18e186cb8a2c46612bfb7200907cd6a9abc79399",
+            "in_cap57": false,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/reviews/engine-cover-left-v2/review-manifest.json",
+                "sha256": "92f528236a8d9e94669b0eed18e186cb8a2c46612bfb7200907cd6a9abc79399"
+              },
+              {
+                "manifest": "creative/reviews/engine-output-cover-left-v1/production-manifest.json",
+                "sha256": "92f528236a8d9e94669b0eed18e186cb8a2c46612bfb7200907cd6a9abc79399"
+              },
+              {
+                "manifest": "creative/reviews/engine-output-cover-left-v1/review-manifest.json",
+                "sha256": "92f528236a8d9e94669b0eed18e186cb8a2c46612bfb7200907cd6a9abc79399"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "file": "assets-src/moto-components/engine-cover-right/engine-cover-right-v2.blend",
+        "exists": true,
+        "library_links": []
+      },
+      {
+        "file": "assets-src/moto-components/engine-head/engine-head-v2.blend",
+        "exists": true,
+        "library_links": [
+          {
+            "stored_path": "//../engine-cylinder/engine-cylinder-v1.blend",
+            "path_kind": "relative",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+            "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6",
+            "in_cap57": false,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication08-v1/recipe-manifest.json",
+                "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6"
+              },
+              {
+                "manifest": "creative/research/motorcycle-source-dependencies-publication09-v1/recipe-manifest.json",
+                "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6"
+              },
+              {
+                "manifest": "creative/reviews/engine-head-v3/review-manifest.json",
+                "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "file": "assets-src/moto-components/engine-output-cover-left/engine-output-cover-left-v1.blend",
+        "exists": true,
+        "library_links": [
+          {
+            "stored_path": "//../engine-cover-left/engine-cover-left-v1.blend",
+            "path_kind": "relative",
+            "resolved_path": "/workspace/wewa-github/assets-src/moto-components/engine-cover-left/engine-cover-left-v1.blend",
+            "exists": true,
+            "context_library_not_exported_cap_geometry": true,
+            "repo_path": "assets-src/moto-components/engine-cover-left/engine-cover-left-v1.blend",
+            "sha256": "7e27606ef19b7a49e932ac13841b1da15c6d0d4936f1cef8f095bb233c3ce1d4",
+            "in_cap57": false,
+            "in_git_index_at_snapshot": true,
+            "other_recipe_or_prior_manifest_coverage": [
+              {
+                "manifest": "creative/reviews/engine-cover-left-v1/production-manifest.json",
+                "sha256": "7e27606ef19b7a49e932ac13841b1da15c6d0d4936f1cef8f095bb233c3ce1d4"
+              },
+              {
+                "manifest": "creative/reviews/engine-cover-left-v1/review-manifest.json",
+                "sha256": "7e27606ef19b7a49e932ac13841b1da15c6d0d4936f1cef8f095bb233c3ce1d4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "file": "assets-src/moto-components/engine-cover-left/engine-cover-left-v1.blend",
+        "exists": true,
+        "library_links": []
+      }
+    ]
+  },
+  "binary_library_read_method": {
+    "description": "Read-only Zstandardstream of BlenderBHead LI-IDblocks and storedASCIIblendpathstrings;13files/18links traced, noBlenderprocess/open/evaluation/save. Doesnotcertify runtime loading, libraryoverrides or reproducibility.",
+    "script_private_path": "/workspace/wewa-assets/audits/publication10-tyre-cap2/library_closure.py",
+    "script_sha256": "9234a2fd8b59ec9c6e1ca7c019045c3540b580ae128c4302e2b0a1817ed98aa4",
+    "raw_result_private_path": "/workspace/wewa-assets/audits/publication10-tyre-cap2/library-closure.json",
+    "raw_result_sha256": "af466e6beed5fb684dbc1a0b5df5febf66752a713184c9f3d04fe4dfcd0fcab2"
+  },
+  "promotion_or_missing_master_action": "No authoredgraymaster or originalmap found onlyoutside repository. Do not copy privatephotos. Coordinate publication of existinggraygate and additivecontextrelocation; do not invent newmasterpaths.",
+  "phase": {
+    "final_renders_in_progress_per_parent": true,
+    "global_review_manifest_closed_here": false,
+    "art_accepted": false,
+    "physical_iphone_tested": false
+  },
+  "limitations": [
+    "No cleanclone or fullsourcebuildexecuted. No byteidentical regeneration claimed; Blendcontainers, nativeUV/bake andruntimeversions maychange output.",
+    "HostCSG requirements pins do not by themselves pin BlenderbundledNumPy for tyreFFT; suppliedexactmaps/masters are witnesses, identicalpixels fromnewenvironment not tested.",
+    "Gitindex state is read-onlysnapshot oflocalrepository, not remotepublication confirmation.",
+    "Transitivecontextfiles exist and olderpubliccoverage is recorded where matched; these are not new79hashvalidations."
+  ],
+  "mutations": {
+    "only_new_report_directory": true,
+    "oldfreezes_models_records_indexes_git_modified": false
+  }
+}

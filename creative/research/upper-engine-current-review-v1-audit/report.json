@@ -1,0 +1,244 @@
+{
+  "schema": "wewa.upper-engine-current-review-v1.independent-audit.v1",
+  "created_utc": "2026-10-21T05:32:24.103882+00:00",
+  "scope": "Read-only independent evaluation of actual seven source BLEND files, actual assembly BLEND and actual delivered GLB. No geometry, material, pose, source save, render, registry, Git index or freeze edits.",
+  "source_delivery_proof_sha256": "a8338065d694f63f175136dd09be504f479de45da8875466ecdde439e72654f7",
+  "assembly_sha256": "7c62b0c1752751632318c6c5347cbe6ff2667e463db05e72233b87a6c043eb58",
+  "delivery_sha256": "d0b1a121e325e6eceeb0da626268beeccd761b345a0235984c5caa5fc04bc580",
+  "result": "exact_selected_revisions_and_local_attributes_preserved_in_actual_review_copies_and_oriented_delivery_triangles",
+  "actual_libraries": [
+    {
+      "path": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+      "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6"
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+      "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+      "sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45"
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-stub/engine-ohc-stub-v1.blend",
+      "sha256": "285eca8f5345efbfe31da9d2cc95464edcd9070a2e2e902e1e74990b2fb110c0"
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend",
+      "sha256": "bceb87f8a34bcfd2354bccef2cf236ed6a0103a2725b4a76e3e3e3721da883e3"
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+      "sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5"
+    },
+    {
+      "path": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+      "sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9"
+    }
+  ],
+  "counts": {
+    "selected_libraries": 7,
+    "copied_physical_mesh_nodes": 12,
+    "GLB_drawn_primitive_instances": 14,
+    "unique_primitive_triangles_from_root_strict_check_reused_not_recomputed": 587164,
+    "triangles_counting_drawn_node_instances_recomputed": 657316,
+    "difference_explained_by_second_shared_tappet_instance": 70152
+  },
+  "source_vs_copy": {
+    "local_positions_triangles_UV_corner_normals_all_mesh_attributes": "bit-identical for12 fresh evaluated source/copy pairs",
+    "materials": "slot names and owning source library identical after explicitly normalizing locally owned source materials to their source path",
+    "max_world_component_delta_m": 5.960464477539063e-08,
+    "max_matrix_coefficient_delta": 1.4901161193847656e-07,
+    "matrix_guard": "Existing builder-v2 coefficient guard1e-6 retained; no serialized matrix bit-identity assertion, no new distance/fit tolerance."
+  },
+  "delivery_vs_source_and_copy": {
+    "comparisons": 24,
+    "local_POSITION_bidirectional_difference_m": 0,
+    "oriented_geometric_triangle_multisets": "Exact per physical object, cyclic orientation and multiplicity preserved after canonicalising ONLY exact coincident coordinate vertices; UV/normal seams are not tolerance-clustered. Multiple material primitives retained.",
+    "max_world_matched_corner_delta_m": 6.968207166653545e-08,
+    "max_world_matrix_coefficient_delta": 2.87256053277396e-07,
+    "source_float32_point_evaluation_max_m": 3.2338002157177586e-08,
+    "actual_glTF_node_TRS_roundoff_effect_max_m": 5.429028335695757e-08,
+    "matrix_plus_float_evaluation_algebra_residual_max_m": 1.1688521636922616e-16,
+    "no_new_distance_threshold": true,
+    "why_old50nm_guard_not_copied": "Historical cockpit helper hardcoded50nm world threshold for a different local test. Here exact local POSITION/topology and independently evaluated node matrices establish parity, while measured70nm-scale world drift is explicitly decomposed into float32 evaluation and TRS roundoff; it is not a geometry edit or mechanical clearance."
+  },
+  "contacts": {
+    "recalculated_pairs": 0,
+    "reason": "No placements/bindings added; exact local surfaces/UV/normals/attributes proven against fresh sources, inherited provisional frames differ only by measured evaluation/TRS roundoff. Existing targeted source checks cover all interfaces selected for this bounded audit; no new current-assembly zero-contact claim.",
+    "reused": [
+      {
+        "pair": "head3/cylinder1",
+        "evidence": "creative/reviews/engine-head-v3/source-geometry-check.json",
+        "result": 0,
+        "kind": "prior source candidate triangle crossing check, not new assembly test"
+      },
+      {
+        "pair": "head3/tappet FRONT, REAR and OHC cover1",
+        "evidence": "creative/reviews/engine-head-v3/source-geometry-check.json",
+        "results": [
+          0,
+          0,
+          0
+        ],
+        "kind": "prior source candidate triangle crossing checks"
+      },
+      {
+        "pair": "stub1/OHC cover1, head3",
+        "evidence": "creative/reviews/engine-ohc-stub-v1/source-geometry-check.json",
+        "results": {
+          "cast_cover": 0,
+          "head_v3": 0
+        }
+      },
+      {
+        "pair": "plug2/head3 only (old plug2 checks against cap1 are not asserted for cap2)",
+        "evidence": "creative/reviews/engine-spark-plug-v2/interface-solid-check.json",
+        "pairs_reused": 4,
+        "kind": "prior sampled containment+triangle checks; no exact minimum-clearance proof"
+      },
+      {
+        "pair": "cap2 body/contact vs four plug2 bodies/head3 and body-contact",
+        "evidence": "creative/reviews/engine-spark-cap-v2/interface-solid-check.json",
+        "pairs_reused": 11,
+        "surface_crossings": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "kind": "prior sampled containment with logged direct-float64 fallback; no OEM fit inference"
+      }
+    ],
+    "not_claimed": [
+      "all pairwise contacts of entire engine",
+      "hidden mechanical fit or insertion/thread correctness",
+      "minimum clearances",
+      "all motor pieces present",
+      "mobile/physical iPhone performance",
+      "artistic acceptance"
+    ]
+  },
+  "reuse_vs_recalculation": {
+    "recalculated": [
+      "All12 source/copy evaluated mesh arrays, corners/UV/all attributes/material owners and actual world matrices",
+      "Actual seven BLEND libraries/hashes loaded by assembly",
+      "All14 drawn primitive buffers and657316 oriented instance triangles from delivery",
+      "24 source/copy vs delivery comparisons; no browser matrices used to derive source"
+    ],
+    "reused": [
+      "Frozen builder-v2 and existing coefficient guard",
+      "Existing targeted component contact proofs (scope above)",
+      "Root strict587164 unique primitive count only; node/instance count independently recomputed"
+    ],
+    "images_opened_in_this_task": []
+  },
+  "diagnostic_failures_preserved": [
+    {
+      "log": "extraction-attempt1.log",
+      "cause": "Blender63-byte copied object name truncation; exact long-name matcher found no object."
+    },
+    {
+      "log": "extraction-attempt2.log",
+      "cause": "Locally owned source material becomes owned by linked library in actual assembly; naive material-owner equality rejected equivalent ownership."
+    },
+    {
+      "log": "extraction-attempt3.log",
+      "cause": "Two tappet objects intentionally share mesh data, so asset+mesh alone was ambiguous; added unambiguous50-character source object prefix and required exactly one match."
+    }
+  ],
+  "limitations": [
+    "No rendering or artistic inspection performed in this audit.",
+    "This proves which provisional source revisions and geometry are in the delivery; it is not complete engine/cockpit reception.",
+    "Root Babylon14 meshes/captures and strict report are independent parent checks, not new browser runs by this agent.",
+    "Imported object world roundoff is measured and preserved, not silently treated as exact transformed-coordinate bit identity."
+  ],
+  "inputs": [
+    {
+      "path": "creative/reviews/upper-engine-current-review-v1/source-geometry-check.json",
+      "sha256": "19868e726a95784984e433a5f6b27253862be02c47bfdc8694cf73e96259df49"
+    },
+    {
+      "path": "assets-src/moto-components/upper-engine-current-review-v1/upper-engine-current-review-v1.blend",
+      "sha256": "7c62b0c1752751632318c6c5347cbe6ff2667e463db05e72233b87a6c043eb58"
+    },
+    {
+      "path": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+      "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6"
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+      "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+    },
+    {
+      "path": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+      "sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9"
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+      "sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45"
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-stub/engine-ohc-stub-v1.blend",
+      "sha256": "285eca8f5345efbfe31da9d2cc95464edcd9070a2e2e902e1e74990b2fb110c0"
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+      "sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5"
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend",
+      "sha256": "bceb87f8a34bcfd2354bccef2cf236ed6a0103a2725b4a76e3e3e3721da883e3"
+    },
+    {
+      "path": "creative/reviews/upper-engine-current-review-v1/source-geometry-check-delivery-v1.json",
+      "sha256": "a8338065d694f63f175136dd09be504f479de45da8875466ecdde439e72654f7"
+    },
+    {
+      "path": "creative/reviews/upper-engine-current-review-v1/unused-tangent-removal-v1.json",
+      "sha256": "b639c39be2be751364157b3f84c35bf070f2a9fbc685a45047a817a502bf5d7c"
+    },
+    {
+      "path": "assets-src/moto-components/upper-engine-current-review-v1/upper-engine-current-review-v1-delivery.glb",
+      "sha256": "d0b1a121e325e6eceeb0da626268beeccd761b345a0235984c5caa5fc04bc580"
+    },
+    {
+      "path": "creative/reviews/engine-head-v3/source-geometry-check.json",
+      "sha256": "c4dc6c1b4ed2c82aa365ca9112e552ebef3223f72cf133983f4f8fd96347492b"
+    },
+    {
+      "path": "creative/reviews/engine-spark-cap-v2/source-geometry-check.json",
+      "sha256": "789cca6f99d5ec5884c543444411f2e99c5164ce6096100fc58e298c0d578542"
+    },
+    {
+      "path": "creative/reviews/engine-spark-cap-v2/interface-solid-check.json",
+      "sha256": "cc0fc676a87d54bf423ad244541a6ccf5c068dae6c2742c81866f1c4efebdfae"
+    },
+    {
+      "path": "creative/reviews/engine-spark-plug-v2/source-geometry-check.json",
+      "sha256": "7004972dfa705c24b35f54bb7145ca085bcf8296d428587368842ca4585a4ac0"
+    },
+    {
+      "path": "creative/reviews/engine-spark-plug-v2/interface-solid-check.json",
+      "sha256": "5ca8d72a6602b4ffc49876ccd08d33a32121c4004aea3a0de1f4ae76d147aec3"
+    },
+    {
+      "path": "creative/reviews/engine-ohc-stub-v1/source-geometry-check.json",
+      "sha256": "c08e9a31ba9d71d47555288fa6548bf7bdca2df88bb3db0677d0617c95d8f5c0"
+    },
+    {
+      "path": "creative/reviews/engine-ohc-stub-v1/interface-solid-check.json",
+      "sha256": "e6946fb57cc79e063f3f6c911a17077220e699db232cbcb35c490f308030f72f"
+    }
+  ],
+  "historical_sources_and_records_modified": false,
+  "art_accepted": false,
+  "physical_iphone_tested": false
+}

@@ -1,0 +1,68 @@
+{
+  "id": "rear-tyre-preparation-v1",
+  "component_id": "MOTO-TYRE-REAR-001",
+  "created_at_UTC": "2026-10-21T04:49:39.448728+00:00",
+  "references": [
+    {
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/rotation-05.png",
+      "sha256": "51bb532a693433ba382aa6a25048010031eab1749bef88e341bb67c9c4af0229",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/05.png",
+      "actually_opened": true,
+      "limits": "1000x700 marketing photo, only tens of pixels across rear tread. No calibrated section or exact mould/brand."
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/rotation-06.png",
+      "sha256": "60a01cd517728f6d3d4f61a3975fe610488f7b489098c20cae381b9768093362",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/06.png",
+      "actually_opened": true,
+      "limits": "1000x700 marketing photo, only tens of pixels across rear tread. No calibrated section or exact mould/brand."
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/rotation-07.png",
+      "sha256": "cec77fe44f3203a390ce6cf313f5958a7746a25a6df0ae28b25080eb838a9f76",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/07.png",
+      "actually_opened": true,
+      "limits": "1000x700 marketing photo, only tens of pixels across rear tread. No calibrated section or exact mould/brand."
+    }
+  ],
+  "documentary_search": "creative/research/rear-wheel-16/reference-search-v1.json",
+  "observations": [
+    "R06 exposes tread in rear axis: successive blocks and sinuous/oblique channels, limited pixel resolution.",
+    "R05 and R07 show rounded crown/shoulders and transverse oblique cuts; sidewalls are dark.",
+    "No readable rear brand/model/index; no commercial pattern selected."
+  ],
+  "method": "Original hollow closed crosssection with native geometric grooves, one tyre only. Sinuous longitudinal family and oblique shoulder connectors reconstructed as an explicitly estimated periodic candidate; exact topology/repeat not claimed.",
+  "scale": "17in nominal conversion anchors candidate bead radius only; exterior598mm[570–630] and width86mm[75–100] are independent working envelope estimates informed qualitatively by partially projected tyre/rim proportions across R05/R07, no calibrated pixel-to-mm measurement.",
+  "comparison_protocol": {
+    "views": [
+      "quarter",
+      "rear-tread",
+      "side",
+      "tread-detail",
+      "bead-opening"
+    ],
+    "G3": "Native gray and grazing reflection on crown/shoulder, actual source/export geometry before PBR. Inspect scalloping/aliasing, groove crosssection and open centre.",
+    "G4": "Original maps at physical scale, dark nonmetal rubber, no photo pixels; native macro before96.",
+    "G5": "Central opening and rubber wall closure, hypothetical rim clearance only; no pressure/loaded simulation or functional certification."
+  },
+  "uncertainty_is_visible_geometry_not_resolved_by_more_generic_search": true,
+  "art_accepted": false,
+  "source_created": true,
+  "G3_source": "assets-src/moto-components/rear-tyre/rear-tyre-v1.blend",
+  "triangulation_note": "Initial quad BMesh volume used a fan diagonal different from exporter triangulation and differed1.8e-5 relatively. Native source now fixes all quad diagonals before calculating normals/export. Actual triangle-volume source and GLB agree1.1e-15 relative; no buffer or threshold repair.",
+  "source_check": "creative/reviews/rear-tyre-v1/source-geometry-check.json",
+  "buffer_check": "creative/reviews/rear-tyre-v1/geometry-check.json",
+  "section_check": "creative/reviews/rear-tyre-v1/native-section-check.json",
+  "rejected_uniform_grid": {
+    "source_sha256": "5711b35f98b61d37cb9844fff681993fa288f29b5fb3d154fd12673c6cf36063",
+    "export_sha256": "30a78fd3dd2404e8e6e8a0a25c8a8c3488223bd025d13b51134345ea7d92deb1",
+    "private_archive": "/workspace/wewa-assets/work-in-progress/rear-tyre/rejected-uniform-grid",
+    "reason": "Actual native gray macro reveals scalloped groove lips; no G4 applied."
+  },
+  "current_G3_method": "Constraint-aligned2pitchcrown, adaptive triangle centroid/edge probes, periodic boundaries, analytic author normals. Original field/dimensions unchanged; native sidewall and inner strips. No buffer repair.",
+  "current_G3_source_sha256": "a8c7479df851c41d9407c55217ae3706f6994761349cb69298124feeeb70f600",
+  "current_G3_export_sha256": "16ff10ebd30ec0695e0e532a922ca0de5e0b631c200f3753c2a7b30067249f1e",
+  "current_G3_technical": "2160850triangles/1080425vertices,0NM/0zeroUVarea,8actualclosednoncrossingsections; full source and buffers passed. All four gray/reflection images actually opened before material.",
+  "current_G3_visual_reading": "Adaptive native gray and grazingreflection show continuous lips; prior scallops/crans not established. Exact commercial mould/dimensions remain unknown; candidate proceeds to original estimated rubber material.",
+  "public_geometry_master": "assets-src/moto-components/rear-tyre/g3-master-v1"
+}

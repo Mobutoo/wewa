@@ -1,0 +1,11 @@
+# Capuchon de bougie — candidat v2
+
+La transition de la grosse douille au col est reprise après deux comparaisons grises proches des profils photographiques StockNuts. Un segment conique relie deux petits raccords circulaires ; les extrémités, douilles, cavités, port transversal, contact et matrice restent protégés. Les photos non calibrées ne mesurent ni cet angle ni les rayons. La v1 et ses preuves restent intactes.
+
+`build_v2.py` repart de la v1, réutilise uniquement la définition du sampler `sectionmesh` et les volumes de construction conservés, puis sauve le stade géométrique. `topology_stage_v2.py` bascule une seule diagonale autour d’un triangle CSG effilé (hauteur ~11 nm) qui produisait une tangente nulle native. Aucun sommet n’est déplacé, aucune ouverture bouchée ; la différence de surface échantillonnée en calcul direct float64 est inférieure à 3 nm dans les deux sens. Le témoin géométrique initial et l’essai matière refusé sont conservés. `material_v2.py` ajoute un atlas UV et cuit un grain original à partir de coordonnées locales en mètres. Les cartes normales tangentielles OpenGL +Y et de rugosité sont de vraies images non colorimétriques, intégrées à la source et exportées nativement ; aucune retouche de tangentes ou texture photographique. Les nœuds procéduraux originaux sont conservés comme recette éditable déconnectée du shader final.
+
+L’espacement de travail de 0,12 mm et la hauteur de 6 µm sont des estimations de finition représentative, bornées respectivement à 0,06–0,20 mm et 2–12 µm. La rugosité de travail varie entre 0,46 et 0,58. Ces paramètres ne décrivent pas une mesure de matière OEM. Le relief de moulage grossier reste de la géométrie ; le grain fin agit sur les normales et la réponse à la lumière, sans déplacement de surface.
+
+Deux volumes physiques fermés : coque moulée et petit contact visible séparé. Pas de résistance cachée, mécanisme électrique, câble HT ou compatibilité RDC certifiée. La pose est un raccord provisoire au candidat bougie v2 et à la culasse v3, contrôlé sans déplacer les trois éléments.
+
+Les contrôles numériques et les vues de revue autorisent l’examen du candidat. Ils ne valent ni réception artistique, ni validation des cotes, de matière ou sur iPhone.

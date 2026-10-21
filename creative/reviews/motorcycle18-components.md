@@ -1,6 +1,6 @@
 # Viva Wewa — revue des composants moto
 
-**48 composants uniques enregistrés · 48 vues Blender prouvées · aucune réception artistique.**
+**49 composants uniques enregistrés · 49 vues Blender prouvées · aucune réception artistique.**
 
 Une seule vue originale par composant, à la révision exacte de sa fiche. Les anciennes révisions et les sources seulement cataloguées ou gelées sans enregistrement central ne sont pas ajoutées. Ces rendus montrent des candidats isolés, pas le jeu ni une moto terminée.
 
@@ -29,7 +29,7 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 | [13 · Fourche et direction](#groupe-13) | 6 | Candidats partiels en revue ; groupe non terminé |
 | [14 · Ensemble avant et compatibilité des candidats existants](#groupe-14) | Voir les préexistants ; aucun nouveau composant compté | Candidats antérieurs existants à recontrôler ; compatibilité restante |
 | [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 6 | Candidats partiels en revue ; groupe non terminé |
-| [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 1 | Candidats partiels en revue ; groupe non terminé |
+| [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 2 | Candidats partiels en revue ; groupe non terminé |
 | [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 12 | Candidats partiels en revue ; groupe non terminé |
 | [18 · Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière](#groupe-18) | 0 | À fabriquer ; aucune pièce enregistrée |
 
@@ -874,6 +874,32 @@ PNG SHA-256 : `d17fd8a5dbefa5d646551d9432b9e0a74c7f6971128898082903ddc06a1f98eb`
 
 </details>
 
+
+<a id="moto-tyre-rear-001"></a>
+
+### Pneu arrière — candidat isolé 3.00-17 TL
+
+`MOTO-TYRE-REAR-001` · révision `rear-tyre-v1` · **candidat non reçu**
+
+![Pneu arrière — candidat isolé 3.00-17 TL — rear-tyre-v1](rear-tyre-v1/quarter.png)
+
+[Image entière](rear-tyre-v1/quarter.png) · [Preuve du rendu](rear-tyre-v1/render-report.json) · vue `quarter`
+
+Source SHA-256 : `612388ce8f1fb5850a01c3329e23fc39ad42e631c4a517e56576a0a359066b5c`  
+PNG SHA-256 : `62fc1b710c745db21a873b28b6062cfc3e02b11e331f118d94d91d620b4c512d`
+
+[Blender](../../assets-src/moto-components/rear-tyre/rear-tyre-v1.blend) · [GLB](../../assets-src/moto-components/rear-tyre/rear-tyre-inspection.glb) · [README source](../../assets-src/moto-components/rear-tyre/README.md) · [Revue et limites](rear-tyre-v1/README.md) · [Fiche](../workflow/records/moto-tyre-rear-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [rear-tread](rear-tyre-v1/rear-tread.png) · [preuve](rear-tyre-v1/render-report.json)
+- [tread-detail](rear-tyre-v1/tread-detail.png) · [preuve](rear-tyre-v1/render-report.json)
+- [bead-opening](rear-tyre-v1/bead-opening.png) · [preuve](rear-tyre-v1/render-report.json)
+
+</details>
+
 Périmètre prévu : pneu arrière; jante/moyeu arrière; flasque et commande du frein arrière; couronne/chaîne et protection; amortisseur gauche; amortisseur droit.
 
 <a id="groupe-17"></a>
@@ -1134,32 +1160,6 @@ PNG SHA-256 : `45c940a8755ee8e1a511f049d2a332486f7a078130620a50c0b0ed55ebd89b42`
 </details>
 
 
-<a id="moto-engine-spark-cap-001"></a>
-
-### Moteur — capuchon de bougie coudé seul
-
-`MOTO-ENGINE-SPARK-CAP-001` · révision `engine-spark-cap-v1` · **candidat non reçu**
-
-![Moteur — capuchon de bougie coudé seul — engine-spark-cap-v1](engine-spark-cap-v1/cap-quarter.png)
-
-[Image entière](engine-spark-cap-v1/cap-quarter.png) · [Preuve du rendu](engine-spark-cap-v1/render-report.json) · vue `cap-quarter`
-
-Source SHA-256 : `69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d`  
-PNG SHA-256 : `34cf47d94e58710356edde1c6fb4ab7dcc046cfd60ef59a9147409aedf0a4106`
-
-[Blender](../../assets-src/moto-components/engine-spark-cap/engine-spark-cap-v1.blend) · [GLB](../../assets-src/moto-components/engine-spark-cap/engine-spark-cap-inspection.glb) · [README source](../../assets-src/moto-components/engine-spark-cap/README.md) · [Revue et limites](engine-spark-cap-v1/README.md) · [Fiche](../workflow/records/moto-engine-spark-cap-001.json)
-
-
-<details>
-<summary>Autres vues Blender prouvées de cette révision</summary>
-
-- [main-socket-mouth](engine-spark-cap-v1/main-socket-mouth.png) · [preuve](engine-spark-cap-v1/render-report.json)
-- [short-port-contact](engine-spark-cap-v1/short-port-contact.png) · [preuve](engine-spark-cap-v1/render-report.json)
-- [installed-context](engine-spark-cap-v1/installed-context.png) · [preuve](engine-spark-cap-v1/render-report.json)
-
-</details>
-
-
 <a id="moto-engine-spark-plug-001"></a>
 
 ### Bougie extérieure v2 — chanfrein reconstruit
@@ -1181,6 +1181,33 @@ PNG SHA-256 : `88f71d2d4fbc60b38e7ecd58d626c588fa9de3588e4bbe8b5d3143477f6ce0d2`
 
 - [hex-ceramic-detail](engine-spark-plug-v2/hex-ceramic-detail.png) · [preuve](engine-spark-plug-v2/render-report.json)
 - [installed-context](engine-spark-plug-v2/installed-context.png) · [preuve](engine-spark-plug-v2/render-report.json)
+
+</details>
+
+
+<a id="moto-engine-spark-cap-001"></a>
+
+### Capuchon HT v2 — épaules coniques et grain original
+
+`MOTO-ENGINE-SPARK-CAP-001` · révision `engine-spark-cap-v2` · **candidat non reçu**
+
+![Capuchon HT v2 — épaules coniques et grain original — engine-spark-cap-v2](engine-spark-cap-v2/cap-quarter.png)
+
+[Image entière](engine-spark-cap-v2/cap-quarter.png) · [Preuve du rendu](engine-spark-cap-v2/render-report.json) · vue `cap-quarter`
+
+Source SHA-256 : `bceb87f8a34bcfd2354bccef2cf236ed6a0103a2725b4a76e3e3e3721da883e3`  
+PNG SHA-256 : `60ad9248798f142e0d52502ac7aceefdca1c6935ead126d244e3cf8bf09c96af`
+
+[Blender](../../assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend) · [GLB](../../assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2-inspection.glb) · [README source](../../assets-src/moto-components/engine-spark-cap/README_v2.md) · [Revue et limites](engine-spark-cap-v2/README.md) · [Fiche](../workflow/records/moto-engine-spark-cap-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [main-socket-mouth](engine-spark-cap-v2/main-socket-mouth.png) · [preuve](engine-spark-cap-v2/render-report.json)
+- [short-port-contact](engine-spark-cap-v2/short-port-contact.png) · [preuve](engine-spark-cap-v2/render-report.json)
+- [installed-context](engine-spark-cap-v2/installed-context.png) · [preuve](engine-spark-cap-v2/render-report.json)
+- [grain-control](engine-spark-cap-v2/grain-control.png) · [preuve](engine-spark-cap-v2/render-report.json)
 
 </details>
 

@@ -1,0 +1,135 @@
+{
+  "schema": "wewa.engine-spark-cap-portability-v2.audit.v1",
+  "created_utc": "2026-10-21T05:44:07.109125+00:00",
+  "result": "additive_companion_pair_exact_and_full_context_moved_open_passed",
+  "render_source_unchanged": {
+    "path": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend",
+    "sha256": "bceb87f8a34bcfd2354bccef2cf236ed6a0103a2725b4a76e3e3e3721da883e3",
+    "role": "Frozen source of final96 renders and original GLB. Not replaced in any record/catalogue/freeze by this task."
+  },
+  "companions": [
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/portable-source-v2/engine-spark-cap-v2-portable.blend",
+      "sha256": "c5e0756e79aab4d588634b7bceff7ea6cac12d00937d1224f0fa2ed67885db96",
+      "role": "Portable editable cap2 companion. Same local component; linked plug2 context points to the portable companion below."
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/portable-source-v2/engine-spark-plug-v2-context-portable.blend",
+      "sha256": "130f06eed047b07c11b35ae7ac19cc885e62d99e89f8f0f90f3f11f211a13aa4",
+      "role": "Portable plug2 context companion, same four component meshes/datum. Fixes nested absolute cap1 Library without modifying historical plug2."
+    }
+  ],
+  "component_before_after_evidence": {
+    "cap2": "final-cap-invariance.json",
+    "plug2": "plug-context-invariance.json",
+    "exact_fields": [
+      "raw and freshly evaluated positions",
+      "triangle indices and loop indices",
+      "polygon material slots",
+      "all mesh attribute values/type/domain",
+      "UV layers",
+      "corner normals",
+      "parent names, matrix_basis, matrix_parent_inverse and evaluated matrix_world",
+      "material node types/links/input defaults/settings and packed image payload SHA"
+    ],
+    "method": "Fresh component fingerprints before any Library mutation, immediately after string mutation/reload, and after save+reopen. Exact comparisons, no numerical tolerance. Only Library pointers or paths changed in companion copies; no mesh/material/transform authoring."
+  },
+  "component_vs_context": {
+    "cap_component": "WEWA_ENGINE_SPARK_CAP:2local mesh objects +1local datum. No Library owns or replaces these local bodies.",
+    "cap_context": "SPARK_CAP_IMMUTABLE_GUIDES and SPARK_CAP_V2_IMMUTABLE_GUIDES are hidden context collections, with inherited plug1/head3 and current plug2/head3. They are not added to component geometry/export.",
+    "plug_context": "Historical plug2 linked cap1 by an absolute Library path. Its additive companion remaps that pointer relative to its new folder; this is context, not replacement of its four locally owned plug bodies.",
+    "full_closure": "13 source files/18 direct edges from static documentary graph; two logical nodes replaced by exact-component companions,11 historical ancestors byte-copied only in private test tree."
+  },
+  "remaps": {
+    "cap": [
+      {
+        "name": "engine-head-v3.blend",
+        "before": "//../engine-head/engine-head-v3.blend",
+        "after": "//../../engine-head/engine-head-v3.blend",
+        "original_target_repo_relative": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+        "target_repo_relative": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+        "target_sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+      },
+      {
+        "name": "engine-spark-plug-v1.blend",
+        "before": "//../engine-spark-plug/engine-spark-plug-v1.blend",
+        "after": "//../../engine-spark-plug/engine-spark-plug-v1.blend",
+        "original_target_repo_relative": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v1.blend",
+        "target_repo_relative": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v1.blend",
+        "target_sha256": "a797527ddb7a291d89b4280d7d8cead24ef1d0388732b275958a649020f4253c"
+      },
+      {
+        "name": "engine-spark-plug-v2.blend",
+        "before": "/workspace/wewa-github/assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+        "after": "//engine-spark-plug-v2-context-portable.blend",
+        "original_target_repo_relative": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+        "target_repo_relative": "assets-src/moto-components/engine-spark-cap/portable-source-v2/engine-spark-plug-v2-context-portable.blend",
+        "target_sha256": "130f06eed047b07c11b35ae7ac19cc885e62d99e89f8f0f90f3f11f211a13aa4"
+      }
+    ],
+    "plug_context": [
+      {
+        "name": "engine-head-v3.blend",
+        "before": "//../engine-head/engine-head-v3.blend",
+        "after": "//../../engine-head/engine-head-v3.blend",
+        "original_target_repo_relative": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+        "target_repo_relative": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+        "target_sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+      },
+      {
+        "name": "engine-spark-cap-v1.blend",
+        "before": "/workspace/wewa-github/assets-src/moto-components/engine-spark-cap/engine-spark-cap-v1.blend",
+        "after": "//../engine-spark-cap-v1.blend",
+        "original_target_repo_relative": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v1.blend",
+        "target_repo_relative": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v1.blend",
+        "target_sha256": "69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d"
+      }
+    ]
+  },
+  "moved_tree": {
+    "test_root": "/workspace/wewa-assets/portability-tests/engine-spark-cap-v2-full-context-checkout",
+    "sources_really_opened": 13,
+    "direct_links_verified": 18,
+    "all_actual_loaded_direct_and_indirect_libraries_inside_moved_tree": true,
+    "all_linked_objects_nonmissing": true,
+    "evidence": "full-context-open-check.json",
+    "preparation": "full-context-tree-plan.json",
+    "not_just_original_checkout_fallback": "Each actual Blender Library target resolves within the moved test root and its SHA matches the corresponding copied file. All13 mainfiles were opened individually, so the nested plug2→cap1 link is tested, not merely the3 direct cap links."
+  },
+  "generic_tool_replay": {
+    "tool": "portable_library_copy.py",
+    "tool_sha256": "25e7978f9efb09837f5df74472177f7abf2ef56ad14ee1b3000805f2ec8ff31e",
+    "all_paths_in_arguments": true,
+    "moved_working_source_with_old_absolute_prefix_passed": true,
+    "report": "generic-final-tool-replay.json",
+    "supports_explicit_additive_library_target_map": "library-target-map.json",
+    "safety": "Rejects output overwriting source or any existing file; refuses indirect-owner edits needing a separate source companion. Saves only new copy. Working checkout and historical absolute prefix may be distinct CLI roots."
+  },
+  "original_immutability": {
+    "evidence": "original-immutability-check.json",
+    "historical_BLENDs": 13,
+    "original_cap_GLB": 1,
+    "all14_match_frozen_input_SHA": true
+  },
+  "images": {
+    "component_images_packed": true,
+    "packed_payloads_unchanged": true,
+    "Image_filepath_changed": false,
+    "scope": "Two cap2 original normal/roughness image payloads are packed and fingerprint-identical. Their stored absolute Image paths intentionally remain because this tool changes Library pointers only. No private photograph or texture input introduced."
+  },
+  "diagnostics": {
+    "superseded_direct_only": "copy-invariance.json and relocated-open-check.json tested3 direct links only. Not the final transitive delivery. Initial direct-only BLEND was archived privately; direct-only-diagnostic-location.json records its SHA/location.",
+    "generic_replay_error": "generic-moved-source-replay-attempt1.log and portable_library_copy_replay_attempt1.py preserve failed context reload under the wrong current source directory. Corrected tool reloads an absolute working target before storing the final relative companion path.",
+    "older_replay_reports": "Historical direct-only/replay reports retain their own output SHA/path; do not interpret their files as a new live manifest or substitute them for final-cap-invariance.json/full-context-open-check.json."
+  },
+  "no_new_render_export": true,
+  "no_old_source_freeze_record_catalogue_or_Git_index_modified": true,
+  "art_accepted": false,
+  "physical_fit_or_iPhone_claim": false,
+  "limitations": [
+    "No complete game or engine reception; geometry/material identity only for the two component collections.",
+    "No binary reproducibility of newly saved BLEND containers is claimed; component fingerprint equality and path closure are the proofs.",
+    "No GLB exported from companion because actual component invariance is exact; original render/GLB source remains bceb87f8.",
+    "The13-file moved tree is a private test fixture, not13 newly authored/published BLEND copies."
+  ]
+}

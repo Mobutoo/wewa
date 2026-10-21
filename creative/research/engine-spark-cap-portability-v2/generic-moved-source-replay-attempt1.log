@@ -1,0 +1,19 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 01:31:14)
+Read blend: "/workspace/wewa-assets/portability-tests/engine-spark-cap-v2-replay-checkout/assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend"
+Error: Trying to reload library 'LIengine-spark-plug-v2.blend' from invalid path '/workspace/wewa-assets/portability-tests/engine-spark-cap-v2-replay-checkout/assets-src/engine-spark-plug/engine-spark-plug-v2.blend'
+Traceback (most recent call last):
+  File "/workspace/wewa-github/creative/research/engine-spark-cap-portability-v2/portable_library_copy.py", line 76, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/wewa-github/creative/research/engine-spark-cap-portability-v2/portable_library_copy.py", line 70, in main
+    if original_target!=target:lib.reload() # Resolve context data from the current checkout, never the old absolute prefix.
+                               ^^^^^^^^^^^^
+RuntimeError: Error: Trying to reload library 'LIengine-spark-plug-v2.blend' from invalid path '/workspace/wewa-assets/portability-tests/engine-spark-cap-v2-replay-checkout/assets-src/engine-spark-plug/engine-spark-plug-v2.blend'
+
+
+Error: script failed, file: 'creative/research/engine-spark-cap-portability-v2/portable_library_copy.py', exiting.
+Info: Read library: '/workspace/wewa-assets/portability-tests/engine-spark-cap-v2-replay-checkout/assets-src/moto-components/engine-head/engine-head-v3.blend', '//../engine-head/engine-head-v3.blend', parent '<direct>'
+Info: Read library: '/workspace/wewa-assets/portability-tests/engine-spark-cap-v2-replay-checkout/assets-src/moto-components/engine-spark-plug/engine-spark-plug-v1.blend', '//../engine-spark-plug/engine-spark-plug-v1.blend', parent '<direct>'
+Info: Read library: '/workspace/wewa-github/assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend', '/workspace/wewa-github/assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend', parent '<direct>'
+
+Blender quit

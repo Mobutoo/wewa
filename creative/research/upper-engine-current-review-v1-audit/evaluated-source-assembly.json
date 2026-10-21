@@ -1,0 +1,5265 @@
+{
+  "assembly": {
+    "path": "assets-src/moto-components/upper-engine-current-review-v1/upper-engine-current-review-v1.blend",
+    "sha256": "7c62b0c1752751632318c6c5347cbe6ff2667e463db05e72233b87a6c043eb58"
+  },
+  "builder_proof": {
+    "path": "creative/reviews/upper-engine-current-review-v1/source-geometry-check.json",
+    "sha256": "19868e726a95784984e433a5f6b27253862be02c47bfdc8694cf73e96259df49"
+  },
+  "actual_libraries": [
+    {
+      "path": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+      "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6"
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+      "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf"
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+      "sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45"
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-stub/engine-ohc-stub-v1.blend",
+      "sha256": "285eca8f5345efbfe31da9d2cc95464edcd9070a2e2e902e1e74990b2fb110c0"
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend",
+      "sha256": "bceb87f8a34bcfd2354bccef2cf236ed6a0103a2725b4a76e3e3e3721da883e3"
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+      "sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5"
+    },
+    {
+      "path": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+      "sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9"
+    }
+  ],
+  "hidden_collections_activated_in_memory": [],
+  "entries": [
+    {
+      "key": "engine-cylinder__1",
+      "asset": "engine-cylinder",
+      "source": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+      "source_sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6",
+      "collection": "WEWA_ENGINE_CYLINDER",
+      "source_name": "Engine cylinder finned hollow casting - editable candidate",
+      "guides_activated_in_memory": [
+        "CYLINDER_IMMUTABLE_INTERFACE_GUIDES",
+        "CYLINDER_RETAINED_CONSTRUCTION"
+      ],
+      "source_evaluated": {
+        "object": "Engine cylinder finned hollow casting - editable candidate",
+        "mesh": "Engine cylinder finned hollow casting - editable candidate clea",
+        "object_library": null,
+        "data_library": null,
+        "parent": "Engine cylinder base provisional datum",
+        "hidden_render": false,
+        "vertices": 34902,
+        "triangles": 69832,
+        "arrays": {
+          "local": {
+            "shape": [
+              34902,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "cb609fe9ac4ffe2533ba2a03ee87d5261350be572b137c4a62adcbfae2085d2d"
+          },
+          "world": {
+            "shape": [
+              34902,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "b92fb030eef5cc69adb07d533ebb4a4bb5ab77f39d8c0137b93fb6213035e088"
+          },
+          "triangles": {
+            "shape": [
+              69832,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "238e9123a98e0c04eaee00f6aab123555f532f2ec415b1d08e8d0ef5a19a16b3"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "6102750f2b1c9528c26c9b061de46937c5dc83b01dfdae2afef17cecc5540d33"
+          },
+          "corner_normals": {
+            "shape": [
+              209496,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "201c424bedfdf2910b87c5318a7000358120169b25d068f7bf99f1e5918ce9e0"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              209496
+            ],
+            "dtype": "int32",
+            "sha256": "238e9123a98e0c04eaee00f6aab123555f532f2ec415b1d08e8d0ef5a19a16b3"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              69832
+            ],
+            "dtype": "int32",
+            "sha256": "dd68295a417820a1a159fac65072a440ce9b6be9aff0270e07095fdafde5c33c"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                34902,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "44f4a55bbfe0a197a76d3b22d6eae6e3b6138b99f1c43ea54b92d45cd29d7443"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                34902
+              ],
+              "dtype": "bool",
+              "sha256": "c6749337d1989416acad903ef9b80d3cff1beaca9dd7fdf2202f1165377b6cf5"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                104748,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "a7ef9b0e086aad4227b81030cea9bb5715e98a6ba4f775d94bf7f7f1d15d4a84"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                104748
+              ],
+              "dtype": "bool",
+              "sha256": "0e53bda717b27167f9ad453c542b442080ce93a31a7c81cbae08eac9e75ae8ac"
+            }
+          },
+          {
+            "name": "sharp_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                104748
+              ],
+              "dtype": "bool",
+              "sha256": "d02bc7e0f389f3e9d6025104dea2c5a86764a5cfbea3c0dba8e29bc161161cda"
+            }
+          },
+          {
+            "name": "material_index",
+            "domain": "FACE",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                69832
+              ],
+              "dtype": "int64",
+              "sha256": "e0fe63604d43b4760493a63b7aed9e35fcb6c4c7c8e54037b97d91259ff2c1d2"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                69832
+              ],
+              "dtype": "bool",
+              "sha256": "89ebfcb73a6c2f8d8cdc7f322678da7dd9c13dd5d2fbd9e3535015ea9461a391"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                209496
+              ],
+              "dtype": "int64",
+              "sha256": "f2cc1b7c11da75a55f4c8359e654e4f2ebf6afbdfbf3430b595a52ba8abf6ef7"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                209496
+              ],
+              "dtype": "int64",
+              "sha256": "c5e0aa76ba3bb53dd34ffadcd27624de8e9cf51f68d2767c1fc175183b0841f3"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Cylinder clean black coating - unmeasured original PBR",
+            "library": null
+          },
+          {
+            "name": "Cylinder unpainted mating surface - estimated aluminium PBR",
+            "library": null
+          }
+        ]
+      },
+      "assembly_evaluated": {
+        "object": "M18 [engine-cylinder] Engine cylinder finned hollow casting - e",
+        "mesh": "Engine cylinder finned hollow casting - editable candidate clea",
+        "object_library": null,
+        "data_library": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+        "parent": "M18 [engine-cylinder] Engine cylinder base provisional datum",
+        "hidden_render": false,
+        "vertices": 34902,
+        "triangles": 69832,
+        "arrays": {
+          "local": {
+            "shape": [
+              34902,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "cb609fe9ac4ffe2533ba2a03ee87d5261350be572b137c4a62adcbfae2085d2d"
+          },
+          "world": {
+            "shape": [
+              34902,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "ca47c2fd251b0fed62a3fe78cf495913392c7aa6b2faed2cbafb5894d28bc18a"
+          },
+          "triangles": {
+            "shape": [
+              69832,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "238e9123a98e0c04eaee00f6aab123555f532f2ec415b1d08e8d0ef5a19a16b3"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "a07c5654403241c322b1f207b1921ad4759c1e8a80ca962e7a6a2f2c38c48aa0"
+          },
+          "corner_normals": {
+            "shape": [
+              209496,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "201c424bedfdf2910b87c5318a7000358120169b25d068f7bf99f1e5918ce9e0"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              209496
+            ],
+            "dtype": "int32",
+            "sha256": "238e9123a98e0c04eaee00f6aab123555f532f2ec415b1d08e8d0ef5a19a16b3"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              69832
+            ],
+            "dtype": "int32",
+            "sha256": "dd68295a417820a1a159fac65072a440ce9b6be9aff0270e07095fdafde5c33c"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                34902,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "44f4a55bbfe0a197a76d3b22d6eae6e3b6138b99f1c43ea54b92d45cd29d7443"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                34902
+              ],
+              "dtype": "bool",
+              "sha256": "c6749337d1989416acad903ef9b80d3cff1beaca9dd7fdf2202f1165377b6cf5"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                104748,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "a7ef9b0e086aad4227b81030cea9bb5715e98a6ba4f775d94bf7f7f1d15d4a84"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                104748
+              ],
+              "dtype": "bool",
+              "sha256": "0e53bda717b27167f9ad453c542b442080ce93a31a7c81cbae08eac9e75ae8ac"
+            }
+          },
+          {
+            "name": "sharp_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                104748
+              ],
+              "dtype": "bool",
+              "sha256": "d02bc7e0f389f3e9d6025104dea2c5a86764a5cfbea3c0dba8e29bc161161cda"
+            }
+          },
+          {
+            "name": "material_index",
+            "domain": "FACE",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                69832
+              ],
+              "dtype": "int64",
+              "sha256": "e0fe63604d43b4760493a63b7aed9e35fcb6c4c7c8e54037b97d91259ff2c1d2"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                69832
+              ],
+              "dtype": "bool",
+              "sha256": "89ebfcb73a6c2f8d8cdc7f322678da7dd9c13dd5d2fbd9e3535015ea9461a391"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                209496
+              ],
+              "dtype": "int64",
+              "sha256": "f2cc1b7c11da75a55f4c8359e654e4f2ebf6afbdfbf3430b595a52ba8abf6ef7"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                209496
+              ],
+              "dtype": "int64",
+              "sha256": "c5e0aa76ba3bb53dd34ffadcd27624de8e9cf51f68d2767c1fc175183b0841f3"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Cylinder clean black coating - unmeasured original PBR",
+            "library": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend"
+          },
+          {
+            "name": "Cylinder unpainted mating surface - estimated aluminium PBR",
+            "library": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend"
+          }
+        ]
+      },
+      "comparisons": {
+        "local": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 5.960464477539063e-08
+        },
+        "triangles": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "matrix_world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 5.960464477539063e-08
+        },
+        "corner_normals": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "loop_vertex_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "polygon_material_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        }
+      },
+      "attributes_exact": true,
+      "material_names_and_libraries_exact": true,
+      "world_delta_explained_by_actual_matrix_roundoff_m": 7.569248777963354e-09
+    },
+    {
+      "key": "engine-head-v3__0",
+      "asset": "engine-head-v3",
+      "source": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+      "source_sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+      "collection": "WEWA_ENGINE_HEAD",
+      "source_name": "Engine UG5 head hollow exterior casting - editable candidate",
+      "guides_activated_in_memory": [
+        "HEAD_IMMUTABLE_INTERFACE_GUIDES",
+        "HEAD_RETAINED_CONSTRUCTION"
+      ],
+      "source_evaluated": {
+        "object": "Engine UG5 head hollow exterior casting - editable candidate",
+        "mesh": "Engine UG5 head hollow exterior casting - editable candidat.003",
+        "object_library": null,
+        "data_library": null,
+        "parent": "Engine head base provisional datum",
+        "hidden_render": false,
+        "vertices": 79986,
+        "triangles": 160144,
+        "arrays": {
+          "local": {
+            "shape": [
+              79986,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "b6afb9df4282c0a944a4e94f4a4c697155d8c3edb9412f78421e81aeea1c26a0"
+          },
+          "world": {
+            "shape": [
+              79986,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "200e52ca949b8f98bc628b47b677c6841a116fd6b4af427474014a7b5e39b36a"
+          },
+          "triangles": {
+            "shape": [
+              160144,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "99c0fc2b8bce5860d1f8d8bff28e3a0b68305e7270373612e38a29ff7592fd4f"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "f8cbc892f801b86fdd62b121820050a2eac76c6d4b295929dd5f18d8461f8a47"
+          },
+          "corner_normals": {
+            "shape": [
+              480432,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "f0e1c5291a383f07ddeef25512c00cdb653a6e9ec1f9b06a5aaec137007c7200"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              480432
+            ],
+            "dtype": "int32",
+            "sha256": "99c0fc2b8bce5860d1f8d8bff28e3a0b68305e7270373612e38a29ff7592fd4f"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              160144
+            ],
+            "dtype": "int32",
+            "sha256": "f31fa38f5b06f939897d232dc32a8038b9ba4703446e926369983e45d0468548"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                79986,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "ef5be1846df99095c5f894f34a966b4d6af41eed8884c647ee537494a8fc8186"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                79986
+              ],
+              "dtype": "bool",
+              "sha256": "abb0fc08ed58a2882e08bc75d99ef795a55b1a41edac774aa210f8ba17bf85fb"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                240216,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "10ff91d75726b27eb5bedcec7e8c1b4e055d5fe441bab92ef5cf5b2b3c67b0f6"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                240216
+              ],
+              "dtype": "bool",
+              "sha256": "f5d78d03905f92378e66b905936a0b6fc095e0a9af948def1e0c38dd4f66e9dd"
+            }
+          },
+          {
+            "name": "sharp_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                240216
+              ],
+              "dtype": "bool",
+              "sha256": "326300a2cdfcde38c040243cfd16740e9fd1a8156fc5807cc3c44a4f979d8a5b"
+            }
+          },
+          {
+            "name": "material_index",
+            "domain": "FACE",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                160144
+              ],
+              "dtype": "int64",
+              "sha256": "bb15e3c53ab247b83317bfd85901ee5100232a05ebb162c459761f5b3234c9f8"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                160144
+              ],
+              "dtype": "bool",
+              "sha256": "15c50340087867824541d1c2ab9241aaab9a224b2d31f55d75e6a6fd3cb15c5c"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                480432
+              ],
+              "dtype": "int64",
+              "sha256": "a4d34b98b16b413dba9d9821fcb298698eac43f724af0d8998f23df8993e21ef"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                480432
+              ],
+              "dtype": "int64",
+              "sha256": "dcbffe9190f79a5edd9d31bfc51d0ab161efc3e6e8d73edfcaee64ffc47ca671"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Head black coated casting - original unmeasured PBR",
+            "library": null
+          },
+          {
+            "name": "Head unpainted mating planes - original unmeasured PBR",
+            "library": null
+          }
+        ]
+      },
+      "assembly_evaluated": {
+        "object": "M18 [engine-head-v3] Engine UG5 head hollow exterior casting - ",
+        "mesh": "Engine UG5 head hollow exterior casting - editable candidat.003",
+        "object_library": null,
+        "data_library": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+        "parent": "M18 [engine-head-v3] Engine head base provisional datum",
+        "hidden_render": false,
+        "vertices": 79986,
+        "triangles": 160144,
+        "arrays": {
+          "local": {
+            "shape": [
+              79986,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "b6afb9df4282c0a944a4e94f4a4c697155d8c3edb9412f78421e81aeea1c26a0"
+          },
+          "world": {
+            "shape": [
+              79986,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "5e5b18c6b37b68aebb94b764a1743bb0b861439b3f191af55301dcfb183c6bc4"
+          },
+          "triangles": {
+            "shape": [
+              160144,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "99c0fc2b8bce5860d1f8d8bff28e3a0b68305e7270373612e38a29ff7592fd4f"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "5cdac4ea4bdee5a3501e50ecc2ab143e95b87f6dfbc51211aa07f81656a556e9"
+          },
+          "corner_normals": {
+            "shape": [
+              480432,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "f0e1c5291a383f07ddeef25512c00cdb653a6e9ec1f9b06a5aaec137007c7200"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              480432
+            ],
+            "dtype": "int32",
+            "sha256": "99c0fc2b8bce5860d1f8d8bff28e3a0b68305e7270373612e38a29ff7592fd4f"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              160144
+            ],
+            "dtype": "int32",
+            "sha256": "f31fa38f5b06f939897d232dc32a8038b9ba4703446e926369983e45d0468548"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                79986,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "ef5be1846df99095c5f894f34a966b4d6af41eed8884c647ee537494a8fc8186"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                79986
+              ],
+              "dtype": "bool",
+              "sha256": "abb0fc08ed58a2882e08bc75d99ef795a55b1a41edac774aa210f8ba17bf85fb"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                240216,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "10ff91d75726b27eb5bedcec7e8c1b4e055d5fe441bab92ef5cf5b2b3c67b0f6"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                240216
+              ],
+              "dtype": "bool",
+              "sha256": "f5d78d03905f92378e66b905936a0b6fc095e0a9af948def1e0c38dd4f66e9dd"
+            }
+          },
+          {
+            "name": "sharp_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                240216
+              ],
+              "dtype": "bool",
+              "sha256": "326300a2cdfcde38c040243cfd16740e9fd1a8156fc5807cc3c44a4f979d8a5b"
+            }
+          },
+          {
+            "name": "material_index",
+            "domain": "FACE",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                160144
+              ],
+              "dtype": "int64",
+              "sha256": "bb15e3c53ab247b83317bfd85901ee5100232a05ebb162c459761f5b3234c9f8"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                160144
+              ],
+              "dtype": "bool",
+              "sha256": "15c50340087867824541d1c2ab9241aaab9a224b2d31f55d75e6a6fd3cb15c5c"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                480432
+              ],
+              "dtype": "int64",
+              "sha256": "a4d34b98b16b413dba9d9821fcb298698eac43f724af0d8998f23df8993e21ef"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                480432
+              ],
+              "dtype": "int64",
+              "sha256": "dcbffe9190f79a5edd9d31bfc51d0ab161efc3e6e8d73edfcaee64ffc47ca671"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Head black coated casting - original unmeasured PBR",
+            "library": "assets-src/moto-components/engine-head/engine-head-v3.blend"
+          },
+          {
+            "name": "Head unpainted mating planes - original unmeasured PBR",
+            "library": "assets-src/moto-components/engine-head/engine-head-v3.blend"
+          }
+        ]
+      },
+      "comparisons": {
+        "local": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 5.960464477539063e-08
+        },
+        "triangles": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "matrix_world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 5.960464477539063e-08
+        },
+        "corner_normals": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "loop_vertex_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "polygon_material_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        }
+      },
+      "attributes_exact": true,
+      "material_names_and_libraries_exact": true,
+      "world_delta_explained_by_actual_matrix_roundoff_m": 1.2327952737249876e-08
+    },
+    {
+      "key": "engine-tappet-cap__1",
+      "asset": "engine-tappet-cap",
+      "source": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+      "source_sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9",
+      "collection": "WEWA_ENGINE_TAPPET_CAP",
+      "source_name": "UG5 tappet cap FRONT - editable conditional candidate",
+      "guides_activated_in_memory": [
+        "TAPPET_CAP_IMMUTABLE_HEAD_GUIDE",
+        "TAPPET_CAP_RETAINED_CONSTRUCTION"
+      ],
+      "source_evaluated": {
+        "object": "UG5 tappet cap FRONT - editable conditional candidate",
+        "mesh": "UG5 tappet cap FRONT - editable conditional candidate cleaned e",
+        "object_library": null,
+        "data_library": null,
+        "parent": "Tappet caps inherited estimated head datum",
+        "hidden_render": false,
+        "vertices": 35074,
+        "triangles": 70152,
+        "arrays": {
+          "local": {
+            "shape": [
+              35074,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "f09e081ffa8b7fa11cf149d38e207a036b74c562938c645eb36e50779b206770"
+          },
+          "world": {
+            "shape": [
+              35074,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "25db3b937cee866229fa3724c4470e8f0adaa12e614454978918670b33beb684"
+          },
+          "triangles": {
+            "shape": [
+              70152,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "a4ab59f4b59c0e52c35d592cca1f8f92d8e99ae42ec70ba88a79e551199527cb"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "aea64f10259391ff73a9b8abb28f55a7fbacecf89ed50e6b1040b759c727100a"
+          },
+          "corner_normals": {
+            "shape": [
+              210456,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "5913fd8f188906216576f385d53be0b4856b13e4786df654ff28afc874c028d1"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              210456
+            ],
+            "dtype": "int32",
+            "sha256": "a4ab59f4b59c0e52c35d592cca1f8f92d8e99ae42ec70ba88a79e551199527cb"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              70152
+            ],
+            "dtype": "int32",
+            "sha256": "3358e85ed3c70a2af35f42c9176590decaf3332068a7fff88296a26387e087e2"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                35074,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "261b234c7a4848770e0da0d4552622ee44a545ec364f28d93e9b2c75da381922"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                35074
+              ],
+              "dtype": "bool",
+              "sha256": "b4e17817f53b611fdbfe8a0b79c975ae37ae9072cb7307c79582bf06635176fb"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                105228,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "f883f15ec9f78370e32acb739e6351ce51e38d97b5cf42581afc051c07f1cbe3"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                105228
+              ],
+              "dtype": "bool",
+              "sha256": "001fc1fa1ab2a1f9680fb9413de570e7ad81cac267a8df653544d65ea2b415e8"
+            }
+          },
+          {
+            "name": "sharp_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                105228
+              ],
+              "dtype": "bool",
+              "sha256": "3961f5f8f282b29254771e223bffc77f7fa78f114822a7e835921618cd78e521"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                70152
+              ],
+              "dtype": "bool",
+              "sha256": "cb5eef5102ff75d6a3ab38055280f0da068f37a347f48fa50fad13758532ff84"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                70152
+              ],
+              "dtype": "bool",
+              "sha256": "ccd0cd9f76cd623a21ec49b6cabaa2fe10856bca8fc45a7300c6339b0ceb88cb"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                210456
+              ],
+              "dtype": "int64",
+              "sha256": "429e3852aceab74d5358b9fb01dce9ee090a2ed2574a19f9c61a536b3cc5bebc"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                210456
+              ],
+              "dtype": "int64",
+              "sha256": "d400157de2be797d1ca8b5413841e2c73ffca57aa7e55d7759e7976356df9270"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original clean dark engine cap coating - conditional RDC estima",
+            "library": null
+          }
+        ]
+      },
+      "assembly_evaluated": {
+        "object": "M18 [engine-tappet-cap] UG5 tappet cap FRONT - editable conditi",
+        "mesh": "UG5 tappet cap FRONT - editable conditional candidate cleaned e",
+        "object_library": null,
+        "data_library": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+        "parent": "M18 [engine-tappet-cap] Tappet caps inherited estimated head da",
+        "hidden_render": false,
+        "vertices": 35074,
+        "triangles": 70152,
+        "arrays": {
+          "local": {
+            "shape": [
+              35074,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "f09e081ffa8b7fa11cf149d38e207a036b74c562938c645eb36e50779b206770"
+          },
+          "world": {
+            "shape": [
+              35074,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "07e890527ab4a730c4257feedd6a0a76224dad6aea60cf25b6271a6bf6867518"
+          },
+          "triangles": {
+            "shape": [
+              70152,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "a4ab59f4b59c0e52c35d592cca1f8f92d8e99ae42ec70ba88a79e551199527cb"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "da2639c00c457766684cd49f55ec812cde5be7a89779bdcbd97bd92f09ee0b5e"
+          },
+          "corner_normals": {
+            "shape": [
+              210456,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "5913fd8f188906216576f385d53be0b4856b13e4786df654ff28afc874c028d1"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              210456
+            ],
+            "dtype": "int32",
+            "sha256": "a4ab59f4b59c0e52c35d592cca1f8f92d8e99ae42ec70ba88a79e551199527cb"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              70152
+            ],
+            "dtype": "int32",
+            "sha256": "3358e85ed3c70a2af35f42c9176590decaf3332068a7fff88296a26387e087e2"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                35074,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "261b234c7a4848770e0da0d4552622ee44a545ec364f28d93e9b2c75da381922"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                35074
+              ],
+              "dtype": "bool",
+              "sha256": "b4e17817f53b611fdbfe8a0b79c975ae37ae9072cb7307c79582bf06635176fb"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                105228,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "f883f15ec9f78370e32acb739e6351ce51e38d97b5cf42581afc051c07f1cbe3"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                105228
+              ],
+              "dtype": "bool",
+              "sha256": "001fc1fa1ab2a1f9680fb9413de570e7ad81cac267a8df653544d65ea2b415e8"
+            }
+          },
+          {
+            "name": "sharp_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                105228
+              ],
+              "dtype": "bool",
+              "sha256": "3961f5f8f282b29254771e223bffc77f7fa78f114822a7e835921618cd78e521"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                70152
+              ],
+              "dtype": "bool",
+              "sha256": "cb5eef5102ff75d6a3ab38055280f0da068f37a347f48fa50fad13758532ff84"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                70152
+              ],
+              "dtype": "bool",
+              "sha256": "ccd0cd9f76cd623a21ec49b6cabaa2fe10856bca8fc45a7300c6339b0ceb88cb"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                210456
+              ],
+              "dtype": "int64",
+              "sha256": "429e3852aceab74d5358b9fb01dce9ee090a2ed2574a19f9c61a536b3cc5bebc"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                210456
+              ],
+              "dtype": "int64",
+              "sha256": "d400157de2be797d1ca8b5413841e2c73ffca57aa7e55d7759e7976356df9270"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original clean dark engine cap coating - conditional RDC estima",
+            "library": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend"
+          }
+        ]
+      },
+      "comparisons": {
+        "local": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 5.960464477539063e-08
+        },
+        "triangles": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "matrix_world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 5.960464477539063e-08
+        },
+        "corner_normals": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "loop_vertex_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "polygon_material_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        }
+      },
+      "attributes_exact": true,
+      "material_names_and_libraries_exact": true,
+      "world_delta_explained_by_actual_matrix_roundoff_m": 3.1854270205049195e-08
+    },
+    {
+      "key": "engine-tappet-cap__2",
+      "asset": "engine-tappet-cap",
+      "source": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+      "source_sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9",
+      "collection": "WEWA_ENGINE_TAPPET_CAP",
+      "source_name": "UG5 tappet cap REAR - same conditional type",
+      "guides_activated_in_memory": [
+        "TAPPET_CAP_IMMUTABLE_HEAD_GUIDE",
+        "TAPPET_CAP_RETAINED_CONSTRUCTION"
+      ],
+      "source_evaluated": {
+        "object": "UG5 tappet cap REAR - same conditional type",
+        "mesh": "UG5 tappet cap FRONT - editable conditional candidate cleaned e",
+        "object_library": null,
+        "data_library": null,
+        "parent": "Tappet caps inherited estimated head datum",
+        "hidden_render": false,
+        "vertices": 35074,
+        "triangles": 70152,
+        "arrays": {
+          "local": {
+            "shape": [
+              35074,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "f09e081ffa8b7fa11cf149d38e207a036b74c562938c645eb36e50779b206770"
+          },
+          "world": {
+            "shape": [
+              35074,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "2f8425e2952467ddab9302ee5a48a0fad5ea10b344245977676c204fc2e8c863"
+          },
+          "triangles": {
+            "shape": [
+              70152,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "a4ab59f4b59c0e52c35d592cca1f8f92d8e99ae42ec70ba88a79e551199527cb"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "1f225a0100eabc8c85b540bea8cba7a1c9114887c032880267cbd8e5a7181f75"
+          },
+          "corner_normals": {
+            "shape": [
+              210456,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "5913fd8f188906216576f385d53be0b4856b13e4786df654ff28afc874c028d1"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              210456
+            ],
+            "dtype": "int32",
+            "sha256": "a4ab59f4b59c0e52c35d592cca1f8f92d8e99ae42ec70ba88a79e551199527cb"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              70152
+            ],
+            "dtype": "int32",
+            "sha256": "3358e85ed3c70a2af35f42c9176590decaf3332068a7fff88296a26387e087e2"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                35074,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "261b234c7a4848770e0da0d4552622ee44a545ec364f28d93e9b2c75da381922"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                35074
+              ],
+              "dtype": "bool",
+              "sha256": "b4e17817f53b611fdbfe8a0b79c975ae37ae9072cb7307c79582bf06635176fb"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                105228,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "f883f15ec9f78370e32acb739e6351ce51e38d97b5cf42581afc051c07f1cbe3"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                105228
+              ],
+              "dtype": "bool",
+              "sha256": "001fc1fa1ab2a1f9680fb9413de570e7ad81cac267a8df653544d65ea2b415e8"
+            }
+          },
+          {
+            "name": "sharp_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                105228
+              ],
+              "dtype": "bool",
+              "sha256": "3961f5f8f282b29254771e223bffc77f7fa78f114822a7e835921618cd78e521"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                70152
+              ],
+              "dtype": "bool",
+              "sha256": "cb5eef5102ff75d6a3ab38055280f0da068f37a347f48fa50fad13758532ff84"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                70152
+              ],
+              "dtype": "bool",
+              "sha256": "ccd0cd9f76cd623a21ec49b6cabaa2fe10856bca8fc45a7300c6339b0ceb88cb"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                210456
+              ],
+              "dtype": "int64",
+              "sha256": "429e3852aceab74d5358b9fb01dce9ee090a2ed2574a19f9c61a536b3cc5bebc"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                210456
+              ],
+              "dtype": "int64",
+              "sha256": "d400157de2be797d1ca8b5413841e2c73ffca57aa7e55d7759e7976356df9270"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original clean dark engine cap coating - conditional RDC estima",
+            "library": null
+          }
+        ]
+      },
+      "assembly_evaluated": {
+        "object": "M18 [engine-tappet-cap] UG5 tappet cap REAR - same conditional ",
+        "mesh": "UG5 tappet cap FRONT - editable conditional candidate cleaned e",
+        "object_library": null,
+        "data_library": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+        "parent": "M18 [engine-tappet-cap] Tappet caps inherited estimated head da",
+        "hidden_render": false,
+        "vertices": 35074,
+        "triangles": 70152,
+        "arrays": {
+          "local": {
+            "shape": [
+              35074,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "f09e081ffa8b7fa11cf149d38e207a036b74c562938c645eb36e50779b206770"
+          },
+          "world": {
+            "shape": [
+              35074,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "6f15d2e2dd2156a00d5ea4d095b0c4f63dfda551b09211b9b0e7ab7276011875"
+          },
+          "triangles": {
+            "shape": [
+              70152,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "a4ab59f4b59c0e52c35d592cca1f8f92d8e99ae42ec70ba88a79e551199527cb"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "899a269878240770f26458c2a493be5c1146a7f66283028faf1357db6af8b87e"
+          },
+          "corner_normals": {
+            "shape": [
+              210456,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "5913fd8f188906216576f385d53be0b4856b13e4786df654ff28afc874c028d1"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              210456
+            ],
+            "dtype": "int32",
+            "sha256": "a4ab59f4b59c0e52c35d592cca1f8f92d8e99ae42ec70ba88a79e551199527cb"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              70152
+            ],
+            "dtype": "int32",
+            "sha256": "3358e85ed3c70a2af35f42c9176590decaf3332068a7fff88296a26387e087e2"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                35074,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "261b234c7a4848770e0da0d4552622ee44a545ec364f28d93e9b2c75da381922"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                35074
+              ],
+              "dtype": "bool",
+              "sha256": "b4e17817f53b611fdbfe8a0b79c975ae37ae9072cb7307c79582bf06635176fb"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                105228,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "f883f15ec9f78370e32acb739e6351ce51e38d97b5cf42581afc051c07f1cbe3"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                105228
+              ],
+              "dtype": "bool",
+              "sha256": "001fc1fa1ab2a1f9680fb9413de570e7ad81cac267a8df653544d65ea2b415e8"
+            }
+          },
+          {
+            "name": "sharp_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                105228
+              ],
+              "dtype": "bool",
+              "sha256": "3961f5f8f282b29254771e223bffc77f7fa78f114822a7e835921618cd78e521"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                70152
+              ],
+              "dtype": "bool",
+              "sha256": "cb5eef5102ff75d6a3ab38055280f0da068f37a347f48fa50fad13758532ff84"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                70152
+              ],
+              "dtype": "bool",
+              "sha256": "ccd0cd9f76cd623a21ec49b6cabaa2fe10856bca8fc45a7300c6339b0ceb88cb"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                210456
+              ],
+              "dtype": "int64",
+              "sha256": "429e3852aceab74d5358b9fb01dce9ee090a2ed2574a19f9c61a536b3cc5bebc"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                210456
+              ],
+              "dtype": "int64",
+              "sha256": "d400157de2be797d1ca8b5413841e2c73ffca57aa7e55d7759e7976356df9270"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original clean dark engine cap coating - conditional RDC estima",
+            "library": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend"
+          }
+        ]
+      },
+      "comparisons": {
+        "local": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 5.960464477539063e-08
+        },
+        "triangles": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "matrix_world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 6.357302595461078e-08
+        },
+        "corner_normals": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "loop_vertex_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "polygon_material_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        }
+      },
+      "attributes_exact": true,
+      "material_names_and_libraries_exact": true,
+      "world_delta_explained_by_actual_matrix_roundoff_m": 3.163213164522394e-08
+    },
+    {
+      "key": "engine-ohc-cover__1",
+      "asset": "engine-ohc-cover",
+      "source": "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+      "source_sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45",
+      "collection": "WEWA_ENGINE_OHC_COVER_BODY",
+      "source_name": "UG5 OHC cast cover body - conditional candidate",
+      "guides_activated_in_memory": [
+        "OHC_COVER_IMMUTABLE_HEAD_GUIDE",
+        "OHC_COVER_RETAINED_CONSTRUCTION"
+      ],
+      "source_evaluated": {
+        "object": "UG5 OHC cast cover body - conditional candidate",
+        "mesh": "UG5 OHC cast cover body - conditional candidate cleaned evaluat",
+        "object_library": null,
+        "data_library": null,
+        "parent": "OHC cover inherited estimated head datum",
+        "hidden_render": false,
+        "vertices": 43744,
+        "triangles": 87500,
+        "arrays": {
+          "local": {
+            "shape": [
+              43744,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "9e3b882a3e755571a9896649c0203d228b516dd5f42ffc9ccd20ab0cd38a4b31"
+          },
+          "world": {
+            "shape": [
+              43744,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "e54ed5a0d13e8635af3c76fd6160f4bfa114c06206f9792e82fa36b0e4a02903"
+          },
+          "triangles": {
+            "shape": [
+              87500,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "a6bf1c1e92a665fc919da7fda067d72192509792ed5124efacf904d102a93afe"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "1d74b04945a63374d22e0d173ed5d7e6d421c896ae23bbc0bad444e76d53472d"
+          },
+          "corner_normals": {
+            "shape": [
+              262500,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "1df4258923dc9b90390d72be01a94f17a9eafee837d7a0b4aa71e0456c7afb47"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              262500
+            ],
+            "dtype": "int32",
+            "sha256": "a6bf1c1e92a665fc919da7fda067d72192509792ed5124efacf904d102a93afe"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              87500
+            ],
+            "dtype": "int32",
+            "sha256": "f69782dc40d93736fe06f709e0ef6cdaae891e3cc7385d6aa421329bd57b0898"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                43744,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "8f4327210b758645e70a1c16a47de7a9ac21cd0c8c172f8d3e95df10bf80e02a"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                43744
+              ],
+              "dtype": "bool",
+              "sha256": "7a8da0010ab0869c056bac5dafe31e558f1095063c91cb1d1a3efd9a59477f77"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                131250,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "4773ce21160782bb374f5805cac3c743f6d607afff7c6ad189db81748389a12d"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                131250
+              ],
+              "dtype": "bool",
+              "sha256": "16944dcdb46d9ce00b717f2ee5d15cbdded5a10f35a593d9aebe0bc928992cfe"
+            }
+          },
+          {
+            "name": "sharp_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                131250
+              ],
+              "dtype": "bool",
+              "sha256": "0752e367796bde414bd69573c6d27b22d9416acdada1dd68ebbd659a03504bf3"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                87500
+              ],
+              "dtype": "bool",
+              "sha256": "1b41d87922cf5eb7aeb818b9d8080a29bfb12267cc34dbada5b295208e56e592"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                87500
+              ],
+              "dtype": "bool",
+              "sha256": "04516b3b2c48229033a2ccecc3648514074cfe742b9df3a089769cbd7934be24"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                262500
+              ],
+              "dtype": "int64",
+              "sha256": "6cd13773d484a42ff0487c12dc08eed719ba87c4f1dae4d1867d4b5de20836a1"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                262500
+              ],
+              "dtype": "int64",
+              "sha256": "2bc7efa5d9d1fd89c90fd6ed9aa07554283bf970e4ff49109f808252895372e3"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original dark OHC cover clean coating - estimated",
+            "library": null
+          }
+        ]
+      },
+      "assembly_evaluated": {
+        "object": "M18 [engine-ohc-cover] UG5 OHC cast cover body - conditional ca",
+        "mesh": "UG5 OHC cast cover body - conditional candidate cleaned evaluat",
+        "object_library": null,
+        "data_library": "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+        "parent": "M18 [engine-ohc-cover] OHC cover inherited estimated head datum",
+        "hidden_render": false,
+        "vertices": 43744,
+        "triangles": 87500,
+        "arrays": {
+          "local": {
+            "shape": [
+              43744,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "9e3b882a3e755571a9896649c0203d228b516dd5f42ffc9ccd20ab0cd38a4b31"
+          },
+          "world": {
+            "shape": [
+              43744,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "c11d2267a831d10e243e6ccd812e4b57a207f89e2e002674c794ee15877afff0"
+          },
+          "triangles": {
+            "shape": [
+              87500,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "a6bf1c1e92a665fc919da7fda067d72192509792ed5124efacf904d102a93afe"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "2a6c3e768c33c40d4e8c1b831df31389e4b0ca047608102e2aeca995825ed468"
+          },
+          "corner_normals": {
+            "shape": [
+              262500,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "1df4258923dc9b90390d72be01a94f17a9eafee837d7a0b4aa71e0456c7afb47"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              262500
+            ],
+            "dtype": "int32",
+            "sha256": "a6bf1c1e92a665fc919da7fda067d72192509792ed5124efacf904d102a93afe"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              87500
+            ],
+            "dtype": "int32",
+            "sha256": "f69782dc40d93736fe06f709e0ef6cdaae891e3cc7385d6aa421329bd57b0898"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                43744,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "8f4327210b758645e70a1c16a47de7a9ac21cd0c8c172f8d3e95df10bf80e02a"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                43744
+              ],
+              "dtype": "bool",
+              "sha256": "7a8da0010ab0869c056bac5dafe31e558f1095063c91cb1d1a3efd9a59477f77"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                131250,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "4773ce21160782bb374f5805cac3c743f6d607afff7c6ad189db81748389a12d"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                131250
+              ],
+              "dtype": "bool",
+              "sha256": "16944dcdb46d9ce00b717f2ee5d15cbdded5a10f35a593d9aebe0bc928992cfe"
+            }
+          },
+          {
+            "name": "sharp_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                131250
+              ],
+              "dtype": "bool",
+              "sha256": "0752e367796bde414bd69573c6d27b22d9416acdada1dd68ebbd659a03504bf3"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                87500
+              ],
+              "dtype": "bool",
+              "sha256": "1b41d87922cf5eb7aeb818b9d8080a29bfb12267cc34dbada5b295208e56e592"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                87500
+              ],
+              "dtype": "bool",
+              "sha256": "04516b3b2c48229033a2ccecc3648514074cfe742b9df3a089769cbd7934be24"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                262500
+              ],
+              "dtype": "int64",
+              "sha256": "6cd13773d484a42ff0487c12dc08eed719ba87c4f1dae4d1867d4b5de20836a1"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                262500
+              ],
+              "dtype": "int64",
+              "sha256": "2bc7efa5d9d1fd89c90fd6ed9aa07554283bf970e4ff49109f808252895372e3"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original dark OHC cover clean coating - estimated",
+            "library": "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend"
+          }
+        ]
+      },
+      "comparisons": {
+        "local": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 2.9802322387695312e-08
+        },
+        "triangles": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "matrix_world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 1.4901161193847656e-07
+        },
+        "corner_normals": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "loop_vertex_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "polygon_material_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        }
+      },
+      "attributes_exact": true,
+      "material_names_and_libraries_exact": true,
+      "world_delta_explained_by_actual_matrix_roundoff_m": 1.271378624655584e-08
+    },
+    {
+      "key": "engine-ohc-stub__0",
+      "asset": "engine-ohc-stub",
+      "source": "assets-src/moto-components/engine-ohc-stub/engine-ohc-stub-v1.blend",
+      "source_sha256": "285eca8f5345efbfe31da9d2cc95464edcd9070a2e2e902e1e74990b2fb110c0",
+      "collection": "WEWA_ENGINE_OHC_STUB",
+      "source_name": "OHC metallic hollow tube with one distal retention lip - editab",
+      "guides_activated_in_memory": [
+        "OHC_STUB_IMMUTABLE_GUIDES"
+      ],
+      "source_evaluated": {
+        "object": "OHC metallic hollow tube with one distal retention lip - editab",
+        "mesh": "OHC metallic hollow tube with one distal retention lip - editab",
+        "object_library": null,
+        "data_library": null,
+        "parent": "OHC metallic stub inherited provisional seat datum",
+        "hidden_render": false,
+        "vertices": 22656,
+        "triangles": 45312,
+        "arrays": {
+          "local": {
+            "shape": [
+              22656,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "ea2850f6c01e8eb5c0695cf8f8b50c68d733996982f378f67604bf516c879666"
+          },
+          "world": {
+            "shape": [
+              22656,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "4b6681f1d3844dd44594640adcd76e113f81dee98c8302f9c376b40c7bab330d"
+          },
+          "triangles": {
+            "shape": [
+              45312,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "9f55f2b5a37c25bdd569dbc561c593736b2d62c17ae8b1700c0cde9a8b0bd134"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "8c8ab0c3f15110fa10c301bac81198bf30df4b8c5e565dcf68e1f00a042b9b68"
+          },
+          "corner_normals": {
+            "shape": [
+              90624,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "8f9f52e73f8b1b5a0c2265da0e3016893caf51c73d1c991cb736d5b67c92b99e"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              90624
+            ],
+            "dtype": "int32",
+            "sha256": "e48797dc3c06aec3bdf9f4f1516c106c43934ca3b813b4af00df6f73e6cae3b7"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              22656
+            ],
+            "dtype": "int32",
+            "sha256": "569911f997f86d54183d3cea0be7ef672fc9dc6ae0f3191838d8130dd003ebfa"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                22656,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "5c635e227b8f54e7f0a968d367c1795414fd1b73da07b897b8e8d0a0d9471afa"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                22656
+              ],
+              "dtype": "bool",
+              "sha256": "53bb8034b022016ca44e7a8e860e24106b5d7acbcb8f9db957373524ea3f6079"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                45312,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "cb91c93cdd150621d34ef1b9049f1b978849ab3805a12975ef75894a29c3a99f"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                45312
+              ],
+              "dtype": "bool",
+              "sha256": "ffd8da5844034ce8aade46d9950aecd2d60859d412ee20fcc00482f78e096e1b"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                22656
+              ],
+              "dtype": "bool",
+              "sha256": "53bb8034b022016ca44e7a8e860e24106b5d7acbcb8f9db957373524ea3f6079"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                22656
+              ],
+              "dtype": "bool",
+              "sha256": "cdc71b02c5ffa79674335d681bf294773a8383aaea2a7ceef4d0baf49b8ab43e"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                90624
+              ],
+              "dtype": "int64",
+              "sha256": "482fece64c625682f93ba17241afc808405e056b75e986fd7e6bc5051b8e1d62"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                90624
+              ],
+              "dtype": "int64",
+              "sha256": "10c9e7b321cf4d61d41b663573ceb78b0939570d20194b67a7cdebafd710a002"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original estimated plated metal - no photo texture",
+            "library": null
+          }
+        ]
+      },
+      "assembly_evaluated": {
+        "object": "M18 [engine-ohc-stub] OHC metallic hollow tube with one distal ",
+        "mesh": "OHC metallic hollow tube with one distal retention lip - editab",
+        "object_library": null,
+        "data_library": "assets-src/moto-components/engine-ohc-stub/engine-ohc-stub-v1.blend",
+        "parent": "M18 [engine-ohc-stub] OHC metallic stub inherited provisional s",
+        "hidden_render": false,
+        "vertices": 22656,
+        "triangles": 45312,
+        "arrays": {
+          "local": {
+            "shape": [
+              22656,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "ea2850f6c01e8eb5c0695cf8f8b50c68d733996982f378f67604bf516c879666"
+          },
+          "world": {
+            "shape": [
+              22656,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "d6cb0a02235c72f4fcc9bbc60f3aacacf146d246766914d2a9a1c6fe7927f6f0"
+          },
+          "triangles": {
+            "shape": [
+              45312,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "9f55f2b5a37c25bdd569dbc561c593736b2d62c17ae8b1700c0cde9a8b0bd134"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "7eaa9e820d96c414e39a2d00fb7d38bce72ebfb516202d27f85d51daa82c3760"
+          },
+          "corner_normals": {
+            "shape": [
+              90624,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "8f9f52e73f8b1b5a0c2265da0e3016893caf51c73d1c991cb736d5b67c92b99e"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              90624
+            ],
+            "dtype": "int32",
+            "sha256": "e48797dc3c06aec3bdf9f4f1516c106c43934ca3b813b4af00df6f73e6cae3b7"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              22656
+            ],
+            "dtype": "int32",
+            "sha256": "569911f997f86d54183d3cea0be7ef672fc9dc6ae0f3191838d8130dd003ebfa"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                22656,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "5c635e227b8f54e7f0a968d367c1795414fd1b73da07b897b8e8d0a0d9471afa"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                22656
+              ],
+              "dtype": "bool",
+              "sha256": "53bb8034b022016ca44e7a8e860e24106b5d7acbcb8f9db957373524ea3f6079"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                45312,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "cb91c93cdd150621d34ef1b9049f1b978849ab3805a12975ef75894a29c3a99f"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                45312
+              ],
+              "dtype": "bool",
+              "sha256": "ffd8da5844034ce8aade46d9950aecd2d60859d412ee20fcc00482f78e096e1b"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                22656
+              ],
+              "dtype": "bool",
+              "sha256": "53bb8034b022016ca44e7a8e860e24106b5d7acbcb8f9db957373524ea3f6079"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                22656
+              ],
+              "dtype": "bool",
+              "sha256": "cdc71b02c5ffa79674335d681bf294773a8383aaea2a7ceef4d0baf49b8ab43e"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                90624
+              ],
+              "dtype": "int64",
+              "sha256": "482fece64c625682f93ba17241afc808405e056b75e986fd7e6bc5051b8e1d62"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                90624
+              ],
+              "dtype": "int64",
+              "sha256": "10c9e7b321cf4d61d41b663573ceb78b0939570d20194b67a7cdebafd710a002"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original estimated plated metal - no photo texture",
+            "library": "assets-src/moto-components/engine-ohc-stub/engine-ohc-stub-v1.blend"
+          }
+        ]
+      },
+      "comparisons": {
+        "local": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 2.9802322387695312e-08
+        },
+        "triangles": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "matrix_world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 1.4901161193847656e-07
+        },
+        "corner_normals": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "loop_vertex_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "polygon_material_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        }
+      },
+      "attributes_exact": true,
+      "material_names_and_libraries_exact": true,
+      "world_delta_explained_by_actual_matrix_roundoff_m": 4.862693080183791e-09
+    },
+    {
+      "key": "engine-spark-plug-v2__0",
+      "asset": "engine-spark-plug-v2",
+      "source": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+      "source_sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5",
+      "collection": "WEWA_ENGINE_SPARK_PLUG_EXTERIOR",
+      "source_name": "Plug exposed ceramic five estimated lower ribs - unmarked",
+      "guides_activated_in_memory": [
+        "SPARK_PLUG_IMMUTABLE_HEAD_GUIDE",
+        "SPARK_PLUG_V2_IMMUTABLE_CAP_GUIDE"
+      ],
+      "source_evaluated": {
+        "object": "Plug exposed ceramic five estimated lower ribs - unmarked",
+        "mesh": "Plug exposed ceramic five estimated lower ribs - unmarked",
+        "object_library": null,
+        "data_library": null,
+        "parent": "Spark plug inherited estimated seat datum",
+        "hidden_render": false,
+        "vertices": 25346,
+        "triangles": 50688,
+        "arrays": {
+          "local": {
+            "shape": [
+              25346,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "17a8457c90410069df1eda093373f731d75574baa80338628d3cc345b1bc66a2"
+          },
+          "world": {
+            "shape": [
+              25346,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "c0fc7af4a267978caef63354f0808db33bf5b492fe6753e232a07efc1f890ebf"
+          },
+          "triangles": {
+            "shape": [
+              50688,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "8bd968335e29d667e42b7eae3f0fd7347edb605486876620610c141e94072fc9"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "489179fb17cb6b964ffb0ee6d925b8152617194e0280203cf54e5760f688e58a"
+          },
+          "corner_normals": {
+            "shape": [
+              101760,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "3173203961d9f72c8663bcf5b6d1f44929fed11918644548befe01c1b1a81fb0"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              101760
+            ],
+            "dtype": "int32",
+            "sha256": "e2ba1b02fc723b4f2ce29dd13702e174b70b1c41bdb905957faa7140bff7cc16"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              25536
+            ],
+            "dtype": "int32",
+            "sha256": "a2ed79da2ad56c3a753b4211fe7e2d5028e3eda79f8f18c4bdb9e5a2d0b00db7"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                25346,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "b8014dfe7bd60d7e2fd3b9e758c3ffb485a768107ecda47e3a6615b300544dff"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                25346
+              ],
+              "dtype": "bool",
+              "sha256": "aaebee9019494ecea516857eac6bdc8d1d41cd9c629ffdebdaa870ee3a7a5d61"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                50880,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "3c778e4184102255e4544a92aed38d6767eaaccf71711d06a0fef552710ff340"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                50880
+              ],
+              "dtype": "bool",
+              "sha256": "31a3a767bfc0fe49b03aac48b6577275f63db38d9d9f5cea7a8826a29ae5a25e"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                25536
+              ],
+              "dtype": "bool",
+              "sha256": "8381ad3544ef7cc8bcf87429677bd141b5669d49de23e0c39b7ad21b4112c337"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                25536
+              ],
+              "dtype": "bool",
+              "sha256": "47362069d762729e9a8e98db059d6f00ea7263742e4e613103096ba4ef2b528a"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                101760
+              ],
+              "dtype": "int64",
+              "sha256": "5a2f014f42d8777ef6458ab68f9c0e353aa4c5ebc498cde036b0e6035d5c9c23"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                101760
+              ],
+              "dtype": "int64",
+              "sha256": "6b85ddb50e2a138d348733f150d090557a195eaac0645e9cc38f45e60292d0af"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original unmarked white glazed ceramic",
+            "library": null
+          }
+        ]
+      },
+      "assembly_evaluated": {
+        "object": "M18 [engine-spark-plug-v2] Plug exposed ceramic five estimated ",
+        "mesh": "Plug exposed ceramic five estimated lower ribs - unmarked",
+        "object_library": null,
+        "data_library": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+        "parent": "M18 [engine-spark-plug-v2] Spark plug inherited estimated seat ",
+        "hidden_render": false,
+        "vertices": 25346,
+        "triangles": 50688,
+        "arrays": {
+          "local": {
+            "shape": [
+              25346,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "17a8457c90410069df1eda093373f731d75574baa80338628d3cc345b1bc66a2"
+          },
+          "world": {
+            "shape": [
+              25346,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "4475385ea941e5d4e5811624ff8a55c057bd50b420ba4524a4065c3f797e9700"
+          },
+          "triangles": {
+            "shape": [
+              50688,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "8bd968335e29d667e42b7eae3f0fd7347edb605486876620610c141e94072fc9"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "54f04819acef97ba47679d4923c2bf672eb838534993a4bcf081f46d6a70ba22"
+          },
+          "corner_normals": {
+            "shape": [
+              101760,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "3173203961d9f72c8663bcf5b6d1f44929fed11918644548befe01c1b1a81fb0"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              101760
+            ],
+            "dtype": "int32",
+            "sha256": "e2ba1b02fc723b4f2ce29dd13702e174b70b1c41bdb905957faa7140bff7cc16"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              25536
+            ],
+            "dtype": "int32",
+            "sha256": "a2ed79da2ad56c3a753b4211fe7e2d5028e3eda79f8f18c4bdb9e5a2d0b00db7"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                25346,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "b8014dfe7bd60d7e2fd3b9e758c3ffb485a768107ecda47e3a6615b300544dff"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                25346
+              ],
+              "dtype": "bool",
+              "sha256": "aaebee9019494ecea516857eac6bdc8d1d41cd9c629ffdebdaa870ee3a7a5d61"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                50880,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "3c778e4184102255e4544a92aed38d6767eaaccf71711d06a0fef552710ff340"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                50880
+              ],
+              "dtype": "bool",
+              "sha256": "31a3a767bfc0fe49b03aac48b6577275f63db38d9d9f5cea7a8826a29ae5a25e"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                25536
+              ],
+              "dtype": "bool",
+              "sha256": "8381ad3544ef7cc8bcf87429677bd141b5669d49de23e0c39b7ad21b4112c337"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                25536
+              ],
+              "dtype": "bool",
+              "sha256": "47362069d762729e9a8e98db059d6f00ea7263742e4e613103096ba4ef2b528a"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                101760
+              ],
+              "dtype": "int64",
+              "sha256": "5a2f014f42d8777ef6458ab68f9c0e353aa4c5ebc498cde036b0e6035d5c9c23"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                101760
+              ],
+              "dtype": "int64",
+              "sha256": "6b85ddb50e2a138d348733f150d090557a195eaac0645e9cc38f45e60292d0af"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original unmarked white glazed ceramic",
+            "library": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend"
+          }
+        ]
+      },
+      "comparisons": {
+        "local": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 7.450580596923828e-09
+        },
+        "triangles": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "matrix_world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 2.9802322387695312e-08
+        },
+        "corner_normals": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "loop_vertex_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "polygon_material_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        }
+      },
+      "attributes_exact": true,
+      "material_names_and_libraries_exact": true,
+      "world_delta_explained_by_actual_matrix_roundoff_m": 6.88433671180988e-10
+    },
+    {
+      "key": "engine-spark-plug-v2__1",
+      "asset": "engine-spark-plug-v2",
+      "source": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+      "source_sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5",
+      "collection": "WEWA_ENGINE_SPARK_PLUG_EXTERIOR",
+      "source_name": "Plug metal body rounded hex - hidden insertion plain",
+      "guides_activated_in_memory": [
+        "SPARK_PLUG_IMMUTABLE_HEAD_GUIDE",
+        "SPARK_PLUG_V2_IMMUTABLE_CAP_GUIDE"
+      ],
+      "source_evaluated": {
+        "object": "Plug metal body rounded hex - hidden insertion plain",
+        "mesh": "Plug metal body rounded hex - hidden insertion plain",
+        "object_library": null,
+        "data_library": null,
+        "parent": "Spark plug inherited estimated seat datum",
+        "hidden_render": false,
+        "vertices": 10212,
+        "triangles": 20424,
+        "arrays": {
+          "local": {
+            "shape": [
+              10212,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "a8cb7e2703a9f75eb5fb717184451ccfff2a119b127908130e5f1ed71b83a5d0"
+          },
+          "world": {
+            "shape": [
+              10212,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "62f49a00d2e92e362a47bee038f967faa51b006e64b21d1182e02f087fc7e73d"
+          },
+          "triangles": {
+            "shape": [
+              20424,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "6f6e17ae7e70c3f1ba75bef858ff7a521654756f3a4e2621bca1e613b0dc3be1"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "489179fb17cb6b964ffb0ee6d925b8152617194e0280203cf54e5760f688e58a"
+          },
+          "corner_normals": {
+            "shape": [
+              40848,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "29d1f0db27b93f779bb26375c0712a069777f4449a560de62a274f102221a36e"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              40848
+            ],
+            "dtype": "int32",
+            "sha256": "a978833a1786ce0123633e87cd499f56896d3e610bdbccbb126ed9470eeeea6b"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              10212
+            ],
+            "dtype": "int32",
+            "sha256": "9de59283881a91de166e8035b772ed3385fe515a3c363dc4bae94709ed0a9eba"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                10212,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "010256e1778ad8861ed2879864239ac5889383789592542f2928c8be96b9d7b5"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                10212
+              ],
+              "dtype": "bool",
+              "sha256": "73a4e0be66b11440c52bfc50b86552e0d7416c93d9b5689b2aba4df8b426eaaf"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                20424,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "2bb4917b9a5d67464c7ec0fb73c4d4d0e1ba7681a14021d27ef73e3164505b0f"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                20424
+              ],
+              "dtype": "bool",
+              "sha256": "b2d98f2d18eb18eda7907fb0058355b0da0eae89caf5ead2437417ca83fbdf1b"
+            }
+          },
+          {
+            "name": "sharp_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                20424
+              ],
+              "dtype": "bool",
+              "sha256": "21cd6381d5764f953cc58be5a13b64d944a31d7843e4d3ff6912bbed57f52703"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                10212
+              ],
+              "dtype": "bool",
+              "sha256": "73a4e0be66b11440c52bfc50b86552e0d7416c93d9b5689b2aba4df8b426eaaf"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                10212
+              ],
+              "dtype": "bool",
+              "sha256": "e134f4fb75ba5854315abfaf1ba31312a2aed427ec330231a69f1f1f56c19ce9"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                40848
+              ],
+              "dtype": "int64",
+              "sha256": "59b421a857accc0fa58aabd6f12a2a5da92b89e841198b8df37e68032561fca6"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                40848
+              ],
+              "dtype": "int64",
+              "sha256": "d0eac3707dd14c07e93715c8ff34822ec65c1099213fa2ff54b99567fb0fce61"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original estimated plug metal plating",
+            "library": null
+          }
+        ]
+      },
+      "assembly_evaluated": {
+        "object": "M18 [engine-spark-plug-v2] Plug metal body rounded hex - hidden",
+        "mesh": "Plug metal body rounded hex - hidden insertion plain",
+        "object_library": null,
+        "data_library": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+        "parent": "M18 [engine-spark-plug-v2] Spark plug inherited estimated seat ",
+        "hidden_render": false,
+        "vertices": 10212,
+        "triangles": 20424,
+        "arrays": {
+          "local": {
+            "shape": [
+              10212,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "a8cb7e2703a9f75eb5fb717184451ccfff2a119b127908130e5f1ed71b83a5d0"
+          },
+          "world": {
+            "shape": [
+              10212,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "11bd7054b923f0636f2b36856533bf742266c7d3e2348ab8d10ef6f7467ab332"
+          },
+          "triangles": {
+            "shape": [
+              20424,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "6f6e17ae7e70c3f1ba75bef858ff7a521654756f3a4e2621bca1e613b0dc3be1"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "54f04819acef97ba47679d4923c2bf672eb838534993a4bcf081f46d6a70ba22"
+          },
+          "corner_normals": {
+            "shape": [
+              40848,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "29d1f0db27b93f779bb26375c0712a069777f4449a560de62a274f102221a36e"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              40848
+            ],
+            "dtype": "int32",
+            "sha256": "a978833a1786ce0123633e87cd499f56896d3e610bdbccbb126ed9470eeeea6b"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              10212
+            ],
+            "dtype": "int32",
+            "sha256": "9de59283881a91de166e8035b772ed3385fe515a3c363dc4bae94709ed0a9eba"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                10212,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "010256e1778ad8861ed2879864239ac5889383789592542f2928c8be96b9d7b5"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                10212
+              ],
+              "dtype": "bool",
+              "sha256": "73a4e0be66b11440c52bfc50b86552e0d7416c93d9b5689b2aba4df8b426eaaf"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                20424,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "2bb4917b9a5d67464c7ec0fb73c4d4d0e1ba7681a14021d27ef73e3164505b0f"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                20424
+              ],
+              "dtype": "bool",
+              "sha256": "b2d98f2d18eb18eda7907fb0058355b0da0eae89caf5ead2437417ca83fbdf1b"
+            }
+          },
+          {
+            "name": "sharp_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                20424
+              ],
+              "dtype": "bool",
+              "sha256": "21cd6381d5764f953cc58be5a13b64d944a31d7843e4d3ff6912bbed57f52703"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                10212
+              ],
+              "dtype": "bool",
+              "sha256": "73a4e0be66b11440c52bfc50b86552e0d7416c93d9b5689b2aba4df8b426eaaf"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                10212
+              ],
+              "dtype": "bool",
+              "sha256": "e134f4fb75ba5854315abfaf1ba31312a2aed427ec330231a69f1f1f56c19ce9"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                40848
+              ],
+              "dtype": "int64",
+              "sha256": "59b421a857accc0fa58aabd6f12a2a5da92b89e841198b8df37e68032561fca6"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                40848
+              ],
+              "dtype": "int64",
+              "sha256": "d0eac3707dd14c07e93715c8ff34822ec65c1099213fa2ff54b99567fb0fce61"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original estimated plug metal plating",
+            "library": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend"
+          }
+        ]
+      },
+      "comparisons": {
+        "local": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 7.450580596923828e-09
+        },
+        "triangles": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "matrix_world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 2.9802322387695312e-08
+        },
+        "corner_normals": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "loop_vertex_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "polygon_material_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        }
+      },
+      "attributes_exact": true,
+      "material_names_and_libraries_exact": true,
+      "world_delta_explained_by_actual_matrix_roundoff_m": 4.6368188455492287e-10
+    },
+    {
+      "key": "engine-spark-plug-v2__2",
+      "asset": "engine-spark-plug-v2",
+      "source": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+      "source_sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5",
+      "collection": "WEWA_ENGINE_SPARK_PLUG_EXTERIOR",
+      "source_name": "Plug separate estimated uncompressed seat washer",
+      "guides_activated_in_memory": [
+        "SPARK_PLUG_IMMUTABLE_HEAD_GUIDE",
+        "SPARK_PLUG_V2_IMMUTABLE_CAP_GUIDE"
+      ],
+      "source_evaluated": {
+        "object": "Plug separate estimated uncompressed seat washer",
+        "mesh": "Plug separate estimated uncompressed seat washer",
+        "object_library": null,
+        "data_library": null,
+        "parent": "Spark plug inherited estimated seat datum",
+        "hidden_render": false,
+        "vertices": 6912,
+        "triangles": 13824,
+        "arrays": {
+          "local": {
+            "shape": [
+              6912,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "180550fc1b33ce1e6f81fe83eb637829dc6babdc0ee77b563690c8db461c82ed"
+          },
+          "world": {
+            "shape": [
+              6912,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "6be1280a117a91d23477e2081851ccb09e95689ffb6bad523eec09d58d3abf7e"
+          },
+          "triangles": {
+            "shape": [
+              13824,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "be28c9c171dd1145a3afdf6c702465f498c7ee737e4060d3d8841c4a9b3ecc81"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "489179fb17cb6b964ffb0ee6d925b8152617194e0280203cf54e5760f688e58a"
+          },
+          "corner_normals": {
+            "shape": [
+              27648,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "9831c9ad56d898858ad73adbb7616951333382e631f182349b8bf3feb0f97d58"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              27648
+            ],
+            "dtype": "int32",
+            "sha256": "a6b973f07a4a205e0240424a96f742f4857001bb5a009dc5443d2611f32c6ed6"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              6912
+            ],
+            "dtype": "int32",
+            "sha256": "0a182a88ffcf20dcc892515a01db9af1a707814b982b9c21e1d9b3b4b203ceef"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                6912,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "e534e5515236e5cf172d1224d1a9620dc78526f200ed4ab46fd499fc94b978ce"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                6912
+              ],
+              "dtype": "bool",
+              "sha256": "8434fb1d2c17e00a6445b73aa32e1dba1d420ed122886e54f17a1a96565ad5be"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                13824,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "4d23eb5584b78d4f27c289d4a161d51b9d8de9f17489d37819ccb89193424919"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                13824
+              ],
+              "dtype": "bool",
+              "sha256": "f035d0afefefa618320cdaa025b0fdc47fef324d775b79bf67c8ed551c8528f1"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                6912
+              ],
+              "dtype": "bool",
+              "sha256": "8434fb1d2c17e00a6445b73aa32e1dba1d420ed122886e54f17a1a96565ad5be"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                6912
+              ],
+              "dtype": "bool",
+              "sha256": "211fbf4d0e726b74f5778841af03efc81772932156dbd001cda91c3ea460d30b"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                27648
+              ],
+              "dtype": "int64",
+              "sha256": "2e9f971e0e3dd2bffd8f2ece3022913a50ddf37f41ad5881420c573eb4c01373"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                27648
+              ],
+              "dtype": "int64",
+              "sha256": "84ea926ee5ca3044fcff138503bfa7347652305a237896447ed2059dee971e3e"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original estimated seat washer metal",
+            "library": null
+          }
+        ]
+      },
+      "assembly_evaluated": {
+        "object": "M18 [engine-spark-plug-v2] Plug separate estimated uncompressed",
+        "mesh": "Plug separate estimated uncompressed seat washer",
+        "object_library": null,
+        "data_library": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+        "parent": "M18 [engine-spark-plug-v2] Spark plug inherited estimated seat ",
+        "hidden_render": false,
+        "vertices": 6912,
+        "triangles": 13824,
+        "arrays": {
+          "local": {
+            "shape": [
+              6912,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "180550fc1b33ce1e6f81fe83eb637829dc6babdc0ee77b563690c8db461c82ed"
+          },
+          "world": {
+            "shape": [
+              6912,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "f88b0cc07d6a77777726ca2e37182ace9855dd0c08be7e2d1926e94e028a8df9"
+          },
+          "triangles": {
+            "shape": [
+              13824,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "be28c9c171dd1145a3afdf6c702465f498c7ee737e4060d3d8841c4a9b3ecc81"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "54f04819acef97ba47679d4923c2bf672eb838534993a4bcf081f46d6a70ba22"
+          },
+          "corner_normals": {
+            "shape": [
+              27648,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "9831c9ad56d898858ad73adbb7616951333382e631f182349b8bf3feb0f97d58"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              27648
+            ],
+            "dtype": "int32",
+            "sha256": "a6b973f07a4a205e0240424a96f742f4857001bb5a009dc5443d2611f32c6ed6"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              6912
+            ],
+            "dtype": "int32",
+            "sha256": "0a182a88ffcf20dcc892515a01db9af1a707814b982b9c21e1d9b3b4b203ceef"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                6912,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "e534e5515236e5cf172d1224d1a9620dc78526f200ed4ab46fd499fc94b978ce"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                6912
+              ],
+              "dtype": "bool",
+              "sha256": "8434fb1d2c17e00a6445b73aa32e1dba1d420ed122886e54f17a1a96565ad5be"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                13824,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "4d23eb5584b78d4f27c289d4a161d51b9d8de9f17489d37819ccb89193424919"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                13824
+              ],
+              "dtype": "bool",
+              "sha256": "f035d0afefefa618320cdaa025b0fdc47fef324d775b79bf67c8ed551c8528f1"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                6912
+              ],
+              "dtype": "bool",
+              "sha256": "8434fb1d2c17e00a6445b73aa32e1dba1d420ed122886e54f17a1a96565ad5be"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                6912
+              ],
+              "dtype": "bool",
+              "sha256": "211fbf4d0e726b74f5778841af03efc81772932156dbd001cda91c3ea460d30b"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                27648
+              ],
+              "dtype": "int64",
+              "sha256": "2e9f971e0e3dd2bffd8f2ece3022913a50ddf37f41ad5881420c573eb4c01373"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                27648
+              ],
+              "dtype": "int64",
+              "sha256": "84ea926ee5ca3044fcff138503bfa7347652305a237896447ed2059dee971e3e"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original estimated seat washer metal",
+            "library": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend"
+          }
+        ]
+      },
+      "comparisons": {
+        "local": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 7.450580596923828e-09
+        },
+        "triangles": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "matrix_world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 2.9802322387695312e-08
+        },
+        "corner_normals": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "loop_vertex_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "polygon_material_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        }
+      },
+      "attributes_exact": true,
+      "material_names_and_libraries_exact": true,
+      "world_delta_explained_by_actual_matrix_roundoff_m": 2.9687649474169353e-10
+    },
+    {
+      "key": "engine-spark-plug-v2__3",
+      "asset": "engine-spark-plug-v2",
+      "source": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+      "source_sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5",
+      "collection": "WEWA_ENGINE_SPARK_PLUG_EXTERIOR",
+      "source_name": "Plug separate exposed SAE-like terminal - conditional option",
+      "guides_activated_in_memory": [
+        "SPARK_PLUG_IMMUTABLE_HEAD_GUIDE",
+        "SPARK_PLUG_V2_IMMUTABLE_CAP_GUIDE"
+      ],
+      "source_evaluated": {
+        "object": "Plug separate exposed SAE-like terminal - conditional option",
+        "mesh": "Plug separate exposed SAE-like terminal - conditional option",
+        "object_library": null,
+        "data_library": null,
+        "parent": "Spark plug inherited estimated seat datum",
+        "hidden_render": false,
+        "vertices": 2882,
+        "triangles": 5760,
+        "arrays": {
+          "local": {
+            "shape": [
+              2882,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "1b2d83b2bd49fddc0c6ea6e388f29a18e8a8e7728bd3b316a40756e34be84808"
+          },
+          "world": {
+            "shape": [
+              2882,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "9746b40d93c3c7fccabffb223f0c27f8c7d9f1aaa025579ee914e19e271335c1"
+          },
+          "triangles": {
+            "shape": [
+              5760,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "1dbd6aa0929592ec1a4f7dd739f3308b42a5fc4d4e99374bcacc6dc1857fb5d3"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "489179fb17cb6b964ffb0ee6d925b8152617194e0280203cf54e5760f688e58a"
+          },
+          "corner_normals": {
+            "shape": [
+              11904,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "f10743938cd3234dd2c802fcef05dab29e53af260d2cdebb4767ee33fd0f11e3"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              11904
+            ],
+            "dtype": "int32",
+            "sha256": "1cd9097b578d512bd8cf0e41125905ce50834a1239dedf2b16b8da8207aa3185"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              3072
+            ],
+            "dtype": "int32",
+            "sha256": "f3cc103136423a57975750907ebc1d367e2985ac6338976d4d5a439f50323f4a"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                2882,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "9c4784e10f57de7e964d89f7d7e62b49d5a98e357ccbbcfd429ea14503e14daa"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                2882
+              ],
+              "dtype": "bool",
+              "sha256": "002ccec83fc64a1852c384ab4b81c5f448aa29b845a768568b63738cf6c57a80"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                5952,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "02b4532629de91a0c3fccc49f7d719c3bfdcff874d624ac4388e4fd6be52ec70"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                5952
+              ],
+              "dtype": "bool",
+              "sha256": "750e2f5eddadf3b49bb2b04c98571a65abaeacf31009d98a67b969dfca71b92b"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                3072
+              ],
+              "dtype": "bool",
+              "sha256": "f40ae0b5c3ef9b289d6ae6643c8432e77994ad72118031aa7a28aa1357efd88c"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                3072
+              ],
+              "dtype": "bool",
+              "sha256": "e6dd37263f574f776d6a2548ed72c60f9ad62de5316b05c2f25f63cf9826e123"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                11904
+              ],
+              "dtype": "int64",
+              "sha256": "527188d8d6679cfd330ebaa555957196e71a912b4879bc1e2c02d75571382819"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                11904
+              ],
+              "dtype": "int64",
+              "sha256": "6b20a2181ec7d434af2fc3982b98a760355e51187b4a86ee1ef8cf5e2186e053"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original estimated plug metal plating",
+            "library": null
+          }
+        ]
+      },
+      "assembly_evaluated": {
+        "object": "M18 [engine-spark-plug-v2] Plug separate exposed SAE-like termi",
+        "mesh": "Plug separate exposed SAE-like terminal - conditional option",
+        "object_library": null,
+        "data_library": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+        "parent": "M18 [engine-spark-plug-v2] Spark plug inherited estimated seat ",
+        "hidden_render": false,
+        "vertices": 2882,
+        "triangles": 5760,
+        "arrays": {
+          "local": {
+            "shape": [
+              2882,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "1b2d83b2bd49fddc0c6ea6e388f29a18e8a8e7728bd3b316a40756e34be84808"
+          },
+          "world": {
+            "shape": [
+              2882,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "948615a1f094d0d4974f645f3b732bf1b5173011de28bab322c2270ab15e2b9b"
+          },
+          "triangles": {
+            "shape": [
+              5760,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "1dbd6aa0929592ec1a4f7dd739f3308b42a5fc4d4e99374bcacc6dc1857fb5d3"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "54f04819acef97ba47679d4923c2bf672eb838534993a4bcf081f46d6a70ba22"
+          },
+          "corner_normals": {
+            "shape": [
+              11904,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "f10743938cd3234dd2c802fcef05dab29e53af260d2cdebb4767ee33fd0f11e3"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              11904
+            ],
+            "dtype": "int32",
+            "sha256": "1cd9097b578d512bd8cf0e41125905ce50834a1239dedf2b16b8da8207aa3185"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              3072
+            ],
+            "dtype": "int32",
+            "sha256": "f3cc103136423a57975750907ebc1d367e2985ac6338976d4d5a439f50323f4a"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                2882,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "9c4784e10f57de7e964d89f7d7e62b49d5a98e357ccbbcfd429ea14503e14daa"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                2882
+              ],
+              "dtype": "bool",
+              "sha256": "002ccec83fc64a1852c384ab4b81c5f448aa29b845a768568b63738cf6c57a80"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                5952,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "02b4532629de91a0c3fccc49f7d719c3bfdcff874d624ac4388e4fd6be52ec70"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                5952
+              ],
+              "dtype": "bool",
+              "sha256": "750e2f5eddadf3b49bb2b04c98571a65abaeacf31009d98a67b969dfca71b92b"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                3072
+              ],
+              "dtype": "bool",
+              "sha256": "f40ae0b5c3ef9b289d6ae6643c8432e77994ad72118031aa7a28aa1357efd88c"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                3072
+              ],
+              "dtype": "bool",
+              "sha256": "e6dd37263f574f776d6a2548ed72c60f9ad62de5316b05c2f25f63cf9826e123"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                11904
+              ],
+              "dtype": "int64",
+              "sha256": "527188d8d6679cfd330ebaa555957196e71a912b4879bc1e2c02d75571382819"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                11904
+              ],
+              "dtype": "int64",
+              "sha256": "6b20a2181ec7d434af2fc3982b98a760355e51187b4a86ee1ef8cf5e2186e053"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original estimated plug metal plating",
+            "library": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend"
+          }
+        ]
+      },
+      "comparisons": {
+        "local": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 7.450580596923828e-09
+        },
+        "triangles": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "matrix_world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 2.9802322387695312e-08
+        },
+        "corner_normals": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "loop_vertex_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "polygon_material_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        }
+      },
+      "attributes_exact": true,
+      "material_names_and_libraries_exact": true,
+      "world_delta_explained_by_actual_matrix_roundoff_m": 8.076429178216493e-10
+    },
+    {
+      "key": "engine-spark-cap-v2__0",
+      "asset": "engine-spark-cap-v2",
+      "source": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend",
+      "source_sha256": "bceb87f8a34bcfd2354bccef2cf236ed6a0103a2725b4a76e3e3e3721da883e3",
+      "collection": "WEWA_ENGINE_SPARK_CAP",
+      "source_name": "Molded spark cap body - conditional candidate",
+      "guides_activated_in_memory": [
+        "SPARK_CAP_IMMUTABLE_GUIDES",
+        "SPARK_CAP_RETAINED_CONSTRUCTION",
+        "SPARK_CAP_V2_IMMUTABLE_GUIDES"
+      ],
+      "source_evaluated": {
+        "object": "Molded spark cap body - conditional candidate",
+        "mesh": "Molded spark cap body - conditional candidate.004",
+        "object_library": null,
+        "data_library": null,
+        "parent": "Spark cap inherited unchanged provisional plug datum",
+        "hidden_render": false,
+        "vertices": 24470,
+        "triangles": 48936,
+        "arrays": {
+          "local": {
+            "shape": [
+              24470,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "e8f10c225b6d6e4edcedefb0dd7dea8c6bc79eecbba64287076db9aad44b60d5"
+          },
+          "world": {
+            "shape": [
+              24470,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "248720f665bd60c68bc0d288c4324d153c547311f64ee8daac4a1e8ac463267f"
+          },
+          "triangles": {
+            "shape": [
+              48936,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "9c11273853bea5b68730c397fe9c3cd64f15c704fdb54639b477042ba4e9d404"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "b816f1094252fe897f72f199e23716922f89da5ee13362d2a639543ad60b23f1"
+          },
+          "corner_normals": {
+            "shape": [
+              146808,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "2784ff228f89167a7747db341cf7539f84d87b174f6570602e684e746bb32da5"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              146808
+            ],
+            "dtype": "int32",
+            "sha256": "9c11273853bea5b68730c397fe9c3cd64f15c704fdb54639b477042ba4e9d404"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              48936
+            ],
+            "dtype": "int32",
+            "sha256": "3d7cc81cf6d186b604824fab2515b67ce7d5ee58199e1a60036dc6176ba0ea1a"
+          },
+          "UV:Original grain source atlas v2": {
+            "shape": [
+              146808,
+              2
+            ],
+            "dtype": "float32",
+            "sha256": "c58faaa11347ae1cf515d3a5b53c656fa186bcd0c4470545438a160cb0909dbb"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                24470,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "fa54f4973a1fd7b4163758d24c528c8a90f8e7df1c5f64a5fa0898cc5005f1fa"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                24470
+              ],
+              "dtype": "bool",
+              "sha256": "523104ccfc517f794e8cc9d20388d90f13fbf16d1edbb4645c97f43dcb306749"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                73404,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "edbb88a1627e9f8a08187d01001834682643d2a0adfb70fdfbd832479cd50d80"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                73404
+              ],
+              "dtype": "bool",
+              "sha256": "385c1e6d612619073a4d1b4f6ff79f2171329b03467b8a1bf6adf4359f3f78c6"
+            }
+          },
+          {
+            "name": "sharp_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                73404
+              ],
+              "dtype": "bool",
+              "sha256": "6830a18b12fc4caa4a37d7a76cab023ce8d71ce69d95d5c3071d3f87633d4fbc"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                48936
+              ],
+              "dtype": "bool",
+              "sha256": "43e00907bc4c8a50ef8d3c95be3e3493e8a94d29def9b8ef17066f8fc48dc20f"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                146808
+              ],
+              "dtype": "int64",
+              "sha256": "4568c5e0a236300056cd69cad3da916ff2ce42fb54cb95b09d822666ec95fc6f"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                146808
+              ],
+              "dtype": "int64",
+              "sha256": "5be70ed70992d7b7f36faa958571528fd1b4b600b3ac88dfd0d2124688d45727"
+            }
+          },
+          {
+            "name": "Original grain source atlas v2",
+            "domain": "CORNER",
+            "data_type": "FLOAT2",
+            "property": "vector",
+            "data": {
+              "shape": [
+                146808,
+                2
+              ],
+              "dtype": "float64",
+              "sha256": "f991b7bcf47b5753f8e3e7d9ee9e1719c38a14f3a91d6255507e994b62eb3709"
+            }
+          },
+          {
+            "name": ".vs.Original grain source atlas v2",
+            "domain": "CORNER",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                146808
+              ],
+              "dtype": "bool",
+              "sha256": "acbe18fb28f53ab7ec761d813f9da36a7bbfd92ba7181c5a03ec32860c3b7742"
+            }
+          },
+          {
+            "name": ".es.Original grain source atlas v2",
+            "domain": "CORNER",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                146808
+              ],
+              "dtype": "bool",
+              "sha256": "acbe18fb28f53ab7ec761d813f9da36a7bbfd92ba7181c5a03ec32860c3b7742"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original representative molded cap grain v2 - estimated",
+            "library": null
+          }
+        ]
+      },
+      "assembly_evaluated": {
+        "object": "M18 [engine-spark-cap-v2] Molded spark cap body - conditional c",
+        "mesh": "Molded spark cap body - conditional candidate.004",
+        "object_library": null,
+        "data_library": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend",
+        "parent": "M18 [engine-spark-cap-v2] Spark cap inherited unchanged provisi",
+        "hidden_render": false,
+        "vertices": 24470,
+        "triangles": 48936,
+        "arrays": {
+          "local": {
+            "shape": [
+              24470,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "e8f10c225b6d6e4edcedefb0dd7dea8c6bc79eecbba64287076db9aad44b60d5"
+          },
+          "world": {
+            "shape": [
+              24470,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "8e2701a6f4c203d0b51e797c48027b625b60030433b7154694123f9b086f79d4"
+          },
+          "triangles": {
+            "shape": [
+              48936,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "9c11273853bea5b68730c397fe9c3cd64f15c704fdb54639b477042ba4e9d404"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "120ff71fb8087a58dc4585bdd28235d5daf834bfe078e54f77d4af6f127aaba9"
+          },
+          "corner_normals": {
+            "shape": [
+              146808,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "2784ff228f89167a7747db341cf7539f84d87b174f6570602e684e746bb32da5"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              146808
+            ],
+            "dtype": "int32",
+            "sha256": "9c11273853bea5b68730c397fe9c3cd64f15c704fdb54639b477042ba4e9d404"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              48936
+            ],
+            "dtype": "int32",
+            "sha256": "3d7cc81cf6d186b604824fab2515b67ce7d5ee58199e1a60036dc6176ba0ea1a"
+          },
+          "UV:Original grain source atlas v2": {
+            "shape": [
+              146808,
+              2
+            ],
+            "dtype": "float32",
+            "sha256": "c58faaa11347ae1cf515d3a5b53c656fa186bcd0c4470545438a160cb0909dbb"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                24470,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "fa54f4973a1fd7b4163758d24c528c8a90f8e7df1c5f64a5fa0898cc5005f1fa"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                24470
+              ],
+              "dtype": "bool",
+              "sha256": "523104ccfc517f794e8cc9d20388d90f13fbf16d1edbb4645c97f43dcb306749"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                73404,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "edbb88a1627e9f8a08187d01001834682643d2a0adfb70fdfbd832479cd50d80"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                73404
+              ],
+              "dtype": "bool",
+              "sha256": "385c1e6d612619073a4d1b4f6ff79f2171329b03467b8a1bf6adf4359f3f78c6"
+            }
+          },
+          {
+            "name": "sharp_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                73404
+              ],
+              "dtype": "bool",
+              "sha256": "6830a18b12fc4caa4a37d7a76cab023ce8d71ce69d95d5c3071d3f87633d4fbc"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                48936
+              ],
+              "dtype": "bool",
+              "sha256": "43e00907bc4c8a50ef8d3c95be3e3493e8a94d29def9b8ef17066f8fc48dc20f"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                146808
+              ],
+              "dtype": "int64",
+              "sha256": "4568c5e0a236300056cd69cad3da916ff2ce42fb54cb95b09d822666ec95fc6f"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                146808
+              ],
+              "dtype": "int64",
+              "sha256": "5be70ed70992d7b7f36faa958571528fd1b4b600b3ac88dfd0d2124688d45727"
+            }
+          },
+          {
+            "name": "Original grain source atlas v2",
+            "domain": "CORNER",
+            "data_type": "FLOAT2",
+            "property": "vector",
+            "data": {
+              "shape": [
+                146808,
+                2
+              ],
+              "dtype": "float64",
+              "sha256": "f991b7bcf47b5753f8e3e7d9ee9e1719c38a14f3a91d6255507e994b62eb3709"
+            }
+          },
+          {
+            "name": ".vs.Original grain source atlas v2",
+            "domain": "CORNER",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                146808
+              ],
+              "dtype": "bool",
+              "sha256": "acbe18fb28f53ab7ec761d813f9da36a7bbfd92ba7181c5a03ec32860c3b7742"
+            }
+          },
+          {
+            "name": ".es.Original grain source atlas v2",
+            "domain": "CORNER",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                146808
+              ],
+              "dtype": "bool",
+              "sha256": "acbe18fb28f53ab7ec761d813f9da36a7bbfd92ba7181c5a03ec32860c3b7742"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original representative molded cap grain v2 - estimated",
+            "library": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend"
+          }
+        ]
+      },
+      "comparisons": {
+        "local": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 1.4901161193847656e-08
+        },
+        "triangles": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "matrix_world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 1.4901161193847656e-08
+        },
+        "corner_normals": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "loop_vertex_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "polygon_material_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "UV:Original grain source atlas v2": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        }
+      },
+      "attributes_exact": true,
+      "material_names_and_libraries_exact": true,
+      "world_delta_explained_by_actual_matrix_roundoff_m": 1.2472352415708605e-09
+    },
+    {
+      "key": "engine-spark-cap-v2__2",
+      "asset": "engine-spark-cap-v2",
+      "source": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend",
+      "source_sha256": "bceb87f8a34bcfd2354bccef2cf236ed6a0103a2725b4a76e3e3e3721da883e3",
+      "collection": "WEWA_ENGINE_SPARK_CAP",
+      "source_name": "Visible short-port metallic contact - section estimated",
+      "guides_activated_in_memory": [
+        "SPARK_CAP_IMMUTABLE_GUIDES",
+        "SPARK_CAP_RETAINED_CONSTRUCTION",
+        "SPARK_CAP_V2_IMMUTABLE_GUIDES"
+      ],
+      "source_evaluated": {
+        "object": "Visible short-port metallic contact - section estimated",
+        "mesh": "Visible short-port metallic contact - section estimated",
+        "object_library": null,
+        "data_library": null,
+        "parent": "Spark cap inherited unchanged provisional plug datum",
+        "hidden_render": false,
+        "vertices": 7298,
+        "triangles": 14592,
+        "arrays": {
+          "local": {
+            "shape": [
+              7298,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "85940bbfd7001c18eccfd13080cdd411948145b6c20fca8777796d73ad99ad04"
+          },
+          "world": {
+            "shape": [
+              7298,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "fd0970e86d57dd39c4d61168c66fb43cc5af91f10214e6025403968b824da08a"
+          },
+          "triangles": {
+            "shape": [
+              14592,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "8486462bc1506e0ba63b5b3ecdd72ba88afda2da54f9d0820027b790160c4104"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "f73c7a4c7311d78218bc92647b28feff5c22bc3306c5daea8e5038b9bcd9d83c"
+          },
+          "corner_normals": {
+            "shape": [
+              29376,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "fc6e24da00d5ad6ff873882bfc419c15d6ed7a827c1bc9788ab0bb68d2ce2288"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              29376
+            ],
+            "dtype": "int32",
+            "sha256": "91bf6c36afeed7f3618dfef8abc50418b3a6c1e35f4af74586daf5467780cc54"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              7392
+            ],
+            "dtype": "int32",
+            "sha256": "3b073869ae0f25d32b5ace4da3f146dcf4383b7ae610f8706660dd9b00b93a93"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                7298,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "799e477c238f0b4ed547d9e75a64aa7efd1971855df5d7b6e1a1c0340f203ad3"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                7298
+              ],
+              "dtype": "bool",
+              "sha256": "c26ded240a234fd3141047b102af8f31163cfb41bc9b57f4caa10a5e8334a47a"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                14688,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "70608741a858aa48024d4d812b2eb72a11d49e58f927d1f22ae74e35033a4169"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                14688
+              ],
+              "dtype": "bool",
+              "sha256": "a1759681217628c858105dc83643e013e3287554cfde1751ab2f4fc8c5998b24"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                7392
+              ],
+              "dtype": "bool",
+              "sha256": "a5f98f5f39b3a3bcf6de1e7fc60400962bbbd4ba26fa2419b1aad66b9578739c"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                7392
+              ],
+              "dtype": "bool",
+              "sha256": "7fbc8a14ce85602f91a88597a6e3069939db834081c072541b13edd57ce52371"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                29376
+              ],
+              "dtype": "int64",
+              "sha256": "e93fd3dbfb43df171bcc5c7d306604cd9f29952f8e5d0526e645fe9f477a90f2"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                29376
+              ],
+              "dtype": "int64",
+              "sha256": "0f4b720f9ecbeadffc338c909e6e733e62ece22b5a411fd19ab89bdbfe52187a"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original estimated visible contact metal",
+            "library": null
+          }
+        ]
+      },
+      "assembly_evaluated": {
+        "object": "M18 [engine-spark-cap-v2] Visible short-port metallic contact -",
+        "mesh": "Visible short-port metallic contact - section estimated",
+        "object_library": null,
+        "data_library": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend",
+        "parent": "M18 [engine-spark-cap-v2] Spark cap inherited unchanged provisi",
+        "hidden_render": false,
+        "vertices": 7298,
+        "triangles": 14592,
+        "arrays": {
+          "local": {
+            "shape": [
+              7298,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "85940bbfd7001c18eccfd13080cdd411948145b6c20fca8777796d73ad99ad04"
+          },
+          "world": {
+            "shape": [
+              7298,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "81dd308dcfae1e16105b6511ccc76da6c588240201d186bd885122e2b8c44bea"
+          },
+          "triangles": {
+            "shape": [
+              14592,
+              3
+            ],
+            "dtype": "int32",
+            "sha256": "8486462bc1506e0ba63b5b3ecdd72ba88afda2da54f9d0820027b790160c4104"
+          },
+          "matrix_world": {
+            "shape": [
+              4,
+              4
+            ],
+            "dtype": "float64",
+            "sha256": "89fc4b6c2d517606fc2b7ac7842eea1d37cdfe6057ae1189770739504489d20a"
+          },
+          "corner_normals": {
+            "shape": [
+              29376,
+              3
+            ],
+            "dtype": "float32",
+            "sha256": "fc6e24da00d5ad6ff873882bfc419c15d6ed7a827c1bc9788ab0bb68d2ce2288"
+          },
+          "loop_vertex_indices": {
+            "shape": [
+              29376
+            ],
+            "dtype": "int32",
+            "sha256": "91bf6c36afeed7f3618dfef8abc50418b3a6c1e35f4af74586daf5467780cc54"
+          },
+          "polygon_material_indices": {
+            "shape": [
+              7392
+            ],
+            "dtype": "int32",
+            "sha256": "3b073869ae0f25d32b5ace4da3f146dcf4383b7ae610f8706660dd9b00b93a93"
+          }
+        },
+        "attributes": [
+          {
+            "name": "position",
+            "domain": "POINT",
+            "data_type": "FLOAT_VECTOR",
+            "property": "vector",
+            "data": {
+              "shape": [
+                7298,
+                3
+              ],
+              "dtype": "float64",
+              "sha256": "799e477c238f0b4ed547d9e75a64aa7efd1971855df5d7b6e1a1c0340f203ad3"
+            }
+          },
+          {
+            "name": ".select_vert",
+            "domain": "POINT",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                7298
+              ],
+              "dtype": "bool",
+              "sha256": "c26ded240a234fd3141047b102af8f31163cfb41bc9b57f4caa10a5e8334a47a"
+            }
+          },
+          {
+            "name": ".edge_verts",
+            "domain": "EDGE",
+            "data_type": "INT32_2D",
+            "property": "value",
+            "data": {
+              "shape": [
+                14688,
+                2
+              ],
+              "dtype": "int64",
+              "sha256": "70608741a858aa48024d4d812b2eb72a11d49e58f927d1f22ae74e35033a4169"
+            }
+          },
+          {
+            "name": ".select_edge",
+            "domain": "EDGE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                14688
+              ],
+              "dtype": "bool",
+              "sha256": "a1759681217628c858105dc83643e013e3287554cfde1751ab2f4fc8c5998b24"
+            }
+          },
+          {
+            "name": ".select_poly",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                7392
+              ],
+              "dtype": "bool",
+              "sha256": "a5f98f5f39b3a3bcf6de1e7fc60400962bbbd4ba26fa2419b1aad66b9578739c"
+            }
+          },
+          {
+            "name": "sharp_face",
+            "domain": "FACE",
+            "data_type": "BOOLEAN",
+            "property": "value",
+            "data": {
+              "shape": [
+                7392
+              ],
+              "dtype": "bool",
+              "sha256": "7fbc8a14ce85602f91a88597a6e3069939db834081c072541b13edd57ce52371"
+            }
+          },
+          {
+            "name": ".corner_vert",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                29376
+              ],
+              "dtype": "int64",
+              "sha256": "e93fd3dbfb43df171bcc5c7d306604cd9f29952f8e5d0526e645fe9f477a90f2"
+            }
+          },
+          {
+            "name": ".corner_edge",
+            "domain": "CORNER",
+            "data_type": "INT",
+            "property": "value",
+            "data": {
+              "shape": [
+                29376
+              ],
+              "dtype": "int64",
+              "sha256": "0f4b720f9ecbeadffc338c909e6e733e62ece22b5a411fd19ab89bdbfe52187a"
+            }
+          }
+        ],
+        "material_slots": [
+          {
+            "name": "Original estimated visible contact metal",
+            "library": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v2.blend"
+          }
+        ]
+      },
+      "comparisons": {
+        "local": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 2.9802322387695312e-08
+        },
+        "triangles": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "matrix_world": {
+          "same_shape": true,
+          "bit_identical": false,
+          "max_absolute_delta": 1.341104507446289e-07
+        },
+        "corner_normals": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "loop_vertex_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        },
+        "polygon_material_indices": {
+          "same_shape": true,
+          "bit_identical": true,
+          "max_absolute_delta": 0.0
+        }
+      },
+      "attributes_exact": true,
+      "material_names_and_libraries_exact": true,
+      "world_delta_explained_by_actual_matrix_roundoff_m": 3.26505295572733e-10
+    }
+  ],
+  "array_archive_sha256": "0a1f6344567f62d03f1fd039c39bbc8134a1608c163e8e85da32835c255f8b2a",
+  "tool_sha256": "de10ed527ef568540852129ff2750419860038e2d10bc7ad3639c5c2bf2a2e2e",
+  "source_saved_or_exported_or_rendered": false,
+  "matrix_policy": "No serialized matrix bit-identity assertion. Exact local geometry/attributes; actual evaluated matrix deltas reported under builder v2 existing1e-6 coefficient guard, not a mechanical fit tolerance."
+}

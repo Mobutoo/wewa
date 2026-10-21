@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-TYRE-REAR-001",
-  "label": "Pneu arrière — sculpture extérieure estimée, identité commerciale inconnue",
+  "label": "Pneu arrière — candidat isolé 3.00-17 TL",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,13 +12,13 @@
     "material"
   ],
   "identity": {
-    "variant": "Rear3.00-17TL currentRDC nominal, tyre brand/model and mould unknown",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
-    "usage": "Separate hollow tyre exterior, inspection source not qualified mobileLOD",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
-      0.08,
-      0.6,
-      1.5
+      0.15,
+      0.35,
+      0.65
     ]
   },
   "source_register": "../sources.json",
@@ -37,7 +37,260 @@
       "scope": "Nominal designation only, no inferred width/aspect/OD"
     }
   ],
-  "views": [],
+  "views": [
+    {
+      "name": "quarter",
+      "camera_location_m": [
+        0.65,
+        0.65,
+        0.3
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale_m": 0.7,
+      "allow_deliberate_macro_crop": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          10.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.7306087204177496,
+        "farthest_actual_vertex_depth_m": 1.2032991950351817,
+        "projected_uv_min": [
+          0.17445402660162362,
+          0.042215346011317545
+        ],
+        "projected_uv_max": [
+          0.8255481291058817,
+          0.9577849061250439
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Rear tyre native aligned grooves - estimated mould candidate",
+            "vertices": 1080425,
+            "depth_m": [
+              0.7306087204177496,
+              1.2032991950351817
+            ],
+            "projected_uv_min": [
+              0.17445402660162362,
+              0.042215346011317545
+            ],
+            "projected_uv_max": [
+              0.8255481291058817,
+              0.9577849061250439
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "62fc1b710c745db21a873b28b6062cfc3e02b11e331f118d94d91d620b4c512d",
+      "checkpoint_file": "checkpoint-quarter.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "rear-tread",
+      "camera_location_m": [
+        0,
+        0.85,
+        0.06
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale_m": 0.68,
+      "allow_deliberate_macro_crop": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          10.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.5531180029494993,
+        "farthest_actual_vertex_depth_m": 1.151111934673113,
+        "projected_uv_min": [
+          0.43676680676871427,
+          0.020325342023377824
+        ],
+        "projected_uv_max": [
+          0.5632334271774979,
+          0.9796775117607481
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Rear tyre native aligned grooves - estimated mould candidate",
+            "vertices": 1080425,
+            "depth_m": [
+              0.5531180029494993,
+              1.151111934673113
+            ],
+            "projected_uv_min": [
+              0.43676680676871427,
+              0.020325342023377824
+            ],
+            "projected_uv_max": [
+              0.5632334271774979,
+              0.9796775117607481
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "33a24b50a767955e57d1f33675ee1a1ab53abd144cc0dd314082d462dd38cd73",
+      "checkpoint_file": "checkpoint-rear-tread.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "tread-detail",
+      "camera_location_m": [
+        0.14,
+        0.44,
+        0.3
+      ],
+      "camera_target_m": [
+        0,
+        0.23,
+        0.15
+      ],
+      "ortho_scale_m": 0.12,
+      "allow_deliberate_macro_crop": true,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          10.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.263861704602647,
+        "farthest_actual_vertex_depth_m": 0.8056266442900168,
+        "projected_uv_min": [
+          -2.135017173547479,
+          -2.4189749368328486
+        ],
+        "projected_uv_max": [
+          1.0086725466415458,
+          2.8521880521823864
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Rear tyre native aligned grooves - estimated mould candidate",
+            "vertices": 1080425,
+            "depth_m": [
+              0.263861704602647,
+              0.8056266442900168
+            ],
+            "projected_uv_min": [
+              -2.135017173547479,
+              -2.4189749368328486
+            ],
+            "projected_uv_max": [
+              1.0086725466415458,
+              2.8521880521823864
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "f61385c8f58d2d547afb656c38f4c1eafdad603200fa9683a2833ccaab305e82",
+      "checkpoint_file": "checkpoint-tread-detail.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "bead-opening",
+      "camera_location_m": [
+        0.45,
+        0.3,
+        0.1
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale_m": 0.47,
+      "allow_deliberate_macro_crop": true,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          10.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.3560938954619708,
+        "farthest_actual_vertex_depth_m": 0.7439060375703022,
+        "projected_uv_min": [
+          -0.051847279196732377,
+          -0.18830631067884485
+        ],
+        "projected_uv_max": [
+          1.0518571580140836,
+          1.188314030509432
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Rear tyre native aligned grooves - estimated mould candidate",
+            "vertices": 1080425,
+            "depth_m": [
+              0.3560938954619708,
+              0.7439060375703022
+            ],
+            "projected_uv_min": [
+              -0.051847279196732377,
+              -0.18830631067884485
+            ],
+            "projected_uv_max": [
+              1.0518571580140836,
+              1.188314030509432
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "ba5d15dcce8e446ca0b4cd1521933b406b7a4ba58728d3ca8e0d3bd8a95cae86",
+      "checkpoint_file": "checkpoint-bead-opening.json",
+      "reused_verified_checkpoint": false
+    }
+  ],
   "criteria": [],
   "gaps": [
     {
@@ -54,88 +307,135 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "rear-tyre-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
       "reviewed_at": null
     },
     "G1": {
-      "status": "pending",
-      "revision": null,
+      "status": "blocked",
+      "revision": "rear-tyre-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
-      "status": "pending",
-      "revision": null,
+      "status": "blocked",
+      "revision": "rear-tyre-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "rear-tyre-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/rear-tyre/rear-tyre-v1.blend",
+          "kind": "editable_source",
+          "revision": "rear-tyre-v1",
+          "sha256": "612388ce8f1fb5850a01c3329e23fc39ad42e631c4a517e56576a0a359066b5c"
+        },
+        {
+          "path": "../../reviews/rear-tyre-v1/quarter.png",
+          "kind": "isolated_comparison",
+          "revision": "rear-tyre-v1",
+          "sha256": "62fc1b710c745db21a873b28b6062cfc3e02b11e331f118d94d91d620b4c512d"
+        },
+        {
+          "path": "../../reviews/rear-tyre-v1/coordinator-reading-v1.json",
+          "kind": "isolated_comparison",
+          "revision": "rear-tyre-v1",
+          "sha256": "6d57f7c115bea6951612fa3dd0d8e740810610fc092c5d8691131b533bee8ede"
+        }
+      ],
+      "reason": "Quatre finales96 et macros réellement ouvertes. Les anciens petits crans de lèvre ne sont pas établis ici ; les intersections des sillons de profondeurs3,4/3,2/2,9mm produisent toutefois de vrais paliers/pointes de construction, confirmés par auteur. Reprise2 séparée requise sur ces seuls raccords, sans modifier le gel1 ni enveloppe/bead ; dessin exact du moule inconnu.",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "rear-tyre-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/rear-tyre-v1/bead-opening.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "rear-tyre-v1",
+          "sha256": "ba5d15dcce8e446ca0b4cd1521933b406b7a4ba58728d3ca8e0d3bd8a95cae86"
+        }
+      ],
+      "reason": "Deux cartes originales générées/embarquées ; positions/indices/normales/UV/tangentes et matrices inchangés depuis G3, pixels originaux décodés. Grain visible dans les finales ; échelle et réponse du caoutchouc non mesurées. La matière ne valide pas les raccords géométriques à reprendre.",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "rear-tyre-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/rear-tyre-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "rear-tyre-v1",
+          "sha256": "aebc9b99d5f866ee27abb2df215c727355de5dfe6c8679ebf3c9b3b3f4281aef"
+        }
+      ],
+      "reason": "Un corps fermé et huit sections exportées contrôlées ; nominal3.00-17TL seulement documenté. Diamètre598mm/largeur86mm/profil des tringles estimés, aucune monte sur jante, étanchéité, pression ou déformation en charge validée.",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "rear-tyre-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/rear-tyre-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "rear-tyre-v1",
+          "sha256": "d227f00a7382f80c1355bce32bbde3d61f8aa224e495cf6ddedc0cad3321f6ed"
+        },
+        {
+          "path": "../../reviews/rear-tyre-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "rear-tyre-v1",
+          "sha256": "63d2f97f610f70d8519ad32462d102013a2efc089936da5d6e2f95033c903a2f"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "rear-tyre-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "rear-tyre-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
       "reviewed_at": null
     }
   },
-  "active_detailed_fabrication": true,
-  "source_revision": null,
-  "export_revision": null,
-  "next_action": "G3gray and reflection actually read; original rubber applied with exact buffer preservation. Two native PBR previews pending, then conditionalgel and fourfinal96 views.",
+  "active_detailed_fabrication": false,
+  "source_revision": "rear-tyre-v1",
+  "export_revision": "rear-tyre-v1-inspection",
+  "next_action": "Après le gel du corps de bras actif, construire pneu2 séparé pour transitions bornées aux intersections des sillons. Préserver diamètre/largeur/bead et confronter gris/reflets avant matière. Aucun moule OEM ou montage reçu.",
   "art_accepted": false,
-  "pending_revision": "rear-tyre-v1",
   "production_group": 16,
   "linked_references": [
     {
       "path": "creative/research/rear-wheel-16/tyre-preparation-v1.json",
       "sha256": "21f70c317dc22f3fbc07fdacac7350d52b2be59771856f90cc5d94f2b79d312c"
     }
-  ]
+  ],
+  "candidate_source": "../../../assets-src/moto-components/rear-tyre/README.md",
+  "candidate_review": "../../reviews/rear-tyre-v1/README.md"
 }
