@@ -1,6 +1,6 @@
 # Viva Wewa — revue des composants moto
 
-**63 composants uniques enregistrés · 63 vues Blender prouvées · aucune réception artistique.**
+**65 composants uniques enregistrés · 65 vues Blender prouvées · aucune réception artistique.**
 
 Une seule vue originale par composant, à la révision exacte de sa fiche. Les anciennes révisions et les sources seulement cataloguées ou gelées sans enregistrement central ne sont pas ajoutées. Ces rendus montrent des candidats isolés, pas le jeu ni une moto terminée.
 
@@ -29,8 +29,8 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 | [13 · Fourche et direction](#groupe-13) | 6 | Candidats partiels en revue ; groupe non terminé |
 | [14 · Ensemble avant et compatibilité des candidats existants](#groupe-14) | Voir les préexistants ; aucun nouveau composant compté | Candidats antérieurs existants à recontrôler ; compatibilité restante |
 | [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 9 | Candidats partiels en revue ; groupe non terminé |
-| [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 3 | Candidats partiels en revue ; groupe non terminé |
-| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 19 | Candidats partiels en revue ; groupe non terminé |
+| [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 4 | Candidats partiels en revue ; groupe non terminé |
+| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 20 | Candidats partiels en revue ; groupe non terminé |
 | [18 · Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière](#groupe-18) | 2 | Candidats partiels en revue ; groupe non terminé |
 
 <a id="groupe-1"></a>
@@ -1030,6 +1030,33 @@ PNG SHA-256 : `8b39f5febdd6fdfff92c44df5d7edb69c2d41ab5667fd8d844f6fec537e54d69`
 
 </details>
 
+
+<a id="moto-chaincase-lower-001"></a>
+
+### Demi-carter de chaîne inférieur — coque et passage d’inspection
+
+`MOTO-CHAINCASE-LOWER-001` · révision `chaincase-lower-v1` · **candidat non reçu**
+
+![Demi-carter de chaîne inférieur — coque et passage d’inspection — chaincase-lower-v1](chaincase-lower-v1/outer-quarter.png)
+
+[Image entière](chaincase-lower-v1/outer-quarter.png) · [Preuve du rendu](chaincase-lower-v1/render-report.json) · vue `outer-quarter`
+
+Source SHA-256 : `957926b01dde0821af4700f5125c8df1a5434b43965b392e6ad838c082b7c5ba`  
+PNG SHA-256 : `ef796c0fef0ec4ea5262075d54e087a55b0710e3cf67c5bc8652fcc3343e602e`
+
+[Blender](../../assets-src/moto-components/chaincase-lower/chaincase-lower-v1.blend) · [GLB](../../assets-src/moto-components/chaincase-lower/chaincase-lower-inspection.glb) · [README source](../../assets-src/moto-components/chaincase-lower/README.md) · [Revue et limites](chaincase-lower-v1/README.md) · [Fiche](../workflow/records/moto-chaincase-lower-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [inner-quarter](chaincase-lower-v1/inner-quarter.png) · [preuve](chaincase-lower-v1/render-report.json)
+- [rear-return-detail](chaincase-lower-v1/rear-return-detail.png) · [preuve](chaincase-lower-v1/render-report.json)
+- [front-hole-detail](chaincase-lower-v1/front-hole-detail.png) · [preuve](chaincase-lower-v1/render-report.json)
+- [inspection-hole-detail](chaincase-lower-v1/inspection-hole-detail.png) · [preuve](chaincase-lower-v1/render-report.json)
+
+</details>
+
 Périmètre prévu : pneu arrière; jante/moyeu arrière; flasque et commande du frein arrière; couronne/chaîne et protection; amortisseur gauche; amortisseur droit.
 
 <a id="groupe-17"></a>
@@ -1523,6 +1550,34 @@ PNG SHA-256 : `e8037eaa27af74d53b36b653adf7d52d818f63eced4dfa1e94fe2361f307da10`
 
 </details>
 
+
+<a id="moto-exhaust-header-gasket-001"></a>
+
+### Joint de sortie d’échappement — isolé, non monté
+
+`MOTO-EXHAUST-HEADER-GASKET-001` · révision `exhaust-header-gasket-v1` · **candidat à reprendre, non reçu**
+
+![Joint de sortie d’échappement — isolé, non monté — exhaust-header-gasket-v1](exhaust-header-gasket-v1/front-quarter.png)
+
+[Image entière](exhaust-header-gasket-v1/front-quarter.png) · [Preuve du rendu](exhaust-header-gasket-v1/render-report.json) · vue `front-quarter`
+
+Source SHA-256 : `754d172acafd51cf22d7a085626bf35023e567e9c71d6358266dfc9764bd0672`  
+PNG SHA-256 : `cb711e5bbe4adea9d1eacc822627eed0c3b5d1481191e0d749f3996d33cea2f4`
+
+[Blender](../../assets-src/moto-components/exhaust-header-gasket/exhaust-header-gasket-v1.blend) · [GLB](../../assets-src/moto-components/exhaust-header-gasket/exhaust-header-gasket-inspection.glb) · [README source](../../assets-src/moto-components/exhaust-header-gasket/README.md) · [Revue et limites](exhaust-header-gasket-v1/README.md) · [Fiche](../workflow/records/moto-exhaust-header-gasket-001.json)
+
+À reprendre sur cette matière v1 : un quadrillage régulier apparaît sur le joint. Dans les trois vrais contrôles à caméra et éclairage identiques, il disparaît quand seule la carte normale est débranchée et demeure quand seule la rugosité devient constante. La carte normale est la cause dominante observée ; le contrôle sans normale ne constitue pas une matière finale reçue.
+[Diagnostic et trois rendus réels](../research/exhaust-header-gasket/material-diagnostic-v1/report.json) · [Lecture indépendante et empreintes](../research/exhaust-header-gasket/material-diagnostic-v1/coordinator-review.json)
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [front-near-normal](exhaust-header-gasket-v1/front-near-normal.png) · [preuve](exhaust-header-gasket-v1/render-report.json)
+- [estimated-reverse](exhaust-header-gasket-v1/estimated-reverse.png) · [preuve](exhaust-header-gasket-v1/render-report.json)
+- [annular-raised-region-detail](exhaust-header-gasket-v1/annular-raised-region-detail.png) · [preuve](exhaust-header-gasket-v1/render-report.json)
+
+</details>
+
 Périmètre prévu : carter moteur gauche; carter moteur droit; cylindre et culasse à ailettes; admission et détails extérieurs visibles; collecteur et silencieux; repose-pieds avant/arrière; pédale frein et tringlerie; sélecteur et kick visibles; béquille latérale; béquille centrale.
 
 <a id="groupe-18"></a>
@@ -1747,4 +1802,4 @@ PNG SHA-256 : `ec1de07af0735a5a428100210369cf1256c77bacabae5f5714d12f5fe3687fee`
 
 ---
 
-Régénération : `python tools/build_motorcycle18_markdown_review.py`. Les images restent dans leurs dossiers de preuve ; aucune photographie documentaire privée, image générée ou composition nouvelle n’est utilisée.
+Régénération : `python tools/build_motorcycle18_markdown_review_v2.py`. Les images restent dans leurs dossiers de preuve ; aucune photographie documentaire privée, image générée ou composition nouvelle n’est utilisée.

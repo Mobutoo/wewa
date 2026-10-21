@@ -1,0 +1,13 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 01:31:14)
+Read blend: "/workspace/wewa-github/assets-src/moto-components/exhaust-header-gasket/exhaust-header-gasket-v1.blend"
+Traceback (most recent call last):
+  File "/workspace/wewa-github/assets-src/moto-components/exhaust-header-gasket/render.py", line 16, in <module>
+    s.camera.location=position;s.camera.rotation_euler=(aim-position).to_track_quat('-Z','Y').to_euler();s.camera.data.type='PERSP';s.camera.data.lens=lens;bpy.context.view_layer.update();frame=check_component_camera(s,[o],allow_crop=crop,margin=.005)
+                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/wewa-github/assets-src/moto-components/exhaust-header-gasket/camera_preflight.py", line 50, in check_component_camera
+    raise ValueError(json.dumps(result))
+ValueError: {"schema": "wewa.camera-preflight.v1", "camera": "CONTROL_CAMERA", "camera_type": "PERSP", "camera_clip_m": [9.999999747378752e-05, 1000.0], "nearest_actual_vertex_depth_m": 0.06082118657330343, "farthest_actual_vertex_depth_m": 0.07824703498935609, "projected_uv_min": [0.11215972870179386, 0.09264410250704247], "projected_uv_max": [0.8878398036636997, 0.9975368713637514], "allow_deliberate_crop": false, "whole_component_margin": 0.005, "mesh_rows": [{"object": "JE591002 related annular exterior - unmounted candidate", "vertices": 57344, "depth_m": [0.06082118657330343, 0.07824703498935609], "projected_uv_min": [0.11215972870179386, 0.09264410250704247], "projected_uv_max": [0.8878398036636997, 0.9975368713637514], "finite": true}], "actual_vertices_outside_depth_range": false, "projected_extent_outside_margin": true, "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception"}
+
+Error: script failed, file: 'assets-src/moto-components/exhaust-header-gasket/render.py', exiting.
+
+Blender quit

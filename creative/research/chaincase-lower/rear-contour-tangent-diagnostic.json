@@ -1,0 +1,10 @@
+{
+  "source_sha256": "182f1fc870041168b8449eb82c5a1be14e4de555060fe649654dd24571a01ac3",
+  "export_sha256": "9343f05b588d75e0303e9edc4cefcc7c10fd5849f1cfd016c36404a2b2fcdd98",
+  "archive_private": "/workspace/wewa-assets/work-in-progress/chaincase-lower/tangent-kink-182f1fc8",
+  "actual_max_abs_N_dot_T": 0.006932269496419847,
+  "affected_region": "Single contour joint outerrear arc\u2192long lower free edge, extruded across returndepth.",
+  "cause": "Arc endpoint derivative points fore/up, following Bezier firstcontrol pointed fore/down. Direction discontinuity produced invalid tangent orthogonality in several actual glTF vertices.",
+  "correction": "Match firstcontrol to arc tangent and lift succeeding longedge join into a smooth same-tangent line. All metrics remain estimated; no buffer repair/tolerance increase.",
+  "art_accepted": false
+}

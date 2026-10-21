@@ -1,0 +1,265 @@
+{
+  "schema": "wewa.sun-shadow-acne-diagnostic.v1",
+  "created_utc": "2026-10-21T09:04:42.272415+00:00",
+  "scope": "Read-only API/numeric diagnosis and one unexecuted correction protocol; v4 artifacts preserved. No code/model/rerender.",
+  "v4_state": {
+    "software_checks": "passed-pending-human-review in immutable runtime report",
+    "inputs_unchanged": 44,
+    "root_artistic_disposition": "rejected: curved fine striations/shadow acne on smooth head wall in opposite W1, absent W0",
+    "art_accepted": false
+  },
+  "actually_opened_PNGs": [
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/opposite/W0.png",
+      "sha256": "02ad3f906a02c850c76c8c94da1898b55352ba407244766f251f4f2d718dd84b"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/opposite/W1.png",
+      "sha256": "a2728bf2346dfa92847872d9b5afc8e8693158ab09f6fa9759e3b731eca0c7d6"
+    }
+  ],
+  "direct_visual_observation": "Opposite W1 adds fine curved striations on upper head smooth wall, approximately x530–620,y260–355 in1000×750. They are absent from W0. ROI is a visual locator, not calibrated geometric or optical measurement. Root additionally inspected both-camera W0/W1 and warm Blender.",
+  "API_version": "9.31.0",
+  "API_sources": [
+    {
+      "path": "node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexNormalBias.js",
+      "sha256": "62788b08a44c5431b8b7d0f63c9a6314a2298a230497069d34c73da082a11981",
+      "read_scope": "lines5–12: normalBias_SM=biasAndScaleSM.y*sqrt(1−ndl²); worldPos−=normal*normalBias_SM"
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowMapVertexMetric.js",
+      "sha256": "577e247c4ad7906668c49e1c056aec33af2b613090f2cbfeaef3888ff9405b5c",
+      "read_scope": "lines6–18: PCF depth-texture bias in projected clip depth, BIASFACTOR1 for current WebGL NDC"
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Shaders/shadowMap.vertex.js",
+      "sha256": "f52db4a4c3742db14cd542023b0e9e44ffc6b28d1915538bd4f48f9c7439ff93",
+      "read_scope": "lines68–83: vNormalW from vertex normals and world transform; normal bias before light projection, then depth bias"
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Shaders/ShadersInclude/shadowsFragmentFunctions.js",
+      "sha256": "0a166e08415b9c958b36b628d5c867adc4b38f4ac5517e5ee430d83bcb8750ca",
+      "read_scope": "lines161–168: computeShadowWithPCF3 weighted four bilinear comparisons with common uvDepth.z; no receiver-plane slope correction in this function"
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Shaders/ShadersInclude/lightFragment.js",
+      "sha256": "f8e44f7cc1810a955ee6a2b485b11a8b1dcb100258f00ca48954878d8e399950",
+      "read_scope": "lines305–312: SHADOWPCF + SHADOWMEDIUMQUALITY invokes computeShadowWithPCF3"
+    },
+    {
+      "path": "node_modules/@babylonjs/core/Lights/Shadows/shadowGenerator.js",
+      "sha256": "2c094f0c900a6cffd385a17fe8e0ceafe04b801d0e4bb460784ca22223bd62ac",
+      "read_scope": "PCF setup, filteringQuality, shader defines; unchanged current generator"
+    }
+  ],
+  "numeric_current": {
+    "frustum": {
+      "left": -0.13990908756696369,
+      "right": 0.08584846301704842,
+      "bottom": -0.11833940257282875,
+      "top": 0.11111919459248164,
+      "near": 0.29138850025375335,
+      "far": 0.5175151444657888
+    },
+    "span_xyz_m": [
+      0.2257575505840121,
+      0.2294585971653104,
+      0.2261266442120355
+    ],
+    "shadow_map_px": 2048,
+    "texel_xy_m": [
+      0.00011023317899609965,
+      0.00011204033064712421
+    ],
+    "texel_diagonal_m": 0.00015717630051347776,
+    "depth_bias_requested_m": 2e-05,
+    "depth_bias_API": 0.00017689203262329103,
+    "normal_bias_m": 0.0001,
+    "projection10": 8.84460163116455,
+    "shader_BIASFACTOR": 1,
+    "current_depth_bias_fraction_largest_texel": 0.17850714902824458,
+    "max_extra_depth_from_normal_bias_front_facing_m": 5e-05,
+    "combined_depth_shift_at_45deg_m": 7.000000000000001e-05
+  },
+  "mechanism": {
+    "normal_bias": "Caster vertex displacement is −N·normalBias·sinθ. For a front-facing locally planar surface, axial depth component is normalBias·sinθ·cosθ; max50µm, not100µm. Tangential/lateral displacement also changes with angle. N is imported vertex normal transformed to world, not sampled PBR normalmap.",
+    "PCF": "QUALITY_MEDIUM invokes PCF3: four bilinear shadow-comparison lookups with fractional-texel-dependent weights/offsets. Neighbouring depths are compared with the same receiver depth; function has no receiver-plane derivative correction. On sloped/curved surfaces neighbour caster depths may differ from center.",
+    "example_only": "A planar surface with depth slope1 (45deg along one light-space axis) changes depth by110–112µm per texel. Current constant20µm plus at most50µm normal axial offset can be smaller. This example does not measure the actual affected wall angle or bound the full PCF support.",
+    "causality_limit": "Shadow-pass origin is localized by W0/W1 control. Insufficient effective bias against local raster/slope/normal interpolation is a supported hypothesis; actual per-fragment slope and depth format/precision are not measured. No proof that bias alone is sufficient or that normals/geometry are faulty."
+  },
+  "single_proposed_correction": {
+    "state": "protocol-only-not-coded-not-executed",
+    "change_only": "requested_depth_bias_m",
+    "old_m": 2e-05,
+    "new_m": 0.00011204033064712421,
+    "selection_rule": "max(actual shadow-frustum width,height)/2048; one largest light-space texel as deterministic axial bias test",
+    "new_API_bias": 0.0009909520911977705,
+    "increase_factor": 5.6020165323562106,
+    "normal_bias_remains_m": 0.0001,
+    "unchanged": [
+      "source/GLB/HDR",
+      "geometry/normals/allUV/tangents/indices/matrices",
+      "serialized PBR materials/textures",
+      "two native cameras",
+      "sun direction/color/intensity",
+      "HDR rotation/intensity/exposure/ACES",
+      "PCF2048 MEDIUM",
+      "actual caster/receiver sets",
+      "frustum/depth/padding",
+      "normalBias0.1mm"
+    ],
+    "reason": "Raise constant axial clearance from0.18 to1 raster texel while holding angle-dependent/lateral normal displacement unchanged. Magnitude is tied to actual raster dimensions, not chosen by successive visual sweeps.",
+    "not_a_guarantee": "One texel is not a mathematical upper bound on slope/PCF errors at arbitrary angles. It is one bounded hypothesis test; no automatic retuning if acne persists. Larger bias may detach thin real contact shadows."
+  },
+  "future_acceptance_protocol": [
+    "Create an additive revision only after root decision; preserve every v4 file/hash and no light added to frozen neutral v2.",
+    "Repeat both common cameras; require neutral v2/new neutral exact, new W0 versus v4 W0 exact, same imported buffers/matrices/full PBR, camera/environment and real caster/receiver/frustum lists. Only depth bias metadata differs.",
+    "Capture W1 once with the fixed proposed bias and the same current PCF2048/normalBias. No parameter sweep, AO, material compensation or geometry change.",
+    "Open original W0, v4W1 and candidateW1 for both cameras plus existing warm Blender, in separate complete images. Inspect wall striations first, then fin gaps, plug/cap recess, tube/head overlaps and exposed metal controls.",
+    "Reject if wall marks remain or if shadow detachment, loss of thin-fin contact, halos/acne or broad unjustified brightening appear. Numeric conservation alone is not acceptance. Stop and report; no next bias value selected by this protocol."
+  ],
+  "protected_v4_artifacts": [
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/README.md",
+      "sha256": "4d92a0e732b2dbf3e3666446e9d77a9ec991b36baf6226a8321ec029fb25c311"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/conservation-report.json",
+      "sha256": "1c6e334795a846357da15a5f09a67f7e3d82e8f5a98befd3221a1860b26990c1"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/coordinator-review.json",
+      "sha256": "6400e4777eece5403caf2854b908f14ed4c2c7970a428970e4fe33405339af5f"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/front/W0-engine-check.json",
+      "sha256": "e52c4a1a6ebca472016ae7f5793b99f0b7b840002a51ca8a6f83b265dd5a2f4e"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/front/W0.png",
+      "sha256": "c783a0f9f5cbf7b2577408901bfcd4edecad113c65cd2de94102a66da72268b9"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/front/W1-engine-check.json",
+      "sha256": "3327acc4c8bef32c6b1963a3252f7aee58c1d1a29b5e674f850f0e94705d5ab7"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/front/W1.png",
+      "sha256": "bf2b4b8cb2e945df88c213c095e7024725a4cc487d8f3b4f8830ef80e51f98f5"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/front/comparison.json",
+      "sha256": "d4c75d2bde280772920b26d36326b15b92dec7349d9dd5b8f951babdbe882eaa"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/front/neutral-control-comparison.json",
+      "sha256": "50e5547563a10c92fadbae083016a6121d12767245963ada856f013647c1b38d"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/front/neutral-v2-engine-check.json",
+      "sha256": "b003ee5722989bfcaf4296c2e00b67abd25375a014a614385b8b24a54fa8cd7f"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/front/neutral-v2.png",
+      "sha256": "ff113a51c820ba617a3a216d13188c573d9089e6c7aa142bd8b958f011b52852"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/front/neutral-v4-engine-check.json",
+      "sha256": "9304f1154f48ccf6f566b49d2047119b4f21e912235e42f527fe7be731ecd64d"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/front/neutral-v4.png",
+      "sha256": "ff113a51c820ba617a3a216d13188c573d9089e6c7aa142bd8b958f011b52852"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/opposite/W0-engine-check.json",
+      "sha256": "ffc6673a78298d3621df1a3c1b2f4ab886049c1637e07553586635cc208e6cda"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/opposite/W0.png",
+      "sha256": "02ad3f906a02c850c76c8c94da1898b55352ba407244766f251f4f2d718dd84b"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/opposite/W1-engine-check.json",
+      "sha256": "892decb39888e6d76c614d218bd110d8898bff93e968a957caf2ff431d1fe68e"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/opposite/W1.png",
+      "sha256": "a2728bf2346dfa92847872d9b5afc8e8693158ab09f6fa9759e3b731eca0c7d6"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/opposite/comparison.json",
+      "sha256": "5865e5724cdaf4d530a74111fa33f145955e7df75d37d217de80bcb6bcd0de7a"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/opposite/neutral-control-comparison.json",
+      "sha256": "50e5547563a10c92fadbae083016a6121d12767245963ada856f013647c1b38d"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/opposite/neutral-v2-engine-check.json",
+      "sha256": "de08d762833978b8771b4b928920462a1df2b058713b3868408ca7f4971ba3cd"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/opposite/neutral-v2.png",
+      "sha256": "d1b0b001e98e0abfea17e77357fedc52ec6c0c979523118fd1d3b81ed278f5e1"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/opposite/neutral-v4-engine-check.json",
+      "sha256": "fc96c7dfaf7a17341d7b60228f61007d13b345377a2c7baf386a6e7969f9cc00"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/opposite/neutral-v4.png",
+      "sha256": "d1b0b001e98e0abfea17e77357fedc52ec6c0c979523118fd1d3b81ed278f5e1"
+    },
+    {
+      "path": "tools/motorcycle-material-camera-lab-v4/conservation.js",
+      "sha256": "57f55aa287d9ddea2b1ae11f92a0785d10a146f61394315dfbeaee27e75dcc87"
+    },
+    {
+      "path": "tools/motorcycle-material-camera-lab-v4/configuration.json",
+      "sha256": "194e853526e035221971cc078b54910583156793f83261ad4aa9bbe01ee90305"
+    },
+    {
+      "path": "tools/motorcycle-material-camera-lab-v4/index.html",
+      "sha256": "dec0b64f0ea8dbad4f5f904d73ecd2de2381abba0685886c41fe7ff86cab64e4"
+    },
+    {
+      "path": "tools/motorcycle-material-camera-lab-v4/review.js",
+      "sha256": "a66321d52bc317002be5d1c80883660f14ea3323189c913ba3b4cf8f6e706c09"
+    },
+    {
+      "path": "tools/capture_material_camera_comparison_v4.py",
+      "sha256": "481df4f5dec6e504c392dfeca7d55a20e217ec75df132be40e44899a1abdb926"
+    }
+  ],
+  "all_protected_v4_artifacts_unchanged": true,
+  "execution": {
+    "browser": false,
+    "Blender": false,
+    "new_render": false,
+    "code_changed": false,
+    "model_changed": false
+  },
+  "art_accepted": false,
+  "physical_iphone_tested": false,
+  "future_expected_canvases": {
+    "camera_names": [
+      "front",
+      "opposite"
+    ],
+    "PNG_names_each": [
+      "neutral-v2.png",
+      "neutral-v5.png",
+      "W0.png",
+      "W1.png"
+    ],
+    "total": 8,
+    "composites": false
+  },
+  "visual_rejection_criteria": {
+    "inspection": "Original1000×750 images at native size first; compare same opposite wall region, both directions and existing warm Blender. No photographic threshold or calibrated mm judgement invented.",
+    "striae": "Reject any new organized curved shadow striation on the smooth-wall witness area. If residual is ambiguous, mark unresolved rather than accepted.",
+    "fine_edge_detachment": "Reject any newly visible light gap separating a contact shadow from its touching fin root, tube/head junction or plug/cap contact. Preserve thin-fin interspaces and real contact shadows; no claimed subpixel/mm clearance certification.",
+    "other": "Reject new halos, acne or unexplained broad brightening. Numeric checks do not override visual rejection."
+  }
+}

@@ -1,0 +1,403 @@
+{
+  "schema": "wewa.source15.preliminary-dependency-admission.v1",
+  "created_at_UTC": "2026-10-21T09:00:25.059351+00:00",
+  "base_commit": "486a6493deb8db3d93e838bac36b734bb58bb608",
+  "status": "STATIC_PRELIMINARY_NO_FINAL_CUTOFF",
+  "scope": "Only gasket1 and frozen lower1 source; no v2 draft, footrest/seatbase/slider model read or selected. Source14 historical deliverables are not rebuilt or rewritten.",
+  "source_checks": {
+    "gasket1_source_entries": 59,
+    "gasket1_review_entries": 73,
+    "gasket1_root_entries": 20,
+    "lower1_source_entries": 34,
+    "recursive_manifests": 4,
+    "SHA_byte_pairs_verified": 186,
+    "unique_files_including_root_manifests": 120,
+    "errors": []
+  },
+  "source_closure_table": {
+    "path": "creative/research/motorcycle-source-dependencies-publication15-v1/source-closure-v1.json",
+    "sha256": "7f8cb3b7a694bf6b481ab4fc3a19d7d483f0fda36c517b6bdd2ff6624f944ee3",
+    "bytes": 94145,
+    "in_immutable_base": false
+  },
+  "stable_recipe_inputs": {
+    "path": "creative/research/motorcycle-source-dependencies-publication15-v1/stable-recipe-inputs-v1.json",
+    "sha256": "dabb050ca811d70853118ec62902464f4856f514f32a290c0d71bba890640ce7",
+    "bytes": 15857,
+    "in_immutable_base": false
+  },
+  "stable_named_recipe_input_count": 39,
+  "inputs_outside_source_closures": [
+    {
+      "path": "creative/reviews/chaincase-lower-v1/gray-review.json",
+      "sha256": "7d79345b7b08227c1265765098a5035e96946f37d3d4466532aa527d8bc3e249",
+      "bytes": 3334,
+      "in_immutable_base": false,
+      "read_by_phases": [
+        "lower1_material_restart"
+      ]
+    },
+    {
+      "path": "creative/reviews/chaincase-lower-v1/source-geometry-check.json",
+      "sha256": "74ea4720f91d389feb13023caaf9c6606daaef8009e84c04824961c39e587e50",
+      "bytes": 1035,
+      "in_immutable_base": false,
+      "read_by_phases": [
+        "lower1_render_current"
+      ]
+    },
+    {
+      "path": "creative/reviews/chaincase-lower-v1/geometry-check.json",
+      "sha256": "36a2a0fe9b95212fcdfb93034431e4d428eec3009eff725a14e3f7943ede216d",
+      "bytes": 2053,
+      "in_immutable_base": false,
+      "read_by_phases": [
+        "lower1_render_current"
+      ]
+    },
+    {
+      "path": "tools/blender_component_camera_preflight.py",
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a",
+      "bytes": 3235,
+      "in_immutable_base": true,
+      "read_by_phases": [
+        "lower1_render_current"
+      ]
+    },
+    {
+      "path": "creative/reviews/chaincase-lower-v1/source-interface-check.json",
+      "sha256": "89ddd105a0ce0fbe9214970bd445d959ec56b266607954cbbf1abc0fd9ca77fb",
+      "bytes": 1605,
+      "in_immutable_base": false,
+      "read_by_phases": [
+        "lower1_current_proof_prechecks"
+      ]
+    },
+    {
+      "path": "creative/reviews/chaincase-lower-v1/material-preview-review.json",
+      "sha256": "8aca0d5ce0d1ff3b89acf5e3456f6129ef18c11fa3a4871f056a49ff95df27f4",
+      "bytes": 1999,
+      "in_immutable_base": false,
+      "read_by_phases": [
+        "lower1_current_proof_prechecks"
+      ]
+    }
+  ],
+  "README_href_checks": [
+    {
+      "origin": "assets-src/moto-components/exhaust-header-gasket/README.md",
+      "literal_href": "../../../creative/research/exhaust-header-gasket/fabrication-plan-v1.json",
+      "resolved_path": "creative/research/exhaust-header-gasket/fabrication-plan-v1.json",
+      "exists": true,
+      "available_in_closed_scope_or_base": true
+    },
+    {
+      "origin": "creative/research/engine17-exhaust-exterior-v1/header-joint-targeted-v1/README.md",
+      "literal_href": "report.json",
+      "resolved_path": "creative/research/engine17-exhaust-exterior-v1/header-joint-targeted-v1/report.json",
+      "exists": true,
+      "available_in_closed_scope_or_base": true
+    },
+    {
+      "origin": "creative/reviews/exhaust-header-gasket-v1/README.md",
+      "literal_href": "../../../assets-src/moto-components/exhaust-header-gasket/README.md",
+      "resolved_path": "assets-src/moto-components/exhaust-header-gasket/README.md",
+      "exists": true,
+      "available_in_closed_scope_or_base": true
+    }
+  ],
+  "README_href_missing": 0,
+  "required_public_additive_copies": [],
+  "private_copy_performed": false,
+  "candidate_limits": {
+    "gasket1": {
+      "source": {
+        "path": "assets-src/moto-components/exhaust-header-gasket/exhaust-header-gasket-v1.blend",
+        "sha256": "754d172acafd51cf22d7a085626bf35023e567e9c71d6358266dfc9764bd0672",
+        "bytes": 5370958,
+        "in_immutable_base": false
+      },
+      "export": {
+        "path": "assets-src/moto-components/exhaust-header-gasket/exhaust-header-gasket-inspection.glb",
+        "sha256": "11bd7d635b72fada329a45fed1262a3e2fddd7569e4a9802d56b47bd8965f582",
+        "bytes": 6397848,
+        "in_immutable_base": false
+      },
+      "G4": "DEFINITE REWORK recorded by root: regular crosshatched grid is not a faithful visible match; correction2 active and deliberately excluded until frozen. Technical buffers do not receive the finish.",
+      "G5": "Source isolated origin0, NOT motorcycle frame. No suggested automatic attach matrix. Working freeheight2mm vs existing headergap1.2mm is an unresolved estimated conflict; no compression/displacement invented.",
+      "chemistry_or_physical_section_received": false,
+      "component_id": "MOTO-EXHAUST-HEADER-GASKET-001",
+      "revision2_same_ID_not_new_type": true,
+      "root_current_technical_type_number_reported": 64
+    },
+    "lower1": {
+      "source": {
+        "path": "assets-src/moto-components/chaincase-lower/chaincase-lower-v1.blend",
+        "sha256": "957926b01dde0821af4700f5125c8df1a5434b43965b392e6ad838c082b7c5ba",
+        "bytes": 7051887,
+        "in_immutable_base": false
+      },
+      "export": {
+        "path": "assets-src/moto-components/chaincase-lower/chaincase-lower-inspection.glb",
+        "sha256": "091ea8a793b0c3893b5fc8e091ef5cbb095aa9c872b50164bd485795b5abfc75",
+        "bytes": 8698120,
+        "in_immutable_base": false
+      },
+      "source_status": "Frozen34, five final96 proofs active at audit start. No active render-report or evolving final manifest pinned.",
+      "shape": "Separate lower formed wall with large plug opening and two small passages, not upper mesh mirror. Plug/fasteners/hidden seat/installed overlap not built or received.",
+      "master_gray_source": {
+        "path": "assets-src/moto-components/chaincase-lower/g3-master-v1/chaincase-lower-v1.blend",
+        "sha256": "f6fc1813979dc663360e342939a88ce6f07865727943e7f4d2c9d55c6a55a373",
+        "bytes": 6835231,
+        "in_immutable_base": false
+      },
+      "master_gray_export": {
+        "path": "assets-src/moto-components/chaincase-lower/g3-master-v1/chaincase-lower-inspection.glb",
+        "sha256": "4f4fbe59021ba25ea7b4186df998269db99caa3ae5c674f8935fefa2b43bcbf5",
+        "bytes": 8479192,
+        "in_immutable_base": false
+      }
+    }
+  },
+  "restart_instructions": {
+    "gasket1": "In an isolated working checkout without original preflight guard: build.py uses annular_geometry/parameters, helper control_geometry and verifies two existing header JSON hashes only. material.py opens provided geometry.blend+geometry-report and bakes three original maps, preserving source geometry. Current render.py loads final source/build-report/export-check with local camera/checkpoint helpers; no required prior preview checkpoint, font, HDR or photo pixels. Noise/bump setup contains the acknowledged grid defect; replay is not a correction.",
+    "lower1": "Restore two G3master binaries to active component paths and its source-geometry-check/geometry-check/source-interface-check to current review paths in a WORK COPY. Keep gray-review approval/hash JSON and material-plan, then material.py. It overwrites the active source/export and is not idempotent on current PBR. Renderer requires current source-geometry-check+geometry-check and common tool camera helper. record.py additionally requires current source-interface-check/material-preview-review and inspected actual image files for proof closure. No copied image is required by material.py itself."
+  },
+  "private_input_classification": [
+    {
+      "input": "gasket1 WIP exported-v1-textures/UV JSON + PNG",
+      "classification": "Generated by check_material_export.mjs from actual GLB, then decoded by check_exported_map_pixels.py. Regenerate extraction, not an unpublished pixel master."
+    },
+    {
+      "input": "gasket1 preview24 checkpoint JSON and paired PNG/EXR",
+      "classification": "record_preflight.py reads both metadata and every raster hash to reconstruct historical visual closure. Numeric-only copies would not replay it. They are not inputs of material.py or current96 renderer; not copied. Existing preview-review retains attributed historical consultation. Fresh geometry/material runs require fresh images/inspection before new proof freeze."
+    },
+    {
+      "input": "gasket1 original reference product photo",
+      "classification": "Private documentary comparison only, never read as shader/texture input."
+    },
+    {
+      "input": "lower1 gray/reflection PNGs",
+      "classification": "Material reads only gray-review JSON plus G3 master; record.py final proof closure checks the exact owned image allowlists, separately from PBR generation. No private reference photo copied."
+    },
+    {
+      "input": "scratch/checkpoint/EXR outputs",
+      "classification": "Written during fresh renders; optional reuse requires outputs to exist/hash-match. Missing outputs cause rerender, not loss of author source."
+    }
+  ],
+  "group1_to18_remaining_check": {
+    "basis": "Immutable Source14 metadata63IDs; V4 Source13 pointage retained as prior baseline and overlaid only four actual Source14 additions. No mesh or Source14 historical closure rerun.",
+    "base_registered_IDs": 63,
+    "lots": [
+      {
+        "lot": 1,
+        "label": "Pontets et fixations du guidon",
+        "owner": "A",
+        "remaining_scope": "DS181007 et Nyloc construits ; DS181008 non construit ; DS181009/10 et pile réelle toujours documentaires.",
+        "source14_additional_registered_types_vs_v4": [],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      },
+      {
+        "lot": 2,
+        "label": "Support des compteurs",
+        "owner": "A",
+        "remaining_scope": "Support et compteurs construits ; liaisons/fixations et repères communs ouverts. Compteurs restent complément, aucun lot19.",
+        "source14_additional_registered_types_vs_v4": [],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      },
+      {
+        "lot": 3,
+        "label": "Accélérateur et entraînement de câble",
+        "owner": "B",
+        "remaining_scope": "Commande/poignées construites ; câble sortant suivi une seule fois au10.",
+        "source14_additional_registered_types_vs_v4": [],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      },
+      {
+        "lot": 4,
+        "label": "Commodo gauche",
+        "owner": "C",
+        "remaining_scope": "Commodo gauche construit ; fils au10 et variantes/interfaces ouverts.",
+        "source14_additional_registered_types_vs_v4": [],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      },
+      {
+        "lot": 5,
+        "label": "Commodo droit",
+        "owner": "C",
+        "remaining_scope": "Commodo droit construit ; identité/fonction de commande rouge et montage non certifiés.",
+        "source14_additional_registered_types_vs_v4": [],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      },
+      {
+        "lot": 6,
+        "label": "Levier embrayage et support",
+        "owner": "B",
+        "remaining_scope": "Levier/support construits ; vis/écrous de bridage et câble10 restent.",
+        "source14_additional_registered_types_vs_v4": [],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      },
+      {
+        "lot": 7,
+        "label": "Levier frein au guidon et support",
+        "owner": "B",
+        "remaining_scope": "Levier/support construits ; vis/écrous de bridage et câble10 restent.",
+        "source14_additional_registered_types_vs_v4": [],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      },
+      {
+        "lot": 8,
+        "label": "Rétroviseurs gauche/droit",
+        "owner": "C",
+        "remaining_scope": "Deux rétroviseurs distincts construits ; montage/fit/art ouverts, pas de miroir supposé.",
+        "source14_additional_registered_types_vs_v4": [],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      },
+      {
+        "lot": 9,
+        "label": "Contacteur et clé",
+        "owner": "B",
+        "remaining_scope": "Barillet/clé construits ; anneau et connecteur/départ10 restent.",
+        "source14_additional_registered_types_vs_v4": [],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      },
+      {
+        "lot": 10,
+        "label": "Câbles et faisceau visibles",
+        "owner": "B",
+        "remaining_scope": "Trois gaines locales/boucle2 construites ; parcours supérieurs, connecteurs, faisceaux et attaches restent.",
+        "source14_additional_registered_types_vs_v4": [],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      },
+      {
+        "lot": 11,
+        "label": "Visière et entourage des compteurs",
+        "owner": "C",
+        "remaining_scope": "Coque de visière construite ; retours/attaches cachés non documentés et raccords restent.",
+        "source14_additional_registered_types_vs_v4": [],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      },
+      {
+        "lot": 12,
+        "label": "Phare et clignotants avant",
+        "owner": "C",
+        "remaining_scope": "Coiffe/protecteur/boîtier construits ; optique/réflecteur/douille, clignotants avant et fixations restent.",
+        "source14_additional_registered_types_vs_v4": [],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      },
+      {
+        "lot": 13,
+        "label": "Fourche et direction",
+        "owner": "A",
+        "remaining_scope": "Tés, tube, deux fourreaux et soufflets construits ; colonne/pile direction, bouchons/vis/joints et montage restent.",
+        "source14_additional_registered_types_vs_v4": [],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      },
+      {
+        "lot": 14,
+        "label": "Ensemble avant et compatibilité des candidats existants",
+        "owner": "A",
+        "remaining_scope": "Quatre candidats avant anciens et valve approximative existants ; qualité/compatibilité, axes/pile et unités frein/compteur restent.",
+        "source14_additional_registered_types_vs_v4": [],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      },
+      {
+        "lot": 15,
+        "label": "Garde-boue, cadre et bras oscillant",
+        "owner": "A",
+        "remaining_scope": "Six unités cadre et bras/bague/axe construits ; garde-boue, arceau distinct, cadre/pattes restants, écrou/patin/tendeurs et montage restent.",
+        "source14_additional_registered_types_vs_v4": [],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      },
+      {
+        "lot": 16,
+        "label": "Roue arrière, frein, transmission et amortisseurs",
+        "owner": "A ; SNS arrière C",
+        "remaining_scope": "Pneu2, jante partielle et carter supérieur construits dans Source14. Carter inférieur possède maintenant source34 mais pas encore livraison/record Source15 clos. Bouchon/carter fixations, chaîne/transmission, moyeu/pile/frein et SNS restent.",
+        "source14_additional_registered_types_vs_v4": [
+          "MOTO-CHAINCASE-UPPER-001"
+        ],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      },
+      {
+        "lot": 17,
+        "label": "Moteur extérieur, échappement, repose-pieds, pédales et béquilles",
+        "owner": "B",
+        "remaining_scope": "Pare-chaleur et fixation partielle sont construits dans Source14. Joint1 construit localement, G4 quadrillage en reprise2 et G5 non monté : ni nouvelle absence ni pièce acceptée. Bride/supports, admission/HT/centre, repose-pieds/commandes/béquilles et cockpit restent.",
+        "source14_additional_registered_types_vs_v4": [
+          "MOTO-EXHAUST-HEATSHIELD-001",
+          "MOTO-EXHAUST-HEATSHIELD-SCREW-001"
+        ],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      },
+      {
+        "lot": 18,
+        "label": "Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière",
+        "owner": "C",
+        "remaining_scope": "Réservoir extérieur et housse/bourrelet/coutures de selle construits dans Source14 ; embase/mousse/appuis, attaches, bouchon/robinet/durite, caches, rack/éclairage/plaque restent.",
+        "source14_additional_registered_types_vs_v4": [
+          "MOTO-SEAT-ENVELOPE-001"
+        ],
+        "group_complete": false,
+        "physical_or_artistic_fit_received": false
+      }
+    ],
+    "post_base_not_counted_as_delivered": [
+      "gasket1 technical64 with G4 rework; correction2 sameID active",
+      "chaincase-lower1 frozen source but final closure still active",
+      "leftfront footrest, seatbase and chain slider not frozen, outside dependency cut"
+    ],
+    "owner_continuations": {
+      "A": "Close current lower-chaincase review, then documented chain slider/pivot/transmission or remaining15/16/14 units under existing ownership. Keep DS181008/9/10/steering limits, no invented sections.",
+      "B": "Correct current gasket material2 before reception, then current LH footrest and remaining visible exhaust/intake/ground-control units. No second gasket ID or cockpit-cable substitution for HT.",
+      "C": "Current seatbase then remaining18 and front optics/SNS16 under existing transferred ownership. Existing cover is not foam/base/attachment."
+    },
+    "no_group_declared_complete": true,
+    "no_total_parts_denominator_or_percentage": true
+  },
+  "new_files": [
+    "creative/research/motorcycle-source-dependencies-publication15-v1/README.md",
+    "creative/research/motorcycle-source-dependencies-publication15-v1/report.json",
+    "creative/research/motorcycle-source-dependencies-publication15-v1/source-closure-v1.json",
+    "creative/research/motorcycle-source-dependencies-publication15-v1/stable-recipe-inputs-v1.json"
+  ],
+  "no_model_source_gel_global_or_oldreport_modified": true,
+  "no_stage_or_Git_mutation": true,
+  "index_before_SHA256": "b1320315ae412cd777485a2f052a94c6ead3ce516c47a6541668cfc86d077c35",
+  "index_after_SHA256": "b1320315ae412cd777485a2f052a94c6ead3ce516c47a6541668cfc86d077c35",
+  "CSG_fonts_HDR_policy": {
+    "CSG_executed_in_current_geometry_recipes": false,
+    "unused_csg_function_in_control_geometry_not_a_runtime_dependency": true,
+    "font_required": false,
+    "HDR_required": false,
+    "documentary_photo_pixels_required": false,
+    "original_maps": "Gasket three2048x1024 base/rough/normal with known estimated grid; lower two512x512 normal/ORM from seed16121. No public photo atlas."
+  },
+  "final_static_validation": {
+    "SHA_byte_manifest_pairs_rechecked": 186,
+    "named_recipe_inputs_rechecked": 39,
+    "README_local_hrefs_checked": 3,
+    "missing": 0,
+    "lots1to18_unique": true,
+    "no_group_complete": true,
+    "index_unchanged": true,
+    "final_cutoff_fixed": false
+  }
+}

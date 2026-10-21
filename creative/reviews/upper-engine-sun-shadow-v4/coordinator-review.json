@@ -1,0 +1,81 @@
+{
+  "schema": "wewa.sun-shadow-independent-review.v1",
+  "created_utc": "2026-10-21T09:02:26.728977+00:00",
+  "execution_status": "checks-passed-pending-human-review",
+  "actual_PNGs_opened": [
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/front/W0.png",
+      "sha256": "c783a0f9f5cbf7b2577408901bfcd4edecad113c65cd2de94102a66da72268b9"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/front/W1.png",
+      "sha256": "bf2b4b8cb2e945df88c213c095e7024725a4cc487d8f3b4f8830ef80e51f98f5"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/opposite/W0.png",
+      "sha256": "02ad3f906a02c850c76c8c94da1898b55352ba407244766f251f4f2d718dd84b"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/opposite/W1.png",
+      "sha256": "a2728bf2346dfa92847872d9b5afc8e8693158ab09f6fa9759e3b731eca0c7d6"
+    },
+    {
+      "path": "creative/reviews/upper-engine-material-lighting-v1/warm-late-day.png",
+      "sha256": "cda764bc2bd536d84af51d959f491e4f260e089bcb079577aa892149a3b7a75b"
+    },
+    {
+      "path": "creative/reviews/upper-engine-material-lighting-opposite-v1/warm-late-day.png",
+      "sha256": "dd53ae2dd226b546c285e0a9b36b37547292199cb66f37d7610e5ddbd025e99c"
+    }
+  ],
+  "camera_count": 2,
+  "canvas_count": 8,
+  "protected_inputs": 44,
+  "all_protected_inputs_unchanged": true,
+  "neutral_controls_RGBA_equal": {
+    "front": true,
+    "opposite": true
+  },
+  "same_buffers_matrices_materials_camera_HDR": {
+    "front": {
+      "geometry_normals_allUV_tangents_indices_matrices_assignments_sha256": true,
+      "materials_serialized_sha256": true,
+      "materials_semantic_sha256": true,
+      "camera_HDR_processing_sha256": true,
+      "same_light_except_shadow_enabled": true,
+      "same_casters_receivers_and_fixed_shadow_parameters": true
+    },
+    "opposite": {
+      "geometry_normals_allUV_tangents_indices_matrices_assignments_sha256": true,
+      "materials_serialized_sha256": true,
+      "materials_semantic_sha256": true,
+      "camera_HDR_processing_sha256": true,
+      "same_light_except_shadow_enabled": true,
+      "same_casters_receivers_and_fixed_shadow_parameters": true
+    }
+  },
+  "W0_W1_measured_pixels": {
+    "front": {
+      "same_dimensions": true,
+      "changed_RGBA_pixels": 26149,
+      "max_channel_difference": 207,
+      "decoded_RGBA_equal": false
+    },
+    "opposite": {
+      "same_dimensions": true,
+      "changed_RGBA_pixels": 76221,
+      "max_channel_difference": 185,
+      "decoded_RGBA_equal": false
+    }
+  },
+  "visual_reading": [
+    "Front W1 adds actual shadows between fin surfaces and behind the cover, without a uniform material darkening. This does not establish Blender lighting/BRDF parity.",
+    "Opposite W1 introduces fine curved contour-like striping on the broad smooth head side, absent in W0. This is a demonstrated shadow-state artifact consistent with self-shadow acne; the exact bias/normalBias mechanism is not yet established.",
+    "The warm Blender references retain substantially softer and darker crevices and a different background/tone response. No material compensation or image composite was made."
+  ],
+  "decision": "REJECT v4 shadow appearance because of the introduced smooth-surface artifact. Keep the fixed experiment, software evidence and all original neutral controls unchanged. Read the actual API/shader bias convention and prepare one justified corrective diagnostic before new code or capture. No adoption into the game or art acceptance.",
+  "AO_status": "High-poly AO suspended pending real LOD atlas phase; no AO produced or used here.",
+  "public_game_unchanged": true,
+  "art_accepted": false,
+  "physical_iphone_tested": false
+}

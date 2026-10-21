@@ -1,0 +1,101 @@
+{
+  "schema": "wewa.sun-shadow-independent-review.v1",
+  "created_utc": "2026-10-21T09:14:19.402229+00:00",
+  "execution_status": "checks-passed-pending-human-review",
+  "actual_new_PNGs_opened": [
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v5/front/neutral-v2.png",
+      "sha256": "ff113a51c820ba617a3a216d13188c573d9089e6c7aa142bd8b958f011b52852"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v5/front/neutral-v5.png",
+      "sha256": "ff113a51c820ba617a3a216d13188c573d9089e6c7aa142bd8b958f011b52852"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v5/front/W0.png",
+      "sha256": "c783a0f9f5cbf7b2577408901bfcd4edecad113c65cd2de94102a66da72268b9"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v5/front/W1.png",
+      "sha256": "c07ea131d673056daa5579b02f3a91f44d827c2301d09dd9a9eb0037975e545c"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v5/opposite/neutral-v2.png",
+      "sha256": "d1b0b001e98e0abfea17e77357fedc52ec6c0c979523118fd1d3b81ed278f5e1"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v5/opposite/neutral-v5.png",
+      "sha256": "d1b0b001e98e0abfea17e77357fedc52ec6c0c979523118fd1d3b81ed278f5e1"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v5/opposite/W0.png",
+      "sha256": "02ad3f906a02c850c76c8c94da1898b55352ba407244766f251f4f2d718dd84b"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v5/opposite/W1.png",
+      "sha256": "db219ff71faea3a57da5fdca539d77c81412f6d94cd25240312c56a0aaa24e52"
+    }
+  ],
+  "previous_actual_reference_PNGs_opened": [
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/front/W1.png",
+      "sha256": "bf2b4b8cb2e945df88c213c095e7024725a4cc487d8f3b4f8830ef80e51f98f5"
+    },
+    {
+      "path": "creative/reviews/upper-engine-sun-shadow-v4/opposite/W1.png",
+      "sha256": "a2728bf2346dfa92847872d9b5afc8e8693158ab09f6fa9759e3b731eca0c7d6"
+    },
+    {
+      "path": "creative/reviews/upper-engine-material-lighting-v1/warm-late-day.png",
+      "sha256": "cda764bc2bd536d84af51d959f491e4f260e089bcb079577aa892149a3b7a75b"
+    },
+    {
+      "path": "creative/reviews/upper-engine-material-lighting-opposite-v1/warm-late-day.png",
+      "sha256": "dd53ae2dd226b546c285e0a9b36b37547292199cb66f37d7610e5ddbd025e99c"
+    }
+  ],
+  "native_view_resolution_px": [
+    1000,
+    750
+  ],
+  "protected_inputs": 72,
+  "all_protected_inputs_unchanged": true,
+  "neutral_controls_RGBA_equal": {
+    "front": true,
+    "opposite": true
+  },
+  "W0_strictly_equal_v4": {
+    "front": true,
+    "opposite": true
+  },
+  "same_buffers_matrices_materials_camera_HDR": {
+    "front": {
+      "geometry_normals_allUV_tangents_indices_matrices_assignments_sha256": true,
+      "materials_serialized_sha256": true,
+      "materials_semantic_sha256": true,
+      "camera_HDR_processing_sha256": true,
+      "same_light_except_shadow_enabled": true,
+      "same_casters_receivers_and_fixed_shadow_parameters": true
+    },
+    "opposite": {
+      "geometry_normals_allUV_tangents_indices_matrices_assignments_sha256": true,
+      "materials_serialized_sha256": true,
+      "materials_semantic_sha256": true,
+      "camera_HDR_processing_sha256": true,
+      "same_light_except_shadow_enabled": true,
+      "same_casters_receivers_and_fixed_shadow_parameters": true
+    }
+  },
+  "actual_depth_bias_m": 0.00011204033064712421,
+  "actual_API_bias": 0.0009909520911977705,
+  "normalBias_world_m_unchanged": 0.0001,
+  "visual_reading": [
+    "The structured curved striping on the broad opposite head wall in v4 W1 is no longer visible at native1000x750 in v5 W1. The same W0 pixels establish that no material/light change was used as compensation.",
+    "Fin-root, tube/head and visible plug/cap contact regions retain shadows; no obvious new detached bright contact band or halo was identified in these whole views. This is a bounded visual reading, not a subpixel proof or a clearance measurement.",
+    "The reference warm Blender views still have softer/darker crevices and different tone/background response. Direct-light PCF does not occlude HDR diffuse illumination or establish BRDF/tone parity."
+  ],
+  "decision": "Keep v5 as a diagnostic candidate with the targeted visible artifact resolved in these two native views. No adoption into the game, no artistic reception and no physical iPhone qualification. Stop bias iteration; preserve v4 rejected history and all controls. Revisit shadow cost/contacts with actual runtime LODs rather than tune this high-poly inspection scene indefinitely.",
+  "public_game_unchanged": true,
+  "art_accepted": false,
+  "physical_iphone_tested": false
+}

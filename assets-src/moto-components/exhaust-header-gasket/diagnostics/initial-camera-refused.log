@@ -1,0 +1,13 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 01:31:14)
+Read blend: "/workspace/wewa-github/assets-src/moto-components/exhaust-header-gasket/exhaust-header-gasket-v1-geometry.blend"
+Traceback (most recent call last):
+  File "/workspace/wewa-github/assets-src/moto-components/exhaust-header-gasket/render_geometry.py", line 16, in <module>
+    s.camera.location=position;s.camera.rotation_euler=(aim-position).to_track_quat('-Z','Y').to_euler();s.camera.data.type='PERSP';s.camera.data.lens=lens;bpy.context.view_layer.update();frame=check_component_camera(s,[o],allow_crop=crop,margin=.005)
+                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/wewa-github/assets-src/moto-components/exhaust-header-gasket/camera_preflight.py", line 50, in check_component_camera
+    raise ValueError(json.dumps(result))
+ValueError: {"schema": "wewa.camera-preflight.v1", "camera": "CONTROL_CAMERA", "camera_type": "PERSP", "camera_clip_m": [9.999999747378752e-05, 1000.0], "nearest_actual_vertex_depth_m": 0.07260310893664501, "farthest_actual_vertex_depth_m": 0.0794050177550607, "projected_uv_min": [0.12047727104663147, -0.0021214351594855962], "projected_uv_max": [0.8795227289533685, 0.9706294349570851], "allow_deliberate_crop": false, "whole_component_margin": 0.005, "mesh_rows": [{"object": "JE591002 related annular exterior - unmounted candidate", "vertices": 57344, "depth_m": [0.07260310893664501, 0.0794050177550607], "projected_uv_min": [0.12047727104663147, -0.0021214351594855962], "projected_uv_max": [0.8795227289533685, 0.9706294349570851], "finite": true}], "actual_vertices_outside_depth_range": false, "projected_extent_outside_margin": true, "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception"}
+
+Error: script failed, file: 'assets-src/moto-components/exhaust-header-gasket/render_geometry.py', exiting.
+
+Blender quit

@@ -1,0 +1,15 @@
+{
+  "schema": "wewa.independent-material-diagnostic-review.v1",
+  "created_utc": "2026-10-21T08:59:00Z",
+  "component_id": "MOTO-EXHAUST-HEADER-GASKET-001",
+  "source_sha256": "754d172acafd51cf22d7a085626bf35023e567e9c71d6358266dfc9764bd0672",
+  "actual_independent_PNGs_opened": [
+    {"file": "native12/baseline.png", "sha256": "665d76dd480cf7eed1e9ccaafb9afdf229b334476370d30fed281325bc6fc4a7"},
+    {"file": "native12/normal-unlinked-only.png", "sha256": "ea18717614d2ea4bc3425731d8f710f92d3e80011734d6abde618de11be3c901"},
+    {"file": "native12/roughness-constant-only.png", "sha256": "dc7709b9d018bff2dae4f4ef3a83fb26bd3be9db45459cabc882ac736ca68e0b"}
+  ],
+  "reading": "The regular crossed lattice is visible in baseline and roughness-constant-only. It disappears in normal-unlinked-only while the annular raised-region geometry and the broad studio reflections remain. This independently supports the baked normal map as the dominant visible cause under these fixed diagnostic conditions. The normal-unlinked image is a control, not an accepted replacement material.",
+  "decision": "G4 rework. Retain immutable material1 source59/review73 and correct the original texture design in a new revision. Recheck neutral/raking whole and macro views with actual source/export buffer conservation.",
+  "art_accepted": false,
+  "physical_iphone_tested": false
+}
