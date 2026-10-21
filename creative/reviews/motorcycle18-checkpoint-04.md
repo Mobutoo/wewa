@@ -105,7 +105,11 @@ Ces états de file sont des informations de préparation à relire au moment de 
 
 Le registre et les images liées définissent cet instantané. Les sources courantes peuvent remplacer une ancienne révision sous le même identifiant ; les diagnostics et leurs preuves restent conservés. Les contrôles de géométrie, glTF, UV et mouvements dans Babylon sont séparés de la réception artistique.
 
-La source Git exacte, le résultat GitHub Actions et le numéro de relecture Ewutelo/Directus sont consignés dans une mise à jour de traçabilité après publication. Cette page ne prétend ni déployer ces pièces dans le jeu, ni mesurer leur coût sur iPhone. Le jeu public reste inchangé.
+Source de fabrication publiée : [`4cb74ce8db2c844fae2ab2870f06343b9be5935c`](https://github.com/Mobutoo/wewa/commit/4cb74ce8db2c844fae2ab2870f06343b9be5935c). [GitHub Actions terminé avec succès](https://github.com/Mobutoo/wewa/actions/runs/39527969568) sur ce SHA. Le [contrôle de l’arbre Git](../../WEWA_Developpement_Web/validation/motorcycle18-source04-integrity.json) a vérifié 1 066 JSON, 70 manifestes, 1 434 empreintes, 11 images de checkpoints et 1 599 liens de revue, sans erreur. Il ne juge pas le réalisme.
+
+Le PRD Ewutelo/Directus a été relu intégralement à la révision **26**, avec les **45 exigences conservées**. Les sources binaires sont dans GitHub ; cette synchronisation Directus porte sur les métadonnées. La [version source immuable de ce point](https://github.com/Mobutoo/wewa/blob/4cb74ce8db2c844fae2ab2870f06343b9be5935c/creative/reviews/motorcycle18-checkpoint-04.md) conserve son instantané de fabrication ; les résultats de publication sont ajoutés ensuite.
+
+Cette page ne déploie pas ces pièces dans le jeu et ne mesure pas leur coût sur iPhone. Le jeu public reste inchangé.
 
 La suite porte sur les défauts locaux du kick et du carter gauche, la fourche, puis les pièces observables restantes des 18 groupes. Les [appuis de montage du guidon](../research/handlebar-clamps/mounting-stack-remaining-v1.README.md) et le [réservoir WEWA](../research/tank18-preparation/README.md) disposent de nouvelles recherches ; leurs parties non documentées restent ouvertes.
 
