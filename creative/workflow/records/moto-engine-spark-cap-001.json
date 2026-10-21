@@ -1,0 +1,596 @@
+{
+  "schema": 1,
+  "id": "MOTO-ENGINE-SPARK-CAP-001",
+  "label": "Moteur — capuchon de bougie coudé seul",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D04"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "cap-quarter",
+      "context_head_plug": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CONTROL_CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          0.0005000000237487257,
+          1000.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.1757369608786421,
+        "farthest_actual_vertex_depth_m": 0.22104608606728568,
+        "projected_uv_min": [
+          0.2451637139200229,
+          0.28515364217501493
+        ],
+        "projected_uv_max": [
+          0.7582587248297374,
+          0.7548207291807292
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Molded spark cap body - conditional candidate",
+            "vertices": 20630,
+            "depth_m": [
+              0.1757369608786421,
+              0.22104608606728568
+            ],
+            "projected_uv_min": [
+              0.2451637139200229,
+              0.28515364217501493
+            ],
+            "projected_uv_max": [
+              0.7582587248297374,
+              0.7548207291807292
+            ],
+            "finite": true
+          },
+          {
+            "object": "Visible short-port metallic contact - section estimated",
+            "vertices": 7298,
+            "depth_m": [
+              0.18735729417190597,
+              0.19095962988506254
+            ],
+            "projected_uv_min": [
+              0.6515154744019426,
+              0.5815118844243731
+            ],
+            "projected_uv_max": [
+              0.6840045487420905,
+              0.6211763983945547
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "outputs": [
+        {
+          "file": "cap-quarter.exr",
+          "format": "OPEN_EXR",
+          "bytes": 402138,
+          "sha256": "a61d108a287394b8cf5a885762cc0e13c74a2742c947cd82deaa4020dbafa610",
+          "linear_scene_data": true
+        },
+        {
+          "file": "cap-quarter.png",
+          "format": "PNG",
+          "bytes": 876509,
+          "sha256": "34cf47d94e58710356edde1c6fb4ab7dcc046cfd60ef59a9147409aedf0a4106",
+          "linear_scene_data": false
+        }
+      ]
+    },
+    {
+      "name": "main-socket-mouth",
+      "context_head_plug": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CONTROL_CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          0.0005000000237487257,
+          1000.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.14458082278495238,
+        "farthest_actual_vertex_depth_m": 0.2043624994880967,
+        "projected_uv_min": [
+          0.3515644760311507,
+          0.347571495780533
+        ],
+        "projected_uv_max": [
+          0.7422224963954535,
+          0.6659203469678292
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Molded spark cap body - conditional candidate",
+            "vertices": 20630,
+            "depth_m": [
+              0.14458082278495238,
+              0.2043624994880967
+            ],
+            "projected_uv_min": [
+              0.3515644760311507,
+              0.347571495780533
+            ],
+            "projected_uv_max": [
+              0.7422224963954535,
+              0.6659203469678292
+            ],
+            "finite": true
+          },
+          {
+            "object": "Visible short-port metallic contact - section estimated",
+            "vertices": 7298,
+            "depth_m": [
+              0.19433584826376438,
+              0.1971656522964456
+            ],
+            "projected_uv_min": [
+              0.5981107107868682,
+              0.43970131560455117
+            ],
+            "projected_uv_max": [
+              0.6319041339562711,
+              0.4787024658736749
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "outputs": [
+        {
+          "file": "main-socket-mouth.exr",
+          "format": "OPEN_EXR",
+          "bytes": 366127,
+          "sha256": "df818640cd6d93e695f7008acc4e6666e1d20f967b5f0091ec6fc513be5fa5ca",
+          "linear_scene_data": true
+        },
+        {
+          "file": "main-socket-mouth.png",
+          "format": "PNG",
+          "bytes": 859639,
+          "sha256": "378b7d70ae5e28a837945aa8bef81ab803fb9e2cf24ad928e239160cdc3ced04",
+          "linear_scene_data": false
+        }
+      ]
+    },
+    {
+      "name": "short-port-contact",
+      "context_head_plug": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CONTROL_CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          0.0005000000237487257,
+          1000.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.09973521227350468,
+        "farthest_actual_vertex_depth_m": 0.12961021843980602,
+        "projected_uv_min": [
+          -0.30195290604192326,
+          0.023838139654214607
+        ],
+        "projected_uv_max": [
+          0.6438904305745203,
+          0.6935705535666403
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Molded spark cap body - conditional candidate",
+            "vertices": 20630,
+            "depth_m": [
+              0.09973521227350468,
+              0.12961021843980602
+            ],
+            "projected_uv_min": [
+              -0.30195290604192326,
+              0.023838139654214607
+            ],
+            "projected_uv_max": [
+              0.6438904305745203,
+              0.6935705535666403
+            ],
+            "finite": true
+          },
+          {
+            "object": "Visible short-port metallic contact - section estimated",
+            "vertices": 7298,
+            "depth_m": [
+              0.11077856006387628,
+              0.1141317993283606
+            ],
+            "projected_uv_min": [
+              0.4922918414933577,
+              0.463622704899236
+            ],
+            "projected_uv_max": [
+              0.5354359031349155,
+              0.5165303711546195
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "outputs": [
+        {
+          "file": "short-port-contact.exr",
+          "format": "OPEN_EXR",
+          "bytes": 609129,
+          "sha256": "0ed5ad08d9732174cfb3510373082aa75f88befd441dcf94766b2c76947434dc",
+          "linear_scene_data": true
+        },
+        {
+          "file": "short-port-contact.png",
+          "format": "PNG",
+          "bytes": 899760,
+          "sha256": "0db6db920a1c6bf5aed149ae737f0932f997245d2583761b4504ac2b39bbf43e",
+          "linear_scene_data": false
+        }
+      ]
+    },
+    {
+      "name": "installed-context",
+      "context_head_plug": true,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CONTROL_CAMERA",
+        "camera_type": "PERSP",
+        "camera_clip_m": [
+          0.0005000000237487257,
+          1000.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.42952246564110996,
+        "farthest_actual_vertex_depth_m": 0.6393111274627398,
+        "projected_uv_min": [
+          0.23386972215385798,
+          0.11992651890109696
+        ],
+        "projected_uv_max": [
+          0.9292405248097314,
+          0.8491682134148666
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Molded spark cap body - conditional candidate",
+            "vertices": 20630,
+            "depth_m": [
+              0.44073755916874213,
+              0.4878560640052968
+            ],
+            "projected_uv_min": [
+              0.25481513339960193,
+              0.44549574897691013
+            ],
+            "projected_uv_max": [
+              0.4477237953661569,
+              0.6891675775357372
+            ],
+            "finite": true
+          },
+          {
+            "object": "Visible short-port metallic contact - section estimated",
+            "vertices": 7298,
+            "depth_m": [
+              0.448516041462861,
+              0.4520778186374977
+            ],
+            "projected_uv_min": [
+              0.300917052075699,
+              0.6412102312406605
+            ],
+            "projected_uv_max": [
+              0.31524356814595933,
+              0.6537866181409109
+            ],
+            "finite": true
+          },
+          {
+            "object": "Plug metal body rounded hex - hidden insertion plain",
+            "vertices": 15540,
+            "depth_m": [
+              0.4795833704340049,
+              0.5059167113969207
+            ],
+            "projected_uv_min": [
+              0.410226416290736,
+              0.35701616141859915
+            ],
+            "projected_uv_max": [
+              0.5015190755712251,
+              0.4822445169780122
+            ],
+            "finite": true
+          },
+          {
+            "object": "Plug separate estimated uncompressed seat washer",
+            "vertices": 6912,
+            "depth_m": [
+              0.48635996023433054,
+              0.5021407413182515
+            ],
+            "projected_uv_min": [
+              0.43184091134207747,
+              0.3748921528391691
+            ],
+            "projected_uv_max": [
+              0.4931384289886008,
+              0.44877972225539037
+            ],
+            "finite": true
+          },
+          {
+            "object": "Plug exposed ceramic five estimated lower ribs - unmarked",
+            "vertices": 25346,
+            "depth_m": [
+              0.46851795922234496,
+              0.4901914510160543
+            ],
+            "projected_uv_min": [
+              0.3755300520975763,
+              0.4327995353827977
+            ],
+            "projected_uv_max": [
+              0.45248990881941403,
+              0.5414189576984983
+            ],
+            "finite": true
+          },
+          {
+            "object": "Plug separate exposed SAE-like terminal - conditional option",
+            "vertices": 2882,
+            "depth_m": [
+              0.46329142705348925,
+              0.4736005029463796
+            ],
+            "projected_uv_min": [
+              0.3577352155767969,
+              0.5173243106986956
+            ],
+            "projected_uv_max": [
+              0.39610266729847904,
+              0.5701881667756469
+            ],
+            "finite": true
+          },
+          {
+            "object": "Engine UG5 head hollow exterior casting - editable candidate",
+            "vertices": 79986,
+            "depth_m": [
+              0.42952246564110996,
+              0.6393111274627398
+            ],
+            "projected_uv_min": [
+              0.23386972215385798,
+              0.11992651890109696
+            ],
+            "projected_uv_max": [
+              0.9292405248097314,
+              0.8491682134148666
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true
+      },
+      "outputs": [
+        {
+          "file": "installed-context.exr",
+          "format": "OPEN_EXR",
+          "bytes": 1198410,
+          "sha256": "2ca6f7f9fe2bb1ab809e9e1d9ad9577a10339bc4863d679097088a8e323aa9d6",
+          "linear_scene_data": true
+        },
+        {
+          "file": "installed-context.png",
+          "format": "PNG",
+          "bytes": 974369,
+          "sha256": "bbacea9d6b5cd945ea1321ebb30a55920977420fd675c47c271cd45f635cbb30",
+          "linear_scene_data": false
+        }
+      ]
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-ENGINE-SPARK-CAP-001-DIM",
+      "description": "All dimensions, substrate, hidden sections/contact, installed axis and HT routing unknown. Two physical exposures only.",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Measured cap profiles and exact same-variant installed photos"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "pending",
+      "revision": "engine-spark-cap-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "engine-spark-cap-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "engine-spark-cap-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "engine-spark-cap-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/engine-spark-cap/engine-spark-cap-v1.blend",
+          "kind": "editable_source",
+          "revision": "engine-spark-cap-v1",
+          "sha256": "69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d"
+        },
+        {
+          "path": "../../reviews/engine-spark-cap-v1/cap-quarter.png",
+          "kind": "isolated_comparison",
+          "revision": "engine-spark-cap-v1",
+          "sha256": "34cf47d94e58710356edde1c6fb4ab7dcc046cfd60ef59a9147409aedf0a4106"
+        },
+        {
+          "path": "../../research/engine-spark-cap/profile-comparison-v1/comparison-review.json",
+          "kind": "isolated_comparison",
+          "revision": "engine-spark-cap-v1_profile_review",
+          "sha256": "88a0ef57a98cd18700610626a6ff0d57e56b54f634ef67bbec39be590cca3cec"
+        }
+      ],
+      "reason": "Deux profils gris estimés du cap1 et deux photos physiques opposées ont été effectivement ouverts. La transition en S reste visible sur le candidat ; les photos montrent des portions plus droites/coniques. Une reprise bornée de cet épaulement est justifiée, sans dimensions/angle/rayons calibrés. Source69dc, douilles/contact/cavités et datum v1 intacts dans ces preuves ; révision séparée en préparation.",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "engine-spark-cap-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/engine-spark-cap-v1/installed-context.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "engine-spark-cap-v1",
+          "sha256": "bbacea9d6b5cd945ea1321ebb30a55920977420fd675c47c271cd45f635cbb30"
+        }
+      ],
+      "reason": "Substrat sombre original constant (metal0,roughness0,5) ; les photos montrent un grain plus présent. Échelle de grain et finition non mesurées, matière encore à reprendre/qualifier sans pixels photographiques. Quatre rendus96 ouverts ne constituent pas une réception artistique.",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "engine-spark-cap-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/engine-spark-cap-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "engine-spark-cap-v1",
+          "sha256": "b6c3abc40f6bdeace794362b5524e266355b54f7453ee1577e7f556152f33937"
+        },
+        {
+          "path": "../../reviews/engine-spark-cap-v1/interface-solid-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "engine-spark-cap-v1_with_plug1",
+          "sha256": "6e99b4ea31a305d1c5362777e349370232df9827b5aa44a8587d1f1d31747ccb"
+        },
+        {
+          "path": "../../reviews/engine-spark-plug-v2/interface-solid-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "unchanged_cap1_paired_with_plug2",
+          "sha256": "5ca8d72a6602b4ffc49876ccd08d33a32121c4004aea3a0de1f4ae76d147aec3"
+        }
+      ],
+      "reason": "Paire historique cap1/plug1/head3 :11contrôles de surfaces sans croisement ni inclusion échantillonnée ;135désaccords BVH résolus par trois rayons directs float64 unanimes consignés. Matrices de montage héritées et inchangées, angle/orientation/habitabilité des douilles restent estimés. La nouvelle bougiev2 aura une preuve séparée ; pas de câbleHT, liaison électrique interne ou raccord OEM certifié. Nouvelle preuve séparée plug2 :18paires dont cap1 inchangé, sans croisement/inclusion échantillonnée ; le contrôle historique11contre plug1 reste intact. La future cap2 aura ses propres preuves.",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "engine-spark-cap-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/engine-spark-cap-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "engine-spark-cap-v1",
+          "sha256": "0c5aa7d8ca4cc2211bd656ccbfc829b6eecd9f183707adacdb078562ecf95bef"
+        },
+        {
+          "path": "../../reviews/engine-spark-cap-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "engine-spark-cap-v1",
+          "sha256": "d46ce259ee857a7fdd8ab84d197243c16ac32e3730513e903e984f6268696839"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "engine-spark-cap-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "engine-spark-cap-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": true,
+  "source_revision": "engine-spark-cap-v1",
+  "export_revision": "engine-spark-cap-v1-inspection",
+  "next_action": "Bounded shoulder profile refinement after2actual estimated gray profiles; preserve ends/sockets/port/contact/datum, add original bounded grain with real baked maps and nativeUV/tangents. Cap1 remains immutable.",
+  "art_accepted": false,
+  "production_group": 17,
+  "working_revision": "engine-spark-cap-v2",
+  "candidate_source": "../../../assets-src/moto-components/engine-spark-cap/README.md",
+  "candidate_review": "../../reviews/engine-spark-cap-v1/README.md"
+}

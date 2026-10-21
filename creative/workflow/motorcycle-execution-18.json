@@ -679,15 +679,15 @@
     {
       "lot": 16,
       "label": "Roue arrière, frein, transmission et amortisseurs",
-      "state": "documentary_research",
+      "state": "separate_candidates_under_review_not_complete",
       "source_folders": [],
       "research": "../research/chassis-running-18/report.json",
       "depends_on_lots": [
         15
       ],
       "user_art_accepted": false,
-      "any_source_blend_built": false,
-      "any_runtime_checked": false,
+      "any_source_blend_built": true,
+      "any_runtime_checked": true,
       "all_required_components_built": false,
       "all_interfaces_checked": false,
       "group_complete": false,
@@ -704,7 +704,17 @@
         "path": "../research/chassis-remaining-18.json",
         "sha256": "5ccd298f86b10815ac5eae65b3fca5c47ab7492ecc251fd07ed573ec7f206f60",
         "scope": "Observable tracking units, not new built meshes or certified exact RDC counts"
-      }
+      },
+      "candidates": [
+        {
+          "component_id": "MOTO-RIM-REAR-001",
+          "revision": "rear-rim-v1",
+          "source_sha256": "f97ddc5f4db07d0b97961a7a7282a9937efd68e16b82c159d581719948bb43d9",
+          "review": "../reviews/rear-rim-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        }
+      ]
     },
     {
       "lot": 17,
@@ -787,14 +797,6 @@
           "art_accepted": false
         },
         {
-          "component_id": "MOTO-ENGINE-HEAD-001",
-          "revision": "engine-head-v2",
-          "source_sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f",
-          "review": "../reviews/engine-head-v2/README.md",
-          "runtime_checked": true,
-          "art_accepted": false
-        },
-        {
           "component_id": "MOTO-ENGINE-TAPPET-CAP-001",
           "revision": "engine-tappet-cap-v1",
           "source_sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9",
@@ -807,6 +809,38 @@
           "revision": "engine-ohc-cover-v1",
           "source_sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45",
           "review": "../reviews/engine-ohc-cover-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-ENGINE-HEAD-001",
+          "revision": "engine-head-v3",
+          "source_sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+          "review": "../reviews/engine-head-v3/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-ENGINE-OHC-STUB-001",
+          "revision": "engine-ohc-stub-v1",
+          "source_sha256": "285eca8f5345efbfe31da9d2cc95464edcd9070a2e2e902e1e74990b2fb110c0",
+          "review": "../reviews/engine-ohc-stub-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-ENGINE-SPARK-CAP-001",
+          "revision": "engine-spark-cap-v1",
+          "source_sha256": "69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d",
+          "review": "../reviews/engine-spark-cap-v1/README.md",
+          "runtime_checked": true,
+          "art_accepted": false
+        },
+        {
+          "component_id": "MOTO-ENGINE-SPARK-PLUG-001",
+          "revision": "engine-spark-plug-v2",
+          "source_sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5",
+          "review": "../reviews/engine-spark-plug-v2/README.md",
           "runtime_checked": true,
           "art_accepted": false
         }
@@ -856,7 +890,7 @@
     "scope": "Balance already authorized parallel manufacture, maximum three new detailed component owners unchanged",
     "A": "Lots1/2/13/14/15 and lot16 except rear shock units",
     "B": "Lots3/6/7/9/10/17",
-    "C": "Lots4/5/8/11/12, then rearSNSshock units from16, then all18",
+    "C": "Lots4/5/8/11/12; after current headlamp cowl freeze/finals, prioritise lot18 tank then seat; then remaining12, rearSNS16 and remaining18.",
     "rear_shocks_handoff": "C after11/12; A explicitly notified to avoid duplicate fabrication. Shock interfaces remain estimated/open; other16 components remain A. One new detailed component per owner and at most3 global long rendering workers.",
     "no_group_completed_or_art_accepted": true,
     "bodywork_handoff": "B and C explicitly acknowledge entire18 reassignment; documentary preparation retained, no existing18geometry moved. Other16 remains A."
@@ -880,5 +914,20 @@
         "no_group_completed_or_art_accepted": true
       }
     }
-  ]
+  ],
+  "current_C_sequence_note": {
+    "updated_utc": "2026-10-21T04:48:59.480589+00:00",
+    "reason": "Root prioritises the two large absent silhouette/bodywork units once the active cowl is frozen; no scope abandoned or additional geometry author.",
+    "order": [
+      "Finish current isolated headlamp cowl and its proofs/finals",
+      "Lot18 tank, one detailed unit",
+      "Lot18 seat, one detailed unit",
+      "Return to remaining lot12, rearSNS subunits16 and remaining18 according to documentation/interface readiness"
+    ],
+    "tank_seat_research": "../research/bodywork18-tank-seat-v1/README.md",
+    "historical_bodywork_handoff_unchanged": true,
+    "detailed_authors_max": 3,
+    "C_long_renderers_max": 1,
+    "ownership_changes": false
+  }
 }

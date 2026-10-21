@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "component_id": "MOTO-INSTRUMENTS-001",
+  "revision": "instruments-v5",
+  "units": "metres",
+  "source_sha256": "3d662c0c35ec9d7ff6b00315d28fc9b3bd2e519771b3fc3f48470a0033ef3951",
+  "export_sha256": "284ae9cbc78276eb5341e2b03b1cd78a2b48a1fb0edf7bf1c0396c8a59dd767a",
+  "all_physical_dimensions_estimated": true,
+  "centre_separation_m_estimated": 0.128,
+  "outer_pod_radius_m_estimated": 0.05,
+  "dial_radius_m_estimated": 0.0415,
+  "housing_depth_m_estimated": 0.05,
+  "cockpit_origin_xyz_m_estimated": [
+    0,
+    -0.12,
+    0.075
+  ],
+  "cockpit_rotation_degrees_xyz": [
+    58,
+    0,
+    180
+  ],
+  "axes": "Blender X transverse,+Y rider,Zup; left+X,right-X; glTF(x,y,z)=(x,z,-y). Local dial face+Z.",
+  "speed_angle_degrees": "225 - speed_kmh *270/140; unchanged v1 working calibration",
+  "fuel_angle_degrees": "225 - fuel_fraction*80; unchanged v1 working calibration",
+  "usb_parameters": "creative/research/instruments-v2/usb-shape-plan-r2.json",
+  "dial_artwork": "creative/research/instruments-v2/dial-artwork-plan.json",
+  "gear_display_states_demonstration": [
+    "off",
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "gearbox_count_certified": false,
+  "brand_wordmark": "WEWA",
+  "rider_created": false,
+  "art_accepted": false,
+  "baseline_v2_source_sha256": "dc4b3ccf26f35e3b4a4f10068306d841695901f987a43ebad65299cec132ad22",
+  "baseline_v2_export_sha256": "444071ff19367a78aa9d2e7a70ebaf33ae78f0f014ed66ca0f9223927f66d30e",
+  "optical_normal_correction": {
+    "objects": [
+      "SPEED clear closed lens",
+      "FUEL_GEAR clear closed lens"
+    ],
+    "method": "Source crease split at face/cut-edge transitions above30degrees; opaque bezels unchanged.",
+    "threshold_degrees_is_OEM_spec": false,
+    "source_geometry_UV_shader_optic_values_angles_and_controls_changed": false,
+    "actual_export_layout": "Lens normal discontinuities duplicate384vertices per lens and may reindex; all physical triangle corner positions identical. Other173mesh nodes actual buffers/materials/images/transforms bit-identical.",
+    "diagnostic": "creative/research/instruments-v2/optical-edge-diagnostic-reading.json"
+  },
+  "baseline_v3_source_sha256": "2ac37623a2e8df558373233228a6b936b143b6ff282e8ab6e70f08e27675e7da",
+  "baseline_v3_export_sha256": "d49d08333d727dbd4441c70976a45d2be07db010674d52372fa26191d4f26252",
+  "central_cover_normal_correction": {
+    "object": "Shaped central cluster cover",
+    "method": "Only continuous side outline normal field before existing bevel; broad caps flat, cap edges sharp. Redundant WeightedNormal removed on this object.",
+    "evaluated_positions_topology_UV_materials_worldmatrix_unchanged": true,
+    "all_other_source_nodes_bit_identical": 177,
+    "all_other_GLTF_mesh_node_buffers_materials_images_worldmatrices_bit_identical": 174,
+    "physical_shape_or_OEM_calibration_claim": false
+  },
+  "baseline_v4_source_sha256": "08e9f51ab2a4a63bba45486155860b6fd36cd3c04368b16a38d19f87bd15d17d",
+  "baseline_v4_export_sha256": "1d929388bbb30b661fe62da4ce3cdeb5d3512ca8c944c801ef7f3b31b1cfe392",
+  "planar_pod_cap_normal_correction": {
+    "objects": [
+      "FUEL_GEAR hollow rear pod",
+      "SPEED hollow rear pod"
+    ],
+    "method": "Only actual planar cap faces flat and their circular boundary edges sharp; other profile geometry and smooth flags preserved. No artificial arbitrary normal transport repair.",
+    "evaluated_positions_topology_UV_materials_worldmatrix_unchanged": true,
+    "all_other_source_nodes_bit_identical": 176,
+    "all_other_GLTF_mesh_node_buffers_materials_images_worldmatrices_bit_identical": 173,
+    "physical_shape_or_OEM_calibration_claim": false
+  }
+}

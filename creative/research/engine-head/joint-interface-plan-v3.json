@@ -1,0 +1,241 @@
+{
+  "component_id": "MOTO-ENGINE-HEAD-001",
+  "revision_planned": "engine-head-v3",
+  "scope": "Coherent physical-candidate head/visit seats/OHC housing/adjacent fin interface study, not a cap notch or individual cap translation. One detailed source active.",
+  "frozen_inputs": [
+    {
+      "path": "assets-src/moto-components/engine-head/engine-head-v2.blend",
+      "sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f"
+    },
+    {
+      "path": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+      "sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9"
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+      "sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45"
+    }
+  ],
+  "independent_documentary_review": {
+    "path": "creative/research/engine-head-ug5/tappet-interface-review-v1/review.json",
+    "sha256": "81952f3b236796746dccf8f2d0c4ccdafc1198d5e4b02c3e18d5bdd6f4900a8a"
+  },
+  "photos_actually_opened": [
+    {
+      "private_path": "/workspace/wewa-assets/references/engine-head-ug5/JV511023-motozilla-948266.jpg",
+      "sha256": "94d5c890af540fb64fa950b8d85d41da70df5a9508feffd3f5b126246dd042db",
+      "actually_opened_before_geometry": true
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/engine-head-ug5/JV511023-motozilla-948268.jpg",
+      "sha256": "6bb2772d6be8f28467d7e51e8b56fb1ef0732ead8d88be728fe9343b8e73b4c0",
+      "actually_opened_before_geometry": true
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/engine-head-ug5/JV511023-motozilla-948269.jpg",
+      "sha256": "6d85a6d9532aa2128a1e52e016b5d68638b8dd99d473eed13fbcaa4fa02e66b6",
+      "actually_opened_before_geometry": true
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/engine-head-ug5/JV511023-motozilla-948264.jpg",
+      "sha256": "49d863c9fa9f08917ce1a352a6539f46e6dafa266b8961d96a4de823e18a3f94",
+      "actually_opened_before_geometry": true
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/engine-head-ug5/JV511023-motozilla-948267.jpg",
+      "sha256": "300af0098694832ad4b617719393186b4a785ecbe6f9283e32a2bf97810cf95e",
+      "actually_opened_before_geometry": true
+    }
+  ],
+  "facts_and_limits": [
+    "Detached cap base has no observed notch; head inspection seat is a continuous machined margin.",
+    "Photos support shoulders joining OHC flange to inspection region; constant YZ extrusion fromX.008to.080 is not documented.",
+    "All metric scales, depth, hidden cap rear and gasket are still estimates; three-point affine never becomes camera rectification.",
+    "Overlap report extents are bounds of entire triangles, not true intersection points or measured penetration."
+  ],
+  "stage_A_before_geometry": {
+    "stage": "A housing root-section diagnostic, no fin/plane or cap movement adopted yet",
+    "housing_outer_stations_x_scaleY_m": [
+      [
+        0.008,
+        0.78
+      ],
+      [
+        0.018,
+        0.79
+      ],
+      [
+        0.035,
+        0.83
+      ],
+      [
+        0.05,
+        0.9
+      ],
+      [
+        0.068,
+        0.97
+      ],
+      [
+        0.078,
+        1.0
+      ],
+      [
+        0.08,
+        1.0
+      ]
+    ],
+    "section_scaleY_range": [
+      0.72,
+      0.9
+    ],
+    "section_root_basis": "Root envelope tied to existing head-tower width in sameheight range, qualitative shoulder transition visible in948266/948268/948269. Numerical scale is an estimate, not recovered CAD or selected cap-silhouette cutter.",
+    "front_mount_plane_x_m_unchanged": 0.08,
+    "visit_centres_axes_and_bores_unchanged": true,
+    "caps_source_and_world_matrices_unchanged": true,
+    "second_interface_problem": "Fin atlocalZ.044 extends infrontofcandidatefaceX.080 and crosses OHCcover358pairs. No change adopted until qualitative ordering reviewed withsamephotos.",
+    "full_shape_qualified": false
+  },
+  "stage_B_not_yet_selected": "Now a diagnostic estimated positiveX retreat for only the uppermost fin; compare samephotos and actual unchanged caps. No long views before technical and gray/reflection validation.",
+  "required_checks_before_long_views": [
+    "Each new casting closed, positive volume, no exactzeroarea export triangles.",
+    "Visitcaps originalsource matrices unchanged, test both againstnewbody.",
+    "OHCcover originalsource matrices unchanged, localize remaining finconflict.",
+    "Repeat all78passage rays plus oblique diagnostics, no artificial4thlowerhole.",
+    "Barrel/head geometry restdatum unchanged; actualsurfaceBVH and borelimit reserves.",
+    "Whole gray and reflection source views plus actual assembly closeups; do not start long96while demonstrated conflict stillbeingreworked.",
+    "ActualGLB buffers/worldframe and normal/material parity before root runtime review."
+  ],
+  "parameters_are_estimated": true,
+  "art_accepted": false,
+  "independent_followup_constraints": [
+    "948269/948268/948266 support connected inclined/curved shoulders and a continuous visible seat margin, not exact retreat magnitude or symmetry.",
+    "948264 and948268 show local separation of flange lower joint edge from adjacent upper fin; no global Xface>Xmax all fins is proven.",
+    "A possible second diagnostic would inset only the uppermost fin near the OHC joint, preserving lower-fin reach and all cap matrices. Its amount would remain a bounded modelling estimate, never a cap-shaped cutter."
+  ],
+  "stage_A_actual_result": {
+    "source_sha256": "77d1b5dc8affb2c17c4788db57ac9d2c578664f5f6aa7b4cad1a8169c7c58220",
+    "GLB_sha256": "199d063812bbbc046c9311616810818071762c80aa945b7a2c877cd1e835c103",
+    "visit_triangle_pairs": [
+      0,
+      0
+    ],
+    "OHCtriangle_pairs": 358,
+    "closed_body": true,
+    "caps_moved": false
+  },
+  "stage_B_before_geometry": {
+    "stage": "B progressive housing plus coherent upper-fin/joint return, all caps fixed",
+    "housing_outer_stations_x_scaleY_m": [
+      [
+        0.008,
+        0.78
+      ],
+      [
+        0.018,
+        0.79
+      ],
+      [
+        0.035,
+        0.83
+      ],
+      [
+        0.05,
+        0.9
+      ],
+      [
+        0.068,
+        0.97
+      ],
+      [
+        0.078,
+        1.0
+      ],
+      [
+        0.08,
+        1.0
+      ]
+    ],
+    "section_scaleY_range": [
+      0.72,
+      0.9
+    ],
+    "section_root_basis": "Root envelope tied to existing head-tower width in sameheight range, qualitative shoulder transition visible in948266/948268/948269. Numerical scale is an estimate, not recovered CAD or selected cap-silhouette cutter.",
+    "front_mount_plane_x_m_unchanged": 0.08,
+    "visit_centres_axes_and_bores_unchanged": true,
+    "caps_source_and_world_matrices_unchanged": true,
+    "second_interface_problem": "Fin atlocalZ.044 extends infrontofcandidatefaceX.080 and crosses OHCcover358pairs. No change adopted until qualitative ordering reviewed withsamephotos.",
+    "full_shape_qualified": false,
+    "section_symmetry_status": "Symmetric working construction for first diagnostic only. Photos do not demonstrate exact symmetry or measured taper direction.",
+    "uppermost_fin_positive_X_reach_factor": 0.92,
+    "uppermost_fin_positive_X_reach_factor_range": [
+      0.88,
+      1.0
+    ],
+    "uppermost_fin_transition_start_X_m": 0,
+    "uppermost_fin_transition_end_X_m": 0.025,
+    "uppermost_fin_basis": "The fourth/top fin adjacent to lowerOHCjoint is observed separately below the flange in948264/948268. Its local +X reach is an estimated shape refinement; lower3fins retain their full reach. No global Xface>Xmax assertion, no cutter from cap silhouette.",
+    "stage_A_source_sha256": "77d1b5dc8affb2c17c4788db57ac9d2c578664f5f6aa7b4cad1a8169c7c58220",
+    "stage_A_visit_pairs": [
+      0,
+      0
+    ],
+    "stage_A_OHC_pairs": 358
+  },
+  "visible_flank_ridges_before_final_geometry": {
+    "basis": "Actual948266/948269 horizontal stepped cast shoulders visible between seat and OHC flange, explicitly identified by independentCam review.",
+    "working_sections": [
+      {
+        "side_Y": -1,
+        "centre_z_m": 0.054,
+        "extent_x_m": [
+          0.025,
+          0.078
+        ],
+        "width_z_m": 0.0036,
+        "height_outward_m": 0.0009
+      },
+      {
+        "side_Y": -1,
+        "centre_z_m": 0.066,
+        "extent_x_m": [
+          0.03,
+          0.078
+        ],
+        "width_z_m": 0.0036,
+        "height_outward_m": 0.0009
+      },
+      {
+        "side_Y": -1,
+        "centre_z_m": 0.078,
+        "extent_x_m": [
+          0.035,
+          0.078
+        ],
+        "width_z_m": 0.0036,
+        "height_outward_m": 0.0009
+      },
+      {
+        "side_Y": 1,
+        "centre_z_m": 0.054,
+        "extent_x_m": [
+          0.025,
+          0.078
+        ],
+        "width_z_m": 0.0036,
+        "height_outward_m": 0.0009
+      },
+      {
+        "side_Y": 1,
+        "centre_z_m": 0.066,
+        "extent_x_m": [
+          0.033,
+          0.078
+        ],
+        "width_z_m": 0.0036,
+        "height_outward_m": 0.0009
+      }
+    ],
+    "status": "Integral physical ridges, section-derived rounded rise. Depth/count/spacing bounded estimates, not photo-calibrated metrics. No new long views while these observed body details remain missing."
+  }
+}

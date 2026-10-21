@@ -1,0 +1,642 @@
+{
+  "schema": 1,
+  "revision": "motorcycle-source-dependencies-publication09-spark2-v1",
+  "snapshot_utc": "2026-10-21T05:04:48.035024+00:00",
+  "scope": "Frozen sparkplugv2 static reprise-recipe + existing3protectedparts invariant-proof adequacy; no geometry/Blender/render/source/records/catalogue changes and no live globalcatalogue pin. Prior source09/supplement/recipe109/33 untouched.",
+  "concrete_omission_first_result": {
+    "current_recipe_missing_inputs_from_preflight30": [],
+    "required_files_missing_on_disk": [],
+    "existing_checker_missing_inputs_from_preflight30": [],
+    "verdict": "No concrete missing current reprise/checker input found; no new independent repetition warranted for the3protected-parts invariants."
+  },
+  "manifest": {
+    "path": "assets-src/moto-components/engine-spark-plug/preflight-manifest-v2.json",
+    "sha256": "5088f0aa04c1a5361cd8362f9bd195a20b4e975ddf2868a07230affa44183f6c",
+    "files": 30,
+    "all30file_hashes_verified": true
+  },
+  "current_reprise_recipe_inputs": [
+    "assets-src/moto-components/engine-spark-plug/build_v2.py",
+    "assets-src/moto-components/engine-spark-plug/parameters-v2.json",
+    "assets-src/moto-components/engine-spark-plug/body_geometry_v2.py",
+    "assets-src/moto-components/throttle-control/control_geometry.py",
+    "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v1.blend",
+    "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v1.blend",
+    "assets-src/moto-components/engine-head/engine-head-v3.blend",
+    "assets-src/moto-components/engine-spark-cap/build-report.json"
+  ],
+  "fixed_ancestor_pins": [
+    {
+      "role": "base",
+      "path": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v1.blend",
+      "sha256": "a797527ddb7a291d89b4280d7d8cead24ef1d0388732b275958a649020f4253c",
+      "matches": true
+    },
+    {
+      "role": "cap",
+      "path": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v1.blend",
+      "sha256": "69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d",
+      "matches": true
+    },
+    {
+      "role": "head",
+      "path": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+      "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+      "matches": true
+    }
+  ],
+  "ancestor_boundaries": {
+    "base_v1": "Exact historical diagnostic basea797. It supplies original roundedhex contour (222points at declared ring), three retained physical volumes and inherited head datum; not silently replaceable by a future/current candidate.",
+    "cap1": "Exact69dc and cap build-report JSON are actual inputs: the report supplies linked cap mesh names. Both are covered bypreflight30. Cap keeps its own historicalplug1 guide; this audit does not substitute it withv2.",
+    "head3": "Exactfbbec8 fixed editable guide; builder checks its SHA and inherits/uses the head library already retained bybasev1. No hidden engine remake.",
+    "optional_v1_rebuild_inputs": [
+      "assets-src/moto-components/engine-spark-plug/build.py",
+      "assets-src/moto-components/engine-spark-plug/parameters.json",
+      "assets-src/moto-components/throttle-control/control_geometry.py",
+      "assets-src/moto-components/engine-head/engine-head-v3.blend"
+    ],
+    "all_optional_v1_inputs_covered_by_nested_preflight25": true,
+    "cap_head_full_origin": "Already audited as fixed editable boundaries in source09 / cap supplement; no repeat of whole ancestry or render recipes here."
+  },
+  "source_guard_review": {
+    "builder": "assets-src/moto-components/engine-spark-plug/build_v2.py",
+    "source_report": "assets-src/moto-components/engine-spark-plug/build-report-v2.json",
+    "protected_three_parts_exact_in_source_report": true,
+    "protected_names": [
+      "Plug separate estimated uncompressed seat washer",
+      "Plug exposed ceramic five estimated lower ribs - unmarked",
+      "Plug separate exposed SAE-like terminal - conditional option"
+    ],
+    "signature_fields_read_in_code": [
+      "positions_float32_bytes",
+      "corner_normals_float32_bytes",
+      "actual_loop_triangles",
+      "face_smooth_flags",
+      "edge_sharp_flags",
+      "UV_layers",
+      "matrix_world",
+      "matrix_basis",
+      "parent_name",
+      "Principled BaseColor/Metallic/Roughness"
+    ],
+    "body_scope": "Only metalmesh replaced by body_geometry_v2 analytic sections using original222point contour; datum/body worldmatrix/materialnames and3protected source signatures asserted unchanged before saving."
+  },
+  "existing_export_guard_review": {
+    "checker": "assets-src/moto-components/engine-spark-plug/check_invariants_v2.mjs",
+    "checker_sha256": "ddc7c64cbb823f6149c7c152a9497ea401e343f2fb45eff3a64b78ef8f6319fc",
+    "proof": "creative/reviews/engine-spark-plug-v2/protected-export-invariants.json",
+    "proof_sha256": "180fcfa35b8b06189ced65e8b614f0bc79af1d834b5c812a809ce508436760cf",
+    "proof_matches_exact_current_and_base_GLBSHA": true,
+    "actual_three_target_names": [
+      "Plug separate estimated uncompressed seat washer",
+      "Plug exposed ceramic five estimated lower ribs - unmarked",
+      "Plug separate exposed SAE-like terminal - conditional option"
+    ],
+    "fields_compared_by_checker": [
+      "primitive mode",
+      "indices accessor type/component/count/normalized/raw bytesSHA",
+      "all attribute semantics and accessor metadata/raw bytesSHA includingUVifpresent",
+      "per-target primitive simplePBRmaterial state",
+      "target node name/local/worldmatrices/parent",
+      "all material simplePBRstates byname",
+      "datum worldmatrix"
+    ],
+    "protected_accessor_rehash_or_checker_executed_by_this_audit": false,
+    "minimal_additional_read_only_check": "RawGLB JSON independently inspected only to confirm current materials really have no texture/image/extension state outside this simple checker, and4unique meshes/90696triangle metadata. No repeat of full accessor comparisons.",
+    "adequacy_for_present_claim": "Existing owner source/exact-export guards cover requested3physical pieces, simplematerials,indices/allattributes and poses at these pinned inputs. No stale hash or present uncovered material state found; redundant new full invariant run not warranted.",
+    "limitations": "Not full-source-to-runtime parity of changed metalbody, optical/appearance equivalence, mechanical/OEM fit or a guarantee for future textured/extended materials."
+  },
+  "raw_GLTF_metadata_checked_without_mesh_recalculation": [
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-inspection.glb",
+      "sha256": "b7dd811a0dd041cb60cc4ffe32288c99dc723e797f65d91530443ec158150d5c",
+      "material_count": 3,
+      "texture_count": 0,
+      "image_count": 0,
+      "extensions_used": [],
+      "material_JSON": [
+        {
+          "doubleSided": true,
+          "name": "Original unmarked white glazed ceramic",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              0.8199999928474426,
+              0.800000011920929,
+              0.7400000095367432,
+              1
+            ],
+            "metallicFactor": 0,
+            "roughnessFactor": 0.1899999976158142
+          }
+        },
+        {
+          "doubleSided": true,
+          "name": "Original estimated plug metal plating",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              0.5199999809265137,
+              0.49000000953674316,
+              0.41999998688697815,
+              1
+            ],
+            "roughnessFactor": 0.25
+          }
+        },
+        {
+          "doubleSided": true,
+          "name": "Original estimated seat washer metal",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              0.3400000035762787,
+              0.3499999940395355,
+              0.36000001430511475,
+              1
+            ],
+            "roughnessFactor": 0.30000001192092896
+          }
+        }
+      ],
+      "actual_mesh_names": [
+        "Plug exposed ceramic five estimated lower ribs - unmarked",
+        "Plug metal body rounded hex - hidden insertion plain",
+        "Plug separate estimated uncompressed seat washer",
+        "Plug separate exposed SAE-like terminal - conditional option"
+      ],
+      "indexed_triangle_count": 101352
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2-inspection.glb",
+      "sha256": "db4382d7417cd7c11d7bad431231b8ea115520e3d78983b126b591312ba2c28c",
+      "material_count": 3,
+      "texture_count": 0,
+      "image_count": 0,
+      "extensions_used": [],
+      "material_JSON": [
+        {
+          "doubleSided": true,
+          "name": "Original unmarked white glazed ceramic",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              0.8199999928474426,
+              0.800000011920929,
+              0.7400000095367432,
+              1
+            ],
+            "metallicFactor": 0,
+            "roughnessFactor": 0.1899999976158142
+          }
+        },
+        {
+          "doubleSided": true,
+          "name": "Original estimated plug metal plating",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              0.5199999809265137,
+              0.49000000953674316,
+              0.41999998688697815,
+              1
+            ],
+            "roughnessFactor": 0.25
+          }
+        },
+        {
+          "doubleSided": true,
+          "name": "Original estimated seat washer metal",
+          "pbrMetallicRoughness": {
+            "baseColorFactor": [
+              0.3400000035762787,
+              0.3499999940395355,
+              0.36000001430511475,
+              1
+            ],
+            "roughnessFactor": 0.30000001192092896
+          }
+        }
+      ],
+      "actual_mesh_names": [
+        "Plug exposed ceramic five estimated lower ribs - unmarked",
+        "Plug metal body rounded hex - hidden insertion plain",
+        "Plug separate estimated uncompressed seat washer",
+        "Plug separate exposed SAE-like terminal - conditional option"
+      ],
+      "indexed_triangle_count": 90696
+    }
+  ],
+  "stage_graph": [
+    {
+      "stage": "reprise construction",
+      "reads": [
+        "assets-src/moto-components/engine-spark-plug/build_v2.py",
+        "assets-src/moto-components/engine-spark-plug/parameters-v2.json",
+        "assets-src/moto-components/engine-spark-plug/body_geometry_v2.py",
+        "assets-src/moto-components/throttle-control/control_geometry.py",
+        "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v1.blend",
+        "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v1.blend",
+        "assets-src/moto-components/engine-head/engine-head-v3.blend",
+        "assets-src/moto-components/engine-spark-cap/build-report.json"
+      ],
+      "writes": [
+        "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+        "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2-inspection.glb",
+        "assets-src/moto-components/engine-spark-plug/build-report-v2.json",
+        "creative/reviews/engine-spark-plug-v2/source-geometry-check.json"
+      ],
+      "note": "Analytic geometry helper only; shared controlmodule CSGfunction is not called, so no new CSGworker/materialmap/photo input."
+    },
+    {
+      "stage": "protected export verification",
+      "reads": [
+        "assets-src/moto-components/engine-spark-plug/engine-spark-plug-inspection.glb",
+        "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2-inspection.glb"
+      ],
+      "checker": "assets-src/moto-components/engine-spark-plug/check_invariants_v2.mjs",
+      "writes": [
+        "creative/reviews/engine-spark-plug-v2/protected-export-invariants.json"
+      ],
+      "note": "Old finalv1GLB is truly needed, already covered by30. No missing private/rawGLBintermediate."
+    }
+  ],
+  "phase": {
+    "snapshot_utc": "2026-10-21T05:04:48.035024+00:00",
+    "source_frozen_preflight30": true,
+    "final_review_manifest_exists": false,
+    "parent_phase": "three96views queued/in progress; parent actually read native24PBR/reflection macros and confirmed stair disappearance",
+    "images_opened_in_this_audit": false,
+    "final_visual_closure_independently_verified": false
+  },
+  "findings": [
+    "No required extra JSON outside30 for the reprise: parameters-v2 and cap build-report are covered. Analytic-chamfer-plan-v2 is documentary guidance; builder actually reads parameters-v2/bodyhelpercode, not thatplan.",
+    "The historical v1 source/export and its preflight25 are preserved in30; original v1 build/parameters are available and covered transitively by its25filemanifest for optional origin rebuild.",
+    "No photograph bytes, external image maps, CSGsubprocess or hardcoded external generator are read by this current reprise.",
+    "Three96finals are a separate phase. A render-report/checkpoints may exist while still in progress; no96image opened, finalreview not certified here."
+  ],
+  "files": [
+    {
+      "path": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+      "exists": true,
+      "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+      "bytes": 14733894,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30",
+        "current_reprise_recipe",
+        "optional_rebuild_of_fixed_historical_v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/build-report.json",
+      "exists": true,
+      "sha256": "b6c3abc40f6bdeace794362b5524e266355b54f7453ee1577e7f556152f33937",
+      "bytes": 4207,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30",
+        "current_reprise_recipe"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v1.blend",
+      "exists": true,
+      "sha256": "69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d",
+      "bytes": 2304203,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30",
+        "current_reprise_recipe"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/README_v2.md",
+      "exists": true,
+      "sha256": "5ff22ed247eaa0198550c8b73725a850521ea5d0b3ac80b654b7fd1b4e28db98",
+      "bytes": 2475,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/body_geometry_v2.py",
+      "exists": true,
+      "sha256": "2152d3ee606b52a1aa0da9693272220f5295b475380405fa84ec1d1e37cb0608",
+      "bytes": 2874,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30",
+        "current_reprise_recipe"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/build-report-v2.json",
+      "exists": true,
+      "sha256": "7004972dfa705c24b35f54bb7145ca085bcf8296d428587368842ca4585a4ac0",
+      "bytes": 33090,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/build_v2.py",
+      "exists": true,
+      "sha256": "04310ca32c5e44154ba3a33c0226c12b5d7ecff91b54c7c6fcff4e84d3aeb2d1",
+      "bytes": 7175,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30",
+        "current_reprise_recipe"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/camera_preflight.py",
+      "exists": true,
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a",
+      "bytes": 3235,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/check_export_v2.mjs",
+      "exists": true,
+      "sha256": "60171ce002d7948675d82a5822d87633eaa488968d10c457044e62c078f3ab27",
+      "bytes": 2818,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/check_interface_v2.py",
+      "exists": true,
+      "sha256": "ab617077b364b1c471870d8f5076a17e19b5735991361cf03737069abdb63eb1",
+      "bytes": 4771,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/check_invariants_v2.mjs",
+      "exists": true,
+      "sha256": "ddc7c64cbb823f6149c7c152a9497ea401e343f2fb45eff3a64b78ef8f6319fc",
+      "bytes": 3144,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30",
+        "existing_invariant_checker_inputs_or_proof"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-inspection.glb",
+      "exists": true,
+      "sha256": "b7dd811a0dd041cb60cc4ffe32288c99dc723e797f65d91530443ec158150d5c",
+      "bytes": 1993940,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30",
+        "existing_invariant_checker_inputs_or_proof"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v1.blend",
+      "exists": true,
+      "sha256": "a797527ddb7a291d89b4280d7d8cead24ef1d0388732b275958a649020f4253c",
+      "bytes": 908183,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30",
+        "current_reprise_recipe"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2-inspection.glb",
+      "exists": true,
+      "sha256": "db4382d7417cd7c11d7bad431231b8ea115520e3d78983b126b591312ba2c28c",
+      "bytes": 1777508,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30",
+        "existing_invariant_checker_inputs_or_proof"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v2.blend",
+      "exists": true,
+      "sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5",
+      "bytes": 865984,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/parameters-v2.json",
+      "exists": true,
+      "sha256": "573a34ecfd1265759107145cde40329d51e542787f2510866fe4fda39963d09d",
+      "bytes": 1113,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30",
+        "current_reprise_recipe"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/preflight-manifest.json",
+      "exists": true,
+      "sha256": "82fd2818a5f94b6e8f726f8164943befe533ba74104540d597f6f43a766fea61",
+      "bytes": 5535,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/provenance-v2.json",
+      "exists": true,
+      "sha256": "d12ca003703a27a746d98ae9a04181ea704631fbd9c700ee1ec6d79ac6a0a895",
+      "bytes": 1929,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/record_preflight_v2.py",
+      "exists": true,
+      "sha256": "ca90bc8d30dc22e083d08ea32fdbe92c3e55e58d709335f9c77867f353537b31",
+      "bytes": 3230,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/record_review_v2.py",
+      "exists": true,
+      "sha256": "76010a8ab9580c4171489ddc73f0a232a598085983909cfb8d9b310f3f8bfdaa",
+      "bytes": 2007,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/render_checkpoint.py",
+      "exists": true,
+      "sha256": "3b5ade95f0323f0df3425e6d5c0ea19d36b17674b40e5aa8413819039d5c602d",
+      "bytes": 4282,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/render_v2.py",
+      "exists": true,
+      "sha256": "01d90175ec01d1f811b192e803830d7452ea11f346b370d49a1af8c9ba3ab659",
+      "bytes": 4050,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/throttle-control/control_geometry.py",
+      "exists": true,
+      "sha256": "430351cb8ef4877a2575174958e86d998664d8dd5941a9d5cb74ff22f47ffe8c",
+      "bytes": 6312,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "covered_by_current_preflight30",
+        "current_reprise_recipe",
+        "optional_rebuild_of_fixed_historical_v1"
+      ]
+    },
+    {
+      "path": "creative/research/engine-spark-plug/analytic-chamfer-plan-v2.json",
+      "exists": true,
+      "sha256": "d43a519972e6ebe00bace7c5145dd45dc8522c7cded7e30628bcbaa017c906d7",
+      "bytes": 1524,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "creative/reviews/engine-spark-plug-v2/README.md",
+      "exists": true,
+      "sha256": "942b2988fe9dda763cd530f8abdee6836d7c68019eea340d85a208847c47bf7e",
+      "bytes": 851,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "creative/reviews/engine-spark-plug-v2/export-check.json",
+      "exists": true,
+      "sha256": "356c60aeddb5b267ddaecb7ab199bacf34429c15d94a7d230ce4cd2186716fb9",
+      "bytes": 2673,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "creative/reviews/engine-spark-plug-v2/interface-solid-check.json",
+      "exists": true,
+      "sha256": "5ca8d72a6602b4ffc49876ccd08d33a32121c4004aea3a0de1f4ae76d147aec3",
+      "bytes": 38055,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "creative/reviews/engine-spark-plug-v2/preview-review.json",
+      "exists": true,
+      "sha256": "d46c23d129581f1a6118aba5d78c70c43dc4149ce582777f545b3dc98b487a0b",
+      "bytes": 4393,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "creative/reviews/engine-spark-plug-v2/protected-export-invariants.json",
+      "exists": true,
+      "sha256": "180fcfa35b8b06189ced65e8b614f0bc79af1d834b5c812a809ce508436760cf",
+      "bytes": 9792,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30",
+        "existing_invariant_checker_inputs_or_proof"
+      ]
+    },
+    {
+      "path": "creative/reviews/engine-spark-plug-v2/source-geometry-check.json",
+      "exists": true,
+      "sha256": "7004972dfa705c24b35f54bb7145ca085bcf8296d428587368842ca4585a4ac0",
+      "bytes": 33090,
+      "git_state": "untracked",
+      "roles": [
+        "covered_by_current_preflight30"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/preflight-manifest-v2.json",
+      "exists": true,
+      "sha256": "5088f0aa04c1a5361cd8362f9bd195a20b4e975ddf2868a07230affa44183f6c",
+      "bytes": 6620,
+      "git_state": "untracked",
+      "roles": [
+        "current_preflight_manifest"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/build.py",
+      "exists": true,
+      "sha256": "d6f79946927f91d7594a4a5ab8f92fe1f5bb0a5a5eb84535a75c9590a4695fc6",
+      "bytes": 8942,
+      "git_state": "untracked",
+      "roles": [
+        "optional_rebuild_of_fixed_historical_v1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/parameters.json",
+      "exists": true,
+      "sha256": "b733b29396154abc158b7cb040187a261580735b366fe8ba2142f35d768ff121",
+      "bytes": 1904,
+      "git_state": "untracked",
+      "roles": [
+        "optional_rebuild_of_fixed_historical_v1"
+      ]
+    },
+    {
+      "path": "package.json",
+      "exists": true,
+      "sha256": "a39ce3bafb566edaf92a27fec2c35e3bd40550136b20ac501e56bcaa01c3a998",
+      "bytes": 782,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "Node_checker_environment"
+      ]
+    },
+    {
+      "path": "package-lock.json",
+      "exists": true,
+      "sha256": "f7806a8afda3413efb6d3cec57482f51fda453b3350e784f1e6e90cf8604f014",
+      "bytes": 74605,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "Node_checker_environment"
+      ]
+    }
+  ],
+  "clean_regeneration_or_new_checker_run": false,
+  "art_accepted": false,
+  "physical_iphone_tested": false
+}

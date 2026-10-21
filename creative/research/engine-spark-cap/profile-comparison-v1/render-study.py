@@ -1,0 +1,15 @@
+"""New read-only profile study, no old source/render/manifest is rewritten."""
+from pathlib import Path
+import bpy,json,hashlib,sys
+from mathutils import Vector,Matrix
+R=Path('/workspace/wewa-github');D=Path(__file__).resolve().parent;H=R/'assets-src/moto-components/engine-spark-cap';source=H/'engine-spark-cap-v1.blend';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();assert sha(source)=='69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d';before=sha(source);build=json.loads((H/'build-report.json').read_text());bpy.ops.wm.open_mainfile(filepath=str(source));s=bpy.context.scene;objects=[bpy.data.objects[r['name']]for r in build['geometry']];datum=objects[0].parent;s.cycles.samples=24;s.render.resolution_x=1100;s.render.resolution_y=650;s.camera.data.type='ORTHO';s.camera.data.ortho_scale=.082;s.camera.data.clip_start=.0005;s.camera.data.clip_end=2
+m=bpy.data.materials.new('Temporary neutral gray profile diagnostic');m.use_nodes=True;p=m.node_tree.nodes['Principled BSDF'];p.inputs['Base Color'].default_value=(.30,.30,.30,1);p.inputs['Roughness'].default_value=.50;p.inputs['Metallic'].default_value=0;s.view_layers[0].material_override=m
+target=datum.matrix_world@Vector((.053,.002,0));rotation=datum.matrix_world.to_3x3();stage=bpy.data.collections['SPARK_CAP_STUDIO_NOT_EXPORTED']
+for name,offset,energy,size in [('CONTROL_KEY',(.02,.08,.10),.12,.09),('CONTROL_FILL',(-.07,.05,-.02),.05,.08),('CONTROL_EDGE',(.06,-.03,.04),.10,.06)]:
+ o=bpy.data.objects[name];o.location=target+rotation@Vector(offset);o.data.energy=energy;o.data.size=size;o.rotation_euler=(target-o.location).to_track_quat('-Z','Y').to_euler()
+out=Path('/workspace/wewa-assets/work-in-progress/engine-spark-cap/profile-study-69dc2767');out.mkdir(parents=True,exist_ok=True);sys.path.insert(0,str(H));from render_checkpoint import checkpoint_view
+from camera_preflight import check_component_camera
+report={'source_sha256':before,'export_sha256':build['export_sha256'],'scope':'Qualitative near-profile comparison only, estimated orthographic extrinsics. Not a calibrated photo overlay or dimensional measurement. No source/mount matrix changed.','temporary_material':'gray, all physical pieces','samples':24,'views':[],'art_accepted':False}
+for name,offset,up in [('profile-like-stocknuts-1',(.005,.25,.022),(0,0,1)),('profile-like-stocknuts-4',(-.005,.25,-.022),(0,0,-1))]:
+ s.camera.location=target+rotation@Vector(offset);forward=(target-s.camera.location).normalized();right=forward.cross(rotation@Vector(up)).normalized();vertical=right.cross(forward).normalized();s.camera.rotation_euler=Matrix(((right.x,vertical.x,-forward.x),(right.y,vertical.y,-forward.y),(right.z,vertical.z,-forward.z))).to_euler();bpy.context.view_layer.update();frame=check_component_camera(s,objects,allow_crop=False,margin=.005);cp=checkpoint_view(s,out,source,name);report['views'].append({'name':name,'estimated_camera_offset_in_cap_axes_m':offset,'estimated_up_in_cap_axes':up,'camera_preflight':frame,'checkpoint':str(out/(name+'.checkpoint.json')),'outputs':cp['outputs']});(D/'render-report.json').write_text(json.dumps(report,indent=2)+'\n')
+assert sha(source)==before

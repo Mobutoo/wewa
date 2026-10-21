@@ -1,0 +1,1797 @@
+{
+  "schema": 1,
+  "revision": "motorcycle-source-dependencies-publication09-v1",
+  "snapshot_utc": "2026-10-21T04:45:19.706402+00:00",
+  "method": "Static recipe/import/call/read-text/load-library dependency audit; actual repo file SHA and Git index/HEAD membership. No recipe, Blender, renderer, exporter or checker executed. No old frozen files, catalogues or records edited.",
+  "scope_boundaries": {
+    "head3": "Current numeric head3 recipe incl retained cylinder/visit/OHC editable guides; optional cap/OHC ancestor recipe from existing legacyhead2 separately identified. Legacyhead2 origin already documented in publication08 audit, not recursively re-audited here.",
+    "stub1": "Current original stub from fixed editable head3 + OHCcover1. Sourcepreflight24 audited; no96images opened.",
+    "instruments5": "Exact mandatory C3→C4→C5 chain, plus explicit older C3/C2/USB/base origin tiers so continuation from editable ancestors and full-public regeneration are not confused. Mirror originalPNG maps are a fixed authored input boundary, not a new audit of mirror production.",
+    "cockpit3": "Builder2 + current catalogue/bindings/HDR/14editable sources + rawGLB cleanup recipe. Root main delivery manifest still in construction; not touched or claimed final."
+  },
+  "manifests_read": [
+    {
+      "path": "assets-src/moto-components/engine-head/preflight-manifest-v3.json",
+      "sha256": "a3a738efa31e6298a0221064fef52e9f947503604ecac263ec03a2c33c79da2e",
+      "files_count": 39
+    },
+    {
+      "path": "creative/reviews/engine-head-v3/review-manifest.json",
+      "sha256": "24e1e36ec7cf3185f47434d7c8d6301bec7b5dffb7156fda78ece3af0f4fb3ce",
+      "files_count": 53
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-stub/preflight-manifest.json",
+      "sha256": "0c49b4c879789a2e4a865a4359718b2af9290ec6d89e4d4b448e2df2c5bad67d",
+      "files_count": 24
+    },
+    {
+      "path": "creative/reviews/instruments-v5/source-freeze-manifest.json",
+      "sha256": "6e8a8a8bbd8842e487534ca1ed30737b14fdfe3801933bb7faa46bc736f57311",
+      "files_count": 21
+    },
+    {
+      "path": "creative/reviews/instruments-v5/freeze-manifest.json",
+      "sha256": "7e9aa65228bdc1b10a921e62fd3cb9c4743a65a3158df3dd45b26498b47777e9",
+      "files_count": 28
+    },
+    {
+      "path": "creative/reviews/instruments-v4/intermediate-freeze-manifest.json",
+      "sha256": "bc2bc4ab5d4cd124131e7cb836099c21db450f00ad165a1cdda1e02af2b8e3dd",
+      "files_count": 19
+    },
+    {
+      "path": "creative/reviews/instruments-v3/freeze-manifest.json",
+      "sha256": "7e6626b5c68118e1c95bb62a7367ff5d14891cbe59a396f6db716f6521602c5e",
+      "files_count": 24
+    },
+    {
+      "path": "creative/reviews/engine-ohc-stub-v1/review-manifest.json",
+      "sha256": "55c8a639a3ff33997e07dfac939dba8107ff8323556d421573c86dd5085959f5",
+      "files_count": 35,
+      "read_after_initial_phase_snapshot": true
+    }
+  ],
+  "required_stages": {
+    "head3_current_recipe": [
+      "assets-src/moto-components/engine-head/build_v3.py",
+      "assets-src/moto-components/engine-head/parameters-v3.json",
+      "assets-src/moto-components/throttle-control/control_geometry.py",
+      "assets-src/moto-components/engine-head/topology_cleanup_head_v2.py",
+      "assets-src/moto-components/engine-head/head_geometry_v3.py",
+      "assets-src/moto-components/engine-head/housing_sections_v3.py",
+      "assets-src/moto-components/engine-head/underside_geometry_v2.py",
+      "assets-src/moto-components/engine-head/csg_driver_v2.py",
+      "assets-src/moto-components/engine-head/csg_kernel_v2.py",
+      "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+      "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+      "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend"
+    ],
+    "stub1_current_recipe": [
+      "assets-src/moto-components/engine-ohc-stub/build.py",
+      "assets-src/moto-components/engine-ohc-stub/parameters.json",
+      "assets-src/moto-components/throttle-control/control_geometry.py",
+      "assets-src/moto-components/engine-head/engine-head-v3.blend",
+      "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend"
+    ],
+    "instruments5_from_editable4": [
+      "assets-src/moto-components/instruments/build_v5.py",
+      "assets-src/moto-components/instruments/finalize_export_v5.mjs",
+      "assets-src/moto-components/instruments/instruments-v4.blend",
+      "creative/reviews/instruments-v4/source-geometry-check.json",
+      "creative/reviews/instruments-v4/preview-review.json"
+    ],
+    "instruments4_from_editable3": [
+      "assets-src/moto-components/instruments/build_v4.py",
+      "assets-src/moto-components/instruments/finalize_export_v4.mjs",
+      "assets-src/moto-components/instruments/instruments-v3.blend",
+      "creative/reviews/instruments-v3/source-geometry-check.json"
+    ],
+    "instruments3_from_editable2": [
+      "assets-src/moto-components/instruments/build_v3.py",
+      "assets-src/moto-components/instruments/finalize_export_v3.mjs",
+      "assets-src/moto-components/instruments/instruments-v2.blend",
+      "creative/reviews/instruments-v2/source-geometry-check.json",
+      "creative/research/instruments-v2/optical-edge-diagnostic-reading.json"
+    ],
+    "instruments2_from_editable1_and_USBmaterial": [
+      "assets-src/moto-components/instruments/build_v2.py",
+      "assets-src/moto-components/instruments/finalize_export_v2.mjs",
+      "assets-src/moto-components/instruments/v2_artwork_helpers.py",
+      "assets-src/moto-components/instruments/instruments-v1.blend",
+      "assets-src/moto-components/instruments/instruments-usb-v2-material-study-r2.blend",
+      "creative/reviews/instruments-usb-v2-material-study-r2/source-geometry-check.json",
+      "creative/reviews/instruments-usb-v2-material-study-r2/preview-review.json",
+      "creative/research/instruments-v2/dial-artwork-plan.json"
+    ],
+    "USB_material_from_editable_gray_r2": [
+      "assets-src/moto-components/instruments/build_usb_v2_material_study_r2.py",
+      "assets-src/moto-components/instruments/usb_g4_v2.py",
+      "assets-src/moto-components/instruments/v2_artwork_helpers.py",
+      "assets-src/moto-components/instruments/instruments-usb-v2-study-r2.blend",
+      "creative/reviews/instruments-usb-v2-study-r2/source-geometry-check.json",
+      "creative/reviews/instruments-usb-v2-study-r2/preview-review.json",
+      "creative/research/instruments-v2/usb-symbol-v2.json",
+      "assets-src/moto-components/instruments/textures-v2/usb/original-polymer-normal.png",
+      "assets-src/moto-components/instruments/textures-v2/usb/surround-metallic-roughness.png",
+      "assets-src/moto-components/instruments/textures-v2/usb/capsule-metallic-roughness.png"
+    ],
+    "USB_gray_origin_with_private_documentary_guard": [
+      "assets-src/moto-components/instruments/build_usb_v2_study_r2.py",
+      "creative/research/instruments-v2/usb-shape-plan-r2.json",
+      "assets-src/moto-components/instruments/instruments-v1.blend"
+    ],
+    "instruments1_origin": [
+      "assets-src/moto-components/instruments/build.py",
+      "assets-src/moto-components/instruments/parameters.json"
+    ],
+    "USB_original_map_generator": [
+      "assets-src/moto-components/instruments/generate_usb_maps_v2.py",
+      "assets-src/moto-components/mirrors/textures-left/polymer-normal.png",
+      "assets-src/moto-components/mirrors/textures-left/polymer-metallic-roughness.png"
+    ],
+    "head3_guide_rebuild_from_legacy_head2": [
+      "assets-src/moto-components/engine-tappet-cap/build.py",
+      "assets-src/moto-components/engine-tappet-cap/parameters.json",
+      "assets-src/moto-components/engine-ohc-cover/build.py",
+      "assets-src/moto-components/engine-ohc-cover/parameters.json",
+      "assets-src/moto-components/throttle-control/control_geometry.py",
+      "assets-src/moto-components/clutch-control/topology_cleanup_v2.py",
+      "assets-src/moto-components/front-brake-plate/csg.py",
+      "assets-src/moto-components/engine-head/engine-head-v2.blend"
+    ],
+    "C3_C4_C5_export_validation_inputs": [
+      "assets-src/moto-components/instruments/check_export_v3.mjs",
+      "assets-src/moto-components/instruments/check_export_v4.mjs",
+      "assets-src/moto-components/instruments/check_export_v5.mjs",
+      "assets-src/moto-components/instruments/instruments-v2-inspection.glb",
+      "assets-src/moto-components/instruments/instruments-v3-inspection.glb",
+      "assets-src/moto-components/instruments/instruments-v4-inspection.glb",
+      "assets-src/moto-components/instruments/instruments-v5-inspection.glb",
+      "creative/reviews/instruments-v3/source-geometry-check.json",
+      "creative/reviews/instruments-v4/source-geometry-check.json",
+      "creative/reviews/instruments-v5/source-geometry-check.json",
+      "creative/reviews/instruments-v5/revision-chain.json"
+    ]
+  },
+  "current_recipe_coverage_comparisons": [
+    {
+      "group": "head3",
+      "roles": [
+        "head3_current_recipe"
+      ],
+      "required_paths": [
+        "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+        "assets-src/moto-components/engine-head/build_v3.py",
+        "assets-src/moto-components/engine-head/csg_driver_v2.py",
+        "assets-src/moto-components/engine-head/csg_kernel_v2.py",
+        "assets-src/moto-components/engine-head/head_geometry_v3.py",
+        "assets-src/moto-components/engine-head/housing_sections_v3.py",
+        "assets-src/moto-components/engine-head/parameters-v3.json",
+        "assets-src/moto-components/engine-head/topology_cleanup_head_v2.py",
+        "assets-src/moto-components/engine-head/underside_geometry_v2.py",
+        "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+        "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+        "assets-src/moto-components/throttle-control/control_geometry.py"
+      ],
+      "missing_from_frozen_files_union": [],
+      "untracked_required": [
+        "assets-src/moto-components/engine-head/build_v3.py",
+        "assets-src/moto-components/engine-head/head_geometry_v3.py",
+        "assets-src/moto-components/engine-head/housing_sections_v3.py",
+        "assets-src/moto-components/engine-head/parameters-v3.json"
+      ],
+      "absent_on_disk": [],
+      "manifest_hash_mismatches": []
+    },
+    {
+      "group": "stub1",
+      "roles": [
+        "stub1_current_recipe"
+      ],
+      "required_paths": [
+        "assets-src/moto-components/engine-head/engine-head-v3.blend",
+        "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+        "assets-src/moto-components/engine-ohc-stub/build.py",
+        "assets-src/moto-components/engine-ohc-stub/parameters.json",
+        "assets-src/moto-components/throttle-control/control_geometry.py"
+      ],
+      "missing_from_frozen_files_union": [],
+      "untracked_required": [
+        "assets-src/moto-components/engine-head/engine-head-v3.blend",
+        "assets-src/moto-components/engine-ohc-stub/build.py",
+        "assets-src/moto-components/engine-ohc-stub/parameters.json"
+      ],
+      "absent_on_disk": [],
+      "manifest_hash_mismatches": []
+    },
+    {
+      "group": "instruments5",
+      "roles": [
+        "instruments5_from_editable4",
+        "instruments4_from_editable3"
+      ],
+      "required_paths": [
+        "assets-src/moto-components/instruments/build_v4.py",
+        "assets-src/moto-components/instruments/build_v5.py",
+        "assets-src/moto-components/instruments/finalize_export_v4.mjs",
+        "assets-src/moto-components/instruments/finalize_export_v5.mjs",
+        "assets-src/moto-components/instruments/instruments-v3.blend",
+        "assets-src/moto-components/instruments/instruments-v4.blend",
+        "creative/reviews/instruments-v3/source-geometry-check.json",
+        "creative/reviews/instruments-v4/preview-review.json",
+        "creative/reviews/instruments-v4/source-geometry-check.json"
+      ],
+      "missing_from_frozen_files_union": [
+        "assets-src/moto-components/instruments/instruments-v3.blend",
+        "creative/reviews/instruments-v3/source-geometry-check.json"
+      ],
+      "untracked_required": [
+        "assets-src/moto-components/instruments/build_v4.py",
+        "assets-src/moto-components/instruments/build_v5.py",
+        "assets-src/moto-components/instruments/finalize_export_v4.mjs",
+        "assets-src/moto-components/instruments/finalize_export_v5.mjs",
+        "assets-src/moto-components/instruments/instruments-v4.blend",
+        "creative/reviews/instruments-v4/preview-review.json",
+        "creative/reviews/instruments-v4/source-geometry-check.json"
+      ],
+      "absent_on_disk": [],
+      "manifest_hash_mismatches": []
+    }
+  ],
+  "construction_input_chain_path_fields_sha_supplement": [
+    {
+      "path": "creative/reviews/instruments-v4/intermediate-freeze-manifest.json",
+      "sha256": "bc2bc4ab5d4cd124131e7cb836099c21db450f00ad165a1cdda1e02af2b8e3dd",
+      "is_present_in_source5_files_array": false
+    },
+    {
+      "path": "assets-src/moto-components/instruments/instruments-v4.blend",
+      "sha256": "08e9f51ab2a4a63bba45486155860b6fd36cd3c04368b16a38d19f87bd15d17d",
+      "is_present_in_source5_files_array": false
+    },
+    {
+      "path": "assets-src/moto-components/instruments/instruments-v3.blend",
+      "sha256": "2ac37623a2e8df558373233228a6b936b143b6ff282e8ab6e70f08e27675e7da",
+      "is_present_in_source5_files_array": false
+    }
+  ],
+  "byte_pins_checked": [
+    {
+      "path": "assets-src/moto-components/instruments/instruments-v3.blend",
+      "sha256": "2ac37623a2e8df558373233228a6b936b143b6ff282e8ab6e70f08e27675e7da",
+      "pin_report": "creative/reviews/instruments-v3/source-geometry-check.json",
+      "matches": true
+    },
+    {
+      "path": "assets-src/moto-components/instruments/instruments-v4.blend",
+      "sha256": "08e9f51ab2a4a63bba45486155860b6fd36cd3c04368b16a38d19f87bd15d17d",
+      "pin_report": "creative/reviews/instruments-v4/source-geometry-check.json",
+      "matches": true
+    },
+    {
+      "path": "assets-src/moto-components/instruments/instruments-v5.blend",
+      "sha256": "3d662c0c35ec9d7ff6b00315d28fc9b3bd2e519771b3fc3f48470a0033ef3951",
+      "pin_report": "creative/reviews/instruments-v5/source-geometry-check.json",
+      "matches": true
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+      "sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45",
+      "pin_report": "assets-src/moto-components/engine-ohc-stub/parameters.json",
+      "matches": true
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+      "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+      "pin_report": "assets-src/moto-components/engine-ohc-stub/parameters.json",
+      "matches": true
+    }
+  ],
+  "private_documentary_guard": {
+    "path": "/workspace/wewa-assets/references/instruments/official-rdc-usb-meter.png",
+    "exists": true,
+    "sha256": "eb8e10531cbd7f37c1825044a535c07a8549872975440233d86d581b6e3c2663",
+    "expected_sha256": "eb8e10531cbd7f37c1825044a535c07a8549872975440233d86d581b6e3c2663",
+    "consumer": "assets-src/moto-components/instruments/build_usb_v2_study_r2.py",
+    "read_purpose": "read_bytes only to assert documentary reference SHA; pixels do NOT generate mesh or texture",
+    "publish": false
+  },
+  "cockpit3": {
+    "generation_inputs": [
+      "tools/build_motorcycle18_assembly_v2.py",
+      "tools/motorcycle-lab/catalog.json",
+      "creative/research/cockpit-current-review-bindings-v1.json",
+      "app/public/materials/kloppenheim_06_puresky_1k.hdr",
+      "tools/remove_unused_review_tangents.mjs",
+      "assets-src/moto-components/cockpit-current-review-v3/cockpit-current-review-v3-inspection.glb",
+      "assets-src/moto-components/handlebar/handlebar-v1.blend",
+      "assets-src/moto-components/handlebar-grips/handlebar-grips-v3.blend",
+      "assets-src/moto-components/handlebar-clamps/handlebar-clamps-v1.blend",
+      "assets-src/moto-components/throttle-control/throttle-control-v1.blend",
+      "assets-src/moto-components/switchgear-left/switchgear-left-v3.blend",
+      "assets-src/moto-components/switchgear-right/switchgear-right-v1.blend",
+      "assets-src/moto-components/clutch-control/clutch-control-v2.blend",
+      "assets-src/moto-components/front-brake-control/front-brake-control-v2.blend",
+      "assets-src/moto-components/mirrors/mirror-left-v2.blend",
+      "assets-src/moto-components/mirrors/mirror-right-v3.blend",
+      "assets-src/moto-components/ignition-lock/ignition-lock-v1.blend",
+      "assets-src/moto-components/cockpit-cables/cockpit-cables-v2.blend",
+      "assets-src/moto-components/instruments/instruments-v5.blend",
+      "assets-src/moto-components/instrument-visor/instrument-visor-v1.blend"
+    ],
+    "builder_sha_matches_proof": true,
+    "raw_export": {
+      "path": "assets-src/moto-components/cockpit-current-review-v3/cockpit-current-review-v3-inspection.glb",
+      "sha256": "9effe4a2044fdeedb82afda9f47a20092475428374f4be62cc7b8991e00f6b24",
+      "bytes": 52072452,
+      "purpose": "Detailed linked review export, not mobile LOD or accepted game asset"
+    },
+    "delivery_export": {
+      "path": "assets-src/moto-components/cockpit-current-review-v3/cockpit-current-review-v3-delivery.glb",
+      "sha256": "6b0b4e3630b0594e4e1e14a1c0f8ede9f0d9f896f18dad5fea24835302fefb53",
+      "bytes": 52070148,
+      "purpose": "Detailed review delivery export after deletion of unused TANGENT references only, all binary chunks identical; not a mobile LOD"
+    },
+    "linked_sources_sha_checked": 14,
+    "binding_file": "creative/research/cockpit-current-review-bindings-v1.json",
+    "needle_asset": "instruments-v5",
+    "needle_relative_degrees": -81.0,
+    "note": "RawGLB is a regenerated intermediate consumed by remove_unused_review_tangents.mjs; deliveryGLB is a distinct file. HDR is CC0 studio original dependency, not a private documentary photograph. Do not copy static/reference photos as textures."
+  },
+  "findings": [
+    {
+      "priority": "current_recipe",
+      "group": "head3",
+      "finding": "All12actual current inputs/scripts/helpers/guides are covered by preflight39/review53 at matching SHA. Numeric joint plans listed as research are not read by build_v3.py; numbers actually used reside in parameters-v3.json and code. Own csg_driver/kernel2 shadows generic helper CSG."
+    },
+    {
+      "priority": "current_recipe",
+      "group": "stub1",
+      "finding": "All5current recipe inputs covered by preflight24: build,parameters,sharedhelper,head3,cover1. No CSG subprocess or new photo/texture input."
+    },
+    {
+      "priority": "chain",
+      "group": "instruments5",
+      "finding": "C4 is REQUIRED, non-catalogued intermediate, not an accepted candidate. C5 build reads C4.blend + C4source-report + C4preview flags; C4 build reads C3.blend+C3report. The union of C5freeze/sourcefreeze/C4intermediate freeze does not hash-bind C3.blend and C3source-report in files arrays; C3blend is only an un-hashed construction_input_chain path there. This report supplies actualSHA; the separate C3freeze already covers both files."
+    },
+    {
+      "priority": "ancestor_recipe",
+      "group": "instruments5",
+      "finding": "Rebuilding C3 itself additionally requires old editableC2/report and optical-edge diagnostic approval JSON; rebuilding C2 requires baseC1 and reviewed USBmaterialr2 sources/JSON, dial artwork plan and v2_artwork_helpers. These are optional only if publishing C3 as the explicit editable starting boundary; they are not optional for a claimed full origin recipe."
+    },
+    {
+      "priority": "portability_gap",
+      "group": "instruments5",
+      "finding": "USBgray-r2 origin builder reads private photograph bytes for SHA guard, though it derives shape solely from public numeric contour plan. Do NOT publish that photo. Keep reviewed editable USBgray/material or C3 boundary, or author a separately reviewed portable recipe replacing only the documentary-file guard; no such change was performed here."
+    },
+    {
+      "priority": "authored_textures",
+      "group": "instruments5",
+      "finding": "USBmaterialr2 consumes3original PNG maps via usb_g4_v2.py. generate_usb_maps_v2.py derives these from2authored mirror-left PNG maps, NumPy+Pillow. These are original authored map dependencies, not documentaryphoto assets; include generator/input maps if publishing texture origin recipe. Pillow is not pinned by current CSG requirements."
+    },
+    {
+      "priority": "generated_raw",
+      "group": "instruments5",
+      "finding": "Each build_v2/v3/v4/v5 emits a rawGLB at its final named path, then finalize_export_vN.mjs reads/overwrites that newly generated file. A separate pre-existing rawGLB file is NOT needed for generation. Old finalGLB2/3/4 are actually read by comparative check_export3/4/5, so preserved oldGLBs belong to verification-chain dependencies."
+    },
+    {
+      "priority": "phase",
+      "group": "stub1",
+      "finding": "Phase changed during audit: initial preflight24 frozen and final review-manifest absent; at final recheck owner review-manifest35 now exists, all35file hashes verified, same source285eca8f/exportd168bf18. This is an owner visual closure now recorded, not an independent96image reading or artistic acceptance by this audit."
+    }
+  ],
+  "environment": [
+    "Blender4.3.2 APIs; external head CSG worker Python requires NumPy/Manifold pinned in tools/requirements-assets.txt.",
+    "Nodefinalizers use glTFTransform core/extensions from root package-lock.",
+    "USBmap origin generator needs Pillow andNumPy; existing original maps and packed editable blends permit continuation without rerunning that generator.",
+    "Default Bfont used by original instrument source; no external.ttf load observed in audited builders."
+  ],
+  "files": [
+    {
+      "path": "assets-src/moto-components/engine-head/preflight-manifest-v3.json",
+      "exists": true,
+      "sha256": "a3a738efa31e6298a0221064fef52e9f947503604ecac263ec03a2c33c79da2e",
+      "bytes": 8173,
+      "git_state": "untracked",
+      "roles": [
+        "manifest_read"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "creative/reviews/engine-head-v3/review-manifest.json",
+      "exists": true,
+      "sha256": "24e1e36ec7cf3185f47434d7c8d6301bec7b5dffb7156fda78ece3af0f4fb3ce",
+      "bytes": 10825,
+      "git_state": "untracked",
+      "roles": [
+        "manifest_read"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-stub/preflight-manifest.json",
+      "exists": true,
+      "sha256": "0c49b4c879789a2e4a865a4359718b2af9290ec6d89e4d4b448e2df2c5bad67d",
+      "bytes": 5211,
+      "git_state": "untracked",
+      "roles": [
+        "manifest_read"
+      ],
+      "groups": [
+        "stub1"
+      ]
+    },
+    {
+      "path": "creative/reviews/instruments-v5/source-freeze-manifest.json",
+      "exists": true,
+      "sha256": "6e8a8a8bbd8842e487534ca1ed30737b14fdfe3801933bb7faa46bc736f57311",
+      "bytes": 4808,
+      "git_state": "untracked",
+      "roles": [
+        "manifest_read"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "creative/reviews/instruments-v5/freeze-manifest.json",
+      "exists": true,
+      "sha256": "7e9aa65228bdc1b10a921e62fd3cb9c4743a65a3158df3dd45b26498b47777e9",
+      "bytes": 6312,
+      "git_state": "untracked",
+      "roles": [
+        "manifest_read"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "creative/reviews/instruments-v4/intermediate-freeze-manifest.json",
+      "exists": true,
+      "sha256": "bc2bc4ab5d4cd124131e7cb836099c21db450f00ad165a1cdda1e02af2b8e3dd",
+      "bytes": 4093,
+      "git_state": "untracked",
+      "roles": [
+        "manifest_read"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "creative/reviews/instruments-v3/freeze-manifest.json",
+      "exists": true,
+      "sha256": "7e6626b5c68118e1c95bb62a7367ff5d14891cbe59a396f6db716f6521602c5e",
+      "bytes": 4963,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "manifest_read"
+      ],
+      "groups": [
+        "ancestor3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/build_v3.py",
+      "exists": true,
+      "sha256": "437b0bed559955b2c4edf32a0f2d56ad544dce41e132c53dd1a268b08c222d70",
+      "bytes": 16384,
+      "git_state": "untracked",
+      "roles": [
+        "head3_current_recipe"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/parameters-v3.json",
+      "exists": true,
+      "sha256": "772857505c684e30e5fae43056c1e3de4c8ca2da1b05e0f214a27a7623fa30ec",
+      "bytes": 43362,
+      "git_state": "untracked",
+      "roles": [
+        "head3_current_recipe"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/throttle-control/control_geometry.py",
+      "exists": true,
+      "sha256": "430351cb8ef4877a2575174958e86d998664d8dd5941a9d5cb74ff22f47ffe8c",
+      "bytes": 6312,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "head3_current_recipe",
+        "stub1_current_recipe",
+        "head3_guide_rebuild_from_legacy_head2"
+      ],
+      "groups": [
+        "head3",
+        "stub1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/topology_cleanup_head_v2.py",
+      "exists": true,
+      "sha256": "82c726d0c1a7b6da792ec915fc3c5c9ceddca9913c89ca28433892f51a5fc989",
+      "bytes": 4495,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "head3_current_recipe"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/head_geometry_v3.py",
+      "exists": true,
+      "sha256": "9d08fce6678d442c1a660f23026cc731c6f05a12885c968b20a830124edbdb60",
+      "bytes": 1810,
+      "git_state": "untracked",
+      "roles": [
+        "head3_current_recipe"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/housing_sections_v3.py",
+      "exists": true,
+      "sha256": "6c772faf2eb2a5398628f5333f016fc9c3922dcfede4bdd10c8a6f96fb005704",
+      "bytes": 3622,
+      "git_state": "untracked",
+      "roles": [
+        "head3_current_recipe"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/underside_geometry_v2.py",
+      "exists": true,
+      "sha256": "522e937c0fd6b46d23c9279c18087be0ae7d0c0b385dd25baed6ab91e9bd8fe2",
+      "bytes": 6099,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "head3_current_recipe"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/csg_driver_v2.py",
+      "exists": true,
+      "sha256": "eaf0ec14513ca7023385f89182a1c5ac58f34c3869f3477e9ea6f78b20c7fb48",
+      "bytes": 999,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "head3_current_recipe"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/csg_kernel_v2.py",
+      "exists": true,
+      "sha256": "56d36166be689031b890ce9720fd849eaf2c523927be4e5a4858d03185779e23",
+      "bytes": 2024,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "head3_current_recipe"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-cylinder/engine-cylinder-v1.blend",
+      "exists": true,
+      "sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6",
+      "bytes": 3081041,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "head3_current_recipe"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-tappet-cap/engine-tappet-cap-v1.blend",
+      "exists": true,
+      "sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9",
+      "bytes": 3334585,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "head3_current_recipe"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-cover/engine-ohc-cover-v1.blend",
+      "exists": true,
+      "sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45",
+      "bytes": 4727012,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "head3_current_recipe",
+        "stub1_current_recipe"
+      ],
+      "groups": [
+        "head3",
+        "stub1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-stub/build.py",
+      "exists": true,
+      "sha256": "e9784087b61bd6f681e06ee5ab6e386dcc92dbaae6b5944d103b8ba1feadb73f",
+      "bytes": 5794,
+      "git_state": "untracked",
+      "roles": [
+        "stub1_current_recipe"
+      ],
+      "groups": [
+        "stub1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-stub/parameters.json",
+      "exists": true,
+      "sha256": "9c805be4aa628b5ab2de7ed02c1401e7ceeef1e84a06a6aac279c5e57c0b400c",
+      "bytes": 1789,
+      "git_state": "untracked",
+      "roles": [
+        "stub1_current_recipe"
+      ],
+      "groups": [
+        "stub1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+      "exists": true,
+      "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+      "bytes": 14733894,
+      "git_state": "untracked",
+      "roles": [
+        "stub1_current_recipe",
+        "current_frozen_editable_or_delivery_output"
+      ],
+      "groups": [
+        "stub1",
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/build_v5.py",
+      "exists": true,
+      "sha256": "644f965d27c42f2506e80d3a54082f912b7ce1e92e850e3c622ccdeaa0a3db80",
+      "bytes": 4942,
+      "git_state": "untracked",
+      "roles": [
+        "instruments5_from_editable4"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/finalize_export_v5.mjs",
+      "exists": true,
+      "sha256": "3d42fc82b27a8c053a0a59f60bdcdbd0cad148cee8a84244a3f63071e897e9c2",
+      "bytes": 3484,
+      "git_state": "untracked",
+      "roles": [
+        "instruments5_from_editable4"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/instruments-v4.blend",
+      "exists": true,
+      "sha256": "08e9f51ab2a4a63bba45486155860b6fd36cd3c04368b16a38d19f87bd15d17d",
+      "bytes": 638359,
+      "git_state": "untracked",
+      "roles": [
+        "instruments5_from_editable4"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "creative/reviews/instruments-v4/source-geometry-check.json",
+      "exists": true,
+      "sha256": "8d872cc253663be1f614fb3108e1a931c98cbe7209de1be4f88343ad2d85d860",
+      "bytes": 21902,
+      "git_state": "untracked",
+      "roles": [
+        "instruments5_from_editable4",
+        "C3_C4_C5_export_validation_inputs"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "creative/reviews/instruments-v4/preview-review.json",
+      "exists": true,
+      "sha256": "51a41344abdd4a3c1b7e66da4c976b936f9e886ef48b10de6dcfbc879e6240e5",
+      "bytes": 1893,
+      "git_state": "untracked",
+      "roles": [
+        "instruments5_from_editable4"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/build_v4.py",
+      "exists": true,
+      "sha256": "0d81e27476382dadf15965fc4cffa38f331b3b321cd2579714e4cb14d9757f6a",
+      "bytes": 4737,
+      "git_state": "untracked",
+      "roles": [
+        "instruments4_from_editable3"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/finalize_export_v4.mjs",
+      "exists": true,
+      "sha256": "5c7c70ed54b16b5b65b20ba5f16c9dee9d1db8beac5bf0843b95655d334f1a84",
+      "bytes": 3484,
+      "git_state": "untracked",
+      "roles": [
+        "instruments4_from_editable3"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/instruments-v3.blend",
+      "exists": true,
+      "sha256": "2ac37623a2e8df558373233228a6b936b143b6ff282e8ab6e70f08e27675e7da",
+      "bytes": 638057,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "instruments4_from_editable3"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "creative/reviews/instruments-v3/source-geometry-check.json",
+      "exists": true,
+      "sha256": "c3bc0a69a09d9a3fe596563ea1013220bfd65bbe2dc59df7699a524197cde486",
+      "bytes": 5963,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "instruments4_from_editable3",
+        "C3_C4_C5_export_validation_inputs"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/build_v3.py",
+      "exists": true,
+      "sha256": "50bf1191cd39c6e6628268061110e0969ab1fb94fe26311825a7096c4c5658fb",
+      "bytes": 4180,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "instruments3_from_editable2"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/finalize_export_v3.mjs",
+      "exists": true,
+      "sha256": "a22e500690c42552aa7bd50ea056f7f32a39ca0e03cbfcbd94e364ee5f19b227",
+      "bytes": 3484,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "instruments3_from_editable2"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/instruments-v2.blend",
+      "exists": true,
+      "sha256": "dc4b3ccf26f35e3b4a4f10068306d841695901f987a43ebad65299cec132ad22",
+      "bytes": 641258,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "instruments3_from_editable2"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "creative/reviews/instruments-v2/source-geometry-check.json",
+      "exists": true,
+      "sha256": "4fbab8f3fa1e962a470b683bddbf30bf8ac6df53f8133ed251fd18b6cf6143ca",
+      "bytes": 30287,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "instruments3_from_editable2"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "creative/research/instruments-v2/optical-edge-diagnostic-reading.json",
+      "exists": true,
+      "sha256": "c2e6e2550150533928263f5b983b18f730d4b380b7172718aca46eece6311990",
+      "bytes": 2549,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "instruments3_from_editable2"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/build_v2.py",
+      "exists": true,
+      "sha256": "85bbc38f25d0eaa176fe6c8f1d5112db4a908de44e2cad78daa20d1364d8ebaa",
+      "bytes": 10885,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "instruments2_from_editable1_and_USBmaterial"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/finalize_export_v2.mjs",
+      "exists": true,
+      "sha256": "3522278d802e0520ec9ae15fefa61aadf214a55b5901d4f81f57821e991d5dc0",
+      "bytes": 3484,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "instruments2_from_editable1_and_USBmaterial"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/v2_artwork_helpers.py",
+      "exists": true,
+      "sha256": "e1c30c734c5f22ef2540a3b68b549f365c574e0d63ac41d6cdafbc1e0d4fddbf",
+      "bytes": 4560,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "instruments2_from_editable1_and_USBmaterial",
+        "USB_material_from_editable_gray_r2"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/instruments-v1.blend",
+      "exists": true,
+      "sha256": "e3321cee34967f7749dbfa8650fe01c404137c55cfb5c42881363f098cb91ec0",
+      "bytes": 284185,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "instruments2_from_editable1_and_USBmaterial",
+        "USB_gray_origin_with_private_documentary_guard"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/instruments-usb-v2-material-study-r2.blend",
+      "exists": true,
+      "sha256": "6a9e9bfcc4bddc31c8d30c3aa9b138fc2c4aed2c0a05677f06c7c15a5ec9b74e",
+      "bytes": 437805,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "instruments2_from_editable1_and_USBmaterial"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "creative/reviews/instruments-usb-v2-material-study-r2/source-geometry-check.json",
+      "exists": true,
+      "sha256": "768664b68097883de29f2f39cb8acfa2fdea7d179239a0262d87c836ea5d4315",
+      "bytes": 4007,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "instruments2_from_editable1_and_USBmaterial"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "creative/reviews/instruments-usb-v2-material-study-r2/preview-review.json",
+      "exists": true,
+      "sha256": "0cc1586df422f5a2b825e5e1c676b067cf52c8410c682d617bf7b2f418a72033",
+      "bytes": 1277,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "instruments2_from_editable1_and_USBmaterial"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "creative/research/instruments-v2/dial-artwork-plan.json",
+      "exists": true,
+      "sha256": "12dd39ce5b3128303dfae02d1042c9d4d430ed26ee3ca770ac339ec67d0206d3",
+      "bytes": 3205,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "instruments2_from_editable1_and_USBmaterial"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/build_usb_v2_material_study_r2.py",
+      "exists": true,
+      "sha256": "a6c90e8225a8c4f6983da2f060d20dd2d2cb62e5a2ca3231a7458479fb93b386",
+      "bytes": 5633,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "USB_material_from_editable_gray_r2"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/usb_g4_v2.py",
+      "exists": true,
+      "sha256": "08766a70eeba969c42b13fe0350ad1e8af3dd12f35c1386f64b884b977ff60ef",
+      "bytes": 2852,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "USB_material_from_editable_gray_r2"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/instruments-usb-v2-study-r2.blend",
+      "exists": true,
+      "sha256": "187a1e00cedce1eec457e83c81f0dff8a6bdf1cb97c104deae40b4d1d1a1cf2f",
+      "bytes": 209636,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "USB_material_from_editable_gray_r2"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "creative/reviews/instruments-usb-v2-study-r2/source-geometry-check.json",
+      "exists": true,
+      "sha256": "e4367c6a9ef3fc2f4348f0382bec2a036b71acbc1bcb48f92ceaef30e53b5168",
+      "bytes": 2338,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "USB_material_from_editable_gray_r2"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "creative/reviews/instruments-usb-v2-study-r2/preview-review.json",
+      "exists": true,
+      "sha256": "30ce7cacc3ae3052b3a61fb6a07c882a01a30a9963d8888a067a2d36898f15f8",
+      "bytes": 1298,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "USB_material_from_editable_gray_r2"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "creative/research/instruments-v2/usb-symbol-v2.json",
+      "exists": true,
+      "sha256": "dd88184f85bdd8d7c11359cdbdba45c0aa8a7f5bdd18d896abea818f31a27359",
+      "bytes": 58215,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "USB_material_from_editable_gray_r2"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/textures-v2/usb/original-polymer-normal.png",
+      "exists": true,
+      "sha256": "ce0dafd66752707e7e02de8f3ee371a44531d11e22e482d46b594390e2975a11",
+      "bytes": 65917,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "USB_material_from_editable_gray_r2"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/textures-v2/usb/surround-metallic-roughness.png",
+      "exists": true,
+      "sha256": "6faa6b2f238dad0b818ac471d4ff104832a6d017a2b7bb876381f0cd01579933",
+      "bytes": 34950,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "USB_material_from_editable_gray_r2"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/textures-v2/usb/capsule-metallic-roughness.png",
+      "exists": true,
+      "sha256": "e8c3cd553378b8915b9a7a847b0aeaad6132ebb96f7ca731fb06d9f5aa848a37",
+      "bytes": 31092,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "USB_material_from_editable_gray_r2"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/build_usb_v2_study_r2.py",
+      "exists": true,
+      "sha256": "24750e05b83f7446ee461b14236ff4313171f656385ccf7ae6d59e52ac5f424c",
+      "bytes": 9893,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "USB_gray_origin_with_private_documentary_guard"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "creative/research/instruments-v2/usb-shape-plan-r2.json",
+      "exists": true,
+      "sha256": "feb07eeeaf6877e1151c994c210c66659937408989b9e2433fed99a90c8e2db3",
+      "bytes": 7535,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "USB_gray_origin_with_private_documentary_guard"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/build.py",
+      "exists": true,
+      "sha256": "126a136509727758d0175d6902efd6040200e1e779ec299ff9d195d833b6b6a6",
+      "bytes": 15390,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "instruments1_origin"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/parameters.json",
+      "exists": true,
+      "sha256": "a3354ad005df645e1f06c454037a9c197c4aec9f6231691b45d389c71e19b01c",
+      "bytes": 1083,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "instruments1_origin"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/generate_usb_maps_v2.py",
+      "exists": true,
+      "sha256": "a314b7d917266005219128f90791ba9234371de88d58b7b9152d57ed12fef009",
+      "bytes": 1825,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "USB_original_map_generator"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/mirrors/textures-left/polymer-normal.png",
+      "exists": true,
+      "sha256": "ce0dafd66752707e7e02de8f3ee371a44531d11e22e482d46b594390e2975a11",
+      "bytes": 65917,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "USB_original_map_generator"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/mirrors/textures-left/polymer-metallic-roughness.png",
+      "exists": true,
+      "sha256": "a3e57a8c185781a0742950630348e43ff06a04c14031ee454587aff8cd8599c3",
+      "bytes": 42533,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "USB_original_map_generator"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-tappet-cap/build.py",
+      "exists": true,
+      "sha256": "3f3139bd0e8ac4beafb65aae84c1b0c374a6879e8db3e9aa2f2b8c5b3bb6379d",
+      "bytes": 9723,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "head3_guide_rebuild_from_legacy_head2"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-tappet-cap/parameters.json",
+      "exists": true,
+      "sha256": "f3b395d05a8ed0852dde06d1f38f91d01483093dc5e80ddae45ca35eeb997635",
+      "bytes": 2163,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "head3_guide_rebuild_from_legacy_head2"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-cover/build.py",
+      "exists": true,
+      "sha256": "a9a312d93400f5d78b07b304d8f36cc299c7b68f424f7fe6b89c8265a8353472",
+      "bytes": 10955,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "head3_guide_rebuild_from_legacy_head2"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-cover/parameters.json",
+      "exists": true,
+      "sha256": "e49293bb48da83a31117c46e0ce7bb32c98d68cde9cd2378549fd20bd1d2a1c6",
+      "bytes": 9521,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "head3_guide_rebuild_from_legacy_head2"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/clutch-control/topology_cleanup_v2.py",
+      "exists": true,
+      "sha256": "a32cd80f2575b54dd5b40ddb84f68c3913fc0a55a26410c1131bb10f9e4dd942",
+      "bytes": 4302,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "head3_guide_rebuild_from_legacy_head2"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/front-brake-plate/csg.py",
+      "exists": true,
+      "sha256": "947178b2be8a9a5a0336b619692f62503c9d0921da9cac033e91771343bd707e",
+      "bytes": 1733,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "head3_guide_rebuild_from_legacy_head2"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/engine-head-v2.blend",
+      "exists": true,
+      "sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f",
+      "bytes": 12427744,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "head3_guide_rebuild_from_legacy_head2"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/check_export_v3.mjs",
+      "exists": true,
+      "sha256": "14648160175c27e9404a80970dcf64b2bf4eeaeb689491637ceeba950efce94c",
+      "bytes": 6831,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "C3_C4_C5_export_validation_inputs"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/check_export_v4.mjs",
+      "exists": true,
+      "sha256": "63e0f39ed1efe919c863b79bf6ddd5f4ce83f053e4a4ecac42fea05bb1f5ced0",
+      "bytes": 6920,
+      "git_state": "untracked",
+      "roles": [
+        "C3_C4_C5_export_validation_inputs"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/check_export_v5.mjs",
+      "exists": true,
+      "sha256": "a126746451adea9f482e9459935da2cfa224b4c6e68eb898a26790eaecf0338b",
+      "bytes": 6997,
+      "git_state": "untracked",
+      "roles": [
+        "C3_C4_C5_export_validation_inputs"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/instruments-v2-inspection.glb",
+      "exists": true,
+      "sha256": "444071ff19367a78aa9d2e7a70ebaf33ae78f0f014ed66ca0f9223927f66d30e",
+      "bytes": 2081596,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "C3_C4_C5_export_validation_inputs"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/instruments-v3-inspection.glb",
+      "exists": true,
+      "sha256": "d49d08333d727dbd4441c70976a45d2be07db010674d52372fa26191d4f26252",
+      "bytes": 2100028,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "C3_C4_C5_export_validation_inputs"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/instruments-v4-inspection.glb",
+      "exists": true,
+      "sha256": "1d929388bbb30b661fe62da4ce3cdeb5d3512ca8c944c801ef7f3b31b1cfe392",
+      "bytes": 1984080,
+      "git_state": "untracked",
+      "roles": [
+        "C3_C4_C5_export_validation_inputs"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/instruments-v5-inspection.glb",
+      "exists": true,
+      "sha256": "284ae9cbc78276eb5341e2b03b1cd78a2b48a1fb0edf7bf1c0396c8a59dd767a",
+      "bytes": 2002512,
+      "git_state": "untracked",
+      "roles": [
+        "C3_C4_C5_export_validation_inputs"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "creative/reviews/instruments-v5/source-geometry-check.json",
+      "exists": true,
+      "sha256": "89e414131518a701c17b49693f561bee110e6cc32b345ef232411b156d1f8a1a",
+      "bytes": 22571,
+      "git_state": "untracked",
+      "roles": [
+        "C3_C4_C5_export_validation_inputs"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "creative/reviews/instruments-v5/revision-chain.json",
+      "exists": true,
+      "sha256": "cb5d6d37d6ea2b90443c80b9a49f5aec6fdbd202acb77fcec1fe2ef64790785d",
+      "bytes": 1488,
+      "git_state": "untracked",
+      "roles": [
+        "C3_C4_C5_export_validation_inputs"
+      ],
+      "groups": [
+        "instruments5"
+      ]
+    },
+    {
+      "path": "tools/build_motorcycle18_assembly_v2.py",
+      "exists": true,
+      "sha256": "4957336316a9ca32061ab4f7aaf9384bba38d4f0415cc952621e25aec67e12da",
+      "bytes": 10584,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "tools/motorcycle-lab/catalog.json",
+      "exists": true,
+      "sha256": "6b290a59600782538cef57ae288072f0ef82a7fa510bf74dc4c05a5c2da583d8",
+      "bytes": 54890,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "creative/research/cockpit-current-review-bindings-v1.json",
+      "exists": true,
+      "sha256": "479828dc3e57502ac1dbcace2138d9e5155958e04550b087625b795ddd146790",
+      "bytes": 476,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "app/public/materials/kloppenheim_06_puresky_1k.hdr",
+      "exists": true,
+      "sha256": "206c67e3a1b992282821cf06662bdd69bbb4915c1c4444a66338a40d6a7d4e34",
+      "bytes": 1173154,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "tools/remove_unused_review_tangents.mjs",
+      "exists": true,
+      "sha256": "7e9d1545c7c7caad9cd3fd867fdb62035fc7056a70ca2f7ecc3a6c51479884f4",
+      "bytes": 2620,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/cockpit-current-review-v3/cockpit-current-review-v3-inspection.glb",
+      "exists": true,
+      "sha256": "9effe4a2044fdeedb82afda9f47a20092475428374f4be62cc7b8991e00f6b24",
+      "bytes": 52072452,
+      "git_state": "untracked",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/handlebar/handlebar-v1.blend",
+      "exists": true,
+      "sha256": "1385ccc667f30681e334ce96aff71d2214794238c5b31e0a1fd4b75b8ad6652a",
+      "bytes": 8272527,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/handlebar-grips/handlebar-grips-v3.blend",
+      "exists": true,
+      "sha256": "8ba577ea4078850569394d7d17e6e6d868e590bb287b329da3c0600706351381",
+      "bytes": 10118648,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/handlebar-clamps/handlebar-clamps-v1.blend",
+      "exists": true,
+      "sha256": "416fd21980fe4425628bf7414607c8c37c12dea4f70965e0bac67c721d7e14c5",
+      "bytes": 8666593,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/throttle-control/throttle-control-v1.blend",
+      "exists": true,
+      "sha256": "1c0747975fbdcd2ada2140f2461ff359940967aa1a3036e2b7e0a3d24221237f",
+      "bytes": 257755,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/switchgear-left/switchgear-left-v3.blend",
+      "exists": true,
+      "sha256": "a8cde7758ea9c96f2eac7c2d7ba817b4a353935a0a62ac2d53d0003e8e9bdeea",
+      "bytes": 885270,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/switchgear-right/switchgear-right-v1.blend",
+      "exists": true,
+      "sha256": "84182072eb72607cf3b9a029cf4e09964f8b4a86df612bfed912d0d666e9087c",
+      "bytes": 908061,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/clutch-control/clutch-control-v2.blend",
+      "exists": true,
+      "sha256": "586b41d08fd0cb8a9caad66e7cbe83af1592aad42e6def823135f99b6f200059",
+      "bytes": 1722052,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/front-brake-control/front-brake-control-v2.blend",
+      "exists": true,
+      "sha256": "6ab2f1ecb322f92a1f26643a149e7b2b93691dc91d3fb2e965c8b8f55733b2e1",
+      "bytes": 1626367,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/mirrors/mirror-left-v2.blend",
+      "exists": true,
+      "sha256": "7725731e869b6edeea744965054518659eeb6355f6acc670718738a8144b1a30",
+      "bytes": 4048771,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/mirrors/mirror-right-v3.blend",
+      "exists": true,
+      "sha256": "4be6e74518d7e0a6baccfc66c136cba148882183bf1d6020ac329ed9c0c32c60",
+      "bytes": 4085431,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/ignition-lock/ignition-lock-v1.blend",
+      "exists": true,
+      "sha256": "63447081802d85b8d9b61463f59aea6cc3db8aa72380ee9f66a960113707c4ef",
+      "bytes": 350130,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/cockpit-cables/cockpit-cables-v2.blend",
+      "exists": true,
+      "sha256": "1e836f483c6d682a47dc072377971d35aa927f50a53a51e9ab0cef37e0d18279",
+      "bytes": 470582,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instruments/instruments-v5.blend",
+      "exists": true,
+      "sha256": "3d662c0c35ec9d7ff6b00315d28fc9b3bd2e519771b3fc3f48470a0033ef3951",
+      "bytes": 636424,
+      "git_state": "untracked",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup",
+        "current_frozen_editable_or_delivery_output"
+      ],
+      "groups": [
+        "cockpit3",
+        "instruments5"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/instrument-visor/instrument-visor-v1.blend",
+      "exists": true,
+      "sha256": "c790ffbba0a49f4d63e2dcf85a30cf88eb1aa8c6edd847514c041e5c0fa70f15",
+      "bytes": 1222715,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "cockpit3_generate_from_editable_sources_then_raw_export_cleanup"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "creative/reviews/cockpit-current-review-v3/source-geometry-check-delivery-v1.json",
+      "exists": true,
+      "sha256": "38b55c4dcfd8c83156be41046666370b2a04bddd3c8d58bb7f403b5aa2431f03",
+      "bytes": 8230,
+      "git_state": "untracked",
+      "roles": [
+        "cockpit3_delivery_proof_or_output"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "creative/reviews/cockpit-current-review-v3/unused-tangent-removal-v1.json",
+      "exists": true,
+      "sha256": "9500226411544cfd4489c3b589599fe98204cc4a14b80635fc4bad4284da1e85",
+      "bytes": 13413,
+      "git_state": "untracked",
+      "roles": [
+        "cockpit3_delivery_proof_or_output"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/cockpit-current-review-v3/cockpit-current-review-v3-delivery.glb",
+      "exists": true,
+      "sha256": "6b0b4e3630b0594e4e1e14a1c0f8ede9f0d9f896f18dad5fea24835302fefb53",
+      "bytes": 52070148,
+      "git_state": "untracked",
+      "roles": [
+        "cockpit3_delivery_proof_or_output"
+      ],
+      "groups": [
+        "cockpit3"
+      ]
+    },
+    {
+      "path": "package.json",
+      "exists": true,
+      "sha256": "a39ce3bafb566edaf92a27fec2c35e3bd40550136b20ac501e56bcaa01c3a998",
+      "bytes": 782,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "environment_definition"
+      ],
+      "groups": [
+        "environment"
+      ]
+    },
+    {
+      "path": "package-lock.json",
+      "exists": true,
+      "sha256": "f7806a8afda3413efb6d3cec57482f51fda453b3350e784f1e6e90cf8604f014",
+      "bytes": 74605,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "environment_definition"
+      ],
+      "groups": [
+        "environment"
+      ]
+    },
+    {
+      "path": "tools/requirements-assets.txt",
+      "exists": true,
+      "sha256": "d37fb80e0a2bf34bf6e388eb968a144b27ce368350d49a9df4ae2b7aa30d2447",
+      "bytes": 110,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "environment_definition"
+      ],
+      "groups": [
+        "environment"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/engine-head-v3-inspection.glb",
+      "exists": true,
+      "sha256": "5b6cce778ea3f83f2b5e22da8c1f6b61d7976090e80e91a224bf50f8b6c9bbef",
+      "bytes": 4437724,
+      "git_state": "untracked",
+      "roles": [
+        "current_frozen_editable_or_delivery_output"
+      ],
+      "groups": [
+        "head3"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-stub/engine-ohc-stub-v1.blend",
+      "exists": true,
+      "sha256": "285eca8f5345efbfe31da9d2cc95464edcd9070a2e2e902e1e74990b2fb110c0",
+      "bytes": 487651,
+      "git_state": "untracked",
+      "roles": [
+        "current_frozen_editable_or_delivery_output"
+      ],
+      "groups": [
+        "stub1"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-ohc-stub/engine-ohc-stub-inspection.glb",
+      "exists": true,
+      "sha256": "d168bf18cb188c445c534b6bc571ad3d3dbde6929ffb7d0f39ca5fa1becd6aa1",
+      "bytes": 835556,
+      "git_state": "untracked",
+      "roles": [
+        "current_frozen_editable_or_delivery_output"
+      ],
+      "groups": [
+        "stub1"
+      ]
+    },
+    {
+      "path": "creative/reviews/engine-ohc-stub-v1/review-manifest.json",
+      "exists": true,
+      "sha256": "55c8a639a3ff33997e07dfac939dba8107ff8323556d421573c86dd5085959f5",
+      "bytes": 7300,
+      "git_state": "untracked",
+      "roles": [
+        "owner_final_manifest_appeared_during_audit"
+      ],
+      "groups": [
+        "stub1"
+      ]
+    }
+  ],
+  "clean_regeneration_executed": false,
+  "art_accepted": false,
+  "stub_phase_evolution": {
+    "first_observation": "preflight24 source frozen; render-report existed; final review-manifest absent, owner finales in progress",
+    "final_read_utc": "2026-10-21T04:46:07.578921+00:00",
+    "final_owner_review_manifest": "creative/reviews/engine-ohc-stub-v1/review-manifest.json",
+    "sha256": "55c8a639a3ff33997e07dfac939dba8107ff8323556d421573c86dd5085959f5",
+    "files": 35,
+    "source_sha256_unchanged": true,
+    "all35owner_manifest_file_hashes_match": true,
+    "owner_claim": "Three actual checkpointed96 views closed in final review manifest",
+    "independent_96_images_opened_by_this_audit": false,
+    "art_accepted": false
+  }
+}

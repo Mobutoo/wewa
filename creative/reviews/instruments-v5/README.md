@@ -1,0 +1,7 @@
+# Compteurs v5 — deux nouvelles vues ciblées
+
+Le dos entier des compteurs et le carter en contexte clé/faisceau ont été sauvés en Cycles96/OIDN CPU puis réellement ouverts. PNG et EXR multilayer32 privés sont reliés aux sources, protocole et caméras par checkpoints. Les passes bruitées/albédo/normales sont contrôlées dans l’en-tête EXR. Le contexte conserve exactement la caméra/lumières et les composants gelés de cockpit-cablesv2 ; seule la copie du carter5 est utilisée en RAM, sans nouvelle source d’assemblage.
+
+La v4 intermédiaire reste gelée avec ses aperçus : le carter y était corrigé mais les fonds des deux pods conservaient un faux creux de normales. Aucun96 ni enregistrement4. La v5 garde le carter4, corrige uniquement les caps réellement plans des deux pods et leurs limites de normales. La chaîne3→4→5 protège positions/topologie/UV/matières/matrices, cadrans, USB, angles et contrôleurs. Les autres176objets sources et173nœuds de maillage GLB restent exacts par rapport à4. Une nouvelle séparation de normales peut modifier la duplication de sommets/indexage, sans déplacer de triangle physique.
+
+Les dimensions, profondeur, montage et grain restent estimés ; l’identité RDC exacte et les angles de calibration ne sont pas établis. LCD1–5 = démonstration d’affichage, sans certification du nombre de rapports. Les réserves de reflets HDR des vitres restent ouvertes. Aucun essai physique iPhone, parité d’apparence moteur ou réception artistique n’est déduit de ces contrôles.

@@ -1,0 +1,13 @@
+{
+  "schema":1,
+  "revision":"instruments-v4",
+  "stage":"Targeted normal correction after read-only source and real context inspection",
+  "baseline_source_sha256":"2ac37623a2e8df558373233228a6b936b143b6ff282e8ab6e70f08e27675e7da",
+  "changed_object_only":"Shaped central cluster cover",
+  "cause":"All152side polygons of a continuously sampled Catmull outline remain flat shaded; WeightedNormal does not enable their smoothing.",
+  "method":"Keep the two broad caps flat and cap-to-side boundaries sharp. Give only the continuous side outline a smooth custom normal field derived from its adjacent side tangents before the existing bevel. Preserve bevel geometry/width/segments; enable hardened field transport and remove the redundant WeightedNormal on this object only.",
+  "protected":"All source/evaluated positions, topology, UV, material and transforms on the cover; all evaluated geometry/normals/UV/matrices/materials of every other node; dial artwork, USB, glass normal splits, angles/pivots/controls.",
+  "rejection":"Reject if evaluated triangle positions or volume move, any cap becomes crowned, other node buffers change or actual macro still shows segment bands.",
+  "previews":"Same protocol whole rear and cover detail; actual8sample previews read before96. Source/export hash check and no near clipping. No physical shape recalibration or currentRDC measurement inferred.",
+  "art_accepted":false
+}

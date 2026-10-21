@@ -1,0 +1,23 @@
+{
+  "schema": "wewa.static-recipe-closure.v1",
+  "date_utc": "2026-10-21T04:52:49.231099+00:00",
+  "audit_report_sha256": "aa5ff0a153202b59a31047a2214b462b81acfe28d3fbc5d4d140d57c12d67df4",
+  "actual_dependency_paths_at_audit": 106,
+  "mutable_catalogue_excluded_from_file_pins": true,
+  "catalogue_snapshot": {
+    "path": "creative/research/motorcycle-source-dependencies-publication09-v1/catalogue-snapshot-v1.json",
+    "sha256": "e459737c2f8b9e65e77c97219ebe31ff314e588fa63326d60f41dd7edee15606"
+  },
+  "reason": "The static audit captured the live catalogue at its snapshot time. Root subsequently added rear-rim and labeled spark-plugv1 diagnostic. No already frozen source changed. Do not pin the live catalogue in a historical manifest: later allowed additions would invalidate it.",
+  "rebuild_scope": "Static dependency closure only. Builder2 reads the catalogue in its Git checkout; exact reproduction must use the published source tree/catalogue or the saved snapshot in an isolated checkout. No clean regeneration or byte-identical rebuild executed.",
+  "private_documentary_guard": {
+    "path": "/workspace/wewa-assets/references/instruments/official-rdc-usb-meter.png",
+    "exists": true,
+    "sha256": "eb8e10531cbd7f37c1825044a535c07a8549872975440233d86d581b6e3c2663",
+    "expected_sha256": "eb8e10531cbd7f37c1825044a535c07a8549872975440233d86d581b6e3c2663",
+    "consumer": "assets-src/moto-components/instruments/build_usb_v2_study_r2.py",
+    "read_purpose": "read_bytes only to assert documentary reference SHA; pixels do NOT generate mesh or texture",
+    "publish": false
+  },
+  "art_accepted": false
+}

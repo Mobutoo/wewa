@@ -912,7 +912,7 @@
       "details": "Source isolée : centre d’axe à l’origine, tube +Z, +X extérieur pilote gauche, +Y pilote. Talon et corps continus, poche et passages réels ; dimensions apparentées/estimées. Col48mm incompatible avec l’ouverture basse40,6mm du soufflet actuel : aucun montage certifié."
     },
     "instruments-v3": {
-      "label": "Compteurs v3 — normales de vitre corrigées",
+      "label": "Compteurs v3 — historique avant correction des normales arrière",
       "review": "instruments-v3",
       "files": [
         "instruments/instruments-v3-inspection.glb"
@@ -951,7 +951,7 @@
       "collection": "WEWA_INSTRUMENTS_SEPARATE_PARTS",
       "readme": "README_v3.md",
       "component_id": "MOTO-INSTRUMENTS-001",
-      "details": "Deux vitres : raccord de normales face/tranche corrigé ; 173 autres nœuds protégés. Géométrie physique, marquages, matières et pivots inchangés. Calibration/dimensions estimées ; états LCD1–5 de démonstration, aucun nombre de rapports RDC certifié."
+      "details": "Ancienne révision avec bord de verre corrigé ; normales du cache et des fonds de boîtiers encore facettées/faussement creuses. Révision5 courante, données des anciennes images inchangées. Aucun montage complet ou appareil physique qualifié."
     },
     "mount-nyloc-v3": {
       "label": "Écrou Nyloc v3 — frontières du filet corrigées",
@@ -1277,7 +1277,7 @@
       "details": "Un seul longeron creux observé, deux cintrages et extrémités ouvertes. Repère localYZ/+Xface photographiée conditionnelle ; section, portée, profondeur et côté estimés. Ni longeron opposé, traverse, platine, fixation de repose-pied ni soudure montés."
     },
     "engine-head-v2": {
-      "label": "Culasse — corps extérieur UG5 conditionnel v2",
+      "label": "Culasse v2 — historique avant correction des raccords",
       "lot": 17,
       "review": "engine-head-v2",
       "source": "engine-head/engine-head-v2.blend",
@@ -1288,7 +1288,7 @@
         "engine-head/engine-head-v2-inspection.glb"
       ],
       "rigs": [],
-      "details": "Corps extérieur seul, coque fermée et passages observables. Trois centres photo comme aide affine non métrique ; faux quatrième trou supprimé, quatrième colonne haute sans connexion inférieure inventée. Couvercles, bougie, joints et mécanismes séparés. Profondeurs, visibilité interne, cotes, variante exacte RDC, interfaces et matière non réceptionnées."
+      "details": "Source historique : conflits501/453/358avec les trois couvercles conservés dans les preuves. La culassev3 est la révision courante, sans déplacement des couvercles. Corps apparenté, dimensions et finition toujours conditionnelles."
     },
     "frame-seat-rail-observed": {
       "label": "Cadre — un longeron observé sous selle",
@@ -1405,7 +1405,134 @@
       ],
       "rigs": [],
       "source_frame": "provisional_engine_head_seat",
-      "details": "Corps apparenté52JV0145 à trois oreilles. Embout métallique, vis et joint distincts non fabriqués. Sections/dos estimés, concentrations de reflets réservées ; conflit358contre ailette de culassev2, montage bloqué."
+      "details": "Corps apparenté52JV0145 à trois oreilles. Embout métallique désormais fabriqué séparément ; vis et joint restent ouverts. Ancien conflit358contre culassev2 conservé, nouvelle paire contre culassev3 sans croisement/inclusion échantillonnés. Sections, dos, finition et montage réel non reçus."
+    },
+    "instruments-v5": {
+      "label": "Compteurs v5 — carter continu et fonds plans",
+      "review": "instruments-v5",
+      "files": [
+        "instruments/instruments-v5-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "speed_angle",
+          "label": "Aiguille vitesse — angle relatif de revue",
+          "node": "SPEED_NEEDLE_PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -270,
+          "max": 0,
+          "initial": 0,
+          "step": 1
+        },
+        {
+          "id": "fuel_angle",
+          "label": "Aiguille carburant — angle relatif de revue",
+          "node": "FUEL_NEEDLE_PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -28,
+          "max": 52,
+          "initial": 0,
+          "step": 1
+        }
+      ],
+      "source": "instruments/instruments-v5.blend",
+      "collection": "WEWA_INSTRUMENTS_SEPARATE_PARTS",
+      "readme": "README_v5.md",
+      "component_id": "MOTO-INSTRUMENTS-001",
+      "details": "Révisions3→4→5 limitées aux normales du carter central et des deux fonds de pods. Géométrie/UV/matières/rigs conservés, bords de verre corrigés en3 préservés. Identité, cotes, supports et montage RDC restent à recevoir."
+    },
+    "engine-head-v3": {
+      "label": "Culasse v3 — sections OHC raccordées, interfaces estimées",
+      "lot": 17,
+      "review": "engine-head-v3",
+      "source": "engine-head/engine-head-v3.blend",
+      "collection": "WEWA_ENGINE_HEAD",
+      "component_id": "MOTO-ENGINE-HEAD-001",
+      "readme": "README_v3.md",
+      "files": [
+        "engine-head/engine-head-v3-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Corps UG5 apparenté : sections OHC progressives, reliefs de flanc observés, sièges conservés. Caps inchangés ; contrôles de surfaces et inclusion échantillonnée nuls dans cette paire estimée. Dimensions, profondeurs, plans de joint, variante et matière non reçus."
+    },
+    "engine-ohc-stub": {
+      "label": "Culasse — embout métallique OHC seul",
+      "lot": 17,
+      "review": "engine-ohc-stub-v1",
+      "source": "engine-ohc-stub/engine-ohc-stub-v1.blend",
+      "collection": "WEWA_ENGINE_OHC_STUB",
+      "component_id": "MOTO-ENGINE-OHC-STUB-001",
+      "files": [
+        "engine-ohc-stub/engine-ohc-stub-inspection.glb"
+      ],
+      "rigs": [],
+      "source_frame": "provisional_engine_head_seat",
+      "details": "Tube métallique creux et lèvre distale observée sur couvercle apparenté52JV0145. Dimensions, insertion cachée et axe estimés ; contrôles numériques sur candidats head3/OHC1, pas de montage réel certifié. Durite, filetage et fixations distincts."
+    },
+    "engine-spark-plug": {
+      "label": "Bougie extérieure v1 — diagnostic du chanfrein à reprendre",
+      "lot": 17,
+      "review": "engine-spark-plug-v1",
+      "source": "engine-spark-plug/engine-spark-plug-v1.blend",
+      "collection": "WEWA_ENGINE_SPARK_PLUG_EXTERIOR",
+      "component_id": "MOTO-ENGINE-SPARK-PLUG-001",
+      "files": [
+        "engine-spark-plug/engine-spark-plug-inspection.glb"
+      ],
+      "rigs": [],
+      "source_frame": "provisional_engine_head_seat",
+      "details": "Diagnostic conservé : bord en marches visible sur la jonction chanfrein/hexagone dans le vrai rendu96. Révision analytique séparée prévue. Extérieur conditionnel, insertion cachée lisse sans électrode/filetage ; cettev1 n’est pas inscrite comme nouvelle pièce courante."
+    },
+    "rear-rim": {
+      "label": "Jante arrière — cinq branches et enveloppe annulaire partielle",
+      "lot": 16,
+      "review": "rear-rim-v1",
+      "source": "rear-rim/rear-rim-v1.blend",
+      "collection": "WEWA_REAR_RIM_ISOLATED",
+      "component_id": "MOTO-RIM-REAR-001",
+      "files": [
+        "rear-rim/rear-rim-inspection.glb"
+      ],
+      "rigs": [],
+      "source_frame": "isolated_local",
+      "details": "Cinq branches argent observées RDC, diamètre nominal17pouces. Jante extérieure et paroi annulaire du moyeu seulement ; web central masqué, roulements et couplage non fabriqués. Profil, largeur et dimensions du centre estimés, position assemblée non fixée."
+    },
+    "engine-spark-cap": {
+      "label": "Capuchon HT v1 — profil et grain à reprendre",
+      "lot": 17,
+      "review": "engine-spark-cap-v1",
+      "source": "engine-spark-cap/engine-spark-cap-v1.blend",
+      "collection": "WEWA_ENGINE_SPARK_CAP",
+      "component_id": "MOTO-ENGINE-SPARK-CAP-001",
+      "files": [
+        "engine-spark-cap/engine-spark-cap-inspection.glb"
+      ],
+      "rigs": [],
+      "source_frame": "provisional_engine_head_seat",
+      "details": "Diagnostic actuel confirmé sur deux profils gris et deux photos : épaulement en S trop arrondi, substrat trop lisse. Cap1 demeure candidat examinable en rework ; révision2 séparée en préparation. Sources/matrices et preuves1 intactes, aucun câble HT ou mécanisme interne complet."
+    },
+    "engine-spark-plug-v2": {
+      "label": "Bougie extérieure v2 — chanfrein reconstruit",
+      "lot": 17,
+      "review": "engine-spark-plug-v2",
+      "source": "engine-spark-plug/engine-spark-plug-v2.blend",
+      "collection": "WEWA_ENGINE_SPARK_PLUG_EXTERIOR",
+      "component_id": "MOTO-ENGINE-SPARK-PLUG-001",
+      "readme": "README_v2.md",
+      "files": [
+        "engine-spark-plug/engine-spark-plug-v2-inspection.glb"
+      ],
+      "rigs": [],
+      "source_frame": "provisional_engine_head_seat",
+      "details": "Corps métallique à intersection cône/hex analytique ; rondelle, céramique, borne, matières et matrices préservées. Anciennev1 en marches conservée diagnostic. Diamètre10/clé16/portée12,5mm de référence apparentée, autres cotes et identité RDC conditionnelles ; insertion lisse cachée sans filetage/électrode."
     }
   }
 }

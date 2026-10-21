@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-RIM-REAR-001",
-  "label": "Jante arri\u00e8re cinq branches \u2014 candidat conditionnel",
+  "label": "Jante arrière — cinq branches et enveloppe annulaire partielle",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,13 +12,13 @@
     "material"
   ],
   "identity": {
-    "variant": "Current RDC five-spoke rear alloywheel observed; exact OEMcode, width and hubinterfaces unknown",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
-    "usage": "Isolated visible casting, separate tyre/valve/carrier/brake/bearings/axle excluded",
+    "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
-      0.25,
-      0.6,
-      1.5
+      0.15,
+      0.35,
+      0.65
     ]
   },
   "source_register": "../sources.json",
@@ -34,7 +34,7 @@
       "value": 0.4318,
       "unit": "m",
       "source": "D01",
-      "locator": "17inch rear alloyrim spec;17\u00d725.4mm conversion",
+      "locator": "17inch rear alloyrim spec;17×25.4mm conversion",
       "status": "documented_exact_variant",
       "scope": "Nominaldesignation only, not rim outside or inflated tyre diameter"
     },
@@ -55,7 +55,260 @@
       }
     }
   ],
-  "views": [],
+  "views": [
+    {
+      "name": "quarter",
+      "camera_location_m": [
+        0.65,
+        0.4,
+        0.3
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale_m": 0.56,
+      "allow_deliberate_macro_crop": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          10.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.6620326466421234,
+        "farthest_actual_vertex_depth_m": 0.9780892916323496,
+        "projected_uv_min": [
+          0.13276447671145097,
+          0.0665432654482414
+        ],
+        "projected_uv_max": [
+          0.8672355194622352,
+          0.9334566052359454
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Rear casting native continuous surface - conditional candidate",
+            "vertices": 128578,
+            "depth_m": [
+              0.6620326466421234,
+              0.9780892916323496
+            ],
+            "projected_uv_min": [
+              0.13276447671145097,
+              0.0665432654482414
+            ],
+            "projected_uv_max": [
+              0.8672355194622352,
+              0.9334566052359454
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "d17fd8a5dbefa5d646551d9432b9e0a74c7f6971128898082903ddc06a1f98eb",
+      "checkpoint_file": "checkpoint-quarter.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "reverse",
+      "camera_location_m": [
+        -0.65,
+        0.4,
+        0.3
+      ],
+      "camera_target_m": [
+        0,
+        0,
+        0
+      ],
+      "ortho_scale_m": 0.56,
+      "allow_deliberate_macro_crop": false,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          10.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.6620326451657461,
+        "farthest_actual_vertex_depth_m": 0.9780892901559723,
+        "projected_uv_min": [
+          0.1327644805377648,
+          0.0665432654482414
+        ],
+        "projected_uv_max": [
+          0.867235523288549,
+          0.9334566052359454
+        ],
+        "allow_deliberate_crop": false,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Rear casting native continuous surface - conditional candidate",
+            "vertices": 128578,
+            "depth_m": [
+              0.6620326451657461,
+              0.9780892901559723
+            ],
+            "projected_uv_min": [
+              0.1327644805377648,
+              0.0665432654482414
+            ],
+            "projected_uv_max": [
+              0.867235523288549,
+              0.9334566052359454
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": false,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "4a0f651e62927401460073039a1a7064bbae2f82232326e39af6f085dda055c0",
+      "checkpoint_file": "checkpoint-reverse.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "spoke-root-detail",
+      "camera_location_m": [
+        0.28,
+        0.24,
+        0.14
+      ],
+      "camera_target_m": [
+        0.01,
+        0.18,
+        0.024
+      ],
+      "ortho_scale_m": 0.11,
+      "allow_deliberate_macro_crop": true,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          10.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.23269366406089909,
+        "farthest_actual_vertex_depth_m": 0.4757462239995587,
+        "projected_uv_min": [
+          -3.1323138995820665,
+          -1.7010972177801205
+        ],
+        "projected_uv_max": [
+          0.9769620285941261,
+          2.6365405812011655
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Rear casting native continuous surface - conditional candidate",
+            "vertices": 128578,
+            "depth_m": [
+              0.23269366406089909,
+              0.4757462239995587
+            ],
+            "projected_uv_min": [
+              -3.1323138995820665,
+              -1.7010972177801205
+            ],
+            "projected_uv_max": [
+              0.9769620285941261,
+              2.6365405812011655
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "a3777d5e4a54af39b97f66a985191eccb940dfb071e43b7d1c7769a202ce2840",
+      "checkpoint_file": "checkpoint-spoke-root-detail.json",
+      "reused_verified_checkpoint": false
+    },
+    {
+      "name": "rim-channel-detail",
+      "camera_location_m": [
+        0.16,
+        0.24,
+        0.23
+      ],
+      "camera_target_m": [
+        0,
+        0.17,
+        0.14
+      ],
+      "ortho_scale_m": 0.095,
+      "allow_deliberate_macro_crop": true,
+      "camera_preflight": {
+        "schema": "wewa.camera-preflight.v1",
+        "camera": "CAMERA",
+        "camera_type": "ORTHO",
+        "camera_clip_m": [
+          0.0010000000474974513,
+          10.0
+        ],
+        "nearest_actual_vertex_depth_m": 0.16920439159038647,
+        "farthest_actual_vertex_depth_m": 0.47313674685888474,
+        "projected_uv_min": [
+          -3.424270567954846,
+          -3.046548728210499
+        ],
+        "projected_uv_max": [
+          1.1453911622012207,
+          1.905308694860881
+        ],
+        "allow_deliberate_crop": true,
+        "whole_component_margin": 0.005,
+        "mesh_rows": [
+          {
+            "object": "Rear casting native continuous surface - conditional candidate",
+            "vertices": 128578,
+            "depth_m": [
+              0.16920439159038647,
+              0.47313674685888474
+            ],
+            "projected_uv_min": [
+              -3.424270567954846,
+              -3.046548728210499
+            ],
+            "projected_uv_max": [
+              1.1453911622012207,
+              1.905308694860881
+            ],
+            "finite": true
+          }
+        ],
+        "actual_vertices_outside_depth_range": false,
+        "projected_extent_outside_margin": true,
+        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+        "technical_preflight_passed": true,
+        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+      },
+      "PNG_sha256": "5d34f534e15da9c390e626869a29f83920600f3499d8d78c8ca33442ccef057b",
+      "checkpoint_file": "checkpoint-rim-channel-detail.json",
+      "reused_verified_checkpoint": false
+    }
+  ],
   "criteria": [],
   "gaps": [
     {
@@ -72,83 +325,128 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": null,
+      "revision": "rear-rim-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
       "reviewed_at": null
     },
     "G1": {
-      "status": "pending",
-      "revision": null,
+      "status": "blocked",
+      "revision": "rear-rim-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G2": {
-      "status": "pending",
-      "revision": null,
+      "status": "blocked",
+      "revision": "rear-rim-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
       "reviewed_at": null
     },
     "G3": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "rear-rim-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/rear-rim/rear-rim-v1.blend",
+          "kind": "editable_source",
+          "revision": "rear-rim-v1",
+          "sha256": "f97ddc5f4db07d0b97961a7a7282a9937efd68e16b82c159d581719948bb43d9"
+        },
+        {
+          "path": "../../reviews/rear-rim-v1/quarter.png",
+          "kind": "isolated_comparison",
+          "revision": "rear-rim-v1",
+          "sha256": "d17fd8a5dbefa5d646551d9432b9e0a74c7f6971128898082903ddc06a1f98eb"
+        }
+      ],
+      "reason": "Jante extérieure à cinq branches observées sur photos RDC et enveloppe annulaire externe du centre. Quatre vues96 effectivement ouvertes, dont deux macros. Un volume fermé avec ouvertures réelles, aucun web central caché, siège de roulement ou couplage fabriqué. Nominal17pouces documenté ; largeur/profil/sections/moyeu restent des estimations bornées.",
       "reviewed_at": null
     },
     "G4": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "rear-rim-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/rear-rim-v1/rim-channel-detail.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "rear-rim-v1",
+          "sha256": "5d34f534e15da9c390e626869a29f83920600f3499d8d78c8ca33442ccef057b"
+        }
+      ],
+      "reason": "Matière argentée originale avec deux cartes de travail512² ; grain/roughness/traitement de surface non mesurés. Quatre rendus96 et vrais pixels Babylon ouverts/contrôlés. Très claire sous ce studio, sans preuve de l’alliage ou peinture physique. Contrôle des vrais triangles : positions/normales/UV/tangentesG3→PBR identiques, seul le matériau change.",
       "reviewed_at": null
     },
     "G5": {
-      "status": "pending",
-      "revision": null,
+      "status": "blocked",
+      "revision": "rear-rim-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/rear-rim-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "rear-rim-v1",
+          "sha256": "833188534ab1a9b64355a02e041911023eb73b685052198048a7ad6df7e45f47"
+        },
+        {
+          "path": "../../reviews/rear-rim-v1/conditional-interface-limits.json",
+          "kind": "motion_or_interface_check",
+          "revision": "rear-rim-v1",
+          "sha256": "4e15670252659c9ff77c6c7a903543d3d6a8f4aa84d135c26ea75d36dcaf9e45"
+        }
+      ],
+      "reason": "Origine locale isolée au centre, axe+X ; aucun placement assemblé ou empilement axe/pneu/frein validé. Centre limité à une paroi annulaire extérieure, web/roulements/couplage absents. Nominal17in ne mesure ni les lèvres, ni largeur/profil/étanchéité tubeless. Une coque fermée ne prouve aucun raccord physique.",
       "reviewed_at": null
     },
     "G6": {
-      "status": "pending",
-      "revision": null,
+      "status": "rework",
+      "revision": "rear-rim-v1",
       "reviewer": null,
-      "evidence": [],
-      "reason": "",
+      "evidence": [
+        {
+          "path": "../../reviews/rear-rim-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "rear-rim-v1",
+          "sha256": "bb1e32ac2941652e5a612f6e55ae9070806169d620888aef937449f027b1ba1b"
+        },
+        {
+          "path": "../../reviews/rear-rim-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "rear-rim-v1",
+          "sha256": "f97a22cb215e4c7da8c5a726bf6a0177c7a7413439a940fb30c95ccabbd24e66"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": null,
+      "revision": "rear-rim-v1",
       "reviewer": null,
       "evidence": [],
-      "reason": "",
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
       "reviewed_at": null
     },
     "G8": {
       "status": "pending",
-      "revision": null,
+      "revision": "rear-rim-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
       "reviewed_at": null
     }
   },
-  "active_detailed_fabrication": true,
-  "source_revision": null,
-  "export_revision": null,
-  "next_action": "Own parametric rim section and five shaped spokes from opened references/bounded estimates, then actual GLB and native gray/reflection. Hidden hubmechanisms remain explicit exclusions.",
+  "active_detailed_fabrication": false,
+  "source_revision": "rear-rim-v1",
+  "export_revision": "rear-rim-v1-inspection",
+  "next_action": "Poursuivre pneu arrière et bras oscillant, puis revue de placement provisoire et des unités arrière séparées. Jante/enveloppe partielle ne vaut pas roue complète ou montage reçu.",
   "art_accepted": false,
-  "pending_revision": "rear-rim-v1",
   "production_group": 16,
   "linked_references": [
     {
@@ -159,5 +457,7 @@
       "path": "creative/research/rear-wheel-16/rim-preparation-v1.json",
       "sha256": "590f09400e8f8134a571467ef1913a734cab284cdfd6057bc78ab63a1eaa4c2c"
     }
-  ]
+  ],
+  "candidate_source": "../../../assets-src/moto-components/rear-rim/README.md",
+  "candidate_review": "../../reviews/rear-rim-v1/README.md"
 }

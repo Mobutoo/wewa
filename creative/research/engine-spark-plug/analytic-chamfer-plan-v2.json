@@ -1,0 +1,27 @@
+{
+  "component_id": "MOTO-ENGINE-SPARK-PLUG-001",
+  "revision": "engine-spark-plug-v2",
+  "reason": "Final96 macro confirms stepped bright boundary at top hex/cone intersection. V1 remains immutable diagnostic, no production/art acceptance.",
+  "method": [
+    "Extract existing rounded hex222point contour from v1 fullhex ring, preserve its YZ points.",
+    "For each contour radiusR(phi), compute exact conical boundaryX from cone equation; join variableX intersection loops to actual hex flats.",
+    "Construct smooth cone strips between exact loops, do not increase arbitrary axial ring count to hide stair edge.",
+    "Retain true C0 chamfer/mainflat boundaries as sharp edges; no exported tangent/packed normal repair.",
+    "Copy original blend, replace metal mesh only; protect washer/ceramic/terminal and original material/datum snapshots.",
+    "Check actual source closedvolume/area/index normals, actualGLB buffers and bothdirection sampled containment vs immutable head3 and cap69dc.",
+    "Open native-size gray/reflection/PBR macro before freeze, then fixed candidate context."
+  ],
+  "protected": [
+    "Washer raw mesh/material/matrices",
+    "Ceramic raw mesh/material/matrices",
+    "Terminal raw mesh/material/matrices",
+    "All original material values",
+    "Root datum/world pose and original otherparts parenting"
+  ],
+  "not_changed": [
+    "No cap/sourcehead moved or cut",
+    "No hidden thread or electrode fabricated",
+    "No imported texture or image retouch"
+  ],
+  "art_accepted": false
+}

@@ -295,7 +295,7 @@
       "reviewed_at": null
     },
     "G5": {
-      "status": "blocked",
+      "status": "rework",
       "revision": "engine-ohc-cover-v1",
       "reviewer": null,
       "evidence": [
@@ -310,9 +310,15 @@
           "kind": "motion_or_interface_check",
           "revision": "engine-ohc-cover-v1",
           "sha256": "c47f1fca18919672c4546f610bd2009f25c91502fd33815fce6aff66043dab5c"
+        },
+        {
+          "path": "../../reviews/engine-head-v3/caps-solid-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "paired_head3_unchanged_cap1",
+          "sha256": "6b5e40e6f5ffcbbfe96cbac8bba762cabc5c4a62ea2566de0dd5271af5283d42"
         }
       ],
-      "reason": "Raccord à culassev2 bloqué par358paires de triangles contre une ailette près de la portée. Aucun déplacement du couvercle de masquage. Head3 est une reprise distincte en cours, non reçue.",
+      "reason": "Nouveau contrôle conditionnel contre culassev3 fbbec8d9 : aucune paire traversante ni inclusion échantillonnée ; source et matrice de ce couvercle restent inchangées. Ancien raccord négatif contrev2 conservé en interface_history et dans ses preuves immuables. Le minimum sommet/surface ~0,400mm est échantillonné, pas un jeu exact ou joint réel. Visserie, joint, cotes, identité RDC et montage physique encore ouverts.",
       "reviewed_at": null
     },
     "G6": {
@@ -356,10 +362,41 @@
   "active_detailed_fabrication": false,
   "source_revision": "engine-ohc-cover-v1",
   "export_revision": "engine-ohc-cover-v1-inspection",
-  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "next_action": "Continuer les unités visibles séparées et vérifier le futur assemblage de revue moteur ; ancien conflit head2 conservé, paire head3 conditionnelle, pas de réception mécanique ou artistique.",
   "art_accepted": false,
   "production_group": 17,
   "working_revision": "engine-ohc-cover-v1",
   "candidate_source": "../../../assets-src/moto-components/engine-ohc-cover/README.md",
-  "candidate_review": "../../reviews/engine-ohc-cover-v1/README.md"
+  "candidate_review": "../../reviews/engine-ohc-cover-v1/README.md",
+  "interface_history": [
+    {
+      "paired_head_revision": "engine-head-v2",
+      "paired_head_source_sha256": "ca337fdfb6190818dc1b3ebe16fc1f55376d8d866f9213f11e5280d1998fe37f",
+      "surface_triangle_pairs": [
+        358
+      ],
+      "historical_gate": {
+        "status": "blocked",
+        "revision": "engine-ohc-cover-v1",
+        "reviewer": null,
+        "evidence": [
+          {
+            "path": "../../reviews/engine-ohc-cover-v1/source-geometry-check.json",
+            "kind": "motion_or_interface_check",
+            "revision": "engine-ohc-cover-v1",
+            "sha256": "d83e6e703ae1955f873b8590213c2fd1acb607670c74d6c73d5a7ef1cdb297ab"
+          },
+          {
+            "path": "../../reviews/engine-ohc-cover-v1/blocked-interface-localization.json",
+            "kind": "motion_or_interface_check",
+            "revision": "engine-ohc-cover-v1",
+            "sha256": "c47f1fca18919672c4546f610bd2009f25c91502fd33815fce6aff66043dab5c"
+          }
+        ],
+        "reason": "Raccord à culassev2 bloqué par358paires de triangles contre une ailette près de la portée. Aucun déplacement du couvercle de masquage. Head3 est une reprise distincte en cours, non reçue.",
+        "reviewed_at": null
+      },
+      "retained": true
+    }
+  ]
 }

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "revision": "instruments-v4",
+  "source_sha256": "08e9f51ab2a4a63bba45486155860b6fd36cd3c04368b16a38d19f87bd15d17d",
+  "export_sha256": "1d929388bbb30b661fe62da4ce3cdeb5d3512ca8c944c801ef7f3b31b1cfe392",
+  "baseline_source_sha256": "e3321cee34967f7749dbfa8650fe01c404137c55cfb5c42881363f098cb91ec0",
+  "baseline_export_sha256": "26f411564cc903308ce529b0100efe8d68f95a22a0a2e7e17dd4cf4e3f7364ba",
+  "documentary_image": {
+    "url": "https://cdn.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/features/boxer/125-hd/bm150_usb_feature_image.png",
+    "private_path": "/workspace/wewa-assets/references/instruments/official-rdc-usb-meter.png",
+    "sha256": "eb8e10531cbd7f37c1825044a535c07a8549872975440233d86d581b6e3c2663",
+    "use": "documentary shape observation only; no image pixels distributed as textures",
+    "variant_status": "Official RDC125HD page, BM150 filename; exact fitted assembly/year unknown"
+  },
+  "geometry_and_artwork": "Original editable Blender geometry and curves from observations, no OEM bitmap textures. WEWA wordmark original. USB motif appearance inferred, meaning/process unknown.",
+  "research": [
+    "creative/research/cockpit-core-shape-audit.json",
+    "creative/research/instruments-v2/PLAN.md",
+    "creative/research/instruments-v2/usb-shape-plan-r2.json",
+    "creative/research/instruments-v2/dial-artwork-plan.json",
+    "creative/research/instruments-v2/speed-dial-homography-independent.json"
+  ],
+  "original_normal_source": "assets-src/moto-components/mirrors/textures-left/polymer-normal.png",
+  "material_maps_authorship": "assets-src/moto-components/instruments/textures-v2/usb/authorship.json",
+  "checks": {
+    "protected_nodes": 135,
+    "protected_actual_buffers_bit_identical": true,
+    "zero_area_font_faces_removed": 8,
+    "font_positive_faces_preserved": true,
+    "unused_tangent_attributes_removed": 117,
+    "used_tangent_repairs": 0,
+    "optical_baseline_preserved": true
+  },
+  "limits": [
+    "All part dimensions, depth, rear mounts, surface grain and pose estimated.",
+    "No exact RDC partnumber or gear count certified.",
+    "Independent projective study does not constrain a replacement dial calibration.",
+    "Hidden USB connector, hinge and wiring unmodelled; odometer static.",
+    "No physical electrical, iPhone, optimisation or artistic acceptance."
+  ],
+  "art_accepted": false,
+  "baseline_v2_source_sha256": "dc4b3ccf26f35e3b4a4f10068306d841695901f987a43ebad65299cec132ad22",
+  "baseline_v2_export_sha256": "444071ff19367a78aa9d2e7a70ebaf33ae78f0f014ed66ca0f9223927f66d30e",
+  "optical_normal_correction": {
+    "objects": [
+      "SPEED clear closed lens",
+      "FUEL_GEAR clear closed lens"
+    ],
+    "method": "Source crease split at face/cut-edge transitions above30degrees; opaque bezels unchanged.",
+    "threshold_degrees_is_OEM_spec": false,
+    "source_geometry_UV_shader_optic_values_angles_and_controls_changed": false,
+    "actual_export_layout": "Lens normal discontinuities duplicate384vertices per lens and may reindex; all physical triangle corner positions identical. Other173mesh nodes actual buffers/materials/images/transforms bit-identical.",
+    "diagnostic": "creative/research/instruments-v2/optical-edge-diagnostic-reading.json"
+  },
+  "baseline_v3_source_sha256": "2ac37623a2e8df558373233228a6b936b143b6ff282e8ab6e70f08e27675e7da",
+  "baseline_v3_export_sha256": "d49d08333d727dbd4441c70976a45d2be07db010674d52372fa26191d4f26252",
+  "central_cover_normal_correction": {
+    "object": "Shaped central cluster cover",
+    "method": "Only continuous side outline normal field before existing bevel; broad caps flat, cap edges sharp. Redundant WeightedNormal removed on this object.",
+    "evaluated_positions_topology_UV_materials_worldmatrix_unchanged": true,
+    "all_other_source_nodes_bit_identical": 177,
+    "all_other_GLTF_mesh_node_buffers_materials_images_worldmatrices_bit_identical": 174,
+    "physical_shape_or_OEM_calibration_claim": false
+  }
+}

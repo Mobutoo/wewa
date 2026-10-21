@@ -1,0 +1,1553 @@
+{
+  "schema": "wewa.cockpit-current-contact-preparation.v3",
+  "assembly_source_sha256": "d29ccb05d1c10b638908f5751b962720a84606c12111fe5caee30e465df39b28",
+  "assembly_report_sha256": "38b55c4dcfd8c83156be41046666370b2a04bddd3c8d58bb7f403b5aa2431f03",
+  "checker_sha256": "27d552e7e96b0676388f2465168dca444e6ac1a4c518814437b444fc6a2ec769",
+  "source_hashes": {
+    "handlebar": "1385ccc667f30681e334ce96aff71d2214794238c5b31e0a1fd4b75b8ad6652a",
+    "grips-v3": "8ba577ea4078850569394d7d17e6e6d868e590bb287b329da3c0600706351381",
+    "clamps": "416fd21980fe4425628bf7414607c8c37c12dea4f70965e0bac67c721d7e14c5",
+    "throttle": "1c0747975fbdcd2ada2140f2461ff359940967aa1a3036e2b7e0a3d24221237f",
+    "switchgear-left-v3": "a8cde7758ea9c96f2eac7c2d7ba817b4a353935a0a62ac2d53d0003e8e9bdeea",
+    "switchgear-right": "84182072eb72607cf3b9a029cf4e09964f8b4a86df612bfed912d0d666e9087c",
+    "clutch-control": "586b41d08fd0cb8a9caad66e7cbe83af1592aad42e6def823135f99b6f200059",
+    "front-brake-control": "6ab2f1ecb322f92a1f26643a149e7b2b93691dc91d3fb2e965c8b8f55733b2e1",
+    "mirror-left-v2": "7725731e869b6edeea744965054518659eeb6355f6acc670718738a8144b1a30",
+    "mirror-right-v3": "4be6e74518d7e0a6baccfc66c136cba148882183bf1d6020ac329ed9c0c32c60",
+    "ignition-lock": "63447081802d85b8d9b61463f59aea6cc3db8aa72380ee9f66a960113707c4ef",
+    "cockpit-cables-v2": "1e836f483c6d682a47dc072377971d35aa927f50a53a51e9ab0cef37e0d18279",
+    "instruments-v5": "3d662c0c35ec9d7ff6b00315d28fc9b3bd2e519771b3fc3f48470a0033ef3951",
+    "instrument-visor": "c790ffbba0a49f4d63e2dcf85a30cf88eb1aa8c6edd847514c041e5c0fa70f15"
+  },
+  "input_snapshot_sha256": "77d265834b887c3addd3abecb29f9a48c51f4779d761a0dbee472eda20bb256a",
+  "cable_world_matrices": {
+    "M18 [cockpit-cables-v2] Visible descending front sheath A - fun": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "M18 [cockpit-cables-v2] Visible descending front sheath B - fun": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "M18 [cockpit-cables-v2] Visible ignition pigtail loop - connect": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  },
+  "guides_reactivated_in_memory": [],
+  "checks": [
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH switch upper shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH switch lower shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH dipper rocker - high low",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH turn selector - centre push",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH horn push tongue",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch cast perch - fixed candidate",
+      "b": "M18 [switchgear-left-v3] LH switch upper shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch cast perch - fixed candidate",
+      "b": "M18 [switchgear-left-v3] LH switch lower shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch cast perch - fixed candidate",
+      "b": "M18 [switchgear-left-v3] LH dipper rocker - high low",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch cast perch - fixed candidate",
+      "b": "M18 [switchgear-left-v3] LH turn selector - centre push",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch cast perch - fixed candidate",
+      "b": "M18 [switchgear-left-v3] LH horn push tongue",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch hollow cable barrel adjuster",
+      "b": "M18 [switchgear-left-v3] LH switch upper shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch hollow cable barrel adjuster",
+      "b": "M18 [switchgear-left-v3] LH switch lower shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch hollow cable barrel adjuster",
+      "b": "M18 [switchgear-left-v3] LH dipper rocker - high low",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch hollow cable barrel adjuster",
+      "b": "M18 [switchgear-left-v3] LH turn selector - centre push",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch hollow cable barrel adjuster",
+      "b": "M18 [switchgear-left-v3] LH horn push tongue",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch adjuster locknut",
+      "b": "M18 [switchgear-left-v3] LH switch upper shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch adjuster locknut",
+      "b": "M18 [switchgear-left-v3] LH switch lower shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch adjuster locknut",
+      "b": "M18 [switchgear-left-v3] LH dipper rocker - high low",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch adjuster locknut",
+      "b": "M18 [switchgear-left-v3] LH turn selector - centre push",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch adjuster locknut",
+      "b": "M18 [switchgear-left-v3] LH horn push tongue",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch pivot pin - fixed candidate",
+      "b": "M18 [switchgear-left-v3] LH switch upper shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch pivot pin - fixed candidate",
+      "b": "M18 [switchgear-left-v3] LH switch lower shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch pivot pin - fixed candidate",
+      "b": "M18 [switchgear-left-v3] LH dipper rocker - high low",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch pivot pin - fixed candidate",
+      "b": "M18 [switchgear-left-v3] LH turn selector - centre push",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch pivot pin - fixed candidate",
+      "b": "M18 [switchgear-left-v3] LH horn push tongue",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch lower pivot nut",
+      "b": "M18 [switchgear-left-v3] LH switch upper shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch lower pivot nut",
+      "b": "M18 [switchgear-left-v3] LH switch lower shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch lower pivot nut",
+      "b": "M18 [switchgear-left-v3] LH dipper rocker - high low",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch lower pivot nut",
+      "b": "M18 [switchgear-left-v3] LH turn selector - centre push",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_rest",
+      "a": "M18 [clutch-control] Clutch lower pivot nut",
+      "b": "M18 [switchgear-left-v3] LH horn push tongue",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH switch upper shell - editable",
+      "pose": {
+        "pull_degrees": 3
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH switch lower shell - editable",
+      "pose": {
+        "pull_degrees": 3
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH dipper rocker - high low",
+      "pose": {
+        "pull_degrees": 3
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH turn selector - centre push",
+      "pose": {
+        "pull_degrees": 3
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH horn push tongue",
+      "pose": {
+        "pull_degrees": 3
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH switch upper shell - editable",
+      "pose": {
+        "pull_degrees": 6
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH switch lower shell - editable",
+      "pose": {
+        "pull_degrees": 6
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH dipper rocker - high low",
+      "pose": {
+        "pull_degrees": 6
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH turn selector - centre push",
+      "pose": {
+        "pull_degrees": 6
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH horn push tongue",
+      "pose": {
+        "pull_degrees": 6
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH switch upper shell - editable",
+      "pose": {
+        "pull_degrees": 9
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH switch lower shell - editable",
+      "pose": {
+        "pull_degrees": 9
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH dipper rocker - high low",
+      "pose": {
+        "pull_degrees": 9
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH turn selector - centre push",
+      "pose": {
+        "pull_degrees": 9
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH horn push tongue",
+      "pose": {
+        "pull_degrees": 9
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH switch upper shell - editable",
+      "pose": {
+        "pull_degrees": 12
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH switch lower shell - editable",
+      "pose": {
+        "pull_degrees": 12
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH dipper rocker - high low",
+      "pose": {
+        "pull_degrees": 12
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH turn selector - centre push",
+      "pose": {
+        "pull_degrees": 12
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "clutch-control_current_switch_motion",
+      "a": "M18 [clutch-control] Clutch lever - moving candidate",
+      "b": "M18 [switchgear-left-v3] LH horn push tongue",
+      "pose": {
+        "pull_degrees": 12
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH switch upper shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH switch lower shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH observed red top control - function u",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH estimated black actuator collar",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake cast perch - fixed ",
+      "b": "M18 [switchgear-right] RH switch upper shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake cast perch - fixed ",
+      "b": "M18 [switchgear-right] RH switch lower shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake cast perch - fixed ",
+      "b": "M18 [switchgear-right] RH observed red top control - function u",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake cast perch - fixed ",
+      "b": "M18 [switchgear-right] RH estimated black actuator collar",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake hollow cable barrel",
+      "b": "M18 [switchgear-right] RH switch upper shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake hollow cable barrel",
+      "b": "M18 [switchgear-right] RH switch lower shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake hollow cable barrel",
+      "b": "M18 [switchgear-right] RH observed red top control - function u",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake hollow cable barrel",
+      "b": "M18 [switchgear-right] RH estimated black actuator collar",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake adjuster locknut",
+      "b": "M18 [switchgear-right] RH switch upper shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake adjuster locknut",
+      "b": "M18 [switchgear-right] RH switch lower shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake adjuster locknut",
+      "b": "M18 [switchgear-right] RH observed red top control - function u",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake adjuster locknut",
+      "b": "M18 [switchgear-right] RH estimated black actuator collar",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake pivot pin - fixed c",
+      "b": "M18 [switchgear-right] RH switch upper shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake pivot pin - fixed c",
+      "b": "M18 [switchgear-right] RH switch lower shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake pivot pin - fixed c",
+      "b": "M18 [switchgear-right] RH observed red top control - function u",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake pivot pin - fixed c",
+      "b": "M18 [switchgear-right] RH estimated black actuator collar",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake lower pivot nut",
+      "b": "M18 [switchgear-right] RH switch upper shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake lower pivot nut",
+      "b": "M18 [switchgear-right] RH switch lower shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake lower pivot nut",
+      "b": "M18 [switchgear-right] RH observed red top control - function u",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_rest",
+      "a": "M18 [front-brake-control] Front cable brake lower pivot nut",
+      "b": "M18 [switchgear-right] RH estimated black actuator collar",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_motion",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH switch upper shell - editable",
+      "pose": {
+        "pull_degrees": 3
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_motion",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH switch lower shell - editable",
+      "pose": {
+        "pull_degrees": 3
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_motion",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH observed red top control - function u",
+      "pose": {
+        "pull_degrees": 3
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_motion",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH estimated black actuator collar",
+      "pose": {
+        "pull_degrees": 3
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_motion",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH switch upper shell - editable",
+      "pose": {
+        "pull_degrees": 6
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_motion",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH switch lower shell - editable",
+      "pose": {
+        "pull_degrees": 6
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_motion",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH observed red top control - function u",
+      "pose": {
+        "pull_degrees": 6
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_motion",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH estimated black actuator collar",
+      "pose": {
+        "pull_degrees": 6
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_motion",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH switch upper shell - editable",
+      "pose": {
+        "pull_degrees": 9
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_motion",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH switch lower shell - editable",
+      "pose": {
+        "pull_degrees": 9
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_motion",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH observed red top control - function u",
+      "pose": {
+        "pull_degrees": 9
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_motion",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH estimated black actuator collar",
+      "pose": {
+        "pull_degrees": 9
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_motion",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH switch upper shell - editable",
+      "pose": {
+        "pull_degrees": 12
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_motion",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH switch lower shell - editable",
+      "pose": {
+        "pull_degrees": 12
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_motion",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH observed red top control - function u",
+      "pose": {
+        "pull_degrees": 12
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "front-brake-control_current_switch_motion",
+      "a": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "b": "M18 [switchgear-right] RH estimated black actuator collar",
+      "pose": {
+        "pull_degrees": 12
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "left_grip_v3_controls_rest",
+      "a": "M18 [grips-v3] Left rubber grip - editable candidate",
+      "b": "M18 [switchgear-left-v3] LH switch upper shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "left_grip_v3_controls_rest",
+      "a": "M18 [grips-v3] Left rubber grip - editable candidate",
+      "b": "M18 [switchgear-left-v3] LH switch lower shell - editable",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "left_grip_v3_controls_rest",
+      "a": "M18 [grips-v3] Left rubber grip - editable candidate",
+      "b": "M18 [switchgear-left-v3] LH dipper rocker - high low",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "left_grip_v3_controls_rest",
+      "a": "M18 [grips-v3] Left rubber grip - editable candidate",
+      "b": "M18 [switchgear-left-v3] LH turn selector - centre push",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "left_grip_v3_controls_rest",
+      "a": "M18 [grips-v3] Left rubber grip - editable candidate",
+      "b": "M18 [switchgear-left-v3] LH horn push tongue",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "left_grip_v3_controls_rest",
+      "a": "M18 [grips-v3] Left rubber grip - editable candidate",
+      "b": "M18 [clutch-control] Clutch lever - moving candidate",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "left_grip_v3_controls_rest",
+      "a": "M18 [grips-v3] Left rubber grip - editable candidate",
+      "b": "M18 [clutch-control] Clutch cast perch - fixed candidate",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "left_grip_v3_controls_rest",
+      "a": "M18 [grips-v3] Left rubber grip - editable candidate",
+      "b": "M18 [clutch-control] Clutch hollow cable barrel adjuster",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "left_grip_v3_controls_rest",
+      "a": "M18 [grips-v3] Left rubber grip - editable candidate",
+      "b": "M18 [clutch-control] Clutch adjuster locknut",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "left_grip_v3_controls_rest",
+      "a": "M18 [grips-v3] Left rubber grip - editable candidate",
+      "b": "M18 [clutch-control] Clutch pivot pin - fixed candidate",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "left_grip_v3_controls_rest",
+      "a": "M18 [grips-v3] Left rubber grip - editable candidate",
+      "b": "M18 [clutch-control] Clutch lower pivot nut",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH switch upper shell - editable",
+      "pose": {
+        "throttle_degrees": 0
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH switch lower shell - editable",
+      "pose": {
+        "throttle_degrees": 0
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH observed red top control - function u",
+      "pose": {
+        "throttle_degrees": 0
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH estimated black actuator collar",
+      "pose": {
+        "throttle_degrees": 0
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "pose": {
+        "throttle_degrees": 0
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake cast perch - fixed ",
+      "pose": {
+        "throttle_degrees": 0
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake hollow cable barrel",
+      "pose": {
+        "throttle_degrees": 0
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake adjuster locknut",
+      "pose": {
+        "throttle_degrees": 0
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake pivot pin - fixed c",
+      "pose": {
+        "throttle_degrees": 0
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake lower pivot nut",
+      "pose": {
+        "throttle_degrees": 0
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [throttle] Throttle fixed hollow cable guide - estimated",
+      "pose": {
+        "throttle_degrees": 0
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH switch upper shell - editable",
+      "pose": {
+        "throttle_degrees": 10
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH switch lower shell - editable",
+      "pose": {
+        "throttle_degrees": 10
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH observed red top control - function u",
+      "pose": {
+        "throttle_degrees": 10
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH estimated black actuator collar",
+      "pose": {
+        "throttle_degrees": 10
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "pose": {
+        "throttle_degrees": 10
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake cast perch - fixed ",
+      "pose": {
+        "throttle_degrees": 10
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake hollow cable barrel",
+      "pose": {
+        "throttle_degrees": 10
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake adjuster locknut",
+      "pose": {
+        "throttle_degrees": 10
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake pivot pin - fixed c",
+      "pose": {
+        "throttle_degrees": 10
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake lower pivot nut",
+      "pose": {
+        "throttle_degrees": 10
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [throttle] Throttle fixed hollow cable guide - estimated",
+      "pose": {
+        "throttle_degrees": 10
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH switch upper shell - editable",
+      "pose": {
+        "throttle_degrees": 20
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH switch lower shell - editable",
+      "pose": {
+        "throttle_degrees": 20
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH observed red top control - function u",
+      "pose": {
+        "throttle_degrees": 20
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH estimated black actuator collar",
+      "pose": {
+        "throttle_degrees": 20
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "pose": {
+        "throttle_degrees": 20
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake cast perch - fixed ",
+      "pose": {
+        "throttle_degrees": 20
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake hollow cable barrel",
+      "pose": {
+        "throttle_degrees": 20
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake adjuster locknut",
+      "pose": {
+        "throttle_degrees": 20
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake pivot pin - fixed c",
+      "pose": {
+        "throttle_degrees": 20
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake lower pivot nut",
+      "pose": {
+        "throttle_degrees": 20
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [throttle] Throttle fixed hollow cable guide - estimated",
+      "pose": {
+        "throttle_degrees": 20
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH switch upper shell - editable",
+      "pose": {
+        "throttle_degrees": 30
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH switch lower shell - editable",
+      "pose": {
+        "throttle_degrees": 30
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH observed red top control - function u",
+      "pose": {
+        "throttle_degrees": 30
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH estimated black actuator collar",
+      "pose": {
+        "throttle_degrees": 30
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "pose": {
+        "throttle_degrees": 30
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake cast perch - fixed ",
+      "pose": {
+        "throttle_degrees": 30
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake hollow cable barrel",
+      "pose": {
+        "throttle_degrees": 30
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake adjuster locknut",
+      "pose": {
+        "throttle_degrees": 30
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake pivot pin - fixed c",
+      "pose": {
+        "throttle_degrees": 30
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake lower pivot nut",
+      "pose": {
+        "throttle_degrees": 30
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [throttle] Throttle fixed hollow cable guide - estimated",
+      "pose": {
+        "throttle_degrees": 30
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH switch upper shell - editable",
+      "pose": {
+        "throttle_degrees": 40
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH switch lower shell - editable",
+      "pose": {
+        "throttle_degrees": 40
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH observed red top control - function u",
+      "pose": {
+        "throttle_degrees": 40
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH estimated black actuator collar",
+      "pose": {
+        "throttle_degrees": 40
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "pose": {
+        "throttle_degrees": 40
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake cast perch - fixed ",
+      "pose": {
+        "throttle_degrees": 40
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake hollow cable barrel",
+      "pose": {
+        "throttle_degrees": 40
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake adjuster locknut",
+      "pose": {
+        "throttle_degrees": 40
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake pivot pin - fixed c",
+      "pose": {
+        "throttle_degrees": 40
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake lower pivot nut",
+      "pose": {
+        "throttle_degrees": 40
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [throttle] Throttle fixed hollow cable guide - estimated",
+      "pose": {
+        "throttle_degrees": 40
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH switch upper shell - editable",
+      "pose": {
+        "throttle_degrees": 50
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH switch lower shell - editable",
+      "pose": {
+        "throttle_degrees": 50
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH observed red top control - function u",
+      "pose": {
+        "throttle_degrees": 50
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [switchgear-right] RH estimated black actuator collar",
+      "pose": {
+        "throttle_degrees": 50
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake lever - moving cand",
+      "pose": {
+        "throttle_degrees": 50
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake cast perch - fixed ",
+      "pose": {
+        "throttle_degrees": 50
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake hollow cable barrel",
+      "pose": {
+        "throttle_degrees": 50
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake adjuster locknut",
+      "pose": {
+        "throttle_degrees": 50
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake pivot pin - fixed c",
+      "pose": {
+        "throttle_degrees": 50
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [front-brake-control] Front cable brake lower pivot nut",
+      "pose": {
+        "throttle_degrees": 50
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "right_grip_v3_controls_motion",
+      "a": "M18 [grips-v3] Right rubber grip - editable candidate",
+      "b": "M18 [throttle] Throttle fixed hollow cable guide - estimated",
+      "pose": {
+        "throttle_degrees": 50
+      },
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "pigtail_current_instruments_visor_rest",
+      "a": "M18 [cockpit-cables-v2] Visible ignition pigtail loop - connect",
+      "b": "M18 [instrument-visor] Visor finite smoked curved shell - condi",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "pigtail_current_instruments_visor_rest",
+      "a": "M18 [cockpit-cables-v2] Visible ignition pigtail loop - connect",
+      "b": "M18 [instruments-v5] Shaped central cluster cover",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "pigtail_current_instruments_visor_rest",
+      "a": "M18 [cockpit-cables-v2] Visible ignition pigtail loop - connect",
+      "b": "M18 [instruments-v5] SPEED hollow rear pod",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "pigtail_current_instruments_visor_rest",
+      "a": "M18 [cockpit-cables-v2] Visible ignition pigtail loop - connect",
+      "b": "M18 [instruments-v5] SPEED stepped bezel",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "pigtail_current_instruments_visor_rest",
+      "a": "M18 [cockpit-cables-v2] Visible ignition pigtail loop - connect",
+      "b": "M18 [instruments-v5] SPEED clear closed lens",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "pigtail_current_instruments_visor_rest",
+      "a": "M18 [cockpit-cables-v2] Visible ignition pigtail loop - connect",
+      "b": "M18 [instruments-v5] SPEED rear mounting boss",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "pigtail_current_instruments_visor_rest",
+      "a": "M18 [cockpit-cables-v2] Visible ignition pigtail loop - connect",
+      "b": "M18 [instruments-v5] FUEL_GEAR hollow rear pod",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "pigtail_current_instruments_visor_rest",
+      "a": "M18 [cockpit-cables-v2] Visible ignition pigtail loop - connect",
+      "b": "M18 [instruments-v5] FUEL_GEAR stepped bezel",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "pigtail_current_instruments_visor_rest",
+      "a": "M18 [cockpit-cables-v2] Visible ignition pigtail loop - connect",
+      "b": "M18 [instruments-v5] FUEL_GEAR clear closed lens",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    },
+    {
+      "group": "pigtail_current_instruments_visor_rest",
+      "a": "M18 [cockpit-cables-v2] Visible ignition pigtail loop - connect",
+      "b": "M18 [instruments-v5] FUEL_GEAR rear mounting boss",
+      "pose": "rest",
+      "actual_triangle_surface_crossings": 0
+    }
+  ],
+  "nonzero_checks": [],
+  "scope": "Selected actual triangle-surface crossings at rest and partial controls. Not solid containment, minimum clearance, all cockpit pairs, OEM tolerances or full steering.",
+  "new_geometry_or_source_saved": false,
+  "art_accepted": false
+}

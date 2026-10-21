@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "source_sha256": "08e9f51ab2a4a63bba45486155860b6fd36cd3c04368b16a38d19f87bd15d17d",
+  "export_sha256": "1d929388bbb30b661fe62da4ce3cdeb5d3512ca8c944c801ef7f3b31b1cfe392",
+  "collection": "WEWA_INSTRUMENTS_SEPARATE_PARTS",
+  "root": "INSTRUMENT_CLUSTER_MOUNT",
+  "axes": "glTF local node axes; delta is postmultiplied after rest quaternion",
+  "controls": [
+    {
+      "node": "SPEED_NEEDLE_PIVOT",
+      "type": "rotation",
+      "axis_local": [
+        0,
+        1,
+        0
+      ],
+      "range_degrees": [
+        -270,
+        0
+      ],
+      "function": "review speed0\u2013140km/h",
+      "formula_delta_degrees": "-speed_kmh*270/140",
+      "function_status": "working calibration retained; unmeasured"
+    },
+    {
+      "node": "FUEL_NEEDLE_PIVOT",
+      "type": "rotation",
+      "axis_local": [
+        0,
+        1,
+        0
+      ],
+      "range_degrees": [
+        -28,
+        52
+      ],
+      "function": "review fuel0\u20131",
+      "formula_delta_degrees": "52-fuel_fraction*80",
+      "function_status": "working calibration retained; unmeasured"
+    }
+  ],
+  "gear_display": {
+    "ring_nodes": [
+      "GEAR_RING_1",
+      "GEAR_RING_2",
+      "GEAR_RING_3",
+      "GEAR_RING_4",
+      "GEAR_RING_5"
+    ],
+    "digit_nodes": [
+      "GEAR_DIGIT_1",
+      "GEAR_DIGIT_2",
+      "GEAR_DIGIT_3",
+      "GEAR_DIGIT_4",
+      "GEAR_DIGIT_5"
+    ],
+    "states_demonstration": [
+      "off",
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "range_is_transmission_certification": false,
+    "meaning": "Inherited display demonstration only. Official image filename BM150 and related4/5ratio sources conflict. No game gearbox changed."
+  },
+  "odometer_static": true,
+  "usb_function_not_animated": true,
+  "gameplay_binding": false,
+  "physical_device_or_mechanical_tested": false,
+  "revision": "instruments-v4",
+  "baseline_v2_source_sha256": "dc4b3ccf26f35e3b4a4f10068306d841695901f987a43ebad65299cec132ad22",
+  "baseline_v2_export_sha256": "444071ff19367a78aa9d2e7a70ebaf33ae78f0f014ed66ca0f9223927f66d30e",
+  "optical_normal_correction": {
+    "objects": [
+      "SPEED clear closed lens",
+      "FUEL_GEAR clear closed lens"
+    ],
+    "method": "Source crease split at face/cut-edge transitions above30degrees; opaque bezels unchanged.",
+    "threshold_degrees_is_OEM_spec": false,
+    "source_geometry_UV_shader_optic_values_angles_and_controls_changed": false,
+    "actual_export_layout": "Lens normal discontinuities duplicate384vertices per lens and may reindex; all physical triangle corner positions identical. Other173mesh nodes actual buffers/materials/images/transforms bit-identical.",
+    "diagnostic": "creative/research/instruments-v2/optical-edge-diagnostic-reading.json"
+  },
+  "baseline_v3_source_sha256": "2ac37623a2e8df558373233228a6b936b143b6ff282e8ab6e70f08e27675e7da",
+  "baseline_v3_export_sha256": "d49d08333d727dbd4441c70976a45d2be07db010674d52372fa26191d4f26252",
+  "central_cover_normal_correction": {
+    "object": "Shaped central cluster cover",
+    "method": "Only continuous side outline normal field before existing bevel; broad caps flat, cap edges sharp. Redundant WeightedNormal removed on this object.",
+    "evaluated_positions_topology_UV_materials_worldmatrix_unchanged": true,
+    "all_other_source_nodes_bit_identical": 177,
+    "all_other_GLTF_mesh_node_buffers_materials_images_worldmatrices_bit_identical": 174,
+    "physical_shape_or_OEM_calibration_claim": false
+  }
+}

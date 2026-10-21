@@ -1,0 +1,730 @@
+{
+  "schema": 1,
+  "revision": "motorcycle-source-dependencies-publication09-supplement-v1",
+  "snapshot_utc": "2026-10-21T04:57:08.205495+00:00",
+  "scope": "Only frozen spark-cap1 and rear-rim1, static read/import/call audit and file SHA. Prior source09/root recipe109 untouched. No generator, Blender, rendering, export or model/manifest/catalogue/record/index mutation. No global live catalogue pinned.",
+  "cap_current_recipe_inputs": [
+    "assets-src/moto-components/engine-spark-cap/build.py",
+    "assets-src/moto-components/engine-spark-cap/parameters.json",
+    "assets-src/moto-components/throttle-control/control_geometry.py",
+    "assets-src/moto-components/clutch-control/topology_cleanup_v2.py",
+    "assets-src/moto-components/front-brake-plate/csg.py",
+    "assets-src/moto-components/engine-head/engine-head-v3.blend",
+    "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v1.blend",
+    "assets-src/moto-components/engine-spark-plug/build-report.json"
+  ],
+  "cap_manifest_coverage": {
+    "preflight_path": "assets-src/moto-components/engine-spark-cap/preflight-manifest.json",
+    "preflight_sha256": "c3efdd48452ca9818bd8e4fe4a8363a38dba72e78c9659934c269ad0bc54621c",
+    "files": 28,
+    "missing_recipe_inputs_from_manifest": [
+      "assets-src/moto-components/engine-spark-plug/build-report.json"
+    ],
+    "all28manifest_file_hashes_match": true
+  },
+  "historical_plug_boundary": {
+    "source": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v1.blend",
+    "source_sha256": "a797527ddb7a291d89b4280d7d8cead24ef1d0388732b275958a649020f4253c",
+    "build_report": "assets-src/moto-components/engine-spark-plug/build-report.json",
+    "build_report_sha256": "0a348c461fabf16b1f26395a45efdc7c01058e175163330303854772f2656d40",
+    "report_source_sha_matches_pinned_v1": true,
+    "actual_linked_mesh_names_read_from_report": [
+      "Plug metal body rounded hex - hidden insertion plain",
+      "Plug separate estimated uncompressed seat washer",
+      "Plug exposed ceramic five estimated lower ribs - unmarked",
+      "Plug separate exposed SAE-like terminal - conditional option"
+    ],
+    "status": "Historical diagnosticv1a797 only, not replaced by futureplugv2. Cap recipe reads this JSON to select linked object names; it is a real omitted input, not an optional provenance document.",
+    "future_plug_v2_inspected": false,
+    "future_guide_substitution_performed": false,
+    "owner_confirmation": "Root relays B confirmation: historical v1 build-report.json remains unchanged; futurev2 uses a separate build-report-v2.json. This audit did not inspectv2."
+  },
+  "rim_source_manifest": {
+    "path": "creative/reviews/rear-rim-v1/source-freeze.json",
+    "sha256": "cb62d95fafa2df243bc9cd3a695fa4c09a22887c7769911b3aed47f551c34867",
+    "files": 14,
+    "all14file_hashes_match": true
+  },
+  "rim_stages": {
+    "native_gray_creation": [
+      "assets-src/moto-components/rear-rim/build.py",
+      "assets-src/moto-components/rear-rim/parameters.json"
+    ],
+    "material_recipe_script": [
+      "assets-src/moto-components/rear-rim/material.py"
+    ],
+    "material_stage_exact_gray_inputs": [
+      "/workspace/wewa-assets/work-in-progress/rear-rim/g3/rear-rim-v1.blend",
+      "/workspace/wewa-assets/work-in-progress/rear-rim/g3/source-geometry-check.json"
+    ],
+    "preservation_checker_actual_inputs": [
+      "assets-src/moto-components/rear-rim/check_material_preservation.mjs",
+      "/workspace/wewa-assets/work-in-progress/rear-rim/g3/rear-rim-inspection.glb",
+      "assets-src/moto-components/rear-rim/rear-rim-inspection.glb"
+    ],
+    "original_material_outputs_and_pixel_check": [
+      "assets-src/moto-components/rear-rim/textures/rear-rim-original-normal.png",
+      "assets-src/moto-components/rear-rim/textures/rear-rim-original-metallic-roughness.png",
+      "assets-src/moto-components/rear-rim/inspect_material.py"
+    ],
+    "gray_approval_evidence_only": [
+      "/workspace/wewa-assets/work-in-progress/rear-rim/g3/gray-review.json",
+      "/workspace/wewa-assets/work-in-progress/rear-rim/g3/geometry-check.json"
+    ],
+    "current_source_and_reports": [
+      "assets-src/moto-components/rear-rim/rear-rim-v1.blend",
+      "assets-src/moto-components/rear-rim/build-report.json",
+      "creative/reviews/rear-rim-v1/source-geometry-check.json",
+      "creative/reviews/rear-rim-v1/material-build-report.json",
+      "creative/reviews/rear-rim-v1/material-preservation-check.json",
+      "creative/reviews/rear-rim-v1/material-buffer-check.json"
+    ]
+  },
+  "already_public_byte_identical_WIP_code_inputs": [
+    {
+      "private_WIP": "/workspace/wewa-assets/work-in-progress/rear-rim/g3/build.py",
+      "public_input": "assets-src/moto-components/rear-rim/build.py",
+      "sha256": "61055f51a1d3adf9c1e5fb2d5b094afa106ce277b0660b6e65e2e5cd6247fa42",
+      "duplicate_bytes_no_extra_promotion_needed": true
+    },
+    {
+      "private_WIP": "/workspace/wewa-assets/work-in-progress/rear-rim/g3/parameters.json",
+      "public_input": "assets-src/moto-components/rear-rim/parameters.json",
+      "sha256": "76a76fde12daf167a32f36e7a15200bca1ee1de8c8dea5f093e1e9e36ffd6012",
+      "duplicate_bytes_no_extra_promotion_needed": true
+    }
+  ],
+  "gray_evidence_optional_to_recipe": [
+    {
+      "path": "/workspace/wewa-assets/work-in-progress/rear-rim/g3/gray-review.json",
+      "sha256": "a3412851c812bbfb45bd63e60bc66682ad1f59f8d89ebcff6156909a2ca71b82",
+      "role": "Original G3 review/shape validation proof, not read by material.py or preservation checker"
+    },
+    {
+      "path": "/workspace/wewa-assets/work-in-progress/rear-rim/g3/geometry-check.json",
+      "sha256": "e4aa1ecb9cb2a87f29ed1166a082869e6584b26414e733832dd100baeb80d336",
+      "role": "Original G3 review/shape validation proof, not read by material.py or preservation checker"
+    }
+  ],
+  "recipe_boundaries": [
+    {
+      "stage": "native builder",
+      "reads": [
+        "assets-src/moto-components/rear-rim/parameters.json"
+      ],
+      "writes": [
+        "rear-rim-v1.blend gray at final-named source path",
+        "rear-rim-inspection.glb gray at final-named export path",
+        "source-geometry-check.json gray at final-named review path"
+      ],
+      "meaning": "build.py has inline native analytic geometry; no CSGworker/importedmodel/photo pixel input. WIPbuild.py/parameters are byte-identical to public source, so duplicates need not be promoted."
+    },
+    {
+      "stage": "material",
+      "reads": [
+        "assets-src/moto-components/rear-rim/rear-rim-v1.blend",
+        "creative/reviews/rear-rim-v1/source-geometry-check.json"
+      ],
+      "precondition": "Those paths must contain the G3master/report at this stage, NOT the frozen current G4 candidate. material.py overwrites both in place, appends an inner material and generates2originalPNG maps from inline seed16002/NumPy noise.",
+      "risk": "Rerunning material.py directly on the published final candidate is not the gray→material recipe; it would append another inner material. No such execution was attempted."
+    },
+    {
+      "stage": "preservation",
+      "reads": [
+        "/workspace/wewa-assets/work-in-progress/rear-rim/g3/rear-rim-inspection.glb",
+        "assets-src/moto-components/rear-rim/rear-rim-inspection.glb"
+      ],
+      "portability": "Frozen checker hardcodes private WIP baseline path. Promoting the original generated GLB is necessary but not sufficient to make that unchanged absolute path portable: provision its documented fixture path, or author a separate reviewed parameterized checker revision. No frozen script was edited."
+    }
+  ],
+  "findings": [
+    {
+      "kind": "cap_missing_input",
+      "finding": "Promote/pin engine-spark-plug/build-report.json historical v1 at exact SHA, alongside pinned diagnostic BLEND a797. Shared CSGworker and cleanup helper already covered by preflight28. No private photograph/material map is read by this cap recipe."
+    },
+    {
+      "kind": "rim_missing_baseline",
+      "finding": "Initial omission is now closed additively by root: exact G3GLBe0a6, grayBLEND83528bcc and grayreport3929a580 copied into assets-src/moto-components/rear-rim/g3-master-v1 with a4pin construction manifest. All3binary copies verified here against WIP, original source-freeze14/candidate unchanged. No full regeneration executed."
+    },
+    {
+      "kind": "rim_maps",
+      "finding": "Current final2PNG maps are covered by source-freeze14. They are deterministically authored by material.py from NumPy FFT noise/seed16002, not read as pre-existing inputs or documentary textures. inspect_material.py separately needs NumPy+Pillow to compare actual embedded GLB pixels to those authorPNGoutputs."
+    },
+    {
+      "kind": "scope",
+      "finding": "Head3 is a fixed editable guide already audited in prior source09; its whole origin is not re-audited. Futureplugv2 and live rootcatalog/mainmanifest are outside this supplement."
+    }
+  ],
+  "phase": {
+    "cap": {
+      "source_sha256": "69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d",
+      "preflight_files": 28,
+      "final_review_manifest_exists": false,
+      "user_parent_phase": "four96views queued/in progress",
+      "images_opened_by_this_audit": false
+    },
+    "rim": {
+      "source_sha256": "f97ddc5f4db07d0b97961a7a7282a9937efd68e16b82c159d581719948bb43d9",
+      "export_sha256": "68412d8e7b042f3ac2fb4c5d030f0afc0d3cad37410f4212a1f962b2d1765aa9",
+      "source_freeze_files": 14,
+      "final_images_pending_in_frozen_manifest": true,
+      "user_parent_phase": "four96views queued/in progress",
+      "images_opened_by_this_audit": false
+    }
+  },
+  "files": [
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/preflight-manifest.json",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "c3efdd48452ca9818bd8e4fe4a8363a38dba72e78c9659934c269ad0bc54621c",
+      "bytes": 6170,
+      "git_state": "untracked",
+      "roles": [
+        "frozen_source_manifest"
+      ],
+      "groups": [
+        "cap"
+      ]
+    },
+    {
+      "path": "creative/reviews/rear-rim-v1/source-freeze.json",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "cb62d95fafa2df243bc9cd3a695fa4c09a22887c7769911b3aed47f551c34867",
+      "bytes": 3192,
+      "git_state": "untracked",
+      "roles": [
+        "frozen_source_manifest"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/build.py",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "79876682376cfc06cdc9ca65bdfcc4c080d82c5a243e5ead2a78e75e0ba9e2df",
+      "bytes": 7985,
+      "git_state": "untracked",
+      "roles": [
+        "actual_current_recipe_input_or_helper"
+      ],
+      "groups": [
+        "cap"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/parameters.json",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "7de482acc6c2f946c0652303acec517ddf49c1581f8858ed1ff3fc2c1ac27b33",
+      "bytes": 2189,
+      "git_state": "untracked",
+      "roles": [
+        "actual_current_recipe_input_or_helper"
+      ],
+      "groups": [
+        "cap"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/throttle-control/control_geometry.py",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "430351cb8ef4877a2575174958e86d998664d8dd5941a9d5cb74ff22f47ffe8c",
+      "bytes": 6312,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "actual_current_recipe_input_or_helper"
+      ],
+      "groups": [
+        "cap"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/clutch-control/topology_cleanup_v2.py",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "a32cd80f2575b54dd5b40ddb84f68c3913fc0a55a26410c1131bb10f9e4dd942",
+      "bytes": 4302,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "actual_current_recipe_input_or_helper"
+      ],
+      "groups": [
+        "cap"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/front-brake-plate/csg.py",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "947178b2be8a9a5a0336b619692f62503c9d0921da9cac033e91771343bd707e",
+      "bytes": 1733,
+      "git_state": "tracked_in_HEAD",
+      "roles": [
+        "actual_current_recipe_input_or_helper"
+      ],
+      "groups": [
+        "cap"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+      "bytes": 14733894,
+      "git_state": "untracked",
+      "roles": [
+        "actual_current_recipe_input_or_helper"
+      ],
+      "groups": [
+        "cap"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/engine-spark-plug-v1.blend",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "a797527ddb7a291d89b4280d7d8cead24ef1d0388732b275958a649020f4253c",
+      "bytes": 908183,
+      "git_state": "untracked",
+      "roles": [
+        "actual_current_recipe_input_or_helper"
+      ],
+      "groups": [
+        "cap"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-plug/build-report.json",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "0a348c461fabf16b1f26395a45efdc7c01058e175163330303854772f2656d40",
+      "bytes": 3661,
+      "git_state": "untracked",
+      "roles": [
+        "actual_current_recipe_input_or_helper"
+      ],
+      "groups": [
+        "cap"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-v1.blend",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d",
+      "bytes": 2304203,
+      "git_state": "untracked",
+      "roles": [
+        "frozen_current_output"
+      ],
+      "groups": [
+        "cap"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/engine-spark-cap/engine-spark-cap-inspection.glb",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "2f2c845846b6b71acfebd6e884efb9a60141eef3bb8f590759044f001c96d650",
+      "bytes": 1056212,
+      "git_state": "untracked",
+      "roles": [
+        "frozen_current_output"
+      ],
+      "groups": [
+        "cap"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/rear-rim/build.py",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "61055f51a1d3adf9c1e5fb2d5b094afa106ce277b0660b6e65e2e5cd6247fa42",
+      "bytes": 16624,
+      "git_state": "untracked",
+      "roles": [
+        "native_gray_creation"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/rear-rim/parameters.json",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "76a76fde12daf167a32f36e7a15200bca1ee1de8c8dea5f093e1e9e36ffd6012",
+      "bytes": 4754,
+      "git_state": "untracked",
+      "roles": [
+        "native_gray_creation"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/rear-rim/material.py",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "7f4477a63c83ba44ba10faa1fe5bd6ca4d4cce2f2a62fa746346fd144f166208",
+      "bytes": 4952,
+      "git_state": "untracked",
+      "roles": [
+        "material_recipe_script"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "/workspace/wewa-assets/work-in-progress/rear-rim/g3/rear-rim-v1.blend",
+      "in_repo": false,
+      "exists": true,
+      "sha256": "83528bcc3eba9e1766172af2549ea19aaf3b94fd4ae1580123462b9281fc98f4",
+      "bytes": 6737391,
+      "git_state": "outside_repo_WIP",
+      "roles": [
+        "material_stage_exact_gray_inputs"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "/workspace/wewa-assets/work-in-progress/rear-rim/g3/source-geometry-check.json",
+      "in_repo": false,
+      "exists": true,
+      "sha256": "3929a5802e468e6981ee8e9e41e485f68fc5acd007fb7b271754e1439da74a40",
+      "bytes": 4455,
+      "git_state": "outside_repo_WIP",
+      "roles": [
+        "material_stage_exact_gray_inputs"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/rear-rim/check_material_preservation.mjs",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "8a3f8f709fdec13dca5f72128f673b1e826009c7aed749b428b55052da9df336",
+      "bytes": 2300,
+      "git_state": "untracked",
+      "roles": [
+        "preservation_checker_actual_inputs"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "/workspace/wewa-assets/work-in-progress/rear-rim/g3/rear-rim-inspection.glb",
+      "in_repo": false,
+      "exists": true,
+      "sha256": "e0a6b043429ac242ff93f0ea92e8628ef19bb7af998e472f0e924d7dba9f79eb",
+      "bytes": 9456288,
+      "git_state": "outside_repo_WIP",
+      "roles": [
+        "preservation_checker_actual_inputs"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/rear-rim/rear-rim-inspection.glb",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "68412d8e7b042f3ac2fb4c5d030f0afc0d3cad37410f4212a1f962b2d1765aa9",
+      "bytes": 9751732,
+      "git_state": "untracked",
+      "roles": [
+        "preservation_checker_actual_inputs"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/rear-rim/textures/rear-rim-original-normal.png",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "129acff1b32d15c6edeca3a9adc0ea3bb530a4a6f44bacfc0b893624ce778d5f",
+      "bytes": 213068,
+      "git_state": "untracked",
+      "roles": [
+        "original_material_outputs_and_pixel_check"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/rear-rim/textures/rear-rim-original-metallic-roughness.png",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "1ddba3c5c3aeee8a5e397ace786161390faf39c8a34a71bca62ce8d1865dc2d5",
+      "bytes": 138257,
+      "git_state": "untracked",
+      "roles": [
+        "original_material_outputs_and_pixel_check"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/rear-rim/inspect_material.py",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "407075035c9cf5da734c5d0d25b4fca9f4add4b0088ab481a78a8672882f6370",
+      "bytes": 2342,
+      "git_state": "untracked",
+      "roles": [
+        "original_material_outputs_and_pixel_check"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "/workspace/wewa-assets/work-in-progress/rear-rim/g3/gray-review.json",
+      "in_repo": false,
+      "exists": true,
+      "sha256": "a3412851c812bbfb45bd63e60bc66682ad1f59f8d89ebcff6156909a2ca71b82",
+      "bytes": 2387,
+      "git_state": "outside_repo_WIP",
+      "roles": [
+        "gray_approval_evidence_only"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "/workspace/wewa-assets/work-in-progress/rear-rim/g3/geometry-check.json",
+      "in_repo": false,
+      "exists": true,
+      "sha256": "e4aa1ecb9cb2a87f29ed1166a082869e6584b26414e733832dd100baeb80d336",
+      "bytes": 4723,
+      "git_state": "outside_repo_WIP",
+      "roles": [
+        "gray_approval_evidence_only"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/rear-rim/rear-rim-v1.blend",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "f97ddc5f4db07d0b97961a7a7282a9937efd68e16b82c159d581719948bb43d9",
+      "bytes": 7085753,
+      "git_state": "untracked",
+      "roles": [
+        "current_source_and_reports"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/rear-rim/build-report.json",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "833188534ab1a9b64355a02e041911023eb73b685052198048a7ad6df7e45f47",
+      "bytes": 4583,
+      "git_state": "untracked",
+      "roles": [
+        "current_source_and_reports"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "creative/reviews/rear-rim-v1/source-geometry-check.json",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "833188534ab1a9b64355a02e041911023eb73b685052198048a7ad6df7e45f47",
+      "bytes": 4583,
+      "git_state": "untracked",
+      "roles": [
+        "current_source_and_reports"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "creative/reviews/rear-rim-v1/material-build-report.json",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "5cff64aa241fbdbdc6d8f6e696fae104277989876b2b19ad12d2e044e4e99854",
+      "bytes": 1097,
+      "git_state": "untracked",
+      "roles": [
+        "current_source_and_reports"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "creative/reviews/rear-rim-v1/material-preservation-check.json",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "a43d78dd0a13ef5bff41d4fb797e09aad6e5014071f4d5b8737f5bc44833c30b",
+      "bytes": 756,
+      "git_state": "untracked",
+      "roles": [
+        "current_source_and_reports"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "creative/reviews/rear-rim-v1/material-buffer-check.json",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "595540110e9d620b94ac54ae3cdd5257c9d160d86cd24459365b72f973b4bb83",
+      "bytes": 1545,
+      "git_state": "untracked",
+      "roles": [
+        "current_source_and_reports"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/rear-rim/g3-master-v1/README.md",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "d4ed6d823f169b962f5b57cb7ab3822d8217a9e1dd4bff73a39ea1a5f0f0a0c6",
+      "bytes": 1698,
+      "git_state": "untracked",
+      "roles": [
+        "root_promoted_frozen_G3_construction_input"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/rear-rim/g3-master-v1/rear-rim-inspection.glb",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "e0a6b043429ac242ff93f0ea92e8628ef19bb7af998e472f0e924d7dba9f79eb",
+      "bytes": 9456288,
+      "git_state": "untracked",
+      "roles": [
+        "root_promoted_frozen_G3_construction_input"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/rear-rim/g3-master-v1/rear-rim-v1.blend",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "83528bcc3eba9e1766172af2549ea19aaf3b94fd4ae1580123462b9281fc98f4",
+      "bytes": 6737391,
+      "git_state": "untracked",
+      "roles": [
+        "root_promoted_frozen_G3_construction_input"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/rear-rim/g3-master-v1/source-geometry-check.json",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "3929a5802e468e6981ee8e9e41e485f68fc5acd007fb7b271754e1439da74a40",
+      "bytes": 4455,
+      "git_state": "untracked",
+      "roles": [
+        "root_promoted_frozen_G3_construction_input"
+      ],
+      "groups": [
+        "rim"
+      ]
+    },
+    {
+      "path": "assets-src/moto-components/rear-rim/g3-master-v1/construction-input-manifest-v1.json",
+      "in_repo": true,
+      "exists": true,
+      "sha256": "e76b755b46ab54adb715a680eb560f7e6db46e0f59c4143d16eda9ca5093d528",
+      "bytes": 1072,
+      "git_state": "untracked",
+      "roles": [
+        "root_promoted_frozen_G3_construction_input"
+      ],
+      "groups": [
+        "rim"
+      ]
+    }
+  ],
+  "clean_regeneration_executed": false,
+  "photo_bytes_required_for_audited_recipes": false,
+  "art_accepted": false,
+  "WIP_inputs_initially_missing_then_promoted": [
+    {
+      "actual_existing_path": "/workspace/wewa-assets/work-in-progress/rear-rim/g3/rear-rim-inspection.glb",
+      "sha256": "e0a6b043429ac242ff93f0ea92e8628ef19bb7af998e472f0e924d7dba9f79eb",
+      "bytes": 9456288,
+      "reason": "Literal baseline read by frozen check_material_preservation.mjs; mandatory to repeat preservation proof.",
+      "currently_outside_repo": true,
+      "public_destination": "assets-src/moto-components/rear-rim/g3-master-v1/rear-rim-inspection.glb",
+      "public_copy_path": "assets-src/moto-components/rear-rim/g3-master-v1/rear-rim-inspection.glb",
+      "public_copy_sha256_matches_WIP": true,
+      "publication_status": "resolved_by_root_additive_binary_copy"
+    },
+    {
+      "actual_existing_path": "/workspace/wewa-assets/work-in-progress/rear-rim/g3/rear-rim-v1.blend",
+      "sha256": "83528bcc3eba9e1766172af2549ea19aaf3b94fd4ae1580123462b9281fc98f4",
+      "bytes": 6737391,
+      "reason": "Frozen editable gray master83528bcc; restore/copy to disposable working final-named path before material.py, or regenerate gray from build.py in separate workspace.",
+      "currently_outside_repo": true,
+      "public_destination": "assets-src/moto-components/rear-rim/g3-master-v1/rear-rim-v1.blend",
+      "public_copy_path": "assets-src/moto-components/rear-rim/g3-master-v1/rear-rim-v1.blend",
+      "public_copy_sha256_matches_WIP": true,
+      "publication_status": "resolved_by_root_additive_binary_copy"
+    },
+    {
+      "actual_existing_path": "/workspace/wewa-assets/work-in-progress/rear-rim/g3/source-geometry-check.json",
+      "sha256": "3929a5802e468e6981ee8e9e41e485f68fc5acd007fb7b271754e1439da74a40",
+      "bytes": 4455,
+      "reason": "Gray-stage report read/updated by material.py at public review path; restore together with gray master for exact frozen gray→material recipe.",
+      "currently_outside_repo": true,
+      "public_destination": "assets-src/moto-components/rear-rim/g3-master-v1/source-geometry-check.json",
+      "public_copy_path": "assets-src/moto-components/rear-rim/g3-master-v1/source-geometry-check.json",
+      "public_copy_sha256_matches_WIP": true,
+      "publication_status": "resolved_by_root_additive_binary_copy"
+    }
+  ],
+  "root_G3_promotion": {
+    "verified_utc": "2026-10-21T04:57:39.779246+00:00",
+    "construction_manifest": "assets-src/moto-components/rear-rim/g3-master-v1/construction-input-manifest-v1.json",
+    "sha256": "e76b755b46ab54adb715a680eb560f7e6db46e0f59c4143d16eda9ca5093d528",
+    "manifest_file_pins": 4,
+    "all4pins_verified": true,
+    "all3public_original_assets_byte_identical_to_WIP": true,
+    "old_source_freeze14_unchanged": true,
+    "publication_dependency_closed_additively": true,
+    "remaining_portability_step": "Historical checker still has the WIP absolute path. Prepare its fixture from public baseline as documented; or create a separate reviewed parameterized checker revision. No frozen script or candidate was edited."
+  }
+}

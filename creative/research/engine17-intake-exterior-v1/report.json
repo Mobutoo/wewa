@@ -1,0 +1,772 @@
+{
+  "schema": "wewa.engine17-intake-exterior.v1",
+  "date_utc": "2026-10-21",
+  "scope": "Documentation only for lot17/B exterior intake, carburettor and breather; no geometry, rendering, source-model edits or shared-register modifications. Motorcycle remains without rider.",
+  "source_coverage_audit": {
+    "path": "creative/research/engine17-exterior-coverage-v1/report.json",
+    "sha256": "621e390e657a188d61650a6e1452f2cd7ad4fc609db1c9df11b6b02c4ed9b272"
+  },
+  "private_cache": "/workspace/wewa-assets/references/engine17-intake-exterior-v1",
+  "catalogues_reused_not_redownloaded": [
+    {
+      "document": "D04",
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/D04.pdf",
+      "sha256": "5228ed1fb3f5ab9ec1503864bf6cccf66bd429ece78adb30516f9904a099372e",
+      "sheet_1_based": 13,
+      "plate": 2,
+      "printed_pages": "3–4",
+      "text_read": true,
+      "page_image_actually_opened": true,
+      "page_private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/D04-sheet13.png",
+      "page_sha256": "6e5b552dde08b61fb0e58c07c8749a9f2f051d0247bc6ff572e077243b698c81",
+      "source_url": "https://motobro.ua/files/Boxer_BM_125_UG_Provisional_SPC_%282%29.pdf"
+    },
+    {
+      "document": "D04",
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/D04.pdf",
+      "sha256": "5228ed1fb3f5ab9ec1503864bf6cccf66bd429ece78adb30516f9904a099372e",
+      "sheet_1_based": 14,
+      "plate": 3,
+      "printed_pages": "5–6",
+      "text_read": true,
+      "page_image_actually_opened": false,
+      "source_url": "https://motobro.ua/files/Boxer_BM_125_UG_Provisional_SPC_%282%29.pdf"
+    },
+    {
+      "document": "D04",
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/D04.pdf",
+      "sha256": "5228ed1fb3f5ab9ec1503864bf6cccf66bd429ece78adb30516f9904a099372e",
+      "sheet_1_based": 30,
+      "plate": 18,
+      "printed_pages": "37–38",
+      "text_read": true,
+      "page_image_actually_opened": true,
+      "page_private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/D04-sheet30.png",
+      "page_sha256": "c49cb5b9f2f3387b584b9e61c8360cb57a3a63d24d1427f95dc958903906d376",
+      "source_url": "https://motobro.ua/files/Boxer_BM_125_UG_Provisional_SPC_%282%29.pdf"
+    },
+    {
+      "document": "D04",
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/D04.pdf",
+      "sha256": "5228ed1fb3f5ab9ec1503864bf6cccf66bd429ece78adb30516f9904a099372e",
+      "sheet_1_based": 31,
+      "plate": 19,
+      "printed_pages": "39–40",
+      "text_read": true,
+      "page_image_actually_opened": true,
+      "page_private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/D04-sheet31.png",
+      "page_sha256": "0d48f4173eca793a837a9ad897ed3d0fa7d67516537756052279a502d008a530",
+      "source_url": "https://motobro.ua/files/Boxer_BM_125_UG_Provisional_SPC_%282%29.pdf"
+    },
+    {
+      "document": "D15",
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/D15.pdf",
+      "sha256": "2ccf8194176b00e31d4b210d5ba10cd97182b06aa376e5a0dd79f3a19dfc2f0e",
+      "sheet_1_based": 12,
+      "plate": 2,
+      "printed_pages": "3–4",
+      "text_read": true,
+      "page_image_actually_opened": true,
+      "page_private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/D15-sheet12.png",
+      "page_sha256": "8d5edea822aa80453702b6e59c7034ef05ba9284efa45d606d29fa52059341bf",
+      "source_url": "https://reypiston.com/wp-content/uploads/2024/04/Boxer-BM150-SPC.pdf"
+    },
+    {
+      "document": "D15",
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/D15.pdf",
+      "sha256": "2ccf8194176b00e31d4b210d5ba10cd97182b06aa376e5a0dd79f3a19dfc2f0e",
+      "sheet_1_based": 26,
+      "plate": 16,
+      "printed_pages": "31–32",
+      "text_read": true,
+      "page_image_actually_opened": false,
+      "source_url": "https://reypiston.com/wp-content/uploads/2024/04/Boxer-BM150-SPC.pdf"
+    },
+    {
+      "document": "D15",
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/D15.pdf",
+      "sha256": "2ccf8194176b00e31d4b210d5ba10cd97182b06aa376e5a0dd79f3a19dfc2f0e",
+      "sheet_1_based": 27,
+      "plate": 17,
+      "printed_pages": "33–34",
+      "text_read": true,
+      "page_image_actually_opened": false,
+      "source_url": "https://reypiston.com/wp-content/uploads/2024/04/Boxer-BM150-SPC.pdf"
+    }
+  ],
+  "variant_matrix": [
+    {
+      "variant": "D04 BM125 UG5 related",
+      "head": "JV511023",
+      "intake_stack_from_head": "Head → LJA00011 ring → JV581404 insulator → LJA00011 ring →52JV0180 manifold → PF581402 sleeve with2×DP101198 clamps → carburettor; two rings total.",
+      "note": "Actual exploded order: head → ring → insulator → ring → manifold → clamped sleeve → carb. Two O-rings total. Fixings separate.",
+      "carb": "JV581204",
+      "air_filter": "PF581003",
+      "air_duct": "JB581001 (UG5 row); standard/other duct row remains in mixed table",
+      "breather": "JA511011 in air-cleaner plate, installed upper connection unresolved on UG5 head",
+      "status": "documented_related_variant"
+    },
+    {
+      "variant": "D04 BM125 standard",
+      "intake": "JV581402 manifold + PA581224 carb-duct sleeve,39128321 ring; no automatic extra UG5 insulator stack",
+      "carb": "JV581202 B108a",
+      "status": "documented_related_variant_excluded_from_UG5_stack"
+    },
+    {
+      "variant": "D15 BM150",
+      "intake": "PF581401 manifold +PF581402 sleeve +2×DH121038 clamp +39253921 O-ring",
+      "carb": "PF581200; JB581202 TPS explicitly catalogued",
+      "breather": "JA511011 and DP121025 clamps with broad head-cover architecture",
+      "status": "documented_related_variant_not_UG5_or_current_RDC"
+    },
+    {
+      "variant": "Current RDC125HD",
+      "intake_codes": null,
+      "carb_code": null,
+      "TPS_presence": null,
+      "complete_hose_routes": null,
+      "status": "unknown",
+      "visible_only": "Partial metal carb/intake region under tank behind black engine, no legible part identity."
+    }
+  ],
+  "existing_official_images_opened": [
+    {
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/engine.webp",
+      "sha256": "9ff8fda31a9603737dbebe3df2091a15f110eb7f7da70c7c99c056009b50b41c",
+      "actually_opened": true,
+      "observation": "RDC engine detail, intake top partly cropped and behind frame/kick/side panel.",
+      "variant": "current official RDC125HD",
+      "source_page_url": "https://www.bajajauto.com/fr-cd/bikes/boxer-125hd"
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/rotation-00.png",
+      "sha256": "82be9285506c65dd8ff3fdba000fe963587548e306691844ed774f685870ea40",
+      "actually_opened": true,
+      "observation": "RDC right profile, intake below tank behind cylinder partly occluded.",
+      "variant": "current official RDC125HD",
+      "source_page_url": "https://www.bajajauto.com/fr-cd/bikes/boxer-125hd"
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/body-powertrain-18/rotation-04.png",
+      "sha256": "b086dedb4a2bcbc2644aab9578a3d1efa7445e163459b444b3687047bf2e8e02",
+      "actually_opened": true,
+      "observation": "RDC left profile, manifold/carb region small and masked; no code or hose route resolved.",
+      "variant": "current official RDC125HD",
+      "source_page_url": "https://www.bajajauto.com/fr-cd/bikes/boxer-125hd"
+    }
+  ],
+  "new_downloaded_images": [
+    {
+      "name": "JV581404-winter.jpg",
+      "url": "https://www.winter-summer.ru/content/catalog/bajaj_jv581404.jpg",
+      "page_url": "https://www.winter-summer.ru/cat3518/1/343483/",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/JV581404-winter.jpg",
+      "sha256": "3464c720de7d126f75ea15ebcbc6c59885576ee250e1378977e378fc369c1b7b",
+      "bytes": 55556,
+      "size_px": [
+        1000,
+        1000
+      ],
+      "actually_opened": true,
+      "classification": "actual_photo",
+      "observation": "Oblique flat insulator; continuous asymmetric two-ear outline, central opening, visible annular recess; other face and exact thickness unknown."
+    },
+    {
+      "name": "52JV0180-winter.jpg",
+      "url": "https://winter-summer.ru/content/catalog/bajaj_52jv0180.jpg",
+      "page_url": "https://winter-summer.ru/boxer_125_cylinder_head/",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/52JV0180-winter.jpg",
+      "sha256": "98b0863a8884bcee850ebcccbb6645a784ac3bc21558bf174e4867f57b77ad40",
+      "bytes": 62702,
+      "size_px": [
+        1000,
+        1000
+      ],
+      "actually_opened": true,
+      "classification": "actual_photo",
+      "observation": "Oblique isolated metal manifold: open spigot with circumferential ribs, two-hole flanged base, small lateral projection; mating face/underside and metric section hidden."
+    },
+    {
+      "name": "PF581402-matriz.jpg",
+      "url": "https://bajajmatriz.com/wp-content/uploads/2021/05/PF581402.jpg",
+      "page_url": "https://bajajmatriz.com/producto/pipeta-cople-de-carburador-moto-boxer-150-bajaj",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/PF581402-matriz.jpg",
+      "sha256": "41c0ed3731146359e3fef14dd1c1e43a6dc7c5fe4bc10fe3345f1f6e6521b539",
+      "bytes": 40680,
+      "size_px": [
+        1210,
+        1210
+      ],
+      "actually_opened": true,
+      "classification": "actual_photo",
+      "observation": "Oblique into rubber sleeve: exterior twin clamp regions/circumferential relief, interior lips/step, mould seam and projecting tabs/notches. Not a plain cylinder; opposite mouth not fully resolved."
+    },
+    {
+      "name": "JV581404-motozilla-919201.jpg",
+      "url": "https://motozilla.com.ua/wa-data/public/shop/products/55/30/303055/images/919201/919201.970.jpg",
+      "page_url": "https://motozilla.com.ua/ua/product/prokladka-vpusknogo-kollektora-bajaj-boxer-x-125-ug-jv581404-8-bajaj-123-06067/",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/JV581404-motozilla-919201.jpg",
+      "sha256": "399d30d31781135aa6f5c2a3f0b76d505bdfdf6fd267046fd84fd371da30add6",
+      "bytes": 69115,
+      "size_px": [
+        970,
+        970
+      ],
+      "actually_opened": true,
+      "classification": "actual_photo",
+      "observation": "Near-normal oblique insulator face and two through holes. Geometry very close to Winter exposure; not independent scale evidence."
+    },
+    {
+      "name": "JV581404-motozilla-919202.jpg",
+      "url": "https://motozilla.com.ua/wa-data/public/shop/products/55/30/303055/images/919202/919202.970.jpg",
+      "page_url": "https://motozilla.com.ua/ua/product/prokladka-vpusknogo-kollektora-bajaj-boxer-x-125-ug-jv581404-8-bajaj-123-06067/",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/JV581404-motozilla-919202.jpg",
+      "sha256": "ffb7882c55f0630a2fa50956f4dae6f68da30623c6e2f1723200778652ba8d9d",
+      "bytes": 133773,
+      "size_px": [
+        970,
+        970
+      ],
+      "actually_opened": true,
+      "classification": "catalogue_drawing",
+      "observation": "Exploded UG5 head and intake stack, not an independent photograph."
+    },
+    {
+      "name": "JV581404-motozilla-919203.jpg",
+      "url": "https://motozilla.com.ua/wa-data/public/shop/products/55/30/303055/images/919203/919203.970.jpg",
+      "page_url": "https://motozilla.com.ua/ua/product/prokladka-vpusknogo-kollektora-bajaj-boxer-x-125-ug-jv581404-8-bajaj-123-06067/",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/JV581404-motozilla-919203.jpg",
+      "sha256": "f5fb52ffe3d04f660b2409f41a630fc26ae440a847e189133faa714caa9f1b1d",
+      "bytes": 75301,
+      "size_px": [
+        697,
+        697
+      ],
+      "actually_opened": true,
+      "classification": "catalogue_drawing",
+      "observation": "Same exploded stack at another size/annotation, not independent photographed coverage."
+    },
+    {
+      "name": "JV581204-motozilla-913929.jpg",
+      "url": "https://motozilla.com.ua/wa-data/public/shop/products/54/30/303054/images/913929/913929.970.jpg",
+      "page_url": "https://motozilla.com.ua/product/karbyurator-bajaj-boxer-x-125-ug-jv581204-2-bajaj-123-06066/",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/JV581204-motozilla-913929.jpg",
+      "sha256": "7fc1065aca9f3b5a478b64fd8bcab44d15cbb0f389536ec799c35d86b6da9828",
+      "bytes": 123483,
+      "size_px": [
+        970,
+        970
+      ],
+      "actually_opened": true,
+      "classification": "catalogue_drawing",
+      "observation": "Carburettor exploded rendering/line drawing composite; not an actual carb photograph."
+    },
+    {
+      "name": "JV581204-motozilla-913930.jpg",
+      "url": "https://motozilla.com.ua/wa-data/public/shop/products/54/30/303054/images/913930/913930.970.jpg",
+      "page_url": "https://motozilla.com.ua/product/karbyurator-bajaj-boxer-x-125-ug-jv581204-2-bajaj-123-06066/",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/JV581204-motozilla-913930.jpg",
+      "sha256": "744942d7eeaf3dbb34d7dafecc13a7d99a953e17ac59349511f81d742b8dbd61",
+      "bytes": 86579,
+      "size_px": [
+        773,
+        773
+      ],
+      "actually_opened": true,
+      "classification": "catalogue_drawing",
+      "observation": "Alternative catalogue composite with mixed variants; not actual photo or additional physical angle."
+    },
+    {
+      "name": "JV581204-motopulse.webp",
+      "url": "https://cdn.motopulse.com.ua/media/cache/products/0015/0015350/8fbd5f094b0fb474d057090db20062dc760d808e.webp?v=1784414948",
+      "page_url": "https://motopulse.com.ua/karbyurator-bajaj-boxer-125-5-peredach-jv581204",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/JV581204-motopulse.webp",
+      "sha256": "72a41c5df6f9d400efabb3d11c82b02b31fd41a13d62889d53b5a20e38812a97",
+      "bytes": 121932,
+      "size_px": [
+        1600,
+        1600
+      ],
+      "actually_opened": true,
+      "classification": "actual_photo",
+      "observation": "Detached carburettor oblique view into large air-side mouth, body, bowl seam/screws, cable elbow/adjuster, exterior lever and loose attached hoses. Opposite face/installed routing hidden; exact hose functions not assigned from image alone."
+    },
+    {
+      "name": "JA511011-bikebox.webp",
+      "url": "https://bikeboxmt.com/wp-content/uploads/2026/02/BOXER-HOSE-BREATHER-BAJAJ.webp",
+      "page_url": "https://bikeboxmt.com/shop/bajaj-boxer-breather-hose-genuine/",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/JA511011-bikebox.webp",
+      "sha256": "10f4ebd40a9e24db8849082e5de7e9778267c97c670cb9a8a9c414e7273d6f7b",
+      "bytes": 5708,
+      "size_px": [
+        1022,
+        628
+      ],
+      "actually_opened": true,
+      "classification": "actual_photo",
+      "observation": "Detached open-ended curved black hose; JA511011 marking visible. Free shape is not installed routing; unscaled."
+    },
+    {
+      "name": "JA511011-crosland-1.jpg",
+      "url": "https://croslandpe.vtexassets.com/arquivos/ids/165629/JA511011_1.jpg?v=639058419891830000",
+      "page_url": "https://www.croslandrepuestos.pe/manguera-respiradero-ja511011/p",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/JA511011-crosland-1.jpg",
+      "sha256": "db5665123ebc4f86c53214734e58bcedad42ac994e5e2d3926f72459f809b606",
+      "bytes": 14467,
+      "size_px": [
+        700,
+        525
+      ],
+      "actually_opened": true,
+      "classification": "actual_photo",
+      "observation": "Curved open-ended breather hose in free pose, no ruler or fitted motorcycle."
+    },
+    {
+      "name": "JA511011-crosland-2.jpg",
+      "url": "https://croslandpe.vtexassets.com/arquivos/ids/165628/JA511011_2.jpg?v=639058419887770000",
+      "page_url": "https://www.croslandrepuestos.pe/manguera-respiradero-ja511011/p",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/JA511011-crosland-2.jpg",
+      "sha256": "a90fec8cbb4fc2c237d9bc31ddf5fe6926f7bfdd746d9ccdfd7efebadf82dd75",
+      "bytes": 100435,
+      "size_px": [
+        700,
+        525
+      ],
+      "actually_opened": true,
+      "classification": "same_exposure_derivative",
+      "observation": "Visually same exposure/pose as Crosland1 with different compression/processing. Not an independent angle."
+    },
+    {
+      "name": "PF581402-related-epicentr.jpg",
+      "url": "https://cdn.27.ua/sc--media--prod/default/5e/f4/6b/5ef46ba2-5faa-4f36-9b07-a9e6052b6128.jpg",
+      "page_url": "https://epicentrk.ua/shop/mplc-patrubok-karburatora-gumovij-do-motocikla-bajaj-boxer-bm-bmx-150cc-pf581402-1f11be5f-2795-68a6-9bd8-6be81dd8a1cb.html",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/PF581402-related-epicentr.jpg",
+      "sha256": "8576dafa3a54660501d83408c94fc433ba625fe72978ad728b291c89dec1485d",
+      "bytes": 33649,
+      "size_px": [
+        1200,
+        800
+      ],
+      "actually_opened": true,
+      "classification": "actual_photo_aftermarket",
+      "observation": "Fengri-labelled BM150 carburettor pipe, black sleeve with tabs. Not Bajaj OEM proof; seller dimensions apply only to this marketed aftermarket article."
+    }
+  ],
+  "new_page_archives": [
+    {
+      "name": "carb-motozilla",
+      "url": "https://motozilla.com.ua/product/karbyurator-bajaj-boxer-x-125-ug-jv581204-2-bajaj-123-06066/",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/carb-motozilla.html",
+      "bytes": 513661,
+      "status": 200,
+      "sha256": "f17d9486fe1721c19b5f1800731c9aed2a81bdffffc8d0927e999e3c9aa4eaa2",
+      "image_candidates": [
+        "/wa-data/public/shop/products/17/09/300917/images/1110544/1110544.400.jpg",
+        "/wa-data/public/shop/products/20/19/421920/images/1215585/1215585.400.png",
+        "/wa-data/public/shop/products/54/30/303054/images/913929/913929.400.jpg",
+        "/wa-data/public/shop/products/54/30/303054/images/913929/913929.568x0.jpg",
+        "/wa-data/public/shop/products/54/30/303054/images/913929/913929.970.jpg",
+        "/wa-data/public/shop/products/54/30/303054/images/913930/913930.568x0.jpg",
+        "/wa-data/public/shop/products/54/30/303054/images/913930/913930.970.jpg",
+        "/wa-data/public/shop/products/69/46/304669/images/958161/958161.400.jpg",
+        "/wa-data/public/shop/products/70/46/304670/images/918215/918215.400.jpg",
+        "/wa-data/public/shop/products/85/18/431885/images/1135271/1135271.400.jpg",
+        "https://motozilla.com.ua/wa-data/public/shop/products/54/30/303054/images/913929/913929.750x0.jpg"
+      ]
+    },
+    {
+      "name": "insulator-motozilla",
+      "url": "https://motozilla.com.ua/ua/product/prokladka-vpusknogo-kollektora-bajaj-boxer-x-125-ug-jv581404-8-bajaj-123-06067/",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/insulator-motozilla.html",
+      "bytes": 629038,
+      "status": 200,
+      "sha256": "1cdcd1f0e25c50d9aef2a7bcdf17f6fd509f0eba601e4a6caf1c43ab70fc3dfc",
+      "image_candidates": [
+        "/wa-data/public/shop/products/02/53/175302/images/989840/989840.400.jpg",
+        "/wa-data/public/shop/products/09/61/316109/images/919915/919915.400.jpg",
+        "/wa-data/public/shop/products/10/61/316110/images/919916/919916.400.jpg",
+        "/wa-data/public/shop/products/13/08/300813/images/1117602/1117602.400.jpg",
+        "/wa-data/public/shop/products/13/30/303013/images/1215514/1215514.400.png",
+        "/wa-data/public/shop/products/15/18/21815/images/1218100/1218100.400.png",
+        "/wa-data/public/shop/products/17/76/177617/images/1041758/1041758.400.jpg",
+        "/wa-data/public/shop/products/20/75/317520/images/917050/917050.400.jpg",
+        "/wa-data/public/shop/products/22/27/52722/images/648075/648075.200.jpg",
+        "/wa-data/public/shop/products/22/27/52722/images/648075/648075.400.jpg",
+        "/wa-data/public/shop/products/27/35/3527/images/1164977/1164977.200.jpg",
+        "/wa-data/public/shop/products/27/35/3527/images/1164977/1164977.400.jpg",
+        "/wa-data/public/shop/products/27/61/316127/images/919214/919214.400.jpg",
+        "/wa-data/public/shop/products/34/63/316334/images/958503/958503.400.jpg",
+        "/wa-data/public/shop/products/38/02/310238/images/919209/919209.400.jpg",
+        "/wa-data/public/shop/products/40/49/184940/images/428497/428497.400.jpg",
+        "/wa-data/public/shop/products/41/63/316341/images/911958/911958.400.jpg",
+        "/wa-data/public/shop/products/41/93/309341/images/909701/909701.400.jpg",
+        "/wa-data/public/shop/products/43/63/316343/images/911968/911968.400.jpg",
+        "/wa-data/public/shop/products/55/30/303055/images/919201/919201.200.jpg",
+        "/wa-data/public/shop/products/55/30/303055/images/919201/919201.400.jpg",
+        "/wa-data/public/shop/products/55/30/303055/images/919201/919201.568x0.jpg",
+        "/wa-data/public/shop/products/55/30/303055/images/919201/919201.970.jpg",
+        "/wa-data/public/shop/products/55/30/303055/images/919202/919202.568x0.jpg",
+        "/wa-data/public/shop/products/55/30/303055/images/919202/919202.970.jpg",
+        "/wa-data/public/shop/products/55/30/303055/images/919203/919203.568x0.jpg",
+        "/wa-data/public/shop/products/55/30/303055/images/919203/919203.970.jpg",
+        "/wa-data/public/shop/products/62/21/422162/images/1116819/1116819.400.jpg",
+        "/wa-data/public/shop/products/70/08/300870/images/920067/920067.400.jpg",
+        "/wa-data/public/shop/products/75/06/140675/images/366274/366274.400.jpeg",
+        "/wa-data/public/shop/products/75/14/151475/images/452877/452877.400.jpg",
+        "/wa-data/public/shop/products/78/09/140978/images/368897/368897.400.jpeg",
+        "/wa-data/public/shop/products/78/99/79978/images/1043193/1043193.400.jpg",
+        "/wa-data/public/shop/products/79/04/410479/images/1103930/1103930.400.jpg",
+        "/wa-data/public/shop/products/85/59/315985/images/919919/919919.400.jpg"
+      ]
+    },
+    {
+      "name": "sleeve-matriz",
+      "url": "https://bajajmatriz.com/producto/pipeta-cople-de-carburador-moto-boxer-150-bajaj",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/sleeve-matriz.html",
+      "bytes": 109028,
+      "status": 200,
+      "sha256": "f258e046cd46568b79b9df0091f1e5a928d449d6b1193ca3b62aff3edd0da383",
+      "image_candidates": [
+        "https://bajajmatriz.com/wp-content/uploads/2021/05/PF581402-100x100.jpg",
+        "https://bajajmatriz.com/wp-content/uploads/2021/05/PF581402-1024x1024.jpg",
+        "https://bajajmatriz.com/wp-content/uploads/2021/05/PF581402-150x150.jpg",
+        "https://bajajmatriz.com/wp-content/uploads/2021/05/PF581402-174x174.jpg",
+        "https://bajajmatriz.com/wp-content/uploads/2021/05/PF581402-250x250.jpg",
+        "https://bajajmatriz.com/wp-content/uploads/2021/05/PF581402-300x300.jpg",
+        "https://bajajmatriz.com/wp-content/uploads/2021/05/PF581402-600x600.jpg",
+        "https://bajajmatriz.com/wp-content/uploads/2021/05/PF581402-64x64.jpg",
+        "https://bajajmatriz.com/wp-content/uploads/2021/05/PF581402-768x768.jpg",
+        "https://bajajmatriz.com/wp-content/uploads/2021/05/PF581402.jpg"
+      ]
+    },
+    {
+      "name": "insulator-winter",
+      "url": "https://www.winter-summer.ru/cat3518/1/343483/",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/insulator-winter.html",
+      "bytes": 323494,
+      "status": 200,
+      "sha256": "7cd2e8da5db7172c5426d05ca6b3987ceb055cef64cdf8e411512b3d9866d809",
+      "image_candidates": [
+        "https://www.winter-summer.ru/content/catalog/bajaj_jv581404.jpg"
+      ]
+    },
+    {
+      "name": "manifold-winter-index",
+      "url": "https://winter-summer.ru/boxer_125_cylinder_head/",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/manifold-winter-index.html",
+      "bytes": 339924,
+      "status": 200,
+      "sha256": "87187967e4ebb8f62bfaa466a22bd0b9d5fea0215b6928da6002535ae1e5d096",
+      "image_candidates": []
+    },
+    {
+      "name": "carb-motomarket",
+      "url": "https://motomarket.ua/karbiurator-bajaj-boxer-125/",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/carb-motomarket.html",
+      "bytes": 518,
+      "status": 200,
+      "sha256": "4e218125fc6a12411abc0bbec43b0b6d3ce526bfd80464c4db788e6d9fdf06db",
+      "image_candidates": []
+    },
+    {
+      "name": "ucal-oemship",
+      "url": "https://oemship.com/ucal-carburetors/",
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/ucal-oemship.html",
+      "bytes": 413218,
+      "status": 200,
+      "sha256": "0d63b5488cf09da9b1772064993f1448fdfa67b6cf09508815fc98baf7927aea",
+      "image_candidates": []
+    },
+    {
+      "name": "manifold-winter",
+      "url": "https://winter-summer.ru/cat3518/1/340976/",
+      "status": 200,
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/manifold-winter.html",
+      "sha256": "9c5d8c7c62c3e7ef6a6ca79c451f16404f92dcfa9570883b40b1cebe8f2e1061",
+      "bytes": 323233,
+      "image_candidates": [
+        "/content/catalog/bajaj_52jv0180.jpg",
+        "https://winter-summer.ru/content/catalog/bajaj_52jv0180.jpg"
+      ]
+    },
+    {
+      "name": "carb-motopulse",
+      "url": "https://motopulse.com.ua/karbyurator-bajaj-boxer-125-5-peredach-jv581204",
+      "status": 200,
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/carb-motopulse.html",
+      "sha256": "aff70fa9ed28cc38769b39f921772fe8adecb9e520cf053969e4f9243a837c49",
+      "bytes": 316581,
+      "image_candidates": [
+        "https://cdn.motopulse.com.ua/media/cache/cats/063dc91638bd28a40af98083d88d453d5e7d6495.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/0bfad770faa52d490ce587fda4f8b0b3a9f4da50.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/44b3577c640115952927171cabc8535056962aca.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/6f4b94db5482bb1a6f64eccefc35f64ef317e67b.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/73495bf0877c143b195ba309d296d9217b4dd27e.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/78ed5f15648e84cf6dbd3196946460ea96e58e18.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/7996398b2532fe2991da8c7c17b77ff1e587d86d.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/8e3e1ebb340295ec1ca7c774f9694191d6a074a3.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/93f7d20aa11ecd9b73bfa61dcdb2d12100bc9035.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/9deb0ce59933760581d4127cdaf930defd04de28.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/a605c7e7346eaa8bc87cbfe16972a10a76f6b98e.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/b21b2122972fd234a2b27f934c47e623bd1e33f3.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/b5fe45b1ab559f0399ccdcdc3e05a3d084de2e3e.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/bada87ceef706124b67a06cf4d48c5bf185659d8.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/cc0cb8473edb82b39c4320d5bb57e07fd7912b3f.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/d118eba566cd7e9834168d0c77fab13897376dc5.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/d60c96a7045641cf2671febe42ea85cf1510e304.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/d8b285f2350b739039388c3196a01317607fb95d.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/da35ceaab656a4835025be5c5e3302d3db07d4f7.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/dcb61258701ef2619b12c625c5a33616b622390c.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/e640af2e56902da9e37c5ede84272fc44914c0ea.webp",
+        "https://cdn.motopulse.com.ua/media/cache/cats/e70daaeef08865cb91b4ba76981af449bee0c468.webp",
+        "https://cdn.motopulse.com.ua/media/cache/products/0015/0015350/2634bf1bf25db794672baedcc54da6bbfcab1a1d.webp",
+        "https://cdn.motopulse.com.ua/media/cache/products/0015/0015350/74d4c18b6ad764a17c72d970aca99a3caa1cae85.webp",
+        "https://cdn.motopulse.com.ua/media/cache/products/0015/0015350/8baca5f52bff0e8b41cc9dc7fb767e7169c383fe.webp"
+      ]
+    },
+    {
+      "name": "breather-bikebox",
+      "url": "https://bikeboxmt.com/shop/bajaj-boxer-breather-hose-genuine/",
+      "status": 200,
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/breather-bikebox.html",
+      "sha256": "53e1e99247d16562aad890c33b6fd3fd0bb4d31029abf79b2ea3477b9d38ed41",
+      "bytes": 570905,
+      "image_candidates": [
+        "https://bikeboxmt.com/wp-content/uploads/2025/05/cropped-BikeBox_Logo-1-180x180.png",
+        "https://bikeboxmt.com/wp-content/uploads/2025/05/cropped-BikeBox_Logo-1-192x192.png",
+        "https://bikeboxmt.com/wp-content/uploads/2025/05/cropped-BikeBox_Logo-1-270x270.png",
+        "https://bikeboxmt.com/wp-content/uploads/2025/05/cropped-BikeBox_Logo-1-32x32.png",
+        "https://bikeboxmt.com/wp-content/uploads/2026/02/BOXER-HOSE-BREATHER-BAJAJ-100x100.webp",
+        "https://bikeboxmt.com/wp-content/uploads/2026/02/BOXER-HOSE-BREATHER-BAJAJ-150x150.webp",
+        "https://bikeboxmt.com/wp-content/uploads/2026/02/BOXER-HOSE-BREATHER-BAJAJ-24x24.webp",
+        "https://bikeboxmt.com/wp-content/uploads/2026/02/BOXER-HOSE-BREATHER-BAJAJ-300x300.webp",
+        "https://bikeboxmt.com/wp-content/uploads/2026/02/BOXER-HOSE-BREATHER-BAJAJ-48x48.webp",
+        "https://bikeboxmt.com/wp-content/uploads/2026/02/BOXER-HOSE-BREATHER-BAJAJ-96x96.webp",
+        "https://bikeboxmt.com/wp-content/uploads/2026/02/BOXER-HOSE-BREATHER-BAJAJ.webp",
+        "https://cdn-ilehajd.nitrocdn.com/sEuXPOmJoyPYYDVxpJteKxkYySrDKQtO/assets/images/optimized/rev-8b9b35d/bikeboxmt.com/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.png",
+        "https://cdn-ilehajd.nitrocdn.com/sEuXPOmJoyPYYDVxpJteKxkYySrDKQtO/assets/images/optimized/rev-8b9b35d/bikeboxmt.com/wp-content/uploads/2025/05/4-BOXER-KIT-CYLINDER-BLOCK-PISTON-BLACK-36JZ0002-BAJAJ-1-100x100.jpg",
+        "https://cdn-ilehajd.nitrocdn.com/sEuXPOmJoyPYYDVxpJteKxkYySrDKQtO/assets/images/optimized/rev-8b9b35d/bikeboxmt.com/wp-content/uploads/2025/05/4-BOXER-KIT-CYLINDER-BLOCK-PISTON-BLACK-36JZ0002-BAJAJ-1-150x150.jpg",
+        "https://cdn-ilehajd.nitrocdn.com/sEuXPOmJoyPYYDVxpJteKxkYySrDKQtO/assets/images/optimized/rev-8b9b35d/bikeboxmt.com/wp-content/uploads/2025/05/4-BOXER-KIT-CYLINDER-BLOCK-PISTON-BLACK-36JZ0002-BAJAJ-1-300x300.jpg",
+        "https://cdn-ilehajd.nitrocdn.com/sEuXPOmJoyPYYDVxpJteKxkYySrDKQtO/assets/images/optimized/rev-8b9b35d/bikeboxmt.com/wp-content/uploads/2025/05/4-BOXER-KIT-CYLINDER-BLOCK-PISTON-BLACK-36JZ0002-BAJAJ-1.jpg",
+        "https://cdn-ilehajd.nitrocdn.com/sEuXPOmJoyPYYDVxpJteKxkYySrDKQtO/assets/images/optimized/rev-8b9b35d/bikeboxmt.com/wp-content/uploads/2025/05/6-BOXER-HANDLE-BAR-GENUINE-100x100.jpg",
+        "https://cdn-ilehajd.nitrocdn.com/sEuXPOmJoyPYYDVxpJteKxkYySrDKQtO/assets/images/optimized/rev-8b9b35d/bikeboxmt.com/wp-content/uploads/2025/05/6-BOXER-HANDLE-BAR-GENUINE-150x150.jpg",
+        "https://cdn-ilehajd.nitrocdn.com/sEuXPOmJoyPYYDVxpJteKxkYySrDKQtO/assets/images/optimized/rev-8b9b35d/bikeboxmt.com/wp-content/uploads/2025/05/6-BOXER-HANDLE-BAR-GENUINE-300x300.jpg",
+        "https://cdn-ilehajd.nitrocdn.com/sEuXPOmJoyPYYDVxpJteKxkYySrDKQtO/assets/images/optimized/rev-8b9b35d/bikeboxmt.com/wp-content/uploads/2025/05/6-BOXER-HANDLE-BAR-GENUINE.jpg",
+        "https://cdn-ilehajd.nitrocdn.com/sEuXPOmJoyPYYDVxpJteKxkYySrDKQtO/assets/images/optimized/rev-8b9b35d/bikeboxmt.com/wp-content/uploads/2025/05/6-HLX150-COVER-FRAME-LTAPESET-BLACK-TVS-1-100x100.jpg",
+        "https://cdn-ilehajd.nitrocdn.com/sEuXPOmJoyPYYDVxpJteKxkYySrDKQtO/assets/images/optimized/rev-8b9b35d/bikeboxmt.com/wp-content/uploads/2025/05/6-HLX150-COVER-FRAME-LTAPESET-BLACK-TVS-1-150x150.jpg",
+        "https://cdn-ilehajd.nitrocdn.com/sEuXPOmJoyPYYDVxpJteKxkYySrDKQtO/assets/images/optimized/rev-8b9b35d/bikeboxmt.com/wp-content/uploads/2025/05/6-HLX150-COVER-FRAME-LTAPESET-BLACK-TVS-1-300x300.jpg",
+        "https://cdn-ilehajd.nitrocdn.com/sEuXPOmJoyPYYDVxpJteKxkYySrDKQtO/assets/images/optimized/rev-8b9b35d/bikeboxmt.com/wp-content/uploads/2025/05/6-HLX150-COVER-FRAME-LTAPESET-BLACK-TVS-1.jpg",
+        "https://cdn-ilehajd.nitrocdn.com/sEuXPOmJoyPYYDVxpJteKxkYySrDKQtO/assets/images/optimized/rev-8b9b35d/bikeboxmt.com/wp-content/uploads/2025/05/BikeBoxfinal-logo.webp"
+      ]
+    },
+    {
+      "name": "breather-crosland",
+      "url": "https://www.croslandrepuestos.pe/manguera-respiradero-ja511011/p",
+      "status": 200,
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/breather-crosland.html",
+      "sha256": "e04c7e69730cdee89bf153445fb4a1ff546bc0fcb2617fe68bdde99ca90b9210",
+      "bytes": 96592,
+      "image_candidates": []
+    },
+    {
+      "name": "ucal2021",
+      "url": "https://motogaadi.com/pub/media/BrandsPdffiles/u/c/ucal.pdf",
+      "error": "HTTP Error 404: Not Found"
+    },
+    {
+      "name": "ucal-related-range",
+      "url": "https://www.srilakshmiautoagency.com/admin/clients/pdf/UCAL%20carburetors.pdf",
+      "error": "HTTP Error 503: Service Unavailable"
+    },
+    {
+      "name": "clamp-99rpm",
+      "url": "https://www.99rpm.com/bajaj/cylinder-head-discover-125-2011-14.html",
+      "status": 200,
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/clamp-99rpm.html",
+      "sha256": "e1a7cb6589495f68131ed05cf8f58c12615170c420b00c6061acc432d6b65251",
+      "bytes": 78321,
+      "found_terms": {
+        "45 X W 10": true,
+        "45 x W 10": false,
+        "DP101198": true,
+        "49 мм": false,
+        "33 мм": false,
+        "34 мм": false
+      }
+    },
+    {
+      "name": "sleeve-epicentr",
+      "url": "https://epicentrk.ua/shop/mplc-patrubok-karburatora-gumovij-do-motocikla-bajaj-boxer-bm-bmx-150cc-pf581402-1f11be5f-2795-68a6-9bd8-6be81dd8a1cb.html",
+      "status": 200,
+      "private_path": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/sleeve-epicentr.html",
+      "sha256": "e21c7ae4750ff23d132bc41fee5a1c0ac41a763ce19c7ba14fe0b45b2f96b676",
+      "bytes": 225529,
+      "found_terms": {
+        "45 X W 10": false,
+        "45 x W 10": false,
+        "DP101198": false,
+        "49 мм": true,
+        "33 мм": true,
+        "34 мм": true
+      }
+    }
+  ],
+  "published_dimensions": [
+    {
+      "part": "LJA00011 intake O-ring",
+      "property": "inner diameter",
+      "value_mm": 28.7,
+      "section_diameter_mm": 1.9,
+      "quantity": 2,
+      "source": "D04 PDF13 item7",
+      "status": "documented_related_variant",
+      "limit": "Dimensions of ring only, not manifold bore, bolt spacing, flange size or a calibration target present in the supplier photograph."
+    },
+    {
+      "part": "DP101198 clamp",
+      "property": "retailer part description",
+      "value": "Clamp (Id45 X W10)",
+      "source_private": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/clamp-99rpm.html",
+      "source_url": "https://www.99rpm.com/bajaj/cylinder-head-discover-125-2011-14.html",
+      "status": "documented_related_retailer_label",
+      "limit": "Different motorcycle page uses same SKU. No tolerance, tightening range, exact screw or mountedRDC dimension established. Another search-only seller calls39mm; not averaged or adopted."
+    },
+    {
+      "part": "PF581402-named aftermarket Fengri BM150 sleeve",
+      "property": "seller specifications",
+      "outside_diameter_mm": 49,
+      "mounting_diameter_mm": 33,
+      "height_mm": 34,
+      "source_private": "/workspace/wewa-assets/references/engine17-intake-exterior-v1/sleeve-epicentr.html",
+      "source_url": "https://epicentrk.ua/shop/mplc-patrubok-karburatora-gumovij-do-motocikla-bajaj-boxer-bm-bmx-150cc-pf581402-1f11be5f-2795-68a6-9bd8-6be81dd8a1cb.html",
+      "status": "documented_aftermarket_seller_claim_not_adopted_as_OEM",
+      "limit": "Photo label is FENGRI BM150; no measuring instrument/defined section/tolerance. Do not apply to Matriz OEM-named sleeve or currentRDC, and do not infer a conflict with45mm clamp from unspecified surface locations."
+    }
+  ],
+  "carburettor_identity_crosscheck": {
+    "D04": "JV581204 forUG5",
+    "actual_photo": "JV581204-motopulse.webp, seller titleBoxer1255gears; labelBM125 partially visible",
+    "secondary_listing": "OEMship lists JV581204 ↔UVD20-27; not manufacturer-hosted and date fields are not adopted as actual manufacturing year.",
+    "manufacturer_catalogue_attempts": "Motogaadi UCAL PDF404 and Srilakshmi mirror503; no PDF inspected, no manufacturer dimensional assertion.",
+    "unresolved": "ExactRDC code, venturi diameter, exterior envelope, opposite-side controls/TPS and all mounting offsets. Model-name20 orVM21.5 is not adopted as a measured bore."
+  },
+  "units_for_B": [
+    {
+      "id": "intake-insulator-JV581404",
+      "priority": 1,
+      "scope": "Single separate thin insulator, two fixing openings and annular recess visible",
+      "source_images": [
+        "JV581404-winter.jpg",
+        "JV581404-motozilla-919201.jpg"
+      ],
+      "visible_supported": "Asymmetric two-ear outline, two through holes, central opening and one annular recessed face; not a generic gasket disk.",
+      "usable_now": "G2 contour preparation and candidate visible face only, with physical scale/back face explicitly estimated; not OEM-fit-ready",
+      "views_to_construct": [
+        "Near-normal face matching919201",
+        "Oblique thickness/silhouette",
+        "Opposite face when documented; currently unknown"
+      ],
+      "critical_unknowns": [
+        "Thickness",
+        "Opposite-face ring-seat topology",
+        "Central and bolt diameters/spacing",
+        "Material composition",
+        "ExactRDC identity"
+      ],
+      "interface": "Head intake flange and manifold, two catalogued rings total; do not infer photo scale from ring ID."
+    },
+    {
+      "id": "intake-manifold-52JV0180",
+      "priority": 2,
+      "scope": "Single separate cast manifold, not the complete carb/intake stack",
+      "source_images": [
+        "52JV0180-winter.jpg"
+      ],
+      "visible_supported": "Hollow spigot with circumferential retaining ribs, filleted two-ear flange and small lateral relief. One upper oblique angle only.",
+      "usable_now": "G2 isolated contour/section plan and bounded candidate for visible exterior; underside/gasket seat and opposite wall still missing",
+      "views_to_construct": [
+        "Upper-quarter matching supplier",
+        "Side profile to check spigot/base transition",
+        "Head mating underside and exact bore section require source"
+      ],
+      "critical_unknowns": [
+        "Full underside",
+        "Port axis/tilt",
+        "Spigot taper and section",
+        "Ring grooves/seat depth",
+        "Bolt spacing",
+        "RDC compatibility"
+      ],
+      "interface": "Head→insulator→manifold→sleeve, not flange-less direct carb-body approximation."
+    }
+  ],
+  "other_elements": [
+    {
+      "part": "PF581402 sleeve",
+      "observed": "Matriz actual photo, two clamp lands, internal lips/step, tabs/notches and seam; Fengri photo is a separately tagged aftermarket analogue.",
+      "missing": "Exact opposing-mouth section/length/rubber compliance and clocking; no generic smooth tube."
+    },
+    {
+      "part": "DP101198 clamp×2",
+      "observed": "Catalogue only for shape plus retail dimensional label; no close isolated actual clamp photo obtained.",
+      "missing": "Band profile, lugs/fastener, range and installed clocking; do not borrow DH121038 variant."
+    },
+    {
+      "part": "JV581204 carburettor exterior",
+      "observed": "One real1600² oblique photo into large mouth, bowl, cap, cable elbow/adjuster, lever and loose hoses.",
+      "missing": "Opposite-side exterior/bowl underside and measured envelope; actualRDC identity/TPS unknown.",
+      "function_limit": "Catalogues distinguish mixing cap/plunger lever/drain/venting components, but loose photographed hose routes and each visible nipple are not assigned without evidence. No jets/float/piston internals fabricated."
+    },
+    {
+      "part": "JA511011 breather hose",
+      "observed": "BikeBox actual free curved hose with code; Crosland1/2 same exposure pair, not two independent views. D04 air-cleaner plate19 identifies breather separately from drainJA581012.",
+      "missing": "InstalledRDC route, upper nipple and clamps; do not connect to an arbitrary cap or intake fitting.",
+      "scope_limit": "Breather is not fuel feed or carb drain; no complete airbox internals inferred."
+    }
+  ],
+  "ownership_interfaces": {
+    "17_B": "Insulator/manifold/sleeve/clamps, exterior carb and local fittings, documented externally visible breather/vent/drain segments.",
+    "18_C": "Fuel tap, tank outlet and single feed hose; coordinate one carb inlet, no duplicate feed hose inlot17.",
+    "10_B": "Throttle cable continuity from grip, local carb adjuster inlot17; no duplicate invented cable.",
+    "airbox": "Decorative side cover remains18C; hidden media and labyrinth not requested as fabricated."
+  },
+  "negative_or_rejected_results": [
+    {
+      "target": "Motozilla JV581204913929/913930 and JV581404919202/919203",
+      "result": "Actually opened but catalogue drawings, not four real product views."
+    },
+    {
+      "target": "MotoMarket JV581204",
+      "result": "HTTP200 only518-byte challenge script; no useful product page/image inspected."
+    },
+    {
+      "target": "UCAL PDF mirrors",
+      "result": "404/503; no PDF contents asserted inspected."
+    },
+    {
+      "target": "Crosland JA511011 image1/image2",
+      "result": "Actually opened; same exposure with different encoding, counted once for view coverage."
+    },
+    {
+      "target": "Fengri PF581402-labelled sleeve",
+      "result": "Actually opened; aftermarket brand printed on package, excluded as exactBajaj/RDC geometry/dimension certification."
+    },
+    {
+      "target": "RDC installed code/hoses",
+      "result": "Native photos too small/occluded; no claimed exactcode,3Dplacement orroute."
+    }
+  ],
+  "next_useful_sources": [
+    "Opposite face/underside of52JV0180 with part label",
+    "Both JV581404 faces/physical thickness",
+    "JV581204 opposite side and bowl underside, same part number",
+    "ExactRDC close-up with tank/side cover removed to reveal intake and breather routes",
+    "Actual DP101198 clamp isolated with dimensional specification"
+  ],
+  "rights": "All source pixels remain private; documentary URLs/hashes only inpublic repo. No redistribution or texture permission inferred.",
+  "new_geometry_created": false,
+  "new_render_created": false,
+  "metric_camera_calibrated": false,
+  "OEM_fit_certified": false,
+  "art_accepted": false
+}

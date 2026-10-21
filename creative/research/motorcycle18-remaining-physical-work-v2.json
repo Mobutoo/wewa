@@ -1,0 +1,1014 @@
+{
+  "schema": "wewa.motorcycle18.remaining-physical-work.v2",
+  "snapshot_utc": "2026-10-21T05:18:03.216713+00:00",
+  "scope": "Read-only documentary/records pointage of18lots for publication09; no Blender evaluation, rendering, new geometry or artistic acceptance. Later live changes do not update this snapshot.",
+  "counts": {
+    "distinct_component_ids": 48,
+    "production_rows": 48,
+    "declared_records": 54,
+    "lots": 18,
+    "complete_or_art_accepted_lots": 0
+  },
+  "counting_rule": "Count component-production.components IDs regardless of legacy candidate_source/generated_candidate_source field. Revisions, diagnostics and14-source review assemblies are not new component types.48registered production IDs do not mean48finished game assets;54records are not54built pieces. No exact total physical-part denominator is claimed.",
+  "delivery09_revisions": [
+    "instruments-v5",
+    "engine-head-v3",
+    "engine-ohc-stub-v1",
+    "rear-rim-v1",
+    "engine-spark-cap-v1_REWORK",
+    "engine-spark-plug-v2"
+  ],
+  "excluded_active_from_delivery09_not_scope18": [
+    "engine-spark-cap-v2",
+    "rear-tyre-v1",
+    "headlamp-cowl-shell-study active"
+  ],
+  "C_sequence": {
+    "updated_utc": "2026-10-21T04:48:59.480589+00:00",
+    "reason": "Root prioritises the two large absent silhouette/bodywork units once the active cowl is frozen; no scope abandoned or additional geometry author.",
+    "order": [
+      "Finish current isolated headlamp cowl and its proofs/finals",
+      "Lot18 tank, one detailed unit",
+      "Lot18 seat, one detailed unit",
+      "Return to remaining lot12, rearSNS subunits16 and remaining18 according to documentation/interface readiness"
+    ],
+    "tank_seat_research": "../research/bodywork18-tank-seat-v1/README.md",
+    "historical_bodywork_handoff_unchanged": true,
+    "detailed_authors_max": 3,
+    "C_long_renderers_max": 1,
+    "ownership_changes": false
+  },
+  "lots": [
+    {
+      "lot": 1,
+      "label": "Pontets et fixations du guidon",
+      "owner": "A",
+      "depends_on_lots": [],
+      "fabricated": [
+        {
+          "component_id": "MOTO-HANDLEBAR-001",
+          "revision": "handlebar-v1",
+          "status": "legacy_fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-HANDLEBAR-CLAMPS-001",
+          "revision": "handlebar-clamps-v1",
+          "source_sha256": "416fd21980fe4425628bf7414607c8c37c12dea4f70965e0bac67c721d7e14c5",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-HANDLEBAR-MOUNT-NYLOC-001",
+          "revision": "handlebar-mount-nyloc-v3",
+          "source_sha256": "c82851ea5e7434de3477c9f1c91eb227f37729b946499ee688c0f825278c487e",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-HANDLEBAR-MOUNT-UPPER-WASHER-001",
+          "revision": "handlebar-mount-upper-washer-v1",
+          "source_sha256": "9486e5526cb7d126f17499bde267f880d3cf59fecc371fe76b8ba048a4a7d7ee",
+          "status": "fabricated_candidate_not_art_accepted"
+        }
+      ],
+      "remaining_physical_work": [
+        "Amortisseurs supérieurs DS181008 ×2, inférieurs DS181009 ×2 et rondelles inférieures DS181010 ×2 : non fabriqués, sections D15 illisibles ; quantités de variante liée."
+      ],
+      "dimension_interface_unknowns": "Sections DS181008/9/10 et empilement monté non résolus.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "fabricated_candidate_not_art_accepted",
+        "interface_unknown",
+        "research_only_no_dedicated_geometry: remaining units only, not built candidates"
+      ]
+    },
+    {
+      "lot": 2,
+      "label": "Support des compteurs",
+      "owner": "A",
+      "depends_on_lots": [
+        1
+      ],
+      "fabricated": [
+        {
+          "component_id": "MOTO-INSTRUMENT-BRACKET-001",
+          "revision": "instrument-bracket-v2",
+          "source_sha256": "52d89cdeb675610ef4f89d8ea10a17c95f79824c68aa8953d6c503b5ce245759",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-INSTRUMENTS-001",
+          "revision": "instruments-v5",
+          "status": "fabricated_cockpit_supplement_not_lot19"
+        }
+      ],
+      "remaining_physical_work": [
+        "Pas de nouvelle pièce du support observé annoncée absente ; position et interfaces support/compteurs/té/visserie à résoudre. Compteurs v5 sont un complément du cockpit, aucun lot19."
+      ],
+      "dimension_interface_unknowns": "Repère du support isolé et interfaces tés/compteurs/visserie non reçus.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "fabricated_candidate_not_art_accepted",
+        "interface_unknown"
+      ]
+    },
+    {
+      "lot": 3,
+      "label": "Accélérateur et entraînement de câble",
+      "owner": "B",
+      "depends_on_lots": [],
+      "fabricated": [
+        {
+          "component_id": "MOTO-THROTTLE-CONTROL-001",
+          "revision": "throttle-control-v1",
+          "source_sha256": "1c0747975fbdcd2ada2140f2461ff359940967aa1a3036e2b7e0a3d24221237f",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-HANDLEBAR-GRIPS-001",
+          "revision": "handlebar-grips-v3",
+          "source_sha256": "8ba577ea4078850569394d7d17e6e6d868e590bb287b329da3c0600706351381",
+          "status": "fabricated_candidate_not_art_accepted"
+        }
+      ],
+      "remaining_physical_work": [
+        "Continuité du câble accélérateur : suivie uniquement au lot10 ; contrôle du rotor/poignée et du serrage en montage."
+      ],
+      "dimension_interface_unknowns": "Dimensions, interfaces et variante RDC ne sont pas certifiées par le candidat isolé.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "fabricated_candidate_not_art_accepted",
+        "interface_unknown"
+      ]
+    },
+    {
+      "lot": 4,
+      "label": "Commodo gauche",
+      "owner": "C",
+      "depends_on_lots": [],
+      "fabricated": [
+        {
+          "component_id": "MOTO-SWITCHGEAR-LEFT-001",
+          "revision": "switchgear-left-v3",
+          "source_sha256": "a8cde7758ea9c96f2eac7c2d7ba817b4a353935a0a62ac2d53d0003e8e9bdeea",
+          "status": "fabricated_candidate_not_art_accepted"
+        }
+      ],
+      "remaining_physical_work": [
+        "Faisceau et raccords visibles : suivis uniquement au lot10 ; montage, jeu et identité exacte RDC encore ouverts."
+      ],
+      "dimension_interface_unknowns": "Dimensions, interfaces et variante RDC ne sont pas certifiées par le candidat isolé.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "fabricated_candidate_not_art_accepted",
+        "interface_unknown"
+      ]
+    },
+    {
+      "lot": 5,
+      "label": "Commodo droit",
+      "owner": "C",
+      "depends_on_lots": [
+        3
+      ],
+      "fabricated": [
+        {
+          "component_id": "MOTO-SWITCHGEAR-RIGHT-001",
+          "revision": "switchgear-right-v1",
+          "source_sha256": "84182072eb72607cf3b9a029cf4e09964f8b4a86df612bfed912d0d666e9087c",
+          "status": "fabricated_candidate_not_art_accepted"
+        }
+      ],
+      "remaining_physical_work": [
+        "Faisceau et raccords visibles : suivis uniquement au lot10 ; fonction du bouton rouge non identifiée, aucune commande supplémentaire inventée."
+      ],
+      "dimension_interface_unknowns": "Dimensions, interfaces et variante RDC ne sont pas certifiées par le candidat isolé.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "fabricated_candidate_not_art_accepted",
+        "interface_unknown"
+      ]
+    },
+    {
+      "lot": 6,
+      "label": "Levier embrayage et support",
+      "owner": "B",
+      "depends_on_lots": [
+        4
+      ],
+      "fabricated": [
+        {
+          "component_id": "MOTO-CLUTCH-CONTROL-001",
+          "revision": "clutch-control-v2",
+          "source_sha256": "586b41d08fd0cb8a9caad66e7cbe83af1592aad42e6def823135f99b6f200059",
+          "status": "fabricated_candidate_not_art_accepted"
+        }
+      ],
+      "remaining_physical_work": [
+        "Boulon et écrou de bridage du support à fabriquer séparément ; sortie de câble suivie au lot10."
+      ],
+      "dimension_interface_unknowns": "Dimensions, interfaces et variante RDC ne sont pas certifiées par le candidat isolé.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "fabricated_candidate_not_art_accepted",
+        "interface_unknown",
+        "research_only_no_dedicated_geometry: remaining units only, not built candidates"
+      ]
+    },
+    {
+      "lot": 7,
+      "label": "Levier frein au guidon et support",
+      "owner": "B",
+      "depends_on_lots": [
+        3,
+        5
+      ],
+      "fabricated": [
+        {
+          "component_id": "MOTO-FRONT-BRAKE-CONTROL-001",
+          "revision": "front-brake-control-v2",
+          "source_sha256": "6ab2f1ecb322f92a1f26643a149e7b2b93691dc91d3fb2e965c8b8f55733b2e1",
+          "status": "fabricated_candidate_not_art_accepted"
+        }
+      ],
+      "remaining_physical_work": [
+        "Boulon et écrou de bridage du support à fabriquer séparément ; sortie de câble suivie au lot10."
+      ],
+      "dimension_interface_unknowns": "Dimensions, interfaces et variante RDC ne sont pas certifiées par le candidat isolé.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "fabricated_candidate_not_art_accepted",
+        "interface_unknown",
+        "research_only_no_dedicated_geometry: remaining units only, not built candidates"
+      ]
+    },
+    {
+      "lot": 8,
+      "label": "Rétroviseurs gauche/droit",
+      "owner": "C",
+      "depends_on_lots": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "fabricated": [
+        {
+          "component_id": "MOTO-MIRROR-RIGHT-001",
+          "revision": "mirror-right-v3",
+          "source_sha256": "4be6e74518d7e0a6baccfc66c136cba148882183bf1d6020ac329ed9c0c32c60",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-MIRROR-LEFT-001",
+          "revision": "mirror-left-v2",
+          "source_sha256": "7725731e869b6edeea744965054518659eeb6355f6acc670718738a8144b1a30",
+          "status": "fabricated_candidate_not_art_accepted"
+        }
+      ],
+      "remaining_physical_work": [
+        "Aucune seconde paire à fabriquer : contrôler montage, filetages/écrous et dégagement des deux miroirs existants avec leviers/commodos."
+      ],
+      "dimension_interface_unknowns": "Dimensions, interfaces et variante RDC ne sont pas certifiées par le candidat isolé.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "fabricated_candidate_not_art_accepted",
+        "interface_unknown"
+      ]
+    },
+    {
+      "lot": 9,
+      "label": "Contacteur et clé",
+      "owner": "B",
+      "depends_on_lots": [
+        2
+      ],
+      "fabricated": [
+        {
+          "component_id": "MOTO-IGNITION-LOCK-001",
+          "revision": "ignition-lock-v1",
+          "source_sha256": "63447081802d85b8d9b61463f59aea6cc3db8aa72380ee9f66a960113707c4ef",
+          "status": "fabricated_candidate_not_art_accepted"
+        }
+      ],
+      "remaining_physical_work": [
+        "Petit anneau de clé non fabriqué ; connecteur visible du contacteur suivi au lot10."
+      ],
+      "dimension_interface_unknowns": "Dimensions, interfaces et variante RDC ne sont pas certifiées par le candidat isolé.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "fabricated_candidate_not_art_accepted",
+        "interface_unknown",
+        "research_only_no_dedicated_geometry: remaining units only, not built candidates"
+      ]
+    },
+    {
+      "lot": 10,
+      "label": "Câbles et faisceau visibles",
+      "owner": "B",
+      "depends_on_lots": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "fabricated": [
+        {
+          "component_id": "MOTO-COCKPIT-CABLES-001",
+          "revision": "cockpit-cables-v2",
+          "source_sha256": "1e836f483c6d682a47dc072377971d35aa927f50a53a51e9ab0cef37e0d18279",
+          "status": "fabricated_candidate_not_art_accepted"
+        }
+      ],
+      "remaining_physical_work": [
+        "Segments supérieurs complets de gaines embrayage/frein/accélérateur et terminaisons observables ; trois sections partielles actuelles ne constituent pas les câbles entiers.",
+        "Faisceau visible des commodos et connecteur allumage ; aucune route cachée inventée. Ne comprend ni fil HT17 ni durite essence18."
+      ],
+      "dimension_interface_unknowns": "Dimensions, interfaces et variante RDC ne sont pas certifiées par le candidat isolé.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "fabricated_candidate_not_art_accepted",
+        "interface_unknown",
+        "research_only_no_dedicated_geometry: remaining units only, not built candidates"
+      ]
+    },
+    {
+      "lot": 11,
+      "label": "Visière et entourage des compteurs",
+      "owner": "C",
+      "depends_on_lots": [
+        2
+      ],
+      "fabricated": [
+        {
+          "component_id": "MOTO-INSTRUMENT-VISOR-001",
+          "revision": "instrument-visor-v1",
+          "source_sha256": "c790ffbba0a49f4d63e2dcf85a30cf88eb1aa8c6edd847514c041e5c0fa70f15",
+          "status": "fabricated_candidate_not_art_accepted"
+        }
+      ],
+      "remaining_physical_work": [
+        "Retours/supports cachés et fixations de visière non fabriqués ; positions/perçages et implantation réelle restent inconnus, pas de trous de convenance."
+      ],
+      "dimension_interface_unknowns": "Retours et fixations cachés ; vue cockpit de revue ne valide pas le montage.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "fabricated_candidate_not_art_accepted",
+        "interface_unknown",
+        "research_only_no_dedicated_geometry: remaining units only, not built candidates"
+      ]
+    },
+    {
+      "lot": 12,
+      "label": "Phare et clignotants avant",
+      "owner": "C",
+      "depends_on_lots": [
+        11
+      ],
+      "fabricated": [
+        {
+          "component_id": "MOTO-HEADLAMP-FRONT-PROTECTOR-001",
+          "revision": "headlamp-front-protector-v2",
+          "source_sha256": "b9a7e64ecc08ed9de44e2bf5e411fb76fabf2be40d43d9c405f4b7160c96c9fd",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-HEADLAMP-HOUSING-001",
+          "revision": "headlamp-housing-v2",
+          "source_sha256": "28dc0546d85f95c13e7903d2c8232517b88d2fdbb1a5c108ec9708b2bd729bd3",
+          "status": "fabricated_candidate_not_art_accepted"
+        }
+      ],
+      "remaining_physical_work": [
+        "Carénage de phare : étude de coque active C non gelée pour livraison09 ; pads, retours et interfaces restant à construire/contrôler.",
+        "Optique/lentille, réflecteur, ampoule/douille et liaisons visibles ; fixations/joints non couverts par boîtier nu et protecteur.",
+        "Clignotants avant LH et RH : corps, lentille, tige/support, câble et fixations."
+      ],
+      "dimension_interface_unknowns": "Variante, profondeur optique, entraxes et assemblage phare/visière/fourche.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "fabricated_candidate_not_art_accepted",
+        "interface_unknown",
+        "active_not_delivery09",
+        "research_only_no_dedicated_geometry: remaining units only, not built candidates"
+      ]
+    },
+    {
+      "lot": 13,
+      "label": "Fourche et direction",
+      "owner": "A",
+      "depends_on_lots": [
+        1
+      ],
+      "fabricated": [
+        {
+          "component_id": "MOTO-FORK-INNER-TUBE-001",
+          "revision": "front-fork-inner-tube-v1",
+          "source_sha256": "dca2502286663e14f80bdcd35365bc61bedab849a2df2c612e48438e456d0294",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-STEERING-UPPER-001",
+          "revision": "steering-upper-v1",
+          "source_sha256": "ba2bf24d27f3ef2092d3997823f2c792cec4af268aa527ee4730ba23f064e47f",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-STEERING-LOWER-001",
+          "revision": "steering-lower-v1",
+          "source_sha256": "c49ccb6cf81383736a895f611393a0f30adb318103d88e4f3beb8ca90ef31866",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-FORK-OUTER-LEFT-001",
+          "revision": "fork-outer-left-v1",
+          "source_sha256": "8c310db96ce2b7aacab52e49ea9305ceda833fca5a080754a4a43a3b0901e472",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-FORK-OUTER-RIGHT-001",
+          "revision": "fork-outer-right-v1",
+          "source_sha256": "5d08454e9da7fbf85df3532a23d0965475559d94cb13e23dfdae9e8056c14ac6",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-FORK-BELLOWS-001",
+          "revision": "fork-bellows-v2",
+          "source_sha256": "4e7c2f823f0737a159b62528f9683d97ba3e285b8f685bc23f4ef40826bbc590",
+          "status": "fabricated_candidate_not_art_accepted"
+        }
+      ],
+      "remaining_physical_work": [
+        "Colonne/tige centrale de direction absente du té inférieur existant ; roulements, cuvettes, joints et retenues visibles.",
+        "Bouchons/vis de fourche et de serrage des tés, joints visibles non couverts par les corps ; distinguer deux instances des tubes/soufflets après revue de montage."
+      ],
+      "dimension_interface_unknowns": "Tige, pile de direction, fixation et débattement ; nouvelle lèvre soufflet2 ne vaut pas emboîtement certifié.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "fabricated_candidate_not_art_accepted",
+        "interface_unknown",
+        "research_only_no_dedicated_geometry: remaining units only, not built candidates"
+      ]
+    },
+    {
+      "lot": 14,
+      "label": "Ensemble avant et compatibilité des candidats existants",
+      "owner": "A",
+      "depends_on_lots": [
+        13
+      ],
+      "fabricated": [],
+      "remaining_physical_work": [
+        "Axe avant, écrou/rondelle, roulements, entretoise interne, collier externe et joints : non fabriqués séparément ; pile axiale et variante non résolues.",
+        "Arbre de came/joints, visserie et indicateur, mâchoires/garnitures et ressorts, entraînement mécanique de compteur au moyeu : documentaire, non fabriqué ; détails internes seulement si utiles/observables, pas mécanique cachée ajoutée.",
+        "Pneu, jante/moyeu/valve, flasque v2 et levier existants : révision/compatibilité à revoir ; aucun ensemble avant reçu."
+      ],
+      "dimension_interface_unknowns": "15 lignes documentaires ne sont ni15 nouvelles pièces ni un BOM RDC mesuré ; axe/sections/roulements non résolus.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "existing_legacy_candidates_not_new_source09_types",
+        "no_compatibility_qualified_front_assembly",
+        "remaining_units_unbuilt_or_interface_unknown"
+      ],
+      "existing_legacy_candidates": [
+        {
+          "reference": "assets-src/moto-components/front-tyre/README.md",
+          "revision": "front-tyre-v1",
+          "note": "Historical candidate; registered legacy front tyre, no new type in source09."
+        },
+        {
+          "reference": "assets-src/moto-components/front-rim/README.md",
+          "revision": "front-rim-v1"
+        },
+        {
+          "reference": "assets-src/moto-components/front-brake-plate/README_v2.md",
+          "revision": "front-brake-plate-v2"
+        },
+        {
+          "reference": "assets-src/moto-components/front-brake-lever/README.md",
+          "revision": "front-brake-lever-v1"
+        }
+      ]
+    },
+    {
+      "lot": 15,
+      "label": "Garde-boue, cadre et bras oscillant",
+      "owner": "A",
+      "depends_on_lots": [
+        13
+      ],
+      "fabricated": [
+        {
+          "component_id": "MOTO-FRAME-HEADTUBE-001",
+          "revision": "frame-head-tube-v1",
+          "source_sha256": "12832eb665a9ba9f3dbd1f6e1501bcafa0ebf66bf4395a05e0d23bf7d0f90ccc",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-FRAME-DOWNMEMBER-001",
+          "revision": "frame-front-downmember-v1",
+          "source_sha256": "df14820aef2164aa280432b2ba951001315be956ce85b04a5ac5464932dd3cee",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-FRAME-BACKBONE-001",
+          "revision": "frame-front-backbone-v2",
+          "source_sha256": "cf2d2c141a501eb633eba9730ee926122db1fb90bc4a544097e6a2233a05f070",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-FRAME-HEAD-GUSSET-001",
+          "revision": "frame-head-gusset-v1",
+          "source_sha256": "c26005741e3ff96beb5b7582c477c5e1f7b22be2c129c77c7044a1c2b4bae145",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-FRAME-LOWER-CRADLE-RAIL-001",
+          "revision": "frame-lower-cradle-rail-v1",
+          "source_sha256": "b2646434f124396701f7eb9508cc5f59cfe2e846b1ea84c54af20af56f5b42f3",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-FRAME-SEAT-RAIL-001",
+          "revision": "frame-seat-rail-observed-v1",
+          "source_sha256": "d56874f3b68866f4ffe5f1f948de832352087e8ee83096ac43f133361b01b52f",
+          "status": "fabricated_candidate_not_art_accepted"
+        }
+      ],
+      "remaining_physical_work": [
+        "Garde-boue avant : enveloppe G3 seule construite mais bloquée/incomplète, formes latérales, dessous et fixation non résolus ; bavette et fixations/guides manquants.",
+        "Cadre : six unités de tubes/renforts fabriquées ; nœuds, soudures/pattes et platines manquants ne sont pas remplacés par ces six pièces.",
+        "Bras oscillant asymétrique, axe de pivot, bagues/écrou ; patin de chaîne, tendeurs LH/RH, plaques et contre-écrous : recherche seule, aucune géométrie dédiée annoncée.",
+        "Coque du garde-boue arrière, bavette et attaches : compter ici une seule fois ; éclairage/support plaque restent18/C."
+      ],
+      "dimension_interface_unknowns": "14 lignes documentaires, six unités cadre partielles ; longueur pivot→axe, sections et montage non mesurés.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "fabricated_candidate_not_art_accepted",
+        "interface_unknown",
+        "research_only_no_dedicated_geometry: remaining units only, not built candidates"
+      ]
+    },
+    {
+      "lot": 16,
+      "label": "Roue arrière, frein, transmission et amortisseurs",
+      "owner": "A; SNS16 uniquement C",
+      "depends_on_lots": [
+        15
+      ],
+      "fabricated": [
+        {
+          "component_id": "MOTO-RIM-REAR-001",
+          "revision": "rear-rim-v1",
+          "source_sha256": "f97ddc5f4db07d0b97961a7a7282a9937efd68e16b82c159d581719948bb43d9",
+          "status": "fabricated_candidate_not_art_accepted"
+        }
+      ],
+      "remaining_physical_work": [
+        "Pneu arrière A actif, non gelé/livré09 ; valve arrière distincte non fabriquée.",
+        "Jante arrière v1 fabriquée : enveloppe annulaire partielle seulement ; volume central/sièges de moyeu, roulements/colliers, axe/écrous/rondelles restent distincts.",
+        "Porte-couronne/couplage, amortisseur élastique, couronne et fixations, pignon de sortie, chaîne/attache, demi-carters et bouchon/visserie : non fabriqués.",
+        "Frein arrière : flasque, came/joints, mâchoires/garnitures/ressorts, levier/indicateur/visserie, tige/réglage, tirant et petites liaisons ; coordonner pédale17/B sans duplication.",
+        "SNS : amortisseurs arrière LH/RH, fixations/bagues séparées restent C ; aucune géométrie SNS reçue, ne pas les compter comme deux simples copies."
+      ],
+      "dimension_interface_unknowns": "26 lignes documentaires ; largeur de jante, moyeu, pile arrière, frein/transmission/SNS et débattement non validés.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "fabricated_candidate_not_art_accepted",
+        "interface_unknown",
+        "active_not_delivery09",
+        "research_only_no_dedicated_geometry: remaining units only, not built candidates"
+      ]
+    },
+    {
+      "lot": 17,
+      "label": "Moteur extérieur, échappement, repose-pieds, pédales et béquilles",
+      "owner": "B",
+      "depends_on_lots": [
+        15,
+        16
+      ],
+      "fabricated": [
+        {
+          "component_id": "MOTO-ENGINE-OUTPUT-COVER-LEFT-001",
+          "revision": "engine-output-cover-left-v1",
+          "source_sha256": "92f528236a8d9e94669b0eed18e186cb8a2c46612bfb7200907cd6a9abc79399",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-ENGINE-COVER-RIGHT-001",
+          "revision": "engine-cover-right-v2",
+          "source_sha256": "2558ea2479a02caf14e9feddad3f953f5587269083ae7b125a177acd4621515a",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-ENGINE-FILTER-CAP-001",
+          "revision": "engine-filter-cap-v2",
+          "source_sha256": "dc8ded5d6b392eee0f3084da1d66a647efcd3ca44d6cd148fad48f1fa9875436",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-ENGINE-COVER-LEFT-001",
+          "revision": "engine-cover-left-v2",
+          "source_sha256": "f168aa9ef3e3c6e9b7bc2e884309d69da6fab736660ec6c8d1eaa29e7ecffe74",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-KICKSTARTER-001",
+          "revision": "kickstarter-v2",
+          "source_sha256": "94a2aa0b4359738e1f701445d196f2bf39d91a75d57bc0f58ca81242061491b4",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-ENGINE-CYLINDER-001",
+          "revision": "engine-cylinder-v1",
+          "source_sha256": "d78696eb6af8fb23a4917237aa75cfce3389d4759348984a9924fc4845be08c6",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-ENGINE-TAPPET-CAP-001",
+          "revision": "engine-tappet-cap-v1",
+          "source_sha256": "357a46ba78cc244153abf66ccfd1596532d7d14df7131c08a039efc10b66ffb9",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-ENGINE-OHC-COVER-001",
+          "revision": "engine-ohc-cover-v1",
+          "source_sha256": "92db7d154bcc841d2a8ea7b15f89b14836c50a9d5b10d75be9de1aadf8119d45",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-ENGINE-HEAD-001",
+          "revision": "engine-head-v3",
+          "source_sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-ENGINE-OHC-STUB-001",
+          "revision": "engine-ohc-stub-v1",
+          "source_sha256": "285eca8f5345efbfe31da9d2cc95464edcd9070a2e2e902e1e74990b2fb110c0",
+          "status": "fabricated_candidate_not_art_accepted"
+        },
+        {
+          "component_id": "MOTO-ENGINE-SPARK-CAP-001",
+          "revision": "engine-spark-cap-v1",
+          "source_sha256": "69dc27670554175f4ba27509dde0e4a8c7fa0e3e977d093da65f7144be19821d",
+          "status": "fabricated_v1_G3_G4_REWORK_not_accepted"
+        },
+        {
+          "component_id": "MOTO-ENGINE-SPARK-PLUG-001",
+          "revision": "engine-spark-plug-v2",
+          "source_sha256": "35648efb8880f8ca2cad8533083683542331fa2a87a20d5ee87a041128994bd5",
+          "status": "fabricated_candidate_not_art_accepted"
+        }
+      ],
+      "remaining_physical_work": [
+        "Capuchon v1 construit mais profils G3/G4 REWORK ; capuchon v2 correctif actif hors livraison09. Fil HT et éléments visibles de bobine/passe-fils séparés restent à fabriquer.",
+        "Admission : isolant, deux joints toriques de la pile liée, collecteur/pipe, manchon et deux colliers ; carburateur extérieur et ses évents/vidanges/reniflard observables distincts. Identité/calibration RDC inconnues, aucun TPS ni twin-spark importé.",
+        "Autres carters centraux extérieurs visibles et raccords/fixations non couverts par les pièces isolées.",
+        "Collecteur échappement, silencieux, pare-chaleur et attaches ; repose-pieds pilote/passager, sélecteur, pédale frein/liaisons, béquilles latérale/centrale et fixations observables : non fabriqués."
+      ],
+      "dimension_interface_unknowns": "RDC actuelle : aucun corps complet/code de bougie identifié avec certitude, nombre total installé inconnu. D04/D15 liés montrent une branche HT ; CT125UG divergent, aucune extrapolation twin-spark. Le candidat extérieur construit ne certifie pas la monte ; pas de moteur interne caché. Admission/HT distincts du cockpit10.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "fabricated_candidate_not_art_accepted",
+        "interface_unknown",
+        "active_not_delivery09",
+        "fabricated_v1_G3_G4_REWORK_not_accepted",
+        "research_only_no_dedicated_geometry: remaining units only, not built candidates"
+      ]
+    },
+    {
+      "lot": 18,
+      "label": "Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière",
+      "owner": "C",
+      "depends_on_lots": [
+        15,
+        17
+      ],
+      "fabricated": [],
+      "remaining_physical_work": [
+        "Réservoir : coque originale WEWA, col/bouche, bouchon, oreilles/appuis/retentions ; tunnel et dessous inconnus, aucune géométrie dédiée construite à la coupe.",
+        "Selle : mousse/housse/bourrelet et embase, appuis/attaches ; référence apparentée à sept appuis ne certifie pas l’embase RDC.",
+        "Caches latéraux LH/RH et leurs attaches ; porte-bagages/poignées et platines/soudures ; ne pas faire un miroir non justifié.",
+        "Robinet/sortie réservoir et une seule durite vers arrivée carburateur17/B ; code et route actuels inconnus, pas de duplication au lot10.",
+        "Feu arrière/corps/lentille/joint, deux clignotants arrière, support feu/plaque, plaque et réflecteur séparés ; garde-boue/bavette15/A comptés une seule fois."
+      ],
+      "dimension_interface_unknowns": "Capacité11L/empattement1285mm ne cotent pas réservoir/selle ; tunnel, dessous, appuis/attaches et épaisseurs non mesurés.",
+      "group_complete": false,
+      "art_accepted": false,
+      "state_notes": [
+        "research_only_no_dedicated_geometry",
+        "interface_unknown",
+        "research_only_no_dedicated_geometry: remaining units only, not built candidates"
+      ]
+    }
+  ],
+  "major_missing_groups": [
+    "Bras oscillant et pivots15",
+    "Roue arrière complète, frein/transmission et SNS16",
+    "Admission/HT, échappement, repose-pieds/pédales/béquilles17",
+    "Réservoir, selle, caches/rack/éclairage arrière18",
+    "Optique et clignotants avant12, interfaces et visserie de direction/fourche13–14"
+  ],
+  "reconciliations": [
+    "Lot1 ancienne liste remaining_observable_units comprend encore Nyloc et rondelle supérieure déjà construits ; non remis en manque ici.",
+    "v1 historique conservé : ne plus annoncer cadre entier, culasse entière, fourreau droit ou jante arrière totalement absents. Leurs candidats ne ferment pas les groupes.",
+    "Lot18 entier C ; ordre après carénage actif : réservoir puis selle, puis retour12/SNS16/restant18. Anciennes attributions B restent historiques.",
+    "Arrière garde-boue/bavette15/A et éclairage/support18/C : aucun doublon. SNS16C, autres16A ; pédale17B distincte de tringlerie16A.",
+    "Bougie1 diagnostic puis bougie2 représentent un seul ID ; capuchon1 révision corrective active reste construit mais non reçu.",
+    "Boucle câbles2 : preuve177contrôles locaux/0contacts et cockpit3 ne ferment ni les gaines supérieures ni tout le montage."
+  ],
+  "input_snapshot": [
+    {
+      "path": "creative/library/component-production.json",
+      "sha256": "7bb9ffc94d3045cb80270145aa47b64807b213b48b4c940cb457256a7c32a6d2"
+    },
+    {
+      "path": "creative/workflow/motorcycle-execution-18.json",
+      "sha256": "728d3d8e704d06583d9671b096d2ff338df6d15d3c69dbf4b2bebd78d1f81896"
+    },
+    {
+      "path": "creative/workflow/coverage.json",
+      "sha256": "613607642cb453e64fae7ef1fbf236f62421f52276cb003cd45b23483e2e60f7"
+    },
+    {
+      "path": "creative/research/chassis-remaining-18.json",
+      "sha256": "5ccd298f86b10815ac5eae65b3fca5c47ab7492ecc251fd07ed573ec7f206f60"
+    },
+    {
+      "path": "creative/research/engine17-exterior-coverage-v1/report.json",
+      "sha256": "621e390e657a188d61650a6e1452f2cd7ad4fc609db1c9df11b6b02c4ed9b272"
+    },
+    {
+      "path": "creative/research/engine17-intake-exterior-v1/report.json",
+      "sha256": "cfab309827ef67bbd903208e0ea35ff7d696f4067b05802ec6d646cd728fee97"
+    },
+    {
+      "path": "creative/research/bodywork18-tank-seat-v1/report.json",
+      "sha256": "a51442ae160162c2757e464b4b711cce08e480aef869546ab9dac1b39578ff0f"
+    },
+    {
+      "path": "creative/research/swingarm15-reference-v1/report.json",
+      "sha256": "9255bb35a5db6d803f281c1c62c39ca04b3f1006f9814dcdbe602c9aad7e1445"
+    },
+    {
+      "path": "creative/research/motorcycle18-remaining-physical-work.json",
+      "sha256": "17c5e8393c28c7d65bccf47d599c69488d116723280f2c44d357b5d016e82f29"
+    },
+    {
+      "path": "creative/reviews/fork-bellows-v2/manifest-ownership-addendum.json",
+      "sha256": "a2325d7c570d685bc78be24f98311e5a2145bd7d15916566c8825034583730cd"
+    },
+    {
+      "path": "creative/research/engine-spark-cap/profile-comparison-v1/comparison-review.json",
+      "sha256": "88a0ef57a98cd18700610626a6ff0d57e56b54f634ef67bbec39be590cca3cec"
+    },
+    {
+      "path": "creative/workflow/records/moto-brake-lever-front-001.json",
+      "sha256": "4805232acbfbab0ac85a9197d0ac506acd59dfb7f0cf5cc8c8df903854d390c7"
+    },
+    {
+      "path": "creative/workflow/records/moto-brake-plate-front-001.json",
+      "sha256": "45bbebaebf552750dc456012e55f6579f3e6f2c27098ece91aa8d38782636a4b"
+    },
+    {
+      "path": "creative/workflow/records/moto-clutch-control-001.json",
+      "sha256": "29fb721e030618e243ea7b558c8c29983c86d90cb0599cabeedd4aec57312110"
+    },
+    {
+      "path": "creative/workflow/records/moto-cockpit-cables-001.json",
+      "sha256": "41eb37571fd810d3283777233db2d7851ec4a27956dae5d24483ed0406278474"
+    },
+    {
+      "path": "creative/workflow/records/moto-engine-cover-left-001.json",
+      "sha256": "c5809c57aaa88fd6c53c61b17bb0caba20c3763e9767d80e20f219d4da80d0fd"
+    },
+    {
+      "path": "creative/workflow/records/moto-engine-cover-right-001.json",
+      "sha256": "d4d2c4a2588f026476c72f9f16907be5cab43beede17f4e56ca0bbc76b10806f"
+    },
+    {
+      "path": "creative/workflow/records/moto-engine-cylinder-001.json",
+      "sha256": "169d66f73c01ef9bb3a2583bfe345dfae228d39beb277c5e050014b3a0f31985"
+    },
+    {
+      "path": "creative/workflow/records/moto-engine-filter-cap-001.json",
+      "sha256": "5ed0ea15540535fd642fb895e37ee6fc98ccc3ed0f83c46f629b262604f5285d"
+    },
+    {
+      "path": "creative/workflow/records/moto-engine-head-001.json",
+      "sha256": "85d4a81a345897a89f7675a9e8df5b9145ed92494364727f7202c9b67e23e3a9"
+    },
+    {
+      "path": "creative/workflow/records/moto-engine-ohc-cover-001.json",
+      "sha256": "ba0f8952b049fca2121c115e09ba9e14e1eab720070b797c6b9529b3f7068dff"
+    },
+    {
+      "path": "creative/workflow/records/moto-engine-ohc-stub-001.json",
+      "sha256": "72786d280b3dca7a91ec11db2599d5aae3be08685a3b9c7715f683d40e96c15c"
+    },
+    {
+      "path": "creative/workflow/records/moto-engine-output-cover-left-001.json",
+      "sha256": "f8e82e487ab0681bfcdeb9a5453efb40a8ea5fac6d3c33ff078e1158a1a76e73"
+    },
+    {
+      "path": "creative/workflow/records/moto-engine-spark-cap-001.json",
+      "sha256": "d06d19a63325a728a1a7ca8937a43a7a4bc8a8630f42f887f6dfe8587ee7769a"
+    },
+    {
+      "path": "creative/workflow/records/moto-engine-spark-plug-001.json",
+      "sha256": "7efaa4d13c1549f5a11dbb34790c1f8ed384f7a7dadf94982a95bb10c79737a2"
+    },
+    {
+      "path": "creative/workflow/records/moto-engine-tappet-cap-001.json",
+      "sha256": "961676e35ed9bd90d1edca2ca0f09093bd16dfd098933f5e3ad2d841f4592557"
+    },
+    {
+      "path": "creative/workflow/records/moto-fork-bellows-001.json",
+      "sha256": "0a5a60e1b9cf51e7a8ca747564bff25a5d492187959a9d1ac4b2fdf6b85439f2"
+    },
+    {
+      "path": "creative/workflow/records/moto-fork-inner-tube-001.json",
+      "sha256": "069028a044a8ed8f82c9914742e15ec6eab1bd6f80dca6879bf4058eec8cad60"
+    },
+    {
+      "path": "creative/workflow/records/moto-fork-outer-left-001.json",
+      "sha256": "83e9e22e92eb8b084cedbe7a22574227645411ee74efd4e84e540bb185fd9546"
+    },
+    {
+      "path": "creative/workflow/records/moto-fork-outer-right-001.json",
+      "sha256": "55e835aaf1374673e14241c164a4465b87903dd8f8a8e9a8f23d8d9e0c613e6c"
+    },
+    {
+      "path": "creative/workflow/records/moto-frame-backbone-001.json",
+      "sha256": "9938aa2c07ff135e10e1d750643f5dd87d6ab7c4df8aeee88719d3e6168f4b13"
+    },
+    {
+      "path": "creative/workflow/records/moto-frame-downmember-001.json",
+      "sha256": "40272a3349dbb51b870ce9405343a218acdcbfa79b956d1977ac8014339c79e8"
+    },
+    {
+      "path": "creative/workflow/records/moto-frame-head-gusset-001.json",
+      "sha256": "d5fb04dc17acd89fb5cb21202facc7598d48ff9403a3af51b9e3ae22ac2da61d"
+    },
+    {
+      "path": "creative/workflow/records/moto-frame-headtube-001.json",
+      "sha256": "50f0e734cdc90b5b74921467a9d88b793e57afe04570a876d4b1c1a1314be571"
+    },
+    {
+      "path": "creative/workflow/records/moto-frame-lower-cradle-rail-001.json",
+      "sha256": "e9efbb9c3f35f41d558ba059c542b9222d53afba9399e60dec0a77ceb04c7bbc"
+    },
+    {
+      "path": "creative/workflow/records/moto-frame-seat-rail-001.json",
+      "sha256": "d77d9a41bd26526e98788a7f847f801b06df5d6519d68a3b684fe9f11738e3aa"
+    },
+    {
+      "path": "creative/workflow/records/moto-front-brake-control-001.json",
+      "sha256": "a1894111fe81a9b623caf8827377b0d78ff4d9167c81c282886da3dbd4dcc9f9"
+    },
+    {
+      "path": "creative/workflow/records/moto-front-mudguard-shell-001.json",
+      "sha256": "33120d6d80175d6156806d0f5898314bf8e117414753a0c6fea6f52ff587669c"
+    },
+    {
+      "path": "creative/workflow/records/moto-handlebar-001.json",
+      "sha256": "556b7e46b08ac45547ff66c000b191e9203881a59d5c420e1a643b5688889687"
+    },
+    {
+      "path": "creative/workflow/records/moto-handlebar-clamps-001.json",
+      "sha256": "62ac4a205cbb11e10b0b866024d2e3fcc009c858d2bcc1deb04391485dabfec1"
+    },
+    {
+      "path": "creative/workflow/records/moto-handlebar-grips-001.json",
+      "sha256": "93a4c866bece1ac56dac09f8303b9fbc54ba05a79679fabb7c2dfd01b8803a39"
+    },
+    {
+      "path": "creative/workflow/records/moto-handlebar-mount-lower-damper-001.json",
+      "sha256": "97b27491d2f3f4bfc9e6b9a2f22fb0ad122e24cdf8c9cf44d9792489e24e7828"
+    },
+    {
+      "path": "creative/workflow/records/moto-handlebar-mount-lower-washer-001.json",
+      "sha256": "673f2f93a34f6d3a8f52a52c3c9d84da9da9cc40ad46e72b99a566c20b321cba"
+    },
+    {
+      "path": "creative/workflow/records/moto-handlebar-mount-nyloc-001.json",
+      "sha256": "125add392ab3c37f415d485b02121a73fe89e7faeced62bb73263f18de88a096"
+    },
+    {
+      "path": "creative/workflow/records/moto-handlebar-mount-upper-damper-001.json",
+      "sha256": "de092da01381f4877cac367130e5fa8e4d99aa8087d37d940a812f5d1f95f8be"
+    },
+    {
+      "path": "creative/workflow/records/moto-handlebar-mount-upper-washer-001.json",
+      "sha256": "181e582e5d53eb12bc016e077c08dbf1624b2aba1c2c8f8e0d92da22877e332e"
+    },
+    {
+      "path": "creative/workflow/records/moto-headlamp-cowl-001.json",
+      "sha256": "d5aa26263d0672599bf64c0a6aa3e8a810b3c1d04fd94f4c7d3aae62fd6ffc79"
+    },
+    {
+      "path": "creative/workflow/records/moto-headlamp-front-protector-001.json",
+      "sha256": "c71f68f41d3e5fcd79d1d907ae8a600c78b16761cb5cbabfdad5a37687e364f2"
+    },
+    {
+      "path": "creative/workflow/records/moto-headlamp-housing-001.json",
+      "sha256": "86e78879d2900fa427a11aa4ffc480acde377188577e41119ec97a29be9a513d"
+    },
+    {
+      "path": "creative/workflow/records/moto-ignition-lock-001.json",
+      "sha256": "ef02a0f7eaad1cc39b2b7814bf1454de34094b86c8b74dd4c435fbf632def8e2"
+    },
+    {
+      "path": "creative/workflow/records/moto-instrument-bracket-001.json",
+      "sha256": "1eaf3191f69886fe0bb3d3c0ec66196010dcbbcef13c496f1f0aaba8f54985c7"
+    },
+    {
+      "path": "creative/workflow/records/moto-instrument-visor-001.json",
+      "sha256": "4ab95962062dcbbb63b565cc3e497b9e03556676f52549474743a67c98569343"
+    },
+    {
+      "path": "creative/workflow/records/moto-instruments-001.json",
+      "sha256": "8b16436ee14040c19e847e67186ee2c784c3802f0ffadc9f25543a4a4721ab7b"
+    },
+    {
+      "path": "creative/workflow/records/moto-kickstarter-001.json",
+      "sha256": "3dc47892ad6a71871a61c23acc5c5213cc3a9cf7a32313486fd021d138439fd0"
+    },
+    {
+      "path": "creative/workflow/records/moto-mirror-left-001.json",
+      "sha256": "58406a94043fc4e280d4cdd38f6e6581697618ab39a3fff7c2743b295c5dc566"
+    },
+    {
+      "path": "creative/workflow/records/moto-mirror-right-001.json",
+      "sha256": "c62c54a8184b48100b011eb317dfea38c647a351d428f4a317f721cf60107a05"
+    },
+    {
+      "path": "creative/workflow/records/moto-rim-front-001.json",
+      "sha256": "e2d871134e7304fe3bf47d52a39d6deb1531020ef642d344e8d5cfc68bd1e85d"
+    },
+    {
+      "path": "creative/workflow/records/moto-rim-rear-001.json",
+      "sha256": "05e795ec08cc0ba50868a15aa6a8eb8b30e0f7e9679f4dd97ce81d9212f03389"
+    },
+    {
+      "path": "creative/workflow/records/moto-steering-lower-001.json",
+      "sha256": "e8eebc897900352d814ca92c822ebee861ab6ce57170e172093a46a668f98157"
+    },
+    {
+      "path": "creative/workflow/records/moto-steering-upper-001.json",
+      "sha256": "96629d16e06c6862bff31e4d1cb4c0c4707e35133fc92ac0fcf03d7427fe57ca"
+    },
+    {
+      "path": "creative/workflow/records/moto-switchgear-left-001.json",
+      "sha256": "b3e3a8c81f929a94555838d38430b1f7be48b9c66bed71d12d603d504da4670a"
+    },
+    {
+      "path": "creative/workflow/records/moto-switchgear-right-001.json",
+      "sha256": "b07369a4e37a82adae7054d9aab2939775a106ac1fe1301082137888c8092111"
+    },
+    {
+      "path": "creative/workflow/records/moto-throttle-control-001.json",
+      "sha256": "39dab76a4bb2e59b01187ebef383d631f3f93eb1ad65b43a1e1f38a10938c957"
+    },
+    {
+      "path": "creative/workflow/records/moto-tyre-front-001.json",
+      "sha256": "53befec3aaaf783d57e22ca48d335e0df8742f93af7d860275baabb89273a288"
+    },
+    {
+      "path": "creative/workflow/records/moto-tyre-rear-001.json",
+      "sha256": "f1c914914a3ac63098f156576b328405ff00196a836139e1682a8f5bd845a816"
+    }
+  ],
+  "files_written": [
+    "creative/research/motorcycle18-remaining-physical-work-v2.json",
+    "creative/research/motorcycle18-remaining-physical-work-v2.md"
+  ],
+  "status_legend": {
+    "fabricated_candidate_not_art_accepted": "Source de candidat construite, sans réception artistique ni montage OEM implicite.",
+    "fabricated_v1_G3_G4_REWORK_not_accepted": "Candidat construit ; comparaison documentaire forme/matière refuse encore le profil, correction active.",
+    "research_only_no_dedicated_geometry": "Pièce ou groupe encore absent ; références et dimensions/interfaces restent à contraindre.",
+    "active_not_delivery09": "Fabrication/correction active exclue des gels de livraison09 mais conservée dans le périmètre18.",
+    "interface_unknown": "Une pièce peut exister sans que sa pose/liaison aux autres soit validée."
+  },
+  "coordinator_clarification": "Lot14 explicitly retains existing historical candidates; empty fabricated list means no current dedicated workflow revision assigned by the snapshot, not absence of historical geometry. No new component ID added."
+}

@@ -1,0 +1,1509 @@
+{
+  "schema": 1,
+  "scope": "Actual separate candidates and inspection assemblies. No automatic artistic acceptance or hardware qualification.",
+  "assets": {
+    "handlebar": {
+      "label": "Guidon nu",
+      "review": "handlebar-18-baseline",
+      "files": [
+        "handlebar/handlebar-inspection.glb"
+      ],
+      "rigs": [],
+      "source": "handlebar/handlebar-v1.blend",
+      "collection": "WEWA_BARE_HANDLEBAR"
+    },
+    "instruments": {
+      "label": "Compteurs",
+      "review": "instruments-18-baseline",
+      "files": [
+        "instruments/instruments-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "speed_angle",
+          "label": "Aiguille vitesse — angle relatif de revue",
+          "node": "SPEED_NEEDLE_PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -270,
+          "max": 0,
+          "initial": 0,
+          "step": 1
+        },
+        {
+          "id": "fuel_angle",
+          "label": "Aiguille carburant — angle relatif de revue",
+          "node": "FUEL_NEEDLE_PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -28,
+          "max": 52,
+          "initial": 0,
+          "step": 1
+        }
+      ],
+      "source": "instruments/instruments-v1.blend",
+      "collection": "WEWA_INSTRUMENTS_SEPARATE_PARTS"
+    },
+    "grips-v2": {
+      "label": "Poignées v2 — côtés physiques corrigés",
+      "review": "handlebar-grips-v2",
+      "files": [
+        "handlebar-grips/handlebar-grips-v2-inspection.glb"
+      ],
+      "rigs": [],
+      "source": "handlebar-grips/handlebar-grips-v2.blend",
+      "collection": "WEWA_HANDLEBAR_GRIP_ENVELOPES",
+      "component_id": "MOTO-HANDLEBAR-GRIPS-001",
+      "readme": "README_v2.md",
+      "lot": 3
+    },
+    "clamps": {
+      "label": "Pontets du guidon — candidat séparé",
+      "lot": 1,
+      "review": "handlebar-clamps-v1",
+      "source": "handlebar-clamps/handlebar-clamps-v1.blend",
+      "component_id": "MOTO-HANDLEBAR-CLAMPS-001",
+      "files": [
+        "handlebar-clamps/handlebar-clamps-inspection.glb"
+      ],
+      "rigs": [],
+      "collection": "WEWA_HANDLEBAR_CLAMPS_SEPARATE_PARTS"
+    },
+    "throttle": {
+      "label": "Manchon accélérateur et entraînement de câble",
+      "lot": 3,
+      "review": "throttle-control-v1",
+      "source": "throttle-control/throttle-control-v1.blend",
+      "component_id": "MOTO-THROTTLE-CONTROL-001",
+      "files": [
+        "throttle-control/throttle-control-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "throttle",
+          "label": "Rotation du manchon",
+          "node": "Throttle sleeve and cable spool - moving candidate",
+          "axis": [
+            -1,
+            0,
+            0
+          ],
+          "min": 0,
+          "max": 50,
+          "initial": 0
+        }
+      ],
+      "collection": "WEWA_THROTTLE_CONTROL"
+    },
+    "switchgear-left": {
+      "label": "Commodo gauche v2 — pictogrammes documentés",
+      "lot": 4,
+      "review": "switchgear-left-v2",
+      "source": "switchgear-left/switchgear-left-v2.blend",
+      "component_id": "MOTO-SWITCHGEAR-LEFT-001",
+      "files": [
+        "switchgear-left/switchgear-left-v2-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "dipper",
+          "label": "Code/phare",
+          "node": "LH dipper rocker - high low PIVOT",
+          "axis": [
+            -0.9166959524,
+            0,
+            0.3995854259
+          ],
+          "kind": "rotation",
+          "min": -9,
+          "max": 9,
+          "step": 0.1,
+          "initial": 0
+        },
+        {
+          "id": "turn",
+          "label": "Clignotant",
+          "node": "LH turn selector - centre push PIVOT",
+          "axis": [
+            -0.9166959524,
+            0,
+            0.3995854259
+          ],
+          "kind": "translation",
+          "min": -0.003,
+          "max": 0.003,
+          "step": 0.0001,
+          "initial": 0
+        },
+        {
+          "id": "turn_push",
+          "label": "Rappel central",
+          "node": "LH turn selector - centre push PIVOT",
+          "axis": [
+            0.3995854259,
+            0,
+            0.9166959524
+          ],
+          "kind": "translation",
+          "min": 0,
+          "max": 0.0014,
+          "step": 0.0001,
+          "initial": 0
+        },
+        {
+          "id": "horn",
+          "label": "Klaxon",
+          "node": "LH horn push tongue PIVOT",
+          "axis": [
+            0.3995854259,
+            0,
+            0.9166959524
+          ],
+          "kind": "translation",
+          "min": 0,
+          "max": 0.0014,
+          "step": 0.0001,
+          "initial": 0
+        }
+      ],
+      "collection": "WEWA_SWITCHGEAR_LEFT",
+      "readme": "README_v2.md"
+    },
+    "instrument-bracket": {
+      "label": "Support des compteurs — pièce isolée",
+      "lot": 2,
+      "review": "instrument-bracket-v1",
+      "source": "instrument-bracket/instrument-bracket-v1.blend",
+      "collection": "WEWA_INSTRUMENT_BRACKET_ISOLATED",
+      "source_frame": "isolated_local",
+      "component_id": "MOTO-INSTRUMENT-BRACKET-001",
+      "files": [
+        "instrument-bracket/instrument-bracket-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Repère local XY, face+Z. Vues de la pièce seule ; aucun montage sur les compteurs actuels certifié. Sections et dimensions estimées.",
+      "views": {
+        "quarter": {
+          "position": [
+            0.18,
+            0.18,
+            -0.22
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ]
+        },
+        "driver": {
+          "position": [
+            0,
+            0.32,
+            0.02
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ]
+        },
+        "reverse": {
+          "position": [
+            0.08,
+            -0.3,
+            0.06
+          ],
+          "target": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    },
+    "switchgear-right": {
+      "label": "Commodo droit — fonction rouge inconnue",
+      "lot": 5,
+      "review": "switchgear-right-v1",
+      "source": "switchgear-right/switchgear-right-v1.blend",
+      "collection": "WEWA_SWITCHGEAR_RIGHT",
+      "component_id": "MOTO-SWITCHGEAR-RIGHT-001",
+      "files": [
+        "switchgear-right/switchgear-right-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "red_observed",
+          "label": "Course géométrique estimée — fonction inconnue",
+          "node": "RH observed red top control - FUNCTION UNKNOWN PIVOT",
+          "kind": "translation",
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "min": 0,
+          "max": 0.0004,
+          "step": 5e-05,
+          "initial": 0
+        }
+      ]
+    },
+    "clutch-control": {
+      "label": "Levier embrayage et support",
+      "lot": 6,
+      "review": "clutch-control-v2",
+      "source": "clutch-control/clutch-control-v2.blend",
+      "collection": "WEWA_CLUTCH_CONTROL",
+      "component_id": "MOTO-CLUTCH-CONTROL-001",
+      "files": [
+        "clutch-control/clutch-control-v2-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "pull",
+          "label": "Course partielle estimée",
+          "node": "Clutch lever - moving candidate",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": 0,
+          "max": 12,
+          "step": 0.1,
+          "initial": 0
+        }
+      ],
+      "readme": "README_v2.md"
+    },
+    "front-brake-control": {
+      "label": "Levier du frein avant à câble",
+      "lot": 7,
+      "review": "front-brake-control-v2",
+      "source": "front-brake-control/front-brake-control-v2.blend",
+      "collection": "WEWA_FRONT_BRAKE_CONTROL",
+      "component_id": "MOTO-FRONT-BRAKE-CONTROL-001",
+      "files": [
+        "front-brake-control/front-brake-control-v2-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "pull",
+          "label": "Course partielle estimée",
+          "node": "Front cable brake lever - moving candidate",
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "min": 0,
+          "max": 12,
+          "step": 0.1,
+          "initial": 0
+        }
+      ],
+      "readme": "README_v2.md"
+    },
+    "ignition-lock": {
+      "label": "Contacteur et clé — position estimée",
+      "lot": 9,
+      "review": "ignition-lock-v1",
+      "source": "ignition-lock/ignition-lock-v1.blend",
+      "collection": "WEWA_IGNITION_LOCK",
+      "component_id": "MOTO-IGNITION-LOCK-001",
+      "files": [
+        "ignition-lock/ignition-lock-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "key_state",
+          "label": "États de présentation estimés",
+          "node": "Ignition rotor and key state pivot",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -35,
+          "max": 45,
+          "initial": 0,
+          "step": 1
+        }
+      ]
+    },
+    "grips-v3": {
+      "label": "Poignées v3 — motifs arrondis élargis",
+      "review": "handlebar-grips-v3",
+      "files": [
+        "handlebar-grips/handlebar-grips-v3-inspection.glb"
+      ],
+      "rigs": [],
+      "source": "handlebar-grips/handlebar-grips-v3.blend",
+      "collection": "WEWA_HANDLEBAR_GRIP_ENVELOPES",
+      "component_id": "MOTO-HANDLEBAR-GRIPS-001",
+      "readme": "README_v3.md",
+      "lot": 3
+    },
+    "cockpit-cables": {
+      "label": "Câbles visibles — trois tronçons partiels",
+      "lot": 10,
+      "review": "cockpit-cables-v1",
+      "source": "cockpit-cables/cockpit-cables-v1.blend",
+      "collection": "WEWA_COCKPIT_CABLES_PARTIAL",
+      "component_id": "MOTO-COCKPIT-CABLES-001",
+      "files": [
+        "cockpit-cables/cockpit-cables-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Tronçons visibles documentés, affectation de deux gaines inconnue. Aucun trajet caché, raccord moyeu ou brochage certifié."
+    },
+    "instrument-bracket-v2": {
+      "label": "Support des compteurs v2 — nervure élargie",
+      "lot": 2,
+      "review": "instrument-bracket-v2",
+      "source": "instrument-bracket/instrument-bracket-v2.blend",
+      "collection": "WEWA_INSTRUMENT_BRACKET_ISOLATED_V2",
+      "source_frame": "isolated_local",
+      "component_id": "MOTO-INSTRUMENT-BRACKET-001",
+      "files": [
+        "instrument-bracket/instrument-bracket-v2-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Repère local XY, face+Z. Vues de la pièce seule ; aucun montage sur les compteurs actuels certifié. Sections et dimensions estimées.",
+      "views": {
+        "quarter": {
+          "target": [
+            -0.001566,
+            -0.0016,
+            0.058245
+          ],
+          "position": [
+            0.17843399999999998,
+            0.1784,
+            -0.161755
+          ]
+        },
+        "driver": {
+          "target": [
+            -0.001566,
+            -0.0016,
+            0.058245
+          ],
+          "position": [
+            -0.001566,
+            0.3184,
+            0.078245
+          ]
+        },
+        "reverse": {
+          "target": [
+            -0.001566,
+            -0.0016,
+            0.058245
+          ],
+          "position": [
+            0.078434,
+            -0.3016,
+            0.11824499999999999
+          ]
+        }
+      },
+      "readme": "README_v2.md"
+    },
+    "fork-inner-tube": {
+      "label": "Tube intérieur de fourche — pièce isolée",
+      "lot": 13,
+      "review": "front-fork-inner-tube-v1",
+      "source": "front-fork/inner-tube/front-fork-inner-tube-v1.blend",
+      "collection": "WEWA_FORK_INNER_TUBE_ISOLATED",
+      "source_frame": "isolated_local",
+      "component_id": "MOTO-FORK-INNER-TUBE-001",
+      "files": [
+        "front-fork/inner-tube/front-fork-inner-tube-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Un seul tube creux. Diamètre31mm lié à une autre variante ; longueur550mm estimée. Aucune pose installée ni interface de fourche certifiée."
+    },
+    "engine-cover-right": {
+      "label": "Carter moteur droit — coque extérieure",
+      "lot": 17,
+      "review": "engine-cover-right-v1",
+      "source": "engine-cover-right/engine-cover-right-v1.blend",
+      "collection": "WEWA_ENGINE_COVER_RIGHT",
+      "component_id": "MOTO-ENGINE-COVER-RIGHT-001",
+      "files": [
+        "engine-cover-right/engine-cover-right-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Coque creuse et ouverture filtre. Dimensions, intérieur et datum estimés ; bouchons, kick et autres pièces séparés, aucun moteur complet annoncé."
+    },
+    "steering-upper": {
+      "label": "Té supérieur — plaque isolée",
+      "lot": 13,
+      "review": "steering-upper-v1",
+      "source": "steering-triples/upper/steering-upper-v1.blend",
+      "collection": "WEWA_STEERING_UPPER_ISOLATED",
+      "source_frame": "isolated_local",
+      "component_id": "MOTO-STEERING-UPPER-001",
+      "files": [
+        "steering-triples/upper/steering-upper-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "DS181005 lié, sept ajours observés. Largeur≈218,5mm et épaisseur2,2mm estimées ; aucune calibration31mm ou pose installée."
+    },
+    "mirror-left": {
+      "label": "Rétroviseur gauche — caches corrigés, vues finales en cours",
+      "lot": 8,
+      "review": "mirror-left-v1",
+      "source": "mirrors/mirror-left-v1.blend",
+      "collection": "WEWA_MIRROR_LEFT",
+      "component_id": "MOTO-MIRROR-LEFT-001",
+      "files": [
+        "mirrors/mirror-left-v1.glb"
+      ],
+      "readme": "README-left.md",
+      "rigs": [
+        {
+          "id": "yaw",
+          "label": "Orientation latérale estimée",
+          "node": "LH mirror head adjustment PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -10,
+          "max": 10,
+          "initial": 0,
+          "step": 0.1
+        },
+        {
+          "id": "pitch",
+          "label": "Inclinaison estimée",
+          "node": "LH mirror head adjustment PIVOT",
+          "axis": [
+            0.9755259156227112,
+            0.010137728415429592,
+            -0.21965079009532928
+          ],
+          "min": -7,
+          "max": 7,
+          "initial": 0,
+          "step": 0.1
+        }
+      ],
+      "details": "Candidat avec caches emboîtés et écrou visible corrigés ; dimensions/courbure estimées, vues finales en cours. Deux poses composées yaw puis pitch, sans qualification mécanique."
+    },
+    "engine-filter-cap": {
+      "label": "Bouchon du filtre moteur — pièce séparée",
+      "lot": 17,
+      "review": "engine-filter-cap-v1",
+      "source": "engine-filter-cap/engine-filter-cap-v1.blend",
+      "collection": "WEWA_ENGINE_FILTER_CAP",
+      "component_id": "MOTO-ENGINE-FILTER-CAP-001",
+      "files": [
+        "engine-filter-cap/engine-filter-cap-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Trois oreilles issues d’une référence liée, dimensions et raccord estimés. Pas de joint, vis, filtre ou compatibilité OEM certifiés."
+    },
+    "steering-lower": {
+      "label": "Corps du té inférieur — pièce isolée",
+      "lot": 13,
+      "review": "steering-lower-v1",
+      "source": "steering-triples/lower/steering-lower-v1.blend",
+      "collection": "WEWA_STEERING_LOWER_BODY_ISOLATED",
+      "source_frame": "isolated_local",
+      "component_id": "MOTO-STEERING-LOWER-001",
+      "files": [
+        "steering-triples/lower/steering-lower-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Corps seul avec deux poches et bagues fendues. Cotes/poses estimées ; colonne, boulons et roulements absents, aucune conformité mécanique."
+    },
+    "engine-cover-left": {
+      "label": "Carter magnéto gauche — coque extérieure",
+      "lot": 17,
+      "review": "engine-cover-left-v1",
+      "source": "engine-cover-left/engine-cover-left-v1.blend",
+      "collection": "WEWA_ENGINE_COVER_LEFT",
+      "component_id": "MOTO-ENGINE-COVER-LEFT-001",
+      "files": [
+        "engine-cover-left/engine-cover-left-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Coque propre au flanc+X, pas une symétrie du droit. Lobe supérieur masqué et reliefs de face non résolus, cotes/dos estimés. Cache transmission et bouchons séparés."
+    },
+    "switchgear-left-v3": {
+      "label": "Commodo gauche v3 — pictogrammes lissés",
+      "lot": 4,
+      "review": "switchgear-left-v3",
+      "source": "switchgear-left/switchgear-left-v3.blend",
+      "component_id": "MOTO-SWITCHGEAR-LEFT-001",
+      "files": [
+        "switchgear-left/switchgear-left-v3-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "dipper",
+          "label": "Code/phare",
+          "node": "LH dipper rocker - high low PIVOT",
+          "axis": [
+            -0.9166959524,
+            0,
+            0.3995854259
+          ],
+          "kind": "rotation",
+          "min": -9,
+          "max": 9,
+          "step": 0.1,
+          "initial": 0
+        },
+        {
+          "id": "turn",
+          "label": "Clignotant",
+          "node": "LH turn selector - centre push PIVOT",
+          "axis": [
+            -0.9166959524,
+            0,
+            0.3995854259
+          ],
+          "kind": "translation",
+          "min": -0.003,
+          "max": 0.003,
+          "step": 0.0001,
+          "initial": 0
+        },
+        {
+          "id": "turn_push",
+          "label": "Rappel central",
+          "node": "LH turn selector - centre push PIVOT",
+          "axis": [
+            0.3995854259,
+            0,
+            0.9166959524
+          ],
+          "kind": "translation",
+          "min": 0,
+          "max": 0.0014,
+          "step": 0.0001,
+          "initial": 0
+        },
+        {
+          "id": "horn",
+          "label": "Klaxon",
+          "node": "LH horn push tongue PIVOT",
+          "axis": [
+            0.3995854259,
+            0,
+            0.9166959524
+          ],
+          "kind": "translation",
+          "min": 0,
+          "max": 0.0014,
+          "step": 0.0001,
+          "initial": 0
+        }
+      ],
+      "collection": "WEWA_SWITCHGEAR_LEFT",
+      "readme": "README_v3.md"
+    },
+    "fork-bellows": {
+      "label": "Soufflet de fourche — déformation visuelle estimée",
+      "lot": 13,
+      "review": "fork-bellows-v1",
+      "source": "front-fork/bellows/fork-bellows-v1.blend",
+      "collection": "WEWA_FORK_BELLOWS_ISOLATED",
+      "source_frame": "isolated_local",
+      "component_id": "MOTO-FORK-BELLOWS-001",
+      "files": [
+        "front-fork/bellows/fork-bellows-inspection.glb"
+      ],
+      "rigs": [],
+      "morph_controls": [
+        {
+          "id": "length_mm",
+          "node": "Single fork bellows - estimated currentRDC visual candidate",
+          "label": "Longueur visuelle estimée (mm)",
+          "min": 110,
+          "rest": 125,
+          "max": 140,
+          "initial": 125,
+          "step": 0.1,
+          "target_low": "Compression visual estimate H110mm",
+          "target_high": "Extension visual estimate H140mm"
+        }
+      ],
+      "details": "Pièce creuse isolée ; 110/125/140mm estimés, pas une course mécanique certifiée. Aucune pose installée.",
+      "inspection_url": "v3.html"
+    },
+    "engine-output-cover-left": {
+      "label": "Cache sortie de boîte gauche — coque extérieure",
+      "lot": 17,
+      "review": "engine-output-cover-left-v1",
+      "source": "engine-output-cover-left/engine-output-cover-left-v1.blend",
+      "collection": "WEWA_ENGINE_OUTPUT_COVER_LEFT",
+      "component_id": "MOTO-ENGINE-OUTPUT-COVER-LEFT-001",
+      "files": [
+        "engine-output-cover-left/engine-output-cover-left-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Pièce liée PF541287, formes de travail estimées ; légende de rapports omise car variante4/5non résolue. Aucun moteur complet, raccord ou dos certifié."
+    },
+    "mount-nyloc": {
+      "label": "Diagnostic rejeté — écrou Nyloc v1",
+      "lot": 1,
+      "review": "handlebar-mount-nyloc-v1",
+      "source": "handlebar-clamps/mounting-nyloc/handlebar-mount-nyloc-v1.blend",
+      "collection": "WEWA_HANDLEBAR_MOUNT_NYLOC_ISOLATED",
+      "component_id": "MOTO-HANDLEBAR-MOUNT-NYLOC-001",
+      "source_frame": "isolated_local",
+      "files": [
+        "handlebar-clamps/mounting-nyloc/handlebar-mount-nyloc-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Gel6856/1b1 retenu comme diagnostic : crêtes hélicoïdales en escalier visibles dans le rendu96. Reconstruction de la topologie du filet en cours, aucun écrou reçu ni montage certifié.",
+      "candidate_status": "rejected_diagnostic"
+    },
+    "kickstarter": {
+      "label": "Kick articulé — déploiement et course conditionnels",
+      "lot": 17,
+      "review": "kickstarter-v1",
+      "source": "kickstarter/kickstarter-v1.blend",
+      "collection": "WEWA_KICKSTARTER",
+      "component_id": "MOTO-KICKSTARTER-001",
+      "files": [
+        "kickstarter/kickstarter-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "kick_fold",
+          "node": "Kick base folding pivot - inspection range estimated",
+          "label": "Déploiement estimé (°)",
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "min": 0,
+          "max": 90,
+          "initial": 90
+        },
+        {
+          "id": "kick_stroke",
+          "node": "Kick engine shaft provisional datum",
+          "label": "Course estimée, kick déployé (°)",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": 0,
+          "max": 60,
+          "initial": 0
+        }
+      ],
+      "pose_constraints": [
+        {
+          "type": "requires_pose",
+          "control": "kick_stroke",
+          "requires_control": "kick_fold",
+          "requires_value": 90,
+          "tolerance": 0.001,
+          "neutral": 0
+        }
+      ],
+      "inspection_url": "v4.html",
+      "details": "Commande isolée ; charnière à la base, course de présentation autorisée après déploiement90°. Angles, pose et raccord moteur estimés ; aucune butée ni compatibilité certifiée."
+    },
+    "engine-cover-right-v2": {
+      "label": "Carter moteur droit v2 — normales corrigées",
+      "lot": 17,
+      "review": "engine-cover-right-v2",
+      "source": "engine-cover-right/engine-cover-right-v2.blend",
+      "collection": "WEWA_ENGINE_COVER_RIGHT",
+      "component_id": "MOTO-ENGINE-COVER-RIGHT-001",
+      "files": [
+        "engine-cover-right/engine-cover-right-v2-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Géométrie de la coque v1 conservée, normales héritées retirées. Raccord entre bosses, cotes et compatibilité RDC restent à examiner ; vues finales en attente.",
+      "readme": "README_v2.md"
+    },
+    "engine-filter-cap-v2": {
+      "label": "Bouchon de filtre v2 — raccords et arrondis repris",
+      "lot": 17,
+      "review": "engine-filter-cap-v2",
+      "source": "engine-filter-cap/engine-filter-cap-v2.blend",
+      "collection": "WEWA_ENGINE_FILTER_CAP",
+      "component_id": "MOTO-ENGINE-FILTER-CAP-001",
+      "files": [
+        "engine-filter-cap/engine-filter-cap-v2-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Contour disque/oreilles tangent et vraies sections arrondies, gabarit conservé. Rayons et référence liés estimés ; surfaces vérifiées contre RHv2, vis/joint/filtre et compatibilité OEM restent ouverts.",
+      "readme": "README_v2.md"
+    },
+    "instruments-v2": {
+      "label": "Compteurs v2 — USB et graphismes repris",
+      "review": "instruments-v2",
+      "files": [
+        "instruments/instruments-v2-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "speed_angle",
+          "label": "Aiguille vitesse — angle relatif de revue",
+          "node": "SPEED_NEEDLE_PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -270,
+          "max": 0,
+          "initial": 0,
+          "step": 1
+        },
+        {
+          "id": "fuel_angle",
+          "label": "Aiguille carburant — angle relatif de revue",
+          "node": "FUEL_NEEDLE_PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -28,
+          "max": 52,
+          "initial": 0,
+          "step": 1
+        }
+      ],
+      "source": "instruments/instruments-v2.blend",
+      "collection": "WEWA_INSTRUMENTS_SEPARATE_PARTS",
+      "readme": "README_v2.md",
+      "component_id": "MOTO-INSTRUMENTS-001",
+      "details": "Complément cockpit : embases/USB, marquages et huit triangles de texte repris. Angles et135nœuds préservés ; géométrie locale et calibration conditionnelles. États LCD1–5 de démonstration, aucun nombre de rapports RDC certifié."
+    },
+    "mirror-right": {
+      "label": "Diagnostic à reprendre — rétroviseur droit v1",
+      "lot": 8,
+      "review": "mirror-right-v1",
+      "source": "mirrors/mirror-right-v1.blend",
+      "collection": "WEWA_MIRROR_RIGHT",
+      "component_id": "MOTO-MIRROR-RIGHT-001",
+      "files": [
+        "mirrors/mirror-right-v1.glb"
+      ],
+      "readme": "README-right.md",
+      "rigs": [
+        {
+          "id": "yaw",
+          "label": "Orientation latérale estimée",
+          "node": "RH mirror head adjustment PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -10,
+          "max": 10,
+          "initial": 0,
+          "step": 0.1
+        },
+        {
+          "id": "pitch",
+          "label": "Inclinaison estimée",
+          "node": "RH mirror head adjustment PIVOT",
+          "axis": [
+            -0.9755259156227112,
+            0.010137728415429592,
+            -0.21965079009532928
+          ],
+          "min": -7,
+          "max": 7,
+          "initial": 0,
+          "step": 0.1
+        }
+      ],
+      "details": "Écart cache/écrou observé contre photos DJ221004 : filetage exposé excessif au-dessus de l’écrou. Correction v2 séparée en cours ; ancien gel et captures conservés, aucune réception.",
+      "candidate_status": "rejected_base_interface_diagnostic"
+    },
+    "mount-nyloc-v2": {
+      "label": "Diagnostic à reprendre — écrou Nyloc v2",
+      "lot": 1,
+      "review": "handlebar-mount-nyloc-v2",
+      "source": "handlebar-clamps/mounting-nyloc-v2/handlebar-mount-nyloc-v2.blend",
+      "collection": "WEWA_HANDLEBAR_MOUNT_NYLOC_ISOLATED",
+      "component_id": "MOTO-HANDLEBAR-MOUNT-NYLOC-001",
+      "source_frame": "isolated_local",
+      "files": [
+        "handlebar-clamps/mounting-nyloc-v2/handlebar-mount-nyloc-v2-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Crêtes principales corrigées ; petite ondulation géométrique à l’entrée du filet confirmée sur buffers et rendus avec/sans débruitage. V3 séparée en préparation ; aucun écrou reçu ni montage certifié.",
+      "candidate_status": "rejected_lower_entry_diagnostic"
+    },
+    "mirror-right-v2": {
+      "label": "Rétroviseur droit v2 — cache de base rapproché",
+      "lot": 8,
+      "review": "mirror-right-v2",
+      "source": "mirrors/mirror-right-v2.blend",
+      "collection": "WEWA_MIRROR_RIGHT",
+      "component_id": "MOTO-MIRROR-RIGHT-001",
+      "files": [
+        "mirrors/mirror-right-v2.glb"
+      ],
+      "readme": "README-right-v2.md",
+      "rigs": [
+        {
+          "id": "yaw",
+          "label": "Orientation latérale estimée",
+          "node": "RH mirror head adjustment PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -10,
+          "max": 10,
+          "initial": 0,
+          "step": 0.1
+        },
+        {
+          "id": "pitch",
+          "label": "Inclinaison estimée",
+          "node": "RH mirror head adjustment PIVOT",
+          "axis": [
+            -0.9755259156227112,
+            0.010137728415429592,
+            -0.21965079009532928
+          ],
+          "min": -7,
+          "max": 7,
+          "initial": 0,
+          "step": 0.1
+        }
+      ],
+      "details": "Quatre vues finales disponibles. Cache de base rapproché de l’écrou après comparaison aux photos liées ; filet sous l’écrou encore ondulé/segmenté à diagnostiquer. Dimensions, rayon et réglages estimés ; aucune réception ou compatibilité RDC certifiée.",
+      "candidate_status": "isolated_candidate_rework_not_accepted"
+    },
+    "fork-outer-left": {
+      "label": "Fourreau de fourche gauche — talon continu",
+      "lot": 13,
+      "review": "fork-outer-left-v1",
+      "source": "front-fork/outer-left/fork-outer-left-v1.blend",
+      "collection": "WEWA_FORK_OUTER_LEFT_ISOLATED",
+      "component_id": "MOTO-FORK-OUTER-LEFT-001",
+      "source_frame": "isolated_local",
+      "files": [
+        "front-fork/outer-left/fork-outer-left-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Source isolée : centre d’axe à l’origine, tube +Z, +X extérieur pilote gauche, +Y pilote. Talon et corps continus, poche et passages réels ; dimensions apparentées/estimées. Col48mm incompatible avec l’ouverture basse40,6mm du soufflet actuel : aucun montage certifié."
+    },
+    "instruments-v3": {
+      "label": "Compteurs v3 — normales de vitre corrigées",
+      "review": "instruments-v3",
+      "files": [
+        "instruments/instruments-v3-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "speed_angle",
+          "label": "Aiguille vitesse — angle relatif de revue",
+          "node": "SPEED_NEEDLE_PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -270,
+          "max": 0,
+          "initial": 0,
+          "step": 1
+        },
+        {
+          "id": "fuel_angle",
+          "label": "Aiguille carburant — angle relatif de revue",
+          "node": "FUEL_NEEDLE_PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -28,
+          "max": 52,
+          "initial": 0,
+          "step": 1
+        }
+      ],
+      "source": "instruments/instruments-v3.blend",
+      "collection": "WEWA_INSTRUMENTS_SEPARATE_PARTS",
+      "readme": "README_v3.md",
+      "component_id": "MOTO-INSTRUMENTS-001",
+      "details": "Deux vitres : raccord de normales face/tranche corrigé ; 173 autres nœuds protégés. Géométrie physique, marquages, matières et pivots inchangés. Calibration/dimensions estimées ; états LCD1–5 de démonstration, aucun nombre de rapports RDC certifié."
+    },
+    "mount-nyloc-v3": {
+      "label": "Écrou Nyloc v3 — frontières du filet corrigées",
+      "lot": 1,
+      "review": "handlebar-mount-nyloc-v3",
+      "source": "handlebar-clamps/mounting-nyloc-v3/handlebar-mount-nyloc-v3.blend",
+      "collection": "WEWA_HANDLEBAR_MOUNT_NYLOC_ISOLATED",
+      "component_id": "MOTO-HANDLEBAR-MOUNT-NYLOC-001",
+      "source_frame": "isolated_local",
+      "files": [
+        "handlebar-clamps/mounting-nyloc-v3/handlebar-mount-nyloc-v3-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Une unité isolée, corps et insert ; deux plans de raccord ajoutés au maillage hélicoïdal. Même profil auteur et matières que v2, dimensions de famille conditionnelles ; aucun montage/serrage OEM certifié.",
+      "candidate_status": "frozen_candidate_final_views_pending"
+    },
+    "engine-cover-left-v2": {
+      "label": "Carter magnéto gauche v2 — raccords des fixations",
+      "lot": 17,
+      "review": "engine-cover-left-v2",
+      "source": "engine-cover-left/engine-cover-left-v2.blend",
+      "collection": "WEWA_ENGINE_COVER_LEFT",
+      "component_id": "MOTO-ENGINE-COVER-LEFT-001",
+      "files": [
+        "engine-cover-left/engine-cover-left-v2-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Contours et plans de fixation conservés, peau raccordée aux appuis. Normales des arêtes séparées ; dimensions et interfaces estimées, aucune réception artistique ou conformité OEM.",
+      "readme": "README_v2.md"
+    },
+    "mirror-right-v3": {
+      "label": "Rétroviseur droit v3 — filet aligné sur le profil",
+      "lot": 8,
+      "review": "mirror-right-v3",
+      "source": "mirrors/mirror-right-v3.blend",
+      "collection": "WEWA_MIRROR_RIGHT",
+      "component_id": "MOTO-MIRROR-RIGHT-001",
+      "files": [
+        "mirrors/mirror-right-v3.glb"
+      ],
+      "readme": "README-right-v3.md",
+      "rigs": [
+        {
+          "id": "yaw",
+          "label": "Orientation latérale estimée",
+          "node": "RH mirror head adjustment PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -10,
+          "max": 10,
+          "initial": 0,
+          "step": 0.1
+        },
+        {
+          "id": "pitch",
+          "label": "Inclinaison estimée",
+          "node": "RH mirror head adjustment PIVOT",
+          "axis": [
+            -0.9755259156227112,
+            0.010137728415429592,
+            -0.21965079009532928
+          ],
+          "min": -7,
+          "max": 7,
+          "initial": 0,
+          "step": 0.1
+        }
+      ],
+      "details": "Filet cosmétique reconstruit sur ses ruptures hélicoïdales ; neuf autres corps, matières et réglages conservés. Profil/pas estimés, aucune qualification OEM ni réception artistique.",
+      "candidate_status": "isolated_candidate_rework_not_accepted"
+    },
+    "mirror-left-v2": {
+      "label": "Rétroviseur gauche v2 — filet aligné sur le profil",
+      "lot": 8,
+      "review": "mirror-left-v2",
+      "source": "mirrors/mirror-left-v2.blend",
+      "collection": "WEWA_MIRROR_LEFT",
+      "component_id": "MOTO-MIRROR-LEFT-001",
+      "files": [
+        "mirrors/mirror-left-v2.glb"
+      ],
+      "readme": "README-left-v2.md",
+      "rigs": [
+        {
+          "id": "yaw",
+          "label": "Orientation latérale estimée",
+          "node": "LH mirror head adjustment PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -10,
+          "max": 10,
+          "initial": 0,
+          "step": 0.1
+        },
+        {
+          "id": "pitch",
+          "label": "Inclinaison estimée",
+          "node": "LH mirror head adjustment PIVOT",
+          "axis": [
+            0.9755259156227112,
+            0.010137728415429592,
+            -0.21965079009532928
+          ],
+          "min": -7,
+          "max": 7,
+          "initial": 0,
+          "step": 0.1
+        }
+      ],
+      "details": "Filet cosmétique reconstruit, neuf autres corps protégés. Intervalle supérieur propre au gauche conservé d’après sa photo. Profil/pas et réglages estimés, aucune conformité OEM ni réception."
+    },
+    "mount-upper-washer": {
+      "label": "Rondelle supérieure du guidon — DS181007 apparentée",
+      "lot": 1,
+      "review": "handlebar-mount-upper-washer-v1",
+      "source": "handlebar-clamps/mounting-upper-washer/handlebar-mount-upper-washer-v1.blend",
+      "collection": "WEWA_HANDLEBAR_MOUNT_UPPER_WASHER_ISOLATED",
+      "component_id": "MOTO-HANDLEBAR-MOUNT-UPPER-WASHER-001",
+      "source_frame": "isolated_local",
+      "files": [
+        "handlebar-clamps/mounting-upper-washer/handlebar-mount-upper-washer-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Pièce annulaire isolée, face inférieure à Z0. Profil et échelle estimés depuis une photo apparentée, dessous/contacts inconnus ; aucune norme de rondelle ou pose OEM acquise."
+    },
+    "kickstarter-v2": {
+      "label": "Kick articulé v2 — cannelure et fente bornées au moyeu",
+      "lot": 17,
+      "review": "kickstarter-v2",
+      "source": "kickstarter/kickstarter-v2.blend",
+      "collection": "WEWA_KICKSTARTER",
+      "component_id": "MOTO-KICKSTARTER-001",
+      "files": [
+        "kickstarter/kickstarter-v2-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "kick_fold",
+          "node": "Kick base folding pivot - inspection range estimated",
+          "label": "Déploiement estimé (°)",
+          "axis": [
+            0,
+            0,
+            1
+          ],
+          "min": 0,
+          "max": 90,
+          "initial": 90
+        },
+        {
+          "id": "kick_stroke",
+          "node": "Kick engine shaft provisional datum",
+          "label": "Course estimée, kick déployé (°)",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": 0,
+          "max": 60,
+          "initial": 0
+        }
+      ],
+      "pose_constraints": [
+        {
+          "type": "requires_pose",
+          "control": "kick_stroke",
+          "requires_control": "kick_fold",
+          "requires_value": 90,
+          "tolerance": 0.001,
+          "neutral": 0
+        }
+      ],
+      "inspection_url": "v4.html",
+      "details": "Cannelure et fente bornées aux faces du moyeu ; six autres pièces et pivots conservés. Denture intérieure visible conservée. Course conditionnelle au déploiement90°, angles et pose estimés, aucune réception ni compatibilité OEM.",
+      "readme": "README_v2.md"
+    },
+    "fork-outer-right": {
+      "label": "Fourreau de fourche droit — référence propre au côté",
+      "lot": 13,
+      "review": "fork-outer-right-v1",
+      "source": "front-fork/outer-right/fork-outer-right-v1.blend",
+      "collection": "WEWA_FORK_OUTER_RIGHT_ISOLATED",
+      "component_id": "MOTO-FORK-OUTER-RIGHT-001",
+      "source_frame": "isolated_local",
+      "files": [
+        "front-fork/outer-right/fork-outer-right-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Source isolée : origine axe de roue,+Z tube,−X extérieur droit,+Y pilote. Poche LH non copiée ; forme liée aux photos PF121019/Endurance, cotes/revers et interfaces estimés. Aucune pose OEM certifiée."
+    },
+    "frame-headtube": {
+      "label": "Colonne de cadre — enveloppe extérieure isolée",
+      "lot": 15,
+      "review": "frame-head-tube-v1",
+      "source": "frame/head-tube/frame-head-tube-v1.blend",
+      "collection": "WEWA_FRAME_HEADTUBE_ISOLATED",
+      "component_id": "MOTO-FRAME-HEADTUBE-001",
+      "source_frame": "isolated_local",
+      "files": [
+        "frame/head-tube/frame-head-tube-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Origine ouverture basse,+Z axe. Tube ouvert/lèvres estimés depuis cadres nus PF111000 ; intérieur droit provisoire sans sièges de roulement. Pas de pose inclinée ni de cadre complet certifié."
+    },
+    "engine-cylinder": {
+      "label": "Cylindre moteur à ailettes — barillet extérieur",
+      "lot": 17,
+      "review": "engine-cylinder-v1",
+      "source": "engine-cylinder/engine-cylinder-v1.blend",
+      "collection": "WEWA_ENGINE_CYLINDER",
+      "component_id": "MOTO-ENGINE-CYLINDER-001",
+      "files": [
+        "engine-cylinder/engine-cylinder-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Barillet isolé avec passages ouverts et matière noire/plans de joint nus. Inclinaison20° et cotes estimées, photos BM150 apparentées ; culasse/bloc central/piston distincts, aucun fit OEM RDC certifié."
+    },
+    "frame-front-backbone": {
+      "label": "Cadre — membre supérieur avant non rond",
+      "lot": 15,
+      "review": "frame-front-backbone-v1",
+      "source": "frame/front-backbone/frame-front-backbone-v1.blend",
+      "collection": "WEWA_FRAME_FRONT_BACKBONE_ISOLATED",
+      "component_id": "MOTO-FRAME-BACKBONE-001",
+      "source_frame": "isolated_local",
+      "files": [
+        "frame/front-backbone/frame-front-backbone-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Un membre isolé creux à section non ronde variable,4collerettes sur face photographiée. Origine section avant,+Yversarrière,+Xface de travail/côté physique inconnu ; cotes, section interne, fonctions et pose estimées. Colonne/goussets/soudures/rails distincts, aucun cadre complet. Macro de bouche : léger motif diagonal en diagnostic contrôlé ; aucune déformation géométrique/OEM établie, inscription retenue par propriétaire."
+    },
+    "frame-front-downmember": {
+      "label": "Cadre — descente avant non ronde",
+      "lot": 15,
+      "review": "frame-front-downmember-v1",
+      "source": "frame/front-downmember/frame-front-downmember-v1.blend",
+      "collection": "WEWA_FRAME_FRONT_DOWNMEMBER_ISOLATED",
+      "component_id": "MOTO-FRAME-DOWNMEMBER-001",
+      "readme": "README.md",
+      "files": [
+        "frame/front-downmember/frame-front-downmember-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Corps non rond isolé ; goujons, goussets, soudures et berceau distincts. Section/cotes/pose estimées, aucun cadre complet.",
+      "source_frame": "isolated_local"
+    },
+    "instrument-visor": {
+      "label": "Visière fumée — coque extérieure seule",
+      "lot": 11,
+      "review": "instrument-visor-v1",
+      "source": "instrument-visor/instrument-visor-v1.blend",
+      "collection": "WEWA_INSTRUMENT_VISOR",
+      "component_id": "MOTO-INSTRUMENT-VISOR-001",
+      "readme": "README_v1.md",
+      "files": [
+        "instrument-visor/instrument-visor-v1.glb"
+      ],
+      "rigs": [],
+      "details": "Coque fumée, absorption bulk vérifiée séparément. Épaisseur/position/grade estimés ; fixations et retours cachés non fabriqués. Aucune parité mobile ou réception."
+    },
+    "frame-front-backbone-v2": {
+      "label": "Cadre — membre supérieur avant v2, normales corrigées",
+      "lot": 15,
+      "review": "frame-front-backbone-v2",
+      "source": "frame/front-backbone-v2/frame-front-backbone-v2.blend",
+      "collection": "WEWA_FRAME_FRONT_BACKBONE_ISOLATED",
+      "component_id": "MOTO-FRAME-BACKBONE-001",
+      "source_frame": "isolated_local",
+      "files": [
+        "frame/front-backbone-v2/frame-front-backbone-v2-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Révision distincte des normales de flanc, mêmes positions/faces/UV/cotes/matière que v1. Un membre isolé, aucune réception de variante ou de montage ; quatre collerettes sur face photographiée, face opposée non dupliquée. Colonne, goussets et soudures séparés."
+    },
+    "headlamp-front-protector-v2": {
+      "label": "Phare — bandeau et deux arceaux avant isolés",
+      "lot": 12,
+      "review": "headlamp-front-protector-v2",
+      "source": "headlamp/headlamp-front-protector-v2.blend",
+      "collection": "WEWA_HEADLAMP_FRONT_PROTECTOR",
+      "component_id": "MOTO-HEADLAMP-FRONT-PROTECTOR-001",
+      "readme": "README-protector-v2.md",
+      "source_frame": "isolated_local",
+      "files": [
+        "headlamp/headlamp-front-protector-v2.glb"
+      ],
+      "rigs": [],
+      "details": "Un corps : bandeau entourant l’optique et deux arceaux devant la vitre. Photo DY401002 apparentée, pas identité exacte RDC. Géométrie photo-informée et cotes estimées ; dos, fixations et montage inconnus. Godet, réflecteur, vitre, ampoule, carénage et clignotants distincts non compris. Aucun feu complet ou accord artistique."
+    },
+    "frame-head-gusset": {
+      "label": "Cadre — gousset de colonne, face documentée seule",
+      "lot": 15,
+      "review": "frame-head-gusset-v1",
+      "source": "frame/head-gusset/frame-head-gusset-v1.blend",
+      "collection": "WEWA_FRAME_HEAD_GUSSET_ISOLATED",
+      "component_id": "MOTO-FRAME-HEAD-GUSSET-001",
+      "source_frame": "isolated_local",
+      "files": [
+        "frame/head-gusset/frame-head-gusset-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Un gousset distinct percé de trois passages, faible forme estimée autour du grand ajour. Repère localYZ/+Xface photographiée conditionnelle, aucune pose montée, paire opposée ou soudure créée. Cotes, sens/profondeur, dos et variante RDC restent ouverts."
+    },
+    "frame-lower-cradle-rail": {
+      "label": "Cadre — un longeron inférieur de berceau",
+      "lot": 15,
+      "review": "frame-lower-cradle-rail-v1",
+      "source": "frame/lower-cradle-rail/frame-lower-cradle-rail-v1.blend",
+      "collection": "WEWA_FRAME_LOWER_CRADLE_RAIL_ISOLATED",
+      "component_id": "MOTO-FRAME-LOWER-CRADLE-RAIL-001",
+      "source_frame": "isolated_local",
+      "files": [
+        "frame/lower-cradle-rail/frame-lower-cradle-rail-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Un seul longeron creux observé, deux cintrages et extrémités ouvertes. Repère localYZ/+Xface photographiée conditionnelle ; section, portée, profondeur et côté estimés. Ni longeron opposé, traverse, platine, fixation de repose-pied ni soudure montés."
+    },
+    "engine-head-v2": {
+      "label": "Culasse — corps extérieur UG5 conditionnel v2",
+      "lot": 17,
+      "review": "engine-head-v2",
+      "source": "engine-head/engine-head-v2.blend",
+      "collection": "WEWA_ENGINE_HEAD",
+      "component_id": "MOTO-ENGINE-HEAD-001",
+      "readme": "README_v2.md",
+      "files": [
+        "engine-head/engine-head-v2-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Corps extérieur seul, coque fermée et passages observables. Trois centres photo comme aide affine non métrique ; faux quatrième trou supprimé, quatrième colonne haute sans connexion inférieure inventée. Couvercles, bougie, joints et mécanismes séparés. Profondeurs, visibilité interne, cotes, variante exacte RDC, interfaces et matière non réceptionnées."
+    },
+    "frame-seat-rail-observed": {
+      "label": "Cadre — un longeron observé sous selle",
+      "lot": 15,
+      "review": "frame-seat-rail-observed-v1",
+      "source": "frame/seat-rail-observed/frame-seat-rail-observed-v1.blend",
+      "collection": "WEWA_FRAME_SEAT_RAIL_ISOLATED",
+      "component_id": "MOTO-FRAME-SEAT-RAIL-001",
+      "source_frame": "isolated_local",
+      "files": [
+        "frame/seat-rail-observed/frame-seat-rail-observed-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Un seul longeron creux observé apparentéPF111000, courbe3D et sections estimées. Aucun côté opposé, traverse, patte ou soudure ajouté. Montage et identité RDC non reçus."
+    },
+    "cockpit-cables-v2": {
+      "label": "Cockpit — faisceau partiel v2, boucle du contact corrigée",
+      "lot": 10,
+      "review": "cockpit-cables-v2",
+      "source": "cockpit-cables/cockpit-cables-v2.blend",
+      "collection": "WEWA_COCKPIT_CABLES_PARTIAL",
+      "component_id": "MOTO-COCKPIT-CABLES-001",
+      "files": [
+        "cockpit-cables/cockpit-cables-v2-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Deux points de la boucle du contact corrigés, gaines basses bit-identiques. Les câbles hauts et leurs terminaisons restent absents ; nouveau contrôle des raccords nécessaire, aucune réception du poste complet.",
+      "readme": "README_v2.md"
+    },
+    "headlamp-housing": {
+      "label": "Phare — boîtier nu v1, historique avec défaut de reflets",
+      "lot": 12,
+      "review": "headlamp-housing-v1",
+      "source": "headlamp/housing/headlamp-housing-v1.blend",
+      "collection": "WEWA_HEADLAMP_HOUSING",
+      "component_id": "MOTO-HEADLAMP-HOUSING-001",
+      "readme": "README_v1.md",
+      "source_frame": "isolated_local",
+      "files": [
+        "headlamp/housing/headlamp-housing-v1.glb"
+      ],
+      "rigs": [],
+      "details": "Version historique : marches de reflets constatées aux nervures basses dans les quatre96. Révisionv2 distincte corrige leurs normales. Boîtier apparentéYDY02002, clip/vis/cotes/montage RDC non reçus."
+    },
+    "engine-tappet-cap": {
+      "label": "Culasse — couvercle de visite, type unique en deux instances",
+      "lot": 17,
+      "review": "engine-tappet-cap-v1",
+      "source": "engine-tappet-cap/engine-tappet-cap-v1.blend",
+      "collection": "WEWA_ENGINE_TAPPET_CAP",
+      "component_id": "MOTO-ENGINE-TAPPET-CAP-001",
+      "files": [
+        "engine-tappet-cap/engine-tappet-cap-inspection.glb"
+      ],
+      "rigs": [],
+      "source_frame": "provisional_engine_head_seats",
+      "mesh_instance_count": 2,
+      "physical_type_count": 1,
+      "details": "Type52JV0144 apparenté, deux instances opposées et un maillage partagé. Repères de siège estimés, traversées501/453 contre culassev2 : montage bloqué. Dos simplifié non photographié, finition noire conditionnelle ; aucun raccord reçu."
+    },
+    "headlamp-housing-v2": {
+      "label": "Phare — boîtier nu v2, normales des nervures corrigées",
+      "lot": 12,
+      "review": "headlamp-housing-v2",
+      "source": "headlamp/housing/headlamp-housing-v2.blend",
+      "collection": "WEWA_HEADLAMP_HOUSING",
+      "component_id": "MOTO-HEADLAMP-HOUSING-001",
+      "readme": "README_v2.md",
+      "source_frame": "isolated_local",
+      "files": [
+        "headlamp/housing/headlamp-housing-v2.glb"
+      ],
+      "rigs": [],
+      "details": "Boîtier apparentéYDY02002 seul. Révision limitée aux normales de quatre nervures, mêmes triangles/UV/matières que v1. Clip, vis, cotes/identité RDC et montage restent ouverts. Aucune optique ou réception du phare complet."
+    },
+    "fork-bellows-v2": {
+      "label": "Soufflet v2 — lèvre et gorge, animation de longueur estimée",
+      "lot": 13,
+      "review": "fork-bellows-v2",
+      "source": "front-fork/bellows-v2/fork-bellows-v2.blend",
+      "collection": "WEWA_FORK_BELLOWS_V2_ISOLATED",
+      "source_frame": "isolated_local",
+      "component_id": "MOTO-FORK-BELLOWS-001",
+      "files": [
+        "front-fork/bellows-v2/fork-bellows-v2-inspection.glb"
+      ],
+      "rigs": [],
+      "morph_controls": [
+        {
+          "id": "length_mm",
+          "node": "Single revisedbellows - relatedcuff hypothesis, currentRDC iden",
+          "label": "Longueur visuelle estimée (mm)",
+          "min": 110,
+          "rest": 125,
+          "max": 140,
+          "initial": 125,
+          "step": 0.1,
+          "target_low": "Compression visual estimate H110mm",
+          "target_high": "Extension visual estimate H140mm"
+        }
+      ],
+      "details": "Un soufflet isolé, lèvre/gorge et ponts observables apparentésPF121083. Longueurs110/125/140mm estimées, pas de course OEM. Bouche libre46/chambre49/colfourreau48mm tous estimés : pose/élasticité et raccord non reçus.",
+      "inspection_url": "v3.html"
+    },
+    "engine-ohc-cover": {
+      "label": "Culasse — corps du couvercle OHC seul",
+      "lot": 17,
+      "review": "engine-ohc-cover-v1",
+      "source": "engine-ohc-cover/engine-ohc-cover-v1.blend",
+      "collection": "WEWA_ENGINE_OHC_COVER_BODY",
+      "component_id": "MOTO-ENGINE-OHC-COVER-001",
+      "files": [
+        "engine-ohc-cover/engine-ohc-cover-inspection.glb"
+      ],
+      "rigs": [],
+      "source_frame": "provisional_engine_head_seat",
+      "details": "Corps apparenté52JV0145 à trois oreilles. Embout métallique, vis et joint distincts non fabriqués. Sections/dos estimés, concentrations de reflets réservées ; conflit358contre ailette de culassev2, montage bloqué."
+    },
+    "instruments-v5": {
+      "label": "Compteurs v5 — carter continu et fonds plans",
+      "review": "instruments-v5",
+      "files": [
+        "instruments/instruments-v5-inspection.glb"
+      ],
+      "rigs": [
+        {
+          "id": "speed_angle",
+          "label": "Aiguille vitesse — angle relatif de revue",
+          "node": "SPEED_NEEDLE_PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -270,
+          "max": 0,
+          "initial": 0,
+          "step": 1
+        },
+        {
+          "id": "fuel_angle",
+          "label": "Aiguille carburant — angle relatif de revue",
+          "node": "FUEL_NEEDLE_PIVOT",
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "min": -28,
+          "max": 52,
+          "initial": 0,
+          "step": 1
+        }
+      ],
+      "source": "instruments/instruments-v5.blend",
+      "collection": "WEWA_INSTRUMENTS_SEPARATE_PARTS",
+      "readme": "README_v5.md",
+      "component_id": "MOTO-INSTRUMENTS-001",
+      "details": "Révisions3→4→5 limitées aux normales du carter central et des deux fonds de pods. Géométrie/UV/matières/rigs conservés, bords de verre corrigés en3 préservés. Identité, cotes, supports et montage RDC restent à recevoir."
+    },
+    "engine-head-v3": {
+      "label": "Culasse v3 — sections OHC raccordées, interfaces estimées",
+      "lot": 17,
+      "review": "engine-head-v3",
+      "source": "engine-head/engine-head-v3.blend",
+      "collection": "WEWA_ENGINE_HEAD",
+      "component_id": "MOTO-ENGINE-HEAD-001",
+      "readme": "README_v3.md",
+      "files": [
+        "engine-head/engine-head-v3-inspection.glb"
+      ],
+      "rigs": [],
+      "details": "Corps UG5 apparenté : sections OHC progressives, reliefs de flanc observés, sièges conservés. Caps inchangés ; contrôles de surfaces et inclusion échantillonnée nuls dans cette paire estimée. Dimensions, profondeurs, plans de joint, variante et matière non reçus."
+    },
+    "engine-ohc-stub": {
+      "label": "Culasse — embout métallique OHC seul",
+      "lot": 17,
+      "review": "engine-ohc-stub-v1",
+      "source": "engine-ohc-stub/engine-ohc-stub-v1.blend",
+      "collection": "WEWA_ENGINE_OHC_STUB",
+      "component_id": "MOTO-ENGINE-OHC-STUB-001",
+      "files": [
+        "engine-ohc-stub/engine-ohc-stub-inspection.glb"
+      ],
+      "rigs": [],
+      "source_frame": "provisional_engine_head_seat",
+      "details": "Tube métallique creux et lèvre distale observée sur couvercle apparenté52JV0145. Dimensions, insertion cachée et axe estimés ; contrôles numériques sur candidats head3/OHC1, pas de montage réel certifié. Durite, filetage et fixations distincts."
+    },
+    "engine-spark-plug": {
+      "label": "Bougie extérieure v1 — diagnostic du chanfrein à reprendre",
+      "lot": 17,
+      "review": "engine-spark-plug-v1",
+      "source": "engine-spark-plug/engine-spark-plug-v1.blend",
+      "collection": "WEWA_ENGINE_SPARK_PLUG_EXTERIOR",
+      "component_id": "MOTO-ENGINE-SPARK-PLUG-001",
+      "files": [
+        "engine-spark-plug/engine-spark-plug-inspection.glb"
+      ],
+      "rigs": [],
+      "source_frame": "provisional_engine_head_seat",
+      "details": "Diagnostic conservé : bord en marches visible sur la jonction chanfrein/hexagone dans le vrai rendu96. Révision analytique séparée prévue. Extérieur conditionnel, insertion cachée lisse sans électrode/filetage ; cettev1 n’est pas inscrite comme nouvelle pièce courante."
+    },
+    "rear-rim": {
+      "label": "Jante arrière — cinq branches et enveloppe annulaire partielle",
+      "lot": 16,
+      "review": "rear-rim-v1",
+      "source": "rear-rim/rear-rim-v1.blend",
+      "collection": "WEWA_REAR_RIM_ISOLATED",
+      "component_id": "MOTO-RIM-REAR-001",
+      "files": [
+        "rear-rim/rear-rim-inspection.glb"
+      ],
+      "rigs": [],
+      "source_frame": "isolated_local",
+      "details": "Cinq branches argent observées RDC, diamètre nominal17pouces. Jante extérieure et paroi annulaire du moyeu seulement ; web central masqué, roulements et couplage non fabriqués. Profil, largeur et dimensions du centre estimés, position assemblée non fixée."
+    }
+  }
+}

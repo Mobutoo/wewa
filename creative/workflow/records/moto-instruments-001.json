@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-INSTRUMENTS-001",
-  "label": "Compteurs v3 — normales de vitre corrigées",
+  "label": "Compteurs v5 — carter continu et fonds plans",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -63,46 +63,84 @@
   ],
   "views": [
     {
-      "name": "whole-front",
-      "camera_location_m": [
-        -3.9098914328405954e-08,
-        0.327239453792572,
-        0.35564541816711426
+      "name": "whole-rear",
+      "camera": {
+        "location": [
+          0.1600000411272049,
+          -0.6661429405212402,
+          -0.20626801252365112
+        ],
+        "lens_mm": 65.0,
+        "near_far_m": [
+          0.001,
+          10
+        ]
+      },
+      "PNG_path": "creative/reviews/instruments-v5/whole-rear.png",
+      "PNG_sha256": "ec1de07af0735a5a428100210369cf1256c77bacabae5f5714d12f5fe3687fee",
+      "EXR_private_path": "/workspace/wewa-assets/renders/instruments-v5/whole-rear.exr",
+      "EXR_sha256": "fb6fdb1570de0a4d3b969a310326dcaa66aca08d99a34cede17adda280d22432",
+      "EXR_actual_channels": [
+        "ViewLayer.Combined.A",
+        "ViewLayer.Combined.B",
+        "ViewLayer.Combined.G",
+        "ViewLayer.Combined.R",
+        "ViewLayer.Denoising Albedo.B",
+        "ViewLayer.Denoising Albedo.G",
+        "ViewLayer.Denoising Albedo.R",
+        "ViewLayer.Denoising Depth.Z",
+        "ViewLayer.Denoising Normal.X",
+        "ViewLayer.Denoising Normal.Y",
+        "ViewLayer.Denoising Normal.Z",
+        "ViewLayer.Noisy Image.A",
+        "ViewLayer.Noisy Image.B",
+        "ViewLayer.Noisy Image.G",
+        "ViewLayer.Noisy Image.R"
       ],
-      "camera_target_m": [
-        -5.46782785715294e-10,
-        -0.11374553292989731,
-        0.08008740842342377
-      ],
-      "lens_mm": 70,
-      "PNG_path": "creative/reviews/instruments-v3/whole-front.png",
-      "PNG_sha256": "6eacb67a31daebfc12a6936fd1ec489b4ce2d87d804a2787320c8e9d6b3ee2e2",
-      "EXR_private_path": "/workspace/wewa-assets/renders/instruments-v3/whole-front.exr",
-      "EXR_sha256": "5a8fed2e8a32559ba2167180828c6f01c91680df46166faccee787cde5b8e5e5",
+      "config_sha256": "69a45d4da1ef2c8e2925bcff6b0ed5cd4a182f6c91ea91c9e9b6db1915330ca8",
       "actually_saved": true,
-      "checkpoint_config_sha256": "2f787980908573a5bb00af7341199876f9942d0dbca515607738c466518759ea",
-      "visual_read_by_agent": true
+      "actually_read": true,
+      "observations": "Whole component framed, no near clipping. Both rear pod caps show planar gradients; former inherited false dish is gone. Curved annular profile bands remain curved, intentional cap/side boundaries clear. Cover shape/plane normals retained."
     },
     {
-      "name": "driver-42",
-      "camera_location_m": [
-        0.13,
-        0.36,
-        0.36
+      "name": "cover-context",
+      "camera": {
+        "location": [
+          0.2800000011920929,
+          0.15341275930404663,
+          -0.13741645216941833
+        ],
+        "lens_mm": 65.0,
+        "near_far_m": [
+          0.001,
+          10
+        ]
+      },
+      "PNG_path": "creative/reviews/instruments-v5/cover-context.png",
+      "PNG_sha256": "85a1d2674dd5206b3dda9e6a385c617a3083d2f2d1d4d5cacd62da17cac7011e",
+      "EXR_private_path": "/workspace/wewa-assets/renders/instruments-v5/cover-context.exr",
+      "EXR_sha256": "4cb4e0d6314dcae575d486c3cc7083db63acd0d5d15a772d3e3412aa93b18677",
+      "EXR_actual_channels": [
+        "ViewLayer.Combined.A",
+        "ViewLayer.Combined.B",
+        "ViewLayer.Combined.G",
+        "ViewLayer.Combined.R",
+        "ViewLayer.Denoising Albedo.B",
+        "ViewLayer.Denoising Albedo.G",
+        "ViewLayer.Denoising Albedo.R",
+        "ViewLayer.Denoising Depth.Z",
+        "ViewLayer.Denoising Normal.X",
+        "ViewLayer.Denoising Normal.Y",
+        "ViewLayer.Denoising Normal.Z",
+        "ViewLayer.Noisy Image.A",
+        "ViewLayer.Noisy Image.B",
+        "ViewLayer.Noisy Image.G",
+        "ViewLayer.Noisy Image.R"
       ],
-      "camera_target_m": [
-        0,
-        -0.12,
-        0.085
-      ],
-      "lens_mm": 70,
-      "PNG_path": "creative/reviews/instruments-v3/driver-42.png",
-      "PNG_sha256": "120520f869e3ff9ffab3772b3964b636ccf959b3526dea7f2b30c1d35649b4ba",
-      "EXR_private_path": "/workspace/wewa-assets/renders/instruments-v3/driver-42.exr",
-      "EXR_sha256": "fb87bd573ffed4aebd4e03e6701dfd7267dd6bedc35c3ca1f53decd5514291d5",
+      "config_sha256": "cf96d9ed2ac30819ea010e0af778a4686aeb8a5ef6ba722b3797e9b7f34a79da",
       "actually_saved": true,
-      "checkpoint_config_sha256": "854b3cc00c27e65fa3c66b3171cf509918a50b477acc9c650d003a3e67619e76",
-      "visual_read_by_agent": true
+      "actually_read": true,
+      "observations": "Actual close context shows continuous lateral cover highlight and flat broad faces; inherited polygon bands absent. Same camera/lights and unchanged ignition/pigtail from cables2, no source assembly edit or mount approval."
     }
   ],
   "criteria": [
@@ -138,7 +176,7 @@
   "gates": {
     "G0": {
       "status": "pending",
-      "revision": "instruments-v3",
+      "revision": "instruments-v5",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -146,7 +184,7 @@
     },
     "G1": {
       "status": "blocked",
-      "revision": "instruments-v3",
+      "revision": "instruments-v5",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -154,7 +192,7 @@
     },
     "G2": {
       "status": "blocked",
-      "revision": "instruments-v3",
+      "revision": "instruments-v5",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -162,77 +200,89 @@
     },
     "G3": {
       "status": "rework",
-      "revision": "instruments-v3",
+      "revision": "instruments-v5",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../../assets-src/moto-components/instruments/instruments-v3.blend",
+          "path": "../../../assets-src/moto-components/instruments/instruments-v5.blend",
           "kind": "editable_source",
-          "revision": "instruments-v3",
-          "sha256": "2ac37623a2e8df558373233228a6b936b143b6ff282e8ab6e70f08e27675e7da"
+          "revision": "instruments-v5",
+          "sha256": "3d662c0c35ec9d7ff6b00315d28fc9b3bd2e519771b3fc3f48470a0033ef3951"
         },
         {
-          "path": "../../reviews/instruments-v3/whole-front.png",
+          "path": "../../reviews/instruments-v5/whole-rear.png",
           "kind": "isolated_comparison",
-          "revision": "instruments-v3",
-          "sha256": "6eacb67a31daebfc12a6936fd1ec489b4ce2d87d804a2787320c8e9d6b3ee2e2"
+          "revision": "instruments-v5",
+          "sha256": "ec1de07af0735a5a428100210369cf1256c77bacabae5f5714d12f5fe3687fee"
+        },
+        {
+          "path": "../../reviews/instruments-v5/revision-chain.json",
+          "kind": "isolated_comparison",
+          "revision": "instruments-v5",
+          "sha256": "cb5d6d37d6ea2b90443c80b9a49f5aec6fdbd202acb77fcec1fe2ef64790785d"
         }
       ],
-      "reason": "Deux vitres : séparation des normales face/tranche corrige les reflets segmentés dans les témoins et deux finales studio. Géométrie physique, profils, graduations, pivots et 173 autres nœuds conservés. Fidélité des dimensions/profils encore à revoir sur références attribuées.",
+      "reason": "Révisions3→4→5 de normales uniquement : carter central latéral continu, caps des deux pods séparés et plans. Géométrie/UV/matières/matrices/rigs protégés, ancienne correction verre3 conservée. Deux vues96 ouvertes ; cotes/variant/supports encore estimés.",
       "reviewed_at": null
     },
     "G4": {
       "status": "rework",
-      "revision": "instruments-v3",
+      "revision": "instruments-v5",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/instruments-v3/driver-42.png",
+          "path": "../../reviews/instruments-v5/cover-context.png",
           "kind": "surface_or_sound_comparison",
-          "revision": "instruments-v3",
-          "sha256": "120520f869e3ff9ffab3772b3964b636ccf959b3526dea7f2b30c1d35649b4ba"
-        },
-        {
-          "path": "../../reviews/cockpit-cables-v2/ignition-interface-current.png",
-          "kind": "surface_or_sound_comparison",
-          "revision": "instruments-v3",
-          "sha256": "739ef0da4755830b4c237100e4b990c359d7699b30538bd7d0e46a5830cfaeac"
+          "revision": "instruments-v5",
+          "sha256": "85a1d2674dd5206b3dda9e6a385c617a3083d2f2d1d4d5cacd62da17cac7011e"
         }
       ],
-      "reason": "Réserve additionnelle au contexte câblesv2 : bandes facettées visibles sur le grand carter arrière, cause position/normales à diagnostiquer en lecture seule après gel housing2. Correction antérieure du bord de verre conservée ; aucune réception de matière ou de toutes les surfaces.",
+      "reason": "Les bandes du carter3 et faux creux des pods sont corrigés dans les vrais contextes comparés. Corps/fonds restent des matières candidates ; aucune calibration photographique ni réception de tout le poste.",
       "reviewed_at": null
     },
     "G5": {
       "status": "rework",
-      "revision": "instruments-v3",
+      "revision": "instruments-v5",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/instruments-v3/source-geometry-check.json",
+          "path": "../../reviews/instruments-v5/source-geometry-check.json",
           "kind": "motion_or_interface_check",
-          "revision": "instruments-v3",
-          "sha256": "c3bc0a69a09d9a3fe596563ea1013220bfd65bbe2dc59df7699a524197cde486"
+          "revision": "instruments-v5",
+          "sha256": "89e414131518a701c17b49693f561bee110e6cc32b345ef232411b156d1f8a1a"
+        },
+        {
+          "path": "../../reviews/instruments-v5/interface-motion-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "instruments-v5",
+          "sha256": "a3d7a04ab9b965f561021f7febd45a874a4591c5b0d9e6668e5a8761b5cf3cd2"
+        },
+        {
+          "path": "../../research/cockpit-fit-preparation-v3-assembly-addendum-v1/report.json",
+          "kind": "motion_or_interface_check",
+          "revision": "cockpit-current-review-v3/instruments-v5",
+          "sha256": "2366e8f762e082ed01311b7a77776378f585657cf20e041b1f6fd1045d9a7266"
         }
       ],
-      "reason": "Deux aiguilles exercées dans Babylon, mais calibration angulaire, cotes et fit visière/support estimés. Démonstration LCD1–5 non preuve du nombre de rapports de la version RDC.",
+      "reason": "Nouveau linked cockpitv3 charge réellement la bibliothèqueC5 :177tests de paires/poses et contrôles segments/inclusion rejoués sur le vrai BLEND,0croisement. Onze cibles/85948trianglesGLB concernés correspondent aux sources et copies (max33,7703nm), normales locales des9corps vérifiées. Témoin32ancien explicitement réemployé. Supports installés, câble/connecteur/trajectoires et braquage complet restent incomplets ; ce résultat ne certifie pas tous les178objets, montage mécanique ou réception artistique.",
       "reviewed_at": null
     },
     "G6": {
       "status": "rework",
-      "revision": "instruments-v3",
+      "revision": "instruments-v5",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/instruments-v3/export-buffer-check.json",
+          "path": "../../reviews/instruments-v5/export-buffer-check.json",
           "kind": "technical_export_check",
-          "revision": "instruments-v3",
-          "sha256": "cee6eb4068bbcada21a33134f2343d640305353337eb1e413ed16e6208f3dd68"
+          "revision": "instruments-v5",
+          "sha256": "cd318f069fe72f29b8cd9b33af92337fb5a0d117917fa923ef0b7dd335939fe0"
         },
         {
-          "path": "../../reviews/instruments-v3/inspection-v3/engine-driver.png",
+          "path": "../../reviews/instruments-v5/inspection-v3/engine-driver.png",
           "kind": "real_runtime_comparison",
-          "revision": "instruments-v3",
-          "sha256": "964dfdbbcd48bceb06e371edf3bd91ac11f6234c42c4e853fb0f76d757caec04"
+          "revision": "instruments-v5",
+          "sha256": "cc9875ccde5df783c3ad6be89c883a95e4433b7acbaa2a9705635055ecc193ac"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -240,7 +290,7 @@
     },
     "G7": {
       "status": "pending",
-      "revision": "instruments-v3",
+      "revision": "instruments-v5",
       "reviewer": null,
       "evidence": [],
       "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
@@ -248,7 +298,7 @@
     },
     "G8": {
       "status": "pending",
-      "revision": "instruments-v3",
+      "revision": "instruments-v5",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -256,12 +306,12 @@
     }
   },
   "active_detailed_fabrication": false,
-  "source_revision": "instruments-v3",
-  "export_revision": "instruments-v3-inspection",
-  "next_action": "V5 source frozen after two actually read previews, awaiting root QA then two96 views. No physical geometry/material/rig changes. Cowl G2 preparation only.",
+  "source_revision": "instruments-v5",
+  "export_revision": "instruments-v5-inspection",
+  "next_action": "Continuer fixations et raccords du poste de conduite ; nouvelle revue cockpit3 disponible avec C5,13autres sources inchangées. Dimensions/finition/réception artistique/LOD et appareil physique encore ouverts.",
   "art_accepted": false,
-  "candidate_source": "../../../assets-src/moto-components/instruments/README_v3.md",
-  "candidate_review": "../../reviews/instruments-v3/README.md",
+  "candidate_source": "../../../assets-src/moto-components/instruments/README_v5.md",
+  "candidate_review": "../../reviews/instruments-v5/README.md",
   "graphic_style": "../../GRAPHIC_STYLE.md",
   "previous_revisions": [
     {
@@ -275,8 +325,13 @@
       "source": "../../../assets-src/moto-components/instruments/README_v2.md",
       "review": "../../reviews/instruments-v2/README.md",
       "art_accepted": false
+    },
+    {
+      "revision": "instruments-v3",
+      "source": "../../../assets-src/moto-components/instruments/README_v3.md",
+      "review": "../../reviews/instruments-v3/README.md",
+      "art_accepted": false
     }
   ],
-  "production_group": null,
-  "pending_revision": "instruments-v5"
+  "production_group": null
 }
