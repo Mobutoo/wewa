@@ -1,0 +1,13 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 01:31:14)
+Traceback (most recent call last):
+  File "/workspace/wewa/tools/powertrain_completion_p17_pivot_bolt_v1.py", line 25, in <module>
+    ob=mesh_object('SIDE_STAND_DISTINCT_HEX_SHOULDER_BOLT_WITH_HELICAL_TERMINAL',V,F);bm=bmesh.new();bm.from_mesh(ob.data);bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces));bm.to_mesh(ob.data);bm.free();ob['scope']=P['scope'];finish_source(H,O,P)
+                                                                                                                                                                                                                                       ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/wewa/tools/powertrain_completion_common.py", line 30, in finish_source
+    m=ob.data;m.calc_loop_triangles();m.materials.clear();m.materials.append(mat);count=Counter(tuple(sorted((a,b)))for f in m.polygons for a,b in zip(list(f.vertices),list(f.vertices[1:])+[f.vertices[0]]));boundary=sum(n==1 for n in count.values());assert boundary==P.get('expected_boundary_edges',0);assert max(count.values())==2;assert min(t.area for t in m.loop_triangles)>1e-14
+                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'tools/powertrain_completion_p17_pivot_bolt_v1.py', exiting.
+
+Blender quit
