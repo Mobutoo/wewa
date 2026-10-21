@@ -1,0 +1,580 @@
+{
+  "schema": "wewa.motorcycle.source14.recipe-admission.v1",
+  "created_at_UTC": "2026-10-21T08:29:28.521806+00:00",
+  "base_commit": "620167fd4b7f5fff65e35f0a9d40b82c7c484498",
+  "method": "Read scripts, text reports and parameters; hash exact manifest entries and named input files. No Blender, render, export, geometry edit, clean-checkout regeneration, web or private reference pixel inspection. No global catalogue pinned.",
+  "candidate_scope": [
+    "exhaust-heatshield-v1",
+    "exhaust-heatshield-fastener-v1",
+    "chaincase-upper-v1",
+    "seat-envelope-v1"
+  ],
+  "candidate_source_closure_summary": {
+    "heatshield": {
+      "root": {
+        "path": "assets-src/moto-components/exhaust-heatshield/preflight-manifest.json",
+        "sha256": "3b6bd4a73cfefcdd601a105941ebac5e0ddd5190f59781c90655c6d3ff79c4b0",
+        "bytes": 14231,
+        "tracked_before_source14": false
+      },
+      "recursive_manifests": 1,
+      "SHA_pairs_checked": 66,
+      "unique_files": 66,
+      "unique_file_bytes": 28792587,
+      "errors": []
+    },
+    "fastener": {
+      "root": {
+        "path": "assets-src/moto-components/exhaust-heatshield-fastener/preflight-manifest.json",
+        "sha256": "db36469c2d96d9d6765685adbd061ce9fd3d9a57cf914aee31d839a3d8771f81",
+        "bytes": 16920,
+        "tracked_before_source14": false
+      },
+      "recursive_manifests": 1,
+      "SHA_pairs_checked": 71,
+      "unique_files": 71,
+      "unique_file_bytes": 26857487,
+      "errors": []
+    },
+    "chaincase": {
+      "root": {
+        "path": "creative/reviews/chaincase-upper-v1/source-freeze.json",
+        "sha256": "7aaf5fff2cbd36a6a0abf17f74f255e63ebb9be639e365171e517cef091a00d6",
+        "bytes": 7271,
+        "tracked_before_source14": false
+      },
+      "recursive_manifests": 1,
+      "SHA_pairs_checked": 34,
+      "unique_files": 34,
+      "unique_file_bytes": 28620102,
+      "errors": []
+    },
+    "seat": {
+      "root": {
+        "path": "creative/reviews/seat-envelope-v1/source-freeze-manifest.json",
+        "sha256": "4a2ebcc07431692e5dbc1b02ce977991b573ac928cd2b071676e0043684411ef",
+        "bytes": 7167,
+        "tracked_before_source14": false
+      },
+      "recursive_manifests": 5,
+      "SHA_pairs_checked": 92,
+      "unique_files": 91,
+      "unique_file_bytes": 67273281,
+      "errors": []
+    }
+  },
+  "all_source_manifest_SHA_and_bytes_match": true,
+  "source_closure_table": {
+    "path": "creative/research/motorcycle-source-dependencies-publication14-v1/source-closure-v1.json",
+    "sha256": "966ea5a97eb372450f3dbe36867ed16f98204a1390ed242d6d8c68ad9b2a9e71",
+    "bytes": 248882,
+    "tracked_at_audit": false
+  },
+  "stable_recipe_inputs": {
+    "path": "creative/research/motorcycle-source-dependencies-publication14-v1/stable-recipe-inputs-v1.json",
+    "sha256": "ae215004c28fc4dab23d1a48e346a897afe3d51e832a0a07f908e050570d3151",
+    "bytes": 24782,
+    "tracked_at_audit": false
+  },
+  "recipe_phases": {
+    "heatshield": {
+      "geometry_origin": [
+        "assets-src/moto-components/exhaust-heatshield/build.py",
+        "assets-src/moto-components/exhaust-heatshield/parameters.json",
+        "assets-src/moto-components/exhaust-heatshield/panel_geometry.py",
+        "assets-src/moto-components/exhaust-heatshield/planar_domain_checks.py",
+        "assets-src/moto-components/throttle-control/control_geometry.py",
+        "assets-src/moto-components/exhaust-silencer-body/loft_geometry.py",
+        "assets-src/moto-components/exhaust-silencer-body/parameters.json",
+        "assets-src/moto-components/exhaust-silencer-body/exhaust-silencer-body-v1.blend"
+      ],
+      "restart_material_from_atlased_geometry": [
+        "assets-src/moto-components/exhaust-heatshield/material.py",
+        "assets-src/moto-components/exhaust-heatshield/parameters.json",
+        "assets-src/moto-components/exhaust-heatshield/geometry-report.json",
+        "assets-src/moto-components/exhaust-heatshield/exhaust-heatshield-v1-geometry.blend"
+      ],
+      "render_current_candidate": [
+        "assets-src/moto-components/exhaust-heatshield/render.py",
+        "assets-src/moto-components/exhaust-heatshield/render_checkpoint.py",
+        "assets-src/moto-components/exhaust-heatshield/camera_preflight.py",
+        "assets-src/moto-components/exhaust-heatshield/build-report.json",
+        "assets-src/moto-components/exhaust-heatshield/exhaust-heatshield-v1.blend",
+        "assets-src/moto-components/exhaust-heatshield/exhaust-heatshield-inspection.glb",
+        "creative/reviews/exhaust-heatshield-v1/export-check.json"
+      ],
+      "regenerate_embedded_pixel_witness": [
+        "assets-src/moto-components/exhaust-heatshield/check_material_export.mjs",
+        "assets-src/moto-components/exhaust-heatshield/check_exported_map_pixels.py",
+        "assets-src/moto-components/exhaust-heatshield/parameters.json",
+        "assets-src/moto-components/exhaust-heatshield/build-report.json",
+        "assets-src/moto-components/exhaust-heatshield/exhaust-heatshield-inspection.glb"
+      ]
+    },
+    "fastener": {
+      "geometry_and_constant_material": [
+        "assets-src/moto-components/exhaust-heatshield-fastener/build.py",
+        "assets-src/moto-components/exhaust-heatshield-fastener/fastener_geometry.py",
+        "assets-src/moto-components/exhaust-heatshield-fastener/parameters.json",
+        "assets-src/moto-components/throttle-control/control_geometry.py",
+        "assets-src/moto-components/exhaust-heatshield/exhaust-heatshield-v1.blend",
+        "assets-src/moto-components/exhaust-heatshield/interfaces.json",
+        "assets-src/moto-components/exhaust-silencer-body/exhaust-silencer-body-v1.blend"
+      ],
+      "render_current_candidate": [
+        "assets-src/moto-components/exhaust-heatshield-fastener/render.py",
+        "assets-src/moto-components/exhaust-heatshield-fastener/render_underface_control.py",
+        "assets-src/moto-components/exhaust-heatshield-fastener/render_checkpoint.py",
+        "assets-src/moto-components/exhaust-heatshield-fastener/camera_preflight.py",
+        "assets-src/moto-components/exhaust-heatshield-fastener/build-report.json",
+        "assets-src/moto-components/exhaust-heatshield-fastener/exhaust-heatshield-fastener-v1.blend",
+        "assets-src/moto-components/exhaust-heatshield-fastener/exhaust-heatshield-fastener-inspection.glb",
+        "creative/reviews/exhaust-heatshield-fastener-v1/export-check.json"
+      ],
+      "historical_underface_invariance_only": [
+        "assets-src/moto-components/exhaust-heatshield-fastener/check_observed_underface_rework.py",
+        "assets-src/moto-components/exhaust-heatshield-fastener/exhaust-heatshield-fastener-v1-initial-underface.blend",
+        "assets-src/moto-components/exhaust-heatshield-fastener/exhaust-heatshield-fastener-v1.blend"
+      ]
+    },
+    "chaincase": {
+      "geometry_origin": [
+        "assets-src/moto-components/chaincase-upper/build.py",
+        "assets-src/moto-components/chaincase-upper/formed_profile.py",
+        "assets-src/moto-components/chaincase-upper/parameters.json"
+      ],
+      "restart_material_from_public_G3": [
+        "assets-src/moto-components/chaincase-upper/material.py",
+        "assets-src/moto-components/chaincase-upper/g3-master-v1/README.md",
+        "assets-src/moto-components/chaincase-upper/g3-master-v1/chaincase-upper-v1.blend",
+        "assets-src/moto-components/chaincase-upper/g3-master-v1/chaincase-upper-inspection.glb",
+        "assets-src/moto-components/chaincase-upper/g3-master-v1/source-geometry-check.json",
+        "creative/reviews/chaincase-upper-v1/gray-review.json",
+        "creative/research/chaincase-upper/material-plan-v1.json"
+      ],
+      "render_current_candidate": [
+        "assets-src/moto-components/chaincase-upper/render.py",
+        "assets-src/moto-components/chaincase-upper/chaincase-upper-v1.blend",
+        "assets-src/moto-components/chaincase-upper/chaincase-upper-inspection.glb",
+        "creative/reviews/chaincase-upper-v1/source-geometry-check.json",
+        "creative/reviews/chaincase-upper-v1/geometry-check.json",
+        "tools/blender_component_camera_preflight.py"
+      ]
+    },
+    "seat": {
+      "restart_material_from_gray4": [
+        "assets-src/moto-components/seat-envelope/build_candidate_v1.py",
+        "assets-src/moto-components/seat-envelope/seat-envelope-study-v4.blend",
+        "assets-src/moto-components/seat-envelope/textures/wewa-seat-body-original-normal-v1.png",
+        "assets-src/moto-components/seat-envelope/textures/wewa-seat-caps-original-normal-v1.png",
+        "assets-src/moto-components/seat-envelope/textures/wewa-seat-rear-original-basecolor-v1.png",
+        "creative/reviews/seat-envelope-study-v4/build-report.json",
+        "creative/reviews/seat-envelope-study-v4/gray-reflection-reading.json",
+        "creative/reviews/seat-envelope-v1/original-material-images-provenance.json"
+      ],
+      "optional_original_image_regeneration": [
+        "assets-src/moto-components/seat-envelope/create_original_material_images.py",
+        "creative/reviews/seat-envelope-study-v4/gray-reflection-reading.json",
+        "assets-src/fonts/dejavu/DejaVuSansCondensed-BoldOblique.ttf",
+        "assets-src/fonts/dejavu/COPYRIGHT.txt"
+      ],
+      "export_transport_step": [
+        "assets-src/moto-components/seat-envelope/orthogonalize_export_tangents_v1.py",
+        "assets-src/moto-components/seat-envelope/check_candidate_v1.mjs",
+        "creative/reviews/seat-envelope-v1/build-report.json",
+        "creative/reviews/seat-envelope-v1/export-detail-check.json"
+      ],
+      "render_final_from_current_source": [
+        "assets-src/moto-components/seat-envelope/render_final_candidate_v1.py",
+        "assets-src/moto-components/seat-envelope/seat-envelope-v1.blend",
+        "creative/reviews/seat-envelope-v1/build-report.json",
+        "creative/reviews/seat-envelope-v1/preview-review.json",
+        "creative/reviews/seat-envelope-v1-neutral-lighting/report.json",
+        "creative/research/seat-envelope/neutral-material-review-v1.json",
+        "app/public/materials/kloppenheim_06_puresky_1k.hdr",
+        "tools/blender_component_camera_preflight.py",
+        "creative/research/motorcycle-source-dependencies-publication14-v1/replay-inputs/seat-preview-checkpoints-v1.json"
+      ],
+      "optional_neutral_exposure_reference_regeneration": [
+        "assets-src/moto-components/seat-envelope/render_neutral_material_v1.py",
+        "creative/research/seat-envelope/neutral-material-review-v1.json",
+        "tools/blender_component_camera_preflight.py",
+        "app/public/materials/kloppenheim_06_puresky_1k.hdr"
+      ],
+      "reconstruct_gray4_from_provided_gray2": [
+        "assets-src/moto-components/seat-envelope/build_study_v4.py",
+        "assets-src/moto-components/seat-envelope/seat-envelope-study-v2.blend",
+        "creative/reviews/seat-envelope-study-v2/build-report.json",
+        "creative/research/seat-envelope/rear-piping-detail-plan-v4.json"
+      ]
+    }
+  },
+  "inputs_outside_source_manifest_closures": [
+    {
+      "path": "creative/reviews/chaincase-upper-v1/gray-review.json",
+      "sha256": "ce21b80fb0fa435fe3b22a89b05d7d4eb9b06ea58d022ec6fea173e02101753b",
+      "bytes": 2960,
+      "tracked_at_audit": false,
+      "uses": [
+        "chaincase:restart_material_from_public_G3"
+      ]
+    },
+    {
+      "path": "creative/reviews/chaincase-upper-v1/source-geometry-check.json",
+      "sha256": "1df7694327c9e557f874ad1edea3b108cf1a27818c304fb5efa766ce1b7e8274",
+      "bytes": 964,
+      "tracked_at_audit": false,
+      "uses": [
+        "chaincase:render_current_candidate"
+      ]
+    },
+    {
+      "path": "creative/reviews/chaincase-upper-v1/geometry-check.json",
+      "sha256": "e08d0a64952261170375850e651a1caf480868a8181bb189dffedfea17edc6c0",
+      "bytes": 2272,
+      "tracked_at_audit": false,
+      "uses": [
+        "chaincase:render_current_candidate"
+      ]
+    },
+    {
+      "path": "tools/blender_component_camera_preflight.py",
+      "sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a",
+      "bytes": 3235,
+      "tracked_at_audit": true,
+      "uses": [
+        "chaincase:render_current_candidate",
+        "seat:render_final_from_current_source",
+        "seat:optional_neutral_exposure_reference_regeneration"
+      ]
+    },
+    {
+      "path": "assets-src/fonts/dejavu/DejaVuSansCondensed-BoldOblique.ttf",
+      "sha256": "ba8db8a1aba41e53aa1401c1a7fe75d66bb027bf6cd66ecaf8d16af70f590358",
+      "bytes": 614068,
+      "tracked_at_audit": true,
+      "uses": [
+        "seat:optional_original_image_regeneration"
+      ]
+    },
+    {
+      "path": "assets-src/fonts/dejavu/COPYRIGHT.txt",
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9",
+      "bytes": 3859,
+      "tracked_at_audit": true,
+      "uses": [
+        "seat:optional_original_image_regeneration"
+      ]
+    },
+    {
+      "path": "app/public/materials/kloppenheim_06_puresky_1k.hdr",
+      "sha256": "206c67e3a1b992282821cf06662bdd69bbb4915c1c4444a66338a40d6a7d4e34",
+      "bytes": 1173154,
+      "tracked_at_audit": true,
+      "uses": [
+        "seat:render_final_from_current_source",
+        "seat:optional_neutral_exposure_reference_regeneration"
+      ]
+    },
+    {
+      "path": "creative/research/motorcycle-source-dependencies-publication14-v1/replay-inputs/seat-preview-checkpoints-v1.json",
+      "sha256": "e7a54eae959ca3dae0fafef32b32e41edb5e402c1aaa2dd0bee0409359c673b3",
+      "bytes": 18981,
+      "tracked_at_audit": false,
+      "uses": [
+        "seat:render_final_from_current_source"
+      ]
+    }
+  ],
+  "concrete_admission_items": [
+    {
+      "item": "seat_preview_numeric_checkpoint",
+      "status": "public_byte_identical_companion_created_with_coordinator_authorization",
+      "original_private_numeric_input": {
+        "path": "/workspace/wewa-assets/work-in-progress/seat-envelope-v1/previews/render-checkpoints.json",
+        "sha256": "e7a54eae959ca3dae0fafef32b32e41edb5e402c1aaa2dd0bee0409359c673b3",
+        "bytes": 18981,
+        "tracked_at_audit": false
+      },
+      "public_companion": {
+        "path": "creative/research/motorcycle-source-dependencies-publication14-v1/replay-inputs/seat-preview-checkpoints-v1.json",
+        "sha256": "e7a54eae959ca3dae0fafef32b32e41edb5e402c1aaa2dd0bee0409359c673b3",
+        "bytes": 18981,
+        "tracked_at_audit": false
+      },
+      "restore_path": "/workspace/wewa-assets/work-in-progress/seat-envelope-v1/previews/render-checkpoints.json",
+      "required_by": "assets-src/moto-components/seat-envelope/render_final_candidate_v1.py",
+      "private_PNG_or_EXR_copied": false,
+      "scope": "Pair metadata only; four saved studio preview configurations. Final checkpoints remain active and are not copied/pinned here."
+    },
+    {
+      "item": "chaincase_gray_review",
+      "status": "existing_stable_input_not_in_source34",
+      "input": {
+        "path": "creative/reviews/chaincase-upper-v1/gray-review.json",
+        "sha256": "ce21b80fb0fa435fe3b22a89b05d7d4eb9b06ea58d022ec6fea173e02101753b",
+        "bytes": 2960,
+        "tracked_at_audit": false
+      },
+      "reason": "material.py asserts the G3 source/export and approved bounded material candidate. Historical cited PNGs are not read as recipe input and are not auto-admitted."
+    },
+    {
+      "item": "chaincase_current_render_prechecks",
+      "status": "existing_stable_inputs_not_in_source34",
+      "inputs": [
+        {
+          "path": "creative/reviews/chaincase-upper-v1/geometry-check.json",
+          "sha256": "e08d0a64952261170375850e651a1caf480868a8181bb189dffedfea17edc6c0",
+          "bytes": 2272,
+          "tracked_at_audit": false
+        },
+        {
+          "path": "creative/reviews/chaincase-upper-v1/source-geometry-check.json",
+          "sha256": "1df7694327c9e557f874ad1edea3b108cf1a27818c304fb5efa766ce1b7e8274",
+          "bytes": 964,
+          "tracked_at_audit": false
+        }
+      ],
+      "reason": "render.py asserts current source/export equality and technical pass. Not its active render-report."
+    },
+    {
+      "item": "seat_font",
+      "status": "reuse_exact_existing_source13_companion",
+      "proof": {
+        "system_input": {
+          "path": "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf",
+          "sha256": "ba8db8a1aba41e53aa1401c1a7fe75d66bb027bf6cd66ecaf8d16af70f590358",
+          "bytes": 614068,
+          "tracked_at_audit": false
+        },
+        "public_companion": {
+          "path": "assets-src/fonts/dejavu/DejaVuSansCondensed-BoldOblique.ttf",
+          "sha256": "ba8db8a1aba41e53aa1401c1a7fe75d66bb027bf6cd66ecaf8d16af70f590358",
+          "bytes": 614068,
+          "tracked_at_audit": true
+        },
+        "byte_identical": true,
+        "notice": {
+          "path": "assets-src/fonts/dejavu/COPYRIGHT.txt",
+          "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9",
+          "bytes": 3859,
+          "tracked_at_audit": true
+        },
+        "source13_font_provenance": {
+          "path": "assets-src/fonts/dejavu/provenance.json",
+          "sha256": "2acd2cfe58719f39821908e7c9d37652a0de707cef5c76e6d795a2096a0ae55f",
+          "bytes": 766,
+          "tracked_at_audit": true
+        },
+        "source13_font_readme": {
+          "path": "assets-src/fonts/dejavu/README.md",
+          "sha256": "83e6ea163181596d6101226ddfdc38b92cfeb1274f815eddf29b403b02395ba7",
+          "bytes": 1304,
+          "tracked_at_audit": true
+        },
+        "seat_notice_identical_to_public_notice": true,
+        "new_font_copy_created": false,
+        "restore_expected_system_paths": [
+          "/usr/share/fonts/truetype/dejavu/DejaVuSansCondensed-BoldOblique.ttf",
+          "/usr/share/doc/fonts-dejavu-core/copyright"
+        ],
+        "scope": "Reuse existing redistribution/licence companion, no font or original atlas regeneration executed."
+      }
+    }
+  ],
+  "restart_limits": {
+    "heatshield": "PBR resumes from the provided atlased geometry .blend and geometry-report. build.py origin and modules are supplied; frozen guards require an isolated new work copy without original preflight manifest. The pre-atlas states are historical witnesses, not material restart inputs. Native Blender noise baking/version matters; no bitwise regeneration claim.",
+    "fastener": "Current build.py/fastener_geometry/parameters generate geometry and constant shader together; no texture master or separate PBR bake needed. The initial underface .blend/archived scripts are protected historical witnesses required by checks, not the current generator input. Two conditional instances are one type, not two new types.",
+    "chaincase": "material.py reads the active source/export and overwrites them. In a work copy first restore both G3 binaries and source-geometry-check to active paths from g3-master-v1; retain gray-review as authorization/input and use material-plan. Source34 includes the G3 master. The routine is not idempotent on current PBR. Render current PBR only after current checks. No missing forward ear or installed fit claimed.",
+    "seat": "PBR resumes from study4 master + source/hash/review JSON and original PNGs. Gray4 can be reconstructed from provided gray2 and plan4, but source33 includes nested historical manifests that force1/2/3 as separate proof ancestry. Current export pipeline first creates an unprojected GLB, runs check_candidate (which writes report before throwing on tangent error), then orthogonalizes only Txyz using that preliminary export-detail-check and reruns checks. Do not feed stale current report/hash into that transport step. Original raw GLB is regenerated, not a private author input. No full clean-clone replay performed."
+  },
+  "seat_imposed_ancestry": {
+    "source33_nested_closure_manifests": [
+      "creative/reviews/seat-envelope-v1/source-freeze-manifest.json",
+      "creative/reviews/seat-envelope-study-v4/study-freeze-manifest.json",
+      "creative/reviews/seat-envelope-study-v3/diagnostic-freeze-manifest.json",
+      "creative/reviews/seat-envelope-study-v2/study-freeze-manifest.json",
+      "creative/reviews/seat-envelope-study-v1/diagnostic-freeze-manifest.json"
+    ],
+    "unique_files": 91,
+    "bytes": 67273281,
+    "historical_study1_2_3_binary_paths": [
+      {
+        "path": "assets-src/moto-components/seat-envelope/parameters-study-v1.json",
+        "sha256": "23239e761a06424fad1e4b3aef6bb4c7c49f55cb33376fd13be9e4aae5772d16",
+        "bytes": 1936,
+        "tracked_before_source14": false
+      },
+      {
+        "path": "assets-src/moto-components/seat-envelope/parameters-study-v2.json",
+        "sha256": "08f42e4ce049a4c82ecc81aa7fc572e9b47be702682bb2b7b32569a40f7080e1",
+        "bytes": 2006,
+        "tracked_before_source14": false
+      },
+      {
+        "path": "assets-src/moto-components/seat-envelope/seat-envelope-study-v1.blend",
+        "sha256": "771aa192610340b786434575ede3b217c9ae65219a8c8b747dd542b329776094",
+        "bytes": 5367140,
+        "tracked_before_source14": false
+      },
+      {
+        "path": "assets-src/moto-components/seat-envelope/seat-envelope-study-v1.glb",
+        "sha256": "1c6b5f7e1615926c4eb83bf2a5d6c5ef2c77e32b0d323e007546eb0aeb464b9d",
+        "bytes": 1258844,
+        "tracked_before_source14": false
+      },
+      {
+        "path": "assets-src/moto-components/seat-envelope/seat-envelope-study-v2.blend",
+        "sha256": "6178f3a65d347aed6fed5438bd07d98ddf91e1fa9fd1b14e029736c308b7f802",
+        "bytes": 6323940,
+        "tracked_before_source14": false
+      },
+      {
+        "path": "assets-src/moto-components/seat-envelope/seat-envelope-study-v2.glb",
+        "sha256": "153f4eb052c01127e8958965466c7e89beacc1f66bd41712ec02fe09007b9a0f",
+        "bytes": 1497052,
+        "tracked_before_source14": false
+      },
+      {
+        "path": "assets-src/moto-components/seat-envelope/seat-envelope-study-v3.blend",
+        "sha256": "cdf13b42bd289cb4dce1d974be793a4813ad8ffa88bbb6b9b87d8099580a0d91",
+        "bytes": 9732468,
+        "tracked_before_source14": false
+      },
+      {
+        "path": "assets-src/moto-components/seat-envelope/seat-envelope-study-v3.glb",
+        "sha256": "004408346debe97000901a1a314a030c188bd09f807658ecdcf1732ca210b2f5",
+        "bytes": 2553952,
+        "tracked_before_source14": false
+      }
+    ],
+    "historical_binary_bytes": 26737338,
+    "not_all_needed_to_restart_material_from_gray4": true,
+    "raster_files_in_exact_closure": [
+      {
+        "path": "assets-src/moto-components/seat-envelope/textures/wewa-seat-body-original-normal-v1.png",
+        "sha256": "a2fe896df5b53dd94a370fd196ab7cd4ab9c65f62e5bc33971e2f0a9754c0577",
+        "bytes": 2539783,
+        "tracked_before_source14": false
+      },
+      {
+        "path": "assets-src/moto-components/seat-envelope/textures/wewa-seat-caps-original-normal-v1.png",
+        "sha256": "ee2fc22504c8861466dc78c2a015d4e391a541fec18d45a04596cec122984467",
+        "bytes": 1806946,
+        "tracked_before_source14": false
+      },
+      {
+        "path": "assets-src/moto-components/seat-envelope/textures/wewa-seat-rear-original-basecolor-v1.png",
+        "sha256": "5c537c9dac586e7728015a708530ea17eba4eaa3cdde6a99a3eb9facecba2e64",
+        "bytes": 73770,
+        "tracked_before_source14": false
+      },
+      {
+        "path": "creative/reviews/seat-envelope-v1-neutral-lighting/exposure-reference.png",
+        "sha256": "d9f991c264fed931b28bcf0b0218c97653bbc134c17f34fcdf2ac923008fea03",
+        "bytes": 15974,
+        "tracked_before_source14": false
+      },
+      {
+        "path": "creative/reviews/seat-envelope-v1-neutral-lighting/neutral-outdoor.png",
+        "sha256": "c458f44cefea03fcca4891627d601293a7ce5c22c781e10c5a0dff06a0248999",
+        "bytes": 628012,
+        "tracked_before_source14": false
+      }
+    ],
+    "documentary_private_pixels_in_closure": false,
+    "claim_basis": "Exact file paths plus text/recipe authorship: three generated seat atlas/normal PNGs and two original neutral-lighting PNGs only. No reference photos or historical gray PNGs in these five manifest tables."
+  },
+  "private_path_classification": [
+    {
+      "path": "/workspace/wewa-assets/work-in-progress/seat-envelope-v1/previews/render-checkpoints.json",
+      "role": "Mandatory numeric input for final paired studio render; public exact copy now supplied."
+    },
+    {
+      "path": "/workspace/wewa-assets/work-in-progress/exhaust-heatshield/exported-v1-textures",
+      "role": "Generated embedded PNG/UV extraction output of check_material_export.mjs, read next by check_exported_map_pixels.py; regenerate in this order, no private pixel master to publish."
+    },
+    {
+      "path": "/workspace/wewa-assets/work-in-progress/seat-envelope-v1/raw-before-unused-tangent-removal.glb",
+      "role": "Output of build_candidate_v1.py, not a required pre-existing raw GLB."
+    },
+    {
+      "path": "/workspace/wewa-assets/render-raw/material-lighting-review",
+      "role": "Generated EXR exposure-card scratch output of neutral renderer, not supplied reference input."
+    },
+    {
+      "path": "/workspace/wewa-assets/renders/seat-envelope-v1",
+      "role": "Final EXR outputs/cache; absence forces rerender, not source dependency."
+    },
+    {
+      "path": "/workspace/wewa-tools/blender-4.3.2-linux-x64/blender",
+      "role": "Hardcoded external tool executable in recipes; install Blender4.3.2 / prepare expected path in isolated environment. Not a repo asset to duplicate."
+    }
+  ],
+  "unused_transitive_function_not_runtime_input": {
+    "module": "assets-src/moto-components/throttle-control/control_geometry.py",
+    "function": "csg",
+    "possible_dependency": "assets-src/moto-components/front-brake-plate/csg.py",
+    "included_as_needed": false,
+    "reason": "The two current builders import and call only material/check_mesh/export/studio, never csg. Merely importing this helper defines but does not execute its subprocess path."
+  },
+  "platform_requirements": {
+    "Blender": "4.3.2, bpy/mathutils/bmesh, NumPy bundled for Blender scripts, Cycles and CPU OIDN for paired final render code",
+    "external_Python": [
+      "NumPy",
+      "SciPy ndimage",
+      "Pillow for original image generator/pixel decode"
+    ],
+    "Node": [
+      "@gltf-transform/core",
+      "@gltf-transform/functions",
+      "@gltf-transform/extensions for seat checks",
+      "gltf-validator"
+    ],
+    "package_files_snapshot": [
+      {
+        "path": "package.json",
+        "sha256": "a39ce3bafb566edaf92a27fec2c35e3bd40550136b20ac501e56bcaa01c3a998",
+        "bytes": 782,
+        "tracked_at_audit": true
+      },
+      {
+        "path": "package-lock.json",
+        "sha256": "f7806a8afda3413efb6d3cec57482f51fda453b3350e784f1e6e90cf8604f014",
+        "bytes": 74605,
+        "tracked_at_audit": true
+      }
+    ],
+    "scope": "Static imports only, no environment install or fresh dependency bootstrap validated."
+  },
+  "closure_phase": {
+    "heatshield": "Source66/review83/root21 coordinator-closed before audit; review and root files are separate delivery roots, not needed as texture recipe inputs.",
+    "fastener": "Source71 closed; final native review active at audit start, not pinned here.",
+    "chaincase": "Source34 closed; final native review active at audit start, not pinned here.",
+    "seat": "Source33 closed; final native review active at audit start, not pinned here."
+  },
+  "explicit_exclusions": [
+    "exhaust-header-gasket JE591002: no preflight-manifest at initial/final read, exclude until a separate stable gel",
+    "chaincase-lower and seat-base active units",
+    "No private reference image or full reference directory copied",
+    "No final active render-report/checkpoint/exr pinned",
+    "No historical Source13 audit edited, no global records/catalogue/index changed"
+  ],
+  "index_before_SHA256": "9a74e34c890f9d321185a1093b49a87efedbc029943d24dfdce4ec2695d07292",
+  "index_after_SHA256": "9a74e34c890f9d321185a1093b49a87efedbc029943d24dfdce4ec2695d07292",
+  "new_outputs": [
+    "creative/research/motorcycle-source-dependencies-publication14-v1/README.md",
+    "creative/research/motorcycle-source-dependencies-publication14-v1/report.json",
+    "creative/research/motorcycle-source-dependencies-publication14-v1/source-closure-v1.json",
+    "creative/research/motorcycle-source-dependencies-publication14-v1/stable-recipe-inputs-v1.json",
+    "creative/research/motorcycle-source-dependencies-publication14-v1/replay-inputs/seat-preview-checkpoints-v1.json"
+  ],
+  "final_validation": {
+    "source_manifest_pairs_rechecked": 263,
+    "recipe_input_rows_rechecked": 77,
+    "missing_or_SHA_byte_mismatch": 0,
+    "checkpoint_still_byte_identical_to_numeric_original": true,
+    "index_still_unchanged": true,
+    "active_renders_not_executed_or_pinned": true
+  }
+}

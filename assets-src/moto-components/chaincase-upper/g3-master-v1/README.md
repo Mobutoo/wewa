@@ -1,0 +1,3 @@
+# MasterG3 partiel avant matière
+
+Binairesd017cabe…/b14c7bf2… : feuille/retours3bouches+reliefplein, encochecorrigée, oreilleAVcomplètenonfabriquée. G3/G5ducomposantrestentouverts. Restaurerles2binairesetcontrôlesourceverscheminsactifsdansunecopieisoléeavantmaterial.py ; cetterecettedelamatièren’estpasidempotentesurPBR. Toutesmétriquesestimées, identitéRDC/montageinconnus. PasdeLibrary/photoexternenécessaire.

@@ -1,0 +1,8 @@
+"""Read-only source triangle and normal protection across UV-only atlas revision."""
+from pathlib import Path
+import bpy,json,hashlib,numpy as np
+H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/exhaust-heatshield-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+rows=[]
+for path in [H/'diagnostics/pre-atlas-geometry.blend',H/'exhaust-heatshield-v1-geometry.blend']:
+ bpy.ops.wm.open_mainfile(filepath=str(path));o=next(o for o in bpy.data.collections['WEWA_EXHAUST_HEATSHIELD'].objects if o.type=='MESH');m=o.data;m.calc_loop_triangles();data={'positions':np.asarray([tuple(v.co)for v in m.vertices],dtype=np.float32).tobytes(),'triangles':np.asarray([tuple(t.vertices)for t in m.loop_triangles],dtype=np.int32).tobytes(),'source_corner_normals':np.asarray([tuple(n.vector)for n in m.corner_normals],dtype=np.float32).tobytes(),'object_world':np.asarray(o.matrix_world,dtype=np.float32).tobytes(),'parent_world':np.asarray(o.parent.matrix_world,dtype=np.float32).tobytes()};rows.append({'source_path':str(path.relative_to(R)),'source_sha256':sha(path),'protected':{k:hashlib.sha256(v).hexdigest()for k,v in data.items()}})
+assert rows[0]['protected']==rows[1]['protected'];x={'component_id':'MOTO-EXHAUST-HEATSHIELD-001','states':rows,'all_protected_equal':True,'only_UV_atlas_changed':True,'scope':'Original gray renders belong explicitly to first source. Positions/triangles/corner normals and matrices byte-identical in second source. Atlas now gives skins, return and bores separate strips; no collapsed vertical-side UV accepted. No artistic reception.','art_accepted':False};(O/'atlas-source-invariants.json').write_text(json.dumps(x,indent=2)+'\n');print(json.dumps(x))

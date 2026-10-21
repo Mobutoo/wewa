@@ -1,0 +1,17 @@
+# Pare-chaleur isolé — préparation avant forme
+
+Les trois photographies PF591045 919941, 920151 et 920153 ont été réellement ouvertes avant géométrie. Elles documentent les deux faces d'une plaque emboutie, deux cuvettes percées, un bord retourné, un bout arrondi et un bout biseauté asymétrique. Le complément [de provenance](../engine17-exhaust-exterior-v1/heatshield-targeted-v1/README.md) conserve URL/SHA/variantes. Aucun reflet, watermark, pixel ou rayure documentaire ne devient texture.
+
+L'identité commerciale BoxerX150 depuis juillet 2019 / BM150BS3 n'est pas une identification certifiée du 125HD RDC. Les vues RDC servent de contrôle qualitatif d'emplacement et des deux fixations. La quantité quatre de vis dans le groupe catalogue ne donne pas quatre trous sur cette face.
+
+Le candidat emploie un contour asymétrique paramétré, de vraies ouvertures, des cuvettes à transition quintique et un retour construit dans les sections. Sa courbure de travail suit le silencieux candidat déjà gelé avec un décalage de face initial en X de 9 mm ; ce n'est ni une section relevée de la photo, ni un assemblage reçu. La forme n'est pas déplacée après un conflit pour masquer un mauvais raccord.
+
+Enveloppe de contrôle UV 300×82 mm avant les rayons, épaisseur technique 0,9 mm, pli 3 mm, retour 1,5 mm, profondeur de cuvette 2,5 mm et petits trous de rayon 2,75 mm sont tous des estimations bornées dans parameters.json. Les photographies ne donnent ni métrique ni véritable épaisseur. Les dimensions du silencieux sont elles-mêmes estimées. Le code M5×0,8 des vis liées n'est pas une calibration photographique des cuvettes.
+
+La peau est triangulée dans un domaine contraint avec deux trous. L'inclusion de triangles entiers, l'aire du domaine et les contours dans les deux sens sont contrôlés, puis deux peaux et des sections explicites forment une paroi fermée. Aucun congé global après CSG ni remplissage par remesh ne masque un problème. Les perçages doivent rester ouverts et le modèle garde un seul volume de tôle positif. Les fixations et supports cachés ne sont pas fabriqués avec la plaque.
+
+Contrôles avant gel : gris face/dos/quart et macro cuvette/bord, bandes de reflets, PBR sous éclairage neutre puis contexte avec silencieux lié inchangé ; manifolds/volumes/triangles réels ; interfaces par surfaces et inclusion ; buffers réels GLB et UV/cartes si présents ; preuve des liens relatifs directs. Ces contrôles ne valent ni fidélité OEM ni réception artistique ou essai iPhone.
+
+Une première vérification de conservation d'aire a refusé l'échantillon avant export. Le calcul d'aire a été refait en float64 pour distinguer l'erreur arithmétique d'une perte réelle de domaine ; aucune tolérance d'inclusion ou de frontière n'est relâchée. Le float64 a établi un écart de 2,4355×10⁻⁹ m², inférieur au contrôle de domaine déjà employé pour la tôle (10⁻⁸ m²). Le seuil initial arbitraire de 10⁻¹⁰ m² est rejeté comme contrôle trop strict pour les coordonnées CDT float32 ; la borne documentée de 10⁻⁸ m² est appliquée explicitement, sans modification de coordonnées. Le contrôle entier des triangles et la comparaison bidirectionnelle de contours restent inchangés.
+
+Le décalage initial de face de 9 mm ne donne pas un jeu minimum uniforme : cuvettes et retour rapprochent certaines zones du corps. La distance sommet-vers-surface échantillonnée du test de raccord est environ 2,544 mm ; elle n’est pas une mesure exhaustive du jeu minimal et aucune valeur de jeu réel n’est reçue.

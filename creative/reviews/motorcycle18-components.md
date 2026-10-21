@@ -1,6 +1,6 @@
 # Viva Wewa — revue des composants moto
 
-**59 composants uniques enregistrés · 59 vues Blender prouvées · aucune réception artistique.**
+**63 composants uniques enregistrés · 63 vues Blender prouvées · aucune réception artistique.**
 
 Une seule vue originale par composant, à la révision exacte de sa fiche. Les anciennes révisions et les sources seulement cataloguées ou gelées sans enregistrement central ne sont pas ajoutées. Ces rendus montrent des candidats isolés, pas le jeu ni une moto terminée.
 
@@ -29,9 +29,9 @@ Les dimensions locales et variantes restent estimées ou non confirmées. Les in
 | [13 · Fourche et direction](#groupe-13) | 6 | Candidats partiels en revue ; groupe non terminé |
 | [14 · Ensemble avant et compatibilité des candidats existants](#groupe-14) | Voir les préexistants ; aucun nouveau composant compté | Candidats antérieurs existants à recontrôler ; compatibilité restante |
 | [15 · Garde-boue, cadre et bras oscillant](#groupe-15) | 9 | Candidats partiels en revue ; groupe non terminé |
-| [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 2 | Candidats partiels en revue ; groupe non terminé |
-| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 17 | Candidats partiels en revue ; groupe non terminé |
-| [18 · Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière](#groupe-18) | 1 | Candidats partiels en revue ; groupe non terminé |
+| [16 · Roue arrière, frein, transmission et amortisseurs](#groupe-16) | 3 | Candidats partiels en revue ; groupe non terminé |
+| [17 · Moteur extérieur, échappement, repose-pieds, pédales et béquilles](#groupe-17) | 19 | Candidats partiels en revue ; groupe non terminé |
+| [18 · Réservoir WEWA, caches latéraux, selle, porte-bagages et éclairage arrière](#groupe-18) | 2 | Candidats partiels en revue ; groupe non terminé |
 
 <a id="groupe-1"></a>
 
@@ -1003,6 +1003,33 @@ PNG SHA-256 : `e59f6b0e609dcc815852ea41c78e8656e54c4c8fc692500859d912a43439810e`
 
 </details>
 
+
+<a id="moto-chaincase-upper-001"></a>
+
+### Demi-carter de chaîne supérieur — coque partielle
+
+`MOTO-CHAINCASE-UPPER-001` · révision `chaincase-upper-v1` · **candidat non reçu**
+
+![Demi-carter de chaîne supérieur — coque partielle — chaincase-upper-v1](chaincase-upper-v1/outer-quarter.png)
+
+[Image entière](chaincase-upper-v1/outer-quarter.png) · [Preuve du rendu](chaincase-upper-v1/render-report.json) · vue `outer-quarter`
+
+Source SHA-256 : `442aad592a123465461d4fce6a16698de28323e7b552d865db1ea997ae5c4086`  
+PNG SHA-256 : `8b39f5febdd6fdfff92c44df5d7edb69c2d41ab5667fd8d844f6fec537e54d69`
+
+[Blender](../../assets-src/moto-components/chaincase-upper/chaincase-upper-v1.blend) · [GLB](../../assets-src/moto-components/chaincase-upper/chaincase-upper-inspection.glb) · [README source](../../assets-src/moto-components/chaincase-upper/README.md) · [Revue et limites](chaincase-upper-v1/README.md) · [Fiche](../workflow/records/moto-chaincase-upper-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [outer-side](chaincase-upper-v1/outer-side.png) · [preuve](chaincase-upper-v1/render-report.json)
+- [inner-quarter](chaincase-upper-v1/inner-quarter.png) · [preuve](chaincase-upper-v1/render-report.json)
+- [rear-return-detail](chaincase-upper-v1/rear-return-detail.png) · [preuve](chaincase-upper-v1/render-report.json)
+- [front-edge-detail](chaincase-upper-v1/front-edge-detail.png) · [preuve](chaincase-upper-v1/render-report.json)
+
+</details>
+
 Périmètre prévu : pneu arrière; jante/moyeu arrière; flasque et commande du frein arrière; couronne/chaîne et protection; amortisseur gauche; amortisseur droit.
 
 <a id="groupe-17"></a>
@@ -1443,6 +1470,59 @@ PNG SHA-256 : `5d303446c77720b3a850f309db3d8486231c3980fe467cfceb693781a3af775d`
 
 </details>
 
+
+<a id="moto-exhaust-heatshield-001"></a>
+
+### Pare-chaleur — tôle emboutie et deux cuvettes percées
+
+`MOTO-EXHAUST-HEATSHIELD-001` · révision `exhaust-heatshield-v1` · **candidat non reçu**
+
+![Pare-chaleur — tôle emboutie et deux cuvettes percées — exhaust-heatshield-v1](exhaust-heatshield-v1/opposite-inner.png)
+
+[Image entière](exhaust-heatshield-v1/opposite-inner.png) · [Preuve du rendu](exhaust-heatshield-v1/render-report.json) · vue `opposite-inner`
+
+Source SHA-256 : `000d35f158031e2feedaeec2040982e5f8a4295a84da18e336d58185323aa734`  
+PNG SHA-256 : `baecfd4bb3ade861f1f5c02db20d51c4ec29f5c01eb91e22cb182ae365eaf523`
+
+[Blender](../../assets-src/moto-components/exhaust-heatshield/exhaust-heatshield-v1.blend) · [GLB](../../assets-src/moto-components/exhaust-heatshield/exhaust-heatshield-inspection.glb) · [README source](../../assets-src/moto-components/exhaust-heatshield/README.md) · [Revue et limites](exhaust-heatshield-v1/README.md) · [Fiche](../workflow/records/moto-exhaust-heatshield-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [outside-quarter](exhaust-heatshield-v1/outside-quarter.png) · [preuve](exhaust-heatshield-v1/render-report.json)
+- [pressed-seat-detail](exhaust-heatshield-v1/pressed-seat-detail.png) · [preuve](exhaust-heatshield-v1/render-report.json)
+- [rolled-edge-detail](exhaust-heatshield-v1/rolled-edge-detail.png) · [preuve](exhaust-heatshield-v1/render-report.json)
+- [conditional-silencer-context](exhaust-heatshield-v1/conditional-silencer-context.png) · [preuve](exhaust-heatshield-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-exhaust-heatshield-screw-001"></a>
+
+### Fixation du pare-chaleur — candidat partiel, deux occurrences
+
+`MOTO-EXHAUST-HEATSHIELD-SCREW-001` · révision `exhaust-heatshield-fastener-v1` · **candidat non reçu**
+
+![Fixation du pare-chaleur — candidat partiel, deux occurrences — exhaust-heatshield-fastener-v1](exhaust-heatshield-fastener-v1/bearing-underface-quarter.png)
+
+[Image entière](exhaust-heatshield-fastener-v1/bearing-underface-quarter.png) · [Preuve du rendu](exhaust-heatshield-fastener-v1/render-report.json) · vue `bearing-underface-quarter`
+
+Source SHA-256 : `2dde00ab7384171eb23e05bab5ec14c3bd690e6440b17e48184d8029726a8168`  
+PNG SHA-256 : `e8037eaa27af74d53b36b653adf7d52d818f63eced4dfa1e94fe2361f307da10`
+
+[Blender](../../assets-src/moto-components/exhaust-heatshield-fastener/exhaust-heatshield-fastener-v1.blend) · [GLB](../../assets-src/moto-components/exhaust-heatshield-fastener/exhaust-heatshield-fastener-inspection.glb) · [README source](../../assets-src/moto-components/exhaust-heatshield-fastener/README.md) · [Revue et limites](exhaust-heatshield-fastener-v1/README.md) · [Fiche](../workflow/records/moto-exhaust-heatshield-screw-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [stem-thread-detail](exhaust-heatshield-fastener-v1/stem-thread-detail.png) · [preuve](exhaust-heatshield-fastener-v1/render-report.json)
+- [plain-crown-unknown-drive](exhaust-heatshield-fastener-v1/plain-crown-unknown-drive.png) · [preuve](exhaust-heatshield-fastener-v1/render-report.json)
+- [two-conditional-fixings-context](exhaust-heatshield-fastener-v1/two-conditional-fixings-context.png) · [preuve](exhaust-heatshield-fastener-v1/render-report.json)
+
+</details>
+
 Périmètre prévu : carter moteur gauche; carter moteur droit; cylindre et culasse à ailettes; admission et détails extérieurs visibles; collecteur et silencieux; repose-pieds avant/arrière; pédale frein et tringlerie; sélecteur et kick visibles; béquille latérale; béquille centrale.
 
 <a id="groupe-18"></a>
@@ -1472,6 +1552,33 @@ PNG SHA-256 : `51e28f1d7f153d4099ec15eb96ea59892966dff543bc3acb4436e669e4cdefec`
 - [left-oblique](fuel-tank-shell-v1/left-oblique.png) · [preuve](fuel-tank-shell-v1/render-report.json)
 - [mouth-detail](fuel-tank-shell-v1/mouth-detail.png) · [preuve](fuel-tank-shell-v1/render-report.json)
 - [open-underside-scope](fuel-tank-shell-v1/open-underside-scope.png) · [preuve](fuel-tank-shell-v1/render-report.json)
+
+</details>
+
+
+<a id="moto-seat-envelope-001"></a>
+
+### Selle WEWA — housse supérieure et couture arrière
+
+`MOTO-SEAT-ENVELOPE-001` · révision `seat-envelope-v1` · **candidat non reçu**
+
+![Selle WEWA — housse supérieure et couture arrière — seat-envelope-v1](seat-envelope-v1/upper-oblique.png)
+
+[Image entière](seat-envelope-v1/upper-oblique.png) · [Preuve du rendu](seat-envelope-v1/render-report.json) · vue `upper-oblique`
+
+Source SHA-256 : `a2457b56b5940119567b1b9147ceaee4193497a251356de8fa9ed70be4c83b90`  
+PNG SHA-256 : `727fa04d7bc75d5dc3ff511e8b098dbc31b75cfc7ca35fa60ae150c07823208a`
+
+[Blender](../../assets-src/moto-components/seat-envelope/seat-envelope-v1.blend) · [GLB](../../assets-src/moto-components/seat-envelope/seat-envelope-inspection.glb) · [README source](../../assets-src/moto-components/seat-envelope/README.md) · [Revue et limites](seat-envelope-v1/README.md) · [Fiche](../workflow/records/moto-seat-envelope-001.json)
+
+
+<details>
+<summary>Autres vues Blender prouvées de cette révision</summary>
+
+- [rear-opposite](seat-envelope-v1/rear-opposite.png) · [preuve](seat-envelope-v1/render-report.json)
+- [rear-seam-detail](seat-envelope-v1/rear-seam-detail.png) · [preuve](seat-envelope-v1/render-report.json)
+- [open-underside-scope](seat-envelope-v1/open-underside-scope.png) · [preuve](seat-envelope-v1/render-report.json)
+- [neutral-upper-oblique](seat-envelope-v1/neutral-upper-oblique.png) · [preuve](seat-envelope-v1/render-report.json)
 
 </details>
 

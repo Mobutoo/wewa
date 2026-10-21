@@ -1,0 +1,21 @@
+"""Freeze only after attributable actual previews; no automatic art reception."""
+from pathlib import Path
+import json,hashlib
+H=Path(__file__).resolve().parent;R=H.parents[2];O=R/'creative/reviews/exhaust-heatshield-v1';sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();assert not(H/'preflight-manifest.json').exists();source=H/'exhaust-heatshield-v1.blend';glb=H/'exhaust-heatshield-inspection.glb';b=json.loads((H/'build-report.json').read_text());assert sha(source)==b['source_sha256']and sha(glb)==b['export_sha256'];reports={n:json.loads((O/(n+'.json')).read_text())for n in ['export-check','protected-export-invariants','material-export-check','actual-embedded-map-pixel-check','self-surface-check','interface-solid-check','opening-wall-check','reference-path-check','camera-layout-preflight','preview-review']}
+for q in reports.values():assert q['source_sha256']==sha(source)
+assert reports['export-check']['glTF_errors']==0 and reports['self-surface-check']['nonadjacent_surface_crossings']==0
+assert reports['actual-embedded-map-pixel-check']['native_embedded_payloads_actually_decoded'];assert reports['material-export-check']['actual_UV_zero_area_triangles']==0
+assert reports['reference-path-check']['direct_libraries_relative']and reports['reference-path-check']['all_loaded_targets_exist'];assert len(reports['opening-wall-check']['lumen_rays'])==10 and len(reports['opening-wall-check']['actual_wall_rays'])==6
+assert len(reports['interface-solid-check']['pairs'])==1
+for row in reports['interface-solid-check']['pairs']:
+ assert row['surface_pairs']==0
+ for k in ['a_vertices_in_b','b_vertices_in_a']:assert not any(row[k][q]for q in ['inside','ambiguous','boundary_100nm'])
+assert len(reports['camera-layout-preflight']['views'])==5
+for row in reports['camera-layout-preflight']['views']:
+ f=row['camera_preflight'];assert not f['actual_vertices_outside_depth_range'];assert not f['projected_extent_outside_margin']or f['allow_deliberate_crop']
+p=reports['preview-review'];assert p['ready_for_isolated_final96']and len(p['actual_images_opened'])==6
+for row in p['actual_images_opened']:
+ assert row['actually_opened'];cp=Path(row['checkpoint_private']);q=json.loads(cp.read_text());assert q['source_sha256']==sha(source)and q['configuration']['samples']==24;assert q['configuration']['render_script_sha256']==sha(H/'render.py')and q['configuration']['protocol_sha256']==sha(H/'render_checkpoint.py')
+ for item in q['outputs']:assert sha(cp.parent/item['file'])==item['sha256']
+P=json.loads((H/'parameters.json').read_text());files=[p for p in H.rglob('*')if p.is_file()and'__pycache__'not in p.parts and p.suffix in ['.py','.mjs','.json','.blend','.glb','.png','.md','.log']and p.name!='preflight-manifest.json'];files +=[p for p in O.iterdir()if p.is_file()and p.suffix in ['.json','.md','.log']and p.name!='review-manifest.json'];files += list((R/'creative/research/exhaust-heatshield').glob('*'));files +=[R/'creative/research/engine17-exhaust-exterior-v1/report.json',R/'creative/research/engine17-exhaust-exterior-v1/heatshield-targeted-v1/report.json',R/'creative/research/engine17-exhaust-exterior-v1/heatshield-targeted-v1/README.md',H.parent/'throttle-control/control_geometry.py']+[R/P[k]for k in ['body_source','body_parameters','body_geometry_helper']];files=[p for p in files if p.is_file()]
+x={'component_id':b['component_id'],'revision':b['revision'],'source_sha256':sha(source),'export_sha256':sha(glb),'files':[{'path':str(p.relative_to(R)),'bytes':p.stat().st_size,'sha256':sha(p)}for p in sorted(set(files))],'scope':'One observable asymmetric formed heatshield with two true pressed openings and returned border, separate from fixing heads/standoffs. Three linked PF591045 photographs, no metric/currentRDC identity proof. Body-conformal camber, thickness/gap/section/pose/cup shape and finish estimated. Technical source/export checks and actual previews, not artistic OEM fit or physical iPhone reception.','all_dimensions_estimated':True,'exact_RDC_identity_confirmed':False,'art_accepted':False,'physical_iphone_tested':False};(H/'preflight-manifest.json').write_text(json.dumps(x,indent=2)+'\n');print('FROZEN_HEATSHIELD',len(x['files']),sha(source),sha(glb))

@@ -1,0 +1,16 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 01:31:14)
+Traceback (most recent call last):
+  File "/workspace/wewa-github/assets-src/moto-components/exhaust-heatshield/build.py", line 12, in <module>
+    verts,faces,normals,UV,origin,shape=build(P,json.loads((R/P['body_parameters']).read_text()),R);m=bpy.data.meshes.new('Formed asymmetric thin sheet with two pierced pressed seats');m.from_pydata(verts,[],faces);m.update();bm=bmesh.new();bm.from_mesh(m);bmesh.ops.recalc_face_normals(bm,faces=bm.faces);bm.to_mesh(m);bm.free();m.update()
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/wewa-github/assets-src/moto-components/exhaust-heatshield/panel_geometry.py", line 77, in build
+    Y=[q['y_m']for q in bodyP['working_sections_world']];functions=[pchip(Y,[q[k]for q in bodyP['working_sections_world']])for k in ['rx_m','rz_m','centre_z_m']];R=P['working_outer_bend_radius_m'];wall=P['working_wall_m'];raw,outs=rounded_outline(P);outline=[q-R*n for q,n in zip(raw,outs)];coords,triangles,outer,holes,report=skin_domain(outline,P);origin=Vector((-.18,P['working_centre_y_m'],functions[2](P['working_centre_y_m'])[0]));vertices=[];normals=[];faces=[];UV=[]
+                                                                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/wewa-github/assets-src/moto-components/exhaust-heatshield/panel_geometry.py", line 71, in skin_domain
+    expectedarea=area(outline)-sum(area(h)for h in input_holes);actualarea=sum(area([coords[i]for i in f])for f in faces);assert abs(expectedarea-actualarea)<1e-10,('Area mismatch',expectedarea,actualarea,abs(expectedarea-actualarea))
+                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('Area mismatch', 0.01883966628604891, 0.018839668721574537, 2.435525624927548e-09)
+
+Error: script failed, file: 'assets-src/moto-components/exhaust-heatshield/build.py', exiting.
+
+Blender quit

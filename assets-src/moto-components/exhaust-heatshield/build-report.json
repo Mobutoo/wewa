@@ -1,0 +1,192 @@
+{
+  "component_id": "MOTO-EXHAUST-HEATSHIELD-001",
+  "revision": "exhaust-heatshield-v1",
+  "source_sha256": "000d35f158031e2feedaeec2040982e5f8a4295a84da18e336d58185323aa734",
+  "export_sha256": "f2058ab69764574c8dc8674889c40401dbb1ff5c309d45b0a01f5ffb233887b9",
+  "geometry": [
+    {
+      "name": "Formed heatshield with two dished true holes - conditional PF59",
+      "vertices": 53889,
+      "faces": 107782,
+      "connected_shells": 1,
+      "non_manifold_edges": 0,
+      "signed_volume_m3": 2.040088371684054e-05
+    }
+  ],
+  "shape": {
+    "domain": {
+      "whole_triangle_domain_checked": true,
+      "retained_triangle_count": 14661,
+      "unique_vertices_checked": 7627,
+      "unique_edges_checked": 22289,
+      "vertices_outside_closed_domain": 0,
+      "edge_midpoints_outside_closed_domain": 0,
+      "proper_crossings_of_outer_or_hole_boundaries": 0,
+      "triangles_containing_entire_hole": 0,
+      "numeric_coordinate_tolerance_m": 2e-07,
+      "scope": "Complete triangle boundary inclusion plus absence of an enclosed hole; no physical casting tolerance or art reception."
+    },
+    "boundary_both_directions_m": [
+      [
+        1.4996910388578426e-08,
+        1.5016070422348865e-08
+      ],
+      [
+        7.446590099704635e-09,
+        7.450580596923828e-09
+      ],
+      [
+        7.450580596923828e-09,
+        7.446590099704635e-09
+      ]
+    ],
+    "expected_area_m2": 0.01883966628604891,
+    "retained_area_m2": 0.018839668721574537,
+    "area_error_m2": 2.435525624927548e-09,
+    "discarded_triangles_outside_domain": 221,
+    "skin_vertices_per_face": 7627,
+    "method": "Constrained skin with two exact hole loops, cubic-section body-conformal working camber, quintic pressed seats, explicitly rolled perimeter and bore lips",
+    "all_dimensions_estimated": true,
+    "hidden_mounts_fabricated": false
+  },
+  "triangles": 107782,
+  "zero_area_triangles": 0,
+  "collection": "WEWA_EXHAUST_HEATSHIELD",
+  "root": "Heatshield conditional body-conformal datum",
+  "datum_world_matrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      -0.18000000715255737
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.8550000190734863
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      -0.7659804224967957
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "body_source_sha256": "262b057c752be56eec3132ba931a269e0cd9fb40bc9ec8170f1f16aaae72b70b",
+  "candidate_guide_surface_tests": [
+    {
+      "name": "Rising hollow silencer main shell - conditional RDC",
+      "surface_crossing_pairs": 0
+    }
+  ],
+  "normals": "Analytic skin source normals, actual swept rim vertex normals; no arbitrary tangent repair",
+  "all_dimensions_estimated": true,
+  "art_accepted": false,
+  "protected_geometry_source_sha256": "fc5630ea26e71903981dcb4c5e5a8d08d2e39d0d1aae1d994a669b4b00fcc086",
+  "protected_geometry_digest": "3e9468ae511fa03eec42126a06979dccb459c4b06c87aa2fc6964465bbd0cb2b",
+  "new_geometry_digest": "3e9468ae511fa03eec42126a06979dccb459c4b06c87aa2fc6964465bbd0cb2b",
+  "source_geometry_normals_UV_matrices_bit_identical": true,
+  "maps": {
+    "basecolor": {
+      "path": "assets-src/moto-components/exhaust-heatshield/textures/heatshield-finish-basecolor-v1.png",
+      "sha256": "0b8a673a7c5469da11b467a524db4388fc156dd0d55082a06eeb856acb051fec",
+      "minimum_buffer_rgb": [
+        0.6509804129600525,
+        0.658823549747467,
+        0.6784313917160034
+      ],
+      "maximum_buffer_rgb": [
+        0.8313726186752319,
+        0.8352941870689392,
+        0.847058892250061
+      ],
+      "std_buffer_rgb": [
+        0.08697659522294998,
+        0.08571489155292511,
+        0.08084677159786224
+      ],
+      "colorspace": "sRGB",
+      "size_px": [
+        2048,
+        2048
+      ]
+    },
+    "roughness": {
+      "path": "assets-src/moto-components/exhaust-heatshield/textures/heatshield-finish-roughness-v1.png",
+      "sha256": "47886907e3f57bcc6fa7964d64bc97e73611aac8c608eee5335f50689d8058a5",
+      "minimum_buffer_rgb": [
+        0.18039216101169586,
+        0.18039216101169586,
+        0.18039216101169586
+      ],
+      "maximum_buffer_rgb": [
+        0.24313727021217346,
+        0.24313727021217346,
+        0.24313727021217346
+      ],
+      "std_buffer_rgb": [
+        0.007868028245866299,
+        0.007868028245866299,
+        0.007868028245866299
+      ],
+      "colorspace": "Non-Color",
+      "size_px": [
+        2048,
+        2048
+      ]
+    }
+  },
+  "material_original": {
+    "representative_finish": "Bright formed metal representative of observed isolated shield. Optical chemistry/chrome plating not measured; original weak color and roughness variation only.",
+    "linear_base_color": [
+      0.65,
+      0.66,
+      0.68
+    ],
+    "metallic": 1,
+    "roughness_range": [
+      0.17,
+      0.25
+    ],
+    "color_multiplier_range": [
+      0.985,
+      1.015
+    ],
+    "texture_size_px": [
+      2048,
+      2048
+    ],
+    "working_noise_scale_m": 0.0006,
+    "working_large_variation_scale_m": 0.006,
+    "noise_seed_W": 591.045,
+    "bake_margin_px": 3,
+    "normalmap": false,
+    "bump_or_displacement": false,
+    "scale_is_estimated": true
+  },
+  "normalmap": false,
+  "bump_or_displacement": false,
+  "tangent_buffers_repaired": false,
+  "photographic_pixels_used": false,
+  "material_measured": false,
+  "actual_candidate_world_bounds_m": {
+    "min": [
+      -0.22899992763996124,
+      0.7049999833106995,
+      -0.8122947216033936
+    ],
+    "max": [
+      -0.20465628802776337,
+      0.99097740650177,
+      -0.7170421481132507
+    ],
+    "scope": "Actual current candidate bounds transformed from native glTF, not physical measurements; 300x82mm parameters are unfilleted UV control envelope."
+  }
+}

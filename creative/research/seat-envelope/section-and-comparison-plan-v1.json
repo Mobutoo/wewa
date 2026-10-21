@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "created_utc": "2026-10-21T07:43:53.450958+00:00",
+  "revision": "seat-envelope-study-v1",
+  "frame": {
+    "X_positive": "Rider left",
+    "Y_positive": "Rear",
+    "Z_positive": "Up",
+    "origin": "Existing estimated bar-clamp datum, not physical seat mounting datum"
+  },
+  "scope": {
+    "included": "Finite outer upholstery skin over variable crown, shoulders, side skirts and visible front/rear faces. Open underside lower perimeter declared explicitly.",
+    "excluded": [
+      "Hidden foam core",
+      "Sealed fabricated underside",
+      "Base ribs/supports/staples until separately read and modeled",
+      "Mounting compatibility",
+      "Embossing/piping/grain/WEWA before gray review"
+    ]
+  },
+  "construction": {
+    "method": "Editable sparse longitudinal cross-section cage with independently defined width, crown, lower edge and nose sweep; Catmull-Clark limit approximation for continuous upholstered rolls, then explicit finite skin offset and lower-edge thickness closure. No capsule primitive.",
+    "side_symmetry": "Initial main envelope symmetric estimate, separate left/right controls retained. Not evidence of manufactured bilateral identity.",
+    "authored_exploration_ranges_m": {
+      "length": [
+        0.7,
+        0.82
+      ],
+      "full_width": [
+        0.26,
+        0.34
+      ],
+      "maximum_height": [
+        0.1,
+        0.17
+      ]
+    },
+    "ranges_are": "Design exploration only, not physical confidence intervals or published dimensions",
+    "skin_thickness_candidate_m": 0.0012,
+    "thickness_is": "Authored inspection skin only, not measured vinyl or foam"
+  },
+  "before_material": [
+    "Actual source/export area, closed wall edges/volume, finite normals and UV",
+    "Fixed R00/R04 ORTHO and PERSP50 hypotheses, same guide/cameras as tank; never deform solely to absorb uncertain camera",
+    "Whole upper oblique and opposite side gray, neutral reflection and bottom scope short previews, actual camera preflight",
+    "Compare current exterior to isolated related top and rear without asserting they are calibrated or samevariant"
+  ],
+  "uncertainty": "Unknown camera, perspective, silhouette depth and rack occlusion remain separate from section controls. No pixel bound implies dimensional fidelity.",
+  "art_accepted": false
+}
