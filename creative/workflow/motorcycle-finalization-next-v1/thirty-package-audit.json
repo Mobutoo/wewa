@@ -1,0 +1,589 @@
+{
+  "scope": "Snapshot of canonical original30 package declarations; original blockers retained as historical questions, not a new physical inspection or an exact missing-parts count",
+  "board_source": "creative/workflow/motorcycle-exterior-completion-v1.json",
+  "board_sha256": "53a12397fb1c29ac3c4242ded34e42cfdabb94a99ffe9e45b5ca7ef46101bf60",
+  "packages": [
+    {
+      "id": "P01",
+      "title": "Cache latéral gauche",
+      "lot": 18,
+      "depends_on": [],
+      "state": "active",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/side-cover-left-window-catch-v1-coordination-v1/README.md",
+      "original_plan_blockers": [
+        "Inside geometry, retaining pins, grommets, exact flange depth and thickness",
+        "Mounting coordinates and visible fastener diameter/depth",
+        "Perspective alignment and precise red/black transition"
+      ],
+      "next_action_from_board": "Revers, chants et implantation montée du cache.",
+      "scope": "Contour, ajours et attaches visibles ; raccord au réservoir, à la selle et au cadre",
+      "registered_child_revisions": [
+        "side-cover-left-v2",
+        "side-cover-left-window-catch-v1-coordination-v1"
+      ]
+    },
+    {
+      "id": "P02",
+      "title": "Porte-bagages et poignée passager",
+      "lot": 18,
+      "depends_on": [],
+      "state": "active",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/rack-outer-rail-study-v1/README.md",
+      "original_plan_blockers": [
+        "Crosland PF231405 rod-grid versus WAY-C plate-deck variants; current RDC deck choice unresolved"
+      ],
+      "next_action_from_board": "Identifier le plateau monté : grille PF231405 ou plaque WAY-C ; vues de dessus et ancrages.",
+      "scope": "Tubes, plateforme et attaches ; place disponible au-dessus du garde-boue et derrière la selle",
+      "registered_child_revisions": [
+        "rear-rack-deck-v1",
+        "rack-observed-long-inner-rail-v1"
+      ]
+    },
+    {
+      "id": "P03",
+      "title": "Garde-boue avant",
+      "lot": 15,
+      "depends_on": [],
+      "state": "source_gated",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/front-completion-p03-wire-guide-front12-v2-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Vues latérales/dessous et implantation de la variante montée, mesures de dégagement roue.",
+      "scope": "Courbure, épaisseur, bavette et supports documentés ; enveloppe roue/fourche",
+      "registered_child_revisions": [
+        "front-completion-p03-wire-guide-front12-v2-coordination-v1"
+      ]
+    },
+    {
+      "id": "P04",
+      "title": "Cache latéral droit",
+      "lot": 18,
+      "depends_on": [
+        "P01"
+      ],
+      "state": "active",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/right-side-cover-coordinate-conversion-v1-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Revers et profils de la référence exacte, épaisseur et montage.",
+      "scope": "Documenter les asymétries ; ne pas réfléchir automatiquement le cache gauche",
+      "registered_child_revisions": [
+        "side-cover-right-v1-coordination-v1",
+        "right-side-cover-coordinate-conversion-v1-coordination-v1"
+      ]
+    },
+    {
+      "id": "P05",
+      "title": "Support du feu arrière",
+      "lot": 18,
+      "depends_on": [
+        "P02"
+      ],
+      "state": "active",
+      "package_complete": false,
+      "latest_candidate_review": null,
+      "original_plan_blockers": [],
+      "next_action_from_board": "Photo physique du collier ; gaine face/dos/profil, dimensions et empilage comprimé. La photo Safex est explicitement générique.",
+      "scope": "Interfaces avec cadre, garde-boue et porte-bagages",
+      "registered_child_revisions": [
+        "tail-lamp-upper-bracket-v1",
+        "tail-lamp-upper-bracket-v4",
+        "tail-support-damper-dd201011-v1",
+        "tail-lamp-collar-31201001-visible-v1"
+      ]
+    },
+    {
+      "id": "P06",
+      "title": "Optique principale du phare",
+      "lot": 12,
+      "depends_on": [],
+      "state": "active",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/front-completion-p06-outer-glass-front17-v1-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Lentille démontée recto/verso/profil et réflecteur nu ; bague de douille séparée avec profil, contacts et identification des pièces ; connecteur blanc et cosse vus face/dos/profil.",
+      "scope": "Décomposer lentille, réflecteur et détails observables ; profil et relief documentés avant fabrication",
+      "registered_child_revisions": [
+        "front-completion-p06-holder-cap-front12-v1-coordination-v1",
+        "front-completion-p06-holder-lead-skins-front12-v2-coordination-v1",
+        "front-completion-p06-bulb-flange-front15-v2-coordination-v1",
+        "front-completion-p06-bulb-capsule-front15-v1-coordination-v1",
+        "front-completion-p06-bulb-flange-front15-v4-coordination-v1",
+        "front-completion-p06-bulb-base-front16-v1-coordination-v1",
+        "front-completion-p06-holder-cage-front16-v2-coordination-v1",
+        "front-completion-p06-outer-glass-front17-v1-coordination-v1"
+      ]
+    },
+    {
+      "id": "P07",
+      "title": "Feu arrière",
+      "lot": 18,
+      "depends_on": [
+        "P05"
+      ],
+      "state": "active",
+      "package_complete": false,
+      "latest_candidate_review": null,
+      "original_plan_blockers": [],
+      "next_action_from_board": "Lentille recto/verso/profil, source lumineuse et fixation séparées ; pose montée.",
+      "scope": "Décomposer corps, lentille et fixations ; forme éteinte puis éclairage de revue",
+      "registered_child_revisions": [
+        "tail-lamp-outer-lens-v2",
+        "tail-lamp-black-housing-v2",
+        "tail-lamp-perforated-outer-lens-v3"
+      ]
+    },
+    {
+      "id": "P08",
+      "title": "Support de plaque",
+      "lot": 18,
+      "depends_on": [
+        "P02",
+        "P05"
+      ],
+      "state": "source_gated",
+      "package_complete": false,
+      "latest_candidate_review": null,
+      "original_plan_blockers": [],
+      "next_action_from_board": "Macros opposées des jonctions ; filetage/siège et vraie fixation plaque/support. Le montage v4 garde des jeux d’inspection.",
+      "scope": "Inclinaison, attaches et dégagement roue/garde-boue ; emplacement éclairage et catadioptre à documenter",
+      "registered_child_revisions": [
+        "rear-plate-carrier-crossbar-v1",
+        "rear-plate-carrier-wire-v1",
+        "rear-plate-carrier-wire-v3",
+        "rear-plate-carrier-crossbar-v2",
+        "rear-plate-captive-nut-exterior-v1"
+      ]
+    },
+    {
+      "id": "P09",
+      "title": "Clignotant avant : raccords et fixations",
+      "lot": 12,
+      "depends_on": [],
+      "state": "source_gated",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/front-completion-p09-nut-material-v3-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Profil/face de montage et racines de tige/fils, vues opposées de la référence exacte.",
+      "scope": "Réutiliser coque, lentille et deux tiges déjà produites ; raccords visibles et revue gauche/droite",
+      "registered_child_revisions": [
+        "front-completion-p09-nut-material-v3-coordination-v1"
+      ]
+    },
+    {
+      "id": "P10",
+      "title": "Clignotants arrière et supports",
+      "lot": 18,
+      "depends_on": [
+        "P02",
+        "P05"
+      ],
+      "state": "source_gated",
+      "package_complete": false,
+      "latest_candidate_review": null,
+      "original_plan_blockers": [],
+      "next_action_from_board": "Vues opposées, faces de montage, détail des reliefs optiques et racines de fils. Ne pas dupliquer un clignotant complet non reçu.",
+      "scope": "Un exemplaire documenté et reçu avant répétition ; asymétries et pose de chaque côté contrôlées",
+      "registered_child_revisions": [
+        "rear-indicator-mount-washer-v2",
+        "rear-indicator-left-stalk-v1",
+        "rear-indicator-right-stalk-v1"
+      ]
+    },
+    {
+      "id": "P11",
+      "title": "Plaque et accessoires arrière observables",
+      "lot": 18,
+      "depends_on": [
+        "P08"
+      ],
+      "state": "source_gated",
+      "package_complete": false,
+      "latest_candidate_review": null,
+      "original_plan_blockers": [],
+      "next_action_from_board": "Référence montée des accessoires et empilage réel. Les axes sont alignés dans la revue, mais le jeu3mm reste un artifice de présentation.",
+      "scope": "Documenter format et implantation RDC ; inscription de jeu fictive signalée ; éclairage/catadioptre seulement selon référence retenue",
+      "registered_child_revisions": [
+        "license-plate-wewa-v1",
+        "license-plate-wewa-v2"
+      ]
+    },
+    {
+      "id": "P12",
+      "title": "Bouchon et accessoires visibles du réservoir",
+      "lot": 18,
+      "depends_on": [
+        "P01",
+        "P04"
+      ],
+      "state": "active",
+      "package_complete": false,
+      "latest_candidate_review": null,
+      "original_plan_blockers": [],
+      "next_action_from_board": "Robinet face/dos/profil et code unique ; la nouvelle page mélange PF171800/PF171802. Trajet et fixations de durite à établir.",
+      "scope": "Bouchon, robinet et durite en composants distincts ; conserver réservoir WEWA existant",
+      "registered_child_revisions": [
+        "fuel-cap-exterior-envelope-v2",
+        "fuel-valve-visible-lever-v1",
+        "fuel-tap-stepped-hex-cap-visible-v1"
+      ]
+    },
+    {
+      "id": "P13",
+      "title": "Supports et dessous de selle",
+      "lot": 18,
+      "depends_on": [
+        "P02"
+      ],
+      "state": "active",
+      "package_complete": false,
+      "latest_candidate_review": null,
+      "original_plan_blockers": [],
+      "next_action_from_board": "Dessous/profil PF191000 et identité RDC ; les nouvelles photos ne montrent que la couverture lisse. Ne pas recopier le fond JV191001 apparenté.",
+      "scope": "Socles, nervures, épine avant, montants, projection arrière, retours/agrafes et petits reliefs séparés ; compléter le tampon sans inventer revers/tenon ; pose après revue",
+      "registered_child_revisions": [
+        "seat-damper-pedestal-v2",
+        "seat-lateral-mount-lug-visible-v1",
+        "seat-base-observed-underside-v2"
+      ]
+    },
+    {
+      "id": "P14",
+      "title": "Sélecteur de vitesses",
+      "lot": 17,
+      "depends_on": [],
+      "state": "active",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/gear-selector-clamp-ears-visible-head-v1-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Macros arrière/profil du moyeu et de la vis de serrage.",
+      "scope": "Levier, embout, fixation et liaison au carter ; débattement utile",
+      "registered_child_revisions": [
+        "gear-selector-arm-v1-coordination-v1",
+        "gear-selector-clamp-ears-visible-head-v1-coordination-v1"
+      ]
+    },
+    {
+      "id": "P15",
+      "title": "Pédale et tringlerie de frein arrière",
+      "lot": 17,
+      "depends_on": [],
+      "state": "active",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/rear-brake-pedal-exterior-context-v1-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Macros de la tige et de l’écrou ; pièces de fixation identifiées physiquement.",
+      "scope": "Pédale, pivot et liaison frein ; interfaces en revue, sans fonctionnement revendiqué avant contrôle",
+      "registered_child_revisions": [
+        "brake-pedal-textured-pad-v1-coordination-v1",
+        "brake-actuation-rod-v1-coordination-v1",
+        "brake-rod-clevis-v1-coordination-v1",
+        "brake-rod-compression-spring-v1-coordination-v1",
+        "brake-pedal-torsion-spring-v1-coordination-v1",
+        "brake-linkage-headed-pin-v1-coordination-v1",
+        "brake-rod-barrel-pin-v1-coordination-v1",
+        "rear-brake-pedal-exterior-context-v1-coordination-v1"
+      ]
+    },
+    {
+      "id": "P16",
+      "title": "Repose-pieds et caoutchoucs",
+      "lot": 17,
+      "depends_on": [
+        "P14",
+        "P15"
+      ],
+      "state": "active",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/passenger-footrest-left-exterior-context-v1-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Dessous JK113008, pièces de charnière isolées et empilage monté.",
+      "scope": "Compléter ceux de devant et fabriquer ceux du passager ; supports et exemplaire avant duplication",
+      "registered_child_revisions": [
+        "passenger-footrest-stay-left-v1-coordination-v1",
+        "passenger-footrest-stay-right-v1-coordination-v1",
+        "passenger-footrest-rubber-jk113008-v1-coordination-v1",
+        "passenger-footrest-left-exterior-context-v1-coordination-v1"
+      ]
+    },
+    {
+      "id": "P17",
+      "title": "Béquilles et ressorts visibles",
+      "lot": 17,
+      "depends_on": [],
+      "state": "source_gated",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/side-stand-pivot-nyloc-nut-v1-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Vues isolées DH161145/DG161124 et empilages de pivot/ressorts ; corriger le conflit épaule/œil.",
+      "scope": "Latérale/centrale selon variante documentée ; pivots, attaches, contact sol et positions repliées",
+      "registered_child_revisions": [
+        "centre-stand-main-frame-v1-coordination-v1",
+        "side-stand-return-spring-v1-coordination-v1",
+        "centre-stand-return-spring-v1-coordination-v1",
+        "side-stand-spring-anchor-pin-v1-coordination-v1",
+        "side-stand-curved-foot-v3-coordination-v1",
+        "side-stand-pivot-bolt-v1-coordination-v1",
+        "centre-stand-operating-arm-v1-coordination-v1",
+        "centre-stand-lateral-stud-v1-coordination-v1",
+        "centre-stand-pivot-shaft-v1-coordination-v1",
+        "side-stand-spring-cover-v1-coordination-v1",
+        "side-stand-pivot-nyloc-nut-v1-coordination-v1"
+      ]
+    },
+    {
+      "id": "P18",
+      "title": "Moteur : volumes centraux extérieurs manquants",
+      "lot": 17,
+      "depends_on": [],
+      "state": "active",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/crankcase-rh-major-outer-envelope-donor-v1-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Obliques avant/dessous sans occultation ; dimensions et raccords aux sources moteur existantes.",
+      "scope": "Inventorier contre carters/cylindre/culasse existants ; décomposer chaque volume et raccord visible",
+      "registered_child_revisions": [
+        "crankcase-lh-output-panel-v1-coordination-v1",
+        "crankcase-upper-land-lh-v1-coordination-v1",
+        "crankcase-lh-lower-peripheral-wall-v1-coordination-v1",
+        "crankcase-lh-lower-service-port-v1-coordination-v1",
+        "crankcase-lh-major-outer-envelope-donor-v1-coordination-v1",
+        "crankcase-rh-major-outer-envelope-donor-v1-coordination-v1"
+      ]
+    },
+    {
+      "id": "P19",
+      "title": "Carburateur et raccords visibles",
+      "lot": 17,
+      "depends_on": [
+        "P18"
+      ],
+      "state": "source_gated",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/carburettor-visible-slotted-head-v1-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Revers de commande, macros des raccords et cheminement réel des durites.",
+      "scope": "Corps, cuve, bouches, capot, levier et raccords séparés ; ne pas refaire admission existante",
+      "registered_child_revisions": [
+        "carburettor-upper-casting-v1-coordination-v1",
+        "carburettor-lower-body-v1-coordination-v1",
+        "carburettor-float-bowl-v1-coordination-v1",
+        "carburettor-entry-boot-v1-coordination-v1",
+        "carburettor-curved-connector-v1-coordination-v1",
+        "carburettor-cable-adjuster-barrel-v1-coordination-v1",
+        "carburettor-lower-body-v2-coordination-v1",
+        "carburettor-float-bowl-v2-coordination-v1",
+        "carburettor-entry-locknut-v1-coordination-v1",
+        "carburettor-visible-slotted-head-v1-coordination-v1"
+      ]
+    },
+    {
+      "id": "P20",
+      "title": "Admission, durites et attaches échappement",
+      "lot": 17,
+      "depends_on": [
+        "P19"
+      ],
+      "state": "active",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/air-cleaner-box-outer-body-pf581003-v1-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Photo du manchon et de ses axes ; revers et empilage du support d’échappement.",
+      "scope": "Pont/vis/écrou collier, air/HT et attaches échappement ; conserver sources actuelles",
+      "registered_child_revisions": [
+        "airbox-carb-boot-physical-study-v2-coordination-v1",
+        "air-cleaner-box-outer-body-pf581003-v1-coordination-v1"
+      ]
+    },
+    {
+      "id": "P21",
+      "title": "Moyeu arrière et porte-couronne",
+      "lot": 16,
+      "depends_on": [],
+      "state": "source_gated",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/front-completion-p21-single-cush-front12-v2-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Vues de la poche masquée et sections/mesures de la référence ; contact caoutchouc/porte-couronne installé. Réception distincte avant répétition.",
+      "scope": "Moyeu, porte-couronne et entraînement distincts ; compatibilité jante/frein",
+      "registered_child_revisions": [
+        "front-completion-p21-carrier-v3-coordination-v1",
+        "front-completion-p21-reverse-front10-v8-coordination-v1",
+        "front-completion-p21-front-material-front10-v5-coordination-v1",
+        "front-completion-p21-single-cush-front12-v2-coordination-v1"
+      ]
+    },
+    {
+      "id": "P22",
+      "title": "Couronne, pignon et chaîne",
+      "lot": 16,
+      "depends_on": [
+        "P18",
+        "P21"
+      ],
+      "state": "source_gated",
+      "package_complete": false,
+      "latest_candidate_review": null,
+      "original_plan_blockers": [],
+      "next_action_from_board": "Pignon exact déposé face/dos/profil et chaîne désassemblée ; entraxes/alignement montés, réception de l’unité avant répétition.",
+      "scope": "Alignement transmission ; motif reçu avant répétition ; respect des volumes du carter de chaîne",
+      "registered_child_revisions": []
+    },
+    {
+      "id": "P23",
+      "title": "Axes arrière, tendeurs et commande de frein",
+      "lot": 16,
+      "depends_on": [
+        "P15",
+        "P21"
+      ],
+      "state": "source_gated",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/front-completion-p23-collar-outer-front12-v1-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Collier en coupe/profil axial, tiges et leurs liaisons réelles ; vis vue sur l’axe du perçage et côté opposé. Matriz DH151029 exact : zéro vue nouvelle.",
+      "scope": "Empilements, réaction de frein et tension ; interfaces bras oscillant/roue",
+      "registered_child_revisions": [
+        "front-completion-p23-endplate-front9-v1-coordination-v1",
+        "front-completion-p23-torque-arm-front10-v2-coordination-v1",
+        "front-completion-p23-rh-adjuster-front10-v2-coordination-v1",
+        "front-completion-p23-lh-adjuster-front10-v1-coordination-v1",
+        "front-completion-p23-torque-bolt-front10-v1-coordination-v1",
+        "front-completion-p23-collar-outer-front12-v1-coordination-v1"
+      ]
+    },
+    {
+      "id": "P24",
+      "title": "Axe avant et détails roue/frein",
+      "lot": 14,
+      "depends_on": [
+        "P03"
+      ],
+      "state": "source_gated",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/front-completion-p24-related-collar-front12-v1-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Pièces UG exactes déposées/profilées et empilage monté, références de valve et entraînement compteur, compatibilité frein établie.",
+      "scope": "Empilements fourche/moyeu/flasque, valve, prise compteur et commande ; contrôler variantes existantes",
+      "registered_child_revisions": [
+        "front-completion-p24-axle-material-v1-coordination-v1",
+        "front-completion-p24-related-collar-front12-v1-coordination-v1"
+      ]
+    },
+    {
+      "id": "P25",
+      "title": "Fourche et direction : finitions visibles",
+      "lot": 13,
+      "depends_on": [
+        "P24"
+      ],
+      "state": "active",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/front-completion-p25-fork-plug-front21-v2-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Dessous/profil du capuchon et stations de direction ; photo physique PF121024 ; sections et variante de soufflet/coulisseau compatibles.",
+      "scope": "Capsules, quincaillerie et jonctions ; cohérence des tubes/soufflets existants",
+      "registered_child_revisions": [
+        "front-completion-p25-cap-material-v1-coordination-v1",
+        "front-completion-p25-steering-cap-front12-v2-coordination-v1",
+        "front-completion-p25-lamp-frame-front18-v2-coordination-v1",
+        "front-completion-p25-fairing-structure-front20-v2-coordination-v1",
+        "front-completion-p25-fork-plug-front21-v2-coordination-v1"
+      ]
+    },
+    {
+      "id": "P26",
+      "title": "Cadre, bras oscillant et pare-moteur : liaisons restantes",
+      "lot": 15,
+      "depends_on": [
+        "P18",
+        "P23"
+      ],
+      "state": "active",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/engine-protection-exterior-context-v2-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Macros opposées de l’oreille nue et de sa racine sur la coque identifiée ; puis bouches du guide, pivot et soudures.",
+      "scope": "Cordons, crochets, attaches, écrou de pivot et extrémités patin ; attache avant du carter supérieur à vérifier explicitement",
+      "registered_child_revisions": [
+        "chaincase-front-ear-root-v2-coordination-v1",
+        "engine-protection-exterior-context-v2-coordination-v1"
+      ]
+    },
+    {
+      "id": "P27",
+      "title": "Pose et fixations des amortisseurs",
+      "lot": 16,
+      "depends_on": [
+        "P21",
+        "P23"
+      ],
+      "state": "source_gated",
+      "package_complete": false,
+      "latest_candidate_review": null,
+      "original_plan_blockers": [],
+      "next_action_from_board": "Vues montées gauche/droite des vis/rondelles sur cadre et bras oscillant.",
+      "scope": "Réutiliser ensemble SNS et fermetures existants ; ancrages et débattement sans intersection",
+      "registered_child_revisions": []
+    },
+    {
+      "id": "P28",
+      "title": "Fixations guidon et leviers",
+      "lot": 1,
+      "depends_on": [],
+      "state": "source_gated",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/front-completion-p28-lower-damper-front14-v1-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Dessous/profil axial des pièces exactes et empilage comprimé mesuré.",
+      "scope": "Amortisseurs/rondelles inférieurs et rondelles/écrous de leviers des lots6/7 ; pas de nouvelle commande complète",
+      "registered_child_revisions": [
+        "front-completion-p28-lower-damper-front14-v1-coordination-v1"
+      ]
+    },
+    {
+      "id": "P29",
+      "title": "Câbles et faisceau visibles",
+      "lot": 10,
+      "depends_on": [
+        "P19",
+        "P24",
+        "P28"
+      ],
+      "state": "active",
+      "package_complete": false,
+      "latest_candidate_review": "creative/reviews/p29-lower-front-sheath-observed-a-v1-coordination-v1/README.md",
+      "original_plan_blockers": [],
+      "next_action_from_board": "Parcours montés continus de bout en bout, clips identifiés et vues en butées de direction ; identification électrique indépendante.",
+      "scope": "Continuités accélérateur/embrayage/frein, départs commodos/contacteur, attaches et rayon au braquage ; garder départs déjà faits",
+      "registered_child_revisions": [
+        "front-completion-p29-bow-material-v1-coordination-v1",
+        "p29-lower-front-sheath-observed-a-v1-coordination-v1"
+      ]
+    },
+    {
+      "id": "P30",
+      "title": "Visière et cockpit : raccords finaux",
+      "lot": 11,
+      "depends_on": [
+        "P06",
+        "P09",
+        "P25",
+        "P29"
+      ],
+      "state": "source_gated",
+      "package_complete": false,
+      "latest_candidate_review": null,
+      "original_plan_blockers": [],
+      "next_action_from_board": "Visor démonté face/dos/profil, fixations macro et centres mesurés, contrôle de dégagement avec instruments/commandes.",
+      "scope": "Retours/attaches visière, compteurs/support existants et dégagement des commandes/rétroviseurs",
+      "registered_child_revisions": []
+    }
+  ],
+  "package_complete_count": 0,
+  "art_accepted": false,
+  "board_git_commit": "f15192b7320a5f49647b56089d5abf42c77b111d",
+  "board_archived_copy": "creative/workflow/motorcycle-finalization-next-v1/canonical-board-snapshot.json"
+}
