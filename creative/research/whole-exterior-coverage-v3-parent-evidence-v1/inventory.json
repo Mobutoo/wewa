@@ -1,0 +1,4874 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-22T03:13:47.322364+00:00",
+  "scope": "11 exact existing source parents for diagnostic whole exterior coveragev3, native source metadata only",
+  "counts": {
+    "parents": 11,
+    "rear_sns_parent_count": 1,
+    "rear_sns_linked_units_inside_parent": 14
+  },
+  "no_placements_invented": true,
+  "no_geometry_or_material_edits": true,
+  "no_source_blend_saved": true,
+  "bounds_not_OEM_measurements": true,
+  "coordinate_warning": "matrix_world means the original Blender source scene, never an installed motorcycle world. Do not normalize origins, swap axes, apply translation or instantiate twins automatically. Blender-to-glTF axis conversion is not provided as an installed relation.",
+  "parents": [
+    {
+      "id": "sidecover-LH",
+      "count_for_coverage": 1,
+      "sourcepath": "assets-src/moto-components/side-cover-left-v2/side-cover-left-candidate-v2.blend",
+      "source_sha256": "b34d03bdb512809465e3ffb0ef9a06929ae27dc11675f704667246f622bb8c38",
+      "source_bytes": 721678,
+      "collection": "WEWA_SIDE_COVER_LEFT_STUDY",
+      "source_units": {
+        "system": "METRIC",
+        "scale_length": 1.0
+      },
+      "origin": {
+        "value": "Profile pixel centre[568,359] mapped to sourceXY(0,0); local source scene, not installed datum.",
+        "status": "documented_source_convention_not_physical_mount"
+      },
+      "axes": {
+        "value": {
+          "X": "+rearward in LH profile",
+          "Y": "+up",
+          "Z": "+outward LH profile"
+        },
+        "status": "source_declared_or_native_schema_read",
+        "evidence": [
+          {
+            "path": "assets-src/moto-components/side-cover-left-v2/parameters-v2.json",
+            "sha256": "0b22c5bdd0a0f5afbe36df2c904f31088f56963fdf14d932477681b63d7325f9",
+            "bytes": 2172,
+            "read_method": "local file"
+          },
+          {
+            "path": "assets-src/moto-components/side-cover-left-v2/README.md",
+            "sha256": "4db4fae382fab12acb3da7f366af81a6d5d501189ca926067d625208e9a6e208",
+            "bytes": 1777,
+            "read_method": "local file"
+          }
+        ]
+      },
+      "local_landmarks_source_declared": {
+        "profile_center_pixels": [
+          568,
+          359
+        ],
+        "fastener_center_pixels": [
+          525,
+          391
+        ]
+      },
+      "native_objects": [
+        {
+          "name": "LEFT_COVER_OUTER_SKIN",
+          "type": "MESH",
+          "collections": [
+            "WEWA_SIDE_COVER_LEFT_STUDY"
+          ],
+          "parent": null,
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": null,
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.172304168343544,
+              -0.10659636557102203,
+              -0.006000000052154064
+            ],
+            "max": [
+              0.18126103281974792,
+              0.09631847590208054,
+              0.022619685158133507
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.172304168343544,
+              -0.10659636557102203,
+              -0.006000000052154064
+            ],
+            "max": [
+              0.18126103281974792,
+              0.09631847590208054,
+              0.022619685158133507
+            ]
+          },
+          "vertex_count": 13441
+        },
+        {
+          "name": "LEFT_COVER_VISIBLE_LOWER_FASTENER",
+          "type": "MESH",
+          "collections": [
+            "Scene Collection"
+          ],
+          "parent": null,
+          "location_source": [
+            -0.09944925457239151,
+            -0.07405108958482742,
+            0.009415133856236935
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.3972313702106476,
+            1.116872709872041e-07,
+            -1.2280932664871216
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              0.3360341787338257,
+              0.8685132265090942,
+              -0.36437034606933594,
+              -0.09944925457239151
+            ],
+            [
+              -0.9418497681617737,
+              0.30986905097961426,
+              -0.13000056147575378,
+              -0.07405108958482742
+            ],
+            [
+              -1.116872709872041e-07,
+              0.3868667781352997,
+              0.922135591506958,
+              0.009415133856236935
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              0.3360341787338257,
+              0.8685132265090942,
+              -0.36437034606933594,
+              -0.09944925457239151
+            ],
+            [
+              -0.9418497681617737,
+              0.30986905097961426,
+              -0.13000056147575378,
+              -0.07405108958482742
+            ],
+            [
+              -1.116872709872041e-07,
+              0.3868667781352997,
+              0.922135591506958,
+              0.009415133856236935
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": null,
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.010400000028312206,
+              -0.010400000028312206,
+              0.0
+            ],
+            "max": [
+              0.010400000028312206,
+              0.010400000028312206,
+              0.0034000000450760126
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.10956885665655136,
+              -0.08451603353023529,
+              0.005855959374457598
+            ],
+            "max": [
+              -0.09007861465215683,
+              -0.06389815360307693,
+              0.014904448762536049
+            ]
+          },
+          "vertex_count": 1026
+        }
+      ],
+      "bounds": {
+        "value_m": {
+          "min": [
+            -0.172304168343544,
+            -0.10659636557102203,
+            -0.006000000052154064
+          ],
+          "max": [
+            0.18126103281974792,
+            0.09631847590208054,
+            0.022619685158133507
+          ],
+          "extent": [
+            0.35356520116329193,
+            0.20291484147310257,
+            0.02861968521028757
+          ]
+        },
+        "coordinate_space": "Evaluated vertices in original Blender SOURCE SCENE; not installed motorcycle world, not glTF",
+        "status": "read_from_exact_native_candidate",
+        "method": "evaluated mesh vertices transformed only by unchanged original object.matrix_world; excluded construction/studio/fit references/hidden export alternative",
+        "physical_dimensions_status": "estimated original candidate; not measured OEM"
+      },
+      "import_selection": {
+        "collection": "WEWA_SIDE_COVER_LEFT_STUDY",
+        "explicit_mesh_names": [
+          "LEFT_COVER_OUTER_SKIN",
+          "LEFT_COVER_VISIBLE_LOWER_FASTENER"
+        ],
+        "keep_original_object_matrices": true,
+        "additional_objects_outside_collection": [
+          "LEFT_COVER_VISIBLE_LOWER_FASTENER"
+        ],
+        "exclude": [],
+        "note": "Append skin collection plus separate Scene Collection fastener. No skin-only shortcut."
+      },
+      "installed_motorcycle_transform": null,
+      "installed_transform_status": "unknown; no placement authored in this inventory",
+      "documentation": [
+        {
+          "path": "assets-src/moto-components/side-cover-left-v2/parameters-v2.json",
+          "sha256": "0b22c5bdd0a0f5afbe36df2c904f31088f56963fdf14d932477681b63d7325f9",
+          "bytes": 2172,
+          "read_method": "local file"
+        },
+        {
+          "path": "assets-src/moto-components/side-cover-left-v2/README.md",
+          "sha256": "4db4fae382fab12acb3da7f366af81a6d5d501189ca926067d625208e9a6e208",
+          "bytes": 1777,
+          "read_method": "local file"
+        }
+      ],
+      "linked_libraries": [],
+      "source_unchanged_after_inspection": true
+    },
+    {
+      "id": "sidecover-RH",
+      "count_for_coverage": 1,
+      "sourcepath": "assets-src/moto-components/side-cover-right-v2/child-candidate.blend",
+      "source_sha256": "d7455350bc7a483f21d7dee506a9cecfb916ab0c19db6f9aeb7856f14447a295",
+      "source_bytes": 936296,
+      "collection": "WEWA_SIDE_COVER_RIGHT_STUDY",
+      "source_units": {
+        "system": "METRIC",
+        "scale_length": 1.0
+      },
+      "origin": {
+        "value": "Inherited RHv1 independent profile centre[432,360] maps to sourceXY(0,0); not installed datum.",
+        "status": "documented_source_convention_not_physical_mount"
+      },
+      "axes": {
+        "value": {
+          "X": "+rearward in RH profile",
+          "Y": "+up",
+          "Z": "+outward RIGHT"
+        },
+        "status": "source_declared_or_native_schema_read",
+        "evidence": [
+          {
+            "path": "assets-src/moto-components/side-cover-right-v2/parameters.json",
+            "sha256": "6acd63cddb359589c368d34971a57661462ed23fff28bc2d44eb31f90bbe975f",
+            "bytes": 2068,
+            "read_method": "local file"
+          },
+          {
+            "path": "assets-src/moto-components/side-cover-right-v2/README.md",
+            "sha256": "20c73baeeff11e478c5160035e620abbaa67126cff5ade56a36810ea641ba1a0",
+            "bytes": 2180,
+            "read_method": "local file"
+          },
+          {
+            "path": "assets-src/moto-components/side-cover-right-v1/parameters-v1.json",
+            "sha256": "2cce73e621563c39ee41c3aee2eae42a61dae9916d52e8bb9967dbb07aa7a312",
+            "bytes": 1729,
+            "read_method": "local file"
+          }
+        ]
+      },
+      "local_landmarks_source_declared": {
+        "profile_center_pixels_inherited": [
+          432,
+          360
+        ],
+        "head_landmark_px": [
+          455,
+          399
+        ]
+      },
+      "native_objects": [
+        {
+          "name": "RIGHT_COVER_LOWER_ROUND_VISIBLE_HEAD_NO_DRIVE_CLAIM",
+          "type": "MESH",
+          "collections": [
+            "Scene Collection"
+          ],
+          "parent": null,
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": null,
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.06341183185577393,
+              -0.10199927538633347,
+              0.0087289959192276
+            ],
+            "max": [
+              -0.0487801618874073,
+              -0.0886877030134201,
+              0.016337938606739044
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.06341183185577393,
+              -0.10199927538633347,
+              0.0087289959192276
+            ],
+            "max": [
+              -0.0487801618874073,
+              -0.0886877030134201,
+              0.016337938606739044
+            ]
+          },
+          "vertex_count": 8066
+        },
+        {
+          "name": "RIGHT_COVER_OUTER_SKIN",
+          "type": "MESH",
+          "collections": [
+            "WEWA_SIDE_COVER_RIGHT_STUDY"
+          ],
+          "parent": null,
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": null,
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.18855148553848267,
+              -0.11225397139787674,
+              -0.006000000052154064
+            ],
+            "max": [
+              0.18531309068202972,
+              0.1016145572066307,
+              0.023484189063310623
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.18855148553848267,
+              -0.11225397139787674,
+              -0.006000000052154064
+            ],
+            "max": [
+              0.18531309068202972,
+              0.1016145572066307,
+              0.023484189063310623
+            ]
+          },
+          "vertex_count": 13441
+        }
+      ],
+      "bounds": {
+        "value_m": {
+          "min": [
+            -0.18855148553848267,
+            -0.11225397139787674,
+            -0.006000000052154064
+          ],
+          "max": [
+            0.18531309068202972,
+            0.1016145572066307,
+            0.023484189063310623
+          ],
+          "extent": [
+            0.3738645762205124,
+            0.21386852860450745,
+            0.029484189115464687
+          ]
+        },
+        "coordinate_space": "Evaluated vertices in original Blender SOURCE SCENE; not installed motorcycle world, not glTF",
+        "status": "read_from_exact_native_candidate",
+        "method": "evaluated mesh vertices transformed only by unchanged original object.matrix_world; excluded construction/studio/fit references/hidden export alternative",
+        "physical_dimensions_status": "estimated original candidate; not measured OEM"
+      },
+      "import_selection": {
+        "collection": "WEWA_SIDE_COVER_RIGHT_STUDY",
+        "explicit_mesh_names": [
+          "RIGHT_COVER_LOWER_ROUND_VISIBLE_HEAD_NO_DRIVE_CLAIM",
+          "RIGHT_COVER_OUTER_SKIN"
+        ],
+        "keep_original_object_matrices": true,
+        "additional_objects_outside_collection": [
+          "RIGHT_COVER_LOWER_ROUND_VISIBLE_HEAD_NO_DRIVE_CLAIM"
+        ],
+        "exclude": [],
+        "note": "Append skin collection plus separate Scene Collection head; do not mirror LH or infer matching axes in motorcycle world."
+      },
+      "installed_motorcycle_transform": null,
+      "installed_transform_status": "unknown; no placement authored in this inventory",
+      "documentation": [
+        {
+          "path": "assets-src/moto-components/side-cover-right-v2/parameters.json",
+          "sha256": "6acd63cddb359589c368d34971a57661462ed23fff28bc2d44eb31f90bbe975f",
+          "bytes": 2068,
+          "read_method": "local file"
+        },
+        {
+          "path": "assets-src/moto-components/side-cover-right-v2/README.md",
+          "sha256": "20c73baeeff11e478c5160035e620abbaa67126cff5ade56a36810ea641ba1a0",
+          "bytes": 2180,
+          "read_method": "local file"
+        },
+        {
+          "path": "assets-src/moto-components/side-cover-right-v1/parameters-v1.json",
+          "sha256": "2cce73e621563c39ee41c3aee2eae42a61dae9916d52e8bb9967dbb07aa7a312",
+          "bytes": 1729,
+          "read_method": "local file"
+        }
+      ],
+      "linked_libraries": [],
+      "source_unchanged_after_inspection": true
+    },
+    {
+      "id": "rear-sns-rest-assembly-v3",
+      "count_for_coverage": 1,
+      "sourcepath": "assets-src/moto-components/rear-sns/rest-assembly/rear-sns-rest-assembly-v3.blend",
+      "source_sha256": "13973f6a34391ed2904990d91d6b80a48669200b1637b6152e144c07a8f564d5",
+      "source_bytes": 461388,
+      "collection": "WEWA_REAR_SNS_REST_COMPOSITION",
+      "source_units": {
+        "system": "METRIC",
+        "scale_length": 1.0
+      },
+      "origin": {
+        "value": "Shared unplaced SNS rest datumZ0 at tentative lower spring datum; not a motorcycle mount.",
+        "status": "documented_source_convention_not_physical_mount"
+      },
+      "axes": {
+        "value": {
+          "Z": "+toward spring/opposite eye",
+          "Y": "eye bore axis; front=-Y",
+          "X": "remaining local transverse coordinate; motorcycle lateral sign unknown"
+        },
+        "status": "source_declared_or_native_schema_read",
+        "evidence": [
+          {
+            "path": "assets-src/moto-components/rear-sns/rest-assembly/README-study-v3.md",
+            "sha256": "6ad7f7362e0bce77e7a1e9b2bc82ea30695d1fb801378a2c545fefdc4cda98bb",
+            "bytes": 852,
+            "read_method": "local file"
+          },
+          {
+            "path": "creative/research/rear-sns-rest-assembly/G0-G2-rest-review-plan-v1.json",
+            "sha256": "40f1c4804c3b49a373452a4df0807c613d3783f2fb17601d0d61b28135398af7",
+            "bytes": 8782,
+            "read_method": "local file"
+          },
+          {
+            "path": "creative/reviews/rear-sns-rest-assembly-v3/build-report.json",
+            "sha256": "6a37784840fd3122aee1661909c6c5beafdde4c91ea6de9d3ac36f75c193efc7",
+            "bytes": 36804,
+            "read_method": "local file"
+          },
+          {
+            "path": "assets-src/moto-components/rear-sns/damper-body/parameters-study-v2.json",
+            "sha256": "7a22c40a72f9c4c32957d946a0068f1f762f18ec7656104015963e74f677c724",
+            "bytes": 940,
+            "read_method": "local file"
+          },
+          {
+            "path": "assets-src/moto-components/rear-sns/body-side-eye-exterior/parameters-study-v1.json",
+            "sha256": "0792eec661b707a5cc69845e114019fa9e716b98b3a12131cf7be2d30eab4e14",
+            "bytes": 1248,
+            "read_method": "local file"
+          },
+          {
+            "path": "assets-src/moto-components/rear-sns/opposite-eye-exterior/parameters-study-v2.json",
+            "sha256": "c471521ce9b5f802d4bebba94c58c6ead931f4dc3a88e28b8809075d4eb0389e",
+            "bytes": 1342,
+            "read_method": "local file"
+          }
+        ]
+      },
+      "local_landmarks_source_declared": {
+        "body_side_eye_center_source_m": [
+          0,
+          0,
+          -0.1115
+        ],
+        "opposite_eye_center_source_m": [
+          0,
+          0,
+          0.22
+        ]
+      },
+      "native_objects": [
+        {
+          "name": "SNS body-side support and rod-end cover - estimated continuatio",
+          "type": "MESH",
+          "collections": [
+            "WEWA_REAR_SNS_BODY_END_CLOSURE"
+          ],
+          "parent": "REAR_SNS_BODY_END_CLOSURE_UNPLACED_DATUM",
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": "//../body-end-closure/rear-sns-body-end-closure-v1.blend",
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.019899999722838402,
+              -0.019899999722838402,
+              -0.009999999776482582
+            ],
+            "max": [
+              0.019899999722838402,
+              0.019899999722838402,
+              0.004000000189989805
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.019899999722838402,
+              -0.019899999722838402,
+              -0.009999999776482582
+            ],
+            "max": [
+              0.019899999722838402,
+              0.019899999722838402,
+              0.004000000189989805
+            ]
+          },
+          "vertex_count": 35328
+        },
+        {
+          "name": "SNS body-side black eye and neck exterior - estimated",
+          "type": "MESH",
+          "collections": [
+            "WEWA_REAR_SNS_BODY_SIDE_EYE_EXTERIOR"
+          ],
+          "parent": "REAR_SNS_BODY_SIDE_EYE_EXTERIOR_UNPLACED_DATUM",
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": "//../body-side-eye-exterior/rear-sns-body-side-eye-exterior-v1.blend",
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.01679999940097332,
+              -0.006000000052154064,
+              -0.1282999962568283
+            ],
+            "max": [
+              0.01679999940097332,
+              0.006000000052154064,
+              -0.09099999815225601
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.01679999940097332,
+              -0.006000000052154064,
+              -0.1282999962568283
+            ],
+            "max": [
+              0.01679999940097332,
+              0.006000000052154064,
+              -0.09099999815225601
+            ]
+          },
+          "vertex_count": 26624
+        },
+        {
+          "name": "SNS body-side central sleeve - estimated continuation",
+          "type": "MESH",
+          "collections": [
+            "WEWA_REAR_SNS_BODY_SIDE_EYE_SLEEVE"
+          ],
+          "parent": "REAR_SNS_BODY_SIDE_EYE_SLEEVE_UNPLACED_DATUM",
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": "//../body-side-eye-sleeve/rear-sns-body-side-eye-sleeve-v1.blend",
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.007149999961256981,
+              -0.006300000008195639,
+              -0.11864999681711197
+            ],
+            "max": [
+              0.007149999961256981,
+              0.006300000008195639,
+              -0.1043500006198883
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.007149999961256981,
+              -0.006300000008195639,
+              -0.11864999681711197
+            ],
+            "max": [
+              0.007149999961256981,
+              0.006300000008195639,
+              -0.1043500006198883
+            ]
+          },
+          "vertex_count": 13312
+        },
+        {
+          "name": "SNS body-side spring rim - estimated continuation",
+          "type": "MESH",
+          "collections": [
+            "WEWA_REAR_SNS_BODY_SIDE_SEAT_RIM"
+          ],
+          "parent": "REAR_SNS_BODY_SIDE_SEAT_RIM_UNPLACED_DATUM",
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": "//../body-side-seat-rim/rear-sns-body-side-seat-rim-v1.blend",
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.029500000178813934,
+              -0.029500000178813934,
+              -0.006300000008195639
+            ],
+            "max": [
+              0.029500000178813934,
+              0.029500000178813934,
+              -0.003800000064074993
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.029500000178813934,
+              -0.029500000178813934,
+              -0.006300000008195639
+            ],
+            "max": [
+              0.029500000178813934,
+              0.029500000178813934,
+              -0.003800000064074993
+            ]
+          },
+          "vertex_count": 13312
+        },
+        {
+          "name": "Related SNS lower body exterior skin - estimated",
+          "type": "MESH",
+          "collections": [
+            "WEWA_REAR_SNS_DAMPER_BODY"
+          ],
+          "parent": "REAR_SNS_DAMPER_BODY_UNPLACED_DATUM",
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": "//../damper-body/rear-sns-damper-body-v2.blend",
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.015300000086426735,
+              -0.015300000086426735,
+              -0.09200000017881393
+            ],
+            "max": [
+              0.015300000086426735,
+              0.015300000086426735,
+              -0.006000000052154064
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.015300000086426735,
+              -0.015300000086426735,
+              -0.09200000017881393
+            ],
+            "max": [
+              0.015300000086426735,
+              0.015300000086426735,
+              -0.006000000052154064
+            ]
+          },
+          "vertex_count": 1280
+        },
+        {
+          "name": "Related SNS orange inner spring - estimated gray study",
+          "type": "MESH",
+          "collections": [
+            "WEWA_REAR_SNS_INNER_SPRING"
+          ],
+          "parent": "REAR_SNS_INNER_SPRING_UNPLACED_DATUM",
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": "//../inner-spring/rear-sns-inner-spring-v1.blend",
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.02059999853372574,
+              -0.02059999853372574,
+              -0.0025701981503516436
+            ],
+            "max": [
+              0.02059999853372574,
+              0.02059999853372574,
+              0.19257019460201263
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.02059999853372574,
+              -0.02059999853372574,
+              -0.0025701981503516436
+            ],
+            "max": [
+              0.02059999853372574,
+              0.02059999853372574,
+              0.19257019460201263
+            ]
+          },
+          "vertex_count": 90146
+        },
+        {
+          "name": "SNS collar - observed front and estimated back",
+          "type": "MESH",
+          "collections": [
+            "WEWA_REAR_SNS_LOWER_COLLAR"
+          ],
+          "parent": "REAR_SNS_LOWER_COLLAR_UNPLACED_DATUM",
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": "//../lower-collar/rear-sns-lower-collar-v1.blend",
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.0215000007301569,
+              -0.0215000007301569,
+              -0.026599999517202377
+            ],
+            "max": [
+              0.0215000007301569,
+              0.0215000007301569,
+              -0.003000000026077032
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.0215000007301569,
+              -0.0215000007301569,
+              -0.026599999517202377
+            ],
+            "max": [
+              0.0215000007301569,
+              0.0215000007301569,
+              -0.003000000026077032
+            ]
+          },
+          "vertex_count": 81360
+        },
+        {
+          "name": "SNS opposite broadblue annular region - estimated continuation",
+          "type": "MESH",
+          "collections": [
+            "WEWA_REAR_SNS_OPPOSITE_BLUE_REGION"
+          ],
+          "parent": "REAR_SNS_OPPOSITE_BLUE_REGION_UNPLACED_DATUM",
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": "//../opposite-blue-region/rear-sns-opposite-blue-region-v1.blend",
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.014750000089406967,
+              -0.0052999998442828655,
+              0.20524999499320984
+            ],
+            "max": [
+              0.014750000089406967,
+              0.0052999998442828655,
+              0.23475000262260437
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.014750000089406967,
+              -0.0052999998442828655,
+              0.20524999499320984
+            ],
+            "max": [
+              0.014750000089406967,
+              0.0052999998442828655,
+              0.23475000262260437
+            ]
+          },
+          "vertex_count": 13312
+        },
+        {
+          "name": "SNS opposite support and rod-end cover - estimated continuation",
+          "type": "MESH",
+          "collections": [
+            "WEWA_REAR_SNS_OPPOSITE_END_CLOSURE"
+          ],
+          "parent": "REAR_SNS_OPPOSITE_END_CLOSURE_UNPLACED_DATUM",
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": "//../opposite-end-closure/rear-sns-opposite-end-closure-v1.blend",
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.020099999383091927,
+              -0.020099999383091927,
+              0.18449999392032623
+            ],
+            "max": [
+              0.020099999383091927,
+              0.020099999383091927,
+              0.1969500035047531
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.020099999383091927,
+              -0.020099999383091927,
+              0.18449999392032623
+            ],
+            "max": [
+              0.020099999383091927,
+              0.020099999383091927,
+              0.1969500035047531
+            ]
+          },
+          "vertex_count": 25856
+        },
+        {
+          "name": "SNS opposite black eye and neck exterior - estimated",
+          "type": "MESH",
+          "collections": [
+            "WEWA_REAR_SNS_OPPOSITE_EYE_EXTERIOR"
+          ],
+          "parent": "REAR_SNS_OPPOSITE_EYE_EXTERIOR_UNPLACED_DATUM",
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": "//../opposite-eye-exterior/rear-sns-opposite-eye-exterior-v1.blend",
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.01850000023841858,
+              -0.005499999970197678,
+              0.19699999690055847
+            ],
+            "max": [
+              0.01850000023841858,
+              0.005499999970197678,
+              0.23849999904632568
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.01850000023841858,
+              -0.005499999970197678,
+              0.19699999690055847
+            ],
+            "max": [
+              0.01850000023841858,
+              0.005499999970197678,
+              0.23849999904632568
+            ]
+          },
+          "vertex_count": 26624
+        },
+        {
+          "name": "SNS opposite central sleeve - estimated continuation",
+          "type": "MESH",
+          "collections": [
+            "WEWA_REAR_SNS_OPPOSITE_EYE_SLEEVE"
+          ],
+          "parent": "REAR_SNS_OPPOSITE_EYE_SLEEVE_UNPLACED_DATUM",
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": "//../opposite-eye-sleeve/rear-sns-opposite-eye-sleeve-v1.blend",
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.007350000087171793,
+              -0.005900000222027302,
+              0.21265000104904175
+            ],
+            "max": [
+              0.007350000087171793,
+              0.005900000222027302,
+              0.22734999656677246
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.007350000087171793,
+              -0.005900000222027302,
+              0.21265000104904175
+            ],
+            "max": [
+              0.007350000087171793,
+              0.005900000222027302,
+              0.22734999656677246
+            ]
+          },
+          "vertex_count": 13312
+        },
+        {
+          "name": "SNS opposite spring rim - estimated continuation",
+          "type": "MESH",
+          "collections": [
+            "WEWA_REAR_SNS_OPPOSITE_SEAT_RIM"
+          ],
+          "parent": "REAR_SNS_OPPOSITE_SEAT_RIM_UNPLACED_DATUM",
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": "//../opposite-seat-rim/rear-sns-opposite-seat-rim-v1.blend",
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.029200000688433647,
+              -0.029200000688433647,
+              0.1940000057220459
+            ],
+            "max": [
+              0.029200000688433647,
+              0.029200000688433647,
+              0.19679999351501465
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.029200000688433647,
+              -0.029200000688433647,
+              0.1940000057220459
+            ],
+            "max": [
+              0.029200000688433647,
+              0.029200000688433647,
+              0.19679999351501465
+            ]
+          },
+          "vertex_count": 13312
+        },
+        {
+          "name": "Related SNS black outer spring - estimated gray study",
+          "type": "MESH",
+          "collections": [
+            "WEWA_REAR_SNS_OUTER_SPRING"
+          ],
+          "parent": "REAR_SNS_OUTER_SPRING_UNPLACED_DATUM",
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": "//../outer-spring/rear-sns-outer-spring-v1.blend",
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.02879999950528145,
+              -0.02879999950528145,
+              -0.003294913563877344
+            ],
+            "max": [
+              0.02879999950528145,
+              0.02879999950528145,
+              0.19329491257667542
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.02879999950528145,
+              -0.02879999950528145,
+              -0.003294913563877344
+            ],
+            "max": [
+              0.02879999950528145,
+              0.02879999950528145,
+              0.19329491257667542
+            ]
+          },
+          "vertex_count": 106530
+        },
+        {
+          "name": "SNS reflective axial shaft exterior - estimated",
+          "type": "MESH",
+          "collections": [
+            "WEWA_REAR_SNS_ROD"
+          ],
+          "parent": "REAR_SNS_ROD_UNPLACED_DATUM",
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": "//../rod/rear-sns-rod-v1.blend",
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.005499999970197678,
+              -0.005499999970197678,
+              0.0020000000949949026
+            ],
+            "max": [
+              0.005499999970197678,
+              0.005499999970197678,
+              0.18700000643730164
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.005499999970197678,
+              -0.005499999970197678,
+              0.0020000000949949026
+            ],
+            "max": [
+              0.005499999970197678,
+              0.005499999970197678,
+              0.18700000643730164
+            ]
+          },
+          "vertex_count": 1280
+        }
+      ],
+      "bounds": {
+        "value_m": {
+          "min": [
+            -0.029500000178813934,
+            -0.029500000178813934,
+            -0.1282999962568283
+          ],
+          "max": [
+            0.029500000178813934,
+            0.029500000178813934,
+            0.23849999904632568
+          ],
+          "extent": [
+            0.05900000035762787,
+            0.05900000035762787,
+            0.366799995303154
+          ]
+        },
+        "coordinate_space": "Evaluated vertices in original Blender SOURCE SCENE; not installed motorcycle world, not glTF",
+        "status": "read_from_exact_native_candidate",
+        "method": "evaluated mesh vertices transformed only by unchanged original object.matrix_world; excluded construction/studio/fit references/hidden export alternative",
+        "physical_dimensions_status": "estimated original candidate; not measured OEM"
+      },
+      "import_selection": {
+        "collection": "WEWA_REAR_SNS_REST_COMPOSITION",
+        "explicit_mesh_names": [
+          "SNS body-side support and rod-end cover - estimated continuatio",
+          "SNS body-side black eye and neck exterior - estimated",
+          "SNS body-side central sleeve - estimated continuation",
+          "SNS body-side spring rim - estimated continuation",
+          "Related SNS lower body exterior skin - estimated",
+          "Related SNS orange inner spring - estimated gray study",
+          "SNS collar - observed front and estimated back",
+          "SNS opposite broadblue annular region - estimated continuation",
+          "SNS opposite support and rod-end cover - estimated continuation",
+          "SNS opposite black eye and neck exterior - estimated",
+          "SNS opposite central sleeve - estimated continuation",
+          "SNS opposite spring rim - estimated continuation",
+          "Related SNS black outer spring - estimated gray study",
+          "SNS reflective axial shaft exterior - estimated"
+        ],
+        "keep_original_object_matrices": true,
+        "additional_objects_outside_collection": [
+          "SNS body-side support and rod-end cover - estimated continuatio",
+          "SNS body-side black eye and neck exterior - estimated",
+          "SNS body-side central sleeve - estimated continuation",
+          "SNS body-side spring rim - estimated continuation",
+          "Related SNS lower body exterior skin - estimated",
+          "Related SNS orange inner spring - estimated gray study",
+          "SNS collar - observed front and estimated back",
+          "SNS opposite broadblue annular region - estimated continuation",
+          "SNS opposite support and rod-end cover - estimated continuation",
+          "SNS opposite black eye and neck exterior - estimated",
+          "SNS opposite central sleeve - estimated continuation",
+          "SNS opposite spring rim - estimated continuation",
+          "Related SNS black outer spring - estimated gray study",
+          "SNS reflective axial shaft exterior - estimated"
+        ],
+        "exclude": [],
+        "note": "ONE parent only. 14 linked units inside composition. Do not instantiate each child as extra shock, and do not generate a second installed shock."
+      },
+      "installed_motorcycle_transform": null,
+      "installed_transform_status": "unknown; no placement authored in this inventory",
+      "documentation": [
+        {
+          "path": "assets-src/moto-components/rear-sns/rest-assembly/README-study-v3.md",
+          "sha256": "6ad7f7362e0bce77e7a1e9b2bc82ea30695d1fb801378a2c545fefdc4cda98bb",
+          "bytes": 852,
+          "read_method": "local file"
+        },
+        {
+          "path": "creative/research/rear-sns-rest-assembly/G0-G2-rest-review-plan-v1.json",
+          "sha256": "40f1c4804c3b49a373452a4df0807c613d3783f2fb17601d0d61b28135398af7",
+          "bytes": 8782,
+          "read_method": "local file"
+        },
+        {
+          "path": "creative/reviews/rear-sns-rest-assembly-v3/build-report.json",
+          "sha256": "6a37784840fd3122aee1661909c6c5beafdde4c91ea6de9d3ac36f75c193efc7",
+          "bytes": 36804,
+          "read_method": "local file"
+        },
+        {
+          "path": "assets-src/moto-components/rear-sns/damper-body/parameters-study-v2.json",
+          "sha256": "7a22c40a72f9c4c32957d946a0068f1f762f18ec7656104015963e74f677c724",
+          "bytes": 940,
+          "read_method": "local file"
+        },
+        {
+          "path": "assets-src/moto-components/rear-sns/body-side-eye-exterior/parameters-study-v1.json",
+          "sha256": "0792eec661b707a5cc69845e114019fa9e716b98b3a12131cf7be2d30eab4e14",
+          "bytes": 1248,
+          "read_method": "local file"
+        },
+        {
+          "path": "assets-src/moto-components/rear-sns/opposite-eye-exterior/parameters-study-v2.json",
+          "sha256": "c471521ce9b5f802d4bebba94c58c6ead931f4dc3a88e28b8809075d4eb0389e",
+          "bytes": 1342,
+          "read_method": "local file"
+        }
+      ],
+      "linked_libraries": [
+        {
+          "declared": "//../body-end-closure/rear-sns-body-end-closure-v1.blend",
+          "resolved": "/workspace/wewa/assets-src/moto-components/rear-sns/body-end-closure/rear-sns-body-end-closure-v1.blend",
+          "exists": true,
+          "sha256": "3979e377dfdbb451541482d35a321d4a284fb10c64b0cfe1d935d705323fa153",
+          "needed_for_selected_meshes": true
+        },
+        {
+          "declared": "//../body-side-eye-exterior/rear-sns-body-side-eye-exterior-v1.blend",
+          "resolved": "/workspace/wewa/assets-src/moto-components/rear-sns/body-side-eye-exterior/rear-sns-body-side-eye-exterior-v1.blend",
+          "exists": true,
+          "sha256": "113aefabec9d1c312dec0ee375cbf826aa395eef2d3463387cb62c1126f84688",
+          "needed_for_selected_meshes": true
+        },
+        {
+          "declared": "//../body-side-eye-sleeve/rear-sns-body-side-eye-sleeve-v1.blend",
+          "resolved": "/workspace/wewa/assets-src/moto-components/rear-sns/body-side-eye-sleeve/rear-sns-body-side-eye-sleeve-v1.blend",
+          "exists": true,
+          "sha256": "ec1bec08a0c6702eff57fee7e4b492e3620dc24bb1afec8c100b731c87cabfae",
+          "needed_for_selected_meshes": true
+        },
+        {
+          "declared": "//../body-side-seat-rim/rear-sns-body-side-seat-rim-v1.blend",
+          "resolved": "/workspace/wewa/assets-src/moto-components/rear-sns/body-side-seat-rim/rear-sns-body-side-seat-rim-v1.blend",
+          "exists": true,
+          "sha256": "43b99d580d8040e3f2c0554c18a9e33eee693d9fc79fe04e49b749b0a8cf32df",
+          "needed_for_selected_meshes": true
+        },
+        {
+          "declared": "//../damper-body/rear-sns-damper-body-v2.blend",
+          "resolved": "/workspace/wewa/assets-src/moto-components/rear-sns/damper-body/rear-sns-damper-body-v2.blend",
+          "exists": true,
+          "sha256": "0b7c78df3dfcbe90b3b91146f7a2ba82062b6673e5ffdc703b8b16f0da4e7643",
+          "needed_for_selected_meshes": true
+        },
+        {
+          "declared": "//../inner-spring/rear-sns-inner-spring-v1.blend",
+          "resolved": "/workspace/wewa/assets-src/moto-components/rear-sns/inner-spring/rear-sns-inner-spring-v1.blend",
+          "exists": true,
+          "sha256": "cbeb1e352c910dbc95e08ada95ee5c81f718527c8f96f17b1e55635a14d8ded7",
+          "needed_for_selected_meshes": true
+        },
+        {
+          "declared": "//../lower-collar/rear-sns-lower-collar-v1.blend",
+          "resolved": "/workspace/wewa/assets-src/moto-components/rear-sns/lower-collar/rear-sns-lower-collar-v1.blend",
+          "exists": true,
+          "sha256": "7f0cdf03b3ae3f8f10f2b859303a90a41a4a5d59e1d7736451d418d7fd4fb8b2",
+          "needed_for_selected_meshes": true
+        },
+        {
+          "declared": "//../opposite-blue-region/rear-sns-opposite-blue-region-v1.blend",
+          "resolved": "/workspace/wewa/assets-src/moto-components/rear-sns/opposite-blue-region/rear-sns-opposite-blue-region-v1.blend",
+          "exists": true,
+          "sha256": "6962de614f96bf5e1b8859e63c7c07003b6828f7fcada419c167201a1905464a",
+          "needed_for_selected_meshes": true
+        },
+        {
+          "declared": "//../opposite-end-closure/rear-sns-opposite-end-closure-v1.blend",
+          "resolved": "/workspace/wewa/assets-src/moto-components/rear-sns/opposite-end-closure/rear-sns-opposite-end-closure-v1.blend",
+          "exists": true,
+          "sha256": "6e4fa52d88060fb9cfdce2143b5e51fde66d819a99ea96ab14bf65a67e0d76f5",
+          "needed_for_selected_meshes": true
+        },
+        {
+          "declared": "//../opposite-eye-exterior/rear-sns-opposite-eye-exterior-v1.blend",
+          "resolved": "/workspace/wewa/assets-src/moto-components/rear-sns/opposite-eye-exterior/rear-sns-opposite-eye-exterior-v1.blend",
+          "exists": true,
+          "sha256": "92403c738c262d5e105ce9ccdcc59bae88c60b866a8e90b39cc474fed818d0a7",
+          "needed_for_selected_meshes": true
+        },
+        {
+          "declared": "//../opposite-eye-sleeve/rear-sns-opposite-eye-sleeve-v1.blend",
+          "resolved": "/workspace/wewa/assets-src/moto-components/rear-sns/opposite-eye-sleeve/rear-sns-opposite-eye-sleeve-v1.blend",
+          "exists": true,
+          "sha256": "392ba34e4590d037e154797663e664daf368fabae1d29a9b2b53ce9ae548406e",
+          "needed_for_selected_meshes": true
+        },
+        {
+          "declared": "//../opposite-seat-rim/rear-sns-opposite-seat-rim-v1.blend",
+          "resolved": "/workspace/wewa/assets-src/moto-components/rear-sns/opposite-seat-rim/rear-sns-opposite-seat-rim-v1.blend",
+          "exists": true,
+          "sha256": "69e326632770ee32c8703e96605e40d5dda40b66bbe9eb16be8ef29693874836",
+          "needed_for_selected_meshes": true
+        },
+        {
+          "declared": "//../outer-spring/rear-sns-outer-spring-v1.blend",
+          "resolved": "/workspace/wewa/assets-src/moto-components/rear-sns/outer-spring/rear-sns-outer-spring-v1.blend",
+          "exists": true,
+          "sha256": "dcf116f2e6e0e12f03c746bfbad271c23652dd67154a742834b2bcc244935959",
+          "needed_for_selected_meshes": true
+        },
+        {
+          "declared": "//../rod/rear-sns-rod-v1.blend",
+          "resolved": "/workspace/wewa/assets-src/moto-components/rear-sns/rod/rear-sns-rod-v1.blend",
+          "exists": true,
+          "sha256": "946846232d58661345565041e9a94f416460cf1a5edeb7e48dcf1c44f1925c26",
+          "needed_for_selected_meshes": true
+        }
+      ],
+      "source_unchanged_after_inspection": true
+    },
+    {
+      "id": "chaincase-upper",
+      "count_for_coverage": 1,
+      "sourcepath": "assets-src/moto-components/chaincase-upper/chaincase-upper-v1.blend",
+      "source_sha256": "442aad592a123465461d4fce6a16698de28323e7b552d865db1ea997ae5c4086",
+      "source_bytes": 6401356,
+      "collection": "WEWA_CHAINCASE_UPPER_ISOLATED",
+      "source_units": {
+        "system": "METRIC",
+        "scale_length": 1.0
+      },
+      "origin": {
+        "value": "Rear half-arch datum0 (authored estimate)",
+        "status": "documented_source_convention_not_physical_mount"
+      },
+      "axes": {
+        "value": {
+          "X": "+outer wall normal provisional",
+          "Y": "front=-Y",
+          "Z": "+up"
+        },
+        "status": "source_declared_or_native_schema_read",
+        "evidence": [
+          {
+            "path": "assets-src/moto-components/chaincase-upper/parameters.json",
+            "sha256": "bb8c126b3d2b2b25203c3dc631fc126f5353d3b7b37d6541d261ea8fec23734f",
+            "bytes": 1680,
+            "read_method": "git show HEAD:path (read only, not restored)"
+          },
+          {
+            "path": "assets-src/moto-components/chaincase-upper/README.md",
+            "sha256": "b872e146cbdc8d6b1074d21b974d225b3d20c3d661f5e43925e0fe72e0474e93",
+            "bytes": 7432,
+            "read_method": "local file"
+          }
+        ]
+      },
+      "local_landmarks_source_declared": {
+        "mount_holes_candidate_YZ_m": [
+          [
+            -0.405,
+            0.035
+          ],
+          [
+            -0.24,
+            0.035
+          ],
+          [
+            0.015,
+            0.087
+          ]
+        ]
+      },
+      "native_objects": [
+        {
+          "name": "Upper formed chaincase shell related PF181202 candidate",
+          "type": "MESH",
+          "collections": [
+            "WEWA_CHAINCASE_UPPER_ISOLATED"
+          ],
+          "parent": null,
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": null,
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.04800000041723251,
+              -0.48844999074935913,
+              -0.02345000021159649
+            ],
+            "max": [
+              0.0064500002190470695,
+              0.10844994336366653,
+              0.10845000296831131
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.04800000041723251,
+              -0.48844999074935913,
+              -0.02345000021159649
+            ],
+            "max": [
+              0.0064500002190470695,
+              0.10844994336366653,
+              0.10845000296831131
+            ]
+          },
+          "vertex_count": 104438
+        }
+      ],
+      "bounds": {
+        "value_m": {
+          "min": [
+            -0.04800000041723251,
+            -0.48844999074935913,
+            -0.02345000021159649
+          ],
+          "max": [
+            0.0064500002190470695,
+            0.10844994336366653,
+            0.10845000296831131
+          ],
+          "extent": [
+            0.05445000063627958,
+            0.5968999341130257,
+            0.1319000031799078
+          ]
+        },
+        "coordinate_space": "Evaluated vertices in original Blender SOURCE SCENE; not installed motorcycle world, not glTF",
+        "status": "read_from_exact_native_candidate",
+        "method": "evaluated mesh vertices transformed only by unchanged original object.matrix_world; excluded construction/studio/fit references/hidden export alternative",
+        "physical_dimensions_status": "estimated original candidate; not measured OEM"
+      },
+      "import_selection": {
+        "collection": "WEWA_CHAINCASE_UPPER_ISOLATED",
+        "explicit_mesh_names": [
+          "Upper formed chaincase shell related PF181202 candidate"
+        ],
+        "keep_original_object_matrices": true,
+        "additional_objects_outside_collection": [],
+        "exclude": [],
+        "note": "Partial shell, front ear incomplete; no installed chainline or fit to lower shell."
+      },
+      "installed_motorcycle_transform": null,
+      "installed_transform_status": "unknown; no placement authored in this inventory",
+      "documentation": [
+        {
+          "path": "assets-src/moto-components/chaincase-upper/parameters.json",
+          "sha256": "bb8c126b3d2b2b25203c3dc631fc126f5353d3b7b37d6541d261ea8fec23734f",
+          "bytes": 1680,
+          "read_method": "git show HEAD:path (read only, not restored)"
+        },
+        {
+          "path": "assets-src/moto-components/chaincase-upper/README.md",
+          "sha256": "b872e146cbdc8d6b1074d21b974d225b3d20c3d661f5e43925e0fe72e0474e93",
+          "bytes": 7432,
+          "read_method": "local file"
+        }
+      ],
+      "linked_libraries": [],
+      "source_unchanged_after_inspection": true
+    },
+    {
+      "id": "chaincase-lower",
+      "count_for_coverage": 1,
+      "sourcepath": "assets-src/moto-components/chaincase-lower/chaincase-lower-v1.blend",
+      "source_sha256": "957926b01dde0821af4700f5125c8df1a5434b43965b392e6ad838c082b7c5ba",
+      "source_bytes": 7051887,
+      "collection": "WEWA_CHAINCASE_LOWER_ISOLATED",
+      "source_units": {
+        "system": "METRIC",
+        "scale_length": 1.0
+      },
+      "origin": {
+        "value": "Rear half-arch centre0 (authored estimate)",
+        "status": "documented_source_convention_not_physical_mount"
+      },
+      "axes": {
+        "value": {
+          "X": "+outer normal provisional",
+          "Y": "front=-Y",
+          "Z": "+up"
+        },
+        "status": "source_declared_or_native_schema_read",
+        "evidence": [
+          {
+            "path": "assets-src/moto-components/chaincase-lower/parameters.json",
+            "sha256": "30f48822ff0e979a9a419a9d6123f97ffca315acf4733cde83f33892778fb6a8",
+            "bytes": 1839,
+            "read_method": "git show HEAD:path (read only, not restored)"
+          },
+          {
+            "path": "assets-src/moto-components/chaincase-lower/README.md",
+            "sha256": "990b2f3f0503465ff920edbfbca942f1b8b08a91d1822db36c02603ad4f45252",
+            "bytes": 6273,
+            "read_method": "git show HEAD:path (read only, not restored)"
+          }
+        ]
+      },
+      "local_landmarks_source_declared": {
+        "inspection_hole_center_YZ_m": [
+          -0.29,
+          -0.045
+        ],
+        "mount_holes_candidate_YZ_m": [
+          [
+            -0.405,
+            0.001
+          ],
+          [
+            0.01,
+            -0.087
+          ]
+        ]
+      },
+      "native_objects": [
+        {
+          "name": "Lower formed chaincase shell related PF181200 candidate",
+          "type": "MESH",
+          "collections": [
+            "WEWA_CHAINCASE_LOWER_ISOLATED"
+          ],
+          "parent": null,
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": null,
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.04699999839067459,
+              -0.48870596289634705,
+              -0.10844993591308594
+            ],
+            "max": [
+              0.008449999615550041,
+              0.10827427357435226,
+              0.013450000435113907
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.04699999839067459,
+              -0.48870596289634705,
+              -0.10844993591308594
+            ],
+            "max": [
+              0.008449999615550041,
+              0.10827427357435226,
+              0.013450000435113907
+            ]
+          },
+          "vertex_count": 114002
+        }
+      ],
+      "bounds": {
+        "value_m": {
+          "min": [
+            -0.04699999839067459,
+            -0.48870596289634705,
+            -0.10844993591308594
+          ],
+          "max": [
+            0.008449999615550041,
+            0.10827427357435226,
+            0.013450000435113907
+          ],
+          "extent": [
+            0.05544999800622463,
+            0.5969802364706993,
+            0.12189993634819984
+          ]
+        },
+        "coordinate_space": "Evaluated vertices in original Blender SOURCE SCENE; not installed motorcycle world, not glTF",
+        "status": "read_from_exact_native_candidate",
+        "method": "evaluated mesh vertices transformed only by unchanged original object.matrix_world; excluded construction/studio/fit references/hidden export alternative",
+        "physical_dimensions_status": "estimated original candidate; not measured OEM"
+      },
+      "import_selection": {
+        "collection": "WEWA_CHAINCASE_LOWER_ISOLATED",
+        "explicit_mesh_names": [
+          "Lower formed chaincase shell related PF181200 candidate"
+        ],
+        "keep_original_object_matrices": true,
+        "additional_objects_outside_collection": [],
+        "exclude": [],
+        "note": "Shared working envelope with upper only a hypothesis; no verified seam/overlap or cap."
+      },
+      "installed_motorcycle_transform": null,
+      "installed_transform_status": "unknown; no placement authored in this inventory",
+      "documentation": [
+        {
+          "path": "assets-src/moto-components/chaincase-lower/parameters.json",
+          "sha256": "30f48822ff0e979a9a419a9d6123f97ffca315acf4733cde83f33892778fb6a8",
+          "bytes": 1839,
+          "read_method": "git show HEAD:path (read only, not restored)"
+        },
+        {
+          "path": "assets-src/moto-components/chaincase-lower/README.md",
+          "sha256": "990b2f3f0503465ff920edbfbca942f1b8b08a91d1822db36c02603ad4f45252",
+          "bytes": 6273,
+          "read_method": "git show HEAD:path (read only, not restored)"
+        }
+      ],
+      "linked_libraries": [],
+      "source_unchanged_after_inspection": true
+    },
+    {
+      "id": "rack-outer-rail",
+      "count_for_coverage": 1,
+      "sourcepath": "assets-src/moto-components/rack-outer-rail/rack-outer-rail-candidate-v1.blend",
+      "source_sha256": "0bbf85a7709a810741db772d1b9be33a680af1a9437f1b16fd8b6c870ca5f3a6",
+      "source_bytes": 1803296,
+      "collection": "WEWA_RACK_OUTER_RAIL_STUDY",
+      "source_units": {
+        "system": "METRIC",
+        "scale_length": 1.0
+      },
+      "origin": {
+        "value": "Recentered review source; builder subtracts center_shift_m[.23,0,-.01] from authored control polygon; object.location remains zero.",
+        "status": "documented_source_convention_not_physical_mount"
+      },
+      "axes": {
+        "value": {
+          "X": "+front",
+          "Y": "lateral, handed sign unspecified",
+          "Z": "+vertical"
+        },
+        "status": "source_declared_or_native_schema_read",
+        "evidence": [
+          {
+            "path": "assets-src/moto-components/rack-outer-rail/parameters-study-v3.json",
+            "sha256": "a5b5b2c8bfcd30c7ac45633537b9e2d62b1ea65b11a53294e97f0b6f65d3620a",
+            "bytes": 1855,
+            "read_method": "local file"
+          },
+          {
+            "path": "assets-src/moto-components/rack-outer-rail/README.md",
+            "sha256": "3701d006315b4ed6e67e27820c437840e454654d45f37db4a66eeb9ff32409b0",
+            "bytes": 2819,
+            "read_method": "local file"
+          },
+          {
+            "path": "tools/build_rack_outer_rail_p02.py",
+            "sha256": "d3ded82bf369e33319f02a96e04b1e1ad69477da72b145e384afa616603d4474",
+            "bytes": 9454,
+            "read_method": "local file"
+          }
+        ]
+      },
+      "local_landmarks_source_declared": {
+        "authored_control_polygon_center_shift_m": [
+          0.23,
+          0,
+          -0.01
+        ]
+      },
+      "native_objects": [
+        {
+          "name": "RACK_OUTER_RAIL",
+          "type": "MESH",
+          "collections": [
+            "WEWA_RACK_OUTER_RAIL_STUDY"
+          ],
+          "parent": null,
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": null,
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.2362404316663742,
+              -0.15922251343727112,
+              -0.0941406860947609
+            ],
+            "max": [
+              0.23293301463127136,
+              0.15922050178050995,
+              0.09749466180801392
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.2362404316663742,
+              -0.15922251343727112,
+              -0.0941406860947609
+            ],
+            "max": [
+              0.23293301463127136,
+              0.15922050178050995,
+              0.09749466180801392
+            ]
+          },
+          "vertex_count": 45072
+        }
+      ],
+      "bounds": {
+        "value_m": {
+          "min": [
+            -0.2362404316663742,
+            -0.15922251343727112,
+            -0.0941406860947609
+          ],
+          "max": [
+            0.23293301463127136,
+            0.15922050178050995,
+            0.09749466180801392
+          ],
+          "extent": [
+            0.46917344629764557,
+            0.31844301521778107,
+            0.1916353479027748
+          ]
+        },
+        "coordinate_space": "Evaluated vertices in original Blender SOURCE SCENE; not installed motorcycle world, not glTF",
+        "status": "read_from_exact_native_candidate",
+        "method": "evaluated mesh vertices transformed only by unchanged original object.matrix_world; excluded construction/studio/fit references/hidden export alternative",
+        "physical_dimensions_status": "estimated original candidate; not measured OEM"
+      },
+      "import_selection": {
+        "collection": "WEWA_RACK_OUTER_RAIL_STUDY",
+        "explicit_mesh_names": [
+          "RACK_OUTER_RAIL"
+        ],
+        "keep_original_object_matrices": true,
+        "additional_objects_outside_collection": [],
+        "exclude": [],
+        "note": "Outer U rail only; open review cuts, no brackets/weld/deck. Do not apply center_shift again."
+      },
+      "installed_motorcycle_transform": null,
+      "installed_transform_status": "unknown; no placement authored in this inventory",
+      "documentation": [
+        {
+          "path": "assets-src/moto-components/rack-outer-rail/parameters-study-v3.json",
+          "sha256": "a5b5b2c8bfcd30c7ac45633537b9e2d62b1ea65b11a53294e97f0b6f65d3620a",
+          "bytes": 1855,
+          "read_method": "local file"
+        },
+        {
+          "path": "assets-src/moto-components/rack-outer-rail/README.md",
+          "sha256": "3701d006315b4ed6e67e27820c437840e454654d45f37db4a66eeb9ff32409b0",
+          "bytes": 2819,
+          "read_method": "local file"
+        },
+        {
+          "path": "tools/build_rack_outer_rail_p02.py",
+          "sha256": "d3ded82bf369e33319f02a96e04b1e1ad69477da72b145e384afa616603d4474",
+          "bytes": 9454,
+          "read_method": "local file"
+        }
+      ],
+      "linked_libraries": [],
+      "source_unchanged_after_inspection": true
+    },
+    {
+      "id": "rear-rack-deck",
+      "count_for_coverage": 1,
+      "sourcepath": "assets-src/moto-components/rear-rack-deck/rear-rack-deck-v1.blend",
+      "source_sha256": "e1347baeba638263b579fbbe018ff509857d808024b3311b64c45d46fe90a9cd",
+      "source_bytes": 108715,
+      "collection": "WEWA_REAR_RACK_DECK",
+      "source_units": {
+        "system": "METRIC",
+        "scale_length": 1.0
+      },
+      "origin": {
+        "value": "Centred isolated plate localXY, nominal mid-thicknessZ0.",
+        "status": "documented_source_convention_not_physical_mount"
+      },
+      "axes": {
+        "value": {
+          "X": "outline width coordinate",
+          "Y": "outline length coordinate",
+          "Z": "plate thickness normal; installed sign unknown"
+        },
+        "status": "source_declared_or_native_schema_read",
+        "evidence": [
+          {
+            "path": "assets-src/moto-components/rear-rack-deck/parameters-v1.json",
+            "sha256": "9c0fec3dd95677ec8b1b77c0bae8b872c3145ee72ccd189e86e0cbf159c855ea",
+            "bytes": 20595,
+            "read_method": "local file"
+          },
+          {
+            "path": "assets-src/moto-components/rear-rack-deck/README.md",
+            "sha256": "c889d590633c9bac4ee44af726741509fd6e2899604f9023436985c3039b094a",
+            "bytes": 1014,
+            "read_method": "local file"
+          },
+          {
+            "path": "creative/research/rear-rack-deck-v1/G0-G2-plan-v1.json",
+            "sha256": "40a4ac1a8f28446953d9c73516bb0ece81b6ad62123438884874861cd41a6aa4",
+            "bytes": 1843,
+            "read_method": "local file"
+          }
+        ]
+      },
+      "local_landmarks_source_declared": {},
+      "native_objects": [
+        {
+          "name": "EXTERIOR_CHILD",
+          "type": "MESH",
+          "collections": [
+            "WEWA_REAR_RACK_DECK"
+          ],
+          "parent": null,
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": null,
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.06750000268220901,
+              -0.1274999976158142,
+              -0.0010000000474974513
+            ],
+            "max": [
+              0.06750000268220901,
+              0.1274999976158142,
+              0.0010000000474974513
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.06750000268220901,
+              -0.1274999976158142,
+              -0.0010000000474974513
+            ],
+            "max": [
+              0.06750000268220901,
+              0.1274999976158142,
+              0.0010000000474974513
+            ]
+          },
+          "vertex_count": 504
+        }
+      ],
+      "bounds": {
+        "value_m": {
+          "min": [
+            -0.06750000268220901,
+            -0.1274999976158142,
+            -0.0010000000474974513
+          ],
+          "max": [
+            0.06750000268220901,
+            0.1274999976158142,
+            0.0010000000474974513
+          ],
+          "extent": [
+            0.13500000536441803,
+            0.2549999952316284,
+            0.0020000000949949026
+          ]
+        },
+        "coordinate_space": "Evaluated vertices in original Blender SOURCE SCENE; not installed motorcycle world, not glTF",
+        "status": "read_from_exact_native_candidate",
+        "method": "evaluated mesh vertices transformed only by unchanged original object.matrix_world; excluded construction/studio/fit references/hidden export alternative",
+        "physical_dimensions_status": "estimated original candidate; not measured OEM"
+      },
+      "import_selection": {
+        "collection": "WEWA_REAR_RACK_DECK",
+        "explicit_mesh_names": [
+          "EXTERIOR_CHILD"
+        ],
+        "keep_original_object_matrices": true,
+        "additional_objects_outside_collection": [],
+        "exclude": [],
+        "note": "Only recorded rack relation is proposed estimated translation[-.14,0,.084], not applied in source. Rotation needed to align outline axes to rack not documented."
+      },
+      "installed_motorcycle_transform": null,
+      "installed_transform_status": "unknown; no placement authored in this inventory",
+      "documentation": [
+        {
+          "path": "assets-src/moto-components/rear-rack-deck/parameters-v1.json",
+          "sha256": "9c0fec3dd95677ec8b1b77c0bae8b872c3145ee72ccd189e86e0cbf159c855ea",
+          "bytes": 20595,
+          "read_method": "local file"
+        },
+        {
+          "path": "assets-src/moto-components/rear-rack-deck/README.md",
+          "sha256": "c889d590633c9bac4ee44af726741509fd6e2899604f9023436985c3039b094a",
+          "bytes": 1014,
+          "read_method": "local file"
+        },
+        {
+          "path": "creative/research/rear-rack-deck-v1/G0-G2-plan-v1.json",
+          "sha256": "40a4ac1a8f28446953d9c73516bb0ece81b6ad62123438884874861cd41a6aa4",
+          "bytes": 1843,
+          "read_method": "local file"
+        }
+      ],
+      "linked_libraries": [],
+      "source_unchanged_after_inspection": true
+    },
+    {
+      "id": "front-footrest-left",
+      "count_for_coverage": 1,
+      "sourcepath": "assets-src/moto-components/front-footrest-left/front-footrest-left-v1.blend",
+      "source_sha256": "4738deb0a7d108478349789f1e8169dc8e013c2900536ef5a0b9928d12cbc4f5",
+      "source_bytes": 8012944,
+      "collection": "WEWA_FRONT_FOOTREST_LEFT",
+      "source_units": {
+        "system": "METRIC",
+        "scale_length": 1.0
+      },
+      "origin": {
+        "value": "Plate central inspection reference, object root0; NOT motorcycle-world.",
+        "status": "documented_source_convention_not_physical_mount"
+      },
+      "axes": {
+        "value": {
+          "X": "+working tube outward",
+          "Y": "plate horizontal working coordinate",
+          "Z": "plate vertical working coordinate"
+        },
+        "status": "source_declared_or_native_schema_read",
+        "evidence": [
+          {
+            "path": "assets-src/moto-components/front-footrest-left/parameters.json",
+            "sha256": "68ae60aab6acae432031896cca2f297860bf199717cd07e6cf5b2aaad9aba804",
+            "bytes": 4088,
+            "read_method": "git show HEAD:path (read only, not restored)"
+          },
+          {
+            "path": "assets-src/moto-components/front-footrest-left/README.md",
+            "sha256": "e1264a5d7e46f2b02000436e59a537075b5b747df8682d6cd0bb77bb93da4dca",
+            "bytes": 2569,
+            "read_method": "git show HEAD:path (read only, not restored)"
+          },
+          {
+            "path": "assets-src/moto-components/front-footrest-left/interfaces.json",
+            "sha256": "35b5ddcf81b10c7c5101e392c614ec31a376e8c676b1f8adc8de1e182493510f",
+            "bytes": 850,
+            "read_method": "git show HEAD:path (read only, not restored)"
+          }
+        ]
+      },
+      "local_landmarks_source_declared": {
+        "declared_local_interfaces": {
+          "component_id": "MOTO-FRONT-FOOTREST-LEFT-001",
+          "frame_role": "Isolated inspection frame; NOT motorcycle world",
+          "automatic_motorcycle_attachment_allowed": false,
+          "suggested_attachment_matrix": null,
+          "working_tube_outward_axis": [
+            1,
+            0,
+            0
+          ],
+          "working_plate_hole_axes": [
+            {
+              "centre_m": [
+                0.009,
+                0.013,
+                -0.026
+              ],
+              "axis": [
+                1,
+                0,
+                0
+              ],
+              "radius_m": 0.00475
+            },
+            {
+              "centre_m": [
+                0.009,
+                0.013,
+                0.026
+              ],
+              "axis": [
+                1,
+                0,
+                0
+              ],
+              "radius_m": 0.00475
+            }
+          ],
+          "all_dimensions_estimated": true,
+          "plate_hole_datum_is_not_frame_mount": true,
+          "rubber_DF161413_included": false,
+          "support_to_rubber_fit_received": false,
+          "frame_anchor_brackets_available": false,
+          "small_post_function_thread_and_mating_part": "unknown",
+          "weld_strength_or_manufacturing_process_certified": false,
+          "installed_safe_clearance_certified": false,
+          "art_accepted": false
+        }
+      },
+      "native_objects": [
+        {
+          "name": "Front footrest LH isolated inspection datum - not installed",
+          "type": "EMPTY",
+          "collections": [
+            "WEWA_FRONT_FOOTREST_LEFT"
+          ],
+          "parent": null,
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": null,
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false
+        },
+        {
+          "name": "PF113000 related metal support - isolated candidate",
+          "type": "MESH",
+          "collections": [
+            "WEWA_FRONT_FOOTREST_LEFT"
+          ],
+          "parent": "Front footrest LH isolated inspection datum - not installed",
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": null,
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              0.0,
+              -0.03247464448213577,
+              -0.03922461345791817
+            ],
+            "max": [
+              0.16500000655651093,
+              0.03389560058712959,
+              0.039979588240385056
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              0.0,
+              -0.03247464448213577,
+              -0.03922461345791817
+            ],
+            "max": [
+              0.16500000655651093,
+              0.03389560058712959,
+              0.039979588240385056
+            ]
+          },
+          "vertex_count": 25885
+        }
+      ],
+      "bounds": {
+        "value_m": {
+          "min": [
+            0.0,
+            -0.03247464448213577,
+            -0.03922461345791817
+          ],
+          "max": [
+            0.16500000655651093,
+            0.03389560058712959,
+            0.039979588240385056
+          ],
+          "extent": [
+            0.16500000655651093,
+            0.06637024506926537,
+            0.07920420169830322
+          ]
+        },
+        "coordinate_space": "Evaluated vertices in original Blender SOURCE SCENE; not installed motorcycle world, not glTF",
+        "status": "read_from_exact_native_candidate",
+        "method": "evaluated mesh vertices transformed only by unchanged original object.matrix_world; excluded construction/studio/fit references/hidden export alternative",
+        "physical_dimensions_status": "estimated original candidate; not measured OEM"
+      },
+      "import_selection": {
+        "collection": "WEWA_FRONT_FOOTREST_LEFT",
+        "explicit_mesh_names": [
+          "PF113000 related metal support - isolated candidate"
+        ],
+        "keep_original_object_matrices": true,
+        "additional_objects_outside_collection": [],
+        "exclude": [
+          "FOOTREST_LH_CONSTRUCTION_NOT_EXPORTED"
+        ],
+        "note": "Automatic attachment explicitly forbidden by interfaces. No frame anchors; rubber excluded."
+      },
+      "installed_motorcycle_transform": null,
+      "installed_transform_status": "unknown; no placement authored in this inventory",
+      "documentation": [
+        {
+          "path": "assets-src/moto-components/front-footrest-left/parameters.json",
+          "sha256": "68ae60aab6acae432031896cca2f297860bf199717cd07e6cf5b2aaad9aba804",
+          "bytes": 4088,
+          "read_method": "git show HEAD:path (read only, not restored)"
+        },
+        {
+          "path": "assets-src/moto-components/front-footrest-left/README.md",
+          "sha256": "e1264a5d7e46f2b02000436e59a537075b5b747df8682d6cd0bb77bb93da4dca",
+          "bytes": 2569,
+          "read_method": "git show HEAD:path (read only, not restored)"
+        },
+        {
+          "path": "assets-src/moto-components/front-footrest-left/interfaces.json",
+          "sha256": "35b5ddcf81b10c7c5101e392c614ec31a376e8c676b1f8adc8de1e182493510f",
+          "bytes": 850,
+          "read_method": "git show HEAD:path (read only, not restored)"
+        }
+      ],
+      "linked_libraries": [],
+      "source_unchanged_after_inspection": true
+    },
+    {
+      "id": "front-footrest-right",
+      "count_for_coverage": 1,
+      "sourcepath": "assets-src/moto-components/front-footrest-right/front-footrest-right-v1.blend",
+      "source_sha256": "4a8c04f4abe7855918aa3a6a981a82a3e6d35c1ae86533065acad84e2fb0a8d1",
+      "source_bytes": 7242223,
+      "collection": "WEWA_FRONT_FOOTREST_RIGHT",
+      "source_units": {
+        "system": "METRIC",
+        "scale_length": 1.0
+      },
+      "origin": {
+        "value": "Source isolated root0; exact physical base datum unknown.",
+        "status": "documented_source_convention_not_physical_mount"
+      },
+      "axes": {
+        "value": {
+          "X": "+working tube outward; physical riderRH outboard would be-X under proposed vehicle convention, no mounting rotation known",
+          "Y": "base horizontal working coordinate",
+          "Z": "base vertical working coordinate"
+        },
+        "status": "source_declared_or_native_schema_read",
+        "evidence": [
+          {
+            "path": "assets-src/moto-components/front-footrest-right/parameters.json",
+            "sha256": "95ce5db9700cb6446b8a67a098feecd3a85c498dfdeea2b8ae7fc99d52a60001",
+            "bytes": 3622,
+            "read_method": "git show HEAD:path (read only, not restored)"
+          },
+          {
+            "path": "assets-src/moto-components/front-footrest-right/README.md",
+            "sha256": "2ab4fc9f409becd0b3fc6a6ef68201cd3d9f4df534e047599757fce2f1d84c7d",
+            "bytes": 2859,
+            "read_method": "git show HEAD:path (read only, not restored)"
+          },
+          {
+            "path": "assets-src/moto-components/front-footrest-right/interfaces.json",
+            "sha256": "4f5965c3704d034aae59a21ae96e09f35624639302295e5bf50ba1b867954fa3",
+            "bytes": 1383,
+            "read_method": "git show HEAD:path (read only, not restored)"
+          }
+        ]
+      },
+      "local_landmarks_source_declared": {
+        "declared_local_interfaces": {
+          "component_id": "MOTO-FRONT-FOOTREST-RIGHT-001",
+          "frame_role": "Isolated local inspection frame NOT motorcycle world",
+          "automatic_motorcycle_attachment_allowed": false,
+          "suggested_attachment_matrix": null,
+          "working_tube_outward_axis": [
+            1,
+            0,
+            0
+          ],
+          "true_RH_motorcycle_outboard_axis_if_installed": [
+            -1,
+            0,
+            0
+          ],
+          "current_local_transform_to_motorcycle_unknown": true,
+          "working_plate_hole_axes": [
+            {
+              "centre_m": [
+                0.004,
+                -0.033,
+                0
+              ],
+              "axis": [
+                1,
+                0,
+                0
+              ],
+              "radius_m": 0.0045
+            },
+            {
+              "centre_m": [
+                0.004,
+                0.033,
+                0
+              ],
+              "axis": [
+                1,
+                0,
+                0
+              ],
+              "radius_m": 0.0045
+            }
+          ],
+          "working_middle_ear_hole": {
+            "centre_m": [
+              0.075,
+              0.0325,
+              0
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "radius_m": 0.0075,
+            "function_and_mating_part_unknown": true
+          },
+          "all_dimensions_estimated": true,
+          "plate_hole_datum_is_not_frame_mount": true,
+          "rubber_DF161413_included": false,
+          "support_to_rubber_fit_received": false,
+          "frame_anchor_brackets_available": false,
+          "separate_Matriz_threaded_fixing_not_included": true,
+          "weld_strength_or_manufacturing_process_certified": false,
+          "installed_safe_clearance_certified": false,
+          "art_accepted": false
+        }
+      },
+      "native_objects": [
+        {
+          "name": "Front footrest RH isolated inspection datum - not installed",
+          "type": "EMPTY",
+          "collections": [
+            "WEWA_FRONT_FOOTREST_RIGHT"
+          ],
+          "parent": null,
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": null,
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false
+        },
+        {
+          "name": "PF113001 related RH welded support - isolated candidate",
+          "type": "MESH",
+          "collections": [
+            "WEWA_FRONT_FOOTREST_RIGHT"
+          ],
+          "parent": "Front footrest RH isolated inspection datum - not installed",
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": null,
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              0.0010000000474974513,
+              -0.04820255935192108,
+              -0.022014720365405083
+            ],
+            "max": [
+              0.23800000548362732,
+              0.049255918711423874,
+              0.0200138408690691
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              0.0010000000474974513,
+              -0.04820255935192108,
+              -0.022014720365405083
+            ],
+            "max": [
+              0.23800000548362732,
+              0.049255918711423874,
+              0.0200138408690691
+            ]
+          },
+          "vertex_count": 13974
+        }
+      ],
+      "bounds": {
+        "value_m": {
+          "min": [
+            0.0010000000474974513,
+            -0.04820255935192108,
+            -0.022014720365405083
+          ],
+          "max": [
+            0.23800000548362732,
+            0.049255918711423874,
+            0.0200138408690691
+          ],
+          "extent": [
+            0.23700000543612987,
+            0.09745847806334496,
+            0.04202856123447418
+          ]
+        },
+        "coordinate_space": "Evaluated vertices in original Blender SOURCE SCENE; not installed motorcycle world, not glTF",
+        "status": "read_from_exact_native_candidate",
+        "method": "evaluated mesh vertices transformed only by unchanged original object.matrix_world; excluded construction/studio/fit references/hidden export alternative",
+        "physical_dimensions_status": "estimated original candidate; not measured OEM"
+      },
+      "import_selection": {
+        "collection": "WEWA_FRONT_FOOTREST_RIGHT",
+        "explicit_mesh_names": [
+          "PF113001 related RH welded support - isolated candidate"
+        ],
+        "keep_original_object_matrices": true,
+        "additional_objects_outside_collection": [],
+        "exclude": [
+          "FOOTREST_RH_CONSTRUCTION_NOT_EXPORTED"
+        ],
+        "note": "IndependentRH geometry, not mirroredLH. Automatic attachment forbidden; no installed transform."
+      },
+      "installed_motorcycle_transform": null,
+      "installed_transform_status": "unknown; no placement authored in this inventory",
+      "documentation": [
+        {
+          "path": "assets-src/moto-components/front-footrest-right/parameters.json",
+          "sha256": "95ce5db9700cb6446b8a67a098feecd3a85c498dfdeea2b8ae7fc99d52a60001",
+          "bytes": 3622,
+          "read_method": "git show HEAD:path (read only, not restored)"
+        },
+        {
+          "path": "assets-src/moto-components/front-footrest-right/README.md",
+          "sha256": "2ab4fc9f409becd0b3fc6a6ef68201cd3d9f4df534e047599757fce2f1d84c7d",
+          "bytes": 2859,
+          "read_method": "git show HEAD:path (read only, not restored)"
+        },
+        {
+          "path": "assets-src/moto-components/front-footrest-right/interfaces.json",
+          "sha256": "4f5965c3704d034aae59a21ae96e09f35624639302295e5bf50ba1b867954fa3",
+          "bytes": 1383,
+          "read_method": "git show HEAD:path (read only, not restored)"
+        }
+      ],
+      "linked_libraries": [],
+      "source_unchanged_after_inspection": true
+    },
+    {
+      "id": "centre-stand-main-frame",
+      "count_for_coverage": 1,
+      "sourcepath": "assets-src/moto-components/centre-stand-main-frame-v1/child-candidate.blend",
+      "source_sha256": "568668a5fcb66d7d2dc452f301b00d4ce884b5c62d06a27014e44b75b155b989",
+      "source_bytes": 215101,
+      "collection": null,
+      "source_units": {
+        "system": "METRIC",
+        "scale_length": 1.0
+      },
+      "origin": {
+        "value": "Native mesh object location[0,0,0]; physical pivot/world datum not certified.",
+        "status": "documented_source_convention_not_physical_mount"
+      },
+      "axes": {
+        "value": {
+          "X": "projected lateral",
+          "Y": "up in reference view",
+          "Z": "depth"
+        },
+        "status": "source_declared_or_native_schema_read",
+        "evidence": [
+          {
+            "path": "assets-src/moto-components/centre-stand-main-frame-v1/parameters.json",
+            "sha256": "838768b4a5366be0b5c13dce97d9420a1a0ab8e32e778ae2c10c2ee52b067ad1",
+            "bytes": 1507,
+            "read_method": "local file"
+          },
+          {
+            "path": "creative/research/powertrain-completion-p17-v1/centre-frame-plan-v3.json",
+            "sha256": "ed69c3738c559f918ee7a397fb8685c834c8804c956d7e96183bb1e8f6525595",
+            "bytes": 1933,
+            "read_method": "local file"
+          }
+        ]
+      },
+      "local_landmarks_source_declared": {
+        "declared_leg_endpoints_m": [
+          [
+            [
+              -0.014,
+              0.286,
+              0
+            ],
+            [
+              -0.135,
+              0.007,
+              0
+            ]
+          ],
+          [
+            [
+              0.014,
+              0.286,
+              0
+            ],
+            [
+              0.165,
+              0.007,
+              0
+            ]
+          ]
+        ]
+      },
+      "native_objects": [
+        {
+          "name": "CENTRE_STAND_MAIN_FRAME_OPEN_PIVOT_PIERCED_WEB",
+          "type": "MESH",
+          "collections": [
+            "Scene Collection"
+          ],
+          "parent": null,
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": null,
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              -0.15800000727176666,
+              -0.004000000189989805,
+              -0.01600000075995922
+            ],
+            "max": [
+              0.20149999856948853,
+              0.3019999861717224,
+              0.01600000075995922
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              -0.15800000727176666,
+              -0.004000000189989805,
+              -0.01600000075995922
+            ],
+            "max": [
+              0.20149999856948853,
+              0.3019999861717224,
+              0.01600000075995922
+            ]
+          },
+          "vertex_count": 2157
+        }
+      ],
+      "bounds": {
+        "value_m": {
+          "min": [
+            -0.15800000727176666,
+            -0.004000000189989805,
+            -0.01600000075995922
+          ],
+          "max": [
+            0.20149999856948853,
+            0.3019999861717224,
+            0.01600000075995922
+          ],
+          "extent": [
+            0.3595000058412552,
+            0.3059999863617122,
+            0.03200000151991844
+          ]
+        },
+        "coordinate_space": "Evaluated vertices in original Blender SOURCE SCENE; not installed motorcycle world, not glTF",
+        "status": "read_from_exact_native_candidate",
+        "method": "evaluated mesh vertices transformed only by unchanged original object.matrix_world; excluded construction/studio/fit references/hidden export alternative",
+        "physical_dimensions_status": "estimated original candidate; not measured OEM"
+      },
+      "import_selection": {
+        "collection": null,
+        "explicit_mesh_names": [
+          "CENTRE_STAND_MAIN_FRAME_OPEN_PIVOT_PIERCED_WEB"
+        ],
+        "keep_original_object_matrices": true,
+        "additional_objects_outside_collection": [],
+        "exclude": [],
+        "note": "No dedicated named asset collection in native. Select exact mesh by name from Scene Collection; exclude scene/cameras/lights. Deployment/pivot-world transform unknown."
+      },
+      "installed_motorcycle_transform": null,
+      "installed_transform_status": "unknown; no placement authored in this inventory",
+      "documentation": [
+        {
+          "path": "assets-src/moto-components/centre-stand-main-frame-v1/parameters.json",
+          "sha256": "838768b4a5366be0b5c13dce97d9420a1a0ab8e32e778ae2c10c2ee52b067ad1",
+          "bytes": 1507,
+          "read_method": "local file"
+        },
+        {
+          "path": "creative/research/powertrain-completion-p17-v1/centre-frame-plan-v3.json",
+          "sha256": "ed69c3738c559f918ee7a397fb8685c834c8804c956d7e96183bb1e8f6525595",
+          "bytes": 1933,
+          "read_method": "local file"
+        }
+      ],
+      "linked_libraries": [],
+      "source_unchanged_after_inspection": true
+    },
+    {
+      "id": "front-brake-plate-v2",
+      "count_for_coverage": 1,
+      "sourcepath": "assets-src/moto-components/front-brake-plate/front-brake-plate-v2.blend",
+      "source_sha256": "b22bab7f58f4456c74b227610e7f30e51e07793b0420106a9ad9df71e69f71ec",
+      "source_bytes": 41053494,
+      "collection": "WEWA_FRONT_BRAKE_PANEL_BODY",
+      "source_units": {
+        "system": "METRIC",
+        "scale_length": 1.0
+      },
+      "origin": {
+        "value": "Object.location0 but mesh already includes wheel-axisZ=.290m in source scene. Not a centred local-origin panel.",
+        "status": "documented_source_convention_not_physical_mount"
+      },
+      "axes": {
+        "value": {
+          "X": "+working left outside",
+          "Y": "+rearward, front=-Y",
+          "Z": "+up"
+        },
+        "status": "source_declared_or_native_schema_read",
+        "evidence": [
+          {
+            "path": "assets-src/moto-components/front-brake-plate/parameters.json",
+            "sha256": "0117dc6e6971f3314b9a6be3b0036478afb8baa6f9674290b95477cb5cd3c35f",
+            "bytes": 1138,
+            "read_method": "git show HEAD:path (read only, not restored)"
+          },
+          {
+            "path": "assets-src/moto-components/front-brake-plate/README.md",
+            "sha256": "d4bc92c8b9f69ccfa6e807a58c1ccc44d69d9efc7741c3daec76a341a5fc2434",
+            "bytes": 4375,
+            "read_method": "git show HEAD:path (read only, not restored)"
+          },
+          {
+            "path": "creative/reviews/front-brake-plate-v2/README.md",
+            "sha256": "7640426f07a34e3348458cabf94eba1b75d7a54e224c3b6748dfc332b5cf8797",
+            "bytes": 2718,
+            "read_method": "git show HEAD:path (read only, not restored)"
+          },
+          {
+            "path": "assets-src/moto-components/front-brake-plate/material_v2.py",
+            "sha256": "17924febf62424f05cae943ebc87adb6459252e1147fc91d0e332ff6234887a7",
+            "bytes": 6199,
+            "read_method": "git show HEAD:path (read only, not restored)"
+          }
+        ]
+      },
+      "local_landmarks_source_declared": {
+        "declared_wheel_axis_source_m": [
+          0,
+          0,
+          0.29
+        ],
+        "working_cam_yz_offset_from_axle_m": [
+          -0.03,
+          -0.04
+        ],
+        "derived_cam_axis_source_yz_m": [
+          -0.03,
+          0.25
+        ]
+      },
+      "native_objects": [
+        {
+          "name": "Front brake panel - editable casting",
+          "type": "MESH",
+          "collections": [
+            "WEWA_FRONT_BRAKE_PANEL_BODY"
+          ],
+          "parent": null,
+          "location_source": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "rotation_mode": "XYZ",
+          "rotation_euler_rad": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "matrix_local": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "library": null,
+          "hide_render": false,
+          "hide_viewport": false,
+          "hide_local": false,
+          "evaluated_local_bounds_m": {
+            "min": [
+              0.018999900668859482,
+              -0.07199730724096298,
+              0.21800272166728973
+            ],
+            "max": [
+              0.05200010538101196,
+              0.07199730724096298,
+              0.3619973063468933
+            ]
+          },
+          "evaluated_source_scene_bounds_m": {
+            "min": [
+              0.018999900668859482,
+              -0.07199730724096298,
+              0.21800272166728973
+            ],
+            "max": [
+              0.05200010538101196,
+              0.07199730724096298,
+              0.3619973063468933
+            ]
+          },
+          "vertex_count": 747412
+        }
+      ],
+      "bounds": {
+        "value_m": {
+          "min": [
+            0.018999900668859482,
+            -0.07199730724096298,
+            0.21800272166728973
+          ],
+          "max": [
+            0.05200010538101196,
+            0.07199730724096298,
+            0.3619973063468933
+          ],
+          "extent": [
+            0.03300020471215248,
+            0.14399461448192596,
+            0.14399458467960358
+          ]
+        },
+        "coordinate_space": "Evaluated vertices in original Blender SOURCE SCENE; not installed motorcycle world, not glTF",
+        "status": "read_from_exact_native_candidate",
+        "method": "evaluated mesh vertices transformed only by unchanged original object.matrix_world; excluded construction/studio/fit references/hidden export alternative",
+        "physical_dimensions_status": "estimated original candidate; not measured OEM"
+      },
+      "import_selection": {
+        "collection": "WEWA_FRONT_BRAKE_PANEL_BODY",
+        "explicit_mesh_names": [
+          "Front brake panel - editable casting"
+        ],
+        "keep_original_object_matrices": true,
+        "additional_objects_outside_collection": [],
+        "exclude": [
+          "Front brake panel - inspection export",
+          "EDITABLE_CAST_FEATURES_AND_DRILLING",
+          "FIT_INSPECTION_LINKED_CANDIDATES",
+          "STUDIO_NOT_EXPORTED"
+        ],
+        "note": "Use visible detailed casting ONLY. Inspection mesh in same collection is a masked alternative, not second part. Exclude editable CSG, rim/tyre fit candidates and studio. Do not add .290m a second time."
+      },
+      "installed_motorcycle_transform": null,
+      "installed_transform_status": "unknown; no placement authored in this inventory",
+      "documentation": [
+        {
+          "path": "assets-src/moto-components/front-brake-plate/parameters.json",
+          "sha256": "0117dc6e6971f3314b9a6be3b0036478afb8baa6f9674290b95477cb5cd3c35f",
+          "bytes": 1138,
+          "read_method": "git show HEAD:path (read only, not restored)"
+        },
+        {
+          "path": "assets-src/moto-components/front-brake-plate/README.md",
+          "sha256": "d4bc92c8b9f69ccfa6e807a58c1ccc44d69d9efc7741c3daec76a341a5fc2434",
+          "bytes": 4375,
+          "read_method": "git show HEAD:path (read only, not restored)"
+        },
+        {
+          "path": "creative/reviews/front-brake-plate-v2/README.md",
+          "sha256": "7640426f07a34e3348458cabf94eba1b75d7a54e224c3b6748dfc332b5cf8797",
+          "bytes": 2718,
+          "read_method": "git show HEAD:path (read only, not restored)"
+        },
+        {
+          "path": "assets-src/moto-components/front-brake-plate/material_v2.py",
+          "sha256": "17924febf62424f05cae943ebc87adb6459252e1147fc91d0e332ff6234887a7",
+          "bytes": 6199,
+          "read_method": "git show HEAD:path (read only, not restored)"
+        }
+      ],
+      "linked_libraries": [
+        {
+          "declared": "//../front-rim/front-rim-v1.blend",
+          "resolved": "/workspace/wewa/assets-src/moto-components/front-rim/front-rim-v1.blend",
+          "exists": true,
+          "sha256": "77f351d89b29f39dc435b434278bb556cff41a8c509edccd979dc9c8c1173c3a",
+          "needed_for_selected_meshes": false
+        },
+        {
+          "declared": "//../front-tyre/front-tyre-v1.blend",
+          "resolved": "/workspace/wewa/assets-src/moto-components/front-tyre/front-tyre-v1.blend",
+          "exists": false,
+          "sha256": null,
+          "needed_for_selected_meshes": false
+        }
+      ],
+      "source_unchanged_after_inspection": true
+    }
+  ],
+  "relations": [
+    {
+      "parents": [
+        "chaincase-upper",
+        "chaincase-lower"
+      ],
+      "status": "estimated",
+      "declared": "Same provisional rear half-arch datum, axes and broad envelope hypothesis",
+      "transform": null,
+      "limit": "No fit/seam overlap/chainline certified; shared numbers not automatic assembled relation."
+    },
+    {
+      "parents": [
+        "rear-rack-deck",
+        "rack-outer-rail"
+      ],
+      "status": "estimated",
+      "source": "creative/research/rear-rack-deck-v1/G0-G2-plan-v1.json#/interfaces",
+      "declared_translation_m": [
+        -0.14,
+        0,
+        0.084
+      ],
+      "declared_rotation": null,
+      "applied": false,
+      "limit": "Proposed unvalidated translation only, axes/rotation and fit unresolved. Not a complete transform."
+    },
+    {
+      "parents": [
+        "sidecover-LH",
+        "sidecover-RH"
+      ],
+      "status": "unknown",
+      "transform": null,
+      "limit": "Independent profile traces; no accepted separation or mirrored vehicle transform."
+    },
+    {
+      "parents": [
+        "front-footrest-left",
+        "front-footrest-right",
+        "motorcycle-frame"
+      ],
+      "status": "unknown",
+      "transform": null,
+      "automatic_attachment_allowed": false
+    },
+    {
+      "parents": [
+        "rear-sns-rest-assembly-v3",
+        "motorcycle-frame/swingarm"
+      ],
+      "status": "unknown",
+      "transform": null,
+      "count": 1,
+      "limit": "Shared unplaced rest composition, no second shock or installation invented."
+    },
+    {
+      "parents": [
+        "centre-stand-main-frame",
+        "motorcycle-frame"
+      ],
+      "status": "unknown",
+      "transform": null,
+      "limit": "SourceYup vs motorcycleZup not converted; no installed pivot or deployment."
+    },
+    {
+      "parents": [
+        "front-brake-plate-v2",
+        "front-rim/front-tyre"
+      ],
+      "status": "estimated",
+      "declared_source_wheel_axis_z_m": 0.29,
+      "transform": null,
+      "limit": "Existing comparison fit/clocking only; current RDC variant not qualified. Context tyre linked file missing, unnecessary for body-only selection."
+    }
+  ],
+  "rear_sns_exact_linked_inputs": [
+    {
+      "unit": "outer-spring",
+      "sourcepath": "assets-src/moto-components/rear-sns/outer-spring/rear-sns-outer-spring-v1.blend",
+      "collection": "WEWA_REAR_SNS_OUTER_SPRING",
+      "root": "REAR_SNS_OUTER_SPRING_UNPLACED_DATUM",
+      "sha256": "dcf116f2e6e0e12f03c746bfbad271c23652dd67154a742834b2bcc244935959",
+      "expected_source_sha256": "dcf116f2e6e0e12f03c746bfbad271c23652dd67154a742834b2bcc244935959",
+      "matches_build_report": true
+    },
+    {
+      "unit": "inner-spring",
+      "sourcepath": "assets-src/moto-components/rear-sns/inner-spring/rear-sns-inner-spring-v1.blend",
+      "collection": "WEWA_REAR_SNS_INNER_SPRING",
+      "root": "REAR_SNS_INNER_SPRING_UNPLACED_DATUM",
+      "sha256": "cbeb1e352c910dbc95e08ada95ee5c81f718527c8f96f17b1e55635a14d8ded7",
+      "expected_source_sha256": "cbeb1e352c910dbc95e08ada95ee5c81f718527c8f96f17b1e55635a14d8ded7",
+      "matches_build_report": true
+    },
+    {
+      "unit": "damper-body",
+      "sourcepath": "assets-src/moto-components/rear-sns/damper-body/rear-sns-damper-body-v2.blend",
+      "collection": "WEWA_REAR_SNS_DAMPER_BODY",
+      "root": "REAR_SNS_DAMPER_BODY_UNPLACED_DATUM",
+      "sha256": "0b7c78df3dfcbe90b3b91146f7a2ba82062b6673e5ffdc703b8b16f0da4e7643",
+      "expected_source_sha256": "0b7c78df3dfcbe90b3b91146f7a2ba82062b6673e5ffdc703b8b16f0da4e7643",
+      "matches_build_report": true
+    },
+    {
+      "unit": "lower-collar",
+      "sourcepath": "assets-src/moto-components/rear-sns/lower-collar/rear-sns-lower-collar-v1.blend",
+      "collection": "WEWA_REAR_SNS_LOWER_COLLAR",
+      "root": "REAR_SNS_LOWER_COLLAR_UNPLACED_DATUM",
+      "sha256": "7f0cdf03b3ae3f8f10f2b859303a90a41a4a5d59e1d7736451d418d7fd4fb8b2",
+      "expected_source_sha256": "7f0cdf03b3ae3f8f10f2b859303a90a41a4a5d59e1d7736451d418d7fd4fb8b2",
+      "matches_build_report": true
+    },
+    {
+      "unit": "rod",
+      "sourcepath": "assets-src/moto-components/rear-sns/rod/rear-sns-rod-v1.blend",
+      "collection": "WEWA_REAR_SNS_ROD",
+      "root": "REAR_SNS_ROD_UNPLACED_DATUM",
+      "sha256": "946846232d58661345565041e9a94f416460cf1a5edeb7e48dcf1c44f1925c26",
+      "expected_source_sha256": "946846232d58661345565041e9a94f416460cf1a5edeb7e48dcf1c44f1925c26",
+      "matches_build_report": true
+    },
+    {
+      "unit": "body-side-seat-rim",
+      "sourcepath": "assets-src/moto-components/rear-sns/body-side-seat-rim/rear-sns-body-side-seat-rim-v1.blend",
+      "collection": "WEWA_REAR_SNS_BODY_SIDE_SEAT_RIM",
+      "root": "REAR_SNS_BODY_SIDE_SEAT_RIM_UNPLACED_DATUM",
+      "sha256": "43b99d580d8040e3f2c0554c18a9e33eee693d9fc79fe04e49b749b0a8cf32df",
+      "expected_source_sha256": "43b99d580d8040e3f2c0554c18a9e33eee693d9fc79fe04e49b749b0a8cf32df",
+      "matches_build_report": true
+    },
+    {
+      "unit": "body-side-eye-exterior",
+      "sourcepath": "assets-src/moto-components/rear-sns/body-side-eye-exterior/rear-sns-body-side-eye-exterior-v1.blend",
+      "collection": "WEWA_REAR_SNS_BODY_SIDE_EYE_EXTERIOR",
+      "root": "REAR_SNS_BODY_SIDE_EYE_EXTERIOR_UNPLACED_DATUM",
+      "sha256": "113aefabec9d1c312dec0ee375cbf826aa395eef2d3463387cb62c1126f84688",
+      "expected_source_sha256": "113aefabec9d1c312dec0ee375cbf826aa395eef2d3463387cb62c1126f84688",
+      "matches_build_report": true
+    },
+    {
+      "unit": "body-side-eye-sleeve",
+      "sourcepath": "assets-src/moto-components/rear-sns/body-side-eye-sleeve/rear-sns-body-side-eye-sleeve-v1.blend",
+      "collection": "WEWA_REAR_SNS_BODY_SIDE_EYE_SLEEVE",
+      "root": "REAR_SNS_BODY_SIDE_EYE_SLEEVE_UNPLACED_DATUM",
+      "sha256": "ec1bec08a0c6702eff57fee7e4b492e3620dc24bb1afec8c100b731c87cabfae",
+      "expected_source_sha256": "ec1bec08a0c6702eff57fee7e4b492e3620dc24bb1afec8c100b731c87cabfae",
+      "matches_build_report": true
+    },
+    {
+      "unit": "opposite-seat-rim",
+      "sourcepath": "assets-src/moto-components/rear-sns/opposite-seat-rim/rear-sns-opposite-seat-rim-v1.blend",
+      "collection": "WEWA_REAR_SNS_OPPOSITE_SEAT_RIM",
+      "root": "REAR_SNS_OPPOSITE_SEAT_RIM_UNPLACED_DATUM",
+      "sha256": "69e326632770ee32c8703e96605e40d5dda40b66bbe9eb16be8ef29693874836",
+      "expected_source_sha256": "69e326632770ee32c8703e96605e40d5dda40b66bbe9eb16be8ef29693874836",
+      "matches_build_report": true
+    },
+    {
+      "unit": "opposite-eye-exterior",
+      "sourcepath": "assets-src/moto-components/rear-sns/opposite-eye-exterior/rear-sns-opposite-eye-exterior-v1.blend",
+      "collection": "WEWA_REAR_SNS_OPPOSITE_EYE_EXTERIOR",
+      "root": "REAR_SNS_OPPOSITE_EYE_EXTERIOR_UNPLACED_DATUM",
+      "sha256": "92403c738c262d5e105ce9ccdcc59bae88c60b866a8e90b39cc474fed818d0a7",
+      "expected_source_sha256": "92403c738c262d5e105ce9ccdcc59bae88c60b866a8e90b39cc474fed818d0a7",
+      "matches_build_report": true
+    },
+    {
+      "unit": "opposite-blue-region",
+      "sourcepath": "assets-src/moto-components/rear-sns/opposite-blue-region/rear-sns-opposite-blue-region-v1.blend",
+      "collection": "WEWA_REAR_SNS_OPPOSITE_BLUE_REGION",
+      "root": "REAR_SNS_OPPOSITE_BLUE_REGION_UNPLACED_DATUM",
+      "sha256": "6962de614f96bf5e1b8859e63c7c07003b6828f7fcada419c167201a1905464a",
+      "expected_source_sha256": "6962de614f96bf5e1b8859e63c7c07003b6828f7fcada419c167201a1905464a",
+      "matches_build_report": true
+    },
+    {
+      "unit": "opposite-eye-sleeve",
+      "sourcepath": "assets-src/moto-components/rear-sns/opposite-eye-sleeve/rear-sns-opposite-eye-sleeve-v1.blend",
+      "collection": "WEWA_REAR_SNS_OPPOSITE_EYE_SLEEVE",
+      "root": "REAR_SNS_OPPOSITE_EYE_SLEEVE_UNPLACED_DATUM",
+      "sha256": "392ba34e4590d037e154797663e664daf368fabae1d29a9b2b53ce9ae548406e",
+      "expected_source_sha256": "392ba34e4590d037e154797663e664daf368fabae1d29a9b2b53ce9ae548406e",
+      "matches_build_report": true
+    },
+    {
+      "unit": "opposite-end-closure",
+      "sourcepath": "assets-src/moto-components/rear-sns/opposite-end-closure/rear-sns-opposite-end-closure-v1.blend",
+      "collection": "WEWA_REAR_SNS_OPPOSITE_END_CLOSURE",
+      "root": "REAR_SNS_OPPOSITE_END_CLOSURE_UNPLACED_DATUM",
+      "sha256": "6e4fa52d88060fb9cfdce2143b5e51fde66d819a99ea96ab14bf65a67e0d76f5",
+      "expected_source_sha256": "6e4fa52d88060fb9cfdce2143b5e51fde66d819a99ea96ab14bf65a67e0d76f5",
+      "matches_build_report": true
+    },
+    {
+      "unit": "body-end-closure",
+      "sourcepath": "assets-src/moto-components/rear-sns/body-end-closure/rear-sns-body-end-closure-v1.blend",
+      "collection": "WEWA_REAR_SNS_BODY_END_CLOSURE",
+      "root": "REAR_SNS_BODY_END_CLOSURE_UNPLACED_DATUM",
+      "sha256": "3979e377dfdbb451541482d35a321d4a284fb10c64b0cfe1d935d705323fa153",
+      "expected_source_sha256": "3979e377dfdbb451541482d35a321d4a284fb10c64b0cfe1d935d705323fa153",
+      "matches_build_report": true
+    }
+  ],
+  "missing_exact_restorations": [
+    {
+      "path": "assets-src/moto-components/chaincase-upper/chaincase-upper-v1.blend",
+      "sha256": "442aad592a123465461d4fce6a16698de28323e7b552d865db1ea997ae5c4086",
+      "method": "git show HEAD:path -> create only missing exact bytes; no index change"
+    },
+    {
+      "path": "assets-src/moto-components/chaincase-lower/chaincase-lower-v1.blend",
+      "sha256": "957926b01dde0821af4700f5125c8df1a5434b43965b392e6ad838c082b7c5ba",
+      "method": "git show HEAD:path -> create only missing exact bytes; no index change"
+    },
+    {
+      "path": "assets-src/moto-components/front-footrest-left/front-footrest-left-v1.blend",
+      "sha256": "4738deb0a7d108478349789f1e8169dc8e013c2900536ef5a0b9928d12cbc4f5",
+      "method": "git show HEAD:path -> create only missing exact bytes; no index change"
+    },
+    {
+      "path": "assets-src/moto-components/front-footrest-right/front-footrest-right-v1.blend",
+      "sha256": "4a8c04f4abe7855918aa3a6a981a82a3e6d35c1ae86533065acad84e2fb0a8d1",
+      "method": "git show HEAD:path -> create only missing exact bytes; no index change"
+    },
+    {
+      "path": "assets-src/moto-components/front-brake-plate/front-brake-plate-v2.blend",
+      "sha256": "b22bab7f58f4456c74b227610e7f30e51e07793b0420106a9ad9df71e69f71ec",
+      "method": "git show HEAD:path -> create only missing exact bytes; no index change"
+    }
+  ],
+  "git_usage": "Only ls-tree and show read operations; missing native files created from exact HEAD blob bytes by user authorization. No checkout/reset/restore/add/commit or index/ref/shared metadata write.",
+  "evidence_inputs": [
+    {
+      "path": "assets-src/moto-components/side-cover-left-v2/parameters-v2.json",
+      "sha256": "0b22c5bdd0a0f5afbe36df2c904f31088f56963fdf14d932477681b63d7325f9",
+      "bytes": 2172,
+      "read_method": "local file"
+    },
+    {
+      "path": "assets-src/moto-components/side-cover-left-v2/README.md",
+      "sha256": "4db4fae382fab12acb3da7f366af81a6d5d501189ca926067d625208e9a6e208",
+      "bytes": 1777,
+      "read_method": "local file"
+    },
+    {
+      "path": "assets-src/moto-components/side-cover-right-v2/parameters.json",
+      "sha256": "6acd63cddb359589c368d34971a57661462ed23fff28bc2d44eb31f90bbe975f",
+      "bytes": 2068,
+      "read_method": "local file"
+    },
+    {
+      "path": "assets-src/moto-components/side-cover-right-v2/README.md",
+      "sha256": "20c73baeeff11e478c5160035e620abbaa67126cff5ade56a36810ea641ba1a0",
+      "bytes": 2180,
+      "read_method": "local file"
+    },
+    {
+      "path": "assets-src/moto-components/side-cover-right-v1/parameters-v1.json",
+      "sha256": "2cce73e621563c39ee41c3aee2eae42a61dae9916d52e8bb9967dbb07aa7a312",
+      "bytes": 1729,
+      "read_method": "local file"
+    },
+    {
+      "path": "assets-src/moto-components/rear-sns/rest-assembly/README-study-v3.md",
+      "sha256": "6ad7f7362e0bce77e7a1e9b2bc82ea30695d1fb801378a2c545fefdc4cda98bb",
+      "bytes": 852,
+      "read_method": "local file"
+    },
+    {
+      "path": "creative/research/rear-sns-rest-assembly/G0-G2-rest-review-plan-v1.json",
+      "sha256": "40f1c4804c3b49a373452a4df0807c613d3783f2fb17601d0d61b28135398af7",
+      "bytes": 8782,
+      "read_method": "local file"
+    },
+    {
+      "path": "creative/reviews/rear-sns-rest-assembly-v3/build-report.json",
+      "sha256": "6a37784840fd3122aee1661909c6c5beafdde4c91ea6de9d3ac36f75c193efc7",
+      "bytes": 36804,
+      "read_method": "local file"
+    },
+    {
+      "path": "assets-src/moto-components/rear-sns/damper-body/parameters-study-v2.json",
+      "sha256": "7a22c40a72f9c4c32957d946a0068f1f762f18ec7656104015963e74f677c724",
+      "bytes": 940,
+      "read_method": "local file"
+    },
+    {
+      "path": "assets-src/moto-components/rear-sns/body-side-eye-exterior/parameters-study-v1.json",
+      "sha256": "0792eec661b707a5cc69845e114019fa9e716b98b3a12131cf7be2d30eab4e14",
+      "bytes": 1248,
+      "read_method": "local file"
+    },
+    {
+      "path": "assets-src/moto-components/rear-sns/opposite-eye-exterior/parameters-study-v2.json",
+      "sha256": "c471521ce9b5f802d4bebba94c58c6ead931f4dc3a88e28b8809075d4eb0389e",
+      "bytes": 1342,
+      "read_method": "local file"
+    },
+    {
+      "path": "assets-src/moto-components/chaincase-upper/parameters.json",
+      "sha256": "bb8c126b3d2b2b25203c3dc631fc126f5353d3b7b37d6541d261ea8fec23734f",
+      "bytes": 1680,
+      "read_method": "git show HEAD:path (read only, not restored)"
+    },
+    {
+      "path": "assets-src/moto-components/chaincase-upper/README.md",
+      "sha256": "b872e146cbdc8d6b1074d21b974d225b3d20c3d661f5e43925e0fe72e0474e93",
+      "bytes": 7432,
+      "read_method": "local file"
+    },
+    {
+      "path": "assets-src/moto-components/chaincase-lower/parameters.json",
+      "sha256": "30f48822ff0e979a9a419a9d6123f97ffca315acf4733cde83f33892778fb6a8",
+      "bytes": 1839,
+      "read_method": "git show HEAD:path (read only, not restored)"
+    },
+    {
+      "path": "assets-src/moto-components/chaincase-lower/README.md",
+      "sha256": "990b2f3f0503465ff920edbfbca942f1b8b08a91d1822db36c02603ad4f45252",
+      "bytes": 6273,
+      "read_method": "git show HEAD:path (read only, not restored)"
+    },
+    {
+      "path": "assets-src/moto-components/rack-outer-rail/parameters-study-v3.json",
+      "sha256": "a5b5b2c8bfcd30c7ac45633537b9e2d62b1ea65b11a53294e97f0b6f65d3620a",
+      "bytes": 1855,
+      "read_method": "local file"
+    },
+    {
+      "path": "assets-src/moto-components/rack-outer-rail/README.md",
+      "sha256": "3701d006315b4ed6e67e27820c437840e454654d45f37db4a66eeb9ff32409b0",
+      "bytes": 2819,
+      "read_method": "local file"
+    },
+    {
+      "path": "tools/build_rack_outer_rail_p02.py",
+      "sha256": "d3ded82bf369e33319f02a96e04b1e1ad69477da72b145e384afa616603d4474",
+      "bytes": 9454,
+      "read_method": "local file"
+    },
+    {
+      "path": "assets-src/moto-components/rear-rack-deck/parameters-v1.json",
+      "sha256": "9c0fec3dd95677ec8b1b77c0bae8b872c3145ee72ccd189e86e0cbf159c855ea",
+      "bytes": 20595,
+      "read_method": "local file"
+    },
+    {
+      "path": "assets-src/moto-components/rear-rack-deck/README.md",
+      "sha256": "c889d590633c9bac4ee44af726741509fd6e2899604f9023436985c3039b094a",
+      "bytes": 1014,
+      "read_method": "local file"
+    },
+    {
+      "path": "creative/research/rear-rack-deck-v1/G0-G2-plan-v1.json",
+      "sha256": "40a4ac1a8f28446953d9c73516bb0ece81b6ad62123438884874861cd41a6aa4",
+      "bytes": 1843,
+      "read_method": "local file"
+    },
+    {
+      "path": "assets-src/moto-components/front-footrest-left/parameters.json",
+      "sha256": "68ae60aab6acae432031896cca2f297860bf199717cd07e6cf5b2aaad9aba804",
+      "bytes": 4088,
+      "read_method": "git show HEAD:path (read only, not restored)"
+    },
+    {
+      "path": "assets-src/moto-components/front-footrest-left/README.md",
+      "sha256": "e1264a5d7e46f2b02000436e59a537075b5b747df8682d6cd0bb77bb93da4dca",
+      "bytes": 2569,
+      "read_method": "git show HEAD:path (read only, not restored)"
+    },
+    {
+      "path": "assets-src/moto-components/front-footrest-left/interfaces.json",
+      "sha256": "35b5ddcf81b10c7c5101e392c614ec31a376e8c676b1f8adc8de1e182493510f",
+      "bytes": 850,
+      "read_method": "git show HEAD:path (read only, not restored)"
+    },
+    {
+      "path": "assets-src/moto-components/front-footrest-right/parameters.json",
+      "sha256": "95ce5db9700cb6446b8a67a098feecd3a85c498dfdeea2b8ae7fc99d52a60001",
+      "bytes": 3622,
+      "read_method": "git show HEAD:path (read only, not restored)"
+    },
+    {
+      "path": "assets-src/moto-components/front-footrest-right/README.md",
+      "sha256": "2ab4fc9f409becd0b3fc6a6ef68201cd3d9f4df534e047599757fce2f1d84c7d",
+      "bytes": 2859,
+      "read_method": "git show HEAD:path (read only, not restored)"
+    },
+    {
+      "path": "assets-src/moto-components/front-footrest-right/interfaces.json",
+      "sha256": "4f5965c3704d034aae59a21ae96e09f35624639302295e5bf50ba1b867954fa3",
+      "bytes": 1383,
+      "read_method": "git show HEAD:path (read only, not restored)"
+    },
+    {
+      "path": "assets-src/moto-components/centre-stand-main-frame-v1/parameters.json",
+      "sha256": "838768b4a5366be0b5c13dce97d9420a1a0ab8e32e778ae2c10c2ee52b067ad1",
+      "bytes": 1507,
+      "read_method": "local file"
+    },
+    {
+      "path": "creative/research/powertrain-completion-p17-v1/centre-frame-plan-v3.json",
+      "sha256": "ed69c3738c559f918ee7a397fb8685c834c8804c956d7e96183bb1e8f6525595",
+      "bytes": 1933,
+      "read_method": "local file"
+    },
+    {
+      "path": "assets-src/moto-components/front-brake-plate/parameters.json",
+      "sha256": "0117dc6e6971f3314b9a6be3b0036478afb8baa6f9674290b95477cb5cd3c35f",
+      "bytes": 1138,
+      "read_method": "git show HEAD:path (read only, not restored)"
+    },
+    {
+      "path": "assets-src/moto-components/front-brake-plate/README.md",
+      "sha256": "d4bc92c8b9f69ccfa6e807a58c1ccc44d69d9efc7741c3daec76a341a5fc2434",
+      "bytes": 4375,
+      "read_method": "git show HEAD:path (read only, not restored)"
+    },
+    {
+      "path": "creative/reviews/front-brake-plate-v2/README.md",
+      "sha256": "7640426f07a34e3348458cabf94eba1b75d7a54e224c3b6748dfc332b5cf8797",
+      "bytes": 2718,
+      "read_method": "git show HEAD:path (read only, not restored)"
+    },
+    {
+      "path": "assets-src/moto-components/front-brake-plate/material_v2.py",
+      "sha256": "17924febf62424f05cae943ebc87adb6459252e1147fc91d0e332ff6234887a7",
+      "bytes": 6199,
+      "read_method": "git show HEAD:path (read only, not restored)"
+    }
+  ],
+  "native_read_protocol": {
+    "blender": "4.3.2",
+    "scripts_disabled_on_open": true,
+    "inspection_script_private_path": "/workspace/scratch/whole-v3-parent-evidence/inspect_native.py",
+    "inspection_script_sha256": "100559dafdca7c0c9bc2781247c9072f492795da3002a8c69db6f4eb671b3377",
+    "raw_native_read_private_path": "/workspace/scratch/whole-v3-parent-evidence/native-inspection.json",
+    "raw_native_read_sha256": "773966d60e65a081984c08ee98b84c5821092324a7d73ac5ec6279fbe8cf1789"
+  },
+  "whole_coverage_v1_v2_modified": false,
+  "shared_metadata_modified": false
+}
