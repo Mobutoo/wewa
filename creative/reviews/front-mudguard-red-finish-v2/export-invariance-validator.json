@@ -1,0 +1,102 @@
+{
+  "old": {
+    "file": "assets-src/moto-components/front-mudguard/front-mudguard-shell-inspection.glb",
+    "sha256": "ce53e0abd7087838aab1628fd3c0918d661f006f996b9174288b133f465028e4"
+  },
+  "new": {
+    "file": "assets-src/moto-components/front-mudguard-red-finish-v2/front-mudguard-red-finish-v2.glb",
+    "sha256": "9d3657ca872e13d36aba8ccc6e0a8c00811e7447ea6d6f65bebba9b7ab5daee5"
+  },
+  "node_transforms_exact": true,
+  "accessors": [
+    {
+      "mesh": 0,
+      "primitive": 0,
+      "semantic": "POSITION",
+      "count": 52811,
+      "sha256": "f121157299560688f27f6c85d5c6b343067f48662139d1c04d288531f795a35c",
+      "bit_exact": true
+    },
+    {
+      "mesh": 0,
+      "primitive": 0,
+      "semantic": "NORMAL",
+      "count": 52811,
+      "sha256": "3c0b7305dded16e1444a5b4be107166546bb6cc6795e4c4273eb1592961beec6",
+      "bit_exact": true
+    },
+    {
+      "mesh": 0,
+      "primitive": 0,
+      "semantic": "TEXCOORD_0",
+      "count": 52811,
+      "sha256": "3a990e48a7f299ace863132437e638b7c19a48c05beba07f823c28f814a89273",
+      "bit_exact": true
+    },
+    {
+      "mesh": 0,
+      "primitive": 0,
+      "semantic": "TANGENT",
+      "count": 52811,
+      "sha256": "f8f2d6cdd009d8fcd5868229c8d9830a98cfc7db2162da7c58e05cd604d6a584",
+      "bit_exact": true
+    },
+    {
+      "mesh": 0,
+      "primitive": 0,
+      "semantic": "INDICES",
+      "count": 308736,
+      "sha256": "9e9ae3317b6caad33b71c4a3996ccc2fd2956d6d94b0d76736ea11e4cc9e8695",
+      "bit_exact": true
+    }
+  ],
+  "geometry_P_N_UV_I_bit_exact": true,
+  "tangents_bit_exact": true,
+  "no_images_or_textures": true,
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 0.3499999940395355,
+          "clearcoatRoughnessFactor": 0.11999999731779099
+        }
+      },
+      "name": "WEWA plain red gloss paint - estimated finish v2",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.41788506507873535,
+          0.006048833020031452,
+          0.012286487966775894,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.2199999988079071
+      }
+    }
+  ],
+  "extensions": [
+    "KHR_materials_clearcoat"
+  ],
+  "validator": {
+    "numErrors": 0,
+    "numWarnings": 0,
+    "numInfos": 2,
+    "numHints": 0,
+    "messages": [
+      {
+        "code": "UNUSED_MESH_TANGENT",
+        "message": "Tangents are not used because the material has no normal texture.",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/0/attributes/TANGENT"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/meshes/0/primitives/0/attributes/TEXCOORD_0"
+      }
+    ],
+    "truncated": false
+  }
+}

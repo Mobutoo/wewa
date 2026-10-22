@@ -1,0 +1,1 @@
+export default {root:'/workspace/wewa',cacheDir:'/workspace/scratch/front-mudguard-red-finish-v2-vite-cache',server:{host:'127.0.0.1',port:4297,strictPort:true},optimizeDeps:{include:['@babylonjs/core','@babylonjs/loaders/glTF']}};
