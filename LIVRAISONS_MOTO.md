@@ -28,6 +28,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P06** : [CL201023 HS1 bulb three-ear stamped locating flange — sources et images](creative/reviews/front-completion-p06-bulb-flange-front15-v4-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P13** : [seat-base-observed-underside-v2 — sources, rendus et contrôles](creative/reviews/seat-base-observed-underside-v2/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **P12** : [fuel-tap-stepped-hex-cap-visible-v1 — sources, rendus et contrôles](creative/reviews/fuel-tap-stepped-hex-cap-visible-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **P18** : [MOTO-CRANKCASE-LH-LOWER-PERIPHERAL-WALL-001 — bounded exterior candidate — sources et images](creative/reviews/crankcase-lh-lower-peripheral-wall-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
