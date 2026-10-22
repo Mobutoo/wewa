@@ -1,0 +1,227 @@
+{
+  "schema": 1,
+  "id": "MOTO-RACK-OBSERVED-LONG-INNER-RAIL-001",
+  "label": "P02 — long rail intérieur observé du porte-bagages",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../../creative/research/rack-observed-long-inner-rail-v1/sources-child-v1.json",
+  "sources": [
+    "D01"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "whole-front",
+      "PNG_sha256": "98a08dacecceb5d7f347bc62afa156a53e8c5c32ab3fdb93e9effc984a3e0e24",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.12054022401571274,
+        0.11807431280612946,
+        1.9191631078720093
+      ],
+      "camera_target": [
+        0.12054022401571274,
+        0.11807431280612946,
+        -0.040415208786726
+      ]
+    },
+    {
+      "name": "whole-quarter",
+      "PNG_sha256": "9653015483511210de73620c0fa8477958ec1d02d75fdf0b4508df4343f55444",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.5777751207351685,
+        -1.188311219215393,
+        0.8087353110313416
+      ],
+      "camera_target": [
+        0.12054022401571274,
+        0.11807431280612946,
+        -0.040415208786726
+      ]
+    },
+    {
+      "name": "neutral-outdoor",
+      "PNG_sha256": "1aab72d45c91c336c19711342d1a0e3ed11fc53a9c969d99db1fb7f8b65a016b",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.5777751207351685,
+        -1.188311219215393,
+        0.8087353110313416
+      ],
+      "camera_target": [
+        0.12054022401571274,
+        0.11807431280612946,
+        -0.040415208786726
+      ]
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-RACK-OBSERVED-LONG-INNER-RAIL-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "rack-observed-long-inner-rail-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "path": "../../../creative/research/rack-observed-long-inner-rail-v1/G0-G2-plan-v1.json",
+          "kind": "identity_and_parts",
+          "sha256": "125245cec409ee3a6a12cb46281b0f7f332146773f1d7ad233af65acb726b088",
+          "revision": "rack-observed-long-inner-rail-v1"
+        }
+      ],
+      "reason": "Observable child separated, estimates and variant limits documented; not full package or artistic acceptance",
+      "reviewed_at": "2026-10-22"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "rack-observed-long-inner-rail-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "rack-observed-long-inner-rail-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "rack-observed-long-inner-rail-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/rack-observed-long-inner-rail-v1/rack-observed-long-inner-rail-v1.blend",
+          "kind": "editable_source",
+          "revision": "rack-observed-long-inner-rail-v1",
+          "sha256": "3fad39a6e13251dcf954a83d3a75e068c2a8869e29311ff5ada8edeb9536c50b"
+        },
+        {
+          "path": "../../reviews/rack-observed-long-inner-rail-v1/whole-front.png",
+          "kind": "isolated_comparison",
+          "revision": "rack-observed-long-inner-rail-v1",
+          "sha256": "98a08dacecceb5d7f347bc62afa156a53e8c5c32ab3fdb93e9effc984a3e0e24"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "rack-observed-long-inner-rail-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rack-observed-long-inner-rail-v1/neutral-outdoor.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "rack-observed-long-inner-rail-v1",
+          "sha256": "1aab72d45c91c336c19711342d1a0e3ed11fc53a9c969d99db1fb7f8b65a016b"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "rack-observed-long-inner-rail-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rack-observed-long-inner-rail-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "rack-observed-long-inner-rail-v1",
+          "sha256": "5b2891d7edebe5a2e25eac762f23bce2157e8479a34ec18322df5de741385c22"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "rack-observed-long-inner-rail-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rack-observed-long-inner-rail-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "rack-observed-long-inner-rail-v1",
+          "sha256": "2d16759bfc3291596cb865dc0356f50e0dca3f576ddd794c99fd278b59e14294"
+        },
+        {
+          "path": "../../reviews/rack-observed-long-inner-rail-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "rack-observed-long-inner-rail-v1",
+          "sha256": "fb18610456ecc535c3d723ec20be1123df5e18a4e4d06c40172273ce1889c94a"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "rack-observed-long-inner-rail-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "rack-observed-long-inner-rail-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "rack-observed-long-inner-rail-v1",
+  "export_revision": "rack-observed-long-inner-rail-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/rack-observed-long-inner-rail-v1/README.md",
+  "candidate_review": "../../reviews/rack-observed-long-inner-rail-v1/README.md",
+  "production_group": 18,
+  "source_plan": "../../../creative/research/rack-observed-long-inner-rail-v1/G0-G2-plan-v1.json"
+}
