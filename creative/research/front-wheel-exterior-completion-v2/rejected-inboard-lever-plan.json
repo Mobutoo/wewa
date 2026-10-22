@@ -1,0 +1,179 @@
+{
+  "base_generator": "tools/front_completion_axle.py",
+  "base_generator_sha256": "000511f1205dd501544e4b8a9b35eafe8ef8f3d3dfc1a3d4403c54a2e84c78ee",
+  "new_axle_length_m": 0.225,
+  "length_bounds_m": [
+    0.18,
+    0.24
+  ],
+  "reason": "Display shaft spans existing fork175mm centers and outer supports;225mm is an explicit assembly estimate, not measured OEM length",
+  "unchanged": "Head, diameter, estimated20mm thread and pitch; source lever geometry/materials unchanged",
+  "related_sources": [
+    "assets-src/moto-components/front-brake-lever/reference-observations.json",
+    "assets-src/moto-components/front-completion-p24-axle-v1/parameters.json"
+  ],
+  "physical_axle_photo_actually_reopened": true,
+  "cam_axis_registration": "Source JA panel(-.030,.250) plus front-wheel parent; existing lever shaft sourceZ.105; pure180deg X roll turns existing eye upward",
+  "cam_and_panel_bore_radii_m": [
+    0.0057,
+    0.0057
+  ],
+  "no_internal_cam_or_shoes_invented": true,
+  "art_accepted": false,
+  "mechanical_fit_accepted": false,
+  "rows": [
+    {
+      "key": "front-brake-panel-context",
+      "source": "assets-src/moto-components/front-brake-plate/front-brake-plate-v2.blend",
+      "sha256": "b22bab7f58f4456c74b227610e7f30e51e07793b0420106a9ad9df71e69f71ec",
+      "selected_objects": [
+        "Front brake panel - editable casting"
+      ],
+      "collection": "CONTEXT [front-brake-panel-context]",
+      "translation_m": [
+        0.0,
+        -0.41999998688697815,
+        -1.0299999713897705
+      ],
+      "rotation_degrees": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.41999998688697815
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0299999713897705
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "placement_status": "Bounded source-derived visible exterior placement; no certified mechanical fit"
+    },
+    {
+      "key": "front-axle-exterior-completion",
+      "source": "assets-src/moto-components/front-axle-envelope-v2/axle-material.blend",
+      "sha256": "6c2e82cd0fd8ece18963ec4b5088f127ea5b8a8790ef7b7d8e8271d02e398aac",
+      "selected_objects": [
+        "DJ151041_RELATED_EXTERNAL_AXLE_ESTIMATED"
+      ],
+      "collection": "CONTEXT [front-axle-exterior-completion]",
+      "translation_m": [
+        0.11249999701976776,
+        -0.41999998688697815,
+        -0.7400000095367432
+      ],
+      "rotation_degrees": [
+        0.0,
+        -89.999995674289,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world": [
+        [
+          -4.371138828673793e-08,
+          0.0,
+          -1.0,
+          0.11249999701976776
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.41999998688697815
+        ],
+        [
+          1.0,
+          0.0,
+          -4.371138828673793e-08,
+          -0.7400000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "placement_status": "Bounded source-derived visible exterior placement; no certified mechanical fit"
+    },
+    {
+      "key": "front-brake-cam-lever-visible",
+      "source": "assets-src/moto-components/front-brake-lever/front-brake-lever-v1.blend",
+      "sha256": "57b7313863157608a679563cfd80f3b6b6a29b8febebafb44e42c68819337a0d",
+      "selected_objects": [
+        "Front brake lever - editable candidate"
+      ],
+      "collection": "CONTEXT [front-brake-cam-lever-visible]",
+      "translation_m": [
+        0.04399999976158142,
+        -0.44999998807907104,
+        -0.675000011920929
+      ],
+      "rotation_degrees": [
+        179.999991348578,
+        -0.0,
+        0.0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.04399999976158142
+        ],
+        [
+          0.0,
+          -1.0,
+          -8.742277657347586e-08,
+          -0.44999998807907104
+        ],
+        [
+          0.0,
+          8.742277657347586e-08,
+          -1.0,
+          -0.675000011920929
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "placement_status": "Bounded source-derived visible exterior placement; no certified mechanical fit"
+    }
+  ]
+}
