@@ -1,0 +1,185 @@
+{
+  "scope": "Same four existing parents, local exterior review only",
+  "frame": "unplaced_arm_photo_projection_Xfront_Yup_Zestimated_outward",
+  "collection": "REAR_BRAKE_PEDAL_EXTERIOR_INTEGRATION_V1",
+  "root": "REAR_BRAKE_PEDAL_EXTERIOR_CONTEXT_ROOT",
+  "poses": [
+    {
+      "parent": "brake-pedal-arm-v1",
+      "source": "assets-src/moto-components/brake-pedal-arm-v1/child-candidate.blend",
+      "sha256": "16b52bb4b2de8b4a010fb26c59d911a47860aa2d13fd8fe23f3d8428cf55bb0c",
+      "objects": [
+        "BRAKE_PEDAL_COMPOUND_ARM_METAL"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "Canonical arm; origin is photo bend datum, not pivot",
+      "geometry_linked": true,
+      "materials_linked": true
+    },
+    {
+      "parent": "brake-pedal-pivot-sleeve-v1",
+      "source": "assets-src/moto-components/brake-pedal-pivot-sleeve-v1/child-candidate.blend",
+      "sha256": "c738837685e2f634204e65d56646b902e72cf8d05bd38fac53de590851a80006",
+      "objects": [
+        "BRAKE_PEDAL_TRANSVERSE_PIVOT_OPEN_TUBE"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.006300000008195639
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.006300000008195639
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.03200000151991844
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "Separate sleeve: axisZ, projected guide only; axial seating unknown",
+      "geometry_linked": true,
+      "materials_linked": true
+    },
+    {
+      "parent": "brake-pedal-linkage-lug-v1",
+      "source": "assets-src/moto-components/brake-pedal-linkage-lug-v1/child-candidate.blend",
+      "sha256": "3d896aa240e7eb12e09fde8e66f6fef266eb0999f9807ccd716acca08fbc921b",
+      "objects": [
+        "BRAKE_PEDAL_TAPERED_SINGLE_HOLE_LINKAGE_LUG"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.07434000074863434
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.10840000212192535
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.009999999776482582
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "Separate lug: photo hole guide, Z/root unknown",
+      "geometry_linked": true,
+      "materials_linked": true
+    },
+    {
+      "parent": "brake-pedal-textured-pad-v1",
+      "source": "assets-src/moto-components/brake-pedal-textured-pad-v1/child-candidate.blend",
+      "sha256": "be7bcd45040fbafa1cb9166de2d262991ea838179dd4e749096bfbd50ee14116",
+      "objects": [
+        "BRAKE_PEDAL_ROUNDED_PAD_WITH_REAL_DIAMOND_RELIEF"
+      ],
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.2091600000858307
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.20475000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "role": "PARKED_PAD: original face-study orientation, NOT mounted foot-plane orientation",
+      "geometry_linked": true,
+      "materials_linked": true
+    }
+  ],
+  "world_hint_Q_EulerXYZ_deg": [
+    90,
+    0,
+    -90
+  ],
+  "world_hint_only": true,
+  "parked_pad_not_mounted": true,
+  "new_physical_ids": 0,
+  "art_accepted": false
+}

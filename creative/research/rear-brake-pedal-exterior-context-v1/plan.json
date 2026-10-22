@@ -1,0 +1,58 @@
+{
+  "authorization": "Coordinator dispatch within user-authorized autonomous motorcycle completion",
+  "scope": "One existing four-parent exterior pedal review context, zero new physical IDs",
+  "variant": "PF161002 related product source; current RDC125 exact pedal identity and installed offsets unconfirmed",
+  "frame": "Arm native +X projected front, +Y projected up, +Z estimated outward. Projection axes are not calibrated product camera or a certified installed frame.",
+  "relations": [
+    {
+      "parent": "arm",
+      "pose": "Identity, canonical arm study frame; origin corresponds source pixel178,159, not proven pivot centre"
+    },
+    {
+      "parent": "pivot-sleeve",
+      "translation_m": [
+        -0.0063,
+        0.0063,
+        -0.032
+      ],
+      "rotation": "Identity",
+      "basis": "Coarse photo-axis guide near pixel168,149, Z separation/side unqualified. Tube retains transverse axisZ and separate inboard context; no origin snap/root union/shaft."
+    },
+    {
+      "parent": "linkage-lug",
+      "translation_m": [
+        0.07434,
+        -0.1084,
+        0.01
+      ],
+      "rotation": "Identity",
+      "basis": "Native hole(0,-.005,0) mapped to source hole296,339 via arm projection. Root Z offset chosen for separate review near rod, not measured weld/contact. No pin."
+    },
+    {
+      "parent": "textured-pad",
+      "translation_m": [
+        0.20916,
+        -0.20475,
+        0.05
+      ],
+      "rotation": "Identity REVIEW ONLY, not installed foot-plane normal",
+      "basis": "Approximate source-pad projected centre510,484 versus arm terminal484,438. Retain original face-facing study pose and park with visible separation; true tilt/underside/seat unresolved, no fictitious closure."
+    }
+  ],
+  "bounded_uncertainties": "Arm source scale .00052.. .00075m/px. Sleeve projected XY +/-5mm and axial side/depth unknown, lug XY +/-3mm and Z +/-10mm, pad XY +/-8mm/Z +/-15mm. These are review allowances, not source measurements or OEM tolerances.",
+  "excluded": [
+    "Rod and clevis: different source photo and no documented pedal mating transform; lug9mm versus clevis6mm bores not a certified pair",
+    "Torsion spring, hidden pivot shaft, root joint, weld, retaining hardware and foot-plane mount not created"
+  ],
+  "stages": [
+    "Actually read3gray",
+    "Actually read2original-material",
+    "Actually read3native96 including independently lit neutral and FLOAT32 raw",
+    "Exact native links and GLB attribute/material byte preservation",
+    "Actual Babylon read"
+  ],
+  "world_hint": "Coordinator Q EulerXYZ90,0,-90 maps +X to-frontY, +Y to-upZ, +Z to-rightX; numeric convention only, not validated installed camera/pose. Do not transform parked pad as a qualified mounted foot surface.",
+  "art_accepted": false,
+  "fit_qualified": false,
+  "new_physical_ids": 0
+}

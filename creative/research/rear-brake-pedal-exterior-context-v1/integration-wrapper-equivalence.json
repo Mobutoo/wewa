@@ -1,0 +1,156 @@
+{
+  "source": "assets-src/moto-components/rear-brake-pedal-exterior-context-v1/integration-wrapper.blend",
+  "sha256": "c1aa7e26df56054a5fb8af80aa1d81eff31008c8e03f435d8af798515cabf5dc",
+  "collection": "REAR_BRAKE_PEDAL_EXTERIOR_INTEGRATION_V1",
+  "root": "REAR_BRAKE_PEDAL_EXTERIOR_CONTEXT_ROOT",
+  "objects": [
+    {
+      "parent": "brake-pedal-arm-v1",
+      "object": "BRAKE_PEDAL_COMPOUND_ARM_METAL",
+      "source_object": "BRAKE_PEDAL_COMPOUND_ARM_METAL",
+      "source": "assets-src/moto-components/brake-pedal-arm-v1/child-candidate.blend",
+      "source_sha256": "16b52bb4b2de8b4a010fb26c59d911a47860aa2d13fd8fe23f3d8428cf55bb0c",
+      "shared_exact_source_mesh_datablock": true,
+      "source_materials_unchanged": true,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "role": "Canonical arm; origin is photo bend datum, not pivot"
+    },
+    {
+      "parent": "brake-pedal-pivot-sleeve-v1",
+      "object": "BRAKE_PEDAL_TRANSVERSE_PIVOT_OPEN_TUBE",
+      "source_object": "BRAKE_PEDAL_TRANSVERSE_PIVOT_OPEN_TUBE",
+      "source": "assets-src/moto-components/brake-pedal-pivot-sleeve-v1/child-candidate.blend",
+      "source_sha256": "c738837685e2f634204e65d56646b902e72cf8d05bd38fac53de590851a80006",
+      "shared_exact_source_mesh_datablock": true,
+      "source_materials_unchanged": true,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.006300000008195639
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.006300000008195639
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.03200000151991844
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "role": "Separate sleeve: axisZ, projected guide only; axial seating unknown"
+    },
+    {
+      "parent": "brake-pedal-linkage-lug-v1",
+      "object": "BRAKE_PEDAL_TAPERED_SINGLE_HOLE_LINKAGE_LUG",
+      "source_object": "BRAKE_PEDAL_TAPERED_SINGLE_HOLE_LINKAGE_LUG",
+      "source": "assets-src/moto-components/brake-pedal-linkage-lug-v1/child-candidate.blend",
+      "source_sha256": "3d896aa240e7eb12e09fde8e66f6fef266eb0999f9807ccd716acca08fbc921b",
+      "shared_exact_source_mesh_datablock": true,
+      "source_materials_unchanged": true,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.07434000074863434
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.10840000212192535
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.009999999776482582
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "role": "Separate lug: photo hole guide, Z/root unknown"
+    },
+    {
+      "parent": "brake-pedal-textured-pad-v1",
+      "object": "BRAKE_PEDAL_ROUNDED_PAD_WITH_REAL_DIAMOND_RELIEF",
+      "source_object": "BRAKE_PEDAL_ROUNDED_PAD_WITH_REAL_DIAMOND_RELIEF",
+      "source": "assets-src/moto-components/brake-pedal-textured-pad-v1/child-candidate.blend",
+      "source_sha256": "be7bcd45040fbafa1cb9166de2d262991ea838179dd4e749096bfbd50ee14116",
+      "shared_exact_source_mesh_datablock": true,
+      "source_materials_unchanged": true,
+      "matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.2091600000858307
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.20475000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "role": "PARKED_PAD: original face-study orientation, NOT mounted foot-plane orientation"
+    }
+  ],
+  "same_as_review_source": "Original linked mesh datablocks and exact same four rigid matrices; object wrappers only, no geometry/material changes",
+  "review_source_sha256": "5ef6ea39574bb51ffe6e34ce59777b7b1881fe6153c33a6b9b5916201ea82bfa",
+  "physical_count_increment": 0,
+  "fit_qualified": false
+}
