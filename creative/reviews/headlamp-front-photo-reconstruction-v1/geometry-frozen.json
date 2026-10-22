@@ -1,0 +1,40 @@
+{
+  "status": "geometry and two96 proofs completed; stable source/GLB",
+  "files": [
+    {
+      "path": "assets-src/moto-components/headlamp-front-photo-reconstruction-v1/front-photo-reconstruction-v1.blend",
+      "sha256": "d88d70570fd661607069332f93642eb114457b8ca5365d87a8516d3a67b41700"
+    },
+    {
+      "path": "assets-src/moto-components/headlamp-front-photo-reconstruction-v1/front-photo-reconstruction-v1.glb",
+      "sha256": "caf33ad4508e7658287b94824f2e580df95db36023b5b63cc183866437208b82"
+    },
+    {
+      "path": "creative/reviews/headlamp-front-photo-reconstruction-v1/integration-fragment.json",
+      "sha256": "554dd28bd18093309f81ad884df1e658ef1b121d048a1b08996e6acc8e17a2be"
+    },
+    {
+      "path": "assets-src/moto-components/front-completion-p06-bulb-capsule-front15-v1/bulb-capsule-material.blend",
+      "sha256": "cc577f66d1348ea4ec9f6c54da2bd97a5866a2e1d78e9256c128d4bf9d40cb83"
+    },
+    {
+      "path": "assets-src/moto-components/headlamp-interior-completion-v3/visible-optics-v3.blend",
+      "sha256": "3743a39efb74545416cbe26c5d00d8bef97b9e240b535faf2e742fe4612445dd"
+    }
+  ],
+  "checks": "Native/export POSITION, node pose, material scalars, normalized buffers and glTF0errors0warnings passed. Eight posed rays hit reflector before housing. No housing/cowl/guard crossings; capsule clears reflector and glazing.",
+  "positive_contacts_disclosed": [
+    {
+      "pair": "reflector vs retained peripheral lip",
+      "triangle_contacts": 1094,
+      "interpretation": "Intended common peripheral seam contact; no housing obstruction claim."
+    },
+    {
+      "pair": "CL201023 opaque tip vs clear outer skin",
+      "triangle_contacts": 24,
+      "interpretation": "Unmodified linked kit overlap, not new reflector crossing."
+    }
+  ],
+  "exact_OEM": false,
+  "physical_bulb_fit_qualified": false
+}

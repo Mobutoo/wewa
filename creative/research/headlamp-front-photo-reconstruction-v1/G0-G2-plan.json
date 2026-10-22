@@ -1,0 +1,163 @@
+{
+  "revision": "headlamp-front-photo-reconstruction-v1",
+  "authorization": "User explicitly authorizes front/oblique-photo reconstruction using bounded estimated concavity; no bare-view prerequisite and no approval hold",
+  "scope": "Visible concave reflector shell, observed two openings and raised collar, copied v3 glazing with bounded RDC vertical fluting, retained transverse ridges and existing mounting frame; linked exterior CL201023 capsule, no hidden socket/contacts/filament",
+  "observed": [
+    "Circular glazing/rim forward of recessed near-central main opening",
+    "Smaller lower pilot opening",
+    "Main aperture raised circular edge",
+    "Four persistent glass lines and fine border striae"
+  ],
+  "not_traced_as_geometry": [
+    "Irregular moving zigzag highlights",
+    "Photographic bright/dark patches",
+    "Unknown physical facet topology"
+  ],
+  "depth_estimation": {
+    "Crosland_manual_outer_rim_points_px": [
+      [
+        354,
+        34
+      ],
+      [
+        501,
+        75
+      ],
+      [
+        593,
+        165
+      ],
+      [
+        611,
+        273
+      ],
+      [
+        564,
+        388
+      ],
+      [
+        453,
+        458
+      ],
+      [
+        323,
+        477
+      ],
+      [
+        204,
+        443
+      ],
+      [
+        123,
+        361
+      ],
+      [
+        98,
+        246
+      ],
+      [
+        139,
+        137
+      ],
+      [
+        236,
+        62
+      ]
+    ],
+    "outer_ellipse_fit_center_px": [
+      354.28,
+      257.31
+    ],
+    "semi_axes_px": [
+      258.96,
+      221.57
+    ],
+    "minor_axis_image_direction": [
+      0.063,
+      0.998
+    ],
+    "inferred_view_tilt_degrees": 31.17,
+    "working_R_mm": 85,
+    "main_opening_center_px": [
+      352,
+      307
+    ],
+    "estimated_front_plane_projection_of_main_center_px": [
+      364.54,
+      247.99
+    ],
+    "parallax_along_ellipse_minor_axis_px_approx": 58.1,
+    "depth_from_simple_orthographic_parallax_mm_approx": 36.9,
+    "annotation_uncertainty_px": 12,
+    "method_limit": "Uncalibrated perspective, front/oblique code-associated photographs not proven same specimen; ellipse/ridge frame and main-center offset approximate. Supports bounded appearance estimate, not metrology.",
+    "working_main_recess_mm": 38,
+    "authoring_range_mm": [
+      26,
+      50
+    ],
+    "range_basis": "Observed axial parallax roughly37mm, broadened for manual pointing, scale and specimen/camera uncertainty; not manufacturer tolerance."
+  },
+  "surface_controls": {
+    "main_center_xy_m": [
+      0.0045,
+      0.0008
+    ],
+    "main_opening_inner_radius_m": 0.0175,
+    "main_collar_outer_radius_m": 0.019,
+    "pilot_center_xy_m": [
+      0.003,
+      -0.037
+    ],
+    "pilot_inner_radius_m": 0.0063,
+    "pilot_collar_outer_radius_m": 0.0072,
+    "peripheral_radius_m": 0.0828,
+    "profile_status": "Single analytic quadratic in radial distance from observed offset main aperture, normalized to intersection with outer rim: z=-0.038+0.03755*(r^2-0.019^2)/(r_outer^2-0.019^2). No intermediate station profiles. Pilot local seat transition retained; not measured optical prescription.",
+    "pilot_recess_mm": 32,
+    "pilot_range_mm": [
+      24,
+      40
+    ],
+    "collar_visible_return_mm": 4,
+    "collar_range_mm": [
+      2,
+      7
+    ],
+    "shell_gauge_mm": 0.6,
+    "gauge_status": "Representational finite shell gauge estimated, no measured hidden backing or welds reconstructed"
+  },
+  "existing_kit": {
+    "glazing": "Copy v3 mesh in new source only; retain existing ridges and add vertical fluting to copied mesh. Original source immutable.",
+    "peripheral_lip": "Link unchanged v3 peripheral silver lip",
+    "capsule": "Link two exterior CL201023 objects unchanged; root XY main aperture andZ=-.042m, front tipZ=-.002m. Main ring return endsZ=-.042m. This is bounded presentation placement only; no complete bulb/socket/filament or focal qualification."
+  },
+  "G0": "visible reconstruction identified",
+  "G1": "bounded estimated exterior candidate",
+  "G2": "photo-derived approximate axial recession and explicit uncertainties",
+  "G5": "to test actual cavity/clearance, not qualified physical installation",
+  "G8": false,
+  "old_files_modified": false,
+  "storage_budget_MB": 40,
+  "no_blend1": true,
+  "RDC_variant_comparison": {
+    "private_path": "/workspace/wewa-assets/references/front-completion-front18-mounts-v1/RDC-headlight.webp",
+    "sha256": "c973b5eb6126d2284910bf7a9c08310769ce25e69a30823f3a71e5dced3019e3",
+    "actually_read": true,
+    "observed": "Mounted central capsule and nearvertical glass striation; two external guard bars belong to existing guard parent, not glazing.",
+    "comparison": "RDC constrains assembled visible pattern; related DJ201051 front/oblique constrain estimated concavity and underlying two openings, not exact OEM interchangeability.",
+    "flute_estimate": {
+      "pitch_mm": 9,
+      "pitch_range_mm": [
+        6,
+        12
+      ],
+      "peak_displacement_mm": 0.16,
+      "depth_range_mm": [
+        0.1,
+        0.5
+      ],
+      "edge_fade_mm": 8,
+      "limit": "Low resolution RDC photograph supports direction and pattern, not exact pitch/amplitude or optical prescription. Pattern may be subtle under bright lighting."
+    }
+  },
+  "rejected_diagnostic": "First monotone station-interpolated profile produced visible annular reflection bands; preserved under diagnostic-station-profile, replaced before final freeze."
+}
