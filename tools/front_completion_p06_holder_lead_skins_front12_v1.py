@@ -1,0 +1,18 @@
+"""DF201058 loose jacket/four visible insulation portions only, no connectors or pinout."""
+import bpy,runpy,json,hashlib
+from pathlib import Path
+from mathutils.bvhtree import BVHTree
+R=Path('/workspace/wewa');K='front-completion-p06-holder-lead-skins-front12-v1';H=R/'assets-src/moto-components'/K;O=R/'creative/reviews'/K;H.mkdir(exist_ok=False);O.mkdir(exist_ok=False);bpy.ops.wm.read_factory_settings(use_empty=True);u=runpy.run_path(str(R/'tools/front_completion_front10_mesh_helpers_v1.py'));sweep=runpy.run_path(str(R/'tools/front_completion_open_sweep_front12_v1.py'))['skin_mesh'];scale=.00025
+jacket=[(365,342,0),(405,352,.001),(470,376,0),(512,397,.002),(535,418,.004),(539,438,.003),(520,450,.001),(480,450,-.001),(423,441,0),(366,433,.001),(340,421,0),(322,408,0)]
+branches=[('VISIBLE_RED_SKIN_A',[(310,397,.003),(287,386,.003),(254,375,.0025),(231,366,.002),(214,353,.002)]),('VISIBLE_AMBER_SKIN_B',[(316,397,.0017),(300,382,.0017),(285,363,.0018),(268,348,.0018),(250,338,.0018)]),('VISIBLE_DARK_SKIN_C',[(322,397,.0004),(305,378,.0004),(291,358,.0005),(275,343,.0005),(257,334,.0005)]),('VISIBLE_RED_SKIN_D',[(328,397,-.0009),(311,375,-.0009),(296,354,-.0008),(280,338,-.0008),(263,331,-.0008)])]
+def world(points):return [((x-365)*scale,(390-y)*scale,z)for x,y,z in points]
+objects=[];audits=[];o,a=sweep('DF201058_FLATTENED_OUTER_JACKET_REVIEW_CUTS',world(jacket),.0018,.00075,u,twist=.40);objects.append(o);audits.append(a)
+for name,points in branches:o,a=sweep(name+'_NO_CONTACT_OR_CONDUCTOR',world(points),.00045,.00045,u);objects.append(o);audits.append(a)
+trees={}
+for ob in objects:
+ m=ob.data;m.calc_loop_triangles();trees[ob.name]=BVHTree.FromPolygons([v.co for v in m.vertices],[tuple(t.vertices)for t in m.loop_triangles],all_triangles=True)
+pairs=[]
+for i,left in enumerate(objects):
+ for right in objects[i+1:]:pairs.append({'left':left.name,'right':right.name,'triangle_surface_crossing_pairs':len(trees[left.name].overlap(trees[right.name]))})
+(O/'interface-check.json').write_text(json.dumps({'pairs':pairs,'total_crossing_pairs':sum(x['triangle_surface_crossing_pairs']for x in pairs),'scope':'Source triangle BVH body-pair overlap only, not minimum clearance or functional/electrical continuity'},indent=2));assert not any(x['triangle_surface_crossing_pairs']for x in pairs)
+(H/'parameters.json').write_text(json.dumps({'package':'P06','code':'DF201058','unit':'Five open exterior skins only: one flattened loose jacket and four visible branch-insulation portions, not a total conductor/pin count','source_register':'creative/research/front-completion-front12-candidates-v3/source-register.json','chosen_photo':'DF201058-0.jpg, uninstalled pose only','projected_scale_estimate_m_per_pixel':scale,'jacket_trace_pixels_and_author_z':jacket,'branch_traces_pixels_and_author_z':branches,'working_cross_section_m':{'jacket_halfwidth':.0018,'jacket_halfthickness':.00075,'branch_radius':.00045},'all_dimensions_estimated':True,'review_cuts':'Every skin ends open with no true bore/wall/conductor invented. Branch roots deliberately shortened/separated3D for review; no continuity/connection acceptance.','excluded':'Holder cap already exists separately, white plug/contact cavities and metal terminal geometry omitted, no P09 terminal remakes, no pinout or installed route','material':'Clean black/red/amber/dark exterior color hypotheses only, no wire gauge/standard or calibrated color claim'},indent=2));(O/'geometry-check.json').write_text(json.dumps({'objects':audits,'open_skin_bodies':5,'intentional_open_boundary_loops':10,'hidden_conductors_or_contacts':False,'mounted_fit':False},indent=2));u['gray_save'](H,'holder-leads',objects);print('five source skins, body-pair BVH0',len(pairs))
