@@ -1,0 +1,113 @@
+{
+  "target": "UpperDS181005 vs handleclampDS181019; lowerDS181020 / innerPF12101731family",
+  "claims": [
+    {
+      "id": "C01",
+      "statement": "DS181005 is upper frontfork bracket; DS181019 is handlebar upperclamphalf, not alternative upperyoke.",
+      "status": "documented_related_variant",
+      "evidence": [
+        "D04forksheet51 item10",
+        "D04handlesheet48 item12 qty2",
+        "RussianphysicalDS005/DS019 photographs"
+      ]
+    },
+    {
+      "id": "C02",
+      "statement": "PF121017 belongs to nominal31mm forkfamily in D04: item5 innerpipe, item2 oilseal explicitly For31DiaFork.",
+      "status": "documented_related_variant",
+      "limit": "Nominalfamilytext, not measured tubeOD/tolerance/currentRDCinspection."
+    },
+    {
+      "id": "C03",
+      "statement": "DS181020 lowerassembly has clampbores around tubelegs and centralstem; native lowerbody is isolatedcandidate, not wholephotoassembly.",
+      "status": "photo_inferred",
+      "evidence": [
+        "D04forksheet51item12",
+        "RussianDS181020photo",
+        "native lowerread"
+      ]
+    },
+    {
+      "id": "C04",
+      "statement": "Two DS181012 pluglike stepped externallythreaded parts andO-rings are drawn at top of forklegs. Two59040006 bolts withwashers above; D04 names M10x24.",
+      "status": "documented_related_variant",
+      "evidence": [
+        "D04forksheet51items7,18,19",
+        "BM150sheet49items7,19,20",
+        "physicalDS181012 and59040006photos"
+      ]
+    },
+    {
+      "id": "C05",
+      "statement": "DS181015 capnut andDS181016 washer, qty1 each, are on the central steeringaxis above upperplate in explodedview, distinct from twolegtopplugs.",
+      "status": "photo_inferred_from_catalogue",
+      "evidence": [
+        "D04forksheet51items8,9,10,12",
+        "physicalDS181015photo"
+      ],
+      "limit": "Centralrole inferred from drawing/quantities, not disassembledsameunit measurement."
+    },
+    {
+      "id": "C06",
+      "statement": "A narrower attachment at forklegtop can coexist with tubeOD31 and smaller upperplateholes. DS181012 physicalphoto shows reducedneck + centralfemale thread, giving concrete support for this architecture.",
+      "status": "photo_inferred",
+      "limit": "Exact member passingthrough plate (neckorbolt), bearingface, clearance, preload and height remain unknown; no seatedassembly photo or section."
+    },
+    {
+      "id": "C07",
+      "statement": "Do not force outerupperholes to31mm or treat them as tubeclampbores solely to remove assemblygap. Conversely, small upperholes alone do not prove wrongfamily.",
+      "status": "research_consequence",
+      "evidence": [
+        "C01",
+        "C02",
+        "C04",
+        "C06"
+      ],
+      "limit": "Not a fitacceptance. Sourceoriginalphotos/metric calibration still needed."
+    }
+  ],
+  "user_photo_annotation_arithmetic": {
+    "provenance": "Usermessage, parametersfile absent in thisworkspace; nativeguidecentres checked independently",
+    "photo_extreme_holes": [
+      {
+        "center_px": [
+          35,
+          111
+        ],
+        "radius_px": 9.5
+      },
+      {
+        "center_px": [
+          236,
+          109
+        ],
+        "radius_px": 10
+      }
+    ],
+    "scale_m_per_px": 0.00088,
+    "derived_radius_mm": [
+      8.36,
+      8.8
+    ],
+    "derived_diameter_mm": [
+      16.72,
+      17.6
+    ],
+    "projected_center_distance_m": 0.17688875600218348,
+    "status": "estimated_user_supplied_phototrace; no calibratedmeasurement",
+    "nominal_tube_OD_m": 0.031,
+    "comparison_only": "Radiicomparison invalid as directfit if interfaces differ; M10 is nominalthread diameter, not proof of17mmholefill."
+  },
+  "family_identity_conclusion": "Sourcewideplate shape and listing/catalogue supportDS181005family. DS181019misidentification resolved. ExactcurrentRDCproductionrevision and physicaldimensions remain unconfirmed.",
+  "top_interface_conclusion": "Shouldered internallythreadedforkplug evidence materially supports smallerupperhole explanation; only qualitative sequence credible, interfaces notfullyresolved.",
+  "functions_not_assigned": [
+    "Otherfive upperplateholes not mapped to parts as facts",
+    "Exact reducedneck throughplate vs boltpassage alternative",
+    "Precise loadpath/seatplane/contact/preload",
+    "Hidden forkplug/threadpitch and O-ring gland dimensions"
+  ],
+  "installed_fit_claim": false,
+  "bores_resized": false,
+  "source_edits": false,
+  "fabrication": false
+}
