@@ -1,0 +1,222 @@
+{
+  "component_id": "MOTO-ENGINE-PROTECTION-HOOP-001",
+  "package": "P26",
+  "authorization": "Coordinator dispatch within user-authorized autonomous motorcycle completion",
+  "physical_count_increment": 0,
+  "new_physical_ids": 0,
+  "kind": "four_existing_parent_kit_separated_review",
+  "main_current_hoop_world_translation_m": [
+    0,
+    -0.02,
+    -0.43
+  ],
+  "main_current_hoop_rotation_degrees": [
+    0,
+    0,
+    0
+  ],
+  "hoop_local_transform": "identity; root and original hoop origin zero retained",
+  "poses": {
+    "engine-protection-hoop-tube": {
+      "translation_m": [
+        0,
+        0,
+        0
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "source_object": "Protection hoop tube only, tabs and centreplate absent",
+      "role": "exact_hoop_anchor",
+      "source_native_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "reason": "Identity common local transform: native hoop geometry and pose stay exact."
+    },
+    "engine-protection-centre-plate": {
+      "translation_m": [
+        0,
+        0,
+        0.09
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "source_object": "Protection hoop centralplate only, weld and hook absent",
+      "role": "parked_separate_no_mount_datum",
+      "source_native_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "reason": "Keep original source axes and shape; photo A/B identity only. Native has no actual common assembly datum. Display separation is deliberate, not a source-installed pose."
+    },
+    "engine-protection-terminal-a": {
+      "translation_m": [
+        -0.17,
+        0,
+        0.07
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "source_object": "First observed terminal-A only, tube weld opposite and hook abs",
+      "role": "parked_separate_no_mount_datum",
+      "source_native_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "reason": "Keep original source axes and shape; photo A/B identity only. Native has no actual common assembly datum. Display separation is deliberate, not a source-installed pose."
+    },
+    "engine-protection-terminal-b": {
+      "translation_m": [
+        0.17,
+        0,
+        0.145
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "source_object": "Second observed terminal-B only, tube weld opposite and hook ab",
+      "role": "parked_separate_upper_bore_local_origin_only",
+      "source_native_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "reason": "Keep original source axes and shape; photo A/B identity only. Native has no actual common assembly datum. Display separation is deliberate, not a source-installed pose."
+    }
+  },
+  "mounted_kit_ready": false,
+  "reason": "Historic guide files absent; source isolated parents provide no shared assembly transform. Do not reconstruct by snapping origins or guessed weld seating. Three accessory parents remain visibly separate as dispatch permits.",
+  "photo_findings": [
+    "174419 shows centre plate on upper crossbar, A on photo-left tube end and B on photo-right.",
+    "174418 confirms independently different offsets; does not measure weld/contact depth or certify pilot LH/RH.",
+    "These observations establish parts relationships only, not unique metric native transforms."
+  ],
+  "missing_resources": [
+    {
+      "path": "creative/reviews/engine-protection-junctions-guide-v1/guide-manifest.json",
+      "expected_sha256": "111ff46e06d50397331ce4d5aec500f1f53ab841f619a1cd13ca2dc8502ccadb",
+      "status": "absent in current workspace",
+      "effect": "Do not reuse remembered estimated poses; recover exact guide/native transforms for next review revision."
+    }
+  ],
+  "excluded": [
+    "old end-weld-A gray nonreceived",
+    "junction guide geometry",
+    "welds, hook, spacer, hidden contact or fasteners",
+    "mirroring or new geometry"
+  ],
+  "G0_G2": {
+    "unit": "one composition, four unchanged parents",
+    "axes": "Original isolated source XYZ kept; no LH/RH assertion",
+    "cameras": [
+      "quarter",
+      "reverse",
+      "front/source-plane"
+    ],
+    "gray3_then_material2_then_native96x3": true,
+    "neutral_independent_HDR": true,
+    "all_tangents_strict": true,
+    "display_gaps": "Positive separation between parked three pieces and hoop, no connection certification"
+  },
+  "G5": "fit_unknown",
+  "G8": false,
+  "art_accepted": false
+}

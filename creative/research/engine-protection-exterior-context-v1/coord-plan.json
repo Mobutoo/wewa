@@ -1,0 +1,245 @@
+{
+  "component_id": "MOTO-ENGINE-PROTECTION-HOOP-001",
+  "package": "P26",
+  "root_lookup_key": "engine-protection-hoop-tube",
+  "source": "assets-src/moto-components/engine-protection-exterior-context-v1/integration-wrapper.blend",
+  "source_sha256": "611b9e758d06f23025f2baed9ca16d7d711d9e8a625fae2e3c3faff589bb1428",
+  "collection": "ENGINE_PROTECTION_EXISTING_KIT_REVIEW_V1",
+  "root": "ENGINE_PROTECTION_HOOP_IDENTITY_ROOT",
+  "root_matrix": "identity",
+  "hoop_source_transform": "identity exactly, source coordinates/matrix untouched",
+  "world_root_hint_from_coordinator": {
+    "translation_m": [
+      0,
+      -0.02,
+      -0.43
+    ],
+    "rotation_degrees": [
+      0,
+      0,
+      0
+    ],
+    "scope": "Maintains current hoop only; does NOT mount parked accessories."
+  },
+  "poses": {
+    "engine-protection-hoop-tube": {
+      "translation_m": [
+        0,
+        0,
+        0
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "source_object": "Protection hoop tube only, tabs and centreplate absent",
+      "role": "exact_hoop_anchor",
+      "source_native_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "reason": "Identity common local transform: native hoop geometry and pose stay exact."
+    },
+    "engine-protection-centre-plate": {
+      "translation_m": [
+        0,
+        0,
+        0.09
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "source_object": "Protection hoop centralplate only, weld and hook absent",
+      "role": "parked_separate_no_mount_datum",
+      "source_native_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "reason": "Keep original source axes and shape; photo A/B identity only. Native has no actual common assembly datum. Display separation is deliberate, not a source-installed pose."
+    },
+    "engine-protection-terminal-a": {
+      "translation_m": [
+        -0.17,
+        0,
+        0.07
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "source_object": "First observed terminal-A only, tube weld opposite and hook abs",
+      "role": "parked_separate_no_mount_datum",
+      "source_native_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "reason": "Keep original source axes and shape; photo A/B identity only. Native has no actual common assembly datum. Display separation is deliberate, not a source-installed pose."
+    },
+    "engine-protection-terminal-b": {
+      "translation_m": [
+        0.17,
+        0,
+        0.145
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "source_object": "Second observed terminal-B only, tube weld opposite and hook ab",
+      "role": "parked_separate_upper_bore_local_origin_only",
+      "source_native_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "reason": "Keep original source axes and shape; photo A/B identity only. Native has no actual common assembly datum. Display separation is deliberate, not a source-installed pose."
+    }
+  },
+  "pose_evidence": "source photos establish part identities/relative relationships, not metric assembly transforms; no common source datum found",
+  "parked_three_not_mounted": true,
+  "mounted_kit_ready": false,
+  "auto_replace_whole_hoop_with_mounted_kit": false,
+  "display_separations": [
+    {
+      "a": "engine-protection-hoop-tube",
+      "b": "engine-protection-centre-plate",
+      "AABB_display_separation_m": 0.06400000355718648,
+      "not_joint_clearance": true
+    },
+    {
+      "a": "engine-protection-hoop-tube",
+      "b": "engine-protection-terminal-a",
+      "AABB_display_separation_m": 0.04200000329803485,
+      "not_joint_clearance": true
+    },
+    {
+      "a": "engine-protection-hoop-tube",
+      "b": "engine-protection-terminal-b",
+      "AABB_display_separation_m": 0.06605873266407038,
+      "not_joint_clearance": true
+    },
+    {
+      "a": "engine-protection-centre-plate",
+      "b": "engine-protection-terminal-a",
+      "AABB_display_separation_m": 0.10200002767992579,
+      "not_joint_clearance": true
+    },
+    {
+      "a": "engine-protection-centre-plate",
+      "b": "engine-protection-terminal-b",
+      "AABB_display_separation_m": 0.10250042232711362,
+      "not_joint_clearance": true
+    },
+    {
+      "a": "engine-protection-terminal-a",
+      "b": "engine-protection-terminal-b",
+      "AABB_display_separation_m": 0.30450046129223063,
+      "not_joint_clearance": true
+    }
+  ],
+  "missing_guide": [
+    {
+      "path": "creative/reviews/engine-protection-junctions-guide-v1/guide-manifest.json",
+      "expected_sha256": "111ff46e06d50397331ce4d5aec500f1f53ab841f619a1cd13ca2dc8502ccadb",
+      "status": "absent in current workspace",
+      "effect": "Do not reuse remembered estimated poses; recover exact guide/native transforms for next review revision."
+    }
+  ],
+  "next_step": "Recover exact original junction guide/manifest transforms, review as hypotheses and produce a new revision with source-supported poses; never treat guide as fifth physical object.",
+  "no_mirror_or_hidden_contacts": true,
+  "physical_count_increment": 0,
+  "fit_qualified": false,
+  "G8": false
+}

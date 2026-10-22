@@ -1,0 +1,10 @@
+"""Reopen the actual saved wrapper and verify mesh/material links and exact hoop pose."""
+import bpy,json,hashlib
+from pathlib import Path
+from mathutils import Matrix
+R=Path('/workspace/wewa');K='engine-protection-exterior-context-v1';D=R/'creative/research'/K;H=R/'assets-src/moto-components'/K;O=R/'creative/reviews'/K;sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();m=json.loads((D/'native-links-and-transforms.json').read_text());parents={p['key']:p for p in json.loads((D/'parent-native-read.json').read_text())['parents']};bpy.ops.wm.open_mainfile(filepath=str(H/'integration-wrapper.blend'));bpy.context.view_layer.update();rows=[]
+for r in m['objects']:
+ assert sha(R/r['source'])==r['source_sha256'];ob=next(o for o in bpy.context.scene.objects if o.type=='MESH' and o.name==r['object']);original=next(data for data in bpy.data.meshes if data.library and data.name==parents[r['key']]['objects'][0]['data'] and Path(bpy.path.abspath(data.library.filepath)).resolve()==(R/r['source']).resolve());assert ob.data==original and ob.data.library;assert [a.material.name for a in ob.material_slots]==parents[r['key']]['objects'][0]['materials'];assert all(a.material.library and Path(bpy.path.abspath(a.material.library.filepath)).resolve()==(R/r['source']).resolve()for a in ob.material_slots);delta=max(abs(ob.matrix_world[i][j]-r['matrix_context'][i][j])for i in range(4)for j in range(4));assert delta<1e-6
+ if r['key']=='engine-protection-hoop-tube':assert max(abs(ob.matrix_world[i][j]-r['matrix_source_world'][i][j])for i in range(4)for j in range(4))==0
+ rows.append({'key':r['key'],'same_linked_mesh_datablock':True,'same_linked_material_slots':True,'source_sha256':r['source_sha256'],'actual_pose_max_delta':delta,'hoop_original_pose_exact':r['key']=='engine-protection-hoop-tube','role':r['role']})
+(O/'linked-reuse-check.json').write_text(json.dumps({'source_sha256':sha(H/'integration-wrapper.blend'),'actual_wrapper_reopened':True,'objects':rows,'hoop_exact':True,'accessories_parked':True,'source_materials_unchanged':True,'protocol_sha256':sha(Path(__file__)),'art_accepted':False},indent=2))
