@@ -1,0 +1,68 @@
+{
+  "rejected_prior_probe": "native-datums-v1.json mixed unlinked accessory local transforms with tank body sampling,100mm residual; not a usable pose",
+  "scope": "Exact authored tank/cap candidate datums; estimated review relation, not physical registration",
+  "inputs": {
+    "fuel-tank-shell": {
+      "source": "assets-src/moto-components/fuel-tank-shell/fuel-tank-shell-v1.blend",
+      "sha256": "d0726a48b0254790c217d9676c1d0af02a6a9eed79fd2961fa36f2b7bba11362",
+      "bounds": {
+        "min": [
+          -0.16199477016925812,
+          -0.10294979065656662,
+          -0.3509993553161621
+        ],
+        "max": [
+          0.16199477016925812,
+          0.40498411655426025,
+          -0.10409187525510788
+        ]
+      }
+    },
+    "fuel-cap-exterior-envelope-v2": {
+      "source": "assets-src/moto-components/fuel-cap-exterior-envelope-v2/fuel-cap-exterior-envelope-v2.blend",
+      "sha256": "80b758fa75348e9bdcb878b34633a3eaeecbb028f15fef45857a202aa3397002",
+      "bounds": {
+        "min": [
+          -0.03318925201892853,
+          -0.022936727851629257,
+          0.0
+        ],
+        "max": [
+          0.03318925201892853,
+          0.022364746779203415,
+          0.007499999832361937
+        ]
+      }
+    }
+  },
+  "filler_center_XY_m": [
+    0,
+    0.112
+  ],
+  "selected_actual_top_neck_bins": 64,
+  "plane_z_equals_aX_plus_bYminus0112_plus_c": [
+    -2.3572537283106312e-05,
+    -0.056954922266750564,
+    -0.10619675763537577
+  ],
+  "max_plane_residual_m": 0.0003415243058530748,
+  "proposed_translation_m": [
+    0,
+    0.112,
+    -0.10419675763537577
+  ],
+  "proposed_rotation_degrees": [
+    -3.2597545254957176,
+    0.0013506068550184613,
+    0.0
+  ],
+  "display_gap_m": 0.002,
+  "critical_limits": [
+    "All source dimensions are historical estimates",
+    "Cap working68x47mm versus tank inner-mouth diameter56mm leaves nominal width/height mismatch; not received fit",
+    "2mm display gap is not a physical spacer or gasket",
+    "Lock/key slot/hinge/underside omitted in existing cap source; do not invent to hide mismatch",
+    "Plane is candidate sampling only, no calibrated photo or manufacturer measure"
+  ],
+  "art_accepted": false
+}
