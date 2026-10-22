@@ -328,3 +328,9 @@ Les [répétitions provisoires sont désormais autorisées](creative/workflow/mo
 - [Châssis central, batterie, support, sangle et dessous de selle — sources et contrôles96](assets-src/moto-components/chassis-interior-completion-v1/README.md). Cinq nouvelles familles observables enregistrées, variantes apparentées et raccords non reçus.
 - [Carter moteur central — omission identifiée et premier candidat de comparaison](assets-src/moto-components/engine-exterior-completion-v1/README.md). Débord inférieur à corriger dans la révision suivante ; premier candidat conservé.
 - [Tiges arrière, matière sombre et géométrie inchangée](creative/reviews/rear-indicator-dark-polymer-v2/README.md).
+
+## Livraison actuelle — moteur, cadre et assemblage140
+
+[Ouvrir les vues, Blender, glTF et la récupération vérifiée](creative/reviews/motorcycle-assembled-v1/README.md) · [Suivi v5 et blocages exacts](creative/workflow/motorcycle-remaining-execution-2026-10-22-v5.json).
+
+Cette livraison remplace les aperçus globaux101 ci-dessus. Trois rendus natifs96 et six vues Babylon réelles. Moteur, cadre/batterie, protections RDC, roue arrière et répétitions autorisées intégrés. 140 parents ne sont pas 140 pièces physiques finalisées ; le réflecteur et les interfaces cachées restent ouverts.

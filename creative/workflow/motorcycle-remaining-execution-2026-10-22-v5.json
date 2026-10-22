@@ -1,0 +1,53 @@
+{
+  "schema": 5,
+  "date": "2026-10-22",
+  "supersedes_progress": "motorcycle-remaining-execution-2026-10-22-v4.json",
+  "user_goal": "Finish the motorcycle autonomously including engine and chassis interior",
+  "state": "assembled_available_sources_remaining_evidence_and_fit_gaps",
+  "current_child": null,
+  "registered_partial_candidates": 205,
+  "linked_instance_parents": 140,
+  "packages_complete": 0,
+  "whole_motorcycle_art_accepted": false,
+  "whole_motorcycle_complete": false,
+  "repetition_authorized": true,
+  "repetition_decision_pending": false,
+  "delivery": "creative/reviews/motorcycle-assembled-v1/README.md",
+  "native": "assets-src/moto-components/whole-exterior-material-preview-v7/whole-exterior-material-preview-v7.blend",
+  "runtime": "assets-src/moto-components/motorcycle-assembled-v1.gltf",
+  "checks": {
+    "native_views_96_samples": 3,
+    "actual_babylon_views": 6,
+    "gltf_errors": 0,
+    "portable_files_locally_verified": 283,
+    "triangles": 23897701
+  },
+  "next": [
+    {
+      "task": "Bare headlamp reflector",
+      "required_evidence": "Identified physical bare component lip/neck/profile/facets; FIEM and Varroc last circuits exhausted",
+      "state": "source_blocked_no_generic_bowl"
+    },
+    {
+      "task": "Hidden mounting interfaces and upper chaincase front attachment",
+      "required_evidence": "Identifiable exposed attachment views and compatible actual-reference dimensions",
+      "state": "source_and_fit_open"
+    },
+    {
+      "task": "JK rubber omitted lower sector",
+      "required_evidence": "Physical lower envelope/end/bore views; current source diagnostic cut retained",
+      "state": "source_blocked_no_invented_closure"
+    },
+    {
+      "task": "Cable endpoints and current variant mechanical fit",
+      "required_evidence": "Installed route endpoints and mating geometry",
+      "state": "source_and_fit_open"
+    },
+    {
+      "task": "LOD, engine integration and artistic reception",
+      "state": "not_done",
+      "depends_on": "Source/fit resolution and actual received targets"
+    }
+  ],
+  "policy": "Do not repeat exhausted network circuits without new identifiable candidate; do not fabricate hidden critical geometry; no automatic G8; existing thirty-package gates preserved"
+}
