@@ -1,0 +1,9 @@
+import json
+from pathlib import Path
+from playwright.sync_api import sync_playwright
+O=Path(__file__).resolve().parent
+with sync_playwright() as p:
+ b=p.chromium.launch(executable_path='/usr/bin/chromium',args=['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader']);page=b.new_page(viewport={'width':1000,'height':800});errors=[];page.on('pageerror',lambda e:errors.append(str(e)));page.goto('http://127.0.0.1:4178/assets-src/moto-components/engine-exterior-completion-v1/runtime.html',wait_until='networkidle',timeout=120000);page.wait_for_function('window.proof?.ready',timeout=120000)
+ page.evaluate('''()=>{const {scene,camera}=window.ctx;const mm=scene.meshes.filter(m=>m.getTotalVertices()>0);let lo=[Infinity,Infinity,Infinity],hi=[-Infinity,-Infinity,-Infinity];for(const m of mm){m.computeWorldMatrix(true);const b=m.getBoundingInfo().boundingBox;for(let i=0;i<3;i++){lo[i]=Math.min(lo[i],b.minimumWorld.asArray()[i]);hi[i]=Math.max(hi[i],b.maximumWorld.asArray()[i]);}}camera.target.copyFromFloats(...lo.map((x,i)=>(x+hi[i])/2));camera.radius=.9;scene.render();window.proof.bounds={lo,hi};}''')
+ page.wait_for_timeout(500);page.screenshot(path=str(O/'runtime-quarter.png'));report=page.evaluate('window.proof');report['page_errors']=errors
+ report['canvas']=page.evaluate('''async()=>{const {engine,scene}=window.ctx;scene.render();const w=engine.getRenderWidth(),h=engine.getRenderHeight(),p=await engine.readPixels(0,0,w,h);let changed=0;for(let i=0;i<p.length;i+=4)if(Math.max(...[0,1,2].map(j=>Math.abs(p[i+j]-p[j])))>10)changed++;return {width:w,height:h,changed_pixels:changed};}''');report['scope']='Real Babylon GLB import, Chromium software WebGL; not physical Safari or artistic acceptance';assert not errors and report['meshes']>=8 and report['canvas']['changed_pixels']>1000,report;(O/'runtime-check.json').write_text(json.dumps(report,indent=2));b.close()

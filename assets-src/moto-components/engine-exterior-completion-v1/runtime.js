@@ -1,0 +1,4 @@
+import {Engine,Scene,ArcRotateCamera,Vector3,HemisphericLight,SceneLoader,Color4} from '@babylonjs/core';
+import '@babylonjs/loaders/glTF';
+const engine=new Engine(document.getElementById('c'),true,{preserveDrawingBuffer:true});const scene=new Scene(engine);scene.clearColor=new Color4(.14,.14,.14,1);const camera=new ArcRotateCamera('camera',-.8,1.15,1.05,new Vector3(0,-.51,-.18),scene);camera.minZ=.005;camera.attachControl();new HemisphericLight('neutral',new Vector3(0,1,0),scene).intensity=1.4;
+await SceneLoader.AppendAsync('./','engine-exterior-completion-v1.glb',scene);await scene.whenReadyAsync();scene.render();window.proof={ready:true,meshes:scene.meshes.filter(m=>m.getTotalVertices()>0).length,triangles:scene.meshes.reduce((s,m)=>s+m.getTotalIndices()/3,0),textures:scene.textures.map(t=>({name:t.name,ready:t.isReady()}))};window.ctx={scene,engine,camera};engine.runRenderLoop(()=>scene.render());

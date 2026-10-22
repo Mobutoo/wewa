@@ -1,0 +1,16 @@
+08:32:51 | INFO: Data are loaded, start creating Blender stuff
+08:32:51 | INFO: Blender create Mesh node MAJOR_LH_DONOR_EXTERIOR_PERIPHERAL_CAST_WALLS_OPEN_ENGINE_V
+08:32:51 | INFO: Blender create Mesh node RH_DONOR_MAJOR_PERIPHERAL_WALLS_OBSERVED_ROOT_COLUMNS_OPEN_
+08:32:51 | INFO: Blender create Mesh node LH_LOWER_SERVICE_ACCESS_NECK_VISIBLE_SHORT_INNER_HELIX.001
+08:32:51 | INFO: glTF import finished in 0.73s
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 01:31:14)
+Read blend: "/workspace/wewa/assets-src/moto-components/engine-exterior-completion-v1/engine-exterior-completion-v1.blend"
+Traceback (most recent call last):
+  File "/workspace/wewa/assets-src/moto-components/engine-exterior-completion-v1/check_and_render.py", line 14, in <module>
+    (O/'parity.json').write_text(json.dumps(report,indent=2));assert na==nb and a==b,report
+                                                                     ^^^^^^^^^^^^^^^
+AssertionError: {'source_triangles': 1459902, 'export_triangles': 660742, 'triangle_position_multiset_equal_10um': False, 'source_meshes': 8, 'export_meshes': 3, 'source_sha256': '3341b83b8dc80e58ae2c350d227a8279465055ec193ccee3b2ffacc7434d6ef8', 'glb_sha256': '633a2999b6f97072877c9cc75a2e3e658e305d5d81b4fb94ffb270a38e51f130', 'missing_triangles': 814237, 'added_triangles': 15077, 'scope': 'Evaluated triangle world position parity after actual GLB reimport; 10um quantization, no art or OEM fit acceptance'}
+
+Error: script failed, file: 'assets-src/moto-components/engine-exterior-completion-v1/check_and_render.py', exiting.
+
+Blender quit
