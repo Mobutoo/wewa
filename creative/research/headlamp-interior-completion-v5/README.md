@@ -1,0 +1,12 @@
+# Phare — dernière recherche v5, deux circuits clos
+
+**Aucune nouvelle référence suffisante pour une cuve profonde ou une architecture de facettes. Aucun modèlev5, aucun nouveau rendu, aucune extrusion arbitraire. V3 reste inchangée.**
+
+1. [139-qmb, éclairage d’occasion](https://139-qmb.ru/category/fara-avtomobilnaya/) puis [pièces Bajaj d’occasion](https://139-qmb.ru/category/b-u-zapchasti-dlya-mototsiklov-bajaj/) : pages obtenues et noms/liens produits lus. Les entrées pertinentes concernent des supports de phare, feu arrière ou clignotants ; aucune unité optique séparée avec face/profil/dos utile dans le contenu consulté. Les supports ne deviennent pas une preuve de forme du réflecteur.
+2. OLX, annonces de démontage Boxer : [annonce1](https://www.olx.ua/d/uk/obyavlenie/rozborka-bajaj-boxer-125-150-dvigun-panel-priladiv-ta-inshi-detali-IDY1mtv.html), [annonce2](https://www.olx.ua/d/uk/obyavlenie/razborka-zapchastini-bajaj-boxer-ID10VzVU.html), [annonce3](https://www.olx.ua/d/uk/obyavlenie/razborka-zapchasti-bajaj-boxer-badzhadzh-bokser-ID10umAi.html). Douze photographies ont été téléchargées et réellement ouvertes : motos assemblées et pièces moteur. La dernière montre deux motos utilisées en vue frontale, toujours vitrées et dans leur boîtier ; pas le profil/dos de leur même unité optique isolée. Les reflets ne fournissent pas une profondeur mesurée ou des normales de facettes.
+
+`source-register.json` conserve URL/HTTP/SHA des pages et acquisitions. `images-viewed.json` conserve les douze observations et SHA image par image. `decision.json` fixe le résultat négatif et la clôture. Les originaux restent privés dans `/workspace/wewa-assets/references/headlamp-interior-completion-v5/`, non publiés et non utilisés comme textures.
+
+La recherche a été précédée d’une découverte web ciblant occasion/salvage Boxer/Pulsar rond et codeDJ201051. Seuls les deux circuits ci-dessus ont été acquis et suivis ; aucun retour sur les circuits fournisseurs épuisés. Aucun compte, achat ou contact vendeur. La conclusion est bornée aux documents consultés, pas une preuve d’inexistence universelle.
+
+Le champv3 est une simplification frontale plane à0,45mm ; il ne restitue pas la concavité du réflecteur et ne certifie aucun logement d’ampoule, foyer ou montage physique. Le contrôle PBR global a signalé le disque blanc uniforme : aucune parité artistique n’est revendiquée. Les autres livraisons finales continuent indépendamment. Aucun natif coûteux lancé, aucun Git modifié ; disque relevé à environ131Mo libres avant ce petit gel documentaire.
