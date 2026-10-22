@@ -1,0 +1,11 @@
+# Coordinate-conversion evidence checkpoint
+
+Authority: Coordinator dispatch within user-authorized autonomous motorcycle completion. A=((-Z),(X),(Y)) is baked into the **two exact RH native parents already composed in side-cover-right-v2**, not reconstructed from photos or copied from LH.
+
+The prior `right-side-cover-world-pose-audit-v1` freeze remains intact. `plan.json` records the new bounded derivative scope. `native-reopen-check.json` actually opens the historical native and derivative and verifies A positions, source normal/UV/material preservation, zero origins, identity matrices, two objects and no linked native libraries. Binary corner dumps encode actual reopened derivative triangle corners solely for independent GLB verification, not a supplied replacement model.
+
+`check-export.mjs` compares oriented triangle corner sets, normals, UV convention and actual tangents to the real GLB. Positions are exact; normal/tangent differences are recorded against explicit bounds, accounting for Blender custom-normal quantization/export rounding. Winding reversal and source triangle connectivity were verified in the conversion. `official-exporter-tangent-convention.json` preserves actual Blender4.3.2 exporter code evidence for its UV/sign behavior; no invented second sign change is applied.
+
+`check-materials.mjs` compares actual historical and derivative GLB materials and embedded texture bytes. `render-final.py` provides an independently lit third native96 frame without touching saved geometry/materials. `build-context.py` exposes `build_context()` and constructs one optional positive-scale exemplar at proposed T. It verifies only coarse side/height/order bounds, preserving the nonzero nominal photo shift in `estimated-context-pose-check.json`. `context-export.mjs` checks the actual translated GLB bounds. None of these proves contact, mount retention, exact photo registration or artistic reception.
+
+Frozen checkpoint excludes mutable ledgers/catalogs outside this namespace and generated Python cache. `protocol-snapshots/` pins the exact existing raw/coordination checker contracts used. `source-and-export-inputs.json` pins immutable historical and new sources. No source rewrite, old-freeze edit, Git command or root-metadata edit.

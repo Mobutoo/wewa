@@ -1,0 +1,176 @@
+{
+  "source": "assets-src/moto-components/side-cover-right-v2/child-candidate.blend",
+  "source_sha256": "d7455350bc7a483f21d7dee506a9cecfb916ab0c19db6f9aeb7856f14447a295",
+  "A_rows": [
+    [
+      0.0,
+      0.0,
+      -1.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ]
+  ],
+  "determinant": -1.0,
+  "objects": [
+    {
+      "object": "RIGHT_COVER_OUTER_SKIN",
+      "vertices": 13441,
+      "polygons": 13440,
+      "triangles": 26640,
+      "maximum_position_A_error_m": 0.0,
+      "maximum_corner_normal_A_error": 1.3272757648662034e-05,
+      "original_triangle_vertex_connectivity_preserved": true,
+      "winding_reversed_once": true,
+      "uv_by_face_vertex_identical": true,
+      "maximum_tangent_A_error": 5.164520167494461e-06,
+      "maximum_bitangent_sign_reversal_error": 0.0,
+      "tangent_scope": "UV skin: T_new=A*T_old, handedness_new=-handedness_old",
+      "materials_before": [
+        {
+          "name": "P04_PRESERVED_ORIGINAL_SKIN_MATERIAL",
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Metallic": 0.0,
+                "Roughness": 0.3499999940395355,
+                "IOR": 1.5,
+                "Alpha": 1.0,
+                "Weight": 0.0,
+                "Diffuse Roughness": 0.0,
+                "Subsurface Weight": 0.0,
+                "Subsurface Scale": 0.05000000074505806,
+                "Subsurface IOR": 1.399999976158142,
+                "Subsurface Anisotropy": 0.0,
+                "Specular IOR Level": 0.5,
+                "Anisotropic": 0.0,
+                "Anisotropic Rotation": 0.0,
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746,
+                "Coat IOR": 1.5,
+                "Sheen Weight": 0.0,
+                "Sheen Roughness": 0.5,
+                "Emission Strength": 0.0,
+                "Thin Film Thickness": 0.0,
+                "Thin Film IOR": 1.3300000429153442
+              }
+            },
+            {
+              "name": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "inputs": {
+                "Thickness": 0.0
+              }
+            },
+            {
+              "name": "Image Texture",
+              "type": "ShaderNodeTexImage",
+              "inputs": {},
+              "image": "original-right-red-black-v1.png",
+              "image_sha256": "e25375f89937b1626f3ee74c1f1be59f58ff25ec2de64c351eddf6f376385bb8",
+              "colorspace": "sRGB"
+            }
+          ],
+          "links": [
+            [
+              "Principled BSDF",
+              "BSDF",
+              "Material Output",
+              "Surface"
+            ],
+            [
+              "Image Texture",
+              "Color",
+              "Principled BSDF",
+              "Base Color"
+            ]
+          ]
+        }
+      ],
+      "materials_unchanged": true,
+      "geometry_digest": "e21f1d8a3e8689eb67176724acaa700b3f6591cd5f3bc91be5badd6dc0e4009d"
+    },
+    {
+      "object": "RIGHT_COVER_LOWER_ROUND_VISIBLE_HEAD_NO_DRIVE_CLAIM",
+      "vertices": 8066,
+      "polygons": 8256,
+      "triangles": 16128,
+      "maximum_position_A_error_m": 0.0,
+      "maximum_corner_normal_A_error": 7.66562709295308e-05,
+      "original_triangle_vertex_connectivity_preserved": true,
+      "winding_reversed_once": true,
+      "uv_by_face_vertex_identical": true,
+      "maximum_tangent_A_error": null,
+      "maximum_bitangent_sign_reversal_error": null,
+      "tangent_scope": "UV skin only; head has no UV and no source normal map, no artificial tangent/UV generated",
+      "materials_before": [
+        {
+          "name": "P04_PRESERVED_HEAD_MATERIAL",
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "ShaderNodeBsdfPrincipled",
+              "inputs": {
+                "Metallic": 0.6499999761581421,
+                "Roughness": 0.3799999952316284,
+                "IOR": 1.5,
+                "Alpha": 1.0,
+                "Weight": 0.0,
+                "Diffuse Roughness": 0.0,
+                "Subsurface Weight": 0.0,
+                "Subsurface Scale": 0.05000000074505806,
+                "Subsurface IOR": 1.399999976158142,
+                "Subsurface Anisotropy": 0.0,
+                "Specular IOR Level": 0.5,
+                "Anisotropic": 0.0,
+                "Anisotropic Rotation": 0.0,
+                "Transmission Weight": 0.0,
+                "Coat Weight": 0.0,
+                "Coat Roughness": 0.029999999329447746,
+                "Coat IOR": 1.5,
+                "Sheen Weight": 0.0,
+                "Sheen Roughness": 0.5,
+                "Emission Strength": 0.0,
+                "Thin Film Thickness": 0.0,
+                "Thin Film IOR": 1.3300000429153442
+              }
+            },
+            {
+              "name": "Material Output",
+              "type": "ShaderNodeOutputMaterial",
+              "inputs": {
+                "Thickness": 0.0
+              }
+            }
+          ],
+          "links": [
+            [
+              "Principled BSDF",
+              "BSDF",
+              "Material Output",
+              "Surface"
+            ]
+          ]
+        }
+      ],
+      "materials_unchanged": true,
+      "geometry_digest": "06b86c3e2629e593df28e4fabdb9cc4cc1deae37b34286984f837f08deef8e07"
+    }
+  ],
+  "source_unchanged": true,
+  "source_independent": true,
+  "object_origins_and_matrices_identity": true,
+  "collection": "WEWA_RIGHT_SIDE_COVER_WORLD_FRAME_V1",
+  "physical_count_increment": 0,
+  "art_accepted": false
+}

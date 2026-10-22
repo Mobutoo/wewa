@@ -1,0 +1,40 @@
+{
+  "source": "/workspace/scratch/blender-runtime/blender-4.3.2-linux-x64/4.3/scripts/addons_core/io_scene_gltf2/blender/exp/primitive_extract.py",
+  "sha256": "af539328c81432c23213e5c1d300b0b1646b528c3b419a5b18bfaa21597ad9ae",
+  "uv_lines_1based": [
+    1403,
+    1410
+  ],
+  "uv_excerpt": [
+    "",
+    "        # Blender UV space -> glTF UV space",
+    "        # u,v -> u,1-v",
+    "        uvs[:, 1] *= -1",
+    "        uvs[:, 1] += 1",
+    "",
+    "        self.dots[attr['gltf_attribute_name'] + '0'] = uvs[:, 0]",
+    "        self.dots[attr['gltf_attribute_name'] + '1'] = uvs[:, 1]"
+  ],
+  "tangent_sign_lines_1based": [
+    1505,
+    1519
+  ],
+  "tangent_sign_excerpt": [
+    "    def __get_bitangent_signs(self):",
+    "        self.signs = np.empty(len(self.blender_mesh.loops), dtype=np.float32)",
+    "        self.blender_mesh.loops.foreach_get('bitangent_sign', self.signs)",
+    "",
+    "        # Transform for skinning",
+    "        if self.armature and self.blender_object:",
+    "            # Bitangent signs should flip when handedness changes",
+    "            # TODO: confirm",
+    "            apply_matrix = self.armature.matrix_world.inverted_safe() @ self.blender_object.matrix_world",
+    "            tangent_transform = apply_matrix.to_quaternion().to_matrix()",
+    "            flipped = tangent_transform.determinant() < 0",
+    "            if flipped:",
+    "                self.signs *= -1",
+    "",
+    "        # No change for Zup -> Yup"
+  ],
+  "finding": "Official Blender4.3.2 maps V->1-V and preserves loop bitangent_sign at identity nonskinned meshes. Actual export parity checks this behavior. Independent native reflection check confirms T=A*T_source, sign=-source sign before export. No normal-map texture exists on these source materials."
+}

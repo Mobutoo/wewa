@@ -1,0 +1,9 @@
+# RH coordinate conversion: bounded technical review
+
+This derivative replaces the prior RH source convention for context integration; zero new physical IDs, no new source-shape/material reception. `catalog-fragment.json` keeps the existing composition identity and both existing child identities. `exemplar-wrapper.json` provides explicit source/files/review and function/wrapper paths. Its final-render report uses the existing coordinator preparation contract. The actual estimated native wrapper passed `check_whole_exterior_coverage_v2.py` without editing that checker or shared metadata.
+
+Stage order actually completed: 3 gray views read -> 2 original-material previews read -> 3 actual native96 views read, including independent neutral lighting -> actual Babylon profile read. All eight raw files have FLOAT32 multilayer EXR headers/dimensions checked. `conversion-check.json` verifies baked A positions, reversed winding, original topology, source normal/UV/tangent handling. `native-export-parity.json` verifies reopened source/export oriented triangle corner parity; `material-export-reuse-check.json` verifies source PBR and image byte equality. Both normalized and translated context GLBs validate without errors.
+
+The source is standalone with identity mesh object transforms; both RH meshes share the new collection. The optional context is one collection instance at estimated T=[−.135,.535,−.41], R0, scale1. `native-reopen-check.json` is the actual stock coordinator checker output. `context-export-check.json` verifies actual world bounds and positive unit scales.
+
+Do not infer physical fit from those checks. Original shell shape, thickness, open reverse, head/paint estimates and G4/G8 limitations persist. The context has an explicit 65mm rearward difference from nominal source-photo projection; no mounted registration is claimed. Old sources/freezes, Git and root metadata remain untouched.
