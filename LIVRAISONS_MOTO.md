@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **160 composants candidats enregistrés**, après
+Le registre courant comporte **161 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P15** : [MOTO-BRAKE-ROD-BARREL-PIN-001 — bounded exterior candidate — sources et images](creative/reviews/brake-rod-barrel-pin-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P17** : [MOTO-CENTRE-STAND-LATERAL-STUD-001 — bounded exterior candidate — sources et images](creative/reviews/centre-stand-lateral-stud-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P19** : [MOTO-CARBURETTOR-VISIBLE-SLOTTED-HEAD-001 — bounded exterior candidate — sources et images](creative/reviews/carburettor-visible-slotted-head-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P19** : [MOTO-CARBURETTOR-ENTRY-LOCKNUT-001 — bounded exterior candidate — sources et images](creative/reviews/carburettor-entry-locknut-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
