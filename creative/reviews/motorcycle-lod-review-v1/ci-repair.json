@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-22",
+  "baseline_run": "https://github.com/Mobutoo/wewa/actions/runs/39781214964",
+  "baseline_commit": "2aa6d6dd2484c743873a0ecaad98c6a48995c02e",
+  "baseline_state": "failed_before_this_change",
+  "baseline_errors": 28,
+  "causes": [
+    "Bare manifest-local README.md resolved to the repository README.md",
+    "Frozen documents compared to mutable newer documents"
+  ],
+  "repair": [
+    "Manifest-local resolution for bare/explicitly relative paths",
+    "Explicit exact-byte historical document targets bound to unchanged manifest hashes",
+    "Historical dependency recipe snapshots retained while adding the LOD tooling",
+    "Digest cache and bounded text cache instead of retaining all binary source bytes in memory"
+  ],
+  "original_manifests_modified": false,
+  "target_bindings": 13,
+  "path_resolution_tests": {
+    "passed": 6,
+    "includes_real_git_index_tamper_rejection": true
+  },
+  "selected_manifest_regression": "manifest-regression.json",
+  "selected_regression_scope": "13 originally failing manifests,147 file hashes,69 checkpoint PNGs,6490 review links and all12452 then-staged JSON documents; not a full final-commit CI result",
+  "full_verifier": "tools/check_motorcycle18_index_v3.py"
+}

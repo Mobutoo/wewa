@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Moto WEWA · revue du LOD</title>
+<style>*{box-sizing:border-box}body{margin:0;background:#19212a;color:#edf1f5;font:14px system-ui}canvas{width:100vw;height:100vh;display:block}aside{position:absolute;top:16px;left:16px;max-width:370px;background:#121a22e8;padding:16px;border-radius:12px}h1{font-size:18px;margin:0 0 8px}button,select{font:inherit;background:#304152;color:inherit;border:1px solid #6e8597;border-radius:6px;padding:7px;margin:3px 0}button{cursor:pointer}p{margin:8px 0;line-height:1.45}#error{color:#ffb6aa}nav{display:flex;gap:5px;flex-wrap:wrap}small{color:#b1c4d2}</style></head>
+<body><canvas aria-label="Moto 3D à examiner"></canvas><aside><h1>Moto WEWA · revue du LOD</h1>
+<label>Modèle <select id="model"><option value="lod">Candidat allégé</option><option value="source">Source détaillée v4 (759 Mo)</option></select></label>
+<nav><button data-view="quarter">Trois quarts</button><button data-view="left">Gauche</button><button data-view="right">Droite</button><button data-view="front">Face</button><button data-view="rear">Arrière</button><button data-view="cockpit">Cockpit</button></nav>
+<p id="status">Chargement…</p><p id="error" role="alert"></p><small>Glisser pour tourner, molette pour zoomer. Même cadrage pour comparer les modèles. Assemblage statique en revue ; les raccords mécaniques et la réception artistique restent ouverts.</small></aside>
+<script type="module" src="./viewer.js"></script></body></html>

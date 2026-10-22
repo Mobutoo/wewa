@@ -8,7 +8,8 @@
     "build": "tsc --noEmit -p app/tsconfig.json && vite build app --outDir ../dist --emptyOutDir",
     "preview": "vite preview app --outDir ../dist --host 0.0.0.0",
     "test": "tsc --noEmit -p app/tsconfig.tests.json && vitest run app/src",
-    "test:browser": "python3 tools/browser_checks.py"
+    "test:browser": "python3 tools/browser_checks.py",
+    "audit:motorcycle": "python3 tools/check_motorcycle_completion.py"
   },
   "dependencies": {
     "@babylonjs/core": "9.31.0",
@@ -19,6 +20,7 @@
     "@gltf-transform/functions": "4.5.1",
     "@types/node": "24.19.2",
     "gltf-validator": "2.0.0-dev.3.10",
+    "meshoptimizer": "0.25.0",
     "typescript": "7.0.2",
     "vite": "8.3.4",
     "vitest": "5.0.5"

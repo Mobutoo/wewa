@@ -1,6 +1,8 @@
 # Viva Wewa — pièces et contrôles de la moto
 
-**Livraison la plus récente : [moto assemblée v4 — moteur et phare corrigés, rendus et fichiers récupérables](creative/reviews/motorcycle-assembled-v4/README.md).** [Gros plan moteur](creative/reviews/motorcycle-assembled-v4/inspection-whole-v3/engine-engine-left.png) · [Phare monté](creative/reviews/motorcycle-assembled-v4/inspection-whole-v3/engine-headlamp.png) · [Suivi v7](creative/workflow/motorcycle-remaining-execution-2026-10-22-v7.json).
+**Revue complète du 22 octobre : [état des 30 paquets et inventaire des 205 fiches / 162 parents](creative/workflow/motorcycle-completion-audit-2026-10-22/README.md).** [Nouveau candidat LOD, images et contrôles](creative/reviews/motorcycle-lod-review-v1/README.md). Transmission finale non assemblée, raccords et fonctionnement ouverts ; aucune clôture de la moto. Quatre pages sources manquantes du registre sont rétablies.
+
+**Assemblage détaillé de référence : [moto assemblée v4 — moteur et phare corrigés, rendus et fichiers récupérables](creative/reviews/motorcycle-assembled-v4/README.md).** [Gros plan moteur](creative/reviews/motorcycle-assembled-v4/inspection-whole-v3/engine-engine-left.png) · [Phare monté](creative/reviews/motorcycle-assembled-v4/inspection-whole-v3/engine-headlamp.png) · [Suivi v7 conservé](creative/workflow/motorcycle-remaining-execution-2026-10-22-v7.json).
 
 
 Cette page permet d'ouvrir les images, les sources et les contrôles directement

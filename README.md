@@ -2,6 +2,8 @@
 
 [Voir les pièces de la moto, leurs images et leurs contrôles](LIVRAISONS_MOTO.md).
 
+[Bilan actuel : les 30 paquets, les éléments manquants et l'inventaire complet](creative/workflow/motorcycle-completion-audit-2026-10-22/README.md) · [Nouveau candidat allégé et comparaison avec la source](creative/reviews/motorcycle-lod-review-v1/README.md). La moto reste inachevée et distincte du modèle provisoire encore chargé par le jeu.
+
 Jeu solo de moto à Kinshasa pour navigateur PC et mobile. Le premier secteur réutilise les routes et modèles de Gombe fournis dans le dossier de reprise.
 
 ## Jouer et relire
