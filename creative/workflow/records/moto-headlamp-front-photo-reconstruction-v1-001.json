@@ -1,0 +1,202 @@
+{
+  "schema": 1,
+  "id": "MOTO-HEADLAMP-FRONT-PHOTO-RECONSTRUCTION-V1-001",
+  "label": "Réflecteur concave et vitre striée reconstruits par photographies",
+  "source_ids": [],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "RDC assembled appearance; related DJ201051 concavity and CL201023 exterior capsule remain conditional",
+    "variant_confirmed": false,
+    "usage": "Visible headlamp review candidate, no measured optical prescription",
+    "review_distances_m": [
+      0.25,
+      0.7,
+      2
+    ]
+  },
+  "source_register": "../../research/motorcycle-visible-corrections-v1/headlamp-source-register.json",
+  "sources": [
+    "prom-front",
+    "crosland-oblique",
+    "bajajonline-oblique",
+    "RDC-front"
+  ],
+  "claims": [
+    {
+      "id": "LAMP-DEPTH",
+      "source": "crosland-oblique",
+      "status": "estimated",
+      "adopted": true,
+      "method": "Ellipse and central aperture parallax from oblique photograph, broadened for uncalibrated perspective/specimen differences",
+      "uncertainty": "Working recession38mm, range26–50mm",
+      "scope": "Visible concavity only, not optical prescription"
+    },
+    {
+      "id": "LAMP-FLUTES",
+      "source": "RDC-front",
+      "status": "estimated",
+      "adopted": true,
+      "method": "Nearvertical striation on current model frontal photograph; bounded geometric fluting",
+      "uncertainty": "Pitch9mm range6–12mm, peak0.16mm range0.1–0.5mm",
+      "scope": "Visible pattern, not exact mould geometry"
+    }
+  ],
+  "views": [],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "LAMP-EXACT-OPTICS",
+      "status": "open",
+      "critical": true,
+      "blocks": [
+        "G5"
+      ],
+      "detail": "Related source identity, actual socket seating and optical performance not certified"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "headlamp-front-photo-reconstruction-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/headlamp-front-photo-reconstruction-v1/G0-G2-plan.json",
+          "sha256": "5f4eb28865bb8597d4770143a27595a1abf55b532fd5133d7e87346d747297b4",
+          "revision": "headlamp-front-photo-reconstruction-v1"
+        }
+      ],
+      "reason": "Bounded visible candidate compared against actually opened physical photographs; no artistic or exact optical reception",
+      "reviewed_at": "2026-10-22"
+    },
+    "G1": {
+      "status": "passed",
+      "revision": "headlamp-front-photo-reconstruction-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "source_view_dimension_matrix",
+          "path": "../../research/headlamp-front-photo-reconstruction-v1/G0-G2-plan.json",
+          "sha256": "5f4eb28865bb8597d4770143a27595a1abf55b532fd5133d7e87346d747297b4",
+          "revision": "headlamp-front-photo-reconstruction-v1"
+        },
+        {
+          "kind": "critical_gap_disposition",
+          "path": "../../../assets-src/moto-components/headlamp-front-photo-reconstruction-v1/README.md",
+          "sha256": "8dd478277eb0296d93466d6e252d521ff002d1b06b4338cad8a060b17916048a",
+          "revision": "headlamp-front-photo-reconstruction-v1"
+        }
+      ],
+      "reason": "Bounded visible candidate compared against actually opened physical photographs; no artistic or exact optical reception",
+      "reviewed_at": "2026-10-22"
+    },
+    "G2": {
+      "status": "passed",
+      "revision": "headlamp-front-photo-reconstruction-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "scale_and_comparison_protocol",
+          "path": "../../research/headlamp-front-photo-reconstruction-v1/G0-G2-plan.json",
+          "sha256": "5f4eb28865bb8597d4770143a27595a1abf55b532fd5133d7e87346d747297b4",
+          "revision": "headlamp-front-photo-reconstruction-v1"
+        }
+      ],
+      "reason": "Bounded visible candidate compared against actually opened physical photographs; no artistic or exact optical reception",
+      "reviewed_at": "2026-10-22"
+    },
+    "G3": {
+      "status": "passed",
+      "revision": "headlamp-front-photo-reconstruction-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "editable_source",
+          "path": "../../../assets-src/moto-components/headlamp-front-photo-reconstruction-v1/front-photo-reconstruction-v1.blend",
+          "sha256": "d88d70570fd661607069332f93642eb114457b8ca5365d87a8516d3a67b41700",
+          "revision": "headlamp-front-photo-reconstruction-v1"
+        },
+        {
+          "kind": "isolated_comparison",
+          "path": "../../reviews/headlamp-front-photo-reconstruction-v1/denoised-96/oblique.png",
+          "sha256": "bb8b9305c039aa6e18b2ac376446ec5c6d0336c190fa70de51a5ae743381366e",
+          "revision": "headlamp-front-photo-reconstruction-v1"
+        }
+      ],
+      "reason": "Bounded visible candidate compared against actually opened physical photographs; no artistic or exact optical reception",
+      "reviewed_at": "2026-10-22"
+    },
+    "G4": {
+      "status": "passed",
+      "revision": "headlamp-front-photo-reconstruction-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "surface_or_sound_comparison",
+          "path": "../../reviews/headlamp-front-photo-reconstruction-v1/denoised-96/front.png",
+          "sha256": "93e8210904f0975a67d3f1183931a783b64dde78ef85d6cfa6139b722cf8a75b",
+          "revision": "headlamp-front-photo-reconstruction-v1"
+        }
+      ],
+      "reason": "Bounded visible candidate compared against actually opened physical photographs; no artistic or exact optical reception",
+      "reviewed_at": "2026-10-22"
+    },
+    "G5": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Visible geometric ray/contact checks pass; exact bulb/socket fit and optical function remain unqualified",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "headlamp-front-photo-reconstruction-v1",
+  "export_revision": "headlamp-front-photo-reconstruction-v1",
+  "next_action": "Review final combined native/runtime views; retain conditional lamp identity and unknown socket/optical qualification",
+  "art_accepted": false
+}

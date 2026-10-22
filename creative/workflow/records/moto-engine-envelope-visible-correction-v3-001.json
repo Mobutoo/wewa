@@ -1,0 +1,192 @@
+{
+  "schema": 1,
+  "id": "MOTO-ENGINE-ENVELOPE-VISIBLE-CORRECTION-V3-001",
+  "label": "Enveloppe extérieure supérieure/arrière du carter — correction du volume apparent",
+  "source_ids": [],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle"
+  ],
+  "identity": {
+    "variant": "Official RDC appearance with related BM150 donor, exact identity not certified",
+    "variant_confirmed": false,
+    "usage": "Detailed exterior review source",
+    "review_distances_m": [
+      0.3,
+      1.5,
+      3
+    ]
+  },
+  "source_register": "../../research/motorcycle-visible-corrections-v1/engine-source-register.json",
+  "sources": [
+    "ENG-1",
+    "ENG-2",
+    "ENG-3",
+    "ENG-4"
+  ],
+  "claims": [
+    {
+      "id": "ENGINE-ROOF",
+      "status": "estimated",
+      "source": "ENG-1",
+      "adopted": true,
+      "method": "Photo-supported compact case contour constrained by unchanged cylinder foot and existing casing envelopes",
+      "uncertainty": "Roof ±12mm, width ±8mm, Y ±10mm; wall nominal6mm range4–10mm with thinner tips",
+      "scope": "Exterior appearance candidate only, no exact OEM dimensions"
+    }
+  ],
+  "views": [],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "ENGINE-DONOR-PAIRING",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G5"
+      ],
+      "detail": "Related source cover boundaries and donor pairing remain unqualified; visible seam documented"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "engine-exterior-completion-v3",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../../assets-src/moto-components/engine-exterior-completion-v3/G0-G2-observations-and-bounds.json",
+          "sha256": "7e33393f9a4beab7adb05bb6242514305dda281caa4f62540cf81d974485b219",
+          "revision": "engine-exterior-completion-v3"
+        }
+      ],
+      "reason": "Bounded exterior candidate and actual comparison, not artistic reception or exact mechanical fit",
+      "reviewed_at": "2026-10-22"
+    },
+    "G1": {
+      "status": "passed",
+      "revision": "engine-exterior-completion-v3",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "source_view_dimension_matrix",
+          "path": "../../../assets-src/moto-components/engine-exterior-completion-v3/G0-G2-observations-and-bounds.json",
+          "sha256": "7e33393f9a4beab7adb05bb6242514305dda281caa4f62540cf81d974485b219",
+          "revision": "engine-exterior-completion-v3"
+        },
+        {
+          "kind": "critical_gap_disposition",
+          "path": "../../../assets-src/moto-components/engine-exterior-completion-v3/README.md",
+          "sha256": "b6aa1a79273bae2a3b2d6f4bf2fe356e29187b6efb5e52977c5e8772a5e8a9cf",
+          "revision": "engine-exterior-completion-v3"
+        }
+      ],
+      "reason": "Bounded exterior candidate and actual comparison, not artistic reception or exact mechanical fit",
+      "reviewed_at": "2026-10-22"
+    },
+    "G2": {
+      "status": "passed",
+      "revision": "engine-exterior-completion-v3",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "scale_and_comparison_protocol",
+          "path": "../../../assets-src/moto-components/engine-exterior-completion-v3/G0-G2-observations-and-bounds.json",
+          "sha256": "7e33393f9a4beab7adb05bb6242514305dda281caa4f62540cf81d974485b219",
+          "revision": "engine-exterior-completion-v3"
+        }
+      ],
+      "reason": "Bounded exterior candidate and actual comparison, not artistic reception or exact mechanical fit",
+      "reviewed_at": "2026-10-22"
+    },
+    "G3": {
+      "status": "passed",
+      "revision": "engine-exterior-completion-v3",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "editable_source",
+          "path": "../../../assets-src/moto-components/engine-exterior-completion-v3/upper-rear-cast-shell-v3.blend",
+          "sha256": "06141c6f86a0f670cf9b2ff67e018577e8af4ab430b05fbdbc0c2cac4bc2628d",
+          "revision": "engine-exterior-completion-v3"
+        },
+        {
+          "kind": "isolated_comparison",
+          "path": "../../../assets-src/moto-components/engine-exterior-completion-v3/left-rear-after.png",
+          "sha256": "f89b8748c2e906129c42df0b5342c6af06cff4451f9176f86d1ad477decf61e8",
+          "revision": "engine-exterior-completion-v3"
+        }
+      ],
+      "reason": "Bounded exterior candidate and actual comparison, not artistic reception or exact mechanical fit",
+      "reviewed_at": "2026-10-22"
+    },
+    "G4": {
+      "status": "passed",
+      "revision": "engine-exterior-completion-v3",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "surface_or_sound_comparison",
+          "path": "../../reviews/whole-exterior-material-preview-v9/material-left-quarter.png",
+          "sha256": "c55ac03056bd0669ad779a8154367e3a2904e37dd8b26228379a32ce6faa357d",
+          "revision": "engine-exterior-completion-v3"
+        }
+      ],
+      "reason": "Estimated cast aluminium candidate inspected under neutral HDRI; no measured roughness claim",
+      "reviewed_at": "2026-10-22"
+    },
+    "G5": {
+      "status": "rework",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Cylinder foot contact checked; residual donor/cover boundaries and exact variant pairing remain unqualified",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "engine-exterior-completion-v3",
+  "export_revision": "engine-exterior-completion-v3",
+  "next_action": "Inspect whole assembly; retain residual donor/cover seam uncertainty",
+  "art_accepted": false
+}
