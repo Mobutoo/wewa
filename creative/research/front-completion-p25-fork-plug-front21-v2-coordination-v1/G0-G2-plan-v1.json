@@ -1,0 +1,256 @@
+{
+  "schema": 1,
+  "package": "P25",
+  "component_id": "MOTO-FORK-PLUG-DS181012-VISIBLE-STUDY-001",
+  "author_plan_path": "creative/research/front-completion-front21-fork-plug-v1/G0-G2.json",
+  "author_plan": {
+    "package": "P25",
+    "component_id": "MOTO-FORK-PLUG-DS181012-VISIBLE-STUDY-001",
+    "user_objective": "Autonomous motorcycle completion",
+    "coordinator_dispatch": "Single DS181012 outside plug plus short visible bore entrance; do not duplicate second leg or add59040006/DS181015 or deform parents",
+    "sources_read": [
+      "DS181012 physical upper oblique",
+      "D04sheet51 item18 qty2; 59040006 item7 M10x24 separate; DS181015 item8 qty1 central"
+    ],
+    "visible_forms": [
+      "External helical thread",
+      "Circumferential groove",
+      "Hex shoulder",
+      "Reduced top neck",
+      "Top annulus and short smooth bore entrance"
+    ],
+    "estimation": "Working threadOD28.8mm, AF27.5mm, neckOD18.4mm,height27mm. All estimated relative photo proportions with ranges in parameters; nominal31mm fork family not physical fit",
+    "critical_unknowns_omitted": [
+      "Internal female engagement/thread beyond mouth",
+      "Underside/spring seat",
+      "Actual thread pitch/hand/tolerances and installed shoulder contact"
+    ],
+    "G4": "not_received",
+    "G5": "not_received",
+    "G8": "not_received",
+    "v1_gray_diagnostic": "Read4 actual24 views: culled exterior backfaces needed to prevent reverse outside helical relief falsely appearing as interior through incomplete shell",
+    "v2_correction": "Observed outside skin one-sided in GLB and native render, true hex flats normals; no hidden interior filled",
+    "open_skin_display_limit": "Partial exterior with two finite cuts: at some oblique views outside flank fragments can be seen through omitted body. Single-sided culling reduces this but does not close it. Source does NOT contain an inner thread; axial mouth inspection chosen to isolate observed entrance. Not a functional closed plug."
+  },
+  "actual_parameters": {
+    "package": "P25",
+    "component_id": "MOTO-FORK-PLUG-DS181012-VISIBLE-STUDY-001",
+    "scope": "One visible external fork-leg plug: outside helical thread, annular groove, hex shoulder, reduced top neck, top annulus and short smooth bore entrance only. No hidden underside, internal engagement/thread or spring seat.",
+    "provenance": {
+      "user": "Autonomous motorcycle completion objective only",
+      "coordinator": "Dispatch DS181012 single exterior child; estimated related nominal31mm family, no parent deformation or second-leg instance"
+    },
+    "source": "Bajajonline bolt_fork_1 DS181012 physical photo, D04 sheet51 item18 qty2 separate from59040006 M10x24 bolt and centralDS181015",
+    "all_working_dimensions_estimated": true,
+    "working_m": {
+      "thread_major_diameter": 0.0288,
+      "external_pitch": 0.0011,
+      "external_thread_depth": 0.00045,
+      "hex_across_flats": 0.0275,
+      "reduced_neck_diameter": 0.0184,
+      "height": 0.027,
+      "mouth_diameter_at_cut": 0.0105,
+      "visible_smooth_mouth_depth": 0.0018
+    },
+    "working_estimate_ranges_m_not_measured": {
+      "thread_major_diameter": [
+        0.025,
+        0.0305
+      ],
+      "height": [
+        0.022,
+        0.033
+      ],
+      "neck_diameter": [
+        0.016,
+        0.022
+      ],
+      "hex_across_flats": [
+        0.025,
+        0.032
+      ],
+      "external_pitch": [
+        0.0009,
+        0.0015
+      ],
+      "short_mouth_depth": [
+        0.001,
+        0.003
+      ]
+    },
+    "nominal31mm_caution": "D04 For31DiaFork identifies related fork family only; no31mm plug fit, thread standard, tolerances, hand or mating tube measurement established",
+    "external_thread_caution": "Visible helical relief supported; working pitch/depth/hand and runouts estimated, not a manufacturable standard thread",
+    "omitted": [
+      "Hidden internal engagement and female thread beyond short entrance",
+      "Hidden underside and spring contact",
+      "O-ring30181029 separate component",
+      "59040006 bolt/washer, central DS181015 cap nut",
+      "Second leg duplicate and all parent deformation"
+    ],
+    "boundaries": "Two intentional finite cuts at hidden lower end and end of short smooth mouth; open exterior skin not closed functional solid",
+    "art_accepted": false,
+    "mounted_fit": false
+  },
+  "coord_plan": {
+    "package": "P25",
+    "component_id": "MOTO-FORK-PLUG-DS181012-VISIBLE-STUDY-001",
+    "axes": {
+      "Z": "plug axis, upper mouth positive",
+      "X_Y": "radial plane"
+    },
+    "origin": "Center of unobserved lower finite exterior review cut, not received spring contact datum",
+    "one_exemplar_only": true,
+    "working_upper_mouth_z_m": 0.027,
+    "working_hex_band_z_m": [
+      0.0154,
+      0.0186
+    ],
+    "working_groove_band_z_m": [
+      0.0118,
+      0.0138
+    ],
+    "working_external_thread_band_z_m": [
+      0.0005,
+      0.0095
+    ],
+    "unknown_transform": "Coordinator must fit separately as a hypothesis; no transform to existing upper plate or fork tube asserted",
+    "nominal_family": "D04 For31DiaFork related documentary context only, not actual plug or tube measurement",
+    "separate_articles": [
+      "DS181015 central cap nut already delivered",
+      "59040006 M10x24 bolt with washer, not modeled",
+      "30181029 O-ring, not modeled"
+    ],
+    "critical_fit_unknowns": [
+      "Tube female thread major/minor/pitch/hand and engagement",
+      "Actual plug underside and spring contact",
+      "Plate hole and shoulder/neck seatedcontact",
+      "Seal compression and exact current RDC version"
+    ],
+    "instruction_provenance": {
+      "user": "Autonomous motorcycle completion objective",
+      "coordinator": "Single DS181012 bounded exterior dispatch, afterfreeze checkpoint then wait nextpriority"
+    },
+    "mounted_fit": false,
+    "source_revision": "front-completion-p25-fork-plug-front21-v2",
+    "observed_skin_policy": "GLB doubleSided=false. Cycles protocol uses transparent backfaces to match culling; mouth cut exposes environment, not invented interior wall or female thread."
+  },
+  "source_identity_evidence": {
+    "target": "UpperDS181005 vs handleclampDS181019; lowerDS181020 / innerPF12101731family",
+    "claims": [
+      {
+        "id": "C01",
+        "statement": "DS181005 is upper frontfork bracket; DS181019 is handlebar upperclamphalf, not alternative upperyoke.",
+        "status": "documented_related_variant",
+        "evidence": [
+          "D04forksheet51 item10",
+          "D04handlesheet48 item12 qty2",
+          "RussianphysicalDS005/DS019 photographs"
+        ]
+      },
+      {
+        "id": "C02",
+        "statement": "PF121017 belongs to nominal31mm forkfamily in D04: item5 innerpipe, item2 oilseal explicitly For31DiaFork.",
+        "status": "documented_related_variant",
+        "limit": "Nominalfamilytext, not measured tubeOD/tolerance/currentRDCinspection."
+      },
+      {
+        "id": "C03",
+        "statement": "DS181020 lowerassembly has clampbores around tubelegs and centralstem; native lowerbody is isolatedcandidate, not wholephotoassembly.",
+        "status": "photo_inferred",
+        "evidence": [
+          "D04forksheet51item12",
+          "RussianDS181020photo",
+          "native lowerread"
+        ]
+      },
+      {
+        "id": "C04",
+        "statement": "Two DS181012 pluglike stepped externallythreaded parts andO-rings are drawn at top of forklegs. Two59040006 bolts withwashers above; D04 names M10x24.",
+        "status": "documented_related_variant",
+        "evidence": [
+          "D04forksheet51items7,18,19",
+          "BM150sheet49items7,19,20",
+          "physicalDS181012 and59040006photos"
+        ]
+      },
+      {
+        "id": "C05",
+        "statement": "DS181015 capnut andDS181016 washer, qty1 each, are on the central steeringaxis above upperplate in explodedview, distinct from twolegtopplugs.",
+        "status": "photo_inferred_from_catalogue",
+        "evidence": [
+          "D04forksheet51items8,9,10,12",
+          "physicalDS181015photo"
+        ],
+        "limit": "Centralrole inferred from drawing/quantities, not disassembledsameunit measurement."
+      },
+      {
+        "id": "C06",
+        "statement": "A narrower attachment at forklegtop can coexist with tubeOD31 and smaller upperplateholes. DS181012 physicalphoto shows reducedneck + centralfemale thread, giving concrete support for this architecture.",
+        "status": "photo_inferred",
+        "limit": "Exact member passingthrough plate (neckorbolt), bearingface, clearance, preload and height remain unknown; no seatedassembly photo or section."
+      },
+      {
+        "id": "C07",
+        "statement": "Do not force outerupperholes to31mm or treat them as tubeclampbores solely to remove assemblygap. Conversely, small upperholes alone do not prove wrongfamily.",
+        "status": "research_consequence",
+        "evidence": [
+          "C01",
+          "C02",
+          "C04",
+          "C06"
+        ],
+        "limit": "Not a fitacceptance. Sourceoriginalphotos/metric calibration still needed."
+      }
+    ],
+    "user_photo_annotation_arithmetic": {
+      "provenance": "Usermessage, parametersfile absent in thisworkspace; nativeguidecentres checked independently",
+      "photo_extreme_holes": [
+        {
+          "center_px": [
+            35,
+            111
+          ],
+          "radius_px": 9.5
+        },
+        {
+          "center_px": [
+            236,
+            109
+          ],
+          "radius_px": 10
+        }
+      ],
+      "scale_m_per_px": 0.00088,
+      "derived_radius_mm": [
+        8.36,
+        8.8
+      ],
+      "derived_diameter_mm": [
+        16.72,
+        17.6
+      ],
+      "projected_center_distance_m": 0.17688875600218348,
+      "status": "estimated_user_supplied_phototrace; no calibratedmeasurement",
+      "nominal_tube_OD_m": 0.031,
+      "comparison_only": "Radiicomparison invalid as directfit if interfaces differ; M10 is nominalthread diameter, not proof of17mmholefill."
+    },
+    "family_identity_conclusion": "Sourcewideplate shape and listing/catalogue supportDS181005family. DS181019misidentification resolved. ExactcurrentRDCproductionrevision and physicaldimensions remain unconfirmed.",
+    "top_interface_conclusion": "Shouldered internallythreadedforkplug evidence materially supports smallerupperhole explanation; only qualitative sequence credible, interfaces notfullyresolved.",
+    "functions_not_assigned": [
+      "Otherfive upperplateholes not mapped to parts as facts",
+      "Exact reducedneck throughplate vs boltpassage alternative",
+      "Precise loadpath/seatplane/contact/preload",
+      "Hidden forkplug/threadpitch and O-ring gland dimensions"
+    ],
+    "installed_fit_claim": false,
+    "bores_resized": false,
+    "source_edits": false,
+    "fabrication": false
+  },
+  "scope": "One observed DS181012 exterior cap only. Dimensions/engagement/current RDC fit unqualified; separate DS181015 and59040006 not rebuilt.",
+  "existing_parent_nominal_mismatch": "Working male threadOD28.8mm versus legacy tube working inner25mm; working neckOD18.4mm versus lateral upper apertures about16.7–17.6mm. All estimated, no engineering incompatibility proved, no forced fit/deformation or reception.",
+  "all_dimensions_estimated": true,
+  "current_rdc_fit": "unverified",
+  "art_accepted": false,
+  "package_complete": false
+}
