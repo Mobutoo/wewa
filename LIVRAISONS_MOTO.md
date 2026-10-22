@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **157 composants candidats enregistrés**, après
+Le registre courant comporte **158 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P19** : [MOTO-CARBURETTOR-ENTRY-LOCKNUT-001 — bounded exterior candidate — sources et images](creative/reviews/carburettor-entry-locknut-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P15** : [MOTO-BRAKE-LINKAGE-HEADED-PIN-001 — bounded exterior candidate — sources et images](creative/reviews/brake-linkage-headed-pin-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P06** : [DF201058 loose jacket and four visible branch-insulation skins only — sources et images](creative/reviews/front-completion-p06-holder-lead-skins-front12-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P06** : [Related DF201058 opaque rear bulb-holder cap exterior — sources et images](creative/reviews/front-completion-p06-holder-cap-front12-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
