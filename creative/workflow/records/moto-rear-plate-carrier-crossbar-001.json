@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-REAR-PLATE-CARRIER-CROSSBAR-001",
-  "label": "P08 — traverse de support de plaque, étude percée",
+  "label": "P08 — traverse formée v2, candidat",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -21,60 +21,63 @@
       0.65
     ]
   },
-  "source_register": "../../../creative/research/rear-plate-carrier-crossbar-v1/sources-child-v1.json",
+  "source_register": "../../../creative/research/rear-plate-carrier-crossbar-v2/sources-child-v1.json",
   "sources": [
     "D01",
     "D04-S59",
-    "RDC-REAR"
+    "RDC-REAR",
+    "PF231401-crosland-0",
+    "PF231401-crosland-1",
+    "PF231401-matriz-0"
   ],
   "claims": [],
   "views": [
     {
       "name": "whole-front",
-      "PNG_sha256": "d7cb6e6858c53d43cc5841838fa69e5b10c85f90daccf158debd176e88ed2534",
+      "PNG_sha256": "013cc1a290332ba9c58951e2c633b4ac6932703f78b6c9a9c58e8c2f29a97162",
       "actually_saved": true,
       "samples": 96,
       "camera_eye": [
         0.0,
         0.0,
-        0.5099999904632568
+        0.5108031034469604
       ],
       "camera_target": [
         0.0,
         0.0,
-        0.0
+        0.0008030971512198448
       ]
     },
     {
       "name": "whole-quarter",
-      "PNG_sha256": "ac3a2802cd34a2d1463d541d145320a471f772c6c5380bfdcbf28d1afe18a15f",
+      "PNG_sha256": "b448af688b98151cd1b6b8bb250100d48daa6da7585437b5fa5e5c8c52c52eec",
       "actually_saved": true,
       "samples": 96,
       "camera_eye": [
         0.17000000178813934,
         -0.20400001108646393,
-        0.3400000035762787
+        0.3408030867576599
       ],
       "camera_target": [
         0.0,
         0.0,
-        0.0
+        0.0008030971512198448
       ]
     },
     {
       "name": "neutral-outdoor",
-      "PNG_sha256": "93c617e47e337d9923e70161bead5d63383c9f2801eda473b3bdf00e9fa95d54",
+      "PNG_sha256": "718ffbe38176dc0d273d1d836b7c859a1524c5839614e43d77baf94f18cb9a9c",
       "actually_saved": true,
       "samples": 96,
       "camera_eye": [
         0.17000000178813934,
         -0.20400001108646393,
-        0.3400000035762787
+        0.3408030867576599
       ],
       "camera_target": [
         0.0,
         0.0,
-        0.0
+        0.0008030971512198448
       ]
     }
   ],
@@ -96,25 +99,25 @@
   "gates": {
     "G0": {
       "status": "passed",
-      "revision": "rear-plate-carrier-crossbar-v1",
+      "revision": "rear-plate-carrier-crossbar-v2",
       "reviewer": {
         "name": "Codex",
         "role": "technical"
       },
       "evidence": [
         {
-          "path": "../../../creative/research/rear-plate-carrier-crossbar-v1/G0-G2-plan-v1.json",
+          "path": "../../../creative/research/rear-plate-carrier-crossbar-v2/G0-G2-plan-v1.json",
           "kind": "identity_and_parts",
-          "sha256": "a1a04e59a01f16b1c8b9f99edf9dd24fd327ba5b38e8cf54f47cdbde1530f06e",
-          "revision": "rear-plate-carrier-crossbar-v1"
+          "sha256": "fd586c49bfaa2530b59cfcc6dcef5d9193538b20680036ef69d5028992f7e817",
+          "revision": "rear-plate-carrier-crossbar-v2"
         }
       ],
       "reason": "Observable child separated, estimates and variant limits documented; not full package or artistic acceptance",
-      "reviewed_at": "2026-10-21"
+      "reviewed_at": "2026-10-22"
     },
     "G1": {
       "status": "blocked",
-      "revision": "rear-plate-carrier-crossbar-v1",
+      "revision": "rear-plate-carrier-crossbar-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -122,7 +125,7 @@
     },
     "G2": {
       "status": "blocked",
-      "revision": "rear-plate-carrier-crossbar-v1",
+      "revision": "rear-plate-carrier-crossbar-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -130,20 +133,20 @@
     },
     "G3": {
       "status": "rework",
-      "revision": "rear-plate-carrier-crossbar-v1",
+      "revision": "rear-plate-carrier-crossbar-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../../assets-src/moto-components/rear-plate-carrier-crossbar/rear-plate-carrier-crossbar-v1.blend",
+          "path": "../../../assets-src/moto-components/rear-plate-carrier-crossbar-v2/rear-plate-carrier-crossbar-v2.blend",
           "kind": "editable_source",
-          "revision": "rear-plate-carrier-crossbar-v1",
-          "sha256": "5a19e85936fa8dc761f8919de417ddfd1819ab68601672bc7b08820d40741ae8"
+          "revision": "rear-plate-carrier-crossbar-v2",
+          "sha256": "fed0f2fffb6369e1a79620bd089a37fee11d3e7470f15bcb3f40bb71df71a5ef"
         },
         {
-          "path": "../../reviews/rear-plate-carrier-crossbar-v1/whole-front.png",
+          "path": "../../reviews/rear-plate-carrier-crossbar-v2/whole-front.png",
           "kind": "isolated_comparison",
-          "revision": "rear-plate-carrier-crossbar-v1",
-          "sha256": "d7cb6e6858c53d43cc5841838fa69e5b10c85f90daccf158debd176e88ed2534"
+          "revision": "rear-plate-carrier-crossbar-v2",
+          "sha256": "013cc1a290332ba9c58951e2c633b4ac6932703f78b6c9a9c58e8c2f29a97162"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -151,14 +154,14 @@
     },
     "G4": {
       "status": "rework",
-      "revision": "rear-plate-carrier-crossbar-v1",
+      "revision": "rear-plate-carrier-crossbar-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/rear-plate-carrier-crossbar-v1/neutral-outdoor.png",
+          "path": "../../reviews/rear-plate-carrier-crossbar-v2/neutral-outdoor.png",
           "kind": "surface_or_sound_comparison",
-          "revision": "rear-plate-carrier-crossbar-v1",
-          "sha256": "93c617e47e337d9923e70161bead5d63383c9f2801eda473b3bdf00e9fa95d54"
+          "revision": "rear-plate-carrier-crossbar-v2",
+          "sha256": "718ffbe38176dc0d273d1d836b7c859a1524c5839614e43d77baf94f18cb9a9c"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -166,14 +169,14 @@
     },
     "G5": {
       "status": "rework",
-      "revision": "rear-plate-carrier-crossbar-v1",
+      "revision": "rear-plate-carrier-crossbar-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/rear-plate-carrier-crossbar-v1/source-geometry-check.json",
+          "path": "../../reviews/rear-plate-carrier-crossbar-v2/source-geometry-check.json",
           "kind": "motion_or_interface_check",
-          "revision": "rear-plate-carrier-crossbar-v1",
-          "sha256": "bc4670be5638896178e98c70ff9eaebdced6d6118b22e7f54938fdac62bb2efe"
+          "revision": "rear-plate-carrier-crossbar-v2",
+          "sha256": "7046aab8a09ff9306b914e1abbe8d3379852becba858228474135b572744a3b4"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -181,20 +184,20 @@
     },
     "G6": {
       "status": "rework",
-      "revision": "rear-plate-carrier-crossbar-v1",
+      "revision": "rear-plate-carrier-crossbar-v2",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/rear-plate-carrier-crossbar-v1/export-buffer-check.json",
+          "path": "../../reviews/rear-plate-carrier-crossbar-v2/export-buffer-check.json",
           "kind": "technical_export_check",
-          "revision": "rear-plate-carrier-crossbar-v1",
-          "sha256": "d8b52b521dbc0fc0c1b10cc80ec599e0fb9f114ec1ec24373f6272d5b751956e"
+          "revision": "rear-plate-carrier-crossbar-v2",
+          "sha256": "1ccabc4861871b507ffec3fe692f2d2709de10e12b4de96a60ad51e78cc19fa6"
         },
         {
-          "path": "../../reviews/rear-plate-carrier-crossbar-v1/inspection-v3/engine-driver.png",
+          "path": "../../reviews/rear-plate-carrier-crossbar-v2/inspection-v3/engine-driver.png",
           "kind": "real_runtime_comparison",
-          "revision": "rear-plate-carrier-crossbar-v1",
-          "sha256": "69c68192593ab353b441969bb5f5edbd2d7e81eacb6e47ca60ab0b479b3bc557"
+          "revision": "rear-plate-carrier-crossbar-v2",
+          "sha256": "fb1e351d13fbdff85e3530a8eccb83c922fab1889af4e6816600248001230d85"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -202,7 +205,7 @@
     },
     "G7": {
       "status": "pending",
-      "revision": "rear-plate-carrier-crossbar-v1",
+      "revision": "rear-plate-carrier-crossbar-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
@@ -210,7 +213,7 @@
     },
     "G8": {
       "status": "pending",
-      "revision": "rear-plate-carrier-crossbar-v1",
+      "revision": "rear-plate-carrier-crossbar-v2",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -218,12 +221,20 @@
     }
   },
   "active_detailed_fabrication": false,
-  "source_revision": "rear-plate-carrier-crossbar-v1",
-  "export_revision": "rear-plate-carrier-crossbar-v1-inspection",
+  "source_revision": "rear-plate-carrier-crossbar-v2",
+  "export_revision": "rear-plate-carrier-crossbar-v2-inspection",
   "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
   "art_accepted": false,
-  "candidate_source": "../../../assets-src/moto-components/rear-plate-carrier-crossbar/README.md",
-  "candidate_review": "../../reviews/rear-plate-carrier-crossbar-v1/README.md",
+  "candidate_source": "../../../assets-src/moto-components/rear-plate-carrier-crossbar-v2/README.md",
+  "candidate_review": "../../reviews/rear-plate-carrier-crossbar-v2/README.md",
   "production_group": 18,
-  "source_plan": "../../../creative/research/rear-plate-carrier-crossbar-v1/G0-G2-plan-v1.json"
+  "source_plan": "../../../creative/research/rear-plate-carrier-crossbar-v2/G0-G2-plan-v1.json",
+  "previous_revisions": [
+    {
+      "revision": "rear-plate-carrier-crossbar-v1",
+      "source": "../../../assets-src/moto-components/rear-plate-carrier-crossbar/README.md",
+      "review": "../../reviews/rear-plate-carrier-crossbar-v1/README.md",
+      "art_accepted": false
+    }
+  ]
 }
