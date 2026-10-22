@@ -1,0 +1,229 @@
+{
+  "schema": 1,
+  "id": "MOTO-REAR-PLATE-CAPTIVE-NUT-EXTERIOR-001",
+  "label": "P08 — écrou captif carré, enveloppe estimée",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../../creative/research/rear-plate-captive-nut-exterior-v1/sources-child-v1.json",
+  "sources": [
+    "D01",
+    "PF231401-REAR-0",
+    "PF231401-REAR-1"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "whole-front",
+      "PNG_sha256": "f8566a929f576368c689b4351eaa03af0273512b68bea645e1c5cab4a4455702",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.0,
+        0.0,
+        0.026999998837709427
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "whole-quarter",
+      "PNG_sha256": "64a11a2ac9f902e6029f775916cdae2b3bff1f9fa2e23a8d15fcf9a945c37efd",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.008999999612569809,
+        -0.01080000028014183,
+        0.017999999225139618
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "neutral-outdoor",
+      "PNG_sha256": "5c17000e73d0c5a3351bf8d78758503cf4b6e8eaef0c38bbe2c21e63c5630f56",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.008999999612569809,
+        -0.01080000028014183,
+        0.017999999225139618
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-REAR-PLATE-CAPTIVE-NUT-EXTERIOR-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "rear-plate-captive-nut-exterior-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "path": "../../../creative/research/rear-plate-captive-nut-exterior-v1/G0-G2-plan-v1.json",
+          "kind": "identity_and_parts",
+          "sha256": "41af4b86fc74e52ad4e97f8dc762a54f690f2bb173ae3b93dfb68aeaa48b9d94",
+          "revision": "rear-plate-captive-nut-exterior-v1"
+        }
+      ],
+      "reason": "Observable child separated, estimates and variant limits documented; not full package or artistic acceptance",
+      "reviewed_at": "2026-10-22"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "rear-plate-captive-nut-exterior-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "rear-plate-captive-nut-exterior-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "rear-plate-captive-nut-exterior-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/rear-plate-captive-nut-exterior-v1/rear-plate-captive-nut-exterior-v1.blend",
+          "kind": "editable_source",
+          "revision": "rear-plate-captive-nut-exterior-v1",
+          "sha256": "530ad4926d336a25f168777ca098f98c2e9024c26e004a09c93117cf6fa79318"
+        },
+        {
+          "path": "../../reviews/rear-plate-captive-nut-exterior-v1/whole-front.png",
+          "kind": "isolated_comparison",
+          "revision": "rear-plate-captive-nut-exterior-v1",
+          "sha256": "f8566a929f576368c689b4351eaa03af0273512b68bea645e1c5cab4a4455702"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "rear-plate-captive-nut-exterior-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rear-plate-captive-nut-exterior-v1/neutral-outdoor.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "rear-plate-captive-nut-exterior-v1",
+          "sha256": "5c17000e73d0c5a3351bf8d78758503cf4b6e8eaef0c38bbe2c21e63c5630f56"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "rear-plate-captive-nut-exterior-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rear-plate-captive-nut-exterior-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "rear-plate-captive-nut-exterior-v1",
+          "sha256": "0bacc2c845775336e141f7556db7a9d06af95d4e2260b488b05a1a6ac4b89c23"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "rear-plate-captive-nut-exterior-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rear-plate-captive-nut-exterior-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "rear-plate-captive-nut-exterior-v1",
+          "sha256": "acd3aa75fb03e8df6f18e8c46ff48e91f4facfec10afe8256fed519189e09398"
+        },
+        {
+          "path": "../../reviews/rear-plate-captive-nut-exterior-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "rear-plate-captive-nut-exterior-v1",
+          "sha256": "7cd6eb10878db00dcd5c1d19b542d64c68ae9cbb631f26b85c240ca668a14e77"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "rear-plate-captive-nut-exterior-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "rear-plate-captive-nut-exterior-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "rear-plate-captive-nut-exterior-v1",
+  "export_revision": "rear-plate-captive-nut-exterior-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/rear-plate-captive-nut-exterior-v1/README.md",
+  "candidate_review": "../../reviews/rear-plate-captive-nut-exterior-v1/README.md",
+  "production_group": 18,
+  "source_plan": "../../../creative/research/rear-plate-captive-nut-exterior-v1/G0-G2-plan-v1.json"
+}

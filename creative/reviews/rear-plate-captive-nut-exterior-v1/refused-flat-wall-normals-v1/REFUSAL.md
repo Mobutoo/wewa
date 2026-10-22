@@ -1,0 +1,1 @@
+Gray-only diagnostic retained before material: faceted cylindrical aperture and rounded-square corners. Source wall normals will be analytic in the next pipeline; no geometry or metric receipt inferred.
