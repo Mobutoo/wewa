@@ -1,0 +1,1117 @@
+{
+  "schema": 1,
+  "date": "2026-10-22",
+  "authorization": "Pousser tout le travail en cours, puis planifier les pièces restantes pour finir la moto.",
+  "scope": "Moto extérieure seule ; sources existantes conservées, pas de nouveau moteur de jeu ni conducteur.",
+  "baseline_registered_candidates": 148,
+  "registered_count_is_not_finished_part_count": true,
+  "exact_remaining_physical_part_count": null,
+  "reason_count_unknown": "Plusieurs lignes regroupent des sous-pièces non entièrement identifiées ; les révisions, études et contrôles ne sont pas de nouvelles pièces physiques.",
+  "packages": 30,
+  "packages_complete": 0,
+  "whole_motorcycle_art_accepted": false,
+  "scheduling": {
+    "max_parallel_detailed_children": 3,
+    "max_one_per_owner": true,
+    "strategy": "Continuer le premier enfant documenté et indépendant ; consigner un blocage puis avancer ailleurs. Priorité à la silhouette extérieure et aux pièces visibles.",
+    "no_unattended_automation_created": true
+  },
+  "checkpoint_policy": [
+    "Commit et push après chaque enfant ou jalon de blocage documenté.",
+    "Sauvegarder aussi les sources partielles/refusées avec statut explicite.",
+    "Vérifier octets/empreintes indexés, JSON, taille GitHub et absence de pixels fournisseurs avant push.",
+    "Une sauvegarde ne passe aucun gate artistique."
+  ],
+  "review_pipeline": [
+    "G0 identité/décomposition et déduplication des sources existantes.",
+    "G1 vues utiles, variantes et estimations bornées ; aucune géométrie cachée inventée.",
+    "G2 unités, repères, paramètres et cadrages comparables.",
+    "G3 forme grise et reflets réellement ouverts et relus.",
+    "G4 matière propre, UV, neutre et rasant ; aperçus relus avant rendus détaillés.",
+    "G5 fixations, contacts et mouvements ; provisoires marqués tant que non qualifiés.",
+    "G6 export glTF réel et comparaison dans Babylon.js.",
+    "G7 optimisation mesurée avec comparaison au détail ; aucune performance appareil inventée.",
+    "G8 décision artistique explicite, puis répétition autorisée de l’exemplaire."
+  ],
+  "immediate_queue": [
+    {
+      "id": "Q01",
+      "type": "review",
+      "package": "P08",
+      "action": "Finaliser les preuves de la traverse formée v2",
+      "entry_and_exit": "Aperçus studio/neutre à relire, puis natifs96, export réel et revue moteur.",
+      "limit": "Aucune nouvelle forme à recréer.",
+      "state": "planned"
+    },
+    {
+      "id": "Q02",
+      "type": "review",
+      "package": "P17",
+      "action": "Achever la gaine latérale DH161146 en cours",
+      "entry_and_exit": "Relire les trois natifs96, décider/reprendre la macro interrompue et geler la livraison.",
+      "limit": "Ne pas marquer les vues non lues comme reçues.",
+      "state": "planned"
+    },
+    {
+      "id": "Q03",
+      "type": "coordination",
+      "package": "P06",
+      "action": "Contrôler les sept livraisons front12 sauvegardées",
+      "entry_and_exit": "Réouverture source, rapports gelés, rendus natifs, export et comparaison Babylon.",
+      "limit": "Coiffe et gaines opaques ne complètent pas le phare optique.",
+      "state": "planned"
+    },
+    {
+      "id": "Q04",
+      "type": "coordination",
+      "package": "P16",
+      "action": "Contrôler les huit nouvelles livraisons mécaniques après les dix-sept déjà revues",
+      "entry_and_exit": "Axes/barillets, contre-écrou/tête et supports passagers : dédupliquer puis revue indépendante.",
+      "limit": "Les deux supports passagers sont des sources séparées, pas un miroir.",
+      "state": "planned"
+    },
+    {
+      "id": "Q05",
+      "type": "new_geometry",
+      "package": "P05",
+      "action": "Fabriquer un seul silentbloc DD201011",
+      "entry_and_exit": "G0–G2 bornés à partir des poses physiques, puis gris, matière, natifs96 et export.",
+      "limit": "Réception de l’unité avant duplication.",
+      "state": "planned"
+    },
+    {
+      "id": "Q06",
+      "type": "G2_then_geometry",
+      "package": "P18",
+      "action": "Préparer le fragment de carter supérieur gauche",
+      "entry_and_exit": "Vérifier le plan v55, masque de la main/gant, contours observables et raccord aux sources existantes.",
+      "limit": "Limiter la pièce à la surface documentée ; ne pas fermer arbitrairement le carter.",
+      "state": "planned"
+    },
+    {
+      "id": "Q07",
+      "type": "source_then_geometry",
+      "package": "P08",
+      "action": "Décomposer un écrou captif carré et ses liaisons",
+      "entry_and_exit": "Contour arrière PF231401 ; borner dimensions et tenir le filetage non observé ouvert.",
+      "limit": "Ne pas substituer un écrou hexagonal générique.",
+      "state": "planned"
+    },
+    {
+      "id": "Q08",
+      "type": "source_then_geometry",
+      "package": "P05",
+      "action": "Qualifier gaine DM201026 et collier 31201001",
+      "entry_and_exit": "Bouche à encoches, profil opposé et photo physique du collier.",
+      "limit": "Gaine : enveloppe seulement si périmètre justifié ; collier reste bloqué sans source.",
+      "state": "planned"
+    },
+    {
+      "id": "Q09",
+      "type": "assembly_review",
+      "package": "P08",
+      "action": "Assembler une revue arrière v3",
+      "entry_and_exit": "Traverse v2 contrôlée + tôle v4 + arceau v3 + plaque v2 + corps/lentille v2 ; empreintes des six parents.",
+      "limit": "Assemblage provisoire pour examiner raccords et manques ; aucune certification d’ajustement.",
+      "state": "planned"
+    },
+    {
+      "id": "Q10",
+      "type": "research",
+      "package": "P06",
+      "action": "Débloquer les optiques, puis dérouler les trente paquets dans l’ordre de priorité",
+      "entry_and_exit": "Vues de lentille démontée, réflecteur nu, douille/ampoule, puis recherches propres à chaque paquet.",
+      "limit": "Une piste négative documentée cède la place au prochain enfant indépendant disponible.",
+      "state": "planned"
+    }
+  ],
+  "tasks": [
+    {
+      "priority": 1,
+      "package": "P08",
+      "title": "Support de plaque",
+      "owner": "body-coordinator",
+      "state": "finish_existing_candidate_first",
+      "summary_fr": "Écrou captif carré observé, liaisons/soudures et fixation du support ; finaliser la traverse formée v2 déjà construite.",
+      "remaining_geometry": [
+        "Écrou captif carré observé, liaisons/soudures et fixation du support ; finaliser la traverse formée v2 déjà construite."
+      ],
+      "existing_do_not_duplicate": [
+        "Arceau 3D v3 publié ; traverse v2 au stade aperçu matériau, rendus détaillés et revue encore à faire."
+      ],
+      "research_to_unlock": [
+        "Face arrière PF231401 résout le contour carré, pas le filetage ni toutes les liaisons."
+      ],
+      "interfaces_and_review": [
+        "Comparer six parents corrigés dans rear-cluster-review-v3 ; poses provisoires bornées, sans certification de montage."
+      ],
+      "inventory_source": "creative/workflow/motorcycle-exterior-completion-v1.json",
+      "original_package_dependencies": [
+        "P02",
+        "P05"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Face arrière PF231401 résout le contour carré, pas le filetage ni toutes les liaisons."
+    },
+    {
+      "priority": 2,
+      "package": "P05",
+      "title": "Support du feu arrière",
+      "owner": "body-coordinator",
+      "state": "one_exemplar_source_available",
+      "summary_fr": "Un silentbloc DD201011 exemplaire ; collier 31201001 ; pièces de fixation et gaine DM201026 identifiées séparément.",
+      "remaining_geometry": [
+        "Un silentbloc DD201011 exemplaire ; collier 31201001 ; pièces de fixation et gaine DM201026 identifiées séparément."
+      ],
+      "existing_do_not_duplicate": [
+        "Tôle supérieure v4 corrigée et publiée ; anciens essais conservés."
+      ],
+      "research_to_unlock": [
+        "DD201011 : plusieurs poses physiques visibles, dimensions estimées à borner. Collier : aucune photo exploitable trouvée. Gaine : bouche et revers non résolus."
+      ],
+      "interfaces_and_review": [
+        "Épaisseur comprimée, passages, empilage et ancrage au cadre ; ne pas répéter les deux silentblocs avant réception de l’exemplaire."
+      ],
+      "inventory_source": "creative/workflow/motorcycle-exterior-completion-v1.json",
+      "original_package_dependencies": [
+        "P02"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "DD201011 : plusieurs poses physiques visibles, dimensions estimées à borner. Collier : aucune photo exploitable trouvée. Gaine : bouche et revers non résolus."
+    },
+    {
+      "priority": 3,
+      "package": "P17",
+      "title": "Béquilles et ressorts visibles",
+      "owner": "powertrain-worker",
+      "state": "finish_existing_candidate_first",
+      "summary_fr": "Achever la gaine de ressort latérale ; gaine principale, tampon, goupille et écrou frein.",
+      "remaining_geometry": [
+        "Gaine latérale DH161146 : source gris/matériau et trois rendus96 présents, non relus ; macro interrompue, pas de livraison finale.",
+        "39079708 cotter",
+        "39042215 M10 nyloc nut",
+        "DH161145 main spring cover",
+        "DH161146 side spring cover",
+        "DG161124 damper"
+      ],
+      "existing_do_not_duplicate": [
+        "Centre frame INCLUDING both terminal footplates",
+        "Side stem/fork and deployment loop",
+        "Both return springs",
+        "Side spring anchor pin",
+        "Curved foot v3",
+        "Pivot bolt v1",
+        "Operating arm v1",
+        "Centre lateral stud v1 frozen, function unassigned",
+        "JA113201 centre-stand-pivot-shaft-v1 frozen, four actual native96 including neutral and grip macro; not certified fit or full inner passage"
+      ],
+      "research_to_unlock": [
+        "JA113201 far flange-end inner termination/striations/metric dimensions remain unknown, not solid rod or certified through-bore",
+        "DH161146 : photo physique trouvée ; ne plus classer son enveloppe extérieure comme dépourvue de source. Paroi et terminaison opposée restent estimées."
+      ],
+      "interfaces_and_review": [
+        "Pivot M10/larger shoulder conflicts with retained estimated9mm eye; no adapter or insertion claim",
+        "Curved-foot root overlaps old stem: trim/registration deferred",
+        "Spring ends/preload/covers/frame stops unqualified"
+      ],
+      "inventory_source": "creative/research/powertrain-completion-assigned14-v1/retained11-precise-inventory-v52.json",
+      "original_package_dependencies": [],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Finir la revue de la gaine DH161146 déjà construite ; rechercher séparément DH161145, DG161124, goupille et écrou frein ; vérifier les épaules de pivot."
+    },
+    {
+      "priority": 4,
+      "package": "P18",
+      "title": "Moteur : volumes centraux extérieurs manquants",
+      "owner": "powertrain-worker",
+      "state": "G2_preparation_ready",
+      "summary_fr": "Fragment supérieur gauche en préparation ; parois avant/basses du carter, nervures, bossages et raccords visibles.",
+      "remaining_geometry": [
+        "Central front/lower/underside exterior casting walls",
+        "Exposed ribs/bosses/mounts/seams beyond existing studies",
+        "Attache avant du carter supérieur précédemment signalée manquante : documenter et compléter la pièce sans la considérer comme déjà construite."
+      ],
+      "existing_do_not_duplicate": [
+        "Upper deck RH",
+        "LH output panel",
+        "Original head/cylinder/covers reused",
+        "engine-output-cover-left exact restored 18files PRESENT"
+      ],
+      "research_to_unlock": [
+        "Six PF541109/JH541007 physical views are interior/top; need identifiable bare front/underside obliques",
+        "Prom same gallery; Megamotos/Bajajonline no photo, OEMShip logo rejected: recorded negative research, do not repeat",
+        "Plan G2 actuel : creative/research/powertrain-completion-p18-v1/lh-upper-land-plan-v55.json ; pas encore de géométrie de ce fragment."
+      ],
+      "interfaces_and_review": [
+        "Common cylinder/cover/crankcase registration"
+      ],
+      "inventory_source": "creative/research/powertrain-completion-assigned14-v1/retained11-precise-inventory-v52.json",
+      "original_package_dependencies": [],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Exploiter le plan G2 v55 pour le fragment supérieur gauche ; obtenir les obliques avant/dessous et préciser l’attache avant encore manquante du carter supérieur."
+    },
+    {
+      "priority": 5,
+      "package": "P16",
+      "title": "Repose-pieds et caoutchoucs",
+      "owner": "powertrain-worker",
+      "state": "research_required",
+      "summary_fr": "Caoutchouc passager JK113008, axe de charnière, rondelle, goupille et visserie identifiée.",
+      "remaining_geometry": [
+        "Distinct JK113008 passenger rubber",
+        "30171022 hinge pin",
+        "DP161163 rear-footstep washer",
+        "39078408 split pin",
+        "39248104 M8 flange bolts and39265912 spring washers after installed-stack identification"
+      ],
+      "existing_do_not_duplicate": [
+        "DF161413 rider rubber",
+        "DP161170 passenger metal peg",
+        "PF113000/001 rider supports reused",
+        "PF113002 left passenger stay v1 frozen4native96+macro; estimated thread/clocking/fit",
+        "PF113003 right passenger stay v1 frozen4native96+macro; independent arm geometry, estimated fit"
+      ],
+      "research_to_unlock": [
+        "JK113008 long dark band still slot vs closed face unresolved; need full underside/section",
+        "Stays now have rear and clevis macro: prior missing-backview block removed; metric depth/sections/currentRDC fit remain unqualified",
+        "30171022 nominal8x31 appears in related documentary description, physical pin/washer/retainer source still needed"
+      ],
+      "interfaces_and_review": [
+        "Folding limits and fitted collar/peg interfaces"
+      ],
+      "inventory_source": "creative/research/powertrain-completion-assigned14-v1/retained11-precise-inventory-v52.json",
+      "original_package_dependencies": [
+        "P14",
+        "P15"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Sous-face du caoutchouc JK113008 ; sources de l’axe, rondelle et goupille ; relever l’empilage monté. Les deux supports existent déjà."
+    },
+    {
+      "priority": 6,
+      "package": "P06",
+      "title": "Optique principale du phare",
+      "owner": "front-worker",
+      "state": "research_required",
+      "summary_fr": "Sections lentille/stries et propriété réflecteur ; ampoule/gorge ; bague blanche de douille partiellement masquée, contacts et retenue ; moulage/cavités du connecteur blanc et retenue de cosse non lisibles. La coiffe opaque ne résout pas les optiques.",
+      "remaining_geometry": [
+        "Sections lentille/stries et propriété réflecteur ; ampoule/gorge ; bague blanche de douille partiellement masquée, contacts et retenue ; moulage/cavités du connecteur blanc et retenue de cosse non lisibles. La coiffe opaque ne résout pas les optiques."
+      ],
+      "existing_do_not_duplicate": [
+        "DF201058 opaque rear cap exterior only, front12 freeze06",
+        "DF201058 loose jacket and4visible branch-insulation skins only, front12 freeze07"
+      ],
+      "research_to_unlock": [
+        "Lentille démontée recto/verso/profil et réflecteur nu ; bague de douille séparée avec profil, contacts et identification des pièces ; connecteur blanc et cosse vus face/dos/profil."
+      ],
+      "interfaces_and_review": [
+        "lens section/striae ownership",
+        "bare reflector/facets",
+        "bulb/throat/socket",
+        "White connector molding/cavities and metal terminal retention profiles unreadable; no generic remake or pinout inferred"
+      ],
+      "inventory_source": "creative/reviews/front-completion-front12-final-handoff-v1/inventory.json",
+      "original_package_dependencies": [],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Lentille démontée recto/verso/profil et réflecteur nu ; bague de douille séparée avec profil, contacts et identification des pièces ; connecteur blanc et cosse vus face/dos/profil."
+    },
+    {
+      "priority": 7,
+      "package": "P07",
+      "title": "Feu arrière",
+      "owner": "body-coordinator",
+      "state": "research_required",
+      "summary_fr": "Reliefs optiques observables, source lumineuse et retenues/fixations du feu selon référence.",
+      "remaining_geometry": [
+        "Reliefs optiques observables, source lumineuse et retenues/fixations du feu selon référence."
+      ],
+      "existing_do_not_duplicate": [
+        "Corps noir v2 et lentille extérieure v2 existent."
+      ],
+      "research_to_unlock": [
+        "Face interne et profil de lentille ; détail de douille/source lumineuse et attaches."
+      ],
+      "interfaces_and_review": [
+        "Raccord corps/lentille/support ; apparence éteinte puis allumée en revue."
+      ],
+      "inventory_source": "creative/workflow/motorcycle-exterior-completion-v1.json",
+      "original_package_dependencies": [
+        "P05"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Face interne et profil de lentille ; détail de douille/source lumineuse et attaches."
+    },
+    {
+      "priority": 8,
+      "package": "P11",
+      "title": "Plaque et accessoires arrière observables",
+      "owner": "body-coordinator",
+      "state": "research_required",
+      "summary_fr": "Visserie de plaque ; éclairage et catadioptre uniquement si leur présence/forme est établie sur la référence.",
+      "remaining_geometry": [
+        "Visserie de plaque ; éclairage et catadioptre uniquement si leur présence/forme est établie sur la référence."
+      ],
+      "existing_do_not_duplicate": [
+        "Plaque fictive WEWA v2 existe ; graphisme original et correction des entraxes conservés."
+      ],
+      "research_to_unlock": [
+        "Identifier la visserie et les accessoires réellement présents."
+      ],
+      "interfaces_and_review": [
+        "G0–G4 du dessin original déjà revus ; G5 montage ouvert. Contrôle nominal des trous existant ≠ ajustement physique."
+      ],
+      "inventory_source": "creative/workflow/motorcycle-exterior-completion-v1.json",
+      "original_package_dependencies": [
+        "P08"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Identifier la visserie et les accessoires réellement présents."
+    },
+    {
+      "priority": 9,
+      "package": "P10",
+      "title": "Clignotants arrière et supports",
+      "owner": "body-coordinator",
+      "state": "research_required",
+      "summary_fr": "Corps/lentille et fixation des clignotants arrière ; tige droite indépendante si ses asymétries sont établies.",
+      "remaining_geometry": [
+        "Corps/lentille et fixation des clignotants arrière ; tige droite indépendante si ses asymétries sont établies."
+      ],
+      "existing_do_not_duplicate": [
+        "Tige gauche et rondelle de montage v2 existent."
+      ],
+      "research_to_unlock": [
+        "Vues opposées PF401003/4 ; deux expositions de même pose ne résolvent pas les interfaces ou les reliefs optiques."
+      ],
+      "interfaces_and_review": [
+        "Un exemplaire avant répétition ; angles, ancrages, passages des fils et dégagements gauche/droite."
+      ],
+      "inventory_source": "creative/workflow/motorcycle-exterior-completion-v1.json",
+      "original_package_dependencies": [
+        "P02",
+        "P05"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Vues opposées PF401003/4 ; deux expositions de même pose ne résolvent pas les interfaces ou les reliefs optiques."
+    },
+    {
+      "priority": 10,
+      "package": "P02",
+      "title": "Porte-bagages et poignée passager",
+      "owner": "body-coordinator",
+      "state": "research_required",
+      "summary_fr": "Plateforme conforme à la variante retenue ; attaches, terminaisons aplaties et liaisons du porte-bagages.",
+      "remaining_geometry": [
+        "Plateforme conforme à la variante retenue ; attaches, terminaisons aplaties et liaisons du porte-bagages."
+      ],
+      "existing_do_not_duplicate": [
+        "Arceau et étude de plateforme existent ; ne pas les recréer par défaut."
+      ],
+      "research_to_unlock": [
+        "Départager grille PF231405 et plateau WAY-C à partir de la moto RDC retenue."
+      ],
+      "interfaces_and_review": [
+        "Ancrages cadre, selle et garde-boue ; dégagements et soudures."
+      ],
+      "inventory_source": "creative/workflow/motorcycle-exterior-completion-v1.json",
+      "original_package_dependencies": [],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Départager grille PF231405 et plateau WAY-C à partir de la moto RDC retenue."
+    },
+    {
+      "priority": 11,
+      "package": "P13",
+      "title": "Supports et dessous de selle",
+      "owner": "body-coordinator",
+      "state": "research_required",
+      "summary_fr": "Socles et dessous de selle : nervures, épine avant, montants, projection arrière, retours/agrafes et petites attaches observables.",
+      "remaining_geometry": [
+        "Socles et dessous de selle : nervures, épine avant, montants, projection arrière, retours/agrafes et petites attaches observables."
+      ],
+      "existing_do_not_duplicate": [
+        "Selle et un socle de tampon v2 existent ; conserver le vinyle sombre et son protocole neutre."
+      ],
+      "research_to_unlock": [
+        "Sous-face JV191001 apparentée et selle RDC de couverture différente : confirmer la variante et obtenir dessous/profil."
+      ],
+      "interfaces_and_review": [
+        "Appui et fixation avant/arrière, tampons et dégagements avec cadre/porte-bagages ; pas de répétition aveugle."
+      ],
+      "inventory_source": "creative/workflow/motorcycle-exterior-completion-v1.json",
+      "original_package_dependencies": [
+        "P02"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Sous-face JV191001 apparentée et selle RDC de couverture différente : confirmer la variante et obtenir dessous/profil."
+    },
+    {
+      "priority": 12,
+      "package": "P12",
+      "title": "Bouchon et accessoires visibles du réservoir",
+      "owner": "body-coordinator",
+      "state": "research_required",
+      "summary_fr": "Corps et raccords visibles du robinet ; pivot du levier ; durite et clips ; dessous/retention du bouchon seulement si observable.",
+      "remaining_geometry": [
+        "Corps et raccords visibles du robinet ; pivot du levier ; durite et clips ; dessous/retention du bouchon seulement si observable."
+      ],
+      "existing_do_not_duplicate": [
+        "Réservoir WEWA, enveloppe de bouchon v2 et silhouette de levier existent."
+      ],
+      "research_to_unlock": [
+        "Robinet PF171800 : revers/profil et pivot non résolus ; trajet exact de durite et fixation à établir."
+      ],
+      "interfaces_and_review": [
+        "Position robinet/réservoir/carburateur, raccords, dégagements et action du levier."
+      ],
+      "inventory_source": "creative/workflow/motorcycle-exterior-completion-v1.json",
+      "original_package_dependencies": [
+        "P01",
+        "P04"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Robinet PF171800 : revers/profil et pivot non résolus ; trajet exact de durite et fixation à établir."
+    },
+    {
+      "priority": 13,
+      "package": "P03",
+      "title": "Garde-boue avant",
+      "owner": "front-worker",
+      "state": "research_required",
+      "summary_fr": "Formage latéral du garde-boue, supports/fixations et garde à la roue. Le guide DF191020 ne fixe pas sa station montée.",
+      "remaining_geometry": [
+        "Formage latéral du garde-boue, supports/fixations et garde à la roue. Le guide DF191020 ne fixe pas sa station montée."
+      ],
+      "existing_do_not_duplicate": [
+        "DF191020 formed-wire guide exterior, front12 freeze05"
+      ],
+      "research_to_unlock": [
+        "Vues latérales/dessous et implantation de la variante montée, mesures de dégagement roue."
+      ],
+      "interfaces_and_review": [
+        "side forming",
+        "mount supports/fasteners",
+        "mounted wheel clearance"
+      ],
+      "inventory_source": "creative/reviews/front-completion-front12-final-handoff-v1/inventory.json",
+      "original_package_dependencies": [],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Vues latérales/dessous et implantation de la variante montée, mesures de dégagement roue."
+    },
+    {
+      "priority": 14,
+      "package": "P09",
+      "title": "Clignotant avant : raccords et fixations",
+      "owner": "front-worker",
+      "state": "research_required",
+      "summary_fr": "Transition corps/tige, empilage de fixation, sortie/crimpage et retenue des conducteurs. Les deux nouvelles expositions sont de même pose.",
+      "remaining_geometry": [
+        "Transition corps/tige, empilage de fixation, sortie/crimpage et retenue des conducteurs. Les deux nouvelles expositions sont de même pose."
+      ],
+      "existing_do_not_duplicate": [],
+      "research_to_unlock": [
+        "Profil/face de montage et racines de tige/fils, vues opposées de la référence exacte."
+      ],
+      "interfaces_and_review": [
+        "housing/stalk installed transition",
+        "mount stack",
+        "wire crimp/retention/root exit"
+      ],
+      "inventory_source": "creative/reviews/front-completion-front12-final-handoff-v1/inventory.json",
+      "original_package_dependencies": [],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Profil/face de montage et racines de tige/fils, vues opposées de la référence exacte."
+    },
+    {
+      "priority": 15,
+      "package": "P24",
+      "title": "Axe avant et détails roue/frein",
+      "owner": "front-worker",
+      "state": "research_required",
+      "summary_fr": "Colliers/sièges de la variante UG et empilage ; valve/capuchon, entraînement compteur, raccord frein/roue. DU151005 est une étude apparentée4vitesses, pas un remplacement DS151061.",
+      "remaining_geometry": [
+        "Colliers/sièges de la variante UG et empilage ; valve/capuchon, entraînement compteur, raccord frein/roue. DU151005 est une étude apparentée4vitesses, pas un remplacement DS151061."
+      ],
+      "existing_do_not_duplicate": [
+        "DU151005 related4gear exterior only, front12 freeze04"
+      ],
+      "research_to_unlock": [
+        "Pièces UG exactes déposées/profilées et empilage monté, références de valve et entraînement compteur, compatibilité frein établie."
+      ],
+      "interfaces_and_review": [
+        "spacers/collars/clamp seat stack",
+        "valve/cap exact profile",
+        "speedometer takeoff/drive",
+        "brake cam/actuator fitted interface"
+      ],
+      "inventory_source": "creative/reviews/front-completion-front12-final-handoff-v1/inventory.json",
+      "original_package_dependencies": [
+        "P03"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Pièces UG exactes déposées/profilées et empilage monté, références de valve et entraînement compteur, compatibilité frein établie."
+    },
+    {
+      "priority": 16,
+      "package": "P25",
+      "title": "Fourche et direction : finitions visibles",
+      "owner": "front-worker",
+      "state": "research_required",
+      "summary_fr": "Filetage/siège caché DS181015, empilage de direction et raccords de brides ; support PF121024 sans photo de pièce ; raccord soufflet40,6/coulisseau48mm non résolu.",
+      "remaining_geometry": [
+        "Filetage/siège caché DS181015, empilage de direction et raccords de brides ; support PF121024 sans photo de pièce ; raccord soufflet40,6/coulisseau48mm non résolu."
+      ],
+      "existing_do_not_duplicate": [
+        "DS181015 steering cap exterior only, front12 freeze02"
+      ],
+      "research_to_unlock": [
+        "Dessous/profil du capuchon et stations de direction ; photo physique PF121024 ; sections et variante de soufflet/coulisseau compatibles."
+      ],
+      "interfaces_and_review": [
+        "steering stem hardware/visible seats",
+        "triple fastener joins",
+        "bellows/slider mating section"
+      ],
+      "inventory_source": "creative/reviews/front-completion-front12-final-handoff-v1/inventory.json",
+      "original_package_dependencies": [
+        "P24"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Dessous/profil du capuchon et stations de direction ; photo physique PF121024 ; sections et variante de soufflet/coulisseau compatibles."
+    },
+    {
+      "priority": 17,
+      "package": "P23",
+      "title": "Axes arrière, tendeurs et commande de frein",
+      "owner": "front-worker",
+      "state": "research_required",
+      "summary_fr": "Alésage/faces du collier DJ151034 et empilages montés ; liaison/soudure/racine des tiges de tendeurs non reçue ; contour et vues du perçage DH151029 encore requis par main.",
+      "remaining_geometry": [
+        "Alésage/faces du collier DJ151034 et empilages montés ; liaison/soudure/racine des tiges de tendeurs non reçue ; contour et vues du perçage DH151029 encore requis par main."
+      ],
+      "existing_do_not_duplicate": [
+        "P23 DJ151047 endplate",
+        "P23 JW122004 torque arm",
+        "P23 DJ151037 RH adjuster",
+        "P23 DJ151036 LH adjuster",
+        "P23 DH151029 single bolt",
+        "DJ151034 outer skin only, front12 freeze01"
+      ],
+      "research_to_unlock": [
+        "Collier en coupe/profil axial, tiges et leurs liaisons réelles ; vis vue sur l’axe du perçage et côté opposé. Matriz DH151029 exact : zéro vue nouvelle."
+      ],
+      "interfaces_and_review": [
+        "final collars/nuts and mounted stack",
+        "opposite bore exits/hidden thread standards",
+        "Tensioner rod root/weld/installed connection, coordinator not received",
+        "DH151029 transverse hole contour/additional views, coordinator request"
+      ],
+      "inventory_source": "creative/reviews/front-completion-front12-final-handoff-v1/inventory.json",
+      "original_package_dependencies": [
+        "P15",
+        "P21"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Collier en coupe/profil axial, tiges et leurs liaisons réelles ; vis vue sur l’axe du perçage et côté opposé. Matriz DH151029 exact : zéro vue nouvelle."
+    },
+    {
+      "priority": 18,
+      "package": "P21",
+      "title": "Moyeu arrière et porte-couronne",
+      "owner": "front-worker",
+      "state": "research_required",
+      "summary_fr": "Quatrième poche avant ; section réelle et registration avant/arrière ; connexions/section inverse DK151094 et contact/compression au porte-couronne. Anneau non répété avant réception de son unité.",
+      "remaining_geometry": [
+        "Quatrième poche avant ; section réelle et registration avant/arrière ; connexions/section inverse DK151094 et contact/compression au porte-couronne. Anneau non répété avant réception de son unité."
+      ],
+      "existing_do_not_duplicate": [
+        "Reverse exterior independent v8, freeze02",
+        "One DK151094 asymmetric lobe, front12 freeze03, no ring repetition"
+      ],
+      "research_to_unlock": [
+        "Vues de la poche masquée et sections/mesures de la référence ; contact caoutchouc/porte-couronne installé. Réception distincte avant répétition."
+      ],
+      "interfaces_and_review": [
+        "fourth front pocket",
+        "bearing/rubber/current wheel/chain interfaces",
+        "Full DK151094 ring repetition not allowed before unit reception; exact connection/reverse section/contact unreceived"
+      ],
+      "inventory_source": "creative/reviews/front-completion-front12-final-handoff-v1/inventory.json",
+      "original_package_dependencies": [],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Vues de la poche masquée et sections/mesures de la référence ; contact caoutchouc/porte-couronne installé. Réception distincte avant répétition."
+    },
+    {
+      "priority": 19,
+      "package": "P22",
+      "title": "Couronne, pignon et chaîne",
+      "owner": "front-worker",
+      "state": "research_required",
+      "summary_fr": "Cannelures/bossage/déport du pignon ; axes, bagues et plaques internes de chaîne ; chaîne complète/alignement. Motif non reçu, donc non répété.",
+      "remaining_geometry": [
+        "Cannelures/bossage/déport du pignon ; axes, bagues et plaques internes de chaîne ; chaîne complète/alignement. Motif non reçu, donc non répété."
+      ],
+      "existing_do_not_duplicate": [],
+      "research_to_unlock": [
+        "Pignon exact déposé face/dos/profil et chaîne désassemblée ; entraxes/alignement montés, réception de l’unité avant répétition."
+      ],
+      "interfaces_and_review": [
+        "physical JZ pinion spline/boss/offset",
+        "chain pin shanks/bushings/inner plate",
+        "complete chain and mounted alignment"
+      ],
+      "inventory_source": "creative/reviews/front-completion-front12-final-handoff-v1/inventory.json",
+      "original_package_dependencies": [
+        "P18",
+        "P21"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Pignon exact déposé face/dos/profil et chaîne désassemblée ; entraxes/alignement montés, réception de l’unité avant répétition."
+    },
+    {
+      "priority": 20,
+      "package": "P15",
+      "title": "Pédale et tringlerie de frein arrière",
+      "owner": "powertrain-worker",
+      "state": "research_required",
+      "summary_fr": "Extrémité filetée/coudée de tige, garniture, rondelles, goupille et écrou de réglage profilé.",
+      "remaining_geometry": [
+        "Threaded rod terminal/end bend",
+        "DS191035 packing",
+        "39019811 washer",
+        "39080511 washer",
+        "39080808 split pin",
+        "30191036 shaped adjuster nut"
+      ],
+      "existing_do_not_duplicate": [
+        "Pedal arm/sleeve/lug/textured pad",
+        "Plain rod and clevis",
+        "30191035 compression spring",
+        "JV161014 torsion spring",
+        "30191038 headed cross-drilled pin v1 frozen",
+        "JB161002 brake-rod-barrel-pin-v1 frozen, true central cross-bore; no certified inner thread"
+      ],
+      "research_to_unlock": [
+        "PF161001 whole photo does not resolve terminal pitch or end geometry; obtain macro",
+        "Physical section/photos still missing for catalog pins/packing/washers; targeted research remains",
+        "30191036 single physical photo: reverse seat and thread unresolved; do not substitute generic hex",
+        "JD161002 is a different code and rejected",
+        "Barillet JB161002 déjà fabriqué et gelé : ne pas le recréer malgré la ligne modelable next devenue obsolète dans l’inventaire."
+      ],
+      "interfaces_and_review": [
+        "Installed stack/offset/travel; P23 torque rod belongs to other worker"
+      ],
+      "inventory_source": "creative/research/powertrain-completion-assigned14-v1/retained11-precise-inventory-v52.json",
+      "original_package_dependencies": [],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Macros de l’extrémité de tige et de l’écrou profilé ; sources physiques pour les rondelles, garniture et goupille. Le barillet existe déjà."
+    },
+    {
+      "priority": 21,
+      "package": "P14",
+      "title": "Sélecteur de vitesses",
+      "owner": "powertrain-worker",
+      "state": "research_required",
+      "summary_fr": "Oreilles et vis de serrage du sélecteur, cannelures/alésage et retenue des caoutchoucs.",
+      "remaining_geometry": [
+        "Clamp ears and bolt",
+        "Actual spline/bore",
+        "Rubber inner retention"
+      ],
+      "existing_do_not_duplicate": [
+        "Arm",
+        "Split hub",
+        "Toe rubber",
+        "Heel pad"
+      ],
+      "research_to_unlock": [
+        "Mundi/Motopulse front views resolve slit, not rear clamp axis or spline count; obtain rear/side macro"
+      ],
+      "interfaces_and_review": [
+        "Union registration and neutral/travel"
+      ],
+      "inventory_source": "creative/research/powertrain-completion-assigned14-v1/retained11-precise-inventory-v52.json",
+      "original_package_dependencies": [],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Vue arrière et macro latérale du serrage ; identifier l’axe de vis, les cannelures et les retenues."
+    },
+    {
+      "priority": 22,
+      "package": "P19",
+      "title": "Carburateur et raccords visibles",
+      "owner": "powertrain-worker",
+      "state": "research_required",
+      "summary_fr": "Patte/pivot de commande, raccords et têtes visibles de cuve, durites et clip identifiés.",
+      "remaining_geometry": [
+        "Control tab/bracket/pivot portions",
+        "Other visible bowl fittings/screw heads",
+        "Hoses and wire clip after route/identity resolution"
+      ],
+      "existing_do_not_duplicate": [
+        "Upper casting",
+        "Top cap",
+        "Top elbow",
+        "Entry boot",
+        "Small curved connector",
+        "Lower-body-v1 and bowl-v1 EXIST but REWORK NONACCEPTED",
+        "Cable adjuster barrel v1 frozen with3native96",
+        "Lower-body-v2 frozen candidate revision, independent coordinator review saved cfa71e0; not artistically accepted",
+        "Float-bowl-v2 frozen candidate revision, independent coordinator review saved cfa71e0; not artistically accepted",
+        "Entry locknut v1 frozen, plain passage only",
+        "Visible warm slotted head v1 frozen, hidden function/shaft excluded"
+      ],
+      "research_to_unlock": [
+        "Control bracket back section, fitting drive macros and wire clip ends unresolved",
+        "Hose count/crossings/hidden terminals not established; no invented fluid functions"
+      ],
+      "interfaces_and_review": [
+        "Whole-carb axes/joints and installed registration; internal galleries/float not observed external targets"
+      ],
+      "inventory_source": "creative/research/powertrain-completion-assigned14-v1/retained11-precise-inventory-v52.json",
+      "original_package_dependencies": [
+        "P18"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Vues du revers de patte/pivot, macros des raccords et cheminement réel des durites et clips ; corps/cuve v2 existent et ont été revus."
+    },
+    {
+      "priority": 23,
+      "package": "P20",
+      "title": "Admission, durites et attaches échappement",
+      "owner": "powertrain-worker",
+      "state": "research_required",
+      "summary_fr": "Manchon boîte à air/carburateur, colliers et attache supérieure de l’échappement.",
+      "remaining_geometry": [
+        "Physical airbox-to-carb boot",
+        "Appropriate separate hose clamps/clips",
+        "Exhaust upper hanger plate/bush/bolt stack",
+        "Header flange hardware only after deduplication"
+      ],
+      "existing_do_not_duplicate": [
+        "Intake manifold/insulator/sleeve/o-ring/clamp band reused",
+        "Header/gasket/silencer body/end/heatshield/fasteners reused",
+        "Catalogue-limited duct study"
+      ],
+      "research_to_unlock": [
+        "Physical boot source and end axes required",
+        "Hanger rear view/stack and observed flange hardware need source identification"
+      ],
+      "interfaces_and_review": [
+        "PF581402 sleeve already exists: no duplicate; intake/exhaust assembly registration"
+      ],
+      "inventory_source": "creative/research/powertrain-completion-assigned14-v1/retained11-precise-inventory-v52.json",
+      "original_package_dependencies": [
+        "P19"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Photo physique du manchon et de ses axes ; revers et empilage du support d’échappement ; dédupliquer la visserie existante."
+    },
+    {
+      "priority": 24,
+      "package": "P26",
+      "title": "Cadre, bras oscillant et pare-moteur : liaisons restantes",
+      "owner": "powertrain-worker",
+      "state": "research_required",
+      "summary_fr": "Pattes/crochets et soudures identifiés, écrou/rondelle de pivot, bouches du guide et liaisons de protection.",
+      "remaining_geometry": [
+        "Observed frame hooks/tabs and local weld fragments after source identification",
+        "Swingarm pivot washer/nut (existing shaft/head/collar/shank/helix and3layer bush already present)",
+        "Two slider tip-mouth geometries, plus end fixings after identity/source qualification",
+        "Protection B-joint/central weld/hook/spacer, missing connections beyond existing hoop/centre plate/terminals"
+      ],
+      "existing_do_not_duplicate": [
+        "Frame/swingarm/pivotshaft/bush/slider reused",
+        "Protection hoop/centre plate/terminals/weld candidates reused",
+        "Upper/lower chaincase reused",
+        "Front ear study",
+        "Actual28canonicalGLB dedup includes6frame,4swingarm,14SNS and4protection components; no source rebuild"
+      ],
+      "research_to_unlock": [
+        "Canonical frame/swingarm/guard originals now locally available; wrong aliases fromv26 ignored",
+        "Swingarm slider record explicitly leaves two visible tip mouths unbuilt: axes/path/depth and opposed face unresolved; need axial/end macro, no arbitrary bore",
+        "Unbuilt protection weld B-joint/central weld/hook/spacer need identified contact views/sections; old frontal weld construction window not complete weld",
+        "New JB122003 high-resolution photo shows open-top U/channel tip mouths, not generic circular holes; hidden route/depth/opposed face remain unresolved."
+      ],
+      "interfaces_and_review": [
+        "Historical chaincase root/seat/head/axis registration unqualified; no fourth axis certified",
+        "Main owns plate hoop f95d3ae and seat/plate supports: excluded from worker manufacture"
+      ],
+      "inventory_source": "creative/research/powertrain-completion-assigned14-v1/retained11-precise-inventory-v52.json",
+      "original_package_dependencies": [
+        "P18",
+        "P23"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Vues axiales et opposées des bouches du guide, contacts des soudures/crochets et pivot monté ; réutiliser cadre, bras et protections restaurés."
+    },
+    {
+      "priority": 25,
+      "package": "P27",
+      "title": "Pose et fixations des amortisseurs",
+      "owner": "powertrain-worker",
+      "state": "research_required",
+      "summary_fr": "Rondelles/vis de montage externes et ancrages des amortisseurs ; yeux et bagues existent déjà.",
+      "remaining_geometry": [
+        "External top/bottom mounting washers/bolts and actual anchor fasteners; existing eye sleeves/bush/closures excluded"
+      ],
+      "existing_do_not_duplicate": [
+        "SNS shocks reused",
+        "Cap-nut study exists",
+        "Both bright eye sleeves and both black eye/neck exterior candidates locally restored, no duplicate"
+      ],
+      "research_to_unlock": [
+        "Canonical14SNS originals locally available: both eye exteriors, both sleeves, rims/closures/blue region are PRESENT, not missing washers",
+        "Need actual external mounted left/right bolt/washer stack and frame/swingarm anchors, D04 related catalogue alone does not fix dimensions"
+      ],
+      "interfaces_and_review": [
+        "Anchor distances/stops/travel/forces unqualified; cap-nut refinement is review not absent geometry"
+      ],
+      "inventory_source": "creative/research/powertrain-completion-assigned14-v1/retained11-precise-inventory-v52.json",
+      "original_package_dependencies": [
+        "P21",
+        "P23"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Macros des empilages externes gauche/droite sur cadre et bras oscillant ; réutiliser yeux et bagues déjà présents."
+    },
+    {
+      "priority": 26,
+      "package": "P28",
+      "title": "Fixations guidon et leviers",
+      "owner": "front-worker",
+      "state": "research_required",
+      "summary_fr": "Tampon inférieur DS181009, section réelle de rondelle DS181010, rondelles de pivots et précharge. Pas de duplication du tampon supérieur.",
+      "remaining_geometry": [
+        "Tampon inférieur DS181009, section réelle de rondelle DS181010, rondelles de pivots et précharge. Pas de duplication du tampon supérieur."
+      ],
+      "existing_do_not_duplicate": [],
+      "research_to_unlock": [
+        "Profils/sections isolés exacts et empilage comprimé mesuré. Crosland HTTP500 et Matriz média0 n’apportent aucune forme."
+      ],
+      "interfaces_and_review": [
+        "DS181009 lower damper section",
+        "DS181010 washer actual section",
+        "pivot washer and stack preload"
+      ],
+      "inventory_source": "creative/reviews/front-completion-front12-final-handoff-v1/inventory.json",
+      "original_package_dependencies": [],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Profils/sections isolés exacts et empilage comprimé mesuré. Crosland HTTP500 et Matriz média0 n’apportent aucune forme."
+    },
+    {
+      "priority": 27,
+      "package": "P29",
+      "title": "Câbles et faisceau visibles",
+      "owner": "front-worker",
+      "state": "research_required",
+      "summary_fr": "Routes complètes accélérateur/embrayage/frein, stations de clips, extrémités, continuité et mou au braquage. Le bow inférieur reste une étude isolée.",
+      "remaining_geometry": [
+        "Routes complètes accélérateur/embrayage/frein, stations de clips, extrémités, continuité et mou au braquage. Le bow inférieur reste une étude isolée."
+      ],
+      "existing_do_not_duplicate": [],
+      "research_to_unlock": [
+        "Parcours montés continus de bout en bout, clips identifiés et vues en butées de direction ; identification électrique indépendante."
+      ],
+      "interfaces_and_review": [
+        "complete throttle/clutch/brake routes",
+        "clips/retainers and stations",
+        "full-lock slack",
+        "switch/ignition continuity"
+      ],
+      "inventory_source": "creative/reviews/front-completion-front12-final-handoff-v1/inventory.json",
+      "original_package_dependencies": [
+        "P19",
+        "P24",
+        "P28"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Parcours montés continus de bout en bout, clips identifiés et vues en butées de direction ; identification électrique indépendante."
+    },
+    {
+      "priority": 28,
+      "package": "P30",
+      "title": "Visière et cockpit : raccords finaux",
+      "owner": "front-worker",
+      "state": "research_required",
+      "summary_fr": "Retours cachés du visor, empreinte de vis et sections rondelles/écrous, entraxes et dégagements cockpit. La tête brillante existante reste une enveloppe partielle.",
+      "remaining_geometry": [
+        "Retours cachés du visor, empreinte de vis et sections rondelles/écrous, entraxes et dégagements cockpit. La tête brillante existante reste une enveloppe partielle."
+      ],
+      "existing_do_not_duplicate": [],
+      "research_to_unlock": [
+        "Visor démonté face/dos/profil, fixations macro et centres mesurés, contrôle de dégagement avec instruments/commandes."
+      ],
+      "interfaces_and_review": [
+        "visor hidden returns",
+        "screw drive/washer/nut sections",
+        "mounting centres and instrument/control clearance"
+      ],
+      "inventory_source": "creative/reviews/front-completion-front12-final-handoff-v1/inventory.json",
+      "original_package_dependencies": [
+        "P06",
+        "P09",
+        "P25",
+        "P29"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Visor démonté face/dos/profil, fixations macro et centres mesurés, contrôle de dégagement avec instruments/commandes."
+    },
+    {
+      "priority": 29,
+      "package": "P01",
+      "title": "Cache latéral gauche",
+      "owner": "powertrain-worker",
+      "state": "research_required",
+      "summary_fr": "Retours et attaches arrière du cache gauche.",
+      "remaining_geometry": [
+        "Backing/edge return",
+        "Reverse clips/retainers and unreadable fastener drive"
+      ],
+      "existing_do_not_duplicate": [
+        "side-cover-left-v2"
+      ],
+      "research_to_unlock": [
+        "Reverse photo/section required for hidden return and attachment geometry"
+      ],
+      "interfaces_and_review": [
+        "Installed gaps and true back depth"
+      ],
+      "inventory_source": "creative/research/powertrain-completion-assigned14-v1/retained11-precise-inventory-v52.json",
+      "original_package_dependencies": [],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Obtenir le revers et le profil du cache : retours, profondeur, pions et attaches."
+    },
+    {
+      "priority": 30,
+      "package": "P04",
+      "title": "Cache latéral droit",
+      "owner": "powertrain-worker",
+      "state": "research_required",
+      "summary_fr": "Fond et pattes de retenue du cache droit.",
+      "remaining_geometry": [
+        "Reverse backing/retainer tabs"
+      ],
+      "existing_do_not_duplicate": [
+        "side-cover-right-v1",
+        "lower-head-v1",
+        "corrected composition-v2"
+      ],
+      "research_to_unlock": [
+        "Rear and edge views; current RDC00 front does not resolve back depth"
+      ],
+      "interfaces_and_review": [
+        "Installed upper/front/rear gaps"
+      ],
+      "inventory_source": "creative/research/powertrain-completion-assigned14-v1/retained11-precise-inventory-v52.json",
+      "original_package_dependencies": [
+        "P01"
+      ],
+      "dependency_rule": "Les dépendances de paquet contraignent le montage ; un enfant isolé documenté peut avancer sans attendre la réception de tout le paquet.",
+      "package_complete": false,
+      "push_after_each_child_or_blocked_checkpoint": true,
+      "next_action_fr": "Obtenir les vues arrière et de chant du cache droit ; borner l’épaisseur et les pattes."
+    }
+  ],
+  "final_assembly_milestones": [
+    {
+      "id": "A01",
+      "action": "Réconcilier variante RDC, repères et pose de chaque parent ; garder les contradictions ouvertes."
+    },
+    {
+      "id": "A02",
+      "action": "Monter et contrôler arrière, roues/transmission, train avant/cockpit, moteur/commandes, selle/carrosserie."
+    },
+    {
+      "id": "A03",
+      "action": "Revue de moto entière : face, dos, profils gauche/droit, quarts avant/arrière et vue pilote ; annoter trous, flottements et intersections."
+    },
+    {
+      "id": "A04",
+      "action": "Contrôler direction en butées, suspension, roues/chaîne, béquilles et commandes ; corriger chaque contact."
+    },
+    {
+      "id": "A05",
+      "action": "Préparer LOD/export sur scène représentative ; mesurer les coûts et conserver .blend détaillés/GLB portables."
+    },
+    {
+      "id": "A06",
+      "action": "Présenter la révision entière sans conducteur pour réception utilisateur ; clôturer seulement les critères réellement acquis."
+    }
+  ],
+  "evidence_sources": [
+    {
+      "path": "creative/workflow/motorcycle-exterior-completion-v1.json",
+      "sha256": "52efbeb343d0b37f2b8653af872c508d58cce304896584b3b20e2cf724a8b378"
+    },
+    {
+      "path": "creative/reviews/front-completion-front12-final-handoff-v1/inventory.json",
+      "sha256": "1fa3c9a3b4f8e25da681b83dab4bbb6f9601a3c2a9e7d78ab17df50a29200b2d"
+    },
+    {
+      "path": "creative/research/powertrain-completion-assigned14-v1/retained11-precise-inventory-v52.json",
+      "sha256": "d6f9971461970be1b640cbc8a889d83f0d7291f62176a710d9cae35b8d7d219a"
+    }
+  ],
+  "source_notes": [
+    "DH161146 : source physique désormais présente, mais dernier rendu macro interrompu ; la fiche historique ne doit pas réintroduire le blocage dépassé.",
+    "P19 corps/cuve v2 ont déjà été revus indépendamment dans cfa71e0 ; ne pas les refaire comme absents.",
+    "JB161002 et les supports passagers existent ; leurs lignes historiques modelable next sont dépassées."
+  ]
+}

@@ -232,3 +232,11 @@ sur [leur branche d'archive](https://github.com/Mobutoo/wewa/tree/codex/sns-end-
 Elles restent des alternatives provisoires à ne pas confondre avec les
 fermetures Source21 déjà publiées. Leur sauvegarde ne remplace aucune source
 historique et ne modifie pas les comptes du registre.
+
+## Sauvegarde et plan de finition — 22 octobre 2026
+
+[Plan des trente paquets](creative/workflow/motorcycle-remaining-plan-2026-10-22-v1/PLAN.md) · [Plan structuré](creative/workflow/motorcycle-remaining-plan-2026-10-22-v1/plan.json) · [Manifestes de sauvegarde des travaux en cours](creative/reviews/pending-work-backup-2026-10-22-v1/).
+
+Sources, rendus et essais partiels/refusés sauvegardés sans nouvelle réception. La gaine de ressort latérale reste en cours : trois rendus96 non relus et macro interrompue. La traverse arrière formée v2 attend sa revue des aperçus et ses preuves détaillées. Les supports passagers gauche/droite et les nouvelles études front12 existent ; leurs contrôles indépendants restent planifiés.
+
+L’enchaînement prioritaire termine ces preuves, traite un silentbloc documenté, prépare le fragment de carter, puis déroule les pièces restantes selon les références disponibles. Une attache avant du carter supérieur reste explicitement manquante. Aucun paquet ni moto entière déclaré terminé ; aucun nouveau déploiement.
