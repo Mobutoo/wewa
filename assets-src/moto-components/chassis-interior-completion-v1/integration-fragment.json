@@ -1,0 +1,741 @@
+{
+  "id": "chassis-interior-completion-v1",
+  "preferred_integration": "ADD ONLY to whole v14/v16; preserve the nine baseline parents. Do not also import kit-linked as a second assembly.",
+  "parents_to_remove": [],
+  "parents_retained": [
+    "frame-headtube",
+    "frame-front-backbone-v2",
+    "frame-front-downmember",
+    "frame-head-gusset",
+    "frame-lower-cradle-rail",
+    "frame-seat-rail-observed",
+    "swingarm-body",
+    "air-cleaner-box-outer-body-pf581003-v1",
+    "airbox-carb-boot-physical-study-v2"
+  ],
+  "if_importing_entire_linked_kit_instead_remove_baseline_parents": [
+    "frame-headtube",
+    "frame-front-backbone-v2",
+    "frame-front-downmember",
+    "frame-head-gusset",
+    "frame-lower-cradle-rail",
+    "frame-seat-rail-observed",
+    "swingarm-body",
+    "air-cleaner-box-outer-body-pf581003-v1",
+    "airbox-carb-boot-physical-study-v2"
+  ],
+  "convention": "Blender Xleft Yrear Zup, metres; row-major matrices act on column vectors. glTF conversion C=[[1,0,0,0],[0,0,1,0],[0,-1,0,0],[0,0,0,1]], MglTF=C Mnative C^-1",
+  "additions": [
+    {
+      "key": "PROVISIONAL opposite frame-lower-cradle-rail",
+      "source": "assets-src/moto-components/frame/lower-cradle-rail/frame-lower-cradle-rail-v1.blend",
+      "collection": "WEWA_FRAME_LOWER_CRADLE_RAIL_ISOLATED",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.07000000029802322
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.03500000014901161
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.6399999856948853
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_class": "estimated",
+      "provisional_same_exemplar": true,
+      "pose_uncertainty_m": 0.025,
+      "nested": [],
+      "sha256": "b2646434f124396701f7eb9508cc5f59cfe2e846b1ea84c54af20af56f5b42f3"
+    },
+    {
+      "key": "PROVISIONAL opposite frame-seat-rail-observed",
+      "source": "assets-src/moto-components/frame/seat-rail-observed/frame-seat-rail-observed-v1.blend",
+      "collection": "WEWA_FRAME_SEAT_RAIL_ISOLATED",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.07999999821186066
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.30000001192092896
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.36000001430511475
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_class": "estimated",
+      "provisional_same_exemplar": true,
+      "pose_uncertainty_m": 0.025,
+      "nested": [],
+      "sha256": "d56874f3b68866f4ffe5f1f948de832352087e8ee83096ac43f133361b01b52f"
+    },
+    {
+      "key": "WEWA_SWINGARM_PIVOT_SHAFT_ISOLATED",
+      "source": "assets-src/moto-components/swingarm/pivot-shaft/swingarm-pivot-shaft-v1.blend",
+      "collection": "WEWA_SWINGARM_PIVOT_SHAFT_ISOLATED",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.3457126319408417
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7127853035926819
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_class": "documented_related_variant / estimated",
+      "pose_uncertainty_m": 0.03,
+      "rotation_uncertainty_deg": 10,
+      "nested": [],
+      "sha256": "918fc762407cf96b2055bb7342acd869974a0be37aaa86e7f62cbfd46db72be9"
+    },
+    {
+      "key": "WEWA_SWINGARM_PIVOT_BUSH_ISOLATED",
+      "source": "assets-src/moto-components/swingarm/pivot-bush/swingarm-pivot-bush-v1.blend",
+      "collection": "WEWA_SWINGARM_PIVOT_BUSH_ISOLATED",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0820000022649765
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.3457126319408417
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7127853035926819
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_class": "documented_related_variant / estimated",
+      "pose_uncertainty_m": 0.03,
+      "rotation_uncertainty_deg": 10,
+      "nested": [],
+      "sha256": "1fceb19d6a30e1b718417dd902d142df7aacb5c4a279a4ba72ad40d8eabbf36f"
+    },
+    {
+      "key": "WEWA_SWINGARM_CHAIN_SLIDER_ISOLATED",
+      "source": "assets-src/moto-components/swingarm/chain-slider/swingarm-chain-slider-v1.blend",
+      "collection": "WEWA_SWINGARM_CHAIN_SLIDER_ISOLATED",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0860000029206276
+        ],
+        [
+          0.0,
+          0.9986295104026794,
+          0.0523359589278698,
+          0.3457126319408417
+        ],
+        [
+          0.0,
+          -0.0523359589278698,
+          0.9986295104026794,
+          -0.7127853035926819
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_class": "documented_related_variant / estimated",
+      "pose_uncertainty_m": 0.03,
+      "rotation_uncertainty_deg": 10,
+      "nested": [],
+      "sha256": "7e8f460312867506ee59bca1fb362ceb07e98b8a0f87ec93d4c80604f5d94034"
+    },
+    {
+      "key": "WEWA_SEAT_BASE_OBSERVED_UNDERSIDE_V2",
+      "source": "assets-src/moto-components/seat-base-observed-underside-v2/seat-base-observed-underside-v2.blend",
+      "collection": "WEWA_SEAT_BASE_OBSERVED_UNDERSIDE_V2",
+      "matrix_world": [
+        [
+          -1.0,
+          0.0,
+          -8.742277657347586e-08,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.699999988079071
+        ],
+        [
+          8.742277657347586e-08,
+          0.0,
+          -1.0,
+          -0.26499998569488525
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_class": "documented_related_variant / estimated",
+      "pose_uncertainty_m": 0.03,
+      "rotation_uncertainty_deg": 10,
+      "nested": [],
+      "sha256": "5ba6f51871d62f702379014963f903d93647c1f68792221d7e57da17574b47e7"
+    },
+    {
+      "key": "WEWA_SEAT_LATERAL_MOUNT_LUG_VISIBLE_V1",
+      "source": "assets-src/moto-components/seat-lateral-mount-lug-visible-v1/seat-lateral-mount-lug-visible-v1.blend",
+      "collection": "WEWA_SEAT_LATERAL_MOUNT_LUG_VISIBLE_V1",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.09000000357627869
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          0.6000000238418579
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          -0.3400000035762787
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_class": "documented_related_variant / estimated",
+      "pose_uncertainty_m": 0.03,
+      "rotation_uncertainty_deg": 10,
+      "nested": [],
+      "sha256": "05abd35d74e3668e65098ffca493a33390bf313485d4b8b8a4b78b44546a05e9"
+    },
+    {
+      "key": "WEWA_SEAT_DAMPER_PEDESTAL_V2",
+      "source": "assets-src/moto-components/seat-damper-pedestal-v2/seat-damper-pedestal-v2.blend",
+      "collection": "WEWA_SEAT_DAMPER_PEDESTAL_V2",
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.07999999821186066
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.6499999761581421
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.28999999165534973
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_class": "documented_related_variant / estimated",
+      "pose_uncertainty_m": 0.03,
+      "rotation_uncertainty_deg": 10,
+      "nested": [],
+      "sha256": "96a93d12e1c662b2494bb583681497b0e51c436f0a7d5bc8c00aefc03ca642e4"
+    },
+    {
+      "key": "CHASSIS_NEW_OBSERVED_CHILDREN_V1",
+      "source": "assets-src/moto-components/chassis-interior-completion-v1/new-observed-children.blend",
+      "sha256": "e96f49be77cdf3402c58bae44c33424c5882b2194359e185c8fb408f9273762c",
+      "collection": "CHASSIS_NEW_OBSERVED_CHILDREN_V1",
+      "matrix_world": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "nested": [
+        {
+          "key": "NEW central curved hollow member - related plate26",
+          "source": "assets-src/moto-components/chassis-interior-completion-v1/new-observed-children.blend",
+          "collection": "CHASSIS_NEW_OBSERVED_CHILDREN_V1",
+          "selected_object": "NEW central curved hollow member - related plate26",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "source_class": "documented_related_variant / estimated",
+          "uncertainty": "See G0-G2-plan.json; local geometry in global layout coordinates; identity instance"
+        },
+        {
+          "key": "NEW observed diagonal strut 0.065",
+          "source": "assets-src/moto-components/chassis-interior-completion-v1/new-observed-children.blend",
+          "collection": "CHASSIS_NEW_OBSERVED_CHILDREN_V1",
+          "selected_object": "NEW observed diagonal strut 0.065",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "source_class": "documented_related_variant / estimated",
+          "uncertainty": "See G0-G2-plan.json; local geometry in global layout coordinates; identity instance"
+        },
+        {
+          "key": "NEW observed diagonal strut -0.065",
+          "source": "assets-src/moto-components/chassis-interior-completion-v1/new-observed-children.blend",
+          "collection": "CHASSIS_NEW_OBSERVED_CHILDREN_V1",
+          "selected_object": "NEW observed diagonal strut -0.065",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "source_class": "documented_related_variant / estimated",
+          "uncertainty": "See G0-G2-plan.json; local geometry in global layout coordinates; identity instance"
+        },
+        {
+          "key": "NEW battery case perforated back - six observed windows",
+          "source": "assets-src/moto-components/chassis-interior-completion-v1/new-observed-children.blend",
+          "collection": "CHASSIS_NEW_OBSERVED_CHILDREN_V1",
+          "selected_object": "NEW battery case perforated back - six observed windows",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "source_class": "documented_related_variant / estimated",
+          "uncertainty": "See G0-G2-plan.json; local geometry in global layout coordinates; identity instance"
+        },
+        {
+          "key": "NEW battery case bent bottom shelf",
+          "source": "assets-src/moto-components/chassis-interior-completion-v1/new-observed-children.blend",
+          "collection": "CHASSIS_NEW_OBSERVED_CHILDREN_V1",
+          "selected_object": "NEW battery case bent bottom shelf",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "source_class": "documented_related_variant / estimated",
+          "uncertainty": "See G0-G2-plan.json; local geometry in global layout coordinates; identity instance"
+        },
+        {
+          "key": "NEW carrier folded side flange 0.405",
+          "source": "assets-src/moto-components/chassis-interior-completion-v1/new-observed-children.blend",
+          "collection": "CHASSIS_NEW_OBSERVED_CHILDREN_V1",
+          "selected_object": "NEW carrier folded side flange 0.405",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "source_class": "documented_related_variant / estimated",
+          "uncertainty": "See G0-G2-plan.json; local geometry in global layout coordinates; identity instance"
+        },
+        {
+          "key": "NEW carrier folded side flange 0.55",
+          "source": "assets-src/moto-components/chassis-interior-completion-v1/new-observed-children.blend",
+          "collection": "CHASSIS_NEW_OBSERVED_CHILDREN_V1",
+          "selected_object": "NEW carrier folded side flange 0.55",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "source_class": "documented_related_variant / estimated",
+          "uncertainty": "See G0-G2-plan.json; local geometry in global layout coordinates; identity instance"
+        },
+        {
+          "key": "NEW battery JF401807 related envelope - no label or wiring",
+          "source": "assets-src/moto-components/chassis-interior-completion-v1/new-observed-children.blend",
+          "collection": "CHASSIS_NEW_OBSERVED_CHILDREN_V1",
+          "selected_object": "NEW battery JF401807 related envelope - no label or wiring",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "source_class": "documented_related_variant / estimated",
+          "uncertainty": "See G0-G2-plan.json; local geometry in global layout coordinates; identity instance"
+        },
+        {
+          "key": "NEW battery stepped lid observed plate46",
+          "source": "assets-src/moto-components/chassis-interior-completion-v1/new-observed-children.blend",
+          "collection": "CHASSIS_NEW_OBSERVED_CHILDREN_V1",
+          "selected_object": "NEW battery stepped lid observed plate46",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "source_class": "documented_related_variant / estimated",
+          "uncertainty": "See G0-G2-plan.json; local geometry in global layout coordinates; identity instance"
+        },
+        {
+          "key": "NEW battery retention band - observed exterior strip",
+          "source": "assets-src/moto-components/chassis-interior-completion-v1/new-observed-children.blend",
+          "collection": "CHASSIS_NEW_OBSERVED_CHILDREN_V1",
+          "selected_object": "NEW battery retention band - observed exterior strip",
+          "matrix_world": [
+            [
+              1.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "source_class": "documented_related_variant / estimated",
+          "uncertainty": "See G0-G2-plan.json; local geometry in global layout coordinates; identity instance"
+        }
+      ],
+      "small_glb": "assets-src/moto-components/chassis-interior-completion-v1/new-observed-children.glb",
+      "small_glb_matrix_world": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "warning": "Nested ten objects ALREADY authored in global native coordinates. Instance ONCE at identity; do not also instance the nested rows separately."
+    }
+  ],
+  "count": {
+    "new_observed_child_meshes": 10,
+    "omitted_existing_source_component_types": 6,
+    "provisional_existing_rail_instances": 2,
+    "logical_piece_instances_added": 18,
+    "mesh_instances_added": 20,
+    "new_material_shapes_are_estimated": true
+  },
+  "exclusions": [
+    "fork",
+    "SNS",
+    "rubber repetitions",
+    "indicators"
+  ],
+  "limits": [
+    "All poses estimated; +/-30mm and +/-10deg; opposite rail X shift +/-25mm",
+    "No hidden welds or exact assembly fit",
+    "One existing bush exemplar only, second bush is main repetition if desired",
+    "Battery terminals, hidden mounts, pan crossmembers and variant match remain unresolved"
+  ],
+  "art_accepted": false
+}

@@ -1,0 +1,175 @@
+{
+  "revision": "chassis-interior-completion-v1",
+  "baseline": "whole-exterior-coverage-v14",
+  "user_supplied_baseline_head": "fa42aeb (no Git operation performed)",
+  "coordinates": "native Blender metres X pilot left, Y rear, Z up; glTF (X,Z,-Y)",
+  "authorization": "Provisional identical documented exemplars approved this session, no G8; fork/SNS/rubber/indicators not repeated here",
+  "source_register": [
+    {
+      "id": "D04",
+      "url": "https://motobro.ua/files/Boxer_BM_125_UG_Provisional_SPC_%282%29.pdf",
+      "sha256": "5228ed1fb3f5ab9ec1503864bf6cccf66bd429ece78adb30516f9904a099372e",
+      "observations": {
+        "sheet38_plate26": "Curved central frame descending member, diagonal stays, seat rails, lower frame. No hidden welding inferred.",
+        "sheet39_plate27": "Shaft JA121003 qty1; DP171006 bushes qty2; slider JB122003 qty1.",
+        "sheet60_plate46": "Battery JF401807 4Ah UG5 / DS201082 5Ah alternative; JV401801 perforated case and JA401801 strap. Do not combine battery variants as exact."
+      },
+      "source_class": "documented_related_variant",
+      "rights": "Documentary only; no source image in public outputs",
+      "download_attempt": "HTTP429; existing local archived PDF read instead"
+    }
+  ],
+  "inventory": {
+    "present_v14": [
+      "six partial frame parents",
+      "swingarm body",
+      "airbox body",
+      "airbox carb boot"
+    ],
+    "omitted_existing_sources": [
+      "swingarm pivot shaft",
+      "pivot bush (one exemplar here; pair repetition deferred)",
+      "chain slider partial with unresolved tip mouths",
+      "seat underside pan v2",
+      "seat lateral lug",
+      "seat damper pedestal v2"
+    ],
+    "new_observed_children": [
+      "central curved hollow member",
+      "diagonal struts",
+      "perforated battery carrier with open shelf and side folds",
+      "battery outer case and stepped lid",
+      "battery retention band visible segment"
+    ],
+    "unresolved_not_fabricated": [
+      "exact central-frame pressed seams and pivot mounting plates",
+      "seat crossmembers, hidden joints and fasteners",
+      "airbox screws/clips/drain and breather routing",
+      "battery terminals/wiring/strap hooks",
+      "variant exactness and installed interfaces",
+      "slider tip mouths absent in historical source"
+    ],
+    "outside_scope_omissions": [
+      "fork complementary instances",
+      "second rear SNS",
+      "driver/passenger rubber repetitions",
+      "opposite indicators",
+      "rear axle chain adjustment children: catalogue plate27 items4,14,15,16"
+    ]
+  },
+  "bounded_estimates": [
+    {
+      "part": "central member",
+      "dimensions_m": {
+        "width": 0.043,
+        "depth": 0.035,
+        "wall": 0.002,
+        "height": 0.392
+      },
+      "bounds_m": {
+        "width": [
+          0.03,
+          0.055
+        ],
+        "depth": [
+          0.025,
+          0.05
+        ],
+        "wall": [
+          0.0012,
+          0.0035
+        ],
+        "height": [
+          0.33,
+          0.46
+        ]
+      },
+      "method": "Catalogue visible curve interpreted against existing v14 backbone/pivot; illustration is not a scale drawing; no metric manufacturer claim",
+      "source_class": "estimated"
+    },
+    {
+      "part": "diagonal stays",
+      "section_m": 0.018,
+      "section_bounds_m": [
+        0.012,
+        0.026
+      ],
+      "pose_uncertainty_m": 0.03,
+      "quantity_status": "two-side layout hypothesis, provisional, visible plate26 trace; no accepted symmetry",
+      "source_class": "estimated"
+    },
+    {
+      "part": "battery",
+      "case_working_dimensions_m": [
+        0.076,
+        0.126,
+        0.116
+      ],
+      "bounds_m": [
+        [
+          0.06,
+          0.1
+        ],
+        [
+          0.1,
+          0.15
+        ],
+        [
+          0.09,
+          0.15
+        ]
+      ],
+      "method": "Plate46 visible tall rectangular case and lid; positioned opposite airbox, not a measured battery standard",
+      "source_class": "estimated"
+    },
+    {
+      "part": "carrier",
+      "sheet_m": 0.0015,
+      "sheet_bounds_m": [
+        0.001,
+        0.0025
+      ],
+      "windows": "six apertures interpreted from drawing; rectangular working contour, not exact stamped profile",
+      "pose_uncertainty_m": 0.03,
+      "source_class": "estimated"
+    },
+    {
+      "part": "opposite rails",
+      "translations_m": {
+        "seat_rail": [
+          -0.16,
+          0,
+          0
+        ],
+        "cradle": [
+          -0.14,
+          0,
+          0
+        ]
+      },
+      "translation_uncertainty_m": 0.025,
+      "rotation_uncertainty_deg": 10,
+      "method": "Rigid translation of source exemplar, no reflection, no scale; catalogue supports paired layout, identity provisional",
+      "source_class": "estimated"
+    },
+    {
+      "part": "omitted source placements",
+      "translation_uncertainty_m": 0.03,
+      "rotation_uncertainty_deg": 10,
+      "method": "Preserve source convention; source geometry unchanged; estimated contextual pose only",
+      "source_class": "estimated"
+    }
+  ],
+  "gates": {
+    "G0": "scope documented",
+    "G1": "related catalogue observed, exact variant blocked",
+    "G2": "bounded estimated frame, no calibrated fit",
+    "G3": "pending visual review",
+    "G4": "pending",
+    "G5": "installed interface unresolved",
+    "G6": "pending new export/runtime",
+    "G7": "no mobile LOD qualification",
+    "G8": "not requested, not accepted"
+  },
+  "art_accepted": false
+}

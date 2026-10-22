@@ -1,0 +1,1 @@
+export default {root:'/workspace/wewa',cacheDir:'/workspace/wewa/assets-src/moto-components/chassis-interior-completion-v1/runtime-cache',server:{host:'127.0.0.1',port:4197,strictPort:true},optimizeDeps:{include:['@babylonjs/core','@babylonjs/loaders/glTF']}};
