@@ -1,0 +1,5 @@
+import bpy,json,hashlib
+from pathlib import Path
+R=Path('/workspace/wewa');K='horn-visible-completion-v1';H=R/'assets-src/moto-components'/K;O=R/'creative/reviews'/K
+p=H/'horn-visible.blend';bpy.ops.wm.open_mainfile(filepath=str(p));s=bpy.context.scene;s.camera.data.ortho_scale=.21;s.cycles.samples=96;s.render.image_settings.file_format='OPEN_EXR';s.render.image_settings.color_depth='32';s.render.filepath=str(O/'horn-whole96.exr');bpy.ops.render.render(write_still=True);s.render.image_settings.file_format='PNG';s.render.image_settings.color_depth='8';bpy.data.images['Render Result'].save_render(str(O/'horn-whole96.png'),scene=s)
+(O/'whole-render-report.json').write_text(json.dumps(dict(source_sha256=hashlib.sha256(p.read_bytes()).hexdigest(),samples=96,resolution_px=[720,540],png='horn-whole96.png',exr='horn-whole96.exr',camera_override_only='ortho0.21 for full pierced strap framing; original0.17preview too tight and retained',source_not_modified=True,art_accepted=False),indent=2)+'\n')
