@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **183 composants candidats enregistrés**, après
+Le registre courant comporte **184 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -25,6 +25,10 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 [Revue de l'ensemble à quatorze sources](creative/reviews/rear-sns-rest-assembly-v3/README.md)
 · [Contrôles Source21](WEWA_Developpement_Web/validation/motorcycle18-source21-integrity.json)
+
+## Compléments de couverture après audit global
+
+- **LEGACY14-FORK-RH** : [fork-bellows-right-visible-v1 — sources, rendus et contrôles](creative/reviews/fork-bellows-right-visible-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
 
 ## Exécution continue des trente paquets
 
