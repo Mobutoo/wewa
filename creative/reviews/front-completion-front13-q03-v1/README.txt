@@ -1,0 +1,1 @@
+Q03: 7 enfants, 3 vues matière96 chacun (whole-quarter, whole-reverse, neutral). PNG/EXR existants, dimensions natives conservées. Lecture effectuée ; aucune réception G4/G8. Réserves propres à chaque enfant dans G0-coordination. Fragments plats inchangés copiés en nouveaux sidecars.
