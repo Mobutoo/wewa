@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **191 composants candidats enregistrés**, après
+Le registre courant comporte **192 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -33,6 +33,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P14** : [MOTO-GEAR-SELECTOR-CLAMP-EARS-VISIBLE-HEAD-001 — bounded exterior candidate — sources et images](creative/reviews/gear-selector-clamp-ears-visible-head-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P18** : [MOTO-CRANKCASE-RH-MAJOR-OUTER-ENVELOPE-DONOR-001 — bounded exterior candidate — sources et images](creative/reviews/crankcase-rh-major-outer-envelope-donor-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P02** : [rack-observed-long-inner-rail-v1 — sources, rendus et contrôles](creative/reviews/rack-observed-long-inner-rail-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **P20** : [MOTO-AIR-CLEANER-BOX-OUTER-BODY-PF581003-001 — bounded exterior candidate — sources et images](creative/reviews/air-cleaner-box-outer-body-pf581003-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
