@@ -1,0 +1,228 @@
+{
+  "schema": 1,
+  "id": "MOTO-TAIL-SUPPORT-DAMPER-DD201011-001",
+  "label": "P05 — un silentbloc DD201011, étude",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../../creative/research/tail-support-damper-dd201011-v1/sources-child-v1.json",
+  "sources": [
+    "D01",
+    "DD201011-CROSLAND-PHOTO"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "whole-front",
+      "PNG_sha256": "7f4699ca570106d2bc7577079f85e7986faa1ccf68df397ed9bb165e2ea6014c",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.0,
+        0.0,
+        0.058800000697374344
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "whole-quarter",
+      "PNG_sha256": "e07e03e0b7f8e2bcad4c4f4ae31df05430e233c8a098bce5ee626ad52863a820",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.019600000232458115,
+        -0.023520002141594887,
+        0.03920000046491623
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "neutral-outdoor",
+      "PNG_sha256": "0bd14c8e4c81526aef2b60766efed9a1f33b16d1c5b35a5b1b625d248013b432",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.019600000232458115,
+        -0.023520002141594887,
+        0.03920000046491623
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-TAIL-SUPPORT-DAMPER-DD201011-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "tail-support-damper-dd201011-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "path": "../../../creative/research/tail-support-damper-dd201011-v1/G0-G2-plan-v1.json",
+          "kind": "identity_and_parts",
+          "sha256": "95b9fdeb16f4ca7067811a5441c699e82beacc6902ee915d8aa1bc27df0049bd",
+          "revision": "tail-support-damper-dd201011-v1"
+        }
+      ],
+      "reason": "Observable child separated, estimates and variant limits documented; not full package or artistic acceptance",
+      "reviewed_at": "2026-10-22"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "tail-support-damper-dd201011-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "tail-support-damper-dd201011-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "tail-support-damper-dd201011-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/tail-support-damper-dd201011-v1/tail-support-damper-dd201011-v1.blend",
+          "kind": "editable_source",
+          "revision": "tail-support-damper-dd201011-v1",
+          "sha256": "702e11a0ee6b3e9ae3ff431a50e11e39f842d061f7f9fca191bdf81f5450c363"
+        },
+        {
+          "path": "../../reviews/tail-support-damper-dd201011-v1/whole-front.png",
+          "kind": "isolated_comparison",
+          "revision": "tail-support-damper-dd201011-v1",
+          "sha256": "7f4699ca570106d2bc7577079f85e7986faa1ccf68df397ed9bb165e2ea6014c"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "tail-support-damper-dd201011-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/tail-support-damper-dd201011-v1/neutral-outdoor.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "tail-support-damper-dd201011-v1",
+          "sha256": "0bd14c8e4c81526aef2b60766efed9a1f33b16d1c5b35a5b1b625d248013b432"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "tail-support-damper-dd201011-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/tail-support-damper-dd201011-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "tail-support-damper-dd201011-v1",
+          "sha256": "4980a4345057e385378f2e88d133c1b04560c1817afd45ed89b58f3b427fd876"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "tail-support-damper-dd201011-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/tail-support-damper-dd201011-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "tail-support-damper-dd201011-v1",
+          "sha256": "177f4bf76169e93d1d4b37f316a8f0530269e1aaa81ee9d8d025b993ff76b367"
+        },
+        {
+          "path": "../../reviews/tail-support-damper-dd201011-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "tail-support-damper-dd201011-v1",
+          "sha256": "39a5929552f582b392659ca8ac3d7e7adc8184e5a69fc96afeba542a97e5fa9a"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "tail-support-damper-dd201011-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "tail-support-damper-dd201011-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "tail-support-damper-dd201011-v1",
+  "export_revision": "tail-support-damper-dd201011-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/tail-support-damper-dd201011-v1/README.md",
+  "candidate_review": "../../reviews/tail-support-damper-dd201011-v1/README.md",
+  "production_group": 18,
+  "source_plan": "../../../creative/research/tail-support-damper-dd201011-v1/G0-G2-plan-v1.json"
+}

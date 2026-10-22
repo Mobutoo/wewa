@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **148 composants candidats enregistrés**, après
+Le registre courant comporte **149 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P05** : [tail-support-damper-dd201011-v1 — sources, rendus et contrôles](creative/reviews/tail-support-damper-dd201011-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **P08** : [rear-plate-carrier-crossbar-v2 — sources, rendus et contrôles](creative/reviews/rear-plate-carrier-crossbar-v2/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **P08** : [rear-plate-carrier-wire-v3 — sources, rendus et contrôles](creative/reviews/rear-plate-carrier-wire-v3/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **P05** : [tail-lamp-upper-bracket-v4 — sources, rendus et contrôles](creative/reviews/tail-lamp-upper-bracket-v4/README.md). Enfant candidat ; interfaces/paquet ouverts.
