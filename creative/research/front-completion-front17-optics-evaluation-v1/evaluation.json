@@ -1,0 +1,74 @@
+{
+  "trigger": {
+    "path": "creative/reviews/whole-exterior-coverage-v2/coverage-front-quarter.png",
+    "sha256": "7888b885ec5e0db6d5cbfc9b00fe1590d2ba32bd9a49e37bb652aa945718826b",
+    "actually_read": true,
+    "finding": "Open front housing reveals internal supports; actual optical unit absent, major exterior gap confirmed"
+  },
+  "sources": [
+    {
+      "url": "https://images.prom.ua/6870085334_w640_h640_otrazhatel-fary-perednej.jpg",
+      "page": "https://prom.ua/p2783493913-otrazhatel-fary-perednej.html",
+      "private_path": "/workspace/wewa-assets/references/autonomous-light-valve-evidence-v1/reflector-prom-1.jpg",
+      "sha256": "86d76109ddba9d69bf3b354d85b496931fa93246207b4806ffef8c4c5f7c4585",
+      "actually_read": true,
+      "pose": "front, same pose different resolutions not independent"
+    },
+    {
+      "url": "https://croslandpe.vteximg.com.br/arquivos/ids/171912/DJ201051_2.jpg?v=639058541906370000",
+      "private_path": "/workspace/wewa-assets/references/front-completion-front17-optics-evaluation-v1/DJ201051-oblique.jpg",
+      "sha256": "e3b039feaf403a50837d9b76e0c427662d0c390294dc23a661d78b139d5b6baf",
+      "restored_matches_old_registered_sha": true,
+      "actually_read": true,
+      "pose": "Oblique actual reflector-with-lens, no bare rear section"
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0061/6693/7700/files/Farola-Boxer-150-Bm-Original-Bajaj_4.jpg?v=1759262814",
+      "actually_viewed": true,
+      "private_path": "/workspace/wewa-assets/references/front-completion-front15-optics-v1/mundimotos-headlamp-3.jpg",
+      "sha256": "2291ef25fae990ef1dfaee81805f409c0f4229755a4299bfa9f1324103797ea0",
+      "bytes": 156956,
+      "role": "Related PF401007 assembled lamp oblique, envelope plausibility only, no exact DJ201051/RDC covariance"
+    }
+  ],
+  "decision": {
+    "outer_glass": "Fabricable as continuous exterior-envelope hypothesis with radius/sag broadly estimated; no holes at two projected reflector apertures, no invented inside wall or optical relief",
+    "reflector_facets": "Not yet ready as source-faithful depth geometry. Front photo locates two aperture projections, but luminous zigzags/vertical bands include reflected scene and refracted contours, not uniquely identified facet seams. A generic tessellated bowl would add unsupported boundaries.",
+    "G1": "partial",
+    "G2": "estimated",
+    "G4": "held",
+    "complete_optics": false
+  },
+  "critical_forms": [
+    {
+      "form": "Outer glazing front envelope",
+      "observable": "Circular projected perimeter and continuous horizontal foreground line across main aperture",
+      "depth_bound": "Flat to weak convex, working sag0..8.5mm at working radius85mm; broad modeling hypothesis not source-measured bound",
+      "next_view": "Edge-on view of actual DJ201051 with scale and front glazing silhouette"
+    },
+    {
+      "form": "Reflector broad bowl and main/pilot throat walls",
+      "observable": "Main aperture normalized radius approximately0.20 of outer radius; smaller pilot approximately0.07, below centre, behind continuous glass",
+      "unavailable": "Rim-to-throat recession and throat axis/profile; one photograph gives no source-derived numerical depth interval",
+      "next_view": "Actual optical insert rear/side with scale or section and corresponding front pose"
+    },
+    {
+      "form": "Reflector individual facets",
+      "observable": "Large vertical bright/dark regions and zigzag highlights",
+      "unavailable": "Which transitions are physical facet seams, corresponding 3D normals and source-bounded depth values. Intensity cannot be inverted into depth.",
+      "next_view": "Bare reflector without glazing from front and oblique, same unit, diffuse illumination or moving-light sequence"
+    },
+    {
+      "form": "Horizontal foreground lines / peripheral striae",
+      "observable": "Lines cross projected main aperture, dense perimeter texture",
+      "unavailable": "Molded-side ownership and relief amplitude; not assigned to reflector or sculpted as arbitrary ribs",
+      "next_view": "Glazing alone front/back and raking macro"
+    }
+  ],
+  "no_generic_optical_filler": true,
+  "source_pixels_not_used_as_texture": true,
+  "next_child": "front-completion-p06-outer-glass-front17-v1",
+  "historical_files_modified": false,
+  "dispatch": "Finish current outer-glass child, freeze delivery/research/inventory, no new fabrication before next main dispatch",
+  "actual_result": "Outer-envelope geometry built and native gray96 read. Material studio/reverse/HDR96 nearly invisible: failed legibility archived, G4held. Does not close global visible optic gap. No reflector modeled."
+}
