@@ -1,0 +1,46 @@
+{
+  "bounds": {
+    "MOTO-TAIL-LAMP-OUTER-LENS-001": {
+      "min_world_rear_depth_m": 1.1080000400543213,
+      "max_world_rear_depth_m": 1.130000039935112
+    },
+    "MOTO-TAIL-LAMP-BLACK-HOUSING-001": {
+      "min_world_rear_depth_m": 1.080000039190054,
+      "max_world_rear_depth_m": 1.1080000400543213
+    },
+    "MOTO-TAIL-LAMP-UPPER-BRACKET-001": {
+      "min_world_rear_depth_m": 1.0642500572139397,
+      "max_world_rear_depth_m": 1.0772876674309373
+    },
+    "MOTO-REAR-PLATE-CARRIER-CROSSBAR-001": {
+      "min_world_rear_depth_m": 1.0967501066625118,
+      "max_world_rear_depth_m": 1.1026439126580954
+    },
+    "MOTO-LICENSE-PLATE-WEWA-001": {
+      "min_world_rear_depth_m": 1.104250019066967,
+      "max_world_rear_depth_m": 1.1057500190800056
+    },
+    "MOTO-REAR-PLATE-CARRIER-WIRE-001": {
+      "min_world_rear_depth_m": 1.0592500572092831,
+      "max_world_rear_depth_m": 1.099248394370079
+    }
+  },
+  "pairs": [
+    {
+      "parts": [
+        "MOTO-TAIL-LAMP-BLACK-HOUSING-001",
+        "MOTO-TAIL-LAMP-UPPER-BRACKET-001"
+      ],
+      "conservative_whole_bounds_depth_gap_m": 0.0027123717591166496
+    },
+    {
+      "parts": [
+        "MOTO-LICENSE-PLATE-WEWA-001",
+        "MOTO-REAR-PLATE-CARRIER-CROSSBAR-001"
+      ],
+      "conservative_whole_bounds_depth_gap_m": 0.0016061064088717103
+    }
+  ],
+  "scope": "Positive depth-envelope separation of unchanged parent bounds under declared review transforms, solely to inspect the six parts. These authored gaps are not spacers, fitted stack dimensions or proof of mounted function.",
+  "art_accepted": false
+}

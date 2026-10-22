@@ -262,3 +262,5 @@ Sources, rendus et essais partiels/refusés sauvegardés sans nouvelle réceptio
 L’enchaînement prioritaire termine ces preuves, traite un silentbloc documenté, prépare le fragment de carter, puis déroule les pièces restantes selon les références disponibles. Une attache avant du carter supérieur reste explicitement manquante. Aucun paquet ni moto entière déclaré terminé ; aucun nouveau déploiement.
 
 - **P05/P07/P08/P11 — revue arrière v3** : [diagnostic des contacts](creative/reviews/rear-cluster-review-v3/README.md), six parents corrigés conservés sans déformation ; pose et pièces de liaison encore ouvertes.
+
+- **P05/P07/P08/P11 — revue arrière v4** : [six sources corrigées, rendus96 et export](creative/reviews/rear-cluster-review-v4/README.md). Jeux d’affichage explicites après le diagnostic v3 ; montage réel, fixations et soudures ouverts.

@@ -1,0 +1,140 @@
+{
+  "plate": {
+    "path": "assets-src/moto-components/license-plate-wewa-v2/license-plate-wewa-v2.glb",
+    "sha256": "6ce06bc53537c8f970a37240dff2c6d650417fbdd27f93ba40a515981e05133d",
+    "cap_boundary_loops": 3,
+    "outerHoles": [
+      {
+        "vertices": 64,
+        "centre": [
+          -0.07500000030267984,
+          0.0399999997462146,
+          -0.000750000006519258
+        ],
+        "extent": [
+          0.006000004708766937,
+          0.006000000983476639,
+          0
+        ]
+      },
+      {
+        "vertices": 64,
+        "centre": [
+          0.07500000030267984,
+          0.0399999997462146,
+          -0.000750000006519258
+        ],
+        "extent": [
+          0.006000004708766937,
+          0.006000000983476639,
+          0
+        ]
+      }
+    ]
+  },
+  "bar": {
+    "path": "assets-src/moto-components/rear-plate-carrier-crossbar-v2/rear-plate-carrier-crossbar-v2.glb",
+    "sha256": "75cbb927e7b02d1e5102a7f3d07cb48b97c9605cbf0b1d5d73c555040e6f08ca",
+    "cap_boundary_loops": 10,
+    "outerHoles": [
+      {
+        "vertices": 64,
+        "centre": [
+          -0.07500000041909516,
+          6.776263578034403e-21,
+          -0.000750000006519258
+        ],
+        "extent": [
+          0.006999999284744263,
+          0.007000000216066837,
+          0
+        ]
+      },
+      {
+        "vertices": 64,
+        "centre": [
+          0.07500000041909516,
+          0,
+          -0.000750000006519258
+        ],
+        "extent": [
+          0.006999999284744263,
+          0.007000000216066837,
+          0
+        ]
+      }
+    ]
+  },
+  "declared_rigid_poses": [
+    {
+      "key": "rear-plate-carrier-crossbar-v2",
+      "component_id": "MOTO-REAR-PLATE-CARRIER-CROSSBAR-001",
+      "source": "assets-src/moto-components/rear-plate-carrier-crossbar-v2/rear-plate-carrier-crossbar-v2.blend",
+      "source_sha256": "fed0f2fffb6369e1a79620bd089a37fee11d3e7470f15bcb3f40bb71df71a5ef",
+      "export_files": [
+        "assets-src/moto-components/rear-plate-carrier-crossbar-v2/rear-plate-carrier-crossbar-v2.glb"
+      ],
+      "offset_rear_frame_m": [
+        0,
+        -0.105,
+        0.0355
+      ],
+      "rotation": "body_forward",
+      "export_sha256_by_file": {
+        "assets-src/moto-components/rear-plate-carrier-crossbar-v2/rear-plate-carrier-crossbar-v2.glb": "75cbb927e7b02d1e5102a7f3d07cb48b97c9605cbf0b1d5d73c555040e6f08ca"
+      }
+    },
+    {
+      "key": "license-plate-wewa-v2",
+      "component_id": "MOTO-LICENSE-PLATE-WEWA-001",
+      "source": "assets-src/moto-components/license-plate-wewa-v2/license-plate-wewa-v2.blend",
+      "source_sha256": "78ccba398442a386614bd64c6960be471f203a6449d0344eaa9a02a804cd250a",
+      "export_files": [
+        "assets-src/moto-components/license-plate-wewa-v2/license-plate-wewa-v2.glb"
+      ],
+      "offset_rear_frame_m": [
+        0,
+        -0.145,
+        0.04
+      ],
+      "rotation": "rear_facing",
+      "export_sha256_by_file": {
+        "assets-src/moto-components/license-plate-wewa-v2/license-plate-wewa-v2.glb": "6ce06bc53537c8f970a37240dff2c6d650417fbdd27f93ba40a515981e05133d"
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "plate_hole_world_m": [
+        -0.07500000030267984,
+        1.104250019066967,
+        -0.43699999834643677
+      ],
+      "bar_hole_world_m": [
+        -0.07500000041909516,
+        1.1012501068180427,
+        -0.43699997663497925
+      ],
+      "axis_lateral_offset_m": 2.1711769623900546e-8,
+      "nominal_opposed_face_gap_m": 0.0029999122489243746
+    },
+    {
+      "plate_hole_world_m": [
+        0.07500000030267984,
+        1.104250019066967,
+        -0.43699999834643677
+      ],
+      "bar_hole_world_m": [
+        0.07500000041909516,
+        1.1012501068180427,
+        -0.43699997663497925
+      ],
+      "axis_lateral_offset_m": 2.1711769623900546e-8,
+      "nominal_opposed_face_gap_m": 0.0029999122489243746
+    }
+  ],
+  "numerical_tolerance_m": 1e-7,
+  "scope": "Actual parent GLB cap-hole loops under exact declared assembly transforms. Axes aligned nominally but nonzero authored face gaps; no clamping hardware, OEM tolerance, physical fit or art receipt.",
+  "protocol_sha256": "8ab33f21813ac4fae1387d1fed7f9a198f055c32220061096be8eddb5cdff860",
+  "art_accepted": false
+}
