@@ -1,0 +1,55 @@
+{
+  "probes": [
+    {
+      "label": "Plain bore clear axially",
+      "origin_source": [
+        0,
+        0,
+        0.02
+      ],
+      "direction_source": [
+        0,
+        0,
+        -1
+      ],
+      "span_m": 0.04,
+      "clear": true
+    },
+    {
+      "label": "Finite annular top face",
+      "origin_source": [
+        0.005,
+        0,
+        0.02
+      ],
+      "direction_source": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit_range_m": [
+        0.01599,
+        0.01601
+      ]
+    },
+    {
+      "label": "Source-visible outer flat",
+      "origin_source": [
+        0.02,
+        0,
+        0.002
+      ],
+      "direction_source": [
+        -1,
+        0,
+        0
+      ],
+      "first_hit_range_m": [
+        0.01299,
+        0.01301
+      ]
+    }
+  ],
+  "output": "creative/reviews/carburettor-entry-locknut-v1/annulus-export-check.json",
+  "scope": "Actual exported plain axial passage, finite annular face and working flat; no unseen threads/fit certification"
+}
