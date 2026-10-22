@@ -1,0 +1,55 @@
+{
+  "probes": [
+    {
+      "label": "Open review axis, far topology unobserved",
+      "origin_source": [
+        0,
+        0,
+        -0.01
+      ],
+      "direction_source": [
+        0,
+        0,
+        1
+      ],
+      "clear": true,
+      "span_m": 0.065
+    },
+    {
+      "label": "Actual finite inner wall X",
+      "origin_source": [
+        0,
+        0,
+        0.0215
+      ],
+      "direction_source": [
+        1,
+        0,
+        0
+      ],
+      "first_hit_range_m": [
+        0.0067,
+        0.0068
+      ]
+    },
+    {
+      "label": "Actual finite outer wall X",
+      "origin_source": [
+        0.02,
+        0,
+        0.0215
+      ],
+      "direction_source": [
+        -1,
+        0,
+        0
+      ],
+      "first_hit_range_m": [
+        0.0124,
+        0.0125
+      ]
+    }
+  ],
+  "output": "creative/reviews/side-stand-spring-cover-v1/actual-openings-check.json",
+  "scope": "Constructed finite thin sleeve wall and explicit review axis only; unobserved far end not certified"
+}

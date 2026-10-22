@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "path": "assets-src/moto-components/tail-lamp-outer-lens-v2/tail-lamp-outer-lens-v2.glb",
+      "sha256": "c91b7d7a914a57b2c72cfec94c652182c79f024911bd861796b7132a620fce45",
+      "boundary_vertices": 176
+    },
+    {
+      "path": "assets-src/moto-components/tail-lamp-black-housing/tail-lamp-black-housing-v1.glb",
+      "sha256": "4a8f0e621f616b9375b5d26ea0ae6f2738a4ce32e731f1c0fda0edc13d7a256b",
+      "boundary_vertices": 176
+    }
+  ],
+  "coordinate_conversion": "Actual glTF world(x,y,z) -> Blender native(x,-z,y)",
+  "proposed_body_rotation_y180": {
+    "native_mapping": "(-x,y,-z), preserves vertical profile",
+    "maximum_gap_m": 0.003027803772375277,
+    "mean_nearest_gap_m": 0.0020945241873538984,
+    "rms_nearest_gap_m": 0.002152048134797194
+  },
+  "rejected_body_rotation_x180": {
+    "native_mapping": "(x,-y,-z), inverts asymmetric vertical profile",
+    "maximum_gap_m": 0.020736732575312177,
+    "mean_nearest_gap_m": 0.008884089993567561,
+    "rms_nearest_gap_m": 0.010549946898839493
+  },
+  "scope": "Actual outer-surface boundary geometry only, authored coincident origin; not wall thickness, hidden mechanical socket or installed vehicle/OEM fit; no reception"
+}
