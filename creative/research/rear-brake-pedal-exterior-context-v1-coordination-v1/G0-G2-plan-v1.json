@@ -1,0 +1,281 @@
+{
+  "scope": "Four existing source parents in unmounted review context; no new geometry or physical identities",
+  "authorization": "Coordinator within autonomous motorcycle goal; nominal poses are not literal user statements",
+  "author_plan": {
+    "authorization": "Coordinator dispatch within user-authorized autonomous motorcycle completion",
+    "scope": "One existing four-parent exterior pedal review context, zero new physical IDs",
+    "variant": "PF161002 related product source; current RDC125 exact pedal identity and installed offsets unconfirmed",
+    "frame": "Arm native +X projected front, +Y projected up, +Z estimated outward. Projection axes are not calibrated product camera or a certified installed frame.",
+    "relations": [
+      {
+        "parent": "arm",
+        "pose": "Identity, canonical arm study frame; origin corresponds source pixel178,159, not proven pivot centre"
+      },
+      {
+        "parent": "pivot-sleeve",
+        "translation_m": [
+          -0.0063,
+          0.0063,
+          -0.032
+        ],
+        "rotation": "Identity",
+        "basis": "Coarse photo-axis guide near pixel168,149, Z separation/side unqualified. Tube retains transverse axisZ and separate inboard context; no origin snap/root union/shaft."
+      },
+      {
+        "parent": "linkage-lug",
+        "translation_m": [
+          0.07434,
+          -0.1084,
+          0.01
+        ],
+        "rotation": "Identity",
+        "basis": "Native hole(0,-.005,0) mapped to source hole296,339 via arm projection. Root Z offset chosen for separate review near rod, not measured weld/contact. No pin."
+      },
+      {
+        "parent": "textured-pad",
+        "translation_m": [
+          0.20916,
+          -0.20475,
+          0.05
+        ],
+        "rotation": "Identity REVIEW ONLY, not installed foot-plane normal",
+        "basis": "Approximate source-pad projected centre510,484 versus arm terminal484,438. Retain original face-facing study pose and park with visible separation; true tilt/underside/seat unresolved, no fictitious closure."
+      }
+    ],
+    "bounded_uncertainties": "Arm source scale .00052.. .00075m/px. Sleeve projected XY +/-5mm and axial side/depth unknown, lug XY +/-3mm and Z +/-10mm, pad XY +/-8mm/Z +/-15mm. These are review allowances, not source measurements or OEM tolerances.",
+    "excluded": [
+      "Rod and clevis: different source photo and no documented pedal mating transform; lug9mm versus clevis6mm bores not a certified pair",
+      "Torsion spring, hidden pivot shaft, root joint, weld, retaining hardware and foot-plane mount not created"
+    ],
+    "stages": [
+      "Actually read3gray",
+      "Actually read2original-material",
+      "Actually read3native96 including independently lit neutral and FLOAT32 raw",
+      "Exact native links and GLB attribute/material byte preservation",
+      "Actual Babylon read"
+    ],
+    "world_hint": "Coordinator Q EulerXYZ90,0,-90 maps +X to-frontY, +Y to-upZ, +Z to-rightX; numeric convention only, not validated installed camera/pose. Do not transform parked pad as a qualified mounted foot surface.",
+    "art_accepted": false,
+    "fit_qualified": false,
+    "new_physical_ids": 0
+  },
+  "source_input_fragment": {
+    "package": "P15",
+    "component_id": "MOTO-BRAKE-PEDAL-ARM-001",
+    "revision": "rear-brake-pedal-exterior-context-v1",
+    "label": "P15 existing four-parent local exterior review; pad parked",
+    "source": "assets-src/moto-components/rear-brake-pedal-exterior-context-v1/integration-wrapper.blend",
+    "source_sha256": "c1aa7e26df56054a5fb8af80aa1d81eff31008c8e03f435d8af798515cabf5dc",
+    "files": [
+      "rear-brake-pedal-exterior-context-v1/rear-brake-pedal-exterior-context-v1-inspection.glb"
+    ],
+    "review": "rear-brake-pedal-exterior-context-v1",
+    "collection": "REAR_BRAKE_PEDAL_EXTERIOR_INTEGRATION_V1",
+    "root": "REAR_BRAKE_PEDAL_EXTERIOR_CONTEXT_ROOT",
+    "source_frame": "unplaced_arm_photo_projection_Xfront_Yup_Zestimated_outward",
+    "new_physical_ids": 0,
+    "physical_count_increment": 0,
+    "children_delivered": [
+      "MOTO-BRAKE-PEDAL-ARM-001",
+      "MOTO-BRAKE-PEDAL-PIVOT-SLEEVE-001",
+      "MOTO-BRAKE-PEDAL-LINKAGE-LUG-001",
+      "MOTO-BRAKE-PEDAL-TEXTURED-PAD-001"
+    ],
+    "existing_parents": [
+      "brake-pedal-arm-v1",
+      "brake-pedal-pivot-sleeve-v1",
+      "brake-pedal-linkage-lug-v1",
+      "brake-pedal-textured-pad-v1"
+    ],
+    "render_author_source": "assets-src/moto-components/rear-brake-pedal-exterior-context-v1/rear-brake-pedal-exterior-context-v1.blend",
+    "render_author_source_sha256": "5ef6ea39574bb51ffe6e34ce59777b7b1881fe6153c33a6b9b5916201ea82bfa",
+    "visual_equivalence_report": "creative/research/rear-brake-pedal-exterior-context-v1/integration-wrapper-equivalence.json",
+    "world_hint_Q_EulerXYZ_deg": [
+      90,
+      0,
+      -90
+    ],
+    "world_X_unknown": true,
+    "mounted_pose_qualified": false,
+    "parked_pad_object": "BRAKE_PEDAL_ROUNDED_PAD_WITH_REAL_DIAMOND_RELIEF",
+    "parked_pad_normal_not_mounted_foot_up": true,
+    "remaining": [
+      "PF161002 related-family identity/current RDC installed pose unresolved",
+      "Sleeve axial/root union and linkage lug depth/root unqualified",
+      "Pad is separate original-face study, seat/tilt/underside unknown",
+      "Rod/clevis mating to pedal not proven; no pin or adapter manufactured",
+      "WorldX and actual pivot/motion/installed gaps unknown"
+    ],
+    "functions": {
+      "module": "assets-src/moto-components/rear-brake-pedal-exterior-context-v1/compose.py",
+      "callables": [
+        "build",
+        "render"
+      ],
+      "exemplar_builder": "creative/research/rear-brake-pedal-exterior-context-v1/build-integration-wrapper.py"
+    },
+    "rigs": [],
+    "package_complete": false,
+    "art_accepted": false,
+    "g8": false
+  },
+  "native_render_wrapper_equivalence": {
+    "source": "assets-src/moto-components/rear-brake-pedal-exterior-context-v1/integration-wrapper.blend",
+    "sha256": "c1aa7e26df56054a5fb8af80aa1d81eff31008c8e03f435d8af798515cabf5dc",
+    "collection": "REAR_BRAKE_PEDAL_EXTERIOR_INTEGRATION_V1",
+    "root": "REAR_BRAKE_PEDAL_EXTERIOR_CONTEXT_ROOT",
+    "objects": [
+      {
+        "parent": "brake-pedal-arm-v1",
+        "object": "BRAKE_PEDAL_COMPOUND_ARM_METAL",
+        "source_object": "BRAKE_PEDAL_COMPOUND_ARM_METAL",
+        "source": "assets-src/moto-components/brake-pedal-arm-v1/child-candidate.blend",
+        "source_sha256": "16b52bb4b2de8b4a010fb26c59d911a47860aa2d13fd8fe23f3d8428cf55bb0c",
+        "shared_exact_source_mesh_datablock": true,
+        "source_materials_unchanged": true,
+        "matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "role": "Canonical arm; origin is photo bend datum, not pivot"
+      },
+      {
+        "parent": "brake-pedal-pivot-sleeve-v1",
+        "object": "BRAKE_PEDAL_TRANSVERSE_PIVOT_OPEN_TUBE",
+        "source_object": "BRAKE_PEDAL_TRANSVERSE_PIVOT_OPEN_TUBE",
+        "source": "assets-src/moto-components/brake-pedal-pivot-sleeve-v1/child-candidate.blend",
+        "source_sha256": "c738837685e2f634204e65d56646b902e72cf8d05bd38fac53de590851a80006",
+        "shared_exact_source_mesh_datablock": true,
+        "source_materials_unchanged": true,
+        "matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.006300000008195639
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.006300000008195639
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            -0.03200000151991844
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "role": "Separate sleeve: axisZ, projected guide only; axial seating unknown"
+      },
+      {
+        "parent": "brake-pedal-linkage-lug-v1",
+        "object": "BRAKE_PEDAL_TAPERED_SINGLE_HOLE_LINKAGE_LUG",
+        "source_object": "BRAKE_PEDAL_TAPERED_SINGLE_HOLE_LINKAGE_LUG",
+        "source": "assets-src/moto-components/brake-pedal-linkage-lug-v1/child-candidate.blend",
+        "source_sha256": "3d896aa240e7eb12e09fde8e66f6fef266eb0999f9807ccd716acca08fbc921b",
+        "shared_exact_source_mesh_datablock": true,
+        "source_materials_unchanged": true,
+        "matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.07434000074863434
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.10840000212192535
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.009999999776482582
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "role": "Separate lug: photo hole guide, Z/root unknown"
+      },
+      {
+        "parent": "brake-pedal-textured-pad-v1",
+        "object": "BRAKE_PEDAL_ROUNDED_PAD_WITH_REAL_DIAMOND_RELIEF",
+        "source_object": "BRAKE_PEDAL_ROUNDED_PAD_WITH_REAL_DIAMOND_RELIEF",
+        "source": "assets-src/moto-components/brake-pedal-textured-pad-v1/child-candidate.blend",
+        "source_sha256": "be7bcd45040fbafa1cb9166de2d262991ea838179dd4e749096bfbd50ee14116",
+        "shared_exact_source_mesh_datablock": true,
+        "source_materials_unchanged": true,
+        "matrix": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.2091600000858307
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -0.20475000143051147
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.05000000074505806
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "role": "PARKED_PAD: original face-study orientation, NOT mounted foot-plane orientation"
+      }
+    ],
+    "same_as_review_source": "Original linked mesh datablocks and exact same four rigid matrices; object wrappers only, no geometry/material changes",
+    "review_source_sha256": "5ef6ea39574bb51ffe6e34ce59777b7b1881fe6153c33a6b9b5916201ea82bfa",
+    "physical_count_increment": 0,
+    "fit_qualified": false
+  },
+  "export_scene_selection": "GLB has one scene and no explicit default, valid glTF. Checker v2 selects the only scene; exact original GLB preserved",
+  "export_checker": "tools/check_motorcycle18_exports_v2.mjs",
+  "art_accepted": false
+}

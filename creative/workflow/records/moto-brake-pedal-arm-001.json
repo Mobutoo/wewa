@@ -1,0 +1,272 @@
+{
+  "schema": 1,
+  "id": "MOTO-BRAKE-PEDAL-ARM-001",
+  "label": "P15 existing four-parent local exterior review; pad parked",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../reviews/rear-brake-pedal-exterior-context-v1-coordination-v1/source-register.json",
+  "sources": [
+    "D01"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "final-profile",
+      "PNG_sha256": "21337827dbd6345e59f78f412e6bc8b91a995ab3c86bfae8e4a89ac2a5ecd695",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "name": "final-profile",
+        "view": "final-profile",
+        "png": "final-profile.png",
+        "exr": "raw/final-profile.exr",
+        "PNG_sha256": "21337827dbd6345e59f78f412e6bc8b91a995ab3c86bfae8e4a89ac2a5ecd695",
+        "EXR_sha256": "da06aea0236fc753234838732abee26f2de5923fabe6f33310ff96ba256b8588",
+        "samples": 96,
+        "actual_native_render": true,
+        "resolution_px": [
+          1000,
+          750
+        ],
+        "camera": [
+          0.06499999761581421,
+          -0.07500000298023224,
+          1.1549999713897705
+        ],
+        "look": "AgX - Medium High Contrast"
+      },
+      "resolution_px": [
+        1000,
+        750
+      ],
+      "resolution_provenance": "native-resolution-reconciliation-v1.json; independent actual PNG and EXR headers. Original author declaration retained unchanged under source_author_view."
+    },
+    {
+      "name": "final-quarter",
+      "PNG_sha256": "2af25f4b35d630a3678b06e8d99797b8da699866e4a806f236b6a98aaffc3da1",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "name": "final-quarter",
+        "view": "final-quarter",
+        "png": "final-quarter.png",
+        "exr": "raw/final-quarter.exr",
+        "PNG_sha256": "2af25f4b35d630a3678b06e8d99797b8da699866e4a806f236b6a98aaffc3da1",
+        "EXR_sha256": "d492875a012ac883cddedd7d87fa5dc04dad03235acd999c23541e205e270aa8",
+        "samples": 96,
+        "actual_native_render": true,
+        "resolution_px": [
+          1000,
+          750
+        ],
+        "camera": [
+          0.2929999828338623,
+          0.19099999964237213,
+          0.7749999761581421
+        ],
+        "look": "AgX - Medium High Contrast"
+      },
+      "resolution_px": [
+        1000,
+        750
+      ],
+      "resolution_provenance": "native-resolution-reconciliation-v1.json; independent actual PNG and EXR headers. Original author declaration retained unchanged under source_author_view."
+    },
+    {
+      "name": "final-neutral",
+      "PNG_sha256": "b9f2cfdb5714870d7342fe4826189e0321859dc06ae92f8d7c37ed54a21f47d6",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "name": "final-neutral",
+        "view": "final-neutral",
+        "png": "final-neutral.png",
+        "exr": "raw/final-neutral.exr",
+        "PNG_sha256": "b9f2cfdb5714870d7342fe4826189e0321859dc06ae92f8d7c37ed54a21f47d6",
+        "EXR_sha256": "c0fe514f3e42fa1fd13099bccac3ca38470ad444469ee7f2a55a7f72a0faa6a3",
+        "samples": 96,
+        "actual_native_render": true,
+        "resolution_px": [
+          1000,
+          750
+        ],
+        "camera": [
+          -0.20100000500679016,
+          0.07699999213218689,
+          0.7749999761581421
+        ],
+        "look": "None"
+      },
+      "resolution_px": [
+        1000,
+        750
+      ],
+      "resolution_provenance": "native-resolution-reconciliation-v1.json; independent actual PNG and EXR headers. Original author declaration retained unchanged under source_author_view."
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-BRAKE-PEDAL-ARM-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "rear-brake-pedal-exterior-context-v1-coordination-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/rear-brake-pedal-exterior-context-v1-coordination-v1/G0-G2-plan-v1.json",
+          "sha256": "458453ef63295190ba2b1e45ba486c9929de4131e7cf69484e947a82e6cc0a7a",
+          "revision": "rear-brake-pedal-exterior-context-v1-coordination-v1"
+        }
+      ],
+      "reason": "Observable worker child identified, sources/estimates/gaps linked; not a complete package or art reception",
+      "reviewed_at": "2026-10-22"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "rear-brake-pedal-exterior-context-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "rear-brake-pedal-exterior-context-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "rear-brake-pedal-exterior-context-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/rear-brake-pedal-exterior-context-v1/integration-wrapper.blend",
+          "kind": "editable_source",
+          "revision": "rear-brake-pedal-exterior-context-v1-coordination-v1",
+          "sha256": "c1aa7e26df56054a5fb8af80aa1d81eff31008c8e03f435d8af798515cabf5dc"
+        },
+        {
+          "path": "../../reviews/rear-brake-pedal-exterior-context-v1-coordination-v1/final-profile.png",
+          "kind": "isolated_comparison",
+          "revision": "rear-brake-pedal-exterior-context-v1-coordination-v1",
+          "sha256": "21337827dbd6345e59f78f412e6bc8b91a995ab3c86bfae8e4a89ac2a5ecd695"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "rear-brake-pedal-exterior-context-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rear-brake-pedal-exterior-context-v1-coordination-v1/final-neutral.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "rear-brake-pedal-exterior-context-v1-coordination-v1",
+          "sha256": "b9f2cfdb5714870d7342fe4826189e0321859dc06ae92f8d7c37ed54a21f47d6"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "rear-brake-pedal-exterior-context-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rear-brake-pedal-exterior-context-v1-coordination-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "rear-brake-pedal-exterior-context-v1-coordination-v1",
+          "sha256": "4e4fea25c2ebec3c22b8bbbabd3bcdb7556122047fa1f92836684e34356c9543"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "rear-brake-pedal-exterior-context-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/rear-brake-pedal-exterior-context-v1-coordination-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "rear-brake-pedal-exterior-context-v1-coordination-v1",
+          "sha256": "7891130495dff4d1a625a19c7714497dee67107bb9f9b31abc3cc9646cd02fd7"
+        },
+        {
+          "path": "../../reviews/rear-brake-pedal-exterior-context-v1-coordination-v1/inspection-v5/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "rear-brake-pedal-exterior-context-v1-coordination-v1",
+          "sha256": "5e577d3372467fe90dcbc6e577cfecd529900dd7102330671273884cdc74702c"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "rear-brake-pedal-exterior-context-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "rear-brake-pedal-exterior-context-v1-coordination-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "rear-brake-pedal-exterior-context-v1-coordination-v1",
+  "export_revision": "rear-brake-pedal-exterior-context-v1-coordination-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/rear-brake-pedal-exterior-context-v1/../../../creative/reviews/rear-brake-pedal-exterior-context-v1-coordination-v1/README.md",
+  "candidate_review": "../../reviews/rear-brake-pedal-exterior-context-v1-coordination-v1/README.md",
+  "production_group": 17,
+  "source_plan": "../../research/rear-brake-pedal-exterior-context-v1-coordination-v1/G0-G2-plan-v1.json"
+}
