@@ -1,0 +1,285 @@
+{
+  "authorization": "Coordinator dispatch within user-authorized autonomous motorcycle completion",
+  "scope": "Read-only orientation audit, no geometry/source/export edits, no render, no fit assertion",
+  "source_frame_verdict": "Native XYZ is computationally right-handed, but physical labels rear/up/right-outward are left-handed relative to the declared world. This is a genuine source convention incompatibility, not merely hidden object rotation or a wrong rear/up label. Independent RIGHT photo profile and positive-Z bulge are verified.",
+  "evidence_snapshots": [
+    {
+      "source": "assets-src/moto-components/side-cover-right-v1/parameters-v1.json",
+      "snapshot": "creative/research/right-side-cover-world-pose-audit-v1/snapshots/01-parameters-v1.json",
+      "sha256": "2cce73e621563c39ee41c3aee2eae42a61dae9916d52e8bb9967dbb07aa7a312"
+    },
+    {
+      "source": "assets-src/moto-components/side-cover-right-v2/parameters.json",
+      "snapshot": "creative/research/right-side-cover-world-pose-audit-v1/snapshots/02-parameters.json",
+      "sha256": "6acd63cddb359589c368d34971a57661462ed23fff28bc2d44eb31f90bbe975f"
+    },
+    {
+      "source": "creative/research/powertrain-completion-p04-v1/plan.json",
+      "snapshot": "creative/research/right-side-cover-world-pose-audit-v1/snapshots/03-plan.json",
+      "sha256": "cd381ca10ea5eaedff63b091e0ffd27829a824ae8c924034c334c6b19b42523b"
+    },
+    {
+      "source": "creative/reviews/side-cover-right-v2/reuse-placement-check.json",
+      "snapshot": "creative/research/right-side-cover-world-pose-audit-v1/snapshots/04-reuse-placement-check.json",
+      "sha256": "2c1ba4eb34cac486ea157ecc5a365b97a47e8e54194fca94eb0c4ee1b6eb62e9"
+    },
+    {
+      "source": "tools/powertrain_completion_p04_v1.py",
+      "snapshot": "creative/research/right-side-cover-world-pose-audit-v1/snapshots/05-powertrain_completion_p04_v1.py",
+      "sha256": "6a980f14066af00a72e1f813e49913a974d9e93c61d8bf411653a5e72c9b2565"
+    },
+    {
+      "source": "tools/powertrain_completion_p04_compose_v2.py",
+      "snapshot": "creative/research/right-side-cover-world-pose-audit-v1/snapshots/06-powertrain_completion_p04_compose_v2.py",
+      "sha256": "d72285649cfa30af443afdeeb7a25615d4e9a04482193e84669601facd126485"
+    },
+    {
+      "source": "tools/powertrain_completion_p04_paint.py",
+      "snapshot": "creative/research/right-side-cover-world-pose-audit-v1/snapshots/07-powertrain_completion_p04_paint.py",
+      "sha256": "9a0bc4f550b70615ff931b59c20fcaf744f4189de6ac2479078fae770c8dfa24"
+    }
+  ],
+  "photo": {
+    "private_path": "/workspace/wewa-assets/references/exterior-completion-current/00.png",
+    "sha256": "82be9285506c65dd8ff3fdba000fe963587548e306691844ed774f685870ea40",
+    "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/00.png",
+    "actually_read": true,
+    "observations": [
+      "Front wheel screen x797, rear wheel x270, same y494: screen-left is rear",
+      "Rear upper cover point u366; front upper u490; code x=(432-u)*scale therefore +X rear",
+      "Code y=(360-v)*scale and upper points v319..323 confirm +Y up",
+      "Photo establishes exterior right profile, not a calibrated depth; positive depth follows generated source, not measured photography"
+    ],
+    "calibrated": false
+  },
+  "proper_rigid_rotation_solution_exists": false,
+  "requested_linear_map_rows": [
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "determinant": -1,
+  "mapping_formula": "World = T + (-nativeZ, nativeX, nativeY), T unspecified",
+  "homogeneous_linear_only_rows": [
+    [
+      0,
+      0,
+      -1,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "external_convention_factorization": {
+    "order": "First S in native coordinates, then proper rotation Q; A=Q*S",
+    "S_rows": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ]
+    ],
+    "S_determinant": -1,
+    "Q_rows": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "Q_determinant": 1,
+    "Q_blender_euler_XYZ_deg": [
+      90,
+      0,
+      90
+    ],
+    "Blender_single_parent_TRS": {
+      "rotation_euler_XYZ_deg": [
+        90,
+        0,
+        90
+      ],
+      "scale": [
+        1,
+        1,
+        -1
+      ],
+      "translation": "T remains unqualified; do not snap to zero world"
+    },
+    "warning": "This is an improper isometry with a negative-scale convention conversion, not a rigid rotation. If only positive-determinant transforms are permitted, hold this parent outside the mounted assembly. No source rebake authorized or performed."
+  },
+  "mapped_probes": {
+    "crown_native_m": [
+      0,
+      0,
+      0.023
+    ],
+    "crown_world_relative_to_T_m": [
+      -0.023,
+      0,
+      0
+    ],
+    "return_native_Z_m": -0.006,
+    "return_world_relative_to_T_X_m": 0.006,
+    "outer_normal_approximately_native": [
+      0,
+      0,
+      1
+    ],
+    "outer_normal_inverse_transpose_world": [
+      -1,
+      0,
+      0
+    ],
+    "cross_of_mapped_native_X_and_Y": [
+      1,
+      0,
+      0
+    ],
+    "mapped_native_Z": [
+      -1,
+      0,
+      0
+    ],
+    "triangle_winding": "Negative determinant reverses oriented triangle winding. Renderer must use determinant-aware culling and inverse-transpose normals; if baking, winding/normal/tangent handling is required in a NEW derivative. Merely toggling two-sided material hides rather than resolves orientation parity."
+  },
+  "landmarks": [
+    {
+      "role": "rear_upper",
+      "source_pixel": [
+        366,
+        319
+      ],
+      "native": [
+        0.16092979127134724,
+        0.09997153700189752,
+        0
+      ],
+      "world_relative_to_unspecified_T": [
+        0.0,
+        0.16092979127134724,
+        0.09997153700189752
+      ]
+    },
+    {
+      "role": "front_upper",
+      "source_pixel": [
+        490,
+        323
+      ],
+      "native": [
+        -0.14142314990512334,
+        0.09021821631878557,
+        0
+      ],
+      "world_relative_to_unspecified_T": [
+        0.0,
+        -0.14142314990512334,
+        0.09021821631878557
+      ]
+    },
+    {
+      "role": "front_lower_head_xy",
+      "source_pixel": [
+        455,
+        399
+      ],
+      "native": [
+        -0.05608159392789373,
+        -0.09509487666034154,
+        0
+      ],
+      "world_relative_to_unspecified_T": [
+        0.0,
+        -0.05608159392789373,
+        -0.09509487666034154
+      ]
+    }
+  ],
+  "rejected_rigid_alternatives": [
+    {
+      "mapping": "nativeX->world+Y,nativeY->world+Z,nativeZ->world+X",
+      "why": "Proper rotation, but crown points pilot LEFT/inboard on right side"
+    },
+    {
+      "mapping": "nativeX->world-Y,nativeY->world+Z,nativeZ->world-X",
+      "why": "Proper rotation with correct up/outward, but front/rear silhouette and hardware location reversed"
+    }
+  ],
+  "integration": {
+    "preferred_source": "assets-src/moto-components/side-cover-right-v2/child-candidate.blend",
+    "objects": [
+      "RIGHT_COVER_OUTER_SKIN",
+      "RIGHT_COVER_LOWER_ROUND_VISIBLE_HEAD_NO_DRIVE_CLAIM"
+    ],
+    "collection_warning": "WEWA_SIDE_COVER_RIGHT_STUDY contains skin only; visible head is linked directly to scene master collection. Transform both objects under one integration parent; linking only the named collection loses the head. No assembly source modified.",
+    "source_memberships": [
+      {
+        "RIGHT_COVER_LOWER_ROUND_VISIBLE_HEAD_NO_DRIVE_CLAIM": [
+          "Scene Collection"
+        ]
+      },
+      {
+        "RIGHT_COVER_OUTER_SKIN": [
+          "WEWA_SIDE_COVER_RIGHT_STUDY"
+        ]
+      }
+    ],
+    "preserve": "Apply the same A to both; do not independently snap or mirror the head",
+    "no_left_cover_geometry_used": true,
+    "translation_fit_and_installed_gaps": "unqualified",
+    "variant": "Current official Boxer125HD RDC source identity retained; source shell depth and mounting are estimates"
+  },
+  "new_physical_ids": 0,
+  "source_edits": false,
+  "art_accepted": false,
+  "g8": false
+}

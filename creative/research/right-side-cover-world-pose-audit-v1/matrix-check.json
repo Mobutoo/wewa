@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "check": "A orthogonal, no stretch/shear",
+      "pass": true
+    },
+    {
+      "check": "A improper, no proper rotation solution",
+      "pass": true
+    },
+    {
+      "check": "Q proper",
+      "pass": true
+    },
+    {
+      "check": "S reflection in native depth only",
+      "pass": true
+    },
+    {
+      "check": "Q*S=A",
+      "pass": true
+    },
+    {
+      "check": "Blender XYZ Euler90,0,90 equivalent to Rz90*Rx90",
+      "pass": true
+    },
+    {
+      "check": "all24 axis-aligned proper rotations reject required full map",
+      "pass": true
+    },
+    {
+      "check": "nativeX to worldrear +Y",
+      "pass": true
+    },
+    {
+      "check": "nativeY to worldup +Z",
+      "pass": true
+    },
+    {
+      "check": "nativeZ to worldright -X",
+      "pass": true
+    }
+  ],
+  "proper_rotations_enumerated": 24,
+  "scope": "Coordinate convention only; no assembled translation, physical-fit, culling implementation or render verified"
+}
