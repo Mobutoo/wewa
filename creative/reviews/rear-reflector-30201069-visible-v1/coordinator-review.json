@@ -1,0 +1,48 @@
+{
+  "component_id": "LEGACY15-REAR-REFLECTOR",
+  "owner": "Boyle",
+  "reviewed_at": "2026-10-22T05:06:15.089255+00:00",
+  "actually_read": true,
+  "gray_before_material": true,
+  "preview_before_native96": true,
+  "native96_views_actually_read": [
+    "whole-front",
+    "whole-quarter",
+    "neutral-outdoor"
+  ],
+  "Babylon_views_actually_read": [
+    "engine-quarter",
+    "engine-driver",
+    "engine-reverse"
+  ],
+  "geometry_scope": "Visible redface,lip,blackframe and sidewalls only; one open rear boundary, noback/stud/nut/prisms.",
+  "source_fidelity": {
+    "G3": "bounded visible candidate, not measured OEM shape",
+    "G4": "rework: regular normal-map pattern and lighting response do not reproduce source detail; not retroreflective simulation"
+  },
+  "fit_claim": false,
+  "G8_accepted": false,
+  "hardware_qualified": false,
+  "limitations": [
+    "80x50x6mm authored working estimate; broad uncertain scale intervals not a datasheet.",
+    "CurrentRDC identity conditional; no assembly/root transform or contact claim.",
+    "Back cut is a review omission, not measured housing wall or actual cavity.",
+    "Illegible maker markings not invented; original apparentcell material only."
+  ],
+  "technical": {
+    "triangles": 1300,
+    "open_boundary_loops": 1,
+    "glTF_errors": 0,
+    "glTF_warnings": 0,
+    "source_GLB_position_delta_m": 0,
+    "normal_component_max_delta": 5.728006362915039e-05,
+    "uv_max_delta": 2.9802322387695312e-08,
+    "normal_rounding_limit": "Exporter rounding, not an exact normal-byte identity",
+    "raw_FLOAT32_files": 8
+  },
+  "failures_retained": [
+    "rejected/backface-ambiguous-gray-reverse.png andEXR: firstreverse looked like inventedback, fixedbackfacecut",
+    "First capture selected revision rather than legacy identity; failedtimeout private log retained, correctedlocalcapture finalsuccess",
+    "Normalmap initially missing explicit tangents, correctedglTF0warnings; no frozenprotocol overwritten"
+  ]
+}

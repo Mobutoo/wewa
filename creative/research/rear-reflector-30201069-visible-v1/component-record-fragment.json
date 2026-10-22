@@ -1,0 +1,145 @@
+{
+  "schema": 1,
+  "id": "LEGACY15-REAR-REFLECTOR",
+  "label": "30201069 visible rear reflector — Boyle",
+  "source_ids": [
+    "LEGACY15-REAR-REFLECTOR"
+  ],
+  "parent_asset": null,
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Exactcode seller30201069, related BM125/BM150; currentRDC conditional",
+    "variant_confirmed": false,
+    "usage": "One isolated visible-envelope candidate only",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "source-register.json",
+  "sources": [
+    "Bajajonline30201069",
+    "D04",
+    "BM1502016",
+    "RDC promotional context"
+  ],
+  "claims": [
+    {
+      "status": "estimated",
+      "property": "working envelope",
+      "value": [
+        80,
+        50,
+        6
+      ],
+      "unit": "mm",
+      "source": "G0-G2-plan-v1.json"
+    },
+    {
+      "status": "unknown",
+      "property": "reverse and mounting geometry",
+      "value": null
+    }
+  ],
+  "views": [],
+  "criteria": [
+    "Whole-face/side silhouette candidate documented",
+    "No fabricated back/fixing/internal prisms",
+    "Original materialpixels only"
+  ],
+  "gaps": [
+    {
+      "property": "G4 apparent optical cells",
+      "status": "rework",
+      "next": "Review original material pattern versus source without asserting optical transport"
+    },
+    {
+      "property": "exactdimension/currentRDCfit",
+      "status": "unknown",
+      "next": "Exact specimen or measured document"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "rear-reflector-30201069-visible-v1",
+      "reviewer": "Boyle technical/source-scope review",
+      "evidence": [],
+      "reason": "One identity, one authorized child",
+      "reviewed_at": "2026-10-22T05:06:15.089255+00:00"
+    },
+    "G1": {
+      "status": "passed",
+      "revision": "rear-reflector-30201069-visible-v1",
+      "reviewer": "Boyle technical/source-scope review",
+      "evidence": [],
+      "reason": "Scoped authored envelope estimates permitted by user; unknown back excluded, not fully documented optics",
+      "reviewed_at": "2026-10-22T05:06:15.089255+00:00"
+    },
+    "G2": {
+      "status": "passed",
+      "revision": "rear-reflector-30201069-visible-v1",
+      "reviewer": "Boyle technical/source-scope review",
+      "evidence": [],
+      "reason": "Localaxes and sensitivityranges documented; graycamera views read, no exactcamera calibration",
+      "reviewed_at": "2026-10-22T05:06:15.089255+00:00"
+    },
+    "G3": {
+      "status": "passed",
+      "revision": "rear-reflector-30201069-visible-v1",
+      "reviewer": "Boyle technical/source-scope review",
+      "evidence": [],
+      "reason": "Visible-envelope candidate technically continuous; source-faithful dimensions not claimed",
+      "reviewed_at": "2026-10-22T05:06:15.089255+00:00"
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "rear-reflector-30201069-visible-v1",
+      "reviewer": "Boyle technical/source-scope review",
+      "evidence": [],
+      "reason": "Regular apparentcell normal material, calibrated/faithful optical response not achieved",
+      "reviewed_at": "2026-10-22T05:06:15.089255+00:00"
+    },
+    "G5": {
+      "status": "blocked",
+      "revision": "rear-reflector-30201069-visible-v1",
+      "reviewer": "Boyle technical/source-scope review",
+      "evidence": [],
+      "reason": "Rear/interface omitted; fit and realoptics unknown",
+      "reviewed_at": "2026-10-22T05:06:15.089255+00:00"
+    },
+    "G6": {
+      "status": "passed",
+      "revision": "rear-reflector-30201069-visible-v1",
+      "reviewer": "Boyle technical/source-scope review",
+      "evidence": [],
+      "reason": "Native96 and actualBabylon read, decodedsourceGLB checks; technicalonly",
+      "reviewed_at": "2026-10-22T05:06:15.089255+00:00"
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "rear-reflector-30201069-visible-v1",
+      "reviewer": "Boyle technical/source-scope review",
+      "evidence": [],
+      "reason": "1300triangles only; no platformbudget/LOD qualification",
+      "reviewed_at": "2026-10-22T05:06:15.089255+00:00"
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "rear-reflector-30201069-visible-v1",
+      "reviewer": "Boyle technical/source-scope review",
+      "evidence": [],
+      "reason": "No userartisticacceptance requested or inferred",
+      "reviewed_at": "2026-10-22T05:06:15.089255+00:00"
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "rear-reflector-30201069-visible-v1",
+  "export_revision": "rear-reflector-30201069-visible-v1",
+  "next_action": "Main review candidate and optional bounded composition; no autoattach/fit/G8.",
+  "art_accepted": false
+}
