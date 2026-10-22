@@ -1,0 +1,233 @@
+{
+  "sources": [
+    {
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/03.png",
+      "sha256": "c19b64be0100daa1ac2e27e6e879b34afbc2ede2553e291d86934f0a4005ad8e",
+      "source_class": "documented_exact_market_photo; dimensions estimated",
+      "actually_viewed": true,
+      "observation": "Partly occluded passenger brace and folded rubber; no exact mounting stations identified"
+    },
+    {
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/04.png",
+      "sha256": "b086dedb4a2bcbc2644aab9578a3d1efa7445e163459b444b3687047bf2e8e02",
+      "source_class": "documented_exact_market_photo; dimensions estimated",
+      "actually_viewed": true,
+      "observation": "Partly occluded passenger brace and folded rubber; no exact mounting stations identified"
+    },
+    {
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/05.png",
+      "sha256": "51bb532a693433ba382aa6a25048010031eab1749bef88e341bb67c9c4af0229",
+      "source_class": "documented_exact_market_photo; dimensions estimated",
+      "actually_viewed": true,
+      "observation": "Partly occluded passenger brace and folded rubber; no exact mounting stations identified"
+    },
+    {
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/07.png",
+      "sha256": "cec77fe44f3203a390ce6cf313f5958a7746a25a6df0ae28b25080eb838a9f76",
+      "source_class": "documented_exact_market_photo; dimensions estimated",
+      "actually_viewed": true,
+      "observation": "Partly occluded passenger brace and folded rubber; no exact mounting stations identified"
+    }
+  ],
+  "hypothesis": {
+    "id": "passenger-footrests-global-context-v2",
+    "status": "revised-anchor rigid candidate; 3D and visual audit pending",
+    "convention": "native metres Xpilot-left Yrear Zup; row-major4x4 acts on column vector; glTF C=(X,Z,-Y), MglTF=C M C^-1",
+    "parents_to_remove": [],
+    "additions": [
+      {
+        "key": "passenger-LH-kit",
+        "source": "assets-src/moto-components/passenger-footrest-left-exterior-context-v1/passenger-footrest-left-exterior-context-v1.blend",
+        "sha256": "d0ad75d9652490a37b30cb3b56a4d53315cd8aef3b68454de5cddf7e0bb59657",
+        "collection": "PASSENGER_FOOTREST_LEFT_EXTERIOR_CONTEXT_V1",
+        "selected_objects": null,
+        "matrix_world": [
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.08049999922513962
+          ],
+          [
+            -0.7071067690849304,
+            -0.7071067690849304,
+            0.0,
+            0.8147558569908142
+          ],
+          [
+            0.7071067690849304,
+            -0.7071067690849304,
+            0.0,
+            -0.3817588686943054
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "nested": "three unchanged stay/peg/rubber wrappers in original LH collection",
+        "source_class": "documented_related_variant / estimated",
+        "provisional_visual_pose": true
+      },
+      {
+        "key": "passenger-RH-stay",
+        "source": "assets-src/moto-components/passenger-footrest-stay-right-v1/child-candidate.blend",
+        "sha256": "ce7a973b74969dea418217a9d9ba25829a50ba76bd1eb2fd2f3f3b0e37cc6e59",
+        "collection": null,
+        "selected_objects": [
+          "PF113003_RIGHT_PASSENGER_STAY_FORMED_ARMS_EYE_GUSSET_U_CLEVIS"
+        ],
+        "matrix_world": [
+          [
+            0.0,
+            0.0,
+            -1.0,
+            -0.08049999922513962
+          ],
+          [
+            0.7071067690849304,
+            -0.7071067690849304,
+            0.0,
+            0.8161700367927551
+          ],
+          [
+            -0.7071067690849304,
+            -0.7071067690849304,
+            0.0,
+            -0.38317304849624634
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "nested": [],
+        "source_class": "documented_related_variant / estimated",
+        "provisional_visual_pose": true
+      },
+      {
+        "key": "passenger-RH-peg-DP161170",
+        "source": "assets-src/moto-components/passenger-footpeg-metal-v1/child-candidate.blend",
+        "sha256": "6bfede602d064f286041e7ed527f81b96ca292af96ddcf0790d38039697b2ced",
+        "collection": null,
+        "selected_objects": [
+          "PASSENGER_PEG_SHAPED_ROOT_FLANGE_AND_STOP_TAB"
+        ],
+        "matrix_world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -0.08799999952316284
+          ],
+          [
+            0.0,
+            0.7071067690849304,
+            -0.7071067690849304,
+            0.6499999761581421
+          ],
+          [
+            0.0,
+            -0.7071067690849304,
+            -0.7071067690849304,
+            -0.5550000071525574
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "nested": [],
+        "source_class": "documented_related_variant / estimated",
+        "provisional_visual_pose": true
+      },
+      {
+        "key": "passenger-RH-rubber-JK113008",
+        "source": "assets-src/moto-components/passenger-footrest-rubber-jk113008-v1/child-candidate.blend",
+        "sha256": "d07ce98cd5220717d24c0b23449d5bc6f8d560c0bc7d5fc9d7adb852750fc969",
+        "collection": null,
+        "selected_objects": [
+          "JK113008_PASSENGER_RUBBER_VISIBLE_ENVELOPE_ONLY"
+        ],
+        "matrix_world": [
+          [
+            -1.0,
+            0.0,
+            0.0,
+            -0.11400000005960464
+          ],
+          [
+            0.0,
+            0.7071067690849304,
+            -0.7071067690849304,
+            0.6499999761581421
+          ],
+          [
+            0.0,
+            -0.7071067690849304,
+            -0.7071067690849304,
+            -0.5550000071525574
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "nested": [],
+        "source_class": "documented_related_variant / estimated",
+        "provisional_visual_pose": true
+      }
+    ],
+    "hinges_world_m": {
+      "LH": [
+        0.1,
+        0.65,
+        -0.555
+      ],
+      "RH": [
+        -0.1,
+        0.65,
+        -0.555
+      ]
+    },
+    "count": {
+      "mesh_instances": 6,
+      "independent_stays": 2,
+      "documented_common_peg_quantity": 2,
+      "documented_common_rubber_quantity": 2,
+      "new_physical_meshes": 0
+    },
+    "preserved_historical_limits": [
+      "5mm peg-vs-clevis axis offset; no pin",
+      "22mm nominal distal rubber overhang",
+      "90degree diagnostic rubber cut, not physical keyway"
+    ],
+    "bounds": {
+      "hinge_xyz_m": [
+        0.025,
+        0.06,
+        0.04
+      ],
+      "stay_angle_deg": 15,
+      "note": "visual search allowance only, not OEM tolerance; RHS station inferred conditionally from opposite installed views"
+    },
+    "no_reflection": true,
+    "no_hidden_pins_or_welds": true,
+    "fit_qualified": false,
+    "art_accepted": false
+  },
+  "observations": [
+    "Official04 folded/upward rubber segment, not a calibrated hinge datum",
+    "Independent donor PF113002/PF113003 shape/dimensions are not exact RDC certification",
+    "Donor long/short terminals must be compared to actual frame; proximity cannot establish fixing role"
+  ],
+  "next": "Evaluate actual native geometry against linked frame kitv2 and native SNS, then rigid folded-peg hypothesis with source limits unchanged"
+}

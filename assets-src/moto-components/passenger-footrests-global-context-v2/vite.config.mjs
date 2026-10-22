@@ -1,0 +1,1 @@
+export default {root:'/workspace/wewa',cacheDir:'/workspace/wewa/assets-src/moto-components/passenger-footrests-global-context-v2/runtime-cache',server:{host:'127.0.0.1',port:4209,strictPort:true},optimizeDeps:{include:['@babylonjs/core','@babylonjs/loaders/glTF']}};
