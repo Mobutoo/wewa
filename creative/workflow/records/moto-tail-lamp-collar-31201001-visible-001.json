@@ -1,0 +1,228 @@
+{
+  "schema": 1,
+  "id": "MOTO-TAIL-LAMP-COLLAR-31201001-VISIBLE-001",
+  "label": "P05 — bague 31201001, surfaces visibles",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../../creative/research/tail-lamp-collar-31201001-visible-v1/sources-child-v1.json",
+  "sources": [
+    "D01",
+    "WINTER-31201001-PHYSICAL"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "whole-front",
+      "PNG_sha256": "7c24b770c9eda6176188a7b375ff5775f638178c0373347e42078a8064f422db",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.0,
+        -0.04200000315904617,
+        0.01680000126361847
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.007000000216066837
+      ]
+    },
+    {
+      "name": "whole-quarter",
+      "PNG_sha256": "cee912b304f5b5cc58189584eb58db91df1f0871c47012eb35f627ddd70ac104",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.023800000548362732,
+        -0.02800000086426735,
+        0.02800000086426735
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.007000000216066837
+      ]
+    },
+    {
+      "name": "neutral-outdoor",
+      "PNG_sha256": "19824d279301c120a9c304f8c89f115881faf747fae122e24548cf96e6ae17f1",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.023800000548362732,
+        -0.02800000086426735,
+        0.02800000086426735
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.007000000216066837
+      ]
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-TAIL-LAMP-COLLAR-31201001-VISIBLE-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "tail-lamp-collar-31201001-visible-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "path": "../../../creative/research/tail-lamp-collar-31201001-visible-v1/G0-G2-plan-v1.json",
+          "kind": "identity_and_parts",
+          "sha256": "f696d37074a74420084993752861c54471376685e42834cb5224b7f642735113",
+          "revision": "tail-lamp-collar-31201001-visible-v1"
+        }
+      ],
+      "reason": "Observable child separated, estimates and variant limits documented; not full package or artistic acceptance",
+      "reviewed_at": "2026-10-22"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "tail-lamp-collar-31201001-visible-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "tail-lamp-collar-31201001-visible-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "tail-lamp-collar-31201001-visible-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/tail-lamp-collar-31201001-visible-v1/tail-lamp-collar-31201001-visible-v1.blend",
+          "kind": "editable_source",
+          "revision": "tail-lamp-collar-31201001-visible-v1",
+          "sha256": "a0d87ae1623ed20556e05e4e95a72a2730537558763377c0833eb4bab7b77d4c"
+        },
+        {
+          "path": "../../reviews/tail-lamp-collar-31201001-visible-v1/whole-front.png",
+          "kind": "isolated_comparison",
+          "revision": "tail-lamp-collar-31201001-visible-v1",
+          "sha256": "7c24b770c9eda6176188a7b375ff5775f638178c0373347e42078a8064f422db"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "tail-lamp-collar-31201001-visible-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/tail-lamp-collar-31201001-visible-v1/neutral-outdoor.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "tail-lamp-collar-31201001-visible-v1",
+          "sha256": "19824d279301c120a9c304f8c89f115881faf747fae122e24548cf96e6ae17f1"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "tail-lamp-collar-31201001-visible-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/tail-lamp-collar-31201001-visible-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "tail-lamp-collar-31201001-visible-v1",
+          "sha256": "2ba943e83ee9897faa0d8ae1f89fb84bd9650514ee62e1c5d708390e7d0a03ae"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "tail-lamp-collar-31201001-visible-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/tail-lamp-collar-31201001-visible-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "tail-lamp-collar-31201001-visible-v1",
+          "sha256": "9cf3e8d4719714d4638a80e799009a295edce3f2ed203a010443a725ddcd0adf"
+        },
+        {
+          "path": "../../reviews/tail-lamp-collar-31201001-visible-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "tail-lamp-collar-31201001-visible-v1",
+          "sha256": "4c85c81adba83944754fbc218ee3dc2c0de62e8c275000296e3e75091235523a"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "tail-lamp-collar-31201001-visible-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "tail-lamp-collar-31201001-visible-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "tail-lamp-collar-31201001-visible-v1",
+  "export_revision": "tail-lamp-collar-31201001-visible-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/tail-lamp-collar-31201001-visible-v1/README.md",
+  "candidate_review": "../../reviews/tail-lamp-collar-31201001-visible-v1/README.md",
+  "production_group": 18,
+  "source_plan": "../../../creative/research/tail-lamp-collar-31201001-visible-v1/G0-G2-plan-v1.json"
+}
