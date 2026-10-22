@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **153 composants candidats enregistrés**, après
+Le registre courant comporte **154 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P03** : [Related DF191020 single continuous formed-wire cable guide — sources et images](creative/reviews/front-completion-p03-wire-guide-front12-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P24** : [Related4gear DU151005 collar and exposed sleeve exterior — sources et images](creative/reviews/front-completion-p24-related-collar-front12-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P21** : [Related DK151094 single representative cush lobe exterior — sources et images](creative/reviews/front-completion-p21-single-cush-front12-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P25** : [Related DS181015 steering cap nut exterior — sources et images](creative/reviews/front-completion-p25-steering-cap-front12-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
