@@ -1,0 +1,58 @@
+{
+  "component_id": "MOTO-REAR-REFLECTOR-30201069-VISIBLE-STUDY-001",
+  "package": "LEGACY15-REAR-REFLECTOR",
+  "actually_read": true,
+  "reviewed_at_utc": "2026-10-22T05:48:24.855149+00:00",
+  "native96": [
+    {
+      "image": "whole-source-broad.png",
+      "sha256": "143613b309dce9b9b337b2e8734cfbc229217475c3ad54f7d3e8e3ce14252629",
+      "actually_read": true,
+      "samples": 96,
+      "exact_pixel_equality_V2": true,
+      "max_channel_difference": 0
+    },
+    {
+      "image": "whole-source-compact.png",
+      "sha256": "cd64942aaf5c41c1d67318f46b9c3f16067be3972d187c77b059e88ae929b926",
+      "actually_read": true,
+      "samples": 96,
+      "exact_pixel_equality_V2": true,
+      "max_channel_difference": 0
+    },
+    {
+      "image": "neutral-outdoor.png",
+      "sha256": "a32b5b65bb8dea78fc65cacad3a2a49500323db68f7bb12f7833f0cd3bcef0b3",
+      "actually_read": true,
+      "samples": 96,
+      "exact_pixel_equality_V2": true,
+      "max_channel_difference": 0
+    }
+  ],
+  "runtime_actually_read": [
+    "engine-quarter.png",
+    "engine-driver.png",
+    "engine-reverse.png",
+    "engine-landscape-844x390.png"
+  ],
+  "observations": [
+    "Native large area light remains bright red with diagonal apparent cells and dark visible surround; compact light remains deep red with concentrated highlights.",
+    "Neutral HDR remains substantially dimmer; no albedo/photometric or retroreflection calibration claimed.",
+    "Source V3 native images match V2 pixels; geometry/material appearance unchanged by frame-only UV correction.",
+    "Babylon captures show same face and open observation-cut reverse; runtime lighting/projection differs native, not pixel parity.",
+    "Frame UV issue corrected at source construction level; no surface geometry repaired or hidden by normals."
+  ],
+  "unchanged": {
+    "face_geometry_UV_normals_tangents": true,
+    "all_oriented_geometry_normals": true,
+    "both_materials": true,
+    "normal_image_bytes": true,
+    "source_frame_shape": true
+  },
+  "technical_scope_pass": true,
+  "G4_accepted": false,
+  "G5_accepted": false,
+  "G8_accepted": false,
+  "fit_claim": false,
+  "four_interfaces_M5_reverse_unknown": true
+}
