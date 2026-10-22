@@ -1,0 +1,229 @@
+{
+  "schema": 1,
+  "id": "MOTO-SEAT-LATERAL-MOUNT-LUG-VISIBLE-001",
+  "label": "P13 — un œillet latéral de selle, étude visible",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../../creative/research/seat-lateral-mount-lug-visible-v1/sources-child-v1.json",
+  "sources": [
+    "D01",
+    "BAJAJ-AR-OWNER-SEAT-P15",
+    "MOTOZILLA-RELATED-SEAT-UNDERSIDE"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "whole-front",
+      "PNG_sha256": "29a7d732a760b65c16d09da166cebb21629789a57dd440de96b1f8d910a73dfb",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.0,
+        0.002490478567779064,
+        0.11717349290847778
+      ],
+      "camera_target": [
+        0.0,
+        0.002490478567779064,
+        0.00623062439262867
+      ]
+    },
+    {
+      "name": "whole-quarter",
+      "PNG_sha256": "afd8fcfd04a87dc2fac6d5d634a8e3c70607108e23ac15c86d605f05caf81f79",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.04067905247211456,
+        -0.056679051369428635,
+        0.08019253611564636
+      ],
+      "camera_target": [
+        0.0,
+        0.002490478567779064,
+        0.00623062439262867
+      ]
+    },
+    {
+      "name": "neutral-outdoor",
+      "PNG_sha256": "f64874f6ec40619f404f53efc0add18fcacda9950a4ff3c0f965c2fac902f6d3",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.04067905247211456,
+        -0.056679051369428635,
+        0.08019253611564636
+      ],
+      "camera_target": [
+        0.0,
+        0.002490478567779064,
+        0.00623062439262867
+      ]
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-SEAT-LATERAL-MOUNT-LUG-VISIBLE-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "seat-lateral-mount-lug-visible-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "path": "../../../creative/research/seat-lateral-mount-lug-visible-v1/G0-G2-plan-v1.json",
+          "kind": "identity_and_parts",
+          "sha256": "6c2e269935dd7d71ab596ce3ed3f635bf5161e16e56be51eb3a96efa8c256225",
+          "revision": "seat-lateral-mount-lug-visible-v1"
+        }
+      ],
+      "reason": "Observable child separated, estimates and variant limits documented; not full package or artistic acceptance",
+      "reviewed_at": "2026-10-22"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "seat-lateral-mount-lug-visible-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "seat-lateral-mount-lug-visible-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "seat-lateral-mount-lug-visible-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/seat-lateral-mount-lug-visible-v1/seat-lateral-mount-lug-visible-v1.blend",
+          "kind": "editable_source",
+          "revision": "seat-lateral-mount-lug-visible-v1",
+          "sha256": "05abd35d74e3668e65098ffca493a33390bf313485d4b8b8a4b78b44546a05e9"
+        },
+        {
+          "path": "../../reviews/seat-lateral-mount-lug-visible-v1/whole-front.png",
+          "kind": "isolated_comparison",
+          "revision": "seat-lateral-mount-lug-visible-v1",
+          "sha256": "29a7d732a760b65c16d09da166cebb21629789a57dd440de96b1f8d910a73dfb"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "seat-lateral-mount-lug-visible-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/seat-lateral-mount-lug-visible-v1/neutral-outdoor.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "seat-lateral-mount-lug-visible-v1",
+          "sha256": "f64874f6ec40619f404f53efc0add18fcacda9950a4ff3c0f965c2fac902f6d3"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "seat-lateral-mount-lug-visible-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/seat-lateral-mount-lug-visible-v1/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "seat-lateral-mount-lug-visible-v1",
+          "sha256": "925919a159255f3205bdafe1f55cfa5fdb5273f6ff61667679018d6b71b3ac30"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "seat-lateral-mount-lug-visible-v1",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/seat-lateral-mount-lug-visible-v1/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "seat-lateral-mount-lug-visible-v1",
+          "sha256": "f15e8e4c2b37dfa5393a40297aedb716007022f6ff0b34823c46ab2deefd81e7"
+        },
+        {
+          "path": "../../reviews/seat-lateral-mount-lug-visible-v1/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "seat-lateral-mount-lug-visible-v1",
+          "sha256": "ee95f0a08990ab00ab7def25b3dd9bbb179e328a269bdcdfcee1bb82e23abefa"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "seat-lateral-mount-lug-visible-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "seat-lateral-mount-lug-visible-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "seat-lateral-mount-lug-visible-v1",
+  "export_revision": "seat-lateral-mount-lug-visible-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/seat-lateral-mount-lug-visible-v1/README.md",
+  "candidate_review": "../../reviews/seat-lateral-mount-lug-visible-v1/README.md",
+  "production_group": 18,
+  "source_plan": "../../../creative/research/seat-lateral-mount-lug-visible-v1/G0-G2-plan-v1.json"
+}
