@@ -1,9 +1,9 @@
-# Livraison actuelle — assemblage161 et sources récupérables
+# Livraison actuelle — moteur et phare corrigés
 
-[Voir la moto, les contrôles et récupérer Blender/glTF](creative/reviews/motorcycle-assembled-v3/README.md).
+[Voir la moto, les gros plans, les contrôles et récupérer Blender/glTF](creative/reviews/motorcycle-assembled-v4/README.md).
 
-Les dernières pièces documentées sont fabriquées ou réintégrées : enveloppes des repose-pieds, oreille de carter, axe/levier avant, huit éléments de liaison de frein arrière avec pose corrigée, klaxon, gaines, bougie/capuchon et couvercles moteur qui manquaient dans la composition. Les carters majeurs, cadre, batterie, carrosserie, selle, protections, roues, éclairage, plaque et répétitions autorisées restent inclus.
+Le volume supérieur/arrière du carter moteur, trop en retrait, est complété et rejoint le pied du cylindre. Le réflecteur plat est remplacé par une cuve concave reconstruite d’après des photos de face/trois quarts ; l’ampoule extérieure et les stries verticales observées sur la face officielle RDC sont intégrées. Recul estimé38mm, plage26–50mm. Les espaces réellement ouverts du cadre sont conservés.
 
-161instances liées,540maillages,25 443 229triangles ; ces nombres ne comptent pas des pièces physiques terminées. Trois rendus Blender natifs96, six vues Babylon initiales et deux cadrages corrigés face/dos, zéro erreur glTF/page/HTTP.313ressources exactes vérifiées localement ; les fichiers Blender liés et glTF sont récupérables avec le manifeste et le script fournis.
+162 instances, trois rendus Blender96 et six vues Babylon dont trois gros plans. 317 ressources exactes vérifiées localement et dans les blobs Git ; manifeste de récupération fourni. Sources, rendus et contrôles sont poussés par livraison.
 
-Le phare reste en reprise : son champ argenté plan ne restitue pas la vraie profondeur ni les facettes. Deux derniers circuits d’occasion et douze photographies ont été examinés sans référence suffisante. Aucun bol arbitraire ou logement d’ampoule fictif ajouté. Le [suivi v6](creative/workflow/motorcycle-remaining-execution-2026-10-22-v6.json) expose cette limite, les interfaces cachées et les qualifications encore ouvertes. La moto n’est pas déclarée intégralement finalisée ou reçue ; pas de clôture fictive des trente paquets, de test Unity ou de performance mobile.
+Les joints entre carters apparentés, l’identité exacte de l’optique, les profondeurs et la prescription optique restent bornés/non certifiés. Le [suivi v7](creative/workflow/motorcycle-remaining-execution-2026-10-22-v7.json) conserve ces limites et les qualifications encore ouvertes ; aucune réception artistique automatique, clôture fictive des30paquets, performance mobile ou qualification Unity.
