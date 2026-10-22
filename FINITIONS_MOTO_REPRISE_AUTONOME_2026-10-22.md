@@ -1,5 +1,7 @@
 # Reprise — correction candidate du raccord de guidon
 
+**Suite de l'analyse :** la CI de cette correction est réussie. La [vérification complémentaire des variantes](creative/research/motorcycle-finishing-blockers-2026-10-22/README.md) distingue les branches de transmission et les données encore nécessaires. La finition complète reste bloquée sur ces références et le choix de fidélité ; aucune clôture de la moto n'est annoncée.
+
 [Livraison et comparaison avant/après](creative/reviews/handlebar-registration-v2/README.md) · [Analyse et plan de finition](creative/workflow/motorcycle-finishing-plan-2026-10-22.md).
 
 Les deux pontets et leurs quatre boulons sont rapprochés de 6,5 mm du centre dans un candidat séparé. Le contrôle natif passe de 321 / 366 intersections avec la plaque à zéro ; 129 sondes par section de goujon sont dégagées dans l'export. Les 177 groupes, la géométrie et les textures sont conservés. Les surfaces sources ne sont pas modifiées ; seules huit translations changent dans les GLB. L'empilage inférieur, les autres couples de pièces incompatibles, la transmission finale et les câbles restent ouverts. Aucun montage complet, réception artistique ou essai Safari physique n'est déclaré.
