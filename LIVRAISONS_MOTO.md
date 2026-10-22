@@ -28,6 +28,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P07** : [tail-lamp-perforated-outer-lens-v3 — sources, rendus et contrôles](creative/reviews/tail-lamp-perforated-outer-lens-v3/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **P20** : [MOTO-AIRBOX-CARB-BOOT-PHYSICAL-002 — bounded exterior candidate — sources et images](creative/reviews/airbox-carb-boot-physical-study-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P06** : [CL201023 HS1 bulb three-ear stamped locating flange — sources et images](creative/reviews/front-completion-p06-bulb-flange-front15-v4-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P13** : [seat-base-observed-underside-v2 — sources, rendus et contrôles](creative/reviews/seat-base-observed-underside-v2/README.md). Enfant candidat ; interfaces/paquet ouverts.

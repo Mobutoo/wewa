@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-TAIL-LAMP-OUTER-LENS-001",
-  "label": "P07 — enveloppe extérieure rouge corrigée, optique encore ouverte",
+  "label": "P07 — lentille extérieure, deux ouvertures de fixation réelles",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -21,60 +21,61 @@
       0.65
     ]
   },
-  "source_register": "../../../creative/research/tail-lamp-outer-lens-v2/sources-child-v1.json",
+  "source_register": "../../../creative/research/tail-lamp-perforated-outer-lens-v3/sources-child-v1.json",
   "sources": [
     "D01",
     "D04-S59",
-    "RDC-REAR"
+    "RDC-REAR",
+    "POWER-SPEED-BM150-LENS-WELLS"
   ],
   "claims": [],
   "views": [
     {
       "name": "whole-front",
-      "PNG_sha256": "5072df57eb086dbbfc12f77e36d479591f85db88387fb6459b64f3e4ec73d79c",
+      "PNG_sha256": "ea6d26a09c157516496d1d1af21a6aad33815f2bc023a5da517f05ff77b3a59e",
       "actually_saved": true,
       "samples": 96,
       "camera_eye": [
         0.0,
-        -0.003145834431052208,
-        0.4590148627758026
+        -0.00320245698094368,
+        0.46710145473480225
       ],
       "camera_target": [
         0.0,
-        -0.003145834431052208,
-        0.010999999940395355
+        -0.00320245698094368,
+        0.010999745689332485
       ]
     },
     {
       "name": "whole-quarter",
-      "PNG_sha256": "7a6e2081d11453ac029660215230656e4b177f73c2570ec0456e4d03734175e4",
+      "PNG_sha256": "841e8fa5d41398123c012cce1b5e89c48e816b8f07f570c6414564b879c467a8",
       "actually_saved": true,
       "samples": 96,
       "camera_eye": [
-        0.14933829009532928,
-        -0.18235178291797638,
-        0.3096765875816345
+        0.15203391015529633,
+        -0.18564315140247345,
+        0.3150675594806671
       ],
       "camera_target": [
         0.0,
-        -0.003145834431052208,
-        0.010999999940395355
+        -0.00320245698094368,
+        0.010999745689332485
       ]
     },
     {
       "name": "neutral-outdoor",
-      "PNG_sha256": "92a1880651dbb81fa63b574fd7db046b310b23cbc98cdfc9b882b6a00ef9f670",
+      "PNG_sha256": "9d8248ceda4c2701efa04945f5d73e30750401f4a2bfad2a394a8c6aa781ded1",
       "actually_saved": true,
       "samples": 96,
       "camera_eye": [
-        0.14933829009532928,
-        -0.18235178291797638,
-        0.3096765875816345
+        0.15203391015529633,
+        -0.18564315140247345,
+        0.3150675594806671
       ],
       "camera_target": [
         0.0,
-        -0.003145834431052208,
-        0.010999999940395355
+        -0.00320245698094368,
+        0.010999745689332485
       ]
     }
   ],
@@ -96,25 +97,25 @@
   "gates": {
     "G0": {
       "status": "passed",
-      "revision": "tail-lamp-outer-lens-v2",
+      "revision": "tail-lamp-perforated-outer-lens-v3",
       "reviewer": {
         "name": "Codex",
         "role": "technical"
       },
       "evidence": [
         {
-          "path": "../../../creative/research/tail-lamp-outer-lens-v2/G0-G2-plan-v1.json",
+          "path": "../../../creative/research/tail-lamp-perforated-outer-lens-v3/G0-G2-plan-v1.json",
           "kind": "identity_and_parts",
-          "sha256": "1fc7cdcb3e62ff33ce735cc0b868a7eb173068f69f818765b0228d6cd8743380",
-          "revision": "tail-lamp-outer-lens-v2"
+          "sha256": "57385058593bf8668deff2ed160b0cc5afc39f686a0955d850aa57aaf7a100a8",
+          "revision": "tail-lamp-perforated-outer-lens-v3"
         }
       ],
       "reason": "Observable child separated, estimates and variant limits documented; not full package or artistic acceptance",
-      "reviewed_at": "2026-10-21"
+      "reviewed_at": "2026-10-22"
     },
     "G1": {
       "status": "blocked",
-      "revision": "tail-lamp-outer-lens-v2",
+      "revision": "tail-lamp-perforated-outer-lens-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -122,7 +123,7 @@
     },
     "G2": {
       "status": "blocked",
-      "revision": "tail-lamp-outer-lens-v2",
+      "revision": "tail-lamp-perforated-outer-lens-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -130,20 +131,20 @@
     },
     "G3": {
       "status": "rework",
-      "revision": "tail-lamp-outer-lens-v2",
+      "revision": "tail-lamp-perforated-outer-lens-v3",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../../assets-src/moto-components/tail-lamp-outer-lens-v2/tail-lamp-outer-lens-v2.blend",
+          "path": "../../../assets-src/moto-components/tail-lamp-perforated-outer-lens-v3/tail-lamp-perforated-outer-lens-v3.blend",
           "kind": "editable_source",
-          "revision": "tail-lamp-outer-lens-v2",
-          "sha256": "453ea481f88eb380b5b0b100b4f68b94299365b3154331edd89272b8f345aa9f"
+          "revision": "tail-lamp-perforated-outer-lens-v3",
+          "sha256": "cae0a665f944f748e32a274100f2a272cf469f8955ba37a150f9fca7cf558fd7"
         },
         {
-          "path": "../../reviews/tail-lamp-outer-lens-v2/whole-front.png",
+          "path": "../../reviews/tail-lamp-perforated-outer-lens-v3/whole-front.png",
           "kind": "isolated_comparison",
-          "revision": "tail-lamp-outer-lens-v2",
-          "sha256": "5072df57eb086dbbfc12f77e36d479591f85db88387fb6459b64f3e4ec73d79c"
+          "revision": "tail-lamp-perforated-outer-lens-v3",
+          "sha256": "ea6d26a09c157516496d1d1af21a6aad33815f2bc023a5da517f05ff77b3a59e"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -151,14 +152,14 @@
     },
     "G4": {
       "status": "rework",
-      "revision": "tail-lamp-outer-lens-v2",
+      "revision": "tail-lamp-perforated-outer-lens-v3",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/tail-lamp-outer-lens-v2/neutral-outdoor.png",
+          "path": "../../reviews/tail-lamp-perforated-outer-lens-v3/neutral-outdoor.png",
           "kind": "surface_or_sound_comparison",
-          "revision": "tail-lamp-outer-lens-v2",
-          "sha256": "92a1880651dbb81fa63b574fd7db046b310b23cbc98cdfc9b882b6a00ef9f670"
+          "revision": "tail-lamp-perforated-outer-lens-v3",
+          "sha256": "9d8248ceda4c2701efa04945f5d73e30750401f4a2bfad2a394a8c6aa781ded1"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -166,14 +167,14 @@
     },
     "G5": {
       "status": "rework",
-      "revision": "tail-lamp-outer-lens-v2",
+      "revision": "tail-lamp-perforated-outer-lens-v3",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/tail-lamp-outer-lens-v2/source-geometry-check.json",
+          "path": "../../reviews/tail-lamp-perforated-outer-lens-v3/source-geometry-check.json",
           "kind": "motion_or_interface_check",
-          "revision": "tail-lamp-outer-lens-v2",
-          "sha256": "eccaf66516b4b761e92e90424537d5433300add0d042eac25d5f31f3f407ccb6"
+          "revision": "tail-lamp-perforated-outer-lens-v3",
+          "sha256": "81ed4ac2ef217ba2fe7fb61512d00675b16126b0d3febb524d29096299402787"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -181,20 +182,20 @@
     },
     "G6": {
       "status": "rework",
-      "revision": "tail-lamp-outer-lens-v2",
+      "revision": "tail-lamp-perforated-outer-lens-v3",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/tail-lamp-outer-lens-v2/export-buffer-check.json",
+          "path": "../../reviews/tail-lamp-perforated-outer-lens-v3/export-buffer-check.json",
           "kind": "technical_export_check",
-          "revision": "tail-lamp-outer-lens-v2",
-          "sha256": "52093d190450c8c18dff2f9c97a27f714996a9ece281fd327b283f68e084953a"
+          "revision": "tail-lamp-perforated-outer-lens-v3",
+          "sha256": "473bd6b939e424f81234a6d1e02c5b9229b3d61fd75953a3f162d80e8331e613"
         },
         {
-          "path": "../../reviews/tail-lamp-outer-lens-v2/inspection-v3/engine-driver.png",
+          "path": "../../reviews/tail-lamp-perforated-outer-lens-v3/inspection-v3/engine-driver.png",
           "kind": "real_runtime_comparison",
-          "revision": "tail-lamp-outer-lens-v2",
-          "sha256": "f5c7f3a060c6373e47a779dd326fd1a9ffb05b6ffb8399144dc47e6333522a20"
+          "revision": "tail-lamp-perforated-outer-lens-v3",
+          "sha256": "d09607ca8e46f9ff65485c59edb901f66f00b81d2320fe067fe8bbf003174b68"
         }
       ],
       "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
@@ -202,7 +203,7 @@
     },
     "G7": {
       "status": "pending",
-      "revision": "tail-lamp-outer-lens-v2",
+      "revision": "tail-lamp-perforated-outer-lens-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
@@ -210,7 +211,7 @@
     },
     "G8": {
       "status": "pending",
-      "revision": "tail-lamp-outer-lens-v2",
+      "revision": "tail-lamp-perforated-outer-lens-v3",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -218,12 +219,20 @@
     }
   },
   "active_detailed_fabrication": false,
-  "source_revision": "tail-lamp-outer-lens-v2",
-  "export_revision": "tail-lamp-outer-lens-v2-inspection",
+  "source_revision": "tail-lamp-perforated-outer-lens-v3",
+  "export_revision": "tail-lamp-perforated-outer-lens-v3-inspection",
   "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
   "art_accepted": false,
-  "candidate_source": "../../../assets-src/moto-components/tail-lamp-outer-lens-v2/README.md",
-  "candidate_review": "../../reviews/tail-lamp-outer-lens-v2/README.md",
+  "candidate_source": "../../../assets-src/moto-components/tail-lamp-perforated-outer-lens-v3/README.md",
+  "candidate_review": "../../reviews/tail-lamp-perforated-outer-lens-v3/README.md",
   "production_group": 18,
-  "source_plan": "../../../creative/research/tail-lamp-outer-lens-v2/G0-G2-plan-v1.json"
+  "source_plan": "../../../creative/research/tail-lamp-perforated-outer-lens-v3/G0-G2-plan-v1.json",
+  "previous_revisions": [
+    {
+      "revision": "tail-lamp-outer-lens-v2",
+      "source": "../../../assets-src/moto-components/tail-lamp-outer-lens-v2/README.md",
+      "review": "../../reviews/tail-lamp-outer-lens-v2/README.md",
+      "art_accepted": false
+    }
+  ]
 }
