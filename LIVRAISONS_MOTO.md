@@ -1,5 +1,7 @@
 # Viva Wewa — pièces et contrôles de la moto
 
+**Livraison actuelle — [extérieur v5 : 177 groupes examinables, 15 ajouts et deux rétroviseurs corrigés](creative/reviews/motorcycle-exterior-v5/README.md).** [GLB autonome](assets-src/moto-components/motorcycle-exterior-v5/lod/motorcycle-lod.glb) · [chaque pièce isolée](creative/reviews/motorcycle-exterior-v5/INVENTORY.md) · [nouveau corps extérieur du robinet](creative/reviews/fuel-tap-visible-body-v1/README.md). Les fixations incompatibles, la transmission et les routes de câbles empêchent encore de déclarer la moto terminée. Les éléments masqués restent examinables par isolation ou séparation dans la visionneuse.
+
 **Revue complète du 22 octobre : [état des 30 paquets et inventaire des 205 fiches / 162 parents](creative/workflow/motorcycle-completion-audit-2026-10-22/README.md).** [Nouveau candidat LOD, images et contrôles](creative/reviews/motorcycle-lod-review-v1/README.md). Transmission finale non assemblée, raccords et fonctionnement ouverts ; aucune clôture de la moto. Quatre pages sources manquantes du registre sont rétablies.
 
 **Assemblage détaillé de référence : [moto assemblée v4 — moteur et phare corrigés, rendus et fichiers récupérables](creative/reviews/motorcycle-assembled-v4/README.md).** [Gros plan moteur](creative/reviews/motorcycle-assembled-v4/inspection-whole-v3/engine-engine-left.png) · [Phare monté](creative/reviews/motorcycle-assembled-v4/inspection-whole-v3/engine-headlamp.png) · [Suivi v7 conservé](creative/workflow/motorcycle-remaining-execution-2026-10-22-v7.json).

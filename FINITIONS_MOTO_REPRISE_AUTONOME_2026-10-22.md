@@ -1,4 +1,10 @@
-# État actuel — revue complète et candidat allégé
+# État actuel — extérieur v5, 177 groupes examinables
+
+**La moto reste inachevée.** [La livraison v5](creative/reviews/motorcycle-exterior-v5/README.md) ajoute quinze groupes extérieurs, corrige les deux rétroviseurs et rend chaque groupe accessible dans la visionneuse. Un nouveau corps de robinet apparenté est fabriqué, puis réuni au levier existant. Les sources historiques sont conservées.
+
+Le GLB autonome compte 944 683 triangles pour 41 258 188 octets, contre 26 308 215 triangles dans le détail. L'isolation et la séparation permettent de voir les éléments naturellement masqués. Le relevé des incompatibilités reste ouvert : vis M6/alésage 4,3 mm, axe de béquille 12 mm/œil 9 mm, goujons de guidon mal alignés, couronne six trous/porte-couronne quatre trous et câblage incomplet. Les autres limites restent détaillées dans le bilan des paquets. Aucune réception artistique, qualification mobile ou intégration dans le jeu n'est déclarée.
+
+## Audit historique v4 et premier candidat allégé
 
 **La moto n'est pas terminée.** [Revue des 30 paquets, des 205 fiches et de l'assemblage courant](creative/workflow/motorcycle-completion-audit-2026-10-22/README.md) · [Candidat LOD et comparaison](creative/reviews/motorcycle-lod-review-v1/README.md).
 

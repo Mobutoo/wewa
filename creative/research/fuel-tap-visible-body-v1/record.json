@@ -1,0 +1,199 @@
+{
+  "schema": 1,
+  "id": "MOTO-FUEL-TAP-VISIBLE-BODY-001",
+  "label": "P12 — corps extérieur visible du robinet apparenté PF171800",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Related PF171800 exterior; exact RDC identity unconfirmed",
+    "variant_confirmed": false,
+    "usage": "Exterior appearance study, static assembly review",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "sources.json",
+  "sources": [
+    "PF171800-CROSLAND"
+  ],
+  "claims": [
+    {
+      "id": "working-length",
+      "property": "body_length",
+      "value": 0.0812,
+      "unit": "m",
+      "status": "estimated",
+      "source": "PF171800-CROSLAND",
+      "adopted": false,
+      "method": "Related lever author scale, visible outline and explicit finite closures",
+      "uncertainty": "0.055–0.105 m; no photographic calibration",
+      "scope": "Visible review exterior only"
+    }
+  ],
+  "views": [],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "variant-mounting",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G5",
+        "G6",
+        "G7",
+        "G8"
+      ],
+      "reason": "Exact RDC applicability, hidden seat, tank interface, selector operation and opposite surfaces remain unqualified."
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "fuel-tap-visible-body-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "plan.json",
+          "sha256": "1ba08b841a1ad3a94928699f5cb85edf5a2fee5711c4217bf30555848072788e",
+          "revision": "fuel-tap-visible-body-v1"
+        }
+      ],
+      "reason": "Executed and inspected within the explicit related-variant, estimated exterior scope. No exact identity or artistic receipt implied.",
+      "reviewed_at": "2026-10-22"
+    },
+    "G1": {
+      "status": "passed",
+      "revision": "fuel-tap-visible-body-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "source_view_dimension_matrix",
+          "path": "plan.json",
+          "sha256": "1ba08b841a1ad3a94928699f5cb85edf5a2fee5711c4217bf30555848072788e",
+          "revision": "fuel-tap-visible-body-v1"
+        },
+        {
+          "kind": "critical_gap_disposition",
+          "path": "plan.json",
+          "sha256": "1ba08b841a1ad3a94928699f5cb85edf5a2fee5711c4217bf30555848072788e",
+          "revision": "fuel-tap-visible-body-v1"
+        }
+      ],
+      "reason": "Executed and inspected within the explicit related-variant, estimated exterior scope. No exact identity or artistic receipt implied.",
+      "reviewed_at": "2026-10-22"
+    },
+    "G2": {
+      "status": "passed",
+      "revision": "fuel-tap-visible-body-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "scale_and_comparison_protocol",
+          "path": "plan.json",
+          "sha256": "1ba08b841a1ad3a94928699f5cb85edf5a2fee5711c4217bf30555848072788e",
+          "revision": "fuel-tap-visible-body-v1"
+        }
+      ],
+      "reason": "Executed and inspected within the explicit related-variant, estimated exterior scope. No exact identity or artistic receipt implied.",
+      "reviewed_at": "2026-10-22"
+    },
+    "G3": {
+      "status": "passed",
+      "revision": "fuel-tap-visible-body-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "editable_source",
+          "path": "../../../assets-src/moto-components/fuel-tap-visible-body-v1/child-gray.blend",
+          "sha256": "5d1560e571c2375f9fdd3a885bc02f6a3be73991f10cc47a527dcc24abe2a837",
+          "revision": "fuel-tap-visible-body-v1"
+        },
+        {
+          "kind": "isolated_comparison",
+          "path": "../../reviews/fuel-tap-visible-body-v1/gray-render-report.json",
+          "sha256": "86b0c7fcdef5a91daf84003180c844bda88ae9ba2a692b98427ad8fd61d1a4a2",
+          "revision": "fuel-tap-visible-body-v1"
+        }
+      ],
+      "reason": "Executed and inspected within the explicit related-variant, estimated exterior scope. No exact identity or artistic receipt implied.",
+      "reviewed_at": "2026-10-22"
+    },
+    "G4": {
+      "status": "passed",
+      "revision": "fuel-tap-visible-body-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "surface_or_sound_comparison",
+          "path": "../../reviews/fuel-tap-visible-body-v1/candidate-render-report.json",
+          "sha256": "33f2462b3b8a60359cdfbc539efe081aec53504e83b456d3619c0bbd1529c264",
+          "revision": "fuel-tap-visible-body-v1"
+        }
+      ],
+      "reason": "Executed and inspected within the explicit related-variant, estimated exterior scope. No exact identity or artistic receipt implied.",
+      "reviewed_at": "2026-10-22"
+    },
+    "G5": {
+      "status": "blocked",
+      "revision": "fuel-tap-visible-body-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact variant, hidden mounting and functional interfaces unresolved; static exterior appearance only.",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "fuel-tap-visible-body-v1",
+  "export_revision": "fuel-tap-visible-body-v1",
+  "next_action": "Resolve exact variant and photographed opposite-side/mounting interfaces before G5; inspect actual Babylon views independently of gate status",
+  "art_accepted": false
+}

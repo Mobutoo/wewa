@@ -23,6 +23,7 @@ jobs:
         run: |
           python -m unittest discover -s tools -p test_manifest_paths.py
           python tools/check_motorcycle18_index_v3.py --ref "$GITHUB_SHA" --output WEWA_Developpement_Web/validation/motorcycle-source-ci.json
+          python tools/check_motorcycle_exterior_v5.py
       - run: pip install playwright
       - run: python -m playwright install --with-deps chromium
       - run: npm run test:browser
