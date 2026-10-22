@@ -1,0 +1,16 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 01:31:14)
+Read blend: "/workspace/wewa/assets-src/moto-components/crankcase-lh-major-outer-envelope-donor-v1/child-gray.blend"
+Traceback (most recent call last):
+  File "/workspace/wewa/tools/powertrain_completion_render.py", line 5, in <module>
+    review,source_dir,mode=sys.argv[sys.argv.index('--')+1:];stage(review,source_dir,mode)
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/wewa/tools/powertrain_completion_common.py", line 52, in stage
+    samples=96 if mode=='final'else 16;s.cycles.samples=samples;label=mode+'-'+name;(O/'raw').mkdir(exist_ok=True);s.render.image_settings.file_format='OPEN_EXR_MULTILAYER';s.render.image_settings.color_depth='32';s.render.filepath=str(O/'raw'/(label+'.exr'));bpy.ops.render.render(write_still=True);s.render.image_settings.file_format='PNG';s.render.image_settings.color_depth='8';bpy.data.images['Render Result'].save_render(str(O/(label+'.png')),scene=s)
+                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/blender-runtime/blender-4.3.2-linux-x64/4.3/python/lib/python3.11/pathlib.py", line 1116, in mkdir
+    os.mkdir(self, mode)
+OSError: [Errno 28] No space left on device: '/workspace/wewa/creative/reviews/crankcase-lh-major-outer-envelope-donor-v1/raw'
+
+Error: script failed, file: 'tools/powertrain_completion_render.py', exiting.
+
+Blender quit
