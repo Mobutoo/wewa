@@ -1,15 +1,15 @@
 # Reprise autonome — 22 octobre 2026
 
-La moto reste en cours. Les194 fiches enregistrées désignent des candidats partiels et essais, pas194 pièces finies. Aucune réception artistique globale n’est déclarée.
+La moto reste en cours. Les198 fiches enregistrées sont des candidats, compositions et révisions partielles ; elles ne comptent pas198 pièces physiques finies. Aucun des trente paquets ni la moto entière n’est déclaré reçu.
 
-L’[audit global](creative/reviews/whole-exterior-coverage-v8/README.md) rassemble78 sources parentes natives exactes. La plaque est maintenant visible ; la bavette avant, le pare-carter et les supports métalliques des repose-pieds sont présents comme contexte. Les placements restent estimés et les attaches à contrôler.
+L’[audit global](creative/reviews/whole-exterior-coverage-v12/README.md) rassemble91 parents natifs, avec quatre vues réellement relues. Bouchon, renfort avant, bavette arrière, cache droit normalisé et premiers éléments de commande arrière sont présents comme contexte. Les placements restent estimés.
 
-![Aperçu avec matériaux](creative/reviews/whole-exterior-material-preview-v4/material-quarter.png)
+![Vue avec matériaux, 88 parents](creative/reviews/whole-exterior-material-preview-v5/material-rear-quarter.png)
 
-Cet [aperçu réellement relu](creative/reviews/whole-exterior-material-preview-v4/README.md) conserve les matériaux natifs : selle sombre, garde-boue arrière noir et graphismes WEWA. La protection et le verre du phare sont présents ; un reflet apparaît sur le verre, mais le fond optique manque et les raccords incomplets de fourche restent visibles.
+Les [trois vues avec matériaux](creative/reviews/whole-exterior-material-preview-v5/README.md) portent sur88 parents : selle sombre, caches rouges indépendants, feu rouge et plaque fictive WEWA001 visibles. Le [complément droit/face/arrière](creative/reviews/whole-exterior-opposite-side-v1/README.md) montre explicitement les exemplaires opposés encore absents.
 
-Le support PF121024, la structure PF121025, le flasque arrière DS151069 et un bouchon DS181012 sont sauvegardés séparément. Le kit extérieur du [sélecteur](creative/reviews/gear-selector-exterior-context-v1/) est également gelé ; sa pose sur le moteur reste inconnue. Le capuchon de fourche présente encore des écarts nominaux avec les anciens tubes et trous : aucun ajustement forcé n’est validé.
+La bavetteJV181410, le renfortAVPF181410 et le dossier des quatre parents de frein sont sauvegardés avec rendus96 isolés et contrôles moteur. Le patin de frein est encore séparé ; aucune pose montée ni soudure cachée n’est déduite. Le cache droit conserve sa forme originale dans un dérivé de convention contrôlé. Les écarts nominaux manchon/tube et bouchon/ouverture restent signalés.
 
-Suite ordonnée : bavette arrière JV181410 ; pose du cache droit ; protection de phare et essai du verre en contexte ; intégration des sources existantes de repose-pieds, béquilles et commande arrière ; réflecteur arrière et renfort du garde-boue. Le réflecteur nu avant reste insuffisamment documenté. Les recherches se poursuivent de manière autonome, avec pixels vendeurs privés et métadonnées publiques.
+Suite active : kick existant, premier manchon passagerJK113008 et une unité de repose-pied, correction d’apparence du catadioptre arrière, intégration du cockpit documenté. Le réflecteur nu avant reste insuffisamment documenté. La décision demandée sur les copies provisoires d’exemplaires reste en attente ; aucune réception artistique n’est inférée.
 
-[Progression détaillée](creative/workflow/motorcycle-remaining-execution-2026-10-22-v3.json) · [Livraisons et contrôles](LIVRAISONS_MOTO.md)
+[Progression détaillée](creative/workflow/motorcycle-remaining-execution-2026-10-22-v3.json) · [Images, sources et contrôles](LIVRAISONS_MOTO.md)
