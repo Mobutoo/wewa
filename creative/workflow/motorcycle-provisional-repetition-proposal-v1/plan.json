@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "state": "pending_explicit_user_decision",
+  "scope": "Provisional repeated instances of documented identical parts in this motorcycle review only. Not user artistic reception, not source identity or mechanical qualification.",
+  "existing_rule": {
+    "path": "creative/workflow/README.md",
+    "line": 25,
+    "quote": "Répéter un motif ou générer des variantes seulement après réception de son exemplaire."
+  },
+  "concrete_examples": [
+    {
+      "kind": "SNS exterior review unit",
+      "source": "assets-src/moto-components/rear-sns/rest-assembly/rear-sns-rest-assembly-v3.blend",
+      "source_sha256": "13973f6a34391ed2904990d91d6b80a48669200b1637b6152e144c07a8f564d5",
+      "current_instances_on_bike": 1,
+      "proposed_total": 2,
+      "review": "creative/reviews/rear-sns-rest-assembly-v3/README.md",
+      "image": "creative/reviews/rear-sns-rest-assembly-v3/whole-quarter-pbr.png",
+      "limits": "Related family and dimensions unmeasured, mounting hardware/fit and current RDC identity unqualified"
+    },
+    {
+      "kind": "Indicator amber exterior lens + black hood pair",
+      "parents": [
+        {
+          "key": "indicator-front-lens",
+          "source": "assets-src/moto-components/indicators-front/lens/indicator-front-lens-v1.blend",
+          "source_sha256": "16cf50785238a919bee4a0858b9a27cc562cd8c6d40fea5be02f07e83a3f64e3",
+          "collection": "WEWA_FRONT_INDICATOR_LENS",
+          "transform": "Identity: existing source lens/hood shared review frame, not an installed vehicle pose",
+          "export_files": [
+            "indicators-front/lens/indicator-front-lens-v1.glb"
+          ],
+          "source_unchanged": true
+        },
+        {
+          "key": "indicator-front-housing",
+          "source": "assets-src/moto-components/indicators-front/housing/indicator-front-housing-v1.blend",
+          "source_sha256": "24ee3032f40cadf8cb5252fcd4a41853909aff24a280d89d431391322d782af6",
+          "collection": "WEWA_FRONT_INDICATOR_HOUSING",
+          "transform": "Identity: existing source lens/hood shared review frame, not an installed vehicle pose",
+          "export_files": [
+            "indicators-front/housing/indicator-front-housing-v1.glb"
+          ],
+          "source_unchanged": true
+        }
+      ],
+      "proposed_total": 4,
+      "current_pair_count": 1,
+      "current_bike_instances": 0,
+      "review": "creative/reviews/indicator-exemplar-context-v1/README.md",
+      "image": "creative/reviews/indicator-exemplar-context-v1/final-pair-quarter.png",
+      "limits": "Amber darkens against empty black hood; no reflector/bulb/stalk-root or optical function received"
+    }
+  ],
+  "proposed_process": [
+    "Reuse exact frozen source geometry as linked review instances",
+    "Document reference and occurrence count for every repeated family before use; no arbitrary asymmetric mirroring",
+    "Keep original independent LH/RH stalks/supports instead of fabricating symmetric copies",
+    "Inspect whole layout, actual export and render consequences; retain remaining fit/material defects",
+    "All G8 states remain pending until a separate explicit artistic decision; no auto acceptance",
+    "Same provisional process could cover identical bolts/rubbers only after a documented, frozen, visually inspected individual candidate exists"
+  ],
+  "never_included": [
+    "No invented hidden critical optical/mechanical geometry",
+    "No generic reflector filler or unproven interchangeability",
+    "No optimization/hardware qualification or rider deployment",
+    "No repeated instances have been created under this proposal"
+  ],
+  "art_accepted": false,
+  "repetition_authorized": false
+}
