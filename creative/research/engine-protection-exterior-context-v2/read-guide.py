@@ -1,0 +1,6 @@
+import bpy,json,hashlib,numpy as np
+from pathlib import Path
+R=Path('/workspace/wewa');D=R/'creative/research/engine-protection-exterior-context-v2';r=json.loads((D/'guide-native-recovery.json').read_text());p=Path(r['private_read_copy']);assert hashlib.sha256(p.read_bytes()).hexdigest()==r['sha256'];bpy.ops.wm.open_mainfile(filepath=str(p));bpy.context.view_layer.update();report=json.loads((D/'source-snapshots/guide-build-report.json').read_text());rows=[]
+for q in report['source_inputs']:
+ ob=next(o for o in bpy.context.scene.objects if o.type=='MESH' and o.get('source_sha256')==q['source_sha256']);digest=hashlib.sha256(np.array([v.co[:]for v in ob.data.vertices],np.float32).tobytes()).hexdigest();assert digest==q['local_mesh_position_digest'];delta=max(abs(ob.matrix_world[i][j]-q['actual_world_matrices'][0][i][j])for i in range(4)for j in range(4));assert delta<1e-6,(q['role'],delta);rows.append({'role':q['role'],'source':q['source'],'source_sha256':q['source_sha256'],'local_mesh_position_digest':digest,'actual_guide_world':[list(v)for v in ob.matrix_world],'matrix_report_delta':delta})
+(D/'actual-guide-read.json').write_text(json.dumps({'guide_source_sha256':r['sha256'],'actual_guide_opened':True,'objects':rows,'read_only':True,'all_poses_estimated':True,'guide_not_physical_parent':True},indent=2))

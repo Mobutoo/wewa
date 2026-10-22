@@ -1,0 +1,76 @@
+{
+  "state": "Documentary/local-interface preparation only; no guide source or weld geometry generated yet",
+  "scope": "Two visible tube-end/formed-tab junctions only. Distinct centreplate weld/hook/spacer remain queued. Proposed working pose permits a source-triangle contact study, never a recovered camera/real OEM installation.",
+  "inputs": {
+    "tube": {
+      "source": "assets-src/moto-components/engine-protection-hoop/engine-protection-hoop-v1.blend",
+      "source_sha256_at_preparation": "7d0364876d5c198e1eb49bdb076b184fb169893d0ea80c82d609876f96b721c3",
+      "collection": "WEWA_ENGINE_PROTECTION_HOOP_TUBE_ISOLATED"
+    },
+    "terminalA": {
+      "source": "assets-src/moto-components/engine-protection-terminal-a/engine-protection-terminal-a-v1.blend",
+      "source_sha256_at_preparation": "c0a28ac4496603b07d7725bd40cd296a2a006e2db4ebfbd0a679d1d6f150d522",
+      "collection": "WEWA_ENGINE_PROTECTION_TERMINAL_A_ISOLATED"
+    },
+    "terminalB_G3": {
+      "source": "assets-src/moto-components/engine-protection-terminal-b/engine-protection-terminal-b-v1.blend",
+      "source_sha256_at_preparation": "7c2324c280e4a8f5dce5f2583f01fdf54c8e02bccd4c7c89f19de588bf982e3e",
+      "collection": "WEWA_ENGINE_PROTECTION_TERMINAL_B_ISOLATED"
+    }
+  },
+  "references": [
+    "creative/research/crash-guard-15-v1/report.json",
+    "creative/research/engine-protection-terminal-b-15-v1/documentary-preparation-v1.json"
+  ],
+  "all_pose_dimensions_estimated": true,
+  "photo_side_mapping": "Assign A to negativeX tube end and B to positiveX only as a reversible author assembly hypothesis; photographed left/right is not installedpilotL/R proof.",
+  "existing_tube_end_centres_m": [
+    [
+      -0.045,
+      0,
+      -0.255
+    ],
+    [
+      0.045,
+      0,
+      -0.255
+    ]
+  ],
+  "existing_tube_outer_radius_m_estimated": 0.01,
+  "existing_tube_inner_radius_m_estimated": 0.0085,
+  "existing_plate_thickness_m_estimated": 0.003,
+  "terminalA_working_transform": {
+    "Euler_Z_degrees": -90,
+    "translation_m": [
+      -0.0435,
+      0,
+      -0.255
+    ],
+    "origin": "Existing A lowerhole centre, no geometry change",
+    "contact_plane": "Rotated lower sheet broadface at X=-.045, tube end at X=-.045; pose assumes end-face butt contact, not measured weldpenetration"
+  },
+  "terminalB_working_transform": {
+    "Euler_Z_degrees": 90,
+    "translation_m": [
+      0.0325,
+      0,
+      -0.20355873274879294
+    ],
+    "origin": "B upperworkinghole centre, lower reference point(0,-.011,-.05144126725120706)",
+    "contact_plane": "Rotated lower sheet broadface at X=+.045, tube end at X=+.045; opposite rotation is an assembly hypothesis, not mirrored mesh or certified side symmetry"
+  },
+  "required_actual_checks_before_weld": [
+    "Load three unchanged frozen component collections into separate context-only scene with relative libraries or embeddedcopy; exclude context from weld export.",
+    "Check transformed actual triangles/contact distances and tangential contact footprints, not just primitive bounds.",
+    "Read whole guide and both macro junctions against two actual PF231201 photos; ensure tube-side holes remain unblocked and not duplicated.",
+    "If hypothesis conflicts, revise guide pose separately without altering any frozen part.",
+    "Only then author a separate visible external weldcandidate where photographed; no claimed internalpenetration, OEMbeadprofile, exactcrosssection or strength."
+  ],
+  "remaining_open": [
+    "Unobserved lower B perforation and finite envelope",
+    "Exact plane normals/pose and photographic installedside",
+    "True weldpath/crosssection and penetration",
+    "No completed guard/fit/art or strength receipt"
+  ],
+  "art_accepted": false
+}
