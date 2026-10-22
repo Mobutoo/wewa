@@ -1,0 +1,69 @@
+{
+  "replace": [
+    {
+      "key": "outer-glass-envelope-context",
+      "source": "assets-src/moto-components/headlamp-front-photo-reconstruction-v1/front-photo-reconstruction-v1.blend",
+      "sha256": "d88d70570fd661607069332f93642eb114457b8ca5365d87a8516d3a67b41700",
+      "collection": "WEWA_HEADLAMP_FRONT_PHOTO_RECONSTRUCTION_V1",
+      "selected_objects": [],
+      "translation_m": [
+        0.0,
+        -0.20399999618530273,
+        -0.11999999731779099
+      ],
+      "rotation_degrees": [
+        90,
+        0,
+        0
+      ],
+      "scale": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "placement_status": "Same old optical parent frame; new photo-bounded38mm concavity, collar returns and linked exterior capsule. No measured optical prescription.",
+      "nested_sources": [
+        {
+          "source": "assets-src/moto-components/front-completion-p06-bulb-capsule-front15-v1/bulb-capsule-material.blend",
+          "sha256": "cc577f66d1348ea4ec9f6c54da2bd97a5866a2e1d78e9256c128d4bf9d40cb83"
+        },
+        {
+          "source": "assets-src/moto-components/headlamp-interior-completion-v3/visible-optics-v3.blend",
+          "sha256": "3743a39efb74545416cbe26c5d00d8bef97b9e240b535faf2e742fe4612445dd"
+        }
+      ],
+      "renderable_meshes": 5
+    }
+  ],
+  "add": [
+    {
+      "key": "engine-upper-rear-cast-shell-v3",
+      "source": "assets-src/moto-components/engine-exterior-completion-v3/upper-rear-cast-shell-v3.blend",
+      "sha256": "06141c6f86a0f670cf9b2ff67e018577e8af4ab430b05fbdbc0c2cac4bc2628d",
+      "collection": "WEWA_ENGINE_UPPER_REAR_CAST_SHELL_V3",
+      "selected_objects": [
+        "UPPER_REAR_CRANKCASE_EXTERIOR_CAST_SHELL_ESTIMATED"
+      ],
+      "translation_m": [
+        0,
+        0,
+        0
+      ],
+      "rotation_degrees": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "glb": "assets-src/moto-components/engine-exterior-completion-v3/upper-rear-cast-shell-v3.glb",
+      "glb_sha256": "823b133771f8841951962be1f337b577618016af0c584b604cf4998eb14f6656",
+      "placement_status": "Bounded exterior study in inherited world datum; exact RDC identity not certified",
+      "renderable_meshes": 1
+    }
+  ],
+  "scope": "Photo-guided external corrections. Previous161parents preserve160 unchanged sources and transforms; optical parent replaced in same frame, one engine body added. No exact OEM or mechanical qualification."
+}
