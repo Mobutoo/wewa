@@ -1,0 +1,245 @@
+{
+  "id": "passenger-support-current-rdc-v5",
+  "identity": "Current RDC125 rear sideguard and forward passenger support visible traces; no PF part code assigned",
+  "coordinates": "metres X pilot-left Y rear Z up; row-major matrices on column vectors; glTF=(X,Z,-Y)",
+  "status": "G1 photo_inferred contours; metric/depth/section estimated; exact mounts not qualified",
+  "LH": {
+    "photo": "04",
+    "rear_axle_px": [
+      741,
+      506
+    ],
+    "front_axle_px": [
+      211,
+      510
+    ],
+    "scale_m_per_px": 0.0024245283018867925,
+    "main_anchors_px": {
+      "A": [
+        529,
+        448
+      ],
+      "B": [
+        801,
+        446
+      ],
+      "C": [
+        743,
+        338
+      ],
+      "peg_hint": [
+        667,
+        440
+      ]
+    },
+    "guard_trace_px_x_m": [
+      [
+        735,
+        325,
+        0.15
+      ],
+      [
+        743,
+        338,
+        0.158
+      ],
+      [
+        791,
+        427,
+        0.2
+      ],
+      [
+        801,
+        446,
+        0.204
+      ],
+      [
+        735,
+        456,
+        0.199
+      ],
+      [
+        664,
+        465,
+        0.193
+      ],
+      [
+        628,
+        465,
+        0.19
+      ],
+      [
+        580,
+        457,
+        0.183
+      ],
+      [
+        529,
+        448,
+        0.178
+      ]
+    ],
+    "front_support_trace_px_x_m": [
+      [
+        631,
+        378,
+        0.12
+      ],
+      [
+        640,
+        407,
+        0.154
+      ],
+      [
+        648,
+        433,
+        0.162
+      ],
+      [
+        653,
+        446,
+        0.165
+      ]
+    ],
+    "peg_hinge_px": [
+      655,
+      454
+    ],
+    "peg_hinge_X_m": 0.197,
+    "outward_sign": 1
+  },
+  "RH": {
+    "photo": "00",
+    "rear_axle_px": [
+      258,
+      511
+    ],
+    "front_axle_px": [
+      834,
+      511
+    ],
+    "scale_m_per_px": 0.002230902777777778,
+    "main_anchors_px": {
+      "A": [
+        468,
+        447
+      ],
+      "B": [
+        202,
+        449
+      ],
+      "C": [
+        252,
+        338
+      ]
+    },
+    "guard_trace_px_x_m": [
+      [
+        260,
+        322,
+        -0.153
+      ],
+      [
+        252,
+        338,
+        -0.16
+      ],
+      [
+        211,
+        429,
+        -0.201
+      ],
+      [
+        202,
+        449,
+        -0.207
+      ],
+      [
+        264,
+        459,
+        -0.201
+      ],
+      [
+        333,
+        466,
+        -0.195
+      ],
+      [
+        360,
+        465,
+        -0.19
+      ],
+      [
+        413,
+        457,
+        -0.182
+      ],
+      [
+        468,
+        447,
+        -0.174
+      ]
+    ],
+    "front_support_trace_px_x_m": [
+      [
+        375,
+        370,
+        -0.12
+      ],
+      [
+        365,
+        399,
+        -0.155
+      ],
+      [
+        354,
+        432,
+        -0.164
+      ],
+      [
+        347,
+        446,
+        -0.17
+      ]
+    ],
+    "peg_hinge_px": [
+      345,
+      454
+    ],
+    "peg_hinge_X_m": -0.203,
+    "outward_sign": -1
+  },
+  "construction": {
+    "tube_outer_diameter_m": 0.016,
+    "diameter_bounds_m": [
+      0.012,
+      0.018
+    ],
+    "working_wall_m": 0.0016,
+    "wall_bounds_m": [
+      0.001,
+      0.0025
+    ],
+    "trace_pixel_uncertainty": 6,
+    "scale_uncertainty_fraction": 0.1,
+    "transverse_X_uncertainty_m": 0.03,
+    "bend_method": "Rounded tangent transitions between observed centreline samples; open circular ends at visible review cuts, no caps, brackets, pins or welds",
+    "working_corner_radius_m": 0.018,
+    "corner_radius_bounds_m": [
+      0.012,
+      0.03
+    ],
+    "peg_pose": "Folded rear/up, 75deg from outward with diagonal transverse hinge axis; source metal and rubber geometry unchanged",
+    "material": "Estimated clean black coated steel; no sampled photographic highlight in albedo"
+  },
+  "limits": [
+    "Axles and WB are working layout, not OEM photo-calibrated measurements",
+    "LH/RH separate photo traces; differing perspective/scale retained, no mirror",
+    "Upper and front ends are visible cut traces; hidden continuation and attachment roles unknown",
+    "User hinge hint preserved as observation; refined hinge inferred from metal/rubber transition in actual crop",
+    "One observed forward stem per side, identity and weld relationship to rear guard unknown",
+    "Historical DP/JK exact geometry,22mm nominal overhang and90deg diagnostic cut retained; old donor stay and5mm chape-gap study remain untouched",
+    "Forward stem is a separate observed inboard trace behind peg/rubber: depth revised within +/-30mm source allowance to prevent shell crossing; unknown local connection not fabricated.",
+    "V5 changes ONLY the two upper-cut X values from +/-145mm to +/-120mm, within +/-30mm estimated depth. Prevents visible open cut protruding on red cover; no additional hidden segment or connector."
+  ]
+}
