@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **166 composants candidats enregistrés**, après
+Le registre courant comporte **167 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P18** : [MOTO-CRANKCASE-UPPER-LAND-LH-001 — bounded exterior candidate — sources et images](creative/reviews/crankcase-upper-land-lh-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P17** : [MOTO-SIDE-STAND-SPRING-COVER-001 — bounded exterior candidate — sources et images](creative/reviews/side-stand-spring-cover-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P08** : [rear-plate-captive-nut-exterior-v1 — sources, rendus et contrôles](creative/reviews/rear-plate-captive-nut-exterior-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
 - **P16** : [MOTO-PASSENGER-FOOTREST-STAY-RIGHT-001 — bounded exterior candidate — sources et images](creative/reviews/passenger-footrest-stay-right-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
