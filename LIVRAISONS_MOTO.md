@@ -37,6 +37,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P29** : [Observed lower front sheath B — mechanical function unassigned — sources et images](creative/reviews/p29-lower-front-sheath-observed-b-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P26** : [Existing engine guard kit — rigid guide context with open review joints — sources et images](creative/reviews/engine-protection-exterior-context-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P16** : [One reused LH passenger exterior unit — mounting unqualified — sources et images](creative/reviews/passenger-footrest-left-exterior-context-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P29** : [Observed lower front sheath A — mechanical function unassigned — sources et images](creative/reviews/p29-lower-front-sheath-observed-a-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.

@@ -1,0 +1,162 @@
+{
+  "component_id": "MOTO-COCKPIT-CABLES-001",
+  "package": "P29",
+  "revision": "p29-lower-front-sheath-observed-b-v1",
+  "authorization": "Coordinator dispatch within user-authorized autonomous motorcycle completion",
+  "phase": "G0-G2-before-new-curve",
+  "identity": "Second independently observed lower run B, from higher hub-side visible sheath; NOT historical B identity assignment",
+  "sources": [
+    {
+      "private_path": "/workspace/wewa-assets/references/exterior-completion-current/01.png",
+      "sha256": "57187baaaeae474b045bdad064533084926dfc204688265463d01cf91f1adf02",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/01.png",
+      "actually_viewed": true,
+      "role": "RDC manufacturer 8-angle context; perspective/resolution limited"
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/exterior-completion-current/02.png",
+      "sha256": "eed85a43c40a6fcb4785ad4d24a5c0881e14fbde21d4663f2ae51e742095c93d",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/02.png",
+      "actually_viewed": true,
+      "role": "RDC manufacturer 8-angle context; perspective/resolution limited"
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/exterior-completion-current/03.png",
+      "sha256": "c19b64be0100daa1ac2e27e6e879b34afbc2ede2553e291d86934f0a4005ad8e",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/03.png",
+      "actually_viewed": true,
+      "role": "RDC manufacturer 8-angle context; perspective/resolution limited"
+    },
+    {
+      "private_path": "/workspace/wewa-assets/references/exterior-completion-current/04.png",
+      "sha256": "b086dedb4a2bcbc2644aab9578a3d1efa7445e163459b444b3687047bf2e8e02",
+      "url": "https://www.bajajauto.com/fr-cd/-/media/globalbajajauto/common-media/360/boxer/boxer-125-hd-new/red-long-visor/04.png",
+      "actually_viewed": true,
+      "role": "RDC manufacturer 8-angle context; perspective/resolution limited"
+    }
+  ],
+  "native_audit": "creative/research/p29-lower-front-sheath-observed-b-v1/native-comparison.json",
+  "function": "unassigned; two separate current RDC lower spans visible, no continuity to upper instruments or handle control proven",
+  "catalogue_related_codes_only": [
+    "PF161202 / PF161213 brake variants",
+    "DZ191014 / JZ161210 speedometer variants"
+  ],
+  "not_assigned_to_geometry": true,
+  "source_profile": "04.png,1000x700",
+  "trace_pixels": [
+    [
+      240,
+      494
+    ],
+    [
+      255,
+      490
+    ],
+    [
+      272,
+      481
+    ],
+    [
+      285,
+      464
+    ],
+    [
+      294,
+      444
+    ],
+    [
+      302,
+      420
+    ],
+    [
+      304,
+      410
+    ]
+  ],
+  "trace_uncertainty_px": 3,
+  "review_cuts": {
+    "lower": [
+      240,
+      494
+    ],
+    "upper": [
+      304,
+      410
+    ],
+    "reason": "Lower stops after existing thick hub-side sleeve; upper stops before wire-guide crossing and convergence. Neither is an invented physical fitting."
+  },
+  "G2": {
+    "approximate_camera": "Uncalibrated side-view, orthographic working projection only; oblique03 constrains same general bending and separated runs",
+    "frame": "root at source04 lower review cut[240,494]; +Y rearward,+Z up,+X left, no world pose",
+    "mm_per_pixel": 2.309090909090909,
+    "scale_basis": "17-inch nominal rim, approximate visible rim vertical diameter187px in04; not measured tyre diameter",
+    "scale_uncertainty_percent": 10,
+    "outer_diameter_mm": 5.0,
+    "outer_diameter_bounds_mm": [
+      3.5,
+      7.0
+    ],
+    "diameter_basis": "roughly2-3 source pixels at working scale; uncertain due antialiasing",
+    "depth_nominal_mm": 0,
+    "depth_uncertainty_mm": [
+      -15,
+      15
+    ],
+    "depth_basis": "Unknown transverse depth remains ±15mm; no use of grey-background artifacts from02/06",
+    "wall_gauge_mm": 0.5,
+    "wall_status": "Estimated annular section at review cuts only, not internal cable structure"
+  },
+  "excluded": [
+    "New observed A is NOT copied, mirrored, replaced or duplicated",
+    "HistoricalA/B not installed by this delivery",
+    "All hub fittings, wires, upper hidden routes, clips, guide and mechanical identity omitted",
+    "No steering flex, physical fit or G8 qualification"
+  ],
+  "gray_camera_plan": [
+    "Working side projection +X",
+    "Exterior quarter +X,-Y",
+    "Reverse quarter -X,+Y"
+  ],
+  "G1": "sufficient for short, distinct visible currentRDC run only; no historical label mapping or upper continuation",
+  "G3_review_criteria": [
+    "Single observed run, no arbitrary loop",
+    "Ends are explicit review cuts",
+    "Profile follows bounded traced silhouette",
+    "Historical two sheaths remain unmodified"
+  ],
+  "G4": "black polymer appearance hypothesis only",
+  "G5": "not qualified",
+  "G8": false,
+  "physical_count_increment": 0,
+  "coordination_revision": "p29-lower-front-sheath-observed-b-v1-coordination-v1",
+  "source_native": {
+    "path": "assets-src/moto-components/p29-lower-front-sheath-observed-b-v1/sheath-material.blend",
+    "sha256": "06c62d29bf425b03f4ed016f0fccbd43bf7c4b885f310841b61a6a8544dcc433",
+    "collection": "P29_LOWER_FRONT_SHEATH_OBSERVED_B",
+    "root": "P29_LOWER_SHEATH_REVIEW_ROOT"
+  },
+  "source_plan_original": {
+    "path": "creative/research/p29-lower-front-sheath-observed-b-v1/G0-G2.json",
+    "sha256": "e0ff37bb04ae89b464e53a6d7188dd10015d63419227981df02a4a070179bb3f"
+  },
+  "author_frozen_table": {
+    "path": "creative/reviews/p29-lower-front-sheath-observed-b-v1/delivery-frozen.json",
+    "sha256": "9bdbf6eba3c5821ad56fd0521f78fc8bdb87ca6f5a944cbdcdf2da9ebcabe229",
+    "files": 67,
+    "coordinator_reported_public_backup_commit": "4d0ba6f",
+    "git_independently_queried": false
+  },
+  "critical_limits": [
+    "Rôle mécanique NON ATTRIBUÉ, absence de continuité prouvée aux instruments/commandes",
+    "B historique non reliée par bijection à cette B observée ; labels A/B non fonctionnels",
+    "Courbe B tracée indépendamment depuis un autre run visible du moyeu, pas copie/miroir de la nouvelle A",
+    "Deux coupes de revue seulement : après manchon côté moyeu, avant guide/croisement ; aucun embout ni route masquée inventé",
+    "Profondeur nominale de travail zéro, incertitude ±15mm ; échelle, diamètre et épaisseur de coupe estimés",
+    "Aucun worldfit, aucune pose monde ni montage mécanique ; pas de nouveau wholebike pour B",
+    "Moteur stock sombre, vues driver/reverse proches de tranche ; pas de réception matière",
+    "Aucun nouveau physicalID, aucun paquetP29 fini, aucune qualification direction/flexion/G8"
+  ],
+  "root_publication_authorized": true,
+  "no_new_wholebike": true,
+  "root_authorization": "Coordinator GO after guard push f15192b; within user-authorized autonomous motorcycle completion"
+}
