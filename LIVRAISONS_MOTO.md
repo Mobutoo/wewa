@@ -37,6 +37,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P16** : [One reused LH passenger exterior unit — mounting unqualified — sources et images](creative/reviews/passenger-footrest-left-exterior-context-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P29** : [Observed lower front sheath A — mechanical function unassigned — sources et images](creative/reviews/p29-lower-front-sheath-observed-a-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P16** : [JK113008 passenger rubber — single bounded visible-envelope exemplar — sources et images](creative/reviews/passenger-footrest-rubber-jk113008-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P15** : [P15 existing four-parent local exterior review; pad parked — sources et images](creative/reviews/rear-brake-pedal-exterior-context-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
