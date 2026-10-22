@@ -300,3 +300,7 @@ L’enchaînement prioritaire termine ces preuves, traite un silentbloc document
 [Bilan des 30 paquets et vues manquantes](creative/workflow/FINITIONS_MOTO_2026-10-22.md) · [Bloc arrière en revue](creative/reviews/rear-cluster-review-v4/README.md).
 
 Huit révisions fabriquées/reprises ou achevées en candidat,19 contrôles indépendants de candidats gelés et23 livraisons techniques dans ce passage. Certaines révisions se recoupent avec les contrôles ; ce ne sont pas 27 pièces physiques distinctes terminées.170 identités candidates/études enregistrées ; aucun paquet intégralement clôturé. La file documentée est épuisée et les formes/variantes bloquantes sont indiquées pour chaque paquet. L’attache avant manquante est celle du carter de chaîne supérieur P26.
+
+## Aperçu global de travail
+
+[Moto avec ses matières — aperçu incomplet](creative/reviews/whole-exterior-material-preview-v2/README.md) · [52 sources natives, vues grises et interfaces ouvertes](creative/reviews/whole-exterior-coverage-v5/README.md).
