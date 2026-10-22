@@ -1,0 +1,72 @@
+{
+  "probes": [
+    {
+      "label": "Finite slot floor, not painted line",
+      "origin_source": [
+        0,
+        0,
+        0.02
+      ],
+      "direction_source": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit_range_m": [
+        0.01829,
+        0.01831
+      ]
+    },
+    {
+      "label": "Adjacent uncut head face",
+      "origin_source": [
+        0,
+        0.002,
+        0.02
+      ],
+      "direction_source": [
+        0,
+        0,
+        -1
+      ],
+      "first_hit_range_m": [
+        0.01749,
+        0.01751
+      ]
+    },
+    {
+      "label": "Slot mouth open along face",
+      "origin_source": [
+        -0.012,
+        0,
+        0.0023
+      ],
+      "direction_source": [
+        1,
+        0,
+        0
+      ],
+      "span_m": 0.024,
+      "clear": true
+    },
+    {
+      "label": "Solid bounded rear head boundary",
+      "origin_source": [
+        0,
+        0,
+        -0.01
+      ],
+      "direction_source": [
+        0,
+        0,
+        1
+      ],
+      "first_hit_range_m": [
+        0.00999,
+        0.01001
+      ]
+    }
+  ],
+  "output": "creative/reviews/carburettor-visible-slotted-head-v1/slot-export-check.json",
+  "scope": "Actual finite slot depth and open mouth with adjacent solid face/back; rear boundary estimated, no hidden shaft or valve certification"
+}
