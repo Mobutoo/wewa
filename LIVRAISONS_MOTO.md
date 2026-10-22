@@ -319,3 +319,5 @@ Huit révisions fabriquées/reprises ou achevées en candidat,19 contrôles ind�
 [Moto avec ses matières — trois vues actuelles](creative/reviews/whole-exterior-material-preview-v6/README.md) · [101 parents natifs, quatre vues grises et interfaces ouvertes](creative/reviews/whole-exterior-coverage-v14/README.md).
 
 [Suite de finalisation et trente paquets](creative/workflow/motorcycle-finalization-next-v1/PLAN.md) · [Progression actualisée](creative/workflow/motorcycle-remaining-execution-2026-10-22-v4.json). Les 101 parents de la composition ne sont pas un compte de pièces physiques reçues.
+
+Les [répétitions provisoires sont désormais autorisées](creative/workflow/motorcycle-provisional-repetition-authorization-v1/README.md) par réponse explicite, avec priorité complémentaire au moteur et à l’intérieur visible du cadre.
