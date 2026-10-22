@@ -35,6 +35,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P20** : [Existing kickstarter exterior — four original meshes in native rest pose — sources et images](creative/reviews/kickstarter-exterior-context-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P15** : [P15 existing four-parent local exterior review; pad parked — sources et images](creative/reviews/rear-brake-pedal-exterior-context-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P04** : [Existing RH cover and visible head — normalized coordinate derivative — sources et images](creative/reviews/right-side-cover-coordinate-conversion-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P25** : [DS181012 single fork-leg shouldered plug visible exterior study — sources et images](creative/reviews/front-completion-p25-fork-plug-front21-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
