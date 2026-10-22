@@ -2,6 +2,8 @@
 
 [Voir les pièces de la moto, leurs images et leurs contrôles](LIVRAISONS_MOTO.md).
 
+[Finitions : correction candidate du raccord de guidon, vues avant/après et sources](creative/reviews/handlebar-registration-v2/README.md) · [Analyse et plan des derniers éléments](creative/workflow/motorcycle-finishing-plan-2026-10-22.md). Les pontets sont repositionnés sans modifier leurs surfaces ; les autres incompatibilités restent ouvertes.
+
 [Extérieur actuel v5 : images, 177 groupes examinables et bilan des raccords restants](creative/reviews/motorcycle-exterior-v5/README.md) · [GLB autonome](assets-src/moto-components/motorcycle-exterior-v5/lod/motorcycle-lod.glb). Quinze groupes sont ajoutés et deux rétroviseurs corrigés. La moto reste inachevée et distincte du modèle provisoire chargé par le jeu. Le [bilan des 30 paquets](creative/workflow/motorcycle-completion-audit-2026-10-22/README.md) conserve l'audit historique v4.
 
 Jeu solo de moto à Kinshasa pour navigateur PC et mobile. Le premier secteur réutilise les routes et modèles de Gombe fournis dans le dossier de reprise.

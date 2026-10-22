@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "revision": "handlebar-registration-v2",
+  "date": "2026-10-22",
+  "package": "P28",
+  "status": "candidate_model_registration_not_OEM_fit",
+  "base": "motorcycle-exterior-v5",
+  "source_component": "assets-src/moto-components/handlebar-clamps/handlebar-clamps-v1.blend",
+  "source_glb": "assets-src/moto-components/handlebar-clamps/handlebar-clamps-inspection.glb",
+  "source_sha256": "416fd21980fe4425628bf7414607c8c37c12dea4f70965e0bac67c721d7e14c5",
+  "old_centres_x_m": [-0.045, 0.045],
+  "candidate_centres_x_m": [-0.0385, 0.0385],
+  "translation_per_side_m": 0.0065,
+  "dimension_status": "estimated_model_registration",
+  "method": "Translate each complete clamp, including its two bolts, along the straight handlebar only. Retain the tube, upper plate, eight meshes, UVs, normals, materials and all other poses. The 38.5 mm station lies near the existing plate apertures while retaining 0.5 mm nominal coverage beyond the existing 12 mm knurled bands inside each 26 mm saddle.",
+  "evidence": [
+    "creative/reviews/motorcycle-exterior-v5/handlebar-mount-alignment.json",
+    "assets-src/moto-components/handlebar-clamps/parameters.json",
+    "assets-src/moto-components/handlebar/parameters.json",
+    "assets-src/moto-components/steering-triples/upper/parameters.json"
+  ],
+  "checks_required": [
+    "Native evaluated triangle intersections before and after between each lower saddle/stud and the unchanged plate",
+    "Exported plate sampled across the full 10 mm stud diameter, not just its centreline",
+    "Binary GLB payload unchanged; exactly eight translations changed in both isolated and full LOD candidates",
+    "Native source translations agree with the full LOD candidate; original files retain their hashes",
+    "Real Babylon close views and whole-bike view, desktop and narrow viewport"
+  ],
+  "not_resolved": [
+    "Exact RDC component pairing, measured dimensions and true installed orientation",
+    "Vertical engagement, damper compression, washer/nut stack and preload",
+    "Control M6 bolt versus 4.3 mm bore",
+    "Side-stand 12 mm shoulder versus 9 mm eye",
+    "Six-hole sprocket versus four-hole carrier and final-drive chain",
+    "Cable endpoints, complete hose routes and steering slack"
+  ],
+  "art_accepted": false,
+  "whole_motorcycle_complete": false
+}

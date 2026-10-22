@@ -1,4 +1,10 @@
-# État actuel — extérieur v5, 177 groupes examinables
+# Reprise — correction candidate du raccord de guidon
+
+[Livraison et comparaison avant/après](creative/reviews/handlebar-registration-v2/README.md) · [Analyse et plan de finition](creative/workflow/motorcycle-finishing-plan-2026-10-22.md).
+
+Les deux pontets et leurs quatre boulons sont rapprochés de 6,5 mm du centre dans un candidat séparé. Le contrôle natif passe de 321 / 366 intersections avec la plaque à zéro ; 129 sondes par section de goujon sont dégagées dans l'export. Les 177 groupes, la géométrie et les textures sont conservés. Les surfaces sources ne sont pas modifiées ; seules huit translations changent dans les GLB. L'empilage inférieur, les autres couples de pièces incompatibles, la transmission finale et les câbles restent ouverts. Aucun montage complet, réception artistique ou essai Safari physique n'est déclaré.
+
+## Base préservée — extérieur v5, 177 groupes examinables
 
 **La moto reste inachevée.** [La livraison v5](creative/reviews/motorcycle-exterior-v5/README.md) ajoute quinze groupes extérieurs, corrige les deux rétroviseurs et rend chaque groupe accessible dans la visionneuse. Un nouveau corps de robinet apparenté est fabriqué, puis réuni au levier existant. Les sources historiques sont conservées.
 
