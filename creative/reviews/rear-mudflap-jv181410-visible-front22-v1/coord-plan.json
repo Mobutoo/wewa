@@ -1,0 +1,184 @@
+{
+  "package": "LEGACY15-REAR-FLAP",
+  "component_id": "MOTO-REAR-MUDFLAP-JV181410-VISIBLE-STUDY-001",
+  "revision": "rear-mudflap-jv181410-visible-front22-v1",
+  "axes": {
+    "X": "Across flap, negative/positive cheeks independently identified by model view, not installed LH/RH certification",
+    "Y": "Depth; outside viewed from negativeY",
+    "Z": "Toward upper concave attachment band"
+  },
+  "origin": "Nominal center of lower-edge projection at X0/Y0/Z0; not an installed contact datum",
+  "nominal_passage_centers": [
+    {
+      "id": "upper_center",
+      "center_m": [
+        0.0,
+        -1.401298464324817e-45,
+        0.23010000586509705
+      ],
+      "nominal_radius_m": 0.0033,
+      "parameter_center": [
+        0,
+        0.885
+      ],
+      "parameter_ellipse_radii": [
+        0.03504588669233112,
+        0.012691074338584697
+      ],
+      "local_derivative_axes": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "status": "estimated_unfitted_visible_passage"
+    },
+    {
+      "id": "left_cheek",
+      "center_m": [
+        -0.07108940929174423,
+        -0.041374627500772476,
+        0.2578885555267334
+      ],
+      "nominal_radius_m": 0.003,
+      "parameter_center": [
+        -0.9,
+        0.952
+      ],
+      "parameter_ellipse_radii": [
+        0.028979621980798537,
+        0.009230789398551495
+      ],
+      "local_derivative_axes": [
+        [
+          0.41383710503578186,
+          0.7934876680374146,
+          -0.4462243616580963
+        ],
+        [
+          0.04584982991218567,
+          -0.2303953915834427,
+          0.9720163941383362
+        ]
+      ],
+      "status": "estimated_unfitted_visible_passage"
+    },
+    {
+      "id": "right_cheek",
+      "center_m": [
+        0.07108940929174423,
+        -0.041374627500772476,
+        0.2578885555267334
+      ],
+      "nominal_radius_m": 0.003,
+      "parameter_center": [
+        0.9,
+        0.952
+      ],
+      "parameter_ellipse_radii": [
+        0.028979621980798537,
+        0.009230789398551495
+      ],
+      "local_derivative_axes": [
+        [
+          0.41383710503578186,
+          -0.7934876680374146,
+          0.4462243616580963
+        ],
+        [
+          -0.04584982991218567,
+          -0.2303953915834427,
+          0.9720163941383362
+        ]
+      ],
+      "status": "estimated_unfitted_visible_passage"
+    },
+    {
+      "id": "boss_left",
+      "center_m": [
+        -0.017905788496136665,
+        -0.008844396099448204,
+        0.14300000667572021
+      ],
+      "nominal_radius_m": 0.0027,
+      "parameter_center": [
+        -0.203,
+        0.55
+      ],
+      "parameter_ellipse_radii": [
+        0.03057373321446896,
+        0.010383606277023843
+      ],
+      "local_derivative_axes": [
+        [
+          0.995535671710968,
+          0.09438606351613998,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "status": "estimated_unfitted_visible_passage"
+    },
+    {
+      "id": "boss_right",
+      "center_m": [
+        0.017905788496136665,
+        -0.008844396099448204,
+        0.14300000667572021
+      ],
+      "nominal_radius_m": 0.0027,
+      "parameter_center": [
+        0.203,
+        0.55
+      ],
+      "parameter_ellipse_radii": [
+        0.03057373321446896,
+        0.010383606277023843
+      ],
+      "local_derivative_axes": [
+        [
+          0.995535671710968,
+          -0.09438606351613998,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "status": "estimated_unfitted_visible_passage"
+    }
+  ],
+  "working_extent_m": {
+    "max_width": 0.168,
+    "height_to_upper_corner": 0.278,
+    "upper_depth": 0.052,
+    "body_depth": 0.02
+  },
+  "uncertainty": "All nominal values estimated from relative two-pose shape, not metric camera calibration or OEM dimensions; ranges in parameters. Local holes approximate observed contours, not fit gauges.",
+  "assembly_transform": "Unknown; coordinator may propose separately without source deformation",
+  "no_contact_or_assignment_claim": [
+    "JV181408 shell overlap/attachment backside",
+    "Current RDC125 mould identity",
+    "Fastener/washer count or position",
+    "30201069 reflector-to-boss mating function",
+    "Tyre/plate dynamic clearance"
+  ],
+  "provenance": {
+    "user": "Autonomous motorcycle completion objective",
+    "coordinator": "One JV181410 observed rear exterior; LEGACY15-REAR-FLAP family routing"
+  },
+  "mounted_fit": false,
+  "art_accepted": false
+}
