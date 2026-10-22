@@ -1,0 +1,1 @@
+Initial unaccepted study: diagnostic sector removed part of near collar visible as complete in Russian photo. Replaced before freeze by complete collar rings with body-only unknown-sector omission. Historical external sources untouched; same one physical ID. Old reports/protocol/native bytes preserved here, never physical/artistic acceptance.
