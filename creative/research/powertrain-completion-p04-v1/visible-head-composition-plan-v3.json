@@ -1,0 +1,49 @@
+{
+  "package": "P04",
+  "source_inputs": [
+    {
+      "path": "assets-src/moto-components/side-cover-right-v1/side-cover-right-candidate-v1.blend",
+      "sha256": "33e7141bdf6664681c2992d2faa23ab67ac2d870fe537256a7e533f4a9750840"
+    },
+    {
+      "path": "assets-src/moto-components/side-cover-right-v1/side-cover-right-candidate-v1.glb",
+      "sha256": "e844b481dc9e4e4a7de8b3a57145a73315d0250c7b7dd63a4100d322acf77f8d"
+    },
+    {
+      "path": "assets-src/moto-components/side-cover-right-lower-head-v1/child-candidate.blend",
+      "sha256": "3221541fb4cb7d4a1b8e6b6f444c0c545f16f8fc74a40523f3ca0339fce13e29"
+    },
+    {
+      "path": "assets-src/moto-components/side-cover-right-lower-head-v1/child-candidate.glb",
+      "sha256": "b3b4650d9edaafad22f6d1eb8c7e9d8e3a9e988217f4b8164bf5330801fb1e28"
+    }
+  ],
+  "decision": "New composition revision only after head milestone freezes. Reuse exact skin mesh/UV/normals and preserved original analytic paint; reuse head with recorded rigid placement. No old source changes.",
+  "placement": {
+    "official00_landmark_px": [
+      455,
+      399
+    ],
+    "landmark_uncertainty_px": 2,
+    "scale_m_per_px": 0.0024383301707779884,
+    "nominal_local_xy_m": [
+      -0.05608159392789374,
+      -0.09509487666034154
+    ],
+    "position_range_each_axis_m": 0.01,
+    "normal_offset_m": 0.0001,
+    "normal_offset_range_m": [
+      0,
+      0.001
+    ]
+  },
+  "method": "Ray onto actual analytic skin at independently documented image landmark; align head to candidate surface normal. This measures the candidate geometry only, not OEM skin depth or physical contact.",
+  "preserved_open_skin": "One deliberate open reverse return loop; do not fabricate backing/retainers",
+  "remaining": [
+    "Exact drive/head detail and reverse retention",
+    "True shell/backing depth",
+    "Physical head contact and installed gaps"
+  ],
+  "package_complete": false,
+  "art_accepted": false
+}

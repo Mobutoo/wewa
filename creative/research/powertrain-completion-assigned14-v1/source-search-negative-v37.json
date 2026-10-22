@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "scope": "Additional source search only, no model from generic placeholders",
+  "findings": [
+    {
+      "url": "https://safexbikes.com/productdetail/motorcycle-parts/GENERAL-NUTS-AND-BOLTS/CT-100%2CBOXER-150-BM/30191036",
+      "sha256": "d1893efdf1406ceff0431a0ffbc0e2a0749e1a583256d936a661470feb7f696d",
+      "result": "Safex30191036 uses generic general nut and bolt.jpg placeholder, not shaped adjuster nut specimen"
+    },
+    {
+      "url": "https://safexbikes.com/productdetail/motorcycle-parts/MAIN%20STAND%20SPRING/XCD%2CPULSAR-220-UG-4/DH161145",
+      "sha256": "ba6deb50ce6f17a3488cc5519f5ab162ef8980251c87aeef8db3f1224108e96c",
+      "result": "SafexDH161145 uses generic centre stand.jpg placeholder, not spring cover"
+    },
+    {
+      "url": "https://mittalautospares.in/p/274085/rubber-pillion-step-jk113008",
+      "sha256": "35542fedfb9b4b0b2326f7f9374f2e86c29586ce5237fc7abefd2a2ddf6e8867",
+      "result": "MittalJK113008 offers exploded catalogue diagram, no physical underside/slot image"
+    }
+  ],
+  "private_evidence": "/workspace/wewa-assets/references/powertrain-continuation-search-v37",
+  "other_findings": [
+    "Public Crosland exact searches30191036/DS191035/39019811 returned empty lists; no geometry evidence",
+    "BajajMatriz public30191036 search returned no code-matched product image",
+    "Image search exact codes produced unrelated diesel crankshaft: rejected, no source identity"
+  ],
+  "remaining": "Physical reverse/side30191036, standalone spring covers/shaft/damper, actual JK113008 underside, packing/washer sections; no generic substitutions",
+  "art_accepted": false
+}
