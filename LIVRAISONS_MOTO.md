@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **175 composants candidats enregistrés**, après
+Le registre courant comporte **176 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P18** : [MOTO-CRANKCASE-LH-LOWER-PERIPHERAL-WALL-001 — bounded exterior candidate — sources et images](creative/reviews/crankcase-lh-lower-peripheral-wall-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P06** : [CL201023 HS1 observed capsule exterior with opaque tip — sources et images](creative/reviews/front-completion-p06-bulb-capsule-front15-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P26** : [MOTO-CHAINCASE-FRONT-EAR-ROOT-002 — bounded exterior candidate — sources et images](creative/reviews/chaincase-front-ear-root-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P13** : [seat-lateral-mount-lug-visible-v1 — sources, rendus et contrôles](creative/reviews/seat-lateral-mount-lug-visible-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
