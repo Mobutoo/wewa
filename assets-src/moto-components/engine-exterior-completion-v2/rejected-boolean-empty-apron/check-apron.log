@@ -1,0 +1,11 @@
+Blender 4.3.2 (hash 32f5fdce0a0a built 2024-12-17 01:31:14)
+Read blend: "/workspace/wewa/assets-src/moto-components/engine-exterior-completion-v2/lh-donor-lower-apron-v2.blend"
+Traceback (most recent call last):
+  File "/workspace/wewa/assets-src/moto-components/engine-exterior-completion-v2/check_apron.py", line 9, in <module>
+    hit=tree.ray_cast(Vector((p[0],p[1],.15)),Vector((0,0,-1)),.30)[0];probes.append(dict(name=name,xy_m=p,expected_hit=expected,actual_hit=hit is not None));assert (hit is not None)==expected,(name,hit)
+                                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('lower apron exterior', None)
+
+Error: script failed, file: 'assets-src/moto-components/engine-exterior-completion-v2/check_apron.py', exiting.
+
+Blender quit
