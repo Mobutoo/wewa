@@ -305,4 +305,4 @@ Huit révisions fabriquées/reprises ou achevées en candidat,19 contrôles ind�
 
 ## Aperçu global de travail
 
-[Moto avec ses matières — aperçu incomplet](creative/reviews/whole-exterior-material-preview-v2/README.md) · [52 sources natives, vues grises et interfaces ouvertes](creative/reviews/whole-exterior-coverage-v5/README.md).
+[Moto avec ses matières — aperçu incomplet](creative/reviews/whole-exterior-material-preview-v4/README.md) · [78 sources parentes natives, vues grises et interfaces ouvertes](creative/reviews/whole-exterior-coverage-v8/README.md).
