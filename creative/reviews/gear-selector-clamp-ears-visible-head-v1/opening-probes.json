@@ -1,0 +1,87 @@
+{
+  "probes": [
+    {
+      "label": "Open slit between ear extensions",
+      "origin_source": [
+        0,
+        0.04,
+        0.0115
+      ],
+      "direction_source": [
+        0,
+        -1,
+        0
+      ],
+      "clear": true,
+      "span_m": 0.028
+    },
+    {
+      "label": "Negative ear solid",
+      "origin_source": [
+        -0.0045,
+        0.04,
+        0.0115
+      ],
+      "direction_source": [
+        0,
+        -1,
+        0
+      ],
+      "first_hit_range_m": [
+        0.017,
+        0.019
+      ]
+    },
+    {
+      "label": "Positive ear solid",
+      "origin_source": [
+        0.0045,
+        0.04,
+        0.0115
+      ],
+      "direction_source": [
+        0,
+        -1,
+        0
+      ],
+      "first_hit_range_m": [
+        0.017,
+        0.019
+      ]
+    },
+    {
+      "label": "Visible head crown solid",
+      "origin_source": [
+        0.03,
+        0.018,
+        0.0115
+      ],
+      "direction_source": [
+        -1,
+        0,
+        0
+      ],
+      "first_hit_range_m": [
+        0.016,
+        0.018
+      ]
+    },
+    {
+      "label": "No invented hidden shank in slit",
+      "origin_source": [
+        0,
+        0.018,
+        0.0115
+      ],
+      "direction_source": [
+        0,
+        0,
+        -1
+      ],
+      "clear": true,
+      "span_m": 0.02
+    }
+  ],
+  "output": "creative/reviews/gear-selector-clamp-ears-visible-head-v1/actual-openings-check.json",
+  "scope": "Actual ear slit/visible solids and omitted hidden shank only; no complete hub, hidden ear bores, thread or fit certification."
+}
