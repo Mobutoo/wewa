@@ -1,0 +1,1 @@
+Original separate short lateral projection visible near left leg/crossbar on PF113224. Rounded enlarged terminal and plain smaller neck are bounded estimates from blurred silhouette. No certified spring-anchor/stop function, unseen hole/thread or installed frame/root/weld. All metric dimensions estimated, no artistic acceptance.

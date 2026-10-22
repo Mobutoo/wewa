@@ -1,0 +1,1 @@
+Original separate visible warm round slotted head from JV581204 below inlet. True finite-depth straight slot, softened outer rim. Function unassigned. Hidden shaft, thread, valve and surrounding casting seat excluded. Rear boundary, slot depth, finish and dimensions estimated; no actual installed engagement or artistic acceptance.

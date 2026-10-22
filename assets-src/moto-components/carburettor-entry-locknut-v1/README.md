@@ -1,0 +1,1 @@
+Original separate polygon locknut exterior from JV581204 below entry barrel. Working softened six-flat annulus and true plain bore. Full flat count, internal threads, seats and metric dimensions unqualified. Adjacent barrel/grip ring/elbow excluded, frozen files unchanged. No installed fit or artistic acceptance.

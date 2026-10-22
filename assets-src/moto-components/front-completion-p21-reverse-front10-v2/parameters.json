@@ -1,0 +1,104 @@
+{
+  "package": "P21",
+  "future_revision": "front-completion-p21-carrier-v4",
+  "status": "G0-G2 preparation only; no v4 geometry yet",
+  "source_refs": "report.json physical rear0/front1 DS151068 supplier views, plus original Matriz front photo",
+  "all_metric_values_estimated": true,
+  "working_and_bounds": {
+    "outer_radius_m": [
+      0.065,
+      0.055,
+      0.08
+    ],
+    "front_collar_height_m": [
+      0.038,
+      0.028,
+      0.05
+    ],
+    "back_drive_pad_depth_m": [
+      0.02,
+      0.012,
+      0.028
+    ],
+    "back_collar_projection_m": [
+      0.015,
+      0.01,
+      0.023
+    ],
+    "rear_plate_review_z_m": [
+      -0.003,
+      -0.005,
+      -0.002
+    ],
+    "mount_circle_radius_m": [
+      0.047,
+      0.038,
+      0.058
+    ],
+    "mouth_radius_m": [
+      0.0035,
+      0.0025,
+      0.0045
+    ],
+    "front_land_capsule_halfwidth_m": [
+      0.0085,
+      0.006,
+      0.012
+    ],
+    "front_cast_blend_halfwidth_m": [
+      0.001,
+      0.0006,
+      0.0018
+    ],
+    "rear_pad_segment_start_radius_m": [
+      0.036,
+      0.03,
+      0.044
+    ],
+    "rear_pad_segment_end_radius_m": [
+      0.054,
+      0.045,
+      0.064
+    ],
+    "rear_pad_halfwidth_m": [
+      0.0055,
+      0.004,
+      0.008
+    ],
+    "rear_pad_cast_blend_halfwidth_m": [
+      0.0015,
+      0.001,
+      0.0025
+    ],
+    "rear_rim_bead_depth_m": [
+      0.0025,
+      0.001,
+      0.004
+    ]
+  },
+  "geometry_method": [
+    "Rebuild continuous front/back radial height-field body and stepped open collar; preserve frozen v1/v2/v3 unchanged",
+    "Widen front TRUE flat capsule lands: source v1 8mm blending narrowed actual plateau too much. Use bounded1mm half-blend, flat7.5mm plateau inside8.5mm capsule; compare new physical front view",
+    "Add four original elongated capsule drive pads on reverse at45deg between mounting axes, smoothly integrated into sampled cast body; avoid glued generic boxes",
+    "Model observed back open collar and outer annular rim; rear base depth is an estimated exterior review surface, no hidden OEM wall or bearing specification",
+    "Four front mouths continue to four visible rear holes. Upper thread relief remains bounded; no hidden full-depth thread standard",
+    "Three front pockets only unless fourth is genuinely resolved; rear circular witness marks and lettering remain unresolved identity, no invented caps/fasteners"
+  ],
+  "material_rework_method": [
+    "Discard v3 polygon-center roughness assignment in NEW material revision only",
+    "One clean metal material with original scalar roughness atlas (not photographic grain): cast.42 versus machined.22 estimates. Map analytic capsule boundaries within true planar7.5mm lands, inset/smooth mask about0.3mm to avoid stair steps",
+    "Original planarXY roughness UV at approximately130mm span; UV degeneracy on vertical faces is permitted for constant scalar sampling only, never normal-map tangents",
+    "Tag pocket cut faces by construction material identity before cleanup; remap those and rear cast faces to constant cast atlas texel rather than inferring faces by polygon center",
+    "Upper collar and mouth surfaces machined estimate, reverse pad faces cast estimate. No cast grain, alloy or reflectance measurement invented",
+    "Export source PNG mask packed into blend/GLB; independently inspect actual packed roughness channels, UV sampling, source/GLB POSITION+NORMAL parity and intentional UV change",
+    "Gray full/reflection and macro before material preview; native96 full/neutral/detail; freeze sources and complete source/hash/PNG reports"
+  ],
+  "interfaces": "No current RDC, rubber, bearing, rim or brake fit. Actual rear exterior ownership now resolved, dimensions and mounted section remain bounded hypotheses",
+  "art_accepted": false,
+  "scope": "Independent photographed rear exterior, not a remake/replacement of front gray v3",
+  "frame": "Z up out of photographed rear; not installed or aligned to existing front frame",
+  "front_review_closure": "Artificial plain finite annular sheet atZ=-3mm; not a reconstructed front face, OEM wall or certified mounted section",
+  "bore": "Open central diameter37mm estimate; plain inner review continuation, not a bearing seat specification",
+  "witness_marks": "Rear round witnesses/lettering not interpreted as screws, caps or certified part stamps; excluded",
+  "finish": "Clean uniform silver hypothesis only; no cast grain or alloy measurement"
+}

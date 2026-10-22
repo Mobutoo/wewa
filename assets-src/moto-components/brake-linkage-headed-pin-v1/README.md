@@ -1,0 +1,1 @@
+Original separate30191038 pin exterior from two physical photographs, one with labelled packet. Plain constant shank, shallow rounded head, transverse real drilled hole. No thread. Not the distinct JB161002. Dimensions/crown/installed stack and cotter fit estimated/unqualified. Existing clevis excludes pin, no duplicate. No artistic acceptance or package completion.
