@@ -26,6 +26,8 @@ jobs:
           python tools/check_motorcycle_exterior_v5.py
           python tools/test_handlebar_registration_v2.py
           python tools/check_handlebar_registration_delivery_v2.py
+          python tools/check_under_tank_delivery_v1.py
+          node tools/check_under_tank_completion_v1.mjs
       - run: pip install playwright
       - run: python -m playwright install --with-deps chromium
       - run: npm run test:browser

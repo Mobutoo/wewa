@@ -1,0 +1,37 @@
+{
+  "revision": "under-tank-completion-v1",
+  "input": "assets-src/moto-components/handlebar-registration-v2/motorcycle-registration-candidate.glb",
+  "input_sha256": "6fbad5c3881588b53e51dd762e6779b11b32e796cd87a85db99d478d0d02e1bb",
+  "method": "Sequential procedural mesh construction in Blender from manufacturer silhouettes; preserve existing model except explicitly replaced incomplete cast envelopes. No generated image used as evidence.",
+  "coordinates": "glTF metres: X left, Y up, Z forwards; Blender conversion (x,-z,y).",
+  "estimated_parts": [
+    "closed central crankcase between original side covers",
+    "continuous left output cover",
+    "lower airbox/battery enclosure, outer envelope only",
+    "front engine mounting plates and fasteners",
+    "upper engine stay",
+    "ignition coil body and HT lead to existing plug cap",
+    "fuel hose from existing tap to carburettor",
+    "under-tank wiring loom and visible clips",
+    "throttle cable connecting existing grip guide to carb entry"
+  ],
+  "dimension_policy": "All new dimensions estimated from existing mating envelopes and manufacturer views. Typical uncertainty 10-20 mm for shells and 20-40 mm for hidden routes; fastener diameters illustrative. No exact engine internals claimed.",
+  "replace_groups": [
+    "engine-upper-rear-cast-shell-v3",
+    "conditional-lh",
+    "conditional-rh",
+    "engine-output-cover-left"
+  ],
+  "keep": [
+    "tank, frame, wheels, original main engine side covers, finned cylinder/head, intake assembly, controls, previous clamp correction"
+  ],
+  "review": [
+    "same-camera before/after whole three-quarter",
+    "LH/RH profiles",
+    "under-tank close views both sides",
+    "isolated additions",
+    "actual Babylon glTF load, texture readiness and validation"
+  ],
+  "art_accepted": false,
+  "physical_iphone_tested": false
+}

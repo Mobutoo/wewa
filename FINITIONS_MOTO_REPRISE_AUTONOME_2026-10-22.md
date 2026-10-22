@@ -1,4 +1,8 @@
-# Reprise — correction candidate du raccord de guidon
+# Reprise — complément visuel sous le réservoir
+
+**Dernière demande exécutée :** l’utilisateur a signalé le vide sous le réservoir et demandé des visuels constructeur puis la reconstruction des pièces manquantes, y compris par génération. Les [photos Bajaj RDC et huit angles officiels](creative/research/under-tank-completion-v1/sources.json) servent à un [nouveau candidat 3D avec comparaisons](creative/reviews/under-tank-completion-v1/README.md). Dix groupes remplacent ou complètent les carters, l’enveloppe inférieure, les supports et les raccords. Cette autorisation permet les estimations visuelles documentées pour cette zone ; elle ne transforme pas les dimensions inconnues en faits et ne réceptionne pas la moto entière.
+
+## Historique — correction du guidon et recherche de variantes
 
 **Suite de l'analyse :** la CI de cette correction est réussie. La [vérification complémentaire des variantes](creative/research/motorcycle-finishing-blockers-2026-10-22/README.md) distingue les branches de transmission et les données encore nécessaires. La finition complète reste bloquée sur ces références et le choix de fidélité ; aucune clôture de la moto n'est annoncée.
 
