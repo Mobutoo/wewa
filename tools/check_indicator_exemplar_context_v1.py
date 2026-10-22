@@ -1,0 +1,8 @@
+"""Read actual saved native pair references/identity transforms, never artistic reception."""
+import bpy,json,hashlib
+from pathlib import Path
+from mathutils import Matrix
+R=Path(__file__).resolve().parents[1];K='indicator-exemplar-context-v1';O=R/'creative/reviews'/K;src=R/'assets-src/moto-components'/K/(K+'-material.blend');sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();assert Path(bpy.data.filepath).resolve()==src.resolve();meta=json.loads((O/'parents.json').read_text());expected=json.loads((O/'final-render-report.json').read_text())['source_sha256'];assert sha(src)==expected;rows=[]
+for r in meta['parents']:
+ p=R/r['source'];assert sha(p)==r['source_sha256'];ob=bpy.data.objects['REVIEW_PARENT ['+r['key']+']'];assert ob.instance_type=='COLLECTION';col=ob.instance_collection;assert col.library and Path(bpy.path.abspath(col.library.filepath)).resolve()==p.resolve();delta=max(abs(ob.matrix_world[i][j]-Matrix.Identity(4)[i][j])for i in range(4)for j in range(4));assert delta<1e-9;rows.append(dict(key=r['key'],source=r['source'],source_sha256=sha(p),source_collection=col.name,identity_matrix_error=delta,source_unchanged=True))
+assert len(rows)==2 and len([o for o in bpy.context.scene.objects if o.instance_type=='COLLECTION'])==2;assert bpy.context.scene.view_layers[0].material_override is None;(O/'source-parent-reopen-check.json').write_text(json.dumps(dict(source_sha256=sha(src),source_reopened=True,parents=rows,original_materials_retained=True,one_pair_only=True,physical_count_increment=0,scope='Exact isolated original lens/hood pair, no repeated physical units or mounted/optical/artist acceptance',protocol_sha256=sha(Path(__file__))),indent=2)+'\n');print('ONE_PAIR_NATIVE_PARENTS_VERIFIED')
