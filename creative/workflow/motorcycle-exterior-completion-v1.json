@@ -18,7 +18,7 @@
       "title": "Cache latéral gauche",
       "lot": 18,
       "depends_on": [],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Contour, ajours et attaches visibles ; raccord au réservoir, à la selle et au cadre",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
@@ -28,7 +28,7 @@
         "Mounting coordinates and visible fastener diameter/depth",
         "Perspective alignment and precise red/black transition"
       ],
-      "next_action": "Refine exterior curvature/comparison, then document and fabricate visible lower-front fastener and mounted interfaces; no P01 completion.",
+      "next_action": "Revers, chants et implantation montée du cache.",
       "current_child": "MOTO-SIDE-COVER-LEFT-SKIN-001",
       "research": "creative/research/side-cover-left-p01/G0-G2-plan-v1.json",
       "current_stage": "corrected_scale_skin_and_visible_head_candidate_saved",
@@ -66,7 +66,8 @@
           "package_complete": false
         }
       ],
-      "continuation_owner": "powertrain-worker"
+      "continuation_owner": "powertrain-worker",
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P02",
@@ -74,7 +75,7 @@
       "title": "Porte-bagages et poignée passager",
       "lot": 18,
       "depends_on": [],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Tubes, plateforme et attaches ; place disponible au-dessus du garde-boue et derrière la selle",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
@@ -82,7 +83,7 @@
       "blockers": [
         "Crosland PF231405 rod-grid versus WAY-C plate-deck variants; current RDC deck choice unresolved"
       ],
-      "next_action": "Refine current-variant shape and highlight comparison, then separate deck, mounting tabs and flattened terminations; check installed interfaces.",
+      "next_action": "Identifier le plateau monté : grille PF231405 ou plaque WAY-C ; vues de dessus et ancrages.",
       "current_child": "MOTO-RACK-OUTER-RAIL-001",
       "research": "creative/research/rack-p02/G0-G2-plan-v1.json",
       "current_stage": "first_outer_rail_study_saved_rework_required",
@@ -113,7 +114,8 @@
         }
       ],
       "continuation_owner": "body-coordinator",
-      "source_variant_update": "creative/research/rear-rack-variant-reconciliation-v1/G1-contradiction.json"
+      "source_variant_update": "creative/research/rear-rack-variant-reconciliation-v1/G1-contradiction.json",
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P03",
@@ -121,13 +123,13 @@
       "title": "Garde-boue avant",
       "lot": 15,
       "depends_on": [],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Courbure, épaisseur, bavette et supports documentés ; enveloppe roue/fourche",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "Current-market shell side forming, flap identity, supports/fasteners and mounted wheel/fork clearances remain unresolved",
+      "next_action": "Vues latérales/dessous et implantation de la variante montée, mesures de dégagement roue.",
       "current_stage": "worker_candidate_saved_with_coordination_evidence",
       "candidate_review": "creative/reviews/front-completion-p03-wire-guide-front12-v2-coordination-v1/README.md",
       "package_complete": false,
@@ -165,7 +167,9 @@
           "state": "candidate_rework",
           "review": "creative/reviews/front-completion-p03-wire-guide-front12-v2-coordination-v1/README.md"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P04",
@@ -175,13 +179,13 @@
       "depends_on": [
         "P01"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Documenter les asymétries ; ne pas réfléchir automatiquement le cache gauche",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Revers et profils de la référence exacte, épaisseur et montage.",
       "current_stage": "worker_candidate_saved_with_coordination_evidence",
       "candidate_review": "creative/reviews/side-cover-right-v1-coordination-v1/README.md",
       "package_complete": false,
@@ -213,7 +217,9 @@
           "package_complete": false
         }
       ],
-      "continuation_owner": "powertrain-worker"
+      "continuation_owner": "powertrain-worker",
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P05",
@@ -223,13 +229,13 @@
       "depends_on": [
         "P02"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Interfaces avec cadre, garde-boue et porte-bagages",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "Correct formed upper sheet, non-planar tapered carrier rod and folded bar from newly attributed front/rear PF231401 poses; keep historical planar sources as rework diagnostics.",
+      "next_action": "Photo physique du collier ; gaine face/dos/profil, dimensions et empilage comprimé. La photo Safex est explicitement générique.",
       "continuation_children": [
         {
           "component_id": "MOTO-TAIL-LAMP-UPPER-BRACKET-001",
@@ -255,7 +261,9 @@
       "source_reconciliation": "creative/research/rear-cluster-reference-reconciliation-v2/contradictions-v1.json",
       "assembly_reviews": [
         "creative/reviews/rear-cluster-review-v4/README.md"
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P06",
@@ -263,13 +271,13 @@
       "title": "Optique principale du phare",
       "lot": 12,
       "depends_on": [],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Décomposer lentille, réflecteur et détails observables ; profil et relief documentés avant fabrication",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Lentille démontée recto/verso/profil et réflecteur nu ; bague de douille séparée avec profil, contacts et identification des pièces ; connecteur blanc et cosse vus face/dos/profil.",
       "continuation_work_inventory": [
         {
           "path": "creative/reviews/front-completion-p06-v1/delivery.json",
@@ -295,7 +303,9 @@
           "state": "candidate_rework",
           "review": "creative/reviews/front-completion-p06-holder-lead-skins-front12-v2-coordination-v1/README.md"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P07",
@@ -305,13 +315,13 @@
       "depends_on": [
         "P05"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Décomposer corps, lentille et fixations ; forme éteinte puis éclairage de revue",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Lentille recto/verso/profil, source lumineuse et fixation séparées ; pose montée.",
       "current_stage": "documented_or_isolated_candidate_work_not_complete",
       "package_complete": false,
       "continuation_owner": "body-coordinator",
@@ -332,7 +342,9 @@
       "assembly_reviews": [
         "creative/reviews/rear-cluster-review-v1/README.md",
         "creative/reviews/rear-cluster-review-v4/README.md"
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P08",
@@ -343,13 +355,13 @@
         "P02",
         "P05"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Inclinaison, attaches et dégagement roue/garde-boue ; emplacement éclairage et catadioptre à documenter",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "Correct formed upper sheet, non-planar tapered carrier rod and folded bar from newly attributed front/rear PF231401 poses; keep historical planar sources as rework diagnostics.",
+      "next_action": "Macros opposées des jonctions ; filetage/siège et vraie fixation plaque/support. Le montage v4 garde des jeux d’inspection.",
       "current_stage": "documented_or_isolated_candidate_work_not_complete",
       "package_complete": false,
       "continuation_owner": "body-coordinator",
@@ -389,7 +401,9 @@
         "creative/reviews/rear-cluster-review-v1/README.md",
         "creative/reviews/rear-cluster-review-v4/README.md"
       ],
-      "source_reconciliation": "creative/research/rear-cluster-reference-reconciliation-v2/contradictions-v1.json"
+      "source_reconciliation": "creative/research/rear-cluster-reference-reconciliation-v2/contradictions-v1.json",
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P09",
@@ -397,13 +411,13 @@
       "title": "Clignotant avant : raccords et fixations",
       "lot": 12,
       "depends_on": [],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Réutiliser coque, lentille et deux tiges déjà produites ; raccords visibles et revue gauche/droite",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Profil/face de montage et racines de tige/fils, vues opposées de la référence exacte.",
       "continuation_work_inventory": [
         {
           "path": "creative/reviews/front-completion-p09-leads-material-v2/delivery.json",
@@ -453,7 +467,9 @@
           "state": "candidate_rework",
           "review": "creative/reviews/front-completion-p09-nut-material-v3-coordination-v1/README.md"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P10",
@@ -464,13 +480,13 @@
         "P02",
         "P05"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Un exemplaire documenté et reçu avant répétition ; asymétries et pose de chaque côté contrôlées",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Vues opposées, faces de montage, détail des reliefs optiques et racines de fils. Ne pas dupliquer un clignotant complet non reçu.",
       "current_stage": "documented_or_isolated_candidate_work_not_complete",
       "package_complete": false,
       "continuation_owner": "body-coordinator",
@@ -493,7 +509,9 @@
           "review": "creative/reviews/rear-indicator-right-stalk-v1/README.md",
           "state": "candidate_delivered_not_accepted"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P11",
@@ -503,13 +521,13 @@
       "depends_on": [
         "P08"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Documenter format et implantation RDC ; inscription de jeu fictive signalée ; éclairage/catadioptre seulement selon référence retenue",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Référence montée des accessoires et empilage réel. Les axes sont alignés dans la revue, mais le jeu3mm reste un artifice de présentation.",
       "current_stage": "original_plate_design_G0_G4_reviewed_installed_mount_pending",
       "package_complete": false,
       "continuation_owner": "body-coordinator",
@@ -531,7 +549,9 @@
       "assembly_reviews": [
         "creative/reviews/rear-cluster-review-v1/README.md",
         "creative/reviews/rear-cluster-review-v4/README.md"
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P12",
@@ -542,13 +562,13 @@
         "P01",
         "P04"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Bouchon, robinet et durite en composants distincts ; conserver réservoir WEWA existant",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Robinet face/dos/profil et code unique ; la nouvelle page mélange PF171800/PF171802. Trajet et fixations de durite à établir.",
       "current_stage": "documented_or_isolated_candidate_work_not_complete",
       "package_complete": false,
       "continuation_owner": "body-coordinator",
@@ -565,7 +585,9 @@
           "review": "creative/reviews/fuel-valve-visible-lever-v1/README.md",
           "state": "candidate_delivered_not_accepted"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P13",
@@ -575,13 +597,13 @@
       "depends_on": [
         "P02"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Socles, nervures, épine avant, montants, projection arrière, retours/agrafes et petits reliefs séparés ; compléter le tampon sans inventer revers/tenon ; pose après revue",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Dessous/profil PF191000 et identité RDC ; les nouvelles photos ne montrent que la couverture lisse. Ne pas recopier le fond JV191001 apparenté.",
       "current_stage": "documented_or_isolated_candidate_work_not_complete",
       "package_complete": false,
       "continuation_owner": "body-coordinator",
@@ -592,7 +614,9 @@
           "review": "creative/reviews/seat-damper-pedestal-v2/README.md",
           "state": "candidate_delivered_not_accepted"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P14",
@@ -600,13 +624,13 @@
       "title": "Sélecteur de vitesses",
       "lot": 17,
       "depends_on": [],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Levier, embout, fixation et liaison au carter ; débattement utile",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Macros arrière/profil du moyeu et de la vis de serrage.",
       "continuation_work_inventory": [
         {
           "path": "creative/reviews/gear-selector-arm-v1/delivery.json",
@@ -644,7 +668,9 @@
           "state": "candidate_rework",
           "review": "creative/reviews/gear-selector-arm-v1-coordination-v1/README.md"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P15",
@@ -652,13 +678,13 @@
       "title": "Pédale et tringlerie de frein arrière",
       "lot": 17,
       "depends_on": [],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Pédale, pivot et liaison frein ; interfaces en revue, sans fonctionnement revendiqué avant contrôle",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Macros de la tige et de l’écrou ; pièces de fixation identifiées physiquement.",
       "continuation_work_inventory": [
         {
           "path": "creative/reviews/brake-actuation-rod-v1/delivery.json",
@@ -768,7 +794,9 @@
           "state": "candidate_rework",
           "review": "creative/reviews/brake-rod-barrel-pin-v1-coordination-v1/README.md"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P16",
@@ -779,13 +807,13 @@
         "P14",
         "P15"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Compléter ceux de devant et fabriquer ceux du passager ; supports et exemplaire avant duplication",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Dessous JK113008, pièces de charnière isolées et empilage monté.",
       "continuation_work_inventory": [
         {
           "path": "creative/reviews/footrest-rubber-v1/delivery.json",
@@ -817,7 +845,9 @@
           "state": "candidate_rework",
           "review": "creative/reviews/passenger-footrest-stay-right-v1-coordination-v1/README.md"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P17",
@@ -825,13 +855,13 @@
       "title": "Béquilles et ressorts visibles",
       "lot": 17,
       "depends_on": [],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Latérale/centrale selon variante documentée ; pivots, attaches, contact sol et positions repliées",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Vues isolées DH161145/DG161124 et empilages de pivot/ressorts ; corriger le conflit épaule/œil.",
       "continuation_work_inventory": [
         {
           "path": "creative/reviews/centre-stand-lateral-stud-v1/delivery.json",
@@ -971,7 +1001,9 @@
           "state": "candidate_rework",
           "review": "creative/reviews/side-stand-pivot-nyloc-nut-v1-coordination-v1/README.md"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P18",
@@ -979,13 +1011,13 @@
       "title": "Moteur : volumes centraux extérieurs manquants",
       "lot": 17,
       "depends_on": [],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Inventorier contre carters/cylindre/culasse existants ; décomposer chaque volume et raccord visible",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Obliques avant/dessous sans occultation ; dimensions et raccords aux sources moteur existantes.",
       "package_complete": false,
       "continuation_owner": "powertrain-worker",
       "continuation_work_inventory": [
@@ -1017,7 +1049,9 @@
           "state": "candidate_rework",
           "review": "creative/reviews/crankcase-upper-land-lh-v1-coordination-v1/README.md"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P19",
@@ -1027,13 +1061,13 @@
       "depends_on": [
         "P18"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Corps, cuve, bouches, capot, levier et raccords séparés ; ne pas refaire admission existante",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Revers de commande, macros des raccords et cheminement réel des durites.",
       "package_complete": false,
       "continuation_owner": "powertrain-worker",
       "continuation_work_inventory": [
@@ -1173,7 +1207,9 @@
           "state": "candidate_rework",
           "review": "creative/reviews/carburettor-visible-slotted-head-v1-coordination-v1/README.md"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P20",
@@ -1183,13 +1219,13 @@
       "depends_on": [
         "P19"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Pont/vis/écrou collier, air/HT et attaches échappement ; conserver sources actuelles",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Photo du manchon et de ses axes ; revers et empilage du support d’échappement.",
       "package_complete": false,
       "continuation_owner": "powertrain-worker",
       "continuation_work_inventory": [
@@ -1200,7 +1236,9 @@
           "package_complete": false
         }
       ],
-      "current_stage": "documented_or_isolated_candidate_work_not_complete"
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P21",
@@ -1208,13 +1246,13 @@
       "title": "Moyeu arrière et porte-couronne",
       "lot": 16,
       "depends_on": [],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Moyeu, porte-couronne et entraînement distincts ; compatibilité jante/frein",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Vues de la poche masquée et sections/mesures de la référence ; contact caoutchouc/porte-couronne installé. Réception distincte avant répétition.",
       "package_complete": false,
       "continuation_owner": "front-worker",
       "continuation_work_inventory": [
@@ -1318,7 +1356,9 @@
           "state": "candidate_rework",
           "review": "creative/reviews/front-completion-p21-single-cush-front12-v2-coordination-v1/README.md"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P22",
@@ -1329,13 +1369,13 @@
         "P18",
         "P21"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Alignement transmission ; motif reçu avant répétition ; respect des volumes du carter de chaîne",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Pignon exact déposé face/dos/profil et chaîne désassemblée ; entraxes/alignement montés, réception de l’unité avant répétition.",
       "package_complete": false,
       "continuation_owner": "front-worker",
       "continuation_work_inventory": [
@@ -1364,7 +1404,9 @@
           "package_complete": false
         }
       ],
-      "current_stage": "documented_or_isolated_candidate_work_not_complete"
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P23",
@@ -1375,13 +1417,13 @@
         "P15",
         "P21"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Empilements, réaction de frein et tension ; interfaces bras oscillant/roue",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Collier en coupe/profil axial, tiges et leurs liaisons réelles ; vis vue sur l’axe du perçage et côté opposé. Matriz DH151029 exact : zéro vue nouvelle.",
       "package_complete": false,
       "continuation_owner": "front-worker",
       "continuation_work_inventory": [
@@ -1485,7 +1527,9 @@
           "state": "candidate_rework",
           "review": "creative/reviews/front-completion-p23-collar-outer-front12-v1-coordination-v1/README.md"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P24",
@@ -1495,13 +1539,13 @@
       "depends_on": [
         "P03"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Empilements fourche/moyeu/flasque, valve, prise compteur et commande ; contrôler variantes existantes",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Pièces UG exactes déposées/profilées et empilage monté, références de valve et entraînement compteur, compatibilité frein établie.",
       "continuation_work_inventory": [
         {
           "path": "creative/reviews/front-completion-p24-axle-material-v1/delivery.json",
@@ -1545,7 +1589,9 @@
           "state": "candidate_rework",
           "review": "creative/reviews/front-completion-p24-related-collar-front12-v1-coordination-v1/README.md"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P25",
@@ -1555,13 +1601,13 @@
       "depends_on": [
         "P24"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Capsules, quincaillerie et jonctions ; cohérence des tubes/soufflets existants",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Dessous/profil du capuchon et stations de direction ; photo physique PF121024 ; sections et variante de soufflet/coulisseau compatibles.",
       "continuation_work_inventory": [
         {
           "path": "creative/reviews/front-completion-p25-cap-material-v1/delivery.json",
@@ -1617,7 +1663,9 @@
           "state": "candidate_rework",
           "review": "creative/reviews/front-completion-p25-steering-cap-front12-v2-coordination-v1/README.md"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P26",
@@ -1628,13 +1676,13 @@
         "P18",
         "P23"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Cordons, crochets, attaches, écrou de pivot et extrémités patin ; attache avant du carter supérieur à vérifier explicitement",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Macros opposées de l’oreille nue et de sa racine sur la coque identifiée ; puis bouches du guide, pivot et soudures.",
       "package_complete": false,
       "continuation_owner": "powertrain-worker",
       "continuation_work_inventory": [
@@ -1645,7 +1693,9 @@
           "package_complete": false
         }
       ],
-      "current_stage": "documented_or_isolated_candidate_work_not_complete"
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P27",
@@ -1656,13 +1706,13 @@
         "P21",
         "P23"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Réutiliser ensemble SNS et fermetures existants ; ancrages et débattement sans intersection",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Vues montées gauche/droite des vis/rondelles sur cadre et bras oscillant.",
       "package_complete": false,
       "continuation_owner": "powertrain-worker",
       "continuation_work_inventory": [
@@ -1673,7 +1723,9 @@
           "package_complete": false
         }
       ],
-      "current_stage": "documented_or_isolated_candidate_work_not_complete"
+      "current_stage": "documented_or_isolated_candidate_work_not_complete",
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P28",
@@ -1681,13 +1733,13 @@
       "title": "Fixations guidon et leviers",
       "lot": 1,
       "depends_on": [],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Amortisseurs/rondelles inférieurs et rondelles/écrous de leviers des lots6/7 ; pas de nouvelle commande complète",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Dessous/profil axial des pièces exactes et empilage comprimé mesuré.",
       "continuation_work_inventory": [
         {
           "path": "creative/reviews/front-completion-p28-lower-washer-v1/delivery.json",
@@ -1713,7 +1765,9 @@
           "state": "candidate_rework",
           "review": "creative/reviews/front-completion-p28-lower-damper-front14-v1-coordination-v1/README.md"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P29",
@@ -1725,13 +1779,13 @@
         "P24",
         "P28"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Continuités accélérateur/embrayage/frein, départs commodos/contacteur, attaches et rayon au braquage ; garder départs déjà faits",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Parcours montés continus de bout en bout, clips identifiés et vues en butées de direction ; identification électrique indépendante.",
       "continuation_work_inventory": [
         {
           "path": "creative/reviews/front-completion-p29-bow-material-v1/delivery.json",
@@ -1763,7 +1817,9 @@
           "state": "candidate_rework",
           "review": "creative/reviews/front-completion-p29-bow-material-v1-coordination-v1/README.md"
         }
-      ]
+      ],
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     },
     {
       "id": "P30",
@@ -1776,13 +1832,13 @@
         "P25",
         "P29"
       ],
-      "state": "active",
+      "state": "source_gated",
       "detailed_work_started": true,
       "scope": "Retours/attaches visière, compteurs/support existants et dégagement des commandes/rétroviseurs",
       "units_policy": "Split into observable child components with individual records before G3; this package is not one completed part.",
       "owner": null,
       "blockers": [],
-      "next_action": "G0: reconcile existing candidates and references; identify observable child units and interfaces.",
+      "next_action": "Visor démonté face/dos/profil, fixations macro et centres mesurés, contrôle de dégagement avec instruments/commandes.",
       "continuation_work_inventory": [
         {
           "path": "creative/reviews/front-completion-p30-head-v1/delivery.json",
@@ -1799,7 +1855,9 @@
       ],
       "current_stage": "documented_or_isolated_candidate_work_not_complete",
       "package_complete": false,
-      "continuation_owner": "front-worker"
+      "continuation_owner": "front-worker",
+      "currently_running": false,
+      "finishing_snapshot": "creative/workflow/motorcycle-remaining-execution-2026-10-22-v2.json"
     }
   ],
   "assembly_checkpoints": [

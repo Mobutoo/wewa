@@ -267,3 +267,9 @@ L’enchaînement prioritaire termine ces preuves, traite un silentbloc document
 - **P05/P07/P08/P11 — revue arrière v3** : [diagnostic des contacts](creative/reviews/rear-cluster-review-v3/README.md), six parents corrigés conservés sans déformation ; pose et pièces de liaison encore ouvertes.
 
 - **P05/P07/P08/P11 — revue arrière v4** : [six sources corrigées, rendus96 et export](creative/reviews/rear-cluster-review-v4/README.md). Jeux d’affichage explicites après le diagnostic v3 ; montage réel, fixations et soudures ouverts.
+
+## Bilan de finition — exécution du 22 octobre 2026
+
+[Bilan des 30 paquets et vues manquantes](creative/workflow/FINITIONS_MOTO_2026-10-22.md) · [Bloc arrière en revue](creative/reviews/rear-cluster-review-v4/README.md).
+
+Huit révisions fabriquées/reprises ou achevées en candidat,19 contrôles indépendants de candidats gelés et23 livraisons techniques dans ce passage. Certaines révisions se recoupent avec les contrôles ; ce ne sont pas 27 pièces physiques distinctes terminées.170 identités candidates/études enregistrées ; aucun paquet intégralement clôturé. La file documentée est épuisée et les formes/variantes bloquantes sont indiquées pour chaque paquet. L’attache avant manquante est celle du carter de chaîne supérieur P26.
