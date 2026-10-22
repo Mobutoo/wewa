@@ -1,0 +1,1 @@
+export default {root:'/workspace/wewa',cacheDir:'/workspace/wewa/assets-src/moto-components/passenger-support-current-rdc-v4/runtime-cache',server:{host:'127.0.0.1',port:4211,strictPort:true},optimizeDeps:{include:['@babylonjs/core','@babylonjs/loaders/glTF']}};

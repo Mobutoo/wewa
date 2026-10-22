@@ -1,0 +1,442 @@
+{
+  "id": "passenger-support-current-rdc-v4",
+  "status": "observed source and initial rigid root poses ready; collision and visual review required",
+  "parents_to_remove": [
+    "LH PF113002_LEFT_PASSENGER_STAY_FORMED_ARMS_EYE_GUSSET_U_CLEVIS",
+    "LH PASSENGER_PEG_SHAPED_ROOT_FLANGE_AND_STOP_TAB",
+    "LH JK113008_PASSENGER_RUBBER_VISIBLE_ENVELOPE_ONLY",
+    "RH PF113003_RIGHT_PASSENGER_STAY_FORMED_ARMS_EYE_GUSSET_U_CLEVI",
+    "RH PASSENGER_PEG_SHAPED_ROOT_FLANGE_AND_STOP_TAB",
+    "RH JK113008_PASSENGER_RUBBER_VISIBLE_ENVELOPE_ONLY"
+  ],
+  "removal_reason": "Replace both wrong-size PF donor stays and relocate their four common peg/rubber instances. Do not duplicate old v3.",
+  "convention": "native metres Xpilot-left Yrear Zup; row-major4x4 acts on column vector; glTF C=(X,Z,-Y), MglTF=C M C^-1",
+  "additions": [
+    {
+      "key": "LH CURRENT_RDC rear-sideguard observed",
+      "selected_objects": [
+        "LH CURRENT_RDC rear-sideguard observed"
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_class": "photo_inferred contour / estimated depth, section, bend and material",
+      "source": "assets-src/moto-components/passenger-support-current-rdc-v4/current-rdc-observed-tubes.blend",
+      "sha256": "05398aed7b0ae2c7894ba83ab2b4118763f85ac09e60527ed8ce1a17ecae2cd1"
+    },
+    {
+      "key": "LH CURRENT_RDC forward-peg-support observed",
+      "selected_objects": [
+        "LH CURRENT_RDC forward-peg-support observed"
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_class": "photo_inferred contour / estimated depth, section, bend and material",
+      "source": "assets-src/moto-components/passenger-support-current-rdc-v4/current-rdc-observed-tubes.blend",
+      "sha256": "05398aed7b0ae2c7894ba83ab2b4118763f85ac09e60527ed8ce1a17ecae2cd1"
+    },
+    {
+      "key": "RH CURRENT_RDC rear-sideguard observed",
+      "selected_objects": [
+        "RH CURRENT_RDC rear-sideguard observed"
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_class": "photo_inferred contour / estimated depth, section, bend and material",
+      "source": "assets-src/moto-components/passenger-support-current-rdc-v4/current-rdc-observed-tubes.blend",
+      "sha256": "05398aed7b0ae2c7894ba83ab2b4118763f85ac09e60527ed8ce1a17ecae2cd1"
+    },
+    {
+      "key": "RH CURRENT_RDC forward-peg-support observed",
+      "selected_objects": [
+        "RH CURRENT_RDC forward-peg-support observed"
+      ],
+      "matrix_world": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_class": "photo_inferred contour / estimated depth, section, bend and material",
+      "source": "assets-src/moto-components/passenger-support-current-rdc-v4/current-rdc-observed-tubes.blend",
+      "sha256": "05398aed7b0ae2c7894ba83ab2b4118763f85ac09e60527ed8ce1a17ecae2cd1"
+    },
+    {
+      "key": "LH peg unchanged original",
+      "source": "assets-src/moto-components/passenger-footpeg-metal-v1/child-candidate.blend",
+      "sha256": "6bfede602d064f286041e7ed527f81b96ca292af96ddcf0790d38039697b2ced",
+      "selected_objects": [
+        "PASSENGER_PEG_SHAPED_ROOT_FLANGE_AND_STOP_TAB"
+      ],
+      "matrix_world": [
+        [
+          0.2588188648223877,
+          0.9659258127212524,
+          -3.760438360700391e-08,
+          0.193894162774086
+        ],
+        [
+          0.6830126047134399,
+          -0.18301250040531158,
+          0.7071068286895752,
+          0.6482943892478943
+        ],
+        [
+          0.683012843132019,
+          -0.18301261961460114,
+          -0.7071065902709961,
+          -0.6221206784248352
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hinge_world_m": [
+        0.19699999690055847,
+        0.6564905643463135,
+        -0.613924503326416
+      ],
+      "side": "LH",
+      "role": "peg",
+      "nested": [],
+      "source_class": "documented_related_variant mesh / photo_inferred pose with estimated X"
+    },
+    {
+      "key": "LH rubber unchanged original",
+      "source": "assets-src/moto-components/passenger-footrest-rubber-jk113008-v1/child-candidate.blend",
+      "sha256": "d07ce98cd5220717d24c0b23449d5bc6f8d560c0bc7d5fc9d7adb852750fc969",
+      "selected_objects": [
+        "JK113008_PASSENGER_RUBBER_VISIBLE_ENVELOPE_ONLY"
+      ],
+      "matrix_world": [
+        [
+          0.2588188648223877,
+          0.9659258127212524,
+          -3.760438360700391e-08,
+          0.20062345266342163
+        ],
+        [
+          0.6830126047134399,
+          -0.18301250040531158,
+          0.7071068286895752,
+          0.6660526990890503
+        ],
+        [
+          0.683012843132019,
+          -0.18301261961460114,
+          -0.7071065902709961,
+          -0.6043623685836792
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hinge_world_m": [
+        0.19699999690055847,
+        0.6564905643463135,
+        -0.613924503326416
+      ],
+      "side": "LH",
+      "role": "rubber",
+      "nested": [],
+      "source_class": "documented_related_variant mesh / photo_inferred pose with estimated X"
+    },
+    {
+      "key": "RH peg unchanged original",
+      "source": "assets-src/moto-components/passenger-footpeg-metal-v1/child-candidate.blend",
+      "sha256": "6bfede602d064f286041e7ed527f81b96ca292af96ddcf0790d38039697b2ced",
+      "selected_objects": [
+        "PASSENGER_PEG_SHAPED_ROOT_FLANGE_AND_STOP_TAB"
+      ],
+      "matrix_world": [
+        [
+          -0.2588190734386444,
+          -0.9659257531166077,
+          3.557543237775462e-08,
+          -0.19989416003227234
+        ],
+        [
+          0.6830126643180847,
+          -0.1830127239227295,
+          -0.7071067690849304,
+          0.6627152562141418
+        ],
+        [
+          0.6830127239227295,
+          -0.1830126792192459,
+          0.7071067094802856,
+          -0.6210347414016724
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hinge_world_m": [
+        -0.2029999941587448,
+        0.670911431312561,
+        -0.6128385663032532
+      ],
+      "side": "RH",
+      "role": "peg",
+      "nested": [],
+      "source_class": "documented_related_variant mesh / photo_inferred pose with estimated X"
+    },
+    {
+      "key": "RH rubber unchanged original",
+      "source": "assets-src/moto-components/passenger-footrest-rubber-jk113008-v1/child-candidate.blend",
+      "sha256": "d07ce98cd5220717d24c0b23449d5bc6f8d560c0bc7d5fc9d7adb852750fc969",
+      "selected_objects": [
+        "JK113008_PASSENGER_RUBBER_VISIBLE_ENVELOPE_ONLY"
+      ],
+      "matrix_world": [
+        [
+          -0.2588190734386444,
+          -0.9659257531166077,
+          3.557543237775462e-08,
+          -0.20662344992160797
+        ],
+        [
+          0.6830126643180847,
+          -0.1830127239227295,
+          -0.7071067690849304,
+          0.6804735660552979
+        ],
+        [
+          0.6830127239227295,
+          -0.1830126792192459,
+          0.7071067094802856,
+          -0.6032764315605164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "hinge_world_m": [
+        -0.2029999941587448,
+        0.670911431312561,
+        -0.6128385663032532
+      ],
+      "side": "RH",
+      "role": "rubber",
+      "nested": [],
+      "source_class": "documented_related_variant mesh / photo_inferred pose with estimated X"
+    }
+  ],
+  "count": {
+    "new_observed_tubes": 4,
+    "existing_common_peg_instances": 2,
+    "existing_common_rubber_instances": 2,
+    "total_mesh_instances": 8,
+    "donor_PF_stays": 0
+  },
+  "nested": [],
+  "main_source_collection": "CURRENT_RDC_PASSENGER_SUPPORT_V4",
+  "bounds": "spec.json",
+  "SNS_required_context": {
+    "LH_euler_XYZ_deg": [
+      0,
+      20,
+      -90
+    ],
+    "RH_euler_XYZ_deg": [
+      0,
+      -20,
+      90
+    ],
+    "native_roots": [
+      {
+        "name": "SNS diagnostic LH",
+        "matrix_world": [
+          [
+            -4.107527118435428e-08,
+            1.0,
+            -1.4950176208117227e-08,
+            0.12999999523162842
+          ],
+          [
+            -0.9396926164627075,
+            -4.371138828673793e-08,
+            -0.3420201241970062,
+            0.826865017414093
+          ],
+          [
+            -0.3420201241970062,
+            0.0,
+            0.9396926164627075,
+            -0.6352229714393616
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "determinant": 0.9999999403953552,
+        "native_Y_transverse_world": [
+          1.0,
+          -4.371138828673793e-08,
+          0.0
+        ],
+        "native_Z_longitudinal_world": [
+          -1.4950176208117227e-08,
+          -0.3420201241970062,
+          0.9396926164627075
+        ]
+      },
+      {
+        "name": "SNS diagnostic RH",
+        "matrix_world": [
+          [
+            -4.107527118435428e-08,
+            -1.0,
+            1.4950176208117227e-08,
+            -0.12999999523162842
+          ],
+          [
+            0.9396926164627075,
+            -4.371138828673793e-08,
+            -0.3420201241970062,
+            0.826865017414093
+          ],
+          [
+            0.3420201241970062,
+            0.0,
+            0.9396926164627075,
+            -0.6352229714393616
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "determinant": 0.9999999403953552,
+        "native_Y_transverse_world": [
+          -1.0,
+          -4.371138828673793e-08,
+          0.0
+        ],
+        "native_Z_longitudinal_world": [
+          1.4950176208117227e-08,
+          -0.3420201241970062,
+          0.9396926164627075
+        ]
+      }
+    ],
+    "note": "Source Y transverse sign reverses on RH; source Z longitudinal inclination remains the same. SNS are diagnostic dependencies, not six-part additions."
+  },
+  "fit_qualified": false,
+  "art_accepted": false,
+  "source_identity": "Current RDC visible rear-sideguard/stay traces, no PF code imposed",
+  "limits": [
+    "No hidden pins, welds, brackets, endpoint continuations",
+    "Existing metal/JK geometry,22mm nominal overhang and90degree diagnostic cut unchanged",
+    "Old5mm chape gap belongs to preserved donor study; no new chape fabricated or installed pin claimed"
+  ],
+  "source_photo_pixels_private": true
+}
