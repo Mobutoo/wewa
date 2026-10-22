@@ -1,0 +1,52 @@
+{
+  "label": "Kick articulé v2 — cannelure et fente bornées au moyeu",
+  "lot": 17,
+  "review": "kickstarter-v2",
+  "source": "kickstarter/kickstarter-v2.blend",
+  "collection": "WEWA_KICKSTARTER",
+  "component_id": "MOTO-KICKSTARTER-001",
+  "files": [
+    "kickstarter/kickstarter-v2-inspection.glb"
+  ],
+  "rigs": [
+    {
+      "id": "kick_fold",
+      "node": "Kick base folding pivot - inspection range estimated",
+      "label": "Déploiement estimé (°)",
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "min": 0,
+      "max": 90,
+      "initial": 90
+    },
+    {
+      "id": "kick_stroke",
+      "node": "Kick engine shaft provisional datum",
+      "label": "Course estimée, kick déployé (°)",
+      "axis": [
+        0,
+        1,
+        0
+      ],
+      "min": 0,
+      "max": 60,
+      "initial": 0
+    }
+  ],
+  "pose_constraints": [
+    {
+      "type": "requires_pose",
+      "control": "kick_stroke",
+      "requires_control": "kick_fold",
+      "requires_value": 90,
+      "tolerance": 0.001,
+      "neutral": 0
+    }
+  ],
+  "inspection_url": "v4.html",
+  "details": "Cannelure et fente bornées aux faces du moyeu ; six autres pièces et pivots conservés. Denture intérieure visible conservée. Course conditionnelle au déploiement90°, angles et pose estimés, aucune réception ni compatibilité OEM.",
+  "readme": "README_v2.md"
+}

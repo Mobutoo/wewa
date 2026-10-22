@@ -1,0 +1,638 @@
+{
+  "schema": 1,
+  "coordinate_system": "Blender source/native scene world: cockpit X transverse,+Y pilot,Z up, per legacy source contract; glTF conversion(x,z,-y) separately listed",
+  "restoration_authority": "Coordinator dispatch within user-authorized autonomous motorcycle completion",
+  "head_existing_datum": {
+    "source": "assets-src/moto-components/engine-head/engine-head-v3.blend",
+    "source_exists": true,
+    "source_sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+    "expected_sha256": "fbbec8d9766f0fbb4ed257ecec8eebc909a956bc75a6024a9cbdae6139078dcf",
+    "head_datum_matrix_world_rows": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "conditional_face_port_local_m": [
+      0.025,
+      0.09,
+      0.03
+    ],
+    "conditional_face_port_world_m": [
+      0.02500000037252903,
+      0.09000000357627869,
+      0.029999999329447746
+    ],
+    "outward_axis_world": [
+      0.0,
+      1.0,
+      0.0
+    ],
+    "unfilled_gap_to_insulator_m": 0.0012,
+    "provenance": "Existing authored conditional head face from insulator/build.py, not a newly fabricated cylinder port or measured OEM centre"
+  },
+  "parents": [
+    {
+      "id": "engine-intake-insulator-v2",
+      "source": "assets-src/moto-components/engine-intake-insulator/engine-intake-insulator-v2.blend",
+      "source_sha256": "caa2dcbdb6d2e16f5b46916f0e9ede6e1d1d211205b8e5ae3912d9db9f17bf31",
+      "collection": "WEWA_ENGINE_INTAKE_INSULATOR",
+      "body": "Intake insulating spacer exterior - conditional UG5",
+      "root": "Intake insulator provisional rear seating datum",
+      "body_matrix_world_rows": [
+        [
+          0.8778955340385437,
+          -0.47885215282440186,
+          -1.0861300836495502e-07,
+          0.02500000037252903
+        ],
+        [
+          0.16377709805965424,
+          0.30025774240493774,
+          0.9396926164627075,
+          0.17526668310165405
+        ],
+        [
+          -0.4499738812446594,
+          -0.8249519467353821,
+          0.3420199453830719,
+          -0.4114556312561035
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "root_matrix_world_rows": [
+        [
+          0.8778955340385437,
+          -0.47885215282440186,
+          -1.0861300836495502e-07,
+          0.02500000037252903
+        ],
+        [
+          0.16377709805965424,
+          0.30025774240493774,
+          0.9396926164627075,
+          0.17526668310165405
+        ],
+        [
+          -0.4499738812446594,
+          -0.8249519467353821,
+          0.3420199453830719,
+          -0.4114556312561035
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ports": [
+        {
+          "label": "Rear seating/gas mouth",
+          "local_centre_m": [
+            0,
+            0,
+            0
+          ],
+          "axis_local": [
+            0,
+            0,
+            1
+          ],
+          "native_scene_world_centre_m": [
+            0.02500000037252903,
+            0.17526668310165405,
+            -0.4114556312561035
+          ],
+          "native_scene_world_axis_plus": [
+            -1.0861302257580974e-07,
+            0.9396927356719971,
+            0.3420199751853943
+          ],
+          "gltf_world_centre_m": [
+            0.02500000037252903,
+            -0.4114556312561035,
+            -0.17526668310165405
+          ],
+          "gltf_world_axis_plus": [
+            -1.0861302257580974e-07,
+            0.3420199751853943,
+            -0.9396927356719971
+          ],
+          "working_nominal_bore_radius_m": 0.0125,
+          "actual_vertices_at_declared_plane": 1520,
+          "actual_local_mesh_z_range_m": [
+            0.0,
+            0.004000000189989805
+          ],
+          "scope": "Exact authored nominal axial centre transformed by actual native mesh matrix; not a measured OEM centre or seal fit"
+        },
+        {
+          "label": "Front gas mouth",
+          "local_centre_m": [
+            0,
+            0,
+            0.004
+          ],
+          "axis_local": [
+            0,
+            0,
+            1
+          ],
+          "native_scene_world_centre_m": [
+            0.02500000037252903,
+            0.17902545630931854,
+            -0.41008755564689636
+          ],
+          "native_scene_world_axis_plus": [
+            -1.0861302257580974e-07,
+            0.9396927356719971,
+            0.3420199751853943
+          ],
+          "gltf_world_centre_m": [
+            0.02500000037252903,
+            -0.41008755564689636,
+            -0.17902545630931854
+          ],
+          "gltf_world_axis_plus": [
+            -1.0861302257580974e-07,
+            0.3420199751853943,
+            -0.9396927356719971
+          ],
+          "working_nominal_bore_radius_m": 0.0125,
+          "actual_vertices_at_declared_plane": 2416,
+          "actual_local_mesh_z_range_m": [
+            0.0,
+            0.004000000189989805
+          ],
+          "scope": "Exact authored nominal axial centre transformed by actual native mesh matrix; not a measured OEM centre or seal fit"
+        }
+      ],
+      "frame_role": "EXISTING_CONDITIONAL_HEAD_WORLD_RELATIVE",
+      "all_dimensions_estimated": true,
+      "source_unchanged": true
+    },
+    {
+      "id": "engine-intake-manifold",
+      "source": "assets-src/moto-components/engine-intake-manifold/engine-intake-manifold-v1.blend",
+      "source_sha256": "428eecbc58be7eb7cbcce12eb52b5d4e45549554964772a4f75a950f4508efab",
+      "collection": "WEWA_ENGINE_INTAKE_MANIFOLD",
+      "body": "Cast intake manifold hollow exterior - conditional UG5",
+      "root": "Intake manifold provisional base datum",
+      "body_matrix_world_rows": [
+        [
+          0.8778955340385437,
+          -0.47885212302207947,
+          -1.0861300125952766e-07,
+          0.02500000037252903
+        ],
+        [
+          0.16377709805965424,
+          0.30025774240493774,
+          0.9396925568580627,
+          0.18015308678150177
+        ],
+        [
+          -0.4499738812446594,
+          -0.8249518871307373,
+          0.3420199453830719,
+          -0.409677118062973
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "root_matrix_world_rows": [
+        [
+          0.8778955340385437,
+          -0.47885212302207947,
+          -1.0861300125952766e-07,
+          0.02500000037252903
+        ],
+        [
+          0.16377709805965424,
+          0.30025774240493774,
+          0.9396925568580627,
+          0.18015308678150177
+        ],
+        [
+          -0.4499738812446594,
+          -0.8249518871307373,
+          0.3420199453830719,
+          -0.409677118062973
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ports": [
+        {
+          "label": "Base gas mouth",
+          "local_centre_m": [
+            0,
+            0,
+            0
+          ],
+          "axis_local": [
+            0,
+            0,
+            1
+          ],
+          "native_scene_world_centre_m": [
+            0.02500000037252903,
+            0.18015308678150177,
+            -0.409677118062973
+          ],
+          "native_scene_world_axis_plus": [
+            -1.0861301547038238e-07,
+            0.9396926760673523,
+            0.3420199751853943
+          ],
+          "gltf_world_centre_m": [
+            0.02500000037252903,
+            -0.409677118062973,
+            -0.18015308678150177
+          ],
+          "gltf_world_axis_plus": [
+            -1.0861301547038238e-07,
+            0.3420199751853943,
+            -0.9396926760673523
+          ],
+          "working_nominal_bore_radius_m": 0.0125,
+          "actual_vertices_at_declared_plane": 688,
+          "actual_local_mesh_z_range_m": [
+            0.0,
+            0.03999999910593033
+          ],
+          "scope": "Exact authored nominal axial centre transformed by actual native mesh matrix; not a measured OEM centre or seal fit"
+        },
+        {
+          "label": "Outboard carb/sleeve-side mouth",
+          "local_centre_m": [
+            0,
+            0,
+            0.04
+          ],
+          "axis_local": [
+            0,
+            0,
+            1
+          ],
+          "native_scene_world_centre_m": [
+            0.02499999664723873,
+            0.21774078905582428,
+            -0.3959963321685791
+          ],
+          "native_scene_world_axis_plus": [
+            -1.0861301547038238e-07,
+            0.9396926760673523,
+            0.3420199751853943
+          ],
+          "gltf_world_centre_m": [
+            0.02499999664723873,
+            -0.3959963321685791,
+            -0.21774078905582428
+          ],
+          "gltf_world_axis_plus": [
+            -1.0861301547038238e-07,
+            0.3420199751853943,
+            -0.9396926760673523
+          ],
+          "working_nominal_bore_radius_m": 0.0125,
+          "actual_vertices_at_declared_plane": 512,
+          "actual_local_mesh_z_range_m": [
+            0.0,
+            0.03999999910593033
+          ],
+          "scope": "Exact authored nominal axial centre transformed by actual native mesh matrix; not a measured OEM centre or seal fit"
+        }
+      ],
+      "frame_role": "EXISTING_CONDITIONAL_HEAD_WORLD_RELATIVE",
+      "all_dimensions_estimated": true,
+      "source_unchanged": true
+    },
+    {
+      "id": "engine-intake-sleeve",
+      "source": "assets-src/moto-components/engine-intake-sleeve/engine-intake-sleeve-v1.blend",
+      "source_sha256": "0a0a1bfcf331e0160445dbb6d8af3e68834f74fa2d0c11f3def1514187f19e0c",
+      "collection": "WEWA_ENGINE_INTAKE_SLEEVE",
+      "body": "PF581402 sleeve - isolated conditional",
+      "root": "Intake sleeve isolated - end correspondence unknown",
+      "body_matrix_world_rows": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "root_matrix_world_rows": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ports": [
+        {
+          "label": "Matriz/front nominal mouth",
+          "local_centre_m": [
+            0,
+            0,
+            0.0175
+          ],
+          "axis_local": [
+            0,
+            0,
+            1
+          ],
+          "native_scene_world_centre_m": [
+            0.0,
+            0.0,
+            0.017500000074505806
+          ],
+          "native_scene_world_axis_plus": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "gltf_world_centre_m": [
+            0.0,
+            0.017500000074505806,
+            -0.0
+          ],
+          "gltf_world_axis_plus": [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          "working_nominal_bore_radius_m": 0.0176,
+          "actual_vertices_at_declared_plane": 1066,
+          "actual_local_mesh_z_range_m": [
+            -0.02500000037252903,
+            0.026000000536441803
+          ],
+          "scope": "Exact authored nominal axial centre transformed by actual native mesh matrix; not a measured OEM centre or seal fit"
+        },
+        {
+          "label": "Opposed/rear nominal mouth",
+          "local_centre_m": [
+            0,
+            0,
+            -0.0175
+          ],
+          "axis_local": [
+            0,
+            0,
+            1
+          ],
+          "native_scene_world_centre_m": [
+            0.0,
+            0.0,
+            -0.017500000074505806
+          ],
+          "native_scene_world_axis_plus": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "gltf_world_centre_m": [
+            0.0,
+            -0.017500000074505806,
+            -0.0
+          ],
+          "gltf_world_axis_plus": [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          "working_nominal_bore_radius_m": null,
+          "actual_vertices_at_declared_plane": 662,
+          "actual_local_mesh_z_range_m": [
+            -0.02500000037252903,
+            0.026000000536441803
+          ],
+          "scope": "Exact authored nominal axial centre transformed by actual native mesh matrix; not a measured OEM centre or seal fit"
+        }
+      ],
+      "frame_role": "ISOLATED_NATIVE_SCENE_NOT_INSTALLED_WORLD",
+      "all_dimensions_estimated": true,
+      "source_unchanged": true
+    },
+    {
+      "id": "engine-intake-clamp-band",
+      "source": "assets-src/moto-components/engine-intake-clamp-band/engine-intake-clamp-band-v1.blend",
+      "source_sha256": "3fc41201dc15a252d00f661b9b6abc5083c12bf73ac6926b69ff7b08930e036e",
+      "collection": "WEWA_ENGINE_INTAKE_CLAMP_BAND",
+      "body": "DP101198 related smooth band and formed ears - isolated",
+      "root": "Intake clamp band isolated datum - not tightened",
+      "body_matrix_world_rows": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "root_matrix_world_rows": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "ports": [
+        {
+          "label": "Band lower width edge / nominal tube axis",
+          "local_centre_m": [
+            0,
+            0,
+            -0.005
+          ],
+          "axis_local": [
+            0,
+            0,
+            1
+          ],
+          "native_scene_world_centre_m": [
+            0.0,
+            0.0,
+            -0.004999999888241291
+          ],
+          "native_scene_world_axis_plus": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "gltf_world_centre_m": [
+            0.0,
+            -0.004999999888241291,
+            -0.0
+          ],
+          "gltf_world_axis_plus": [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          "working_nominal_bore_radius_m": 0.0225,
+          "actual_vertices_at_declared_plane": 728,
+          "actual_local_mesh_z_range_m": [
+            -0.004999999888241291,
+            0.004999999888241291
+          ],
+          "scope": "Exact authored nominal axial centre transformed by actual native mesh matrix; not a measured OEM centre or seal fit"
+        },
+        {
+          "label": "Band upper width edge / nominal tube axis",
+          "local_centre_m": [
+            0,
+            0,
+            0.005
+          ],
+          "axis_local": [
+            0,
+            0,
+            1
+          ],
+          "native_scene_world_centre_m": [
+            0.0,
+            0.0,
+            0.004999999888241291
+          ],
+          "native_scene_world_axis_plus": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "gltf_world_centre_m": [
+            0.0,
+            0.004999999888241291,
+            -0.0
+          ],
+          "gltf_world_axis_plus": [
+            0.0,
+            1.0,
+            -0.0
+          ],
+          "working_nominal_bore_radius_m": 0.0225,
+          "actual_vertices_at_declared_plane": 728,
+          "actual_local_mesh_z_range_m": [
+            -0.004999999888241291,
+            0.004999999888241291
+          ],
+          "scope": "Exact authored nominal axial centre transformed by actual native mesh matrix; not a measured OEM centre or seal fit"
+        }
+      ],
+      "frame_role": "ISOLATED_NATIVE_SCENE_NOT_INSTALLED_WORLD",
+      "all_dimensions_estimated": true,
+      "source_unchanged": true
+    }
+  ],
+  "physical_fit_certified": false,
+  "no_source_pose_changes": true
+}

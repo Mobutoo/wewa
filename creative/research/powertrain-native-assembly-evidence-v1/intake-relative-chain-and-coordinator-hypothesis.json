@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "authority": "Coordinator dispatch within user-authorized autonomous motorcycle completion",
+  "existing_authored_chain": {
+    "head_to_insulator": "insulator/build.py: headroot_world @ local(port face point+1.2mm rear gap, estimated bolt diagonal)",
+    "insulator_to_manifold": "manifold/build.py: insulator_datum_world @ T(0,0,.004+.0012)",
+    "computed_native_datum_translation_in_insulator_basis_m": [
+      -3.4697242856651656e-09,
+      -7.38357730512007e-09,
+      0.005200004444186668
+    ],
+    "expected_authored_translation_m": [
+      0,
+      0,
+      0.0052
+    ],
+    "max_rotation_basis_delta": 5.960464477539063e-08,
+    "physical_clearance_or_OEM_fit_certified": false,
+    "literal_parenting_note": "Body is parented to its own free datum; build computed that datum from linked insulator/head matrices. Do not apply head datum twice."
+  },
+  "manifold_nominal_mouth_world": {
+    "label": "Outboard carb/sleeve-side mouth",
+    "local_centre_m": [
+      0,
+      0,
+      0.04
+    ],
+    "axis_local": [
+      0,
+      0,
+      1
+    ],
+    "native_scene_world_centre_m": [
+      0.02499999664723873,
+      0.21774078905582428,
+      -0.3959963321685791
+    ],
+    "native_scene_world_axis_plus": [
+      -1.0861301547038238e-07,
+      0.9396926760673523,
+      0.3420199751853943
+    ],
+    "gltf_world_centre_m": [
+      0.02499999664723873,
+      -0.3959963321685791,
+      -0.21774078905582428
+    ],
+    "gltf_world_axis_plus": [
+      -1.0861301547038238e-07,
+      0.3420199751853943,
+      -0.9396926760673523
+    ],
+    "working_nominal_bore_radius_m": 0.0125,
+    "actual_vertices_at_declared_plane": 512,
+    "actual_local_mesh_z_range_m": [
+      0.0,
+      0.03999999910593033
+    ],
+    "scope": "Exact authored nominal axial centre transformed by actual native mesh matrix; not a measured OEM centre or seal fit"
+  },
+  "coordinator_hypothesis": {
+    "status": "UNVALIDATED_COORDINATOR_HYPOTHESIS_NOT_USER_OR_OEM_MEASUREMENT",
+    "R_row_major": [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        -1,
+        0,
+        0
+      ]
+    ],
+    "origin_source_world_m": [
+      0,
+      0.285,
+      -0.44
+    ],
+    "carb_engine_side_neck_local_m": [
+      0,
+      0,
+      -0.032
+    ],
+    "transformed_neck_world_m": [
+      0.0,
+      0.253,
+      -0.44
+    ],
+    "carb_plus_Z_world_axis": [
+      0,
+      1,
+      0
+    ],
+    "axis_angle_to_manifold_outward_deg": 19.999990739159124,
+    "mouth_to_neck_vector_m": [
+      -0.02499999664723873,
+      0.03525921094417572,
+      -0.0440036678314209
+    ],
+    "centre_distance_m": 0.06168090929441504,
+    "signed_along_manifold_axis_m": 0.018082691623711875,
+    "perpendicular_offset_to_manifold_axis_m": 0.05897076254405734,
+    "verdict": "Hypothesis is not a validated coaxial connection: ~20deg angle and transverse offset; no correction pose applied."
+  },
+  "future_constraint_only": {
+    "equation": "R_carbu * [0,0,-.032] + t_carbu = manifold_mouth_world + lambda * manifold_axis_world",
+    "axis_constraint": "R_carbu*[0,0,1] parallel manifold_axis_world, up to correct physical end/sign and roll",
+    "lambda_and_roll": null,
+    "meaning": "Parametric connection constraint only; no chosen insertion length, rubber deformation, sleeve side or assembled transform."
+  },
+  "separate_sleeve_and_clamp_limits": [
+    "PF581402 sleeve isolated: frontZ+.0175/opposedZ-.0175; manifold-side versus carb-side not established, no installation matrix",
+    "Sleeve near lip radii16.9/16.5mm versus manifold band17.35mm; opposed clear11.4mm: do not force fit/trim hidden lips",
+    "DP101198 clamp isolated ID45mm; documented related sleeve plainOD45.6mm gives0.6mm diametral interference. Current sleeve overall raised envelope differs; no tightening/compliance solved",
+    "52JV0180 intake manifold is distinct from small5.5mm curved carb connector; do not substitute geometry"
+  ],
+  "variant_limits": [
+    "Head/insulator/manifold are conditional UG5/JV581404/52JV0180 family, not exact currentRDC125 certification",
+    "P19 carb source is JV581204 product photo with BM125 marking; P20PF581003 box label BM125/150 does not certify complete system pairing"
+  ],
+  "physical_fit_certified": false,
+  "no_source_mutation": true,
+  "no_installed_pose_created": true
+}

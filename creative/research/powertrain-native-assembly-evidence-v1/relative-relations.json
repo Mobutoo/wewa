@@ -1,0 +1,394 @@
+{
+  "schema": 1,
+  "scope": "Documented physical/source topology versus exact authored local constraints; zero newly invented mounted poses",
+  "exact_installed_relative_matrices_found": 0,
+  "relations": [
+    {
+      "id": "P19-upper-lower-bowl",
+      "from_parent": "carburettor-upper-casting-v1",
+      "to_parent": [
+        "carburettor-lower-body-v2",
+        "carburettor-float-bowl-v2"
+      ],
+      "status": "PHOTO_TOPOLOGY_PLUS_UNMEASURED_AUTHOR_RELATION",
+      "observed_relation": "Same JV581204 actual product photo shows upper casting continuing into lower casting and bolted bowl perimeter; photo reread in this audit.",
+      "exact_native_or_author_relation": "Upper barrel axis X atY=0,Z=-.017; lower section X atY=0,Z=-.014; bowl mouthX=.040 atY=0,Z=-.014. Shared native frame is intended construction convention, not certified joining.",
+      "unknown": [
+        "Upper/lower review planes not real mating surfaces",
+        "Lower control maximumX=.037 versus bowl nominal mouthX=.040 gives nominal3mm section-station separation, not measured gasket gap",
+        "Upper/lower nominal centre offsets3mm inZ, attachment ear extents partially overlap: do not automatically snap all origins"
+      ],
+      "evidence_paths": [
+        "creative/research/powertrain-completion-p19-v1/main-casting-child-plan-v3.json",
+        "creative/research/powertrain-completion-p19-v1/lower-body-rework-plan-v9.json",
+        "creative/research/powertrain-completion-p19-v1/float-bowl-rework-plan-v10.json"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P19-cap-barrel",
+      "from_parent": "carburettor-top-cap-v1",
+      "to_parent": "carburettor-upper-casting-v1",
+      "status": "PHOTO_TOPOLOGY_PLUS_UNMEASURED_AUTHOR_RELATION",
+      "observed_relation": "Same photo: ribbed cap sits at slide-barrel end, distinct from intake bell.",
+      "exact_native_or_author_relation": "Cap native axisZ; upper barrel native axisX, review cutX=-.048.",
+      "unknown": [
+        "Axis correspondence only; cap sign/roll, insertion/thread depth and rigid transform unresolved"
+      ],
+      "evidence_paths": [
+        "assets-src/moto-components/carburettor-top-cap-v1/parameters.json",
+        "tools/powertrain_completion_p19_casting_v1.py"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P19-cable-entry",
+      "from_parent": "carburettor-entry-boot-v1",
+      "to_parent": [
+        "carburettor-top-cap-v1",
+        "carburettor-cable-elbow-v1"
+      ],
+      "status": "PHOTO_TOPOLOGY_PLUS_UNMEASURED_AUTHOR_RELATION",
+      "observed_relation": "Same photo: small dark boot at cap and curved bright cable elbow above it.",
+      "exact_native_or_author_relation": "Cap and boot each revolve around their own Z; elbow first tangent-X at(0,0,0), far tangent+Y at(-.023,.030,0).",
+      "unknown": [
+        "No common attachment origin, elbow clocking or cable routing transform",
+        "Entry boot is a small cable boot, NOT P20 intake-air boot"
+      ],
+      "evidence_paths": [
+        "tools/powertrain_completion_p19_entry_boot_v1.py",
+        "tools/powertrain_completion_p19_elbow_v1.py"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P14-arm-hub",
+      "from_parent": "gear-selector-arm-v1",
+      "to_parent": "gear-selector-split-hub-v1",
+      "status": "PHOTO_TOPOLOGY_PLUS_UNMEASURED_AUTHOR_RELATION",
+      "observed_relation": "Opposed JZ561415 physical photos show hub on centre of bent two-ended lever.",
+      "exact_native_or_author_relation": "Arm root clearance centre0 axisZ radius6.5mm; hub bore axisZ radius6.7mm and lengthZ0..26mm.",
+      "unknown": [
+        "No certified axial seating/weld/root union or installed lever angle",
+        "Nominal radii differ; shared origin is author convention, not an exact spline fit"
+      ],
+      "evidence_paths": [
+        "tools/powertrain_completion_p14_arm_v1.py",
+        "tools/powertrain_completion_p14_hub_v1.py",
+        "creative/research/powertrain-completion-p14-v1/olx-jz561415-opposed-source-v96.json"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P14-ear-hub",
+      "from_parent": "gear-selector-clamp-ears-visible-head-v1",
+      "to_parent": "gear-selector-split-hub-v1",
+      "status": "PHOTO_TOPOLOGY_PLUS_UNMEASURED_AUTHOR_RELATION",
+      "observed_relation": "New opposed physical source shows rectangular ears at split and visible head on one side.",
+      "exact_native_or_author_relation": "Ear frame explicitly reuses old hub convention; slitX=0 toward+Y; root follows old radius13.5mm with0.25mm review overlap; head axisX atY=.018,Z=.0115.",
+      "unknown": [
+        "No hidden shaft/ear bores/root machining or fitted assembly certified",
+        "Flange versus separate washer unknown: never append a second circular seat"
+      ],
+      "evidence_paths": [
+        "creative/research/powertrain-completion-p14-v1/clamp-ears-visible-head-plan-v112.json"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P14-rubbers",
+      "from_parent": "gear-selector-arm-v1",
+      "to_parent": [
+        "gear-selector-toe-rubber-v1",
+        "gear-selector-heel-pad-v1"
+      ],
+      "status": "PHOTO_TOPOLOGY_PLUS_UNMEASURED_AUTHOR_RELATION",
+      "observed_relation": "Source lever shows narrow ribbed toe sleeve on one terminal and broad heel pad on opposite terminal.",
+      "exact_native_or_author_relation": "Arm terminal centreline controls toe(-.145,.036,-.009),heel(.140,.045,.009); toe rubber axisZ, heel pad normalZ, each independently based at0.",
+      "unknown": [
+        "Terminal peg/support, exact rubber seat depth and clocking not measured",
+        "These terminal controls are authored landmarks, not complete attachment matrices"
+      ],
+      "evidence_paths": [
+        "tools/powertrain_completion_p14_arm_v1.py",
+        "creative/research/powertrain-completion-p14-v1/olx-jz561415-opposed-source-v96.json"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P14-kick-recorded",
+      "from_parent": "kickstarter-v2",
+      "to_parent": null,
+      "status": "ACTUAL_RESTORED_NATIVE_RIG_READ_PHYSICAL_FIT_UNQUALIFIED",
+      "observed_relation": "Historical record states seven articulated candidate pieces and preserved fold/stroke pivots; related current-RDC target only.",
+      "exact_native_or_author_relation": "Catalogue node-local glTF fold axis[0,0,1], range0..90 initial90; stroke[0,1,0],range0..60 initial0; stroke requiresfold90.",
+      "unknown": [
+        "Exact native/GLB/contract restored from pinned Git and read before final dossier: engine pivot[-.170,.322,-.674],worldaxis[-1,0,0]; foldpivot[-.210,.331,-.667],worldaxis[0,0,-1] at stored native rest state",
+        "Node-local directions differ from stored world axes; exact matrices in kick-native-coordinate-read.json, no new pose generated",
+        "Camera target is NOT a pivot; inspection ranges are not physical stop measurements"
+      ],
+      "evidence_paths": [
+        "kickstarter-record-snapshot.json",
+        "kickstarter-catalog-entry-snapshot.json"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P15-pedal-subparts",
+      "from_parent": "brake-pedal-arm-v1",
+      "to_parent": [
+        "brake-pedal-pivot-sleeve-v1",
+        "brake-pedal-linkage-lug-v1",
+        "brake-pedal-textured-pad-v1"
+      ],
+      "status": "PHOTO_TOPOLOGY_PLUS_UNMEASURED_AUTHOR_RELATION",
+      "observed_relation": "Related PF161002/PF161001 product source shows compound pedal arm, transverse sleeve, pierced lug and broad terminal pad.",
+      "exact_native_or_author_relation": "Arm origin is pixel(178,159) bend datum, not sleeve origin. Sleeve axisZ; lug hole(0,-.005,0) axisZ; pad normalZ, all separate local0 origins.",
+      "unknown": [
+        "Actual sleeve centre on arm and lug offset/weld not documented as rigid transforms",
+        "Pad terminal landmark from authored arm is(.19278,-.17577,.028); does not certify pad orientation/contact"
+      ],
+      "evidence_paths": [
+        "creative/research/powertrain-completion-p15-v1/plan.json",
+        "tools/powertrain_completion_p15_arm_v1.py"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P15-rod-clevis",
+      "from_parent": "brake-actuation-rod-v1",
+      "to_parent": "brake-rod-clevis-v1",
+      "status": "PHOTO_TOPOLOGY_PLUS_UNMEASURED_AUTHOR_RELATION",
+      "observed_relation": "Related rod product photo shows long shank with separate folded two-ear clevis at terminal.",
+      "exact_native_or_author_relation": "Rod axisX, endpoints0 and.490; clevis entry axisX,entryID5.8mm versus rodOD5.5mm; eye axisZ at(.020,0,0).",
+      "unknown": [
+        "Entry nominal diameters do not certify fit; no root welding/thread/axial overlap established",
+        "Rod has plain ends only: never treat it as a finished threaded/bent linkage"
+      ],
+      "evidence_paths": [
+        "creative/research/powertrain-completion-p15-v1/actuation-rod-plan-v5.json",
+        "creative/research/powertrain-completion-p15-v1/rod-clevis-plan-v6.json"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P15-clevis-pedal",
+      "from_parent": "brake-rod-clevis-v1",
+      "to_parent": "brake-pedal-linkage-lug-v1",
+      "status": "FUNCTIONAL_DEPENDENCY_ONLY_NOT_PROVEN_MATING_PAIR",
+      "observed_relation": "Catalogue/source decomposition associates actuation rod/clevis with brake pedal, not a calibrated mounted view.",
+      "exact_native_or_author_relation": "Clevis eye axisZ diameter6mm; lug eye axisZ diameter9mm.",
+      "unknown": [
+        "Hole radii and origins differ, do not infer coaxial mating or invent a sleeve/adapter",
+        "Pedal-to-rod relative angle/travel/frame clearance unknown"
+      ],
+      "evidence_paths": [
+        "tools/powertrain_completion_p15_rod_clevis_v1.py",
+        "tools/powertrain_completion_p15_lug_v1.py"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P17-side-foot",
+      "from_parent": "side-stand-fork-stem-v1",
+      "to_parent": "side-stand-curved-foot-v3",
+      "status": "PHOTO_TOPOLOGY_PLUS_UNMEASURED_AUTHOR_RELATION",
+      "observed_relation": "Two attributed JA113202 physical views show round stem transitioning into bent flattened foot.",
+      "exact_native_or_author_relation": "Stem endsX=.245; foot first controlX=.225,Y=0; nominal20mm axial overlap in inherited author convention, with curve advancing+Y.",
+      "unknown": [
+        "No physical root trim/weld/contact or deployed ground pose certified",
+        "Never keep old straight-foot alternatives as additional feet"
+      ],
+      "evidence_paths": [
+        "tools/powertrain_completion_p17_stem_v1.py",
+        "creative/research/powertrain-completion-p17-v1/side-foot-curved-plan-v13.json"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P17-centre-arm",
+      "from_parent": "centre-stand-main-frame-v1",
+      "to_parent": "centre-stand-operating-arm-v1",
+      "status": "PHOTO_TOPOLOGY_PLUS_UNMEASURED_AUTHOR_RELATION",
+      "observed_relation": "Same PF113224 physical source shows operating arm leaving the left leg into broad terminal roof; main frame excludes that arm.",
+      "exact_native_or_author_relation": "Main frameX lateral,Y up,Zdepth; arm plan claims same projected axes, independently traced pixel origin(590,490)scale.00064. Arm root control(-.12672,.03392,0).",
+      "unknown": [
+        "Shared photo/projection is useful adjacency evidence, not an exact welded 3D contact",
+        "Main height290mm and arm scale independently estimated; no installed angle or ground qualification"
+      ],
+      "evidence_paths": [
+        "creative/research/powertrain-completion-p17-v1/centre-frame-plan-v3.json",
+        "creative/research/powertrain-completion-p17-v1/centre-operating-arm-plan-v14.json"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P17-centre-shaft",
+      "from_parent": "centre-stand-pivot-shaft-v1",
+      "to_parent": "centre-stand-main-frame-v1",
+      "status": "PHOTO_TOPOLOGY_PLUS_UNMEASURED_AUTHOR_RELATION",
+      "observed_relation": "Attributed shaft JA113201 function and stand pivot source support insertion topology only.",
+      "exact_native_or_author_relation": "Frame pivot lineX at(0,.290,0),tubeID14mm,width85mm. Shaft nativeaxisZ,length112mm,mainOD14mm.",
+      "unknown": [
+        "ShaftZ must correspond to tubeX under future placement, but orientation sign/axial seat/cotter stack unknown",
+        "Nominal14/14 has no qualified clearance; no valid fit claimed"
+      ],
+      "evidence_paths": [
+        "tools/powertrain_completion_p17_centre_frame_v1.py",
+        "assets-src/moto-components/centre-stand-pivot-shaft-v1/parameters.json"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P18-LH-RH",
+      "from_parent": "crankcase-lh-major-outer-envelope-donor-v1",
+      "to_parent": "crankcase-rh-major-outer-envelope-donor-v1",
+      "status": "MIXED_CONDITIONAL_DONORS_PAIRING_UNPROVED",
+      "observed_relation": "Independent used BM150 LH JE541038 and RH PF54100? photo sets; no single engine pair demonstrated.",
+      "exact_native_or_author_relation": "Each front-photo origin independently chosen pixel(350,550),same selected.00044m/px; both extrude-Z (LH58mm,RH68mm).",
+      "unknown": [
+        "Equal pixel origin/scale is NOT a shared bearing or split-plane datum",
+        "No identity overlay, mirror, matching pair or combined125 case certified",
+        "RH split-photo two-landmark mapping is only intra-RH image alignment, not LH/RH registration"
+      ],
+      "evidence_paths": [
+        "creative/research/powertrain-completion-p18-v1/lh-major-outer-envelope-donor-plan-v97.json",
+        "creative/research/powertrain-completion-p18-v1/rh-major-outer-envelope-donor-plan-v100.json"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P18-upper-lands",
+      "from_parent": "crankcase-upper-land-lh-v1",
+      "to_parent": [
+        "crankcase-lh-major-outer-envelope-donor-v1",
+        "crankcase-upper-deck-rh-v1",
+        "crankcase-rh-major-outer-envelope-donor-v1"
+      ],
+      "status": "RELATED_REGIONS_NO_COMMON_CALIBRATED_FRAME",
+      "observed_relation": "Separate upper-land/top and main-front photos document different visible regions; no calibrated common upper/case datum.",
+      "exact_native_or_author_relation": "LH land pixel(300,400),XY top planeZ0..-6mm; RH land swaps axes X=(v-550)*.00042,Y=(u-346)*.00042. Major envelopes XY front plane with-Zdepth.",
+      "unknown": [
+        "Top-plane Z axis and front-plane Z axis are not automatically the same physical direction",
+        "Variant PF541109/top-land family versus donor castings and cover/head/cylinder fit unresolved"
+      ],
+      "evidence_paths": [
+        "tools/powertrain_completion_p18_lh_land_v1.py",
+        "assets-src/moto-components/crankcase-upper-deck-rh-v1/parameters.json"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P20-body-boot",
+      "from_parent": "air-cleaner-box-outer-body-pf581003-v1",
+      "to_parent": "airbox-carb-boot-physical-study-v2",
+      "status": "PHOTO_TOPOLOGY_PLUS_UNMEASURED_AUTHOR_RELATION",
+      "observed_relation": "Same physical used airbox gallery shows short boot emerging from small end; box label PF581003 BM125/150.",
+      "exact_native_or_author_relation": "Body outlet centre(.018,.160,-.036),axis+Y; boot axisX with far trimX=-.030 and flared mouthX=+.030.",
+      "unknown": [
+        "Axes must correspond in a future relative placement but sign/roll/overlap not certified",
+        "Body outletOD44mm versus estimated far bootID35mm cannot be treated as verified mating fit",
+        "PF581003 labels box, NOT standalone boot code; hidden retention unbuilt"
+      ],
+      "evidence_paths": [
+        "creative/research/powertrain-completion-p20-v1/physical-airbox-boot-evidence-v80.json",
+        "creative/research/powertrain-completion-p20-v1/airbox-outer-body-plan-v105.json"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P20-boot-P19-bell",
+      "from_parent": "airbox-carb-boot-physical-study-v2",
+      "to_parent": "carburettor-upper-casting-v1",
+      "status": "CROSS_SOURCE_FUNCTIONAL_LINK_NOT_CERTIFIED_COMPATIBLE_PAIR",
+      "observed_relation": "Functional intake relationship plausible; no same mounted assembly establishes exact JV581204-to-PF581003 currentRDC125 pairing.",
+      "exact_native_or_author_relation": "Boot flare nativeaxisX,estimated innerR24.5mm; upper bell nativeaxisZ,outerlipR≈27.2mm.",
+      "unknown": [
+        "Different source sets/scale estimates: radial mismatch2.7mm before any unknown deformation",
+        "No posed hose/carb/head/airbox transform, hidden clamp seat or route invented"
+      ],
+      "evidence_paths": [
+        "creative/research/powertrain-completion-p20-v1/physical-airbox-boot-plan-v81.json",
+        "creative/research/powertrain-completion-p19-v1/main-casting-child-plan-v3.json"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P16-peg-rubber",
+      "from_parent": "footrest-rubber-v1",
+      "to_parent": [
+        "front-footrest-left",
+        "front-footrest-right"
+      ],
+      "status": "PHOTO_TOPOLOGY_PLUS_UNMEASURED_AUTHOR_RELATION",
+      "observed_relation": "Distinct PF113000/PF113001 physical metal supports and DF161413 related rider sleeve exist; no missing whole peg body.",
+      "exact_native_or_author_relation": "Each support tube follows local+X from base-side isolated datum; rubber+X from open mouth0 to tip106mm.",
+      "unknown": [
+        "No sleeve insertion origin/retention/clocking or actual support fit certified",
+        "LH and RH are independent source shapes, never mirrored",
+        "Native scenes contain hidden editable cutters/studio plane: import only final visible candidate mesh and datum, not the entire scene"
+      ],
+      "evidence_paths": [
+        "creative/workflow/records/moto-front-footrest-left-001.json",
+        "creative/workflow/records/moto-front-footrest-right-001.json",
+        "assets-src/moto-components/footrest-rubber-v1/parameters.json"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    },
+    {
+      "id": "P16-passenger-anchors",
+      "from_parent": "passenger-footrest-stay-left-v1",
+      "to_parent": "passenger-footrest-stay-right-v1",
+      "status": "PHOTO_TOPOLOGY_PLUS_UNMEASURED_AUTHOR_RELATION",
+      "observed_relation": "Independent PF113002/PF113003 related support photos show upper eye, splayed arms and U clevis; distinct shapes.",
+      "exact_native_or_author_relation": "Upper eye linesZ atY=.3044/.306; U-clevis stationY=.239,each in independent source drawing frame.",
+      "unknown": [
+        "No shared frame anchoring matrix, no rider-peg interchangeability",
+        "Terminal clocking/pin/bush and frame clearance remain unqualified"
+      ],
+      "evidence_paths": [
+        "assets-src/moto-components/passenger-footrest-stay-left-v1/parameters.json",
+        "assets-src/moto-components/passenger-footrest-stay-right-v1/parameters.json"
+      ],
+      "relative_installed_transform": null,
+      "vehicle_transform": null,
+      "physical_fit_certified": false
+    }
+  ]
+}

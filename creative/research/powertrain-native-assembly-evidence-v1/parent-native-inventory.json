@@ -1,0 +1,3367 @@
+{
+  "schema": 1,
+  "native_count": 34,
+  "requested_and_appendix_entries": 34,
+  "glb_count": 34,
+  "source_frame": "Blender source coordinates with unit_scale1; no common vehicle frame inferred",
+  "source_to_gltf_matrix_row_major": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "status_language": {
+    "exact_native": "Exact stored/generated values; physical dimensions may be estimates",
+    "photo_relation": "Observed adjacency/topology, not exact rigid transform",
+    "author_relation": "Shared author frame/nominal constraint only",
+    "unknown_transform": "No mounted pose generated"
+  },
+  "parents": [
+    {
+      "id": "carburettor-upper-casting-v1",
+      "package": "P19",
+      "native": "assets-src/moto-components/carburettor-upper-casting-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/carburettor-upper-casting-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/carburettor-upper-casting-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Bell/airway along Z; slide barrel along X; side port along Y",
+        "origin_meaning": "(0,0,0) is construction datum in bell neck, not bike mount",
+        "features": [
+          {
+            "label": "Bell axis",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ],
+            "lip_plane_z_m": 0.0185,
+            "neck_review_plane_z_m": -0.032
+          },
+          {
+            "label": "Slide barrel",
+            "point_source_m": [
+              -0.0225,
+              0,
+              -0.017
+            ],
+            "direction_source": [
+              1,
+              0,
+              0
+            ],
+            "cap_review_cut_x_m": -0.048
+          },
+          {
+            "label": "Side port",
+            "point_source_m": [
+              -0.02,
+              -0.011,
+              -0.014
+            ],
+            "direction_source": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p19_casting_v1.py",
+          "creative/research/powertrain-completion-p19-v1/main-casting-child-plan-v3.json"
+        ],
+        "identity": "JV581204 source photo also bears BM125 tag; no exact current motorcycle fit proof",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "7bd167d4fd2abd8d125736aaae58f6ee6f62b57bd5909615f31b18a2e3d27561",
+      "component_bounds_source_m": {
+        "min": [
+          -0.04800000041723251,
+          -0.0272000003606081,
+          -0.03500000014901161
+        ],
+        "max": [
+          0.0272000003606081,
+          0.0272000003606081,
+          0.018497414886951447
+        ]
+      },
+      "component_meshes": [
+        "UPPER_MAIN_CASTING_BELL_BARREL_AND_SIDE_FLANGE"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "86c91f4f31f3930c8ddfd5fb3282707b8578343e54df029821cb794d5e5d41ce",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.04800000041723251,
+          -0.03500000014901161,
+          -0.0272000003606081
+        ],
+        "max": [
+          0.0272000003606081,
+          0.018497414886951447,
+          0.0272000003606081
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.04800000041723251,
+            -0.03500000014901161,
+            -0.0272000003606081
+          ],
+          "max": [
+            0.0272000003606081,
+            0.018497414886951447,
+            0.0272000003606081
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "carburettor-lower-body-v2",
+      "package": "P19",
+      "native": "assets-src/moto-components/carburettor-lower-body-v2/child-candidate.blend",
+      "glb": "assets-src/moto-components/carburettor-lower-body-v2/child-candidate.glb",
+      "parameters": "assets-src/moto-components/carburettor-lower-body-v2/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Longitudinal section X; transverse section centred Y=0,Z=-.014",
+        "origin_meaning": "Construction datum at X=0; first review section X=.004",
+        "features": [
+          {
+            "label": "Lower section axis",
+            "point_source_m": [
+              0,
+              0,
+              -0.014
+            ],
+            "direction_source": [
+              1,
+              0,
+              0
+            ],
+            "first_section_x_m": 0.004,
+            "section_max_control_x_m": 0.037
+          },
+          {
+            "label": "Joint ear1",
+            "point_source_m": [
+              0.0292,
+              -0.028,
+              -0.018
+            ],
+            "direction_source": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "label": "Joint ear2",
+            "point_source_m": [
+              0.0292,
+              0.027,
+              -0.018
+            ],
+            "direction_source": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p19_lower_body_v2.py",
+          "creative/research/powertrain-completion-p19-v1/lower-body-rework-plan-v9.json"
+        ],
+        "identity": "Source-related exterior study; metric dimensions and installed vehicle fit unqualified",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "1a5dc2d77777f5a30c0a01aebb494cca2f26c682922d6c4f0c24ed770ef71326",
+      "component_bounds_source_m": {
+        "min": [
+          0.004000000189989805,
+          -0.035999998450279236,
+          -0.0386115126311779
+        ],
+        "max": [
+          0.03688560798764229,
+          0.03249948471784592,
+          0.010611512698233128
+        ]
+      },
+      "component_meshes": [
+        "LOWER_CASTING_C2_FINITE_WALL_OPEN_REVIEW_INTERFACES"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "68b6f30f793f5603520d0d470afecac7e5b5cb853b18ef37b4476d5b37e4bda0",
+      "component_bounds_gltf_m": {
+        "min": [
+          0.004000000189989805,
+          -0.0386115126311779,
+          -0.03249948471784592
+        ],
+        "max": [
+          0.03688560798764229,
+          0.010611512698233128,
+          0.035999998450279236
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            0.004000000189989805,
+            -0.0386115126311779,
+            -0.03249948471784592
+          ],
+          "max": [
+            0.03688560798764229,
+            0.010611512698233128,
+            0.035999998450279236
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "carburettor-float-bowl-v2",
+      "package": "P19",
+      "native": "assets-src/moto-components/carburettor-float-bowl-v2/child-candidate.blend",
+      "glb": "assets-src/moto-components/carburettor-float-bowl-v2/child-candidate.glb",
+      "parameters": "assets-src/moto-components/carburettor-float-bowl-v2/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Cup axis +X; mouth centre( .040,0,-.014 ); belly offset with depth",
+        "origin_meaning": "Independent source construction datum, not assembled gasket origin",
+        "features": [
+          {
+            "label": "Mouth axis",
+            "point_source_m": [
+              0.04,
+              0,
+              -0.014
+            ],
+            "direction_source": [
+              1,
+              0,
+              0
+            ],
+            "outer_radii_m": [
+              0.0295,
+              0.0255
+            ],
+            "inner_radii_m": [
+              0.026,
+              0.022
+            ]
+          },
+          {
+            "label": "Outer/inner poles",
+            "points_source_m": [
+              [
+                0.065,
+                0.004,
+                -0.018
+              ],
+              [
+                0.062,
+                0.004,
+                -0.018
+              ]
+            ]
+          },
+          {
+            "label": "Joint ear1",
+            "point_source_m": [
+              0.0372,
+              -0.028,
+              -0.018
+            ],
+            "direction_source": [
+              1,
+              0,
+              0
+            ]
+          },
+          {
+            "label": "Joint ear2",
+            "point_source_m": [
+              0.0372,
+              0.027,
+              -0.018
+            ],
+            "direction_source": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p19_float_bowl_v2.py",
+          "creative/research/powertrain-completion-p19-v1/float-bowl-rework-plan-v10.json"
+        ],
+        "identity": "Source-related exterior study; metric dimensions and installed vehicle fit unqualified",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "8f18c85bc622d1719decf464f2af0b3159f126ca761eb4f119e2ce17a00058b4",
+      "component_bounds_source_m": {
+        "min": [
+          0.03720000013709068,
+          -0.03400000184774399,
+          -0.03835250064730644
+        ],
+        "max": [
+          0.06499999761581421,
+          0.03249948471784592,
+          0.010352499783039093
+        ]
+      },
+      "component_meshes": [
+        "ROUNDED_FLOAT_BOWL_FINITE_WALL_REAL_POLES_OPEN_ROLLED_RIM"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "ac4dbb1a044c0b53fac8e56c2b7dbe204e86eb2f4de8d9328c06accf57f4f174",
+      "component_bounds_gltf_m": {
+        "min": [
+          0.03720000013709068,
+          -0.03835250064730644,
+          -0.03249948471784592
+        ],
+        "max": [
+          0.06499999761581421,
+          0.010352499783039093,
+          0.03400000184774399
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            0.03720000013709068,
+            -0.03835250064730644,
+            -0.03249948471784592
+          ],
+          "max": [
+            0.06499999761581421,
+            0.010352499783039093,
+            0.03400000184774399
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "carburettor-top-cap-v1",
+      "package": "P19",
+      "native": "assets-src/moto-components/carburettor-top-cap-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/carburettor-top-cap-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/carburettor-top-cap-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Revolution Z, basic seat atZ=0, crown towards+Z",
+        "origin_meaning": "Seat-plane construction centre, not placed onto upper casting",
+        "features": [
+          {
+            "label": "Cap axis",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ],
+            "crown_z_m": 0.0125
+          }
+        ],
+        "evidence_paths": [
+          "assets-src/moto-components/carburettor-top-cap-v1/parameters.json"
+        ],
+        "identity": "Source-related exterior study; metric dimensions and installed vehicle fit unqualified",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "d2688b795cc3d5841f0340d44c2cc92a93c15f38c882ea1babdc232f3d17dec4",
+      "component_bounds_source_m": {
+        "min": [
+          -0.021700000390410423,
+          -0.021700000390410423,
+          0.0
+        ],
+        "max": [
+          0.021700000390410423,
+          0.021700000390410423,
+          0.012500000186264515
+        ]
+      },
+      "component_meshes": [
+        "CARB_TOP_CAP_CONTINUOUS_ANNULUS_WITH_LARGE_GRIPS"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "0740361c543911983dfb4427fbef6329bd76f6a0d57b6539a0fe1b43bc6023cf",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.021700000390410423,
+          0,
+          -0.021700000390410423
+        ],
+        "max": [
+          0.021700000390410423,
+          0.012500000186264515,
+          0.021700000390410423
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.021700000390410423,
+            0.0,
+            -0.021700000390410423
+          ],
+          "max": [
+            0.021700000390410423,
+            0.012500000186264515,
+            0.021700000390410423
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "carburettor-entry-boot-v1",
+      "package": "P19",
+      "native": "assets-src/moto-components/carburettor-entry-boot-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/carburettor-entry-boot-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/carburettor-entry-boot-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Cable-entry annular boot along Z, broad seatZ=0 to small mouthZ=.014",
+        "origin_meaning": "Broad boot seat construction centre",
+        "features": [
+          {
+            "label": "Entry boot",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ],
+            "small_mouth_z_m": 0.014
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p19_entry_boot_v1.py"
+        ],
+        "identity": "Source-related exterior study; metric dimensions and installed vehicle fit unqualified",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "c39062fc9ac0e23c58b42583a9e2291a5ad7a1fb40d883899b8dda0e054a6c08",
+      "component_bounds_source_m": {
+        "min": [
+          -0.012000000104308128,
+          -0.012000000104308128,
+          0.0
+        ],
+        "max": [
+          0.012000000104308128,
+          0.012000000104308128,
+          0.014000000432133675
+        ]
+      },
+      "component_meshes": [
+        "ENTRY_BOOT_ROUNDED_STEPPED_ANNULAR_WALL"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "74ca96e9ff2f7a51fa65e0908df15685437620dfe8853ef01418f0890f25a2af",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.012000000104308128,
+          0,
+          -0.012000000104308128
+        ],
+        "max": [
+          0.012000000104308128,
+          0.014000000432133675,
+          0.012000000104308128
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.012000000104308128,
+            0.0,
+            -0.012000000104308128
+          ],
+          "max": [
+            0.012000000104308128,
+            0.014000000432133675,
+            0.012000000104308128
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "carburettor-cable-elbow-v1",
+      "package": "P19",
+      "native": "assets-src/moto-components/carburettor-cable-elbow-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/carburettor-cable-elbow-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/carburettor-cable-elbow-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Bend plane XY; straight cap-end goes -X; other end +Y",
+        "origin_meaning": "First open cable-end centre at(0,0,0)",
+        "features": [
+          {
+            "label": "First end",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              -1,
+              0,
+              0
+            ]
+          },
+          {
+            "label": "Far end",
+            "point_source_m": [
+              -0.023,
+              0.03,
+              0
+            ],
+            "direction_source": [
+              0,
+              1,
+              0
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p19_elbow_v1.py"
+        ],
+        "identity": "Source-related exterior study; metric dimensions and installed vehicle fit unqualified",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "35e2174f09c154bf4dfcca3eac0d44df65548a475c0ac03398acce48a30f137c",
+      "component_bounds_source_m": {
+        "min": [
+          -0.027499999850988388,
+          -0.0044999998062849045,
+          -0.0044999998062849045
+        ],
+        "max": [
+          0.0,
+          0.029999999329447746,
+          0.0044999998062849045
+        ]
+      },
+      "component_meshes": [
+        "CARB_CABLE_ELBOW_HOLLOW_UNEQUAL_END_QUARTER_BEND"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "61fafc2d5bda04bb0d86e509bd1691d912273eeb6e44cf0b91776e63acd9f7f0",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.027499999850988388,
+          -0.0044999998062849045,
+          -0.029999999329447746
+        ],
+        "max": [
+          0,
+          0.0044999998062849045,
+          0.0044999998062849045
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.027499999850988388,
+            -0.0044999998062849045,
+            -0.029999999329447746
+          ],
+          "max": [
+            0.0,
+            0.0044999998062849045,
+            0.0044999998062849045
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "gear-selector-arm-v1",
+      "package": "P14",
+      "native": "assets-src/moto-components/gear-selector-arm-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/gear-selector-arm-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/gear-selector-arm-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "X toe(-) to heel(+), Y projected up, Z outward",
+        "origin_meaning": "Root clearance centre(0,0,0), construction origin",
+        "features": [
+          {
+            "label": "Root clearance",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ],
+            "radius_m": 0.0065
+          },
+          {
+            "label": "Authored terminal centreline controls",
+            "points_source_m": [
+              [
+                -0.145,
+                0.036,
+                -0.009
+              ],
+              [
+                0.14,
+                0.045,
+                0.009
+              ]
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p14_arm_v1.py"
+        ],
+        "identity": "Source-related exterior study; metric dimensions and installed vehicle fit unqualified",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "3fa9954debfb3f7acf6792fb1bf0e5a31fb6dddb6de65c463c578de7ceb2edff",
+      "component_bounds_source_m": {
+        "min": [
+          -0.14511588215827942,
+          -0.01512947678565979,
+          -0.011796295642852783
+        ],
+        "max": [
+          0.1421634554862976,
+          0.05373610183596611,
+          0.011722221970558167
+        ]
+      },
+      "component_meshes": [
+        "SELECTOR_TWO_BENT_ARMS_METAL"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "3776171e74997b80f4d64fd8e93c09b45b3918ffb024c149f688b829ab0b5c24",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.14511588215827942,
+          -0.011796295642852783,
+          -0.05373610183596611
+        ],
+        "max": [
+          0.1421634554862976,
+          0.011722221970558167,
+          0.01512947678565979
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.14511588215827942,
+            -0.011796295642852783,
+            -0.05373610183596611
+          ],
+          "max": [
+            0.1421634554862976,
+            0.011722221970558167,
+            0.01512947678565979
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "gear-selector-split-hub-v1",
+      "package": "P14",
+      "native": "assets-src/moto-components/gear-selector-split-hub-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/gear-selector-split-hub-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/gear-selector-split-hub-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Bore Z; slit X=0 towards+Y; mouthZ=0, blind slit stopZ=.022",
+        "origin_meaning": "Bore centre at mouth plane",
+        "features": [
+          {
+            "label": "Plain bore",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ],
+            "outer_radius_m": 0.0135,
+            "bore_radius_m": 0.0067,
+            "z_range_m": [
+              0,
+              0.026
+            ]
+          },
+          {
+            "label": "Slit",
+            "x_width_m": 0.002,
+            "direction_source": [
+              0,
+              1,
+              0
+            ],
+            "stop_z_m": 0.022
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p14_hub_v1.py"
+        ],
+        "identity": "Source-related exterior study; metric dimensions and installed vehicle fit unqualified",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "86015ba524e2dd5eb4c86f47875572a065a5e4359dfafc3fef9a1a5ba35b780a",
+      "component_bounds_source_m": {
+        "min": [
+          -0.013500000350177288,
+          -0.013500000350177288,
+          0.0
+        ],
+        "max": [
+          0.013500000350177288,
+          0.013500000350177288,
+          0.026000000536441803
+        ]
+      },
+      "component_meshes": [
+        "SELECTOR_SPLIT_CLAMP_COLLAR_PLAIN_BORE"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "6363ca681716a2a3894111ba7bf141e2dc1147646e6d0b82355978968b519a3f",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.013500000350177288,
+          0,
+          -0.013500000350177288
+        ],
+        "max": [
+          0.013500000350177288,
+          0.026000000536441803,
+          0.013500000350177288
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.013500000350177288,
+            0.0,
+            -0.013500000350177288
+          ],
+          "max": [
+            0.013500000350177288,
+            0.026000000536441803,
+            0.013500000350177288
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "gear-selector-toe-rubber-v1",
+      "package": "P14",
+      "native": "assets-src/moto-components/gear-selector-toe-rubber-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/gear-selector-toe-rubber-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/gear-selector-toe-rubber-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Sleeve/revolution Z from open base to toe tip",
+        "origin_meaning": "Native rubber base centre",
+        "features": [
+          {
+            "label": "Toe sleeve",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ],
+            "z_range_m": [
+              0,
+              0.04
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "assets-src/moto-components/gear-selector-toe-rubber-v1/parameters.json"
+        ],
+        "identity": "Source-related exterior study; metric dimensions and installed vehicle fit unqualified",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "6bb4e755bc0576c039ad9c52e433662204c98743508addc6169f40c2c2620da0",
+      "component_bounds_source_m": {
+        "min": [
+          -0.011500000022351742,
+          -0.011500000022351742,
+          0.0
+        ],
+        "max": [
+          0.011500000022351742,
+          0.011500000022351742,
+          0.03999999910593033
+        ]
+      },
+      "component_meshes": [
+        "SELECTOR_TOE_RUBBER_CONTINUOUS_ELEVEN_RIBS"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "8a43b143e6a8180daead1c3f56fb2ee9e2a4351cfa35b8bc5e20a2d05b11390c",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.011500000022351742,
+          0,
+          -0.011500000022351742
+        ],
+        "max": [
+          0.011500000022351742,
+          0.03999999910593033,
+          0.011500000022351742
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.011500000022351742,
+            0.0,
+            -0.011500000022351742
+          ],
+          "max": [
+            0.011500000022351742,
+            0.03999999910593033,
+            0.011500000022351742
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "gear-selector-heel-pad-v1",
+      "package": "P14",
+      "native": "assets-src/moto-components/gear-selector-heel-pad-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/gear-selector-heel-pad-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/gear-selector-heel-pad-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Tread in XY; baseZ=0, relief+Z",
+        "origin_meaning": "Independent pad base construction centre",
+        "features": [
+          {
+            "label": "Pad normal",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "assets-src/moto-components/gear-selector-heel-pad-v1/parameters.json"
+        ],
+        "identity": "Source-related exterior study; metric dimensions and installed vehicle fit unqualified",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "4580c62be88817a7f2504f13ddb9a340e65ab5f1fab722f1fef9e1aff2524be1",
+      "component_bounds_source_m": {
+        "min": [
+          -0.024983875453472137,
+          -0.018949875608086586,
+          0.0
+        ],
+        "max": [
+          0.025660699233412743,
+          0.016294315457344055,
+          0.009800000116229057
+        ]
+      },
+      "component_meshes": [
+        "SELECTOR_BROAD_HEEL_PAD_SEVEN_TRANSVERSE_TREADS"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "1ad8d1c2fb32ae16dcce0cd4ffa774a48208212afd7e75172596e51ef5bf3b6b",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.024983875453472137,
+          0,
+          -0.016294315457344055
+        ],
+        "max": [
+          0.025660699233412743,
+          0.009800000116229057,
+          0.018949875608086586
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.024983875453472137,
+            0.0,
+            -0.016294315457344055
+          ],
+          "max": [
+            0.025660699233412743,
+            0.009800000116229057,
+            0.018949875608086586
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "gear-selector-clamp-ears-visible-head-v1",
+      "package": "P14",
+      "native": "assets-src/moto-components/gear-selector-clamp-ears-visible-head-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/gear-selector-clamp-ears-visible-head-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/gear-selector-clamp-ears-visible-head-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Reuses hub slit convention; two ears separated atX=0; head along+X",
+        "origin_meaning": "Shared provisional hub-origin convention only, no second hub",
+        "features": [
+          {
+            "label": "Visible head/seat",
+            "point_source_m": [
+              0.008,
+              0.018,
+              0.0115
+            ],
+            "direction_source": [
+              1,
+              0,
+              0
+            ],
+            "visible_crown_x_m": 0.0132
+          },
+          {
+            "label": "Ear extents",
+            "x_ranges_m": [
+              [
+                -0.008,
+                -0.001
+              ],
+              [
+                0.001,
+                0.008
+              ]
+            ],
+            "z_range_m": [
+              0.0015,
+              0.022
+            ],
+            "outer_y_m": 0.022
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p14_clamp_ears_head_v2.py",
+          "creative/research/powertrain-completion-p14-v1/clamp-ears-visible-head-plan-v112.json"
+        ],
+        "identity": "JZ561415 marked same-set opposed source; no exact metric/root fit",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "db914b69d8ccb9afc21cd60292d8871455dc59764818b52d2e072e651f4d7e03",
+      "component_bounds_source_m": {
+        "min": [
+          -0.00800000037997961,
+          0.01067356951534748,
+          0.001500000013038516
+        ],
+        "max": [
+          0.013199999928474426,
+          0.02449999935925007,
+          0.02199999988079071
+        ]
+      },
+      "component_meshes": [
+        "EAR_NEGATIVE_X",
+        "EAR_POSITIVE_X",
+        "VISIBLE_HEX_HEAD_AND_ROUND_SEAT_ONLY"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "9113bc4c47b1eaf38199c4a7f2c47f9960d3abcc4b975b954bc8f74d553c0f26",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.00800000037997961,
+          0.001500000013038516,
+          -0.02449999935925007
+        ],
+        "max": [
+          0.013199999928474426,
+          0.02199999988079071,
+          -0.01067356951534748
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.00800000037997961,
+            0.001500000013038516,
+            -0.02449999935925007
+          ],
+          "max": [
+            0.013199999928474426,
+            0.02199999988079071,
+            -0.01067356951534748
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "brake-pedal-arm-v1",
+      "package": "P15",
+      "native": "assets-src/moto-components/brake-pedal-arm-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/brake-pedal-arm-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/brake-pedal-arm-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "X=(u-178)*.00063,Y=(159-v)*.00063; Z selected depth",
+        "origin_meaning": "Photo pixel(178,159) at bend region; NOT a certified pivot origin",
+        "features": [
+          {
+            "label": "Pixel origin",
+            "pixel": [
+              178,
+              159
+            ],
+            "scale_m_px": 0.00063
+          },
+          {
+            "label": "Tail eye",
+            "point_source_m": [
+              -0.08253,
+              0.05859,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ],
+            "radius_m": 0.0025
+          },
+          {
+            "label": "Pad-end authored centreline",
+            "point_source_m": [
+              0.19278,
+              -0.17577,
+              0.028
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p15_arm_v1.py"
+        ],
+        "identity": "PF161002/PF161001 related product sources, current RDC fit unknown",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "16b52bb4b2de8b4a010fb26c59d911a47860aa2d13fd8fe23f3d8428cf55bb0c",
+      "component_bounds_source_m": {
+        "min": [
+          -0.09265800565481186,
+          -0.1808060258626938,
+          -0.0026899639051407576
+        ],
+        "max": [
+          0.2002553641796112,
+          0.06612592190504074,
+          0.0364849790930748
+        ]
+      },
+      "component_meshes": [
+        "BRAKE_PEDAL_COMPOUND_ARM_METAL"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "6f583f4f2faffad3bff482d98187a6e182f7790d82f3d2f88f72c731557faef9",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.09265800565481186,
+          -0.0026899639051407576,
+          -0.06612592190504074
+        ],
+        "max": [
+          0.2002553641796112,
+          0.0364849790930748,
+          0.1808060258626938
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.09265800565481186,
+            -0.0026899639051407576,
+            -0.06612592190504074
+          ],
+          "max": [
+            0.2002553641796112,
+            0.0364849790930748,
+            0.1808060258626938
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "brake-pedal-pivot-sleeve-v1",
+      "package": "P15",
+      "native": "assets-src/moto-components/brake-pedal-pivot-sleeve-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/brake-pedal-pivot-sleeve-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/brake-pedal-pivot-sleeve-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Tube Z, mouthZ=0 to endZ=.032",
+        "origin_meaning": "Standalone tube mouth centre, not fitted pedal pivot",
+        "features": [
+          {
+            "label": "Pivot tube",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ],
+            "length_m": 0.032,
+            "OD_m": 0.021,
+            "ID_m": 0.014
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p15_pivot_v1.py"
+        ],
+        "identity": "Source-related exterior study; metric dimensions and installed vehicle fit unqualified",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "c738837685e2f634204e65d56646b902e72cf8d05bd38fac53de590851a80006",
+      "component_bounds_source_m": {
+        "min": [
+          -0.010499999858438969,
+          -0.010499999858438969,
+          0.0
+        ],
+        "max": [
+          0.010499999858438969,
+          0.010499999858438969,
+          0.03200000151991844
+        ]
+      },
+      "component_meshes": [
+        "BRAKE_PEDAL_TRANSVERSE_PIVOT_OPEN_TUBE"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "9bb82b3dc37fe146a6194a68f3681013a7b7b9bfbe2c7e01c05aa339fa19d5d5",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.010499999858438969,
+          0,
+          -0.010499999858438969
+        ],
+        "max": [
+          0.010499999858438969,
+          0.03200000151991844,
+          0.010499999858438969
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.010499999858438969,
+            0.0,
+            -0.010499999858438969
+          ],
+          "max": [
+            0.010499999858438969,
+            0.03200000151991844,
+            0.010499999858438969
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "brake-pedal-linkage-lug-v1",
+      "package": "P15",
+      "native": "assets-src/moto-components/brake-pedal-linkage-lug-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/brake-pedal-linkage-lug-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/brake-pedal-linkage-lug-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Sheet XY, thicknessZ±.0015; hole axis Z",
+        "origin_meaning": "Lug drawing centre, distinct from hole centre",
+        "features": [
+          {
+            "label": "Link eye",
+            "point_source_m": [
+              0,
+              -0.005,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ],
+            "diameter_m": 0.009
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p15_lug_v1.py"
+        ],
+        "identity": "Source-related exterior study; metric dimensions and installed vehicle fit unqualified",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "3d896aa240e7eb12e09fde8e66f6fef266eb0999f9807ccd716acca08fbc921b",
+      "component_bounds_source_m": {
+        "min": [
+          -0.010924753732979298,
+          -0.013999899849295616,
+          -0.001500000013038516
+        ],
+        "max": [
+          0.010924752801656723,
+          0.01299986895173788,
+          0.001500000013038516
+        ]
+      },
+      "component_meshes": [
+        "BRAKE_PEDAL_TAPERED_SINGLE_HOLE_LINKAGE_LUG"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "46786add1258a91f6c67f71b87f00684530ee6f0a92d4e6f59c337de1b06a1b4",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.010924753732979298,
+          -0.001500000013038516,
+          -0.01299986895173788
+        ],
+        "max": [
+          0.010924752801656723,
+          0.001500000013038516,
+          0.013999899849295616
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.010924753732979298,
+            -0.001500000013038516,
+            -0.01299986895173788
+          ],
+          "max": [
+            0.010924752801656723,
+            0.001500000013038516,
+            0.013999899849295616
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "brake-pedal-textured-pad-v1",
+      "package": "P15",
+      "native": "assets-src/moto-components/brake-pedal-textured-pad-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/brake-pedal-textured-pad-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/brake-pedal-textured-pad-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Pad XY, baseZ=0 tread+Z",
+        "origin_meaning": "Standalone pad base construction centre",
+        "features": [
+          {
+            "label": "Pad normal",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p15_pad_v1.py"
+        ],
+        "identity": "Source-related exterior study; metric dimensions and installed vehicle fit unqualified",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "be7bcd45040fbafa1cb9166de2d262991ea838179dd4e749096bfbd50ee14116",
+      "component_bounds_source_m": {
+        "min": [
+          -0.02268698252737522,
+          -0.019999999552965164,
+          0.0
+        ],
+        "max": [
+          0.02268698252737522,
+          0.019999999552965164,
+          0.0038999998942017555
+        ]
+      },
+      "component_meshes": [
+        "BRAKE_PEDAL_ROUNDED_PAD_WITH_REAL_DIAMOND_RELIEF"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "4f73c3f9de80e27ad5c1b2bb7e64376a488cceda21e1c04ce34a985976ae2e13",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.02268698252737522,
+          0,
+          -0.019999999552965164
+        ],
+        "max": [
+          0.02268698252737522,
+          0.0038999998942017555,
+          0.019999999552965164
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.02268698252737522,
+            0.0,
+            -0.019999999552965164
+          ],
+          "max": [
+            0.02268698252737522,
+            0.0038999998942017555,
+            0.019999999552965164
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "brake-actuation-rod-v1",
+      "package": "P15",
+      "native": "assets-src/moto-components/brake-actuation-rod-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/brake-actuation-rod-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/brake-actuation-rod-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Straight shank along+X from0 to.490",
+        "origin_meaning": "One softened plain terminal centre, not clevis datum",
+        "features": [
+          {
+            "label": "Rod",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              1,
+              0,
+              0
+            ],
+            "endpoints_m": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0.49,
+                0,
+                0
+              ]
+            ],
+            "diameter_m": 0.0055
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p15_actuation_rod_v1.py"
+        ],
+        "identity": "Plain shank study, NO threaded/bent terminal",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "4cdf7e0bc0efc6bb95e1e888d6552fdba006bc423c0862aa571aafffa0ed663c",
+      "component_bounds_source_m": {
+        "min": [
+          0.0,
+          -0.002749999985098839,
+          -0.002749999985098839
+        ],
+        "max": [
+          0.49000000953674316,
+          0.002749999985098839,
+          0.002749999985098839
+        ]
+      },
+      "component_meshes": [
+        "BRAKE_ACTUATION_ROUND_SHANK_PLAIN_TERMINAL_STUDY"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "a11a45cc04b67554b5a97d0e314037702ac74619fc3907da05c1f6733ac2bd66",
+      "component_bounds_gltf_m": {
+        "min": [
+          0,
+          -0.002749999985098839,
+          -0.002749999985098839
+        ],
+        "max": [
+          0.49000000953674316,
+          0.002749999985098839,
+          0.002749999985098839
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            0.0,
+            -0.002749999985098839,
+            -0.002749999985098839
+          ],
+          "max": [
+            0.49000000953674316,
+            0.002749999985098839,
+            0.002749999985098839
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "brake-rod-clevis-v1",
+      "package": "P15",
+      "native": "assets-src/moto-components/brake-rod-clevis-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/brake-rod-clevis-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/brake-rod-clevis-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Rod-entry axis X; clevis eye/pin Z; earsZ±.0035..006",
+        "origin_meaning": "Independent clevis root drawing datum",
+        "features": [
+          {
+            "label": "Rod entry",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              1,
+              0,
+              0
+            ],
+            "diameter_m": 0.0058
+          },
+          {
+            "label": "Eye/pin",
+            "point_source_m": [
+              0.02,
+              0,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ],
+            "diameter_m": 0.006,
+            "clear_gap_m": 0.007
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p15_rod_clevis_v1.py"
+        ],
+        "identity": "Source-related exterior study; metric dimensions and installed vehicle fit unqualified",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "22405ae8dc22265a4cbb20300b19a073b1b1fed88069e6d6b640cd1e71aab770",
+      "component_bounds_source_m": {
+        "min": [
+          -0.009499999694526196,
+          -0.008999999612569809,
+          -0.006000000052154064
+        ],
+        "max": [
+          0.028998758643865585,
+          0.008999999612569809,
+          0.006000000052154064
+        ]
+      },
+      "component_meshes": [
+        "FOLDED_BRAKE_ROD_CLEVIS_PIERCED_EARS_AND_REAL_GAP"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "49dca381b1be1d12a6fd64e2bcbc8017e1f29c72e14e2bf65ac905fb7c2797c6",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.009499999694526196,
+          -0.006000000052154064,
+          -0.008999999612569809
+        ],
+        "max": [
+          0.028998758643865585,
+          0.006000000052154064,
+          0.008999999612569809
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.009499999694526196,
+            -0.006000000052154064,
+            -0.008999999612569809
+          ],
+          "max": [
+            0.028998758643865585,
+            0.006000000052154064,
+            0.008999999612569809
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "side-stand-fork-stem-v1",
+      "package": "P17",
+      "native": "assets-src/moto-components/side-stand-fork-stem-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/side-stand-fork-stem-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/side-stand-fork-stem-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Stem+X, fork pivot Z atX=-.024; projection XY",
+        "origin_meaning": "Stem start atX=0, NOT fork-eye centre",
+        "features": [
+          {
+            "label": "Fork eye",
+            "point_source_m": [
+              -0.024,
+              0,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ],
+            "diameter_m": 0.009
+          },
+          {
+            "label": "Stem",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              1,
+              0,
+              0
+            ],
+            "end_x_m": 0.245
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p17_stem_v1.py"
+        ],
+        "identity": "JA113202 related physical source; not certified current frame mount",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "12b20afc82a65894780169dbd133ba3ffd0b66fb8943c68122bcaa117c361d6f",
+      "component_bounds_source_m": {
+        "min": [
+          -0.035999998450279236,
+          -0.012000000104308128,
+          -0.010499999858438969
+        ],
+        "max": [
+          0.24500000476837158,
+          0.012000000104308128,
+          0.010499999858438969
+        ]
+      },
+      "component_meshes": [
+        "SIDE_STAND_SHAPED_FORK_AND_STEM"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "52b97ccfa2a3174458714da3d04bc7dabbfb352111f39014d08d72e32a5fabf7",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.035999998450279236,
+          -0.010499999858438969,
+          -0.012000000104308128
+        ],
+        "max": [
+          0.24500000476837158,
+          0.010499999858438969,
+          0.012000000104308128
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.035999998450279236,
+            -0.010499999858438969,
+            -0.012000000104308128
+          ],
+          "max": [
+            0.24500000476837158,
+            0.010499999858438969,
+            0.012000000104308128
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "side-stand-curved-foot-v3",
+      "package": "P17",
+      "native": "assets-src/moto-components/side-stand-curved-foot-v3/child-candidate.blend",
+      "glb": "assets-src/moto-components/side-stand-curved-foot-v3/child-candidate.glb",
+      "parameters": "assets-src/moto-components/side-stand-curved-foot-v3/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Shares nominal stem+X/XY projection; broadening Z and curve+Y",
+        "origin_meaning": "Retained source construction frame, root startsX=.225",
+        "features": [
+          {
+            "label": "Curve control centres",
+            "points_source_m": [
+              [
+                0.225,
+                0,
+                0
+              ],
+              [
+                0.233,
+                0.0005,
+                0
+              ],
+              [
+                0.24,
+                0.002,
+                0
+              ],
+              [
+                0.248,
+                0.006,
+                0
+              ],
+              [
+                0.258,
+                0.016,
+                0
+              ],
+              [
+                0.272,
+                0.035,
+                0
+              ],
+              [
+                0.289,
+                0.059,
+                0
+              ]
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p17_side_foot_v3.py"
+        ],
+        "identity": "Second JA113202 physical view; root overlap not fitted trim",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "c43e989ddf09f77d569fec660845abf0b37859a2acafee349e466d483240e700",
+      "component_bounds_source_m": {
+        "min": [
+          0.22434879839420319,
+          -0.010479788295924664,
+          -0.014499999582767487
+        ],
+        "max": [
+          0.29757094383239746,
+          0.07090002298355103,
+          0.014499999582767487
+        ]
+      },
+      "component_meshes": [
+        "CURVED_ROUND_TO_FLATTENED_SIDE_FOOT_WITH_ROUNDED_TOE"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "b6fb7f9fed813606c9bebf5253cfa48409a257e01756a906d5a204566d7a6e59",
+      "component_bounds_gltf_m": {
+        "min": [
+          0.22434879839420319,
+          -0.014499999582767487,
+          -0.07090002298355103
+        ],
+        "max": [
+          0.29757094383239746,
+          0.014499999582767487,
+          0.010479788295924664
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            0.22434879839420319,
+            -0.014499999582767487,
+            -0.07090002298355103
+          ],
+          "max": [
+            0.29757094383239746,
+            0.014499999582767487,
+            0.010479788295924664
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "centre-stand-main-frame-v1",
+      "package": "P17",
+      "native": "assets-src/moto-components/centre-stand-main-frame-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/centre-stand-main-frame-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/centre-stand-main-frame-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "X projected lateral, Y up, Z depth, feet nearY=0",
+        "origin_meaning": "Projected frame ground-level drawing datum, NOT bike-frame datum",
+        "features": [
+          {
+            "label": "Pivot tube",
+            "point_source_m": [
+              0,
+              0.29,
+              0
+            ],
+            "direction_source": [
+              1,
+              0,
+              0
+            ],
+            "ends_m": [
+              [
+                -0.0425,
+                0.29,
+                0
+              ],
+              [
+                0.0425,
+                0.29,
+                0
+              ]
+            ],
+            "ID_m": 0.014
+          },
+          {
+            "label": "Web eye",
+            "point_source_m": [
+              0.002,
+              0.246,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ],
+            "diameter_m": 0.012
+          },
+          {
+            "label": "Foot centreline ends",
+            "points_source_m": [
+              [
+                -0.135,
+                0.007,
+                0
+              ],
+              [
+                0.165,
+                0.007,
+                0
+              ]
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p17_centre_frame_v1.py"
+        ],
+        "identity": "PF113224 product source; frame coplanarity/ground/installed stops estimated",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "568668a5fcb66d7d2dc452f301b00d4ce884b5c62d06a27014e44b75b155b989",
+      "component_bounds_source_m": {
+        "min": [
+          -0.15800000727176666,
+          -0.004000000189989805,
+          -0.01600000075995922
+        ],
+        "max": [
+          0.20149999856948853,
+          0.3019999861717224,
+          0.01600000075995922
+        ]
+      },
+      "component_meshes": [
+        "CENTRE_STAND_MAIN_FRAME_OPEN_PIVOT_PIERCED_WEB"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "668a5d85bbad57fe3704bdb9307a68af1153a962aca4ea60717e40038ad8c659",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.15800000727176666,
+          -0.01600000075995922,
+          -0.3019999861717224
+        ],
+        "max": [
+          0.20149999856948853,
+          0.01600000075995922,
+          0.004000000189989805
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.15800000727176666,
+            -0.01600000075995922,
+            -0.3019999861717224
+          ],
+          "max": [
+            0.20149999856948853,
+            0.01600000075995922,
+            0.004000000189989805
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "centre-stand-operating-arm-v1",
+      "package": "P17",
+      "native": "assets-src/moto-components/centre-stand-operating-arm-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/centre-stand-operating-arm-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/centre-stand-operating-arm-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "X=(u-590)*.00064,Y=(490-v)*.00064,Z depth; nominal same projected axes, independent scale",
+        "origin_meaning": "Photo pixel(590,490) construction datum, not a physical root",
+        "features": [
+          {
+            "label": "Arm root source point",
+            "point_source_m": [
+              -0.12672,
+              0.033920000000000006,
+              0
+            ]
+          },
+          {
+            "label": "Gusset eye",
+            "point_source_m": [
+              -0.13248000000000001,
+              0.06784000000000001,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p17_operating_arm_v1.py",
+          "creative/research/powertrain-completion-p17-v1/centre-operating-arm-plan-v14.json"
+        ],
+        "identity": "Source-related exterior study; metric dimensions and installed vehicle fit unqualified",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "ec85810f1addac0e804010f60aa601daed2319df3434eb32011de87d5cd7b800",
+      "component_bounds_source_m": {
+        "min": [
+          -0.362639844417572,
+          0.02885187789797783,
+          -0.011500000022351742
+        ],
+        "max": [
+          -0.1120000034570694,
+          0.1593429297208786,
+          0.011500000022351742
+        ]
+      },
+      "component_meshes": [
+        "CENTRE_STAND_OPERATING_ARM_CURVED_ROOF_AND_PIERCED_ROOT_GUSSET"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "ebcfeca5dc8fe5897af06e24ed7659a9aed9b59c08538905ca17bb20d8904975",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.362639844417572,
+          -0.011500000022351742,
+          -0.1593429297208786
+        ],
+        "max": [
+          -0.1120000034570694,
+          0.011500000022351742,
+          -0.02885187789797783
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.362639844417572,
+            -0.011500000022351742,
+            -0.1593429297208786
+          ],
+          "max": [
+            -0.1120000034570694,
+            0.011500000022351742,
+            -0.02885187789797783
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "centre-stand-pivot-shaft-v1",
+      "package": "P17",
+      "native": "assets-src/moto-components/centre-stand-pivot-shaft-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/centre-stand-pivot-shaft-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/centre-stand-pivot-shaft-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Shaft Z from flange plane0 to open tip.112",
+        "origin_meaning": "Flange-plane centre, not placed into frame tube",
+        "features": [
+          {
+            "label": "Shaft",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ],
+            "length_m": 0.112,
+            "main_OD_m": 0.014
+          },
+          {
+            "label": "Cross drill",
+            "point_source_m": [
+              0,
+              0,
+              0.106
+            ],
+            "direction_source": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "assets-src/moto-components/centre-stand-pivot-shaft-v1/parameters.json"
+        ],
+        "identity": "JA113201 source; nominal14mm no insertion clearance qualification",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "f5d360e3365e0f0cd2ec86e5783f5e9582b9826b7e35971ab8ee3f066fb8d551",
+      "component_bounds_source_m": {
+        "min": [
+          -0.009999997913837433,
+          -0.009999997913837433,
+          0.0
+        ],
+        "max": [
+          0.009999997913837433,
+          0.009999997913837433,
+          0.1120000034570694
+        ]
+      },
+      "component_meshes": [
+        "JA113201_TUBULAR_SHAFT_FLANGE_FINE_BAND_AND_SIDE_DRILL"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "d21b2879ff43ae7c33c2574ced4da67106b32d54888c4cc953a0e80638ba5340",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.009999997913837433,
+          0,
+          -0.009999997913837433
+        ],
+        "max": [
+          0.009999997913837433,
+          0.1120000034570694,
+          0.009999997913837433
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.009999997913837433,
+            0.0,
+            -0.009999997913837433
+          ],
+          "max": [
+            0.009999997913837433,
+            0.1120000034570694,
+            0.009999997913837433
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "crankcase-lh-major-outer-envelope-donor-v1",
+      "package": "P18",
+      "native": "assets-src/moto-components/crankcase-lh-major-outer-envelope-donor-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/crankcase-lh-major-outer-envelope-donor-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/crankcase-lh-major-outer-envelope-donor-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "X=(u-350)*.00044,Y=(550-v)*.00044 from65221; depth along-Z",
+        "origin_meaning": "Image pixel(350,550), NOT crankshaft/bearing centre",
+        "features": [
+          {
+            "label": "Author depth",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              -1
+            ],
+            "z_range_m": [
+              -0.058,
+              0
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p18_major_envelope_v1.py",
+          "creative/research/powertrain-completion-p18-v1/lh-major-outer-envelope-donor-plan-v97.json"
+        ],
+        "identity": "Conditional BM150 JE541038 donor, not exact RDC125",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "3622f07d7d6b6aaef4f3b310470c88896715f020856c49c9a256310b31661085",
+      "component_bounds_source_m": {
+        "min": [
+          -0.13837657868862152,
+          -0.11549333482980728,
+          -0.057999998331069946
+        ],
+        "max": [
+          0.14939165115356445,
+          0.12531203031539917,
+          0.0
+        ]
+      },
+      "component_meshes": [
+        "MAJOR_LH_DONOR_EXTERIOR_PERIPHERAL_CAST_WALLS_OPEN_ENGINE_VOID"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "05c9d59cfc3c823cb849f9a812dfcb81c43d64312bc26bb35f3ad6eaa37056f0",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.13837657868862152,
+          -0.057999998331069946,
+          -0.12531203031539917
+        ],
+        "max": [
+          0.14939165115356445,
+          0,
+          0.11549333482980728
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.13837657868862152,
+            -0.057999998331069946,
+            -0.12531203031539917
+          ],
+          "max": [
+            0.14939165115356445,
+            0.0,
+            0.11549333482980728
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "crankcase-rh-major-outer-envelope-donor-v1",
+      "package": "P18",
+      "native": "assets-src/moto-components/crankcase-rh-major-outer-envelope-donor-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/crankcase-rh-major-outer-envelope-donor-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/crankcase-rh-major-outer-envelope-donor-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Independent65202 origin(350,550); X=(u-350)*.00044,Y=(550-v)*.00044, depth-Z; split65203 image-aligned",
+        "origin_meaning": "Independent photo origin, NOT a common LH/RH datum",
+        "features": [
+          {
+            "label": "Author depth",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              -1
+            ],
+            "z_range_m": [
+              -0.068,
+              0
+            ]
+          },
+          {
+            "label": "Split-photo alignment",
+            "formula": "u_front=779.3-1.0186*u_split;v_front=.9565*v_split-8.3; two image landmarks only"
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p18_rh_major_envelope_v2.py",
+          "creative/research/powertrain-completion-p18-v1/rh-major-executed-scope-v109.json"
+        ],
+        "identity": "Independent conditional BM150 PF54100? donor; pairing JE541038/current125 NOT proved",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "18027fe2fce382b96f08770e4c3c2f7314b2092adccb58bae5a18c8ffeec95df",
+      "component_bounds_source_m": {
+        "min": [
+          -0.13189950585365295,
+          -0.10917501896619797,
+          -0.06800000369548798
+        ],
+        "max": [
+          0.15880224108695984,
+          0.10908738523721695,
+          0.0
+        ]
+      },
+      "component_meshes": [
+        "RH_DONOR_MAJOR_PERIPHERAL_WALLS_OBSERVED_ROOT_COLUMNS_OPEN_VOID"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "243bf655b8961725d83a99dde06a1d6e09ef700f3165908b7907d88a51064d73",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.13189950585365295,
+          -0.06800000369548798,
+          -0.10908738523721695
+        ],
+        "max": [
+          0.15880224108695984,
+          0,
+          0.10917501896619797
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.13189950585365295,
+            -0.06800000369548798,
+            -0.10908738523721695
+          ],
+          "max": [
+            0.15880224108695984,
+            0.0,
+            0.10917501896619797
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "crankcase-upper-land-lh-v1",
+      "package": "P18",
+      "native": "assets-src/moto-components/crankcase-upper-land-lh-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/crankcase-upper-land-lh-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/crankcase-upper-land-lh-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "XY upper-land plane, X=(u-300)*scale,Y=(400-v)*scale,Z down0..-.006",
+        "origin_meaning": "Independent top-photo pixel(300,400), not main LH envelope origin",
+        "features": [
+          {
+            "label": "Land normal",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ],
+            "z_range_m": [
+              -0.006,
+              0
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p18_lh_land_v1.py",
+          "creative/research/powertrain-completion-p18-v1/lh-upper-land-plan-v55.json"
+        ],
+        "identity": "PF541109 attributed upper-land study, not registered to JE541038 donor",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "627e930205c0225412e8a72d0e92a6b414c82f54d9135943b80a12a9f1bef77d",
+      "component_bounds_source_m": {
+        "min": [
+          -0.03214166685938835,
+          -0.04898291453719139,
+          -0.006000000052154064
+        ],
+        "max": [
+          0.031593769788742065,
+          0.051936835050582886,
+          0.0
+        ]
+      },
+      "component_meshes": [
+        "LH_UPPER_SADDLE_LAND_FINITE_OPEN_FRAGMENT"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "aea81b164b4c727e3ac8e7b4128e52b69972cd6afed038c7f37aa3597f7afbe2",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.03214166685938835,
+          -0.006000000052154064,
+          -0.051936835050582886
+        ],
+        "max": [
+          0.031593769788742065,
+          0,
+          0.04898291453719139
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.03214166685938835,
+            -0.006000000052154064,
+            -0.051936835050582886
+          ],
+          "max": [
+            0.031593769788742065,
+            0.0,
+            0.04898291453719139
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "crankcase-upper-deck-rh-v1",
+      "package": "P18",
+      "native": "assets-src/moto-components/crankcase-upper-deck-rh-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/crankcase-upper-deck-rh-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/crankcase-upper-deck-rh-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "X=(v-550)*.00042,Y=(u-346)*.00042; topZ=0 underside-.006",
+        "origin_meaning": "Independent upper photo pixel(346,550), axes swap from major RH front-photo frame",
+        "features": [
+          {
+            "label": "Land normal",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ],
+            "z_range_m": [
+              -0.006,
+              0
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "assets-src/moto-components/crankcase-upper-deck-rh-v1/parameters.json"
+        ],
+        "identity": "Independent related RH land; no silent donor/variant merge",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "88125e95d5cb023c03656e2629cd1dc9ff4ba07055bf640f2b6dee71325c6caf",
+      "component_bounds_source_m": {
+        "min": [
+          -0.07686000317335129,
+          -0.04619999974966049,
+          -0.006000000052154064
+        ],
+        "max": [
+          0.07812000066041946,
+          0.045779999345541,
+          0.0
+        ]
+      },
+      "component_meshes": [
+        "RH_CRANKCASE_UPPER_EXTERIOR_LAND_FRAGMENT"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "ba635427c4a23b5e289bcfd08ad9b5734c6b9db476416f567841d79549debd33",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.07686000317335129,
+          -0.006000000052154064,
+          -0.045779999345541
+        ],
+        "max": [
+          0.07812000066041946,
+          0,
+          0.04619999974966049
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.07686000317335129,
+            -0.006000000052154064,
+            -0.045779999345541
+          ],
+          "max": [
+            0.07812000066041946,
+            0.0,
+            0.04619999974966049
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "air-cleaner-box-outer-body-pf581003-v1",
+      "package": "P20",
+      "native": "assets-src/moto-components/air-cleaner-box-outer-body-pf581003-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/air-cleaner-box-outer-body-pf581003-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/air-cleaner-box-outer-body-pf581003-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "X=(u-365)*.00042,Y=(500-v)*.00042 from61513; broad faceZ≈0, depth-Z; round boot port+Y",
+        "origin_meaning": "Source pixel(365,500), not mounted airbox datum",
+        "features": [
+          {
+            "label": "Round outlet",
+            "point_source_m": [
+              0.018,
+              0.16,
+              -0.036
+            ],
+            "direction_source": [
+              0,
+              1,
+              0
+            ],
+            "outer_radius_m": 0.022,
+            "aperture_radius_m": 0.018
+          },
+          {
+            "label": "Mounting eye projected centres XY",
+            "points_source_xy_m": [
+              [
+                0.019740000367164612,
+                0.17051999270915985
+              ],
+              [
+                0.09408000111579895,
+                -0.020579999312758446
+              ],
+              [
+                -0.0709799975156784,
+                -0.06300000101327896
+              ]
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p20_airbox_body_v10.py",
+          "creative/research/powertrain-completion-p20-v1/airbox-outer-body-plan-v105.json"
+        ],
+        "identity": "Physical PF581003 label BM125/150; current RDC125 pose/fit unqualified, G4 remains open",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "6146c8975946e44c36577cdabb57bca45b38348a4470d8a0ae2c909085ff7ed4",
+      "component_bounds_source_m": {
+        "min": [
+          -0.08451284468173981,
+          -0.13736413419246674,
+          -0.10999999940395355
+        ],
+        "max": [
+          0.10499999672174454,
+          0.1785167157649994,
+          0.0044999998062849045
+        ]
+      },
+      "component_meshes": [
+        "PF581003_MAJOR_ASYMMETRIC_EXTERIOR_SHELL",
+        "OBSERVED_RECTANGULAR_MOUTH_WITH_THREE_VANES",
+        "EXTERIOR_MOULDED_ACCESS_SURROUND",
+        "REMOVABLE_TRIANGULATED_OUTER_ACCESS_COVER"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "51b6104e3821cc9d3d2aa964c03207931aa193efbbf98bd448d0a1654a63c706",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.08451284468173981,
+          -0.10999999940395355,
+          -0.1785167157649994
+        ],
+        "max": [
+          0.10499999672174454,
+          0.0044999998062849045,
+          0.13736413419246674
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.08451284468173981,
+            -0.10999999940395355,
+            -0.1785167157649994
+          ],
+          "max": [
+            0.10499999672174454,
+            0.0044999998062849045,
+            0.13736413419246674
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "airbox-carb-boot-physical-study-v2",
+      "package": "P20",
+      "native": "assets-src/moto-components/airbox-carb-boot-physical-study-v2/child-candidate.blend",
+      "glb": "assets-src/moto-components/airbox-carb-boot-physical-study-v2/child-candidate.glb",
+      "parameters": "assets-src/moto-components/airbox-carb-boot-physical-study-v2/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Revolution axis X, far airbox-side trim-X, flared carb mouth+X",
+        "origin_meaning": "Mid-study axial origin, no native placement on body",
+        "features": [
+          {
+            "label": "Boot axis",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              1,
+              0,
+              0
+            ],
+            "review_ends_x_m": [
+              -0.03,
+              0.03
+            ],
+            "far_end_inner_radius_m": 0.0175,
+            "near_flare_inner_radius_m": 0.0245
+          }
+        ],
+        "evidence_paths": [
+          "tools/powertrain_completion_p20_physical_boot_v1.py",
+          "creative/research/powertrain-completion-p20-v1/physical-airbox-boot-plan-v81.json"
+        ],
+        "identity": "Same physical PF581003 source family, boot standalone code unknown; alternative to old duct, never two serial boots",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "f7951157ed27e1899104577f135ded13e0d5e88d336f27dc580a6177fcbe89bd",
+      "component_bounds_source_m": {
+        "min": [
+          -0.029999997466802597,
+          -0.027000000700354576,
+          -0.027000000700354576
+        ],
+        "max": [
+          0.029999997466802597,
+          0.027000276371836662,
+          0.027000000700354576
+        ]
+      },
+      "component_meshes": [
+        "PHYSICAL_SHORT_TAPER_BOOT_TWO_SHALLOW_BANDS_VISIBLE_NEAR_LANDS"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "ffaeb535959c6eaffd9d8e61f6ad78c6818781e82d5df4bc99829e6989d3b20e",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.029999997466802597,
+          -0.027000000700354576,
+          -0.027000276371836662
+        ],
+        "max": [
+          0.029999997466802597,
+          0.027000000700354576,
+          0.027000000700354576
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.029999997466802597,
+            -0.027000000700354576,
+            -0.027000276371836662
+          ],
+          "max": [
+            0.029999997466802597,
+            0.027000000700354576,
+            0.027000000700354576
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "passenger-footrest-stay-left-v1",
+      "package": "P16_APPENDIX",
+      "native": "assets-src/moto-components/passenger-footrest-stay-left-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/passenger-footrest-stay-left-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/passenger-footrest-stay-left-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "X projected lateral,Y longitudinal/up source projection,Z depth; distinct LH/RH traced shapes",
+        "origin_meaning": "Independent drawing datum near lower arm ends, not frame mounting datum",
+        "features": [
+          {
+            "label": "Upper eye",
+            "point_source_m": [
+              0,
+              0.3044,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "label": "Clevis station",
+            "y_m": 0.239
+          }
+        ],
+        "evidence_paths": [
+          "assets-src/moto-components/passenger-footrest-stay-left-v1/parameters.json"
+        ],
+        "identity": "PF113002/PF113003 related variants, not mirrored and installed anchors unknown",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "42efb5676eeb3b28fde748d82bb7f2fe49c162369da4ea75fbc9a3cffe6da8dc",
+      "component_bounds_source_m": {
+        "min": [
+          -0.14378145337104797,
+          -0.009039641357958317,
+          -0.008999999612569809
+        ],
+        "max": [
+          0.10467911511659622,
+          0.3163999915122986,
+          0.02199999988079071
+        ]
+      },
+      "component_meshes": [
+        "PF113002_LEFT_PASSENGER_STAY_FORMED_ARMS_EYE_GUSSET_U_CLEVIS"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "568d574b8a95183171b5e96fea3aa9a6729f2a0235ba6f02cd1fbe45352ac75a",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.14378145337104797,
+          -0.008999999612569809,
+          -0.3163999915122986
+        ],
+        "max": [
+          0.10467911511659622,
+          0.02199999988079071,
+          0.009039641357958317
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.14378145337104797,
+            -0.008999999612569809,
+            -0.3163999915122986
+          ],
+          "max": [
+            0.10467911511659622,
+            0.02199999988079071,
+            0.009039641357958317
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "passenger-footrest-stay-right-v1",
+      "package": "P16_APPENDIX",
+      "native": "assets-src/moto-components/passenger-footrest-stay-right-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/passenger-footrest-stay-right-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/passenger-footrest-stay-right-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "X projected lateral,Y longitudinal/up source projection,Z depth; distinct LH/RH traced shapes",
+        "origin_meaning": "Independent drawing datum near lower arm ends, not frame mounting datum",
+        "features": [
+          {
+            "label": "Upper eye",
+            "point_source_m": [
+              0,
+              0.306,
+              0
+            ],
+            "direction_source": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "label": "Clevis station",
+            "y_m": 0.239
+          }
+        ],
+        "evidence_paths": [
+          "assets-src/moto-components/passenger-footrest-stay-right-v1/parameters.json"
+        ],
+        "identity": "PF113002/PF113003 related variants, not mirrored and installed anchors unknown",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "ce7a973b74969dea418217a9d9ba25829a50ba76bd1eb2fd2f3f3b0e37cc6e59",
+      "component_bounds_source_m": {
+        "min": [
+          -0.10937624424695969,
+          -0.008994020521640778,
+          -0.020201990380883217
+        ],
+        "max": [
+          0.15201473236083984,
+          0.3179999887943268,
+          0.02199999988079071
+        ]
+      },
+      "component_meshes": [
+        "PF113003_RIGHT_PASSENGER_STAY_FORMED_ARMS_EYE_GUSSET_U_CLEVIS"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "38652c6636df6b2281afb0ada45f8c0cf7c5b6eff5457aa085824d4de397f144",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.10937624424695969,
+          -0.020201990380883217,
+          -0.3179999887943268
+        ],
+        "max": [
+          0.15201473236083984,
+          0.02199999988079071,
+          0.008994020521640778
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.10937624424695969,
+            -0.020201990380883217,
+            -0.3179999887943268
+          ],
+          "max": [
+            0.15201473236083984,
+            0.02199999988079071,
+            0.008994020521640778
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "footrest-rubber-v1",
+      "package": "P16_APPENDIX",
+      "native": "assets-src/moto-components/footrest-rubber-v1/child-candidate.blend",
+      "glb": "assets-src/moto-components/footrest-rubber-v1/child-candidate.glb",
+      "parameters": "assets-src/moto-components/footrest-rubber-v1/parameters.json",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Sleeve+X, mouthX=0 to tipX=.106",
+        "origin_meaning": "Open mouth centre",
+        "features": [
+          {
+            "label": "Rubber axis",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              1,
+              0,
+              0
+            ],
+            "length_m": 0.106
+          }
+        ],
+        "evidence_paths": [
+          "assets-src/moto-components/footrest-rubber-v1/parameters.json"
+        ],
+        "identity": "DF161413 related rider sleeve; no fit on PF113000/001 certified",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "510695278845b2006dea7ae8323ca63b1709fa45537e51203907144584c7b477",
+      "component_bounds_source_m": {
+        "min": [
+          0.0,
+          -0.0181452464312315,
+          -0.013500000350177288
+        ],
+        "max": [
+          0.10599999874830246,
+          0.0181452464312315,
+          0.015299811027944088
+        ]
+      },
+      "component_meshes": [
+        "RIDER_RUBBER_NONCIRCULAR_RIBBED_SLEEVE"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "2e31b7792f3d7dfe1b670ece5c26ef60c2c5a1d1eb3e9e57f8f36940b98ff0b2",
+      "component_bounds_gltf_m": {
+        "min": [
+          0,
+          -0.013500000350177288,
+          -0.0181452464312315
+        ],
+        "max": [
+          0.10599999874830246,
+          0.015299811027944088,
+          0.0181452464312315
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            0.0,
+            -0.013500000350177288,
+            -0.0181452464312315
+          ],
+          "max": [
+            0.10599999874830246,
+            0.015299811027944088,
+            0.0181452464312315
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "kickstarter-v2",
+      "package": "P14",
+      "native": "assets-src/moto-components/kickstarter/kickstarter-v2.blend",
+      "glb": "assets-src/moto-components/kickstarter/kickstarter-v2-inspection.glb",
+      "parameters": null,
+      "collection": "WEWA_KICKSTARTER",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Actual restored native rest scene, seven meshes under two preserved rig datums; not a newly installed engine attachment",
+        "origin_meaning": "Stored provisional engine-shaft datum, not a measured current-engine anchor",
+        "features": [
+          {
+            "label": "Engine stroke pivot",
+            "point_source_m": [
+              -0.17000000178813934,
+              0.32199999690055847,
+              -0.6740000247955322
+            ],
+            "direction_local": [
+              0,
+              0,
+              1
+            ],
+            "direction_source": [
+              -1.0,
+              0.0,
+              -2.220446049250313e-16
+            ]
+          },
+          {
+            "label": "Fold pivot",
+            "point_source_m": [
+              -0.21000000834465027,
+              0.3310000002384186,
+              -0.6669999957084656
+            ],
+            "direction_local": [
+              0,
+              -1,
+              0
+            ],
+            "direction_source": [
+              -0.0,
+              2.220446049250313e-16,
+              -1.0
+            ]
+          }
+        ],
+        "coordinate_status": "ACTUAL_NATIVE_READ_AFTER_EXACT_GIT_RESTORATION",
+        "vehicle_transform": null,
+        "evidence_paths": [
+          "assets-src/moto-components/kickstarter/gltf-node-map-v2.json",
+          "kick-native-coordinate-read.json",
+          "requested-parent-exact-restoration.json"
+        ],
+        "identity": "Historical conditional articulated kick, dimensions/ranges and current engine mount unqualified"
+      },
+      "native_sha256": "94a2aa0b4359738e1f701445d196f2bf39d91a75d57bc0f58ca81242061491b4",
+      "component_bounds_source_m": {
+        "min": [
+          -0.23449641466140747,
+          0.19599999487400055,
+          -0.6920000314712524
+        ],
+        "max": [
+          -0.1599999964237213,
+          0.3602875769138336,
+          -0.3920000195503235
+        ]
+      },
+      "component_meshes": [
+        "Kick split mounting clamp and clevis - fixed candidate",
+        "Kick forged arm and base hinge eye - moving candidate",
+        "Kick ribbed pedal rubber - fixed to arm",
+        "Kick closed chrome pedal end",
+        "Kick clamp pinch bolt - estimated unthreaded",
+        "Kick clamp pinch nut - estimated cosmetic",
+        "Kick vertical folding pivot pin - estimated"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "5c72de13912c019a01b1fb4dab27212a76f3f77da7dbff7466a618555bd015ed",
+      "component_bounds_gltf_m": {
+        "min": [
+          -0.23449640721082687,
+          -0.6920000240206718,
+          -0.3602875731885433
+        ],
+        "max": [
+          -0.16000000201165676,
+          -0.3920000195503235,
+          -0.19599999487400055
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            -0.23449641466140747,
+            -0.6920000314712524,
+            -0.3602875769138336
+          ],
+          "max": [
+            -0.1599999964237213,
+            -0.3920000195503235,
+            -0.19599999487400055
+          ]
+        },
+        "max_bounds_delta_m": 7.450580596923828e-09,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "front-footrest-left",
+      "package": "P16_APPENDIX",
+      "native": "assets-src/moto-components/front-footrest-left/front-footrest-left-v1.blend",
+      "glb": "assets-src/moto-components/front-footrest-left/front-footrest-left-inspection.glb",
+      "parameters": null,
+      "collection": "WEWA_FRONT_FOOTREST_LEFT",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Isolated support local+X toward outboard tube; identity parent datum; not installed axes",
+        "origin_meaning": "Base-side isolated inspection datum, not vehicle anchor",
+        "features": [
+          {
+            "label": "Tube axis",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "creative/workflow/records/moto-front-footrest-left-001.json"
+        ],
+        "identity": "Distinct related PF113000 LH / PF113001 RH; not mirrored, current RDC fit unknown",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "4738deb0a7d108478349789f1e8169dc8e013c2900536ef5a0b9928d12cbc4f5",
+      "component_bounds_source_m": {
+        "min": [
+          0.0,
+          -0.03247464448213577,
+          -0.03922461345791817
+        ],
+        "max": [
+          0.16500000655651093,
+          0.03389560058712959,
+          0.039979588240385056
+        ]
+      },
+      "component_meshes": [
+        "PF113000 related metal support - isolated candidate"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "86fe31050154dd2cba058ee4988713d5f268f564309589d97bb57032c2bea8be",
+      "component_bounds_gltf_m": {
+        "min": [
+          0,
+          -0.03922461345791817,
+          -0.03389560058712959
+        ],
+        "max": [
+          0.16500000655651093,
+          0.039979588240385056,
+          0.03247464448213577
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            0.0,
+            -0.03922461345791817,
+            -0.03389560058712959
+          ],
+          "max": [
+            0.16500000655651093,
+            0.039979588240385056,
+            0.03247464448213577
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    },
+    {
+      "id": "front-footrest-right",
+      "package": "P16_APPENDIX",
+      "native": "assets-src/moto-components/front-footrest-right/front-footrest-right-v1.blend",
+      "glb": "assets-src/moto-components/front-footrest-right/front-footrest-right-inspection.glb",
+      "parameters": null,
+      "collection": "WEWA_FRONT_FOOTREST_RIGHT",
+      "native_present": true,
+      "glb_present": true,
+      "semantic_frame": {
+        "frame_description": "Isolated support local+X toward outboard tube; identity parent datum; not installed axes",
+        "origin_meaning": "Base-side isolated inspection datum, not vehicle anchor",
+        "features": [
+          {
+            "label": "Tube axis",
+            "point_source_m": [
+              0,
+              0,
+              0
+            ],
+            "direction_source": [
+              1,
+              0,
+              0
+            ]
+          }
+        ],
+        "evidence_paths": [
+          "creative/workflow/records/moto-front-footrest-right-001.json"
+        ],
+        "identity": "Distinct related PF113000 LH / PF113001 RH; not mirrored, current RDC fit unknown",
+        "coordinate_status": "EXACT_AUTHORED_NATIVE_VALUES_NOT_MEASURED_PHYSICAL_DIMENSIONS",
+        "vehicle_transform": null
+      },
+      "native_sha256": "4a8c04f4abe7855918aa3a6a981a82a3e6d35c1ae86533065acad84e2fb0a8d1",
+      "component_bounds_source_m": {
+        "min": [
+          0.0010000000474974513,
+          -0.04820255935192108,
+          -0.022014720365405083
+        ],
+        "max": [
+          0.23800000548362732,
+          0.049255918711423874,
+          0.0200138408690691
+        ]
+      },
+      "component_meshes": [
+        "PF113001 related RH welded support - isolated candidate"
+      ],
+      "units": {
+        "system": "METRIC",
+        "scale_length": 1.0,
+        "length_unit": "METERS"
+      },
+      "glb_sha256": "9ca58bf29b51734ae0b3f7b0fe4363fa56499fa14824bec5ea14435a052862fa",
+      "component_bounds_gltf_m": {
+        "min": [
+          0.0010000000474974513,
+          -0.022014720365405083,
+          -0.049255918711423874
+        ],
+        "max": [
+          0.23800000548362732,
+          0.0200138408690691,
+          0.04820255935192108
+        ]
+      },
+      "source_to_gltf_bounds_check": {
+        "mapping": "(x,y,z)_source -> (x,z,-y)_gltf",
+        "expected": {
+          "min": [
+            0.0010000000474974513,
+            -0.022014720365405083,
+            -0.049255918711423874
+          ],
+          "max": [
+            0.23800000548362732,
+            0.0200138408690691,
+            0.04820255935192108
+          ]
+        },
+        "max_bounds_delta_m": 0.0,
+        "scope": "Actual bounds consistency only, not per-vertex geometry parity or assembly fit"
+      }
+    }
+  ]
+}
