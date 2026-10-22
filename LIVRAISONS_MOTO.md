@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **200 composants candidats enregistrés**, après
+Le registre courant comporte **205 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -321,3 +321,10 @@ Huit révisions fabriquées/reprises ou achevées en candidat,19 contrôles ind�
 [Suite de finalisation et trente paquets](creative/workflow/motorcycle-finalization-next-v1/PLAN.md) · [Progression actualisée](creative/workflow/motorcycle-remaining-execution-2026-10-22-v4.json). Les 101 parents de la composition ne sont pas un compte de pièces physiques reçues.
 
 Les [répétitions provisoires sont désormais autorisées](creative/workflow/motorcycle-provisional-repetition-authorization-v1/README.md) par réponse explicite, avec priorité complémentaire au moteur et à l’intérieur visible du cadre.
+
+## Moteur et intérieur du cadre — reprise autorisée
+
+- [Deux amortisseurs et quatre clignotants — premier brouillon de placement](creative/reviews/whole-exterior-coverage-v15/README.md).
+- [Châssis central, batterie, support, sangle et dessous de selle — sources et contrôles96](assets-src/moto-components/chassis-interior-completion-v1/README.md). Cinq nouvelles familles observables enregistrées, variantes apparentées et raccords non reçus.
+- [Carter moteur central — omission identifiée et premier candidat de comparaison](assets-src/moto-components/engine-exterior-completion-v1/README.md). Débord inférieur à corriger dans la révision suivante ; premier candidat conservé.
+- [Tiges arrière, matière sombre et géométrie inchangée](creative/reviews/rear-indicator-dark-polymer-v2/README.md).

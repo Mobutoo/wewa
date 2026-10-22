@@ -1,0 +1,143 @@
+{
+  "schema": 1,
+  "id": "MOTO-BATTERY-JF401807-OUTER-STUDY-001",
+  "label": "Batterie JF401807 apparentée, enveloppe extérieure",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Related provisional BM125UG catalogue D04; current RDC applicability unconfirmed",
+    "variant_confirmed": false,
+    "usage": "Observable exterior child in engine/chassis review, no invisible internal engine reconstruction",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01",
+    "D04"
+  ],
+  "claims": [],
+  "views": [],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-BATTERY-JF401807-OUTER-STUDY-001-FIT",
+      "description": "Related variant, bounded estimated dimensions/pose, hidden terminations and received interfaces unresolved",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched installed views/measurements of the current RDC motorcycle"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "chassis-interior-completion-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "path": "../../../creative/research/chassis-child-registration-v1/decomposition.json",
+          "kind": "identity_and_parts",
+          "revision": "chassis-interior-completion-v1",
+          "sha256": "ca8074b44adfba3a5e895ae4c68bc24efa8467e5910c08859352591c74dbe6e4"
+        }
+      ],
+      "reason": "Separate named observable family and source/variant/uncertainty decomposition retained; no fit or art reception",
+      "reviewed_at": "2026-10-22"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "chassis-interior-completion-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Variant and mounted interfaces unconfirmed; bounded working estimates documented",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": null,
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "chassis-interior-completion-v1",
+  "export_revision": "chassis-interior-completion-v1-new-observed-children",
+  "next_action": "Validate current RDC variant, measured sections and installed interfaces; inspect selected child separately before reception",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/chassis-interior-completion-v1/README.md",
+  "candidate_review": "../../../assets-src/moto-components/chassis-interior-completion-v1/README.md",
+  "candidate_objects": [
+    "NEW battery JF401807 related envelope - no label or wiring",
+    "NEW battery stepped lid observed plate46"
+  ],
+  "production_group": 15,
+  "source_plan": "../../../assets-src/moto-components/chassis-interior-completion-v1/G0-G2-plan.json"
+}
