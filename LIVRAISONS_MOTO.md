@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **155 composants candidats enregistrés**, après
+Le registre courant comporte **156 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P06** : [DF201058 loose jacket and four visible branch-insulation skins only — sources et images](creative/reviews/front-completion-p06-holder-lead-skins-front12-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P06** : [Related DF201058 opaque rear bulb-holder cap exterior — sources et images](creative/reviews/front-completion-p06-holder-cap-front12-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P03** : [Related DF191020 single continuous formed-wire cable guide — sources et images](creative/reviews/front-completion-p03-wire-guide-front12-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P24** : [Related4gear DU151005 collar and exposed sleeve exterior — sources et images](creative/reviews/front-completion-p24-related-collar-front12-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
