@@ -1,0 +1,1 @@
+Single bounded currentRDC observed B sheath. See creative/research/p29-lower-front-sheath-observed-b-v1/README.md and coord-plan.json. No certified world pose, role, physical fit or G8. Standalone native geometry/material; linked coord-exemplar references local sheath-material.blend.
