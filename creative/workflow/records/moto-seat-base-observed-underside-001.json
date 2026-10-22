@@ -1,0 +1,229 @@
+{
+  "schema": 1,
+  "id": "MOTO-SEAT-BASE-OBSERVED-UNDERSIDE-001",
+  "label": "P13 — dessous d’embase, grands reliefs et nervures interrompues",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
+    "variant_confirmed": false,
+    "usage": "Separate detailed component candidate, then review-only assembly",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../../../creative/research/seat-base-observed-underside-v2/sources-child-v1.json",
+  "sources": [
+    "D01",
+    "BAJAJ-AR-OWNER-SEAT-P15",
+    "MOTOZILLA-RELATED-SEAT-UNDERSIDE"
+  ],
+  "claims": [],
+  "views": [
+    {
+      "name": "whole-front",
+      "PNG_sha256": "00b7bb2e4610f123be56d8106e8cee496471c0d83c2dcc5226c97b51e21b6d41",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.0,
+        0.0,
+        2.120499849319458
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.020500000566244125
+      ]
+    },
+    {
+      "name": "whole-quarter",
+      "PNG_sha256": "02015df339de2f2600857df391939e61b99e77126e3da5230430249d8b04c0a4",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.699999988079071,
+        -0.9099999666213989,
+        1.6304998397827148
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.020500000566244125
+      ]
+    },
+    {
+      "name": "neutral-outdoor",
+      "PNG_sha256": "b1a60d4520f3b193a38a13c85a8373343025c51892a065ea30aebae33859de74",
+      "actually_saved": true,
+      "samples": 96,
+      "camera_eye": [
+        0.699999988079071,
+        -0.9099999666213989,
+        1.6304998397827148
+      ],
+      "camera_target": [
+        0.0,
+        0.0,
+        0.020500000566244125
+      ]
+    }
+  ],
+  "criteria": [],
+  "gaps": [
+    {
+      "id": "MOTO-SEAT-BASE-OBSERVED-UNDERSIDE-001-DIM",
+      "description": "Exact current RDC part, measured sections and installed interfaces unconfirmed",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5"
+      ],
+      "next_research": "Matched measured part photos/drawings and actual interface checks"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "seat-base-observed-underside-v2",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "path": "../../../creative/research/seat-base-observed-underside-v2/G0-G2-plan-v1.json",
+          "kind": "identity_and_parts",
+          "sha256": "0d59b219acbed03e56f6accd4a050c9b2a333a226b3ce7bf6c7d6f35af163b66",
+          "revision": "seat-base-observed-underside-v2"
+        }
+      ],
+      "reason": "Observable child separated, estimates and variant limits documented; not full package or artistic acceptance",
+      "reviewed_at": "2026-10-22"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "seat-base-observed-underside-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "seat-base-observed-underside-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Exact local dimensions and calibrated documentary comparison remain open",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "seat-base-observed-underside-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/seat-base-observed-underside-v2/seat-base-observed-underside-v2.blend",
+          "kind": "editable_source",
+          "revision": "seat-base-observed-underside-v2",
+          "sha256": "5ba6f51871d62f702379014963f903d93647c1f68792221d7e57da17574b47e7"
+        },
+        {
+          "path": "../../reviews/seat-base-observed-underside-v2/whole-front.png",
+          "kind": "isolated_comparison",
+          "revision": "seat-base-observed-underside-v2",
+          "sha256": "00b7bb2e4610f123be56d8106e8cee496471c0d83c2dcc5226c97b51e21b6d41"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "seat-base-observed-underside-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/seat-base-observed-underside-v2/neutral-outdoor.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "seat-base-observed-underside-v2",
+          "sha256": "b1a60d4520f3b193a38a13c85a8373343025c51892a065ea30aebae33859de74"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "seat-base-observed-underside-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/seat-base-observed-underside-v2/source-geometry-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "seat-base-observed-underside-v2",
+          "sha256": "b0b92254323db88433348bcad67e9516da5b3fed2308137a3e11752ce2c397d5"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "seat-base-observed-underside-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/seat-base-observed-underside-v2/export-buffer-check.json",
+          "kind": "technical_export_check",
+          "revision": "seat-base-observed-underside-v2",
+          "sha256": "5f5266ca63748ee9694ed5d02bfa83658c31864cb941222c942226417b160f8a"
+        },
+        {
+          "path": "../../reviews/seat-base-observed-underside-v2/inspection-v3/engine-driver.png",
+          "kind": "real_runtime_comparison",
+          "revision": "seat-base-observed-underside-v2",
+          "sha256": "f7fcb41b4004e773723c299a217f1191152d196ebb3700182b8d85c62b0accec"
+        }
+      ],
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "seat-base-observed-underside-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "seat-base-observed-underside-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "seat-base-observed-underside-v2",
+  "export_revision": "seat-base-observed-underside-v2-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
+  "art_accepted": false,
+  "candidate_source": "../../../assets-src/moto-components/seat-base-observed-underside-v2/README.md",
+  "candidate_review": "../../reviews/seat-base-observed-underside-v2/README.md",
+  "production_group": 18,
+  "source_plan": "../../../creative/research/seat-base-observed-underside-v2/G0-G2-plan-v1.json"
+}
