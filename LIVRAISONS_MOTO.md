@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **168 composants candidats enregistrés**, après
+Le registre courant comporte **169 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P17** : [MOTO-SIDE-STAND-PIVOT-NYLOC-NUT-001 — bounded exterior candidate — sources et images](creative/reviews/side-stand-pivot-nyloc-nut-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P28** : [DS181009 lower handlebar damper observed exterior skin — sources et images](creative/reviews/front-completion-p28-lower-damper-front14-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P18** : [MOTO-CRANKCASE-UPPER-LAND-LH-001 — bounded exterior candidate — sources et images](creative/reviews/crankcase-upper-land-lh-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P17** : [MOTO-SIDE-STAND-SPRING-COVER-001 — bounded exterior candidate — sources et images](creative/reviews/side-stand-spring-cover-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
