@@ -1,0 +1,62 @@
+{
+  "G0": {
+    "status": "passed",
+    "scope": "SURFACES OPTIQUES VISIBLES through identified physical glazing; hidden rear optics excluded",
+    "reason": "User explicitly narrows scope to observed front appearance and accepts disclosed bounded depth estimates"
+  },
+  "G1": {
+    "status": "partial_estimated_candidate",
+    "usable": [
+      "Circular front perimeter",
+      "four persistent transverse foreground lines",
+      "fine peripheral striation band",
+      "silver visible field interrupted by large main and small lower pilot openings",
+      "narrow silver aperture and perimeter lips"
+    ],
+    "not_recovered": [
+      "optical facet normals",
+      "measured recession",
+      "glass molded-side ownership"
+    ],
+    "hidden_unobserved_parts": "omitted, not requirement for this exterior-only candidate"
+  },
+  "G2": {
+    "method": "Front photo normalized by visible radius; oblique photos cross-check continuity, glazing remains across aperture projections. No photographic calibration or optical-depth reconstruction claimed.",
+    "prom_manual_landmarks_px": {
+      "perimeter_approx": [
+        167,
+        172,
+        920,
+        909
+      ],
+      "center_approx": [
+        543.5,
+        540.5
+      ],
+      "main_opening_center_approx": [
+        565,
+        537
+      ],
+      "main_radius_approx": 75,
+      "pilot_opening_center_approx": [
+        575,
+        705
+      ],
+      "pilot_radius_approx": 28,
+      "transverse_y_at_midwidth_approx": [
+        428,
+        535,
+        649,
+        702
+      ]
+    },
+    "annotation_uncertainty_px": 10,
+    "projection_note": "Front is mildly oblique, thus landmarks constrain appearance only, not exact metric section. Model xy approximates these projections, positional uncertainty4mm.",
+    "depth": "Visible silver field deliberately planar at0.45mm recess, authoring range0..3mm. No generic bowl, no faceted replacement.",
+    "detail_amplitudes": "Positive finite ranges in native parameters are authoring estimates; no claim they were measured or uniquely inferred."
+  },
+  "fabrication": "Five actual mesh objects and native GLB delivered",
+  "limitation": "Planar visible-field simplification lacks actual reflector curvature and facet response; exterior review candidate, not full measured optical model",
+  "G5": "unqualified mounted interfaces",
+  "G8": "pending"
+}
