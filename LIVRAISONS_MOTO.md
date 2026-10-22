@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **196 composants candidats enregistrés**, après
+Le registre courant comporte **197 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -28,6 +28,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Compléments de couverture après audit global
 
+- **LEGACY15-FRONT-BRACE** : [PF181410 FRONT fender brace visible exterior study — sources et images](creative/reviews/front-brace-pf181410-visible-front23-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **LEGACY15-REAR-FLAP** : [JV181410 rear mudflap observed exterior study — sources et images](creative/reviews/rear-mudflap-jv181410-visible-front22-v4-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **LEGACY15-REAR-BRAKE** : [DS151069 rear brake panel visible casting extension LEGACY15 — sources et images](creative/reviews/rear-brake-panel-ds151069-visible-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **LEGACY14-FORK-RH** : [fork-bellows-right-visible-v1 — sources, rendus et contrôles](creative/reviews/fork-bellows-right-visible-v1/README.md). Enfant candidat ; interfaces/paquet ouverts.
