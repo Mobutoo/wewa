@@ -1,5 +1,8 @@
 # Viva Wewa — pièces et contrôles de la moto
 
+**Livraison la plus récente : [moto assemblée v3,161instances, trois rendus96 et fichiers récupérables](creative/reviews/motorcycle-assembled-v3/README.md).** Le réflecteur reste une approximation visible en reprise ; voir le [suivi v6](creative/workflow/motorcycle-remaining-execution-2026-10-22-v6.json).
+
+
 Cette page permet d'ouvrir les images, les sources et les contrôles directement
 depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegardées
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
