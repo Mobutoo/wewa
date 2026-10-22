@@ -1,0 +1,8 @@
+file:///workspace/wewa/tools/powertrain_completion_validate.mjs:7
+if([...edges.values()].some(n=>n>2))throw Error('Branch topology '+mesh.getName());if(minDot<=0)throw Error('Reversed face/corner normals '+mesh.getName()+' '+minDot);let components=0;const seen=new Set();for(const start of graph.keys()){if(seen.has(start))continue;components++;const todo=[start];while(todo.length){const k=todo.pop();if(seen.has(k))continue;seen.add(k);todo.push(...graph.get(k));}}
+                                                                                                      ^
+
+Error: Reversed face/corner normals PF581003_MAJOR_ASYMMETRIC_EXTERIOR_SHELL -0.9734305125850403
+    at file:///workspace/wewa/tools/powertrain_completion_validate.mjs:7:103
+
+Node.js v24.19.0
