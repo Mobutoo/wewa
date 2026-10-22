@@ -5,7 +5,7 @@ depuis le dépôt GitHub public. Les rendus ci-dessous sont des images sauvegard
 de Blender ; ils ne sont pas générés par GitHub au moment de la consultation.
 Les liens de fichiers GLB et Blender donnent accès aux fichiers téléchargeables.
 
-Le registre courant comporte **195 composants candidats enregistrés**, après
+Le registre courant comporte **196 composants candidats enregistrés**, après
 les premières études du cache gauche et du rail de porte-bagages. Le point Source23
 historique en comportait 95 ; les livraisons ultérieures restent distinctes.
 Les dix-huit ensembles restent ouverts : une source ou un contrôle technique
@@ -34,6 +34,7 @@ réussi ne vaut pas réception artistique ni validation sur iPhone.
 
 ## Exécution continue des trente paquets
 
+- **P04** : [Existing RH cover and visible head — normalized coordinate derivative — sources et images](creative/reviews/right-side-cover-coordinate-conversion-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P25** : [DS181012 single fork-leg shouldered plug visible exterior study — sources et images](creative/reviews/front-completion-p25-fork-plug-front21-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P25** : [PF121025 visible fairing structure two-pose exterior study — sources et images](creative/reviews/front-completion-p25-fairing-structure-front20-v2-coordination-v1/README.md). Candidat, paquet encore ouvert.
 - **P14** : [MOTO-GEAR-SELECTOR-CLAMP-EARS-VISIBLE-HEAD-001 — bounded exterior candidate — sources et images](creative/reviews/gear-selector-clamp-ears-visible-head-v1-coordination-v1/README.md). Candidat, paquet encore ouvert.
