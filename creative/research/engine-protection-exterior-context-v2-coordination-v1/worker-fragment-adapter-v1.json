@@ -1,0 +1,49 @@
+{
+  "component_id": "MOTO-ENGINE-PROTECTION-HOOP-001",
+  "package": "P26",
+  "revision": "engine-protection-exterior-context-v2",
+  "label": "Existing engine guard kit — rigid guide context with open review joints",
+  "source": "assets-src/moto-components/engine-protection-exterior-context-v2/integration-wrapper.blend",
+  "source_sha256": "44c65786c02bc41a890c4a84392fd4c70fcd640b7f961de2040415de18cb07dd",
+  "collection": "ENGINE_PROTECTION_EXISTING_KIT_CONTEXT_V2",
+  "root": "ENGINE_PROTECTION_HOOP_IDENTITY_ROOT",
+  "source_objects": [
+    "Protection hoop tube only, tabs and centreplate absent",
+    "Protection hoop centralplate only, weld and hook absent",
+    "First observed terminal-A only, tube weld opposite and hook abs",
+    "Second observed terminal-B only, tube weld opposite and hook ab"
+  ],
+  "files": [
+    "engine-protection-exterior-context-v2/engine-protection-exterior-context-v2-inspection.glb"
+  ],
+  "review": "engine-protection-exterior-context-v2",
+  "render_report": "creative/reviews/engine-protection-exterior-context-v2/render-report.json",
+  "coord_plan": "creative/research/engine-protection-exterior-context-v2/coord-plan.json",
+  "root_lookup_key": "engine-protection-hoop-tube",
+  "replace_parent_key": "engine-protection-hoop-tube",
+  "existing_parent_ids": [
+    "MOTO-ENGINE-PROTECTION-HOOP-001",
+    "MOTO-ENGINE-PROTECTION-CENTRE-PLATE-001",
+    "MOTO-ENGINE-PROTECTION-TERMINAL-A-001",
+    "MOTO-ENGINE-PROTECTION-TERMINAL-B-001"
+  ],
+  "new_physical_ids": 0,
+  "physical_count_increment": 0,
+  "context_pose_ready": true,
+  "world_hint_translation_m": [
+    0,
+    -0.02,
+    -0.43
+  ],
+  "world_hint_rotation_degrees": [
+    0,
+    0,
+    0
+  ],
+  "integration_policy": "Replace the single hoop with the candidate context kit; do not duplicate tube. Three accessory poses are author hypotheses plus3mm displayed open joints, not fit/OEM/weld reception.",
+  "fit_qualified": false,
+  "art_accepted": false,
+  "original_fragment": "creative/reviews/engine-protection-exterior-context-v2/catalog-fragment.json",
+  "original_fragment_sha256": "dbac1e3e6d5c6872db760d91b0de7a96fca27b95ee65aaf456ae6ee78beddfdd",
+  "adapter_scope": "Source already full assets-src path; files relative component root. Preserve explicit kit collection, four existing identities and no new physical count; no root catalogue publication."
+}

@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "id": "MOTO-ENGINE-PROTECTION-HOOP-001",
-  "label": "Arceau moteur — tube isolé, garde incomplet",
+  "label": "Existing engine guard kit — rigid guide context with open review joints",
   "source_ids": [
     "AS-049",
     "CON-001"
@@ -12,7 +12,7 @@
     "material"
   ],
   "identity": {
-    "variant": "RelatedPF231201 Crosland/BM125X55; current125HDRDC identity, tube manufacturing segments, exact sections/finish and installed contacts unconfirmed",
+    "variant": "Current RDC appearance target, related part references; exact applicability not certified",
     "variant_confirmed": false,
     "usage": "Separate detailed component candidate, then review-only assembly",
     "review_distances_m": [
@@ -21,7 +21,7 @@
       0.65
     ]
   },
-  "source_register": "../sources.json",
+  "source_register": "../../reviews/engine-protection-exterior-context-v2-coordination-v1/source-register.json",
   "sources": [
     "D01"
   ],
@@ -29,318 +29,387 @@
   "views": [
     {
       "name": "quarter",
-      "camera_location_m": [
-        0.55,
-        -0.85,
-        0.4
-      ],
-      "target_m": [
-        0,
-        0,
-        -0.12
-      ],
-      "ortho_scale_m": 0.65,
-      "allow_deliberate_macro_crop": false,
-      "camera_preflight": {
-        "schema": "wewa.camera-preflight.v1",
-        "camera": "Isolated camera",
-        "camera_type": "ORTHO",
-        "camera_clip_m": [
-          0.0010000000474974513,
-          10.0
+      "PNG_sha256": "aece82b5f68e5822032092398157cb0ed2a269155f4b3bba9272cf58d4dd89bb",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "quarter",
+        "samples": 96,
+        "resolution": [
+          1000,
+          800
         ],
-        "nearest_actual_vertex_depth_m": 0.968465927839283,
-        "farthest_actual_vertex_depth_m": 1.2796515359397582,
-        "projected_uv_min": [
-          0.15163692242989385,
-          0.1512273113639631
+        "PNG": "creative/reviews/engine-protection-exterior-context-v2/material-96/quarter.png",
+        "EXR": "creative/reviews/engine-protection-exterior-context-v2/material-96/raw/quarter.exr",
+        "PNG_sha256": "aece82b5f68e5822032092398157cb0ed2a269155f4b3bba9272cf58d4dd89bb",
+        "EXR_sha256": "334d1ec5a1ba61e83e36aecab0706106617d39d6ce854cb1491515c77bc2d7de",
+        "camera": [
+          -1.0711805820465088,
+          -0.5355902910232544,
+          0.24341318011283875
         ],
-        "projected_uv_max": [
-          0.848363278541679,
-          0.8572463591147841
+        "target": [
+          0.0,
+          9.313225746154785e-10,
+          -0.1315000057220459
         ],
-        "allow_deliberate_crop": false,
-        "whole_component_margin": 0.005,
-        "mesh_rows": [
-          {
-            "object": "Protection hoop tube only, tabs and centreplate absent",
-            "vertices": 199120,
-            "depth_m": [
-              0.968465927839283,
-              1.2796515359397582
-            ],
-            "projected_uv_min": [
-              0.15163692242989385,
-              0.1512273113639631
-            ],
-            "projected_uv_max": [
-              0.848363278541679,
-              0.8572463591147841
-            ],
-            "finite": true
-          }
-        ],
-        "actual_vertices_outside_depth_range": false,
-        "projected_extent_outside_margin": false,
-        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
-        "technical_preflight_passed": true,
-        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "Context inspection camera",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0005355902831070125,
+            53.55902862548828
+          ],
+          "nearest_actual_vertex_depth_m": 1.0049158479085216,
+          "farthest_actual_vertex_depth_m": 1.4716104920161097,
+          "projected_uv_min": [
+            0.3386707212141018,
+            0.23901000230557912
+          ],
+          "projected_uv_max": [
+            0.6613292567826023,
+            0.8032181852346564
+          ],
+          "allow_deliberate_crop": false,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Protection hoop tube only, tabs and centreplate absent",
+              "vertices": 199120,
+              "depth_m": [
+                1.0049158479085216,
+                1.4716104920161097
+              ],
+              "projected_uv_min": [
+                0.3386707212141018,
+                0.23901000230557912
+              ],
+              "projected_uv_max": [
+                0.6613292567826023,
+                0.8032181852346564
+              ],
+              "finite": true
+            },
+            {
+              "object": "Protection hoop centralplate only, weld and hook absent",
+              "vertices": 64614,
+              "depth_m": [
+                1.172691273435597,
+                1.267511015183603
+              ],
+              "projected_uv_min": [
+                0.46863246085069127,
+                0.6049170573895103
+              ],
+              "projected_uv_max": [
+                0.5425602997476336,
+                0.7037951296931545
+              ],
+              "finite": true
+            },
+            {
+              "object": "First observed terminal-A only, tube weld opposite and hook abs",
+              "vertices": 83992,
+              "depth_m": [
+                1.2418819188845696,
+                1.2678556654467015
+              ],
+              "projected_uv_min": [
+                0.4551495673191711,
+                0.26436940914760176
+              ],
+              "projected_uv_max": [
+                0.4982060985433214,
+                0.4008705414080767
+              ],
+              "finite": true
+            },
+            {
+              "object": "Second observed terminal-B only, tube weld opposite and hook ab",
+              "vertices": 78754,
+              "depth_m": [
+                1.2944217679893695,
+                1.3367350185966773
+              ],
+              "projected_uv_min": [
+                0.5023702678264125,
+                0.29998318914645716
+              ],
+              "projected_uv_max": [
+                0.5442741523563039,
+                0.4204269500269293
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": false,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true
+        }
       },
-      "PNG_sha256": "fa9c95a90d86a9d5c526d434066f5b36b208db7f91c588ebf9628bbf5ba5cb77",
-      "checkpoint_file": "checkpoint-quarter.json",
-      "reused_verified_checkpoint": false
+      "resolution_px": [
+        1000,
+        800
+      ],
+      "resolution_provenance": "native-resolution-reconciliation-v1.json; independent actual PNG and EXR headers. Original author declaration retained unchanged under source_author_view."
     },
     {
-      "name": "front",
-      "camera_location_m": [
-        0,
-        -1,
-        -0.12
-      ],
-      "target_m": [
-        0,
-        0,
-        -0.12
-      ],
-      "ortho_scale_m": 0.65,
-      "allow_deliberate_macro_crop": false,
-      "camera_preflight": {
-        "schema": "wewa.camera-preflight.v1",
-        "camera": "Isolated camera",
-        "camera_type": "ORTHO",
-        "camera_clip_m": [
-          0.0010000000474974513,
-          10.0
+      "name": "reverse",
+      "PNG_sha256": "a6baa43f3b9fe3856896a535b5f0fc1138dcbae9a74aefc54726821a1ea339e0",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "reverse",
+        "samples": 96,
+        "resolution": [
+          1000,
+          800
         ],
-        "nearest_actual_vertex_depth_m": 0.9899999586787436,
-        "farthest_actual_vertex_depth_m": 1.0099999997764826,
-        "projected_uv_min": [
-          0.08800746107664992,
-          0.18769196372764085
+        "PNG": "creative/reviews/engine-protection-exterior-context-v2/material-96/reverse.png",
+        "EXR": "creative/reviews/engine-protection-exterior-context-v2/material-96/raw/reverse.exr",
+        "PNG_sha256": "a6baa43f3b9fe3856896a535b5f0fc1138dcbae9a74aefc54726821a1ea339e0",
+        "EXR_sha256": "49176f15f9a58456312018d3e2b821e467a12fcf556cc9ba9a430f1c5c57c3cc",
+        "camera": [
+          1.0711805820465088,
+          0.3213541805744171,
+          0.24341318011283875
         ],
-        "projected_uv_max": [
-          0.9119925389233501,
-          0.7799996550037127
+        "target": [
+          0.0,
+          9.313225746154785e-10,
+          -0.1315000057220459
         ],
-        "allow_deliberate_crop": false,
-        "whole_component_margin": 0.005,
-        "mesh_rows": [
-          {
-            "object": "Protection hoop tube only, tabs and centreplate absent",
-            "vertices": 199120,
-            "depth_m": [
-              0.9899999586787436,
-              1.0099999997764826
-            ],
-            "projected_uv_min": [
-              0.08800746107664992,
-              0.18769196372764085
-            ],
-            "projected_uv_max": [
-              0.9119925389233501,
-              0.7799996550037127
-            ],
-            "finite": true
-          }
-        ],
-        "actual_vertices_outside_depth_range": false,
-        "projected_extent_outside_margin": false,
-        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
-        "technical_preflight_passed": true,
-        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "Context inspection camera",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0005355902831070125,
+            53.55902862548828
+          ],
+          "nearest_actual_vertex_depth_m": 0.9141571166251592,
+          "farthest_actual_vertex_depth_m": 1.4094122832987566,
+          "projected_uv_min": [
+            0.3917398153736251,
+            0.23202560509773396
+          ],
+          "projected_uv_max": [
+            0.6082604906212613,
+            0.8143793602540585
+          ],
+          "allow_deliberate_crop": false,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Protection hoop tube only, tabs and centreplate absent",
+              "vertices": 199120,
+              "depth_m": [
+                0.9141571166251592,
+                1.4094122832987566
+              ],
+              "projected_uv_min": [
+                0.3917398153736251,
+                0.23202560509773396
+              ],
+              "projected_uv_max": [
+                0.6082604906212613,
+                0.8143793602540585
+              ],
+              "finite": true
+            },
+            {
+              "object": "Protection hoop centralplate only, weld and hook absent",
+              "vertices": 64614,
+              "depth_m": [
+                1.0961217732406245,
+                1.2007269220834311
+              ],
+              "projected_uv_min": [
+                0.46673766073589756,
+                0.6053054552247761
+              ],
+              "projected_uv_max": [
+                0.5215690284229946,
+                0.7064281881430623
+              ],
+              "finite": true
+            },
+            {
+              "object": "First observed terminal-A only, tube weld opposite and hook abs",
+              "vertices": 83992,
+              "depth_m": [
+                1.222649023614119,
+                1.264398833427015
+              ],
+              "projected_uv_min": [
+                0.49227754156832,
+                0.3031039869324838
+              ],
+              "projected_uv_max": [
+                0.5376932043738196,
+                0.4294864200514872
+              ],
+              "finite": true
+            },
+            {
+              "object": "Second observed terminal-B only, tube weld opposite and hook ab",
+              "vertices": 78754,
+              "depth_m": [
+                1.1695018356700588,
+                1.1906293055417003
+              ],
+              "projected_uv_min": [
+                0.46292431176552656,
+                0.264177915718965
+              ],
+              "projected_uv_max": [
+                0.5071056299649431,
+                0.3938796047900502
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": false,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true
+        }
       },
-      "PNG_sha256": "2b09b3e84fe08f1d5867566593cc2ead285b13e12dc18c4f572ec300125e6f5a",
-      "checkpoint_file": "checkpoint-front.json",
-      "reused_verified_checkpoint": false
+      "resolution_px": [
+        1000,
+        800
+      ],
+      "resolution_provenance": "native-resolution-reconciliation-v1.json; independent actual PNG and EXR headers. Original author declaration retained unchanged under source_author_view."
     },
     {
-      "name": "reverse-quarter",
-      "camera_location_m": [
-        -0.55,
-        0.85,
-        0.25
-      ],
-      "target_m": [
-        0,
-        0,
-        -0.12
-      ],
-      "ortho_scale_m": 0.65,
-      "allow_deliberate_macro_crop": false,
-      "camera_preflight": {
-        "schema": "wewa.camera-preflight.v1",
-        "camera": "Isolated camera",
-        "camera_type": "ORTHO",
-        "camera_clip_m": [
-          0.0010000000474974513,
-          10.0
+      "name": "neutral",
+      "PNG_sha256": "98aa30e06339682aaa75614da08e80745761a7a98584db86106806bb37cbca43",
+      "samples": 96,
+      "actually_saved": true,
+      "source_author_view": {
+        "view": "neutral",
+        "samples": 96,
+        "resolution": [
+          1000,
+          800
         ],
-        "nearest_actual_vertex_depth_m": 0.9126249441306817,
-        "farthest_actual_vertex_depth_m": 1.2110635630644786,
-        "projected_uv_min": [
-          0.1516366527552951,
-          0.15468676049243113
+        "PNG": "creative/reviews/engine-protection-exterior-context-v2/material-96/neutral.png",
+        "EXR": "creative/reviews/engine-protection-exterior-context-v2/material-96/raw/neutral.exr",
+        "PNG_sha256": "98aa30e06339682aaa75614da08e80745761a7a98584db86106806bb37cbca43",
+        "EXR_sha256": "af49c589f32040148f243d6509399f7487c77946295d8c4d261bdd455e68a47d",
+        "camera": [
+          -1.0711805820465088,
+          -0.2677951455116272,
+          0.29697224497795105
         ],
-        "projected_uv_max": [
-          0.8483630556335234,
-          0.8427576616067387
+        "target": [
+          0.0,
+          9.313225746154785e-10,
+          -0.1315000057220459
         ],
-        "allow_deliberate_crop": false,
-        "whole_component_margin": 0.005,
-        "mesh_rows": [
-          {
-            "object": "Protection hoop tube only, tabs and centreplate absent",
-            "vertices": 199120,
-            "depth_m": [
-              0.9126249441306817,
-              1.2110635630644786
-            ],
-            "projected_uv_min": [
-              0.1516366527552951,
-              0.15468676049243113
-            ],
-            "projected_uv_max": [
-              0.8483630556335234,
-              0.8427576616067387
-            ],
-            "finite": true
-          }
-        ],
-        "actual_vertices_outside_depth_range": false,
-        "projected_extent_outside_margin": false,
-        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
-        "technical_preflight_passed": true,
-        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
+        "camera_preflight": {
+          "schema": "wewa.camera-preflight.v1",
+          "camera": "Context inspection camera",
+          "camera_type": "ORTHO",
+          "camera_clip_m": [
+            0.0005355902831070125,
+            53.55902862548828
+          ],
+          "nearest_actual_vertex_depth_m": 0.9160516923876494,
+          "farthest_actual_vertex_depth_m": 1.4118801434770454,
+          "projected_uv_min": [
+            0.4066138315623203,
+            0.2246896587367851
+          ],
+          "projected_uv_max": [
+            0.5933857536232228,
+            0.8268745326712352
+          ],
+          "allow_deliberate_crop": false,
+          "whole_component_margin": 0.005,
+          "mesh_rows": [
+            {
+              "object": "Protection hoop tube only, tabs and centreplate absent",
+              "vertices": 199120,
+              "depth_m": [
+                0.9160516923876494,
+                1.4118801434770454
+              ],
+              "projected_uv_min": [
+                0.4066138315623203,
+                0.2246896587367851
+              ],
+              "projected_uv_max": [
+                0.5933857536232228,
+                0.8268745326712352
+              ],
+              "finite": true
+            },
+            {
+              "object": "Protection hoop centralplate only, weld and hook absent",
+              "vertices": 64614,
+              "depth_m": [
+                1.0943300119477741,
+                1.196109903677167
+              ],
+              "projected_uv_min": [
+                0.4811847818763079,
+                0.5964706950416327
+              ],
+              "projected_uv_max": [
+                0.5305725005483939,
+                0.7061794918718043
+              ],
+              "finite": true
+            },
+            {
+              "object": "First observed terminal-A only, tube weld opposite and hook abs",
+              "vertices": 83992,
+              "depth_m": [
+                1.1751375966600144,
+                1.2014047280640623
+              ],
+              "projected_uv_min": [
+                0.4644385056867005,
+                0.2638970571451168
+              ],
+              "projected_uv_max": [
+                0.5102646522999215,
+                0.3988539416045086
+              ],
+              "finite": true
+            },
+            {
+              "object": "Second observed terminal-B only, tube weld opposite and hook ab",
+              "vertices": 78754,
+              "depth_m": [
+                1.2309059933274347,
+                1.2744502468278358
+              ],
+              "projected_uv_min": [
+                0.4903600684286833,
+                0.31040807399909875
+              ],
+              "projected_uv_max": [
+                0.534935999731726,
+                0.4266476999454703
+              ],
+              "finite": true
+            }
+          ],
+          "actual_vertices_outside_depth_range": false,
+          "projected_extent_outside_margin": false,
+          "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
+          "technical_preflight_passed": true
+        }
       },
-      "PNG_sha256": "ff2aecf91c9e4627190bf7480c45f5d9a12f0df39f4611b2fb865879f079a928",
-      "checkpoint_file": "checkpoint-reverse-quarter.json",
-      "reused_verified_checkpoint": false
-    },
-    {
-      "name": "bend-detail",
-      "camera_location_m": [
-        0.42,
-        -0.16,
-        0.12
+      "resolution_px": [
+        1000,
+        800
       ],
-      "target_m": [
-        0.235,
-        0,
-        -0.045
-      ],
-      "ortho_scale_m": 0.13,
-      "allow_deliberate_macro_crop": true,
-      "camera_preflight": {
-        "schema": "wewa.camera-preflight.v1",
-        "camera": "Isolated camera",
-        "camera_type": "ORTHO",
-        "camera_clip_m": [
-          0.0010000000474974513,
-          10.0
-        ],
-        "nearest_actual_vertex_depth_m": 0.27045238879873523,
-        "farthest_actual_vertex_depth_m": 0.6610296164638239,
-        "projected_uv_min": [
-          -2.0566375718209358,
-          -1.0225273148188498
-        ],
-        "projected_uv_max": [
-          0.6916255818626942,
-          3.012057543687207
-        ],
-        "allow_deliberate_crop": true,
-        "whole_component_margin": 0.005,
-        "mesh_rows": [
-          {
-            "object": "Protection hoop tube only, tabs and centreplate absent",
-            "vertices": 199120,
-            "depth_m": [
-              0.27045238879873523,
-              0.6610296164638239
-            ],
-            "projected_uv_min": [
-              -2.0566375718209358,
-              -1.0225273148188498
-            ],
-            "projected_uv_max": [
-              0.6916255818626942,
-              3.012057543687207
-            ],
-            "finite": true
-          }
-        ],
-        "actual_vertices_outside_depth_range": false,
-        "projected_extent_outside_margin": true,
-        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
-        "technical_preflight_passed": true,
-        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
-      },
-      "PNG_sha256": "03f562365157c0d8dfa94a639d5e8838346424a915a5be889b9c7762b70c9344",
-      "checkpoint_file": "checkpoint-bend-detail.json",
-      "reused_verified_checkpoint": false
-    },
-    {
-      "name": "mouth-detail",
-      "camera_location_m": [
-        0.22,
-        -0.318,
-        0.02
-      ],
-      "target_m": [
-        0.07,
-        -0.008,
-        -0.255
-      ],
-      "ortho_scale_m": 0.065,
-      "allow_deliberate_macro_crop": true,
-      "camera_preflight": {
-        "schema": "wewa.camera-preflight.v1",
-        "camera": "Isolated camera",
-        "camera_type": "ORTHO",
-        "camera_clip_m": [
-          0.0010000000474974513,
-          10.0
-        ],
-        "nearest_actual_vertex_depth_m": 0.23107385105819012,
-        "farthest_actual_vertex_depth_m": 0.5260511564179241,
-        "projected_uv_min": [
-          -4.139717297124474,
-          0.029663754954523225
-        ],
-        "projected_uv_max": [
-          3.308127963865371,
-          6.684505695040861
-        ],
-        "allow_deliberate_crop": true,
-        "whole_component_margin": 0.005,
-        "mesh_rows": [
-          {
-            "object": "Protection hoop tube only, tabs and centreplate absent",
-            "vertices": 199120,
-            "depth_m": [
-              0.23107385105819012,
-              0.5260511564179241
-            ],
-            "projected_uv_min": [
-              -4.139717297124474,
-              0.029663754954523225
-            ],
-            "projected_uv_max": [
-              3.308127963865371,
-              6.684505695040861
-            ],
-            "finite": true
-          }
-        ],
-        "actual_vertices_outside_depth_range": false,
-        "projected_extent_outside_margin": true,
-        "scope": "Actual evaluated mesh extents under active shape keys; geometry visibility only, not exposure, focus, photographic calibration or artistic reception",
-        "technical_preflight_passed": true,
-        "helper_sha256": "e33ebdf203865de95f25bfcf73b1bf4cacd91528e5cbed849b7eaf70e84d0c6a"
-      },
-      "PNG_sha256": "569d6d313b5039183276c1fcd5c369c72a127396a7a63219da585aa0d80a19ef",
-      "checkpoint_file": "checkpoint-mouth-detail.json",
-      "reused_verified_checkpoint": false
+      "resolution_provenance": "native-resolution-reconciliation-v1.json; independent actual PNG and EXR headers. Original author declaration retained unchanged under source_author_view."
     }
   ],
   "criteria": [],
@@ -353,16 +422,26 @@
   ],
   "gates": {
     "G0": {
-      "status": "pending",
-      "revision": "engine-protection-hoop-v1",
-      "reviewer": null,
-      "evidence": [],
-      "reason": "",
-      "reviewed_at": null
+      "status": "passed",
+      "revision": "engine-protection-exterior-context-v2-coordination-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "kind": "identity_and_parts",
+          "path": "../../research/engine-protection-exterior-context-v2-coordination-v1/G0-G2-plan-v1.json",
+          "sha256": "856e6f1c7ffbc942af685126fedb12300531dd180c93445ab2aa90615c00eecf",
+          "revision": "engine-protection-exterior-context-v2-coordination-v1"
+        }
+      ],
+      "reason": "Observable worker child identified, sources/estimates/gaps linked; not a complete package or art reception",
+      "reviewed_at": "2026-10-22T06:44:41.981207+00:00"
     },
     "G1": {
       "status": "blocked",
-      "revision": "engine-protection-hoop-v1",
+      "revision": "engine-protection-exterior-context-v2-coordination-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -370,7 +449,7 @@
     },
     "G2": {
       "status": "blocked",
-      "revision": "engine-protection-hoop-v1",
+      "revision": "engine-protection-exterior-context-v2-coordination-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "Exact local dimensions and calibrated documentary comparison remain open",
@@ -378,79 +457,79 @@
     },
     "G3": {
       "status": "rework",
-      "revision": "engine-protection-hoop-v1",
+      "revision": "engine-protection-exterior-context-v2-coordination-v1",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../../assets-src/moto-components/engine-protection-hoop/engine-protection-hoop-v1.blend",
+          "path": "../../../assets-src/moto-components/engine-protection-exterior-context-v2/integration-wrapper.blend",
           "kind": "editable_source",
-          "revision": "engine-protection-hoop-v1",
-          "sha256": "7d0364876d5c198e1eb49bdb076b184fb169893d0ea80c82d609876f96b721c3"
+          "revision": "engine-protection-exterior-context-v2-coordination-v1",
+          "sha256": "44c65786c02bc41a890c4a84392fd4c70fcd640b7f961de2040415de18cb07dd"
         },
         {
-          "path": "../../reviews/engine-protection-hoop-v1/quarter.png",
+          "path": "../../reviews/engine-protection-exterior-context-v2-coordination-v1/quarter.png",
           "kind": "isolated_comparison",
-          "revision": "engine-protection-hoop-v1",
-          "sha256": "fa9c95a90d86a9d5c526d434066f5b36b208db7f91c588ebf9628bbf5ba5cb77"
+          "revision": "engine-protection-exterior-context-v2-coordination-v1",
+          "sha256": "aece82b5f68e5822032092398157cb0ed2a269155f4b3bba9272cf58d4dd89bb"
         }
       ],
-      "reason": "Root independently opened five actual final96 views, two actual Babylon views and both actual related PF231201 photos. Hollow bent tube only, real side mouths and open ends. Central plate, terminal plates, welds, hook, spacer and fixing hardware are separate and NOT BUILT in this unit. Width535.6/height275/diameter20/wall1.5mm and proportions are estimates, not current RDC metrology.",
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G4": {
       "status": "rework",
-      "revision": "engine-protection-hoop-v1",
+      "revision": "engine-protection-exterior-context-v2-coordination-v1",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/engine-protection-hoop-v1/mouth-detail.png",
+          "path": "../../reviews/engine-protection-exterior-context-v2-coordination-v1/neutral.png",
           "kind": "surface_or_sound_comparison",
-          "revision": "engine-protection-hoop-v1",
-          "sha256": "569d6d313b5039183276c1fcd5c369c72a127396a7a63219da585aa0d80a19ef"
+          "revision": "engine-protection-exterior-context-v2-coordination-v1",
+          "sha256": "98aa30e06339682aaa75614da08e80745761a7a98584db86106806bb37cbca43"
         }
       ],
-      "reason": "Two original512 normal/ORM maps and black coated shader. Five actual96 studio reflections read including bend and side mouth; continuous highlighted bend, no critical visible artifact established. G3-to-PBR POSITION/N/UV/T/indices and world matrices exact. Roughness0.24 and RMS0.3um remain proposed, no photographed pixels, measured paint, calibrated photography or browser parity reception.",
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G5": {
       "status": "rework",
-      "revision": "engine-protection-hoop-v1",
+      "revision": "engine-protection-exterior-context-v2-coordination-v1",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/engine-protection-hoop-v1/source-geometry-check.json",
+          "path": "../../reviews/engine-protection-exterior-context-v2-coordination-v1/source-geometry-check.json",
           "kind": "motion_or_interface_check",
-          "revision": "engine-protection-hoop-v1",
-          "sha256": "1895b8a35d196b10690a55da600ca63b277f5fce3a25b90dd72d9e03ca620fac"
+          "revision": "engine-protection-exterior-context-v2-coordination-v1",
+          "sha256": "898fac7f158f98f6f180973d5dca6f274b5fb9c1dd033a0dd25f38128c573b77"
         }
       ],
-      "reason": "Isolated datum at upper crossbar center, localXwidth/+Yrear/+Zup. No vehicle installation transform, terminal plates, welds or certified fixing. Open temporary ends and side mouths do not establish OEM bores, strength, load behavior, currentRDC variant or fit.",
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G6": {
       "status": "rework",
-      "revision": "engine-protection-hoop-v1",
+      "revision": "engine-protection-exterior-context-v2-coordination-v1",
       "reviewer": null,
       "evidence": [
         {
-          "path": "../../reviews/engine-protection-hoop-v1/export-buffer-check.json",
+          "path": "../../reviews/engine-protection-exterior-context-v2-coordination-v1/export-buffer-check.json",
           "kind": "technical_export_check",
-          "revision": "engine-protection-hoop-v1",
-          "sha256": "71074d0fc6fdce2888bcc967f89dcf6bf40355ea4e4d6692af873b5eed7a0d63"
+          "revision": "engine-protection-exterior-context-v2-coordination-v1",
+          "sha256": "29af2165afacebfaef3fcbc427eb0ace5a19190cfdd29d3b30b88709e7848c26"
         },
         {
-          "path": "../../reviews/engine-protection-hoop-v1/inspection-v3/engine-driver.png",
+          "path": "../../reviews/engine-protection-exterior-context-v2-coordination-v1/inspection-v5/engine-driver.png",
           "kind": "real_runtime_comparison",
-          "revision": "engine-protection-hoop-v1",
-          "sha256": "0ee7fe94a937708f0e529fb46a82fadc181adc59121dbf4eebd8c6e386780daa"
+          "revision": "engine-protection-exterior-context-v2-coordination-v1",
+          "sha256": "618c813ed7c7a8733bba8a3515515aac7c7ac45650cd594369a3207f637e471f"
         }
       ],
-      "reason": "Actual398248triangles, strict0glTFerrors, one normalmapped primitive/zero collapsed UV. Actual Babylon1mesh/four nonblank canvases, zero page/HTTPerrors. Detailed inspection source, no mobileLOD/Safari/iPhone hardware or artistic acceptance.",
+      "reason": "Concrete technical evidence available; shape/material, measured interfaces and artistic reception still open",
       "reviewed_at": null
     },
     "G7": {
       "status": "pending",
-      "revision": "engine-protection-hoop-v1",
+      "revision": "engine-protection-exterior-context-v2-coordination-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "Inspection source, not a qualified mobile LOD; no physical iPhone cost measurement",
@@ -458,7 +537,7 @@
     },
     "G8": {
       "status": "pending",
-      "revision": "engine-protection-hoop-v1",
+      "revision": "engine-protection-exterior-context-v2-coordination-v1",
       "reviewer": null,
       "evidence": [],
       "reason": "",
@@ -466,9 +545,9 @@
     }
   },
   "active_detailed_fabrication": false,
-  "source_revision": "engine-protection-hoop-v1",
-  "export_revision": "engine-protection-hoop-v1-inspection",
-  "next_action": "Resolve documentary dimensions, remaining visible/hidden geometry and installed interfaces; compare native/browser material before art reception. No automatic mounting or mobile qualification.",
+  "source_revision": "engine-protection-exterior-context-v2-coordination-v1",
+  "export_revision": "engine-protection-exterior-context-v2-coordination-v1-inspection",
+  "next_action": "Review shape/material against attributed reference, resolve dimensions and installed interfaces; no user reception or mobile qualification implied",
   "art_accepted": false,
   "previous_revisions": [
     {
@@ -476,9 +555,16 @@
       "source": null,
       "review": null,
       "art_accepted": false
+    },
+    {
+      "revision": "engine-protection-hoop-v1",
+      "source": "../../../assets-src/moto-components/engine-protection-hoop/README.md",
+      "review": "../../reviews/engine-protection-hoop-v1/README.md",
+      "art_accepted": false
     }
   ],
-  "candidate_source": "../../../assets-src/moto-components/engine-protection-hoop/README.md",
-  "candidate_review": "../../reviews/engine-protection-hoop-v1/README.md",
-  "production_group": 15
+  "candidate_source": "../../../assets-src/moto-components/engine-protection-exterior-context-v2/../../../creative/reviews/engine-protection-exterior-context-v2-coordination-v1/README.md",
+  "candidate_review": "../../reviews/engine-protection-exterior-context-v2-coordination-v1/README.md",
+  "production_group": 15,
+  "source_plan": "../../research/engine-protection-exterior-context-v2-coordination-v1/G0-G2-plan-v1.json"
 }
