@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "id": "MOTO-VISUAL-PROPORTIONS-002",
+  "label": "Correction visuelle cache-chaîne, moteur/admission et phare",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Boxer 125 HD RDC, visual adaptation from official views",
+    "variant_confirmed": false,
+    "usage": "Static exterior review",
+    "review_distances_m": [
+      0.6,
+      3
+    ]
+  },
+  "source_register": "../../research/under-tank-completion-v1/sources.json",
+  "sources": [
+    "BAJAJ-00.png",
+    "BAJAJ-01.png",
+    "BAJAJ-02.png",
+    "BAJAJ-04.png",
+    "BAJAJ-engine.webp"
+  ],
+  "claims": [
+    {
+      "id": "chain-line-and-visible-envelopes",
+      "status": "photo_inferred",
+      "source": "BAJAJ-04.png",
+      "method": "Manual side-photo landmarks, front/oblique views and independent source geometry measurements",
+      "uncertainty": "Angle approximately ±2 degrees; hidden envelopes ±10–20 mm",
+      "scope": "Static visual proportions; no certified OEM dimensions",
+      "adopted": true
+    }
+  ],
+  "views": [],
+  "criteria": [
+    "Chaincase seam slopes down toward rear axle in LH side view",
+    "Front and rear chaincase attachments remain together; rear wheel axle fixed",
+    "Deep headlamp side shell and long black support sleeves visible",
+    "Engine/admission gap reduced by identifiable component volumes",
+    "No arbitrary cover over cooling opening",
+    "Art. / 015 preserved"
+  ],
+  "gaps": [
+    {
+      "id": "DYNAMIC-CLEARANCE",
+      "status": "open",
+      "critical": false,
+      "blocks": [
+        "G5"
+      ],
+      "description": "Static model fitting only; no steering/suspension travel qualification."
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "visual-proportions-v2",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "path": "../../research/visual-proportions-v2/plan.json",
+          "kind": "identity_and_parts",
+          "revision": "visual-proportions-v2",
+          "sha256": "aa4e321bc7945b3de87d11b2521936604c15185525f2c558384b35ea1f9876e7"
+        }
+      ],
+      "reason": "Assemblage, raccords, sources et périmètre de comparaison identifiés.",
+      "reviewed_at": "2026-10-23"
+    },
+    "G1": {
+      "status": "rework",
+      "revision": "visual-proportions-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Candidat statique contrôlé et rendu ; les passages de réception de la moto complète ne sont pas déclarés acquis.",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "rework",
+      "revision": "visual-proportions-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Candidat statique contrôlé et rendu ; les passages de réception de la moto complète ne sont pas déclarés acquis.",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "visual-proportions-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Candidat statique contrôlé et rendu ; les passages de réception de la moto complète ne sont pas déclarés acquis.",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "visual-proportions-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Candidat statique contrôlé et rendu ; les passages de réception de la moto complète ne sont pas déclarés acquis.",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "visual-proportions-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Candidat statique contrôlé et rendu ; les passages de réception de la moto complète ne sont pas déclarés acquis.",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "visual-proportions-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Candidat statique contrôlé et rendu ; les passages de réception de la moto complète ne sont pas déclarés acquis.",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "visual-proportions-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Candidat statique contrôlé et rendu ; les passages de réception de la moto complète ne sont pas déclarés acquis.",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "visual-proportions-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Candidat statique contrôlé et rendu ; les passages de réception de la moto complète ne sont pas déclarés acquis.",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "visual-proportions-v2",
+  "export_revision": "visual-proportions-v2",
+  "next_action": "Relecture utilisateur des trois zones corrigées ; contrôles dynamiques et optimisation distincts.",
+  "art_accepted": false
+}
