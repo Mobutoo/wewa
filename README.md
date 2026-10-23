@@ -2,6 +2,8 @@
 
 [Voir les pièces de la moto, leurs images et leurs contrôles](LIVRAISONS_MOTO.md).
 
+[Dernière revue : images haute résolution et plaque « Art. / 015 »](creative/reviews/seat-plate-v2/README.md). La moto reste en finition, notamment aux jonctions selle/cadre/caches.
+
 [Nouveau : zone sous le réservoir complétée — images avant/après, références Bajaj et modèle 3D](creative/reviews/under-tank-completion-v1/README.md). Carters, enveloppe inférieure, supports, durites et câbles reconstruits ; dimensions estimées pour la finition visuelle demandée.
 
 [Finitions : correction candidate du raccord de guidon, vues avant/après et sources](creative/reviews/handlebar-registration-v2/README.md) · [Analyse et plan des derniers éléments](creative/workflow/motorcycle-finishing-plan-2026-10-22.md). Les pontets sont repositionnés sans modifier leurs surfaces ; les autres incompatibilités restent ouvertes.

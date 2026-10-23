@@ -1,5 +1,7 @@
 # Viva Wewa — pièces et contrôles de la moto
 
+**23 octobre — [vues haute résolution et plaque Art. / 015](creative/reviews/seat-plate-v2/README.md).** Texte sur deux lignes modifié dans le modèle ; vues avant/arrière 3 840 × 2 880 et gros plans 2 560 × 1 920. L’ensemble reste à finaliser, notamment sous la selle ; la livraison précédente ne valait pas clôture de cette zone.
+
 **Dernier candidat — [complément sous le réservoir : références constructeur, vues avant/après et sources](creative/reviews/under-tank-completion-v1/README.md).** Dix groupes reconstruits, 75 maillages fermés ; quatre études incomplètes remplacées et 173 groupes conservés. [Voir la moto](creative/reviews/under-tank-completion-v1/whole-after.png) · [Voir le moteur](creative/reviews/under-tank-completion-v1/detailRight-after.png). Adaptation visuelle explicitement demandée, dimensions estimées ; réception artistique ouverte.
 
 **Nouvelle correction candidate — [raccord de guidon : comparaison avant/après, Blender et GLB](creative/reviews/handlebar-registration-v2/README.md).** Chaque pontet est rapproché de 6,5 mm du centre ; les intersections latérales avec la plaque disparaissent. Les 177 groupes restent présents. L'empilage inférieur et les autres incompatibilités restent ouverts dans le [plan de finition](creative/workflow/motorcycle-finishing-plan-2026-10-22.md). La v5 ci-dessous reste la base historique préservée.

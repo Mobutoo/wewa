@@ -1,5 +1,7 @@
 # Reprise — complément visuel sous le réservoir
 
+**23 octobre : la moto reste à finaliser.** [Nouvelle revue haute résolution et plaque Art. / 015](creative/reviews/seat-plate-v2/README.md). Batterie, boîte à air et fond de selle sont présents ; les jonctions selle/cadre/caches restent à reprendre. La livraison du 22 a complété une liste d’éléments, sans clôturer toute cette zone. La nouvelle révision modifie uniquement le graphisme de plaque dans le modèle, et conserve les autres géométries.
+
 **Dernière demande exécutée :** l’utilisateur a signalé le vide sous le réservoir et demandé des visuels constructeur puis la reconstruction des pièces manquantes, y compris par génération. Les [photos Bajaj RDC et huit angles officiels](creative/research/under-tank-completion-v1/sources.json) servent à un [nouveau candidat 3D avec comparaisons](creative/reviews/under-tank-completion-v1/README.md). Dix groupes remplacent ou complètent les carters, l’enveloppe inférieure, les supports et les raccords. Cette autorisation permet les estimations visuelles documentées pour cette zone ; elle ne transforme pas les dimensions inconnues en faits et ne réceptionne pas la moto entière.
 
 ## Historique — correction du guidon et recherche de variantes
