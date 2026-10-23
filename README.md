@@ -2,7 +2,7 @@
 
 [Voir les pièces de la moto, leurs images et leurs contrôles](LIVRAISONS_MOTO.md).
 
-[Dernière revue : images haute résolution et plaque « Art. / 015 »](creative/reviews/seat-plate-v2/README.md). La moto reste en finition, notamment aux jonctions selle/cadre/caches.
+[Dernière revue : raccords extérieurs corrigés et images haute résolution](creative/reviews/assembly-alignment-v1/README.md). Phare/visière, selle/caches, supports et ensemble arrière recalés ; plaque « Art. / 015 » conservée. Réception artistique encore ouverte.
 
 [Nouveau : zone sous le réservoir complétée — images avant/après, références Bajaj et modèle 3D](creative/reviews/under-tank-completion-v1/README.md). Carters, enveloppe inférieure, supports, durites et câbles reconstruits ; dimensions estimées pour la finition visuelle demandée.
 
