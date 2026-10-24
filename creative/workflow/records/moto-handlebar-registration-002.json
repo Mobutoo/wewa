@@ -1,0 +1,177 @@
+{
+  "schema": 1,
+  "id": "MOTO-HANDLEBAR-REGISTRATION-002",
+  "label": "Pontets — correction candidate du placement latéral",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Existing related-variant clamp and plate studies; current RDC pairing not certified",
+    "variant_confirmed": false,
+    "usage": "Separate registration candidate and whole-bike review derivative",
+    "review_distances_m": [
+      0.15,
+      0.35,
+      0.65
+    ]
+  },
+  "source_register": "../sources.json",
+  "sources": [
+    "D01",
+    "D04",
+    "D15"
+  ],
+  "claims": [],
+  "views": [],
+  "criteria": [
+    "Eliminate native plate/stud triangle intersections",
+    "Preserve original geometry and material buffers",
+    "Keep knurl bands covered by saddles",
+    "Compare actual runtime before/candidate with identical camera"
+  ],
+  "gaps": [
+    {
+      "id": "P28-VERTICAL-STACK",
+      "description": "Vertical engagement, compressed dampers, washer/nut seats and exact RDC identity unknown",
+      "critical": true,
+      "status": "open",
+      "blocks": [
+        "G1",
+        "G2",
+        "G5",
+        "G8"
+      ],
+      "next_research": "Same-variant mounted axial view and measured compressed stack; do not infer a fitted stack from lateral clearance"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "handlebar-registration-v2",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "path": "../../research/handlebar-registration-v2/plan.json",
+          "kind": "identity_and_parts",
+          "revision": "handlebar-registration-v2",
+          "sha256": "1b5360b9557ae22a2287976103afce69e4e34f021c44968f6b5810d413c6f673"
+        }
+      ],
+      "reason": "Registration scope and eight affected objects identified.",
+      "reviewed_at": "2026-10-22"
+    },
+    "G1": {
+      "status": "blocked",
+      "revision": "handlebar-registration-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Lateral model correction proved; exact variant, complete installed stack and artistic reception remain open.",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "blocked",
+      "revision": "handlebar-registration-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Lateral model correction proved; exact variant, complete installed stack and artistic reception remain open.",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "handlebar-registration-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../../assets-src/moto-components/handlebar-registration-v2/handlebar-registration-v2.blend",
+          "kind": "editable_source",
+          "revision": "handlebar-registration-v2",
+          "sha256": "ba6200a82f01f20df7c95cdd66972173a626c0136fa81c6cca06d078811b0ca6"
+        }
+      ],
+      "reason": "Lateral model correction proved; exact variant, complete installed stack and artistic reception remain open.",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "handlebar-registration-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-registration-v2/native-top-candidate.png",
+          "kind": "surface_or_sound_comparison",
+          "revision": "handlebar-registration-v2",
+          "sha256": "6cf05bd18b30244ae1546e1a04bac8982cc21b8f09ccef2c89a9589bb031e8fd"
+        }
+      ],
+      "reason": "Lateral model correction proved; exact variant, complete installed stack and artistic reception remain open.",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "handlebar-registration-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-registration-v2/native-check.json",
+          "kind": "motion_or_interface_check",
+          "revision": "handlebar-registration-v2",
+          "sha256": "8a9be884c03f3da591e64d0860225c0d88de6c8d1be19d9fb7984352b97798d1"
+        },
+        {
+          "path": "../../reviews/handlebar-registration-v2/export-check.json",
+          "kind": "technical_export_check",
+          "revision": "handlebar-registration-v2",
+          "sha256": "f1112c622e4d8b3fefbf5ad939bccda059c37b3b2ca64481a65e1ca03307b992"
+        }
+      ],
+      "reason": "Lateral model correction proved; exact variant, complete installed stack and artistic reception remain open.",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "handlebar-registration-v2",
+      "reviewer": null,
+      "evidence": [
+        {
+          "path": "../../reviews/handlebar-registration-v2/browser-check.json",
+          "kind": "real_runtime_comparison",
+          "revision": "handlebar-registration-v2",
+          "sha256": "d0b02f598d1d1c34ee840f64987aa1bfda66928455bc194bba3d67b632c46613"
+        }
+      ],
+      "reason": "Lateral model correction proved; exact variant, complete installed stack and artistic reception remain open.",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "handlebar-registration-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Lateral model correction proved; exact variant, complete installed stack and artistic reception remain open.",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "handlebar-registration-v2",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Lateral model correction proved; exact variant, complete installed stack and artistic reception remain open.",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "handlebar-registration-v2",
+  "export_revision": "handlebar-registration-v2",
+  "next_action": "Review the lateral registration candidate; obtain mounted axial views and stack dimensions before fitting lower dampers, washers and nuts.",
+  "art_accepted": false,
+  "candidate_review": "../../reviews/handlebar-registration-v2/README.md"
+}

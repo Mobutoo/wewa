@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>WEWA · raccord des pontets</title><style>
+*{box-sizing:border-box}body{margin:0;background:#18212b;color:#edf2f7;font:15px system-ui;display:grid;grid-template-columns:310px 1fr;height:100dvh}aside{padding:20px;overflow:auto}main{min-width:0;min-height:0}canvas{width:100%;height:100%;display:block;touch-action:none}h1{font-size:22px}p{line-height:1.5}button{font:inherit;color:inherit;background:#304354;border:1px solid #71899a;border-radius:6px;padding:10px;cursor:pointer}button[aria-pressed=true]{background:#236c63}nav{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}a{color:#9dd5ff}#error{color:#ffbaa8}small{color:#bcccd9}@media(max-width:700px){body{grid-template-columns:1fr;grid-template-rows:58dvh 42dvh}main{grid-row:1}aside{grid-row:2;padding:12px}h1{font-size:18px}}
+</style></head><body>
+<aside><h1>Raccord des pontets</h1><p id="status" role="status">Chargement de la moto…</p><p id="error" role="alert"></p>
+<nav aria-label="Version des pontets"><button id="before" aria-pressed="false">Avant · v5</button><button id="after" aria-pressed="true">Candidat corrigé</button></nav>
+<nav aria-label="Cadrage"><button id="underside">Raccord par dessous</button><button id="top">Vue du dessus</button><button id="whole">Moto entière</button></nav>
+<p id="description">Chaque pontet et ses boulons sont rapprochés de 6,5 mm du centre. Les autres éléments conservent leur position.</p>
+<p><small>Les vues rapprochées isolent le guidon, les pontets et la plaque supérieure pour rendre le raccord visible. Glisser pour tourner, pincer ou utiliser la molette pour zoomer.</small></p>
+<p><strong>Candidat à examiner.</strong> Le passage des goujons est corrigé dans le modèle. Silentblocs, rondelles, écrous, serrage et variante réelle restent à qualifier.</p>
+<p><a href="/creative/reviews/handlebar-registration-v2/README.md">Analyse, plan et preuves</a></p>
+</aside><main><canvas aria-label="Comparaison 3D des fixations de guidon"></canvas></main>
+<script type="module" src="./viewer.js"></script></body></html>

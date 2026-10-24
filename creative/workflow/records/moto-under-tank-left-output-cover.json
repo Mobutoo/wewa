@@ -1,0 +1,171 @@
+{
+  "schema": 1,
+  "id": "MOTO-UNDER-TANK-LEFT-OUTPUT-COVER",
+  "label": "left-output-cover",
+  "source_ids": [
+    "AS-049",
+    "CON-001"
+  ],
+  "parent_asset": "MOTO-BOXER-RDC-001",
+  "recipes": [
+    "vehicle",
+    "material"
+  ],
+  "identity": {
+    "variant": "Boxer 125 HD RDC, visual adaptation based on current official photographs",
+    "variant_confirmed": false,
+    "usage": "Static exterior review; user-authorized inferred reconstruction",
+    "review_distances_m": [
+      0.35,
+      0.7,
+      2.5
+    ]
+  },
+  "source_register": "../../research/under-tank-completion-v1/sources.json",
+  "sources": [
+    "BAJAJ-hero.webp",
+    "BAJAJ-engine.webp",
+    "BAJAJ-00.png",
+    "BAJAJ-04.png"
+  ],
+  "claims": [
+    {
+      "id": "left-output-cover-envelope",
+      "status": "photo_inferred",
+      "source": "BAJAJ-hero.webp",
+      "method": "Official RH/LH silhouettes and existing mating envelopes; procedural Blender mesh",
+      "uncertainty": "10–20 mm envelope; hidden routes 20–40 mm; fasteners illustrative",
+      "scope": "Visible exterior only, no measured internals or functional fit",
+      "adopted": true
+    }
+  ],
+  "views": [
+    {
+      "name": "under-tank-left",
+      "file": "creative/reviews/under-tank-completion-v1/detailLeft-after.png"
+    },
+    {
+      "name": "under-tank-right",
+      "file": "creative/reviews/under-tank-completion-v1/detailRight-after.png"
+    }
+  ],
+  "criteria": [
+    "Continuous visible surfaces",
+    "Preserve original adjacent model and textures",
+    "Show genuine rendered comparison"
+  ],
+  "gaps": [
+    {
+      "id": "left-output-cover-dimensions",
+      "status": "open",
+      "critical": false,
+      "blocks": [],
+      "description": "Exact thicknesses and hidden geometry estimated under user visual adaptation instruction"
+    },
+    {
+      "id": "left-output-cover-motion",
+      "status": "open",
+      "critical": false,
+      "blocks": [
+        "G5"
+      ],
+      "description": "Static exterior candidate; motion and mechanical tolerances not qualified"
+    }
+  ],
+  "gates": {
+    "G0": {
+      "status": "passed",
+      "revision": "under-tank-completion-v1",
+      "reviewer": {
+        "name": "Codex",
+        "role": "technical"
+      },
+      "evidence": [
+        {
+          "path": "../../research/under-tank-completion-v1/plan.json",
+          "kind": "identity_and_parts",
+          "revision": "under-tank-completion-v1",
+          "sha256": "72830b666c406c16deae3c138b562e62979c1cda0bfbf81852005c21692efc6d"
+        }
+      ],
+      "reason": "Component scope and official image references identified.",
+      "reviewed_at": "2026-10-22"
+    },
+    "G1": {
+      "status": "rework",
+      "revision": "under-tank-completion-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Candidate produced with declared visual estimates; awaiting review.",
+      "reviewed_at": null
+    },
+    "G2": {
+      "status": "rework",
+      "revision": "under-tank-completion-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Candidate produced with declared visual estimates; awaiting review.",
+      "reviewed_at": null
+    },
+    "G3": {
+      "status": "rework",
+      "revision": "under-tank-completion-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Candidate produced with declared visual estimates; awaiting review.",
+      "reviewed_at": null
+    },
+    "G4": {
+      "status": "rework",
+      "revision": "under-tank-completion-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Candidate produced with declared visual estimates; awaiting review.",
+      "reviewed_at": null
+    },
+    "G5": {
+      "status": "rework",
+      "revision": "under-tank-completion-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Candidate produced with declared visual estimates; awaiting review.",
+      "reviewed_at": null
+    },
+    "G6": {
+      "status": "rework",
+      "revision": "under-tank-completion-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Candidate produced with declared visual estimates; awaiting review.",
+      "reviewed_at": null
+    },
+    "G7": {
+      "status": "pending",
+      "revision": "under-tank-completion-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Candidate produced with declared visual estimates; awaiting review.",
+      "reviewed_at": null
+    },
+    "G8": {
+      "status": "pending",
+      "revision": "under-tank-completion-v1",
+      "reviewer": null,
+      "evidence": [],
+      "reason": "Candidate produced with declared visual estimates; awaiting review.",
+      "reviewed_at": null
+    }
+  },
+  "active_detailed_fabrication": false,
+  "source_revision": "under-tank-completion-v1",
+  "export_revision": "under-tank-completion-v1",
+  "next_action": "Relecture artistique des nouvelles vues extérieures ; affiner les estimations selon retour utilisateur.",
+  "art_accepted": false,
+  "delivered_evidence": {
+    "native_group": "COMPLETION [left-output-cover]",
+    "source": "assets-src/moto-components/under-tank-completion-v1/under-tank-completion.blend",
+    "native_check": "creative/reviews/under-tank-completion-v1/native-check.json",
+    "export_check": "creative/reviews/under-tank-completion-v1/export-check.json",
+    "browser_check": "creative/reviews/under-tank-completion-v1/browser-check.json"
+  }
+}
