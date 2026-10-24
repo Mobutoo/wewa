@@ -2,7 +2,7 @@
 
 [Voir les pièces de la moto, leurs images et leurs contrôles](LIVRAISONS_MOTO.md).
 
-[Dernière revue : cache-chaîne incliné, volumes sous réservoir et phare corrigés](creative/reviews/visual-proportions-v2/README.md). Comparaison officielle, vues haute résolution et source éditable ; plaque « Art. / 015 » conservée.
+[Dernière revue : agencement sous le réservoir repris sur les photos officielles](creative/reviews/under-tank-layout-v3/README.md). Carburateur rapproché, admission raccordée et caches latéraux avancés ; rendus haute résolution et source modifiable.
 
 [Nouveau : zone sous le réservoir complétée — images avant/après, références Bajaj et modèle 3D](creative/reviews/under-tank-completion-v1/README.md). Carters, enveloppe inférieure, supports, durites et câbles reconstruits ; dimensions estimées pour la finition visuelle demandée.
 

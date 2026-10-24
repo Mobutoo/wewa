@@ -32,6 +32,8 @@ jobs:
           node tools/check_assembly_alignment_export_v1.mjs
           python tools/check_visual_proportions_delivery_v2.py
           node tools/check_visual_proportions_export_v2.mjs
+          python tools/check_under_tank_layout_delivery_v3.py
+          node tools/check_under_tank_layout_export_v3.mjs
           node tools/check_under_tank_completion_v1.mjs
       - run: pip install playwright
       - run: python -m playwright install --with-deps chromium

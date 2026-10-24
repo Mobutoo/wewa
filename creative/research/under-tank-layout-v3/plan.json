@@ -1,0 +1,383 @@
+{
+  "date": "2026-10-24",
+  "source_glb": "assets-src/moto-components/visual-proportions-v2/motorcycle-proportions.glb",
+  "source_blend": "assets-src/moto-components/visual-proportions-v2/motorcycle-proportions.blend",
+  "source_register": "creative/research/under-tank-completion-v1/sources.json",
+  "official_views": [
+    "BAJAJ-04.png",
+    "BAJAJ-00.png",
+    "BAJAJ-hero.webp",
+    "BAJAJ-engine.webp"
+  ],
+  "observations": [
+    "Crankcase centre is already near the reference wheelbase-relative location; do not shift the whole engine.",
+    "The upper engine height is retained after an inspection preview; carburettor is too high and too far aft.",
+    "The front tip of the lateral cover overlaps much more of the rear tank on the official profiles.",
+    "The visible opening below the carburettor should be a narrow mechanical clearance, not a large triangular void.",
+    "Flexible intake, fuel line and throttle cable must follow the carburettor, while tank/head/handlebar endpoints stay fixed."
+  ],
+  "uncertainty": "Manual photographic comparison; estimated fitting corrections, not OEM measurements. Perspective and limited source resolution prevent millimetric calibration.",
+  "changes": [
+    {
+      "name": "PARENT [carburettor-upper-casting-v1]",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_blender_m": [
+        0,
+        0,
+        0
+      ],
+      "translation_blender_m": [
+        0,
+        -0.045,
+        -0.035
+      ],
+      "reason": "Move complete carburettor forward and down; preserve casting proportions and internal assembly."
+    },
+    {
+      "name": "PARENT [carburettor-lower-body-v2]",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_blender_m": [
+        0,
+        0,
+        0
+      ],
+      "translation_blender_m": [
+        0,
+        -0.045,
+        -0.035
+      ],
+      "reason": "Move complete carburettor forward and down; preserve casting proportions and internal assembly."
+    },
+    {
+      "name": "PARENT [carburettor-float-bowl-v2]",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_blender_m": [
+        0,
+        0,
+        0
+      ],
+      "translation_blender_m": [
+        0,
+        -0.045,
+        -0.035
+      ],
+      "reason": "Move complete carburettor forward and down; preserve casting proportions and internal assembly."
+    },
+    {
+      "name": "PARENT [carburettor-top-cap-v1]",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_blender_m": [
+        0,
+        0,
+        0
+      ],
+      "translation_blender_m": [
+        0,
+        -0.045,
+        -0.035
+      ],
+      "reason": "Move complete carburettor forward and down; preserve casting proportions and internal assembly."
+    },
+    {
+      "name": "PARENT [carburettor-entry-boot-v1]",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_blender_m": [
+        0,
+        0,
+        0
+      ],
+      "translation_blender_m": [
+        0,
+        -0.045,
+        -0.035
+      ],
+      "reason": "Move complete carburettor forward and down; preserve casting proportions and internal assembly."
+    },
+    {
+      "name": "PARENT [carburettor-cable-elbow-v1]",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_blender_m": [
+        0,
+        0,
+        0
+      ],
+      "translation_blender_m": [
+        0,
+        -0.045,
+        -0.035
+      ],
+      "reason": "Move complete carburettor forward and down; preserve casting proportions and internal assembly."
+    },
+    {
+      "name": "PARENT [sidecover-LH]",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_blender_m": [
+        0,
+        0,
+        0
+      ],
+      "translation_blender_m": [
+        0,
+        -0.075,
+        0
+      ],
+      "reason": "Front of panels overlaps rear tank silhouette as on 00/04 instead of leaving a long exposed triangle."
+    },
+    {
+      "name": "PARENT [sidecover-RH-normalized]",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_blender_m": [
+        0,
+        0,
+        0
+      ],
+      "translation_blender_m": [
+        0,
+        -0.075,
+        0
+      ],
+      "reason": "Front of panels overlaps rear tank silhouette as on 00/04 instead of leaving a long exposed triangle."
+    },
+    {
+      "name": "PARENT [air-cleaner-box-outer-body-pf581003-v1]",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_blender_m": [
+        0,
+        0,
+        0
+      ],
+      "translation_blender_m": [
+        0,
+        -0.06,
+        0
+      ],
+      "reason": "Align underlying housings with forward side panels."
+    },
+    {
+      "name": "COMPLETION [lower-electrical-enclosure]",
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "pivot_blender_m": [
+        0,
+        0,
+        0
+      ],
+      "translation_blender_m": [
+        0,
+        -0.06,
+        0
+      ],
+      "reason": "Align underlying housings with forward side panels."
+    }
+  ],
+  "rejected_trials": [
+    "Upper engine compressed 20% vertically: introduced excessive gap above cylinder head; rejected.",
+    "Side panels lowered 35mm: opened an unwanted strip below seat; rejected."
+  ],
+  "deformations": [
+    {
+      "root": "PARENT [engine-intake-manifold]",
+      "kind": "blend",
+      "axis": 1,
+      "interval": [
+        0.175,
+        0.25
+      ],
+      "to": [
+        0,
+        -0.045,
+        -0.035
+      ]
+    },
+    {
+      "root": "PARENT [engine-intake-sleeve]",
+      "kind": "blend",
+      "axis": 1,
+      "interval": [
+        0.175,
+        0.25
+      ],
+      "to": [
+        0,
+        -0.045,
+        -0.035
+      ]
+    },
+    {
+      "root": "PARENT [engine-intake-clamp-band]",
+      "kind": "blend",
+      "axis": 1,
+      "interval": [
+        0.175,
+        0.25
+      ],
+      "to": [
+        0,
+        -0.045,
+        -0.035
+      ]
+    },
+    {
+      "root": "PARENT [airbox-carb-boot-physical-study-v2]",
+      "kind": "blend",
+      "axis": 1,
+      "interval": [
+        0.3,
+        0.36
+      ],
+      "from": [
+        0,
+        -0.045,
+        -0.035
+      ],
+      "to": [
+        0,
+        -0.06,
+        0
+      ]
+    },
+    {
+      "mesh": "Fuel tap to carb hose",
+      "kind": "blend",
+      "axis": 0,
+      "interval": [
+        0.079,
+        0.107
+      ],
+      "from": [
+        0,
+        -0.045,
+        -0.035
+      ],
+      "to": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "mesh": "Carb fuel inlet union",
+      "kind": "translation",
+      "delta": [
+        0,
+        -0.045,
+        -0.035
+      ]
+    },
+    {
+      "mesh": "Fuel hose retaining band carb",
+      "kind": "translation",
+      "delta": [
+        0,
+        -0.045,
+        -0.035
+      ]
+    },
+    {
+      "mesh": "Throttle continuous outer cable",
+      "kind": "blend",
+      "axis": 1,
+      "interval": [
+        0.1,
+        0.235
+      ],
+      "to": [
+        0,
+        -0.045,
+        -0.035
+      ]
+    },
+    {
+      "mesh": "Air cleaner lower continuous neck",
+      "kind": "translation",
+      "delta": [
+        0,
+        -0.06,
+        0
+      ]
+    },
+    {
+      "mesh": "Air cleaner lower mounting screw -1",
+      "kind": "translation",
+      "delta": [
+        0,
+        -0.06,
+        0
+      ]
+    },
+    {
+      "mesh": "Air cleaner lower mounting screw 1",
+      "kind": "translation",
+      "delta": [
+        0,
+        -0.06,
+        0
+      ]
+    }
+  ],
+  "photo_landmarks": {
+    "source": "BAJAJ-04.png",
+    "image_dimensions_px": [
+      1000,
+      700
+    ],
+    "front_axle_px": [
+      210,
+      491
+    ],
+    "rear_axle_px": [
+      749,
+      490
+    ],
+    "tank_rear_contour_px": [
+      543,
+      330
+    ],
+    "sidecover_front_tip_px": [
+      493,
+      326
+    ],
+    "reading_uncertainty_px": 5,
+    "normalized_longitudinal_overlap": 0.09276437847866419,
+    "method": "Manual profile contour reading, normalized by axle separation. Approximately 0.093 of wheelbase; not an orthographic calibration or OEM dimension."
+  }
+}
